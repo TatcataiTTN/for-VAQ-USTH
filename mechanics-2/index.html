@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mechanics II — USTH Study Guide</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"></script>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#161923; --panel2:#1c2030; --text:#e8eaf0; --muted:#9aa3b5;
+    --accent:#5b9dff; --accent2:#7ee0c0; --border:#2a2f42;
+    --problem:#1a2740; --problem-b:#3a63c9;
+    --solution:#16301f; --solution-b:#3aa15a;
+    --note:#3a2c12; --note-b:#c98a2f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55}
+  a{color:var(--accent)}
+  header{padding:22px 28px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#141826,#0f1115)}
+  header h1{margin:0;font-size:22px}
+  header p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .layout{display:flex;min-height:calc(100vh - 84px)}
+  nav{width:300px;flex:0 0 300px;background:var(--panel);border-right:1px solid var(--border);padding:16px;overflow-y:auto}
+  nav h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 8px}
+  nav h2:first-child{margin-top:0}
+  nav ul{list-style:none;margin:0;padding:0}
+  nav li{margin:2px 0}
+  nav button{width:100%;text-align:left;background:none;border:none;color:var(--text);padding:8px 10px;border-radius:8px;cursor:pointer;font-size:13.5px}
+  nav button:hover{background:var(--panel2)}
+  nav button.active{background:var(--accent);color:#08111f;font-weight:600}
+  main{flex:1;padding:28px 36px;max-width:900px}
+  #content h2{color:var(--accent2);border-bottom:1px solid var(--border);padding-bottom:6px;margin-top:36px}
+  #content h3{color:var(--accent);margin-top:28px}
+  .box{border:1px solid var(--border);border-left-width:5px;border-radius:8px;margin:14px 0;padding:2px 16px 14px;background:var(--panel2)}
+  .box.problem{border-left-color:var(--problem-b);background:var(--problem)}
+  .box.solution{border-left-color:var(--solution-b);background:var(--solution)}
+  .box.note{border-left-color:var(--note-b);background:var(--note)}
+  .box-title{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin:12px 0 6px}
+  .box-body p{margin:10px 0}
+  table.answer-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px}
+  table.answer-table td{border:1px solid var(--border);padding:6px 10px}
+  table.answer-table tr:first-child td{background:var(--panel);font-weight:700}
+  hr.mini{border:none;border-top:1px dashed var(--border);margin:14px 0}
+  code{background:#0006;padding:1px 5px;border-radius:4px;font-size:.92em}
+  .home-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .home-card{border:1px solid var(--border);background:var(--panel2);border-radius:10px;padding:16px;cursor:pointer}
+  .home-card:hover{border-color:var(--accent)}
+  .home-card h3{margin:0 0 6px;color:var(--accent2);font-size:15px}
+  .home-card p{margin:0;color:var(--muted);font-size:13px}
+  .badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:var(--panel);color:var(--muted);margin-right:6px}
+  footer{padding:18px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
+  #loading{padding:40px;color:var(--muted)}
+  @media (max-width:800px){.layout{flex-direction:column}nav{width:100%;flex:none;max-height:280px}main{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>📐 Mechanics II — Tài liệu tự học song ngữ (USTH)</h1>
+  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ · Anh trước, Việt sau</p>
+</header>
+<div class="layout">
+  <nav id="nav"><div id="loading">Đang tải danh mục…</div></nav>
+  <main><div id="content"><div id="loading">Chọn 1 mục ở menu bên trái, hoặc xem trang chủ.</div></div></main>
+</div>
+<footer>Nguồn: slide gốc USTH + Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) + Halliday/Resnick/Walker <em>Fundamentals of Physics</em>. Mọi lời giải đã đối chiếu đáp số gốc.</footer>
+
+<script>
+const THEORY_ORDER = ["notes_Lecture1","notes_Lecture2","notes_Lecture4","notes_Lecture9","notes_Lecture10"];
+const THEORY_LABELS = {
+  notes_Lecture1:"Lecture 1 — Equilibrium & Elasticity",
+  notes_Lecture2:"Lecture 2 — Gravitation",
+  notes_Lecture4:"Lecture 4 — Oscillations",
+  notes_Lecture9:"Lecture 9 — Impulse & Momentum",
+  notes_Lecture10:"Lecture 10 — Planar Kinematics"
+};
+const PROBLEM_ORDER = [
+  "Halliday_Ch12_Equilibrium_Elasticity",
+  "Halliday_Ch13_Gravitation",
+  "Lecture4_Original_Problems_Solutions",
+  "Hibbeler_Ch22_Vibrations_Selected",
+  "Lecture9_Original_Problems_Solutions",
+  "Hibbeler_Ch15_Impulse_Momentum",
+  "Lecture10_Original_Problems_Solutions",
+  "Hibbeler_Ch16_Planar_Kinematics"
+];
+
+let manifest = null;
+async function loadManifest(){
+  manifest = await (await fetch('data/manifest.json')).json();
+  buildNav();
+}
+function buildNav(){
+  const nav = document.getElementById('nav');
+  nav.innerHTML = '';
+  nav.appendChild(navHeader('Trang chủ'));
+  const homeUl = document.createElement('ul');
+  homeUl.innerHTML = `<li><button onclick="showHome()">🏠 Tổng quan môn học</button></li>`;
+  nav.appendChild(homeUl);
+
+  nav.appendChild(navHeader('Lý thuyết (Reading Notes)'));
+  const ul1 = document.createElement('ul');
+  THEORY_ORDER.forEach(slug=>{
+    const li=document.createElement('li');
+    const btn=document.createElement('button');
+    btn.textContent = THEORY_LABELS[slug] || slug;
+    btn.onclick=()=>loadPage('md', slug, btn);
+    li.appendChild(btn); ul1.appendChild(li);
+  });
+  nav.appendChild(ul1);
+
+  nav.appendChild(navHeader('Bài tập có lời giải'));
+  const ul2 = document.createElement('ul');
+  PROBLEM_ORDER.forEach(slug=>{
+    const rec = manifest.tex.find(r=>r.slug===slug);
+    if(!rec) return;
+    const li=document.createElement('li');
+    const btn=document.createElement('button');
+    btn.textContent = shortTitle(rec.title);
+    btn.title = rec.title;
+    btn.onclick=()=>loadPage('tex', slug, btn);
+    li.appendChild(btn); ul2.appendChild(li);
+  });
+  nav.appendChild(ul2);
+}
+function navHeader(t){const h=document.createElement('h2');h.textContent=t;return h;}
+function shortTitle(t){
+  const parts = t.split(' — ');
+  return parts[0].replace(/^Chapter \d+ Supplement --- /,'').replace(/^Lecture \d+ Supplement --- /,'');
+}
+function setActive(btn){
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+}
+async function loadPage(kind, slug, btn){
+  setActive(btn);
+  const content = document.getElementById('content');
+  content.innerHTML = '<div id="loading">Đang tải…</div>';
+  try{
+    const rec = await (await fetch(`data/${slug}.json`)).json();
+    content.innerHTML = `<h1>${rec.title}</h1>` + rec.html;
+    renderMathIn(content);
+  }catch(e){
+    content.innerHTML = `<p style="color:#f77">Lỗi tải nội dung: ${e}</p>`;
+  }
+}
+function renderMathIn(el){
+  renderMathInElement(el, {
+    delimiters: [
+      {left: "\\[", right: "\\]", display: true},
+      {left: "$", right: "$", display: false}
+    ],
+    throwOnError: false,
+    strict: false
+  });
+}
+function showHome(){
+  setActive(null);
+  const content = document.getElementById('content');
+  content.innerHTML = `
+  <h1>Mechanics II — USTH (Dr. Bùi Văn Tuấn)</h1>
+  <p>Bộ tài liệu tự học song ngữ Anh–Việt cho môn <strong>Mechanics II</strong>, tổng hợp từ 5 buổi giảng hiện có
+  (Lecture 1, 2, 4, 9, 10) và bổ sung bài tập từ Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) và
+  Halliday/Resnick/Walker <em>Fundamentals of Physics</em> cho các chương chưa có slide gốc.</p>
+  <p><span class="badge">192 trang slide đã đọc 100%</span><span class="badge">94 bài tập có lời giải</span>
+  <span class="badge">Đối chiếu đáp số gốc</span></p>
+  <div class="home-grid">
+    <div class="home-card" onclick="loadPage('md','notes_Lecture1')"><h3>Lecture 1 — Equilibrium & Elasticity</h3><p>Cân bằng tĩnh, mômen lực, ứng suất-biến dạng.</p></div>
+    <div class="home-card" onclick="loadPage('md','notes_Lecture2')"><h3>Lecture 2 — Gravitation</h3><p>Định luật Newton, Kepler, năng lượng quỹ đạo vệ tinh.</p></div>
+    <div class="home-card" onclick="loadPage('md','notes_Lecture4')"><h3>Lecture 4 — Oscillations</h3><p>Dao động điều hòa, con lắc, dao động tắt dần & cưỡng bức.</p></div>
+    <div class="home-card" onclick="loadPage('md','notes_Lecture9')"><h3>Lecture 9 — Impulse & Momentum</h3><p>Xung lượng, va chạm, động lượng góc.</p></div>
+    <div class="home-card" onclick="loadPage('md','notes_Lecture10')"><h3>Lecture 10 — Planar Kinematics</h3><p>Động học vật rắn phẳng, tâm vận tốc tức thời.</p></div>
+    <div class="home-card" onclick="loadPage('tex','Hibbeler_Ch15_Impulse_Momentum')"><h3>24 Fundamental Problems Ch.15</h3><p>Bộ bài tập chuẩn Hibbeler, lời giải đầy đủ.</p></div>
+  </div>`;
+  // re-attach onclick handlers since we used inline calls needing btn arg optional
+  document.querySelectorAll('.home-card').forEach(c=>{
+    const onclick = c.getAttribute('onclick');
+  });
+}
+loadManifest().then(showHome);
+</script>
+</body>
+</html>
