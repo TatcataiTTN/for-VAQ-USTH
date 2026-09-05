@@ -9,15 +9,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"></script>
 <style>
   :root{
-    --bg:#f7f8fa; --panel:#ffffff; --panel2:#eef1f6; --text:#1a1d24; --muted:#5b6472;
-    --accent:#1a56db; --accent-ink:#ffffff; --border:#d7dce4;
-    --problem:#eef3ff; --problem-b:#2f5fdc;
-    --solution:#eaf7ee; --solution-b:#1f9d55;
-    --note:#fff6e0; --note-b:#b8790a;
+    --bg:#f7f8fa; --panel:#ffffff; --panel2:#eef1f6; --text:#12141a; --muted:#3d4655;
+    --accent:#1a56db; --accent-ink:#ffffff; --border:#c7ced9;
+    --problem:#eef3ff; --problem-b:#2f5fdc; --problem-title:#1c3f9e;
+    --solution:#eaf7ee; --solution-b:#1f9d55; --solution-title:#166b3a;
+    --note:#fff6e0; --note-b:#b8790a; --note-title:#8a5a06;
     --correct:#1f9d55; --incorrect:#d3352e;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.65;font-size:15.5px}
   a{color:var(--accent)}
   header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--panel)}
   header h1{margin:0;font-size:22px}
@@ -35,12 +35,23 @@
   #content h1{color:#0d1730}
   #content h2{color:#163a8c;border-bottom:2px solid var(--border);padding-bottom:6px;margin-top:38px}
   #content h3{color:var(--accent);margin-top:26px}
-  .box{border:1px solid var(--border);border-left-width:6px;border-radius:8px;margin:14px 0;padding:2px 18px 16px;background:var(--panel2)}
+  .box{border:1px solid var(--border);border-left-width:6px;border-radius:8px;margin:14px 0;padding:2px 18px 16px;background:var(--panel2);color:var(--text)}
   .box.problem{border-left-color:var(--problem-b);background:var(--problem)}
   .box.solution{border-left-color:var(--solution-b);background:var(--solution)}
   .box.note{border-left-color:var(--note-b);background:var(--note)}
-  .box-title{font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin:12px 0 6px}
+  .box.hidden{display:none}
+  .box-title{font-weight:800;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;margin:12px 0 6px}
+  .box.problem .box-title{color:var(--problem-title)}
+  .box.solution .box-title{color:var(--solution-title)}
+  .box.note .box-title{color:var(--note-title)}
+  .box-body{color:var(--text)}
   .box-body p{margin:10px 0}
+  .hidden{display:none !important}
+  .lang-toggle,.solution-toggle{display:inline-flex;align-items:center;gap:6px;margin:8px 0;padding:7px 14px;border-radius:999px;border:1px solid var(--accent);background:#fff;color:var(--accent);font-size:12.5px;font-weight:700;cursor:pointer}
+  .lang-toggle:hover,.solution-toggle:hover{background:var(--accent);color:#fff}
+  .solution-toggle{border-color:var(--solution-b);color:var(--solution-title)}
+  .solution-toggle:hover{background:var(--solution-b);color:#fff}
+  .lang-vn{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border)}
   table.answer-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px;background:var(--panel)}
   table.answer-table td{border:1px solid var(--border);padding:7px 10px}
   table.answer-table tr:first-child td{background:var(--panel2);font-weight:700}
@@ -70,13 +81,34 @@
   .opt[disabled]{cursor:default}
   .score-banner{position:sticky;top:0;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:10px 16px;margin-bottom:14px;font-size:14px;font-weight:600}
 
+  /* Formula reference cards */
+  .fcard{border:1px solid var(--border);border-radius:12px;margin:18px 0;overflow:hidden;background:var(--panel);box-shadow:0 1px 3px #0001}
+  .fcard-head{display:flex;align-items:center;gap:12px;padding:14px 18px;color:#fff}
+  .fcard-num{width:30px;height:30px;border-radius:50%;background:#ffffff33;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 30px}
+  #content .fcard-head h3{margin:0;font-size:16px;color:#fff}
+  .fcard-head p{margin:2px 0 0;font-size:12.5px;opacity:.9}
+  .fcard-body{padding:16px 18px}
+  .fcard-formula{background:var(--problem);border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center;font-size:17px;overflow-x:auto}
+  .fcard-vars{margin:12px 0;padding-left:0;list-style:none}
+  .fcard-vars li{padding:4px 0 4px 18px;position:relative;font-size:13.5px}
+  .fcard-vars li:before{content:"▸";position:absolute;left:0;color:var(--accent)}
+  .fcard-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+  .fcard-table td{border:1px solid var(--border);padding:6px 10px}
+  .fcard-table td:first-child{font-weight:700;color:var(--accent);white-space:nowrap}
+  .fcard-example{background:#fff8e6;border:1px solid #f0d99a;border-radius:8px;padding:12px 14px;margin:10px 0;font-size:13.5px}
+  .fcard-tip{background:var(--solution);border:1px solid #b7e3c4;border-radius:8px;padding:12px 14px;margin:10px 0;font-size:13.5px}
+  .fcard-link{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:700;color:var(--accent);cursor:pointer;text-decoration:underline}
+  .formula-toolbar{display:flex;gap:10px;margin:10px 0 20px;flex-wrap:wrap}
+  .formula-toolbar button{padding:8px 14px;border-radius:999px;border:1px solid var(--border);background:var(--panel);font-size:13px;cursor:pointer;font-weight:600}
+  .formula-toolbar button.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
   @media (max-width:800px){.layout{flex-direction:column}nav{width:100%;flex:none;max-height:280px}main{padding:20px}.home-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
   <h1>📐 Mechanics II — Tài liệu tự học song ngữ (USTH)</h1>
-  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ + 200 câu trắc nghiệm · Anh trước, Việt sau</p>
+  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ + 240 câu trắc nghiệm · Anh trước, Việt sau</p>
 </header>
 <div class="layout">
   <nav id="nav"><div id="loading">Đang tải danh mục…</div></nav>
@@ -118,8 +150,9 @@ function buildNav(){
   nav.appendChild(navHeader('Trang chủ'));
   const homeUl = document.createElement('ul');
   homeUl.innerHTML = `<li><button onclick="showHome()">🏠 Tổng quan môn học</button></li>
+                       <li><button onclick="loadFormulas()">📐 30 Công thức Mechanics I &amp; II</button></li>
                        <li><button onclick="loadChecklist()">✅ Checklist 94 bài tập</button></li>
-                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (200 câu)</button></li>`;
+                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (240 câu)</button></li>`;
   nav.appendChild(homeUl);
 
   nav.appendChild(navHeader('Lý thuyết (Reading Notes)'));
@@ -156,7 +189,7 @@ function setActive(btn){
   document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
 }
-async function loadPage(kind, slug, btn){
+async function loadPage(kind, slug, btn, anchor){
   setActive(btn||null);
   const content = document.getElementById('content');
   content.innerHTML = '<div id="loading">Đang tải…</div>';
@@ -164,9 +197,79 @@ async function loadPage(kind, slug, btn){
     const rec = await (await fetch(`data/${slug}.json`)).json();
     content.innerHTML = `<h1>${rec.title}</h1>` + rec.html;
     renderMathIn(content);
+    if(anchor){
+      // the target problem is inside a collapsed VN/solution toggle by default -- just the
+      // English problem statement itself is always visible, so scroll straight to its heading.
+      setTimeout(()=>{
+        const el = document.getElementById(anchor);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      }, 150);
+    }
   }catch(e){
     content.innerHTML = `<p style="color:#b00">Lỗi tải nội dung: ${e}</p>`;
   }
+}
+
+// ---------- Formula reference (Mechanics I + II) ----------
+let formulasData = null;
+async function loadFormulas(filter){
+  setActive(null);
+  if(!formulasData) formulasData = await (await fetch('data/formulas.json')).json();
+  const content = document.getElementById('content');
+  const f = filter || 'all';
+  const items = formulasData.items.filter(it => f==='all' || it.topic===f);
+
+  let html = `<h1>📐 30 Công thức Mechanics I &amp; II</h1>
+  <p>Công thức trọng tâm của cả 2 môn, mỗi thẻ kèm chú giải ký hiệu, ví dụ đã kiểm chứng, và mẹo áp dụng.
+  Công thức Mechanics II có link nhảy thẳng tới bài đã giải đầy đủ trên chính trang này.</p>
+  <div class="formula-toolbar">
+    <button class="${f==='all'?'active':''}" onclick="loadFormulas('all')">Tất cả (${formulasData.items.length})</button>
+    <button class="${f==='M1'?'active':''}" onclick="loadFormulas('M1')">Mechanics I (${formulasData.count_m1})</button>
+    <button class="${f==='M2'?'active':''}" onclick="loadFormulas('M2')">Mechanics II (${formulasData.count_m2})</button>
+  </div>`;
+
+  items.forEach(it=>{
+    html += `<div class="fcard">
+      <div class="fcard-head" style="background:${it.color}">
+        <div class="fcard-num">${it.num}</div>
+        <div><h3>${it.title}</h3><p>${it.subtitle}</p></div>
+      </div>
+      <div class="fcard-body">
+        <div class="fcard-formula">\\[${it.formula}\\]</div>
+        <ul class="fcard-vars">${it.vars.map(v=>`<li>${v}</li>`).join('')}</ul>`;
+    if(it.table){
+      html += `<table class="fcard-table">${it.table.map(row=>`<tr><td>${row[0]}</td><td>${row[1]}</td></tr>`).join('')}</table>`;
+    }
+    if(it.example){
+      html += `<div class="fcard-example">📄 <strong>Ví dụ:</strong> ${it.example.text}`;
+      if(it.example.link){
+        html += `<span class="fcard-link" data-slug="${it.example.link.slug}" data-anchor="${it.example.link.anchor}">Xem lời giải đầy đủ →</span>`;
+      }
+      html += `</div>`;
+    }
+    if(it.tip){
+      html += `<div class="fcard-tip">💡 <strong>Mẹo:</strong> ${it.tip}</div>`;
+    }
+    html += `</div></div>`;
+  });
+
+  content.innerHTML = html;
+  renderMathIn(content);
+  content.querySelectorAll('.fcard-link').forEach(el=>{
+    el.onclick = () => loadPage('tex', el.getAttribute('data-slug'), null, el.getAttribute('data-anchor'));
+  });
+}
+function toggleLang(btn){
+  const target = document.getElementById(btn.getAttribute('data-target'));
+  const showing = !target.classList.contains('hidden');
+  target.classList.toggle('hidden');
+  btn.textContent = showing ? '🇻🇳 Hiện bản tiếng Việt' : '🇻🇳 Ẩn bản tiếng Việt';
+}
+function toggleSolution(btn){
+  const target = document.getElementById(btn.getAttribute('data-target'));
+  const showing = !target.classList.contains('hidden');
+  target.classList.toggle('hidden');
+  btn.textContent = showing ? '💡 Hiện lời giải' : '💡 Ẩn lời giải';
 }
 function renderMathIn(el){
   renderMathInElement(el, {
@@ -187,19 +290,21 @@ function showHome(){
   (Lecture 1, 2, 4, 9, 10) và bổ sung bài tập từ Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) và
   Halliday/Resnick/Walker <em>Fundamentals of Physics</em> cho các chương chưa có slide gốc.</p>
   <p><span class="badge">192 trang slide đã đọc 100%</span><span class="badge">94 bài tập có lời giải</span>
-  <span class="badge">200 câu trắc nghiệm</span><span class="badge">Đối chiếu đáp số gốc</span></p>
+  <span class="badge">240 câu trắc nghiệm</span><span class="badge">30 công thức Mechanics I &amp; II</span><span class="badge">Đối chiếu đáp số gốc</span></p>
   <div class="home-grid">
+    <div class="home-card" data-nav="formulas"><h3>📐 30 Công thức Mechanics I & II</h3><p>Formula sheet chuyên sâu, có ví dụ + link thẳng tới bài giải.</p></div>
+    <div class="home-card" data-nav="quiz"><h3>📝 240 câu trắc nghiệm</h3><p>40 câu/lecture, tự chấm ngay, lọc theo lecture.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture1"><h3>Lecture 1 — Equilibrium & Elasticity</h3><p>Cân bằng tĩnh, mômen lực, ứng suất-biến dạng.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture2"><h3>Lecture 2 — Gravitation</h3><p>Định luật Newton, Kepler, năng lượng quỹ đạo vệ tinh.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture4"><h3>Lecture 4 — Oscillations</h3><p>Dao động điều hòa, con lắc, dao động tắt dần & cưỡng bức.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture9"><h3>Lecture 9 — Impulse & Momentum</h3><p>Xung lượng, va chạm, động lượng góc.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture10"><h3>Lecture 10 — Planar Kinematics</h3><p>Động học vật rắn phẳng, tâm vận tốc tức thời.</p></div>
-    <div class="home-card" data-nav="quiz"><h3>📝 200 câu trắc nghiệm</h3><p>40 câu/lecture, tự chấm ngay, lọc theo lecture.</p></div>
   </div>`;
   content.querySelectorAll('.home-card').forEach(c=>{
     c.onclick = () => {
       const nav = c.getAttribute('data-nav');
       if(nav === 'quiz') return loadQuiz();
+      if(nav === 'formulas') return loadFormulas();
       const [kind, slug] = nav.split(':');
       loadPage(kind, slug);
     };
@@ -257,7 +362,7 @@ async function loadQuiz(filterLecture){
   <div class="quiz-toolbar">
     <label>Lọc theo lecture: </label>
     <select id="quiz-filter">
-      <option value="">Tất cả (200 câu)</option>
+      <option value="">Tất cả (240 câu)</option>
       ${Object.keys(LECTURE_LABEL).map(l=>`<option value="${l}" ${l===filterLecture?'selected':''}>${LECTURE_LABEL[l]}</option>`).join('')}
     </select>
     <button class="primary" onclick="resetQuiz()">Làm lại từ đầu</button>

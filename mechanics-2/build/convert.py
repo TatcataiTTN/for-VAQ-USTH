@@ -67,7 +67,28 @@ def convert_table(block):
         html_rows.append(f"<tr>{cells_html}</tr>")
     return "<table class='answer-table'>" + "".join(html_rows) + "</table>"
 
-def convert_body(tex):
+def slugify(text, seen, fallback):
+    s = re.sub(r"[^a-zA-Z0-9]+", "-", text).strip("-").lower()
+    s = s or fallback
+    base = s
+    n = 2
+    while s in seen:
+        s = f"{base}-{n}"
+        n += 1
+    seen.add(s)
+    return s
+
+def split_en_vn(inner_html):
+    """Problem statements are authored as '<strong>[EN]</strong> ... <strong>[VN]</strong> ...'
+    in one continuous block. Split them into 2 DOM pieces so the page can show only the EN part
+    by default and reveal VN behind a toggle button."""
+    marker = "<strong>[VN]</strong>"
+    idx = inner_html.find(marker)
+    if idx == -1:
+        return inner_html, None
+    return inner_html[:idx].strip(), inner_html[idx:].strip()
+
+def convert_body(tex, slug=""):
     # cut everything up to \begin{document} ... first real content
     m = re.search(r"\\begin\{document\}(.*)\\end\{document\}", tex, re.S)
     body = m.group(1) if m else tex
@@ -77,6 +98,8 @@ def convert_body(tex):
 
     out = []
     pos = 0
+    seen_ids = set()
+    problem_counter = 0
     # tokenize top-level constructs in order of appearance
     pattern = re.compile(
         r"\\section\{(?P<sec>.*?)\}|"
@@ -92,12 +115,38 @@ def convert_body(tex):
         if mm.group('sec') is not None:
             out.append(f"<h2>{tex_inline_to_html(mm.group('sec'))}</h2>")
         elif mm.group('sub') is not None:
-            out.append(f"<h3>{tex_inline_to_html(mm.group('sub'))}</h3>")
+            title_txt = mm.group('sub')
+            anchor = slugify(title_txt, seen_ids, f"{slug}-sec{len(seen_ids)}")
+            out.append(f"<h3 id='{anchor}'>{tex_inline_to_html(title_txt)}</h3>")
         elif mm.group('envname'):
-            cls = {"problembox":"problem","solutionbox":"solution","notebox":"note"}[mm.group('envname')]
-            title = mm.group('envtitle') or {"problembox":"Đề bài","solutionbox":"Lời giải","notebox":"Ghi chú"}[mm.group('envname')]
-            inner = mm.group('envbody')
-            out.append(f"<div class='box {cls}'><div class='box-title'>{tex_inline_to_html(title)}</div><div class='box-body'>{tex_inline_to_html(inner)}</div></div>")
+            envname = mm.group('envname')
+            inner_html = tex_inline_to_html(mm.group('envbody'))
+            if envname == "problembox":
+                problem_counter += 1
+                title = mm.group('envtitle') or "Đề bài"
+                en_html, vn_html = split_en_vn(inner_html)
+                if vn_html:
+                    uid = f"{slug}-vn-{problem_counter}"
+                    body_html = (f"<div class='lang-en'>{en_html}</div>"
+                                 f"<button class='lang-toggle' data-target='{uid}' "
+                                 f"onclick='toggleLang(this)'>🇻🇳 Hiện bản tiếng Việt</button>"
+                                 f"<div class='lang-vn hidden' id='{uid}'>{vn_html}</div>")
+                else:
+                    body_html = f"<div class='lang-en'>{en_html}</div>"
+                out.append(f"<div class='box problem'><div class='box-title'>{tex_inline_to_html(title)}</div>"
+                           f"<div class='box-body'>{body_html}</div></div>")
+            elif envname == "solutionbox":
+                title = mm.group('envtitle') or "Lời giải"
+                uid = f"{slug}-sol-{problem_counter}"
+                out.append(f"<button class='solution-toggle' data-target='{uid}' onclick='toggleSolution(this)'>"
+                           f"💡 Hiện lời giải</button>"
+                           f"<div class='box solution hidden' id='{uid}'>"
+                           f"<div class='box-title'>{tex_inline_to_html(title)}</div>"
+                           f"<div class='box-body'>{inner_html}</div></div>")
+            else:  # notebox
+                title = mm.group('envtitle') or "Ghi chú"
+                out.append(f"<div class='box note'><div class='box-title'>{tex_inline_to_html(title)}</div>"
+                           f"<div class='box-body'>{inner_html}</div></div>")
         elif mm.group('tbl') is not None:
             out.append(convert_table(mm.group('tbl')))
         pos = mm.end()
@@ -106,10 +155,10 @@ def convert_body(tex):
         out.append(f"<p>{tex_inline_to_html(tail)}</p>")
     return "\n".join(out)
 
-def process_tex_file(path):
+def process_tex_file(path, slug):
     tex = open(path, encoding="utf-8").read()
     title = get_title(tex)
-    body_html = convert_body(tex)
+    body_html = convert_body(tex, slug)
     return {"title": title, "html": body_html}
 
 SUB_RE = r"(_[A-Za-z0-9]+)?"
@@ -146,8 +195,8 @@ def main():
     manifest = {"tex": [], "md": []}
     for fn in sorted(os.listdir(SRC_TEX_DIR)):
         if fn.endswith(".tex"):
-            rec = process_tex_file(os.path.join(SRC_TEX_DIR, fn))
             slug = fn[:-4]
+            rec = process_tex_file(os.path.join(SRC_TEX_DIR, fn), slug)
             json.dump(rec, open(f"{OUT_DIR}/{slug}.json","w"), ensure_ascii=False)
             manifest["tex"].append({"slug": slug, "title": rec["title"]})
             print("tex:", slug, "->", rec["title"])
