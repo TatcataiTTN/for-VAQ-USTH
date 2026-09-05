@@ -31,7 +31,8 @@ def shuffle_group(questions, seed):
         rnd.shuffle(idx)
         shuffled = [options[j] for j in idx]
         correct_letter = LETTERS[idx.index(0)]
-        out.append({**q, "options": {LETTERS[k]: shuffled[k] for k in range(4)}, "correct": correct_letter})
+        out.append({"lecture": q["lecture"], "question": q["q"],
+                    "options": {LETTERS[k]: shuffled[k] for k in range(4)}, "correct": correct_letter})
     return out
 
 def best_seed_for(questions, tries=500):

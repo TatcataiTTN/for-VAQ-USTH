@@ -45,6 +45,7 @@ def tex_inline_to_html(s):
     s = re.sub(r"\\newpage", "", s)
     s = s.replace(r"\%", "%")
     s = s.replace(r"\_", "_")
+    s = s.replace(r"\&", "&")
     s = s.replace("---", "—").replace("--", "–")
     s = re.sub(r"\\quad", " &nbsp; ", s)
 
@@ -100,10 +101,16 @@ def convert_body(tex, slug=""):
     pos = 0
     seen_ids = set()
     problem_counter = 0
-    # tokenize top-level constructs in order of appearance
+    # tokenize top-level constructs in order of appearance.
+    # Section/subsection titles may contain LaTeX math with its OWN braces (e.g. "$\omega_{AB}$")
+    # -- a plain non-greedy ".*?" stops at that inner "}" and truncates the title, spilling the
+    # rest as stray body text. NESTED_BRACES allows one level of nesting so titles like that parse
+    # as a whole; not a full brace-matching parser, but enough for the single-macro-argument math
+    # these titles use.
+    NESTED_BRACES = r"(?:[^{}]|\{[^{}]*\})*"
     pattern = re.compile(
-        r"\\section\{(?P<sec>.*?)\}|"
-        r"\\subsection\*?\{(?P<sub>.*?)\}|"
+        r"\\section\{(?P<sec>" + NESTED_BRACES + r")\}|"
+        r"\\subsection\*?\{(?P<sub>" + NESTED_BRACES + r")\}|"
         r"\\begin\{(?P<envname>problembox|solutionbox|notebox)\}(?:\[(?P<envtitle>.*?)\])?(?P<envbody>.*?)\\end\{(?P=envname)\}|"
         r"\\begin\{center\}(?P<tbl>.*?)\\end\{center\}",
         re.S)
@@ -161,22 +168,37 @@ def process_tex_file(path, slug):
     body_html = convert_body(tex, slug)
     return {"title": title, "html": body_html}
 
-SUB_RE = r"(_[A-Za-z0-9]+)?"
+SUB_RE = r"(_\{[^{}]*\}|_[A-Za-z0-9]+)?"
 
 def fix_combining_marks(text):
     """The reading notes use Unicode combining marks (vector arrow, dot-above for time
     derivative, circumflex for unit vectors) directly on letters -- most fonts render these
     as tofu boxes instead of a proper diacritic. Convert each occurrence into a small KaTeX
-    math snippet ($\\vec{F}_{net}$ etc.) instead, which renders correctly in every browser."""
+    math snippet ($\\vec{F}_{net}$ etc.) instead, which renders correctly in every browser.
+    Subscript can be a single alnum char (_x) or a braced group (_{1,net}) -- braced content
+    may contain commas/other punctuation (e.g. "F_{1,net}"), so don't restrict it to alnum only."""
     def wrap(macro):
         def repl(m):
             base, sub = m.group(1), m.group(2)
-            sub_tex = "_{" + sub[1:] + "}" if sub else ""
+            if sub:
+                inner = sub[2:-1] if sub.startswith("_{") else sub[1:]
+                sub_tex = "_{" + inner + "}"
+            else:
+                sub_tex = ""
             return f"${macro}{{{base}}}{sub_tex}$"
         return repl
-    text = re.sub(r"([A-Za-zΑ-Ωα-ω])⃗" + SUB_RE, wrap(r"\\vec"), text)
-    text = re.sub(r"([A-Za-zΑ-Ωα-ω])̇" + SUB_RE, wrap(r"\\dot"), text)
-    text = re.sub(r"([A-Za-zΑ-Ωα-ω])̂" + SUB_RE, wrap(r"\\hat"), text)
+    # Authoring was inconsistent about where the combining mark landed relative to a subscript:
+    # sometimes "F⃗_{1,net}" (mark right on the base letter, subscript after), sometimes
+    # "r_{B/A}⃗" (subscript first, mark trailing the whole subscripted symbol). Handle the
+    # subscript-then-mark order FIRST (it requires a subscript to match at all), then the
+    # mark-then-subscript order for everything else -- otherwise the trailing-mark form is left
+    # as a bare, unconverted combining character (renders as a tofu box in most fonts).
+    SUB_THEN_MARK = r"([A-Za-zΑ-Ωα-ω])(_\{[^{}]*\}|_[A-Za-z0-9]+)"
+    for macro, mark in ((r"\vec", "⃗"), (r"\dot", "̇"), (r"\hat", "̂")):
+        text = re.sub(SUB_THEN_MARK + mark, wrap(macro), text)
+    text = re.sub(r"([A-Za-zΑ-Ωα-ω])⃗" + SUB_RE, wrap(r"\vec"), text)
+    text = re.sub(r"([A-Za-zΑ-Ωα-ω])̇" + SUB_RE, wrap(r"\dot"), text)
+    text = re.sub(r"([A-Za-zΑ-Ωα-ω])̂" + SUB_RE, wrap(r"\hat"), text)
     return text
 
 def process_md_file(path):
@@ -187,7 +209,19 @@ def process_md_file(path):
     lines = text.splitlines()
     title = lines[0].lstrip("#").strip() if lines and lines[0].startswith("#") else os.path.basename(path)
     body = "\n".join(lines[1:])
+
+    # Protect the $...$ math spans fix_combining_marks just produced (and any the author wrote
+    # by hand) from python-markdown's underscore-emphasis parsing -- a subscript like
+    # "$\vec{F}_{1,net}$" has a bare "_" that markdown will happily read as an <em> opener if
+    # another "_" shows up later in the same paragraph, silently mangling the math.
+    protected = []
+    def stash(m):
+        protected.append(m.group(1))
+        return f"MDMATHPLACEHOLDERZZZ{len(protected)-1}ZZZ"
+    body = MATH_RE.sub(stash, body)
     html_body = md.markdown(body, extensions=["tables", "fenced_code"])
+    for i, m in enumerate(protected):
+        html_body = html_body.replace(f"MDMATHPLACEHOLDERZZZ{i}ZZZ", m)
     return {"title": title, "html": html_body}
 
 def main():
