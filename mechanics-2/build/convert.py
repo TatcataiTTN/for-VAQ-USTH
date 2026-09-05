@@ -112,9 +112,28 @@ def process_tex_file(path):
     body_html = convert_body(tex)
     return {"title": title, "html": body_html}
 
+SUB_RE = r"(_[A-Za-z0-9]+)?"
+
+def fix_combining_marks(text):
+    """The reading notes use Unicode combining marks (vector arrow, dot-above for time
+    derivative, circumflex for unit vectors) directly on letters -- most fonts render these
+    as tofu boxes instead of a proper diacritic. Convert each occurrence into a small KaTeX
+    math snippet ($\\vec{F}_{net}$ etc.) instead, which renders correctly in every browser."""
+    def wrap(macro):
+        def repl(m):
+            base, sub = m.group(1), m.group(2)
+            sub_tex = "_{" + sub[1:] + "}" if sub else ""
+            return f"${macro}{{{base}}}{sub_tex}$"
+        return repl
+    text = re.sub(r"([A-Za-zΑ-Ωα-ω])⃗" + SUB_RE, wrap(r"\\vec"), text)
+    text = re.sub(r"([A-Za-zΑ-Ωα-ω])̇" + SUB_RE, wrap(r"\\dot"), text)
+    text = re.sub(r"([A-Za-zΑ-Ωα-ω])̂" + SUB_RE, wrap(r"\\hat"), text)
+    return text
+
 def process_md_file(path):
     import markdown as md
     text = open(path, encoding="utf-8").read()
+    text = fix_combining_marks(text)
     # first line "# ..." as title
     lines = text.splitlines()
     title = lines[0].lstrip("#").strip() if lines and lines[0].startswith("#") else os.path.basename(path)

@@ -9,62 +9,80 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"></script>
 <style>
   :root{
-    --bg:#0f1115; --panel:#161923; --panel2:#1c2030; --text:#e8eaf0; --muted:#9aa3b5;
-    --accent:#5b9dff; --accent2:#7ee0c0; --border:#2a2f42;
-    --problem:#1a2740; --problem-b:#3a63c9;
-    --solution:#16301f; --solution-b:#3aa15a;
-    --note:#3a2c12; --note-b:#c98a2f;
+    --bg:#f7f8fa; --panel:#ffffff; --panel2:#eef1f6; --text:#1a1d24; --muted:#5b6472;
+    --accent:#1a56db; --accent-ink:#ffffff; --border:#d7dce4;
+    --problem:#eef3ff; --problem-b:#2f5fdc;
+    --solution:#eaf7ee; --solution-b:#1f9d55;
+    --note:#fff6e0; --note-b:#b8790a;
+    --correct:#1f9d55; --incorrect:#d3352e;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.55}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
   a{color:var(--accent)}
-  header{padding:22px 28px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#141826,#0f1115)}
+  header{padding:20px 28px;border-bottom:1px solid var(--border);background:var(--panel)}
   header h1{margin:0;font-size:22px}
   header p{margin:6px 0 0;color:var(--muted);font-size:14px}
-  .layout{display:flex;min-height:calc(100vh - 84px)}
+  .layout{display:flex;min-height:calc(100vh - 82px)}
   nav{width:300px;flex:0 0 300px;background:var(--panel);border-right:1px solid var(--border);padding:16px;overflow-y:auto}
-  nav h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 8px}
+  nav h2{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 8px;font-weight:700}
   nav h2:first-child{margin-top:0}
   nav ul{list-style:none;margin:0;padding:0}
   nav li{margin:2px 0}
   nav button{width:100%;text-align:left;background:none;border:none;color:var(--text);padding:8px 10px;border-radius:8px;cursor:pointer;font-size:13.5px}
   nav button:hover{background:var(--panel2)}
-  nav button.active{background:var(--accent);color:#08111f;font-weight:600}
-  main{flex:1;padding:28px 36px;max-width:900px}
-  #content h2{color:var(--accent2);border-bottom:1px solid var(--border);padding-bottom:6px;margin-top:36px}
-  #content h3{color:var(--accent);margin-top:28px}
-  .box{border:1px solid var(--border);border-left-width:5px;border-radius:8px;margin:14px 0;padding:2px 16px 14px;background:var(--panel2)}
+  nav button.active{background:var(--accent);color:var(--accent-ink);font-weight:600}
+  main{flex:1;padding:28px 40px;max-width:920px}
+  #content h1{color:#0d1730}
+  #content h2{color:#163a8c;border-bottom:2px solid var(--border);padding-bottom:6px;margin-top:38px}
+  #content h3{color:var(--accent);margin-top:26px}
+  .box{border:1px solid var(--border);border-left-width:6px;border-radius:8px;margin:14px 0;padding:2px 18px 16px;background:var(--panel2)}
   .box.problem{border-left-color:var(--problem-b);background:var(--problem)}
   .box.solution{border-left-color:var(--solution-b);background:var(--solution)}
   .box.note{border-left-color:var(--note-b);background:var(--note)}
-  .box-title{font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin:12px 0 6px}
+  .box-title{font-weight:700;font-size:12.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);margin:12px 0 6px}
   .box-body p{margin:10px 0}
-  table.answer-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px}
-  table.answer-table td{border:1px solid var(--border);padding:6px 10px}
-  table.answer-table tr:first-child td{background:var(--panel);font-weight:700}
+  table.answer-table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px;background:var(--panel)}
+  table.answer-table td{border:1px solid var(--border);padding:7px 10px}
+  table.answer-table tr:first-child td{background:var(--panel2);font-weight:700}
   hr.mini{border:none;border-top:1px dashed var(--border);margin:14px 0}
-  code{background:#0006;padding:1px 5px;border-radius:4px;font-size:.92em}
+  code{background:#0000000d;padding:1px 5px;border-radius:4px;font-size:.92em}
   .home-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
-  .home-card{border:1px solid var(--border);background:var(--panel2);border-radius:10px;padding:16px;cursor:pointer}
+  .home-card{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:16px;cursor:pointer;box-shadow:0 1px 2px #0001}
   .home-card:hover{border-color:var(--accent)}
-  .home-card h3{margin:0 0 6px;color:var(--accent2);font-size:15px}
+  .home-card h3{margin:0 0 6px;color:var(--accent);font-size:15px}
   .home-card p{margin:0;color:var(--muted);font-size:13px}
-  .badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:var(--panel);color:var(--muted);margin-right:6px}
-  footer{padding:18px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--border)}
+  .badge{display:inline-block;font-size:11.5px;padding:3px 10px;border-radius:999px;background:var(--panel2);color:#334;margin-right:6px;border:1px solid var(--border)}
+  footer{padding:18px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);background:var(--panel)}
   #loading{padding:40px;color:var(--muted)}
-  @media (max-width:800px){.layout{flex-direction:column}nav{width:100%;flex:none;max-height:280px}main{padding:20px}}
+
+  /* MCQ quiz */
+  .quiz-toolbar{display:flex;gap:10px;align-items:center;margin:10px 0 20px;flex-wrap:wrap}
+  .quiz-toolbar select,.quiz-toolbar button{padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:var(--panel);font-size:13.5px;cursor:pointer}
+  .quiz-toolbar button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .qcard{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .qcard .qhead{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:6px}
+  .qcard .qtext{font-weight:600;margin-bottom:10px}
+  .opt{display:block;width:100%;text-align:left;padding:9px 12px;margin:6px 0;border:1px solid var(--border);border-radius:8px;background:var(--panel);cursor:pointer;font-size:13.5px}
+  .opt:hover{border-color:var(--accent)}
+  .opt.picked{border-color:var(--accent);background:#eaf1ff}
+  .opt.correct{border-color:var(--correct);background:#e7f8ec;font-weight:600}
+  .opt.incorrect{border-color:var(--incorrect);background:#fdecec}
+  .opt[disabled]{cursor:default}
+  .score-banner{position:sticky;top:0;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:10px 16px;margin-bottom:14px;font-size:14px;font-weight:600}
+
+  @media (max-width:800px){.layout{flex-direction:column}nav{width:100%;flex:none;max-height:280px}main{padding:20px}.home-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
   <h1>📐 Mechanics II — Tài liệu tự học song ngữ (USTH)</h1>
-  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ · Anh trước, Việt sau</p>
+  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ + 40 câu trắc nghiệm · Anh trước, Việt sau</p>
 </header>
 <div class="layout">
   <nav id="nav"><div id="loading">Đang tải danh mục…</div></nav>
-  <main><div id="content"><div id="loading">Chọn 1 mục ở menu bên trái, hoặc xem trang chủ.</div></div></main>
+  <main><div id="content"><div id="loading">Đang tải…</div></div></main>
 </div>
-<footer>Nguồn: slide gốc USTH + Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) + Halliday/Resnick/Walker <em>Fundamentals of Physics</em>. Mọi lời giải đã đối chiếu đáp số gốc.</footer>
+<footer>Nguồn: slide gốc USTH + Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) + Halliday/Resnick/Walker <em>Fundamentals of Physics</em>. Mọi lời giải đã đối chiếu đáp số gốc. Trắc nghiệm: vị trí đáp án đúng đã được xáo ngẫu nhiên và kiểm tra thống kê (chi-square) để tránh lộ pattern.</footer>
 
 <script>
 const THEORY_ORDER = ["notes_Lecture1","notes_Lecture2","notes_Lecture4","notes_Lecture9","notes_Lecture10"];
@@ -85,8 +103,11 @@ const PROBLEM_ORDER = [
   "Lecture10_Original_Problems_Solutions",
   "Hibbeler_Ch16_Planar_Kinematics"
 ];
+const LECTURE_LABEL = {L1:"Lecture 1", L2:"Lecture 2", L4:"Lecture 4", L9:"Lecture 9", L10:"Lecture 10"};
 
 let manifest = null;
+let mcqData = null;
+
 async function loadManifest(){
   manifest = await (await fetch('data/manifest.json')).json();
   buildNav();
@@ -96,7 +117,9 @@ function buildNav(){
   nav.innerHTML = '';
   nav.appendChild(navHeader('Trang chủ'));
   const homeUl = document.createElement('ul');
-  homeUl.innerHTML = `<li><button onclick="showHome()">🏠 Tổng quan môn học</button></li>`;
+  homeUl.innerHTML = `<li><button onclick="showHome()">🏠 Tổng quan môn học</button></li>
+                       <li><button onclick="loadChecklist()">✅ Checklist 94 bài tập</button></li>
+                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (40 câu)</button></li>`;
   nav.appendChild(homeUl);
 
   nav.appendChild(navHeader('Lý thuyết (Reading Notes)'));
@@ -134,7 +157,7 @@ function setActive(btn){
   if(btn) btn.classList.add('active');
 }
 async function loadPage(kind, slug, btn){
-  setActive(btn);
+  setActive(btn||null);
   const content = document.getElementById('content');
   content.innerHTML = '<div id="loading">Đang tải…</div>';
   try{
@@ -142,7 +165,7 @@ async function loadPage(kind, slug, btn){
     content.innerHTML = `<h1>${rec.title}</h1>` + rec.html;
     renderMathIn(content);
   }catch(e){
-    content.innerHTML = `<p style="color:#f77">Lỗi tải nội dung: ${e}</p>`;
+    content.innerHTML = `<p style="color:#b00">Lỗi tải nội dung: ${e}</p>`;
   }
 }
 function renderMathIn(el){
@@ -164,20 +187,117 @@ function showHome(){
   (Lecture 1, 2, 4, 9, 10) và bổ sung bài tập từ Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) và
   Halliday/Resnick/Walker <em>Fundamentals of Physics</em> cho các chương chưa có slide gốc.</p>
   <p><span class="badge">192 trang slide đã đọc 100%</span><span class="badge">94 bài tập có lời giải</span>
-  <span class="badge">Đối chiếu đáp số gốc</span></p>
+  <span class="badge">40 câu trắc nghiệm</span><span class="badge">Đối chiếu đáp số gốc</span></p>
   <div class="home-grid">
-    <div class="home-card" onclick="loadPage('md','notes_Lecture1')"><h3>Lecture 1 — Equilibrium & Elasticity</h3><p>Cân bằng tĩnh, mômen lực, ứng suất-biến dạng.</p></div>
-    <div class="home-card" onclick="loadPage('md','notes_Lecture2')"><h3>Lecture 2 — Gravitation</h3><p>Định luật Newton, Kepler, năng lượng quỹ đạo vệ tinh.</p></div>
-    <div class="home-card" onclick="loadPage('md','notes_Lecture4')"><h3>Lecture 4 — Oscillations</h3><p>Dao động điều hòa, con lắc, dao động tắt dần & cưỡng bức.</p></div>
-    <div class="home-card" onclick="loadPage('md','notes_Lecture9')"><h3>Lecture 9 — Impulse & Momentum</h3><p>Xung lượng, va chạm, động lượng góc.</p></div>
-    <div class="home-card" onclick="loadPage('md','notes_Lecture10')"><h3>Lecture 10 — Planar Kinematics</h3><p>Động học vật rắn phẳng, tâm vận tốc tức thời.</p></div>
-    <div class="home-card" onclick="loadPage('tex','Hibbeler_Ch15_Impulse_Momentum')"><h3>24 Fundamental Problems Ch.15</h3><p>Bộ bài tập chuẩn Hibbeler, lời giải đầy đủ.</p></div>
+    <div class="home-card" data-nav="md:notes_Lecture1"><h3>Lecture 1 — Equilibrium & Elasticity</h3><p>Cân bằng tĩnh, mômen lực, ứng suất-biến dạng.</p></div>
+    <div class="home-card" data-nav="md:notes_Lecture2"><h3>Lecture 2 — Gravitation</h3><p>Định luật Newton, Kepler, năng lượng quỹ đạo vệ tinh.</p></div>
+    <div class="home-card" data-nav="md:notes_Lecture4"><h3>Lecture 4 — Oscillations</h3><p>Dao động điều hòa, con lắc, dao động tắt dần & cưỡng bức.</p></div>
+    <div class="home-card" data-nav="md:notes_Lecture9"><h3>Lecture 9 — Impulse & Momentum</h3><p>Xung lượng, va chạm, động lượng góc.</p></div>
+    <div class="home-card" data-nav="md:notes_Lecture10"><h3>Lecture 10 — Planar Kinematics</h3><p>Động học vật rắn phẳng, tâm vận tốc tức thời.</p></div>
+    <div class="home-card" data-nav="quiz"><h3>📝 40 câu trắc nghiệm</h3><p>Tự chấm ngay, 8 câu mỗi lecture, có thể lọc theo lecture.</p></div>
   </div>`;
-  // re-attach onclick handlers since we used inline calls needing btn arg optional
-  document.querySelectorAll('.home-card').forEach(c=>{
-    const onclick = c.getAttribute('onclick');
+  content.querySelectorAll('.home-card').forEach(c=>{
+    c.onclick = () => {
+      const nav = c.getAttribute('data-nav');
+      if(nav === 'quiz') return loadQuiz();
+      const [kind, slug] = nav.split(':');
+      loadPage(kind, slug);
+    };
   });
 }
+
+// ---------- Checklist ----------
+async function loadChecklist(){
+  setActive(null);
+  const content = document.getElementById('content');
+  content.innerHTML = '<div id="loading">Đang tải…</div>';
+  const items = [];
+  for(const slug of PROBLEM_ORDER){
+    const rec = manifest.tex.find(r=>r.slug===slug);
+    if(!rec) continue;
+    const data = await (await fetch(`data/${slug}.json`)).json();
+    const tmp = document.createElement('div');
+    tmp.innerHTML = data.html;
+    tmp.querySelectorAll('h3').forEach((h,i)=>{
+      items.push({file: shortTitle(rec.title), slug, label: h.textContent, idx: i});
+    });
+  }
+  let saved = {};
+  try{ saved = JSON.parse(localStorage.getItem('mech2_checklist')||'{}'); }catch(e){}
+  let html = `<h1>Checklist bài tập</h1><p>Tổng cộng <strong>${items.length}</strong> mục. Tick để tự đánh dấu đã ôn xong (lưu trên trình duyệt này, không đồng bộ máy khác).</p>`;
+  let curFile = null;
+  items.forEach((it, i)=>{
+    if(it.file !== curFile){ html += `<h2>${it.file}</h2>`; curFile = it.file; }
+    const key = `${it.slug}#${it.idx}`;
+    const checked = saved[key] ? 'checked' : '';
+    html += `<label style="display:block;padding:6px 0;border-bottom:1px solid var(--border)">
+      <input type="checkbox" data-key="${key}" ${checked}/> ${it.label}
+      <button style="float:right" onclick="loadPage('tex','${it.slug}')">Xem →</button>
+    </label>`;
+  });
+  content.innerHTML = html;
+  content.querySelectorAll('input[type=checkbox]').forEach(cb=>{
+    cb.onchange = () => {
+      let s = {};
+      try{ s = JSON.parse(localStorage.getItem('mech2_checklist')||'{}'); }catch(e){}
+      s[cb.getAttribute('data-key')] = cb.checked;
+      localStorage.setItem('mech2_checklist', JSON.stringify(s));
+    };
+  });
+}
+
+// ---------- MCQ Quiz ----------
+async function loadQuiz(filterLecture){
+  setActive(null);
+  if(!mcqData) mcqData = await (await fetch('data/mcq.json')).json();
+  const content = document.getElementById('content');
+  const items = filterLecture ? mcqData.items.filter(it=>it.lecture===filterLecture) : mcqData.items;
+
+  let html = `<h1>Trắc nghiệm Mechanics II</h1>
+  <div class="quiz-toolbar">
+    <label>Lọc theo lecture: </label>
+    <select id="quiz-filter">
+      <option value="">Tất cả (40 câu)</option>
+      ${Object.keys(LECTURE_LABEL).map(l=>`<option value="${l}" ${l===filterLecture?'selected':''}>${LECTURE_LABEL[l]}</option>`).join('')}
+    </select>
+    <button class="primary" onclick="resetQuiz()">Làm lại từ đầu</button>
+  </div>
+  <div class="score-banner" id="quiz-score">Đã trả lời: 0 / ${items.length} · Đúng: 0</div>
+  <div id="quiz-list"></div>`;
+  content.innerHTML = html;
+  document.getElementById('quiz-filter').onchange = (e)=> loadQuiz(e.target.value || undefined);
+
+  const list = document.getElementById('quiz-list');
+  const state = {answered:0, correct:0};
+  items.forEach((it, qi)=>{
+    const card = document.createElement('div');
+    card.className = 'qcard';
+    card.innerHTML = `<div class="qhead"><span>${LECTURE_LABEL[it.lecture]}</span><span>Câu ${qi+1}/${items.length}</span></div>
+      <div class="qtext">${it.question}</div>`;
+    ['A','B','C','D'].forEach(letter=>{
+      const btn = document.createElement('button');
+      btn.className = 'opt';
+      btn.textContent = `${letter}. ${it.options[letter]}`;
+      btn.onclick = () => {
+        if(btn.dataset.done) return;
+        const allOpts = card.querySelectorAll('.opt');
+        allOpts.forEach(o=>{ o.dataset.done = '1'; o.disabled = true; });
+        const isCorrect = letter === it.correct;
+        btn.classList.add(isCorrect ? 'correct' : 'incorrect');
+        allOpts.forEach(o=>{
+          if(o.textContent.startsWith(it.correct + '.')) o.classList.add('correct');
+        });
+        state.answered++; if(isCorrect) state.correct++;
+        document.getElementById('quiz-score').textContent =
+          `Đã trả lời: ${state.answered} / ${items.length} · Đúng: ${state.correct}`;
+      };
+      card.appendChild(btn);
+    });
+    list.appendChild(card);
+  });
+}
+function resetQuiz(){ loadQuiz(); }
+
 loadManifest().then(showHome);
 </script>
 </body>

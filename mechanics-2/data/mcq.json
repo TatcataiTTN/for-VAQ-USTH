@@ -1,0 +1,977 @@
+{
+  "items": [
+    {
+      "id": "mcq-01",
+      "lecture": "L1",
+      "question": "Điều kiện cân bằng tĩnh của vật rắn trong bài toán phẳng (mặt xy) cần đủ mấy phương trình độc lập?",
+      "options": {
+        "A": "3 phương trình: ΣF_x=0, ΣF_y=0, Στ_z=0",
+        "B": "4 phương trình: thêm cả ΣF_z=0",
+        "C": "1 phương trình: chỉ cần Στ_z=0 nếu vật đang đứng yên",
+        "D": "2 phương trình: chỉ cần ΣF_x=0 và ΣF_y=0"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-02",
+      "lecture": "L1",
+      "question": "Khi giải bài toán cân bằng có lực tại 1 điểm chưa biết (ví dụ phản lực tại bản lề), nên chọn trục quay ở đâu để phương trình mô-men gọn nhất?",
+      "options": {
+        "A": "Chọn trục quay tại khối tâm của toàn hệ",
+        "B": "Chọn trục quay tại điểm xa nhất so với mọi lực",
+        "C": "Trục quay không ảnh hưởng đến độ phức tạp của phương trình",
+        "D": "Chọn trục quay đi qua đúng điểm đặt của lực chưa biết đó"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-03",
+      "lecture": "L1",
+      "question": "Bài toán tĩnh học được gọi là \"indeterminate\" (siêu tĩnh) khi nào?",
+      "options": {
+        "A": "Khi vật có khối lượng lớn hơn 100 kg",
+        "B": "Khi số lực/mô-men chưa biết nhiều hơn số phương trình cân bằng độc lập có thể viết",
+        "C": "Khi có từ 2 lực trở lên tác dụng lên vật",
+        "D": "Khi hệ số ma sát giữa các bề mặt bằng 0"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-04",
+      "lecture": "L1",
+      "question": "Công thức nào đúng cho ứng suất kéo/nén (tension/compression) theo Young's modulus E?",
+      "options": {
+        "A": "F/A = E · (ΔL/L)",
+        "B": "F/A = G · (Δx/L)",
+        "C": "p = B · (ΔV/V)",
+        "D": "F = k · ΔL với k là hằng số lò xo"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-05",
+      "lecture": "L1",
+      "question": "Modulus nào mô tả đúng quan hệ ứng suất–biến dạng cho lực TRƯỢT (shearing, lực song song mặt cắt)?",
+      "options": {
+        "A": "Bulk modulus B",
+        "B": "Hệ số ma sát động μ_k",
+        "C": "Shear modulus G",
+        "D": "Young's modulus E"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-06",
+      "lecture": "L1",
+      "question": "Tâm trọng lực (center of gravity) trùng với khối tâm (center of mass) khi nào?",
+      "options": {
+        "A": "Chỉ đúng khi vật có dạng hình cầu hoàn hảo",
+        "B": "Chỉ đúng khi vật đang đứng yên tuyệt đối",
+        "C": "Luôn luôn đúng với mọi vật rắn bất kỳ",
+        "D": "Khi gia tốc trọng trường g như nhau tại mọi phần tử của vật"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-07",
+      "lecture": "L1",
+      "question": "Trong Sample Problem 12.02 (két sắt treo qua boom), vì sao chọn trục mô-men đi qua bản lề O?",
+      "options": {
+        "A": "Để tính trực tiếp lực căng cáp mà không cần bất kỳ phương trình nào",
+        "B": "Vì đó là quy định bắt buộc trong mọi bài toán cân bằng",
+        "C": "Vì bản lề luôn trùng với khối tâm của cả hệ",
+        "D": "Để loại 2 thành phần lực chưa biết tại bản lề (F_h, F_v) khỏi phương trình mô-men"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-08",
+      "lecture": "L1",
+      "question": "Ứng suất thủy tĩnh (hydraulic stress) trên 1 vật ngâm trong chất lưu bằng đại lượng nào?",
+      "options": {
+        "A": "Vận tốc dòng chảy của chất lưu",
+        "B": "Nhiệt độ của chất lưu bao quanh vật",
+        "C": "Áp suất p của chất lưu tác dụng lên vật",
+        "D": "Độ nhớt của chất lưu"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-09",
+      "lecture": "L2",
+      "question": "Theo định lý vỏ cầu (shell theorem), lực hấp dẫn của một vỏ cầu đồng chất tác dụng lên hạt NẰM BÊN TRONG nó bằng bao nhiêu?",
+      "options": {
+        "A": "Luôn hướng ra ngoài vỏ cầu",
+        "B": "Bằng 0",
+        "C": "Bằng GmM/R² như thể toàn bộ khối lượng tập trung ở tâm",
+        "D": "Phụ thuộc vào vị trí cụ thể của hạt bên trong vỏ"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-10",
+      "lecture": "L2",
+      "question": "Định luật 2 Kepler (law of areas — quét diện tích bằng nhau trong thời gian bằng nhau) tương đương với định luật bảo toàn nào?",
+      "options": {
+        "A": "Bảo toàn động lượng góc",
+        "B": "Bảo toàn cơ năng",
+        "C": "Bảo toàn động lượng tuyến tính",
+        "D": "Bảo toàn khối lượng"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-11",
+      "lecture": "L2",
+      "question": "Với vệ tinh trên quỹ đạo TRÒN, tổng cơ năng E liên hệ với động năng K theo công thức nào?",
+      "options": {
+        "A": "E = K",
+        "B": "E = −K",
+        "C": "E = 0 với mọi bán kính quỹ đạo",
+        "D": "E = 2K"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-12",
+      "lecture": "L2",
+      "question": "Giả sử Trái Đất có mật độ đồng đều, lực hấp dẫn tác dụng lên 1 vật càng đi sâu vào bên trong (bán kính r giảm) thì thay đổi ra sao?",
+      "options": {
+        "A": "Tăng tuyến tính khi r giảm",
+        "B": "Tăng theo r² khi r giảm",
+        "C": "Không đổi bất kể r",
+        "D": "Giảm tuyến tính theo r, bằng 0 ngay tại tâm"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-13",
+      "lecture": "L2",
+      "question": "Độ lệch tâm (eccentricity) e = 0 của một quỹ đạo elip tương ứng với hình dạng quỹ đạo nào?",
+      "options": {
+        "A": "Hình tròn",
+        "B": "Đường parabol",
+        "C": "Đường thẳng",
+        "D": "Đường hyperbol"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-14",
+      "lecture": "L2",
+      "question": "Gia tốc rơi tự do đo được g khác với gia tốc hấp dẫn lý thuyết a_g chủ yếu vì 3 lý do nào?",
+      "options": {
+        "A": "Trái Đất tự quay, không phải hình cầu hoàn hảo, và khối lượng phân bố không đều",
+        "B": "Không khí đẩy vật lên trên khi vật rơi",
+        "C": "Hằng số hấp dẫn G thay đổi theo từng vị trí trên Trái Đất",
+        "D": "Mặt Trăng luôn kéo ngược chiều với Trái Đất"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-15",
+      "lecture": "L2",
+      "question": "Tốc độ thoát (escape speed) khỏi bề mặt một hành tinh phụ thuộc vào những đại lượng nào?",
+      "options": {
+        "A": "Phụ thuộc nhiệt độ khí quyển của hành tinh",
+        "B": "Khối lượng M và bán kính R của hành tinh, theo v = √(2GM/R)",
+        "C": "Chỉ phụ thuộc khối lượng của vật được phóng đi",
+        "D": "Chỉ phụ thuộc vận tốc ban đầu, không liên quan đến M hay R"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-16",
+      "lecture": "L2",
+      "question": "Tổng cơ năng của một quỹ đạo elip phụ thuộc vào đại lượng hình học nào của quỹ đạo?",
+      "options": {
+        "A": "Chỉ độ lệch tâm e (không phụ thuộc a)",
+        "B": "Cả bán trục lớn a và độ lệch tâm e như nhau",
+        "C": "Chỉ bán trục lớn a (không phụ thuộc độ lệch tâm e)",
+        "D": "Chu vi của quỹ đạo"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-17",
+      "lecture": "L4",
+      "question": "Với con lắc lò xo T = 2π√(m/k), nếu khối lượng m tăng gấp 4 lần (k không đổi) thì chu kỳ T thay đổi ra sao?",
+      "options": {
+        "A": "Tăng gấp 2 lần",
+        "B": "Tăng gấp 4 lần",
+        "C": "Không thay đổi",
+        "D": "Giảm còn một nửa"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-18",
+      "lecture": "L4",
+      "question": "Tại vị trí biên (x = ±x_m) của một dao động điều hòa, tốc độ và độ lớn gia tốc như thế nào?",
+      "options": {
+        "A": "Cả tốc độ và gia tốc đều đạt cực đại",
+        "B": "Tốc độ bằng 0, độ lớn gia tốc đạt cực đại",
+        "C": "Cả tốc độ và gia tốc đều bằng 0",
+        "D": "Tốc độ đạt cực đại, gia tốc bằng 0"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-19",
+      "lecture": "L4",
+      "question": "Trong dao động điều hòa KHÔNG có lực cản, cơ năng E = ½kx_m² thay đổi thế nào theo thời gian?",
+      "options": {
+        "A": "Không đổi (bảo toàn)",
+        "B": "Tăng dần đều theo thời gian",
+        "C": "Giảm dần theo hàm mũ",
+        "D": "Dao động tuần hoàn theo thời gian"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-20",
+      "lecture": "L4",
+      "question": "Với con lắc vật lý (physical pendulum), chu kỳ T tiến tới vô cùng khi nào?",
+      "options": {
+        "A": "Khi biên độ góc dao động bằng 0",
+        "B": "Trường hợp này không bao giờ xảy ra",
+        "C": "Khi khối lượng của vật bằng 0",
+        "D": "Khi trục quay đi qua đúng khối tâm của vật (h = 0)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-21",
+      "lecture": "L4",
+      "question": "Trong dao động tắt dần (damped oscillation), biên độ giảm theo quy luật nào theo thời gian t?",
+      "options": {
+        "A": "Không đổi theo thời gian",
+        "B": "Giảm tuyến tính theo t",
+        "C": "Giảm theo hàm bậc 2 của t",
+        "D": "Theo hàm mũ dạng e^(−bt/2m)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-22",
+      "lecture": "L4",
+      "question": "Hiện tượng cộng hưởng (resonance) trong dao động cưỡng bức xảy ra khi nào?",
+      "options": {
+        "A": "Khi khối lượng vật dao động bằng 0",
+        "B": "Khi biên độ ngoại lực đủ lớn, bất kể tần số của nó",
+        "C": "Khi hệ hoàn toàn không có ma sát/lực cản",
+        "D": "Khi tần số góc của ngoại lực ω_d bằng tần số góc tự nhiên ω của hệ"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-23",
+      "lecture": "L4",
+      "question": "Dao động điều hòa đơn giản (SHM) có thể xem là hình chiếu của loại chuyển động nào?",
+      "options": {
+        "A": "Chuyển động xoắn ốc đều",
+        "B": "Chuyển động tròn đều, chiếu lên một đường kính của quỹ đạo tròn",
+        "C": "Chuyển động theo quỹ đạo parabol (ném xiên)",
+        "D": "Chuyển động thẳng biến đổi đều"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-24",
+      "lecture": "L4",
+      "question": "Phương trình τ = −κθ của con lắc xoắn (torsion pendulum) là dạng góc tương ứng của định luật nào?",
+      "options": {
+        "A": "Định luật chu kỳ Kepler",
+        "B": "Định luật II Newton (F = ma)",
+        "C": "Định luật bảo toàn động lượng góc",
+        "D": "Định luật Hooke (F = −kx)"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-25",
+      "lecture": "L9",
+      "question": "Hệ số phục hồi e = 1 giữa 2 vật va chạm tương ứng với loại va chạm nào?",
+      "options": {
+        "A": "Va chạm chỉ có thể xảy ra theo phương ngang",
+        "B": "Va chạm đàn hồi hoàn toàn (không mất động năng)",
+        "C": "Trường hợp không có lực nào xuất hiện khi va chạm",
+        "D": "Va chạm mềm hoàn toàn (2 vật dính vào nhau)"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-26",
+      "lecture": "L9",
+      "question": "Trong va chạm mềm hoàn toàn (hệ số phục hồi e = 0), 2 vật sau va chạm sẽ như thế nào?",
+      "options": {
+        "A": "Cả hai đứng yên hoàn toàn",
+        "B": "Trao đổi vận tốc cho nhau",
+        "C": "Dính vào nhau và chuyển động cùng một vận tốc",
+        "D": "Bật ra xa nhau với tốc độ bằng nhau"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-27",
+      "lecture": "L9",
+      "question": "Trong va chạm lệch (oblique impact) giữa 2 vật trơn, động lượng của MỖI vật được bảo toàn riêng theo phương nào?",
+      "options": {
+        "A": "Phương tiếp tuyến với đường va chạm (vì không có lực nào tác dụng theo phương này)",
+        "B": "Cả hai phương như nhau",
+        "C": "Phương pháp tuyến, dọc theo đường va chạm",
+        "D": "Không phương nào được bảo toàn riêng cho từng vật"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-28",
+      "lecture": "L9",
+      "question": "Xung lượng góc (angular impulse) bằng tích phân theo thời gian của đại lượng nào?",
+      "options": {
+        "A": "Vận tốc góc ω",
+        "B": "Mô-men lực (torque) M",
+        "C": "Động lượng góc H",
+        "D": "Lực F"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-29",
+      "lecture": "L9",
+      "question": "Động lượng góc của một hạt quanh 1 điểm được bảo toàn khi nào?",
+      "options": {
+        "A": "Khi khối lượng của hạt không đổi theo thời gian",
+        "B": "Luôn luôn được bảo toàn với mọi hạt chuyển động",
+        "C": "Khi tổng xung lượng góc (mô-men ngoại lực) quanh điểm đó bằng 0 trong suốt khoảng thời gian xét",
+        "D": "Khi hạt hoàn toàn đứng yên"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-30",
+      "lecture": "L9",
+      "question": "Vì sao KHÔNG thể dùng nguyên lý công–năng lượng để tính vận tốc 2 vật ngay sau va chạm?",
+      "options": {
+        "A": "Vì không biết được lực biến dạng/phục hồi biến thiên như thế nào trong quá trình va chạm",
+        "B": "Vì khối lượng của vật luôn thay đổi trong lúc va chạm",
+        "C": "Vì nguyên lý công–năng lượng chỉ áp dụng cho chuyển động thẳng đều",
+        "D": "Vì va chạm luôn xảy ra tức thời nên không tồn tại khái niệm công"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-31",
+      "lecture": "L9",
+      "question": "Trong một hệ kín gồm 2 vật va chạm, xung lượng NỘI LỰC giữa 2 vật đó luôn có tính chất gì?",
+      "options": {
+        "A": "Không liên quan gì đến định luật III Newton",
+        "B": "Chỉ triệt tiêu nếu va chạm là đàn hồi hoàn toàn",
+        "C": "Triệt tiêu lẫn nhau (theo định luật III Newton, cặp lực trực đối)",
+        "D": "Cộng dồn lại làm tăng tổng động lượng của hệ"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-32",
+      "lecture": "L9",
+      "question": "Lực \"phi xung lượng\" (nonimpulsive force) trong bài toán va chạm là loại lực như thế nào?",
+      "options": {
+        "A": "Chính là lực gây ra va chạm đó",
+        "B": "Lực đủ nhỏ so với lực va chạm, nên xung lượng của nó trong thời gian va chạm ngắn có thể bỏ qua",
+        "C": "Lực chỉ xuất hiện sau khi va chạm đã kết thúc",
+        "D": "Lực luôn luôn bằng 0 trong mọi trường hợp"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-33",
+      "lecture": "L10",
+      "question": "Trong chuyển động TỊNH TIẾN (translation) của một vật rắn, mọi điểm trên vật có đặc điểm gì?",
+      "options": {
+        "A": "Gia tốc của mọi điểm đều bằng 0",
+        "B": "Vận tốc góc riêng khác nhau cho từng điểm",
+        "C": "Cùng vận tốc và cùng gia tốc tại mọi thời điểm",
+        "D": "Cùng vị trí trong không gian"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-34",
+      "lecture": "L10",
+      "question": "Gia tốc PHÁP TUYẾN của một điểm P cách trục quay một khoảng r, trên vật quay với vận tốc góc ω, được tính bằng công thức nào?",
+      "options": {
+        "A": "a_n = ωr",
+        "B": "a_n = αr",
+        "C": "a_n = α/r",
+        "D": "a_n = ω²r"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-35",
+      "lecture": "L10",
+      "question": "Tại điểm 2 bánh răng ăn khớp với nhau tiếp xúc nhau, đại lượng nào giữa 2 bánh răng là BẰNG NHAU?",
+      "options": {
+        "A": "Vận tốc dài v và gia tốc tiếp tuyến a_t tại điểm tiếp xúc",
+        "B": "Gia tốc pháp tuyến a_n tại điểm tiếp xúc",
+        "C": "Vận tốc góc ω của 2 bánh răng",
+        "D": "Mọi thành phần vận tốc và gia tốc đều bằng nhau"
+      },
+      "correct": "A"
+    },
+    {
+      "id": "mcq-36",
+      "lecture": "L10",
+      "question": "Phương pháp Tâm vận tốc tức thời (Instantaneous Center, IC) cho phép tính vận tốc của MỌI điểm trên vật rắn bằng công thức nào?",
+      "options": {
+        "A": "v = ω²·r, với r đo từ khối tâm",
+        "B": "v = v_A + a_A·t",
+        "C": "v = ω·r, với r đo từ IC (điểm có vận tốc bằng 0 tại thời điểm đó) đến điểm cần tính",
+        "D": "v = α·r, với r đo từ trục quay cố định"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-37",
+      "lecture": "L10",
+      "question": "Công thức vận tốc tương đối giữa 2 điểm A, B trên CÙNG một vật rắn chuyển động phẳng tổng quát là gì?",
+      "options": {
+        "A": "v⃗_B = ω⃗ × r⃗_{B/A} (không cộng thêm v⃗_A)",
+        "B": "v⃗_B = v⃗_A + ω⃗ × r⃗_{B/A}",
+        "C": "v⃗_B = v⃗_A (luôn bằng nhau vì cùng 1 vật rắn)",
+        "D": "v⃗_B = v⃗_A − ω⃗ × r⃗_{B/A}"
+      },
+      "correct": "B"
+    },
+    {
+      "id": "mcq-38",
+      "lecture": "L10",
+      "question": "Khi một vật rắn (bánh xe) LĂN KHÔNG TRƯỢT trên mặt phẳng cố định, vận tốc của điểm tiếp xúc với mặt đất bằng bao nhiêu?",
+      "options": {
+        "A": "Bằng 2 lần vận tốc khối tâm",
+        "B": "Bằng đúng vận tốc khối tâm của bánh xe",
+        "C": "Bằng ωr (r là bán kính bánh xe)",
+        "D": "Bằng 0"
+      },
+      "correct": "D"
+    },
+    {
+      "id": "mcq-39",
+      "lecture": "L10",
+      "question": "Gia tốc góc α là đại lượng đo tốc độ thay đổi theo thời gian của đại lượng nào?",
+      "options": {
+        "A": "Vị trí góc θ",
+        "B": "Bán kính quỹ đạo r",
+        "C": "Vận tốc góc ω",
+        "D": "Gia tốc dài a của một điểm trên vật"
+      },
+      "correct": "C"
+    },
+    {
+      "id": "mcq-40",
+      "lecture": "L10",
+      "question": "Quan hệ vi phân α·dθ = ω·dω trong chuyển động quay tương tự với công thức nào trong chuyển động thẳng?",
+      "options": {
+        "A": "s = s₀ + v₀t + ½at²",
+        "B": "F = ma",
+        "C": "a·ds = v·dv",
+        "D": "v = v₀ + at"
+      },
+      "correct": "C"
+    }
+  ],
+  "by_lecture": {
+    "L1": [
+      {
+        "id": "mcq-01",
+        "lecture": "L1",
+        "question": "Điều kiện cân bằng tĩnh của vật rắn trong bài toán phẳng (mặt xy) cần đủ mấy phương trình độc lập?",
+        "options": {
+          "A": "3 phương trình: ΣF_x=0, ΣF_y=0, Στ_z=0",
+          "B": "4 phương trình: thêm cả ΣF_z=0",
+          "C": "1 phương trình: chỉ cần Στ_z=0 nếu vật đang đứng yên",
+          "D": "2 phương trình: chỉ cần ΣF_x=0 và ΣF_y=0"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-02",
+        "lecture": "L1",
+        "question": "Khi giải bài toán cân bằng có lực tại 1 điểm chưa biết (ví dụ phản lực tại bản lề), nên chọn trục quay ở đâu để phương trình mô-men gọn nhất?",
+        "options": {
+          "A": "Chọn trục quay tại khối tâm của toàn hệ",
+          "B": "Chọn trục quay tại điểm xa nhất so với mọi lực",
+          "C": "Trục quay không ảnh hưởng đến độ phức tạp của phương trình",
+          "D": "Chọn trục quay đi qua đúng điểm đặt của lực chưa biết đó"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-03",
+        "lecture": "L1",
+        "question": "Bài toán tĩnh học được gọi là \"indeterminate\" (siêu tĩnh) khi nào?",
+        "options": {
+          "A": "Khi vật có khối lượng lớn hơn 100 kg",
+          "B": "Khi số lực/mô-men chưa biết nhiều hơn số phương trình cân bằng độc lập có thể viết",
+          "C": "Khi có từ 2 lực trở lên tác dụng lên vật",
+          "D": "Khi hệ số ma sát giữa các bề mặt bằng 0"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-04",
+        "lecture": "L1",
+        "question": "Công thức nào đúng cho ứng suất kéo/nén (tension/compression) theo Young's modulus E?",
+        "options": {
+          "A": "F/A = E · (ΔL/L)",
+          "B": "F/A = G · (Δx/L)",
+          "C": "p = B · (ΔV/V)",
+          "D": "F = k · ΔL với k là hằng số lò xo"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-05",
+        "lecture": "L1",
+        "question": "Modulus nào mô tả đúng quan hệ ứng suất–biến dạng cho lực TRƯỢT (shearing, lực song song mặt cắt)?",
+        "options": {
+          "A": "Bulk modulus B",
+          "B": "Hệ số ma sát động μ_k",
+          "C": "Shear modulus G",
+          "D": "Young's modulus E"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-06",
+        "lecture": "L1",
+        "question": "Tâm trọng lực (center of gravity) trùng với khối tâm (center of mass) khi nào?",
+        "options": {
+          "A": "Chỉ đúng khi vật có dạng hình cầu hoàn hảo",
+          "B": "Chỉ đúng khi vật đang đứng yên tuyệt đối",
+          "C": "Luôn luôn đúng với mọi vật rắn bất kỳ",
+          "D": "Khi gia tốc trọng trường g như nhau tại mọi phần tử của vật"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-07",
+        "lecture": "L1",
+        "question": "Trong Sample Problem 12.02 (két sắt treo qua boom), vì sao chọn trục mô-men đi qua bản lề O?",
+        "options": {
+          "A": "Để tính trực tiếp lực căng cáp mà không cần bất kỳ phương trình nào",
+          "B": "Vì đó là quy định bắt buộc trong mọi bài toán cân bằng",
+          "C": "Vì bản lề luôn trùng với khối tâm của cả hệ",
+          "D": "Để loại 2 thành phần lực chưa biết tại bản lề (F_h, F_v) khỏi phương trình mô-men"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-08",
+        "lecture": "L1",
+        "question": "Ứng suất thủy tĩnh (hydraulic stress) trên 1 vật ngâm trong chất lưu bằng đại lượng nào?",
+        "options": {
+          "A": "Vận tốc dòng chảy của chất lưu",
+          "B": "Nhiệt độ của chất lưu bao quanh vật",
+          "C": "Áp suất p của chất lưu tác dụng lên vật",
+          "D": "Độ nhớt của chất lưu"
+        },
+        "correct": "C"
+      }
+    ],
+    "L2": [
+      {
+        "id": "mcq-09",
+        "lecture": "L2",
+        "question": "Theo định lý vỏ cầu (shell theorem), lực hấp dẫn của một vỏ cầu đồng chất tác dụng lên hạt NẰM BÊN TRONG nó bằng bao nhiêu?",
+        "options": {
+          "A": "Luôn hướng ra ngoài vỏ cầu",
+          "B": "Bằng 0",
+          "C": "Bằng GmM/R² như thể toàn bộ khối lượng tập trung ở tâm",
+          "D": "Phụ thuộc vào vị trí cụ thể của hạt bên trong vỏ"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-10",
+        "lecture": "L2",
+        "question": "Định luật 2 Kepler (law of areas — quét diện tích bằng nhau trong thời gian bằng nhau) tương đương với định luật bảo toàn nào?",
+        "options": {
+          "A": "Bảo toàn động lượng góc",
+          "B": "Bảo toàn cơ năng",
+          "C": "Bảo toàn động lượng tuyến tính",
+          "D": "Bảo toàn khối lượng"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-11",
+        "lecture": "L2",
+        "question": "Với vệ tinh trên quỹ đạo TRÒN, tổng cơ năng E liên hệ với động năng K theo công thức nào?",
+        "options": {
+          "A": "E = K",
+          "B": "E = −K",
+          "C": "E = 0 với mọi bán kính quỹ đạo",
+          "D": "E = 2K"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-12",
+        "lecture": "L2",
+        "question": "Giả sử Trái Đất có mật độ đồng đều, lực hấp dẫn tác dụng lên 1 vật càng đi sâu vào bên trong (bán kính r giảm) thì thay đổi ra sao?",
+        "options": {
+          "A": "Tăng tuyến tính khi r giảm",
+          "B": "Tăng theo r² khi r giảm",
+          "C": "Không đổi bất kể r",
+          "D": "Giảm tuyến tính theo r, bằng 0 ngay tại tâm"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-13",
+        "lecture": "L2",
+        "question": "Độ lệch tâm (eccentricity) e = 0 của một quỹ đạo elip tương ứng với hình dạng quỹ đạo nào?",
+        "options": {
+          "A": "Hình tròn",
+          "B": "Đường parabol",
+          "C": "Đường thẳng",
+          "D": "Đường hyperbol"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-14",
+        "lecture": "L2",
+        "question": "Gia tốc rơi tự do đo được g khác với gia tốc hấp dẫn lý thuyết a_g chủ yếu vì 3 lý do nào?",
+        "options": {
+          "A": "Trái Đất tự quay, không phải hình cầu hoàn hảo, và khối lượng phân bố không đều",
+          "B": "Không khí đẩy vật lên trên khi vật rơi",
+          "C": "Hằng số hấp dẫn G thay đổi theo từng vị trí trên Trái Đất",
+          "D": "Mặt Trăng luôn kéo ngược chiều với Trái Đất"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-15",
+        "lecture": "L2",
+        "question": "Tốc độ thoát (escape speed) khỏi bề mặt một hành tinh phụ thuộc vào những đại lượng nào?",
+        "options": {
+          "A": "Phụ thuộc nhiệt độ khí quyển của hành tinh",
+          "B": "Khối lượng M và bán kính R của hành tinh, theo v = √(2GM/R)",
+          "C": "Chỉ phụ thuộc khối lượng của vật được phóng đi",
+          "D": "Chỉ phụ thuộc vận tốc ban đầu, không liên quan đến M hay R"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-16",
+        "lecture": "L2",
+        "question": "Tổng cơ năng của một quỹ đạo elip phụ thuộc vào đại lượng hình học nào của quỹ đạo?",
+        "options": {
+          "A": "Chỉ độ lệch tâm e (không phụ thuộc a)",
+          "B": "Cả bán trục lớn a và độ lệch tâm e như nhau",
+          "C": "Chỉ bán trục lớn a (không phụ thuộc độ lệch tâm e)",
+          "D": "Chu vi của quỹ đạo"
+        },
+        "correct": "C"
+      }
+    ],
+    "L4": [
+      {
+        "id": "mcq-17",
+        "lecture": "L4",
+        "question": "Với con lắc lò xo T = 2π√(m/k), nếu khối lượng m tăng gấp 4 lần (k không đổi) thì chu kỳ T thay đổi ra sao?",
+        "options": {
+          "A": "Tăng gấp 2 lần",
+          "B": "Tăng gấp 4 lần",
+          "C": "Không thay đổi",
+          "D": "Giảm còn một nửa"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-18",
+        "lecture": "L4",
+        "question": "Tại vị trí biên (x = ±x_m) của một dao động điều hòa, tốc độ và độ lớn gia tốc như thế nào?",
+        "options": {
+          "A": "Cả tốc độ và gia tốc đều đạt cực đại",
+          "B": "Tốc độ bằng 0, độ lớn gia tốc đạt cực đại",
+          "C": "Cả tốc độ và gia tốc đều bằng 0",
+          "D": "Tốc độ đạt cực đại, gia tốc bằng 0"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-19",
+        "lecture": "L4",
+        "question": "Trong dao động điều hòa KHÔNG có lực cản, cơ năng E = ½kx_m² thay đổi thế nào theo thời gian?",
+        "options": {
+          "A": "Không đổi (bảo toàn)",
+          "B": "Tăng dần đều theo thời gian",
+          "C": "Giảm dần theo hàm mũ",
+          "D": "Dao động tuần hoàn theo thời gian"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-20",
+        "lecture": "L4",
+        "question": "Với con lắc vật lý (physical pendulum), chu kỳ T tiến tới vô cùng khi nào?",
+        "options": {
+          "A": "Khi biên độ góc dao động bằng 0",
+          "B": "Trường hợp này không bao giờ xảy ra",
+          "C": "Khi khối lượng của vật bằng 0",
+          "D": "Khi trục quay đi qua đúng khối tâm của vật (h = 0)"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-21",
+        "lecture": "L4",
+        "question": "Trong dao động tắt dần (damped oscillation), biên độ giảm theo quy luật nào theo thời gian t?",
+        "options": {
+          "A": "Không đổi theo thời gian",
+          "B": "Giảm tuyến tính theo t",
+          "C": "Giảm theo hàm bậc 2 của t",
+          "D": "Theo hàm mũ dạng e^(−bt/2m)"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-22",
+        "lecture": "L4",
+        "question": "Hiện tượng cộng hưởng (resonance) trong dao động cưỡng bức xảy ra khi nào?",
+        "options": {
+          "A": "Khi khối lượng vật dao động bằng 0",
+          "B": "Khi biên độ ngoại lực đủ lớn, bất kể tần số của nó",
+          "C": "Khi hệ hoàn toàn không có ma sát/lực cản",
+          "D": "Khi tần số góc của ngoại lực ω_d bằng tần số góc tự nhiên ω của hệ"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-23",
+        "lecture": "L4",
+        "question": "Dao động điều hòa đơn giản (SHM) có thể xem là hình chiếu của loại chuyển động nào?",
+        "options": {
+          "A": "Chuyển động xoắn ốc đều",
+          "B": "Chuyển động tròn đều, chiếu lên một đường kính của quỹ đạo tròn",
+          "C": "Chuyển động theo quỹ đạo parabol (ném xiên)",
+          "D": "Chuyển động thẳng biến đổi đều"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-24",
+        "lecture": "L4",
+        "question": "Phương trình τ = −κθ của con lắc xoắn (torsion pendulum) là dạng góc tương ứng của định luật nào?",
+        "options": {
+          "A": "Định luật chu kỳ Kepler",
+          "B": "Định luật II Newton (F = ma)",
+          "C": "Định luật bảo toàn động lượng góc",
+          "D": "Định luật Hooke (F = −kx)"
+        },
+        "correct": "D"
+      }
+    ],
+    "L9": [
+      {
+        "id": "mcq-25",
+        "lecture": "L9",
+        "question": "Hệ số phục hồi e = 1 giữa 2 vật va chạm tương ứng với loại va chạm nào?",
+        "options": {
+          "A": "Va chạm chỉ có thể xảy ra theo phương ngang",
+          "B": "Va chạm đàn hồi hoàn toàn (không mất động năng)",
+          "C": "Trường hợp không có lực nào xuất hiện khi va chạm",
+          "D": "Va chạm mềm hoàn toàn (2 vật dính vào nhau)"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-26",
+        "lecture": "L9",
+        "question": "Trong va chạm mềm hoàn toàn (hệ số phục hồi e = 0), 2 vật sau va chạm sẽ như thế nào?",
+        "options": {
+          "A": "Cả hai đứng yên hoàn toàn",
+          "B": "Trao đổi vận tốc cho nhau",
+          "C": "Dính vào nhau và chuyển động cùng một vận tốc",
+          "D": "Bật ra xa nhau với tốc độ bằng nhau"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-27",
+        "lecture": "L9",
+        "question": "Trong va chạm lệch (oblique impact) giữa 2 vật trơn, động lượng của MỖI vật được bảo toàn riêng theo phương nào?",
+        "options": {
+          "A": "Phương tiếp tuyến với đường va chạm (vì không có lực nào tác dụng theo phương này)",
+          "B": "Cả hai phương như nhau",
+          "C": "Phương pháp tuyến, dọc theo đường va chạm",
+          "D": "Không phương nào được bảo toàn riêng cho từng vật"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-28",
+        "lecture": "L9",
+        "question": "Xung lượng góc (angular impulse) bằng tích phân theo thời gian của đại lượng nào?",
+        "options": {
+          "A": "Vận tốc góc ω",
+          "B": "Mô-men lực (torque) M",
+          "C": "Động lượng góc H",
+          "D": "Lực F"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-29",
+        "lecture": "L9",
+        "question": "Động lượng góc của một hạt quanh 1 điểm được bảo toàn khi nào?",
+        "options": {
+          "A": "Khi khối lượng của hạt không đổi theo thời gian",
+          "B": "Luôn luôn được bảo toàn với mọi hạt chuyển động",
+          "C": "Khi tổng xung lượng góc (mô-men ngoại lực) quanh điểm đó bằng 0 trong suốt khoảng thời gian xét",
+          "D": "Khi hạt hoàn toàn đứng yên"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-30",
+        "lecture": "L9",
+        "question": "Vì sao KHÔNG thể dùng nguyên lý công–năng lượng để tính vận tốc 2 vật ngay sau va chạm?",
+        "options": {
+          "A": "Vì không biết được lực biến dạng/phục hồi biến thiên như thế nào trong quá trình va chạm",
+          "B": "Vì khối lượng của vật luôn thay đổi trong lúc va chạm",
+          "C": "Vì nguyên lý công–năng lượng chỉ áp dụng cho chuyển động thẳng đều",
+          "D": "Vì va chạm luôn xảy ra tức thời nên không tồn tại khái niệm công"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-31",
+        "lecture": "L9",
+        "question": "Trong một hệ kín gồm 2 vật va chạm, xung lượng NỘI LỰC giữa 2 vật đó luôn có tính chất gì?",
+        "options": {
+          "A": "Không liên quan gì đến định luật III Newton",
+          "B": "Chỉ triệt tiêu nếu va chạm là đàn hồi hoàn toàn",
+          "C": "Triệt tiêu lẫn nhau (theo định luật III Newton, cặp lực trực đối)",
+          "D": "Cộng dồn lại làm tăng tổng động lượng của hệ"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-32",
+        "lecture": "L9",
+        "question": "Lực \"phi xung lượng\" (nonimpulsive force) trong bài toán va chạm là loại lực như thế nào?",
+        "options": {
+          "A": "Chính là lực gây ra va chạm đó",
+          "B": "Lực đủ nhỏ so với lực va chạm, nên xung lượng của nó trong thời gian va chạm ngắn có thể bỏ qua",
+          "C": "Lực chỉ xuất hiện sau khi va chạm đã kết thúc",
+          "D": "Lực luôn luôn bằng 0 trong mọi trường hợp"
+        },
+        "correct": "B"
+      }
+    ],
+    "L10": [
+      {
+        "id": "mcq-33",
+        "lecture": "L10",
+        "question": "Trong chuyển động TỊNH TIẾN (translation) của một vật rắn, mọi điểm trên vật có đặc điểm gì?",
+        "options": {
+          "A": "Gia tốc của mọi điểm đều bằng 0",
+          "B": "Vận tốc góc riêng khác nhau cho từng điểm",
+          "C": "Cùng vận tốc và cùng gia tốc tại mọi thời điểm",
+          "D": "Cùng vị trí trong không gian"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-34",
+        "lecture": "L10",
+        "question": "Gia tốc PHÁP TUYẾN của một điểm P cách trục quay một khoảng r, trên vật quay với vận tốc góc ω, được tính bằng công thức nào?",
+        "options": {
+          "A": "a_n = ωr",
+          "B": "a_n = αr",
+          "C": "a_n = α/r",
+          "D": "a_n = ω²r"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-35",
+        "lecture": "L10",
+        "question": "Tại điểm 2 bánh răng ăn khớp với nhau tiếp xúc nhau, đại lượng nào giữa 2 bánh răng là BẰNG NHAU?",
+        "options": {
+          "A": "Vận tốc dài v và gia tốc tiếp tuyến a_t tại điểm tiếp xúc",
+          "B": "Gia tốc pháp tuyến a_n tại điểm tiếp xúc",
+          "C": "Vận tốc góc ω của 2 bánh răng",
+          "D": "Mọi thành phần vận tốc và gia tốc đều bằng nhau"
+        },
+        "correct": "A"
+      },
+      {
+        "id": "mcq-36",
+        "lecture": "L10",
+        "question": "Phương pháp Tâm vận tốc tức thời (Instantaneous Center, IC) cho phép tính vận tốc của MỌI điểm trên vật rắn bằng công thức nào?",
+        "options": {
+          "A": "v = ω²·r, với r đo từ khối tâm",
+          "B": "v = v_A + a_A·t",
+          "C": "v = ω·r, với r đo từ IC (điểm có vận tốc bằng 0 tại thời điểm đó) đến điểm cần tính",
+          "D": "v = α·r, với r đo từ trục quay cố định"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-37",
+        "lecture": "L10",
+        "question": "Công thức vận tốc tương đối giữa 2 điểm A, B trên CÙNG một vật rắn chuyển động phẳng tổng quát là gì?",
+        "options": {
+          "A": "v⃗_B = ω⃗ × r⃗_{B/A} (không cộng thêm v⃗_A)",
+          "B": "v⃗_B = v⃗_A + ω⃗ × r⃗_{B/A}",
+          "C": "v⃗_B = v⃗_A (luôn bằng nhau vì cùng 1 vật rắn)",
+          "D": "v⃗_B = v⃗_A − ω⃗ × r⃗_{B/A}"
+        },
+        "correct": "B"
+      },
+      {
+        "id": "mcq-38",
+        "lecture": "L10",
+        "question": "Khi một vật rắn (bánh xe) LĂN KHÔNG TRƯỢT trên mặt phẳng cố định, vận tốc của điểm tiếp xúc với mặt đất bằng bao nhiêu?",
+        "options": {
+          "A": "Bằng 2 lần vận tốc khối tâm",
+          "B": "Bằng đúng vận tốc khối tâm của bánh xe",
+          "C": "Bằng ωr (r là bán kính bánh xe)",
+          "D": "Bằng 0"
+        },
+        "correct": "D"
+      },
+      {
+        "id": "mcq-39",
+        "lecture": "L10",
+        "question": "Gia tốc góc α là đại lượng đo tốc độ thay đổi theo thời gian của đại lượng nào?",
+        "options": {
+          "A": "Vị trí góc θ",
+          "B": "Bán kính quỹ đạo r",
+          "C": "Vận tốc góc ω",
+          "D": "Gia tốc dài a của một điểm trên vật"
+        },
+        "correct": "C"
+      },
+      {
+        "id": "mcq-40",
+        "lecture": "L10",
+        "question": "Quan hệ vi phân α·dθ = ω·dω trong chuyển động quay tương tự với công thức nào trong chuyển động thẳng?",
+        "options": {
+          "A": "s = s₀ + v₀t + ½at²",
+          "B": "F = ma",
+          "C": "a·ds = v·dv",
+          "D": "v = v₀ + at"
+        },
+        "correct": "C"
+      }
+    ]
+  },
+  "seed": 39
+}
