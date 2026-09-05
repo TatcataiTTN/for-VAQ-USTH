@@ -76,7 +76,7 @@
 <body>
 <header>
   <h1>📐 Mechanics II — Tài liệu tự học song ngữ (USTH)</h1>
-  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ + 40 câu trắc nghiệm · Anh trước, Việt sau</p>
+  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ + 200 câu trắc nghiệm · Anh trước, Việt sau</p>
 </header>
 <div class="layout">
   <nav id="nav"><div id="loading">Đang tải danh mục…</div></nav>
@@ -119,7 +119,7 @@ function buildNav(){
   const homeUl = document.createElement('ul');
   homeUl.innerHTML = `<li><button onclick="showHome()">🏠 Tổng quan môn học</button></li>
                        <li><button onclick="loadChecklist()">✅ Checklist 94 bài tập</button></li>
-                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (40 câu)</button></li>`;
+                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (200 câu)</button></li>`;
   nav.appendChild(homeUl);
 
   nav.appendChild(navHeader('Lý thuyết (Reading Notes)'));
@@ -187,14 +187,14 @@ function showHome(){
   (Lecture 1, 2, 4, 9, 10) và bổ sung bài tập từ Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) và
   Halliday/Resnick/Walker <em>Fundamentals of Physics</em> cho các chương chưa có slide gốc.</p>
   <p><span class="badge">192 trang slide đã đọc 100%</span><span class="badge">94 bài tập có lời giải</span>
-  <span class="badge">40 câu trắc nghiệm</span><span class="badge">Đối chiếu đáp số gốc</span></p>
+  <span class="badge">200 câu trắc nghiệm</span><span class="badge">Đối chiếu đáp số gốc</span></p>
   <div class="home-grid">
     <div class="home-card" data-nav="md:notes_Lecture1"><h3>Lecture 1 — Equilibrium & Elasticity</h3><p>Cân bằng tĩnh, mômen lực, ứng suất-biến dạng.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture2"><h3>Lecture 2 — Gravitation</h3><p>Định luật Newton, Kepler, năng lượng quỹ đạo vệ tinh.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture4"><h3>Lecture 4 — Oscillations</h3><p>Dao động điều hòa, con lắc, dao động tắt dần & cưỡng bức.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture9"><h3>Lecture 9 — Impulse & Momentum</h3><p>Xung lượng, va chạm, động lượng góc.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture10"><h3>Lecture 10 — Planar Kinematics</h3><p>Động học vật rắn phẳng, tâm vận tốc tức thời.</p></div>
-    <div class="home-card" data-nav="quiz"><h3>📝 40 câu trắc nghiệm</h3><p>Tự chấm ngay, 8 câu mỗi lecture, có thể lọc theo lecture.</p></div>
+    <div class="home-card" data-nav="quiz"><h3>📝 200 câu trắc nghiệm</h3><p>40 câu/lecture, tự chấm ngay, lọc theo lecture.</p></div>
   </div>`;
   content.querySelectorAll('.home-card').forEach(c=>{
     c.onclick = () => {
@@ -257,7 +257,7 @@ async function loadQuiz(filterLecture){
   <div class="quiz-toolbar">
     <label>Lọc theo lecture: </label>
     <select id="quiz-filter">
-      <option value="">Tất cả (40 câu)</option>
+      <option value="">Tất cả (200 câu)</option>
       ${Object.keys(LECTURE_LABEL).map(l=>`<option value="${l}" ${l===filterLecture?'selected':''}>${LECTURE_LABEL[l]}</option>`).join('')}
     </select>
     <button class="primary" onclick="resetQuiz()">Làm lại từ đầu</button>
