@@ -2879,6 +2879,1158 @@
       },
       "correct": "B",
       "id": "mcq-L10-48"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Định luật II Newton áp dụng cho chất điểm được viết dưới dạng nào?",
+      "options": {
+        "A": "ΣF = Δp (chỉ đúng dạng tích phân theo thời gian, không phải tức thời)",
+        "B": "ΣF = ma (tổng ngoại lực bằng khối lượng nhân gia tốc)",
+        "C": "ΣF = m/a (chia thay vì nhân)",
+        "D": "ΣF = mv (nhân với vận tốc thay vì gia tốc)"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-01"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Khi giải bài toán khối trên mặt nghiêng, tại sao nên chọn trục x dọc mặt nghiêng thay vì trục ngang/đứng thông thường?",
+      "options": {
+        "A": "Vì phản lực pháp tuyến luôn bằng 0 trong hệ trục này",
+        "B": "Vì gia tốc của khối luôn dọc theo mặt nghiêng, chọn trục này giúp chỉ 1 phương trình có gia tốc khác 0",
+        "C": "Vì trọng lực luôn nằm dọc mặt nghiêng",
+        "D": "Không có lý do đặc biệt, chỉ là quy ước"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-02"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong bài toán elevator, \"trọng lượng biểu kiến\" (apparent weight) mà cân đo được chính là đại lượng nào?",
+      "options": {
+        "A": "Trọng lượng thật mg, không đổi bất kể gia tốc thang máy",
+        "B": "Lực quán tính ma (không phải lực thật, không tác dụng lên người)",
+        "C": "Luôn bằng 0 khi thang máy đang chuyển động",
+        "D": "Phản lực pháp tuyến N mà sàn tác dụng lên người"
+      },
+      "correct": "D",
+      "id": "mcq-CH13-03"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Khi thang máy tăng tốc đi XUỐNG, trọng lượng biểu kiến của người trong thang máy thay đổi ra sao?",
+      "options": {
+        "A": "Giảm so với trọng lượng thật (người cảm thấy nhẹ hơn)",
+        "B": "Tăng so với trọng lượng thật",
+        "C": "Không đổi",
+        "D": "Luôn bằng 0 bất kể gia tốc lớn nhỏ"
+      },
+      "correct": "A",
+      "id": "mcq-CH13-04"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong chuyển động tròn, lực hướng tâm (centripetal force) có bản chất là gì?",
+      "options": {
+        "A": "Lực ly tâm tác dụng ra ngoài, chỉ đổi tên",
+        "B": "Một loại lực riêng biệt luôn tồn tại độc lập với các lực khác",
+        "C": "Chỉ xuất hiện khi vật chuyển động tròn KHÔNG đều",
+        "D": "Không phải một loại lực mới, mà là tên gọi cho tổng hợp lực thực tế (ma sát, căng dây, trọng lực...) hướng vào tâm"
+      },
+      "correct": "D",
+      "id": "mcq-CH13-05"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Khối trên đĩa quay ngang bắt đầu trượt ra ngoài khi nào?",
+      "options": {
+        "A": "Khi tốc độ quay bằng 0",
+        "B": "Ma sát tĩnh không liên quan đến hiện tượng này",
+        "C": "Khi lực hướng tâm cần thiết (mv²/r) vượt quá lực ma sát tĩnh cực đại có thể cung cấp",
+        "D": "Khi bán kính quỹ đạo bằng 0"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-06"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong con lắc côn (conical pendulum), tại sao phương trình cân bằng theo phương ĐỨNG được giải trước?",
+      "options": {
+        "A": "Vì phương đứng luôn có gia tốc lớn hơn phương ngang",
+        "B": "Thứ tự giải không ảnh hưởng đến kết quả",
+        "C": "Vì theo phương đứng vật không có gia tốc (chuyển động tròn nằm ngang), cho phép tìm lực căng T trực tiếp",
+        "D": "Vì đề bài luôn yêu cầu tìm lực căng trước tiên"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-07"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Ở khúc cua nghiêng (banked curve) lý tưởng KHÔNG có ma sát, điều gì xảy ra nếu xe chạy CHẬM hơn tốc độ thiết kế?",
+      "options": {
+        "A": "Xe sẽ bay lên khỏi mặt đường",
+        "B": "Xe có xu hướng trượt XUỐNG dốc nghiêng vào phía trong khúc cua",
+        "C": "Xe có xu hướng trượt lên trên",
+        "D": "Không có ảnh hưởng gì, xe vẫn giữ nguyên quỹ đạo"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-08"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong chuyển động tròn thẳng đứng (vertical circular motion, ví dụ bóng buộc dây), tại điểm CAO NHẤT, lực căng dây và trọng lực có quan hệ gì với gia tốc hướng tâm?",
+      "options": {
+        "A": "Cả 2 lực đều hướng VÀO TÂM (xuống), tổng của chúng bằng mv²/r",
+        "B": "Chỉ có lực căng dây đóng góp vào lực hướng tâm",
+        "C": "Cả 2 lực đều hướng ra khỏi tâm",
+        "D": "Trọng lực hướng ra khỏi tâm, ngược chiều lực căng"
+      },
+      "correct": "A",
+      "id": "mcq-CH13-09"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Vì sao lực căng dây trong chuyển động tròn thẳng đứng LỚN NHẤT tại điểm THẤP NHẤT?",
+      "options": {
+        "A": "Lực căng luôn không đổi tại mọi vị trí",
+        "B": "Vì tốc độ tại điểm thấp nhất luôn nhỏ nhất",
+        "C": "Vì tại đó lực căng phải vừa cung cấp lực hướng tâm vừa chống lại trọng lực (2 lực ngược chiều nhau cộng lại)",
+        "D": "Vì trọng lực không tác dụng tại điểm thấp nhất"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-10"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Khi lực tác dụng lên vật biến đổi theo thời gian F(t), phương pháp nào đúng để tìm vận tốc v(t)?",
+      "options": {
+        "A": "Dùng trực tiếp công thức v=v₀+at (chỉ đúng khi a không đổi)",
+        "B": "Tích phân a(t)=F(t)/m theo thời gian: v(t)=∫a\\,dt",
+        "C": "Đạo hàm F(t) theo thời gian",
+        "D": "Nhân trực tiếp F(t) với thời gian tổng"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-11"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong bài toán 2 khối nối dây qua ròng rọc nhẵn (1 khối trên bàn có ma sát, 1 khối treo), phương pháp giải chuẩn là gì?",
+      "options": {
+        "A": "Luôn giả sử T=0 vì dây không có khối lượng",
+        "B": "Chỉ cần xét khối treo, bỏ qua khối trên bàn",
+        "C": "Viết riêng phương trình Newton cho mỗi khối theo đúng chiều chuyển động giả định, cộng lại để khử lực căng T",
+        "D": "Chỉ cần viết 1 phương trình chung cho cả hệ ngay từ đầu mà không cần xét từng vật"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-12"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trên đường cong có bán kính cong ρ thay đổi, khi xe vừa đổi tốc độ (a_t≠0) vừa đổi hướng (a_n≠0), lực ma sát tổng hợp cần thiết được tính như thế nào?",
+      "options": {
+        "A": "Lấy trung bình cộng của F_n và F_t",
+        "B": "Cộng đại số trực tiếp F_n+F_t",
+        "C": "Cộng vector 2 thành phần vuông góc nhau: F=√(F_n²+F_t²) (Pythagoras)",
+        "D": "Chỉ cần F_n, bỏ qua F_t vì nó luôn nhỏ hơn nhiều"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-13"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Toạ độ pháp tuyến-tiếp tuyến (n-t) đặc biệt thuận tiện cho dạng bài toán nào?",
+      "options": {
+        "A": "Dùng thay thế hoàn toàn cho toạ độ Đề-các trong MỌI bài toán",
+        "B": "Chỉ dùng được khi không có lực nào tác dụng",
+        "C": "Chỉ dùng được cho chuyển động thẳng đều",
+        "D": "Chuyển động theo quỹ đạo cong đã biết trước hình dạng (đường tròn, đường cong bất kỳ)"
+      },
+      "correct": "D",
+      "id": "mcq-CH13-14"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Nếu khối lượng m bị triệt tiêu hoàn toàn khỏi phương trình cuối cùng (như bài toán tốc độ tối đa trên đĩa quay), điều đó có ý nghĩa gì?",
+      "options": {
+        "A": "Kết quả (ví dụ v_max) không phụ thuộc vào khối lượng vật, đúng với mọi m",
+        "B": "Khối lượng vật bằng 0 trong bài toán này",
+        "C": "Đây là dấu hiệu bài giải sai, cần kiểm tra lại",
+        "D": "Đề bài chắc chắn thiếu dữ kiện"
+      },
+      "correct": "A",
+      "id": "mcq-CH13-15"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong bài toán khối bị kéo bởi lực F hướng CHÉO LÊN trên mặt ngang có ma sát, tại sao phản lực N giảm so với mg?",
+      "options": {
+        "A": "Vì thành phần thẳng đứng của lực kéo (F sinφ) hướng lên, phụ thêm vào việc \"nâng đỡ\" vật, giảm bớt phần N phải gánh",
+        "B": "Vì khối lượng vật giảm khi bị kéo",
+        "C": "Vì ma sát luôn làm giảm N",
+        "D": "N không bao giờ thay đổi so với mg trong bất kỳ trường hợp nào"
+      },
+      "correct": "A",
+      "id": "mcq-CH13-16"
+    },
+    {
+      "lecture": "CH13",
+      "question": "[Tính toán] Khối 10 kg trên mặt ngang nhẵn chịu lực kéo ngang F=40 N. Gia tốc của khối là bao nhiêu?",
+      "options": {
+        "A": "400 m/s² (nhân nhầm)",
+        "B": "40 m/s² (quên chia khối lượng)",
+        "C": "4 m/s²",
+        "D": "0.25 m/s² (chia ngược)"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-17"
+    },
+    {
+      "lecture": "CH13",
+      "question": "[Tính toán] Người 60 kg đứng trong thang máy đang tăng tốc lên trên với a=3 m/s². Số chỉ cân (N) xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 588.6 N (dùng a hướng xuống thay vì lên)",
+        "B": "≈ 600 N (bỏ qua gia tốc)",
+        "C": "≈ 768.6 N",
+        "D": "≈ 180 N (chỉ tính ma)"
+      },
+      "correct": "C",
+      "id": "mcq-CH13-18"
+    },
+    {
+      "lecture": "CH13",
+      "question": "[Tính toán] Vật chuyển động tròn bán kính r=2 m với tốc độ v=6 m/s. Gia tốc pháp tuyến a_n bằng bao nhiêu?",
+      "options": {
+        "A": "36 m/s² (quên chia r)",
+        "B": "12 m/s² (quên bình phương v)",
+        "C": "3 m/s² (chia thay vì bình phương rồi chia)",
+        "D": "18 m/s²"
+      },
+      "correct": "D",
+      "id": "mcq-CH13-19"
+    },
+    {
+      "lecture": "CH13",
+      "question": "[Tính toán] Khúc cua nghiêng bán kính r=50 m, góc nghiêng θ=10°, không ma sát. Tốc độ thiết kế v xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 9.30 m/s",
+        "B": "≈ 86.5 m/s (quên lấy căn bậc 2)",
+        "C": "≈ 4.65 m/s (quên nhân 2 trong công thức)",
+        "D": "≈ 22.1 m/s"
+      },
+      "correct": "A",
+      "id": "mcq-CH13-20"
+    },
+    {
+      "lecture": "CH13",
+      "question": "[Tính toán] Khối 2 kg từ nghỉ chịu lực F=(4t) N. Tốc độ của khối tại t=3 s bằng bao nhiêu?",
+      "options": {
+        "A": "6 m/s",
+        "B": "9 m/s",
+        "C": "12 m/s (nhầm tích phân bậc 1 thay vì cho ra t²)",
+        "D": "18 m/s (quên chia khối lượng)"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-21"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Trong hệ 2 khối trên 2 mặt nghiêng khác góc nối qua ròng rọc chung đỉnh, bước ĐẦU TIÊN cần làm trước khi viết phương trình ma sát là gì?",
+      "options": {
+        "A": "Viết ngay phương trình ma sát mà không cần biết chiều chuyển động",
+        "B": "Không cần xác định chiều, chỉ cần giải trị tuyệt đối",
+        "C": "Giả sử luôn khối nặng hơn về khối lượng sẽ trượt xuống, bất kể góc nghiêng",
+        "D": "So sánh thành phần trọng lực dọc mỗi mặt nghiêng (bỏ qua ma sát) để xác định đúng chiều chuyển động thực tế"
+      },
+      "correct": "D",
+      "id": "mcq-CH13-22"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Ma sát tĩnh trong bài toán khối trên đĩa quay đóng vai trò gì khác so với ma sát trong bài toán khối trượt trên mặt phẳng?",
+      "options": {
+        "A": "Ma sát tĩnh không tồn tại trong chuyển động tròn",
+        "B": "Ở đây ma sát tĩnh CUNG CẤP lực hướng tâm cần thiết để giữ vật chuyển động tròn, không phải lực cản chuyển động",
+        "C": "Vai trò hoàn toàn giống nhau trong cả 2 trường hợp",
+        "D": "Ma sát luôn cản trở chuyển động tròn của vật"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-23"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Khi vật vừa chịu lực không đổi vừa chịu ma sát động trên mặt ngang, thứ tự đúng để giải bài toán là gì?",
+      "options": {
+        "A": "Tính phản lực pháp tuyến N từ phương trình cân bằng theo phương vuông góc mặt trước, rồi mới tính lực ma sát μN",
+        "B": "Thứ tự không quan trọng, có thể tính đồng thời độc lập",
+        "C": "Tính lực ma sát trước bằng μmg mà không cần xét lực kéo",
+        "D": "Bỏ qua hoàn toàn phương trình theo phương vuông góc nếu vật không rời mặt đất"
+      },
+      "correct": "A",
+      "id": "mcq-CH13-24"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Phương trình chuyển động $\\sum F_n = ma_n$ áp dụng cho chất điểm chuyển động tròn có nghĩa là tổng lực theo phương pháp tuyến bằng gì?",
+      "options": {
+        "A": "$mr/v^2$ (đảo ngược công thức)",
+        "B": "$mv^2/r$ (khối lượng nhân bình phương tốc độ, chia bán kính quỹ đạo)",
+        "C": "$m\\alpha r$ (đây là gia tốc tiếp tuyến, không phải pháp tuyến)",
+        "D": "$m\\omega r$ (nhầm với công thức vận tốc dài)"
+      },
+      "correct": "B",
+      "id": "mcq-CH13-25"
+    },
+    {
+      "lecture": "CH13",
+      "question": "Với vật chuyển động thẳng có $F(x)$ (lực phụ thuộc vị trí, không phải thời gian), phương pháp $\\Sigma F=ma$ trực tiếp có nhược điểm gì so với nguyên lý công-năng lượng?",
+      "options": {
+        "A": "Không có nhược điểm gì, 2 phương pháp phức tạp như nhau",
+        "B": "Nguyên lý công-năng lượng luôn cho kết quả khác với $F=ma$",
+        "C": "$\\Sigma F=ma$ không thể dùng được cho $F(x)$",
+        "D": "Phải giải phương trình vi phân $a(x)=dv/dt$ liên hệ qua $v\\,dv=a\\,dx$ phức tạp hơn nhiều so với chỉ tích phân công $\\int F\\,dx$"
+      },
+      "correct": "D",
+      "id": "mcq-CH13-26"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Nguyên lý công-động năng (work-energy principle) được phát biểu như thế nào?",
+      "options": {
+        "A": "T₁ = T₂ + ΣU (dấu ngược)",
+        "B": "ΣU = 0 luôn đúng trong mọi trường hợp",
+        "C": "T₁ + ΣU_{1→2} = T₂ (động năng ban đầu cộng tổng công của mọi lực bằng động năng cuối)",
+        "D": "T₁ · ΣU = T₂ (nhân thay vì cộng)"
+      },
+      "correct": "C",
+      "id": "mcq-CH14-01"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Công của trọng lực khi vật trượt XUỐNG một mặt nghiêng có dấu như thế nào?",
+      "options": {
+        "A": "Dương (cùng chiều với chuyển động của vật)",
+        "B": "Phụ thuộc vào khối lượng, có thể âm hoặc dương tuỳ trường hợp",
+        "C": "Luôn âm bất kể hướng chuyển động",
+        "D": "Luôn bằng 0 trên mặt nghiêng"
+      },
+      "correct": "A",
+      "id": "mcq-CH14-02"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Công của lực ma sát động (kinetic friction) trong MỌI trường hợp chuyển động có tính chất gì?",
+      "options": {
+        "A": "Luôn dương",
+        "B": "Luôn bằng 0 nếu vật chuyển động đều",
+        "C": "Luôn ÂM (luôn cản trở chuyển động, bất kể hướng trượt)",
+        "D": "Có thể dương hoặc âm tuỳ hướng trượt"
+      },
+      "correct": "C",
+      "id": "mcq-CH14-03"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Tại sao nguyên lý công-năng lượng thường TIỆN LỢI HƠN Σ F=ma khi bài toán chỉ hỏi tốc độ tại 1 vị trí cụ thể?",
+      "options": {
+        "A": "Vì Σ F=ma không áp dụng được khi có nhiều lực",
+        "B": "Vì không cần tính gia tốc trung gian hay giải phương trình vi phân, chỉ cần cộng đại số các công",
+        "C": "Vì công luôn dễ tính hơn lực trong mọi trường hợp",
+        "D": "Vì nguyên lý công-năng lượng cho biết cả hướng chuyển động"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-04"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Với lực biến đổi theo vị trí F(x), công được tính bằng cách nào?",
+      "options": {
+        "A": "Tích phân W=∫F(x)\\,dx theo đúng đoạn đường di chuyển",
+        "B": "Đạo hàm F(x) theo x",
+        "C": "Lấy trung bình cộng F đầu và F cuối rồi nhân quãng đường (chỉ đúng nếu F tuyến tính và đối xứng)",
+        "D": "Nhân trực tiếp giá trị F tại điểm cuối với quãng đường"
+      },
+      "correct": "A",
+      "id": "mcq-CH14-05"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Thế năng đàn hồi tích luỹ trong lò xo bị nén/giãn một đoạn x (so với chiều dài tự nhiên) được tính bằng công thức nào?",
+      "options": {
+        "A": "V_e = kx (thiếu hệ số ½ và số mũ)",
+        "B": "V_e = ½kx (thiếu bình phương)",
+        "C": "V_e = kx² (thiếu hệ số ½)",
+        "D": "V_e = ½kx²"
+      },
+      "correct": "D",
+      "id": "mcq-CH14-06"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Trong bài toán khối rơi lên đầu lò xo thẳng đứng, tổng độ giảm độ cao trọng lực dùng trong bảo toàn năng lượng phải tính đến đoạn nào?",
+      "options": {
+        "A": "Chỉ tính độ nén x của lò xo",
+        "B": "Toàn bộ quãng đường rơi CỘNG với độ nén lò xo x (vật tiếp tục rơi thêm khi lò xo đang nén)",
+        "C": "Chỉ tính đến đoạn rơi tự do trước khi chạm lò xo",
+        "D": "Không cần quan tâm đến độ cao, chỉ cần độ nén lò xo"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-07"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Công suất tức thời P của một lực F tác dụng lên vật có vận tốc v (F và v cùng phương) được tính bằng công thức nào?",
+      "options": {
+        "A": "P = F+v",
+        "B": "P = F·v",
+        "C": "P = F/v",
+        "D": "P = F·v² (thừa 1 bậc v)"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-08"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Với xe chạy LÊN dốc với tốc độ KHÔNG ĐỔI, công suất động cơ cần thiết dùng công thức P=Fv với F là lực nào?",
+      "options": {
+        "A": "Lực bằng khối lượng xe nhân vận tốc",
+        "B": "Không cần lực nào, công suất luôn bằng 0 khi tốc độ không đổi",
+        "C": "Lực kéo cân bằng đúng thành phần trọng lực dọc dốc (mg sinθ), vì tốc độ không đổi nên gia tốc bằng 0",
+        "D": "Lực bằng toàn bộ trọng lượng xe mg"
+      },
+      "correct": "C",
+      "id": "mcq-CH14-09"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Bảo toàn năng lượng cơ học (mechanical energy conservation, T+V=const) chỉ áp dụng được khi nào?",
+      "options": {
+        "A": "Chỉ áp dụng được nếu vật đứng yên ở cả 2 thời điểm",
+        "B": "Khi tất cả các lực tác dụng đều là lực bảo toàn (conservative), tức là không có ma sát hay lực cản sinh công âm",
+        "C": "Chỉ áp dụng được cho chuyển động thẳng, không áp dụng cho chuyển động cong",
+        "D": "Luôn áp dụng được trong mọi bài toán, kể cả có ma sát"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-10"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Nếu một đoạn đường có ma sát xen giữa 2 đoạn không ma sát, cách xử lý đúng khi dùng bảo toàn năng lượng là gì?",
+      "options": {
+        "A": "Trừ đi đúng phần năng lượng bị mất do ma sát (W_fric=μ_kNd) khỏi tổng năng lượng cơ học ban đầu",
+        "B": "Bỏ qua hoàn toàn đoạn có ma sát, coi như không có",
+        "C": "Nhân đôi năng lượng mất do ma sát",
+        "D": "Không thể dùng bảo toàn năng lượng nếu có bất kỳ đoạn ma sát nào"
+      },
+      "correct": "A",
+      "id": "mcq-CH14-11"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Trong dạng bài con lắc/cung tròn không ma sát, độ giảm độ cao h khi dây quét góc θ từ vị trí cao nhất (ngang) được tính như thế nào?",
+      "options": {
+        "A": "h = R(1-\\cosθ), với R là chiều dài dây/bán kính cung",
+        "B": "h = R\\sinθ (công thức tính bán kính quỹ đạo ngang, khác với độ giảm độ cao)",
+        "C": "h = R(1+\\cosθ)",
+        "D": "h = Rθ (nhầm với độ dài cung)"
+      },
+      "correct": "A",
+      "id": "mcq-CH14-12"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Ưu điểm lớn nhất của nguyên lý công-năng lượng khi giải bài toán \"tìm tốc độ tại 1 điểm\" của vật chịu lực biến đổi F(x) là gì?",
+      "options": {
+        "A": "Luôn cho kết quả chính xác hơn phương pháp F=ma",
+        "B": "Chỉ áp dụng được khi F(x) là hằng số",
+        "C": "Không cần biết hàm F(x) cụ thể",
+        "D": "Chỉ cần tích phân công 1 lần (∫Fdx), không cần giải phương trình vi phân phức tạp để tìm v(x)"
+      },
+      "correct": "D",
+      "id": "mcq-CH14-13"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Đơn vị SI của công (work) và năng lượng là gì?",
+      "options": {
+        "A": "Joule (J), tương đương N·m",
+        "B": "Watt (W) -- đây là đơn vị công suất, không phải công",
+        "C": "N/m",
+        "D": "kg·m/s"
+      },
+      "correct": "A",
+      "id": "mcq-CH14-14"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Nếu một lực luôn VUÔNG GÓC với phương chuyển động của vật (ví dụ lực căng dây trong chuyển động tròn đều), công của lực đó bằng bao nhiêu?",
+      "options": {
+        "A": "Không thể xác định nếu không biết vận tốc",
+        "B": "Phụ thuộc vào khối lượng vật",
+        "C": "Bằng 0 (vì W=F·d·cosφ, với φ=90° thì cosφ=0)",
+        "D": "Luôn bằng chính độ lớn của lực đó"
+      },
+      "correct": "C",
+      "id": "mcq-CH14-15"
+    },
+    {
+      "lecture": "CH14",
+      "question": "[Tính toán] Khối 20 kg trượt trên mặt ngang không ma sát, chịu lực không đổi F=50 N theo phương chuyển động trong quãng đường d=4 m, xuất phát từ nghỉ. Tốc độ cuối bằng bao nhiêu?",
+      "options": {
+        "A": "10 m/s (quên chia khối lượng đúng cách)",
+        "B": "≈ 4.47 m/s",
+        "C": "20 m/s",
+        "D": "2 m/s (quên nhân 2 trước khi lấy căn)"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-16"
+    },
+    {
+      "lecture": "CH14",
+      "question": "[Tính toán] Lò xo k=200 N/m bị nén x=0.3 m. Thế năng đàn hồi tích luỹ bằng bao nhiêu?",
+      "options": {
+        "A": "60 J (quên hệ số ½ và bình phương x đúng cách)",
+        "B": "18 J (quên hệ số ½)",
+        "C": "4.5 J",
+        "D": "9 J"
+      },
+      "correct": "D",
+      "id": "mcq-CH14-17"
+    },
+    {
+      "lecture": "CH14",
+      "question": "[Tính toán] Xe 1000 kg chạy với tốc độ không đổi v=20 m/s lên dốc góc 4°. Công suất cần thiết (bỏ qua ma sát) xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 1370 kW (sai đơn vị)",
+        "B": "≈ 196 kW (quên nhân sin của góc nhỏ)",
+        "C": "≈ 13.7 kW",
+        "D": "≈ 6.85 kW"
+      },
+      "correct": "C",
+      "id": "mcq-CH14-18"
+    },
+    {
+      "lecture": "CH14",
+      "question": "[Tính toán] Vật rơi tự do từ độ cao h=5 m (bỏ qua sức cản không khí). Tốc độ chạm đất xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 9.90 m/s",
+        "B": "≈ 49 m/s (quên lấy căn bậc 2)",
+        "C": "≈ 4.95 m/s (quên nhân 2)",
+        "D": "≈ 98.1 m/s"
+      },
+      "correct": "A",
+      "id": "mcq-CH14-19"
+    },
+    {
+      "lecture": "CH14",
+      "question": "[Tính toán] Khối 4 kg trượt d=2 m trên mặt ngang có μ_k=0.25, từ tốc độ ban đầu v₀=6 m/s (không có lực kéo nào khác). Tốc độ sau khi trượt hết d bằng bao nhiêu?",
+      "options": {
+        "A": "≈ 3.13 m/s",
+        "B": "6 m/s (bỏ qua hoàn toàn ma sát)",
+        "C": "≈ 4.90 m/s (tính nhầm công ma sát gấp đôi)",
+        "D": "≈ 5.34 m/s"
+      },
+      "correct": "D",
+      "id": "mcq-CH14-20"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Trong bài toán khối được ép vào lò xo trên mặt nghiêng CÓ ma sát rồi bắn lên, có bao nhiêu \"nguồn\"/\"nơi tiêu thụ\" năng lượng cần liệt kê đầy đủ trong phương trình bảo toàn tổng quát?",
+      "options": {
+        "A": "4 loại, thêm cả động năng ban đầu dù xuất phát từ nghỉ",
+        "B": "3 loại: thế năng đàn hồi (nguồn), thế năng trọng trường (tiêu thụ khi đi lên), năng lượng mất do ma sát (tiêu thụ)",
+        "C": "Chỉ 1 loại: thế năng đàn hồi",
+        "D": "Chỉ 2 loại: đàn hồi và trọng trường, bỏ qua ma sát"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-21"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Công suất TRUNG BÌNH (average power) khác với công suất TỨC THỜI (instantaneous power) như thế nào?",
+      "options": {
+        "A": "Hai khái niệm này hoàn toàn giống nhau trong mọi trường hợp",
+        "B": "Công suất tức thời chỉ áp dụng cho chuyển động quay",
+        "C": "Công suất trung bình = tổng năng lượng/tổng thời gian; công suất tức thời = F·v tại một thời điểm xác định",
+        "D": "Công suất trung bình luôn lớn hơn công suất tức thời"
+      },
+      "correct": "C",
+      "id": "mcq-CH14-22"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Khi vật KHÔNG xuất phát từ nghỉ (có động năng ban đầu T₁≠0), điểm khác biệt quan trọng nhất khi áp dụng nguyên lý công-năng lượng là gì?",
+      "options": {
+        "A": "Nguyên lý công-năng lượng không áp dụng được nếu vật đã có vận tốc ban đầu",
+        "B": "Không có gì khác biệt, luôn coi T₁=0",
+        "C": "Phải nhân đôi công của tất cả các lực",
+        "D": "Phải CỘNG THÊM T₁=½mv₁² vào vế trái, không được bỏ qua như trường hợp xuất phát từ nghỉ"
+      },
+      "correct": "D",
+      "id": "mcq-CH14-23"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Trong bài toán quãng đường phanh xe (dùng năng lượng), lực ma sát của phanh sinh công như thế nào để làm xe dừng lại?",
+      "options": {
+        "A": "Không sinh công vì xe cuối cùng đứng yên (vị trí không đổi bằng 0)",
+        "B": "Sinh công ÂM đúng bằng động năng ban đầu của xe (toàn bộ động năng chuyển hoá thành nhiệt do ma sát)",
+        "C": "Công của lực ma sát luôn bằng đúng động năng cuối cùng",
+        "D": "Sinh công dương làm xe tăng tốc trước khi dừng"
+      },
+      "correct": "B",
+      "id": "mcq-CH14-24"
+    },
+    {
+      "lecture": "CH14",
+      "question": "Thế năng trọng trường V_g=mgh của một vật ở độ cao h so với mốc thế năng đã chọn có tính chất gì khi đổi mốc?",
+      "options": {
+        "A": "V_g luôn phải lấy mốc là mặt đất tuyệt đối, không được chọn mốc khác",
+        "B": "Đổi mốc thế năng làm thay đổi cả kết quả tốc độ tính được",
+        "C": "V_g không bao giờ đổi bất kể chọn mốc nào",
+        "D": "Giá trị V_g thay đổi tuỳ mốc chọn, nhưng ĐỘ CHÊNH LỆCH thế năng ΔV_g giữa 2 vị trí luôn không đổi"
+      },
+      "correct": "D",
+      "id": "mcq-CH14-25"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Dạng góc của định luật II Newton cho vật rắn quay quanh trục cố định được viết như thế nào?",
+      "options": {
+        "A": "ΣM = I/α (chia thay vì nhân)",
+        "B": "ΣM = Iα (tổng mô-men ngoại lực bằng mô-men quán tính nhân gia tốc góc)",
+        "C": "ΣF = Iα (dùng lực thay vì mô-men)",
+        "D": "ΣM = Iω (nhân với vận tốc góc thay vì gia tốc góc)"
+      },
+      "correct": "B",
+      "id": "mcq-CH17-01"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Mô-men quán tính I của một vật phụ thuộc vào yếu tố nào?",
+      "options": {
+        "A": "Không phụ thuộc vị trí trục quay được chọn",
+        "B": "Sự phân bố khối lượng của vật quanh trục quay đang xét (khối lượng càng xa trục càng đóng góp nhiều)",
+        "C": "Chỉ phụ thuộc tổng khối lượng, không phụ thuộc hình dạng",
+        "D": "Chỉ phụ thuộc hình dạng, không phụ thuộc khối lượng"
+      },
+      "correct": "B",
+      "id": "mcq-CH17-02"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Định lý trục song song (parallel-axis theorem) $I=I_G+md^2$ dùng để làm gì?",
+      "options": {
+        "A": "Tính mô-men quán tính quanh 1 trục bất kỳ song song với trục qua khối tâm, khi đã biết $I_G$",
+        "B": "Chỉ dùng khi vật có hình dạng đối xứng hoàn hảo",
+        "C": "Chỉ áp dụng cho chuyển động tịnh tiến, không áp dụng cho chuyển động quay",
+        "D": "Tính mô-men quán tính quanh chính trục đi qua khối tâm"
+      },
+      "correct": "A",
+      "id": "mcq-CH17-03"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Mô-men quán tính của một thanh mảnh đồng chất khối lượng m, dài L, quanh trục qua MỘT ĐẦU thanh (vuông góc thanh) bằng bao nhiêu?",
+      "options": {
+        "A": "$I=mL^2$",
+        "B": "$I=\\frac13mL^2$",
+        "C": "$I=\\frac{1}{12}mL^2$ (đây là công thức quanh khối tâm, không phải quanh đầu thanh)",
+        "D": "$I=\\frac12mL^2$"
+      },
+      "correct": "B",
+      "id": "mcq-CH17-04"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Với đĩa tròn đặc đồng chất khối lượng m, bán kính r, quay quanh trục qua tâm vuông góc mặt đĩa, mô-men quán tính bằng bao nhiêu?",
+      "options": {
+        "A": "$I=\\frac12mr^2$",
+        "B": "$I=\\frac14mr^2$",
+        "C": "$I=mr^2$ (đây là công thức của vành mỏng/hoop, không phải đĩa đặc)",
+        "D": "$I=\\frac25mr^2$ (đây là công thức của cầu đặc)"
+      },
+      "correct": "A",
+      "id": "mcq-CH17-05"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Trong bài toán ròng rọc CÓ khối lượng nối 2 vật treo (khác máy Atwood lý tưởng), vì sao lực căng dây ở 2 bên KHÁC NHAU?",
+      "options": {
+        "A": "Vì dây bị giãn không đều ở 2 bên",
+        "B": "Vì 2 vật luôn có khối lượng khác nhau",
+        "C": "Vì ròng rọc có mô-men quán tính, cần một mô-men lệch (do chênh lệch 2 lực căng) để tạo ra gia tốc góc cho nó",
+        "D": "Lực căng luôn bằng nhau bất kể ròng rọc có khối lượng hay không"
+      },
+      "correct": "C",
+      "id": "mcq-CH17-06"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Điều kiện \"lăn không trượt\" (rolling without slipping) được biểu diễn bằng phương trình động học nào?",
+      "options": {
+        "A": "$v_G$ và $\\omega$ hoàn toàn độc lập, không có liên hệ",
+        "B": "$v_G=\\omega r$ và $a_G=\\alpha r$ (vận tốc/gia tốc khối tâm liên hệ trực tiếp với vận tốc/gia tốc góc)",
+        "C": "$v_G=\\omega/r$",
+        "D": "$v_G=2\\omega r$"
+      },
+      "correct": "B",
+      "id": "mcq-CH17-07"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Trong bài toán vật lăn không trượt xuống mặt nghiêng, vai trò của lực ma sát TĨNH là gì?",
+      "options": {
+        "A": "Không tồn tại nếu vật đang lăn (chỉ có ma sát động)",
+        "B": "Luôn cản hoàn toàn chuyển động của vật giống ma sát động",
+        "C": "Luôn bằng μ_sN_max trong mọi trường hợp lăn",
+        "D": "Tạo ra mô-men cần thiết để vật vừa lăn (quay) vừa tịnh tiến đúng theo điều kiện lăn không trượt, độ lớn của nó do phương trình chuyển động quyết định (không phải μ_sN)"
+      },
+      "correct": "D",
+      "id": "mcq-CH17-08"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Giữa cầu đặc, đĩa đặc, và vành mỏng CÙNG khối lượng và bán kính, vật nào lăn xuống mặt nghiêng NHANH NHẤT (gia tốc lớn nhất)?",
+      "options": {
+        "A": "Vành mỏng (vì có mô-men quán tính lớn nhất)",
+        "B": "Cả 3 vật lăn xuống với cùng gia tốc bất kể hình dạng",
+        "C": "Cầu đặc (vì có tỉ số $I_G/(mr^2)=2/5$ nhỏ nhất trong 3 vật)",
+        "D": "Đĩa đặc"
+      },
+      "correct": "C",
+      "id": "mcq-CH17-09"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Kỹ thuật lấy mô-men quanh ĐIỂM TIẾP XÚC (thay vì quanh khối tâm G) khi giải bài toán vật lăn không trượt có ưu điểm gì?",
+      "options": {
+        "A": "Chỉ dùng được khi vật KHÔNG lăn không trượt",
+        "B": "Chỉ áp dụng được khi không có lực nào tác dụng lên vật",
+        "C": "Loại bỏ hoàn toàn ẩn số lực ma sát khỏi phương trình (vì ma sát đi qua đúng điểm đó, không sinh mô-men quanh nó)",
+        "D": "Làm phương trình phức tạp hơn, không có lợi ích thực tế"
+      },
+      "correct": "C",
+      "id": "mcq-CH17-10"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Khi hệ số ma sát thực tế nhỏ hơn hệ số ma sát TỐI THIỂU cần thiết để lăn không trượt, điều gì xảy ra?",
+      "options": {
+        "A": "Vật vừa lăn vừa TRƯỢT; phải dùng ma sát động f=μ_kN thay vì coi f là ẩn số tự do",
+        "B": "Vật sẽ bay lên khỏi mặt nghiêng",
+        "C": "Vật vẫn lăn không trượt bình thường, hệ số ma sát không ảnh hưởng",
+        "D": "Vật sẽ dừng lại ngay lập tức"
+      },
+      "correct": "A",
+      "id": "mcq-CH17-11"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Lực đặt QUA TÂM của một đĩa lăn không trượt (ví dụ lực kéo ngang tại tâm) có sinh mô-men quanh khối tâm G hay không?",
+      "options": {
+        "A": "Không thể xác định nếu không biết khối lượng đĩa",
+        "B": "Có, luôn sinh mô-men bằng F nhân bán kính",
+        "C": "Không (vì cánh tay đòn từ G đến đường tác dụng của lực bằng 0) -- chỉ có lực ma sát mới gây mô-men quanh G trong trường hợp này",
+        "D": "Có, nhưng chỉ khi vật đang đứng yên"
+      },
+      "correct": "C",
+      "id": "mcq-CH17-12"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Trong hệ 2 bánh răng ăn khớp với mô-men quán tính khác nhau, đại lượng nào LUÔN bằng nhau tại điểm ăn khớp (theo định luật III Newton)?",
+      "options": {
+        "A": "Lực tương tác pháp tuyến tại điểm tiếp xúc (một bánh đẩy bánh kia với lực bằng và ngược chiều)",
+        "B": "Gia tốc góc của 2 bánh răng",
+        "C": "Vận tốc góc của 2 bánh răng",
+        "D": "Mô-men quán tính của 2 bánh răng"
+      },
+      "correct": "A",
+      "id": "mcq-CH17-13"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Nếu lực tác dụng lên vật rắn đặt LỆCH TÂM (không đi qua khối tâm G), điều gì xảy ra khác so với lực đặt qua tâm?",
+      "options": {
+        "A": "Chỉ gây gia tốc góc, không gây gia tốc tịnh tiến",
+        "B": "Chỉ gây gia tốc tịnh tiến, giống hệt lực đặt qua tâm",
+        "C": "Lực đó sinh thêm mô-men quanh G, gây ra cả gia tốc tịnh tiến (từ ΣF=ma) VÀ gia tốc góc (từ ΣM_G=I_Gα)",
+        "D": "Không có gì khác biệt so với lực đặt qua tâm"
+      },
+      "correct": "C",
+      "id": "mcq-CH17-14"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Với vật quay quanh trục cố định KHÔNG đi qua khối tâm, tại sao KHÔNG thể dùng đơn giản $I=I_G$ trong phương trình $\\Sigma M=I\\alpha$?",
+      "options": {
+        "A": "Không có sự khác biệt nào giữa $I$ và $I_G$",
+        "B": "Phải dùng $I=0$ nếu trục quay không qua khối tâm",
+        "C": "$I_G$ luôn dùng được cho mọi trục quay bất kỳ",
+        "D": "Vì phải dùng $I$ quanh chính trục quay thực tế đó (tính bằng định lý trục song song $I=I_G+md^2$), không phải $I_G$ quanh khối tâm"
+      },
+      "correct": "D",
+      "id": "mcq-CH17-15"
+    },
+    {
+      "lecture": "CH17",
+      "question": "[Tính toán] Đĩa đặc khối lượng m=8 kg, bán kính r=0.2 m, chịu mô-men M=6 N·m quanh trục qua tâm. Gia tốc góc α bằng bao nhiêu?",
+      "options": {
+        "A": "≈ 18.75 rad/s² (quên hệ số ½ trong I đúng cách)",
+        "B": "≈ 75 rad/s² (bỏ qua hệ số ½)",
+        "C": "≈ 9.4 rad/s²",
+        "D": "≈ 37.5 rad/s²"
+      },
+      "correct": "D",
+      "id": "mcq-CH17-16"
+    },
+    {
+      "lecture": "CH17",
+      "question": "[Tính toán] Thanh mảnh m=6 kg, L=2 m, chốt tại 1 đầu. Mô-men quán tính I quanh trục quay tại đầu thanh bằng bao nhiêu?",
+      "options": {
+        "A": "24 kg·m² (bỏ qua hệ số 1/3)",
+        "B": "4 kg·m²",
+        "C": "2 kg·m² (dùng nhầm công thức 1/12 mL²)",
+        "D": "8 kg·m²"
+      },
+      "correct": "D",
+      "id": "mcq-CH17-17"
+    },
+    {
+      "lecture": "CH17",
+      "question": "[Tính toán] Cầu đặc lăn không trượt xuống mặt nghiêng 30°. Gia tốc của cầu xấp xỉ bao nhiêu (g=9.81)?",
+      "options": {
+        "A": "≈ 7.00 m/s²",
+        "B": "≈ 2.45 m/s²",
+        "C": "≈ 4.90 m/s² (đây là gia tốc trượt không ma sát, quên hệ số lăn)",
+        "D": "≈ 3.50 m/s²"
+      },
+      "correct": "D",
+      "id": "mcq-CH17-18"
+    },
+    {
+      "lecture": "CH17",
+      "question": "[Tính toán] Ròng rọc đĩa m_P=6 kg, r=0.2 m, nối vật treo m=4 kg qua dây. Gia tốc của vật treo xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 9.81 m/s² (bỏ qua hoàn toàn ròng rọc)",
+        "B": "≈ 4.00 m/s²",
+        "C": "≈ 5.60 m/s²",
+        "D": "≈ 2.80 m/s² (tính sai hệ số ròng rọc)"
+      },
+      "correct": "C",
+      "id": "mcq-CH17-19"
+    },
+    {
+      "lecture": "CH17",
+      "question": "[Tính toán] Hai bánh răng ăn khớp: bánh 1 ($I_1=0.5$ kg·m², $r_1=0.15$ m) chịu mô-men $M=9$ N·m, bánh 2 ($I_2=0.1$ kg·m², $r_2=0.1$ m). Gia tốc góc $\\alpha_1$ xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 12.9 rad/s²",
+        "B": "9 rad/s²",
+        "C": "18 rad/s² (bỏ qua ảnh hưởng của bánh 2)",
+        "D": "6 rad/s²"
+      },
+      "correct": "A",
+      "id": "mcq-CH17-20"
+    },
+    {
+      "lecture": "CH17",
+      "question": "So sánh phương pháp $\\Sigma F=ma$/$\\Sigma M=I\\alpha$ (Chapter 17) với nguyên lý công-năng lượng (Chapter 18) khi giải bài toán vật rắn, phương pháp nào phù hợp hơn để tìm GIA TỐC tại một thời điểm cụ thể?",
+      "options": {
+        "A": "Chapter 17 ($\\Sigma F=ma$, $\\Sigma M=I\\alpha$) -- vì năng lượng chỉ cho vận tốc/vận tốc góc, không trực tiếp cho gia tốc",
+        "B": "Chapter 18 (công-năng lượng) -- luôn cho cả gia tốc lẫn vận tốc",
+        "C": "Không có sự khác biệt giữa 2 phương pháp",
+        "D": "Cả 2 phương pháp đều không thể tìm được gia tốc"
+      },
+      "correct": "A",
+      "id": "mcq-CH17-21"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Trong hệ 2 khối nối qua ròng rọc CÓ khối lượng, nếu bỏ qua khối lượng ròng rọc ($m_P\\to0$), kết quả sẽ trở về dạng bài toán nào đã học trước đó?",
+      "options": {
+        "A": "Không có bài toán tương ứng nào trước đó",
+        "B": "Máy Atwood đơn giản (Chapter 13) với lực căng 2 bên bằng nhau",
+        "C": "Bài toán con lắc côn",
+        "D": "Bài toán chuyển động tròn thẳng đứng"
+      },
+      "correct": "B",
+      "id": "mcq-CH17-22"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Mô-men quán tính của một khối ĐIỂM (point mass) $m$ cách trục quay khoảng cách $d$ bằng bao nhiêu?",
+      "options": {
+        "A": "$I=0$ luôn luôn, bất kể khoảng cách",
+        "B": "$I=md$ (thiếu bình phương)",
+        "C": "$I=\\frac12md^2$",
+        "D": "$I=md^2$ (không có mô-men quán tính \"riêng\" quanh khối tâm của chính nó vì kích thước bằng 0)"
+      },
+      "correct": "D",
+      "id": "mcq-CH17-23"
+    },
+    {
+      "lecture": "CH17",
+      "question": "Vì sao đĩa lăn không trượt bị kéo bởi lực F qua tâm có \"hệ số hiệu dụng\" $\\frac32m$ (tức $a=\\frac{2F}{3m}$) thay vì chỉ $m$ như vật trượt thuần tuý?",
+      "options": {
+        "A": "Đây là một sai số tính toán, thực chất hệ số phải là $m$",
+        "B": "Vì một phần lực kéo phải \"dùng\" để tạo mô-men quay đĩa (qua ma sát) thay vì chỉ tạo gia tốc tịnh tiến thuần tuý",
+        "C": "Vì khối lượng thực tế của đĩa lớn hơn giá trị $m$ cho trong đề",
+        "D": "Vì trọng lực đóng góp thêm vào phương trình"
+      },
+      "correct": "B",
+      "id": "mcq-CH17-24"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Động năng của vật rắn chuyển động phẳng tổng quát (vừa tịnh tiến vừa quay) được tính bằng công thức nào?",
+      "options": {
+        "A": "$T=mv_G^2+I_G\\omega^2$ (thiếu hệ số ½ ở cả 2 số hạng)",
+        "B": "$T=\\frac12I_G\\omega^2$ (chỉ tính phần quay, bỏ qua phần tịnh tiến)",
+        "C": "$T=\\frac12mv_G^2$ (chỉ tính phần tịnh tiến, bỏ qua phần quay)",
+        "D": "$T=\\frac12mv_G^2+\\frac12I_G\\omega^2$ (tổng động năng tịnh tiến của khối tâm và động năng quay quanh khối tâm)"
+      },
+      "correct": "D",
+      "id": "mcq-CH18-01"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Với vật LĂN KHÔNG TRƯỢT, tại sao lực ma sát tĩnh tại điểm tiếp xúc KHÔNG sinh công?",
+      "options": {
+        "A": "Vì điểm tiếp xúc tức thời có vận tốc bằng 0 (không trượt), mà công = lực × quãng đường di chuyển CỦA ĐIỂM ĐẶT LỰC",
+        "B": "Vì ma sát luôn vuông góc với trọng lực",
+        "C": "Ma sát vẫn sinh công, chỉ là công rất nhỏ có thể bỏ qua",
+        "D": "Vì độ lớn lực ma sát luôn bằng 0 khi lăn không trượt"
+      },
+      "correct": "A",
+      "id": "mcq-CH18-02"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Đây chính là lợi thế cốt lõi của phương pháp năng lượng (Chapter 18) so với $\\Sigma F=ma$ (Chapter 17) khi giải bài toán vật LĂN KHÔNG TRƯỢT là gì?",
+      "options": {
+        "A": "Phương pháp năng lượng luôn cho kết quả chính xác hơn",
+        "B": "Không cần biết độ lớn lực ma sát tĩnh (vì nó không sinh công), tránh phải giải hệ phương trình có ẩn số ma sát",
+        "C": "Không có lợi thế nào đặc biệt",
+        "D": "Phương pháp năng lượng áp dụng được cho cả trường hợp KHÔNG lăn không trượt mà không cần điều chỉnh gì"
+      },
+      "correct": "B",
+      "id": "mcq-CH18-03"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Hệ số \"khối lượng hiệu dụng\" $\\left(1+\\frac{I_G}{mr^2}\\right)$ xuất hiện trong MỌI bài toán năng lượng có vật lăn không trượt có ý nghĩa gì?",
+      "options": {
+        "A": "Chỉ áp dụng khi vật có ma sát động, không áp dụng cho lăn không trượt",
+        "B": "Chỉ là một hệ số toán học không có ý nghĩa vật lý",
+        "C": "Thể hiện việc một phần năng lượng luôn \"chia sẻ\" cho chuyển động quay, làm vật lăn luôn chậm hơn vật trượt thuần tuý cùng điều kiện",
+        "D": "Luôn bằng 1 bất kể hình dạng vật"
+      },
+      "correct": "C",
+      "id": "mcq-CH18-04"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Công của một mô-men KHÔNG ĐỔI $M$ khi vật quay qua góc $\\theta$ (radian) được tính bằng công thức nào?",
+      "options": {
+        "A": "$W=2M\\theta$",
+        "B": "$W=M\\theta$ (tương tự công của lực không đổi $W=Fd$, thay đại lượng dài bằng đại lượng góc)",
+        "C": "$W=M\\theta^2$",
+        "D": "$W=M/\\theta$"
+      },
+      "correct": "B",
+      "id": "mcq-CH18-05"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Với mô-men biến đổi theo góc quay $M(\\theta)$, công được tính bằng cách nào?",
+      "options": {
+        "A": "Nhân trực tiếp $M$ tại góc cuối với tổng góc quay",
+        "B": "Tích phân $W=\\int M(\\theta)\\,d\\theta$ theo đúng khoảng góc quay",
+        "C": "Lấy giá trị $M$ tại $\\theta=0$ nhân với góc quay",
+        "D": "Đạo hàm $M(\\theta)$ theo $\\theta$"
+      },
+      "correct": "B",
+      "id": "mcq-CH18-06"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Trong bài toán vật rắn đang quay với $\\omega_0\\neq0$ rồi tiếp tục quay thêm dưới tác dụng của trọng lực, điểm khác biệt quan trọng khi áp dụng nguyên lý công-năng lượng là gì?",
+      "options": {
+        "A": "Phải cộng động năng ban đầu $\\frac12I\\omega_0^2$ vào vế trái, không được coi như xuất phát từ nghỉ",
+        "B": "Không có khác biệt gì, luôn coi vận tốc góc ban đầu bằng 0",
+        "C": "Phải nhân đôi công của trọng lực",
+        "D": "Nguyên lý công-năng lượng không dùng được nếu vật đã có vận tốc góc ban đầu"
+      },
+      "correct": "A",
+      "id": "mcq-CH18-07"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Công suất trung bình của một mô-men xoắn (motor) quay bánh đà từ nghỉ đến $\\omega_f$ trong thời gian $t$ được tính đơn giản nhất bằng cách nào?",
+      "options": {
+        "A": "$P_{avg}=M\\omega_f$ (chỉ đúng cho công suất tức thời tại thời điểm cuối, không phải trung bình)",
+        "B": "$P_{avg}=\\frac12I\\omega_f$",
+        "C": "$P_{avg}=I\\omega_f$",
+        "D": "$P_{avg}=\\dfrac{\\Delta KE}{t}=\\dfrac{\\frac12I\\omega_f^2}{t}$ (không cần biết chi tiết $M(t)$)"
+      },
+      "correct": "D",
+      "id": "mcq-CH18-08"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Khi kiểm chứng chéo kết quả giữa phương pháp $\\Sigma F=ma$ (tính $a$) và phương pháp năng lượng (tính $v$ sau khi đi được quãng đường $h$ từ nghỉ), 2 kết quả phải thoả mãn hệ thức động học nào?",
+      "options": {
+        "A": "$v^2=ah^2$",
+        "B": "$v=ah$",
+        "C": "$v^2=2ah$ (công thức chuyển động thẳng biến đổi đều, vì $a$ không đổi trong các bài toán này)",
+        "D": "Không có hệ thức liên hệ nào, 2 phương pháp độc lập hoàn toàn"
+      },
+      "correct": "C",
+      "id": "mcq-CH18-09"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Với thanh có gắn thêm khối điểm ở đầu tự do, khi tính công của trọng lực trong bài toán quay từ ngang xuống đứng, cần lưu ý điều gì?",
+      "options": {
+        "A": "Chỉ cần tính công trọng lực cho thanh, bỏ qua khối điểm vì nó nhỏ",
+        "B": "Coi toàn bộ hệ như 1 khối điểm duy nhất đặt tại giữa thanh",
+        "C": "Nhân đôi công trọng lực của thanh để tính luôn cho khối điểm",
+        "D": "Tính RIÊNG công trọng lực cho thanh (khối tâm hạ $L/2$) và cho khối điểm (hạ đúng $L$), rồi cộng lại"
+      },
+      "correct": "D",
+      "id": "mcq-CH18-10"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Trong bài toán bánh xe lăn không trượt bị hãm bởi mô-men phanh không đổi tại trục, quãng đường xe đi được trước khi dừng liên hệ với góc quay như thế nào?",
+      "options": {
+        "A": "$d=\\theta/r$",
+        "B": "$d=r\\theta$ (vì lăn không trượt, quãng đường tịnh tiến liên hệ trực tiếp với góc quay qua bán kính)",
+        "C": "$d=r^2\\theta$",
+        "D": "Không có liên hệ trực tiếp nào giữa $d$ và $\\theta$"
+      },
+      "correct": "B",
+      "id": "mcq-CH18-11"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Nếu 2 vật có hình dạng khác nhau (ví dụ cầu đặc và vành mỏng) nhưng cùng khối lượng, bán kính, cùng lăn không trượt từ cùng độ cao, vật nào đạt tốc độ LỚN HƠN ở chân dốc?",
+      "options": {
+        "A": "Cầu đặc (vì có $I_G/(mr^2)$ nhỏ hơn, ít năng lượng \"mất\" vào chuyển động quay hơn)",
+        "B": "Vành mỏng, vì có mô-men quán tính lớn hơn nên tích luỹ nhiều động năng hơn",
+        "C": "Không thể xác định nếu không biết bán kính chính xác",
+        "D": "Cả 2 đạt cùng tốc độ vì cùng khối lượng và độ cao"
+      },
+      "correct": "A",
+      "id": "mcq-CH18-12"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Trong bảo toàn năng lượng cho vật lăn không trượt, tại sao KHÔNG cần biết giá trị cụ thể của bán kính $r$ trong một số bài toán (ví dụ so sánh gia tốc giữa cầu và đĩa)?",
+      "options": {
+        "A": "Vì lăn không trượt không phụ thuộc vào bán kính vật",
+        "B": "Vì bán kính luôn bằng 1 trong hệ đơn vị SI",
+        "C": "Vì tỉ số $I_G/(mr^2)$ (yếu tố quyết định) chỉ phụ thuộc HÌNH DẠNG vật, $r$ và $m$ tự triệt tiêu trong công thức",
+        "D": "Bán kính luôn cần thiết, không thể bỏ qua trong bất kỳ trường hợp nào"
+      },
+      "correct": "C",
+      "id": "mcq-CH18-13"
+    },
+    {
+      "lecture": "CH18",
+      "question": "[Tính toán] Vật rắn có $m=5$ kg, $v_G=4$ m/s, $I_G=0.5$ kg·m², $\\omega=8$ rad/s. Tổng động năng $T$ bằng bao nhiêu?",
+      "options": {
+        "A": "16 J (bỏ sót phần động năng tịnh tiến)",
+        "B": "40 J (bỏ sót phần động năng quay)",
+        "C": "112 J (quên hệ số ½ ở cả 2 số hạng)",
+        "D": "56 J"
+      },
+      "correct": "D",
+      "id": "mcq-CH18-14"
+    },
+    {
+      "lecture": "CH18",
+      "question": "[Tính toán] Đĩa đặc $m=4$ kg, $r=0.25$ m, lăn không trượt từ nghỉ xuống độ cao $h=1.5$ m (không ma sát cản trở lăn). Tốc độ ở cuối xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 6.26 m/s",
+        "B": "≈ 4.43 m/s",
+        "C": "≈ 5.42 m/s (bỏ qua động năng quay, dùng công thức trượt tự do)",
+        "D": "≈ 3.13 m/s"
+      },
+      "correct": "B",
+      "id": "mcq-CH18-15"
+    },
+    {
+      "lecture": "CH18",
+      "question": "[Tính toán] Bánh đà $I=10$ kg·m² quay từ nghỉ đến $\\omega=20$ rad/s trong $t=4$ s. Công suất trung bình động cơ bằng bao nhiêu?",
+      "options": {
+        "A": "1000 W",
+        "B": "2000 W (quên chia cho thời gian đúng cách)",
+        "C": "500 W",
+        "D": "50 W (quên hệ số ½ trong động năng)"
+      },
+      "correct": "C",
+      "id": "mcq-CH18-16"
+    },
+    {
+      "lecture": "CH18",
+      "question": "[Tính toán] Mô-men không đổi $M=8$ N·m làm vật quay $\\theta=3\\pi$ rad. Công của mô-men bằng bao nhiêu?",
+      "options": {
+        "A": "24 J (quên nhân với $\\pi$)",
+        "B": "≈ 150.8 J (nhân đôi nhầm)",
+        "C": "≈ 75.4 J",
+        "D": "8 J"
+      },
+      "correct": "C",
+      "id": "mcq-CH18-17"
+    },
+    {
+      "lecture": "CH18",
+      "question": "[Tính toán] Cầu đặc $m=3$ kg, $r=0.06$ m lăn không trượt với $v_0=5$ m/s lên mặt nghiêng $10°$. Quãng đường đi được trước khi dừng xấp xỉ bao nhiêu?",
+      "options": {
+        "A": "≈ 14.4 m",
+        "B": "≈ 7.2 m",
+        "C": "≈ 10.3 m (bỏ qua động năng quay, chỉ tính phần tịnh tiến)",
+        "D": "≈ 25.5 m"
+      },
+      "correct": "A",
+      "id": "mcq-CH18-18"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Nếu một vật rắn quay quanh trục cố định (không tịnh tiến) và chỉ chịu tác dụng của trọng lực, công thức năng lượng $T=\\frac12mv_G^2+\\frac12I_G\\omega^2$ có thể rút gọn thế nào?",
+      "options": {
+        "A": "$T=\\frac12I_G\\omega^2$ (dùng nhầm $I_G$ thay vì $I_O$)",
+        "B": "$T=\\frac12mv_G^2$ (bỏ hoàn toàn phần quay)",
+        "C": "Không thể rút gọn, phải luôn tính riêng 2 số hạng",
+        "D": "$T=\\frac12I_O\\omega^2$ với $I_O$ là mô-men quán tính quanh TRỤC QUAY CỐ ĐỊNH (dùng định lý trục song song từ $I_G$)"
+      },
+      "correct": "D",
+      "id": "mcq-CH18-19"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Trong bài toán vật lăn không trượt gắn với lò xo (spring) qua dây/cần nối tại tâm, tốc độ LỚN NHẤT của vật đạt được khi nào?",
+      "options": {
+        "A": "Tốc độ luôn không đổi trong suốt quá trình, không có giá trị lớn nhất riêng biệt",
+        "B": "Khi lò xo bị nén/giãn nhiều nhất",
+        "C": "Ngay tại thời điểm thả vật, trước khi lò xo bắt đầu tác dụng",
+        "D": "Khi lò xo trở về đúng chiều dài tự nhiên (toàn bộ thế năng đàn hồi đã chuyển hoá hết thành động năng)"
+      },
+      "correct": "D",
+      "id": "mcq-CH18-20"
+    },
+    {
+      "lecture": "CH18",
+      "question": "Việc \"kiểm chứng chéo\" giữa 2 phương pháp Chapter 17 ($\\Sigma F=ma$) và Chapter 18 (công-năng lượng) cho CÙNG một bài toán có giá trị gì trong học tập?",
+      "options": {
+        "A": "Xác nhận độ chính xác của lời giải (nếu 2 phương pháp độc lập cho cùng đáp số, khả năng cao lời giải đúng) và hiểu sâu hơn mối liên hệ giữa lực/mô-men và năng lượng",
+        "B": "Chỉ 1 trong 2 phương pháp là \"đúng\", phương pháp còn lại luôn là gần đúng",
+        "C": "Không có giá trị gì, vì 2 phương pháp luôn cho kết quả khác nhau",
+        "D": "Chỉ có giá trị nếu đề bài yêu cầu giải bằng cả 2 cách"
+      },
+      "correct": "A",
+      "id": "mcq-CH18-21"
     }
   ],
   "by_lecture": {
@@ -5770,6 +6922,1166 @@
         },
         "correct": "B",
         "id": "mcq-L10-48"
+      }
+    ],
+    "CH13": [
+      {
+        "lecture": "CH13",
+        "question": "Định luật II Newton áp dụng cho chất điểm được viết dưới dạng nào?",
+        "options": {
+          "A": "ΣF = Δp (chỉ đúng dạng tích phân theo thời gian, không phải tức thời)",
+          "B": "ΣF = ma (tổng ngoại lực bằng khối lượng nhân gia tốc)",
+          "C": "ΣF = m/a (chia thay vì nhân)",
+          "D": "ΣF = mv (nhân với vận tốc thay vì gia tốc)"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-01"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Khi giải bài toán khối trên mặt nghiêng, tại sao nên chọn trục x dọc mặt nghiêng thay vì trục ngang/đứng thông thường?",
+        "options": {
+          "A": "Vì phản lực pháp tuyến luôn bằng 0 trong hệ trục này",
+          "B": "Vì gia tốc của khối luôn dọc theo mặt nghiêng, chọn trục này giúp chỉ 1 phương trình có gia tốc khác 0",
+          "C": "Vì trọng lực luôn nằm dọc mặt nghiêng",
+          "D": "Không có lý do đặc biệt, chỉ là quy ước"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-02"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong bài toán elevator, \"trọng lượng biểu kiến\" (apparent weight) mà cân đo được chính là đại lượng nào?",
+        "options": {
+          "A": "Trọng lượng thật mg, không đổi bất kể gia tốc thang máy",
+          "B": "Lực quán tính ma (không phải lực thật, không tác dụng lên người)",
+          "C": "Luôn bằng 0 khi thang máy đang chuyển động",
+          "D": "Phản lực pháp tuyến N mà sàn tác dụng lên người"
+        },
+        "correct": "D",
+        "id": "mcq-CH13-03"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Khi thang máy tăng tốc đi XUỐNG, trọng lượng biểu kiến của người trong thang máy thay đổi ra sao?",
+        "options": {
+          "A": "Giảm so với trọng lượng thật (người cảm thấy nhẹ hơn)",
+          "B": "Tăng so với trọng lượng thật",
+          "C": "Không đổi",
+          "D": "Luôn bằng 0 bất kể gia tốc lớn nhỏ"
+        },
+        "correct": "A",
+        "id": "mcq-CH13-04"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong chuyển động tròn, lực hướng tâm (centripetal force) có bản chất là gì?",
+        "options": {
+          "A": "Lực ly tâm tác dụng ra ngoài, chỉ đổi tên",
+          "B": "Một loại lực riêng biệt luôn tồn tại độc lập với các lực khác",
+          "C": "Chỉ xuất hiện khi vật chuyển động tròn KHÔNG đều",
+          "D": "Không phải một loại lực mới, mà là tên gọi cho tổng hợp lực thực tế (ma sát, căng dây, trọng lực...) hướng vào tâm"
+        },
+        "correct": "D",
+        "id": "mcq-CH13-05"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Khối trên đĩa quay ngang bắt đầu trượt ra ngoài khi nào?",
+        "options": {
+          "A": "Khi tốc độ quay bằng 0",
+          "B": "Ma sát tĩnh không liên quan đến hiện tượng này",
+          "C": "Khi lực hướng tâm cần thiết (mv²/r) vượt quá lực ma sát tĩnh cực đại có thể cung cấp",
+          "D": "Khi bán kính quỹ đạo bằng 0"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-06"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong con lắc côn (conical pendulum), tại sao phương trình cân bằng theo phương ĐỨNG được giải trước?",
+        "options": {
+          "A": "Vì phương đứng luôn có gia tốc lớn hơn phương ngang",
+          "B": "Thứ tự giải không ảnh hưởng đến kết quả",
+          "C": "Vì theo phương đứng vật không có gia tốc (chuyển động tròn nằm ngang), cho phép tìm lực căng T trực tiếp",
+          "D": "Vì đề bài luôn yêu cầu tìm lực căng trước tiên"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-07"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Ở khúc cua nghiêng (banked curve) lý tưởng KHÔNG có ma sát, điều gì xảy ra nếu xe chạy CHẬM hơn tốc độ thiết kế?",
+        "options": {
+          "A": "Xe sẽ bay lên khỏi mặt đường",
+          "B": "Xe có xu hướng trượt XUỐNG dốc nghiêng vào phía trong khúc cua",
+          "C": "Xe có xu hướng trượt lên trên",
+          "D": "Không có ảnh hưởng gì, xe vẫn giữ nguyên quỹ đạo"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-08"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong chuyển động tròn thẳng đứng (vertical circular motion, ví dụ bóng buộc dây), tại điểm CAO NHẤT, lực căng dây và trọng lực có quan hệ gì với gia tốc hướng tâm?",
+        "options": {
+          "A": "Cả 2 lực đều hướng VÀO TÂM (xuống), tổng của chúng bằng mv²/r",
+          "B": "Chỉ có lực căng dây đóng góp vào lực hướng tâm",
+          "C": "Cả 2 lực đều hướng ra khỏi tâm",
+          "D": "Trọng lực hướng ra khỏi tâm, ngược chiều lực căng"
+        },
+        "correct": "A",
+        "id": "mcq-CH13-09"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Vì sao lực căng dây trong chuyển động tròn thẳng đứng LỚN NHẤT tại điểm THẤP NHẤT?",
+        "options": {
+          "A": "Lực căng luôn không đổi tại mọi vị trí",
+          "B": "Vì tốc độ tại điểm thấp nhất luôn nhỏ nhất",
+          "C": "Vì tại đó lực căng phải vừa cung cấp lực hướng tâm vừa chống lại trọng lực (2 lực ngược chiều nhau cộng lại)",
+          "D": "Vì trọng lực không tác dụng tại điểm thấp nhất"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-10"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Khi lực tác dụng lên vật biến đổi theo thời gian F(t), phương pháp nào đúng để tìm vận tốc v(t)?",
+        "options": {
+          "A": "Dùng trực tiếp công thức v=v₀+at (chỉ đúng khi a không đổi)",
+          "B": "Tích phân a(t)=F(t)/m theo thời gian: v(t)=∫a\\,dt",
+          "C": "Đạo hàm F(t) theo thời gian",
+          "D": "Nhân trực tiếp F(t) với thời gian tổng"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-11"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong bài toán 2 khối nối dây qua ròng rọc nhẵn (1 khối trên bàn có ma sát, 1 khối treo), phương pháp giải chuẩn là gì?",
+        "options": {
+          "A": "Luôn giả sử T=0 vì dây không có khối lượng",
+          "B": "Chỉ cần xét khối treo, bỏ qua khối trên bàn",
+          "C": "Viết riêng phương trình Newton cho mỗi khối theo đúng chiều chuyển động giả định, cộng lại để khử lực căng T",
+          "D": "Chỉ cần viết 1 phương trình chung cho cả hệ ngay từ đầu mà không cần xét từng vật"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-12"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trên đường cong có bán kính cong ρ thay đổi, khi xe vừa đổi tốc độ (a_t≠0) vừa đổi hướng (a_n≠0), lực ma sát tổng hợp cần thiết được tính như thế nào?",
+        "options": {
+          "A": "Lấy trung bình cộng của F_n và F_t",
+          "B": "Cộng đại số trực tiếp F_n+F_t",
+          "C": "Cộng vector 2 thành phần vuông góc nhau: F=√(F_n²+F_t²) (Pythagoras)",
+          "D": "Chỉ cần F_n, bỏ qua F_t vì nó luôn nhỏ hơn nhiều"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-13"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Toạ độ pháp tuyến-tiếp tuyến (n-t) đặc biệt thuận tiện cho dạng bài toán nào?",
+        "options": {
+          "A": "Dùng thay thế hoàn toàn cho toạ độ Đề-các trong MỌI bài toán",
+          "B": "Chỉ dùng được khi không có lực nào tác dụng",
+          "C": "Chỉ dùng được cho chuyển động thẳng đều",
+          "D": "Chuyển động theo quỹ đạo cong đã biết trước hình dạng (đường tròn, đường cong bất kỳ)"
+        },
+        "correct": "D",
+        "id": "mcq-CH13-14"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Nếu khối lượng m bị triệt tiêu hoàn toàn khỏi phương trình cuối cùng (như bài toán tốc độ tối đa trên đĩa quay), điều đó có ý nghĩa gì?",
+        "options": {
+          "A": "Kết quả (ví dụ v_max) không phụ thuộc vào khối lượng vật, đúng với mọi m",
+          "B": "Khối lượng vật bằng 0 trong bài toán này",
+          "C": "Đây là dấu hiệu bài giải sai, cần kiểm tra lại",
+          "D": "Đề bài chắc chắn thiếu dữ kiện"
+        },
+        "correct": "A",
+        "id": "mcq-CH13-15"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong bài toán khối bị kéo bởi lực F hướng CHÉO LÊN trên mặt ngang có ma sát, tại sao phản lực N giảm so với mg?",
+        "options": {
+          "A": "Vì thành phần thẳng đứng của lực kéo (F sinφ) hướng lên, phụ thêm vào việc \"nâng đỡ\" vật, giảm bớt phần N phải gánh",
+          "B": "Vì khối lượng vật giảm khi bị kéo",
+          "C": "Vì ma sát luôn làm giảm N",
+          "D": "N không bao giờ thay đổi so với mg trong bất kỳ trường hợp nào"
+        },
+        "correct": "A",
+        "id": "mcq-CH13-16"
+      },
+      {
+        "lecture": "CH13",
+        "question": "[Tính toán] Khối 10 kg trên mặt ngang nhẵn chịu lực kéo ngang F=40 N. Gia tốc của khối là bao nhiêu?",
+        "options": {
+          "A": "400 m/s² (nhân nhầm)",
+          "B": "40 m/s² (quên chia khối lượng)",
+          "C": "4 m/s²",
+          "D": "0.25 m/s² (chia ngược)"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-17"
+      },
+      {
+        "lecture": "CH13",
+        "question": "[Tính toán] Người 60 kg đứng trong thang máy đang tăng tốc lên trên với a=3 m/s². Số chỉ cân (N) xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 588.6 N (dùng a hướng xuống thay vì lên)",
+          "B": "≈ 600 N (bỏ qua gia tốc)",
+          "C": "≈ 768.6 N",
+          "D": "≈ 180 N (chỉ tính ma)"
+        },
+        "correct": "C",
+        "id": "mcq-CH13-18"
+      },
+      {
+        "lecture": "CH13",
+        "question": "[Tính toán] Vật chuyển động tròn bán kính r=2 m với tốc độ v=6 m/s. Gia tốc pháp tuyến a_n bằng bao nhiêu?",
+        "options": {
+          "A": "36 m/s² (quên chia r)",
+          "B": "12 m/s² (quên bình phương v)",
+          "C": "3 m/s² (chia thay vì bình phương rồi chia)",
+          "D": "18 m/s²"
+        },
+        "correct": "D",
+        "id": "mcq-CH13-19"
+      },
+      {
+        "lecture": "CH13",
+        "question": "[Tính toán] Khúc cua nghiêng bán kính r=50 m, góc nghiêng θ=10°, không ma sát. Tốc độ thiết kế v xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 9.30 m/s",
+          "B": "≈ 86.5 m/s (quên lấy căn bậc 2)",
+          "C": "≈ 4.65 m/s (quên nhân 2 trong công thức)",
+          "D": "≈ 22.1 m/s"
+        },
+        "correct": "A",
+        "id": "mcq-CH13-20"
+      },
+      {
+        "lecture": "CH13",
+        "question": "[Tính toán] Khối 2 kg từ nghỉ chịu lực F=(4t) N. Tốc độ của khối tại t=3 s bằng bao nhiêu?",
+        "options": {
+          "A": "6 m/s",
+          "B": "9 m/s",
+          "C": "12 m/s (nhầm tích phân bậc 1 thay vì cho ra t²)",
+          "D": "18 m/s (quên chia khối lượng)"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-21"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Trong hệ 2 khối trên 2 mặt nghiêng khác góc nối qua ròng rọc chung đỉnh, bước ĐẦU TIÊN cần làm trước khi viết phương trình ma sát là gì?",
+        "options": {
+          "A": "Viết ngay phương trình ma sát mà không cần biết chiều chuyển động",
+          "B": "Không cần xác định chiều, chỉ cần giải trị tuyệt đối",
+          "C": "Giả sử luôn khối nặng hơn về khối lượng sẽ trượt xuống, bất kể góc nghiêng",
+          "D": "So sánh thành phần trọng lực dọc mỗi mặt nghiêng (bỏ qua ma sát) để xác định đúng chiều chuyển động thực tế"
+        },
+        "correct": "D",
+        "id": "mcq-CH13-22"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Ma sát tĩnh trong bài toán khối trên đĩa quay đóng vai trò gì khác so với ma sát trong bài toán khối trượt trên mặt phẳng?",
+        "options": {
+          "A": "Ma sát tĩnh không tồn tại trong chuyển động tròn",
+          "B": "Ở đây ma sát tĩnh CUNG CẤP lực hướng tâm cần thiết để giữ vật chuyển động tròn, không phải lực cản chuyển động",
+          "C": "Vai trò hoàn toàn giống nhau trong cả 2 trường hợp",
+          "D": "Ma sát luôn cản trở chuyển động tròn của vật"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-23"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Khi vật vừa chịu lực không đổi vừa chịu ma sát động trên mặt ngang, thứ tự đúng để giải bài toán là gì?",
+        "options": {
+          "A": "Tính phản lực pháp tuyến N từ phương trình cân bằng theo phương vuông góc mặt trước, rồi mới tính lực ma sát μN",
+          "B": "Thứ tự không quan trọng, có thể tính đồng thời độc lập",
+          "C": "Tính lực ma sát trước bằng μmg mà không cần xét lực kéo",
+          "D": "Bỏ qua hoàn toàn phương trình theo phương vuông góc nếu vật không rời mặt đất"
+        },
+        "correct": "A",
+        "id": "mcq-CH13-24"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Phương trình chuyển động $\\sum F_n = ma_n$ áp dụng cho chất điểm chuyển động tròn có nghĩa là tổng lực theo phương pháp tuyến bằng gì?",
+        "options": {
+          "A": "$mr/v^2$ (đảo ngược công thức)",
+          "B": "$mv^2/r$ (khối lượng nhân bình phương tốc độ, chia bán kính quỹ đạo)",
+          "C": "$m\\alpha r$ (đây là gia tốc tiếp tuyến, không phải pháp tuyến)",
+          "D": "$m\\omega r$ (nhầm với công thức vận tốc dài)"
+        },
+        "correct": "B",
+        "id": "mcq-CH13-25"
+      },
+      {
+        "lecture": "CH13",
+        "question": "Với vật chuyển động thẳng có $F(x)$ (lực phụ thuộc vị trí, không phải thời gian), phương pháp $\\Sigma F=ma$ trực tiếp có nhược điểm gì so với nguyên lý công-năng lượng?",
+        "options": {
+          "A": "Không có nhược điểm gì, 2 phương pháp phức tạp như nhau",
+          "B": "Nguyên lý công-năng lượng luôn cho kết quả khác với $F=ma$",
+          "C": "$\\Sigma F=ma$ không thể dùng được cho $F(x)$",
+          "D": "Phải giải phương trình vi phân $a(x)=dv/dt$ liên hệ qua $v\\,dv=a\\,dx$ phức tạp hơn nhiều so với chỉ tích phân công $\\int F\\,dx$"
+        },
+        "correct": "D",
+        "id": "mcq-CH13-26"
+      }
+    ],
+    "CH14": [
+      {
+        "lecture": "CH14",
+        "question": "Nguyên lý công-động năng (work-energy principle) được phát biểu như thế nào?",
+        "options": {
+          "A": "T₁ = T₂ + ΣU (dấu ngược)",
+          "B": "ΣU = 0 luôn đúng trong mọi trường hợp",
+          "C": "T₁ + ΣU_{1→2} = T₂ (động năng ban đầu cộng tổng công của mọi lực bằng động năng cuối)",
+          "D": "T₁ · ΣU = T₂ (nhân thay vì cộng)"
+        },
+        "correct": "C",
+        "id": "mcq-CH14-01"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Công của trọng lực khi vật trượt XUỐNG một mặt nghiêng có dấu như thế nào?",
+        "options": {
+          "A": "Dương (cùng chiều với chuyển động của vật)",
+          "B": "Phụ thuộc vào khối lượng, có thể âm hoặc dương tuỳ trường hợp",
+          "C": "Luôn âm bất kể hướng chuyển động",
+          "D": "Luôn bằng 0 trên mặt nghiêng"
+        },
+        "correct": "A",
+        "id": "mcq-CH14-02"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Công của lực ma sát động (kinetic friction) trong MỌI trường hợp chuyển động có tính chất gì?",
+        "options": {
+          "A": "Luôn dương",
+          "B": "Luôn bằng 0 nếu vật chuyển động đều",
+          "C": "Luôn ÂM (luôn cản trở chuyển động, bất kể hướng trượt)",
+          "D": "Có thể dương hoặc âm tuỳ hướng trượt"
+        },
+        "correct": "C",
+        "id": "mcq-CH14-03"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Tại sao nguyên lý công-năng lượng thường TIỆN LỢI HƠN Σ F=ma khi bài toán chỉ hỏi tốc độ tại 1 vị trí cụ thể?",
+        "options": {
+          "A": "Vì Σ F=ma không áp dụng được khi có nhiều lực",
+          "B": "Vì không cần tính gia tốc trung gian hay giải phương trình vi phân, chỉ cần cộng đại số các công",
+          "C": "Vì công luôn dễ tính hơn lực trong mọi trường hợp",
+          "D": "Vì nguyên lý công-năng lượng cho biết cả hướng chuyển động"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-04"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Với lực biến đổi theo vị trí F(x), công được tính bằng cách nào?",
+        "options": {
+          "A": "Tích phân W=∫F(x)\\,dx theo đúng đoạn đường di chuyển",
+          "B": "Đạo hàm F(x) theo x",
+          "C": "Lấy trung bình cộng F đầu và F cuối rồi nhân quãng đường (chỉ đúng nếu F tuyến tính và đối xứng)",
+          "D": "Nhân trực tiếp giá trị F tại điểm cuối với quãng đường"
+        },
+        "correct": "A",
+        "id": "mcq-CH14-05"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Thế năng đàn hồi tích luỹ trong lò xo bị nén/giãn một đoạn x (so với chiều dài tự nhiên) được tính bằng công thức nào?",
+        "options": {
+          "A": "V_e = kx (thiếu hệ số ½ và số mũ)",
+          "B": "V_e = ½kx (thiếu bình phương)",
+          "C": "V_e = kx² (thiếu hệ số ½)",
+          "D": "V_e = ½kx²"
+        },
+        "correct": "D",
+        "id": "mcq-CH14-06"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Trong bài toán khối rơi lên đầu lò xo thẳng đứng, tổng độ giảm độ cao trọng lực dùng trong bảo toàn năng lượng phải tính đến đoạn nào?",
+        "options": {
+          "A": "Chỉ tính độ nén x của lò xo",
+          "B": "Toàn bộ quãng đường rơi CỘNG với độ nén lò xo x (vật tiếp tục rơi thêm khi lò xo đang nén)",
+          "C": "Chỉ tính đến đoạn rơi tự do trước khi chạm lò xo",
+          "D": "Không cần quan tâm đến độ cao, chỉ cần độ nén lò xo"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-07"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Công suất tức thời P của một lực F tác dụng lên vật có vận tốc v (F và v cùng phương) được tính bằng công thức nào?",
+        "options": {
+          "A": "P = F+v",
+          "B": "P = F·v",
+          "C": "P = F/v",
+          "D": "P = F·v² (thừa 1 bậc v)"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-08"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Với xe chạy LÊN dốc với tốc độ KHÔNG ĐỔI, công suất động cơ cần thiết dùng công thức P=Fv với F là lực nào?",
+        "options": {
+          "A": "Lực bằng khối lượng xe nhân vận tốc",
+          "B": "Không cần lực nào, công suất luôn bằng 0 khi tốc độ không đổi",
+          "C": "Lực kéo cân bằng đúng thành phần trọng lực dọc dốc (mg sinθ), vì tốc độ không đổi nên gia tốc bằng 0",
+          "D": "Lực bằng toàn bộ trọng lượng xe mg"
+        },
+        "correct": "C",
+        "id": "mcq-CH14-09"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Bảo toàn năng lượng cơ học (mechanical energy conservation, T+V=const) chỉ áp dụng được khi nào?",
+        "options": {
+          "A": "Chỉ áp dụng được nếu vật đứng yên ở cả 2 thời điểm",
+          "B": "Khi tất cả các lực tác dụng đều là lực bảo toàn (conservative), tức là không có ma sát hay lực cản sinh công âm",
+          "C": "Chỉ áp dụng được cho chuyển động thẳng, không áp dụng cho chuyển động cong",
+          "D": "Luôn áp dụng được trong mọi bài toán, kể cả có ma sát"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-10"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Nếu một đoạn đường có ma sát xen giữa 2 đoạn không ma sát, cách xử lý đúng khi dùng bảo toàn năng lượng là gì?",
+        "options": {
+          "A": "Trừ đi đúng phần năng lượng bị mất do ma sát (W_fric=μ_kNd) khỏi tổng năng lượng cơ học ban đầu",
+          "B": "Bỏ qua hoàn toàn đoạn có ma sát, coi như không có",
+          "C": "Nhân đôi năng lượng mất do ma sát",
+          "D": "Không thể dùng bảo toàn năng lượng nếu có bất kỳ đoạn ma sát nào"
+        },
+        "correct": "A",
+        "id": "mcq-CH14-11"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Trong dạng bài con lắc/cung tròn không ma sát, độ giảm độ cao h khi dây quét góc θ từ vị trí cao nhất (ngang) được tính như thế nào?",
+        "options": {
+          "A": "h = R(1-\\cosθ), với R là chiều dài dây/bán kính cung",
+          "B": "h = R\\sinθ (công thức tính bán kính quỹ đạo ngang, khác với độ giảm độ cao)",
+          "C": "h = R(1+\\cosθ)",
+          "D": "h = Rθ (nhầm với độ dài cung)"
+        },
+        "correct": "A",
+        "id": "mcq-CH14-12"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Ưu điểm lớn nhất của nguyên lý công-năng lượng khi giải bài toán \"tìm tốc độ tại 1 điểm\" của vật chịu lực biến đổi F(x) là gì?",
+        "options": {
+          "A": "Luôn cho kết quả chính xác hơn phương pháp F=ma",
+          "B": "Chỉ áp dụng được khi F(x) là hằng số",
+          "C": "Không cần biết hàm F(x) cụ thể",
+          "D": "Chỉ cần tích phân công 1 lần (∫Fdx), không cần giải phương trình vi phân phức tạp để tìm v(x)"
+        },
+        "correct": "D",
+        "id": "mcq-CH14-13"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Đơn vị SI của công (work) và năng lượng là gì?",
+        "options": {
+          "A": "Joule (J), tương đương N·m",
+          "B": "Watt (W) -- đây là đơn vị công suất, không phải công",
+          "C": "N/m",
+          "D": "kg·m/s"
+        },
+        "correct": "A",
+        "id": "mcq-CH14-14"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Nếu một lực luôn VUÔNG GÓC với phương chuyển động của vật (ví dụ lực căng dây trong chuyển động tròn đều), công của lực đó bằng bao nhiêu?",
+        "options": {
+          "A": "Không thể xác định nếu không biết vận tốc",
+          "B": "Phụ thuộc vào khối lượng vật",
+          "C": "Bằng 0 (vì W=F·d·cosφ, với φ=90° thì cosφ=0)",
+          "D": "Luôn bằng chính độ lớn của lực đó"
+        },
+        "correct": "C",
+        "id": "mcq-CH14-15"
+      },
+      {
+        "lecture": "CH14",
+        "question": "[Tính toán] Khối 20 kg trượt trên mặt ngang không ma sát, chịu lực không đổi F=50 N theo phương chuyển động trong quãng đường d=4 m, xuất phát từ nghỉ. Tốc độ cuối bằng bao nhiêu?",
+        "options": {
+          "A": "10 m/s (quên chia khối lượng đúng cách)",
+          "B": "≈ 4.47 m/s",
+          "C": "20 m/s",
+          "D": "2 m/s (quên nhân 2 trước khi lấy căn)"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-16"
+      },
+      {
+        "lecture": "CH14",
+        "question": "[Tính toán] Lò xo k=200 N/m bị nén x=0.3 m. Thế năng đàn hồi tích luỹ bằng bao nhiêu?",
+        "options": {
+          "A": "60 J (quên hệ số ½ và bình phương x đúng cách)",
+          "B": "18 J (quên hệ số ½)",
+          "C": "4.5 J",
+          "D": "9 J"
+        },
+        "correct": "D",
+        "id": "mcq-CH14-17"
+      },
+      {
+        "lecture": "CH14",
+        "question": "[Tính toán] Xe 1000 kg chạy với tốc độ không đổi v=20 m/s lên dốc góc 4°. Công suất cần thiết (bỏ qua ma sát) xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 1370 kW (sai đơn vị)",
+          "B": "≈ 196 kW (quên nhân sin của góc nhỏ)",
+          "C": "≈ 13.7 kW",
+          "D": "≈ 6.85 kW"
+        },
+        "correct": "C",
+        "id": "mcq-CH14-18"
+      },
+      {
+        "lecture": "CH14",
+        "question": "[Tính toán] Vật rơi tự do từ độ cao h=5 m (bỏ qua sức cản không khí). Tốc độ chạm đất xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 9.90 m/s",
+          "B": "≈ 49 m/s (quên lấy căn bậc 2)",
+          "C": "≈ 4.95 m/s (quên nhân 2)",
+          "D": "≈ 98.1 m/s"
+        },
+        "correct": "A",
+        "id": "mcq-CH14-19"
+      },
+      {
+        "lecture": "CH14",
+        "question": "[Tính toán] Khối 4 kg trượt d=2 m trên mặt ngang có μ_k=0.25, từ tốc độ ban đầu v₀=6 m/s (không có lực kéo nào khác). Tốc độ sau khi trượt hết d bằng bao nhiêu?",
+        "options": {
+          "A": "≈ 3.13 m/s",
+          "B": "6 m/s (bỏ qua hoàn toàn ma sát)",
+          "C": "≈ 4.90 m/s (tính nhầm công ma sát gấp đôi)",
+          "D": "≈ 5.34 m/s"
+        },
+        "correct": "D",
+        "id": "mcq-CH14-20"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Trong bài toán khối được ép vào lò xo trên mặt nghiêng CÓ ma sát rồi bắn lên, có bao nhiêu \"nguồn\"/\"nơi tiêu thụ\" năng lượng cần liệt kê đầy đủ trong phương trình bảo toàn tổng quát?",
+        "options": {
+          "A": "4 loại, thêm cả động năng ban đầu dù xuất phát từ nghỉ",
+          "B": "3 loại: thế năng đàn hồi (nguồn), thế năng trọng trường (tiêu thụ khi đi lên), năng lượng mất do ma sát (tiêu thụ)",
+          "C": "Chỉ 1 loại: thế năng đàn hồi",
+          "D": "Chỉ 2 loại: đàn hồi và trọng trường, bỏ qua ma sát"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-21"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Công suất TRUNG BÌNH (average power) khác với công suất TỨC THỜI (instantaneous power) như thế nào?",
+        "options": {
+          "A": "Hai khái niệm này hoàn toàn giống nhau trong mọi trường hợp",
+          "B": "Công suất tức thời chỉ áp dụng cho chuyển động quay",
+          "C": "Công suất trung bình = tổng năng lượng/tổng thời gian; công suất tức thời = F·v tại một thời điểm xác định",
+          "D": "Công suất trung bình luôn lớn hơn công suất tức thời"
+        },
+        "correct": "C",
+        "id": "mcq-CH14-22"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Khi vật KHÔNG xuất phát từ nghỉ (có động năng ban đầu T₁≠0), điểm khác biệt quan trọng nhất khi áp dụng nguyên lý công-năng lượng là gì?",
+        "options": {
+          "A": "Nguyên lý công-năng lượng không áp dụng được nếu vật đã có vận tốc ban đầu",
+          "B": "Không có gì khác biệt, luôn coi T₁=0",
+          "C": "Phải nhân đôi công của tất cả các lực",
+          "D": "Phải CỘNG THÊM T₁=½mv₁² vào vế trái, không được bỏ qua như trường hợp xuất phát từ nghỉ"
+        },
+        "correct": "D",
+        "id": "mcq-CH14-23"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Trong bài toán quãng đường phanh xe (dùng năng lượng), lực ma sát của phanh sinh công như thế nào để làm xe dừng lại?",
+        "options": {
+          "A": "Không sinh công vì xe cuối cùng đứng yên (vị trí không đổi bằng 0)",
+          "B": "Sinh công ÂM đúng bằng động năng ban đầu của xe (toàn bộ động năng chuyển hoá thành nhiệt do ma sát)",
+          "C": "Công của lực ma sát luôn bằng đúng động năng cuối cùng",
+          "D": "Sinh công dương làm xe tăng tốc trước khi dừng"
+        },
+        "correct": "B",
+        "id": "mcq-CH14-24"
+      },
+      {
+        "lecture": "CH14",
+        "question": "Thế năng trọng trường V_g=mgh của một vật ở độ cao h so với mốc thế năng đã chọn có tính chất gì khi đổi mốc?",
+        "options": {
+          "A": "V_g luôn phải lấy mốc là mặt đất tuyệt đối, không được chọn mốc khác",
+          "B": "Đổi mốc thế năng làm thay đổi cả kết quả tốc độ tính được",
+          "C": "V_g không bao giờ đổi bất kể chọn mốc nào",
+          "D": "Giá trị V_g thay đổi tuỳ mốc chọn, nhưng ĐỘ CHÊNH LỆCH thế năng ΔV_g giữa 2 vị trí luôn không đổi"
+        },
+        "correct": "D",
+        "id": "mcq-CH14-25"
+      }
+    ],
+    "CH17": [
+      {
+        "lecture": "CH17",
+        "question": "Dạng góc của định luật II Newton cho vật rắn quay quanh trục cố định được viết như thế nào?",
+        "options": {
+          "A": "ΣM = I/α (chia thay vì nhân)",
+          "B": "ΣM = Iα (tổng mô-men ngoại lực bằng mô-men quán tính nhân gia tốc góc)",
+          "C": "ΣF = Iα (dùng lực thay vì mô-men)",
+          "D": "ΣM = Iω (nhân với vận tốc góc thay vì gia tốc góc)"
+        },
+        "correct": "B",
+        "id": "mcq-CH17-01"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Mô-men quán tính I của một vật phụ thuộc vào yếu tố nào?",
+        "options": {
+          "A": "Không phụ thuộc vị trí trục quay được chọn",
+          "B": "Sự phân bố khối lượng của vật quanh trục quay đang xét (khối lượng càng xa trục càng đóng góp nhiều)",
+          "C": "Chỉ phụ thuộc tổng khối lượng, không phụ thuộc hình dạng",
+          "D": "Chỉ phụ thuộc hình dạng, không phụ thuộc khối lượng"
+        },
+        "correct": "B",
+        "id": "mcq-CH17-02"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Định lý trục song song (parallel-axis theorem) $I=I_G+md^2$ dùng để làm gì?",
+        "options": {
+          "A": "Tính mô-men quán tính quanh 1 trục bất kỳ song song với trục qua khối tâm, khi đã biết $I_G$",
+          "B": "Chỉ dùng khi vật có hình dạng đối xứng hoàn hảo",
+          "C": "Chỉ áp dụng cho chuyển động tịnh tiến, không áp dụng cho chuyển động quay",
+          "D": "Tính mô-men quán tính quanh chính trục đi qua khối tâm"
+        },
+        "correct": "A",
+        "id": "mcq-CH17-03"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Mô-men quán tính của một thanh mảnh đồng chất khối lượng m, dài L, quanh trục qua MỘT ĐẦU thanh (vuông góc thanh) bằng bao nhiêu?",
+        "options": {
+          "A": "$I=mL^2$",
+          "B": "$I=\\frac13mL^2$",
+          "C": "$I=\\frac{1}{12}mL^2$ (đây là công thức quanh khối tâm, không phải quanh đầu thanh)",
+          "D": "$I=\\frac12mL^2$"
+        },
+        "correct": "B",
+        "id": "mcq-CH17-04"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Với đĩa tròn đặc đồng chất khối lượng m, bán kính r, quay quanh trục qua tâm vuông góc mặt đĩa, mô-men quán tính bằng bao nhiêu?",
+        "options": {
+          "A": "$I=\\frac12mr^2$",
+          "B": "$I=\\frac14mr^2$",
+          "C": "$I=mr^2$ (đây là công thức của vành mỏng/hoop, không phải đĩa đặc)",
+          "D": "$I=\\frac25mr^2$ (đây là công thức của cầu đặc)"
+        },
+        "correct": "A",
+        "id": "mcq-CH17-05"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Trong bài toán ròng rọc CÓ khối lượng nối 2 vật treo (khác máy Atwood lý tưởng), vì sao lực căng dây ở 2 bên KHÁC NHAU?",
+        "options": {
+          "A": "Vì dây bị giãn không đều ở 2 bên",
+          "B": "Vì 2 vật luôn có khối lượng khác nhau",
+          "C": "Vì ròng rọc có mô-men quán tính, cần một mô-men lệch (do chênh lệch 2 lực căng) để tạo ra gia tốc góc cho nó",
+          "D": "Lực căng luôn bằng nhau bất kể ròng rọc có khối lượng hay không"
+        },
+        "correct": "C",
+        "id": "mcq-CH17-06"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Điều kiện \"lăn không trượt\" (rolling without slipping) được biểu diễn bằng phương trình động học nào?",
+        "options": {
+          "A": "$v_G$ và $\\omega$ hoàn toàn độc lập, không có liên hệ",
+          "B": "$v_G=\\omega r$ và $a_G=\\alpha r$ (vận tốc/gia tốc khối tâm liên hệ trực tiếp với vận tốc/gia tốc góc)",
+          "C": "$v_G=\\omega/r$",
+          "D": "$v_G=2\\omega r$"
+        },
+        "correct": "B",
+        "id": "mcq-CH17-07"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Trong bài toán vật lăn không trượt xuống mặt nghiêng, vai trò của lực ma sát TĨNH là gì?",
+        "options": {
+          "A": "Không tồn tại nếu vật đang lăn (chỉ có ma sát động)",
+          "B": "Luôn cản hoàn toàn chuyển động của vật giống ma sát động",
+          "C": "Luôn bằng μ_sN_max trong mọi trường hợp lăn",
+          "D": "Tạo ra mô-men cần thiết để vật vừa lăn (quay) vừa tịnh tiến đúng theo điều kiện lăn không trượt, độ lớn của nó do phương trình chuyển động quyết định (không phải μ_sN)"
+        },
+        "correct": "D",
+        "id": "mcq-CH17-08"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Giữa cầu đặc, đĩa đặc, và vành mỏng CÙNG khối lượng và bán kính, vật nào lăn xuống mặt nghiêng NHANH NHẤT (gia tốc lớn nhất)?",
+        "options": {
+          "A": "Vành mỏng (vì có mô-men quán tính lớn nhất)",
+          "B": "Cả 3 vật lăn xuống với cùng gia tốc bất kể hình dạng",
+          "C": "Cầu đặc (vì có tỉ số $I_G/(mr^2)=2/5$ nhỏ nhất trong 3 vật)",
+          "D": "Đĩa đặc"
+        },
+        "correct": "C",
+        "id": "mcq-CH17-09"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Kỹ thuật lấy mô-men quanh ĐIỂM TIẾP XÚC (thay vì quanh khối tâm G) khi giải bài toán vật lăn không trượt có ưu điểm gì?",
+        "options": {
+          "A": "Chỉ dùng được khi vật KHÔNG lăn không trượt",
+          "B": "Chỉ áp dụng được khi không có lực nào tác dụng lên vật",
+          "C": "Loại bỏ hoàn toàn ẩn số lực ma sát khỏi phương trình (vì ma sát đi qua đúng điểm đó, không sinh mô-men quanh nó)",
+          "D": "Làm phương trình phức tạp hơn, không có lợi ích thực tế"
+        },
+        "correct": "C",
+        "id": "mcq-CH17-10"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Khi hệ số ma sát thực tế nhỏ hơn hệ số ma sát TỐI THIỂU cần thiết để lăn không trượt, điều gì xảy ra?",
+        "options": {
+          "A": "Vật vừa lăn vừa TRƯỢT; phải dùng ma sát động f=μ_kN thay vì coi f là ẩn số tự do",
+          "B": "Vật sẽ bay lên khỏi mặt nghiêng",
+          "C": "Vật vẫn lăn không trượt bình thường, hệ số ma sát không ảnh hưởng",
+          "D": "Vật sẽ dừng lại ngay lập tức"
+        },
+        "correct": "A",
+        "id": "mcq-CH17-11"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Lực đặt QUA TÂM của một đĩa lăn không trượt (ví dụ lực kéo ngang tại tâm) có sinh mô-men quanh khối tâm G hay không?",
+        "options": {
+          "A": "Không thể xác định nếu không biết khối lượng đĩa",
+          "B": "Có, luôn sinh mô-men bằng F nhân bán kính",
+          "C": "Không (vì cánh tay đòn từ G đến đường tác dụng của lực bằng 0) -- chỉ có lực ma sát mới gây mô-men quanh G trong trường hợp này",
+          "D": "Có, nhưng chỉ khi vật đang đứng yên"
+        },
+        "correct": "C",
+        "id": "mcq-CH17-12"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Trong hệ 2 bánh răng ăn khớp với mô-men quán tính khác nhau, đại lượng nào LUÔN bằng nhau tại điểm ăn khớp (theo định luật III Newton)?",
+        "options": {
+          "A": "Lực tương tác pháp tuyến tại điểm tiếp xúc (một bánh đẩy bánh kia với lực bằng và ngược chiều)",
+          "B": "Gia tốc góc của 2 bánh răng",
+          "C": "Vận tốc góc của 2 bánh răng",
+          "D": "Mô-men quán tính của 2 bánh răng"
+        },
+        "correct": "A",
+        "id": "mcq-CH17-13"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Nếu lực tác dụng lên vật rắn đặt LỆCH TÂM (không đi qua khối tâm G), điều gì xảy ra khác so với lực đặt qua tâm?",
+        "options": {
+          "A": "Chỉ gây gia tốc góc, không gây gia tốc tịnh tiến",
+          "B": "Chỉ gây gia tốc tịnh tiến, giống hệt lực đặt qua tâm",
+          "C": "Lực đó sinh thêm mô-men quanh G, gây ra cả gia tốc tịnh tiến (từ ΣF=ma) VÀ gia tốc góc (từ ΣM_G=I_Gα)",
+          "D": "Không có gì khác biệt so với lực đặt qua tâm"
+        },
+        "correct": "C",
+        "id": "mcq-CH17-14"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Với vật quay quanh trục cố định KHÔNG đi qua khối tâm, tại sao KHÔNG thể dùng đơn giản $I=I_G$ trong phương trình $\\Sigma M=I\\alpha$?",
+        "options": {
+          "A": "Không có sự khác biệt nào giữa $I$ và $I_G$",
+          "B": "Phải dùng $I=0$ nếu trục quay không qua khối tâm",
+          "C": "$I_G$ luôn dùng được cho mọi trục quay bất kỳ",
+          "D": "Vì phải dùng $I$ quanh chính trục quay thực tế đó (tính bằng định lý trục song song $I=I_G+md^2$), không phải $I_G$ quanh khối tâm"
+        },
+        "correct": "D",
+        "id": "mcq-CH17-15"
+      },
+      {
+        "lecture": "CH17",
+        "question": "[Tính toán] Đĩa đặc khối lượng m=8 kg, bán kính r=0.2 m, chịu mô-men M=6 N·m quanh trục qua tâm. Gia tốc góc α bằng bao nhiêu?",
+        "options": {
+          "A": "≈ 18.75 rad/s² (quên hệ số ½ trong I đúng cách)",
+          "B": "≈ 75 rad/s² (bỏ qua hệ số ½)",
+          "C": "≈ 9.4 rad/s²",
+          "D": "≈ 37.5 rad/s²"
+        },
+        "correct": "D",
+        "id": "mcq-CH17-16"
+      },
+      {
+        "lecture": "CH17",
+        "question": "[Tính toán] Thanh mảnh m=6 kg, L=2 m, chốt tại 1 đầu. Mô-men quán tính I quanh trục quay tại đầu thanh bằng bao nhiêu?",
+        "options": {
+          "A": "24 kg·m² (bỏ qua hệ số 1/3)",
+          "B": "4 kg·m²",
+          "C": "2 kg·m² (dùng nhầm công thức 1/12 mL²)",
+          "D": "8 kg·m²"
+        },
+        "correct": "D",
+        "id": "mcq-CH17-17"
+      },
+      {
+        "lecture": "CH17",
+        "question": "[Tính toán] Cầu đặc lăn không trượt xuống mặt nghiêng 30°. Gia tốc của cầu xấp xỉ bao nhiêu (g=9.81)?",
+        "options": {
+          "A": "≈ 7.00 m/s²",
+          "B": "≈ 2.45 m/s²",
+          "C": "≈ 4.90 m/s² (đây là gia tốc trượt không ma sát, quên hệ số lăn)",
+          "D": "≈ 3.50 m/s²"
+        },
+        "correct": "D",
+        "id": "mcq-CH17-18"
+      },
+      {
+        "lecture": "CH17",
+        "question": "[Tính toán] Ròng rọc đĩa m_P=6 kg, r=0.2 m, nối vật treo m=4 kg qua dây. Gia tốc của vật treo xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 9.81 m/s² (bỏ qua hoàn toàn ròng rọc)",
+          "B": "≈ 4.00 m/s²",
+          "C": "≈ 5.60 m/s²",
+          "D": "≈ 2.80 m/s² (tính sai hệ số ròng rọc)"
+        },
+        "correct": "C",
+        "id": "mcq-CH17-19"
+      },
+      {
+        "lecture": "CH17",
+        "question": "[Tính toán] Hai bánh răng ăn khớp: bánh 1 ($I_1=0.5$ kg·m², $r_1=0.15$ m) chịu mô-men $M=9$ N·m, bánh 2 ($I_2=0.1$ kg·m², $r_2=0.1$ m). Gia tốc góc $\\alpha_1$ xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 12.9 rad/s²",
+          "B": "9 rad/s²",
+          "C": "18 rad/s² (bỏ qua ảnh hưởng của bánh 2)",
+          "D": "6 rad/s²"
+        },
+        "correct": "A",
+        "id": "mcq-CH17-20"
+      },
+      {
+        "lecture": "CH17",
+        "question": "So sánh phương pháp $\\Sigma F=ma$/$\\Sigma M=I\\alpha$ (Chapter 17) với nguyên lý công-năng lượng (Chapter 18) khi giải bài toán vật rắn, phương pháp nào phù hợp hơn để tìm GIA TỐC tại một thời điểm cụ thể?",
+        "options": {
+          "A": "Chapter 17 ($\\Sigma F=ma$, $\\Sigma M=I\\alpha$) -- vì năng lượng chỉ cho vận tốc/vận tốc góc, không trực tiếp cho gia tốc",
+          "B": "Chapter 18 (công-năng lượng) -- luôn cho cả gia tốc lẫn vận tốc",
+          "C": "Không có sự khác biệt giữa 2 phương pháp",
+          "D": "Cả 2 phương pháp đều không thể tìm được gia tốc"
+        },
+        "correct": "A",
+        "id": "mcq-CH17-21"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Trong hệ 2 khối nối qua ròng rọc CÓ khối lượng, nếu bỏ qua khối lượng ròng rọc ($m_P\\to0$), kết quả sẽ trở về dạng bài toán nào đã học trước đó?",
+        "options": {
+          "A": "Không có bài toán tương ứng nào trước đó",
+          "B": "Máy Atwood đơn giản (Chapter 13) với lực căng 2 bên bằng nhau",
+          "C": "Bài toán con lắc côn",
+          "D": "Bài toán chuyển động tròn thẳng đứng"
+        },
+        "correct": "B",
+        "id": "mcq-CH17-22"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Mô-men quán tính của một khối ĐIỂM (point mass) $m$ cách trục quay khoảng cách $d$ bằng bao nhiêu?",
+        "options": {
+          "A": "$I=0$ luôn luôn, bất kể khoảng cách",
+          "B": "$I=md$ (thiếu bình phương)",
+          "C": "$I=\\frac12md^2$",
+          "D": "$I=md^2$ (không có mô-men quán tính \"riêng\" quanh khối tâm của chính nó vì kích thước bằng 0)"
+        },
+        "correct": "D",
+        "id": "mcq-CH17-23"
+      },
+      {
+        "lecture": "CH17",
+        "question": "Vì sao đĩa lăn không trượt bị kéo bởi lực F qua tâm có \"hệ số hiệu dụng\" $\\frac32m$ (tức $a=\\frac{2F}{3m}$) thay vì chỉ $m$ như vật trượt thuần tuý?",
+        "options": {
+          "A": "Đây là một sai số tính toán, thực chất hệ số phải là $m$",
+          "B": "Vì một phần lực kéo phải \"dùng\" để tạo mô-men quay đĩa (qua ma sát) thay vì chỉ tạo gia tốc tịnh tiến thuần tuý",
+          "C": "Vì khối lượng thực tế của đĩa lớn hơn giá trị $m$ cho trong đề",
+          "D": "Vì trọng lực đóng góp thêm vào phương trình"
+        },
+        "correct": "B",
+        "id": "mcq-CH17-24"
+      }
+    ],
+    "CH18": [
+      {
+        "lecture": "CH18",
+        "question": "Động năng của vật rắn chuyển động phẳng tổng quát (vừa tịnh tiến vừa quay) được tính bằng công thức nào?",
+        "options": {
+          "A": "$T=mv_G^2+I_G\\omega^2$ (thiếu hệ số ½ ở cả 2 số hạng)",
+          "B": "$T=\\frac12I_G\\omega^2$ (chỉ tính phần quay, bỏ qua phần tịnh tiến)",
+          "C": "$T=\\frac12mv_G^2$ (chỉ tính phần tịnh tiến, bỏ qua phần quay)",
+          "D": "$T=\\frac12mv_G^2+\\frac12I_G\\omega^2$ (tổng động năng tịnh tiến của khối tâm và động năng quay quanh khối tâm)"
+        },
+        "correct": "D",
+        "id": "mcq-CH18-01"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Với vật LĂN KHÔNG TRƯỢT, tại sao lực ma sát tĩnh tại điểm tiếp xúc KHÔNG sinh công?",
+        "options": {
+          "A": "Vì điểm tiếp xúc tức thời có vận tốc bằng 0 (không trượt), mà công = lực × quãng đường di chuyển CỦA ĐIỂM ĐẶT LỰC",
+          "B": "Vì ma sát luôn vuông góc với trọng lực",
+          "C": "Ma sát vẫn sinh công, chỉ là công rất nhỏ có thể bỏ qua",
+          "D": "Vì độ lớn lực ma sát luôn bằng 0 khi lăn không trượt"
+        },
+        "correct": "A",
+        "id": "mcq-CH18-02"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Đây chính là lợi thế cốt lõi của phương pháp năng lượng (Chapter 18) so với $\\Sigma F=ma$ (Chapter 17) khi giải bài toán vật LĂN KHÔNG TRƯỢT là gì?",
+        "options": {
+          "A": "Phương pháp năng lượng luôn cho kết quả chính xác hơn",
+          "B": "Không cần biết độ lớn lực ma sát tĩnh (vì nó không sinh công), tránh phải giải hệ phương trình có ẩn số ma sát",
+          "C": "Không có lợi thế nào đặc biệt",
+          "D": "Phương pháp năng lượng áp dụng được cho cả trường hợp KHÔNG lăn không trượt mà không cần điều chỉnh gì"
+        },
+        "correct": "B",
+        "id": "mcq-CH18-03"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Hệ số \"khối lượng hiệu dụng\" $\\left(1+\\frac{I_G}{mr^2}\\right)$ xuất hiện trong MỌI bài toán năng lượng có vật lăn không trượt có ý nghĩa gì?",
+        "options": {
+          "A": "Chỉ áp dụng khi vật có ma sát động, không áp dụng cho lăn không trượt",
+          "B": "Chỉ là một hệ số toán học không có ý nghĩa vật lý",
+          "C": "Thể hiện việc một phần năng lượng luôn \"chia sẻ\" cho chuyển động quay, làm vật lăn luôn chậm hơn vật trượt thuần tuý cùng điều kiện",
+          "D": "Luôn bằng 1 bất kể hình dạng vật"
+        },
+        "correct": "C",
+        "id": "mcq-CH18-04"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Công của một mô-men KHÔNG ĐỔI $M$ khi vật quay qua góc $\\theta$ (radian) được tính bằng công thức nào?",
+        "options": {
+          "A": "$W=2M\\theta$",
+          "B": "$W=M\\theta$ (tương tự công của lực không đổi $W=Fd$, thay đại lượng dài bằng đại lượng góc)",
+          "C": "$W=M\\theta^2$",
+          "D": "$W=M/\\theta$"
+        },
+        "correct": "B",
+        "id": "mcq-CH18-05"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Với mô-men biến đổi theo góc quay $M(\\theta)$, công được tính bằng cách nào?",
+        "options": {
+          "A": "Nhân trực tiếp $M$ tại góc cuối với tổng góc quay",
+          "B": "Tích phân $W=\\int M(\\theta)\\,d\\theta$ theo đúng khoảng góc quay",
+          "C": "Lấy giá trị $M$ tại $\\theta=0$ nhân với góc quay",
+          "D": "Đạo hàm $M(\\theta)$ theo $\\theta$"
+        },
+        "correct": "B",
+        "id": "mcq-CH18-06"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Trong bài toán vật rắn đang quay với $\\omega_0\\neq0$ rồi tiếp tục quay thêm dưới tác dụng của trọng lực, điểm khác biệt quan trọng khi áp dụng nguyên lý công-năng lượng là gì?",
+        "options": {
+          "A": "Phải cộng động năng ban đầu $\\frac12I\\omega_0^2$ vào vế trái, không được coi như xuất phát từ nghỉ",
+          "B": "Không có khác biệt gì, luôn coi vận tốc góc ban đầu bằng 0",
+          "C": "Phải nhân đôi công của trọng lực",
+          "D": "Nguyên lý công-năng lượng không dùng được nếu vật đã có vận tốc góc ban đầu"
+        },
+        "correct": "A",
+        "id": "mcq-CH18-07"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Công suất trung bình của một mô-men xoắn (motor) quay bánh đà từ nghỉ đến $\\omega_f$ trong thời gian $t$ được tính đơn giản nhất bằng cách nào?",
+        "options": {
+          "A": "$P_{avg}=M\\omega_f$ (chỉ đúng cho công suất tức thời tại thời điểm cuối, không phải trung bình)",
+          "B": "$P_{avg}=\\frac12I\\omega_f$",
+          "C": "$P_{avg}=I\\omega_f$",
+          "D": "$P_{avg}=\\dfrac{\\Delta KE}{t}=\\dfrac{\\frac12I\\omega_f^2}{t}$ (không cần biết chi tiết $M(t)$)"
+        },
+        "correct": "D",
+        "id": "mcq-CH18-08"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Khi kiểm chứng chéo kết quả giữa phương pháp $\\Sigma F=ma$ (tính $a$) và phương pháp năng lượng (tính $v$ sau khi đi được quãng đường $h$ từ nghỉ), 2 kết quả phải thoả mãn hệ thức động học nào?",
+        "options": {
+          "A": "$v^2=ah^2$",
+          "B": "$v=ah$",
+          "C": "$v^2=2ah$ (công thức chuyển động thẳng biến đổi đều, vì $a$ không đổi trong các bài toán này)",
+          "D": "Không có hệ thức liên hệ nào, 2 phương pháp độc lập hoàn toàn"
+        },
+        "correct": "C",
+        "id": "mcq-CH18-09"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Với thanh có gắn thêm khối điểm ở đầu tự do, khi tính công của trọng lực trong bài toán quay từ ngang xuống đứng, cần lưu ý điều gì?",
+        "options": {
+          "A": "Chỉ cần tính công trọng lực cho thanh, bỏ qua khối điểm vì nó nhỏ",
+          "B": "Coi toàn bộ hệ như 1 khối điểm duy nhất đặt tại giữa thanh",
+          "C": "Nhân đôi công trọng lực của thanh để tính luôn cho khối điểm",
+          "D": "Tính RIÊNG công trọng lực cho thanh (khối tâm hạ $L/2$) và cho khối điểm (hạ đúng $L$), rồi cộng lại"
+        },
+        "correct": "D",
+        "id": "mcq-CH18-10"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Trong bài toán bánh xe lăn không trượt bị hãm bởi mô-men phanh không đổi tại trục, quãng đường xe đi được trước khi dừng liên hệ với góc quay như thế nào?",
+        "options": {
+          "A": "$d=\\theta/r$",
+          "B": "$d=r\\theta$ (vì lăn không trượt, quãng đường tịnh tiến liên hệ trực tiếp với góc quay qua bán kính)",
+          "C": "$d=r^2\\theta$",
+          "D": "Không có liên hệ trực tiếp nào giữa $d$ và $\\theta$"
+        },
+        "correct": "B",
+        "id": "mcq-CH18-11"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Nếu 2 vật có hình dạng khác nhau (ví dụ cầu đặc và vành mỏng) nhưng cùng khối lượng, bán kính, cùng lăn không trượt từ cùng độ cao, vật nào đạt tốc độ LỚN HƠN ở chân dốc?",
+        "options": {
+          "A": "Cầu đặc (vì có $I_G/(mr^2)$ nhỏ hơn, ít năng lượng \"mất\" vào chuyển động quay hơn)",
+          "B": "Vành mỏng, vì có mô-men quán tính lớn hơn nên tích luỹ nhiều động năng hơn",
+          "C": "Không thể xác định nếu không biết bán kính chính xác",
+          "D": "Cả 2 đạt cùng tốc độ vì cùng khối lượng và độ cao"
+        },
+        "correct": "A",
+        "id": "mcq-CH18-12"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Trong bảo toàn năng lượng cho vật lăn không trượt, tại sao KHÔNG cần biết giá trị cụ thể của bán kính $r$ trong một số bài toán (ví dụ so sánh gia tốc giữa cầu và đĩa)?",
+        "options": {
+          "A": "Vì lăn không trượt không phụ thuộc vào bán kính vật",
+          "B": "Vì bán kính luôn bằng 1 trong hệ đơn vị SI",
+          "C": "Vì tỉ số $I_G/(mr^2)$ (yếu tố quyết định) chỉ phụ thuộc HÌNH DẠNG vật, $r$ và $m$ tự triệt tiêu trong công thức",
+          "D": "Bán kính luôn cần thiết, không thể bỏ qua trong bất kỳ trường hợp nào"
+        },
+        "correct": "C",
+        "id": "mcq-CH18-13"
+      },
+      {
+        "lecture": "CH18",
+        "question": "[Tính toán] Vật rắn có $m=5$ kg, $v_G=4$ m/s, $I_G=0.5$ kg·m², $\\omega=8$ rad/s. Tổng động năng $T$ bằng bao nhiêu?",
+        "options": {
+          "A": "16 J (bỏ sót phần động năng tịnh tiến)",
+          "B": "40 J (bỏ sót phần động năng quay)",
+          "C": "112 J (quên hệ số ½ ở cả 2 số hạng)",
+          "D": "56 J"
+        },
+        "correct": "D",
+        "id": "mcq-CH18-14"
+      },
+      {
+        "lecture": "CH18",
+        "question": "[Tính toán] Đĩa đặc $m=4$ kg, $r=0.25$ m, lăn không trượt từ nghỉ xuống độ cao $h=1.5$ m (không ma sát cản trở lăn). Tốc độ ở cuối xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 6.26 m/s",
+          "B": "≈ 4.43 m/s",
+          "C": "≈ 5.42 m/s (bỏ qua động năng quay, dùng công thức trượt tự do)",
+          "D": "≈ 3.13 m/s"
+        },
+        "correct": "B",
+        "id": "mcq-CH18-15"
+      },
+      {
+        "lecture": "CH18",
+        "question": "[Tính toán] Bánh đà $I=10$ kg·m² quay từ nghỉ đến $\\omega=20$ rad/s trong $t=4$ s. Công suất trung bình động cơ bằng bao nhiêu?",
+        "options": {
+          "A": "1000 W",
+          "B": "2000 W (quên chia cho thời gian đúng cách)",
+          "C": "500 W",
+          "D": "50 W (quên hệ số ½ trong động năng)"
+        },
+        "correct": "C",
+        "id": "mcq-CH18-16"
+      },
+      {
+        "lecture": "CH18",
+        "question": "[Tính toán] Mô-men không đổi $M=8$ N·m làm vật quay $\\theta=3\\pi$ rad. Công của mô-men bằng bao nhiêu?",
+        "options": {
+          "A": "24 J (quên nhân với $\\pi$)",
+          "B": "≈ 150.8 J (nhân đôi nhầm)",
+          "C": "≈ 75.4 J",
+          "D": "8 J"
+        },
+        "correct": "C",
+        "id": "mcq-CH18-17"
+      },
+      {
+        "lecture": "CH18",
+        "question": "[Tính toán] Cầu đặc $m=3$ kg, $r=0.06$ m lăn không trượt với $v_0=5$ m/s lên mặt nghiêng $10°$. Quãng đường đi được trước khi dừng xấp xỉ bao nhiêu?",
+        "options": {
+          "A": "≈ 14.4 m",
+          "B": "≈ 7.2 m",
+          "C": "≈ 10.3 m (bỏ qua động năng quay, chỉ tính phần tịnh tiến)",
+          "D": "≈ 25.5 m"
+        },
+        "correct": "A",
+        "id": "mcq-CH18-18"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Nếu một vật rắn quay quanh trục cố định (không tịnh tiến) và chỉ chịu tác dụng của trọng lực, công thức năng lượng $T=\\frac12mv_G^2+\\frac12I_G\\omega^2$ có thể rút gọn thế nào?",
+        "options": {
+          "A": "$T=\\frac12I_G\\omega^2$ (dùng nhầm $I_G$ thay vì $I_O$)",
+          "B": "$T=\\frac12mv_G^2$ (bỏ hoàn toàn phần quay)",
+          "C": "Không thể rút gọn, phải luôn tính riêng 2 số hạng",
+          "D": "$T=\\frac12I_O\\omega^2$ với $I_O$ là mô-men quán tính quanh TRỤC QUAY CỐ ĐỊNH (dùng định lý trục song song từ $I_G$)"
+        },
+        "correct": "D",
+        "id": "mcq-CH18-19"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Trong bài toán vật lăn không trượt gắn với lò xo (spring) qua dây/cần nối tại tâm, tốc độ LỚN NHẤT của vật đạt được khi nào?",
+        "options": {
+          "A": "Tốc độ luôn không đổi trong suốt quá trình, không có giá trị lớn nhất riêng biệt",
+          "B": "Khi lò xo bị nén/giãn nhiều nhất",
+          "C": "Ngay tại thời điểm thả vật, trước khi lò xo bắt đầu tác dụng",
+          "D": "Khi lò xo trở về đúng chiều dài tự nhiên (toàn bộ thế năng đàn hồi đã chuyển hoá hết thành động năng)"
+        },
+        "correct": "D",
+        "id": "mcq-CH18-20"
+      },
+      {
+        "lecture": "CH18",
+        "question": "Việc \"kiểm chứng chéo\" giữa 2 phương pháp Chapter 17 ($\\Sigma F=ma$) và Chapter 18 (công-năng lượng) cho CÙNG một bài toán có giá trị gì trong học tập?",
+        "options": {
+          "A": "Xác nhận độ chính xác của lời giải (nếu 2 phương pháp độc lập cho cùng đáp số, khả năng cao lời giải đúng) và hiểu sâu hơn mối liên hệ giữa lực/mô-men và năng lượng",
+          "B": "Chỉ 1 trong 2 phương pháp là \"đúng\", phương pháp còn lại luôn là gần đúng",
+          "C": "Không có giá trị gì, vì 2 phương pháp luôn cho kết quả khác nhau",
+          "D": "Chỉ có giá trị nếu đề bài yêu cầu giải bằng cả 2 cách"
+        },
+        "correct": "A",
+        "id": "mcq-CH18-21"
       }
     ]
   }

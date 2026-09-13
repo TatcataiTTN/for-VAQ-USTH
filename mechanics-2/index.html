@@ -110,7 +110,7 @@
 <body>
 <header>
   <h1>📐 Mechanics II — Tài liệu tự học song ngữ (USTH)</h1>
-  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 94 bài tập có lời giải đầy đủ + 240 câu trắc nghiệm · Anh trước, Việt sau</p>
+  <p>Dr. Bùi Văn Tuấn · Lý thuyết + 148 bài tập có lời giải đầy đủ + 336 câu trắc nghiệm · Anh trước, Việt sau</p>
 </header>
 <div class="layout">
   <nav id="nav"><div id="loading">Đang tải danh mục…</div></nav>
@@ -133,11 +133,17 @@ const PROBLEM_ORDER = [
   "Lecture4_Original_Problems_Solutions",
   "Hibbeler_Ch22_Vibrations_Selected",
   "Lecture9_Original_Problems_Solutions",
+  "Hibbeler_Ch13_Force_Acceleration",
+  "Hibbeler_Ch14_Work_Energy_Particle",
   "Hibbeler_Ch15_Impulse_Momentum",
   "Lecture10_Original_Problems_Solutions",
-  "Hibbeler_Ch16_Planar_Kinematics"
+  "Hibbeler_Ch16_Planar_Kinematics",
+  "Hibbeler_Ch17_RigidBody_Force_Accel",
+  "Hibbeler_Ch18_RigidBody_WorkEnergy",
+  "Extra_Practice_Set_M2"
 ];
-const LECTURE_LABEL = {L1:"Lecture 1", L2:"Lecture 2", L4:"Lecture 4", L9:"Lecture 9", L10:"Lecture 10"};
+const LECTURE_LABEL = {L1:"Lecture 1", L2:"Lecture 2", L4:"Lecture 4", L9:"Lecture 9", L10:"Lecture 10",
+  CH13:"Ch.13 (mở rộng)", CH14:"Ch.14 (mở rộng)", CH17:"Ch.17 (mở rộng)", CH18:"Ch.18 (mở rộng)"};
 
 let manifest = null;
 let mcqData = null;
@@ -153,8 +159,8 @@ function buildNav(){
   const homeUl = document.createElement('ul');
   homeUl.innerHTML = `<li><button onclick="showHome()">🏠 Tổng quan môn học</button></li>
                        <li><button onclick="loadFormulas()">📐 30 Công thức Mechanics I &amp; II</button></li>
-                       <li><button onclick="loadChecklist()">✅ Checklist 94 bài tập</button></li>
-                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (240 câu)</button></li>`;
+                       <li><button onclick="loadChecklist()">✅ Checklist 148 bài tập</button></li>
+                       <li><button onclick="loadQuiz()">📝 Trắc nghiệm (336 câu)</button></li>`;
   nav.appendChild(homeUl);
 
   nav.appendChild(navHeader('Lý thuyết (Reading Notes)'));
@@ -291,11 +297,11 @@ function showHome(){
   <p>Bộ tài liệu tự học song ngữ Anh–Việt cho môn <strong>Mechanics II</strong>, tổng hợp từ 5 buổi giảng hiện có
   (Lecture 1, 2, 4, 9, 10) và bổ sung bài tập từ Hibbeler <em>Engineering Mechanics: Dynamics</em> (14th ed.) và
   Halliday/Resnick/Walker <em>Fundamentals of Physics</em> cho các chương chưa có slide gốc.</p>
-  <p><span class="badge">192 trang slide đã đọc 100%</span><span class="badge">94 bài tập có lời giải</span>
-  <span class="badge">240 câu trắc nghiệm</span><span class="badge">30 công thức Mechanics I &amp; II</span><span class="badge">Đối chiếu đáp số gốc</span></p>
+  <p><span class="badge">192 trang slide đã đọc 100%</span><span class="badge">148 bài tập có lời giải</span>
+  <span class="badge">336 câu trắc nghiệm</span><span class="badge">30 công thức Mechanics I &amp; II</span><span class="badge">Đối chiếu đáp số gốc</span></p>
   <div class="home-grid">
     <div class="home-card" data-nav="formulas"><h3>📐 30 Công thức Mechanics I & II</h3><p>Formula sheet chuyên sâu, có ví dụ + link thẳng tới bài giải.</p></div>
-    <div class="home-card" data-nav="quiz"><h3>📝 240 câu trắc nghiệm</h3><p>40 câu/lecture, tự chấm ngay, lọc theo lecture.</p></div>
+    <div class="home-card" data-nav="quiz"><h3>📝 336 câu trắc nghiệm</h3><p>~24-48 câu/chuyên đề, tự chấm ngay, lọc theo lecture/chương.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture1"><h3>Lecture 1 — Equilibrium & Elasticity</h3><p>Cân bằng tĩnh, mômen lực, ứng suất-biến dạng.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture2"><h3>Lecture 2 — Gravitation</h3><p>Định luật Newton, Kepler, năng lượng quỹ đạo vệ tinh.</p></div>
     <div class="home-card" data-nav="md:notes_Lecture4"><h3>Lecture 4 — Oscillations</h3><p>Dao động điều hòa, con lắc, dao động tắt dần & cưỡng bức.</p></div>
@@ -377,7 +383,7 @@ async function loadQuiz(filterLecture){
   <div class="quiz-toolbar">
     <label>Lọc theo lecture: </label>
     <select id="quiz-filter">
-      <option value="">Tất cả (240 câu)</option>
+      <option value="">Tất cả (336 câu)</option>
       ${Object.keys(LECTURE_LABEL).map(l=>`<option value="${l}" ${l===filterLecture?'selected':''}>${LECTURE_LABEL[l]}</option>`).join('')}
     </select>
     <button class="primary" onclick="resetQuiz()">Làm lại từ đầu</button>
