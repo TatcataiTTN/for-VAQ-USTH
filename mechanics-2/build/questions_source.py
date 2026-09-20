@@ -1057,3 +1057,6 @@ QUESTIONS = [
    "correct": "Xác nhận độ chính xác của lời giải (nếu 2 phương pháp độc lập cho cùng đáp số, khả năng cao lời giải đúng) và hiểu sâu hơn mối liên hệ giữa lực/mô-men và năng lượng",
    "wrong": ["Không có giá trị gì, vì 2 phương pháp luôn cho kết quả khác nhau", "Chỉ có giá trị nếu đề bài yêu cầu giải bằng cả 2 cách", "Chỉ 1 trong 2 phương pháp là \"đúng\", phương pháp còn lại luôn là gần đúng"]},
 ]
+
+from questions_b import QUESTIONS_B
+QUESTIONS += QUESTIONS_B

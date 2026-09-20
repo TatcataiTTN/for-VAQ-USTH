@@ -162,10 +162,16 @@ def convert_body(tex, slug=""):
         out.append(f"<p>{tex_inline_to_html(tail)}</p>")
     return "\n".join(out)
 
+_MATH_SPLIT = re.compile(r"(\\\[.*?\\\]|\$[^$]*\$)", re.S)
+def fix_tildes(h):
+    """LaTeX '~' (non-breaking space) outside math -> real nbsp; math regions untouched."""
+    parts = _MATH_SPLIT.split(h)
+    return "".join(p if i % 2 else p.replace("~", "\u00a0") for i, p in enumerate(parts))
+
 def process_tex_file(path, slug):
     tex = open(path, encoding="utf-8").read()
     title = get_title(tex)
-    body_html = convert_body(tex, slug)
+    body_html = fix_tildes(convert_body(tex, slug))
     return {"title": title, "html": body_html}
 
 SUB_RE = r"(_\{[^{}]*\}|_[A-Za-z0-9]+)?"
