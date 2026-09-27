@@ -1,9 +1,24 @@
 # -*- coding: utf-8 -*-
-import json, os, html
+import json, os, html, importlib
+
 from module_content import MODULES
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../Aircraft-Systems
 QUIZ_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quiz")
+
+def load_extra_slides(mod):
+    """Doc data/slides_<NN>.py (neu co) va gan vao mod[lang]['parts'][i]['slides']."""
+    modname = f"slides_{mod['num']}"
+    try:
+        m = importlib.import_module(modname)
+    except ModuleNotFoundError:
+        return
+    for lang in ("vi", "en"):
+        part_slides = m.SLIDES.get(lang, [])
+        parts = mod[lang]["parts"]
+        for i, part in enumerate(parts):
+            if i < len(part_slides):
+                part["slides"] = part_slides[i]
 
 L = {
   "vi": {
@@ -165,6 +180,7 @@ def build_deck(lang, mod):
         f"MODULE {mod['num']} · {d['tag']}",
         f"<h2>{d['title']}</h2><p>{d['intro']}</p><p class='pill'>{d['src']}</p>"
     ))
+    total_content = 0
     for i, part in enumerate(d["parts"], start=1):
         bullets = "".join(f"<li>{b}</li>" for b in part["bullets"])
         slides.append(slide_html(
@@ -172,6 +188,12 @@ def build_deck(lang, mod):
             f"<div class='part-num'>{i:02d}</div><h2>{part['title']}</h2><ul class='part-list'>{bullets}</ul>",
             part_divider=True,
         ))
+        for cs in part.get("slides", []):
+            slides.append(slide_html(
+                f"{t['part_label']} {i}/5 · {mod['num']}",
+                f"<h2>{cs['title']}</h2>{cs['body']}",
+            ))
+            total_content += 1
     legend_items = "".join(f"<li><b>{k}</b><span>{v}</span></li>" for k, v in d["legend"])
     slides.append(slide_html(
         f"{t['part_label']} 2-3 · {t['formula_box']}",
@@ -192,6 +214,9 @@ def build_deck(lang, mod):
         "⚠️ " + t["warn"],
         f"<h2>{d['warn_title']}</h2><p>{d['warn']}</p>"
     ))
+    target = mod.get("target_slides")
+    if target is not None and len(slides) != target:
+        print(f"[SLIDE-COUNT] {mod['slug']} [{lang}]: {len(slides)} slides (target {target})")
     slides_html = "\n".join(slides)
     return f"""<div class="mdeck"><div class="mdeck-viewport">
 {slides_html}
@@ -287,6 +312,8 @@ def build_mapping_page(lang, prefix):
     return html_out
 
 def main():
+    for mod in MODULES:
+        load_extra_slides(mod)
     for lang in ("vi", "en"):
         home_path = os.path.join(ROOT, lang, "index.html")
         with open(home_path, "w", encoding="utf-8") as f:

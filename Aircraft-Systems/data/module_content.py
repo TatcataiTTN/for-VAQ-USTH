@@ -8,6 +8,7 @@ MODULES = [
   {
     "slug": "01-number-systems",
     "num": "01",
+    "target_slides": 60,  # Tooley + Floyd deu co chuong rieng -> trung nhau -> 60 slide
     "vi": {
       "title": "Hệ đếm trong hệ thống số hàng không",
       "tag": "Number Systems",
@@ -117,6 +118,7 @@ MODULES = [
   {
     "slug": "02-logic-boolean",
     "num": "02",
+    "target_slides": 60,  # Tooley + Floyd deu co chuong rieng -> trung nhau -> 60 slide
     "vi": {
       "title": "Cổng logic & Đại số Boolean",
       "tag": "Logic Circuits",
@@ -215,6 +217,7 @@ MODULES = [
   {
     "slug": "03-ic-multiplexing",
     "num": "03",
+    "target_slides": 60,  # Tooley + Floyd deu co chuong rieng -> trung nhau -> 60 slide
     "vi": {
       "title": "Mạch tích hợp (IC) & Kỹ thuật dồn kênh",
       "tag": "Integrated Circuits & MSI",
@@ -315,6 +318,7 @@ MODULES = [
   {
     "slug": "04-computer-cpu",
     "num": "04",
+    "target_slides": 40,  # Floyd KHONG co chuong CPU rieng -> khop yeu -> 40 slide
     "vi": {
       "title": "Cấu trúc máy tính & Vi xử lý (CPU)",
       "tag": "Computers & Microprocessors",

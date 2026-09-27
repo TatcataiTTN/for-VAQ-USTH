@@ -18,6 +18,10 @@ Ngày khởi tạo: 2026-09-28.
 - [x] 01 Number Systems, 02 Logic & Boolean, 03 IC & Multiplexing, 04 Computers & CPU.
 - [x] Mỗi module: mini slide-deck 5 phần, công thức đóng khung, hộp lịch sử, case study A320/AIMS thật
   (trích từ nội dung sách/slide đã đọc, không bịa), cảnh báo bẫy, quiz.
+- [x] Mở rộng slide-deck theo yêu cầu người dùng: module có nội dung TRÙNG giữa Tooley và Floyd (01, 02,
+  03) → 60 slide/trang; module 04 (khớp yếu, chỉ dựa chính vào Tooley) → 40 slide/trang. Nội dung slide
+  mở rộng nằm ở `data/slides_0N.py` (song ngữ, mỗi phần 10 slide cho module 60-slide hoặc 6 slide cho
+  module 40-slide), `render_site.py` tự động ghép vào và tự in cảnh báo nếu số slide sinh ra lệch target.
 
 ## Epic 4 — Câu hỏi trắc nghiệm 🟢
 - [x] Trích 62 câu MCQ gốc từ Tooley (ch.2, ch.5, ch.6, ch.7, ch.8, ch.9) — loại bỏ các câu phụ thuộc hình
