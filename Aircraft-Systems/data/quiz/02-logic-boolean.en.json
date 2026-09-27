@@ -1,0 +1,182 @@
+{
+ "original": [
+  {
+   "q": "The normal supply voltage for a TTL logic device is:",
+   "opts": [
+    "2.5V ±5%",
+    "5V ±5%",
+    "12V ±5%"
+   ],
+   "correct": 1,
+   "explain": "Họ logic TTL chuẩn hoạt động ở nguồn 5V ±5%.",
+   "src": "Tooley Ch.5 Q2"
+  },
+  {
+   "q": "A two-input NAND gate will produce a logic 0 output when:",
+   "opts": [
+    "cả hai đầu vào ở mức logic 0",
+    "cả hai đầu vào ở mức logic 1",
+    "một trong hai đầu vào ở mức logic 0"
+   ],
+   "correct": 1,
+   "explain": "NAND = NOT(AND); AND=1 chỉ khi cả 2 vào đều 1, nên NAND=0 khi cả 2 vào đều 1.",
+   "src": "Tooley Ch.5 Q3"
+  },
+  {
+   "q": "In a binary counter, the clock input of each bistable stage is fed from:",
+   "opts": [
+    "đầu ra Q của tầng trước",
+    "đường CLEAR",
+    "cùng một đường clock chung"
+   ],
+   "correct": 0,
+   "explain": "Đây là cấu trúc bộ đếm không đồng bộ (ripple counter): mỗi tầng lấy clock từ Q của tầng trước.",
+   "src": "Tooley Ch.5 Q4"
+  },
+  {
+   "q": "The most appropriate logic family for use in a portable item of test equipment is:",
+   "opts": [
+    "low-power Schottky TTL",
+    "TTL",
+    "CMOS"
+   ],
+   "correct": 2,
+   "explain": "CMOS tiêu thụ dòng tĩnh cực thấp, phù hợp thiết bị chạy pin/cầm tay.",
+   "src": "Tooley Ch.5 Q6"
+  },
+  {
+   "q": "The noise margin for standard TTL devices is:",
+   "opts": [
+    "2 V",
+    "800 mV",
+    "400 mV"
+   ],
+   "correct": 2,
+   "explain": "TTL chuẩn có noise margin danh định khoảng 400mV.",
+   "src": "Tooley Ch.5 Q8"
+  },
+  {
+   "q": "A CMOS logic gate is operated from a 12V supply. A voltage of 3V measured at the input is considered:",
+   "opts": [
+    "logic 0",
+    "logic 1",
+    "không xác định (indeterminate)"
+   ],
+   "correct": 0,
+   "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.",
+   "src": "Tooley Ch.5 Q9"
+  }
+ ],
+ "generated": [
+  {
+   "q": "A two-input NOR gate produces logic 1 when:",
+   "opts": [
+    "một trong hai đầu vào ở mức logic 1",
+    "cả hai đầu vào ở mức logic 1",
+    "cả hai đầu vào ở mức logic 0"
+   ],
+   "correct": 2,
+   "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.",
+   "src": ""
+  },
+  {
+   "q": "A two-input XOR gate with both inputs at 1 gives an output of:",
+   "opts": [
+    "0",
+    "không xác định",
+    "1"
+   ],
+   "correct": 0,
+   "explain": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.",
+   "src": ""
+  },
+  {
+   "q": "In Boolean algebra, the expression A + A'B simplifies to:",
+   "opts": [
+    "A · B",
+    "A + B",
+    "A"
+   ],
+   "correct": 1,
+   "explain": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.",
+   "src": ""
+  },
+  {
+   "q": "By De Morgan's theorem, (A·B)' equals:",
+   "opts": [
+    "A' + B'",
+    "A + B",
+    "A'·B'"
+   ],
+   "correct": 0,
+   "explain": "(AB)' = A' + B' theo định lý De Morgan.",
+   "src": ""
+  },
+  {
+   "q": "A truth table with 3 input variables has how many rows (combinations)?",
+   "opts": [
+    "6",
+    "9",
+    "8"
+   ],
+   "correct": 2,
+   "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.",
+   "src": ""
+  },
+  {
+   "q": "A JK flip-flop with J=K=1 at the clock edge will:",
+   "opts": [
+    "giữ nguyên trạng thái",
+    "luôn reset về 0",
+    "đảo trạng thái (toggle)"
+   ],
+   "correct": 2,
+   "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.",
+   "src": ""
+  },
+  {
+   "q": "Compared with TTL, CMOS logic generally has a noise margin that is:",
+   "opts": [
+    "lớn hơn",
+    "bằng nhau",
+    "nhỏ hơn"
+   ],
+   "correct": 0,
+   "explain": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.",
+   "src": ""
+  },
+  {
+   "q": "A tri-state buffer has how many possible output states?",
+   "opts": [
+    "3 (0, 1, và trở kháng cao Z)",
+    "2 (0 và 1)",
+    "4"
+   ],
+   "correct": 0,
+   "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.",
+   "src": ""
+  },
+  {
+   "q": "Which gate is called a 'universal gate' because any logic function can be built from it alone?",
+   "opts": [
+    "AND",
+    "NAND",
+    "XOR"
+   ],
+   "correct": 1,
+   "explain": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.",
+   "src": ""
+  },
+  {
+   "q": "In positive logic convention, logic 1 corresponds to:",
+   "opts": [
+    "luôn đúng bằng 5V",
+    "mức điện áp cao hơn",
+    "mức điện áp thấp hơn"
+   ],
+   "correct": 1,
+   "explain": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.",
+   "src": ""
+  }
+ ]
+}

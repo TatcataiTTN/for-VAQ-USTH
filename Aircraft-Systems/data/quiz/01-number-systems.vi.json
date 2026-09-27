@@ -1,0 +1,259 @@
+{
+ "original": [
+  {
+   "q": "Số nhị phân 10101 tương ứng với số thập phân nào?",
+   "opts": [
+    "21",
+    "19",
+    "35"
+   ],
+   "correct": 0,
+   "explain": "10101₂ = 1·16+0·8+1·4+0·2+1·1 = 21.",
+   "src": "Tooley Ch.2 Q1"
+  },
+  {
+   "q": "Số thập phân 29 tương ứng với số nhị phân nào?",
+   "opts": [
+    "11101",
+    "11011",
+    "10111"
+   ],
+   "correct": 0,
+   "explain": "29 = 16+8+4+1 → 11101₂.",
+   "src": "Tooley Ch.2 Q2"
+  },
+  {
+   "q": "Bù hai (two's complement) của số nhị phân 10110 là:",
+   "opts": [
+    "10001",
+    "01001",
+    "01010"
+   ],
+   "correct": 2,
+   "explain": "Đảo bit: 01001, cộng 1 → 01010.",
+   "src": "Tooley Ch.2 Q3"
+  },
+  {
+   "q": "Số BCD 10010001 tương ứng với số thập phân nào?",
+   "opts": [
+    "145",
+    "91",
+    "19"
+   ],
+   "correct": 1,
+   "explain": "Tách nhóm 4 bit: 1001=9, 0001=1 → 91.",
+   "src": "Tooley Ch.2 Q4"
+  },
+  {
+   "q": "Số thập phân 37 tương ứng với mã BCD nào?",
+   "opts": [
+    "00101111",
+    "00100101",
+    "00110111"
+   ],
+   "correct": 2,
+   "explain": "3→0011, 7→0111 → 00110111.",
+   "src": "Tooley Ch.2 Q5"
+  },
+  {
+   "q": "Dãy số nào sau đây KHÔNG THỂ là một số bát phân (octal)?",
+   "opts": [
+    "139",
+    "11011",
+    "771"
+   ],
+   "correct": 0,
+   "explain": "Số bát phân chỉ dùng chữ số 0-7; 139 chứa chữ số 9 nên không hợp lệ.",
+   "src": "Tooley Ch.2 Q6"
+  },
+  {
+   "q": "Số bát phân 73 tương ứng với số thập phân nào?",
+   "opts": [
+    "111",
+    "59",
+    "47"
+   ],
+   "correct": 1,
+   "explain": "73₈ = 7·8+3 = 59.",
+   "src": "Tooley Ch.2 Q7"
+  },
+  {
+   "q": "Số nhị phân 100010001 tương ứng với số bát phân nào?",
+   "opts": [
+    "421",
+    "111",
+    "273"
+   ],
+   "correct": 0,
+   "explain": "Nhóm 3 bit từ phải: 100 010 001 → 4 2 1 → 421₈.",
+   "src": "Tooley Ch.2 Q8"
+  },
+  {
+   "q": "Số thập lục phân (hex) 111 tương ứng với số bát phân nào?",
+   "opts": [
+    "421",
+    "273",
+    "73"
+   ],
+   "correct": 0,
+   "explain": "111₁₆ = 273₁₀; 273₁₀ = 421₈ (273 = 4·64+2·8+1).",
+   "src": "Tooley Ch.2 Q9"
+  },
+  {
+   "q": "Số hex C9 tương ứng với số thập phân nào?",
+   "opts": [
+    "21",
+    "201",
+    "129"
+   ],
+   "correct": 1,
+   "explain": "C9₁₆ = 12·16+9 = 201.",
+   "src": "Tooley Ch.2 Q10"
+  },
+  {
+   "q": "Số nhị phân 10110011 tương ứng với số hex nào?",
+   "opts": [
+    "93",
+    "113",
+    "B3"
+   ],
+   "correct": 2,
+   "explain": "Nhóm 4 bit: 1011=B, 0011=3 → B3.",
+   "src": "Tooley Ch.2 Q11"
+  },
+  {
+   "q": "Số hex AD tương ứng với số nhị phân nào?",
+   "opts": [
+    "10001101",
+    "11011010",
+    "10101101"
+   ],
+   "correct": 2,
+   "explain": "A=1010, D=1101 → 10101101.",
+   "src": "Tooley Ch.2 Q12"
+  },
+  {
+   "q": "Số bát phân 706₈ tương ứng với:",
+   "opts": [
+    "111001110₂",
+    "1C6₁₆",
+    "484₁₀"
+   ],
+   "correct": 1,
+   "explain": "706₈ = 7·64+0·8+6 = 454₁₀ = 1C6₁₆ (1·256+12·16+6=454). Nhị phân đúng của 454 là 111000110, không phải phương án (b).",
+   "src": "Tooley Ch.2 Q13"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Số thập phân 45 tương ứng với số nhị phân nào?",
+   "opts": [
+    "101110",
+    "100101",
+    "101101"
+   ],
+   "correct": 2,
+   "explain": "45 = 32+8+4+1 → 101101₂.",
+   "src": ""
+  },
+  {
+   "q": "Số nhị phân 11001 tương ứng với số thập phân nào?",
+   "opts": [
+    "25",
+    "19",
+    "27"
+   ],
+   "correct": 0,
+   "explain": "16+8+0+0+1 = 25.",
+   "src": ""
+  },
+  {
+   "q": "Số hex 2F tương ứng với số thập phân nào?",
+   "opts": [
+    "45",
+    "47",
+    "49"
+   ],
+   "correct": 1,
+   "explain": "2·16+15 = 47.",
+   "src": ""
+  },
+  {
+   "q": "Số thập phân 200 tương ứng với số hex nào?",
+   "opts": [
+    "C8",
+    "B4",
+    "D2"
+   ],
+   "correct": 0,
+   "explain": "200 = 12·16+8 → C8.",
+   "src": ""
+  },
+  {
+   "q": "Số bát phân 47 tương ứng với số thập phân nào?",
+   "opts": [
+    "37",
+    "41",
+    "39"
+   ],
+   "correct": 2,
+   "explain": "4·8+7 = 39.",
+   "src": ""
+  },
+  {
+   "q": "Số thập phân 68 tương ứng với mã BCD nào?",
+   "opts": [
+    "01100100",
+    "01111000",
+    "01101000"
+   ],
+   "correct": 2,
+   "explain": "6→0110, 8→1000 → 01101000.",
+   "src": ""
+  },
+  {
+   "q": "Số nhị phân 11110000 tương ứng với số hex nào?",
+   "opts": [
+    "F0",
+    "FF",
+    "0F"
+   ],
+   "correct": 0,
+   "explain": "1111=F, 0000=0 → F0.",
+   "src": ""
+  },
+  {
+   "q": "Bù hai của số nhị phân 01101 (5 bit) là:",
+   "opts": [
+    "10011",
+    "10010",
+    "01100"
+   ],
+   "correct": 0,
+   "explain": "Đảo bit: 10010, cộng 1 → 10011.",
+   "src": ""
+  },
+  {
+   "q": "Số nhị phân 11100101 tương ứng với số bát phân nào?",
+   "opts": [
+    "344",
+    "345",
+    "354"
+   ],
+   "correct": 1,
+   "explain": "Nhóm 3 bit từ phải (đệm trái): 011 100 101 → 3 4 5 → 345₈.",
+   "src": ""
+  },
+  {
+   "q": "Mã ASCII (hex) của ký tự 'A' là:",
+   "opts": [
+    "40",
+    "41",
+    "42"
+   ],
+   "correct": 1,
+   "explain": "'A' = 65 thập phân = 41 hex (chuẩn ASCII).",
+   "src": ""
+  }
+ ]
+}

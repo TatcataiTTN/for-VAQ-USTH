@@ -1,0 +1,292 @@
+{
+ "original": [
+  {
+   "q": "A standard logic gate manufactured in 1981 is likely to be supplied in a:",
+   "opts": [
+    "gói DIL",
+    "gói QFP",
+    "gói PGA"
+   ],
+   "correct": 0,
+   "explain": "Thập niên 1980, DIL (Dual-In-Line) là kiểu đóng gói phổ biến nhất cho IC logic chuẩn.",
+   "src": "Tooley Ch.8 Q1"
+  },
+  {
+   "q": "A standard logic gate is a typical example of:",
+   "opts": [
+    "thiết bị VLSI",
+    "thiết bị LSI",
+    "thiết bị SSI"
+   ],
+   "correct": 2,
+   "explain": "Cổng logic đơn lẻ chỉ chứa vài transistor → thuộc quy mô tích hợp nhỏ SSI.",
+   "src": "Tooley Ch.8 Q2"
+  },
+  {
+   "q": "Which one of the following scales of integration is the largest:",
+   "opts": [
+    "MSI",
+    "SSI",
+    "LSI"
+   ],
+   "correct": 2,
+   "explain": "Thứ tự tăng dần mật độ: SSI < MSI < LSI < VLSI; trong 3 lựa chọn, LSI lớn nhất.",
+   "src": "Tooley Ch.8 Q3"
+  },
+  {
+   "q": "A microprocessor is an example of:",
+   "opts": [
+    "công nghệ VLSI",
+    "công nghệ MSI",
+    "công nghệ SSI"
+   ],
+   "correct": 0,
+   "explain": "Vi xử lý chứa hàng triệu transistor → thuộc quy mô tích hợp rất lớn VLSI.",
+   "src": "Tooley Ch.8 Q4"
+  },
+  {
+   "q": "Compared with DIP packaging, PLCC offers:",
+   "opts": [
+    "kích thước lớn hơn",
+    "độ tin cậy cao hơn",
+    "nhiều chân hơn trên cùng kích thước"
+   ],
+   "correct": 2,
+   "explain": "PLCC (Plastic Leaded Chip Carrier) cho phép bố trí nhiều chân hơn trong diện tích nhỏ gọn hơn so với DIP.",
+   "src": "Tooley Ch.8 Q5"
+  },
+  {
+   "q": "Which IC packaging technology requires the chip to always be soldered in place:",
+   "opts": [
+    "PGA",
+    "SOIC",
+    "DIL"
+   ],
+   "correct": 1,
+   "explain": "SOIC là gói dán bề mặt (surface-mount), luôn được hàn trực tiếp lên board, không dùng đế cắm như DIL/PGA.",
+   "src": "Tooley Ch.8 Q6"
+  },
+  {
+   "q": "Which of the following IC packaging technologies was the earliest to be used:",
+   "opts": [
+    "ceramic QFP",
+    "ceramic DIP",
+    "PLCC"
+   ],
+   "correct": 1,
+   "explain": "Ceramic DIP là kiểu đóng gói IC thương mại sớm nhất trong ba lựa chọn.",
+   "src": "Tooley Ch.8 Q7"
+  },
+  {
+   "q": "The connections from the pads on an integrated circuit die are:",
+   "opts": [
+    "hàn siêu âm/nhiệt (welded) vào dây nối trong",
+    "bấm (crimp) vào dây nối trong",
+    "hàn thiếc vào dây nối trong"
+   ],
+   "correct": 0,
+   "explain": "Kỹ thuật wire-bonding gắn dây vàng/nhôm từ pad tới khung dẫn bằng hàn siêu âm/nhiệt (welded), không phải hàn thiếc thông thường.",
+   "src": "Tooley Ch.8 Q8"
+  },
+  {
+   "q": "An IC bus transceiver containing 64 logic gates and buffers is an example of:",
+   "opts": [
+    "MSI",
+    "SSI",
+    "LSI"
+   ],
+   "correct": 0,
+   "explain": "Vài chục tới ~100 cổng logic tương ứng quy mô tích hợp vừa MSI.",
+   "src": "Tooley Ch.8 Q9"
+  },
+  {
+   "q": "Production tests are performed on an integrated circuit wafer:",
+   "opts": [
+    "trước khi cắt thành từng chip riêng",
+    "sau khi cắt thành từng chip riêng",
+    "chỉ khi chip đã được gắn lên board"
+   ],
+   "correct": 0,
+   "explain": "Wafer được kiểm tra (wafer probing) ngay khi còn nguyên tấm, trước công đoạn cắt (dicing).",
+   "src": "Tooley Ch.8 Q13"
+  },
+  {
+   "q": "Each individual integrated circuit produced from a wafer is known as a:",
+   "opts": [
+    "gate",
+    "die",
+    "blank"
+   ],
+   "correct": 1,
+   "explain": "Thuật ngữ chuẩn cho một chip cắt rời từ wafer là 'die'.",
+   "src": "Tooley Ch.8 Q15"
+  },
+  {
+   "q": "A standard TTL logic gate has a fan-out of:",
+   "opts": [
+    "5",
+    "10",
+    "20"
+   ],
+   "correct": 1,
+   "explain": "TTL chuẩn có fan-out danh định là 10 (điều khiển được tối đa 10 đầu vào TTL cùng họ).",
+   "src": "Tooley Ch.9 Q1"
+  },
+  {
+   "q": "The equivalent number of standard input loads imposed by the input of a logic circuit is known as:",
+   "opts": [
+    "fan-out",
+    "fan-in",
+    "fan-load"
+   ],
+   "correct": 1,
+   "explain": "Đây chính là định nghĩa của fan-in.",
+   "src": "Tooley Ch.9 Q2"
+  },
+  {
+   "q": "Another name for a multiplexer is:",
+   "opts": [
+    "bộ thu phát bus (bus transceiver)",
+    "thanh ghi dịch (shift register)",
+    "bộ chọn dữ liệu (data selector)"
+   ],
+   "correct": 2,
+   "explain": "Multiplexer thường được gọi là 'data selector' vì chức năng chọn 1 trong nhiều nguồn dữ liệu đưa ra 1 ngõ ra.",
+   "src": "Tooley Ch.9 Q4"
+  },
+  {
+   "q": "A four-to-one multiplexer has:",
+   "opts": [
+    "một đường chọn",
+    "bốn đường chọn",
+    "hai đường chọn"
+   ],
+   "correct": 2,
+   "explain": "Cần n đường chọn để phân biệt 2ⁿ kênh vào; với 4 kênh, n=2.",
+   "src": "Tooley Ch.9 Q5"
+  },
+  {
+   "q": "Additional enable inputs and outputs are provided in some encoders in order to permit:",
+   "opts": [
+    "ghép tầng (cascading)",
+    "đảo tín hiệu (inverting)",
+    "phát hiện lỗi (error detection)"
+   ],
+   "correct": 0,
+   "explain": "Chân enable cho phép nối tầng (cascade) nhiều IC encoder để mở rộng số đầu vào mã hoá.",
+   "src": "Tooley Ch.9 Q8"
+  }
+ ],
+ "generated": [
+  {
+   "q": "An 8-to-1 multiplexer needs how many select lines?",
+   "opts": [
+    "4",
+    "2",
+    "3"
+   ],
+   "correct": 2,
+   "explain": "2ⁿ=8 → n=3 đường chọn.",
+   "src": ""
+  },
+  {
+   "q": "A 3-to-8 line decoder has how many output lines?",
+   "opts": [
+    "8",
+    "6",
+    "3"
+   ],
+   "correct": 0,
+   "explain": "Decoder n-sang-2ⁿ với n=3 → 2³=8 ngõ ra.",
+   "src": ""
+  },
+  {
+   "q": "A chip containing roughly 500 logic gates is typically classified as:",
+   "opts": [
+    "SSI",
+    "LSI",
+    "MSI"
+   ],
+   "correct": 1,
+   "explain": "Khoảng vài trăm tới ~10.000 cổng tương ứng LSI (theo phân loại dùng trong chương này).",
+   "src": ""
+  },
+  {
+   "q": "A demultiplexer performs the opposite function of a:",
+   "opts": [
+    "bộ dồn kênh (multiplexer)",
+    "bộ so sánh (comparator)",
+    "bộ mã hoá (encoder)"
+   ],
+   "correct": 0,
+   "explain": "Demux đưa 1 nguồn vào ra nhiều đường, ngược với chức năng dồn nhiều vào 1 của mux.",
+   "src": ""
+  },
+  {
+   "q": "An encoder with 8 inputs will typically produce how many binary output bits?",
+   "opts": [
+    "8",
+    "4",
+    "3"
+   ],
+   "correct": 2,
+   "explain": "log2(8)=3 bit đủ để mã hoá 8 trạng thái đầu vào.",
+   "src": ""
+  },
+  {
+   "q": "In IC packaging, 'DIL' stands for:",
+   "opts": [
+    "Digital Integrated Logic",
+    "Direct Input Line",
+    "Dual-In-Line"
+   ],
+   "correct": 2,
+   "explain": "DIL = Dual-In-Line, kiểu đóng gói hai hàng chân song song.",
+   "src": ""
+  },
+  {
+   "q": "A parity generator/checker circuit is commonly built mainly from:",
+   "opts": [
+    "các cổng XOR nối tầng",
+    "các cổng NAND",
+    "các cổng AND"
+   ],
+   "correct": 0,
+   "explain": "Chuỗi cổng XOR cho phép tính tổng modulo-2 của các bit, đúng nguyên lý tính parity.",
+   "src": ""
+  },
+  {
+   "q": "Which IC package type is designed for surface-mount (not through-hole) assembly?",
+   "opts": [
+    "SOIC",
+    "DIP",
+    "PGA"
+   ],
+   "correct": 0,
+   "explain": "SOIC (Small Outline IC) là gói dán bề mặt điển hình.",
+   "src": ""
+  },
+  {
+   "q": "If a gate's fan-out is 10, it can safely drive up to how many standard inputs of the same family?",
+   "opts": [
+    "5",
+    "10",
+    "20"
+   ],
+   "correct": 1,
+   "explain": "Định nghĩa fan-out chính là số tải đầu vào chuẩn tối đa mà ngõ ra có thể điều khiển.",
+   "src": ""
+  },
+  {
+   "q": "A comparator circuit is used to:",
+   "opts": [
+    "lưu trữ dữ liệu nhị phân",
+    "xác định số nào lớn hơn/bằng/nhỏ hơn giữa hai số nhị phân",
+    "chuyển đổi nhị phân sang thập phân"
+   ],
+   "correct": 1,
+   "explain": "Comparator so sánh hai số nhị phân và đưa ra tín hiệu A>B, A=B hoặc A<B.",
+   "src": ""
+  }
+ ]
+}

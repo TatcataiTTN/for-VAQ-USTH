@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script>(function(){try{
+  var t = localStorage.getItem('site-theme');
+  if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
+}catch(e){}})();</script>
+<link rel="stylesheet" href="../../../_shared/common.css"/>
+<link rel="stylesheet" href="../../../_shared/deck.css"/>
+<title>Hệ thống điện tử số & máy tính hàng không — Cổng logic & Đại số Boolean</title>
+<meta name="description" content="Toàn bộ hệ thống số trên máy bay — từ cảnh báo cửa càng đáp tới điều khiển APU — đều được xây từ các cổng logic cơ bản kết hợp theo quy tắc đại số Boolean. Module này đi từ cổng logic đơn lẻ tới mạch tổ hợp thực tế và các họ linh kiện logic dùng trên máy bay."/>
+</head>
+<body>
+<header class="site"><div class="bar">
+  <a class="brand" href="../../../index.html">Hệ thống điện tử số & máy tính hàng không<small>Tự học AE2.021 · USTH</small></a>
+  <div class="toolbar">
+    <a href="../../en/modules/02-logic-boolean/index.html">English</a>
+    <details><summary>🎨</summary><div class="menu">
+      <button data-set-theme="light">☀️ Light</button>
+      <button data-set-theme="dark">🌙 Dark</button>
+    </div></details>
+  </div>
+</div></header>
+<div class="wrap">
+<p><a href="index.html">← Trang chủ</a></p>
+<div class="hero"><span class="pill">MODULE 02</span>
+<h1>Cổng logic & Đại số Boolean</h1><p>Tooley ch.5 (tr.70-94) · Floyd ch.3-4 (tr.125-260), ch.7 (bistable, tr.387+)</p></div>
+<div class="mdeck"><div class="mdeck-viewport">
+<div class="mdeck-slide"><div class="kicker">MODULE 02 · Logic Circuits</div><h2>Cổng logic & Đại số Boolean</h2><p>Toàn bộ hệ thống số trên máy bay — từ cảnh báo cửa càng đáp tới điều khiển APU — đều được xây từ các cổng logic cơ bản kết hợp theo quy tắc đại số Boolean. Module này đi từ cổng logic đơn lẻ tới mạch tổ hợp thực tế và các họ linh kiện logic dùng trên máy bay.</p><p class='pill'>Tooley ch.5 (tr.70-94) · Floyd ch.3-4 (tr.125-260), ch.7 (bistable, tr.387+)</p></div>
+<div class="mdeck-slide part-divider"><div class="kicker">PHẦN 1/5</div><div class='part-num'>01</div><h2>Từ cổng logic cơ bản tới bài toán thực tế</h2><ul class='part-list'><li>AND, OR, NOT, NAND, NOR, XOR — bảng chân trị và ký hiệu</li><li>Ví dụ mở đầu: cảnh báo cửa càng đáp chưa khoá (landing gear door warning)</li></ul></div>
+<div class="mdeck-slide part-divider"><div class="kicker">PHẦN 2/5</div><div class='part-num'>02</div><h2>Đại số Boolean</h2><ul class='part-list'><li>Các định luật cơ bản (giao hoán, kết hợp, phân phối, hấp thụ)</li><li>Định lý De Morgan</li><li>Rút gọn biểu thức logic từng bước</li></ul></div>
+<div class="mdeck-slide part-divider"><div class="kicker">PHẦN 3/5</div><div class='part-num'>03</div><h2>Mạch logic tổ hợp (combinational logic)</h2><ul class='part-list'><li>Từ bảng chân trị tới sơ đồ mạch</li><li>Ví dụ: mạch điều khiển khởi động APU</li></ul></div>
+<div class="mdeck-slide part-divider"><div class="kicker">PHẦN 4/5</div><div class='part-num'>04</div><h2>Logic ba trạng thái, mạch đơn ổn & song ổn</h2><ul class='part-list'><li>Tri-state logic dùng để chia sẻ bus</li><li>Monostable (one-shot) và bistable (flip-flop)</li></ul></div>
+<div class="mdeck-slide part-divider"><div class="kicker">PHẦN 5/5</div><div class='part-num'>05</div><h2>Các họ linh kiện logic (logic families)</h2><ul class='part-list'><li>TTL và các biến thể (LS, S…)</li><li>CMOS: ưu điểm điện năng thấp, biên độ nhiễu cao</li><li>Chọn họ logic phù hợp theo ứng dụng</li></ul></div>
+<div class="mdeck-slide"><div class="kicker">PHẦN 2-3 · Công thức</div><h2>Định lý De Morgan</h2><div class='pd-formula'><div class='pd-formula-label'>Định lý De Morgan</div><div class='pd-formula-math'>(A·B)′ = A′ + B′        (A+B)′ = A′·B′</div></div><ul class='pd-legend'><li><b>A, B</b><span>biến logic đầu vào (0 hoặc 1)</span></li><li><b>′</b><span>phép đảo (NOT)</span></li><li><b>·  +</b><span>phép AND, phép OR</span></li></ul></div>
+<div class="mdeck-slide"><div class="kicker">📜 history</div><h2>📜 Bối cảnh lý thuyết & lịch sử</h2><p>Đại số Boolean do George Boole công bố năm 1854 trong <i>An Investigation of the Laws of Thought</i>, ban đầu chỉ là công cụ hình thức hoá logic mệnh đề, không liên quan tới điện tử. Phải tới luận văn thạc sĩ năm 1937 của Claude Shannon tại MIT, đại số Boole mới được chứng minh là công cụ toán học chính xác để phân tích và thiết kế mạch chuyển mạch rơle — đặt nền móng trực tiếp cho toàn bộ thiết kế mạch số hiện đại, bao gồm hệ thống logic trên máy bay.</p></div>
+<div class="mdeck-slide"><div class="kicker">🔎 case</div><h2>🔎 Case study thực tế: mạch cảnh báo cửa càng đáp</h2><p>Một mạch cảnh báo đơn giản trên máy bay cần bật đèn cảnh báo khi CÓ ÍT NHẤT MỘT cửa càng đáp chưa đóng khoá hoàn toàn VÀ máy bay đang ở chế độ bay bằng (không phải trên mặt đất). Đây là ví dụ kinh điển trong sách Tooley: đầu ra cảnh báo = OR của các công tắc cửa càng, AND với tín hiệu 'in-flight' — minh hoạ trực tiếp cách kết hợp AND/OR để mã hoá một điều kiện an toàn thực.</p></div>
+<div class="mdeck-slide"><div class="kicker">⚠️ warn</div><h2>⚠️ Bẫy hay gặp</h2><p>Nhầm giữa NAND/NOR với 'phủ định của AND/OR theo nghĩa thông thường' khi lập bảng chân trị bằng trực giác thay vì tính từng bước — cách an toàn nhất luôn là viết bảng chân trị đầy đủ AND/OR trước, rồi đảo bit kết quả, không suy luận tắt.</p></div>
+</div>
+<div class="mdeck-bar">
+  <button class="mdeck-prev">◀ Trước</button><button class="mdeck-next">Sau ▶</button>
+  <span class="mdeck-count"></span><div class="mdeck-dots"></div>
+  <button class="mdeck-fs">⛶ Toàn màn hình</button>
+</div></div>
+<div class="callout history"><h4>📜 Bối cảnh lý thuyết & lịch sử</h4><p>Đại số Boolean do George Boole công bố năm 1854 trong <i>An Investigation of the Laws of Thought</i>, ban đầu chỉ là công cụ hình thức hoá logic mệnh đề, không liên quan tới điện tử. Phải tới luận văn thạc sĩ năm 1937 của Claude Shannon tại MIT, đại số Boole mới được chứng minh là công cụ toán học chính xác để phân tích và thiết kế mạch chuyển mạch rơle — đặt nền móng trực tiếp cho toàn bộ thiết kế mạch số hiện đại, bao gồm hệ thống logic trên máy bay.</p></div>
+<div class="callout case"><h4>🔎 Case study thực tế: mạch cảnh báo cửa càng đáp</h4><p>Một mạch cảnh báo đơn giản trên máy bay cần bật đèn cảnh báo khi CÓ ÍT NHẤT MỘT cửa càng đáp chưa đóng khoá hoàn toàn VÀ máy bay đang ở chế độ bay bằng (không phải trên mặt đất). Đây là ví dụ kinh điển trong sách Tooley: đầu ra cảnh báo = OR của các công tắc cửa càng, AND với tín hiệu 'in-flight' — minh hoạ trực tiếp cách kết hợp AND/OR để mã hoá một điều kiện an toàn thực.</p></div>
+<div class="callout warn"><h4>⚠️ Bẫy hay gặp</h4><p>Nhầm giữa NAND/NOR với 'phủ định của AND/OR theo nghĩa thông thường' khi lập bảng chân trị bằng trực giác thay vì tính từng bước — cách an toàn nhất luôn là viết bảng chân trị đầy đủ AND/OR trước, rồi đảo bit kết quả, không suy luận tắt.</p></div>
+<div class="callout good"><h4>📓 Notebook Python đi kèm</h4><p>Notebook đi kèm: sinh bảng chân trị tự động cho biểu thức Boolean bất kỳ, rút gọn bằng sympy và đối chiếu kết quả với rút gọn tay theo các định luật đã học.</p>
+<p><a class="nb-link" href="../../../data/notebooks/02_logic-boolean.ipynb" download>📓 Xem/tải notebook (.ipynb) →</a></p></div>
+<h2>✅ Quiz tự kiểm tra</h2>
+<h3>Bộ câu hỏi gốc từ giáo trình (đã kiểm tra lại đáp án)</h3>
+<div class="quiz"><script type="application/json">{"items": [{"q": "Điện áp nguồn danh định của một linh kiện logic TTL là:", "opts": ["2.5V ±5%", "5V ±5%", "12V ±5%"], "correct": 1, "explain": "Họ logic TTL chuẩn hoạt động ở nguồn 5V ±5%.", "src": "Tooley Ch.5 Q2"}, {"q": "Cổng NAND 2 đầu vào cho ra mức logic 0 khi nào?", "opts": ["cả hai đầu vào ở mức logic 0", "cả hai đầu vào ở mức logic 1", "một trong hai đầu vào ở mức logic 0"], "correct": 1, "explain": "NAND = NOT(AND); AND=1 chỉ khi cả 2 vào đều 1, nên NAND=0 khi cả 2 vào đều 1.", "src": "Tooley Ch.5 Q3"}, {"q": "Trong một bộ đếm nhị phân, xung clock của mỗi tầng bistable (trừ tầng đầu) thường được lấy từ:", "opts": ["đầu ra Q của tầng trước", "đường CLEAR", "cùng một đường clock chung"], "correct": 0, "explain": "Đây là cấu trúc bộ đếm không đồng bộ (ripple counter): mỗi tầng lấy clock từ Q của tầng trước.", "src": "Tooley Ch.5 Q4"}, {"q": "Họ logic phù hợp nhất cho thiết bị kiểm tra cầm tay (portable test equipment) là:", "opts": ["low-power Schottky TTL", "TTL", "CMOS"], "correct": 2, "explain": "CMOS tiêu thụ dòng tĩnh cực thấp, phù hợp thiết bị chạy pin/cầm tay.", "src": "Tooley Ch.5 Q6"}, {"q": "Biên độ nhiễu (noise margin) của linh kiện TTL chuẩn là khoảng:", "opts": ["2 V", "800 mV", "400 mV"], "correct": 2, "explain": "TTL chuẩn có noise margin danh định khoảng 400mV.", "src": "Tooley Ch.5 Q8"}, {"q": "Một cổng logic CMOS được cấp nguồn 12V. Nếu đo được 3V tại đầu vào, mức này được coi là:", "opts": ["logic 0", "logic 1", "không xác định (indeterminate)"], "correct": 0, "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.", "src": "Tooley Ch.5 Q9"}]}</script></div>
+<h3>Bộ câu hỏi luyện tập bổ sung (biên soạn thêm theo cùng dạng, đã tự kiểm tra đáp án)</h3>
+<div class="quiz"><script type="application/json">{"items": [{"q": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?", "opts": ["một trong hai đầu vào ở mức logic 1", "cả hai đầu vào ở mức logic 1", "cả hai đầu vào ở mức logic 0"], "correct": 2, "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.", "src": ""}, {"q": "Cổng XOR 2 đầu vào với cả hai đầu vào bằng 1 sẽ cho đầu ra:", "opts": ["0", "không xác định", "1"], "correct": 0, "explain": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.", "src": ""}, {"q": "Theo đại số Boolean, biểu thức A + A'B rút gọn thành:", "opts": ["A · B", "A + B", "A"], "correct": 1, "explain": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.", "src": ""}, {"q": "Theo định lý De Morgan, (A·B)' bằng:", "opts": ["A' + B'", "A + B", "A'·B'"], "correct": 0, "explain": "(AB)' = A' + B' theo định lý De Morgan.", "src": ""}, {"q": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?", "opts": ["6", "9", "8"], "correct": 2, "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.", "src": ""}, {"q": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:", "opts": ["giữ nguyên trạng thái", "luôn reset về 0", "đảo trạng thái (toggle)"], "correct": 2, "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.", "src": ""}, {"q": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):", "opts": ["lớn hơn", "bằng nhau", "nhỏ hơn"], "correct": 0, "explain": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.", "src": ""}, {"q": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?", "opts": ["3 (0, 1, và trở kháng cao Z)", "2 (0 và 1)", "4"], "correct": 0, "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.", "src": ""}, {"q": "Cổng logic nào được gọi là 'cổng vạn năng' vì có thể dùng để tạo mọi hàm logic khác?", "opts": ["AND", "NAND", "XOR"], "correct": 1, "explain": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.", "src": ""}, {"q": "Trong quy ước logic dương (positive logic), mức logic 1 tương ứng với:", "opts": ["luôn đúng bằng 5V", "mức điện áp cao hơn", "mức điện áp thấp hơn"], "correct": 1, "explain": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.", "src": ""}]}</script></div>
+</div><footer class="site"><div class="wrap">
+  <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án — xem ghi chú nguồn trong từng câu.</p>
+  <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+<script src="../../../_shared/theme.js"></script>
+<script src="../../../_shared/deck.js"></script><script src="../../../_shared/quiz.js"></script></body></html>

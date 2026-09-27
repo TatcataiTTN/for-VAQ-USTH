@@ -1,0 +1,292 @@
+{
+ "original": [
+  {
+   "q": "Một cổng logic chuẩn sản xuất năm 1981 nhiều khả năng được đóng gói dạng:",
+   "opts": [
+    "gói DIL",
+    "gói QFP",
+    "gói PGA"
+   ],
+   "correct": 0,
+   "explain": "Thập niên 1980, DIL (Dual-In-Line) là kiểu đóng gói phổ biến nhất cho IC logic chuẩn.",
+   "src": "Tooley Ch.8 Q1"
+  },
+  {
+   "q": "Một cổng logic chuẩn (standard logic gate) là ví dụ điển hình của loại tích hợp nào?",
+   "opts": [
+    "thiết bị VLSI",
+    "thiết bị LSI",
+    "thiết bị SSI"
+   ],
+   "correct": 2,
+   "explain": "Cổng logic đơn lẻ chỉ chứa vài transistor → thuộc quy mô tích hợp nhỏ SSI.",
+   "src": "Tooley Ch.8 Q2"
+  },
+  {
+   "q": "Trong các mức độ tích hợp sau, mức nào có mật độ transistor LỚN HƠN?",
+   "opts": [
+    "MSI",
+    "SSI",
+    "LSI"
+   ],
+   "correct": 2,
+   "explain": "Thứ tự tăng dần mật độ: SSI < MSI < LSI < VLSI; trong 3 lựa chọn, LSI lớn nhất.",
+   "src": "Tooley Ch.8 Q3"
+  },
+  {
+   "q": "Vi xử lý (microprocessor) là ví dụ của công nghệ:",
+   "opts": [
+    "công nghệ VLSI",
+    "công nghệ MSI",
+    "công nghệ SSI"
+   ],
+   "correct": 0,
+   "explain": "Vi xử lý chứa hàng triệu transistor → thuộc quy mô tích hợp rất lớn VLSI.",
+   "src": "Tooley Ch.8 Q4"
+  },
+  {
+   "q": "So với đóng gói DIP, đóng gói PLCC mang lại ưu điểm nào?",
+   "opts": [
+    "kích thước lớn hơn",
+    "độ tin cậy cao hơn",
+    "nhiều chân hơn trên cùng kích thước"
+   ],
+   "correct": 2,
+   "explain": "PLCC (Plastic Leaded Chip Carrier) cho phép bố trí nhiều chân hơn trong diện tích nhỏ gọn hơn so với DIP.",
+   "src": "Tooley Ch.8 Q5"
+  },
+  {
+   "q": "Kiểu đóng gói IC nào bắt buộc phải hàn cố định (không thể cắm vào đế/socket)?",
+   "opts": [
+    "PGA",
+    "SOIC",
+    "DIL"
+   ],
+   "correct": 1,
+   "explain": "SOIC là gói dán bề mặt (surface-mount), luôn được hàn trực tiếp lên board, không dùng đế cắm như DIL/PGA.",
+   "src": "Tooley Ch.8 Q6"
+  },
+  {
+   "q": "Công nghệ đóng gói IC nào ra đời SỚM NHẤT trong các lựa chọn sau?",
+   "opts": [
+    "ceramic QFP",
+    "ceramic DIP",
+    "PLCC"
+   ],
+   "correct": 1,
+   "explain": "Ceramic DIP là kiểu đóng gói IC thương mại sớm nhất trong ba lựa chọn.",
+   "src": "Tooley Ch.8 Q7"
+  },
+  {
+   "q": "Các mối nối từ pad trên die IC tới chân ra thường được:",
+   "opts": [
+    "hàn siêu âm/nhiệt (welded) vào dây nối trong",
+    "bấm (crimp) vào dây nối trong",
+    "hàn thiếc vào dây nối trong"
+   ],
+   "correct": 0,
+   "explain": "Kỹ thuật wire-bonding gắn dây vàng/nhôm từ pad tới khung dẫn bằng hàn siêu âm/nhiệt (welded), không phải hàn thiếc thông thường.",
+   "src": "Tooley Ch.8 Q8"
+  },
+  {
+   "q": "Một IC bus transceiver chứa 64 cổng logic và bộ đệm. Chip này là ví dụ của quy mô tích hợp:",
+   "opts": [
+    "MSI",
+    "SSI",
+    "LSI"
+   ],
+   "correct": 0,
+   "explain": "Vài chục tới ~100 cổng logic tương ứng quy mô tích hợp vừa MSI.",
+   "src": "Tooley Ch.8 Q9"
+  },
+  {
+   "q": "Việc kiểm tra sản xuất (production test) trên một wafer IC được thực hiện:",
+   "opts": [
+    "trước khi cắt thành từng chip riêng",
+    "sau khi cắt thành từng chip riêng",
+    "chỉ khi chip đã được gắn lên board"
+   ],
+   "correct": 0,
+   "explain": "Wafer được kiểm tra (wafer probing) ngay khi còn nguyên tấm, trước công đoạn cắt (dicing).",
+   "src": "Tooley Ch.8 Q13"
+  },
+  {
+   "q": "Mỗi mạch tích hợp riêng lẻ được cắt ra từ một wafer được gọi là:",
+   "opts": [
+    "gate",
+    "die",
+    "blank"
+   ],
+   "correct": 1,
+   "explain": "Thuật ngữ chuẩn cho một chip cắt rời từ wafer là 'die'.",
+   "src": "Tooley Ch.8 Q15"
+  },
+  {
+   "q": "Fan-out của một cổng logic TTL chuẩn là:",
+   "opts": [
+    "5",
+    "10",
+    "20"
+   ],
+   "correct": 1,
+   "explain": "TTL chuẩn có fan-out danh định là 10 (điều khiển được tối đa 10 đầu vào TTL cùng họ).",
+   "src": "Tooley Ch.9 Q1"
+  },
+  {
+   "q": "Số lượng tải đầu vào chuẩn (cùng họ logic) mà MỘT đầu vào của mạch logic tạo ra được gọi là:",
+   "opts": [
+    "fan-out",
+    "fan-in",
+    "fan-load"
+   ],
+   "correct": 1,
+   "explain": "Đây chính là định nghĩa của fan-in.",
+   "src": "Tooley Ch.9 Q2"
+  },
+  {
+   "q": "Tên gọi khác của bộ dồn kênh (multiplexer) là:",
+   "opts": [
+    "bộ thu phát bus (bus transceiver)",
+    "thanh ghi dịch (shift register)",
+    "bộ chọn dữ liệu (data selector)"
+   ],
+   "correct": 2,
+   "explain": "Multiplexer thường được gọi là 'data selector' vì chức năng chọn 1 trong nhiều nguồn dữ liệu đưa ra 1 ngõ ra.",
+   "src": "Tooley Ch.9 Q4"
+  },
+  {
+   "q": "Một bộ dồn kênh 4-sang-1 (4-to-1 multiplexer) cần bao nhiêu đường chọn (select input)?",
+   "opts": [
+    "một đường chọn",
+    "bốn đường chọn",
+    "hai đường chọn"
+   ],
+   "correct": 2,
+   "explain": "Cần n đường chọn để phân biệt 2ⁿ kênh vào; với 4 kênh, n=2.",
+   "src": "Tooley Ch.9 Q5"
+  },
+  {
+   "q": "Một số bộ mã hoá (encoder) có thêm chân enable input/output để cho phép:",
+   "opts": [
+    "ghép tầng (cascading)",
+    "đảo tín hiệu (inverting)",
+    "phát hiện lỗi (error detection)"
+   ],
+   "correct": 0,
+   "explain": "Chân enable cho phép nối tầng (cascade) nhiều IC encoder để mở rộng số đầu vào mã hoá.",
+   "src": "Tooley Ch.9 Q8"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Một bộ dồn kênh 8-sang-1 (8-to-1 multiplexer) cần bao nhiêu đường chọn?",
+   "opts": [
+    "4",
+    "2",
+    "3"
+   ],
+   "correct": 2,
+   "explain": "2ⁿ=8 → n=3 đường chọn.",
+   "src": ""
+  },
+  {
+   "q": "Một bộ giải mã (decoder) 3-sang-8 đường có bao nhiêu ngõ ra?",
+   "opts": [
+    "8",
+    "6",
+    "3"
+   ],
+   "correct": 0,
+   "explain": "Decoder n-sang-2ⁿ với n=3 → 2³=8 ngõ ra.",
+   "src": ""
+  },
+  {
+   "q": "Một IC chứa khoảng 500 cổng logic thường được xếp vào quy mô tích hợp nào?",
+   "opts": [
+    "SSI",
+    "LSI",
+    "MSI"
+   ],
+   "correct": 1,
+   "explain": "Khoảng vài trăm tới ~10.000 cổng tương ứng LSI (theo phân loại dùng trong chương này).",
+   "src": ""
+  },
+  {
+   "q": "Bộ giải dồn kênh (demultiplexer) thực hiện chức năng ngược lại với:",
+   "opts": [
+    "bộ dồn kênh (multiplexer)",
+    "bộ so sánh (comparator)",
+    "bộ mã hoá (encoder)"
+   ],
+   "correct": 0,
+   "explain": "Demux đưa 1 nguồn vào ra nhiều đường, ngược với chức năng dồn nhiều vào 1 của mux.",
+   "src": ""
+  },
+  {
+   "q": "Một bộ mã hoá (encoder) có 8 đầu vào sẽ cho ra bao nhiêu bit mã nhị phân?",
+   "opts": [
+    "8",
+    "4",
+    "3"
+   ],
+   "correct": 2,
+   "explain": "log2(8)=3 bit đủ để mã hoá 8 trạng thái đầu vào.",
+   "src": ""
+  },
+  {
+   "q": "Trong đóng gói IC, thuật ngữ 'DIL' là viết tắt của:",
+   "opts": [
+    "Digital Integrated Logic",
+    "Direct Input Line",
+    "Dual-In-Line"
+   ],
+   "correct": 2,
+   "explain": "DIL = Dual-In-Line, kiểu đóng gói hai hàng chân song song.",
+   "src": ""
+  },
+  {
+   "q": "Mạch tạo/kiểm tra parity (parity generator/checker) thường được xây dựng chủ yếu từ:",
+   "opts": [
+    "các cổng XOR nối tầng",
+    "các cổng NAND",
+    "các cổng AND"
+   ],
+   "correct": 0,
+   "explain": "Chuỗi cổng XOR cho phép tính tổng modulo-2 của các bit, đúng nguyên lý tính parity.",
+   "src": ""
+  },
+  {
+   "q": "Kiểu đóng gói IC nào được thiết kế cho lắp ráp dán bề mặt (surface-mount), không xuyên lỗ?",
+   "opts": [
+    "SOIC",
+    "DIP",
+    "PGA"
+   ],
+   "correct": 0,
+   "explain": "SOIC (Small Outline IC) là gói dán bề mặt điển hình.",
+   "src": ""
+  },
+  {
+   "q": "Nếu fan-out của một cổng là 10, điều này có nghĩa là cổng có thể an toàn điều khiển tối đa bao nhiêu đầu vào chuẩn cùng họ?",
+   "opts": [
+    "5",
+    "10",
+    "20"
+   ],
+   "correct": 1,
+   "explain": "Định nghĩa fan-out chính là số tải đầu vào chuẩn tối đa mà ngõ ra có thể điều khiển.",
+   "src": ""
+  },
+  {
+   "q": "Mạch so sánh (comparator) được dùng để:",
+   "opts": [
+    "lưu trữ dữ liệu nhị phân",
+    "xác định số nào lớn hơn/bằng/nhỏ hơn giữa hai số nhị phân",
+    "chuyển đổi nhị phân sang thập phân"
+   ],
+   "correct": 1,
+   "explain": "Comparator so sánh hai số nhị phân và đưa ra tín hiệu A>B, A=B hoặc A<B.",
+   "src": ""
+  }
+ ]
+}

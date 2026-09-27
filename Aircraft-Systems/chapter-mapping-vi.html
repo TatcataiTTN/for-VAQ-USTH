@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script>(function(){try{
+  var t = localStorage.getItem('site-theme');
+  if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
+}catch(e){}})();</script>
+<link rel="stylesheet" href="_shared/common.css"/>
+
+<title>Hệ thống điện tử số & máy tính hàng không — Ánh xạ chương sách</title>
+<meta name="description" content="Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật — dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán."/>
+</head>
+<body>
+<header class="site"><div class="bar">
+  <a class="brand" href="index.html">Hệ thống điện tử số & máy tính hàng không<small>Tự học AE2.021 · USTH</small></a>
+  <div class="toolbar">
+    <a href="chapter-mapping-en.html">English</a>
+    <details><summary>🎨</summary><div class="menu">
+      <button data-set-theme="light">☀️ Light</button>
+      <button data-set-theme="dark">🌙 Dark</button>
+    </div></details>
+  </div>
+</div></header>
+<div class="wrap">
+<p><a href="vi/index.html">← Trang chủ</a></p>
+<div class="hero"><h1>Bảng ánh xạ: 4 bài giảng ↔ chương giáo trình tham khảo</h1><p>Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật — dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.</p></div>
+<table class="chapmap">
+<thead><tr><th>Module</th><th>Tooley — Aircraft Digital Electronic and Computer Systems (3rd ed.)</th><th>Floyd — Digital Fundamentals (11th ed.)</th><th>Ghi chú đối chiếu</th></tr></thead>
+<tbody><tr><td><b>01 — Number Systems</b></td>
+<td>Ch.2 Number systems (p.25-38): decimal, binary, octal, hex, ASCII</td><td>Ch.2 Number Systems, Operations, and Codes (p.65-124)</td><td>Khớp trực tiếp gần như 1-1 — cả 2 sách đều dành nguyên 1 chương cho đúng 4 hệ đếm này.</td></tr>
+<tr><td><b>02 — Logic Circuits & Boolean Algebra</b></td>
+<td>Ch.5 Logic circuits (p.70-94): gates, Boolean algebra, combinational logic, tri-state, monostable/bistable, logic families</td><td>Ch.3 Logic Gates (p.125-190) + Ch.4 Boolean Algebra and Logic Simplification (p.191-260); phần bistable đối chiếu thêm Ch.7 Latches, Flip-Flops, and Timers (p.387-448)</td><td>Tooley gộp cả gate + Boolean + bistable vào 1 chương; Floyd tách thành 3 chương riêng chi tiết hơn.</td></tr>
+<tr><td><b>03 — Integrated Circuits & Multiplexing</b></td>
+<td>Ch.8 Integrated circuits (p.139-148) + Ch.9 MSI logic (p.149-164): fan-in/out, decoders, encoders, multiplexers</td><td>Ch.6 Functions of Combinational Logic (p.313-386): decoders, encoders, multiplexers, demultiplexers, comparators; công nghệ chế tạo IC đối chiếu thêm Ch.15 Integrated Circuit Technologies (p.855+)</td><td>Tooley tách 'công nghệ IC' (ch.8) và 'ứng dụng MSI' (ch.9) thành 2 chương; Floyd gộp toàn bộ ứng dụng MSI vào Ch.6 và để công nghệ chế tạo riêng ở cuối sách (Ch.15).</td></tr>
+<tr><td><b>04 — Computers & Microprocessors</b></td>
+<td>Ch.6 Computers (p.95-115): computer systems, data storage, backplane bus + Ch.7 The CPU (p.116-138): internal architecture, x86/Pentium/AMD 29050</td><td>Ch.11 Data Storage (p.627-696): RAM/ROM/Flash memory. Floyd KHÔNG có chương riêng về kiến trúc CPU/vi xử lý — đây là điểm khác biệt lớn nhất giữa 2 sách cho module này.</td><td>Đây là module có độ khớp THẤP NHẤT giữa 2 sách: Floyd là sách nền tảng logic số thuần tuý, không đi sâu kiến trúc máy tính/CPU như Tooley — phần CPU trong module này chủ yếu dựa vào Tooley.</td></tr></tbody>
+</table>
+</div><footer class="site"><div class="wrap">
+  <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án — xem ghi chú nguồn trong từng câu.</p>
+  <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
+</div></footer>
+<script src="_shared/theme.js"></script>
+</body></html>

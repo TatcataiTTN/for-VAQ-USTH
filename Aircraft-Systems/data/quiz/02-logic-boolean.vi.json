@@ -1,0 +1,182 @@
+{
+ "original": [
+  {
+   "q": "Điện áp nguồn danh định của một linh kiện logic TTL là:",
+   "opts": [
+    "2.5V ±5%",
+    "5V ±5%",
+    "12V ±5%"
+   ],
+   "correct": 1,
+   "explain": "Họ logic TTL chuẩn hoạt động ở nguồn 5V ±5%.",
+   "src": "Tooley Ch.5 Q2"
+  },
+  {
+   "q": "Cổng NAND 2 đầu vào cho ra mức logic 0 khi nào?",
+   "opts": [
+    "cả hai đầu vào ở mức logic 0",
+    "cả hai đầu vào ở mức logic 1",
+    "một trong hai đầu vào ở mức logic 0"
+   ],
+   "correct": 1,
+   "explain": "NAND = NOT(AND); AND=1 chỉ khi cả 2 vào đều 1, nên NAND=0 khi cả 2 vào đều 1.",
+   "src": "Tooley Ch.5 Q3"
+  },
+  {
+   "q": "Trong một bộ đếm nhị phân, xung clock của mỗi tầng bistable (trừ tầng đầu) thường được lấy từ:",
+   "opts": [
+    "đầu ra Q của tầng trước",
+    "đường CLEAR",
+    "cùng một đường clock chung"
+   ],
+   "correct": 0,
+   "explain": "Đây là cấu trúc bộ đếm không đồng bộ (ripple counter): mỗi tầng lấy clock từ Q của tầng trước.",
+   "src": "Tooley Ch.5 Q4"
+  },
+  {
+   "q": "Họ logic phù hợp nhất cho thiết bị kiểm tra cầm tay (portable test equipment) là:",
+   "opts": [
+    "low-power Schottky TTL",
+    "TTL",
+    "CMOS"
+   ],
+   "correct": 2,
+   "explain": "CMOS tiêu thụ dòng tĩnh cực thấp, phù hợp thiết bị chạy pin/cầm tay.",
+   "src": "Tooley Ch.5 Q6"
+  },
+  {
+   "q": "Biên độ nhiễu (noise margin) của linh kiện TTL chuẩn là khoảng:",
+   "opts": [
+    "2 V",
+    "800 mV",
+    "400 mV"
+   ],
+   "correct": 2,
+   "explain": "TTL chuẩn có noise margin danh định khoảng 400mV.",
+   "src": "Tooley Ch.5 Q8"
+  },
+  {
+   "q": "Một cổng logic CMOS được cấp nguồn 12V. Nếu đo được 3V tại đầu vào, mức này được coi là:",
+   "opts": [
+    "logic 0",
+    "logic 1",
+    "không xác định (indeterminate)"
+   ],
+   "correct": 0,
+   "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.",
+   "src": "Tooley Ch.5 Q9"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?",
+   "opts": [
+    "một trong hai đầu vào ở mức logic 1",
+    "cả hai đầu vào ở mức logic 1",
+    "cả hai đầu vào ở mức logic 0"
+   ],
+   "correct": 2,
+   "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.",
+   "src": ""
+  },
+  {
+   "q": "Cổng XOR 2 đầu vào với cả hai đầu vào bằng 1 sẽ cho đầu ra:",
+   "opts": [
+    "0",
+    "không xác định",
+    "1"
+   ],
+   "correct": 0,
+   "explain": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.",
+   "src": ""
+  },
+  {
+   "q": "Theo đại số Boolean, biểu thức A + A'B rút gọn thành:",
+   "opts": [
+    "A · B",
+    "A + B",
+    "A"
+   ],
+   "correct": 1,
+   "explain": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.",
+   "src": ""
+  },
+  {
+   "q": "Theo định lý De Morgan, (A·B)' bằng:",
+   "opts": [
+    "A' + B'",
+    "A + B",
+    "A'·B'"
+   ],
+   "correct": 0,
+   "explain": "(AB)' = A' + B' theo định lý De Morgan.",
+   "src": ""
+  },
+  {
+   "q": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?",
+   "opts": [
+    "6",
+    "9",
+    "8"
+   ],
+   "correct": 2,
+   "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.",
+   "src": ""
+  },
+  {
+   "q": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:",
+   "opts": [
+    "giữ nguyên trạng thái",
+    "luôn reset về 0",
+    "đảo trạng thái (toggle)"
+   ],
+   "correct": 2,
+   "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.",
+   "src": ""
+  },
+  {
+   "q": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):",
+   "opts": [
+    "lớn hơn",
+    "bằng nhau",
+    "nhỏ hơn"
+   ],
+   "correct": 0,
+   "explain": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.",
+   "src": ""
+  },
+  {
+   "q": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?",
+   "opts": [
+    "3 (0, 1, và trở kháng cao Z)",
+    "2 (0 và 1)",
+    "4"
+   ],
+   "correct": 0,
+   "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.",
+   "src": ""
+  },
+  {
+   "q": "Cổng logic nào được gọi là 'cổng vạn năng' vì có thể dùng để tạo mọi hàm logic khác?",
+   "opts": [
+    "AND",
+    "NAND",
+    "XOR"
+   ],
+   "correct": 1,
+   "explain": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.",
+   "src": ""
+  },
+  {
+   "q": "Trong quy ước logic dương (positive logic), mức logic 1 tương ứng với:",
+   "opts": [
+    "luôn đúng bằng 5V",
+    "mức điện áp cao hơn",
+    "mức điện áp thấp hơn"
+   ],
+   "correct": 1,
+   "explain": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.",
+   "src": ""
+  }
+ ]
+}
