@@ -21,16 +21,18 @@ document.querySelectorAll('.mdeck').forEach(function(deck){
   }
   function isFs(){ return document.fullscreenElement === deck || document.webkitFullscreenElement === deck; }
   function fit(){
-    slides.forEach(s => { s.style.fontSize = ''; });
-    if (!isFs()) return;
-    const s = slides[i];
-    let lo = 14, hi = 44;
+    slides.forEach(s => { s.style.fontSize = ''; s.style.height = ''; });
+    const s = slides[i], fs = isFs();
+    let lo = 16, hi = fs ? 40 : 28;
+    if (!fs) s.style.height = Math.max(380, Math.min(720, window.innerHeight * 0.62)) + 'px';
+    if (fs) lo = 13;
     while (hi - lo > 0.5) {
       const mid = (lo + hi) / 2;
       s.style.fontSize = mid + 'px';
       if (s.scrollHeight <= s.clientHeight + 1) lo = mid; else hi = mid;
     }
     s.style.fontSize = lo + 'px';
+    if (!fs) s.style.height = '';
   }
   function fitSoon(){ requestAnimationFrame(() => requestAnimationFrame(fit)); }
   function go(n){ i = Math.max(0, Math.min(slides.length - 1, n)); render(); }
