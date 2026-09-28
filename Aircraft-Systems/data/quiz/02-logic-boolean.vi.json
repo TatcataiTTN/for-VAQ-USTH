@@ -1,11 +1,11 @@
 {
- "original": [
+ "tooley": [
   {
    "q": "Điện áp nguồn danh định của một linh kiện logic TTL là:",
    "opts": [
-    "2.5V ±5%",
+    "12V ±5%",
     "5V ±5%",
-    "12V ±5%"
+    "2.5V ±5%"
    ],
    "correct": 1,
    "explain": "Họ logic TTL chuẩn hoạt động ở nguồn 5V ±5%.",
@@ -14,30 +14,30 @@
   {
    "q": "Cổng NAND 2 đầu vào cho ra mức logic 0 khi nào?",
    "opts": [
-    "cả hai đầu vào ở mức logic 0",
     "cả hai đầu vào ở mức logic 1",
-    "một trong hai đầu vào ở mức logic 0"
+    "một trong hai đầu vào ở mức logic 0",
+    "cả hai đầu vào ở mức logic 0"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "NAND = NOT(AND); AND=1 chỉ khi cả 2 vào đều 1, nên NAND=0 khi cả 2 vào đều 1.",
    "src": "Tooley Ch.5 Q3"
   },
   {
    "q": "Trong một bộ đếm nhị phân, xung clock của mỗi tầng bistable (trừ tầng đầu) thường được lấy từ:",
    "opts": [
-    "đầu ra Q của tầng trước",
+    "cùng một đường clock chung",
     "đường CLEAR",
-    "cùng một đường clock chung"
+    "đầu ra Q của tầng trước"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "Đây là cấu trúc bộ đếm không đồng bộ (ripple counter): mỗi tầng lấy clock từ Q của tầng trước.",
    "src": "Tooley Ch.5 Q4"
   },
   {
    "q": "Họ logic phù hợp nhất cho thiết bị kiểm tra cầm tay (portable test equipment) là:",
    "opts": [
-    "low-power Schottky TTL",
     "TTL",
+    "low-power Schottky TTL",
     "CMOS"
    ],
    "correct": 2,
@@ -47,35 +47,702 @@
   {
    "q": "Biên độ nhiễu (noise margin) của linh kiện TTL chuẩn là khoảng:",
    "opts": [
-    "2 V",
+    "400 mV",
     "800 mV",
-    "400 mV"
+    "2 V"
    ],
-   "correct": 2,
+   "correct": 0,
    "explain": "TTL chuẩn có noise margin danh định khoảng 400mV.",
    "src": "Tooley Ch.5 Q8"
   },
   {
    "q": "Một cổng logic CMOS được cấp nguồn 12V. Nếu đo được 3V tại đầu vào, mức này được coi là:",
    "opts": [
-    "logic 0",
     "logic 1",
-    "không xác định (indeterminate)"
+    "không xác định (indeterminate)",
+    "logic 0"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.",
    "src": "Tooley Ch.5 Q9"
+  }
+ ],
+ "floyd": [
+  {
+   "q": "Cổng đảo (inverter) thực hiện phép toán NOT.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng theo định nghĩa cổng NOT.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #1"
+  },
+  {
+   "q": "Cổng NOT không thể có nhiều hơn một đầu vào.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "NOT là cổng đảo 1 đầu vào — đúng.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #2"
+  },
+  {
+   "q": "Nếu bất kỳ đầu vào nào của cổng OR bằng 0, đầu ra bằng 0.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0, không phải chỉ cần một đầu vào bằng 0.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #3"
+  },
+  {
+   "q": "Nếu tất cả đầu vào của cổng AND đều bằng 1, đầu ra bằng 0.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "AND ra 1 khi tất cả đầu vào đều 1, không phải 0.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #4"
+  },
+  {
+   "q": "Cổng NAND có thể coi là cổng AND nối tiếp với cổng NOT.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng — NAND = NOT(AND).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #5"
+  },
+  {
+   "q": "Cổng NOR có thể coi là cổng OR nối tiếp với cổng đảo.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng — NOR = NOT(OR).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #6"
+  },
+  {
+   "q": "Đầu ra của cổng XOR bằng 0 nếu hai đầu vào trái dấu nhau.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "XOR ra 1 khi hai đầu vào KHÁC nhau (trái dấu), ra 0 khi GIỐNG nhau — ngược với phát biểu.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #7"
+  },
+  {
+   "q": "Hai loại IC logic cố định (fixed-function) là bipolar và NMOS.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Hai họ chính là bipolar (TTL) và CMOS, không phải NMOS.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #8"
+  },
+  {
+   "q": "Sau khi đã lập trình, logic của PLD vẫn có thể thay đổi được.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng với PLD khả trình lại (reprogrammable), như SRAM-based FPGA/CPLD.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #9"
+  },
+  {
+   "q": "Fan-out là số lượng cổng cùng loại mà một cổng có thể điều khiển.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng theo định nghĩa chuẩn của fan-out.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #10"
+  },
+  {
+   "q": "Các thuật ngữ biến (variable), phần bù (complement), và literal đều được dùng trong đại số Boolean.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Cả 3 đều là thuật ngữ chuẩn trong đại số Boolean.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #11"
+  },
+  {
+   "q": "Phép cộng trong đại số Boolean tương đương với hàm NOR.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Phép cộng Boolean (+) tương đương hàm OR, không phải NOR.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #12"
+  },
+  {
+   "q": "Phép nhân trong đại số Boolean tương đương với hàm AND.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng — phép nhân Boolean (·) chính là AND.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #13"
+  },
+  {
+   "q": "Luật giao hoán, luật kết hợp và luật phân phối đều là các luật trong đại số Boolean.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Cả 3 luật đều tồn tại và áp dụng được trong đại số Boolean.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #14"
+  },
+  {
+   "q": "Phần bù của 0 là chính nó (0).",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Phần bù của 0 là 1 (0'=1), không phải 0.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #15"
+  },
+  {
+   "q": "Khi một biến Boolean nhân với phần bù của chính nó, kết quả là biến đó.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "A·A' = 0 (luôn bằng 0), không phải bằng biến A.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #16"
+  },
+  {
+   "q": "'Phần bù của tích các biến bằng tổng phần bù của từng biến' là phát biểu của định lý De Morgan.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đây chính là 1 trong 2 định lý De Morgan: (AB)'=A'+B'.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #17"
+  },
+  {
+   "q": "SOP nghĩa là tổng của các tích (sum-of-products).",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng theo định nghĩa chuẩn.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #18"
+  },
+  {
+   "q": "Bìa Karnaugh (Karnaugh map) có thể dùng để rút gọn biểu thức Boolean.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng — đây chính là mục đích chính của K-map.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #19"
+  },
+  {
+   "q": "Bìa Karnaugh 3 biến có 6 ô.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "Bìa Karnaugh n biến có 2ⁿ ô; với n=3, số ô = 2³ = 8, không phải 6.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #20"
+  },
+  {
+   "q": "VHDL là một loại 'hardware definition language' (ngôn ngữ ĐỊNH NGHĨA phần cứng).",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Bẫy từ ngữ: VHDL là 'Hardware DESCRIPTION Language' (ngôn ngữ MÔ TẢ phần cứng), không phải 'definition language' (định nghĩa) — phát biểu dùng sai từ nên SAI.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #21"
+  },
+  {
+   "q": "Một chương trình VHDL bao gồm một entity và một architecture.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng — đây là 2 khối cấu trúc cơ bản bắt buộc của VHDL.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #22"
+  },
+  {
+   "q": "Khi đầu vào của một cổng đảo ở mức LOW (0), đầu ra là:",
+   "opts": [
+    "HIGH hoặc 1",
+    "HIGH hoặc 0",
+    "LOW hoặc 0",
+    "LOW hoặc 1"
+   ],
+   "correct": 0,
+   "explain": "Đầu vào LOW(0) → đầu ra HIGH, tức mức logic 1.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #1"
+  },
+  {
+   "q": "Cổng đảo thực hiện phép toán gọi là:",
+   "opts": [
+    "đảo (inversion)",
+    "bù (complementation)",
+    "khẳng định (assertion)",
+    "cả (a) và (c)"
+   ],
+   "correct": 3,
+   "explain": "Đảo và bù là hai tên gọi tương đương của cùng phép toán NOT.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #2"
+  },
+  {
+   "q": "Đầu ra của cổng AND với 3 đầu vào A, B, C bằng 0 (LOW) khi:",
+   "opts": [
+    "A=0,B=0,C=0",
+    "cả (a) và (b)",
+    "không trường hợp nào",
+    "A=0,B=1,C=1"
+   ],
+   "correct": 1,
+   "explain": "AND ra 0 bất cứ khi nào có ÍT NHẤT MỘT đầu vào =0 — cả hai trường hợp (a) và (b) đều thoả.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #3"
+  },
+  {
+   "q": "Đầu ra của cổng OR với 3 đầu vào A, B, C bằng 0 (LOW) khi:",
+   "opts": [
+    "không trường hợp nào",
+    "A=0,B=0,C=0",
+    "A=0,B=1,C=1",
+    "cả (a) và (b)"
+   ],
+   "correct": 1,
+   "explain": "OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0 — chỉ đúng với trường hợp (a).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #4"
+  },
+  {
+   "q": "Hai xung được đưa vào cổng NAND 2 đầu vào: xung 1 lên HIGH tại t=0, xuống LOW tại t=1ms; xung 2 lên HIGH tại t=0.8ms, xuống LOW tại t=3ms. Đầu ra:",
+   "opts": [
+    "xuống LOW tại t=0.8ms, xuống LOW tại t=1ms",
+    "xuống LOW tại t=0, lên lại HIGH tại t=3ms",
+    "xuống LOW tại t=0.8ms, lên lại HIGH tại t=1ms",
+    "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms"
+   ],
+   "correct": 2,
+   "explain": "NAND chỉ ra LOW khi CẢ HAI đầu vào đều HIGH — khoảng chồng lấn là từ t=0.8ms đến t=1ms.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #5"
+  },
+  {
+   "q": "Tương tự câu trên nhưng với cổng NOR 2 đầu vào, đầu ra:",
+   "opts": [
+    "lên HIGH tại t=0.8ms, xuống LOW tại t=1ms",
+    "xuống LOW tại t=0.8ms, lên lại HIGH tại t=1ms",
+    "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms",
+    "xuống LOW tại t=0, lên lại HIGH tại t=3ms"
+   ],
+   "correct": 3,
+   "explain": "NOR ra HIGH chỉ khi CẢ HAI đầu vào đều LOW — chỉ đúng trước t=0 và sau t=3ms; NOR xuống LOW ngay khi có 1 xung lên HIGH (t=0) và chỉ lên lại HIGH khi cả hai đều LOW (sau t=3ms).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #6"
+  },
+  {
+   "q": "Với cổng XOR và 2 xung tương tự, đầu ra:",
+   "opts": [
+    "lên HIGH tại t=1ms, xuống LOW tại t=3ms",
+    "lên HIGH tại t=0, xuống LOW tại t=3ms",
+    "cả (b) và (c)",
+    "lên HIGH tại t=0, xuống LOW tại t=0.8ms"
+   ],
+   "correct": 2,
+   "explain": "XOR ra HIGH khi hai đầu vào KHÁC nhau: từ t=0-0.8ms khác nhau (HIGH), từ 0.8-1ms giống nhau (LOW), từ 1-3ms khác nhau (HIGH) — khớp cả (b) và (c).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #7"
+  },
+  {
+   "q": "Một xung dương được đưa vào cổng đảo. Khoảng thời gian từ cạnh lên đầu vào tới cạnh lên đầu ra là 7ns. Đây là tham số:",
+   "opts": [
+    "tích công suất-tốc độ (speed-power product)",
+    "trễ lan truyền tPHL",
+    "trễ lan truyền tPLH",
+    "độ rộng xung"
+   ],
+   "correct": 1,
+   "explain": "Cổng đảo (inverter) đảo dấu tín hiệu: đầu vào lên HIGH khiến đầu ra xuống LOW. Trễ từ sự kiện này chính là tPHL (trễ lan truyền khi output chuyển HIGH→LOW), không phải tPLH.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #8"
+  },
+  {
+   "q": "Hầu hết PLD sử dụng một mảng (array) các cổng:",
+   "opts": [
+    "cổng NOT",
+    "cổng AND",
+    "cổng NOR",
+    "cổng OR"
+   ],
+   "correct": 1,
+   "explain": "Kiến trúc PLD kinh điển dùng mảng AND-OR, với mảng AND lập trình được là chính.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #9"
+  },
+  {
+   "q": "Các hàng và cột của ma trận kết nối trong SPLD được nối với nhau bằng:",
+   "opts": [
+    "cầu chì (fuses)",
+    "cổng logic (gates)",
+    "công tắc (switches)",
+    "transistor"
+   ],
+   "correct": 0,
+   "explain": "SPLD cổ điển dùng cầu chì (fusible link) để lập trình kết nối.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #10"
+  },
+  {
+   "q": "Antifuse được tạo thành từ:",
+   "opts": [
+    "hai lớp cách điện ngăn cách bởi một dây dẫn",
+    "hai dây dẫn ngăn cách bởi một lớp cách điện",
+    "một lớp cách điện đặt cạnh một dây dẫn",
+    "hai dây dẫn nối tiếp"
+   ],
+   "correct": 1,
+   "explain": "Antifuse ban đầu HỞ mạch (cách điện), khi lập trình sẽ 'đánh thủng' lớp cách điện để nối 2 dây dẫn.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #11"
+  },
+  {
+   "q": "EPROM có thể được lập trình bằng:",
+   "opts": [
+    "transistor",
+    "diode",
+    "bộ lập trình đa năng (multiprogrammer)",
+    "bộ lập trình thiết bị (device programmer)"
+   ],
+   "correct": 3,
+   "explain": "EPROM cần thiết bị lập trình chuyên dụng (device/EPROM programmer).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #12"
+  },
+  {
+   "q": "Hai cách nhập thiết kế logic bằng phần mềm PLD là:",
+   "opts": [
+    "văn bản và số (text and numeric)",
+    "văn bản và đồ hoạ (text and graphic)",
+    "biên dịch và sắp xếp (compile and sort)",
+    "đồ hoạ và mã hoá (graphic and coded)"
+   ],
+   "correct": 1,
+   "explain": "Hai cách nhập thiết kế phổ biến: nhập bằng mã (HDL text) hoặc bằng sơ đồ (schematic/graphic).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #13"
+  },
+  {
+   "q": "JTAG là viết tắt của:",
+   "opts": [
+    "Java Top Array Group",
+    "Joint Test Action Group",
+    "Joint Test Array Group",
+    "Joint Time Analysis Group"
+   ],
+   "correct": 1,
+   "explain": "JTAG = Joint Test Action Group, chuẩn IEEE 1149.1.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #14"
+  },
+  {
+   "q": "Lập trình tại chỗ (in-system programming) của PLD thường dùng:",
+   "opts": [
+    "bộ nhớ PROM nhúng",
+    "bộ tạo xung nhịp nhúng",
+    "bộ xử lý nhúng",
+    "cả (b) và (c)",
+    "cả (a) và (b)"
+   ],
+   "correct": 4,
+   "explain": "ISP thường cần cả bộ tạo xung nhịp VÀ bộ xử lý nhúng điều khiển qua giao diện JTAG — đáp án đúng theo sách là 'cả (a) và (b)'.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #15"
+  },
+  {
+   "q": "Để đo chu kỳ của dạng sóng xung, bạn phải dùng:",
+   "opts": [
+    "dao động ký (oscilloscope)",
+    "đồng hồ vạn năng số (DMM)",
+    "bút thử logic (logic probe)",
+    "bút xung logic (logic pulser)"
+   ],
+   "correct": 0,
+   "explain": "Chỉ oscilloscope hiển thị được dạng sóng theo thời gian để đo chu kỳ.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #16"
+  },
+  {
+   "q": "Sau khi đo được chu kỳ của dạng sóng xung, tần số được tính bằng cách:",
+   "opts": [
+    "đo duty cycle",
+    "lấy nghịch đảo của chu kỳ",
+    "dùng thang đo khác",
+    "dùng loại thiết bị đo khác"
+   ],
+   "correct": 1,
+   "explain": "f = 1/T — nghịch đảo của chu kỳ.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #17"
+  },
+  {
+   "q": "Một biến trong đại số Boolean là ký hiệu dùng để biểu diễn:",
+   "opts": [
+    "cả (a),(b),(c)",
+    "một hành động",
+    "dữ liệu",
+    "một điều kiện"
+   ],
+   "correct": 0,
+   "explain": "Biến Boolean có thể đại diện cho bất kỳ đại lượng logic nào — dữ liệu, điều kiện hay hành động.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #18"
+  },
+  {
+   "q": "Biểu thức Boolean A + B + C là:",
+   "opts": [
+    "một literal",
+    "một số hạng đảo (inverse term)",
+    "một tích (product term)",
+    "một tổng (sum term)"
+   ],
+   "correct": 3,
+   "explain": "Tổng các biến nối bằng dấu + gọi là sum term.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #19"
+  },
+  {
+   "q": "Biểu thức Boolean ABCD là:",
+   "opts": [
+    "một tích (product term)",
+    "một literal",
+    "một số hạng đảo (inverse term)",
+    "một tổng (sum term)"
+   ],
+   "correct": 0,
+   "explain": "Các biến nhân với nhau gọi là product term.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #20"
+  },
+  {
+   "q": "Miền xác định (domain) của biểu thức ABCD + AB + CD + B là:",
+   "opts": [
+    "A, B, C, và D",
+    "A và D",
+    "không phải các đáp án trên",
+    "chỉ B"
+   ],
+   "correct": 0,
+   "explain": "Domain là tập hợp TẤT CẢ các biến xuất hiện trong biểu thức: A, B, C, D.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #21"
+  },
+  {
+   "q": "Theo luật kết hợp của phép cộng:",
+   "opts": [
+    "A+0=A",
+    "A=A+A",
+    "(A+B)+C=A+(B+C)",
+    "A+B=B+A"
+   ],
+   "correct": 2,
+   "explain": "Luật kết hợp cho phép nhóm lại các số hạng cộng theo thứ tự bất kỳ.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #22"
+  },
+  {
+   "q": "Theo luật giao hoán của phép nhân:",
+   "opts": [
+    "(AB)C=A(BC)",
+    "A=AA",
+    "AB=BA",
+    "A0=A"
+   ],
+   "correct": 2,
+   "explain": "Giao hoán cho phép đổi chỗ thứ tự nhân.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #23"
+  },
+  {
+   "q": "Theo luật phân phối:",
+   "opts": [
+    "A(BC)=ABC",
+    "A(A+1)=A",
+    "A(B+C)=AB+AC",
+    "A+AB=A"
+   ],
+   "correct": 2,
+   "explain": "Đây chính là dạng chuẩn của luật phân phối trong đại số Boolean.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #24"
+  },
+  {
+   "q": "Đâu KHÔNG phải là một luật hợp lệ của đại số Boolean?",
+   "opts": [
+    "A+0=A",
+    "A=A",
+    "A+1=1",
+    "AA=A"
+   ],
+   "correct": 1,
+   "explain": "'A=A' không phải là một luật rút gọn/biến đổi — 3 luật còn lại đều là luật chuẩn (A+1=1, AA=A, A+0=A).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #25"
+  },
+  {
+   "q": "Luật nào phát biểu: nếu một đầu vào của cổng AND luôn là 1, đầu ra bằng đầu vào còn lại?",
+   "opts": [
+    "A·1=A",
+    "A·A=A",
+    "A+A=A",
+    "A+1=1"
+   ],
+   "correct": 0,
+   "explain": "A·1=A chính là luật mô tả tình huống này.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #26"
+  },
+  {
+   "q": "Theo định lý De Morgan, phần bù của một tích các biến bằng:",
+   "opts": [
+    "cả (a),(b),(c)",
+    "tổng các phần bù",
+    "tích các phần bù",
+    "phần bù của tổng"
+   ],
+   "correct": 1,
+   "explain": "(AB)' = A' + B' — tổng các phần bù.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #27"
+  },
+  {
+   "q": "Biểu thức Boolean X=(A+B)(C+D) biểu diễn:",
+   "opts": [
+    "hai OR AND với nhau",
+    "một cổng AND 4 đầu vào",
+    "hai AND OR với nhau",
+    "một cổng OR 4 đầu vào"
+   ],
+   "correct": 0,
+   "explain": "Hai nhóm OR (A+B) và (C+D) được nhân (AND) với nhau.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #28"
+  },
+  {
+   "q": "Ví dụ của biểu thức tổng-các-tích (SOP) là:",
+   "opts": [
+    "cả (a) và (b)",
+    "(A+B+C)(A+B+C)",
+    "A+B(C+D)",
+    "AB+AC+ABC"
+   ],
+   "correct": 3,
+   "explain": "SOP là tổng của nhiều tích — AB+AC+ABC đúng dạng này; (a) không phải SOP thuần vì có ngoặc lồng.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #29"
+  },
+  {
+   "q": "Ví dụ của biểu thức tích-các-tổng (POS) là:",
+   "opts": [
+    "A+B+BC",
+    "A(B+C)+AC",
+    "cả (a) và (b)",
+    "(A+B)(A+B+C)"
+   ],
+   "correct": 3,
+   "explain": "POS là tích của nhiều tổng — (A+B)(A+B+C) đúng dạng này.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #30"
+  },
+  {
+   "q": "Ví dụ của biểu thức SOP chuẩn (standard SOP) là:",
+   "opts": [
+    "ABC+ACD",
+    "AB+AB+AB",
+    "ABCD+AB+A",
+    "AB+ABC+ABD"
+   ],
+   "correct": 1,
+   "explain": "Đáp án theo sách là (c). Lưu ý: các số hạng gốc trong sách có dấu gạch trên (phần bù) ở một số biến — dấu gạch này bị mất khi trích xuất text thuần, nên không thể tự suy luận lại đầy đủ; giữ nguyên đáp án in trong sách.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #31"
+  },
+  {
+   "q": "Bìa Karnaugh 4 biến có:",
+   "opts": [
+    "4 ô",
+    "8 ô",
+    "32 ô",
+    "16 ô"
+   ],
+   "correct": 3,
+   "explain": "2⁴ = 16 ô.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #32"
+  },
+  {
+   "q": "Trong bìa Karnaugh 4 biến, một tích 2 biến được tạo bởi:",
+   "opts": [
+    "nhóm 4 ô số 0",
+    "nhóm 8 ô",
+    "nhóm 4 ô",
+    "nhóm 2 ô"
+   ],
+   "correct": 2,
+   "explain": "Quy tắc chung: nhóm 2ᵏ ô loại bỏ k biến khỏi tích. Với 4 biến, nhóm 4 ô (2²) loại bỏ 2 biến, còn lại đúng 2 biến trong tích.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #33"
+  },
+  {
+   "q": "Phương pháp Quine-McCluskey có thể dùng để:",
+   "opts": [
+    "rút gọn biểu thức từ 5 biến trở lên",
+    "thay thế phương pháp bìa Karnaugh",
+    "cả (a) và (b)",
+    "không đáp án nào"
+   ],
+   "correct": 2,
+   "explain": "Quine-McCluskey là phương pháp đại số thay thế K-map, đặc biệt hữu ích khi số biến ≥5 (K-map khó vẽ).",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #34"
+  },
+  {
+   "q": "VHDL là một loại:",
+   "opts": [
+    "ngôn ngữ mô tả phần cứng",
+    "toán logic",
+    "logic khả trình",
+    "mảng khả trình"
+   ],
+   "correct": 0,
+   "explain": "VHDL = hardware description language.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #35"
+  },
+  {
+   "q": "Trong VHDL, một 'port' là:",
+   "opts": [
+    "một loại biến",
+    "một đầu vào hoặc đầu ra",
+    "một loại architecture",
+    "một loại entity"
+   ],
+   "correct": 1,
+   "explain": "Port khai báo các chân input/output của entity.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #36"
+  },
+  {
+   "q": "Dùng VHDL, đầu vào/đầu ra của một mạch logic được mô tả trong:",
+   "opts": [
+    "component",
+    "architecture",
+    "data flow",
+    "entity"
+   ],
+   "correct": 3,
+   "explain": "Entity khai báo giao diện (các port) của mạch, architecture mô tả hành vi bên trong.",
+   "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #37"
   }
  ],
  "generated": [
   {
    "q": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?",
    "opts": [
-    "một trong hai đầu vào ở mức logic 1",
     "cả hai đầu vào ở mức logic 1",
-    "cả hai đầu vào ở mức logic 0"
+    "cả hai đầu vào ở mức logic 0",
+    "một trong hai đầu vào ở mức logic 1"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.",
    "src": ""
   },
@@ -104,55 +771,55 @@
   {
    "q": "Theo định lý De Morgan, (A·B)' bằng:",
    "opts": [
-    "A' + B'",
     "A + B",
+    "A' + B'",
     "A'·B'"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "(AB)' = A' + B' theo định lý De Morgan.",
    "src": ""
   },
   {
    "q": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?",
    "opts": [
-    "6",
     "9",
-    "8"
+    "8",
+    "6"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.",
    "src": ""
   },
   {
    "q": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:",
    "opts": [
-    "giữ nguyên trạng thái",
     "luôn reset về 0",
-    "đảo trạng thái (toggle)"
+    "đảo trạng thái (toggle)",
+    "giữ nguyên trạng thái"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.",
    "src": ""
   },
   {
    "q": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):",
    "opts": [
-    "lớn hơn",
+    "nhỏ hơn",
     "bằng nhau",
-    "nhỏ hơn"
+    "lớn hơn"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.",
    "src": ""
   },
   {
    "q": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?",
    "opts": [
-    "3 (0, 1, và trở kháng cao Z)",
+    "4",
     "2 (0 và 1)",
-    "4"
+    "3 (0, 1, và trở kháng cao Z)"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.",
    "src": ""
   },

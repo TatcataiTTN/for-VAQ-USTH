@@ -23,18 +23,32 @@ Ngày khởi tạo: 2026-09-28.
   mở rộng nằm ở `data/slides_0N.py` (song ngữ, mỗi phần 10 slide cho module 60-slide hoặc 6 slide cho
   module 40-slide), `render_site.py` tự động ghép vào và tự in cảnh báo nếu số slide sinh ra lệch target.
 
-## Epic 4 — Câu hỏi trắc nghiệm 🟢
-- [x] Trích 62 câu MCQ gốc từ Tooley (ch.2, ch.5, ch.6, ch.7, ch.8, ch.9) — loại bỏ các câu phụ thuộc hình
-  vẽ gốc (không thể hiển thị lại chính xác từ OCR).
-- [x] Mỗi câu được **tính toán lại độc lập** để xác minh đáp án (không đọc Appendix 3 vì trang đó OCR bị
-  lỗi/không đọc rõ được — xem ghi chú trong `data/build_quiz.py`).
+## Epic 4 — Câu hỏi trắc nghiệm 🟢 (mở rộng 2026-09-28)
+- [x] **Tooley**: 62 câu MCQ cuối chương (ch.2,5,6,7,8,9) — loại các câu phụ thuộc hình vẽ gốc không hiển
+  thị lại được từ OCR. Mỗi câu tự tính lại độc lập để xác minh (Appendix 3 gốc bị OCR hỏng không đọc được).
+- [x] **Floyd** (MỚI): trích đủ **139 câu** (56 True/False + 83 Self-Test, 4 lựa chọn) từ cuối các chương
+  2,3,4,6,11 — dùng trực tiếp `pdftotext` trên PDF text-layer thật (không OCR, độ chính xác cao) và cắt
+  đúng theo mốc trang in sẵn trong tên file nhúng (`M0N_..._C0N.indd Page NNN`). Nguồn trong
+  `data/floyd_quiz_source.py`.
+- [x] **Kiểm chứng tự động 100%**: viết script đối chiếu TỪNG câu Floyd với đúng thứ tự đáp án in sẵn ở
+  cuối mỗi chương ("True/False Quiz"/"Self-Test" answer key) — phát hiện và sửa **11 lỗi thật** (gõ sai
+  index đáp án khi soạn tay), bao gồm 1 bẫy từ vựng có chủ đích của sách (VHDL "definition" vs
+  "description" language) và 2 câu có lỗi trích xuất dấu trừ (`+122`/`-34` bị đọc thành `1122`/`234`) đã
+  xác nhận lại bằng cách đọc ẢNH GỐC trang 118 (Read tool, không đoán). Sau sửa: **0 sai lệch** trên 139/139
+  câu.
 - [x] 42 câu luyện tập bổ sung do AI biên soạn cùng dạng, đáp án tự kiểm chứng bằng tính toán.
-- [x] Audit position-bias bằng script `data/build_quiz.py` (seed cố định 2026/2027) — vị trí đáp án đúng
-  rải tương đối đều qua 3 vị trí.
-- ⚠️ Length-bias KHÔNG đạt ngưỡng <5% chuẩn của skill — đây là quyết định có chủ đích: các câu hỏi trong
-  module này chủ yếu là chuyển đổi số/tính toán kỹ thuật, độ dài đáp án phản ánh ĐÚNG số chữ số/bit của
-  giá trị đúng (không phải "văn phong dài dòng" như quiz trắc nghiệm khái niệm) — không thể "đệm chữ" vào
-  một chuỗi nhị phân/hex mà không làm sai nội dung. Xem ghi chú đầy đủ trong báo cáo bàn giao.
+- [x] Trang mỗi module giờ có **3 mục quiz tách riêng theo đúng yêu cầu người dùng**: "Sách 1 — Tooley",
+  "Sách 2 — Floyd", "Câu luyện tập bổ sung" — không gộp lẫn nguồn.
+- [x] Audit position-bias bằng script `data/build_quiz.py` (seed cố định 2026/2027/2028) cho cả 3 nguồn.
+- ⚠️ Length-bias KHÔNG đạt ngưỡng <5% chuẩn của skill cho các câu số học/kỹ thuật — quyết định có chủ đích:
+  độ dài đáp án phản ánh ĐÚNG số chữ số/bit của giá trị đúng, không phải văn phong dài dòng — không thể
+  "đệm chữ" vào một chuỗi nhị phân/hex mà không làm sai nội dung.
+- **Tổng số câu hỏi trên toàn site: 241** (13+32+10=55 ở M01, 6+59+10=75 ở M02, 16+22+10=48 ở M03,
+  25+26+12=63 ở M04) — tăng từ 104 câu ở phiên bản trước.
+- **CÒN THIẾU (chưa làm, không giấu)**: câu hỏi dạng hình vẽ trong Tooley (~28 câu, cần xem hình gốc để trả
+  lời chính xác), Tooley Appendix 2 "Revision papers" (bài ôn tập tổng hợp nhiều chương), và phần "Problems"
+  (bài tập tự luận, không phải MCQ) của Floyd cho mỗi chương — đây là khối lượng rất lớn (hàng trăm bài tự
+  luận cần lời giải từng bước), chưa đưa vào site.
 
 ## Epic 5 — Notebook Python 🟢
 - [x] 4 notebook (`data/notebooks/0N_*.ipynb`), mỗi notebook tự kiểm tra lại các câu hỏi gốc bằng code.

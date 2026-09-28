@@ -1,11 +1,11 @@
 {
- "original": [
+ "tooley": [
   {
    "q": "Đường bus nào dùng để xác định vị trí ô nhớ (memory location)?",
    "opts": [
-    "control bus",
+    "data bus",
     "address bus",
-    "data bus"
+    "control bus"
    ],
    "correct": 1,
    "explain": "Address bus mang địa chỉ ô nhớ/thiết bị cần truy cập.",
@@ -14,22 +14,22 @@
   {
    "q": "Địa chỉ hex lớn nhất có thể xuất hiện trên một bus địa chỉ 24-bit là:",
    "opts": [
+    "FFFFFF",
     "FFFFF",
-    "FFFF",
-    "FFFFFF"
+    "FFFF"
    ],
-   "correct": 2,
+   "correct": 0,
    "explain": "24 bit = 6 chữ số hex, giá trị lớn nhất toàn bit 1 → FFFFFF.",
    "src": "Tooley Ch.6 Q5"
   },
   {
    "q": "Trọng tài bus (bus arbitration) được dùng để:",
    "opts": [
-    "tránh tranh chấp bus (bus contention)",
     "ngăn mất dữ liệu bộ nhớ",
-    "giảm lỗi do nhiễu và EMI"
+    "giảm lỗi do nhiễu và EMI",
+    "tránh tranh chấp bus (bus contention)"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "Bus arbitration quyết định thiết bị nào được quyền dùng bus tại một thời điểm, tránh nhiều thiết bị cùng truyền lúc.",
    "src": "Tooley Ch.6 Q6"
   },
@@ -47,107 +47,107 @@
   {
    "q": "Loại bộ nhớ nào sau đây có thể xoá và lập trình lại được?",
    "opts": [
+    "EPROM",
     "Mask-programmed ROM",
-    "OTP EPROM",
-    "EPROM"
+    "OTP EPROM"
    ],
-   "correct": 2,
+   "correct": 0,
    "explain": "EPROM (Erasable Programmable ROM) xoá bằng tia UV và lập trình lại được nhiều lần; OTP chỉ ghi được 1 lần, Mask ROM cố định từ khi sản xuất.",
    "src": "Tooley Ch.6 Q8"
   },
   {
    "q": "Lệnh vi xử lý HLT được xếp vào loại:",
    "opts": [
-    "lệnh điều khiển (control instruction)",
+    "lệnh logic",
     "lệnh truyền dữ liệu",
-    "lệnh logic"
+    "lệnh điều khiển (control instruction)"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "HLT dừng CPU, thuộc nhóm lệnh điều khiển hoạt động của bộ xử lý.",
    "src": "Tooley Ch.6 Q9"
   },
   {
    "q": "Chuẩn bus VME sử dụng:",
    "opts": [
-    "một đầu nối 32-way DIN 41612 duy nhất",
+    "hai đầu nối 32-way DIN 41612",
     "đầu nối rìa board 100-way",
-    "hai đầu nối 32-way DIN 41612"
+    "một đầu nối 32-way DIN 41612 duy nhất"
    ],
-   "correct": 2,
+   "correct": 0,
    "explain": "Chuẩn VMEbus dùng hai đầu nối DIN 41612 (P1 và P2) mỗi đầu 32 hàng chân.",
    "src": "Tooley Ch.6 Q10"
   },
   {
    "q": "Loại bộ nhớ nào sử dụng nguyên lý lưu trữ bằng điện tích (charge storage)?",
    "opts": [
-    "MOS static memory",
+    "MOS dynamic memory",
     "bipolar static RAM",
-    "MOS dynamic memory"
+    "MOS static memory"
    ],
-   "correct": 2,
+   "correct": 0,
    "explain": "DRAM (MOS dynamic memory) lưu dữ liệu bằng điện tích trên tụ điện của từng ô nhớ, cần refresh định kỳ.",
    "src": "Tooley Ch.6 Q11"
   },
   {
    "q": "Cần bao nhiêu IC DRAM loại 16K×4-bit để tạo bộ nhớ 32K byte?",
    "opts": [
-    "2",
     "4",
+    "2",
     "8"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "16K×4bit = 8KB/chip; 32KB ÷ 8KB = 4 chip.",
    "src": "Tooley Ch.6 Q13"
   },
   {
    "q": "Chân IC có ký hiệu CAS có chức năng:",
    "opts": [
-    "chọn địa chỉ cột (column address select)",
+    "chọn chip hoạt động",
     "tín hiệu điều khiển địa chỉ",
-    "chọn chip hoạt động"
+    "chọn địa chỉ cột (column address select)"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "CAS = Column Address Select, dùng trong DRAM để chốt phần địa chỉ cột.",
    "src": "Tooley Ch.6 Q14"
   },
   {
    "q": "Một bộ nhớ bán dẫn gồm 256 hàng và 256 cột có dung lượng là:",
    "opts": [
-    "256 bit",
     "64K bit",
+    "256 bit",
     "512 bit"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "256×256 = 65.536 bit = 64K bit.",
    "src": "Tooley Ch.6 Q15"
   },
   {
    "q": "Trong lệnh hợp ngữ MOV AX, 07FEh, phần nào là mã lệnh (operation code)?",
    "opts": [
-    "MOV",
     "AX",
+    "MOV",
     "07FE"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "MOV là mã lệnh (opcode); AX là thanh ghi đích, 07FEh là toán hạng dữ liệu.",
    "src": "Tooley Ch.6 Q16"
   },
   {
    "q": "Ngăn xếp (stack) được dùng để:",
    "opts": [
-    "lưu trữ tạm thời dữ liệu",
     "lưu trữ dữ liệu vĩnh viễn",
+    "lưu trữ tạm thời dữ liệu",
     "lưu trữ tạm thời chương trình"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Stack dùng lưu tạm địa chỉ trả về, giá trị thanh ghi khi gọi hàm/ngắt.",
    "src": "Tooley Ch.7 Q4"
   },
   {
    "q": "Ngăn xếp (stack) thường nằm ở:",
    "opts": [
-    "trong các thanh ghi đa dụng",
     "trong ALU",
+    "trong các thanh ghi đa dụng",
     "trong bộ nhớ đọc/ghi ngoài (external R/W memory)"
    ],
    "correct": 2,
@@ -157,11 +157,11 @@
   {
    "q": "Thao tác đảo bit (invert) của một byte dữ liệu được thực hiện bởi:",
    "opts": [
-    "ALU",
+    "bộ giải mã lệnh (instruction decoder)",
     "thanh ghi lệnh (instruction register)",
-    "bộ giải mã lệnh (instruction decoder)"
+    "ALU"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "Phép đảo bit (NOT) là một phép toán logic, do ALU thực hiện.",
    "src": "Tooley Ch.7 Q6"
   },
@@ -169,8 +169,8 @@
    "q": "Đầu ra của con trỏ lệnh (instruction pointer) xuất hiện trên:",
    "opts": [
     "address bus",
-    "control bus",
-    "data bus"
+    "data bus",
+    "control bus"
    ],
    "correct": 0,
    "explain": "Instruction pointer/PC chứa địa chỉ lệnh kế tiếp, đưa ra address bus để CPU nạp lệnh.",
@@ -190,53 +190,53 @@
   {
    "q": "Một tên gọi khác của thanh ghi đóng vai trò con trỏ lệnh (instruction pointer) là:",
    "opts": [
+    "bộ đếm chương trình (program counter)",
     "con trỏ ngăn xếp (stack pointer)",
-    "thanh ghi lệnh (instruction register)",
-    "bộ đếm chương trình (program counter)"
+    "thanh ghi lệnh (instruction register)"
    ],
-   "correct": 2,
+   "correct": 0,
    "explain": "Program Counter (PC) chính là tên gọi khác của instruction pointer.",
    "src": "Tooley Ch.7 Q13"
   },
   {
    "q": "Chu kỳ máy nào thực hiện việc nạp và giải mã lệnh (fetch & decode)?",
    "opts": [
-    "M0",
     "M1",
+    "M0",
     "M2"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "Theo mô tả sách, chu kỳ máy M1 là chu kỳ nạp và giải mã lệnh (opcode fetch).",
    "src": "Tooley Ch.7 Q14"
   },
   {
    "q": "Nếu vi xử lý chạy ở xung nhịp 50MHz, một lệnh cần 11 T-state sẽ thực hiện trong thời gian:",
    "opts": [
-    "220 ns",
     "440 ns",
+    "220 ns",
     "2.2 µs"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Chu kỳ xung nhịp T = 1/50MHz = 20ns; 11 T-state × 20ns = 220ns.",
    "src": "Tooley Ch.7 Q15"
   },
   {
    "q": "Một thiết bị ngoại vi thu hút sự chú ý của CPU bằng cách tạo tín hiệu trên đường:",
    "opts": [
-    "RESET line",
     "R/W line",
-    "IRQ line"
+    "IRQ line",
+    "RESET line"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "IRQ (Interrupt Request) là đường tín hiệu chuẩn để thiết bị ngoại vi yêu cầu CPU phục vụ ngắt.",
    "src": "Tooley Ch.7 Q16"
   },
   {
    "q": "Khi thực thi lệnh hợp ngữ MOV AX, 07FEh, mã lệnh (operation code) được chuyển tới:",
    "opts": [
-    "accumulator",
+    "con trỏ lệnh (instruction pointer)",
     "thanh ghi lệnh (instruction register)",
-    "con trỏ lệnh (instruction pointer)"
+    "accumulator"
    ],
    "correct": 1,
    "explain": "Opcode sau khi nạp được đưa vào thanh ghi lệnh (IR) để giải mã.",
@@ -245,35 +245,325 @@
   {
    "q": "Sau khi thực thi lệnh MOV AX, 07FEh, dữ liệu nhị phân trong thanh ghi AL sẽ là:",
    "opts": [
-    "11101111",
     "11111110",
+    "11101111",
     "00000111"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "AX 16-bit gồm AH (byte cao) và AL (byte thấp); 07FEh → AH=07h, AL=FEh=11111110₂.",
    "src": "Tooley Ch.7 Q18"
   },
   {
    "q": "Ưu điểm chính của kỹ thuật pipelining là:",
    "opts": [
+    "lập trình dễ hơn",
     "hoạt động tin cậy hơn",
-    "thực thi nhanh hơn",
-    "lập trình dễ hơn"
+    "thực thi nhanh hơn"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Pipelining cho phép chồng lấn các giai đoạn xử lý lệnh, tăng thông lượng thực thi.",
    "src": "Tooley Ch.7 Q19"
   },
   {
    "q": "Kỹ thuật phân đoạn (segmentation) trong vi xử lý họ x86 dùng để:",
    "opts": [
-    "mở rộng phạm vi địa chỉ (addressing range)",
     "tăng tốc độ xử lý",
+    "mở rộng phạm vi địa chỉ (addressing range)",
     "thiết lập pipeline lệnh"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Segmentation kết hợp segment+offset giúp CPU 16-bit địa chỉ hoá vùng nhớ lớn hơn khả năng thanh ghi 16-bit thuần tuý.",
    "src": "Tooley Ch.7 Q22"
+  }
+ ],
+ "floyd": [
+  {
+   "q": "Một nibble gồm 8 bit.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "Nibble = 4 bit; 8 bit là 1 byte, không phải nibble.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #1"
+  },
+  {
+   "q": "Một ô nhớ (memory cell) có thể lưu trữ một byte dữ liệu.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Một ô nhớ (memory cell) chỉ lưu được 1 BIT; cần 8 ô nhớ để lưu 1 byte.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #2"
+  },
+  {
+   "q": "Vị trí của một đơn vị dữ liệu trong mảng bộ nhớ được gọi là địa chỉ (address) của nó.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng theo định nghĩa chuẩn.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #3"
+  },
+  {
+   "q": "Bus dữ liệu (data bus) hoạt động hai chiều.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng — data bus vừa đọc vừa ghi được, khác address bus (một chiều).",
+   "src": "Floyd Ch.11 — Data Storage · True/False #4"
+  },
+  {
+   "q": "RAM là bộ nhớ địa chỉ ngẫu nhiên (random address memory).",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "RAM = Random ACCESS Memory (truy cập ngẫu nhiên), không phải 'random address'.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #5"
+  },
+  {
+   "q": "Dữ liệu lưu trong SRAM (static RAM) vẫn được giữ lại ngay cả khi mất điện.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "SRAM vẫn là bộ nhớ volatile (dễ bay hơi) — mất dữ liệu khi mất điện, giống DRAM.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #6"
+  },
+  {
+   "q": "Cache là một loại bộ nhớ dùng để lưu trữ trung gian/tạm thời dữ liệu.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng — cache lưu tạm dữ liệu/lệnh hay dùng để tăng tốc truy cập.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #7"
+  },
+  {
+   "q": "DRAM (dynamic RAM) phải được làm tươi (refresh) định kỳ để giữ dữ liệu.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng — DRAM lưu dữ liệu bằng điện tích trên tụ điện, bị rò rỉ nên cần refresh.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #8"
+  },
+  {
+   "q": "ROM là bộ nhớ chỉ đọc (read-only memory).",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng theo định nghĩa/tên gọi.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #9"
+  },
+  {
+   "q": "Bộ nhớ flash sử dụng một chùm tia sáng nhấp nháy để lưu dữ liệu.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "Flash memory lưu dữ liệu bằng điện tích trong cổng nổi (floating gate) bán dẫn, không liên quan tới ánh sáng.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #10"
+  },
+  {
+   "q": "Thanh ghi (register) nằm ở đỉnh của hệ thống phân cấp bộ nhớ (memory hierarchy).",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng — thanh ghi nhanh nhất, nằm ngay trong CPU, đứng đầu hệ thống phân cấp bộ nhớ.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #11"
+  },
+  {
+   "q": "Lưu trữ đám mây (cloud storage) được truy cập qua Internet.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng theo định nghĩa.",
+   "src": "Floyd Ch.11 — Data Storage · True/False #12"
+  },
+  {
+   "q": "Dung lượng bit của một bộ nhớ có 512 địa chỉ, mỗi địa chỉ lưu 8 bit là:",
+   "opts": [
+    "1024",
+    "4096",
+    "512",
+    "2048"
+   ],
+   "correct": 1,
+   "explain": "512 × 8 = 4096 bit.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #1"
+  },
+  {
+   "q": "Một từ (word) 16-bit gồm:",
+   "opts": [
+    "4 byte",
+    "3 byte và 1 nibble",
+    "4 nibble",
+    "3 byte"
+   ],
+   "correct": 2,
+   "explain": "16 bit ÷ 4 bit/nibble = 4 nibble.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #2"
+  },
+  {
+   "q": "Dữ liệu được lưu vào bộ nhớ truy cập ngẫu nhiên (RAM) trong quá trình:",
+   "opts": [
+    "thao tác định địa chỉ",
+    "thao tác đọc",
+    "thao tác ghi",
+    "thao tác enable"
+   ],
+   "correct": 2,
+   "explain": "Ghi (write) là thao tác lưu dữ liệu MỚI vào RAM.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #3"
+  },
+  {
+   "q": "Dữ liệu lưu tại một địa chỉ trong RAM sẽ bị mất khi:",
+   "opts": [
+    "dữ liệu được đọc ra từ địa chỉ đó",
+    "mất điện",
+    "dữ liệu mới được ghi vào địa chỉ đó",
+    "cả (a) và (c)"
+   ],
+   "correct": 3,
+   "explain": "Mất điện (RAM volatile) HOẶC bị ghi đè bởi dữ liệu mới đều làm mất dữ liệu cũ.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #4"
+  },
+  {
+   "q": "ROM là một loại bộ nhớ:",
+   "opts": [
+    "không mất dữ liệu khi mất điện (nonvolatile)",
+    "mất dữ liệu khi mất điện (volatile)",
+    "đọc/ghi được",
+    "tổ chức theo byte"
+   ],
+   "correct": 0,
+   "explain": "ROM giữ dữ liệu vĩnh viễn kể cả khi mất điện — nonvolatile.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #5"
+  },
+  {
+   "q": "Một bộ nhớ có 512 địa chỉ có:",
+   "opts": [
+    "1 đường địa chỉ",
+    "512 đường địa chỉ",
+    "12 đường địa chỉ",
+    "9 đường địa chỉ"
+   ],
+   "correct": 3,
+   "explain": "512=2⁹ → cần 9 đường địa chỉ để mã hoá 512 địa chỉ khác nhau.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #6"
+  },
+  {
+   "q": "Một bộ nhớ tổ chức theo byte (byte-organized) có:",
+   "opts": [
+    "1 đường dữ liệu ra",
+    "8 đường dữ liệu ra",
+    "16 đường dữ liệu ra",
+    "4 đường dữ liệu ra"
+   ],
+   "correct": 1,
+   "explain": "1 byte = 8 bit → cần 8 đường dữ liệu ra để đọc/ghi song song 1 byte.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #7"
+  },
+  {
+   "q": "Phần tử lưu trữ của DRAM là:",
+   "opts": [
+    "diode",
+    "tụ điện",
+    "điện trở",
+    "transistor"
+   ],
+   "correct": 1,
+   "explain": "DRAM lưu dữ liệu dưới dạng điện tích trên một tụ điện nhỏ.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #8"
+  },
+  {
+   "q": "ADDRESS-BURST là một tính năng của:",
+   "opts": [
+    "DRAM đồng bộ",
+    "SRAM không đồng bộ",
+    "SRAM đồng bộ",
+    "DRAM fast page mode"
+   ],
+   "correct": 2,
+   "explain": "Theo sách, ADDRESS-BURST là tên một chân/tính năng cụ thể của SRAM đồng bộ (synchronous SRAM) được trình bày trong chương này.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #9"
+  },
+  {
+   "q": "Trong máy tính, chương trình BIOS được lưu trong:",
+   "opts": [
+    "DRAM",
+    "SRAM",
+    "RAM",
+    "ROM"
+   ],
+   "correct": 3,
+   "explain": "BIOS cần giữ được khi mất điện → lưu trong ROM (thường là loại flash ROM).",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #10"
+  },
+  {
+   "q": "SRAM, DRAM, flash, và EEPROM đều là:",
+   "opts": [
+    "thiết bị lưu trữ quang học",
+    "thiết bị lưu trữ từ-quang",
+    "thiết bị lưu trữ bán dẫn",
+    "thiết bị lưu trữ từ tính"
+   ],
+   "correct": 2,
+   "explain": "Cả 4 loại đều là bộ nhớ bán dẫn (semiconductor memory).",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #11"
+  },
+  {
+   "q": "Thiết bị lưu trữ quang học sử dụng:",
+   "opts": [
+    "ánh sáng cực tím",
+    "tia laser",
+    "trường điện từ",
+    "bộ ghép quang"
+   ],
+   "correct": 1,
+   "explain": "CD/DVD/Blu-ray dùng tia laser để đọc/ghi dữ liệu.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #12"
+  },
+  {
+   "q": "Độ trễ bộ nhớ (memory latency) là:",
+   "opts": [
+    "thời gian ngừng hoạt động trung bình",
+    "thời gian truy cập của bộ xử lý",
+    "thời gian để tham chiếu một khối dữ liệu",
+    "tỉ lệ hit (hit rate)"
+   ],
+   "correct": 1,
+   "explain": "Theo định nghĩa trong sách, memory latency được tính theo góc nhìn thời gian truy cập của bộ xử lý (processor access time) tới bộ nhớ.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #13"
+  },
+  {
+   "q": "Một cơ sở chứa hệ thống lưu trữ đám mây được gọi là:",
+   "opts": [
+    "trung tâm dữ liệu (data center)",
+    "trung tâm máy tính",
+    "server",
+    "nhà mây (cloud house)"
+   ],
+   "correct": 0,
+   "explain": "Thuật ngữ chuẩn là 'data center'.",
+   "src": "Floyd Ch.11 — Data Storage · Self-Test #14"
   }
  ],
  "generated": [
@@ -281,21 +571,21 @@
    "q": "Nếu CPU chạy ở xung nhịp 100MHz, một chu kỳ xung nhịp (T-state) kéo dài:",
    "opts": [
     "1 ns",
-    "100 ns",
-    "10 ns"
+    "10 ns",
+    "100 ns"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "T = 1/f = 1/100.000.000 = 10ns.",
    "src": ""
   },
   {
    "q": "Một bus dữ liệu 8-bit biểu diễn được giá trị thập phân từ 0 đến:",
    "opts": [
-    "256",
     "255",
-    "128"
+    "128",
+    "256"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "2⁸-1 = 255.",
    "src": ""
   },
@@ -303,10 +593,10 @@
    "q": "Một bus địa chỉ 16-bit định vị được bao nhiêu ô nhớ khác nhau?",
    "opts": [
     "32.768",
-    "16.384",
-    "65.536"
+    "65.536",
+    "16.384"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "2¹⁶ = 65.536.",
    "src": ""
   },
@@ -324,41 +614,41 @@
   {
    "q": "RAM (bán dẫn thông thường) sẽ mất dữ liệu đã lưu khi nào?",
    "opts": [
+    "chỉ sau 24 giờ",
     "mất nguồn điện cấp (volatile)",
-    "không bao giờ mất",
-    "chỉ sau 24 giờ"
+    "không bao giờ mất"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "RAM là bộ nhớ volatile (dễ bay hơi), mất dữ liệu ngay khi ngắt điện.",
    "src": ""
   },
   {
    "q": "ALU trong CPU chịu trách nhiệm chính cho việc:",
    "opts": [
+    "tạo xung clock hệ thống",
     "thực hiện các phép toán số học và logic",
-    "lưu địa chỉ lệnh kế tiếp",
-    "tạo xung clock hệ thống"
+    "lưu địa chỉ lệnh kế tiếp"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "ALU = Arithmetic Logic Unit, thực hiện cộng/trừ/AND/OR...",
    "src": ""
   },
   {
    "q": "Thanh ghi bộ đếm chương trình (Program Counter) chứa:",
    "opts": [
-    "địa chỉ của lệnh kế tiếp sẽ thực thi",
+    "kết quả phép toán ALU gần nhất",
     "giá trị con trỏ ngăn xếp hiện tại",
-    "kết quả phép toán ALU gần nhất"
+    "địa chỉ của lệnh kế tiếp sẽ thực thi"
    ],
-   "correct": 0,
+   "correct": 2,
    "explain": "PC luôn trỏ tới địa chỉ lệnh tiếp theo cần nạp.",
    "src": ""
   },
   {
    "q": "Trong chu trình fetch-decode-execute, bước nào lấy lệnh từ bộ nhớ?",
    "opts": [
-    "decode (giải mã)",
     "execute (thực thi)",
+    "decode (giải mã)",
     "fetch (nạp lệnh)"
    ],
    "correct": 2,
@@ -368,31 +658,31 @@
   {
    "q": "Một vi điều khiển thực thi lệnh cần 4 T-state ở xung nhịp 20MHz, thời gian thực thi là:",
    "opts": [
-    "200 ns",
     "80 ns",
+    "200 ns",
     "20 ns"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "T=1/20MHz=50ns; 4×50ns=200ns.",
    "src": ""
   },
   {
    "q": "Một IC nhớ 16K×8-bit có tổng dung lượng lưu trữ là:",
    "opts": [
-    "8 KB",
     "32 KB",
-    "16 KB"
+    "16 KB",
+    "8 KB"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "16K từ × 8 bit/từ = 16K byte = 16KB.",
    "src": ""
   },
   {
    "q": "Bus nào mang tín hiệu định thời và điều khiển xuyên suốt hệ thống máy tính?",
    "opts": [
-    "data bus",
+    "address bus",
     "control bus",
-    "address bus"
+    "data bus"
    ],
    "correct": 1,
    "explain": "Control bus mang các tín hiệu điều khiển/định thời (R/W, clock, interrupt...).",
@@ -401,11 +691,11 @@
   {
    "q": "Một vi xử lý có bus địa chỉ 32-bit định vị trực tiếp được tối đa:",
    "opts": [
-    "4 TB",
     "4 GB",
+    "4 TB",
     "4 MB"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "2³² byte = 4.294.967.296 byte = 4GB.",
    "src": ""
   }

@@ -1,5 +1,6 @@
 import json, random, os
 from collections import Counter
+from floyd_quiz_source import FLOYD_MODULES
 
 # =====================================================================================
 # Nguon: cau hoi trac nghiem TRICH XUAT tu sach Mike Tooley, "Aircraft Digital Electronic
@@ -301,24 +302,40 @@ MOD4_GEN = [
 ]
 
 MODULES = {
-  "01-number-systems": dict(orig=MOD1_ORIG, gen=MOD1_GEN),
-  "02-logic-boolean":  dict(orig=MOD2_ORIG, gen=MOD2_GEN),
-  "03-ic-multiplexing":dict(orig=MOD3_ORIG, gen=MOD3_GEN),
-  "04-computer-cpu":   dict(orig=MOD4_ORIG, gen=MOD4_GEN),
+  "01-number-systems": dict(tooley=MOD1_ORIG, gen=MOD1_GEN),
+  "02-logic-boolean":  dict(tooley=MOD2_ORIG, gen=MOD2_GEN),
+  "03-ic-multiplexing":dict(tooley=MOD3_ORIG, gen=MOD3_GEN),
+  "04-computer-cpu":   dict(tooley=MOD4_ORIG, gen=MOD4_GEN),
 }
+
+TF_OPTS = {"vi": ["Đúng", "Sai"], "en": ["True", "False"]}
+
+def floyd_tf_to_item(it, chapter_label, idx):
+    return dict(q=it["vi"], en=it["en"], opts=list(TF_OPTS["vi"]),
+                correct=0 if it["correct"] else 1,
+                explain=it["explain"], src=f"{chapter_label} · True/False #{idx}")
+
+def floyd_st_to_item(it, chapter_label, idx):
+    return dict(q=it["vi"], en=it["en"], opts=list(it["opts"]), correct=it["correct"],
+                explain=it["explain"], src=f"{chapter_label} · Self-Test #{idx}")
+
+for slug, d in MODULES.items():
+    fm = FLOYD_MODULES[slug]
+    floyd_items = (
+        [floyd_tf_to_item(it, fm["chapter"], i) for i, it in enumerate(fm["tf"], 1)] +
+        [floyd_st_to_item(it, fm["chapter"], i) for i, it in enumerate(fm["st"], 1)]
+    )
+    d["floyd"] = floyd_items
 
 def shuffle_positions(items, seed):
     random.seed(seed)
-    n = len(items)
-    if n == 0: return items
-    k = len(items[0]["opts"])
-    targets = [i % k for i in range(n)]
-    random.shuffle(targets)
-    for it, target in zip(items, targets):
+    if not items: return items
+    for it in items:
         opts = it["opts"]; c = it["correct"]
         correct_val = opts[c]
         others = [o for i, o in enumerate(opts) if i != c]
         random.shuffle(others)
+        target = random.randrange(len(opts))
         it["opts"] = others[:target] + [correct_val] + others[target:]
         it["correct"] = target
     return items
@@ -334,10 +351,12 @@ out_dir = os.path.join(os.path.dirname(__file__), "quiz")
 os.makedirs(out_dir, exist_ok=True)
 
 for slug, d in MODULES.items():
-    orig = shuffle_positions(d["orig"], seed=2026)
-    gen  = shuffle_positions(d["gen"],  seed=2027)
-    audit(orig, f"{slug} [goc-textbook]")
-    audit(gen,  f"{slug} [tu-sinh-them]")
+    tooley = shuffle_positions(d["tooley"], seed=2026)
+    floyd  = shuffle_positions(d["floyd"],  seed=2028)
+    gen    = shuffle_positions(d["gen"],    seed=2027)
+    audit(tooley, f"{slug} [Tooley]")
+    audit(floyd,  f"{slug} [Floyd]")
+    audit(gen,    f"{slug} [tu-sinh-them]")
     def to_items(lst, lang):
         res = []
         for it in lst:
@@ -347,7 +366,8 @@ for slug, d in MODULES.items():
         return res
     for lang in ("vi", "en"):
         payload = {
-            "original": to_items(orig, lang),
+            "tooley": to_items(tooley, lang),
+            "floyd": to_items(floyd, lang),
             "generated": to_items(gen, lang),
         }
         with open(os.path.join(out_dir, f"{slug}.{lang}.json"), "w", encoding="utf-8") as f:

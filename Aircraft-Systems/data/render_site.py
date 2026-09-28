@@ -33,8 +33,7 @@ L = {
               "đã tính toán lại độc lập để xác minh đáp án — xem ghi chú nguồn trong từng câu.",
     "part_label": "PHẦN", "fs": "⛶ Toàn màn hình", "prev": "◀ Trước", "next": "Sau ▶",
     "formula_box": "Công thức", "history": "history", "case": "case", "warn": "warn",
-    "quiz_title": "✅ Quiz tự kiểm tra", "quiz_orig": "Bộ câu hỏi gốc từ giáo trình (đã kiểm tra lại đáp án)",
-    "quiz_gen": "Bộ câu hỏi luyện tập bổ sung (biên soạn thêm theo cùng dạng, đã tự kiểm tra đáp án)",
+    "quiz_title": "✅ Quiz tự kiểm tra", "quiz_tooley": "Sách 1 — Mike Tooley, Aircraft Digital Electronic and Computer Systems (câu MCQ cuối chương, đã tính lại để xác minh đáp án)", "quiz_floyd": "Sách 2 — Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test cuối chương, đối chiếu đúng đáp án in trong sách)", "quiz_gen": "Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)",
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
@@ -54,8 +53,7 @@ L = {
               "Tooley, independently recomputed to verify each answer — see the source note on each question.",
     "part_label": "PART", "fs": "⛶ Fullscreen", "prev": "◀ Prev", "next": "Next ▶",
     "formula_box": "Formula", "history": "history", "case": "case", "warn": "warn",
-    "quiz_title": "✅ Self-check quiz", "quiz_orig": "Original textbook questions (answers independently verified)",
-    "quiz_gen": "Additional practice questions (same style, answers self-verified)",
+    "quiz_title": "✅ Self-check quiz", "quiz_tooley": "Book 1 — Mike Tooley, Aircraft Digital Electronic and Computer Systems (end-of-chapter MCQs, independently recomputed to verify each answer)", "quiz_floyd": "Book 2 — Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test, cross-checked against the book’s own printed answer key)", "quiz_gen": "Additional practice questions (AI-authored in the same style, answers self-verified by computation)",
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
@@ -241,7 +239,8 @@ def build_module_page(lang, mod, prefix):
     t = L[lang]
     d = mod[lang]
     deck = build_deck(lang, mod)
-    quiz_orig = build_quiz_section(lang, mod["slug"], t["quiz_orig"], "original")
+    quiz_tooley = build_quiz_section(lang, mod["slug"], t["quiz_tooley"], "tooley")
+    quiz_floyd = build_quiz_section(lang, mod["slug"], t["quiz_floyd"], "floyd")
     quiz_gen = build_quiz_section(lang, mod["slug"], t["quiz_gen"], "generated")
     nb_name = f"{mod['num']}_{mod['slug'].split('-',1)[1]}.ipynb"
     body = f"""<div class="wrap">
@@ -255,7 +254,8 @@ def build_module_page(lang, mod, prefix):
 <div class="callout good"><h4>{t['notebook']}</h4><p>{d['notebook_desc']}</p>
 <p><a class="nb-link" href="../../../data/notebooks/{nb_name}" download>📓 {t['notebook_open']}</a></p></div>
 <h2>{t['quiz_title']}</h2>
-{quiz_orig}
+{quiz_tooley}
+{quiz_floyd}
 {quiz_gen}
 </div>"""
     extra_css = f'<link rel="stylesheet" href="{prefix}_shared/deck.css"/>'
