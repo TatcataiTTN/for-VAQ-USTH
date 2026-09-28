@@ -19,9 +19,15 @@ Ngày khởi tạo: 2026-09-28.
   `logic circuit_version 2026.pdf` vào `assets/figures/logic_*`: 6 infographic "Applications of ... gate
   in A320" (AND, NOT, NAND, XOR, OR, tổng quan 6 cổng), 1 infographic ứng dụng đại số Boolean trong A320,
   1 sơ đồ tương đương NAND = Negative-OR minh hoạ De Morgan (crop riêng từ trang 51, bỏ phần chữ lý thuyết).
-- ⚠️ **CHƯA làm**: Module 03, 04. Ảnh gốc của 2 bài giảng còn lại (integrated circuit and multiplexing,
-  Basic computer structure and microprocessor) chưa trích. Một vài `body` cũ của Module 01 còn câu lủng
-  củng (ví dụ slide "10.000 ft" có đoạn "10000×2=...").
+- [x] **Module 03 (Mạch tích hợp & Kỹ thuật dồn kênh)**: cả 50 slide nội dung × 2 ngôn ngữ có khung giải
+  thích (nguồn: `data/explain03/{vi,en}_p0..p4.py`, gộp vào `slides_03.py`). Trích 8 hình gốc từ
+  `integrated circuit and multiplexing version 2026.pdf` vào `assets/figures/icmux_*`: sơ đồ 5 mức quy mô
+  tích hợp SSI→ULSI, sơ đồ đóng gói IC (SIP/DIP/ZIP/QFP/PGA), infographic ứng dụng IC trong A320, bảng chân
+  trị decoder 4-bit (1-of-16) thật, sơ đồ logic bộ mã hoá decimal-to-BCD, sơ đồ tổng hợp mạch tổ hợp
+  (adder/mux/code converter), ký hiệu và bảng chân trị multiplexer 1-of-4, sơ đồ mạch demultiplexer 1-to-4.
+- ⚠️ **CHƯA làm**: Module 04. Ảnh gốc của bài giảng cuối (Basic computer structure and microprocessor)
+  chưa trích. Một vài `body` cũ của Module 01 còn câu lủng củng (ví dụ slide "10.000 ft" có đoạn
+  "10000×2=...").
 
 ## Epic 10 — Theme màu, giải thích chi tiết ẩn, chuẩn văn phong 🟢 (2026-09-28)
 - [x] **Theme mặc định đổi thành SÁNG (light) thật sự**, không còn tự động chuyển tối theo hệ điều hành
