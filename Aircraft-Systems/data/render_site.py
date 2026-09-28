@@ -96,6 +96,8 @@ MAPPING_ROWS = [
               "monostable/bistable, logic families",
     "floyd": "Ch.3 Logic Gates (p.125-190) + Ch.4 Boolean Algebra and Logic Simplification (p.191-260); "
              "phần bistable đối chiếu thêm Ch.7 Latches, Flip-Flops, and Timers (p.387-448)",
+    "floyd_en": "Ch.3 Logic Gates (p.125-190) + Ch.4 Boolean Algebra and Logic Simplification (p.191-260); "
+                "the bistable part is cross-referenced with Ch.7 Latches, Flip-Flops, and Timers (p.387-448)",
     "note_vi": "Tooley gộp cả gate + Boolean + bistable vào 1 chương; Floyd tách thành 3 chương riêng chi tiết hơn.",
     "note_en": "Tooley bundles gates + Boolean algebra + bistables into one chapter; Floyd splits this into three "
                "more detailed chapters.",
@@ -107,6 +109,9 @@ MAPPING_ROWS = [
     "floyd": "Ch.6 Functions of Combinational Logic (p.313-386): decoders, encoders, multiplexers, "
              "demultiplexers, comparators; công nghệ chế tạo IC đối chiếu thêm Ch.15 Integrated Circuit "
              "Technologies (p.855+)",
+    "floyd_en": "Ch.6 Functions of Combinational Logic (p.313-386): decoders, encoders, multiplexers, "
+                "demultiplexers, comparators; IC fabrication technology is cross-referenced with Ch.15 "
+                "Integrated Circuit Technologies (p.855+)",
     "note_vi": "Tooley tách 'công nghệ IC' (ch.8) và 'ứng dụng MSI' (ch.9) thành 2 chương; Floyd gộp toàn bộ "
                "ứng dụng MSI vào Ch.6 và để công nghệ chế tạo riêng ở cuối sách (Ch.15).",
     "note_en": "Tooley splits 'IC technology' (ch.8) and 'MSI applications' (ch.9) into two chapters; Floyd "
@@ -119,6 +124,8 @@ MAPPING_ROWS = [
               "(p.116-138): internal architecture, x86/Pentium/AMD 29050",
     "floyd": "Ch.11 Data Storage (p.627-696): RAM/ROM/Flash memory. Floyd KHÔNG có chương riêng về kiến trúc "
              "CPU/vi xử lý: đây là điểm khác biệt lớn nhất giữa 2 sách cho module này.",
+    "floyd_en": "Ch.11 Data Storage (p.627-696): RAM/ROM/Flash memory. Floyd has NO dedicated chapter on CPU/"
+                "microprocessor architecture: this is the biggest difference between the two books for this module.",
     "note_vi": "Đây là module có độ khớp THẤP NHẤT giữa 2 sách: Floyd là sách nền tảng logic số thuần tuý, "
                "không đi sâu kiến trúc máy tính/CPU như Tooley: phần CPU trong module này chủ yếu dựa vào Tooley.",
     "note_en": "This module has the WEAKEST match between the two books: Floyd is a pure digital-logic "
@@ -310,7 +317,7 @@ def build_module_page(lang, mod, prefix):
     mapping_block = f"""<div class="callout info">
 <h4>{t['mapping_link']}</h4>
 <p><b>Tooley:</b> {mrow['tooley']}</p>
-<p><b>Floyd:</b> {mrow['floyd']}</p>
+<p><b>Floyd:</b> {mrow.get('floyd_en', mrow['floyd']) if lang == 'en' else mrow['floyd']}</p>
 <p>{mnote}</p>
 <p><a href="{mapping_href}">{t['nav_mapping']} →</a></p>
 </div>"""
@@ -366,7 +373,7 @@ def build_mapping_page(lang, prefix):
     for r in MAPPING_ROWS:
         note = r["note_vi"] if lang == "vi" else r["note_en"]
         rows.append(f"""<tr><td><b>{r['module']}</b></td>
-<td>{r['tooley']}</td><td>{r['floyd']}</td><td>{note}</td></tr>""")
+<td>{r['tooley']}</td><td>{r.get('floyd_en', r['floyd']) if lang == 'en' else r['floyd']}</td><td>{note}</td></tr>""")
     rows_html = "\n".join(rows)
     head_th = ("Module", "Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)",
                "Floyd: Digital Fundamentals (11th ed.)", "Ghi chú đối chiếu") if lang == "vi" else \

@@ -1,4 +1,6 @@
 import json, random, os
+from quiz_en_overlay import EXPLAIN_EN, OPT_EN_BY_Q
+from quiz_en_opts import OPT_EN_MANUAL
 from collections import Counter
 from floyd_quiz_source import FLOYD_MODULES
 
@@ -541,8 +543,14 @@ for slug, d in MODULES.items():
         res = []
         for it in lst:
             qtext = it["q"] if lang == "vi" else it["en"]
-            item = {"q": qtext, "opts": it["opts"], "correct": it["correct"],
-                    "explain": it["explain"], "src": it.get("src", "")}
+            if lang == "vi":
+                opts, explain = it["opts"], it["explain"]
+            else:
+                per = OPT_EN_BY_Q.get(it["q"], {})
+                opts = [per.get(o) or OPT_EN_MANUAL.get(o) or o for o in it["opts"]]
+                explain = EXPLAIN_EN.get(it["explain"], it["explain"])
+            item = {"q": qtext, "opts": opts, "correct": it["correct"],
+                    "explain": explain, "src": it.get("src", "")}
             if it.get("img"):
                 item["img"] = "../../../assets/figures/" + it["img"]
             detail = it.get("detail") if lang == "vi" else it.get("detail_en")
