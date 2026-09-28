@@ -2,6 +2,29 @@
 .mdeck-viewport{position:relative;min-height:360px}
 .mdeck-slide{display:none;padding:28px 30px 20px;min-height:360px}
 .mdeck-slide.active{display:block;animation:mdeckIn .18s ease}
+
+/* Fullscreen: element phai tu lap day man hinh (flex column), khong de trong
+   o duoi thanh dieu huong nhu khi chi co min-height co dinh. */
+.mdeck:fullscreen,.mdeck:-webkit-full-screen{
+  display:flex;flex-direction:column;width:100vw;height:100vh;
+  border-radius:0;border:none;background:var(--panel);margin:0;
+}
+.mdeck:fullscreen .mdeck-viewport,.mdeck:-webkit-full-screen .mdeck-viewport{
+  flex:1 1 auto;min-height:0;display:flex;overflow:auto;
+}
+.mdeck:fullscreen .mdeck-slide,.mdeck:-webkit-full-screen .mdeck-slide{
+  flex:1 1 auto;width:100%;min-height:0;display:none;
+  align-items:center;justify-content:center;
+}
+.mdeck:fullscreen .mdeck-slide.active,.mdeck:-webkit-full-screen .mdeck-slide.active{
+  display:flex;flex-direction:column;justify-content:center;
+  max-width:980px;margin:0 auto;padding:40px 48px;
+}
+.mdeck:fullscreen .mdeck-slide.part-divider.active,
+.mdeck:-webkit-full-screen .mdeck-slide.part-divider.active{
+  align-items:center;text-align:center;
+}
+.mdeck:fullscreen .mdeck-bar,.mdeck:-webkit-full-screen .mdeck-bar{flex:0 0 auto}
 @keyframes mdeckIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 .mdeck-slide .kicker{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
 .mdeck-slide h2{margin:6px 0 12px;font-size:1.35rem}

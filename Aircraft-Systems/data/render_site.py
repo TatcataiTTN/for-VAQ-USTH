@@ -244,7 +244,7 @@ def build_module_page(lang, mod, prefix):
     quiz_gen = build_quiz_section(lang, mod["slug"], t["quiz_gen"], "generated")
     nb_name = f"{mod['num']}_{mod['slug'].split('-',1)[1]}.ipynb"
     body = f"""<div class="wrap">
-<p><a href="index.html">{t['back_home']}</a></p>
+<p><a href="../../index.html">{t['back_home']}</a></p>
 <div class="hero"><span class="pill">MODULE {mod['num']}</span>
 <h1>{d['title']}</h1><p>{d['src']}</p></div>
 {deck}
@@ -260,7 +260,7 @@ def build_module_page(lang, mod, prefix):
 </div>"""
     extra_css = f'<link rel="stylesheet" href="{prefix}_shared/deck.css"/>'
     html_out = render_page(lang, prefix, body, extra_css=extra_css, title_suffix=d["title"], description=d["intro"])
-    html_out = html_out.replace("__OTHER_LANG__", f"../../{'en' if lang=='vi' else 'vi'}/modules/{mod['slug']}/index.html")
+    html_out = html_out.replace("__OTHER_LANG__", f"../../../{'en' if lang=='vi' else 'vi'}/modules/{mod['slug']}/index.html")
     scripts = f'<script src="{prefix}_shared/deck.js"></script><script src="{prefix}_shared/quiz.js"></script>'
     html_out = html_out.replace("</body></html>", scripts + "</body></html>")
     return html_out
