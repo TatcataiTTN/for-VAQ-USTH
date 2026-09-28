@@ -4,6 +4,15 @@ import json, os, html, importlib
 from module_content import MODULES
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../Aircraft-Systems
+
+def _ver():
+    import hashlib
+    h = hashlib.md5()
+    d = os.path.join(ROOT, "_shared")
+    for fn in sorted(os.listdir(d)):
+        h.update(open(os.path.join(d, fn), "rb").read())
+    return h.hexdigest()[:8]
+VER = _ver()
 QUIZ_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quiz")
 
 def load_extra_slides(mod):
@@ -120,7 +129,7 @@ HEAD_TEMPLATE = """<!doctype html>
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }}catch(e){{}}}})();</script>
-<link rel="stylesheet" href="{prefix}_shared/common.css"/>
+<link rel="stylesheet" href="{prefix}_shared/common.css?v={VER}"/>
 {extra_css}
 <title>{page_title}</title>
 <meta name="description" content="{description}"/>
@@ -146,7 +155,7 @@ FOOTER_TEMPLATE = """<footer class="site"><div class="wrap">
   <p>{footer}</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="{prefix}_shared/theme.js"></script>
+<script src="{prefix}_shared/theme.js?v={VER}"></script>
 </body></html>
 """
 
@@ -158,7 +167,7 @@ def render_page(lang, prefix, body, extra_css="", title_suffix="", description="
     other = "en" if lang == "vi" else "vi"
     return (
         HEAD_TEMPLATE.format(
-            lang_attr=lang, prefix=prefix, extra_css=extra_css,
+            lang_attr=lang, prefix=prefix, VER=VER, extra_css=extra_css,
             page_title=(t["site_title"] + (": " + title_suffix if title_suffix else "")),
             description=description or t["home_hero_sub"],
         )
@@ -167,7 +176,7 @@ def render_page(lang, prefix, body, extra_css="", title_suffix="", description="
             other_lang_href="__OTHER_LANG__", lang_switch=t["lang_switch"],
         )
         + body
-        + FOOTER_TEMPLATE.format(footer=t["footer"], prefix=prefix)
+        + FOOTER_TEMPLATE.format(footer=t["footer"], prefix=prefix, VER=VER)
     )
 
 def slide_html(kicker, inner_html, part_divider=False, extra_class=""):
@@ -284,10 +293,10 @@ def build_module_page(lang, mod, prefix):
 {quiz_floyd}
 {quiz_gen}
 </div>"""
-    extra_css = f'<link rel="stylesheet" href="{prefix}_shared/deck.css"/>'
+    extra_css = f'<link rel="stylesheet" href="{prefix}_shared/deck.css?v={VER}"/>'
     html_out = render_page(lang, prefix, body, extra_css=extra_css, title_suffix=d["title"], description=d["intro"])
     html_out = html_out.replace("__OTHER_LANG__", f"../../../{'en' if lang=='vi' else 'vi'}/modules/{mod['slug']}/index.html")
-    scripts = f'<script src="{prefix}_shared/deck.js"></script><script src="{prefix}_shared/quiz.js"></script>'
+    scripts = f'<script src="{prefix}_shared/deck.js?v={VER}"></script><script src="{prefix}_shared/quiz.js?v={VER}"></script>'
     html_out = html_out.replace("</body></html>", scripts + "</body></html>")
     return html_out
 
