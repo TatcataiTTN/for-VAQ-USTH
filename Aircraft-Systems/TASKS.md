@@ -16,9 +16,16 @@ Ngày khởi tạo: 2026-09-28.
   Ch.5: 10, Ch.8+9: 16, Ch.6+7: 25) — đây là bộ câu hỏi nền tảng nhất của site. Mỗi giải thích chi
   tiết đi từ cách làm tổng quát, mẹo kiểm tra nhanh, tới liên hệ ứng dụng thực tế trên avionics khi
   phù hợp, không chỉ lặp lại phép tính đã có ở `explain`.
-- ⚠️ **CHƯA làm**: `detail` cho 139 câu Floyd, 61 câu Revision Paper và 42 câu tự sinh (`explain` ngắn
-  hiện có vẫn đầy đủ và chính xác, chỉ chưa có bản mở rộng). Đây là việc tiếp theo hợp lý nếu muốn phủ
-  kín toàn bộ 299 câu.
+- [x] Đã viết `detail` (song ngữ) cho **toàn bộ 139 câu trích từ Floyd** (True/False + Self-Test trên
+  cả 4 module: Ch.2 32 câu, Ch.3+4 59 câu, Ch.6 22 câu, Ch.11 26 câu). Xác nhận bằng đếm trực tiếp
+  trong `floyd_quiz_source.py`: 139 `explain=` khớp đúng 139 `detail=` và 139 `detail_en=`, biên dịch
+  sạch, và kiểm tra chéo qua JSON đã build (`data/quiz/*.json`): mục `floyd` có 278 item (139 câu × 2
+  ngôn ngữ), cả 278 đều có trường `detail`. Đã chạy lại `build_quiz.py` (audit vị trí đáp án vẫn trong
+  ngưỡng an toàn, không lệch cực đoan) → `render_site.py` → `check_links.py` (110 link nội bộ, không
+  lỗi) → parse-check HTML (13 file, 0 lỗi) → serve-test cục bộ xác nhận nội dung mới hiển thị đúng.
+- ⚠️ **CHƯA làm**: `detail` cho 61 câu Revision Paper (Tooley) và 42 câu tự sinh (`explain` ngắn hiện
+  có vẫn đầy đủ và chính xác, chỉ chưa có bản mở rộng). Đây là việc tiếp theo hợp lý nếu muốn phủ kín
+  toàn bộ ngân hàng câu hỏi.
 - [x] **Quét và sửa toàn bộ 336 lần dùng dấu em-dash "—"** trên mọi file mã nguồn (`.py`, `.js`,
   `.html`, `.ipynb`) theo đúng yêu cầu của skill `viet-academic-writing`/`en-academic-writing` (cấm
   tuyệt đối em-dash/en-dash). Thay bằng dấu hai chấm, dấu phẩy, hoặc viết lại câu tuỳ ngữ cảnh; đã

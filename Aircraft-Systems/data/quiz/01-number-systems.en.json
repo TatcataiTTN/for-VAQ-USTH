@@ -309,7 +309,8 @@
    ],
    "correct": 1,
    "explain": "Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ: đúng.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #1"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #1",
+   "detail": "<p>A weighted number system is one where each digit's contribution depends on its POSITION, not just the digit itself. Octal fits this exactly: the digit at position i (counted from the right, starting at 0) always carries weight 8ⁱ, the same way decimal uses weight 10ⁱ or binary uses weight 2ⁱ.</p>"
   },
   {
    "q": "The binary number system is a weighted system with two digits.",
@@ -319,7 +320,8 @@
    ],
    "correct": 0,
    "explain": "Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ: đúng.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #2"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #2",
+   "detail": "<p>Binary is the simplest possible weighted system because it has only 2 possible digits (0 and 1). This is exactly why it matches digital hardware so well, which only needs to distinguish two voltage levels (high/low) instead of ten levels the way decimal would require.</p>"
   },
   {
    "q": "MSB stands for most significant bit.",
@@ -329,7 +331,8 @@
    ],
    "correct": 0,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #3"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #3",
+   "detail": "<p>The MSB (Most Significant Bit) is always the bit at the position with the LARGEST weight in a binary number, conventionally written at the LEFTMOST end. Its counterpart is the LSB (Least Significant Bit), the bit at the smallest-weight position, written at the rightmost end.</p>"
   },
   {
    "q": "In hexadecimal, 9 + 1 = 10.",
@@ -339,7 +342,8 @@
    ],
    "correct": 1,
    "explain": "Trong hex, 9+1 = A (10 thập phân được viết là A trong hex), không phải '10'.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #4"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #4",
+   "detail": "<p>In hexadecimal, the string '10' does not mean ten; it means 1×16+0=16. The decimal value ten, written as a SINGLE hex digit, must use the character A (since hex only has 16 digits, 0 through 9 and A through F). This is a very easy mistake to make when first switching from decimal to hex thinking.</p>"
   },
   {
    "q": "The 1's complement of the binary number 1010 is 0101.",
@@ -349,7 +353,8 @@
    ],
    "correct": 1,
    "explain": "Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101: đúng.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #5"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #5",
+   "detail": "<p>The 1's complement has exactly one single step: invert every individual bit, with no addition afterward. For 1010, inverting each bit in turn (1→0, 0→1, 1→0, 0→1) gives 0101. This is the FIRST of the two steps used to form the 2's complement (2's complement = 1's complement + 1).</p>"
   },
   {
    "q": "The 2's complement of the binary number 1111 is 0000.",
@@ -359,7 +364,8 @@
    ],
    "correct": 1,
    "explain": "Bù một của 1111 là 0000, cộng thêm 1 → bù hai = 0001, không phải 0000.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #6"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #6",
+   "detail": "<p>This is a common error from confusing the 1's complement with the 2's complement. The 2's complement always needs BOTH steps: invert the bits, then add 1; the addition step cannot be skipped. For 1111, inverting gives 0000, and adding 1 gives 0001, not just 0000.</p>"
   },
   {
    "q": "The right-most bit in a signed binary number is the sign bit.",
@@ -369,7 +375,8 @@
    ],
    "correct": 0,
    "explain": "Bit dấu nằm ở vị trí NGOÀI CÙNG BÊN TRÁI (MSB), không phải bên phải.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #7"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #7",
+   "detail": "<p>In a signed number representation, the sign bit always coincides with the MSB position: 0 means positive, 1 means negative. Placing the sign bit on the left preserves a consistent way of comparing relative magnitude between numbers, similar to how a minus sign is written at the front of a negative decimal number.</p>"
   },
   {
    "q": "The hexadecimal number system has 16 characters, six of which are alphabetic characters.",
@@ -379,7 +386,8 @@
    ],
    "correct": 0,
    "explain": "0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự: đúng.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #8"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #8",
+   "detail": "<p>Hex needs exactly 16 distinct symbols to represent 16 values from 0 to 15 using a single digit. Since the decimal digit set only has 10 symbols (0-9), hex borrows the first six letters of the alphabet (A through F) to reach the required 16 symbols.</p>"
   },
   {
    "q": "BCD stands for binary coded decimal.",
@@ -389,7 +397,8 @@
    ],
    "correct": 0,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #9"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #9",
+   "detail": "<p>BCD encodes each decimal digit SEPARATELY using 4 bits, unlike plain binary, which encodes the whole number at once. Because it stays tied to the decimal representation, BCD converts back and forth with numeric displays more directly than ordinary binary does.</p>"
   },
   {
    "q": "An error in a given code can be detected by verifying the parity bit.",
@@ -399,7 +408,8 @@
    ],
    "correct": 1,
    "explain": "Đây chính là nguyên lý hoạt động của kiểm tra chẵn lẻ.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #10"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #10",
+   "detail": "<p>A parity bit is added so the total count of 1s across the whole data group, including the parity bit itself, always comes out even (even parity) or always odd (odd parity), by convention. On receipt, simply recounting the 1s reveals a mismatch with the chosen convention whenever at least one bit has flipped due to noise on the line.</p><p>Simple parity's limitation is that it only catches an ODD number of bit errors; if exactly 2 bits flip together, the parity stays consistent and the error slips through undetected.</p>"
   },
   {
    "q": "CRC stands for cyclic redundancy check.",
@@ -409,7 +419,8 @@
    ],
    "correct": 1,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #11"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #11",
+   "detail": "<p>CRC uses modulo-2 polynomial division (essentially repeated XOR) to generate a short check code attached to the data. Compared with simple parity, CRC catches far more kinds of errors, including burst errors spanning several consecutive bits, which is why it is widely used in high-speed data transmission.</p>"
   },
   {
    "q": "The modulo-2 sum of 11 and 10 is 100.",
@@ -419,7 +430,8 @@
    ],
    "correct": 0,
    "explain": "Cộng modulo-2 chính là phép XOR: 11 XOR 10 = 01, không phải 100.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #12"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #12",
+   "detail": "<p>Modulo-2 addition differs from ordinary binary addition in one crucial way: there is NO carry propagating to the next column. Each column is added independently following 0+0=0, 0+1=1, 1+0=1, 1+1=0, which is exactly bitwise XOR. For 11 and 10, XORing each column gives 0 and 1, that is 01, not 100 the way ordinary binary addition with carry would produce.</p>"
   },
   {
    "q": "3 × 10¹ + 4 × 10⁰ is",
@@ -431,7 +443,8 @@
    ],
    "correct": 1,
    "explain": "3×10+4×1 = 30+4 = 34.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #1"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #1",
+   "detail": "<p>This is the explicit expansion of a decimal number as a sum of powers of ten, exactly the definition of a weighted number system. Each term dᵢ×10ⁱ contributes the value of the digit at position i; adding every term together gives the number's full value.</p>"
   },
   {
    "q": "The decimal equivalent of 1000 is",
@@ -443,7 +456,8 @@
    ],
    "correct": 2,
    "explain": "1000₂ = 8₁₀.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #2"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #2",
+   "detail": "<p>The single 1 bit in 1000 sits at position 3 (counting from 0), carrying weight 2³=8. A quick pattern to notice: a binary number with exactly one bit set to 1 is always a power of 2, and that bit's position tells you the exponent directly.</p>"
   },
   {
    "q": "The binary number 11011101 is equal to the decimal number",
@@ -455,7 +469,8 @@
    ],
    "correct": 2,
    "explain": "128+64+16+8+4+1 = 221.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #3"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #3",
+   "detail": "<p>Sum only the weights at positions where the bit is 1: 11011101 has 1s at the weight positions 128, 64, 16, 8, 4 and 1, adding up to 221. This method works for any binary number, regardless of length.</p>"
   },
   {
    "q": "The decimal number 21 is equivalent to the binary number",
@@ -467,7 +482,8 @@
    ],
    "correct": 3,
    "explain": "16+4+1 = 21 → 10101₂.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #4"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #4",
+   "detail": "<p>Subtract the largest weight that still fits: 21 contains 16 (leaving 5), 5 contains 4 (leaving 1), 1 contains 1 (leaving 0). The weight positions used (16, 4, 1) get a bit of 1, the remaining positions (8, 2) get 0, giving 10101.</p>"
   },
   {
    "q": "The decimal number 250 is equivalent to the binary number",
@@ -479,7 +495,8 @@
    ],
    "correct": 0,
    "explain": "128+64+32+16+8+2 = 250 → 11111010₂.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #5"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #5",
+   "detail": "<p>250 is close to 256 (=2⁸), so most of the high-order bits are set to 1; it is simply missing the weights 4 and 1 compared with the 8-bit maximum value of 255. Recognising a number close to 2ⁿ helps predict its binary shape quickly before working out the exact detail.</p>"
   },
   {
    "q": "The sum of 1111 + 1111 in binary equals",
@@ -491,7 +508,8 @@
    ],
    "correct": 3,
    "explain": "15+15 = 30 = 11110₂.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #6"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #6",
+   "detail": "<p>1111₂ equals decimal 15, so the addition is really 15+15=30. Converting 30 to binary: 30=16+8+4+2, giving 11110. As a check, adding column by column directly in binary, with carries propagating, must also produce this same result.</p>"
   },
   {
    "q": "The difference of 1000 − 100 equals",
@@ -503,7 +521,8 @@
    ],
    "correct": 1,
    "explain": "8−4 = 4 = 100₂.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #7"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #7",
+   "detail": "<p>1000₂=8 and 100₂=4, so the subtraction is 8−4=4, and 4 written in binary is exactly 100. For binary numbers this simple, converting to decimal to compute and then converting back is often faster than subtracting column by column in binary directly.</p>"
   },
   {
    "q": "The 1's complement of 11110000 is",
@@ -515,7 +534,8 @@
    ],
    "correct": 1,
    "explain": "Đảo từng bit: 1→0, 0→1 → 00001111.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #8"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #8",
+   "detail": "<p>The 1's complement only inverts bits, with no addition afterward. 11110000, inverted bit by bit, gives 00001111. This is the intermediate step normally used before computing the 2's complement (2's complement = 1's complement + 1).</p>"
   },
   {
    "q": "The 2's complement of 11001100 is",
@@ -527,7 +547,8 @@
    ],
    "correct": 2,
    "explain": "Bù một = 00110011, cộng 1 → 00110100.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #9"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #9",
+   "detail": "<p>Two clear steps: inverting 11001100 gives 00110011, then adding 1 (00110011+1=00110100). Always perform invert first, then add; reversing the order gives a wrong result.</p>"
   },
   {
    "q": "The decimal number +122 is expressed in the 2's complement form as",
@@ -539,7 +560,8 @@
    ],
    "correct": 3,
    "explain": "122 = 64+32+16+8+2 → 01111010 (số dương giữ nguyên dạng nhị phân thường).",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #10"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #10",
+   "detail": "<p>An easily overlooked point: a POSITIVE number in two's complement representation keeps its ordinary binary form, with no inverting or adding needed, as long as there are enough bits and the sign bit (MSB) is 0. The invert-then-add-1 procedure only applies when representing a NEGATIVE number.</p>"
   },
   {
    "q": "The decimal number −34 is expressed in the 2's complement form as",
@@ -551,7 +573,8 @@
    ],
    "correct": 2,
    "explain": "34 = 00100010, bù một = 11011101, cộng 1 → 11011110.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #11"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #11",
+   "detail": "<p>The full three-step process for a NEGATIVE number: write the magnitude in ordinary binary (34=00100010), invert every bit (11011101), then add 1 (11011110). The result's sign bit (MSB) automatically becomes 1, matching the negative-number convention.</p>"
   },
   {
    "q": "A single-precision floating-point binary number has a total of",
@@ -563,7 +586,8 @@
    ],
    "correct": 1,
    "explain": "Chuẩn IEEE 754 single-precision dùng 32 bit.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #12"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #12",
+   "detail": "<p>The IEEE 754 standard splits a single-precision number's 32 bits into 3 parts: 1 sign bit, 8 exponent bits, and 23 mantissa (fraction) bits. This split lets both very large and very small numbers be represented within the same fixed-length format.</p>"
   },
   {
    "q": "In the 2's complement form, the binary number 10010011 is equal to the decimal number",
@@ -575,7 +599,8 @@
    ],
    "correct": 1,
    "explain": "Bit dấu=1 (âm). Bù một của 10010011 = 01101100, +1 = 01101101 = 109 → giá trị gốc = −109.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #13"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #13",
+   "detail": "<p>To read a negative two's-complement number back to decimal, reverse the encoding process: invert the bits and add 1 to find the MAGNITUDE, then attach a negative sign since the original sign bit was 1. For 10010011, inverting gives 01101100, adding 1 gives 01101101=109, so the original value is −109.</p>"
   },
   {
    "q": "The binary number 101100111001010100001 can be written in octal as",
@@ -587,7 +612,8 @@
    ],
    "correct": 0,
    "explain": "Nhóm 3 bit từ phải, đệm trái đủ nhóm, rồi đổi từng nhóm sang 1 chữ số bát phân.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #14"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #14",
+   "detail": "<p>Because 2³=8, each octal digit corresponds exactly to 3 binary bits. For a 21-bit string, group from right to left into clusters of 3, padding the leftmost cluster with zeros if needed, then convert each cluster to a digit from 0 to 7.</p>"
   },
   {
    "q": "The binary number 10001101010001101111 can be written in hexadecimal as",
@@ -599,7 +625,8 @@
    ],
    "correct": 1,
    "explain": "Nhóm 4 bit từ phải: 1000 1101 0100 0110 1111 → 8 D 4 6 F.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #15"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #15",
+   "detail": "<p>Converting binary to hex only requires grouping into 4s, with no need to compute a decimal intermediate value. Each 4-bit cluster converts directly to exactly one hex character using the 0000-1111 to 0-F lookup.</p>"
   },
   {
    "q": "The binary number for F7A9₁₆ is",
@@ -611,7 +638,8 @@
    ],
    "correct": 3,
    "explain": "F=1111, 7=0111, A=1010, 9=1001 → 1111 0111 1010 1001.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #16"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #16",
+   "detail": "<p>Working the other way: each hex character is replaced by its own 4-bit binary code, with the groups joined back in their original order. Leading zeros within each 4-bit group must not be dropped, since doing so would shift the position of the following bits.</p>"
   },
   {
    "q": "The BCD number for decimal 473 is",
@@ -623,7 +651,8 @@
    ],
    "correct": 1,
    "explain": "4→0100, 7→0111, 3→0011 → ghép lại 010001110011, đúng phương án (c).",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #17"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #17",
+   "detail": "<p>Each decimal digit of 473 (4, 7, 3) is converted separately to its own 4-bit BCD code, rather than converting the whole number 473 to binary at once. This is the core difference between BCD and plain binary, and it is easy to get wrong if 473 is accidentally converted as a single ordinary binary number.</p>"
   },
   {
    "q": "Refer to Table 2-7. The command STOP in ASCII is",
@@ -635,7 +664,8 @@
    ],
    "correct": 1,
    "explain": "Ghép mã ASCII 7-bit của từng ký tự S-T-O-P theo Bảng 2-7 trong sách (đáp án lấy theo answer key gốc của Floyd).",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #18"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #18",
+   "detail": "<p>ASCII encodes each INDIVIDUAL character with a fixed 7 bits, so a longer string of text is simply those 7-bit codes concatenated in the order the characters appear. Looking up the correct ASCII table (Table 2-7 in the book) is required, since no formula can substitute for the table lookup on each character.</p>"
   },
   {
    "q": "The code that has an even-parity error is",
@@ -647,7 +677,8 @@
    ],
    "correct": 0,
    "explain": "Đếm số bit 1: 1010011→4(chẵn), 1101000→3(lẻ), 1001000→2(chẵn), 1110111→6(chẵn). Với quy ước parity chẵn, mã có SỐ BIT 1 LẺ là mã lỗi → 1101000.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #19"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #19",
+   "detail": "<p>Under the even-parity convention, a VALID code always has an even total count of 1 bits. Counting the 1s in all four options, only 1101000 comes out odd (3 ones), so it is the only one violating the convention, meaning it is the faulty code.</p>"
   },
   {
    "q": "In the cyclic redundancy check, the absence of errors is indicated by",
@@ -659,7 +690,8 @@
    ],
    "correct": 0,
    "explain": "Không có lỗi khi phép chia CRC cho số dư bằng 0.",
-   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #20"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #20",
+   "detail": "<p>CRC works by dividing the data, treated as a binary polynomial, by a fixed generator polynomial using modulo-2 division. If the received data was not corrupted in transit, this division always yields a remainder of 0, exactly as it did during encoding; a nonzero remainder is a definite sign of an error.</p>"
   }
  ],
  "generated": [

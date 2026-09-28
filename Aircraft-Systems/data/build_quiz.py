@@ -485,13 +485,19 @@ MODULES = {
 TF_OPTS = {"vi": ["Đúng", "Sai"], "en": ["True", "False"]}
 
 def floyd_tf_to_item(it, chapter_label, idx):
-    return dict(q=it["vi"], en=it["en"], opts=list(TF_OPTS["vi"]),
-                correct=0 if it["correct"] else 1,
-                explain=it["explain"], src=f"{chapter_label} · True/False #{idx}")
+    d = dict(q=it["vi"], en=it["en"], opts=list(TF_OPTS["vi"]),
+             correct=0 if it["correct"] else 1,
+             explain=it["explain"], src=f"{chapter_label} · True/False #{idx}")
+    if it.get("detail"): d["detail"] = it["detail"]
+    if it.get("detail_en"): d["detail_en"] = it["detail_en"]
+    return d
 
 def floyd_st_to_item(it, chapter_label, idx):
-    return dict(q=it["vi"], en=it["en"], opts=list(it["opts"]), correct=it["correct"],
-                explain=it["explain"], src=f"{chapter_label} · Self-Test #{idx}")
+    d = dict(q=it["vi"], en=it["en"], opts=list(it["opts"]), correct=it["correct"],
+             explain=it["explain"], src=f"{chapter_label} · Self-Test #{idx}")
+    if it.get("detail"): d["detail"] = it["detail"]
+    if it.get("detail_en"): d["detail_en"] = it["detail_en"]
+    return d
 
 for slug, d in MODULES.items():
     fm = FLOYD_MODULES[slug]

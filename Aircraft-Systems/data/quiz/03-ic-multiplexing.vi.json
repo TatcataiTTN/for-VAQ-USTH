@@ -284,7 +284,8 @@
    ],
    "correct": 1,
    "explain": "Đúng theo định nghĩa half-adder.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #1"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #1",
+   "detail": "<p>Half-adder là mạch cộng đơn giản nhất, chỉ xử lý đúng 2 bit đầu vào (A, B) mà không tính tới bit nhớ từ tầng trước, nên chỉ dùng được cho vị trí bit thấp nhất (LSB) khi cộng hai số nhiều bit.</p>"
   },
   {
    "q": "Bộ cộng bán phần chỉ có đầu ra nhớ (carry output).",
@@ -294,7 +295,8 @@
    ],
    "correct": 0,
    "explain": "Half-adder có 2 đầu ra: tổng (Σ) VÀ nhớ (Carry), không phải chỉ có carry.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #2"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #2",
+   "detail": "<p>Half-adder luôn tạo ra ĐỦ HAI đầu ra: tổng (Σ=A XOR B) và nhớ ra (Cout=A AND B). Thiếu một trong hai đầu ra này sẽ không đủ thông tin để cộng đúng, vì bản thân bit tổng và bit nhớ mang hai ý nghĩa hoàn toàn khác nhau trong phép cộng nhị phân.</p>"
   },
   {
    "q": "Bộ cộng toàn phần (full adder) cộng hai bit và tạo ra hai đầu ra.",
@@ -304,7 +306,8 @@
    ],
    "correct": 0,
    "explain": "Full adder cộng BA đầu vào (2 bit dữ liệu + 1 bit nhớ vào Cin), không phải chỉ 2 bit.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #3"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #3",
+   "detail": "<p>Điểm khác biệt cốt lõi giữa half-adder và full-adder nằm ở chỗ full-adder có THÊM một đầu vào Cin (carry-in) để nhận bit nhớ từ tầng thấp hơn. Nhờ vậy, full-adder có thể ghép nối tiếp nhiều tầng để cộng hai số nhị phân dài bao nhiêu bit cũng được.</p>"
   },
   {
    "q": "Bộ cộng toàn phần chỉ có thể hiện thực bằng cổng XOR 2 đầu vào.",
@@ -314,7 +317,8 @@
    ],
    "correct": 1,
    "explain": "Full adder cần kết hợp cả XOR VÀ AND/OR để tạo carry-out, không chỉ dùng XOR.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #4"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #4",
+   "detail": "<p>XOR đơn thuần chỉ tính đúng bit TỔNG (Σ=A⊕B⊕Cin), nhưng không thể tự nó tạo ra bit NHỚ RA đúng vì carry-out phụ thuộc vào việc có ÍT NHẤT HAI trong ba bit đầu vào cùng bằng 1, một điều kiện cần thêm cổng AND và OR mới biểu diễn được.</p>"
   },
   {
    "q": "Khi hai bit đầu vào đều là 1 và bit nhớ vào cũng là 1, đầu ra tổng của bộ cộng toàn phần là 1.",
@@ -324,7 +328,8 @@
    ],
    "correct": 1,
    "explain": "1+1+1=11₂ → tổng (Σ)=1, nhớ ra (Cout)=1: đúng, tổng bằng 1.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #5"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #5",
+   "detail": "<p>Khi cả 3 đầu vào của full-adder (A, B, Cin) đều bằng 1, tổng số học là 1+1+1=3, viết dưới dạng nhị phân 2-bit là 11. Bit thấp của kết quả này (=1) chính là Σ, còn bit cao (=1) chính là Cout, khớp đúng với phát biểu.</p>"
   },
   {
    "q": "Đầu ra của bộ so sánh (comparator) bằng 0 khi hai số nhị phân đầu vào bằng nhau.",
@@ -334,7 +339,8 @@
    ],
    "correct": 1,
    "explain": "Khi hai số bằng nhau, đầu ra 'A=B' của comparator ở mức tích cực (thường là 1/HIGH), không phải 0.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #6"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #6",
+   "detail": "<p>Một bộ so sánh độ lớn (magnitude comparator) chuẩn luôn có 3 đầu ra riêng biệt: A>B, A<B, và A=B, mỗi đầu ra chỉ tích cực (thường ở mức HIGH) đúng khi điều kiện tương ứng đúng. Khi hai số bằng nhau, chính đầu ra A=B mới lên mức tích cực, không phải một đầu ra chung nào đó về 0.</p>"
   },
   {
    "q": "Bộ giải mã (decoder) phát hiện sự hiện diện của một tổ hợp bit đầu vào cụ thể.",
@@ -344,7 +350,8 @@
    ],
    "correct": 0,
    "explain": "Đúng theo chức năng cơ bản của decoder.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #7"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #7",
+   "detail": "<p>Một decoder về bản chất là một mạch 'nhận diện mẫu': nó theo dõi các đường đầu vào và chỉ kích hoạt đúng MỘT đường đầu ra tương ứng khi tổ hợp bit đầu vào khớp với đúng mã mà đường ra đó đại diện, còn lại mọi đường ra khác đều không tích cực.</p>"
   },
   {
    "q": "Bộ giải mã 4-sang-10 đường và bộ giải mã 1-trong-10 là hai loại khác nhau.",
@@ -354,7 +361,8 @@
    ],
    "correct": 0,
    "explain": "Đây thực chất là CÙNG MỘT loại thiết bị được gọi theo 2 tên khác nhau, không phải hai loại khác nhau.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #8"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #8",
+   "detail": "<p>'4-line-to-10-line decoder' mô tả decoder theo SỐ ĐƯỜNG VÀO/RA vật lý (4 đường vào mã hoá nhị phân, 10 đường ra), còn '1-of-10 decoder' mô tả CHỨC NĂNG của nó (chọn ra đúng 1 trong 10 đường ra). Cả hai tên gọi chỉ cùng một loại IC decoder BCD-sang-thập-phân quen thuộc, không phải hai thiết kế khác nhau.</p>"
   },
   {
    "q": "Bộ mã hoá (encoder) về cơ bản thực hiện chức năng ngược lại với bộ giải mã.",
@@ -364,7 +372,8 @@
    ],
    "correct": 0,
    "explain": "Đúng: encoder và decoder là hai chức năng ngược nhau.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #9"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #9",
+   "detail": "<p>Decoder nhận một mã nhị phân gọn và kích hoạt đúng một trong nhiều đường ra tương ứng; encoder làm NGƯỢC LẠI, nhận tín hiệu tích cực trên một trong nhiều đường vào và tạo ra đúng mã nhị phân gọn tương ứng với đường vào đó. Hai mạch này thường xuất hiện thành cặp trong hệ thống bàn phím và mã hoá địa chỉ.</p>"
   },
   {
    "q": "Bộ dồn kênh (multiplexer) là mạch logic cho phép dữ liệu số từ một nguồn duy nhất được định tuyến ra nhiều đường.",
@@ -374,7 +383,8 @@
    ],
    "correct": 1,
    "explain": "Đây là mô tả của DEMULTIPLEXER (1 vào, nhiều ra); multiplexer làm NGƯỢC LẠI: nhiều nguồn vào, chọn ra 1 đường.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #10"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · True/False #10",
+   "detail": "<p>Multiplexer và demultiplexer thường bị nhầm lẫn vì tên gọi gần giống nhau nhưng chức năng hoàn toàn ngược nhau. Multiplexer CHỌN 1 trong NHIỀU nguồn vào để đưa ra 1 đường ra duy nhất (nhiều-vào, một-ra); demultiplexer PHÂN PHỐI 1 nguồn vào duy nhất ra 1 trong NHIỀU đường ra (một-vào, nhiều-ra), đúng như mô tả trong câu hỏi.</p>"
   },
   {
    "q": "Bộ cộng bán phần (half-adder) được đặc trưng bởi:",
@@ -386,7 +396,8 @@
    ],
    "correct": 0,
    "explain": "Half-adder: 2 đầu vào (A,B), 2 đầu ra (Σ, Cout).",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #1"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #1",
+   "detail": "<p>Bốn kết hợp số đầu vào/đầu ra trong các phương án đều dễ nhầm nếu không nhớ rõ định nghĩa. Cách chắc ăn nhất là hình dung sơ đồ khối: half-adder chỉ có 2 mũi tên đi vào (A, B) và 2 mũi tên đi ra (Σ, Cout), không hơn không kém.</p>"
   },
   {
    "q": "Bộ cộng toàn phần (full-adder) được đặc trưng bởi:",
@@ -398,7 +409,8 @@
    ],
    "correct": 1,
    "explain": "Full-adder: 3 đầu vào (A,B,Cin), 2 đầu ra (Σ, Cout).",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #2"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #2",
+   "detail": "<p>So với half-adder, full-adder có THÊM đúng 1 đầu vào (Cin), nhưng số đầu ra vẫn giữ nguyên là 2 (Σ, Cout). Đây là chi tiết dễ nhớ nhầm: nhiều người tưởng full-adder cũng có nhiều đầu ra hơn, nhưng thực ra chỉ số đầu VÀO tăng thêm.</p>"
   },
   {
    "q": "Đầu vào bộ cộng toàn phần là A=1, B=0, Cin=1. Đầu ra là:",
@@ -410,7 +422,8 @@
    ],
    "correct": 2,
    "explain": "1+0+1 = 10₂ (thập phân 2) → bit tổng Σ=0, bit nhớ Cout=1.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #3"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #3",
+   "detail": "<p>Cách làm nhanh cho bất kỳ tổ hợp full-adder nào: cộng đơn giản A+B+Cin theo số học thông thường (1+0+1=2), rồi đổi kết quả sang nhị phân 2-bit (2=10₂). Bit thấp của số nhị phân đó luôn là Σ, bit cao luôn là Cout.</p>"
   },
   {
    "q": "Một bộ cộng song song 3-bit có thể cộng:",
@@ -422,7 +435,8 @@
    ],
    "correct": 2,
    "explain": "Bộ cộng song song n-bit cộng hai số n-bit cùng lúc; với n=3 → cộng hai số 3-bit.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #4"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #4",
+   "detail": "<p>'Song song' (parallel) trong tên gọi ám chỉ việc TẤT CẢ các bit của cả hai số được đưa vào cùng một lúc trên các đường dây riêng biệt, khác với bộ cộng nối tiếp (serial adder) xử lý từng bit một qua nhiều chu kỳ xung nhịp. Một bộ cộng song song n-bit luôn cộng đúng hai số có n bit mỗi số.</p>"
   },
   {
    "q": "Để mở rộng bộ cộng song song 2-bit thành 4-bit, bạn phải:",
@@ -434,7 +448,8 @@
    ],
    "correct": 3,
    "explain": "Ghép tầng (cascade) bằng cách nối Carry-out của tầng thấp vào Carry-in của tầng cao: đúng nguyên lý bộ cộng gợn sóng (ripple carry).",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #5"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #5",
+   "detail": "<p>Nguyên tắc mở rộng độ rộng bit của bộ cộng luôn giống nhau: nối Cout của tầng LOW hơn vào Cin của tầng CAO hơn kế tiếp, để bit nhớ 'gợn sóng' (ripple) từ tầng thấp lên tầng cao đúng như phép cộng tay thông thường. Ghép 2 bộ cộng 2-bit theo cách này tạo thành đúng 1 bộ cộng 4-bit hoàn chỉnh.</p>"
   },
   {
    "q": "Nếu IC so sánh độ lớn 74HC85 có A=1000 và B=1010, đầu ra là:",
@@ -446,7 +461,8 @@
    ],
    "correct": 0,
    "explain": "A=8, B=10 → A<B đúng (=1), A>B sai (=0), A=B sai (=0).",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #6"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #6",
+   "detail": "<p>Trước khi tra bảng chân trị của IC so sánh, luôn đổi các số nhị phân về thập phân để so sánh trực quan trước: 1000=8 và 1010=10, rõ ràng 8<10. Từ đó suy ra ngay đầu ra nào tích cực (A<B=1) và hai đầu ra còn lại chắc chắn không tích cực (=0).</p>"
   },
   {
    "q": "Nếu bộ giải mã 1-trong-16 với đầu ra tích cực mức thấp có đầu ra decimal 12 ở mức LOW, đầu vào là:",
@@ -458,7 +474,8 @@
    ],
    "correct": 3,
    "explain": "12 thập phân = 1100 nhị phân.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #7"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #7",
+   "detail": "<p>Với bộ giải mã, luôn cần đổi đúng số hiệu đầu ra thập phân sang mã nhị phân tương ứng trên các đường địa chỉ A3A2A1A0 trước khi so sánh với các phương án. 12 thập phân đổi sang nhị phân 4-bit là 1100, khớp trực tiếp với một trong các phương án mà không cần suy luận gì thêm về hoạt động bên trong IC.</p>"
   },
   {
    "q": "Bộ giải mã BCD-sang-7-đoạn có đầu vào 0100. Các đầu ra tích cực là:",
@@ -470,7 +487,8 @@
    ],
    "correct": 1,
    "explain": "0100₂=4 thập phân; hiển thị số 4 trên LED 7 đoạn cần sáng các đoạn b,c,f,g.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #8"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #8",
+   "detail": "<p>Bài toán này cần kết hợp hai bước: đổi mã BCD đầu vào sang chữ số thập phân (0100=4), rồi tra bảng quy ước 7 đoạn để biết chữ số đó cần sáng đúng những đoạn nào. Số 4 trên hiển thị 7 đoạn có hình dạng đặc trưng chỉ sáng 4 trong 7 đoạn (b, c, f, g), không sáng đoạn a, d, e.</p>"
   },
   {
    "q": "Nếu bộ mã hoá ưu tiên bát phân-sang-nhị phân có các đầu vào 0,2,5,6 ở mức tích cực, đầu ra nhị phân tích cực mức cao là:",
@@ -482,7 +500,8 @@
    ],
    "correct": 1,
    "explain": "Ưu tiên chọn đầu vào có chỉ số CAO NHẤT trong các đầu vào tích cực {0,2,5,6} → chọn 6 → mã nhị phân 110.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #9"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #9",
+   "detail": "<p>Điểm khác biệt cốt lõi của encoder ƯU TIÊN so với encoder thường: khi CÓ NHIỀU đầu vào cùng tích cực một lúc, nó chỉ mã hoá đúng đầu vào có SỐ HIỆU CAO NHẤT, bỏ qua các đầu vào tích cực khác có số hiệu thấp hơn. Với {0,2,5,6} cùng tích cực, số hiệu cao nhất là 6, đổi sang nhị phân 3-bit là 110.</p>"
   },
   {
    "q": "Nói chung, một bộ dồn kênh (multiplexer) có:",
@@ -494,7 +513,8 @@
    ],
    "correct": 2,
    "explain": "Đúng định nghĩa multiplexer: nhiều đầu vào, 1 đầu ra, chọn bằng các đường select.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #10"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #10",
+   "detail": "<p>Cấu trúc chuẩn của multiplexer luôn theo đúng mẫu 'nhiều-vào, một-ra': nhiều đường dữ liệu vào, một đường dữ liệu ra duy nhất, và một số đường CHỌN (select) riêng biệt quyết định đường vào nào được nối tới đầu ra tại một thời điểm.</p>"
   },
   {
    "q": "Bộ phân phối dữ liệu (data distributor) về cơ bản giống với:",
@@ -506,7 +526,8 @@
    ],
    "correct": 3,
    "explain": "'Data distributor' là tên gọi khác của demultiplexer.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #11"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #11",
+   "detail": "<p>Cái tên 'data distributor' mô tả đúng chức năng của demultiplexer theo góc nhìn khác: nó PHÂN PHỐI (distribute) một luồng dữ liệu đầu vào duy nhất tới đúng một trong nhiều điểm đến, tương tự cách một trạm phân phối bưu kiện gửi từng gói hàng tới đúng địa chỉ nhận.</p>"
   },
   {
    "q": "Mã nào sau đây có chẵn lẻ chẵn (even parity)?",
@@ -520,7 +541,8 @@
    ],
    "correct": 1,
    "explain": "10011000 có 3 bit 1 (lẻ). 01111000 có 4 bit 1 (chẵn) ✓. 11111111 có 8 bit 1 (chẵn) ✓. 11010101 có 5 bit 1 (lẻ). Vậy chỉ (b) và (c) có parity chẵn.",
-   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #12"
+   "src": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #12",
+   "detail": "<p>Cách kiểm tra parity chẵn luôn giống nhau: đếm số bit 1 trong toàn bộ mã, số chẵn thì đạt parity chẵn, số lẻ thì không. Với 4 mã trong câu hỏi, chỉ 2 mã (b) và (c) có số bit 1 là số chẵn, nên đáp án đúng phải chọn CẢ HAI, không phải chỉ một mã riêng lẻ.</p>"
   }
  ],
  "generated": [
