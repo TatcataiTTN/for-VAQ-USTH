@@ -274,6 +274,128 @@
    "correct": 1,
    "explain": "Segmentation kết hợp segment+offset giúp CPU 16-bit địa chỉ hoá vùng nhớ lớn hơn khả năng thanh ghi 16-bit thuần tuý.",
    "src": "Tooley Ch.7 Q22"
+  },
+  {
+   "q": "The main constituents of a computer are:",
+   "opts": [
+    "ALU, accumulator, thanh ghi",
+    "CPU, ROM, RAM, I/O",
+    "CPU, ALU, accumulator, clock"
+   ],
+   "correct": 1,
+   "explain": "4 khối chính tạo nên một hệ máy tính hoàn chỉnh: CPU (xử lý), ROM (bộ nhớ chương trình cố định), RAM (bộ nhớ tạm), I/O (vào/ra).",
+   "src": "Tooley Revision Paper 2 Q19"
+  },
+  {
+   "q": "The integrated circuits shown in Figure A2.7 are:",
+   "opts": [
+    "thiết bị RAM",
+    "bộ nhớ flash",
+    "thiết bị UV-EPROM"
+   ],
+   "correct": 2,
+   "explain": "Ký hiệu '27xxx' là quy ước đặt tên chuẩn cho EPROM xoá bằng tia UV (UV-EPROM).",
+   "src": "Tooley Revision Paper 2 Q8",
+   "img": "../../../assets/figures/tooley_A2_7.png"
+  },
+  {
+   "q": "The number of individual addresses that can be addressed by a processor that has a 16-bit address bus is:",
+   "opts": [
+    "32.768",
+    "16.384",
+    "65.536"
+   ],
+   "correct": 2,
+   "explain": "2¹⁶ = 65.536 địa chỉ khác nhau.",
+   "src": "Tooley Revision Paper 3 Q4"
+  },
+  {
+   "q": "In a static memory circuit:",
+   "opts": [
+    "được giữ lại vô thời hạn (chừng nào còn cấp điện)",
+    "cần được làm tươi liên tục dù đang cấp điện",
+    "mất ngay khi ngắt điện"
+   ],
+   "correct": 0,
+   "explain": "SRAM giữ dữ liệu ổn định suốt thời gian còn cấp điện, KHÔNG cần chu trình refresh như DRAM (nhưng vẫn mất dữ liệu nếu ngắt điện — đây là điểm khác 'retained indefinitely' với 'non-volatile').",
+   "src": "Tooley Revision Paper 4 Q2"
+  },
+  {
+   "q": "How many 16K×4-bit DRAM devices are needed to provide 64K bytes of storage:",
+   "opts": [
+    "16",
+    "4",
+    "8"
+   ],
+   "correct": 2,
+   "explain": "16K×4bit = 8KB/chip; 64KB ÷ 8KB = 8 chip.",
+   "src": "Tooley Revision Paper 6 Q10"
+  },
+  {
+   "q": "Bus arbitration is required in order to:",
+   "opts": [
+    "giảm lỗi do nhiễu và EMI",
+    "ngăn mất dữ liệu bộ nhớ",
+    "tránh tranh chấp bus (bus contention)"
+   ],
+   "correct": 2,
+   "explain": "Bus arbitration quyết định thiết bị nào được quyền dùng bus, tránh nhiều thiết bị truyền cùng lúc gây xung đột (bus contention).",
+   "src": "Tooley Revision Paper 6 Q11"
+  },
+  {
+   "q": "The clock oscillator in a microprocessor system provides:",
+   "opts": [
+    "tín hiệu sóng sin tần số chính xác",
+    "tín hiệu sóng vuông tần số chính xác",
+    "chuỗi xung chữ nhật từ bộ dao động tự do"
+   ],
+   "correct": 1,
+   "explain": "Clock oscillator chuẩn tạo tín hiệu sóng vuông (square wave) ổn định tần số để đồng bộ toàn hệ thống.",
+   "src": "Tooley Revision Paper 6 Q12"
+  },
+  {
+   "q": "In a microprocessor system, faster processing can be achieved by means of:",
+   "opts": [
+    "bus địa chỉ/dữ liệu dồn kênh",
+    "instruction pipelining",
+    "tập lệnh phức tạp (CISC)"
+   ],
+   "correct": 1,
+   "explain": "Instruction pipelining cho phép chồng lấn các giai đoạn fetch/decode/execute của nhiều lệnh, tăng thông lượng.",
+   "src": "Tooley Revision Paper 6 Q13"
+  },
+  {
+   "q": "A computer has 2K bytes of RAM. How many 32-bit words can be stored in this memory?",
+   "opts": [
+    "512",
+    "16384",
+    "8192"
+   ],
+   "correct": 0,
+   "explain": "2K byte = 2048 byte; mỗi từ 32-bit = 4 byte; 2048÷4 = 512 từ.",
+   "src": "Tooley Revision Paper 8 Q6"
+  },
+  {
+   "q": "Which one of the following describes the function of a ROM in a computer system?",
+   "opts": [
+    "lưu trữ tạm thời chương trình và dữ liệu",
+    "lưu trữ bán vĩnh viễn chỉ cho chương trình",
+    "lưu trữ vĩnh viễn chương trình và dữ liệu"
+   ],
+   "correct": 2,
+   "explain": "ROM là bộ nhớ chỉ đọc, không mất dữ liệu khi mất điện → lưu trữ vĩnh viễn chương trình/dữ liệu cố định.",
+   "src": "Tooley Revision Paper 8 Q7"
+  },
+  {
+   "q": "When a computer is first initialised, the code responsible for performing bootstrap operations is stored in:",
+   "opts": [
+    "CPU",
+    "RAM",
+    "ROM"
+   ],
+   "correct": 2,
+   "explain": "Mã bootstrap phải tồn tại sẵn trước khi RAM được nạp dữ liệu → lưu trong ROM (thường là loại flash ROM/BIOS).",
+   "src": "Tooley Revision Paper 8 Q18"
   }
  ],
  "floyd": [

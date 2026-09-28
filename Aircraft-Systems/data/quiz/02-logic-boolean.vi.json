@@ -65,6 +65,310 @@
    "correct": 2,
    "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.",
    "src": "Tooley Ch.5 Q9"
+  },
+  {
+   "q": "Thiết bị logic trong Hình 5.30 là:",
+   "opts": [
+    "cổng NOR",
+    "cổng exclusive-OR",
+    "cổng OR"
+   ],
+   "correct": 0,
+   "explain": "Ký hiệu OR có vòng tròn đảo ở đầu ra = NOR.",
+   "src": "Tooley Ch.5 Q1",
+   "img": "../../../assets/figures/tooley_fig5_30.png"
+  },
+  {
+   "q": "Thiết bị trong Hình 5.31 (chip khắc 'HD74LS08P') là:",
+   "opts": [
+    "thiết bị TTL công suất thấp Schottky",
+    "thiết bị TTL mật độ cao chuẩn",
+    "thiết bị CMOS có đệm"
+   ],
+   "correct": 0,
+   "explain": "Ký hiệu '74LS08' — 'LS' = Low-power Schottky TTL, đọc trực tiếp trên chip.",
+   "src": "Tooley Ch.5 Q5",
+   "img": "../../../assets/figures/tooley_fig5_31.png"
+  },
+  {
+   "q": "Sắp xếp cổng logic trong Hình 5.32 (2 cổng đảo A,B rồi qua 2 cổng AND chéo, kết hợp bằng OR) thực hiện cùng chức năng với:",
+   "opts": [
+    "cổng exclusive-OR",
+    "cổng NOR",
+    "cổng NAND"
+   ],
+   "correct": 0,
+   "explain": "Y = A'B + AB' = A XOR B — đúng cấu trúc kinh điển dựng cổng XOR từ NOT+AND+OR.",
+   "src": "Tooley Ch.5 Q7",
+   "img": "../../../assets/figures/tooley_fig5_32.png"
+  },
+  {
+   "q": "Bảng chân trị A B Y: (0,0→1)(0,1→0)(1,0→0)(1,1→0) (Hình 5.33) là bảng của:",
+   "opts": [
+    "cổng OR 2 đầu vào",
+    "cổng NOR 2 đầu vào"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 1 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng NOR (chỉ có 2 lựa chọn trong câu gốc).",
+   "src": "Tooley Ch.5 Q10"
+  },
+  {
+   "q": "Trong mạch Hình A2.5, A=1,B=1,C=1,D=1. Hai đầu ra X và Y sẽ là:",
+   "opts": [
+    "X=1 và Y=0",
+    "X=0 và Y=0",
+    "X=0 và Y=1"
+   ],
+   "correct": 0,
+   "explain": "X=OR(A,B)=1+1=1. Y=AND(A,B,C,D')=1·1·1·0=0 (vì D'=NOT(1)=0). Vậy X=1,Y=0.",
+   "src": "Tooley Revision Paper 2 Q5",
+   "img": "../../../assets/figures/tooley_A2_5.png"
+  },
+  {
+   "q": "Thiết bị logic trong Hình A2.6 (chip khắc 'SN74LS139AN') là:",
+   "opts": [
+    "thiết bị TTL chuẩn",
+    "thiết bị TTL công suất thấp Schottky",
+    "thiết bị CMOS tốc độ thấp"
+   ],
+   "correct": 1,
+   "explain": "Ký hiệu '74LS' = Low-power Schottky TTL — đọc trực tiếp trên chip.",
+   "src": "Tooley Revision Paper 2 Q6",
+   "img": "../../../assets/figures/tooley_A2_6.png"
+  },
+  {
+   "q": "Sắp xếp cổng logic trong Hình A2.9 (2 cổng NAND ghép nối tiếp, đầu ra cổng 1 nối cả 2 đầu vào cổng 2) tạo ra hàm logic:",
+   "opts": [
+    "hàm OR",
+    "hàm AND",
+    "hàm NAND"
+   ],
+   "correct": 1,
+   "explain": "NAND đầu tiên: (AB)'. NAND thứ 2 nhận cùng tín hiệu (AB)' ở cả 2 đầu vào → hoạt động như cổng đảo: NOT((AB)')=AB. Kết quả = hàm AND.",
+   "src": "Tooley Revision Paper 2 Q11"
+  },
+  {
+   "q": "Một đặc tính điển hình của logic CMOS là:",
+   "opts": [
+    "chịu điện áp cao",
+    "công suất tiêu thụ cao",
+    "công suất tiêu thụ thấp"
+   ],
+   "correct": 2,
+   "explain": "CMOS nổi tiếng vì dòng tĩnh cực thấp → công suất tiêu thụ thấp.",
+   "src": "Tooley Revision Paper 2 Q16"
+  },
+  {
+   "q": "Để tạo cổng AND từ cổng NOR, bạn cần:",
+   "opts": [
+    "đảo cả đầu ra và từng đầu vào",
+    "đảo đầu ra",
+    "đảo từng đầu vào"
+   ],
+   "correct": 2,
+   "explain": "NOR(A',B')=(A'+B')'=A·B (De Morgan) — chỉ cần đảo từng đầu vào, không cần đảo đầu ra.",
+   "src": "Tooley Revision Paper 2 Q20"
+  },
+  {
+   "q": "Để tạo cổng NAND từ cổng AND, bạn cần:",
+   "opts": [
+    "đảo đầu ra",
+    "đảo từng đầu vào",
+    "đảo cả đầu ra và từng đầu vào"
+   ],
+   "correct": 0,
+   "explain": "NAND = NOT(AND) — chỉ cần thêm 1 cổng đảo ở đầu ra.",
+   "src": "Tooley Revision Paper 3 Q5"
+  },
+  {
+   "q": "Bảng chân trị A B Y: (0,0→1)(0,1→1)(1,0→1)(1,1→0) là bảng của cổng nào?",
+   "opts": [
+    "cổng OR",
+    "cổng NAND",
+    "cổng NOR"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 0 khi cả hai đầu vào đều 1 → đúng đặc trưng cổng NAND.",
+   "src": "Tooley Revision Paper 3 Q6"
+  },
+  {
+   "q": "Hình A2.14: mạch gồm A qua cổng đảo rồi OR với B ra X (không đảo đầu ra); B và C qua cổng AND có đảo đầu ra ra Y. Để CẢ X và Y đều bằng logic 1:",
+   "opts": [
+    "tất cả đầu vào ở logic 0",
+    "tất cả đầu vào ở logic 1",
+    "B và C phải ở logic 1"
+   ],
+   "correct": 0,
+   "explain": "X=A'+B, Y=(BC)'. Với A=B=C=0: X=1+0=1 ✓; Y=(0·0)'=1 ✓. Với B=C=1 (đáp án c): Y=(1·1)'=0 ✗ — sai. Đáp án đúng là tất cả đầu vào ở logic 0.",
+   "src": "Tooley Revision Paper 3 Q12",
+   "img": "../../../assets/figures/tooley_A2_14.png"
+  },
+  {
+   "q": "Đầu ra Q của một bistable R-S đang ở logic 0. Điều này có nghĩa bistable đang:",
+   "opts": [
+    "reset",
+    "set",
+    "ở trạng thái trở kháng cao"
+   ],
+   "correct": 0,
+   "explain": "Quy ước: Q=1 là trạng thái 'set', Q=0 là trạng thái 'reset'.",
+   "src": "Tooley Revision Paper 4 Q4"
+  },
+  {
+   "q": "Bảng chân trị A B Y: (0,0→1)(0,1→0)(1,0→0)(1,1→0) là bảng của cổng nào?",
+   "opts": [
+    "cổng NAND",
+    "cổng NOR",
+    "cổng XOR"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 1 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng NOR.",
+   "src": "Tooley Revision Paper 4 Q13"
+  },
+  {
+   "q": "Mạch gồm 2 cổng đảo (A,B) rồi đưa vào 1 cổng NAND (Hình A2.17) tương đương với:",
+   "opts": [
+    "cổng AND",
+    "cổng OR",
+    "cổng NAND"
+   ],
+   "correct": 1,
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) = cổng OR.",
+   "src": "Tooley Revision Paper 4 Q18"
+  },
+  {
+   "q": "Thiết bị logic trong Hình A2.19 (IC 14 chân, 4 cổng 2 đầu vào dạng OR có bong bóng đảo) là:",
+   "opts": [
+    "triple cổng NOR 3 đầu vào",
+    "quad cổng NOR 2 đầu vào",
+    "quad cổng NAND 2 đầu vào"
+   ],
+   "correct": 1,
+   "explain": "4 cổng, mỗi cổng hình OR có vòng tròn đảo ở đầu ra = NOR — đúng dạng 'quad two-input NOR gate'.",
+   "src": "Tooley Revision Paper 5 Q6",
+   "img": "../../../assets/figures/tooley_A2_19.png"
+  },
+  {
+   "q": "Tần số xung nhịp tối đa điển hình của một thiết bị logic TTL chuẩn là:",
+   "opts": [
+    "35 MHz",
+    "2 MHz",
+    "10 MHz"
+   ],
+   "correct": 0,
+   "explain": "TTL chuẩn (74 series) thường đạt tần số hoạt động tối đa khoảng 35MHz.",
+   "src": "Tooley Revision Paper 5 Q7"
+  },
+  {
+   "q": "Hình A2.20 có 3 ký hiệu cổng logic A, B, C. Ký hiệu nào là cổng OR 2 đầu vào?",
+   "opts": [
+    "B",
+    "C",
+    "A"
+   ],
+   "correct": 2,
+   "explain": "Hình A = dạng cong lõm không vòng tròn đảo = OR chuẩn. Hình B = dạng AND. Hình C = dạng XOR (2 đường cong ở đầu vào).",
+   "src": "Tooley Revision Paper 6 Q4",
+   "img": "../../../assets/figures/tooley_A2_20.png"
+  },
+  {
+   "q": "Bảng chân trị A B Y: (0,0→0)(0,1→1)(1,0→1)(1,1→1) là bảng của cổng nào?",
+   "opts": [
+    "cổng AND",
+    "cổng OR",
+    "cổng XOR"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 0 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng OR.",
+   "src": "Tooley Revision Paper 6 Q7"
+  },
+  {
+   "q": "Mạch gồm 2 cổng đảo (A,B) rồi đưa vào 1 cổng NAND (Hình A2.22) tương đương với:",
+   "opts": [
+    "cổng AND 2 đầu vào",
+    "cổng OR 2 đầu vào",
+    "cổng XOR 2 đầu vào"
+   ],
+   "correct": 1,
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) = cổng OR.",
+   "src": "Tooley Revision Paper 6 Q8"
+  },
+  {
+   "q": "Ký hiệu trong Hình A2.23 (dạng XOR có vòng tròn đảo ở đầu ra) là:",
+   "opts": [
+    "cổng AND 2 đầu vào",
+    "cổng OR 2 đầu vào",
+    "cổng XNOR 2 đầu vào"
+   ],
+   "correct": 2,
+   "explain": "Dạng XOR (2 đường cong đầu vào) + vòng tròn đảo đầu ra = XNOR.",
+   "src": "Tooley Revision Paper 6 Q9"
+  },
+  {
+   "q": "Một cổng logic có 4 đầu vào. Có bao nhiêu trạng thái đầu vào khác nhau khả dĩ?",
+   "opts": [
+    "8",
+    "4",
+    "16"
+   ],
+   "correct": 2,
+   "explain": "2⁴ = 16 tổ hợp đầu vào khác nhau.",
+   "src": "Tooley Revision Paper 7 Q2"
+  },
+  {
+   "q": "Cổng logic trong Hình A2.25 (dạng OR có vòng tròn đảo đầu ra) là:",
+   "opts": [
+    "cổng NOR 2 đầu vào",
+    "cổng XOR 2 đầu vào",
+    "cổng NAND 2 đầu vào"
+   ],
+   "correct": 0,
+   "explain": "Dạng OR + vòng tròn đảo đầu ra = NOR.",
+   "src": "Tooley Revision Paper 7 Q5"
+  },
+  {
+   "q": "Cổng NAND 2 đầu vào có thể chuyển thành cổng OR 2 đầu vào bằng cách:",
+   "opts": [
+    "đảo một trong hai đầu vào",
+    "đảo đầu ra",
+    "đảo cả hai đầu vào"
+   ],
+   "correct": 2,
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) — cần đảo CẢ HAI đầu vào.",
+   "src": "Tooley Revision Paper 7 Q8"
+  },
+  {
+   "q": "Bảng chân trị A B Y: (0,0→1)(0,1→1)(1,0→1)(1,1→0) (Hình A2.27) là bảng của cổng nào?",
+   "opts": [
+    "Exclusive-OR",
+    "OR",
+    "NAND"
+   ],
+   "correct": 2,
+   "explain": "Chỉ ra 0 khi cả hai đầu vào đều 1 → đúng đặc trưng cổng NAND.",
+   "src": "Tooley Revision Paper 7 Q19"
+  },
+  {
+   "q": "Trong đại số Boolean, hàm OR logic được biểu diễn bằng ký hiệu:",
+   "opts": [
+    "−",
+    "+",
+    "·"
+   ],
+   "correct": 1,
+   "explain": "Quy ước chuẩn: '+' cho OR, '·' cho AND, dấu gạch trên cho NOT.",
+   "src": "Tooley Revision Paper 8 Q14"
+  },
+  {
+   "q": "Một cổng NOR 2 đầu vào đang cho đầu ra logic 1. Phát biểu nào sau đây đúng?",
+   "opts": [
+    "Ít nhất một đầu vào phải ở logic 1",
+    "Cả hai đầu vào đều ở logic 0",
+    "Cả hai đầu vào đều ở logic 1"
+   ],
+   "correct": 1,
+   "explain": "NOR chỉ ra 1 khi CẢ HAI đầu vào đều ở logic 0 — đây là trường hợp duy nhất.",
+   "src": "Tooley Revision Paper 8 Q15"
   }
  ],
  "floyd": [

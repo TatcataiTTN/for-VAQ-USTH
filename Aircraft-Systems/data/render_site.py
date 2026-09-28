@@ -243,10 +243,22 @@ def build_module_page(lang, mod, prefix):
     quiz_floyd = build_quiz_section(lang, mod["slug"], t["quiz_floyd"], "floyd")
     quiz_gen = build_quiz_section(lang, mod["slug"], t["quiz_gen"], "generated")
     nb_name = f"{mod['num']}_{mod['slug'].split('-',1)[1]}.ipynb"
+    mod_idx = MODULES.index(mod)
+    mrow = MAPPING_ROWS[mod_idx]
+    mnote = mrow["note_vi"] if lang == "vi" else mrow["note_en"]
+    mapping_href = f"../../../chapter-mapping-{lang}.html"
+    mapping_block = f"""<div class="callout info">
+<h4>{t['mapping_link']}</h4>
+<p><b>Tooley:</b> {mrow['tooley']}</p>
+<p><b>Floyd:</b> {mrow['floyd']}</p>
+<p>{mnote}</p>
+<p><a href="{mapping_href}">{t['nav_mapping']} →</a></p>
+</div>"""
     body = f"""<div class="wrap">
 <p><a href="../../index.html">{t['back_home']}</a></p>
 <div class="hero"><span class="pill">MODULE {mod['num']}</span>
 <h1>{d['title']}</h1><p>{d['src']}</p></div>
+{mapping_block}
 {deck}
 <div class="callout history"><h4>{d['history_title']}</h4><p>{d['history']}</p></div>
 <div class="callout case"><h4>{d['case_title']}</h4><p>{d['case']}</p></div>

@@ -274,6 +274,128 @@
    "correct": 1,
    "explain": "Segmentation kết hợp segment+offset giúp CPU 16-bit địa chỉ hoá vùng nhớ lớn hơn khả năng thanh ghi 16-bit thuần tuý.",
    "src": "Tooley Ch.7 Q22"
+  },
+  {
+   "q": "Các thành phần chính của một máy tính là:",
+   "opts": [
+    "ALU, accumulator, thanh ghi",
+    "CPU, ROM, RAM, I/O",
+    "CPU, ALU, accumulator, clock"
+   ],
+   "correct": 1,
+   "explain": "4 khối chính tạo nên một hệ máy tính hoàn chỉnh: CPU (xử lý), ROM (bộ nhớ chương trình cố định), RAM (bộ nhớ tạm), I/O (vào/ra).",
+   "src": "Tooley Revision Paper 2 Q19"
+  },
+  {
+   "q": "Các IC trong Hình A2.7 (chip khắc '27C010') là:",
+   "opts": [
+    "thiết bị RAM",
+    "bộ nhớ flash",
+    "thiết bị UV-EPROM"
+   ],
+   "correct": 2,
+   "explain": "Ký hiệu '27xxx' là quy ước đặt tên chuẩn cho EPROM xoá bằng tia UV (UV-EPROM).",
+   "src": "Tooley Revision Paper 2 Q8",
+   "img": "../../../assets/figures/tooley_A2_7.png"
+  },
+  {
+   "q": "Số địa chỉ riêng biệt mà một vi xử lý với bus địa chỉ 16-bit có thể định vị là:",
+   "opts": [
+    "32.768",
+    "16.384",
+    "65.536"
+   ],
+   "correct": 2,
+   "explain": "2¹⁶ = 65.536 địa chỉ khác nhau.",
+   "src": "Tooley Revision Paper 3 Q4"
+  },
+  {
+   "q": "Trong một mạch nhớ tĩnh (static memory), dữ liệu:",
+   "opts": [
+    "được giữ lại vô thời hạn (chừng nào còn cấp điện)",
+    "cần được làm tươi liên tục dù đang cấp điện",
+    "mất ngay khi ngắt điện"
+   ],
+   "correct": 0,
+   "explain": "SRAM giữ dữ liệu ổn định suốt thời gian còn cấp điện, KHÔNG cần chu trình refresh như DRAM (nhưng vẫn mất dữ liệu nếu ngắt điện — đây là điểm khác 'retained indefinitely' với 'non-volatile').",
+   "src": "Tooley Revision Paper 4 Q2"
+  },
+  {
+   "q": "Cần bao nhiêu IC DRAM loại 16K×4-bit để tạo bộ nhớ 64K byte?",
+   "opts": [
+    "16",
+    "4",
+    "8"
+   ],
+   "correct": 2,
+   "explain": "16K×4bit = 8KB/chip; 64KB ÷ 8KB = 8 chip.",
+   "src": "Tooley Revision Paper 6 Q10"
+  },
+  {
+   "q": "Trọng tài bus (bus arbitration) được yêu cầu để:",
+   "opts": [
+    "giảm lỗi do nhiễu và EMI",
+    "ngăn mất dữ liệu bộ nhớ",
+    "tránh tranh chấp bus (bus contention)"
+   ],
+   "correct": 2,
+   "explain": "Bus arbitration quyết định thiết bị nào được quyền dùng bus, tránh nhiều thiết bị truyền cùng lúc gây xung đột (bus contention).",
+   "src": "Tooley Revision Paper 6 Q11"
+  },
+  {
+   "q": "Bộ dao động xung nhịp (clock oscillator) trong hệ vi xử lý cung cấp:",
+   "opts": [
+    "tín hiệu sóng sin tần số chính xác",
+    "tín hiệu sóng vuông tần số chính xác",
+    "chuỗi xung chữ nhật từ bộ dao động tự do"
+   ],
+   "correct": 1,
+   "explain": "Clock oscillator chuẩn tạo tín hiệu sóng vuông (square wave) ổn định tần số để đồng bộ toàn hệ thống.",
+   "src": "Tooley Revision Paper 6 Q12"
+  },
+  {
+   "q": "Trong hệ vi xử lý, xử lý nhanh hơn có thể đạt được bằng:",
+   "opts": [
+    "bus địa chỉ/dữ liệu dồn kênh",
+    "instruction pipelining",
+    "tập lệnh phức tạp (CISC)"
+   ],
+   "correct": 1,
+   "explain": "Instruction pipelining cho phép chồng lấn các giai đoạn fetch/decode/execute của nhiều lệnh, tăng thông lượng.",
+   "src": "Tooley Revision Paper 6 Q13"
+  },
+  {
+   "q": "Một máy tính có 2K byte RAM. Có thể lưu được bao nhiêu từ (word) 32-bit?",
+   "opts": [
+    "512",
+    "16384",
+    "8192"
+   ],
+   "correct": 0,
+   "explain": "2K byte = 2048 byte; mỗi từ 32-bit = 4 byte; 2048÷4 = 512 từ.",
+   "src": "Tooley Revision Paper 8 Q6"
+  },
+  {
+   "q": "Chức năng của ROM trong một hệ máy tính là:",
+   "opts": [
+    "lưu trữ tạm thời chương trình và dữ liệu",
+    "lưu trữ bán vĩnh viễn chỉ cho chương trình",
+    "lưu trữ vĩnh viễn chương trình và dữ liệu"
+   ],
+   "correct": 2,
+   "explain": "ROM là bộ nhớ chỉ đọc, không mất dữ liệu khi mất điện → lưu trữ vĩnh viễn chương trình/dữ liệu cố định.",
+   "src": "Tooley Revision Paper 8 Q7"
+  },
+  {
+   "q": "Khi máy tính khởi động lần đầu, mã thực hiện thao tác bootstrap được lưu trong:",
+   "opts": [
+    "CPU",
+    "RAM",
+    "ROM"
+   ],
+   "correct": 2,
+   "explain": "Mã bootstrap phải tồn tại sẵn trước khi RAM được nạp dữ liệu → lưu trong ROM (thường là loại flash ROM/BIOS).",
+   "src": "Tooley Revision Paper 8 Q18"
   }
  ],
  "floyd": [

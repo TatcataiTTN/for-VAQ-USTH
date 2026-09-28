@@ -175,6 +175,88 @@
    "correct": 0,
    "explain": "Chân enable cho phép nối tầng (cascade) nhiều IC encoder để mở rộng số đầu vào mã hoá.",
    "src": "Tooley Ch.9 Q8"
+  },
+  {
+   "q": "Mạch logic trong Hình A2.10 (2 đầu vào A,B qua các tầng đảo, kết hợp qua 4 cổng AND-đảo) là:",
+   "opts": [
+    "bộ mã hoá 2-sang-4 đường",
+    "bộ giải mã 2-sang-4 đường",
+    "bộ dồn kênh 2-sang-2 đường"
+   ],
+   "correct": 1,
+   "explain": "2 đầu vào chọn ra đúng 1 trong 4 đường ra (Y0-Y3) — đúng cấu trúc bộ giải mã (decoder) 2-sang-4, dùng cổng NAND để tạo ngõ ra tích cực mức thấp.",
+   "src": "Tooley Revision Paper 2 Q12",
+   "img": "../../../assets/figures/tooley_A2_10.png"
+  },
+  {
+   "q": "Thiết bị logic trong Hình A2.11 (IC 16 chân với chân EI, GS, EO, A0-A2, 8 đầu vào) là:",
+   "opts": [
+    "bộ mã hoá 8-sang-3 đường",
+    "bộ mã hoá 4-sang-3 đường",
+    "bộ dồn kênh 4-sang-8 đường"
+   ],
+   "correct": 0,
+   "explain": "Sơ đồ chân khớp chính xác với IC 74148 — bộ mã hoá ưu tiên 8-sang-3 đường (8-to-3 priority encoder).",
+   "src": "Tooley Revision Paper 2 Q14",
+   "img": "../../../assets/figures/tooley_A2_11.png"
+  },
+  {
+   "q": "Các pin trên một IC đóng gói DIL được đánh số:",
+   "opts": [
+    "ngược chiều kim đồng hồ từ pin 1",
+    "theo chiều kim đồng hồ từ pin 1",
+    "theo chiều kim đồng hồ từ pin 14"
+   ],
+   "correct": 0,
+   "explain": "Quy ước chuẩn JEDEC: nhìn từ trên xuống, đánh số ngược chiều kim đồng hồ bắt đầu từ pin 1 (góc có khấc/chấm định vị).",
+   "src": "Tooley Revision Paper 2 Q20"
+  },
+  {
+   "q": "Loại thiết bị bán dẫn nào dễ bị hư hại nhất do tĩnh điện?",
+   "opts": [
+    "transistor lưỡng cực (BJT)",
+    "vi xử lý VLSI",
+    "chỉnh lưu có điều khiển silicon (SCR)"
+   ],
+   "correct": 1,
+   "explain": "Vi xử lý VLSI dùng công nghệ MOS với lớp oxit cực mỏng ở cổng transistor — cực kỳ nhạy với phóng tĩnh điện (ESD) hơn hẳn linh kiện lưỡng cực (BJT/SCR).",
+   "src": "Tooley Revision Paper 5 Q10"
+  },
+  {
+   "q": "Mạch tích hợp trong Hình A2.28 (chip khắc 'GD75232', đóng gói dán bề mặt) sử dụng kiểu đóng gói:",
+   "opts": [
+    "Pin grid array (PGA)",
+    "Small outline integrated circuit (SOIC)",
+    "Dual-in-line pack (DIP)"
+   ],
+   "correct": 1,
+   "explain": "Chân dạng gull-wing dán bề mặt hai bên, kích thước nhỏ gọn — đặc trưng gói SOIC.",
+   "src": "Tooley Revision Paper 7 Q20",
+   "img": "../../../assets/figures/tooley_A2_28.png"
+  },
+  {
+   "q": "Thiết bị trong Hình A2.30 (IC 16 chân, đầu vào D0-D7, đầu ra Y/W, chọn A-B-C) có chức năng:",
+   "opts": [
+    "Bộ cộng 4-bit (Four-bit adder)",
+    "Bộ dồn kênh (Multiplexer)",
+    "Thanh ghi dịch (Shift register)"
+   ],
+   "correct": 1,
+   "explain": "8 đầu vào dữ liệu (D0-D7), 3 đường chọn (A,B,C), 1 đầu ra (Y) và đầu ra phụ đảo (W) — đúng cấu trúc IC 74151, bộ dồn kênh 8-sang-1.",
+   "src": "Tooley Revision Paper 8 Q17",
+   "img": "../../../assets/figures/tooley_A2_30.png"
+  },
+  {
+   "q": "Trong Hình A2.31 (bộ ADC dốc đơn: bộ so sánh nhận tín hiệu analog và sóng răng cưa, đầu ra điều khiển cổng AND+bộ đếm), chức năng của IC1 là:",
+   "opts": [
+    "Bộ so sánh (Comparator)",
+    "Nguồn cấp (Power supply)",
+    "Bộ đổi cực tính (Polarity changer)"
+   ],
+   "correct": 0,
+   "explain": "IC1 là ký hiệu op-amp so sánh (comparator) giữa tín hiệu analog vào và sóng răng cưa từ ramp generator — cấu trúc kinh điển của ADC dốc đơn (single-slope ADC).",
+   "src": "Tooley Revision Paper 8 Q20",
+   "img": "../../../assets/figures/tooley_A2_31.png"
   }
  ],
  "floyd": [

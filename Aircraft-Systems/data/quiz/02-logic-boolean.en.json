@@ -65,6 +65,310 @@
    "correct": 2,
    "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.",
    "src": "Tooley Ch.5 Q9"
+  },
+  {
+   "q": "The logic device shown in Figure 5.30 is:",
+   "opts": [
+    "cổng NOR",
+    "cổng exclusive-OR",
+    "cổng OR"
+   ],
+   "correct": 0,
+   "explain": "Ký hiệu OR có vòng tròn đảo ở đầu ra = NOR.",
+   "src": "Tooley Ch.5 Q1",
+   "img": "../../../assets/figures/tooley_fig5_30.png"
+  },
+  {
+   "q": "The device shown in Figure 5.31 is:",
+   "opts": [
+    "thiết bị TTL công suất thấp Schottky",
+    "thiết bị TTL mật độ cao chuẩn",
+    "thiết bị CMOS có đệm"
+   ],
+   "correct": 0,
+   "explain": "Ký hiệu '74LS08' — 'LS' = Low-power Schottky TTL, đọc trực tiếp trên chip.",
+   "src": "Tooley Ch.5 Q5",
+   "img": "../../../assets/figures/tooley_fig5_31.png"
+  },
+  {
+   "q": "The logic gate arrangement shown in Figure 5.32 performs the same function as:",
+   "opts": [
+    "cổng exclusive-OR",
+    "cổng NOR",
+    "cổng NAND"
+   ],
+   "correct": 0,
+   "explain": "Y = A'B + AB' = A XOR B — đúng cấu trúc kinh điển dựng cổng XOR từ NOT+AND+OR.",
+   "src": "Tooley Ch.5 Q7",
+   "img": "../../../assets/figures/tooley_fig5_32.png"
+  },
+  {
+   "q": "The truth table (0,0→1)(0,1→0)(1,0→0)(1,1→0) shown in Figure 5.33 is for:",
+   "opts": [
+    "cổng OR 2 đầu vào",
+    "cổng NOR 2 đầu vào"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 1 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng NOR (chỉ có 2 lựa chọn trong câu gốc).",
+   "src": "Tooley Ch.5 Q10"
+  },
+  {
+   "q": "In the logic circuit of Figure A2.5, A=1,B=1,C=1,D=1. The outputs X and Y will be:",
+   "opts": [
+    "X=1 và Y=0",
+    "X=0 và Y=0",
+    "X=0 và Y=1"
+   ],
+   "correct": 0,
+   "explain": "X=OR(A,B)=1+1=1. Y=AND(A,B,C,D')=1·1·1·0=0 (vì D'=NOT(1)=0). Vậy X=1,Y=0.",
+   "src": "Tooley Revision Paper 2 Q5",
+   "img": "../../../assets/figures/tooley_A2_5.png"
+  },
+  {
+   "q": "The logic device shown in Figure A2.6 is:",
+   "opts": [
+    "thiết bị TTL chuẩn",
+    "thiết bị TTL công suất thấp Schottky",
+    "thiết bị CMOS tốc độ thấp"
+   ],
+   "correct": 1,
+   "explain": "Ký hiệu '74LS' = Low-power Schottky TTL — đọc trực tiếp trên chip.",
+   "src": "Tooley Revision Paper 2 Q6",
+   "img": "../../../assets/figures/tooley_A2_6.png"
+  },
+  {
+   "q": "The logic gate arrangement in Figure A2.9 (two cascaded NAND gates, the second fed by both inputs tied to the first's output) will produce the:",
+   "opts": [
+    "hàm OR",
+    "hàm AND",
+    "hàm NAND"
+   ],
+   "correct": 1,
+   "explain": "NAND đầu tiên: (AB)'. NAND thứ 2 nhận cùng tín hiệu (AB)' ở cả 2 đầu vào → hoạt động như cổng đảo: NOT((AB)')=AB. Kết quả = hàm AND.",
+   "src": "Tooley Revision Paper 2 Q11"
+  },
+  {
+   "q": "A typical characteristic of CMOS logic is:",
+   "opts": [
+    "chịu điện áp cao",
+    "công suất tiêu thụ cao",
+    "công suất tiêu thụ thấp"
+   ],
+   "correct": 2,
+   "explain": "CMOS nổi tiếng vì dòng tĩnh cực thấp → công suất tiêu thụ thấp.",
+   "src": "Tooley Revision Paper 2 Q16"
+  },
+  {
+   "q": "In order to produce an AND gate from a NOR gate you would need to:",
+   "opts": [
+    "đảo cả đầu ra và từng đầu vào",
+    "đảo đầu ra",
+    "đảo từng đầu vào"
+   ],
+   "correct": 2,
+   "explain": "NOR(A',B')=(A'+B')'=A·B (De Morgan) — chỉ cần đảo từng đầu vào, không cần đảo đầu ra.",
+   "src": "Tooley Revision Paper 2 Q20"
+  },
+  {
+   "q": "In order to produce a NAND gate from an AND gate you would need to:",
+   "opts": [
+    "đảo đầu ra",
+    "đảo từng đầu vào",
+    "đảo cả đầu ra và từng đầu vào"
+   ],
+   "correct": 0,
+   "explain": "NAND = NOT(AND) — chỉ cần thêm 1 cổng đảo ở đầu ra.",
+   "src": "Tooley Revision Paper 3 Q5"
+  },
+  {
+   "q": "A truth table with (0,0→1)(0,1→1)(1,0→1)(1,1→0) is for:",
+   "opts": [
+    "cổng OR",
+    "cổng NAND",
+    "cổng NOR"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 0 khi cả hai đầu vào đều 1 → đúng đặc trưng cổng NAND.",
+   "src": "Tooley Revision Paper 3 Q6"
+  },
+  {
+   "q": "Figure A2.14 shows A inverted then ORed with B giving X (no output invert); B and C through a NAND (AND+invert) giving Y. For BOTH X and Y to be logic 1:",
+   "opts": [
+    "tất cả đầu vào ở logic 0",
+    "tất cả đầu vào ở logic 1",
+    "B và C phải ở logic 1"
+   ],
+   "correct": 0,
+   "explain": "X=A'+B, Y=(BC)'. Với A=B=C=0: X=1+0=1 ✓; Y=(0·0)'=1 ✓. Với B=C=1 (đáp án c): Y=(1·1)'=0 ✗ — sai. Đáp án đúng là tất cả đầu vào ở logic 0.",
+   "src": "Tooley Revision Paper 3 Q12",
+   "img": "../../../assets/figures/tooley_A2_14.png"
+  },
+  {
+   "q": "The Q output of an R-S bistable is at logic 0. This means that the bistable is:",
+   "opts": [
+    "reset",
+    "set",
+    "ở trạng thái trở kháng cao"
+   ],
+   "correct": 0,
+   "explain": "Quy ước: Q=1 là trạng thái 'set', Q=0 là trạng thái 'reset'.",
+   "src": "Tooley Revision Paper 4 Q4"
+  },
+  {
+   "q": "A truth table with (0,0→1)(0,1→0)(1,0→0)(1,1→0) is for:",
+   "opts": [
+    "cổng NAND",
+    "cổng NOR",
+    "cổng XOR"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 1 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng NOR.",
+   "src": "Tooley Revision Paper 4 Q13"
+  },
+  {
+   "q": "The logic arrangement of two inverters feeding a NAND gate (Figure A2.17) is equivalent to:",
+   "opts": [
+    "cổng AND",
+    "cổng OR",
+    "cổng NAND"
+   ],
+   "correct": 1,
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) = cổng OR.",
+   "src": "Tooley Revision Paper 4 Q18"
+  },
+  {
+   "q": "The logic device shown in Figure A2.19 is:",
+   "opts": [
+    "triple cổng NOR 3 đầu vào",
+    "quad cổng NOR 2 đầu vào",
+    "quad cổng NAND 2 đầu vào"
+   ],
+   "correct": 1,
+   "explain": "4 cổng, mỗi cổng hình OR có vòng tròn đảo ở đầu ra = NOR — đúng dạng 'quad two-input NOR gate'.",
+   "src": "Tooley Revision Paper 5 Q6",
+   "img": "../../../assets/figures/tooley_A2_19.png"
+  },
+  {
+   "q": "The typical maximum clock frequency for a standard TTL logic device is:",
+   "opts": [
+    "35 MHz",
+    "2 MHz",
+    "10 MHz"
+   ],
+   "correct": 0,
+   "explain": "TTL chuẩn (74 series) thường đạt tần số hoạt động tối đa khoảng 35MHz.",
+   "src": "Tooley Revision Paper 5 Q7"
+  },
+  {
+   "q": "Which one of the symbols shown in Figure A2.20 is for a two-input OR gate:",
+   "opts": [
+    "B",
+    "C",
+    "A"
+   ],
+   "correct": 2,
+   "explain": "Hình A = dạng cong lõm không vòng tròn đảo = OR chuẩn. Hình B = dạng AND. Hình C = dạng XOR (2 đường cong ở đầu vào).",
+   "src": "Tooley Revision Paper 6 Q4",
+   "img": "../../../assets/figures/tooley_A2_20.png"
+  },
+  {
+   "q": "A truth table with (0,0→0)(0,1→1)(1,0→1)(1,1→1) is for:",
+   "opts": [
+    "cổng AND",
+    "cổng OR",
+    "cổng XOR"
+   ],
+   "correct": 1,
+   "explain": "Chỉ ra 0 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng OR.",
+   "src": "Tooley Revision Paper 6 Q7"
+  },
+  {
+   "q": "The logic circuit of two inverters feeding a NAND gate (Figure A2.22) is equivalent to:",
+   "opts": [
+    "cổng AND 2 đầu vào",
+    "cổng OR 2 đầu vào",
+    "cổng XOR 2 đầu vào"
+   ],
+   "correct": 1,
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) = cổng OR.",
+   "src": "Tooley Revision Paper 6 Q8"
+  },
+  {
+   "q": "The symbol shown in Figure A2.23 (XOR shape with an output inversion bubble) is:",
+   "opts": [
+    "cổng AND 2 đầu vào",
+    "cổng OR 2 đầu vào",
+    "cổng XNOR 2 đầu vào"
+   ],
+   "correct": 2,
+   "explain": "Dạng XOR (2 đường cong đầu vào) + vòng tròn đảo đầu ra = XNOR.",
+   "src": "Tooley Revision Paper 6 Q9"
+  },
+  {
+   "q": "A logic gate has four inputs. How many different logical input states are possible?",
+   "opts": [
+    "8",
+    "4",
+    "16"
+   ],
+   "correct": 2,
+   "explain": "2⁴ = 16 tổ hợp đầu vào khác nhau.",
+   "src": "Tooley Revision Paper 7 Q2"
+  },
+  {
+   "q": "The logic gate shown in Figure A2.25 is:",
+   "opts": [
+    "cổng NOR 2 đầu vào",
+    "cổng XOR 2 đầu vào",
+    "cổng NAND 2 đầu vào"
+   ],
+   "correct": 0,
+   "explain": "Dạng OR + vòng tròn đảo đầu ra = NOR.",
+   "src": "Tooley Revision Paper 7 Q5"
+  },
+  {
+   "q": "A two-input NAND gate can be converted into a two-input OR gate by:",
+   "opts": [
+    "đảo một trong hai đầu vào",
+    "đảo đầu ra",
+    "đảo cả hai đầu vào"
+   ],
+   "correct": 2,
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) — cần đảo CẢ HAI đầu vào.",
+   "src": "Tooley Revision Paper 7 Q8"
+  },
+  {
+   "q": "Which one of the following gives the logic function shown in Figure A2.27 (0,0→1)(0,1→1)(1,0→1)(1,1→0):",
+   "opts": [
+    "Exclusive-OR",
+    "OR",
+    "NAND"
+   ],
+   "correct": 2,
+   "explain": "Chỉ ra 0 khi cả hai đầu vào đều 1 → đúng đặc trưng cổng NAND.",
+   "src": "Tooley Revision Paper 7 Q19"
+  },
+  {
+   "q": "In Boolean algebra the logical OR function is represented by:",
+   "opts": [
+    "−",
+    "+",
+    "·"
+   ],
+   "correct": 1,
+   "explain": "Quy ước chuẩn: '+' cho OR, '·' cho AND, dấu gạch trên cho NOT.",
+   "src": "Tooley Revision Paper 8 Q14"
+  },
+  {
+   "q": "A two-input NOR gate is producing a logic 1 output. Which one of the following is true?",
+   "opts": [
+    "Ít nhất một đầu vào phải ở logic 1",
+    "Cả hai đầu vào đều ở logic 0",
+    "Cả hai đầu vào đều ở logic 1"
+   ],
+   "correct": 1,
+   "explain": "NOR chỉ ra 1 khi CẢ HAI đầu vào đều ở logic 0 — đây là trường hợp duy nhất.",
+   "src": "Tooley Revision Paper 8 Q15"
   }
  ],
  "floyd": [

@@ -29,6 +29,12 @@
         head.innerHTML = `<b>${qi+1}. ${q.q}</b>`;
         if (q.src) { const s = document.createElement('div'); s.className='pill'; s.style.marginTop='4px'; s.textContent = q.src; head.appendChild(s); }
         box.appendChild(head);
+        if (q.img) {
+          const img = document.createElement('img');
+          img.src = q.img; img.alt = q.src || ('Question ' + (qi+1));
+          img.style.cssText = 'max-width:100%;max-height:340px;display:block;margin:10px 0;border:1px solid var(--border);border-radius:8px;background:#fff;padding:6px';
+          box.appendChild(img);
+        }
         const explain = document.createElement('div');
         explain.className = 'explain'; explain.textContent = q.explain || '';
         q.opts.forEach((opt, oi) => {

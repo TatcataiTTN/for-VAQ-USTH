@@ -11,8 +11,29 @@ Ngày khởi tạo: 2026-09-28.
 ## Epic 2 — Ánh xạ chương sách 🟢
 - [x] Đọc mục lục đầy đủ của Tooley (20 chương) và Floyd (15 chương) từ bản OCR/text-layer thật.
 - [x] Đối chiếu 4 bộ slide gốc với đúng chương nguồn — xem `chapter-mapping-vi.html`.
+- [x] Gộp trực tiếp dòng ánh xạ (Tooley + Floyd + ghi chú) vào đầu MỖI trang module (callout "info"), không
+  chỉ để ở trang riêng — người học thấy ngay ngữ cảnh mà không cần rời trang.
 - ⚠️ Module 04 có độ khớp yếu với Floyd (Floyd không có chương CPU/kiến trúc máy tính) — đã ghi rõ trong
   bảng ánh xạ, không che giấu.
+
+## Epic 8 — Tooley Appendix 2 "Revision Papers" 🟢 (mới 2026-09-28)
+- [x] Đọc bằng mắt (Read tool, không OCR) toàn bộ 8 Revision Paper (160 câu, PDF trang 363-389), lọc ra
+  **61 câu** thuộc đúng phạm vi 4 module (bỏ qua các câu về EMI/GPS/EFIS/ARINC data-bus... ngoài phạm vi).
+- [x] Render DPI cao (400dpi, `pdftoppm`) + crop bằng ImageMagick cho **15 hình** cần thiết (mạch nhiều
+  cổng, ảnh chụp chip thật, sơ đồ chân IC) — quy trình đầy đủ ghi trong `data/FIGURE_EXTRACTION_WORKFLOW.md`.
+  Ảnh đã optimize (≤900px cạnh dài) và đẩy lên repo tại `assets/figures/`.
+- [x] **Bắt được 1 lỗi suy luận sai thật** khi đọc nhanh: câu hỏi Hình A2.14 (mạch 3 cổng) — đọc lướt lần
+  đầu nhầm hình dạng cổng OR/NAND nên tính sai đáp án; crop ảnh rõ hơn và tính lại mới ra đáp án đúng. Đây
+  đúng là lý do quy trình yêu cầu xem ảnh gốc thay vì chỉ đọc mô tả — đã sửa trước khi đưa vào site.
+- [x] Toàn bộ 61 câu đã gộp vào `data/build_quiz.py` (phần "Tooley"), src ghi rõ "Revision Paper N Q#".
+- Tổng số câu hỏi trên site sau đợt này: **299** (từ 241).
+
+## Epic 9 — Floyd "Problems" (bài tập tự luận cuối chương) ⚪ CHƯA LÀM
+- Floyd có mục "Problems" riêng theo từng section (không phải MCQ) cho mỗi chương — khối lượng RẤT lớn
+  (khoảng 40-80 bài/chương × 5 chương ≈ 250-400 bài tự luận), có đáp án số lẻ ở cuối sách.
+- Chưa trích xuất/giải — việc này cần một đợt làm riêng, ưu tiên: (1) trích danh sách bài theo section,
+  (2) tự động giải bằng code các bài dạng chuyển đổi số/tính toán (tái dùng hàm trong notebook), (3) với
+  bài lý thuyết mở (không có đáp án số) chỉ liệt kê làm ngân hàng luyện tập, không bịa lời giải.
 
 ## Epic 3 — Nội dung 4 module (VI+EN) 🟢
 - [x] 01 Number Systems, 02 Logic & Boolean, 03 IC & Multiplexing, 04 Computers & CPU.

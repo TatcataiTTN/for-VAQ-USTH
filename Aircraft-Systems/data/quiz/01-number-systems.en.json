@@ -142,6 +142,149 @@
    "correct": 1,
    "explain": "706₈ = 7·64+0·8+6 = 454₁₀ = 1C6₁₆ (1·256+12·16+6=454). Nhị phân đúng của 454 là 111000110, không phải phương án (b).",
    "src": "Tooley Ch.2 Q13"
+  },
+  {
+   "q": "When expressed in hexadecimal an octal value of 54 is the same as:",
+   "opts": [
+    "2F",
+    "4F",
+    "2C"
+   ],
+   "correct": 2,
+   "explain": "54₈ = 5·8+4 = 44₁₀ = 2C₁₆ (2·16+12=44).",
+   "src": "Tooley Revision Paper 2 Q1"
+  },
+  {
+   "q": "The binary number 10100111 is equivalent to:",
+   "opts": [
+    "147 decimal",
+    "107 decimal",
+    "167 decimal"
+   ],
+   "correct": 2,
+   "explain": "128+32+4+2+1 = 167.",
+   "src": "Tooley Revision Paper 3 Q15"
+  },
+  {
+   "q": "The octal number 127 is equivalent to:",
+   "opts": [
+    "1010111 binary",
+    "1001011 binary",
+    "1101001 binary"
+   ],
+   "correct": 0,
+   "explain": "1→001, 2→010, 7→111 → 001010111, bỏ số 0 thừa đầu → 1010111.",
+   "src": "Tooley Revision Paper 3 Q18"
+  },
+  {
+   "q": "The binary number 10110011 is equivalent to the hexadecimal number:",
+   "opts": [
+    "31",
+    "B3",
+    "113"
+   ],
+   "correct": 1,
+   "explain": "1011=B, 0011=3 → B3.",
+   "src": "Tooley Revision Paper 4 Q12"
+  },
+  {
+   "q": "The denary number 63 is equivalent to the binary number:",
+   "opts": [
+    "111111",
+    "11011",
+    "110111"
+   ],
+   "correct": 0,
+   "explain": "32+16+8+4+2+1 = 63 → 111111.",
+   "src": "Tooley Revision Paper 5 Q3"
+  },
+  {
+   "q": "The binary number 10010011 is equivalent to the hexadecimal number:",
+   "opts": [
+    "93",
+    "B3",
+    "C3"
+   ],
+   "correct": 0,
+   "explain": "1001=9, 0011=3 → 93.",
+   "src": "Tooley Revision Paper 5 Q4"
+  },
+  {
+   "q": "Which one gives the range of values that can be indicated by an unsigned byte:",
+   "opts": [
+    "-128 to +127",
+    "0 to 255",
+    "0 to 65,535"
+   ],
+   "correct": 1,
+   "explain": "1 byte = 8 bit không dấu → 2⁸ = 256 giá trị, từ 0 đến 255.",
+   "src": "Tooley Revision Paper 5 Q8"
+  },
+  {
+   "q": "The hexadecimal number E3 is equivalent to the binary number:",
+   "opts": [
+    "11100111",
+    "11100011",
+    "11100111"
+   ],
+   "correct": 1,
+   "explain": "E=1110, 3=0011 → 11100011.",
+   "src": "Tooley Revision Paper 6 Q2"
+  },
+  {
+   "q": "The BCD number 10010010 is equivalent to the decimal number:",
+   "opts": [
+    "146",
+    "92",
+    "B2"
+   ],
+   "correct": 1,
+   "explain": "1001=9, 0010=2 → 92.",
+   "src": "Tooley Revision Paper 6 Q3"
+  },
+  {
+   "q": "The binary number 100111 is equivalent to the decimal number:",
+   "opts": [
+    "39",
+    "15",
+    "75"
+   ],
+   "correct": 0,
+   "explain": "32+4+2+1 = 39.",
+   "src": "Tooley Revision Paper 7 Q6"
+  },
+  {
+   "q": "How many bytes can be contained in a 32-bit word?",
+   "opts": [
+    "one",
+    "two",
+    "four"
+   ],
+   "correct": 2,
+   "explain": "32 bit ÷ 8 bit/byte = 4 byte.",
+   "src": "Tooley Revision Paper 7 Q10"
+  },
+  {
+   "q": "What is the BCD equivalent of the decimal number 123?",
+   "opts": [
+    "0001 0010 0100",
+    "0001 0010 0011",
+    "0011 0010 0001"
+   ],
+   "correct": 1,
+   "explain": "1→0001, 2→0010, 3→0011 → 0001 0010 0011.",
+   "src": "Tooley Revision Paper 8 Q3"
+  },
+  {
+   "q": "What is the largest base-10 number that eight binary digits can represent?",
+   "opts": [
+    "80",
+    "255",
+    "11111111"
+   ],
+   "correct": 1,
+   "explain": "2⁸-1 = 255 (đáp án (c) 11111111 là dạng nhị phân chứ không phải số thập phân, dễ nhầm).",
+   "src": "Tooley Revision Paper 8 Q5"
   }
  ],
  "floyd": [
