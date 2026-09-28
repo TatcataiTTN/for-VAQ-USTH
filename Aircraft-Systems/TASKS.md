@@ -25,9 +25,16 @@ Ngày khởi tạo: 2026-09-28.
   tích hợp SSI→ULSI, sơ đồ đóng gói IC (SIP/DIP/ZIP/QFP/PGA), infographic ứng dụng IC trong A320, bảng chân
   trị decoder 4-bit (1-of-16) thật, sơ đồ logic bộ mã hoá decimal-to-BCD, sơ đồ tổng hợp mạch tổ hợp
   (adder/mux/code converter), ký hiệu và bảng chân trị multiplexer 1-of-4, sơ đồ mạch demultiplexer 1-to-4.
-- ⚠️ **CHƯA làm**: Module 04. Ảnh gốc của bài giảng cuối (Basic computer structure and microprocessor)
-  chưa trích. Một vài `body` cũ của Module 01 còn câu lủng củng (ví dụ slide "10.000 ft" có đoạn
-  "10000×2=...").
+- [x] **Module 04 (Cấu trúc máy tính & Vi xử lý)**: cả 30 slide nội dung × 2 ngôn ngữ có khung giải thích
+  (nguồn: `data/explain04/{vi,en}_p0..p4.py`, gộp vào `slides_04.py`). Trích 8 hình gốc từ
+  `Basic computer structure and microprocessor PDA version 2026.pdf` vào `assets/figures/cpu_*`: sơ đồ
+  kiến trúc hệ thống máy tính (CPU+bộ nhớ+bus), ví dụ address bus 32-bit thật, IPO Principle áp dụng cho
+  A320, sơ đồ RAM/ROM primary/secondary storage, bảng phân loại volatile/non-volatile memory (ROM/EPROM/
+  EEPROM/SSD), sơ đồ thanh ghi vi xử lý (PC/IR/ACC/SP), sơ đồ chu trình Fetch-Decode-Execute đầy đủ, bảng
+  so sánh kiến trúc Von Neumann và Harvard.
+- ⚠️ **Epic 11 hoàn tất cho cả 4 module** (160 slide × 2 ngôn ngữ = 320 khung giải thích, 32 hình gốc trích
+  từ 4 bài giảng). Còn tồn đọng: một vài `body` cũ của Module 01 còn câu lủng củng (ví dụ slide "10.000 ft"
+  có đoạn "10000×2=...").
 
 ## Epic 10 — Theme màu, giải thích chi tiết ẩn, chuẩn văn phong 🟢 (2026-09-28)
 - [x] **Theme mặc định đổi thành SÁNG (light) thật sự**, không còn tự động chuyển tối theo hệ điều hành
