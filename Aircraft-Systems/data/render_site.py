@@ -272,6 +272,11 @@ def build_essay_section(lang, slug):
         return ""
     t = L[lang]
     src_note = entry["src_book"] if lang == "vi" else entry["src_book_en"]
+    extra_note = ""
+    if entry.get("note_vi") and lang == "vi":
+        extra_note = f"<p class='essay-intro'><i>{entry['note_vi']}</i></p>"
+    elif entry.get("note_en") and lang == "en":
+        extra_note = f"<p class='essay-intro'><i>{entry['note_en']}</i></p>"
     rows = []
     for it in entry["items"]:
         qtext = it["q_vi"] if lang == "vi" else it["q_en"]
@@ -286,6 +291,7 @@ def build_essay_section(lang, slug):
     items_html = "\n".join(rows)
     return f"""<h2>{t['essay_title']}</h2>
 <p class="essay-intro">{src_note}</p>
+{extra_note}
 {items_html}"""
 
 def build_module_page(lang, mod, prefix):

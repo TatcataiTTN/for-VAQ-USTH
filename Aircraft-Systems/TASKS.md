@@ -2,7 +2,7 @@
 
 Ngày khởi tạo: 2026-09-28.
 
-## Epic 12 — Câu hỏi tự luận (Problems) từ Floyd, đáp án là ảnh chụp thật 🟡 (2026-09-28)
+## Epic 12 — Câu hỏi tự luận (Problems) từ Floyd, đáp án là ảnh chụp thật 🟢 (2026-09-28)
 - [x] **Khảo sát cấu trúc 2 sách**: Tooley (Aircraft Digital Electronic and Computer Systems) chỉ có mục
   "Multiple-choice questions" cuối mỗi chương, KHÔNG có phần tự luận riêng (đã kiểm tra mục lục gốc, xác
   nhận qua `pdftotext`). Toàn bộ câu tự luận trong Epic này do đó lấy từ Floyd, Digital Fundamentals, phần
@@ -16,8 +16,19 @@ Ngày khởi tạo: 2026-09-28.
   trong `render_site.py`, hiển thị dưới quiz mỗi trang module. Mỗi câu có khung `<details>` "Xem đáp án gốc
   trong sách", mở ra hiện ẢNH CHỤP THẬT (không gõ lại) từ đúng trang phụ lục, crop tại
   `OCR_output/exercise_pages/Floyd/ch02_number_systems_essay/answers/`, copy vào `assets/figures/essay_floyd_*`.
-- ⚠️ **CHƯA làm**: Module 02 (Floyd Ch.3+4), Module 03 (Floyd Ch.6), Module 04 (Floyd Ch.11) — cùng quy
-  trình, mỗi module ~6 câu số lẻ đã xác minh đáp án qua ảnh gốc.
+- [x] **Module 02 (Floyd Ch.3+4, 6 câu)**: Ch.3 Problem 25; Ch.4 Problem 1, 5, 7, 9, 19. Riêng câu 9 (De Morgan)
+  đề bài in dấu gạch ngang trên rất nhỏ nên không đọc trực tiếp bằng mắt; đã suy ngược từng biểu thức từ
+  đáp án in rồi kiểm tra xuôi lại bằng De Morgan, cả 8 ý khớp. Bỏ qua Ch.4 Problem 3 (đề ghi 3 biến A,B,C nhưng
+  đáp án in "ABCD") và Problem 21 (đáp án in có gạch trên biến E, còn text trích từ PDF mất dấu gạch nên chưa thể tự kiểm tra lại, không dùng khi chưa chắc).
+- [x] **Module 03 (Floyd Ch.6, 3 câu)**: Problem 1, 3, 15. Cố ý chỉ 3 câu thay vì 6: các câu còn lại hoặc cần
+  đọc sơ đồ cụ thể trong sách, hoặc lệch đề/đáp án (Problem 25: đề hỏi 4,7,12,23,34 nhưng đáp án in cho
+  2,8,13,26,33; Problem 9 chưa kịp đối chiếu lại dữ liệu bit với notebook 03 nên chưa đưa lên). Ưu tiên đúng hơn đủ số lượng.
+- [x] **Module 04 (Floyd Ch.11, 6 câu)**: Problem 3, 5, 9, 21, 25, 27. Câu 21 (ngăn xếp LIFO 4096x8) tính tay ra
+  FC0h..FFFh, khớp đáp án in.
+- [x] Kiểm tra toàn bộ 21 ảnh đáp án bằng bảng tổng hợp: phát hiện và sửa 8 ảnh bị cắt sai lần đầu (Q13 và Q49
+  Ch.2 thiếu dòng, Ch.3 Q25 mất dấu gạch trên, Ch.4 Q7 thiếu (a), Ch.6 Q3 mất (a), bảng Ch.11 Q5 mất dòng
+  tiêu đề...). Bài học: luôn xem ảnh crop cuối cùng, không chỉ xem lúc cắt thử.
+- Tổng: 21 câu tự luận, song ngữ, đáp án là ảnh chụp thật, đã trên site.
 
 ## Epic 11 — Giải thích "cho người mới bắt đầu" dưới từng slide + ảnh gốc bài giảng 🟢 (2026-09-28)
 - [x] **Module 01 (pilot, chờ duyệt phong cách)**: cả 50 slide nội dung × 2 ngôn ngữ đều có khung
