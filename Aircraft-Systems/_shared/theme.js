@@ -1,7 +1,8 @@
 (function(){
+  var THEMES = ['light', 'dark', 'sepia', 'ocean'];
   function apply(t){
-    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-    else document.documentElement.removeAttribute('data-theme');
+    if (t && t !== 'light' && THEMES.indexOf(t) !== -1) document.documentElement.setAttribute('data-theme', t);
+    else document.documentElement.setAttribute('data-theme', 'light');
   }
   document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('[data-set-theme]').forEach(function(btn){

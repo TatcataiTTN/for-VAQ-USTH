@@ -1,8 +1,10 @@
 (function(){
   const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
   const L = {
-    vi: {restart: '↺ Làm lại từ đầu', score: 'Điểm', confirm: 'Bạn đã trả lời một số câu — làm lại từ đầu?'},
-    en: {restart: '↺ Restart', score: 'Score', confirm: 'You have answered some questions — restart from the beginning?'}
+    vi: {restart: '↺ Làm lại từ đầu', score: 'Điểm', confirm: 'Bạn đã trả lời một số câu, bạn có chắc muốn làm lại từ đầu không?',
+         moreDetail: 'Xem giải thích đầy đủ', answered: 'đã làm'},
+    en: {restart: '↺ Restart', score: 'Score', confirm: 'You have answered some questions already. Restart from the beginning?',
+         moreDetail: 'Show full explanation', answered: 'answered'}
   }[LANG];
 
   document.querySelectorAll('.quiz').forEach(function(quizEl){
@@ -17,7 +19,8 @@
     let answered = 0, score = 0;
 
     function updateScore(){
-      scoreBar.textContent = `${L.score}: ${score}/${Q.items.length}` + (answered < Q.items.length ? ` (${answered}/${Q.items.length} đã làm)`.replace('đã làm', LANG==='en' ? 'answered' : 'đã làm') : '');
+      const suffix = answered < Q.items.length ? ` (${answered}/${Q.items.length} ${L.answered})` : '';
+      scoreBar.textContent = `${L.score}: ${score}/${Q.items.length}${suffix}`;
     }
 
     function build(){
@@ -37,6 +40,17 @@
         }
         const explain = document.createElement('div');
         explain.className = 'explain'; explain.textContent = q.explain || '';
+        let detailsEl = null;
+        if (q.detail) {
+          detailsEl = document.createElement('details');
+          detailsEl.className = 'explain-detail';
+          const summary = document.createElement('summary');
+          summary.textContent = L.moreDetail;
+          const body = document.createElement('div');
+          body.className = 'explain-detail-body';
+          body.innerHTML = q.detail;
+          detailsEl.appendChild(summary); detailsEl.appendChild(body);
+        }
         q.opts.forEach((opt, oi) => {
           const b = document.createElement('button'); b.type='button'; b.className = 'opt'; b.textContent = opt;
           b.addEventListener('click', () => {
@@ -47,12 +61,15 @@
             b.classList.add(correct ? 'correct' : 'wrong');
             if (!correct) box.querySelectorAll('.opt')[q.correct]?.classList.add('correct');
             explain.classList.add('show');
+            if (detailsEl) detailsEl.classList.add('show');
             if (correct) score++;
             updateScore();
           });
           box.appendChild(b);
         });
-        box.appendChild(explain); root.appendChild(box);
+        box.appendChild(explain);
+        if (detailsEl) box.appendChild(detailsEl);
+        root.appendChild(box);
       });
       updateScore();
     }

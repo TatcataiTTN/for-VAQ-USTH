@@ -9,7 +9,8 @@
    ],
    "correct": 1,
    "explain": "10101₂ = 1·16+0·8+1·4+0·2+1·1 = 21.",
-   "src": "Tooley Ch.2 Q1"
+   "src": "Tooley Ch.2 Q1",
+   "detail": "<p>Cách làm nhanh: viết trọng số từng vị trí bit từ phải sang trái là 1, 2, 4, 8, 16 (luỹ thừa của 2), rồi cộng đúng những vị trí có bit bằng 1. Với 10101, các bit bằng 1 nằm ở vị trí trọng số 16, 4 và 1, nên tổng là 16+4+1=21.</p><p>Mẹo kiểm tra nhanh: một số nhị phân kết thúc bằng 1 luôn cho ra số lẻ; 21 là số lẻ nên khớp với chữ số cuối của 10101.</p>"
   },
   {
    "q": "Số thập phân 29 tương ứng với số nhị phân nào?",
@@ -20,7 +21,8 @@
    ],
    "correct": 0,
    "explain": "29 = 16+8+4+1 → 11101₂.",
-   "src": "Tooley Ch.2 Q2"
+   "src": "Tooley Ch.2 Q2",
+   "detail": "<p>Cách làm bằng phương pháp trừ dần trọng số lớn nhất: 29 ≥ 16 nên bit 16 = 1, còn lại 29-16=13; 13 ≥ 8 nên bit 8 = 1, còn lại 5; 5 ≥ 4 nên bit 4 = 1, còn lại 1; 1 không đủ 2 nên bit 2 = 0; cuối cùng bit 1 = 1. Ghép lại theo đúng thứ tự MSB đến LSB được 11101.</p><p>Cách khác thường dùng trong máy tính là chia liên tiếp cho 2 và ghi lại phần dư, đọc phần dư theo thứ tự ngược lại cũng cho cùng kết quả.</p>"
   },
   {
    "q": "Bù hai (two's complement) của số nhị phân 10110 là:",
@@ -31,7 +33,8 @@
    ],
    "correct": 2,
    "explain": "Đảo bit: 01001, cộng 1 → 01010.",
-   "src": "Tooley Ch.2 Q3"
+   "src": "Tooley Ch.2 Q3",
+   "detail": "<p>Bù hai gồm đúng hai bước: đảo toàn bộ bit (1 thành 0, 0 thành 1) để ra bù một, rồi cộng thêm 1 vào kết quả đó. Với 10110, đảo bit cho 01001, cộng 1 được 01010.</p><p>Bù hai là cách máy tính biểu diễn số âm để phép trừ có thể thực hiện bằng chính mạch cộng nhị phân, không cần mạch trừ riêng.</p>"
   },
   {
    "q": "Số BCD 10010001 tương ứng với số thập phân nào?",
@@ -42,7 +45,8 @@
    ],
    "correct": 2,
    "explain": "Tách nhóm 4 bit: 1001=9, 0001=1 → 91.",
-   "src": "Tooley Ch.2 Q4"
+   "src": "Tooley Ch.2 Q4",
+   "detail": "<p>BCD (binary coded decimal) mã hoá riêng từng chữ số thập phân bằng đúng 4 bit, khác với nhị phân thuần tuý vốn mã hoá cả con số. Muốn đọc ngược lại, chỉ cần tách chuỗi bit thành từng nhóm 4 bit rồi đổi mỗi nhóm sang một chữ số 0 đến 9. Với 10010001, nhóm đầu 1001 là 9, nhóm sau 0001 là 1, ghép lại thành 91.</p><p>Vì mỗi nhóm 4 bit BCD chỉ dùng 10 trong 16 tổ hợp có thể (0000 đến 1001), sáu tổ hợp còn lại (1010 đến 1111) không hợp lệ trong BCD.</p>"
   },
   {
    "q": "Số thập phân 37 tương ứng với mã BCD nào?",
@@ -53,7 +57,8 @@
    ],
    "correct": 0,
    "explain": "3→0011, 7→0111 → 00110111.",
-   "src": "Tooley Ch.2 Q5"
+   "src": "Tooley Ch.2 Q5",
+   "detail": "<p>Chuyển ngược lại với câu trên: mỗi chữ số thập phân được thay bằng đúng 4 bit nhị phân của nó. Số 37 có hai chữ số 3 và 7, đổi riêng từng chữ số được 0011 và 0111, ghép lại là 00110111.</p><p>Đây là lý do BCD được dùng phổ biến trên các bàn phím nhập liệu và màn hình 7 đoạn của thiết bị hàng không: mỗi phím số 0 đến 9 ứng thẳng với một mã 4 bit cố định, không cần mạch đổi cơ số phức tạp.</p>"
   },
   {
    "q": "Dãy số nào sau đây KHÔNG THỂ là một số bát phân (octal)?",
@@ -64,7 +69,8 @@
    ],
    "correct": 2,
    "explain": "Số bát phân chỉ dùng chữ số 0-7; 139 chứa chữ số 9 nên không hợp lệ.",
-   "src": "Tooley Ch.2 Q6"
+   "src": "Tooley Ch.2 Q6",
+   "detail": "<p>Một hệ đếm cơ số b chỉ được dùng các chữ số từ 0 đến b-1. Hệ bát phân có cơ số 8 nên chữ số hợp lệ chỉ gồm 0, 1, 2, 3, 4, 5, 6, 7. Trong ba phương án, 139 chứa chữ số 9, vượt quá giới hạn cho phép của hệ bát phân, nên không thể là một số bát phân hợp lệ.</p><p>Đây là cách kiểm tra nhanh áp dụng được cho mọi hệ đếm: chỉ cần nhìn xem có chữ số nào lớn hơn hoặc bằng cơ số hay không.</p>"
   },
   {
    "q": "Số bát phân 73 tương ứng với số thập phân nào?",
@@ -75,7 +81,8 @@
    ],
    "correct": 0,
    "explain": "73₈ = 7·8+3 = 59.",
-   "src": "Tooley Ch.2 Q7"
+   "src": "Tooley Ch.2 Q7",
+   "detail": "<p>Đổi một số bát phân sang thập phân theo đúng cách đổi trọng số vị trí, chỉ khác là cơ số dùng là 8 thay vì 10 hay 2. Số 73 trong hệ bát phân có chữ số 7 ở vị trí trọng số 8¹=8 và chữ số 3 ở vị trí 8⁰=1, nên giá trị thập phân là 7×8+3×1=59.</p><p>Hệ bát phân từng phổ biến trong các hệ thống máy tính cũ vì một chữ số bát phân đúng bằng 3 bit nhị phân, thuận tiện khi từ dữ liệu có độ dài chia hết cho 3.</p>"
   },
   {
    "q": "Số nhị phân 100010001 tương ứng với số bát phân nào?",
@@ -86,7 +93,8 @@
    ],
    "correct": 0,
    "explain": "Nhóm 3 bit từ phải: 100 010 001 → 4 2 1 → 421₈.",
-   "src": "Tooley Ch.2 Q8"
+   "src": "Tooley Ch.2 Q8",
+   "detail": "<p>Vì 2³=8, mỗi chữ số bát phân tương ứng đúng với một nhóm 3 bit nhị phân. Muốn đổi nhị phân sang bát phân, chỉ cần nhóm chuỗi bit thành từng cụm 3 bit tính từ bit cuối cùng bên phải, rồi đổi mỗi cụm thành một chữ số 0 đến 7. Với 100010001, nhóm từ phải được 100, 010, 001, tương ứng 4, 2, 1, ghép lại thành 421₈.</p><p>Nếu số bit không chia hết cho 3, cần đệm thêm số 0 vào bên trái nhóm đầu tiên trước khi đổi.</p>"
   },
   {
    "q": "Số thập lục phân (hex) 111 tương ứng với số bát phân nào?",
@@ -97,7 +105,8 @@
    ],
    "correct": 0,
    "explain": "111₁₆ = 273₁₀; 273₁₀ = 421₈ (273 = 4·64+2·8+1).",
-   "src": "Tooley Ch.2 Q9"
+   "src": "Tooley Ch.2 Q9",
+   "detail": "<p>Hex và bát phân không nhóm bit theo cùng một cách (hex dùng nhóm 4 bit, bát phân dùng nhóm 3 bit), nên không thể đổi thẳng từ hex sang bát phân bằng cách nhóm lại bit theo kiểu tương ứng 1-1. Cách an toàn luôn là đi qua bước trung gian nhị phân đầy đủ: đổi 111₁₆ sang thập phân được 273, rồi đổi 273 sang bát phân được 421₈.</p><p>Đây chính là bẫy hay gặp nhất khi mới học đổi cơ số: tưởng có thể ánh xạ trực tiếp giữa hai hệ đếm bất kỳ mà không qua nhị phân.</p>"
   },
   {
    "q": "Số hex C9 tương ứng với số thập phân nào?",
@@ -108,7 +117,8 @@
    ],
    "correct": 2,
    "explain": "C9₁₆ = 12·16+9 = 201.",
-   "src": "Tooley Ch.2 Q10"
+   "src": "Tooley Ch.2 Q10",
+   "detail": "<p>Trong hex, các chữ cái A đến F thay cho giá trị 10 đến 15. Số C9 có C ở vị trí trọng số 16¹=16 (C=12) và 9 ở vị trí 16⁰=1, nên giá trị thập phân là 12×16+9×1=201.</p><p>Hex được ưa chuộng để hiển thị mã lỗi và địa chỉ bộ nhớ trên thiết bị hàng không chính vì một chữ số hex biểu diễn gọn đúng 4 bit, giúp chuỗi nhị phân dài trở nên ngắn và dễ đọc hơn hẳn.</p>"
   },
   {
    "q": "Số nhị phân 10110011 tương ứng với số hex nào?",
@@ -119,7 +129,8 @@
    ],
    "correct": 0,
    "explain": "Nhóm 4 bit: 1011=B, 0011=3 → B3.",
-   "src": "Tooley Ch.2 Q11"
+   "src": "Tooley Ch.2 Q11",
+   "detail": "<p>Vì 2⁴=16, mỗi chữ số hex tương ứng đúng với một nhóm 4 bit. Nhóm chuỗi nhị phân thành từng cụm 4 bit từ phải sang trái rồi đổi từng cụm sang một ký tự hex. Với 10110011, nhóm được 1011 và 0011, tương ứng B và 3, ghép lại thành B3.</p><p>Cách nhóm 4 bit này chính là lý do hex được dùng làm ngôn ngữ tốc ký chuẩn cho nhị phân trong lập trình và tài liệu kỹ thuật số.</p>"
   },
   {
    "q": "Số hex AD tương ứng với số nhị phân nào?",
@@ -130,7 +141,8 @@
    ],
    "correct": 1,
    "explain": "A=1010, D=1101 → 10101101.",
-   "src": "Tooley Ch.2 Q12"
+   "src": "Tooley Ch.2 Q12",
+   "detail": "<p>Đổi ngược lại với câu trên: mỗi ký tự hex được thay bằng đúng 4 bit nhị phân tương ứng của nó. Ký tự A ứng với 1010, ký tự D ứng với 1101, ghép lại được 10101101.</p><p>Bảng quy đổi 0 đến F sang 4 bit nên được học thuộc vì nó là thao tác lặp lại thường xuyên nhất khi làm việc với địa chỉ bộ nhớ và mã lỗi trên thiết bị số.</p>"
   },
   {
    "q": "Số bát phân 706₈ tương ứng với:",
@@ -141,7 +153,8 @@
    ],
    "correct": 1,
    "explain": "706₈ = 7·64+0·8+6 = 454₁₀ = 1C6₁₆ (1·256+12·16+6=454). Nhị phân đúng của 454 là 111000110, không phải phương án (b).",
-   "src": "Tooley Ch.2 Q13"
+   "src": "Tooley Ch.2 Q13",
+   "detail": "<p>Câu này cố ý gài bẫy ở phương án (b): 111001110₂ trông giống nhưng KHÔNG bằng 454. Cách kiểm tra chắc chắn nhất là đổi 706₈ sang thập phân trước (7×64+0×8+6=454), rồi từ 454 đổi tiếp sang từng cơ số còn lại để so sánh: 454 đổi sang hex là 1C6 (1×256+12×16+6=454, khớp phương án a), còn đổi sang nhị phân đúng là 111000110 (256+128+64+4+2=454), không khớp với chuỗi 111001110 ở phương án (b).</p><p>Bài học rút ra: khi các phương án nhìn gần giống nhau, luôn tính lại bằng số thập phân trung gian thay vì so sánh trực quan hai chuỗi bit.</p>"
   },
   {
    "q": "Đổi số bát phân 54 sang thập lục phân:",
@@ -295,8 +308,8 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #1"
+   "explain": "Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #1"
   },
   {
    "q": "Hệ nhị phân là một hệ đếm có trọng số với 2 chữ số.",
@@ -305,8 +318,8 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #2"
+   "explain": "Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #2"
   },
   {
    "q": "MSB là viết tắt của 'most significant bit' (bit có trọng số lớn nhất).",
@@ -316,7 +329,7 @@
    ],
    "correct": 0,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #3"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #3"
   },
   {
    "q": "Trong hệ thập lục phân, 9 + 1 = 10.",
@@ -326,7 +339,7 @@
    ],
    "correct": 1,
    "explain": "Trong hex, 9+1 = A (10 thập phân được viết là A trong hex), không phải '10'.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #4"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #4"
   },
   {
    "q": "Bù một (1's complement) của số nhị phân 1010 là 0101.",
@@ -335,8 +348,8 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101 — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #5"
+   "explain": "Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #5"
   },
   {
    "q": "Bù hai (2's complement) của số nhị phân 1111 là 0000.",
@@ -346,7 +359,7 @@
    ],
    "correct": 1,
    "explain": "Bù một của 1111 là 0000, cộng thêm 1 → bù hai = 0001, không phải 0000.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #6"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #6"
   },
   {
    "q": "Bit ngoài cùng bên phải của một số nhị phân có dấu là bit dấu.",
@@ -356,7 +369,7 @@
    ],
    "correct": 0,
    "explain": "Bit dấu nằm ở vị trí NGOÀI CÙNG BÊN TRÁI (MSB), không phải bên phải.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #7"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #7"
   },
   {
    "q": "Hệ thập lục phân có 16 ký tự, trong đó 6 ký tự là chữ cái.",
@@ -365,8 +378,8 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #8"
+   "explain": "0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #8"
   },
   {
    "q": "BCD là viết tắt của 'binary coded decimal'.",
@@ -376,7 +389,7 @@
    ],
    "correct": 0,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #9"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #9"
   },
   {
    "q": "Có thể phát hiện lỗi trong một mã bằng cách kiểm tra bit chẵn lẻ (parity bit).",
@@ -386,7 +399,7 @@
    ],
    "correct": 1,
    "explain": "Đây chính là nguyên lý hoạt động của kiểm tra chẵn lẻ.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #10"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #10"
   },
   {
    "q": "CRC là viết tắt của 'cyclic redundancy check'.",
@@ -396,7 +409,7 @@
    ],
    "correct": 1,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #11"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #11"
   },
   {
    "q": "Tổng modulo-2 của 11 và 10 là 100.",
@@ -406,7 +419,7 @@
    ],
    "correct": 0,
    "explain": "Cộng modulo-2 chính là phép XOR: 11 XOR 10 = 01, không phải 100.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #12"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #12"
   },
   {
    "q": "3 × 10¹ + 4 × 10⁰ bằng:",
@@ -418,7 +431,7 @@
    ],
    "correct": 1,
    "explain": "3×10+4×1 = 30+4 = 34.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #1"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #1"
   },
   {
    "q": "Giá trị thập phân của số nhị phân 1000 là:",
@@ -430,7 +443,7 @@
    ],
    "correct": 2,
    "explain": "1000₂ = 8₁₀.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #2"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #2"
   },
   {
    "q": "Số nhị phân 11011101 tương ứng với số thập phân:",
@@ -442,7 +455,7 @@
    ],
    "correct": 2,
    "explain": "128+64+16+8+4+1 = 221.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #3"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #3"
   },
   {
    "q": "Số thập phân 21 tương ứng với số nhị phân:",
@@ -454,7 +467,7 @@
    ],
    "correct": 3,
    "explain": "16+4+1 = 21 → 10101₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #4"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #4"
   },
   {
    "q": "Số thập phân 250 tương ứng với số nhị phân:",
@@ -466,7 +479,7 @@
    ],
    "correct": 0,
    "explain": "128+64+32+16+8+2 = 250 → 11111010₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #5"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #5"
   },
   {
    "q": "Tổng 1111 + 1111 trong nhị phân bằng:",
@@ -478,7 +491,7 @@
    ],
    "correct": 3,
    "explain": "15+15 = 30 = 11110₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #6"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #6"
   },
   {
    "q": "Hiệu 1000 − 100 trong nhị phân bằng:",
@@ -490,7 +503,7 @@
    ],
    "correct": 1,
    "explain": "8−4 = 4 = 100₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #7"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #7"
   },
   {
    "q": "Bù một (1's complement) của 11110000 là:",
@@ -502,7 +515,7 @@
    ],
    "correct": 1,
    "explain": "Đảo từng bit: 1→0, 0→1 → 00001111.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #8"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #8"
   },
   {
    "q": "Bù hai (2's complement) của 11001100 là:",
@@ -514,7 +527,7 @@
    ],
    "correct": 2,
    "explain": "Bù một = 00110011, cộng 1 → 00110100.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #9"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #9"
   },
   {
    "q": "Số thập phân +122 được biểu diễn ở dạng bù hai (2's complement) là:",
@@ -526,7 +539,7 @@
    ],
    "correct": 3,
    "explain": "122 = 64+32+16+8+2 → 01111010 (số dương giữ nguyên dạng nhị phân thường).",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #10"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #10"
   },
   {
    "q": "Số thập phân −34 được biểu diễn ở dạng bù hai (2's complement) là:",
@@ -538,7 +551,7 @@
    ],
    "correct": 2,
    "explain": "34 = 00100010, bù một = 11011101, cộng 1 → 11011110.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #11"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #11"
   },
   {
    "q": "Một số nhị phân dấu phẩy động độ chính xác đơn (single-precision) có tổng cộng:",
@@ -550,7 +563,7 @@
    ],
    "correct": 1,
    "explain": "Chuẩn IEEE 754 single-precision dùng 32 bit.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #12"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #12"
   },
   {
    "q": "Ở dạng bù hai, số nhị phân 10010011 tương ứng với số thập phân:",
@@ -562,7 +575,7 @@
    ],
    "correct": 1,
    "explain": "Bit dấu=1 (âm). Bù một của 10010011 = 01101100, +1 = 01101101 = 109 → giá trị gốc = −109.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #13"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #13"
   },
   {
    "q": "Số nhị phân 101100111001010100001 viết dưới dạng bát phân là:",
@@ -574,7 +587,7 @@
    ],
    "correct": 0,
    "explain": "Nhóm 3 bit từ phải, đệm trái đủ nhóm, rồi đổi từng nhóm sang 1 chữ số bát phân.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #14"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #14"
   },
   {
    "q": "Số nhị phân 10001101010001101111 viết dưới dạng thập lục phân là:",
@@ -586,7 +599,7 @@
    ],
    "correct": 1,
    "explain": "Nhóm 4 bit từ phải: 1000 1101 0100 0110 1111 → 8 D 4 6 F.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #15"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #15"
   },
   {
    "q": "Số nhị phân tương ứng với F7A9₁₆ là:",
@@ -598,7 +611,7 @@
    ],
    "correct": 3,
    "explain": "F=1111, 7=0111, A=1010, 9=1001 → 1111 0111 1010 1001.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #16"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #16"
   },
   {
    "q": "Mã BCD của số thập phân 473 là:",
@@ -610,7 +623,7 @@
    ],
    "correct": 1,
    "explain": "4→0100, 7→0111, 3→0011 → ghép lại 010001110011, đúng phương án (c).",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #17"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #17"
   },
   {
    "q": "Tham chiếu Bảng 2-7 (ASCII), lệnh STOP mã hoá ASCII là:",
@@ -622,7 +635,7 @@
    ],
    "correct": 1,
    "explain": "Ghép mã ASCII 7-bit của từng ký tự S-T-O-P theo Bảng 2-7 trong sách (đáp án lấy theo answer key gốc của Floyd).",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #18"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #18"
   },
   {
    "q": "Mã nào sau đây có lỗi chẵn lẻ (even-parity error)?",
@@ -634,7 +647,7 @@
    ],
    "correct": 0,
    "explain": "Đếm số bit 1: 1010011→4(chẵn), 1101000→3(lẻ), 1001000→2(chẵn), 1110111→6(chẵn). Với quy ước parity chẵn, mã có SỐ BIT 1 LẺ là mã lỗi → 1101000.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #19"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #19"
   },
   {
    "q": "Trong kiểm tra dư thừa vòng (CRC), việc không có lỗi được thể hiện bằng:",
@@ -646,7 +659,7 @@
    ],
    "correct": 0,
    "explain": "Không có lỗi khi phép chia CRC cho số dư bằng 0.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #20"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #20"
   }
  ],
  "generated": [

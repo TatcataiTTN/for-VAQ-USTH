@@ -11,24 +11,24 @@ Dinh dang moi item: (vi, en, opts, correct, explain)
 - Self-Test: opts la 4 lua chon (a)(b)(c)(d) nhu sach.
 """
 
-# ============================================================ MODULE 01 — Floyd Ch.2 ==
+# ============================================================ MODULE 01: Floyd Ch.2 ==
 M1_TF = [
   dict(vi="Hệ bát phân là một hệ đếm có trọng số với 8 chữ số.", en="The octal number system is a weighted system with eight digits.",
-       correct=True, explain="Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ — đúng."),
+       correct=True, explain="Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ: đúng."),
   dict(vi="Hệ nhị phân là một hệ đếm có trọng số với 2 chữ số.", en="The binary number system is a weighted system with two digits.",
-       correct=True, explain="Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ — đúng."),
+       correct=True, explain="Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ: đúng."),
   dict(vi="MSB là viết tắt của 'most significant bit' (bit có trọng số lớn nhất).", en="MSB stands for most significant bit.",
        correct=True, explain="Đúng theo định nghĩa chuẩn."),
   dict(vi="Trong hệ thập lục phân, 9 + 1 = 10.", en="In hexadecimal, 9 + 1 = 10.",
        correct=False, explain="Trong hex, 9+1 = A (10 thập phân được viết là A trong hex), không phải '10'."),
   dict(vi="Bù một (1's complement) của số nhị phân 1010 là 0101.", en="The 1's complement of the binary number 1010 is 0101.",
-       correct=True, explain="Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101 — đúng."),
+       correct=True, explain="Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101: đúng."),
   dict(vi="Bù hai (2's complement) của số nhị phân 1111 là 0000.", en="The 2's complement of the binary number 1111 is 0000.",
        correct=False, explain="Bù một của 1111 là 0000, cộng thêm 1 → bù hai = 0001, không phải 0000."),
   dict(vi="Bit ngoài cùng bên phải của một số nhị phân có dấu là bit dấu.", en="The right-most bit in a signed binary number is the sign bit.",
        correct=False, explain="Bit dấu nằm ở vị trí NGOÀI CÙNG BÊN TRÁI (MSB), không phải bên phải."),
   dict(vi="Hệ thập lục phân có 16 ký tự, trong đó 6 ký tự là chữ cái.", en="The hexadecimal number system has 16 characters, six of which are alphabetic characters.",
-       correct=True, explain="0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự — đúng."),
+       correct=True, explain="0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự: đúng."),
   dict(vi="BCD là viết tắt của 'binary coded decimal'.", en="BCD stands for binary coded decimal.",
        correct=True, explain="Đúng theo định nghĩa chuẩn."),
   dict(vi="Có thể phát hiện lỗi trong một mã bằng cách kiểm tra bit chẵn lẻ (parity bit).", en="An error in a given code can be detected by verifying the parity bit.",
@@ -82,22 +82,22 @@ M1_ST = [
        opts=["Số dư = mã sinh (generator code)", "Số dư = 0", "Số dư = 1", "Thương số = 0"], correct=1, explain="Không có lỗi khi phép chia CRC cho số dư bằng 0."),
 ]
 
-# ============================================================ MODULE 02 — Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean) ==
+# ============================================================ MODULE 02: Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean) ==
 M2_TF = [
   dict(vi="Cổng đảo (inverter) thực hiện phép toán NOT.", en="An inverter performs a NOT operation.",
        correct=True, explain="Đúng theo định nghĩa cổng NOT."),
   dict(vi="Cổng NOT không thể có nhiều hơn một đầu vào.", en="A NOT gate cannot have more than one input.",
-       correct=True, explain="NOT là cổng đảo 1 đầu vào — đúng."),
+       correct=True, explain="NOT là cổng đảo 1 đầu vào: đúng."),
   dict(vi="Nếu bất kỳ đầu vào nào của cổng OR bằng 0, đầu ra bằng 0.", en="If any input to an OR gate is zero, the output is zero.",
        correct=False, explain="OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0, không phải chỉ cần một đầu vào bằng 0."),
   dict(vi="Nếu tất cả đầu vào của cổng AND đều bằng 1, đầu ra bằng 0.", en="If all inputs to an AND gate are 1, the output is 0.",
        correct=False, explain="AND ra 1 khi tất cả đầu vào đều 1, không phải 0."),
   dict(vi="Cổng NAND có thể coi là cổng AND nối tiếp với cổng NOT.", en="A NAND gate can be considered as an AND gate followed by a NOT gate.",
-       correct=True, explain="Đúng — NAND = NOT(AND)."),
+       correct=True, explain="Đúng: NAND = NOT(AND)."),
   dict(vi="Cổng NOR có thể coi là cổng OR nối tiếp với cổng đảo.", en="A NOR gate can be considered as an OR gate followed by an inverter.",
-       correct=True, explain="Đúng — NOR = NOT(OR)."),
+       correct=True, explain="Đúng: NOR = NOT(OR)."),
   dict(vi="Đầu ra của cổng XOR bằng 0 nếu hai đầu vào trái dấu nhau.", en="The output of an exclusive-OR is 0 if the inputs are opposite.",
-       correct=False, explain="XOR ra 1 khi hai đầu vào KHÁC nhau (trái dấu), ra 0 khi GIỐNG nhau — ngược với phát biểu."),
+       correct=False, explain="XOR ra 1 khi hai đầu vào KHÁC nhau (trái dấu), ra 0 khi GIỐNG nhau: ngược với phát biểu."),
   dict(vi="Hai loại IC logic cố định (fixed-function) là bipolar và NMOS.", en="Two types of fixed-function logic integrated circuits are bipolar and NMOS.",
        correct=False, explain="Hai họ chính là bipolar (TTL) và CMOS, không phải NMOS."),
   dict(vi="Sau khi đã lập trình, logic của PLD vẫn có thể thay đổi được.", en="Once programmed, PLD logic can be changed.",
@@ -112,15 +112,15 @@ M2_ST = [
   dict(vi="Cổng đảo thực hiện phép toán gọi là:", en="An inverter performs an operation known as",
        opts=["bù (complementation)", "khẳng định (assertion)", "đảo (inversion)", "cả (a) và (c)"], correct=3, explain="Đảo và bù là hai tên gọi tương đương của cùng phép toán NOT."),
   dict(vi="Đầu ra của cổng AND với 3 đầu vào A, B, C bằng 0 (LOW) khi:", en="The output of an AND gate with inputs A, B and C is 0 (LOW) when",
-       opts=["A=0,B=0,C=0", "A=0,B=1,C=1", "cả (a) và (b)", "không trường hợp nào"], correct=2, explain="AND ra 0 bất cứ khi nào có ÍT NHẤT MỘT đầu vào =0 — cả hai trường hợp (a) và (b) đều thoả."),
+       opts=["A=0,B=0,C=0", "A=0,B=1,C=1", "cả (a) và (b)", "không trường hợp nào"], correct=2, explain="AND ra 0 bất cứ khi nào có ÍT NHẤT MỘT đầu vào =0: cả hai trường hợp (a) và (b) đều thoả."),
   dict(vi="Đầu ra của cổng OR với 3 đầu vào A, B, C bằng 0 (LOW) khi:", en="The output of an OR gate with inputs A, B and C is 0 (LOW) when",
-       opts=["A=0,B=0,C=0", "A=0,B=1,C=1", "cả (a) và (b)", "không trường hợp nào"], correct=0, explain="OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0 — chỉ đúng với trường hợp (a)."),
+       opts=["A=0,B=0,C=0", "A=0,B=1,C=1", "cả (a) và (b)", "không trường hợp nào"], correct=0, explain="OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0: chỉ đúng với trường hợp (a)."),
   dict(vi="Hai xung được đưa vào cổng NAND 2 đầu vào: xung 1 lên HIGH tại t=0, xuống LOW tại t=1ms; xung 2 lên HIGH tại t=0.8ms, xuống LOW tại t=3ms. Đầu ra:", en="A pulse is applied to each input of a 2-input NAND gate. One pulse goes HIGH at t=0 and back LOW at t=1ms. The other goes HIGH at t=0.8ms and back LOW at t=3ms. The output pulse:",
-       opts=["xuống LOW tại t=0, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=1ms", "xuống LOW tại t=0.8ms, xuống LOW tại t=1ms"], correct=2, explain="NAND chỉ ra LOW khi CẢ HAI đầu vào đều HIGH — khoảng chồng lấn là từ t=0.8ms đến t=1ms."),
+       opts=["xuống LOW tại t=0, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=1ms", "xuống LOW tại t=0.8ms, xuống LOW tại t=1ms"], correct=2, explain="NAND chỉ ra LOW khi CẢ HAI đầu vào đều HIGH: khoảng chồng lấn là từ t=0.8ms đến t=1ms."),
   dict(vi="Tương tự câu trên nhưng với cổng NOR 2 đầu vào, đầu ra:", en="Same setup with a 2-input NOR gate, the output pulse:",
-       opts=["xuống LOW tại t=0, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=1ms", "lên HIGH tại t=0.8ms, xuống LOW tại t=1ms"], correct=0, explain="NOR ra HIGH chỉ khi CẢ HAI đầu vào đều LOW — chỉ đúng trước t=0 và sau t=3ms; NOR xuống LOW ngay khi có 1 xung lên HIGH (t=0) và chỉ lên lại HIGH khi cả hai đều LOW (sau t=3ms)."),
+       opts=["xuống LOW tại t=0, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms", "xuống LOW tại t=0.8ms, lên lại HIGH tại t=1ms", "lên HIGH tại t=0.8ms, xuống LOW tại t=1ms"], correct=0, explain="NOR ra HIGH chỉ khi CẢ HAI đầu vào đều LOW: chỉ đúng trước t=0 và sau t=3ms; NOR xuống LOW ngay khi có 1 xung lên HIGH (t=0) và chỉ lên lại HIGH khi cả hai đều LOW (sau t=3ms)."),
   dict(vi="Với cổng XOR và 2 xung tương tự, đầu ra:", en="Same setup with an exclusive-OR gate, the output pulse:",
-       opts=["lên HIGH tại t=0, xuống LOW tại t=3ms", "lên HIGH tại t=0, xuống LOW tại t=0.8ms", "lên HIGH tại t=1ms, xuống LOW tại t=3ms", "cả (b) và (c)"], correct=3, explain="XOR ra HIGH khi hai đầu vào KHÁC nhau: từ t=0-0.8ms khác nhau (HIGH), từ 0.8-1ms giống nhau (LOW), từ 1-3ms khác nhau (HIGH) — khớp cả (b) và (c)."),
+       opts=["lên HIGH tại t=0, xuống LOW tại t=3ms", "lên HIGH tại t=0, xuống LOW tại t=0.8ms", "lên HIGH tại t=1ms, xuống LOW tại t=3ms", "cả (b) và (c)"], correct=3, explain="XOR ra HIGH khi hai đầu vào KHÁC nhau: từ t=0-0.8ms khác nhau (HIGH), từ 0.8-1ms giống nhau (LOW), từ 1-3ms khác nhau (HIGH): khớp cả (b) và (c)."),
   dict(vi="Một xung dương được đưa vào cổng đảo. Khoảng thời gian từ cạnh lên đầu vào tới cạnh lên đầu ra là 7ns. Đây là tham số:", en="A positive-going pulse is applied to an inverter. The interval from the leading edge of input to leading edge of output is 7ns. This is",
        opts=["tích công suất-tốc độ (speed-power product)", "trễ lan truyền tPHL", "trễ lan truyền tPLH", "độ rộng xung"], correct=1, explain="Cổng đảo (inverter) đảo dấu tín hiệu: đầu vào lên HIGH khiến đầu ra xuống LOW. Trễ từ sự kiện này chính là tPHL (trễ lan truyền khi output chuyển HIGH→LOW), không phải tPLH."),
   dict(vi="Hầu hết PLD sử dụng một mảng (array) các cổng:", en="Most PLDs utilize an array of",
@@ -136,11 +136,11 @@ M2_ST = [
   dict(vi="JTAG là viết tắt của:", en="JTAG stands for",
        opts=["Joint Test Action Group", "Java Top Array Group", "Joint Test Array Group", "Joint Time Analysis Group"], correct=0, explain="JTAG = Joint Test Action Group, chuẩn IEEE 1149.1."),
   dict(vi="Lập trình tại chỗ (in-system programming) của PLD thường dùng:", en="In-system programming of a PLD typically utilizes",
-       opts=["bộ tạo xung nhịp nhúng", "bộ xử lý nhúng", "bộ nhớ PROM nhúng", "cả (a) và (b)", "cả (b) và (c)"], correct=3, explain="ISP thường cần cả bộ tạo xung nhịp VÀ bộ xử lý nhúng điều khiển qua giao diện JTAG — đáp án đúng theo sách là 'cả (a) và (b)'."),
+       opts=["bộ tạo xung nhịp nhúng", "bộ xử lý nhúng", "bộ nhớ PROM nhúng", "cả (a) và (b)", "cả (b) và (c)"], correct=3, explain="ISP thường cần cả bộ tạo xung nhịp VÀ bộ xử lý nhúng điều khiển qua giao diện JTAG: đáp án đúng theo sách là 'cả (a) và (b)'."),
   dict(vi="Để đo chu kỳ của dạng sóng xung, bạn phải dùng:", en="To measure the period of a pulse waveform, you must use",
        opts=["đồng hồ vạn năng số (DMM)", "bút thử logic (logic probe)", "dao động ký (oscilloscope)", "bút xung logic (logic pulser)"], correct=2, explain="Chỉ oscilloscope hiển thị được dạng sóng theo thời gian để đo chu kỳ."),
   dict(vi="Sau khi đo được chu kỳ của dạng sóng xung, tần số được tính bằng cách:", en="Once you measure the period of a pulse waveform, the frequency is found by",
-       opts=["dùng thang đo khác", "đo duty cycle", "lấy nghịch đảo của chu kỳ", "dùng loại thiết bị đo khác"], correct=2, explain="f = 1/T — nghịch đảo của chu kỳ."),
+       opts=["dùng thang đo khác", "đo duty cycle", "lấy nghịch đảo của chu kỳ", "dùng loại thiết bị đo khác"], correct=2, explain="f = 1/T: nghịch đảo của chu kỳ."),
 ]
 
 M2_TF += [
@@ -149,7 +149,7 @@ M2_TF += [
   dict(vi="Phép cộng trong đại số Boolean tương đương với hàm NOR.", en="Addition in Boolean algebra is equivalent to the NOR function.",
        correct=False, explain="Phép cộng Boolean (+) tương đương hàm OR, không phải NOR."),
   dict(vi="Phép nhân trong đại số Boolean tương đương với hàm AND.", en="Multiplication in Boolean algebra is equivalent to the AND function.",
-       correct=True, explain="Đúng — phép nhân Boolean (·) chính là AND."),
+       correct=True, explain="Đúng: phép nhân Boolean (·) chính là AND."),
   dict(vi="Luật giao hoán, luật kết hợp và luật phân phối đều là các luật trong đại số Boolean.", en="The commutative law, associative law, and distributive law are all laws in Boolean algebra.",
        correct=True, explain="Cả 3 luật đều tồn tại và áp dụng được trong đại số Boolean."),
   dict(vi="Phần bù của 0 là chính nó (0).", en="The complement of 0 is 0 itself.",
@@ -161,18 +161,18 @@ M2_TF += [
   dict(vi="SOP nghĩa là tổng của các tích (sum-of-products).", en="SOP means sum-of-products.",
        correct=True, explain="Đúng theo định nghĩa chuẩn."),
   dict(vi="Bìa Karnaugh (Karnaugh map) có thể dùng để rút gọn biểu thức Boolean.", en="Karnaugh maps can be used to simplify Boolean expressions.",
-       correct=True, explain="Đúng — đây chính là mục đích chính của K-map."),
+       correct=True, explain="Đúng: đây chính là mục đích chính của K-map."),
   dict(vi="Bìa Karnaugh 3 biến có 6 ô.", en="A 3-variable Karnaugh map has six cells.",
        correct=False, explain="Bìa Karnaugh n biến có 2ⁿ ô; với n=3, số ô = 2³ = 8, không phải 6."),
   dict(vi="VHDL là một loại 'hardware definition language' (ngôn ngữ ĐỊNH NGHĨA phần cứng).", en="VHDL is a type of hardware definition language.",
-       correct=False, explain="Bẫy từ ngữ: VHDL là 'Hardware DESCRIPTION Language' (ngôn ngữ MÔ TẢ phần cứng), không phải 'definition language' (định nghĩa) — phát biểu dùng sai từ nên SAI."),
+       correct=False, explain="Bẫy từ ngữ: VHDL là 'Hardware DESCRIPTION Language' (ngôn ngữ MÔ TẢ phần cứng), không phải 'definition language' (định nghĩa): phát biểu dùng sai từ nên SAI."),
   dict(vi="Một chương trình VHDL bao gồm một entity và một architecture.", en="A VHDL program consists of an entity and an architecture.",
-       correct=True, explain="Đúng — đây là 2 khối cấu trúc cơ bản bắt buộc của VHDL."),
+       correct=True, explain="Đúng: đây là 2 khối cấu trúc cơ bản bắt buộc của VHDL."),
 ]
 
 M2_ST += [
   dict(vi="Một biến trong đại số Boolean là ký hiệu dùng để biểu diễn:", en="A variable is a symbol in Boolean algebra used to represent",
-       opts=["dữ liệu", "một điều kiện", "một hành động", "cả (a),(b),(c)"], correct=3, explain="Biến Boolean có thể đại diện cho bất kỳ đại lượng logic nào — dữ liệu, điều kiện hay hành động."),
+       opts=["dữ liệu", "một điều kiện", "một hành động", "cả (a),(b),(c)"], correct=3, explain="Biến Boolean có thể đại diện cho bất kỳ đại lượng logic nào: dữ liệu, điều kiện hay hành động."),
   dict(vi="Biểu thức Boolean A + B + C là:", en="The Boolean expression A + B + C is",
        opts=["một tổng (sum term)", "một literal", "một số hạng đảo (inverse term)", "một tích (product term)"], correct=0, explain="Tổng các biến nối bằng dấu + gọi là sum term."),
   dict(vi="Biểu thức Boolean ABCD là:", en="The Boolean expression ABCD is",
@@ -186,19 +186,19 @@ M2_ST += [
   dict(vi="Theo luật phân phối:", en="According to the distributive law,",
        opts=["A(B+C)=AB+AC", "A(BC)=ABC", "A(A+1)=A", "A+AB=A"], correct=0, explain="Đây chính là dạng chuẩn của luật phân phối trong đại số Boolean."),
   dict(vi="Đâu KHÔNG phải là một luật hợp lệ của đại số Boolean?", en="Which one of the following is not a valid rule of Boolean algebra?",
-       opts=["A+1=1", "A=A", "AA=A", "A+0=A"], correct=1, explain="'A=A' không phải là một luật rút gọn/biến đổi — 3 luật còn lại đều là luật chuẩn (A+1=1, AA=A, A+0=A)."),
+       opts=["A+1=1", "A=A", "AA=A", "A+0=A"], correct=1, explain="'A=A' không phải là một luật rút gọn/biến đổi: 3 luật còn lại đều là luật chuẩn (A+1=1, AA=A, A+0=A)."),
   dict(vi="Luật nào phát biểu: nếu một đầu vào của cổng AND luôn là 1, đầu ra bằng đầu vào còn lại?", en="Which rule states that if one input of an AND gate is always 1, the output equals the other input?",
        opts=["A+1=1", "A+A=A", "A·A=A", "A·1=A"], correct=3, explain="A·1=A chính là luật mô tả tình huống này."),
   dict(vi="Theo định lý De Morgan, phần bù của một tích các biến bằng:", en="According to De Morgan's theorems, the complement of a product of variables is equal to",
-       opts=["phần bù của tổng", "tổng các phần bù", "tích các phần bù", "cả (a),(b),(c)"], correct=1, explain="(AB)' = A' + B' — tổng các phần bù."),
+       opts=["phần bù của tổng", "tổng các phần bù", "tích các phần bù", "cả (a),(b),(c)"], correct=1, explain="(AB)' = A' + B': tổng các phần bù."),
   dict(vi="Biểu thức Boolean X=(A+B)(C+D) biểu diễn:", en="The Boolean expression X=(A+B)(C+D) represents",
        opts=["hai OR AND với nhau", "hai AND OR với nhau", "một cổng AND 4 đầu vào", "một cổng OR 4 đầu vào"], correct=0, explain="Hai nhóm OR (A+B) và (C+D) được nhân (AND) với nhau."),
   dict(vi="Ví dụ của biểu thức tổng-các-tích (SOP) là:", en="An example of a sum-of-products expression is",
-       opts=["A+B(C+D)", "AB+AC+ABC", "(A+B+C)(A+B+C)", "cả (a) và (b)"], correct=1, explain="SOP là tổng của nhiều tích — AB+AC+ABC đúng dạng này; (a) không phải SOP thuần vì có ngoặc lồng."),
+       opts=["A+B(C+D)", "AB+AC+ABC", "(A+B+C)(A+B+C)", "cả (a) và (b)"], correct=1, explain="SOP là tổng của nhiều tích: AB+AC+ABC đúng dạng này; (a) không phải SOP thuần vì có ngoặc lồng."),
   dict(vi="Ví dụ của biểu thức tích-các-tổng (POS) là:", en="An example of a product-of-sums expression is",
-       opts=["A(B+C)+AC", "(A+B)(A+B+C)", "A+B+BC", "cả (a) và (b)"], correct=1, explain="POS là tích của nhiều tổng — (A+B)(A+B+C) đúng dạng này."),
+       opts=["A(B+C)+AC", "(A+B)(A+B+C)", "A+B+BC", "cả (a) và (b)"], correct=1, explain="POS là tích của nhiều tổng: (A+B)(A+B+C) đúng dạng này."),
   dict(vi="Ví dụ của biểu thức SOP chuẩn (standard SOP) là:", en="An example of a standard SOP expression is",
-       opts=["AB+ABC+ABD", "ABC+ACD", "AB+AB+AB", "ABCD+AB+A"], correct=2, explain="Đáp án theo sách là (c). Lưu ý: các số hạng gốc trong sách có dấu gạch trên (phần bù) ở một số biến — dấu gạch này bị mất khi trích xuất text thuần, nên không thể tự suy luận lại đầy đủ; giữ nguyên đáp án in trong sách."),
+       opts=["AB+ABC+ABD", "ABC+ACD", "AB+AB+AB", "ABCD+AB+A"], correct=2, explain="Đáp án theo sách là (c). Lưu ý: các số hạng gốc trong sách có dấu gạch trên (phần bù) ở một số biến: dấu gạch này bị mất khi trích xuất text thuần, nên không thể tự suy luận lại đầy đủ; giữ nguyên đáp án in trong sách."),
   dict(vi="Bìa Karnaugh 4 biến có:", en="A 4-variable Karnaugh map has",
        opts=["4 ô", "8 ô", "16 ô", "32 ô"], correct=2, explain="2⁴ = 16 ô."),
   dict(vi="Trong bìa Karnaugh 4 biến, một tích 2 biến được tạo bởi:", en="In a 4-variable Karnaugh map, a 2-variable product term is produced by",
@@ -213,7 +213,7 @@ M2_ST += [
        opts=["architecture", "component", "entity", "data flow"], correct=2, explain="Entity khai báo giao diện (các port) của mạch, architecture mô tả hành vi bên trong."),
 ]
 
-# ============================================================ MODULE 03 — Floyd Ch.6 ==
+# ============================================================ MODULE 03: Floyd Ch.6 ==
 M3_TF = [
   dict(vi="Bộ cộng bán phần (half-adder) cộng hai bit nhị phân.", en="A half-adder adds two binary bits.",
        correct=True, explain="Đúng theo định nghĩa half-adder."),
@@ -224,7 +224,7 @@ M3_TF = [
   dict(vi="Bộ cộng toàn phần chỉ có thể hiện thực bằng cổng XOR 2 đầu vào.", en="A full-adder can be realized only by using 2-input XOR gates.",
        correct=False, explain="Full adder cần kết hợp cả XOR VÀ AND/OR để tạo carry-out, không chỉ dùng XOR."),
   dict(vi="Khi hai bit đầu vào đều là 1 và bit nhớ vào cũng là 1, đầu ra tổng của bộ cộng toàn phần là 1.", en="When the input bits are both 1 and the input carry bit is 1, the sum output of a full adder is 1.",
-       correct=True, explain="1+1+1=11₂ → tổng (Σ)=1, nhớ ra (Cout)=1 — đúng, tổng bằng 1."),
+       correct=True, explain="1+1+1=11₂ → tổng (Σ)=1, nhớ ra (Cout)=1: đúng, tổng bằng 1."),
   dict(vi="Đầu ra của bộ so sánh (comparator) bằng 0 khi hai số nhị phân đầu vào bằng nhau.", en="The output of a comparator is 0 when the two binary inputs given are equal.",
        correct=False, explain="Khi hai số bằng nhau, đầu ra 'A=B' của comparator ở mức tích cực (thường là 1/HIGH), không phải 0."),
   dict(vi="Bộ giải mã (decoder) phát hiện sự hiện diện của một tổ hợp bit đầu vào cụ thể.", en="A decoder detects the presence of a specified combination of input bits.",
@@ -232,7 +232,7 @@ M3_TF = [
   dict(vi="Bộ giải mã 4-sang-10 đường và bộ giải mã 1-trong-10 là hai loại khác nhau.", en="The 4-line-to-10-line decoder and the 1-of-10 decoder are two different types.",
        correct=False, explain="Đây thực chất là CÙNG MỘT loại thiết bị được gọi theo 2 tên khác nhau, không phải hai loại khác nhau."),
   dict(vi="Bộ mã hoá (encoder) về cơ bản thực hiện chức năng ngược lại với bộ giải mã.", en="An encoder essentially performs a reverse decoder function.",
-       correct=True, explain="Đúng — encoder và decoder là hai chức năng ngược nhau."),
+       correct=True, explain="Đúng: encoder và decoder là hai chức năng ngược nhau."),
   dict(vi="Bộ dồn kênh (multiplexer) là mạch logic cho phép dữ liệu số từ một nguồn duy nhất được định tuyến ra nhiều đường.", en="A multiplexer is a logic circuit that allows digital information from a single source to be routed onto several lines.",
        correct=False, explain="Đây là mô tả của DEMULTIPLEXER (1 vào, nhiều ra); multiplexer làm NGƯỢC LẠI: nhiều nguồn vào, chọn ra 1 đường."),
 ]
@@ -247,7 +247,7 @@ M3_ST = [
   dict(vi="Một bộ cộng song song 3-bit có thể cộng:", en="A 3-bit parallel adder can add",
        opts=["ba số nhị phân 2-bit", "hai số nhị phân 3-bit", "ba bit cùng lúc", "ba bit tuần tự"], correct=1, explain="Bộ cộng song song n-bit cộng hai số n-bit cùng lúc; với n=3 → cộng hai số 3-bit."),
   dict(vi="Để mở rộng bộ cộng song song 2-bit thành 4-bit, bạn phải:", en="To expand a 2-bit parallel adder to a 4-bit parallel adder, you must",
-       opts=["dùng 2 bộ cộng 2-bit không kết nối", "dùng 2 bộ cộng 2-bit, nối đầu ra tổng của bộ này vào đầu vào bit của bộ kia", "dùng 4 bộ cộng 2-bit không kết nối", "dùng 2 bộ cộng 2-bit, nối đầu ra nhớ (carry) của bộ này vào đầu vào nhớ của bộ kia"], correct=3, explain="Ghép tầng (cascade) bằng cách nối Carry-out của tầng thấp vào Carry-in của tầng cao — đúng nguyên lý bộ cộng gợn sóng (ripple carry)."),
+       opts=["dùng 2 bộ cộng 2-bit không kết nối", "dùng 2 bộ cộng 2-bit, nối đầu ra tổng của bộ này vào đầu vào bit của bộ kia", "dùng 4 bộ cộng 2-bit không kết nối", "dùng 2 bộ cộng 2-bit, nối đầu ra nhớ (carry) của bộ này vào đầu vào nhớ của bộ kia"], correct=3, explain="Ghép tầng (cascade) bằng cách nối Carry-out của tầng thấp vào Carry-in của tầng cao: đúng nguyên lý bộ cộng gợn sóng (ripple carry)."),
   dict(vi="Nếu IC so sánh độ lớn 74HC85 có A=1000 và B=1010, đầu ra là:", en="If a 74HC85 magnitude comparator has A=1000 and B=1010, the outputs are",
        opts=["A>B=0,A<B=0,A=B=0", "A>B=0,A<B=0,A=B=1", "A>B=0,A<B=1,A=B=0", "A>B=0,A<B=1,A=B=1"], correct=2, explain="A=8, B=10 → A<B đúng (=1), A>B sai (=0), A=B sai (=0)."),
   dict(vi="Nếu bộ giải mã 1-trong-16 với đầu ra tích cực mức thấp có đầu ra decimal 12 ở mức LOW, đầu vào là:", en="If a 1-of-16 decoder with active-LOW outputs exhibits a LOW on the decimal 12 output, what are the inputs?",
@@ -264,7 +264,7 @@ M3_ST = [
        opts=["10011000", "01111000", "11111111", "11010101", "tất cả", "cả (b) và (c)"], correct=5, explain="10011000 có 3 bit 1 (lẻ). 01111000 có 4 bit 1 (chẵn) ✓. 11111111 có 8 bit 1 (chẵn) ✓. 11010101 có 5 bit 1 (lẻ). Vậy chỉ (b) và (c) có parity chẵn."),
 ]
 
-# ============================================================ MODULE 04 — Floyd Ch.11 ==
+# ============================================================ MODULE 04: Floyd Ch.11 ==
 M4_TF = [
   dict(vi="Một nibble gồm 8 bit.", en="A nibble consists of eight bits.",
        correct=False, explain="Nibble = 4 bit; 8 bit là 1 byte, không phải nibble."),
@@ -273,21 +273,21 @@ M4_TF = [
   dict(vi="Vị trí của một đơn vị dữ liệu trong mảng bộ nhớ được gọi là địa chỉ (address) của nó.", en="The location of a unit of data in a memory array is called its address.",
        correct=True, explain="Đúng theo định nghĩa chuẩn."),
   dict(vi="Bus dữ liệu (data bus) hoạt động hai chiều.", en="A data bus is bidirectional in operation.",
-       correct=True, explain="Đúng — data bus vừa đọc vừa ghi được, khác address bus (một chiều)."),
+       correct=True, explain="Đúng: data bus vừa đọc vừa ghi được, khác address bus (một chiều)."),
   dict(vi="RAM là bộ nhớ địa chỉ ngẫu nhiên (random address memory).", en="RAM is a random address memory.",
        correct=False, explain="RAM = Random ACCESS Memory (truy cập ngẫu nhiên), không phải 'random address'."),
   dict(vi="Dữ liệu lưu trong SRAM (static RAM) vẫn được giữ lại ngay cả khi mất điện.", en="Data stored in a static RAM is retained even after power is removed.",
-       correct=False, explain="SRAM vẫn là bộ nhớ volatile (dễ bay hơi) — mất dữ liệu khi mất điện, giống DRAM."),
+       correct=False, explain="SRAM vẫn là bộ nhớ volatile (dễ bay hơi): mất dữ liệu khi mất điện, giống DRAM."),
   dict(vi="Cache là một loại bộ nhớ dùng để lưu trữ trung gian/tạm thời dữ liệu.", en="Cache is a type of memory used for intermediate or temporary storage of data.",
-       correct=True, explain="Đúng — cache lưu tạm dữ liệu/lệnh hay dùng để tăng tốc truy cập."),
+       correct=True, explain="Đúng: cache lưu tạm dữ liệu/lệnh hay dùng để tăng tốc truy cập."),
   dict(vi="DRAM (dynamic RAM) phải được làm tươi (refresh) định kỳ để giữ dữ liệu.", en="Dynamic RAMs must be periodically refreshed to retain data.",
-       correct=True, explain="Đúng — DRAM lưu dữ liệu bằng điện tích trên tụ điện, bị rò rỉ nên cần refresh."),
+       correct=True, explain="Đúng: DRAM lưu dữ liệu bằng điện tích trên tụ điện, bị rò rỉ nên cần refresh."),
   dict(vi="ROM là bộ nhớ chỉ đọc (read-only memory).", en="ROM is a read-only memory.",
        correct=True, explain="Đúng theo định nghĩa/tên gọi."),
   dict(vi="Bộ nhớ flash sử dụng một chùm tia sáng nhấp nháy để lưu dữ liệu.", en="A flash memory uses a flashing beam of light to store data.",
        correct=False, explain="Flash memory lưu dữ liệu bằng điện tích trong cổng nổi (floating gate) bán dẫn, không liên quan tới ánh sáng."),
   dict(vi="Thanh ghi (register) nằm ở đỉnh của hệ thống phân cấp bộ nhớ (memory hierarchy).", en="Registers are at the top of a memory hierarchy.",
-       correct=True, explain="Đúng — thanh ghi nhanh nhất, nằm ngay trong CPU, đứng đầu hệ thống phân cấp bộ nhớ."),
+       correct=True, explain="Đúng: thanh ghi nhanh nhất, nằm ngay trong CPU, đứng đầu hệ thống phân cấp bộ nhớ."),
   dict(vi="Lưu trữ đám mây (cloud storage) được truy cập qua Internet.", en="Cloud storage is accessed through the Internet.",
        correct=True, explain="Đúng theo định nghĩa."),
 ]
@@ -302,7 +302,7 @@ M4_ST = [
   dict(vi="Dữ liệu lưu tại một địa chỉ trong RAM sẽ bị mất khi:", en="Data that are stored at a given address in a RAM are lost when",
        opts=["mất điện", "dữ liệu được đọc ra từ địa chỉ đó", "dữ liệu mới được ghi vào địa chỉ đó", "cả (a) và (c)"], correct=3, explain="Mất điện (RAM volatile) HOẶC bị ghi đè bởi dữ liệu mới đều làm mất dữ liệu cũ."),
   dict(vi="ROM là một loại bộ nhớ:", en="A ROM is a",
-       opts=["không mất dữ liệu khi mất điện (nonvolatile)", "mất dữ liệu khi mất điện (volatile)", "đọc/ghi được", "tổ chức theo byte"], correct=0, explain="ROM giữ dữ liệu vĩnh viễn kể cả khi mất điện — nonvolatile."),
+       opts=["không mất dữ liệu khi mất điện (nonvolatile)", "mất dữ liệu khi mất điện (volatile)", "đọc/ghi được", "tổ chức theo byte"], correct=0, explain="ROM giữ dữ liệu vĩnh viễn kể cả khi mất điện: nonvolatile."),
   dict(vi="Một bộ nhớ có 512 địa chỉ có:", en="A memory with 512 addresses has",
        opts=["512 đường địa chỉ", "12 đường địa chỉ", "1 đường địa chỉ", "9 đường địa chỉ"], correct=3, explain="512=2⁹ → cần 9 đường địa chỉ để mã hoá 512 địa chỉ khác nhau."),
   dict(vi="Một bộ nhớ tổ chức theo byte (byte-organized) có:", en="A byte-organized memory has",
@@ -324,8 +324,8 @@ M4_ST = [
 ]
 
 FLOYD_MODULES = {
-  "01-number-systems":  dict(tf=M1_TF, st=M1_ST, chapter="Floyd Ch.2 — Number Systems, Operations, and Codes"),
+  "01-number-systems":  dict(tf=M1_TF, st=M1_ST, chapter="Floyd Ch.2: Number Systems, Operations, and Codes"),
   "02-logic-boolean":   dict(tf=M2_TF, st=M2_ST, chapter="Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra)"),
-  "03-ic-multiplexing": dict(tf=M3_TF, st=M3_ST, chapter="Floyd Ch.6 — Functions of Combinational Logic"),
-  "04-computer-cpu":    dict(tf=M4_TF, st=M4_ST, chapter="Floyd Ch.11 — Data Storage"),
+  "03-ic-multiplexing": dict(tf=M3_TF, st=M3_ST, chapter="Floyd Ch.6: Functions of Combinational Logic"),
+  "04-computer-cpu":    dict(tf=M4_TF, st=M4_ST, chapter="Floyd Ch.11: Data Storage"),
 }

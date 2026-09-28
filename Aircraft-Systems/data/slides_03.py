@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 SLIDES = {
   "vi": [
-    # PHẦN 1 — Quy mô tích hợp: từ SSI tới VLSI
+    # PHẦN 1: Quy mô tích hợp: từ SSI tới VLSI
     [
       {"title": "Bốn mức quy mô tích hợp",
        "body": "<p>Quy mô tích hợp (scale of integration) đo bằng số cổng logic tương đương trên một chip:</p>"
@@ -32,7 +32,7 @@ SLIDES = {
       {"title": "Ví dụ so sánh: DIP và PLCC",
        "body": "<p>Cùng một mạch MSI có thể đóng gói theo DIP (Dual-In-line Package, 2 hàng chân song song) hoặc "
                "PLCC (Plastic Leaded Chip Carrier, chân bố trí quanh 4 cạnh).</p>"
-               "<p>PLCC cho phép nhiều chân hơn trên cùng diện tích đế — hữu ích khi mạch cần nhiều tín hiệu "
+               "<p>PLCC cho phép nhiều chân hơn trên cùng diện tích đế: hữu ích khi mạch cần nhiều tín hiệu "
                "vào/ra nhưng không gian board hạn chế (Tooley Ch.8 Q5).</p>"},
       {"title": "Bảng so sánh các kiểu đóng gói IC",
        "body": "<table class='tt'><thead><tr><th>Kiểu đóng gói</th><th>Đặc điểm</th><th>Lắp đặt</th></tr></thead>"
@@ -54,7 +54,7 @@ SLIDES = {
        "body": "<p>Trước khi sang phần tiếp theo, hãy tự trả lời: một IC chứa khoảng 200 cổng logic thuộc quy mô "
                "tích hợp nào? Nó có khả năng được đóng gói theo kiểu nào nếu sản xuất sau năm 2000?</p>"},
     ],
-    # PHẦN 2 — Fan-in và fan-out
+    # PHẦN 2: Fan-in và fan-out
     [
       {"title": "Định nghĩa fan-out",
        "body": "<p><b>Fan-out</b> là số đầu vào chuẩn (cùng họ logic) tối đa mà một đầu ra có thể điều khiển an "
@@ -77,7 +77,7 @@ SLIDES = {
       {"title": "Điều gì xảy ra nếu vượt quá fan-out?",
        "body": "<p>Khi số tải vượt fan-out cho phép, cổng nguồn không đủ dòng để giữ mức logic 'cao' (không đủ "
                "nguồn dòng ra) hoặc mức 'thấp' (không đủ khả năng hút dòng vào), khiến điện áp thực tế trôi "
-               "khỏi ngưỡng logic hợp lệ — mạch hoạt động sai hoặc không ổn định.</p>"},
+               "khỏi ngưỡng logic hợp lệ: mạch hoạt động sai hoặc không ổn định.</p>"},
       {"title": "Ví dụ số: dùng bộ đệm (buffer) khi vượt fan-out",
        "body": "<p>Một cổng TTL chuẩn (fan-out=10) cần điều khiển 25 đầu vào TTL. Vì 25 &gt; 10, cần chèn thêm bộ "
                "đệm (buffer/driver) có fan-out cao hơn (vd 30) giữa cổng nguồn và các tải, thay vì nối trực "
@@ -96,14 +96,14 @@ SLIDES = {
                "HỌ logic. Khi trộn TTL với CMOS, phải quy đổi tải theo bảng tương thích giữa 2 họ (input "
                "loading khác nhau), không được cộng trực tiếp số lượng đầu vào như cùng họ.</p></div>"},
       {"title": "Tự kiểm tra nhanh",
-       "body": "<p>Một cổng CMOS có fan-out 50 cần điều khiển 12 đầu vào CMOS chuẩn — có an toàn không? Nếu 3 "
+       "body": "<p>Một cổng CMOS có fan-out 50 cần điều khiển 12 đầu vào CMOS chuẩn: có an toàn không? Nếu 3 "
                "trong số đó là đầu vào TTL (không phải CMOS), bạn cần kiểm tra thêm điều gì trước khi kết luận?</p>"},
     ],
-    # PHẦN 3 — Bộ giải mã và bộ mã hoá (decoder/encoder)
+    # PHẦN 3: Bộ giải mã và bộ mã hoá (decoder/encoder)
     [
       {"title": "Định nghĩa bộ giải mã (decoder)",
        "body": "<p>Bộ giải mã nhận n đường địa chỉ nhị phân và kích hoạt ĐÚNG MỘT trong 2ⁿ đường ra tương ứng "
-               "với tổ hợp địa chỉ đó — dùng để chọn 1 thiết bị/vị trí nhớ trong nhiều lựa chọn.</p>"},
+               "với tổ hợp địa chỉ đó: dùng để chọn 1 thiết bị/vị trí nhớ trong nhiều lựa chọn.</p>"},
       {"title": "Định nghĩa bộ mã hoá (encoder)",
        "body": "<p>Bộ mã hoá thực hiện chức năng NGƯỢC LẠI: nhận tín hiệu tích cực trên 1 trong N đường vào, xuất "
                "ra mã nhị phân tương ứng trên log₂(N) đường ra.</p>"},
@@ -120,7 +120,7 @@ SLIDES = {
                "của 3), bỏ qua I1.</p>"},
       {"title": "Ví dụ: chuyển đổi mã BCD sang 7 đoạn",
        "body": "<p>Bộ chuyển đổi mã (code converter) BCD-sang-7-đoạn nhận 4 bit BCD (0000-1001) và xuất ra 7 tín "
-               "hiệu điều khiển từng đoạn (a-g) của LED 7 đoạn để hiển thị đúng chữ số thập phân tương ứng — "
+               "hiệu điều khiển từng đoạn (a-g) của LED 7 đoạn để hiển thị đúng chữ số thập phân tương ứng: "
                "nguyên lý dùng trong hiển thị số trên nhiều thiết bị đo lường buồng lái.</p>"},
       {"title": "Ví dụ: chân enable dùng để ghép tầng",
        "body": "<p>Một IC decoder 3-sang-8 có thêm 1 chân Enable. Khi Enable=0, TOÀN BỘ ngõ ra bị khoá về mức "
@@ -140,12 +140,12 @@ SLIDES = {
        "body": "<div class='callout warn'><p>Về mặt vật lý, decoder và demultiplexer có thể dùng CHUNG một IC "
                "(gán thêm 1 chân làm 'dữ liệu' thay vì luôn giữ mức tích cực cố định). Nhưng về MỤC ĐÍCH chức "
                "năng: decoder dùng để CHỌN đường theo địa chỉ, demux dùng để PHÂN PHỐI 1 luồng dữ liệu tới "
-               "nhiều đích — đừng đánh đồng 2 khái niệm chỉ vì cùng linh kiện vật lý.</p></div>"},
+               "nhiều đích: đừng đánh đồng 2 khái niệm chỉ vì cùng linh kiện vật lý.</p></div>"},
       {"title": "Tự kiểm tra nhanh",
        "body": "<p>Một bộ mã hoá ưu tiên 8-sang-3 nhận tín hiệu tích cực đồng thời ở đầu vào 2, 4 và 6. Ngõ ra mã "
                "hoá sẽ ứng với đầu vào nào? Vì sao?</p>"},
     ],
-    # PHẦN 4 — Bộ dồn kênh (multiplexer/data selector)
+    # PHẦN 4: Bộ dồn kênh (multiplexer/data selector)
     [
       {"title": "Định nghĩa multiplexer",
        "body": "<p>Multiplexer (bộ dồn kênh/data selector) chọn 1 trong N kênh dữ liệu đầu vào để đưa ra 1 ngõ "
@@ -159,15 +159,15 @@ SLIDES = {
       {"title": "Ví dụ tính: số đường chọn cho 16 kênh và 32 kênh",
        "body": "<div class='pd-formula'><div class='pd-formula-label'>Áp dụng công thức n=log₂(N)</div>"
                "<div class='pd-formula-math'>N=16 → n=4 &nbsp;&nbsp;|&nbsp;&nbsp; N=32 → n=5</div></div>"
-               "<p>Số đường chọn tăng chậm hơn nhiều so với số kênh dữ liệu — đây chính là lý do multiplexer "
+               "<p>Số đường chọn tăng chậm hơn nhiều so với số kênh dữ liệu: đây chính là lý do multiplexer "
                "giúp tiết kiệm dây dẫn so với truyền song song trực tiếp.</p>"},
       {"title": "Ví dụ: ghép tầng 2 IC mux 4-sang-1 thành mux 8-sang-1",
        "body": "<p>Dùng 2 IC mux 4-sang-1 xử lý 2 nhóm 4 kênh, rồi dùng thêm 1 mux 2-sang-1 để chọn kết quả từ "
-               "2 IC đó — tổng cộng cần 3 đường chọn (2 đường chọn nội bộ dùng chung cho cả 2 IC + 1 đường chọn "
+               "2 IC đó: tổng cộng cần 3 đường chọn (2 đường chọn nội bộ dùng chung cho cả 2 IC + 1 đường chọn "
                "nhóm), đúng khớp n=log₂(8)=3.</p>"},
       {"title": "Định nghĩa demultiplexer",
        "body": "<p>Demultiplexer thực hiện chức năng ngược: nhận 1 luồng dữ liệu đầu vào và phân phối tới đúng 1 "
-               "trong N ngõ ra, theo địa chỉ trên các đường chọn — thường dùng chung IC vật lý với decoder.</p>"},
+               "trong N ngõ ra, theo địa chỉ trên các đường chọn: thường dùng chung IC vật lý với decoder.</p>"},
       {"title": "Ví dụ thực tế: mux dữ liệu độ cao trên A320 (Tooley Figure 9.21)",
        "body": "<p>Bộ dồn kênh kép 4 kênh chọn 1 trong 4 nguồn dữ liệu độ cao (độ cao đã chọn, độ cao thực tế từ "
                "ADC trái/phải) để đưa vào bộ mã hoá dữ liệu nối tiếp ARINC 429, chỉ cần 2 đường chọn nhị phân "
@@ -183,13 +183,13 @@ SLIDES = {
                "giảm số kênh xử lý tín hiệu độc lập cần thiết.</p>"},
       {"title": "⚠️ Cảnh báo: đường chọn không đủ sẽ làm mất dữ liệu, không phải lỗi ngẫu nhiên",
        "body": "<div class='callout warn'><p>Nếu thiết kế mux 8 kênh nhưng chỉ dùng 2 đường chọn (chỉ phân biệt "
-               "được 4 tổ hợp), 4 kênh còn lại sẽ KHÔNG BAO GIỜ được chọn tới — đây là lỗi thiết kế có thể dự "
+               "được 4 tổ hợp), 4 kênh còn lại sẽ KHÔNG BAO GIỜ được chọn tới: đây là lỗi thiết kế có thể dự "
                "đoán trước bằng công thức n=log₂(N), không phải lỗi ngẫu nhiên cần dò tìm bằng thực nghiệm.</p></div>"},
       {"title": "Tự kiểm tra nhanh",
        "body": "<p>Bạn cần chọn 1 trong 6 cảm biến nhiệt độ để đưa vào 1 bộ xử lý duy nhất. Cần tối thiểu bao "
                "nhiêu đường chọn? Có kênh nào bị 'thừa' không sử dụng đến trong không gian địa chỉ tạo ra không?</p>"},
     ],
-    # PHẦN 5 — Áp dụng trong hệ thống avionics
+    # PHẦN 5: Áp dụng trong hệ thống avionics
     [
       {"title": "Tổng quan: MSI logic trong avionics dùng ở đâu?",
        "body": "<p>Theo Tooley, MSI logic trong máy bay tập trung ở 5 nhóm ứng dụng chính: giải mã địa chỉ, mã "
@@ -197,10 +197,10 @@ SLIDES = {
                "đường truyền dữ liệu.</p>"},
       {"title": "Ví dụ lại: bộ dồn kênh ARINC 429 (Figure 9.21)",
        "body": "<p>4 nguồn dữ liệu độ cao được dồn kênh trước khi đưa vào bộ mã hoá dữ liệu nối tiếp ARINC 429 "
-               "— đây là ví dụ trực tiếp lấy từ sách, minh hoạ multiplexer trong hệ thống altimeter thực tế.</p>"},
+               ": đây là ví dụ trực tiếp lấy từ sách, minh hoạ multiplexer trong hệ thống altimeter thực tế.</p>"},
       {"title": "Ví dụ: parity checker trên bus dữ liệu",
        "body": "<p>Mạch tạo/kiểm tra chẵn lẻ (built chủ yếu từ chuỗi cổng XOR) thêm 1 bit parity vào dữ liệu "
-               "truyền trên bus. Bên nhận tính lại parity và so sánh — nếu khác, phát hiện có lỗi truyền dữ liệu "
+               "truyền trên bus. Bên nhận tính lại parity và so sánh: nếu khác, phát hiện có lỗi truyền dữ liệu "
                "(dù không xác định được lỗi ở bit nào).</p>"},
       {"title": "Ví dụ tính: parity chẵn (even parity) của 1 byte dữ liệu",
        "body": "<p>Byte dữ liệu <code>10110010</code> có 4 bit 1 → số chẵn.</p>"
@@ -208,7 +208,7 @@ SLIDES = {
                "<div class='pd-formula-math'>0 (giữ tổng số bit 1 là số chẵn)</div></div>"},
       {"title": "Ví dụ: giải mã địa chỉ trong hệ thống backplane bus",
        "body": "<p>Trong hệ thống nhiều board cắm chung 1 backplane bus (vd VMEbus), mỗi board có 1 mã địa chỉ "
-               "cố định. Mạch giải mã trên mỗi board so sánh địa chỉ trên bus với mã của chính nó — chỉ board "
+               "cố định. Mạch giải mã trên mỗi board so sánh địa chỉ trên bus với mã của chính nó: chỉ board "
                "khớp địa chỉ mới đáp ứng, tránh xung đột dữ liệu.</p>"},
       {"title": "Ví dụ: hiển thị N1, EGT trên ECAM bằng BCD-sang-7-đoạn",
        "body": "<p>Giá trị N1 động cơ (vd 92%) được xử lý dưới dạng BCD nội bộ, sau đó bộ chuyển đổi mã "
@@ -223,7 +223,7 @@ SLIDES = {
                "<tr><td>Parity generator/checker</td><td>Kiểm tra lỗi truyền trên bus dữ liệu</td></tr></tbody></table>"},
       {"title": "Vì sao MSI (thay vì SSI hoặc VLSI) phù hợp cho các chức năng này?",
        "body": "<p>Các chức năng trên (giải mã, mã hoá, dồn kênh) đều là logic cố định, không cần khả năng lập "
-               "trình phức tạp của VLSI, nhưng cũng phức tạp hơn một vài cổng SSI đơn lẻ — MSI là lựa chọn cân "
+               "trình phức tạp của VLSI, nhưng cũng phức tạp hơn một vài cổng SSI đơn lẻ: MSI là lựa chọn cân "
                "bằng giữa chi phí, độ tin cậy (ít điểm hàn hơn khi gộp nhiều cổng vào 1 IC) và đủ chức năng cần "
                "thiết.</p>"},
       {"title": "⚠️ Cảnh báo: đường trễ tín hiệu (propagation delay) cộng dồn qua nhiều tầng MSI",
@@ -239,7 +239,7 @@ SLIDES = {
     ],
   ],
   "en": [
-    # PART 1 — Scale of integration: from SSI to VLSI
+    # PART 1: Scale of integration: from SSI to VLSI
     [
       {"title": "Four scales of integration",
        "body": "<p>Scale of integration is measured by the number of equivalent logic gates on a chip:</p>"
@@ -270,7 +270,7 @@ SLIDES = {
       {"title": "Comparison example: DIP vs PLCC",
        "body": "<p>The same MSI circuit can be packaged as DIP (Dual-In-line Package, two parallel rows of pins) "
                "or PLCC (Plastic Leaded Chip Carrier, pins around all four sides).</p>"
-               "<p>PLCC allows more pins in the same footprint area — useful when a circuit needs many I/O "
+               "<p>PLCC allows more pins in the same footprint area: useful when a circuit needs many I/O "
                "signals but board space is limited (Tooley Ch.8 Q5).</p>"},
       {"title": "Comparison table of IC package types",
        "body": "<table class='tt'><thead><tr><th>Package</th><th>Feature</th><th>Mounting</th></tr></thead>"
@@ -292,7 +292,7 @@ SLIDES = {
        "body": "<p>Before moving on: a chip containing about 200 logic gates belongs to which integration scale? "
                "If it were made after 2000, what packaging style would it likely use?</p>"},
     ],
-    # PART 2 — Fan-in and fan-out
+    # PART 2: Fan-in and fan-out
     [
       {"title": "Defining fan-out",
        "body": "<p><b>Fan-out</b> is the maximum number of standard inputs of the same logic family that an "
@@ -315,7 +315,7 @@ SLIDES = {
       {"title": "What happens if fan-out is exceeded?",
        "body": "<p>When the load exceeds the rated fan-out, the source gate cannot supply enough current to hold "
                "the 'high' level (insufficient source current) or sink enough current for the 'low' level "
-               "(insufficient sink current), so the actual voltage drifts outside valid logic thresholds — the "
+               "(insufficient sink current), so the actual voltage drifts outside valid logic thresholds: the "
                "circuit misbehaves or becomes unreliable.</p>"},
       {"title": "Numeric example: adding a buffer when fan-out is exceeded",
        "body": "<p>A standard TTL gate (fan-out=10) must drive 25 TTL inputs. Since 25 &gt; 10, a buffer/driver "
@@ -336,14 +336,14 @@ SLIDES = {
                "cross-family input-loading compatibility table, not simply added as if they were the same "
                "family.</p></div>"},
       {"title": "Quick self-check",
-       "body": "<p>A CMOS gate with fan-out 50 must drive 12 standard CMOS inputs — is that safe? If 3 of those "
+       "body": "<p>A CMOS gate with fan-out 50 must drive 12 standard CMOS inputs: is that safe? If 3 of those "
                "12 are actually TTL inputs (not CMOS), what else must you check before concluding it's safe?</p>"},
     ],
-    # PART 3 — Decoders and encoders
+    # PART 3: Decoders and encoders
     [
       {"title": "Defining a decoder",
        "body": "<p>A decoder takes n binary address lines and activates EXACTLY ONE of 2ⁿ output lines "
-               "corresponding to that address combination — used to select one device/memory location among "
+               "corresponding to that address combination: used to select one device/memory location among "
                "many.</p>"},
       {"title": "Defining an encoder",
        "body": "<p>An encoder performs the OPPOSITE function: given an active signal on 1 of N input lines, it "
@@ -361,7 +361,7 @@ SLIDES = {
                "(binary for 3), ignoring I1.</p>"},
       {"title": "Example: BCD-to-7-segment code conversion",
        "body": "<p>A BCD-to-7-segment code converter takes a 4-bit BCD input (0000-1001) and drives 7 segment "
-               "control signals (a-g) of an LED display to show the correct decimal digit — the same principle "
+               "control signals (a-g) of an LED display to show the correct decimal digit: the same principle "
                "used for numeric readouts on many cockpit instruments.</p>"},
       {"title": "Example: using enable pins to cascade decoders",
        "body": "<p>A 3-to-8 decoder IC has an extra Enable pin. When Enable=0, ALL outputs are forced inactive "
@@ -383,13 +383,13 @@ SLIDES = {
        "body": "<div class='callout warn'><p>Physically, a decoder and a demultiplexer can share the SAME IC "
                "(by treating one pin as 'data' instead of a fixed active level). But by PURPOSE: a decoder "
                "selects a line based on an address, while a demux distributes one data stream to many "
-               "destinations — don't equate the two concepts just because they can share the same physical "
+               "destinations: don't equate the two concepts just because they can share the same physical "
                "chip.</p></div>"},
       {"title": "Quick self-check",
        "body": "<p>An 8-to-3 priority encoder has simultaneous active signals on inputs 2, 4, and 6. Which input "
                "will the encoded output correspond to, and why?</p>"},
     ],
-    # PART 4 — Multiplexers (data selectors)
+    # PART 4: Multiplexers (data selectors)
     [
       {"title": "Defining a multiplexer",
        "body": "<p>A multiplexer (data selector) selects 1 of N input data channels to route to a single output, "
@@ -403,15 +403,15 @@ SLIDES = {
       {"title": "Worked example: select lines for 16 and 32 channels",
        "body": "<div class='pd-formula'><div class='pd-formula-label'>Applying n=log₂(N)</div>"
                "<div class='pd-formula-math'>N=16 → n=4 &nbsp;&nbsp;|&nbsp;&nbsp; N=32 → n=5</div></div>"
-               "<p>The number of select lines grows much slower than the number of data channels — this is "
+               "<p>The number of select lines grows much slower than the number of data channels: this is "
                "exactly why multiplexers save wiring compared with direct parallel transmission.</p>"},
       {"title": "Example: cascading two 4-to-1 muxes into an 8-to-1 mux",
        "body": "<p>Two 4-to-1 mux ICs each handle a group of 4 channels, then a 2-to-1 mux selects between the two "
-               "ICs' outputs — 3 select lines total (2 shared select lines for both ICs + 1 group-select line), "
+               "ICs' outputs: 3 select lines total (2 shared select lines for both ICs + 1 group-select line), "
                "exactly matching n=log₂(8)=3.</p>"},
       {"title": "Defining a demultiplexer",
        "body": "<p>A demultiplexer performs the reverse function: it takes one input data stream and routes it to "
-               "exactly 1 of N outputs, chosen by the select lines — often sharing the same physical IC as a "
+               "exactly 1 of N outputs, chosen by the select lines: often sharing the same physical IC as a "
                "decoder.</p>"},
       {"title": "Real example: A320 altitude data multiplexer (Tooley Figure 9.21)",
        "body": "<p>A dual four-channel multiplexer selects 1 of 4 altitude data sources (selected altitude, "
@@ -429,14 +429,14 @@ SLIDES = {
                "processing path, reducing the number of independent signal-processing channels needed.</p>"},
       {"title": "⚠️ Warning: too few select lines silently drops data, it's not a random fault",
        "body": "<div class='callout warn'><p>If you design an 8-channel mux but only wire 2 select lines "
-               "(distinguishing only 4 combinations), the remaining 4 channels will NEVER be selected — this is "
+               "(distinguishing only 4 combinations), the remaining 4 channels will NEVER be selected: this is "
                "a predictable design error from the n=log₂(N) formula, not a random fault requiring "
                "experimental troubleshooting.</p></div>"},
       {"title": "Quick self-check",
        "body": "<p>You need to select 1 of 6 temperature sensors to feed a single processor. What is the minimum "
                "number of select lines required, and are any address combinations left unused?</p>"},
     ],
-    # PART 5 — Application in avionics systems
+    # PART 5: Application in avionics systems
     [
       {"title": "Overview: where MSI logic is used in avionics",
        "body": "<p>Per Tooley, MSI logic in aircraft falls into five main application groups: address decoding, "
@@ -444,18 +444,18 @@ SLIDES = {
                "data links.</p>"},
       {"title": "Revisited: the ARINC 429 data multiplexer (Figure 9.21)",
        "body": "<p>4 altitude data sources are multiplexed before being fed into the ARINC 429 serial data "
-               "encoder — a direct textbook example illustrating a multiplexer in a real altimeter system.</p>"},
+               "encoder: a direct textbook example illustrating a multiplexer in a real altimeter system.</p>"},
       {"title": "Example: a parity checker on a data bus",
        "body": "<p>A parity generator/checker (built mainly from cascaded XOR gates) appends a parity bit to data "
-               "transmitted on a bus. The receiver recomputes parity and compares it — a mismatch signals a "
+               "transmitted on a bus. The receiver recomputes parity and compares it: a mismatch signals a "
                "transmission error (though it can't identify which bit failed).</p>"},
       {"title": "Worked example: even parity of a data byte",
-       "body": "<p>Data byte <code>10110010</code> has 4 ones — an even count.</p>"
+       "body": "<p>Data byte <code>10110010</code> has 4 ones: an even count.</p>"
                "<div class='pd-formula'><div class='pd-formula-label'>Required even-parity bit</div>"
                "<div class='pd-formula-math'>0 (keeps the total number of 1s even)</div></div>"},
       {"title": "Example: address decoding on a backplane bus system",
        "body": "<p>In a multi-board system sharing one backplane bus (e.g. VMEbus), each board has a fixed "
-               "address code. A decoder circuit on each board compares the bus address against its own code — "
+               "address code. A decoder circuit on each board compares the bus address against its own code: "
                "only the matching board responds, avoiding data conflicts.</p>"},
       {"title": "Example: displaying N1/EGT on ECAM via BCD-to-7-segment",
        "body": "<p>Engine N1 (e.g. 92%) is processed internally as BCD, then a BCD-to-7-segment code converter "
@@ -470,7 +470,7 @@ SLIDES = {
                "<tr><td>Parity generator/checker</td><td>Detecting transmission errors on a data bus</td></tr></tbody></table>"},
       {"title": "Why MSI (not SSI or VLSI) fits these functions",
        "body": "<p>These functions (decoding, encoding, multiplexing) are fixed logic that doesn't need VLSI's "
-               "programmability, yet are more complex than a few standalone SSI gates — MSI strikes a balance "
+               "programmability, yet are more complex than a few standalone SSI gates: MSI strikes a balance "
                "between cost, reliability (fewer solder joints by combining several gates into one IC), and just "
                "enough functionality.</p>"},
       {"title": "⚠️ Warning: propagation delay accumulates across cascaded MSI stages",

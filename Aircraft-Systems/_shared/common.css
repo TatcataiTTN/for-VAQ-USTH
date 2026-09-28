@@ -1,4 +1,7 @@
-:root{
+/* Mac dinh la theme SANG (light) that su, bat ke he dieu hanh dang o che do toi hay khong.
+   Nguoi dung tu chon theme khac qua nut chuyen theme trong toolbar (xem theme.js);
+   lua chon duoc luu localStorage va ap dung lai o lan mo sau. */
+:root, :root[data-theme="light"]{
   --bg:#f6f7fb; --panel:#ffffff; --text:#1c2333; --muted:#5b6478; --border:#e2e5ee;
   --accent:#1657d6; --accent2:#0f9a6c; --warn:#c2410c; --code:#eef1fa;
   --good:#0f9a6c; --bad:#c23b3b;
@@ -10,12 +13,17 @@
   --accent:#5b8dff; --accent2:#39c98d; --warn:#f0995a; --code:#1c2133;
   --good:#39c98d; --bad:#ff6b6b;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#10131c; --panel:#171b28; --text:#e8ebf5; --muted:#9aa3bd; --border:#2a3044;
-    --accent:#5b8dff; --accent2:#39c98d; --warn:#f0995a; --code:#1c2133;
-    --good:#39c98d; --bad:#ff6b6b;
-  }
+/* Sepia: nen am, giay cu, de doc lau (giam moi mat khi hoc lien tuc). */
+:root[data-theme="sepia"]{
+  --bg:#f1e7d0; --panel:#faf3e3; --text:#3a2f22; --muted:#7a6a52; --border:#e0d2ae;
+  --accent:#96591b; --accent2:#5c7a3a; --warn:#a0431f; --code:#ecdfc0;
+  --good:#5c7a3a; --bad:#a63b2e;
+}
+/* Ocean: xanh lam trung tinh, tuong phan cao, hop khi trinh chieu/hoi dong. */
+:root[data-theme="ocean"]{
+  --bg:#eef5f8; --panel:#ffffff; --text:#0f2a3a; --muted:#4c6b7a; --border:#cfe3ea;
+  --accent:#0b6e99; --accent2:#0d8f72; --warn:#c05621; --code:#e2f0f5;
+  --good:#0d8f72; --bad:#c23b3b;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}

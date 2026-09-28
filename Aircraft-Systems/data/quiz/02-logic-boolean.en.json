@@ -9,7 +9,8 @@
    ],
    "correct": 1,
    "explain": "Họ logic TTL chuẩn hoạt động ở nguồn 5V ±5%.",
-   "src": "Tooley Ch.5 Q2"
+   "src": "Tooley Ch.5 Q2",
+   "detail": "<p>TTL (Transistor-Transistor Logic) is built around a fixed 5V supply because that voltage is just enough to distinguish the two logic levels clearly while keeping power consumption reasonable for bipolar technology. The ±5% tolerance (4.75V to 5.25V) is the allowed margin for the circuit to keep working correctly when the supply drifts slightly.</p><p>This is why 74-series ICs (74LS, TTL-compatible 74HC, and so on) all specify a 5V supply on their datasheets, unlike later CMOS families that can run at several lower voltage levels.</p>"
   },
   {
    "q": "A two-input NAND gate will produce a logic 0 output when:",
@@ -20,7 +21,8 @@
    ],
    "correct": 0,
    "explain": "NAND = NOT(AND); AND=1 chỉ khi cả 2 vào đều 1, nên NAND=0 khi cả 2 vào đều 1.",
-   "src": "Tooley Ch.5 Q3"
+   "src": "Tooley Ch.5 Q3",
+   "detail": "<p>The safest way to answer this is to write out the full AND truth table first, then invert every output value: AND outputs 1 only when both inputs are 1, and 0 in the other three combinations. Inverting the whole output column, NAND outputs 0 only when both inputs are 1, and 1 in the remaining three combinations.</p><p>A common mistake is to think NAND outputs 0 whenever any input is 0; that is actually the opposite behaviour, closer to how AND itself works.</p>"
   },
   {
    "q": "In a binary counter, the clock input of each bistable stage is fed from:",
@@ -31,7 +33,8 @@
    ],
    "correct": 2,
    "explain": "Đây là cấu trúc bộ đếm không đồng bộ (ripple counter): mỗi tầng lấy clock từ Q của tầng trước.",
-   "src": "Tooley Ch.5 Q4"
+   "src": "Tooley Ch.5 Q4",
+   "detail": "<p>In a ripple counter, the bistable stages do not share a single external clock line. Instead, only the first stage receives the external clock, and each following stage takes its own clock from the Q (or inverted Q) output of the stage right before it. The count signal therefore ripples through the stages one at a time, building up a small cumulative delay as it goes.</p><p>This is the key difference from a synchronous counter, where every stage receives the same shared clock pulse, removing the ripple delay at the cost of more complex logic.</p>"
   },
   {
    "q": "The most appropriate logic family for use in a portable item of test equipment is:",
@@ -42,7 +45,8 @@
    ],
    "correct": 2,
    "explain": "CMOS tiêu thụ dòng tĩnh cực thấp, phù hợp thiết bị chạy pin/cầm tay.",
-   "src": "Tooley Ch.5 Q6"
+   "src": "Tooley Ch.5 Q6",
+   "detail": "<p>CMOS (Complementary MOS) pairs an N-type and a P-type transistor so that in any stable logic state, one of them is always fully off, making the static current draw close to zero. TTL, by contrast, always has some leakage current even when it is not switching, so it draws noticeably more power continuously.</p><p>For battery-powered handheld test equipment, CMOS's low static consumption extends battery life considerably compared with TTL, especially since the device spends much of its time idle.</p>"
   },
   {
    "q": "The noise margin for standard TTL devices is:",
@@ -53,7 +57,8 @@
    ],
    "correct": 0,
    "explain": "TTL chuẩn có noise margin danh định khoảng 400mV.",
-   "src": "Tooley Ch.5 Q8"
+   "src": "Tooley Ch.5 Q8",
+   "detail": "<p>Noise margin is the safety gap between a logic gate's minimum or maximum output voltage and the next gate's input threshold, representing how much voltage noise a signal can tolerate before it gets read as the wrong logic level. Standard TTL has a noise margin of roughly 400mV for both the high and low states, which is adequate in ordinary industrial settings but noticeably lower than CMOS.</p><p>This is one reason CMOS is often chosen over TTL in electrically noisy environments, such as near motors or heavy-current wiring on an aircraft.</p>"
   },
   {
    "q": "A CMOS logic gate is operated from a 12V supply. A voltage of 3V measured at the input is considered:",
@@ -64,7 +69,8 @@
    ],
    "correct": 2,
    "explain": "Ngưỡng chuyển mức của CMOS thường ở khoảng 50% Vdd = 6V; 3V < 6V nên được coi là logic 0.",
-   "src": "Tooley Ch.5 Q9"
+   "src": "Tooley Ch.5 Q9",
+   "detail": "<p>Unlike TTL, whose thresholds stay fixed regardless of supply voltage, CMOS thresholds scale with the supply voltage Vdd, typically taken at roughly 50% of Vdd as the dividing line between logic 0 and logic 1. With a 12V supply, that threshold sits around 6V; a measured 3V is well below this threshold, so it counts as logic 0, even though 3V is still a sizeable positive voltage.</p><p>This proportional-threshold behaviour is exactly why CMOS is more flexible than TTL when a design needs to operate across several different supply voltage levels.</p>"
   },
   {
    "q": "The logic device shown in Figure 5.30 is:",
@@ -76,7 +82,8 @@
    "correct": 0,
    "explain": "Ký hiệu OR có vòng tròn đảo ở đầu ra = NOR.",
    "src": "Tooley Ch.5 Q1",
-   "img": "../../../assets/figures/tooley_fig5_30.png"
+   "img": "../../../assets/figures/tooley_fig5_30.png",
+   "detail": "<p>Logic gate symbols follow a simple rule: the body shape (concave for OR, flat for AND, and so on) sets the base operation, while a small bubble on any pin marks an inversion at that exact pin. A gate with an OR-shaped body but a bubble on the output is really performing NOT(OR), which is NOR.</p><p>Reading the body shape together with the bubble position correctly is the foundational skill for interpreting any logic diagram, more important than memorising gate names by rote.</p>"
   },
   {
    "q": "The device shown in Figure 5.31 is:",
@@ -86,9 +93,10 @@
     "thiết bị CMOS có đệm"
    ],
    "correct": 0,
-   "explain": "Ký hiệu '74LS08' — 'LS' = Low-power Schottky TTL, đọc trực tiếp trên chip.",
+   "explain": "Ký hiệu '74LS08': 'LS' = Low-power Schottky TTL, đọc trực tiếp trên chip.",
    "src": "Tooley Ch.5 Q5",
-   "img": "../../../assets/figures/tooley_fig5_31.png"
+   "img": "../../../assets/figures/tooley_fig5_31.png",
+   "detail": "<p>The code printed on an IC package is never arbitrary: the number (7408) identifies the logic function (here, a quad 2-input AND), while the letter prefix or suffix identifies the fabrication technology. 'LS' stands for Low-power Schottky, a TTL variant that uses Schottky diodes to reduce switching time and power consumption compared with standard TTL.</p><p>Reading the code straight off the chip, rather than guessing from its outward appearance, is the first practical step when inspecting or replacing a component on a real circuit board.</p>"
   },
   {
    "q": "The logic gate arrangement shown in Figure 5.32 performs the same function as:",
@@ -98,9 +106,10 @@
     "cổng NAND"
    ],
    "correct": 0,
-   "explain": "Y = A'B + AB' = A XOR B — đúng cấu trúc kinh điển dựng cổng XOR từ NOT+AND+OR.",
+   "explain": "Y = A'B + AB' = A XOR B: đúng cấu trúc kinh điển dựng cổng XOR từ NOT+AND+OR.",
    "src": "Tooley Ch.5 Q7",
-   "img": "../../../assets/figures/tooley_fig5_32.png"
+   "img": "../../../assets/figures/tooley_fig5_32.png",
+   "detail": "<p>XOR is not always available as a single dedicated IC; it is often built from more basic gates. The classic construction uses two inverters, two AND gates and one OR gate: each AND gate catches exactly one of the two cases where the inputs differ (A=1,B=0 or A=0,B=1), and the OR gate then combines those two cases.</p><p>The most reliable way to check an unfamiliar circuit is to write out the Boolean expression of each gate in the order the signal actually flows through them, then simplify algebraically, rather than trying to recognise the overall shape at a glance.</p>"
   },
   {
    "q": "The truth table (0,0→1)(0,1→0)(1,0→0)(1,1→0) shown in Figure 5.33 is for:",
@@ -110,7 +119,8 @@
    ],
    "correct": 1,
    "explain": "Chỉ ra 1 khi cả hai đầu vào đều 0 → đúng đặc trưng cổng NOR (chỉ có 2 lựa chọn trong câu gốc).",
-   "src": "Tooley Ch.5 Q10"
+   "src": "Tooley Ch.5 Q10",
+   "detail": "<p>A truth table with exactly one row outputting 1 (when both inputs are 0) is the unique signature of a NOR gate, since it is precisely the complement of the OR table (OR outputs 0 only when both inputs are 0). Compared with OR (one row outputs 0), NAND (one row outputs 0, when both inputs are 1) and XOR (two rows output 1), each basic gate has its own distinct truth-table signature that becomes easy to spot with practice.</p>"
   },
   {
    "q": "In the logic circuit of Figure A2.5, A=1,B=1,C=1,D=1. The outputs X and Y will be:",
@@ -132,7 +142,7 @@
     "thiết bị CMOS tốc độ thấp"
    ],
    "correct": 1,
-   "explain": "Ký hiệu '74LS' = Low-power Schottky TTL — đọc trực tiếp trên chip.",
+   "explain": "Ký hiệu '74LS' = Low-power Schottky TTL: đọc trực tiếp trên chip.",
    "src": "Tooley Revision Paper 2 Q6",
    "img": "../../../assets/figures/tooley_A2_6.png"
   },
@@ -166,7 +176,7 @@
     "đảo từng đầu vào"
    ],
    "correct": 2,
-   "explain": "NOR(A',B')=(A'+B')'=A·B (De Morgan) — chỉ cần đảo từng đầu vào, không cần đảo đầu ra.",
+   "explain": "NOR(A',B')=(A'+B')'=A·B (De Morgan): chỉ cần đảo từng đầu vào, không cần đảo đầu ra.",
    "src": "Tooley Revision Paper 2 Q20"
   },
   {
@@ -177,7 +187,7 @@
     "đảo cả đầu ra và từng đầu vào"
    ],
    "correct": 0,
-   "explain": "NAND = NOT(AND) — chỉ cần thêm 1 cổng đảo ở đầu ra.",
+   "explain": "NAND = NOT(AND): chỉ cần thêm 1 cổng đảo ở đầu ra.",
    "src": "Tooley Revision Paper 3 Q5"
   },
   {
@@ -199,7 +209,7 @@
     "B và C phải ở logic 1"
    ],
    "correct": 0,
-   "explain": "X=A'+B, Y=(BC)'. Với A=B=C=0: X=1+0=1 ✓; Y=(0·0)'=1 ✓. Với B=C=1 (đáp án c): Y=(1·1)'=0 ✗ — sai. Đáp án đúng là tất cả đầu vào ở logic 0.",
+   "explain": "X=A'+B, Y=(BC)'. Với A=B=C=0: X=1+0=1 ✓; Y=(0·0)'=1 ✓. Với B=C=1 (đáp án c): Y=(1·1)'=0, tức sai. Đáp án đúng là tất cả đầu vào ở logic 0.",
    "src": "Tooley Revision Paper 3 Q12",
    "img": "../../../assets/figures/tooley_A2_14.png"
   },
@@ -244,7 +254,7 @@
     "quad cổng NAND 2 đầu vào"
    ],
    "correct": 1,
-   "explain": "4 cổng, mỗi cổng hình OR có vòng tròn đảo ở đầu ra = NOR — đúng dạng 'quad two-input NOR gate'.",
+   "explain": "4 cổng, mỗi cổng hình OR có vòng tròn đảo ở đầu ra = NOR: đúng dạng 'quad two-input NOR gate'.",
    "src": "Tooley Revision Paper 5 Q6",
    "img": "../../../assets/figures/tooley_A2_19.png"
   },
@@ -334,7 +344,7 @@
     "đảo cả hai đầu vào"
    ],
    "correct": 2,
-   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan) — cần đảo CẢ HAI đầu vào.",
+   "explain": "NAND(A',B')=(A'B')'=A+B (De Morgan): cần đảo CẢ HAI đầu vào.",
    "src": "Tooley Revision Paper 7 Q8"
   },
   {
@@ -367,7 +377,7 @@
     "Cả hai đầu vào đều ở logic 1"
    ],
    "correct": 1,
-   "explain": "NOR chỉ ra 1 khi CẢ HAI đầu vào đều ở logic 0 — đây là trường hợp duy nhất.",
+   "explain": "NOR chỉ ra 1 khi CẢ HAI đầu vào đều ở logic 0: đây là trường hợp duy nhất.",
    "src": "Tooley Revision Paper 8 Q15"
   }
  ],
@@ -389,7 +399,7 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "NOT là cổng đảo 1 đầu vào — đúng.",
+   "explain": "NOT là cổng đảo 1 đầu vào: đúng.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #2"
   },
   {
@@ -419,7 +429,7 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Đúng — NAND = NOT(AND).",
+   "explain": "Đúng: NAND = NOT(AND).",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #5"
   },
   {
@@ -429,7 +439,7 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Đúng — NOR = NOT(OR).",
+   "explain": "Đúng: NOR = NOT(OR).",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #6"
   },
   {
@@ -439,7 +449,7 @@
     "Đúng"
    ],
    "correct": 0,
-   "explain": "XOR ra 1 khi hai đầu vào KHÁC nhau (trái dấu), ra 0 khi GIỐNG nhau — ngược với phát biểu.",
+   "explain": "XOR ra 1 khi hai đầu vào KHÁC nhau (trái dấu), ra 0 khi GIỐNG nhau: ngược với phát biểu.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #7"
   },
   {
@@ -499,7 +509,7 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "Đúng — phép nhân Boolean (·) chính là AND.",
+   "explain": "Đúng: phép nhân Boolean (·) chính là AND.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #13"
   },
   {
@@ -559,7 +569,7 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "Đúng — đây chính là mục đích chính của K-map.",
+   "explain": "Đúng: đây chính là mục đích chính của K-map.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #19"
   },
   {
@@ -579,7 +589,7 @@
     "Đúng"
    ],
    "correct": 0,
-   "explain": "Bẫy từ ngữ: VHDL là 'Hardware DESCRIPTION Language' (ngôn ngữ MÔ TẢ phần cứng), không phải 'definition language' (định nghĩa) — phát biểu dùng sai từ nên SAI.",
+   "explain": "Bẫy từ ngữ: VHDL là 'Hardware DESCRIPTION Language' (ngôn ngữ MÔ TẢ phần cứng), không phải 'definition language' (định nghĩa): phát biểu dùng sai từ nên SAI.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #21"
   },
   {
@@ -589,7 +599,7 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Đúng — đây là 2 khối cấu trúc cơ bản bắt buộc của VHDL.",
+   "explain": "Đúng: đây là 2 khối cấu trúc cơ bản bắt buộc của VHDL.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · True/False #22"
   },
   {
@@ -625,7 +635,7 @@
     "A=0,B=1,C=1"
    ],
    "correct": 1,
-   "explain": "AND ra 0 bất cứ khi nào có ÍT NHẤT MỘT đầu vào =0 — cả hai trường hợp (a) và (b) đều thoả.",
+   "explain": "AND ra 0 bất cứ khi nào có ÍT NHẤT MỘT đầu vào =0: cả hai trường hợp (a) và (b) đều thoả.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #3"
   },
   {
@@ -637,7 +647,7 @@
     "cả (a) và (b)"
    ],
    "correct": 1,
-   "explain": "OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0 — chỉ đúng với trường hợp (a).",
+   "explain": "OR chỉ ra 0 khi TẤT CẢ đầu vào đều 0: chỉ đúng với trường hợp (a).",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #4"
   },
   {
@@ -649,7 +659,7 @@
     "xuống LOW tại t=0.8ms, lên lại HIGH tại t=3ms"
    ],
    "correct": 2,
-   "explain": "NAND chỉ ra LOW khi CẢ HAI đầu vào đều HIGH — khoảng chồng lấn là từ t=0.8ms đến t=1ms.",
+   "explain": "NAND chỉ ra LOW khi CẢ HAI đầu vào đều HIGH: khoảng chồng lấn là từ t=0.8ms đến t=1ms.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #5"
   },
   {
@@ -661,7 +671,7 @@
     "xuống LOW tại t=0, lên lại HIGH tại t=3ms"
    ],
    "correct": 3,
-   "explain": "NOR ra HIGH chỉ khi CẢ HAI đầu vào đều LOW — chỉ đúng trước t=0 và sau t=3ms; NOR xuống LOW ngay khi có 1 xung lên HIGH (t=0) và chỉ lên lại HIGH khi cả hai đều LOW (sau t=3ms).",
+   "explain": "NOR ra HIGH chỉ khi CẢ HAI đầu vào đều LOW: chỉ đúng trước t=0 và sau t=3ms; NOR xuống LOW ngay khi có 1 xung lên HIGH (t=0) và chỉ lên lại HIGH khi cả hai đều LOW (sau t=3ms).",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #6"
   },
   {
@@ -673,7 +683,7 @@
     "lên HIGH tại t=0, xuống LOW tại t=0.8ms"
    ],
    "correct": 2,
-   "explain": "XOR ra HIGH khi hai đầu vào KHÁC nhau: từ t=0-0.8ms khác nhau (HIGH), từ 0.8-1ms giống nhau (LOW), từ 1-3ms khác nhau (HIGH) — khớp cả (b) và (c).",
+   "explain": "XOR ra HIGH khi hai đầu vào KHÁC nhau: từ t=0-0.8ms khác nhau (HIGH), từ 0.8-1ms giống nhau (LOW), từ 1-3ms khác nhau (HIGH): khớp cả (b) và (c).",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #7"
   },
   {
@@ -770,7 +780,7 @@
     "cả (a) và (b)"
    ],
    "correct": 4,
-   "explain": "ISP thường cần cả bộ tạo xung nhịp VÀ bộ xử lý nhúng điều khiển qua giao diện JTAG — đáp án đúng theo sách là 'cả (a) và (b)'.",
+   "explain": "ISP thường cần cả bộ tạo xung nhịp VÀ bộ xử lý nhúng điều khiển qua giao diện JTAG: đáp án đúng theo sách là 'cả (a) và (b)'.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #15"
   },
   {
@@ -794,7 +804,7 @@
     "dùng loại thiết bị đo khác"
    ],
    "correct": 1,
-   "explain": "f = 1/T — nghịch đảo của chu kỳ.",
+   "explain": "f = 1/T: nghịch đảo của chu kỳ.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #17"
   },
   {
@@ -806,7 +816,7 @@
     "một điều kiện"
    ],
    "correct": 0,
-   "explain": "Biến Boolean có thể đại diện cho bất kỳ đại lượng logic nào — dữ liệu, điều kiện hay hành động.",
+   "explain": "Biến Boolean có thể đại diện cho bất kỳ đại lượng logic nào: dữ liệu, điều kiện hay hành động.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #18"
   },
   {
@@ -890,7 +900,7 @@
     "AA=A"
    ],
    "correct": 1,
-   "explain": "'A=A' không phải là một luật rút gọn/biến đổi — 3 luật còn lại đều là luật chuẩn (A+1=1, AA=A, A+0=A).",
+   "explain": "'A=A' không phải là một luật rút gọn/biến đổi: 3 luật còn lại đều là luật chuẩn (A+1=1, AA=A, A+0=A).",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #25"
   },
   {
@@ -914,7 +924,7 @@
     "phần bù của tổng"
    ],
    "correct": 1,
-   "explain": "(AB)' = A' + B' — tổng các phần bù.",
+   "explain": "(AB)' = A' + B': tổng các phần bù.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #27"
   },
   {
@@ -938,7 +948,7 @@
     "AB+AC+ABC"
    ],
    "correct": 3,
-   "explain": "SOP là tổng của nhiều tích — AB+AC+ABC đúng dạng này; (a) không phải SOP thuần vì có ngoặc lồng.",
+   "explain": "SOP là tổng của nhiều tích: AB+AC+ABC đúng dạng này; (a) không phải SOP thuần vì có ngoặc lồng.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #29"
   },
   {
@@ -950,7 +960,7 @@
     "(A+B)(A+B+C)"
    ],
    "correct": 3,
-   "explain": "POS là tích của nhiều tổng — (A+B)(A+B+C) đúng dạng này.",
+   "explain": "POS là tích của nhiều tổng: (A+B)(A+B+C) đúng dạng này.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #30"
   },
   {
@@ -962,7 +972,7 @@
     "AB+ABC+ABD"
    ],
    "correct": 1,
-   "explain": "Đáp án theo sách là (c). Lưu ý: các số hạng gốc trong sách có dấu gạch trên (phần bù) ở một số biến — dấu gạch này bị mất khi trích xuất text thuần, nên không thể tự suy luận lại đầy đủ; giữ nguyên đáp án in trong sách.",
+   "explain": "Đáp án theo sách là (c). Lưu ý: các số hạng gốc trong sách có dấu gạch trên (phần bù) ở một số biến: dấu gạch này bị mất khi trích xuất text thuần, nên không thể tự suy luận lại đầy đủ; giữ nguyên đáp án in trong sách.",
    "src": "Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra) · Self-Test #31"
   },
   {

@@ -18,10 +18,10 @@ MODULES = [
                "thuận tiện hơn. Module này xây lại 4 hệ đếm cốt lõi và ứng dụng thực tế của từng hệ trên Airbus A320.",
       "parts": [
         {"title": "Vì sao máy tính hàng không cần nhiều hệ đếm?", "bullets": [
-            "Ôn lại hệ thập phân (decimal) — hệ con người dùng hằng ngày",
-            "Hệ nhị phân (binary) — nền tảng của mọi mạch số",
-            "Hệ bát phân (octal) và thập lục phân (hexadecimal) — cách viết gọn của nhị phân",
-            "Mã BCD — cầu nối giữa số thập phân và hiển thị 7 đoạn"]},
+            "Ôn lại hệ thập phân (decimal): hệ con người dùng hằng ngày",
+            "Hệ nhị phân (binary): nền tảng của mọi mạch số",
+            "Hệ bát phân (octal) và thập lục phân (hexadecimal): cách viết gọn của nhị phân",
+            "Mã BCD: cầu nối giữa số thập phân và hiển thị 7 đoạn"]},
         {"title": "Hệ nhị phân và phép chuyển đổi", "bullets": [
             "Trọng số bit: MSB/LSB, luỹ thừa của 2",
             "Chuyển thập phân ↔ nhị phân bằng phép chia/nhân liên tiếp",
@@ -56,11 +56,11 @@ MODULES = [
               "đáng kể thời gian tra cứu và giảm sai sót khi ghi chép bằng tay.",
       "warn_title": "⚠️ Bẫy hay gặp",
       "warn": "Nhầm lẫn phổ biến nhất là đổi trực tiếp giữa hex và octal mà không qua bước trung gian nhị phân. "
-              "Vì hex nhóm theo 4 bit còn octal nhóm theo 3 bit, hai nhóm này KHÔNG thẳng hàng — luôn phải "
+              "Vì hex nhóm theo 4 bit còn octal nhóm theo 3 bit, hai nhóm này KHÔNG thẳng hàng: luôn phải "
               "quy về nhị phân đầy đủ trước, rồi nhóm lại theo đúng cơ số đích, như minh hoạ ở câu 9 trong bộ "
               "câu hỏi bên dưới (111₁₆ → 421₈, không thể suy trực tiếp).",
       "notebook_desc": "Notebook đi kèm: bộ chuyển đổi cơ số (thập phân/nhị phân/bát phân/hex/BCD) viết bằng Python, "
-                        "tự kiểm tra lại toàn bộ 13 câu hỏi gốc từ sách Tooley bằng code thay vì tính tay — "
+                        "tự kiểm tra lại toàn bộ 13 câu hỏi gốc từ sách Tooley bằng code thay vì tính tay: "
                         "cộng thêm mục giải TOÀN BỘ 69 bài tập cuối chương 2 của Floyd (Problems 2-1 tới 2-12).",
     },
     "en": {
@@ -72,10 +72,10 @@ MODULES = [
                "This module rebuilds the four core number systems and their real applications on the Airbus A320.",
       "parts": [
         {"title": "Why does an aircraft computer need several number systems?", "bullets": [
-            "Review of the decimal system — the one humans use every day",
-            "Binary — the foundation of every digital circuit",
-            "Octal and hexadecimal — compact shorthand for binary",
-            "BCD — the bridge between decimal digits and 7-segment displays"]},
+            "Review of the decimal system: the one humans use every day",
+            "Binary: the foundation of every digital circuit",
+            "Octal and hexadecimal: compact shorthand for binary",
+            "BCD: the bridge between decimal digits and 7-segment displays"]},
         {"title": "Binary numbers and conversion", "bullets": [
             "Bit weighting: MSB/LSB, powers of two",
             "Decimal ↔ binary conversion by repeated division/multiplication",
@@ -109,11 +109,11 @@ MODULES = [
               "significantly shortens lookup time and reduces manual transcription errors.",
       "warn_title": "⚠️ Common trap",
       "warn": "The most common mistake is converting directly between hex and octal without going through binary. "
-              "Because hex groups bits in 4s while octal groups them in 3s, the two groupings do NOT line up — "
+              "Because hex groups bits in 4s while octal groups them in 3s, the two groupings do NOT line up: "
               "always expand to full binary first, then regroup for the target base, as illustrated in question 9 "
               "below (111₁₆ → 421₈ cannot be inferred directly).",
       "notebook_desc": "Companion notebook: a Python base-converter (decimal/binary/octal/hex/BCD) that re-checks "
-                        "all 13 original Tooley textbook questions by code instead of by hand — plus a section "
+                        "all 13 original Tooley textbook questions by code instead of by hand: plus a section "
                         "that auto-solves all 69 end-of-chapter Problems from Floyd Chapter 2.",
     },
   },
@@ -125,12 +125,12 @@ MODULES = [
       "title": "Cổng logic & Đại số Boolean",
       "tag": "Logic Circuits",
       "src": "Tooley ch.5 (tr.70-94) · Floyd ch.3-4 (tr.125-260), ch.7 (bistable, tr.387+)",
-      "intro": "Toàn bộ hệ thống số trên máy bay — từ cảnh báo cửa càng đáp tới điều khiển APU — đều được xây "
+      "intro": "Toàn bộ hệ thống số trên máy bay, từ cảnh báo cửa càng đáp cho tới điều khiển APU, đều được xây "
                "từ các cổng logic cơ bản kết hợp theo quy tắc đại số Boolean. Module này đi từ cổng logic đơn "
                "lẻ tới mạch tổ hợp thực tế và các họ linh kiện logic dùng trên máy bay.",
       "parts": [
         {"title": "Từ cổng logic cơ bản tới bài toán thực tế", "bullets": [
-            "AND, OR, NOT, NAND, NOR, XOR — bảng chân trị và ký hiệu",
+            "AND, OR, NOT, NAND, NOR, XOR: bảng chân trị và ký hiệu",
             "Ví dụ mở đầu: cảnh báo cửa càng đáp chưa khoá (landing gear door warning)"]},
         {"title": "Đại số Boolean", "bullets": [
             "Các định luật cơ bản (giao hoán, kết hợp, phân phối, hấp thụ)",
@@ -154,19 +154,19 @@ MODULES = [
       "history": "Đại số Boolean do George Boole công bố năm 1854 trong <i>An Investigation of the Laws of "
                  "Thought</i>, ban đầu chỉ là công cụ hình thức hoá logic mệnh đề, không liên quan tới điện tử. "
                  "Phải tới luận văn thạc sĩ năm 1937 của Claude Shannon tại MIT, đại số Boole mới được chứng "
-                 "minh là công cụ toán học chính xác để phân tích và thiết kế mạch chuyển mạch rơle — đặt nền "
+                 "minh là công cụ toán học chính xác để phân tích và thiết kế mạch chuyển mạch rơle: đặt nền "
                  "móng trực tiếp cho toàn bộ thiết kế mạch số hiện đại, bao gồm hệ thống logic trên máy bay.",
       "case_title": "🔎 Case study thực tế: mạch cảnh báo cửa càng đáp",
       "case": "Một mạch cảnh báo đơn giản trên máy bay cần bật đèn cảnh báo khi CÓ ÍT NHẤT MỘT cửa càng đáp "
               "chưa đóng khoá hoàn toàn VÀ máy bay đang ở chế độ bay bằng (không phải trên mặt đất). Đây là "
               "ví dụ kinh điển trong sách Tooley: đầu ra cảnh báo = OR của các công tắc cửa càng, AND với tín "
-              "hiệu 'in-flight' — minh hoạ trực tiếp cách kết hợp AND/OR để mã hoá một điều kiện an toàn thực.",
+              "hiệu 'in-flight': minh hoạ trực tiếp cách kết hợp AND/OR để mã hoá một điều kiện an toàn thực.",
       "warn_title": "⚠️ Bẫy hay gặp",
       "warn": "Nhầm giữa NAND/NOR với 'phủ định của AND/OR theo nghĩa thông thường' khi lập bảng chân trị bằng "
-              "trực giác thay vì tính từng bước — cách an toàn nhất luôn là viết bảng chân trị đầy đủ AND/OR "
+              "trực giác thay vì tính từng bước: cách an toàn nhất luôn là viết bảng chân trị đầy đủ AND/OR "
               "trước, rồi đảo bit kết quả, không suy luận tắt.",
       "notebook_desc": "Notebook đi kèm: sinh bảng chân trị tự động cho biểu thức Boolean bất kỳ, rút gọn bằng "
-                        "sympy và đối chiếu kết quả với rút gọn tay theo các định luật đã học — cộng thêm mục "
+                        "sympy và đối chiếu kết quả với rút gọn tay theo các định luật đã học: cộng thêm mục "
                         "tự động giải phần lớn bài tập chương 4 của Floyd (luật Boolean, De Morgan, SOP/POS, "
                         "Karnaugh map, Quine-McCluskey) bằng sympy.logic.",
     },
@@ -179,7 +179,7 @@ MODULES = [
                "from single gates to real combinational circuits and the logic families used on aircraft.",
       "parts": [
         {"title": "From basic gates to a real problem", "bullets": [
-            "AND, OR, NOT, NAND, NOR, XOR — truth tables and symbols",
+            "AND, OR, NOT, NAND, NOR, XOR: truth tables and symbols",
             "Opening example: landing gear door unlocked warning"]},
         {"title": "Boolean algebra", "bullets": [
             "Basic laws (commutative, associative, distributive, absorption)",
@@ -203,19 +203,19 @@ MODULES = [
       "history": "Boolean algebra was published by George Boole in 1854 in <i>An Investigation of the Laws of "
                  "Thought</i>, originally a pure formalisation of propositional logic with no link to electronics. "
                  "It only became a precise tool for analysing and designing relay switching circuits after Claude "
-                 "Shannon's 1937 MIT master's thesis — laying the direct foundation for all modern digital circuit "
+                 "Shannon's 1937 MIT master's thesis: laying the direct foundation for all modern digital circuit "
                  "design, including aircraft logic systems.",
       "case_title": "🔎 Real case study: landing gear door warning circuit",
       "case": "A simple aircraft warning circuit must light a warning lamp when AT LEAST ONE landing gear door "
               "is not fully locked AND the aircraft is in flight mode (not on ground). This is a classic example "
               "from Tooley's textbook: warning output = OR of the gear-door switches, ANDed with the 'in-flight' "
-              "signal — a direct illustration of combining AND/OR to encode a real safety condition.",
+              "signal: a direct illustration of combining AND/OR to encode a real safety condition.",
       "warn_title": "⚠️ Common trap",
       "warn": "Confusing NAND/NOR with 'the everyday negation of AND/OR' by guessing the truth table intuitively "
-              "instead of computing it step by step — the safest approach is always to write out the full AND/OR "
+              "instead of computing it step by step: the safest approach is always to write out the full AND/OR "
               "truth table first, then invert the result bit by bit, never skip straight to the answer.",
       "notebook_desc": "Companion notebook: auto-generates the truth table for any Boolean expression, simplifies "
-                        "it with sympy, and cross-checks the result against the manual simplification steps — plus "
+                        "it with sympy, and cross-checks the result against the manual simplification steps: plus "
                         "a section that auto-solves most of Floyd Chapter 4's Problems (Boolean laws, De Morgan, "
                         "SOP/POS, Karnaugh maps, Quine-McCluskey) using sympy.logic.",
     },
@@ -255,22 +255,22 @@ MODULES = [
       "history_title": "📜 Bối cảnh lý thuyết & lịch sử",
       "history": "Mạch tích hợp đầu tiên được Jack Kilby (Texas Instruments) trình diễn năm 1958, tiếp theo là "
                  "phương án thực tế hơn của Robert Noyce (Fairchild) năm 1959 dựa trên công nghệ planar. Từ đó, "
-                 "định luật Moore (1965) dự đoán số transistor trên một chip tăng gấp đôi mỗi 18-24 tháng — xu "
+                 "định luật Moore (1965) dự đoán số transistor trên một chip tăng gấp đôi mỗi 18-24 tháng: xu "
                  "hướng phản ánh trực tiếp qua các mức tích hợp SSI→MSI→LSI→VLSI được trình bày trong chương "
                  "này của Tooley.",
       "case_title": "🔎 Case study thực tế: bộ dồn kênh dữ liệu độ cao trên A320",
       "case": "Hệ thống altimeter trên A320 cần chọn 1 trong 4 nguồn dữ liệu độ cao (độ cao đã chọn và độ cao "
               "thực tế từ ADC trái/phải) để đưa vào bộ mã hoá dữ liệu nối tiếp ARINC 429 (xem Figure 9.21, "
               "Tooley). Một bộ dồn kênh kép 4 kênh (dual four-channel multiplexer) thực hiện việc chuyển mạch "
-              "này chỉ với 2 đường chọn nhị phân, thay vì cần 4 đường truyền vật lý riêng biệt — tiết kiệm đáng "
+              "này chỉ với 2 đường chọn nhị phân, thay vì cần 4 đường truyền vật lý riêng biệt: tiết kiệm đáng "
               "kể trọng lượng dây dẫn trên máy bay.",
       "warn_title": "⚠️ Bẫy hay gặp",
-      "warn": "Nhầm lẫn giữa 'demultiplexer' (1 vào → nhiều ra) và 'decoder' (giải mã địa chỉ) — cả hai đôi khi "
+      "warn": "Nhầm lẫn giữa 'demultiplexer' (1 vào → nhiều ra) và 'decoder' (giải mã địa chỉ): cả hai đôi khi "
               "dùng chung một IC vật lý (vì decoder không có input dữ liệu cũng có thể hoạt động như demux khi "
               "gán 1 đường làm dữ liệu, còn lại làm địa chỉ chọn), nhưng về chức năng mạch, chúng phục vụ hai "
               "mục đích khác nhau.",
       "notebook_desc": "Notebook đi kèm: mô phỏng bảng chân trị của bộ giải mã 3-sang-8, bộ mã hoá ưu tiên, và "
-                        "bộ dồn kênh 4-sang-1/8-sang-1 bằng Python, kiểm tra công thức n=log₂(N) — cộng thêm mục "
+                        "bộ dồn kênh 4-sang-1/8-sang-1 bằng Python, kiểm tra công thức n=log₂(N): cộng thêm mục "
                         "giải các bài tập chương 6 của Floyd không cần hình vẽ gốc (bộ cộng bán phần/toàn phần).",
     },
     "en": {
@@ -305,21 +305,21 @@ MODULES = [
       "history": "The first integrated circuit was demonstrated by Jack Kilby (Texas Instruments) in 1958, "
                  "followed by Robert Noyce's (Fairchild) more practical planar-technology version in 1959. "
                  "Moore's Law (1965) then predicted the number of transistors per chip doubling every 18-24 "
-                 "months — a trend directly reflected in the SSI→MSI→LSI→VLSI progression covered in this "
+                 "months: a trend directly reflected in the SSI→MSI→LSI→VLSI progression covered in this "
                  "chapter of Tooley.",
       "case_title": "🔎 Real case study: altitude data multiplexer on the A320",
       "case": "The A320 altimeter system needs to select 1 of 4 altitude data sources (selected altitude and "
               "actual altitude from the left/right ADC) to feed into the ARINC 429 serial data encoder (see "
               "Figure 9.21, Tooley). A dual four-channel multiplexer performs this switching with only 2 binary "
-              "select lines instead of 4 separate physical data paths — a meaningful weight saving in aircraft "
+              "select lines instead of 4 separate physical data paths: a meaningful weight saving in aircraft "
               "wiring.",
       "warn_title": "⚠️ Common trap",
-      "warn": "Confusing a 'demultiplexer' (1 input → many outputs) with a 'decoder' (address decoding) — the "
+      "warn": "Confusing a 'demultiplexer' (1 input → many outputs) with a 'decoder' (address decoding): the "
               "two sometimes share the same physical IC (a decoder with no dedicated data input can act as a "
               "demux by treating one line as data and the rest as select address), but functionally they serve "
               "different purposes.",
       "notebook_desc": "Companion notebook: simulates the truth table of a 3-to-8 decoder, a priority encoder, "
-                        "and 4-to-1/8-to-1 multiplexers in Python, verifying the n=log₂(N) formula — plus a section "
+                        "and 4-to-1/8-to-1 multiplexers in Python, verifying the n=log₂(N) formula: plus a section "
                         "solving Floyd Chapter 6's figure-free Problems (half/full adders).",
     },
   },
@@ -331,7 +331,7 @@ MODULES = [
       "title": "Cấu trúc máy tính & Vi xử lý (CPU)",
       "tag": "Computers & Microprocessors",
       "src": "Tooley ch.6-7 (tr.95-138) · Floyd ch.11 (bộ nhớ bán dẫn, tr.627-696)",
-      "intro": "Mọi máy tính hàng không — từ đồng hồ buồng lái tới AIDS data recorder — đều dựa trên 3 khối cơ "
+      "intro": "Mọi máy tính hàng không, từ đồng hồ buồng lái cho tới AIDS data recorder, đều dựa trên 3 khối cơ "
                "bản: CPU, bộ nhớ (RAM/ROM), và hệ thống bus kết nối. Module này trình bày cấu trúc máy tính, "
                "nguyên lý hoạt động của CPU, và các loại bộ nhớ bán dẫn dùng trong avionics.",
       "parts": [
@@ -362,21 +362,21 @@ MODULES = [
       "history_title": "📜 Bối cảnh lý thuyết & lịch sử",
       "history": "Vi xử lý thương mại đầu tiên, Intel 4004 (1971), chỉ có 2.300 transistor và xử lý 4-bit dữ liệu. "
                  "Kiến trúc CPU với accumulator, thanh ghi đa dụng và ALU trình bày trong chương này của Tooley "
-                 "phản ánh trực tiếp dòng vi xử lý Intel x86 phát triển từ 8086 (1978) — kiến trúc mà nhiều hệ "
+                 "phản ánh trực tiếp dòng vi xử lý Intel x86 phát triển từ 8086 (1978): kiến trúc mà nhiều hệ "
                  "thống máy tính hàng không thế hệ trước dựa vào, trước khi chuyển sang các vi xử lý chuyên dụng "
                  "cho hàng không như AMD 29050 (dùng trong ASIC của Honeywell).",
       "case_title": "🔎 Case study thực tế: đồng hồ buồng lái Airbus (clock computer)",
       "case": "Đồng hồ buồng lái điện tử trên A320 (Figure 6.11, Tooley) là một máy tính hoàn chỉnh thu nhỏ: "
               "dao động thạch anh tạo xung UTC chính xác, vi xử lý xử lý dữ liệu thời gian, ROM lưu phần mềm "
               "điều khiển, RAM lưu dữ liệu tạm thời, và bộ mã hoá dữ liệu nối tiếp gửi thời gian ra bus ARINC "
-              "429 cho các hệ thống khác sử dụng — minh hoạ đầy đủ mô hình IPO + 3 bus trong một ứng dụng thực.",
+              "429 cho các hệ thống khác sử dụng: minh hoạ đầy đủ mô hình IPO + 3 bus trong một ứng dụng thực.",
       "warn_title": "⚠️ Bẫy hay gặp",
-      "warn": "Nhầm lẫn giữa 'bộ nhớ truy cập ngẫu nhiên' (random access — nghĩa kỹ thuật: mọi ô nhớ truy xuất "
+      "warn": "Nhầm lẫn giữa 'bộ nhớ truy cập ngẫu nhiên' (random access, nghĩa kỹ thuật là mọi ô nhớ truy xuất "
               "nhanh như nhau) với RAM (read/write memory) theo cách dùng thông thường. Về mặt kỹ thuật, ROM "
               "CŨNG là bộ nhớ truy cập ngẫu nhiên (không phải tuần tự như băng từ), dù không thể ghi được.",
       "notebook_desc": "Notebook đi kèm: tính thời gian thực thi lệnh theo T-state/tần số xung nhịp, tính dung "
                         "lượng bộ nhớ cần thiết từ số IC DRAM, và mô phỏng đơn giản chu trình fetch-decode-execute "
-                        "— cộng thêm mục giải các bài tập chương 11 của Floyd không cần hình vẽ gốc (địa chỉ bộ "
+                        ": cộng thêm mục giải các bài tập chương 11 của Floyd không cần hình vẽ gốc (địa chỉ bộ "
                         "nhớ, RAM tĩnh).",
     },
     "en": {
@@ -415,13 +415,13 @@ MODULES = [
       "history": "The first commercial microprocessor, the Intel 4004 (1971), had only 2,300 transistors and "
                  "processed 4-bit data. The CPU architecture with accumulator, general-purpose registers and ALU "
                  "described in this chapter of Tooley directly reflects the Intel x86 family that grew from the "
-                 "8086 (1978) — an architecture many earlier-generation aircraft computers relied on, before "
+                 "8086 (1978): an architecture many earlier-generation aircraft computers relied on, before "
                  "moving to aviation-specific processors such as the AMD 29050 (used in Honeywell's ASIC).",
       "case_title": "🔎 Real case study: the Airbus cockpit clock computer",
       "case": "The A320's electronic cockpit clock (Figure 6.11, Tooley) is a complete miniature computer: a "
               "crystal oscillator generates a precise UTC time base, a microprocessor processes the time data, "
               "ROM stores the control software, RAM holds working data, and a serial data encoder sends the time "
-              "out on the ARINC 429 bus for other systems to use — a full illustration of the IPO model plus the "
+              "out on the ARINC 429 bus for other systems to use: a full illustration of the IPO model plus the "
               "three-bus architecture in a real application.",
       "warn_title": "⚠️ Common trap",
       "warn": "Confusing 'random access memory' (the technical meaning: every cell is accessed with equal ease) "
@@ -429,7 +429,7 @@ MODULES = [
               "(not sequential like magnetic tape), even though it cannot be written to.",
       "notebook_desc": "Companion notebook: computes instruction execution time from T-states/clock frequency, "
                         "computes required memory capacity from the number of DRAM chips, and simulates a simple "
-                        "fetch-decode-execute cycle — plus a section solving Floyd Chapter 11's figure-free "
+                        "fetch-decode-execute cycle: plus a section solving Floyd Chapter 11's figure-free "
                         "Problems (memory addressing, static RAM).",
     },
   },

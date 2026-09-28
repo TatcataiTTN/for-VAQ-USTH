@@ -19,8 +19,8 @@ def code(text): return nbf.v4.new_code_cell(text)
 
 # ============================================================ Module 01 ==
 m1 = nb([
-md("""# Module 01 — Bộ chuyển đổi hệ đếm / Number System Converter
-**AE2.021 · USTH — Aircraft Digital Electronic & Computer Systems**
+md("""# Module 01: Bộ chuyển đổi hệ đếm / Number System Converter
+**AE2.021 · USTH: Aircraft Digital Electronic & Computer Systems**
 
 🇻🇳 Notebook này viết lại bằng code toàn bộ phép chuyển đổi hệ đếm (thập phân/nhị phân/bát phân/hex/BCD)
 và dùng nó để **tự kiểm tra lại 13 câu hỏi trắc nghiệm gốc** trích từ sách Mike Tooley, chương 2, thay vì
@@ -74,7 +74,7 @@ bù hai = đảo bit + cộng 1. Phần tiếp theo dùng các hàm này để k
 
 md("""## 2. Kiểm tra lại 13 câu hỏi gốc (Tooley, ch.2) bằng code
 🎯 **Phương pháp này trả lời câu hỏi gì?** Đáp án hiển thị trên trang web (`data/quiz/01-number-systems.*.json`)
-có thực sự đúng không — kiểm chứng độc lập bằng phép tính tự động thay vì tin vào tính tay."""),
+có thực sự đúng không: kiểm chứng độc lập bằng phép tính tự động thay vì tin vào tính tay."""),
 
 code("""checks = []
 
@@ -100,8 +100,8 @@ print(f"\\nTong: {ok_count}/{len(checks)} cau khop voi dap an da cong bo tren tr
 
 md("""#### 📤 Đầu ra thật
 Nếu ô "Tổng" ở trên = tổng số câu đã kiểm tra, nghĩa là toàn bộ đáp án hiển thị trên trang HTML khớp với
-kết quả tính bằng code độc lập — đây là bằng chứng xác minh mạnh hơn hẳn việc chỉ đọc lại đáp án gốc trong
-sách (trang Appendix 3 của bản scan OCR bị lỗi, không đọc được rõ ràng — xem ghi chú trong báo cáo)."""),
+kết quả tính bằng code độc lập: đây là bằng chứng xác minh mạnh hơn hẳn việc chỉ đọc lại đáp án gốc trong
+sách (trang Appendix 3 của bản scan OCR bị lỗi, không đọc được rõ ràng: xem ghi chú trong báo cáo)."""),
 
 md("""## 3. Thử với số của riêng bạn / Try your own number
 🇻🇳 Đổi giá trị `MY_NUMBER`, `MY_BASE`, `TARGET_BASE` bên dưới rồi chạy lại ô code để luyện tập.
@@ -118,7 +118,7 @@ print(f"{MY_NUMBER} (co so {MY_BASE}) = {dec_val} (thap phan) = {result} (co so 
 
 # ============================================================ Module 02 ==
 m2 = nb([
-md("""# Module 02 — Bảng chân trị & rút gọn Boolean / Truth Table & Boolean Simplification
+md("""# Module 02: Bảng chân trị & rút gọn Boolean / Truth Table & Boolean Simplification
 **AE2.021 · USTH**
 
 🇻🇳 Notebook sinh bảng chân trị tự động cho một biểu thức Boolean bất kỳ và dùng `sympy` để rút gọn,
@@ -151,11 +151,11 @@ print("=== XOR (2 dau vao) ===")
 truth_table(lambda a,b: a ^ b, 2)"""),
 
 md("""#### 📤 Đầu ra thật
-Bảng NAND cho ra 0 CHỈ khi cả hai đầu vào đều 1 — đúng khớp với câu hỏi gốc "A two-input NAND gate will
+Bảng NAND cho ra 0 CHỈ khi cả hai đầu vào đều 1: đúng khớp với câu hỏi gốc "A two-input NAND gate will
 produce a logic 0 output when both inputs are at logic 1" (Tooley Ch.5 Q3)."""),
 
 md("""## 2. Rút gọn biểu thức Boolean bằng sympy
-🎯 **Phương pháp này trả lời câu hỏi gì?** Rút gọn tay dễ sai sót ở bước áp dụng luật nào trước — dùng
+🎯 **Phương pháp này trả lời câu hỏi gì?** Rút gọn tay dễ sai sót ở bước áp dụng luật nào trước: dùng
 sympy làm "trọng tài" độc lập để xác nhận kết quả rút gọn tay có đúng hay không."""),
 
 code("""from sympy import symbols, simplify_logic, Or, And, Not
@@ -176,7 +176,7 @@ rhs = Or(Not(A), Not(B))
 print("\\n(A.B)\\' tuong duong A\\'+B\\' ?", simplify_logic(lhs).equals(simplify_logic(rhs)))"""),
 
 md("""#### 📤 Đầu ra thật
-`sympy` xác nhận A + A'B rút gọn đúng thành A + B, và (A·B)′ tương đương A′+B′ — khớp chính xác với định
+`sympy` xác nhận A + A'B rút gọn đúng thành A + B, và (A·B)′ tương đương A′+B′: khớp chính xác với định
 lý De Morgan trình bày trong khối công thức trên trang HTML của module này."""),
 
 md("""## 3. Tự luyện: nhập biểu thức của riêng bạn
@@ -193,14 +193,14 @@ print("Rut gon  :", simplify_logic(expr))"""),
 
 # ============================================================ Module 03 ==
 m3 = nb([
-md("""# Module 03 — Mô phỏng bộ giải mã / bộ mã hoá / bộ dồn kênh (Decoder / Encoder / Multiplexer)
+md("""# Module 03: Mô phỏng bộ giải mã / bộ mã hoá / bộ dồn kênh (Decoder / Encoder / Multiplexer)
 **AE2.021 · USTH**
 
 🇻🇳 Notebook mô phỏng bảng chân trị của 3 mạch MSI phổ biến nhất trong module: bộ giải mã 3-sang-8, bộ mã
-hoá ưu tiên, và bộ dồn kênh 4-sang-1 / 8-sang-1 — đồng thời kiểm chứng công thức n = log₂(N).
+hoá ưu tiên, và bộ dồn kênh 4-sang-1 / 8-sang-1: đồng thời kiểm chứng công thức n = log₂(N).
 
 🇬🇧 This notebook simulates the truth table of the three most common MSI circuits in this module: a 3-to-8
-decoder, a priority encoder, and 4-to-1 / 8-to-1 multiplexers — and verifies the n = log₂(N) formula."""),
+decoder, a priority encoder, and 4-to-1 / 8-to-1 multiplexers: and verifies the n = log₂(N) formula."""),
 
 md("""## 1. Bộ giải mã 3-sang-8 (3-to-8 decoder)
 🎯 **Phương pháp này trả lời câu hỏi gì?** Với 3 đường địa chỉ, làm sao xác định chính xác đường ra nào
@@ -221,10 +221,10 @@ for a2, a1, a0 in itertools.product([0,1], repeat=3):
 
 md("""#### 📤 Đầu ra thật
 Đúng như kỳ vọng: ở mỗi hàng, CHÍNH XÁC MỘT ngõ ra bằng 1 (ngõ ra có chỉ số bằng giá trị nhị phân của địa
-chỉ A2A1A0), 7 ngõ ra còn lại đều bằng 0 — đây là đặc trưng cốt lõi của một bộ giải mã."""),
+chỉ A2A1A0), 7 ngõ ra còn lại đều bằng 0: đây là đặc trưng cốt lõi của một bộ giải mã."""),
 
 md("""## 2. Bộ dồn kênh (multiplexer) và công thức n = log₂(N)
-🎯 **Phương pháp này trả lời câu hỏi gì?** Có đúng N kênh dữ liệu, cần tối thiểu bao nhiêu đường chọn — và
+🎯 **Phương pháp này trả lời câu hỏi gì?** Có đúng N kênh dữ liệu, cần tối thiểu bao nhiêu đường chọn: và
 xác nhận công thức n=log₂(N) khớp với các câu hỏi trên trang web (mux 4-sang-1 cần 2 đường chọn, 8-sang-1
 cần 3 đường chọn)."""),
 
@@ -244,12 +244,12 @@ for N in (2,4,8,16,32):
     print(f"N={N:2d} kenh -> can n = log2({N}) = {n:.0f} duong chon")"""),
 
 md("""#### 📤 Đầu ra thật
-Bảng xác nhận: N=4 → n=2 đường chọn, N=8 → n=3 đường chọn — khớp đúng với câu hỏi gốc "A four-to-one
+Bảng xác nhận: N=4 → n=2 đường chọn, N=8 → n=3 đường chọn: khớp đúng với câu hỏi gốc "A four-to-one
 multiplexer has two select inputs" (Tooley Ch.9 Q5) và câu tự sinh về mux 8-sang-1."""),
 
 md("""## 3. Bộ mã hoá ưu tiên đơn giản (priority encoder, 8 đầu vào)
 🎯 **Phương pháp này trả lời câu hỏi gì?** Khi NHIỀU đầu vào cùng tích cực một lúc, bộ mã hoá ưu tiên chọn
-đầu vào có chỉ số CAO NHẤT để mã hoá — khác với bộ mã hoá thường (chỉ đúng khi có đúng 1 đầu vào tích cực)."""),
+đầu vào có chỉ số CAO NHẤT để mã hoá: khác với bộ mã hoá thường (chỉ đúng khi có đúng 1 đầu vào tích cực)."""),
 
 code("""def priority_encoder_8to3(inputs):
     for i in range(7, -1, -1):
@@ -271,7 +271,7 @@ Khi cả input 2, 5 và 7 đều tích cực, bộ mã hoá ưu tiên chọn đ�
 
 # ============================================================ Module 04 ==
 m4 = nb([
-md("""# Module 04 — Thời gian thực thi lệnh CPU & dung lượng bộ nhớ / CPU Timing & Memory Capacity
+md("""# Module 04: Thời gian thực thi lệnh CPU & dung lượng bộ nhớ / CPU Timing & Memory Capacity
 **AE2.021 · USTH**
 
 🇻🇳 Notebook tính thời gian thực thi lệnh theo T-state/tần số xung nhịp, tính dung lượng bộ nhớ cần thiết
@@ -282,7 +282,7 @@ memory capacity from the number of DRAM chips, and simulates a simple fetch-deco
 
 md("""## 1. Thời gian thực thi lệnh: t = n_T × (1/f_clk)
 🎯 **Phương pháp này trả lời câu hỏi gì?** Biết tần số xung nhịp và số T-state một lệnh cần, làm sao suy
-ra chính xác thời gian thực thi thực tế tính bằng giây — và kiểm chứng lại câu hỏi gốc (50MHz, 11 T-state)."""),
+ra chính xác thời gian thực thi thực tế tính bằng giây: và kiểm chứng lại câu hỏi gốc (50MHz, 11 T-state)."""),
 
 code("""def exec_time(n_tstates: int, f_clk_hz: float) -> float:
     T = 1.0 / f_clk_hz
@@ -302,11 +302,11 @@ for f_mhz in (10, 20, 50, 100):
 
 md("""#### 📤 Đầu ra thật
 Hai kết quả tính được (220ns và 200ns) khớp chính xác với đáp án đã công bố trên trang web cho câu hỏi
-gốc và câu hỏi tự sinh tương ứng — xác nhận công thức t = n_T × (1/f_clk) và cách áp dụng là đúng."""),
+gốc và câu hỏi tự sinh tương ứng: xác nhận công thức t = n_T × (1/f_clk) và cách áp dụng là đúng."""),
 
 md("""## 2. Dung lượng bộ nhớ từ số lượng IC DRAM
 🎯 **Phương pháp này trả lời câu hỏi gì?** Có N byte cần lưu và mỗi IC DRAM chỉ chứa được (rows×cols) bit,
-cần tối thiểu bao nhiêu IC — và địa chỉ hoá được bao nhiêu ô nhớ với một bus địa chỉ n-bit cho trước."""),
+cần tối thiểu bao nhiêu IC: và địa chỉ hoá được bao nhiêu ô nhớ với một bus địa chỉ n-bit cho trước."""),
 
 code("""def chips_needed(total_bytes: int, chip_words: int, chip_bits_per_word: int) -> int:
     chip_bytes = chip_words * chip_bits_per_word // 8
@@ -325,13 +325,12 @@ for bits in (8, 16, 24, 32):
           f"(hex lon nhat = {n-1:X})")"""),
 
 md("""#### 📤 Đầu ra thật
-`chips_needed` cho ra đúng 4 — khớp với câu hỏi gốc Tooley Ch.6 Q13. Với bus 24-bit, địa chỉ hex lớn nhất
-là FFFFFF — khớp với câu hỏi gốc Ch.6 Q5. Với bus 32-bit, số ô nhớ địa chỉ hoá được là 4.294.967.296 = 4GB
-— khớp với câu hỏi tự sinh thêm."""),
+`chips_needed` cho ra đúng 4: khớp với câu hỏi gốc Tooley Ch.6 Q13. Với bus 24-bit, địa chỉ hex lớn nhất
+là FFFFFF: khớp với câu hỏi gốc Ch.6 Q5. Với bus 32-bit, số ô nhớ địa chỉ hoá được là 4.294.967.296 = 4GB: khớp với câu hỏi tự sinh thêm."""),
 
 md("""## 3. Mô phỏng đơn giản chu trình fetch–decode–execute
 🎯 **Phương pháp này trả lời câu hỏi gì?** Minh hoạ cụ thể từng bước PC trỏ tới lệnh, lệnh được nạp vào IR,
-giải mã, rồi thực thi — thay vì chỉ mô tả bằng lời."""),
+giải mã, rồi thực thi: thay vì chỉ mô tả bằng lời."""),
 
 code("""program = {
     0: ("LOAD", "A", 5),   # A = 5
@@ -368,7 +367,7 @@ while running:
 print("\\nKet qua cuoi:", registers)"""),
 
 md("""#### 📤 Đầu ra thật
-Sau 4 chu kỳ fetch-decode-execute, thanh ghi A = 8 (5+3), đúng với chương trình đã định nghĩa — minh hoạ
+Sau 4 chu kỳ fetch-decode-execute, thanh ghi A = 8 (5+3), đúng với chương trình đã định nghĩa: minh hoạ
 trực quan PC tăng dần từng bước, mỗi lệnh được fetch trước khi được thực thi, đúng thứ tự chu trình lệnh
 đã học ở phần lý thuyết."""),
 ])

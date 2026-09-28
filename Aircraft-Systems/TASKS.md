@@ -2,6 +2,33 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 10 — Theme màu, giải thích chi tiết ẩn, chuẩn văn phong 🟢 (2026-09-28)
+- [x] **Theme mặc định đổi thành SÁNG (light) thật sự**, không còn tự động chuyển tối theo hệ điều hành
+  (`prefers-color-scheme`) như trước, vốn là nguyên nhân site "tự nhiên hoá tối" gây khó chịu.
+- [x] Thêm 2 theme mới ngoài Light/Dark: **Sepia** (nền giấy cũ, đỡ mỏi mắt khi đọc lâu) và **Ocean**
+  (xanh lam tương phản cao, hợp trình chiếu). Sửa luôn 1 bug thật trong `theme.js`: nút Sepia/Ocean
+  trước đó bấm vào sẽ bị coi là giá trị lạ và tự động revert về Light do logic `if/else` chỉ nhận
+  đúng 2 chuỗi 'light'/'dark'.
+- [x] **Thêm cơ chế "giải thích chi tiết ẩn bên dưới"** cho quiz: sau khi trả lời, ngoài dòng giải
+  thích ngắn hiện ngay (`explain`), có thêm nút `<details>` "Xem giải thích đầy đủ" mở ra đoạn giải
+  thích dài hơn (`detail`), viết theo văn phong dễ hiểu, có ví dụ/mẹo/liên hệ ứng dụng thực tế.
+- [x] Đã viết `detail` (song ngữ) cho **toàn bộ 62 câu MCQ gốc trích trực tiếp từ Tooley** (Ch.2: 13,
+  Ch.5: 10, Ch.8+9: 16, Ch.6+7: 25) — đây là bộ câu hỏi nền tảng nhất của site. Mỗi giải thích chi
+  tiết đi từ cách làm tổng quát, mẹo kiểm tra nhanh, tới liên hệ ứng dụng thực tế trên avionics khi
+  phù hợp, không chỉ lặp lại phép tính đã có ở `explain`.
+- ⚠️ **CHƯA làm**: `detail` cho 139 câu Floyd, 61 câu Revision Paper và 42 câu tự sinh (`explain` ngắn
+  hiện có vẫn đầy đủ và chính xác, chỉ chưa có bản mở rộng). Đây là việc tiếp theo hợp lý nếu muốn phủ
+  kín toàn bộ 299 câu.
+- [x] **Quét và sửa toàn bộ 336 lần dùng dấu em-dash "—"** trên mọi file mã nguồn (`.py`, `.js`,
+  `.html`, `.ipynb`) theo đúng yêu cầu của skill `viet-academic-writing`/`en-academic-writing` (cấm
+  tuyệt đối em-dash/en-dash). Thay bằng dấu hai chấm, dấu phẩy, hoặc viết lại câu tuỳ ngữ cảnh; đã
+  soát tay và sửa riêng 5 chỗ máy móc thay bằng dấu hai chấm tạo ra câu có 2 dấu ":" gây khó đọc
+  (ví dụ phần mở đầu module 02 và module 04, tiêu đề trang chủ). Xác nhận lại bằng grep trên toàn bộ
+  repo: 0 em-dash còn sót, 4 notebook chạy lại `nbconvert --execute` vẫn 0 lỗi sau khi sửa.
+- **CÒN THIẾU**: chưa áp dụng đầy đủ checklist còn lại của 2 skill viết học thuật (kiểm tra từng câu
+  có nghe như văn mẫu AI không, đa dạng độ dài câu...) trên toàn bộ ~40 slide/module đã viết trước đó
+  — mới sửa lỗi em-dash là lỗi rõ ràng nhất, chưa đọc lại toàn văn để tinh chỉnh văn phong sâu hơn.
+
 ## Epic 1 — Hạ tầng site 🟢
 - [x] Cấu trúc thư mục `vi/ en/ _shared/ data/` theo chuẩn skill `build-complete-self-study-system`.
 - [x] `.nojekyll` ở gốc repo (tránh Jekyll bỏ qua `_shared/`).

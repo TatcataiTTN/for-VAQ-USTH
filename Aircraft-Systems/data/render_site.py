@@ -24,56 +24,56 @@ L = {
   "vi": {
     "site_title": "Hệ thống điện tử số & máy tính hàng không",
     "site_sub": "Tự học AE2.021 · USTH",
-    "home_hero_title": "Tự học AE2.021 — Electronics Systems: Analog & Digital Systems",
+    "home_hero_title": "Tự học môn AE2.021 (Electronics Systems: Analog & Digital Systems)",
     "home_hero_sub": "4 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
                       "(Mike Tooley & Thomas Floyd), có quiz tự chấm và notebook Python đi kèm.",
     "open": "Mở bài giảng →", "soon": "Sắp có",
     "mapping_link": "📚 Bảng ánh xạ 4 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
-              "đã tính toán lại độc lập để xác minh đáp án — xem ghi chú nguồn trong từng câu.",
+              "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
     "part_label": "PHẦN", "fs": "⛶ Toàn màn hình", "prev": "◀ Trước", "next": "Sau ▶",
     "formula_box": "Công thức", "history": "history", "case": "case", "warn": "warn",
-    "quiz_title": "✅ Quiz tự kiểm tra", "quiz_tooley": "Sách 1 — Mike Tooley, Aircraft Digital Electronic and Computer Systems (câu MCQ cuối chương, đã tính lại để xác minh đáp án)", "quiz_floyd": "Sách 2 — Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test cuối chương, đối chiếu đúng đáp án in trong sách)", "quiz_gen": "Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)",
+    "quiz_title": "✅ Quiz tự kiểm tra", "quiz_tooley": "Sách 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (câu MCQ cuối chương, đã tính lại để xác minh đáp án)", "quiz_floyd": "Sách 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test cuối chương, đối chiếu đúng đáp án in trong sách)", "quiz_gen": "Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)",
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
     "mapping_title": "Bảng ánh xạ: 4 bài giảng ↔ chương giáo trình tham khảo",
     "mapping_intro": "Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide "
-                      "giảng dạy thật — dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
+                      "giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
   },
   "en": {
     "site_title": "Aircraft Digital Electronics & Computer Systems",
     "site_sub": "Self-study AE2.021 · USTH",
-    "home_hero_title": "Self-study AE2.021 — Electronics Systems: Analog & Digital Systems",
+    "home_hero_title": "Self-study AE2.021 (Electronics Systems: Analog & Digital Systems)",
     "home_hero_sub": "4 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
                       "(Mike Tooley & Thomas Floyd), with a self-graded quiz and companion Python notebook.",
     "open": "Open lesson →", "soon": "Coming soon",
     "mapping_link": "📚 Chapter mapping: 4 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
-              "Tooley, independently recomputed to verify each answer — see the source note on each question.",
+              "Tooley, independently recomputed to verify each answer: see the source note on each question.",
     "part_label": "PART", "fs": "⛶ Fullscreen", "prev": "◀ Prev", "next": "Next ▶",
     "formula_box": "Formula", "history": "history", "case": "case", "warn": "warn",
-    "quiz_title": "✅ Self-check quiz", "quiz_tooley": "Book 1 — Mike Tooley, Aircraft Digital Electronic and Computer Systems (end-of-chapter MCQs, independently recomputed to verify each answer)", "quiz_floyd": "Book 2 — Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test, cross-checked against the book’s own printed answer key)", "quiz_gen": "Additional practice questions (AI-authored in the same style, answers self-verified by computation)",
+    "quiz_title": "✅ Self-check quiz", "quiz_tooley": "Book 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (end-of-chapter MCQs, independently recomputed to verify each answer)", "quiz_floyd": "Book 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test, cross-checked against the book’s own printed answer key)", "quiz_gen": "Additional practice questions (AI-authored in the same style, answers self-verified by computation)",
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
     "mapping_title": "Chapter mapping: 4 lectures ↔ reference textbook chapters",
     "mapping_intro": "The table below directly cross-references the tables of contents of AE2.021's two "
-                      "reference textbooks against the 4 real lecture slide decks — based on reading the OCR'd "
+                      "reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd "
                       "table of contents and content of both books, not guesswork.",
   },
 }
 
 MAPPING_ROWS = [
   {
-    "module": "01 — Number Systems",
+    "module": "01: Number Systems",
     "tooley": "Ch.2 Number systems (p.25-38): decimal, binary, octal, hex, ASCII",
     "floyd": "Ch.2 Number Systems, Operations, and Codes (p.65-124)",
-    "note_vi": "Khớp trực tiếp gần như 1-1 — cả 2 sách đều dành nguyên 1 chương cho đúng 4 hệ đếm này.",
-    "note_en": "Near 1-to-1 match — both books devote exactly one chapter to these same four number systems.",
+    "note_vi": "Khớp trực tiếp gần như 1-1: cả 2 sách đều dành nguyên 1 chương cho đúng 4 hệ đếm này.",
+    "note_en": "Near 1-to-1 match: both books devote exactly one chapter to these same four number systems.",
   },
   {
-    "module": "02 — Logic Circuits & Boolean Algebra",
+    "module": "02: Logic Circuits & Boolean Algebra",
     "tooley": "Ch.5 Logic circuits (p.70-94): gates, Boolean algebra, combinational logic, tri-state, "
               "monostable/bistable, logic families",
     "floyd": "Ch.3 Logic Gates (p.125-190) + Ch.4 Boolean Algebra and Logic Simplification (p.191-260); "
@@ -83,7 +83,7 @@ MAPPING_ROWS = [
                "more detailed chapters.",
   },
   {
-    "module": "03 — Integrated Circuits & Multiplexing",
+    "module": "03: Integrated Circuits & Multiplexing",
     "tooley": "Ch.8 Integrated circuits (p.139-148) + Ch.9 MSI logic (p.149-164): fan-in/out, decoders, "
               "encoders, multiplexers",
     "floyd": "Ch.6 Functions of Combinational Logic (p.313-386): decoders, encoders, multiplexers, "
@@ -96,15 +96,15 @@ MAPPING_ROWS = [
                "of the book (Ch.15).",
   },
   {
-    "module": "04 — Computers & Microprocessors",
+    "module": "04: Computers & Microprocessors",
     "tooley": "Ch.6 Computers (p.95-115): computer systems, data storage, backplane bus + Ch.7 The CPU "
               "(p.116-138): internal architecture, x86/Pentium/AMD 29050",
     "floyd": "Ch.11 Data Storage (p.627-696): RAM/ROM/Flash memory. Floyd KHÔNG có chương riêng về kiến trúc "
-             "CPU/vi xử lý — đây là điểm khác biệt lớn nhất giữa 2 sách cho module này.",
+             "CPU/vi xử lý: đây là điểm khác biệt lớn nhất giữa 2 sách cho module này.",
     "note_vi": "Đây là module có độ khớp THẤP NHẤT giữa 2 sách: Floyd là sách nền tảng logic số thuần tuý, "
-               "không đi sâu kiến trúc máy tính/CPU như Tooley — phần CPU trong module này chủ yếu dựa vào Tooley.",
+               "không đi sâu kiến trúc máy tính/CPU như Tooley: phần CPU trong module này chủ yếu dựa vào Tooley.",
     "note_en": "This module has the WEAKEST match between the two books: Floyd is a pure digital-logic "
-               "fundamentals text and does not cover computer/CPU architecture in depth like Tooley — the CPU "
+               "fundamentals text and does not cover computer/CPU architecture in depth like Tooley: the CPU "
                "content in this module relies mainly on Tooley.",
   },
 ]
@@ -133,6 +133,8 @@ HEADER_TEMPLATE = """<header class="site"><div class="bar">
     <details><summary>🎨</summary><div class="menu">
       <button data-set-theme="light">☀️ Light</button>
       <button data-set-theme="dark">🌙 Dark</button>
+      <button data-set-theme="sepia">📜 Sepia</button>
+      <button data-set-theme="ocean">🌊 Ocean</button>
     </div></details>
   </div>
 </div></header>
@@ -155,7 +157,7 @@ def render_page(lang, prefix, body, extra_css="", title_suffix="", description="
     return (
         HEAD_TEMPLATE.format(
             lang_attr=lang, prefix=prefix, extra_css=extra_css,
-            page_title=(t["site_title"] + (" — " + title_suffix if title_suffix else "")),
+            page_title=(t["site_title"] + (": " + title_suffix if title_suffix else "")),
             description=description or t["home_hero_sub"],
         )
         + HEADER_TEMPLATE.format(
@@ -284,7 +286,7 @@ def build_home_page(lang, prefix):
         d = mod[lang]
         cards.append(f"""<a class="mod-card" href="modules/{mod['slug']}/index.html">
   <span class="tag">{d['tag']}</span>
-  <h3>MODULE {mod['num']} — {d['title']}</h3>
+  <h3>MODULE {mod['num']}: {d['title']}</h3>
   <p style="color:var(--muted);font-size:.85rem">{d['src']}</p>
   <span class="cta">{t['open']}</span>
 </a>""")
@@ -307,10 +309,10 @@ def build_mapping_page(lang, prefix):
         rows.append(f"""<tr><td><b>{r['module']}</b></td>
 <td>{r['tooley']}</td><td>{r['floyd']}</td><td>{note}</td></tr>""")
     rows_html = "\n".join(rows)
-    head_th = ("Module", "Tooley — Aircraft Digital Electronic and Computer Systems (3rd ed.)",
-               "Floyd — Digital Fundamentals (11th ed.)", "Ghi chú đối chiếu") if lang == "vi" else \
-              ("Module", "Tooley — Aircraft Digital Electronic and Computer Systems (3rd ed.)",
-               "Floyd — Digital Fundamentals (11th ed.)", "Cross-reference note")
+    head_th = ("Module", "Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)",
+               "Floyd: Digital Fundamentals (11th ed.)", "Ghi chú đối chiếu") if lang == "vi" else \
+              ("Module", "Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)",
+               "Floyd: Digital Fundamentals (11th ed.)", "Cross-reference note")
     body = f"""<div class="wrap">
 <p><a href="{lang}/index.html">{t['back_home']}</a></p>
 <div class="hero"><h1>{t['mapping_title']}</h1><p>{t['mapping_intro']}</p></div>

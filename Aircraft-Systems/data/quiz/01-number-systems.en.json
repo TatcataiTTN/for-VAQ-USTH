@@ -9,7 +9,8 @@
    ],
    "correct": 1,
    "explain": "10101₂ = 1·16+0·8+1·4+0·2+1·1 = 21.",
-   "src": "Tooley Ch.2 Q1"
+   "src": "Tooley Ch.2 Q1",
+   "detail": "<p>Quick method: write the weight of each bit position from right to left as 1, 2, 4, 8, 16 (powers of two), then add only the positions where the bit is 1. In 10101, the bits set to 1 sit at weights 16, 4 and 1, so the total is 16+4+1=21.</p><p>A fast sanity check: a binary number ending in 1 is always odd; 21 is odd, which matches the last digit of 10101.</p>"
   },
   {
    "q": "The decimal number 29 is equivalent to the binary number:",
@@ -20,7 +21,8 @@
    ],
    "correct": 0,
    "explain": "29 = 16+8+4+1 → 11101₂.",
-   "src": "Tooley Ch.2 Q2"
+   "src": "Tooley Ch.2 Q2",
+   "detail": "<p>One method is repeated subtraction of the largest available weight: 29 is at least 16, so the 16-bit is 1, leaving 13; 13 is at least 8, so the 8-bit is 1, leaving 5; 5 is at least 4, so the 4-bit is 1, leaving 1; 1 is less than 2, so the 2-bit is 0; finally the 1-bit is 1. Reading from MSB to LSB gives 11101.</p><p>The other common technique, repeated division by 2 while recording remainders, produces the same answer when the remainders are read in reverse order.</p>"
   },
   {
    "q": "The two's complement of the binary number 10110 is:",
@@ -31,7 +33,8 @@
    ],
    "correct": 2,
    "explain": "Đảo bit: 01001, cộng 1 → 01010.",
-   "src": "Tooley Ch.2 Q3"
+   "src": "Tooley Ch.2 Q3",
+   "detail": "<p>Two's complement takes exactly two steps: invert every bit (1 becomes 0, 0 becomes 1) to get the one's complement, then add 1 to that result. For 10110, inverting gives 01001, and adding 1 gives 01010.</p><p>This representation lets a computer subtract using the same binary adder circuit it already has for addition, without needing a separate subtractor.</p>"
   },
   {
    "q": "The BCD number 10010001 is equivalent to the decimal number:",
@@ -42,7 +45,8 @@
    ],
    "correct": 2,
    "explain": "Tách nhóm 4 bit: 1001=9, 0001=1 → 91.",
-   "src": "Tooley Ch.2 Q4"
+   "src": "Tooley Ch.2 Q4",
+   "detail": "<p>BCD (binary coded decimal) encodes each decimal digit separately using exactly 4 bits, unlike plain binary, which encodes the whole number at once. To decode it, split the bit string into groups of 4 and convert each group to a digit from 0 to 9. In 10010001, the first group 1001 is 9 and the second group 0001 is 1, giving 91.</p><p>Because each BCD group only uses 10 of the 16 possible 4-bit patterns (0000 through 1001), the remaining six patterns (1010 through 1111) are invalid in BCD.</p>"
   },
   {
    "q": "The decimal number 37 is equivalent to the BCD number:",
@@ -53,7 +57,8 @@
    ],
    "correct": 0,
    "explain": "3→0011, 7→0111 → 00110111.",
-   "src": "Tooley Ch.2 Q5"
+   "src": "Tooley Ch.2 Q5",
+   "detail": "<p>This is the reverse of the previous question: each decimal digit is replaced by its own 4-bit binary code. The number 37 has the digits 3 and 7, which convert separately to 0011 and 0111, concatenated as 00110111.</p><p>This is why BCD is common on data-entry keypads and 7-segment displays in avionics equipment: each digit key 0 through 9 maps directly to a fixed 4-bit code, with no complex base-conversion circuitry needed.</p>"
   },
   {
    "q": "Which one of the following numbers could not be an octal number:",
@@ -64,7 +69,8 @@
    ],
    "correct": 2,
    "explain": "Số bát phân chỉ dùng chữ số 0-7; 139 chứa chữ số 9 nên không hợp lệ.",
-   "src": "Tooley Ch.2 Q6"
+   "src": "Tooley Ch.2 Q6",
+   "detail": "<p>A base-b number system only uses digits from 0 to b-1. Octal has base 8, so its valid digits are just 0, 1, 2, 3, 4, 5, 6 and 7. Of the three options, 139 contains the digit 9, which exceeds what octal allows, so it cannot be a valid octal number.</p><p>This quick check works for any number system: simply look for a digit that is greater than or equal to the base.</p>"
   },
   {
    "q": "The octal number 73 is equivalent to the decimal number:",
@@ -75,7 +81,8 @@
    ],
    "correct": 0,
    "explain": "73₈ = 7·8+3 = 59.",
-   "src": "Tooley Ch.2 Q7"
+   "src": "Tooley Ch.2 Q7",
+   "detail": "<p>Converting an octal number to decimal follows the same positional-weight method, just with base 8 instead of 10 or 2. The number 73 in octal has digit 7 at weight 8¹=8 and digit 3 at weight 8⁰=1, so its decimal value is 7×8+3×1=59.</p><p>Octal was once common in older computer systems because one octal digit maps exactly to 3 binary bits, which was convenient when a data word length was a multiple of 3.</p>"
   },
   {
    "q": "The binary number 100010001 is equivalent to the octal number:",
@@ -86,7 +93,8 @@
    ],
    "correct": 0,
    "explain": "Nhóm 3 bit từ phải: 100 010 001 → 4 2 1 → 421₈.",
-   "src": "Tooley Ch.2 Q8"
+   "src": "Tooley Ch.2 Q8",
+   "detail": "<p>Because 2³=8, each octal digit corresponds exactly to a group of 3 binary bits. To convert binary to octal, group the bit string into clusters of 3 starting from the rightmost bit, then convert each cluster to a digit from 0 to 7. For 100010001, grouping from the right gives 100, 010, 001, which are 4, 2 and 1, combining to 421₈.</p><p>If the number of bits is not a multiple of 3, pad the leftmost group with leading zeros before converting.</p>"
   },
   {
    "q": "The hexadecimal number 111 is equivalent to the octal number:",
@@ -97,7 +105,8 @@
    ],
    "correct": 0,
    "explain": "111₁₆ = 273₁₀; 273₁₀ = 421₈ (273 = 4·64+2·8+1).",
-   "src": "Tooley Ch.2 Q9"
+   "src": "Tooley Ch.2 Q9",
+   "detail": "<p>Hex and octal do not group bits the same way (hex groups them in 4s, octal in 3s), so there is no direct 1-to-1 regrouping shortcut from hex to octal. The safe route always goes through full binary: converting 111₁₆ to decimal gives 273, and converting 273 to octal gives 421₈.</p><p>This is the most common trap for beginners: assuming any two number systems can be mapped directly into each other without going through binary first.</p>"
   },
   {
    "q": "The hexadecimal number C9 is equivalent to the decimal number:",
@@ -108,7 +117,8 @@
    ],
    "correct": 2,
    "explain": "C9₁₆ = 12·16+9 = 201.",
-   "src": "Tooley Ch.2 Q10"
+   "src": "Tooley Ch.2 Q10",
+   "detail": "<p>In hex, the letters A through F stand in for the values 10 through 15. The number C9 has C at weight 16¹=16 (C=12) and 9 at weight 16⁰=1, so its decimal value is 12×16+9×1=201.</p><p>Hex is favoured for displaying fault codes and memory addresses in avionics precisely because one hex digit compactly represents exactly 4 bits, turning a long binary string into something much shorter and easier to read.</p>"
   },
   {
    "q": "The binary number 10110011 is equivalent to the hexadecimal number:",
@@ -119,7 +129,8 @@
    ],
    "correct": 0,
    "explain": "Nhóm 4 bit: 1011=B, 0011=3 → B3.",
-   "src": "Tooley Ch.2 Q11"
+   "src": "Tooley Ch.2 Q11",
+   "detail": "<p>Because 2⁴=16, each hex digit corresponds exactly to a group of 4 bits. Group the binary string into clusters of 4 from right to left, then convert each cluster to a hex character. For 10110011, grouping gives 1011 and 0011, which are B and 3, combining to B3.</p><p>This 4-bit grouping is exactly why hex serves as the standard shorthand for binary throughout programming and technical documentation.</p>"
   },
   {
    "q": "The hexadecimal number AD is equivalent to the binary number:",
@@ -130,7 +141,8 @@
    ],
    "correct": 1,
    "explain": "A=1010, D=1101 → 10101101.",
-   "src": "Tooley Ch.2 Q12"
+   "src": "Tooley Ch.2 Q12",
+   "detail": "<p>This reverses the previous question: each hex character is replaced by its own 4-bit binary code. The character A corresponds to 1010 and D corresponds to 1101, combining to 10101101.</p><p>The mapping table from 0 through F to 4 bits is worth memorising, since it is the single most frequently repeated operation when working with memory addresses and fault codes on digital equipment.</p>"
   },
   {
    "q": "The number 706₈ is equivalent to:",
@@ -141,7 +153,8 @@
    ],
    "correct": 1,
    "explain": "706₈ = 7·64+0·8+6 = 454₁₀ = 1C6₁₆ (1·256+12·16+6=454). Nhị phân đúng của 454 là 111000110, không phải phương án (b).",
-   "src": "Tooley Ch.2 Q13"
+   "src": "Tooley Ch.2 Q13",
+   "detail": "<p>This question deliberately sets a trap in option (b): 111001110₂ looks similar but is NOT equal to 454. The safest check is to convert 706₈ to decimal first (7×64+0×8+6=454), then convert 454 into each remaining base to compare: 454 in hex is 1C6 (1×256+12×16+6=454, matching option a), while the correct binary form is 111000110 (256+128+64+4+2=454), which does not match the 111001110 string in option (b).</p><p>The lesson here: when answer choices look nearly identical, always recompute through a decimal intermediate value rather than eyeballing two bit strings against each other.</p>"
   },
   {
    "q": "When expressed in hexadecimal an octal value of 54 is the same as:",
@@ -295,8 +308,8 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #1"
+   "explain": "Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #1"
   },
   {
    "q": "The binary number system is a weighted system with two digits.",
@@ -305,8 +318,8 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #2"
+   "explain": "Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #2"
   },
   {
    "q": "MSB stands for most significant bit.",
@@ -316,7 +329,7 @@
    ],
    "correct": 0,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #3"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #3"
   },
   {
    "q": "In hexadecimal, 9 + 1 = 10.",
@@ -326,7 +339,7 @@
    ],
    "correct": 1,
    "explain": "Trong hex, 9+1 = A (10 thập phân được viết là A trong hex), không phải '10'.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #4"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #4"
   },
   {
    "q": "The 1's complement of the binary number 1010 is 0101.",
@@ -335,8 +348,8 @@
     "Đúng"
    ],
    "correct": 1,
-   "explain": "Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101 — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #5"
+   "explain": "Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #5"
   },
   {
    "q": "The 2's complement of the binary number 1111 is 0000.",
@@ -346,7 +359,7 @@
    ],
    "correct": 1,
    "explain": "Bù một của 1111 là 0000, cộng thêm 1 → bù hai = 0001, không phải 0000.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #6"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #6"
   },
   {
    "q": "The right-most bit in a signed binary number is the sign bit.",
@@ -356,7 +369,7 @@
    ],
    "correct": 0,
    "explain": "Bit dấu nằm ở vị trí NGOÀI CÙNG BÊN TRÁI (MSB), không phải bên phải.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #7"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #7"
   },
   {
    "q": "The hexadecimal number system has 16 characters, six of which are alphabetic characters.",
@@ -365,8 +378,8 @@
     "Sai"
    ],
    "correct": 0,
-   "explain": "0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự — đúng.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #8"
+   "explain": "0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự: đúng.",
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #8"
   },
   {
    "q": "BCD stands for binary coded decimal.",
@@ -376,7 +389,7 @@
    ],
    "correct": 0,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #9"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #9"
   },
   {
    "q": "An error in a given code can be detected by verifying the parity bit.",
@@ -386,7 +399,7 @@
    ],
    "correct": 1,
    "explain": "Đây chính là nguyên lý hoạt động của kiểm tra chẵn lẻ.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #10"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #10"
   },
   {
    "q": "CRC stands for cyclic redundancy check.",
@@ -396,7 +409,7 @@
    ],
    "correct": 1,
    "explain": "Đúng theo định nghĩa chuẩn.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #11"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #11"
   },
   {
    "q": "The modulo-2 sum of 11 and 10 is 100.",
@@ -406,7 +419,7 @@
    ],
    "correct": 0,
    "explain": "Cộng modulo-2 chính là phép XOR: 11 XOR 10 = 01, không phải 100.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · True/False #12"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #12"
   },
   {
    "q": "3 × 10¹ + 4 × 10⁰ is",
@@ -418,7 +431,7 @@
    ],
    "correct": 1,
    "explain": "3×10+4×1 = 30+4 = 34.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #1"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #1"
   },
   {
    "q": "The decimal equivalent of 1000 is",
@@ -430,7 +443,7 @@
    ],
    "correct": 2,
    "explain": "1000₂ = 8₁₀.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #2"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #2"
   },
   {
    "q": "The binary number 11011101 is equal to the decimal number",
@@ -442,7 +455,7 @@
    ],
    "correct": 2,
    "explain": "128+64+16+8+4+1 = 221.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #3"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #3"
   },
   {
    "q": "The decimal number 21 is equivalent to the binary number",
@@ -454,7 +467,7 @@
    ],
    "correct": 3,
    "explain": "16+4+1 = 21 → 10101₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #4"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #4"
   },
   {
    "q": "The decimal number 250 is equivalent to the binary number",
@@ -466,7 +479,7 @@
    ],
    "correct": 0,
    "explain": "128+64+32+16+8+2 = 250 → 11111010₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #5"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #5"
   },
   {
    "q": "The sum of 1111 + 1111 in binary equals",
@@ -478,7 +491,7 @@
    ],
    "correct": 3,
    "explain": "15+15 = 30 = 11110₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #6"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #6"
   },
   {
    "q": "The difference of 1000 − 100 equals",
@@ -490,7 +503,7 @@
    ],
    "correct": 1,
    "explain": "8−4 = 4 = 100₂.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #7"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #7"
   },
   {
    "q": "The 1's complement of 11110000 is",
@@ -502,7 +515,7 @@
    ],
    "correct": 1,
    "explain": "Đảo từng bit: 1→0, 0→1 → 00001111.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #8"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #8"
   },
   {
    "q": "The 2's complement of 11001100 is",
@@ -514,7 +527,7 @@
    ],
    "correct": 2,
    "explain": "Bù một = 00110011, cộng 1 → 00110100.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #9"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #9"
   },
   {
    "q": "The decimal number +122 is expressed in the 2's complement form as",
@@ -526,7 +539,7 @@
    ],
    "correct": 3,
    "explain": "122 = 64+32+16+8+2 → 01111010 (số dương giữ nguyên dạng nhị phân thường).",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #10"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #10"
   },
   {
    "q": "The decimal number −34 is expressed in the 2's complement form as",
@@ -538,7 +551,7 @@
    ],
    "correct": 2,
    "explain": "34 = 00100010, bù một = 11011101, cộng 1 → 11011110.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #11"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #11"
   },
   {
    "q": "A single-precision floating-point binary number has a total of",
@@ -550,7 +563,7 @@
    ],
    "correct": 1,
    "explain": "Chuẩn IEEE 754 single-precision dùng 32 bit.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #12"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #12"
   },
   {
    "q": "In the 2's complement form, the binary number 10010011 is equal to the decimal number",
@@ -562,7 +575,7 @@
    ],
    "correct": 1,
    "explain": "Bit dấu=1 (âm). Bù một của 10010011 = 01101100, +1 = 01101101 = 109 → giá trị gốc = −109.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #13"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #13"
   },
   {
    "q": "The binary number 101100111001010100001 can be written in octal as",
@@ -574,7 +587,7 @@
    ],
    "correct": 0,
    "explain": "Nhóm 3 bit từ phải, đệm trái đủ nhóm, rồi đổi từng nhóm sang 1 chữ số bát phân.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #14"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #14"
   },
   {
    "q": "The binary number 10001101010001101111 can be written in hexadecimal as",
@@ -586,7 +599,7 @@
    ],
    "correct": 1,
    "explain": "Nhóm 4 bit từ phải: 1000 1101 0100 0110 1111 → 8 D 4 6 F.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #15"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #15"
   },
   {
    "q": "The binary number for F7A9₁₆ is",
@@ -598,7 +611,7 @@
    ],
    "correct": 3,
    "explain": "F=1111, 7=0111, A=1010, 9=1001 → 1111 0111 1010 1001.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #16"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #16"
   },
   {
    "q": "The BCD number for decimal 473 is",
@@ -610,7 +623,7 @@
    ],
    "correct": 1,
    "explain": "4→0100, 7→0111, 3→0011 → ghép lại 010001110011, đúng phương án (c).",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #17"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #17"
   },
   {
    "q": "Refer to Table 2-7. The command STOP in ASCII is",
@@ -622,7 +635,7 @@
    ],
    "correct": 1,
    "explain": "Ghép mã ASCII 7-bit của từng ký tự S-T-O-P theo Bảng 2-7 trong sách (đáp án lấy theo answer key gốc của Floyd).",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #18"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #18"
   },
   {
    "q": "The code that has an even-parity error is",
@@ -634,7 +647,7 @@
    ],
    "correct": 0,
    "explain": "Đếm số bit 1: 1010011→4(chẵn), 1101000→3(lẻ), 1001000→2(chẵn), 1110111→6(chẵn). Với quy ước parity chẵn, mã có SỐ BIT 1 LẺ là mã lỗi → 1101000.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #19"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #19"
   },
   {
    "q": "In the cyclic redundancy check, the absence of errors is indicated by",
@@ -646,7 +659,7 @@
    ],
    "correct": 0,
    "explain": "Không có lỗi khi phép chia CRC cho số dư bằng 0.",
-   "src": "Floyd Ch.2 — Number Systems, Operations, and Codes · Self-Test #20"
+   "src": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #20"
   }
  ],
  "generated": [
