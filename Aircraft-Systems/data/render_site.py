@@ -31,6 +31,7 @@ L = {
     "mapping_link": "📚 Bảng ánh xạ 4 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
               "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
+    "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
     "part_label": "PHẦN", "fs": "⛶ Toàn màn hình", "prev": "◀ Trước", "next": "Sau ▶",
     "formula_box": "Công thức", "history": "history", "case": "case", "warn": "warn",
     "quiz_title": "✅ Quiz tự kiểm tra", "quiz_tooley": "Sách 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (câu MCQ cuối chương, đã tính lại để xác minh đáp án)", "quiz_floyd": "Sách 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test cuối chương, đối chiếu đúng đáp án in trong sách)", "quiz_gen": "Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)",
@@ -51,6 +52,7 @@ L = {
     "mapping_link": "📚 Chapter mapping: 4 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
               "Tooley, independently recomputed to verify each answer: see the source note on each question.",
+    "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
     "part_label": "PART", "fs": "⛶ Fullscreen", "prev": "◀ Prev", "next": "Next ▶",
     "formula_box": "Formula", "history": "history", "case": "case", "warn": "warn",
     "quiz_title": "✅ Self-check quiz", "quiz_tooley": "Book 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (end-of-chapter MCQs, independently recomputed to verify each answer)", "quiz_floyd": "Book 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test, cross-checked against the book’s own printed answer key)", "quiz_gen": "Additional practice questions (AI-authored in the same style, answers self-verified by computation)",
@@ -189,9 +191,19 @@ def build_deck(lang, mod):
             part_divider=True,
         ))
         for cs in part.get("slides", []):
+            img_html = ""
+            if cs.get("img"):
+                src = "../../../assets/figures/" + cs["img"]
+                img_html = (f"<figure class='slide-fig'><a href='{src}' target='_blank' rel='noopener'>"
+                            f"<img src='{src}' alt='{html.escape(cs['title'], quote=True)}' loading='lazy'/></a>"
+                            f"<figcaption>{t['zoom_hint']}</figcaption></figure>")
+            explain_html = ""
+            if cs.get("explain"):
+                explain_html = (f"<details class='slide-explain'><summary>{t['explain_more']}</summary>"
+                                f"<div class='slide-explain-body'>{cs['explain']}</div></details>")
             slides.append(slide_html(
                 f"{t['part_label']} {i}/5 · {mod['num']}",
-                f"<h2>{cs['title']}</h2>{cs['body']}",
+                f"<h2>{cs['title']}</h2>{cs['body']}{img_html}{explain_html}",
             ))
             total_content += 1
     legend_items = "".join(f"<li><b>{k}</b><span>{v}</span></li>" for k, v in d["legend"])

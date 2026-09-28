@@ -2,6 +2,18 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 11 — Giải thích "cho người mới bắt đầu" dưới từng slide + ảnh gốc bài giảng 🟡 (2026-09-28)
+- [x] **Module 01 (pilot, chờ duyệt phong cách)**: cả 50 slide nội dung × 2 ngôn ngữ đều có khung
+  `<details>` thu gọn "Giải thích cho người mới bắt đầu" (nguồn: `data/explain01/{vi,en}_p0..p4.py`,
+  gộp vào `slides_01.py` qua trường `explain`).
+- [x] Trích 8 hình gốc từ `Number system.pdf` (bài giảng của giảng viên, chưa từng có trên site) vào
+  `assets/figures/numsys_*`: 6 infographic "Applications of ... in A320" (tổng quan, thập phân, nhị phân,
+  hex, bát phân, BCD), sơ đồ chuyển đổi 4 hệ đếm, mạch half adder. Gắn vào 8 slide phù hợp qua trường `img`,
+  bấm vào ảnh để mở bản đầy đủ.
+- [x] `check_links.py` nay nhận cả thuộc tính dùng dấu nháy đơn (trước đó bỏ sót ảnh mới): 110 → 142 link, 0 lỗi.
+- ⚠️ **CHƯA làm**: Module 02, 03, 04 (cần duyệt phong cách Module 01 trước). Ảnh gốc của 3 bài giảng còn lại
+  chưa trích. Một vài `body` cũ của Module 01 còn câu lủng củng (ví dụ slide "10.000 ft" có đoạn "10000×2=...").
+
 ## Epic 10 — Theme màu, giải thích chi tiết ẩn, chuẩn văn phong 🟢 (2026-09-28)
 - [x] **Theme mặc định đổi thành SÁNG (light) thật sự**, không còn tự động chuyển tối theo hệ điều hành
   (`prefers-color-scheme`) như trước, vốn là nguyên nhân site "tự nhiên hoá tối" gây khó chịu.

@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Aircraft-Systems/
 
-ATTR_RE = re.compile(r'(?:href|src)="([^"]+)"')
+ATTR_RE = re.compile(r"""(?:href|src)=(?:"([^"]+)"|'([^']+)')""")
 
 fails = []
 checked = 0
@@ -21,7 +21,7 @@ for dirpath, dirnames, filenames in os.walk(ROOT):
         fpath = os.path.join(dirpath, fn)
         html = open(fpath, encoding="utf-8").read()
         for m in ATTR_RE.finditer(html):
-            url = m.group(1)
+            url = m.group(1) or m.group(2)
             p = urlparse(url)
             if p.scheme or url.startswith("//") or url.startswith("mailto:") or url.startswith("#"):
                 continue  # external or anchor, skip

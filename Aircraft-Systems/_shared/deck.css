@@ -65,3 +65,16 @@
 .qitem .explain-detail-body table.tt{margin:8px 0;font-size:.82rem}
 .quiz-score{font-weight:800;margin:10px 0}
 .quiz-restart{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:8px 16px;cursor:pointer;font-weight:700}
+
+.slide-fig{margin:12px 0;text-align:center}
+.slide-fig img{max-width:100%;max-height:360px;border:1px solid var(--border);border-radius:8px;background:#fff;padding:4px;cursor:zoom-in}
+.slide-fig figcaption{font-size:.72rem;color:var(--muted);margin-top:4px}
+.slide-explain{margin-top:14px;border:1px solid var(--border);border-radius:10px;background:var(--code)}
+.slide-explain summary{cursor:pointer;font-weight:800;font-size:.9rem;color:var(--accent);padding:9px 14px;list-style:none}
+.slide-explain summary::-webkit-details-marker{display:none}
+.slide-explain summary::before{content:"▸ ";display:inline-block;transition:transform .15s}
+.slide-explain[open] summary::before{transform:rotate(90deg)}
+.slide-explain-body{padding:2px 16px 12px;font-size:.92rem;line-height:1.65}
+.slide-explain-body p{margin:8px 0}
+.mdeck-slide{overflow-y:auto}
+.mdeck:fullscreen .slide-fig img,.mdeck:-webkit-full-screen .slide-fig img{max-height:48vh}
