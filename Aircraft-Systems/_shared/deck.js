@@ -17,7 +17,22 @@ document.querySelectorAll('.mdeck').forEach(function(deck){
     dots.forEach((d, idx) => d.classList.toggle('on', idx === i));
     count.textContent = (i+1) + '/' + slides.length;
     prevBtn.disabled = i === 0; nextBtn.disabled = i === slides.length - 1;
+    fitSoon();
   }
+  function isFs(){ return document.fullscreenElement === deck || document.webkitFullscreenElement === deck; }
+  function fit(){
+    slides.forEach(s => { s.style.fontSize = ''; });
+    if (!isFs()) return;
+    const s = slides[i];
+    let lo = 14, hi = 44;
+    while (hi - lo > 0.5) {
+      const mid = (lo + hi) / 2;
+      s.style.fontSize = mid + 'px';
+      if (s.scrollHeight <= s.clientHeight + 1) lo = mid; else hi = mid;
+    }
+    s.style.fontSize = lo + 'px';
+  }
+  function fitSoon(){ requestAnimationFrame(() => requestAnimationFrame(fit)); }
   function go(n){ i = Math.max(0, Math.min(slides.length - 1, n)); render(); }
   prevBtn.addEventListener('click', () => go(i - 1));
   nextBtn.addEventListener('click', () => go(i + 1));
@@ -29,5 +44,9 @@ document.querySelectorAll('.mdeck').forEach(function(deck){
   if (fsBtn) fsBtn.addEventListener('click', () => {
     if (!document.fullscreenElement) deck.requestFullscreen?.(); else document.exitFullscreen?.();
   });
+  deck.addEventListener('toggle', fitSoon, true);
+  document.addEventListener('fullscreenchange', fitSoon);
+  document.addEventListener('webkitfullscreenchange', fitSoon);
+  window.addEventListener('resize', fitSoon);
   render();
 });

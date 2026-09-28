@@ -11,7 +11,7 @@ SLIDES = {
    },
    {
     "title": "Bốn hệ đếm cốt lõi trong avionics",
-    "body": "<table class='tt'><thead><tr><th>Hệ đếm</th><th>Cơ số</th><th>Chữ số dùng</th><th>Vai trò chính</th></tr></thead><tbody><tr><td>Nhị phân</td><td>2</td><td>0,1</td><td>Xử lý bên trong máy tính</td></tr><tr><td>Bát phân</td><td>8</td><td>0-7</td><td>Mã trạng thái hệ thống gọn</td></tr><tr><td>Thập lục phân</td><td>16</td><td>0-9,A-F</td><td>Địa chỉ bộ nhớ, mã lỗi BITE</td></tr><tr><td>BCD</td><td>: </td><td>4 bit/chữ số</td><td>Hiển thị số thập phân trên màn hình</td></tr></tbody></table>",
+    "body": "<table class='tt'><thead><tr><th>Hệ đếm</th><th>Cơ số</th><th>Chữ số dùng</th><th>Vai trò chính</th></tr></thead><tbody><tr><td>Nhị phân</td><td>2</td><td>0,1</td><td>Xử lý bên trong máy tính</td></tr><tr><td>Bát phân</td><td>8</td><td>0-7</td><td>Mã trạng thái hệ thống gọn</td></tr><tr><td>Thập lục phân</td><td>16</td><td>0-9,A-F</td><td>Địa chỉ bộ nhớ, mã lỗi BITE</td></tr><tr><td>BCD</td><td>n/a</td><td>4 bit/chữ số</td><td>Hiển thị số thập phân trên màn hình</td></tr></tbody></table>",
     "explain": "<p>Hình trên trích từ slide bài giảng gốc, tóm tắt bốn hệ đếm của module cùng vai trò thật của từng hệ trên A320. Nhị phân là ngôn ngữ nội bộ của mọi máy tính (FMGC, FWC, SDAC). Bát phân viết gọn mã trạng thái trên vài trang MCDU đời cũ. Hex dùng cho địa chỉ bộ nhớ và mã lỗi BITE vì ngắn gọn, dễ tra. BCD là cầu nối để số nhị phân hiện thành các chữ số quen thuộc trên màn hình buồng lái.</p><p>Nếu mới học lần đầu, đừng cố nhớ từng chi tiết trong hình. Chỉ cần giữ ý chính: bốn hệ đếm, bốn vai trò, nhưng cùng mô tả <b>một</b> dữ liệu bên dưới.</p>",
     "img": "numsys_apps_p03.jpg"
    },
@@ -281,7 +281,7 @@ SLIDES = {
    },
    {
     "title": "Four core number systems in avionics",
-    "body": "<table class='tt'><thead><tr><th>System</th><th>Base</th><th>Digits used</th><th>Main role</th></tr></thead><tbody><tr><td>Binary</td><td>2</td><td>0,1</td><td>Internal computer processing</td></tr><tr><td>Octal</td><td>8</td><td>0-7</td><td>Compact system status codes</td></tr><tr><td>Hexadecimal</td><td>16</td><td>0-9,A-F</td><td>Memory addresses, BITE fault codes</td></tr><tr><td>BCD</td><td>: </td><td>4 bits/digit</td><td>Decimal display on screens</td></tr></tbody></table>",
+    "body": "<table class='tt'><thead><tr><th>System</th><th>Base</th><th>Digits used</th><th>Main role</th></tr></thead><tbody><tr><td>Binary</td><td>2</td><td>0,1</td><td>Internal computer processing</td></tr><tr><td>Octal</td><td>8</td><td>0-7</td><td>Compact system status codes</td></tr><tr><td>Hexadecimal</td><td>16</td><td>0-9,A-F</td><td>Memory addresses, BITE fault codes</td></tr><tr><td>BCD</td><td>n/a</td><td>4 bits/digit</td><td>Decimal display on screens</td></tr></tbody></table>",
     "explain": "<p>The image above comes from the original lecture slide. It summarises the four number systems in this module and the real job each one does on the A320. Binary is the internal language of every onboard computer (FMGC, FWC, SDAC). Octal shortens status codes on some older MCDU pages. Hex covers memory addresses and BITE fault codes because it is compact and easy to look up. BCD bridges the internal binary value to the familiar decimal digits on cockpit displays.</p><p>On a first pass, do not try to memorise every detail in the picture. Keep the main idea: four systems, four roles, all describing the <b>same</b> data underneath.</p>",
     "img": "numsys_apps_p03.jpg"
    },
