@@ -60,7 +60,8 @@ MODULES = [
               "quy về nhị phân đầy đủ trước, rồi nhóm lại theo đúng cơ số đích, như minh hoạ ở câu 9 trong bộ "
               "câu hỏi bên dưới (111₁₆ → 421₈, không thể suy trực tiếp).",
       "notebook_desc": "Notebook đi kèm: bộ chuyển đổi cơ số (thập phân/nhị phân/bát phân/hex/BCD) viết bằng Python, "
-                        "tự kiểm tra lại toàn bộ 13 câu hỏi gốc từ sách Tooley bằng code thay vì tính tay.",
+                        "tự kiểm tra lại toàn bộ 13 câu hỏi gốc từ sách Tooley bằng code thay vì tính tay — "
+                        "cộng thêm mục giải TOÀN BỘ 69 bài tập cuối chương 2 của Floyd (Problems 2-1 tới 2-12).",
     },
     "en": {
       "title": "Number Systems in Aircraft Digital Data",
@@ -112,7 +113,8 @@ MODULES = [
               "always expand to full binary first, then regroup for the target base, as illustrated in question 9 "
               "below (111₁₆ → 421₈ cannot be inferred directly).",
       "notebook_desc": "Companion notebook: a Python base-converter (decimal/binary/octal/hex/BCD) that re-checks "
-                        "all 13 original Tooley textbook questions by code instead of by hand.",
+                        "all 13 original Tooley textbook questions by code instead of by hand — plus a section "
+                        "that auto-solves all 69 end-of-chapter Problems from Floyd Chapter 2.",
     },
   },
   {
@@ -164,7 +166,9 @@ MODULES = [
               "trực giác thay vì tính từng bước — cách an toàn nhất luôn là viết bảng chân trị đầy đủ AND/OR "
               "trước, rồi đảo bit kết quả, không suy luận tắt.",
       "notebook_desc": "Notebook đi kèm: sinh bảng chân trị tự động cho biểu thức Boolean bất kỳ, rút gọn bằng "
-                        "sympy và đối chiếu kết quả với rút gọn tay theo các định luật đã học.",
+                        "sympy và đối chiếu kết quả với rút gọn tay theo các định luật đã học — cộng thêm mục "
+                        "tự động giải phần lớn bài tập chương 4 của Floyd (luật Boolean, De Morgan, SOP/POS, "
+                        "Karnaugh map, Quine-McCluskey) bằng sympy.logic.",
     },
     "en": {
       "title": "Logic Gates & Boolean Algebra",
@@ -211,7 +215,9 @@ MODULES = [
               "instead of computing it step by step — the safest approach is always to write out the full AND/OR "
               "truth table first, then invert the result bit by bit, never skip straight to the answer.",
       "notebook_desc": "Companion notebook: auto-generates the truth table for any Boolean expression, simplifies "
-                        "it with sympy, and cross-checks the result against the manual simplification steps.",
+                        "it with sympy, and cross-checks the result against the manual simplification steps — plus "
+                        "a section that auto-solves most of Floyd Chapter 4's Problems (Boolean laws, De Morgan, "
+                        "SOP/POS, Karnaugh maps, Quine-McCluskey) using sympy.logic.",
     },
   },
   {
@@ -264,7 +270,8 @@ MODULES = [
               "gán 1 đường làm dữ liệu, còn lại làm địa chỉ chọn), nhưng về chức năng mạch, chúng phục vụ hai "
               "mục đích khác nhau.",
       "notebook_desc": "Notebook đi kèm: mô phỏng bảng chân trị của bộ giải mã 3-sang-8, bộ mã hoá ưu tiên, và "
-                        "bộ dồn kênh 4-sang-1/8-sang-1 bằng Python, kiểm tra công thức n=log₂(N).",
+                        "bộ dồn kênh 4-sang-1/8-sang-1 bằng Python, kiểm tra công thức n=log₂(N) — cộng thêm mục "
+                        "giải các bài tập chương 6 của Floyd không cần hình vẽ gốc (bộ cộng bán phần/toàn phần).",
     },
     "en": {
       "title": "Integrated Circuits & Multiplexing",
@@ -312,7 +319,8 @@ MODULES = [
               "demux by treating one line as data and the rest as select address), but functionally they serve "
               "different purposes.",
       "notebook_desc": "Companion notebook: simulates the truth table of a 3-to-8 decoder, a priority encoder, "
-                        "and 4-to-1/8-to-1 multiplexers in Python, verifying the n=log₂(N) formula.",
+                        "and 4-to-1/8-to-1 multiplexers in Python, verifying the n=log₂(N) formula — plus a section "
+                        "solving Floyd Chapter 6's figure-free Problems (half/full adders).",
     },
   },
   {
@@ -367,7 +375,9 @@ MODULES = [
               "nhanh như nhau) với RAM (read/write memory) theo cách dùng thông thường. Về mặt kỹ thuật, ROM "
               "CŨNG là bộ nhớ truy cập ngẫu nhiên (không phải tuần tự như băng từ), dù không thể ghi được.",
       "notebook_desc": "Notebook đi kèm: tính thời gian thực thi lệnh theo T-state/tần số xung nhịp, tính dung "
-                        "lượng bộ nhớ cần thiết từ số IC DRAM, và mô phỏng đơn giản chu trình fetch-decode-execute.",
+                        "lượng bộ nhớ cần thiết từ số IC DRAM, và mô phỏng đơn giản chu trình fetch-decode-execute "
+                        "— cộng thêm mục giải các bài tập chương 11 của Floyd không cần hình vẽ gốc (địa chỉ bộ "
+                        "nhớ, RAM tĩnh).",
     },
     "en": {
       "title": "Computer Structure & Microprocessors (CPU)",
@@ -419,7 +429,8 @@ MODULES = [
               "(not sequential like magnetic tape), even though it cannot be written to.",
       "notebook_desc": "Companion notebook: computes instruction execution time from T-states/clock frequency, "
                         "computes required memory capacity from the number of DRAM chips, and simulates a simple "
-                        "fetch-decode-execute cycle.",
+                        "fetch-decode-execute cycle — plus a section solving Floyd Chapter 11's figure-free "
+                        "Problems (memory addressing, static RAM).",
     },
   },
 ]

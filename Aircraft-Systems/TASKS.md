@@ -28,12 +28,27 @@ Ngày khởi tạo: 2026-09-28.
 - [x] Toàn bộ 61 câu đã gộp vào `data/build_quiz.py` (phần "Tooley"), src ghi rõ "Revision Paper N Q#".
 - Tổng số câu hỏi trên site sau đợt này: **299** (từ 241).
 
-## Epic 9 — Floyd "Problems" (bài tập tự luận cuối chương) ⚪ CHƯA LÀM
-- Floyd có mục "Problems" riêng theo từng section (không phải MCQ) cho mỗi chương — khối lượng RẤT lớn
-  (khoảng 40-80 bài/chương × 5 chương ≈ 250-400 bài tự luận), có đáp án số lẻ ở cuối sách.
-- Chưa trích xuất/giải — việc này cần một đợt làm riêng, ưu tiên: (1) trích danh sách bài theo section,
-  (2) tự động giải bằng code các bài dạng chuyển đổi số/tính toán (tái dùng hàm trong notebook), (3) với
-  bài lý thuyết mở (không có đáp án số) chỉ liệt kê làm ngân hàng luyện tập, không bịa lời giải.
+## Epic 9 — Floyd "Problems" (bài tập tự luận cuối chương) 🟢 (2026-09-28, phần khả thi)
+- [x] **Ch.2 (Number Systems) — 69/69 bài, giải TOÀN BỘ bằng code** (`data/notebooks/01_*.ipynb`,
+  mục 4). Toàn bộ 12 mục (2-1 tới 2-12) đều là chuyển đổi/tính toán số → auto-solve 100%.
+- [x] **Ch.4 (Boolean Algebra) — phần lớn ~45+ bài giải bằng `sympy.logic`** (`02_*.ipynb`, mục 4):
+  luật Boolean, De Morgan, rút gọn, SOP/POS, bảng chân trị, Karnaugh map, Quine-McCluskey. Các bài
+  cần hình mạch cụ thể (12-17, 22, 36, 45-47, 50-51) hoặc VHDL/thiết kế phần cứng (60-72) liệt kê rõ
+  là CHƯA giải, không suy đoán nội dung hình.
+- [x] **Ch.6, Ch.11 — giải các bài KHÔNG cần hình** (`03_*.ipynb`, `04_*.ipynb`, mục 4): Ch.6 bài
+  1,2,3 (logic bộ cộng cho sẵn A,B,Cin) + bài 9 (dùng ĐÚNG 8 chuỗi bit cho sẵn trong đề, không bịa số
+  liệu thay thế); Ch.11 bài 2,4,5.
+- [x] Đã chạy `jupyter nbconvert --execute` cho cả 4 notebook sau khi thêm — 0 lỗi.
+- ⚠️ **Phát hiện 2 lỗi thật khi đối chiếu (ghi rõ trong notebook, không giấu)**:
+  1. Ch.2 câu 5(c): tính đúng theo toán học `101₂=5`, nhưng phụ lục đáp án cuối sách Floyd ghi `3` —
+     nhiều khả năng là lỗi in ấn trong chính sách gốc (7/8 giá trị còn lại của câu này khớp hoàn toàn).
+  2. Ch.4 câu 8(b): sách yêu cầu xác nhận đẳng thức `AAB+ABC+ABB=ABC`, nhưng `sympy` rút gọn vế trái
+     ra `AB`, KHÔNG bằng `ABC` — hai vế không tương đương, đã ghi rõ thay vì khẳng định sai.
+- **CÒN THIẾU (không giấu)**: Ch.3 (55 bài, hầu hết là đọc giản đồ thời gian/vẽ lại dạng sóng từ hình
+  — cần trích xuất hình riêng mới giải được, bản chất khác hẳn dạng số của Ch.2/Ch.4); phần lớn Ch.6
+  và Ch.11 còn lại (cần hình mạch/sơ đồ chân IC cụ thể); các bài VHDL/thiết kế phần cứng/Multisim của
+  mọi chương (bài toán thực hành công cụ, không phải tính toán). Tổng cộng còn khoảng 150-200 bài tự
+  luận cần hình chưa giải.
 
 ## Epic 3 — Nội dung 4 module (VI+EN) 🟢
 - [x] 01 Number Systems, 02 Logic & Boolean, 03 IC & Multiplexing, 04 Computers & CPU.
