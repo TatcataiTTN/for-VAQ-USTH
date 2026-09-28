@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5e3d99b9"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5e3d99b9"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
 <title>Aircraft Digital Electronics & Computer Systems: Integrated Circuits & Multiplexing</title>
 <meta name="description" content="From a single logic gate (SSI) to a microprocessor with millions of transistors (VLSI), the scale of integration determines how a device is packaged, tested and used. This module covers integration scales, IC packaging technology, and the most common MSI circuits found on aircraft: decoders, encoders and multiplexers."/>
 </head>
@@ -117,9 +117,10 @@
 <div class="quiz"><script type="application/json">{"items": [{"q": "An 8-to-1 multiplexer needs how many select lines?", "opts": ["2", "3", "4"], "correct": 1, "explain": "2ⁿ = 8 → n = 3 select lines.", "src": ""}, {"q": "A 3-to-8 line decoder has how many output lines?", "opts": ["8", "6", "3"], "correct": 0, "explain": "An n-to-2ⁿ decoder with n = 3 → 2³ = 8 outputs.", "src": ""}, {"q": "A chip containing roughly 500 logic gates is typically classified as:", "opts": ["SSI", "LSI", "MSI"], "correct": 1, "explain": "From a few hundred up to about 10,000 gates corresponds to LSI (by the classification used in this chapter).", "src": ""}, {"q": "A demultiplexer performs the opposite function of a:", "opts": ["comparator", "multiplexer", "encoder"], "correct": 1, "explain": "A demux takes 1 input source to many lines, the opposite of a mux, which combines many inputs into 1.", "src": ""}, {"q": "An encoder with 8 inputs will typically produce how many binary output bits?", "opts": ["4", "3", "8"], "correct": 1, "explain": "log2(8) = 3 bits are enough to encode 8 input states.", "src": ""}, {"q": "In IC packaging, 'DIL' stands for:", "opts": ["Direct Input Line", "Dual-In-Line", "Digital Integrated Logic"], "correct": 1, "explain": "DIL = Dual-In-Line, a package with two parallel rows of pins.", "src": ""}, {"q": "A parity generator/checker circuit is commonly built mainly from:", "opts": ["AND gates", "NAND gates", "cascaded XOR gates"], "correct": 2, "explain": "A chain of XOR gates lets you compute the modulo-2 sum of the bits, which is exactly the principle of parity generation.", "src": ""}, {"q": "Which IC package type is designed for surface-mount (not through-hole) assembly?", "opts": ["PGA", "DIP", "SOIC"], "correct": 2, "explain": "SOIC (Small Outline IC) is a typical surface-mount package.", "src": ""}, {"q": "If a gate's fan-out is 10, it can safely drive up to how many standard inputs of the same family?", "opts": ["5", "10", "20"], "correct": 1, "explain": "The definition of fan-out is the maximum number of standard input loads an output can drive.", "src": ""}, {"q": "A comparator circuit is used to:", "opts": ["store binary data", "determine whether one binary number is greater than, equal to, or less than another", "convert binary to decimal"], "correct": 1, "explain": "A comparator compares two binary numbers and produces the A>B, A=B or A<B signal.", "src": ""}]}</script></div>
 <h2>✍️ Free-response questions (source: Floyd, Digital Fundamentals)</h2>
 <p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 6 – Functions of Combinational Logic, Problems (p.374-376); answers in the Answers to Odd-Numbered Problems appendix (p.A-10, A-11).</p>
-<p class='essay-intro'><i>This Floyd chapter has many more decoder/encoder/mux problems, but most require reading a specific figure from the book that cannot be reproduced accurately in text alone. One other problem (Problem 25) shows a mismatch between the printed question and the printed appendix answer (a suspected Global Edition printing erratum), so it was deliberately excluded rather than publishing an uncertain answer. This section therefore has only 3 questions (instead of 6), but all three were independently recomputed by hand and matched exactly against the original answer photograph.</i></p>
+<p class='essay-intro'><i>This Floyd chapter has many more decoder/encoder/mux problems, but most require reading a specific figure from the book that cannot be reproduced accurately in text alone. One other problem (Problem 25) shows a mismatch between the printed question and the printed appendix answer (a suspected Global Edition printing erratum) and Problem 9 (bit sequences into a 4-bit adder), whose printed answer could not be reproduced under any bit-order reading, so it was deliberately excluded rather than publishing an uncertain answer. This section therefore has only 3 questions (instead of 6), but all three were independently recomputed by hand and matched exactly against the original answer photograph.</i></p>
 <div class="essay-item">
-  <p class="essay-q"><b>1.</b> For a full-adder, determine the outputs for each of the following inputs:<br>(a) A = 0, B = 1, Cin = 0 &nbsp; (b) A = 1, B = 0, Cin = 1 &nbsp; (c) A = 0, B = 0, Cin = 0</p>
+  <p class="essay-q"><b>1.</b> For the full-adder of Figure 6–4, determine the outputs for each of the following inputs<br>(a) A = 0, B = 1, C<sub>in</sub> = 0 &nbsp; (b) A = 1, B = 0, C<sub>in</sub> = 1<br>(c) A = 0, B = 0, C<sub>in</sub> = 0</p>
+  
   <p class="pill">Floyd Ch.6 · Problem 1</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q01.png" alt="Floyd Ch.6 · Problem 1" loading="lazy"/></div>
@@ -127,6 +128,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>3.</b> Determine the outputs of a full-adder for each of the following inputs:<br>(a) A = 1, B = 0, Cin = 0 &nbsp; (b) A = 0, B = 0, Cin = 1<br>(c) A = 0, B = 1, Cin = 1 &nbsp; (d) A = 1, B = 1, Cin = 1</p>
+  
   <p class="pill">Floyd Ch.6 · Problem 3</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q03.png" alt="Floyd Ch.6 · Problem 3" loading="lazy"/></div>
@@ -134,6 +136,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>15.</b> For each set of binary numbers, determine the output states for the comparator:<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000</p>
+  
   <p class="pill">Floyd Ch.6 · Problem 15</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q15.png" alt="Floyd Ch.6 · Problem 15" loading="lazy"/></div>
@@ -143,5 +146,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5e3d99b9"></script>
-<script src="../../../_shared/deck.js?v=5e3d99b9"></script><script src="../../../_shared/quiz.js?v=5e3d99b9"></script></body></html>
+<script src="../../../_shared/theme.js?v=5d16e309"></script>
+<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>

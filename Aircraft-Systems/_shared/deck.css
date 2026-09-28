@@ -101,3 +101,6 @@
 .essay-answer summary::-webkit-details-marker{display:none}
 .essay-answer-body{margin-top:10px}
 .essay-answer-body img{max-width:100%;border:1px solid var(--border);border-radius:8px;background:#fff;padding:6px}
+
+.ov{border-top:1.5px solid currentColor;padding-top:1px}
+.essay-orig{font-size:.9rem;color:var(--muted);margin:2px 0 6px}

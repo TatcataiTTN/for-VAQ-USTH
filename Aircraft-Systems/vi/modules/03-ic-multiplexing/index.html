@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5e3d99b9"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5e3d99b9"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
 <title>Hệ thống điện tử số & máy tính hàng không: Mạch tích hợp (IC) & Kỹ thuật dồn kênh</title>
 <meta name="description" content="Từ một cổng logic đơn lẻ (SSI) tới vi xử lý hàng triệu transistor (VLSI), quy mô tích hợp quyết định cách đóng gói, cách kiểm tra và cách sử dụng một linh kiện. Module này trình bày các mức tích hợp, kỹ thuật đóng gói IC, và các mạch MSI phổ biến nhất trên máy bay: bộ giải mã, bộ mã hoá và bộ dồn kênh (multiplexer)."/>
 </head>
@@ -117,9 +117,10 @@
 <div class="quiz"><script type="application/json">{"items": [{"q": "Một bộ dồn kênh 8-sang-1 (8-to-1 multiplexer) cần bao nhiêu đường chọn?", "opts": ["2", "3", "4"], "correct": 1, "explain": "2ⁿ=8 → n=3 đường chọn.", "src": ""}, {"q": "Một bộ giải mã (decoder) 3-sang-8 đường có bao nhiêu ngõ ra?", "opts": ["8", "6", "3"], "correct": 0, "explain": "Decoder n-sang-2ⁿ với n=3 → 2³=8 ngõ ra.", "src": ""}, {"q": "Một IC chứa khoảng 500 cổng logic thường được xếp vào quy mô tích hợp nào?", "opts": ["SSI", "LSI", "MSI"], "correct": 1, "explain": "Khoảng vài trăm tới ~10.000 cổng tương ứng LSI (theo phân loại dùng trong chương này).", "src": ""}, {"q": "Bộ giải dồn kênh (demultiplexer) thực hiện chức năng ngược lại với:", "opts": ["bộ so sánh (comparator)", "bộ dồn kênh (multiplexer)", "bộ mã hoá (encoder)"], "correct": 1, "explain": "Demux đưa 1 nguồn vào ra nhiều đường, ngược với chức năng dồn nhiều vào 1 của mux.", "src": ""}, {"q": "Một bộ mã hoá (encoder) có 8 đầu vào sẽ cho ra bao nhiêu bit mã nhị phân?", "opts": ["4", "3", "8"], "correct": 1, "explain": "log2(8)=3 bit đủ để mã hoá 8 trạng thái đầu vào.", "src": ""}, {"q": "Trong đóng gói IC, thuật ngữ 'DIL' là viết tắt của:", "opts": ["Direct Input Line", "Dual-In-Line", "Digital Integrated Logic"], "correct": 1, "explain": "DIL = Dual-In-Line, kiểu đóng gói hai hàng chân song song.", "src": ""}, {"q": "Mạch tạo/kiểm tra parity (parity generator/checker) thường được xây dựng chủ yếu từ:", "opts": ["các cổng AND", "các cổng NAND", "các cổng XOR nối tầng"], "correct": 2, "explain": "Chuỗi cổng XOR cho phép tính tổng modulo-2 của các bit, đúng nguyên lý tính parity.", "src": ""}, {"q": "Kiểu đóng gói IC nào được thiết kế cho lắp ráp dán bề mặt (surface-mount), không xuyên lỗ?", "opts": ["PGA", "DIP", "SOIC"], "correct": 2, "explain": "SOIC (Small Outline IC) là gói dán bề mặt điển hình.", "src": ""}, {"q": "Nếu fan-out của một cổng là 10, điều này có nghĩa là cổng có thể an toàn điều khiển tối đa bao nhiêu đầu vào chuẩn cùng họ?", "opts": ["5", "10", "20"], "correct": 1, "explain": "Định nghĩa fan-out chính là số tải đầu vào chuẩn tối đa mà ngõ ra có thể điều khiển.", "src": ""}, {"q": "Mạch so sánh (comparator) được dùng để:", "opts": ["lưu trữ dữ liệu nhị phân", "xác định số nào lớn hơn/bằng/nhỏ hơn giữa hai số nhị phân", "chuyển đổi nhị phân sang thập phân"], "correct": 1, "explain": "Comparator so sánh hai số nhị phân và đưa ra tín hiệu A>B, A=B hoặc A<B.", "src": ""}]}</script></div>
 <h2>✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)</h2>
 <p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 6 – Functions of Combinational Logic, Problems (p.374-376); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-10, A-11).</p>
-<p class='essay-intro'><i>Chương này của Floyd còn có nhiều câu về decoder/encoder/mux nhưng hầu hết yêu cầu đọc một sơ đồ cụ thể trong sách (không thể tái hiện chính xác bằng chữ mà không có hình). Một số câu khác (Problem 25) có sự không khớp giữa đề bài in trong sách và đáp án in ở phụ lục (nghi lỗi bản in Global Edition), nên đã CHỦ ĐỔNG loại bỏ thay vì đưa lên site một câu không chắc chắn. Vì vậy phần này chỉ có 3 câu (thay vì 6) nhưng cả 3 đều đã tự tính lại độc lập và khớp chính xác với ảnh đáp án gốc.</i></p>
+<p class='essay-intro'><i>Chương này của Floyd còn có nhiều câu về decoder/encoder/mux nhưng hầu hết yêu cầu đọc một sơ đồ cụ thể trong sách (không thể tái hiện chính xác bằng chữ mà không có hình). Một số câu khác (Problem 25) có sự không khớp giữa đề bài in trong sách và đáp án in ở phụ lục (nghi lỗi bản in Global Edition), và Problem 9 (chuỗi bit vào bộ cộng 4-bit) vì chưa thể tái tạo đáp án in bằng bất kỳ cách đọc thứ tự bit nào, nên đã CHỦ ĐỔNG loại bỏ thay vì đưa lên site một câu không chắc chắn. Vì vậy phần này chỉ có 3 câu (thay vì 6) nhưng cả 3 đều đã tự tính lại độc lập và khớp chính xác với ảnh đáp án gốc.</i></p>
 <div class="essay-item">
-  <p class="essay-q"><b>1.</b> Với mạch cộng đầy đủ (full-adder), xác định đầu ra ứng với mỗi bộ giá trị đầu vào sau:<br>(a) A = 0, B = 1, Cin = 0 &nbsp; (b) A = 1, B = 0, Cin = 1 &nbsp; (c) A = 0, B = 0, Cin = 0</p>
+  <p class="essay-q"><b>1.</b> Với mạch cộng đầy đủ (full-adder) ở Hình 6–4 của sách, xác định đầu ra ứng với mỗi bộ giá trị đầu vào sau:<br>(a) A = 0, B = 1, C<sub>in</sub> = 0 &nbsp; (b) A = 1, B = 0, C<sub>in</sub> = 1<br>(c) A = 0, B = 0, C<sub>in</sub> = 0</p>
+  <p class="essay-orig"><b>Original (EN):</b> For the full-adder of Figure 6–4, determine the outputs for each of the following inputs<br>(a) A = 0, B = 1, C<sub>in</sub> = 0 &nbsp; (b) A = 1, B = 0, C<sub>in</sub> = 1<br>(c) A = 0, B = 0, C<sub>in</sub> = 0</p>
   <p class="pill">Floyd Ch.6 · Problem 1</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q01.png" alt="Floyd Ch.6 · Problem 1" loading="lazy"/></div>
@@ -127,6 +128,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>3.</b> Xác định đầu ra của một mạch cộng đầy đủ (full-adder) ứng với mỗi bộ giá trị đầu vào sau:<br>(a) A = 1, B = 0, Cin = 0 &nbsp; (b) A = 0, B = 0, Cin = 1<br>(c) A = 0, B = 1, Cin = 1 &nbsp; (d) A = 1, B = 1, Cin = 1</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine the outputs of a full-adder for each of the following inputs:<br>(a) A = 1, B = 0, Cin = 0 &nbsp; (b) A = 0, B = 0, Cin = 1<br>(c) A = 0, B = 1, Cin = 1 &nbsp; (d) A = 1, B = 1, Cin = 1</p>
   <p class="pill">Floyd Ch.6 · Problem 3</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q03.png" alt="Floyd Ch.6 · Problem 3" loading="lazy"/></div>
@@ -134,6 +136,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>15.</b> Với mỗi cặp số nhị phân sau, xác định trạng thái đầu ra của bộ so sánh (comparator):<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000</p>
+  <p class="essay-orig"><b>Original (EN):</b> For each set of binary numbers, determine the output states for the comparator:<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000</p>
   <p class="pill">Floyd Ch.6 · Problem 15</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q15.png" alt="Floyd Ch.6 · Problem 15" loading="lazy"/></div>
@@ -143,5 +146,5 @@
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5e3d99b9"></script>
-<script src="../../../_shared/deck.js?v=5e3d99b9"></script><script src="../../../_shared/quiz.js?v=5e3d99b9"></script></body></html>
+<script src="../../../_shared/theme.js?v=5d16e309"></script>
+<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>

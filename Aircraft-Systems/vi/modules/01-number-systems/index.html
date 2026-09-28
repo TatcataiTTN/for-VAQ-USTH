@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5e3d99b9"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5e3d99b9"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
 <title>Hệ thống điện tử số & máy tính hàng không: Hệ đếm trong hệ thống số hàng không</title>
 <meta name="description" content="Mọi dữ liệu bên trong máy tính hàng không (FMGC, FWC, SDAC…) đều được xử lý ở dạng nhị phân, nhưng con người cần các hệ đếm trung gian (bát phân, thập lục phân, BCD) để đọc/nhập dữ liệu thuận tiện hơn. Module này xây lại 4 hệ đếm cốt lõi và ứng dụng thực tế của từng hệ trên Airbus A320."/>
 </head>
@@ -120,6 +120,7 @@
 
 <div class="essay-item">
   <p class="essay-q"><b>7.</b> Đổi mỗi số nhị phân sau sang thập phân:<br>(a) 110011.11 &nbsp; (b) 101010.01 &nbsp; (c) 1000001.111<br>(d) 1111000.101 &nbsp; (e) 1011100.10101 &nbsp; (f) 1110001.0001<br>(g) 1011010.1010 &nbsp; (h) 1111111.11111</p>
+  <p class="essay-orig"><b>Original (EN):</b> Convert each binary number to decimal:<br>(a) 110011.11 &nbsp; (b) 101010.01 &nbsp; (c) 1000001.111<br>(d) 1111000.101 &nbsp; (e) 1011100.10101 &nbsp; (f) 1110001.0001<br>(g) 1011010.1010 &nbsp; (h) 1111111.11111</p>
   <p class="pill">Floyd Ch.2 · Problem 7</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q07.png" alt="Floyd Ch.2 · Problem 7" loading="lazy"/></div>
@@ -127,6 +128,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>13.</b> Đổi mỗi số thập phân sau sang nhị phân bằng phương pháp chia liên tiếp cho 2:<br>(a) 13 &nbsp; (b) 17 &nbsp; (c) 23 &nbsp; (d) 30<br>(e) 35 &nbsp; (f) 40 &nbsp; (g) 49 &nbsp; (h) 60</p>
+  <p class="essay-orig"><b>Original (EN):</b> Convert each decimal number to binary using repeated division by 2:<br>(a) 13 &nbsp; (b) 17 &nbsp; (c) 23 &nbsp; (d) 30<br>(e) 35 &nbsp; (f) 40 &nbsp; (g) 49 &nbsp; (h) 60</p>
   <p class="pill">Floyd Ch.2 · Problem 13</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q13.png" alt="Floyd Ch.2 · Problem 13" loading="lazy"/></div>
@@ -134,6 +136,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>21.</b> Xác định bù một (1's complement) của mỗi số nhị phân sau:<br>(a) 100 &nbsp; (b) 111 &nbsp; (c) 1100<br>(d) 10111011 &nbsp; (e) 1001010 &nbsp; (f) 10101010</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine the 1's complement of each binary number:<br>(a) 100 &nbsp; (b) 111 &nbsp; (c) 1100<br>(d) 10111011 &nbsp; (e) 1001010 &nbsp; (f) 10101010</p>
   <p class="pill">Floyd Ch.2 · Problem 21</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q21.png" alt="Floyd Ch.2 · Problem 21" loading="lazy"/></div>
@@ -141,6 +144,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>25.</b> Viết mỗi số thập phân sau dưới dạng số 8-bit ở dạng bù hai (2's complement):<br>(a) +12 &nbsp; (b) -68 &nbsp; (c) +101 &nbsp; (d) -125</p>
+  <p class="essay-orig"><b>Original (EN):</b> Express each decimal number as an 8-bit number in the 2’s complement form:<br>(a) +12 &nbsp; (b) −68 &nbsp; (c) +101 &nbsp; (d) −125</p>
   <p class="pill">Floyd Ch.2 · Problem 25</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q25.png" alt="Floyd Ch.2 · Problem 25" loading="lazy"/></div>
@@ -148,6 +152,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>49.</b> Đổi các số thập phân sau sang BCD:<br>(a) 104 &nbsp; (b) 128 &nbsp; (c) 132 &nbsp; (d) 150 &nbsp; (e) 186<br>(f) 210 &nbsp; (g) 359 &nbsp; (h) 547 &nbsp; (i) 1051</p>
+  <p class="essay-orig"><b>Original (EN):</b> Convert the following decimal numbers to BCD:<br>(a) 104 &nbsp; (b) 128 &nbsp; (c) 132 &nbsp; (d) 150 &nbsp; (e) 186<br>(f) 210 &nbsp; (g) 359 &nbsp; (h) 547 &nbsp; (i) 1051</p>
   <p class="pill">Floyd Ch.2 · Problem 49</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q49.png" alt="Floyd Ch.2 · Problem 49" loading="lazy"/></div>
@@ -155,6 +160,7 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>63.</b> Xác định mã nào trong các mã kiểm tra chẵn lẻ (even parity) sau bị lỗi:<br>(a) 100110010 &nbsp; (b) 011101010 &nbsp; (c) 10111111010001010</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine which of the following even parity codes are in error:<br>(a) 100110010 &nbsp; (b) 011101010 &nbsp; (c) 10111111010001010</p>
   <p class="pill">Floyd Ch.2 · Problem 63</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q63.png" alt="Floyd Ch.2 · Problem 63" loading="lazy"/></div>
@@ -164,5 +170,5 @@
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5e3d99b9"></script>
-<script src="../../../_shared/deck.js?v=5e3d99b9"></script><script src="../../../_shared/quiz.js?v=5e3d99b9"></script></body></html>
+<script src="../../../_shared/theme.js?v=5d16e309"></script>
+<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>

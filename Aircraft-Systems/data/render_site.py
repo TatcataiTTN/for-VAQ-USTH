@@ -45,7 +45,7 @@ L = {
     "part_label": "PHẦN", "fs": "⛶ Toàn màn hình", "prev": "◀ Trước", "next": "Sau ▶",
     "formula_box": "Công thức", "history": "history", "case": "case", "warn": "warn",
     "essay_title": "✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)",
-    "essay_intro": "Các câu hỏi tự luận dưới đây trích nguyên văn từ phần \"Problems\" cuối chương sách Floyd (chỉ chọn câu số lẻ, vì sách chỉ in đáp án cho câu số lẻ ở phụ lục cuối sách). Câu hỏi được gõ lại bằng tay; đáp án luôn là ẢNH CHỤP THẬT từ đúng trang phụ lục đó, không gõ lại, để bạn tự đối chiếu.",
+    "essay_intro": "Các câu hỏi tự luận dưới đây trích từ phần \"Problems\" cuối chương sách Floyd (chỉ chọn câu số lẻ, vì sách chỉ in đáp án cho câu số lẻ ở phụ lục cuối sách). Mỗi câu có bản dịch tiếng Việt kèm nguyên văn tiếng Anh của sách; những câu nhắc \"Figure\" cần xem hình đó trong sách. Đáp án luôn là ẢNH CHỤP THẬT từ đúng trang phụ lục, không gõ lại, để bạn tự đối chiếu.",
     "essay_reveal": "👁️ Xem đáp án gốc trong sách",
     "quiz_title": "✅ Quiz tự kiểm tra", "quiz_tooley": "Sách 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (câu MCQ cuối chương, đã tính lại để xác minh đáp án)", "quiz_floyd": "Sách 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test cuối chương, đối chiếu đúng đáp án in trong sách)", "quiz_gen": "Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)",
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
@@ -69,7 +69,7 @@ L = {
     "part_label": "PART", "fs": "⛶ Fullscreen", "prev": "◀ Prev", "next": "Next ▶",
     "formula_box": "Formula", "history": "history", "case": "case", "warn": "warn",
     "essay_title": "✍️ Free-response questions (source: Floyd, Digital Fundamentals)",
-    "essay_intro": "The free-response questions below are copied verbatim from the \"Problems\" section at the end of the relevant Floyd chapter (odd-numbered only, since the book only prints answers for odd-numbered problems in its back-of-book appendix). Questions are retyped by hand; the answer is always a REAL PHOTOGRAPH of that exact appendix page, never retyped, so you can check it yourself.",
+    "essay_intro": "The free-response questions below are copied verbatim from the \"Problems\" section at the end of the relevant Floyd chapter (odd-numbered only, since the book only prints answers for odd-numbered problems in its back-of-book appendix). Questions are retyped by hand (overlines mark complements, as in the book); a few mention a \"Figure\" that you need to look up in the book. The answer is always a REAL PHOTOGRAPH of that exact appendix page, never retyped, so you can check it yourself.",
     "essay_reveal": "👁️ Show the book's original answer",
     "quiz_title": "✅ Self-check quiz", "quiz_tooley": "Book 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (end-of-chapter MCQs, independently recomputed to verify each answer)", "quiz_floyd": "Book 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test, cross-checked against the book’s own printed answer key)", "quiz_gen": "Additional practice questions (AI-authored in the same style, answers self-verified by computation)",
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
@@ -273,6 +273,18 @@ def build_quiz_section(lang, slug, title, qkey):
 <div class="quiz"><script type="application/json">{js}</script></div>"""
 
 
+def ovl(text):
+    out, stack, i = [], [], 0
+    while i < len(text):
+        if text.startswith("~{", i):
+            out.append('<span class="ov">'); stack.append(1); i += 2
+        elif text[i] == "}" and stack:
+            out.append("</span>"); stack.pop(); i += 1
+        else:
+            out.append(text[i]); i += 1
+    return "".join(out)
+
+
 def build_essay_section(lang, slug):
     entry = ESSAY.get(slug)
     if not entry:
@@ -286,10 +298,14 @@ def build_essay_section(lang, slug):
         extra_note = f"<p class='essay-intro'><i>{entry['note_en']}</i></p>"
     rows = []
     for it in entry["items"]:
-        qtext = it["q_vi"] if lang == "vi" else it["q_en"]
+        qtext = ovl(it["q_vi"] if lang == "vi" else it["q_en"])
+        orig = ""
+        if lang == "vi":
+            orig = f'<p class="essay-orig"><b>Original (EN):</b> {ovl(it["q_en"])}</p>'
         img_src = "../../../assets/figures/" + it["img"]
         rows.append(f"""<div class="essay-item">
   <p class="essay-q"><b>{it['num']}.</b> {qtext}</p>
+  {orig}
   <p class="pill">{it['src']}</p>
   <details class="essay-answer"><summary>{t['essay_reveal']}</summary>
     <div class="essay-answer-body"><img src="{img_src}" alt="{it['src']}" loading="lazy"/></div>

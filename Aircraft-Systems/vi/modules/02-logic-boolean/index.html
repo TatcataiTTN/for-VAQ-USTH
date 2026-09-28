@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5e3d99b9"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5e3d99b9"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
 <title>Hệ thống điện tử số & máy tính hàng không: Cổng logic & Đại số Boolean</title>
 <meta name="description" content="Toàn bộ hệ thống số trên máy bay, từ cảnh báo cửa càng đáp cho tới điều khiển APU, đều được xây từ các cổng logic cơ bản kết hợp theo quy tắc đại số Boolean. Module này đi từ cổng logic đơn lẻ tới mạch tổ hợp thực tế và các họ linh kiện logic dùng trên máy bay."/>
 </head>
@@ -120,6 +120,7 @@
 
 <div class="essay-item">
   <p class="essay-q"><b>25.</b> Cổng exclusive-OR (XOR) khác cổng OR như thế nào về mặt hoạt động logic?</p>
+  <p class="essay-orig"><b>Original (EN):</b> How does an exclusive-OR gate differ from an OR gate in its logical operation?</p>
   <p class="pill">Floyd Ch.3 · Problem 25</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q25.png" alt="Floyd Ch.3 · Problem 25" loading="lazy"/></div>
@@ -127,34 +128,39 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>1.</b> Dùng ký hiệu Boolean, viết một biểu thức có giá trị 0 CHỈ KHI tất cả các biến (A, B, C, D) đều bằng 0.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Using Boolean notation, write an expression that is a 0 only when all of its variables (A, B, C, and D) are 0s.</p>
   <p class="pill">Floyd Ch.4 · Problem 1</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q01.png" alt="Floyd Ch.4 · Problem 1" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
-  <p class="essay-q"><b>5.</b> Tìm giá trị của các biến sao cho mỗi số hạng TÍCH (product term) bằng 1 và mỗi số hạng TỔNG (sum term) bằng 0:<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) A′B′C &nbsp; (d) A′ + B′ + C<br>(e) A + B′ + C′ &nbsp; (f) A′ + B′ + C′</p>
+  <p class="essay-q"><b>5.</b> Tìm giá trị của các biến sao cho mỗi số hạng TÍCH bằng 1 và mỗi số hạng TỔNG bằng 0:<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) <span class="ov">A</span><span class="ov">B</span>C &nbsp; (d) <span class="ov">A</span> + <span class="ov">B</span> + C<br>(e) A + <span class="ov">B</span> + <span class="ov">C</span> &nbsp; (f) <span class="ov">A</span> + <span class="ov">B</span> + <span class="ov">C</span></p>
+  <p class="essay-orig"><b>Original (EN):</b> Find the values of the variables that make each product term 1 and each sum term 0.<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) <span class="ov">A</span><span class="ov">B</span>C &nbsp; (d) <span class="ov">A</span> + <span class="ov">B</span> + C<br>(e) A + <span class="ov">B</span> + <span class="ov">C</span> &nbsp; (f) <span class="ov">A</span> + <span class="ov">B</span> + <span class="ov">C</span></p>
   <p class="pill">Floyd Ch.4 · Problem 5</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q05.png" alt="Floyd Ch.4 · Problem 5" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
-  <p class="essay-q"><b>7.</b> Xác định đúng tên luật đại số Boole làm cơ sở cho mỗi đẳng thức sau:<br>(a) A + AB + ABC + ABCD = ABCD + ABC + AB + A<br>(b) A + AB + ABC + ABCD = DCBA + CBA + BA + A<br>(c) AB(CD + C′D′ + EF + E′F′) = ABCD + ABC′D′ + ABEF + ABE′F′</p>
+  <p class="essay-q"><b>7.</b> Xác định luật đại số Boole làm cơ sở cho mỗi đẳng thức sau:<br>(a) A + AB + ABC + <span class="ov">ABCD</span> = <span class="ov">ABCD</span> + ABC + AB + A<br>(b) A + <span class="ov">AB</span> + ABC + <span class="ov">ABCD</span> = <span class="ov">DCBA</span> + CBA + <span class="ov">BA</span> + A<br>(c) AB(CD + <span class="ov">CD</span> + EF + <span class="ov">EF</span>) = ABCD + AB<span class="ov">CD</span> + ABEF + AB<span class="ov">EF</span></p>
+  <p class="essay-orig"><b>Original (EN):</b> Identify the law of Boolean algebra upon which each of the following equalities is based:<br>(a) A + AB + ABC + <span class="ov">ABCD</span> = <span class="ov">ABCD</span> + ABC + AB + A<br>(b) A + <span class="ov">AB</span> + ABC + <span class="ov">ABCD</span> = <span class="ov">DCBA</span> + CBA + <span class="ov">BA</span> + A<br>(c) AB(CD + <span class="ov">CD</span> + EF + <span class="ov">EF</span>) = ABCD + AB<span class="ov">CD</span> + ABEF + AB<span class="ov">EF</span></p>
   <p class="pill">Floyd Ch.4 · Problem 7</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q07.png" alt="Floyd Ch.4 · Problem 7" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
-  <p class="essay-q"><b>9.</b> Áp dụng định lý De Morgan cho mỗi biểu thức sau:<br>(a) (A + B)′ &nbsp; (b) (A′B)′ &nbsp; (c) (A + B + C)′ &nbsp; (d) (ABC)′<br>(e) (A(B + C))′ &nbsp; (f) (ABCD)′ &nbsp; (g) (AB + CD)′ &nbsp; (h) ((A + B)(C + D))′</p>
+  <p class="essay-q"><b>9.</b> Áp dụng các định lý De Morgan cho mỗi biểu thức sau:<br>(a) <span class="ov">A + <span class="ov">B</span></span> &nbsp; (b) <span class="ov"><span class="ov">A</span>B</span> &nbsp; (c) <span class="ov">A + B + C</span> &nbsp; (d) <span class="ov">ABC</span><br>(e) <span class="ov">A(B + C)</span> &nbsp; (f) <span class="ov">AB</span> + <span class="ov">CD</span> &nbsp; (g) <span class="ov">AB + CD</span> &nbsp; (h) <span class="ov">(A + <span class="ov">B</span>)(<span class="ov">C</span> + D)</span></p>
+  <p class="essay-orig"><b>Original (EN):</b> Apply DeMorgan's theorems to each expression:<br>(a) <span class="ov">A + <span class="ov">B</span></span> &nbsp; (b) <span class="ov"><span class="ov">A</span>B</span> &nbsp; (c) <span class="ov">A + B + C</span> &nbsp; (d) <span class="ov">ABC</span><br>(e) <span class="ov">A(B + C)</span> &nbsp; (f) <span class="ov">AB</span> + <span class="ov">CD</span> &nbsp; (g) <span class="ov">AB + CD</span> &nbsp; (h) <span class="ov">(A + <span class="ov">B</span>)(<span class="ov">C</span> + D)</span></p>
   <p class="pill">Floyd Ch.4 · Problem 9</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q09.png" alt="Floyd Ch.4 · Problem 9" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
-  <p class="essay-q"><b>19.</b> Dùng kỹ thuật đại số Boole, rút gọn các biểu thức sau đến mức đơn giản nhất có thể:<br>(a) A(A + B) &nbsp; (b) A(A′ + AB) &nbsp; (c) BC + B′C<br>(d) A(A + A′B) &nbsp; (e) AB′C + A′BC + A′B′C</p>
+  <p class="essay-q"><b>19.</b> Dùng các kỹ thuật đại số Boole, rút gọn các biểu thức sau đến mức tối đa có thể:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
+  <p class="essay-orig"><b>Original (EN):</b> Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
   <p class="pill">Floyd Ch.4 · Problem 19</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q19.png" alt="Floyd Ch.4 · Problem 19" loading="lazy"/></div>
@@ -164,5 +170,5 @@
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5e3d99b9"></script>
-<script src="../../../_shared/deck.js?v=5e3d99b9"></script><script src="../../../_shared/quiz.js?v=5e3d99b9"></script></body></html>
+<script src="../../../_shared/theme.js?v=5d16e309"></script>
+<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>

@@ -202,3 +202,9 @@ Ngày khởi tạo: 2026-09-28.
 - Data explorer tương tác — không áp dụng cho môn này (không có bộ dữ liệu dạng bản ghi từng cá thể).
 - Bản dịch tiếng Trung (zh) — KHÔNG nằm trong yêu cầu ban đầu, không làm.
 - Notebook riêng theo từng ngôn ngữ — chưa tách, xem Epic 6.
+
+### Epic 12 addendum: language and verbatim fixes
+- [x] EN site no longer mixes Vietnamese into quiz options or explanations (overlay files, commit 6a6777c).
+- [x] Essay questions re-checked against the book at 300-600 dpi; Ch.4 Q7, Q9 (was mis-transcribed, (f)-(h)) and Ch.11 Q5, Q21, Ch.6 Q1 now match the book's English wording; overlines are real (`~{...}` markup rendered as `.ov`); VI pages also show the original English line.
+- [x] Excluded after verification: Ch.6 Q9 (printed answer Σ1..Σ5 not reproducible under any bit-order/LSB-MSB reading; all 8 readings tested), Ch.4 Q21 (ambiguous overlines in (e)/(b) and printed (b) differs from independent simplification B'C').
+- [ ] Waveform/figure problems (Ch.3, most of Ch.6) still not added: they need question figures (qimg support) and programmatic waveform checks.
