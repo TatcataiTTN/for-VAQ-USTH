@@ -317,7 +317,7 @@ def main():
     for lang in ("vi", "en"):
         home_path = os.path.join(ROOT, lang, "index.html")
         with open(home_path, "w", encoding="utf-8") as f:
-            f.write(build_home_page(lang, prefix=""))
+            f.write(build_home_page(lang, prefix="../"))
         for mod in MODULES:
             mod_dir = os.path.join(ROOT, lang, "modules", mod["slug"])
             os.makedirs(mod_dir, exist_ok=True)
