@@ -2,7 +2,24 @@
 
 Ngày khởi tạo: 2026-09-28.
 
-## Epic 11 — Giải thích "cho người mới bắt đầu" dưới từng slide + ảnh gốc bài giảng 🟡 (2026-09-28)
+## Epic 12 — Câu hỏi tự luận (Problems) từ Floyd, đáp án là ảnh chụp thật 🟡 (2026-09-28)
+- [x] **Khảo sát cấu trúc 2 sách**: Tooley (Aircraft Digital Electronic and Computer Systems) chỉ có mục
+  "Multiple-choice questions" cuối mỗi chương, KHÔNG có phần tự luận riêng (đã kiểm tra mục lục gốc, xác
+  nhận qua `pdftotext`). Toàn bộ câu tự luận trong Epic này do đó lấy từ Floyd, Digital Fundamentals, phần
+  "Problems" cuối chương, chỉ chọn câu SỐ LẺ vì sách chỉ in đáp án cho câu lẻ ở phụ lục "Answers to
+  Odd-Numbered Problems" cuối sách.
+- [x] **Module 01 (Floyd Ch.2, 6 câu)**: Problem 7, 13, 21, 25, 49, 63. Mỗi câu đã tính lại độc lập bằng
+  tay, đối chiếu ảnh chụp thật trang phụ lục (p.A-1, A-2) ở DPI 400 trước khi đưa vào site.
+  Phát hiện quan trọng: **Problem 5(c)** (101₂ đổi thập phân) có lỗi in ấn thật trong sách, đáp án in là
+  "3" nhưng giá trị đúng là "5": đã loại bỏ câu này khỏi danh sách, không dùng để tránh gây hiểu nhầm.
+- [x] Hạ tầng mới: `data/essay_questions.py` (câu hỏi gõ tay bằng HTML, song ngữ) + `build_essay_section()`
+  trong `render_site.py`, hiển thị dưới quiz mỗi trang module. Mỗi câu có khung `<details>` "Xem đáp án gốc
+  trong sách", mở ra hiện ẢNH CHỤP THẬT (không gõ lại) từ đúng trang phụ lục, crop tại
+  `OCR_output/exercise_pages/Floyd/ch02_number_systems_essay/answers/`, copy vào `assets/figures/essay_floyd_*`.
+- ⚠️ **CHƯA làm**: Module 02 (Floyd Ch.3+4), Module 03 (Floyd Ch.6), Module 04 (Floyd Ch.11) — cùng quy
+  trình, mỗi module ~6 câu số lẻ đã xác minh đáp án qua ảnh gốc.
+
+## Epic 11 — Giải thích "cho người mới bắt đầu" dưới từng slide + ảnh gốc bài giảng 🟢 (2026-09-28)
 - [x] **Module 01 (pilot, chờ duyệt phong cách)**: cả 50 slide nội dung × 2 ngôn ngữ đều có khung
   `<details>` thu gọn "Giải thích cho người mới bắt đầu" (nguồn: `data/explain01/{vi,en}_p0..p4.py`,
   gộp vào `slides_01.py` qua trường `explain`).

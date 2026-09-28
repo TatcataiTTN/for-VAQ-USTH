@@ -2,6 +2,7 @@
 import json, os, html, importlib
 
 from module_content import MODULES
+from essay_questions import ESSAY
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # .../Aircraft-Systems
 
@@ -43,6 +44,9 @@ L = {
     "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
     "part_label": "PHẦN", "fs": "⛶ Toàn màn hình", "prev": "◀ Trước", "next": "Sau ▶",
     "formula_box": "Công thức", "history": "history", "case": "case", "warn": "warn",
+    "essay_title": "✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)",
+    "essay_intro": "Các câu hỏi tự luận dưới đây trích nguyên văn từ phần \"Problems\" cuối chương sách Floyd (chỉ chọn câu số lẻ, vì sách chỉ in đáp án cho câu số lẻ ở phụ lục cuối sách). Câu hỏi được gõ lại bằng tay; đáp án luôn là ẢNH CHỤP THẬT từ đúng trang phụ lục đó, không gõ lại, để bạn tự đối chiếu.",
+    "essay_reveal": "👁️ Xem đáp án gốc trong sách",
     "quiz_title": "✅ Quiz tự kiểm tra", "quiz_tooley": "Sách 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (câu MCQ cuối chương, đã tính lại để xác minh đáp án)", "quiz_floyd": "Sách 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test cuối chương, đối chiếu đúng đáp án in trong sách)", "quiz_gen": "Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)",
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
@@ -64,6 +68,9 @@ L = {
     "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
     "part_label": "PART", "fs": "⛶ Fullscreen", "prev": "◀ Prev", "next": "Next ▶",
     "formula_box": "Formula", "history": "history", "case": "case", "warn": "warn",
+    "essay_title": "✍️ Free-response questions (source: Floyd, Digital Fundamentals)",
+    "essay_intro": "The free-response questions below are copied verbatim from the \"Problems\" section at the end of the relevant Floyd chapter (odd-numbered only, since the book only prints answers for odd-numbered problems in its back-of-book appendix). Questions are retyped by hand; the answer is always a REAL PHOTOGRAPH of that exact appendix page, never retyped, so you can check it yourself.",
+    "essay_reveal": "👁️ Show the book's original answer",
     "quiz_title": "✅ Self-check quiz", "quiz_tooley": "Book 1: Mike Tooley, Aircraft Digital Electronic and Computer Systems (end-of-chapter MCQs, independently recomputed to verify each answer)", "quiz_floyd": "Book 2: Thomas Floyd, Digital Fundamentals (True/False Quiz + Self-Test, cross-checked against the book’s own printed answer key)", "quiz_gen": "Additional practice questions (AI-authored in the same style, answers self-verified by computation)",
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
@@ -258,6 +265,29 @@ def build_quiz_section(lang, slug, title, qkey):
     return f"""<h3>{title}</h3>
 <div class="quiz"><script type="application/json">{js}</script></div>"""
 
+
+def build_essay_section(lang, slug):
+    entry = ESSAY.get(slug)
+    if not entry:
+        return ""
+    t = L[lang]
+    src_note = entry["src_book"] if lang == "vi" else entry["src_book_en"]
+    rows = []
+    for it in entry["items"]:
+        qtext = it["q_vi"] if lang == "vi" else it["q_en"]
+        img_src = "../../../assets/figures/" + it["img"]
+        rows.append(f"""<div class="essay-item">
+  <p class="essay-q"><b>{it['num']}.</b> {qtext}</p>
+  <p class="pill">{it['src']}</p>
+  <details class="essay-answer"><summary>{t['essay_reveal']}</summary>
+    <div class="essay-answer-body"><img src="{img_src}" alt="{it['src']}" loading="lazy"/></div>
+  </details>
+</div>""")
+    items_html = "\n".join(rows)
+    return f"""<h2>{t['essay_title']}</h2>
+<p class="essay-intro">{src_note}</p>
+{items_html}"""
+
 def build_module_page(lang, mod, prefix):
     t = L[lang]
     d = mod[lang]
@@ -265,6 +295,7 @@ def build_module_page(lang, mod, prefix):
     quiz_tooley = build_quiz_section(lang, mod["slug"], t["quiz_tooley"], "tooley")
     quiz_floyd = build_quiz_section(lang, mod["slug"], t["quiz_floyd"], "floyd")
     quiz_gen = build_quiz_section(lang, mod["slug"], t["quiz_gen"], "generated")
+    essay_section = build_essay_section(lang, mod["slug"])
     nb_name = f"{mod['num']}_{mod['slug'].split('-',1)[1]}.ipynb"
     mod_idx = MODULES.index(mod)
     mrow = MAPPING_ROWS[mod_idx]
@@ -292,6 +323,7 @@ def build_module_page(lang, mod, prefix):
 {quiz_tooley}
 {quiz_floyd}
 {quiz_gen}
+{essay_section}
 </div>"""
     extra_css = f'<link rel="stylesheet" href="{prefix}_shared/deck.css?v={VER}"/>'
     html_out = render_page(lang, prefix, body, extra_css=extra_css, title_suffix=d["title"], description=d["intro"])

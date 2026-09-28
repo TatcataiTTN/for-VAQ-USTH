@@ -91,3 +91,13 @@
 .mdeck-slide .slide-fig figcaption{font-size:.55em}
 .mdeck:fullscreen .mdeck-slide,.mdeck:-webkit-full-screen .mdeck-slide{max-width:1200px}
 .mdeck:fullscreen .slide-fig img,.mdeck:-webkit-full-screen .slide-fig img{max-height:42vh}
+
+/* Cau hoi tu luan: cau hoi go tay bang HTML, dap an la anh chup that tu sach */
+.essay-item{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:12px 0;background:var(--panel)}
+.essay-q{line-height:1.7}
+.essay-intro{font-size:.88rem;color:var(--muted);margin:6px 0 14px}
+.essay-answer{margin-top:10px;border-top:1px dashed var(--border);padding-top:8px}
+.essay-answer summary{cursor:pointer;font-weight:700;font-size:.88rem;color:var(--accent);list-style:none}
+.essay-answer summary::-webkit-details-marker{display:none}
+.essay-answer-body{margin-top:10px}
+.essay-answer-body img{max-width:100%;border:1px solid var(--border);border-radius:8px;background:#fff;padding:6px}
