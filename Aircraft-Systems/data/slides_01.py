@@ -226,7 +226,7 @@ SLIDES = {
    },
    {
     "title": "Ví dụ từng bước: 10.000 ft biểu diễn nhị phân 16-bit",
-    "body": "<p>10.000 (thập phân) → nhị phân: 10000×2=... (dùng phép chia liên tiếp đã học ở Phần 2) → kết quả 0010011100010000₂ (16-bit, đệm 0 ở đầu). Đây chính là dữ liệu thô mà FMGC xử lý nội bộ.</p>",
+    "body": "<p>10.000 (thập phân) → nhị phân bằng phép chia liên tiếp cho 2 đã học ở Phần 2: 10000, 5000, 2500, 1250, 625, 312, 156, 78, 39, 19, 9, 4, 2, 1, 0. Đọc số dư từ dưới lên và đệm 0 ở đầu cho đủ 16 bit → <b>0010011100010000₂</b>. Đây chính là dữ liệu thô mà FMGC xử lý nội bộ.</p>",
     "explain": "<p>Đây là bài tổng hợp dùng lại phép chia liên tiếp cho 2 của Phần 2: đổi 10000 (feet) sang nhị phân. Kết quả 16 bit là 0010011100010000, đã đệm số 0 ở đầu cho đủ 16 bit vì thanh ghi máy tính hàng không thường có độ rộng cố định là bội số của 8.</p><p>Cách kiểm tra nhanh bằng hex: nhóm 4 bit được 0010 | 0111 | 0001 | 0000, tức 2710₁₆, và 2710₁₆ = 2×4096 + 7×256 + 1×16 = 10000. Chuỗi bit này là dữ liệu thô mà FMGC lưu và tính bên trong, khác hẳn con số 10000 quen mắt trên màn hình, vốn đã được mã hoá lại sang BCD trước khi hiển thị.</p>"
    },
    {
@@ -496,7 +496,7 @@ SLIDES = {
    },
    {
     "title": "Worked example: 10,000 ft as a 16-bit binary value",
-    "body": "<p>10,000 (decimal) → binary via repeated division (the method learned in Part 2) → result 0010011100010000₂ (16 bits, zero-padded). This is the raw data the FMGC processes internally.</p>",
+    "body": "<p>10,000 (decimal) → binary using the repeated-division-by-2 method learned in Part 2: 10000, 5000, 2500, 1250, 625, 312, 156, 78, 39, 19, 9, 4, 2, 1, 0. Reading the remainders bottom-up and zero-padding to 16 bits gives <b>0010011100010000₂</b>. This is the raw data the FMGC processes internally.</p>",
     "explain": "<p>This exercise reuses the repeated division by 2 from Part 2: convert 10,000 (feet) to binary. The 16-bit result is 0010011100010000, zero-padded at the front because aircraft computer registers usually have fixed widths that are multiples of 8.</p><p>A quick hex check: grouping in 4s gives 0010 | 0111 | 0001 | 0000, which is 2710₁₆, and 2710₁₆ = 2×4096 + 7×256 + 1×16 = 10,000. This bit string is the raw data the FMGC stores and computes with, quite unlike the familiar 10,000 on the display, which was re-encoded to BCD before being shown.</p>"
    },
    {
