@@ -11,8 +11,17 @@ Ngày khởi tạo: 2026-09-28.
   hex, bát phân, BCD), sơ đồ chuyển đổi 4 hệ đếm, mạch half adder. Gắn vào 8 slide phù hợp qua trường `img`,
   bấm vào ảnh để mở bản đầy đủ.
 - [x] `check_links.py` nay nhận cả thuộc tính dùng dấu nháy đơn (trước đó bỏ sót ảnh mới): 110 → 142 link, 0 lỗi.
-- ⚠️ **CHƯA làm**: Module 02, 03, 04 (cần duyệt phong cách Module 01 trước). Ảnh gốc của 3 bài giảng còn lại
-  chưa trích. Một vài `body` cũ của Module 01 còn câu lủng củng (ví dụ slide "10.000 ft" có đoạn "10000×2=...").
+- [x] Sau khi duyệt Module 01: deck tự co giãn cỡ chữ (`_shared/deck.js` hàm `fit()`), cả ở chế độ xem
+  thường lẫn toàn màn hình, co nhỏ khi mở khung giải thích. Thêm cache-busting theo hash nội dung cho
+  mọi file `_shared/*.css|js` (`render_site.py` biến `VER`) để tránh trình duyệt giữ bản cache cũ.
+- [x] **Module 02 (Cổng logic & Đại số Boolean)**: cả 50 slide nội dung × 2 ngôn ngữ có khung giải thích
+  (nguồn: `data/explain02/{vi,en}_p0..p4.py`, gộp vào `slides_02.py`). Trích 8 hình gốc từ
+  `logic circuit_version 2026.pdf` vào `assets/figures/logic_*`: 6 infographic "Applications of ... gate
+  in A320" (AND, NOT, NAND, XOR, OR, tổng quan 6 cổng), 1 infographic ứng dụng đại số Boolean trong A320,
+  1 sơ đồ tương đương NAND = Negative-OR minh hoạ De Morgan (crop riêng từ trang 51, bỏ phần chữ lý thuyết).
+- ⚠️ **CHƯA làm**: Module 03, 04. Ảnh gốc của 2 bài giảng còn lại (integrated circuit and multiplexing,
+  Basic computer structure and microprocessor) chưa trích. Một vài `body` cũ của Module 01 còn câu lủng
+  củng (ví dụ slide "10.000 ft" có đoạn "10000×2=...").
 
 ## Epic 10 — Theme màu, giải thích chi tiết ẩn, chuẩn văn phong 🟢 (2026-09-28)
 - [x] **Theme mặc định đổi thành SÁNG (light) thật sự**, không còn tự động chuyển tối theo hệ điều hành
