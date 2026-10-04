@@ -1,0 +1,271 @@
+{
+ "tooley": [
+  {
+   "q": "Một bus hỗ trợ truyền dữ liệu theo cả hai chiều được gọi là:",
+   "opts": [
+    "bus không đồng bộ (asynchronous)",
+    "bus hai chiều (bidirectional)",
+    "bus vạn năng (universal)"
+   ],
+   "correct": 1,
+   "explain": "Bus truyền được cả 2 chiều gọi là bidirectional (vd ARINC 629, AFDX, MIL-STD-1553); riêng ARINC 429 chỉ truyền 1 chiều (unidirectional).",
+   "src": "Tooley Ch.4 Q1"
+  },
+  {
+   "q": "Ưu điểm chính của việc dùng bus nối tiếp (serial bus) trên máy bay là:",
+   "opts": [
+    "giảm kích thước và khối lượng dây dẫn",
+    "hỗ trợ tốc độ dữ liệu cao nhất có thể",
+    "không cần mạch chuyển đổi dữ liệu"
+   ],
+   "correct": 0,
+   "explain": "Bus nối tiếp chỉ cần 1-2 đôi dây dẫn thay vì hàng chục dây song song, giảm mạnh khối lượng và không gian lắp đặt, đúng như lý do số 1 nêu ở slide bài giảng (giảm dây, giảm khối lượng).",
+   "src": "Tooley Ch.4 Q2"
+  },
+  {
+   "q": "Thiết bị nào dùng để giảm thiểu phản xạ tín hiệu (reflections) trên dây bus?",
+   "opts": [
+    "tấm nối (coupler panel)",
+    "cáp xoắn đôi có vỏ bọc (shielded twisted pair)",
+    "điện trở đầu cuối bus (bus terminator)"
+   ],
+   "correct": 2,
+   "explain": "Điện trở đầu cuối (terminator, vd 78Ω ở 2 đầu bus ARINC 629 theo đúng slide bài giảng) hấp thụ tín hiệu tới cuối dây, tránh phản xạ ngược gây nhiễu.",
+   "src": "Tooley Ch.4 Q3"
+  },
+  {
+   "q": "Định dạng dữ liệu trên dây nhánh (stub cable) của ARINC 429 là:",
+   "opts": [
+    "dữ liệu song song từ bus nội bộ",
+    "dữ liệu nối tiếp mã hoá Manchester",
+    "cặp tín hiệu tương tự nối tiếp (serial analogue doublets)"
+   ],
+   "correct": 2,
+   "explain": "Theo đúng đáp án sách Tooley, dây nhánh ARINC 429 mang \"serial analogue doublets\": các cặp xung điện áp tương tự nối tiếp nhau, KHÔNG phải dữ liệu mã hoá Manchester (dễ nhầm vì Manchester là mã hoá của một chuẩn bus khác, ARINC 708/573).",
+   "src": "Tooley Ch.4 Q4"
+  },
+  {
+   "q": "Để biểu diễn giá trị âm, dữ liệu BNR dùng:",
+   "opts": [
+    "số nhị phân bù hai (two's complement)",
+    "dữ liệu BCD kèm bit dấu nhị phân",
+    "thêm 1 bit chẵn lẻ để chỉ dấu"
+   ],
+   "correct": 0,
+   "explain": "BNR (Binary Number Representation) mã hoá số nguyên có dấu bằng bù hai trên 19 bit trường Data, với bit 29 (MSB của trường Data) là bit dấu.",
+   "src": "Tooley Ch.4 Q5"
+  },
+  {
+   "q": "Môi trường truyền vật lý quy định cho ARINC 629 là:",
+   "opts": [
+    "cáp đồng trục (coaxial cable)",
+    "cáp quang (fibre-optic)",
+    "cáp xoắn đôi có vỏ bọc (shielded twisted pair)"
+   ],
+   "correct": 2,
+   "explain": "ARINC 629 dùng cáp xoắn đôi có vỏ bọc (STP), giống ARINC 429 về vật lý cáp nhưng khác hẳn về giao thức (2 Mbps, hai chiều, không cần bộ điều khiển trung tâm).",
+   "src": "Tooley Ch.4 Q6"
+  },
+  {
+   "q": "Tính hợp lệ của một từ dữ liệu ARINC 429 được kiểm tra bằng:",
+   "opts": [
+    "bit chẵn lẻ (parity bit)",
+    "dự phòng bội (multiple redundancy)",
+    "checksum"
+   ],
+   "correct": 0,
+   "explain": "Bit cuối cùng (bit 32) của từ 32-bit là bit parity lẻ (odd parity): tổng số bit 1 trong cả từ luôn là số lẻ, giúp bên nhận phát hiện lỗi 1-bit đơn giản.",
+   "src": "Tooley Ch.4 Q7"
+  },
+  {
+   "q": "Trường Label trong một từ dữ liệu ARINC 429 gồm:",
+   "opts": [
+    "8 bit",
+    "5 bit",
+    "3 bit"
+   ],
+   "correct": 0,
+   "explain": "Label chiếm đúng 8 bit (bit 1-8), đủ để mã hoá 256 loại dữ liệu khác nhau (0-255), vd Label 203 = tốc độ bay theo bảng nhãn ví dụ của bài giảng.",
+   "src": "Tooley Ch.4 Q8"
+  },
+  {
+   "q": "Các mức điện áp xuất hiện trên cáp bus ARINC 429 là:",
+   "opts": [
+    "±5V",
+    "±15V",
+    "+5V và +10V"
+   ],
+   "correct": 0,
+   "explain": "Mỗi dây dẫn (A hoặc B) mang điện áp +5V, 0V hoặc -5V so với đất; điện áp VI SAI giữa 2 dây mới đạt ±10V. Đề hỏi điện áp TRÊN CÁP (từng dây), nên đáp án là ±5V.",
+   "src": "Tooley Ch.4 Q9"
+  },
+  {
+   "q": "Tốc độ bit tối đa mà ARINC 429 hỗ trợ là:",
+   "opts": [
+    "12,5 kbps",
+    "1 Mbps",
+    "100 kbps"
+   ],
+   "correct": 2,
+   "explain": "ARINC 429 có 2 tốc độ: low speed 12,5 kbps (phổ biến nhất) và high speed 100 kbps (tốc độ TỐI ĐA được hỗ trợ).",
+   "src": "Tooley Ch.4 Q10"
+  },
+  {
+   "q": "Trạng thái NULL của ARINC 429 được biểu diễn bằng:",
+   "opts": [
+    "điện áp 0V",
+    "điện áp -5V",
+    "điện áp +5V"
+   ],
+   "correct": 0,
+   "explain": "NULL (không có dữ liệu) tương ứng cả 2 dây A và B đều ở 0V, khác hẳn bit 1 (A=+5V,B=-5V) và bit 0 (A=-5V,B=+5V).",
+   "src": "Tooley Ch.4 Q11"
+  },
+  {
+   "q": "Tốc độ dữ liệu tối đa mà MIL-STD-1553 hỗ trợ là:",
+   "opts": [
+    "12,5 kbps",
+    "1 Mbps",
+    "100 kbps"
+   ],
+   "correct": 1,
+   "explain": "MIL-STD-1553B hỗ trợ 1 Mbps, nhanh hơn ARINC 429 (tối đa 100 kbps) nhưng chậm hơn ARINC 629 (2 Mbps) và AFDX (100 Mbps).",
+   "src": "Tooley Ch.4 Q12"
+  },
+  {
+   "q": "Một bus tự tạo xung nhịp từ chính tín hiệu dữ liệu (không cần đường clock riêng) được gọi là:",
+   "opts": [
+    "vạn năng (universal)",
+    "tự đồng bộ (asynchronous)",
+    "hai chiều (bidirectional)"
+   ],
+   "correct": 1,
+   "explain": "Mã hoá BPRZ của ARINC 429 luôn có 1 cạnh chuyển mức giữa mỗi bit (về 0V), nên bên nhận tự tách được nhịp từ chính tín hiệu, không cần đường dây clock riêng: đây là tính chất self-clocking.",
+   "src": "Tooley Ch.4 Q13"
+  },
+  {
+   "q": "Môi trường truyền vật lý quy định cho MIL-STD-1773B là:",
+   "opts": [
+    "cáp đồng trục (coaxial cable)",
+    "cáp xoắn đôi có vỏ bọc (shielded twisted pair)",
+    "cáp quang (fibre-optic)"
+   ],
+   "correct": 2,
+   "explain": "MIL-STD-1773B là phiên bản cáp quang của MIL-STD-1553B, cho khả năng chống nhiễu điện từ cường độ cao (HIRF) tốt hơn hẳn cáp đồng.",
+   "src": "Tooley Ch.4 Q14"
+  },
+  {
+   "q": "Độ dài một từ dữ liệu ARINC 429 là:",
+   "opts": [
+    "20 bit",
+    "16 bit",
+    "32 bit"
+   ],
+   "correct": 2,
+   "explain": "Từ dữ liệu ARINC 429 luôn dài 32 bit: Label(8)+SDI(2)+Data(19)+SSM(2)+Parity(1) = 32.",
+   "src": "Tooley Ch.4 Q15"
+  },
+  {
+   "q": "ARINC 573 được thiết kế để dùng với:",
+   "opts": [
+    "thiết bị ghi dữ liệu chuyến bay (FDR)",
+    "hệ thống dẫn đường quán tính (INS)",
+    "radar thời tiết (weather radar)"
+   ],
+   "correct": 0,
+   "explain": "ARINC 573 là chuẩn cho thiết bị ghi dữ liệu chuyến bay (Flight Data Recorder), dùng mã hoá Harvard Bi-Phase 12-bit; ARINC 717 sau này thay thế ARINC 573.",
+   "src": "Tooley Ch.4 Q16"
+  },
+  {
+   "q": "Tốc độ dữ liệu tối đa mà bus FDDI hỗ trợ là:",
+   "opts": [
+    "1 Mbps",
+    "100 Mbps",
+    "10 Mbps"
+   ],
+   "correct": 1,
+   "explain": "FDDI (Fibre Distributed Data Interface), do Boeing phát triển cho B777, hỗ trợ 100 Mbps trên cấu trúc vòng đôi (dual token-ring).",
+   "src": "Tooley Ch.4 Q17"
+  }
+ ],
+ "floyd": [],
+ "generated": [
+  {
+   "q": "ARINC 629 hỗ trợ tốc độ truyền dữ liệu là:",
+   "opts": [
+    "100 Mbps",
+    "2 Mbps",
+    "100 kbps"
+   ],
+   "correct": 1,
+   "explain": "ARINC 629 đạt 2 Mbps, nhanh gấp 20 lần tốc độ cao nhất của ARINC 429 (100 kbps), theo đúng số liệu trong bài giảng.",
+   "src": ""
+  },
+  {
+   "q": "Cơ chế truy cập kênh (channel access) mà ARINC 629 dùng là:",
+   "opts": [
+    "TDMA (Time Division Multiple Access)",
+    "Token Ring",
+    "CSMA/CD"
+   ],
+   "correct": 0,
+   "explain": "ARINC 629 dùng TDMA: mỗi LRU được cấp 1 hoặc nhiều khe thời gian (slot) cố định trong 1 Major Frame để truyền, tránh xung đột dữ liệu mà không cần bộ điều khiển trung tâm.",
+   "src": ""
+  },
+  {
+   "q": "AFDX (ARINC 664) đạt tốc độ truyền tối đa là:",
+   "opts": [
+    "2 Mbps",
+    "100 Mbps",
+    "1 Mbps"
+   ],
+   "correct": 1,
+   "explain": "AFDX là Ethernet chuyển mạch song công (switched full-duplex) 100 Mbps, dùng cơ chế Virtual Link (VL) để đảm bảo băng thông xác định (deterministic) cho từng luồng dữ liệu.",
+   "src": ""
+  },
+  {
+   "q": "Trong AFDX, cơ chế đảm bảo mỗi luồng dữ liệu có băng thông riêng, không bị luồng khác chiếm dụng, được gọi là:",
+   "opts": [
+    "TDMA slot",
+    "Virtual Link (VL)",
+    "ARINC 429 Label"
+   ],
+   "correct": 1,
+   "explain": "Mỗi Virtual Link có băng thông, kích thước khung và chu kỳ truyền (BAG) riêng; switch AFDX đảm bảo cách ly giữa các VL để 1 luồng lỗi không làm nghẽn toàn mạng.",
+   "src": ""
+  },
+  {
+   "q": "Bộ điều khiển trung tâm (bus controller) là thành phần bắt buộc của chuẩn bus nào dưới đây?",
+   "opts": [
+    "ARINC 429",
+    "MIL-STD-1553B",
+    "ARINC 629"
+   ],
+   "correct": 1,
+   "explain": "MIL-STD-1553B dùng kiến trúc command-response với 1 Bus Controller (BC) điều khiển tối đa 31 Remote Terminal (RT); ARINC 629 ngược lại được thiết kế để KHÔNG cần bộ điều khiển trung tâm (tránh điểm lỗi đơn).",
+   "src": ""
+  },
+  {
+   "q": "Trường SSM trong từ dữ liệu ARINC 429 dùng để:",
+   "opts": [
+    "chỉ định thiết bị nhận dữ liệu",
+    "báo trạng thái dữ liệu (hợp lệ, lỗi, đang kiểm tra...)",
+    "xác định loại dữ liệu đang truyền"
+   ],
+   "correct": 1,
+   "explain": "SSM (Sign/Status Matrix, 2 bit) báo 1 trong 4 trạng thái của dữ liệu tuỳ ngữ cảnh, ví dụ với BNR: 00=Failure Warning, 01=No Computed Data, 10=Functional Test, 11=Normal Operation.",
+   "src": ""
+  },
+  {
+   "q": "Nếu 1 từ dữ liệu ARINC 429 dài 32 bit được truyền ở tốc độ 100 kbps, thời gian truyền 1 từ là:",
+   "opts": [
+    "3,2 ms",
+    "2,56 ms",
+    "0,32 ms"
+   ],
+   "correct": 2,
+   "explain": "t = N/R = 32 bit / 100.000 bit/s = 0,00032 s = 0,32 ms, khớp đúng bảng Data Rate and Bit Timing trong bài giảng.",
+   "src": ""
+  }
+ ]
+}

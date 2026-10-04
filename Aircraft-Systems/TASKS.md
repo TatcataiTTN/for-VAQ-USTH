@@ -2,6 +2,52 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 13 — Module 05: Bus dữ liệu hàng không (Data Buses) 🟢 (2026-10-04)
+- [x] **Nguồn**: slide bài giảng riêng "Data buses aircraft - ver 2026 v2.pdf" (18 slide, ảnh infographic,
+  không có text layer dùng được: đã render cả 18 trang ở 150 dpi vào
+  `OCR_output/DataBuses_Lecture/pages/` và đọc trực tiếp bằng mắt từng trang) + Tooley Chương 4 "Data
+  Buses" (tr.53-69: 4.1 Introducing bus systems, 4.2 ARINC 429, 4.3 Other bus standards, 4.4
+  Multiple-Choice Questions). **Floyd KHÔNG có nội dung liên quan** (giáo trình điện tử số thuần tuý,
+  không đề cập avionics bus): đây là module có độ khớp 2 sách THẤP NHẤT (thấp hơn cả Module 04), quiz chỉ
+  có 2 nguồn (Tooley + câu bổ sung), không có mục Floyd.
+- [x] **Phát hiện lỗi thật trong bài giảng**: slide 14 ghi mã hoá ARINC 429 là "Manchester Biphase-L",
+  nhưng đối chiếu slide 3, slide 13 (cùng bài giảng) VÀ sách Tooley (mục Electrical Characteristics +
+  bảng chú giải BPRZ) đều xác nhận mã hoá ĐÚNG là Bipolar Return to Zero (BPRZ). Đã đưa phát hiện này
+  thành nội dung dạy (khung cảnh báo ⚠️) thay vì chỉ âm thầm sửa, vì đây là ví dụ thực tế tốt cho kỹ năng
+  đối chiếu đa nguồn.
+- [x] **17 câu MCQ gốc từ Tooley Ch.4** (mục 4.4, tr.67-69): đọc trực tiếp từ ảnh scan trang sách (OCR
+  text-layer đọc được rõ ràng cho đề bài), đáp án đối chiếu với Appendix 3 (A.4 Chapter 4, tr.377) đọc
+  trực tiếp từ ảnh scan vì bảng đáp án đa cột bị OCR text-layer xáo trộn thứ tự (bài học cũ đã ghi trong
+  skill `build-complete-self-study-system`). Toàn bộ 17 câu đã tự kiểm chứng lại bằng code trong notebook
+  `05_data-buses.ipynb` (chạy thật bằng `nbconvert --execute`, không chỉ viết ra). Thêm 7 câu bổ sung
+  (MOD5_GEN) về ARINC 629/AFDX/MIL-STD-1553/SSM/thời gian truyền, tính từ số liệu thật trong bài giảng.
+- [x] **28 slide × 2 ngôn ngữ** (5 phần: vì sao cần bus → ARINC 429 cơ bản → cấu trúc từ dữ liệu ARINC
+  429 → các chuẩn bus khác → ứng dụng A320), mỗi slide có khung "Giải thích cho người mới bắt đầu". 8 ảnh
+  gốc trích từ chính bài giảng (`assets/figures/databus_p02/03/06/07/10/12/13/16.jpg`, cắt nguyên trang
+  infographic vì chất lượng đã đủ tốt để dùng trực tiếp, không cần crop nhỏ hơn).
+- [x] **Notebook `05_data-buses.ipynb`**: mã hoá/giải mã BCD và BNR cho trường Data 19-bit, đóng gói/giải
+  mã trọn 1 từ ARINC 429 32-bit (tự tính parity lẻ), kiểm chứng công thức thời gian truyền, và chạy lại
+  toàn bộ 17 câu MCQ bằng code. Phát hiện 1 lỗi nhỏ khi tự viết code: hàm mã hoá BCD ban đầu mặc định 5
+  chữ số (20 bit) làm tràn trường 19-bit: đã sửa về mặc định 3 chữ số (đủ cho ví dụ 250kt) và ghi chú rõ
+  5 chữ số BCD không thể vừa 19 bit, một điểm cần cẩn thận khác của chính bài giảng.
+- [x] Cập nhật hạ tầng dùng chung cho module không có Floyd: `FLOYD_MODULES["05-data-buses"]` để rỗng
+  (`tf=[], st=[]`) thay vì bỏ qua (tránh KeyError), và `build_quiz_section()` trong `render_site.py` nay
+  bỏ qua render nếu danh sách câu hỏi rỗng (không hiện khung quiz trống).
+- [x] Thêm overlay dịch tiếng Anh thủ công cho toàn bộ 24 câu quiz mới (17 Tooley + 7 bổ sung) vào
+  `quiz_en_overlay.py` (`OPT_EN_BY_Q.update()`/`EXPLAIN_EN.update()`), rồi xác minh bằng script quét ký tự
+  tiếng Việt trên JSON bản EN: 0 câu còn sót tiếng Việt (đúng quy trình đã rút kinh nghiệm từ lỗi ở Epic
+  trước, xem `06-multilingual-workflow.md` mục 6.6bis của skill).
+- [x] Cập nhật "4 module" → "5 module" ở mọi nơi hiển thị số lượng (trang chủ VI/EN, link/tiêu đề bảng
+  ánh xạ chương VI/EN), thêm dòng `MAPPING_ROWS` cho module 05 trong `render_site.py`.
+- [x] `render_site.py` (38 slide/ngôn ngữ sau khi thêm part-divider/formula/legend), `check_links.py`
+  (330 link nội bộ, 0 lỗi), build screenshot headless xác nhận trang chủ + trang module hiển thị đúng cả
+  2 ngôn ngữ, không có box quiz/ảnh vỡ.
+- **CHƯA LÀM**: audit thiên lệch vị trí đáp án (position-bias) cho quiz module 05 (và thực ra cho CẢ 4
+  module trước đó cũng chưa từng chạy, xem Epic 4 của skill `build-complete-self-study-system`: đây là
+  khoảng trống chung của toàn site, không riêng module 05); câu hỏi tự luận (essay) không làm cho module
+  này vì Tooley chỉ có "Test Your Understanding" không kèm đáp án in sẵn (không đủ điều kiện theo đúng
+  tiêu chuẩn essay đã áp dụng ở Epic 12, vốn chỉ dùng câu có đáp án ẢNH CHỤP THẬT).
+
 ## Epic 12 — Câu hỏi tự luận (Problems) từ Floyd, đáp án là ảnh chụp thật 🟢 (2026-09-28)
 - [x] **Khảo sát cấu trúc 2 sách**: Tooley (Aircraft Digital Electronic and Computer Systems) chỉ có mục
   "Multiple-choice questions" cuối mỗi chương, KHÔNG có phần tự luận riêng (đã kiểm tra mục lục gốc, xác

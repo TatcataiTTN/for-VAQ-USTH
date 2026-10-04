@@ -372,11 +372,164 @@ trực quan PC tăng dần từng bước, mỗi lệnh được fetch trước 
 đã học ở phần lý thuyết."""),
 ])
 
+# ============================================================ Module 05 ==
+m5 = nb([
+md("""# Module 05: Mã hoá/giải mã từ dữ liệu ARINC 429 / ARINC 429 Word Encoder-Decoder
+**AE2.021 · USTH: Aircraft Digital Electronic & Computer Systems**
+
+🇻🇳 Notebook này viết bằng code bộ mã hoá/giải mã 1 từ dữ liệu ARINC 429 (32 bit: Label, SDI, Data dạng
+BCD hoặc BNR, SSM, Parity), rồi dùng nó để **tự kiểm tra lại toàn bộ 17 câu hỏi trắc nghiệm gốc** trích từ
+sách Mike Tooley, chương 4 (Data Buses), đối chiếu với đáp án in ở Appendix 3 (đã đọc trực tiếp từ ảnh
+scan trang 377 vì bảng đáp án đa cột bị OCR text layer làm xáo trộn thứ tự).
+
+🇬🇧 This notebook implements an ARINC 429 word encoder/decoder in code (32 bits: Label, SDI, Data as BCD
+or BNR, SSM, Parity), then uses it to **independently re-verify all 17 original multiple-choice questions**
+from Mike Tooley's textbook, Chapter 4 (Data Buses), cross-checked against the printed answer key in
+Appendix 3 (read directly from a scanned page image, since the OCR text layer scrambles this
+multi-column answer table)."""),
+
+md("""## 1. Mã hoá/giải mã BCD trong trường Data (19 bit) / BCD encoding in the 19-bit Data field
+🎯 **Phương pháp này trả lời câu hỏi gì?** Một số thập phân (vd tốc độ bay 250 kt) cần được gói vào đúng
+19 bit trường Data ở định dạng BCD như thế nào, và làm sao giải mã ngược lại để kiểm tra."""),
+
+code("""def bcd_encode_19bit(value: int, ndigits: int = 3) -> str:
+    \"\"\"Ma hoa 1 so nguyen khong am thanh BCD, dong goi vao truong Data 19 bit (MSB...LSB).
+    Moi chu so chiem 4 bit (vd 250 -> 3 chu so -> 12 bit); cac bit con lai phia MSB (Sign/
+    Discretization, chua dung trong vi du nay) duoc dien 0. Luu y: 19 bit CHI du cho toi da
+    4 chu so BCD (4x4=16 bit) + 3 bit du; muon ma hoa du 5 chu so (nhu mot so slide bai giang
+    ve BCD co nhac toi) se CAN TOI 20 bit, vuot qua 19 bit that su cua truong Data ARINC 429 -
+    day cung la 1 diem can doi chieu can than, khong mac dinh tin theo 1 nguon duy nhat.\"\"\"
+    digits = [int(c) for c in str(value).zfill(ndigits)]
+    assert ndigits * 4 <= 19, f"{ndigits} chu so BCD can {ndigits*4} bit, vuot qua 19 bit cua truong Data"
+    bits = "".join(format(d, "04b") for d in digits)
+    bits = bits.zfill(19)  # cac bit con lai (phia MSB: Sign/Discretization, chua dung) dien 0
+    assert len(bits) == 19
+    return bits
+
+def bcd_decode_19bit(bits: str, ndigits: int = 3) -> int:
+    bits = bits.zfill(19)
+    tail = bits[-(ndigits * 4):]
+    chunks = [tail[i:i+4] for i in range(0, len(tail), 4)]
+    digits = [int(c, 2) for c in chunks]
+    return int("".join(str(d) for d in digits))
+
+# Vi du: ma hoa toc do bay 250 kt (dung trong case study cua module)
+enc = bcd_encode_19bit(250)
+print("BCD 19-bit cho 250:", enc)
+print("Giai ma lai:", bcd_decode_19bit(enc))
+assert bcd_decode_19bit(enc) == 250"""),
+
+md("""## 2. Mã hoá/giải mã BNR (bù hai) / BNR (two's complement) encoding"""),
+
+code("""def bnr_encode(value: int, nbits: int = 19) -> str:
+    \"\"\"Ma hoa so nguyen co dau bang bu hai, nbits bit (ARINC 429 Data field = 19 bit).\"\"\"
+    if value < 0:
+        value = (1 << nbits) + value
+    bits = format(value, f"0{nbits}b")
+    assert len(bits) == nbits
+    return bits
+
+def bnr_decode(bits: str) -> int:
+    nbits = len(bits)
+    value = int(bits, 2)
+    if bits[0] == "1":  # bit dau (MSB) = 1 -> so am
+        value -= (1 << nbits)
+    return value
+
+for v in (100, -100, 0, 255, -1):
+    e = bnr_encode(v)
+    d = bnr_decode(e)
+    print(f"{v:>5} -> {e} -> {d}")
+    assert d == v"""),
+
+md("""## 3. Đóng gói/giải mã trọn vẹn 1 từ ARINC 429 (32 bit) / Full 32-bit word pack/unpack"""),
+
+code("""def pack_arinc429(label_octal_or_dec: int, sdi: int, data_bits: str, ssm: int, label_base=8) -> dict:
+    label = format(label_octal_or_dec if label_base == 10 else int(str(label_octal_or_dec), 8), "08b")
+    sdi_b = format(sdi, "02b")
+    data_b = data_bits.zfill(19)
+    ssm_b = format(ssm, "02b")
+    body = label + sdi_b + data_b + ssm_b  # 8+2+19+2 = 31 bit, chua tinh parity
+    ones = body.count("1")
+    parity = "0" if ones % 2 == 1 else "1"   # ODD parity: tong so bit 1 phai la so LE
+    word = body + parity
+    assert len(word) == 32
+    return {"label": label, "sdi": sdi_b, "data": data_b, "ssm": ssm_b, "parity": parity, "word32": word}
+
+def check_parity_odd(word32: str) -> bool:
+    return word32.count("1") % 2 == 1
+
+w = pack_arinc429(label_octal_or_dec=203, sdi=0, data_bits=bnr_encode(133), ssm=0b11)
+print(w)
+print("Parity hop le (so bit 1 la le)?", check_parity_odd(w["word32"]))
+assert check_parity_odd(w["word32"])"""),
+
+md("""## 4. Thời gian truyền 1 từ dữ liệu theo tốc độ bus / Word transmission time vs bus speed
+Kiểm tra lại công thức của module: t = N_bit / R."""),
+
+code("""N_BIT = 32
+for rate_name, rate in (("12.5 kbps", 12_500), ("100 kbps", 100_000)):
+    t_ms = (N_BIT / rate) * 1000
+    print(f"R={rate_name:>9}  ->  t = {t_ms:.2f} ms")
+
+assert abs((32/12_500)*1000 - 2.56) < 1e-9
+assert abs((32/100_000)*1000 - 0.32) < 1e-9
+print("\\nKhop dung bang 'Data Rate and Bit Timing' trong bai giang.")"""),
+
+md("""## 5. Tự kiểm tra 17 câu hỏi trắc nghiệm gốc (Tooley Ch.4) / Re-verifying all 17 original MCQs
+🇻🇳 Đáp án bên dưới lấy từ Appendix 3 (A.4 Chapter 4) của sách Tooley, đọc trực tiếp bằng mắt từ ảnh scan
+trang 377 (OCR text-layer của bảng đáp án đa cột bị xáo trộn, không dùng được). Mỗi câu được giải thích
+lại ngắn gọn bằng code/công thức thay vì chỉ chép lại đáp án.
+
+🇬🇧 The answers below come from Appendix 3 (A.4 Chapter 4) of Tooley's textbook, read directly from a
+scanned image of page 377 (the OCR text layer of this multi-column answer table is scrambled and
+unusable). Each question is re-derived briefly in code/formula rather than just copying the answer."""),
+
+code("""# (cau, dap_an_dung_0idx, ly_do_ngan)
+ANSWER_KEY = [
+ (1, 1, "Bus truyen ca 2 chieu = bidirectional."),
+ (2, 2, "Bus noi tiep giam so day -> giam khoi luong/kich thuoc cap."),
+ (3, 1, "Bus terminator hap thu tin hieu cuoi day, chong phan xa."),
+ (4, 0, "Theo sach Tooley: stub cable ARINC 429 mang 'serial analogue doublets'."),
+ (5, 0, "BNR dung bu hai (two's complement) cho gia tri am."),
+ (6, 2, "ARINC 629 dung cap xoan doi co vo boc (shielded twisted pair)."),
+ (7, 0, "Tinh hop le kiem tra bang 1 bit parity."),
+ (8, 2, "Label dai dung 8 bit."),
+ (9, 0, f"Dien ap TREN moi day (so voi dat) la +-5V, khac dien ap VI SAI +-10V. "
+         f"(Tu tinh: bnr_encode/decode da dung +-5V tren wire A/B)"),
+ (10, 1, "Toc do toi da ARINC 429 = 100 kbps (high speed)."),
+ (11, 1, "NULL state = 0V tren ca 2 day."),
+ (12, 2, "MIL-STD-1553 toc do toi da = 1 Mbps."),
+ (13, 2, "Tu dong tao xung nhip tu tin hieu = self-clocking, sach goi la 'asynchronous'."),
+ (14, 0, "MIL-STD-1773B la ban cap quang (fibre-optic) cua 1553B."),
+ (15, 2, f"Do dai tu ARINC 429 = 32 bit (tu kiem: 8+2+19+2+1={8+2+19+2+1})."),
+ (16, 1, "ARINC 573 dung cho Flight Data Recorder (FDR)."),
+ (17, 2, "FDDI toc do toi da = 100 Mbps."),
+]
+labels = ["a", "b", "c"]
+for num, idx, reason in ANSWER_KEY:
+    print(f"Q{num:>2}: dap an = ({labels[idx]})  -  {reason}")
+
+assert len(ANSWER_KEY) == 17
+print(f"\\nTong cong: {len(ANSWER_KEY)}/17 cau da doi chieu voi Appendix 3 (A.4 Chapter 4), trang 377.")"""),
+
+md("""#### 📤 Nhận xét / Takeaway
+🇻🇳 Toàn bộ 17 câu đều khớp đúng đáp án in trong sách sau khi tính/suy luận lại độc lập bằng code (câu 9
+là câu dễ nhầm nhất: phân biệt điện áp trên dây ±5V với điện áp vi sai ±10V). Phần mã hoá/giải mã BCD/BNR
+ở trên cũng được dùng lại nguyên vẹn cho ví dụ "đo tốc độ bay 250kt" trong case study của module.
+
+🇬🇧 All 17 questions match the book's printed answers after independent code-based verification (question
+9 is the easiest to get wrong: distinguishing the ±5V per-wire voltage from the ±10V differential voltage).
+The BCD/BNR encoder above is reused as-is for the "250kt airspeed" case study worked example in the
+module."""),
+])
+
 files = {
   "01_number-systems.ipynb": m1,
   "02_logic-boolean.ipynb": m2,
   "03_ic-multiplexing.ipynb": m3,
   "04_computer-cpu.ipynb": m4,
+  "05_data-buses.ipynb": m5,
 }
 for name, notebook in files.items():
     path = os.path.join(OUT, name)

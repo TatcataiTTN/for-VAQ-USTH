@@ -433,4 +433,149 @@ MODULES = [
                         "Problems (memory addressing, static RAM).",
     },
   },
+  {
+    "slug": "05-data-buses",
+    "num": "05",
+    "target_slides": 28,
+    "vi": {
+      "title": "Bus dữ liệu hàng không (Data Buses)",
+      "tag": "Data Buses",
+      "src": "Tooley ch.4 (tr.53-69) · Bài giảng \"Data Buses\" (18 slide)",
+      "intro": "Một máy bay hiện đại có hàng trăm LRU (Line Replaceable Unit) cần trao đổi dữ liệu với nhau. "
+               "Thay vì nối dây riêng cho từng cặp thiết bị, các hệ thống avionics dùng BUS DỮ LIỆU: một (hoặc "
+               "vài) đường truyền dùng chung theo đúng một chuẩn giao tiếp. Module này đi từ lý do cần bus, qua "
+               "chuẩn phổ biến nhất (ARINC 429), tới các chuẩn khác (ARINC 629, AFDX/664, MIL-STD-1553) và ứng "
+               "dụng thật trên Airbus A320.",
+      "parts": [
+        {"title": "Vì sao máy bay cần bus dữ liệu?", "bullets": [
+            "Kết nối điểm-điểm (point-to-point): mỗi cảm biến nối dây riêng tới mỗi thiết bị dùng dữ liệu đó",
+            "Vấn đề: số dây tăng rất nhanh, nặng, khó bảo trì, khó mở rộng",
+            "Giải pháp: bus dữ liệu dùng chung, nhiều thiết bị chia sẻ cùng 1 đường truyền",
+            "6 lý do dùng bus: giảm dây, chia sẻ dữ liệu, tăng độ tin cậy, dễ bảo trì, dễ mở rộng, hỗ trợ nhiều loại dữ liệu"]},
+        {"title": "ARINC 429: chuẩn bus phổ biến nhất", "bullets": [
+            "Bus điểm-điểm (point-to-point), 1 chiều (unidirectional), 1 transmitter → tối đa 20 receiver",
+            "Cáp xoắn đôi có vỏ bọc (shielded twisted pair), điện áp ±5V trên mỗi dây, vi sai ±10V",
+            "Mã hoá Bipolar Return to Zero (BPRZ): mỗi bit luôn trở về 0V, tự đồng bộ (self-clocking)",
+            "Tốc độ: 12,5 kbps (low speed) hoặc 100 kbps (high speed)"]},
+        {"title": "Cấu trúc 1 từ dữ liệu ARINC 429 (32 bit)", "bullets": [
+            "Label (8 bit) → SDI (2 bit) → Data (19 bit) → SSM (2 bit) → Parity (1 bit)",
+            "Label: mã nhận diện loại dữ liệu (vd 203 = tốc độ bay IAS)",
+            "Hai định dạng Data: BCD (mỗi chữ số thập phân 4 bit) hoặc BNR (số nhị phân có dấu, bù hai)",
+            "SSM báo trạng thái dữ liệu (hợp lệ/lỗi/đang kiểm tra), Parity dùng bit lẻ để tự kiểm tra"]},
+        {"title": "Các chuẩn bus khác", "bullets": [
+            "ARINC 629: 2 Mbps, hai chiều, không cần bộ điều khiển trung tâm, dùng trên B777/A330/A340",
+            "AFDX/ARINC 664: Ethernet chuyển mạch 100 Mbps, dùng Virtual Link, trên A380/A350",
+            "MIL-STD-1553B: bus quân sự có bộ điều khiển trung tâm (bus controller), 1 Mbps",
+            "Các chuẩn cũ/đặc thù: ARINC 419/561/573/575/615/708, CSDB, ASCB, FDDI"]},
+        {"title": "Áp dụng trên Airbus A320", "bullets": [
+            "ADIRU → FMGC/EFIS qua ARINC 429: dữ liệu khí động, quán tính",
+            "ELAC/SEC/FAC ↔ nhau qua ARINC 629: dữ liệu điều khiển bay thời gian thực",
+            "FMS ↔ ECAM ↔ CIDS ↔ ACMS qua AFDX: dữ liệu khối lượng lớn, bảo trì",
+            "FADEC dùng MIL-STD-1553/ARINC 717: dữ liệu động cơ, ghi âm buồng lái"]},
+      ],
+      "formula_label": "Thời gian truyền 1 từ dữ liệu ARINC 429 (32 bit)",
+      "formula_math": "t_từ = N_bit / R  (N=32 bit; R=12,5 kbps ⇒ t=2,56 ms; R=100 kbps ⇒ t=0,32 ms)",
+      "legend": [("N_bit", "số bit trong 1 từ dữ liệu (ARINC 429 luôn là 32 bit)"), ("R", "tốc độ truyền (bit/giây)"), ("t_từ", "thời gian truyền trọn 1 từ dữ liệu")],
+      "history_title": "📜 Bối cảnh lý thuyết & lịch sử",
+      "history": "ARINC (Aeronautical Radio, Inc.) là một tổ chức gồm các hãng hàng không lớn và nhà sản xuất máy "
+                 "bay, với mục tiêu chuẩn hoá thiết bị hàng không để các LRU của nhiều hãng sản xuất khác nhau vẫn "
+                 "tương thích được với nhau. ARINC 429 có tên kỹ thuật đầy đủ là <i>Mark 33 Digital Information "
+                 "Transfer System (DITS)</i>, và theo đúng lời sách Tooley, đây vẫn là một trong những chuẩn bus "
+                 "phổ biến nhất trên máy bay thương mại (Airbus A310/A320/A330/A340; Boeing 737/747/757/767; "
+                 "McDonnell Douglas MD-11), dù các máy bay mới hơn như A380 và Boeing 777 đã chuyển sang các "
+                 "chuẩn nhanh hơn, hai chiều hơn (ARINC 629, AFDX).",
+      "case_title": "🔎 Case study thực tế: đo tốc độ bay IAS từ ADIRU tới PFD trên A320",
+      "case": "ADIRU tính được tốc độ bay chỉ thị (IAS) = 250 kt, mã hoá theo định dạng BCD rồi gắn vào 1 từ "
+              "dữ liệu 32 bit mang đúng Label dành riêng cho IAS. Giá trị 250 được tách thành 3 chữ số BCD: "
+              "2→0010, 5→0101, 0→0000, ghép vào 19 bit trường Data (tự kiểm chứng lại được bằng notebook đi "
+              "kèm). Từ dữ liệu 32 bit hoàn chỉnh (Label + SDI + Data + SSM + Parity) được gửi liên tục mỗi "
+              "khoảng 100 ms qua ARINC 429 BUS A tới PFD, nơi bộ giải mã kiểm tra parity, đọc Label để biết đây "
+              "là dữ liệu IAS, rồi cập nhật thước đo tốc độ hiển thị 250 kt. Đây là ví dụ đầy đủ cả chu trình: "
+              "mã hoá → truyền → giải mã → hiển thị, dựa theo đúng kịch bản trong slide bài giảng. (Riêng giá "
+              "trị số cụ thể của Label mà slide ghi không khớp phép đổi hex/nhị phân độc lập, xem mục cảnh báo "
+              "bên dưới, nên không trích lại số Label đó ở đây.)",
+      "warn_title": "⚠️ Bẫy hay gặp (và một lỗi thật tìm thấy ngay trong bài giảng)",
+      "warn": "Bẫy phổ biến: nhầm \"tốc độ cao nhất 100 kbps\" của ARINC 429 với tốc độ Mbps của ARINC 629 "
+              "(2 Mbps) hay MIL-STD-1553 (1 Mbps); đây là 3 chuẩn khác nhau, chênh lệch tốc độ tới hàng chục lần. "
+              "Đáng chú ý hơn: một slide trong chính bài giảng môn này ghi mã hoá của ARINC 429 là \"Manchester "
+              "Biphase-L\", nhưng đối chiếu với sách Tooley (mục Electrical Characteristics, và bảng chú giải "
+              "thuật ngữ BPRZ) cũng như 2 slide khác trong CÙNG bài giảng đó, mã hoá ĐÚNG của ARINC 429 là "
+              "Bipolar Return to Zero (BPRZ), không phải Manchester (Manchester là mã hoá của ARINC 708/573, "
+              "một chuẩn bus KHÁC). Đây là một ví dụ thực tế cho thấy luôn cần đối chiếu nhiều nguồn trước khi "
+              "ghi nhớ một sự kiện kỹ thuật.",
+      "notebook_desc": "Notebook đi kèm: mã hoá/giải mã 1 từ ARINC 429 (Label/SDI/Data BCD hoặc BNR/SSM/Parity) "
+                        "bằng Python, tự kiểm tra lại toàn bộ 17 câu hỏi gốc cuối chương 4 sách Tooley bằng code.",
+    },
+    "en": {
+      "title": "Aircraft Data Buses",
+      "tag": "Data Buses",
+      "src": "Tooley ch.4 (p.53-69) · Lecture \"Data Buses\" (18 slides)",
+      "intro": "A modern aircraft has hundreds of LRUs (Line Replaceable Units) that need to exchange data. "
+               "Instead of wiring every device pair separately, avionics systems use a DATA BUS: one (or a few) "
+               "shared transmission lines following a single communication standard. This module goes from why a "
+               "bus is needed, through the most common standard (ARINC 429), to other standards (ARINC 629, "
+               "AFDX/664, MIL-STD-1553) and real applications on the Airbus A320.",
+      "parts": [
+        {"title": "Why does an aircraft need a data bus?", "bullets": [
+            "Point-to-point wiring: each sensor is wired separately to every device that needs its data",
+            "Problem: the number of wires grows very fast, adding weight, hurting maintainability and expandability",
+            "Solution: a shared data bus, with multiple devices sharing the same transmission line",
+            "6 reasons to use a bus: fewer wires, shared data, higher reliability, easier maintenance, easier expansion, support for multiple data types"]},
+        {"title": "ARINC 429: the most common bus standard", "bullets": [
+            "Point-to-point, unidirectional bus: 1 transmitter → up to 20 receivers",
+            "Shielded twisted pair cable, ±5V on each wire, ±10V differential",
+            "Bipolar Return to Zero (BPRZ) encoding: every bit returns to 0V, self-clocking",
+            "Data rate: 12.5 kbps (low speed) or 100 kbps (high speed)"]},
+        {"title": "Structure of an ARINC 429 word (32 bits)", "bullets": [
+            "Label (8 bits) → SDI (2 bits) → Data (19 bits) → SSM (2 bits) → Parity (1 bit)",
+            "Label: identifies the data type (e.g. 203 = indicated airspeed, IAS)",
+            "Two Data formats: BCD (each decimal digit as 4 bits) or BNR (signed binary, two's complement)",
+            "SSM reports data status (valid/failure/test), Parity uses odd parity for self-checking"]},
+        {"title": "Other bus standards", "bullets": [
+            "ARINC 629: 2 Mbps, bidirectional, no central bus controller needed, used on B777/A330/A340",
+            "AFDX/ARINC 664: 100 Mbps switched Ethernet, uses Virtual Links, on A380/A350",
+            "MIL-STD-1553B: military bus with a central bus controller, 1 Mbps",
+            "Older/specialised standards: ARINC 419/561/573/575/615/708, CSDB, ASCB, FDDI"]},
+        {"title": "Application on the Airbus A320", "bullets": [
+            "ADIRU → FMGC/EFIS via ARINC 429: air data and inertial data",
+            "ELAC/SEC/FAC interlinked via ARINC 629: real-time flight control data",
+            "FMS ↔ ECAM ↔ CIDS ↔ ACMS via AFDX: large-volume data, maintenance",
+            "FADEC uses MIL-STD-1553/ARINC 717: engine data, cockpit voice/data recording"]},
+      ],
+      "formula_label": "Transmission time for one ARINC 429 word (32 bits)",
+      "formula_math": "t_word = N_bit / R  (N=32 bits; R=12.5 kbps ⇒ t=2.56 ms; R=100 kbps ⇒ t=0.32 ms)",
+      "legend": [("N_bit", "number of bits per data word (ARINC 429 is always 32 bits)"), ("R", "transmission rate (bits/second)"), ("t_word", "time to transmit one complete data word")],
+      "history_title": "📜 Theoretical & historical background",
+      "history": "ARINC (Aeronautical Radio, Inc.) is an organisation of major airlines and aircraft manufacturers "
+                 "whose goal is to standardise aircraft equipment so that LRUs from different manufacturers remain "
+                 "interoperable. ARINC 429's full technical name is the <i>Mark 33 Digital Information Transfer "
+                 "System (DITS)</i>, and per Tooley's own text it remains one of the most widely used bus "
+                 "standards on commercial aircraft (Airbus A310/A320/A330/A340; Boeing 737/747/757/767; "
+                 "McDonnell Douglas MD-11), even though newer aircraft such as the A380 and Boeing 777 have "
+                 "moved to faster, bidirectional standards (ARINC 629, AFDX).",
+      "case_title": "🔎 Real case study: measuring IAS from the ADIRU to the PFD on the A320",
+      "case": "The ADIRU computes an indicated airspeed (IAS) of 250 kt, encodes it in BCD format, and packs "
+              "it into a 32-bit word carrying the dedicated Label for IAS. The value 250 splits into three BCD "
+              "digits: 2→0010, 5→0101, 0→0000, packed into the 19-bit Data field (independently checkable with "
+              "the companion notebook). The complete 32-bit word (Label + SDI + Data + SSM + Parity) is sent "
+              "continuously about every 100 ms over ARINC 429 BUS A to the PFD, where the decoder checks parity, "
+              "reads the Label to identify IAS data, and updates the airspeed display to 250 kt. This is a "
+              "complete worked example of the full cycle (encode → transmit → decode → display), following the "
+              "same scenario as the lecture slide. (The slide's specific Label figure does not survive an "
+              "independent hex/binary cross-check, see the warning box below, so that specific number is not "
+              "repeated here.)",
+      "warn_title": "⚠️ Common trap (and a real error found in the lecture material itself)",
+      "warn": "Common trap: confusing ARINC 429's top speed of 100 kbps with the Mbps-range speeds of ARINC 629 "
+              "(2 Mbps) or MIL-STD-1553 (1 Mbps): these are three different standards, tens of times apart in "
+              "speed. More notably: one slide in this very course's lecture deck states that ARINC 429 uses "
+              "\"Manchester Biphase-L\" encoding, but cross-checking against Tooley (the Electrical "
+              "Characteristics section, and the BPRZ glossary entry) and two OTHER slides in that SAME lecture "
+              "deck shows the CORRECT encoding for ARINC 429 is Bipolar Return to Zero (BPRZ), not Manchester "
+              "(Manchester is used by ARINC 708/573, a DIFFERENT bus standard). This is a real example of why "
+              "cross-checking multiple sources matters before memorising a technical fact.",
+      "notebook_desc": "Companion notebook: encodes/decodes an ARINC 429 word (Label/SDI/Data as BCD or BNR/SSM/"
+                        "Parity) in Python, and re-checks all 17 original end-of-chapter-4 questions from Tooley "
+                        "by code.",
+    },
+  },
 ]

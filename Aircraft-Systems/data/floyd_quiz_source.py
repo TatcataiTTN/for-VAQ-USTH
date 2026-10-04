@@ -332,4 +332,7 @@ FLOYD_MODULES = {
   "02-logic-boolean":   dict(tf=M2_TF, st=M2_ST, chapter="Floyd Ch.3 (Logic Gates) + Ch.4 (Boolean Algebra)"),
   "03-ic-multiplexing": dict(tf=M3_TF, st=M3_ST, chapter="Floyd Ch.6: Functions of Combinational Logic"),
   "04-computer-cpu":    dict(tf=M4_TF, st=M4_ST, chapter="Floyd Ch.11: Data Storage"),
+  # Floyd (Digital Fundamentals) khong co chuong nao ve bus du lieu hang khong: de trong co chu dich,
+  # xem ghi chu trong MAPPING_ROWS cua render_site.py va module_content.py muc "05-data-buses".
+  "05-data-buses":      dict(tf=[], st=[], chapter="(Floyd khong co noi dung lien quan)"),
 }

@@ -35,10 +35,10 @@ L = {
     "site_title": "Hệ thống điện tử số & máy tính hàng không",
     "site_sub": "Tự học AE2.021 · USTH",
     "home_hero_title": "Tự học môn AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "4 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
+    "home_hero_sub": "5 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
                       "(Mike Tooley & Thomas Floyd), có quiz tự chấm và notebook Python đi kèm.",
     "open": "Mở bài giảng →", "soon": "Sắp có",
-    "mapping_link": "📚 Bảng ánh xạ 4 bài giảng ↔ chương sách giáo trình",
+    "mapping_link": "📚 Bảng ánh xạ 5 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
               "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
     "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
@@ -51,7 +51,7 @@ L = {
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
-    "mapping_title": "Bảng ánh xạ: 4 bài giảng ↔ chương giáo trình tham khảo",
+    "mapping_title": "Bảng ánh xạ: 5 bài giảng ↔ chương giáo trình tham khảo",
     "mapping_intro": "Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide "
                       "giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
   },
@@ -59,10 +59,10 @@ L = {
     "site_title": "Aircraft Digital Electronics & Computer Systems",
     "site_sub": "Self-study AE2.021 · USTH",
     "home_hero_title": "Self-study AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "4 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
+    "home_hero_sub": "5 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
                       "(Mike Tooley & Thomas Floyd), with a self-graded quiz and companion Python notebook.",
     "open": "Open lesson →", "soon": "Coming soon",
-    "mapping_link": "📚 Chapter mapping: 4 lectures ↔ textbook chapters",
+    "mapping_link": "📚 Chapter mapping: 5 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
               "Tooley, independently recomputed to verify each answer: see the source note on each question.",
     "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
@@ -75,7 +75,7 @@ L = {
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
-    "mapping_title": "Chapter mapping: 4 lectures ↔ reference textbook chapters",
+    "mapping_title": "Chapter mapping: 5 lectures ↔ reference textbook chapters",
     "mapping_intro": "The table below directly cross-references the tables of contents of AE2.021's two "
                       "reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd "
                       "table of contents and content of both books, not guesswork.",
@@ -131,6 +131,23 @@ MAPPING_ROWS = [
     "note_en": "This module has the WEAKEST match between the two books: Floyd is a pure digital-logic "
                "fundamentals text and does not cover computer/CPU architecture in depth like Tooley: the CPU "
                "content in this module relies mainly on Tooley.",
+  },
+  {
+    "module": "05: Data Buses",
+    "tooley": "Ch.4 Data buses (p.53-69): bus rationale, ARINC 429 (electrical/word format/BCD-BNR), other "
+              "standards (ARINC 629/AFDX/MIL-STD-1553/legacy buses), 17-question MCQ bank",
+    "floyd": "KHÔNG CÓ chương nào về bus dữ liệu hàng không trong Floyd: đây là giáo trình điện tử số thuần tuý "
+             "(cổng logic, bộ nhớ), không đề cập avionics/giao tiếp nối tiếp chuyên dụng. Toàn bộ module này dựa "
+             "vào Tooley và bộ slide bài giảng riêng của môn.",
+    "floyd_en": "Floyd has NO chapter on aircraft data buses whatsoever: it is a pure digital-electronics "
+                "textbook (logic gates, memory) with no coverage of avionics-specific serial communication. This "
+                "module relies entirely on Tooley and the course's own lecture slides.",
+    "note_vi": "Module có độ khớp THẤP NHẤT với Floyd trong cả 5 module (thấp hơn cả Module 04): chủ đề bus "
+               "hàng không hoàn toàn vắng mặt trong Floyd, nên quiz của module này chỉ có 2 nguồn (Tooley + câu "
+               "bổ sung), không có mục quiz riêng từ Floyd.",
+    "note_en": "This module has the LOWEST match with Floyd of all 5 modules (even lower than Module 04): "
+               "aircraft bus topics are entirely absent from Floyd, so this module's quiz has only 2 sources "
+               "(Tooley + supplementary questions), with no separate Floyd quiz section.",
   },
 ]
 
@@ -267,6 +284,8 @@ def build_quiz_section(lang, slug, title, qkey):
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
     items = data[qkey]
+    if not items:
+        return ""
     payload = {"items": items}
     js = json.dumps(payload, ensure_ascii=False)
     return f"""<h3>{title}</h3>
