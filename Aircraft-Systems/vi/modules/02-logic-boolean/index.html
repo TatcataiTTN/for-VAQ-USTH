@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
 <title>Hệ thống điện tử số & máy tính hàng không: Cổng logic & Đại số Boolean</title>
 <meta name="description" content="Toàn bộ hệ thống số trên máy bay, từ cảnh báo cửa càng đáp cho tới điều khiển APU, đều được xây từ các cổng logic cơ bản kết hợp theo quy tắc đại số Boolean. Module này đi từ cổng logic đơn lẻ tới mạch tổ hợp thực tế và các họ linh kiện logic dùng trên máy bay."/>
 </head>
@@ -116,19 +116,253 @@
 <h3>Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)</h3>
 <div class="quiz"><script type="application/json">{"items": [{"q": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?", "opts": ["cả hai đầu vào ở mức logic 1", "cả hai đầu vào ở mức logic 0", "một trong hai đầu vào ở mức logic 1"], "correct": 1, "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.", "src": ""}, {"q": "Cổng XOR 2 đầu vào với cả hai đầu vào bằng 1 sẽ cho đầu ra:", "opts": ["0", "không xác định", "1"], "correct": 0, "explain": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.", "src": ""}, {"q": "Theo đại số Boolean, biểu thức A + A'B rút gọn thành:", "opts": ["A · B", "A + B", "A"], "correct": 1, "explain": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.", "src": ""}, {"q": "Theo định lý De Morgan, (A·B)' bằng:", "opts": ["A + B", "A' + B'", "A'·B'"], "correct": 1, "explain": "(AB)' = A' + B' theo định lý De Morgan.", "src": ""}, {"q": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?", "opts": ["9", "8", "6"], "correct": 1, "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.", "src": ""}, {"q": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:", "opts": ["luôn reset về 0", "đảo trạng thái (toggle)", "giữ nguyên trạng thái"], "correct": 1, "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.", "src": ""}, {"q": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):", "opts": ["nhỏ hơn", "bằng nhau", "lớn hơn"], "correct": 2, "explain": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.", "src": ""}, {"q": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?", "opts": ["4", "2 (0 và 1)", "3 (0, 1, và trở kháng cao Z)"], "correct": 2, "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.", "src": ""}, {"q": "Cổng logic nào được gọi là 'cổng vạn năng' vì có thể dùng để tạo mọi hàm logic khác?", "opts": ["AND", "NAND", "XOR"], "correct": 1, "explain": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.", "src": ""}, {"q": "Trong quy ước logic dương (positive logic), mức logic 1 tương ứng với:", "opts": ["luôn đúng bằng 5V", "mức điện áp cao hơn", "mức điện áp thấp hơn"], "correct": 1, "explain": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.", "src": ""}]}</script></div>
 <h2>✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)</h2>
-<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 3 – Logic Gates và Chapter 4 – Boolean Algebra and Logic Simplification, Problems (p.180-182, p.252-253); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-3, A-4).</p>
-
+<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 3 – Logic Gates và Chapter 4 – Boolean Algebra and Logic Simplification, Problems (Ch.3 p.179-186, Ch.4 p.252-253); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-2, A-3, A-3 đến A-4).</p>
+<p class='essay-intro'><i>Chương 3 có 55 bài; chỉ các bài SỐ LẺ có đáp án in. Đã đưa lên các bài dạng sóng và ký hiệu (1 đến 27), bài mạng lập trình/VHDL/tham số (29 đến 37), bài tìm cổng hỏng và thiết kế (39 đến 51), mỗi bài kèm ảnh đề và ảnh đáp án thật. Chưa đưa: bài 41 (đọc sơ đồ chân IC trên bo mạch, chưa tự kiểm chứng độc lập được), bài 49 (phụ thuộc bài 48 và Hình 3–25), bài 53, 55 (cần file Multisim không có trong sách). Bài chẵn không có đáp án in nên không đưa.</i></p>
+<div class="essay-item">
+  <p class="essay-q"><b>1.</b> Dạng sóng đầu vào ở Hình 3–76 được đưa vào một hệ thống gồm hai cổng đảo (inverter) nối tiếp. Hãy vẽ dạng sóng ngõ ra trên mỗi cổng đảo, đúng tương quan với đầu vào.</p>
+  <p class="essay-orig"><b>Original (EN):</b> The input waveform shown in Figure 3–76 is applied to a system of two inverters connected in series. Draw the output waveform across each inverter in proper relation to the input.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_76.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_76.png" alt="Floyd Ch.3 · Problem 1 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Hai cổng đảo liên tiếp trả lại đúng dạng sóng ban đầu: ngõ ra cuối trùng ngõ vào.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 1</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q01.png" alt="Floyd Ch.3 · Problem 1" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>3.</b> Nếu đưa dạng sóng của Hình 3–76 vào điểm A của mạch Hình 3–77, hãy xác định dạng sóng tại các điểm B đến F.</p>
+  <p class="essay-orig"><b>Original (EN):</b> If the waveform in Figure 3–76 is applied to point A in Figure 3–77, determine the waveforms at points B through F.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_76.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_76.png" alt="Floyd Ch.3 · Problem 3 figure" loading="lazy"/></a><a href="../../../assets/figures/essay_floyd_fig03_77.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_77.png" alt="Floyd Ch.3 · Problem 3 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Kiểm chứng: B = Ā, C = A, D = Ā, E = A, F = Ā (C đi qua hai cổng đảo, F lấy từ C qua một cổng đảo).</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 3</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q03.png" alt="Floyd Ch.3 · Problem 3" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>5.</b> Hãy xác định ngõ ra X của cổng AND 2 ngõ vào với các dạng sóng đầu vào ở Hình 3–78. Trình bày tương quan giữa ngõ ra và các ngõ vào bằng giản đồ thời gian.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine the output, X, for a 2-input AND gate with the input waveforms shown in Figure 3–78. Show the proper relationship of output to inputs with a timing diagram.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_78.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_78.png" alt="Floyd Ch.3 · Problem 5 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 5</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q05.png" alt="Floyd Ch.3 · Problem 5" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>7.</b> Các dạng sóng đầu vào của cổng AND 3 ngõ vào được cho ở Hình 3–80. Hãy vẽ dạng sóng ngõ ra tương quan đúng với các đầu vào bằng giản đồ thời gian.</p>
+  <p class="essay-orig"><b>Original (EN):</b> The input waveforms applied to a 3-input AND gate are as indicated in Figure 3–80. Show the output waveform in proper relation to the inputs with a timing diagram.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_80.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_80.png" alt="Floyd Ch.3 · Problem 7 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 7</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q07.png" alt="Floyd Ch.3 · Problem 7" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>9.</b> Hãy vẽ ký hiệu hình chữ nhật (rectangular outline) cho cổng OR 3 ngõ vào.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Draw the rectangular outline symbol for a 3-input OR gate.</p>
+  
+  
+  <p class="pill">Floyd Ch.3 · Problem 9</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q09.png" alt="Floyd Ch.3 · Problem 9" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>11.</b> Hãy xác định ngõ ra của cổng OR 2 ngõ vào khi các dạng sóng đầu vào như ở Hình 3–79 và vẽ giản đồ thời gian.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine the output for a 2-input OR gate when the input waveforms are as in Figure 3–79 and draw a timing diagram.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_79.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_79.png" alt="Floyd Ch.3 · Problem 11 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 11</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q11.png" alt="Floyd Ch.3 · Problem 11" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>13.</b> Lặp lại Bài 8 cho cổng OR 4 ngõ vào.<br><i>Bài 8: Các dạng sóng đầu vào của cổng AND 4 ngõ vào được cho ở Hình 3–81. Ngõ ra cổng AND được đưa vào một cổng đảo. Hãy vẽ dạng sóng ngõ ra tổng của hệ thống.</i></p>
+  <p class="essay-orig"><b>Original (EN):</b> Repeat Problem 8 for a 4-input OR gate.<br><i>Problem 8: The input waveforms applied to a 4-input AND gate are as indicated in Figure 3–81. The output of the AND gate is fed to an inverter. Draw the net output waveform of this system.</i></p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_81.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_81.png" alt="Floyd Ch.3 · Problem 13 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Vì "lặp lại Bài 8" bao gồm cả cổng đảo ở ngõ ra, đáp án in là NOR (OR rồi đảo): ngõ ra chỉ lên mức cao khi cả 4 đầu vào cùng thấp. Đã kiểm chứng đúng như vậy trên toàn bộ các khoảng. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q13.png" alt="Floyd Ch.3 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>15.</b> Hãy vẽ ký hiệu hình chữ nhật (rectangular outline) cho cổng OR 4 ngõ vào.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Draw the rectangular outline symbol for a 4-input OR gate.</p>
+  
+  
+  <p class="pill">Floyd Ch.3 · Problem 15</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q15.png" alt="Floyd Ch.3 · Problem 15" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>17.</b> Với tập dạng sóng đầu vào ở Hình 3–83, hãy xác định ngõ ra của cổng được vẽ (NAND) và vẽ giản đồ thời gian.</p>
+  <p class="essay-orig"><b>Original (EN):</b> For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_83.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_83.png" alt="Floyd Ch.3 · Problem 17 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 17</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q17.png" alt="Floyd Ch.3 · Problem 17" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>19.</b> Hãy xác định dạng sóng ngõ ra trong Hình 3–85 (cổng NAND 4 ngõ vào).</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine the output waveform in Figure 3–85.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_85.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_85.png" alt="Floyd Ch.3 · Problem 19 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 19</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q19.png" alt="Floyd Ch.3 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>21.</b> Lặp lại Bài 17 cho cổng NOR 2 ngõ vào.<br><i>Bài 17: Với tập dạng sóng đầu vào ở Hình 3–83, hãy xác định ngõ ra của cổng được vẽ và vẽ giản đồ thời gian.</i></p>
+  <p class="essay-orig"><b>Original (EN):</b> Repeat Problem 17 for a 2-input NOR gate.<br><i>Problem 17: For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</i></p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_83.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_83.png" alt="Floyd Ch.3 · Problem 21 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Chỉ dùng dạng sóng đầu vào của hình; bỏ qua ký hiệu cổng vẽ trong hình vì bài yêu cầu loại cổng khác. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 21</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q21.png" alt="Floyd Ch.3 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Lặp lại Bài 19 cho cổng NOR 4 ngõ vào.<br><i>Bài 19: Hãy xác định dạng sóng ngõ ra trong Hình 3–85.</i></p>
+  <p class="essay-orig"><b>Original (EN):</b> Repeat Problem 19 for a 4-input NOR gate.<br><i>Problem 19: Determine the output waveform in Figure 3–85.</i></p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_85.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_85.png" alt="Floyd Ch.3 · Problem 23 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Chỉ dùng dạng sóng đầu vào của hình; bỏ qua ký hiệu cổng vẽ trong hình vì bài yêu cầu loại cổng khác. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q23.png" alt="Floyd Ch.3 · Problem 23" loading="lazy"/></div>
+  </details>
+</div>
 <div class="essay-item">
   <p class="essay-q"><b>25.</b> Cổng exclusive-OR (XOR) khác cổng OR như thế nào về mặt hoạt động logic?</p>
   <p class="essay-orig"><b>Original (EN):</b> How does an exclusive-OR gate differ from an OR gate in its logical operation?</p>
+  
+  
   <p class="pill">Floyd Ch.3 · Problem 25</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q25.png" alt="Floyd Ch.3 · Problem 25" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>27.</b> Lặp lại Bài 17 cho cổng exclusive-NOR.<br><i>Bài 17: Với tập dạng sóng đầu vào ở Hình 3–83, hãy xác định ngõ ra của cổng được vẽ và vẽ giản đồ thời gian.</i></p>
+  <p class="essay-orig"><b>Original (EN):</b> Repeat Problem 17 for an exclusive-NOR gate.<br><i>Problem 17: For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</i></p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_83.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_83.png" alt="Floyd Ch.3 · Problem 27 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Chỉ dùng dạng sóng đầu vào của hình; bỏ qua ký hiệu cổng vẽ trong hình vì bài yêu cầu loại cổng khác. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 27</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q27.png" alt="Floyd Ch.3 · Problem 27" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>29.</b> Trong mảng AND lập trình được với các liên kết (link) lập trình được ở Hình 3–89, hãy xác định các biểu thức Boole ở ngõ ra.</p>
+  <p class="essay-orig"><b>Original (EN):</b> In the simple programmed AND array with programmable links in Figure 3–89, determine the Boolean output expressions.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_89.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_89.png" alt="Floyd Ch.3 · Problem 29 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm chứng: đọc từng liên kết còn nguyên trong hình, cổng X1 nhận Ā và B, cổng X2 nhận Ā và B̄, cổng X3 nhận A và B̄, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 29</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q29.png" alt="Floyd Ch.3 · Problem 29" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Hãy mô tả cổng AND 4 ngõ vào bằng VHDL.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Describe a 4-input AND gate using VHDL.</p>
+  
+  <p class="essay-note"><i>Lưu ý lỗi trong đáp án in: tên entity "4InputAND" bắt đầu bằng chữ số nên KHÔNG hợp lệ trong VHDL (định danh phải bắt đầu bằng chữ cái), và dòng end entity ghi "4Input AND" có khoảng trắng. Phần logic X <= A and B and C and D là đúng.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q31.png" alt="Floyd Ch.3 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> Khi so sánh một số loại linh kiện logic, người ta thấy công suất tiêu thụ của một loại tăng lên khi tần số tăng. Linh kiện đó là lưỡng cực (bipolar) hay CMOS?</p>
+  <p class="essay-orig"><b>Original (EN):</b> In the comparison of certain logic devices, it is noted that the power dissipation for one particular type increases as the frequency increases. Is the device bipolar or CMOS?</p>
+  
+  <p class="essay-note"><i>Lý do: công suất động của CMOS tỉ lệ với tần số (mỗi lần chuyển mức phải nạp/xả điện dung), còn mạch lưỡng cực tiêu thụ gần như không đổi theo tần số.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q33.png" alt="Floyd Ch.3 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> Hãy xác định tPLH và tPHL từ màn hình dao động ký ở Hình 3–91. Các số đọc cho biết volt/vạch và giây/vạch của từng kênh.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine tPLH and tPHL from the oscilloscope display in Figure 3–91. The readings indicate volts/div and sec/div for each channel.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_91.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_91.png" alt="Floyd Ch.3 · Problem 35 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự đo trên ảnh: tại mức 50%, tPLH ≈ 4,1 ns và tPHL ≈ 11,1 ns (5 ns/vạch). Gần với đáp án in 4,3 ns và 10,5 ns; chênh lệch nhỏ do cách ước lượng điểm 50% trên màn hình, đúng bậc đại lượng và đúng quan hệ tPHL > tPLH.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q35.png" alt="Floyd Ch.3 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> Nếu một cổng logic hoạt động với nguồn một chiều +5 V và tiêu thụ dòng trung bình 4 mA, công suất tiêu tán của nó là bao nhiêu?</p>
+  <p class="essay-orig"><b>Original (EN):</b> If a logic gate operates on a dc supply voltage of +5 V and draws an average current of 4 mA, what is its power dissipation?</p>
+  
+  <p class="essay-note"><i>Tự tính: P = V × I = 5 V × 4 mA = 20 mW, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q37.png" alt="Floyd Ch.3 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Hãy xét các điều kiện nêu trong Hình 3–92 và xác định các cổng bị hỏng.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Examine the conditions indicated in Figure 3–92, and identify the faulty gates.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_92.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_92.png" alt="Floyd Ch.3 · Problem 39 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm tra từng cổng: (a) NAND(1,1)=0 đúng; (b) AND(1,1,0) phải bằng 0 nhưng ra 1, HỎNG; (c) cổng OR có hai đầu vào đảo, 0,0 thành 1,1 nên ngõ ra phải là 1 nhưng ra 0, HỎNG; (d) NOR(0,0,0,1)=0 đúng; (e) XOR(1,0) phải bằng 1 nhưng ra 0, HỎNG; (f) XOR(1,1)=0 đúng. Kết quả (b), (c), (e) khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q39.png" alt="Floyd Ch.3 · Problem 39" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>43.</b> Mỗi lần bật công tắc đánh lửa trong mạch Hình 3–17, còi báo động kêu trong ba mươi giây, kể cả khi đã cài dây an toàn. Nguyên nhân khả dĩ nhất của sự cố này là gì?</p>
+  <p class="essay-orig"><b>Original (EN):</b> Every time the ignition switch is turned on in the circuit of Figure 3–17, the alarm comes on for thirty seconds, even when the seat belt is buckled. What is the most probable cause of this malfunction?</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_17.png" alt="Floyd Ch.3 · Problem 43 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Suy luận: còi = A·B·C. Khi đã cài dây an toàn thì B phải THẤP, còi không thể kêu; nó vẫn kêu trong lúc bộ định thời (C) đang CAO nghĩa là ngõ vào B của cổng AND luôn bị đọc là CAO, tức dây ngõ vào đó bị hở (ngõ vào TTL để hở trôi lên mức cao). Khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 43</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q43.png" alt="Floyd Ch.3 · Problem 43" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>45.</b> Hãy sửa bộ đếm tần số ở Hình 3–16 để hoạt động với xung cho phép (enable) tích cực mức THẤP thay vì mức CAO trong khoảng 1 ms.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Modify the frequency counter in Figure 3–16 to operate with an enable pulse that is active-LOW rather than HIGH during the 1 ms interval.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_16.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_16.png" alt="Floyd Ch.3 · Problem 45 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Suy luận: cổng AND chỉ cho xung đi qua khi chân enable ở mức CAO; nếu enable tích cực mức THẤP thì phải đảo nó trước khi vào cổng AND, đúng như đáp án in.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 45</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q45.png" alt="Floyd Ch.3 · Problem 45" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>47.</b> Hãy thiết kế một mạch đặt vào khối màu be ở Hình 3–96 sao cho đèn pha ô tô tự động tắt sau 15 s kể từ khi công tắc đánh lửa tắt, nếu công tắc đèn vẫn đang bật. Giả sử cần mức THẤP để tắt đèn.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Design a circuit to fit in the beige block of Figure 3–96 that will cause the headlights of an automobile to be turned off automatically 15 s after the ignition switch is turned off, if the light switch is left on. Assume that a LOW is required to turn the lights off.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_96.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_96.png" alt="Floyd Ch.3 · Problem 47 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Kiểm chứng logic của đáp án in: đảo công tắc đánh lửa rồi AND với công tắc đèn, ngõ ra chỉ lên CAO khi đánh lửa TẮT và đèn BẬT; khi đó bộ định thời đếm 15 s rồi xuất mức THẤP để tắt đèn.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 47</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q47.png" alt="Floyd Ch.3 · Problem 47" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>51.</b> Trong một quy trình sản xuất tự động, linh kiện điện tử được tự động cắm vào bo mạch in (PCB). Trước khi kích hoạt dụng cụ cắm, PCB phải được định vị đúng và linh kiện cần cắm phải nằm trong buồng. Mỗi điều kiện tiên quyết này được báo bằng một mức điện áp CAO. Dụng cụ cắm cần mức điện áp THẤP để kích hoạt. Hãy thiết kế mạch thực hiện quy trình này.</p>
+  <p class="essay-orig"><b>Original (EN):</b> In a certain automated manufacturing process, electrical components are automatically inserted in a PCB. Before the insertion tool is activated, the PCB must be properly positioned, and the component to be inserted must be in the chamber. Each of these prerequisite conditions is indicated by a HIGH voltage. The insertion tool requires a LOW voltage to activate it. Design a circuit to implement this process.</p>
+  
+  <p class="essay-note"><i>Kiểm chứng: cần "cả hai điều kiện CAO thì ngõ ra THẤP", đó chính là cổng NAND, đúng như đáp án in.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 51</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q51.png" alt="Floyd Ch.3 · Problem 51" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>1.</b> Dùng ký hiệu Boolean, viết một biểu thức có giá trị 0 CHỈ KHI tất cả các biến (A, B, C, D) đều bằng 0.</p>
   <p class="essay-orig"><b>Original (EN):</b> Using Boolean notation, write an expression that is a 0 only when all of its variables (A, B, C, and D) are 0s.</p>
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 1</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q01.png" alt="Floyd Ch.4 · Problem 1" loading="lazy"/></div>
@@ -137,6 +371,8 @@
 <div class="essay-item">
   <p class="essay-q"><b>5.</b> Tìm giá trị của các biến sao cho mỗi số hạng TÍCH bằng 1 và mỗi số hạng TỔNG bằng 0:<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) <span class="ov">A</span><span class="ov">B</span>C &nbsp; (d) <span class="ov">A</span> + <span class="ov">B</span> + C<br>(e) A + <span class="ov">B</span> + <span class="ov">C</span> &nbsp; (f) <span class="ov">A</span> + <span class="ov">B</span> + <span class="ov">C</span></p>
   <p class="essay-orig"><b>Original (EN):</b> Find the values of the variables that make each product term 1 and each sum term 0.<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) <span class="ov">A</span><span class="ov">B</span>C &nbsp; (d) <span class="ov">A</span> + <span class="ov">B</span> + C<br>(e) A + <span class="ov">B</span> + <span class="ov">C</span> &nbsp; (f) <span class="ov">A</span> + <span class="ov">B</span> + <span class="ov">C</span></p>
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 5</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q05.png" alt="Floyd Ch.4 · Problem 5" loading="lazy"/></div>
@@ -145,6 +381,8 @@
 <div class="essay-item">
   <p class="essay-q"><b>7.</b> Xác định luật đại số Boole làm cơ sở cho mỗi đẳng thức sau:<br>(a) A + AB + ABC + <span class="ov">ABCD</span> = <span class="ov">ABCD</span> + ABC + AB + A<br>(b) A + <span class="ov">AB</span> + ABC + <span class="ov">ABCD</span> = <span class="ov">DCBA</span> + CBA + <span class="ov">BA</span> + A<br>(c) AB(CD + <span class="ov">CD</span> + EF + <span class="ov">EF</span>) = ABCD + AB<span class="ov">CD</span> + ABEF + AB<span class="ov">EF</span></p>
   <p class="essay-orig"><b>Original (EN):</b> Identify the law of Boolean algebra upon which each of the following equalities is based:<br>(a) A + AB + ABC + <span class="ov">ABCD</span> = <span class="ov">ABCD</span> + ABC + AB + A<br>(b) A + <span class="ov">AB</span> + ABC + <span class="ov">ABCD</span> = <span class="ov">DCBA</span> + CBA + <span class="ov">BA</span> + A<br>(c) AB(CD + <span class="ov">CD</span> + EF + <span class="ov">EF</span>) = ABCD + AB<span class="ov">CD</span> + ABEF + AB<span class="ov">EF</span></p>
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 7</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q07.png" alt="Floyd Ch.4 · Problem 7" loading="lazy"/></div>
@@ -153,6 +391,8 @@
 <div class="essay-item">
   <p class="essay-q"><b>9.</b> Áp dụng các định lý De Morgan cho mỗi biểu thức sau:<br>(a) <span class="ov">A + <span class="ov">B</span></span> &nbsp; (b) <span class="ov"><span class="ov">A</span>B</span> &nbsp; (c) <span class="ov">A + B + C</span> &nbsp; (d) <span class="ov">ABC</span><br>(e) <span class="ov">A(B + C)</span> &nbsp; (f) <span class="ov">AB</span> + <span class="ov">CD</span> &nbsp; (g) <span class="ov">AB + CD</span> &nbsp; (h) <span class="ov">(A + <span class="ov">B</span>)(<span class="ov">C</span> + D)</span></p>
   <p class="essay-orig"><b>Original (EN):</b> Apply DeMorgan's theorems to each expression:<br>(a) <span class="ov">A + <span class="ov">B</span></span> &nbsp; (b) <span class="ov"><span class="ov">A</span>B</span> &nbsp; (c) <span class="ov">A + B + C</span> &nbsp; (d) <span class="ov">ABC</span><br>(e) <span class="ov">A(B + C)</span> &nbsp; (f) <span class="ov">AB</span> + <span class="ov">CD</span> &nbsp; (g) <span class="ov">AB + CD</span> &nbsp; (h) <span class="ov">(A + <span class="ov">B</span>)(<span class="ov">C</span> + D)</span></p>
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 9</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q09.png" alt="Floyd Ch.4 · Problem 9" loading="lazy"/></div>
@@ -161,6 +401,8 @@
 <div class="essay-item">
   <p class="essay-q"><b>19.</b> Dùng các kỹ thuật đại số Boole, rút gọn các biểu thức sau đến mức tối đa có thể:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
   <p class="essay-orig"><b>Original (EN):</b> Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 19</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q19.png" alt="Floyd Ch.4 · Problem 19" loading="lazy"/></div>
@@ -170,5 +412,5 @@
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5d16e309"></script>
-<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>
+<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
+<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>

@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
 <title>Aircraft Digital Electronics & Computer Systems: Logic Gates & Boolean Algebra</title>
 <meta name="description" content="Every digital system on an aircraft, from a landing-gear-door warning to APU start control, is built from basic logic gates combined according to Boolean algebra rules. This module moves from single gates to real combinational circuits and the logic families used on aircraft."/>
 </head>
@@ -116,10 +116,132 @@
 <h3>Additional practice questions (AI-authored in the same style, answers self-verified by computation)</h3>
 <div class="quiz"><script type="application/json">{"items": [{"q": "A two-input NOR gate produces logic 1 when:", "opts": ["both inputs at logic 1", "both inputs at logic 0", "either input at logic 1"], "correct": 1, "explain": "NOR = NOT(OR); OR = 0 only when both inputs are 0, so NOR = 1 when both inputs are 0.", "src": ""}, {"q": "A two-input XOR gate with both inputs at 1 gives an output of:", "opts": ["0", "indeterminate", "1"], "correct": 0, "explain": "XOR outputs 1 only when the two inputs are DIFFERENT; (1,1) gives 0.", "src": ""}, {"q": "In Boolean algebra, the expression A + A'B simplifies to:", "opts": ["A · B", "A + B", "A"], "correct": 1, "explain": "This is the extended absorption law: A + A'B = A + B.", "src": ""}, {"q": "By De Morgan's theorem, (A·B)' equals:", "opts": ["A + B", "A' + B'", "A'·B'"], "correct": 1, "explain": "(AB)' = A' + B' by De Morgan's theorem.", "src": ""}, {"q": "A truth table with 3 input variables has how many rows (combinations)?", "opts": ["9", "8", "6"], "correct": 1, "explain": "Number of combinations = 2ⁿ with n = 3 → 2³ = 8.", "src": ""}, {"q": "A JK flip-flop with J=K=1 at the clock edge will:", "opts": ["always reset to 0", "toggle", "remain in the same state"], "correct": 1, "explain": "J = K = 1 is the characteristic toggle mode of a JK flip-flop.", "src": ""}, {"q": "Compared with TTL, CMOS logic generally has a noise margin that is:", "opts": ["less than", "equal", "greater than"], "correct": 2, "explain": "CMOS has an output voltage range close to both supply levels (rail-to-rail), so its noise margin is usually larger than TTL's.", "src": ""}, {"q": "A tri-state buffer has how many possible output states?", "opts": ["4", "2 (0 and 1)", "3 (0, 1, and high-impedance Z)"], "correct": 2, "explain": "Tri-state has a high-impedance (high-Z) state in addition to 0 and 1.", "src": ""}, {"q": "Which gate is called a 'universal gate' because any logic function can be built from it alone?", "opts": ["AND", "NAND", "XOR"], "correct": 1, "explain": "NAND (and NOR) are universal gates; NAND alone can build AND, OR, NOT, and so on.", "src": ""}, {"q": "In positive logic convention, logic 1 corresponds to:", "opts": ["always exactly 5V", "a higher voltage level", "a lower voltage level"], "correct": 1, "explain": "Positive logic convention: the higher voltage = 1, the lower voltage = 0.", "src": ""}]}</script></div>
 <h2>✍️ Free-response questions (source: Floyd, Digital Fundamentals)</h2>
-<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 3 – Logic Gates and Chapter 4 – Boolean Algebra and Logic Simplification, Problems (p.180-182, p.252-253); answers in the Answers to Odd-Numbered Problems appendix (p.A-3, A-4).</p>
-
+<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 3 – Logic Gates and Chapter 4 – Boolean Algebra and Logic Simplification, Problems (Ch.3 p.179-186, Ch.4 p.252-253); answers in the Answers to Odd-Numbered Problems appendix (p.A-2, A-3, A-3 to A-4).</p>
+<p class='essay-intro'><i>Chapter 3 has 55 problems; only the ODD-numbered ones have printed answers. Added here: waveform and symbol problems (1 to 27), programmable-array/VHDL/parameter problems (29 to 37), faulty-gate and design problems (39 to 51), each with the question figure and the real answer image. Not included: problem 41 (reading IC pin diagrams on a board, could not be independently verified), problem 49 (depends on problem 48 and Figure 3–25), problems 53 and 55 (need Multisim files not in the book). Even-numbered problems have no printed answer and are omitted.</i></p>
+<div class="essay-item">
+  <p class="essay-q"><b>1.</b> The input waveform shown in Figure 3–76 is applied to a system of two inverters connected in series. Draw the output waveform across each inverter in proper relation to the input.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_76.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_76.png" alt="Floyd Ch.3 · Problem 1 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Two inverters in a row return the original waveform: the final output equals the input.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 1</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q01.png" alt="Floyd Ch.3 · Problem 1" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>3.</b> If the waveform in Figure 3–76 is applied to point A in Figure 3–77, determine the waveforms at points B through F.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_76.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_76.png" alt="Floyd Ch.3 · Problem 3 figure" loading="lazy"/></a><a href="../../../assets/figures/essay_floyd_fig03_77.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_77.png" alt="Floyd Ch.3 · Problem 3 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Check: B = A′, C = A, D = A′, E = A, F = A′ (C passes through two inverters, F is taken from C through one inverter).</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 3</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q03.png" alt="Floyd Ch.3 · Problem 3" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>5.</b> Determine the output, X, for a 2-input AND gate with the input waveforms shown in Figure 3–78. Show the proper relationship of output to inputs with a timing diagram.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_78.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_78.png" alt="Floyd Ch.3 · Problem 5 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 5</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q05.png" alt="Floyd Ch.3 · Problem 5" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>7.</b> The input waveforms applied to a 3-input AND gate are as indicated in Figure 3–80. Show the output waveform in proper relation to the inputs with a timing diagram.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_80.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_80.png" alt="Floyd Ch.3 · Problem 7 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 7</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q07.png" alt="Floyd Ch.3 · Problem 7" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>9.</b> Draw the rectangular outline symbol for a 3-input OR gate.</p>
+  
+  
+  
+  <p class="pill">Floyd Ch.3 · Problem 9</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q09.png" alt="Floyd Ch.3 · Problem 9" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>11.</b> Determine the output for a 2-input OR gate when the input waveforms are as in Figure 3–79 and draw a timing diagram.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_79.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_79.png" alt="Floyd Ch.3 · Problem 11 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 11</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q11.png" alt="Floyd Ch.3 · Problem 11" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>13.</b> Repeat Problem 8 for a 4-input OR gate.<br><i>Problem 8: The input waveforms applied to a 4-input AND gate are as indicated in Figure 3–81. The output of the AND gate is fed to an inverter. Draw the net output waveform of this system.</i></p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_81.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_81.png" alt="Floyd Ch.3 · Problem 13 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Because "repeat Problem 8" includes the inverter at the output, the printed answer is a NOR (OR followed by inversion): the output is HIGH only when all four inputs are LOW. This was verified across all intervals. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q13.png" alt="Floyd Ch.3 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>15.</b> Draw the rectangular outline symbol for a 4-input OR gate.</p>
+  
+  
+  
+  <p class="pill">Floyd Ch.3 · Problem 15</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q15.png" alt="Floyd Ch.3 · Problem 15" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>17.</b> For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_83.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_83.png" alt="Floyd Ch.3 · Problem 17 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 17</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q17.png" alt="Floyd Ch.3 · Problem 17" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>19.</b> Determine the output waveform in Figure 3–85.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_85.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_85.png" alt="Floyd Ch.3 · Problem 19 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 19</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q19.png" alt="Floyd Ch.3 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>21.</b> Repeat Problem 17 for a 2-input NOR gate.<br><i>Problem 17: For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</i></p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_83.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_83.png" alt="Floyd Ch.3 · Problem 21 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Use only the input waveforms of the figure; ignore the gate symbol drawn in it, since the problem asks for a different gate. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 21</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q21.png" alt="Floyd Ch.3 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Repeat Problem 19 for a 4-input NOR gate.<br><i>Problem 19: Determine the output waveform in Figure 3–85.</i></p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_85.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_85.png" alt="Floyd Ch.3 · Problem 23 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Use only the input waveforms of the figure; ignore the gate symbol drawn in it, since the problem asks for a different gate. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q23.png" alt="Floyd Ch.3 · Problem 23" loading="lazy"/></div>
+  </details>
+</div>
 <div class="essay-item">
   <p class="essay-q"><b>25.</b> How does an exclusive-OR gate differ from an OR gate in its logical operation?</p>
+  
+  
   
   <p class="pill">Floyd Ch.3 · Problem 25</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -127,7 +249,119 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>27.</b> Repeat Problem 17 for an exclusive-NOR gate.<br><i>Problem 17: For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</i></p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_83.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_83.png" alt="Floyd Ch.3 · Problem 27 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Use only the input waveforms of the figure; ignore the gate symbol drawn in it, since the problem asks for a different gate. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 27</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q27.png" alt="Floyd Ch.3 · Problem 27" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>29.</b> In the simple programmed AND array with programmable links in Figure 3–89, determine the Boolean output expressions.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_89.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_89.png" alt="Floyd Ch.3 · Problem 29 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Self-check: reading every intact link in the figure, gate X1 receives A′ and B, gate X2 receives A′ and B′, gate X3 receives A and B′, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 29</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q29.png" alt="Floyd Ch.3 · Problem 29" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Describe a 4-input AND gate using VHDL.</p>
+  
+  
+  <p class="essay-note"><i>Note on errors in the printed answer: the entity name "4InputAND" starts with a digit, so it is NOT a legal VHDL identifier (identifiers must start with a letter), and the end entity line reads "4Input AND" with a space. The logic X <= A and B and C and D is correct.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q31.png" alt="Floyd Ch.3 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> In the comparison of certain logic devices, it is noted that the power dissipation for one particular type increases as the frequency increases. Is the device bipolar or CMOS?</p>
+  
+  
+  <p class="essay-note"><i>Reason: CMOS dynamic power grows with frequency (each transition charges/discharges capacitance), while bipolar logic draws nearly constant power regardless of frequency.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q33.png" alt="Floyd Ch.3 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> Determine tPLH and tPHL from the oscilloscope display in Figure 3–91. The readings indicate volts/div and sec/div for each channel.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_91.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_91.png" alt="Floyd Ch.3 · Problem 35 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Own measurement on the image: at the 50% level, tPLH ≈ 4.1 ns and tPHL ≈ 11.1 ns (5 ns/div). Close to the printed 4.3 ns and 10.5 ns; the small difference comes from how the 50% point is estimated on screen. The order of magnitude and the relation tPHL > tPLH both agree.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q35.png" alt="Floyd Ch.3 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> If a logic gate operates on a dc supply voltage of +5 V and draws an average current of 4 mA, what is its power dissipation?</p>
+  
+  
+  <p class="essay-note"><i>Own calculation: P = V × I = 5 V × 4 mA = 20 mW, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q37.png" alt="Floyd Ch.3 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Examine the conditions indicated in Figure 3–92, and identify the faulty gates.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_92.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_92.png" alt="Floyd Ch.3 · Problem 39 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Gate-by-gate check: (a) NAND(1,1)=0 correct; (b) AND(1,1,0) must be 0 but shows 1, FAULTY; (c) an OR gate with inverted inputs turns 0,0 into 1,1, so the output must be 1 but shows 0, FAULTY; (d) NOR(0,0,0,1)=0 correct; (e) XOR(1,0) must be 1 but shows 0, FAULTY; (f) XOR(1,1)=0 correct. (b), (c), (e) match the printed answer.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q39.png" alt="Floyd Ch.3 · Problem 39" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>43.</b> Every time the ignition switch is turned on in the circuit of Figure 3–17, the alarm comes on for thirty seconds, even when the seat belt is buckled. What is the most probable cause of this malfunction?</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_17.png" alt="Floyd Ch.3 · Problem 43 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Reasoning: alarm = A·B·C. With the belt buckled B must be LOW and the alarm cannot sound; if it still sounds while the timer (C) is HIGH, the AND gate's B input must always be read as HIGH, i.e. that input wire is open (an open TTL input floats HIGH). Matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 43</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q43.png" alt="Floyd Ch.3 · Problem 43" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>45.</b> Modify the frequency counter in Figure 3–16 to operate with an enable pulse that is active-LOW rather than HIGH during the 1 ms interval.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_16.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_16.png" alt="Floyd Ch.3 · Problem 45 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Reasoning: the AND gate only passes pulses while its enable pin is HIGH; with an active-LOW enable it must be inverted before reaching the AND gate, as in the printed answer.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 45</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q45.png" alt="Floyd Ch.3 · Problem 45" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>47.</b> Design a circuit to fit in the beige block of Figure 3–96 that will cause the headlights of an automobile to be turned off automatically 15 s after the ignition switch is turned off, if the light switch is left on. Assume that a LOW is required to turn the lights off.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig03_96.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig03_96.png" alt="Floyd Ch.3 · Problem 47 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Logic check of the printed answer: invert the ignition switch and AND it with the light switch; the output goes HIGH only when the ignition is OFF and the lights are ON, after which the timer counts 15 s and outputs a LOW to turn the lights off.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 47</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q47.png" alt="Floyd Ch.3 · Problem 47" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>51.</b> In a certain automated manufacturing process, electrical components are automatically inserted in a PCB. Before the insertion tool is activated, the PCB must be properly positioned, and the component to be inserted must be in the chamber. Each of these prerequisite conditions is indicated by a HIGH voltage. The insertion tool requires a LOW voltage to activate it. Design a circuit to implement this process.</p>
+  
+  
+  <p class="essay-note"><i>Check: the requirement "both conditions HIGH gives a LOW output" is exactly a NAND gate, as in the printed answer.</i></p>
+  <p class="pill">Floyd Ch.3 · Problem 51</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch03_q51.png" alt="Floyd Ch.3 · Problem 51" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>1.</b> Using Boolean notation, write an expression that is a 0 only when all of its variables (A, B, C, and D) are 0s.</p>
+  
+  
   
   <p class="pill">Floyd Ch.4 · Problem 1</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -137,6 +371,8 @@
 <div class="essay-item">
   <p class="essay-q"><b>5.</b> Find the values of the variables that make each product term 1 and each sum term 0.<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) <span class="ov">A</span><span class="ov">B</span>C &nbsp; (d) <span class="ov">A</span> + <span class="ov">B</span> + C<br>(e) A + <span class="ov">B</span> + <span class="ov">C</span> &nbsp; (f) <span class="ov">A</span> + <span class="ov">B</span> + <span class="ov">C</span></p>
   
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 5</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q05.png" alt="Floyd Ch.4 · Problem 5" loading="lazy"/></div>
@@ -144,6 +380,8 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>7.</b> Identify the law of Boolean algebra upon which each of the following equalities is based:<br>(a) A + AB + ABC + <span class="ov">ABCD</span> = <span class="ov">ABCD</span> + ABC + AB + A<br>(b) A + <span class="ov">AB</span> + ABC + <span class="ov">ABCD</span> = <span class="ov">DCBA</span> + CBA + <span class="ov">BA</span> + A<br>(c) AB(CD + <span class="ov">CD</span> + EF + <span class="ov">EF</span>) = ABCD + AB<span class="ov">CD</span> + ABEF + AB<span class="ov">EF</span></p>
+  
+  
   
   <p class="pill">Floyd Ch.4 · Problem 7</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -153,6 +391,8 @@
 <div class="essay-item">
   <p class="essay-q"><b>9.</b> Apply DeMorgan's theorems to each expression:<br>(a) <span class="ov">A + <span class="ov">B</span></span> &nbsp; (b) <span class="ov"><span class="ov">A</span>B</span> &nbsp; (c) <span class="ov">A + B + C</span> &nbsp; (d) <span class="ov">ABC</span><br>(e) <span class="ov">A(B + C)</span> &nbsp; (f) <span class="ov">AB</span> + <span class="ov">CD</span> &nbsp; (g) <span class="ov">AB + CD</span> &nbsp; (h) <span class="ov">(A + <span class="ov">B</span>)(<span class="ov">C</span> + D)</span></p>
   
+  
+  
   <p class="pill">Floyd Ch.4 · Problem 9</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q09.png" alt="Floyd Ch.4 · Problem 9" loading="lazy"/></div>
@@ -160,6 +400,8 @@
 </div>
 <div class="essay-item">
   <p class="essay-q"><b>19.</b> Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
+  
+  
   
   <p class="pill">Floyd Ch.4 · Problem 19</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -170,5 +412,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5d16e309"></script>
-<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>
+<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
+<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>

@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5d16e309"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5d16e309"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
 <title>Aircraft Digital Electronics & Computer Systems: Number Systems in Aircraft Digital Data</title>
 <meta name="description" content="All data inside aircraft computers (FMGC, FWC, SDAC…) is processed in binary, but humans need intermediate number systems (octal, hexadecimal, BCD) to read and enter data conveniently. This module rebuilds the four core number systems and their real applications on the Airbus A320."/>
 </head>
@@ -116,10 +116,42 @@
 <h3>Additional practice questions (AI-authored in the same style, answers self-verified by computation)</h3>
 <div class="quiz"><script type="application/json">{"items": [{"q": "The decimal number 45 is equivalent to the binary number:", "opts": ["100101", "101101", "101110"], "correct": 1, "explain": "45 = 32+8+4+1 → 101101₂.", "src": ""}, {"q": "The binary number 11001 is equivalent to the decimal number:", "opts": ["25", "19", "27"], "correct": 0, "explain": "16+8+0+0+1 = 25.", "src": ""}, {"q": "The hex number 2F is equivalent to the decimal number:", "opts": ["45", "47", "49"], "correct": 1, "explain": "2·16+15 = 47.", "src": ""}, {"q": "The decimal number 200 is equivalent to the hex number:", "opts": ["B4", "C8", "D2"], "correct": 1, "explain": "200 = 12·16+8 → C8.", "src": ""}, {"q": "The octal number 47 is equivalent to the decimal number:", "opts": ["41", "39", "37"], "correct": 1, "explain": "4·8+7 = 39.", "src": ""}, {"q": "The decimal number 68 is equivalent to the BCD code:", "opts": ["01111000", "01101000", "01100100"], "correct": 1, "explain": "6→0110, 8→1000 → 01101000.", "src": ""}, {"q": "The binary number 11110000 is equivalent to the hex number:", "opts": ["0F", "FF", "F0"], "correct": 2, "explain": "1111=F, 0000=0 → F0.", "src": ""}, {"q": "The two's complement of the 5-bit binary number 01101 is:", "opts": ["01100", "10010", "10011"], "correct": 2, "explain": "Invert the bits: 10010, add 1 → 10011.", "src": ""}, {"q": "The binary number 11100101 is equivalent to the octal number:", "opts": ["344", "345", "354"], "correct": 1, "explain": "Group 3 bits from the right (pad on the left): 011 100 101 → 3 4 5 → 345₈.", "src": ""}, {"q": "The ASCII code (hex) of the character 'A' is:", "opts": ["40", "41", "42"], "correct": 1, "explain": "'A' = 65 decimal = 41 hex (ASCII standard).", "src": ""}]}</script></div>
 <h2>✍️ Free-response questions (source: Floyd, Digital Fundamentals)</h2>
-<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 2 – Number Systems, Operations, and Codes, Problems (p.118-122); answers in the Answers to Odd-Numbered Problems appendix (p.A-1, A-2).</p>
-
+<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 2 – Number Systems, Operations, and Codes, Problems (p.117-121); answers in the Answers to Odd-Numbered Problems appendix (p.A-1, A-2).</p>
+<p class='essay-intro'><i>Chapter 2 has 69 problems; only the ODD-numbered ones have printed answers. All 35 odd problems are included here, each with the real answer image; every numeric answer was recomputed in Python. The cross-check found 3 REAL PRINTING ERRORS in the book's answers: Problems 5(c), 29(b) and 37(g), flagged directly under each problem. Even-numbered problems have no printed answer and are omitted.</i></p>
+<div class="essay-item">
+  <p class="essay-q"><b>1.</b> What is the weight of 7 in each of the following decimal numbers?<br>(a) 1947 &nbsp; (b) 1799 &nbsp; (c) 1979</p>
+  
+  
+  <p class="essay-note"><i>Self-check: 7 is in the units (1), hundreds (100) and tens (10) positions respectively, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 1</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q01.png" alt="Floyd Ch.2 · Problem 1" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>3.</b> Give the value of each digit in the following decimal numbers:<br>(a) 263 &nbsp; (b) 5436 &nbsp; (c) 234543</p>
+  
+  
+  <p class="essay-note"><i>Self-check: each digit times its positional weight, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 3</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q03.png" alt="Floyd Ch.2 · Problem 3" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>5.</b> Convert the following binary numbers to decimal:<br>(a) 001 &nbsp; (b) 010 &nbsp; (c) 101 &nbsp; (d) 110<br>(e) 1010 &nbsp; (f) 1011 &nbsp; (g) 1110 &nbsp; (h) 1111</p>
+  
+  
+  <p class="essay-note"><i>A REAL PRINTING ERROR in the book: item (c) 101₂ = 4+0+1 = 5, but the printed answer says 3. All other items (1, 2, 6, 10, 11, 14, 15) are correct. Do not memorise the 3.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 5</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q05.png" alt="Floyd Ch.2 · Problem 5" loading="lazy"/></div>
+  </details>
+</div>
 <div class="essay-item">
   <p class="essay-q"><b>7.</b> Convert each binary number to decimal:<br>(a) 110011.11 &nbsp; (b) 101010.01 &nbsp; (c) 1000001.111<br>(d) 1111000.101 &nbsp; (e) 1011100.10101 &nbsp; (f) 1110001.0001<br>(g) 1011010.1010 &nbsp; (h) 1111111.11111</p>
+  
+  
   
   <p class="pill">Floyd Ch.2 · Problem 7</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -127,7 +159,29 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>9.</b> How many bits are required to represent the following decimal numbers?<br>(a) 5 &nbsp; (b) 10 &nbsp; (c) 15 &nbsp; (d) 20<br>(e) 100 &nbsp; (f) 120 &nbsp; (g) 140 &nbsp; (h) 160</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (minimum bits = binary length of the number).</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 9</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q09.png" alt="Floyd Ch.2 · Problem 9" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>11.</b> Convert each decimal number to binary by using the sum-of-weights method:<br>(a) 12 &nbsp; (b) 15 &nbsp; (c) 25 &nbsp; (d) 50<br>(e) 65 &nbsp; (f) 97 &nbsp; (g) 127 &nbsp; (h) 198</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 11</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q11.png" alt="Floyd Ch.2 · Problem 11" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>13.</b> Convert each decimal number to binary using repeated division by 2:<br>(a) 13 &nbsp; (b) 17 &nbsp; (c) 23 &nbsp; (d) 30<br>(e) 35 &nbsp; (f) 40 &nbsp; (g) 49 &nbsp; (h) 60</p>
+  
+  
   
   <p class="pill">Floyd Ch.2 · Problem 13</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -135,7 +189,39 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>15.</b> Add the binary numbers:<br>(a) 10 + 10 &nbsp; (b) 10 + 11 &nbsp; (c) 100 + 11<br>(d) 111 + 101 &nbsp; (e) 1111 + 111 &nbsp; (f) 1111 + 1111</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 15</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q15.png" alt="Floyd Ch.2 · Problem 15" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>17.</b> Perform the following binary multiplications:<br>(a) 11 × 10 &nbsp; (b) 101 × 11 &nbsp; (c) 111 × 110<br>(d) 1100 × 101 &nbsp; (e) 1110 × 1110 &nbsp; (f) 1111 × 1100</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 17</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q17.png" alt="Floyd Ch.2 · Problem 17" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>19.</b> What are two ways of representing zero in 1's complement form?</p>
+  
+  
+  <p class="essay-note"><i>Check by definition: 00000000 and its bit-inversion 11111111 ("negative zero") both represent 0.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 19</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q19.png" alt="Floyd Ch.2 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>21.</b> Determine the 1's complement of each binary number:<br>(a) 100 &nbsp; (b) 111 &nbsp; (c) 1100<br>(d) 10111011 &nbsp; (e) 1001010 &nbsp; (f) 10101010</p>
+  
+  
   
   <p class="pill">Floyd Ch.2 · Problem 21</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -143,7 +229,19 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>23.</b> Express each decimal number in binary as an 8-bit sign-magnitude number:<br>(a) +29 &nbsp; (b) −85 &nbsp; (c) +100 &nbsp; (d) −123</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q23.png" alt="Floyd Ch.2 · Problem 23" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>25.</b> Express each decimal number as an 8-bit number in the 2’s complement form:<br>(a) +12 &nbsp; (b) −68 &nbsp; (c) +101 &nbsp; (d) −125</p>
+  
+  
   
   <p class="pill">Floyd Ch.2 · Problem 25</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -151,7 +249,119 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>27.</b> Determine the decimal value of each signed binary number in the 1's complement form:<br>(a) 10011001 &nbsp; (b) 01110100 &nbsp; (c) 10111111</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 27</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q27.png" alt="Floyd Ch.2 · Problem 27" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>29.</b> Express each of the following sign-magnitude binary numbers in single-precision floating-point format:<br>(a) 0111110000101011 &nbsp; (b) 100110000011000</p>
+  
+  
+  <p class="essay-note"><i>PRINTING ERROR in item (b): by IEEE 754 the value −3096 has mantissa 10000011000 followed by zeros (confirmed with Python's struct.pack), but the printed answer shows 11000001100... (shifted by one place with an extra leading 1). The sign and the exponent 10001010 in the printed answer are correct. Item (a) is fully correct.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 29</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q29.png" alt="Floyd Ch.2 · Problem 29" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Convert each pair of decimal numbers to binary and add using the 2's complement form:<br>(a) 33 and 15 &nbsp; (b) 56 and −27 &nbsp; (c) −46 and 25 &nbsp; (d) −110 and −84</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. Item (d) needs 9 bits because −194 does not fit in 8 bits.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q31.png" alt="Floyd Ch.2 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> Perform each addition in the 2's complement form:<br>(a) 10001100 + 00111001 &nbsp; (b) 11011001 + 11100111</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (the overflow carry is discarded in item b).</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q33.png" alt="Floyd Ch.2 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> Multiply 01101010 by 11110001 in the 2's complement form.</p>
+  
+  
+  <p class="essay-note"><i>Own calculation: 106 × (−15) = −1590; its 12-bit two's complement is 100111001010, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q35.png" alt="Floyd Ch.2 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> Convert each hexadecimal number to binary:<br>(a) 46<sub>16</sub> &nbsp; (b) 54<sub>16</sub> &nbsp; (c) B4<sub>16</sub> &nbsp; (d) 1A3<sub>16</sub><br>(e) FA<sub>16</sub> &nbsp; (f) ABC<sub>16</sub> &nbsp; (g) ABCD<sub>16</sub></p>
+  
+  
+  <p class="essay-note"><i>PRINTING ERROR in item (g): ABCD₁₆ = 1010 1011 1100 1101 = 1010101111001101, but the printed answer is 1010110010111101 (that is ACBD₁₆, with the two middle groups swapped). All other items are correct.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q37.png" alt="Floyd Ch.2 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Convert each hexadecimal number to decimal:<br>(a) 42<sub>16</sub> &nbsp; (b) 64<sub>16</sub> &nbsp; (c) 2B<sub>16</sub> &nbsp; (d) 4D<sub>16</sub><br>(e) FF<sub>16</sub> &nbsp; (f) BC<sub>16</sub> &nbsp; (g) 6F1<sub>16</sub> &nbsp; (h) ABC<sub>16</sub></p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q39.png" alt="Floyd Ch.2 · Problem 39" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>41.</b> Perform the following additions:<br>(a) 25<sub>16</sub> + 33<sub>16</sub> &nbsp; (b) 43<sub>16</sub> + 62<sub>16</sub> &nbsp; (c) A4<sub>16</sub> + F5<sub>16</sub> &nbsp; (d) FC<sub>16</sub> + AE<sub>16</sub></p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 41</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q41.png" alt="Floyd Ch.2 · Problem 41" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>43.</b> Convert each octal number to decimal:<br>(a) 14<sub>8</sub> &nbsp; (b) 53<sub>8</sub> &nbsp; (c) 67<sub>8</sub> &nbsp; (d) 174<sub>8</sub><br>(e) 635<sub>8</sub> &nbsp; (f) 254<sub>8</sub> &nbsp; (g) 2673<sub>8</sub> &nbsp; (h) 7777<sub>8</sub></p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 43</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q43.png" alt="Floyd Ch.2 · Problem 43" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>45.</b> Convert each octal number into binary:<br>(a) 17<sub>8</sub> &nbsp; (b) 26<sub>8</sub> &nbsp; (c) 145<sub>8</sub><br>(d) 456<sub>8</sub> &nbsp; (e) 653<sub>8</sub> &nbsp; (f) 777<sub>8</sub></p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 45</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q45.png" alt="Floyd Ch.2 · Problem 45" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>47.</b> Convert each of the following decimal numbers to 8421 BCD:<br>(a) 10 &nbsp; (b) 13 &nbsp; (c) 18 &nbsp; (d) 21 &nbsp; (e) 25 &nbsp; (f) 36<br>(g) 44 &nbsp; (h) 57 &nbsp; (i) 69 &nbsp; (j) 98 &nbsp; (k) 125 &nbsp; (l) 156</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. The printed answer spans two pages (the image stitches the end of page A-1 and the top of page A-2).</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 47</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q47.png" alt="Floyd Ch.2 · Problem 47" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>49.</b> Convert the following decimal numbers to BCD:<br>(a) 104 &nbsp; (b) 128 &nbsp; (c) 132 &nbsp; (d) 150 &nbsp; (e) 186<br>(f) 210 &nbsp; (g) 359 &nbsp; (h) 547 &nbsp; (i) 1051</p>
+  
+  
   
   <p class="pill">Floyd Ch.2 · Problem 49</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
@@ -159,16 +369,108 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>51.</b> Convert each of the BCD numbers to decimal:<br>(a) 10000000 &nbsp; (b) 001000110111<br>(c) 001101000110 &nbsp; (d) 010000100001<br>(e) 011101010100 &nbsp; (f) 100000000000<br>(g) 100101111000 &nbsp; (h) 0001011010000011<br>(i) 1001000000011000 &nbsp; (j) 0110011001100111</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 51</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q51.png" alt="Floyd Ch.2 · Problem 51" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>53.</b> Add the following BCD numbers:<br>(a) 1000 + 0110 &nbsp; (b) 0111 + 0101<br>(c) 1001 + 1000 &nbsp; (d) 1001 + 0111<br>(e) 00100101 + 00100111 &nbsp; (f) 01010001 + 01011000<br>(g) 10011000 + 10010111 &nbsp; (h) 010101100001 + 011100001000</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (add as decimal values, then re-encode as BCD).</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 53</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q53.png" alt="Floyd Ch.2 · Problem 53" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>55.</b> In a certain application a 4-bit binary sequence cycles from 1111 to 0000 periodically. There are four bit changes, and because of circuit delays, these changes may not occur at the same instant. For example, if the LSB changes first, the number will appear as 1110 during the transition from 1111 to 0000 and may be misinterpreted by the system. Illustrate how the Gray code avoids this problem.</p>
+  
+  
+  <p class="essay-note"><i>Self-check: in 4-bit Gray code the last code 1000 returns to 0000 by changing exactly one bit, so there is no wrong intermediate state.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 55</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q55.png" alt="Floyd Ch.2 · Problem 55" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>57.</b> Convert each Gray code to binary:<br>(a) 1010 &nbsp; (b) 00010 &nbsp; (c) 11000010001</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (MSB kept, each following bit is XORed with the previous binary bit).</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 57</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q57.png" alt="Floyd Ch.2 · Problem 57" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>59.</b> Determine each ASCII character. Refer to Table 2–7.<br>(a) 0011000 &nbsp; (b) 1001010 &nbsp; (c) 0111101<br>(d) 0100011 &nbsp; (e) 0111110 &nbsp; (f) 1000010</p>
+  
+  
+  <p class="essay-note"><i>Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. 0011000 = decimal 24 is the control character CAN (Cancel).</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 59</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q59.png" alt="Floyd Ch.2 · Problem 59" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>61.</b> Write the message in Problem 60 in hexadecimal.<br><i>Problem 60: Decode the following ASCII coded message: 1001000 1100101 1101100 1101100 1101111 0101110 0100000 1001000 1101111 1110111 0100000 1100001 1110010 1100101 0100000 1111001 1101111 1110101 0111111</i></p>
+  
+  
+  <p class="essay-note"><i>The decoded message is "Hello. How are you?" (decoded in Python); converting each character to hex gives the same 19 bytes as the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 61</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q61.png" alt="Floyd Ch.2 · Problem 61" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>63.</b> Determine which of the following even parity codes are in error:<br>(a) 100110010 &nbsp; (b) 011101010 &nbsp; (c) 10111111010001010</p>
+  
+  
   
   <p class="pill">Floyd Ch.2 · Problem 63</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q63.png" alt="Floyd Ch.2 · Problem 63" loading="lazy"/></div>
   </details>
 </div>
+<div class="essay-item">
+  <p class="essay-q"><b>65.</b> Attach the proper even parity bit to each of the following bytes of data:<br>(a) 10100100 &nbsp; (b) 00001001 &nbsp; (c) 11111110</p>
+  
+  
+  <p class="essay-note"><i>Self-check: count the 1s (3, 2, 7); the parity bit is placed in front of the byte (1, 0, 1) so the total number of 1s is even, as in the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 65</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q65.png" alt="Floyd Ch.2 · Problem 65" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>67.</b> Verify that modulo-2 subtraction is the same as modulo-2 addition by adding the result of each operation in problem 66 to either of the original numbers to get the other number. This will show that the result is the same as the difference of the two numbers.<br><i>Problem 66: Apply modulo-2 to the following: (a) 1100 + 1011 &nbsp; (b) 1111 + 0100 &nbsp; (c) 10011001 + 100011100</i></p>
+  
+  
+  <p class="essay-note"><i>Own XOR calculation: 1100⊕1011 = 0111; 1111⊕0100 = 1011; 10011001⊕100011100 = 110000101; XORing each result with one original number returns the other.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 67</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q67.png" alt="Floyd Ch.2 · Problem 67" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>69.</b> Assume that the code produced in problem 68 incurs an error in the most significant bit during transmission. Apply CRC to detect the error.<br><i>Problem 68: Apply CRC to the data bits 10110010 using the generator code 1010 to produce the transmitted CRC code.</i></p>
+  
+  
+  <p class="essay-note"><i>Own calculation (the book prints no answer for Problem 68): the CRC of 10110010 with 1010 is 110, so the transmitted code is 10110010110. An MSB error gives 00110010110, whose remainder on division by 1010 is 100 (4 bits: 0100), non-zero, so the error is detected, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.2 · Problem 69</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch02_q69.png" alt="Floyd Ch.2 · Problem 69" loading="lazy"/></div>
+  </details>
+</div>
 </div><footer class="site"><div class="wrap">
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5d16e309"></script>
-<script src="../../../_shared/deck.js?v=5d16e309"></script><script src="../../../_shared/quiz.js?v=5d16e309"></script></body></html>
+<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
+<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>

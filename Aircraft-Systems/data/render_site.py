@@ -322,9 +322,20 @@ def build_essay_section(lang, slug):
         if lang == "vi":
             orig = f'<p class="essay-orig"><b>Original (EN):</b> {ovl(it["q_en"])}</p>'
         img_src = "../../../assets/figures/" + it["img"]
+        qfigs = ""
+        for qi in it.get("qimgs", []):
+            qsrc = "../../../assets/figures/" + qi
+            qfigs += f'<a href="{qsrc}" target="_blank" rel="noopener"><img src="{qsrc}" alt="{it["src"]} figure" loading="lazy"/></a>'
+        if qfigs:
+            qfigs = f'<div class="essay-qfig">{qfigs}</div>'
+        inote = ""
+        if it.get("note_" + lang):
+            inote = f'<p class="essay-note"><i>{it["note_" + lang]}</i></p>'
         rows.append(f"""<div class="essay-item">
   <p class="essay-q"><b>{it['num']}.</b> {qtext}</p>
   {orig}
+  {qfigs}
+  {inote}
   <p class="pill">{it['src']}</p>
   <details class="essay-answer"><summary>{t['essay_reveal']}</summary>
     <div class="essay-answer-body"><img src="{img_src}" alt="{it['src']}" loading="lazy"/></div>
