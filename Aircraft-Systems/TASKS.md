@@ -48,6 +48,13 @@ Ngày khởi tạo: 2026-09-28.
   này vì Tooley chỉ có "Test Your Understanding" không kèm đáp án in sẵn (không đủ điều kiện theo đúng
   tiêu chuẩn essay đã áp dụng ở Epic 12, vốn chỉ dùng câu có đáp án ẢNH CHỤP THẬT).
 
+## Epic 14 — Mở rộng câu tự luận Floyd (đề có hình + ảnh đáp án thật) 🟡 (2026-10-05)
+- [x] Hạ tầng: `qimgs` (ảnh đề cắt từ sách, giữ nguyên gạch trên) và `note_vi/note_en` từng bài trong `essay_questions.py` + `build_essay_section()`. Toàn bộ ảnh trang, ảnh cắt, script kiểm chứng nằm trong `OCR_output/Floyd/{pages,crops,scripts,text}`.
+- [x] **Module 01 (Ch.2)**: đủ 35 bài lẻ; phát hiện 3 lỗi in: Bài 5(c), 29(b), 37(g).
+- [x] **Module 02 (Ch.3 + Ch.4)**: Ch.3 thêm 24 bài (dạng sóng kiểm chứng bằng đọc pixel `wavetools.py`/`verify_ch3.py`); Ch.4 thêm 15 bài (sympy, `verify_ch4.py`). Lỗi in/không khớp: Ch.3 Q31 (tên entity bắt đầu bằng chữ số), Ch.4 Q21(b), Q61 (X/Y), Q3 và Q15 (đáp án in không khớp đề).
+- [x] **Module 03 (Ch.6)**: thêm 8 bài (5, 7, 11, 13, 17, 19, 21, 23), tổng 11. Loại vì đáp án in không khớp đề: Q9, Q25, Q27 (Gray→nhị phân của số khác), Q29 (sóng XOR ứng với dữ liệu ngược Bài 28).
+- [ ] **CHƯA LÀM**: Module 04 (Ch.11): các bài lẻ còn lại có hình hoặc cần lập bảng (1, 7, 11, 13, 15, 17, 19, 29 đến 37); Ch.3 bài 41, 49, 53, 55; Ch.4 bài 11, 17, 25 đến 29, 43, 55 đến 59; Ch.6 bài 31 đến 37.
+
 ## Epic 12 — Câu hỏi tự luận (Problems) từ Floyd, đáp án là ảnh chụp thật 🟢 (2026-09-28)
 - [x] **Khảo sát cấu trúc 2 sách**: Tooley (Aircraft Digital Electronic and Computer Systems) chỉ có mục
   "Multiple-choice questions" cuối mỗi chương, KHÔNG có phần tự luận riêng (đã kiểm tra mục lục gốc, xác

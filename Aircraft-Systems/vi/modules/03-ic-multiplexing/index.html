@@ -117,7 +117,7 @@
 <div class="quiz"><script type="application/json">{"items": [{"q": "Một bộ dồn kênh 8-sang-1 (8-to-1 multiplexer) cần bao nhiêu đường chọn?", "opts": ["2", "3", "4"], "correct": 1, "explain": "2ⁿ=8 → n=3 đường chọn.", "src": ""}, {"q": "Một bộ giải mã (decoder) 3-sang-8 đường có bao nhiêu ngõ ra?", "opts": ["8", "6", "3"], "correct": 0, "explain": "Decoder n-sang-2ⁿ với n=3 → 2³=8 ngõ ra.", "src": ""}, {"q": "Một IC chứa khoảng 500 cổng logic thường được xếp vào quy mô tích hợp nào?", "opts": ["SSI", "LSI", "MSI"], "correct": 1, "explain": "Khoảng vài trăm tới ~10.000 cổng tương ứng LSI (theo phân loại dùng trong chương này).", "src": ""}, {"q": "Bộ giải dồn kênh (demultiplexer) thực hiện chức năng ngược lại với:", "opts": ["bộ so sánh (comparator)", "bộ dồn kênh (multiplexer)", "bộ mã hoá (encoder)"], "correct": 1, "explain": "Demux đưa 1 nguồn vào ra nhiều đường, ngược với chức năng dồn nhiều vào 1 của mux.", "src": ""}, {"q": "Một bộ mã hoá (encoder) có 8 đầu vào sẽ cho ra bao nhiêu bit mã nhị phân?", "opts": ["4", "3", "8"], "correct": 1, "explain": "log2(8)=3 bit đủ để mã hoá 8 trạng thái đầu vào.", "src": ""}, {"q": "Trong đóng gói IC, thuật ngữ 'DIL' là viết tắt của:", "opts": ["Direct Input Line", "Dual-In-Line", "Digital Integrated Logic"], "correct": 1, "explain": "DIL = Dual-In-Line, kiểu đóng gói hai hàng chân song song.", "src": ""}, {"q": "Mạch tạo/kiểm tra parity (parity generator/checker) thường được xây dựng chủ yếu từ:", "opts": ["các cổng AND", "các cổng NAND", "các cổng XOR nối tầng"], "correct": 2, "explain": "Chuỗi cổng XOR cho phép tính tổng modulo-2 của các bit, đúng nguyên lý tính parity.", "src": ""}, {"q": "Kiểu đóng gói IC nào được thiết kế cho lắp ráp dán bề mặt (surface-mount), không xuyên lỗ?", "opts": ["PGA", "DIP", "SOIC"], "correct": 2, "explain": "SOIC (Small Outline IC) là gói dán bề mặt điển hình.", "src": ""}, {"q": "Nếu fan-out của một cổng là 10, điều này có nghĩa là cổng có thể an toàn điều khiển tối đa bao nhiêu đầu vào chuẩn cùng họ?", "opts": ["5", "10", "20"], "correct": 1, "explain": "Định nghĩa fan-out chính là số tải đầu vào chuẩn tối đa mà ngõ ra có thể điều khiển.", "src": ""}, {"q": "Mạch so sánh (comparator) được dùng để:", "opts": ["lưu trữ dữ liệu nhị phân", "xác định số nào lớn hơn/bằng/nhỏ hơn giữa hai số nhị phân", "chuyển đổi nhị phân sang thập phân"], "correct": 1, "explain": "Comparator so sánh hai số nhị phân và đưa ra tín hiệu A>B, A=B hoặc A<B.", "src": ""}]}</script></div>
 <h2>✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)</h2>
 <p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 6 – Functions of Combinational Logic, Problems (p.374-376); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-10, A-11).</p>
-<p class='essay-intro'><i>Chương này của Floyd còn có nhiều câu về decoder/encoder/mux nhưng hầu hết yêu cầu đọc một sơ đồ cụ thể trong sách (không thể tái hiện chính xác bằng chữ mà không có hình). Một số câu khác (Problem 25) có sự không khớp giữa đề bài in trong sách và đáp án in ở phụ lục (nghi lỗi bản in Global Edition), và Problem 9 (chuỗi bit vào bộ cộng 4-bit) vì chưa thể tái tạo đáp án in bằng bất kỳ cách đọc thứ tự bit nào, nên đã CHỦ ĐỔNG loại bỏ thay vì đưa lên site một câu không chắc chắn. Vì vậy phần này chỉ có 3 câu (thay vì 6) nhưng cả 3 đều đã tự tính lại độc lập và khớp chính xác với ảnh đáp án gốc.</i></p>
+<p class='essay-intro'><i>Chương 6 có 63 bài; chỉ bài SỐ LẺ có đáp án in. Đã đưa các bài 1, 3, 5, 7, 11, 13, 15, 17, 19, 21, 23 kèm ảnh đề và ảnh đáp án thật, đều đã tự kiểm chứng (tính tay, sympy hoặc đọc pixel dạng sóng). Cố ý KHÔNG đưa các bài có đáp án in không khớp đề: bài 9 (không tái tạo được Σ1 đến Σ5 bằng bất kỳ cách đọc thứ tự bit nào), bài 25 (đề và đáp án lệch số), bài 27 (đáp án in là phép đổi Gray sang nhị phân của các số khác với số trong đề) và bài 29 (đáp án in là sóng XOR của S0, S1, tức ứng với dữ liệu D0 = 0, D1 = 1, D2 = 1, D3 = 0, ngược với D0 = 1, D1 = 0, D2 = 0, D3 = 1 ghi ở Bài 28). Chưa đưa các bài 31 đến 37 (giản đồ phức tạp hoặc cần đọc mạch chưa tự kiểm chứng được) và các bài sau Bài 37.</i></p>
 <div class="essay-item">
   <p class="essay-q"><b>1.</b> Với mạch cộng đầy đủ (full-adder) ở Hình 6–4 của sách, xác định đầu ra ứng với mỗi bộ giá trị đầu vào sau:<br>(a) A = 0, B = 1, C<sub>in</sub> = 0 &nbsp; (b) A = 1, B = 0, C<sub>in</sub> = 1<br>(c) A = 0, B = 0, C<sub>in</sub> = 0</p>
   <p class="essay-orig"><b>Original (EN):</b> For the full-adder of Figure 6–4, determine the outputs for each of the following inputs<br>(a) A = 0, B = 1, C<sub>in</sub> = 0 &nbsp; (b) A = 1, B = 0, C<sub>in</sub> = 1<br>(c) A = 0, B = 0, C<sub>in</sub> = 0</p>
@@ -139,6 +139,46 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>5.</b> Lặp lại Bài 4 cho mạch và điều kiện đầu vào ở Hình 6–70 (xác định tổng đầy đủ của bộ cộng song song và kiểm tra bằng phép cộng tay).</p>
+  <p class="essay-orig"><b>Original (EN):</b> Repeat Problem 4 for the circuit and input conditions in Figure 6–70.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch06_qq05.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch06_qq05.png" alt="Floyd Ch.6 · Problem 5 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính: A = 10110 (22), B = 11001 (25), Cin = 0, tổng 47 = 101111 (Σ6 đến Σ1), khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 5</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q05.png" alt="Floyd Ch.6 · Problem 5" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>7.</b> Với mạch ở Hình 6–71, giả sử Add/Subt. = 1, A = 1010 và B = 1101. Ngõ ra là gì?</p>
+  <p class="essay-orig"><b>Original (EN):</b> For the circuit in Figure 6–71, assume the inputs are Add/Subt. = 1, A = 1010, and B = 1101. What is the output?</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_fig06_71.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_fig06_71.png" alt="Floyd Ch.6 · Problem 7 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Hình vẽ "Add/Subt." có gạch trên chữ Add, nên mức CAO nghĩa là phép TRỪ: bộ XOR đảo B và Cin = 1, tức A + B̄ + 1. Tự tính: 1010 + 0010 + 1 = 1101 (4 bit, bù hai của −3 = 10 − 13), khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 7</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q07.png" alt="Floyd Ch.6 · Problem 7" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>11.</b> Mỗi bộ cộng đầy đủ trong bộ cộng song song nối tiếp nhớ (ripple carry) 8 bit có trễ truyền: A đến Σ và Cout 20 ns; B đến Σ và Cout 20 ns; Cin đến Σ 30 ns; Cin đến Cout 25 ns. Xác định thời gian tổng tối đa để cộng hai số 8 bit.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Each of the eight full-adders in an 8-bit parallel ripple carry adder exhibits the following propagation delay: A to Σ and Cout: 20 ns; B to Σ and Cout: 20 ns; Cin to Σ: 30 ns; Cin to Cout: 25 ns. Determine the maximum total time for the addition of two 8-bit numbers.</p>
+  
+  <p class="essay-note"><i>Tự tính đường trễ dài nhất: bộ cộng đầu tạo Cout sau 20 ns, sáu bộ giữa truyền nhớ mỗi bộ 25 ns (150 ns), bộ cuối cho Σ sau 30 ns: 20 + 150 + 30 = 200 ns, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 11</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q11.png" alt="Floyd Ch.6 · Problem 11" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>13.</b> Các dạng sóng ở Hình 6–73 được đưa vào bộ so sánh như hình. Hãy xác định dạng sóng ngõ ra (A = B).</p>
+  <p class="essay-orig"><b>Original (EN):</b> The waveforms in Figure 6–73 are applied to the comparator as shown. Determine the output (A = B) waveform.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch06_qq13.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch06_qq13.png" alt="Floyd Ch.6 · Problem 13 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã tự kiểm chứng: đọc mức logic từng khoảng trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề. Quy tắc: A = B chỉ khi A0 = B0 và A1 = B1.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q13.png" alt="Floyd Ch.6 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>15.</b> Với mỗi cặp số nhị phân sau, xác định trạng thái đầu ra của bộ so sánh (comparator):<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000</p>
   <p class="essay-orig"><b>Original (EN):</b> For each set of binary numbers, determine the output states for the comparator:<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000</p>
   
@@ -146,6 +186,46 @@
   <p class="pill">Floyd Ch.6 · Problem 15</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q15.png" alt="Floyd Ch.6 · Problem 15" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>17.</b> Hãy vẽ logic giải mã cho mỗi mã sau nếu yêu cầu ngõ ra tích cực mức CAO (1). Đề gốc trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Show the decoding logic for each of the following codes if an active-HIGH (1) output is required. The original problem is in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch06_qq17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch06_qq17.png" alt="Floyd Ch.6 · Problem 17 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm tra bằng mắt: mỗi mạch là một cổng AND, ngõ vào nào ứng với bit 0 của mã đều đi qua một cổng đảo (số cổng đảo bằng số bit 0: 1, 3, 1, 2, 3, 1, 4, 2 cho các ý a đến h), khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 17</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q17.png" alt="Floyd Ch.6 · Problem 17" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>19.</b> Bạn muốn chỉ phát hiện sự có mặt của các mã 1010, 1100, 0001 và 1011, ngõ ra tích cực mức CAO. Hãy thiết kế logic giải mã tối thiểu với một ngõ ra duy nhất; với mọi mã khác ngõ ra phải THẤP.</p>
+  <p class="essay-orig"><b>Original (EN):</b> You wish to detect only the presence of the codes 1010, 1100, 0001, and 1011. An active-HIGH output is required to indicate their presence. Develop the minimum decoding logic with a single output that will indicate when any one of these codes is on the inputs. For any other code, the output must be LOW.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch06_qq19.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch06_qq19.png" alt="Floyd Ch.6 · Problem 19 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm chứng bằng sympy: SOP tối thiểu của {1010, 1100, 0001, 1011} là A3A̅2A1 + A3A2Ā1Ā0 + Ā3Ā2Ā1A0 (1010 và 1011 gộp thành A3Ā2A1), khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 19</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q19.png" alt="Floyd Ch.6 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>21.</b> Các số BCD được đưa tuần tự vào bộ giải mã BCD sang thập phân ở Hình 6–77. Hãy vẽ giản đồ thời gian cho mỗi ngõ ra trong tương quan đúng với các ngõ ra khác và với các đầu vào.</p>
+  <p class="essay-orig"><b>Original (EN):</b> BCD numbers are applied sequentially to the BCD-to-decimal decoder in Figure 6–77. Draw a timing diagram, showing each output in the proper relationship with the others and with the inputs.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch06_qq21.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch06_qq21.png" alt="Floyd Ch.6 · Problem 21 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đáp án in đã tự kiểm chứng: đọc mức logic từng khoảng trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề. Quy tắc: ngõ ra k xuống THẤP đúng khi mã vào bằng k (74HC42 tích cực mức thấp); các ngõ ra 3, 5, 7 luôn CAO vì dãy đầu vào không có các mã đó.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 21</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q21.png" alt="Floyd Ch.6 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Với logic bộ mã hoá thập phân sang BCD ở Hình 6–37, giả sử ngõ vào 9 và ngõ vào 3 cùng ở mức CAO. Mã ngõ ra là gì? Đó có phải mã BCD (8421) hợp lệ không?</p>
+  <p class="essay-orig"><b>Original (EN):</b> For the decimal-to-BCD encoder logic of Figure 6–37, assume that the 9 input and the 3 input are both HIGH. What is the output code? Is it a valid BCD (8421) code?</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch06_qq23.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch06_qq23.png" alt="Floyd Ch.6 · Problem 23 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính: A3 = D8 + D9 = 1, A2 = D4 + D5 + D6 + D7 = 0, A1 = D2 + D3 + D6 + D7 = 1, A0 = D1 + D3 + D5 + D7 + D9 = 1, mã 1011 (11 thập phân), không hợp lệ trong BCD, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.6 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch06_q23.png" alt="Floyd Ch.6 · Problem 23" loading="lazy"/></div>
   </details>
 </div>
 </div><footer class="site"><div class="wrap">

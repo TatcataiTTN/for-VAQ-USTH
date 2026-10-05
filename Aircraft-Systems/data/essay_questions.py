@@ -810,8 +810,8 @@ ESSAY = {
   "03-ic-multiplexing": {
     "src_book": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 6 – Functions of Combinational Logic, Problems (p.374-376); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-10, A-11).",
     "src_book_en": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 6 – Functions of Combinational Logic, Problems (p.374-376); answers in the Answers to Odd-Numbered Problems appendix (p.A-10, A-11).",
-    "note_vi": "Chương này của Floyd còn có nhiều câu về decoder/encoder/mux nhưng hầu hết yêu cầu đọc một sơ đồ cụ thể trong sách (không thể tái hiện chính xác bằng chữ mà không có hình). Một số câu khác (Problem 25) có sự không khớp giữa đề bài in trong sách và đáp án in ở phụ lục (nghi lỗi bản in Global Edition), và Problem 9 (chuỗi bit vào bộ cộng 4-bit) vì chưa thể tái tạo đáp án in bằng bất kỳ cách đọc thứ tự bit nào, nên đã CHỦ ĐỔNG loại bỏ thay vì đưa lên site một câu không chắc chắn. Vì vậy phần này chỉ có 3 câu (thay vì 6) nhưng cả 3 đều đã tự tính lại độc lập và khớp chính xác với ảnh đáp án gốc.",
-    "note_en": "This Floyd chapter has many more decoder/encoder/mux problems, but most require reading a specific figure from the book that cannot be reproduced accurately in text alone. One other problem (Problem 25) shows a mismatch between the printed question and the printed appendix answer (a suspected Global Edition printing erratum) and Problem 9 (bit sequences into a 4-bit adder), whose printed answer could not be reproduced under any bit-order reading, so it was deliberately excluded rather than publishing an uncertain answer. This section therefore has only 3 questions (instead of 6), but all three were independently recomputed by hand and matched exactly against the original answer photograph.",
+    "note_vi": "Chương 6 có 63 bài; chỉ bài SỐ LẺ có đáp án in. Đã đưa các bài 1, 3, 5, 7, 11, 13, 15, 17, 19, 21, 23 kèm ảnh đề và ảnh đáp án thật, đều đã tự kiểm chứng (tính tay, sympy hoặc đọc pixel dạng sóng). Cố ý KHÔNG đưa các bài có đáp án in không khớp đề: bài 9 (không tái tạo được Σ1 đến Σ5 bằng bất kỳ cách đọc thứ tự bit nào), bài 25 (đề và đáp án lệch số), bài 27 (đáp án in là phép đổi Gray sang nhị phân của các số khác với số trong đề) và bài 29 (đáp án in là sóng XOR của S0, S1, tức ứng với dữ liệu D0 = 0, D1 = 1, D2 = 1, D3 = 0, ngược với D0 = 1, D1 = 0, D2 = 0, D3 = 1 ghi ở Bài 28). Chưa đưa các bài 31 đến 37 (giản đồ phức tạp hoặc cần đọc mạch chưa tự kiểm chứng được) và các bài sau Bài 37.",
+    "note_en": "Chapter 6 has 63 problems; only the ODD-numbered ones have printed answers. Included here: 1, 3, 5, 7, 11, 13, 15, 17, 19, 21, 23, each with the question image and the real answer image, all independently verified (by hand, sympy, or by reading waveform pixels). Deliberately NOT included are problems whose printed answer does not match the question: 9 (the printed Σ1 to Σ5 could not be reproduced under any bit-order reading), 25 (question and answer figures differ), 27 (the printed answer is a Gray-to-binary conversion of different numbers than those in the question) and 29 (the printed answer is the XOR waveform of S0 and S1, i.e. data D0 = 0, D1 = 1, D2 = 1, D3 = 0, the opposite of the D0 = 1, D1 = 0, D2 = 0, D3 = 1 stated in Problem 28). Problems 31 to 37 (complex timing diagrams or circuit reading that could not be independently verified) and later ones are not included.",
     "items": [
       {
         "num": 1,
@@ -828,11 +828,104 @@ ESSAY = {
         "img": "essay_floyd_ch06_q03.png"
       },
       {
+        "num": 5,
+        "q_vi": "Lặp lại Bài 4 cho mạch và điều kiện đầu vào ở Hình 6–70 (xác định tổng đầy đủ của bộ cộng song song và kiểm tra bằng phép cộng tay).",
+        "q_en": "Repeat Problem 4 for the circuit and input conditions in Figure 6–70.",
+        "src": "Floyd Ch.6 · Problem 5",
+        "img": "essay_floyd_ch06_q05.png",
+        "note_vi": "Tự tính: A = 10110 (22), B = 11001 (25), Cin = 0, tổng 47 = 101111 (Σ6 đến Σ1), khớp đáp án in.",
+        "note_en": "Own calculation: A = 10110 (22), B = 11001 (25), Cin = 0, sum 47 = 101111 (Σ6 to Σ1), matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch06_qq05.png"
+        ]
+      },
+      {
+        "num": 7,
+        "q_vi": "Với mạch ở Hình 6–71, giả sử Add/Subt. = 1, A = 1010 và B = 1101. Ngõ ra là gì?",
+        "q_en": "For the circuit in Figure 6–71, assume the inputs are Add/Subt. = 1, A = 1010, and B = 1101. What is the output?",
+        "src": "Floyd Ch.6 · Problem 7",
+        "img": "essay_floyd_ch06_q07.png",
+        "note_vi": "Hình vẽ \"Add/Subt.\" có gạch trên chữ Add, nên mức CAO nghĩa là phép TRỪ: bộ XOR đảo B và Cin = 1, tức A + B̄ + 1. Tự tính: 1010 + 0010 + 1 = 1101 (4 bit, bù hai của −3 = 10 − 13), khớp đáp án in.",
+        "note_en": "The figure's \"Add/Subt.\" has an overbar on Add, so HIGH means SUBTRACT: the XOR gates invert B and Cin = 1, i.e. A + B′ + 1. Own calculation: 1010 + 0010 + 1 = 1101 (4-bit two's complement of −3 = 10 − 13), matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_fig06_71.png"
+        ]
+      },
+      {
+        "num": 11,
+        "q_vi": "Mỗi bộ cộng đầy đủ trong bộ cộng song song nối tiếp nhớ (ripple carry) 8 bit có trễ truyền: A đến Σ và Cout 20 ns; B đến Σ và Cout 20 ns; Cin đến Σ 30 ns; Cin đến Cout 25 ns. Xác định thời gian tổng tối đa để cộng hai số 8 bit.",
+        "q_en": "Each of the eight full-adders in an 8-bit parallel ripple carry adder exhibits the following propagation delay: A to Σ and Cout: 20 ns; B to Σ and Cout: 20 ns; Cin to Σ: 30 ns; Cin to Cout: 25 ns. Determine the maximum total time for the addition of two 8-bit numbers.",
+        "src": "Floyd Ch.6 · Problem 11",
+        "img": "essay_floyd_ch06_q11.png",
+        "note_vi": "Tự tính đường trễ dài nhất: bộ cộng đầu tạo Cout sau 20 ns, sáu bộ giữa truyền nhớ mỗi bộ 25 ns (150 ns), bộ cuối cho Σ sau 30 ns: 20 + 150 + 30 = 200 ns, khớp đáp án in.",
+        "note_en": "Longest delay path: the first adder produces Cout after 20 ns, the six middle adders pass the carry at 25 ns each (150 ns), and the last adder gives Σ after 30 ns: 20 + 150 + 30 = 200 ns, matching the printed answer."
+      },
+      {
+        "num": 13,
+        "q_vi": "Các dạng sóng ở Hình 6–73 được đưa vào bộ so sánh như hình. Hãy xác định dạng sóng ngõ ra (A = B).",
+        "q_en": "The waveforms in Figure 6–73 are applied to the comparator as shown. Determine the output (A = B) waveform.",
+        "src": "Floyd Ch.6 · Problem 13",
+        "img": "essay_floyd_ch06_q13.png",
+        "note_vi": "Đáp án in đã tự kiểm chứng: đọc mức logic từng khoảng trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề. Quy tắc: A = B chỉ khi A0 = B0 và A1 = B1.",
+        "note_en": "Printed answer verified: logic levels in every interval were read directly from the pixels of the question and answer figures and the output was recomputed; all intervals agree and the inputs in the answer figure match the question figure. Rule: A = B only when A0 = B0 and A1 = B1.",
+        "qimgs": [
+          "essay_floyd_ch06_qq13.png"
+        ]
+      },
+      {
         "num": 15,
         "q_vi": "Với mỗi cặp số nhị phân sau, xác định trạng thái đầu ra của bộ so sánh (comparator):<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000",
         "q_en": "For each set of binary numbers, determine the output states for the comparator:<br>(a) A3A2A1A0 = 1010, B3B2B1B0 = 1101<br>(b) A3A2A1A0 = 1101, B3B2B1B0 = 1101<br>(c) A3A2A1A0 = 1001, B3B2B1B0 = 1000",
         "src": "Floyd Ch.6 · Problem 15",
         "img": "essay_floyd_ch06_q15.png"
+      },
+      {
+        "num": 17,
+        "q_vi": "Hãy vẽ logic giải mã cho mỗi mã sau nếu yêu cầu ngõ ra tích cực mức CAO (1). Đề gốc trong ảnh bên dưới.",
+        "q_en": "Show the decoding logic for each of the following codes if an active-HIGH (1) output is required. The original problem is in the image below.",
+        "src": "Floyd Ch.6 · Problem 17",
+        "img": "essay_floyd_ch06_q17.png",
+        "note_vi": "Tự kiểm tra bằng mắt: mỗi mạch là một cổng AND, ngõ vào nào ứng với bit 0 của mã đều đi qua một cổng đảo (số cổng đảo bằng số bit 0: 1, 3, 1, 2, 3, 1, 4, 2 cho các ý a đến h), khớp đáp án in.",
+        "note_en": "Visual check: each circuit is an AND gate, and every input that corresponds to a 0 bit of the code passes through an inverter (the inverter counts equal the number of 0 bits: 1, 3, 1, 2, 3, 1, 4, 2 for items a to h), matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch06_qq17.png"
+        ]
+      },
+      {
+        "num": 19,
+        "q_vi": "Bạn muốn chỉ phát hiện sự có mặt của các mã 1010, 1100, 0001 và 1011, ngõ ra tích cực mức CAO. Hãy thiết kế logic giải mã tối thiểu với một ngõ ra duy nhất; với mọi mã khác ngõ ra phải THẤP.",
+        "q_en": "You wish to detect only the presence of the codes 1010, 1100, 0001, and 1011. An active-HIGH output is required to indicate their presence. Develop the minimum decoding logic with a single output that will indicate when any one of these codes is on the inputs. For any other code, the output must be LOW.",
+        "src": "Floyd Ch.6 · Problem 19",
+        "img": "essay_floyd_ch06_q19.png",
+        "note_vi": "Tự kiểm chứng bằng sympy: SOP tối thiểu của {1010, 1100, 0001, 1011} là A3A̅2A1 + A3A2Ā1Ā0 + Ā3Ā2Ā1A0 (1010 và 1011 gộp thành A3Ā2A1), khớp đáp án in.",
+        "note_en": "Verified with sympy: the minimum SOP of {1010, 1100, 0001, 1011} is A3A2′A1 + A3A2A1′A0′ + A3′A2′A1′A0 (1010 and 1011 merge into A3A2′A1), matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch06_qq19.png"
+        ]
+      },
+      {
+        "num": 21,
+        "q_vi": "Các số BCD được đưa tuần tự vào bộ giải mã BCD sang thập phân ở Hình 6–77. Hãy vẽ giản đồ thời gian cho mỗi ngõ ra trong tương quan đúng với các ngõ ra khác và với các đầu vào.",
+        "q_en": "BCD numbers are applied sequentially to the BCD-to-decimal decoder in Figure 6–77. Draw a timing diagram, showing each output in the proper relationship with the others and with the inputs.",
+        "src": "Floyd Ch.6 · Problem 21",
+        "img": "essay_floyd_ch06_q21.png",
+        "note_vi": "Đáp án in đã tự kiểm chứng: đọc mức logic từng khoảng trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề. Quy tắc: ngõ ra k xuống THẤP đúng khi mã vào bằng k (74HC42 tích cực mức thấp); các ngõ ra 3, 5, 7 luôn CAO vì dãy đầu vào không có các mã đó.",
+        "note_en": "Printed answer verified: logic levels in every interval were read directly from the pixels of the question and answer figures and the output was recomputed; all intervals agree and the inputs in the answer figure match the question figure. Rule: output k goes LOW exactly when the input code equals k (74HC42 is active-LOW); outputs 3, 5, 7 stay HIGH because the input sequence never contains those codes.",
+        "qimgs": [
+          "essay_floyd_ch06_qq21.png"
+        ]
+      },
+      {
+        "num": 23,
+        "q_vi": "Với logic bộ mã hoá thập phân sang BCD ở Hình 6–37, giả sử ngõ vào 9 và ngõ vào 3 cùng ở mức CAO. Mã ngõ ra là gì? Đó có phải mã BCD (8421) hợp lệ không?",
+        "q_en": "For the decimal-to-BCD encoder logic of Figure 6–37, assume that the 9 input and the 3 input are both HIGH. What is the output code? Is it a valid BCD (8421) code?",
+        "src": "Floyd Ch.6 · Problem 23",
+        "img": "essay_floyd_ch06_q23.png",
+        "note_vi": "Tự tính: A3 = D8 + D9 = 1, A2 = D4 + D5 + D6 + D7 = 0, A1 = D2 + D3 + D6 + D7 = 1, A0 = D1 + D3 + D5 + D7 + D9 = 1, mã 1011 (11 thập phân), không hợp lệ trong BCD, khớp đáp án in.",
+        "note_en": "Own calculation: A3 = D8 + D9 = 1, A2 = D4 + D5 + D6 + D7 = 0, A1 = D2 + D3 + D6 + D7 = 1, A0 = D1 + D3 + D5 + D7 + D9 = 1, code 1011 (decimal 11), not valid BCD, matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch06_qq23.png"
+        ]
       }
     ]
   },
