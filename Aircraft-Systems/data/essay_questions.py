@@ -623,15 +623,189 @@ ESSAY = {
         "img": "essay_floyd_ch04_q09.png"
       },
       {
+        "num": 13,
+        "q_vi": "Viết biểu thức Boole cho mỗi mạch logic ở Hình 4–57.",
+        "q_en": "Write the Boolean expression for each of the logic circuits in Figure 4–57.",
+        "src": "Floyd Ch.4 · Problem 13",
+        "img": "essay_floyd_ch04_q13.png",
+        "note_vi": "Tự kiểm tra bằng cách đọc mạch: (a) AND 4 ngõ vào, X = ABCD; (b) AND(A,B) rồi OR với C, X = AB + C; (c) đảo A, AND với B, rồi đảo ngõ ra, X = (Ā·B)‾ = A + B̄; (d) OR(A,B) rồi AND với C, X = (A + B)C. Khớp đáp án in.",
+        "note_en": "Self-check by reading each circuit: (a) 4-input AND, X = ABCD; (b) AND(A,B) then OR with C, X = AB + C; (c) invert A, AND with B, then invert the output, X = (A′·B)′ = A + B′; (d) OR(A,B) then AND with C, X = (A + B)C. Matches the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch04_qq13.png"
+        ]
+      },
+      {
         "num": 19,
         "q_vi": "Dùng các kỹ thuật đại số Boole, rút gọn các biểu thức sau đến mức tối đa có thể:<br>(a) A(A + B) &nbsp; (b) A(~{A} + AB) &nbsp; (c) BC + ~{B}C<br>(d) A(A + ~{A}B) &nbsp; (e) A~{B}C + ~{A}BC + ~{A}~{B}C",
         "q_en": "Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A(~{A} + AB) &nbsp; (c) BC + ~{B}C<br>(d) A(A + ~{A}B) &nbsp; (e) A~{B}C + ~{A}BC + ~{A}~{B}C",
         "src": "Floyd Ch.4 · Problem 19",
         "img": "essay_floyd_ch04_q19.png"
+      },
+      {
+        "num": 21,
+        "q_vi": "Dùng đại số Boole, rút gọn các biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Using Boolean algebra, simplify the following expressions. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 21",
+        "img": "essay_floyd_ch04_q21.png",
+        "note_vi": "Kiểm chứng bằng sympy: (a), (c), (d), (e) khớp đáp án in. RIÊNG ý (b) KHÔNG khớp: đọc ở độ phân giải 1200 dpi, đề là B̄C̄D + (B+C+D)‾ + B̄C̄D̄E, trong đó thanh gạch dài phủ lên cả tổng (B+C+D) và không có gạch phụ nào trên D; biểu thức này rút gọn đúng thành B̄C̄, còn đáp án in là B̄C̄D + B̄C̄E. Nghi lỗi in của sách (đáp án in chỉ khớp nếu D trong tổng bị đảo, điều mà ảnh quét không cho thấy).",
+        "note_en": "Verified with sympy: (a), (c), (d), (e) match the printed answer. Item (b) does NOT: read at 1200 dpi, the problem is B′C′D + (B+C+D)′ + B′C′D′E, where the long bar spans the whole sum (B+C+D) with no extra bar on D; this simplifies exactly to B′C′, while the printed answer is B′C′D + B′C′E. A likely printing error in the book (the printed answer only fits if D inside the sum were complemented, which the scan does not show).",
+        "qimgs": [
+          "essay_floyd_ch04_qq21.png"
+        ]
+      },
+      {
+        "num": 23,
+        "q_vi": "Chuyển các biểu thức sau sang dạng tổng các tích (SOP). Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Convert the following expressions to sum-of-product (SOP) forms. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 23",
+        "img": "essay_floyd_ch04_q23.png",
+        "note_vi": "Đã tự kiểm chứng bằng sympy (OCR_output/Floyd/scripts/verify_ch4.py): biểu thức trong đề và kết quả in là tương đương logic.",
+        "note_en": "Verified with sympy (OCR_output/Floyd/scripts/verify_ch4.py): the expression in the problem and the printed result are logically equivalent.",
+        "qimgs": [
+          "essay_floyd_ch04_qq23.png"
+        ]
+      },
+      {
+        "num": 31,
+        "q_vi": "Lập bảng chân trị cho mỗi biểu thức SOP chuẩn sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Develop a truth table for each of the following standard SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 31",
+        "img": "essay_floyd_ch04_q31.png",
+        "note_vi": "Tự kiểm tra: (a) có giá trị 1 đúng ở các dòng 001, 110, 111; (b) có giá trị 1 ở 000, 010, 011, 101, 110; khớp Bảng P–3 và P–4 trong đáp án in.",
+        "note_en": "Self-check: (a) is 1 exactly on rows 001, 110, 111; (b) is 1 on 000, 010, 011, 101, 110; matches Tables P–3 and P–4 in the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch04_qq31.png"
+        ]
+      },
+      {
+        "num": 33,
+        "q_vi": "Lập bảng chân trị cho mỗi biểu thức SOP sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Develop a truth table for each of the SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 33",
+        "img": "essay_floyd_ch04_q33.png",
+        "note_vi": "Tự kiểm tra: (a) bằng 1 ở 000, 010, 011, 101, 110; (b) bằng 0 chỉ ở 0100, 0111, 1100 (còn lại bằng 1); khớp Bảng P–5 và P–6.",
+        "note_en": "Self-check: (a) is 1 on 000, 010, 011, 101, 110; (b) is 0 only on 0100, 0111, 1100 (1 elsewhere); matches Tables P–5 and P–6.",
+        "qimgs": [
+          "essay_floyd_ch04_qq33.png"
+        ]
+      },
+      {
+        "num": 35,
+        "q_vi": "Lập bảng chân trị cho mỗi biểu thức POS chuẩn sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Develop a truth table for each of the standard POS expressions. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 35",
+        "img": "essay_floyd_ch04_q35.png",
+        "note_vi": "Tự kiểm tra ý (a): bằng 1 ở 011, 100, 101, 110, 111, khớp Bảng P–7. Ý (b) có bảng 16 dòng, đối chiếu bằng mắt từng dòng với Bảng P–8 trong ảnh đáp án.",
+        "note_en": "Self-check for (a): 1 on 011, 100, 101, 110, 111, matching Table P–7. Item (b) has a 16-row table, compared row by row by eye against Table P–8 in the answer image.",
+        "qimgs": [
+          "essay_floyd_ch04_qq35.png"
+        ]
+      },
+      {
+        "num": 37,
+        "q_vi": "Vẽ bản đồ Karnaugh 3 biến và ghi nhãn mỗi ô theo giá trị nhị phân của nó.",
+        "q_en": "Draw a 3-variable Karnaugh map and label each cell according to its binary value.",
+        "src": "Floyd Ch.4 · Problem 37",
+        "img": "essay_floyd_ch04_q37.png",
+        "note_vi": "Thứ tự hàng AB là 00, 01, 11, 10 (mã Gray), cột C là 0, 1; mỗi ô được ghi bằng ABC tương ứng.",
+        "note_en": "Rows AB run 00, 01, 11, 10 (Gray order), columns C run 0, 1; each cell is labelled with its ABC value."
+      },
+      {
+        "num": 39,
+        "q_vi": "Viết số hạng tích chuẩn cho từng ô của bản đồ Karnaugh 3 biến.",
+        "q_en": "Write the standard product term for each cell in a 3-variable Karnaugh map.",
+        "src": "Floyd Ch.4 · Problem 39",
+        "img": "essay_floyd_ch04_q39.png",
+        "note_vi": "Ví dụ ô 000 là ĀB̄C̄, ô 101 là AB̄C; mỗi ô là một minterm với biến bằng 0 được đảo.",
+        "note_en": "For example cell 000 is A′B′C′ and cell 101 is AB′C; each cell is a minterm with the 0-valued variables complemented."
+      },
+      {
+        "num": 41,
+        "q_vi": "Dùng bản đồ Karnaugh rút gọn mỗi biểu thức về dạng SOP tối thiểu. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Use a Karnaugh map to simplify each expression to a minimum SOP form. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 41",
+        "img": "essay_floyd_ch04_q41.png",
+        "note_vi": "Kiểm chứng: (a) bốn minterm 000, 101, 011, 110 không có hai ô kề nhau nên không rút gọn được; (b) AC[B̄ + B(B + C̄)] = AC; (c) = DF̄ + ĒF̄. Đều khớp đáp án in.",
+        "note_en": "Check: (a) the four minterms 000, 101, 011, 110 have no adjacent pair, so nothing simplifies; (b) AC[B′ + B(B + C′)] = AC; (c) = DF′ + E′F′. All match the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch04_qq41.png"
+        ]
+      },
+      {
+        "num": 45,
+        "q_vi": "Dùng bản đồ Karnaugh rút gọn hàm cho bởi Bảng 4–16 về dạng SOP tối thiểu.",
+        "q_en": "Reduce the function specified in truth Table 4–16 to its minimum SOP form by using a Karnaugh map.",
+        "src": "Floyd Ch.4 · Problem 45",
+        "img": "essay_floyd_ch04_q45.png",
+        "note_vi": "Bảng 4–16 có X = 0 chỉ ở các dòng 010 và 110 (tức B = 1, C = 0), nên X = B̄ + C. Tự tính bằng sympy, khớp đáp án in.",
+        "note_en": "Table 4–16 has X = 0 only on rows 010 and 110 (B = 1, C = 0), so X = B′ + C. Computed with sympy, matches the printed answer.",
+        "qimgs": [
+          "essay_floyd_tab4_16.png"
+        ]
+      },
+      {
+        "num": 47,
+        "q_vi": "Giải Bài 46 trong trường hợp sáu tổ hợp nhị phân cuối (1010 đến 1111) không được phép xuất hiện (don't care).<br><i>Bài 46: dùng bản đồ Karnaugh để thực hiện biểu thức SOP tối thiểu cho hàm ở Bảng 4–17.</i>",
+        "q_en": "Solve Problem 46 for a situation in which the last six binary combinations are not allowed.<br><i>Problem 46: Use the Karnaugh map method to implement the minimum SOP expression for the logic function specified in truth Table 4–17.</i>",
+        "src": "Floyd Ch.4 · Problem 47",
+        "img": "essay_floyd_ch04_q47.png",
+        "note_vi": "Tự tính bằng sympy với 1010 đến 1111 là don't care: SOP tối thiểu = ĀB̄C̄D + BC + AD̄ + CD̄, khớp đáp án in.",
+        "note_en": "Computed with sympy with 1010 to 1111 as don't-cares: minimum SOP = A′B′C′D + BC + AD′ + CD′, matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_tab4_17.png"
+        ]
+      },
+      {
+        "num": 49,
+        "q_vi": "Dùng bản đồ Karnaugh rút gọn mỗi biểu thức về dạng POS tối thiểu. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Use a Karnaugh map to simplify each expression to minimum POS form. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 49",
+        "img": "essay_floyd_ch04_q49.png",
+        "note_vi": "Tự kiểm chứng: (a) ba thừa số tổng (maxterm) không có hai thừa số kề nhau nên không rút gọn được; (b) sympy cho (W+X)(W+Z̄)(X+Ȳ)(Ȳ+Z̄), tương đương logic với đáp án in (W+X)(W+Z̄)(X+Ȳ)(W̄+X̄+Ȳ+Z̄) (cả hai đều là dạng POS của cùng một hàm).",
+        "note_en": "Self-check: (a) the three maxterms have no adjacent pair so nothing reduces; (b) sympy gives (W+X)(W+Z′)(X+Y′)(Y′+Z′), logically equivalent to the printed answer (W+X)(W+Z′)(X+Y′)(W′+X′+Y′+Z′) (both are POS forms of the same function).",
+        "qimgs": [
+          "essay_floyd_ch04_qq49.png"
+        ]
+      },
+      {
+        "num": 51,
+        "q_vi": "Xác định biểu thức POS tối thiểu cho hàm ở Bảng 4–17.",
+        "q_en": "Determine the minimum POS expression for the function in Table 4–17.",
+        "src": "Floyd Ch.4 · Problem 51",
+        "img": "essay_floyd_ch04_q51.png",
+        "note_vi": "Tự tính bằng sympy (POSform trên các dòng có X = 0): kết quả có đúng 5 thừa số tổng giống đáp án in.",
+        "note_en": "Computed with sympy (POSform over the rows where X = 0): the result has exactly the same 5 sum factors as the printed answer.",
+        "qimgs": [
+          "essay_floyd_tab4_17.png"
+        ]
+      },
+      {
+        "num": 53,
+        "q_vi": "Liệt kê các minterm của biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "List the minterms in the expression. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 53",
+        "img": "essay_floyd_ch04_q53.png",
+        "note_vi": "Tự tính: các số hạng tương ứng 111, 001, 110, 101, 011 nên các minterm là 1, 3, 5, 6, 7, khớp đáp án in.",
+        "note_en": "Own calculation: the terms are 111, 001, 110, 101, 011, so the minterms are 1, 3, 5, 6, 7, matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch04_qq53.png"
+        ]
+      },
+      {
+        "num": 61,
+        "q_vi": "Viết chương trình VHDL cho biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+        "q_en": "Write a program in VHDL for the expression. The original problem (with overlines exactly as in the book) is shown in the image below.",
+        "src": "Floyd Ch.4 · Problem 61",
+        "img": "essay_floyd_ch04_q61.png",
+        "note_vi": "Phần logic Y <= (A and not B and C) or ... khớp biểu thức đề. Lưu ý lỗi nhỏ trong đáp án in: cổng ra được khai báo là X (X: out bit) nhưng phép gán dùng Y, nên chương trình in không biên dịch được nếu giữ nguyên.",
+        "note_en": "The logic Y <= (A and not B and C) or ... matches the problem's expression. Note a small error in the printed answer: the output port is declared as X (X: out bit) but the assignment uses Y, so the printed program would not compile as written.",
+        "qimgs": [
+          "essay_floyd_ch04_qq61.png"
+        ]
       }
     ],
-    "note_vi": "Chương 3 có 55 bài; chỉ các bài SỐ LẺ có đáp án in. Đã đưa lên các bài dạng sóng và ký hiệu (1 đến 27), bài mạng lập trình/VHDL/tham số (29 đến 37), bài tìm cổng hỏng và thiết kế (39 đến 51), mỗi bài kèm ảnh đề và ảnh đáp án thật. Chưa đưa: bài 41 (đọc sơ đồ chân IC trên bo mạch, chưa tự kiểm chứng độc lập được), bài 49 (phụ thuộc bài 48 và Hình 3–25), bài 53, 55 (cần file Multisim không có trong sách). Bài chẵn không có đáp án in nên không đưa.",
-    "note_en": "Chapter 3 has 55 problems; only the ODD-numbered ones have printed answers. Added here: waveform and symbol problems (1 to 27), programmable-array/VHDL/parameter problems (29 to 37), faulty-gate and design problems (39 to 51), each with the question figure and the real answer image. Not included: problem 41 (reading IC pin diagrams on a board, could not be independently verified), problem 49 (depends on problem 48 and Figure 3–25), problems 53 and 55 (need Multisim files not in the book). Even-numbered problems have no printed answer and are omitted."
+    "note_vi": "Chương 3 có 55 bài; chỉ các bài SỐ LẺ có đáp án in. Đã đưa lên các bài dạng sóng và ký hiệu (1 đến 27), bài mạng lập trình/VHDL/tham số (29 đến 37), bài tìm cổng hỏng và thiết kế (39 đến 51), mỗi bài kèm ảnh đề và ảnh đáp án thật. Chương 4 (72 bài): đã đưa các bài 1, 5, 7, 9, 13, 19 đến 23, 31 đến 41, 45 đến 53, 61, kèm ảnh đề gốc (giữ nguyên gạch trên của sách) và ảnh đáp án thật. Chưa đưa các bài 3, 11, 15, 17, 25 đến 29, 43, 55 đến 59 vì: bài 3 và bài 15 có đáp án in KHÔNG khớp đề (bài 3 hỏi 3 biến A, B, C nhưng đáp án là ABCD; bài 15 đề là AB+(AB)‾, ABCD, A+BC, ABC+D còn hình đáp án vẽ các mạch khác hẳn), bài 11 có gạch trên lồng nhiều tầng không đọc chắc được, các bài 17, 25 đến 29, 43, 55 đến 59 phụ thuộc đọc mạch hoặc các bài trước mà chưa tự kiểm chứng độc lập được. Với Chương 3, chưa đưa: bài 41 (đọc sơ đồ chân IC trên bo mạch, chưa tự kiểm chứng độc lập được), bài 49 (phụ thuộc bài 48 và Hình 3–25), bài 53, 55 (cần file Multisim không có trong sách). Bài chẵn không có đáp án in nên không đưa.",
+    "note_en": "Chapter 3 has 55 problems; only the ODD-numbered ones have printed answers. Added here: waveform and symbol problems (1 to 27), programmable-array/VHDL/parameter problems (29 to 37), faulty-gate and design problems (39 to 51), each with the question figure and the real answer image. Chapter 4 (72 problems): included are 1, 5, 7, 9, 13, 19 to 23, 31 to 41, 45 to 53 and 61, with the original question image (book overlines preserved) and the real answer image. Not included: 3, 11, 15, 17, 25 to 29, 43, 55 to 59, because problems 3 and 15 have printed answers that do NOT match the question (3 asks about 3 variables A, B, C but the answer is ABCD; 15 asks for AB+(AB)′, ABCD, A+BC, ABC+D but the answer figure draws entirely different circuits), problem 11 has multi-level overlines that cannot be read reliably, and 17, 25 to 29, 43, 55 to 59 depend on reading circuits or earlier problems that could not be independently verified. For Chapter 3, not included: problem 41 (reading IC pin diagrams on a board, could not be independently verified), problem 49 (depends on problem 48 and Figure 3–25), problems 53 and 55 (need Multisim files not in the book). Even-numbered problems have no printed answer and are omitted."
   },
   "03-ic-multiplexing": {
     "src_book": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 6 – Functions of Combinational Logic, Problems (p.374-376); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-10, A-11).",

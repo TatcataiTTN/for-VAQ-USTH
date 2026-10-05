@@ -117,7 +117,7 @@
 <div class="quiz"><script type="application/json">{"items": [{"q": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?", "opts": ["cả hai đầu vào ở mức logic 1", "cả hai đầu vào ở mức logic 0", "một trong hai đầu vào ở mức logic 1"], "correct": 1, "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.", "src": ""}, {"q": "Cổng XOR 2 đầu vào với cả hai đầu vào bằng 1 sẽ cho đầu ra:", "opts": ["0", "không xác định", "1"], "correct": 0, "explain": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.", "src": ""}, {"q": "Theo đại số Boolean, biểu thức A + A'B rút gọn thành:", "opts": ["A · B", "A + B", "A"], "correct": 1, "explain": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.", "src": ""}, {"q": "Theo định lý De Morgan, (A·B)' bằng:", "opts": ["A + B", "A' + B'", "A'·B'"], "correct": 1, "explain": "(AB)' = A' + B' theo định lý De Morgan.", "src": ""}, {"q": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?", "opts": ["9", "8", "6"], "correct": 1, "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.", "src": ""}, {"q": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:", "opts": ["luôn reset về 0", "đảo trạng thái (toggle)", "giữ nguyên trạng thái"], "correct": 1, "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.", "src": ""}, {"q": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):", "opts": ["nhỏ hơn", "bằng nhau", "lớn hơn"], "correct": 2, "explain": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.", "src": ""}, {"q": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?", "opts": ["4", "2 (0 và 1)", "3 (0, 1, và trở kháng cao Z)"], "correct": 2, "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.", "src": ""}, {"q": "Cổng logic nào được gọi là 'cổng vạn năng' vì có thể dùng để tạo mọi hàm logic khác?", "opts": ["AND", "NAND", "XOR"], "correct": 1, "explain": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.", "src": ""}, {"q": "Trong quy ước logic dương (positive logic), mức logic 1 tương ứng với:", "opts": ["luôn đúng bằng 5V", "mức điện áp cao hơn", "mức điện áp thấp hơn"], "correct": 1, "explain": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.", "src": ""}]}</script></div>
 <h2>✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)</h2>
 <p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 3 – Logic Gates và Chapter 4 – Boolean Algebra and Logic Simplification, Problems (Ch.3 p.179-186, Ch.4 p.252-253); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-2, A-3, A-3 đến A-4).</p>
-<p class='essay-intro'><i>Chương 3 có 55 bài; chỉ các bài SỐ LẺ có đáp án in. Đã đưa lên các bài dạng sóng và ký hiệu (1 đến 27), bài mạng lập trình/VHDL/tham số (29 đến 37), bài tìm cổng hỏng và thiết kế (39 đến 51), mỗi bài kèm ảnh đề và ảnh đáp án thật. Chưa đưa: bài 41 (đọc sơ đồ chân IC trên bo mạch, chưa tự kiểm chứng độc lập được), bài 49 (phụ thuộc bài 48 và Hình 3–25), bài 53, 55 (cần file Multisim không có trong sách). Bài chẵn không có đáp án in nên không đưa.</i></p>
+<p class='essay-intro'><i>Chương 3 có 55 bài; chỉ các bài SỐ LẺ có đáp án in. Đã đưa lên các bài dạng sóng và ký hiệu (1 đến 27), bài mạng lập trình/VHDL/tham số (29 đến 37), bài tìm cổng hỏng và thiết kế (39 đến 51), mỗi bài kèm ảnh đề và ảnh đáp án thật. Chương 4 (72 bài): đã đưa các bài 1, 5, 7, 9, 13, 19 đến 23, 31 đến 41, 45 đến 53, 61, kèm ảnh đề gốc (giữ nguyên gạch trên của sách) và ảnh đáp án thật. Chưa đưa các bài 3, 11, 15, 17, 25 đến 29, 43, 55 đến 59 vì: bài 3 và bài 15 có đáp án in KHÔNG khớp đề (bài 3 hỏi 3 biến A, B, C nhưng đáp án là ABCD; bài 15 đề là AB+(AB)‾, ABCD, A+BC, ABC+D còn hình đáp án vẽ các mạch khác hẳn), bài 11 có gạch trên lồng nhiều tầng không đọc chắc được, các bài 17, 25 đến 29, 43, 55 đến 59 phụ thuộc đọc mạch hoặc các bài trước mà chưa tự kiểm chứng độc lập được. Với Chương 3, chưa đưa: bài 41 (đọc sơ đồ chân IC trên bo mạch, chưa tự kiểm chứng độc lập được), bài 49 (phụ thuộc bài 48 và Hình 3–25), bài 53, 55 (cần file Multisim không có trong sách). Bài chẵn không có đáp án in nên không đưa.</i></p>
 <div class="essay-item">
   <p class="essay-q"><b>1.</b> Dạng sóng đầu vào ở Hình 3–76 được đưa vào một hệ thống gồm hai cổng đảo (inverter) nối tiếp. Hãy vẽ dạng sóng ngõ ra trên mỗi cổng đảo, đúng tương quan với đầu vào.</p>
   <p class="essay-orig"><b>Original (EN):</b> The input waveform shown in Figure 3–76 is applied to a system of two inverters connected in series. Draw the output waveform across each inverter in proper relation to the input.</p>
@@ -399,6 +399,16 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>13.</b> Viết biểu thức Boole cho mỗi mạch logic ở Hình 4–57.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Write the Boolean expression for each of the logic circuits in Figure 4–57.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq13.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq13.png" alt="Floyd Ch.4 · Problem 13 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm tra bằng cách đọc mạch: (a) AND 4 ngõ vào, X = ABCD; (b) AND(A,B) rồi OR với C, X = AB + C; (c) đảo A, AND với B, rồi đảo ngõ ra, X = (Ā·B)‾ = A + B̄; (d) OR(A,B) rồi AND với C, X = (A + B)C. Khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q13.png" alt="Floyd Ch.4 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>19.</b> Dùng các kỹ thuật đại số Boole, rút gọn các biểu thức sau đến mức tối đa có thể:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
   <p class="essay-orig"><b>Original (EN):</b> Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
   
@@ -406,6 +416,146 @@
   <p class="pill">Floyd Ch.4 · Problem 19</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q19.png" alt="Floyd Ch.4 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>21.</b> Dùng đại số Boole, rút gọn các biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Using Boolean algebra, simplify the following expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq21.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq21.png" alt="Floyd Ch.4 · Problem 21 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Kiểm chứng bằng sympy: (a), (c), (d), (e) khớp đáp án in. RIÊNG ý (b) KHÔNG khớp: đọc ở độ phân giải 1200 dpi, đề là B̄C̄D + (B+C+D)‾ + B̄C̄D̄E, trong đó thanh gạch dài phủ lên cả tổng (B+C+D) và không có gạch phụ nào trên D; biểu thức này rút gọn đúng thành B̄C̄, còn đáp án in là B̄C̄D + B̄C̄E. Nghi lỗi in của sách (đáp án in chỉ khớp nếu D trong tổng bị đảo, điều mà ảnh quét không cho thấy).</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 21</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q21.png" alt="Floyd Ch.4 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Chuyển các biểu thức sau sang dạng tổng các tích (SOP). Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Convert the following expressions to sum-of-product (SOP) forms. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq23.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq23.png" alt="Floyd Ch.4 · Problem 23 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đã tự kiểm chứng bằng sympy (OCR_output/Floyd/scripts/verify_ch4.py): biểu thức trong đề và kết quả in là tương đương logic.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q23.png" alt="Floyd Ch.4 · Problem 23" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Lập bảng chân trị cho mỗi biểu thức SOP chuẩn sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Develop a truth table for each of the following standard SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq31.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq31.png" alt="Floyd Ch.4 · Problem 31 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm tra: (a) có giá trị 1 đúng ở các dòng 001, 110, 111; (b) có giá trị 1 ở 000, 010, 011, 101, 110; khớp Bảng P–3 và P–4 trong đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q31.png" alt="Floyd Ch.4 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> Lập bảng chân trị cho mỗi biểu thức SOP sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Develop a truth table for each of the SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq33.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq33.png" alt="Floyd Ch.4 · Problem 33 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm tra: (a) bằng 1 ở 000, 010, 011, 101, 110; (b) bằng 0 chỉ ở 0100, 0111, 1100 (còn lại bằng 1); khớp Bảng P–5 và P–6.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q33.png" alt="Floyd Ch.4 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> Lập bảng chân trị cho mỗi biểu thức POS chuẩn sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Develop a truth table for each of the standard POS expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq35.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq35.png" alt="Floyd Ch.4 · Problem 35 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm tra ý (a): bằng 1 ở 011, 100, 101, 110, 111, khớp Bảng P–7. Ý (b) có bảng 16 dòng, đối chiếu bằng mắt từng dòng với Bảng P–8 trong ảnh đáp án.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q35.png" alt="Floyd Ch.4 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> Vẽ bản đồ Karnaugh 3 biến và ghi nhãn mỗi ô theo giá trị nhị phân của nó.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Draw a 3-variable Karnaugh map and label each cell according to its binary value.</p>
+  
+  <p class="essay-note"><i>Thứ tự hàng AB là 00, 01, 11, 10 (mã Gray), cột C là 0, 1; mỗi ô được ghi bằng ABC tương ứng.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q37.png" alt="Floyd Ch.4 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Viết số hạng tích chuẩn cho từng ô của bản đồ Karnaugh 3 biến.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Write the standard product term for each cell in a 3-variable Karnaugh map.</p>
+  
+  <p class="essay-note"><i>Ví dụ ô 000 là ĀB̄C̄, ô 101 là AB̄C; mỗi ô là một minterm với biến bằng 0 được đảo.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q39.png" alt="Floyd Ch.4 · Problem 39" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>41.</b> Dùng bản đồ Karnaugh rút gọn mỗi biểu thức về dạng SOP tối thiểu. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Use a Karnaugh map to simplify each expression to a minimum SOP form. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq41.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq41.png" alt="Floyd Ch.4 · Problem 41 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Kiểm chứng: (a) bốn minterm 000, 101, 011, 110 không có hai ô kề nhau nên không rút gọn được; (b) AC[B̄ + B(B + C̄)] = AC; (c) = DF̄ + ĒF̄. Đều khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 41</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q41.png" alt="Floyd Ch.4 · Problem 41" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>45.</b> Dùng bản đồ Karnaugh rút gọn hàm cho bởi Bảng 4–16 về dạng SOP tối thiểu.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Reduce the function specified in truth Table 4–16 to its minimum SOP form by using a Karnaugh map.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_tab4_16.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_tab4_16.png" alt="Floyd Ch.4 · Problem 45 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Bảng 4–16 có X = 0 chỉ ở các dòng 010 và 110 (tức B = 1, C = 0), nên X = B̄ + C. Tự tính bằng sympy, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 45</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q45.png" alt="Floyd Ch.4 · Problem 45" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>47.</b> Giải Bài 46 trong trường hợp sáu tổ hợp nhị phân cuối (1010 đến 1111) không được phép xuất hiện (don't care).<br><i>Bài 46: dùng bản đồ Karnaugh để thực hiện biểu thức SOP tối thiểu cho hàm ở Bảng 4–17.</i></p>
+  <p class="essay-orig"><b>Original (EN):</b> Solve Problem 46 for a situation in which the last six binary combinations are not allowed.<br><i>Problem 46: Use the Karnaugh map method to implement the minimum SOP expression for the logic function specified in truth Table 4–17.</i></p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_tab4_17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_tab4_17.png" alt="Floyd Ch.4 · Problem 47 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính bằng sympy với 1010 đến 1111 là don't care: SOP tối thiểu = ĀB̄C̄D + BC + AD̄ + CD̄, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 47</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q47.png" alt="Floyd Ch.4 · Problem 47" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>49.</b> Dùng bản đồ Karnaugh rút gọn mỗi biểu thức về dạng POS tối thiểu. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Use a Karnaugh map to simplify each expression to minimum POS form. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq49.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq49.png" alt="Floyd Ch.4 · Problem 49 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự kiểm chứng: (a) ba thừa số tổng (maxterm) không có hai thừa số kề nhau nên không rút gọn được; (b) sympy cho (W+X)(W+Z̄)(X+Ȳ)(Ȳ+Z̄), tương đương logic với đáp án in (W+X)(W+Z̄)(X+Ȳ)(W̄+X̄+Ȳ+Z̄) (cả hai đều là dạng POS của cùng một hàm).</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 49</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q49.png" alt="Floyd Ch.4 · Problem 49" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>51.</b> Xác định biểu thức POS tối thiểu cho hàm ở Bảng 4–17.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine the minimum POS expression for the function in Table 4–17.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_tab4_17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_tab4_17.png" alt="Floyd Ch.4 · Problem 51 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính bằng sympy (POSform trên các dòng có X = 0): kết quả có đúng 5 thừa số tổng giống đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 51</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q51.png" alt="Floyd Ch.4 · Problem 51" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>53.</b> Liệt kê các minterm của biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> List the minterms in the expression. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq53.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq53.png" alt="Floyd Ch.4 · Problem 53 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính: các số hạng tương ứng 111, 001, 110, 101, 011 nên các minterm là 1, 3, 5, 6, 7, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 53</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q53.png" alt="Floyd Ch.4 · Problem 53" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>61.</b> Viết chương trình VHDL cho biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Write a program in VHDL for the expression. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq61.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq61.png" alt="Floyd Ch.4 · Problem 61 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Phần logic Y <= (A and not B and C) or ... khớp biểu thức đề. Lưu ý lỗi nhỏ trong đáp án in: cổng ra được khai báo là X (X: out bit) nhưng phép gán dùng Y, nên chương trình in không biên dịch được nếu giữ nguyên.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 61</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q61.png" alt="Floyd Ch.4 · Problem 61" loading="lazy"/></div>
   </details>
 </div>
 </div><footer class="site"><div class="wrap">

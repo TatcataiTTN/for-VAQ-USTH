@@ -117,7 +117,7 @@
 <div class="quiz"><script type="application/json">{"items": [{"q": "A two-input NOR gate produces logic 1 when:", "opts": ["both inputs at logic 1", "both inputs at logic 0", "either input at logic 1"], "correct": 1, "explain": "NOR = NOT(OR); OR = 0 only when both inputs are 0, so NOR = 1 when both inputs are 0.", "src": ""}, {"q": "A two-input XOR gate with both inputs at 1 gives an output of:", "opts": ["0", "indeterminate", "1"], "correct": 0, "explain": "XOR outputs 1 only when the two inputs are DIFFERENT; (1,1) gives 0.", "src": ""}, {"q": "In Boolean algebra, the expression A + A'B simplifies to:", "opts": ["A · B", "A + B", "A"], "correct": 1, "explain": "This is the extended absorption law: A + A'B = A + B.", "src": ""}, {"q": "By De Morgan's theorem, (A·B)' equals:", "opts": ["A + B", "A' + B'", "A'·B'"], "correct": 1, "explain": "(AB)' = A' + B' by De Morgan's theorem.", "src": ""}, {"q": "A truth table with 3 input variables has how many rows (combinations)?", "opts": ["9", "8", "6"], "correct": 1, "explain": "Number of combinations = 2ⁿ with n = 3 → 2³ = 8.", "src": ""}, {"q": "A JK flip-flop with J=K=1 at the clock edge will:", "opts": ["always reset to 0", "toggle", "remain in the same state"], "correct": 1, "explain": "J = K = 1 is the characteristic toggle mode of a JK flip-flop.", "src": ""}, {"q": "Compared with TTL, CMOS logic generally has a noise margin that is:", "opts": ["less than", "equal", "greater than"], "correct": 2, "explain": "CMOS has an output voltage range close to both supply levels (rail-to-rail), so its noise margin is usually larger than TTL's.", "src": ""}, {"q": "A tri-state buffer has how many possible output states?", "opts": ["4", "2 (0 and 1)", "3 (0, 1, and high-impedance Z)"], "correct": 2, "explain": "Tri-state has a high-impedance (high-Z) state in addition to 0 and 1.", "src": ""}, {"q": "Which gate is called a 'universal gate' because any logic function can be built from it alone?", "opts": ["AND", "NAND", "XOR"], "correct": 1, "explain": "NAND (and NOR) are universal gates; NAND alone can build AND, OR, NOT, and so on.", "src": ""}, {"q": "In positive logic convention, logic 1 corresponds to:", "opts": ["always exactly 5V", "a higher voltage level", "a lower voltage level"], "correct": 1, "explain": "Positive logic convention: the higher voltage = 1, the lower voltage = 0.", "src": ""}]}</script></div>
 <h2>✍️ Free-response questions (source: Floyd, Digital Fundamentals)</h2>
 <p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 3 – Logic Gates and Chapter 4 – Boolean Algebra and Logic Simplification, Problems (Ch.3 p.179-186, Ch.4 p.252-253); answers in the Answers to Odd-Numbered Problems appendix (p.A-2, A-3, A-3 to A-4).</p>
-<p class='essay-intro'><i>Chapter 3 has 55 problems; only the ODD-numbered ones have printed answers. Added here: waveform and symbol problems (1 to 27), programmable-array/VHDL/parameter problems (29 to 37), faulty-gate and design problems (39 to 51), each with the question figure and the real answer image. Not included: problem 41 (reading IC pin diagrams on a board, could not be independently verified), problem 49 (depends on problem 48 and Figure 3–25), problems 53 and 55 (need Multisim files not in the book). Even-numbered problems have no printed answer and are omitted.</i></p>
+<p class='essay-intro'><i>Chapter 3 has 55 problems; only the ODD-numbered ones have printed answers. Added here: waveform and symbol problems (1 to 27), programmable-array/VHDL/parameter problems (29 to 37), faulty-gate and design problems (39 to 51), each with the question figure and the real answer image. Chapter 4 (72 problems): included are 1, 5, 7, 9, 13, 19 to 23, 31 to 41, 45 to 53 and 61, with the original question image (book overlines preserved) and the real answer image. Not included: 3, 11, 15, 17, 25 to 29, 43, 55 to 59, because problems 3 and 15 have printed answers that do NOT match the question (3 asks about 3 variables A, B, C but the answer is ABCD; 15 asks for AB+(AB)′, ABCD, A+BC, ABC+D but the answer figure draws entirely different circuits), problem 11 has multi-level overlines that cannot be read reliably, and 17, 25 to 29, 43, 55 to 59 depend on reading circuits or earlier problems that could not be independently verified. For Chapter 3, not included: problem 41 (reading IC pin diagrams on a board, could not be independently verified), problem 49 (depends on problem 48 and Figure 3–25), problems 53 and 55 (need Multisim files not in the book). Even-numbered problems have no printed answer and are omitted.</i></p>
 <div class="essay-item">
   <p class="essay-q"><b>1.</b> The input waveform shown in Figure 3–76 is applied to a system of two inverters connected in series. Draw the output waveform across each inverter in proper relation to the input.</p>
   
@@ -399,6 +399,16 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>13.</b> Write the Boolean expression for each of the logic circuits in Figure 4–57.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq13.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq13.png" alt="Floyd Ch.4 · Problem 13 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Self-check by reading each circuit: (a) 4-input AND, X = ABCD; (b) AND(A,B) then OR with C, X = AB + C; (c) invert A, AND with B, then invert the output, X = (A′·B)′ = A + B′; (d) OR(A,B) then AND with C, X = (A + B)C. Matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q13.png" alt="Floyd Ch.4 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>19.</b> Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A(<span class="ov">A</span> + AB) &nbsp; (c) BC + <span class="ov">B</span>C<br>(d) A(A + <span class="ov">A</span>B) &nbsp; (e) A<span class="ov">B</span>C + <span class="ov">A</span>BC + <span class="ov">A</span><span class="ov">B</span>C</p>
   
   
@@ -406,6 +416,146 @@
   <p class="pill">Floyd Ch.4 · Problem 19</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q19.png" alt="Floyd Ch.4 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>21.</b> Using Boolean algebra, simplify the following expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq21.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq21.png" alt="Floyd Ch.4 · Problem 21 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Verified with sympy: (a), (c), (d), (e) match the printed answer. Item (b) does NOT: read at 1200 dpi, the problem is B′C′D + (B+C+D)′ + B′C′D′E, where the long bar spans the whole sum (B+C+D) with no extra bar on D; this simplifies exactly to B′C′, while the printed answer is B′C′D + B′C′E. A likely printing error in the book (the printed answer only fits if D inside the sum were complemented, which the scan does not show).</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 21</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q21.png" alt="Floyd Ch.4 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Convert the following expressions to sum-of-product (SOP) forms. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq23.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq23.png" alt="Floyd Ch.4 · Problem 23 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Verified with sympy (OCR_output/Floyd/scripts/verify_ch4.py): the expression in the problem and the printed result are logically equivalent.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q23.png" alt="Floyd Ch.4 · Problem 23" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Develop a truth table for each of the following standard SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq31.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq31.png" alt="Floyd Ch.4 · Problem 31 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Self-check: (a) is 1 exactly on rows 001, 110, 111; (b) is 1 on 000, 010, 011, 101, 110; matches Tables P–3 and P–4 in the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q31.png" alt="Floyd Ch.4 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> Develop a truth table for each of the SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq33.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq33.png" alt="Floyd Ch.4 · Problem 33 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Self-check: (a) is 1 on 000, 010, 011, 101, 110; (b) is 0 only on 0100, 0111, 1100 (1 elsewhere); matches Tables P–5 and P–6.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q33.png" alt="Floyd Ch.4 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> Develop a truth table for each of the standard POS expressions. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq35.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq35.png" alt="Floyd Ch.4 · Problem 35 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Self-check for (a): 1 on 011, 100, 101, 110, 111, matching Table P–7. Item (b) has a 16-row table, compared row by row by eye against Table P–8 in the answer image.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q35.png" alt="Floyd Ch.4 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> Draw a 3-variable Karnaugh map and label each cell according to its binary value.</p>
+  
+  
+  <p class="essay-note"><i>Rows AB run 00, 01, 11, 10 (Gray order), columns C run 0, 1; each cell is labelled with its ABC value.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q37.png" alt="Floyd Ch.4 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Write the standard product term for each cell in a 3-variable Karnaugh map.</p>
+  
+  
+  <p class="essay-note"><i>For example cell 000 is A′B′C′ and cell 101 is AB′C; each cell is a minterm with the 0-valued variables complemented.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q39.png" alt="Floyd Ch.4 · Problem 39" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>41.</b> Use a Karnaugh map to simplify each expression to a minimum SOP form. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq41.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq41.png" alt="Floyd Ch.4 · Problem 41 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Check: (a) the four minterms 000, 101, 011, 110 have no adjacent pair, so nothing simplifies; (b) AC[B′ + B(B + C′)] = AC; (c) = DF′ + E′F′. All match the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 41</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q41.png" alt="Floyd Ch.4 · Problem 41" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>45.</b> Reduce the function specified in truth Table 4–16 to its minimum SOP form by using a Karnaugh map.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_tab4_16.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_tab4_16.png" alt="Floyd Ch.4 · Problem 45 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Table 4–16 has X = 0 only on rows 010 and 110 (B = 1, C = 0), so X = B′ + C. Computed with sympy, matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 45</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q45.png" alt="Floyd Ch.4 · Problem 45" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>47.</b> Solve Problem 46 for a situation in which the last six binary combinations are not allowed.<br><i>Problem 46: Use the Karnaugh map method to implement the minimum SOP expression for the logic function specified in truth Table 4–17.</i></p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_tab4_17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_tab4_17.png" alt="Floyd Ch.4 · Problem 47 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Computed with sympy with 1010 to 1111 as don't-cares: minimum SOP = A′B′C′D + BC + AD′ + CD′, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 47</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q47.png" alt="Floyd Ch.4 · Problem 47" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>49.</b> Use a Karnaugh map to simplify each expression to minimum POS form. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq49.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq49.png" alt="Floyd Ch.4 · Problem 49 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Self-check: (a) the three maxterms have no adjacent pair so nothing reduces; (b) sympy gives (W+X)(W+Z′)(X+Y′)(Y′+Z′), logically equivalent to the printed answer (W+X)(W+Z′)(X+Y′)(W′+X′+Y′+Z′) (both are POS forms of the same function).</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 49</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q49.png" alt="Floyd Ch.4 · Problem 49" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>51.</b> Determine the minimum POS expression for the function in Table 4–17.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_tab4_17.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_tab4_17.png" alt="Floyd Ch.4 · Problem 51 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Computed with sympy (POSform over the rows where X = 0): the result has exactly the same 5 sum factors as the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 51</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q51.png" alt="Floyd Ch.4 · Problem 51" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>53.</b> List the minterms in the expression. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq53.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq53.png" alt="Floyd Ch.4 · Problem 53 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Own calculation: the terms are 111, 001, 110, 101, 011, so the minterms are 1, 3, 5, 6, 7, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 53</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q53.png" alt="Floyd Ch.4 · Problem 53" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>61.</b> Write a program in VHDL for the expression. The original problem (with overlines exactly as in the book) is shown in the image below.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch04_qq61.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch04_qq61.png" alt="Floyd Ch.4 · Problem 61 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>The logic Y <= (A and not B and C) or ... matches the problem's expression. Note a small error in the printed answer: the output port is declared as X (X: out bit) but the assignment uses Y, so the printed program would not compile as written.</i></p>
+  <p class="pill">Floyd Ch.4 · Problem 61</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch04_q61.png" alt="Floyd Ch.4 · Problem 61" loading="lazy"/></div>
   </details>
 </div>
 </div><footer class="site"><div class="wrap">
