@@ -930,9 +930,21 @@ ESSAY = {
     ]
   },
   "04-computer-cpu": {
-    "src_book": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-24, A-25).",
-    "src_book_en": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693); answers in the Answers to Odd-Numbered Problems appendix (p.A-24, A-25).",
+    "src_book": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693, PDF 691-695); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-24, A-25).",
+    "src_book_en": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693, PDF pp. 691-695); answers in the Answers to Odd-Numbered Problems appendix (p.A-24, A-25).",
     "items": [
+      {
+        "num": 1,
+        "q_vi": "Làm thế nào phân biệt hai bộ nhớ ở Hình 11–78?",
+        "q_en": "How would you distinguish between the two memories in Figure 11–78?",
+        "src": "Floyd Ch.11 · Problem 1",
+        "img": "essay_floyd_ch11_q01.png",
+        "note_vi": "Đối chiếu hình: (a) chỉ có ngõ ra O0 đến O3 và không có chân R/W nên là ROM; (b) có chân R/W và các chân I/O hai chiều nên là RAM.",
+        "note_en": "Checked against the figure: (a) has only outputs O0 to O3 and no R/W pin, so it is a ROM; (b) has an R/W pin and bidirectional I/O pins, so it is a RAM.",
+        "qimgs": [
+          "essay_floyd_ch11_qq01.png"
+        ]
+      },
       {
         "num": 3,
         "q_vi": "Hãy giải thích hai thao tác cơ bản của bộ nhớ: Write (ghi) và Read (đọc).",
@@ -948,6 +960,15 @@ ESSAY = {
         "img": "essay_floyd_ch11_q05.png"
       },
       {
+        "num": 7,
+        "q_vi": "Giả sử SRAM 64k × 8 có cấu trúc giống SRAM ở Hình 11–12. Hãy xác định số hàng và số cột 8 bit của mảng ô nhớ.",
+        "q_en": "Assuming that a 64k × 8 SRAM has a structure similar to that of the SRAM in Figure 11–12, determine the number of rows and 8-bit columns in its memory cell array.",
+        "src": "Floyd Ch.11 · Problem 7",
+        "img": "essay_floyd_ch11_q07.png",
+        "note_vi": "Tự kiểm tra: 512 × 128 = 65 536 = 64k địa chỉ, mỗi ô 8 bit, khớp đáp án in.",
+        "note_en": "Own check: 512 × 128 = 65,536 = 64k addresses, 8 bits each, matching the printed answer."
+      },
+      {
         "num": 9,
         "q_vi": "Bộ nhớ đệm (cache memory) là gì?",
         "q_en": "What is cache memory?",
@@ -955,11 +976,71 @@ ESSAY = {
         "img": "essay_floyd_ch11_q09.png"
       },
       {
+        "num": 11,
+        "q_vi": "Với mảng ROM ở Hình 11–79, hãy xác định các ngõ ra cho mọi tổ hợp ngõ vào và tóm tắt dưới dạng bảng (ô xanh là 1, ô xám là 0).",
+        "q_en": "For the ROM array in Figure 11–79, determine the outputs for all possible input combinations, and summarize them in tabular form (blue cell is a 1, gray cell is a 0).",
+        "src": "Floyd Ch.11 · Problem 11",
+        "img": "essay_floyd_ch11_q11.png",
+        "note_vi": "Đã đọc màu từng ô trực tiếp từ pixel hình đề (xanh = 1, xám = 0) và đối chiếu bảng in: khớp cả 16 ô.",
+        "note_en": "Each cell colour was read directly from the pixels of the question figure (blue = 1, gray = 0) and compared with the printed table: all 16 cells agree.",
+        "qimgs": [
+          "essay_floyd_ch11_qq11.png"
+        ]
+      },
+      {
+        "num": 13,
+        "q_vi": "Dùng quy trình tương tự Ví dụ 11–1, hãy thiết kế ROM chuyển BCD một chữ số sang mã dư 3 (excess-3).",
+        "q_en": "Using a procedure similar to that in Example 11–1, design a ROM for conversion of single-digit BCD to excess-3 code.",
+        "src": "Floyd Ch.11 · Problem 13",
+        "img": "essay_floyd_ch11_q13.png",
+        "note_vi": "Đã đọc từng chấm trong Hình P–93 từ pixel (chấm đặc = 0, vòng rỗng = 1) và so với BCD + 3: cả 10 hàng (0 đến 9) cho 0011 đến 1100, khớp 100%.",
+        "note_en": "Every dot in Figure P–93 was read from the pixels (filled dot = 0, open ring = 1) and compared with BCD + 3: all ten rows (0 to 9) give 0011 to 1100, matching 100%."
+      },
+      {
+        "num": 15,
+        "q_vi": "Giả sử ma trận PROM ở Hình 11–81 được lập trình bằng cách đốt cầu chì để tạo bit 0. Hãy chỉ ra các liên kết cần đốt để lập trình bảng tra X³, với X từ 0 đến 7.",
+        "q_en": "Assuming that the PROM matrix in Figure 11–81 is programmed by blowing a fuse link to create a 0, indicate the links to be blown to program an X³ look-up table, where X is a number from 0 through 7.",
+        "src": "Floyd Ch.11 · Problem 15",
+        "img": "essay_floyd_ch11_q15.png",
+        "note_vi": "Tự tính lại: các lập phương 0, 1, 8, 27, 64, 125, 216, 343 viết 9 bit, mỗi hàng 9 liên kết (hàng k gồm 9k+1 đến 9k+9, cột phải nhất là LSB); bit 0 thì đốt. Kết quả trùng đúng danh sách đáp án in.",
+        "note_en": "Recomputed: the cubes 0, 1, 8, 27, 64, 125, 216, 343 written in 9 bits, 9 links per row (row k holds 9k+1 to 9k+9, rightmost column is the LSB); a 0 bit means the link is blown. The result equals the printed list exactly.",
+        "qimgs": [
+          "essay_floyd_ch11_qq15.png"
+        ]
+      },
+      {
+        "num": 17,
+        "q_vi": "Dùng DRAM 16k × 4 để xây DRAM 64k × 8. Hãy vẽ sơ đồ logic.",
+        "q_en": "Use 16k × 4 DRAMs to build a 64k × 8 DRAM. Show the logic diagram.",
+        "src": "Floyd Ch.11 · Problem 17",
+        "img": "essay_floyd_ch11_q17.png",
+        "note_vi": "Tự kiểm tra: 64k × 8 cần 4 nhóm theo chiều sâu × 2 chip theo chiều rộng = 8 chip; 64k = 2^16 nên có 16 đường địa chỉ, 2 đường cao được giải mã 2 sang 4 để chọn nhóm.",
+        "note_en": "Own check: 64k × 8 needs 4 groups in depth × 2 chips in width = 8 chips; 64k = 2^16 gives 16 address lines, with the 2 high lines decoded 2-to-4 to select the group."
+      },
+      {
+        "num": 19,
+        "q_vi": "Độ dài từ và dung lượng từ của bộ nhớ ở Bài 17 là bao nhiêu? Còn ở Bài 18?",
+        "q_en": "What is the word length and the word capacity of the memory of Problem 17? Problem 18?",
+        "src": "Floyd Ch.11 · Problem 19",
+        "img": "essay_floyd_ch11_q19.png",
+        "note_vi": "Bài 17: 64k × 8, tức 8 bit và 64k từ. Bài 18: 256k × 4, tức 4 bit và 256k từ, khớp đáp án in.",
+        "note_en": "Problem 17: 64k × 8, i.e. 8 bits and 64k words. Problem 18: 256k × 4, i.e. 4 bits and 256k words, matching the printed answer."
+      },
+      {
         "num": 21,
         "q_vi": "Xét một RAM 4096 × 8, trong đó 64 địa chỉ cuối cùng được dùng làm ngăn xếp LIFO. Nếu địa chỉ đầu tiên của RAM là 000<sub>16</sub>, hãy xác định 64 địa chỉ dùng cho ngăn xếp.",
         "q_en": "Consider a 4096 × 8 RAM in which the last 64 addresses are used as a LIFO stack. If the first address in the RAM is 000<sub>16</sub>, designate the 64 addresses used for the stack.",
         "src": "Floyd Ch.11 · Problem 21",
         "img": "essay_floyd_ch11_q21.png"
+      },
+      {
+        "num": 23,
+        "q_vi": "Mô tả cấu trúc vật lý của đĩa cứng.",
+        "q_en": "Describe the physical structure of a hard disk.",
+        "src": "Floyd Ch.11 · Problem 23",
+        "img": "essay_floyd_ch11_q23.png",
+        "note_vi": "Câu hỏi mô tả, đáp án in là đoạn văn của sách (Mục 11–8), đối chiếu đúng nội dung.",
+        "note_en": "A descriptive question; the printed answer is the book's own passage (Section 11–8) and matches its content."
       },
       {
         "num": 25,
@@ -974,7 +1055,69 @@ ESSAY = {
         "q_en": "What is the main difference between a CD and a DVD?",
         "src": "Floyd Ch.11 · Problem 27",
         "img": "essay_floyd_ch11_q27.png"
+      },
+      {
+        "num": 29,
+        "q_vi": "Phân cấp bộ nhớ (memory hierarchy) nghĩa là gì?",
+        "q_en": "What does memory hierarchy mean?",
+        "src": "Floyd Ch.11 · Problem 29",
+        "img": "essay_floyd_ch11_q29.png",
+        "note_vi": "Câu định nghĩa theo sách (Mục 11–9).",
+        "note_en": "Definition question answered from the book (Section 11–9)."
+      },
+      {
+        "num": 31,
+        "q_vi": "Hãy mô tả tỉ lệ trúng (hit rate).",
+        "q_en": "Describe hit rate.",
+        "src": "Floyd Ch.11 · Problem 31",
+        "img": "essay_floyd_ch11_q31.png",
+        "note_vi": "Câu định nghĩa theo sách (Mục 11–9): tỉ lệ truy cập tìm thấy dữ liệu ở cấp bộ nhớ đang xét; miss rate = 1 − hit rate.",
+        "note_en": "Definition question answered from the book (Section 11–9): the share of accesses that find the data at the given memory level; miss rate = 1 − hit rate."
+      },
+      {
+        "num": 33,
+        "q_vi": "Hãy vẽ sơ đồ một hệ lưu trữ đám mây có sáu máy chủ.",
+        "q_en": "Draw a diagram of a cloud storage system with six servers.",
+        "src": "Floyd Ch.11 · Problem 33",
+        "img": "essay_floyd_ch11_q33.png",
+        "note_vi": "Đáp án in là Hình P–94: khối Front end/Server Control nối hai chiều với từng máy chủ 1 đến 6, và các máy chủ nối lưới với nhau. Đây là bài vẽ nên chỉ đối chiếu với hình in.",
+        "note_en": "The printed answer is Figure P–94: a Front end/Server Control block connected bidirectionally to each of servers 1 to 6, with the servers meshed together. A drawing task, so it can only be compared against the printed figure."
+      },
+      {
+        "num": 35,
+        "q_vi": "Kiến trúc của một hệ lưu trữ đám mây là gì?",
+        "q_en": "What is the architecture of a cloud storage system?",
+        "src": "Floyd Ch.11 · Problem 35",
+        "img": "essay_floyd_ch11_q35.png",
+        "note_vi": "Câu mô tả theo sách (Mục 11–10): front end dùng giao thức truy cập, control dùng giao thức xử lý dữ liệu, back end cung cấp lưu trữ.",
+        "note_en": "Descriptive question answered from the book (Section 11–10): a front end with access protocols, a control layer with data-handling protocols, and a back end providing storage."
+      },
+      {
+        "num": 37,
+        "q_vi": "Xác định nội dung ROM ở Hình 11–84 có đúng không.",
+        "q_en": "Determine if the contents of the ROM in Figure 11–84 are correct.",
+        "src": "Floyd Ch.11 · Problem 37",
+        "img": "essay_floyd_ch11_q37.png",
+        "note_vi": "Tự tính theo phương pháp của sách (Mục 11–11: tổng XOR từng cột, bỏ nhớ): 7 từ cho 00100, trong khi checksum lưu là 01100, lệch ở bit thứ hai nên nội dung sai, khớp đáp án in.",
+        "note_en": "Own calculation by the book's method (Section 11–11: XOR sum of each column, carries discarded): the seven words give 00100 while the stored checksum is 01100, differing in the second bit, so the contents are in error, matching the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch11_qq37.png"
+        ]
+      },
+      {
+        "num": 39,
+        "q_vi": "Chạy kiểm tra checksum cho bộ nhớ ở Hình 11–85, mỗi ROM có checksum ở địa chỉ cao nhất. Cần thay IC nào với mỗi thông báo lỗi: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?",
+        "q_en": "Suppose that a checksum test is run on the memory in Figure 11–85 and each individual ROM has a checksum at its highest address. What IC or ICs will you replace for each of the following error messages: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?",
+        "src": "Floyd Ch.11 · Problem 39",
+        "img": "essay_floyd_ch11_q39.png",
+        "note_vi": "Tự đổi sang thập phân: 40 đến 5F hex = 64 đến 95 là ROM 2; 20 đến 3F hex = 32 đến 63 là ROM 1; 00 đến 7F hex = 0 đến 127 là cả bốn ROM. Khớp đáp án in.",
+        "note_en": "Converted to decimal: 40 to 5F hex = 64 to 95 is ROM 2; 20 to 3F hex = 32 to 63 is ROM 1; 00 to 7F hex = 0 to 127 is all four ROMs. Matches the printed answer.",
+        "qimgs": [
+          "essay_floyd_ch11_qq39.png"
+        ]
       }
-    ]
+    ],
+    "note_vi": "Chương 11 có 39 bài, 20 bài lẻ. Đã đưa đủ 20 bài lẻ (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39) kèm ảnh đề và ảnh đáp án thật; các bài tính toán đều đã tự kiểm chứng (bài 33 chỉ đối chiếu với hình in vì là bài vẽ).",
+    "note_en": "Chapter 11 has 39 problems, 20 of them odd. All 20 odd problems (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39) are included with the question image and the real answer image; calculation problems were independently verified (Problem 33 is a drawing task and was only compared with the printed figure)."
   }
 }

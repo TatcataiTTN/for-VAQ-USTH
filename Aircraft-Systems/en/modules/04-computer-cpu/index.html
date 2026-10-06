@@ -96,8 +96,18 @@
 <h3>Additional practice questions (AI-authored in the same style, answers self-verified by computation)</h3>
 <div class="quiz"><script type="application/json">{"items": [{"q": "If a CPU runs at 100MHz, one clock period (T-state) lasts:", "opts": ["1 ns", "10 ns", "100 ns"], "correct": 1, "explain": "T = 1/f = 1/100.000.000 = 10ns.", "src": ""}, {"q": "An 8-bit data bus can represent decimal values from 0 to:", "opts": ["255", "128", "256"], "correct": 0, "explain": "2⁸-1 = 255.", "src": ""}, {"q": "A 16-bit address bus can address how many unique memory locations?", "opts": ["32.768", "65.536", "16.384"], "correct": 1, "explain": "2¹⁶ = 65.536.", "src": ""}, {"q": "ROM is best described as:", "opts": ["read-only memory that loses its data when power is removed", "read-only memory that retains its data when power is removed (non-volatile)", "read/write memory that loses its data when power is removed"], "correct": 1, "explain": "ROM is non-volatile memory: its data remains when power is lost.", "src": ""}, {"q": "RAM loses its stored data when:", "opts": ["only after 24 hours", "lost when the power supply is removed (volatile)", "never lost"], "correct": 1, "explain": "RAM is volatile memory and loses its data as soon as power is removed.", "src": ""}, {"q": "The ALU is primarily responsible for:", "opts": ["generating the system clock", "performing arithmetic and logic operations", "storing the address of the next instruction"], "correct": 1, "explain": "ALU = Arithmetic Logic Unit, which performs add/subtract/AND/OR and so on.", "src": ""}, {"q": "The Program Counter (PC) register holds:", "opts": ["the result of the most recent ALU operation", "the current stack pointer value", "the address of the next instruction to be executed"], "correct": 2, "explain": "The PC always points to the address of the next instruction to be fetched.", "src": ""}, {"q": "In the fetch-decode-execute cycle, which step retrieves the instruction from memory?", "opts": ["execute", "decode", "fetch"], "correct": 2, "explain": "The fetch step reads the instruction code from the memory location pointed to by the PC.", "src": ""}, {"q": "A microcontroller executes an instruction requiring 4 T-states at 20MHz clock; execution time is:", "opts": ["80 ns", "200 ns", "20 ns"], "correct": 1, "explain": "T=1/20MHz=50ns; 4×50ns=200ns.", "src": ""}, {"q": "A 16K×8-bit memory device has a total storage capacity of:", "opts": ["32 KB", "16 KB", "8 KB"], "correct": 1, "explain": "16K words × 8 bits/word = 16K bytes = 16KB.", "src": ""}, {"q": "Which bus carries timing and control signals throughout the computer system?", "opts": ["address bus", "control bus", "data bus"], "correct": 1, "explain": "The control bus carries control/timing signals (R/W, clock, interrupt, and so on).", "src": ""}, {"q": "A microprocessor with a 32-bit address bus can directly address up to:", "opts": ["4 GB", "4 TB", "4 MB"], "correct": 0, "explain": "2³² byte = 4.294.967.296 byte = 4GB.", "src": ""}]}</script></div>
 <h2>✍️ Free-response questions (source: Floyd, Digital Fundamentals)</h2>
-<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693); answers in the Answers to Odd-Numbered Problems appendix (p.A-24, A-25).</p>
-
+<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693, PDF pp. 691-695); answers in the Answers to Odd-Numbered Problems appendix (p.A-24, A-25).</p>
+<p class='essay-intro'><i>Chapter 11 has 39 problems, 20 of them odd. All 20 odd problems (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39) are included with the question image and the real answer image; calculation problems were independently verified (Problem 33 is a drawing task and was only compared with the printed figure).</i></p>
+<div class="essay-item">
+  <p class="essay-q"><b>1.</b> How would you distinguish between the two memories in Figure 11–78?</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq01.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq01.png" alt="Floyd Ch.11 · Problem 1 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Checked against the figure: (a) has only outputs O0 to O3 and no R/W pin, so it is a ROM; (b) has an R/W pin and bidirectional I/O pins, so it is a RAM.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 1</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q01.png" alt="Floyd Ch.11 · Problem 1" loading="lazy"/></div>
+  </details>
+</div>
 <div class="essay-item">
   <p class="essay-q"><b>3.</b> Explain the basic memory operations: Write and Read.</p>
   
@@ -119,6 +129,16 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>7.</b> Assuming that a 64k × 8 SRAM has a structure similar to that of the SRAM in Figure 11–12, determine the number of rows and 8-bit columns in its memory cell array.</p>
+  
+  
+  <p class="essay-note"><i>Own check: 512 × 128 = 65,536 = 64k addresses, 8 bits each, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 7</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q07.png" alt="Floyd Ch.11 · Problem 7" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>9.</b> What is cache memory?</p>
   
   
@@ -129,6 +149,56 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>11.</b> For the ROM array in Figure 11–79, determine the outputs for all possible input combinations, and summarize them in tabular form (blue cell is a 1, gray cell is a 0).</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq11.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq11.png" alt="Floyd Ch.11 · Problem 11 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Each cell colour was read directly from the pixels of the question figure (blue = 1, gray = 0) and compared with the printed table: all 16 cells agree.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 11</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q11.png" alt="Floyd Ch.11 · Problem 11" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>13.</b> Using a procedure similar to that in Example 11–1, design a ROM for conversion of single-digit BCD to excess-3 code.</p>
+  
+  
+  <p class="essay-note"><i>Every dot in Figure P–93 was read from the pixels (filled dot = 0, open ring = 1) and compared with BCD + 3: all ten rows (0 to 9) give 0011 to 1100, matching 100%.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q13.png" alt="Floyd Ch.11 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>15.</b> Assuming that the PROM matrix in Figure 11–81 is programmed by blowing a fuse link to create a 0, indicate the links to be blown to program an X³ look-up table, where X is a number from 0 through 7.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq15.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq15.png" alt="Floyd Ch.11 · Problem 15 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Recomputed: the cubes 0, 1, 8, 27, 64, 125, 216, 343 written in 9 bits, 9 links per row (row k holds 9k+1 to 9k+9, rightmost column is the LSB); a 0 bit means the link is blown. The result equals the printed list exactly.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 15</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q15.png" alt="Floyd Ch.11 · Problem 15" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>17.</b> Use 16k × 4 DRAMs to build a 64k × 8 DRAM. Show the logic diagram.</p>
+  
+  
+  <p class="essay-note"><i>Own check: 64k × 8 needs 4 groups in depth × 2 chips in width = 8 chips; 64k = 2^16 gives 16 address lines, with the 2 high lines decoded 2-to-4 to select the group.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 17</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q17.png" alt="Floyd Ch.11 · Problem 17" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>19.</b> What is the word length and the word capacity of the memory of Problem 17? Problem 18?</p>
+  
+  
+  <p class="essay-note"><i>Problem 17: 64k × 8, i.e. 8 bits and 64k words. Problem 18: 256k × 4, i.e. 4 bits and 256k words, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 19</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q19.png" alt="Floyd Ch.11 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>21.</b> Consider a 4096 × 8 RAM in which the last 64 addresses are used as a LIFO stack. If the first address in the RAM is 000<sub>16</sub>, designate the 64 addresses used for the stack.</p>
   
   
@@ -136,6 +206,16 @@
   <p class="pill">Floyd Ch.11 · Problem 21</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q21.png" alt="Floyd Ch.11 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Describe the physical structure of a hard disk.</p>
+  
+  
+  <p class="essay-note"><i>A descriptive question; the printed answer is the book's own passage (Section 11–8) and matches its content.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q23.png" alt="Floyd Ch.11 · Problem 23" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
@@ -156,6 +236,66 @@
   <p class="pill">Floyd Ch.11 · Problem 27</p>
   <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q27.png" alt="Floyd Ch.11 · Problem 27" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>29.</b> What does memory hierarchy mean?</p>
+  
+  
+  <p class="essay-note"><i>Definition question answered from the book (Section 11–9).</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 29</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q29.png" alt="Floyd Ch.11 · Problem 29" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Describe hit rate.</p>
+  
+  
+  <p class="essay-note"><i>Definition question answered from the book (Section 11–9): the share of accesses that find the data at the given memory level; miss rate = 1 − hit rate.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q31.png" alt="Floyd Ch.11 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> Draw a diagram of a cloud storage system with six servers.</p>
+  
+  
+  <p class="essay-note"><i>The printed answer is Figure P–94: a Front end/Server Control block connected bidirectionally to each of servers 1 to 6, with the servers meshed together. A drawing task, so it can only be compared against the printed figure.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q33.png" alt="Floyd Ch.11 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> What is the architecture of a cloud storage system?</p>
+  
+  
+  <p class="essay-note"><i>Descriptive question answered from the book (Section 11–10): a front end with access protocols, a control layer with data-handling protocols, and a back end providing storage.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q35.png" alt="Floyd Ch.11 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> Determine if the contents of the ROM in Figure 11–84 are correct.</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq37.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq37.png" alt="Floyd Ch.11 · Problem 37 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Own calculation by the book's method (Section 11–11: XOR sum of each column, carries discarded): the seven words give 00100 while the stored checksum is 01100, differing in the second bit, so the contents are in error, matching the printed answer.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q37.png" alt="Floyd Ch.11 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Suppose that a checksum test is run on the memory in Figure 11–85 and each individual ROM has a checksum at its highest address. What IC or ICs will you replace for each of the following error messages: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?</p>
+  
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq39.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq39.png" alt="Floyd Ch.11 · Problem 39 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Converted to decimal: 40 to 5F hex = 64 to 95 is ROM 2; 20 to 3F hex = 32 to 63 is ROM 1; 00 to 7F hex = 0 to 127 is all four ROMs. Matches the printed answer.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Show the book's original answer</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q39.png" alt="Floyd Ch.11 · Problem 39" loading="lazy"/></div>
   </details>
 </div>
 </div><footer class="site"><div class="wrap">

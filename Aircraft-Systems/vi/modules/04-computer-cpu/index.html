@@ -96,8 +96,18 @@
 <h3>Câu luyện tập bổ sung (do AI biên soạn thêm theo cùng dạng, đáp án tự kiểm chứng bằng tính toán)</h3>
 <div class="quiz"><script type="application/json">{"items": [{"q": "Nếu CPU chạy ở xung nhịp 100MHz, một chu kỳ xung nhịp (T-state) kéo dài:", "opts": ["1 ns", "10 ns", "100 ns"], "correct": 1, "explain": "T = 1/f = 1/100.000.000 = 10ns.", "src": ""}, {"q": "Một bus dữ liệu 8-bit biểu diễn được giá trị thập phân từ 0 đến:", "opts": ["255", "128", "256"], "correct": 0, "explain": "2⁸-1 = 255.", "src": ""}, {"q": "Một bus địa chỉ 16-bit định vị được bao nhiêu ô nhớ khác nhau?", "opts": ["32.768", "65.536", "16.384"], "correct": 1, "explain": "2¹⁶ = 65.536.", "src": ""}, {"q": "ROM được mô tả đúng nhất là:", "opts": ["bộ nhớ chỉ đọc nhưng mất dữ liệu khi mất điện", "bộ nhớ chỉ đọc, không mất dữ liệu khi mất điện (non-volatile)", "bộ nhớ đọc/ghi, mất dữ liệu khi mất điện"], "correct": 1, "explain": "ROM là bộ nhớ non-volatile: dữ liệu vẫn còn khi mất điện.", "src": ""}, {"q": "RAM (bán dẫn thông thường) sẽ mất dữ liệu đã lưu khi nào?", "opts": ["chỉ sau 24 giờ", "mất nguồn điện cấp (volatile)", "không bao giờ mất"], "correct": 1, "explain": "RAM là bộ nhớ volatile (dễ bay hơi), mất dữ liệu ngay khi ngắt điện.", "src": ""}, {"q": "ALU trong CPU chịu trách nhiệm chính cho việc:", "opts": ["tạo xung clock hệ thống", "thực hiện các phép toán số học và logic", "lưu địa chỉ lệnh kế tiếp"], "correct": 1, "explain": "ALU = Arithmetic Logic Unit, thực hiện cộng/trừ/AND/OR...", "src": ""}, {"q": "Thanh ghi bộ đếm chương trình (Program Counter) chứa:", "opts": ["kết quả phép toán ALU gần nhất", "giá trị con trỏ ngăn xếp hiện tại", "địa chỉ của lệnh kế tiếp sẽ thực thi"], "correct": 2, "explain": "PC luôn trỏ tới địa chỉ lệnh tiếp theo cần nạp.", "src": ""}, {"q": "Trong chu trình fetch-decode-execute, bước nào lấy lệnh từ bộ nhớ?", "opts": ["execute (thực thi)", "decode (giải mã)", "fetch (nạp lệnh)"], "correct": 2, "explain": "Bước fetch đọc mã lệnh từ ô nhớ được PC trỏ tới.", "src": ""}, {"q": "Một vi điều khiển thực thi lệnh cần 4 T-state ở xung nhịp 20MHz, thời gian thực thi là:", "opts": ["80 ns", "200 ns", "20 ns"], "correct": 1, "explain": "T=1/20MHz=50ns; 4×50ns=200ns.", "src": ""}, {"q": "Một IC nhớ 16K×8-bit có tổng dung lượng lưu trữ là:", "opts": ["32 KB", "16 KB", "8 KB"], "correct": 1, "explain": "16K từ × 8 bit/từ = 16K byte = 16KB.", "src": ""}, {"q": "Bus nào mang tín hiệu định thời và điều khiển xuyên suốt hệ thống máy tính?", "opts": ["address bus", "control bus", "data bus"], "correct": 1, "explain": "Control bus mang các tín hiệu điều khiển/định thời (R/W, clock, interrupt...).", "src": ""}, {"q": "Một vi xử lý có bus địa chỉ 32-bit định vị trực tiếp được tối đa:", "opts": ["4 GB", "4 TB", "4 MB"], "correct": 0, "explain": "2³² byte = 4.294.967.296 byte = 4GB.", "src": ""}]}</script></div>
 <h2>✍️ Câu hỏi tự luận (nguồn: Floyd, Digital Fundamentals)</h2>
-<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-24, A-25).</p>
-
+<p class="essay-intro">Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 11 – Data Storage, Problems (p.690-693, PDF 691-695); đáp án ở phụ lục Answers to Odd-Numbered Problems (p.A-24, A-25).</p>
+<p class='essay-intro'><i>Chương 11 có 39 bài, 20 bài lẻ. Đã đưa đủ 20 bài lẻ (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39) kèm ảnh đề và ảnh đáp án thật; các bài tính toán đều đã tự kiểm chứng (bài 33 chỉ đối chiếu với hình in vì là bài vẽ).</i></p>
+<div class="essay-item">
+  <p class="essay-q"><b>1.</b> Làm thế nào phân biệt hai bộ nhớ ở Hình 11–78?</p>
+  <p class="essay-orig"><b>Original (EN):</b> How would you distinguish between the two memories in Figure 11–78?</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq01.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq01.png" alt="Floyd Ch.11 · Problem 1 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đối chiếu hình: (a) chỉ có ngõ ra O0 đến O3 và không có chân R/W nên là ROM; (b) có chân R/W và các chân I/O hai chiều nên là RAM.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 1</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q01.png" alt="Floyd Ch.11 · Problem 1" loading="lazy"/></div>
+  </details>
+</div>
 <div class="essay-item">
   <p class="essay-q"><b>3.</b> Hãy giải thích hai thao tác cơ bản của bộ nhớ: Write (ghi) và Read (đọc).</p>
   <p class="essay-orig"><b>Original (EN):</b> Explain the basic memory operations: Write and Read.</p>
@@ -119,6 +129,16 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>7.</b> Giả sử SRAM 64k × 8 có cấu trúc giống SRAM ở Hình 11–12. Hãy xác định số hàng và số cột 8 bit của mảng ô nhớ.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Assuming that a 64k × 8 SRAM has a structure similar to that of the SRAM in Figure 11–12, determine the number of rows and 8-bit columns in its memory cell array.</p>
+  
+  <p class="essay-note"><i>Tự kiểm tra: 512 × 128 = 65 536 = 64k địa chỉ, mỗi ô 8 bit, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 7</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q07.png" alt="Floyd Ch.11 · Problem 7" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>9.</b> Bộ nhớ đệm (cache memory) là gì?</p>
   <p class="essay-orig"><b>Original (EN):</b> What is cache memory?</p>
   
@@ -129,6 +149,56 @@
   </details>
 </div>
 <div class="essay-item">
+  <p class="essay-q"><b>11.</b> Với mảng ROM ở Hình 11–79, hãy xác định các ngõ ra cho mọi tổ hợp ngõ vào và tóm tắt dưới dạng bảng (ô xanh là 1, ô xám là 0).</p>
+  <p class="essay-orig"><b>Original (EN):</b> For the ROM array in Figure 11–79, determine the outputs for all possible input combinations, and summarize them in tabular form (blue cell is a 1, gray cell is a 0).</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq11.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq11.png" alt="Floyd Ch.11 · Problem 11 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Đã đọc màu từng ô trực tiếp từ pixel hình đề (xanh = 1, xám = 0) và đối chiếu bảng in: khớp cả 16 ô.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 11</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q11.png" alt="Floyd Ch.11 · Problem 11" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>13.</b> Dùng quy trình tương tự Ví dụ 11–1, hãy thiết kế ROM chuyển BCD một chữ số sang mã dư 3 (excess-3).</p>
+  <p class="essay-orig"><b>Original (EN):</b> Using a procedure similar to that in Example 11–1, design a ROM for conversion of single-digit BCD to excess-3 code.</p>
+  
+  <p class="essay-note"><i>Đã đọc từng chấm trong Hình P–93 từ pixel (chấm đặc = 0, vòng rỗng = 1) và so với BCD + 3: cả 10 hàng (0 đến 9) cho 0011 đến 1100, khớp 100%.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 13</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q13.png" alt="Floyd Ch.11 · Problem 13" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>15.</b> Giả sử ma trận PROM ở Hình 11–81 được lập trình bằng cách đốt cầu chì để tạo bit 0. Hãy chỉ ra các liên kết cần đốt để lập trình bảng tra X³, với X từ 0 đến 7.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Assuming that the PROM matrix in Figure 11–81 is programmed by blowing a fuse link to create a 0, indicate the links to be blown to program an X³ look-up table, where X is a number from 0 through 7.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq15.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq15.png" alt="Floyd Ch.11 · Problem 15 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính lại: các lập phương 0, 1, 8, 27, 64, 125, 216, 343 viết 9 bit, mỗi hàng 9 liên kết (hàng k gồm 9k+1 đến 9k+9, cột phải nhất là LSB); bit 0 thì đốt. Kết quả trùng đúng danh sách đáp án in.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 15</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q15.png" alt="Floyd Ch.11 · Problem 15" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>17.</b> Dùng DRAM 16k × 4 để xây DRAM 64k × 8. Hãy vẽ sơ đồ logic.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Use 16k × 4 DRAMs to build a 64k × 8 DRAM. Show the logic diagram.</p>
+  
+  <p class="essay-note"><i>Tự kiểm tra: 64k × 8 cần 4 nhóm theo chiều sâu × 2 chip theo chiều rộng = 8 chip; 64k = 2^16 nên có 16 đường địa chỉ, 2 đường cao được giải mã 2 sang 4 để chọn nhóm.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 17</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q17.png" alt="Floyd Ch.11 · Problem 17" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>19.</b> Độ dài từ và dung lượng từ của bộ nhớ ở Bài 17 là bao nhiêu? Còn ở Bài 18?</p>
+  <p class="essay-orig"><b>Original (EN):</b> What is the word length and the word capacity of the memory of Problem 17? Problem 18?</p>
+  
+  <p class="essay-note"><i>Bài 17: 64k × 8, tức 8 bit và 64k từ. Bài 18: 256k × 4, tức 4 bit và 256k từ, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 19</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q19.png" alt="Floyd Ch.11 · Problem 19" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
   <p class="essay-q"><b>21.</b> Xét một RAM 4096 × 8, trong đó 64 địa chỉ cuối cùng được dùng làm ngăn xếp LIFO. Nếu địa chỉ đầu tiên của RAM là 000<sub>16</sub>, hãy xác định 64 địa chỉ dùng cho ngăn xếp.</p>
   <p class="essay-orig"><b>Original (EN):</b> Consider a 4096 × 8 RAM in which the last 64 addresses are used as a LIFO stack. If the first address in the RAM is 000<sub>16</sub>, designate the 64 addresses used for the stack.</p>
   
@@ -136,6 +206,16 @@
   <p class="pill">Floyd Ch.11 · Problem 21</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q21.png" alt="Floyd Ch.11 · Problem 21" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>23.</b> Mô tả cấu trúc vật lý của đĩa cứng.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Describe the physical structure of a hard disk.</p>
+  
+  <p class="essay-note"><i>Câu hỏi mô tả, đáp án in là đoạn văn của sách (Mục 11–8), đối chiếu đúng nội dung.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 23</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q23.png" alt="Floyd Ch.11 · Problem 23" loading="lazy"/></div>
   </details>
 </div>
 <div class="essay-item">
@@ -156,6 +236,66 @@
   <p class="pill">Floyd Ch.11 · Problem 27</p>
   <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
     <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q27.png" alt="Floyd Ch.11 · Problem 27" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>29.</b> Phân cấp bộ nhớ (memory hierarchy) nghĩa là gì?</p>
+  <p class="essay-orig"><b>Original (EN):</b> What does memory hierarchy mean?</p>
+  
+  <p class="essay-note"><i>Câu định nghĩa theo sách (Mục 11–9).</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 29</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q29.png" alt="Floyd Ch.11 · Problem 29" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>31.</b> Hãy mô tả tỉ lệ trúng (hit rate).</p>
+  <p class="essay-orig"><b>Original (EN):</b> Describe hit rate.</p>
+  
+  <p class="essay-note"><i>Câu định nghĩa theo sách (Mục 11–9): tỉ lệ truy cập tìm thấy dữ liệu ở cấp bộ nhớ đang xét; miss rate = 1 − hit rate.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 31</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q31.png" alt="Floyd Ch.11 · Problem 31" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>33.</b> Hãy vẽ sơ đồ một hệ lưu trữ đám mây có sáu máy chủ.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Draw a diagram of a cloud storage system with six servers.</p>
+  
+  <p class="essay-note"><i>Đáp án in là Hình P–94: khối Front end/Server Control nối hai chiều với từng máy chủ 1 đến 6, và các máy chủ nối lưới với nhau. Đây là bài vẽ nên chỉ đối chiếu với hình in.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 33</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q33.png" alt="Floyd Ch.11 · Problem 33" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>35.</b> Kiến trúc của một hệ lưu trữ đám mây là gì?</p>
+  <p class="essay-orig"><b>Original (EN):</b> What is the architecture of a cloud storage system?</p>
+  
+  <p class="essay-note"><i>Câu mô tả theo sách (Mục 11–10): front end dùng giao thức truy cập, control dùng giao thức xử lý dữ liệu, back end cung cấp lưu trữ.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 35</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q35.png" alt="Floyd Ch.11 · Problem 35" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>37.</b> Xác định nội dung ROM ở Hình 11–84 có đúng không.</p>
+  <p class="essay-orig"><b>Original (EN):</b> Determine if the contents of the ROM in Figure 11–84 are correct.</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq37.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq37.png" alt="Floyd Ch.11 · Problem 37 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự tính theo phương pháp của sách (Mục 11–11: tổng XOR từng cột, bỏ nhớ): 7 từ cho 00100, trong khi checksum lưu là 01100, lệch ở bit thứ hai nên nội dung sai, khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 37</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q37.png" alt="Floyd Ch.11 · Problem 37" loading="lazy"/></div>
+  </details>
+</div>
+<div class="essay-item">
+  <p class="essay-q"><b>39.</b> Chạy kiểm tra checksum cho bộ nhớ ở Hình 11–85, mỗi ROM có checksum ở địa chỉ cao nhất. Cần thay IC nào với mỗi thông báo lỗi: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?</p>
+  <p class="essay-orig"><b>Original (EN):</b> Suppose that a checksum test is run on the memory in Figure 11–85 and each individual ROM has a checksum at its highest address. What IC or ICs will you replace for each of the following error messages: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?</p>
+  <div class="essay-qfig"><a href="../../../assets/figures/essay_floyd_ch11_qq39.png" target="_blank" rel="noopener"><img src="../../../assets/figures/essay_floyd_ch11_qq39.png" alt="Floyd Ch.11 · Problem 39 figure" loading="lazy"/></a></div>
+  <p class="essay-note"><i>Tự đổi sang thập phân: 40 đến 5F hex = 64 đến 95 là ROM 2; 20 đến 3F hex = 32 đến 63 là ROM 1; 00 đến 7F hex = 0 đến 127 là cả bốn ROM. Khớp đáp án in.</i></p>
+  <p class="pill">Floyd Ch.11 · Problem 39</p>
+  <details class="essay-answer"><summary>👁️ Xem đáp án gốc trong sách</summary>
+    <div class="essay-answer-body"><img src="../../../assets/figures/essay_floyd_ch11_q39.png" alt="Floyd Ch.11 · Problem 39" loading="lazy"/></div>
   </details>
 </div>
 </div><footer class="site"><div class="wrap">
