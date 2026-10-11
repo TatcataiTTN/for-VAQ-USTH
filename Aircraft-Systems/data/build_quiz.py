@@ -3,6 +3,8 @@ from quiz_en_overlay import EXPLAIN_EN, OPT_EN_BY_Q
 from quiz_en_opts import OPT_EN_MANUAL
 from collections import Counter
 from floyd_quiz_source import FLOYD_MODULES
+from quiz_06 import MOD6_ORIG, MOD6_FLOYD, MOD6_GEN
+import copy
 
 # =====================================================================================
 # Nguon: cau hoi trac nghiem TRICH XUAT tu sach Mike Tooley, "Aircraft Digital Electronic
@@ -564,6 +566,7 @@ MODULES = {
   "03-ic-multiplexing":dict(tooley=MOD3_ORIG, gen=MOD3_GEN),
   "04-computer-cpu":   dict(tooley=MOD4_ORIG, gen=MOD4_GEN),
   "05-data-buses":     dict(tooley=MOD5_ORIG, gen=MOD5_GEN),
+  "06-electronic-displays": dict(tooley=copy.deepcopy(MOD6_ORIG), gen=copy.deepcopy(MOD6_GEN)),
 }
 
 TF_OPTS = {"vi": ["Đúng", "Sai"], "en": ["True", "False"]}
@@ -589,6 +592,7 @@ for slug, d in MODULES.items():
         [floyd_tf_to_item(it, fm["chapter"], i) for i, it in enumerate(fm["tf"], 1)] +
         [floyd_st_to_item(it, fm["chapter"], i) for i, it in enumerate(fm["st"], 1)]
     )
+    floyd_items += copy.deepcopy(fm.get("custom", []))
     d["floyd"] = floyd_items
 
 def shuffle_positions(items, seed):
@@ -596,11 +600,13 @@ def shuffle_positions(items, seed):
     if not items: return items
     for it in items:
         opts = it["opts"]; c = it["correct"]
-        correct_val = opts[c]
-        others = [o for i, o in enumerate(opts) if i != c]
-        random.shuffle(others)
+        others_idx = [i for i in range(len(opts)) if i != c]
+        random.shuffle(others_idx)
         target = random.randrange(len(opts))
-        it["opts"] = others[:target] + [correct_val] + others[target:]
+        order = others_idx[:target] + [c] + others_idx[target:]
+        it["opts"] = [opts[i] for i in order]
+        if it.get("opts_en"):
+            it["opts_en"] = [it["opts_en"][i] for i in order]
         it["correct"] = target
     return items
 
@@ -614,10 +620,27 @@ def audit(items, label):
 out_dir = os.path.join(os.path.dirname(__file__), "quiz")
 os.makedirs(out_dir, exist_ok=True)
 
+def balanced_seed(items, start):
+    """Module moi (06 tro di): chon seed dau tien cho phan bo vi tri dap an dung gan deu (khong vi tri nao > 45%).
+    Cac module 01-05 giu nguyen seed cu de khong doi noi dung da phat hanh (xem TASKS.md: audit lech vi tri)."""
+    n = len(items)
+    if n < 6: return start
+    for s in range(start, start + 2000):
+        trial = copy.deepcopy(items)
+        shuffle_positions(trial, s)
+        cnt = Counter(it["correct"] for it in trial)
+        if max(cnt.values()) / n <= 0.45 and len(cnt) == max(len(it["opts"]) for it in trial):
+            return s
+    return start
+
 for slug, d in MODULES.items():
-    tooley = shuffle_positions(d["tooley"], seed=2026)
-    floyd  = shuffle_positions(d["floyd"],  seed=2028)
-    gen    = shuffle_positions(d["gen"],    seed=2027)
+    if slug >= "06":
+        s1 = balanced_seed(d["tooley"], 2026); s2 = balanced_seed(d["floyd"], 2028); s3 = balanced_seed(d["gen"], 2027)
+    else:
+        s1, s2, s3 = 2026, 2028, 2027
+    tooley = shuffle_positions(d["tooley"], seed=s1)
+    floyd  = shuffle_positions(d["floyd"],  seed=s2)
+    gen    = shuffle_positions(d["gen"],    seed=s3)
     audit(tooley, f"{slug} [Tooley]")
     audit(floyd,  f"{slug} [Floyd]")
     audit(gen,    f"{slug} [tu-sinh-them]")
@@ -627,12 +650,14 @@ for slug, d in MODULES.items():
             qtext = it["q"] if lang == "vi" else it["en"]
             if lang == "vi":
                 opts, explain = it["opts"], it["explain"]
+            elif it.get("opts_en"):
+                opts, explain = it["opts_en"], it.get("explain_en", it["explain"])
             else:
                 per = OPT_EN_BY_Q.get(it["q"], {})
                 opts = [per.get(o) or OPT_EN_MANUAL.get(o) or o for o in it["opts"]]
                 explain = EXPLAIN_EN.get(it["explain"], it["explain"])
             item = {"q": qtext, "opts": opts, "correct": it["correct"],
-                    "explain": explain, "src": it.get("src", "")}
+                    "explain": explain, "src": (it.get("src_en") if lang == "en" and it.get("src_en") else it.get("src", ""))}
             if it.get("img"):
                 item["img"] = "../../../assets/figures/" + it["img"]
             detail = it.get("detail") if lang == "vi" else it.get("detail_en")

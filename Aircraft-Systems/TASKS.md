@@ -2,6 +2,21 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 15 — Module 06: Màn hình điện tử và hệ thống thông tin buồng lái 🟢 (2026-10-11)
+- [x] **Chọn module**: bộ bài giảng mới "Electronic displays - ver 2026.pdf" (36 slide infographic, text layer chỉ 296 ký tự nên không dùng được). Đã render 125 dpi vào `OCR_output/ElectronicDisplays_Lecture/pages`, ghép từng cặp slide và ĐỌC BẰNG MẮT từng slide, ghi lại vào `OCR_output/ElectronicDisplays_Lecture/transcript.md`; các ô nghi ngờ cắt ở 300 dpi (`crops/`).
+- [x] **Ánh xạ 2 sách** (đã đọc trực tiếp từ ảnh trang): Tooley Ch.1 (p.1-24: đồng hồ bay, EFIS, ECAM/EICAS, bố trí buồng lái), Ch.11 Displays (p.178-196: CRT, LED/7 đoạn, LCD), Ch.15 mục 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250) và các câu MCQ; Floyd Ch.4 Applied Logic: Seven-Segment Display (p.244-249; bài 62-71 ở p.256), Ch.6 mục 6-5 (74HC47, p.338-340) và 6-8 (ghép kênh 7 đoạn, p.353). Floyd KHÔNG có EFIS/ECAM/ACARS/CRT/LCD ngoài mức 7 đoạn.
+- [x] **47 slide x 2 ngôn ngữ** (5 phần: lịch sử và yêu cầu, công nghệ hiển thị và thị giác, EFIS/EIS, ECAM/EICAS, CMC và ACARS), 37 slide nội dung có khung "Giải thích cho người mới bắt đầu"; 28 ảnh slide gốc (`disp_pNN.jpg`) và 3 hình cắt từ Tooley (Fig 11.3, 11.14, 11.19).
+- [x] **Quiz 75 câu x 2 ngôn ngữ**: 53 câu Tooley (Ch.1: 27 câu, bỏ câu 20 chưa kiểm chứng được; Ch.11: 16 câu; Ch.15: 10 câu về hiển thị/EFIS/ECAM/ACARS/CMC; 5 câu có hình đã cắt từ trang sách), 7 câu Floyd (Section Checkup, Applied Logic, văn bản), 15 câu tự sinh (đã tính lại trong notebook). Đáp án Tooley đọc trực tiếp từ ảnh scan Appendix 3 (A.1, A.11, A.15). Bản EN đi kèm ngay trong từng câu (`opts_en`, `explain_en`, `src_en`), KHÔNG dùng overlay, đã quét: 0 ký tự tiếng Việt trong JSON EN. Module 06 dùng seed xáo đáp án chọn theo phân bố vị trí cân bằng (không vị trí nào quá 45%).
+- [x] **Tự luận Floyd Ch.4 (Applied Logic)**: các bài lẻ có đáp án in 63, 65, 67, 69, kèm ảnh đề và ảnh đáp án thật, kiểm chứng bằng sympy và bảng chân trị đầy đủ.
+- [x] **Notebook `06_electronic-displays.ipynb`** (chạy thật bằng nbconvert --execute, mọi assert đạt): kích thước điểm ảnh theo thị lực, raster, 7 đoạn, biểu thức tối giản Floyd (sympy), zero suppression 74HC47, tổng nhiên liệu, chênh áp ISA, thời gian đến điểm bay, kênh ACARS, đối chiếu khoá đáp án Tooley.
+- [x] **Lỗi tìm thấy (đã đưa vào nội dung dạy, không âm thầm sửa)**:
+  - Floyd Bài 67 (A-6, Hình P-19): mạch in a = H3·H2'·H1 + H1'·H0 cho a = 1 ở mã 1010 (chữ A) nên đoạn a của chữ A không sáng; biểu thức đúng a = H0·H1' + H0·H2'.
+  - Floyd Bài 65: đề hỏi "ít hơn bao nhiêu" so với SOP chuẩn, đáp án in chỉ liệt kê phần cứng tối thiểu (đã khớp với sympy).
+  - Tooley Ch.11 khoá đáp án câu 4 ghi (a) nhưng mắt nhạy nhất với ánh sáng lục (mâu thuẫn với câu 2 của chính chương, hình 11.12 và slide 6); site dùng (c).
+  - Bài giảng: N2 ghi "low pressure turbine" (Tooley 1.1.6: N2 là áp cao); SDAC có hai tên khác nhau ở slide 18 và 20; slide ELEC ghi GEN 420 V/200 Hz (nguồn 115 V/400 Hz); slide PRESS FL140: dP 2,9 psi không khớp CAB ALT 2870 ft (ISA cho 4,6 psi); nhãn "23 33" trên ND nghi là giờ ETA UTC (37 NM ở 257 kt = 8,6 phút); slide A310 ghi "EICAS" (Airbus dùng ECAM); slide 22 bị cắt ở dưới.
+- [x] Hạ tầng: `build_quiz.py` hỗ trợ `opts_en`/`explain_en`/`src_en` và `custom` Floyd; `balanced_seed()` cho module mới; `render_site.py` thêm dòng ánh xạ module 06 và đổi "5" thành "6" ở mọi nhãn; `notebook_06.py` chỉ sinh notebook 06 (không đụng 5 notebook cũ).
+- **CHƯA LÀM / lưu ý**: audit lệch vị trí đáp án cho module 01-05 vẫn chưa chạy (chuỗi seed cũ cho vị trí đúng nghiêng về B ở các bộ tự sinh); Tooley Ch.1 câu 20 loại vì chưa kiểm chứng được (khoá in (a) gyro); Floyd Bài 62, 64, 66, 68 (chẵn, không có đáp án in) và 70, 71 (Multisim) không đưa lên; chương 3 Tooley "Data conversion" (A/D, D/A) và Floyd Ch.12 chưa có module.
+
 ## Epic 13 — Module 05: Bus dữ liệu hàng không (Data Buses) 🟢 (2026-10-04)
 - [x] **Nguồn**: slide bài giảng riêng "Data buses aircraft - ver 2026 v2.pdf" (18 slide, ảnh infographic,
   không có text layer dùng được: đã render cả 18 trang ở 150 dpi vào

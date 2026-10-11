@@ -579,3 +579,7 @@ MODULES = [
     },
   },
 ]
+
+
+from module_06 import MOD06
+MODULES.append(MOD06)

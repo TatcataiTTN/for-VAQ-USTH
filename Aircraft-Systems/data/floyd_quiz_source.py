@@ -335,4 +335,6 @@ FLOYD_MODULES = {
   # Floyd (Digital Fundamentals) khong co chuong nao ve bus du lieu hang khong: de trong co chu dich,
   # xem ghi chu trong MAPPING_ROWS cua render_site.py va module_content.py muc "05-data-buses".
   "05-data-buses":      dict(tf=[], st=[], chapter="(Floyd khong co noi dung lien quan)"),
+  # Module 06: cau hoi Floyd lay tu Section Checkup / Applied Logic / van ban ve hien thi 7 doan (xem quiz_06.py)
+  "06-electronic-displays": dict(tf=[], st=[], custom=__import__("quiz_06").MOD6_FLOYD, chapter="Floyd Ch.4 (Applied Logic) + Ch.6 (7-segment)"),
 }

@@ -1,0 +1,838 @@
+{
+ "tooley": [
+  {
+   "q": "A multifunction display (MFD) can be:",
+   "opts": [
+    "set to display information from the standby magnetic compass",
+    "configured for more than one type of information",
+    "used only for basic flight information"
+   ],
+   "correct": 1,
+   "explain": "An MFD is a configurable display: weather radar, navigation map, checklists, or a substitute for the PFD/ND if either fails (Tooley 1.1.5.6).",
+   "src": "Tooley Ch.1 Q1"
+  },
+  {
+   "q": "Which standby instruments are driven from the aircraft's pitot-static system:",
+   "opts": [
+    "Airspeed indicator, altimeter and vertical speed indicator",
+    "Airspeed indicator, altimeter and angle-of-attack indicator",
+    "Airspeed indicator, vertical speed indicator and magnetic compass"
+   ],
+   "correct": 0,
+   "explain": "The three air data instruments (ASI, altimeter, VSI) use static and pitot pressure. The magnetic compass is an independent magnetic device and needs no pitot-static supply.",
+   "src": "Tooley Ch.1 Q2"
+  },
+  {
+   "q": "Static pressure is fed:",
+   "opts": [
+    "only to the airspeed indicator",
+    "only to the airspeed indicator and vertical speed indicator",
+    "to the airspeed indicator as well as the altimeter and vertical speed indicator"
+   ],
+   "correct": 2,
+   "explain": "Static pressure goes to all three instruments; only the ASI additionally receives ram (pitot) pressure to compare against (Figure 1.11).",
+   "src": "Tooley Ch.1 Q3"
+  },
+  {
+   "q": "The horizontal situation indicator (HSI) uses information derived from:",
+   "opts": [
+    "the pitot-static system",
+    "the airspeed indicator",
+    "the VOR receiver"
+   ],
+   "correct": 2,
+   "explain": "The HSI combines compass and radio navigation (VOR) information to show the horizontal situation (Tooley Table 1.1).",
+   "src": "Tooley Ch.1 Q4"
+  },
+  {
+   "q": "The term 'glass cockpit' refers to:",
+   "opts": [
+    "the use of LCD and CRT displays",
+    "the use of toughened glass windows",
+    "the use of a transparent partition between the flight deck and passenger cabin"
+   ],
+   "correct": 0,
+   "explain": "A \"glass cockpit\" uses CRT and LCD screens in place of electromechanical dials (Tooley section 1.1).",
+   "src": "Tooley Ch.1 Q5"
+  },
+  {
+   "q": "Basic air data instruments are:",
+   "opts": [
+    "airspeed indicator, vertical speed indicator and artificial horizon",
+    "airspeed indicator, altimeter and magnetic compass",
+    "airspeed indicator, altimeter and vertical speed indicator"
+   ],
+   "correct": 2,
+   "explain": "The three pitot-static driven instruments are called air data instruments: ASI, altimeter, VSI.",
+   "src": "Tooley Ch.1 Q6"
+  },
+  {
+   "q": "Three airborne parameters that can be used to assess aircraft position are:",
+   "opts": [
+    "heading, airspeed and height",
+    "heading, weight and airspeed",
+    "airspeed, height and weight"
+   ],
+   "correct": 0,
+   "explain": "Heading, airspeed and height are the basic quantities that fix the aircraft's position; weight is not a position parameter.",
+   "src": "Tooley Ch.1 Q7"
+  },
+  {
+   "q": "The instrument shown in Figure 1.27 is the:",
+   "opts": [
+    "ASI",
+    "ADI",
+    "VSI"
+   ],
+   "correct": 0,
+   "explain": "The dial is marked \"IAS KNOTS\" with a 60 to 400 scale: it is an airspeed indicator (ASI).",
+   "src": "Tooley Ch.1 Q8",
+   "img": "../../../assets/figures/disp_q127.png"
+  },
+  {
+   "q": "Engine parameters such as turbine speed are displayed on:",
+   "opts": [
+    "ECAM",
+    "EHSI",
+    "EADI"
+   ],
+   "correct": 0,
+   "explain": "ECAM (Airbus) and EICAS (Boeing) show engine parameters; the EADI and EHSI are flight and navigation displays.",
+   "src": "Tooley Ch.1 Q9"
+  },
+  {
+   "q": "The aircraft slip indicator is found in the:",
+   "opts": [
+    "ECAM",
+    "CRTs in the passenger cabin",
+    "EADI"
+   ],
+   "correct": 2,
+   "explain": "The EADI contains the slip indicator (together with the attitude display, command bars, glide slope pointer, localiser indicator).",
+   "src": "Tooley Ch.1 Q10"
+  },
+  {
+   "q": "Where is the 'rising runway':",
+   "opts": [
+    "EADI",
+    "ECAM",
+    "CRTs in the passenger cabin"
+   ],
+   "correct": 0,
+   "explain": "The symbolic runway (rising runway) is the localiser indicator on the EADI; it appears once the pilot has acquired the glide slope.",
+   "src": "Tooley Ch.1 Q11"
+  },
+  {
+   "q": "Under visual flight rules (VFR) the pilot's most important source of information concerning the aircraft's position and attitude is:",
+   "opts": [
+    "the altimeter and vertical speed indicators",
+    "the view out of the cockpit window",
+    "the airspeed indicator and the magnetic compass"
+   ],
+   "correct": 1,
+   "explain": "Tooley section 1.1: under VFR the most important source of information is the view out of the cockpit window.",
+   "src": "Tooley Ch.1 Q12"
+  },
+  {
+   "q": "The EFIS fitted to a large aircraft usually consists of:",
+   "opts": [
+    "a single multifunction display",
+    "separate primary flight and navigation displays",
+    "a primary display with several standby instruments"
+   ],
+   "correct": 1,
+   "explain": "The EFIS consists of a PFD (or EADI) and an ND (or EHSI), duplicated for the captain and first officer (Tooley 1.1.5).",
+   "src": "Tooley Ch.1 Q13"
+  },
+  {
+   "q": "The instrument shown in Figure 1.28 is the:",
+   "opts": [
+    "EADI",
+    "ECAM",
+    "EHSI"
+   ],
+   "correct": 2,
+   "explain": "The figure shows \"HDG\", VOR, WPT, distance and a rotating compass: it is the EHSI (horizontal situation).",
+   "src": "Tooley Ch.1 Q14",
+   "img": "../../../assets/figures/disp_q128.png"
+  },
+  {
+   "q": "The instrument shown in Figure 1.29 is the:",
+   "opts": [
+    "ECAM",
+    "EHSI",
+    "EADI"
+   ],
+   "correct": 2,
+   "explain": "The figure has the attitude horizon (±10, ±20 pitch scale), command bars, glide slope, LAND 3 and VNAV modes: it is the EADI.",
+   "src": "Tooley Ch.1 Q15",
+   "img": "../../../assets/figures/disp_q129.png"
+  },
+  {
+   "q": "In a basic 'T' configuration of instruments:",
+   "opts": [
+    "the ASI appears on the left and the altimeter appears on the right",
+    "the ADI appears on the left and the ASI appears on the right",
+    "the ADI appears on the left and the HSI appears on the right"
+   ],
+   "correct": 0,
+   "explain": "The T: ASI left, ADI top centre, altimeter right, HSI below the ADI (Tooley Figure 1.23).",
+   "src": "Tooley Ch.1 Q16"
+  },
+  {
+   "q": "The flight director system receives information:",
+   "opts": [
+    "only from the VOR/localiser",
+    "from both of the above",
+    "only from the attitude gyro and altimeter"
+   ],
+   "correct": 1,
+   "explain": "The flight director takes data from the attitude gyro, the VOR/localiser/glide slope receiver, the radar altimeter, the compass system and barometric sensors (Tooley 1.1.4).",
+   "src": "Tooley Ch.1 Q17"
+  },
+  {
+   "q": "EICAS provides the following information:",
+   "opts": [
+    "engine parameters and system warnings",
+    "engine parameters only",
+    "engine parameters and navigational data"
+   ],
+   "correct": 0,
+   "explain": "EICAS shows engine parameters, crew alerts and system pages (electrical, hydraulic, fuel...); navigation data belongs to the ND.",
+   "src": "Tooley Ch.1 Q18"
+  },
+  {
+   "q": "The two sets of flight regulations that a pilot may fly by are:",
+   "opts": [
+    "VFR and IFR",
+    "VHF and IFR",
+    "VFR and IFU"
+   ],
+   "correct": 0,
+   "explain": "VFR (visual flight rules) and IFR (instrument flight rules).",
+   "src": "Tooley Ch.1 Q19"
+  },
+  {
+   "q": "A major advantage of EFIS is a reduction in:",
+   "opts": [
+    "effects of EMI",
+    "moving parts present in the flight deck",
+    "wiring and cabling"
+   ],
+   "correct": 1,
+   "explain": "EFIS replaces electromechanical dials with static screens, cutting moving parts. EFIS actually increases EMI (Tooley section 15.2), it does not reduce it.",
+   "src": "Tooley Ch.1 Q21"
+  },
+  {
+   "q": "The term 'artificial horizon' is sometimes used to describe the indication produced by:",
+   "opts": [
+    "the altimeter",
+    "the attitude indicator",
+    "the vertical speed indicator"
+   ],
+   "correct": 1,
+   "explain": "The attitude indicator shows the aircraft relative to the horizon, hence the name artificial horizon (Tooley Table 1.1).",
+   "src": "Tooley Ch.1 Q22"
+  },
+  {
+   "q": "Typical displays on an EHSI are:",
+   "opts": [
+    "VOR, altitude, rate of climb",
+    "VOR, heading, track",
+    "engine indications"
+   ],
+   "correct": 1,
+   "explain": "The EHSI shows heading, track, VOR/DME/ILS/ADF, wind and range (Tooley 1.1.3.2). Altitude and vertical speed belong to the PFD.",
+   "src": "Tooley Ch.1 Q23"
+  },
+  {
+   "q": "In a basic 'T' configuration of instruments:",
+   "opts": [
+    "the ADI appears at the top and the HSI appears at the bottom",
+    "the HSI appears at the top and the ASI appears at the bottom",
+    "the ASI appears at the top and the ADI appears at the bottom"
+   ],
+   "correct": 0,
+   "explain": "The top bar of the T holds ASI, ADI, altimeter; the ADI is top centre and the HSI sits directly below it.",
+   "src": "Tooley Ch.1 Q24"
+  },
+  {
+   "q": "Operational faults in FMS can be detected by:",
+   "opts": [
+    "routine maintenance inspection of the aircraft",
+    "pre-flight checks",
+    "automatically comparing outputs on a continuous basis"
+   ],
+   "correct": 2,
+   "explain": "The two FMSs (captain and first officer) compare indications and outputs continuously to detect faults (Tooley 1.1.8).",
+   "src": "Tooley Ch.1 Q25"
+  },
+  {
+   "q": "The display marked X in Figure 1.30 is the:",
+   "opts": [
+    "navigation display",
+    "FMS CDU",
+    "primary flight display"
+   ],
+   "correct": 1,
+   "explain": "X points at the unit on the centre pedestal between the two pilot seats: the FMS CDU.",
+   "src": "Tooley Ch.1 Q26",
+   "img": "../../../assets/figures/disp_q130.png"
+  },
+  {
+   "q": "The display marked Y in Figure 1.31 is the:",
+   "opts": [
+    "standby flight instruments",
+    "primary flight display",
+    "FMS CDU"
+   ],
+   "correct": 1,
+   "explain": "Y points at the large screen directly in front of the captain: the primary flight display (PFD).",
+   "src": "Tooley Ch.1 Q27",
+   "img": "../../../assets/figures/disp_q131.png"
+  },
+  {
+   "q": "The upper ECAM display provides:",
+   "opts": [
+    "navigation information",
+    "secondary flight information",
+    "engine parameters"
+   ],
+   "correct": 2,
+   "explain": "The upper ECAM screen (E/WD) shows engine parameters and warnings; the lower one shows system pages (Tooley 1.1.6).",
+   "src": "Tooley Ch.1 Q28"
+  },
+  {
+   "q": "The peak wavelength of light emitted from a red LED is typically:",
+   "opts": [
+    "525 nm",
+    "475 nm",
+    "635 nm"
+   ],
+   "correct": 2,
+   "explain": "Tooley Table 11.1 gives 635 nm for red LEDs (the miniature type 690 nm). 475 nm is blue, 525 nm is green.",
+   "src": "Tooley Ch.11 Q1"
+  },
+  {
+   "q": "The spectral response of the human eye peaks at around:",
+   "opts": [
+    "550 nm",
+    "650 nm",
+    "450 nm"
+   ],
+   "correct": 0,
+   "explain": "The eye is most sensitive near 550 nm (green light), Figure 11.12; the lecture gives a 555 nm peak.",
+   "src": "Tooley Ch.11 Q2"
+  },
+  {
+   "q": "Adjacent phosphors of blue and green are illuminated on the screen of a CRT. The resultant colour produced will be:",
+   "opts": [
+    "magenta",
+    "white",
+    "cyan"
+   ],
+   "correct": 2,
+   "explain": "Green + blue = cyan; red + green = yellow; red + blue = magenta; all three = white (Figure 11.9).",
+   "src": "Tooley Ch.11 Q3"
+  },
+  {
+   "q": "The human eye is most sensitive to:",
+   "opts": [
+    "blue light",
+    "red light",
+    "green light"
+   ],
+   "correct": 2,
+   "explain": "The correct answer is green (peak near 550 nm, consistent with question 2, Figure 11.12 and lecture slide 6). Note: the answer key printed in Tooley (Appendix 3, A.11) gives question 4 as (a), which contradicts the chapter's own question 2, so it is treated as a printing error; the site uses (c).",
+   "src": "Tooley Ch.11 Q4 (printed key says (a), site uses (c): see explanation)"
+  },
+  {
+   "q": "A seven-segment LED display has segments a, b, c, d and g illuminated. The character displayed will be:",
+   "opts": [
+    "2",
+    "3",
+    "5"
+   ],
+   "correct": 1,
+   "explain": "Segments a, b, c, d, g form a 3. A 2 needs e instead of c; a 5 needs f instead of b. (Checked in the notebook.)",
+   "src": "Tooley Ch.11 Q5"
+  },
+  {
+   "q": "The BCD input to a seven-segment display decoder is 1001. The digit displayed will be:",
+   "opts": [
+    "8",
+    "9",
+    "7"
+   ],
+   "correct": 1,
+   "explain": "1001₂ = 9 (BCD). The digit 8 has code 1000.",
+   "src": "Tooley Ch.11 Q6"
+  },
+  {
+   "q": "The potential at the grid of a CRT is:",
+   "opts": [
+    "negative with respect to the cathode",
+    "positive with respect to the cathode",
+    "the same as the cathode"
+   ],
+   "correct": 0,
+   "explain": "The grid is held negative with respect to the cathode to repel electrons, which controls brightness (Tooley 11.1.1).",
+   "src": "Tooley Ch.11 Q7"
+  },
+  {
+   "q": "The function of the final anode of a CRT is:",
+   "opts": [
+    "deflecting the electron beam",
+    "controlling the brightness of the display",
+    "accelerating the electron beam"
+   ],
+   "correct": 2,
+   "explain": "The final anode sits at a very high positive potential (several kilovolts) to accelerate the beam; deflection is by X/Y plates or coils, brightness by the grid.",
+   "src": "Tooley Ch.11 Q8"
+  },
+  {
+   "q": "Electromagnetic deflection of a CRT uses:",
+   "opts": [
+    "coils inside the CRT",
+    "X- and Y-plates inside the CRT",
+    "coils around the neck of the CRT"
+   ],
+   "correct": 2,
+   "explain": "Electromagnetic deflection uses two sets of coils placed externally around the neck of the tube; X and Y plates inside are electrostatic deflection.",
+   "src": "Tooley Ch.11 Q9"
+  },
+  {
+   "q": "The three beams in a colour CRT are associated with the colours:",
+   "opts": [
+    "red, yellow and blue",
+    "green, blue and yellow",
+    "red, green and blue"
+   ],
+   "correct": 2,
+   "explain": "The three electron guns correspond to the red, green and blue phosphors (RGB).",
+   "src": "Tooley Ch.11 Q10"
+  },
+  {
+   "q": "When compared with CRT displays, AMLCD displays have:",
+   "opts": [
+    "larger volume and lower reliability",
+    "larger volume and greater reliability",
+    "smaller volume and greater reliability"
+   ],
+   "correct": 2,
+   "explain": "The main AMLCD advantages are weight, power, volume and reliability (Tooley, chapter 11 introduction).",
+   "src": "Tooley Ch.11 Q11"
+  },
+  {
+   "q": "The final anode of a CRT display requires:",
+   "opts": [
+    "a low-voltage AC supply",
+    "a high-voltage AC supply",
+    "a high-voltage DC supply"
+   ],
+   "correct": 2,
+   "explain": "The final anode needs a steady high positive potential (several kilovolts DC) to accelerate the beam.",
+   "src": "Tooley Ch.11 Q12"
+  },
+  {
+   "q": "The deflecting waveform supplied to the plates of an electrostatic CRT will be:",
+   "opts": [
+    "a sine wave",
+    "a ramp wave",
+    "a square wave"
+   ],
+   "correct": 1,
+   "explain": "Raster scanning uses ramp (sawtooth) waveforms at two different frequencies on the X and Y plates.",
+   "src": "Tooley Ch.11 Q13"
+  },
+  {
+   "q": "The typical value of maximum forward current for an LED indicator is:",
+   "opts": [
+    "0.03 A",
+    "0.3 A",
+    "3 A"
+   ],
+   "correct": 0,
+   "explain": "Table 11.1: maximum forward current is 30 to 40 mA, i.e. 0.03 to 0.04 A.",
+   "src": "Tooley Ch.11 Q14"
+  },
+  {
+   "q": "The patterns required to display alphanumeric characters in a CRT controller are stored in:",
+   "opts": [
+    "static RAM",
+    "character generator ROM",
+    "dynamic RAM"
+   ],
+   "correct": 1,
+   "explain": "Character shapes are fixed, so they live in a character generator ROM (Figure 11.11).",
+   "src": "Tooley Ch.11 Q15"
+  },
+  {
+   "q": "When compared with passive matrix LCDs, AMLCDs are:",
+   "opts": [
+    "faster and sharper",
+    "slower and less sharp",
+    "faster and less sharp"
+   ],
+   "correct": 0,
+   "explain": "Passive matrices respond slowly and are less sharp; the AMLCD uses a TFT per cell, so it is faster and sharper (Tooley 11.3.2, 11.3.3).",
+   "src": "Tooley Ch.11 Q16"
+  },
+  {
+   "q": "The standard for ACARS is defined in:",
+   "opts": [
+    "ARINC 573",
+    "ARINC 429",
+    "ARINC 724"
+   ],
+   "correct": 2,
+   "explain": "ACARS was originally specified in ARINC 597 and revised as ARINC 724B (Tooley 15.1).",
+   "src": "Tooley Ch.15 Q1"
+  },
+  {
+   "q": "Engine parameters are displayed on:",
+   "opts": [
+    "EHSI",
+    "CDU",
+    "ECAM"
+   ],
+   "correct": 2,
+   "explain": "ECAM (Airbus) shows engine and system parameters; the EHSI is a navigation display and the CDU is the FMS data entry unit.",
+   "src": "Tooley Ch.15 Q2"
+  },
+  {
+   "q": "The left and right cockpit displays:",
+   "opts": [
+    "are supplied from separate symbol generators at all times",
+    "will only be supplied from the same symbol generator when all other symbol generators have failed",
+    "are supplied from the same symbol generator"
+   ],
+   "correct": 1,
+   "explain": "The left generator feeds the captain's displays, the right one the first officer's, the centre one is a backup; only when the others have failed do both sides share one generator (Tooley 15.2.2).",
+   "src": "Tooley Ch.15 Q5"
+  },
+  {
+   "q": "On a flight deck EFIS system, if all of the displays were missing information from a particular source, the most likely cause would be:",
+   "opts": [
+    "the display controller and symbol generator",
+    "the sensor, input bus or display controller",
+    "the symbol generator and display"
+   ],
+   "correct": 1,
+   "explain": "A fault common to every display lies upstream of all of them: the source sensor, the input bus or the display controller; not one individual symbol generator.",
+   "src": "Tooley Ch.15 Q7"
+  },
+  {
+   "q": "A central maintenance computer provides:",
+   "opts": [
+    "ground and BITE testing using a portable control panel",
+    "ground and in-flight monitoring and testing",
+    "display of system warnings and cautions"
+   ],
+   "correct": 1,
+   "explain": "The CMC collects fault and status data from the LRUs continuously, in flight and on the ground; displaying warnings is the job of the FWC/ECAM.",
+   "src": "Tooley Ch.15 Q8"
+  },
+  {
+   "q": "The sweep voltage waveform used on an electromagnetic CRT is:",
+   "opts": [
+    "sinusoidal",
+    "trapezoidal",
+    "sawtooth"
+   ],
+   "correct": 1,
+   "explain": "Because the deflection coils have resistance, the scan voltage must be trapezoidal rather than the straight sawtooth of an electrostatic CRT (Tooley 15.2.2).",
+   "src": "Tooley Ch.15 Q10"
+  },
+  {
+   "q": "In an EFIS with three symbol generators, what is the purpose of the third symbol generator?",
+   "opts": [
+    "to provide outputs for ECAM",
+    "standby in case of failure",
+    "comparison with the pilot's symbol generator"
+   ],
+   "correct": 1,
+   "explain": "The centre generator is a backup that can replace the left or right one on failure (Tooley 15.2.2).",
+   "src": "Tooley Ch.15 Q11"
+  },
+  {
+   "q": "The ACARS system uses channels in the:",
+   "opts": [
+    "HF spectrum",
+    "VHF spectrum",
+    "UHF spectrum"
+   ],
+   "correct": 1,
+   "explain": "ACARS uses the VHF band 129 to 137 MHz (Tooley 15.1, Table 15.1).",
+   "src": "Tooley Ch.15 Q12"
+  },
+  {
+   "q": "If one EICAS CRT fails:",
+   "opts": [
+    "the standby CRT will automatically take over",
+    "the remaining CRT will display primary EICAS data",
+    "the FMS CDU will display the failed CRT data"
+   ],
+   "correct": 1,
+   "explain": "The remaining screen displays the primary EICAS data; secondary pages are called up from the control panel when needed.",
+   "src": "Tooley Ch.15 Q13"
+  },
+  {
+   "q": "A method used in modern aircraft for reporting in-flight faults to an engineering and monitoring ground station is:",
+   "opts": [
+    "TCAS II",
+    "ACARS",
+    "GPS"
+   ],
+   "correct": 1,
+   "explain": "ACARS sends performance, fault and maintenance data from the aircraft to the airline over the VHF link.",
+   "src": "Tooley Ch.15 Q14"
+  }
+ ],
+ "floyd": [
+  {
+   "q": "Would you select a decoder/driver with active-HIGH or active-LOW outputs to drive a common-cathode 7-segment LED display?",
+   "opts": [
+    "Active-HIGH",
+    "Active-LOW",
+    "Either type works"
+   ],
+   "correct": 0,
+   "explain": "A common-cathode display lights a segment when its anode is driven HIGH, so active-HIGH outputs are needed. The 74HC47 has active-LOW outputs, so it suits common-anode displays (Floyd p.339).",
+   "src": "Floyd Ch.6 · Section 6–5 Checkup #3 (p.341; answer p.384)"
+  },
+  {
+   "q": "In the 7-segment display multiplexing system of Figure 6-49, which IC enables the two displays alternately?",
+   "opts": [
+    "74HC47",
+    "74HC139",
+    "74HC157"
+   ],
+   "correct": 1,
+   "explain": "The 74HC139 (a decoder) enables digit A and digit B in turn; the 74HC157 selects the BCD code; the 74HC47 decodes to 7 segments.",
+   "src": "Floyd Ch.6 · Section 6–8 Checkup #4(c) (p.356; answer p.384)"
+  },
+  {
+   "q": "In the same system (Figure 6-49), what does the 74HC157 do?",
+   "opts": [
+    "Decodes the BCD to energise the display",
+    "Multiplexes the two BCD codes to the 7-segment decoder",
+    "Enables the displays alternately"
+   ],
+   "correct": 1,
+   "explain": "The 74HC157 is a 4-bit data selector (multiplexer): the select line LOW passes the LSD code, HIGH passes the MSD code.",
+   "src": "Floyd Ch.6 · Section 6–8 Checkup #4(a) (p.356; answer p.384)"
+  },
+  {
+   "q": "With the 74HC47, when the LT (lamp test) input is LOW and BI/RBO is HIGH:",
+   "opts": [
+    "only leading zeros are blanked",
+    "all seven segments turn off",
+    "all seven segments turn on"
+   ],
+   "correct": 2,
+   "explain": "Lamp test turns on all seven segments to verify that none is burned out (Floyd p.339).",
+   "src": "Floyd Ch.6 · section 6-5, 74HC47 (p.339)"
+  },
+  {
+   "q": "Why does the 7-segment display use lowercase b and d instead of capital B and D?",
+   "opts": [
+    "A capital B would look like an 8 and a capital D like a 0",
+    "Capital letters do not exist in hexadecimal",
+    "Lowercase letters use fewer segments"
+   ],
+   "correct": 0,
+   "explain": "Floyd p.244: the letter b is lowercase because a capital B would be the same as the digit 8; similarly a capital D would look like 0.",
+   "src": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (p.244)"
+  },
+  {
+   "q": "Which statement correctly compares LED and LCD 7-segment displays?",
+   "opts": [
+    "An LCD can be seen in the dark, an LED cannot",
+    "Both emit light on their own",
+    "An LED can be seen in the dark, an LCD cannot"
+   ],
+   "correct": 2,
+   "explain": "Each LED segment is a light-emitting diode, so it makes its own light. An LCD works by polarising light; an activated segment does not reflect light and appears black, so it cannot be seen in the dark (Floyd p.244).",
+   "src": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (p.244)"
+  },
+  {
+   "q": "According to Floyd Table 4-14, which segments form the letter C?",
+   "opts": [
+    "a, b, c, d",
+    "d, e, f, g",
+    "a, d, e, f"
+   ],
+   "correct": 2,
+   "explain": "Table 4-14: C = a, d, e, f. (b: c,d,e,f,g; d: b,c,d,e,g; E: a,d,e,f,g; A: a,b,c,e,f,g.)",
+   "src": "Floyd Ch.4 · Table 4-14 (p.245)"
+  }
+ ],
+ "generated": [
+  {
+   "q": "With a visual acuity of 1 arcminute (2.91×10⁻⁴ rad), the smallest size the eye can still resolve at 10 m is:",
+   "opts": [
+    "2.91 mm",
+    "1.45 mm",
+    "5.82 mm"
+   ],
+   "correct": 0,
+   "explain": "h = D·θ = 10 m × 2.91×10⁻⁴ = 2.91×10⁻³ m = 2.91 mm (matches the lecture table).",
+   "src": ""
+  },
+  {
+   "q": "How many times more pixels does a 4K UHD screen (3840×2160) have than Full HD (1920×1080)?",
+   "opts": [
+    "8 times",
+    "4 times",
+    "2 times"
+   ],
+   "correct": 1,
+   "explain": "Twice the width and twice the height gives 2×2 = 4 times as many pixels (8,294,400 versus 2,073,600).",
+   "src": ""
+  },
+  {
+   "q": "A CRT scans 400 lines with a vertical scan frequency of 100 Hz. The horizontal sawtooth frequency needed is:",
+   "opts": [
+    "4 kHz",
+    "40 kHz",
+    "400 kHz"
+   ],
+   "correct": 1,
+   "explain": "f_X = N_lines × f_Y = 400 × 100 Hz = 40,000 Hz = 40 kHz (Tooley example in section 11.1.3).",
+   "src": ""
+  },
+  {
+   "q": "A standard 5 mm LED at 10 mA with 2.0 V forward drop on a 5 V supply needs a series resistor of (the module's own worked example):",
+   "opts": [
+    "500 Ω",
+    "200 Ω",
+    "300 Ω"
+   ],
+   "correct": 2,
+   "explain": "R = (5 − 2.0) V / 0.010 A = 300 Ω.",
+   "src": ""
+  },
+  {
+   "q": "If each R, G, B channel has 256 levels, how many colours can one pixel represent?",
+   "opts": [
+    "16,777,216",
+    "65,536",
+    "768"
+   ],
+   "correct": 0,
+   "explain": "256 × 256 × 256 = 256³ = 16,777,216, matching \"more than 16 million colours\" in Tooley 11.3.3.",
+   "src": ""
+  },
+  {
+   "q": "On the Airbus A320, which computer generates the images and symbols for the PFD, ND and ECAM?",
+   "opts": [
+    "FWC (Flight Warning Computer)",
+    "SDAC (System Data Acquisition Concentrator)",
+    "DMC (Display Management Computer)"
+   ],
+   "correct": 2,
+   "explain": "The DMC generates the display information; the FWC generates warnings; the SDAC collects system data and passes it to the DMCs.",
+   "src": ""
+  },
+  {
+   "q": "According to Tooley (section 1.1.6), N2 on the ECAM display is:",
+   "opts": [
+    "fan (low pressure) speed",
+    "exhaust gas temperature",
+    "high pressure spool speed"
+   ],
+   "correct": 2,
+   "explain": "Tooley: \"N1/fan speed, EGT, N2/high pressure turbine speed\". The lecture's E/WD slide calling N2 low pressure is wrong.",
+   "src": ""
+  },
+  {
+   "q": "According to the lecture, which liquid crystal alignment technology leads in modern aircraft displays?",
+   "opts": [
+    "MVA (Multi-domain Vertical Aligned)",
+    "TN (Twisted Nematic)",
+    "IPS (In Plane Switching)"
+   ],
+   "correct": 2,
+   "explain": "Slide 4: TN was used in early aircraft displays (now less common), IPS is \"widely used in modern aircraft displays (leader)\", MVA is used in high-end cockpits.",
+   "src": ""
+  },
+  {
+   "q": "ECAM FUEL page with the pumps off: tanks of 686, 2742, 5852, 2741 and 686 kg. The fuel on board (FOB) is:",
+   "opts": [
+    "13,707 kg",
+    "12,770 kg",
+    "12,707 kg"
+   ],
+   "correct": 2,
+   "explain": "686 + 2742 + 5852 + 2741 + 686 = 12,707 kg, exactly the FOB value on the slide.",
+   "src": ""
+  },
+  {
+   "q": "In ACARS, which four events does an OOOI message report?",
+   "opts": [
+    "out of the gate, off the ground, on the ground, into the gate",
+    "clearance, take-off, landing, parking",
+    "engine start, take-off, landing, shutdown"
+   ],
+   "correct": 0,
+   "explain": "OOOI = Out, Off, On, In (lecture slide 20).",
+   "src": ""
+  },
+  {
+   "q": "The ND slide shows 37 NM to a waypoint at a ground speed of 257 kt. The estimated flight time is about:",
+   "opts": [
+    "23.6 minutes",
+    "8.6 minutes",
+    "2.6 minutes"
+   ],
+   "correct": 1,
+   "explain": "t = 37 NM / 257 kt = 0.144 h ≈ 8.6 minutes. So the label \"23 33\" as a time of 23 min 33 s is doubtful (it may be a UTC clock time).",
+   "src": ""
+  },
+  {
+   "q": "The A320 (1988) introduced the \"full display\" cockpit with how many main CRT screens?",
+   "opts": [
+    "4",
+    "8",
+    "6"
+   ],
+   "correct": 2,
+   "explain": "Two PFDs, two NDs and two ECAM screens = 6 (slides 8 and 11).",
+   "src": ""
+  },
+  {
+   "q": "On the PFD attitude indicator, the upper half (sky) and lower half (ground) are coloured:",
+   "opts": [
+    "green above, red below",
+    "blue above, brown below",
+    "brown above, blue below"
+   ],
+   "correct": 1,
+   "explain": "The standard artificial horizon convention: blue sky above, brown ground below (slide 21).",
+   "src": ""
+  },
+  {
+   "q": "At FL140 in the ISA standard atmosphere with a cabin altitude of 2,870 ft, the cabin differential pressure ΔP is closest to:",
+   "opts": [
+    "7.8 psi",
+    "4.6 psi",
+    "2.9 psi"
+   ],
+   "correct": 1,
+   "explain": "p(2,870 ft) ≈ 13.23 psi, p(14,000 ft) ≈ 8.63 psi, so ΔP ≈ 4.6 psi. The slide shows 2.9 psi, so it is only an illustrative number.",
+   "src": ""
+  },
+  {
+   "q": "Which standard governs the quality of airborne electronic HARDWARE?",
+   "opts": [
+    "DO-254",
+    "DO-160",
+    "DO-178"
+   ],
+   "correct": 0,
+   "explain": "DO-160: environment; DO-178: software; DO-254: hardware (slide 2).",
+   "src": ""
+  }
+ ]
+}

@@ -2,7 +2,7 @@
 
 Nguồn: phần Problems cuối mỗi chương và phụ lục Answers to Odd-Numbered Problems (PDF trang 896 trở đi, tức A-1). Chỉ bài số lẻ có đáp án in; bài số chẵn không có đáp án nên không đưa lên site.
 
-Chương nào chưa có module trên site thì chưa đưa bài tập (chỉ 5 module: Ch.2, 3, 4, 6, 11).
+Chương nào chưa có module trên site thì chưa đưa bài tập (Ch.2, 3, 4, 6, 11 cho module 01-04; Module 06 thêm Ch.4 Applied Logic).
 
 | Chương | Module | Bài lẻ | Đã đưa lên site | Chưa đưa | Trang đề | Trang đáp án |
 |---|---|---|---|---|---|---|
@@ -58,6 +58,10 @@ Chương nào chưa có module trên site thì chưa đưa bài tập (chỉ 5 m
 ### Chương 11: Data Storage (Module 04)
 - Chương có 39 bài, 20 bài lẻ. Đã đưa đủ 20: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39
 - Chưa đưa: không còn
+
+### Chương 4, Applied Logic: Seven-Segment Display (Module 06)
+- Đã đưa (4): 63, 65, 67, 69 (kèm ảnh đề, ảnh đáp án thật). Bài 67 có lỗi in trong đáp án (mạch Hình P-19 sai ở mã 1010).
+- Không đưa: 62, 64, 66, 68 (chẵn, không có đáp án in); 70, 71 (Multisim).
 
 ## Ghi chú
 

@@ -35,10 +35,10 @@ L = {
     "site_title": "Hệ thống điện tử số & máy tính hàng không",
     "site_sub": "Tự học AE2.021 · USTH",
     "home_hero_title": "Tự học môn AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "5 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
+    "home_hero_sub": "6 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
                       "(Mike Tooley & Thomas Floyd), có quiz tự chấm và notebook Python đi kèm.",
     "open": "Mở bài giảng →", "soon": "Sắp có",
-    "mapping_link": "📚 Bảng ánh xạ 5 bài giảng ↔ chương sách giáo trình",
+    "mapping_link": "📚 Bảng ánh xạ 6 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
               "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
     "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
@@ -51,7 +51,7 @@ L = {
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
-    "mapping_title": "Bảng ánh xạ: 5 bài giảng ↔ chương giáo trình tham khảo",
+    "mapping_title": "Bảng ánh xạ: 6 bài giảng ↔ chương giáo trình tham khảo",
     "mapping_intro": "Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide "
                       "giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
   },
@@ -59,10 +59,10 @@ L = {
     "site_title": "Aircraft Digital Electronics & Computer Systems",
     "site_sub": "Self-study AE2.021 · USTH",
     "home_hero_title": "Self-study AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "5 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
+    "home_hero_sub": "6 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
                       "(Mike Tooley & Thomas Floyd), with a self-graded quiz and companion Python notebook.",
     "open": "Open lesson →", "soon": "Coming soon",
-    "mapping_link": "📚 Chapter mapping: 5 lectures ↔ textbook chapters",
+    "mapping_link": "📚 Chapter mapping: 6 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
               "Tooley, independently recomputed to verify each answer: see the source note on each question.",
     "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
@@ -75,7 +75,7 @@ L = {
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
-    "mapping_title": "Chapter mapping: 5 lectures ↔ reference textbook chapters",
+    "mapping_title": "Chapter mapping: 6 lectures ↔ reference textbook chapters",
     "mapping_intro": "The table below directly cross-references the tables of contents of AE2.021's two "
                       "reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd "
                       "table of contents and content of both books, not guesswork.",
@@ -149,7 +149,16 @@ MAPPING_ROWS = [
                "aircraft bus topics are entirely absent from Floyd, so this module's quiz has only 2 sources "
                "(Tooley + supplementary questions), with no separate Floyd quiz section.",
   },
+  {
+    "module": "06: Electronic Displays",
+    "tooley": "Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15",
+    "floyd": "Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd KHÔNG có nội dung về EFIS/ECAM/ACARS hay CRT/LCD ngoài mức 7 đoạn: phần lớn module này dựa vào Tooley và bộ slide bài giảng.",
+    "floyd_en": "Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd has NO content on EFIS/ECAM/ACARS or CRT/LCD technology beyond the 7-segment level: most of this module relies on Tooley and the lecture slides.",
+    "note_vi": "Đây là module có bộ slide bài giảng riêng (36 slide infographic, đọc trực tiếp từng slide). Tooley khớp tốt (3 chương rải rác: Ch.1, Ch.11, Ch.15). Floyd chỉ khớp ở phần 7 đoạn (Ch.4, Ch.6), nên quiz Floyd của module này ít (7 câu) và bài tự luận chỉ có 4 bài lẻ của Applied Logic.",
+    "note_en": "This module has its own lecture deck (36 infographic slides, each read directly). Tooley matches well (three scattered chapters: Ch.1, Ch.11, Ch.15). Floyd matches only at the 7-segment level (Ch.4, Ch.6), so this module's Floyd quiz is small (7 questions) and the essay section has only the 4 odd Applied Logic problems.",
+  },
 ]
+
 
 HEAD_TEMPLATE = """<!doctype html>
 <html lang="{lang_attr}">

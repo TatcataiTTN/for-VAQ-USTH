@@ -1119,5 +1119,61 @@ ESSAY = {
     ],
     "note_vi": "Chương 11 có 39 bài, 20 bài lẻ. Đã đưa đủ 20 bài lẻ (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39) kèm ảnh đề và ảnh đáp án thật; các bài tính toán đều đã tự kiểm chứng (bài 33 chỉ đối chiếu với hình in vì là bài vẽ).",
     "note_en": "Chapter 11 has 39 problems, 20 of them odd. All 20 odd problems (1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39) are included with the question image and the real answer image; calculation problems were independently verified (Problem 33 is a drawing task and was only compared with the printed figure)."
+  },
+  "06-electronic-displays": {
+    "src_book": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chương 4 · Applied Logic: Seven-Segment Display, các bài 62 đến 71 (tr.256, PDF 257); đáp án ở phụ lục Answers to Odd-Numbered Problems (tr.A-6).",
+    "src_book_en": "Thomas L. Floyd, Digital Fundamentals, 11th ed., Chapter 4 · Applied Logic: Seven-Segment Display, Problems 62 to 71 (p.256, PDF 257); answers in the Answers to Odd-Numbered Problems appendix (p.A-6).",
+    "note_vi": "Các bài lẻ có đáp án in của mục Applied Logic (63, 65, 67, 69) đều đã được đưa lên. Các bài 62, 64, 66, 68 là bài chẵn nên sách không in đáp án; bài 70 và 71 là bài Multisim (cần mở tệp mô phỏng trên máy), không đưa lên. Bài 67 có lỗi in trong đáp án (xem ghi chú dưới bài).",
+    "note_en": "All odd Applied Logic problems with printed answers (63, 65, 67, 69) are included. Problems 62, 64, 66 and 68 are even, so the book prints no answers; Problems 70 and 71 are Multisim exercises (they need the simulation files) and are not included. Problem 67 has a printing error in its answer (see the note under the problem).",
+    "items": [
+      {
+        "num": 63,
+        "q_vi": "Giải thích mục đích của bộ phát hiện mã không hợp lệ (invalid code detector) trong mạch hiển thị chữ cái 7 đoạn.",
+        "q_en": "Explain the purpose of the invalid code detector.",
+        "src": "Floyd Ch.4 · Problem 63",
+        "img": "essay_floyd_ch04_q63.png",
+        "qimgs": [
+          "essay_floyd_ch04_qq63.png"
+        ],
+        "note_vi": "Khớp đoạn văn của sách ở mục Applied Logic (tr.246): vì các chữ A đến F đều là mã BCD không hợp lệ, màn hình chỉ cần được bật khi mã vào nằm trong 1010 đến 1111, nghĩa là khi có chữ cái, và phải tắt khi có chữ số 0 đến 9.",
+        "note_en": "Consistent with the book's Applied Logic passage (p.246): since the letters A to F are all invalid BCD codes, the display only needs to be enabled when the input code is 1010 to 1111, i.e. when a letter is entered, and must be disabled for the digits 0 to 9."
+      },
+      {
+        "num": 65,
+        "q_vi": "Lặp lại Bài 64 cho logic của các đoạn d đến g. (Bài 64: với đoạn c, biểu thức SOP tối thiểu dùng ít hơn bao nhiêu cổng và cổng đảo so với SOP chuẩn?)",
+        "q_en": "Repeat Problem 64 for the logic for segments d through g. (Problem 64: for segment c, how many fewer gates and inverters does it take to implement the minimum SOP expression than the standard SOP expression?)",
+        "src": "Floyd Ch.4 · Problem 65",
+        "img": "essay_floyd_ch04_q65.png",
+        "qimgs": [
+          "essay_floyd_ch04_qq65.png"
+        ],
+        "note_vi": "Đáp án in liệt kê phần cứng của mạch SOP tối thiểu cho từng đoạn. Đã tự suy lại bằng sympy từ Bảng 4-14 (mã 0 đến 9 là X, F tắt hết, ngõ ra thấp là sáng): d = H0H1H2 + H0'H2' (AND 3 ngõ vào, AND 2 ngõ vào, OR 2 ngõ vào, 2 cổng đảo), e = H0H1H2 (một AND 3 ngõ vào), f = H0H2 (một AND 2 ngõ vào), g = H0H1H2 + H0'H1' (như d). Khớp 100% đáp án in. Lưu ý: đề hỏi \"ít hơn bao nhiêu\" so với SOP chuẩn, trong khi đáp án in chỉ nêu phần cứng tối thiểu; con số \"ít hơn\" phụ thuộc quy ước đếm SOP chuẩn nên không được suy thêm ở đây.",
+        "note_en": "The printed answer lists the hardware of the minimum SOP circuit for each segment. Re-derived with sympy from Table 4-14 (codes 0 to 9 are X, F is all off, a LOW output lights the segment): d = H0H1H2 + H0'H2' (one 3-input AND, one 2-input AND, one 2-input OR, 2 inverters), e = H0H1H2 (one 3-input AND), f = H0H2 (one 2-input AND), g = H0H1H2 + H0'H1' (same as d). Matches the printed answer 100%. Note: the question asks \"how many fewer\" than the standard SOP while the printed answer only gives the minimum hardware; the \"fewer\" number depends on the counting convention for the standard SOP, so it is not inferred here."
+      },
+      {
+        "num": 67,
+        "q_vi": "Thiết kế lại logic cho đoạn a trong mục Applied Logic để hiển thị thêm chữ F (chữ F sáng các đoạn a, e, f, g; ngõ ra THẤP là sáng).",
+        "q_en": "Redesign the logic for segment a in the Applied Logic to include the letter F in the display.",
+        "src": "Floyd Ch.4 · Problem 67",
+        "img": "essay_floyd_ch04_q67.png",
+        "qimgs": [
+          "essay_floyd_ch04_qq67.png"
+        ],
+        "note_vi": "ĐÁP ÁN IN CÓ LỖI. Mạch ở Hình P-19 cho a = H3·H2'·H1 + H1'·H0. Kiểm tra bảng chân trị đầy đủ cho 6 chữ A, b, C, d, E, F (a = 0 là sáng): mạch in cho a = 1 ở mã 1010 (chữ A), tức đoạn a của chữ A không sáng, trong khi Bảng 4-14 cần a sáng. Năm mã còn lại đúng. Biểu thức đúng tối thiểu (sympy, mã 0 đến 9 là X) là a = H0·H1' + H0·H2', hoặc tương đương a = H2'·H1·H0 + H2·H1'·H0; hai cách này đều đúng trên cả 6 mã. Vì vậy ảnh đáp án bên dưới chỉ để đối chiếu, không dùng làm đáp án chuẩn.",
+        "note_en": "THE PRINTED ANSWER CONTAINS AN ERROR. The circuit in Figure P-19 gives a = H3·H2'·H1 + H1'·H0. Checking the full truth table for the six letters A, b, C, d, E, F (a = 0 means lit): the printed circuit gives a = 1 at code 1010 (letter A), i.e. segment a of the letter A stays off although Table 4-14 requires it on. The other five codes are correct. The correct minimum expression (sympy, codes 0 to 9 as X) is a = H0·H1' + H0·H2', or equivalently a = H2'·H1·H0 + H2·H1'·H0; both are correct on all six codes. The answer image below is therefore for comparison only, not the reference answer."
+      },
+      {
+        "num": 69,
+        "q_vi": "Thiết kế bộ phát hiện mã không hợp lệ: ngõ ra CAO cho phép hiển thị khi mã vào là một chữ cái (1010 đến 1111), ngõ ra THẤP tắt hiển thị khi mã vào là chữ số 0 đến 9.",
+        "q_en": "Design the invalid code detector (a HIGH output enables the display for the letter codes 1010 to 1111, a LOW disables it for the numerical codes 0 to 9).",
+        "src": "Floyd Ch.4 · Problem 69",
+        "img": "essay_floyd_ch04_q69.png",
+        "qimgs": [
+          "essay_floyd_ch04_qq69.png"
+        ],
+        "note_vi": "Tự kiểm chứng bằng sympy và bảng chân trị 16 hàng: X = H3·(H1 + H2) = H3H1 + H3H2 bằng 1 đúng với 1010 đến 1111 và bằng 0 với 0000 đến 1001. Mạch in ở Hình P-20 (một cổng OR của H1, H2 rồi AND với H3) khớp.",
+        "note_en": "Verified with sympy and the 16-row truth table: X = H3·(H1 + H2) = H3H1 + H3H2 equals 1 exactly for 1010 to 1111 and 0 for 0000 to 1001. The printed circuit in Figure P-20 (an OR of H1, H2 followed by an AND with H3) matches."
+      }
+    ]
   }
 }
