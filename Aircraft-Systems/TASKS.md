@@ -3,7 +3,7 @@
 Ngày khởi tạo: 2026-09-28.
 
 ## Epic 15 — Module 06: Màn hình điện tử và hệ thống thông tin buồng lái 🟢 (2026-10-11)
-- [x] **Chọn module**: bộ bài giảng mới "Electronic displays - ver 2026.pdf" (36 slide infographic, text layer chỉ 296 ký tự nên không dùng được). Đã render 125 dpi vào `OCR_output/ElectronicDisplays_Lecture/pages`, ghép từng cặp slide và ĐỌC BẰNG MẮT từng slide, ghi lại vào `OCR_output/ElectronicDisplays_Lecture/transcript.md`; các ô nghi ngờ cắt ở 300 dpi (`crops/`).
+- [x] **Chọn module**: bộ bài giảng mới "Electronic displays - ver 2026.pdf" (36 slide infographic, text layer chỉ 296 ký tự nên không dùng được). Đã render 125 dpi vào `ocr/lectures/electronic_displays/pages`, ghép từng cặp slide và ĐỌC BẰNG MẮT từng slide, ghi lại vào `ocr/lectures/electronic_displays/transcript.md`; các ô nghi ngờ cắt ở 300 dpi (`crops/`).
 - [x] **Ánh xạ 2 sách** (đã đọc trực tiếp từ ảnh trang): Tooley Ch.1 (p.1-24: đồng hồ bay, EFIS, ECAM/EICAS, bố trí buồng lái), Ch.11 Displays (p.178-196: CRT, LED/7 đoạn, LCD), Ch.15 mục 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250) và các câu MCQ; Floyd Ch.4 Applied Logic: Seven-Segment Display (p.244-249; bài 62-71 ở p.256), Ch.6 mục 6-5 (74HC47, p.338-340) và 6-8 (ghép kênh 7 đoạn, p.353). Floyd KHÔNG có EFIS/ECAM/ACARS/CRT/LCD ngoài mức 7 đoạn.
 - [x] **47 slide x 2 ngôn ngữ** (5 phần: lịch sử và yêu cầu, công nghệ hiển thị và thị giác, EFIS/EIS, ECAM/EICAS, CMC và ACARS), 37 slide nội dung có khung "Giải thích cho người mới bắt đầu"; 28 ảnh slide gốc (`disp_pNN.jpg`) và 3 hình cắt từ Tooley (Fig 11.3, 11.14, 11.19).
 - [x] **Quiz 75 câu x 2 ngôn ngữ**: 53 câu Tooley (Ch.1: 27 câu, bỏ câu 20 chưa kiểm chứng được; Ch.11: 16 câu; Ch.15: 10 câu về hiển thị/EFIS/ECAM/ACARS/CMC; 5 câu có hình đã cắt từ trang sách), 7 câu Floyd (Section Checkup, Applied Logic, văn bản), 15 câu tự sinh (đã tính lại trong notebook). Đáp án Tooley đọc trực tiếp từ ảnh scan Appendix 3 (A.1, A.11, A.15). Bản EN đi kèm ngay trong từng câu (`opts_en`, `explain_en`, `src_en`), KHÔNG dùng overlay, đã quét: 0 ký tự tiếng Việt trong JSON EN. Module 06 dùng seed xáo đáp án chọn theo phân bố vị trí cân bằng (không vị trí nào quá 45%).
@@ -21,7 +21,7 @@ Ngày khởi tạo: 2026-09-28.
 ## Epic 13 — Module 05: Bus dữ liệu hàng không (Data Buses) 🟢 (2026-10-04)
 - [x] **Nguồn**: slide bài giảng riêng "Data buses aircraft - ver 2026 v2.pdf" (18 slide, ảnh infographic,
   không có text layer dùng được: đã render cả 18 trang ở 150 dpi vào
-  `OCR_output/DataBuses_Lecture/pages/` và đọc trực tiếp bằng mắt từng trang) + Tooley Chương 4 "Data
+  `ocr/lectures/data_buses/pages/` và đọc trực tiếp bằng mắt từng trang) + Tooley Chương 4 "Data
   Buses" (tr.53-69: 4.1 Introducing bus systems, 4.2 ARINC 429, 4.3 Other bus standards, 4.4
   Multiple-Choice Questions). **Floyd KHÔNG có nội dung liên quan** (giáo trình điện tử số thuần tuý,
   không đề cập avionics bus): đây là module có độ khớp 2 sách THẤP NHẤT (thấp hơn cả Module 04), quiz chỉ
@@ -65,7 +65,7 @@ Ngày khởi tạo: 2026-09-28.
   tiêu chuẩn essay đã áp dụng ở Epic 12, vốn chỉ dùng câu có đáp án ẢNH CHỤP THẬT).
 
 ## Epic 14 — Mở rộng câu tự luận Floyd (đề có hình + ảnh đáp án thật) 🟡 (2026-10-05)
-- [x] Hạ tầng: `qimgs` (ảnh đề cắt từ sách, giữ nguyên gạch trên) và `note_vi/note_en` từng bài trong `essay_questions.py` + `build_essay_section()`. Toàn bộ ảnh trang, ảnh cắt, script kiểm chứng nằm trong `OCR_output/Floyd/{pages,crops,scripts,text}`.
+- [x] Hạ tầng: `qimgs` (ảnh đề cắt từ sách, giữ nguyên gạch trên) và `note_vi/note_en` từng bài trong `essay_questions.py` + `build_essay_section()`. Toàn bộ ảnh trang, ảnh cắt, script kiểm chứng nằm trong `ocr/floyd/{pages,crops,scripts,text}`.
 - [x] **Module 01 (Ch.2)**: đủ 35 bài lẻ; phát hiện 3 lỗi in: Bài 5(c), 29(b), 37(g).
 - [x] **Module 02 (Ch.3 + Ch.4)**: Ch.3 thêm 24 bài (dạng sóng kiểm chứng bằng đọc pixel `wavetools.py`/`verify_ch3.py`); Ch.4 thêm 15 bài (sympy, `verify_ch4.py`). Lỗi in/không khớp: Ch.3 Q31 (tên entity bắt đầu bằng chữ số), Ch.4 Q21(b), Q61 (X/Y), Q3 và Q15 (đáp án in không khớp đề).
 - [x] **Module 03 (Ch.6)**: thêm 8 bài (5, 7, 11, 13, 17, 19, 21, 23), tổng 11. Loại vì đáp án in không khớp đề: Q9, Q25, Q27 (Gray→nhị phân của số khác), Q29 (sóng XOR ứng với dữ liệu ngược Bài 28).
@@ -84,7 +84,7 @@ Ngày khởi tạo: 2026-09-28.
 - [x] Hạ tầng mới: `data/essay_questions.py` (câu hỏi gõ tay bằng HTML, song ngữ) + `build_essay_section()`
   trong `render_site.py`, hiển thị dưới quiz mỗi trang module. Mỗi câu có khung `<details>` "Xem đáp án gốc
   trong sách", mở ra hiện ẢNH CHỤP THẬT (không gõ lại) từ đúng trang phụ lục, crop tại
-  `OCR_output/exercise_pages/Floyd/ch02_number_systems_essay/answers/`, copy vào `assets/figures/essay_floyd_*`.
+  `ocr/exercise_pages/Floyd/ch02_number_systems_essay/answers/`, copy vào `assets/figures/essay_floyd_*`.
 - [x] **Module 02 (Floyd Ch.3+4, 6 câu)**: Ch.3 Problem 25; Ch.4 Problem 1, 5, 7, 9, 19. Riêng câu 9 (De Morgan)
   đề bài in dấu gạch ngang trên rất nhỏ nên không đọc trực tiếp bằng mắt; đã suy ngược từng biểu thức từ
   đáp án in rồi kiểm tra xuôi lại bằng De Morgan, cả 8 ý khớp. Bỏ qua Ch.4 Problem 3 (đề ghi 3 biến A,B,C nhưng

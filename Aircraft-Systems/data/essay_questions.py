@@ -8,7 +8,7 @@ tu luan rieng, nen toan bo cau hoi trong file nay lay tu Floyd.
 Quy tac bat buoc: chi chon cau hoi so LE (odd-numbered), vi sach chi in dap an cho
 cau so le o phu luc "Answers to Odd-Numbered Problems" cuoi sach. Moi dap an la
 ANH CHUP THAT tu chinh trang phu luc do (khong go lai bang tay), luu tai
-OCR_output/exercise_pages/Floyd/... va copy vao assets/figures/essay_floyd_*.png
+ocr/exercise_pages/Floyd/... va copy vao assets/figures/essay_floyd_*.png
 de web phuc vu duoc.
 
 Da doi chieu tung cau: tinh lai doc lap bang tay, so voi anh dap an that. Rieng
@@ -61,8 +61,8 @@ ESSAY = {
         "q_en": "How many bits are required to represent the following decimal numbers?<br>(a) 5 &nbsp; (b) 10 &nbsp; (c) 15 &nbsp; (d) 20<br>(e) 100 &nbsp; (f) 120 &nbsp; (g) 140 &nbsp; (h) 160",
         "src": "Floyd Ch.2 · Problem 9",
         "img": "essay_floyd_ch02_q09.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. (số bit tối thiểu = độ dài nhị phân của số đó).",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (minimum bits = binary length of the number)."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (số bit tối thiểu = độ dài nhị phân của số đó).",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (minimum bits = binary length of the number)."
       },
       {
         "num": 11,
@@ -70,8 +70,8 @@ ESSAY = {
         "q_en": "Convert each decimal number to binary by using the sum-of-weights method:<br>(a) 12 &nbsp; (b) 15 &nbsp; (c) 25 &nbsp; (d) 50<br>(e) 65 &nbsp; (f) 97 &nbsp; (g) 127 &nbsp; (h) 198",
         "src": "Floyd Ch.2 · Problem 11",
         "img": "essay_floyd_ch02_q11.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 13,
@@ -86,8 +86,8 @@ ESSAY = {
         "q_en": "Add the binary numbers:<br>(a) 10 + 10 &nbsp; (b) 10 + 11 &nbsp; (c) 100 + 11<br>(d) 111 + 101 &nbsp; (e) 1111 + 111 &nbsp; (f) 1111 + 1111",
         "src": "Floyd Ch.2 · Problem 15",
         "img": "essay_floyd_ch02_q15.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 17,
@@ -95,8 +95,8 @@ ESSAY = {
         "q_en": "Perform the following binary multiplications:<br>(a) 11 × 10 &nbsp; (b) 101 × 11 &nbsp; (c) 111 × 110<br>(d) 1100 × 101 &nbsp; (e) 1110 × 1110 &nbsp; (f) 1111 × 1100",
         "src": "Floyd Ch.2 · Problem 17",
         "img": "essay_floyd_ch02_q17.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 19,
@@ -120,8 +120,8 @@ ESSAY = {
         "q_en": "Express each decimal number in binary as an 8-bit sign-magnitude number:<br>(a) +29 &nbsp; (b) −85 &nbsp; (c) +100 &nbsp; (d) −123",
         "src": "Floyd Ch.2 · Problem 23",
         "img": "essay_floyd_ch02_q23.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 25,
@@ -136,8 +136,8 @@ ESSAY = {
         "q_en": "Determine the decimal value of each signed binary number in the 1's complement form:<br>(a) 10011001 &nbsp; (b) 01110100 &nbsp; (c) 10111111",
         "src": "Floyd Ch.2 · Problem 27",
         "img": "essay_floyd_ch02_q27.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 29,
@@ -154,8 +154,8 @@ ESSAY = {
         "q_en": "Convert each pair of decimal numbers to binary and add using the 2's complement form:<br>(a) 33 and 15 &nbsp; (b) 56 and −27 &nbsp; (c) −46 and 25 &nbsp; (d) −110 and −84",
         "src": "Floyd Ch.2 · Problem 31",
         "img": "essay_floyd_ch02_q31.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. Ý (d) cần 9 bit vì tổng −194 không vừa 8 bit.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. Item (d) needs 9 bits because −194 does not fit in 8 bits."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. Ý (d) cần 9 bit vì tổng −194 không vừa 8 bit.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. Item (d) needs 9 bits because −194 does not fit in 8 bits."
       },
       {
         "num": 33,
@@ -163,8 +163,8 @@ ESSAY = {
         "q_en": "Perform each addition in the 2's complement form:<br>(a) 10001100 + 00111001 &nbsp; (b) 11011001 + 11100111",
         "src": "Floyd Ch.2 · Problem 33",
         "img": "essay_floyd_ch02_q33.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. (bỏ bit nhớ tràn ở ý b).",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (the overflow carry is discarded in item b)."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (bỏ bit nhớ tràn ở ý b).",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (the overflow carry is discarded in item b)."
       },
       {
         "num": 35,
@@ -190,8 +190,8 @@ ESSAY = {
         "q_en": "Convert each hexadecimal number to decimal:<br>(a) 42<sub>16</sub> &nbsp; (b) 64<sub>16</sub> &nbsp; (c) 2B<sub>16</sub> &nbsp; (d) 4D<sub>16</sub><br>(e) FF<sub>16</sub> &nbsp; (f) BC<sub>16</sub> &nbsp; (g) 6F1<sub>16</sub> &nbsp; (h) ABC<sub>16</sub>",
         "src": "Floyd Ch.2 · Problem 39",
         "img": "essay_floyd_ch02_q39.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 41,
@@ -199,8 +199,8 @@ ESSAY = {
         "q_en": "Perform the following additions:<br>(a) 25<sub>16</sub> + 33<sub>16</sub> &nbsp; (b) 43<sub>16</sub> + 62<sub>16</sub> &nbsp; (c) A4<sub>16</sub> + F5<sub>16</sub> &nbsp; (d) FC<sub>16</sub> + AE<sub>16</sub>",
         "src": "Floyd Ch.2 · Problem 41",
         "img": "essay_floyd_ch02_q41.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 43,
@@ -208,8 +208,8 @@ ESSAY = {
         "q_en": "Convert each octal number to decimal:<br>(a) 14<sub>8</sub> &nbsp; (b) 53<sub>8</sub> &nbsp; (c) 67<sub>8</sub> &nbsp; (d) 174<sub>8</sub><br>(e) 635<sub>8</sub> &nbsp; (f) 254<sub>8</sub> &nbsp; (g) 2673<sub>8</sub> &nbsp; (h) 7777<sub>8</sub>",
         "src": "Floyd Ch.2 · Problem 43",
         "img": "essay_floyd_ch02_q43.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 45,
@@ -217,8 +217,8 @@ ESSAY = {
         "q_en": "Convert each octal number into binary:<br>(a) 17<sub>8</sub> &nbsp; (b) 26<sub>8</sub> &nbsp; (c) 145<sub>8</sub><br>(d) 456<sub>8</sub> &nbsp; (e) 653<sub>8</sub> &nbsp; (f) 777<sub>8</sub>",
         "src": "Floyd Ch.2 · Problem 45",
         "img": "essay_floyd_ch02_q45.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 47,
@@ -226,8 +226,8 @@ ESSAY = {
         "q_en": "Convert each of the following decimal numbers to 8421 BCD:<br>(a) 10 &nbsp; (b) 13 &nbsp; (c) 18 &nbsp; (d) 21 &nbsp; (e) 25 &nbsp; (f) 36<br>(g) 44 &nbsp; (h) 57 &nbsp; (i) 69 &nbsp; (j) 98 &nbsp; (k) 125 &nbsp; (l) 156",
         "src": "Floyd Ch.2 · Problem 47",
         "img": "essay_floyd_ch02_q47.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. Đáp án in nằm trên hai trang (ảnh ghép hai phần: cuối trang A-1 và đầu trang A-2).",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. The printed answer spans two pages (the image stitches the end of page A-1 and the top of page A-2)."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. Đáp án in nằm trên hai trang (ảnh ghép hai phần: cuối trang A-1 và đầu trang A-2).",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. The printed answer spans two pages (the image stitches the end of page A-1 and the top of page A-2)."
       },
       {
         "num": 49,
@@ -242,8 +242,8 @@ ESSAY = {
         "q_en": "Convert each of the BCD numbers to decimal:<br>(a) 10000000 &nbsp; (b) 001000110111<br>(c) 001101000110 &nbsp; (d) 010000100001<br>(e) 011101010100 &nbsp; (f) 100000000000<br>(g) 100101111000 &nbsp; (h) 0001011010000011<br>(i) 1001000000011000 &nbsp; (j) 0110011001100111",
         "src": "Floyd Ch.2 · Problem 51",
         "img": "essay_floyd_ch02_q51.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in.",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
       },
       {
         "num": 53,
@@ -251,8 +251,8 @@ ESSAY = {
         "q_en": "Add the following BCD numbers:<br>(a) 1000 + 0110 &nbsp; (b) 0111 + 0101<br>(c) 1001 + 1000 &nbsp; (d) 1001 + 0111<br>(e) 00100101 + 00100111 &nbsp; (f) 01010001 + 01011000<br>(g) 10011000 + 10010111 &nbsp; (h) 010101100001 + 011100001000",
         "src": "Floyd Ch.2 · Problem 53",
         "img": "essay_floyd_ch02_q53.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. (cộng theo số thập phân rồi mã hoá lại BCD).",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (add as decimal values, then re-encode as BCD)."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (cộng theo số thập phân rồi mã hoá lại BCD).",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (add as decimal values, then re-encode as BCD)."
       },
       {
         "num": 55,
@@ -269,8 +269,8 @@ ESSAY = {
         "q_en": "Convert each Gray code to binary:<br>(a) 1010 &nbsp; (b) 00010 &nbsp; (c) 11000010001",
         "src": "Floyd Ch.2 · Problem 57",
         "img": "essay_floyd_ch02_q57.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. (bit MSB giữ nguyên, các bit sau XOR dồn với bit nhị phân trước đó).",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. (MSB kept, each following bit is XORed with the previous binary bit)."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (bit MSB giữ nguyên, các bit sau XOR dồn với bit nhị phân trước đó).",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (MSB kept, each following bit is XORed with the previous binary bit)."
       },
       {
         "num": 59,
@@ -278,8 +278,8 @@ ESSAY = {
         "q_en": "Determine each ASCII character. Refer to Table 2–7.<br>(a) 0011000 &nbsp; (b) 1001010 &nbsp; (c) 0111101<br>(d) 0100011 &nbsp; (e) 0111110 &nbsp; (f) 1000010",
         "src": "Floyd Ch.2 · Problem 59",
         "img": "essay_floyd_ch02_q59.png",
-        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong OCR_output/Floyd/scripts), khớp đáp án in. 0011000 = 24 thập phân là ký tự điều khiển CAN (Cancel).",
-        "note_en": "Recomputed independently in Python (verify_ch2.py in OCR_output/Floyd/scripts); matches the printed answer. 0011000 = decimal 24 is the control character CAN (Cancel)."
+        "note_vi": "Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. 0011000 = 24 thập phân là ký tự điều khiển CAN (Cancel).",
+        "note_en": "Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. 0011000 = decimal 24 is the control character CAN (Cancel)."
       },
       {
         "num": 61,
@@ -659,8 +659,8 @@ ESSAY = {
         "q_en": "Convert the following expressions to sum-of-product (SOP) forms. The original problem (with overlines exactly as in the book) is shown in the image below.",
         "src": "Floyd Ch.4 · Problem 23",
         "img": "essay_floyd_ch04_q23.png",
-        "note_vi": "Đã tự kiểm chứng bằng sympy (OCR_output/Floyd/scripts/verify_ch4.py): biểu thức trong đề và kết quả in là tương đương logic.",
-        "note_en": "Verified with sympy (OCR_output/Floyd/scripts/verify_ch4.py): the expression in the problem and the printed result are logically equivalent.",
+        "note_vi": "Đã tự kiểm chứng bằng sympy (ocr/floyd/scripts/verify_ch4.py): biểu thức trong đề và kết quả in là tương đương logic.",
+        "note_en": "Verified with sympy (ocr/floyd/scripts/verify_ch4.py): the expression in the problem and the printed result are logically equivalent.",
         "qimgs": [
           "essay_floyd_ch04_qq23.png"
         ]

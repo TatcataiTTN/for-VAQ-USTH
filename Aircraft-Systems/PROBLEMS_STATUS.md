@@ -66,5 +66,5 @@ Chương nào chưa có module trên site thì chưa đưa bài tập (Ch.2, 3, 
 ## Ghi chú
 
 - Lỗi in thật trong sách đã ghi dưới từng bài trên site: Ch.2 Bài 5(c), 29(b), 37(g); Ch.3 Bài 31; Ch.4 Bài 21(b), 61.
-- Ảnh trang, ảnh cắt và script kiểm chứng: `OCR_output/Floyd/{pages,crops,scripts,text}`.
+- Ảnh trang, ảnh cắt và script kiểm chứng: `ocr/floyd/{pages,crops,scripts,text}`.
 - Nội dung các bài nằm trong `data/essay_questions.py`, hiển thị ở cuối trang từng module.
