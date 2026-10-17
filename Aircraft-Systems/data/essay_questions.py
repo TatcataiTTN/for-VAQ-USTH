@@ -1240,5 +1240,112 @@ ESSAY = {
         ]
       }
     ]
+  },
+  "08-fibre-optics": {
+    "src_book": "Floyd Digital Fundamentals 11th ed., Chương 13 mục 13-1: Bài 5 và 7 (tr.793, PDF 794; đáp án A-27). Bài giảng Fiber optics: bài tập slide 20, 22, 27 (không in đáp án, lời giải của module) và slide 36 (có đáp án in). Tooley ch.10 Test Your Understanding 10.2 (không in đáp án).",
+    "src_book_en": "Floyd Digital Fundamentals 11th ed., Chapter 13 section 13-1: Problems 5 and 7 (p.793, PDF 794; answers A-27). Lecture Fiber optics: exercises on slides 20, 22, 27 (no printed answer, the module's solutions) and slide 36 (with a printed answer). Tooley ch.10 Test Your Understanding 10.2 (no printed answer).",
+    "note_vi": "Floyd chỉ có hai bài lẻ về sợi quang (5 và 7); các bài 4, 6, 8 là bài chẵn nên không có đáp án in. Các bài của bài giảng ghi rõ nguồn đáp án: ảnh cắt từ slide 36, còn slide 20, 22, 27 và Tooley 10.2 là lời giải do module tính và tự kiểm chứng trong notebook.",
+    "note_en": "Floyd has only two odd fibre problems (5 and 7); problems 4, 6, 8 are even so have no printed answers. Lecture items state the answer source: an image cut from slide 36, while slides 20, 22, 27 and Tooley 10.2 are the module's own solutions, verified in the notebook.",
+    "items": [
+      {
+        "num": 5,
+        "q_vi": "Mô tả chế độ đơn mode trong sợi quang.",
+        "q_en": "Describe the single mode in an optical fiber.",
+        "src": "Floyd Ch.13 · Problem 5",
+        "img": "essay_floyd_ch13_q05.png",
+        "qimgs": [
+          "essay_floyd_ch13_qq05.png"
+        ],
+        "note_vi": "Đáp án in khớp mục 13-1 (tr.743): đơn mode có lõi nhỏ hơn nhiều so với đa mode, ánh sáng đi gần như thẳng như một tia, băng thông và khoảng cách lớn hơn nhưng đắt hơn.",
+        "note_en": "The printed answer matches section 13-1 (p.743): single-mode has a much smaller core than multimode, light travels nearly straight as one ray, more bandwidth and distance but higher cost.",
+        "src_en": "Floyd Ch.13 · Problem 5"
+      },
+      {
+        "num": 7,
+        "q_vi": "Vẽ sơ đồ khối cơ bản của một liên kết truyền thông bằng sợi quang.",
+        "q_en": "Draw a basic block diagram of a fiber optics communications link.",
+        "src": "Floyd Ch.13 · Problem 7",
+        "img": "essay_floyd_ch13_q07.png",
+        "qimgs": [
+          "essay_floyd_ch13_qq07.png"
+        ],
+        "note_vi": "Đáp án in là Hình P-100: nguồn tín hiệu điện, chuyển đổi điện-sang-ánh sáng, đầu nối quang, cáp sợi quang, chuyển đổi ánh sáng-sang-điện và bộ thu; trùng sơ đồ khối ở Hình 13-8 và slide 23 của bài giảng.",
+        "note_en": "The printed answer is Figure P-100: electrical signal source, electrical-to-light conversion, optical connectors, fibre-optic cable, light-to-electrical conversion and receiver; the same as Figure 13-8 and lecture slide 23.",
+        "src_en": "Floyd Ch.13 · Problem 7"
+      },
+      {
+        "num": "S20",
+        "q_vi": "Sợi có n₁ = 1,53 (SiO₂) và n₂ = 1,50 (SiO₂ pha GeO₂). Tính góc tới hạn θc, góc chấp nhận θa và khẩu độ số NA.",
+        "q_en": "For a fibre with n₁ = 1.53 (SiO₂) and n₂ = 1.50 (SiO₂ with GeO₂ doping), compute the critical angle θc, the acceptance angle θa and the numerical aperture NA.",
+        "src": "Bài giảng Fiber optics · slide 20",
+        "img": "",
+        "qimgs": [
+          "fib_ex20.jpg"
+        ],
+        "note_vi": "Slide không in đáp án; đây là lời giải của module, đã tính lại bằng code trong notebook (không phải ảnh đáp án in).",
+        "note_en": "The slide prints no answer; this is the module's solution, recomputed in code in the notebook (not a printed answer image).",
+        "ans_vi": "θc = sin⁻¹(n₂/n₁) = sin⁻¹(1,50/1,53) = <b>78,64°</b>.<br>NA = √(n₁² − n₂²) = √(2,3409 − 2,25) = √0,0909 = <b>0,3015</b>.<br>θa = sin⁻¹(NA) = <b>17,55°</b> (n₀ = 1).",
+        "ans_en": "θc = sin⁻¹(n₂/n₁) = sin⁻¹(1.50/1.53) = <b>78.64°</b>.<br>NA = √(n₁² − n₂²) = √(2.3409 − 2.25) = √0.0909 = <b>0.3015</b>.<br>θa = sin⁻¹(NA) = <b>17.55°</b> (n₀ = 1).",
+        "src_en": "Lecture Fiber optics · slide 20"
+      },
+      {
+        "num": "S22",
+        "q_vi": "d_core = 62,5 µm, NA = 0,275, λ = 1300 nm. Tính tần số chuẩn hoá V, số mode N của sợi và góc θa.",
+        "q_en": "d_core = 62.5 µm, NA = 0.275, λ = 1300 nm. Calculate the normalised frequency V, the number of modes N of the fibre and the angle θa.",
+        "src": "Bài giảng Fiber optics · slide 22",
+        "img": "",
+        "qimgs": [
+          "fib_ex22.jpg"
+        ],
+        "note_vi": "Slide không in đáp án; lời giải của module, đã kiểm chứng trong notebook.",
+        "note_en": "The slide prints no answer; the module's solution, verified in the notebook.",
+        "ans_vi": "V = π d NA / λ = π × 62,5×10⁻⁶ × 0,275 / 1300×10⁻⁹ = <b>41,54</b>.<br>N ≈ V²/2 = <b>863</b> mode.<br>θa = sin⁻¹(0,275) = <b>15,96°</b>.",
+        "ans_en": "V = π d NA / λ = π × 62.5×10⁻⁶ × 0.275 / 1300×10⁻⁹ = <b>41.54</b>.<br>N ≈ V²/2 = <b>863</b> modes.<br>θa = sin⁻¹(0.275) = <b>15.96°</b>.",
+        "src_en": "Lecture Fiber optics · slide 22"
+      },
+      {
+        "num": "S27",
+        "q_vi": "Tính chiều dài tối đa l_max của sợi (SiO₂): công suất vào 1 mW, bước sóng 1310 nm, công suất ra tối thiểu đo được 50 µW; dùng hệ số suy hao đọc từ đồ thị trước đó.",
+        "q_en": "Calculate the maximal length l_max of the optical fibre (SiO₂): input power 1 mW, wavelength 1310 nm, minimum measurable output power 50 µW; use the attenuation coefficient given by the previous graph.",
+        "src": "Bài giảng Fiber optics · slide 27",
+        "img": "",
+        "qimgs": [
+          "fib_ex27.jpg"
+        ],
+        "note_vi": "Slide không in đáp án; kết quả phụ thuộc giá trị α đọc từ đồ thị.",
+        "note_en": "The slide prints no answer; the result depends on the α read from the graph.",
+        "ans_vi": "Từ đồ thị slide 26: α ≈ 0,35 dB/km ở 1310 nm. Ngân sách 10 log₁₀(1 mW / 50 µW) = 13,01 dB. l_max = 13,01 / 0,35 = <b>37,2 km</b>. (Với 0,18 dB/km ở 1550 nm: 72,3 km.)",
+        "ans_en": "From the slide 26 graph: α ≈ 0.35 dB/km at 1310 nm. Budget 10 log₁₀(1 mW / 50 µW) = 13.01 dB. l_max = 13.01 / 0.35 = <b>37.2 km</b>. (With 0.18 dB/km at 1550 nm: 72.3 km.)",
+        "src_en": "Lecture Fiber optics · slide 27"
+      },
+      {
+        "num": "S36",
+        "q_vi": "Sợi step-index đa mode có NA = 0,20 hỗ trợ khoảng 1000 mode ở bước sóng 850 nm. Đường kính lõi là bao nhiêu? Sợi hỗ trợ bao nhiêu mode ở 1320 nm và 1550 nm?",
+        "q_en": "A step-index multimode fiber with a NA of 0.20 supports approximately 1000 modes at an 850 nm wavelength. What is the diameter of its core? How many modes does the fiber support at 1320 nm and 1550 nm?",
+        "src": "Bài giảng Fiber optics · slide 36",
+        "img": "fib_ex36_ans.png",
+        "qimgs": [
+          "fib_ex36.jpg"
+        ],
+        "note_vi": "Đáp án in trên slide: d = 60,49 µm; ở 1320 nm V = 28,78, M = 414; ở 1550 nm V = 24,51, M = 301. Tự tính lại: V = √(2M) = 44,72; a = Vλ/(2π NA) = 30,25 µm nên d = 60,50 µm; V(1320) = 28,80, M = 414,7; V(1550) = 24,52, M = 300,7. Khớp trong sai số làm tròn.",
+        "note_en": "Printed answer on the slide: d = 60.49 µm; at 1320 nm V = 28.78, M = 414; at 1550 nm V = 24.51, M = 301. Recomputed: V = √(2M) = 44.72; a = Vλ/(2π NA) = 30.25 µm so d = 60.50 µm; V(1320) = 28.80, M = 414.7; V(1550) = 24.52, M = 300.7. They agree within rounding.",
+        "src_en": "Lecture Fiber optics · slide 36"
+      },
+      {
+        "num": "T10.2",
+        "q_vi": "Xác định góc tới hạn cho mặt phân cách kính-không khí (chiết suất kính và không khí lần lượt là 1,5 và 1,0).",
+        "q_en": "Determine the critical angle for a glass-air interface (values of refractive index for glass and air are respectively 1.5 and 1.0).",
+        "src": "Tooley ch.10 · Test Your Understanding 10.2 (và slide 32 của bài giảng)",
+        "img": "",
+        "qimgs": [
+          "fib_p14.jpg"
+        ],
+        "note_vi": "Sách không in đáp án; lời giải của module. Ảnh bên trên là slide về góc tới hạn.",
+        "note_en": "The book prints no answer; the module's solution. The image above is the critical-angle slide.",
+        "ans_vi": "sin θc = n₂/n₁ = 1,0/1,5 = 0,6667, nên θc = <b>41,81°</b>.",
+        "ans_en": "sin θc = n₂/n₁ = 1.0/1.5 = 0.6667, so θc = <b>41.81°</b>.",
+        "src_en": "Tooley ch.10 · Test Your Understanding 10.2 (and lecture slide 32)"
+      }
+    ]
   }
 }

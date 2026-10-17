@@ -2,6 +2,14 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 17 — Module 08: Cáp quang trên máy bay 🟢 (2026-10-17)
+- [x] **Nguồn**: "Optic_Fiber_ver 2026.pdf" (37 slide infographic, đọc từng slide bằng mắt, ảnh trang ở `ocr/lectures/optic_fiber/`), Tooley ch.10 (tr.162-177; 20 MCQ, khoá đọc từ ảnh scan A.10 tr.379-380) và Floyd ch.13 mục 13-1 (tr.740-745, bài 5 và 7 tr.793, đáp án A-27 cắt từ ảnh).
+- [x] 30 slide nội dung x 2 ngôn ngữ (5 phần), 2 demo tương tác (`_shared/demo_fibre.js`: máy tính sợi quang θc/NA/θa/V/N/L_max; mô phỏng Snell và phản xạ toàn phần), hàm thuần đã kiểm bằng Node.
+- [x] Quiz 36 câu x 2 ngôn ngữ (20 Tooley, 5 Floyd, 11 tự sinh), tự luận 7 mục: Floyd 13 bài 5 và 7 (ảnh đáp án thật), bài giảng slide 36 (ảnh đáp án in), slide 20, 22, 27 và Tooley TYU 10.2 (lời giải của module, ghi rõ không phải đáp án in; renderer hỗ trợ `ans_vi/ans_en` và `src_en`).
+- [x] Notebook `08_fibre-optics.ipynb` chạy thật, mọi assert đạt; bài slide 36 khớp đáp án in trong sai số làm tròn.
+- [x] **7 điểm không khớp trong tài liệu** (đã đưa vào nội dung dạy): slide 19 viết θ1 = θc = θa (θc 78,6° khác θa 17,5°); slide 9 nước ε_r ≈ 80 với n ≈ 1,33; slide 28 công thức Δt thiếu n1/n2 và "10 đến 50 ns/km" không khớp (67 đến 137 ns/km); slide 30 nhãn MM-SI cho sợi graded-index; slide 24 (0,2 đến 0,5) so với slide 26 (0,18 dB/km); Tooley 10.2 viết ngược quy tắc khúc xạ; nhãn Chinook trên slide 6.
+- **Lưu ý**: bài giảng đánh số MCQ riêng (bỏ vài câu), site dùng đánh số của Tooley.
+
 ## Epic 16 — Module 07: Quản lý kiểm soát phần mềm hàng không 🟢 (2026-10-17)
 - [x] **Nguồn**: tài liệu 6 trang "software management control.pdf" (EASA Part-66 Module 5.13; chữ chọn được nên đọc text và đối chiếu ảnh trang, cắt Hình 13-1 ở 250 dpi) + Tooley ch.13 (tr.207-217, ảnh trang đọc trực tiếp, Bảng 13.1 đọc lại từ ảnh vì OCR làm hỏng số mũ) + Floyd ch.2 mục 2-12 và ch.11 mục 11-11. Đáp án MCQ Tooley đọc từ ảnh scan Appendix 3 (A.13, tr.380).
 - [x] 20 slide x 2 ngôn ngữ (5 phần), 2 demo chạy trong trình duyệt (`_shared/demo_integrity.js`: checksum 8 bit so với CRC-8 với ba kiểu lỗi; bộ chọn mức DAL đọc dữ liệu từ hình 13-1), hàm thuần đã kiểm bằng Node (CRC-8 chuẩn 0xF4).

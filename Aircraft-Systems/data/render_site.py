@@ -35,10 +35,10 @@ L = {
     "site_title": "Hệ thống điện tử số & máy tính hàng không",
     "site_sub": "Tự học AE2.021 · USTH",
     "home_hero_title": "Tự học môn AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "7 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
+    "home_hero_sub": "8 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
                       "(Mike Tooley & Thomas Floyd), có quiz tự chấm và notebook Python đi kèm.",
     "open": "Mở bài giảng →", "soon": "Sắp có",
-    "mapping_link": "📚 Bảng ánh xạ 7 bài giảng ↔ chương sách giáo trình",
+    "mapping_link": "📚 Bảng ánh xạ 8 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
               "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
     "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
@@ -51,7 +51,7 @@ L = {
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
-    "mapping_title": "Bảng ánh xạ: 7 bài giảng ↔ chương giáo trình tham khảo",
+    "mapping_title": "Bảng ánh xạ: 8 bài giảng ↔ chương giáo trình tham khảo",
     "mapping_intro": "Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide "
                       "giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
   },
@@ -59,10 +59,10 @@ L = {
     "site_title": "Aircraft Digital Electronics & Computer Systems",
     "site_sub": "Self-study AE2.021 · USTH",
     "home_hero_title": "Self-study AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "7 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
+    "home_hero_sub": "8 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
                       "(Mike Tooley & Thomas Floyd), with a self-graded quiz and companion Python notebook.",
     "open": "Open lesson →", "soon": "Coming soon",
-    "mapping_link": "📚 Chapter mapping: 7 lectures ↔ textbook chapters",
+    "mapping_link": "📚 Chapter mapping: 8 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
               "Tooley, independently recomputed to verify each answer: see the source note on each question.",
     "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
@@ -75,7 +75,7 @@ L = {
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
-    "mapping_title": "Chapter mapping: 7 lectures ↔ reference textbook chapters",
+    "mapping_title": "Chapter mapping: 8 lectures ↔ reference textbook chapters",
     "mapping_intro": "The table below directly cross-references the tables of contents of AE2.021's two "
                       "reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd "
                       "table of contents and content of both books, not guesswork.",
@@ -165,7 +165,16 @@ MAPPING_ROWS = [
     "note_vi": "Nguồn chính là tài liệu 6 trang EASA Part-66 Module 5.13 (13.1 đến 13.6, gồm Hình 13-1 và 6 câu hỏi có đáp án) cùng Tooley ch.13. Module có 2 demo tương tác (checksum và CRC, bộ chọn mức DAL).",
     "note_en": "The main source is the 6-page EASA Part-66 Module 5.13 document (13.1 to 13.6, with Figure 13-1 and 6 questions with answers) plus Tooley ch.13. The module has 2 interactive demos (checksum versus CRC, a DAL level explorer).",
   },
+  {
+    "module": "08: Fibre Optics",
+    "tooley": "Ch.10 Fibre optics (p.162-177): 10.1 advantages, 10.2 propagation (critical angle, numerical aperture, attenuation), 10.3 dispersion and bandwidth, 10.4 practical networks (ARINC 636, cable, connectors), 10.5 components; 20 MCQs (A.10, p.379-380)",
+    "floyd": "Ch.13 Data Transmission, section 13-1 Data Transmission Media (p.740-745): optical fiber cable, modes (multimode, single-mode, 50/125, 62.5/125, 8.3/125), link block diagram, connectors; Section Checkup; Problems 5 and 7 (p.793; answers A-27). Floyd KHÔNG có góc tới hạn, khẩu độ số, suy hao hay tán sắc: phần lý thuyết sâu dựa vào bài giảng và Tooley.",
+    "floyd_en": "Ch.13 Data Transmission, section 13-1 Data Transmission Media (p.740-745): optical fiber cable, modes (multimode, single-mode, 50/125, 62.5/125, 8.3/125), link block diagram, connectors; Section Checkup; Problems 5 and 7 (p.793; answers A-27). Floyd has NO critical angle, numerical aperture, attenuation or dispersion: the deeper theory relies on the lecture and Tooley.",
+    "note_vi": "Bộ bài giảng 37 slide có bốn bài tập tính toán (slide 20, 22, 27, 36); module giải lại và kiểm chứng, và chỉ slide 36 có đáp án in. Module có 2 demo tương tác (máy tính sợi quang, tia sáng Snell/TIR) và ghi lại 7 điểm không khớp tìm thấy trong tài liệu.",
+    "note_en": "The 37-slide lecture has four calculation exercises (slides 20, 22, 27, 36); the module solves and verifies them, and only slide 36 has a printed answer. The module has 2 interactive demos (fibre calculator, Snell/TIR ray) and records the 7 mismatches found in the material.",
+  },
 ]
+
 
 
 
@@ -335,11 +344,17 @@ def build_essay_section(lang, slug):
         extra_note = f"<p class='essay-intro'><i>{entry['note_en']}</i></p>"
     rows = []
     for it in entry["items"]:
+        it = dict(it); it["src"] = it.get("src_" + lang) or it["src"]
         qtext = ovl(it["q_vi"] if lang == "vi" else it["q_en"])
         orig = ""
         if lang == "vi":
             orig = f'<p class="essay-orig"><b>Original (EN):</b> {ovl(it["q_en"])}</p>'
-        img_src = "../../../assets/figures/" + it["img"]
+        img_src = "../../../assets/figures/" + it["img"] if it.get("img") else ""
+        ans_txt = it.get("ans_" + lang)
+        if ans_txt:
+            ans_body = f"<p class='essay-own'>{ans_txt}</p>"
+        else:
+            ans_body = f'<img src="{img_src}" alt="{it["src"]}" loading="lazy"/>'
         qfigs = ""
         for qi in it.get("qimgs", []):
             qsrc = "../../../assets/figures/" + qi
@@ -356,7 +371,7 @@ def build_essay_section(lang, slug):
   {inote}
   <p class="pill">{it['src']}</p>
   <details class="essay-answer"><summary>{t['essay_reveal']}</summary>
-    <div class="essay-answer-body"><img src="{img_src}" alt="{it['src']}" loading="lazy"/></div>
+    <div class="essay-answer-body">{ans_body}</div>
   </details>
 </div>""")
     items_html = "\n".join(rows)

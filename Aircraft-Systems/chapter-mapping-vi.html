@@ -7,7 +7,7 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="_shared/common.css?v=798ab1f0"/>
 
 <title>Hệ thống điện tử số & máy tính hàng không: Ánh xạ chương sách</title>
 <meta name="description" content="Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán."/>
@@ -27,7 +27,7 @@
 </div></header>
 <div class="wrap">
 <p><a href="vi/index.html">← Trang chủ</a></p>
-<div class="hero"><h1>Bảng ánh xạ: 7 bài giảng ↔ chương giáo trình tham khảo</h1><p>Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.</p></div>
+<div class="hero"><h1>Bảng ánh xạ: 8 bài giảng ↔ chương giáo trình tham khảo</h1><p>Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.</p></div>
 <table class="chapmap">
 <thead><tr><th>Module</th><th>Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)</th><th>Floyd: Digital Fundamentals (11th ed.)</th><th>Ghi chú đối chiếu</th></tr></thead>
 <tbody><tr><td><b>01: Number Systems</b></td>
@@ -43,11 +43,13 @@
 <tr><td><b>06: Electronic Displays</b></td>
 <td>Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15</td><td>Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd KHÔNG có nội dung về EFIS/ECAM/ACARS hay CRT/LCD ngoài mức 7 đoạn: phần lớn module này dựa vào Tooley và bộ slide bài giảng.</td><td>Đây là module có bộ slide bài giảng riêng (36 slide infographic, đọc trực tiếp từng slide). Tooley khớp tốt (3 chương rải rác: Ch.1, Ch.11, Ch.15). Floyd chỉ khớp ở phần 7 đoạn (Ch.4, Ch.6), nên quiz Floyd của module này ít (7 câu) và bài tự luận chỉ có 4 bài lẻ của Applied Logic.</td></tr>
 <tr><td><b>07: Software Management Control</b></td>
-<td>Ch.13 Software (p.207-217): 13.1 classification, 13.2 certification, 13.3 upgrading (FLS, LSAP, UMS, OSS, DFLD, EEC loading with PDL), 13.4 data verification; 7 MCQs; plus Ch.15 MCQ on navigation database update</td><td>Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) và Ch.11 section 11-11 (kiểm tra ROM bằng checksum, Hình 11-74 và 11-75). Floyd KHÔNG có nội dung về DO-178, phân loại mức phần mềm hay nạp phần mềm máy bay: chỉ khớp ở khía cạnh kiểm tra lỗi dữ liệu.</td><td>Nguồn chính là tài liệu 6 trang EASA Part-66 Module 5.13 (13.1 đến 13.6, gồm Hình 13-1 và 6 câu hỏi có đáp án) cùng Tooley ch.13. Module có 2 demo tương tác (checksum và CRC, bộ chọn mức DAL).</td></tr></tbody>
+<td>Ch.13 Software (p.207-217): 13.1 classification, 13.2 certification, 13.3 upgrading (FLS, LSAP, UMS, OSS, DFLD, EEC loading with PDL), 13.4 data verification; 7 MCQs; plus Ch.15 MCQ on navigation database update</td><td>Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) và Ch.11 section 11-11 (kiểm tra ROM bằng checksum, Hình 11-74 và 11-75). Floyd KHÔNG có nội dung về DO-178, phân loại mức phần mềm hay nạp phần mềm máy bay: chỉ khớp ở khía cạnh kiểm tra lỗi dữ liệu.</td><td>Nguồn chính là tài liệu 6 trang EASA Part-66 Module 5.13 (13.1 đến 13.6, gồm Hình 13-1 và 6 câu hỏi có đáp án) cùng Tooley ch.13. Module có 2 demo tương tác (checksum và CRC, bộ chọn mức DAL).</td></tr>
+<tr><td><b>08: Fibre Optics</b></td>
+<td>Ch.10 Fibre optics (p.162-177): 10.1 advantages, 10.2 propagation (critical angle, numerical aperture, attenuation), 10.3 dispersion and bandwidth, 10.4 practical networks (ARINC 636, cable, connectors), 10.5 components; 20 MCQs (A.10, p.379-380)</td><td>Ch.13 Data Transmission, section 13-1 Data Transmission Media (p.740-745): optical fiber cable, modes (multimode, single-mode, 50/125, 62.5/125, 8.3/125), link block diagram, connectors; Section Checkup; Problems 5 and 7 (p.793; answers A-27). Floyd KHÔNG có góc tới hạn, khẩu độ số, suy hao hay tán sắc: phần lý thuyết sâu dựa vào bài giảng và Tooley.</td><td>Bộ bài giảng 37 slide có bốn bài tập tính toán (slide 20, 22, 27, 36); module giải lại và kiểm chứng, và chỉ slide 36 có đáp án in. Module có 2 demo tương tác (máy tính sợi quang, tia sáng Snell/TIR) và ghi lại 7 điểm không khớp tìm thấy trong tài liệu.</td></tr></tbody>
 </table>
 </div><footer class="site"><div class="wrap">
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="_shared/theme.js?v=87b2e929"></script>
+<script src="_shared/theme.js?v=798ab1f0"></script>
 </body></html>

@@ -115,3 +115,5 @@
 .di-in{width:100%;font-family:ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--line,#ccd);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}
 .di-btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.di-btns button,.dal-sel{padding:7px 12px;border-radius:8px;border:1px solid var(--line,#ccd);background:var(--code,#f6f7fb);color:inherit;cursor:pointer}
 .di-t .m{font-family:ui-monospace,Menlo,monospace}.di-vs.warn,.di-vc.warn{color:#b45309;font-weight:700}.di-vs.good,.di-vc.good{color:#15803d;font-weight:700}
+.fb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;margin:8px 0}.fb-grid label{font-size:.8rem;font-weight:700;display:flex;flex-direction:column;gap:3px}
+.fb-grid input[type=number]{padding:6px;border:1px solid var(--line,#ccd);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}.fb-cv{max-width:100%;border:1px solid var(--line,#ccd);border-radius:10px}
