@@ -589,3 +589,6 @@ MODULES.append(MOD07)
 
 from module_08 import MOD08
 MODULES.append(MOD08)
+
+from module_09 import MOD09
+MODULES.append(MOD09)

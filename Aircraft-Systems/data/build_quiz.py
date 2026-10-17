@@ -6,6 +6,7 @@ from floyd_quiz_source import FLOYD_MODULES
 from quiz_06 import MOD6_ORIG, MOD6_FLOYD, MOD6_GEN
 from quiz_07 import MOD7_ORIG, MOD7_GEN
 from quiz_08 import MOD8_ORIG, MOD8_GEN
+from quiz_09 import MOD9_ORIG, MOD9_GEN
 import copy
 
 # =====================================================================================
@@ -571,6 +572,7 @@ MODULES = {
   "06-electronic-displays": dict(tooley=copy.deepcopy(MOD6_ORIG), gen=copy.deepcopy(MOD6_GEN)),
   "07-software-control": dict(tooley=copy.deepcopy(MOD7_ORIG), gen=copy.deepcopy(MOD7_GEN)),
   "08-fibre-optics": dict(tooley=copy.deepcopy(MOD8_ORIG), gen=copy.deepcopy(MOD8_GEN)),
+  "09-emc": dict(tooley=copy.deepcopy(MOD9_ORIG), gen=copy.deepcopy(MOD9_GEN)),
 }
 
 TF_OPTS = {"vi": ["Đúng", "Sai"], "en": ["True", "False"]}

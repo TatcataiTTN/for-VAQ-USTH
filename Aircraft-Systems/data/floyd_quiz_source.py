@@ -339,4 +339,5 @@ FLOYD_MODULES = {
   "06-electronic-displays": dict(tf=[], st=[], custom=__import__("quiz_06").MOD6_FLOYD, chapter="Floyd Ch.4 (Applied Logic) + Ch.6 (7-segment)"),
   "07-software-control": dict(tf=[], st=[], custom=__import__("quiz_07").MOD7_FLOYD, chapter="Floyd Ch.2 (2-12 Error Codes) + Ch.11 (11-11)"),
   "08-fibre-optics": dict(tf=[], st=[], custom=__import__("quiz_08").MOD8_FLOYD, chapter="Floyd Ch.13 (13-1 Data Transmission Media)"),
+  "09-emc": dict(tf=[], st=[], custom=__import__("quiz_09").MOD9_FLOYD, chapter="Floyd Ch.13 (13-1), Ch.6 (6-11), Ch.15 (15-3)"),
 }

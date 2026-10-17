@@ -2,6 +2,13 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 18 — Module 09: Tương thích điện từ (EMC) trên máy bay 🟢 (2026-10-17)
+- [x] Nguồn: "Cours_EMC_Aircraft_ver2026.pdf" (46 slide, đọc từng slide, transcript ở `ocr/lectures/emc/transcript.md`), Tooley ch.14 (tr.218-237; 9 MCQ, khoá đọc từ ảnh A.14 tr.381), Floyd ch.13 mục 13-1 (cross talk), ch.6 mục 6-11 (tụ tách), ch.15 mục 15-3 (noise margin). Floyd không có chương EMC.
+- [x] 31 slide nội dung x 2 ngôn ngữ (5 phần), 3 demo (`_shared/demo_emc.js`: máy tính dB/dBm và chuỗi khuếch đại, tổng hợp Fourier sóng vuông, tụ thực ESL/ESR và f_r), hàm thuần đã kiểm bằng Node.
+- [x] Quiz 26 câu x 2 ngôn ngữ (9 Tooley, 5 Floyd, 12 tự sinh); tự luận 2 bài lẻ Floyd có đáp án in (Ch.13 Bài 3, Ch.15 Bài 3) kèm ảnh đáp án thật; notebook `09_emc.ipynb` chạy thật, mọi assert đạt.
+- [x] **Lỗi/không khớp**: slide 21 bài 2 ghi 10 kW trong khi phép tính ra 100 kW; ngưỡng điện trở liên kết khác nhau (slide 43: 0,001 đến 0,003 Ω; slide 45: dưới 2,5 mΩ và thiết bị đo trong hình hiện 3 mΩ nên tự không đạt; Tooley Q6 dưới 0,005 Ω); Tooley hình 14.14 "26 dB hay 50 lần" (thực tế khoảng 20 lần biên độ, 400 lần công suất); chuỗi V/n của sóng vuông phải hiểu V là biên độ hài cơ bản; slide 1 sai chính tả, slide 16 lặp slide 15, slide 2 trống. Đã kiểm lại hình 14.9 của Tooley (-90 dBm khớp văn bản, OCR từng đọc nhầm).
+- Floyd Ch.13 và Ch.15 Bài 3 là bài lẻ duy nhất có liên quan; Tooley TYU không có đáp án in nên không trình bày như bài có đáp án thật.
+
 ## Epic 17 — Module 08: Cáp quang trên máy bay 🟢 (2026-10-17)
 - [x] **Nguồn**: "Optic_Fiber_ver 2026.pdf" (37 slide infographic, đọc từng slide bằng mắt, ảnh trang ở `ocr/lectures/optic_fiber/`), Tooley ch.10 (tr.162-177; 20 MCQ, khoá đọc từ ảnh scan A.10 tr.379-380) và Floyd ch.13 mục 13-1 (tr.740-745, bài 5 và 7 tr.793, đáp án A-27 cắt từ ảnh).
 - [x] 30 slide nội dung x 2 ngôn ngữ (5 phần), 2 demo tương tác (`_shared/demo_fibre.js`: máy tính sợi quang θc/NA/θa/V/N/L_max; mô phỏng Snell và phản xạ toàn phần), hàm thuần đã kiểm bằng Node.

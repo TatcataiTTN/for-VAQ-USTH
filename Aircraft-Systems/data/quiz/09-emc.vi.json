@@ -1,0 +1,294 @@
+{
+ "tooley": [
+  {
+   "q": "Nhiễu không tuần hoàn (aperiodic) là:",
+   "opts": [
+    "đều đặn nhưng không liên tục",
+    "đều đặn và liên tục",
+    "hoàn toàn ngẫu nhiên"
+   ],
+   "correct": 0,
+   "explain": "Tooley 14.4.2: tuần hoàn là lặp liên tục; không tuần hoàn là dự đoán được nhưng không liên tục; ngẫu nhiên là hoàn toàn không dự đoán được.",
+   "src": "Tooley Ch.14 Q1"
+  },
+  {
+   "q": "EMI có thể truyền từ nguồn đến máy thu bằng:",
+   "opts": [
+    "chỉ bức xạ",
+    "cả dẫn điện và bức xạ",
+    "chỉ dẫn điện"
+   ],
+   "correct": 1,
+   "explain": "Năng lượng có thể được dẫn qua dây và kết cấu kim loại, hoặc bức xạ qua không khí, nhựa, sợi thuỷ tinh (Tooley 14.4.1).",
+   "src": "Tooley Ch.14 Q2"
+  },
+  {
+   "q": "Màn hình của máy phân tích phổ hiển thị:",
+   "opts": [
+    "biên độ theo thời gian",
+    "biên độ theo tần số",
+    "tần số theo thời gian"
+   ],
+   "correct": 1,
+   "explain": "Máy phân tích phổ vẽ mức tín hiệu (biên độ) theo tần số; biên độ theo thời gian là dao động ký.",
+   "src": "Tooley Ch.14 Q3"
+  },
+  {
+   "q": "EMI có thể được giảm bằng:",
+   "opts": [
+    "chỉ che chắn",
+    "che chắn và lọc",
+    "che chắn, liên kết và lọc"
+   ],
+   "correct": 2,
+   "explain": "Cả ba nhóm biện pháp (che chắn, liên kết/nối đất, lọc) đều giảm EMI (Tooley 14.4.3, 14.6).",
+   "src": "Tooley Ch.14 Q4"
+  },
+  {
+   "q": "Ảnh hưởng của HIRF có thể được giảm bằng:",
+   "opts": [
+    "che chắn, liên kết và lọc",
+    "chỉ che chắn",
+    "che chắn và lọc"
+   ],
+   "correct": 0,
+   "explain": "Tooley 14.6: nối đất và liên kết giúp giảm tác động của trường RF cường độ cao (HIRF) cùng với che chắn và lọc.",
+   "src": "Tooley Ch.14 Q5"
+  },
+  {
+   "q": "Giá trị tối đa điển hình của điện trở liên kết là:",
+   "opts": [
+    "từ 0,005 Ω đến 0,05 Ω",
+    "trên 0,05 Ω",
+    "dưới 0,005 Ω"
+   ],
+   "correct": 2,
+   "explain": "Điện trở liên kết phải rất thấp (Tooley 14.6 ghi dưới 0,001 đến 0,003 Ω; slide bài giảng ghi 0,001 đến 0,003 Ω); phương án (a) là phương án phù hợp.",
+   "src": "Tooley Ch.14 Q6"
+  },
+  {
+   "q": "Bảo vệ hiệu quả máy bay khỏi hư hại do sét và phóng tĩnh điện đòi hỏi:",
+   "opts": [
+    "mọi cáp nguồn và bus phải được cách điện tốt",
+    "mọi phần dẫn điện bị cô lập có điện trở cao với đất",
+    "mọi phần của kết cấu kim loại phải được liên kết với đất"
+   ],
+   "correct": 2,
+   "explain": "Phải có đường trở kháng thấp cho dòng sét và tĩnh điện: liên kết toàn bộ kết cấu kim loại, không để vật dẫn bị cô lập.",
+   "src": "Tooley Ch.14 Q7"
+  },
+  {
+   "q": "Nhiễu theo nguồn (supply-borne noise) có thể được loại bỏ bằng:",
+   "opts": [
+    "bộ lọc thông dải",
+    "bộ lọc thông thấp",
+    "bộ lọc thông cao"
+   ],
+   "correct": 1,
+   "explain": "Nguồn là DC hoặc 400 Hz nên bộ lọc thông thấp giữ nguồn và chặn nhiễu tần cao.",
+   "src": "Tooley Ch.14 Q8"
+  },
+  {
+   "q": "Nhiễu do mạch đóng cắt sinh ra nặng hơn khi:",
+   "opts": [
+    "đóng cắt chậm và dòng lớn",
+    "đóng cắt nhanh và dòng lớn",
+    "đóng cắt nhanh và dòng nhỏ"
+   ],
+   "correct": 1,
+   "explain": "Năng lượng điện từ phát ra lớn hơn khi mức tín hiệu thay đổi nhiều và nhanh (Tooley 14.4.2).",
+   "src": "Tooley Ch.14 Q9"
+  }
+ ],
+ "floyd": [
+  {
+   "q": "Theo Floyd, crosstalk được giảm thiểu bằng cách nào?",
+   "opts": [
+    "Dùng cáp xoắn đôi để các trường điện từ triệt tiêu",
+    "Chỉ dùng dây dẫn trần để giảm điện dung",
+    "Chỉ dùng cáp có vỏ cách điện rất dày"
+   ],
+   "correct": 0,
+   "explain": "Hai dây trong mỗi cặp xoắn sao cho cắt nhau gần 90° và triệt tiêu các trường điện từ do tín hiệu sinh ra.",
+   "src": "Floyd Ch.13 · mục 13-1, Hình 13-4 (tr.741; Section Checkup)"
+  },
+  {
+   "q": "Loại cáp nào của Floyd bảo vệ tốt hơn trước EMI nhờ vỏ kim loại?",
+   "opts": [
+    "Cáp điện thoại thông thường",
+    "STP (xoắn đôi có bọc)",
+    "UTP (xoắn đôi không bọc)"
+   ],
+   "correct": 1,
+   "explain": "Floyd: STP bọc trong ống kim loại và bảo vệ tốt hơn trước EMI; UTP chỉ dùng ở môi trường ít nhiễu và tần số thấp hơn.",
+   "src": "Floyd Ch.13 · mục 13-1 (tr.741)"
+  },
+  {
+   "q": "Gai dòng và áp trên VCC và đất trong mạch số được hấp thụ bằng cách nào?",
+   "opts": [
+    "Tăng điện trở nguồn",
+    "Tụ tách (decoupling) nối VCC xuống đất",
+    "Rút ngắn xung nhịp"
+   ],
+   "correct": 1,
+   "explain": "Floyd: dùng tụ khoảng 1 µF cho cả bo mạch và các tụ nhỏ 0,022 đến 0,1 µF rải rác gần thiết bị chuyển mạch nhanh.",
+   "src": "Floyd Ch.6 · mục 6-11 (tr.364)"
+  },
+  {
+   "q": "Noise margin mức CAO V_NH của cổng logic được định nghĩa là:",
+   "opts": [
+    "V_OH(min) − V_OL(max)",
+    "V_IL(max) − V_OL(max)",
+    "V_OH(min) − V_IH(min)"
+   ],
+   "correct": 2,
+   "explain": "Phương trình 15-1; V_NL = V_IL(max) − V_OL(max) là phương trình 15-2.",
+   "src": "Floyd Ch.15 · mục 15-3 (tr.859)"
+  },
+  {
+   "q": "Cổng TTL có VIH(min) = 2,25 V và VIL(max) = 0,65 V, được lái bởi cổng có VOH(min) = 2,4 V và VOL(max) = 0,4 V. Noise margin mức CAO và THẤP là:",
+   "opts": [
+    "0,15 V và 0,25 V",
+    "2,4 V và 0,4 V",
+    "0,35 V và 0,15 V"
+   ],
+   "correct": 0,
+   "explain": "V_NH = 2,4 − 2,25 = 0,15 V; V_NL = 0,65 − 0,4 = 0,25 V (khớp đáp án in).",
+   "src": "Floyd Ch.15 · Bài 3 (tr.887; đáp án A-28)"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Công suất 0,5 W bằng bao nhiêu dBm?",
+   "opts": [
+    "27 dBm vì 10 log 500 gần bằng 27",
+    "30 dBm vì 0,5 W gần bằng 1 W",
+    "−3 dBm vì 0,5 là một nửa"
+   ],
+   "correct": 0,
+   "explain": "10 log(0,5 W / 1 mW) = 10 log 500 = 26,99 ≈ 27 dBm (slide 19).",
+   "src": ""
+  },
+  {
+   "q": "Cáp có tổn hao −2 dB, điện áp vào 1 V. Điện áp ra xấp xỉ:",
+   "opts": [
+    "0,5 V",
+    "0,794 V",
+    "0,631 V"
+   ],
+   "correct": 1,
+   "explain": "V_out = 10^(−2/20) × 1 V = 0,794 V (0,631 là kết quả nếu nhầm dùng hệ số 10).",
+   "src": ""
+  },
+  {
+   "q": "Bộ khuếch đại +40 dB, công suất vào 10 W. Công suất ra là:",
+   "opts": [
+    "400 W (10 W nhân 40)",
+    "100 kW (10 × 10⁴ W)",
+    "10 kW như in trên slide"
+   ],
+   "correct": 1,
+   "explain": "10 W × 10^(40/10) = 10 × 10⁴ = 100 000 W. Slide 21 in nhầm là 10 kW.",
+   "src": ""
+  },
+  {
+   "q": "Mức vào −20 dBm qua bộ khuếch đại +30 dB. Mức ra là:",
+   "opts": [
+    "−50 dBm",
+    "30 dBm",
+    "10 dBm"
+   ],
+   "correct": 2,
+   "explain": "−20 + 30 = 10 dBm = 10 mW.",
+   "src": ""
+  },
+  {
+   "q": "Điện áp tăng gấp 10 lần tương ứng bao nhiêu dB?",
+   "opts": [
+    "+20 dB",
+    "+10 dB",
+    "+100 dB"
+   ],
+   "correct": 0,
+   "explain": "20 log 10 = 20 dB (công suất tăng 10 lần mới là 10 dB).",
+   "src": ""
+  },
+  {
+   "q": "Sóng vuông biên độ 50 V (theo dạng V/n), tần số 2 kHz. Hài bậc 5 có biên độ và tần số:",
+   "opts": [
+    "10 V và 5 kHz",
+    "250 V và 10 kHz",
+    "10 V và 10 kHz"
+   ],
+   "correct": 2,
+   "explain": "50/5 = 10 V; 5 × 2 kHz = 10 kHz (Tooley TYU 14.1).",
+   "src": ""
+  },
+  {
+   "q": "Tụ 100 nF có ESL 10 nH thì tần số cộng hưởng xấp xỉ:",
+   "opts": [
+    "500 MHz",
+    "50 kHz",
+    "5,0 MHz"
+   ],
+   "correct": 2,
+   "explain": "f_r = 1/(2π√(10⁻⁷ × 10⁻⁸)) = 5,03 MHz.",
+   "src": ""
+  },
+  {
+   "q": "Trên tần số cộng hưởng, tụ thực hoạt động như:",
+   "opts": [
+    "Chuẩn chất lượng cho phần mềm điều khiển bay",
+    "Quy trình thử do RTCA ban hành, không phải yêu cầu",
+    "Quy định bắt buộc của chính phủ về EMC cho máy bay"
+   ],
+   "correct": 1,
+   "explain": "Trên f_r thành phần ESL chiếm ưu thế, Z tăng theo tần số (slide 36).",
+   "src": ""
+  },
+  {
+   "q": "DO-160 là gì?",
+   "opts": [
+    "Chuẩn chất lượng phần mềm",
+    "Quy trình thử do RTCA ban hành, không phải một yêu cầu",
+    "Quy định bắt buộc của chính phủ về EMC"
+   ],
+   "correct": 1,
+   "explain": "Slide 27: DO-160 là quy trình thử; DO-178 mới là phần mềm.",
+   "src": ""
+  },
+  {
+   "q": "Giới hạn phát xạ bức xạ CISPR 11 Group 1 Class A trên 230 MHz (ở 30 m) là:",
+   "opts": [
+    "Cấm dùng thiết bị Wi-Fi khi động cơ chạy cho mục đích bay",
+    "Lắp thêm lõi ferrite cho tất cả màn hình buồng lái",
+    "Tắt toàn bộ màn hình khi bật hệ thống Wi-Fi"
+   ],
+   "correct": 0,
+   "explain": "Slide 26: 30 dBµV/m từ 30 đến 230 MHz, 37 dBµV/m trên 230 MHz.",
+   "src": ""
+  },
+  {
+   "q": "Wi-Fi gây nhiễu màn hình trên Boeing 757. Biện pháp được nêu trên biển trong buồng lái là:",
+   "opts": [
+    "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu nhau",
+    "Ferrite chỉ chặn các tần số rất thấp nên bỏ qua tín hiệu",
+    "Ferrite không có tính chất từ nên không tác động lên gì"
+   ],
+   "correct": 0,
+   "explain": "Slide 3: biển cảnh báo cấm dùng Wi-Fi ở buồng lái khi động cơ chạy.",
+   "src": ""
+  },
+  {
+   "q": "Tại sao lõi ferrite không ảnh hưởng tín hiệu vi sai mong muốn?",
+   "opts": [
+    "Ferrite không có từ tính",
+    "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu",
+    "Ferrite chỉ chặn tần số thấp"
+   ],
+   "correct": 1,
+   "explain": "Slide 32: chế độ vi sai từ thông triệt tiêu, trở kháng thấp; chế độ chung từ thông cộng, trở kháng cao.",
+   "src": ""
+  }
+ ]
+}

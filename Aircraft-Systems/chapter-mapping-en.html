@@ -7,7 +7,7 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="_shared/common.css?v=798ab1f0"/>
+<link rel="stylesheet" href="_shared/common.css?v=53065ad1"/>
 
 <title>Aircraft Digital Electronics & Computer Systems: Chapter mapping</title>
 <meta name="description" content="The table below directly cross-references the tables of contents of AE2.021's two reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd table of contents and content of both books, not guesswork."/>
@@ -27,7 +27,7 @@
 </div></header>
 <div class="wrap">
 <p><a href="en/index.html">← Home</a></p>
-<div class="hero"><h1>Chapter mapping: 8 lectures ↔ reference textbook chapters</h1><p>The table below directly cross-references the tables of contents of AE2.021's two reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd table of contents and content of both books, not guesswork.</p></div>
+<div class="hero"><h1>Chapter mapping: 9 lectures ↔ reference textbook chapters</h1><p>The table below directly cross-references the tables of contents of AE2.021's two reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd table of contents and content of both books, not guesswork.</p></div>
 <table class="chapmap">
 <thead><tr><th>Module</th><th>Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)</th><th>Floyd: Digital Fundamentals (11th ed.)</th><th>Cross-reference note</th></tr></thead>
 <tbody><tr><td><b>01: Number Systems</b></td>
@@ -45,11 +45,13 @@
 <tr><td><b>07: Software Management Control</b></td>
 <td>Ch.13 Software (p.207-217): 13.1 classification, 13.2 certification, 13.3 upgrading (FLS, LSAP, UMS, OSS, DFLD, EEC loading with PDL), 13.4 data verification; 7 MCQs; plus Ch.15 MCQ on navigation database update</td><td>Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) and Ch.11 section 11-11 (ROM checksum test, Figures 11-74 and 11-75). Floyd has NO content on DO-178, software levels or loading aircraft software: it matches only on the data error checking aspect.</td><td>The main source is the 6-page EASA Part-66 Module 5.13 document (13.1 to 13.6, with Figure 13-1 and 6 questions with answers) plus Tooley ch.13. The module has 2 interactive demos (checksum versus CRC, a DAL level explorer).</td></tr>
 <tr><td><b>08: Fibre Optics</b></td>
-<td>Ch.10 Fibre optics (p.162-177): 10.1 advantages, 10.2 propagation (critical angle, numerical aperture, attenuation), 10.3 dispersion and bandwidth, 10.4 practical networks (ARINC 636, cable, connectors), 10.5 components; 20 MCQs (A.10, p.379-380)</td><td>Ch.13 Data Transmission, section 13-1 Data Transmission Media (p.740-745): optical fiber cable, modes (multimode, single-mode, 50/125, 62.5/125, 8.3/125), link block diagram, connectors; Section Checkup; Problems 5 and 7 (p.793; answers A-27). Floyd has NO critical angle, numerical aperture, attenuation or dispersion: the deeper theory relies on the lecture and Tooley.</td><td>The 37-slide lecture has four calculation exercises (slides 20, 22, 27, 36); the module solves and verifies them, and only slide 36 has a printed answer. The module has 2 interactive demos (fibre calculator, Snell/TIR ray) and records the 7 mismatches found in the material.</td></tr></tbody>
+<td>Ch.10 Fibre optics (p.162-177): 10.1 advantages, 10.2 propagation (critical angle, numerical aperture, attenuation), 10.3 dispersion and bandwidth, 10.4 practical networks (ARINC 636, cable, connectors), 10.5 components; 20 MCQs (A.10, p.379-380)</td><td>Ch.13 Data Transmission, section 13-1 Data Transmission Media (p.740-745): optical fiber cable, modes (multimode, single-mode, 50/125, 62.5/125, 8.3/125), link block diagram, connectors; Section Checkup; Problems 5 and 7 (p.793; answers A-27). Floyd has NO critical angle, numerical aperture, attenuation or dispersion: the deeper theory relies on the lecture and Tooley.</td><td>The 37-slide lecture has four calculation exercises (slides 20, 22, 27, 36); the module solves and verifies them, and only slide 36 has a printed answer. The module has 2 interactive demos (fibre calculator, Snell/TIR ray) and records the 7 mismatches found in the material.</td></tr>
+<tr><td><b>09: EMC</b></td>
+<td>Ch.14 EMC (p.218-237): 14.1 harmonics and pulse spectrum, 14.2 EMC and avionic equipment, 14.3 spectrum analysis (noise floor, Table 14.1 bands), 14.4 effects, sources and reduction of EMI, 14.5 wiring, 14.6 grounding and bonding; 9 MCQs (A.14, p.381)</td><td>Floyd has NO EMC chapter. Only partial matches: Ch.13 section 13-1 (cross talk, UTP/STP twisted pairs against EMI, p.741), Ch.6 section 6-11 (VCC-to-ground decoupling, p.364), Ch.15 section 15-3 (noise margin, p.859; Problem 3 p.887). Most of the module relies on Tooley and the lecture.</td><td>The 46-slide lecture (each slide read) has 3 dB exercise sets (slides 17, 19, 21); all were re-solved and the 10 kW versus 100 kW error on slide 21 was caught. The module has 3 interactive demos (dB and dBm, square-wave Fourier, a real capacitor) and records the mismatches found in the material.</td></tr></tbody>
 </table>
 </div><footer class="site"><div class="wrap">
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="_shared/theme.js?v=798ab1f0"></script>
+<script src="_shared/theme.js?v=53065ad1"></script>
 </body></html>

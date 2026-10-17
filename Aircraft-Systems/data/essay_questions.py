@@ -1347,5 +1347,39 @@ ESSAY = {
         "src_en": "Tooley ch.10 · Test Your Understanding 10.2 (and lecture slide 32)"
       }
     ]
+  },
+  "09-emc": {
+    "src_book": "Floyd Digital Fundamentals 11th ed.: Ch.13 Bài 3 (tr.793, đáp án A-27) và Ch.15 Bài 3 (tr.887, đáp án in ở A-28). Tooley ch.14 chỉ có Test Your Understanding không in đáp án nên không đưa lên như bài có đáp án thật; các bài đó được giải trong slide và notebook.",
+    "src_book_en": "Floyd Digital Fundamentals 11th ed.: Ch.13 Problem 3 (p.793, answer A-27) and Ch.15 Problem 3 (p.887, answer printed on A-28). Tooley ch.14 has only Test Your Understanding without printed answers, so they are not presented as problems with real answers; they are solved in the slides and notebook.",
+    "note_vi": "Floyd không có bài tập EMC; hai bài lẻ gần nhất (crosstalk và noise margin) có đáp án in và đều được đưa lên với ảnh đáp án thật. Bài tập dB của bài giảng (slide 17, 19, 21) được giải trong slide và notebook.",
+    "note_en": "Floyd has no EMC exercises; the two nearest odd problems (crosstalk and noise margin) have printed answers and are included with the real answer images. The lecture's dB exercises (slides 17, 19, 21) are solved in the slides and notebook.",
+    "items": [
+      {
+        "num": "13-3",
+        "q_vi": "Crosstalk là gì? Làm thế nào để giảm thiểu nó?",
+        "q_en": "What is crosstalk? How can it be minimized?",
+        "src": "Floyd Ch.13 · Bài 3",
+        "src_en": "Floyd Ch.13 · Problem 3",
+        "img": "essay_floyd_ch13_q03.png",
+        "qimgs": [
+          "essay_floyd_ch13_qq03.png"
+        ],
+        "note_vi": "Khớp Floyd 13-1 (tr.741) và Section Checkup: cặp dây xoắn cắt nhau gần 90° làm các trường điện từ triệt tiêu. Đây cũng là biện pháp xoắn dây của module (slide 29, 38).",
+        "note_en": "Matches Floyd 13-1 (p.741) and the Section Checkup: the twisted wires cross at nearly 90° so the electromagnetic fields cancel. This is also the module's twisting measure (slides 29, 38)."
+      },
+      {
+        "num": "15-3",
+        "q_vi": "Cổng TTL có VIH(min) = 2,25 V và VIL(max) = 0,65 V, được lái bởi cổng có VOH(min) = 2,4 V và VOL(max) = 0,4 V. Noise margin mức CAO và THẤP là bao nhiêu?",
+        "q_en": "A TTL gate has the following actual voltage level values: VIH(min) = 2.25 V, VIL(max) = 0.65 V. Assuming it is being driven by a gate with VOH(min) = 2.4 V and VOL(max) = 0.4 V, what are the HIGH- and LOW-level noise margins?",
+        "src": "Floyd Ch.15 · Bài 3",
+        "src_en": "Floyd Ch.15 · Problem 3",
+        "img": "essay_floyd_ch15_q03.png",
+        "qimgs": [
+          "essay_floyd_ch15_qq03.png"
+        ],
+        "note_vi": "Tự tính theo phương trình 15-1 và 15-2: V_NH = 2,4 − 2,25 = 0,15 V; V_NL = 0,65 − 0,4 = 0,25 V, khớp đáp án in (A-28).",
+        "note_en": "Own calculation by Equations 15-1 and 15-2: V_NH = 2.4 − 2.25 = 0.15 V; V_NL = 0.65 − 0.4 = 0.25 V, matching the printed answer (A-28)."
+      }
+    ]
   }
 }

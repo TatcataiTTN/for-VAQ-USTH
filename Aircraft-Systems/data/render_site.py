@@ -35,10 +35,10 @@ L = {
     "site_title": "Hệ thống điện tử số & máy tính hàng không",
     "site_sub": "Tự học AE2.021 · USTH",
     "home_hero_title": "Tự học môn AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "8 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
+    "home_hero_sub": "9 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
                       "(Mike Tooley & Thomas Floyd), có quiz tự chấm và notebook Python đi kèm.",
     "open": "Mở bài giảng →", "soon": "Sắp có",
-    "mapping_link": "📚 Bảng ánh xạ 8 bài giảng ↔ chương sách giáo trình",
+    "mapping_link": "📚 Bảng ánh xạ 9 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
               "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
     "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
@@ -51,7 +51,7 @@ L = {
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
-    "mapping_title": "Bảng ánh xạ: 8 bài giảng ↔ chương giáo trình tham khảo",
+    "mapping_title": "Bảng ánh xạ: 9 bài giảng ↔ chương giáo trình tham khảo",
     "mapping_intro": "Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide "
                       "giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
   },
@@ -59,10 +59,10 @@ L = {
     "site_title": "Aircraft Digital Electronics & Computer Systems",
     "site_sub": "Self-study AE2.021 · USTH",
     "home_hero_title": "Self-study AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "8 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
+    "home_hero_sub": "9 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
                       "(Mike Tooley & Thomas Floyd), with a self-graded quiz and companion Python notebook.",
     "open": "Open lesson →", "soon": "Coming soon",
-    "mapping_link": "📚 Chapter mapping: 8 lectures ↔ textbook chapters",
+    "mapping_link": "📚 Chapter mapping: 9 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
               "Tooley, independently recomputed to verify each answer: see the source note on each question.",
     "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
@@ -75,7 +75,7 @@ L = {
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
-    "mapping_title": "Chapter mapping: 8 lectures ↔ reference textbook chapters",
+    "mapping_title": "Chapter mapping: 9 lectures ↔ reference textbook chapters",
     "mapping_intro": "The table below directly cross-references the tables of contents of AE2.021's two "
                       "reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd "
                       "table of contents and content of both books, not guesswork.",
@@ -173,7 +173,16 @@ MAPPING_ROWS = [
     "note_vi": "Bộ bài giảng 37 slide có bốn bài tập tính toán (slide 20, 22, 27, 36); module giải lại và kiểm chứng, và chỉ slide 36 có đáp án in. Module có 2 demo tương tác (máy tính sợi quang, tia sáng Snell/TIR) và ghi lại 7 điểm không khớp tìm thấy trong tài liệu.",
     "note_en": "The 37-slide lecture has four calculation exercises (slides 20, 22, 27, 36); the module solves and verifies them, and only slide 36 has a printed answer. The module has 2 interactive demos (fibre calculator, Snell/TIR ray) and records the 7 mismatches found in the material.",
   },
+  {
+    "module": "09: EMC",
+    "tooley": "Ch.14 EMC (p.218-237): 14.1 harmonics and pulse spectrum, 14.2 EMC and avionic equipment, 14.3 spectrum analysis (noise floor, Table 14.1 bands), 14.4 effects, sources and reduction of EMI, 14.5 wiring, 14.6 grounding and bonding; 9 MCQs (A.14, p.381)",
+    "floyd": "Floyd KHÔNG có chương EMC. Chỉ khớp một phần: Ch.13 mục 13-1 (cross talk, cáp xoắn đôi UTP/STP chống EMI, tr.741), Ch.6 mục 6-11 (tụ tách VCC-đất, tr.364), Ch.15 mục 15-3 (noise margin, tr.859; Bài 3 tr.887). Phần lớn module dựa vào Tooley và bài giảng.",
+    "floyd_en": "Floyd has NO EMC chapter. Only partial matches: Ch.13 section 13-1 (cross talk, UTP/STP twisted pairs against EMI, p.741), Ch.6 section 6-11 (VCC-to-ground decoupling, p.364), Ch.15 section 15-3 (noise margin, p.859; Problem 3 p.887). Most of the module relies on Tooley and the lecture.",
+    "note_vi": "Bài giảng 46 slide (đọc từng slide) có 3 nhóm bài tập dB (slide 17, 19, 21), đã giải lại và phát hiện lỗi 10 kW so với 100 kW ở slide 21. Module có 3 demo tương tác (dB và dBm, Fourier sóng vuông, tụ thực) và ghi lại các điểm không khớp trong tài liệu.",
+    "note_en": "The 46-slide lecture (each slide read) has 3 dB exercise sets (slides 17, 19, 21); all were re-solved and the 10 kW versus 100 kW error on slide 21 was caught. The module has 3 interactive demos (dB and dBm, square-wave Fourier, a real capacitor) and records the mismatches found in the material.",
+  },
 ]
+
 
 
 
