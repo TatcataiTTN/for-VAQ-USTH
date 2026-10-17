@@ -7,7 +7,7 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="_shared/common.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="_shared/common.css?v=87b2e929"/>
 
 <title>Aircraft Digital Electronics & Computer Systems: Chapter mapping</title>
 <meta name="description" content="The table below directly cross-references the tables of contents of AE2.021's two reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd table of contents and content of both books, not guesswork."/>
@@ -27,7 +27,7 @@
 </div></header>
 <div class="wrap">
 <p><a href="en/index.html">← Home</a></p>
-<div class="hero"><h1>Chapter mapping: 6 lectures ↔ reference textbook chapters</h1><p>The table below directly cross-references the tables of contents of AE2.021's two reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd table of contents and content of both books, not guesswork.</p></div>
+<div class="hero"><h1>Chapter mapping: 7 lectures ↔ reference textbook chapters</h1><p>The table below directly cross-references the tables of contents of AE2.021's two reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd table of contents and content of both books, not guesswork.</p></div>
 <table class="chapmap">
 <thead><tr><th>Module</th><th>Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)</th><th>Floyd: Digital Fundamentals (11th ed.)</th><th>Cross-reference note</th></tr></thead>
 <tbody><tr><td><b>01: Number Systems</b></td>
@@ -41,11 +41,13 @@
 <tr><td><b>05: Data Buses</b></td>
 <td>Ch.4 Data buses (p.53-69): bus rationale, ARINC 429 (electrical/word format/BCD-BNR), other standards (ARINC 629/AFDX/MIL-STD-1553/legacy buses), 17-question MCQ bank</td><td>Floyd has NO chapter on aircraft data buses whatsoever: it is a pure digital-electronics textbook (logic gates, memory) with no coverage of avionics-specific serial communication. This module relies entirely on Tooley and the course's own lecture slides.</td><td>This module has the LOWEST match with Floyd of all 5 modules (even lower than Module 04): aircraft bus topics are entirely absent from Floyd, so this module's quiz has only 2 sources (Tooley + supplementary questions), with no separate Floyd quiz section.</td></tr>
 <tr><td><b>06: Electronic Displays</b></td>
-<td>Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15</td><td>Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd has NO content on EFIS/ECAM/ACARS or CRT/LCD technology beyond the 7-segment level: most of this module relies on Tooley and the lecture slides.</td><td>This module has its own lecture deck (36 infographic slides, each read directly). Tooley matches well (three scattered chapters: Ch.1, Ch.11, Ch.15). Floyd matches only at the 7-segment level (Ch.4, Ch.6), so this module's Floyd quiz is small (7 questions) and the essay section has only the 4 odd Applied Logic problems.</td></tr></tbody>
+<td>Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15</td><td>Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd has NO content on EFIS/ECAM/ACARS or CRT/LCD technology beyond the 7-segment level: most of this module relies on Tooley and the lecture slides.</td><td>This module has its own lecture deck (36 infographic slides, each read directly). Tooley matches well (three scattered chapters: Ch.1, Ch.11, Ch.15). Floyd matches only at the 7-segment level (Ch.4, Ch.6), so this module's Floyd quiz is small (7 questions) and the essay section has only the 4 odd Applied Logic problems.</td></tr>
+<tr><td><b>07: Software Management Control</b></td>
+<td>Ch.13 Software (p.207-217): 13.1 classification, 13.2 certification, 13.3 upgrading (FLS, LSAP, UMS, OSS, DFLD, EEC loading with PDL), 13.4 data verification; 7 MCQs; plus Ch.15 MCQ on navigation database update</td><td>Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) and Ch.11 section 11-11 (ROM checksum test, Figures 11-74 and 11-75). Floyd has NO content on DO-178, software levels or loading aircraft software: it matches only on the data error checking aspect.</td><td>The main source is the 6-page EASA Part-66 Module 5.13 document (13.1 to 13.6, with Figure 13-1 and 6 questions with answers) plus Tooley ch.13. The module has 2 interactive demos (checksum versus CRC, a DAL level explorer).</td></tr></tbody>
 </table>
 </div><footer class="site"><div class="wrap">
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="_shared/theme.js?v=5f9b5f63"></script>
+<script src="_shared/theme.js?v=87b2e929"></script>
 </body></html>

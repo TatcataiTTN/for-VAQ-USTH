@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Aircraft Digital Electronics & Computer Systems: Aircraft Data Buses</title>
 <meta name="description" content="A modern aircraft has hundreds of LRUs (Line Replaceable Units) that need to exchange data. Instead of wiring every device pair separately, avionics systems use a DATA BUS: one (or a few) shared transmission lines following a single communication standard. This module goes from why a bus is needed, through the most common standard (ARINC 429), to other standards (ARINC 629, AFDX/664, MIL-STD-1553) and real applications on the Airbus A320."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 05</span>
 <h1>Aircraft Data Buses</h1><p>Tooley ch.4 (p.53-69) · Lecture "Data Buses" (18 slides)</p></div>
 <div class="callout info">
-<h4>📚 Chapter mapping: 6 lectures ↔ textbook chapters</h4>
+<h4>📚 Chapter mapping: 7 lectures ↔ textbook chapters</h4>
 <p><b>Tooley:</b> Ch.4 Data buses (p.53-69): bus rationale, ARINC 429 (electrical/word format/BCD-BNR), other standards (ARINC 629/AFDX/MIL-STD-1553/legacy buses), 17-question MCQ bank</p>
 <p><b>Floyd:</b> Floyd has NO chapter on aircraft data buses whatsoever: it is a pure digital-electronics textbook (logic gates, memory) with no coverage of avionics-specific serial communication. This module relies entirely on Tooley and the course's own lecture slides.</p>
 <p>This module has the LOWEST match with Floyd of all 5 modules (even lower than Module 04): aircraft bus topics are entirely absent from Floyd, so this module's quiz has only 2 sources (Tooley + supplementary questions), with no separate Floyd quiz section.</p>
@@ -81,6 +81,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Fullscreen</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Theoretical & historical background</h4><p>ARINC (Aeronautical Radio, Inc.) is an organisation of major airlines and aircraft manufacturers whose goal is to standardise aircraft equipment so that LRUs from different manufacturers remain interoperable. ARINC 429's full technical name is the <i>Mark 33 Digital Information Transfer System (DITS)</i>, and per Tooley's own text it remains one of the most widely used bus standards on commercial aircraft (Airbus A310/A320/A330/A340; Boeing 737/747/757/767; McDonnell Douglas MD-11), even though newer aircraft such as the A380 and Boeing 777 have moved to faster, bidirectional standards (ARINC 629, AFDX).</p></div>
 <div class="callout case"><h4>🔎 Real case study: measuring IAS from the ADIRU to the PFD on the A320</h4><p>The ADIRU computes an indicated airspeed (IAS) of 250 kt, encodes it in BCD format, and packs it into a 32-bit word carrying the dedicated Label for IAS. The value 250 splits into three BCD digits: 2→0010, 5→0101, 0→0000, packed into the 19-bit Data field (independently checkable with the companion notebook). The complete 32-bit word (Label + SDI + Data + SSM + Parity) is sent continuously about every 100 ms over ARINC 429 BUS A to the PFD, where the decoder checks parity, reads the Label to identify IAS data, and updates the airspeed display to 250 kt. This is a complete worked example of the full cycle (encode → transmit → decode → display), following the same scenario as the lecture slide. (The slide's specific Label figure does not survive an independent hex/binary cross-check, see the warning box below, so that specific number is not repeated here.)</p></div>
 <div class="callout warn"><h4>⚠️ Common trap (and a real error found in the lecture material itself)</h4><p>Common trap: confusing ARINC 429's top speed of 100 kbps with the Mbps-range speeds of ARINC 629 (2 Mbps) or MIL-STD-1553 (1 Mbps): these are three different standards, tens of times apart in speed. More notably: one slide in this very course's lecture deck states that ARINC 429 uses "Manchester Biphase-L" encoding, but cross-checking against Tooley (the Electrical Characteristics section, and the BPRZ glossary entry) and two OTHER slides in that SAME lecture deck shows the CORRECT encoding for ARINC 429 is Bipolar Return to Zero (BPRZ), not Manchester (Manchester is used by ARINC 708/573, a DIFFERENT bus standard). This is a real example of why cross-checking multiple sources matters before memorising a technical fact.</p></div>
@@ -97,5 +98,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

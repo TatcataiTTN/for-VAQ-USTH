@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Aircraft Digital Electronics & Computer Systems: Computer Structure & Microprocessors (CPU)</title>
 <meta name="description" content="Every aircraft computer, from the cockpit clock to the AIDS data recorder, rests on three basic blocks: the CPU, memory (RAM/ROM), and the interconnecting bus system. This module covers computer structure, CPU operating principles, and the semiconductor memory types used in avionics."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 04</span>
 <h1>Computer Structure & Microprocessors (CPU)</h1><p>Tooley ch.6-7 (p.95-138) · Floyd ch.11 (semiconductor memory, p.627-696)</p></div>
 <div class="callout info">
-<h4>📚 Chapter mapping: 6 lectures ↔ textbook chapters</h4>
+<h4>📚 Chapter mapping: 7 lectures ↔ textbook chapters</h4>
 <p><b>Tooley:</b> Ch.6 Computers (p.95-115): computer systems, data storage, backplane bus + Ch.7 The CPU (p.116-138): internal architecture, x86/Pentium/AMD 29050</p>
 <p><b>Floyd:</b> Ch.11 Data Storage (p.627-696): RAM/ROM/Flash memory. Floyd has NO dedicated chapter on CPU/microprocessor architecture: this is the biggest difference between the two books for this module.</p>
 <p>This module has the WEAKEST match between the two books: Floyd is a pure digital-logic fundamentals text and does not cover computer/CPU architecture in depth like Tooley: the CPU content in this module relies mainly on Tooley.</p>
@@ -83,6 +83,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Fullscreen</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Theoretical & historical background</h4><p>The first commercial microprocessor, the Intel 4004 (1971), had only 2,300 transistors and processed 4-bit data. The CPU architecture with accumulator, general-purpose registers and ALU described in this chapter of Tooley directly reflects the Intel x86 family that grew from the 8086 (1978): an architecture many earlier-generation aircraft computers relied on, before moving to aviation-specific processors such as the AMD 29050 (used in Honeywell's ASIC).</p></div>
 <div class="callout case"><h4>🔎 Real case study: the Airbus cockpit clock computer</h4><p>The A320's electronic cockpit clock (Figure 6.11, Tooley) is a complete miniature computer: a crystal oscillator generates a precise UTC time base, a microprocessor processes the time data, ROM stores the control software, RAM holds working data, and a serial data encoder sends the time out on the ARINC 429 bus for other systems to use: a full illustration of the IPO model plus the three-bus architecture in a real application.</p></div>
 <div class="callout warn"><h4>⚠️ Common trap</h4><p>Confusing 'random access memory' (the technical meaning: every cell is accessed with equal ease) with RAM (read/write memory) in everyday usage. Technically, ROM is ALSO random-access memory (not sequential like magnetic tape), even though it cannot be written to.</p></div>
@@ -302,5 +303,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

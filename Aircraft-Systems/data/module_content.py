@@ -583,3 +583,6 @@ MODULES = [
 
 from module_06 import MOD06
 MODULES.append(MOD06)
+
+from module_07 import MOD07
+MODULES.append(MOD07)

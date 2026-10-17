@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Hệ thống điện tử số & máy tính hàng không: Màn hình điện tử và hệ thống thông tin buồng lái</title>
 <meta name="description" content="Màn hình là điểm cuối của mọi chuỗi dữ liệu trên máy bay: số đo từ cảm biến, ADIRU hay máy tính hệ thống cuối cùng phải đến mắt phi công qua một mặt kính. Module này đi từ lịch sử buồng lái và yêu cầu đối với hệ thống hiển thị, qua các công nghệ CRT, LED 7 đoạn và LCD (kèm các phép tính độ phân giải, quét raster và giải mã 7 đoạn), đến hệ thống EFIS/EIS (PFD, ND) và ECAM/EICAS trên Airbus A320, rồi kết thúc bằng bảo trì tập trung (CMC) và ACARS."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 06</span>
 <h1>Màn hình điện tử và hệ thống thông tin buồng lái</h1><p>Tooley ch.1, ch.11, ch.15 (mục 15.1 đến 15.3) · Floyd ch.4 (Applied Logic) và ch.6 (7 đoạn) · Bài giảng "Electronic displays" (36 slide)</p></div>
 <div class="callout info">
-<h4>📚 Bảng ánh xạ 6 bài giảng ↔ chương sách giáo trình</h4>
+<h4>📚 Bảng ánh xạ 7 bài giảng ↔ chương sách giáo trình</h4>
 <p><b>Tooley:</b> Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15</p>
 <p><b>Floyd:</b> Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd KHÔNG có nội dung về EFIS/ECAM/ACARS hay CRT/LCD ngoài mức 7 đoạn: phần lớn module này dựa vào Tooley và bộ slide bài giảng.</p>
 <p>Đây là module có bộ slide bài giảng riêng (36 slide infographic, đọc trực tiếp từng slide). Tooley khớp tốt (3 chương rải rác: Ch.1, Ch.11, Ch.15). Floyd chỉ khớp ở phần 7 đoạn (Ch.4, Ch.6), nên quiz Floyd của module này ít (7 câu) và bài tự luận chỉ có 4 bài lẻ của Applied Logic.</p>
@@ -90,6 +90,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Toàn màn hình</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Bối cảnh lý thuyết và lịch sử</h4><p>Theo sách Tooley, ngoài đồng hồ cơ, đèn sợi đốt và đồng hồ cuộn dây chuyển động, CRT là công nghệ hiển thị lâu đời nhất còn dùng trên máy bay; nó vẫn cho độ sáng rất cao và góc nhìn rộng. Tuy vậy xu hướng chung là thay bằng AMLCD (màn hình tinh thể lỏng ma trận chủ động), nhẹ hơn, ít tốn điện, nhỏ hơn và tin cậy hơn, đồng thời cho phép một thiết bị phức tạp nằm gọn trong một hộp duy nhất. Bài giảng của môn kể cùng câu chuyện qua mốc thời gian buồng lái: Wright Flyer 1903 không có đồng hồ nào; khoảng 10 đồng hồ vào 1918; khoảng 600 đồng hồ ở buồng lái "conventional" năm 1969; CRT vào những năm 1990; và màn hình LCD lớn, cảm ứng ở A350 và Boeing 787 ngày nay. Với Airbus, trình tự là A310 (1978, màn hình đa chức năng đầu tiên), A320 (1988, sáu màn hình CRT), A380 (2007, AMLCD và IMA) và A350 (2015, màn hình lớn có cảm ứng).</p></div>
 <div class="callout case"><h4>🔎 Case study: đường đi của một con số tốc độ từ ADIRU đến điểm ảnh trên PFD A320</h4><p>ADIRU đo và tính các tham số khí động, rồi phát lên bus ARINC 429 (Module 05). DMC (Display Management Computer) nhận dữ liệu, tính ký hiệu và hình ảnh cho PFD, ND và ECAM; FWC bổ sung cảnh báo, SDAC bổ sung dữ liệu hệ thống. Dữ liệu định dạng đi tới LCDU 725 qua bus tốc độ cao; trong LCDU, mô-đun tiền xử lý định dạng dữ liệu, mô-đun xử lý đồ hoạ vẽ ký hiệu và văn bản, mô-đun LCD (có mạch điều khiển) bật từng điểm ảnh còn mô-đun đèn nền chiếu sáng. Mỗi điểm ảnh gồm ba điểm con đỏ, lục, lam; nếu mỗi kênh màu có 256 mức thì một điểm ảnh biểu diễn được 256³ = 16 777 216 màu, khớp với "hơn 16 triệu màu" trong sách Tooley (mục 11.3.3, tự kiểm chứng trong notebook). Phi công đọc kết quả trên thước tốc độ của PFD: số trong ô xanh lá là tốc độ hiện tại, cờ vàng là tốc độ chọn.</p></div>
 <div class="callout warn"><h4>⚠️ Bẫy hay gặp (và các điểm cần đọc có phản biện trong bài giảng)</h4><p>Bẫy chung: nhầm N1 với N2. Slide E/WD của bài giảng ghi N2 là "tốc độ tuabin áp thấp" trong khi cùng slide ghi N1 là cụm áp thấp; Tooley (mục 1.1.6) ghi rõ N1 là tốc độ quạt, N2 là tốc độ tuabin áp cao, nên N2 phải là áp cao. Slide ACARS ghi SDAC là "System Data Analog Computer" nhưng slide sơ đồ EIS ghi "System Data Acquisition Concentrator" (tên đúng theo mô tả chức năng là thu thập dữ liệu). Slide ELEC của ECAM vẽ máy phát "420 V, 200 Hz" trong khi nguồn xoay chiều máy bay là 115 V, 400 Hz (Tooley nhắc nguồn 115 V AC 400 Hz). Slide PRESS ở FL140 ghi chênh áp 2,9 psi cùng độ cao cabin 2 870 ft; tính bằng khí quyển chuẩn ISA thì chênh áp phải khoảng 4,6 psi (xem notebook), nên đây chỉ là số minh hoạ, đừng học thuộc. Trên slide ND, "23 33" được dán nhãn là thời gian đến điểm bay (23 phút 33 giây), nhưng 37 NM ở tốc độ mặt đất 257 kt chỉ mất khoảng 8,6 phút; nhiều khả năng đó là giờ dự kiến đến (ETA) theo giờ UTC, chưa kiểm chứng với tài liệu hãng nên ghi là nghi vấn. Slide A310 ghi "EICAS" nhưng theo Tooley, tên của Airbus là ECAM. Cuối cùng, một lỗi in thật trong sách Tooley: khoá đáp án chương 11 ghi câu 4 là (a), nhưng mắt người nhạy nhất với ánh sáng lục (cực đại khoảng 550 nm, đúng như câu 2 và slide 6), nên đáp án đúng là (c); site dùng đáp án đúng và ghi chú rõ. Về Floyd: đáp án in của Bài 67, chương 4 (mạch ở Hình P-19) làm chữ A không sáng được đoạn a (kiểm tra bảng chân trị đầy đủ), nên không dùng làm đáp án chuẩn.</p></div>
@@ -149,5 +150,5 @@
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

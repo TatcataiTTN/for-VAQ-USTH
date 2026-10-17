@@ -7,7 +7,7 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="_shared/common.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="_shared/common.css?v=87b2e929"/>
 
 <title>Hệ thống điện tử số & máy tính hàng không: Ánh xạ chương sách</title>
 <meta name="description" content="Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán."/>
@@ -27,7 +27,7 @@
 </div></header>
 <div class="wrap">
 <p><a href="vi/index.html">← Trang chủ</a></p>
-<div class="hero"><h1>Bảng ánh xạ: 6 bài giảng ↔ chương giáo trình tham khảo</h1><p>Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.</p></div>
+<div class="hero"><h1>Bảng ánh xạ: 7 bài giảng ↔ chương giáo trình tham khảo</h1><p>Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.</p></div>
 <table class="chapmap">
 <thead><tr><th>Module</th><th>Tooley: Aircraft Digital Electronic and Computer Systems (3rd ed.)</th><th>Floyd: Digital Fundamentals (11th ed.)</th><th>Ghi chú đối chiếu</th></tr></thead>
 <tbody><tr><td><b>01: Number Systems</b></td>
@@ -41,11 +41,13 @@
 <tr><td><b>05: Data Buses</b></td>
 <td>Ch.4 Data buses (p.53-69): bus rationale, ARINC 429 (electrical/word format/BCD-BNR), other standards (ARINC 629/AFDX/MIL-STD-1553/legacy buses), 17-question MCQ bank</td><td>KHÔNG CÓ chương nào về bus dữ liệu hàng không trong Floyd: đây là giáo trình điện tử số thuần tuý (cổng logic, bộ nhớ), không đề cập avionics/giao tiếp nối tiếp chuyên dụng. Toàn bộ module này dựa vào Tooley và bộ slide bài giảng riêng của môn.</td><td>Module có độ khớp THẤP NHẤT với Floyd trong cả 5 module (thấp hơn cả Module 04): chủ đề bus hàng không hoàn toàn vắng mặt trong Floyd, nên quiz của module này chỉ có 2 nguồn (Tooley + câu bổ sung), không có mục quiz riêng từ Floyd.</td></tr>
 <tr><td><b>06: Electronic Displays</b></td>
-<td>Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15</td><td>Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd KHÔNG có nội dung về EFIS/ECAM/ACARS hay CRT/LCD ngoài mức 7 đoạn: phần lớn module này dựa vào Tooley và bộ slide bài giảng.</td><td>Đây là module có bộ slide bài giảng riêng (36 slide infographic, đọc trực tiếp từng slide). Tooley khớp tốt (3 chương rải rác: Ch.1, Ch.11, Ch.15). Floyd chỉ khớp ở phần 7 đoạn (Ch.4, Ch.6), nên quiz Floyd của module này ít (7 câu) và bài tự luận chỉ có 4 bài lẻ của Applied Logic.</td></tr></tbody>
+<td>Ch.1 Introduction (p.1-24): flight instruments, EFIS, ECAM/EICAS, cockpit layouts + Ch.11 Displays (p.178-196): CRT, LED/7-segment, LCD + Ch.15 Avionic systems, sections 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250); 53 MCQs from Ch.1, 11, 15</td><td>Ch.4 Applied Logic: Seven-Segment Display (p.244-249; problems 62-71, p.256) + Ch.6 section 6-5 decoder/driver 74HC47 and zero suppression (p.338-340) + section 6-8 7-segment multiplexing (p.353). Floyd KHÔNG có nội dung về EFIS/ECAM/ACARS hay CRT/LCD ngoài mức 7 đoạn: phần lớn module này dựa vào Tooley và bộ slide bài giảng.</td><td>Đây là module có bộ slide bài giảng riêng (36 slide infographic, đọc trực tiếp từng slide). Tooley khớp tốt (3 chương rải rác: Ch.1, Ch.11, Ch.15). Floyd chỉ khớp ở phần 7 đoạn (Ch.4, Ch.6), nên quiz Floyd của module này ít (7 câu) và bài tự luận chỉ có 4 bài lẻ của Applied Logic.</td></tr>
+<tr><td><b>07: Software Management Control</b></td>
+<td>Ch.13 Software (p.207-217): 13.1 classification, 13.2 certification, 13.3 upgrading (FLS, LSAP, UMS, OSS, DFLD, EEC loading with PDL), 13.4 data verification; 7 MCQs; plus Ch.15 MCQ on navigation database update</td><td>Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) và Ch.11 section 11-11 (kiểm tra ROM bằng checksum, Hình 11-74 và 11-75). Floyd KHÔNG có nội dung về DO-178, phân loại mức phần mềm hay nạp phần mềm máy bay: chỉ khớp ở khía cạnh kiểm tra lỗi dữ liệu.</td><td>Nguồn chính là tài liệu 6 trang EASA Part-66 Module 5.13 (13.1 đến 13.6, gồm Hình 13-1 và 6 câu hỏi có đáp án) cùng Tooley ch.13. Module có 2 demo tương tác (checksum và CRC, bộ chọn mức DAL).</td></tr></tbody>
 </table>
 </div><footer class="site"><div class="wrap">
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="_shared/theme.js?v=5f9b5f63"></script>
+<script src="_shared/theme.js?v=87b2e929"></script>
 </body></html>

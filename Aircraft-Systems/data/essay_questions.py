@@ -1175,5 +1175,70 @@ ESSAY = {
         "note_en": "Verified with sympy and the 16-row truth table: X = H3·(H1 + H2) = H3H1 + H3H2 equals 1 exactly for 1010 to 1111 and 0 for 0000 to 1001. The printed circuit in Figure P-20 (an OR of H1, H2 followed by an AND with H3) matches."
       }
     ]
+  },
+  "07-software-control": {
+    "src_book": "Bài giảng EASA Part-66 Module 5.13 Software Management Control (13.5 và 13.6: Questions 13-1 đến 13-6, có đáp án in). Tooley ch.13 chỉ có Test Your Understanding không kèm đáp án in nên không đưa lên.",
+    "src_book_en": "EASA Part-66 Module 5.13 Software Management Control lecture notes (13.5 and 13.6: Questions 13-1 to 13-6, with printed answers). Tooley ch.13 has only Test Your Understanding without printed answers, so it is not included.",
+    "note_vi": "Đây là sáu câu hỏi tự luận có đáp án in trong tài liệu của môn; đáp án là ảnh cắt từ chính tài liệu. Floyd không có bài tập về kiểm soát phần mềm; các bài lẻ của Floyd về checksum (Ch.11 Bài 37) đã nằm ở Module 04.",
+    "note_en": "These are the six free-response questions with printed answers in the course material. Floyd has no exercises on software control; Floyd's odd problem on the checksum (Ch.11 Problem 37) is already in Module 04.",
+    "items": [
+      {
+        "num": 1,
+        "q_vi": "Kiểm soát phần mềm gồm định nghĩa và lập tài liệu kỹ lưỡng cho quy trình phát triển phần mềm máy bay. Cần những tài liệu nào?",
+        "q_en": "Software management control includes a thorough definition and documentation of the aircraft software development process. What documentation is required?",
+        "src": "EASA Module 5.13 lecture · Question 13-1",
+        "img": "swctl_ans13_1.png",
+        "note_vi": "Danh sách khớp đoạn \"Restrictions and catastrophic effects\" của bài giảng (đã đối chiếu từng mục với text của PDF).",
+        "note_en": "The list matches the lecture's \"Restrictions and catastrophic effects\" paragraph (each item compared with the PDF text)."
+      },
+      {
+        "num": 2,
+        "q_vi": "DO-178 là gì và vì sao quan trọng?",
+        "q_en": "What is DO-178 and why is it important?",
+        "src": "EASA Module 5.13 lecture · Question 13-2",
+        "img": "swctl_ans13_2.png",
+        "note_vi": "Đáp án khớp mục Airworthiness requirements của bài giảng; DO-178B do RTCA công bố 1992, EUROCAE công bố ED-12B.",
+        "note_en": "The answer matches the lecture's Airworthiness requirements section; DO-178B was published by RTCA in 1992 and by EUROCAE as ED-12B."
+      },
+      {
+        "num": 3,
+        "q_vi": "Vì sao các hệ thống điều khiển bay và dẫn đường được chứng nhận ở DO-178 Level A?",
+        "q_en": "Why are flight control and navigation systems certified at DO-178 Level A?",
+        "src": "EASA Module 5.13 lecture · Question 13-3",
+        "img": "swctl_ans13_3.png",
+        "note_vi": "Khớp mục mức tới hạn (Level A: thảm hoạ). Tooley bảng 13.2 cũng xếp AHRS, GPS/ILS, SATNAV, VOR/ADF ở mức A.",
+        "note_en": "Matches the criticality levels section (Level A: catastrophic). Tooley Table 13.2 also puts AHRS, GPS/ILS, SATNAV, VOR/ADF at level A."
+      },
+      {
+        "num": 4,
+        "q_vi": "ARINC 653 là gì và dùng ở đâu?",
+        "q_en": "What is ARINC 653 and where is it used?",
+        "src": "EASA Module 5.13 lecture · Question 13-4",
+        "img": "swctl_ans13_4.png",
+        "note_vi": "Khớp đoạn về ARINC 653 và IMA của bài giảng.",
+        "note_en": "Matches the lecture's paragraph on ARINC 653 and IMA."
+      },
+      {
+        "num": 5,
+        "q_vi": "DO-178C được phát triển để thay DO-178B vì lý do gì?",
+        "q_en": "What was DO-178C developed to take the place of DO-178B?",
+        "src": "EASA Module 5.13 lecture · Question 13-5",
+        "img": "swctl_ans13_5.png",
+        "note_vi": "Đề gốc dùng cụm \"to take the place of\" nên hiểu là hỏi lý do thay thế. Khớp đoạn bài giảng về DO-178C (2011), AC 20-115C (2013) và các phụ lục DO-330 đến DO-333.",
+        "note_en": "The original wording \"to take the place of\" is read as asking why it replaced DO-178B. Matches the lecture on DO-178C (2011), AC 20-115C (2013) and supplements DO-330 to DO-333."
+      },
+      {
+        "num": 6,
+        "q_vi": "DO-178C yêu cầu truy vết giữa những sản phẩm chứng nhận nào cho phần mềm Level A mà các mức khác không yêu cầu?",
+        "q_en": "DO-178C requires tracing between which certification artifacts for Level A software applications that are not required for any other levels?",
+        "src": "EASA Module 5.13 lecture · Question 13-6",
+        "img": "swctl_ans13_6.png",
+        "note_vi": "ĐÁP ÁN IN CHƯA ĐẦY ĐỦ. Ảnh đáp án chỉ nêu mã nguồn với mã đối tượng thực thi. Hình 13-1 của chính bài giảng (ảnh đề bên dưới) vẽ HAI mũi tên đỏ (chỉ mức A): kiến trúc phần mềm với yêu cầu cấp cao (A-4.8, 5.2.2a, 6.3.3a), và mã nguồn với mã đối tượng thực thi (A-7.9, 6.4.4.2b). Đáp án đầy đủ là cả hai.",
+        "note_en": "THE PRINTED ANSWER IS INCOMPLETE. The answer image names only source code to executable object code. The lecture's own Figure 13-1 (question image below) draws TWO red arrows (level A only): software architecture to high-level requirements (A-4.8, 5.2.2a, 6.3.3a), and source code to executable object code (A-7.9, 6.4.4.2b). The complete answer is both.",
+        "qimgs": [
+          "swctl_fig13_1.png"
+        ]
+      }
+    ]
   }
 }

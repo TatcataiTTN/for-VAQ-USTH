@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Aircraft Digital Electronics & Computer Systems: Number Systems in Aircraft Digital Data</title>
 <meta name="description" content="All data inside aircraft computers (FMGC, FWC, SDAC…) is processed in binary, but humans need intermediate number systems (octal, hexadecimal, BCD) to read and enter data conveniently. This module rebuilds the four core number systems and their real applications on the Airbus A320."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 01</span>
 <h1>Number Systems in Aircraft Digital Data</h1><p>Tooley ch.2 (p.25-38) · Floyd ch.2 (p.65-124)</p></div>
 <div class="callout info">
-<h4>📚 Chapter mapping: 6 lectures ↔ textbook chapters</h4>
+<h4>📚 Chapter mapping: 7 lectures ↔ textbook chapters</h4>
 <p><b>Tooley:</b> Ch.2 Number systems (p.25-38): decimal, binary, octal, hex, ASCII</p>
 <p><b>Floyd:</b> Ch.2 Number Systems, Operations, and Codes (p.65-124)</p>
 <p>Near 1-to-1 match: both books devote exactly one chapter to these same four number systems.</p>
@@ -103,6 +103,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Fullscreen</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Theoretical & historical background</h4><p>The binary system was formalised by Gottfried Leibniz in 1703 in his <i>Explication de l'Arithmétique Binaire</i>, but it only became the true foundation of digital electronics after Claude Shannon's 1937 master's thesis applied Boolean algebra to switching circuits. BCD was standardised to simplify decimal display on early electronic devices (digital clocks, calculators) without requiring a full binary-to-decimal conversion circuit.</p></div>
 <div class="callout case"><h4>🔎 Real case study: reading a BITE fault code on the Airbus A320</h4><p>When an LRU (Line Replaceable Unit) on the A320 detects a fault, the BITE system generates a fault code shown in hex on the MCDU/ECAM (e.g. <code>0xACDE</code>). Maintenance technicians look this code up in the AMM (Aircraft Maintenance Manual) to identify the LRU and root cause. Displaying hex instead of the full 16-bit binary string (<code>1010 1100 1101 1110</code>) significantly shortens lookup time and reduces manual transcription errors.</p></div>
 <div class="callout warn"><h4>⚠️ Common trap</h4><p>The most common mistake is converting directly between hex and octal without going through binary. Because hex groups bits in 4s while octal groups them in 3s, the two groupings do NOT line up: always expand to full binary first, then regroup for the target base, as illustrated in question 9 below (111₁₆ → 421₈ cannot be inferred directly).</p></div>
@@ -472,5 +473,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

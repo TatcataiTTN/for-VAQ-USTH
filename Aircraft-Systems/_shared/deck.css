@@ -108,3 +108,10 @@
 .essay-qfig{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}
 .essay-qfig img{max-width:100%;max-height:300px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:4px;cursor:zoom-in}
 .essay-note{font-size:.86rem;color:var(--muted);margin:4px 0}
+/* demo tương tác (module 07) */
+.demo-box{border:1px solid var(--line,#ccd);border-radius:12px;padding:14px 16px;margin:18px 0;background:var(--panel,#fff)}
+.demo-box h3{margin:0 0 8px}
+.di-row{margin:8px 0}.di-row label{display:block;font-size:.85rem;font-weight:700;margin-bottom:4px}
+.di-in{width:100%;font-family:ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--line,#ccd);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}
+.di-btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.di-btns button,.dal-sel{padding:7px 12px;border-radius:8px;border:1px solid var(--line,#ccd);background:var(--code,#f6f7fb);color:inherit;cursor:pointer}
+.di-t .m{font-family:ui-monospace,Menlo,monospace}.di-vs.warn,.di-vc.warn{color:#b45309;font-weight:700}.di-vs.good,.di-vc.good{color:#15803d;font-weight:700}

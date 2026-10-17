@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Aircraft Digital Electronics & Computer Systems: Logic Gates & Boolean Algebra</title>
 <meta name="description" content="Every digital system on an aircraft, from a landing-gear-door warning to APU start control, is built from basic logic gates combined according to Boolean algebra rules. This module moves from single gates to real combinational circuits and the logic families used on aircraft."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 02</span>
 <h1>Logic Gates & Boolean Algebra</h1><p>Tooley ch.5 (p.70-94) · Floyd ch.3-4 (p.125-260), ch.7 (bistables, p.387+)</p></div>
 <div class="callout info">
-<h4>📚 Chapter mapping: 6 lectures ↔ textbook chapters</h4>
+<h4>📚 Chapter mapping: 7 lectures ↔ textbook chapters</h4>
 <p><b>Tooley:</b> Ch.5 Logic circuits (p.70-94): gates, Boolean algebra, combinational logic, tri-state, monostable/bistable, logic families</p>
 <p><b>Floyd:</b> Ch.3 Logic Gates (p.125-190) + Ch.4 Boolean Algebra and Logic Simplification (p.191-260); the bistable part is cross-referenced with Ch.7 Latches, Flip-Flops, and Timers (p.387-448)</p>
 <p>Tooley bundles gates + Boolean algebra + bistables into one chapter; Floyd splits this into three more detailed chapters.</p>
@@ -103,6 +103,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Fullscreen</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Theoretical & historical background</h4><p>Boolean algebra was published by George Boole in 1854 in <i>An Investigation of the Laws of Thought</i>, originally a pure formalisation of propositional logic with no link to electronics. It only became a precise tool for analysing and designing relay switching circuits after Claude Shannon's 1937 MIT master's thesis: laying the direct foundation for all modern digital circuit design, including aircraft logic systems.</p></div>
 <div class="callout case"><h4>🔎 Real case study: landing gear door warning circuit</h4><p>A simple aircraft warning circuit must light a warning lamp when AT LEAST ONE landing gear door is not fully locked AND the aircraft is in flight mode (not on ground). This is a classic example from Tooley's textbook: warning output = OR of the gear-door switches, ANDed with the 'in-flight' signal: a direct illustration of combining AND/OR to encode a real safety condition.</p></div>
 <div class="callout warn"><h4>⚠️ Common trap</h4><p>Confusing NAND/NOR with 'the everyday negation of AND/OR' by guessing the truth table intuitively instead of computing it step by step: the safest approach is always to write out the full AND/OR truth table first, then invert the result bit by bit, never skip straight to the answer.</p></div>
@@ -562,5 +563,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

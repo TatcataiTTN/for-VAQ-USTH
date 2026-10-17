@@ -35,10 +35,10 @@ L = {
     "site_title": "Hệ thống điện tử số & máy tính hàng không",
     "site_sub": "Tự học AE2.021 · USTH",
     "home_hero_title": "Tự học môn AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "6 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
+    "home_hero_sub": "7 module bám sát bộ slide giảng dạy thật của môn, đối chiếu 2 giáo trình tham khảo "
                       "(Mike Tooley & Thomas Floyd), có quiz tự chấm và notebook Python đi kèm.",
     "open": "Mở bài giảng →", "soon": "Sắp có",
-    "mapping_link": "📚 Bảng ánh xạ 6 bài giảng ↔ chương sách giáo trình",
+    "mapping_link": "📚 Bảng ánh xạ 7 bài giảng ↔ chương sách giáo trình",
     "footer": "Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, "
               "đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.",
     "explain_more": "📖 Giải thích cho người mới bắt đầu", "zoom_hint": "Bấm vào ảnh để phóng to",
@@ -51,7 +51,7 @@ L = {
     "notebook": "📓 Notebook Python đi kèm", "notebook_open": "Xem/tải notebook (.ipynb) →",
     "back_home": "← Trang chủ", "lang_switch": "English",
     "nav_mapping": "Ánh xạ chương sách",
-    "mapping_title": "Bảng ánh xạ: 6 bài giảng ↔ chương giáo trình tham khảo",
+    "mapping_title": "Bảng ánh xạ: 7 bài giảng ↔ chương giáo trình tham khảo",
     "mapping_intro": "Bảng dưới đối chiếu trực tiếp mục lục 2 sách tham khảo của môn AE2.021 với 4 bộ slide "
                       "giảng dạy thật: dựa trên việc đọc mục lục và nội dung đã OCR của cả hai sách, không suy đoán.",
   },
@@ -59,10 +59,10 @@ L = {
     "site_title": "Aircraft Digital Electronics & Computer Systems",
     "site_sub": "Self-study AE2.021 · USTH",
     "home_hero_title": "Self-study AE2.021 (Electronics Systems: Analog & Digital Systems)",
-    "home_hero_sub": "6 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
+    "home_hero_sub": "7 modules following the course's real lecture slides, cross-referenced with 2 textbooks "
                       "(Mike Tooley & Thomas Floyd), with a self-graded quiz and companion Python notebook.",
     "open": "Open lesson →", "soon": "Coming soon",
-    "mapping_link": "📚 Chapter mapping: 6 lectures ↔ textbook chapters",
+    "mapping_link": "📚 Chapter mapping: 7 lectures ↔ textbook chapters",
     "footer": "Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from "
               "Tooley, independently recomputed to verify each answer: see the source note on each question.",
     "explain_more": "📖 Explained for complete beginners", "zoom_hint": "Click the image to enlarge",
@@ -75,7 +75,7 @@ L = {
     "notebook": "📓 Companion Python notebook", "notebook_open": "View/download notebook (.ipynb) →",
     "back_home": "← Home", "lang_switch": "Tiếng Việt",
     "nav_mapping": "Chapter mapping",
-    "mapping_title": "Chapter mapping: 6 lectures ↔ reference textbook chapters",
+    "mapping_title": "Chapter mapping: 7 lectures ↔ reference textbook chapters",
     "mapping_intro": "The table below directly cross-references the tables of contents of AE2.021's two "
                       "reference textbooks against the 4 real lecture slide decks: based on reading the OCR'd "
                       "table of contents and content of both books, not guesswork.",
@@ -157,7 +157,16 @@ MAPPING_ROWS = [
     "note_vi": "Đây là module có bộ slide bài giảng riêng (36 slide infographic, đọc trực tiếp từng slide). Tooley khớp tốt (3 chương rải rác: Ch.1, Ch.11, Ch.15). Floyd chỉ khớp ở phần 7 đoạn (Ch.4, Ch.6), nên quiz Floyd của module này ít (7 câu) và bài tự luận chỉ có 4 bài lẻ của Applied Logic.",
     "note_en": "This module has its own lecture deck (36 infographic slides, each read directly). Tooley matches well (three scattered chapters: Ch.1, Ch.11, Ch.15). Floyd matches only at the 7-segment level (Ch.4, Ch.6), so this module's Floyd quiz is small (7 questions) and the essay section has only the 4 odd Applied Logic problems.",
   },
+  {
+    "module": "07: Software Management Control",
+    "tooley": "Ch.13 Software (p.207-217): 13.1 classification, 13.2 certification, 13.3 upgrading (FLS, LSAP, UMS, OSS, DFLD, EEC loading with PDL), 13.4 data verification; 7 MCQs; plus Ch.15 MCQ on navigation database update",
+    "floyd": "Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) và Ch.11 section 11-11 (kiểm tra ROM bằng checksum, Hình 11-74 và 11-75). Floyd KHÔNG có nội dung về DO-178, phân loại mức phần mềm hay nạp phần mềm máy bay: chỉ khớp ở khía cạnh kiểm tra lỗi dữ liệu.",
+    "floyd_en": "Ch.2 section 2-12 Error Codes (parity, CRC, Example 2-41; p.109-114) and Ch.11 section 11-11 (ROM checksum test, Figures 11-74 and 11-75). Floyd has NO content on DO-178, software levels or loading aircraft software: it matches only on the data error checking aspect.",
+    "note_vi": "Nguồn chính là tài liệu 6 trang EASA Part-66 Module 5.13 (13.1 đến 13.6, gồm Hình 13-1 và 6 câu hỏi có đáp án) cùng Tooley ch.13. Module có 2 demo tương tác (checksum và CRC, bộ chọn mức DAL).",
+    "note_en": "The main source is the 6-page EASA Part-66 Module 5.13 document (13.1 to 13.6, with Figure 13-1 and 6 questions with answers) plus Tooley ch.13. The module has 2 interactive demos (checksum versus CRC, a DAL level explorer).",
+  },
 ]
+
 
 
 HEAD_TEMPLATE = """<!doctype html>
@@ -364,6 +373,8 @@ def build_module_page(lang, mod, prefix):
     quiz_floyd = build_quiz_section(lang, mod["slug"], t["quiz_floyd"], "floyd")
     quiz_gen = build_quiz_section(lang, mod["slug"], t["quiz_gen"], "generated")
     essay_section = build_essay_section(lang, mod["slug"])
+    demo = mod.get("demo")
+    demo_html = demo["html_" + lang] if demo else ""
     nb_name = f"{mod['num']}_{mod['slug'].split('-',1)[1]}.ipynb"
     mod_idx = MODULES.index(mod)
     mrow = MAPPING_ROWS[mod_idx]
@@ -382,6 +393,7 @@ def build_module_page(lang, mod, prefix):
 <h1>{d['title']}</h1><p>{d['src']}</p></div>
 {mapping_block}
 {deck}
+{demo_html}
 <div class="callout history"><h4>{d['history_title']}</h4><p>{d['history']}</p></div>
 <div class="callout case"><h4>{d['case_title']}</h4><p>{d['case']}</p></div>
 <div class="callout warn"><h4>{d['warn_title']}</h4><p>{d['warn']}</p></div>
@@ -396,7 +408,8 @@ def build_module_page(lang, mod, prefix):
     extra_css = f'<link rel="stylesheet" href="{prefix}_shared/deck.css?v={VER}"/>'
     html_out = render_page(lang, prefix, body, extra_css=extra_css, title_suffix=d["title"], description=d["intro"])
     html_out = html_out.replace("__OTHER_LANG__", f"../../../{'en' if lang=='vi' else 'vi'}/modules/{mod['slug']}/index.html")
-    scripts = f'<script src="{prefix}_shared/deck.js?v={VER}"></script><script src="{prefix}_shared/quiz.js?v={VER}"></script>'
+    extra_js = f'<script src="{prefix}_shared/{demo["js"]}?v={VER}"></script>' if demo else ''
+    scripts = extra_js + f'<script src="{prefix}_shared/deck.js?v={VER}"></script><script src="{prefix}_shared/quiz.js?v={VER}"></script>'
     html_out = html_out.replace("</body></html>", scripts + "</body></html>")
     return html_out
 

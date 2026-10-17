@@ -337,4 +337,5 @@ FLOYD_MODULES = {
   "05-data-buses":      dict(tf=[], st=[], chapter="(Floyd khong co noi dung lien quan)"),
   # Module 06: cau hoi Floyd lay tu Section Checkup / Applied Logic / van ban ve hien thi 7 doan (xem quiz_06.py)
   "06-electronic-displays": dict(tf=[], st=[], custom=__import__("quiz_06").MOD6_FLOYD, chapter="Floyd Ch.4 (Applied Logic) + Ch.6 (7-segment)"),
+  "07-software-control": dict(tf=[], st=[], custom=__import__("quiz_07").MOD7_FLOYD, chapter="Floyd Ch.2 (2-12 Error Codes) + Ch.11 (11-11)"),
 }

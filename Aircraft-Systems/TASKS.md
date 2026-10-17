@@ -2,6 +2,14 @@
 
 Ngày khởi tạo: 2026-09-28.
 
+## Epic 16 — Module 07: Quản lý kiểm soát phần mềm hàng không 🟢 (2026-10-17)
+- [x] **Nguồn**: tài liệu 6 trang "software management control.pdf" (EASA Part-66 Module 5.13; chữ chọn được nên đọc text và đối chiếu ảnh trang, cắt Hình 13-1 ở 250 dpi) + Tooley ch.13 (tr.207-217, ảnh trang đọc trực tiếp, Bảng 13.1 đọc lại từ ảnh vì OCR làm hỏng số mũ) + Floyd ch.2 mục 2-12 và ch.11 mục 11-11. Đáp án MCQ Tooley đọc từ ảnh scan Appendix 3 (A.13, tr.380).
+- [x] 20 slide x 2 ngôn ngữ (5 phần), 2 demo chạy trong trình duyệt (`_shared/demo_integrity.js`: checksum 8 bit so với CRC-8 với ba kiểu lỗi; bộ chọn mức DAL đọc dữ liệu từ hình 13-1), hàm thuần đã kiểm bằng Node (CRC-8 chuẩn 0xF4).
+- [x] Quiz 23 câu x 2 ngôn ngữ (7 Tooley Ch.13, 5 Floyd, 11 tự sinh), bản EN nằm trong từng câu; đã cân bằng độ dài lựa chọn sau khi audit phát hiện đáp án đúng luôn dài nhất.
+- [x] Tự luận: 6 câu 13-1 đến 13-6 của bài giảng, đáp án là ảnh cắt từ chính tài liệu. Notebook `07_software-control.ipynb` chạy thật, mọi assert đạt.
+- [x] **Lỗi tìm thấy**: đáp án in câu 13-6 chỉ nêu mã nguồn với mã đối tượng, trong khi hình 13-1 có HAI mũi tên đỏ (thêm kiến trúc phần mềm với yêu cầu cấp cao). Khác biệt trình bày: Floyd thêm 4 số 0 cho mã sinh 4 bit, CRC chuẩn thêm 3; cả hai cho dư 0.
+- Hạ tầng: `render_site.py` hỗ trợ trường `demo` (html + js) cho từng module.
+
 ## Epic 15 — Module 06: Màn hình điện tử và hệ thống thông tin buồng lái 🟢 (2026-10-11)
 - [x] **Chọn module**: bộ bài giảng mới "Electronic displays - ver 2026.pdf" (36 slide infographic, text layer chỉ 296 ký tự nên không dùng được). Đã render 125 dpi vào `ocr/lectures/electronic_displays/pages`, ghép từng cặp slide và ĐỌC BẰNG MẮT từng slide, ghi lại vào `ocr/lectures/electronic_displays/transcript.md`; các ô nghi ngờ cắt ở 300 dpi (`crops/`).
 - [x] **Ánh xạ 2 sách** (đã đọc trực tiếp từ ảnh trang): Tooley Ch.1 (p.1-24: đồng hồ bay, EFIS, ECAM/EICAS, bố trí buồng lái), Ch.11 Displays (p.178-196: CRT, LED/7 đoạn, LCD), Ch.15 mục 15.1 ACARS, 15.2 EFIS, 15.3 EICAS/ECAM (p.238-250) và các câu MCQ; Floyd Ch.4 Applied Logic: Seven-Segment Display (p.244-249; bài 62-71 ở p.256), Ch.6 mục 6-5 (74HC47, p.338-340) và 6-8 (ghép kênh 7 đoạn, p.353). Floyd KHÔNG có EFIS/ECAM/ACARS/CRT/LCD ngoài mức 7 đoạn.

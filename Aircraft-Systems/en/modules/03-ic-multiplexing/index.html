@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Aircraft Digital Electronics & Computer Systems: Integrated Circuits & Multiplexing</title>
 <meta name="description" content="From a single logic gate (SSI) to a microprocessor with millions of transistors (VLSI), the scale of integration determines how a device is packaged, tested and used. This module covers integration scales, IC packaging technology, and the most common MSI circuits found on aircraft: decoders, encoders and multiplexers."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 03</span>
 <h1>Integrated Circuits & Multiplexing</h1><p>Tooley ch.8-9 (p.139-164) · Floyd ch.6 (p.313-386), ch.15 (IC technologies)</p></div>
 <div class="callout info">
-<h4>📚 Chapter mapping: 6 lectures ↔ textbook chapters</h4>
+<h4>📚 Chapter mapping: 7 lectures ↔ textbook chapters</h4>
 <p><b>Tooley:</b> Ch.8 Integrated circuits (p.139-148) + Ch.9 MSI logic (p.149-164): fan-in/out, decoders, encoders, multiplexers</p>
 <p><b>Floyd:</b> Ch.6 Functions of Combinational Logic (p.313-386): decoders, encoders, multiplexers, demultiplexers, comparators; IC fabrication technology is cross-referenced with Ch.15 Integrated Circuit Technologies (p.855+)</p>
 <p>Tooley splits 'IC technology' (ch.8) and 'MSI applications' (ch.9) into two chapters; Floyd bundles all MSI applications into Ch.6 and keeps fabrication technology separate at the end of the book (Ch.15).</p>
@@ -103,6 +103,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Fullscreen</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Theoretical & historical background</h4><p>The first integrated circuit was demonstrated by Jack Kilby (Texas Instruments) in 1958, followed by Robert Noyce's (Fairchild) more practical planar-technology version in 1959. Moore's Law (1965) then predicted the number of transistors per chip doubling every 18-24 months: a trend directly reflected in the SSI→MSI→LSI→VLSI progression covered in this chapter of Tooley.</p></div>
 <div class="callout case"><h4>🔎 Real case study: altitude data multiplexer on the A320</h4><p>The A320 altimeter system needs to select 1 of 4 altitude data sources (selected altitude and actual altitude from the left/right ADC) to feed into the ARINC 429 serial data encoder (see Figure 9.21, Tooley). A dual four-channel multiplexer performs this switching with only 2 binary select lines instead of 4 separate physical data paths: a meaningful weight saving in aircraft wiring.</p></div>
 <div class="callout warn"><h4>⚠️ Common trap</h4><p>Confusing a 'demultiplexer' (1 input → many outputs) with a 'decoder' (address decoding): the two sometimes share the same physical IC (a decoder with no dedicated data input can act as a demux by treating one line as data and the rest as select address), but functionally they serve different purposes.</p></div>
@@ -232,5 +233,5 @@
   <p>Built from OCR + cross-referenced AE2.021 (USTH) course materials. Original questions are from Tooley, independently recomputed to verify each answer: see the source note on each question.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

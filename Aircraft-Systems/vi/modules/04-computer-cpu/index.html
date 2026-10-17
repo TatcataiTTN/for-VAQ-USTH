@@ -7,8 +7,8 @@
   var t = localStorage.getItem('site-theme');
   if (t && t !== 'light') document.documentElement.setAttribute('data-theme', t);
 }catch(e){}})();</script>
-<link rel="stylesheet" href="../../../_shared/common.css?v=5f9b5f63"/>
-<link rel="stylesheet" href="../../../_shared/deck.css?v=5f9b5f63"/>
+<link rel="stylesheet" href="../../../_shared/common.css?v=87b2e929"/>
+<link rel="stylesheet" href="../../../_shared/deck.css?v=87b2e929"/>
 <title>Hệ thống điện tử số & máy tính hàng không: Cấu trúc máy tính & Vi xử lý (CPU)</title>
 <meta name="description" content="Mọi máy tính hàng không, từ đồng hồ buồng lái cho tới AIDS data recorder, đều dựa trên 3 khối cơ bản: CPU, bộ nhớ (RAM/ROM), và hệ thống bus kết nối. Module này trình bày cấu trúc máy tính, nguyên lý hoạt động của CPU, và các loại bộ nhớ bán dẫn dùng trong avionics."/>
 </head>
@@ -30,7 +30,7 @@
 <div class="hero"><span class="pill">MODULE 04</span>
 <h1>Cấu trúc máy tính & Vi xử lý (CPU)</h1><p>Tooley ch.6-7 (tr.95-138) · Floyd ch.11 (bộ nhớ bán dẫn, tr.627-696)</p></div>
 <div class="callout info">
-<h4>📚 Bảng ánh xạ 6 bài giảng ↔ chương sách giáo trình</h4>
+<h4>📚 Bảng ánh xạ 7 bài giảng ↔ chương sách giáo trình</h4>
 <p><b>Tooley:</b> Ch.6 Computers (p.95-115): computer systems, data storage, backplane bus + Ch.7 The CPU (p.116-138): internal architecture, x86/Pentium/AMD 29050</p>
 <p><b>Floyd:</b> Ch.11 Data Storage (p.627-696): RAM/ROM/Flash memory. Floyd KHÔNG có chương riêng về kiến trúc CPU/vi xử lý: đây là điểm khác biệt lớn nhất giữa 2 sách cho module này.</p>
 <p>Đây là module có độ khớp THẤP NHẤT giữa 2 sách: Floyd là sách nền tảng logic số thuần tuý, không đi sâu kiến trúc máy tính/CPU như Tooley: phần CPU trong module này chủ yếu dựa vào Tooley.</p>
@@ -83,6 +83,7 @@
   <span class="mdeck-count"></span><div class="mdeck-dots"></div>
   <button class="mdeck-fs">⛶ Toàn màn hình</button>
 </div></div>
+
 <div class="callout history"><h4>📜 Bối cảnh lý thuyết & lịch sử</h4><p>Vi xử lý thương mại đầu tiên, Intel 4004 (1971), chỉ có 2.300 transistor và xử lý 4-bit dữ liệu. Kiến trúc CPU với accumulator, thanh ghi đa dụng và ALU trình bày trong chương này của Tooley phản ánh trực tiếp dòng vi xử lý Intel x86 phát triển từ 8086 (1978): kiến trúc mà nhiều hệ thống máy tính hàng không thế hệ trước dựa vào, trước khi chuyển sang các vi xử lý chuyên dụng cho hàng không như AMD 29050 (dùng trong ASIC của Honeywell).</p></div>
 <div class="callout case"><h4>🔎 Case study thực tế: đồng hồ buồng lái Airbus (clock computer)</h4><p>Đồng hồ buồng lái điện tử trên A320 (Figure 6.11, Tooley) là một máy tính hoàn chỉnh thu nhỏ: dao động thạch anh tạo xung UTC chính xác, vi xử lý xử lý dữ liệu thời gian, ROM lưu phần mềm điều khiển, RAM lưu dữ liệu tạm thời, và bộ mã hoá dữ liệu nối tiếp gửi thời gian ra bus ARINC 429 cho các hệ thống khác sử dụng: minh hoạ đầy đủ mô hình IPO + 3 bus trong một ứng dụng thực.</p></div>
 <div class="callout warn"><h4>⚠️ Bẫy hay gặp</h4><p>Nhầm lẫn giữa 'bộ nhớ truy cập ngẫu nhiên' (random access, nghĩa kỹ thuật là mọi ô nhớ truy xuất nhanh như nhau) với RAM (read/write memory) theo cách dùng thông thường. Về mặt kỹ thuật, ROM CŨNG là bộ nhớ truy cập ngẫu nhiên (không phải tuần tự như băng từ), dù không thể ghi được.</p></div>
@@ -302,5 +303,5 @@
   <p>Biên soạn từ OCR + đối chiếu chéo tài liệu môn AE2.021 (USTH). Câu hỏi gốc trích Tooley, đã tính toán lại độc lập để xác minh đáp án: xem ghi chú nguồn trong từng câu.</p>
   <p><a href="https://github.com/tatcataittn/for-VAQ-USTH" target="_blank" rel="noopener">GitHub</a></p>
 </div></footer>
-<script src="../../../_shared/theme.js?v=5f9b5f63"></script>
-<script src="../../../_shared/deck.js?v=5f9b5f63"></script><script src="../../../_shared/quiz.js?v=5f9b5f63"></script></body></html>
+<script src="../../../_shared/theme.js?v=87b2e929"></script>
+<script src="../../../_shared/deck.js?v=87b2e929"></script><script src="../../../_shared/quiz.js?v=87b2e929"></script></body></html>

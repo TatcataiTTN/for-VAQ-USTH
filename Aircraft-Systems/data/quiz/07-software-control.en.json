@@ -1,0 +1,261 @@
+{
+ "tooley": [
+  {
+   "q": "A Level C software classification is one in which a failure could result in:",
+   "opts": [
+    "fatal injuries to passengers or crew",
+    "minor injuries to passengers or crew",
+    "aircraft loss"
+   ],
+   "correct": 1,
+   "explain": "Table 13.1: level C is a major failure: workload impairs crew efficiency, occupant discomfort including injuries. Aircraft loss is level A; serious or fatal injury is level B.",
+   "src": "Tooley Ch.13 Q1"
+  },
+  {
+   "q": "A Level B software classification is one in which the probability of failure is:",
+   "opts": [
+    "extremely remote",
+    "remote",
+    "extremely improbable"
+   ],
+   "correct": 0,
+   "explain": "Table 13.1: A is extremely improbable (below 10⁻⁹), B is extremely remote (10⁻⁹ to 10⁻⁷), C is remote (10⁻⁷ to 10⁻⁵).",
+   "src": "Tooley Ch.13 Q2"
+  },
+  {
+   "q": "A software configuration management plan must be created and maintained by:",
+   "opts": [
+    "the CAA or FAA",
+    "the aircraft operator",
+    "the relevant DO"
+   ],
+   "correct": 2,
+   "explain": "Tooley 13.2: the CMP must be devised and maintained by the relevant DO and be effective throughout the life of the equipment.",
+   "src": "Tooley Ch.13 Q3"
+  },
+  {
+   "q": "Weather radar is an example of:",
+   "opts": [
+    "Class B software",
+    "Class C software",
+    "Class D software"
+   ],
+   "correct": 2,
+   "explain": "Table 13.2: level D includes AHRS automatic levelling, CMC/CFDIU, data loader and weather radar.",
+   "src": "Tooley Ch.13 Q4"
+  },
+  {
+   "q": "Electronic engine control software is an example of:",
+   "opts": [
+    "LSAP",
+    "DFLD",
+    "OSS"
+   ],
+   "correct": 0,
+   "explain": "The EEC is a typical LSAP target (with DFDAU, APU ECU, FGC). DFLD is data; OSS is typical of IMA units.",
+   "src": "Tooley Ch.13 Q5"
+  },
+  {
+   "q": "OSS and UMS are specific classes of:",
+   "opts": [
+    "DFLD",
+    "LSAP",
+    "FLS"
+   ],
+   "correct": 2,
+   "explain": "FLS (field loadable software) has three types: LSAP, UMS and OSS.",
+   "src": "Tooley Ch.13 Q6"
+  },
+  {
+   "q": "The final stage of loading EEC software is:",
+   "opts": [
+    "verifying the loaded software",
+    "switching on and testing the system",
+    "disconnecting the PDL"
+   ],
+   "correct": 0,
+   "explain": "After removing the loader and reconnecting the cables, run the memory verification program (PASS for part number and checksums), then mark the plate (steps 9 and 10).",
+   "src": "Tooley Ch.13 Q7"
+  }
+ ],
+ "floyd": [
+  {
+   "q": "With the BCD code 0111 and EVEN parity, the parity bit is:",
+   "opts": [
+    "1",
+    "0",
+    "Undetermined"
+   ],
+   "correct": 0,
+   "explain": "0111 has three 1s (odd), so the even parity bit must be 1 to make four (even). Matches Table 2-8 (P = 1 for 0111).",
+   "src": "Floyd Ch.2 · section 2-12, Table 2-8 (p.110)"
+  },
+  {
+   "q": "What can a parity bit detect?",
+   "opts": [
+    "Any error whatsoever occurring in the group",
+    "A single bit error (or an odd number of errors) in the group",
+    "Two bit errors within the same group"
+   ],
+   "correct": 1,
+   "explain": "Floyd: parity detects a single bit error (or any odd number of errors) but cannot check for two errors in one group.",
+   "src": "Floyd Ch.2 · section 2-12 (p.110)"
+  },
+  {
+   "q": "In Floyd's CRC example with D = 11010011 and G = 1010, the transmitted code is:",
+   "opts": [
+    "110100110000",
+    "110100110100",
+    "110100111010"
+   ],
+   "correct": 1,
+   "explain": "Append four zeros, divide modulo-2 by 1010 to get remainder 0100; replacing the four zeros with 0100 gives 110100110100. Dividing again by 1010 leaves 0 (checked in code in the notebook).",
+   "src": "Floyd Ch.2 · Example 2-41 (p.113)"
+  },
+  {
+   "q": "The receiver divides the received data by the generator code G and finds a NON-ZERO remainder. This means:",
+   "opts": [
+    "Append zeros and divide once more",
+    "There is no error, the data is accepted",
+    "A transmission error is detected, request retransmission"
+   ],
+   "correct": 2,
+   "explain": "Step 7 of Floyd's CRC process: a non-zero remainder means an error has been detected and the receiver requests retransmission.",
+   "src": "Floyd Ch.2 · section 2-12, CRC process (p.112)"
+  },
+  {
+   "q": "According to Floyd, how is the checksum in the ROM test example produced?",
+   "opts": [
+    "Summing each column of bits and discarding carries (XOR of each column)",
+    "Dividing the ROM contents by a fixed generator code",
+    "Multiplying all the words and keeping the low 8 bits"
+   ],
+   "correct": 0,
+   "explain": "Floyd 11-11: the checksum is the sum of each column of data bits discarding the carries, i.e. the XOR sum of each column (Figure 11-74).",
+   "src": "Floyd Ch.11 · section 11-11, ROM checksum test"
+  }
+ ],
+ "generated": [
+  {
+   "q": "At which level are flight control and navigation software certified, and why?",
+   "opts": [
+    "Level A, because failure may cause multiple fatalities and loss of the aircraft",
+    "Level C, because failure would only make passengers uncomfortable and not affect the flight",
+    "Level E, because the pilots can always take over and fly by hand without any automation"
+   ],
+   "correct": 0,
+   "explain": "Lecture, question 13-3: flight control and navigation are flight critical and so need Level A.",
+   "src": ""
+  },
+  {
+   "q": "What is ARINC 653?",
+   "opts": [
+    "The BPRZ encoding standard ARINC 429 uses to recover the clock from the data signal itself",
+    "A specification for space and time partitioning in a real-time operating system, used in IMA",
+    "A one-way 100 kbps serial bus standard used for basic avionics in the electronics bay"
+   ],
+   "correct": 1,
+   "explain": "ARINC 653 lets one processor host applications of different levels without affecting each other; it is not the ARINC 429 bus of Module 05.",
+   "src": ""
+  },
+  {
+   "q": "Which standard replaced DO-178B in 2011?",
+   "opts": [
+    "DO-160",
+    "DO-178C",
+    "DO-254"
+   ],
+   "correct": 1,
+   "explain": "DO-178C was developed in 2011; DO-254 is hardware, DO-160 is environment.",
+   "src": ""
+  },
+  {
+   "q": "In the lecture's Figure 13-1, which traces are required ONLY at level A?",
+   "opts": [
+    "System to high-level requirements, and test cases to test procedures",
+    "Low-level requirements to source code, and high-level requirements to test cases",
+    "Software architecture to high-level requirements, and source code to executable object code"
+   ],
+   "correct": 2,
+   "explain": "The two red arrows in Figure 13-1 (the printed answer to question 13-6 names only the second).",
+   "src": ""
+  },
+  {
+   "q": "Which software level needs NO traceability under DO-178C?",
+   "opts": [
+    "Level E",
+    "Level D",
+    "Level C"
+   ],
+   "correct": 0,
+   "explain": "Level E needs no traceability because it is non-critical.",
+   "src": ""
+  },
+  {
+   "q": "An FLS upgrade may have been corrupted during transfer. What should be done?",
+   "opts": [
+    "Try loading it once to see whether the software runs normally before deciding",
+    "Load it and rely only on the LOAD COMPLETE message to conclude it is good",
+    "Quarantine it and hold it pending the supplier's integrity or version checks"
+   ],
+   "correct": 2,
+   "explain": "Tooley 13.3, Key Point box and Test 13.6: if in doubt do not attempt the transfer, quarantine it.",
+   "src": ""
+  },
+  {
+   "q": "Which release document usually accompanies a navigation database DFLD?",
+   "opts": [
+    "Only an ordinary Certificate of Conformity",
+    "An EASA Form 1 or FAA 8130-3 as for an LSAP",
+    "Letter of Acceptance or an equivalent"
+   ],
+   "correct": 2,
+   "explain": "Tooley 13.3.3: an EASA Form 1 or FAA 8130-3 cannot be provided for navigation database DFLD, so a Letter of Acceptance is used.",
+   "src": ""
+  },
+  {
+   "q": "A file has 5 bytes 10, 20, 30, 40, 50. The 8-bit checksum (sum mod 256) is:",
+   "opts": [
+    "100",
+    "150",
+    "44"
+   ],
+   "correct": 1,
+   "explain": "10+20+30+40+50 = 150, below 256 so no wrap-around.",
+   "src": ""
+  },
+  {
+   "q": "Two bytes of a file are swapped. A simple additive checksum will:",
+   "opts": [
+    "always be 0, so the file is reported valid",
+    "stay the same, so the error is not detected",
+    "always change, so the error is always detected"
+   ],
+   "correct": 1,
+   "explain": "Addition is commutative so byte order does not affect the sum. A CRC does (Demo 1).",
+   "src": ""
+  },
+  {
+   "q": "The LAST step in the EEC loading procedure with a PDL is:",
+   "opts": [
+    "write the software version, Service Bulletin number and date on the metal plate",
+    "insert the software disk into the PDL drive within 5 minutes",
+    "switch on the 115 V AC (400 Hz) supply to the EEC to start loading"
+   ],
+   "correct": 0,
+   "explain": "Step 10 of Tooley 13.3.",
+   "src": ""
+  },
+  {
+   "q": "Before loading an EEC, the software disk must:",
+   "opts": [
+    "be the correct version and not write-protected",
+    "be a different version for the left and right engines",
+    "be write-protected"
+   ],
+   "correct": 0,
+   "explain": "Tooley: the same software version for both engines and the disk must not be write-protected.",
+   "src": ""
+  }
+ ]
+}
