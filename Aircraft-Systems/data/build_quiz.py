@@ -601,6 +601,9 @@ for slug, d in MODULES.items():
     floyd_items += copy.deepcopy(fm.get("custom", []))
     d["floyd"] = floyd_items
 
+from quiz_details import apply as _apply_extras
+_apply_extras(MODULES)
+
 def shuffle_positions(items, seed):
     random.seed(seed)
     if not items: return items
@@ -640,10 +643,10 @@ def balanced_seed(items, start):
     return start
 
 for slug, d in MODULES.items():
-    if slug >= "06":
+    if slug >= "05":
         s1 = balanced_seed(d["tooley"], 2026); s2 = balanced_seed(d["floyd"], 2028); s3 = balanced_seed(d["gen"], 2027)
     else:
-        s1, s2, s3 = 2026, 2028, 2027
+        s1, s2 = 2026, 2028; s3 = balanced_seed(d["gen"], 2027)
     tooley = shuffle_positions(d["tooley"], seed=s1)
     floyd  = shuffle_positions(d["floyd"],  seed=s2)
     gen    = shuffle_positions(d["gen"],    seed=s3)

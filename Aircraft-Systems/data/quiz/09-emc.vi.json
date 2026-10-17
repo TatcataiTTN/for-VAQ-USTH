@@ -9,7 +9,8 @@
    ],
    "correct": 0,
    "explain": "Tooley 14.4.2: tuần hoàn là lặp liên tục; không tuần hoàn là dự đoán được nhưng không liên tục; ngẫu nhiên là hoàn toàn không dự đoán được.",
-   "src": "Tooley Ch.14 Q1"
+   "src": "Tooley Ch.14 Q1",
+   "detail": "<p>Tooley 14.4.2: nhiễu tuần hoàn lặp liên tục, nhiễu không tuần hoàn dự đoán được nhưng không liên tục (ví dụ xung đóng cắt), nhiễu ngẫu nhiên hoàn toàn không dự đoán được. Chữ a-periodic nghĩa là không có chu kỳ đều.</p><p>Thang: tuần hoàn > không tuần hoàn > ngẫu nhiên về độ dự đoán.</p>"
   },
   {
    "q": "EMI có thể truyền từ nguồn đến máy thu bằng:",
@@ -20,7 +21,8 @@
    ],
    "correct": 1,
    "explain": "Năng lượng có thể được dẫn qua dây và kết cấu kim loại, hoặc bức xạ qua không khí, nhựa, sợi thuỷ tinh (Tooley 14.4.1).",
-   "src": "Tooley Ch.14 Q2"
+   "src": "Tooley Ch.14 Q2",
+   "detail": "<p>EMI truyền theo hai đường: dẫn điện qua dây và kết cấu kim loại, hoặc bức xạ qua không khí, nhựa, sợi thuỷ tinh. Phương án chỉ một đường bỏ sót đường còn lại, nên cả hai biện pháp cách ly (che chắn và lọc) đều cần.</p><p>Dẫn điện: lọc; bức xạ: che chắn.</p>"
   },
   {
    "q": "Màn hình của máy phân tích phổ hiển thị:",
@@ -31,7 +33,8 @@
    ],
    "correct": 1,
    "explain": "Máy phân tích phổ vẽ mức tín hiệu (biên độ) theo tần số; biên độ theo thời gian là dao động ký.",
-   "src": "Tooley Ch.14 Q3"
+   "src": "Tooley Ch.14 Q3",
+   "detail": "<p>Máy phân tích phổ vẽ biên độ (mức tín hiệu) theo tần số, nên thấy được từng thành phần nhiễu. Dao động ký mới vẽ biên độ theo thời gian. Không có thiết bị nào cho tần số theo thời gian như một đường đơn giản (đó là spectrogram).</p><p>Trục ngang: tần số.</p>"
   },
   {
    "q": "EMI có thể được giảm bằng:",
@@ -42,7 +45,8 @@
    ],
    "correct": 2,
    "explain": "Cả ba nhóm biện pháp (che chắn, liên kết/nối đất, lọc) đều giảm EMI (Tooley 14.4.3, 14.6).",
-   "src": "Tooley Ch.14 Q4"
+   "src": "Tooley Ch.14 Q4",
+   "detail": "<p>Ba nhóm biện pháp giảm EMI là che chắn, liên kết/nối đất và lọc. Chỉ dùng một hay hai nhóm là không đầy đủ vì mỗi nhóm xử lý một đường truyền khác nhau.</p><p>Slide bài giảng cũng nêu thêm tách cáp và lõi ferrite.</p>"
   },
   {
    "q": "Ảnh hưởng của HIRF có thể được giảm bằng:",
@@ -53,7 +57,8 @@
    ],
    "correct": 0,
    "explain": "Tooley 14.6: nối đất và liên kết giúp giảm tác động của trường RF cường độ cao (HIRF) cùng với che chắn và lọc.",
-   "src": "Tooley Ch.14 Q5"
+   "src": "Tooley Ch.14 Q5",
+   "detail": "<p>HIRF được giảm bằng cùng bộ ba: che chắn, liên kết và lọc. Liên kết cho đường dòng điện trở kháng thấp, che chắn giữ trường ngoài khỏi dây, lọc loại bỏ phần lọt vào.</p><p>HIRF = trường RF cường độ cao từ bên ngoài.</p>"
   },
   {
    "q": "Giá trị tối đa điển hình của điện trở liên kết là:",
@@ -64,7 +69,8 @@
    ],
    "correct": 2,
    "explain": "Điện trở liên kết phải rất thấp (Tooley 14.6 ghi dưới 0,001 đến 0,003 Ω; slide bài giảng ghi 0,001 đến 0,003 Ω); phương án (a) là phương án phù hợp.",
-   "src": "Tooley Ch.14 Q6"
+   "src": "Tooley Ch.14 Q6",
+   "detail": "<p>Điện trở liên kết phải cực nhỏ (cỡ mili-ôm) để dòng sét và tĩnh điện chảy qua mà không tạo chênh lệch điện thế. Chỉ phương án \"dưới 0,005 Ω\" nằm trong khoảng hợp lý; hai phương án kia cho điện trở lớn hơn nhiều.</p><p>Cảnh báo: Tooley và bài giảng nêu ngưỡng khác nhau (0,001 đến 0,003 Ω) nên chỉ dùng mức độ lớn.</p>"
   },
   {
    "q": "Bảo vệ hiệu quả máy bay khỏi hư hại do sét và phóng tĩnh điện đòi hỏi:",
@@ -75,7 +81,8 @@
    ],
    "correct": 2,
    "explain": "Phải có đường trở kháng thấp cho dòng sét và tĩnh điện: liên kết toàn bộ kết cấu kim loại, không để vật dẫn bị cô lập.",
-   "src": "Tooley Ch.14 Q7"
+   "src": "Tooley Ch.14 Q7",
+   "detail": "<p>Phải liên kết mọi phần kết cấu kim loại với đất để có đường trở kháng thấp cho dòng sét và phóng tĩnh điện; vật dẫn bị cô lập có thể tích điện và phóng tia lửa. Cách điện cáp không giải quyết đường dòng điện.</p><p>Quy tắc: không để vật dẫn \"nổi\".</p>"
   },
   {
    "q": "Nhiễu theo nguồn (supply-borne noise) có thể được loại bỏ bằng:",
@@ -86,7 +93,8 @@
    ],
    "correct": 1,
    "explain": "Nguồn là DC hoặc 400 Hz nên bộ lọc thông thấp giữ nguồn và chặn nhiễu tần cao.",
-   "src": "Tooley Ch.14 Q8"
+   "src": "Tooley Ch.14 Q8",
+   "detail": "<p>Nguồn cấp là DC hoặc 400 Hz (tần số thấp) còn nhiễu theo nguồn ở tần số cao, nên bộ lọc thông thấp giữ nguồn và chặn nhiễu. Bộ thông cao và thông dải sẽ chặn nguồn.</p><p>Tần cắt RC: f = 1/(2πRC), ví dụ 1 kΩ và 100 nF cho 1,59 kHz.</p>"
   },
   {
    "q": "Nhiễu do mạch đóng cắt sinh ra nặng hơn khi:",
@@ -97,7 +105,8 @@
    ],
    "correct": 1,
    "explain": "Năng lượng điện từ phát ra lớn hơn khi mức tín hiệu thay đổi nhiều và nhanh (Tooley 14.4.2).",
-   "src": "Tooley Ch.14 Q9"
+   "src": "Tooley Ch.14 Q9",
+   "detail": "<p>Phát xạ mạnh nhất khi mức tín hiệu thay đổi nhiều và nhanh: đóng cắt nhanh với dòng lớn cho di/dt cao. Đóng cắt chậm hay dòng nhỏ đều làm giảm phát xạ.</p><p>Chống: làm chậm cạnh xung, dùng tụ hay mạch snubber.</p>"
   }
  ],
  "floyd": [
@@ -110,7 +119,8 @@
    ],
    "correct": 0,
    "explain": "Hai dây trong mỗi cặp xoắn sao cho cắt nhau gần 90° và triệt tiêu các trường điện từ do tín hiệu sinh ra.",
-   "src": "Floyd Ch.13 · mục 13-1, Hình 13-4 (tr.741; Section Checkup)"
+   "src": "Floyd Ch.13 · mục 13-1, Hình 13-4 (tr.741; Section Checkup)",
+   "detail": "<p>Hai dây trong cặp xoắn cắt nhau gần 90° nên trường điện từ do tín hiệu của từng dây triệt tiêu, giảm crosstalk. Dây trần hoặc chỉ cách điện dày không làm triệt tiêu trường.</p><p>Self-Test 1 ở Module 08 hỏi cùng ý.</p>"
   },
   {
    "q": "Loại cáp nào của Floyd bảo vệ tốt hơn trước EMI nhờ vỏ kim loại?",
@@ -121,7 +131,8 @@
    ],
    "correct": 1,
    "explain": "Floyd: STP bọc trong ống kim loại và bảo vệ tốt hơn trước EMI; UTP chỉ dùng ở môi trường ít nhiễu và tần số thấp hơn.",
-   "src": "Floyd Ch.13 · mục 13-1 (tr.741)"
+   "src": "Floyd Ch.13 · mục 13-1 (tr.741)",
+   "detail": "<p>STP có vỏ kim loại bao quanh nên bảo vệ tốt hơn trước EMI nhưng đắt và nặng hơn UTP. UTP dùng ở môi trường ít nhiễu và tần số thấp hơn (đến khoảng 1 MHz).</p><p>Chọn: nhiễu cao thì STP, ít nhiễu thì UTP.</p>"
   },
   {
    "q": "Gai dòng và áp trên VCC và đất trong mạch số được hấp thụ bằng cách nào?",
@@ -132,7 +143,8 @@
    ],
    "correct": 1,
    "explain": "Floyd: dùng tụ khoảng 1 µF cho cả bo mạch và các tụ nhỏ 0,022 đến 0,1 µF rải rác gần thiết bị chuyển mạch nhanh.",
-   "src": "Floyd Ch.6 · mục 6-11 (tr.364)"
+   "src": "Floyd Ch.6 · mục 6-11 (tr.364)",
+   "detail": "<p>Mạch số chuyển mạch nhanh rút dòng xung từ nguồn nên VCC bị gai. Tụ tách nối VCC xuống đất cung cấp dòng cục bộ và hấp thụ gai; đặt gần chân nguồn của IC. Tăng điện trở nguồn làm gai tệ hơn.</p><p>Phối hợp: tụ khối 1 µF + tụ nhỏ 0,022 đến 0,1 µF.</p>"
   },
   {
    "q": "Noise margin mức CAO V_NH của cổng logic được định nghĩa là:",
@@ -143,7 +155,8 @@
    ],
    "correct": 2,
    "explain": "Phương trình 15-1; V_NL = V_IL(max) − V_OL(max) là phương trình 15-2.",
-   "src": "Floyd Ch.15 · mục 15-3 (tr.859)"
+   "src": "Floyd Ch.15 · mục 15-3 (tr.859)",
+   "detail": "<p>Noise margin mức cao V_NH = V_OH(min) − V_IH(min): phần dư giữa mức cao tối thiểu mà cổng lái đưa ra và mức cao tối thiểu mà cổng nhận chấp nhận. Mức thấp là V_NL = V_IL(max) − V_OL(max). Hai phương án còn lại trộn các đại lượng sai.</p><p>Nhớ: lấy đầu ra trừ đầu vào ở cùng mức.</p>"
   },
   {
    "q": "Cổng TTL có VIH(min) = 2,25 V và VIL(max) = 0,65 V, được lái bởi cổng có VOH(min) = 2,4 V và VOL(max) = 0,4 V. Noise margin mức CAO và THẤP là:",
@@ -154,7 +167,54 @@
    ],
    "correct": 0,
    "explain": "V_NH = 2,4 − 2,25 = 0,15 V; V_NL = 0,65 − 0,4 = 0,25 V (khớp đáp án in).",
-   "src": "Floyd Ch.15 · Bài 3 (tr.887; đáp án A-28)"
+   "src": "Floyd Ch.15 · Bài 3 (tr.887; đáp án A-28)",
+   "detail": "<p>V_NH = V_OH(min) − V_IH(min) = 2,4 − 2,25 = 0,15 V; V_NL = V_IL(max) − V_OL(max) = 0,65 − 0,4 = 0,25 V. 2,4 V và 0,4 V chỉ là mức đầu ra, không phải noise margin.</p><p>Noise margin nhỏ nghĩa là dễ bị nhiễu làm đổi mức.</p>"
+  },
+  {
+   "q": "Cổng có V_IL(max) = 0,8 V được lái bởi cổng có V_OL(max) = 0,4 V. Noise margin mức THẤP là:",
+   "opts": [
+    "1,2 V",
+    "0,8 V",
+    "0,4 V"
+   ],
+   "correct": 2,
+   "explain": "V_NL = V_IL(max) − V_OL(max) = 0,8 − 0,4 = 0,4 V.",
+   "src": "Floyd Ch.15 · mục 15-3",
+   "detail": "<p>Đây là phương trình 15-2 của Floyd. Cộng thay vì trừ cho 1,2 V sai; 0,8 V chỉ là V_IL(max).</p><p>Noise margin là biên độ nhiễu lớn nhất có thể cộng vào mà cổng vẫn đọc đúng mức thấp.</p>"
+  },
+  {
+   "q": "Cổng được lái có V_OH(min) = 2,4 V và cổng nhận có V_IH(min) = 2,0 V. Noise margin mức CAO là:",
+   "opts": [
+    "4,4 V",
+    "2,0 V",
+    "0,4 V"
+   ],
+   "correct": 2,
+   "explain": "V_NH = V_OH(min) − V_IH(min) = 2,4 − 2,0 = 0,4 V.",
+   "src": "Floyd Ch.15 · mục 15-3",
+   "detail": "<p>Phương trình 15-1: lấy đầu ra tối thiểu trừ đầu vào tối thiểu ở cùng mức cao. 4,4 V là tổng, vô nghĩa; 2,0 V chỉ là ngưỡng vào.</p>"
+  },
+  {
+   "q": "Cáp xoắn đôi giảm crosstalk vì các trường điện từ của hai dây triệt tiêu nhau.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng.",
+   "src": "Floyd Ch.13 · mục 13-1",
+   "detail": "<p>Hai dây cắt nhau gần 90° nên từ thông do dòng ngược chiều triệt tiêu. Slide 29 cũng đặt dây xoắn hoặc bọc đầu tiên trong danh sách cải thiện EMC.</p>"
+  },
+  {
+   "q": "Tụ tách (decoupling) đặt xa chân nguồn của IC vẫn hiệu quả như đặt gần.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Sai: phải đặt gần chân nguồn.",
+   "src": "Floyd Ch.6 · mục 6-11",
+   "detail": "<p>Dây dài thêm điện cảm ký sinh nên tụ không cấp được dòng xung nhanh. Floyd 6-11 khuyên đặt các tụ nhỏ phân bố gần thiết bị chuyển mạch nhanh.</p>"
   }
  ],
  "generated": [
@@ -167,7 +227,8 @@
    ],
    "correct": 0,
    "explain": "10 log(0,5 W / 1 mW) = 10 log 500 = 26,99 ≈ 27 dBm (slide 19).",
-   "src": ""
+   "src": "",
+   "detail": "<p>10 log(0,5 W/1 mW) = 10 log 500 = 26,99, xấp xỉ 27 dBm. 30 dBm là 1 W và −3 dBm là nửa mW. Mốc nhớ: 0 dBm = 1 mW, 30 dBm = 1 W.</p><p>Đổi nhanh: mỗi ×10 công suất là +10 dB.</p>"
   },
   {
    "q": "Cáp có tổn hao −2 dB, điện áp vào 1 V. Điện áp ra xấp xỉ:",
@@ -178,40 +239,44 @@
    ],
    "correct": 1,
    "explain": "V_out = 10^(−2/20) × 1 V = 0,794 V (0,631 là kết quả nếu nhầm dùng hệ số 10).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Với điện áp: V_out = V_in × 10^(dB/20) = 10^(−0,1) = 0,794 V. 0,631 là kết quả nếu dùng 10 thay 20 (tính theo công suất).</p><p>Điện áp dùng 20 log, công suất dùng 10 log.</p>"
   },
   {
    "q": "Bộ khuếch đại +40 dB, công suất vào 10 W. Công suất ra là:",
    "opts": [
-    "400 W (10 W nhân 40)",
+    "10 kW như in trên slide",
     "100 kW (10 × 10⁴ W)",
-    "10 kW như in trên slide"
+    "400 W (10 W nhân 40)"
    ],
    "correct": 1,
    "explain": "10 W × 10^(40/10) = 10 × 10⁴ = 100 000 W. Slide 21 in nhầm là 10 kW.",
-   "src": ""
+   "src": "",
+   "detail": "<p>+40 dB công suất là ×10⁴, 10 W × 10 000 = 100 kW. Slide 21 in 10 kW là sai (thiếu một bậc 10). 400 W nhầm cộng thành nhân.</p><p>Kiểm tra: +10 dB ×10, +20 dB ×100, +30 dB ×1000, +40 dB ×10⁴.</p>"
   },
   {
    "q": "Mức vào −20 dBm qua bộ khuếch đại +30 dB. Mức ra là:",
    "opts": [
-    "−50 dBm",
     "30 dBm",
+    "−50 dBm",
     "10 dBm"
    ],
    "correct": 2,
    "explain": "−20 + 30 = 10 dBm = 10 mW.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Mức dBm cộng trực tiếp với độ lợi dB: −20 + 30 = +10 dBm = 10 mW. −50 dBm là trừ nhầm và 30 dBm là bỏ mức vào.</p><p>Không cộng dBm với dBm; chỉ cộng dBm với dB.</p>"
   },
   {
    "q": "Điện áp tăng gấp 10 lần tương ứng bao nhiêu dB?",
    "opts": [
     "+20 dB",
-    "+10 dB",
-    "+100 dB"
+    "+100 dB",
+    "+10 dB"
    ],
    "correct": 0,
    "explain": "20 log 10 = 20 dB (công suất tăng 10 lần mới là 10 dB).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Điện áp tăng ×10 cho 20 log 10 = +20 dB. Công suất ×10 mới là +10 dB. +100 dB là ×10⁵ về điện áp.</p><p>Bình phương: công suất ∝ V², nên hệ số 20 gấp hai lần hệ số 10.</p>"
   },
   {
    "q": "Sóng vuông biên độ 50 V (theo dạng V/n), tần số 2 kHz. Hài bậc 5 có biên độ và tần số:",
@@ -222,73 +287,224 @@
    ],
    "correct": 2,
    "explain": "50/5 = 10 V; 5 × 2 kHz = 10 kHz (Tooley TYU 14.1).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Sóng vuông chỉ có hài lẻ với biên độ V/n (theo cách đặt của Tooley, V là biên độ cơ bản). Hài 5: 50/5 = 10 V ở 5 × 2 kHz = 10 kHz. 5 kHz nhầm tần số thành chia.</p><p>Hài chẵn của sóng vuông đối xứng bằng 0.</p>"
   },
   {
    "q": "Tụ 100 nF có ESL 10 nH thì tần số cộng hưởng xấp xỉ:",
    "opts": [
-    "500 MHz",
     "50 kHz",
+    "500 MHz",
     "5,0 MHz"
    ],
    "correct": 2,
    "explain": "f_r = 1/(2π√(10⁻⁷ × 10⁻⁸)) = 5,03 MHz.",
-   "src": ""
+   "src": "",
+   "detail": "<p>f_r = 1/(2π√(LC)) = 1/(2π√(10 nH × 100 nF)) = 1/(2π × 3,16×10⁻⁸) = 5,03 MHz. 50 kHz và 500 MHz sai số bậc 100.</p><p>ESL càng nhỏ, cộng hưởng càng cao, nên tụ nhỏ dùng cho tần số cao.</p>"
   },
   {
    "q": "Trên tần số cộng hưởng, tụ thực hoạt động như:",
    "opts": [
     "Chuẩn chất lượng cho phần mềm điều khiển bay",
-    "Quy trình thử do RTCA ban hành, không phải yêu cầu",
-    "Quy định bắt buộc của chính phủ về EMC cho máy bay"
+    "Quy định bắt buộc của chính phủ về EMC cho máy bay",
+    "Quy trình thử do RTCA ban hành, không phải yêu cầu"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Trên f_r thành phần ESL chiếm ưu thế, Z tăng theo tần số (slide 36).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Dưới f_r tụ thực là tụ; trên f_r điện cảm ký sinh ESL chiếm ưu thế nên Z = ωL tăng theo tần số và tụ hoạt động như cuộn cảm, kém tác dụng lọc. Nó không bao giờ thành điện trở thuần ở dải rộng.</p><p>Vì thế dùng song song tụ lớn và tụ nhỏ.</p>"
   },
   {
    "q": "DO-160 là gì?",
    "opts": [
     "Chuẩn chất lượng phần mềm",
-    "Quy trình thử do RTCA ban hành, không phải một yêu cầu",
-    "Quy định bắt buộc của chính phủ về EMC"
+    "Quy định bắt buộc của chính phủ về EMC",
+    "Quy trình thử do RTCA ban hành, không phải một yêu cầu"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Slide 27: DO-160 là quy trình thử; DO-178 mới là phần mềm.",
-   "src": ""
+   "src": "",
+   "detail": "<p>DO-160 là quy trình thử môi trường (gồm EMC) do RTCA ban hành, chính nó không đặt yêu cầu; yêu cầu đến từ quy định chứng nhận. Chuẩn phần mềm là DO-178.</p><p>Ba chuẩn: DO-160 (thử), DO-178 (phần mềm), DO-254 (phần cứng).</p>"
   },
   {
    "q": "Giới hạn phát xạ bức xạ CISPR 11 Group 1 Class A trên 230 MHz (ở 30 m) là:",
    "opts": [
     "Cấm dùng thiết bị Wi-Fi khi động cơ chạy cho mục đích bay",
-    "Lắp thêm lõi ferrite cho tất cả màn hình buồng lái",
-    "Tắt toàn bộ màn hình khi bật hệ thống Wi-Fi"
+    "Tắt toàn bộ màn hình khi bật hệ thống Wi-Fi",
+    "Lắp thêm lõi ferrite cho tất cả màn hình buồng lái"
    ],
    "correct": 0,
    "explain": "Slide 26: 30 dBµV/m từ 30 đến 230 MHz, 37 dBµV/m trên 230 MHz.",
-   "src": ""
+   "src": "",
+   "detail": "<p>CISPR 11 Nhóm 1 Class A, đo ở 30 m: 30 dBµV/m cho 30 đến 230 MHz và 37 dBµV/m trên 230 MHz. 47 dBµV/m là ngưỡng khác (đo ở khoảng cách khác).</p><p>Đọc kỹ khoảng cách đo khi so ngưỡng.</p>"
   },
   {
    "q": "Wi-Fi gây nhiễu màn hình trên Boeing 757. Biện pháp được nêu trên biển trong buồng lái là:",
    "opts": [
-    "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu nhau",
     "Ferrite chỉ chặn các tần số rất thấp nên bỏ qua tín hiệu",
+    "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu nhau",
     "Ferrite không có tính chất từ nên không tác động lên gì"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Slide 3: biển cảnh báo cấm dùng Wi-Fi ở buồng lái khi động cơ chạy.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Trên Boeing 757 thiết bị Wi-Fi gây nhiễu màn hình, nên biển trong buồng lái cấm dùng Wi-Fi khi động cơ chạy cho mục đích bay. Ferrite là biện pháp kỹ thuật khác, không phải nội dung biển.</p><p>Ví dụ điển hình cho EMI từ thiết bị cá nhân.</p>"
   },
   {
    "q": "Tại sao lõi ferrite không ảnh hưởng tín hiệu vi sai mong muốn?",
    "opts": [
     "Ferrite không có từ tính",
-    "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu",
-    "Ferrite chỉ chặn tần số thấp"
+    "Ferrite chỉ chặn tần số thấp",
+    "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu"
+   ],
+   "correct": 2,
+   "explain": "Slide 32: chế độ vi sai từ thông triệt tiêu, trở kháng thấp; chế độ chung từ thông cộng, trở kháng cao.",
+   "src": "",
+   "detail": "<p>Hai dây tín hiệu mang dòng ngược chiều nên từ thông trong lõi ferrite triệt tiêu: trở kháng thấp, tín hiệu không bị cản. Nhiễu chế độ chung có dòng cùng chiều nên từ thông cộng, trở kháng cao, bị chặn.</p><p>Ferrite lọc nhiễu chế độ chung mà không ảnh hưởng tín hiệu.</p>"
+  },
+  {
+   "q": "Công suất 1 W tương ứng bao nhiêu dBm?",
+   "opts": [
+    "100 dBm",
+    "30 dBm",
+    "0 dBm"
    ],
    "correct": 1,
-   "explain": "Slide 32: chế độ vi sai từ thông triệt tiêu, trở kháng thấp; chế độ chung từ thông cộng, trở kháng cao.",
-   "src": ""
+   "explain": "10 log(1 W/1 mW) = 10 log 1000 = 30 dBm.",
+   "src": "Bài giảng EMC · slide 19",
+   "detail": "<p>dBm lấy 1 mW làm gốc: 0 dBm = 1 mW. 1 W gấp 1000 lần 1 mW, nên 10 × 3 = 30 dBm. 0 dBm là 1 mW chứ không phải 1 W.</p><p>Mốc: 0 dBm = 1 mW, 30 dBm = 1 W, 60 dBm = 1 kW.</p>"
+  },
+  {
+   "q": "Thêm 3 dB độ lợi thì công suất thay đổi khoảng:",
+   "opts": [
+    "tăng thêm 3 W",
+    "gấp đôi",
+    "gấp ba"
+   ],
+   "correct": 1,
+   "explain": "10^(3/10) = 1,995 ≈ 2.",
+   "src": "Bài giảng EMC · slide 14",
+   "detail": "<p>Công thức G = 10^(dB/10) cho 1,995 với 3 dB. Ba lần sẽ là 4,77 dB. dB là tỉ lệ nên không cộng thêm số oát cố định.</p><p>Ngược lại −3 dB là còn một nửa.</p>"
+  },
+  {
+   "q": "Mức −90 dBm tương đương công suất:",
+   "opts": [
+    "1 pW (10⁻¹² W)",
+    "1 nW (10⁻⁹ W)",
+    "10⁻⁹ mW = 1 µW"
+   ],
+   "correct": 0,
+   "explain": "10^(−90/10) mW = 10⁻⁹ mW = 10⁻¹² W.",
+   "src": "Tooley 14.4; Bài giảng EMC · slide 18",
+   "detail": "<p>−90 dBm = 10⁻⁹ mW, và 1 mW = 10⁻³ W nên bằng 10⁻¹² W = 1 pW. Phương án thứ ba tự mâu thuẫn: 10⁻⁹ mW không phải 1 µW. Đây là cỡ công suất của bộ thu tín hiệu yếu (Tooley Hình 14.9).</p><p>Đừng quên đổi mW sang W.</p>"
+  },
+  {
+   "q": "Tỉ số điện áp 0,5 (giảm một nửa) tương ứng:",
+   "opts": [
+    "−6 dB",
+    "−3 dB",
+    "−10 dB"
+   ],
+   "correct": 0,
+   "explain": "20 log 0,5 = −6,02 dB.",
+   "src": "Bài giảng EMC · slide 15",
+   "detail": "<p>Điện áp dùng 20 log: 20 × (−0,301) = −6,02 dB. −3 dB là công suất giảm một nửa. Vì công suất ∝ V², điện áp một nửa cho công suất một phần tư (−6 dB).</p>"
+  },
+  {
+   "q": "Sóng vuông 1 kHz chứa các hài ở:",
+   "opts": [
+    "1, 2, 3, 4 kHz...",
+    "1, 3, 5, 7 kHz... (chỉ hài lẻ)",
+    "chỉ 1 kHz"
+   ],
+   "correct": 1,
+   "explain": "Sóng vuông đối xứng chỉ có hài lẻ, biên độ V/n.",
+   "src": "Bài giảng EMC · slide 10; Tooley TYU 14.1",
+   "detail": "<p>Chuỗi Fourier của sóng vuông: (4V/π)(sin ωt + sin 3ωt/3 + sin 5ωt/5 + ...). Cạnh càng dốc thì hài cao càng mạnh, nên xung nhanh phát nhiễu băng rộng. Một tần số duy nhất chỉ có ở sóng sin.</p><p>Đây là lý do làm chậm cạnh xung giảm EMI.</p>"
+  },
+  {
+   "q": "Tụ 1 µF có ESL 10 nH thì tần số cộng hưởng xấp xỉ:",
+   "opts": [
+    "5,03 MHz",
+    "159 kHz",
+    "1,59 MHz"
+   ],
+   "correct": 2,
+   "explain": "f_r = 1/(2π√(10⁻⁶ × 10⁻⁸)) = 1,59 MHz.",
+   "src": "Bài giảng EMC · slide 36",
+   "detail": "<p>√(10⁻¹⁴) = 10⁻⁷ nên f_r = 1/(2π × 10⁻⁷) = 1,59 MHz. 5,03 MHz là kết quả cho 100 nF. Tụ lớn hơn cộng hưởng thấp hơn: nó lọc tốt ở tần số thấp nhưng thành cuộn cảm sớm hơn.</p>"
+  },
+  {
+   "q": "Cách nào bảo vệ tốt nhất cho dây tín hiệu nhạy khỏi nhiễu điện trường bên ngoài?",
+   "opts": [
+    "Chạy song song với cáp công suất",
+    "Bọc chống nhiễu nối đất ít nhất một đầu",
+    "Cuộn dây thành vòng lớn"
+   ],
+   "correct": 1,
+   "explain": "Lưới bọc nối đất làm lệch dòng nhiễu xuống đất.",
+   "src": "Tooley 14.4.3; Bài giảng EMC · slide 29, 38",
+   "detail": "<p>Lưới bọc hoạt động như lồng Faraday với trường điện. Vòng lớn tăng diện tích thu từ trường, còn chạy song song với cáp công suất tăng ghép nối. Nối đất hai đầu bảo vệ trường điện từ tốt hơn ở tần số cao nhưng có thể tạo vòng đất ở tần số thấp.</p><p>Quy tắc: tách cáp, xoắn đôi và bọc.</p>"
+  },
+  {
+   "q": "Vòng đất (ground loop) xảy ra khi:",
+   "opts": [
+    "dây tín hiệu được xoắn đôi",
+    "tất cả thiết bị chung một điểm đất duy nhất",
+    "lưới bọc nối đất ở hai điểm khác điện thế, tạo đường cho dòng nhiễu"
+   ],
+   "correct": 2,
+   "explain": "Chênh lệch điện thế đất làm dòng chạy qua lưới bọc.",
+   "src": "Bài giảng EMC · slide 39; Tooley 14.4.3",
+   "detail": "<p>Hai điểm đất của máy bay có thể chênh điện thế do dòng hồi, nên dòng chạy trong lưới bọc và ghép vào tín hiệu. Nối đất một điểm tránh được vòng này. Xoắn đôi là biện pháp giảm nhiễu từ, không phải nguyên nhân.</p>"
+  },
+  {
+   "q": "Trong thử nghiệm sét theo thực tế, thủ tục nào đảm bảo an toàn nhiên liệu khi sét đánh?",
+   "opts": [
+    "Tháo hết dây nối đất",
+    "Liên kết điện toàn bộ kết cấu và tránh khe hở có thể phóng tia lửa",
+    "Dùng vỏ nhựa cho thùng nhiên liệu"
+   ],
+   "correct": 1,
+   "explain": "Liên kết toàn kết cấu cho dòng sét một đường dẫn liên tục.",
+   "src": "Bài giảng EMC · slide 44; Tooley 14.6",
+   "detail": "<p>Dòng sét đỉnh 10 đến 200 kA (slide 11); nếu có khe hở trong đường dẫn thì phát tia lửa ngay cạnh nhiên liệu. Vỏ cách điện không có đường dẫn dòng và tháo dây nối đất làm điều ngược lại.</p><p>Cùng nguyên tắc với câu 7 Tooley 14; slide 44 nêu thêm ngăn tích tĩnh điện cho nhiên liệu.</p>"
+  },
+  {
+   "q": "Bộ lọc RC thông thấp với R = 1 kΩ và C = 100 nF có tần số cắt:",
+   "opts": [
+    "15,9 kHz",
+    "1,59 kHz",
+    "159 Hz"
+   ],
+   "correct": 1,
+   "explain": "f_c = 1/(2πRC) = 1/(2π × 10⁻⁴) = 1,59 kHz.",
+   "src": "Tooley 14.4.3",
+   "detail": "<p>RC = 1000 × 100×10⁻⁹ = 10⁻⁴ s. f_c = 1/(2π × 10⁻⁴) = 1591 Hz. 159 Hz ứng với C = 1 µF và 15,9 kHz ứng với C = 10 nF.</p><p>Tại f_c biên độ giảm 3 dB.</p>"
+  },
+  {
+   "q": "Trong nhiễu dẫn điện, nhiễu chế độ chung (common-mode) khác chế độ vi sai ở chỗ:",
+   "opts": [
+    "chỉ có ở tần số 400 Hz",
+    "dòng nhiễu ngược chiều trên hai dây",
+    "dòng nhiễu cùng chiều trên cả hai dây so với đất"
+   ],
+   "correct": 2,
+   "explain": "Chế độ chung: cùng pha trên cả hai dây; vi sai: ngược pha.",
+   "src": "Bài giảng EMC · slide 32",
+   "detail": "<p>Lõi ferrite quanh cả hai dây chặn chế độ chung (từ thông cộng) mà không cản tín hiệu vi sai (từ thông triệt tiêu). Chế độ vi sai là chế độ của tín hiệu mong muốn nên không thể lọc bỏ bằng ferrite.</p>"
+  },
+  {
+   "q": "Nên làm gì để giảm bức xạ từ cáp công suất gây nhiễu sang cáp tín hiệu?",
+   "opts": [
+    "Bó chung vào cùng một bó",
+    "Chạy song song sát nhau",
+    "Tách xa nhau và cắt ngang nhau ở góc vuông"
+   ],
+   "correct": 2,
+   "explain": "Ghép nối tỉ lệ nghịch với khoảng cách và có hướng.",
+   "src": "Bài giảng EMC · slide 39",
+   "detail": "<p>Cắt vuông góc làm từ thông của cáp này không xuyên qua vòng của cáp kia nên ghép nối gần bằng 0. Bó chung và chạy song song là ghép nối tối đa; slide 39 nêu tách cáp công suất và tín hiệu.</p>"
   }
  ]
 }

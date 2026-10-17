@@ -743,31 +743,31 @@
   {
    "q": "Nếu CPU chạy ở xung nhịp 100MHz, một chu kỳ xung nhịp (T-state) kéo dài:",
    "opts": [
-    "1 ns",
     "10 ns",
-    "100 ns"
+    "100 ns",
+    "1 ns"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "T = 1/f = 1/100.000.000 = 10ns.",
    "src": ""
   },
   {
    "q": "Một bus dữ liệu 8-bit biểu diễn được giá trị thập phân từ 0 đến:",
    "opts": [
-    "255",
     "128",
+    "255",
     "256"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "2⁸-1 = 255.",
    "src": ""
   },
   {
    "q": "Một bus địa chỉ 16-bit định vị được bao nhiêu ô nhớ khác nhau?",
    "opts": [
-    "32.768",
+    "16.384",
     "65.536",
-    "16.384"
+    "32.768"
    ],
    "correct": 1,
    "explain": "2¹⁶ = 65.536.",
@@ -776,41 +776,41 @@
   {
    "q": "ROM được mô tả đúng nhất là:",
    "opts": [
+    "bộ nhớ đọc/ghi, mất dữ liệu khi mất điện",
     "bộ nhớ chỉ đọc nhưng mất dữ liệu khi mất điện",
-    "bộ nhớ chỉ đọc, không mất dữ liệu khi mất điện (non-volatile)",
-    "bộ nhớ đọc/ghi, mất dữ liệu khi mất điện"
+    "bộ nhớ chỉ đọc, không mất dữ liệu khi mất điện (non-volatile)"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "ROM là bộ nhớ non-volatile: dữ liệu vẫn còn khi mất điện.",
    "src": ""
   },
   {
    "q": "RAM (bán dẫn thông thường) sẽ mất dữ liệu đã lưu khi nào?",
    "opts": [
-    "chỉ sau 24 giờ",
     "mất nguồn điện cấp (volatile)",
-    "không bao giờ mất"
+    "không bao giờ mất",
+    "chỉ sau 24 giờ"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "RAM là bộ nhớ volatile (dễ bay hơi), mất dữ liệu ngay khi ngắt điện.",
    "src": ""
   },
   {
    "q": "ALU trong CPU chịu trách nhiệm chính cho việc:",
    "opts": [
+    "lưu địa chỉ lệnh kế tiếp",
     "tạo xung clock hệ thống",
-    "thực hiện các phép toán số học và logic",
-    "lưu địa chỉ lệnh kế tiếp"
+    "thực hiện các phép toán số học và logic"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "ALU = Arithmetic Logic Unit, thực hiện cộng/trừ/AND/OR...",
    "src": ""
   },
   {
    "q": "Thanh ghi bộ đếm chương trình (Program Counter) chứa:",
    "opts": [
-    "kết quả phép toán ALU gần nhất",
     "giá trị con trỏ ngăn xếp hiện tại",
+    "kết quả phép toán ALU gần nhất",
     "địa chỉ của lệnh kế tiếp sẽ thực thi"
    ],
    "correct": 2,
@@ -821,19 +821,19 @@
    "q": "Trong chu trình fetch-decode-execute, bước nào lấy lệnh từ bộ nhớ?",
    "opts": [
     "execute (thực thi)",
-    "decode (giải mã)",
-    "fetch (nạp lệnh)"
+    "fetch (nạp lệnh)",
+    "decode (giải mã)"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "Bước fetch đọc mã lệnh từ ô nhớ được PC trỏ tới.",
    "src": ""
   },
   {
    "q": "Một vi điều khiển thực thi lệnh cần 4 T-state ở xung nhịp 20MHz, thời gian thực thi là:",
    "opts": [
-    "80 ns",
+    "20 ns",
     "200 ns",
-    "20 ns"
+    "80 ns"
    ],
    "correct": 1,
    "explain": "T=1/20MHz=50ns; 4×50ns=200ns.",
@@ -842,33 +842,33 @@
   {
    "q": "Một IC nhớ 16K×8-bit có tổng dung lượng lưu trữ là:",
    "opts": [
-    "32 KB",
     "16 KB",
-    "8 KB"
+    "8 KB",
+    "32 KB"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "16K từ × 8 bit/từ = 16K byte = 16KB.",
    "src": ""
   },
   {
    "q": "Bus nào mang tín hiệu định thời và điều khiển xuyên suốt hệ thống máy tính?",
    "opts": [
-    "address bus",
     "control bus",
-    "data bus"
+    "data bus",
+    "address bus"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "Control bus mang các tín hiệu điều khiển/định thời (R/W, clock, interrupt...).",
    "src": ""
   },
   {
    "q": "Một vi xử lý có bus địa chỉ 32-bit định vị trực tiếp được tối đa:",
    "opts": [
+    "4 MB",
     "4 GB",
-    "4 TB",
-    "4 MB"
+    "4 TB"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "2³² byte = 4.294.967.296 byte = 4GB.",
    "src": ""
   }

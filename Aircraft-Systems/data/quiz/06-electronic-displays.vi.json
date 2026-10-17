@@ -9,7 +9,8 @@
    ],
    "correct": 1,
    "explain": "MFD là màn hình cấu hình được: radar thời tiết, bản đồ dẫn đường, danh mục kiểm tra, hoặc thay cho PFD/ND khi một trong hai hỏng (Tooley 1.1.5.6).",
-   "src": "Tooley Ch.1 Q1"
+   "src": "Tooley Ch.1 Q1",
+   "detail": "<p>MFD là màn hình cấu hình được: hiển thị radar thời tiết, bản đồ dẫn đường, danh mục kiểm tra, hoặc thay cho PFD/ND khi một trong hai hỏng. Nó không bị giới hạn ở thông tin bay cơ bản, và không dùng để hiển thị dữ liệu la bàn từ dự phòng, vốn là một cơ cấu cơ độc lập.</p><p>Cách nhớ: \"multifunction\" nghĩa là nhiều chức năng, chọn bằng bảng điều khiển.</p>"
   },
   {
    "q": "Những đồng hồ dự phòng nào chạy bằng hệ thống pitot-tĩnh của máy bay?",
@@ -20,7 +21,8 @@
    ],
    "correct": 0,
    "explain": "Ba đồng hồ số liệu khí (ASI, độ cao, VSI) dùng áp tĩnh và áp pitot. La bàn từ là cơ cấu từ độc lập, không cần pitot-tĩnh.",
-   "src": "Tooley Ch.1 Q2"
+   "src": "Tooley Ch.1 Q2",
+   "detail": "<p>Ba đồng hồ chạy bằng hệ pitot-tĩnh là đồng hồ tốc độ (ASI), độ cao và tốc độ lên xuống (VSI): chúng đọc áp tĩnh và áp pitot. La bàn từ là cơ cấu từ độc lập, không cần pitot-tĩnh; chỉ báo góc tấn dùng cánh gió cảm biến riêng.</p><p>Bẫy: la bàn là đồng hồ dự phòng nhưng không phải đồng hồ số liệu khí.</p>"
   },
   {
    "q": "Áp suất tĩnh được dẫn tới:",
@@ -31,7 +33,8 @@
    ],
    "correct": 2,
    "explain": "Áp tĩnh đi tới cả ba đồng hồ; chỉ riêng ASI còn nhận thêm áp ram (pitot) để so sánh (hình 1.11).",
-   "src": "Tooley Ch.1 Q3"
+   "src": "Tooley Ch.1 Q3",
+   "detail": "<p>Áp tĩnh được dẫn tới cả ba đồng hồ số liệu khí: ASI, độ cao và VSI. Riêng ASI còn nhận thêm áp ram (pitot) để so sánh với áp tĩnh và suy ra tốc độ. Hai phương án \"chỉ ASI\" hoặc \"chỉ ASI và VSI\" bỏ sót độ cao, vốn đo thuần bằng áp tĩnh.</p><p>Sơ đồ hình 1.11 trong sách vẽ rõ ba nhánh áp tĩnh.</p>"
   },
   {
    "q": "Chỉ báo vị trí nằm ngang (HSI) dùng thông tin lấy từ:",
@@ -42,7 +45,8 @@
    ],
    "correct": 2,
    "explain": "HSI gộp thông tin la bàn và dẫn đường vô tuyến (VOR) để hiển thị mặt phẳng ngang (Tooley bảng 1.1).",
-   "src": "Tooley Ch.1 Q4"
+   "src": "Tooley Ch.1 Q4",
+   "detail": "<p>HSI hiển thị mặt phẳng ngang của máy bay: thông tin la bàn và dẫn đường vô tuyến (VOR) cho biết hướng và độ lệch so với tuyến. Hệ pitot-tĩnh và đồng hồ tốc độ thuộc nhóm số liệu khí, không phải nguồn của HSI.</p><p>Ghi nhớ: HSI = la bàn + VOR.</p>"
   },
   {
    "q": "Thuật ngữ \"glass cockpit\" (buồng lái kính) chỉ:",
@@ -53,7 +57,8 @@
    ],
    "correct": 0,
    "explain": "\"Glass cockpit\" là buồng lái dùng màn hình CRT và LCD thay đồng hồ cơ điện (Tooley mục 1.1).",
-   "src": "Tooley Ch.1 Q5"
+   "src": "Tooley Ch.1 Q5",
+   "detail": "<p>\"Glass cockpit\" nghĩa là buồng lái dùng màn hình CRT và LCD thay đồng hồ cơ điện. Nó không liên quan đến kính cửa sổ cường lực hay vách kính ngăn khoang khách.</p><p>Từ này gợi hình ảnh mặt kính phẳng của màn hình thay cho nhiều mặt đồng hồ.</p>"
   },
   {
    "q": "Các đồng hồ số liệu khí (air data) cơ bản là:",
@@ -64,7 +69,8 @@
    ],
    "correct": 2,
    "explain": "Ba đồng hồ chạy bằng pitot-tĩnh được gọi là đồng hồ số liệu khí: ASI, độ cao, VSI.",
-   "src": "Tooley Ch.1 Q6"
+   "src": "Tooley Ch.1 Q6",
+   "detail": "<p>Đồng hồ số liệu khí cơ bản là ASI, độ cao và VSI vì cả ba chạy từ hệ pitot-tĩnh. La bàn từ và chân trời giả không dùng áp không khí (la bàn dùng từ trường, chân trời giả dùng con quay).</p><p>Chú ý \"basic\": bài kiểm tra mong ba chữ ASI, ALT, VSI.</p>"
   },
   {
    "q": "Ba tham số bay có thể dùng để đánh giá vị trí máy bay là:",
@@ -75,7 +81,8 @@
    ],
    "correct": 0,
    "explain": "Hướng, tốc độ và độ cao là ba đại lượng cơ bản định vị máy bay; trọng lượng không phải tham số vị trí.",
-   "src": "Tooley Ch.1 Q7"
+   "src": "Tooley Ch.1 Q7",
+   "detail": "<p>Ba tham số đủ để đánh giá vị trí là hướng bay, tốc độ và độ cao. Trọng lượng máy bay không phải tham số vị trí; nó ảnh hưởng hiệu năng nhưng không cho biết máy bay ở đâu hoặc đang đi thế nào.</p><p>Hướng + tốc độ + độ cao cho phép suy ra vị trí theo thời gian (dead reckoning).</p>"
   },
   {
    "q": "Đồng hồ trong hình 1.27 là:",
@@ -87,7 +94,8 @@
    "correct": 0,
    "explain": "Mặt đồng hồ ghi \"IAS KNOTS\" với thang 60 đến 400: đây là đồng hồ tốc độ (ASI).",
    "src": "Tooley Ch.1 Q8",
-   "img": "../../../assets/figures/disp_q127.png"
+   "img": "../../../assets/figures/disp_q127.png",
+   "detail": "<p>Mặt đồng hồ ghi \"IAS KNOTS\" với thang 60 đến 400 nên là đồng hồ tốc độ (ASI). ADI là chân trời giả, VSI có thang lên và xuống theo ft/min nên không thể là hình này.</p><p>Cách đọc hình: nhìn đơn vị và thang đo trên mặt số.</p>"
   },
   {
    "q": "Các thông số động cơ như tốc độ tuabin được hiển thị trên:",
@@ -98,7 +106,8 @@
    ],
    "correct": 0,
    "explain": "ECAM (Airbus) và EICAS (Boeing) hiển thị thông số động cơ; EADI và EHSI là màn hình bay và dẫn đường.",
-   "src": "Tooley Ch.1 Q9"
+   "src": "Tooley Ch.1 Q9",
+   "detail": "<p>Thông số động cơ như tốc độ tuabin hiển thị trên ECAM (Airbus) hoặc EICAS (Boeing). EADI và EHSI chỉ là màn hình tư thế và dẫn đường của EFIS.</p><p>Bộ đôi cần phân biệt: EFIS lo bay và đi đâu, ECAM lo máy bay đang khoẻ ra sao.</p>"
   },
   {
    "q": "Chỉ báo trượt (slip indicator) của máy bay nằm ở:",
@@ -109,7 +118,8 @@
    ],
    "correct": 2,
    "explain": "EADI có chỉ báo trượt (cùng chân trời giả, thanh chỉ lệnh, kim glide slope, chỉ báo localiser).",
-   "src": "Tooley Ch.1 Q10"
+   "src": "Tooley Ch.1 Q10",
+   "detail": "<p>EADI có chân trời giả, thanh chỉ lệnh, kim glide slope, chỉ báo localiser và chỉ báo trượt (slip). Vì thế chỉ báo trượt nằm trên EADI. ECAM hiển thị động cơ và hệ thống, màn hình CRT trong khoang khách là màn hình giải trí.</p><p>Mẹo: slip/skid là đại lượng tư thế nên ở màn hình tư thế.</p>"
   },
   {
    "q": "\"Đường băng nổi lên\" (rising runway) nằm ở đâu?",
@@ -120,7 +130,8 @@
    ],
    "correct": 0,
    "explain": "Đường băng ký hiệu (rising runway) là chỉ báo localiser trên EADI, hiện ra khi phi công đã bắt được glide slope.",
-   "src": "Tooley Ch.1 Q11"
+   "src": "Tooley Ch.1 Q11",
+   "detail": "<p>\"Đường băng nổi lên\" (rising runway) là chỉ báo localiser dạng đường băng ký hiệu trên EADI, xuất hiện khi phi công đã bắt được glide slope. ECAM không hiển thị tiếp cận ILS.</p><p>Cùng EADI gồm kim glide slope; phân biệt với EHSI hiển thị hướng và VOR.</p>"
   },
   {
    "q": "Theo quy tắc bay bằng mắt (VFR), nguồn thông tin quan trọng nhất của phi công về vị trí và tư thế máy bay là:",
@@ -131,7 +142,8 @@
    ],
    "correct": 1,
    "explain": "Tooley mục 1.1: khi bay VFR, nguồn thông tin quan trọng nhất là cảnh quan nhìn thấy bên ngoài.",
-   "src": "Tooley Ch.1 Q12"
+   "src": "Tooley Ch.1 Q12",
+   "detail": "<p>Khi bay bằng mắt (VFR), nguồn thông tin quan trọng nhất về vị trí và tư thế máy bay là cảnh quan nhìn ra ngoài cửa sổ buồng lái. Các đồng hồ chỉ là hỗ trợ, và chúng trở thành nguồn chính khi bay bằng thiết bị (IFR).</p><p>Sự khác biệt VFR và IFR chính là câu 19.</p>"
   },
   {
    "q": "EFIS lắp trên máy bay lớn thường gồm:",
@@ -142,7 +154,8 @@
    ],
    "correct": 1,
    "explain": "EFIS gồm PFD (hoặc EADI) và ND (hoặc EHSI), nhân đôi cho cơ trưởng và phó cơ trưởng (Tooley 1.1.5).",
-   "src": "Tooley Ch.1 Q13"
+   "src": "Tooley Ch.1 Q13",
+   "detail": "<p>EFIS của máy bay lớn gồm màn hình bay chính (PFD hoặc EADI) và màn hình dẫn đường (ND hoặc EHSI), nhân đôi cho cơ trưởng và phó cơ trưởng. Không phải một MFD duy nhất, và đồng hồ dự phòng là hệ riêng.</p><p>Hình dung: hai cặp PFD và ND.</p>"
   },
   {
    "q": "Thiết bị trong hình 1.28 là:",
@@ -154,7 +167,8 @@
    "correct": 2,
    "explain": "Hình có hướng \"HDG\", VOR, WPT, khoảng cách và la bàn quay: đó là EHSI (mặt phẳng ngang).",
    "src": "Tooley Ch.1 Q14",
-   "img": "../../../assets/figures/disp_q128.png"
+   "img": "../../../assets/figures/disp_q128.png",
+   "detail": "<p>Hình 1.28 có hướng \"HDG\", VOR, WPT, khoảng cách và la bàn quay: đó là EHSI. EADI có chân trời giả, còn ECAM hiển thị thông số động cơ và hệ thống.</p><p>Cách đọc hình: tìm dấu hiệu đặc trưng (chân trời giả hay la bàn).</p>"
   },
   {
    "q": "Thiết bị trong hình 1.29 là:",
@@ -166,7 +180,8 @@
    "correct": 2,
    "explain": "Hình có chân trời giả (thang tư thế ±10, ±20), thanh chỉ lệnh, glide slope, chế độ LAND 3, VNAV: đây là EADI.",
    "src": "Tooley Ch.1 Q15",
-   "img": "../../../assets/figures/disp_q129.png"
+   "img": "../../../assets/figures/disp_q129.png",
+   "detail": "<p>Hình 1.29 có chân trời giả với thang chúc ngóc, thanh chỉ lệnh, glide slope và chế độ bay (LAND 3, VNAV) nên là EADI. EHSI sẽ có la bàn và dữ liệu VOR, ECAM thì không có chân trời giả.</p><p>Chế độ bay hiển thị ở góc dưới của EADI.</p>"
   },
   {
    "q": "Trong bố trí chữ \"T\" cơ bản của các đồng hồ:",
@@ -177,7 +192,8 @@
    ],
    "correct": 0,
    "explain": "Chữ T: ASI trái, ADI giữa trên, độ cao phải, HSI dưới ADI (Tooley hình 1.23).",
-   "src": "Tooley Ch.1 Q16"
+   "src": "Tooley Ch.1 Q16",
+   "detail": "<p>Trong bố trí chữ T cơ bản: đồng hồ tốc độ bên trái, chân trời giả ở giữa trên, độ cao bên phải, HSI dưới chân trời giả. Vì vậy ASI trái và độ cao phải là đúng. Phương án nói ADI trái là sai.</p><p>Giữ nguyên vị trí tương đối giúp phi công chuyển loại máy bay dễ dàng.</p>"
   },
   {
    "q": "Hệ thống chỉ huy bay (flight director) nhận thông tin:",
@@ -188,7 +204,8 @@
    ],
    "correct": 1,
    "explain": "Flight director nhận dữ liệu từ con quay tư thế, thu VOR/localiser/glide slope, radar độ cao, la bàn và cảm biến khí áp (Tooley 1.1.4).",
-   "src": "Tooley Ch.1 Q17"
+   "src": "Tooley Ch.1 Q17",
+   "detail": "<p>Hệ thống chỉ huy bay (flight director) nhận dữ liệu từ con quay tư thế, máy thu VOR/localiser/glide slope, radar độ cao, la bàn và cảm biến khí áp. Vì vậy không thể chỉ từ VOR/localiser, cũng không chỉ từ con quay và độ cao: đáp án đúng là cả hai nhóm.</p><p>Chú ý chữ \"only\" trong các phương án sai.</p>"
   },
   {
    "q": "EICAS cung cấp các thông tin sau:",
@@ -199,7 +216,8 @@
    ],
    "correct": 0,
    "explain": "EICAS hiển thị thông số động cơ, cảnh báo của phi hành đoàn và trang hệ thống (điện, thuỷ lực, nhiên liệu...); dữ liệu dẫn đường thuộc ND.",
-   "src": "Tooley Ch.1 Q18"
+   "src": "Tooley Ch.1 Q18",
+   "detail": "<p>EICAS hiển thị thông số động cơ cùng cảnh báo và trang hệ thống (điện, thuỷ lực, nhiên liệu). Dữ liệu dẫn đường thuộc ND, nên \"động cơ và dẫn đường\" sai; \"chỉ động cơ\" thiếu phần cảnh báo.</p><p>Tương đương Airbus là ECAM.</p>"
   },
   {
    "q": "Hai bộ quy tắc bay mà phi công có thể bay theo là:",
@@ -210,7 +228,8 @@
    ],
    "correct": 0,
    "explain": "VFR (visual flight rules, bay bằng mắt) và IFR (instrument flight rules, bay bằng thiết bị).",
-   "src": "Tooley Ch.1 Q19"
+   "src": "Tooley Ch.1 Q19",
+   "detail": "<p>Hai bộ quy tắc bay là VFR (visual flight rules, bay bằng mắt) và IFR (instrument flight rules, bay bằng thiết bị). VHF là dải sóng vô tuyến, \"IFU\" không tồn tại.</p><p>VFR là bối cảnh của câu 12.</p>"
   },
   {
    "q": "Ưu điểm lớn của EFIS là giảm được:",
@@ -221,7 +240,8 @@
    ],
    "correct": 1,
    "explain": "EFIS thay đồng hồ cơ điện bằng màn hình tĩnh nên giảm bộ phận chuyển động. Ngược lại EFIS làm tăng EMI (Tooley mục 15.2), không phải giảm.",
-   "src": "Tooley Ch.1 Q21"
+   "src": "Tooley Ch.1 Q21",
+   "detail": "<p>EFIS thay đồng hồ cơ điện bằng màn hình tĩnh nên giảm bộ phận chuyển động. Ngược lại EFIS làm tăng EMI (Tooley mục 15.2) chứ không giảm, và cũng không giảm đáng kể cáp (cần dây dữ liệu tới màn hình).</p><p>Đây là một bẫy: lợi thế thật là ít chi tiết cơ khí, và nhược điểm là nhiều EMI.</p>"
   },
   {
    "q": "Thuật ngữ \"chân trời giả\" (artificial horizon) đôi khi dùng để chỉ hiển thị của:",
@@ -232,7 +252,8 @@
    ],
    "correct": 1,
    "explain": "Chỉ báo tư thế hiển thị máy bay so với đường chân trời, còn gọi là chân trời giả (Tooley bảng 1.1).",
-   "src": "Tooley Ch.1 Q22"
+   "src": "Tooley Ch.1 Q22",
+   "detail": "<p>\"Artificial horizon\" là tên gọi khác của chỉ báo tư thế, vì nó vẽ đường chân trời giả để cho biết máy bay nghiêng hay chúc so với mặt đất. Đồng hồ độ cao và VSI không có đường chân trời.</p><p>Tên này xuất hiện trong bảng 1.1 của Tooley.</p>"
   },
   {
    "q": "Các hiển thị điển hình trên EHSI là:",
@@ -243,7 +264,8 @@
    ],
    "correct": 1,
    "explain": "EHSI hiển thị hướng, track, VOR/DME/ILS/ADF, gió và khoảng cách (Tooley 1.1.3.2). Độ cao và tốc độ lên xuống thuộc PFD.",
-   "src": "Tooley Ch.1 Q23"
+   "src": "Tooley Ch.1 Q23",
+   "detail": "<p>EHSI hiển thị hướng, track (đường bay thực), VOR, DME, ILS, ADF, gió và khoảng cách. Chỉ báo động cơ thuộc ECAM/EICAS, còn độ cao và tốc độ lên xuống thuộc PFD (EADI).</p><p>Phân loại: EHSI = dẫn đường ngang.</p>"
   },
   {
    "q": "Trong bố trí chữ \"T\" cơ bản của các đồng hồ:",
@@ -254,7 +276,8 @@
    ],
    "correct": 0,
    "explain": "Hàng trên của chữ T có ASI, ADI, độ cao; ADI ở giữa trên và HSI nằm ngay dưới ADI.",
-   "src": "Tooley Ch.1 Q24"
+   "src": "Tooley Ch.1 Q24",
+   "detail": "<p>Hàng trên của chữ T gồm ASI, ADI và độ cao; ADI ở giữa trên và HSI nằm ngay dưới ADI. Vì thế \"ADI ở trên và HSI ở dưới\" là đúng, còn hai phương án kia đặt ASI hoặc HSI sai hàng.</p><p>Hình dung chữ T: thanh ngang là ba đồng hồ, thân dọc là HSI.</p>"
   },
   {
    "q": "Lỗi vận hành của FMS có thể được phát hiện bằng cách:",
@@ -265,7 +288,8 @@
    ],
    "correct": 2,
    "explain": "Hai FMS (cơ trưởng và phó) so sánh chỉ báo và đầu ra liên tục để phát hiện lỗi (Tooley 1.1.8).",
-   "src": "Tooley Ch.1 Q25"
+   "src": "Tooley Ch.1 Q25",
+   "detail": "<p>Hai FMS (của cơ trưởng và phó cơ trưởng) so sánh chỉ báo và đầu ra với nhau liên tục để phát hiện lỗi. Kiểm tra bảo dưỡng định kỳ hay kiểm tra trước chuyến bay chỉ phát hiện lỗi vào thời điểm đó chứ không liên tục trong khai thác.</p><p>Nguyên tắc: dự phòng kép kèm so sánh liên tục.</p>"
   },
   {
    "q": "Màn hình đánh dấu X trong hình 1.30 là:",
@@ -277,7 +301,8 @@
    "correct": 1,
    "explain": "X chỉ vào thiết bị đặt trên bệ giữa hai ghế phi công: đó là CDU của FMS.",
    "src": "Tooley Ch.1 Q26",
-   "img": "../../../assets/figures/disp_q130.png"
+   "img": "../../../assets/figures/disp_q130.png",
+   "detail": "<p>X chỉ vào thiết bị đặt trên bệ giữa hai ghế phi công, đó là CDU của FMS (có bàn phím và màn hình nhỏ để nhập kế hoạch bay). Màn hình bay chính và dẫn đường là các màn hình lớn trên bảng táp-lô.</p><p>Vị trí lắp là manh mối nhận dạng.</p>"
   },
   {
    "q": "Màn hình đánh dấu Y trong hình 1.31 là:",
@@ -289,7 +314,8 @@
    "correct": 1,
    "explain": "Y chỉ vào màn hình lớn trước mặt cơ trưởng: màn hình bay chính (PFD).",
    "src": "Tooley Ch.1 Q27",
-   "img": "../../../assets/figures/disp_q131.png"
+   "img": "../../../assets/figures/disp_q131.png",
+   "detail": "<p>Y chỉ vào màn hình lớn ngay trước mặt cơ trưởng, tức màn hình bay chính (PFD). Đồng hồ dự phòng là các đồng hồ nhỏ riêng ở giữa, còn CDU nằm trên bệ giữa.</p><p>Ngoài ra bố trí này giữ nguyên vị trí tương đối như chữ T.</p>"
   },
   {
    "q": "Màn hình ECAM phía trên cung cấp:",
@@ -300,7 +326,8 @@
    ],
    "correct": 2,
    "explain": "Màn hình ECAM trên (E/WD) hiển thị thông số động cơ và cảnh báo; màn hình dưới hiển thị trang hệ thống (Tooley 1.1.6).",
-   "src": "Tooley Ch.1 Q28"
+   "src": "Tooley Ch.1 Q28",
+   "detail": "<p>Màn hình ECAM phía trên (E/WD, chính) hiển thị thông số động cơ (N1, EGT, N2, lưu lượng nhiên liệu) cùng vị trí cánh tà, slat và cảnh báo. Màn hình dưới hiển thị trang hệ thống và hậu quả của hỏng hóc. Dẫn đường là việc của ND.</p><p>Nhớ: trên = động cơ và cảnh báo, dưới = hệ thống.</p>"
   },
   {
    "q": "Bước sóng cực đại của ánh sáng phát ra từ một LED đỏ thường là:",
@@ -311,7 +338,8 @@
    ],
    "correct": 2,
    "explain": "Bảng 11.1 của Tooley cho LED đỏ cực đại 635 nm (loại miniature 690 nm). 475 nm là xanh lam, 525 nm là lục.",
-   "src": "Tooley Ch.11 Q1"
+   "src": "Tooley Ch.11 Q1",
+   "detail": "<p>Bảng 11.1 của Tooley cho LED đỏ tiêu chuẩn cực đại ở 635 nm (loại miniature 690 nm). 475 nm là ánh sáng xanh lam và 525 nm là xanh lục, hai màu có hiệu suất khác.</p><p>Mẹo: đỏ có bước sóng dài nhất trong ba màu này.</p>"
   },
   {
    "q": "Đáp ứng phổ của mắt người đạt cực đại ở khoảng:",
@@ -322,7 +350,8 @@
    ],
    "correct": 0,
    "explain": "Mắt nhạy nhất ở khoảng 550 nm (ánh sáng lục), hình 11.12; bài giảng ghi cực đại 555 nm.",
-   "src": "Tooley Ch.11 Q2"
+   "src": "Tooley Ch.11 Q2",
+   "detail": "<p>Mắt người nhạy nhất ở khoảng 550 nm (ánh sáng lục), hình 11.12; bài giảng ghi 555 nm. 450 nm là xanh lam và 650 nm là đỏ: đều ở hai đầu phổ nhìn thấy, mắt kém nhạy hơn.</p><p>Đây là lý do màu lục dùng cho giá trị bình thường trên màn hình.</p>"
   },
   {
    "q": "Hai phosphor xanh lam và xanh lục kề nhau cùng sáng trên màn hình CRT. Màu thu được là:",
@@ -333,7 +362,8 @@
    ],
    "correct": 2,
    "explain": "Lục + lam = cyan; đỏ + lục = vàng; đỏ + lam = magenta; cả ba = trắng (hình 11.9).",
-   "src": "Tooley Ch.11 Q3"
+   "src": "Tooley Ch.11 Q3",
+   "detail": "<p>Cộng màu ánh sáng: lục + lam = lục lam (cyan), đỏ + lục = vàng, đỏ + lam = đỏ tươi (magenta), cả ba = trắng (hình 11.9). Hai điểm phosphor xanh lam và xanh lục kề nhau cùng sáng nên cho cyan.</p><p>Lưu ý đây là trộn cộng (ánh sáng), khác trộn trừ (sơn).</p>"
   },
   {
    "q": "Mắt người nhạy nhất với ánh sáng:",
@@ -344,7 +374,8 @@
    ],
    "correct": 2,
    "explain": "Đáp án đúng là xanh lục (cực đại khoảng 550 nm, đúng với câu 2, hình 11.12 và slide 6 của bài giảng). Lưu ý: khoá đáp án in trong Tooley (Appendix 3, A.11) ghi câu 4 là (a), mâu thuẫn với chính câu 2 của chương, nên được coi là lỗi in; site dùng đáp án (c).",
-   "src": "Tooley Ch.11 Q4 (khoá in ghi (a), site dùng (c): xem giải thích)"
+   "src": "Tooley Ch.11 Q4 (khoá in ghi (a), site dùng (c): xem giải thích)",
+   "detail": "<p>Đáp án đúng là ánh sáng xanh lục, nhất quán với câu 2, hình 11.12 và slide 6 của bài giảng (cực đại khoảng 550 nm). Khoá đáp án in của sách ghi câu này là (a) đỏ, mâu thuẫn với chính câu 2 của chương, nên được coi là lỗi in; site dùng đáp án đúng.</p><p>Bài học: luôn đối chiếu chéo các câu trong cùng chương trước khi tin khoá đáp án.</p>"
   },
   {
    "q": "Một hiển thị LED 7 đoạn có các đoạn a, b, c, d và g sáng. Ký tự hiển thị là:",
@@ -355,7 +386,8 @@
    ],
    "correct": 1,
    "explain": "a, b, c, d, g tạo số 3. Số 2 cần e thay cho c; số 5 cần f thay cho b. (Notebook tự kiểm.)",
-   "src": "Tooley Ch.11 Q5"
+   "src": "Tooley Ch.11 Q5",
+   "detail": "<p>Các đoạn a, b, c, d, g sáng tạo số 3. Số 2 cần đoạn e thay cho c (a, b, g, e, d), số 5 cần đoạn f thay cho b (a, f, g, c, d). Notebook module tự kiểm cả ba.</p><p>Luyện: viết ra bảy đoạn rồi gạch những đoạn tắt cho từng chữ số.</p>"
   },
   {
    "q": "Đầu vào BCD của bộ giải mã hiển thị 7 đoạn là 1001. Chữ số hiển thị là:",
@@ -366,7 +398,8 @@
    ],
    "correct": 1,
    "explain": "1001₂ = 9 (BCD). Số 8 có mã 1000.",
-   "src": "Tooley Ch.11 Q6"
+   "src": "Tooley Ch.11 Q6",
+   "detail": "<p>Mã BCD 1001 bằng 9 (8 + 1), nên bộ giải mã hiển thị chữ số 9. Số 8 có mã 1000 và số 7 có mã 0111.</p><p>Từ BCD sang 7 đoạn: 74HC47 giải mã đúng mã này.</p>"
   },
   {
    "q": "Điện thế tại lưới của CRT là:",
@@ -377,7 +410,8 @@
    ],
    "correct": 0,
    "explain": "Lưới được đặt âm so với cathode để đẩy bớt electron, nhờ đó điều khiển độ sáng (Tooley 11.1.1).",
-   "src": "Tooley Ch.11 Q7"
+   "src": "Tooley Ch.11 Q7",
+   "detail": "<p>Lưới được đặt âm so với cathode để đẩy bớt electron quay lại, qua đó điều khiển số electron tới màn hình, tức độ sáng. Nếu lưới bằng cathode thì không điều khiển được, và nếu dương thì hút thêm electron.</p><p>Van nước: càng âm càng ít electron, càng tối.</p>"
   },
   {
    "q": "Chức năng của anode cuối trong CRT là:",
@@ -388,7 +422,8 @@
    ],
    "correct": 2,
    "explain": "Anode cuối có thế dương rất cao (vài kilôvôn) để gia tốc chùm; lệch do bản X/Y hoặc cuộn dây, độ sáng do lưới.",
-   "src": "Tooley Ch.11 Q8"
+   "src": "Tooley Ch.11 Q8",
+   "detail": "<p>Anode cuối có điện thế dương rất cao (vài kilôvôn) để gia tốc chùm electron tới phosphor. Làm lệch chùm là việc của bản X, Y hoặc cuộn dây, còn độ sáng do lưới điều khiển.</p><p>Ba vai trò khác nhau: lưới (sáng), anode hội tụ (nét), anode cuối (năng lượng).</p>"
   },
   {
    "q": "Làm lệch chùm tia CRT bằng điện từ dùng:",
@@ -399,7 +434,8 @@
    ],
    "correct": 2,
    "explain": "Làm lệch điện từ dùng hai bộ cuộn dây đặt bên ngoài quanh cổ ống; các bản X, Y bên trong là làm lệch tĩnh điện.",
-   "src": "Tooley Ch.11 Q9"
+   "src": "Tooley Ch.11 Q9",
+   "detail": "<p>Làm lệch bằng điện từ dùng hai bộ cuộn dây đặt bên ngoài quanh cổ ống, chứ không phải cuộn dây bên trong. Các bản X, Y bên trong là làm lệch tĩnh điện, dùng cho CRT nhỏ.</p><p>Mẹo: \"từ\" nghĩa là cuộn dây ngoài cổ ống.</p>"
   },
   {
    "q": "Ba chùm tia của CRT màu ứng với các màu:",
@@ -410,7 +446,8 @@
    ],
    "correct": 2,
    "explain": "Ba súng điện tử tương ứng ba phosphor đỏ, lục, lam (RGB).",
-   "src": "Tooley Ch.11 Q10"
+   "src": "Tooley Ch.11 Q10",
+   "detail": "<p>CRT màu có ba súng điện tử ứng với ba phosphor đỏ, lục, lam (RGB). Vàng không phải màu gốc mà là kết quả đỏ cộng lục.</p><p>Các chùm chỉ chạm đúng phosphor cùng màu nhờ mặt nạ.</p>"
   },
   {
    "q": "So với màn hình CRT, màn hình AMLCD có:",
@@ -421,7 +458,8 @@
    ],
    "correct": 2,
    "explain": "Ưu điểm chính của AMLCD: khối lượng, công suất, thể tích và độ tin cậy (Tooley, phần mở đầu chương 11).",
-   "src": "Tooley Ch.11 Q11"
+   "src": "Tooley Ch.11 Q11",
+   "detail": "<p>AMLCD ưu việt hơn CRT về khối lượng, công suất, thể tích và độ tin cậy. Vì vậy \"thể tích nhỏ hơn và độ tin cậy cao hơn\" là đúng. Các phương án có thể tích lớn hơn đều sai.</p><p>Ngược lại CRT có góc nhìn rộng và dải nhiệt độ rộng hơn.</p>"
   },
   {
    "q": "Anode cuối của màn hình CRT cần:",
@@ -432,7 +470,8 @@
    ],
    "correct": 2,
    "explain": "Anode cuối cần thế dương cao không đổi (vài kilôvôn một chiều) để gia tốc chùm.",
-   "src": "Tooley Ch.11 Q12"
+   "src": "Tooley Ch.11 Q12",
+   "detail": "<p>Anode cuối cần điện thế dương cao không đổi (vài kilôvôn một chiều) để gia tốc chùm. Nguồn xoay chiều sẽ làm điện thế đổi dấu và không gia tốc ổn định; nguồn áp thấp không đủ năng lượng cho chùm.</p><p>Chữ \"DC\" cùng \"high-voltage\" là hai từ khoá.</p>"
   },
   {
    "q": "Dạng sóng làm lệch đưa vào các bản của CRT tĩnh điện là:",
@@ -443,7 +482,8 @@
    ],
    "correct": 1,
    "explain": "Quét raster dùng sóng răng cưa (ramp) với hai tần số khác nhau trên bản X và Y.",
-   "src": "Tooley Ch.11 Q13"
+   "src": "Tooley Ch.11 Q13",
+   "detail": "<p>Quét raster dùng sóng răng cưa (ramp) hai tần số khác nhau trên bản X và Y: điện áp tăng tuyến tính rồi quay về nhanh. Sóng sin hay sóng vuông không cho vệt quét đều.</p><p>Ví dụ Tooley: 400 dòng với quét dọc 100 Hz cần răng cưa ngang 40 kHz.</p>"
   },
   {
    "q": "Giá trị điển hình của dòng thuận cực đại của một LED chỉ báo là:",
@@ -454,7 +494,8 @@
    ],
    "correct": 0,
    "explain": "Bảng 11.1: dòng thuận tối đa 30 đến 40 mA, tức 0,03 đến 0,04 A.",
-   "src": "Tooley Ch.11 Q14"
+   "src": "Tooley Ch.11 Q14",
+   "detail": "<p>Bảng 11.1: dòng thuận tối đa của LED chỉ báo là 30 đến 40 mA, tức 0,03 đến 0,04 A. 0,3 A và 3 A là quá lớn, sẽ làm cháy LED; dòng điển hình chỉ 7 đến 12 mA.</p><p>Đổi đơn vị cẩn thận: mA sang A chia 1000.</p>"
   },
   {
    "q": "Các mẫu hình dùng để hiển thị ký tự chữ số trong bộ điều khiển CRT được lưu trong:",
@@ -465,7 +506,8 @@
    ],
    "correct": 1,
    "explain": "Mẫu ký tự cố định nên lưu trong ROM tạo ký tự (hình 11.11).",
-   "src": "Tooley Ch.11 Q15"
+   "src": "Tooley Ch.11 Q15",
+   "detail": "<p>Mẫu hình ký tự cố định (ma trận 8 × 8 hoặc 9 × 14) được lưu trong ROM tạo ký tự (character generator ROM), vì dữ liệu không đổi và chỉ cần đọc. RAM tĩnh hay động dùng cho dữ liệu thay đổi (hình ảnh, hiệu chỉnh).</p><p>Đây là chỗ điện tử số gặp màn hình: ROM của Module 04 tạo chữ.</p>"
   },
   {
    "q": "So với LCD ma trận thụ động, AMLCD thì:",
@@ -476,7 +518,8 @@
    ],
    "correct": 0,
    "explain": "Ma trận thụ động đáp ứng chậm và kém nét; AMLCD dùng TFT cho từng ô nên nhanh và nét hơn (Tooley 11.3.2, 11.3.3).",
-   "src": "Tooley Ch.11 Q16"
+   "src": "Tooley Ch.11 Q16",
+   "detail": "<p>Ma trận thụ động địa chỉ hàng và cột như ma trận nhớ, đáp ứng chậm và kém nét. AMLCD thêm một transistor màng mỏng (TFT) cho từng ô nên nhanh và nét hơn. Phương án \"chậm hơn và kém nét hơn\" mô tả ma trận thụ động.</p><p>Lợi thế thứ hai: dễ cho 256 mức mỗi màu, hơn 16 triệu màu.</p>"
   },
   {
    "q": "Chuẩn cho ACARS được định nghĩa trong:",
@@ -487,7 +530,8 @@
    ],
    "correct": 2,
    "explain": "ACARS ban đầu theo ARINC 597, được sửa thành ARINC 724B (Tooley 15.1).",
-   "src": "Tooley Ch.15 Q1"
+   "src": "Tooley Ch.15 Q1",
+   "detail": "<p>Chuẩn cho ACARS được định nghĩa trong ARINC 724 (ban đầu theo ARINC 597, sau sửa thành 724B). ARINC 429 là bus dữ liệu avionics, ARINC 573 là chuẩn ghi dữ liệu chuyến bay.</p><p>Nhóm chuẩn ARINC: 429 bus, 573/717 FDR, 724 ACARS, 636 mạng quang.</p>"
   },
   {
    "q": "Các thông số động cơ được hiển thị trên:",
@@ -498,7 +542,8 @@
    ],
    "correct": 2,
    "explain": "ECAM (Airbus) hiển thị thông số động cơ và hệ thống; EHSI là màn hình dẫn đường, CDU là thiết bị nhập liệu FMS.",
-   "src": "Tooley Ch.15 Q2"
+   "src": "Tooley Ch.15 Q2",
+   "detail": "<p>Thông số động cơ hiển thị trên ECAM (Airbus). EHSI là màn hình dẫn đường, còn CDU là thiết bị nhập liệu của FMS, không phải màn hình thông số động cơ.</p><p>ECAM trên = động cơ và cảnh báo.</p>"
   },
   {
    "q": "Các màn hình buồng lái bên trái và bên phải:",
@@ -509,7 +554,8 @@
    ],
    "correct": 1,
    "explain": "Bộ trái nuôi màn hình cơ trưởng, bộ phải nuôi phó cơ trưởng, bộ giữa dự phòng; chỉ khi cả hai bộ kia hỏng thì cùng dùng chung một bộ (Tooley 15.2.2).",
-   "src": "Tooley Ch.15 Q5"
+   "src": "Tooley Ch.15 Q5",
+   "detail": "<p>Bộ tạo ký hiệu trái nuôi màn hình cơ trưởng, bộ phải nuôi phó cơ trưởng, bộ giữa là dự phòng. Chỉ khi cả hai bộ kia hỏng thì cả hai bên mới dùng chung một bộ. Vì vậy phương án \"chỉ dùng chung khi các bộ khác hỏng hết\" là đúng.</p><p>Đây là ví dụ dự phòng ba.</p>"
   },
   {
    "q": "Trên hệ thống EFIS buồng lái, nếu tất cả các màn hình đều thiếu thông tin từ một nguồn nào đó, nguyên nhân nhiều khả năng nhất là:",
@@ -520,7 +566,8 @@
    ],
    "correct": 1,
    "explain": "Lỗi chung cho mọi màn hình nằm ở thứ đứng trước tất cả chúng: cảm biến nguồn, bus đưa dữ liệu vào, hoặc bộ điều khiển hiển thị; không phải một bộ tạo ký hiệu riêng lẻ.",
-   "src": "Tooley Ch.15 Q7"
+   "src": "Tooley Ch.15 Q7",
+   "detail": "<p>Lỗi chung cho mọi màn hình nằm ở thứ đứng trước tất cả chúng: cảm biến nguồn, bus đưa dữ liệu vào, hoặc bộ điều khiển hiển thị; không phải một bộ tạo ký hiệu riêng (chỉ ảnh hưởng một phía). Khi mọi màn hình cùng mất dữ liệu từ một nguồn, hãy tìm ở mắt xích chung.</p><p>Suy luận chẩn đoán: lỗi chung → nguyên nhân chung.</p>"
   },
   {
    "q": "Một máy tính bảo trì trung tâm cung cấp:",
@@ -531,7 +578,8 @@
    ],
    "correct": 1,
    "explain": "CMC thu dữ liệu lỗi và trạng thái từ các LRU liên tục, cả khi bay lẫn trên mặt đất; hiển thị cảnh báo là việc của FWC/ECAM.",
-   "src": "Tooley Ch.15 Q8"
+   "src": "Tooley Ch.15 Q8",
+   "detail": "<p>CMC thu dữ liệu lỗi và trạng thái từ các LRU liên tục, cả khi bay lẫn trên mặt đất, nên cung cấp giám sát và kiểm tra ở cả hai giai đoạn. Hiển thị cảnh báo thận trọng là việc của FWC và ECAM, không phải CMC.</p><p>CMC là \"hộp đen bảo trì\" cho kỹ sư mặt đất.</p>"
   },
   {
    "q": "Dạng sóng quét dùng trên CRT điện từ là:",
@@ -542,7 +590,8 @@
    ],
    "correct": 1,
    "explain": "Vì cuộn dây lệch có điện trở nên điện áp quét phải hình thang, không phải răng cưa thẳng như ở CRT tĩnh điện (Tooley 15.2.2).",
-   "src": "Tooley Ch.15 Q10"
+   "src": "Tooley Ch.15 Q10",
+   "detail": "<p>Vì cuộn dây làm lệch có điện trở nên điện áp quét phải có dạng hình thang, không phải răng cưa thẳng như ở CRT tĩnh điện (Tooley 15.2.2). Sóng sin không quét tuyến tính.</p><p>Điểm khác giữa làm lệch tĩnh điện (răng cưa) và điện từ (hình thang).</p>"
   },
   {
    "q": "Trong EFIS có ba bộ tạo ký hiệu, bộ thứ ba dùng để làm gì?",
@@ -553,7 +602,8 @@
    ],
    "correct": 1,
    "explain": "Bộ giữa là hệ dự phòng có thể thay bộ trái hoặc phải khi hỏng (Tooley 15.2.2).",
-   "src": "Tooley Ch.15 Q11"
+   "src": "Tooley Ch.15 Q11",
+   "detail": "<p>Bộ tạo ký hiệu thứ ba là hệ dự phòng, có thể thay bộ trái hoặc phải khi hỏng. Nó không dùng để so sánh với bộ của phi công (đó là chức năng của các FMS) và cũng không chuyên tạo đầu ra cho ECAM.</p><p>Ba bộ: trái, phải, giữa.</p>"
   },
   {
    "q": "Hệ thống ACARS dùng các kênh trong:",
@@ -564,7 +614,8 @@
    ],
    "correct": 1,
    "explain": "ACARS dùng dải VHF 129 đến 137 MHz (Tooley 15.1, bảng 15.1).",
-   "src": "Tooley Ch.15 Q12"
+   "src": "Tooley Ch.15 Q12",
+   "detail": "<p>ACARS dùng dải VHF 129 đến 137 MHz (bảng 15.1 liệt kê chín kênh trong dải này). HF và UHF là các dải khác không thuộc ACARS tiêu chuẩn.</p><p>Trong notebook các kênh được kiểm lại đều nằm trong 129 đến 137 MHz.</p>"
   },
   {
    "q": "Nếu một màn hình CRT của EICAS hỏng:",
@@ -575,7 +626,8 @@
    ],
    "correct": 1,
    "explain": "Màn hình còn hoạt động hiển thị dữ liệu EICAS chính; trang phụ gọi ra bằng bảng điều khiển khi cần.",
-   "src": "Tooley Ch.15 Q13"
+   "src": "Tooley Ch.15 Q13",
+   "detail": "<p>Nếu một màn hình EICAS hỏng, màn hình còn lại hiển thị dữ liệu EICAS chính; các trang phụ gọi ra bằng bảng điều khiển khi cần. CDU của FMS không có vai trò này và không có màn hình dự phòng tự thay thế.</p><p>Chủ đích: giữ thông tin động cơ chính luôn có mặt.</p>"
   },
   {
    "q": "Một phương pháp dùng trên máy bay hiện đại để báo lỗi trong chuyến bay cho trạm kỹ thuật và giám sát mặt đất là:",
@@ -586,7 +638,8 @@
    ],
    "correct": 1,
    "explain": "ACARS gửi dữ liệu hiệu năng, lỗi, bảo trì từ máy bay xuống hãng bay qua liên kết VHF.",
-   "src": "Tooley Ch.15 Q14"
+   "src": "Tooley Ch.15 Q14",
+   "detail": "<p>ACARS gửi dữ liệu hiệu năng, lỗi và bảo trì từ máy bay xuống hãng bay qua liên kết VHF. TCAS II là hệ cảnh báo va chạm, GPS là hệ định vị: hai thứ này không báo lỗi về trạm mặt đất.</p><p>Một hệ thống, một việc: ACARS = tin nhắn dữ liệu máy bay và mặt đất.</p>"
   }
  ],
  "floyd": [
@@ -599,73 +652,125 @@
    ],
    "correct": 0,
    "explain": "Hiển thị catốt chung sáng khi anode của đoạn được đưa lên CAO, nên cần ngõ ra tích cực mức CAO. 74HC47 có ngõ ra tích cực mức THẤP nên hợp với hiển thị anode chung (Floyd tr.339).",
-   "src": "Floyd Ch.6 · Section 6–5 Checkup #3 (tr.341; đáp án tr.384)"
+   "src": "Floyd Ch.6 · Section 6–5 Checkup #3 (tr.341; đáp án tr.384)",
+   "detail": "<p>Hiển thị catốt chung sáng đoạn khi anode của đoạn được đưa lên CAO, nên cần ngõ ra tích cực mức CAO. 74HC47 có ngõ ra tích cực mức THẤP nên hợp với hiển thị anode chung (Floyd tr.339). Dùng nhầm loại thì các đoạn sáng ngược.</p><p>Cách nhớ: catốt chung nối đất, muốn sáng cần 1.</p>"
   },
   {
    "q": "Trong hệ ghép kênh hiển thị 7 đoạn ở Hình 6-49, IC nào bật luân phiên hai hiển thị?",
    "opts": [
-    "74HC47",
     "74HC139",
+    "74HC47",
     "74HC157"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "74HC139 (bộ giải mã) bật lần lượt chữ số A và B; 74HC157 chọn mã BCD; 74HC47 giải mã sang 7 đoạn.",
-   "src": "Floyd Ch.6 · Section 6–8 Checkup #4(c) (tr.356; đáp án tr.384)"
+   "src": "Floyd Ch.6 · Section 6–8 Checkup #4(c) (tr.356; đáp án tr.384)",
+   "detail": "<p>74HC139 là bộ giải mã bật lần lượt chữ số A và B nên mắt thấy cả hai đều sáng nhờ quét nhanh. 74HC157 chọn mã BCD và 74HC47 giải mã sang 7 đoạn. Tần số quét phải đủ cao để không thấy nhấp nháy.</p><p>Đây là kỹ thuật ghép kênh hiển thị.</p>"
   },
   {
    "q": "Trong cùng hệ ở Hình 6-49, IC 74HC157 làm gì?",
    "opts": [
     "Giải mã BCD để cấp năng lượng cho hiển thị",
-    "Ghép kênh hai mã BCD vào bộ giải mã 7 đoạn",
-    "Bật các hiển thị luân phiên"
+    "Bật các hiển thị luân phiên",
+    "Ghép kênh hai mã BCD vào bộ giải mã 7 đoạn"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "74HC157 là bộ chọn dữ liệu (đa hợp) 4 bit: đường chọn xuống THẤP cho mã LSD, lên CAO cho mã MSD.",
-   "src": "Floyd Ch.6 · Section 6–8 Checkup #4(a) (tr.356; đáp án tr.384)"
+   "src": "Floyd Ch.6 · Section 6–8 Checkup #4(a) (tr.356; đáp án tr.384)",
+   "detail": "<p>74HC157 là bộ chọn dữ liệu 4 bit (đa hợp): đường chọn xuống THẤP cho mã LSD đi qua, lên CAO cho mã MSD. Nó không giải mã (đó là 74HC47) và không bật các hiển thị (đó là 74HC139).</p><p>Ba IC, ba việc: chọn, giải mã, bật.</p>"
   },
   {
    "q": "Với 74HC47, khi chân LT (lamp test) ở mức THẤP và BI/RBO ở mức CAO thì:",
    "opts": [
-    "chỉ số 0 ở đầu bị xoá",
     "cả bảy đoạn đều tắt",
+    "chỉ số 0 ở đầu bị xoá",
     "cả bảy đoạn đều sáng"
    ],
    "correct": 2,
    "explain": "Lamp test bật cả bảy đoạn để kiểm tra không đoạn nào cháy hỏng (Floyd tr.339).",
-   "src": "Floyd Ch.6 · mục 6-5, 74HC47 (tr.339)"
+   "src": "Floyd Ch.6 · mục 6-5, 74HC47 (tr.339)",
+   "detail": "<p>Lamp test (LT = 0 khi BI/RBO = 1) bật cả bảy đoạn để kiểm tra không đoạn nào cháy hỏng. Tắt hết đoạn là chức năng blanking (BI), còn xoá số 0 đầu là zero suppression qua chân RBI.</p><p>Ba chức năng: LT, BI, RBI.</p>"
   },
   {
    "q": "Vì sao hiển thị 7 đoạn dùng chữ b và d viết thường thay vì B và D in hoa?",
    "opts": [
-    "Vì chữ in hoa B giống số 8 và D giống số 0",
     "Vì chữ in hoa không có trong mã thập lục phân",
+    "Vì chữ in hoa B giống số 8 và D giống số 0",
     "Vì chữ thường dùng ít đoạn hơn"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Floyd tr.244: chữ b viết thường vì B in hoa giống số 8; tương tự, D in hoa sẽ giống số 0.",
-   "src": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (tr.244)"
+   "src": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (tr.244)",
+   "detail": "<p>Chữ B in hoa giống số 8 và D in hoa giống số 0 trên màn hình 7 đoạn, nên Floyd dùng b và d viết thường để phân biệt. Chữ thường không dùng ít đoạn hơn (b dùng 5 đoạn) và các chữ hex A đến F vẫn tồn tại.</p><p>Vì vậy bảng 4-14 liệt kê b và d.</p>"
   },
   {
    "q": "Điều nào đúng khi so sánh LED và LCD 7 đoạn?",
    "opts": [
-    "LCD nhìn thấy trong bóng tối, LED thì không",
     "Cả hai đều tự phát sáng",
+    "LCD nhìn thấy trong bóng tối, LED thì không",
     "LED nhìn thấy được trong bóng tối, LCD thì không"
    ],
    "correct": 2,
    "explain": "Mỗi đoạn LED dùng một đi-ốt phát quang nên tự phát sáng. LCD hoạt động bằng phân cực ánh sáng, đoạn bị kích hoạt không phản xạ ánh sáng nên hiện đen và không nhìn thấy trong tối (Floyd tr.244).",
-   "src": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (tr.244)"
+   "src": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (tr.244)",
+   "detail": "<p>Mỗi đoạn LED là một đi-ốt phát quang nên tự phát sáng, nhìn thấy trong bóng tối. LCD hoạt động bằng phân cực ánh sáng, đoạn bị kích hoạt không phản xạ ánh sáng nên hiện đen, và không nhìn thấy trong tối trừ khi có đèn nền.</p><p>Ý nghĩa: điều kiện ánh sáng yếu thì chọn LED.</p>"
   },
   {
    "q": "Theo Bảng 4-14 của Floyd, chữ C hiển thị bằng những đoạn nào?",
    "opts": [
-    "a, b, c, d",
     "d, e, f, g",
-    "a, d, e, f"
+    "a, d, e, f",
+    "a, b, c, d"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "Bảng 4-14: C = a, d, e, f. (b: c,d,e,f,g; d: b,c,d,e,g; E: a,d,e,f,g; A: a,b,c,e,f,g.)",
-   "src": "Floyd Ch.4 · Bảng 4-14 (tr.245)"
+   "src": "Floyd Ch.4 · Bảng 4-14 (tr.245)",
+   "detail": "<p>Bảng 4-14: C = a, d, e, f; A = a, b, c, e, f, g; b = c, d, e, f, g; d = b, c, d, e, g; E = a, d, e, f, g. Phương án \"a, b, c, d\" là hình chữ khác, còn \"d, e, f, g\" thiếu đoạn a.</p><p>Hình dung chữ C: nửa trên, nửa dưới và cạnh trái.</p>"
+  },
+  {
+   "q": "74HC47 có các ngõ ra a đến g tích cực mức THẤP và có thể lái trực tiếp hiển thị 7 đoạn anode chung.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng (Floyd tr.339).",
+   "src": "Floyd Ch.6 · mục 6-5 (tr.339)",
+   "detail": "<p>Hiển thị anode chung nối anode lên VCC nên đoạn sáng khi ngõ ra xuống THẤP. Vì vậy ngõ ra tích cực THẤP của 74HC47 lái trực tiếp được, còn với catốt chung cần bộ giải mã tích cực CAO. Các chân LT, RBI, BI/RBO cũng tích cực mức THẤP.</p>"
+  },
+  {
+   "q": "Zero suppression ở đầu số (leading zero suppression) xoá các số 0 phía sau dấu thập phân.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 0,
+   "explain": "Sai: nó xoá các số 0 ở phía trước (bên trái) số.",
+   "src": "Floyd Ch.6 · mục 6-5, Hình 6-35 (tr.340)",
+   "detail": "<p>Floyd 6-5: xoá số 0 ở đầu số gọi là leading zero suppression; xoá số 0 ở cuối số (phía phải) gọi là trailing zero suppression. Chỉ các số 0 không cần thiết bị xoá: 030.080 hiển thị 30.08, các số 0 cần thiết ở giữa giữ nguyên. Cơ chế dùng chân RBI và BI/RBO nối dây chuyền giữa các bộ 74HC47.</p>"
+  },
+  {
+   "q": "Để loại các gai điện áp do chuyển mạch nhanh trên VCC và đất của bo mạch số, Floyd khuyên đặt tụ khoảng bao nhiêu cho cả bo mạch?",
+   "opts": [
+    "Khoảng 1 µF từ VCC xuống đất",
+    "Khoảng 1 nF nối tiếp với VCC",
+    "Khoảng 1000 µF nối giữa hai chân tín hiệu"
+   ],
+   "correct": 0,
+   "explain": "Floyd 6-11: 1 µF cho cả bo mạch và 0,022 đến 0,1 µF rải rác.",
+   "src": "Floyd Ch.6 · mục 6-11 (tr.364)",
+   "detail": "<p>Tụ tách mắc song song giữa VCC và đất để cho xung tần cao một đường trở kháng thấp. Một tụ khoảng 1 µF lo cả bo mạch, các tụ nhỏ 0,022 đến 0,1 µF đặt gần thiết bị chuyển mạch nhanh hoặc lái nhiều tải (bộ dao động, bộ đếm, bộ đệm, driver bus). Tụ mắc nối tiếp với VCC hay giữa chân tín hiệu không làm việc này.</p><p>Chủ đề này được dạy sâu ở Module 09 (EMC).</p>"
+  },
+  {
+   "q": "Nhiễu có thể gây ra các tín hiệu sai (glitch) ở ngõ ra bộ giải mã logic do các đầu vào đổi trạng thái không đồng thời.",
+   "opts": [
+    "Sai",
+    "Đúng"
+   ],
+   "correct": 1,
+   "explain": "Đúng: glitch xuất hiện khi các ngõ vào đổi không đồng thời.",
+   "src": "Floyd Ch.6 · mục 6-11 (tr.364)",
+   "detail": "<p>Floyd 6-11 định nghĩa glitch là xung ngắn sai ở ngõ ra và giải thích nguyên nhân là độ trễ khác nhau giữa các đường tín hiệu. Có thể loại bằng strobe (cho phép bộ giải mã chỉ khi ngõ vào đã ổn định). Cùng ý với Bài 36 chương 7 mà module này đã giải (bộ đếm bất đồng bộ).</p>"
   }
  ],
  "generated": [
@@ -678,7 +783,8 @@
    ],
    "correct": 0,
    "explain": "h = D·θ = 10 m × 2,91×10⁻⁴ = 2,91×10⁻³ m = 2,91 mm (khớp bảng trong bài giảng).",
-   "src": ""
+   "src": "",
+   "detail": "<p>h = D·θ với θ = 2,91×10⁻⁴ rad; D = 10 m cho h = 2,91×10⁻³ m = 2,91 mm (khớp bảng bài giảng). 1,45 mm là kết quả ở 5 m và 5,82 mm ở 20 m.</p><p>Tuyến tính: gấp đôi khoảng cách thì gấp đôi h.</p>"
   },
   {
    "q": "Màn hình 4K UHD (3840×2160) có số điểm ảnh gấp bao nhiêu lần Full HD (1920×1080)?",
@@ -689,7 +795,8 @@
    ],
    "correct": 1,
    "explain": "Gấp đôi cả chiều rộng lẫn chiều cao nên gấp 2×2 = 4 lần (8 294 400 so với 2 073 600).",
-   "src": ""
+   "src": "",
+   "detail": "<p>4K UHD gấp đôi cả chiều rộng (3840 so với 1920) lẫn chiều cao (2160 so với 1080) nên số điểm ảnh gấp 2 × 2 = 4 lần (8 294 400 so với 2 073 600). Phương án \"gấp đôi\" quên rằng có hai chiều.</p><p>Diện tích tỉ lệ với bình phương hệ số kéo dài.</p>"
   },
   {
    "q": "Một CRT quét 400 dòng với tần số quét dọc 100 Hz. Tần số răng cưa quét ngang cần thiết là:",
@@ -700,7 +807,8 @@
    ],
    "correct": 1,
    "explain": "f_X = N_dòng × f_Y = 400 × 100 Hz = 40 000 Hz = 40 kHz (ví dụ trong Tooley mục 11.1.3).",
-   "src": ""
+   "src": "",
+   "detail": "<p>f_X = N_dòng × f_Y = 400 × 100 Hz = 40 000 Hz = 40 kHz, đúng ví dụ Tooley 11.1.3. Trong một chu kỳ quét dọc chùm phải vẽ đủ 400 dòng nên răng cưa ngang chạy 400 chu kỳ.</p><p>4 kHz thiếu một bậc 10, 400 kHz thừa một bậc 10.</p>"
   },
   {
    "q": "LED chuẩn 5 mm dòng 10 mA, áp thuận 2,0 V, nguồn 5 V. Điện trở hạn dòng nối tiếp cần là (bài tính bổ sung của module):",
@@ -711,7 +819,8 @@
    ],
    "correct": 2,
    "explain": "R = (5 − 2,0) V / 0,010 A = 300 Ω.",
-   "src": ""
+   "src": "",
+   "detail": "<p>R = (V_nguồn - V_LED)/I = (5 - 2,0)/0,010 = 300 Ω. 200 Ω cho dòng 15 mA và 500 Ω cho dòng 6 mA, đều sai so với 10 mA.</p><p>Bài tính bổ sung của module, dùng số liệu bảng 11.1 của Tooley.</p>"
   },
   {
    "q": "Nếu mỗi kênh màu R, G, B có 256 mức thì một điểm ảnh biểu diễn được bao nhiêu màu?",
@@ -722,7 +831,8 @@
    ],
    "correct": 0,
    "explain": "256 × 256 × 256 = 256³ = 16 777 216, khớp \"hơn 16 triệu màu\" trong Tooley 11.3.3.",
-   "src": ""
+   "src": "",
+   "detail": "<p>256 × 256 × 256 = 256³ = 16 777 216 màu, khớp \"hơn 16 triệu màu\" trong Tooley 11.3.3. 768 là 256 × 3 (cộng thay vì nhân) và 65 536 là 256² (chỉ hai kênh).</p><p>Mỗi kênh nhân vào số tổ hợp, không cộng.</p>"
   },
   {
    "q": "Trên Airbus A320, máy tính nào tạo hình ảnh và ký hiệu cho PFD, ND và ECAM?",
@@ -733,7 +843,8 @@
    ],
    "correct": 2,
    "explain": "DMC tạo thông tin hiển thị; FWC tạo cảnh báo; SDAC thu dữ liệu hệ thống rồi chuyển cho DMC.",
-   "src": ""
+   "src": "",
+   "detail": "<p>DMC (Display Management Computer) tạo thông tin ký hiệu và hình ảnh cho PFD, ND và ECAM; FWC tạo cảnh báo, SDAC thu dữ liệu hệ thống rồi chuyển cho DMC. DMC 3 là dự phòng cho DMC 1 hoặc 2.</p><p>Ba chữ cái đầu: D = display, F = flight warning, S = system data.</p>"
   },
   {
    "q": "Theo Tooley (mục 1.1.6), N2 trên màn hình ECAM là:",
@@ -744,7 +855,8 @@
    ],
    "correct": 2,
    "explain": "Tooley: \"N1/fan speed, EGT, N2/high pressure turbine speed\". Slide E/WD của bài giảng ghi N2 là áp thấp là sai.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Tooley 1.1.6 viết \"N1/fan speed, EGT, N2/high pressure turbine speed\", nên N2 là tốc độ cụm áp cao. Slide E/WD của bài giảng ghi N2 là áp thấp là sai (chính slide đó ghi N1 là cụm áp thấp).</p><p>Nhớ: số nhỏ N1 = quạt/áp thấp, N2 = áp cao.</p>"
   },
   {
    "q": "Theo bài giảng, kiểu căn chỉnh tinh thể lỏng nào đang dẫn đầu ở màn hình máy bay hiện đại?",
@@ -755,7 +867,8 @@
    ],
    "correct": 2,
    "explain": "Slide 4: TN dùng ở màn hình máy bay đời đầu (nay ít), IPS \"widely used in modern aircraft displays (leader)\", MVA dùng ở buồng lái cao cấp.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Slide 4: TN dùng ở màn hình máy bay đời đầu (nay ít), IPS \"widely used in modern aircraft displays (leader)\", MVA dùng ở buồng lái cao cấp với màu đen sâu. TN rẻ nhưng góc nhìn hẹp nên không dẫn đầu.</p><p>IPS = góc nhìn rộng, màu tốt.</p>"
   },
   {
    "q": "Trang FUEL của ECAM khi bơm tắt: các thùng 686, 2742, 5852, 2741 và 686 kg. Tổng nhiên liệu trên tàu (FOB) là:",
@@ -766,7 +879,8 @@
    ],
    "correct": 2,
    "explain": "686 + 2742 + 5852 + 2741 + 686 = 12 707 kg, đúng giá trị FOB trên slide.",
-   "src": ""
+   "src": "",
+   "detail": "<p>686 + 2742 + 5852 + 2741 + 686 = 12 707 kg, đúng giá trị FOB trên slide. 12 770 và 13 707 là kết quả khi đảo hoặc nhầm một chữ số khi cộng.</p><p>Kiểm tra bằng cách cộng từng cặp: 686 + 686 = 1372; 2742 + 2741 = 5483; 1372 + 5483 + 5852 = 12 707.</p>"
   },
   {
    "q": "Trong ACARS, bản tin OOOI báo bốn sự kiện nào?",
@@ -777,7 +891,8 @@
    ],
    "correct": 0,
    "explain": "OOOI = Out, Off, On, In (slide 20 của bài giảng).",
-   "src": ""
+   "src": "",
+   "detail": "<p>OOOI là Out (rời cổng), Off (rời mặt đất), On (chạm đất), In (vào cổng), bốn mốc của mỗi chuyến bay mà ACARS tự động báo cho hãng. Các cụm khác như khởi động động cơ hay xin phép không phải OOOI.</p><p>Hay dùng để tính giờ khối và giờ bay.</p>"
   },
   {
    "q": "Trang ND của slide hiển thị khoảng cách tới điểm bay 37 NM với tốc độ mặt đất 257 kt. Thời gian bay ước tính xấp xỉ:",
@@ -788,7 +903,8 @@
    ],
    "correct": 1,
    "explain": "t = 37 NM / 257 kt = 0,144 giờ ≈ 8,6 phút. Vì vậy nhãn \"23 33\" là thời gian 23 phút 33 giây là nghi vấn (có thể là giờ UTC).",
-   "src": ""
+   "src": "",
+   "detail": "<p>t = 37 NM / 257 kt = 0,144 giờ ≈ 8,6 phút, nên nhãn \"23 33\" nếu hiểu là 23 phút 33 giây là nghi vấn; nhiều khả năng là giờ UTC dự kiến đến (ETA). 2,6 phút và 23,6 phút là sai.</p><p>Luôn kiểm tra đơn vị: NM chia kt cho giờ.</p>"
   },
   {
    "q": "A320 (1988) giới thiệu buồng lái \"toàn màn hình\" với bao nhiêu màn hình CRT chính?",
@@ -799,7 +915,8 @@
    ],
    "correct": 2,
    "explain": "Hai PFD, hai ND và hai màn hình ECAM = 6 (slide 8 và slide 11).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Hai PFD, hai ND và hai màn hình ECAM cho tổng sáu màn hình, như slide 8 (\"6 CRT displays\") và slide 11. Con số 4 bỏ quên ECAM; 8 là thừa.</p><p>A350 thì dùng ít màn hình hơn nhưng lớn hơn.</p>"
   },
   {
    "q": "Trên chỉ báo tư thế của PFD, nửa trên (trời) và nửa dưới (đất) có màu:",
@@ -810,7 +927,8 @@
    ],
    "correct": 1,
    "explain": "Quy ước chung của chân trời giả: trời xanh lam ở trên, đất nâu ở dưới (slide 21).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Quy ước chân trời giả: trời xanh lam ở trên, đất nâu ở dưới (slide 21). Nếu ngược lại, phi công đọc sai tư thế khi lật ngược. Xanh lục và đỏ không thuộc quy ước.</p><p>Màu cố định giúp nhận ra tư thế trong một lần liếc.</p>"
   },
   {
    "q": "Ở FL140 trong khí quyển chuẩn ISA với độ cao cabin 2 870 ft, chênh áp cabin ΔP gần nhất với:",
@@ -821,7 +939,8 @@
    ],
    "correct": 1,
    "explain": "p(2870 ft) ≈ 13,23 psi, p(14 000 ft) ≈ 8,63 psi, ΔP ≈ 4,6 psi. Slide ghi 2,9 psi nên chỉ là số minh hoạ.",
-   "src": ""
+   "src": "",
+   "detail": "<p>p(2870 ft) ≈ 13,23 psi, p(14 000 ft) ≈ 8,63 psi nên ΔP ≈ 4,6 psi. Slide ghi 2,9 psi nên chỉ là số minh hoạ. 7,8 psi không khớp phép tính này. Chi tiết nằm ở notebook (công thức khí áp ISA).</p><p>SAT -13 °C của slide lại đúng với ISA, nên không do lệch nhiệt độ.</p>"
   },
   {
    "q": "Tiêu chuẩn nào quy định chất lượng phần CỨNG điện tử trên không (airborne electronic hardware)?",
@@ -832,7 +951,176 @@
    ],
    "correct": 0,
    "explain": "DO-160: môi trường; DO-178: phần mềm; DO-254: phần cứng (slide 2).",
-   "src": ""
+   "src": "",
+   "detail": "<p>DO-160 về môi trường, DO-178 về phần mềm, DO-254 về phần cứng điện tử trên không. Ba tiêu chuẩn này tạo thành ba lớp chứng nhận của một thiết bị hiển thị.</p><p>Ví dụ: DO-178 xuất hiện lại ở Module 07.</p>"
+  },
+  {
+   "q": "Một ADI/PFD có mũi tên glide slope và chỉ báo localiser nằm gọn ở giữa. Phi công đang ở đâu so với tuyến tiếp cận ILS?",
+   "opts": [
+    "Đúng trên cả đường lượn lẫn trục đường băng",
+    "Cao hơn đường lượn và lệch trái trục",
+    "Thấp hơn đường lượn nhưng đúng trục"
+   ],
+   "correct": 0,
+   "explain": "Hai kim ở giữa nghĩa là không lệch đứng và không lệch ngang.",
+   "src": "Bài giảng Electronic displays · slide 23",
+   "detail": "<p>Kim localiser cho biết lệch ngang so với trục đường băng, kim glide slope cho biết lệch đứng so với đường lượn. Khi cả hai ở giữa, máy bay đang trên đúng tuyến tiếp cận. Phi công điều khiển để đưa cả hai kim về giữa.</p><p>Hai kim lệch khỏi giữa nghĩa là cần chỉnh theo hướng của kim.</p>"
+  },
+  {
+   "q": "Trên ND ở chế độ ROSE NAV, máy bay hiển thị ở đâu và la bàn hoạt động thế nào?",
+   "opts": [
+    "Máy bay ở dưới giữa, chỉ hiện cung phía trước",
+    "Máy bay cố định ở tâm, la bàn quay theo hướng bay",
+    "Máy bay di chuyển trên bản đồ cố định hướng bắc"
+   ],
+   "correct": 1,
+   "explain": "ROSE: 360° quanh máy bay cố định ở tâm; ARC: cung phía trước, máy bay ở dưới.",
+   "src": "Bài giảng Electronic displays · slide 22 đến 24",
+   "detail": "<p>Chế độ ROSE hiển thị 360° quanh máy bay ở tâm, la bàn quay theo hướng bay. Chế độ ARC chỉ hiện cung phía trước khoảng 80° với máy bay ở dưới giữa. Chế độ PLAN thì cố định hướng bắc để xem trước kế hoạch bay.</p><p>Phương án cuối mô tả PLAN, không phải ROSE.</p>"
+  },
+  {
+   "q": "Trên màn hình E/WD của ECAM, khoảng giá trị điển hình của EPR và ý nghĩa của nó là:",
+   "opts": [
+    "Khoảng 0 đến 100; phần trăm tốc độ quạt",
+    "Khoảng 400 đến 900; nhiệt độ khí xả",
+    "Khoảng 1,0 đến 1,6; tỉ số áp suất động cơ biểu thị lực đẩy"
+   ],
+   "correct": 2,
+   "explain": "EPR = engine pressure ratio, thường khoảng 1,0 đến 1,6.",
+   "src": "Bài giảng Electronic displays · slide 25",
+   "detail": "<p>EPR là tỉ số áp suất ở cửa ra so với cửa vào của động cơ và là chỉ số lực đẩy. N1 và N2 được hiển thị theo phần trăm (0 đến 100), còn EGT theo °C (vài trăm độ). Ba thông số khác nhau, ba thang khác nhau.</p><p>Học cặp: EPR (lực đẩy), N1 (quạt), N2 (áp cao), EGT (nhiệt), FF (nhiên liệu).</p>"
+  },
+  {
+   "q": "Trên trang PRESS của ECAM, \"CAB ALT\" cho biết điều gì?",
+   "opts": [
+    "Cao độ sân bay hạ cánh",
+    "Độ cao cabin mô phỏng, tức mức mà hành khách cảm nhận",
+    "Độ cao thực của máy bay"
+   ],
+   "correct": 1,
+   "explain": "CAB ALT là độ cao cabin mô phỏng (ft) do hệ thống điều áp duy trì.",
+   "src": "Bài giảng Electronic displays · slide 29",
+   "detail": "<p>Máy bay bay ở FL350 nhưng cabin được điều áp tương đương vài nghìn feet nên hành khách thoải mái; số đó là CAB ALT. Cao độ sân bay hạ cánh là LDG ELEV, còn độ cao thực là số trên PFD.</p><p>ΔP là chênh áp giữa cabin và bên ngoài, V/S là tốc độ đổi độ cao cabin.</p>"
+  },
+  {
+   "q": "Trên trang ELEC của ECAM, nếu máy phát GEN 1 mất, thanh cái nào sẽ mất nguồn trực tiếp từ nó?",
+   "opts": [
+    "Thanh cái thiết yếu DC ESS luôn mất ngay",
+    "AC 2",
+    "AC 1 (và qua TR 1 là DC 1)"
+   ],
+   "correct": 2,
+   "explain": "GEN 1 cấp AC 1; TR 1 chỉnh lưu AC 1 thành DC 1.",
+   "src": "Bài giảng Electronic displays · slide 30",
+   "detail": "<p>Luồng điện: GEN (AC) → thanh cái AC → TR (AC sang DC) → thanh cái DC. Mất GEN 1 thì AC 1, TR 1 và DC 1 mất nguồn nhưng AC ESS và DC ESS vẫn được cấp từ phía còn lại hoặc từ máy phát khẩn cấp.</p><p>Tính thiết yếu: các thanh cái ESS có đường nguồn dự phòng.</p>"
+  },
+  {
+   "q": "Áp suất bình thường của ba hệ thuỷ lực GREEN, BLUE, YELLOW trên A320 theo bài giảng là:",
+   "opts": [
+    "Khoảng 30 000 psi",
+    "Khoảng 3000 psi",
+    "Khoảng 300 psi"
+   ],
+   "correct": 1,
+   "explain": "3000 psi là áp suất làm việc điển hình của hệ thuỷ lực máy bay.",
+   "src": "Bài giảng Electronic displays · slide 31",
+   "detail": "<p>Áp suất cao cho phép dùng xi lanh và đường ống nhỏ, nhẹ để tạo lực lớn cho điều khiển bay, càng đáp và phanh. 300 psi quá thấp cho các tải đó, 30 000 psi vượt xa khả năng của ống và phớt.</p><p>Ba hệ độc lập là ví dụ dự phòng.</p>"
+  },
+  {
+   "q": "Trong ví dụ trang FUEL của bài giảng, khi bơm TẮT thì tổng FOB hiển thị là 12 707 kg. Con số này là:",
+   "opts": [
+    "Nhiên liệu đã dùng cộng nhiên liệu còn lại của một động cơ",
+    "Tổng năm thùng: 686 + 2742 + 5852 + 2741 + 686",
+    "Chỉ thùng giữa 5852 cộng hai thùng trong"
+   ],
+   "correct": 1,
+   "explain": "FOB (fuel on board) là tổng lượng nhiên liệu trong mọi thùng.",
+   "src": "Bài giảng Electronic displays · slide 32",
+   "detail": "<p>Cộng đúng 12 707. Ở trạng thái bơm BẬT, tổng là 10 597 trong khi FOB hiển thị 10 598: chênh 1 kg là sai số làm tròn từng thùng, không phải lỗi slide.</p><p>F.USED là nhiên liệu đã dùng của từng động cơ, một đại lượng khác FOB.</p>"
+  },
+  {
+   "q": "Phát biểu nào đúng về mối liên hệ giữa độ phân giải màn hình và thị lực người ở khoảng cách quan sát?",
+   "opts": [
+    "Khoảng cách xem không ảnh hưởng đến việc thấy điểm ảnh",
+    "Điểm ảnh càng lớn thì mắt càng không nhìn thấy",
+    "Nếu điểm ảnh nhỏ hơn h = D·θ thì mắt không còn nhìn thấy từng điểm ảnh"
+   ],
+   "correct": 2,
+   "explain": "Kích thước nhỏ nhất mắt phân biệt được tỉ lệ với khoảng cách D.",
+   "src": "Bài giảng Electronic displays · slide 5 và 6",
+   "detail": "<p>Với θ = 1 phút cung = 2,91×10⁻⁴ rad, h = D·θ tăng theo khoảng cách (1,45 mm ở 5 m, 0,29 mm ở 1 m). Ngồi gần hơn thì phải có điểm ảnh nhỏ hơn mới không thấy. Do đó màn hình buồng lái nằm gần mắt cần độ phân giải cao.</p><p>Hai phương án sai đảo mối quan hệ hoặc phủ nhận sự phụ thuộc vào khoảng cách.</p>"
+  },
+  {
+   "q": "HD 1280×720 có khoảng bao nhiêu megapixel?",
+   "opts": [
+    "1,28 MP",
+    "7,2 MP",
+    "0,92 MP"
+   ],
+   "correct": 2,
+   "explain": "1280 × 720 = 921 600 điểm ảnh ≈ 0,92 MP.",
+   "src": "Bài giảng Electronic displays · slide 5",
+   "detail": "<p>Số điểm ảnh bằng chiều rộng nhân chiều cao. Full HD là 2,07 MP và 4K UHD là 8,29 MP. 1,28 MP là cách đọc nhầm số 1280, còn 7,2 MP nhầm bậc 10.</p><p>Kiểm tra nhanh: 1,3 nghìn × 0,7 nghìn ≈ 0,9 triệu.</p>"
+  },
+  {
+   "q": "Kiểu căn chỉnh tinh thể lỏng nào cho tương phản cao và màu đen sâu, dùng ở buồng lái cao cấp?",
+   "opts": [
+    "TN (Twisted Nematic)",
+    "MVA (Multi-domain Vertical Aligned)",
+    "IPS (In Plane Switching)"
+   ],
+   "correct": 1,
+   "explain": "Slide 4: MVA tương phản cao, đen sâu; IPS góc nhìn rộng; TN rẻ nhưng góc hẹp.",
+   "src": "Bài giảng Electronic displays · slide 4",
+   "detail": "<p>Ba kiểu: TN (đơn giản, rẻ, góc nhìn hẹp, dùng ở máy bay đời đầu), IPS (góc nhìn rộng, màu tốt, dẫn đầu ở máy bay hiện đại) và MVA (tương phản cao, màu đen sâu, buồng lái cao cấp). Cách nhớ: V trong MVA là vertical, tinh thể dựng đứng khi tắt nên chặn sáng tốt cho màu đen sâu.</p><p>Câu hỏi tương tự xuất hiện ở phần tự sinh bên trên với đáp án IPS.</p>"
+  },
+  {
+   "q": "Pixel của LCD được bật tắt bằng thành phần nào, theo bài giảng?",
+   "opts": [
+    "Một cuộn dây lệch từ",
+    "Một transistor màng mỏng (TFT) hoạt động như công tắc",
+    "Một ống tia âm cực nhỏ cho từng điểm"
+   ],
+   "correct": 1,
+   "explain": "TFT nhận điện áp từ đường data khi đường gate chọn hàng và giữ nó bằng tụ.",
+   "src": "Bài giảng Electronic displays · slide 4",
+   "detail": "<p>Đường gate chọn hàng, đường data mang điện áp video, tụ giữ điện tích tới lần làm tươi sau. Điện áp điều khiển độ sáng điểm ảnh từ 0 đến 5 V. CRT và cuộn lệch từ là công nghệ khác.</p><p>Đây là nguyên lý của AMLCD (ma trận chủ động).</p>"
+  },
+  {
+   "q": "Vì sao một bộ tạo ký hiệu thứ ba (dự phòng) có ích cho EFIS?",
+   "opts": [
+    "Vì nó thay được bộ trái hoặc phải khi một trong hai hỏng",
+    "Vì nó tăng gấp đôi tốc độ vẽ màn hình",
+    "Vì nó tạo đầu ra riêng cho radar thời tiết"
+   ],
+   "correct": 0,
+   "explain": "Bộ giữa là dự phòng ba cho hai bộ chính.",
+   "src": "Tooley 15.2.2",
+   "detail": "<p>Mỗi phi công có một bộ tạo ký hiệu nuôi màn hình của mình; nếu hỏng, bộ giữa tiếp quản nên không phi công nào mất màn hình bay. Nó không làm nhanh hơn hay thêm chức năng. Nguyên tắc an toàn: một lỗi đơn không được làm mất thông tin bay.</p><p>Liên hệ DO-178: phần mềm bộ tạo ký hiệu là mức quan trọng (flight displays mức B).</p>"
+  },
+  {
+   "q": "CMC của máy bay có hai bộ giống nhau. Vai trò của chúng là gì?",
+   "opts": [
+    "Cả hai cùng xử lý song song để tăng tốc độ",
+    "Một cho động cơ và một cho cabin",
+    "CMC 1 hoạt động và CMC 2 dự phòng"
+   ],
+   "correct": 2,
+   "explain": "Bài giảng slide 19: CMC1 active, CMC2 standby.",
+   "src": "Bài giảng Electronic displays · slide 19",
+   "detail": "<p>Hai bộ giống nhau chạy theo kiểu chủ và dự phòng để dữ liệu bảo trì không mất khi một bộ hỏng. Chúng nhận dữ liệu qua ARINC 429 và tín hiệu rời rạc, gắn dấu thời gian bằng đồng hồ nội và đưa ra qua MCDU, máy in hoặc ACARS.</p><p>Phân công theo hệ thống (động cơ, cabin) không phải thiết kế của CMC.</p>"
+  },
+  {
+   "q": "Biển \"Use of Wi-Fi devices on the flight deck prohibited while engines operating for purpose of flight\" thuộc loại biện pháp EMC nào?",
+   "opts": [
+    "Tăng ngưỡng nhạy của máy thu",
+    "Giảm đường ghép bằng cáp bọc",
+    "Giảm nguồn nhiễu bằng quy trình vận hành"
+   ],
+   "correct": 2,
+   "explain": "Cấm dùng Wi-Fi là loại bỏ nguồn phát gây nhiễu.",
+   "src": "Bài giảng EMC · slide 3",
+   "detail": "<p>Trong ba nhóm biện pháp (nguồn, ghép, độ nhạy) biển cấm tác động lên nguồn: không để thiết bị phát sóng gần màn hình Honeywell Phase 3 khi bay. Không có cáp bọc hay thay đổi màn hình nào ở đây.</p><p>Ví dụ này gặp lại ở Module 09 (EMC).</p>"
   }
  ]
 }

@@ -549,31 +549,31 @@
   {
    "q": "An 8-to-1 multiplexer needs how many select lines?",
    "opts": [
-    "2",
     "3",
-    "4"
+    "4",
+    "2"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "2ⁿ = 8 → n = 3 select lines.",
    "src": ""
   },
   {
    "q": "A 3-to-8 line decoder has how many output lines?",
    "opts": [
-    "8",
     "6",
+    "8",
     "3"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "An n-to-2ⁿ decoder with n = 3 → 2³ = 8 outputs.",
    "src": ""
   },
   {
    "q": "A chip containing roughly 500 logic gates is typically classified as:",
    "opts": [
-    "SSI",
+    "MSI",
     "LSI",
-    "MSI"
+    "SSI"
    ],
    "correct": 1,
    "explain": "From a few hundred up to about 10,000 gates corresponds to LSI (by the classification used in this chapter).",
@@ -582,41 +582,41 @@
   {
    "q": "A demultiplexer performs the opposite function of a:",
    "opts": [
+    "encoder",
     "comparator",
-    "multiplexer",
-    "encoder"
+    "multiplexer"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "A demux takes 1 input source to many lines, the opposite of a mux, which combines many inputs into 1.",
    "src": ""
   },
   {
    "q": "An encoder with 8 inputs will typically produce how many binary output bits?",
    "opts": [
-    "4",
     "3",
-    "8"
+    "8",
+    "4"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "log2(8) = 3 bits are enough to encode 8 input states.",
    "src": ""
   },
   {
    "q": "In IC packaging, 'DIL' stands for:",
    "opts": [
+    "Digital Integrated Logic",
     "Direct Input Line",
-    "Dual-In-Line",
-    "Digital Integrated Logic"
+    "Dual-In-Line"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "DIL = Dual-In-Line, a package with two parallel rows of pins.",
    "src": ""
   },
   {
    "q": "A parity generator/checker circuit is commonly built mainly from:",
    "opts": [
-    "AND gates",
     "NAND gates",
+    "AND gates",
     "cascaded XOR gates"
    ],
    "correct": 2,
@@ -627,19 +627,19 @@
    "q": "Which IC package type is designed for surface-mount (not through-hole) assembly?",
    "opts": [
     "PGA",
-    "DIP",
-    "SOIC"
+    "SOIC",
+    "DIP"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "SOIC (Small Outline IC) is a typical surface-mount package.",
    "src": ""
   },
   {
    "q": "If a gate's fan-out is 10, it can safely drive up to how many standard inputs of the same family?",
    "opts": [
-    "5",
+    "20",
     "10",
-    "20"
+    "5"
    ],
    "correct": 1,
    "explain": "The definition of fan-out is the maximum number of standard input loads an output can drive.",
@@ -648,11 +648,11 @@
   {
    "q": "A comparator circuit is used to:",
    "opts": [
-    "store binary data",
     "determine whether one binary number is greater than, equal to, or less than another",
-    "convert binary to decimal"
+    "convert binary to decimal",
+    "store binary data"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "A comparator compares two binary numbers and produces the A>B, A=B or A<B signal.",
    "src": ""
   }

@@ -743,31 +743,31 @@
   {
    "q": "If a CPU runs at 100MHz, one clock period (T-state) lasts:",
    "opts": [
-    "1 ns",
     "10 ns",
-    "100 ns"
+    "100 ns",
+    "1 ns"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "T = 1/f = 1/100.000.000 = 10ns.",
    "src": ""
   },
   {
    "q": "An 8-bit data bus can represent decimal values from 0 to:",
    "opts": [
-    "255",
     "128",
+    "255",
     "256"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "2⁸-1 = 255.",
    "src": ""
   },
   {
    "q": "A 16-bit address bus can address how many unique memory locations?",
    "opts": [
-    "32.768",
+    "16.384",
     "65.536",
-    "16.384"
+    "32.768"
    ],
    "correct": 1,
    "explain": "2¹⁶ = 65.536.",
@@ -776,41 +776,41 @@
   {
    "q": "ROM is best described as:",
    "opts": [
+    "read/write memory that loses its data when power is removed",
     "read-only memory that loses its data when power is removed",
-    "read-only memory that retains its data when power is removed (non-volatile)",
-    "read/write memory that loses its data when power is removed"
+    "read-only memory that retains its data when power is removed (non-volatile)"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "ROM is non-volatile memory: its data remains when power is lost.",
    "src": ""
   },
   {
    "q": "RAM loses its stored data when:",
    "opts": [
-    "only after 24 hours",
     "lost when the power supply is removed (volatile)",
-    "never lost"
+    "never lost",
+    "only after 24 hours"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "RAM is volatile memory and loses its data as soon as power is removed.",
    "src": ""
   },
   {
    "q": "The ALU is primarily responsible for:",
    "opts": [
+    "storing the address of the next instruction",
     "generating the system clock",
-    "performing arithmetic and logic operations",
-    "storing the address of the next instruction"
+    "performing arithmetic and logic operations"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "ALU = Arithmetic Logic Unit, which performs add/subtract/AND/OR and so on.",
    "src": ""
   },
   {
    "q": "The Program Counter (PC) register holds:",
    "opts": [
-    "the result of the most recent ALU operation",
     "the current stack pointer value",
+    "the result of the most recent ALU operation",
     "the address of the next instruction to be executed"
    ],
    "correct": 2,
@@ -821,19 +821,19 @@
    "q": "In the fetch-decode-execute cycle, which step retrieves the instruction from memory?",
    "opts": [
     "execute",
-    "decode",
-    "fetch"
+    "fetch",
+    "decode"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "The fetch step reads the instruction code from the memory location pointed to by the PC.",
    "src": ""
   },
   {
    "q": "A microcontroller executes an instruction requiring 4 T-states at 20MHz clock; execution time is:",
    "opts": [
-    "80 ns",
+    "20 ns",
     "200 ns",
-    "20 ns"
+    "80 ns"
    ],
    "correct": 1,
    "explain": "T=1/20MHz=50ns; 4×50ns=200ns.",
@@ -842,33 +842,33 @@
   {
    "q": "A 16K×8-bit memory device has a total storage capacity of:",
    "opts": [
-    "32 KB",
     "16 KB",
-    "8 KB"
+    "8 KB",
+    "32 KB"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "16K words × 8 bits/word = 16K bytes = 16KB.",
    "src": ""
   },
   {
    "q": "Which bus carries timing and control signals throughout the computer system?",
    "opts": [
-    "address bus",
     "control bus",
-    "data bus"
+    "data bus",
+    "address bus"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "The control bus carries control/timing signals (R/W, clock, interrupt, and so on).",
    "src": ""
   },
   {
    "q": "A microprocessor with a 32-bit address bus can directly address up to:",
    "opts": [
+    "4 MB",
     "4 GB",
-    "4 TB",
-    "4 MB"
+    "4 TB"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "2³² byte = 4.294.967.296 byte = 4GB.",
    "src": ""
   }

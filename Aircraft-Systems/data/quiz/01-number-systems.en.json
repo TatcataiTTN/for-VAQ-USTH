@@ -698,31 +698,31 @@
   {
    "q": "The decimal number 45 is equivalent to the binary number:",
    "opts": [
-    "100101",
     "101101",
-    "101110"
+    "101110",
+    "100101"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "45 = 32+8+4+1 → 101101₂.",
    "src": ""
   },
   {
    "q": "The binary number 11001 is equivalent to the decimal number:",
    "opts": [
-    "25",
     "19",
+    "25",
     "27"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "16+8+0+0+1 = 25.",
    "src": ""
   },
   {
    "q": "The hex number 2F is equivalent to the decimal number:",
    "opts": [
-    "45",
+    "49",
     "47",
-    "49"
+    "45"
    ],
    "correct": 1,
    "explain": "2·16+15 = 47.",
@@ -731,41 +731,41 @@
   {
    "q": "The decimal number 200 is equivalent to the hex number:",
    "opts": [
+    "D2",
     "B4",
-    "C8",
-    "D2"
+    "C8"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "200 = 12·16+8 → C8.",
    "src": ""
   },
   {
    "q": "The octal number 47 is equivalent to the decimal number:",
    "opts": [
-    "41",
     "39",
-    "37"
+    "37",
+    "41"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "4·8+7 = 39.",
    "src": ""
   },
   {
    "q": "The decimal number 68 is equivalent to the BCD code:",
    "opts": [
+    "01100100",
     "01111000",
-    "01101000",
-    "01100100"
+    "01101000"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "6→0110, 8→1000 → 01101000.",
    "src": ""
   },
   {
    "q": "The binary number 11110000 is equivalent to the hex number:",
    "opts": [
-    "0F",
     "FF",
+    "0F",
     "F0"
    ],
    "correct": 2,
@@ -776,19 +776,19 @@
    "q": "The two's complement of the 5-bit binary number 01101 is:",
    "opts": [
     "01100",
-    "10010",
-    "10011"
+    "10011",
+    "10010"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "Invert the bits: 10010, add 1 → 10011.",
    "src": ""
   },
   {
    "q": "The binary number 11100101 is equivalent to the octal number:",
    "opts": [
-    "344",
+    "354",
     "345",
-    "354"
+    "344"
    ],
    "correct": 1,
    "explain": "Group 3 bits from the right (pad on the left): 011 100 101 → 3 4 5 → 345₈.",
@@ -797,11 +797,11 @@
   {
    "q": "The ASCII code (hex) of the character 'A' is:",
    "opts": [
-    "40",
     "41",
-    "42"
+    "42",
+    "40"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "'A' = 65 decimal = 41 hex (ASCII standard).",
    "src": ""
   }

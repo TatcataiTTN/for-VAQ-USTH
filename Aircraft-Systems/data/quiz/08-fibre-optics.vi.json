@@ -9,7 +9,8 @@
    ],
    "correct": 1,
    "explain": "Phải có n₁ > n₂ thì mới có phản xạ toàn phần ở biên lõi-vỏ.",
-   "src": "Tooley Ch.10 Q1"
+   "src": "Tooley Ch.10 Q1",
+   "detail": "<p>Phải có n₁ > n₂ (chiết suất lõi lớn hơn vỏ) thì ánh sáng mới bị phản xạ toàn phần ở biên lõi và vỏ và được giữ trong lõi. Nếu bằng nhau thì không có biên quang học; nếu nhỏ hơn thì tia luôn khúc xạ ra vỏ và mất.</p><p>Sơ đồ: lõi cao, vỏ thấp.</p>"
   },
   {
    "q": "Bộ phát quang thích hợp dùng với sợi quang là:",
@@ -20,7 +21,8 @@
    ],
    "correct": 0,
    "explain": "Bộ phát là LED hồng ngoại hoặc diode laser công suất thấp; photodiode và phototransistor là bộ thu (Tooley 10.3).",
-   "src": "Tooley Ch.10 Q2"
+   "src": "Tooley Ch.10 Q2",
+   "detail": "<p>Bộ phát quang là LED hồng ngoại hoặc diode laser công suất thấp, ghép trực tiếp vào sợi. Photodiode và phototransistor là bộ thu: chúng cho dòng lớn khi được chiếu sáng và dòng rất nhỏ khi tối.</p><p>Phát = LED/laser, thu = photodiode.</p>"
   },
   {
    "q": "Đường kính lõi điển hình của sợi đơn mode là:",
@@ -31,7 +33,8 @@
    ],
    "correct": 2,
    "explain": "Hình 10.5: lõi đơn mode 5 µm, vỏ 125 µm; đa mode 50 µm.",
-   "src": "Tooley Ch.10 Q3"
+   "src": "Tooley Ch.10 Q3",
+   "detail": "<p>Hình 10.5: sợi đơn mode có lõi khoảng 5 µm (cùng cỡ bước sóng) và vỏ 125 µm, còn đa mode có lõi 50 µm. Lõi đơn mode nhỏ để chỉ một mode truyền được. 125 µm là đường kính vỏ chứ không phải lõi.</p><p>Nhớ cặp: 5/125 (đơn mode) và 50/125 (đa mode).</p>"
   },
   {
    "q": "Trong cáp quang nhiều lõi:",
@@ -42,7 +45,8 @@
    ],
    "correct": 2,
    "explain": "Tooley 10.4.1: buffer mã màu xanh lam, đỏ, xanh lá, vàng, trắng để nhận dạng sợi.",
-   "src": "Tooley Ch.10 Q4"
+   "src": "Tooley Ch.10 Q4",
+   "detail": "<p>Tooley 10.4.1: lớp buffer bảo vệ mỗi sợi được mã màu (xanh lam, đỏ, xanh lá, vàng, trắng) để nhận dạng sợi trong cáp. Lõi và vỏ phản xạ là phần thuỷ tinh bên trong nên không thể tô màu.</p><p>Vỏ ngoài của cáp thường màu tím.</p>"
   },
   {
    "q": "Bước sóng ánh sáng điển hình trong sợi quang là:",
@@ -53,7 +57,8 @@
    ],
    "correct": 0,
    "explain": "Hồng ngoại gần 1,3 µm (1310 nm), cùng 0,85 và 1,55 µm.",
-   "src": "Tooley Ch.10 Q5"
+   "src": "Tooley Ch.10 Q5",
+   "detail": "<p>Sợi quang dùng ánh sáng hồng ngoại gần, điển hình 1,3 µm (1310 nm), ngoài ra 0,85 µm và 1,55 µm; các giá trị này nằm trong cửa sổ suy hao thấp của sợi silica. 13 µm và 130 µm là hồng ngoại xa, không dùng ở sợi.</p><p>Đổi đơn vị: 1,3 µm = 1300 nm.</p>"
   },
   {
    "q": "Chuẩn máy bay nào áp dụng cho mạng sợi quang?",
@@ -64,7 +69,8 @@
    ],
    "correct": 2,
    "explain": "ARINC 636, cải biên từ FDDI, dùng cho AVLAN và CABLAN của Boeing 777 (đến 100 Mbps).",
-   "src": "Tooley Ch.10 Q6"
+   "src": "Tooley Ch.10 Q6",
+   "detail": "<p>ARINC 636 (cải biên từ FDDI) là chuẩn cho mạng quang AVLAN và CABLAN của Boeing 777, tốc độ tới 100 Mbps. ARINC 429 là bus đồng điểm-điểm và 573 là chuẩn ghi dữ liệu chuyến bay.</p><p>Bộ nhớ: 636 = mạng quang.</p>"
   },
   {
    "q": "Nếu bộ phóng có góc chấp nhận 45° thì khẩu độ số tương ứng là:",
@@ -75,7 +81,8 @@
    ],
    "correct": 0,
    "explain": "NA = sin θa = sin 45° = 0,707.",
-   "src": "Tooley Ch.10 Q7"
+   "src": "Tooley Ch.10 Q7",
+   "detail": "<p>NA = sin θa = sin 45° = 0,707. 0,5 là sin 30° và 1 là sin 90° (θa = 90°, thu mọi tia). Công thức ngược: θa = sin⁻¹(NA).</p><p>Kiểm tra nhanh: sin 45° = √2/2 ≈ 0,707.</p>"
   },
   {
    "q": "Đường kính vỏ điển hình của sợi đơn mode là:",
@@ -86,7 +93,8 @@
    ],
    "correct": 0,
    "explain": "Vỏ 125 µm (hình 10.5).",
-   "src": "Tooley Ch.10 Q8"
+   "src": "Tooley Ch.10 Q8",
+   "detail": "<p>Vỏ phản xạ của sợi đơn mode điển hình dày 125 µm (hình 10.5). 5 µm là đường kính lõi đơn mode còn 50 µm là lõi đa mode.</p><p>Chuẩn tải 125 µm cho phép dùng chung đầu nối cho nhiều loại sợi.</p>"
   },
   {
    "q": "Nếu khẩu độ số của sợi có giá trị 1, điều này cho biết:",
@@ -97,7 +105,8 @@
    ],
    "correct": 0,
    "explain": "NA = 1 ứng với θa = 90°: thu mọi tia từ nguồn (lý tưởng).",
-   "src": "Tooley Ch.10 Q9"
+   "src": "Tooley Ch.10 Q9",
+   "detail": "<p>NA = 1 ứng với θa = 90° nên mọi tia tới từ nguồn đều nằm trong nón chấp nhận và được thu (lý tưởng). NA = 0 mới là không thu được gì; 50% không tương ứng giá trị NA cụ thể.</p><p>Trên thực tế NA của sợi chỉ cỡ 0,2 đến 0,3.</p>"
   },
   {
    "q": "Khi thay một đoạn cáp quang nhiều đường, bắt buộc phải bảo đảm rằng:",
@@ -108,7 +117,8 @@
    ],
    "correct": 2,
    "explain": "Phải căn chỉnh trước khi ghép. Kết nối đúng khi dải đỏ bị che ít nhất 50% (không phải 0% hay 100%).",
-   "src": "Tooley Ch.10 Q10"
+   "src": "Tooley Ch.10 Q10",
+   "detail": "<p>Khi thay cáp nhiều lõi phải căn chỉnh đúng các đầu nối trước khi ghép phích và đế. Kết nối đúng là khi dải đỏ trên đế bị vòng ren che ít nhất 50%, nên \"không che dải đỏ\" hay \"che hoàn toàn\" đều không phải điều kiện bắt buộc.</p><p>Quy tắc: phích có dải vàng, đế có dải đỏ.</p>"
   },
   {
    "q": "Để hỗ trợ tốc độ dữ liệu cao, cáp quang cần có:",
@@ -119,7 +129,8 @@
    ],
    "correct": 0,
    "explain": "Tốc độ dữ liệu tối đa đi cùng băng thông (Tooley 10.3).",
-   "src": "Tooley Ch.10 Q11"
+   "src": "Tooley Ch.10 Q11",
+   "detail": "<p>Tốc độ dữ liệu tối đa đi cùng băng thông: băng thông càng rộng thì truyền được xung càng hẹp và nhiều bit hơn mỗi giây. Băng thông bằng không hay hạn chế sẽ giới hạn tốc độ.</p><p>Tooley 10.3 liên hệ băng thông với tán sắc.</p>"
   },
   {
    "q": "Một ưu điểm đáng kể của mạng sợi quang trên máy bay chở khách lớn là:",
@@ -130,7 +141,8 @@
    ],
    "correct": 1,
    "explain": "Giảm khối lượng, tiết kiệm đến khoảng 1 300 kg.",
-   "src": "Tooley Ch.10 Q12"
+   "src": "Tooley Ch.10 Q12",
+   "detail": "<p>Lợi thế đáng kể của sợi quang trên máy bay lớn là giảm khối lượng: cáp đồng nặng gấp khoảng 5 lần, tiết kiệm có thể tới 1 300 kg. Chi phí lắp đặt không thấp hơn (cần độ chính xác cao) và bảo trì khó hơn ở đầu nối.</p><p>Nhược điểm của sợi: độ chính xác, độ bền cơ học, bán kính uốn.</p>"
   },
   {
    "q": "Một chùm sáng tới biên giữa hai môi trường có chiết suất khác nhau đúng bằng góc tới hạn. Tia ló ra sẽ đi:",
@@ -141,7 +153,8 @@
    ],
    "correct": 1,
    "explain": "Tại θc, θr = 90°: tia khúc xạ chạy dọc biên.",
-   "src": "Tooley Ch.10 Q13"
+   "src": "Tooley Ch.10 Q13",
+   "detail": "<p>Tại góc tới hạn, góc khúc xạ bằng 90° nên tia ló chạy dọc theo biên giữa hai môi trường. Nếu nhỏ hơn góc tới hạn, tia khúc xạ rời biên sang môi trường 2; lớn hơn thì phản xạ toàn phần quay lại nguồn.</p><p>Ba vùng: dưới θc (khúc xạ), tại θc (dọc biên), trên θc (TIR).</p>"
   },
   {
    "q": "Băng thông của sợi quang bị giới hạn bởi:",
@@ -152,7 +165,8 @@
    ],
    "correct": 2,
    "explain": "Tán sắc làm giãn xung nên quyết định tốc độ bit tối đa (Tooley 10.3).",
-   "src": "Tooley Ch.10 Q14"
+   "src": "Tooley Ch.10 Q14",
+   "detail": "<p>Băng thông của sợi đa mode bị giới hạn bởi tán sắc mode: các mode đi đường dài khác nhau nên đến muộn khác nhau và xung bị giãn, nên phải kéo dài thời gian mỗi bit. Suy hao quyết định khoảng cách chứ không phải băng thông, còn uốn cong gây tổn hao công suất.</p><p>Tán sắc giới hạn tốc độ bit; suy hao giới hạn chiều dài.</p>"
   },
   {
    "q": "Ánh sáng lan truyền trong sợi quang nhờ:",
@@ -163,7 +177,8 @@
    ],
    "correct": 2,
    "explain": "Chuỗi phản xạ toàn phần ở biên lõi-vỏ.",
-   "src": "Tooley Ch.10 Q15"
+   "src": "Tooley Ch.10 Q15",
+   "detail": "<p>Ánh sáng lan truyền trong sợi nhờ chuỗi phản xạ toàn phần ở biên lõi và vỏ. Tán sắc mode là hiện tượng làm giãn xung, không phải cơ chế dẫn sáng; \"khúc xạ liên tục\" là cách dẫn của sợi chiết suất biến thiên, không phải câu trả lời chung.</p><p>TIR cần n₁ > n₂ và góc tới lớn hơn góc tới hạn.</p>"
   },
   {
    "q": "Suy hao của sợi quang điển hình là:",
@@ -174,7 +189,8 @@
    ],
    "correct": 0,
    "explain": "Tooley 10.2.2: sợi chất lượng tốt dưới 2 dB/km ở 1,3 µm (bài giảng cho 0,2 đến 0,5 dB/km ở 1550 nm).",
-   "src": "Tooley Ch.10 Q16"
+   "src": "Tooley Ch.10 Q16",
+   "detail": "<p>Tooley 10.2.2: sợi chất lượng tốt có suy hao dưới 2 dB/km ở 1,3 µm, nên 50 m sợi mất khoảng 0,1 dB. Bài giảng cho giá trị còn nhỏ hơn: 0,2 đến 0,5 dB/km ở 1550 nm. Hai phương án còn lại là quá lớn cho sợi quang tốt.</p><p>Cảnh giác: đơn vị là dB trên km.</p>"
   },
   {
    "q": "Ưu điểm chính của sợi đơn mode là:",
@@ -185,7 +201,8 @@
    ],
    "correct": 1,
    "explain": "Không có tán sắc mode nên băng thông cao nhất; đổi lại đắt và khó nối.",
-   "src": "Tooley Ch.10 Q17"
+   "src": "Tooley Ch.10 Q17",
+   "detail": "<p>Sợi đơn mode không có tán sắc mode nên cho băng thông và tốc độ dữ liệu cao nhất, đổi lại đắt hơn và khó cắt, nối, căn chỉnh. Vì thế \"rẻ hơn\" là sai, và cáp không nhỏ hơn về tổng thể (đường kính vỏ vẫn 125 µm).</p><p>Tooley: đa mode chậm hơn vẫn phổ biến ở máy bay vì dễ lắp.</p>"
   },
   {
    "q": "Một xung ánh sáng hồng ngoại truyền trong sợi đa mode bị giãn ra. Nguyên nhân là:",
@@ -196,7 +213,8 @@
    ],
    "correct": 0,
    "explain": "Các mode đi đường dài khác nhau nên đến muộn khác nhau.",
-   "src": "Tooley Ch.10 Q18"
+   "src": "Tooley Ch.10 Q18",
+   "detail": "<p>Xung hồng ngoại bị giãn trong sợi đa mode là do tán sắc: các mode đi những quãng đường khác nhau nên đến không cùng lúc. Phản xạ và khúc xạ là cơ chế dẫn sáng, không làm giãn xung.</p><p>Hậu quả: giới hạn tốc độ bit.</p>"
   },
   {
    "q": "Suy hao trong sợi quang là do:",
@@ -207,7 +225,8 @@
    ],
    "correct": 0,
    "explain": "Hấp thụ, tán xạ (trong lõi và ở biên) và bức xạ tại chỗ uốn (Tooley 10.2.2). Tán sắc là hiện tượng khác.",
-   "src": "Tooley Ch.10 Q19"
+   "src": "Tooley Ch.10 Q19",
+   "detail": "<p>Suy hao do hấp thụ, tán xạ (trong lõi và ở biên lõi và vỏ) và bức xạ tại chỗ uốn của sợi (Tooley 10.2.2). Tán sắc là hiện tượng khác (làm giãn xung); nhiễu xuyên âm và nhiễu thuộc hệ thống điện chứ không phải tổn hao công suất trong sợi.</p><p>Hệ số suy hao chỉ tính tổn hao của chính sợi, chưa gồm ghép nối và uốn.</p>"
   },
   {
    "q": "Sóng ánh sáng trong cáp quang nằm trong phổ:",
@@ -218,53 +237,58 @@
    ],
    "correct": 1,
    "explain": "850, 1310, 1550 nm đều là hồng ngoại gần, nên không nhìn thấy được.",
-   "src": "Tooley Ch.10 Q20"
+   "src": "Tooley Ch.10 Q20",
+   "detail": "<p>850, 1310 và 1550 nm đều là hồng ngoại gần nên ánh sáng trong cáp quang không nhìn thấy được. Chính vì vô hình mà phải ngắt cáp ở cả hai đầu trước khi nhìn mặt đầu nối: mắt không phản xạ chớp để tự bảo vệ.</p><p>Phổ nhìn thấy chỉ khoảng 400 đến 700 nm.</p>"
   }
  ],
  "floyd": [
   {
    "q": "Những phương tiện truyền dữ liệu nào được Floyd liệt kê?",
    "opts": [
+    "Chỉ cáp sợi quang, sóng vô tuyến và liên kết vệ tinh",
     "Dây dẫn, cáp đồng trục, cáp xoắn đôi, cáp sợi quang và không dây",
-    "Chỉ dây dẫn, cáp đồng trục và cáp xoắn đôi bọc kim loại",
-    "Chỉ cáp sợi quang, sóng vô tuyến và liên kết vệ tinh"
+    "Chỉ dây dẫn, cáp đồng trục và cáp xoắn đôi bọc kim loại"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Section 13-1 Checkup, câu 1.",
-   "src": "Floyd Ch.13 · Section 13-1 Checkup #1 (tr.745; đáp án tr.797)"
+   "src": "Floyd Ch.13 · Section 13-1 Checkup #1 (tr.745; đáp án tr.797)",
+   "detail": "<p>Floyd 13-1: phương tiện truyền dữ liệu gồm dây dẫn, cáp đồng trục, cáp xoắn đôi, cáp sợi quang và không dây. Hai phương án còn lại liệt kê thiếu.</p><p>Sợi quang là một trong năm loại, tập trung ở các mục sau.</p>"
   },
   {
    "q": "Theo Floyd, kích thước 8,3/125 µm là loại sợi nào?",
    "opts": [
+    "Đa mode, lõi 125 µm và vỏ 8,3 µm",
     "Đa mode, lõi 8,3 µm và vỏ 125 µm",
-    "Đơn mode, lõi 8,3 µm và vỏ 125 µm",
-    "Đa mode, lõi 125 µm và vỏ 8,3 µm"
+    "Đơn mode, lõi 8,3 µm và vỏ 125 µm"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Floyd: 50/125 và 62,5/125 là đa mode; 8,3/125 là đơn mode (số đầu là lõi, số sau là vỏ).",
-   "src": "Floyd Ch.13 · mục 13-1 (tr.743)"
+   "src": "Floyd Ch.13 · mục 13-1 (tr.743)",
+   "detail": "<p>Floyd: 50/125 và 62,5/125 là đa mode, 8,3/125 là đơn mode; số đầu là đường kính lõi, số sau là vỏ, tính bằng µm. Đơn mode cho băng thông và khoảng cách lớn hơn nhưng đắt hơn.</p><p>So với Tooley hình 10.5 (5/125) cỡ lõi đơn mode khác một chút vì tuỳ sợi.</p>"
   },
   {
    "q": "Nhược điểm chính của truyền dữ liệu bằng sợi quang theo Floyd là gì?",
    "opts": [
+    "Tốc độ dữ liệu thấp hơn cáp đồng trục thông thường",
     "Nhạy với nhiễu điện từ ở môi trường máy bay",
-    "Chi phí cao hơn đồng trục, UTP và STP",
-    "Tốc độ dữ liệu thấp hơn cáp đồng trục thông thường"
+    "Chi phí cao hơn đồng trục, UTP và STP"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Floyd tr.742: sợi quang không nhạy EMI và nhanh hơn; nhược điểm chính là giá.",
-   "src": "Floyd Ch.13 · mục 13-1 (tr.742)"
+   "src": "Floyd Ch.13 · mục 13-1 (tr.742)",
+   "detail": "<p>Floyd tr.742: sợi quang nhanh hơn, dung lượng tín hiệu cao hơn, truyền xa tốt hơn và không nhạy EMI; nhược điểm chính là giá cao hơn đồng trục, UTP và STP. Hai phương án còn lại ngược sự thật (sợi không nhạy EMI, tốc độ cao hơn).</p><p>Cùng ý Tooley 10.1: khó khăn nằm ở độ chính xác lắp đặt.</p>"
   },
   {
    "q": "Đầu nối nào của Floyd là loại song công, chứa hai sợi cho truyền hai chiều?",
    "opts": [
     "MT",
-    "ST",
-    "FDDI"
+    "FDDI",
+    "ST"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "Floyd: ST phổ biến cho đa mode, MT là đầu nối 12 sợi cho cáp dải, FDDI là song công.",
-   "src": "Floyd Ch.13 · mục 13-1 (tr.743)"
+   "src": "Floyd Ch.13 · mục 13-1 (tr.743)",
+   "detail": "<p>Floyd liệt kê ST, SC, FC, LC, LX-5, MT và FDDI; FDDI là loại song công, chứa hai sợi cho truyền hai chiều. ST phổ biến cho mạng đa mode và MT là 12 sợi cho cáp dải.</p><p>Duplex = hai chiều đồng thời qua hai sợi.</p>"
   },
   {
    "q": "Mô tả đúng về chế độ đơn mode trong sợi quang theo đáp án Floyd:",
@@ -275,7 +299,122 @@
    ],
    "correct": 0,
    "explain": "Đáp án in Floyd A-27, câu 5.",
-   "src": "Floyd Ch.13 · Bài 5 (tr.793; đáp án tr.797)"
+   "src": "Floyd Ch.13 · Bài 5 (tr.793; đáp án tr.797)",
+   "detail": "<p>Đáp án in Floyd A-27: ở chế độ đơn mode ánh sáng đi như một tia thẳng, lõi nhỏ hơn đa mode, cho băng thông và khoảng cách truyền lớn hơn nhưng đắt hơn. Hai phương án còn lại mô tả đa mode hoặc sai về cơ chế (ánh sáng luôn bị giữ trong lõi).</p><p>So sánh: đa mode có nhiều tia và tán sắc thời gian.</p>"
+  },
+  {
+   "q": "Cáp xoắn đôi không bọc (UTP) được dùng trong các ứng dụng điện thoại trong nhà.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng.",
+   "src": "Floyd Ch.13 · True/False #3",
+   "detail": "<p>UTP được dùng rộng rãi cho điện thoại trong nhà, mạng máy tính và USB; nó mã màu theo bộ 25 cặp chuẩn và dùng đầu nối RJ-45. UTP hợp với môi trường ít nhiễu và tần số thấp hơn đồng trục (khoảng tới 1 MHz); cần chống EMI hơn thì dùng STP.</p><p>So với sợi quang: sợi không nhạy EMI.</p>"
+  },
+  {
+   "q": "Nhiễu xuyên âm (crosstalk) tăng lên khi các cặp xoắn được bó cùng nhau.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "Sai: crosstalk được giảm thiểu khi các cặp xoắn được bó cùng nhau.",
+   "src": "Floyd Ch.13 · True/False #4",
+   "detail": "<p>Hai dây trong mỗi cặp xoắn sao cho cắt nhau gần 90°, nên các trường điện từ do tín hiệu sinh ra triệt tiêu. Câu trắc nghiệm Self-Test 1: crosstalk được giảm thiểu bằng cáp xoắn đôi (đáp án (b)). Bài 3 chương 13 của Floyd (đã có ở tự luận Module 09) hỏi đúng điều này.</p>"
+  },
+  {
+   "q": "Cáp sợi quang truyền xung ánh sáng qua các sợi.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng.",
+   "src": "Floyd Ch.13 · True/False #5",
+   "detail": "<p>Thay vì xung điện qua dây đồng, sợi quang dùng xung ánh sáng. Ưu điểm: tốc độ cao hơn, dung lượng tín hiệu cao hơn, truyền xa hơn, không nhạy EMI; nhược điểm chính là giá. Tốc độ thường 10 đến 40 GHz, có nơi trên 100 GHz (Floyd tr.742).</p>"
+  },
+  {
+   "q": "Sợi quang không thích hợp cho mạng.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 1,
+   "explain": "Sai: sợi quang thường dùng cho viễn thông và mạng.",
+   "src": "Floyd Ch.13 · True/False #6",
+   "detail": "<p>Vì ánh sáng truyền qua sợi với suy hao nhỏ so với cáp điện nên sợi hữu ích cho truyền xa. Boeing 777 là máy bay thương mại đầu tiên có mạng cục bộ bằng sợi quang (AVLAN, CABLAN; Tooley 10.4).</p>"
+  },
+  {
+   "q": "Truyền thông ở vùng hồng ngoại có thể là tầm nhìn thẳng hoặc khuếch tán.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng.",
+   "src": "Floyd Ch.13 · True/False #7",
+   "detail": "<p>Hồng ngoại tầm nhìn thẳng (LOS) cần máy phát và máy thu thấy nhau, không vật cản; hồng ngoại khuếch tán phản xạ qua bề mặt gần đó như tường. Ánh sáng trong sợi quang cũng là hồng ngoại gần nhưng được dẫn trong sợi nên không cần LOS.</p>"
+  },
+  {
+   "q": "Các loại sóng rf và vi ba lan truyền qua khí quyển Trái Đất là sóng đất, sóng tầng điện ly và tầm nhìn thẳng.",
+   "opts": [
+    "Đúng",
+    "Sai"
+   ],
+   "correct": 0,
+   "explain": "Đúng.",
+   "src": "Floyd Ch.13 · True/False #8",
+   "detail": "<p>Sóng đất đi theo độ cong Trái Đất (đến khoảng 2 MHz, như dải AM). Sóng tầng điện ly (khoảng 30 đến 85 MHz) bật lên tầng điện ly, như vô tuyến nghiệp dư. Tầm nhìn thẳng cần thấy nhau, cự ly khoảng 100 km nếu đặt mặt đất. Self-Test 6: tín hiệu radio nghiệp dư dội lại từ tầng điện ly (ionosphere).</p>"
+  },
+  {
+   "q": "Ưu điểm của hệ thống sợi quang so với môi trường truyền điện là:",
+   "opts": [
+    "tốc độ cao hơn, EMI cao hơn và ít méo hơn",
+    "tốc độ dữ liệu cao hơn, ít nhạy nhiễu hơn và khoảng cách truyền xa hơn",
+    "chi phí thấp hơn, tốc độ cao hơn và đơn giản hơn"
+   ],
+   "correct": 1,
+   "explain": "Floyd Self-Test 3: đáp án (a).",
+   "src": "Floyd Ch.13 · Self-Test #3",
+   "detail": "<p>Phương án hai sai vì sợi đắt hơn và không đơn giản bằng; phương án ba sai vì sợi không nhạy EMI chứ không \"EMI cao hơn\". Nhắc lại Tooley 10.1: nhẹ, băng thông rộng, ít nhiễu và xuyên âm, suy hao thấp, tin cậy, cách điện.</p><p>Lưu ý chữ \"advantages\".</p>"
+  },
+  {
+   "q": "Hai chế độ lan truyền ánh sáng trong sợi quang là:",
+   "opts": [
+    "đa mode và đơn mode",
+    "đồng bộ và không đồng bộ",
+    "simplex và duplex"
+   ],
+   "correct": 0,
+   "explain": "Floyd Self-Test 4: đáp án (b).",
+   "src": "Floyd Ch.13 · Self-Test #4",
+   "detail": "<p>Simplex và duplex là chế độ truyền dữ liệu theo hướng; đồng bộ và không đồng bộ là cách đồng bộ nhịp. Đa mode có nhiều tia (tán sắc thời gian), đơn mode lõi nhỏ hơn nhiều nên ánh sáng chạy gần như thẳng.</p><p>Tên gọi dễ nhầm giữa \"mode truyền ánh sáng\" và \"mode truyền dữ liệu\".</p>"
+  },
+  {
+   "q": "Phổ điện từ KHÔNG bao gồm:",
+   "opts": [
+    "vi ba (microwaves)",
+    "tia cực tím (UV)",
+    "sóng âm (sonic waves)"
+   ],
+   "correct": 2,
+   "explain": "Floyd Self-Test 5: đáp án (d) sonic waves.",
+   "src": "Floyd Ch.13 · Self-Test #5",
+   "detail": "<p>Sóng âm là sóng cơ học (cần môi trường), không phải sóng điện từ; Floyd còn nhắc sonar tạo sóng âm tần thấp không nằm trong phổ điện từ. UV, radio và vi ba đều là sóng điện từ. Ánh sáng sợi quang là hồng ngoại nằm giữa vi ba và ánh sáng nhìn thấy.</p><p>Câu loại trừ: chú ý NOT.</p>"
+  },
+  {
+   "q": "Tia hồng ngoại (IR) được dùng trong thiết bị nào?",
+   "opts": [
+    "Máy X-quang",
+    "Phát thanh AM",
+    "Quan sát ban đêm (night vision)"
+   ],
+   "correct": 2,
+   "explain": "Floyd Self-Test 7: đáp án (b) IR-rays.",
+   "src": "Floyd Ch.13 · Self-Test #7",
+   "detail": "<p>Thiết bị nhìn đêm dùng hồng ngoại; tia X thuộc dải bước sóng ngắn hơn nhiều; phát thanh AM dùng sóng đất tần thấp. Liên hệ: tín hiệu quang trong sợi và các điều khiển từ xa cũng dùng hồng ngoại.</p>"
   }
  ],
  "generated": [
@@ -288,7 +427,8 @@
    ],
    "correct": 0,
    "explain": "sin θc = 1/1,5 = 0,667, θc = 41,8° (Tooley Test Your Understanding 10.2).",
-   "src": ""
+   "src": "",
+   "detail": "<p>sin θc = n₂/n₁ = 1,0/1,5 = 0,667 nên θc = 41,8° (Tooley TYU 10.2). 48,2° là 90° − 41,8°, tức góc giữa tia và biên; 66,7 là nhầm phần trăm. Từ kính vào không khí, tia tới lớn hơn 41,8° bị phản xạ toàn phần.</p><p>Demo 2 của Module 08 cho thấy tia khúc xạ biến mất ở 42°.</p>"
   },
   {
    "q": "Sợi có n₁ = 1,53 và n₂ = 1,50. Khẩu độ số NA bằng:",
@@ -299,40 +439,44 @@
    ],
    "correct": 1,
    "explain": "NA = √(1,53² − 1,50²) = √0,0909 = 0,3015 (0,9804 là n₂/n₁).",
-   "src": ""
+   "src": "",
+   "detail": "<p>NA = √(n₁² − n₂²) = √(2,3409 − 2,25) = √0,0909 = 0,3015. 0,9804 là n₂/n₁ (dùng cho góc tới hạn), 0,03 là hiệu chiết suất. θa = sin⁻¹(0,3015) = 17,55°.</p><p>Trong NA có căn bậc hai của hiệu hai bình phương, không phải hiệu hai chiết suất.</p>"
   },
   {
    "q": "Với NA = 0,275, λ = 1300 nm và lõi 62,5 µm, tần số chuẩn hoá V gần nhất với:",
    "opts": [
-    "83,1",
+    "13,2",
     "41,5",
-    "13,2"
+    "83,1"
    ],
    "correct": 1,
    "explain": "V = π × 62,5×10⁻⁶ × 0,275 / 1300×10⁻⁹ = 41,54.",
-   "src": ""
+   "src": "",
+   "detail": "<p>V = π d NA / λ = π × 62,5×10⁻⁶ × 0,275 / 1300×10⁻⁹ = 41,54. 13,2 chia thêm π; 83,1 nhân gấp đôi vì dùng bán kính thay đường kính ngược.</p><p>Chú ý d là đường kính lõi, không phải bán kính.</p>"
   },
   {
    "q": "Với V = 41,5 sợi đa mode chiết suất bậc truyền khoảng bao nhiêu mode?",
    "opts": [
-    "41",
     "1 725",
+    "41",
     "863"
    ],
    "correct": 2,
    "explain": "N ≈ V²/2 = 1725/2 ≈ 863.",
-   "src": ""
+   "src": "",
+   "detail": "<p>N ≈ V²/2 = 41,54²/2 = 1725/2 ≈ 863 mode. 41 là chính V và 1 725 là V² quên chia 2.</p><p>Số mode lớn nghĩa là tán sắc mode mạnh.</p>"
   },
   {
    "q": "Ngân sách công suất khi vào 1 mW và ra tối thiểu 50 µW là:",
    "opts": [
     "13,0 dB",
-    "20,0 dB",
-    "3,0 dB"
+    "3,0 dB",
+    "20,0 dB"
    ],
    "correct": 0,
    "explain": "10 log₁₀(1000/50) = 10 log₁₀(20) = 13,01 dB.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Ngân sách = 10 log₁₀(1 mW/50 µW) = 10 log₁₀(20) = 13,01 dB. 20 dB là tỉ số 20 viết nhầm thành dB, còn 3 dB chỉ là gấp đôi.</p><p>Công suất tính bằng dB là 10 log, không phải 20 log.</p>"
   },
   {
    "q": "Với ngân sách 13 dB và suy hao 0,35 dB/km, chiều dài sợi tối đa là:",
@@ -343,62 +487,248 @@
    ],
    "correct": 2,
    "explain": "13,01/0,35 = 37,2 km.",
-   "src": ""
+   "src": "",
+   "detail": "<p>L_max = 13,01 dB / 0,35 dB/km = 37,2 km. 4,6 km là kết quả nếu dùng 2,8 dB/km, 13,0 km là nhầm ngân sách với chiều dài.</p><p>Phụ thuộc suy hao đọc từ đồ thị: 0,18 dB/km (1550 nm) cho 72,3 km.</p>"
   },
   {
    "q": "Ánh sáng đi từ nước (n ≈ 1,33) vào không khí (n = 1,0). Tia khúc xạ:",
    "opts": [
-    "không đổi hướng",
     "bẻ về phía pháp tuyến",
+    "không đổi hướng",
     "bẻ ra xa pháp tuyến"
    ],
    "correct": 2,
    "explain": "Vào môi trường chiết suất thấp hơn thì θr > θi (slide 12). Câu chữ ngược lại trong Tooley 10.2 là sai.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Vào môi trường có chiết suất thấp hơn thì θr > θi: tia bẻ ra xa pháp tuyến (slide 12). Câu chữ của Tooley mục 10.2 viết ngược quy tắc này nên không dùng để học. Ví dụ: nước (1,33) vào không khí tại 30° cho sin θr = 1,33 × 0,5 = 0,665, θr = 41,7° > 30°.</p><p>Từ chiết suất cao sang thấp: ra xa; thấp sang cao: về gần.</p>"
   },
   {
    "q": "Hai bước sóng có suy hao thấp nhất của sợi silica là khoảng:",
    "opts": [
     "1390 nm và 1700 nm",
-    "1310 nm và 1550 nm",
-    "850 nm và 1000 nm"
+    "850 nm và 1000 nm",
+    "1310 nm và 1550 nm"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Slide 26: ≈ 0,35 dB/km ở 1310 nm và ≈ 0,18 dB/km ở 1550 nm; 1,39 µm là đỉnh hấp thụ OH⁻.",
-   "src": ""
+   "src": "",
+   "detail": "<p>Slide 26: suy hao cực tiểu ≈ 0,35 dB/km ở 1310 nm và ≈ 0,18 dB/km ở 1550 nm, nên hầu hết hệ quang hoạt động ở hai bước sóng này. 1390 nm là đỉnh hấp thụ OH⁻ (nước) nên tránh; 850 nm dùng cho liên kết ngắn đa mode.</p><p>Ba cửa sổ: 850, 1310, 1550 nm.</p>"
   },
   {
    "q": "Loại sợi nào có băng thông cao nhất?",
    "opts": [
     "Đa mode chiết suất biến thiên",
-    "Đơn mode",
-    "Đa mode chiết suất bậc"
+    "Đa mode chiết suất bậc",
+    "Đơn mode"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Đơn mode không có tán sắc mode (slide 30).",
-   "src": ""
+   "src": "",
+   "detail": "<p>Sợi đơn mode có băng thông cao nhất vì chỉ một mode truyền nên không có tán sắc mode (slide 30). Đa mode chiết suất bậc có băng thông thấp nhất, đa mode chiết suất biến thiên ở giữa.</p><p>Thứ tự băng thông: SM > MM-GI > MM-SI.</p>"
   },
   {
    "q": "Sáu đầu nối, mỗi đầu tổn hao 0,5 dB. Tổng tổn hao đầu nối là:",
    "opts": [
     "3 dB",
-    "0,5 dB",
-    "6 dB"
+    "6 dB",
+    "0,5 dB"
    ],
    "correct": 0,
    "explain": "6 × 0,5 = 3 dB (Tooley 10.4.2).",
-   "src": ""
+   "src": "",
+   "detail": "<p>6 × 0,5 dB = 3 dB (Tooley 10.4.2), tương đương nhiều km sợi tổn hao thấp. Cộng dB được vì dB là thang logarit của tỉ số: nhiều tổn hao nối tiếp thì cộng.</p><p>0,5 dB ứng với việc mất khoảng 11% công suất ở mỗi đầu nối.</p>"
   },
   {
    "q": "Công suất giảm 20 dB tức là công suất còn lại bằng bao nhiêu lần ban đầu?",
    "opts": [
-    "0,01",
     "0,5",
+    "0,01",
     "0,1"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "10^(−20/10) = 0,01.",
-   "src": ""
+   "src": "",
+   "detail": "<p>10^(−20/10) = 10⁻² = 0,01: mất 20 dB là còn 1% công suất. 0,1 là kết quả của −10 dB và 0,5 của −3 dB.</p><p>Trong hệ biên độ (điện áp) −20 dB là 0,1 lần.</p>"
+  },
+  {
+   "q": "Với n₁ = 1,48 và n₂ = 1,46, góc tới hạn θc tại biên lõi và vỏ xấp xỉ:",
+   "opts": [
+    "9,4°",
+    "45,0°",
+    "80,6°"
+   ],
+   "correct": 2,
+   "explain": "θc = sin⁻¹(1,46/1,48) = sin⁻¹(0,9865) ≈ 80,6°.",
+   "src": "Bài giảng Fiber optics · slide 14, 17",
+   "detail": "<p>Hiệu chiết suất chỉ 0,02 nên θc rất gần 90°: tia phải gần như song song trục mới bị phản xạ toàn phần. 9,4° = 90° − 80,6° là góc giữa tia và trục; 45° chỉ đúng khi n₂/n₁ = 0,707.</p><p>Sợi có hiệu chiết suất nhỏ thì nón chấp nhận hẹp.</p>"
+  },
+  {
+   "q": "Trong sợi n₁ = 1,48, n₂ = 1,46 đặt trong không khí, khẩu độ số NA bằng:",
+   "opts": [
+    "0,986",
+    "0,242",
+    "0,020"
+   ],
+   "correct": 1,
+   "explain": "NA = √(1,48² − 1,46²) = √0,0588 = 0,2425.",
+   "src": "Bài giảng Fiber optics · slide 17",
+   "detail": "<p>1,48² = 2,1904 và 1,46² = 2,1316, hiệu 0,0588, căn = 0,2425 (làm tròn 0,242). θa = sin⁻¹(0,2425) = 14,0°. 0,02 là hiệu chiết suất và 0,986 là n₂/n₁.</p><p>NA đặc trưng khả năng thu sáng.</p>"
+  },
+  {
+   "q": "Sợi step-index đa mode có NA = 0,20 chạy ở 850 nm với khoảng 1000 mode. Đường kính lõi xấp xỉ:",
+   "opts": [
+    "605 µm",
+    "60,5 µm",
+    "6,05 µm"
+   ],
+   "correct": 1,
+   "explain": "V = √(2M) = 44,7; a = Vλ/(2π NA) = 30,25 µm nên d = 60,5 µm.",
+   "src": "Bài giảng Fiber optics · slide 36",
+   "detail": "<p>Từ N ≈ V²/2 suy V = √(2 × 1000) = 44,72. Từ V = (2π a/λ) NA suy a = Vλ/(2π NA) = 44,72 × 0,85 µm/(2π × 0,20) = 30,25 µm; d = 2a = 60,5 µm, gần với đáp án trên slide 36. 6,05 µm và 605 µm sai bậc 10.</p><p>Đây là bài slide 36 của bài giảng.</p>"
+  },
+  {
+   "q": "Cùng sợi đó (a = 30,25 µm, NA = 0,20) ở 1550 nm thì tần số chuẩn hoá V và số mode xấp xỉ:",
+   "opts": [
+    "V = 24,5; khoảng 301 mode",
+    "V = 44,7; khoảng 1000 mode",
+    "V = 28,8; khoảng 301 mode"
+   ],
+   "correct": 0,
+   "explain": "V = 2π a NA/λ = 24,52; M = V²/2 = 300,7.",
+   "src": "Bài giảng Fiber optics · slide 36",
+   "detail": "<p>Bước sóng dài hơn thì V nhỏ hơn: V tỉ lệ nghịch với λ. Ở 1320 nm V = 28,8 và M ≈ 414; ở 850 nm V = 44,7 và M = 1000. Phương án thứ ba trộn V của 1320 nm với M của 1550 nm, phương án hai là V tại 850 nm.</p><p>Bài slide 36: ở 1550 nm V ≈ 24,5 và M ≈ 301.</p>"
+  },
+  {
+   "q": "Sợi có suy hao 0,18 dB/km, công suất vào 1 mW và công suất tối thiểu thu được 50 µW. Chiều dài tối đa xấp xỉ:",
+   "opts": [
+    "72,3 km",
+    "37,2 km",
+    "7,2 km"
+   ],
+   "correct": 0,
+   "explain": "13,01 dB / 0,18 dB/km = 72,3 km.",
+   "src": "Bài giảng Fiber optics · slide 26, 27",
+   "detail": "<p>Cùng ngân sách 13,01 dB nhưng suy hao nhỏ hơn nên đi xa hơn. 37,2 km là kết quả ở 0,35 dB/km (1310 nm) và 7,2 km sai một bậc 10.</p><p>Vì vậy khi nộp bài slide 27 cần ghi α đã dùng.</p>"
+  },
+  {
+   "q": "Công suất vào 2 mW, sau một đoạn sợi dài 10 km suy hao 0,2 dB/km công suất ra là:",
+   "opts": [
+    "0,02 mW",
+    "1,26 mW",
+    "1,0 mW"
+   ],
+   "correct": 1,
+   "explain": "Tổn hao 2 dB; 2 mW × 10^(−0,2) = 1,26 mW.",
+   "src": "Tooley 10.2.2; bài giảng slide 26",
+   "detail": "<p>A = 0,2 dB/km × 10 km = 2 dB. P_out = P_in × 10^(−2/10) = 2 × 0,631 = 1,26 mW. 1,0 mW sẽ là mất 3 dB; 0,02 mW là mất 20 dB.</p><p>Ghi nhớ: 3 dB ≈ nửa công suất, 10 dB ≈ còn một phần mười.</p>"
+  },
+  {
+   "q": "Một xung giãn thêm trong sợi đa mode; tán sắc mode tính theo công thức đúng cho tia tới hạn là:",
+   "opts": [
+    "Δt = (n₁ − n₂)L/c",
+    "Δt = L/(n₁ c)",
+    "Δt = n₁(n₁ − n₂)L/(c n₂)"
+   ],
+   "correct": 2,
+   "explain": "Tia tới hạn đi L/sin θc = L n₁/n₂.",
+   "src": "Bài giảng Fiber optics · slide 28",
+   "detail": "<p>Tia dọc trục đi L trong thời gian n₁L/c; tia tới hạn đi L n₁/n₂ nên mất n₁²L/(n₂c). Hiệu: Δt = n₁L/c × (n₁/n₂ − 1) = n₁(n₁ − n₂)L/(c n₂). Slide 28 viết (n₁ − n₂)L/c thiếu hệ số n₁/n₂ (≈ 1,01 đến 1,03, sai khác nhỏ). Với n₁ − n₂ = 0,02 đến 0,04 ra khoảng 67 đến 137 ns/km chứ không phải 10 đến 50 ns/km.</p><p>Đã kiểm bằng code trong notebook.</p>"
+  },
+  {
+   "q": "Hệ số chuyển đổi giữa suy hao theo dB/km và theo Np/km là:",
+   "opts": [
+    "A(dB/km) = 0,115 × α(Np/km)",
+    "A(dB/km) = 4,343 × α(Np/km)",
+    "A(dB/km) = 2 × α(Np/km)"
+   ],
+   "correct": 1,
+   "explain": "4,343 = 10/ln 10.",
+   "src": "Bài giảng Fiber optics · slide 26",
+   "detail": "<p>P(L)/P(0) = e^(−αL) nên 10 log₁₀ của nó bằng −4,343 αL. Ví dụ 0,35 dB/km ứng với α = 0,0806 Np/km. 0,115 là hệ số ngược (1/8,686 cho biên độ không phải công suất).</p><p>Tooley mục 10.2.2: hệ số suy hao chỉ tính tổn hao của chính sợi.</p>"
+  },
+  {
+   "q": "Sợi đa mode chiết suất biến thiên (graded-index) so với chiết suất bậc có đặc điểm gì?",
+   "opts": [
+    "Chỉ truyền một mode",
+    "Tán sắc mode cao hơn",
+    "Tán sắc mode thấp hơn và băng thông cao hơn"
+   ],
+   "correct": 2,
+   "explain": "Slide 30: MM-GI mặt cắt parabol, tán sắc thấp hơn MM-SI.",
+   "src": "Bài giảng Fiber optics · slide 30",
+   "detail": "<p>Ở sợi chiết suất biến thiên, tia xa trục đi trong vùng chiết suất thấp hơn nên chạy nhanh hơn, bù cho đường dài, nên các mode đến gần như đồng thời. Chỉ một mode là sợi đơn mode. Nhãn trên slide (MM-SI) cho cột giữa là nhầm: đúng là MM-GI.</p><p>Thứ tự băng thông: SM > MM-GI > MM-SI.</p>"
+  },
+  {
+   "q": "Cáp quang điển hình của Tooley 10.4.1 gồm:",
+   "opts": [
+    "2 sợi quang và 5 sợi đệm",
+    "5 sợi quang và 2 sợi đệm, băng keo polyester, sợi aramid, vỏ ngoài",
+    "7 sợi quang không có sợi đệm"
+   ],
+   "correct": 1,
+   "explain": "5 + 2: năm sợi dẫn sáng, hai sợi đệm giữ hình dạng.",
+   "src": "Tooley 10.4.1",
+   "detail": "<p>Sợi đệm polyester giữ hình dạng cáp, băng keo polyester làm cáp mềm, sợi aramid (Kevlar) chịu kéo, vỏ nhiệt dẻo (thường tím) chống ẩm và cách điện. Mỗi sợi có buffer mã màu (xanh lam, đỏ, xanh lá, vàng, trắng).</p><p>Bài giảng slide 31 vẽ cùng cấu trúc.</p>"
+  },
+  {
+   "q": "Dấu hiệu nào cho biết đầu nối quang đã được ghép đúng?",
+   "opts": [
+    "Không còn thấy dải màu nào",
+    "Dải đỏ trên đế bị vòng ren che ít nhất 50%",
+    "Dải vàng trên phích bị che hoàn toàn bởi đế"
+   ],
+   "correct": 1,
+   "explain": "Tooley 10.4.2: kết nối đúng khi dải đỏ bị che ít nhất 50%.",
+   "src": "Tooley 10.4.2",
+   "detail": "<p>Vòng ren của phích có dải vàng, đế có dải đỏ. Vị trí che 50% cho biết các sợi trong phích đã thẳng hàng đầu-đầu với sợi trong đế. Siết quá chặt có thể làm hỏng sợi nên các chốt dẫn hướng của phích có chức năng giới hạn.</p><p>Ba ren khởi đầu bảo đảm vào thẳng.</p>"
+  },
+  {
+   "q": "Vì sao phải ngắt cáp ở cả hai đầu trước khi quan sát mặt đầu nối quang?",
+   "opts": [
+    "Vì sợi quang sẽ bị nóng chảy",
+    "Vì đầu nối có điện áp cao",
+    "Vì ánh sáng hồng ngoại vô hình và có thể đủ mạnh để gây tổn thương mắt vĩnh viễn"
+   ],
+   "correct": 2,
+   "explain": "Tooley Key Point mục 10.4.2.",
+   "src": "Tooley 10.4.2",
+   "detail": "<p>Mắt không thấy ánh sáng hồng ngoại nên không phản xạ chớp để tự bảo vệ. Sợi quang không mang điện áp cao và không nóng chảy ở công suất truyền thông.</p><p>Quy tắc an toàn: không bao giờ nhìn vào đầu sợi hay đầu nối đang nối với nguồn.</p>"
+  },
+  {
+   "q": "Boeing 777 là máy bay thương mại đầu tiên có mạng cục bộ bằng sợi quang. Hai mạng đó là gì?",
+   "opts": [
+    "AFDX và ARINC 429",
+    "FDDI và CAN",
+    "AVLAN (avionics) và CABLAN (cabin)"
+   ],
+   "correct": 2,
+   "explain": "Tooley 10.4: AVLAN ở buồng lái và khoang thiết bị điện, CABLAN ở trần khoang khách.",
+   "src": "Tooley 10.4",
+   "detail": "<p>Cả hai theo ARINC 636, cải biên từ FDDI để đạt 100 Mbps. AFDX là mạng Ethernet chuyển mạch của A380/A350 (Module 05), CAN là bus ô tô.</p><p>FDDI là nguồn gốc của chuẩn, không phải tên mạng.</p>"
+  },
+  {
+   "q": "Trong bộ chuyển mạch vòng quang (BSU), mức logic CAO trên PRI HI hoặc SEC HI làm gì?",
+   "opts": [
+    "Ngắt BSU khỏi vòng",
+    "Nối BSU vào vòng sợi quang",
+    "Tắt bộ định tuyến"
+   ],
+   "correct": 1,
+   "explain": "Tooley 10.5: HI = nối; THẤP = ngắt; PRI RTN và SEC RTN là đường đất (tích cực mức thấp).",
+   "src": "Tooley 10.5",
+   "detail": "<p>Bộ định tuyến gửi bốn tín hiệu điều khiển đến BSU: PRI HI, PRI RTN, SEC HI, SEC RTN. Giao diện quang chuyển tín hiệu quang của BSU thành tín hiệu điện và ngược lại. Mức THẤP trên HI ngắt BSU để vòng vẫn chạy khi nút đó hỏng.</p><p>Đây là một cơ chế dự phòng cho mạng vòng.</p>"
+  },
+  {
+   "q": "Trong sơ đồ khối liên kết sợi quang (Floyd Hình 13-8), thành phần nào đổi ánh sáng trở lại thành tín hiệu điện?",
+   "opts": [
+    "Đầu nối quang",
+    "Bộ chuyển đổi ánh sáng sang điện ở phía thu",
+    "Bộ chuyển đổi điện sang ánh sáng ở phía phát"
+   ],
+   "correct": 1,
+   "explain": "Hình 13-8: nguồn điện → điện-sang-sáng → cáp sợi → sáng-sang-điện → bộ thu.",
+   "src": "Floyd Ch.13 · mục 13-1, Hình 13-8 (tr.743)",
+   "detail": "<p>Phía phát tín hiệu điện điều chế cường độ ánh sáng; phía thu photodiode đổi ngược. Đầu nối chỉ ghép ánh sáng vào hoặc ra khỏi cáp. Đáp án in của Bài 7 chương 13 là Hình P-100 với cùng các khối.</p><p>Phát: LED hoặc laser; thu: photodiode.</p>"
   }
  ]
 }

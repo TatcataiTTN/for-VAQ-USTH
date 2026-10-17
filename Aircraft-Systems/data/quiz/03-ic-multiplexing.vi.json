@@ -549,31 +549,31 @@
   {
    "q": "Một bộ dồn kênh 8-sang-1 (8-to-1 multiplexer) cần bao nhiêu đường chọn?",
    "opts": [
-    "2",
     "3",
-    "4"
+    "4",
+    "2"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "2ⁿ=8 → n=3 đường chọn.",
    "src": ""
   },
   {
    "q": "Một bộ giải mã (decoder) 3-sang-8 đường có bao nhiêu ngõ ra?",
    "opts": [
-    "8",
     "6",
+    "8",
     "3"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "Decoder n-sang-2ⁿ với n=3 → 2³=8 ngõ ra.",
    "src": ""
   },
   {
    "q": "Một IC chứa khoảng 500 cổng logic thường được xếp vào quy mô tích hợp nào?",
    "opts": [
-    "SSI",
+    "MSI",
     "LSI",
-    "MSI"
+    "SSI"
    ],
    "correct": 1,
    "explain": "Khoảng vài trăm tới ~10.000 cổng tương ứng LSI (theo phân loại dùng trong chương này).",
@@ -582,41 +582,41 @@
   {
    "q": "Bộ giải dồn kênh (demultiplexer) thực hiện chức năng ngược lại với:",
    "opts": [
+    "bộ mã hoá (encoder)",
     "bộ so sánh (comparator)",
-    "bộ dồn kênh (multiplexer)",
-    "bộ mã hoá (encoder)"
+    "bộ dồn kênh (multiplexer)"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "Demux đưa 1 nguồn vào ra nhiều đường, ngược với chức năng dồn nhiều vào 1 của mux.",
    "src": ""
   },
   {
    "q": "Một bộ mã hoá (encoder) có 8 đầu vào sẽ cho ra bao nhiêu bit mã nhị phân?",
    "opts": [
-    "4",
     "3",
-    "8"
+    "8",
+    "4"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "log2(8)=3 bit đủ để mã hoá 8 trạng thái đầu vào.",
    "src": ""
   },
   {
    "q": "Trong đóng gói IC, thuật ngữ 'DIL' là viết tắt của:",
    "opts": [
+    "Digital Integrated Logic",
     "Direct Input Line",
-    "Dual-In-Line",
-    "Digital Integrated Logic"
+    "Dual-In-Line"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "DIL = Dual-In-Line, kiểu đóng gói hai hàng chân song song.",
    "src": ""
   },
   {
    "q": "Mạch tạo/kiểm tra parity (parity generator/checker) thường được xây dựng chủ yếu từ:",
    "opts": [
-    "các cổng AND",
     "các cổng NAND",
+    "các cổng AND",
     "các cổng XOR nối tầng"
    ],
    "correct": 2,
@@ -627,19 +627,19 @@
    "q": "Kiểu đóng gói IC nào được thiết kế cho lắp ráp dán bề mặt (surface-mount), không xuyên lỗ?",
    "opts": [
     "PGA",
-    "DIP",
-    "SOIC"
+    "SOIC",
+    "DIP"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "SOIC (Small Outline IC) là gói dán bề mặt điển hình.",
    "src": ""
   },
   {
    "q": "Nếu fan-out của một cổng là 10, điều này có nghĩa là cổng có thể an toàn điều khiển tối đa bao nhiêu đầu vào chuẩn cùng họ?",
    "opts": [
-    "5",
+    "20",
     "10",
-    "20"
+    "5"
    ],
    "correct": 1,
    "explain": "Định nghĩa fan-out chính là số tải đầu vào chuẩn tối đa mà ngõ ra có thể điều khiển.",
@@ -648,11 +648,11 @@
   {
    "q": "Mạch so sánh (comparator) được dùng để:",
    "opts": [
-    "lưu trữ dữ liệu nhị phân",
     "xác định số nào lớn hơn/bằng/nhỏ hơn giữa hai số nhị phân",
-    "chuyển đổi nhị phân sang thập phân"
+    "chuyển đổi nhị phân sang thập phân",
+    "lưu trữ dữ liệu nhị phân"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "Comparator so sánh hai số nhị phân và đưa ra tín hiệu A>B, A=B hoặc A<B.",
    "src": ""
   }

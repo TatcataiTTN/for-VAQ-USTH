@@ -1111,31 +1111,31 @@
   {
    "q": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?",
    "opts": [
-    "cả hai đầu vào ở mức logic 1",
     "cả hai đầu vào ở mức logic 0",
-    "một trong hai đầu vào ở mức logic 1"
+    "một trong hai đầu vào ở mức logic 1",
+    "cả hai đầu vào ở mức logic 1"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.",
    "src": ""
   },
   {
    "q": "Cổng XOR 2 đầu vào với cả hai đầu vào bằng 1 sẽ cho đầu ra:",
    "opts": [
-    "0",
     "không xác định",
+    "0",
     "1"
    ],
-   "correct": 0,
+   "correct": 1,
    "explain": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.",
    "src": ""
   },
   {
    "q": "Theo đại số Boolean, biểu thức A + A'B rút gọn thành:",
    "opts": [
-    "A · B",
+    "A",
     "A + B",
-    "A"
+    "A · B"
    ],
    "correct": 1,
    "explain": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.",
@@ -1144,41 +1144,41 @@
   {
    "q": "Theo định lý De Morgan, (A·B)' bằng:",
    "opts": [
+    "A'·B'",
     "A + B",
-    "A' + B'",
-    "A'·B'"
+    "A' + B'"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "(AB)' = A' + B' theo định lý De Morgan.",
    "src": ""
   },
   {
    "q": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?",
    "opts": [
-    "9",
     "8",
-    "6"
+    "6",
+    "9"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.",
    "src": ""
   },
   {
    "q": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:",
    "opts": [
+    "giữ nguyên trạng thái",
     "luôn reset về 0",
-    "đảo trạng thái (toggle)",
-    "giữ nguyên trạng thái"
+    "đảo trạng thái (toggle)"
    ],
-   "correct": 1,
+   "correct": 2,
    "explain": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.",
    "src": ""
   },
   {
    "q": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):",
    "opts": [
-    "nhỏ hơn",
     "bằng nhau",
+    "nhỏ hơn",
     "lớn hơn"
    ],
    "correct": 2,
@@ -1189,19 +1189,19 @@
    "q": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?",
    "opts": [
     "4",
-    "2 (0 và 1)",
-    "3 (0, 1, và trở kháng cao Z)"
+    "3 (0, 1, và trở kháng cao Z)",
+    "2 (0 và 1)"
    ],
-   "correct": 2,
+   "correct": 1,
    "explain": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.",
    "src": ""
   },
   {
    "q": "Cổng logic nào được gọi là 'cổng vạn năng' vì có thể dùng để tạo mọi hàm logic khác?",
    "opts": [
-    "AND",
+    "XOR",
     "NAND",
-    "XOR"
+    "AND"
    ],
    "correct": 1,
    "explain": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.",
@@ -1210,11 +1210,11 @@
   {
    "q": "Trong quy ước logic dương (positive logic), mức logic 1 tương ứng với:",
    "opts": [
-    "luôn đúng bằng 5V",
     "mức điện áp cao hơn",
-    "mức điện áp thấp hơn"
+    "mức điện áp thấp hơn",
+    "luôn đúng bằng 5V"
    ],
-   "correct": 1,
+   "correct": 0,
    "explain": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.",
    "src": ""
   }
