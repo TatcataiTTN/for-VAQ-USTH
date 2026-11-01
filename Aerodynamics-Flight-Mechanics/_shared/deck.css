@@ -117,3 +117,11 @@
 .di-t .m{font-family:ui-monospace,Menlo,monospace}.di-vs.warn,.di-vc.warn{color:#b45309;font-weight:700}.di-vs.good,.di-vc.good{color:#15803d;font-weight:700}
 .fb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;margin:8px 0}.fb-grid label{font-size:.8rem;font-weight:700;display:flex;flex-direction:column;gap:3px}
 .fb-grid input[type=number]{padding:6px;border:1px solid var(--line,#ccd);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}.fb-cv{max-width:100%;border:1px solid var(--line,#ccd);border-radius:10px}
+
+.demo-row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:6px 0}
+.demo-row label{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.demo-row input[type=range]{width:min(280px,60vw)}
+.demo-val{min-width:90px}
+.demo-out{margin:10px 0;line-height:1.55}
+.demo-box canvas{display:block;margin:8px 0}
+.slide-fig img{max-height:420px}

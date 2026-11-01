@@ -299,6 +299,78 @@
    "correct": 1,
    "explain": "Lớp rối mang nhiều động lượng hơn sát bề mặt nên bám tốt hơn, đổi lại ma sát da cao hơn.",
    "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Áp suất động q ở 100 m/s tại mực biển ISA (ρ = 1,225) là:",
+   "opts": [
+    "3062 Pa",
+    "6125 Pa",
+    "123 Pa",
+    "12250 Pa"
+   ],
+   "correct": 1,
+   "explain": "q = ½ρV² = 0,5 × 1,225 × 10 000.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Cánh S = 20 m², V = 60 m/s, C_L = 0,5 ở mực biển ISA tạo lực nâng:",
+   "opts": [
+    "11025 N",
+    "44100 N",
+    "79380 N",
+    "22050 N"
+   ],
+   "correct": 3,
+   "explain": "L = ½ρV²·S·C_L.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Cánh AR = 8, e = 0,9, C_L = 0,8 có C_Di bằng:",
+   "opts": [
+    "0,0283",
+    "0,0318",
+    "0,0566",
+    "0,0141"
+   ],
+   "correct": 0,
+   "explain": "C_Di = C_L²/(π e AR).",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Tăng gấp đôi diện tích cánh, giữ nguyên tốc độ, mật độ và C_L thì lực nâng:",
+   "opts": [
+    "không đổi",
+    "tăng gấp bốn",
+    "giảm một nửa",
+    "tăng gấp đôi"
+   ],
+   "correct": 3,
+   "explain": "L tỉ lệ thuận với S.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Số Reynolds Re = ρVc/μ với ρ = 1,225, V = 50 m/s, c = 2 m, μ = 1,789×10⁻⁵ kg/(m·s) xấp xỉ:",
+   "opts": [
+    "0,68×10⁶",
+    "68,5×10⁶",
+    "6,85×10⁶",
+    "68,47×10⁵"
+   ],
+   "correct": 2,
+   "explain": "Re lớn nghĩa là lớp biên giới dễ chuyển sang rối.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Với cùng V, S và C_L, lực nâng ở độ cao chuẩn 3 km bằng bao nhiêu phần lực nâng ở mực biển?",
+   "opts": [
+    "1,35",
+    "0,55",
+    "0,74",
+    "0,50"
+   ],
+   "correct": 2,
+   "explain": "L tỉ lệ thuận với ρ; σ(3 km) = 0,9093/1,225.",
+   "src": "Bổ sung (biên soạn)"
   }
  ]
 }

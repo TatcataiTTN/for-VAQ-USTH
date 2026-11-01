@@ -273,6 +273,78 @@
    "correct": 0,
    "explain": "EASA (mục Stalls): gắn dải ở 20–25% đầu tiên của cánh; thất tốc bắt đầu ở gốc nên aileron ở đầu cánh còn hiệu lực.",
    "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Bay vòng thăng bằng nghiêng 45°: tốc độ thất tốc tăng khoảng:",
+   "opts": [
+    "100%",
+    "19%",
+    "41%",
+    "0%"
+   ],
+   "correct": 1,
+   "explain": "V_s,turn = V_s√n, n = 1,414, √n = 1,189.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Tốc độ âm thanh ở 20 000 ft ISA xấp xỉ:",
+   "opts": [
+    "663 kt",
+    "661 kt",
+    "614 kt",
+    "574 kt"
+   ],
+   "correct": 2,
+   "explain": "T = 248,5 K nên a = 316 m/s; nằm giữa 661 kt (mực biển) và 574 kt (40 000 ft).",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Sóng xung kích thẳng ở M₁ = 2: M₂ và p₂/p₁ là:",
+   "opts": [
+    "0,577 ; 2,25",
+    "0,500 ; 2,00",
+    "1,200 ; 4,50",
+    "0,577 ; 4,50"
+   ],
+   "correct": 3,
+   "explain": "M₂ = √[(γ−1)M₁²+2]/[2γM₁²−(γ−1)] = 0,5774.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Một máy bay có L/D = 15 tắt động cơ ở độ cao 2 000 ft trên đất bằng, không gió. Quãng đường lướt tối đa là:",
+   "opts": [
+    "30 000 ft",
+    "300 000 ft",
+    "2 000 ft",
+    "13 333 ft"
+   ],
+   "correct": 0,
+   "explain": "Quãng đường = độ cao × tỉ số lướt = 2 000 × 15.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Hệ số tải 3 g nghĩa là:",
+   "opts": [
+    "lực cản gấp 3",
+    "tổng tải lên kết cấu bằng 3 lần trọng lượng",
+    "tốc độ gấp 3",
+    "máy bay nặng gấp 3"
+   ],
+   "correct": 1,
+   "explain": "EASA tr. 3.9.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Cần hệ số tải n = 2,5 trong vòng bay thăng bằng thì góc nghiêng là:",
+   "opts": [
+    "76,4°",
+    "60,0°",
+    "51,4°",
+    "66,4°"
+   ],
+   "correct": 3,
+   "explain": "cos φ = 1/n = 0,4.",
+   "src": "Bổ sung (biên soạn)"
   }
  ]
 }

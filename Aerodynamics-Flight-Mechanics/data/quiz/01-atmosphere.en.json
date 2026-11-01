@@ -187,6 +187,78 @@
    "correct": 0,
    "explain": "Low density reduces lift and thrust; drag falls too but does not compensate.",
    "src": "Supplementary (authored)"
+  },
+  {
+   "q": "ISA density at 10 000 ft is approximately:",
+   "opts": [
+    "0.452 kg/m³",
+    "1.225 kg/m³",
+    "1.357 kg/m³",
+    "0.905 kg/m³"
+   ],
+   "correct": 3,
+   "explain": "EASA Figure 1-7 gives 0.9; the computation gives 0.905.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "ISA pressure at 20 000 ft in hPa is approximately:",
+   "opts": [
+    "466",
+    "1013",
+    "233",
+    "698"
+   ],
+   "correct": 0,
+   "explain": "EASA gives 465.4 hPa; the computation gives 465.6 hPa.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "ISA temperature at 10 000 ft is approximately:",
+   "opts": [
+    "15 °C",
+    "-24.8 °C",
+    "10.2 °C",
+    "-4.8 °C"
+   ],
+   "correct": 3,
+   "explain": "15 − 2 × 10 = −5 °C by the −2 °C per 1000 ft rule; EASA gives −4.8 °C.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "In which layer does temperature increase with altitude (outside the isothermal ISA model)?",
+   "opts": [
+    "The troposphere",
+    "The stratosphere",
+    "None",
+    "Only at the tropopause"
+   ],
+   "correct": 1,
+   "explain": "Ozone absorbs ultraviolet and warms the air (EASA p. 1.5).",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "At sea level the temperature is 15 °C above ISA (30 °C). The density altitude is approximately:",
+   "opts": [
+    "0 ft",
+    "3448 ft",
+    "1724 ft",
+    "575 ft"
+   ],
+   "correct": 2,
+   "explain": "The real density is below ISA so the aircraft behaves as if higher.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "According to EASA the troposphere at the equator extends to about:",
+   "opts": [
+    "100 000 ft",
+    "25 000 ft",
+    "38 000 ft",
+    "60 000 ft"
+   ],
+   "correct": 3,
+   "explain": "Over the poles only 25 000–30 000 ft, on average about 38 000 ft.",
+   "src": "Supplementary (authored)"
   }
  ]
 }

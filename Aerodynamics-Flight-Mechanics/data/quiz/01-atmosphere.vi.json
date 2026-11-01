@@ -187,6 +187,78 @@
    "correct": 0,
    "explain": "Mật độ thấp giảm lực nâng và lực đẩy; lực cản giảm nhưng không bù được.",
    "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Mật độ ISA ở 10 000 ft xấp xỉ:",
+   "opts": [
+    "0,452 kg/m³",
+    "1,225 kg/m³",
+    "1,357 kg/m³",
+    "0,905 kg/m³"
+   ],
+   "correct": 3,
+   "explain": "EASA Hình 1-7 ghi 0,9; tính được 0,905.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Áp suất ISA ở 20 000 ft theo hPa xấp xỉ:",
+   "opts": [
+    "466",
+    "1013",
+    "233",
+    "698"
+   ],
+   "correct": 0,
+   "explain": "EASA ghi 465,4 hPa; tính được 465,6 hPa.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Nhiệt độ ISA ở 10 000 ft xấp xỉ:",
+   "opts": [
+    "15 °C",
+    "-24,8 °C",
+    "10,2 °C",
+    "-4,8 °C"
+   ],
+   "correct": 3,
+   "explain": "15 − 2 × 10 = −5 °C theo quy tắc −2 °C/1000 ft; EASA ghi −4,8 °C.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Trong tầng nào nhiệt độ tăng theo độ cao (ngoài ISA đẳng nhiệt)?",
+   "opts": [
+    "Tầng đối lưu",
+    "Tầng bình lưu",
+    "Không tầng nào",
+    "Chỉ ở tropopause"
+   ],
+   "correct": 1,
+   "explain": "Ôzôn hấp thụ tia cực tím làm không khí ấm lên (EASA tr. 1.5).",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Ở mực biển, nhiệt độ cao hơn ISA 15 °C (30 °C). Độ cao mật độ xấp xỉ:",
+   "opts": [
+    "0 ft",
+    "3448 ft",
+    "1724 ft",
+    "575 ft"
+   ],
+   "correct": 2,
+   "explain": "Mật độ thật thấp hơn ISA nên máy bay hoạt động như ở độ cao cao hơn.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Theo EASA, tầng đối lưu ở xích đạo mở rộng tới khoảng:",
+   "opts": [
+    "100 000 ft",
+    "25 000 ft",
+    "38 000 ft",
+    "60 000 ft"
+   ],
+   "correct": 3,
+   "explain": "Ở hai cực chỉ 25 000 đến 30 000 ft, trung bình khoảng 38 000 ft.",
+   "src": "Bổ sung (biên soạn)"
   }
  ]
 }

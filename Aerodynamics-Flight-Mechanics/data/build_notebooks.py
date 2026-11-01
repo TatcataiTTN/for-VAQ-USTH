@@ -201,7 +201,93 @@ assert 36000/3000 == 12                                # glide ratio quiz'''),
     code('print("All Module 03 checks passed.")'),
 ])
 
-for name, n in (("01_atmosphere", n1), ("02_aerodynamics", n2), ("03_theory-of-flight", n3)):
+
+# ---- cau bo sung (kiem doc lap voi aero.py) ----
+n1["cells"] += [md("## 7. Câu bổ sung / Extra questions"), code('''assert abs(isa_ft(10000)[2]-0.9046) < 5e-4                  # density at 10 000 ft
+assert abs(isa_ft(20000)[1]/100-465.6) < 0.3                    # hPa at 20 000 ft (EASA 465.4)
+assert abs(isa_ft(10000)[0]-273.15+4.8) < 0.05                  # C at 10 000 ft (EASA -4.8)
+rho_dev = 101325/(R_AIR*(15+T0)); lo, hi = 0.0, 15000.0
+for _ in range(80):
+    mid = (lo+hi)/2
+    if isa(mid)[2] > rho_dev: lo = mid
+    else: hi = mid
+print("density altitude at sea level, ISA+15:", round(lo/FT), "ft"); assert 1500 < lo/FT < 3500
+print("Extra Module 01 checks passed.")''')]
+n2["cells"] += [md("## 6. Câu bổ sung / Extra questions"), code('''q100 = 0.5*1.225*100**2; assert abs(q100-6125) < 1e-9
+L1 = 0.5*1.225*60**2*20*0.5; assert abs(L1-22050) < 1e-6
+cdi = 0.8**2/(math.pi*0.9*8); assert abs(cdi-0.02829) < 1e-4
+Re = 1.225*50*2/1.789e-5; assert abs(Re/1e6-6.85) < 0.01
+assert abs(isa(3000)[2]/1.225-0.742) < 0.002
+print("Extra Module 02 checks passed.")''')]
+n3["cells"] += [md("## 7. Câu bổ sung / Extra questions"), code('''assert abs((math.sqrt(1/math.cos(math.radians(45)))-1)*100-18.9) < 0.1
+a20 = a_sound(isa_ft(20000)[0])/kt; print("a(20 000 ft) =", round(a20), "kt"); assert abs(a20-614) < 2
+g = GAMMA; M1 = 2.0
+M2 = math.sqrt(((g-1)*M1**2+2)/(2*g*M1**2-(g-1))); p = 1+2*g/(g+1)*(M1**2-1); assert abs(M2-0.5774) < 1e-3 and abs(p-4.5) < 1e-9
+assert 2000*15 == 30000
+assert abs(math.degrees(math.acos(1/2.5))-66.42) < 0.01
+print("Extra Module 03 checks passed.")''')]
+
+# ===================================================================== 04
+n4 = nb([
+    md("""# Module 04: Ổn định và động lực học bay / Flight Stability and Dynamics
+**AE2.008 · USTH: Aerodynamics and Flight Mechanics**
+
+🇻🇳 Nhập ma trận hệ thống **A** của Boeing 747 từ Etkin & Reid (phương trình 6.2,1), tính trị riêng và so với giá trị in trong sách (6.2,3), tính chu kỳ T, hệ số tắt dần ζ và thời gian giảm một nửa, kiểm xấp xỉ Lanchester (Bài tập 6.1) và tổng độ tắt dần (Bài tập 6.4), mô phỏng đáp ứng bằng ma trận mũ, và `assert` các đáp án quiz.
+
+🇬🇧 Enters the Boeing 747 system matrix **A** from Etkin & Reid (equation 6.2,1), computes the eigenvalues and compares them with the printed values (6.2,3), computes the period T, damping ratio ζ and time to half amplitude, checks the Lanchester approximation (Exercise 6.1) and the sum of the dampings (Exercise 6.4), simulates the response with the matrix exponential, and asserts the quiz answers."""),
+    code('''import numpy as np, math
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+# State [du (ft/s), w (ft/s), q (rad/s), dtheta (rad)], Etkin & Reid 3rd, eq. (6.2,1), p. 166
+A = np.array([[-0.006868, 0.01395, 0.0, -32.2],
+              [-0.09055, -0.3151, 773.98, 0.0],
+              [0.0001187, -0.001026, -0.4285, 0.0],
+              [0.0, 0.0, 1.0, 0.0]])
+U0, G = 773.98, 32.174'''),
+    md("## 1. Đa thức đặc trưng và trị riêng / Characteristic polynomial and eigenvalues"),
+    code('''coef = np.poly(A); print("characteristic polynomial:", coef)
+# Etkin (6.2,2): 1, 0.750468, 0.935494, 0.0094630, 0.0041959
+assert np.allclose(coef, [1, 0.750468, 0.935494, 0.0094630, 0.0041959], rtol=2e-4, atol=1e-7)
+ev = np.linalg.eigvals(A); print(np.sort_complex(ev))
+ph = [e for e in ev if e.imag > 0 and abs(e) < 0.5][0]; sp = [e for e in ev if e.imag > 0 and abs(e) > 0.5][0]
+assert abs(ph - (-0.003289 + 0.06723j)) < 2e-5 and abs(sp - (-0.3719 + 0.8875j)) < 2e-4   # Etkin (6.2,3)'''),
+    md("## 2. Chu kỳ, tắt dần, thời gian giảm một nửa / Period, damping, half-time"),
+    code('''for name, e in (("phugoid", ph), ("short period", sp)):
+    wn = abs(e); zeta = -e.real/wn; T = 2*math.pi/e.imag; th = math.log(2)/-e.real
+    print(f"{name:13s} wn = {wn:.4f} rad/s, zeta = {zeta:.4f}, T = {T:.2f} s, t_half = {th:.2f} s, cycles to half = {th/T:.2f}")
+Tph = 2*math.pi/ph.imag; Tsp = 2*math.pi/sp.imag
+assert abs(Tph-93.5) < 0.1 and abs(-sp.real/abs(sp)-0.3865) < 1e-3 and abs(math.log(2)/-ph.real-210.7) < 0.2'''),
+    md("## 3. Lanchester (Etkin 6.3, Bài tập 6.1)"),
+    code('''TL = math.pi*math.sqrt(2)*U0/G; print(f"Lanchester T = {TL:.1f} s (Etkin: 107 s) vs eigenvalue T = {Tph:.1f} s (Etkin: 93 s)")
+assert abs(TL-107) < 0.5
+TL400 = math.pi*math.sqrt(2)*400/G; print("u0 = 400 ft/s ->", round(TL400, 1), "s"); assert abs(TL400-55.2) < 0.1
+assert abs(math.pi*math.sqrt(2)*200/9.80665-90.6) < 0.1            # quiz: 200 m/s'''),
+    md("## 4. Tổng độ tắt dần / Sum of the dampings (Bài tập 6.4)"),
+    code('''sd = -2*(ph.real+sp.real); print("-sum Re =", sd, "vs coefficient of lambda^3:", coef[1])
+assert abs(sd-coef[1]) < 1e-9'''),
+    md("## 5. Mô phỏng / Simulation (matrix exponential)"),
+    code('''w, V = np.linalg.eig(A); Vi = np.linalg.inv(V)
+def x_at(t, x0): return (V @ np.diag(np.exp(w*t)) @ Vi @ np.array(x0)).real
+ts = np.linspace(0, 300, 601); du = [x_at(t, [10, 0, 0, 0])[0] for t in ts]
+fig, ax = plt.subplots(1, 2, figsize=(10, 3.6))
+ax[0].plot(ts, du); ax[0].set(xlabel="t [s]", ylabel="du [ft/s]", title="Phugoid: du(0) = 10 ft/s"); ax[0].grid(True)
+ts2 = np.linspace(0, 20, 401); th2 = [x_at(t, [0, 0, 0.05, 0])[3]*180/math.pi for t in ts2]
+ax[1].plot(ts2, th2); ax[1].set(xlabel="t [s]", ylabel="dtheta [deg]", title="Short period: q(0) = 0.05 rad/s"); ax[1].grid(True)
+fig.tight_layout(); fig.savefig("b747_modes.png", dpi=100)
+x300 = x_at(300, [10, 0, 0, 0]); x20 = x_at(20, [0, 0, 0.05, 0])
+print("x(300 s) =", x300); print("x(20 s) =", x20)
+# values used to verify the JavaScript demo (RK4) on the page
+assert abs(x300[0]-0.752423) < 1e-5 and abs(x20[0]+7.626901) < 1e-5'''),
+    md("## 6. Lề ổn định tĩnh / Static margin (Etkin 2.3)"),
+    code('''h, hn, cla = 0.25, 0.35, 4.5; Kn = hn-h; Cma = cla*(h-hn)
+print("Kn =", Kn, "Cma =", Cma); assert abs(Kn-0.10) < 1e-12 and abs(Cma+0.45) < 1e-12
+# extra quiz checks
+assert abs(0.1/math.sqrt(0.1**2+1)-0.0995) < 1e-4 and abs(math.log(2)/0.05-13.86) < 0.01
+print("All Module 04 checks passed.")'''),
+])
+
+for name, n in (("01_atmosphere", n1), ("02_aerodynamics", n2), ("03_theory-of-flight", n3), ("04_stability", n4)):
     with open(os.path.join(OUT, name + ".ipynb"), "w", encoding="utf-8") as f:
         nbf.write(n, f)
     print("wrote", name)

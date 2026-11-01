@@ -299,6 +299,78 @@
    "correct": 1,
    "explain": "A turbulent layer carries more momentum near the wall so it clings better, at the price of higher skin friction.",
    "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The dynamic pressure q at 100 m/s at ISA sea level (ρ = 1.225) is:",
+   "opts": [
+    "3062 Pa",
+    "6125 Pa",
+    "123 Pa",
+    "12250 Pa"
+   ],
+   "correct": 1,
+   "explain": "q = ½ρV² = 0.5 × 1.225 × 10 000.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A wing with S = 20 m², V = 60 m/s and C_L = 0.5 at ISA sea level produces a lift of:",
+   "opts": [
+    "11025 N",
+    "44100 N",
+    "79380 N",
+    "22050 N"
+   ],
+   "correct": 3,
+   "explain": "L = ½ρV²·S·C_L.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A wing with AR = 8, e = 0.9 and C_L = 0.8 has C_Di equal to:",
+   "opts": [
+    "0.0283",
+    "0.0318",
+    "0.0566",
+    "0.0141"
+   ],
+   "correct": 0,
+   "explain": "C_Di = C_L²/(π e AR).",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Doubling the wing area while keeping speed, density and C_L, the lift:",
+   "opts": [
+    "stays the same",
+    "quadruples",
+    "halves",
+    "doubles"
+   ],
+   "correct": 3,
+   "explain": "L is proportional to S.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The Reynolds number Re = ρVc/μ with ρ = 1.225, V = 50 m/s, c = 2 m, μ = 1.789×10⁻⁵ kg/(m·s) is approximately:",
+   "opts": [
+    "0.68×10⁶",
+    "68.5×10⁶",
+    "6.85×10⁶",
+    "68.47×10⁵"
+   ],
+   "correct": 2,
+   "explain": "A large Re means the boundary layer readily turns turbulent.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "With the same V, S and C_L, what fraction of the sea-level lift is produced at a standard 3 km altitude?",
+   "opts": [
+    "1.35",
+    "0.55",
+    "0.74",
+    "0.50"
+   ],
+   "correct": 2,
+   "explain": "L is proportional to ρ; σ(3 km) = 0.9093/1.225.",
+   "src": "Supplementary (authored)"
   }
  ]
 }

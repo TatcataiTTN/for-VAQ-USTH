@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """Render site tu cac content_NN.build(lang). Chay: python3 -I render.py"""
-import os, sys, json, html, hashlib, importlib
+import os, sys, json, html, hashlib, importlib, copy
 sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 ROOT = os.path.dirname(HERE)
-MODS = ["content_01", "content_02", "content_03"]
+MODS = ["content_01", "content_02", "content_03", "content_04"]
+import extras
 
 def ver():
     h = hashlib.md5()
@@ -18,9 +19,9 @@ VER = ver()
 T = {
  "vi": dict(site="Khí động lực học & Cơ học bay", sub="Tự học AE2.008 · USTH",
    hero="Tự học môn AE2.008: Khí động lực học và Cơ học bay",
-   hero_sub="3 module đầu bám EASA Module 08 (Basic Aerodynamics), đối chiếu Anderson "
+   hero_sub="4 module bám EASA Module 08 (Basic Aerodynamics), đối chiếu Anderson "
             "<i>Fundamentals of Aerodynamics</i> (6th) và Etkin &amp; Reid <i>Dynamics of Flight</i> (3rd). "
-            "Có slide song ngữ, quiz tự chấm, bài tập có lời giải và notebook Python.",
+            "Có slide song ngữ kèm hình gốc, demo tương tác, quiz tự chấm, bài tập có lời giải và notebook Python.",
    open="Mở bài giảng →", back="← Trang chủ", other="English", part="PHẦN", fs="⛶ Toàn màn hình",
    prev="◀ Trước", next="Sau ▶", explain="📖 Giải thích cho người mới bắt đầu",
    formula="Công thức", history="lịch sử", case="tình huống", warn="lưu ý",
@@ -34,9 +35,9 @@ T = {
         "câu gốc ghi rõ nguồn, câu bổ sung gắn nhãn riêng."),
  "en": dict(site="Aerodynamics & Flight Mechanics", sub="Self-study AE2.008 · USTH",
    hero="Self-study AE2.008: Aerodynamics and Flight Mechanics",
-   hero_sub="The first 3 modules follow EASA Module 08 (Basic Aerodynamics), cross-referenced with Anderson "
+   hero_sub="4 modules following EASA Module 08 (Basic Aerodynamics), cross-referenced with Anderson "
             "<i>Fundamentals of Aerodynamics</i> (6th) and Etkin &amp; Reid <i>Dynamics of Flight</i> (3rd). "
-            "Bilingual slides, self-graded quizzes, worked problems and a Python notebook.",
+            "Bilingual slides with original figures, live demos, self-graded quizzes, worked problems and Python notebooks.",
    open="Open lesson →", back="← Home", other="Tiếng Việt", part="PART", fs="⛶ Fullscreen",
    prev="◀ Prev", next="Next ▶", explain="📖 Explained for complete beginners",
    formula="Formula", history="history", case="case", warn="watch out",
@@ -89,7 +90,12 @@ def deck(lang, m):
         for cs in p["slides"]:
             ex = (f"<details class='slide-explain'><summary>{t['explain']}</summary><div class='slide-explain-body'>{cs['explain']}</div></details>"
                   if cs.get("explain") else "")
-            sl.append(slide(f"{t['part']} {i}/5 · {m['num']}", f"<h2>{cs['title']}</h2>{cs['body']}{ex}"))
+            fig = ""
+            if cs.get("img"):
+                src = "../../../assets/figures/" + cs["img"]
+                fig = (f"<figure class='slide-fig'><a href='{src}' target='_blank' rel='noopener'><img src='{src}' alt='{html.escape(cs['title'], quote=True)}' loading='lazy'/></a>"
+                       f"<figcaption>{cs.get('cap', '')}</figcaption></figure>")
+            sl.append(slide(f"{t['part']} {i}/5 · {m['num']}", f"<h2>{cs['title']}</h2>{cs['body']}{fig}{ex}"))
     legend = "".join(f"<li><b>{k}</b><span>{v}</span></li>" for k, v in m["legend"])
     sl.append(slide(f"{t['part']} · {t['formula']}", f"<h2>{m['formula_label']}</h2><div class='pd-formula'><div class='pd-formula-label'>{m['formula_label']}</div><div class='pd-formula-math'>{m['formula_math']}</div></div><ul class='pd-legend'>{legend}</ul>"))
     for key, ic in (("history", "📜"), ("case", "🔎"), ("warn", "⚠️")):
@@ -99,6 +105,8 @@ def deck(lang, m):
             f'<span class="mdeck-count"></span><div class="mdeck-dots"></div><button class="mdeck-fs">{t["fs"]}</button></div></div>')
 
 def quiz_block(s):
+    for it in s['items']:
+        it['src'] = html.unescape(it.get('src', ''))
     js = json.dumps({"items": s["items"]}, ensure_ascii=False).replace("</", "<\\/")
     intro = f"<p class='essay-intro'>{s['intro']}</p>" if s.get("intro") else ""
     return f"<h3>{s['title']}</h3>{intro}<div class=\"quiz\"><script type=\"application/json\">{js}</script></div>"
@@ -120,6 +128,7 @@ def module_page(lang, m, prefix="../../../"):
 <div class="hero"><span class="pill">MODULE {m['num']}</span><h1>{m['title']}</h1><p>{m['src']}</p></div>
 <div class="callout info"><h4>{t['map']}</h4><p><b>EASA Module 08:</b> {mp['easa']}</p><p><b>Anderson (6th):</b> {mp['anderson']}</p><p><b>Etkin &amp; Reid (3rd):</b> {mp['etkin']}</p><p>{mp['note']}</p><p><a href="../../../chapter-mapping-{lang}.html">{t['mapnav']} →</a></p></div>
 {deck(lang, m)}
+{extras.demo_html(m['slug'], lang)}
 <div class="callout history"><h4>{m['history_title']}</h4><p>{m['history']}</p></div>
 <div class="callout case"><h4>{m['case_title']}</h4><p>{m['case']}</p></div>
 <div class="callout warn"><h4>{m['warn_title']}</h4><p>{m['warn']}</p></div>
@@ -130,7 +139,8 @@ def module_page(lang, m, prefix="../../../"):
 </div>"""
     h = page(lang, prefix, body, f"{m['title']} · {t['site']}", m["intro"], f'<link rel="stylesheet" href="{prefix}_shared/deck.css?v={VER}"/>')
     h = h.replace("__OTHER__", f"../../../{'en' if lang=='vi' else 'vi'}/modules/{m['slug']}/index.html")
-    return h.replace("</body></html>", f'<script src="{prefix}_shared/deck.js?v={VER}"></script><script src="{prefix}_shared/quiz.js?v={VER}"></script></body></html>')
+    dj = f'<script src="{prefix}_shared/demo_aero.js?v={VER}"></script>' if extras.demo_html(m['slug'], lang) else ''
+    return h.replace("</body></html>", dj + f'<script src="{prefix}_shared/deck.js?v={VER}"></script><script src="{prefix}_shared/quiz.js?v={VER}"></script></body></html>')
 
 def home(lang, mods):
     t = T[lang]
@@ -155,6 +165,11 @@ def main():
     built = {}
     for lang in ("vi", "en"):
         built[lang] = [importlib.import_module(n).build(lang) for n in MODS]
+        for m in built[lang]:
+            for pi, slides in extras.figure_slides(m['slug'], lang).items():
+                m['parts'][pi]['slides'].extend(slides)
+            gen = [q for q in m['quiz_sets'] if q['key'] == 'generated'][0]
+            gen['items'].extend(extras.extra_quiz(m['slug'], lang))
     for lang in ("vi", "en"):
         mods = built[lang]
         open(os.path.join(ROOT, lang, "index.html"), "w", encoding="utf-8").write(home(lang, mods))

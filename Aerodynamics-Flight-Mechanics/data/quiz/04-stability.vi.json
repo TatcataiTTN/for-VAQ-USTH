@@ -1,0 +1,302 @@
+{
+ "easa": [
+  {
+   "q": "Kể tên ba trục của máy bay.",
+   "opts": [
+    "Dọc, hướng tâm (radial), đứng",
+    "Dọc, ngang, chéo (diagonal)",
+    "Dọc (longitudinal), ngang (lateral), đứng (vertical)",
+    "Ngang, đứng, tiếp tuyến (tangential)"
+   ],
+   "correct": 2,
+   "explain": "Lăn quanh trục dọc, chúc ngóc quanh trục ngang, xoay quanh trục đứng (EASA tr. 4.2).",
+   "src": "EASA M08 Q4-1 (tr. 4.11, đáp án 4-1 ở tr. 4.12)"
+  },
+  {
+   "q": "Ổn định dọc tĩnh của máy bay phụ thuộc vào ba yếu tố nào?",
+   "opts": [
+    "Trọng lượng; công suất động cơ; độ cao bay",
+    "Sải cánh; chiều dài thân; số động cơ",
+    "Vị trí cánh so với CG; vị trí đuôi ngang so với CG; diện tích đuôi",
+    "Vị trí cánh; hình dạng thân; màu sơn"
+   ],
+   "correct": 2,
+   "explain": "EASA tr. 4.4: ba yếu tố đều xoay quanh CG vì vật tự do luôn quay quanh CG.",
+   "src": "EASA M08 Q4-2 (tr. 4.11, đáp án 4-2 ở tr. 4.12)"
+  },
+  {
+   "q": "Tăng ____ của cánh làm tăng ổn định ngang của máy bay khi bay.",
+   "opts": [
+    "góc V ngang (dihedral)",
+    "tải trọng cánh",
+    "độ dày",
+    "độ cong (camber)"
+   ],
+   "correct": 0,
+   "explain": "Dihedral là phương tiện chính của ổn định ngang (EASA tr. 4.7, Hình 4-9). Đáp án in là 4-3 nhưng thuộc câu 4-5.",
+   "src": "EASA M08 Q4-5 (tr. 4.11, đáp án 4-3 ở tr. 4.12)"
+  },
+  {
+   "q": "Ổn định quanh trục đứng của máy bay được gọi là ổn định ____ hay ____.",
+   "opts": [
+    "lăn (rolling); ngang (lateral)",
+    "chúc ngóc (pitching); hướng (directional)",
+    "chúc ngóc (pitching); dọc (longitudinal)",
+    "xoay (yawing); hướng (directional)"
+   ],
+   "correct": 3,
+   "explain": "Đáp án in là 4-4 nhưng thuộc câu 4-6; đuôi đứng quyết định ổn định này.",
+   "src": "EASA M08 Q4-6 (tr. 4.11, đáp án 4-4 ở tr. 4.12)"
+  }
+ ],
+ "etkin": [
+  {
+   "q": "Phugoid của B747 có trị riêng λ = −0,003289 ± 0,06723i (đơn vị 1/s). Chu kỳ dao động là:",
+   "opts": [
+    "107,5 s",
+    "1910 s",
+    "93,5 s",
+    "15,1 s"
+   ],
+   "correct": 2,
+   "explain": "T = 2π/ω với ω là phần ảo.",
+   "src": "Etkin & Reid, mục 6.2 (trị riêng 6.2,3)",
+   "detail": "<p>T = 2π/0,06723 = 93,5 s. Etkin ghi 93 s. Dùng phần thực 0,003289 sẽ cho 1910 s, sai hoàn toàn.</p>"
+  },
+  {
+   "q": "Mode chu kỳ ngắn của B747 có λ = −0,3719 ± 0,8875i. Hệ số tắt dần ζ = −σ/|λ| xấp xỉ:",
+   "opts": [
+    "0,372",
+    "0,387",
+    "0,773",
+    "0,887"
+   ],
+   "correct": 1,
+   "explain": "|λ| = √(σ² + ω²).",
+   "src": "Etkin & Reid, mục 6.2",
+   "detail": "<p>|λ| = √(0,3719² + 0,8875²) = 0,9623 rad/s; ζ = 0,3719/0,9623 = 0,387. Chu kỳ T = 7,08 s.</p>"
+  },
+  {
+   "q": "Xấp xỉ Lanchester T = π√2·u₀/g cho B747 với u₀ = 773,98 ft/s (g = 32,174 ft/s²) là:",
+   "opts": [
+    "93 s",
+    "53 s",
+    "107 s",
+    "214 s"
+   ],
+   "correct": 2,
+   "explain": "Lanchester giả sử không có lực cản: nên lệch so với 93 s thật.",
+   "src": "Etkin & Reid, mục 6.3 (6.3,10) và Bài tập 6.1",
+   "detail": "<p>T = π√2 × 773,98/32,174 = 106,9 s (Etkin ghi 107 s). Phép tính theo hệ SI cho cùng kết quả: u₀ = 235,9 m/s, g = 9,807 m/s² cho 106,9 s.</p>"
+  },
+  {
+   "q": "Đa thức đặc trưng B747 là λ⁴ + 0,750468λ³ + 0,935494λ² + 0,0094630λ + 0,0041959 = 0. Theo Bài tập 6.4, hệ số của λ³ bằng:",
+   "opts": [
+    "tích của các nghiệm",
+    "trừ tổng phần thực của mọi nghiệm: 0,7505",
+    "tổng bình phương các phần ảo",
+    "tổng các tần số riêng không tắt"
+   ],
+   "correct": 1,
+   "explain": "Tổng \"độ tắt dần\" của các mode.",
+   "src": "Etkin & Reid, Bài tập 6.4",
+   "detail": "<p>−Σ Re λ = 2(0,003289 + 0,3719) = 0,750468 ≈ 0,750468 ✓. Đây cũng là lý do hệ số này dương là điều kiện cần cho ổn định.</p>"
+  },
+  {
+   "q": "Thời gian để biên độ phugoid của B747 giảm một nửa (t½ = ln 2/|σ|, σ = −0,003289) là:",
+   "opts": [
+    "93 s",
+    "2,1 s",
+    "211 s",
+    "21 s"
+   ],
+   "correct": 2,
+   "explain": "t½ = ln 2/0,003289.",
+   "src": "Etkin & Reid, mục 6.2",
+   "detail": "<p>t½ = 0,6931/0,003289 = 210,7 s ≈ 2,3 chu kỳ. Phugoid tắt rất chậm, nên phi công phải chú ý nó.</p>"
+  },
+  {
+   "q": "Theo xấp xỉ Lanchester, nếu B747 bay ở u₀ = 400 ft/s thay vì 773,98 ft/s thì chu kỳ phugoid xấp xỉ:",
+   "opts": [
+    "110 s",
+    "107 s",
+    "55 s",
+    "29 s"
+   ],
+   "correct": 2,
+   "explain": "T tỉ lệ thuận với tốc độ.",
+   "src": "Etkin & Reid, mục 6.3",
+   "detail": "<p>T = π√2 × 400/32,174 = 55,2 s. Khác với nhiều đại lượng khí động, T không đổi theo bình phương tốc độ mà theo tốc độ.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Máy bay có CG tại h = 0,25 và điểm trung hòa h_n = 0,35 (theo MAC). Lề ổn định tĩnh K_n bằng:",
+   "opts": [
+    "0,10",
+    "0,0875",
+    "-0,10",
+    "0,60"
+   ],
+   "correct": 0,
+   "explain": "K_n = h_n − h = 0,10; dương nên ổn định.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Dời CG ra phía sau đến đúng điểm trung hòa thì C_mα:",
+   "opts": [
+    "dương lớn nhất",
+    "bằng 0 (mất độ cứng chúc ngóc)",
+    "âm lớn nhất",
+    "không xác định"
+   ],
+   "correct": 1,
+   "explain": "C_mα = C_Lα(h − h_n) = 0 khi h = h_n (Etkin 2.3).",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Với C_Lα = 4,5/rad, h = 0,25, h_n = 0,35, giá trị C_mα là:",
+   "opts": [
+    "-0,10 /rad",
+    "0,45 /rad",
+    "-0,45 /rad",
+    "2,70 /rad"
+   ],
+   "correct": 2,
+   "explain": "C_mα = 4,5 × (0,25 − 0,35) = −0,45; âm nghĩa là ổn định.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Một dao động có biên độ ban đầu giảm rồi lại tăng dần theo thời gian thì có:",
+   "opts": [
+    "ổn định tĩnh âm và ổn định động dương",
+    "ổn định tĩnh dương nhưng ổn định động âm",
+    "ổn định tĩnh và động đều dương",
+    "ổn định động trung tính"
+   ],
+   "correct": 1,
+   "explain": "Xu hướng ban đầu quay về là tĩnh dương; biên độ tăng theo thời gian là động âm (EASA tr. 4.3).",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Cánh có dihedral bị nghiêng; máy bay trượt về phía cánh thấp. Cánh thấp sẽ có:",
+   "opts": [
+    "góc tấn hiệu dụng nhỏ hơn",
+    "lực nâng không đổi",
+    "góc tấn hiệu dụng lớn hơn nên lực nâng tăng",
+    "lực cản giảm còn bằng 0"
+   ],
+   "correct": 2,
+   "explain": "Mômen lăn phục hồi đưa máy bay về ngang bằng.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Dutch roll là dao động kết hợp của:",
+   "opts": [
+    "xoay (yaw) và lăn (roll)",
+    "lăn và chúc ngóc",
+    "tốc độ và độ cao",
+    "chúc ngóc và tốc độ"
+   ],
+   "correct": 0,
+   "explain": "Etkin bài 6.11 và EASA tr. 4.9 mô tả đây là dao động hướng gắn với lăn.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Giảm tốc độ bay làm downwash lên đuôi ngang:",
+   "opts": [
+    "giảm, nên lực đè trên đuôi giảm và mũi chúi xuống",
+    "tăng và làm đuôi đứng bị thất tốc",
+    "không đổi",
+    "tăng, nên mũi ngóc lên"
+   ],
+   "correct": 0,
+   "explain": "EASA Hình 4-5: tốc độ giảm thì downwash giảm.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Vì sao giới hạn CG sau là giới hạn an toàn khi chất tải?",
+   "opts": [
+    "Vì CG lùi làm động cơ nóng lên",
+    "Vì CG lùi làm tăng lực cản cảm ứng",
+    "Vì CG lùi gần điểm trung hòa làm máy bay mất độ cứng chúc ngóc",
+    "Vì CG lùi làm cánh thất tốc sớm hơn"
+   ],
+   "correct": 2,
+   "explain": "Lề ổn định K_n giảm khi CG lùi; K_n = 0 là bất ổn tĩnh.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Xấp xỉ Lanchester cho máy bay bay 200 m/s: chu kỳ phugoid xấp xỉ:",
+   "opts": [
+    "90,6 s",
+    "128,1 s",
+    "181,2 s",
+    "45,3 s"
+   ],
+   "correct": 0,
+   "explain": "T = π√2·V/g.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Trị riêng λ = −0,1 ± 1,0i có hệ số tắt dần ζ xấp xỉ:",
+   "opts": [
+    "1,000",
+    "0,100",
+    "0,100",
+    "0,500"
+   ],
+   "correct": 1,
+   "explain": "ζ = −σ/|λ| = 0,1/√1,01.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Một mode có phần thực σ dương thì:",
+   "opts": [
+    "chỉ không ổn định nếu ω = 0",
+    "ổn định và tắt dần",
+    "không ổn định: biên độ tăng theo e^{σt}",
+    "trung tính"
+   ],
+   "correct": 2,
+   "explain": "Nghiệm có phần thực dương làm phân kỳ.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Thời gian giảm một nửa biên độ khi σ = −0,05 1/s là:",
+   "opts": [
+    "20,0 s",
+    "13,9 s",
+    "27,7 s",
+    "6,9 s"
+   ],
+   "correct": 1,
+   "explain": "t½ = ln 2/|σ|.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Bộ giảm xoay (yaw damper) chủ yếu dùng để tăng tắt dần cho:",
+   "opts": [
+    "phugoid",
+    "chu kỳ ngắn dọc",
+    "Dutch roll",
+    "hạ cánh"
+   ],
+   "correct": 2,
+   "explain": "Etkin 8.7: yaw damper cho máy bay cánh xuôi.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Theo Etkin 2.3, CG càng lùi về phía điểm trung hòa thì lề ổn định tĩnh K_n:",
+   "opts": [
+    "càng nhỏ",
+    "không đổi",
+    "đổi dấu ngay lập tức",
+    "càng lớn"
+   ],
+   "correct": 0,
+   "explain": "K_n = h_n − h giảm dần về 0.",
+   "src": "Bổ sung (biên soạn)"
+  }
+ ]
+}

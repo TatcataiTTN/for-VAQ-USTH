@@ -273,6 +273,78 @@
    "correct": 0,
    "explain": "EASA (Stalls section): strips on the first 20–25% of the wing; the stall begins at the root so the tip ailerons stay effective.",
    "src": "Supplementary (authored)"
+  },
+  {
+   "q": "In a 45° bank level turn the stall speed rises by about:",
+   "opts": [
+    "100%",
+    "19%",
+    "41%",
+    "0%"
+   ],
+   "correct": 1,
+   "explain": "V_s,turn = V_s√n, n = 1.414, √n = 1.189.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The speed of sound at 20 000 ft ISA is approximately:",
+   "opts": [
+    "663 kt",
+    "661 kt",
+    "614 kt",
+    "574 kt"
+   ],
+   "correct": 2,
+   "explain": "T = 248.5 K so a = 316 m/s; between 661 kt (sea level) and 574 kt (40 000 ft).",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A normal shock at M₁ = 2: M₂ and p₂/p₁ are:",
+   "opts": [
+    "0.577 ; 2.25",
+    "0.500 ; 2.00",
+    "1.200 ; 4.50",
+    "0.577 ; 4.50"
+   ],
+   "correct": 3,
+   "explain": "M₂ = √[(γ−1)M₁²+2]/[2γM₁²−(γ−1)] = 0.5774.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "An aircraft with L/D = 15 loses power at 2 000 ft above level ground in still air. The maximum glide distance is:",
+   "opts": [
+    "30 000 ft",
+    "300 000 ft",
+    "2 000 ft",
+    "13 333 ft"
+   ],
+   "correct": 0,
+   "explain": "Distance = height × glide ratio = 2 000 × 15.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A load factor of 3 g means:",
+   "opts": [
+    "the drag is three times as high",
+    "the total load on the structure is three times the weight",
+    "the speed is three times as high",
+    "the aircraft weighs three times as much"
+   ],
+   "correct": 1,
+   "explain": "EASA p. 3.9.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A level turn with n = 2.5 requires a bank angle of:",
+   "opts": [
+    "76.4°",
+    "60.0°",
+    "51.4°",
+    "66.4°"
+   ],
+   "correct": 3,
+   "explain": "cos φ = 1/n = 0.4.",
+   "src": "Supplementary (authored)"
   }
  ]
 }

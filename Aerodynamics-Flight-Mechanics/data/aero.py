@@ -64,3 +64,24 @@ def mcr_prandtl_glauert(cp0, g=GAMMA):
         if f(lo) * f(mid) <= 0: hi = mid
         else: lo = mid
     return (lo + hi) / 2
+
+# ---------------- On dinh dong: B747 (Etkin & Reid 3rd, Bang 6.1/6.2, ma tran A pt 6.2,1, tr.165-166) ----------------
+B747_A = [[-0.006868, 0.01395, 0.0, -32.2],
+          [-0.09055, -0.3151, 773.98, 0.0],
+          [0.0001187, -0.001026, -0.4285, 0.0],
+          [0.0, 0.0, 1.0, 0.0]]      # state [du (ft/s), w (ft/s), q (rad/s), dtheta (rad)]
+B747_U0_FPS = 773.98
+G_FPS2 = 32.174
+
+def modes_b747():
+    """Tra ve (phugoid, short_period) moi cai = dict(lam, wn, zeta, T, t_half)."""
+    import numpy as np
+    ev = [e for e in np.linalg.eigvals(np.array(B747_A)) if e.imag > 0]
+    out = []
+    for e in sorted(ev, key=lambda z: abs(z)):
+        wn = abs(e)
+        out.append({"lam": e, "wn": wn, "zeta": -e.real / wn, "T": 2 * math.pi / e.imag, "t_half": math.log(2) / -e.real})
+    return out  # [phugoid, short period]
+
+def lanchester_period(u0, g=G_FPS2):
+    return math.pi * math.sqrt(2) * u0 / g
