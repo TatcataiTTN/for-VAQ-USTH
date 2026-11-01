@@ -43,6 +43,14 @@ def demo_html(slug, lang):
     L = lambda vi, en: vi if lang == "vi" else en
     def box(title, text, cls):
         return f"<div class='demo-box'><h3>🧪 {title}</h3><p>{text}</p><div class='{cls}'></div></div>"
+    if slug == "05-finite-wing":
+        return box(L("Demo: lực cản cảm ứng theo tỉ số kích thước", "Demo: induced drag against aspect ratio"), L("Kéo C_L, AR và e để xem α_i và C_D,i; điểm chấm là giá trị hiện tại.", "Drag C_L, AR and e to see α_i and C_D,i; the dot is the current value."), "demo-ar")
+    if slug == "06-compressible-flow":
+        return box(L("Demo: số Mach, tốc độ âm thanh và sóng thẳng", "Demo: Mach number, speed of sound and the normal shock"), L("Chọn độ cao và M₁ để xem tỉ số qua sóng xung kích thẳng, gồm p₀₂/p₀₁.", "Choose altitude and M₁ to see the ratios across a normal shock, including p₀₂/p₀₁."), "demo-shock")
+    if slug == "07-oblique-shocks":
+        return box(L("Demo: sóng xung kích xiên θ-β-M", "Demo: the oblique shock θ-β-M"), L("Chọn M₁ và góc lệch θ: trang tính sóng yếu và mạnh, hoặc báo sóng tách rời nếu θ > θ_max. Mặc định là Bài 9.5.", "Choose M₁ and the deflection θ: the page computes the weak and strong shock, or reports a detached shock if θ > θ_max. The default is Problem 9.5."), "demo-oblique")
+    if slug == "08-lateral-dynamics":
+        return box(L("Demo: mô phỏng động lực ngang B747 và bộ giảm xoay", "Demo: B747 lateral dynamics and a yaw damper"), L("Chọn nhiễu và thêm giảm xoay ΔN_r để xem Dutch roll tắt nhanh hơn.", "Choose a disturbance and add yaw damping ΔN_r to see the Dutch roll die out faster."), "demo-lat")
     if slug == "01-atmosphere":
         return box(L("Demo: máy tính khí quyển chuẩn ISA", "Demo: ISA atmosphere calculator"),
                    L("Kéo độ cao và độ lệch nhiệt độ so với ISA để xem T, p, ρ, tốc độ âm thanh và độ cao mật độ. Mặc định 5 000 ft, ΔT = 0.", "Drag the altitude and the temperature deviation from ISA to see T, p, ρ, the speed of sound and the density altitude. Default 5 000 ft, ΔT = 0."), "demo-isa")
@@ -62,7 +70,8 @@ def extra_quiz(slug, lang):
     L = lambda vi, en: vi if lang == "vi" else en
     N = lambda x, nd=2: num(x, nd, lang)
     SUP = L("Bổ sung (biên soạn)", "Supplementary (authored)")
-    sd = {"01-atmosphere": 120, "02-aerodynamics": 220, "03-theory-of-flight": 320, "04-stability": 420}[slug]
+    sd = {"01-atmosphere": 120, "02-aerodynamics": 220, "03-theory-of-flight": 320, "04-stability": 420}.get(slug)
+    if sd is None: return []
     I = []
     if slug == "01-atmosphere":
         r10 = isa_ft(10000)[2]; p20 = isa_ft(20000)[1] / 100; T10 = isa_ft(10000)[0] - 273.15

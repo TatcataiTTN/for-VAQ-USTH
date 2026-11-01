@@ -1,6 +1,6 @@
 # AE2.008 Aerodynamics and Flight Mechanics: ghi chú xây dựng
 
-Trạng thái: 4 module, tương ứng 4 sub-module của EASA Module 08 (khí quyển, khí động học, lý thuyết bay, ổn định và động lực bay). Mỗi module có slide song ngữ kèm hình gốc EASA cắt từ scan, demo tương tác, quiz (EASA, sách, bổ sung), bài tập có lời giải và notebook chạy được. Chưa làm: phần Etkin ch.4, 5, 7, 8 (phương trình chuyển động, đạo hàm ổn định, đáp ứng, điều khiển vòng kín) vì nằm ngoài EASA Module 08.
+Trạng thái: 8 module. 01–04 tương ứng 4 sub-module EASA Module 08; 05 (cánh hữu hạn, Anderson ch.5), 06 (dòng nén được, ch.7–8), 07 (sóng xiên, ch.9), 08 (động lực ngang B747, Etkin 6.7) mở rộng ngoài EASA. Mỗi module có slide song ngữ kèm hình gốc EASA cắt từ scan, demo tương tác, quiz (EASA, sách, bổ sung), bài tập có lời giải và notebook chạy được. Chưa làm: Anderson ch.2, 6, 10–15 (phương trình cơ bản, dòng 3D, ống phun, lý thuyết tuyến tính, CFD, lớp biên) và Etkin ch.4, 5, 7, 8 (phương trình chuyển động, đạo hàm ổn định, đáp ứng, điều khiển vòng kín). Bài 5.x, 8.x, 9.x của Anderson chưa đối chiếu với Solution Manual.
 
 ## Cách dựng lại
 ```

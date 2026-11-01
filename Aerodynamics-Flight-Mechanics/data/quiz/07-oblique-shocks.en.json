@@ -1,0 +1,176 @@
+{
+ "anderson": [
+  {
+   "q": "A missile flies at M = 1.5; the Mach wave from the nose meets the ground 559 ft behind the nose. The altitude is:",
+   "opts": [
+    "559 ft",
+    "500 ft",
+    "625 ft",
+    "373 ft"
+   ],
+   "correct": 1,
+   "explain": "μ = arcsin(1/1.5) = 41.81°; h = 559 tan μ.",
+   "src": "Anderson 6th, Problem 9.1"
+  },
+  {
+   "q": "An oblique shock with β = 30° in an M = 4 flow. The normal Mach number M_n1 is:",
+   "opts": [
+    "3.46",
+    "4.00",
+    "0.50",
+    "2.00"
+   ],
+   "correct": 3,
+   "explain": "M_n1 = M₁ sin β.",
+   "src": "Anderson 6th, Problem 9.2"
+  },
+  {
+   "q": "Same problem 9.2 (p₁ = 2.65×10⁴ N/m²). The pressure behind the wave p₂ is:",
+   "opts": [
+    "190800 N/m²",
+    "26500 N/m²",
+    "59625 N/m²",
+    "119250 N/m²"
+   ],
+   "correct": 3,
+   "explain": "p₂/p₁ = 4.5 at M_n1 = 2.",
+   "src": "Anderson 6th, Problem 9.2"
+  },
+  {
+   "q": "A wave with β = 36.87°, M₁ = 3, p₁ = 1 atm. The total pressure behind it, computed correctly, is:",
+   "opts": [
+    "29.9 atm",
+    "4.7 atm",
+    "41.8 atm",
+    "36.7 atm"
+   ],
+   "correct": 0,
+   "explain": "Use p₀,₂/p₀,₁ with M_n1 then multiply by p₀,₁.",
+   "src": "Anderson 6th, Problem 9.4",
+   "detail": "<p>p₀,₁ = 36.73 atm; p₀,₂/p₀,₁ = 0.8127 so p₀,₂ = 29.85 atm. The wrong way (p₀,₂/p₁) gives 4.67 atm.</p>"
+  },
+  {
+   "q": "A 22.2° half-angle wedge in an M₁ = 2.5 flow. The (weak) wave angle β is:",
+   "opts": [
+    "70.0°",
+    "22.2°",
+    "45.9°",
+    "23.6°"
+   ],
+   "correct": 2,
+   "explain": "Solve θ-β-M for the smaller β.",
+   "src": "Anderson 6th, Problem 9.5"
+  },
+  {
+   "q": "A flat plate in an M = 2.4 flow; the largest angle of attack with an attached shock is about:",
+   "opts": [
+    "28.7°",
+    "20.7°",
+    "90.0°",
+    "45.0°"
+   ],
+   "correct": 0,
+   "explain": "θ_max(M = 2.4) from the maximum of θ(β).",
+   "src": "Anderson 6th, Problem 9.6"
+  },
+  {
+   "q": "The maximum angle through which a sonic flow can be expanded by a Prandtl-Meyer wave is:",
+   "opts": [
+    "65.23°",
+    "90.00°",
+    "180.00°",
+    "130.45°"
+   ],
+   "correct": 3,
+   "explain": "ν(∞) = (√6 − 1)·90° = 130.45°.",
+   "src": "Anderson 6th, Problem 9.15"
+  },
+  {
+   "q": "A Mach 3 flow at 1 atm expands 20° then compresses 20° back to horizontal. The final pressure differs from 1 atm because:",
+   "opts": [
+    "the flow is compressible",
+    "the expansion loses total pressure",
+    "the two turning angles differ",
+    "the compression shock loses total pressure"
+   ],
+   "correct": 3,
+   "explain": "The expansion is reversible, the shock is not.",
+   "src": "Anderson 6th, Problem 9.20",
+   "detail": "<p>After the expansion M = 4.318, p = 0.160 atm; after the compression M = 2.725, p = 0.918 atm.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "The Mach angle at M = 2 is:",
+   "opts": [
+    "30°",
+    "45°",
+    "60°",
+    "26.4°"
+   ],
+   "correct": 0,
+   "explain": "μ = arcsin(1/2) = 30°.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The Prandtl-Meyer function ν(2.0) is approximately:",
+   "opts": [
+    "26.38°",
+    "52.76°",
+    "0.00°",
+    "30.00°"
+   ],
+   "correct": 0,
+   "explain": "ν(1) = 0 and ν increases with M.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "For a flat plate at M = 2.6, α = 5°, the Ackeret c_l = 4α/√(M²−1) is about:",
+   "opts": [
+    "0.145",
+    "0.548",
+    "0.500",
+    "0.050"
+   ],
+   "correct": 0,
+   "explain": "2π α is for incompressible flow.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A Prandtl-Meyer expansion compared with a shock in terms of entropy:",
+   "opts": [
+    "lowers the entropy",
+    "raises the entropy",
+    "raises entropy more than a normal shock",
+    "keeps the entropy constant"
+   ],
+   "correct": 3,
+   "explain": "The expansion is isentropic.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "At fixed M₁, a flow deflection larger than θ_max makes the shock:",
+   "opts": [
+    "become a Mach wave",
+    "disappear",
+    "become an expansion",
+    "detach and curve ahead of the body"
+   ],
+   "correct": 3,
+   "explain": "An attached shock exists only for θ ≤ θ_max.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "In a multi-wave system at M = 4, adding oblique shocks before the normal shock leaves the p₀:",
+   "opts": [
+    "equal",
+    "higher",
+    "zero",
+    "lower"
+   ],
+   "correct": 1,
+   "explain": "0.139 → 0.314 → 0.420.",
+   "src": "Supplementary (authored)"
+  }
+ ]
+}

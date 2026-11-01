@@ -1,0 +1,156 @@
+{
+ "anderson": [
+  {
+   "q": "A circular vortex loop of radius R and strength Γ. The induced velocity at the centre of the loop is:",
+   "opts": [
+    "Γ/(2R)",
+    "Γ/(4πR)",
+    "Γ/(2πR)",
+    "Γ/(πR)"
+   ],
+   "correct": 0,
+   "explain": "Biot-Savart integral: every element dl is perpendicular to r so V = Γ/(4π) · 2πR/R² = Γ/(2R).",
+   "src": "Anderson 6th, Problem 5.1",
+   "detail": "<p>Numerical check: R = 2, Γ = 1 gives 0.25000 (formula 0.25000).</p>"
+  },
+  {
+   "q": "For a vortex loop of radius R = 2 and Γ = 1, the induced velocity on the axis at A = 1.5 is:",
+   "opts": [
+    "0.0640",
+    "0.2500",
+    "0.1280",
+    "0.2560"
+   ],
+   "correct": 2,
+   "explain": "V = ΓR²/[2(R² + A²)^{3/2}].",
+   "src": "Anderson 6th, Problem 5.2",
+   "detail": "<p>= 4/[2 × (4 + 2.25)^1.5] = 0.12800; numerical integration gives 0.12800.</p>"
+  },
+  {
+   "q": "A wing with AR = 8, δ = τ = 0.055, thin symmetric airfoil a₀ = 2π, α = 5°. The lift coefficient C_L is:",
+   "opts": [
+    "0.651",
+    "0.217",
+    "0.434",
+    "0.548"
+   ],
+   "correct": 2,
+   "explain": "a = a₀/[1 + (a₀/πAR)(1 + τ)] = 4.97/rad.",
+   "src": "Anderson 6th, Example 5.1",
+   "detail": "<p>a = 4.972/rad; C_L = a·α = 0.4339 (book 0.4335). The 2D airfoil would give 0.548, much too high.</p>"
+  },
+  {
+   "q": "For the same wing, the induced drag coefficient C_D,i = C_L²(1 + δ)/(πAR) is:",
+   "opts": [
+    "0.00790",
+    "0.02371",
+    "0.00263",
+    "0.00375"
+   ],
+   "correct": 0,
+   "explain": "(0.4339)²(1.055)/(8π).",
+   "src": "Anderson 6th, Example 5.1",
+   "detail": "<p>C_D,i = 0.00790 (book 0.00789).</p>"
+  },
+  {
+   "q": "A wing with AR = 6, C_D,i = 0.01, δ = 0.055 has a C_L of:",
+   "opts": [
+    "0.423",
+    "0.845",
+    "0.188",
+    "0.179"
+   ],
+   "correct": 0,
+   "explain": "C_L² = πAR·C_D,i/(1 + δ).",
+   "src": "Anderson 6th, Example 5.2",
+   "detail": "<p>C_L² = π·6·0.01/1.055 = 0.1787; C_L = 0.423 (book 0.423).</p>"
+  },
+  {
+   "q": "The airfoil of the two wings (AR = 6 and AR = 10) has a₀ of about:",
+   "opts": [
+    "5.99 rad⁻¹",
+    "4.48 rad⁻¹",
+    "6.28 rad⁻¹",
+    "7.78 rad⁻¹"
+   ],
+   "correct": 0,
+   "explain": "Solve a = a₀/[1 + (1 + τ)a₀/(π AR)] for a₀.",
+   "src": "Anderson 6th, Example 5.2",
+   "detail": "<p>a₀ = a/(1 − a(1 + τ)/(π·AR)) = 5.988/rad (book 5.989). It is close to 2π but slightly lower due to thickness.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "An elliptical wing with C_L = 0.5 and AR = 8. The induced angle of attack α_i is:",
+   "opts": [
+    "0.570°",
+    "3.581°",
+    "2.280°",
+    "1.140°"
+   ],
+   "correct": 3,
+   "explain": "α_i = C_L/(π·AR) = 0.0199 rad.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Keeping C_L fixed, raising AR from 8 to 12 makes C_D,i:",
+   "opts": [
+    "stay the same",
+    "fall to 4/9",
+    "increase 1.5 times",
+    "fall to 2/3"
+   ],
+   "correct": 3,
+   "explain": "C_D,i is inversely proportional to AR: 8/12.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Flying slower but still level makes the induced drag:",
+   "opts": [
+    "decrease because speed falls",
+    "stay the same",
+    "vanish",
+    "increase because C_L rises"
+   ],
+   "correct": 3,
+   "explain": "C_D,i ∝ C_L² and C_L ∝ 1/V² so D_i ∝ 1/V².",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The span efficiency factor e = 1/(1 + δ). For δ = 0.055 e equals:",
+   "opts": [
+    "1.055",
+    "0.055",
+    "0.948",
+    "0.890"
+   ],
+   "correct": 2,
+   "explain": "e = 1/1.055 = 0.948.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "With C_D,0 = 0.02, AR = 8, e = 0.85, (L/D)max = ½√(π e AR/C_D,0) is about:",
+   "opts": [
+    "16.3",
+    "8.0",
+    "30.0",
+    "32.7"
+   ],
+   "correct": 0,
+   "explain": "At the maximum C_D,i = C_D,0 so C_D = 0.04 and C_L = 0.712.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "What do winglets mainly do?",
+   "opts": [
+    "Increase the wing thickness",
+    "Weaken the tip vortices and reduce induced drag",
+    "Reduce skin-friction drag",
+    "Raise C_Lmax"
+   ],
+   "correct": 1,
+   "explain": "EASA Figure 2-20.",
+   "src": "Supplementary (authored)"
+  }
+ ]
+}

@@ -31,6 +31,15 @@
     var p = 1 + 2 * g / (g + 1) * (M1 * M1 - 1), rho = (g + 1) * M1 * M1 / ((g - 1) * M1 * M1 + 2);
     return { M2: M2, p: p, rho: rho, T: p / rho, p0: Math.pow((g + 1) * M1 * M1 / ((g - 1) * M1 * M1 + 2), g / (g - 1)) * Math.pow((g + 1) / (2 * g * M1 * M1 - (g - 1)), 1 / (g - 1)) };
   }
+  function thetaBetaM(M, b) { var g = GAMMA; return Math.atan(2 / Math.tan(b) * (M * M * Math.sin(b) * Math.sin(b) - 1) / (M * M * (g + Math.cos(2 * b)) + 2)); }
+  function thetaMax(M) { var mu = Math.asin(1 / M), best = 0, bb = mu, n = 4000; for (var i = 1; i < n; i++) { var b = mu + (Math.PI / 2 - mu) * i / n, t = thetaBetaM(M, b); if (t > best) { best = t; bb = b; } } return { theta: best, beta: bb }; }
+  function betaFromTheta(M, th, strong) {
+    var tm = thetaMax(M); if (th > tm.theta) return null; var mu = Math.asin(1 / M), lo = strong ? tm.beta : mu, hi = strong ? Math.PI / 2 : tm.beta;
+    for (var i = 0; i < 100; i++) { var mid = (lo + hi) / 2, f = thetaBetaM(M, mid) - th; if ((!strong && f < 0) || (strong && f > 0)) lo = mid; else hi = mid; }
+    return (lo + hi) / 2;
+  }
+  function oblique(M1, beta, th) { var s = normalShock(M1 * Math.sin(beta)); return { Mn1: M1 * Math.sin(beta), M2: s.M2 / Math.sin(beta - th), p: s.p, rho: s.rho, T: s.T, p0: s.p0 }; }
+  function cdInduced(CL, AR, e) { return CL * CL / (Math.PI * e * AR); }
   function staticStab(h, hn, cla) { return { Kn: hn - h, Cma: cla * (h - hn) }; }
   // B747, Etkin 6.2,1: state [du, w, q, dtheta]
   var A747 = [[-0.006868, 0.01395, 0, -32.2], [-0.09055, -0.3151, 773.98, 0], [0.0001187, -0.001026, -0.4285, 0], [0, 0, 1, 0]];
@@ -47,7 +56,9 @@
     return out;
   }
 
-  var AERO = { isa: isa, densityAltitudeFt: densityAltitudeFt, soundSpeed: soundSpeed, interp: interp, ALPHA: ALPHA, CLT: CLT, CDT: CDT,
+  var ALAT = [[-0.0558, 0, -774, 32.2], [-0.003865, -0.4342, 0.4136, 0], [0.001086, -0.006112, -0.1458, 0], [0, 1, 0, 0]];
+  function latWithDamper(dNr) { var A = ALAT.map(function (r) { return r.slice(); }); A[2][2] -= dNr; return A; }
+  var AERO = { thetaBetaM: thetaBetaM, thetaMax: thetaMax, betaFromTheta: betaFromTheta, oblique: oblique, cdInduced: cdInduced, isa: isa, ALAT: ALAT, latWithDamper: latWithDamper, densityAltitudeFt: densityAltitudeFt, soundSpeed: soundSpeed, interp: interp, ALPHA: ALPHA, CLT: CLT, CDT: CDT,
                turn: turn, normalShock: normalShock, staticStab: staticStab, A747: A747, rk4: rk4, FT: FT, KT: KT, PSI: PSI, RHO0: RHO0 };
   if (typeof module !== 'undefined' && module.exports) { module.exports = AERO; return; }
   root.AERO = AERO;
@@ -163,7 +174,45 @@
     ss[0].addEventListener('change', upd); ss[1].addEventListener('change', upd); upd();
   }
 
-  var MAP = { 'demo-isa': demoISA, 'demo-lift': demoLift, 'demo-turn': demoTurn, 'demo-shock': demoShock, 'demo-stab': demoStab, 'demo-modes': demoModes };
+  function demoLat(host) {
+    var sel = document.createElement('div'); sel.className = 'demo-row';
+    sel.innerHTML = '<label>' + T('Nhiễu ban đầu', 'Initial disturbance') + ' <select><option value="v">' + T('trượt ngang v = 10 ft/s (Dutch roll)', 'sideslip v = 10 ft/s (Dutch roll)') + '</option><option value="p">' + T('tốc độ lăn p = 0,05 rad/s (hội tụ lăn)', 'roll rate p = 0.05 rad/s (roll convergence)') + '</option><option value="phi">' + T('nghiêng φ = 5° (mode xoắn ốc)', 'bank φ = 5° (spiral mode)') + '</option></select></label> <label>' + T('Cửa sổ', 'Window') + ' <select><option value="30">30 s</option><option value="300">300 s</option></select></label>';
+    host.appendChild(sel); var dn = slider(T('Giảm xoay nhân tạo thêm ΔN_r', 'Added artificial yaw damping ΔN_r'), 0, 1, 0.05, 0, '1/s', upd, host), out = resultBox(host), c1 = canvasFor(host, 240); var ss = sel.querySelectorAll('select');
+    function upd() {
+      var k = ss[0].value, x0 = k === 'v' ? [10, 0, 0, 0] : (k === 'p' ? [0, 0.05, 0, 0] : [0, 0, 0, 5 * Math.PI / 180]), tEnd = parseFloat(ss[1].value), dt = tEnd > 100 ? 0.05 : 0.01;
+      var tr = rk4(latWithDamper(dn.get()), x0, tEnd, dt), step = Math.max(1, Math.floor(tr.length / 600)), ph = [], be = [];
+      for (var i = 0; i < tr.length; i += step) { ph.push([tr[i][0], tr[i][4] * 180 / Math.PI]); be.push([tr[i][0], tr[i][1] / 774 * 180 / Math.PI]); }
+      out.innerHTML = '<p>' + T('Mô phỏng ẋ = A·x với ma trận ngang của B747 (Etkin 6.7,1), x = [v, p, r, φ]. Thanh trượt cộng thêm ΔN_r vào phần tử r của hàng r: mô hình đơn giản hóa một bộ giảm xoay, không phải vòng điều khiển bánh lái thật.', 'Simulation of ẋ = A·x with the B747 lateral matrix (Etkin 6.7,1), x = [v, p, r, φ]. The slider subtracts ΔN_r from the r-r element: a simplified model of a yaw damper, not the real rudder loop.') + '</p>';
+      chart(c1, [{ pts: ph, color: '#1657d6' }, { pts: be, color: '#d4421d' }], { xlabel: 't (s)', ylabel: 'φ (°), β (°)', xd: 0, yd: 2, legend: [{ color: '#1657d6', text: 'φ' }, { color: '#d4421d', text: 'β = v/u₀' }] });
+    }
+    ss[0].addEventListener('change', upd); ss[1].addEventListener('change', upd); upd();
+  }
+
+  function demoOblique(host) {
+    var M = slider(T('Mach thượng nguồn M₁', 'Upstream Mach M₁'), 1.2, 5, 0.05, 2.5, '', upd, host), th = slider(T('Góc lệch dòng θ', 'Flow deflection θ'), 1, 40, 0.1, 22.2, '°', upd, host), out = resultBox(host), cv = canvasFor(host, 250);
+    function upd() {
+      var m = M.get(), t = th.get() * Math.PI / 180, tm = thetaMax(m), h;
+      if (t > tm.theta) h = '<p>❌ ' + T('θ lớn hơn θ_max = ', 'θ exceeds θ_max = ') + fmt(tm.theta * 180 / Math.PI, 2) + '°: ' + T('sóng tách rời, không có nghiệm sóng bám.', 'the shock detaches; there is no attached solution.') + '</p>';
+      else { var bw = betaFromTheta(m, t, false), bs = betaFromTheta(m, t, true), ow = oblique(m, bw, t), os = oblique(m, bs, t);
+        h = '<p><b>' + T('Sóng yếu', 'Weak shock') + '</b> β = ' + fmt(bw * 180 / Math.PI, 2) + '°, M₂ = ' + fmt(ow.M2, 3) + ', p₂/p₁ = ' + fmt(ow.p, 3) + ', T₂/T₁ = ' + fmt(ow.T, 3) + ', p₀₂/p₀₁ = ' + fmt(ow.p0, 3) + '</p><p><b>' + T('Sóng mạnh', 'Strong shock') + '</b> β = ' + fmt(bs * 180 / Math.PI, 2) + '°, M₂ = ' + fmt(os.M2, 3) + ', p₂/p₁ = ' + fmt(os.p, 3) + '</p><p>θ_max = ' + fmt(tm.theta * 180 / Math.PI, 2) + '°, μ = ' + fmt(Math.asin(1 / m) * 180 / Math.PI, 2) + '°</p>'; }
+      out.innerHTML = h;
+      var pts = []; var mu = Math.asin(1 / m); for (var i = 1; i < 200; i++) { var b = mu + (Math.PI / 2 - mu) * i / 200; pts.push([b * 180 / Math.PI, thetaBetaM(m, b) * 180 / Math.PI]); }
+      chart(cv, [{ pts: pts, color: '#1657d6', dot: t <= tm.theta ? [betaFromTheta(m, t, false) * 180 / Math.PI, th.get()] : null }], { xlabel: 'β (°)', ylabel: 'θ (°)', xd: 0, yd: 0 });
+    }
+    upd();
+  }
+  function demoAR(host) {
+    var CL = slider('C_L', 0.1, 1.5, 0.05, 0.5, '', upd, host), AR = slider('AR', 3, 30, 0.5, 8, '', upd, host), e = slider('e', 0.6, 1, 0.01, 1, '', upd, host), out = resultBox(host), cv = canvasFor(host, 240);
+    function upd() {
+      var cd = cdInduced(CL.get(), AR.get(), e.get());
+      out.innerHTML = '<p><b>α<sub>i</sub></b> = C_L/(π·AR) = ' + fmt(CL.get() / (Math.PI * AR.get()) * 180 / Math.PI, 3) + '° &nbsp; <b>C<sub>D,i</sub></b> = C_L²/(π e AR) = ' + fmt(cd, 5) + '</p><p>' + T('Cùng C_L, AR = 12 cho ', 'At the same C_L, AR = 12 gives ') + fmt(cdInduced(CL.get(), 12, e.get()), 5) + '.</p>';
+      var pts = []; for (var a = 3; a <= 30; a += 0.5) pts.push([a, cdInduced(CL.get(), a, e.get())]);
+      chart(cv, [{ pts: pts, color: '#1657d6', dot: [AR.get(), cd] }], { xlabel: 'AR', ylabel: 'C_D,i', xd: 0, yd: 4, xmin: 3, xmax: 30 });
+    }
+    upd();
+  }
+
+  var MAP = { 'demo-oblique': demoOblique, 'demo-ar': demoAR, 'demo-lat': demoLat, 'demo-isa': demoISA, 'demo-lift': demoLift, 'demo-turn': demoTurn, 'demo-shock': demoShock, 'demo-stab': demoStab, 'demo-modes': demoModes };
   function init() { Object.keys(MAP).forEach(function (k) { document.querySelectorAll('.' + k).forEach(function (el) { if (!el.dataset.ready) { el.dataset.ready = '1'; MAP[k](el); } }); }); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })(typeof window !== 'undefined' ? window : globalThis);

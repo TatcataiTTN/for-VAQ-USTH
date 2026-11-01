@@ -1,0 +1,201 @@
+{
+ "anderson": [
+  {
+   "q": "At the nose of a missile T₀ = 934 °R and p₀ = 7.8 atm. The density there (R = 1716) is:",
+   "opts": [
+    "0.0024 slug/ft³",
+    "0.0103 slug/ft³",
+    "0.0049 slug/ft³",
+    "0.0803 slug/ft³"
+   ],
+   "correct": 1,
+   "explain": "ρ = p/(RT), 1 atm = 2116 lb/ft².",
+   "src": "Anderson 6th, Problem 7.1"
+  },
+  {
+   "q": "Isentropic flow over an airfoil: T∞ = 245 K, p∞ = 4.35×10⁴ N/m²; at one point p = 3.6×10⁴ N/m². The density there is:",
+   "opts": [
+    "0.703 kg/m³",
+    "0.512 kg/m³",
+    "0.540 kg/m³",
+    "0.416 kg/m³"
+   ],
+   "correct": 2,
+   "explain": "ρ = ρ∞(p/p∞)^{1/γ}; ρ∞ = p∞/(RT∞).",
+   "src": "Anderson 6th, Problem 7.4"
+  },
+  {
+   "q": "An isentropic supersonic nozzle with T₀ = 500 K, p₀ = 10 atm and exit p = 1 atm. The exit temperature is:",
+   "opts": [
+    "259.0 K",
+    "185.0 K",
+    "362.6 K",
+    "50.0 K"
+   ],
+   "correct": 0,
+   "explain": "T = T₀(p/p₀)^{(γ−1)/γ}.",
+   "src": "Anderson 6th, Problem 7.5"
+  },
+  {
+   "q": "At a point T = 300 K, p = 1.2 atm, V = 250 m/s. The total temperature T₀ is:",
+   "opts": [
+    "300 K",
+    "362.1 K",
+    "463.6 K",
+    "331.1 K"
+   ],
+   "correct": 3,
+   "explain": "M = 0.72; T₀ = T(1 + 0.2M²).",
+   "src": "Anderson 6th, Problem 8.3",
+   "detail": "<p>M = V/√(γRT) = 0.7201; T₀/T = 1.1037; p₀ = 1.695 atm.</p>"
+  },
+  {
+   "q": "An isentropic nozzle with test section p = 1 atm, T = 230 K, M = 2. The reservoir pressure p₀ is:",
+   "opts": [
+    "7.82 atm",
+    "15.65 atm",
+    "1.80 atm",
+    "3.91 atm"
+   ],
+   "correct": 0,
+   "explain": "p₀/p = (1 + 0.2M²)^3.5 = 7.824.",
+   "src": "Anderson 6th, Problem 8.5"
+  },
+  {
+   "q": "Ahead of a normal shock p₁ = 1 atm; behind it p₂ = 10.33 atm and T₂ = 1390 °R. The Mach number M₁ is:",
+   "opts": [
+    "4.00",
+    "2.60",
+    "2.00",
+    "3.00"
+   ],
+   "correct": 3,
+   "explain": "p₂/p₁ = 1 + 2γ(M₁²−1)/(γ+1) = 10.33.",
+   "src": "Anderson 6th, Problem 8.8",
+   "detail": "<p>M₁² = (10.33−1)(γ+1)/(2γ) + 1 = 8.997 so M₁ = 3.000. T₁ = 1390/2.678 = 519 °R.</p>"
+  },
+  {
+   "q": "The entropy increase across a normal shock is 199.5 J/(kg·K). The upstream Mach number is:",
+   "opts": [
+    "1.50",
+    "2.00",
+    "3.00",
+    "2.50"
+   ],
+   "correct": 3,
+   "explain": "Δs = −R ln(p₀,₂/p₀,₁), solved numerically for M₁.",
+   "src": "Anderson 6th, Problem 8.9",
+   "detail": "<p>p₀,₂/p₀,₁ = e^(−199.5/287) = 0.4990, corresponding to M₁ = 2.5000.</p>"
+  },
+  {
+   "q": "In a supersonic tunnel a Pitot tube reads 1.13 atm and the sidewall static pressure is 0.1 atm. The test-section Mach number is:",
+   "opts": [
+    "3.50",
+    "2.90",
+    "2.00",
+    "0.98"
+   ],
+   "correct": 1,
+   "explain": "Use the Rayleigh formula with p₀,₂/p₁ = 11.3.",
+   "src": "Anderson 6th, Problem 8.16"
+  }
+ ],
+ "generated": [
+  {
+   "q": "At M = 2 the ratio T₀/T is:",
+   "opts": [
+    "4.00",
+    "1.80",
+    "7.82",
+    "2.00"
+   ],
+   "correct": 1,
+   "explain": "1 + 0.2 × 4 = 1.8.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Across a normal shock the total temperature T₀:",
+   "opts": [
+    "becomes zero",
+    "decreases",
+    "stays the same",
+    "increases"
+   ],
+   "correct": 2,
+   "explain": "The flow is adiabatic so T₀ is constant; p₀ falls.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The Mach number behind a normal shock is always:",
+   "opts": [
+    "greater than 1",
+    "equal to M₁",
+    "less than 1",
+    "equal to 1"
+   ],
+   "correct": 2,
+   "explain": "A normal shock turns supersonic flow subsonic.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The speed of sound at 300 K (γ = 1.4, R = 287) is about:",
+   "opts": [
+    "486.1 m/s",
+    "300.0 m/s",
+    "347.2 m/s",
+    "340.3 m/s"
+   ],
+   "correct": 2,
+   "explain": "a = √(1.4 × 287 × 300) = 347.2.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A normal shock at M₁ = 1.0 is:",
+   "opts": [
+    "impossible",
+    "a wave of zero strength (a sound wave)",
+    "a wave giving M₂ = 0",
+    "the strongest possible shock"
+   ],
+   "correct": 1,
+   "explain": "M₂ = 1, p₂/p₁ = 1, no entropy rise.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The entropy rise across a normal shock at M₁ = 2.6, Δs = −R ln(p₀,₂/p₀,₁), is about:",
+   "opts": [
+    "0 J/(kg·K)",
+    "668 J/(kg·K)",
+    "74 J/(kg·K)",
+    "223 J/(kg·K)"
+   ],
+   "correct": 3,
+   "explain": "p₀,₂/p₀,₁ = 0.4601.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Why is incompressible Bernoulli badly wrong for a Pitot tube at M = 0.82?",
+   "opts": [
+    "Because density changes significantly as the flow is brought to rest",
+    "Because temperature falls",
+    "Because viscosity rises",
+    "Because the tube blocks"
+   ],
+   "correct": 0,
+   "explain": "Anderson 8.13: an error of about 9% in problem 8.11.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The total temperature at the stagnation point of an M = 2 flow at 230 K is:",
+   "opts": [
+    "920 K",
+    "414 K",
+    "460 K",
+    "322 K"
+   ],
+   "correct": 1,
+   "explain": "T₀ = 230 × 1.8 = 414 K.",
+   "src": "Supplementary (authored)"
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "etkin": [
+  {
+   "q": "Trị riêng Dutch roll của B747 là λ = −0,03301 ± 0,94655i. Chu kỳ là:",
+   "opts": [
+    "3,32 s",
+    "92,9 s",
+    "190 s",
+    "6,64 s"
+   ],
+   "correct": 3,
+   "explain": "T = 2π/ω.",
+   "src": "Etkin & Reid, mục 6.7",
+   "detail": "<p>T = 2π/0,94655 = 6,638 s (Etkin Bảng 6.8: 6,64 s).</p>"
+  },
+  {
+   "q": "Mode xoắn ốc có λ = −0,0072973. Thời gian giảm một nửa là:",
+   "opts": [
+    "95 s",
+    "137 s",
+    "285 s",
+    "9 s"
+   ],
+   "correct": 0,
+   "explain": "t½ = ln 2/|σ|.",
+   "src": "Etkin & Reid, mục 6.7",
+   "detail": "<p>t½ = 0,6931/0,0072973 = 95,0 s (Bảng 6.8: 95 s).</p>"
+  },
+  {
+   "q": "Mode hội tụ lăn có λ = −0,56248. Thời gian giảm một nửa là:",
+   "opts": [
+    "3,56 s",
+    "12,3 s",
+    "0,62 s",
+    "1,23 s"
+   ],
+   "correct": 3,
+   "explain": "t½ = ln 2/0,56248.",
+   "src": "Etkin & Reid, mục 6.7"
+  },
+  {
+   "q": "Số chu kỳ để Dutch roll giảm một nửa biên độ, N½ = t½/T, là:",
+   "opts": [
+    "3,16",
+    "9,49",
+    "1,05",
+    "21,00"
+   ],
+   "correct": 0,
+   "explain": "t½ = 21,0 s; T = 6,64 s.",
+   "src": "Etkin & Reid, mục 6.7"
+  },
+  {
+   "q": "Hệ số tắt dần ζ của Dutch roll B747 xấp xỉ:",
+   "opts": [
+    "0,387",
+    "0,500",
+    "0,035",
+    "0,000"
+   ],
+   "correct": 2,
+   "explain": "ζ = 0,03301/|λ| với |λ| = 0,947; tắt yếu.",
+   "src": "Etkin & Reid, mục 6.7"
+  },
+  {
+   "q": "Với đa thức λ⁴ + 0,6358λ³ + 0,9388λ² + 0,5114λ + 0,003682, tiêu chí R = BCD − D² − B²E xấp xỉ:",
+   "opts": [
+    "-0,0422",
+    "0,422",
+    "0,0422",
+    "0,0037"
+   ],
+   "correct": 2,
+   "explain": "R > 0 nên không có dao động mất ổn định.",
+   "src": "Etkin & Reid, mục 6.7"
+  },
+  {
+   "q": "Hệ số của λ³ (0,6358) bằng −ΣRe λ của bốn trị riêng. Giá trị tính từ trị riêng là:",
+   "opts": [
+    "0,3179",
+    "0,6358",
+    "0,0660",
+    "0,9388"
+   ],
+   "correct": 1,
+   "explain": "2(0,03301) + 0,56248 + 0,0072973.",
+   "src": "Etkin & Reid, Bài tập 6.4"
+  },
+  {
+   "q": "Mode nào của B747 chủ yếu là xoay ở trượt ngang gần bằng không (vòng nghiêng thật)?",
+   "opts": [
+    "Mode xoắn ốc",
+    "Phugoid",
+    "Hội tụ lăn",
+    "Dutch roll"
+   ],
+   "correct": 0,
+   "explain": "Etkin 6.7 mô tả mode này là vòng nghiêng thật.",
+   "src": "Etkin & Reid, mục 6.7 (Hình dạng mode)"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Dấu của C_nβ trong B747 là dương. Điều đó có nghĩa là:",
+   "opts": [
+    "ổn định ngang",
+    "mất ổn định hướng",
+    "mất ổn định dọc",
+    "ổn định hướng (đuôi đứng đưa mũi về hướng gió)"
+   ],
+   "correct": 3,
+   "explain": "C_nβ = +0,1946 trong Bảng 6.6.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "C_lp âm có nghĩa là:",
+   "opts": [
+    "không ảnh hưởng",
+    "ổn định hướng",
+    "tăng lăn",
+    "giảm lăn: tốc độ lăn tự tắt"
+   ],
+   "correct": 3,
+   "explain": "C_lp = −0,3295.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Thêm giảm xoay ΔN_r = 0,5 làm ζ của Dutch roll tăng từ 0,035 lên khoảng:",
+   "opts": [
+    "0,90",
+    "0,05",
+    "0,29",
+    "0,04"
+   ],
+   "correct": 2,
+   "explain": "Tính trực tiếp bằng trị riêng của A đã sửa.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Mode ngang nào có thời gian đặc trưng gần nhất với chu kỳ ngắn dọc?",
+   "opts": [
+    "Không mode nào",
+    "Hội tụ lăn (nhưng không dao động)",
+    "Dutch roll (6,6 s so với 7,1 s)",
+    "Xoắn ốc"
+   ],
+   "correct": 2,
+   "explain": "Cả hai là dao động nhanh, tắt dần.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Ổn định hướng quá mạnh so với ổn định ngang dẫn tới:",
+   "opts": [
+    "phugoid bất ổn",
+    "mất lực nâng",
+    "xoắn ốc nhanh chóng ổn định",
+    "Dutch roll tắt yếu"
+   ],
+   "correct": 3,
+   "explain": "Ngược lại, ổn định hướng yếu sinh xoắn ốc mất ổn định.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Vì sao mode xoắn ốc ổn định vẫn được xem là nguy hiểm tiềm tàng?",
+   "opts": [
+    "Vì nó chỉ xảy ra ở mặt đất",
+    "Vì nó chậm đến mức phi công không nhận ra máy bay đang nghiêng dần",
+    "Vì nó đòi hỏi bánh lái",
+    "Vì nó tăng biên độ nhanh"
+   ],
+   "correct": 1,
+   "explain": "t½ = 95 s.",
+   "src": "Bổ sung (biên soạn)"
+  }
+ ]
+}

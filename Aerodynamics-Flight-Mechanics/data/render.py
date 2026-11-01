@@ -5,7 +5,7 @@ sys.dont_write_bytecode = True
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 ROOT = os.path.dirname(HERE)
-MODS = ["content_01", "content_02", "content_03", "content_04"]
+MODS = ["content_01", "content_02", "content_03", "content_04", "content_05", "content_06", "content_07", "content_08"]
 import extras
 
 def ver():
@@ -19,7 +19,7 @@ VER = ver()
 T = {
  "vi": dict(site="Khí động lực học & Cơ học bay", sub="Tự học AE2.008 · USTH",
    hero="Tự học môn AE2.008: Khí động lực học và Cơ học bay",
-   hero_sub="4 module bám EASA Module 08 (Basic Aerodynamics), đối chiếu Anderson "
+   hero_sub="8 module bám EASA Module 08, mở rộng bằng Anderson và Etkin (Basic Aerodynamics), đối chiếu Anderson "
             "<i>Fundamentals of Aerodynamics</i> (6th) và Etkin &amp; Reid <i>Dynamics of Flight</i> (3rd). "
             "Có slide song ngữ kèm hình gốc, demo tương tác, quiz tự chấm, bài tập có lời giải và notebook Python.",
    open="Mở bài giảng →", back="← Trang chủ", other="English", part="PHẦN", fs="⛶ Toàn màn hình",
@@ -35,7 +35,7 @@ T = {
         "câu gốc ghi rõ nguồn, câu bổ sung gắn nhãn riêng."),
  "en": dict(site="Aerodynamics & Flight Mechanics", sub="Self-study AE2.008 · USTH",
    hero="Self-study AE2.008: Aerodynamics and Flight Mechanics",
-   hero_sub="4 modules following EASA Module 08 (Basic Aerodynamics), cross-referenced with Anderson "
+   hero_sub="8 modules following EASA Module 08, extended with Anderson and Etkin (Basic Aerodynamics), cross-referenced with Anderson "
             "<i>Fundamentals of Aerodynamics</i> (6th) and Etkin &amp; Reid <i>Dynamics of Flight</i> (3rd). "
             "Bilingual slides with original figures, live demos, self-graded quizzes, worked problems and Python notebooks.",
    open="Open lesson →", back="← Home", other="Tiếng Việt", part="PART", fs="⛶ Fullscreen",

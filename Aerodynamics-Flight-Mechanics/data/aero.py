@@ -85,3 +85,80 @@ def modes_b747():
 
 def lanchester_period(u0, g=G_FPS2):
     return math.pi * math.sqrt(2) * u0 / g
+
+# ---------------- Dong nen duoc (Anderson ch.7-9) ----------------
+R_SI = 287.0
+def T0_over_T(M, g=GAMMA): return 1 + (g - 1) / 2 * M * M
+def p0_over_p(M, g=GAMMA): return T0_over_T(M, g) ** (g / (g - 1))
+def rho0_over_rho(M, g=GAMMA): return T0_over_T(M, g) ** (1 / (g - 1))
+def mach_from_p0p(r, g=GAMMA):
+    lo, hi = 0.0, 20.0
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        if p0_over_p(mid, g) < r: lo = mid
+        else: hi = mid
+    return (lo + hi) / 2
+def normal_shock_p0(M1, g=GAMMA):
+    """p02/p01"""
+    r = (g + 1) * M1 ** 2 / ((g - 1) * M1 ** 2 + 2)
+    return r ** (g / (g - 1)) * ((g + 1) / (2 * g * M1 ** 2 - (g - 1))) ** (1 / (g - 1))
+def mach_from_shock_entropy(ds_over_R):
+    """ds/R = -ln(p02/p01) -> M1 (M1>1)"""
+    lo, hi = 1.0001, 20.0
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        if -math.log(normal_shock_p0(mid)) < ds_over_R: lo = mid
+        else: hi = mid
+    return (lo + hi) / 2
+def rayleigh_pitot_ratio(M1, g=GAMMA):
+    """p02/p1 sau song xung kich thang"""
+    return normal_shock_p0(M1, g) * p0_over_p(M1, g)
+def mach_from_rayleigh(r, g=GAMMA):
+    lo, hi = 1.0001, 30.0
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        if rayleigh_pitot_ratio(mid, g) < r: lo = mid
+        else: hi = mid
+    return (lo + hi) / 2
+def theta_beta_m(M, beta_rad, g=GAMMA):
+    return math.atan(2 / math.tan(beta_rad) * (M * M * math.sin(beta_rad) ** 2 - 1) / (M * M * (g + math.cos(2 * beta_rad)) + 2))
+def beta_from_theta(M, theta_rad, strong=False, g=GAMMA):
+    mu = math.asin(1 / M)
+    # theta(beta) tang tu 0 (beta=mu) den cuc dai roi giam ve 0 (beta=90)
+    bs = [mu + (math.pi / 2 - mu) * i / 20000 for i in range(1, 20000)]
+    ths = [theta_beta_m(M, b, g) for b in bs]
+    imax = max(range(len(ths)), key=lambda i: ths[i])
+    if theta_rad > ths[imax]: return None
+    rng = range(0, imax) if not strong else range(imax, len(bs) - 1)
+    lo, hi = (bs[0], bs[imax]) if not strong else (bs[imax], bs[-1])
+    for _ in range(100):
+        mid = (lo + hi) / 2
+        f = theta_beta_m(M, mid, g) - theta_rad
+        if (not strong and f < 0) or (strong and f > 0): lo = mid
+        else: hi = mid
+    return (lo + hi) / 2
+def oblique(M1, beta_rad, theta_rad=None, g=GAMMA):
+    Mn1 = M1 * math.sin(beta_rad)
+    M2n, p, rho, T = normal_shock(Mn1, g)
+    th = theta_beta_m(M1, beta_rad, g) if theta_rad is None else theta_rad
+    M2 = M2n / math.sin(beta_rad - th)
+    return {"Mn1": Mn1, "M2": M2, "p": p, "rho": rho, "T": T, "p0": normal_shock_p0(Mn1, g), "theta": th}
+def prandtl_meyer(M, g=GAMMA):
+    a = math.sqrt((g + 1) / (g - 1))
+    return a * math.atan(math.sqrt((M * M - 1) / a ** 2)) - math.atan(math.sqrt(M * M - 1))
+def mach_from_pm(nu, g=GAMMA):
+    lo, hi = 1.0, 60.0
+    for _ in range(200):
+        mid = (lo + hi) / 2
+        if prandtl_meyer(mid, g) < nu: lo = mid
+        else: hi = mid
+    return (lo + hi) / 2
+
+# ---------------- Dong luc bay ngang B747 (Etkin & Reid 3rd, tr.187, state [v, p, r, phi]) ----------------
+B747_LAT = [[-0.0558, 0.0, -774.0, 32.2], [-0.003865, -0.4342, 0.4136, 0.0], [0.001086, -0.006112, -0.1458, 0.0], [0.0, 1.0, 0.0, 0.0]]
+def modes_b747_lat():
+    import numpy as np
+    ev = np.linalg.eigvals(np.array(B747_LAT))
+    real = sorted([e.real for e in ev if abs(e.imag) < 1e-9])      # [roll convergence, spiral]
+    dr = [e for e in ev if e.imag > 1e-9][0]
+    return {"roll": real[0], "spiral": real[1], "dr": dr}

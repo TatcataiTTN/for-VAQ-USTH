@@ -1,0 +1,156 @@
+{
+ "anderson": [
+  {
+   "q": "Vòng xoáy tròn bán kính R, cường độ Γ. Vận tốc cảm ứng tại tâm vòng là:",
+   "opts": [
+    "Γ/(2R)",
+    "Γ/(4πR)",
+    "Γ/(2πR)",
+    "Γ/(πR)"
+   ],
+   "correct": 0,
+   "explain": "Tích phân Biot-Savart: mọi phần tử dl vuông góc r nên V = Γ/(4π) · 2πR/R² = Γ/(2R).",
+   "src": "Anderson 6th, Problem 5.1",
+   "detail": "<p>Kiểm số: R = 2, Γ = 1 cho 0,25000 (công thức 0,25000).</p>"
+  },
+  {
+   "q": "Với vòng xoáy bán kính R = 2 và Γ = 1, vận tốc cảm ứng trên trục tại A = 1,5 là:",
+   "opts": [
+    "0,0640",
+    "0,2500",
+    "0,1280",
+    "0,2560"
+   ],
+   "correct": 2,
+   "explain": "V = ΓR²/[2(R² + A²)^{3/2}].",
+   "src": "Anderson 6th, Problem 5.2",
+   "detail": "<p>= 4/[2 × (4 + 2,25)^1,5] = 0,12800; tích phân số cho 0,12800.</p>"
+  },
+  {
+   "q": "Cánh AR = 8, δ = τ = 0,055, biên dạng mỏng đối xứng a₀ = 2π, α = 5°. Hệ số lực nâng C_L là:",
+   "opts": [
+    "0,651",
+    "0,217",
+    "0,434",
+    "0,548"
+   ],
+   "correct": 2,
+   "explain": "a = a₀/[1 + (a₀/πAR)(1 + τ)] = 4,97/rad.",
+   "src": "Anderson 6th, Ví dụ 5.1",
+   "detail": "<p>a = 4,972/rad; C_L = a·α = 0,4339 (sách 0,4335). Biên dạng 2D sẽ cho 0,548, sai nhiều.</p>"
+  },
+  {
+   "q": "Cũng cánh trên, lực cản cảm ứng C_D,i = C_L²(1 + δ)/(πAR) bằng:",
+   "opts": [
+    "0,00790",
+    "0,02371",
+    "0,00263",
+    "0,00375"
+   ],
+   "correct": 0,
+   "explain": "(0,4339)²(1,055)/(8π).",
+   "src": "Anderson 6th, Ví dụ 5.1",
+   "detail": "<p>C_D,i = 0,00790 (sách 0,00789).</p>"
+  },
+  {
+   "q": "Cánh AR = 6, C_D,i = 0,01, δ = 0,055 cho C_L bằng:",
+   "opts": [
+    "0,423",
+    "0,845",
+    "0,188",
+    "0,179"
+   ],
+   "correct": 0,
+   "explain": "C_L² = πAR·C_D,i/(1 + δ).",
+   "src": "Anderson 6th, Ví dụ 5.2",
+   "detail": "<p>C_L² = π·6·0,01/1,055 = 0,1787; C_L = 0,423 (sách 0,423).</p>"
+  },
+  {
+   "q": "Biên dạng của hai cánh (AR = 6 và AR = 10) có a₀ xấp xỉ:",
+   "opts": [
+    "5,99 rad⁻¹",
+    "4,48 rad⁻¹",
+    "6,28 rad⁻¹",
+    "7,78 rad⁻¹"
+   ],
+   "correct": 0,
+   "explain": "Giải a = a₀/[1 + (1 + τ)a₀/(π AR)] cho a₀.",
+   "src": "Anderson 6th, Ví dụ 5.2",
+   "detail": "<p>a₀ = a/(1 − a(1 + τ)/(π·AR)) = 5,988/rad (sách 5,989). Giá trị này gần 2π nhưng nhỏ hơn một chút do độ dày.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Cánh elip, C_L = 0,5 và AR = 8. Góc tấn cảm ứng α_i bằng:",
+   "opts": [
+    "0,570°",
+    "3,581°",
+    "2,280°",
+    "1,140°"
+   ],
+   "correct": 3,
+   "explain": "α_i = C_L/(π·AR) = 0,0199 rad.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Giữ nguyên C_L, tăng AR từ 8 lên 12 thì C_D,i:",
+   "opts": [
+    "không đổi",
+    "giảm còn 4/9",
+    "tăng gấp 1,5",
+    "giảm còn 2/3"
+   ],
+   "correct": 3,
+   "explain": "C_D,i tỉ lệ nghịch với AR: 8/12.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Bay chậm hơn nhưng vẫn thẳng đều thì lực cản cảm ứng:",
+   "opts": [
+    "giảm vì tốc độ giảm",
+    "không đổi",
+    "bằng không",
+    "tăng vì C_L tăng"
+   ],
+   "correct": 3,
+   "explain": "C_D,i ∝ C_L² và C_L ∝ 1/V² nên D_i ∝ 1/V².",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Hệ số hiệu suất sải cánh e = 1/(1 + δ). Với δ = 0,055 thì e bằng:",
+   "opts": [
+    "1,055",
+    "0,055",
+    "0,948",
+    "0,890"
+   ],
+   "correct": 2,
+   "explain": "e = 1/1,055 = 0,948.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Với C_D,0 = 0,02, AR = 8, e = 0,85, (L/D)max = ½√(π e AR/C_D,0) xấp xỉ:",
+   "opts": [
+    "16,3",
+    "8,0",
+    "30,0",
+    "32,7"
+   ],
+   "correct": 0,
+   "explain": "Tại cực đại, C_D,i = C_D,0 nên C_D = 0,04 và C_L = 0,712.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Winglet chủ yếu làm gì?",
+   "opts": [
+    "Tăng độ dày cánh",
+    "Làm yếu xoáy đầu cánh, giảm lực cản cảm ứng",
+    "Giảm lực cản ma sát da",
+    "Tăng C_L max"
+   ],
+   "correct": 1,
+   "explain": "EASA Hình 2-20.",
+   "src": "Bổ sung (biên soạn)"
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "anderson": [
+  {
+   "q": "Tên lửa bay M = 1,5; sóng Mach từ mũi cắt mặt đất ở 559 ft phía sau mũi. Độ cao bay là:",
+   "opts": [
+    "559 ft",
+    "500 ft",
+    "625 ft",
+    "373 ft"
+   ],
+   "correct": 1,
+   "explain": "μ = arcsin(1/1,5) = 41,81°; h = 559 tan μ.",
+   "src": "Anderson 6th, Problem 9.1"
+  },
+  {
+   "q": "Sóng xiên β = 30° trong dòng M = 4. Thành phần Mach pháp tuyến M_n1 là:",
+   "opts": [
+    "3,46",
+    "4,00",
+    "0,50",
+    "2,00"
+   ],
+   "correct": 3,
+   "explain": "M_n1 = M₁ sin β.",
+   "src": "Anderson 6th, Problem 9.2"
+  },
+  {
+   "q": "Cũng bài 9.2 (p₁ = 2,65×10⁴ N/m²). Áp suất sau sóng p₂ là:",
+   "opts": [
+    "190800 N/m²",
+    "26500 N/m²",
+    "59625 N/m²",
+    "119250 N/m²"
+   ],
+   "correct": 3,
+   "explain": "p₂/p₁ = 4,5 ở M_n1 = 2.",
+   "src": "Anderson 6th, Problem 9.2"
+  },
+  {
+   "q": "Sóng β = 36,87°, M₁ = 3, p₁ = 1 atm. Áp suất toàn phần sau sóng, tính đúng, là:",
+   "opts": [
+    "29,9 atm",
+    "4,7 atm",
+    "41,8 atm",
+    "36,7 atm"
+   ],
+   "correct": 0,
+   "explain": "Dùng p₀,₂/p₀,₁ với M_n1 rồi nhân p₀,₁.",
+   "src": "Anderson 6th, Problem 9.4",
+   "detail": "<p>p₀,₁ = 36,73 atm; p₀,₂/p₀,₁ = 0,8127 nên p₀,₂ = 29,85 atm. Cách sai (p₀,₂/p₁) cho 4,67 atm.</p>"
+  },
+  {
+   "q": "Nêm nửa góc 22,2° trong dòng M₁ = 2,5. Góc sóng β (sóng yếu) là:",
+   "opts": [
+    "70,0°",
+    "22,2°",
+    "45,9°",
+    "23,6°"
+   ],
+   "correct": 2,
+   "explain": "Giải θ-β-M cho β nhỏ.",
+   "src": "Anderson 6th, Problem 9.5"
+  },
+  {
+   "q": "Tấm phẳng trong dòng M = 2,4; góc tấn lớn nhất còn sóng bám xấp xỉ:",
+   "opts": [
+    "28,7°",
+    "20,7°",
+    "90,0°",
+    "45,0°"
+   ],
+   "correct": 0,
+   "explain": "θ_max(M = 2,4) từ cực đại của hàm θ(β).",
+   "src": "Anderson 6th, Problem 9.6"
+  },
+  {
+   "q": "Góc quay lớn nhất mà dòng âm thanh (M = 1) có thể giãn nở bằng sóng Prandtl-Meyer là:",
+   "opts": [
+    "65,23°",
+    "90,00°",
+    "180,00°",
+    "130,45°"
+   ],
+   "correct": 3,
+   "explain": "ν(∞) = (√6 − 1)·90° = 130,45°.",
+   "src": "Anderson 6th, Problem 9.15"
+  },
+  {
+   "q": "Dòng M = 3, 1 atm giãn nở 20° rồi nén 20° trở lại phương ngang. Áp suất cuối khác 1 atm vì:",
+   "opts": [
+    "dòng nén được",
+    "sóng giãn nở mất áp suất toàn phần",
+    "góc quay hai lần khác nhau",
+    "sóng xung kích nén mất áp suất toàn phần"
+   ],
+   "correct": 3,
+   "explain": "Sóng giãn nở thuận nghịch, sóng xung kích thì không.",
+   "src": "Anderson 6th, Problem 9.20",
+   "detail": "<p>Sau giãn nở M = 4,318, p = 0,160 atm; sau nén M = 2,725, p = 0,918 atm.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Góc Mach ở M = 2 là:",
+   "opts": [
+    "30°",
+    "45°",
+    "60°",
+    "26,4°"
+   ],
+   "correct": 0,
+   "explain": "μ = arcsin(1/2) = 30°.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Hàm Prandtl-Meyer ν(2,0) xấp xỉ:",
+   "opts": [
+    "26,38°",
+    "52,76°",
+    "0,00°",
+    "30,00°"
+   ],
+   "correct": 0,
+   "explain": "ν(1) = 0 và ν tăng theo M.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Với tấm phẳng M = 2,6, α = 5°, c_l Ackeret = 4α/√(M²−1) xấp xỉ:",
+   "opts": [
+    "0,145",
+    "0,548",
+    "0,500",
+    "0,050"
+   ],
+   "correct": 0,
+   "explain": "2π α dành cho dòng không nén được.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Sóng giãn nở Prandtl-Meyer so với sóng xung kích về entropi:",
+   "opts": [
+    "giảm entropi",
+    "tăng entropi",
+    "tăng entropi nhiều hơn sóng thẳng",
+    "giữ entropi không đổi"
+   ],
+   "correct": 3,
+   "explain": "Sóng giãn nở đẳng entropi.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Với M₁ cố định, góc lệch dòng lớn hơn θ_max thì sóng xung kích:",
+   "opts": [
+    "trở thành sóng Mach",
+    "biến mất",
+    "trở thành sóng giãn nở",
+    "tách rời và cong trước vật"
+   ],
+   "correct": 3,
+   "explain": "Sóng bám chỉ tồn tại khi θ ≤ θ_max.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Trong hệ nhiều sóng ở M = 4, dùng thêm sóng xiên trước sóng thẳng làm p₀ còn lại:",
+   "opts": [
+    "bằng nhau",
+    "nhiều hơn",
+    "bằng không",
+    "ít hơn"
+   ],
+   "correct": 1,
+   "explain": "0,139 → 0,314 → 0,420.",
+   "src": "Bổ sung (biên soạn)"
+  }
+ ]
+}

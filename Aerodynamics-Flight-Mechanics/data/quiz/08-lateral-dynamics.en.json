@@ -1,0 +1,176 @@
+{
+ "etkin": [
+  {
+   "q": "The B747 Dutch-roll eigenvalue is λ = −0.03301 ± 0.94655i. The period is:",
+   "opts": [
+    "3.32 s",
+    "92.9 s",
+    "190 s",
+    "6.64 s"
+   ],
+   "correct": 3,
+   "explain": "T = 2π/ω.",
+   "src": "Etkin & Reid, sec. 6.7",
+   "detail": "<p>T = 2π/0.94655 = 6.638 s (Etkin Table 6.8: 6.64 s).</p>"
+  },
+  {
+   "q": "The spiral mode has λ = −0.0072973. The time to half amplitude is:",
+   "opts": [
+    "95 s",
+    "137 s",
+    "285 s",
+    "9 s"
+   ],
+   "correct": 0,
+   "explain": "t½ = ln 2/|σ|.",
+   "src": "Etkin & Reid, sec. 6.7",
+   "detail": "<p>t½ = 0.6931/0.0072973 = 95.0 s (Table 6.8: 95 s).</p>"
+  },
+  {
+   "q": "The roll-convergence mode has λ = −0.56248. The time to half amplitude is:",
+   "opts": [
+    "3.56 s",
+    "12.3 s",
+    "0.62 s",
+    "1.23 s"
+   ],
+   "correct": 3,
+   "explain": "t½ = ln 2/0.56248.",
+   "src": "Etkin & Reid, sec. 6.7"
+  },
+  {
+   "q": "The number of cycles for the Dutch roll to halve, N½ = t½/T, is:",
+   "opts": [
+    "3.16",
+    "9.49",
+    "1.05",
+    "21.00"
+   ],
+   "correct": 0,
+   "explain": "t½ = 21.0 s; T = 6.64 s.",
+   "src": "Etkin & Reid, sec. 6.7"
+  },
+  {
+   "q": "The damping ratio ζ of the B747 Dutch roll is about:",
+   "opts": [
+    "0.387",
+    "0.500",
+    "0.035",
+    "0.000"
+   ],
+   "correct": 2,
+   "explain": "ζ = 0.03301/|λ| with |λ| = 0.947; lightly damped.",
+   "src": "Etkin & Reid, sec. 6.7"
+  },
+  {
+   "q": "For the polynomial λ⁴ + 0.6358λ³ + 0.9388λ² + 0.5114λ + 0.003682 the criterion R = BCD − D² − B²E is about:",
+   "opts": [
+    "-0.0422",
+    "0.422",
+    "0.0422",
+    "0.0037"
+   ],
+   "correct": 2,
+   "explain": "R > 0 so there is no unstable oscillation.",
+   "src": "Etkin & Reid, sec. 6.7"
+  },
+  {
+   "q": "The λ³ coefficient (0.6358) equals −ΣRe λ of the four eigenvalues. The value computed from the eigenvalues is:",
+   "opts": [
+    "0.3179",
+    "0.6358",
+    "0.0660",
+    "0.9388"
+   ],
+   "correct": 1,
+   "explain": "2(0.03301) + 0.56248 + 0.0072973.",
+   "src": "Etkin & Reid, Exercise 6.4"
+  },
+  {
+   "q": "Which B747 mode is mainly yawing at nearly zero sideslip (a truly banked turn)?",
+   "opts": [
+    "The spiral mode",
+    "The phugoid",
+    "Roll convergence",
+    "The Dutch roll"
+   ],
+   "correct": 0,
+   "explain": "Etkin 6.7 describes this mode as a truly banked turn.",
+   "src": "Etkin & Reid, sec. 6.7 (mode shapes)"
+  }
+ ],
+ "generated": [
+  {
+   "q": "The sign of C_nβ for the B747 is positive. That means:",
+   "opts": [
+    "lateral stability",
+    "directional instability",
+    "longitudinal instability",
+    "directional stability (the fin turns the nose into the wind)"
+   ],
+   "correct": 3,
+   "explain": "C_nβ = +0.1946 in Table 6.6.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A negative C_lp means:",
+   "opts": [
+    "no effect",
+    "directional stability",
+    "roll amplification",
+    "roll damping: a roll rate damps itself"
+   ],
+   "correct": 3,
+   "explain": "C_lp = −0.3295.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Adding yaw damping ΔN_r = 0.5 raises the Dutch-roll ζ from 0.035 to about:",
+   "opts": [
+    "0.90",
+    "0.05",
+    "0.29",
+    "0.04"
+   ],
+   "correct": 2,
+   "explain": "Computed directly from the eigenvalues of the modified A.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Which lateral mode has a time scale closest to the longitudinal short period?",
+   "opts": [
+    "None",
+    "Roll convergence (but non-oscillatory)",
+    "The Dutch roll (6.6 s against 7.1 s)",
+    "The spiral"
+   ],
+   "correct": 2,
+   "explain": "Both are fast damped oscillations.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Directional stability that is too strong relative to lateral stability leads to:",
+   "opts": [
+    "an unstable phugoid",
+    "loss of lift",
+    "a quickly stable spiral",
+    "a lightly damped Dutch roll"
+   ],
+   "correct": 3,
+   "explain": "Conversely, weak directional stability produces a spiral instability.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Why can a stable spiral mode still be considered a potential hazard?",
+   "opts": [
+    "Because it happens only on the ground",
+    "Because it is so slow that the pilot may not notice the aircraft slowly banking",
+    "Because it requires rudder",
+    "Because it grows quickly"
+   ],
+   "correct": 1,
+   "explain": "t½ = 95 s.",
+   "src": "Supplementary (authored)"
+  }
+ ]
+}
