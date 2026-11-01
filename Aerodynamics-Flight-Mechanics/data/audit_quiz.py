@@ -14,3 +14,14 @@ n = total
 print("tong cau:", n, "| vi tri dung:", dict(sorted(pos.items())), "| ti le dap an dung la duy nhat dai nhat: %.0f%% (ky vong ~25%%)" % (100 * longest / n))
 # chi-square don gian cho vi tri (4 lua chon)
 exp = n / 4; chi = sum((pos[i] - exp) ** 2 / exp for i in range(4)); print("chi2 vi tri =", round(chi, 2), "(nguong 0.05 voi 3 bac tu do: 7.81)")
+
+# ---- kiem tra loi cau hoi: phuong an trung, dap an ngoai pham vi ----
+bad = 0
+for f in sorted(glob.glob("quiz/*.json")):
+    d = json.load(open(f, encoding="utf-8"))
+    for k, items in d.items():
+        for i, it in enumerate(items, 1):
+            o = [x.strip() for x in it["opts"]]
+            if len(set(o)) != len(o) or not (0 <= it["correct"] < len(o)) or len(o) < 3 or not it.get("explain"):
+                print("LOI", f, k, i, it["q"][:60], o); bad += 1
+print("kiem tra phuong an trung/thieu giai thich: %d loi" % bad)

@@ -6,7 +6,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 ROOT = os.path.dirname(HERE)
 MODS = ["content_01", "content_02", "content_03", "content_04", "content_05", "content_06", "content_07", "content_08"]
-import extras
+import extras, glossary
 
 def ver():
     h = hashlib.md5()
@@ -146,7 +146,7 @@ def home(lang, mods):
     t = T[lang]
     cards = "\n".join(f"""<a class="mod-card" href="modules/{m['slug']}/index.html"><span class="tag">{m['tag']}</span>
 <h3>MODULE {m['num']}: {m['title']}</h3><p style="color:var(--muted);font-size:.85rem">{m['src']}</p><span class="cta">{t['open']}</span></a>""" for m in mods)
-    body = f"""<div class="wrap"><div class="hero"><h1>{t['hero']}</h1><p>{t['hero_sub']}</p><p><a href="../chapter-mapping-{lang}.html">{t['map']}</a></p></div><div class="mod-grid">{cards}</div></div>"""
+    body = f"""<div class="wrap"><div class="hero"><h1>{t['hero']}</h1><p>{t['hero_sub']}</p><p><a href="../chapter-mapping-{lang}.html">{t['map']}</a> · <a href="glossary.html">{'📖 Thuật ngữ Việt–Anh' if lang == 'vi' else '📖 Bilingual glossary'}</a></p></div><div class="mod-grid">{cards}</div></div>"""
     return page(lang, "../", body, t["site"], re_strip(t["hero_sub"])).replace("__OTHER__", f"../{'en' if lang=='vi' else 'vi'}/index.html")
 
 def re_strip(s):
@@ -161,6 +161,29 @@ def mapping(lang, mods):
 <table class="chapmap"><thead><tr>{''.join(f'<th>{h}</th>' for h in head)}</tr></thead><tbody>{rows}</tbody></table></div>"""
     return page(lang, "./", body, f"{t['mapnav']} · {t['site']}", re_strip(t["mapintro"])).replace("__OTHER__", f"chapter-mapping-{'en' if lang=='vi' else 'vi'}.html")
 
+
+def glossary_page(lang):
+    t = T[lang]
+    ttl = "Thuật ngữ Việt–Anh" if lang == "vi" else "Bilingual glossary"
+    intro = ("Tra cứu khái niệm bằng tiếng Việt hoặc tiếng Anh (gõ không dấu cũng được). Mỗi mục ghi nguồn trong EASA Module 08, Anderson hoặc Etkin &amp; Reid và module có nội dung chi tiết." if lang == "vi" else
+             "Look up a concept in Vietnamese or English (accents optional). Every entry cites its source in EASA Module 08, Anderson or Etkin &amp; Reid and the module that covers it in detail.")
+    rows = []
+    for en, vi, den, dvi, src, mod in glossary.G:
+        a, b = (vi, en) if lang == "vi" else (en, vi)
+        d = dvi if lang == "vi" else den
+        rows.append(f"<div class='gl-item' data-q='{html.escape((en + ' ' + vi + ' ' + den + ' ' + dvi).lower(), quote=True)}'><h3>{a} <span class='gl-alt'>{b}</span></h3><p>{d}</p><p class='pill'>{src} · module {mod}</p></div>")
+    ph = "Tìm: ví dụ \"lực cản cảm ứng\" hoặc \"induced drag\"" if lang == "vi" else "Search: e.g. \"induced drag\" or \"lực cản cảm ứng\""
+    js = """<script>(function(){function n(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');}
+var items=[].slice.call(document.querySelectorAll('.gl-item'));items.forEach(function(e){e.dataset.n=n(e.dataset.q);});
+var inp=document.getElementById('gl-q'),cnt=document.getElementById('gl-n');
+function f(){var q=n(inp.value.trim()),k=0;items.forEach(function(e){var ok=!q||e.dataset.n.indexOf(q)>=0;e.style.display=ok?'':'none';if(ok)k++;});cnt.textContent=k+' / '+items.length;}
+inp.addEventListener('input',f);f();})();</script>"""
+    body = f"""<div class="wrap"><p><a href="index.html">{t['back']}</a></p><div class="hero"><h1>{ttl}</h1><p>{intro}</p></div>
+<p><input id="gl-q" type="search" placeholder="{ph}" style="width:100%;padding:10px 12px;font-size:1rem;border:1px solid var(--border);border-radius:8px;background:var(--panel);color:var(--text)"/> <span id="gl-n" class="pill"></span></p>
+<style>.gl-item{{border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin:10px 0;background:var(--panel)}}.gl-item h3{{margin:0 0 4px;font-size:1.02rem}}.gl-alt{{color:var(--muted);font-weight:400;font-size:.9rem}}.gl-item p{{margin:4px 0}}</style>
+{''.join(rows)}</div>{js}"""
+    return page(lang, "../", body, f"{ttl} · {t['site']}", intro.replace("&amp;", "&")).replace("__OTHER__", f"../{'en' if lang == 'vi' else 'vi'}/glossary.html")
+
 def main():
     built = {}
     for lang in ("vi", "en"):
@@ -173,6 +196,7 @@ def main():
     for lang in ("vi", "en"):
         mods = built[lang]
         open(os.path.join(ROOT, lang, "index.html"), "w", encoding="utf-8").write(home(lang, mods))
+        open(os.path.join(ROOT, lang, "glossary.html"), "w", encoding="utf-8").write(glossary_page(lang))
         for m in mods:
             d = os.path.join(ROOT, lang, "modules", m["slug"]); os.makedirs(d, exist_ok=True)
             open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(module_page(lang, m))

@@ -28,3 +28,15 @@ Xem `chapter-mapping-vi.html`.
 - Bài ch.3, 4, 5, 8, 11 của Anderson chưa đối chiếu với Solution Manual (chỉ ch.1 đã đối chiếu từ ảnh trang).
 - EASA Sub-module 04: câu hỏi in đánh số 4-1, 4-2, 4-5, 4-6 nhưng đáp án in đánh số 4-1 đến 4-4; site ghép theo nội dung.
 - Hình trên slide là các hình EASA cắt từ bản scan (không dùng cả trang) kèm số trang gốc.
+
+## Đối chiếu Solution Manual của Anderson (bản 4th, đọc từ ảnh trang)
+Khớp: 1.1, 1.11, 1.12 · 3.3, 3.4, 3.6, 3.7, 3.18 · 4.2, 4.5 · 7.1, 7.4, 7.5 · 8.1, 8.3, 8.5, 8.7, 8.8, 8.9, 8.10, 8.11, 8.13, 8.16 · 9.1, 9.2, 9.4, 9.6, 9.8, 9.13 (5°, 15°).
+Khác biệt đã xử lý:
+- 4.1: SM dùng c_l = 0,64, c_m = −0,036 (L' = 3,80 lb/ft, M' = −0,428); notebook 02 đã sửa theo đó.
+- 1.12: SM ghi nhầm L = 3487 N ở dòng giữa (đúng 3847 N), đáp án cuối vẫn đúng.
+- 9.5: bản 4th dùng nêm 22,5°, bản 6th dùng 22,2°; site theo bản 6th (β = 45,89°, p₂ = 3,592 atm).
+- 9.13 ở α = 30°: SM ghi c_l = 1,19 và c_d,w = 0,687 vì bỏ cos α; đúng là 1,02 và 0,59.
+- 9.8: SM đọc đồ thị nên lệch dưới 1% so với tính trực tiếp.
+Không đối chiếu được: ch.5 (SM không có), 4.10–4.12, 5.4, 5.5, 9.15, 9.20, 11.4 (đánh số khác giữa các bản); các bài này kiểm bằng hai đường tính độc lập (công thức và nghiệm số, notebook).
+## Kiểm tra tự động
+`audit_quiz.py` kiểm: cân bằng vị trí đáp án, đáp án đúng không luôn dài nhất, không có hai phương án trùng nhau, mọi câu có giải thích. Lần kiểm này bắt được 2 câu có phương án trùng (Bài 5.4 và một câu ζ) và đã sửa.

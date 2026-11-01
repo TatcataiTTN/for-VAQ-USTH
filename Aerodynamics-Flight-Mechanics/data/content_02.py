@@ -258,8 +258,8 @@ def build(lang):
         {"key": "anderson", "title": L("Sách 2: Anderson, bài tập cuối chương 1, 3, 4 (đáp án tính lại bằng Python)", "Book 2: Anderson, end-of-chapter problems from ch. 1, 3, 4 (answers recomputed in Python)"), "items": book},
         {"key": "generated", "title": L("Câu luyện tập bổ sung (biên soạn thêm, đáp án tự kiểm chứng bằng tính toán)", "Additional practice (authored, answers self-verified by computation)"), "items": gen},
     ]
-    m["problems_intro"] = L("Bốn nhóm bài của Anderson giải từng bước. Số liệu lấy từ bản 6th (mục 1.17, 3.24, 4.18); lời giải do module tự tính bằng Python; các bài chương 3 và 4 chưa đối chiếu với Solution Manual bản 4th.",
-                            "Four Anderson problem groups solved step by step. Data come from the 6th edition (sec. 1.17, 3.24, 4.18); solutions are recomputed in Python; the chapter 3 and 4 problems have not been compared with the 4th-edition Solution Manual.")
+    m["problems_intro"] = L("Bốn nhóm bài của Anderson giải từng bước. Số liệu lấy từ bản 6th (mục 1.17, 3.24, 4.18); lời giải do module tự tính bằng Python và đối chiếu Solution Manual (bản 4th) cho các bài 3.3, 3.4, 3.6, 3.7, 3.18, 4.2, 4.5 (khớp); bài 4.10–4.12 theo đề bản 6th không có tương ứng trong bản 4th nên chưa đối chiếu.",
+                            "Four Anderson problem groups solved step by step. Data come from the 6th edition (sec. 1.17, 3.24, 4.18); solutions are recomputed in Python and compared with the 4th-edition Solution Manual for problems 3.3, 3.4, 3.6, 3.7, 3.18, 4.2, 4.5 (all agree); problems 4.10–4.12 follow the 6th-edition wording with no counterpart in the 4th and have not been compared.")
     m["problems"] = [
         {"num": "1.5", "src": "Anderson 6th, Problem 1.5", "q": L("Biên dạng ở α = 12°, c_n = 1,2, c_a = 0,03. Tính c_l và c_d.", "Airfoil at α = 12°, c_n = 1.2, c_a = 0.03. Find c_l and c_d."),
          "ans": L(f"<p>c_l = c_n cos α − c_a sin α = <b>{N(cl15, 3)}</b>.</p><p>c_d = c_n sin α + c_a cos α = <b>{N(cd15, 3)}</b>.</p>", f"<p>c_l = c_n cos α − c_a sin α = <b>{N(cl15, 3)}</b>.</p><p>c_d = c_n sin α + c_a cos α = <b>{N(cd15, 3)}</b>.</p>")},

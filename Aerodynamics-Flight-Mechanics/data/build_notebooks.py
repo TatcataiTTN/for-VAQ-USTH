@@ -122,7 +122,7 @@ slope = np.polyfit(alpha[:6], cl_t[:6], 1); print("lift slope = %.4f /deg (2*pi/
 c = 2.0; q = 0.5*1.23*50**2; cl42 = 1353/(q*c); print("4.2 cl =", round(cl42, 3)); assert abs(cl42-0.44) < 1e-9
 assert alpha[np.argmin(abs(cl_t-cl42))] == 2          # alpha = 2 deg
 # 4.1 (cl and cm at 4 deg from Problem 4.10)
-q1 = 0.5*0.002377*50**2; L1 = q1*2*0.65; M1 = q1*4*(-0.037); print(f"4.1 L' = {L1:.3f} lb/ft, M'c/4 = {M1:.4f} ft lb/ft"); assert abs(L1-3.863) < 0.01
+q1 = 0.5*0.002377*50**2; L1 = q1*2*0.64; M1 = q1*4*(-0.036); print(f"4.1 L' = {L1:.3f} lb/ft, M'c/4 = {M1:.4f} ft lb/ft"); assert abs(L1-3.80) < 0.01 and abs(M1+0.428) < 0.002   # c_l=0.64, c_m=-0.036 at 4 deg (table of Problem 1.6); matches the Solution Manual 3.80 / -0.428
 # 4.5 thin symmetric airfoil
 cl45 = 2*math.pi*math.radians(1.5); cm45 = -cl45/4; print(f"4.5 cl = {cl45:.4f}, cm,LE = {cm45:.4f}"); assert abs(cl45-0.1645) < 1e-4
 # 4.10 aerodynamic centre
