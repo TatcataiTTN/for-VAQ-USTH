@@ -1,0 +1,192 @@
+{
+ "easa": [
+  {
+   "q": "Áp suất khí quyển được đo bằng dụng cụ gọi là:",
+   "opts": [
+    "khí áp kế (barometer)",
+    "tốc kế (tachometer)",
+    "ẩm kế (hygrometer)",
+    "nhiệt kế (thermometer)"
+   ],
+   "correct": 0,
+   "explain": "Khí áp kế thủy ngân đo áp suất theo inch thủy ngân (EASA tr. 1.2).",
+   "src": "EASA M08 Q1-1 (tr. 1.7, đáp án tr. 1.8)"
+  },
+  {
+   "q": "Máy bay có thể bay ____ ở độ cao lớn, nơi mật độ không khí thấp, so với độ cao thấp nơi mật độ lớn hơn.",
+   "opts": [
+    "nhanh hơn",
+    "lâu hơn",
+    "cao hơn",
+    "chậm hơn"
+   ],
+   "correct": 0,
+   "explain": "Ít hạt khí hơn trên mỗi đơn vị thể tích nên lực cản nhỏ hơn (EASA tr. 1.4).",
+   "src": "EASA M08 Q1-2 (tr. 1.7, đáp án tr. 1.8)"
+  },
+  {
+   "q": "Phần lớn hàng không dân dụng diễn ra ở tầng nào của khí quyển?",
+   "opts": [
+    "Tầng bình lưu (stratosphere)",
+    "Tầng đối lưu (troposphere)",
+    "Tầng trung quyển (mesosphere)",
+    "Tầng nhiệt quyển (thermosphere)"
+   ],
+   "correct": 1,
+   "explain": "Nhiệt độ giảm theo độ cao trong tầng đối lưu, nơi diễn ra hầu hết hàng không dân dụng (EASA tr. 1.5).",
+   "src": "EASA M08 Q1-3 (tr. 1.7, đáp án tr. 1.8)"
+  }
+ ],
+ "anderson": [
+  {
+   "q": "Tại một điểm trên cánh Boeing 727, áp suất 1,9×10⁴ N/m² và nhiệt độ 203 K. Mật độ không khí tại điểm này (R = 287 J/(kg·K)) là:",
+   "opts": [
+    "0,326 kg/m³",
+    "0,148 kg/m³",
+    "3,07 kg/m³",
+    "0,620 kg/m³"
+   ],
+   "correct": 0,
+   "explain": "ρ = p/(RT) = 1,9×10⁴/(287 × 203).",
+   "src": "Anderson 6th, Problem 1.1a",
+   "detail": "<p>ρ = 1,9×10⁴/(287 × 203) = 1,9×10⁴/58 261 = 0,326 kg/m³. Solution Manual in cùng giá trị 0,326.</p>"
+  },
+  {
+   "q": "Trong buồng thử của hầm gió siêu âm, p = 1058 lb/ft² và ρ = 1,23×10⁻³ slug/ft³. Nhiệt độ tại đó (R = 1716 ft·lb/(slug·°R)) là:",
+   "opts": [
+    "501 °R",
+    "311 °R",
+    "852 °R",
+    "41 °R"
+   ],
+   "correct": 0,
+   "explain": "T = p/(ρR) = 1058/(1,23×10⁻³ × 1716).",
+   "src": "Anderson 6th, Problem 1.1b",
+   "detail": "<p>T = 1058/2,1107 = 501 °R, khoảng 41 °F hay 278 K. Rankine là thang nhiệt độ tuyệt đối.</p>"
+  },
+  {
+   "q": "Áp kế chữ U thủy ngân nối với mô hình hầm gió; phía kia thông khí quyển (1,01×10⁵ N/m²). Hai cột thủy ngân chênh 20 cm, cột cao ở phía mô hình. Áp suất trên cánh là (ρ_Hg = 1,36×10⁴ kg/m³, g = 9,8 m/s²):",
+   "opts": [
+    "10,10×10⁴ N/m²",
+    "12,77×10⁴ N/m²",
+    "2,67×10⁴ N/m²",
+    "7,43×10⁴ N/m²"
+   ],
+   "correct": 3,
+   "explain": "Cột thủy ngân cao hơn nằm ở phía áp suất thấp hơn, nên p_mô hình = p_khí quyển − ρgh.",
+   "src": "Anderson 6th, Problem 1.11",
+   "detail": "<p>p = 1,01×10⁵ − (1,36×10⁴)(9,8)(0,2) = 1,01×10⁵ − 26656 = 74344 N/m². Khớp đáp án 7,43×10⁴ trong Solution Manual. Sai lầm phổ biến là cộng thay vì trừ.</p>"
+  },
+  {
+   "q": "Zeppelin thể tích 15 000 m³, đường kính lớn nhất 14 m, bay thẳng đều 30 m/s ở độ cao chuẩn 1 000 m (ρ = 1,1117 kg/m³) với C_L = 0,05 (tính theo tiết diện ngang lớn nhất). Tổng trọng lượng là:",
+   "opts": [
+    "3,268×10⁵ N",
+    "1,673×10⁵ N",
+    "1,596×10⁵ N",
+    "3850 N"
+   ],
+   "correct": 1,
+   "explain": "W = lực đẩy Archimedes B + lực nâng khí động L.",
+   "src": "Anderson 6th, Problem 1.12",
+   "detail": "<p>B = 15 000 × 1,1117 × 9,8 = 163411 N; q = ½ρV² = 500,2 Pa; S = πd²/4 = 153,9 m²; L = qSC_L = 3850 N; W = B + L = 167262 N. Chỉ tính lực nâng khí động sẽ ra đáp án sai (3850 N).</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Tại 40 000 ft theo ISA, áp suất còn khoảng bao nhiêu so với mực biển?",
+   "opts": [
+    "50% (7,3 psi)",
+    "33% (4,9 psi)",
+    "2% (0,3 psi)",
+    "19% (2,72 psi)"
+   ],
+   "correct": 3,
+   "explain": "Áp suất giảm theo hàm mũ chứ không tuyến tính; công thức ISA cho 2,72 psi.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Nhiệt độ ISA ở tropopause (11 000 m) là:",
+   "opts": [
+    "-56,5 °C",
+    "−90 °C",
+    "0 °C",
+    "−40 °C"
+   ],
+   "correct": 0,
+   "explain": "15 − 6,5 × 11 = −56,5 °C, EASA làm tròn −57 °C.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Nhiệt độ ISA ở 30 000 ft (tầng đối lưu) xấp xỉ:",
+   "opts": [
+    "-69,4 °C",
+    "15 °C",
+    "-19,4 °C",
+    "-44,4 °C"
+   ],
+   "correct": 3,
+   "explain": "15 °C − 6,5 K/km × 9,144 km ≈ −44,4 °C, tương đương −2 °C mỗi 1 000 ft.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Giữ áp suất không đổi và tăng nhiệt độ tuyệt đối gấp đôi thì mật độ:",
+   "opts": [
+    "tăng gấp đôi",
+    "giảm một nửa",
+    "giảm còn một phần tư",
+    "không đổi"
+   ],
+   "correct": 1,
+   "explain": "ρ = p/(RT): T gấp đôi thì ρ giảm một nửa.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Vì sao không khí ẩm có mật độ thấp hơn không khí khô ở cùng p và T?",
+   "opts": [
+    "Hơi nước làm tăng áp suất khí quyển",
+    "Hơi nước nặng hơn nhưng nở ra nhiều hơn",
+    "Phân tử nước nhẹ hơn phân tử N₂ và O₂ mà nó thay thế",
+    "Hơi nước làm tăng nhiệt độ không khí"
+   ],
+   "correct": 2,
+   "explain": "EASA: hơi nước nặng khoảng 5/8 không khí khô cùng thể tích.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Tại tropopause ISA (36 089 ft), mật độ so với mực biển xấp xỉ:",
+   "opts": [
+    "0,10",
+    "0,70",
+    "0,50",
+    "0,30"
+   ],
+   "correct": 3,
+   "explain": "σ = 0,3639/1,225 ≈ 0,30.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "1 atm bằng bao nhiêu hPa?",
+   "opts": [
+    "760",
+    "29,92",
+    "14,7",
+    "1013,25"
+   ],
+   "correct": 3,
+   "explain": "760 là mmHg, 14,7 là psi, 29,92 là inHg: cùng áp suất, khác đơn vị.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Ngày nóng và ẩm tại sân bay cao thì quãng đường cất cánh:",
+   "opts": [
+    "dài hơn vì mật độ thấp",
+    "không đổi vì ISA cố định",
+    "ngắn hơn vì lực cản giảm",
+    "ngắn hơn vì không khí nhẹ"
+   ],
+   "correct": 0,
+   "explain": "Mật độ thấp giảm lực nâng và lực đẩy; lực cản giảm nhưng không bù được.",
+   "src": "Bổ sung (biên soạn)"
+  }
+ ]
+}

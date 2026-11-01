@@ -1,0 +1,119 @@
+.mdeck{border:1px solid var(--border);border-radius:var(--radius);background:var(--panel);overflow:hidden;margin:18px 0;outline:none}
+.mdeck-viewport{position:relative;min-height:360px}
+.mdeck-slide{display:none;padding:28px 30px 20px;min-height:360px}
+.mdeck-slide.active{display:block;animation:mdeckIn .18s ease}
+
+/* Fullscreen: element phai tu lap day man hinh (flex column), khong de trong
+   o duoi thanh dieu huong nhu khi chi co min-height co dinh. */
+.mdeck:fullscreen,.mdeck:-webkit-full-screen{
+  display:flex;flex-direction:column;width:100vw;height:100vh;
+  border-radius:0;border:none;background:var(--panel);margin:0;
+}
+.mdeck:fullscreen .mdeck-viewport,.mdeck:-webkit-full-screen .mdeck-viewport{
+  flex:1 1 auto;min-height:0;display:flex;overflow:auto;
+}
+.mdeck:fullscreen .mdeck-slide,.mdeck:-webkit-full-screen .mdeck-slide{
+  flex:1 1 auto;width:100%;min-height:0;display:none;
+  align-items:center;justify-content:center;
+}
+.mdeck:fullscreen .mdeck-slide.active,.mdeck:-webkit-full-screen .mdeck-slide.active{
+  display:flex;flex-direction:column;justify-content:center;
+  max-width:980px;margin:0 auto;padding:40px 48px;
+}
+.mdeck:fullscreen .mdeck-slide.part-divider.active,
+.mdeck:-webkit-full-screen .mdeck-slide.part-divider.active{
+  align-items:center;text-align:center;
+}
+.mdeck:fullscreen .mdeck-bar,.mdeck:-webkit-full-screen .mdeck-bar{flex:0 0 auto}
+@keyframes mdeckIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.mdeck-slide .kicker{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.mdeck-slide h2{margin:6px 0 12px;font-size:1.35rem}
+.mdeck-slide h3{margin:14px 0 8px;font-size:1.08rem}
+.mdeck-slide p{margin:8px 0}
+.mdeck-slide.part-divider{display:none;background:linear-gradient(135deg,var(--code),var(--panel));text-align:center;padding-top:44px}
+.mdeck-slide.part-divider.active{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.part-num{font-size:2.6rem;font-weight:900;color:var(--accent);opacity:.35;line-height:1}
+.part-list{list-style:none;padding:0;margin:14px 0 0;display:inline-block;text-align:left}
+.part-list li{padding:5px 0 5px 22px;position:relative}
+.part-list li::before{content:"›";position:absolute;left:0;color:var(--accent);font-weight:900}
+.mdeck-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;border-top:1px solid var(--border);background:var(--code)}
+.mdeck-bar button{border:1px solid var(--border);background:var(--panel);color:var(--text);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:.85rem}
+.mdeck-bar button:disabled{opacity:.4;cursor:default}
+.mdeck-count{font-size:.8rem;color:var(--muted);min-width:44px;text-align:center}
+.mdeck-dots{display:flex;gap:5px;flex-wrap:wrap;flex:1}
+.mdeck-dots button{width:9px;height:9px;padding:0;border-radius:50%;border:none;background:var(--border)}
+.mdeck-dots button.on{background:var(--accent)}
+.mdeck-fs{margin-left:auto}
+
+.qitem{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:12px 0;background:var(--panel)}
+.qitem .opt{display:block;width:100%;text-align:left;padding:9px 12px;margin:6px 0;border:1px solid var(--border);
+  border-radius:9px;background:var(--code);color:var(--text);cursor:pointer;font-size:.92rem}
+.qitem .opt:hover{border-color:var(--accent)}
+.qitem .opt.correct{background:color-mix(in srgb, var(--good) 22%, var(--code));border-color:var(--good);font-weight:700}
+.qitem .opt.wrong{background:color-mix(in srgb, var(--bad) 20%, var(--code));border-color:var(--bad)}
+.qitem .explain{display:none;margin-top:8px;font-size:.86rem;color:var(--muted);border-top:1px dashed var(--border);padding-top:8px}
+.qitem .explain.show{display:block}
+.qitem .explain-detail{display:none;margin-top:8px}
+.qitem .explain-detail.show{display:block}
+.qitem .explain-detail summary{cursor:pointer;font-size:.82rem;font-weight:700;color:var(--accent);padding:4px 0;list-style:none}
+.qitem .explain-detail summary::-webkit-details-marker{display:none}
+.qitem .explain-detail summary::before{content:"▸ ";display:inline-block;transition:transform .15s}
+.qitem .explain-detail[open] summary::before{transform:rotate(90deg)}
+.qitem .explain-detail-body{margin-top:6px;padding:10px 12px;background:var(--code);border-radius:8px;font-size:.86rem;line-height:1.6;color:var(--text)}
+.qitem .explain-detail-body p{margin:0 0 8px}
+.qitem .explain-detail-body p:last-child{margin-bottom:0}
+.qitem .explain-detail-body table.tt{margin:8px 0;font-size:.82rem}
+.quiz-score{font-weight:800;margin:10px 0}
+.quiz-restart{border:1px solid var(--border);background:var(--panel);border-radius:10px;padding:8px 16px;cursor:pointer;font-weight:700}
+
+.slide-fig{margin:12px 0;text-align:center}
+.slide-fig img{max-width:100%;max-height:360px;border:1px solid var(--border);border-radius:8px;background:#fff;padding:4px;cursor:zoom-in}
+.slide-fig figcaption{font-size:.72rem;color:var(--muted);margin-top:4px}
+.slide-explain{margin-top:14px;border:1px solid var(--border);border-radius:10px;background:var(--code)}
+.slide-explain summary{cursor:pointer;font-weight:800;font-size:.9rem;color:var(--accent);padding:9px 14px;list-style:none}
+.slide-explain summary::-webkit-details-marker{display:none}
+.slide-explain summary::before{content:"▸ ";display:inline-block;transition:transform .15s}
+.slide-explain[open] summary::before{transform:rotate(90deg)}
+.slide-explain-body{padding:2px 16px 12px;font-size:.92rem;line-height:1.65}
+.slide-explain-body p{margin:8px 0}
+.mdeck-slide{overflow-y:auto}
+.mdeck:fullscreen .slide-fig img,.mdeck:-webkit-full-screen .slide-fig img{max-height:48vh}
+
+/* Moi kich thuoc theo em de chu tu co gian theo font-size cua slide (deck.js fit()), ca thuong lan toan man hinh */
+.mdeck-slide h2{font-size:1.4em;line-height:1.25}
+.mdeck-slide h3{font-size:1.12em}
+.mdeck-slide .kicker{font-size:.62em}
+.mdeck-slide .pd-formula-math{font-size:1.15em}
+.mdeck-slide .pd-formula-label{font-size:.62em}
+.mdeck-slide table.tt{font-size:.9em}
+.mdeck-slide .slide-explain summary{font-size:.85em}
+.mdeck-slide .slide-explain-body{font-size:.85em}
+.mdeck-slide .slide-fig figcaption{font-size:.55em}
+.mdeck:fullscreen .mdeck-slide,.mdeck:-webkit-full-screen .mdeck-slide{max-width:1200px}
+.mdeck:fullscreen .slide-fig img,.mdeck:-webkit-full-screen .slide-fig img{max-height:42vh}
+
+/* Cau hoi tu luan: cau hoi go tay bang HTML, dap an la anh chup that tu sach */
+.essay-item{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:12px 0;background:var(--panel)}
+.essay-q{line-height:1.7}
+.essay-intro{font-size:.88rem;color:var(--muted);margin:6px 0 14px}
+.essay-answer{margin-top:10px;border-top:1px dashed var(--border);padding-top:8px}
+.essay-answer summary{cursor:pointer;font-weight:700;font-size:.88rem;color:var(--accent);list-style:none}
+.essay-answer summary::-webkit-details-marker{display:none}
+.essay-answer-body{margin-top:10px}
+.essay-answer-body img{max-width:100%;border:1px solid var(--border);border-radius:8px;background:#fff;padding:6px}
+
+.ov{border-top:1.5px solid currentColor;padding-top:1px}
+.essay-orig{font-size:.9rem;color:var(--muted);margin:2px 0 6px}
+
+.essay-qfig{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}
+.essay-qfig img{max-width:100%;max-height:300px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:4px;cursor:zoom-in}
+.essay-note{font-size:.86rem;color:var(--muted);margin:4px 0}
+/* demo tương tác (module 07) */
+.demo-box{border:1px solid var(--line,#ccd);border-radius:12px;padding:14px 16px;margin:18px 0;background:var(--panel,#fff)}
+.demo-box h3{margin:0 0 8px}
+.di-row{margin:8px 0}.di-row label{display:block;font-size:.85rem;font-weight:700;margin-bottom:4px}
+.di-in{width:100%;font-family:ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--line,#ccd);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}
+.di-btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.di-btns button,.dal-sel{padding:7px 12px;border-radius:8px;border:1px solid var(--line,#ccd);background:var(--code,#f6f7fb);color:inherit;cursor:pointer}
+.di-t .m{font-family:ui-monospace,Menlo,monospace}.di-vs.warn,.di-vc.warn{color:#b45309;font-weight:700}.di-vs.good,.di-vc.good{color:#15803d;font-weight:700}
+.fb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;margin:8px 0}.fb-grid label{font-size:.8rem;font-weight:700;display:flex;flex-direction:column;gap:3px}
+.fb-grid input[type=number]{padding:6px;border:1px solid var(--line,#ccd);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}.fb-cv{max-width:100%;border:1px solid var(--line,#ccd);border-radius:10px}
