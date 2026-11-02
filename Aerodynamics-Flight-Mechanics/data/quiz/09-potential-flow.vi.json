@@ -1,0 +1,167 @@
+{
+ "anderson": [
+  {
+   "q": "Hình trụ không nâng. Hệ số áp suất trên mặt tại θ = 90° là:",
+   "opts": [
+    "-3",
+    "1",
+    "-1",
+    "-2"
+   ],
+   "correct": 0,
+   "explain": "C_p = 1 − (V/V∞)², V = 2V∞ sin θ.",
+   "src": "Anderson 6th, Problem 3.15",
+   "detail": "<p>Trên mặt V_θ = −2V∞ sin θ nên V²/V∞² = 4 sin²θ; tại 90° bằng 4, C_p = 1 − 4 = −3.</p>"
+  },
+  {
+   "q": "Dòng không nâng quanh hình trụ: nếu V∞ tăng gấp đôi, hình dạng đường dòng:",
+   "opts": [
+    "không đổi",
+    "đổi vì áp suất đổi",
+    "đổi chỉ ở xa vật",
+    "đổi chỉ gần vật"
+   ],
+   "correct": 0,
+   "explain": "V_r và V_θ đều tỉ lệ với V∞ nên hướng vận tốc tại mỗi điểm không đổi.",
+   "src": "Anderson 6th, Problem 3.16"
+  },
+  {
+   "q": "Dòng quanh hình trụ có lưu số Γ cố định: nếu V∞ tăng gấp đôi, hình dạng đường dòng:",
+   "opts": [
+    "không đổi",
+    "chỉ co lại theo tỉ lệ",
+    "chỉ đảo chiều",
+    "thay đổi"
+   ],
+   "correct": 3,
+   "explain": "V_θ có thêm số hạng Γ/(2πr) không tỉ lệ với V∞.",
+   "src": "Anderson 6th, Problem 3.17"
+  },
+  {
+   "q": "Hình trụ quay, V∞ = 30 m/s, ρ = 1,23 kg/m³, lực nâng 6 N/m. Lưu số là:",
+   "opts": [
+    "0,163 m²/s",
+    "0,325 m²/s",
+    "0,200 m²/s",
+    "0,081 m²/s"
+   ],
+   "correct": 0,
+   "explain": "Γ = L′/(ρV∞).",
+   "src": "Anderson 6th, Problem 3.18",
+   "detail": "<p>Γ = 6/(1,23 × 30) = 0,1626 m²/s. Solution Manual: 0,163.</p>"
+  },
+  {
+   "q": "Cột chống 25 ft đường kính 2 in, bay 120 mi/h mực biển (ρ = 0,002377 slug/ft³), lấy C_D = 1 theo diện tích chắn. Lực cản của các cột là:",
+   "opts": [
+    "153 lb",
+    "23 lb",
+    "77 lb",
+    "307 lb"
+   ],
+   "correct": 0,
+   "explain": "D = q S C_D với S = chiều dài × đường kính.",
+   "src": "Anderson 6th, Problem 3.19",
+   "detail": "<p>q = 36,81 lb/ft²; S = 25 × (2/12) = 4,167 ft²; D = 153,4 lb (Solution Manual 153 lb).</p>"
+  },
+  {
+   "q": "Dòng quanh hình trụ, ψ₁ = 0 trên mặt, ψ₂ đi qua (1,2R, π/2), các đường dòng cách đều ở thượng nguồn. Đường dòng ψ₃ đi qua điểm trên đỉnh có r/R bằng:",
+   "opts": [
+    "1,600",
+    "1,440",
+    "1,400",
+    "1,432"
+   ],
+   "correct": 3,
+   "explain": "ψ₃ = 2ψ₂ và ψ(r) = V R (r/R − R/r) tại θ = 90°.",
+   "src": "Anderson 6th, Problem 3.21",
+   "detail": "<p>ψ₂/(VR) = 1,2 − 1/1,2 = 0,3667; cần x − 1/x = 0,7333 ⇒ x = 1,4318. Khoảng cách: 1,0→1,2 là 0,2R, 1,2→1,43 là 0,232R.</p>"
+  },
+  {
+   "q": "Hình trụ trong hầm gió ở mực biển; nén được bắt đầu quan trọng khi vận tốc cục bộ vượt 250 mi/h. Vận tốc dòng tự do tương ứng (V_max = 2V∞) là:",
+   "opts": [
+    "111,8 m/s (250 mi/h)",
+    "27,9 m/s",
+    "55,9 m/s (125 mi/h)",
+    "223,5 m/s"
+   ],
+   "correct": 2,
+   "explain": "Điểm vai (θ = 90°) có V = 2V∞.",
+   "src": "Anderson 6th, Problem 3.22",
+   "detail": "<p>V∞ = 250 mi/h / 2 = 125 mi/h = 55,88 m/s. Khi đó M cục bộ = 0,33.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "Vận tốc lớn nhất trên mặt hình trụ không nâng bằng bao nhiêu lần V∞?",
+   "opts": [
+    "2",
+    "π",
+    "1",
+    "4"
+   ],
+   "correct": 0,
+   "explain": "V = 2V∞ sin θ lớn nhất tại θ = 90°.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Điểm đình trệ của hình trụ không nâng nằm ở:",
+   "opts": [
+    "θ = 60° và 120°",
+    "θ = 90° và 270°",
+    "θ = 0° và 180°",
+    "θ = 45° và 135°"
+   ],
+   "correct": 2,
+   "explain": "V_θ = −2V sin θ = 0 ⇒ sin θ = 0.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Với Γ/(4πVR) = 0,5, điểm đình trệ ở θ bằng:",
+   "opts": [
+    "−60°",
+    "30°",
+    "0°",
+    "-30°"
+   ],
+   "correct": 3,
+   "explain": "sin θ = −Γ/(4πVR) = −0,5.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Nghịch lý d'Alembert nói rằng dòng không nhớt, không nén được quanh vật hai chiều có lực cản:",
+   "opts": [
+    "tỉ lệ với V",
+    "tỉ lệ với V²",
+    "rất lớn",
+    "bằng 0"
+   ],
+   "correct": 3,
+   "explain": "Phân bố áp suất đối xứng trước–sau.",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Tăng gấp đôi vận tốc ở cùng Γ và ρ thì lực nâng L′ = ρVΓ:",
+   "opts": [
+    "tăng gấp đôi",
+    "không đổi",
+    "giảm một nửa",
+    "tăng gấp bốn"
+   ],
+   "correct": 0,
+   "explain": "L′ tỉ lệ thuận với V (khác với L ∝ V² ở cánh có C_L không đổi).",
+   "src": "Bổ sung (biên soạn)"
+  },
+  {
+   "q": "Lưỡng cực được tạo từ:",
+   "opts": [
+    "dòng đều và xoáy",
+    "một nguồn và một hố cùng cường độ đặt sát nhau",
+    "một nguồn và một xoáy",
+    "hai xoáy cùng chiều"
+   ],
+   "correct": 1,
+   "explain": "Anderson 3.12.",
+   "src": "Bổ sung (biên soạn)"
+  }
+ ]
+}

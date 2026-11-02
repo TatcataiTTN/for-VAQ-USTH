@@ -1,0 +1,167 @@
+{
+ "anderson": [
+  {
+   "q": "Non-lifting cylinder. The pressure coefficient on the surface at θ = 90° is:",
+   "opts": [
+    "-3",
+    "1",
+    "-1",
+    "-2"
+   ],
+   "correct": 0,
+   "explain": "C_p = 1 − (V/V∞)², V = 2V∞ sin θ.",
+   "src": "Anderson 6th, Problem 3.15",
+   "detail": "<p>On the surface V_θ = −2V∞ sin θ so V²/V∞² = 4 sin²θ; at 90° this is 4 and C_p = 1 − 4 = −3.</p>"
+  },
+  {
+   "q": "Non-lifting flow round a cylinder: if V∞ doubles the shape of the streamlines:",
+   "opts": [
+    "does not change",
+    "changes because the pressure changes",
+    "changes only far from the body",
+    "changes only near the body"
+   ],
+   "correct": 0,
+   "explain": "V_r and V_θ are both proportional to V∞ so the velocity direction at every point is unchanged.",
+   "src": "Anderson 6th, Problem 3.16"
+  },
+  {
+   "q": "Flow round a cylinder with fixed circulation Γ: if V∞ doubles the shape of the streamlines:",
+   "opts": [
+    "does not change",
+    "only scales",
+    "only reverses",
+    "changes"
+   ],
+   "correct": 3,
+   "explain": "V_θ has an extra term Γ/(2πr) that does not scale with V∞.",
+   "src": "Anderson 6th, Problem 3.17"
+  },
+  {
+   "q": "Spinning cylinder, V∞ = 30 m/s, ρ = 1.23 kg/m³, lift 6 N/m. The circulation is:",
+   "opts": [
+    "0.163 m²/s",
+    "0.325 m²/s",
+    "0.200 m²/s",
+    "0.081 m²/s"
+   ],
+   "correct": 0,
+   "explain": "Γ = L′/(ρV∞).",
+   "src": "Anderson 6th, Problem 3.18",
+   "detail": "<p>Γ = 6/(1.23 × 30) = 0.1626 m²/s. Solution Manual: 0.163.</p>"
+  },
+  {
+   "q": "25 ft of 2 in diameter struts at 120 mi/h sea level (ρ = 0.002377 slug/ft³) with C_D = 1 on the frontal area. The strut drag is:",
+   "opts": [
+    "153 lb",
+    "23 lb",
+    "77 lb",
+    "307 lb"
+   ],
+   "correct": 0,
+   "explain": "D = q S C_D with S = length × diameter.",
+   "src": "Anderson 6th, Problem 3.19",
+   "detail": "<p>q = 36.81 lb/ft²; S = 25 × (2/12) = 4.167 ft²; D = 153.4 lb (Solution Manual 153 lb).</p>"
+  },
+  {
+   "q": "Flow round a cylinder, ψ₁ = 0 on the surface, ψ₂ through (1.2R, π/2), streamlines equally spaced upstream. The streamline ψ₃ passes over the top at r/R equal to:",
+   "opts": [
+    "1.600",
+    "1.440",
+    "1.400",
+    "1.432"
+   ],
+   "correct": 3,
+   "explain": "ψ₃ = 2ψ₂ and ψ(r) = V R (r/R − R/r) at θ = 90°.",
+   "src": "Anderson 6th, Problem 3.21",
+   "detail": "<p>ψ₂/(VR) = 1.2 − 1/1.2 = 0.3667; we need x − 1/x = 0.7333 ⇒ x = 1.4318. Gaps: 1.0→1.2 is 0.2R, 1.2→1.43 is 0.232R.</p>"
+  },
+  {
+   "q": "A cylinder in a sea-level wind tunnel; compressibility starts to matter when the local velocity exceeds 250 mi/h. The corresponding free-stream velocity (V_max = 2V∞) is:",
+   "opts": [
+    "111.8 m/s (250 mi/h)",
+    "27.9 m/s",
+    "55.9 m/s (125 mi/h)",
+    "223.5 m/s"
+   ],
+   "correct": 2,
+   "explain": "The shoulder (θ = 90°) has V = 2V∞.",
+   "src": "Anderson 6th, Problem 3.22",
+   "detail": "<p>V∞ = 250 mi/h / 2 = 125 mi/h = 55.88 m/s. The local Mach number is then 0.33.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "How many times V∞ is the maximum surface velocity of a non-lifting cylinder?",
+   "opts": [
+    "2",
+    "π",
+    "1",
+    "4"
+   ],
+   "correct": 0,
+   "explain": "V = 2V∞ sin θ is largest at θ = 90°.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "The stagnation points of a non-lifting cylinder are at:",
+   "opts": [
+    "θ = 60° và 120°",
+    "θ = 90° và 270°",
+    "θ = 0° and 180°",
+    "θ = 45° và 135°"
+   ],
+   "correct": 2,
+   "explain": "V_θ = −2V sin θ = 0 ⇒ sin θ = 0.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "With Γ/(4πVR) = 0.5 the stagnation point is at θ equal to:",
+   "opts": [
+    "−60°",
+    "30°",
+    "0°",
+    "-30°"
+   ],
+   "correct": 3,
+   "explain": "sin θ = −Γ/(4πVR) = −0.5.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "d'Alembert's paradox says inviscid incompressible flow round a two-dimensional body has a drag of:",
+   "opts": [
+    "proportional to V",
+    "proportional to V²",
+    "very large",
+    "zero"
+   ],
+   "correct": 3,
+   "explain": "The pressure distribution is symmetric front-to-back.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "Doubling the velocity at the same Γ and ρ makes the lift L′ = ρVΓ:",
+   "opts": [
+    "double",
+    "stay the same",
+    "halve",
+    "quadruple"
+   ],
+   "correct": 0,
+   "explain": "L′ is proportional to V (unlike L ∝ V² for a wing at fixed C_L).",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A doublet is made from:",
+   "opts": [
+    "uniform flow and a vortex",
+    "a source and a sink of equal strength brought together",
+    "a source and a vortex",
+    "two vortices of the same sense"
+   ],
+   "correct": 1,
+   "explain": "Anderson 3.12.",
+   "src": "Supplementary (authored)"
+  }
+ ]
+}

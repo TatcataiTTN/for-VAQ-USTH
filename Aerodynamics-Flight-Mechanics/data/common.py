@@ -23,3 +23,12 @@ def mcq(seed, src, q, right, wrongs, explain, detail=None):
     if detail:
         out["detail"] = detail
     return out
+
+
+def sol(lang, read, idea, steps, check=None):
+    """Loi giai co cau truc: De noi gi -> Y tuong -> Cac buoc -> Kiem tra. steps la list HTML, buoc cuoi nen in dam dap an."""
+    h = {"vi": ("Đề nói gì", "Ý tưởng", "Các bước", "Kiểm tra"), "en": ("What the problem says", "Idea", "Steps", "Check")}[lang]
+    out = f"<p><b>{h[0]}.</b> {read}</p><p><b>{h[1]}.</b> {idea}</p><p><b>{h[2]}.</b></p><ol>" + "".join(f"<li>{s}</li>" for s in steps) + "</ol>"
+    if check:
+        out += f"<p class='pill'><b>{h[3]}:</b> {check}</p>"
+    return out

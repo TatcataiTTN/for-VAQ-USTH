@@ -1,0 +1,177 @@
+{
+ "anderson": [
+  {
+   "q": "A subsonic compressible flow has velocity potential φ = V∞x + [70/√(1−M∞²)]·sin(2πx)·e^(−2πy√(1−M∞²)), V∞ = 700 ft/s, p∞ = 1 atm, T∞ = 519 °R. The Mach number at (0.2, 0.2) ft is:",
+   "opts": [
+    "0.627",
+    "0.800",
+    "0.848",
+    "0.707"
+   ],
+   "correct": 3,
+   "explain": "Compute u, v from φ, then M from the energy equation.",
+   "src": "Anderson 6th, Problem 11.1",
+   "detail": "<p>u = 765.5, v = -157.1 ft/s, V = 781.5; T₀ = 1.079 × 519 = 559.8 °R; a² = γRT₀ − (γ−1)V²/2 ⇒ M = 0.7068 (Solution Manual 0.7067).</p>"
+  },
+  {
+   "q": "A NACA 2412 airfoil at 5° has c_l,0 = 0.75. By Prandtl-Glauert, c_l at M = 0.6 is:",
+   "opts": [
+    "0.600",
+    "1.200",
+    "0.938",
+    "0.750"
+   ],
+   "correct": 2,
+   "explain": "c_l = c_l,0/√(1 − M²) = 0.75/0.8.",
+   "src": "Anderson 6th, Problem 11.2"
+  },
+  {
+   "q": "C_p,0 = −0.54, M∞ = 0.58. By Prandtl-Glauert, C_p is:",
+   "opts": [
+    "-0.663",
+    "-0.706",
+    "-0.776",
+    "-0.440"
+   ],
+   "correct": 0,
+   "explain": "C_p = C_p,0/√(1 − 0.58²) = −0.54/0.8146.",
+   "src": "Anderson 6th, Problem 11.3a"
+  },
+  {
+   "q": "Same data; by Kármán-Tsien, C_p is:",
+   "opts": [
+    "-0.6629",
+    "-0.7763",
+    "-0.7063",
+    "-0.6357"
+   ],
+   "correct": 2,
+   "explain": "Denominator: 0.8146 + (0.3364/(1 + 0.8146))·(−0.54)/2.",
+   "src": "Anderson 6th, Problem 11.3b"
+  },
+  {
+   "q": "Same data; by Laitone, C_p is:",
+   "opts": [
+    "-0.7763",
+    "-0.7063",
+    "-0.6629",
+    "-0.8539"
+   ],
+   "correct": 0,
+   "explain": "Denominator: 0.8146 + [0.3364 × 1.0673/(2 × 0.8146)]·(−0.54).",
+   "src": "Anderson 6th, Problem 11.3c"
+  },
+  {
+   "q": "C_p,0 = −0.41; by Prandtl-Glauert the critical Mach number is about:",
+   "opts": [
+    "0.60",
+    "1.00",
+    "0.74",
+    "0.90"
+   ],
+   "correct": 2,
+   "explain": "M_cr is the intersection of C_p,0/√(1 − M²) with C_p,cr(M).",
+   "src": "Anderson 6th, Problem 11.4",
+   "detail": "<p>Bisection gives M_cr = 0.7436; the Solution Manual graph reads 0.74.</p>"
+  },
+  {
+   "q": "M_cr = 0.8. The pressure ratio p/p∞ at the minimum-pressure point when M∞ = 0.8 is:",
+   "opts": [
+    "0.528",
+    "1.524",
+    "1.000",
+    "0.805"
+   ],
+   "correct": 3,
+   "explain": "p/p∞ = (p/p₀ at M = 1)(p₀/p∞ at M = 0.8) = 0.528 × 1.524.",
+   "src": "Anderson 6th, Problem 11.5"
+  },
+  {
+   "q": "M∞ = 0.5, local Mach number 0.86. The pressure coefficient at that point is:",
+   "opts": [
+    "-1.00",
+    "-1.53",
+    "-0.86",
+    "-1.96"
+   ],
+   "correct": 1,
+   "explain": "C_p = (2/γM∞²)(p/p∞ − 1) with p/p∞ = 0.7316.",
+   "src": "Anderson 6th, Problem 11.6",
+   "detail": "<p>Using velocities as for incompressible flow gives C_p = -1.96: completely wrong; Mach numbers must be used.</p>"
+  }
+ ],
+ "generated": [
+  {
+   "q": "The factor 1/√(1 − M²) at M = 0.8 is:",
+   "opts": [
+    "1.80",
+    "1.67",
+    "1.25",
+    "0.60"
+   ],
+   "correct": 1,
+   "explain": "√(1 − 0.64) = 0.6.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "By Prandtl-Glauert, at M = 0.6 the thin-airfoil lift slope rises relative to incompressible flow by:",
+   "opts": [
+    "60%",
+    "0%",
+    "25%",
+    "8%"
+   ],
+   "correct": 2,
+   "explain": "1/0.8 = 1.25.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "A thinner airfoil with gentler suction (small |C_p,0|) has a critical Mach number:",
+   "opts": [
+    "unchanged",
+    "higher",
+    "lower",
+    "equal to 1"
+   ],
+   "correct": 1,
+   "explain": "A larger M∞ is needed to reach M = 1 at the suction point.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "In decreasing order of |C_p| for the same C_p,0 and M∞ in Problem 11.3:",
+   "opts": [
+    "Kármán-Tsien > Laitone > Prandtl-Glauert",
+    "Prandtl-Glauert > Kármán-Tsien > Laitone",
+    "All three are equal",
+    "Laitone > Kármán-Tsien > Prandtl-Glauert"
+   ],
+   "correct": 3,
+   "explain": "0.776 > 0.706 > 0.663.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "At local M = 1 and M∞ = 0.5, p/p∞ equals:",
+   "opts": [
+    "1.186",
+    "1.000",
+    "0.528",
+    "0.627"
+   ],
+   "correct": 3,
+   "explain": "1.186 × 0.528.",
+   "src": "Supplementary (authored)"
+  },
+  {
+   "q": "When does Prandtl-Glauert stop being usable?",
+   "opts": [
+    "When M∞ is near 1 or the flow has local shocks",
+    "When M∞ is below 0.3",
+    "When the angle of attack is zero",
+    "When the airfoil is very thin"
+   ],
+   "correct": 0,
+   "explain": "The theory is linear and assumes fully subsonic flow.",
+   "src": "Supplementary (authored)"
+  }
+ ]
+}

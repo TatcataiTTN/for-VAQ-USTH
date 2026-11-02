@@ -288,7 +288,7 @@ print("All Module 04 checks passed.")'''),
 ])
 
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "nb_extra.py"), encoding="utf-8").read())
-for name, n in (("01_atmosphere", n1), ("02_aerodynamics", n2), ("03_theory-of-flight", n3), ("04_stability", n4), ("05_finite-wing", n5), ("06_compressible-flow", n6), ("07_oblique-shocks", n7), ("08_lateral-dynamics", n8)):
+for name, n in (("01_atmosphere", n1), ("02_aerodynamics", n2), ("03_theory-of-flight", n3), ("04_stability", n4), ("05_finite-wing", n5), ("06_compressible-flow", n6), ("07_oblique-shocks", n7), ("08_lateral-dynamics", n8), ("09_potential-flow", n9), ("10_subsonic-compressible", n10)):
     with open(os.path.join(OUT, name + ".ipynb"), "w", encoding="utf-8") as f:
         nbf.write(n, f)
     print("wrote", name)

@@ -1,6 +1,6 @@
 # AE2.008 Aerodynamics and Flight Mechanics: ghi chú xây dựng
 
-Trạng thái: 8 module. 01–04 tương ứng 4 sub-module EASA Module 08; 05 (cánh hữu hạn, Anderson ch.5), 06 (dòng nén được, ch.7–8), 07 (sóng xiên, ch.9), 08 (động lực ngang B747, Etkin 6.7) mở rộng ngoài EASA. Mỗi module có slide song ngữ kèm hình gốc EASA cắt từ scan, demo tương tác, quiz (EASA, sách, bổ sung), bài tập có lời giải và notebook chạy được. Chưa làm: Anderson ch.2, 6, 10–15 (phương trình cơ bản, dòng 3D, ống phun, lý thuyết tuyến tính, CFD, lớp biên) và Etkin ch.4, 5, 7, 8 (phương trình chuyển động, đạo hàm ổn định, đáp ứng, điều khiển vòng kín). Bài 5.x, 8.x, 9.x của Anderson chưa đối chiếu với Solution Manual.
+Trạng thái: 10 module (thêm 09 dòng thế cơ bản, Anderson ch.3; 10 cận âm nén được, Anderson ch.11). 01–04 tương ứng 4 sub-module EASA Module 08; 05 (cánh hữu hạn, Anderson ch.5), 06 (dòng nén được, ch.7–8), 07 (sóng xiên, ch.9), 08 (động lực ngang B747, Etkin 6.7) mở rộng ngoài EASA. Mỗi module có slide song ngữ kèm hình gốc EASA cắt từ scan, demo tương tác, quiz (EASA, sách, bổ sung), bài tập có lời giải và notebook chạy được. Chưa làm: Anderson ch.2, 6, 10–15 (phương trình cơ bản, dòng 3D, ống phun, lý thuyết tuyến tính, CFD, lớp biên) và Etkin ch.4, 5, 7, 8 (phương trình chuyển động, đạo hàm ổn định, đáp ứng, điều khiển vòng kín). Bài 5.x, 8.x, 9.x của Anderson chưa đối chiếu với Solution Manual.
 
 ## Cách dựng lại
 ```
@@ -40,3 +40,7 @@ Khác biệt đã xử lý:
 Không đối chiếu được: ch.5 (SM không có), 4.10–4.12, 5.4, 5.5, 9.15, 9.20, 11.4 (đánh số khác giữa các bản); các bài này kiểm bằng hai đường tính độc lập (công thức và nghiệm số, notebook).
 ## Kiểm tra tự động
 `audit_quiz.py` kiểm: cân bằng vị trí đáp án, đáp án đúng không luôn dài nhất, không có hai phương án trùng nhau, mọi câu có giải thích. Lần kiểm này bắt được 2 câu có phương án trùng (Bài 5.4 và một câu ζ) và đã sửa.
+
+## Bổ sung đối chiếu Solution Manual (lần 2)
+Khớp thêm: 3.15, 3.16, 3.17, 3.19, 3.20 · 11.1, 11.2 (SM dùng c_l,0 = 0,75 đọc từ Hình 4.5), 11.3, 11.4, 11.5, 11.6, 11.7 (lệch nhỏ vì SM nội suy bảng). 3.21 và 3.22 không có trong SM bản 4th.
+Lời giải bốn bước (Đề nói gì / Ý tưởng / Các bước / Kiểm tra): module 09, 10 và các bài chính của module 01, 02, 03. Các module 04–08 vẫn dùng lời giải ngắn hơn.

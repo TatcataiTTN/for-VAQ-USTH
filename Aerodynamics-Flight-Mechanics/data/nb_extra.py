@@ -105,3 +105,57 @@ assert abs(zeta(0)-0.0349) < 1e-3 and abs(zeta(0.5)-0.2947) < 1e-3
 w, V = np.linalg.eig(A); Vi = np.linalg.inv(V)
 x = (V@np.diag(np.exp(w*30))@Vi@np.array([10,0,0,0])).real; print(x); assert abs(x[0]+3.521) < 1e-3
 print("All Module 08 checks passed.")''')])
+
+n9 = nb([HDR("09", "Dòng thế / Potential flow", "🇻🇳 Kiểm hàm dòng quanh hình trụ bằng đạo hàm số, giải lại Anderson 3.15–3.22.  🇬🇧 Check the cylinder stream function by numerical differentiation, re-solve Anderson 3.15–3.22."),
+ code("import math"),
+ code('''V, R = 1.0, 1.0
+psi = lambda r, th: V*r*math.sin(th)*(1-R*R/(r*r))
+def vel(r, th, h=1e-6):
+    vr = (psi(r, th+h)-psi(r, th-h))/(2*h)/r; vth = -(psi(r+h, th)-psi(r-h, th))/(2*h); return vr, vth
+for th in (0.3, 1.0, math.pi/2):
+    vr, vth = vel(1.0, th); cp = 1-(vr*vr+vth*vth)/V**2; print(th, vr, vth, cp)
+    assert abs(vr) < 1e-6 and abs(vth+2*math.sin(th)) < 1e-6 and abs(cp-(1-4*math.sin(th)**2)) < 1e-6      # Problem 3.15
+r, th = 1.7, 0.8; vr, vth = vel(r, th)
+assert abs(vr-V*math.cos(th)*(1-R*R/r**2)) < 1e-6 and abs(vth+V*math.sin(th)*(1+R*R/r**2)) < 1e-6'''),
+ code('''# 3.16 / 3.17: direction of velocity with and without circulation
+def ang(r, th, Vinf, G=0.0):
+    vr = Vinf*math.cos(th)*(1-1/r**2); vth = -Vinf*math.sin(th)*(1+1/r**2)-G/(2*math.pi*r); return math.atan2(vth, vr)
+assert abs(ang(1.5, 0.7, 1)-ang(1.5, 0.7, 2)) < 1e-12 and abs(ang(1.5, 0.7, 1, 1.0)-ang(1.5, 0.7, 2, 1.0)) > 1e-3
+G318 = 6/(1.23*30); print(G318); assert abs(G318-0.163) < 1e-3
+rho = 0.002377; q = 0.5*rho*176**2
+Ds = q*25*(2/12); Dw = q*80*(3/32/12); D0 = q*230*0.036; print(Ds, Dw, Ds+Dw, D0, (Ds+Dw)/D0)
+assert abs(Ds-153) < 1 and abs(Dw-23) < 0.5 and abs((Ds+Dw)-176) < 1 and abs((Ds+Dw)/D0-0.58) < 0.01'''),
+ code('''psi2 = 1.2-1/1.2; lo, hi = 1.0001, 10.0
+for _ in range(200):
+    mid = (lo+hi)/2
+    if mid-1/mid < 2*psi2: lo = mid
+    else: hi = mid
+print(lo); assert abs(lo-1.4318) < 1e-3 and (lo-1.2) > 0.2
+a = math.sqrt(1.4*287*288.15); print(250*0.44704/2, 250*0.44704/a); assert abs(250*0.44704/2-55.88) < 0.01
+assert abs(math.degrees(math.asin(-0.5))+30) < 1e-9
+print("All Module 09 checks passed.")''')])
+
+n10 = nb([HDR("10", "Cận âm nén được / Subsonic compressible flow", "🇻🇳 Ba quy tắc hiệu chỉnh, M_cr bằng chia đôi, Anderson 11.1–11.7.  🇬🇧 Three correction rules, M_cr by bisection, Anderson 11.1–11.7."),
+ code(COMP),
+ code('''b = lambda M: math.sqrt(1-M*M)
+pg = lambda c, M: c/b(M)
+kt = lambda c, M: c/(b(M)+M*M/(1+b(M))*c/2)
+la = lambda c, M: c/(b(M)+M*M*(1+(g-1)/2*M*M)/(2*b(M))*c)
+assert abs(pg(-0.3, 0.6)+0.375) < 1e-9                                        # book Example 11.1
+r = (pg(-0.54, 0.58), kt(-0.54, 0.58), la(-0.54, 0.58)); print(r)
+assert abs(r[0]+0.663) < 1e-3 and abs(r[1]+0.7063) < 1e-3 and abs(r[2]+0.7763) < 1e-3 and abs(r[0]) < abs(r[1]) < abs(r[2])
+assert abs(0.75/b(0.6)-0.9375) < 1e-9'''),
+ code('''cpcr = lambda M: 2/(g*M*M)*(((1+(g-1)/2*M*M)/((g+1)/2))**(g/(g-1))-1)
+Mcr = bis(lambda m: -0.41/b(m)-cpcr(m), 0.3, 0.99); print(Mcr); assert abs(Mcr-0.7436) < 1e-3
+p115 = p0p(0.8)/p0p(1.0); print(p115); assert abs(p115-0.805) < 1e-3
+pr = p0p(0.5)/p0p(0.86); cp = 2/(g*0.25)*(pr-1); print(pr, cp); assert abs(pr-0.7316) < 1e-3 and abs(cp+1.53) < 0.01'''),
+ code('''Mi, MA = 0.3, 0.435
+cpA = 2/(g*Mi*Mi)*(p0p(Mi)/p0p(MA)-1); cp0 = cpA*b(Mi); print(cpA, cp0)
+def MAof(Mf):
+    c = cp0/b(Mf); pr = 1+g*Mf*Mf*c/2; return bis(lambda m: p0p(Mf)/p0p(m)-pr, 0.01, 3)
+print(MAof(0.61)); assert abs(MAof(0.61)-1.0) < 0.01 and abs(cp0+0.9894) < 1e-3
+bb = math.sqrt(1-0.6269**2)
+u = 700+2*math.pi*70/bb*math.exp(-2*math.pi*bb*0.2)*math.cos(2*math.pi*0.2); v = -140*math.pi*math.exp(-2*math.pi*bb*0.2)*math.sin(2*math.pi*0.2)
+V = math.hypot(u, v); Mf = 700/math.sqrt(g*1716*519); T0 = 519*(1+0.2*Mf**2); M = V/math.sqrt(g*1716*T0-(g-1)/2*V*V)
+print(u, v, V, M, T0/(1+0.2*M*M), p0p(Mf)/p0p(M)); assert abs(M-0.7067) < 1e-3 and abs(p0p(Mf)/p0p(M)-0.933) < 2e-3
+print("All Module 10 checks passed.")''')])
