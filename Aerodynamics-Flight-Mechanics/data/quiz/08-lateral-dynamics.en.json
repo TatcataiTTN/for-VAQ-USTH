@@ -65,7 +65,7 @@
   {
    "q": "For the polynomial λ⁴ + 0.6358λ³ + 0.9388λ² + 0.5114λ + 0.003682 the criterion R = BCD − D² − B²E is about:",
    "opts": [
-    "-0.0422",
+    "−0.0422",
     "0.422",
     "0.0422",
     "0.0037"
@@ -110,7 +110,7 @@
    ],
    "correct": 3,
    "explain": "C_nβ = +0.1946 in Table 6.6.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A negative C_lp means:",
@@ -122,7 +122,7 @@
    ],
    "correct": 3,
    "explain": "C_lp = −0.3295.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Adding yaw damping ΔN_r = 0.5 raises the Dutch-roll ζ from 0.035 to about:",
@@ -134,7 +134,7 @@
    ],
    "correct": 2,
    "explain": "Computed directly from the eigenvalues of the modified A.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Which lateral mode has a time scale closest to the longitudinal short period?",
@@ -146,19 +146,19 @@
    ],
    "correct": 2,
    "explain": "Both are fast damped oscillations.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
-   "q": "Directional stability that is too strong relative to lateral stability leads to:",
+   "q": "Directional stability that is too strong relative to the dihedral effect (lateral stability) leads to:",
    "opts": [
     "an unstable phugoid",
     "loss of lift",
-    "a quickly stable spiral",
-    "a lightly damped Dutch roll"
+    "a lightly damped Dutch roll",
+    "a tendency to spiral instability"
    ],
    "correct": 3,
-   "explain": "Conversely, weak directional stability produces a spiral instability.",
-   "src": "Supplementary (authored)"
+   "explain": "The condition for a stable spiral is C_lβ·C_nr > C_lr·C_nβ (Etkin 6.8,6): a large C_nβ makes the right side large and the condition easy to violate. Conversely, weak directional stability relative to dihedral leaves the Dutch roll lightly damped. EASA says designers choose a midpoint.",
+   "src": "Extra practice"
   },
   {
    "q": "Why can a stable spiral mode still be considered a potential hazard?",
@@ -170,7 +170,7 @@
    ],
    "correct": 1,
    "explain": "t½ = 95 s.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   }
  ]
 }

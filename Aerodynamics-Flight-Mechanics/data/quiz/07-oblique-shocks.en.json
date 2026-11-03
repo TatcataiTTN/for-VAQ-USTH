@@ -27,10 +27,10 @@
   {
    "q": "Same problem 9.2 (p₁ = 2.65×10⁴ N/m²). The pressure behind the wave p₂ is:",
    "opts": [
-    "190800 N/m²",
-    "26500 N/m²",
-    "59625 N/m²",
-    "119250 N/m²"
+    "190 800 N/m²",
+    "26 500 N/m²",
+    "59 625 N/m²",
+    "119 250 N/m²"
    ],
    "correct": 3,
    "explain": "p₂/p₁ = 4.5 at M_n1 = 2.",
@@ -110,7 +110,7 @@
    ],
    "correct": 0,
    "explain": "μ = arcsin(1/2) = 30°.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The Prandtl-Meyer function ν(2.0) is approximately:",
@@ -122,7 +122,7 @@
    ],
    "correct": 0,
    "explain": "ν(1) = 0 and ν increases with M.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "For a flat plate at M = 2.6, α = 5°, the Ackeret c_l = 4α/√(M²−1) is about:",
@@ -134,7 +134,7 @@
    ],
    "correct": 0,
    "explain": "2π α is for incompressible flow.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A Prandtl-Meyer expansion compared with a shock in terms of entropy:",
@@ -146,7 +146,7 @@
    ],
    "correct": 3,
    "explain": "The expansion is isentropic.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "At fixed M₁, a flow deflection larger than θ_max makes the shock:",
@@ -158,7 +158,7 @@
    ],
    "correct": 3,
    "explain": "An attached shock exists only for θ ≤ θ_max.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "In a multi-wave system at M = 4, adding oblique shocks before the normal shock leaves the p₀:",
@@ -170,7 +170,7 @@
    ],
    "correct": 1,
    "explain": "0.139 → 0.314 → 0.420.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   }
  ]
 }

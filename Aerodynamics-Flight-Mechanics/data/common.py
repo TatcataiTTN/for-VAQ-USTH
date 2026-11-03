@@ -2,8 +2,20 @@
 import random
 
 def num(x, nd=2, lang="en", sci=False):
-    s = f"{x:.{nd}e}" if sci else f"{x:.{nd}f}"
-    return s.replace(".", ",") if lang == "vi" else s
+    """Format a number. Decimal comma for vi; integer part grouped in threes (nbsp) from 5 digits up."""
+    if sci:
+        s = f"{x:.{nd}e}"
+    else:
+        s = f"{x:.{nd}f}"
+        if abs(x) >= 10000:
+            ip, _, fp = s.partition(".")
+            sign = "-" if ip.startswith("-") else ""
+            d, g = ip.lstrip("-"), []
+            while d:
+                g.insert(0, d[-3:]); d = d[:-3]
+            s = sign + " ".join(g) + ("." + fp if fp else "")
+    s = s.replace(".", ",") if lang == "vi" else s
+    return s.replace("-", "\u2212")
 
 def ul(*items):
     return "<ul>" + "".join(f"<li>{i}</li>" for i in items) + "</ul>"

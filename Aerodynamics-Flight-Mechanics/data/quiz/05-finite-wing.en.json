@@ -90,7 +90,7 @@
    ],
    "correct": 3,
    "explain": "α_i = C_L/(π·AR) = 0.0199 rad.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Keeping C_L fixed, raising AR from 8 to 12 makes C_D,i:",
@@ -102,7 +102,7 @@
    ],
    "correct": 3,
    "explain": "C_D,i is inversely proportional to AR: 8/12.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Flying slower but still level makes the induced drag:",
@@ -114,7 +114,7 @@
    ],
    "correct": 3,
    "explain": "C_D,i ∝ C_L² and C_L ∝ 1/V² so D_i ∝ 1/V².",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The span efficiency factor e = 1/(1 + δ). For δ = 0.055 e equals:",
@@ -126,7 +126,7 @@
    ],
    "correct": 2,
    "explain": "e = 1/1.055 = 0.948.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "With C_D,0 = 0.02, AR = 8, e = 0.85, (L/D)max = ½√(π e AR/C_D,0) is about:",
@@ -137,8 +137,8 @@
     "32.7"
    ],
    "correct": 0,
-   "explain": "At the maximum C_D,i = C_D,0 so C_D = 0.04 and C_L = 0.712.",
-   "src": "Supplementary (authored)"
+   "explain": "At the maximum C_D,i = C_D,0 so C_D = 0.04 and C_L = 0.654.",
+   "src": "Extra practice"
   },
   {
    "q": "What do winglets mainly do?",
@@ -150,7 +150,7 @@
    ],
    "correct": 1,
    "explain": "EASA Figure 2-20.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   }
  ]
 }

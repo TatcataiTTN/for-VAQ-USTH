@@ -65,7 +65,7 @@
   {
    "q": "Với đa thức λ⁴ + 0,6358λ³ + 0,9388λ² + 0,5114λ + 0,003682, tiêu chí R = BCD − D² − B²E xấp xỉ:",
    "opts": [
-    "-0,0422",
+    "−0,0422",
     "0,422",
     "0,0422",
     "0,0037"
@@ -110,7 +110,7 @@
    ],
    "correct": 3,
    "explain": "C_nβ = +0,1946 trong Bảng 6.6.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "C_lp âm có nghĩa là:",
@@ -122,7 +122,7 @@
    ],
    "correct": 3,
    "explain": "C_lp = −0,3295.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Thêm giảm xoay ΔN_r = 0,5 làm ζ của Dutch roll tăng từ 0,035 lên khoảng:",
@@ -134,7 +134,7 @@
    ],
    "correct": 2,
    "explain": "Tính trực tiếp bằng trị riêng của A đã sửa.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Mode ngang nào có thời gian đặc trưng gần nhất với chu kỳ ngắn dọc?",
@@ -146,19 +146,19 @@
    ],
    "correct": 2,
    "explain": "Cả hai là dao động nhanh, tắt dần.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
-   "q": "Ổn định hướng quá mạnh so với ổn định ngang dẫn tới:",
+   "q": "Ổn định hướng quá mạnh so với hiệu ứng dihedral (ổn định ngang) dẫn tới:",
    "opts": [
     "phugoid bất ổn",
     "mất lực nâng",
-    "xoắn ốc nhanh chóng ổn định",
-    "Dutch roll tắt yếu"
+    "Dutch roll tắt yếu",
+    "xu hướng xoắn ốc mất ổn định"
    ],
    "correct": 3,
-   "explain": "Ngược lại, ổn định hướng yếu sinh xoắn ốc mất ổn định.",
-   "src": "Bổ sung (biên soạn)"
+   "explain": "Điều kiện xoắn ốc ổn định là C_lβ·C_nr > C_lr·C_nβ (Etkin 6.8,6): C_nβ lớn thì vế phải lớn, dễ vi phạm. Ngược lại, ổn định hướng yếu so với dihedral thì Dutch roll tắt yếu. EASA nói nhà thiết kế chọn điểm giữa.",
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Vì sao mode xoắn ốc ổn định vẫn được xem là nguy hiểm tiềm tàng?",
@@ -170,7 +170,7 @@
    ],
    "correct": 1,
    "explain": "t½ = 95 s.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   }
  ]
 }

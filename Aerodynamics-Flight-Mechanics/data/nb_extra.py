@@ -18,7 +18,7 @@ def nshock(M):
 def a_s(T, R=R): return math.sqrt(g*R*T)
 """
 
-n5 = nb([HDR("05", "Cánh hữu hạn / Finite wings", "🇻🇳 Tích phân số Biot-Savart, giải lại Anderson 5.1, 5.2 và Ví dụ 5.1, 5.2.  🇬🇧 Numerical Biot-Savart, re-solving Anderson 5.1, 5.2 and Examples 5.1, 5.2."),
+n5 = nb([HDR("05", "Cánh hữu hạn / Finite wings", "**VI.** Tích phân số Biot-Savart, giải lại Anderson 5.1, 5.2 và Ví dụ 5.1, 5.2.  **EN.** Numerical Biot-Savart, re-solving Anderson 5.1, 5.2 and Examples 5.1, 5.2."),
  code("import math"),
  code('''def loop_axis(R, A, G=1.0, n=20000):
     s = 0.0; d = 2*math.pi/n
@@ -40,7 +40,7 @@ assert abs(math.degrees(CLe/(math.pi*ARe))-1.1398) < 1e-3 and abs(CLe**2/(math.p
 assert abs(math.sqrt(math.pi*0.85*8/(4*0.02))-16.34) < 0.01
 print("All Module 05 checks passed.")''')])
 
-n6 = nb([HDR("06", "Dòng nén được / Compressible flow", "🇻🇳 Giải lại Anderson 7.1, 7.4, 7.5, 8.3, 8.5, 8.8, 8.9, 8.10, 8.16.  🇬🇧 Re-solves Anderson 7.1, 7.4, 7.5, 8.3, 8.5, 8.8, 8.9, 8.10, 8.16."),
+n6 = nb([HDR("06", "Dòng nén được / Compressible flow", "**VI.** Giải lại Anderson 7.1, 7.4, 7.5, 8.3, 8.5, 8.8, 8.9, 8.10, 8.16.  **EN.** Re-solves Anderson 7.1, 7.4, 7.5, 8.3, 8.5, 8.8, 8.9, 8.10, 8.16."),
  code(COMP),
  code('''rho71 = 7.8*2116/(1716*934); assert abs(rho71-0.010298) < 1e-5
 rho74 = 4.35e4/(287*245)*(3.6e4/4.35e4)**(1/g); assert abs(rho74-0.5404) < 1e-3
@@ -54,7 +54,7 @@ M2, p, r, T, p0 = nshock(2.6); assert abs(M2-0.5039) < 1e-3 and abs(p-7.72) < 1e
 M2b, pb, rb, Tb, _ = nshock(3.1); V2 = M2b*math.sqrt(g*1716*480*Tb); print(M2b, V2); assert 0.45 < M2b < 0.47
 print("All Module 06 checks passed.")''')])
 
-n7 = nb([HDR("07", "Sóng xiên / Oblique shocks", "🇻🇳 Giải θ-β-M bằng chia đôi; Anderson 9.1, 9.2, 9.4, 9.5, 9.6, 9.8, 9.13, 9.15, 9.20.  🇬🇧 θ-β-M by bisection; Anderson 9.1, 9.2, 9.4, 9.5, 9.6, 9.8, 9.13, 9.15, 9.20."),
+n7 = nb([HDR("07", "Sóng xiên / Oblique shocks", "**VI.** Giải θ-β-M bằng chia đôi; Anderson 9.1, 9.2, 9.4, 9.5, 9.6, 9.8, 9.13, 9.15, 9.20.  **EN.** θ-β-M by bisection; Anderson 9.1, 9.2, 9.4, 9.5, 9.6, 9.8, 9.13, 9.15, 9.20."),
  code(COMP + """d = math.radians
 def thb(M, b): return math.atan(2/math.tan(b)*(M*M*math.sin(b)**2-1)/(M*M*(g+math.cos(2*b))+2))
 def thmax(M):
@@ -87,7 +87,7 @@ Mx = Mpm(pm(3)+d(20)); pe = p0p(3)/p0p(Mx); b = beta(Mx, d(20)); o = obl(Mx, b, 
 print(Mx, pe, o[0], p3); assert abs(Mx-4.318) < 2e-3 and abs(p3-0.9182) < 2e-3 and p3 < 1
 print("All Module 07 checks passed.")''')])
 
-n8 = nb([HDR("08", "Động lực ngang / Lateral dynamics", "🇻🇳 Ma trận ngang B747 từ Etkin tr. 187, trị riêng, Bảng 6.8, tiêu chí E, R, bộ giảm xoay.  🇬🇧 The B747 lateral matrix from Etkin p. 187, eigenvalues, Table 6.8, criteria E, R, yaw damper."),
+n8 = nb([HDR("08", "Động lực ngang / Lateral dynamics", "**VI.** Ma trận ngang B747 từ Etkin tr. 187, trị riêng, Bảng 6.8, tiêu chí E, R, bộ giảm xoay.  **EN.** The B747 lateral matrix from Etkin p. 187, eigenvalues, Table 6.8, criteria E, R, yaw damper."),
  code('''import numpy as np, math
 A = np.array([[-0.0558,0,-774,32.2],[-0.003865,-0.4342,0.4136,0],[0.001086,-0.006112,-0.1458,0],[0,1,0,0]])
 c = np.poly(A); print(c); assert np.allclose(c, [1,0.6358,0.9388,0.5114,0.003682], rtol=2e-3, atol=1e-6)
@@ -106,7 +106,7 @@ w, V = np.linalg.eig(A); Vi = np.linalg.inv(V)
 x = (V@np.diag(np.exp(w*30))@Vi@np.array([10,0,0,0])).real; print(x); assert abs(x[0]+3.521) < 1e-3
 print("All Module 08 checks passed.")''')])
 
-n9 = nb([HDR("09", "Dòng thế / Potential flow", "🇻🇳 Kiểm hàm dòng quanh hình trụ bằng đạo hàm số, giải lại Anderson 3.15–3.22.  🇬🇧 Check the cylinder stream function by numerical differentiation, re-solve Anderson 3.15–3.22."),
+n9 = nb([HDR("09", "Dòng thế / Potential flow", "**VI.** Kiểm hàm dòng quanh hình trụ bằng đạo hàm số, giải lại Anderson 3.15–3.22.  **EN.** Check the cylinder stream function by numerical differentiation, re-solve Anderson 3.15–3.22."),
  code("import math"),
  code('''V, R = 1.0, 1.0
 psi = lambda r, th: V*r*math.sin(th)*(1-R*R/(r*r))
@@ -135,7 +135,7 @@ a = math.sqrt(1.4*287*288.15); print(250*0.44704/2, 250*0.44704/a); assert abs(2
 assert abs(math.degrees(math.asin(-0.5))+30) < 1e-9
 print("All Module 09 checks passed.")''')])
 
-n10 = nb([HDR("10", "Cận âm nén được / Subsonic compressible flow", "🇻🇳 Ba quy tắc hiệu chỉnh, M_cr bằng chia đôi, Anderson 11.1–11.7.  🇬🇧 Three correction rules, M_cr by bisection, Anderson 11.1–11.7."),
+n10 = nb([HDR("10", "Cận âm nén được / Subsonic compressible flow", "**VI.** Ba quy tắc hiệu chỉnh, M_cr bằng chia đôi, Anderson 11.1–11.7.  **EN.** Three correction rules, M_cr by bisection, Anderson 11.1–11.7."),
  code(COMP),
  code('''b = lambda M: math.sqrt(1-M*M)
 pg = lambda c, M: c/b(M)

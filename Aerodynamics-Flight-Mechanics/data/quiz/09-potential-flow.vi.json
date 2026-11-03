@@ -3,10 +3,10 @@
   {
    "q": "Hình trụ không nâng. Hệ số áp suất trên mặt tại θ = 90° là:",
    "opts": [
-    "-3",
+    "−3",
     "1",
-    "-1",
-    "-2"
+    "−1",
+    "−2"
    ],
    "correct": 0,
    "explain": "C_p = 1 − (V/V∞)², V = 2V∞ sin θ.",
@@ -101,7 +101,7 @@
    ],
    "correct": 0,
    "explain": "V = 2V∞ sin θ lớn nhất tại θ = 90°.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Điểm đình trệ của hình trụ không nâng nằm ở:",
@@ -113,7 +113,7 @@
    ],
    "correct": 2,
    "explain": "V_θ = −2V sin θ = 0 ⇒ sin θ = 0.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Với Γ/(4πVR) = 0,5, điểm đình trệ ở θ bằng:",
@@ -121,11 +121,11 @@
     "−60°",
     "30°",
     "0°",
-    "-30°"
+    "−30°"
    ],
    "correct": 3,
    "explain": "sin θ = −Γ/(4πVR) = −0,5.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Nghịch lý d'Alembert nói rằng dòng không nhớt, không nén được quanh vật hai chiều có lực cản:",
@@ -137,7 +137,7 @@
    ],
    "correct": 3,
    "explain": "Phân bố áp suất đối xứng trước–sau.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Tăng gấp đôi vận tốc ở cùng Γ và ρ thì lực nâng L′ = ρVΓ:",
@@ -149,7 +149,7 @@
    ],
    "correct": 0,
    "explain": "L′ tỉ lệ thuận với V (khác với L ∝ V² ở cánh có C_L không đổi).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Lưỡng cực được tạo từ:",
@@ -161,7 +161,7 @@
    ],
    "correct": 1,
    "explain": "Anderson 3.12.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   }
  ]
 }

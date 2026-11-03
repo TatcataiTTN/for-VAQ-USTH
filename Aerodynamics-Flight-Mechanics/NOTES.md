@@ -37,10 +37,24 @@ Khác biệt đã xử lý:
 - 9.5: bản 4th dùng nêm 22,5°, bản 6th dùng 22,2°; site theo bản 6th (β = 45,89°, p₂ = 3,592 atm).
 - 9.13 ở α = 30°: SM ghi c_l = 1,19 và c_d,w = 0,687 vì bỏ cos α; đúng là 1,02 và 0,59.
 - 9.8: SM đọc đồ thị nên lệch dưới 1% so với tính trực tiếp.
-Không đối chiếu được: ch.5 (SM không có), 4.10–4.12, 5.4, 5.5, 9.15, 9.20, 11.4 (đánh số khác giữa các bản); các bài này kiểm bằng hai đường tính độc lập (công thức và nghiệm số, notebook).
+Không đối chiếu được: ch.5 (SM không có), 4.10–4.12, 5.4, 5.5, 9.15, 9.20 (đánh số khác giữa các bản); các bài này kiểm bằng hai đường tính độc lập (công thức và nghiệm số, notebook).
 ## Kiểm tra tự động
 `audit_quiz.py` kiểm: cân bằng vị trí đáp án, đáp án đúng không luôn dài nhất, không có hai phương án trùng nhau, mọi câu có giải thích. Lần kiểm này bắt được 2 câu có phương án trùng (Bài 5.4 và một câu ζ) và đã sửa.
 
 ## Bổ sung đối chiếu Solution Manual (lần 2)
 Khớp thêm: 3.15, 3.16, 3.17, 3.19, 3.20 · 11.1, 11.2 (SM dùng c_l,0 = 0,75 đọc từ Hình 4.5), 11.3, 11.4, 11.5, 11.6, 11.7 (lệch nhỏ vì SM nội suy bảng). 3.21 và 3.22 không có trong SM bản 4th.
-Lời giải bốn bước (Đề nói gì / Ý tưởng / Các bước / Kiểm tra): module 09, 10 và các bài chính của module 01, 02, 03. Các module 04–08 vẫn dùng lời giải ngắn hơn.
+Lời giải bốn bước (Đề nói gì / Ý tưởng / Các bước / Kiểm tra): có cho mọi bài tập có lời giải của cả 10 module (xem `data/retrofit.py` cho module 01–08; module 09, 10 viết thẳng trong file module).
+
+## Rà soát văn bản (lượt đọc lại cả 10 module, 11/2026)
+Mục tiêu: văn bản dễ đọc, bớt giọng máy, không đổi số liệu. Quy tắc: câu ngắn, bỏ các cụm dịch cứng, bỏ ghi chú kỹ thuật dựng site khỏi bài (tên file, Python, OCR, bản scan), ô "Nói dễ hiểu" phải thật sự giải thích, khối dài (tình huống, những chỗ dễ nhầm) chia thành gạch đầu dòng, số từ 5 chữ số trở lên chia nhóm ba chữ số, dấu trừ dùng ký tự chuẩn (−). Đã bỏ emoji trang trí ở tiêu đề và kết quả demo (giữ biểu tượng chọn giao diện).
+Số liệu được so với bản dựng trước bằng chương trình đếm số (chỉ khác ở chỗ cố ý sửa) và đáp án đúng của 372 câu quiz được so từng câu: chỉ một câu đổi đáp án, có chủ ý (bên dưới).
+
+Sai sót thật tìm thấy trong lượt đọc này và đã sửa:
+1. Module 04 và 08: viết ngược rằng ổn định hướng quá mạnh gây Dutch roll, quá yếu gây xoắn ốc. Đúng là quá mạnh (so với hiệu ứng dihedral) làm xoắn ốc dễ mất ổn định, quá yếu làm Dutch roll tắt yếu (EASA tr. 4.9; Etkin 6.8,6: xoắn ốc ổn định khi C_lβ·C_nr > C_lr·C_nβ). Câu quiz tương ứng ở module 08 có đáp án đặt sai và đã đảo.
+2. Module 05: lời giải thích câu (L/D)max ghi C_L = 0,712, đúng là 0,654.
+3. Module 06, 10: số Mach tới hạn là lúc bắt đầu có dòng siêu âm cục bộ, chưa phải lúc có sóng xung kích.
+4. Module 08: "sáu mode" sửa thành năm; công thức R có thừa chữ A (R = BCD − D² − B²E).
+5. Số hiển thị không khớp phép nhân: module 01 (ρ ở 1000 m = 1,11164, quiz ghi 1,1117), module 02 (ρ ở 3 km = 0,9091, quiz ghi 0,9093), module 04 (2(0,003289 + 0,3719) = 0,75038, không phải 0,750468); module 01 áp suất ở 40 000 ft là khoảng 18% (không phải 1/6).
+6. Dịch sai: "mũi tên của một mũi tên bay" (fletching, module 04), "hình ba chiều" (three-view drawing), "mất mômen nâng đầu" (Mach tuck, module 06), "bắt buộc" cho bộ giảm xoay (module 08, chỉ là cần thiết).
+7. Module 03 ghi bài 11.4 chưa đối chiếu được; thực ra Solution Manual có bài này (đọc M_cr ≈ 0,74 từ đồ thị).
+8. Etkin 1.5 chỉ nêu 5% MAC làm ví dụ ("e.g."), không phải yêu cầu cứng; đã sửa ở module 04 và demo.

@@ -3,10 +3,10 @@
   {
    "q": "Non-lifting cylinder. The pressure coefficient on the surface at θ = 90° is:",
    "opts": [
-    "-3",
+    "−3",
     "1",
-    "-1",
-    "-2"
+    "−1",
+    "−2"
    ],
    "correct": 0,
    "explain": "C_p = 1 − (V/V∞)², V = 2V∞ sin θ.",
@@ -101,7 +101,7 @@
    ],
    "correct": 0,
    "explain": "V = 2V∞ sin θ is largest at θ = 90°.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The stagnation points of a non-lifting cylinder are at:",
@@ -113,7 +113,7 @@
    ],
    "correct": 2,
    "explain": "V_θ = −2V sin θ = 0 ⇒ sin θ = 0.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "With Γ/(4πVR) = 0.5 the stagnation point is at θ equal to:",
@@ -121,11 +121,11 @@
     "−60°",
     "30°",
     "0°",
-    "-30°"
+    "−30°"
    ],
    "correct": 3,
    "explain": "sin θ = −Γ/(4πVR) = −0.5.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "d'Alembert's paradox says inviscid incompressible flow round a two-dimensional body has a drag of:",
@@ -137,7 +137,7 @@
    ],
    "correct": 3,
    "explain": "The pressure distribution is symmetric front-to-back.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Doubling the velocity at the same Γ and ρ makes the lift L′ = ρVΓ:",
@@ -149,7 +149,7 @@
    ],
    "correct": 0,
    "explain": "L′ is proportional to V (unlike L ∝ V² for a wing at fixed C_L).",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A doublet is made from:",
@@ -161,7 +161,7 @@
    ],
    "correct": 1,
    "explain": "Anderson 3.12.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   }
  ]
 }

@@ -100,7 +100,7 @@
    "correct": 1,
    "explain": "The \"sum of the dampings\" of the modes.",
    "src": "Etkin & Reid, Exercise 6.4",
-   "detail": "<p>−Σ Re λ = 2(0.003289 + 0.3719) = 0.750468 ≈ 0.750468 ✓. That is also why a positive value is necessary for stability.</p>"
+   "detail": "<p>−Σ Re λ = 2(0.003289 + 0.3719) ≈ 0.750468, the coefficient printed in the book. This coefficient is the total \"damping\" of the modes, so it must be positive for stability.</p>"
   },
   {
    "q": "The time for the B747 phugoid amplitude to halve (t½ = ln 2/|σ|, σ = −0.003289) is:",
@@ -135,12 +135,12 @@
    "opts": [
     "0.10",
     "0.0875",
-    "-0.10",
+    "−0.10",
     "0.60"
    ],
    "correct": 0,
    "explain": "K_n = h_n − h = 0.10; positive, hence stable.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Moving the CG aft to exactly the neutral point makes C_mα:",
@@ -152,19 +152,19 @@
    ],
    "correct": 1,
    "explain": "C_mα = C_Lα(h − h_n) = 0 when h = h_n (Etkin 2.3).",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "With C_Lα = 4.5 per rad, h = 0.25, h_n = 0.35, C_mα is:",
    "opts": [
-    "-0.10 /rad",
+    "−0.10 /rad",
     "0.45 /rad",
-    "-0.45 /rad",
+    "−0.45 /rad",
     "2.70 /rad"
    ],
    "correct": 2,
    "explain": "C_mα = 4.5 × (0.25 − 0.35) = −0.45; negative means stable.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "An oscillation whose initial tendency is to return but whose amplitude then grows over time shows:",
@@ -176,7 +176,7 @@
    ],
    "correct": 1,
    "explain": "The initial tendency to return is static positive; amplitude growing in time is dynamic negative (EASA p. 4.3).",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A wing with dihedral drops and the aircraft slips towards the low wing. The low wing then has:",
@@ -188,7 +188,7 @@
    ],
    "correct": 2,
    "explain": "The restoring rolling moment levels the aircraft.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Dutch roll is a coupled oscillation of:",
@@ -200,7 +200,7 @@
    ],
    "correct": 0,
    "explain": "Etkin Exercise 6.11 and EASA p. 4.9 describe it as a directional oscillation tied to rolling.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Reducing airspeed makes the downwash on the horizontal tail:",
@@ -212,7 +212,7 @@
    ],
    "correct": 0,
    "explain": "EASA Figure 4-5: lower speed means less downwash.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Why is the aft CG limit a safety limit when loading?",
@@ -224,7 +224,7 @@
    ],
    "correct": 2,
    "explain": "Static margin K_n shrinks as the CG moves aft; K_n = 0 is the edge of static instability.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "In the Lanchester approximation an aircraft flying at 200 m/s has a phugoid period of about:",
@@ -236,7 +236,7 @@
    ],
    "correct": 0,
    "explain": "T = π√2·V/g.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "An eigenvalue λ = −0.1 ± 1.0i has a damping ratio ζ of about:",
@@ -248,7 +248,7 @@
    ],
    "correct": 1,
    "explain": "ζ = −σ/|λ| = 0.1/√1.01.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A mode whose real part σ is positive is:",
@@ -260,7 +260,7 @@
    ],
    "correct": 2,
    "explain": "A root with a positive real part diverges.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The time to half amplitude when σ = −0.05 1/s is:",
@@ -272,7 +272,7 @@
    ],
    "correct": 1,
    "explain": "t½ = ln 2/|σ|.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A yaw damper is mainly used to add damping to:",
@@ -284,7 +284,7 @@
    ],
    "correct": 2,
    "explain": "Etkin 8.7: the yaw damper on swept-wing aircraft.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "According to Etkin 2.3, the closer the CG moves to the neutral point the static margin K_n:",
@@ -296,7 +296,7 @@
    ],
    "correct": 0,
    "explain": "K_n = h_n − h shrinks to zero.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   }
  ]
 }

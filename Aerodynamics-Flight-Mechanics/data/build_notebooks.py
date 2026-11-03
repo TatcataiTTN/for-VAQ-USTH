@@ -39,9 +39,9 @@ n1 = nb([
     md("""# Module 01: Khí quyển chuẩn ISA / The International Standard Atmosphere
 **AE2.008 · USTH: Aerodynamics and Flight Mechanics**
 
-🇻🇳 Notebook cài đặt ISA bằng code, đối chiếu các con số trong **EASA Module 08** (Hình 1-3, 1-4, 1-7), giải lại các bài **Anderson 1.1, 1.11, 1.12** và dùng `assert` để tự kiểm các đáp án quiz của module.
+**VI.** Notebook cài đặt ISA bằng code, đối chiếu các con số trong **EASA Module 08** (Hình 1-3, 1-4, 1-7), giải lại các bài **Anderson 1.1, 1.11, 1.12** và dùng `assert` để tự kiểm các đáp án quiz của module.
 
-🇬🇧 This notebook implements ISA in code, checks the numbers in **EASA Module 08** (Figures 1-3, 1-4, 1-7), re-solves **Anderson 1.1, 1.11, 1.12** and uses `assert` to self-check the module's quiz answers."""),
+**EN.** This notebook implements ISA in code, checks the numbers in **EASA Module 08** (Figures 1-3, 1-4, 1-7), re-solves **Anderson 1.1, 1.11, 1.12** and uses `assert` to self-check the module's quiz answers."""),
     code(ISA),
     md("## 1. Đơn vị áp suất / Pressure units (EASA Fig. 1-3)"),
     code('''atm = P0
@@ -96,9 +96,9 @@ n2 = nb([
     md("""# Module 02: Khí động lực học / Aerodynamics
 **AE2.008 · USTH: Aerodynamics and Flight Mechanics**
 
-🇻🇳 Giải lại các bài **Anderson 1.5, 3.3, 3.4, 3.6, 3.7, 3.18, 4.2, 4.5, 4.10, 4.11, 4.12**, vẽ đường cong C_L theo góc tấn của NACA 2412 (số liệu từ bài 1.6) và đường cực lý thuyết, rồi `assert` các đáp án quiz.
+**VI.** Giải lại các bài **Anderson 1.5, 3.3, 3.4, 3.6, 3.7, 3.18, 4.2, 4.5, 4.10, 4.11, 4.12**, vẽ đường cong C_L theo góc tấn của NACA 2412 (số liệu từ bài 1.6) và đường cực lý thuyết, rồi dùng `assert` để kiểm các đáp án quiz.
 
-🇬🇧 Re-solves **Anderson 1.5, 3.3, 3.4, 3.6, 3.7, 3.18, 4.2, 4.5, 4.10, 4.11, 4.12**, plots the NACA 2412 C_L-versus-angle curve (data from Problem 1.6) and a theoretical polar, then asserts the quiz answers."""),
+**EN.** Re-solves **Anderson 1.5, 3.3, 3.4, 3.6, 3.7, 3.18, 4.2, 4.5, 4.10, 4.11, 4.12**, plots the NACA 2412 C_L-versus-angle curve (data from Problem 1.6) and a theoretical polar, then uses `assert` to check the quiz answers."""),
     code(ISA + "\nimport numpy as np\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\n"),
     md("## 1. Hệ số lực / Force coefficients (Anderson 1.5)"),
     code('''a = math.radians(12); cn, ca = 1.2, 0.03
@@ -148,9 +148,9 @@ n3 = nb([
     md("""# Module 03: Lý thuyết bay / Theory of Flight
 **AE2.008 · USTH: Aerodynamics and Flight Mechanics**
 
-🇻🇳 Giải lại **Anderson 5.4, 5.5, 8.1, 8.7, 8.11, 11.4**, tính bảng hệ số tải và tốc độ thất tốc trong vòng bay, kiểm tốc độ âm thanh của EASA (661 kt và 574 kt) rồi `assert` các đáp án quiz.
+**VI.** Giải lại **Anderson 5.4, 5.5, 8.1, 8.7, 8.11, 11.4**, tính bảng hệ số tải và tốc độ thất tốc trong vòng bay, kiểm tốc độ âm thanh của EASA (661 kt và 574 kt) rồi dùng `assert` để kiểm các đáp án quiz.
 
-🇬🇧 Re-solves **Anderson 5.4, 5.5, 8.1, 8.7, 8.11, 11.4**, builds the load-factor and turn-stall table, checks the EASA speeds of sound (661 kt and 574 kt) and asserts the quiz answers."""),
+**EN.** Re-solves **Anderson 5.4, 5.5, 8.1, 8.7, 8.11, 11.4**, builds the load-factor and turn-stall table, checks the EASA speeds of sound (661 kt and 574 kt) and uses `assert` to check the quiz answers."""),
     code(ISA + '''
 def a_sound(T, R=R_AIR, g=GAMMA): return math.sqrt(g*R*T)
 def pitot_ratio(M, g=GAMMA): return (1+(g-1)/2*M*M)**(g/(g-1))
@@ -232,9 +232,9 @@ n4 = nb([
     md("""# Module 04: Ổn định và động lực học bay / Flight Stability and Dynamics
 **AE2.008 · USTH: Aerodynamics and Flight Mechanics**
 
-🇻🇳 Nhập ma trận hệ thống **A** của Boeing 747 từ Etkin & Reid (phương trình 6.2,1), tính trị riêng và so với giá trị in trong sách (6.2,3), tính chu kỳ T, hệ số tắt dần ζ và thời gian giảm một nửa, kiểm xấp xỉ Lanchester (Bài tập 6.1) và tổng độ tắt dần (Bài tập 6.4), mô phỏng đáp ứng bằng ma trận mũ, và `assert` các đáp án quiz.
+**VI.** Nhập ma trận hệ thống **A** của Boeing 747 từ Etkin & Reid (phương trình 6.2,1), tính trị riêng và so với giá trị in trong sách (6.2,3), tính chu kỳ T, hệ số tắt dần ζ và thời gian giảm một nửa, kiểm xấp xỉ Lanchester (Bài tập 6.1) và tổng độ tắt dần (Bài tập 6.4), mô phỏng đáp ứng bằng ma trận mũ, và dùng `assert` để kiểm các đáp án quiz.
 
-🇬🇧 Enters the Boeing 747 system matrix **A** from Etkin & Reid (equation 6.2,1), computes the eigenvalues and compares them with the printed values (6.2,3), computes the period T, damping ratio ζ and time to half amplitude, checks the Lanchester approximation (Exercise 6.1) and the sum of the dampings (Exercise 6.4), simulates the response with the matrix exponential, and asserts the quiz answers."""),
+**EN.** Enters the Boeing 747 system matrix **A** from Etkin & Reid (equation 6.2,1), computes the eigenvalues and compares them with the printed values (6.2,3), computes the period T, damping ratio ζ and time to half amplitude, checks the Lanchester approximation (Exercise 6.1) and the sum of the dampings (Exercise 6.4), simulates the response with the matrix exponential, and uses `assert` to check the quiz answers."""),
     code('''import numpy as np, math
 import matplotlib
 matplotlib.use("Agg")

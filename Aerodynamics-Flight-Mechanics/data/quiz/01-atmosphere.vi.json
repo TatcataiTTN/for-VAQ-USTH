@@ -49,7 +49,7 @@
    "correct": 0,
    "explain": "ρ = p/(RT) = 1,9×10⁴/(287 × 203).",
    "src": "Anderson 6th, Problem 1.1a",
-   "detail": "<p>ρ = 1,9×10⁴/(287 × 203) = 1,9×10⁴/58 261 = 0,326 kg/m³. Solution Manual in cùng giá trị 0,326.</p>"
+   "detail": "<p>ρ = 1,9×10⁴/(287 × 203) = 1,9×10⁴/58 261 = 0,326 kg/m³. Solution Manual cho cùng giá trị 0,326.</p>"
   },
   {
    "q": "Trong buồng thử của hầm gió siêu âm, p = 1058 lb/ft² và ρ = 1,23×10⁻³ slug/ft³. Nhiệt độ tại đó (R = 1716 ft·lb/(slug·°R)) là:",
@@ -75,10 +75,10 @@
    "correct": 3,
    "explain": "Cột thủy ngân cao hơn nằm ở phía áp suất thấp hơn, nên p_mô hình = p_khí quyển − ρgh.",
    "src": "Anderson 6th, Problem 1.11",
-   "detail": "<p>p = 1,01×10⁵ − (1,36×10⁴)(9,8)(0,2) = 1,01×10⁵ − 26656 = 74344 N/m². Khớp đáp án 7,43×10⁴ trong Solution Manual. Sai lầm phổ biến là cộng thay vì trừ.</p>"
+   "detail": "<p>p = 1,01×10⁵ − (1,36×10⁴)(9,8)(0,2) = 1,01×10⁵ − 26 656 = 74 344 N/m². Khớp đáp án 7,43×10⁴ trong Solution Manual. Lỗi hay gặp là cộng thay vì trừ.</p>"
   },
   {
-   "q": "Zeppelin thể tích 15 000 m³, đường kính lớn nhất 14 m, bay thẳng đều 30 m/s ở độ cao chuẩn 1 000 m (ρ = 1,1117 kg/m³) với C_L = 0,05 (tính theo tiết diện ngang lớn nhất). Tổng trọng lượng là:",
+   "q": "Zeppelin thể tích 15 000 m³, đường kính lớn nhất 14 m, bay thẳng đều 30 m/s ở độ cao chuẩn 1000 m (ρ ≈ 1,112 kg/m³) với C_L = 0,05 (tính theo tiết diện ngang lớn nhất). Tổng trọng lượng là:",
    "opts": [
     "3,268×10⁵ N",
     "1,673×10⁵ N",
@@ -88,7 +88,7 @@
    "correct": 1,
    "explain": "W = lực đẩy Archimedes B + lực nâng khí động L.",
    "src": "Anderson 6th, Problem 1.12",
-   "detail": "<p>B = 15 000 × 1,1117 × 9,8 = 163411 N; q = ½ρV² = 500,2 Pa; S = πd²/4 = 153,9 m²; L = qSC_L = 3850 N; W = B + L = 167262 N. Chỉ tính lực nâng khí động sẽ ra đáp án sai (3850 N).</p>"
+   "detail": "<p>Mật độ ISA ở 1000 m là 1,1116 kg/m³. B = ρVg = 1,1116 × 15 000 × 9,8 ≈ 1,634×10⁵ N; q = ½ρV² = 500,2 Pa; S = πd²/4 = 153,9 m²; L = qSC_L = 3850 N; W = B + L ≈ 1,673×10⁵ N. Nếu chỉ tính lực nâng khí động thì được 3850 N: sai.</p>"
   }
  ],
  "generated": [
@@ -102,31 +102,31 @@
    ],
    "correct": 3,
    "explain": "Áp suất giảm theo hàm mũ chứ không tuyến tính; công thức ISA cho 2,72 psi.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Nhiệt độ ISA ở tropopause (11 000 m) là:",
    "opts": [
-    "-56,5 °C",
+    "−56,5 °C",
     "−90 °C",
     "0 °C",
     "−40 °C"
    ],
    "correct": 0,
    "explain": "15 − 6,5 × 11 = −56,5 °C, EASA làm tròn −57 °C.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Nhiệt độ ISA ở 30 000 ft (tầng đối lưu) xấp xỉ:",
    "opts": [
-    "-69,4 °C",
+    "−69,4 °C",
     "15 °C",
-    "-19,4 °C",
-    "-44,4 °C"
+    "−19,4 °C",
+    "−44,4 °C"
    ],
    "correct": 3,
-   "explain": "15 °C − 6,5 K/km × 9,144 km ≈ −44,4 °C, tương đương −2 °C mỗi 1 000 ft.",
-   "src": "Bổ sung (biên soạn)"
+   "explain": "15 °C − 6,5 K/km × 9,144 km ≈ −44,4 °C, tương đương −2 °C mỗi 1000 ft.",
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Giữ áp suất không đổi và tăng nhiệt độ tuyệt đối gấp đôi thì mật độ:",
@@ -138,7 +138,7 @@
    ],
    "correct": 1,
    "explain": "ρ = p/(RT): T gấp đôi thì ρ giảm một nửa.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Vì sao không khí ẩm có mật độ thấp hơn không khí khô ở cùng p và T?",
@@ -150,7 +150,7 @@
    ],
    "correct": 2,
    "explain": "EASA: hơi nước nặng khoảng 5/8 không khí khô cùng thể tích.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Tại tropopause ISA (36 089 ft), mật độ so với mực biển xấp xỉ:",
@@ -162,7 +162,7 @@
    ],
    "correct": 3,
    "explain": "σ = 0,3639/1,225 ≈ 0,30.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "1 atm bằng bao nhiêu hPa?",
@@ -174,7 +174,7 @@
    ],
    "correct": 3,
    "explain": "760 là mmHg, 14,7 là psi, 29,92 là inHg: cùng áp suất, khác đơn vị.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Ngày nóng và ẩm tại sân bay cao thì quãng đường cất cánh:",
@@ -186,7 +186,7 @@
    ],
    "correct": 0,
    "explain": "Mật độ thấp giảm lực nâng và lực đẩy; lực cản giảm nhưng không bù được.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Mật độ ISA ở 10 000 ft xấp xỉ:",
@@ -198,7 +198,7 @@
    ],
    "correct": 3,
    "explain": "EASA Hình 1-7 ghi 0,9; tính được 0,905.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Áp suất ISA ở 20 000 ft theo hPa xấp xỉ:",
@@ -210,19 +210,19 @@
    ],
    "correct": 0,
    "explain": "EASA ghi 465,4 hPa; tính được 465,6 hPa.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Nhiệt độ ISA ở 10 000 ft xấp xỉ:",
    "opts": [
     "15 °C",
-    "-24,8 °C",
+    "−24,8 °C",
     "10,2 °C",
-    "-4,8 °C"
+    "−4,8 °C"
    ],
    "correct": 3,
    "explain": "15 − 2 × 10 = −5 °C theo quy tắc −2 °C/1000 ft; EASA ghi −4,8 °C.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Trong tầng nào nhiệt độ tăng theo độ cao (ngoài ISA đẳng nhiệt)?",
@@ -234,7 +234,7 @@
    ],
    "correct": 1,
    "explain": "Ôzôn hấp thụ tia cực tím làm không khí ấm lên (EASA tr. 1.5).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Ở mực biển, nhiệt độ cao hơn ISA 15 °C (30 °C). Độ cao mật độ xấp xỉ:",
@@ -246,7 +246,7 @@
    ],
    "correct": 2,
    "explain": "Mật độ thật thấp hơn ISA nên máy bay hoạt động như ở độ cao cao hơn.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Theo EASA, tầng đối lưu ở xích đạo mở rộng tới khoảng:",
@@ -258,7 +258,7 @@
    ],
    "correct": 3,
    "explain": "Ở hai cực chỉ 25 000 đến 30 000 ft, trung bình khoảng 38 000 ft.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   }
  ]
 }

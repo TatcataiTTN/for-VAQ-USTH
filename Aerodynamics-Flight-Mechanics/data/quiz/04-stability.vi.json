@@ -100,7 +100,7 @@
    "correct": 1,
    "explain": "Tổng \"độ tắt dần\" của các mode.",
    "src": "Etkin & Reid, Bài tập 6.4",
-   "detail": "<p>−Σ Re λ = 2(0,003289 + 0,3719) = 0,750468 ≈ 0,750468 ✓. Đây cũng là lý do hệ số này dương là điều kiện cần cho ổn định.</p>"
+   "detail": "<p>−Σ Re λ = 2(0,003289 + 0,3719) ≈ 0,750468, đúng bằng hệ số in trong sách. Hệ số này cho biết tổng \"độ tắt dần\" của các mode, nên nó phải dương thì mới có thể ổn định.</p>"
   },
   {
    "q": "Thời gian để biên độ phugoid của B747 giảm một nửa (t½ = ln 2/|σ|, σ = −0,003289) là:",
@@ -135,12 +135,12 @@
    "opts": [
     "0,10",
     "0,0875",
-    "-0,10",
+    "−0,10",
     "0,60"
    ],
    "correct": 0,
    "explain": "K_n = h_n − h = 0,10; dương nên ổn định.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Dời CG ra phía sau đến đúng điểm trung hòa thì C_mα:",
@@ -152,19 +152,19 @@
    ],
    "correct": 1,
    "explain": "C_mα = C_Lα(h − h_n) = 0 khi h = h_n (Etkin 2.3).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Với C_Lα = 4,5/rad, h = 0,25, h_n = 0,35, giá trị C_mα là:",
    "opts": [
-    "-0,10 /rad",
+    "−0,10 /rad",
     "0,45 /rad",
-    "-0,45 /rad",
+    "−0,45 /rad",
     "2,70 /rad"
    ],
    "correct": 2,
    "explain": "C_mα = 4,5 × (0,25 − 0,35) = −0,45; âm nghĩa là ổn định.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Một dao động có biên độ ban đầu giảm rồi lại tăng dần theo thời gian thì có:",
@@ -176,7 +176,7 @@
    ],
    "correct": 1,
    "explain": "Xu hướng ban đầu quay về là tĩnh dương; biên độ tăng theo thời gian là động âm (EASA tr. 4.3).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Cánh có dihedral bị nghiêng; máy bay trượt về phía cánh thấp. Cánh thấp sẽ có:",
@@ -188,7 +188,7 @@
    ],
    "correct": 2,
    "explain": "Mômen lăn phục hồi đưa máy bay về ngang bằng.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Dutch roll là dao động kết hợp của:",
@@ -200,7 +200,7 @@
    ],
    "correct": 0,
    "explain": "Etkin bài 6.11 và EASA tr. 4.9 mô tả đây là dao động hướng gắn với lăn.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Giảm tốc độ bay làm downwash lên đuôi ngang:",
@@ -212,7 +212,7 @@
    ],
    "correct": 0,
    "explain": "EASA Hình 4-5: tốc độ giảm thì downwash giảm.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Vì sao giới hạn CG sau là giới hạn an toàn khi chất tải?",
@@ -224,7 +224,7 @@
    ],
    "correct": 2,
    "explain": "Lề ổn định K_n giảm khi CG lùi; K_n = 0 là bất ổn tĩnh.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Xấp xỉ Lanchester cho máy bay bay 200 m/s: chu kỳ phugoid xấp xỉ:",
@@ -236,7 +236,7 @@
    ],
    "correct": 0,
    "explain": "T = π√2·V/g.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Trị riêng λ = −0,1 ± 1,0i có hệ số tắt dần ζ xấp xỉ:",
@@ -248,7 +248,7 @@
    ],
    "correct": 1,
    "explain": "ζ = −σ/|λ| = 0,1/√1,01.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Một mode có phần thực σ dương thì:",
@@ -260,7 +260,7 @@
    ],
    "correct": 2,
    "explain": "Nghiệm có phần thực dương làm phân kỳ.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Thời gian giảm một nửa biên độ khi σ = −0,05 1/s là:",
@@ -272,7 +272,7 @@
    ],
    "correct": 1,
    "explain": "t½ = ln 2/|σ|.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Bộ giảm xoay (yaw damper) chủ yếu dùng để tăng tắt dần cho:",
@@ -284,7 +284,7 @@
    ],
    "correct": 2,
    "explain": "Etkin 8.7: yaw damper cho máy bay cánh xuôi.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Theo Etkin 2.3, CG càng lùi về phía điểm trung hòa thì lề ổn định tĩnh K_n:",
@@ -296,7 +296,7 @@
    ],
    "correct": 0,
    "explain": "K_n = h_n − h giảm dần về 0.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   }
  ]
 }

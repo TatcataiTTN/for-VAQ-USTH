@@ -122,7 +122,7 @@
    "correct": 1,
    "explain": "Bernoulli with continuity: Δp = ½ρV₂²(1 − 1/144).",
    "src": "Anderson 6th, Problem 3.4",
-   "detail": "<p>Δp = ρ_Hg g h = 13342 N/m²; V₂ = √[2Δp/(ρ(1 − (A₂/A₁)²))] = 147.8 m/s. Dropping the (1 − 1/144) factor changes the result by only about 0.35%.</p>"
+   "detail": "<p>Δp = ρ_Hg g h = 13 342 N/m²; V₂ = √[2Δp/(ρ(1 − (A₂/A₁)²))] = 147.8 m/s. Dropping the (1 − 1/144) factor changes the result by only about 0.35%.</p>"
   },
   {
    "q": "A Pitot tube on an aircraft at standard sea level (p = 1.01×10⁵ N/m², ρ = 1.23 kg/m³) reads 1.07×10⁵ N/m². The aircraft speed is:",
@@ -140,7 +140,7 @@
   {
    "q": "At a point on the wing of the aircraft in Problem 3.6 the local velocity is 130 m/s. The pressure coefficient C_p there is:",
    "opts": [
-    "-0.732",
+    "−0.732",
     "1.732",
     "0.732",
     "0.423"
@@ -148,7 +148,7 @@
    "correct": 0,
    "explain": "C_p = 1 − (V/V∞)².",
    "src": "Anderson 6th, Problem 3.7",
-   "detail": "<p>C_p = 1 − (130/98.77)² = -0.732. Negative means pressure below the free stream, as expected on a suction surface.</p>"
+   "detail": "<p>C_p = 1 − (130/98.77)² = −0.732. Negative means pressure below the free stream, as expected on a suction surface.</p>"
   },
   {
    "q": "A NACA 2412 airfoil with a 2 m chord at 50 m/s at standard sea level has a lift per unit span of 1353 N/m (ρ = 1.23). The lift coefficient and angle of attack (from the NACA 2412 c_l table of Problem 1.6) are:",
@@ -159,22 +159,22 @@
     "c_l = 0.44, α = 2°"
    ],
    "correct": 3,
-   "explain": "c_l = L'/(q c), then read α from the table.",
+   "explain": "c_l = L′/(q c), then read α from the table.",
    "src": "Anderson 6th, Problem 4.2",
    "detail": "<p>q = ½(1.23)(50²) = 1537.5 N/m²; c_l = 1353/(1537.5×2) = 0.44. NACA 2412 table: α = 2° gives c_l = 0.44.</p>"
   },
   {
    "q": "A thin symmetric airfoil at 1.5° angle of attack. From thin-airfoil theory c_l and c_m,LE are respectively:",
    "opts": [
-    "0.2467 ; -0.0411",
-    "0.1645 ; -0.0411",
-    "0.1645 ; -0.0822",
-    "0.0822 ; -0.0822"
+    "0.2467 ; −0.0411",
+    "0.1645 ; −0.0411",
+    "0.1645 ; −0.0822",
+    "0.0822 ; −0.0822"
    ],
    "correct": 1,
    "explain": "c_l = 2πα (α in radians), c_m,LE = −c_l/4.",
    "src": "Anderson 6th, Problem 4.5",
-   "detail": "<p>α = 1.5° = 0.02618 rad so c_l = 2π·α = 0.1645. The centre of pressure of a thin symmetric airfoil is at c/4, so c_m,LE = −c_l/4 = -0.0411.</p>"
+   "detail": "<p>α = 1.5° = 0.02618 rad so c_l = 2π·α = 0.1645. The centre of pressure of a thin symmetric airfoil is at c/4, so c_m,LE = −c_l/4 = −0.0411.</p>"
   },
   {
    "q": "NACA 2412: at α = −6° c_l = −0.39 and c_m,c/4 = −0.045; at α = 4° c_l = 0.65 and c_m,c/4 = −0.037. The aerodynamic centre x_ac/c is:",
@@ -190,7 +190,7 @@
    "detail": "<p>dc_m/dc_l = (−0.037 + 0.045)/(0.65 + 0.39) = 0.00769; h_ac = 0.25 − 0.00769 = 0.2423. The aerodynamic centre is almost at the quarter chord.</p>"
   },
   {
-   "q": "A NACA 2412 airfoil of 2 m chord flies at 60 m/s at a standard altitude of 3 km (ρ = 0.9093 kg/m³) with α = 4° (c_l = 0.65). The lift per unit span is:",
+   "q": "A NACA 2412 airfoil of 2 m chord flies at 60 m/s at a standard altitude of 3 km (ρ ≈ 0.909 kg/m³) with α = 4° (c_l = 0.65). The lift per unit span is:",
    "opts": [
     "2866 N/m",
     "4255 N/m",
@@ -198,9 +198,9 @@
     "1064 N/m"
    ],
    "correct": 2,
-   "explain": "L' = ½ρV²·c·c_l.",
+   "explain": "L′ = ½ρV²·c·c_l.",
    "src": "Anderson 6th, Problem 4.11",
-   "detail": "<p>ρ(3 km) = 0.9091 kg/m³ from ISA; q = 1636.4 N/m²; L' = 1636.4×2×0.65 = 2127 N/m. Using sea-level density instead of 3 km density shifts the result by about 35%.</p>"
+   "detail": "<p>ρ(3 km) = 0.9091 kg/m³ from ISA; q = 1636.4 N/m²; L′ = 1636.4×2×0.65 = 2127 N/m. Using sea-level density instead of 3 km density shifts the result by about 35%.</p>"
   }
  ],
  "generated": [
@@ -214,7 +214,7 @@
    ],
    "correct": 1,
    "explain": "L ∝ V²; EASA gives exactly this example in the Lift section.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A wing has a 12 m span and 20 m² area. Its aspect ratio AR is:",
@@ -226,7 +226,7 @@
    ],
    "correct": 3,
    "explain": "AR = b²/S = 144/20.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Everything else equal, increasing the wing AR makes induced drag:",
@@ -238,7 +238,7 @@
    ],
    "correct": 0,
    "explain": "C_Di = C_L²/(π e AR): larger AR gives smaller C_Di.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The pressure at the stagnation point of a free stream equals:",
@@ -250,7 +250,7 @@
    ],
    "correct": 3,
    "explain": "The flow is brought fully to rest, so all the dynamic pressure becomes static pressure.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A pressure coefficient C_p = −1 occurs at a point where the local velocity equals:",
@@ -262,7 +262,7 @@
    ],
    "correct": 2,
    "explain": "C_p = 1 − (V/V∞)² = −1 gives V = √2·V∞.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "What is the main effect of ice left on the wing before take-off?",
@@ -274,7 +274,7 @@
    ],
    "correct": 2,
    "explain": "A rough surface degrades the boundary layer (EASA p. 2.9); even thin ice is dangerous.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "For a thin symmetric airfoil in theory the centre of pressure lies at:",
@@ -286,7 +286,7 @@
    ],
    "correct": 0,
    "explain": "A thin symmetric airfoil has its centre of pressure at the aerodynamic centre, c/4 (Anderson 4.7–4.9).",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Compared with a laminar boundary layer, a turbulent one usually:",
@@ -298,7 +298,7 @@
    ],
    "correct": 1,
    "explain": "A turbulent layer carries more momentum near the wall so it clings better, at the price of higher skin friction.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The dynamic pressure q at 100 m/s at ISA sea level (ρ = 1.225) is:",
@@ -306,23 +306,23 @@
     "3062 Pa",
     "6125 Pa",
     "123 Pa",
-    "12250 Pa"
+    "12 250 Pa"
    ],
    "correct": 1,
    "explain": "q = ½ρV² = 0.5 × 1.225 × 10 000.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A wing with S = 20 m², V = 60 m/s and C_L = 0.5 at ISA sea level produces a lift of:",
    "opts": [
-    "11025 N",
-    "44100 N",
-    "79380 N",
-    "22050 N"
+    "11 025 N",
+    "44 100 N",
+    "79 380 N",
+    "22 050 N"
    ],
    "correct": 3,
    "explain": "L = ½ρV²·S·C_L.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "A wing with AR = 8, e = 0.9 and C_L = 0.8 has C_Di equal to:",
@@ -334,7 +334,7 @@
    ],
    "correct": 0,
    "explain": "C_Di = C_L²/(π e AR).",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "Doubling the wing area while keeping speed, density and C_L, the lift:",
@@ -346,7 +346,7 @@
    ],
    "correct": 3,
    "explain": "L is proportional to S.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "The Reynolds number Re = ρVc/μ with ρ = 1.225, V = 50 m/s, c = 2 m, μ = 1.789×10⁻⁵ kg/(m·s) is approximately:",
@@ -358,7 +358,7 @@
    ],
    "correct": 2,
    "explain": "A large Re means the boundary layer readily turns turbulent.",
-   "src": "Supplementary (authored)"
+   "src": "Extra practice"
   },
   {
    "q": "With the same V, S and C_L, what fraction of the sea-level lift is produced at a standard 3 km altitude?",
@@ -369,8 +369,8 @@
     "0.50"
    ],
    "correct": 2,
-   "explain": "L is proportional to ρ; σ(3 km) = 0.9093/1.225.",
-   "src": "Supplementary (authored)"
+   "explain": "L is proportional to ρ; σ(3 km) = 0.909/1.225 ≈ 0.74.",
+   "src": "Extra practice"
   }
  ]
 }

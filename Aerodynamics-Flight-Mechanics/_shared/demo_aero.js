@@ -122,7 +122,7 @@
     function upd() {
       var s = isa(alt.get() * FT, 0), q = 0.5 * s.rho * V.get() * V.get(), cl = interp(al.get(), ALPHA, CLT), cd = interp(al.get(), ALPHA, CDT), Lf = q * S.get() * cl, W = mass.get() * G0, clreq = W / (q * S.get());
       out.innerHTML = '<p>q = ' + fmt(q, 1) + ' Pa &nbsp; C<sub>L</sub>(α) = ' + fmt(cl, 2) + ' &nbsp; <b>L</b> = ' + fmt(Lf, 0) + ' N &nbsp; (' + T('trọng lượng', 'weight') + ' W = ' + fmt(W, 0) + ' N)</p><p>' +
-        T('C_L cần để bay thẳng đều: ', 'C_L needed for level flight: ') + '<b>' + fmt(clreq, 2) + '</b> ' + (clreq > 1.56 ? '⚠️ ' + T('vượt dải số liệu (c_l tối đa trong bảng 1,56)', 'beyond the table range (max c_l in the table is 1.56)') : (clreq <= cl ? '✅ ' + T('L ≥ W', 'L ≥ W') : '⬇️ ' + T('L &lt; W: tăng α hoặc tốc độ', 'L &lt; W: raise α or speed'))) +
+        T('C_L cần để bay thẳng đều: ', 'C_L needed for level flight: ') + '<b>' + fmt(clreq, 2) + '</b> ' + (clreq > 1.56 ? T('<b>Vượt dải số liệu</b> (c_l tối đa trong bảng 1,56)', '<b>Beyond the table range</b> (max c_l in the table is 1.56)') : (clreq <= cl ? T('<b>Đủ lực nâng</b> (L ≥ W)', '<b>Enough lift</b> (L ≥ W)') : T('<b>Thiếu lực nâng</b> (L &lt; W): tăng α hoặc tốc độ', '<b>Not enough lift</b> (L &lt; W): raise α or speed'))) +
         '</p><p>' + T('Số liệu c_l, c_d của NACA 2412 từ Anderson bài 1.6 (biên dạng 2D, nội suy tuyến tính, không có thất tốc ngoài 14°); đây là minh họa.', 'c_l and c_d of the NACA 2412 from Anderson problem 1.6 (2D section, linear interpolation, no stall data beyond 14°); this is an illustration.') + '</p>';
       chart(cv, [{ pts: ALPHA.map(function (a, i) { return [a, CLT[i]]; }), color: '#1657d6', dot: [al.get(), cl] }], { xlabel: 'α (°)', ylabel: 'c_l', xmin: -2, xmax: 14, ymin: 0, ymax: 1.8 });
     }
@@ -152,8 +152,8 @@
     var h = slider(T('Vị trí CG h (theo MAC)', 'CG position h (MAC fraction)'), 0.05, 0.6, 0.01, 0.25, '', upd, host), hn = slider(T('Điểm trung hòa h_n', 'Neutral point h_n'), 0.2, 0.6, 0.01, 0.35, '', upd, host), cla = slider('C_Lα', 2, 6, 0.1, 4.5, '/rad', upd, host), out = resultBox(host), cv = canvasFor(host, 240);
     function upd() {
       var s = staticStab(h.get(), hn.get(), cla.get()), stable = s.Cma < 0;
-      out.innerHTML = '<p><b>K<sub>n</sub></b> = h_n − h = ' + fmt(s.Kn, 2) + ' &nbsp; <b>C<sub>mα</sub></b> = C_Lα(h − h_n) = ' + fmt(s.Cma, 2) + ' /rad &nbsp; ' + (stable ? '✅ ' + T('ổn định tĩnh dọc (CG trước NP)', 'statically stable (CG ahead of the NP)') : (Math.abs(s.Cma) < 1e-9 ? '⚠️ ' + T('trung tính', 'neutral') : '❌ ' + T('bất ổn tĩnh (CG sau NP)', 'statically unstable (CG behind the NP)'))) + '</p>' +
-        (s.Kn >= 0.05 ? '' : '<p>⚠️ ' + T('Lề ổn định dưới 5% MAC: thấp hơn yêu cầu thông thường trong Etkin 1.5.', 'Static margin below 5% MAC: less than the usual requirement in Etkin 1.5.') + '</p>');
+      out.innerHTML = '<p><b>K<sub>n</sub></b> = h_n − h = ' + fmt(s.Kn, 2) + ' &nbsp; <b>C<sub>mα</sub></b> = C_Lα(h − h_n) = ' + fmt(s.Cma, 2) + ' /rad &nbsp; ' + (stable ? T('<b>Ổn định tĩnh dọc</b> (CG trước NP)', '<b>Statically stable</b> (CG ahead of the NP)') : (Math.abs(s.Cma) < 1e-9 ? T('<b>Trung tính</b>', '<b>Neutral</b>') : T('<b>Bất ổn tĩnh</b> (CG sau NP)', '<b>Statically unstable</b> (CG behind the NP)'))) + '</p>' +
+        (s.Kn >= 0.05 ? '' : '<p>' + T('Lề ổn định dưới 5% MAC, thấp hơn mức 5% mà Etkin 1.5 lấy làm ví dụ.', 'Static margin below 5% MAC, less than the 5% that Etkin 1.5 gives as an example.') + '</p>');
       var pts = []; for (var a = -0.1; a <= 0.1001; a += 0.01) pts.push([a * 180 / Math.PI, s.Cma * a]);
       chart(cv, [{ pts: pts, color: stable ? '#1a8a4a' : '#d4421d' }], { xlabel: 'Δα (°)', ylabel: 'ΔC_m', xmin: -5.7, xmax: 5.7, ymin: -1.6, ymax: 1.6, xd: 1 });
     }
@@ -192,7 +192,7 @@
     var M = slider(T('Mach thượng nguồn M₁', 'Upstream Mach M₁'), 1.2, 5, 0.05, 2.5, '', upd, host), th = slider(T('Góc lệch dòng θ', 'Flow deflection θ'), 1, 40, 0.1, 22.2, '°', upd, host), out = resultBox(host), cv = canvasFor(host, 250);
     function upd() {
       var m = M.get(), t = th.get() * Math.PI / 180, tm = thetaMax(m), h;
-      if (t > tm.theta) h = '<p>❌ ' + T('θ lớn hơn θ_max = ', 'θ exceeds θ_max = ') + fmt(tm.theta * 180 / Math.PI, 2) + '°: ' + T('sóng tách rời, không có nghiệm sóng bám.', 'the shock detaches; there is no attached solution.') + '</p>';
+      if (t > tm.theta) h = '<p>' + T('θ lớn hơn θ_max = ', 'θ exceeds θ_max = ') + fmt(tm.theta * 180 / Math.PI, 2) + '°: ' + T('sóng tách rời, không có nghiệm sóng bám.', 'the shock detaches; there is no attached solution.') + '</p>';
       else { var bw = betaFromTheta(m, t, false), bs = betaFromTheta(m, t, true), ow = oblique(m, bw, t), os = oblique(m, bs, t);
         h = '<p><b>' + T('Sóng yếu', 'Weak shock') + '</b> β = ' + fmt(bw * 180 / Math.PI, 2) + '°, M₂ = ' + fmt(ow.M2, 3) + ', p₂/p₁ = ' + fmt(ow.p, 3) + ', T₂/T₁ = ' + fmt(ow.T, 3) + ', p₀₂/p₀₁ = ' + fmt(ow.p0, 3) + '</p><p><b>' + T('Sóng mạnh', 'Strong shock') + '</b> β = ' + fmt(bs * 180 / Math.PI, 2) + '°, M₂ = ' + fmt(os.M2, 3) + ', p₂/p₁ = ' + fmt(os.p, 3) + '</p><p>θ_max = ' + fmt(tm.theta * 180 / Math.PI, 2) + '°, μ = ' + fmt(Math.asin(1 / m) * 180 / Math.PI, 2) + '°</p>'; }
       out.innerHTML = h;

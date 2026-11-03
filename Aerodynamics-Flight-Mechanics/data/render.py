@@ -18,37 +18,37 @@ VER = ver()
 
 T = {
  "vi": dict(site="Khí động lực học & Cơ học bay", sub="Tự học AE2.008 · USTH",
-   hero="Tự học môn AE2.008: Khí động lực học và Cơ học bay",
-   hero_sub="10 module bám EASA Module 08, mở rộng bằng Anderson và Etkin (Basic Aerodynamics), đối chiếu Anderson "
-            "<i>Fundamentals of Aerodynamics</i> (6th) và Etkin &amp; Reid <i>Dynamics of Flight</i> (3rd). "
-            "Có slide song ngữ kèm hình gốc, demo tương tác, quiz tự chấm, bài tập có lời giải và notebook Python.",
-   open="Mở bài giảng →", back="← Trang chủ", other="English", part="PHẦN", fs="⛶ Toàn màn hình",
-   prev="◀ Trước", next="Sau ▶", explain="📖 Giải thích cho người mới bắt đầu",
-   formula="Công thức", history="lịch sử", case="tình huống", warn="lưu ý",
-   quiz="✅ Quiz tự kiểm tra", prob="✍️ Bài tập có lời giải", reveal="👁️ Xem lời giải",
-   nb="📓 Notebook Python đi kèm", nbopen="Xem/tải notebook (.ipynb) →",
-   map="📚 Ánh xạ chương giáo trình", mapnav="Ánh xạ chương sách",
-   maptitle="Bảng ánh xạ: module ↔ chương giáo trình",
-   mapintro="Mỗi module đối chiếu mục lục thật của ba giáo trình trong đề cương AE2.008 (đọc từ bản OCR, không suy đoán). "
-            "Đề cương không có bảng chương nên thứ tự lấy theo EASA Module 08, giáo trình chính của môn.",
-   foot="Biên soạn từ OCR và đối chiếu chéo tài liệu môn AE2.008 (USTH). Mọi đáp án số đều tính lại bằng Python; "
-        "câu gốc ghi rõ nguồn, câu bổ sung gắn nhãn riêng."),
+   hero="Tự học AE2.008: Khí động lực học và Cơ học bay",
+   hero_sub="10 module bám theo EASA Module 08, bổ sung bằng hai giáo trình đại học: <i>Fundamentals of Aerodynamics</i> "
+            "(Anderson, bản 6) và <i>Dynamics of Flight</i> (Etkin &amp; Reid, bản 3). "
+            "Mỗi module có slide song ngữ kèm hình gốc, demo chạy ngay trên trang, quiz tự chấm, bài tập có lời giải và notebook Python.",
+   open="Mở module →", back="← Trang chủ", other="English", part="PHẦN", fs="Toàn màn hình",
+   prev="◀ Trước", next="Sau ▶", explain="Nói dễ hiểu",
+   formula="Công thức", history="Lịch sử", case="Tình huống", warn="Dễ nhầm",
+   quiz="Quiz tự kiểm tra", prob="Bài tập có lời giải", reveal="Xem lời giải",
+   nb="Notebook Python đi kèm", nbopen="Xem hoặc tải notebook (.ipynb) →",
+   map="Đối chiếu chương sách", mapnav="Đối chiếu chương sách",
+   maptitle="Module ↔ chương giáo trình",
+   mapintro="Mỗi module được đối chiếu với mục lục của ba giáo trình trong đề cương AE2.008. "
+            "Đề cương không liệt kê chương, nên các module xếp theo EASA Module 08, giáo trình chính của môn.",
+   foot="Tài liệu tự học AE2.008 (USTH), soạn từ giáo trình của môn. Mọi đáp án số đều đã được tính lại. "
+        "Câu hỏi gốc ghi rõ nguồn; câu hỏi bổ sung có nhãn riêng."),
  "en": dict(site="Aerodynamics & Flight Mechanics", sub="Self-study AE2.008 · USTH",
    hero="Self-study AE2.008: Aerodynamics and Flight Mechanics",
-   hero_sub="10 modules following EASA Module 08, extended with Anderson and Etkin (Basic Aerodynamics), cross-referenced with Anderson "
-            "<i>Fundamentals of Aerodynamics</i> (6th) and Etkin &amp; Reid <i>Dynamics of Flight</i> (3rd). "
-            "Bilingual slides with original figures, live demos, self-graded quizzes, worked problems and Python notebooks.",
-   open="Open lesson →", back="← Home", other="Tiếng Việt", part="PART", fs="⛶ Fullscreen",
-   prev="◀ Prev", next="Next ▶", explain="📖 Explained for complete beginners",
-   formula="Formula", history="history", case="case", warn="watch out",
-   quiz="✅ Self-check quiz", prob="✍️ Worked problems", reveal="👁️ Show the solution",
-   nb="📓 Companion Python notebook", nbopen="View/download notebook (.ipynb) →",
-   map="📚 Textbook chapter mapping", mapnav="Chapter mapping",
-   maptitle="Mapping: module ↔ textbook chapters",
-   mapintro="Each module is matched against the real tables of contents of the three textbooks listed in the AE2.008 syllabus "
-            "(read from the OCR text, not guessed). The syllabus has no chapter table, so the order follows EASA Module 08, the course's main text.",
-   foot="Built from OCR and cross-referenced AE2.008 (USTH) materials. Every numeric answer is recomputed in Python; "
-        "original questions cite their source and supplementary ones carry their own label."),
+   hero_sub="10 modules following EASA Module 08, extended with two university textbooks: <i>Fundamentals of Aerodynamics</i> "
+            "(Anderson, 6th ed.) and <i>Dynamics of Flight</i> (Etkin &amp; Reid, 3rd ed.). "
+            "Each module has bilingual slides with the original figures, live demos, self-graded quizzes, worked problems and a Python notebook.",
+   open="Open module →", back="← Home", other="Tiếng Việt", part="PART", fs="Fullscreen",
+   prev="◀ Prev", next="Next ▶", explain="In plain words",
+   formula="Formula", history="History", case="Case", warn="Pitfalls",
+   quiz="Self-check quiz", prob="Worked problems", reveal="Show the solution",
+   nb="Companion Python notebook", nbopen="View or download the notebook (.ipynb) →",
+   map="Textbook chapter mapping", mapnav="Chapter mapping",
+   maptitle="Module ↔ textbook chapters",
+   mapintro="Each module is matched against the contents pages of the three textbooks in the AE2.008 syllabus. "
+            "The syllabus has no chapter list, so the modules follow EASA Module 08, the course's main text.",
+   foot="Self-study notes for AE2.008 (USTH), built from the course textbooks. Every numeric answer has been recomputed. "
+        "Original questions cite their source; extra ones are labelled as such."),
 }
 
 def page(lang, prefix, body, title, desc, extra_css=""):
@@ -78,6 +78,11 @@ def page(lang, prefix, body, title, desc, extra_css=""):
 <script src="{prefix}_shared/theme.js?v={VER}"></script>
 </body></html>"""
 
+def blk(s):
+    """Wrap plain text in <p>; leave ready-made block HTML (lists, paragraphs) alone."""
+    s = s.strip()
+    return s if s.startswith(("<ul", "<ol", "<p", "<div")) else f"<p>{s}</p>"
+
 def slide(kicker, inner, divider=False):
     return f'<div class="mdeck-slide{" part-divider" if divider else ""}"><div class="kicker">{kicker}</div>{inner}</div>'
 
@@ -98,8 +103,8 @@ def deck(lang, m):
             sl.append(slide(f"{t['part']} {i}/5 · {m['num']}", f"<h2>{cs['title']}</h2>{cs['body']}{fig}{ex}"))
     legend = "".join(f"<li><b>{k}</b><span>{v}</span></li>" for k, v in m["legend"])
     sl.append(slide(f"{t['part']} · {t['formula']}", f"<h2>{m['formula_label']}</h2><div class='pd-formula'><div class='pd-formula-label'>{m['formula_label']}</div><div class='pd-formula-math'>{m['formula_math']}</div></div><ul class='pd-legend'>{legend}</ul>"))
-    for key, ic in (("history", "📜"), ("case", "🔎"), ("warn", "⚠️")):
-        sl.append(slide(f"{ic} {t[key]}", f"<h2>{m[key+'_title']}</h2><p>{m[key]}</p>"))
+    for key in ("history", "case", "warn"):
+        sl.append(slide(t[key], f"<h2>{m[key+'_title']}</h2>{blk(m[key])}"))
     return ('<div class="mdeck"><div class="mdeck-viewport">' + "\n".join(sl) + '</div><div class="mdeck-bar">'
             f'<button class="mdeck-prev">{t["prev"]}</button><button class="mdeck-next">{t["next"]}</button>'
             f'<span class="mdeck-count"></span><div class="mdeck-dots"></div><button class="mdeck-fs">{t["fs"]}</button></div></div>')
@@ -129,10 +134,10 @@ def module_page(lang, m, prefix="../../../"):
 <div class="callout info"><h4>{t['map']}</h4><p><b>EASA Module 08:</b> {mp['easa']}</p><p><b>Anderson (6th):</b> {mp['anderson']}</p><p><b>Etkin &amp; Reid (3rd):</b> {mp['etkin']}</p><p>{mp['note']}</p><p><a href="../../../chapter-mapping-{lang}.html">{t['mapnav']} →</a></p></div>
 {deck(lang, m)}
 {extras.demo_html(m['slug'], lang)}
-<div class="callout history"><h4>{m['history_title']}</h4><p>{m['history']}</p></div>
-<div class="callout case"><h4>{m['case_title']}</h4><p>{m['case']}</p></div>
-<div class="callout warn"><h4>{m['warn_title']}</h4><p>{m['warn']}</p></div>
-<div class="callout good"><h4>{t['nb']}</h4><p>{m['nb_desc']}</p><p><a class="nb-link" href="../../../data/notebooks/{m['num']}_{m['slug'].split('-',1)[1]}.ipynb" download>📓 {t['nbopen']}</a></p></div>
+<div class="callout history"><h4>{m['history_title']}</h4>{blk(m['history'])}</div>
+<div class="callout case"><h4>{m['case_title']}</h4>{blk(m['case'])}</div>
+<div class="callout warn"><h4>{m['warn_title']}</h4>{blk(m['warn'])}</div>
+<div class="callout good"><h4>{t['nb']}</h4><p>{m['nb_desc']}</p><p><a class="nb-link" href="../../../data/notebooks/{m['num']}_{m['slug'].split('-',1)[1]}.ipynb" download>{t['nbopen']}</a></p></div>
 <h2>{t['quiz']}</h2>
 {''.join(quiz_block(s) for s in m['quiz_sets'])}
 {problems_block(lang, m)}
@@ -146,7 +151,7 @@ def home(lang, mods):
     t = T[lang]
     cards = "\n".join(f"""<a class="mod-card" href="modules/{m['slug']}/index.html"><span class="tag">{m['tag']}</span>
 <h3>MODULE {m['num']}: {m['title']}</h3><p style="color:var(--muted);font-size:.85rem">{m['src']}</p><span class="cta">{t['open']}</span></a>""" for m in mods)
-    body = f"""<div class="wrap"><div class="hero"><h1>{t['hero']}</h1><p>{t['hero_sub']}</p><p><a href="../chapter-mapping-{lang}.html">{t['map']}</a> · <a href="glossary.html">{'📖 Thuật ngữ Việt–Anh' if lang == 'vi' else '📖 Bilingual glossary'}</a></p></div><div class="mod-grid">{cards}</div></div>"""
+    body = f"""<div class="wrap"><div class="hero"><h1>{t['hero']}</h1><p>{t['hero_sub']}</p><p><a href="../chapter-mapping-{lang}.html">{t['map']}</a> · <a href="glossary.html">{'Thuật ngữ Việt–Anh' if lang == 'vi' else 'Bilingual glossary'}</a></p></div><div class="mod-grid">{cards}</div></div>"""
     return page(lang, "../", body, t["site"], re_strip(t["hero_sub"])).replace("__OTHER__", f"../{'en' if lang=='vi' else 'vi'}/index.html")
 
 def re_strip(s):
@@ -165,8 +170,8 @@ def mapping(lang, mods):
 def glossary_page(lang):
     t = T[lang]
     ttl = "Thuật ngữ Việt–Anh" if lang == "vi" else "Bilingual glossary"
-    intro = ("Tra cứu khái niệm bằng tiếng Việt hoặc tiếng Anh (gõ không dấu cũng được). Mỗi mục ghi nguồn trong EASA Module 08, Anderson hoặc Etkin &amp; Reid và module có nội dung chi tiết." if lang == "vi" else
-             "Look up a concept in Vietnamese or English (accents optional). Every entry cites its source in EASA Module 08, Anderson or Etkin &amp; Reid and the module that covers it in detail.")
+    intro = ("Tra khái niệm bằng tiếng Việt hoặc tiếng Anh, gõ không dấu cũng được. Mỗi mục ghi nguồn (EASA Module 08, Anderson hoặc Etkin &amp; Reid) và module nói kỹ hơn về nó." if lang == "vi" else
+             "Look up a concept in Vietnamese or English; accents are optional. Each entry gives its source (EASA Module 08, Anderson or Etkin &amp; Reid) and the module that covers it in more detail.")
     rows = []
     for en, vi, den, dvi, src, mod in glossary.G:
         a, b = (vi, en) if lang == "vi" else (en, vi)

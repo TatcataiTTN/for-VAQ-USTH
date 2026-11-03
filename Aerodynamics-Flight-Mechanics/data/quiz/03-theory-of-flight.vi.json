@@ -135,7 +135,7 @@
    "correct": 0,
    "explain": "a = √(γRT).",
    "src": "Anderson 6th, Problem 8.1",
-   "detail": "<p>a = √(1,4 × 287 × 230) = √92414 = 304,0 m/s.</p>"
+   "detail": "<p>a = √(1,4 × 287 × 230) = √92 414 = 304,0 m/s.</p>"
   },
   {
    "q": "Dòng khí ở 1 atm và 288 K; ống Pitot đo 1,555 atm. Vận tốc dòng (dùng quan hệ cận âm nén được) là:",
@@ -179,7 +179,7 @@
  ],
  "generated": [
   {
-   "q": "Máy bay mất 3 000 ft độ cao khi tiến 36 000 ft trong lướt thẳng đều. Tỉ số lướt là:",
+   "q": "Máy bay mất 3000 ft độ cao khi tiến 36 000 ft trong lướt thẳng đều. Tỉ số lướt là:",
    "opts": [
     "108 trên 1",
     "12 trên 1",
@@ -187,8 +187,8 @@
     "33 trên 1"
    ],
    "correct": 1,
-   "explain": "36 000/3 000 = 12; tỉ số lướt cũng bằng L/D.",
-   "src": "Bổ sung (biên soạn)"
+   "explain": "36 000/3000 = 12; tỉ số lướt cũng bằng L/D.",
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Vòng bay thăng bằng với góc nghiêng 60° có hệ số tải:",
@@ -200,7 +200,7 @@
    ],
    "correct": 2,
    "explain": "n = 1/cos 60° = 2.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Máy bay thất tốc ở 60 kt khi bay thẳng. Trong vòng bay 60° nghiêng, tốc độ thất tốc xấp xỉ:",
@@ -212,7 +212,7 @@
    ],
    "correct": 3,
    "explain": "V_s,turn = V_s√n = 60√2.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Trong hạng Normal, hệ số tải giới hạn dương là +3,8. Tải phá hủy theo hệ số an toàn 1,5 là:",
@@ -224,7 +224,7 @@
    ],
    "correct": 0,
    "explain": "3,8 × 1,5 = 5,7 g (EASA tr. 3.9).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Một máy bay bay M 0,8 ở 40 000 ft (a ≈ 574 kt). Tốc độ thực xấp xỉ:",
@@ -236,7 +236,7 @@
    ],
    "correct": 1,
    "explain": "V = M·a = 0,8 × 573,6.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Số Mach tới hạn là:",
@@ -248,7 +248,7 @@
    ],
    "correct": 3,
    "explain": "Máy bay vẫn cận âm khi tới M_cr (EASA tr. 3.11).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Cánh tà nào tăng cả diện tích cánh lẫn độ cong khi hạ?",
@@ -260,7 +260,7 @@
    ],
    "correct": 3,
    "explain": "Fowler trượt về sau trên ray, thêm diện tích rồi mới hạ góc.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Dải thất tốc (stall strip) gắn ở khoảng 20–25% gốc cánh nhằm:",
@@ -272,7 +272,7 @@
    ],
    "correct": 0,
    "explain": "EASA (mục Stalls): gắn dải ở 20–25% đầu tiên của cánh; thất tốc bắt đầu ở gốc nên aileron ở đầu cánh còn hiệu lực.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Bay vòng thăng bằng nghiêng 45°: tốc độ thất tốc tăng khoảng:",
@@ -284,7 +284,7 @@
    ],
    "correct": 1,
    "explain": "V_s,turn = V_s√n, n = 1,414, √n = 1,189.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Tốc độ âm thanh ở 20 000 ft ISA xấp xỉ:",
@@ -296,7 +296,7 @@
    ],
    "correct": 2,
    "explain": "T = 248,5 K nên a = 316 m/s; nằm giữa 661 kt (mực biển) và 574 kt (40 000 ft).",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Sóng xung kích thẳng ở M₁ = 2: M₂ và p₂/p₁ là:",
@@ -308,19 +308,19 @@
    ],
    "correct": 3,
    "explain": "M₂ = √[(γ−1)M₁²+2]/[2γM₁²−(γ−1)] = 0,5774.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
-   "q": "Một máy bay có L/D = 15 tắt động cơ ở độ cao 2 000 ft trên đất bằng, không gió. Quãng đường lướt tối đa là:",
+   "q": "Một máy bay có L/D = 15 tắt động cơ ở độ cao 2000 ft trên đất bằng, không gió. Quãng đường lướt tối đa là:",
    "opts": [
     "30 000 ft",
     "300 000 ft",
-    "2 000 ft",
+    "2000 ft",
     "13 333 ft"
    ],
    "correct": 0,
-   "explain": "Quãng đường = độ cao × tỉ số lướt = 2 000 × 15.",
-   "src": "Bổ sung (biên soạn)"
+   "explain": "Quãng đường = độ cao × tỉ số lướt = 2000 × 15.",
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Hệ số tải 3 g nghĩa là:",
@@ -332,7 +332,7 @@
    ],
    "correct": 1,
    "explain": "EASA tr. 3.9.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   },
   {
    "q": "Cần hệ số tải n = 2,5 trong vòng bay thăng bằng thì góc nghiêng là:",
@@ -344,7 +344,7 @@
    ],
    "correct": 3,
    "explain": "cos φ = 1/n = 0,4.",
-   "src": "Bổ sung (biên soạn)"
+   "src": "Câu luyện thêm"
   }
  ]
 }
