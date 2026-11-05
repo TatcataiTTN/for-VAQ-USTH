@@ -1,0 +1,10 @@
+{"vi":["Circuit-Action câu 1, 4, 5, 7, 8 bị loại khỏi nhóm câu gốc: kết quả phụ thuộc vào dấu (mạch cộng/đảo cho điện áp ra âm) nên «tăng/giảm» mơ hồ, sách không in đáp án. Thay bằng các câu bổ sung nêu rõ độ lớn |VOUT| (tính bằng công thức).",
+"Self-Test câu 11 (mạch cộng có trọng số: «điện trở vào tỉ lệ với trọng số») bị loại: về nguyên tắc điện trở vào tỉ lệ NGHỊCH với trọng số (Ri = Rf/trọng số), còn phương án «khác nhau» không chặt; không có đáp án in nên không chọn bừa.",
+"Self-Test câu 4 giữ đáp án «(b) và (d)»: hysteresis được tạo bằng hồi tiếp dương.",
+"Bài 16–17, 20–21 (Hình 13–69, 13–71, 13–72) chưa đưa vào: cần đọc dạng sóng từ hình, đáp án sách không in cho bài chẵn.",
+"Bài 7: giả sử sụt áp thuận 0,7 V; sách không in đáp án."],
+"en":["Circuit-Action Q1, 4, 5, 7, 8 are not kept among the originals: the result depends on sign (summing/inverting circuits give a negative output) so “increase/decrease” is ambiguous and no answer is printed. They are replaced by generated items stating the magnitude |VOUT| (computed by formula).",
+"Self-Test Q11 (scaling adder: “input resistors each proportional to the weight”) was removed: in principle the input resistance is INVERSELY proportional to the weight (Ri = Rf/weight) and “different values” is not strict; no printed answer, so no guess is made.",
+"Self-Test Q4 keeps “answers (b) and (d)”: hysteresis is produced by positive feedback.",
+"Problems 16–17 and 20–21 (Figs 13–69, 13–71, 13–72) are not included: they need waveforms read from figures and the book prints no answers for even problems.",
+"Problem 7 assumes a 0.7 V forward drop; the book prints no answer."]}

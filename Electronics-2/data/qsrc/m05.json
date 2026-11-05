@@ -1,0 +1,1525 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To make a basic instrumentation amplifier, it takes",
+   "vi": "Để làm mạch khuếch đại thiết bị cơ bản cần"
+  },
+  "opts": [
+   {
+    "en": "one op-amp with a certain feedback arrangement",
+    "vi": "một op-amp với một cách mắc hồi tiếp nhất định"
+   },
+   {
+    "en": "two op-amps and seven resistors",
+    "vi": "hai op-amp và bảy điện trở"
+   },
+   {
+    "en": "three op-amps and seven capacitors",
+    "vi": "ba op-amp và bảy tụ điện"
+   },
+   {
+    "en": "three op-amps and seven resistors",
+    "vi": "ba op-amp và bảy điện trở"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Two input buffers (A1, A2) plus a difference amplifier (A3), with seven resistors including RG.",
+   "vi": "Hai mạch đệm ngõ vào (A1, A2) và một mạch khuếch đại hiệu (A3), với bảy điện trở kể cả RG."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q1 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 1 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Typically, an instrumentation amplifier has an external resistor used for",
+   "vi": "Thông thường mạch khuếch đại thiết bị có một điện trở ngoài dùng để"
+  },
+  "opts": [
+   {
+    "en": "establishing the input impedance",
+    "vi": "xác lập trở kháng vào"
+   },
+   {
+    "en": "setting the voltage gain",
+    "vi": "đặt độ lợi điện áp"
+   },
+   {
+    "en": "setting the current gain",
+    "vi": "đặt độ lợi dòng"
+   },
+   {
+    "en": "interfacing with an instrument",
+    "vi": "nối với thiết bị đo"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The gain resistor RG sets the gain: G = 1 + 2R/RG (AD622: 1 + 50.5 kΩ/RG).",
+   "vi": "Điện trở RG đặt độ lợi: G = 1 + 2R/RG (AD622: 1 + 50,5 kΩ/RG)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q2 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 2 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Instrumentation amplifiers are used primarily in",
+   "vi": "Mạch khuếch đại thiết bị chủ yếu được dùng trong"
+  },
+  "opts": [
+   {
+    "en": "high-noise environments",
+    "vi": "môi trường nhiễu cao"
+   },
+   {
+    "en": "medical equipment",
+    "vi": "thiết bị y tế"
+   },
+   {
+    "en": "test instruments",
+    "vi": "dụng cụ đo thử"
+   },
+   {
+    "en": "filter circuits",
+    "vi": "các mạch lọc"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Their strength is amplifying small differential signals in the presence of large common-mode noise.",
+   "vi": "Điểm mạnh của chúng là khuếch đại tín hiệu vi sai nhỏ khi có nhiễu chế độ chung lớn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q3 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 3 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Isolation amplifiers are used primarily in",
+   "vi": "Mạch khuếch đại cách ly chủ yếu được dùng trong"
+  },
+  "opts": [
+   {
+    "en": "remote, isolated locations",
+    "vi": "các vị trí xa, cô lập"
+   },
+   {
+    "en": "systems that isolate a single signal from many different signals",
+    "vi": "hệ thống tách một tín hiệu khỏi nhiều tín hiệu khác"
+   },
+   {
+    "en": "applications where there are high voltages and sensitive equipment",
+    "vi": "ứng dụng có điện áp cao và thiết bị nhạy"
+   },
+   {
+    "en": "applications where human safety is a concern",
+    "vi": "ứng dụng cần an toàn cho con người"
+   },
+   {
+    "en": "answers (c) and (d)",
+    "vi": "đáp án (c) và (d)"
+   }
+  ],
+  "correct": 4,
+  "explain": {
+   "en": "Galvanic isolation protects sensitive equipment from high voltages and protects people.",
+   "vi": "Cách ly điện bảo vệ thiết bị nhạy khỏi điện áp cao và bảo vệ con người."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q4 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 4 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The two parts of a basic isolation amplifier are",
+   "vi": "Hai phần của mạch khuếch đại cách ly cơ bản là"
+  },
+  "opts": [
+   {
+    "en": "amplifier and filter",
+    "vi": "bộ khuếch đại và bộ lọc"
+   },
+   {
+    "en": "input stage and coupling stage",
+    "vi": "tầng vào và tầng ghép"
+   },
+   {
+    "en": "input stage and output stage",
+    "vi": "tầng vào và tầng ra"
+   },
+   {
+    "en": "gain stage and offset stage",
+    "vi": "tầng khuếch đại và tầng offset"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Floyd: two electrically isolated stages, an input stage and an output stage.",
+   "vi": "Floyd: hai tầng cách ly điện, tầng vào và tầng ra."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q5 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 5 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The stages of many isolation amplifiers are connected by",
+   "vi": "Các tầng của nhiều mạch khuếch đại cách ly được nối với nhau bằng"
+  },
+  "opts": [
+   {
+    "en": "copper strips",
+    "vi": "dải đồng"
+   },
+   {
+    "en": "a capacitor",
+    "vi": "một tụ điện"
+   },
+   {
+    "en": "microwave links",
+    "vi": "liên kết vi ba"
+   },
+   {
+    "en": "current loops",
+    "vi": "vòng dòng"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Floyd: older types use optical or transformer coupling, but many modern ones use capacitive coupling.",
+   "vi": "Floyd: loại cũ dùng ghép quang hoặc biến áp, nhưng nhiều loại hiện đại dùng ghép tụ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q6 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 6 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The characteristic that allows an isolation amplifier to amplify small signal voltages in the presence of much greater noise voltages is its",
+   "vi": "Đặc tính cho phép mạch khuếch đại cách ly khuếch đại tín hiệu nhỏ khi có nhiễu lớn hơn nhiều là"
+  },
+  "opts": [
+   {
+    "en": "CMRR",
+    "vi": "CMRR"
+   },
+   {
+    "en": "high gain",
+    "vi": "độ lợi cao"
+   },
+   {
+    "en": "high input impedance",
+    "vi": "trở kháng vào cao"
+   },
+   {
+    "en": "magnetic coupling between input and output",
+    "vi": "ghép từ giữa ngõ vào và ngõ ra"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A high common-mode rejection ratio cancels the noise common to both inputs.",
+   "vi": "CMRR cao triệt nhiễu chung ở cả hai ngõ vào."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q7 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 7 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The term OTA means",
+   "vi": "Thuật ngữ OTA nghĩa là"
+  },
+  "opts": [
+   {
+    "en": "operational transistor amplifier",
+    "vi": "operational transistor amplifier"
+   },
+   {
+    "en": "operational transformer amplifier",
+    "vi": "operational transformer amplifier"
+   },
+   {
+    "en": "operational transconductance amplifier",
+    "vi": "operational transconductance amplifier"
+   },
+   {
+    "en": "output transducer amplifier",
+    "vi": "output transducer amplifier"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "OTA = operational transconductance amplifier.",
+   "vi": "OTA = operational transconductance amplifier (bộ khuếch đại hỗ dẫn)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q8 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 8 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In an OTA, the transconductance is controlled by",
+   "vi": "Trong OTA, độ hỗ dẫn được điều khiển bởi"
+  },
+  "opts": [
+   {
+    "en": "the dc supply voltage",
+    "vi": "điện áp nguồn một chiều"
+   },
+   {
+    "en": "the input signal voltage",
+    "vi": "điện áp tín hiệu vào"
+   },
+   {
+    "en": "the manufacturing process",
+    "vi": "quá trình chế tạo"
+   },
+   {
+    "en": "a bias current",
+    "vi": "một dòng phân cực"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "gm = K·IBIAS.",
+   "vi": "gm = K·IBIAS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q9 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 9 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The voltage gain of an OTA circuit is set by",
+   "vi": "Độ lợi điện áp của mạch OTA được đặt bởi"
+  },
+  "opts": [
+   {
+    "en": "a feedback resistor",
+    "vi": "một điện trở hồi tiếp"
+   },
+   {
+    "en": "the transconductance only",
+    "vi": "chỉ độ hỗ dẫn"
+   },
+   {
+    "en": "the transconductance and the load resistor",
+    "vi": "độ hỗ dẫn và điện trở tải"
+   },
+   {
+    "en": "the bias current and supply voltage",
+    "vi": "dòng phân cực và điện áp nguồn"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Av = gm·RL.",
+   "vi": "Av = gm·RL."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q10 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 10 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA is basically a",
+   "vi": "OTA về cơ bản là"
+  },
+  "opts": [
+   {
+    "en": "voltage-to-current amplifier",
+    "vi": "bộ khuếch đại điện áp–dòng"
+   },
+   {
+    "en": "current-to-voltage amplifier",
+    "vi": "bộ khuếch đại dòng–điện áp"
+   },
+   {
+    "en": "current-to-current amplifier",
+    "vi": "bộ khuếch đại dòng–dòng"
+   },
+   {
+    "en": "voltage-to-voltage amplifier",
+    "vi": "bộ khuếch đại điện áp–điện áp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Iout = gm·Vin: an input voltage controls an output current.",
+   "vi": "Iout = gm·Vin: điện áp vào điều khiển dòng ra."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q11 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 11 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The operation of a logarithmic amplifier is based on",
+   "vi": "Hoạt động của mạch khuếch đại logarit dựa trên"
+  },
+  "opts": [
+   {
+    "en": "the nonlinear operation of an op-amp",
+    "vi": "hoạt động phi tuyến của op-amp"
+   },
+   {
+    "en": "the logarithmic characteristic of a pn junction",
+    "vi": "đặc tính logarit của lớp tiếp xúc pn"
+   },
+   {
+    "en": "the reverse breakdown characteristic of a pn junction",
+    "vi": "đặc tính đánh thủng ngược của lớp tiếp xúc pn"
+   },
+   {
+    "en": "the logarithmic charge and discharge of an RC circuit",
+    "vi": "sự nạp/xả logarit của mạch RC"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The diode/transistor junction voltage is proportional to the logarithm of its current.",
+   "vi": "Điện áp trên tiếp xúc điốt/transistor tỉ lệ với logarit dòng qua nó."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q12 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 12 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "If the input to a log amplifier is x, the output is proportional to",
+   "vi": "Nếu ngõ vào mạch logarit là x thì ngõ ra tỉ lệ với"
+  },
+  "opts": [
+   {
+    "en": "eˣ",
+    "vi": "eˣ"
+   },
+   {
+    "en": "ln x",
+    "vi": "ln x"
+   },
+   {
+    "en": "log₁₀ x",
+    "vi": "log₁₀ x"
+   },
+   {
+    "en": "2.3 log₁₀ x",
+    "vi": "2,3 log₁₀ x"
+   },
+   {
+    "en": "answers (a) and (c)",
+    "vi": "đáp án (a) và (c)"
+   },
+   {
+    "en": "answers (b) and (d)",
+    "vi": "đáp án (b) và (d)"
+   }
+  ],
+  "correct": 5,
+  "explain": {
+   "en": "ln x = 2.3·log₁₀ x, so the natural-log options are the correct pair (eˣ belongs to the antilog amplifier).",
+   "vi": "ln x = 2,3·log₁₀ x nên cặp phương án logarit tự nhiên là đúng (eˣ thuộc mạch đối logarit)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q13 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 13 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "If the input to an antilog amplifier is x, the output is proportional to",
+   "vi": "Nếu ngõ vào mạch đối logarit là x thì ngõ ra tỉ lệ với"
+  },
+  "opts": [
+   {
+    "en": "e^(ln x)",
+    "vi": "e^(ln x)"
+   },
+   {
+    "en": "eˣ",
+    "vi": "eˣ"
+   },
+   {
+    "en": "ln x",
+    "vi": "ln x"
+   },
+   {
+    "en": "e⁻ˣ",
+    "vi": "e⁻ˣ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The antilog amplifier produces an exponential of its input.",
+   "vi": "Mạch đối logarit tạo hàm mũ của tín hiệu vào."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q14 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 14 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A constant-current source provides a nonchanging current to a load",
+   "vi": "Nguồn dòng không đổi cấp dòng không thay đổi cho tải"
+  },
+  "opts": [
+   {
+    "en": "for all values of current",
+    "vi": "với mọi giá trị dòng"
+   },
+   {
+    "en": "for all values of load resistance",
+    "vi": "với mọi giá trị điện trở tải"
+   },
+   {
+    "en": "for all values of load resistance within defined limits",
+    "vi": "với mọi giá trị điện trở tải trong giới hạn xác định"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Compliance is limited: beyond the supply headroom the current can no longer be held constant.",
+   "vi": "Dải làm việc bị giới hạn: vượt quá khoảng điện áp nguồn thì không giữ được dòng không đổi."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Converters and peak detector",
+   "vi": "Mạch chuyển đổi và tách đỉnh"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q15 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 15 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A peak detector consists of",
+   "vi": "Mạch tách đỉnh gồm"
+  },
+  "opts": [
+   {
+    "en": "a comparator, a transistor, and a capacitor",
+    "vi": "một mạch so sánh, một transistor và một tụ"
+   },
+   {
+    "en": "a comparator, a diode, and a capacitor",
+    "vi": "một mạch so sánh, một điốt và một tụ"
+   },
+   {
+    "en": "a comparator, a diode, and an inductor",
+    "vi": "một mạch so sánh, một điốt và một cuộn cảm"
+   },
+   {
+    "en": "an integrator, a diode, and a capacitor",
+    "vi": "một mạch tích phân, một điốt và một tụ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Floyd: an op-amp used as a comparator charges a capacitor through a diode to the peak value.",
+   "vi": "Floyd: op-amp làm mạch so sánh nạp tụ qua điốt tới giá trị đỉnh."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Converters and peak detector",
+   "vi": "Mạch chuyển đổi và tách đỉnh"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Self-Test Q16 (p.757)",
+   "vi": "Floyd 9e, Ch.14, Self-Test câu 16 (tr.757)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Instrumentation amplifiers are particularly useful for amplifying small signals in a noisy environment.",
+   "vi": "Mạch khuếch đại thiết bị đặc biệt hữu ích để khuếch đại tín hiệu nhỏ trong môi trường nhiễu."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "High CMRR rejects the noise.",
+   "vi": "CMRR cao loại bỏ nhiễu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q1 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 1 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The gain of an instrumentation amplifier cannot be changed.",
+   "vi": "Độ lợi của mạch khuếch đại thiết bị không thể thay đổi."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It is set by one external resistor RG.",
+   "vi": "Nó được đặt bằng một điện trở ngoài RG."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q2 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 2 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A basic instrumentation amplifier consists of three op-amps.",
+   "vi": "Mạch khuếch đại thiết bị cơ bản gồm ba op-amp."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Two input buffers and a difference amplifier.",
+   "vi": "Hai mạch đệm vào và một mạch khuếch đại hiệu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q3 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 3 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "An isolation amplifier consists of two electrically isolated stages.",
+   "vi": "Mạch khuếch đại cách ly gồm hai tầng cách ly điện."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Input stage and output stage, with no electrical path between them.",
+   "vi": "Tầng vào và tầng ra, không có đường dẫn điện giữa chúng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q5 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 5 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "All isolation amplifiers use transformer coupling.",
+   "vi": "Mọi mạch khuếch đại cách ly đều dùng ghép biến áp."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Some use optical or capacitive coupling.",
+   "vi": "Một số dùng ghép quang hoặc ghép tụ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q6 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 6 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "OTA stands for operational transistor amplifier.",
+   "vi": "OTA là viết tắt của “operational transistor amplifier”."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It is the operational transconductance amplifier.",
+   "vi": "Đó là “operational transconductance amplifier”."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q7 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 7 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The transconductance of an OTA is dependent on a bias current.",
+   "vi": "Độ hỗ dẫn của OTA phụ thuộc vào dòng phân cực."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "gm = K·IBIAS.",
+   "vi": "gm = K·IBIAS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q8 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 8 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A log amplifier can be used for compression of large dynamic range signals.",
+   "vi": "Mạch logarit có thể dùng để nén tín hiệu có dải động lớn."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The logarithm maps a wide input range onto a narrow output range.",
+   "vi": "Hàm logarit ánh xạ dải vào rộng sang dải ra hẹp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q9 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 9 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A peak detector is a circuit that uses a diode and a capacitor to produce a dc voltage equal to the peak of the input signal voltage.",
+   "vi": "Mạch tách đỉnh dùng một điốt và một tụ để tạo điện áp một chiều bằng giá trị đỉnh của tín hiệu vào."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The capacitor charges through the diode to the peak and holds it.",
+   "vi": "Tụ nạp qua điốt tới giá trị đỉnh và giữ lại."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Converters and peak detector",
+   "vi": "Mạch chuyển đổi và tách đỉnh"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, True/False Quiz Q10 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Đúng/Sai câu 10 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of RG in Figure 14–7 is increased, the voltage gain will",
+   "vi": "Nếu tăng giá trị RG trong Hình 14–7 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "G = 1 + 50.5 kΩ/RG: a larger RG gives a smaller gain.",
+   "vi": "G = 1 + 50,5 kΩ/RG: RG lớn hơn thì độ lợi nhỏ hơn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q1 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 1 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_6_7.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the voltage gain of the instrumentation amplifier in Figure 14–7 is set to 10 at 1 kHz and the frequency is increased to 100 kHz, the gain will",
+   "vi": "Nếu độ lợi của mạch khuếch đại thiết bị ở Hình 14–7 đặt bằng 10 tại 1 kHz và tăng tần số lên 100 kHz thì độ lợi sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The AD622 bandwidth at a gain of 10 is 800 kHz (Floyd, Fig. 14–6): 100 kHz is in the flat region.",
+   "vi": "Băng thông AD622 ở độ lợi 10 là 800 kHz (Floyd, Hình 14–6): 100 kHz nằm trong vùng phẳng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q2 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 2 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_6_7.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the voltage gain of the instrumentation amplifier in Figure 14–7 is increased from 10 to 100, the bandwidth will",
+   "vi": "Nếu tăng độ lợi của mạch khuếch đại thiết bị ở Hình 14–7 từ 10 lên 100 thì băng thông sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The curves of Fig. 14–6 show the bandwidth falls as the gain rises (gain–bandwidth trade-off).",
+   "vi": "Các đường cong ở Hình 14–6 cho thấy băng thông giảm khi độ lợi tăng (đánh đổi độ lợi–băng thông)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q3 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 3 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_6_7.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Rf1 in the isolation amplifier of Figure 14–15 is increased to 33 kΩ, the total voltage gain will",
+   "vi": "Nếu tăng Rf1 trong mạch cách ly ở Hình 14–15 lên 33 kΩ thì độ lợi điện áp tổng sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Input-stage gain grows with Rf1 (Rf1/Ri1 rises from 22/2.2 = 10 to 33/2.2 = 15) and the total gain is the product of both stages.",
+   "vi": "Độ lợi tầng vào tăng theo Rf1 (Rf1/Ri1 từ 22/2,2 = 10 lên 33/2,2 = 15) và độ lợi tổng là tích hai tầng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q4 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 4 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_15.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the values of all the capacitors in Figure 14–15 are changed to 0.68 μF, the gain of the output stage will",
+   "vi": "Nếu đổi giá trị mọi tụ ở Hình 14–15 thành 0,68 μF thì độ lợi của tầng ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The capacitors are supply-decoupling capacitors, not gain-setting elements: the gain is set by Rf2/Ri2.",
+   "vi": "Các tụ là tụ lọc nguồn, không phải phần tử đặt độ lợi: độ lợi do Rf2/Ri2 quyết định."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q5 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 5 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_15.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of RL in the OTA of Figure 14–23 is reduced, the voltage gain will",
+   "vi": "Nếu giảm giá trị RL của OTA ở Hình 14–23 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Av = gm·RL falls with RL.",
+   "vi": "Av = gm·RL giảm theo RL."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q6 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 6 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_23.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the bias current in the OTA of Figure 14–23 is increased, the voltage gain will",
+   "vi": "Nếu tăng dòng phân cực của OTA ở Hình 14–23 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "gm = K·IBIAS rises, so Av = gm·RL rises.",
+   "vi": "gm = K·IBIAS tăng nên Av = gm·RL tăng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Circuit-Action Quiz Q7 (p.756)",
+   "vi": "Floyd 9e, Ch.14, Circuit-Action câu 7 (tr.756)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_23.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Instrumentation amplifier of Fig. 14–53 (R1 = R2 = 100 kΩ, RG = 1.0 kΩ, R3 = R4 = R5 = R6 = 10 kΩ): voltage gains of A1 and A2.",
+   "vi": "Mạch khuếch đại thiết bị Hình 14–53 (R1 = R2 = 100 kΩ, RG = 1,0 kΩ, R3 = R4 = R5 = R6 = 10 kΩ): độ lợi của A1 và A2."
+  },
+  "sol": {
+   "en": "Each input stage is a noninverting amplifier sharing RG: Av(1) = Av(2) = 1 + R/RG = 1 + 100 kΩ/1.0 kΩ = 101 (book: 101).",
+   "vi": "Av(1) = Av(2) = 1 + 100 kΩ/1,0 kΩ = 101 cho mỗi tầng vào (sách: 101)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 1 (p.758)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 1 (tr.758)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Overall voltage gain of the amplifier in Figure 14–53.",
+   "vi": "Độ lợi điện áp tổng của mạch ở Hình 14–53."
+  },
+  "sol": {
+   "en": "Av = (1 + 2R/RG)(R5/R3) = (1 + 200 kΩ/1.0 kΩ)(10 kΩ/10 kΩ) = 201. (Consistent with Problem 3: 201 × 5 mV = 1.005 V.)",
+   "vi": "Av = (1 + 2R/RG)(R5/R3) = (1 + 200 kΩ/1,0 kΩ)(10 kΩ/10 kΩ) = 201. (Phù hợp Bài 3: 201 × 5 mV = 1,005 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 2 (p.758)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 2 (tr.758)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Vin1 = 5 mV, Vin2 = 10 mV and Vcm = 225 mV are applied to the amplifier of Figure 14–53. Find the output voltage.",
+   "vi": "Đặt Vin1 = 5 mV, Vin2 = 10 mV và Vcm = 225 mV vào mạch Hình 14–53. Tìm điện áp ra."
+  },
+  "sol": {
+   "en": "The common-mode part (225 mV) is rejected; only the difference is amplified: Vout = 201 × (10 − 5) mV = 1.005 V (book: 1.005 V).",
+   "vi": "Thành phần chung (225 mV) bị triệt; chỉ hiệu được khuếch đại: Vout = 201 × (10 − 5) mV = 1.005 V (sách: 1,005 V)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 3 (p.758)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 3 (tr.758)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What value of RG changes the gain of the amplifier in Figure 14–53 to 1000?",
+   "vi": "Giá trị RG nào đưa độ lợi mạch Hình 14–53 lên 1000?"
+  },
+  "sol": {
+   "en": "1 + 2R/RG = 1000 → RG = 2R/999 = 200 kΩ/999 = 200 Ω ≈ 200 Ω.",
+   "vi": "1 + 2R/RG = 1000 → RG = 2R/999 = 200 kΩ/999 = 200 Ω ≈ 200 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 4 (p.758)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 4 (tr.758)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Voltage gain of the AD622 amplifier of Figure 14–54 (RG = 1.0 kΩ).",
+   "vi": "Độ lợi điện áp của AD622 ở Hình 14–54 (RG = 1,0 kΩ)."
+  },
+  "sol": {
+   "en": "G = 1 + 50.5 kΩ/RG = 1 + 50.5 = 51.5 (book: 51.5).",
+   "vi": "G = 1 + 50,5 kΩ/RG = 1 + 50,5 = 51.5 (sách: 51,5)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 5 (p.758)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 5 (tr.758)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "The input-stage op-amp of an isolation amplifier has a gain of 30 and the output stage a gain of 10. What is the total voltage gain?",
+   "vi": "Op-amp tầng vào của mạch cách ly có độ lợi 30 và tầng ra có độ lợi 10. Độ lợi tổng là bao nhiêu?"
+  },
+  "sol": {
+   "en": "Av(total) = 30 × 10 = 300 (book: 300).",
+   "vi": "Av(tổng) = 30 × 10 = 300 (sách: 300)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 9 (p.758)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 9 (tr.758)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "An OTA has an input voltage of 10 mV and an output current of 10 μA. What is the transconductance?",
+   "vi": "Một OTA có điện áp vào 10 mV và dòng ra 10 μA. Độ hỗ dẫn là bao nhiêu?"
+  },
+  "sol": {
+   "en": "gm = Iout/Vin = 10 μA / 10 mV = 1000 μS (1 mS).",
+   "vi": "gm = Iout/Vin = 10 μA / 10 mV = 1000 μS (1 mS)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 14 (p.759)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 14 (tr.759)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "An OTA with gm = 5000 μS has RL = 10 kΩ and Vin = 100 mV. Output current and output voltage?",
+   "vi": "OTA có gm = 5000 μS, RL = 10 kΩ và Vin = 100 mV. Dòng ra và điện áp ra là bao nhiêu?"
+  },
+  "sol": {
+   "en": "Iout = gm·Vin = 5000 μS × 100 mV = 500 μA; Vout = Iout·RL = 500 μA × 10 kΩ = 5 V (book: 500 μA, 5 V).",
+   "vi": "Iout = gm·Vin = 5000 μS × 100 mV = 500 μA; Vout = Iout·RL = 500 μA × 10 kΩ = 5 V (sách: 500 μA, 5 V)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 15 (p.759)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 15 (tr.759)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "The output voltage of an OTA with a load is 3.5 V, gm = 4000 μS and Vin = 100 mV. What is RL?",
+   "vi": "Điện áp ra của một OTA có tải là 3,5 V, gm = 4000 μS và Vin = 100 mV. RL bằng bao nhiêu?"
+  },
+  "sol": {
+   "en": "Iout = 4000 μS × 100 mV = 400 μA; RL = Vout/Iout = 3.5 V / 400 μA = 8.75 kΩ.",
+   "vi": "Iout = 4000 μS × 100 mV = 400 μA; RL = Vout/Iout = 3,5 V / 400 μA = 8.75 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 16 (p.759)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 16 (tr.759)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Common (base-10) logarithms of (a) 0.5, (b) 2, (c) 50, (d) 130.",
+   "vi": "Logarit thập phân của (a) 0,5, (b) 2, (c) 50, (d) 130."
+  },
+  "sol": {
+   "en": "(a) -0.301 (b) 0.301 (c) 1.70 (d) 2.11 (book: −0.301, 0.301, 1.70, 2.11).",
+   "vi": "(a) -0.301 (b) 0.301 (c) 1.70 (d) 2.11 (sách: −0,301; 0,301; 1,70; 2,11)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 23 (p.761)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 23 (tr.761)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Output voltage of a log amplifier (diode in the feedback path) with Vin = 3 V, R = 82 kΩ, reverse leakage current 100 nA.",
+   "vi": "Điện áp ra của mạch logarit (điốt ở nhánh hồi tiếp) với Vin = 3 V, R = 82 kΩ, dòng rò ngược 100 nA."
+  },
+  "sol": {
+   "en": "Vout ≈ −(0.025 V)·ln(Vin/(R·IR)) = −0.025 × ln(3/(82 kΩ × 100 nA)) = −0.025 × ln(365.9) = -148 mV.",
+   "vi": "Vout ≈ −(0,025 V)·ln(Vin/(R·IR)) = −0,025 × ln(3/(82 kΩ × 100 nA)) = −0,025 × ln(365.9) = -148 mV."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 26 (p.761)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 26 (tr.761)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Output of the log amplifier of Figure 14–60 (Vin = 1.5 V, R = 47 kΩ, IEBO = 60 nA).",
+   "vi": "Ngõ ra của mạch logarit ở Hình 14–60 (Vin = 1,5 V, R = 47 kΩ, IEBO = 60 nA)."
+  },
+  "sol": {
+   "en": "Vout = −0.025 × ln(1.5/(47 kΩ × 60 nA)) = −0.025 × ln(531.9) = -157 mV (book: −157 mV).",
+   "vi": "Vout = −0,025 × ln(1,5/(47 kΩ × 60 nA)) = −0,025 × ln(531.9) = -157 mV (sách: −157 mV)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.14, Problem 27 (p.761)",
+   "vi": "Floyd 9e, Ch.14, Bài tập 27 (tr.761)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ }
+]

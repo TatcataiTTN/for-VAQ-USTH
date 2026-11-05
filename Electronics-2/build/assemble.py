@@ -23,7 +23,7 @@ def validate(it):
         bi(it['sol'], 'sol', it); return
     bi(it['explain'], 'explain', it)
     o = it['opts']
-    if not (2 <= len(o) <= 5): raise ValueError(f'{it["src"]}: needs 2-5 options')
+    if not (2 <= len(o) <= 6): raise ValueError(f'{it["src"]}: needs 2-6 options')
     for x in o: bi(x, 'opt', it)
     for lang in ('vi', 'en'):
         if len({x[lang].strip() for x in o}) != len(o): raise ValueError(f'{it["src"]}: duplicate options ({lang})')

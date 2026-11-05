@@ -1,0 +1,3008 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 1.0 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 1.0 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "51.5",
+    "vi": "51.5"
+   },
+   {
+    "en": "101",
+    "vi": "101"
+   },
+   {
+    "en": "1.02",
+    "vi": "1.02"
+   },
+   {
+    "en": "50.5",
+    "vi": "50.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "G = 1 + 50.5/1.0 = 51.5 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/1.0 = 51.5 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 0.51 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 0.51 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "200",
+    "vi": "200"
+   },
+   {
+    "en": "99.02",
+    "vi": "99.02"
+   },
+   {
+    "en": "197.1",
+    "vi": "197.1"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "G = 1 + 50.5/0.51 = 100 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/0.51 = 100 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 2.2 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 2.2 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "47.91",
+    "vi": "47.91"
+   },
+   {
+    "en": "22.95",
+    "vi": "22.95"
+   },
+   {
+    "en": "1.044",
+    "vi": "1.044"
+   },
+   {
+    "en": "23.95",
+    "vi": "23.95"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "G = 1 + 50.5/2.2 = 23.95 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/2.2 = 23.95 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 5.1 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 5.1 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "1.101",
+    "vi": "1.101"
+   },
+   {
+    "en": "9.902",
+    "vi": "9.902"
+   },
+   {
+    "en": "20.61",
+    "vi": "20.61"
+   },
+   {
+    "en": "10.9",
+    "vi": "10.9"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "G = 1 + 50.5/5.1 = 10.9 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/5.1 = 10.9 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 10 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 10 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "12.1",
+    "vi": "12.1"
+   },
+   {
+    "en": "1.198",
+    "vi": "1.198"
+   },
+   {
+    "en": "6.05",
+    "vi": "6.05"
+   },
+   {
+    "en": "5.05",
+    "vi": "5.05"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "G = 1 + 50.5/10 = 6.05 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/10 = 6.05 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 0.2 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 0.2 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "253.5",
+    "vi": "253.5"
+   },
+   {
+    "en": "252.5",
+    "vi": "252.5"
+   },
+   {
+    "en": "1.004",
+    "vi": "1.004"
+   },
+   {
+    "en": "507",
+    "vi": "507"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "G = 1 + 50.5/0.2 = 253.5 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/0.2 = 253.5 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 4.7 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 4.7 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "1.093",
+    "vi": "1.093"
+   },
+   {
+    "en": "10.74",
+    "vi": "10.74"
+   },
+   {
+    "en": "22.28",
+    "vi": "22.28"
+   },
+   {
+    "en": "11.74",
+    "vi": "11.74"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "G = 1 + 50.5/4.7 = 11.74 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/4.7 = 11.74 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An AD622 instrumentation amplifier has RG = 0.1 kΩ. What is its voltage gain? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 có RG = 0.1 kΩ. Độ lợi điện áp là bao nhiêu? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "1.002",
+    "vi": "1.002"
+   },
+   {
+    "en": "505",
+    "vi": "505"
+   },
+   {
+    "en": "1012",
+    "vi": "1012"
+   },
+   {
+    "en": "506",
+    "vi": "506"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "G = 1 + 50.5/0.1 = 506 (the “1 +” is part of the formula).",
+   "vi": "G = 1 + 50,5/0.1 = 506 (số “1 +” là một phần của công thức)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 5",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What RG must an AD622 use for a gain of 10? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 cần RG bằng bao nhiêu để có độ lợi 10? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "561 Ω",
+    "vi": "561 Ω"
+   },
+   {
+    "en": "56,100 Ω",
+    "vi": "56,100 Ω"
+   },
+   {
+    "en": "454,000 Ω",
+    "vi": "454,000 Ω"
+   },
+   {
+    "en": "5610 Ω",
+    "vi": "5610 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "RG = 50.5 kΩ/(G − 1) = 50.5 kΩ/9 = 5610 Ω.",
+   "vi": "RG = 50,5 kΩ/(G − 1) = 50,5 kΩ/9 = 5610 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What RG must an AD622 use for a gain of 20? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 cần RG bằng bao nhiêu để có độ lợi 20? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "266 Ω",
+    "vi": "266 Ω"
+   },
+   {
+    "en": "2660 Ω",
+    "vi": "2660 Ω"
+   },
+   {
+    "en": "26,600 Ω",
+    "vi": "26,600 Ω"
+   },
+   {
+    "en": "960,000 Ω",
+    "vi": "960,000 Ω"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "RG = 50.5 kΩ/(G − 1) = 50.5 kΩ/19 = 2660 Ω.",
+   "vi": "RG = 50,5 kΩ/(G − 1) = 50,5 kΩ/19 = 2660 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What RG must an AD622 use for a gain of 50? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 cần RG bằng bao nhiêu để có độ lợi 50? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "103 Ω",
+    "vi": "103 Ω"
+   },
+   {
+    "en": "1010 Ω",
+    "vi": "1010 Ω"
+   },
+   {
+    "en": "1030 Ω",
+    "vi": "1030 Ω"
+   },
+   {
+    "en": "2,470,000 Ω",
+    "vi": "2,470,000 Ω"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "RG = 50.5 kΩ/(G − 1) = 50.5 kΩ/49 = 1030 Ω.",
+   "vi": "RG = 50,5 kΩ/(G − 1) = 50,5 kΩ/49 = 1030 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What RG must an AD622 use for a gain of 100? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 cần RG bằng bao nhiêu để có độ lợi 100? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "505 Ω",
+    "vi": "505 Ω"
+   },
+   {
+    "en": "5,000,000 Ω",
+    "vi": "5,000,000 Ω"
+   },
+   {
+    "en": "510 Ω",
+    "vi": "510 Ω"
+   },
+   {
+    "en": "5100 Ω",
+    "vi": "5100 Ω"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "RG = 50.5 kΩ/(G − 1) = 50.5 kΩ/99 = 510 Ω.",
+   "vi": "RG = 50,5 kΩ/(G − 1) = 50,5 kΩ/99 = 510 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What RG must an AD622 use for a gain of 200? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 cần RG bằng bao nhiêu để có độ lợi 200? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "252 Ω",
+    "vi": "252 Ω"
+   },
+   {
+    "en": "254 Ω",
+    "vi": "254 Ω"
+   },
+   {
+    "en": "10,000,000 Ω",
+    "vi": "10,000,000 Ω"
+   },
+   {
+    "en": "2540 Ω",
+    "vi": "2540 Ω"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "RG = 50.5 kΩ/(G − 1) = 50.5 kΩ/199 = 254 Ω.",
+   "vi": "RG = 50,5 kΩ/(G − 1) = 50,5 kΩ/199 = 254 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What RG must an AD622 use for a gain of 1000? (G = 1 + 50.5 kΩ/RG)",
+   "vi": "AD622 cần RG bằng bao nhiêu để có độ lợi 1000? (G = 1 + 50,5 kΩ/RG)"
+  },
+  "opts": [
+   {
+    "en": "50,400,000 Ω",
+    "vi": "50,400,000 Ω"
+   },
+   {
+    "en": "506 Ω",
+    "vi": "506 Ω"
+   },
+   {
+    "en": "50.6 Ω",
+    "vi": "50.6 Ω"
+   },
+   {
+    "en": "5.06 Ω",
+    "vi": "5.06 Ω"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "RG = 50.5 kΩ/(G − 1) = 50.5 kΩ/999 = 50.6 Ω.",
+   "vi": "RG = 50,5 kΩ/(G − 1) = 50,5 kΩ/999 = 50.6 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A three-op-amp instrumentation amplifier has R1 = R2 = 100 kΩ, RG = 1.0 kΩ and a unity-gain difference stage. What is the overall gain?",
+   "vi": "Mạch khuếch đại thiết bị ba op-amp có R1 = R2 = 100 kΩ, RG = 1.0 kΩ và tầng hiệu có độ lợi 1. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "201",
+    "vi": "201"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   },
+   {
+    "en": "10,200",
+    "vi": "10,200"
+   },
+   {
+    "en": "200",
+    "vi": "200"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Av = 1 + 2R/RG = 1 + 200/1.0 = 201.",
+   "vi": "Av = 1 + 2R/RG = 1 + 200/1.0 = 201."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A three-op-amp instrumentation amplifier has R1 = R2 = 50 kΩ, RG = 1.0 kΩ and a unity-gain difference stage. What is the overall gain?",
+   "vi": "Mạch khuếch đại thiết bị ba op-amp có R1 = R2 = 50 kΩ, RG = 1.0 kΩ và tầng hiệu có độ lợi 1. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "51",
+    "vi": "51"
+   },
+   {
+    "en": "50",
+    "vi": "50"
+   },
+   {
+    "en": "101",
+    "vi": "101"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Av = 1 + 2R/RG = 1 + 100/1.0 = 101.",
+   "vi": "Av = 1 + 2R/RG = 1 + 100/1.0 = 101."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A three-op-amp instrumentation amplifier has R1 = R2 = 47 kΩ, RG = 2.2 kΩ and a unity-gain difference stage. What is the overall gain?",
+   "vi": "Mạch khuếch đại thiết bị ba op-amp có R1 = R2 = 47 kΩ, RG = 2.2 kΩ và tầng hiệu có độ lợi 1. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "500.1",
+    "vi": "500.1"
+   },
+   {
+    "en": "43.73",
+    "vi": "43.73"
+   },
+   {
+    "en": "22.36",
+    "vi": "22.36"
+   },
+   {
+    "en": "21.36",
+    "vi": "21.36"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Av = 1 + 2R/RG = 1 + 94/2.2 = 43.73.",
+   "vi": "Av = 1 + 2R/RG = 1 + 94/2.2 = 43.73."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A three-op-amp instrumentation amplifier has R1 = R2 = 100 kΩ, RG = 0.5 kΩ and a unity-gain difference stage. What is the overall gain?",
+   "vi": "Mạch khuếch đại thiết bị ba op-amp có R1 = R2 = 100 kΩ, RG = 0.5 kΩ và tầng hiệu có độ lợi 1. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "40,400",
+    "vi": "40,400"
+   },
+   {
+    "en": "201",
+    "vi": "201"
+   },
+   {
+    "en": "401",
+    "vi": "401"
+   },
+   {
+    "en": "400",
+    "vi": "400"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Av = 1 + 2R/RG = 1 + 200/0.5 = 401.",
+   "vi": "Av = 1 + 2R/RG = 1 + 200/0.5 = 401."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A three-op-amp instrumentation amplifier has R1 = R2 = 22 kΩ, RG = 1.0 kΩ and a unity-gain difference stage. What is the overall gain?",
+   "vi": "Mạch khuếch đại thiết bị ba op-amp có R1 = R2 = 22 kΩ, RG = 1.0 kΩ và tầng hiệu có độ lợi 1. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "44",
+    "vi": "44"
+   },
+   {
+    "en": "45",
+    "vi": "45"
+   },
+   {
+    "en": "529",
+    "vi": "529"
+   },
+   {
+    "en": "23",
+    "vi": "23"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Av = 1 + 2R/RG = 1 + 44/1.0 = 45.",
+   "vi": "Av = 1 + 2R/RG = 1 + 44/1.0 = 45."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A three-op-amp instrumentation amplifier has R1 = R2 = 68 kΩ, RG = 4.7 kΩ and a unity-gain difference stage. What is the overall gain?",
+   "vi": "Mạch khuếch đại thiết bị ba op-amp có R1 = R2 = 68 kΩ, RG = 4.7 kΩ và tầng hiệu có độ lợi 1. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "239.3",
+    "vi": "239.3"
+   },
+   {
+    "en": "29.94",
+    "vi": "29.94"
+   },
+   {
+    "en": "15.47",
+    "vi": "15.47"
+   },
+   {
+    "en": "28.94",
+    "vi": "28.94"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Av = 1 + 2R/RG = 1 + 136/4.7 = 29.94.",
+   "vi": "Av = 1 + 2R/RG = 1 + 136/4.7 = 29.94."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An instrumentation amplifier (gain 201) has Vin1 = 5 mV, Vin2 = 10 mV and a common-mode voltage of 225 mV. What is Vout?",
+   "vi": "Mạch khuếch đại thiết bị (độ lợi 201) có Vin1 = 5 mV, Vin2 = 10 mV và điện áp chung 225 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3.02 V",
+    "vi": "3.02 V"
+   },
+   {
+    "en": "1.01 V",
+    "vi": "1.01 V"
+   },
+   {
+    "en": "45.2 V",
+    "vi": "45.2 V"
+   },
+   {
+    "en": "-1.01 V",
+    "vi": "-1.01 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The common-mode part is rejected: Vout = G(Vin2 − Vin1) = 201 × 5 mV = 1.01 V.",
+   "vi": "Thành phần chung bị triệt: Vout = G(Vin2 − Vin1) = 201 × 5 mV = 1.01 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An instrumentation amplifier (gain 101) has Vin1 = 2 mV, Vin2 = 3.5 mV and a common-mode voltage of 100 mV. What is Vout?",
+   "vi": "Mạch khuếch đại thiết bị (độ lợi 101) có Vin1 = 2 mV, Vin2 = 3.5 mV và điện áp chung 100 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.151 V",
+    "vi": "0.151 V"
+   },
+   {
+    "en": "0.0152 V",
+    "vi": "0.0152 V"
+   },
+   {
+    "en": "0.555 V",
+    "vi": "0.555 V"
+   },
+   {
+    "en": "-0.151 V",
+    "vi": "-0.151 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The common-mode part is rejected: Vout = G(Vin2 − Vin1) = 101 × 1.5 mV = 0.151 V.",
+   "vi": "Thành phần chung bị triệt: Vout = G(Vin2 − Vin1) = 101 × 1.5 mV = 0.151 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An instrumentation amplifier (gain 51.5) has Vin1 = 10 mV, Vin2 = 14 mV and a common-mode voltage of 50 mV. What is Vout?",
+   "vi": "Mạch khuếch đại thiết bị (độ lợi 51.5) có Vin1 = 10 mV, Vin2 = 14 mV và điện áp chung 50 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.206 V",
+    "vi": "0.206 V"
+   },
+   {
+    "en": "2.58 V",
+    "vi": "2.58 V"
+   },
+   {
+    "en": "-0.206 V",
+    "vi": "-0.206 V"
+   },
+   {
+    "en": "1.24 V",
+    "vi": "1.24 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The common-mode part is rejected: Vout = G(Vin2 − Vin1) = 51.5 × 4 mV = 0.206 V.",
+   "vi": "Thành phần chung bị triệt: Vout = G(Vin2 − Vin1) = 51.5 × 4 mV = 0.206 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An instrumentation amplifier (gain 11) has Vin1 = 20 mV, Vin2 = 30 mV and a common-mode voltage of 500 mV. What is Vout?",
+   "vi": "Mạch khuếch đại thiết bị (độ lợi 11) có Vin1 = 20 mV, Vin2 = 30 mV và điện áp chung 500 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.011 V",
+    "vi": "0.011 V"
+   },
+   {
+    "en": "-0.11 V",
+    "vi": "-0.11 V"
+   },
+   {
+    "en": "0.11 V",
+    "vi": "0.11 V"
+   },
+   {
+    "en": "0.55 V",
+    "vi": "0.55 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The common-mode part is rejected: Vout = G(Vin2 − Vin1) = 11 × 10 mV = 0.11 V.",
+   "vi": "Thành phần chung bị triệt: Vout = G(Vin2 − Vin1) = 11 × 10 mV = 0.11 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An instrumentation amplifier (gain 1001) has Vin1 = 1 mV, Vin2 = 1.4 mV and a common-mode voltage of 300 mV. What is Vout?",
+   "vi": "Mạch khuếch đại thiết bị (độ lợi 1001) có Vin1 = 1 mV, Vin2 = 1.4 mV và điện áp chung 300 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-0.4 V",
+    "vi": "-0.4 V"
+   },
+   {
+    "en": "0.4 V",
+    "vi": "0.4 V"
+   },
+   {
+    "en": "0.04 V",
+    "vi": "0.04 V"
+   },
+   {
+    "en": "2.4 V",
+    "vi": "2.4 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The common-mode part is rejected: Vout = G(Vin2 − Vin1) = 1001 × 0.4 mV = 0.4 V.",
+   "vi": "Thành phần chung bị triệt: Vout = G(Vin2 − Vin1) = 1001 × 0.4 mV = 0.4 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An isolation amplifier has an input-stage gain of 30 and an output-stage gain of 10. What is the total gain?",
+   "vi": "Mạch cách ly có độ lợi tầng vào 30 và tầng ra 10. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "300",
+    "vi": "300"
+   },
+   {
+    "en": "40",
+    "vi": "40"
+   },
+   {
+    "en": "3",
+    "vi": "3"
+   },
+   {
+    "en": "600",
+    "vi": "600"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Gains of cascaded stages multiply: 30 × 10 = 300.",
+   "vi": "Độ lợi các tầng nối tiếp nhân với nhau: 30 × 10 = 300."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An isolation amplifier has an input-stage gain of 20 and an output-stage gain of 5. What is the total gain?",
+   "vi": "Mạch cách ly có độ lợi tầng vào 20 và tầng ra 5. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4",
+    "vi": "4"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   },
+   {
+    "en": "200",
+    "vi": "200"
+   },
+   {
+    "en": "10",
+    "vi": "10"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Gains of cascaded stages multiply: 20 × 5 = 100.",
+   "vi": "Độ lợi các tầng nối tiếp nhân với nhau: 20 × 5 = 100."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An isolation amplifier has an input-stage gain of 50 and an output-stage gain of 4. What is the total gain?",
+   "vi": "Mạch cách ly có độ lợi tầng vào 50 và tầng ra 4. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "400",
+    "vi": "400"
+   },
+   {
+    "en": "200",
+    "vi": "200"
+   },
+   {
+    "en": "20",
+    "vi": "20"
+   },
+   {
+    "en": "54",
+    "vi": "54"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Gains of cascaded stages multiply: 50 × 4 = 200.",
+   "vi": "Độ lợi các tầng nối tiếp nhân với nhau: 50 × 4 = 200."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An isolation amplifier has an input-stage gain of 100 and an output-stage gain of 3. What is the total gain?",
+   "vi": "Mạch cách ly có độ lợi tầng vào 100 và tầng ra 3. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "103",
+    "vi": "103"
+   },
+   {
+    "en": "600",
+    "vi": "600"
+   },
+   {
+    "en": "300",
+    "vi": "300"
+   },
+   {
+    "en": "30",
+    "vi": "30"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Gains of cascaded stages multiply: 100 × 3 = 300.",
+   "vi": "Độ lợi các tầng nối tiếp nhân với nhau: 100 × 3 = 300."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An isolation amplifier has an input-stage gain of 8 and an output-stage gain of 12. What is the total gain?",
+   "vi": "Mạch cách ly có độ lợi tầng vào 8 và tầng ra 12. Độ lợi tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.667",
+    "vi": "0.667"
+   },
+   {
+    "en": "96",
+    "vi": "96"
+   },
+   {
+    "en": "192",
+    "vi": "192"
+   },
+   {
+    "en": "20",
+    "vi": "20"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Gains of cascaded stages multiply: 8 × 12 = 96.",
+   "vi": "Độ lợi các tầng nối tiếp nhân với nhau: 8 × 12 = 96."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has an input of 10 mV and an output current of 10 μA. What is gm?",
+   "vi": "OTA có ngõ vào 10 mV và dòng ra 10 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "100 μS",
+    "vi": "100 μS"
+   },
+   {
+    "en": "1 μS",
+    "vi": "1 μS"
+   },
+   {
+    "en": "1000 μS",
+    "vi": "1000 μS"
+   },
+   {
+    "en": "10,000 μS",
+    "vi": "10,000 μS"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "gm = Iout/Vin = 10 μA/10 mV = 1000 μS.",
+   "vi": "gm = Iout/Vin = 10 μA/10 mV = 1000 μS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has an input of 20 mV and an output current of 50 μA. What is gm?",
+   "vi": "OTA có ngõ vào 20 mV và dòng ra 50 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2500 μS",
+    "vi": "2500 μS"
+   },
+   {
+    "en": "25,000 μS",
+    "vi": "25,000 μS"
+   },
+   {
+    "en": "2.5 μS",
+    "vi": "2.5 μS"
+   },
+   {
+    "en": "400 μS",
+    "vi": "400 μS"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "gm = Iout/Vin = 50 μA/20 mV = 2500 μS.",
+   "vi": "gm = Iout/Vin = 50 μA/20 mV = 2500 μS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has an input of 100 mV and an output current of 400 μA. What is gm?",
+   "vi": "OTA có ngõ vào 100 mV và dòng ra 400 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4 μS",
+    "vi": "4 μS"
+   },
+   {
+    "en": "4000 μS",
+    "vi": "4000 μS"
+   },
+   {
+    "en": "250 μS",
+    "vi": "250 μS"
+   },
+   {
+    "en": "40,000 μS",
+    "vi": "40,000 μS"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "gm = Iout/Vin = 400 μA/100 mV = 4000 μS.",
+   "vi": "gm = Iout/Vin = 400 μA/100 mV = 4000 μS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has an input of 5 mV and an output current of 12 μA. What is gm?",
+   "vi": "OTA có ngõ vào 5 mV và dòng ra 12 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2400 μS",
+    "vi": "2400 μS"
+   },
+   {
+    "en": "417 μS",
+    "vi": "417 μS"
+   },
+   {
+    "en": "2.4 μS",
+    "vi": "2.4 μS"
+   },
+   {
+    "en": "60 μS",
+    "vi": "60 μS"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "gm = Iout/Vin = 12 μA/5 mV = 2400 μS.",
+   "vi": "gm = Iout/Vin = 12 μA/5 mV = 2400 μS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has an input of 50 mV and an output current of 150 μA. What is gm?",
+   "vi": "OTA có ngõ vào 50 mV và dòng ra 150 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7500 μS",
+    "vi": "7500 μS"
+   },
+   {
+    "en": "30,000 μS",
+    "vi": "30,000 μS"
+   },
+   {
+    "en": "3 μS",
+    "vi": "3 μS"
+   },
+   {
+    "en": "3000 μS",
+    "vi": "3000 μS"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "gm = Iout/Vin = 150 μA/50 mV = 3000 μS.",
+   "vi": "gm = Iout/Vin = 150 μA/50 mV = 3000 μS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has gm = 5000 μS, RL = 10 kΩ and Vin = 100 mV. What is Vout?",
+   "vi": "OTA có gm = 5000 μS, RL = 10 kΩ và Vin = 100 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.5 V",
+    "vi": "0.5 V"
+   },
+   {
+    "en": "500 V",
+    "vi": "500 V"
+   },
+   {
+    "en": "5 V",
+    "vi": "5 V"
+   },
+   {
+    "en": "1 V",
+    "vi": "1 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Iout = gm·Vin = 500 μA; Vout = Iout·RL = 5 V (Av = gm·RL = 50).",
+   "vi": "Iout = gm·Vin = 500 μA; Vout = Iout·RL = 5 V (Av = gm·RL = 50)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has gm = 4000 μS, RL = 6.8 kΩ and Vin = 50 mV. What is Vout?",
+   "vi": "OTA có gm = 4000 μS, RL = 6.8 kΩ và Vin = 50 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.36 V",
+    "vi": "1.36 V"
+   },
+   {
+    "en": "0.34 V",
+    "vi": "0.34 V"
+   },
+   {
+    "en": "1360 V",
+    "vi": "1360 V"
+   },
+   {
+    "en": "200 V",
+    "vi": "200 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Iout = gm·Vin = 200 μA; Vout = Iout·RL = 1.36 V (Av = gm·RL = 27.2).",
+   "vi": "Iout = gm·Vin = 200 μA; Vout = Iout·RL = 1.36 V (Av = gm·RL = 27.2)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has gm = 2000 μS, RL = 22 kΩ and Vin = 20 mV. What is Vout?",
+   "vi": "OTA có gm = 2000 μS, RL = 22 kΩ và Vin = 20 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "40 V",
+    "vi": "40 V"
+   },
+   {
+    "en": "0.88 V",
+    "vi": "0.88 V"
+   },
+   {
+    "en": "0.088 V",
+    "vi": "0.088 V"
+   },
+   {
+    "en": "880 V",
+    "vi": "880 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Iout = gm·Vin = 40 μA; Vout = Iout·RL = 0.88 V (Av = gm·RL = 44).",
+   "vi": "Iout = gm·Vin = 40 μA; Vout = Iout·RL = 0.88 V (Av = gm·RL = 44)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has gm = 8000 μS, RL = 4.7 kΩ and Vin = 10 mV. What is Vout?",
+   "vi": "OTA có gm = 8000 μS, RL = 4.7 kΩ và Vin = 10 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "376 V",
+    "vi": "376 V"
+   },
+   {
+    "en": "0.047 V",
+    "vi": "0.047 V"
+   },
+   {
+    "en": "0.0376 V",
+    "vi": "0.0376 V"
+   },
+   {
+    "en": "0.376 V",
+    "vi": "0.376 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Iout = gm·Vin = 80 μA; Vout = Iout·RL = 0.376 V (Av = gm·RL = 37.6).",
+   "vi": "Iout = gm·Vin = 80 μA; Vout = Iout·RL = 0.376 V (Av = gm·RL = 37.6)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has gm = 1000 μS, RL = 100 kΩ and Vin = 30 mV. What is Vout?",
+   "vi": "OTA có gm = 1000 μS, RL = 100 kΩ và Vin = 30 mV. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.3 V",
+    "vi": "0.3 V"
+   },
+   {
+    "en": "30 V",
+    "vi": "30 V"
+   },
+   {
+    "en": "3 V",
+    "vi": "3 V"
+   },
+   {
+    "en": "3000 V",
+    "vi": "3000 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Iout = gm·Vin = 30 μA; Vout = Iout·RL = 3 V (Av = gm·RL = 100).",
+   "vi": "Iout = gm·Vin = 30 μA; Vout = Iout·RL = 3 V (Av = gm·RL = 100)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has K = 16 μS/μA and a bias current of 100 μA. What is gm?",
+   "vi": "OTA có K = 16 μS/μA và dòng phân cực 100 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "6.25 μS",
+    "vi": "6.25 μS"
+   },
+   {
+    "en": "1600 μS",
+    "vi": "1600 μS"
+   },
+   {
+    "en": "16,000 μS",
+    "vi": "16,000 μS"
+   },
+   {
+    "en": "160 μS",
+    "vi": "160 μS"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "gm = K·IBIAS = 16 × 100 = 1600 μS.",
+   "vi": "gm = K·IBIAS = 16 × 100 = 1600 μS."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has K = 16 μS/μA and a bias current of 50 μA. What is gm?",
+   "vi": "OTA có K = 16 μS/μA và dòng phân cực 50 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "8000 μS",
+    "vi": "8000 μS"
+   },
+   {
+    "en": "3.12 μS",
+    "vi": "3.12 μS"
+   },
+   {
+    "en": "800 μS",
+    "vi": "800 μS"
+   },
+   {
+    "en": "80 μS",
+    "vi": "80 μS"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "gm = K·IBIAS = 16 × 50 = 800 μS.",
+   "vi": "gm = K·IBIAS = 16 × 50 = 800 μS."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has K = 16 μS/μA and a bias current of 200 μA. What is gm?",
+   "vi": "OTA có K = 16 μS/μA và dòng phân cực 200 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3200 μS",
+    "vi": "3200 μS"
+   },
+   {
+    "en": "32,000 μS",
+    "vi": "32,000 μS"
+   },
+   {
+    "en": "216 μS",
+    "vi": "216 μS"
+   },
+   {
+    "en": "320 μS",
+    "vi": "320 μS"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "gm = K·IBIAS = 16 × 200 = 3200 μS.",
+   "vi": "gm = K·IBIAS = 16 × 200 = 3200 μS."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has K = 20 μS/μA and a bias current of 75 μA. What is gm?",
+   "vi": "OTA có K = 20 μS/μA và dòng phân cực 75 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "15,000 μS",
+    "vi": "15,000 μS"
+   },
+   {
+    "en": "150 μS",
+    "vi": "150 μS"
+   },
+   {
+    "en": "1500 μS",
+    "vi": "1500 μS"
+   },
+   {
+    "en": "95 μS",
+    "vi": "95 μS"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "gm = K·IBIAS = 20 × 75 = 1500 μS.",
+   "vi": "gm = K·IBIAS = 20 × 75 = 1500 μS."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA has K = 16 μS/μA and a bias current of 25 μA. What is gm?",
+   "vi": "OTA có K = 16 μS/μA và dòng phân cực 25 μA. gm bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "40 μS",
+    "vi": "40 μS"
+   },
+   {
+    "en": "1.56 μS",
+    "vi": "1.56 μS"
+   },
+   {
+    "en": "4000 μS",
+    "vi": "4000 μS"
+   },
+   {
+    "en": "400 μS",
+    "vi": "400 μS"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "gm = K·IBIAS = 16 × 25 = 400 μS.",
+   "vi": "gm = K·IBIAS = 16 × 25 = 400 μS."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A log amplifier (Vout = −0.025 ln(Vin/(R·IR))) has Vin = 3 V, R = 82 kΩ and IR = 100 nA. What is Vout?",
+   "vi": "Mạch logarit (Vout = −0,025 ln(Vin/(R·IR))) có Vin = 3 V, R = 82 kΩ và IR = 100 nA. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-9150 mV",
+    "vi": "-9150 mV"
+   },
+   {
+    "en": "-339 mV",
+    "vi": "-339 mV"
+   },
+   {
+    "en": "-64.1 mV",
+    "vi": "-64.1 mV"
+   },
+   {
+    "en": "-148 mV",
+    "vi": "-148 mV"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "ln(366) = 5.9; Vout = −0.025 × that = -148 mV.",
+   "vi": "ln(366) = 5.9; Vout = −0,025 × giá trị đó = -148 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 27",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A log amplifier (Vout = −0.025 ln(Vin/(R·IR))) has Vin = 1.5 V, R = 47 kΩ and IR = 60 nA. What is Vout?",
+   "vi": "Mạch logarit (Vout = −0,025 ln(Vin/(R·IR))) có Vin = 1.5 V, R = 47 kΩ và IR = 60 nA. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-157 mV",
+    "vi": "-157 mV"
+   },
+   {
+    "en": "-68.1 mV",
+    "vi": "-68.1 mV"
+   },
+   {
+    "en": "-361 mV",
+    "vi": "-361 mV"
+   },
+   {
+    "en": "-13,300 mV",
+    "vi": "-13,300 mV"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ln(532) = 6.28; Vout = −0.025 × that = -157 mV.",
+   "vi": "ln(532) = 6.28; Vout = −0,025 × giá trị đó = -157 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 27",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A log amplifier (Vout = −0.025 ln(Vin/(R·IR))) has Vin = 2 V, R = 100 kΩ and IR = 50 nA. What is Vout?",
+   "vi": "Mạch logarit (Vout = −0,025 ln(Vin/(R·IR))) có Vin = 2 V, R = 100 kΩ và IR = 50 nA. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-150 mV",
+    "vi": "-150 mV"
+   },
+   {
+    "en": "-65.1 mV",
+    "vi": "-65.1 mV"
+   },
+   {
+    "en": "-10,000 mV",
+    "vi": "-10,000 mV"
+   },
+   {
+    "en": "-345 mV",
+    "vi": "-345 mV"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ln(400) = 5.99; Vout = −0.025 × that = -150 mV.",
+   "vi": "ln(400) = 5.99; Vout = −0,025 × giá trị đó = -150 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 27",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A log amplifier (Vout = −0.025 ln(Vin/(R·IR))) has Vin = 5 V, R = 100 kΩ and IR = 80 nA. What is Vout?",
+   "vi": "Mạch logarit (Vout = −0,025 ln(Vin/(R·IR))) có Vin = 5 V, R = 100 kΩ và IR = 80 nA. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-15,600 mV",
+    "vi": "-15,600 mV"
+   },
+   {
+    "en": "-161 mV",
+    "vi": "-161 mV"
+   },
+   {
+    "en": "-69.9 mV",
+    "vi": "-69.9 mV"
+   },
+   {
+    "en": "-370 mV",
+    "vi": "-370 mV"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ln(625) = 6.44; Vout = −0.025 × that = -161 mV.",
+   "vi": "ln(625) = 6.44; Vout = −0,025 × giá trị đó = -161 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 27",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A log amplifier (Vout = −0.025 ln(Vin/(R·IR))) has Vin = 1 V, R = 10 kΩ and IR = 100 nA. What is Vout?",
+   "vi": "Mạch logarit (Vout = −0,025 ln(Vin/(R·IR))) có Vin = 1 V, R = 10 kΩ và IR = 100 nA. Vout là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-173 mV",
+    "vi": "-173 mV"
+   },
+   {
+    "en": "173 mV",
+    "vi": "173 mV"
+   },
+   {
+    "en": "-75 mV",
+    "vi": "-75 mV"
+   },
+   {
+    "en": "-25,000 mV",
+    "vi": "-25,000 mV"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ln(1000) = 6.91; Vout = −0.025 × that = -173 mV.",
+   "vi": "ln(1000) = 6.91; Vout = −0,025 × giá trị đó = -173 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 27",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is log₁₀ of 0.5?",
+   "vi": "log₁₀ của 0.5 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.301",
+    "vi": "0.301"
+   },
+   {
+    "en": "3.16",
+    "vi": "3.16"
+   },
+   {
+    "en": "-0.301",
+    "vi": "-0.301"
+   },
+   {
+    "en": "-0.693",
+    "vi": "-0.693"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "log₁₀(0.5) = -0.301; the natural log would be -0.693.",
+   "vi": "log₁₀(0.5) = -0.301; logarit tự nhiên sẽ là -0.693."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 23",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 23"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is log₁₀ of 2?",
+   "vi": "log₁₀ của 2 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "100",
+    "vi": "100"
+   },
+   {
+    "en": "0.301",
+    "vi": "0.301"
+   },
+   {
+    "en": "3.32",
+    "vi": "3.32"
+   },
+   {
+    "en": "0.693",
+    "vi": "0.693"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "log₁₀(2) = 0.301; the natural log would be 0.693.",
+   "vi": "log₁₀(2) = 0.301; logarit tự nhiên sẽ là 0.693."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 23",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 23"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is log₁₀ of 50?",
+   "vi": "log₁₀ của 50 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-1.7",
+    "vi": "-1.7"
+   },
+   {
+    "en": "1.7",
+    "vi": "1.7"
+   },
+   {
+    "en": "3.91",
+    "vi": "3.91"
+   },
+   {
+    "en": "0.589",
+    "vi": "0.589"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "log₁₀(50) = 1.7; the natural log would be 3.91.",
+   "vi": "log₁₀(50) = 1.7; logarit tự nhiên sẽ là 3.91."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 23",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 23"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is log₁₀ of 130?",
+   "vi": "log₁₀ của 130 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4.87",
+    "vi": "4.87"
+   },
+   {
+    "en": "0.473",
+    "vi": "0.473"
+   },
+   {
+    "en": "2.11",
+    "vi": "2.11"
+   },
+   {
+    "en": "13",
+    "vi": "13"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "log₁₀(130) = 2.11; the natural log would be 4.87.",
+   "vi": "log₁₀(130) = 2.11; logarit tự nhiên sẽ là 4.87."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 23",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 23"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is log₁₀ of 8?",
+   "vi": "log₁₀ của 8 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.8",
+    "vi": "0.8"
+   },
+   {
+    "en": "-0.903",
+    "vi": "-0.903"
+   },
+   {
+    "en": "2.08",
+    "vi": "2.08"
+   },
+   {
+    "en": "0.903",
+    "vi": "0.903"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "log₁₀(8) = 0.903; the natural log would be 2.08.",
+   "vi": "log₁₀(8) = 0.903; logarit tự nhiên sẽ là 2.08."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 23",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 23"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is log₁₀ of 0.1?",
+   "vi": "log₁₀ của 0.1 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-2.3",
+    "vi": "-2.3"
+   },
+   {
+    "en": "1.26",
+    "vi": "1.26"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "-1",
+    "vi": "-1"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "log₁₀(0.1) = -1; the natural log would be -2.3.",
+   "vi": "log₁₀(0.1) = -1; logarit tự nhiên sẽ là -2.3."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 23",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 23"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The main advantage of an instrumentation amplifier over a single op-amp difference amplifier is",
+   "vi": "Ưu điểm chính của mạch khuếch đại thiết bị so với mạch hiệu một op-amp là"
+  },
+  "opts": [
+   {
+    "en": "lower cost",
+    "vi": "giá thấp hơn"
+   },
+   {
+    "en": "very high input impedance, high CMRR and gain set by one resistor",
+    "vi": "trở kháng vào rất cao, CMRR cao và độ lợi đặt bằng một điện trở"
+   },
+   {
+    "en": "no need for a power supply",
+    "vi": "không cần nguồn cấp"
+   },
+   {
+    "en": "fixed gain of one",
+    "vi": "độ lợi cố định bằng một"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The input buffers give high Zin and the matched difference stage gives high CMRR.",
+   "vi": "Các mạch đệm vào cho Zin cao và tầng hiệu cân bằng cho CMRR cao."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In an instrumentation amplifier, increasing the gain generally",
+   "vi": "Ở mạch khuếch đại thiết bị, tăng độ lợi nói chung"
+  },
+  "opts": [
+   {
+    "en": "reduces the bandwidth",
+    "vi": "làm giảm băng thông"
+   },
+   {
+    "en": "increases the CMRR to infinity",
+    "vi": "làm CMRR tăng tới vô cùng"
+   },
+   {
+    "en": "increases the bandwidth",
+    "vi": "làm tăng băng thông"
+   },
+   {
+    "en": "has no effect on anything",
+    "vi": "không ảnh hưởng gì"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Gain–bandwidth trade-off (Floyd Fig. 14–6).",
+   "vi": "Đánh đổi độ lợi–băng thông (Floyd Hình 14–6)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An isolation amplifier is chosen mainly for",
+   "vi": "Mạch khuếch đại cách ly được chọn chủ yếu để"
+  },
+  "opts": [
+   {
+    "en": "reducing the supply voltage",
+    "vi": "giảm điện áp nguồn"
+   },
+   {
+    "en": "increasing the bandwidth",
+    "vi": "tăng băng thông"
+   },
+   {
+    "en": "producing a logarithmic output",
+    "vi": "tạo ngõ ra logarit"
+   },
+   {
+    "en": "breaking the ground/electrical path between source and load",
+    "vi": "ngắt đường nối đất/đường dẫn điện giữa nguồn và tải"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Safety and noise immunity come from galvanic isolation.",
+   "vi": "An toàn và chống nhiễu đến từ cách ly điện."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A capacitor-coupled isolation amplifier passes the signal across the barrier by",
+   "vi": "Mạch cách ly ghép tụ truyền tín hiệu qua rào cách ly bằng cách"
+  },
+  "opts": [
+   {
+    "en": "modulating it so the capacitor can couple it",
+    "vi": "điều chế để tụ có thể ghép tín hiệu"
+   },
+   {
+    "en": "a dc current loop",
+    "vi": "vòng dòng một chiều"
+   },
+   {
+    "en": "a resistor divider",
+    "vi": "bộ chia điện trở"
+   },
+   {
+    "en": "a copper wire",
+    "vi": "dây đồng"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A capacitor blocks dc, so the signal is modulated and demodulated across the barrier.",
+   "vi": "Tụ chặn một chiều nên tín hiệu được điều chế và giải điều chế qua rào cách ly."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The gain of an OTA can be varied electronically by changing",
+   "vi": "Độ lợi của OTA có thể thay đổi bằng điện bằng cách đổi"
+  },
+  "opts": [
+   {
+    "en": "the bias current",
+    "vi": "dòng phân cực"
+   },
+   {
+    "en": "the package type",
+    "vi": "kiểu vỏ"
+   },
+   {
+    "en": "the input frequency",
+    "vi": "tần số vào"
+   },
+   {
+    "en": "the supply polarity only",
+    "vi": "chỉ cực tính nguồn"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "gm = K·IBIAS, so Av = K·IBIAS·RL.",
+   "vi": "gm = K·IBIAS nên Av = K·IBIAS·RL."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OTA used with a modulating bias current can act as",
+   "vi": "OTA dùng với dòng phân cực điều chế có thể làm"
+  },
+  "opts": [
+   {
+    "en": "an amplitude modulator",
+    "vi": "bộ điều biên"
+   },
+   {
+    "en": "a clamp",
+    "vi": "mạch ghim"
+   },
+   {
+    "en": "a voltage regulator",
+    "vi": "bộ ổn áp"
+   },
+   {
+    "en": "a rectifier",
+    "vi": "bộ chỉnh lưu"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Varying gm with the modulating signal varies the output amplitude.",
+   "vi": "Thay đổi gm theo tín hiệu điều chế làm thay đổi biên độ ngõ ra."
+  },
+  "level": 1,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A log amplifier is useful for compressing a signal with",
+   "vi": "Mạch logarit hữu ích để nén tín hiệu có"
+  },
+  "opts": [
+   {
+    "en": "no noise",
+    "vi": "không có nhiễu"
+   },
+   {
+    "en": "only dc content",
+    "vi": "chỉ thành phần một chiều"
+   },
+   {
+    "en": "a narrow dynamic range",
+    "vi": "dải động hẹp"
+   },
+   {
+    "en": "a wide dynamic range",
+    "vi": "dải động rộng"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "The logarithm squeezes large ratios into small voltage differences.",
+   "vi": "Hàm logarit nén tỉ số lớn thành chênh lệch điện áp nhỏ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of a basic log amplifier is limited to about 0.7 V because",
+   "vi": "Ngõ ra của mạch logarit cơ bản bị giới hạn khoảng 0,7 V vì"
+  },
+  "opts": [
+   {
+    "en": "the input is a sine wave",
+    "vi": "tín hiệu vào là sóng sin"
+   },
+   {
+    "en": "the supply is only 0.7 V",
+    "vi": "nguồn chỉ có 0,7 V"
+   },
+   {
+    "en": "the op-amp has low gain",
+    "vi": "op-amp có độ lợi thấp"
+   },
+   {
+    "en": "it is the voltage of a forward-biased pn junction",
+    "vi": "đó là điện áp của lớp tiếp xúc pn phân cực thuận"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Floyd Problem 25: the pn junction in the feedback path.",
+   "vi": "Floyd Bài 25: lớp tiếp xúc pn ở nhánh hồi tiếp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Cascading a log amplifier and an antilog amplifier can implement",
+   "vi": "Ghép tầng mạch logarit và mạch đối logarit có thể thực hiện"
+  },
+  "opts": [
+   {
+    "en": "level shifting only",
+    "vi": "chỉ dịch mức"
+   },
+   {
+    "en": "rectification",
+    "vi": "chỉnh lưu"
+   },
+   {
+    "en": "filtering",
+    "vi": "lọc"
+   },
+   {
+    "en": "multiplication or division of signals",
+    "vi": "phép nhân hoặc chia tín hiệu"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "ln(a) + ln(b) = ln(ab): add logs, then take the antilog.",
+   "vi": "ln(a) + ln(b) = ln(ab): cộng logarit rồi lấy đối logarit."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Which input signal is rejected most by an ideal instrumentation amplifier?",
+   "vi": "Tín hiệu vào nào bị mạch khuếch đại thiết bị lý tưởng triệt nhiều nhất?"
+  },
+  "opts": [
+   {
+    "en": "a signal between the two inputs",
+    "vi": "tín hiệu giữa hai ngõ vào"
+   },
+   {
+    "en": "a low-frequency difference signal",
+    "vi": "tín hiệu hiệu tần số thấp"
+   },
+   {
+    "en": "a dc difference voltage",
+    "vi": "điện áp hiệu một chiều"
+   },
+   {
+    "en": "a signal common to both inputs",
+    "vi": "tín hiệu chung ở cả hai ngõ vào"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Only the difference Vin2 − Vin1 is amplified.",
+   "vi": "Chỉ hiệu Vin2 − Vin1 được khuếch đại."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.14 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.14 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If RG in Figure 14–7 is decreased, the voltage gain will",
+   "vi": "Nếu giảm RG trong Hình 14–7 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "G = 1 + 50.5 kΩ/RG rises as RG falls.",
+   "vi": "G = 1 + 50,5 kΩ/RG tăng khi RG giảm."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Instrumentation amplifiers",
+   "vi": "Mạch khuếch đại thiết bị"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q1",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 1"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_6_7.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Ri1 in the isolation amplifier of Figure 14–15 is increased to 4.7 kΩ, the total voltage gain will",
+   "vi": "Nếu tăng Ri1 của mạch cách ly ở Hình 14–15 lên 4,7 kΩ thì độ lợi tổng sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Input-stage gain Rf1/Ri1 falls from 22/2.2 = 10 to 22/4.7 ≈ 4.7.",
+   "vi": "Độ lợi tầng vào Rf1/Ri1 giảm từ 22/2,2 = 10 xuống 22/4,7 ≈ 4,7."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q4",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 4"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_15.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Rf2 in the output stage of Figure 14–15 is increased, the total voltage gain will",
+   "vi": "Nếu tăng Rf2 ở tầng ra của Hình 14–15 thì độ lợi tổng sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The output-stage gain grows with Rf2, and the total gain is the product of the stages.",
+   "vi": "Độ lợi tầng ra tăng theo Rf2 và độ lợi tổng là tích các tầng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Isolation amplifiers",
+   "vi": "Mạch khuếch đại cách ly"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q4",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 4"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_15.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If RL in the OTA of Figure 14–23 is increased, the voltage gain will",
+   "vi": "Nếu tăng RL của OTA ở Hình 14–23 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Av = gm·RL.",
+   "vi": "Av = gm·RL."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q6",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_23.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the bias current in the OTA of Figure 14–23 is reduced, the voltage gain will",
+   "vi": "Nếu giảm dòng phân cực của OTA ở Hình 14–23 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "gm = K·IBIAS falls, so Av falls.",
+   "vi": "gm = K·IBIAS giảm nên Av giảm."
+  },
+  "level": 2,
+  "topic": {
+   "en": "OTA",
+   "vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_23.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "In the log amplifier of Figure 14–31, the magnitude of the output voltage |VOUT| is about 0.7 V (one diode drop). If R1 is decreased to a smaller value, |VOUT| will",
+   "vi": "Ở mạch logarit Hình 14–31, độ lớn điện áp ra |VOUT| khoảng 0,7 V (một sụt áp điốt). Nếu giảm R1 xuống giá trị nhỏ hơn thì |VOUT| sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The diode current grows (I = Vin/R1) and VD grows with its logarithm: |VOUT| rises slightly.",
+   "vi": "Dòng điốt tăng (I = Vin/R1) và VD tăng theo logarit của nó: |VOUT| tăng nhẹ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Log and antilog amplifiers",
+   "vi": "Mạch logarit và đối logarit"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m05/fig14_31.png",
+  "check": "figure + formula"
+ }
+]
