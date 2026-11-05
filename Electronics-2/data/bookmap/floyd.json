@@ -1,0 +1,1992 @@
+{
+ "book": "floyd",
+ "offset": 18,
+ "pages": 976,
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Introduction to Electronics",
+   "pdf": 19,
+   "printed": 1,
+   "sections": [
+    {
+     "num": "1–1",
+     "title": "The Atom",
+     "pdf": 20,
+     "printed": 2,
+     "kind": "section",
+     "pdf_end": 24
+    },
+    {
+     "num": "1–2",
+     "title": "Materials Used in Electronics",
+     "pdf": 25,
+     "printed": 7,
+     "kind": "section",
+     "pdf_end": 28
+    },
+    {
+     "num": "1–3",
+     "title": "Current in Semiconductors",
+     "pdf": 29,
+     "printed": 11,
+     "kind": "section",
+     "pdf_end": 31
+    },
+    {
+     "num": "1–4",
+     "title": "N-Type and P-Type Semiconductors",
+     "pdf": 32,
+     "printed": 14,
+     "kind": "section",
+     "pdf_end": 33
+    },
+    {
+     "num": "1–5",
+     "title": "The PN Junction",
+     "pdf": 34,
+     "printed": 16,
+     "kind": "section",
+     "pdf_end": 41
+    },
+    {
+     "num": "",
+     "title": "Green Tech Application 1: Solar Power",
+     "pdf": 42,
+     "printed": 24,
+     "kind": "feature",
+     "pdf_end": 47
+    }
+   ],
+   "pdf_end": 47,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 37,
+     "printed": 19
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 38,
+     "printed": 20
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 39,
+     "printed": 21
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 39,
+     "printed": 21
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 41,
+     "printed": 23
+    }
+   ]
+  },
+  {
+   "num": 2,
+   "title": "Diodes and Applications",
+   "pdf": 48,
+   "printed": 30,
+   "sections": [
+    {
+     "num": "2–1",
+     "title": "Diode Operation",
+     "pdf": 49,
+     "printed": 31,
+     "kind": "section",
+     "pdf_end": 53
+    },
+    {
+     "num": "2–2",
+     "title": "Voltage-Current (V-I) Characteristics",
+     "pdf": 54,
+     "printed": 36,
+     "kind": "section",
+     "pdf_end": 56
+    },
+    {
+     "num": "2–3",
+     "title": "Diode Models",
+     "pdf": 57,
+     "printed": 39,
+     "kind": "section",
+     "pdf_end": 61
+    },
+    {
+     "num": "2–4",
+     "title": "Half-Wave Rectifiers",
+     "pdf": 62,
+     "printed": 44,
+     "kind": "section",
+     "pdf_end": 67
+    },
+    {
+     "num": "2–5",
+     "title": "Full-Wave Rectifiers",
+     "pdf": 68,
+     "printed": 50,
+     "kind": "section",
+     "pdf_end": 74
+    },
+    {
+     "num": "2–6",
+     "title": "Power Supply Filters and Regulators",
+     "pdf": 75,
+     "printed": 57,
+     "kind": "section",
+     "pdf_end": 81
+    },
+    {
+     "num": "2–7",
+     "title": "Diode Limiters and Clampers",
+     "pdf": 82,
+     "printed": 64,
+     "kind": "section",
+     "pdf_end": 88
+    },
+    {
+     "num": "2–8",
+     "title": "Voltage Multipliers",
+     "pdf": 89,
+     "printed": 71,
+     "kind": "section",
+     "pdf_end": 90
+    },
+    {
+     "num": "2–9",
+     "title": "The Diode Datasheet",
+     "pdf": 91,
+     "printed": 73,
+     "kind": "section",
+     "pdf_end": 93
+    },
+    {
+     "num": "2–10",
+     "title": "Troubleshooting",
+     "pdf": 94,
+     "printed": 76,
+     "kind": "section",
+     "pdf_end": 102
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 103,
+     "printed": 85,
+     "kind": "feature",
+     "pdf_end": 125
+    },
+    {
+     "num": "",
+     "title": "Green Tech Application 2: Solar Power",
+     "pdf": 126,
+     "printed": 108,
+     "kind": "feature",
+     "pdf_end": 129
+    }
+   ],
+   "pdf_end": 129,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 109,
+     "printed": 91
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 111,
+     "printed": 93
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 112,
+     "printed": 94
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 112,
+     "printed": 94
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 113,
+     "printed": 95
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 114,
+     "printed": 96
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 116,
+     "printed": 98
+    }
+   ]
+  },
+  {
+   "num": 3,
+   "title": "Special-Purpose Diodes",
+   "pdf": 130,
+   "printed": 112,
+   "sections": [
+    {
+     "num": "3–1",
+     "title": "The Zener Diode",
+     "pdf": 131,
+     "printed": 113,
+     "kind": "section",
+     "pdf_end": 137
+    },
+    {
+     "num": "3–2",
+     "title": "Zener Diode Applications",
+     "pdf": 138,
+     "printed": 120,
+     "kind": "section",
+     "pdf_end": 145
+    },
+    {
+     "num": "3–3",
+     "title": "The Varactor Diode",
+     "pdf": 146,
+     "printed": 128,
+     "kind": "section",
+     "pdf_end": 150
+    },
+    {
+     "num": "3–4",
+     "title": "Optical Diodes",
+     "pdf": 151,
+     "printed": 133,
+     "kind": "section",
+     "pdf_end": 164
+    },
+    {
+     "num": "3–5",
+     "title": "Other Types of Diodes",
+     "pdf": 165,
+     "printed": 147,
+     "kind": "section",
+     "pdf_end": 170
+    },
+    {
+     "num": "3–6",
+     "title": "Troubleshooting",
+     "pdf": 171,
+     "printed": 153,
+     "kind": "section",
+     "pdf_end": 172
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 173,
+     "printed": 155,
+     "kind": "feature",
+     "pdf_end": 187
+    },
+    {
+     "num": "",
+     "title": "Green Tech Application 3: Solar Power",
+     "pdf": 188,
+     "printed": 170,
+     "kind": "feature",
+     "pdf_end": 190
+    }
+   ],
+   "pdf_end": 190,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 177,
+     "printed": 159
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 178,
+     "printed": 160
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 178,
+     "printed": 160
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 179,
+     "printed": 161
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 179,
+     "printed": 161
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 179,
+     "printed": 161
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 181,
+     "printed": 163
+    }
+   ]
+  },
+  {
+   "num": 4,
+   "title": "Bipolar Junction Transistors",
+   "pdf": 191,
+   "printed": 173,
+   "sections": [
+    {
+     "num": "4–1",
+     "title": "Bipolar Junction Transistor (BJT) Structure",
+     "pdf": 192,
+     "printed": 174,
+     "kind": "section",
+     "pdf_end": 192
+    },
+    {
+     "num": "4–2",
+     "title": "Basic BJT Operation",
+     "pdf": 193,
+     "printed": 175,
+     "kind": "section",
+     "pdf_end": 194
+    },
+    {
+     "num": "4–3",
+     "title": "BJT Characteristics and Parameters",
+     "pdf": 195,
+     "printed": 177,
+     "kind": "section",
+     "pdf_end": 207
+    },
+    {
+     "num": "4–4",
+     "title": "The BJT as an Amplifier",
+     "pdf": 208,
+     "printed": 190,
+     "kind": "section",
+     "pdf_end": 209
+    },
+    {
+     "num": "4–5",
+     "title": "The BJT as a Switch",
+     "pdf": 210,
+     "printed": 192,
+     "kind": "section",
+     "pdf_end": 213
+    },
+    {
+     "num": "4–6",
+     "title": "The Phototransistor",
+     "pdf": 214,
+     "printed": 196,
+     "kind": "section",
+     "pdf_end": 216
+    },
+    {
+     "num": "4–7",
+     "title": "Transistor Categories and Packaging",
+     "pdf": 217,
+     "printed": 199,
+     "kind": "section",
+     "pdf_end": 218
+    },
+    {
+     "num": "4–8",
+     "title": "Troubleshooting",
+     "pdf": 219,
+     "printed": 201,
+     "kind": "section",
+     "pdf_end": 225
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 226,
+     "printed": 208,
+     "kind": "feature",
+     "pdf_end": 241
+    },
+    {
+     "num": "",
+     "title": "Green Tech Application 4: Solar Power",
+     "pdf": 242,
+     "printed": 224,
+     "kind": "feature",
+     "pdf_end": 245
+    }
+   ],
+   "pdf_end": 245,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 230,
+     "printed": 212
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 231,
+     "printed": 213
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 232,
+     "printed": 214
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 232,
+     "printed": 214
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 232,
+     "printed": 214
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 233,
+     "printed": 215
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 234,
+     "printed": 216
+    }
+   ]
+  },
+  {
+   "num": 5,
+   "title": "Transistor Bias Circuits",
+   "pdf": 246,
+   "printed": 228,
+   "sections": [
+    {
+     "num": "5–1",
+     "title": "The DC Operating Point",
+     "pdf": 247,
+     "printed": 229,
+     "kind": "section",
+     "pdf_end": 252
+    },
+    {
+     "num": "5–2",
+     "title": "Voltage-Divider Bias",
+     "pdf": 253,
+     "printed": 235,
+     "kind": "section",
+     "pdf_end": 258
+    },
+    {
+     "num": "5–3",
+     "title": "Other Bias Methods",
+     "pdf": 259,
+     "printed": 241,
+     "kind": "section",
+     "pdf_end": 265
+    },
+    {
+     "num": "5–4",
+     "title": "Troubleshooting",
+     "pdf": 266,
+     "printed": 248,
+     "kind": "section",
+     "pdf_end": 269
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 270,
+     "printed": 252,
+     "kind": "feature",
+     "pdf_end": 284
+    },
+    {
+     "num": "",
+     "title": "Green Tech Application 5: Wind Power",
+     "pdf": 285,
+     "printed": 267,
+     "kind": "feature",
+     "pdf_end": 288
+    }
+   ],
+   "pdf_end": 288,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 273,
+     "printed": 255
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 274,
+     "printed": 256
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 274,
+     "printed": 256
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 275,
+     "printed": 257
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 275,
+     "printed": 257
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 276,
+     "printed": 258
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 277,
+     "printed": 259
+    }
+   ]
+  },
+  {
+   "num": 6,
+   "title": "BJT Amplifiers",
+   "pdf": 289,
+   "printed": 271,
+   "sections": [
+    {
+     "num": "6–1",
+     "title": "Amplifier Operation",
+     "pdf": 290,
+     "printed": 272,
+     "kind": "section",
+     "pdf_end": 292
+    },
+    {
+     "num": "6–2",
+     "title": "Transistor AC Models",
+     "pdf": 293,
+     "printed": 275,
+     "kind": "section",
+     "pdf_end": 295
+    },
+    {
+     "num": "6–3",
+     "title": "The Common-Emitter Amplifier",
+     "pdf": 296,
+     "printed": 278,
+     "kind": "section",
+     "pdf_end": 308
+    },
+    {
+     "num": "6–4",
+     "title": "The Common-Collector Amplifier",
+     "pdf": 309,
+     "printed": 291,
+     "kind": "section",
+     "pdf_end": 315
+    },
+    {
+     "num": "6–5",
+     "title": "The Common-Base Amplifier",
+     "pdf": 316,
+     "printed": 298,
+     "kind": "section",
+     "pdf_end": 318
+    },
+    {
+     "num": "6–6",
+     "title": "Multistage Amplifiers",
+     "pdf": 319,
+     "printed": 301,
+     "kind": "section",
+     "pdf_end": 321
+    },
+    {
+     "num": "6–7",
+     "title": "The Differential Amplifier",
+     "pdf": 322,
+     "printed": 304,
+     "kind": "section",
+     "pdf_end": 327
+    },
+    {
+     "num": "6–8",
+     "title": "Troubleshooting",
+     "pdf": 328,
+     "printed": 310,
+     "kind": "section",
+     "pdf_end": 331
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 332,
+     "printed": 314,
+     "kind": "feature",
+     "pdf_end": 352
+    },
+    {
+     "num": "",
+     "title": "Green Tech Application 6: Wind Power",
+     "pdf": 353,
+     "printed": 335,
+     "kind": "feature",
+     "pdf_end": 356
+    }
+   ],
+   "pdf_end": 356,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 337,
+     "printed": 319
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 342,
+     "printed": 324
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 342,
+     "printed": 324
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 343,
+     "printed": 325
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 344,
+     "printed": 326
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 344,
+     "printed": 326
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 346,
+     "printed": 328
+    }
+   ]
+  },
+  {
+   "num": 7,
+   "title": "Power Amplifiers",
+   "pdf": 357,
+   "printed": 339,
+   "sections": [
+    {
+     "num": "7–1",
+     "title": "The Class A Power Amplifier",
+     "pdf": 358,
+     "printed": 340,
+     "kind": "section",
+     "pdf_end": 363
+    },
+    {
+     "num": "7–2",
+     "title": "The Class B and Class AB Push-Pull Amplifiers",
+     "pdf": 364,
+     "printed": 346,
+     "kind": "section",
+     "pdf_end": 374
+    },
+    {
+     "num": "7–3",
+     "title": "The Class C Amplifier",
+     "pdf": 375,
+     "printed": 357,
+     "kind": "section",
+     "pdf_end": 382
+    },
+    {
+     "num": "7–4",
+     "title": "Troubleshooting",
+     "pdf": 383,
+     "printed": 365,
+     "kind": "section",
+     "pdf_end": 385
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 386,
+     "printed": 368,
+     "kind": "feature",
+     "pdf_end": 401
+    }
+   ],
+   "pdf_end": 401,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 392,
+     "printed": 374
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 392,
+     "printed": 374
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 392,
+     "printed": 374
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 393,
+     "printed": 375
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 393,
+     "printed": 375
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 394,
+     "printed": 376
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 395,
+     "printed": 377
+    }
+   ]
+  },
+  {
+   "num": 8,
+   "title": "Field-Effect Transistors (FETs)",
+   "pdf": 402,
+   "printed": 384,
+   "sections": [
+    {
+     "num": "8–1",
+     "title": "The JFET",
+     "pdf": 403,
+     "printed": 385,
+     "kind": "section",
+     "pdf_end": 404
+    },
+    {
+     "num": "8–2",
+     "title": "JFET Characteristics and Parameters",
+     "pdf": 405,
+     "printed": 387,
+     "kind": "section",
+     "pdf_end": 414
+    },
+    {
+     "num": "8–3",
+     "title": "JFET Biasing",
+     "pdf": 415,
+     "printed": 397,
+     "kind": "section",
+     "pdf_end": 425
+    },
+    {
+     "num": "8–4",
+     "title": "The Ohmic Region",
+     "pdf": 426,
+     "printed": 408,
+     "kind": "section",
+     "pdf_end": 429
+    },
+    {
+     "num": "8–5",
+     "title": "The MOSFET",
+     "pdf": 430,
+     "printed": 412,
+     "kind": "section",
+     "pdf_end": 434
+    },
+    {
+     "num": "8–6",
+     "title": "MOSFET Characteristics and Parameters",
+     "pdf": 435,
+     "printed": 417,
+     "kind": "section",
+     "pdf_end": 437
+    },
+    {
+     "num": "8–7",
+     "title": "MOSFET Biasing",
+     "pdf": 438,
+     "printed": 420,
+     "kind": "section",
+     "pdf_end": 440
+    },
+    {
+     "num": "8–8",
+     "title": "The IGBT",
+     "pdf": 441,
+     "printed": 423,
+     "kind": "section",
+     "pdf_end": 442
+    },
+    {
+     "num": "8–9",
+     "title": "Troubleshooting",
+     "pdf": 443,
+     "printed": 425,
+     "kind": "section",
+     "pdf_end": 444
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 445,
+     "printed": 427,
+     "kind": "feature",
+     "pdf_end": 468
+    }
+   ],
+   "pdf_end": 468,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 452,
+     "printed": 434
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 454,
+     "printed": 436
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 455,
+     "printed": 437
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 455,
+     "printed": 437
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 455,
+     "printed": 437
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 456,
+     "printed": 438
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 458,
+     "printed": 440
+    }
+   ]
+  },
+  {
+   "num": 9,
+   "title": "FET Amplifiers and Switching Circuits",
+   "pdf": 469,
+   "printed": 451,
+   "sections": [
+    {
+     "num": "9–1",
+     "title": "The Common-Source Amplifier",
+     "pdf": 470,
+     "printed": 452,
+     "kind": "section",
+     "pdf_end": 481
+    },
+    {
+     "num": "9–2",
+     "title": "The Common-Drain Amplifier",
+     "pdf": 482,
+     "printed": 464,
+     "kind": "section",
+     "pdf_end": 484
+    },
+    {
+     "num": "9–3",
+     "title": "The Common-Gate Amplifier",
+     "pdf": 485,
+     "printed": 467,
+     "kind": "section",
+     "pdf_end": 487
+    },
+    {
+     "num": "9–4",
+     "title": "The Class D Amplifier",
+     "pdf": 488,
+     "printed": 470,
+     "kind": "section",
+     "pdf_end": 491
+    },
+    {
+     "num": "9–5",
+     "title": "MOSFET Analog Switching",
+     "pdf": 492,
+     "printed": 474,
+     "kind": "section",
+     "pdf_end": 496
+    },
+    {
+     "num": "9–6",
+     "title": "MOSFET Digital Switching",
+     "pdf": 497,
+     "printed": 479,
+     "kind": "section",
+     "pdf_end": 499
+    },
+    {
+     "num": "9–7",
+     "title": "Troubleshooting",
+     "pdf": 500,
+     "printed": 482,
+     "kind": "section",
+     "pdf_end": 502
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 503,
+     "printed": 485,
+     "kind": "feature",
+     "pdf_end": 522
+    }
+   ],
+   "pdf_end": 522,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 509,
+     "printed": 491
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 512,
+     "printed": 494
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 512,
+     "printed": 494
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 513,
+     "printed": 495
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 513,
+     "printed": 495
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 514,
+     "printed": 496
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 515,
+     "printed": 497
+    }
+   ]
+  },
+  {
+   "num": 10,
+   "title": "Amplifier Frequency Response",
+   "pdf": 523,
+   "printed": 505,
+   "sections": [
+    {
+     "num": "10–1",
+     "title": "Basic Concepts",
+     "pdf": 524,
+     "printed": 506,
+     "kind": "section",
+     "pdf_end": 526
+    },
+    {
+     "num": "10–2",
+     "title": "The Decibel",
+     "pdf": 527,
+     "printed": 509,
+     "kind": "section",
+     "pdf_end": 529
+    },
+    {
+     "num": "10–3",
+     "title": "Low-Frequency Amplifier Response",
+     "pdf": 530,
+     "printed": 512,
+     "kind": "section",
+     "pdf_end": 547
+    },
+    {
+     "num": "10–4",
+     "title": "High-Frequency Amplifier Response",
+     "pdf": 548,
+     "printed": 530,
+     "kind": "section",
+     "pdf_end": 557
+    },
+    {
+     "num": "10–5",
+     "title": "Total Amplifier Frequency Response",
+     "pdf": 558,
+     "printed": 540,
+     "kind": "section",
+     "pdf_end": 560
+    },
+    {
+     "num": "10–6",
+     "title": "Frequency Response of Multistage Amplifiers",
+     "pdf": 561,
+     "printed": 543,
+     "kind": "section",
+     "pdf_end": 563
+    },
+    {
+     "num": "10–7",
+     "title": "Frequency Response Measurements",
+     "pdf": 564,
+     "printed": 546,
+     "kind": "section",
+     "pdf_end": 566
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 567,
+     "printed": 549,
+     "kind": "feature",
+     "pdf_end": 581
+    }
+   ],
+   "pdf_end": 581,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 572,
+     "printed": 554
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 573,
+     "printed": 555
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 573,
+     "printed": 555
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 575,
+     "printed": 557
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 575,
+     "printed": 557
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 576,
+     "printed": 558
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 577,
+     "printed": 559
+    }
+   ]
+  },
+  {
+   "num": 11,
+   "title": "Thyristors",
+   "pdf": 582,
+   "printed": 564,
+   "sections": [
+    {
+     "num": "11–1",
+     "title": "The Four-Layer Diode",
+     "pdf": 583,
+     "printed": 565,
+     "kind": "section",
+     "pdf_end": 585
+    },
+    {
+     "num": "11–2",
+     "title": "The Silicon-Controlled Rectifier (SCR)",
+     "pdf": 586,
+     "printed": 568,
+     "kind": "section",
+     "pdf_end": 590
+    },
+    {
+     "num": "11–3",
+     "title": "SCR Applications",
+     "pdf": 591,
+     "printed": 573,
+     "kind": "section",
+     "pdf_end": 595
+    },
+    {
+     "num": "11–4",
+     "title": "The Diac and Triac",
+     "pdf": 596,
+     "printed": 578,
+     "kind": "section",
+     "pdf_end": 599
+    },
+    {
+     "num": "11–5",
+     "title": "The Silicon-Controlled Switch (SCS)",
+     "pdf": 600,
+     "printed": 582,
+     "kind": "section",
+     "pdf_end": 600
+    },
+    {
+     "num": "11–6",
+     "title": "The Unijunction Transistor (UJT)",
+     "pdf": 601,
+     "printed": 583,
+     "kind": "section",
+     "pdf_end": 605
+    },
+    {
+     "num": "11–7",
+     "title": "The Programmable Unijunction Transistor (PUT)",
+     "pdf": 606,
+     "printed": 588,
+     "kind": "section",
+     "pdf_end": 607
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 608,
+     "printed": 590,
+     "kind": "feature",
+     "pdf_end": 619
+    }
+   ],
+   "pdf_end": 619,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 612,
+     "printed": 594
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 613,
+     "printed": 595
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 613,
+     "printed": 595
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 614,
+     "printed": 596
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 614,
+     "printed": 596
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 614,
+     "printed": 596
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 616,
+     "printed": 598
+    }
+   ]
+  },
+  {
+   "num": 12,
+   "title": "The Operational Amplifier",
+   "pdf": 620,
+   "printed": 602,
+   "sections": [
+    {
+     "num": "12–1",
+     "title": "Introduction to Operational Amplifiers",
+     "pdf": 621,
+     "printed": 603,
+     "kind": "section",
+     "pdf_end": 622
+    },
+    {
+     "num": "12–2",
+     "title": "Op-Amp Input Modes and Parameters",
+     "pdf": 623,
+     "printed": 605,
+     "kind": "section",
+     "pdf_end": 630
+    },
+    {
+     "num": "12–3",
+     "title": "Negative Feedback",
+     "pdf": 631,
+     "printed": 613,
+     "kind": "section",
+     "pdf_end": 631
+    },
+    {
+     "num": "12–4",
+     "title": "Op-Amps with Negative Feedback",
+     "pdf": 632,
+     "printed": 614,
+     "kind": "section",
+     "pdf_end": 636
+    },
+    {
+     "num": "12–5",
+     "title": "Effects of Negative Feedback on Op-Amp Impedances",
+     "pdf": 637,
+     "printed": 619,
+     "kind": "section",
+     "pdf_end": 641
+    },
+    {
+     "num": "12–6",
+     "title": "Bias Current and Offset Voltage",
+     "pdf": 642,
+     "printed": 624,
+     "kind": "section",
+     "pdf_end": 644
+    },
+    {
+     "num": "12–7",
+     "title": "Open-Loop Frequency and Phase Responses",
+     "pdf": 645,
+     "printed": 627,
+     "kind": "section",
+     "pdf_end": 650
+    },
+    {
+     "num": "12–8",
+     "title": "Closed-Loop Frequency Response",
+     "pdf": 651,
+     "printed": 633,
+     "kind": "section",
+     "pdf_end": 653
+    },
+    {
+     "num": "12–9",
+     "title": "Troubleshooting",
+     "pdf": 654,
+     "printed": 636,
+     "kind": "section",
+     "pdf_end": 655
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 656,
+     "printed": 638,
+     "kind": "feature",
+     "pdf_end": 661
+    },
+    {
+     "num": "",
+     "title": "Programmable Analog Technology",
+     "pdf": 662,
+     "printed": 644,
+     "kind": "feature",
+     "pdf_end": 684
+    }
+   ],
+   "pdf_end": 684,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 668,
+     "printed": 650
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 670,
+     "printed": 652
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 670,
+     "printed": 652
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 671,
+     "printed": 653
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 671,
+     "printed": 653
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 672,
+     "printed": 654
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 674,
+     "printed": 656
+    }
+   ]
+  },
+  {
+   "num": 13,
+   "title": "Basic Op-Amp Circuits",
+   "pdf": 685,
+   "printed": 667,
+   "sections": [
+    {
+     "num": "13–1",
+     "title": "Comparators",
+     "pdf": 686,
+     "printed": 668,
+     "kind": "section",
+     "pdf_end": 696
+    },
+    {
+     "num": "13–2",
+     "title": "Summing Amplifiers",
+     "pdf": 697,
+     "printed": 679,
+     "kind": "section",
+     "pdf_end": 704
+    },
+    {
+     "num": "13–3",
+     "title": "Integrators and Differentiators",
+     "pdf": 705,
+     "printed": 687,
+     "kind": "section",
+     "pdf_end": 711
+    },
+    {
+     "num": "13–4",
+     "title": "Troubleshooting",
+     "pdf": 712,
+     "printed": 694,
+     "kind": "section",
+     "pdf_end": 715
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 716,
+     "printed": 698,
+     "kind": "feature",
+     "pdf_end": 721
+    },
+    {
+     "num": "",
+     "title": "Programmable Analog Technology",
+     "pdf": 722,
+     "printed": 704,
+     "kind": "feature",
+     "pdf_end": 735
+    }
+   ],
+   "pdf_end": 735,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 725,
+     "printed": 707
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 726,
+     "printed": 708
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 727,
+     "printed": 709
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 727,
+     "printed": 709
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 727,
+     "printed": 709
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 728,
+     "printed": 710
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 729,
+     "printed": 711
+    }
+   ]
+  },
+  {
+   "num": 14,
+   "title": "Special-Purpose Op-Amp Circuits",
+   "pdf": 736,
+   "printed": 718,
+   "sections": [
+    {
+     "num": "14–1",
+     "title": "Instrumentation Amplifiers",
+     "pdf": 737,
+     "printed": 719,
+     "kind": "section",
+     "pdf_end": 742
+    },
+    {
+     "num": "14–2",
+     "title": "Isolation Amplifiers",
+     "pdf": 743,
+     "printed": 725,
+     "kind": "section",
+     "pdf_end": 747
+    },
+    {
+     "num": "14–3",
+     "title": "Operational Transconductance Amplifiers (OTAs)",
+     "pdf": 748,
+     "printed": 730,
+     "kind": "section",
+     "pdf_end": 753
+    },
+    {
+     "num": "14–4",
+     "title": "Log and Antilog Amplifiers",
+     "pdf": 754,
+     "printed": 736,
+     "kind": "section",
+     "pdf_end": 759
+    },
+    {
+     "num": "14–5",
+     "title": "Converters and Other Op-Amp Circuits",
+     "pdf": 760,
+     "printed": 742,
+     "kind": "section",
+     "pdf_end": 761
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 762,
+     "printed": 744,
+     "kind": "feature",
+     "pdf_end": 767
+    },
+    {
+     "num": "",
+     "title": "Programmable Analog Technology",
+     "pdf": 768,
+     "printed": 750,
+     "kind": "feature",
+     "pdf_end": 780
+    }
+   ],
+   "pdf_end": 780,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 772,
+     "printed": 754
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 773,
+     "printed": 755
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 773,
+     "printed": 755
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 774,
+     "printed": 756
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 774,
+     "printed": 756
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 774,
+     "printed": 756
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 776,
+     "printed": 758
+    }
+   ]
+  },
+  {
+   "num": 15,
+   "title": "Active Filters",
+   "pdf": 781,
+   "printed": 763,
+   "sections": [
+    {
+     "num": "15–1",
+     "title": "Basic Filter Responses",
+     "pdf": 782,
+     "printed": 764,
+     "kind": "section",
+     "pdf_end": 785
+    },
+    {
+     "num": "15–2",
+     "title": "Filter Response Characteristics",
+     "pdf": 786,
+     "printed": 768,
+     "kind": "section",
+     "pdf_end": 789
+    },
+    {
+     "num": "15–3",
+     "title": "Active Low-Pass Filters",
+     "pdf": 790,
+     "printed": 772,
+     "kind": "section",
+     "pdf_end": 793
+    },
+    {
+     "num": "15–4",
+     "title": "Active High-Pass Filters",
+     "pdf": 794,
+     "printed": 776,
+     "kind": "section",
+     "pdf_end": 796
+    },
+    {
+     "num": "15–5",
+     "title": "Active Band-Pass Filters",
+     "pdf": 797,
+     "printed": 779,
+     "kind": "section",
+     "pdf_end": 802
+    },
+    {
+     "num": "15–6",
+     "title": "Active Band-Stop Filters",
+     "pdf": 803,
+     "printed": 785,
+     "kind": "section",
+     "pdf_end": 804
+    },
+    {
+     "num": "15–7",
+     "title": "Filter Response Measurements",
+     "pdf": 805,
+     "printed": 787,
+     "kind": "section",
+     "pdf_end": 806
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 807,
+     "printed": 789,
+     "kind": "feature",
+     "pdf_end": 811
+    },
+    {
+     "num": "",
+     "title": "Programmable Analog Technology",
+     "pdf": 812,
+     "printed": 794,
+     "kind": "feature",
+     "pdf_end": 823
+    }
+   ],
+   "pdf_end": 823,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 815,
+     "printed": 797
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 816,
+     "printed": 798
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 817,
+     "printed": 799
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 817,
+     "printed": 799
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 818,
+     "printed": 800
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 818,
+     "printed": 800
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 819,
+     "printed": 801
+    }
+   ]
+  },
+  {
+   "num": 16,
+   "title": "Oscillators",
+   "pdf": 824,
+   "printed": 806,
+   "sections": [
+    {
+     "num": "16–1",
+     "title": "The Oscillator",
+     "pdf": 825,
+     "printed": 807,
+     "kind": "section",
+     "pdf_end": 825
+    },
+    {
+     "num": "16–2",
+     "title": "Feedback Oscillators",
+     "pdf": 826,
+     "printed": 808,
+     "kind": "section",
+     "pdf_end": 827
+    },
+    {
+     "num": "16–3",
+     "title": "Oscillators with RC Feedback Circuits",
+     "pdf": 828,
+     "printed": 810,
+     "kind": "section",
+     "pdf_end": 834
+    },
+    {
+     "num": "16–4",
+     "title": "Oscillators with LC Feedback Circuits",
+     "pdf": 835,
+     "printed": 817,
+     "kind": "section",
+     "pdf_end": 842
+    },
+    {
+     "num": "16–5",
+     "title": "Relaxation Oscillators",
+     "pdf": 843,
+     "printed": 825,
+     "kind": "section",
+     "pdf_end": 847
+    },
+    {
+     "num": "16–6",
+     "title": "The 555 Timer as an Oscillator",
+     "pdf": 848,
+     "printed": 830,
+     "kind": "section",
+     "pdf_end": 853
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 854,
+     "printed": 836,
+     "kind": "feature",
+     "pdf_end": 857
+    },
+    {
+     "num": "",
+     "title": "Programmable Analog Technology",
+     "pdf": 858,
+     "printed": 840,
+     "kind": "feature",
+     "pdf_end": 868
+    }
+   ],
+   "pdf_end": 868,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 862,
+     "printed": 844
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 862,
+     "printed": 844
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 862,
+     "printed": 844
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 863,
+     "printed": 845
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 863,
+     "printed": 845
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 864,
+     "printed": 846
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 865,
+     "printed": 847
+    }
+   ]
+  },
+  {
+   "num": 17,
+   "title": "Voltage Regulators",
+   "pdf": 869,
+   "printed": 851,
+   "sections": [
+    {
+     "num": "17–1",
+     "title": "Voltage Regulation",
+     "pdf": 870,
+     "printed": 852,
+     "kind": "section",
+     "pdf_end": 872
+    },
+    {
+     "num": "17–2",
+     "title": "Basic Linear Series Regulators",
+     "pdf": 873,
+     "printed": 855,
+     "kind": "section",
+     "pdf_end": 877
+    },
+    {
+     "num": "17–3",
+     "title": "Basic Linear Shunt Regulators",
+     "pdf": 878,
+     "printed": 860,
+     "kind": "section",
+     "pdf_end": 880
+    },
+    {
+     "num": "17–4",
+     "title": "Basic Switching Regulators",
+     "pdf": 881,
+     "printed": 863,
+     "kind": "section",
+     "pdf_end": 886
+    },
+    {
+     "num": "17–5",
+     "title": "Integrated Circuit Voltage Regulators",
+     "pdf": 887,
+     "printed": 869,
+     "kind": "section",
+     "pdf_end": 892
+    },
+    {
+     "num": "17–6",
+     "title": "Integrated Circuit Voltage Regulator Configurations",
+     "pdf": 893,
+     "printed": 875,
+     "kind": "section",
+     "pdf_end": 896
+    },
+    {
+     "num": "",
+     "title": "Application Activity",
+     "pdf": 897,
+     "printed": 879,
+     "kind": "feature",
+     "pdf_end": 907
+    }
+   ],
+   "pdf_end": 907,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 901,
+     "printed": 883
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 901,
+     "printed": 883
+    },
+    {
+     "name": "KEY FORMULAS",
+     "pdf": 901,
+     "printed": 883
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 902,
+     "printed": 884
+    },
+    {
+     "name": "CIRCUIT-ACTION QUIZ",
+     "pdf": 902,
+     "printed": 884
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 903,
+     "printed": 885
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 904,
+     "printed": 886
+    }
+   ]
+  },
+  {
+   "num": 18,
+   "title": "Basic Programming Concepts for Automated Testing",
+   "pdf": 908,
+   "printed": 890,
+   "sections": [
+    {
+     "num": "18–1",
+     "title": "Programming Basics",
+     "pdf": 909,
+     "printed": 891,
+     "kind": "section",
+     "pdf_end": 910
+    },
+    {
+     "num": "18–2",
+     "title": "Automated Testing Basics",
+     "pdf": 911,
+     "printed": 893,
+     "kind": "section",
+     "pdf_end": 915
+    },
+    {
+     "num": "18–3",
+     "title": "The Simple Sequential Program",
+     "pdf": 916,
+     "printed": 898,
+     "kind": "section",
+     "pdf_end": 917
+    },
+    {
+     "num": "18–4",
+     "title": "Conditional Execution",
+     "pdf": 918,
+     "printed": 900,
+     "kind": "section",
+     "pdf_end": 922
+    },
+    {
+     "num": "18–5",
+     "title": "Program Loops",
+     "pdf": 923,
+     "printed": 905,
+     "kind": "section",
+     "pdf_end": 930
+    },
+    {
+     "num": "18–6",
+     "title": "Branching and Subroutines",
+     "pdf": 931,
+     "printed": 913,
+     "kind": "section",
+     "pdf_end": 948
+    }
+   ],
+   "pdf_end": 948,
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 940,
+     "printed": 922
+    },
+    {
+     "name": "KEY TERMS",
+     "pdf": 941,
+     "printed": 923
+    },
+    {
+     "name": "TRUE/FALSE QUIZ",
+     "pdf": 942,
+     "printed": 924
+    },
+    {
+     "name": "SELF-TEST",
+     "pdf": 942,
+     "printed": 924
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 944,
+     "printed": 926
+    }
+   ]
+  }
+ ],
+ "back": [
+  {
+   "title": "Answers to Odd-Numbered Problems",
+   "pdf": 949,
+   "printed": 931
+  },
+  {
+   "title": "Glossary",
+   "pdf": 962,
+   "printed": 944
+  },
+  {
+   "title": "Index",
+   "pdf": 969,
+   "printed": 951
+  }
+ ]
+}

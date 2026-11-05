@@ -12,12 +12,12 @@ S = {
             orig='gốc', notes='Nội dung chi tiết', quiz='Tự kiểm tra nhanh (10 câu, ưu tiên câu gốc trong sách)', practice='Luyện tập sâu',
             open_bank='Mở ngân hàng câu hỏi của module', nb='Notebook Jupyter', nb_txt='Tải notebook (đã chạy sẵn, có đầu ra thật):',
             prev='← Module trước', next='Module sau →', soon='Sắp có', openm='Mở bài giảng →', modules='Các module', clo='CLO',
-            prac_title='Luyện tập theo module', exam_title='Luyện đề tổng hợp', src_title='Nguồn tài liệu và bảng đối chiếu'),
+            prac_title='Luyện tập theo module', exam_title='Luyện đề tổng hợp', src_title='Nguồn tài liệu và bảng đối chiếu', books_title='Bản đồ nội dung sách'),
  'en': dict(home='Home', objectives='🎯 After this module you will', source='Source', easa='EASA Part-66', time='Time', nq='Questions',
             orig='original', notes='Detailed notes', quiz='Quick self-check (10 questions, textbook originals first)', practice='Deep practice',
             open_bank='Open this module\'s question bank', nb='Jupyter notebook', nb_txt='Download the notebook (already executed, real outputs):',
             prev='← Previous module', next='Next module →', soon='Coming soon', openm='Open lesson →', modules='Modules', clo='CLO',
-            prac_title='Practice by module', exam_title='Mixed mock tests', src_title='Sources and mapping'),
+            prac_title='Practice by module', exam_title='Mixed mock tests', src_title='Sources and mapping', books_title='Book content map'),
 }
 
 def loc(v, lang):
@@ -68,7 +68,7 @@ def module_page(m, c, bank, lang):
     h += f'<h1>{m["id"][1:]}. {esc(m[lang])}</h1><p class="lead">{c.get("subtitle", "")}</p>'
     h += (f'<p><span class="tag">{s["easa"]} {esc(m["easa"])}</span><span class="tag">{s["clo"]}: {m["clo"]}</span>'
           f'<span class="tag">{s["time"]}: {c.get("time", "")}</span><span class="tag exam">{s["nq"]}: {nq} ({ng} {s["orig"]})</span></p>')
-    h += '<p class="srcnote">' + ' · '.join(esc(x) for x in m['src']) + '</p>'
+    h += '<p class="srcnote">' + ' · '.join(esc(x) for x in m['src']) + f' · <a href="../../books/index.html#overview">{s["books_title"]}</a></p>'
     h += callout('good', s['objectives'], ul(c['objectives']))
     h += deck(slides, 'd-' + m['id'])
     h += f'<h2>{s["notes"]}</h2>' + c['notes']
@@ -107,7 +107,7 @@ def main():
             b = banks[m['id']]
             if c: module_page(m, c, b, lang)
             if b: bank_page(m, b, lang)
-        index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); sources_page(lang, banks)
+        index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); sources_page(lang, banks); books_page(lang)
     write('index.html', '<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=vi/index.html"><title>AE2.025 Electronics 2</title></head>'
           '<body><p><a href="vi/index.html">Tiếng Việt</a> · <a href="en/index.html">English</a></p></body></html>')
     print('built', sum(1 for v in contents.values() if v), 'module pages')
@@ -163,6 +163,13 @@ def sources_page(lang, banks):
     import sources_body; importlib.reload(sources_body)
     h = f'<h1>{s["src_title"]}</h1>' + sources_body.body(lang, banks)
     write(f'{lang}/sources/index.html', page(s['src_title'], h, lang, 'sources/index.html'))
+
+def books_page(lang):
+    s = S[lang]
+    import bookmap_body; importlib.reload(bookmap_body)
+    desc = ('Mục lục thật của Floyd, Jaeger, EASA M04 và SERVOMECHANISM với số trang, module dùng và số câu hỏi theo từng mục.' if lang == 'vi'
+            else 'Real tables of contents of Floyd, Jaeger, EASA M04 and SERVOMECHANISM with page numbers, the modules that use each section and question counts.')
+    write(f'{lang}/books/index.html', page(s['books_title'], bookmap_body.body(lang), lang, 'books/index.html', desc=desc, scripts=('bookmap.js',)))
 
 if __name__ == '__main__':
     main()

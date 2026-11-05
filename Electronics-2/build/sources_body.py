@@ -20,6 +20,8 @@ def body(lang, banks):
         ('Tài liệu EASA M04 trong Drive là bản scan (không có lớp chữ). Đã OCR bằng Tesseract (ocrmypdf) → file sources/easa_m04_ocr.pdf chọn được chữ.' if vi else
          'The EASA M04 PDF in Drive is a scan (no text layer). It was OCR-ed with Tesseract (ocrmypdf) → sources/easa_m04_ocr.pdf is selectable.'),
     ]))
+    h += '<p>' + ('<a class="btn" href="../books/index.html">Bản đồ nội dung sách →</a> mục lục thật của Floyd, Jaeger, EASA, SERVO với số trang, module dùng và số câu hỏi từng mục. Jaeger 6e chỉ có liên kết Drive, không nằm trong thư mục tài liệu nên chưa ánh xạ.' if vi else
+                  '<a class="btn" href="../books/index.html">Book content map →</a> the real tables of contents of Floyd, Jaeger, EASA and SERVO with page numbers, modules and question counts per section. Jaeger 6e is only a Drive link (not in the source folder) and is not mapped.') + '</p>'
     h += '<h2>' + ('Đề cương → chương sách' if vi else 'Syllabus → textbook chapters') + '</h2>'
     rows = []
     for m in MODS:

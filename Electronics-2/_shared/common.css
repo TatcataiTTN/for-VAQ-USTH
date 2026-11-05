@@ -109,3 +109,24 @@ header.top .brand img{height:28px;background:#fff;border-radius:6px;padding:2px 
 table.t.left td,table.t.left th{text-align:left}
 .badge-ok{color:var(--good);font-weight:800}.badge-warn{color:var(--warn);font-weight:800}
 .qfig{display:block;max-width:min(100%,560px);max-height:340px;margin:8px 0;background:#fff;border:1px solid var(--border);border-radius:8px;padding:4px}
+
+/* ---- book content map ---- */
+.bm-chip{display:inline-block;font-size:.7rem;font-weight:700;padding:1px 7px;border-radius:99px;margin:1px 3px 1px 0;border:1px solid transparent;font-family:ui-monospace,Menlo,Consolas,monospace}
+.bm-chip.r-core{background:var(--goodbg);color:var(--good)}.bm-chip.r-lab{background:var(--warnbg);color:var(--warn)}
+.bm-chip.r-ref{color:var(--accent2);border:1px dashed var(--accent2)}.bm-chip.r-cited{background:var(--code);color:var(--muted);border-color:var(--border)}
+.bm-chip.r-optional{color:var(--muted);border:1px dotted var(--muted)}
+.bm-st{display:inline-block;font-size:.68rem;color:var(--muted);margin-left:4px}.bm-st.st-out{color:var(--bad)}
+details.bm-ch{border:1px solid var(--border);border-radius:10px;margin:.5em 0;background:var(--card)}
+details.bm-ch>summary{cursor:pointer;padding:8px 12px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+details.bm-ch>summary .srcnote{margin:0}
+.bm-scroll{overflow-x:auto;padding:0 8px 8px}
+table.bm-t{font-size:.85rem;width:100%;margin:6px 0}table.bm-t td{vertical-align:top}table.bm-t td:nth-child(2),table.bm-t td:nth-child(3){white-space:nowrap}
+table.bm-ov td:nth-child(n+2){font-size:.8rem}
+.bm-sep td{background:var(--code);font-weight:700;font-size:.78rem}
+.bm-ind{display:inline-block;width:calc(var(--d,0)*14px)}
+.bm-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:.6em 0}
+.bm-bar select,.bm-bar input[type=search]{font:inherit;padding:4px 8px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text)}
+tr.bm-hide,details.bm-hide{display:none}
+details.bm-legend{margin:.6em 0}details.bm-legend ul{list-style:none;padding-left:.4em}
+.bm-bar label{max-width:100%}.bm-bar select{max-width:100%;width:100%}.bm-bar input[type=search]{max-width:100%;flex:1 1 180px}
+@media (min-width:700px){.bm-bar select{width:auto;max-width:420px}}

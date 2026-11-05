@@ -16,8 +16,14 @@
 
 Mỗi module có: bài giảng 5 phần (VI/EN), ghi chú chi tiết với 5 ví dụ có lời giải số, ngân hàng câu hỏi (có giải thích, nguồn từng câu), luyện đề, notebook Jupyter VI+EN đã chạy sẵn, và `data/verify/mNN_notes.json` ghi lại lỗi/nghi vấn của sách (hiển thị ở trang Nguồn & đối chiếu).
 
+## Bản đồ nội dung sách (trang `vi|en/books/index.html`)
+Mục lục thật của 4 quyển (Floyd 9e: 145 mục + 122 phần cuối chương; Jaeger 5e: 274 mục; EASA M04: 127 tiêu đề; SERVO sv: 69 mục) với trang in, trang PDF, module dùng (core / lab / ref / cited / optional), số câu hỏi neo vào từng mục. Có lọc theo module, chỉ mục đã gán, tìm theo tên.
+Dựng lại: `python3 -I build/bookmap/extract.py && python3 -I build/bookmap/easa_sv.py && python3 -I build/bookmap/build_map.py && python3 -I build/verify/verify_bookmap.py` rồi `python3 build/build_site.py`.
+Nguồn dữ liệu: bookmark PDF (Floyd, Jaeger), mục lục in của EASA (mỗi tiêu đề được tìm lại trong lớp chữ của trang), tiêu đề đánh số của SERVO. `verify_bookmap.py`: trang in khớp số in ở đầu/cuối trang PDF (Floyd 267/267, Jaeger 274/274), tiêu đề có mặt ở đúng trang, mọi mục `modules.py` nhắc tới đều được gán. Kiểm thử trình duyệt: `python3 tests/books_test.py`.
+Đã sửa nhờ bản đồ: Floyd 9e không có §16–7/16–8 (m07 ghi sai), PWM nằm ở §9–4 chứ không ở §16–6 (m10), m04 dùng thêm §7–3 (lớp C).
+
 ## Chưa làm / hạn chế đã biết
-- **Jaeger 5e** (Ch.6–7, 9 cho m01; Ch.10–12 cho m02–m07) mới chỉ được ánh xạ chương, chưa đọc để trích câu hỏi. Chỉ ghi “đọc thêm”, không trích trang.
+- **Jaeger 5e** (Ch.6–7, 9 cho m01; Ch.10–12 cho m02–m07): đã ánh xạ tới từng mục X.Y có trang (35 mục, vai trò `ref`) nhưng chưa đọc nội dung để trích câu hỏi. Jaeger 6e chỉ có liên kết Drive, không nằm trong thư mục tài liệu nên không ánh xạ.
 - **Floyd không in đáp án** Self-Test, True/False, Circuit-Action: toàn bộ do ta tự giải; câu mơ hồ đã loại và ghi trong `mNN_notes.json`.
 - Circuit-Action của Floyd gắn với Hình 6–34, 7–5 (m04) chưa đưa vào (cần cắt hình).
 - EASA OCR không đạt 100 %: trang câu hỏi EASA đã đối chiếu bằng script; các trang khác xem `pdf_ocr_fixed/REPORT.md`.

@@ -7,9 +7,9 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 DRIVE = 'https://drive.google.com/drive/folders/1Gd37QKLz37eMqwB9KT79aqZKefgr8_q4'
 NAV = {
     'vi': [('Trang chủ', 'index.html'), ('Lộ trình', 'index.html#modules'), ('Luyện tập', 'practice/index.html'),
-           ('Luyện đề', 'exam/index.html'), ('Nguồn & đối chiếu', 'sources/index.html')],
+           ('Luyện đề', 'exam/index.html'), ('Bản đồ sách', 'books/index.html'), ('Nguồn & đối chiếu', 'sources/index.html')],
     'en': [('Home', 'index.html'), ('Modules', 'index.html#modules'), ('Practice', 'practice/index.html'),
-           ('Mock tests', 'exam/index.html'), ('Sources & mapping', 'sources/index.html')],
+           ('Mock tests', 'exam/index.html'), ('Book map', 'books/index.html'), ('Sources & mapping', 'sources/index.html')],
 }
 FOOT = {
     'vi': 'Tài liệu tự học không chính thức cho học phần AE2.025 Điện tử học 2 (USTH), bám đề cương chính thức và ba nguồn tham khảo của học phần. '

@@ -27,7 +27,7 @@ MODS = [
          src=['Floyd 9e Ch.13', 'Jaeger 5e Ch.10 §10.9–10.10 · Ch.12 §12.8–12.9']),
     dict(id='m04', slug='04-coupling-feedback', vi='Ghép tầng khuếch đại và hồi tiếp dương/âm', en='Amplifier stage coupling and positive/negative feedback',
          easa='4.1.3 (b) coupling methods; positive & negative feedback', clo='CLO1, CLO2',
-         src=['Floyd 9e §6–6 Multistage, §7–2 Push-pull, §12–3 Negative feedback', 'Jaeger 5e Ch.11 §11.1, 11.10 · Ch.12 §12.1', 'EASA M04 sub-module 01 (amplifier coupling)']),
+         src=['Floyd 9e §6–6 Multistage, §7–2 Push-pull, §7–3 Class C, §12–3 Negative feedback', 'Jaeger 5e Ch.11 §11.1, 11.10 · Ch.12 §12.1', 'EASA M04 sub-module 01 (amplifier coupling)']),
     dict(id='m05', slug='05-special-op-amps', vi='Mạch op-amp chuyên dụng và chuyển đổi A/D–D/A', en='Special-purpose op-amp circuits and A/D–D/A conversion',
          easa='4.1.3 linear ICs (extension)', clo='CLO2, CLO3',
          src=['Floyd 9e Ch.14', 'Jaeger 5e Ch.12 §12.2, 12.5–12.6']),
@@ -45,6 +45,6 @@ MODS = [
          src=['EASA M04 sub-module 02', 'Floyd 9e Application Activities (circuit-board layout)']),
     dict(id='m10', slug='10-servomechanisms', vi='Hệ servo, synchro và điều khiển động cơ servo', en='Servomechanisms, synchros and servomotor control',
          easa='4.3 Servomechanisms', clo='CLO1, CLO4',
-         src=['EASA M04 sub-module 03', 'Floyd 9e §16–6 (555 PWM) for the servomotor lab']),
+         src=['EASA M04 sub-module 03', 'Floyd 9e §9–4 (pulse-width modulation) and §16–6 (555 astable, duty cycle) for the servomotor lab']),
 ]
 BYID = {m['id']: m for m in MODS}

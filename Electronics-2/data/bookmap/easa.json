@@ -1,0 +1,1056 @@
+{
+ "book": "easa",
+ "submodules": {
+  "1": {
+   "offset": 11,
+   "first": 12,
+   "last": 87,
+   "qa": [
+    76,
+    87
+   ],
+   "en": "Sub-module 01 – Semiconductors",
+   "vi": "Tiểu mô-đun 01 – Bán dẫn"
+  },
+  "2": {
+   "offset": 87,
+   "first": 88,
+   "last": 101,
+   "qa": [
+    98,
+    101
+   ],
+   "en": "Sub-module 02 – Printed circuit boards",
+   "vi": "Tiểu mô-đun 02 – Bảng mạch in"
+  },
+  "3": {
+   "offset": 101,
+   "first": 102,
+   "last": 119,
+   "qa": [
+    116,
+    119
+   ],
+   "en": "Sub-module 03 – Servomechanisms",
+   "vi": "Tiểu mô-đun 03 – Hệ servo"
+  }
+ },
+ "rows": [
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Knowledge Requirements",
+   "hint_printed": 1,
+   "pdf": 12,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Semiconductors",
+   "hint_printed": 2,
+   "pdf": 13,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Characteristics and Properties",
+   "hint_printed": 2,
+   "pdf": 13,
+   "by_hint": true
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Semiconductor Materials",
+   "hint_printed": 3,
+   "pdf": 14,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Electron Behavior in Valence Shells",
+   "hint_printed": 4,
+   "pdf": 15,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Effects of Impurities on P and N Type Materials",
+   "hint_printed": 5,
+   "pdf": 16,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Majority and Minority Carriers",
+   "hint_printed": 6,
+   "pdf": 17,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "PN Junctions and The Basic Diode",
+   "hint_printed": 7,
+   "pdf": 18,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Unbiased PN Junction",
+   "hint_printed": 7,
+   "pdf": 18,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Forward-Bias PN Junction",
+   "hint_printed": 8,
+   "pdf": 19,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Reverse-Biased PN Junction",
+   "hint_printed": 9,
+   "pdf": 20,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Semiconductor Diodes",
+   "hint_printed": 9,
+   "pdf": 20,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Diode Parameters",
+   "hint_printed": 9,
+   "pdf": 20,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Diode Symbols",
+   "hint_printed": 10,
+   "pdf": 21,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Diode Identification",
+   "hint_printed": 11,
+   "pdf": 22,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Types of Diodes",
+   "hint_printed": 11,
+   "pdf": 22,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Zener Diodes",
+   "hint_printed": 12,
+   "pdf": 23,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Signal Diodes",
+   "hint_printed": 12,
+   "pdf": 23,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Photodiodes",
+   "hint_printed": 13,
+   "pdf": 24,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Light Emitting Diodes",
+   "hint_printed": 13,
+   "pdf": 24,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Power Rectifier Diodes",
+   "hint_printed": 15,
+   "pdf": 26,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Schottky Diodes",
+   "hint_printed": 16,
+   "pdf": 27,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Varistor",
+   "hint_printed": 16,
+   "pdf": 27,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Varactor Diodes",
+   "hint_printed": 17,
+   "pdf": 28,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Diode Maintenance and Testing",
+   "hint_printed": 19,
+   "pdf": 30,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Diodes in Series and Parallel",
+   "hint_printed": 21,
+   "pdf": 32,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Clipper Circuit",
+   "hint_printed": 21,
+   "pdf": 32,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Clamper Circuit",
+   "hint_printed": 22,
+   "pdf": 33,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Half-Wave Rectifier Circuit",
+   "hint_printed": 23,
+   "pdf": 34,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Full-Wave Rectifier Circuit",
+   "hint_printed": 23,
+   "pdf": 34,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Bridge Rectifier Circuit",
+   "hint_printed": 23,
+   "pdf": 34,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Voltage Doublers and Triplers",
+   "hint_printed": 24,
+   "pdf": 35,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Transistors",
+   "hint_printed": 25,
+   "pdf": 36,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Description, Characteristics, Properties and Symbols",
+   "hint_printed": 25,
+   "pdf": 36,
+   "by_hint": true
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Testing of Transistors",
+   "hint_printed": 27,
+   "pdf": 38,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Construction and Operation of Transistors",
+   "hint_printed": 28,
+   "pdf": 39,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Bipolar Junction Transistors",
+   "hint_printed": 28,
+   "pdf": 39,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Unipolar Junction Transistors",
+   "hint_printed": 29,
+   "pdf": 40,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Field Effect Transistors",
+   "hint_printed": 30,
+   "pdf": 41,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Metal Oxide Field Effect Transistors",
+   "hint_printed": 30,
+   "pdf": 41,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Multi-Layer Semiconductor Devices",
+   "hint_printed": 31,
+   "pdf": 42,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Shockley Diodes",
+   "hint_printed": 31,
+   "pdf": 42,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Silicon Controlled Rectifiers",
+   "hint_printed": 32,
+   "pdf": 43,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Diacs and Triacs",
+   "hint_printed": 33,
+   "pdf": 44,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Simple Circuits",
+   "hint_printed": 34,
+   "pdf": 45,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Biasing",
+   "hint_printed": 34,
+   "pdf": 45,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Configurations",
+   "hint_printed": 35,
+   "pdf": 46,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Common-Emitter Configuration",
+   "hint_printed": 36,
+   "pdf": 47,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Common-Collector Configuration",
+   "hint_printed": 36,
+   "pdf": 47,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Common-Base Configuration",
+   "hint_printed": 36,
+   "pdf": 47,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Basic Amplifier Circuits",
+   "hint_printed": 37,
+   "pdf": 48,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Class A Amplifiers",
+   "hint_printed": 37,
+   "pdf": 48,
+   "by_hint": true
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Class AB Amplifiers",
+   "hint_printed": 38,
+   "pdf": 49,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Class B Amplifier",
+   "hint_printed": 38,
+   "pdf": 49,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Class C Amplifier",
+   "hint_printed": 38,
+   "pdf": 49,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Cascade Amplifiers",
+   "hint_printed": 38,
+   "pdf": 49,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Feedback and Stabilization",
+   "hint_printed": 39,
+   "pdf": 50,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Direct Coupling",
+   "hint_printed": 39,
+   "pdf": 50,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Resistive-Capacitive Coupling",
+   "hint_printed": 40,
+   "pdf": 51,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Impedance Coupling",
+   "hint_printed": 40,
+   "pdf": 51,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Transformer Coupling",
+   "hint_printed": 40,
+   "pdf": 51,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Push-Pull Amplifiers",
+   "hint_printed": 41,
+   "pdf": 52,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Oscillators",
+   "hint_printed": 41,
+   "pdf": 52,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Multivibrators",
+   "hint_printed": 42,
+   "pdf": 53,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Flip-flop Circuits",
+   "hint_printed": 42,
+   "pdf": 53,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Integrated Circuits",
+   "hint_printed": 43,
+   "pdf": 54,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Binary Numbering System",
+   "hint_printed": 44,
+   "pdf": 55,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Place Values",
+   "hint_printed": 46,
+   "pdf": 57,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Binary Number System Conversion",
+   "hint_printed": 46,
+   "pdf": 57,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Binary-Coded Decimals",
+   "hint_printed": 47,
+   "pdf": 58,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Logic Gates",
+   "hint_printed": 48,
+   "pdf": 59,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "NOT Gate",
+   "hint_printed": 48,
+   "pdf": 59,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Buffer Gate",
+   "hint_printed": 48,
+   "pdf": 59,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "AND Gate",
+   "hint_printed": 49,
+   "pdf": 60,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "OR Gate",
+   "hint_printed": 50,
+   "pdf": 61,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "NAND Gate",
+   "hint_printed": 50,
+   "pdf": 61,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "NOR Gate",
+   "hint_printed": 50,
+   "pdf": 61,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Exclusive OR Gate",
+   "hint_printed": 50,
+   "pdf": 61,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Exclusive NOR Gate",
+   "hint_printed": 50,
+   "pdf": 61,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Negative Logic Gates",
+   "hint_printed": 51,
+   "pdf": 62,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Aircraft Logic Gate Applications",
+   "hint_printed": 51,
+   "pdf": 62,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Logic Circuits",
+   "hint_printed": 52,
+   "pdf": 63,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Adder Logic Circuits",
+   "hint_printed": 52,
+   "pdf": 63,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Flip-Flop Logic Circuits",
+   "hint_printed": 52,
+   "pdf": 63,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Comparator Logic Circuits",
+   "hint_printed": 54,
+   "pdf": 65,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Encoder Logic Circuits",
+   "hint_printed": 55,
+   "pdf": 66,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Decoder Logic Circuits",
+   "hint_printed": 56,
+   "pdf": 67,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Linear Circuits and Operational Amplifiers",
+   "hint_printed": null,
+   "pdf": 69,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Positive and Negative Feedback",
+   "hint_printed": 60,
+   "pdf": 71,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Voltage Follower Circuit",
+   "hint_printed": 61,
+   "pdf": 72,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Multivibrator Circuit",
+   "hint_printed": 61,
+   "pdf": 72,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Integrator Circuit",
+   "hint_printed": 62,
+   "pdf": 73,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 3,
+   "title": "Differentiator Circuit",
+   "hint_printed": 62,
+   "pdf": 73,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 2,
+   "title": "Scale of Integration",
+   "hint_printed": 63,
+   "pdf": 74,
+   "by_hint": false
+  },
+  {
+   "sm": 1,
+   "level": 1,
+   "title": "Questions",
+   "hint_printed": 65,
+   "pdf": 76,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 1,
+   "title": "Knowledge Requirements",
+   "hint_printed": 1,
+   "pdf": 88,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 1,
+   "title": "Printed Circuit Boards",
+   "hint_printed": 2,
+   "pdf": 89,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 2,
+   "title": "PCB Manufacturing Process",
+   "hint_printed": null,
+   "pdf": 89,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 2,
+   "title": "Single-Layer Boards",
+   "hint_printed": null,
+   "pdf": 90,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 2,
+   "title": "Double-Layered Boards",
+   "hint_printed": null,
+   "pdf": 90,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 2,
+   "title": "Multi-Layered Boards",
+   "hint_printed": null,
+   "pdf": 91,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 2,
+   "title": "PCB Repair",
+   "hint_printed": 5,
+   "pdf": 92,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Risks and Possible Damage",
+   "hint_printed": null,
+   "pdf": 93,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Anti-Static Protection",
+   "hint_printed": 7,
+   "pdf": 94,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Controlled Environment",
+   "hint_printed": 7,
+   "pdf": 94,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Static-Safe Workstation",
+   "hint_printed": 7,
+   "pdf": 94,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Anti-Static Wrist Straps",
+   "hint_printed": null,
+   "pdf": 94,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Grounding Test Stations",
+   "hint_printed": null,
+   "pdf": 94,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Ionizers",
+   "hint_printed": null,
+   "pdf": 95,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 3,
+   "title": "Special Handling",
+   "hint_printed": null,
+   "pdf": 95,
+   "by_hint": false
+  },
+  {
+   "sm": 2,
+   "level": 1,
+   "title": "Questions",
+   "hint_printed": null,
+   "pdf": 98,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 1,
+   "title": "Knowledge Requirements",
+   "hint_printed": 1,
+   "pdf": 102,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 1,
+   "title": "Servomechanisms",
+   "hint_printed": 2,
+   "pdf": 103,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "Feedback: Open-Loop and Closed-Loop System",
+   "hint_printed": null,
+   "pdf": 103,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "Analog Transducers",
+   "hint_printed": 3,
+   "pdf": 104,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "Synchro Systems",
+   "hint_printed": 4,
+   "pdf": 105,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 3,
+   "title": "DC Selsyn Systems",
+   "hint_printed": 5,
+   "pdf": 106,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 3,
+   "title": "AC Synchro Systems",
+   "hint_printed": 6,
+   "pdf": 107,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 3,
+   "title": "Torque Synchro Systems",
+   "hint_printed": 7,
+   "pdf": 108,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 3,
+   "title": "Control Synchro Systems and Synchronous Transmitters",
+   "hint_printed": 7,
+   "pdf": 108,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 3,
+   "title": "Differential Synchro Systems",
+   "hint_printed": 8,
+   "pdf": 109,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 3,
+   "title": "Resolver Synchro Systems",
+   "hint_printed": 9,
+   "pdf": 110,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "E-I Inductive Transmitters",
+   "hint_printed": 9,
+   "pdf": 110,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "Capacitance Transmitters",
+   "hint_printed": 10,
+   "pdf": 111,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "Stability: Null Hunting, Deadband, and Damping",
+   "hint_printed": 10,
+   "pdf": 111,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 2,
+   "title": "Servomechanism Defects",
+   "hint_printed": 12,
+   "pdf": 113,
+   "by_hint": false
+  },
+  {
+   "sm": 3,
+   "level": 1,
+   "title": "Questions",
+   "hint_printed": 15,
+   "pdf": 116,
+   "by_hint": false
+  }
+ ]
+}

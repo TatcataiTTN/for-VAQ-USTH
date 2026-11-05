@@ -1,0 +1,2401 @@
+{
+ "book": "jaeger5",
+ "offset": 29,
+ "pages": 1355,
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Introduction to Electronics",
+   "pdf": 32,
+   "printed": 3,
+   "sections": [
+    {
+     "num": "1.1",
+     "title": "A Brief History of Electronics: From Vacuum Tubes to Giga-Scale Integration",
+     "pdf": 34,
+     "printed": 5,
+     "kind": "section",
+     "pdf_end": 36
+    },
+    {
+     "num": "1.2",
+     "title": "Classification of Electronic Signals",
+     "pdf": 37,
+     "printed": 8,
+     "kind": "section",
+     "pdf_end": 40
+    },
+    {
+     "num": "1.3",
+     "title": "Notational Conventions",
+     "pdf": 41,
+     "printed": 12,
+     "kind": "section",
+     "pdf_end": 41
+    },
+    {
+     "num": "1.4",
+     "title": "Problem-Solving Approach",
+     "pdf": 42,
+     "printed": 13,
+     "kind": "section",
+     "pdf_end": 43
+    },
+    {
+     "num": "1.5",
+     "title": "Important Concepts from Circuit Theory",
+     "pdf": 44,
+     "printed": 15,
+     "kind": "section",
+     "pdf_end": 49
+    },
+    {
+     "num": "1.6",
+     "title": "Frequency Spectrum of Electronic Signals",
+     "pdf": 50,
+     "printed": 21,
+     "kind": "section",
+     "pdf_end": 50
+    },
+    {
+     "num": "1.7",
+     "title": "Amplifiers",
+     "pdf": 51,
+     "printed": 22,
+     "kind": "section",
+     "pdf_end": 54
+    },
+    {
+     "num": "1.8",
+     "title": "Element Variations in Circuit Design",
+     "pdf": 55,
+     "printed": 26,
+     "kind": "section",
+     "pdf_end": 62
+    },
+    {
+     "num": "1.9",
+     "title": "Numeric Precision",
+     "pdf": 63,
+     "printed": 34,
+     "kind": "section",
+     "pdf_end": 63
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 63,
+     "printed": 34,
+     "kind": "end",
+     "pdf_end": 63
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 64,
+     "printed": 35,
+     "kind": "end",
+     "pdf_end": 64
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 65,
+     "printed": 36,
+     "kind": "end",
+     "pdf_end": 65
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 65,
+     "printed": 36,
+     "kind": "end",
+     "pdf_end": 65
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 65,
+     "printed": 36,
+     "kind": "end",
+     "pdf_end": 69
+    }
+   ],
+   "part": "Part One – Solid-State Electronics and Devices",
+   "pdf_end": 69
+  },
+  {
+   "num": 2,
+   "title": "Solid-State Electronics",
+   "pdf": 70,
+   "printed": 41,
+   "sections": [
+    {
+     "num": "2.1",
+     "title": "Solid-State Electronic Materials",
+     "pdf": 72,
+     "printed": 43,
+     "kind": "section",
+     "pdf_end": 72
+    },
+    {
+     "num": "2.2",
+     "title": "Covalent Bond Model",
+     "pdf": 73,
+     "printed": 44,
+     "kind": "section",
+     "pdf_end": 75
+    },
+    {
+     "num": "2.3",
+     "title": "Drift Currents and Mobility in Semiconductors",
+     "pdf": 76,
+     "printed": 47,
+     "kind": "section",
+     "pdf_end": 77
+    },
+    {
+     "num": "2.4",
+     "title": "Resistivity of Intrinsic Silicon",
+     "pdf": 78,
+     "printed": 49,
+     "kind": "section",
+     "pdf_end": 78
+    },
+    {
+     "num": "2.5",
+     "title": "Impurities in Semiconductors",
+     "pdf": 79,
+     "printed": 50,
+     "kind": "section",
+     "pdf_end": 79
+    },
+    {
+     "num": "2.6",
+     "title": "Electron and Hole Concentrations in Doped Semiconductors",
+     "pdf": 80,
+     "printed": 51,
+     "kind": "section",
+     "pdf_end": 82
+    },
+    {
+     "num": "2.7",
+     "title": "Mobility and Resistivity in Doped Semiconductors",
+     "pdf": 83,
+     "printed": 54,
+     "kind": "section",
+     "pdf_end": 86
+    },
+    {
+     "num": "2.8",
+     "title": "Diffusion Currents",
+     "pdf": 87,
+     "printed": 58,
+     "kind": "section",
+     "pdf_end": 87
+    },
+    {
+     "num": "2.9",
+     "title": "Total Current",
+     "pdf": 88,
+     "printed": 59,
+     "kind": "section",
+     "pdf_end": 88
+    },
+    {
+     "num": "2.10",
+     "title": "Energy Band Model",
+     "pdf": 89,
+     "printed": 60,
+     "kind": "section",
+     "pdf_end": 91
+    },
+    {
+     "num": "2.11",
+     "title": "Overview of Integrated Circuit Fabrication",
+     "pdf": 92,
+     "printed": 63,
+     "kind": "section",
+     "pdf_end": 94
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 95,
+     "printed": 66,
+     "kind": "end",
+     "pdf_end": 95
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 96,
+     "printed": 67,
+     "kind": "end",
+     "pdf_end": 96
+    },
+    {
+     "num": "",
+     "title": "Reference",
+     "pdf": 97,
+     "printed": 68,
+     "kind": "end",
+     "pdf_end": 97
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 97,
+     "printed": 68,
+     "kind": "end",
+     "pdf_end": 97
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 97,
+     "printed": 68,
+     "kind": "end",
+     "pdf_end": 100
+    }
+   ],
+   "part": "Part One – Solid-State Electronics and Devices",
+   "pdf_end": 100
+  },
+  {
+   "num": 3,
+   "title": "Solid-State Diodes and Diode Circuits",
+   "pdf": 101,
+   "printed": 72,
+   "sections": [
+    {
+     "num": "3.1",
+     "title": "The pn Junction Diode",
+     "pdf": 102,
+     "printed": 73,
+     "kind": "section",
+     "pdf_end": 106
+    },
+    {
+     "num": "3.2",
+     "title": "The i-v Characteristics of the Diode",
+     "pdf": 107,
+     "printed": 78,
+     "kind": "section",
+     "pdf_end": 108
+    },
+    {
+     "num": "3.3",
+     "title": "The Diode Equation: A Mathematical Model for the Diode",
+     "pdf": 109,
+     "printed": 80,
+     "kind": "section",
+     "pdf_end": 111
+    },
+    {
+     "num": "3.4",
+     "title": "Diode Characteristics under Reverse, Zero, and Forward Bias",
+     "pdf": 112,
+     "printed": 83,
+     "kind": "section",
+     "pdf_end": 114
+    },
+    {
+     "num": "3.5",
+     "title": "Diode Temperature Coefficient",
+     "pdf": 115,
+     "printed": 86,
+     "kind": "section",
+     "pdf_end": 115
+    },
+    {
+     "num": "3.6",
+     "title": "Diodes under Reverse Bias",
+     "pdf": 115,
+     "printed": 86,
+     "kind": "section",
+     "pdf_end": 118
+    },
+    {
+     "num": "3.7",
+     "title": "pn Junction Capacitance",
+     "pdf": 119,
+     "printed": 90,
+     "kind": "section",
+     "pdf_end": 121
+    },
+    {
+     "num": "3.8",
+     "title": "Schottky Barrier Diode",
+     "pdf": 122,
+     "printed": 93,
+     "kind": "section",
+     "pdf_end": 122
+    },
+    {
+     "num": "3.9",
+     "title": "Diode SPICE Model and Layout",
+     "pdf": 122,
+     "printed": 93,
+     "kind": "section",
+     "pdf_end": 123
+    },
+    {
+     "num": "3.10",
+     "title": "Diode Circuit Analysis",
+     "pdf": 124,
+     "printed": 95,
+     "kind": "section",
+     "pdf_end": 133
+    },
+    {
+     "num": "3.11",
+     "title": "Multiple-Diode Circuits",
+     "pdf": 134,
+     "printed": 105,
+     "kind": "section",
+     "pdf_end": 136
+    },
+    {
+     "num": "3.12",
+     "title": "Analysis of Diodes Operating in the Breakdown Region",
+     "pdf": 137,
+     "printed": 108,
+     "kind": "section",
+     "pdf_end": 140
+    },
+    {
+     "num": "3.13",
+     "title": "Half-Wave Rectifier Circuits",
+     "pdf": 141,
+     "printed": 112,
+     "kind": "section",
+     "pdf_end": 150
+    },
+    {
+     "num": "3.14",
+     "title": "Full-Wave Rectifier Circuits",
+     "pdf": 151,
+     "printed": 122,
+     "kind": "section",
+     "pdf_end": 151
+    },
+    {
+     "num": "3.15",
+     "title": "Full-Wave Bridge Rectification",
+     "pdf": 152,
+     "printed": 123,
+     "kind": "section",
+     "pdf_end": 152
+    },
+    {
+     "num": "3.16",
+     "title": "Rectifier Comparison and Design Tradeoffs",
+     "pdf": 153,
+     "printed": 124,
+     "kind": "section",
+     "pdf_end": 156
+    },
+    {
+     "num": "3.17",
+     "title": "Dynamic Switching Behavior of the Diode",
+     "pdf": 157,
+     "printed": 128,
+     "kind": "section",
+     "pdf_end": 157
+    },
+    {
+     "num": "3.18",
+     "title": "Photo Diodes, Solar Cells, and Light-Emitting Diodes",
+     "pdf": 158,
+     "printed": 129,
+     "kind": "section",
+     "pdf_end": 160
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 161,
+     "printed": 132,
+     "kind": "end",
+     "pdf_end": 161
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 162,
+     "printed": 133,
+     "kind": "end",
+     "pdf_end": 162
+    },
+    {
+     "num": "",
+     "title": "Reference",
+     "pdf": 163,
+     "printed": 134,
+     "kind": "end",
+     "pdf_end": 163
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 163,
+     "printed": 134,
+     "kind": "end",
+     "pdf_end": 163
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 163,
+     "printed": 134,
+     "kind": "end",
+     "pdf_end": 172
+    }
+   ],
+   "part": "Part One – Solid-State Electronics and Devices",
+   "pdf_end": 172
+  },
+  {
+   "num": 4,
+   "title": "Field-Effect Transistors",
+   "pdf": 173,
+   "printed": 144,
+   "sections": [
+    {
+     "num": "4.1",
+     "title": "Characteristics of the MOS Capacitor",
+     "pdf": 174,
+     "printed": 145,
+     "kind": "section",
+     "pdf_end": 175
+    },
+    {
+     "num": "4.2",
+     "title": "The NMOS Transistor",
+     "pdf": 176,
+     "printed": 147,
+     "kind": "section",
+     "pdf_end": 188
+    },
+    {
+     "num": "4.3",
+     "title": "PMOS Transistors",
+     "pdf": 189,
+     "printed": 160,
+     "kind": "section",
+     "pdf_end": 190
+    },
+    {
+     "num": "4.4",
+     "title": "MOSFET Circuit Symbols",
+     "pdf": 191,
+     "printed": 162,
+     "kind": "section",
+     "pdf_end": 193
+    },
+    {
+     "num": "4.5",
+     "title": "Capacitances in MOS Transistors",
+     "pdf": 194,
+     "printed": 165,
+     "kind": "section",
+     "pdf_end": 195
+    },
+    {
+     "num": "4.6",
+     "title": "MOSFET Modeling in SPICE",
+     "pdf": 196,
+     "printed": 167,
+     "kind": "section",
+     "pdf_end": 196
+    },
+    {
+     "num": "4.7",
+     "title": "MOS Transistor Scaling",
+     "pdf": 197,
+     "printed": 168,
+     "kind": "section",
+     "pdf_end": 202
+    },
+    {
+     "num": "4.8",
+     "title": "MOS Transistor Fabrication and Layout Design Rules",
+     "pdf": 203,
+     "printed": 174,
+     "kind": "section",
+     "pdf_end": 206
+    },
+    {
+     "num": "4.9",
+     "title": "Biasing the NMOS Field-Effect Transistor",
+     "pdf": 207,
+     "printed": 178,
+     "kind": "section",
+     "pdf_end": 216
+    },
+    {
+     "num": "4.10",
+     "title": "Biasing the PMOS Field-Effect Transistor",
+     "pdf": 217,
+     "printed": 188,
+     "kind": "section",
+     "pdf_end": 218
+    },
+    {
+     "num": "4.11",
+     "title": "The Junction Field-Effect Transistor(JFET)",
+     "pdf": 219,
+     "printed": 190,
+     "kind": "section",
+     "pdf_end": 224
+    },
+    {
+     "num": "4.12",
+     "title": "JFET Modeling in Spice",
+     "pdf": 225,
+     "printed": 196,
+     "kind": "section",
+     "pdf_end": 225
+    },
+    {
+     "num": "4.13",
+     "title": "Biasing the JFET and Depletion-Mode MOSFET",
+     "pdf": 226,
+     "printed": 197,
+     "kind": "section",
+     "pdf_end": 228
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 229,
+     "printed": 200,
+     "kind": "end",
+     "pdf_end": 230
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 231,
+     "printed": 202,
+     "kind": "end",
+     "pdf_end": 231
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 231,
+     "printed": 202,
+     "kind": "end",
+     "pdf_end": 231
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 232,
+     "printed": 203,
+     "kind": "end",
+     "pdf_end": 243
+    }
+   ],
+   "part": "Part One – Solid-State Electronics and Devices",
+   "pdf_end": 243
+  },
+  {
+   "num": 5,
+   "title": "Bipolar Junction Transistors",
+   "pdf": 244,
+   "printed": 215,
+   "sections": [
+    {
+     "num": "5.1",
+     "title": "Physical Structure of the Bipolar Transistor",
+     "pdf": 245,
+     "printed": 216,
+     "kind": "section",
+     "pdf_end": 245
+    },
+    {
+     "num": "5.2",
+     "title": "The Transport Model for the npn Transistor",
+     "pdf": 246,
+     "printed": 217,
+     "kind": "section",
+     "pdf_end": 251
+    },
+    {
+     "num": "5.3",
+     "title": "The pnp Transistor",
+     "pdf": 252,
+     "printed": 223,
+     "kind": "section",
+     "pdf_end": 253
+    },
+    {
+     "num": "5.4",
+     "title": "Equivalent Circuit Representations for the Transport Models",
+     "pdf": 254,
+     "printed": 225,
+     "kind": "section",
+     "pdf_end": 254
+    },
+    {
+     "num": "5.5",
+     "title": "The i-v Characteristics of the Bipolar Transistor",
+     "pdf": 255,
+     "printed": 226,
+     "kind": "section",
+     "pdf_end": 255
+    },
+    {
+     "num": "5.6",
+     "title": "The Operating Regions of the Bipolar Transistor",
+     "pdf": 256,
+     "printed": 227,
+     "kind": "section",
+     "pdf_end": 256
+    },
+    {
+     "num": "5.7",
+     "title": "Transport Model Simplifications",
+     "pdf": 257,
+     "printed": 228,
+     "kind": "section",
+     "pdf_end": 271
+    },
+    {
+     "num": "5.8",
+     "title": "Nonideal Behavior of the Bipolar Transistor",
+     "pdf": 272,
+     "printed": 243,
+     "kind": "section",
+     "pdf_end": 278
+    },
+    {
+     "num": "5.9",
+     "title": "Transconductance",
+     "pdf": 279,
+     "printed": 250,
+     "kind": "section",
+     "pdf_end": 279
+    },
+    {
+     "num": "5.10",
+     "title": "Bipolar Technology and SPICE Model",
+     "pdf": 280,
+     "printed": 251,
+     "kind": "section",
+     "pdf_end": 282
+    },
+    {
+     "num": "5.11",
+     "title": "Practical Bias Circuits for the BJT",
+     "pdf": 283,
+     "printed": 254,
+     "kind": "section",
+     "pdf_end": 290
+    },
+    {
+     "num": "5.12",
+     "title": "Tolerances in Bias Circuits",
+     "pdf": 291,
+     "printed": 262,
+     "kind": "section",
+     "pdf_end": 296
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 297,
+     "printed": 268,
+     "kind": "end",
+     "pdf_end": 298
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 299,
+     "printed": 270,
+     "kind": "end",
+     "pdf_end": 299
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 299,
+     "printed": 270,
+     "kind": "end",
+     "pdf_end": 299
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 300,
+     "printed": 271,
+     "kind": "end",
+     "pdf_end": 311
+    }
+   ],
+   "part": "Part One – Solid-State Electronics and Devices",
+   "pdf_end": 311
+  },
+  {
+   "num": 6,
+   "title": "Introduction to Digital Electronics",
+   "pdf": 312,
+   "printed": 283,
+   "sections": [
+    {
+     "num": "6.1",
+     "title": "Ideal Logic Gates",
+     "pdf": 314,
+     "printed": 285,
+     "kind": "section",
+     "pdf_end": 314
+    },
+    {
+     "num": "6.2",
+     "title": "Logic Level Definitions and Noise Margins",
+     "pdf": 314,
+     "printed": 285,
+     "kind": "section",
+     "pdf_end": 317
+    },
+    {
+     "num": "6.3",
+     "title": "Dynamic Response of Logic Gates",
+     "pdf": 318,
+     "printed": 289,
+     "kind": "section",
+     "pdf_end": 319
+    },
+    {
+     "num": "6.4",
+     "title": "Review of Boolean Algebra",
+     "pdf": 320,
+     "printed": 291,
+     "kind": "section",
+     "pdf_end": 321
+    },
+    {
+     "num": "6.5",
+     "title": "NMOS Logic Design",
+     "pdf": 322,
+     "printed": 293,
+     "kind": "section",
+     "pdf_end": 330
+    },
+    {
+     "num": "6.6",
+     "title": "Transistor Alternatives to the Load Resistor",
+     "pdf": 331,
+     "printed": 302,
+     "kind": "section",
+     "pdf_end": 343
+    },
+    {
+     "num": "6.7",
+     "title": "NMOS Inverter Summary and Comparison",
+     "pdf": 344,
+     "printed": 315,
+     "kind": "section",
+     "pdf_end": 344
+    },
+    {
+     "num": "6.8",
+     "title": "Impact of Velocity Saturation on Static Inverter Design",
+     "pdf": 345,
+     "printed": 316,
+     "kind": "section",
+     "pdf_end": 345
+    },
+    {
+     "num": "6.9",
+     "title": "NMOS NAND and NOR Gates",
+     "pdf": 346,
+     "printed": 317,
+     "kind": "section",
+     "pdf_end": 349
+    },
+    {
+     "num": "6.10",
+     "title": "Complex NMOS Logic Design",
+     "pdf": 350,
+     "printed": 321,
+     "kind": "section",
+     "pdf_end": 354
+    },
+    {
+     "num": "6.11",
+     "title": "Power Dissipation",
+     "pdf": 355,
+     "printed": 326,
+     "kind": "section",
+     "pdf_end": 357
+    },
+    {
+     "num": "6.12",
+     "title": "Dynamic Behavior of MOS Logic Gates",
+     "pdf": 358,
+     "printed": 329,
+     "kind": "section",
+     "pdf_end": 369
+    },
+    {
+     "num": "6.13",
+     "title": "PMOS Logic",
+     "pdf": 370,
+     "printed": 341,
+     "kind": "section",
+     "pdf_end": 372
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 373,
+     "printed": 344,
+     "kind": "end",
+     "pdf_end": 374
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 375,
+     "printed": 346,
+     "kind": "end",
+     "pdf_end": 375
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 376,
+     "printed": 347,
+     "kind": "end",
+     "pdf_end": 376
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 376,
+     "printed": 347,
+     "kind": "end",
+     "pdf_end": 376
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 376,
+     "printed": 347,
+     "kind": "end",
+     "pdf_end": 387
+    }
+   ],
+   "part": "Part Two – Digital Electronics",
+   "pdf_end": 387
+  },
+  {
+   "num": 7,
+   "title": "Complementary MOS (CMOS) Logic Design",
+   "pdf": 388,
+   "printed": 359,
+   "sections": [
+    {
+     "num": "7.1",
+     "title": "CMOS Inverter Technology",
+     "pdf": 389,
+     "printed": 360,
+     "kind": "section",
+     "pdf_end": 390
+    },
+    {
+     "num": "7.2",
+     "title": "Static Characteristics of the CMOS Inverter",
+     "pdf": 391,
+     "printed": 362,
+     "kind": "section",
+     "pdf_end": 395
+    },
+    {
+     "num": "7.3",
+     "title": "Dynamic Behavior of the CMOS Inverter",
+     "pdf": 396,
+     "printed": 367,
+     "kind": "section",
+     "pdf_end": 401
+    },
+    {
+     "num": "7.4",
+     "title": "Power Dissipation and Power Delay Product in CMOS",
+     "pdf": 402,
+     "printed": 373,
+     "kind": "section",
+     "pdf_end": 405
+    },
+    {
+     "num": "7.5",
+     "title": "CMOS NOR and NAND Gates",
+     "pdf": 406,
+     "printed": 377,
+     "kind": "section",
+     "pdf_end": 409
+    },
+    {
+     "num": "7.6",
+     "title": "Design of Complex Gates in CMOS",
+     "pdf": 410,
+     "printed": 381,
+     "kind": "section",
+     "pdf_end": 415
+    },
+    {
+     "num": "7.7",
+     "title": "Minimum Size Gate Design and Performance",
+     "pdf": 416,
+     "printed": 387,
+     "kind": "section",
+     "pdf_end": 417
+    },
+    {
+     "num": "7.8",
+     "title": "Cascade Buffers",
+     "pdf": 418,
+     "printed": 389,
+     "kind": "section",
+     "pdf_end": 420
+    },
+    {
+     "num": "7.9",
+     "title": "The CMOS Transmission Gate",
+     "pdf": 421,
+     "printed": 392,
+     "kind": "section",
+     "pdf_end": 421
+    },
+    {
+     "num": "7.10",
+     "title": "Bistable Circuits",
+     "pdf": 422,
+     "printed": 393,
+     "kind": "section",
+     "pdf_end": 425
+    },
+    {
+     "num": "7.11",
+     "title": "CMOS Latchup",
+     "pdf": 426,
+     "printed": 397,
+     "kind": "section",
+     "pdf_end": 430
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 431,
+     "printed": 402,
+     "kind": "end",
+     "pdf_end": 431
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 432,
+     "printed": 403,
+     "kind": "end",
+     "pdf_end": 432
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 433,
+     "printed": 404,
+     "kind": "end",
+     "pdf_end": 433
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 433,
+     "printed": 404,
+     "kind": "end",
+     "pdf_end": 442
+    }
+   ],
+   "part": "Part Two – Digital Electronics",
+   "pdf_end": 442
+  },
+  {
+   "num": 8,
+   "title": "MOS Memory Circuits",
+   "pdf": 443,
+   "printed": 414,
+   "sections": [
+    {
+     "num": "8.1",
+     "title": "Random-Access Memory (RAM)",
+     "pdf": 444,
+     "printed": 415,
+     "kind": "section",
+     "pdf_end": 445
+    },
+    {
+     "num": "8.2",
+     "title": "Static Memory Cells",
+     "pdf": 446,
+     "printed": 417,
+     "kind": "section",
+     "pdf_end": 452
+    },
+    {
+     "num": "8.3",
+     "title": "Dynamic Memory Cells",
+     "pdf": 453,
+     "printed": 424,
+     "kind": "section",
+     "pdf_end": 458
+    },
+    {
+     "num": "8.4",
+     "title": "Sense Amplifiers",
+     "pdf": 459,
+     "printed": 430,
+     "kind": "section",
+     "pdf_end": 464
+    },
+    {
+     "num": "8.5",
+     "title": "Address Decoders",
+     "pdf": 465,
+     "printed": 436,
+     "kind": "section",
+     "pdf_end": 467
+    },
+    {
+     "num": "8.6",
+     "title": "Read-Only Memory (ROM)",
+     "pdf": 468,
+     "printed": 439,
+     "kind": "section",
+     "pdf_end": 470
+    },
+    {
+     "num": "8.7",
+     "title": "Flash Memory",
+     "pdf": 471,
+     "printed": 442,
+     "kind": "section",
+     "pdf_end": 475
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 476,
+     "printed": 447,
+     "kind": "end",
+     "pdf_end": 476
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 477,
+     "printed": 448,
+     "kind": "end",
+     "pdf_end": 477
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 478,
+     "printed": 449,
+     "kind": "end",
+     "pdf_end": 478
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 478,
+     "printed": 449,
+     "kind": "end",
+     "pdf_end": 483
+    }
+   ],
+   "part": "Part Two – Digital Electronics",
+   "pdf_end": 483
+  },
+  {
+   "num": 9,
+   "title": "Bipolar Logic Circuits",
+   "pdf": 484,
+   "printed": 455,
+   "sections": [
+    {
+     "num": "9.1",
+     "title": "The Current Switch (Emitter-Coupled Pair)",
+     "pdf": 485,
+     "printed": 456,
+     "kind": "section",
+     "pdf_end": 487
+    },
+    {
+     "num": "9.2",
+     "title": "The Emitter-Coupled Logic (ECL) Gate",
+     "pdf": 488,
+     "printed": 459,
+     "kind": "section",
+     "pdf_end": 490
+    },
+    {
+     "num": "9.3",
+     "title": "Noise Margin Analysis for the ECL Gate",
+     "pdf": 491,
+     "printed": 462,
+     "kind": "section",
+     "pdf_end": 492
+    },
+    {
+     "num": "9.4",
+     "title": "Current Source Implementation",
+     "pdf": 493,
+     "printed": 464,
+     "kind": "section",
+     "pdf_end": 494
+    },
+    {
+     "num": "9.5",
+     "title": "The ECL OR-NOR Gate",
+     "pdf": 495,
+     "printed": 466,
+     "kind": "section",
+     "pdf_end": 496
+    },
+    {
+     "num": "9.6",
+     "title": "The Emitter Follower",
+     "pdf": 497,
+     "printed": 468,
+     "kind": "section",
+     "pdf_end": 499
+    },
+    {
+     "num": "9.7",
+     "title": "\"Emitter Dotting\" or \"Wired-OR\" Logic",
+     "pdf": 500,
+     "printed": 471,
+     "kind": "section",
+     "pdf_end": 500
+    },
+    {
+     "num": "9.8",
+     "title": "ECL Power-Delay Characteristics",
+     "pdf": 501,
+     "printed": 472,
+     "kind": "section",
+     "pdf_end": 504
+    },
+    {
+     "num": "9.9",
+     "title": "Positive ECL (PECL)",
+     "pdf": 505,
+     "printed": 476,
+     "kind": "section",
+     "pdf_end": 505
+    },
+    {
+     "num": "9.10",
+     "title": "Current Mode Logic",
+     "pdf": 505,
+     "printed": 476,
+     "kind": "section",
+     "pdf_end": 511
+    },
+    {
+     "num": "9.11",
+     "title": "The Saturating Bipolar Inverter",
+     "pdf": 512,
+     "printed": 483,
+     "kind": "section",
+     "pdf_end": 518
+    },
+    {
+     "num": "9.12",
+     "title": "Transistor-Transistor Logic (TTL)",
+     "pdf": 519,
+     "printed": 490,
+     "kind": "section",
+     "pdf_end": 522
+    },
+    {
+     "num": "9.13",
+     "title": "Logic Functions in TTL",
+     "pdf": 523,
+     "printed": 494,
+     "kind": "section",
+     "pdf_end": 525
+    },
+    {
+     "num": "9.14",
+     "title": "Schottky-Clamped TTL",
+     "pdf": 526,
+     "printed": 497,
+     "kind": "section",
+     "pdf_end": 526
+    },
+    {
+     "num": "9.15",
+     "title": "Comparison of the Power-Delay Products of ECL and TTL",
+     "pdf": 527,
+     "printed": 498,
+     "kind": "section",
+     "pdf_end": 527
+    },
+    {
+     "num": "9.16",
+     "title": "BiCMOS Logic",
+     "pdf": 527,
+     "printed": 498,
+     "kind": "section",
+     "pdf_end": 531
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 532,
+     "printed": 503,
+     "kind": "end",
+     "pdf_end": 532
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 533,
+     "printed": 504,
+     "kind": "end",
+     "pdf_end": 533
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 534,
+     "printed": 505,
+     "kind": "end",
+     "pdf_end": 534
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 534,
+     "printed": 505,
+     "kind": "end",
+     "pdf_end": 534
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 534,
+     "printed": 505,
+     "kind": "end",
+     "pdf_end": 545
+    }
+   ],
+   "part": "Part Two – Digital Electronics",
+   "pdf_end": 545
+  },
+  {
+   "num": 10,
+   "title": "Analog Systems and Ideal Operational Amplifiers",
+   "pdf": 546,
+   "printed": 517,
+   "sections": [
+    {
+     "num": "10.1",
+     "title": "An Example of an Analog Electronic System",
+     "pdf": 547,
+     "printed": 518,
+     "kind": "section",
+     "pdf_end": 547
+    },
+    {
+     "num": "10.2",
+     "title": "Amplification",
+     "pdf": 548,
+     "printed": 519,
+     "kind": "section",
+     "pdf_end": 553
+    },
+    {
+     "num": "10.3",
+     "title": "Two-Port Models for Amplifiers",
+     "pdf": 554,
+     "printed": 525,
+     "kind": "section",
+     "pdf_end": 557
+    },
+    {
+     "num": "10.4",
+     "title": "Mismatched Source and Load Resistances",
+     "pdf": 558,
+     "printed": 529,
+     "kind": "section",
+     "pdf_end": 560
+    },
+    {
+     "num": "10.5",
+     "title": "Introduction to Operational Amplifiers",
+     "pdf": 561,
+     "printed": 532,
+     "kind": "section",
+     "pdf_end": 564
+    },
+    {
+     "num": "10.6",
+     "title": "Distortion in Amplifiers",
+     "pdf": 565,
+     "printed": 536,
+     "kind": "section",
+     "pdf_end": 565
+    },
+    {
+     "num": "10.7",
+     "title": "Differential Amplifier Model",
+     "pdf": 566,
+     "printed": 537,
+     "kind": "section",
+     "pdf_end": 567
+    },
+    {
+     "num": "10.8",
+     "title": "Ideal Differential and Operational Amplifiers",
+     "pdf": 568,
+     "printed": 539,
+     "kind": "section",
+     "pdf_end": 568
+    },
+    {
+     "num": "10.9",
+     "title": "Analysis of Circuits Containing Ideal Operational Amplifiers",
+     "pdf": 569,
+     "printed": 540,
+     "kind": "section",
+     "pdf_end": 583
+    },
+    {
+     "num": "10.10",
+     "title": "Frequency Dependent Feedback",
+     "pdf": 584,
+     "printed": 555,
+     "kind": "section",
+     "pdf_end": 602
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 603,
+     "printed": 574,
+     "kind": "end",
+     "pdf_end": 603
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 604,
+     "printed": 575,
+     "kind": "end",
+     "pdf_end": 604
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 605,
+     "printed": 576,
+     "kind": "end",
+     "pdf_end": 605
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 605,
+     "printed": 576,
+     "kind": "end",
+     "pdf_end": 605
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 605,
+     "printed": 576,
+     "kind": "end",
+     "pdf_end": 615
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 615
+  },
+  {
+   "num": 11,
+   "title": "Nonideal Operational Amplifiers and Feedback Amplifier Stability",
+   "pdf": 616,
+   "printed": 587,
+   "sections": [
+    {
+     "num": "11.1",
+     "title": "Classic Feedback Systems",
+     "pdf": 617,
+     "printed": 588,
+     "kind": "section",
+     "pdf_end": 618
+    },
+    {
+     "num": "11.2",
+     "title": "Analysis of Circuits Containing Nonideal Operational Amplifiers",
+     "pdf": 619,
+     "printed": 590,
+     "kind": "section",
+     "pdf_end": 630
+    },
+    {
+     "num": "11.3",
+     "title": "Series and Shunt Feedback Circuits",
+     "pdf": 631,
+     "printed": 602,
+     "kind": "section",
+     "pdf_end": 631
+    },
+    {
+     "num": "11.4",
+     "title": "Unified Approach to Feedback Amplifier Gain Calculation",
+     "pdf": 632,
+     "printed": 603,
+     "kind": "section",
+     "pdf_end": 632
+    },
+    {
+     "num": "11.5",
+     "title": "Series-Shunt Feedback—Voltage Amplifiers",
+     "pdf": 633,
+     "printed": 604,
+     "kind": "section",
+     "pdf_end": 639
+    },
+    {
+     "num": "11.6",
+     "title": "Shunt-Shunt Feedback—Transresistance Amplifiers",
+     "pdf": 640,
+     "printed": 611,
+     "kind": "section",
+     "pdf_end": 644
+    },
+    {
+     "num": "11.7",
+     "title": "Series-Series Feedback—Transconductance Amplifiers",
+     "pdf": 645,
+     "printed": 616,
+     "kind": "section",
+     "pdf_end": 648
+    },
+    {
+     "num": "11.8",
+     "title": "Shunt-Series Feedback—Current Amplifiers",
+     "pdf": 649,
+     "printed": 620,
+     "kind": "section",
+     "pdf_end": 653
+    },
+    {
+     "num": "11.9",
+     "title": "Finding the Loop Gain Using Successive Voltage and Current Injection",
+     "pdf": 654,
+     "printed": 625,
+     "kind": "section",
+     "pdf_end": 656
+    },
+    {
+     "num": "11.10",
+     "title": "Distortion Reduction through the Use of Feedback",
+     "pdf": 657,
+     "printed": 628,
+     "kind": "section",
+     "pdf_end": 657
+    },
+    {
+     "num": "11.11",
+     "title": "DC Error Sources and Output Range Limitations",
+     "pdf": 658,
+     "printed": 629,
+     "kind": "section",
+     "pdf_end": 665
+    },
+    {
+     "num": "11.12",
+     "title": "Common-Mode Rejection and Input Resistance",
+     "pdf": 666,
+     "printed": 637,
+     "kind": "section",
+     "pdf_end": 675
+    },
+    {
+     "num": "11.13",
+     "title": "Frequency Response and Bandwidth of Operational Amplifiers",
+     "pdf": 676,
+     "printed": 647,
+     "kind": "section",
+     "pdf_end": 687
+    },
+    {
+     "num": "11.14",
+     "title": "Stability of Feedback Amplifiers",
+     "pdf": 688,
+     "printed": 659,
+     "kind": "section",
+     "pdf_end": 698
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 699,
+     "printed": 670,
+     "kind": "end",
+     "pdf_end": 700
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 701,
+     "printed": 672,
+     "kind": "end",
+     "pdf_end": 701
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 701,
+     "printed": 672,
+     "kind": "end",
+     "pdf_end": 701
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 702,
+     "printed": 673,
+     "kind": "end",
+     "pdf_end": 713
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 713
+  },
+  {
+   "num": 12,
+   "title": "Operational Amplifier Applications",
+   "pdf": 714,
+   "printed": 685,
+   "sections": [
+    {
+     "num": "12.1",
+     "title": "Cascaded Amplifiers",
+     "pdf": 715,
+     "printed": 686,
+     "kind": "section",
+     "pdf_end": 727
+    },
+    {
+     "num": "12.2",
+     "title": "The Instrumentation Amplifier",
+     "pdf": 728,
+     "printed": 699,
+     "kind": "section",
+     "pdf_end": 730
+    },
+    {
+     "num": "12.3",
+     "title": "Active Filters",
+     "pdf": 731,
+     "printed": 702,
+     "kind": "section",
+     "pdf_end": 740
+    },
+    {
+     "num": "12.4",
+     "title": "Switched-Capacitor Circuits",
+     "pdf": 741,
+     "printed": 712,
+     "kind": "section",
+     "pdf_end": 747
+    },
+    {
+     "num": "12.5",
+     "title": "Digital-to-Analog Conversion",
+     "pdf": 748,
+     "printed": 719,
+     "kind": "section",
+     "pdf_end": 754
+    },
+    {
+     "num": "12.6",
+     "title": "Analog-to-Digital Conversion",
+     "pdf": 755,
+     "printed": 726,
+     "kind": "section",
+     "pdf_end": 768
+    },
+    {
+     "num": "12.7",
+     "title": "Oscillators",
+     "pdf": 769,
+     "printed": 740,
+     "kind": "section",
+     "pdf_end": 773
+    },
+    {
+     "num": "12.8",
+     "title": "Nonlinear Circuit Applications",
+     "pdf": 774,
+     "printed": 745,
+     "kind": "section",
+     "pdf_end": 776
+    },
+    {
+     "num": "12.9",
+     "title": "Circuits Using Positive Feedback",
+     "pdf": 777,
+     "printed": 748,
+     "kind": "section",
+     "pdf_end": 783
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 784,
+     "printed": 755,
+     "kind": "end",
+     "pdf_end": 785
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 786,
+     "printed": 757,
+     "kind": "end",
+     "pdf_end": 786
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 787,
+     "printed": 758,
+     "kind": "end",
+     "pdf_end": 787
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 787,
+     "printed": 758,
+     "kind": "end",
+     "pdf_end": 798
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 798
+  },
+  {
+   "num": 13,
+   "title": "Small-Signal Modeling and Linear Amplification",
+   "pdf": 799,
+   "printed": 770,
+   "sections": [
+    {
+     "num": "13.1",
+     "title": "The Transistor as an Amplifier",
+     "pdf": 800,
+     "printed": 771,
+     "kind": "section",
+     "pdf_end": 802
+    },
+    {
+     "num": "13.2",
+     "title": "Coupling and Bypass Capacitors",
+     "pdf": 803,
+     "printed": 774,
+     "kind": "section",
+     "pdf_end": 804
+    },
+    {
+     "num": "13.3",
+     "title": "Circuit Analysis Using dc and ac Equivalent Circuits",
+     "pdf": 805,
+     "printed": 776,
+     "kind": "section",
+     "pdf_end": 808
+    },
+    {
+     "num": "13.4",
+     "title": "Introduction to Small-Signal Modeling",
+     "pdf": 809,
+     "printed": 780,
+     "kind": "section",
+     "pdf_end": 811
+    },
+    {
+     "num": "13.5",
+     "title": "Small-Signal Models for Bipolar Junction Transistors",
+     "pdf": 812,
+     "printed": 783,
+     "kind": "section",
+     "pdf_end": 820
+    },
+    {
+     "num": "13.6",
+     "title": "The Common-Emitter (C-E) Amplifier",
+     "pdf": 821,
+     "printed": 792,
+     "kind": "section",
+     "pdf_end": 822
+    },
+    {
+     "num": "13.7",
+     "title": "Important Limits and Model Simplifications",
+     "pdf": 823,
+     "printed": 794,
+     "kind": "section",
+     "pdf_end": 827
+    },
+    {
+     "num": "13.8",
+     "title": "Small-Signal Models for Field-Effect Transistors",
+     "pdf": 828,
+     "printed": 799,
+     "kind": "section",
+     "pdf_end": 834
+    },
+    {
+     "num": "13.9",
+     "title": "Summary and Comparison of the Small-Signal Models of the BJT and FET",
+     "pdf": 835,
+     "printed": 806,
+     "kind": "section",
+     "pdf_end": 837
+    },
+    {
+     "num": "13.10",
+     "title": "The Common-Source Amplifier",
+     "pdf": 838,
+     "printed": 809,
+     "kind": "section",
+     "pdf_end": 850
+    },
+    {
+     "num": "13.11",
+     "title": "Common-Emitter and Common-Source Amplifier Summary",
+     "pdf": 851,
+     "printed": 822,
+     "kind": "section",
+     "pdf_end": 851
+    },
+    {
+     "num": "13.12",
+     "title": "Amplifier Power and Signal Range",
+     "pdf": 852,
+     "printed": 823,
+     "kind": "section",
+     "pdf_end": 855
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 856,
+     "printed": 827,
+     "kind": "end",
+     "pdf_end": 856
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 857,
+     "printed": 828,
+     "kind": "end",
+     "pdf_end": 857
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 858,
+     "printed": 829,
+     "kind": "end",
+     "pdf_end": 869
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 869
+  },
+  {
+   "num": 14,
+   "title": "Single-Transistor Amplifiers",
+   "pdf": 870,
+   "printed": 841,
+   "sections": [
+    {
+     "num": "14.1",
+     "title": "Amplifier Classification",
+     "pdf": 871,
+     "printed": 842,
+     "kind": "section",
+     "pdf_end": 876
+    },
+    {
+     "num": "14.2",
+     "title": "Inverting Amplifiers—Common-Emitter and Common-Source Circuits",
+     "pdf": 877,
+     "printed": 848,
+     "kind": "section",
+     "pdf_end": 898
+    },
+    {
+     "num": "14.3",
+     "title": "Follower Circuits—Common-Collector and Common-Drain Amplifiers",
+     "pdf": 899,
+     "printed": 870,
+     "kind": "section",
+     "pdf_end": 906
+    },
+    {
+     "num": "14.4",
+     "title": "Noninverting Amplifiers—Common-Base and Common-Gate Circuits",
+     "pdf": 907,
+     "printed": 878,
+     "kind": "section",
+     "pdf_end": 915
+    },
+    {
+     "num": "14.5",
+     "title": "Amplifier Prototype Review and Comparison",
+     "pdf": 916,
+     "printed": 887,
+     "kind": "section",
+     "pdf_end": 919
+    },
+    {
+     "num": "14.6",
+     "title": "Common-Source Amplifiers Using MOS Inverters",
+     "pdf": 920,
+     "printed": 891,
+     "kind": "section",
+     "pdf_end": 926
+    },
+    {
+     "num": "14.7",
+     "title": "Coupling and Bypass Capacitor Design",
+     "pdf": 927,
+     "printed": 898,
+     "kind": "section",
+     "pdf_end": 937
+    },
+    {
+     "num": "14.8",
+     "title": "Amplifier Design Examples",
+     "pdf": 938,
+     "printed": 909,
+     "kind": "section",
+     "pdf_end": 951
+    },
+    {
+     "num": "14.9",
+     "title": "Multistage ac-Coupled Amplifiers",
+     "pdf": 952,
+     "printed": 923,
+     "kind": "section",
+     "pdf_end": 962
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 963,
+     "printed": 934,
+     "kind": "end",
+     "pdf_end": 963
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 964,
+     "printed": 935,
+     "kind": "end",
+     "pdf_end": 964
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 965,
+     "printed": 936,
+     "kind": "end",
+     "pdf_end": 965
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 965,
+     "printed": 936,
+     "kind": "end",
+     "pdf_end": 980
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 980
+  },
+  {
+   "num": 15,
+   "title": "Differential Amplifiers and Operational Amplifier Design",
+   "pdf": 981,
+   "printed": 952,
+   "sections": [
+    {
+     "num": "15.1",
+     "title": "Differential Amplifiers",
+     "pdf": 982,
+     "printed": 953,
+     "kind": "section",
+     "pdf_end": 1004
+    },
+    {
+     "num": "15.2",
+     "title": "Evolution to Basic Operational Amplifiers",
+     "pdf": 1005,
+     "printed": 976,
+     "kind": "section",
+     "pdf_end": 1020
+    },
+    {
+     "num": "15.3",
+     "title": "Output Stages",
+     "pdf": 1021,
+     "printed": 992,
+     "kind": "section",
+     "pdf_end": 1030
+    },
+    {
+     "num": "15.4",
+     "title": "Electronic Current Sources",
+     "pdf": 1031,
+     "printed": 1002,
+     "kind": "section",
+     "pdf_end": 1041
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 1042,
+     "printed": 1013,
+     "kind": "end",
+     "pdf_end": 1042
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 1043,
+     "printed": 1014,
+     "kind": "end",
+     "pdf_end": 1043
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 1044,
+     "printed": 1015,
+     "kind": "end",
+     "pdf_end": 1044
+    },
+    {
+     "num": "",
+     "title": "Additional Reading",
+     "pdf": 1044,
+     "printed": 1015,
+     "kind": "end",
+     "pdf_end": 1044
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 1044,
+     "printed": 1015,
+     "kind": "end",
+     "pdf_end": 1059
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 1059
+  },
+  {
+   "num": 16,
+   "title": "Analog Integrated Circuit Design Techniques",
+   "pdf": 1060,
+   "printed": 1031,
+   "sections": [
+    {
+     "num": "16.1",
+     "title": "Circuit Element Matching",
+     "pdf": 1061,
+     "printed": 1032,
+     "kind": "section",
+     "pdf_end": 1061
+    },
+    {
+     "num": "16.2",
+     "title": "Current Mirrors",
+     "pdf": 1062,
+     "printed": 1033,
+     "kind": "section",
+     "pdf_end": 1076
+    },
+    {
+     "num": "16.3",
+     "title": "High-Output-Resistance Current Mirrors",
+     "pdf": 1077,
+     "printed": 1048,
+     "kind": "section",
+     "pdf_end": 1085
+    },
+    {
+     "num": "16.4",
+     "title": "Reference Current Generation",
+     "pdf": 1086,
+     "printed": 1057,
+     "kind": "section",
+     "pdf_end": 1086
+    },
+    {
+     "num": "16.5",
+     "title": "Supply-Independent Biasing",
+     "pdf": 1087,
+     "printed": 1058,
+     "kind": "section",
+     "pdf_end": 1090
+    },
+    {
+     "num": "16.6",
+     "title": "The Bandgap Reference",
+     "pdf": 1091,
+     "printed": 1062,
+     "kind": "section",
+     "pdf_end": 1094
+    },
+    {
+     "num": "16.7",
+     "title": "The Current Mirror as an Active Load",
+     "pdf": 1095,
+     "printed": 1066,
+     "kind": "section",
+     "pdf_end": 1105
+    },
+    {
+     "num": "16.8",
+     "title": "Active Loads in Operational Amplifiers",
+     "pdf": 1106,
+     "printed": 1077,
+     "kind": "section",
+     "pdf_end": 1110
+    },
+    {
+     "num": "16.9",
+     "title": "The µA741 Operational Amplifier",
+     "pdf": 1111,
+     "printed": 1082,
+     "kind": "section",
+     "pdf_end": 1123
+    },
+    {
+     "num": "16.10",
+     "title": "The Gilbert Analog Multiplier",
+     "pdf": 1124,
+     "printed": 1095,
+     "kind": "section",
+     "pdf_end": 1125
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 1126,
+     "printed": 1097,
+     "kind": "end",
+     "pdf_end": 1126
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 1127,
+     "printed": 1098,
+     "kind": "end",
+     "pdf_end": 1127
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 1128,
+     "printed": 1099,
+     "kind": "end",
+     "pdf_end": 1128
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 1128,
+     "printed": 1099,
+     "kind": "end",
+     "pdf_end": 1141
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 1141
+  },
+  {
+   "num": 17,
+   "title": "Amplifier Frequency Response",
+   "pdf": 1142,
+   "printed": 1113,
+   "sections": [
+    {
+     "num": "17.1",
+     "title": "Amplifier Frequency Response",
+     "pdf": 1143,
+     "printed": 1114,
+     "kind": "section",
+     "pdf_end": 1147
+    },
+    {
+     "num": "17.2",
+     "title": "Direct Determination of the Low-Frequency Poles and Zeros—the Common-Source Amplifier",
+     "pdf": 1148,
+     "printed": 1119,
+     "kind": "section",
+     "pdf_end": 1152
+    },
+    {
+     "num": "17.3",
+     "title": "Estimation of ωL Using the Short-Circuit Time-Constant Method",
+     "pdf": 1153,
+     "printed": 1124,
+     "kind": "section",
+     "pdf_end": 1161
+    },
+    {
+     "num": "17.4",
+     "title": "Transistor Models at High Frequencies",
+     "pdf": 1162,
+     "printed": 1133,
+     "kind": "section",
+     "pdf_end": 1168
+    },
+    {
+     "num": "17.5",
+     "title": "Base and Gate Resistances in the Small-Signal Models",
+     "pdf": 1169,
+     "printed": 1140,
+     "kind": "section",
+     "pdf_end": 1170
+    },
+    {
+     "num": "17.6",
+     "title": "High-Frequency Common-Emitter and Common-Source Amplifier Analysis",
+     "pdf": 1171,
+     "printed": 1142,
+     "kind": "section",
+     "pdf_end": 1188
+    },
+    {
+     "num": "17.7",
+     "title": "Common-Base and Common-Gate Amplifier High-Frequency Response",
+     "pdf": 1189,
+     "printed": 1160,
+     "kind": "section",
+     "pdf_end": 1190
+    },
+    {
+     "num": "17.8",
+     "title": "Common-Collector and Common-Drain Amplifier High-Frequency Response",
+     "pdf": 1191,
+     "printed": 1162,
+     "kind": "section",
+     "pdf_end": 1194
+    },
+    {
+     "num": "17.9",
+     "title": "Single-Stage Amplifier High-Frequency Response Summary",
+     "pdf": 1195,
+     "printed": 1166,
+     "kind": "section",
+     "pdf_end": 1196
+    },
+    {
+     "num": "17.10",
+     "title": "Frequency Response of Multistage Amplifiers",
+     "pdf": 1197,
+     "printed": 1168,
+     "kind": "section",
+     "pdf_end": 1209
+    },
+    {
+     "num": "17.11",
+     "title": "Introduction to Radio Frequency Circuits",
+     "pdf": 1210,
+     "printed": 1181,
+     "kind": "section",
+     "pdf_end": 1221
+    },
+    {
+     "num": "17.12",
+     "title": "Mixers and Balanced Modulators",
+     "pdf": 1222,
+     "printed": 1193,
+     "kind": "section",
+     "pdf_end": 1231
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 1232,
+     "printed": 1203,
+     "kind": "end",
+     "pdf_end": 1232
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 1233,
+     "printed": 1204,
+     "kind": "end",
+     "pdf_end": 1233
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 1233,
+     "printed": 1204,
+     "kind": "end",
+     "pdf_end": 1233
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 1234,
+     "printed": 1205,
+     "kind": "end",
+     "pdf_end": 1245
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 1245
+  },
+  {
+   "num": 18,
+   "title": "Transistor Feedback Amplifiers and Oscillators",
+   "pdf": 1246,
+   "printed": 1217,
+   "sections": [
+    {
+     "num": "18.1",
+     "title": "Basic Feedback System Review",
+     "pdf": 1247,
+     "printed": 1218,
+     "kind": "section",
+     "pdf_end": 1249
+    },
+    {
+     "num": "18.2",
+     "title": "Feedback Amplifier Analysis at Midband",
+     "pdf": 1250,
+     "printed": 1221,
+     "kind": "section",
+     "pdf_end": 1252
+    },
+    {
+     "num": "18.3",
+     "title": "Feedback Amplifier Circuit Examples",
+     "pdf": 1253,
+     "printed": 1224,
+     "kind": "section",
+     "pdf_end": 1272
+    },
+    {
+     "num": "18.4",
+     "title": "Review of Feedback Amplifier Stability",
+     "pdf": 1273,
+     "printed": 1244,
+     "kind": "section",
+     "pdf_end": 1281
+    },
+    {
+     "num": "18.5",
+     "title": "Single-Pole Operational Amplifier Compensation",
+     "pdf": 1282,
+     "printed": 1253,
+     "kind": "section",
+     "pdf_end": 1296
+    },
+    {
+     "num": "18.6",
+     "title": "High-Frequency Oscillators",
+     "pdf": 1297,
+     "printed": 1268,
+     "kind": "section",
+     "pdf_end": 1306
+    },
+    {
+     "num": "",
+     "title": "Summary",
+     "pdf": 1307,
+     "printed": 1278,
+     "kind": "end",
+     "pdf_end": 1308
+    },
+    {
+     "num": "",
+     "title": "Key Terms",
+     "pdf": 1309,
+     "printed": 1280,
+     "kind": "end",
+     "pdf_end": 1309
+    },
+    {
+     "num": "",
+     "title": "References",
+     "pdf": 1309,
+     "printed": 1280,
+     "kind": "end",
+     "pdf_end": 1309
+    },
+    {
+     "num": "",
+     "title": "Problems",
+     "pdf": 1309,
+     "printed": 1280,
+     "kind": "end",
+     "pdf_end": 1319
+    }
+   ],
+   "part": "Part Three – Analog Electronics",
+   "pdf_end": 1319
+  }
+ ],
+ "appendices": [
+  {
+   "title": "Appendix A",
+   "name": "Standard Discrete Component Values",
+   "printed": 1291,
+   "pdf": 1320
+  },
+  {
+   "title": "Appendix B",
+   "name": "Solid-State Device Models and SPICE Simulation Parameters",
+   "printed": 1294,
+   "pdf": 1323
+  },
+  {
+   "title": "Appendix C",
+   "name": "Two-Port Review",
+   "printed": 1299,
+   "pdf": 1328
+  }
+ ],
+ "appendices_pdf": 1320,
+ "index_pdf": 1332
+}
