@@ -1,0 +1,10 @@
+{"vi":["Circuit-Action câu 6 (Hình 16–30, tụ hở) bị loại: tụ tích phân hở làm bộ phát mất hồi tiếp và dao động ngừng, nên «tăng/giảm/không đổi» của tần số không có nghĩa; sách không in đáp án.",
+"Đúng/Sai câu 12 («relaxation oscillator uses no positive feedback»): chọn Sai vì các mạch thư giãn của Floyd dùng bộ so sánh có hồi tiếp dương.",
+"Circuit-Action câu 7 (Hình 16–32): đỉnh của răng cưa do điốt và bộ chia R3/R4 quyết định nên giảm R1 không đổi đỉnh (chỉ đổi độ dốc); đây là suy luận từ sơ đồ, sách không in đáp án.",
+"Các bài 9–10, 12, 14–17 phụ thuộc hình hoặc giá trị linh kiện đọc không chắc (14–15: công thức tần số dao động thư giãn không khớp đáp án sách khi đọc giá trị từ văn bản) nên chưa đưa vào.",
+"Công thức 555: tH = 0,7(R1+R2)C, tL = 0,7R2C, f = 1,44/((R1+2R2)C), tW = 1,1RC theo Floyd."],
+"en":["Circuit-Action Q6 (Fig. 16–30, capacitor opens) was removed: with the integrating capacitor open the generator loses its feedback and oscillation stops, so “increase/decrease/not change” of the frequency is meaningless; no printed answer.",
+"True/False Q12 (“a relaxation oscillator uses no positive feedback”): marked False because Floyd’s relaxation oscillators use a comparator with positive feedback.",
+"Circuit-Action Q7 (Fig. 16–32): the sawtooth peak is set by the diode and the R3/R4 divider, so decreasing R1 does not change the peak (only the slope); this is deduced from the schematic and the book prints no answer.",
+"Problems 9–10, 12, 14–17 depend on figures or component values that could not be read reliably (14–15: the relaxation-oscillator frequency formula did not reproduce the book answer from the values read), so they are not included.",
+"555 formulas per Floyd: tH = 0.7(R1+R2)C, tL = 0.7R2C, f = 1.44/((R1+2R2)C), tW = 1.1RC."]}

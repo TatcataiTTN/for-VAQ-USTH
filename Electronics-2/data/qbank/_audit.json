@@ -231,5 +231,67 @@
     "correct_is_longest": 0.35
    }
   }
+ },
+ "m07": {
+  "n": 117,
+  "n_goc": 36,
+  "n_bo_sung": 81,
+  "essays": 11,
+  "essays_goc": 11,
+  "audit": {
+   "ca/3opt": {
+    "n": 16,
+    "pos": [
+     8,
+     5,
+     3
+    ],
+    "chi2": 2.38,
+    "correct_is_longest": 0.188
+   },
+   "mcq/3opt": {
+    "n": 1,
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "chi2": 2.0,
+    "correct_is_longest": 0.0
+   },
+   "mcq/4opt": {
+    "n": 84,
+    "pos": [
+     21,
+     21,
+     21,
+     21
+    ],
+    "chi2": 0.0,
+    "correct_is_longest": 0.197
+   },
+   "mcq/6opt": {
+    "n": 1,
+    "pos": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "chi2": 5.0,
+    "correct_is_longest": 0.0
+   },
+   "tf/2opt": {
+    "n": 15,
+    "pos": [
+     7,
+     8
+    ],
+    "chi2": 0.07,
+    "correct_is_longest": 0.533
+   }
+  }
  }
 }
