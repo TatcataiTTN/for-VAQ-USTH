@@ -1361,8 +1361,8 @@
    "vi": "Một zener 6,2 V nối từ ngõ ra về ngõ vào đảo ở Hình 13–61, catốt ở ngõ ra. Các mức ra dương và âm là bao nhiêu? (Giả sử sụt áp thuận 0,7 V.)"
   },
   "sol": {
-   "en": "Positive output: the zener is reverse biased and clamps at +VZ = +6.2 V. Negative output: the zener conducts forward and clamps at −0.7 V. Levels: +6.2 V and −0.7 V (not symmetrical).",
-   "vi": "Ngõ ra dương: zener phân cực ngược và kẹp ở +VZ = +6,2 V. Ngõ ra âm: zener dẫn thuận và kẹp ở −0,7 V. Các mức: +6,2 V và −0,7 V (không đối xứng)."
+   "en": "The zener feeds the output back to the inverting input, so once it conducts the op-amp holds V(−) ≈ V(+). In Figure 13–61 V(+) = Vout·R2/(R1 + R2) = Vout·18/65 = 0.277·Vout (R1 = 47 kΩ, R2 = 18 kΩ). Positive: the zener is in breakdown, Vout = V(−) + 6.2 V = 0.277·Vout + 6.2 V, so Vout = 6.2/(1 − 0.277) = 8.57 V. Negative: the zener is forward biased, Vout = V(−) − 0.7 V, so Vout = −0.7/(1 − 0.277) = −0.968 V (book: 8.57 V and −0.968 V). This is not the ±(VZ + 0.7 V) of a bounded inverting amplifier, because here the inverting input is not at ground.",
+   "vi": "Zener đưa ngõ ra về ngõ vào đảo, nên khi nó dẫn op-amp giữ V(−) ≈ V(+). Ở Hình 13–61, V(+) = Vout·R2/(R1 + R2) = Vout·18/65 = 0,277·Vout (R1 = 47 kΩ, R2 = 18 kΩ). Mức dương: zener đánh thủng, Vout = V(−) + 6,2 V = 0,277·Vout + 6,2 V, nên Vout = 6,2/(1 − 0,277) = 8,57 V. Mức âm: zener dẫn thuận, Vout = V(−) − 0,7 V, nên Vout = −0,7/(1 − 0,277) = −0,968 V (sách: 8,57 V và −0,968 V). Đây không phải ±(VZ + 0,7 V) của mạch khuếch đại đảo có giới hạn, vì ở đây ngõ vào đảo không nối đất."
   },
   "level": 2,
   "topic": {

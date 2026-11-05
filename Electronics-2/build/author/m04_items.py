@@ -28,6 +28,50 @@ M7.ess(19,379,'A class C amplifier transistor is on for 10 % of the input cycle 
 f20 = 1 / (2 * math.pi * math.sqrt(10e-3 * 0.001e-6))
 M7.ess(20,379,'Resonant frequency of a tank circuit with L = 10 mH and C = 0.001 μF.','Tần số cộng hưởng của mạch tank có L = 10 mH và C = 0,001 μF.',f'fr = 1/(2π√(LC)) = 1/(2π√(10 mH × 0.001 μF)) = {f20/1e3:.2f} kHz.',f'fr = 1/(2π√(LC)) = 1/(2π√(10 mH × 0,001 μF)) = {f20/1e3:.2f} kHz.','osc',1)
 M7.ess(21,379,'Maximum peak-to-peak output of a tuned class C amplifier with VCC = 12 V.','Điện áp ra đỉnh–đỉnh cực đại của bộ khuếch đại lớp C có tải cộng hưởng với VCC = 12 V.','The collector tank swings symmetrically about VCC, so the peak is VCC and the peak-to-peak output is 2·VCC = 24 V (ideal).','Mạch tank ở cực góp dao động đối xứng quanh VCC nên đỉnh là VCC và điện áp đỉnh–đỉnh là 2·VCC = 24 V (lý tưởng).','cls',2)
+# ---------------- Circuit-Action Quiz items for the figures this module needs (Fig 6-34, 7-5, 7-18, 7-19, 7-24). Floyd prints no answers:
+# the direction of each change is derived from the book's own method and re-derived independently in build/verify/verify_m04.py.
+def fig634(r4=1000.0):                      # two-stage CE amplifier, VCC = 10 V, beta = 150 (book method: VB from the divider, IE = (VB - 0.7)/R4, r'e = 25 mV/IE)
+    vb = 10 * 10 / 57; ie = (vb - 0.7) / r4; re_ = 0.025 / ie
+    rp = 1 / (1 / 4700 + 1 / 47000 + 1 / 10000); rc1 = 1 / (1 / rp + 1 / (150 * re_))
+    return (rc1 / re_) * (4700 / re_)
+def fig75(r3=5600.0, re2=560.0, r4=22000.0):    # class A power amplifier, VCC = 12 V: first-stage gain and Q2 base voltage
+    vb = 12 * 10 / 66; ie = (vb - 0.7) / (68 + re2); re_ = 0.025 / ie; rc1 = 1 / (1 / 4700 + 1 / r3 + 1 / r4)
+    return rc1 / (68 + re_), 12 * r4 / (r3 + r4)
+FIG = 'assets/figs/m04/'
+def fv(x, d=1): return f'{x:.{d}f}'.replace('.', ',')          # Vietnamese decimal comma
+M6.ca(9, 326, 'If C2 and C4 in Figure 6–34 are increased in value, Vout will', 'Nếu tăng giá trị C2 và C4 trong Hình 6–34 thì Vout sẽ', FIG + 'fig6_34.png', 2,
+      'C2 and C4 are emitter bypass capacitors. At the signal frequency they are already ac shorts (XC ≪ r′e), so a larger value only moves the low-frequency corner lower: the mid-band gain, and therefore Vout, does not change.',
+      'C2 và C4 là tụ thoát (bypass) cực E. Ở tần số tín hiệu chúng đã ngắn mạch xoay chiều (XC ≪ r′e), nên tăng giá trị chỉ làm tần số góc thấp thấp hơn: độ lợi dải giữa, và do đó Vout, không đổi.', 'cas')
+M6.ca(10, 326, 'If the value of R4 in Figure 6–34 is reduced, the overall voltage gain will', 'Nếu giảm giá trị R4 trong Hình 6–34 thì độ lợi điện áp tổng sẽ', FIG + 'fig6_34.png', 0,
+      f'R4 sets the dc emitter current IE = (VB − 0.7 V)/R4 but is bypassed by C2, so it does not appear in the ac gain. A smaller R4 gives a larger IE and a smaller r′e = 25 mV/IE, and both Av1 = Rc1/r′e and Av2 = R7/r′e rise. With the book method: R4 = 1.0 kΩ gives A′v ≈ {fig634(1000):,.0f} (the book finds 13,495); R4 = 0.5 kΩ gives ≈ {fig634(500):,.0f}.',
+      f'R4 đặt dòng cực E một chiều IE = (VB − 0,7 V)/R4 nhưng đã được C2 thoát, nên không có mặt trong độ lợi xoay chiều. R4 nhỏ hơn cho IE lớn hơn và r′e = 25 mV/IE nhỏ hơn, nên cả Av1 = Rc1/r′e và Av2 = R7/r′e đều tăng. Theo phương pháp của sách: R4 = 1,0 kΩ cho A′v ≈ {round(fig634(1000))} (sách tính 13495); R4 = 0,5 kΩ cho ≈ {round(fig634(500))}.', 'cas')
+M7.ca(1, 375, 'If the value of R3 in Figure 7–5 is decreased, the voltage gain of the first stage will', 'Nếu giảm giá trị R3 trong Hình 7–5 thì độ lợi điện áp của tầng thứ nhất sẽ', FIG + 'fig7_5.png', 1,
+      f'Av1 = −Rc1/(RE1 + r′e) with Rc1 = RC ∥ R3 ∥ R4 (the Darlington input resistance is far larger and is ignored, as in Example 7–1). A smaller R3 lowers Rc1 and so |Av1|: the book value is 27.9 with R3 = 5.6 kΩ; with R3 = 2.7 kΩ it falls to {fig75(r3=2700)[0]:.1f}.',
+      f'Av1 = −Rc1/(RE1 + r′e) với Rc1 = RC ∥ R3 ∥ R4 (điện trở vào của cặp Darlington rất lớn nên bỏ qua, như Ví dụ 7–1). R3 nhỏ hơn làm Rc1 giảm nên |Av1| giảm: giá trị trong sách là 27,9 khi R3 = 5,6 kΩ; với R3 = 2,7 kΩ còn {fv(fig75(r3=2700)[0])}.', 'cas')
+M7.ca(2, 375, 'If the value of RE2 in Figure 7–5 is increased, the voltage gain of the first stage will', 'Nếu tăng giá trị RE2 trong Hình 7–5 thì độ lợi điện áp của tầng thứ nhất sẽ', FIG + 'fig7_5.png', 1,
+      f'RE2 is bypassed by C2, so it is not in the ac gain, but it still sets the dc current IE1 = (VB − 0.7 V)/(RE1 + RE2). A larger RE2 gives a smaller IE1, a larger r′e and a smaller Av1 = −Rc1/(RE1 + r′e): 27.9 with RE2 = 560 Ω (book), {fig75(re2=1000)[0]:.1f} with RE2 = 1 kΩ.',
+      f'RE2 được C2 thoát nên không có trong độ lợi xoay chiều, nhưng vẫn đặt dòng một chiều IE1 = (VB − 0,7 V)/(RE1 + RE2). RE2 lớn hơn cho IE1 nhỏ hơn, r′e lớn hơn và Av1 = −Rc1/(RE1 + r′e) nhỏ hơn: 27,9 khi RE2 = 560 Ω (sách), {fv(fig75(re2=1000)[0])} khi RE2 = 1 kΩ.', 'cas')
+M7.ca(3, 375, 'If C2 in Figure 7–5 opens, the dc voltage at the emitter of Q1 will', 'Nếu C2 trong Hình 7–5 bị hở thì điện áp một chiều tại cực E của Q1 sẽ', FIG + 'fig7_5.png', 2,
+      'C2 only bypasses RE2 for ac, and a capacitor carries no dc current, so VE1 = VB − 0.7 V ≈ 1.12 V is unchanged. (What changes is the ac gain, which falls because RE2 is no longer bypassed.)',
+      'C2 chỉ thoát RE2 cho tín hiệu xoay chiều và tụ điện không dẫn dòng một chiều, nên VE1 = VB − 0,7 V ≈ 1,12 V không đổi. (Thứ thay đổi là độ lợi xoay chiều, giảm vì RE2 không còn được thoát.)', 'cas')
+M7.ca(4, 375, 'If the value of R4 in Figure 7–5 is increased, the dc voltage at the base of Q3 will', 'Nếu tăng giá trị R4 trong Hình 7–5 thì điện áp một chiều tại cực B của Q3 sẽ', FIG + 'fig7_5.png', 0,
+      f'Q2 and Q3 form a Darlington follower whose base is biased by the divider R3–R4 (isolated from Q1 by C3): VB(Q2) = VCC·R4/(R3 + R4) = {fig75()[1]:.2f} V, and the base of Q3 sits about 0.7 V below it. A larger R4 raises VB(Q2) (22 kΩ → 33 kΩ: {fig75()[1]:.2f} V → {fig75(r4=33000)[1]:.2f} V) and the dc voltage at the base of Q3 with it.',
+      f'Q2 và Q3 tạo thành mạch lặp Darlington có cực B được phân cực bởi cầu chia R3–R4 (cách ly với Q1 nhờ C3): VB(Q2) = VCC·R4/(R3 + R4) = {fv(fig75()[1], 2)} V, cực B của Q3 thấp hơn khoảng 0,7 V. R4 lớn hơn làm VB(Q2) tăng (22 kΩ → 33 kΩ: {fv(fig75()[1], 2)} V → {fv(fig75(r4=33000)[1], 2)} V) và kéo theo điện áp một chiều tại cực B của Q3.', 'cls')
+M7.ca(5, 375, 'If VCC in Figure 7–18 is increased, the peak output voltage will', 'Nếu tăng VCC trong Hình 7–18 thì điện áp ra đỉnh sẽ', FIG + 'fig7_18.png', 0,
+      'The ideal peak output swings to VCEQ = VCC/2: 10 V for VCC = 20 V (book Example 7–5), 12 V if VCC is raised to 24 V.',
+      'Điện áp ra đỉnh lý tưởng bằng VCEQ = VCC/2: 10 V với VCC = 20 V (Ví dụ 7–5 của sách), 12 V nếu tăng VCC lên 24 V.', 'pp')
+M7.ca(6, 375, 'If the value of RL in Figure 7–18 is increased, the ac output power will', 'Nếu tăng giá trị RL trong Hình 7–18 thì công suất xoay chiều ở ngõ ra sẽ', FIG + 'fig7_18.png', 1,
+      'Pout(max) = 0.25·Ic(sat)·VCC with Ic(sat) = (VCC/2)/RL, so Pout(max) = VCC²/(8·RL): 6.25 W for RL = 8 Ω (book Example 7–5) but only 3.13 W for RL = 16 Ω.',
+      'Pout(max) = 0,25·Ic(sat)·VCC với Ic(sat) = (VCC/2)/RL, nên Pout(max) = VCC²/(8·RL): 6,25 W khi RL = 8 Ω (Ví dụ 7–5 của sách) nhưng chỉ 3,13 W khi RL = 16 Ω.', 'pp')
+M7.ca(7, 375, 'If the value of RL in Figure 7–19 is decreased, the voltage gain will', 'Nếu giảm giá trị RL trong Hình 7–19 thì độ lợi điện áp sẽ', FIG + 'fig7_19.png', 1,
+      'Each half of the Darlington push-pull stage is an emitter follower: Av = RL/(RL + r′e) < 1. A smaller RL moves the gain further below 1; with the book’s r′e = 1 Ω, RL = 8 Ω gives 0.889 and RL = 4 Ω gives 0.800.',
+      'Mỗi nửa của tầng đẩy kéo Darlington là mạch lặp emitter: Av = RL/(RL + r′e) < 1. RL nhỏ hơn làm độ lợi thấp hơn nữa so với 1; với r′e = 1 Ω như sách, RL = 8 Ω cho 0,889 còn RL = 4 Ω cho 0,800.', 'pp')
+M7.ca(8, 375, 'If the value of VCC in Figure 7–19 is increased, the ac output power will', 'Nếu tăng giá trị VCC trong Hình 7–19 thì công suất xoay chiều ở ngõ ra sẽ', FIG + 'fig7_19.png', 0,
+      'The output can swing about VCC/2 around the midpoint, so the maximum power rises with the square of VCC (Pout(max) ≈ VCC²/(8·RL), the ideal relation of Equation 7–6).',
+      'Ngõ ra dao động được khoảng VCC/2 quanh điểm giữa, nên công suất cực đại tăng theo bình phương VCC (Pout(max) ≈ VCC²/(8·RL), quan hệ lý tưởng của Phương trình 7–6).', 'pp')
+M7.ca(10, 375, 'If the value of C2 in Figure 7–24 is decreased, the resonant frequency will', 'Nếu giảm giá trị C2 trong Hình 7–24 thì tần số cộng hưởng sẽ', FIG + 'fig7_24.png', 0,
+      'fr = 1/(2π√(LC)): a smaller C gives a higher fr (halving C multiplies fr by √2 ≈ 1.41).',
+      'fr = 1/(2π√(LC)): C nhỏ hơn cho fr cao hơn (giảm C một nửa thì fr nhân với √2 ≈ 1,41).', 'cls')
 floyd = M6.items + M7.items
 # ---------------- EASA grounded items
 items = []; EV = {}

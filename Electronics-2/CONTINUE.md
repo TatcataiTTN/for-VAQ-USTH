@@ -6,7 +6,7 @@
 | m01 IC & logic | EASA M04 SM01 (Q1-23…1-46) | 79 | 24 | 57 câu đối chiếu trang EASA, 46 câu tính lại bằng script |
 | m02 Op-amp | Floyd ch.12 | 165 (51 gốc) | 13 | `build/verify/verify_m02.py` (100 câu số) + đáp án lẻ của sách |
 | m03 Mạch op-amp cơ bản | Floyd ch.13 | 111 (33 gốc) | 14 | `verify_m03.py` (59 câu số) |
-| m04 Ghép tầng & hồi tiếp | Floyd §6-6, §7-2 + EASA SM01 tr.49-53 | 89 | 9 | `verify_m04.py` (33 chứng cứ EASA + 43 câu số) |
+| m04 Ghép tầng & hồi tiếp | Floyd §6-6, §7-2, §7-3 + EASA SM01 tr.49-53 | 100 (24 gốc, gồm 11 Circuit-Action có hình) | 9 | `verify_m04.py` (33 chứng cứ EASA + 43 câu số + 11 Circuit-Action tính lại bằng mô hình mạch + 3 đáp án lẻ của sách) |
 | m05 Op-amp chuyên dụng | Floyd ch.14 | 104 (32 gốc) | 12 | `verify_m05.py` (56 câu số) |
 | m06 Bộ lọc tích cực | Floyd ch.15 | 126 (43 gốc) | 10 | `verify_m06.py` (58 câu số) |
 | m07 Dao động & 555 | Floyd ch.16 | 117 (36 gốc) | 11 | `verify_m07.py` (60 câu số) |
@@ -24,8 +24,8 @@ Nguồn dữ liệu: bookmark PDF (Floyd, Jaeger), mục lục in của EASA (m�
 
 ## Chưa làm / hạn chế đã biết
 - **Jaeger 5e** (Ch.6–7, 9 cho m01; Ch.10–12 cho m02–m07): đã ánh xạ tới từng mục X.Y có trang (35 mục, vai trò `ref`) nhưng chưa đọc nội dung để trích câu hỏi. Jaeger 6e chỉ có liên kết Drive, không nằm trong thư mục tài liệu nên không ánh xạ.
-- **Floyd không in đáp án** Self-Test, True/False, Circuit-Action: toàn bộ do ta tự giải; câu mơ hồ đã loại và ghi trong `mNN_notes.json`.
-- Circuit-Action của Floyd gắn với Hình 6–34, 7–5 (m04) chưa đưa vào (cần cắt hình).
+- **Floyd không in đáp án** Self-Test, True/False, Circuit-Action: toàn bộ do ta tự giải; câu mơ hồ đã loại và ghi trong `mNN_notes.json`. Bài tập (Problems) số lẻ thì sách có in đáp án ở cuối sách: `python3 -I build/verify/verify_floyd_odd.py` đối chiếu 46 bài lẻ đã giải ở m02–m08 với bảng đáp án in (bỏ chữ “(book …)” trong lời giải để khỏi vòng tròn). Lần chạy này bắt được một lời giải sai thật (m03 Bài 7: zener nối ngõ ra về ngõ vào đảo của mạch Schmitt, đáp án đúng 8,57 V và −0,968 V, trước đó ghi nhầm +6,2 V/−0,7 V) và đã sửa. Bài chẵn không có đáp án in nên chỉ tính bằng công thức.
+- Circuit-Action Floyd ở m04 đã có (Hình 6–34, 7–5, 7–18, 7–19, 7–24); riêng Ch.7 Câu 9 bị loại vì mơ hồ (xem `m04_notes.json`).
 - EASA OCR không đạt 100 %: trang câu hỏi EASA đã đối chiếu bằng script; các trang khác xem `pdf_ocr_fixed/REPORT.md`.
 
 ## Quy trình

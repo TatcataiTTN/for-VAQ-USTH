@@ -417,12 +417,22 @@
   }
  },
  "m04": {
-  "n": 89,
-  "n_goc": 13,
+  "n": 100,
+  "n_goc": 24,
   "n_bo_sung": 76,
   "essays": 9,
   "essays_goc": 6,
   "audit": {
+   "ca/3opt": {
+    "n": 11,
+    "pos": [
+     5,
+     4,
+     2
+    ],
+    "chi2": 1.27,
+    "correct_is_longest": 0.182
+   },
    "mcq/4opt": {
     "n": 73,
     "pos": [

@@ -961,8 +961,14 @@
       "pdf": 344,
       "printed": 326,
       "pdf_end": 344,
-      "mods": {},
-      "q": {}
+      "mods": {
+       "m04": "core"
+      },
+      "q": {
+       "m04": {
+        "quoted": 2
+       }
+      }
      },
      {
       "name": "SELF-TEST",
@@ -1109,8 +1115,14 @@
       "pdf": 393,
       "printed": 375,
       "pdf_end": 394,
-      "mods": {},
-      "q": {}
+      "mods": {
+       "m04": "core"
+      },
+      "q": {
+       "m04": {
+        "quoted": 9
+       }
+      }
      },
      {
       "name": "SELF-TEST",
@@ -9459,8 +9471,8 @@
    ]
   },
   "m04": {
-   "items": 98,
-   "original": 19,
+   "items": 109,
+   "original": 30,
    "generated": 46,
    "grounded": 33,
    "lesson_cites": [

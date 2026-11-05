@@ -184,6 +184,84 @@
   "check": "script"
  },
  {
+  "kind": "ca",
+  "q": {
+   "en": "If C2 and C4 in Figure 6–34 are increased in value, Vout will",
+   "vi": "Nếu tăng giá trị C2 và C4 trong Hình 6–34 thì Vout sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "C2 and C4 are emitter bypass capacitors. At the signal frequency they are already ac shorts (XC ≪ r′e), so a larger value only moves the low-frequency corner lower: the mid-band gain, and therefore Vout, does not change.",
+   "vi": "C2 và C4 là tụ thoát (bypass) cực E. Ở tần số tín hiệu chúng đã ngắn mạch xoay chiều (XC ≪ r′e), nên tăng giá trị chỉ làm tần số góc thấp thấp hơn: độ lợi dải giữa, và do đó Vout, không đổi."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Circuit-Action Quiz Q9 (p.326)",
+   "vi": "Floyd 9e, Ch.6, Circuit-Action câu 9 (tr.326)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig6_34.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of R4 in Figure 6–34 is reduced, the overall voltage gain will",
+   "vi": "Nếu giảm giá trị R4 trong Hình 6–34 thì độ lợi điện áp tổng sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "R4 sets the dc emitter current IE = (VB − 0.7 V)/R4 but is bypassed by C2, so it does not appear in the ac gain. A smaller R4 gives a larger IE and a smaller r′e = 25 mV/IE, and both Av1 = Rc1/r′e and Av2 = R7/r′e rise. With the book method: R4 = 1.0 kΩ gives A′v ≈ 13,589 (the book finds 13,495); R4 = 0.5 kΩ gives ≈ 37,306.",
+   "vi": "R4 đặt dòng cực E một chiều IE = (VB − 0,7 V)/R4 nhưng đã được C2 thoát, nên không có mặt trong độ lợi xoay chiều. R4 nhỏ hơn cho IE lớn hơn và r′e = 25 mV/IE nhỏ hơn, nên cả Av1 = Rc1/r′e và Av2 = R7/r′e đều tăng. Theo phương pháp của sách: R4 = 1,0 kΩ cho A′v ≈ 13589 (sách tính 13495); R4 = 0,5 kΩ cho ≈ 37306."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Circuit-Action Quiz Q10 (p.326)",
+   "vi": "Floyd 9e, Ch.6, Circuit-Action câu 10 (tr.326)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig6_34.png",
+  "check": "figure + formula"
+ },
+ {
   "kind": "mcq",
   "q": {
    "en": "The transistors in a class B amplifier are biased",
@@ -644,5 +722,356 @@
   },
   "origin": "goc",
   "check": "script"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of R3 in Figure 7–5 is decreased, the voltage gain of the first stage will",
+   "vi": "Nếu giảm giá trị R3 trong Hình 7–5 thì độ lợi điện áp của tầng thứ nhất sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Av1 = −Rc1/(RE1 + r′e) with Rc1 = RC ∥ R3 ∥ R4 (the Darlington input resistance is far larger and is ignored, as in Example 7–1). A smaller R3 lowers Rc1 and so |Av1|: the book value is 27.9 with R3 = 5.6 kΩ; with R3 = 2.7 kΩ it falls to 19.4.",
+   "vi": "Av1 = −Rc1/(RE1 + r′e) với Rc1 = RC ∥ R3 ∥ R4 (điện trở vào của cặp Darlington rất lớn nên bỏ qua, như Ví dụ 7–1). R3 nhỏ hơn làm Rc1 giảm nên |Av1| giảm: giá trị trong sách là 27,9 khi R3 = 5,6 kΩ; với R3 = 2,7 kΩ còn 19,4."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q1 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 1 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_5.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of RE2 in Figure 7–5 is increased, the voltage gain of the first stage will",
+   "vi": "Nếu tăng giá trị RE2 trong Hình 7–5 thì độ lợi điện áp của tầng thứ nhất sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "RE2 is bypassed by C2, so it is not in the ac gain, but it still sets the dc current IE1 = (VB − 0.7 V)/(RE1 + RE2). A larger RE2 gives a smaller IE1, a larger r′e and a smaller Av1 = −Rc1/(RE1 + r′e): 27.9 with RE2 = 560 Ω (book), 24.9 with RE2 = 1 kΩ.",
+   "vi": "RE2 được C2 thoát nên không có trong độ lợi xoay chiều, nhưng vẫn đặt dòng một chiều IE1 = (VB − 0,7 V)/(RE1 + RE2). RE2 lớn hơn cho IE1 nhỏ hơn, r′e lớn hơn và Av1 = −Rc1/(RE1 + r′e) nhỏ hơn: 27,9 khi RE2 = 560 Ω (sách), 24,9 khi RE2 = 1 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q2 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 2 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_5.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If C2 in Figure 7–5 opens, the dc voltage at the emitter of Q1 will",
+   "vi": "Nếu C2 trong Hình 7–5 bị hở thì điện áp một chiều tại cực E của Q1 sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "C2 only bypasses RE2 for ac, and a capacitor carries no dc current, so VE1 = VB − 0.7 V ≈ 1.12 V is unchanged. (What changes is the ac gain, which falls because RE2 is no longer bypassed.)",
+   "vi": "C2 chỉ thoát RE2 cho tín hiệu xoay chiều và tụ điện không dẫn dòng một chiều, nên VE1 = VB − 0,7 V ≈ 1,12 V không đổi. (Thứ thay đổi là độ lợi xoay chiều, giảm vì RE2 không còn được thoát.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q3 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 3 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_5.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of R4 in Figure 7–5 is increased, the dc voltage at the base of Q3 will",
+   "vi": "Nếu tăng giá trị R4 trong Hình 7–5 thì điện áp một chiều tại cực B của Q3 sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Q2 and Q3 form a Darlington follower whose base is biased by the divider R3–R4 (isolated from Q1 by C3): VB(Q2) = VCC·R4/(R3 + R4) = 9.57 V, and the base of Q3 sits about 0.7 V below it. A larger R4 raises VB(Q2) (22 kΩ → 33 kΩ: 9.57 V → 10.26 V) and the dc voltage at the base of Q3 with it.",
+   "vi": "Q2 và Q3 tạo thành mạch lặp Darlington có cực B được phân cực bởi cầu chia R3–R4 (cách ly với Q1 nhờ C3): VB(Q2) = VCC·R4/(R3 + R4) = 9,57 V, cực B của Q3 thấp hơn khoảng 0,7 V. R4 lớn hơn làm VB(Q2) tăng (22 kΩ → 33 kΩ: 9,57 V → 10,26 V) và kéo theo điện áp một chiều tại cực B của Q3."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q4 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 4 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_5.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If VCC in Figure 7–18 is increased, the peak output voltage will",
+   "vi": "Nếu tăng VCC trong Hình 7–18 thì điện áp ra đỉnh sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The ideal peak output swings to VCEQ = VCC/2: 10 V for VCC = 20 V (book Example 7–5), 12 V if VCC is raised to 24 V.",
+   "vi": "Điện áp ra đỉnh lý tưởng bằng VCEQ = VCC/2: 10 V với VCC = 20 V (Ví dụ 7–5 của sách), 12 V nếu tăng VCC lên 24 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q5 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 5 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_18.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of RL in Figure 7–18 is increased, the ac output power will",
+   "vi": "Nếu tăng giá trị RL trong Hình 7–18 thì công suất xoay chiều ở ngõ ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Pout(max) = 0.25·Ic(sat)·VCC with Ic(sat) = (VCC/2)/RL, so Pout(max) = VCC²/(8·RL): 6.25 W for RL = 8 Ω (book Example 7–5) but only 3.13 W for RL = 16 Ω.",
+   "vi": "Pout(max) = 0,25·Ic(sat)·VCC với Ic(sat) = (VCC/2)/RL, nên Pout(max) = VCC²/(8·RL): 6,25 W khi RL = 8 Ω (Ví dụ 7–5 của sách) nhưng chỉ 3,13 W khi RL = 16 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q6 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 6 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_18.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of RL in Figure 7–19 is decreased, the voltage gain will",
+   "vi": "Nếu giảm giá trị RL trong Hình 7–19 thì độ lợi điện áp sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Each half of the Darlington push-pull stage is an emitter follower: Av = RL/(RL + r′e) < 1. A smaller RL moves the gain further below 1; with the book’s r′e = 1 Ω, RL = 8 Ω gives 0.889 and RL = 4 Ω gives 0.800.",
+   "vi": "Mỗi nửa của tầng đẩy kéo Darlington là mạch lặp emitter: Av = RL/(RL + r′e) < 1. RL nhỏ hơn làm độ lợi thấp hơn nữa so với 1; với r′e = 1 Ω như sách, RL = 8 Ω cho 0,889 còn RL = 4 Ω cho 0,800."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q7 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 7 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_19.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of VCC in Figure 7–19 is increased, the ac output power will",
+   "vi": "Nếu tăng giá trị VCC trong Hình 7–19 thì công suất xoay chiều ở ngõ ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The output can swing about VCC/2 around the midpoint, so the maximum power rises with the square of VCC (Pout(max) ≈ VCC²/(8·RL), the ideal relation of Equation 7–6).",
+   "vi": "Ngõ ra dao động được khoảng VCC/2 quanh điểm giữa, nên công suất cực đại tăng theo bình phương VCC (Pout(max) ≈ VCC²/(8·RL), quan hệ lý tưởng của Phương trình 7–6)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q8 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 8 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_19.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of C2 in Figure 7–24 is decreased, the resonant frequency will",
+   "vi": "Nếu giảm giá trị C2 trong Hình 7–24 thì tần số cộng hưởng sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fr = 1/(2π√(LC)): a smaller C gives a higher fr (halving C multiplies fr by √2 ≈ 1.41).",
+   "vi": "fr = 1/(2π√(LC)): C nhỏ hơn cho fr cao hơn (giảm C một nửa thì fr nhân với √2 ≈ 1,41)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Circuit-Action Quiz Q10 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Circuit-Action câu 10 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m04/fig7_24.png",
+  "check": "figure + formula"
  }
 ]
