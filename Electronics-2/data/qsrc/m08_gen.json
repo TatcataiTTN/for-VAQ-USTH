@@ -1,0 +1,3128 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator (nominal output 8 V) changes 2 mV when VIN goes from 12 V to 18 V. What is the line regulation in %/V?",
+   "vi": "Bộ ổn áp (danh định 8 V) đổi 2 mV khi VIN đi từ 12 V đến 18 V. Line regulation là bao nhiêu %/V?"
+  },
+  "opts": [
+   {
+    "en": "0.00417 %/V",
+    "vi": "0.00417 %/V"
+   },
+   {
+    "en": "0.00556 %/V",
+    "vi": "0.00556 %/V"
+   },
+   {
+    "en": "0.0333 %/V",
+    "vi": "0.0333 %/V"
+   },
+   {
+    "en": "1.2 %/V",
+    "vi": "1.2 %/V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ΔVOUT/ΔVIN × 100 % = (2 mV/6 V) × 100 % = 0.0333 % over the range, i.e. 0.00556 %/V.",
+   "vi": "ΔVOUT/ΔVIN × 100 % = (2 mV/6 V) × 100 % = 0.0333 % trên cả dải, tức 0.00556 %/V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator (nominal output 5 V) changes 1 mV when VIN goes from 8 V to 15 V. What is the line regulation in %/V?",
+   "vi": "Bộ ổn áp (danh định 5 V) đổi 1 mV khi VIN đi từ 8 V đến 15 V. Line regulation là bao nhiêu %/V?"
+  },
+  "opts": [
+   {
+    "en": "0.00204 %/V",
+    "vi": "0.00204 %/V"
+   },
+   {
+    "en": "0.0143 %/V",
+    "vi": "0.0143 %/V"
+   },
+   {
+    "en": "0.7 %/V",
+    "vi": "0.7 %/V"
+   },
+   {
+    "en": "0.00286 %/V",
+    "vi": "0.00286 %/V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔVOUT/ΔVIN × 100 % = (1 mV/7 V) × 100 % = 0.0143 % over the range, i.e. 0.00204 %/V.",
+   "vi": "ΔVOUT/ΔVIN × 100 % = (1 mV/7 V) × 100 % = 0.0143 % trên cả dải, tức 0.00204 %/V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator (nominal output 12 V) changes 6 mV when VIN goes from 15 V to 25 V. What is the line regulation in %/V?",
+   "vi": "Bộ ổn áp (danh định 12 V) đổi 6 mV khi VIN đi từ 15 V đến 25 V. Line regulation là bao nhiêu %/V?"
+  },
+  "opts": [
+   {
+    "en": "0.005 %/V",
+    "vi": "0.005 %/V"
+   },
+   {
+    "en": "6 %/V",
+    "vi": "6 %/V"
+   },
+   {
+    "en": "0.006 %/V",
+    "vi": "0.006 %/V"
+   },
+   {
+    "en": "0.6 %/V",
+    "vi": "0.6 %/V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "ΔVOUT/ΔVIN × 100 % = (6 mV/10 V) × 100 % = 0.06 % over the range, i.e. 0.006 %/V.",
+   "vi": "ΔVOUT/ΔVIN × 100 % = (6 mV/10 V) × 100 % = 0.06 % trên cả dải, tức 0.006 %/V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator (nominal output 15 V) changes 3 mV when VIN goes from 20 V to 30 V. What is the line regulation in %/V?",
+   "vi": "Bộ ổn áp (danh định 15 V) đổi 3 mV khi VIN đi từ 20 V đến 30 V. Line regulation là bao nhiêu %/V?"
+  },
+  "opts": [
+   {
+    "en": "0.003 %/V",
+    "vi": "0.003 %/V"
+   },
+   {
+    "en": "0.03 %/V",
+    "vi": "0.03 %/V"
+   },
+   {
+    "en": "0.3 %/V",
+    "vi": "0.3 %/V"
+   },
+   {
+    "en": "0.002 %/V",
+    "vi": "0.002 %/V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔVOUT/ΔVIN × 100 % = (3 mV/10 V) × 100 % = 0.03 % over the range, i.e. 0.003 %/V.",
+   "vi": "ΔVOUT/ΔVIN × 100 % = (3 mV/10 V) × 100 % = 0.03 % trên cả dải, tức 0.003 %/V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator (nominal output 9 V) changes 4.5 mV when VIN goes from 12 V to 20 V. What is the line regulation in %/V?",
+   "vi": "Bộ ổn áp (danh định 9 V) đổi 4.5 mV khi VIN đi từ 12 V đến 20 V. Line regulation là bao nhiêu %/V?"
+  },
+  "opts": [
+   {
+    "en": "0.00703 %/V",
+    "vi": "0.00703 %/V"
+   },
+   {
+    "en": "3.6 %/V",
+    "vi": "3.6 %/V"
+   },
+   {
+    "en": "0.562 %/V",
+    "vi": "0.562 %/V"
+   },
+   {
+    "en": "0.00625 %/V",
+    "vi": "0.00625 %/V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔVOUT/ΔVIN × 100 % = (4.5 mV/8 V) × 100 % = 0.0563 % over the range, i.e. 0.00703 %/V.",
+   "vi": "ΔVOUT/ΔVIN × 100 % = (4.5 mV/8 V) × 100 % = 0.0563 % trên cả dải, tức 0.00703 %/V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator has VNL = 10 V and VFL = 9.9 V. What is the percent load regulation?",
+   "vi": "Bộ ổn áp có VNL = 10 V và VFL = 9.9 V. Load regulation theo phần trăm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "99 %",
+    "vi": "99 %"
+   },
+   {
+    "en": "1.01 %",
+    "vi": "1.01 %"
+   },
+   {
+    "en": "1 %",
+    "vi": "1 %"
+   },
+   {
+    "en": "0.1 %",
+    "vi": "0.1 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "(VNL − VFL)/VFL × 100 % = (10 − 9.9)/9.9 × 100 % = 1.01 %.",
+   "vi": "(VNL − VFL)/VFL × 100 % = (10 − 9.9)/9.9 × 100 % = 1.01 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator has VNL = 5.02 V and VFL = 4.95 V. What is the percent load regulation?",
+   "vi": "Bộ ổn áp có VNL = 5.02 V và VFL = 4.95 V. Load regulation theo phần trăm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.07 %",
+    "vi": "0.07 %"
+   },
+   {
+    "en": "98.6 %",
+    "vi": "98.6 %"
+   },
+   {
+    "en": "2.83 %",
+    "vi": "2.83 %"
+   },
+   {
+    "en": "1.41 %",
+    "vi": "1.41 %"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "(VNL − VFL)/VFL × 100 % = (5.02 − 4.95)/4.95 × 100 % = 1.41 %.",
+   "vi": "(VNL − VFL)/VFL × 100 % = (5.02 − 4.95)/4.95 × 100 % = 1.41 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator has VNL = 12.1 V and VFL = 11.8 V. What is the percent load regulation?",
+   "vi": "Bộ ổn áp có VNL = 12.1 V và VFL = 11.8 V. Load regulation theo phần trăm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2.54 %",
+    "vi": "2.54 %"
+   },
+   {
+    "en": "0.3 %",
+    "vi": "0.3 %"
+   },
+   {
+    "en": "97.5 %",
+    "vi": "97.5 %"
+   },
+   {
+    "en": "2.48 %",
+    "vi": "2.48 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "(VNL − VFL)/VFL × 100 % = (12.1 − 11.8)/11.8 × 100 % = 2.54 %.",
+   "vi": "(VNL − VFL)/VFL × 100 % = (12.1 − 11.8)/11.8 × 100 % = 2.54 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator has VNL = 15 V and VFL = 14.7 V. What is the percent load regulation?",
+   "vi": "Bộ ổn áp có VNL = 15 V và VFL = 14.7 V. Load regulation theo phần trăm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.3 %",
+    "vi": "0.3 %"
+   },
+   {
+    "en": "2.04 %",
+    "vi": "2.04 %"
+   },
+   {
+    "en": "4.08 %",
+    "vi": "4.08 %"
+   },
+   {
+    "en": "98 %",
+    "vi": "98 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "(VNL − VFL)/VFL × 100 % = (15 − 14.7)/14.7 × 100 % = 2.04 %.",
+   "vi": "(VNL − VFL)/VFL × 100 % = (15 − 14.7)/14.7 × 100 % = 2.04 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A regulator has VNL = 9.1 V and VFL = 9.0 V. What is the percent load regulation?",
+   "vi": "Bộ ổn áp có VNL = 9.1 V và VFL = 9.0 V. Load regulation theo phần trăm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.1 %",
+    "vi": "1.1 %"
+   },
+   {
+    "en": "98.9 %",
+    "vi": "98.9 %"
+   },
+   {
+    "en": "2.22 %",
+    "vi": "2.22 %"
+   },
+   {
+    "en": "1.11 %",
+    "vi": "1.11 %"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "(VNL − VFL)/VFL × 100 % = (9.1 − 9.0)/9.0 × 100 % = 1.11 %.",
+   "vi": "(VNL − VFL)/VFL × 100 % = (9.1 − 9.0)/9.0 × 100 % = 1.11 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator has R2 = 5.6 kΩ, R3 = 2.2 kΩ and a reference of 2.4 V. What is VOUT? (VOUT = (1 + R2/R3)·VREF)",
+   "vi": "Ổn áp nối tiếp có R2 = 5.6 kΩ, R3 = 2.2 kΩ và tham chiếu 2.4 V. VOUT là bao nhiêu? (VOUT = (1 + R2/R3)·VREF)"
+  },
+  "opts": [
+   {
+    "en": "2.4 V",
+    "vi": "2.4 V"
+   },
+   {
+    "en": "6.11 V",
+    "vi": "6.11 V"
+   },
+   {
+    "en": "8.51 V",
+    "vi": "8.51 V"
+   },
+   {
+    "en": "3.34 V",
+    "vi": "3.34 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VOUT = (1 + 5.6/2.2) × 2.4 = 8.51 V.",
+   "vi": "VOUT = (1 + 5.6/2.2) × 2.4 = 8.51 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator has R2 = 22 kΩ, R3 = 10 kΩ and a reference of 3.3 V. What is VOUT? (VOUT = (1 + R2/R3)·VREF)",
+   "vi": "Ổn áp nối tiếp có R2 = 22 kΩ, R3 = 10 kΩ và tham chiếu 3.3 V. VOUT là bao nhiêu? (VOUT = (1 + R2/R3)·VREF)"
+  },
+  "opts": [
+   {
+    "en": "4.8 V",
+    "vi": "4.8 V"
+   },
+   {
+    "en": "10.6 V",
+    "vi": "10.6 V"
+   },
+   {
+    "en": "7.26 V",
+    "vi": "7.26 V"
+   },
+   {
+    "en": "11.3 V",
+    "vi": "11.3 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = (1 + 22/10) × 3.3 = 10.6 V.",
+   "vi": "VOUT = (1 + 22/10) × 3.3 = 10.6 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator has R2 = 4.7 kΩ, R3 = 1.0 kΩ and a reference of 1.25 V. What is VOUT? (VOUT = (1 + R2/R3)·VREF)",
+   "vi": "Ổn áp nối tiếp có R2 = 4.7 kΩ, R3 = 1.0 kΩ và tham chiếu 1.25 V. VOUT là bao nhiêu? (VOUT = (1 + R2/R3)·VREF)"
+  },
+  "opts": [
+   {
+    "en": "7.12 V",
+    "vi": "7.12 V"
+   },
+   {
+    "en": "7.83 V",
+    "vi": "7.83 V"
+   },
+   {
+    "en": "1.25 V",
+    "vi": "1.25 V"
+   },
+   {
+    "en": "5.88 V",
+    "vi": "5.88 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = (1 + 4.7/1.0) × 1.25 = 7.12 V.",
+   "vi": "VOUT = (1 + 4.7/1.0) × 1.25 = 7.12 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator has R2 = 33 kΩ, R3 = 12 kΩ and a reference of 2.5 V. What is VOUT? (VOUT = (1 + R2/R3)·VREF)",
+   "vi": "Ổn áp nối tiếp có R2 = 33 kΩ, R3 = 12 kΩ và tham chiếu 2.5 V. VOUT là bao nhiêu? (VOUT = (1 + R2/R3)·VREF)"
+  },
+  "opts": [
+   {
+    "en": "2.5 V",
+    "vi": "2.5 V"
+   },
+   {
+    "en": "3.41 V",
+    "vi": "3.41 V"
+   },
+   {
+    "en": "9.38 V",
+    "vi": "9.38 V"
+   },
+   {
+    "en": "10.1 V",
+    "vi": "10.1 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VOUT = (1 + 33/12) × 2.5 = 9.38 V.",
+   "vi": "VOUT = (1 + 33/12) × 2.5 = 9.38 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator with VREF = 5.1 V and R3 = 10 kΩ must give VOUT = 12 V. What R2 is needed?",
+   "vi": "Ổn áp nối tiếp có VREF = 5.1 V và R3 = 10 kΩ phải cho VOUT = 12 V. Cần R2 bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4.25 kΩ",
+    "vi": "4.25 kΩ"
+   },
+   {
+    "en": "13.5 kΩ",
+    "vi": "13.5 kΩ"
+   },
+   {
+    "en": "69 kΩ",
+    "vi": "69 kΩ"
+   },
+   {
+    "en": "27.1 kΩ",
+    "vi": "27.1 kΩ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "R2 = (VOUT/VREF − 1)·R3 = (12/5.1 − 1) × 10 = 13.5 kΩ.",
+   "vi": "R2 = (VOUT/VREF − 1)·R3 = (12/5.1 − 1) × 10 = 13.5 kΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator with VREF = 2.4 V and R3 = 3.3 kΩ must give VOUT = 9 V. What R2 is needed?",
+   "vi": "Ổn áp nối tiếp có VREF = 2.4 V và R3 = 3.3 kΩ phải cho VOUT = 9 V. Cần R2 bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "9.07 kΩ",
+    "vi": "9.07 kΩ"
+   },
+   {
+    "en": "18.1 kΩ",
+    "vi": "18.1 kΩ"
+   },
+   {
+    "en": "0.88 kΩ",
+    "vi": "0.88 kΩ"
+   },
+   {
+    "en": "12.4 kΩ",
+    "vi": "12.4 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "R2 = (VOUT/VREF − 1)·R3 = (9/2.4 − 1) × 3.3 = 9.07 kΩ.",
+   "vi": "R2 = (VOUT/VREF − 1)·R3 = (9/2.4 − 1) × 3.3 = 9.07 kΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator with VREF = 1.25 V and R3 = 2.2 kΩ must give VOUT = 5 V. What R2 is needed?",
+   "vi": "Ổn áp nối tiếp có VREF = 1.25 V và R3 = 2.2 kΩ phải cho VOUT = 5 V. Cần R2 bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "8.25 kΩ",
+    "vi": "8.25 kΩ"
+   },
+   {
+    "en": "6.6 kΩ",
+    "vi": "6.6 kΩ"
+   },
+   {
+    "en": "8.8 kΩ",
+    "vi": "8.8 kΩ"
+   },
+   {
+    "en": "0.55 kΩ",
+    "vi": "0.55 kΩ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "R2 = (VOUT/VREF − 1)·R3 = (5/1.25 − 1) × 2.2 = 6.6 kΩ.",
+   "vi": "R2 = (VOUT/VREF − 1)·R3 = (5/1.25 − 1) × 2.2 = 6.6 kΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator with VREF = 5.1 V and R3 = 4.7 kΩ must give VOUT = 15 V. What R2 is needed?",
+   "vi": "Ổn áp nối tiếp có VREF = 5.1 V và R3 = 4.7 kΩ phải cho VOUT = 15 V. Cần R2 bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "18.2 kΩ",
+    "vi": "18.2 kΩ"
+   },
+   {
+    "en": "9.12 kΩ",
+    "vi": "9.12 kΩ"
+   },
+   {
+    "en": "1.6 kΩ",
+    "vi": "1.6 kΩ"
+   },
+   {
+    "en": "46.5 kΩ",
+    "vi": "46.5 kΩ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "R2 = (VOUT/VREF − 1)·R3 = (15/5.1 − 1) × 4.7 = 9.12 kΩ.",
+   "vi": "R2 = (VOUT/VREF − 1)·R3 = (15/5.1 − 1) × 4.7 = 9.12 kΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A current-limiting resistor must hold the load current to 250 mA (the limiting transistor turns on at 0.7 V). What is R?",
+   "vi": "Điện trở giới hạn phải giữ dòng tải ở 250 mA (transistor giới hạn dẫn ở 0,7 V). R bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.28 Ω",
+    "vi": "0.28 Ω"
+   },
+   {
+    "en": "5.6 Ω",
+    "vi": "5.6 Ω"
+   },
+   {
+    "en": "2.8 Ω",
+    "vi": "2.8 Ω"
+   },
+   {
+    "en": "357 Ω",
+    "vi": "357 Ω"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "R = 0.7 V/250 mA = 2.8 Ω.",
+   "vi": "R = 0,7 V/250 mA = 2.8 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A current-limiting resistor must hold the load current to 500 mA (the limiting transistor turns on at 0.7 V). What is R?",
+   "vi": "Điện trở giới hạn phải giữ dòng tải ở 500 mA (transistor giới hạn dẫn ở 0,7 V). R bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.4 Ω",
+    "vi": "1.4 Ω"
+   },
+   {
+    "en": "14 Ω",
+    "vi": "14 Ω"
+   },
+   {
+    "en": "714 Ω",
+    "vi": "714 Ω"
+   },
+   {
+    "en": "0.14 Ω",
+    "vi": "0.14 Ω"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "R = 0.7 V/500 mA = 1.4 Ω.",
+   "vi": "R = 0,7 V/500 mA = 1.4 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A current-limiting resistor must hold the load current to 100 mA (the limiting transistor turns on at 0.7 V). What is R?",
+   "vi": "Điện trở giới hạn phải giữ dòng tải ở 100 mA (transistor giới hạn dẫn ở 0,7 V). R bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "70 Ω",
+    "vi": "70 Ω"
+   },
+   {
+    "en": "143 Ω",
+    "vi": "143 Ω"
+   },
+   {
+    "en": "7 Ω",
+    "vi": "7 Ω"
+   },
+   {
+    "en": "0.7 Ω",
+    "vi": "0.7 Ω"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "R = 0.7 V/100 mA = 7 Ω.",
+   "vi": "R = 0,7 V/100 mA = 7 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A current-limiting resistor must hold the load current to 1000 mA (the limiting transistor turns on at 0.7 V). What is R?",
+   "vi": "Điện trở giới hạn phải giữ dòng tải ở 1000 mA (transistor giới hạn dẫn ở 0,7 V). R bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.7 Ω",
+    "vi": "0.7 Ω"
+   },
+   {
+    "en": "0.07 Ω",
+    "vi": "0.07 Ω"
+   },
+   {
+    "en": "1.4 Ω",
+    "vi": "1.4 Ω"
+   },
+   {
+    "en": "1430 Ω",
+    "vi": "1430 Ω"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "R = 0.7 V/1000 mA = 0.7 Ω.",
+   "vi": "R = 0,7 V/1000 mA = 0.7 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A current-limiting resistor must hold the load current to 2000 mA (the limiting transistor turns on at 0.7 V). What is R?",
+   "vi": "Điện trở giới hạn phải giữ dòng tải ở 2000 mA (transistor giới hạn dẫn ở 0,7 V). R bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.35 Ω",
+    "vi": "0.35 Ω"
+   },
+   {
+    "en": "2860 Ω",
+    "vi": "2860 Ω"
+   },
+   {
+    "en": "3.5 Ω",
+    "vi": "3.5 Ω"
+   },
+   {
+    "en": "0.035 Ω",
+    "vi": "0.035 Ω"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "R = 0.7 V/2000 mA = 0.35 Ω.",
+   "vi": "R = 0,7 V/2000 mA = 0.35 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a shunt regulator with series resistor R1 = 100 Ω, VIN changes by 1 V while IL stays constant. What is the change in the shunt current?",
+   "vi": "Ở ổn áp song song có điện trở nối tiếp R1 = 100 Ω, VIN đổi 1 V trong khi IL không đổi. Dòng shunt thay đổi bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1000 mA",
+    "vi": "1000 mA"
+   },
+   {
+    "en": "100 mA",
+    "vi": "100 mA"
+   },
+   {
+    "en": "20 mA",
+    "vi": "20 mA"
+   },
+   {
+    "en": "10 mA",
+    "vi": "10 mA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "ΔI = ΔVIN/R1 = 1 V/100 Ω = 10 mA.",
+   "vi": "ΔI = ΔVIN/R1 = 1 V/100 Ω = 10 mA."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 13",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a shunt regulator with series resistor R1 = 47 Ω, VIN changes by 2 V while IL stays constant. What is the change in the shunt current?",
+   "vi": "Ở ổn áp song song có điện trở nối tiếp R1 = 47 Ω, VIN đổi 2 V trong khi IL không đổi. Dòng shunt thay đổi bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "42.6 mA",
+    "vi": "42.6 mA"
+   },
+   {
+    "en": "94 mA",
+    "vi": "94 mA"
+   },
+   {
+    "en": "0.0426 mA",
+    "vi": "0.0426 mA"
+   },
+   {
+    "en": "85.1 mA",
+    "vi": "85.1 mA"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔI = ΔVIN/R1 = 2 V/47 Ω = 42.6 mA.",
+   "vi": "ΔI = ΔVIN/R1 = 2 V/47 Ω = 42.6 mA."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 13",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a shunt regulator with series resistor R1 = 220 Ω, VIN changes by 5 V while IL stays constant. What is the change in the shunt current?",
+   "vi": "Ở ổn áp song song có điện trở nối tiếp R1 = 220 Ω, VIN đổi 5 V trong khi IL không đổi. Dòng shunt thay đổi bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5000 mA",
+    "vi": "5000 mA"
+   },
+   {
+    "en": "22.7 mA",
+    "vi": "22.7 mA"
+   },
+   {
+    "en": "1100 mA",
+    "vi": "1100 mA"
+   },
+   {
+    "en": "45.5 mA",
+    "vi": "45.5 mA"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ΔI = ΔVIN/R1 = 5 V/220 Ω = 22.7 mA.",
+   "vi": "ΔI = ΔVIN/R1 = 5 V/220 Ω = 22.7 mA."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 13",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a shunt regulator with series resistor R1 = 100 Ω, VIN changes by 0.5 V while IL stays constant. What is the change in the shunt current?",
+   "vi": "Ở ổn áp song song có điện trở nối tiếp R1 = 100 Ω, VIN đổi 0.5 V trong khi IL không đổi. Dòng shunt thay đổi bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "50 mA",
+    "vi": "50 mA"
+   },
+   {
+    "en": "5 mA",
+    "vi": "5 mA"
+   },
+   {
+    "en": "10 mA",
+    "vi": "10 mA"
+   },
+   {
+    "en": "500 mA",
+    "vi": "500 mA"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ΔI = ΔVIN/R1 = 0.5 V/100 Ω = 5 mA.",
+   "vi": "ΔI = ΔVIN/R1 = 0.5 V/100 Ω = 5 mA."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 13",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A shunt regulator has R1 = 100 Ω and VIN(max) = 25 V. What power rating must R1 have when the output is shorted?",
+   "vi": "Ổn áp song song có R1 = 100 Ω và VIN(max) = 25 V. R1 phải có công suất định mức bao nhiêu khi ngắn mạch ngõ ra?"
+  },
+  "opts": [
+   {
+    "en": "3.12 W",
+    "vi": "3.12 W"
+   },
+   {
+    "en": "6.25 W",
+    "vi": "6.25 W"
+   },
+   {
+    "en": "0.25 W",
+    "vi": "0.25 W"
+   },
+   {
+    "en": "25 W",
+    "vi": "25 W"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "P = VIN²/R1 = 25²/100 = 6.25 W (short-circuit current 250 mA).",
+   "vi": "P = VIN²/R1 = 25²/100 = 6.25 W (dòng ngắn mạch 250 mA)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A shunt regulator has R1 = 47 Ω and VIN(max) = 20 V. What power rating must R1 have when the output is shorted?",
+   "vi": "Ổn áp song song có R1 = 47 Ω và VIN(max) = 20 V. R1 phải có công suất định mức bao nhiêu khi ngắn mạch ngõ ra?"
+  },
+  "opts": [
+   {
+    "en": "0.426 W",
+    "vi": "0.426 W"
+   },
+   {
+    "en": "8.51 W",
+    "vi": "8.51 W"
+   },
+   {
+    "en": "940 W",
+    "vi": "940 W"
+   },
+   {
+    "en": "4.26 W",
+    "vi": "4.26 W"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "P = VIN²/R1 = 20²/47 = 8.51 W (short-circuit current 426 mA).",
+   "vi": "P = VIN²/R1 = 20²/47 = 8.51 W (dòng ngắn mạch 426 mA)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A shunt regulator has R1 = 22 Ω and VIN(max) = 15 V. What power rating must R1 have when the output is shorted?",
+   "vi": "Ổn áp song song có R1 = 22 Ω và VIN(max) = 15 V. R1 phải có công suất định mức bao nhiêu khi ngắn mạch ngõ ra?"
+  },
+  "opts": [
+   {
+    "en": "10.2 W",
+    "vi": "10.2 W"
+   },
+   {
+    "en": "5.11 W",
+    "vi": "5.11 W"
+   },
+   {
+    "en": "0.682 W",
+    "vi": "0.682 W"
+   },
+   {
+    "en": "330 W",
+    "vi": "330 W"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "P = VIN²/R1 = 15²/22 = 10.2 W (short-circuit current 682 mA).",
+   "vi": "P = VIN²/R1 = 15²/22 = 10.2 W (dòng ngắn mạch 682 mA)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A shunt regulator has R1 = 100 Ω and VIN(max) = 30 V. What power rating must R1 have when the output is shorted?",
+   "vi": "Ổn áp song song có R1 = 100 Ω và VIN(max) = 30 V. R1 phải có công suất định mức bao nhiêu khi ngắn mạch ngõ ra?"
+  },
+  "opts": [
+   {
+    "en": "0.3 W",
+    "vi": "0.3 W"
+   },
+   {
+    "en": "36 W",
+    "vi": "36 W"
+   },
+   {
+    "en": "9 W",
+    "vi": "9 W"
+   },
+   {
+    "en": "3000 W",
+    "vi": "3000 W"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "P = VIN²/R1 = 30²/100 = 9 W (short-circuit current 300 mA).",
+   "vi": "P = VIN²/R1 = 30²/100 = 9 W (dòng ngắn mạch 300 mA)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A switching regulator transistor runs at 10 kHz with an off-time of 60 μs. What is the duty cycle?",
+   "vi": "Transistor của ổn áp xung chạy ở 10 kHz với thời gian tắt 60 μs. Chu kỳ làm việc là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "60 %",
+    "vi": "60 %"
+   },
+   {
+    "en": "80 %",
+    "vi": "80 %"
+   },
+   {
+    "en": "66.7 %",
+    "vi": "66.7 %"
+   },
+   {
+    "en": "40 %",
+    "vi": "40 %"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "T = 1/10 kHz = 100 μs; ton = 100 − 60 = 40 μs; duty = 40 %.",
+   "vi": "T = 1/10 kHz = 100 μs; ton = 100 − 60 = 40 μs; chu kỳ = 40 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A step-down switching regulator with VIN = 12 V runs at a duty cycle of 40 % (ideal switch). What is VOUT?",
+   "vi": "Ổn áp xung giảm áp có VIN = 12 V chạy với chu kỳ làm việc 40 % (công tắc lý tưởng). VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "9.6 V",
+    "vi": "9.6 V"
+   },
+   {
+    "en": "12 V",
+    "vi": "12 V"
+   },
+   {
+    "en": "30 V",
+    "vi": "30 V"
+   },
+   {
+    "en": "4.8 V",
+    "vi": "4.8 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "VOUT = duty × VIN = 40 % × 12 = 4.8 V.",
+   "vi": "VOUT = chu kỳ × VIN = 40 % × 12 = 4.8 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A switching regulator transistor runs at 20 kHz with an off-time of 30 μs. What is the duty cycle?",
+   "vi": "Transistor của ổn áp xung chạy ở 20 kHz với thời gian tắt 30 μs. Chu kỳ làm việc là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "60 %",
+    "vi": "60 %"
+   },
+   {
+    "en": "40 %",
+    "vi": "40 %"
+   },
+   {
+    "en": "66.7 %",
+    "vi": "66.7 %"
+   },
+   {
+    "en": "80 %",
+    "vi": "80 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "T = 1/20 kHz = 50 μs; ton = 50 − 30 = 20 μs; duty = 40 %.",
+   "vi": "T = 1/20 kHz = 50 μs; ton = 50 − 30 = 20 μs; chu kỳ = 40 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A step-down switching regulator with VIN = 15 V runs at a duty cycle of 40 % (ideal switch). What is VOUT?",
+   "vi": "Ổn áp xung giảm áp có VIN = 15 V chạy với chu kỳ làm việc 40 % (công tắc lý tưởng). VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "6 V",
+    "vi": "6 V"
+   },
+   {
+    "en": "12 V",
+    "vi": "12 V"
+   },
+   {
+    "en": "37.5 V",
+    "vi": "37.5 V"
+   },
+   {
+    "en": "9 V",
+    "vi": "9 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = duty × VIN = 40 % × 15 = 6 V.",
+   "vi": "VOUT = chu kỳ × VIN = 40 % × 15 = 6 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A switching regulator transistor runs at 25 kHz with an off-time of 25 μs. What is the duty cycle?",
+   "vi": "Transistor của ổn áp xung chạy ở 25 kHz với thời gian tắt 25 μs. Chu kỳ làm việc là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "37.5 %",
+    "vi": "37.5 %"
+   },
+   {
+    "en": "62.5 %",
+    "vi": "62.5 %"
+   },
+   {
+    "en": "81.2 %",
+    "vi": "81.2 %"
+   },
+   {
+    "en": "75 %",
+    "vi": "75 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "T = 1/25 kHz = 40 μs; ton = 40 − 25 = 15 μs; duty = 37.5 %.",
+   "vi": "T = 1/25 kHz = 40 μs; ton = 40 − 25 = 15 μs; chu kỳ = 37.5 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A step-down switching regulator with VIN = 20 V runs at a duty cycle of 37.5 % (ideal switch). What is VOUT?",
+   "vi": "Ổn áp xung giảm áp có VIN = 20 V chạy với chu kỳ làm việc 37.5 % (công tắc lý tưởng). VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7.5 V",
+    "vi": "7.5 V"
+   },
+   {
+    "en": "12.5 V",
+    "vi": "12.5 V"
+   },
+   {
+    "en": "15 V",
+    "vi": "15 V"
+   },
+   {
+    "en": "53.3 V",
+    "vi": "53.3 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = duty × VIN = 37.5 % × 20 = 7.5 V.",
+   "vi": "VOUT = chu kỳ × VIN = 37.5 % × 20 = 7.5 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A switching regulator transistor runs at 5 kHz with an off-time of 80 μs. What is the duty cycle?",
+   "vi": "Transistor của ổn áp xung chạy ở 5 kHz với thời gian tắt 80 μs. Chu kỳ làm việc là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "120 %",
+    "vi": "120 %"
+   },
+   {
+    "en": "40 %",
+    "vi": "40 %"
+   },
+   {
+    "en": "60 %",
+    "vi": "60 %"
+   },
+   {
+    "en": "70 %",
+    "vi": "70 %"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "T = 1/5 kHz = 200 μs; ton = 200 − 80 = 120 μs; duty = 60 %.",
+   "vi": "T = 1/5 kHz = 200 μs; ton = 200 − 80 = 120 μs; chu kỳ = 60 %."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 17",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A step-down switching regulator with VIN = 24 V runs at a duty cycle of 60 % (ideal switch). What is VOUT?",
+   "vi": "Ổn áp xung giảm áp có VIN = 24 V chạy với chu kỳ làm việc 60 % (công tắc lý tưởng). VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "28.8 V",
+    "vi": "28.8 V"
+   },
+   {
+    "en": "14.4 V",
+    "vi": "14.4 V"
+   },
+   {
+    "en": "24 V",
+    "vi": "24 V"
+   },
+   {
+    "en": "40 V",
+    "vi": "40 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = duty × VIN = 60 % × 24 = 14.4 V.",
+   "vi": "VOUT = chu kỳ × VIN = 60 % × 24 = 14.4 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An LM317 has R1 = 1.0 kΩ and R2 = 10 kΩ and IADJ = 50 μA. What is VOUT? (VOUT = 1.25(1 + R2/R1) + IADJ·R2)",
+   "vi": "LM317 có R1 = 1.0 kΩ, R2 = 10 kΩ và IADJ = 50 μA. VOUT là bao nhiêu? (VOUT = 1,25(1 + R2/R1) + IADJ·R2)"
+  },
+  "opts": [
+   {
+    "en": "28.5 V",
+    "vi": "28.5 V"
+   },
+   {
+    "en": "14.2 V",
+    "vi": "14.2 V"
+   },
+   {
+    "en": "12.5 V",
+    "vi": "12.5 V"
+   },
+   {
+    "en": "13.8 V",
+    "vi": "13.8 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = 1.25(1 + 10/1.0) + 50 μA × 10 kΩ = 13.8 + 0.5 = 14.2 V.",
+   "vi": "VOUT = 1,25(1 + 10/1.0) + 50 μA × 10 kΩ = 13.8 + 0.5 = 14.2 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 21",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 21"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An LM317 has R1 = 240 Ω and R2 = 720 Ω and IADJ = 50 μA. What is VOUT? (VOUT = 1.25(1 + R2/R1) + IADJ·R2)",
+   "vi": "LM317 có R1 = 240 Ω, R2 = 720 Ω và IADJ = 50 μA. VOUT là bao nhiêu? (VOUT = 1,25(1 + R2/R1) + IADJ·R2)"
+  },
+  "opts": [
+   {
+    "en": "5.04 V",
+    "vi": "5.04 V"
+   },
+   {
+    "en": "5 V",
+    "vi": "5 V"
+   },
+   {
+    "en": "3.75 V",
+    "vi": "3.75 V"
+   },
+   {
+    "en": "1.7 V",
+    "vi": "1.7 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = 1.25(1 + 720/240) + 50 μA × 720 Ω = 5 + 0.036 = 5.04 V.",
+   "vi": "VOUT = 1,25(1 + 720/240) + 50 μA × 720 Ω = 5 + 0.036 = 5.04 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 21",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 21"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An LM317 has R1 = 220 Ω and R2 = 2200 Ω and IADJ = 50 μA. What is VOUT? (VOUT = 1.25(1 + R2/R1) + IADJ·R2)",
+   "vi": "LM317 có R1 = 220 Ω, R2 = 2200 Ω và IADJ = 50 μA. VOUT là bao nhiêu? (VOUT = 1,25(1 + R2/R1) + IADJ·R2)"
+  },
+  "opts": [
+   {
+    "en": "13.8 V",
+    "vi": "13.8 V"
+   },
+   {
+    "en": "1.49 V",
+    "vi": "1.49 V"
+   },
+   {
+    "en": "12.5 V",
+    "vi": "12.5 V"
+   },
+   {
+    "en": "13.9 V",
+    "vi": "13.9 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "VOUT = 1.25(1 + 2200/220) + 50 μA × 2200 Ω = 13.8 + 0.11 = 13.9 V.",
+   "vi": "VOUT = 1,25(1 + 2200/220) + 50 μA × 2200 Ω = 13.8 + 0.11 = 13.9 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 21",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 21"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An LM317 has R1 = 330 Ω and R2 = 1000 Ω and IADJ = 50 μA. What is VOUT? (VOUT = 1.25(1 + R2/R1) + IADJ·R2)",
+   "vi": "LM317 có R1 = 330 Ω, R2 = 1000 Ω và IADJ = 50 μA. VOUT là bao nhiêu? (VOUT = 1,25(1 + R2/R1) + IADJ·R2)"
+  },
+  "opts": [
+   {
+    "en": "5.09 V",
+    "vi": "5.09 V"
+   },
+   {
+    "en": "10.2 V",
+    "vi": "10.2 V"
+   },
+   {
+    "en": "5.04 V",
+    "vi": "5.04 V"
+   },
+   {
+    "en": "3.79 V",
+    "vi": "3.79 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = 1.25(1 + 1000/330) + 50 μA × 1000 Ω = 5.04 + 0.05 = 5.09 V.",
+   "vi": "VOUT = 1,25(1 + 1000/330) + 50 μA × 1000 Ω = 5.04 + 0.05 = 5.09 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 21",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 21"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An LM317 has R1 = 470 Ω and R2 = 4700 Ω and IADJ = 50 μA. What is VOUT? (VOUT = 1.25(1 + R2/R1) + IADJ·R2)",
+   "vi": "LM317 có R1 = 470 Ω, R2 = 4700 Ω và IADJ = 50 μA. VOUT là bao nhiêu? (VOUT = 1,25(1 + R2/R1) + IADJ·R2)"
+  },
+  "opts": [
+   {
+    "en": "14 V",
+    "vi": "14 V"
+   },
+   {
+    "en": "28 V",
+    "vi": "28 V"
+   },
+   {
+    "en": "1.61 V",
+    "vi": "1.61 V"
+   },
+   {
+    "en": "13.8 V",
+    "vi": "13.8 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = 1.25(1 + 4700/470) + 50 μA × 4700 Ω = 13.8 + 0.235 = 14 V.",
+   "vi": "VOUT = 1,25(1 + 4700/470) + 50 μA × 4700 Ω = 13.8 + 0.235 = 14 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 21",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 21"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output voltage of a 7805 IC regulator?",
+   "vi": "Điện áp ra của IC ổn áp 7805 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "−8 V",
+    "vi": "−8 V"
+   },
+   {
+    "en": "+5 V",
+    "vi": "+5 V"
+   },
+   {
+    "en": "+24 V",
+    "vi": "+24 V"
+   },
+   {
+    "en": "−5 V",
+    "vi": "−5 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "78XX = positive, 79XX = negative; the last two digits give the voltage: +5 V.",
+   "vi": "78XX = dương, 79XX = âm; hai chữ số cuối cho điện áp: +5 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 20",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output voltage of a 7812 IC regulator?",
+   "vi": "Điện áp ra của IC ổn áp 7812 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "+12 V",
+    "vi": "+12 V"
+   },
+   {
+    "en": "+24 V",
+    "vi": "+24 V"
+   },
+   {
+    "en": "−5 V",
+    "vi": "−5 V"
+   },
+   {
+    "en": "+9 V",
+    "vi": "+9 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "78XX = positive, 79XX = negative; the last two digits give the voltage: +12 V.",
+   "vi": "78XX = dương, 79XX = âm; hai chữ số cuối cho điện áp: +12 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 20",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output voltage of a 7915 IC regulator?",
+   "vi": "Điện áp ra của IC ổn áp 7915 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "−8 V",
+    "vi": "−8 V"
+   },
+   {
+    "en": "+12 V",
+    "vi": "+12 V"
+   },
+   {
+    "en": "+9 V",
+    "vi": "+9 V"
+   },
+   {
+    "en": "−15 V",
+    "vi": "−15 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "78XX = positive, 79XX = negative; the last two digits give the voltage: −15 V.",
+   "vi": "78XX = dương, 79XX = âm; hai chữ số cuối cho điện áp: −15 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 20",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output voltage of a 7824 IC regulator?",
+   "vi": "Điện áp ra của IC ổn áp 7824 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "+5 V",
+    "vi": "+5 V"
+   },
+   {
+    "en": "+12 V",
+    "vi": "+12 V"
+   },
+   {
+    "en": "+24 V",
+    "vi": "+24 V"
+   },
+   {
+    "en": "−5 V",
+    "vi": "−5 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "78XX = positive, 79XX = negative; the last two digits give the voltage: +24 V.",
+   "vi": "78XX = dương, 79XX = âm; hai chữ số cuối cho điện áp: +24 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 20",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output voltage of a 7908 IC regulator?",
+   "vi": "Điện áp ra của IC ổn áp 7908 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "+5 V",
+    "vi": "+5 V"
+   },
+   {
+    "en": "−8 V",
+    "vi": "−8 V"
+   },
+   {
+    "en": "+9 V",
+    "vi": "+9 V"
+   },
+   {
+    "en": "+24 V",
+    "vi": "+24 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "78XX = positive, 79XX = negative; the last two digits give the voltage: −8 V.",
+   "vi": "78XX = dương, 79XX = âm; hai chữ số cuối cho điện áp: −8 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 20",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output voltage of a 7809 IC regulator?",
+   "vi": "Điện áp ra của IC ổn áp 7809 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "+24 V",
+    "vi": "+24 V"
+   },
+   {
+    "en": "+9 V",
+    "vi": "+9 V"
+   },
+   {
+    "en": "−8 V",
+    "vi": "−8 V"
+   },
+   {
+    "en": "+12 V",
+    "vi": "+12 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "78XX = positive, 79XX = negative; the last two digits give the voltage: +9 V.",
+   "vi": "78XX = dương, 79XX = âm; hai chữ số cuối cho điện áp: +9 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 20",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a 78XX circuit with an external pass transistor, what Rext limits the internal regulator current to 250 mA?",
+   "vi": "Trong mạch 78XX có transistor pass ngoài, Rext nào giới hạn dòng bên trong bộ ổn áp ở 250 mA?"
+  },
+  "opts": [
+   {
+    "en": "5.6 Ω",
+    "vi": "5.6 Ω"
+   },
+   {
+    "en": "2.8 Ω",
+    "vi": "2.8 Ω"
+   },
+   {
+    "en": "357 Ω",
+    "vi": "357 Ω"
+   },
+   {
+    "en": "0.28 Ω",
+    "vi": "0.28 Ω"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Rext = 0.7 V/250 mA = 2.8 Ω.",
+   "vi": "Rext = 0,7 V/250 mA = 2.8 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 25",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 25"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a 78XX circuit with an external pass transistor, what Rext limits the internal regulator current to 500 mA?",
+   "vi": "Trong mạch 78XX có transistor pass ngoài, Rext nào giới hạn dòng bên trong bộ ổn áp ở 500 mA?"
+  },
+  "opts": [
+   {
+    "en": "14 Ω",
+    "vi": "14 Ω"
+   },
+   {
+    "en": "714 Ω",
+    "vi": "714 Ω"
+   },
+   {
+    "en": "0.14 Ω",
+    "vi": "0.14 Ω"
+   },
+   {
+    "en": "1.4 Ω",
+    "vi": "1.4 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Rext = 0.7 V/500 mA = 1.4 Ω.",
+   "vi": "Rext = 0,7 V/500 mA = 1.4 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 25",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 25"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a 78XX circuit with an external pass transistor, what Rext limits the internal regulator current to 100 mA?",
+   "vi": "Trong mạch 78XX có transistor pass ngoài, Rext nào giới hạn dòng bên trong bộ ổn áp ở 100 mA?"
+  },
+  "opts": [
+   {
+    "en": "7 Ω",
+    "vi": "7 Ω"
+   },
+   {
+    "en": "14 Ω",
+    "vi": "14 Ω"
+   },
+   {
+    "en": "70 Ω",
+    "vi": "70 Ω"
+   },
+   {
+    "en": "143 Ω",
+    "vi": "143 Ω"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Rext = 0.7 V/100 mA = 7 Ω.",
+   "vi": "Rext = 0,7 V/100 mA = 7 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 25",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 25"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a 78XX circuit with an external pass transistor, what Rext limits the internal regulator current to 1000 mA?",
+   "vi": "Trong mạch 78XX có transistor pass ngoài, Rext nào giới hạn dòng bên trong bộ ổn áp ở 1000 mA?"
+  },
+  "opts": [
+   {
+    "en": "0.7 Ω",
+    "vi": "0.7 Ω"
+   },
+   {
+    "en": "1430 Ω",
+    "vi": "1430 Ω"
+   },
+   {
+    "en": "1.4 Ω",
+    "vi": "1.4 Ω"
+   },
+   {
+    "en": "7 Ω",
+    "vi": "7 Ω"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Rext = 0.7 V/1000 mA = 0.7 Ω.",
+   "vi": "Rext = 0,7 V/1000 mA = 0.7 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 25",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 25"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Good line regulation means the output voltage",
+   "vi": "Line regulation tốt nghĩa là điện áp ra"
+  },
+  "opts": [
+   {
+    "en": "equals the input voltage",
+    "vi": "bằng điện áp vào"
+   },
+   {
+    "en": "changes a lot when the input changes",
+    "vi": "thay đổi nhiều khi điện áp vào đổi"
+   },
+   {
+    "en": "changes very little when the input voltage changes",
+    "vi": "thay đổi rất ít khi điện áp vào thay đổi"
+   },
+   {
+    "en": "is zero at no load",
+    "vi": "bằng không khi không tải"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "A small ΔVOUT/ΔVIN is good.",
+   "vi": "ΔVOUT/ΔVIN nhỏ là tốt."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Good load regulation means the output voltage",
+   "vi": "Load regulation tốt nghĩa là điện áp ra"
+  },
+  "opts": [
+   {
+    "en": "depends on the input ripple",
+    "vi": "phụ thuộc gợn điện áp vào"
+   },
+   {
+    "en": "collapses at full load",
+    "vi": "sụp xuống khi đầy tải"
+   },
+   {
+    "en": "stays nearly the same from no load to full load",
+    "vi": "gần như không đổi từ không tải đến đầy tải"
+   },
+   {
+    "en": "doubles at full load",
+    "vi": "tăng gấp đôi khi đầy tải"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "(VNL − VFL)/VFL should be small.",
+   "vi": "(VNL − VFL)/VFL phải nhỏ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The block of a regulator that compares the sampled output with the reference is the",
+   "vi": "Khối của bộ ổn áp so sánh điện áp lấy mẫu với tham chiếu là"
+  },
+  "opts": [
+   {
+    "en": "error detector",
+    "vi": "bộ phát hiện sai số"
+   },
+   {
+    "en": "heat sink",
+    "vi": "tản nhiệt"
+   },
+   {
+    "en": "filter capacitor",
+    "vi": "tụ lọc"
+   },
+   {
+    "en": "control element",
+    "vi": "phần tử điều khiển"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The error signal drives the control element.",
+   "vi": "Tín hiệu sai số điều khiển phần tử điều khiển."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a series linear regulator the pass transistor power dissipation is approximately",
+   "vi": "Công suất tiêu tán của transistor pass trong ổn áp tuyến tính nối tiếp xấp xỉ"
+  },
+  "opts": [
+   {
+    "en": "VIN·IL",
+    "vi": "VIN·IL"
+   },
+   {
+    "en": "zero",
+    "vi": "bằng không"
+   },
+   {
+    "en": "VOUT·IL",
+    "vi": "VOUT·IL"
+   },
+   {
+    "en": "(VIN − VOUT)·IL",
+    "vi": "(VIN − VOUT)·IL"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "The excess voltage drops across the pass element.",
+   "vi": "Phần điện áp thừa rơi trên phần tử pass."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A series regulator’s reference voltage is usually provided by",
+   "vi": "Điện áp tham chiếu của ổn áp nối tiếp thường do"
+  },
+  "opts": [
+   {
+    "en": "a zener diode",
+    "vi": "một điốt zener"
+   },
+   {
+    "en": "the load",
+    "vi": "tải"
+   },
+   {
+    "en": "an inductor",
+    "vi": "một cuộn cảm"
+   },
+   {
+    "en": "a capacitor",
+    "vi": "một tụ điện"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The zener provides a stable VREF.",
+   "vi": "Zener cung cấp VREF ổn định."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A shunt regulator is less efficient than a series regulator mainly because",
+   "vi": "Ổn áp song song kém hiệu suất hơn ổn áp nối tiếp chủ yếu vì"
+  },
+  "opts": [
+   {
+    "en": "it has no reference",
+    "vi": "nó không có tham chiếu"
+   },
+   {
+    "en": "it only works with ac",
+    "vi": "nó chỉ làm việc với xoay chiều"
+   },
+   {
+    "en": "it wastes current in the shunt path even at light load",
+    "vi": "nó tiêu hao dòng ở nhánh shunt ngay cả khi tải nhẹ"
+   },
+   {
+    "en": "it uses no transistor",
+    "vi": "nó không dùng transistor"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The series resistor always carries the full current.",
+   "vi": "Điện trở nối tiếp luôn mang toàn bộ dòng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A shunt regulator has an inherent advantage of",
+   "vi": "Ổn áp song song có ưu điểm vốn có là"
+  },
+  "opts": [
+   {
+    "en": "no heat",
+    "vi": "không toả nhiệt"
+   },
+   {
+    "en": "higher output than input",
+    "vi": "điện áp ra lớn hơn điện áp vào"
+   },
+   {
+    "en": "short-circuit protection (current limited by R1)",
+    "vi": "bảo vệ ngắn mạch (dòng bị R1 giới hạn)"
+   },
+   {
+    "en": "very high efficiency",
+    "vi": "hiệu suất rất cao"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Output short-circuit current is limited to VIN/R1.",
+   "vi": "Dòng ngắn mạch ngõ ra bị giới hạn ở VIN/R1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Compared with a linear regulator, a switching regulator is",
+   "vi": "So với ổn áp tuyến tính, ổn áp xung"
+  },
+  "opts": [
+   {
+    "en": "always cheaper",
+    "vi": "luôn rẻ hơn"
+   },
+   {
+    "en": "less efficient and quieter",
+    "vi": "hiệu suất thấp hơn và yên tĩnh hơn"
+   },
+   {
+    "en": "more efficient but noisier",
+    "vi": "hiệu suất cao hơn nhưng nhiễu hơn"
+   },
+   {
+    "en": "limited to a fixed output",
+    "vi": "chỉ cho điện áp ra cố định"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The switch dissipates little but generates ripple/EMI.",
+   "vi": "Công tắc tiêu tán ít nhưng sinh gợn/nhiễu điện từ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A step-up (boost) switching regulator produces an output that is",
+   "vi": "Ổn áp xung tăng áp (boost) cho điện áp ra"
+  },
+  "opts": [
+   {
+    "en": "always negative",
+    "vi": "luôn âm"
+   },
+   {
+    "en": "greater than the input voltage",
+    "vi": "lớn hơn điện áp vào"
+   },
+   {
+    "en": "equal to the duty cycle",
+    "vi": "bằng chu kỳ làm việc"
+   },
+   {
+    "en": "smaller than the input voltage",
+    "vi": "nhỏ hơn điện áp vào"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The inductor’s stored energy adds to VIN.",
+   "vi": "Năng lượng tích trong cuộn cảm cộng vào VIN."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the step-down switching regulator, the LC filter",
+   "vi": "Trong ổn áp xung giảm áp, bộ lọc LC"
+  },
+  "opts": [
+   {
+    "en": "increases the switching frequency",
+    "vi": "tăng tần số đóng ngắt"
+   },
+   {
+    "en": "smooths the pulses into an average dc voltage",
+    "vi": "làm phẳng các xung thành điện áp một chiều trung bình"
+   },
+   {
+    "en": "produces the reference",
+    "vi": "tạo điện áp tham chiếu"
+   },
+   {
+    "en": "limits current only",
+    "vi": "chỉ giới hạn dòng"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The average of the pulse train is duty × VIN.",
+   "vi": "Trung bình của chuỗi xung là chu kỳ × VIN."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The 78XX series regulators are",
+   "vi": "Họ ổn áp 78XX là"
+  },
+  "opts": [
+   {
+    "en": "adjustable positive regulators",
+    "vi": "ổn áp dương điều chỉnh được"
+   },
+   {
+    "en": "fixed positive regulators",
+    "vi": "ổn áp dương cố định"
+   },
+   {
+    "en": "switching regulators",
+    "vi": "ổn áp xung"
+   },
+   {
+    "en": "fixed negative regulators",
+    "vi": "ổn áp âm cố định"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The 79XX series is the negative counterpart.",
+   "vi": "Họ 79XX là loại âm tương ứng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The LM317 output is set by",
+   "vi": "Điện áp ra LM317 được đặt bởi"
+  },
+  "opts": [
+   {
+    "en": "the input voltage only",
+    "vi": "chỉ điện áp vào"
+   },
+   {
+    "en": "two external resistors",
+    "vi": "hai điện trở ngoài"
+   },
+   {
+    "en": "the package type",
+    "vi": "kiểu vỏ"
+   },
+   {
+    "en": "an internal fixed reference only",
+    "vi": "chỉ điện áp tham chiếu cố định bên trong"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = 1.25(1 + R2/R1) + IADJ·R2.",
+   "vi": "VOUT = 1,25(1 + R2/R1) + IADJ·R2."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A heat sink is needed on a linear IC regulator when",
+   "vi": "Cần tản nhiệt cho IC ổn áp tuyến tính khi"
+  },
+  "opts": [
+   {
+    "en": "the input is ac",
+    "vi": "điện áp vào là xoay chiều"
+   },
+   {
+    "en": "VOUT is zero",
+    "vi": "VOUT bằng không"
+   },
+   {
+    "en": "(VIN − VOUT)·IL is large",
+    "vi": "(VIN − VOUT)·IL lớn"
+   },
+   {
+    "en": "the load is open",
+    "vi": "tải hở"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The regulator dissipates the excess voltage times the current.",
+   "vi": "Bộ ổn áp tiêu tán phần điện áp thừa nhân với dòng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.17 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.17 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R2 in Figure 17–7 is increased, the output voltage will",
+   "vi": "Nếu tăng R2 ở Hình 17–7 thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = (1 + R2/R3)·VREF rises with R2.",
+   "vi": "VOUT = (1 + R2/R3)·VREF tăng theo R2."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q3",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_07.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the zener in Figure 17–7 is changed to 3.3 V, the output voltage will",
+   "vi": "Nếu đổi zener ở Hình 17–7 sang 3,3 V thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = 2 × VREF falls from 10.2 V to 6.6 V.",
+   "vi": "VOUT = 2 × VREF giảm từ 10,2 V xuống 6,6 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q2",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_07.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R4 in Figure 17–9 is increased, the maximum load current will",
+   "vi": "Nếu tăng R4 ở Hình 17–9 thì dòng tải cực đại sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "IL(max) = 0.7 V/R4 falls as R4 rises.",
+   "vi": "IL(max) = 0,7 V/R4 giảm khi R4 tăng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q4",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 4"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_09.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R2 and R3 in Figure 17–7 are both doubled, the output voltage will",
+   "vi": "Nếu tăng gấp đôi cả R2 và R3 ở Hình 17–7 thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Only the ratio R2/R3 matters.",
+   "vi": "Chỉ tỉ số R2/R3 có ý nghĩa."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q3",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_07.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the duty cycle of the pulse-width modulator in Figure 17–17 is decreased, the output voltage will",
+   "vi": "Nếu giảm chu kỳ làm việc của bộ điều chế độ rộng xung ở Hình 17–17 thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT ≈ duty × VIN falls.",
+   "vi": "VOUT ≈ chu kỳ × VIN giảm."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q6",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_17.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R1 in Figure 17–30 is increased, the output voltage will",
+   "vi": "Nếu tăng R1 ở Hình 17–30 thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = 1.25(1 + R2/R1) + IADJ·R2: a larger R1 reduces R2/R1.",
+   "vi": "VOUT = 1,25(1 + R2/R1) + IADJ·R2: R1 lớn hơn làm R2/R1 giảm."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_30.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Rext in Figure 17–35 is increased, the regulator current at which Qext turns on will",
+   "vi": "Nếu tăng Rext ở Hình 17–35 thì dòng bộ ổn áp tại đó Qext bắt đầu dẫn sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "IREG = 0.7 V/Rext falls as Rext rises.",
+   "vi": "IREG = 0,7 V/Rext giảm khi Rext tăng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_35.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If VIN of the LM317 in Figure 17–30 is changed from 35 V to 30 V (still above dropout), the output voltage will",
+   "vi": "Nếu đổi VIN của LM317 ở Hình 17–30 từ 35 V xuống 30 V (vẫn trên mức dropout) thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The regulated output depends on R1, R2 and the reference, not on VIN.",
+   "vi": "Điện áp ra ổn định phụ thuộc R1, R2 và tham chiếu, không phụ thuộc VIN."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q1",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 1"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_30.png",
+  "check": "figure + formula"
+ }
+]

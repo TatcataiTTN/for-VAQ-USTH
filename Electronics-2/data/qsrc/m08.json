@@ -1,0 +1,1468 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the case of line regulation,",
+   "vi": "Đối với điều chỉnh theo đường dây (line regulation),"
+  },
+  "opts": [
+   {
+    "en": "when the temperature varies, the output voltage stays constant",
+    "vi": "khi nhiệt độ thay đổi, điện áp ra không đổi"
+   },
+   {
+    "en": "when the output voltage changes, the load current stays constant",
+    "vi": "khi điện áp ra thay đổi, dòng tải không đổi"
+   },
+   {
+    "en": "when the input voltage changes, the output voltage stays constant",
+    "vi": "khi điện áp vào thay đổi, điện áp ra không đổi"
+   },
+   {
+    "en": "when the load changes, the output voltage stays constant",
+    "vi": "khi tải thay đổi, điện áp ra không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Line regulation = ΔVOUT/ΔVIN.",
+   "vi": "Line regulation = ΔVOUT/ΔVIN."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q1 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 1 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the case of load regulation,",
+   "vi": "Đối với điều chỉnh theo tải (load regulation),"
+  },
+  "opts": [
+   {
+    "en": "when the temperature varies, the output voltage stays constant",
+    "vi": "khi nhiệt độ thay đổi, điện áp ra không đổi"
+   },
+   {
+    "en": "when the input voltage changes, the load current stays constant",
+    "vi": "khi điện áp vào thay đổi, dòng tải không đổi"
+   },
+   {
+    "en": "when the load changes, the load current stays constant",
+    "vi": "khi tải thay đổi, dòng tải không đổi"
+   },
+   {
+    "en": "when the load changes, the output voltage stays constant",
+    "vi": "khi tải thay đổi, điện áp ra không đổi"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Load regulation = (VNL − VFL)/VFL.",
+   "vi": "Load regulation = (VNL − VFL)/VFL."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q2 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 2 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "All of the following are parts of a basic voltage regulator except",
+   "vi": "Tất cả các phần sau là thành phần của bộ ổn áp cơ bản, trừ"
+  },
+  "opts": [
+   {
+    "en": "control element",
+    "vi": "phần tử điều khiển"
+   },
+   {
+    "en": "sampling circuit",
+    "vi": "mạch lấy mẫu"
+   },
+   {
+    "en": "voltage-follower",
+    "vi": "mạch lặp điện áp"
+   },
+   {
+    "en": "error detector",
+    "vi": "bộ phát hiện sai số"
+   },
+   {
+    "en": "reference voltage",
+    "vi": "điện áp tham chiếu"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The four blocks are reference, sampling circuit, error detector and control element.",
+   "vi": "Bốn khối là tham chiếu, mạch lấy mẫu, bộ phát hiện sai số và phần tử điều khiển."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q3 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 3 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The basic difference between a series regulator and a shunt regulator is",
+   "vi": "Khác biệt cơ bản giữa ổn áp nối tiếp và ổn áp song song là"
+  },
+  "opts": [
+   {
+    "en": "the amount of current that can be handled",
+    "vi": "dòng điện có thể chịu được"
+   },
+   {
+    "en": "the position of the control element",
+    "vi": "vị trí của phần tử điều khiển"
+   },
+   {
+    "en": "the type of sample circuit",
+    "vi": "kiểu mạch lấy mẫu"
+   },
+   {
+    "en": "the type of error detector",
+    "vi": "kiểu bộ phát hiện sai số"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Series: control element in series with the load; shunt: in parallel with it.",
+   "vi": "Nối tiếp: phần tử điều khiển mắc nối tiếp với tải; song song: mắc song song với tải."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q4 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 4 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a basic series regulator, VOUT is determined by",
+   "vi": "Trong ổn áp nối tiếp cơ bản, VOUT được xác định bởi"
+  },
+  "opts": [
+   {
+    "en": "the control element",
+    "vi": "phần tử điều khiển"
+   },
+   {
+    "en": "the sample circuit",
+    "vi": "mạch lấy mẫu"
+   },
+   {
+    "en": "the reference voltage",
+    "vi": "điện áp tham chiếu"
+   },
+   {
+    "en": "answers (b) and (c)",
+    "vi": "đáp án (b) và (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "VOUT = (1 + R2/R3)·VREF: the divider and the reference.",
+   "vi": "VOUT = (1 + R2/R3)·VREF: bộ chia và điện áp tham chiếu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q5 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 5 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The main purpose of current limiting in a regulator is",
+   "vi": "Mục đích chính của giới hạn dòng trong bộ ổn áp là"
+  },
+  "opts": [
+   {
+    "en": "protection of the regulator from excessive current",
+    "vi": "bảo vệ bộ ổn áp khỏi dòng quá lớn"
+   },
+   {
+    "en": "protection of the load from excessive current",
+    "vi": "bảo vệ tải khỏi dòng quá lớn"
+   },
+   {
+    "en": "to keep the power supply transformer from burning up",
+    "vi": "giữ cho biến áp nguồn không cháy"
+   },
+   {
+    "en": "to maintain a constant output voltage",
+    "vi": "duy trì điện áp ra không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The limiter turns the control transistor down when the current reaches the set value (≈ 0.7 V/R).",
+   "vi": "Mạch giới hạn hạ dòng transistor điều khiển khi dòng đạt giá trị đặt (≈ 0,7 V/R)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q6 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 6 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a linear regulator, the control transistor is conducting",
+   "vi": "Trong ổn áp tuyến tính, transistor điều khiển dẫn"
+  },
+  "opts": [
+   {
+    "en": "a small part of the time",
+    "vi": "một phần nhỏ thời gian"
+   },
+   {
+    "en": "half the time",
+    "vi": "một nửa thời gian"
+   },
+   {
+    "en": "all of the time",
+    "vi": "suốt thời gian"
+   },
+   {
+    "en": "only when the load current is excessive",
+    "vi": "chỉ khi dòng tải quá lớn"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "It acts as a variable resistor, always conducting.",
+   "vi": "Nó hoạt động như điện trở biến đổi, luôn dẫn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q7 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 7 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a basic shunt regulator, VOUT is determined by",
+   "vi": "Trong ổn áp song song cơ bản, VOUT được xác định bởi"
+  },
+  "opts": [
+   {
+    "en": "the control element",
+    "vi": "phần tử điều khiển"
+   },
+   {
+    "en": "the sample circuit",
+    "vi": "mạch lấy mẫu"
+   },
+   {
+    "en": "the reference voltage",
+    "vi": "điện áp tham chiếu"
+   },
+   {
+    "en": "answers (b) and (c)",
+    "vi": "đáp án (b) và (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "As in the series type: the sample circuit and the reference.",
+   "vi": "Giống ổn áp nối tiếp: mạch lấy mẫu và điện áp tham chiếu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q8 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 8 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a switching regulator, the control transistor is conducting",
+   "vi": "Trong ổn áp xung, transistor điều khiển dẫn"
+  },
+  "opts": [
+   {
+    "en": "part of the time",
+    "vi": "một phần thời gian"
+   },
+   {
+    "en": "all of the time",
+    "vi": "suốt thời gian"
+   },
+   {
+    "en": "only when the input voltage exceeds a set limit",
+    "vi": "chỉ khi điện áp vào vượt giới hạn đặt"
+   },
+   {
+    "en": "only when there is an overload",
+    "vi": "chỉ khi quá tải"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It switches fully on and off; the duty cycle sets the output.",
+   "vi": "Nó đóng/ngắt hoàn toàn; chu kỳ làm việc đặt điện áp ra."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q9 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 9 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The LM317 is an example of an IC",
+   "vi": "LM317 là ví dụ về IC"
+  },
+  "opts": [
+   {
+    "en": "three-terminal negative voltage regulator",
+    "vi": "ổn áp âm ba chân"
+   },
+   {
+    "en": "fixed positive voltage regulator",
+    "vi": "ổn áp dương cố định"
+   },
+   {
+    "en": "switching regulator",
+    "vi": "ổn áp xung"
+   },
+   {
+    "en": "linear regulator",
+    "vi": "ổn áp tuyến tính"
+   },
+   {
+    "en": "variable positive voltage regulator",
+    "vi": "ổn áp dương điều chỉnh được"
+   },
+   {
+    "en": "answers (d) and (e) only",
+    "vi": "chỉ đáp án (d) và (e)"
+   }
+  ],
+  "correct": 5,
+  "explain": {
+   "en": "The LM317 is a linear regulator with an adjustable positive output.",
+   "vi": "LM317 là ổn áp tuyến tính có ngõ ra dương điều chỉnh được."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q10 (p.886)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 10 (tr.886)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An external pass transistor is used for",
+   "vi": "Transistor thông ngoài (pass) dùng để"
+  },
+  "opts": [
+   {
+    "en": "increasing the output voltage",
+    "vi": "tăng điện áp ra"
+   },
+   {
+    "en": "improving the regulation",
+    "vi": "cải thiện độ ổn định"
+   },
+   {
+    "en": "increasing the current that the regulator can handle",
+    "vi": "tăng dòng mà bộ ổn áp chịu được"
+   },
+   {
+    "en": "short-circuit protection",
+    "vi": "bảo vệ ngắn mạch"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "It carries the excess load current beyond the IC regulator’s rating.",
+   "vi": "Nó dẫn phần dòng tải vượt quá định mức của IC ổn áp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Self-Test Q11 (p.886)",
+   "vi": "Floyd 9e, Ch.17, Self-Test câu 11 (tr.886)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Line regulation is a measure of how constant the output voltage is for a given change in the input voltage.",
+   "vi": "Line regulation đo mức độ không đổi của điện áp ra khi điện áp vào thay đổi một lượng cho trước."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔVOUT/ΔVIN.",
+   "vi": "ΔVOUT/ΔVIN."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q1 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 1 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Linear and switching are two main categories of voltage regulators.",
+   "vi": "Tuyến tính và xung là hai loại chính của bộ ổn áp."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "By definition.",
+   "vi": "Theo định nghĩa."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q3 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 3 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Two types of linear regulator are series and bypass.",
+   "vi": "Hai loại ổn áp tuyến tính là nối tiếp và bypass."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Series and shunt.",
+   "vi": "Nối tiếp và song song (shunt)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q4 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 4 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Three types of switching regulator are step-down, step-up, and inverting.",
+   "vi": "Ba loại ổn áp xung là giảm áp, tăng áp và đảo."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Buck, boost and inverting.",
+   "vi": "Buck, boost và đảo."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q5 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 5 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The three terminals of a 78XX series regulator are input, output, and control.",
+   "vi": "Ba chân của ổn áp 78XX là ngõ vào, ngõ ra và điều khiển."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Input, output and ground.",
+   "vi": "Ngõ vào, ngõ ra và đất."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q6 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 6 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "An external bypass transistor is sometimes used to increase the current capability of a regulator.",
+   "vi": "Transistor bypass ngoài đôi khi dùng để tăng khả năng dòng của bộ ổn áp."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The pass transistor carries the extra current.",
+   "vi": "Transistor pass dẫn dòng phụ thêm."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q7 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 7 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Current limiting is used to protect the external bypass transistor.",
+   "vi": "Giới hạn dòng được dùng để bảo vệ transistor bypass ngoài."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A sense resistor and a second transistor limit the current (Floyd Problem 27).",
+   "vi": "Điện trở cảm biến và transistor thứ hai giới hạn dòng (Floyd Bài 27)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q8 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 8 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The purpose of a heat sink is to help the regulator dissipate excessive heat.",
+   "vi": "Mục đích của tản nhiệt là giúp bộ ổn áp tản nhiệt dư thừa."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Linear regulators dissipate (VIN − VOUT)·IL.",
+   "vi": "Ổn áp tuyến tính tiêu tán (VIN − VOUT)·IL."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q9 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 9 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A variable pulse-width modulator is part of a linear voltage regulator.",
+   "vi": "Bộ điều chế độ rộng xung biến thiên là một phần của ổn áp tuyến tính."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It belongs to switching regulators.",
+   "vi": "Nó thuộc ổn áp xung."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, True/False Quiz Q10 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Đúng/Sai câu 10 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the input voltage in Figure 17–7 is increased by 1 V, the output voltage will",
+   "vi": "Nếu tăng điện áp vào ở Hình 17–7 thêm 1 V thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VOUT = (1 + R2/R3)·VREF = 2 × 5.1 = 10.2 V regardless of VIN (the regulator corrects the change).",
+   "vi": "VOUT = (1 + R2/R3)·VREF = 2 × 5,1 = 10,2 V bất kể VIN (bộ ổn áp bù thay đổi)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q1 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 1 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_07.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the zener diode in Figure 17–7 is changed to one with a zener voltage of 6.8 V, the output voltage will",
+   "vi": "Nếu đổi zener ở Hình 17–7 sang loại 6,8 V thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = 2 × VREF rises from 10.2 V to 13.6 V (still below the 15 V input).",
+   "vi": "VOUT = 2 × VREF tăng từ 10,2 V lên 13,6 V (vẫn thấp hơn điện áp vào 15 V)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q2 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 2 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_07.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R3 in Figure 17–7 is increased in value, the output voltage will",
+   "vi": "Nếu tăng giá trị R3 ở Hình 17–7 thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = (1 + R2/R3)·VREF falls as R3 grows.",
+   "vi": "VOUT = (1 + R2/R3)·VREF giảm khi R3 tăng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q3 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 3 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_07.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R4 in Figure 17–9 is reduced, the amount of current that the regulator can supply to the load will",
+   "vi": "Nếu giảm R4 ở Hình 17–9 thì dòng mà bộ ổn áp có thể cấp cho tải sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "IL(max) = 0.7 V/R4 rises as R4 falls.",
+   "vi": "IL(max) = 0,7 V/R4 tăng khi R4 giảm."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q4 (p.884)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 4 (tr.884)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_09.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R2 in Figure 17–15 is increased, the power dissipation in R1 will",
+   "vi": "Nếu tăng R2 ở Hình 17–15 thì công suất tiêu tán trên R1 sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "R2 only biases the zener reference; VOUT stays regulated, so the voltage across R1 and its power (VIN − VOUT)²/R1 do not change.",
+   "vi": "R2 chỉ phân cực zener tham chiếu; VOUT vẫn ổn định nên điện áp trên R1 và công suất (VIN − VOUT)²/R1 không đổi."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q5 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 5 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_15.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the duty cycle of the variable pulse-width modulator in Figure 17–17 is increased, the output voltage will",
+   "vi": "Nếu tăng chu kỳ làm việc của bộ điều chế độ rộng xung ở Hình 17–17 thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT ≈ duty cycle × VIN: a longer on-time raises the average output.",
+   "vi": "VOUT ≈ chu kỳ làm việc × VIN: thời gian dẫn dài hơn làm điện áp trung bình tăng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q6 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 6 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_17.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R2 in Figure 17–30 is adjusted to a lower value, the output voltage will",
+   "vi": "Nếu chỉnh R2 ở Hình 17–30 xuống giá trị thấp hơn thì điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VOUT = 1.25 V(1 + R2/R1) + IADJ·R2 falls with R2.",
+   "vi": "VOUT = 1,25 V(1 + R2/R1) + IADJ·R2 giảm theo R2."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q7 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 7 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_30.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "To increase the maximum current that the regulator in Figure 17–35 can supply, the value of Rext must",
+   "vi": "Để tăng dòng cực đại mà bộ ổn áp ở Hình 17–35 có thể cấp, giá trị Rext phải"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The pass transistor turns on at IREG = 0.7 V/Rext: a smaller Rext allows a larger regulator current.",
+   "vi": "Transistor pass dẫn khi IREG = 0,7 V/Rext: Rext nhỏ hơn cho phép dòng ổn áp lớn hơn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Circuit-Action Quiz Q8 (p.885)",
+   "vi": "Floyd 9e, Ch.17, Circuit-Action câu 8 (tr.885)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m08/fig17_35.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A regulator has a nominal output of 8 V; the output changes 2 mV when VIN goes from 12 V to 18 V. Line regulation as a percentage over the whole range?",
+   "vi": "Bộ ổn áp có ngõ ra danh định 8 V; ngõ ra đổi 2 mV khi VIN đi từ 12 V đến 18 V. Line regulation tính theo phần trăm trên toàn dải là bao nhiêu?"
+  },
+  "sol": {
+   "en": "Line regulation = (ΔVOUT/ΔVIN)·100 % = (2 mV/6 V) × 100 % = 0.0333 % (book: 0.0333 %).",
+   "vi": "Line regulation = (ΔVOUT/ΔVIN)·100 % = (2 mV/6 V) × 100 % = 0.0333 % (sách: 0,0333 %)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 1 (p.886)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 1 (tr.886)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Express the line regulation of Problem 1 in %/V.",
+   "vi": "Biểu diễn line regulation của Bài 1 theo %/V."
+  },
+  "sol": {
+   "en": "0.0333 % / 6 V = 0.00556 %/V.",
+   "vi": "0.0333 % / 6 V = 0.00556 %/V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 2 (p.886)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 2 (tr.886)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A regulator has a no-load output of 10 V and a full-load output of 9.90 V. Percent load regulation?",
+   "vi": "Bộ ổn áp có điện áp ra không tải 10 V và đầy tải 9,90 V. Load regulation theo phần trăm là bao nhiêu?"
+  },
+  "sol": {
+   "en": "Load regulation = (VNL − VFL)/VFL × 100 % = (10 − 9.90)/9.90 × 100 % = 1.01 % (book: 1.01 %).",
+   "vi": "Load regulation = (VNL − VFL)/VFL × 100 % = (10 − 9,90)/9,90 × 100 % = 1.01 % (sách: 1,01 %)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 3 (p.886)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 3 (tr.886)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "If the full-load current in Problem 3 is 250 mA, express the load regulation in %/mA.",
+   "vi": "Nếu dòng đầy tải ở Bài 3 là 250 mA, biểu diễn load regulation theo %/mA."
+  },
+  "sol": {
+   "en": "1.01 % / 250 mA = 0.00404 %/mA.",
+   "vi": "1.01 % / 250 mA = 0.00404 %/mA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Regulation and regulator blocks",
+   "vi": "Điều chỉnh và các khối của bộ ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 4 (p.886)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 4 (tr.886)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Series regulator of Fig. 17–46 (R2 = 5.6 kΩ, R3 = 2.2 kΩ, VREF = 2.4 V): output voltage?",
+   "vi": "Ổn áp nối tiếp Hình 17–46 (R2 = 5,6 kΩ, R3 = 2,2 kΩ, VREF = 2,4 V): điện áp ra là bao nhiêu?"
+  },
+  "sol": {
+   "en": "VOUT = (1 + R2/R3)·VREF = (1 + 5.6/2.2) × 2.4 V = 8.51 V (book: 8.51 V).",
+   "vi": "VOUT = (1 + R2/R3)·VREF = (1 + 5,6/2,2) × 2,4 V = 8.51 V (sách: 8,51 V)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 7 (p.887)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 7 (tr.887)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "If R3 in Figure 17–46 is increased to 4.7 kΩ, what happens to the output voltage?",
+   "vi": "Nếu tăng R3 ở Hình 17–46 lên 4,7 kΩ thì điện áp ra thay đổi thế nào?"
+  },
+  "sol": {
+   "en": "VOUT = (1 + 5.6/4.7) × 2.4 V = 5.26 V: it decreases from 8.51 V.",
+   "vi": "VOUT = (1 + 5,6/4,7) × 2,4 V = 5.26 V: giảm từ 8,51 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 8 (p.887)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 8 (tr.887)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "If the reference (zener) voltage in Figure 17–46 is 2.7 V instead of 2.4 V, what is VOUT?",
+   "vi": "Nếu điện áp tham chiếu (zener) ở Hình 17–46 là 2,7 V thay vì 2,4 V thì VOUT là bao nhiêu?"
+  },
+  "sol": {
+   "en": "VOUT = 3.545 × 2.7 V = 9.57 V (book: 9.57 V).",
+   "vi": "VOUT = 3,545 × 2,7 V = 9.57 V (sách: 9,57 V)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 9 (p.887)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 9 (tr.887)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Fig. 17–47 limits the load current to 250 mA with a current-limiting resistor R4. Find R4 and its minimum power rating (Q2 turns on at 0.7 V).",
+   "vi": "Hình 17–47 giới hạn dòng tải 250 mA bằng điện trở R4. Tìm R4 và công suất định mức tối thiểu (Q2 dẫn ở 0,7 V)."
+  },
+  "sol": {
+   "en": "R4 = 0.7 V/250 mA = 2.8 Ω; P = I²R = (0.25)² × 2.8 = 0.175 W → use a ¼ W (0.25 W) or higher resistor.",
+   "vi": "R4 = 0,7 V/250 mA = 2.8 Ω; P = I²R = (0,25)² × 2,8 = 0.175 W → dùng điện trở ¼ W (0,25 W) trở lên."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 10 (p.887)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 10 (tr.887)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "If R4 of Problem 10 is halved, what is the maximum load current?",
+   "vi": "Nếu giảm một nửa R4 ở Bài 10 thì dòng tải cực đại là bao nhiêu?"
+  },
+  "sol": {
+   "en": "R4 = 1.4 Ω → IL(max) = 0.7/1.4 = 500 mA (book: 500 mA).",
+   "vi": "R4 = 1,4 Ω → IL(max) = 0,7/1,4 = 500 mA (sách: 500 mA)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Series regulators and current limiting",
+   "vi": "Ổn áp nối tiếp và giới hạn dòng"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 11 (p.887)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 11 (tr.887)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Shunt regulator of Fig. 17–48 (series resistor R1 = 100 Ω): IL constant and VIN changes by 1 V. Change in the collector current of Q1?",
+   "vi": "Ổn áp song song Hình 17–48 (điện trở nối tiếp R1 = 100 Ω): IL không đổi và VIN đổi 1 V. Dòng cực góp Q1 thay đổi bao nhiêu?"
+  },
+  "sol": {
+   "en": "ΔIC = ΔVIN/R1 = 1 V/100 Ω = 10 mA (book: 10 mA).",
+   "vi": "ΔIC = ΔVIN/R1 = 1 V/100 Ω = 10 mA (sách: 10 mA)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 13 (p.888)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 13 (tr.888)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Maximum VIN in Fig. 17–48 is 25 V. Maximum output current when the output is short-circuited, and the power rating of R1 (100 Ω)?",
+   "vi": "VIN cực đại ở Hình 17–48 là 25 V. Dòng ra cực đại khi ngắn mạch ngõ ra và công suất định mức của R1 (100 Ω)?"
+  },
+  "sol": {
+   "en": "IL(max) = 25 V/100 Ω = 250 mA; PR1 = V²/R1 = 25²/100 = 6.25 W (book: 250 mA, 6.25 W).",
+   "vi": "IL(max) = 25 V/100 Ω = 250 mA; PR1 = V²/R1 = 25²/100 = 6.25 W (sách: 250 mA, 6,25 W)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Shunt regulators",
+   "vi": "Ổn áp song song"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 15 (p.888)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 15 (tr.888)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A switching regulator transistor has a switching frequency of 10 kHz with an off-time of 60 μs (Problem 16). Duty cycle, and the ideal VOUT for VIN = 12 V?",
+   "vi": "Transistor của ổn áp xung có tần số đóng ngắt 10 kHz với thời gian tắt 60 μs (Bài 16). Chu kỳ làm việc và VOUT lý tưởng khi VIN = 12 V?"
+  },
+  "sol": {
+   "en": "T = 1/10 kHz = 100 μs; ton = 100 − 60 = 40 μs → duty = 40 % (book: 40 %). Ideal VOUT = duty × VIN = 0.4 × 12 = 4.8 V (ignoring switch and diode drops).",
+   "vi": "T = 1/10 kHz = 100 μs; ton = 100 − 60 = 40 μs → chu kỳ = 40 % (sách: 40 %). VOUT lý tưởng = chu kỳ × VIN = 0,4 × 12 = 4.8 V (bỏ qua sụt áp công tắc và điốt)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Switching regulators",
+   "vi": "Ổn áp xung"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 17 (p.888)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 17 (tr.888)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Output voltage of (a) 7806, (b) 7905.2, (c) 7818, (d) 7924.",
+   "vi": "Điện áp ra của (a) 7806, (b) 7905.2, (c) 7818, (d) 7924."
+  },
+  "sol": {
+   "en": "The last two digits give the voltage and the middle digit the polarity: (a) +6 V, (b) −5.2 V, (c) +18 V, (d) −24 V.",
+   "vi": "Hai chữ số cuối cho điện áp, chữ số giữa cho cực tính: (a) +6 V, (b) −5,2 V, (c) +18 V, (d) −24 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 20 (p.888)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 20 (tr.888)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "LM317 of Fig. 17–51: R1 = 1.0 kΩ, R2 = 10 kΩ, IADJ = 50 μA. Output voltage?",
+   "vi": "LM317 ở Hình 17–51: R1 = 1,0 kΩ, R2 = 10 kΩ, IADJ = 50 μA. Điện áp ra là bao nhiêu?"
+  },
+  "sol": {
+   "en": "VOUT = VREF(1 + R2/R1) + IADJ·R2 = 1.25(1 + 10) + 50 μA × 10 kΩ = 13.75 + 0.50 = 14.25 V ≈ 14.3 V (book: 14.3 V).",
+   "vi": "VOUT = VREF(1 + R2/R1) + IADJ·R2 = 1,25(1 + 10) + 50 μA × 10 kΩ = 13.75 + 0.50 = 14.25 V ≈ 14,3 V (sách: 14,3 V)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 21 (p.888)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 21 (tr.888)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "With no load, how much current flows through the regulator of Figure 17–51? (Neglect IADJ.)",
+   "vi": "Khi không tải, dòng qua bộ ổn áp ở Hình 17–51 là bao nhiêu? (Bỏ qua IADJ.)"
+  },
+  "sol": {
+   "en": "IR = VOUT/(R1 + R2) = 14.25 V / 11 kΩ = 1.30 mA ≈ 1.3 mA (book: 1.3 mA).",
+   "vi": "IR = VOUT/(R1 + R2) = 14.25 V / 11 kΩ = 1.30 mA ≈ 1,3 mA (sách: 1,3 mA)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 23 (p.889)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 23 (tr.889)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Fig. 17–53 (7809 with external pass transistor): find Rext if the maximum internal regulator current is 250 mA.",
+   "vi": "Hình 17–53 (7809 có transistor pass ngoài): tìm Rext nếu dòng ổn áp bên trong cực đại là 250 mA."
+  },
+  "sol": {
+   "en": "Qext turns on when IREG·Rext = 0.7 V → Rext = 0.7/0.25 = 2.8 Ω (book: 2.8 Ω).",
+   "vi": "Qext dẫn khi IREG·Rext = 0,7 V → Rext = 0,7/0,25 = 2.8 Ω (sách: 2,8 Ω)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 25 (p.889)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 25 (tr.889)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Add current limiting to the circuit of Figure 17–53 so the external current is limited to 2 A. Value of the limiting resistor?",
+   "vi": "Thêm giới hạn dòng cho mạch Hình 17–53 để dòng ngoài giới hạn 2 A. Điện trở giới hạn có giá trị bao nhiêu?"
+  },
+  "sol": {
+   "en": "A resistor Rlimit in the emitter of Qext with a second transistor across it limits at 0.7 V: Rlimit = 0.7 V/2 A = 0.35 Ω (book: 0.35 Ω).",
+   "vi": "Điện trở Rlimit ở emitter của Qext cùng transistor thứ hai mắc ngang giới hạn ở 0,7 V: Rlimit = 0,7 V/2 A = 0.35 Ω (sách: 0,35 Ω)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "IC regulators",
+   "vi": "IC ổn áp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.17, Problem 27 (p.889)",
+   "vi": "Floyd 9e, Ch.17, Bài tập 27 (tr.889)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ }
+]
