@@ -1,0 +1,3248 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Why is the binary system used in digital electronics?",
+   "vi": "Vì sao hệ nhị phân được dùng trong điện tử số?"
+  },
+  "opts": [
+   {
+    "en": "The two electrical states ON and OFF can represent the digits 1 and 0",
+    "vi": "Hai trạng thái điện BẬT và TẮT biểu diễn hai chữ số 1 và 0"
+   },
+   {
+    "en": "Binary numbers need no electricity at all",
+    "vi": "Số nhị phân không cần điện"
+   },
+   {
+    "en": "Ten voltage levels are hard to generate in hardware",
+    "vi": "Mười mức điện áp khó tạo ra bằng phần cứng"
+   },
+   {
+    "en": "Binary is the only system a resistor can store",
+    "vi": "Nhị phân là hệ duy nhất mà điện trở lưu được"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A switch ON represents 1 and OFF represents 0.",
+   "vi": "Công tắc BẬT biểu diễn 1 và TẮT biểu diễn 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "For an AND gate to output Logic 1,",
+   "vi": "Để cổng AND cho ngõ ra mức 1 thì"
+  },
+  "opts": [
+   {
+    "en": "all inputs must be Logic 1",
+    "vi": "mọi ngõ vào phải ở mức 1"
+   },
+   {
+    "en": "at least one input must be Logic 1",
+    "vi": "ít nhất một ngõ vào ở mức 1"
+   },
+   {
+    "en": "all inputs must be Logic 0",
+    "vi": "mọi ngõ vào ở mức 0"
+   },
+   {
+    "en": "exactly one input must be Logic 1",
+    "vi": "đúng một ngõ vào ở mức 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Voltage must be present at all inputs.",
+   "vi": "Phải có điện áp ở mọi ngõ vào."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An OR gate outputs Logic 1 when",
+   "vi": "Cổng OR cho ngõ ra mức 1 khi"
+  },
+  "opts": [
+   {
+    "en": "at least one input is Logic 1 (including both)",
+    "vi": "ít nhất một ngõ vào ở mức 1 (kể cả cả hai)"
+   },
+   {
+    "en": "exactly one input is Logic 1",
+    "vi": "đúng một ngõ vào ở mức 1"
+   },
+   {
+    "en": "both inputs are Logic 0",
+    "vi": "cả hai ngõ vào ở mức 0"
+   },
+   {
+    "en": "both inputs differ",
+    "vi": "hai ngõ vào khác nhau"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "With both inputs at Logic 1 it still outputs 1.",
+   "vi": "Khi cả hai ngõ vào bằng 1 nó vẫn cho 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A NAND gate is",
+   "vi": "Cổng NAND là"
+  },
+  "opts": [
+   {
+    "en": "an AND gate followed by a NOT gate",
+    "vi": "cổng AND nối tiếp cổng NOT"
+   },
+   {
+    "en": "an OR gate followed by a NOT gate",
+    "vi": "cổng OR nối tiếp cổng NOT"
+   },
+   {
+    "en": "two AND gates in parallel",
+    "vi": "hai cổng AND song song"
+   },
+   {
+    "en": "an AND gate with inverted inputs only",
+    "vi": "cổng AND chỉ đảo các ngõ vào"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Both inputs Logic 1 gives output Logic 0.",
+   "vi": "Cả hai ngõ vào bằng 1 cho ngõ ra bằng 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A NOR gate is",
+   "vi": "Cổng NOR là"
+  },
+  "opts": [
+   {
+    "en": "an inverted OR gate",
+    "vi": "cổng OR bị đảo"
+   },
+   {
+    "en": "an inverted AND gate",
+    "vi": "cổng AND bị đảo"
+   },
+   {
+    "en": "an OR gate with a buffer",
+    "vi": "cổng OR có bộ đệm"
+   },
+   {
+    "en": "an exclusive OR gate",
+    "vi": "cổng OR loại trừ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Output is 1 only when neither input is 1.",
+   "vi": "Ngõ ra bằng 1 chỉ khi không ngõ vào nào bằng 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverter (NOT gate)",
+   "vi": "Bộ đảo (cổng NOT)"
+  },
+  "opts": [
+   {
+    "en": "inverts the input signal",
+    "vi": "đảo tín hiệu vào"
+   },
+   {
+    "en": "copies the input to the output",
+    "vi": "sao chép ngõ vào sang ngõ ra"
+   },
+   {
+    "en": "outputs 1 only if both inputs are 1",
+    "vi": "chỉ cho 1 nếu cả hai ngõ vào bằng 1"
+   },
+   {
+    "en": "stores the input bit",
+    "vi": "lưu bit ngõ vào"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A buffer gives the same output as the input and isolates or amplifies a signal.",
+   "vi": "Bộ đệm cho ngõ ra giống ngõ vào, dùng để cách ly hoặc khuếch đại."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The XOR gate differs from the OR gate only when",
+   "vi": "Cổng XOR khác cổng OR chỉ khi"
+  },
+  "opts": [
+   {
+    "en": "both inputs are Logic 1 (XOR gives 0)",
+    "vi": "cả hai ngõ vào bằng 1 (XOR cho 0)"
+   },
+   {
+    "en": "both inputs are Logic 0",
+    "vi": "cả hai ngõ vào bằng 0"
+   },
+   {
+    "en": "only one input is Logic 1",
+    "vi": "chỉ một ngõ vào bằng 1"
+   },
+   {
+    "en": "the supply is removed",
+    "vi": "mất nguồn"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The Logic 1 output is excluded for 1-1.",
+   "vi": "Ngõ ra mức 1 bị loại trừ khi vào 1-1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of a Negative AND gate is the same as that of a",
+   "vi": "Ngõ ra của cổng Negative AND giống ngõ ra của cổng"
+  },
+  "opts": [
+   {
+    "en": "NOR gate",
+    "vi": "NOR"
+   },
+   {
+    "en": "NAND gate",
+    "vi": "NAND"
+   },
+   {
+    "en": "XOR gate",
+    "vi": "XOR"
+   },
+   {
+    "en": "buffer",
+    "vi": "bộ đệm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A Negative OR gate equals a NAND gate; the inputs are drawn inverted.",
+   "vi": "Cổng Negative OR tương đương NAND; ngõ vào được vẽ đảo."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A half-adder consists of",
+   "vi": "Bộ cộng nửa (half-adder) gồm"
+  },
+  "opts": [
+   {
+    "en": "an XOR gate and an AND gate with inputs in parallel",
+    "vi": "một cổng XOR và một cổng AND có ngõ vào nối song song"
+   },
+   {
+    "en": "two OR gates and a NOT gate",
+    "vi": "hai cổng OR và một cổng NOT"
+   },
+   {
+    "en": "a NAND gate and a NOR gate",
+    "vi": "một cổng NAND và một cổng NOR"
+   },
+   {
+    "en": "three XOR gates",
+    "vi": "ba cổng XOR"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "XOR gives the sum, AND gives the carry.",
+   "vi": "XOR cho tổng, AND cho số nhớ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "When both inputs of a half-adder are 1, the sum and carry are",
+   "vi": "Khi cả hai ngõ vào bộ cộng nửa bằng 1, tổng và số nhớ là"
+  },
+  "opts": [
+   {
+    "en": "sum 0 and carry 1 (binary 10)",
+    "vi": "tổng 0 và số nhớ 1 (nhị phân 10)"
+   },
+   {
+    "en": "sum 1 and carry 1",
+    "vi": "tổng 1 và số nhớ 1"
+   },
+   {
+    "en": "sum 1 and carry 0",
+    "vi": "tổng 1 và số nhớ 0"
+   },
+   {
+    "en": "sum 0 and carry 0",
+    "vi": "tổng 0 và số nhớ 0"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "1 + 1 = 10 in binary (decimal 2).",
+   "vi": "1 + 1 = 10 trong nhị phân (thập phân 2)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A full-adder is needed when",
+   "vi": "Cần bộ cộng đầy đủ (full-adder) khi"
+  },
+  "opts": [
+   {
+    "en": "a carry input must be added to the two binary digits",
+    "vi": "phải cộng thêm số nhớ vào hai chữ số nhị phân"
+   },
+   {
+    "en": "only one digit is added",
+    "vi": "chỉ cộng một chữ số"
+   },
+   {
+    "en": "the numbers are negative",
+    "vi": "các số là số âm"
+   },
+   {
+    "en": "the inputs are analog",
+    "vi": "các ngõ vào là tương tự"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A half-adder can only add two digits (maximum sum 2).",
+   "vi": "Bộ cộng nửa chỉ cộng hai chữ số (tổng tối đa 2)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator op-amp circuit",
+   "vi": "Mạch op-amp so sánh"
+  },
+  "opts": [
+   {
+    "en": "compares a signal with a reference and switches",
+    "vi": "so sánh tín hiệu với tham chiếu rồi chuyển trạng thái"
+   },
+   {
+    "en": "adds two sine waves",
+    "vi": "cộng hai sóng sin"
+   },
+   {
+    "en": "stores one bit of data",
+    "vi": "lưu một bit dữ liệu"
+   },
+   {
+    "en": "rectifies the supply",
+    "vi": "chỉnh lưu nguồn"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It turns on above the dc reference and off below it.",
+   "vi": "Nó bật khi trên mức tham chiếu một chiều và tắt khi dưới mức đó."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Op-amp circuits in the logic context",
+   "vi": "Mạch op-amp trong ngữ cảnh logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A voltage follower has",
+   "vi": "Mạch lặp điện áp có"
+  },
+  "opts": [
+   {
+    "en": "direct output-to-input coupling and a voltage gain of 1",
+    "vi": "ngõ ra nối trực tiếp về ngõ vào và độ lợi điện áp bằng 1"
+   },
+   {
+    "en": "a gain of 100 set by two resistors",
+    "vi": "độ lợi 100 do hai điện trở đặt"
+   },
+   {
+    "en": "positive feedback only",
+    "vi": "chỉ hồi tiếp dương"
+   },
+   {
+    "en": "no feedback at all",
+    "vi": "không có hồi tiếp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Full negative feedback gives unity amplification and high-impedance isolation.",
+   "vi": "Hồi tiếp âm hoàn toàn cho độ lợi bằng một và cách ly trở kháng cao."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Op-amp circuits in the logic context",
+   "vi": "Mạch op-amp trong ngữ cảnh logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a differentiator the capacitor is",
+   "vi": "Trong mạch vi phân, tụ điện nằm"
+  },
+  "opts": [
+   {
+    "en": "at the amplifier input with the resistor in the feedback path",
+    "vi": "ở ngõ vào bộ khuếch đại, còn điện trở ở nhánh hồi tiếp"
+   },
+   {
+    "en": "in the feedback path with the resistor at the input",
+    "vi": "ở nhánh hồi tiếp, còn điện trở ở ngõ vào"
+   },
+   {
+    "en": "across the supply only",
+    "vi": "chỉ ngang nguồn"
+   },
+   {
+    "en": "omitted completely",
+    "vi": "bị bỏ hẳn"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The integrator is the reverse arrangement.",
+   "vi": "Mạch tích phân có bố trí ngược lại."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Op-amp circuits in the logic context",
+   "vi": "Mạch op-amp trong ngữ cảnh logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Flip-flops are",
+   "vi": "Flip-flop là"
+  },
+  "opts": [
+   {
+    "en": "bistable multivibrators, the storage units of sequential logic",
+    "vi": "mạch đa hài lưỡng ổn, đơn vị lưu trữ của logic tuần tự"
+   },
+   {
+    "en": "analog amplifiers with gain 1",
+    "vi": "bộ khuếch đại tương tự độ lợi 1"
+   },
+   {
+    "en": "resistor networks for dividing voltage",
+    "vi": "mạng điện trở chia áp"
+   },
+   {
+    "en": "rectifier bridges",
+    "vi": "cầu chỉnh lưu"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Used in shift registers and counters; one flip-flop stores one bit.",
+   "vi": "Dùng trong thanh ghi dịch và bộ đếm; mỗi flip-flop lưu một bit."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a clocked flip-flop the clock pulse",
+   "vi": "Trong flip-flop có xung nhịp, xung nhịp"
+  },
+  "opts": [
+   {
+    "en": "lets the S and R signals into the latch",
+    "vi": "cho tín hiệu S và R đi vào mạch chốt"
+   },
+   {
+    "en": "erases the stored bit continuously",
+    "vi": "xóa bit đã lưu liên tục"
+   },
+   {
+    "en": "powers the flip-flop",
+    "vi": "cấp nguồn cho flip-flop"
+   },
+   {
+    "en": "converts the output into an analog level",
+    "vi": "chuyển ngõ ra thành một mức tương tự"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The outputs can then be established at a chosen time.",
+   "vi": "Nhờ đó ngõ ra được thiết lập vào thời điểm mong muốn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The advantage of the JK flip-flop over the RS flip-flop is that it has",
+   "vi": "Ưu điểm của JK flip-flop so với RS flip-flop là"
+  },
+  "opts": [
+   {
+    "en": "no disallowed input combination",
+    "vi": "không có tổ hợp ngõ vào bị cấm"
+   },
+   {
+    "en": "no clock input",
+    "vi": "không có ngõ vào xung nhịp"
+   },
+   {
+    "en": "a lower supply voltage",
+    "vi": "điện áp nguồn thấp hơn"
+   },
+   {
+    "en": "analog outputs",
+    "vi": "ngõ ra tương tự"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The RS flip-flop has a forbidden state.",
+   "vi": "RS flip-flop có trạng thái bị cấm."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator logic circuit is used to",
+   "vi": "Mạch logic so sánh (comparator) dùng để"
+  },
+  "opts": [
+   {
+    "en": "compare sets of binary numbers (often parity checking)",
+    "vi": "so sánh các tập số nhị phân (thường kiểm tra chẵn lẻ)"
+   },
+   {
+    "en": "store a binary number",
+    "vi": "lưu một số nhị phân"
+   },
+   {
+    "en": "count clock pulses",
+    "vi": "đếm xung nhịp"
+   },
+   {
+    "en": "generate the clock",
+    "vi": "tạo xung nhịp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Unlike a flip-flop that counts and stores numbers.",
+   "vi": "Khác flip-flop đếm và lưu số."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A priority encoder is used when",
+   "vi": "Bộ mã hóa ưu tiên (priority encoder) được dùng khi"
+  },
+  "opts": [
+   {
+    "en": "two or more inputs may be HIGH at the same time",
+    "vi": "hai hay nhiều ngõ vào có thể ở mức cao đồng thời"
+   },
+   {
+    "en": "only one input exists",
+    "vi": "chỉ có một ngõ vào"
+   },
+   {
+    "en": "all inputs are analog",
+    "vi": "mọi ngõ vào là tương tự"
+   },
+   {
+    "en": "the decoder is disabled",
+    "vi": "bộ giải mã bị vô hiệu"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It outputs according to a priority scheme.",
+   "vi": "Nó cho ngõ ra theo sơ đồ ưu tiên."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "When the enable line of a decoder is LOW,",
+   "vi": "Khi chân enable của bộ giải mã ở mức THẤP,"
+  },
+  "opts": [
+   {
+    "en": "all outputs are LOW regardless of the inputs",
+    "vi": "mọi ngõ ra ở mức THẤP bất kể ngõ vào"
+   },
+   {
+    "en": "all outputs are HIGH",
+    "vi": "mọi ngõ ra ở mức CAO"
+   },
+   {
+    "en": "the decoder works normally",
+    "vi": "bộ giải mã hoạt động bình thường"
+   },
+   {
+    "en": "only the first output is HIGH",
+    "vi": "chỉ ngõ ra đầu ở mức CAO"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Enable performs no logic operation; it just activates or deactivates the decoder.",
+   "vi": "Enable không thực hiện phép logic; chỉ kích hoạt hoặc vô hiệu bộ giải mã."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "TTL circuits operate from a",
+   "vi": "Mạch TTL hoạt động với nguồn"
+  },
+  "opts": [
+   {
+    "en": "+5 V supply with Logic 1 at +5 V and Logic 0 at 0 V",
+    "vi": "+5 V, mức 1 là +5 V và mức 0 là 0 V"
+   },
+   {
+    "en": "+15 V supply with Logic 1 at −15 V",
+    "vi": "+15 V, mức 1 là −15 V"
+   },
+   {
+    "en": "+3 to +18 V supply only",
+    "vi": "chỉ nguồn +3 đến +18 V"
+   },
+   {
+    "en": "230 V ac supply",
+    "vi": "nguồn xoay chiều 230 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "TTL uses bipolar junction transistors and positive logic.",
+   "vi": "TTL dùng transistor lưỡng cực và logic dương."
+  },
+  "level": 1,
+  "topic": {
+   "en": "ICs, TTL and CMOS",
+   "vi": "IC, TTL và CMOS"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Compared with TTL, CMOS logic",
+   "vi": "So với TTL, logic CMOS"
+  },
+  "opts": [
+   {
+    "en": "uses less power and is less noise-sensitive",
+    "vi": "tiêu thụ ít điện hơn và ít nhạy nhiễu hơn"
+   },
+   {
+    "en": "needs more power and works from a fixed 5 V only",
+    "vi": "cần nhiều điện hơn và chỉ làm việc với nguồn 5 V cố định"
+   },
+   {
+    "en": "relies on base-emitter current flow",
+    "vi": "dựa vào dòng qua tiếp giáp base–emitter"
+   },
+   {
+    "en": "cannot be integrated on a chip",
+    "vi": "không thể tích hợp trên chip"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "CMOS Logic 1 lies between +3 and +18 V.",
+   "vi": "Mức 1 của CMOS nằm giữa +3 và +18 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "ICs, TTL and CMOS",
+   "vi": "IC, TTL và CMOS"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Increasing the number of transistors on a chip",
+   "vi": "Tăng số transistor trên chip"
+  },
+  "opts": [
+   {
+    "en": "increases switching speed but also power consumption and heat",
+    "vi": "tăng tốc độ chuyển mạch nhưng cũng tăng công suất và nhiệt"
+   },
+   {
+    "en": "lowers the speed and the power",
+    "vi": "giảm cả tốc độ lẫn công suất"
+   },
+   {
+    "en": "has no effect on heat",
+    "vi": "không ảnh hưởng nhiệt"
+   },
+   {
+    "en": "removes the need for heat sinks",
+    "vi": "loại bỏ nhu cầu tản nhiệt"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Heat sinks may be fitted to keep the chip from destroying itself.",
+   "vi": "Có thể lắp tản nhiệt để chip không tự hủy."
+  },
+  "level": 1,
+  "topic": {
+   "en": "ICs, TTL and CMOS",
+   "vi": "IC, TTL và CMOS"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Which statement about chips is given in the answers?",
+   "vi": "Câu nào về chip được nêu trong đáp án?"
+  },
+  "opts": [
+   {
+    "en": "Chips are cut from wafers and mounted in plastic or ceramic packages",
+    "vi": "Chip được cắt từ tấm wafer và gắn vào vỏ nhựa hoặc gốm"
+   },
+   {
+    "en": "Chips are molded from solid copper",
+    "vi": "Chip được đúc từ đồng khối"
+   },
+   {
+    "en": "Chips are wound from fine wire",
+    "vi": "Chip được quấn từ dây mảnh"
+   },
+   {
+    "en": "Chips are printed on paper",
+    "vi": "Chip được in trên giấy"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Circuits are etched into polished wafers by photolithography and chemical steps.",
+   "vi": "Mạch được khắc lên wafer đã đánh bóng bằng quang khắc và các bước hóa học."
+  },
+  "level": 1,
+  "topic": {
+   "en": "ICs, TTL and CMOS",
+   "vi": "IC, TTL và CMOS"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.70 (PDF p.81)",
+   "vi": "EASA M04 SM01, tr.1.70 (PDF tr.81)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A buffer produces the same output as its input.",
+   "vi": "Bộ đệm cho ngõ ra giống ngõ vào."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It isolates or amplifies a signal.",
+   "vi": "Nó cách ly hoặc khuếch đại tín hiệu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A NOR gate outputs Logic 1 when at least one input is Logic 1.",
+   "vi": "Cổng NOR cho mức 1 khi ít nhất một ngõ vào bằng 1."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "NOR outputs 1 only when neither input is 1.",
+   "vi": "NOR chỉ cho 1 khi không ngõ vào nào bằng 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.72 (PDF p.83)",
+   "vi": "EASA M04 SM01, tr.1.72 (PDF tr.83)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The XOR gate outputs 1 when both inputs are 1.",
+   "vi": "Cổng XOR cho 1 khi cả hai ngõ vào bằng 1."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "That output is excluded; XOR gives 0 for 1-1.",
+   "vi": "Ngõ ra đó bị loại trừ; XOR cho 0 với 1-1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A half-adder can add only two digits.",
+   "vi": "Bộ cộng nửa chỉ cộng được hai chữ số."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A full-adder is needed when a carry input must be added.",
+   "vi": "Cần bộ cộng đầy đủ khi phải cộng số nhớ vào."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "An integrator and a differentiator are exact opposites with the resistor and capacitor positions reversed.",
+   "vi": "Mạch tích phân và vi phân là đối nghịch hoàn toàn, vị trí điện trở và tụ đảo lại."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "In the differentiator the capacitor is at the input.",
+   "vi": "Ở mạch vi phân tụ nằm ở ngõ vào."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Op-amp circuits in the logic context",
+   "vi": "Mạch op-amp trong ngữ cảnh logic"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.74 (PDF p.85)",
+   "vi": "EASA M04 SM01, tr.1.74 (PDF tr.85)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The JK flip-flop has disallowed input combinations, like the RS flip-flop.",
+   "vi": "JK flip-flop có các tổ hợp ngõ vào bị cấm, giống RS flip-flop."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The JK flip-flop has none.",
+   "vi": "JK flip-flop không có."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A decoder with a LOW enable line performs its normal decoding.",
+   "vi": "Bộ giải mã có chân enable ở mức thấp vẫn giải mã bình thường."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "All outputs are LOW when enable is LOW.",
+   "vi": "Mọi ngõ ra ở mức thấp khi enable thấp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "CMOS logic circuits are less susceptible to electrical interference than TTL.",
+   "vi": "Mạch logic CMOS ít nhạy nhiễu điện hơn TTL."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "They also use less power and operate over a wider voltage range.",
+   "vi": "Chúng cũng tiêu thụ ít điện hơn và hoạt động trong dải điện áp rộng hơn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "ICs, TTL and CMOS",
+   "vi": "IC, TTL và CMOS"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "TTL Logic 1 is +3 to +18 V.",
+   "vi": "Mức 1 của TTL là +3 đến +18 V."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "That is CMOS; TTL uses +5 V.",
+   "vi": "Đó là CMOS; TTL dùng +5 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "ICs, TTL and CMOS",
+   "vi": "IC, TTL và CMOS"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.76 (PDF p.87)",
+   "vi": "EASA M04 SM01, tr.1.76 (PDF tr.87)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 13 to binary.",
+   "vi": "Đổi số thập phân 13 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "1101",
+    "vi": "1101"
+   },
+   {
+    "en": "1110",
+    "vi": "1110"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "1100",
+    "vi": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 13 = 1 + 4 + 8 → 1101.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 13 = 1 + 4 + 8 → 1101."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 29 to binary.",
+   "vi": "Đổi số thập phân 29 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "11101",
+    "vi": "11101"
+   },
+   {
+    "en": "11110",
+    "vi": "11110"
+   },
+   {
+    "en": "11000",
+    "vi": "11000"
+   },
+   {
+    "en": "11100",
+    "vi": "11100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 29 = 1 + 4 + 8 + 16 → 11101.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 29 = 1 + 4 + 8 + 16 → 11101."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 45 to binary.",
+   "vi": "Đổi số thập phân 45 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "101101",
+    "vi": "101101"
+   },
+   {
+    "en": "101110",
+    "vi": "101110"
+   },
+   {
+    "en": "101000",
+    "vi": "101000"
+   },
+   {
+    "en": "101100",
+    "vi": "101100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 45 = 1 + 4 + 8 + 32 → 101101.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 45 = 1 + 4 + 8 + 32 → 101101."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 100 to binary.",
+   "vi": "Đổi số thập phân 100 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "1100100",
+    "vi": "1100100"
+   },
+   {
+    "en": "1100101",
+    "vi": "1100101"
+   },
+   {
+    "en": "1100001",
+    "vi": "1100001"
+   },
+   {
+    "en": "1100011",
+    "vi": "1100011"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 100 = 4 + 32 + 64 → 1100100.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 100 = 4 + 32 + 64 → 1100100."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 6 to binary.",
+   "vi": "Đổi số thập phân 6 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "110",
+    "vi": "110"
+   },
+   {
+    "en": "111",
+    "vi": "111"
+   },
+   {
+    "en": "11",
+    "vi": "11"
+   },
+   {
+    "en": "101",
+    "vi": "101"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 6 = 2 + 4 → 110.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 6 = 2 + 4 → 110."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 77 to binary.",
+   "vi": "Đổi số thập phân 77 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "1001101",
+    "vi": "1001101"
+   },
+   {
+    "en": "1001110",
+    "vi": "1001110"
+   },
+   {
+    "en": "1001000",
+    "vi": "1001000"
+   },
+   {
+    "en": "1001100",
+    "vi": "1001100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 77 = 1 + 4 + 8 + 64 → 1001101.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 77 = 1 + 4 + 8 + 64 → 1001101."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 200 to binary.",
+   "vi": "Đổi số thập phân 200 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "11001000",
+    "vi": "11001000"
+   },
+   {
+    "en": "11001001",
+    "vi": "11001001"
+   },
+   {
+    "en": "11001101",
+    "vi": "11001101"
+   },
+   {
+    "en": "11000111",
+    "vi": "11000111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 200 = 8 + 64 + 128 → 11001000.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 200 = 8 + 64 + 128 → 11001000."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert decimal 255 to binary.",
+   "vi": "Đổi số thập phân 255 sang nhị phân."
+  },
+  "opts": [
+   {
+    "en": "11111111",
+    "vi": "11111111"
+   },
+   {
+    "en": "100000000",
+    "vi": "100000000"
+   },
+   {
+    "en": "11111010",
+    "vi": "11111010"
+   },
+   {
+    "en": "11111110",
+    "vi": "11111110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Repeated subtraction of the largest place value: 255 = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 → 11111111.",
+   "vi": "Trừ liên tiếp giá trị cột lớn nhất: 255 = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 → 11111111."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert binary 1011 to decimal.",
+   "vi": "Đổi số nhị phân 1011 sang thập phân."
+  },
+  "opts": [
+   {
+    "en": "11",
+    "vi": "11"
+   },
+   {
+    "en": "12",
+    "vi": "12"
+   },
+   {
+    "en": "10",
+    "vi": "10"
+   },
+   {
+    "en": "13",
+    "vi": "13"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "1 + 2 + 8 = 11.",
+   "vi": "1 + 2 + 8 = 11."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert binary 11001 to decimal.",
+   "vi": "Đổi số nhị phân 11001 sang thập phân."
+  },
+  "opts": [
+   {
+    "en": "25",
+    "vi": "25"
+   },
+   {
+    "en": "26",
+    "vi": "26"
+   },
+   {
+    "en": "24",
+    "vi": "24"
+   },
+   {
+    "en": "19",
+    "vi": "19"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "1 + 8 + 16 = 25.",
+   "vi": "1 + 8 + 16 = 25."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert binary 100101 to decimal.",
+   "vi": "Đổi số nhị phân 100101 sang thập phân."
+  },
+  "opts": [
+   {
+    "en": "37",
+    "vi": "37"
+   },
+   {
+    "en": "38",
+    "vi": "38"
+   },
+   {
+    "en": "36",
+    "vi": "36"
+   },
+   {
+    "en": "41",
+    "vi": "41"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "1 + 4 + 32 = 37.",
+   "vi": "1 + 4 + 32 = 37."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert binary 1111 to decimal.",
+   "vi": "Đổi số nhị phân 1111 sang thập phân."
+  },
+  "opts": [
+   {
+    "en": "15",
+    "vi": "15"
+   },
+   {
+    "en": "16",
+    "vi": "16"
+   },
+   {
+    "en": "14",
+    "vi": "14"
+   },
+   {
+    "en": "17",
+    "vi": "17"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "1 + 2 + 4 + 8 = 15.",
+   "vi": "1 + 2 + 4 + 8 = 15."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert binary 10000 to decimal.",
+   "vi": "Đổi số nhị phân 10000 sang thập phân."
+  },
+  "opts": [
+   {
+    "en": "16",
+    "vi": "16"
+   },
+   {
+    "en": "17",
+    "vi": "17"
+   },
+   {
+    "en": "15",
+    "vi": "15"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "16 = 16.",
+   "vi": "16 = 16."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Convert binary 110011 to decimal.",
+   "vi": "Đổi số nhị phân 110011 sang thập phân."
+  },
+  "opts": [
+   {
+    "en": "51",
+    "vi": "51"
+   },
+   {
+    "en": "52",
+    "vi": "52"
+   },
+   {
+    "en": "50",
+    "vi": "50"
+   },
+   {
+    "en": "53",
+    "vi": "53"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "1 + 2 + 16 + 32 = 51.",
+   "vi": "1 + 2 + 16 + 32 = 51."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Add the binary numbers 101 and 11.",
+   "vi": "Cộng hai số nhị phân 101 và 11."
+  },
+  "opts": [
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "1001",
+    "vi": "1001"
+   },
+   {
+    "en": "111",
+    "vi": "111"
+   },
+   {
+    "en": "110",
+    "vi": "110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "5 + 3 = 8 = 1000 (1 + 1 gives 0 with a carry of 1).",
+   "vi": "5 + 3 = 8 = 1000 (1 + 1 cho 0 nhớ 1)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Add the binary numbers 111 and 1.",
+   "vi": "Cộng hai số nhị phân 111 và 1."
+  },
+  "opts": [
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "1001",
+    "vi": "1001"
+   },
+   {
+    "en": "111",
+    "vi": "111"
+   },
+   {
+    "en": "110",
+    "vi": "110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "7 + 1 = 8 = 1000 (1 + 1 gives 0 with a carry of 1).",
+   "vi": "7 + 1 = 8 = 1000 (1 + 1 cho 0 nhớ 1)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Add the binary numbers 110 and 110.",
+   "vi": "Cộng hai số nhị phân 110 và 110."
+  },
+  "opts": [
+   {
+    "en": "1100",
+    "vi": "1100"
+   },
+   {
+    "en": "1101",
+    "vi": "1101"
+   },
+   {
+    "en": "1011",
+    "vi": "1011"
+   },
+   {
+    "en": "110",
+    "vi": "110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "6 + 6 = 12 = 1100 (1 + 1 gives 0 with a carry of 1).",
+   "vi": "6 + 6 = 12 = 1100 (1 + 1 cho 0 nhớ 1)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Add the binary numbers 1001 and 100.",
+   "vi": "Cộng hai số nhị phân 1001 và 100."
+  },
+  "opts": [
+   {
+    "en": "1101",
+    "vi": "1101"
+   },
+   {
+    "en": "1110",
+    "vi": "1110"
+   },
+   {
+    "en": "1100",
+    "vi": "1100"
+   },
+   {
+    "en": "1111",
+    "vi": "1111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "9 + 4 = 13 = 1101 (1 + 1 gives 0 with a carry of 1).",
+   "vi": "9 + 4 = 13 = 1101 (1 + 1 cho 0 nhớ 1)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Add the binary numbers 1101 and 10.",
+   "vi": "Cộng hai số nhị phân 1101 và 10."
+  },
+  "opts": [
+   {
+    "en": "1111",
+    "vi": "1111"
+   },
+   {
+    "en": "10000",
+    "vi": "10000"
+   },
+   {
+    "en": "1110",
+    "vi": "1110"
+   },
+   {
+    "en": "10001",
+    "vi": "10001"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "13 + 2 = 15 = 1111 (1 + 1 gives 0 with a carry of 1).",
+   "vi": "13 + 2 = 15 = 1111 (1 + 1 cho 0 nhớ 1)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Binary numbers and conversion",
+   "vi": "Hệ nhị phân và đổi số"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a AND gate for inputs A = 1, B = 0?",
+   "vi": "Ngõ ra của cổng AND với A = 1, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "AND(1,0) = 0.",
+   "vi": "AND(1,0) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a AND gate for inputs A = 1, B = 1?",
+   "vi": "Ngõ ra của cổng AND với A = 1, B = 1 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "AND(1,1) = 1.",
+   "vi": "AND(1,1) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a AND gate for inputs A = 0, B = 0?",
+   "vi": "Ngõ ra của cổng AND với A = 0, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "AND(0,0) = 0.",
+   "vi": "AND(0,0) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a OR gate for inputs A = 1, B = 0?",
+   "vi": "Ngõ ra của cổng OR với A = 1, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "OR(1,0) = 1.",
+   "vi": "OR(1,0) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a OR gate for inputs A = 1, B = 1?",
+   "vi": "Ngõ ra của cổng OR với A = 1, B = 1 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "OR(1,1) = 1.",
+   "vi": "OR(1,1) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a OR gate for inputs A = 0, B = 0?",
+   "vi": "Ngõ ra của cổng OR với A = 0, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "OR(0,0) = 0.",
+   "vi": "OR(0,0) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a NAND gate for inputs A = 1, B = 0?",
+   "vi": "Ngõ ra của cổng NAND với A = 1, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "NAND(1,0) = 1.",
+   "vi": "NAND(1,0) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a NAND gate for inputs A = 1, B = 1?",
+   "vi": "Ngõ ra của cổng NAND với A = 1, B = 1 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "NAND(1,1) = 0.",
+   "vi": "NAND(1,1) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a NAND gate for inputs A = 0, B = 0?",
+   "vi": "Ngõ ra của cổng NAND với A = 0, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "NAND(0,0) = 1.",
+   "vi": "NAND(0,0) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a NOR gate for inputs A = 1, B = 0?",
+   "vi": "Ngõ ra của cổng NOR với A = 1, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "NOR(1,0) = 0.",
+   "vi": "NOR(1,0) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a NOR gate for inputs A = 1, B = 1?",
+   "vi": "Ngõ ra của cổng NOR với A = 1, B = 1 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "NOR(1,1) = 0.",
+   "vi": "NOR(1,1) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a NOR gate for inputs A = 0, B = 0?",
+   "vi": "Ngõ ra của cổng NOR với A = 0, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "NOR(0,0) = 1.",
+   "vi": "NOR(0,0) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a XOR gate for inputs A = 1, B = 0?",
+   "vi": "Ngõ ra của cổng XOR với A = 1, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "XOR(1,0) = 1.",
+   "vi": "XOR(1,0) = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a XOR gate for inputs A = 1, B = 1?",
+   "vi": "Ngõ ra của cổng XOR với A = 1, B = 1 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "XOR(1,1) = 0.",
+   "vi": "XOR(1,1) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the output of a XOR gate for inputs A = 0, B = 0?",
+   "vi": "Ngõ ra của cổng XOR với A = 0, B = 0 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined",
+    "vi": "undefined"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "XOR(0,0) = 0.",
+   "vi": "XOR(0,0) = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Logic gates",
+   "vi": "Cổng logic"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A half-adder has inputs A = 0 and B = 0. What are (sum, carry)?",
+   "vi": "Bộ cộng nửa có A = 0 và B = 0. (tổng, số nhớ) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "(0, 0)",
+    "vi": "(0, 0)"
+   },
+   {
+    "en": "(1, 0)",
+    "vi": "(1, 0)"
+   },
+   {
+    "en": "(0, 1)",
+    "vi": "(0, 1)"
+   },
+   {
+    "en": "(1, 1)",
+    "vi": "(1, 1)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Sum = A XOR B = 0; carry = A AND B = 0.",
+   "vi": "Tổng = A XOR B = 0; số nhớ = A AND B = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A half-adder has inputs A = 0 and B = 1. What are (sum, carry)?",
+   "vi": "Bộ cộng nửa có A = 0 và B = 1. (tổng, số nhớ) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "(1, 0)",
+    "vi": "(1, 0)"
+   },
+   {
+    "en": "(0, 0)",
+    "vi": "(0, 0)"
+   },
+   {
+    "en": "(1, 1)",
+    "vi": "(1, 1)"
+   },
+   {
+    "en": "(0, 1)",
+    "vi": "(0, 1)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Sum = A XOR B = 1; carry = A AND B = 0.",
+   "vi": "Tổng = A XOR B = 1; số nhớ = A AND B = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A half-adder has inputs A = 1 and B = 0. What are (sum, carry)?",
+   "vi": "Bộ cộng nửa có A = 1 và B = 0. (tổng, số nhớ) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "(1, 0)",
+    "vi": "(1, 0)"
+   },
+   {
+    "en": "(0, 0)",
+    "vi": "(0, 0)"
+   },
+   {
+    "en": "(1, 1)",
+    "vi": "(1, 1)"
+   },
+   {
+    "en": "(0, 1)",
+    "vi": "(0, 1)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Sum = A XOR B = 1; carry = A AND B = 0.",
+   "vi": "Tổng = A XOR B = 1; số nhớ = A AND B = 0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A half-adder has inputs A = 1 and B = 1. What are (sum, carry)?",
+   "vi": "Bộ cộng nửa có A = 1 và B = 1. (tổng, số nhớ) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "(0, 1)",
+    "vi": "(0, 1)"
+   },
+   {
+    "en": "(1, 1)",
+    "vi": "(1, 1)"
+   },
+   {
+    "en": "(0, 0)",
+    "vi": "(0, 0)"
+   },
+   {
+    "en": "(1, 0)",
+    "vi": "(1, 0)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Sum = A XOR B = 0; carry = A AND B = 1.",
+   "vi": "Tổng = A XOR B = 0; số nhớ = A AND B = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A JK flip-flop currently has Q = 0. After a clock pulse with J = 1, K = 0, what is Q?",
+   "vi": "JK flip-flop đang có Q = 0. Sau một xung nhịp với J = 1, K = 0, Q bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined (forbidden state)",
+    "vi": "undefined (forbidden state)"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "J = 1, K = 0 sets: Q becomes 1 (JK has no forbidden state: 1-1 toggles).",
+   "vi": "J = 1, K = 0 sets: Q thành 1 (JK không có trạng thái cấm: 1-1 đảo trạng thái)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A JK flip-flop currently has Q = 1. After a clock pulse with J = 0, K = 1, what is Q?",
+   "vi": "JK flip-flop đang có Q = 1. Sau một xung nhịp với J = 0, K = 1, Q bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined (forbidden state)",
+    "vi": "undefined (forbidden state)"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "J = 0, K = 1 resets: Q becomes 0 (JK has no forbidden state: 1-1 toggles).",
+   "vi": "J = 0, K = 1 resets: Q thành 0 (JK không có trạng thái cấm: 1-1 đảo trạng thái)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A JK flip-flop currently has Q = 1. After a clock pulse with J = 1, K = 1, what is Q?",
+   "vi": "JK flip-flop đang có Q = 1. Sau một xung nhịp với J = 1, K = 1, Q bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined (forbidden state)",
+    "vi": "undefined (forbidden state)"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "J = 1, K = 1 toggles: Q becomes 0 (JK has no forbidden state: 1-1 toggles).",
+   "vi": "J = 1, K = 1 toggles: Q thành 0 (JK không có trạng thái cấm: 1-1 đảo trạng thái)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A JK flip-flop currently has Q = 0. After a clock pulse with J = 0, K = 0, what is Q?",
+   "vi": "JK flip-flop đang có Q = 0. Sau một xung nhịp với J = 0, K = 0, Q bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "undefined (forbidden state)",
+    "vi": "undefined (forbidden state)"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "J = 0, K = 0 holds: Q becomes 0 (JK has no forbidden state: 1-1 toggles).",
+   "vi": "J = 0, K = 0 holds: Q thành 0 (JK không có trạng thái cấm: 1-1 đảo trạng thái)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A JK flip-flop currently has Q = 0. After a clock pulse with J = 1, K = 1, what is Q?",
+   "vi": "JK flip-flop đang có Q = 0. Sau một xung nhịp với J = 1, K = 1, Q bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined (forbidden state)",
+    "vi": "undefined (forbidden state)"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "J = 1, K = 1 toggles: Q becomes 1 (JK has no forbidden state: 1-1 toggles).",
+   "vi": "J = 1, K = 1 toggles: Q thành 1 (JK không có trạng thái cấm: 1-1 đảo trạng thái)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A JK flip-flop currently has Q = 1. After a clock pulse with J = 0, K = 0, what is Q?",
+   "vi": "JK flip-flop đang có Q = 1. Sau một xung nhịp với J = 0, K = 0, Q bằng bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "0",
+    "vi": "0"
+   },
+   {
+    "en": "undefined (forbidden state)",
+    "vi": "undefined (forbidden state)"
+   },
+   {
+    "en": "high impedance",
+    "vi": "high impedance"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "J = 0, K = 0 holds: Q becomes 1 (JK has no forbidden state: 1-1 toggles).",
+   "vi": "J = 0, K = 0 holds: Q thành 1 (JK không có trạng thái cấm: 1-1 đảo trạng thái)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Flip-flops and sequential logic",
+   "vi": "Flip-flop và logic tuần tự"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A 2-to-4 decoder has its enable line LOW. What happens at the outputs?",
+   "vi": "Bộ giải mã 2→4 có chân enable ở mức THẤP. Điều gì xảy ra ở các ngõ ra?"
+  },
+  "opts": [
+   {
+    "en": "all outputs LOW",
+    "vi": "all outputs LOW"
+   },
+   {
+    "en": "all outputs HIGH",
+    "vi": "all outputs HIGH"
+   },
+   {
+    "en": "the first output only toggles",
+    "vi": "the first output only toggles"
+   },
+   {
+    "en": "the inputs are inverted",
+    "vi": "the inputs are inverted"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Enable LOW → every output LOW; enable HIGH → the selected output goes HIGH.",
+   "vi": "Enable THẤP → mọi ngõ ra THẤP; enable CAO → ngõ ra được chọn lên CAO."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A 2-to-4 decoder has its enable line HIGH. What happens at the outputs?",
+   "vi": "Bộ giải mã 2→4 có chân enable ở mức CAO. Điều gì xảy ra ở các ngõ ra?"
+  },
+  "opts": [
+   {
+    "en": "normal decoding",
+    "vi": "normal decoding"
+   },
+   {
+    "en": "all outputs LOW",
+    "vi": "all outputs LOW"
+   },
+   {
+    "en": "the first output only toggles",
+    "vi": "the first output only toggles"
+   },
+   {
+    "en": "the inputs are inverted",
+    "vi": "the inputs are inverted"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Enable LOW → every output LOW; enable HIGH → the selected output goes HIGH.",
+   "vi": "Enable THẤP → mọi ngõ ra THẤP; enable CAO → ngõ ra được chọn lên CAO."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Adders and combinational circuits",
+   "vi": "Bộ cộng và mạch tổ hợp"
+  },
+  "src": {
+   "en": "Generated – computed binary/logic rule (EASA Q1-24…1-46)",
+   "vi": "Bổ sung – quy tắc nhị phân/logic được tính (EASA Q1-24…1-46)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ }
+]

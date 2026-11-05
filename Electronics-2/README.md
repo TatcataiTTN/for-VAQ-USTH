@@ -1,17 +1,17 @@
 # AE2.025 Electronics 2 — hệ thống tự học song ngữ (VI/EN)
 
-Đặt thư mục `Electronics-2/` vào repo `for-VAQ-USTH/` → URL `https://tatcataittn.github.io/for-VAQ-USTH/Electronics-2/`.
+Site: https://tatcataittn.github.io/for-VAQ-USTH/Electronics-2/  ·  10 module, ~1.100 câu hỏi (gốc từ sách + bổ sung), notebook Jupyter, luyện đề tính giờ.
 
 | Thư mục | Nội dung |
 |---|---|
 | `index.html`, `vi/`, `en/` | Site tĩnh: trang chủ, 10 module, luyện tập theo module, luyện đề, nguồn & đối chiếu |
-| `_shared/` | CSS/JS dùng chung (deck, quiz, ngân hàng câu hỏi, luyện đề, theme, i18n) — cần file `.nojekyll` ở gốc repo |
-| `data/qsrc/` | Câu hỏi gốc (sách) + câu sinh, song ngữ; `data/qbank/` bản ghép + `_audit.json` (kiểm tra lệch đáp án) |
-| `build/` | Script dựng site: `python3 build/assemble.py && python3 build/build_site.py` |
-| `build/verify/` | Script kiểm chứng đáp án; `data/verify/*_notes.json` lỗi/nghi vấn tìm thấy trong sách |
+| `_shared/` | CSS/JS dùng chung (deck, quiz, ngân hàng câu hỏi, luyện đề, theme, i18n); cần `.nojekyll` ở gốc repo |
+| `data/qsrc/` | Câu hỏi gốc + câu bổ sung (song ngữ); `data/qbank/` bản ghép + `_audit.json` (kiểm tra lệch đáp án) |
+| `data/verify/` | Ghi chú lỗi/nghi vấn của sách (`mNN_notes.json`) và chứng cứ trích dẫn (`mNN_evidence.json`) |
+| `build/` | Script dựng site, `author/` (dữ liệu câu hỏi), `gen/` (bộ sinh), `verify/` (kiểm chứng), `nb/` (notebook), `content/` (bài giảng), `push.sh` |
 | `notebooks/` | Jupyter notebook mỗi module (VI + EN), đã chạy sẵn |
-| `sources/easa_m04_ocr.pdf` | Bản EASA M04 đã OCR (chọn được chữ). Floyd/Jaeger gốc đã có lớp chữ, xem trong Drive |
-| `OCR_output/` | Text trích xuất: Floyd (bản sửa Ω), Jaeger 5e, EASA 2 phương pháp OCR (ocrmypdf + tesseract psm4) |
-| `AGENT_BRIEF.md` | Quy chuẩn nội dung/câu hỏi dùng khi dựng các module |
+| `tests/` | `site_test.py` (Playwright), `check_deck.py` |
+| `CONTINUE.md` | Trạng thái, hạn chế và quy trình làm tiếp |
 
-Xem thử cục bộ: `python3 -m http.server` trong thư mục cha rồi mở `/Electronics-2/`.
+PDF nguồn đã được sửa lớp chữ nằm ngoài thư mục này (`../pdf_ocr_fixed/`); `OCR_output/` và `sources/` (nặng) không được đẩy lên GitHub.
+Xem thử cục bộ: `python3 -m http.server` trong thư mục này rồi mở `/vi/`.
