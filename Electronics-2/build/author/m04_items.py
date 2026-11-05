@@ -72,6 +72,35 @@ M7.ca(8, 375, 'If the value of VCC in Figure 7–19 is increased, the ac output 
 M7.ca(10, 375, 'If the value of C2 in Figure 7–24 is decreased, the resonant frequency will', 'Nếu giảm giá trị C2 trong Hình 7–24 thì tần số cộng hưởng sẽ', FIG + 'fig7_24.png', 0,
       'fr = 1/(2π√(LC)): a smaller C gives a higher fr (halving C multiplies fr by √2 ≈ 1.41).',
       'fr = 1/(2π√(LC)): C nhỏ hơn cho fr cao hơn (giảm C một nửa thì fr nhân với √2 ≈ 1,41).', 'cls')
+# ---------------- Floyd Problems 31 and 33 (Figures 6-57, 6-58): the multistage problems of section 6-6; the book prints the answers (odd problems), checked in verify_floyd_odd.py
+def fig657():                                  # capacitively coupled, VCC = 15 V, beta = 175; r'e rounded to 0.1 ohm as in the book
+    vb = 15 * 8.2 / 41.2; ie = (vb - 0.7) / 1.0; re_ = round(25 / ie, 1); rin2 = 175 * re_
+    rc1 = 1 / (1 / 3300 + 1 / 33000 + 1 / 8200 + 1 / rin2); a1 = round(rc1 / re_, 1); a2 = round(3300 / re_)
+    return vb, ie, re_, rin2, rc1, a1, a2
+def fig658():                                  # direct coupled, VCC = 12 V, beta = 125
+    vb1 = 12 * 22 / 122; ve1 = vb1 - 0.7; ie1 = ve1 / 4.7; vc1 = 12 - ie1 * 22; ve2 = vc1 - 0.7; ie2 = ve2 / 10; vc2 = 12 - ie2 * 10
+    re1, re2 = 25 / ie1, 25 / ie2; rc1 = 1 / (1 / 22000 + 1 / (125 * re2)); return vb1, ve1, vc1, ve2, vc2, rc1 / re1, 10000 / re2, ie1, ie2, re1, re2, rc1
+vb, ie, re_, rin2, rc1_, a1, a2 = fig657(); tot = round(a1 * a2)
+db = lambda x: 20 * math.log10(x)
+M6.ess(31, 331, 'For the two-stage, capacitively coupled amplifier in Figure 6–57, find (a) the voltage gain of each stage, (b) the overall voltage gain, (c) the gains in dB.',
+       'Với bộ khuếch đại hai tầng ghép tụ ở Hình 6–57, tìm (a) độ lợi điện áp từng tầng, (b) độ lợi tổng, (c) các độ lợi đó theo dB.',
+       f'Both stages are identical, so the dc values are the same: VB = 15 × 8.2/41.2 = {vb:.2f} V, VE = {vb - 0.7:.2f} V, IE = {ie:.2f} mA, r′e = 25 mV/IE = {re_} Ω. '
+       f'Input resistance of stage 2: βac·r′e = 175 × {re_} Ω = {rin2/1000:.2f} kΩ. Rc1 = R3 ∥ R5 ∥ R6 ∥ Rin(base2) = {rc1_/1000:.2f} kΩ, Rc2 = R7 = 3.3 kΩ. '
+       f'(a) Av1 = Rc1/r′e = {a1} and Av2 = R7/r′e = {a2}. (b) A′v = {a1} × {a2} = {tot:,}. (c) Av1 = {db(a1):.1f} dB, Av2 = {db(a2):.1f} dB, A′v = {db(tot):.1f} dB (= sum of the two). Book: 93.6 and 303; 28,361; 39.4, 49.6 and 89.1 dB (last-digit differences come from rounding r′e).',
+       f'Hai tầng giống nhau nên điện áp một chiều như nhau: VB = 15 × 8,2/41,2 = {fv(vb, 2)} V, VE = {fv(vb - 0.7, 2)} V, IE = {fv(ie, 2)} mA, r′e = 25 mV/IE = {fv(re_)} Ω. '
+       f'Điện trở vào tầng 2: βac·r′e = 175 × {fv(re_)} Ω = {fv(rin2/1000, 2)} kΩ. Rc1 = R3 ∥ R5 ∥ R6 ∥ Rin(base2) = {fv(rc1_/1000, 2)} kΩ, Rc2 = R7 = 3,3 kΩ. '
+       f'(a) Av1 = Rc1/r′e = {fv(a1)} và Av2 = R7/r′e = {a2}. (b) A′v = {fv(a1)} × {a2} = {tot:,}. (c) Av1 = {fv(db(a1))} dB, Av2 = {fv(db(a2))} dB, A′v = {fv(db(tot))} dB (= tổng hai giá trị). Sách: 93,6 và 303; 28.361; 39,4, 49,6 và 89,1 dB (lệch ở chữ số cuối là do làm tròn r′e).'.replace(f'{tot:,}', f'{tot:,}'.replace(',', '.')),
+       'cas', lvl=3, book=True)
+M6.items[-1]['fig'] = FIG + 'fig6_57.png'
+v = fig658()
+M6.ess(33, 331, 'Figure 6–58 is a direct-coupled two-stage amplifier (no coupling capacitors; the dc bias of the first stage sets the dc bias of the second). Find all the dc voltages of both stages and the overall ac voltage gain.',
+       'Hình 6–58 là bộ khuếch đại hai tầng ghép trực tiếp (không có tụ ghép; phân cực một chiều của tầng 1 quyết định phân cực của tầng 2). Tìm mọi điện áp một chiều của hai tầng và độ lợi điện áp xoay chiều tổng.',
+       f'Stage 1: VB1 = 12 × 22/122 = {v[0]:.2f} V, VE1 = {v[1]:.2f} V, IE1 = {v[7]:.3f} mA, VC1 ≅ 12 − IC1·R3 = {v[2]:.2f} V (the base current of Q2 is neglected, as in the book). Stage 2: VB2 = VC1 = {v[2]:.2f} V, VE2 = {v[3]:.2f} V, IE2 = {v[8]:.3f} mA, VC2 = 12 − IE2·R5 = {v[4]:.2f} V. '
+       f'AC: r′e1 = {v[9]:.1f} Ω, r′e2 = {v[10]:.1f} Ω; Rc1 = R3 ∥ βac·r′e2 = {v[11]/1000:.2f} kΩ, so Av1 = {v[5]:.0f}; Av2 = R5/r′e2 = {v[6]:.0f} (R6 is bypassed by C2); A′v = Av1·Av2 ≈ {round(v[5]) * round(v[6]):,}. Book: VB1 = 2.16 V, VE1 = 1.46 V, VC1 ≅ 5.16 V, VB2 = 5.16 V, VE2 = 4.46 V, VC2 ≅ 7.54 V, Av1 = 66, Av2 = 179, A′v = 11,814 (small differences come from rounding the dc voltages and r′e).',
+       f'Tầng 1: VB1 = 12 × 22/122 = {fv(v[0], 2)} V, VE1 = {fv(v[1], 2)} V, IE1 = {fv(v[7], 3)} mA, VC1 ≅ 12 − IC1·R3 = {fv(v[2], 2)} V (bỏ qua dòng cực B của Q2 như sách). Tầng 2: VB2 = VC1 = {fv(v[2], 2)} V, VE2 = {fv(v[3], 2)} V, IE2 = {fv(v[8], 3)} mA, VC2 = 12 − IE2·R5 = {fv(v[4], 2)} V. '
+       f'Xoay chiều: r′e1 = {fv(v[9])} Ω, r′e2 = {fv(v[10])} Ω; Rc1 = R3 ∥ βac·r′e2 = {fv(v[11]/1000, 2)} kΩ nên Av1 = {v[5]:.0f}; Av2 = R5/r′e2 = {v[6]:.0f} (R6 đã được C2 thoát); A′v = Av1·Av2 ≈ {round(v[5]) * round(v[6]):,}'.replace(f'{round(v[5]) * round(v[6]):,}', f'{round(v[5]) * round(v[6]):,}'.replace(',', '.')) + '. Sách: VB1 = 2,16 V, VE1 = 1,46 V, VC1 ≅ 5,16 V, VB2 = 5,16 V, VE2 = 4,46 V, VC2 ≅ 7,54 V, Av1 = 66, Av2 = 179, A′v = 11.814 (lệch nhỏ là do làm tròn điện áp một chiều và r′e).',
+       'cas', lvl=3, book=True)
+M6.items[-1]['fig'] = FIG + 'fig6_58.png'
 floyd = M6.items + M7.items
 # ---------------- EASA grounded items
 items = []; EV = {}

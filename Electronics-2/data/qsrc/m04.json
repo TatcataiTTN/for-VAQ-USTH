@@ -262,6 +262,52 @@
   "check": "figure + formula"
  },
  {
+  "kind": "ess",
+  "q": {
+   "en": "For the two-stage, capacitively coupled amplifier in Figure 6–57, find (a) the voltage gain of each stage, (b) the overall voltage gain, (c) the gains in dB.",
+   "vi": "Với bộ khuếch đại hai tầng ghép tụ ở Hình 6–57, tìm (a) độ lợi điện áp từng tầng, (b) độ lợi tổng, (c) các độ lợi đó theo dB."
+  },
+  "sol": {
+   "en": "Both stages are identical, so the dc values are the same: VB = 15 × 8.2/41.2 = 2.99 V, VE = 2.29 V, IE = 2.29 mA, r′e = 25 mV/IE = 10.9 Ω. Input resistance of stage 2: βac·r′e = 175 × 10.9 Ω = 1.91 kΩ. Rc1 = R3 ∥ R5 ∥ R6 ∥ Rin(base2) = 1.02 kΩ, Rc2 = R7 = 3.3 kΩ. (a) Av1 = Rc1/r′e = 93.7 and Av2 = R7/r′e = 303. (b) A′v = 93.7 × 303 = 28,391. (c) Av1 = 39.4 dB, Av2 = 49.6 dB, A′v = 89.1 dB (= sum of the two). Book: 93.6 and 303; 28,361; 39.4, 49.6 and 89.1 dB (last-digit differences come from rounding r′e).",
+   "vi": "Hai tầng giống nhau nên điện áp một chiều như nhau: VB = 15 × 8,2/41,2 = 2,99 V, VE = 2,29 V, IE = 2,29 mA, r′e = 25 mV/IE = 10,9 Ω. Điện trở vào tầng 2: βac·r′e = 175 × 10,9 Ω = 1,91 kΩ. Rc1 = R3 ∥ R5 ∥ R6 ∥ Rin(base2) = 1,02 kΩ, Rc2 = R7 = 3,3 kΩ. (a) Av1 = Rc1/r′e = 93,7 và Av2 = R7/r′e = 303. (b) A′v = 93,7 × 303 = 28.391. (c) Av1 = 39,4 dB, Av2 = 49,6 dB, A′v = 89,1 dB (= tổng hai giá trị). Sách: 93,6 và 303; 28.361; 39,4, 49,6 và 89,1 dB (lệch ở chữ số cuối là do làm tròn r′e)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Problem 31 (p.331)",
+   "vi": "Floyd 9e, Ch.6, Bài tập 31 (tr.331)"
+  },
+  "origin": "goc",
+  "check": "script + book answer",
+  "fig": "assets/figs/m04/fig6_57.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Figure 6–58 is a direct-coupled two-stage amplifier (no coupling capacitors; the dc bias of the first stage sets the dc bias of the second). Find all the dc voltages of both stages and the overall ac voltage gain.",
+   "vi": "Hình 6–58 là bộ khuếch đại hai tầng ghép trực tiếp (không có tụ ghép; phân cực một chiều của tầng 1 quyết định phân cực của tầng 2). Tìm mọi điện áp một chiều của hai tầng và độ lợi điện áp xoay chiều tổng."
+  },
+  "sol": {
+   "en": "Stage 1: VB1 = 12 × 22/122 = 2.16 V, VE1 = 1.46 V, IE1 = 0.311 mA, VC1 ≅ 12 − IC1·R3 = 5.15 V (the base current of Q2 is neglected, as in the book). Stage 2: VB2 = VC1 = 5.15 V, VE2 = 4.45 V, IE2 = 0.445 mA, VC2 = 12 − IE2·R5 = 7.55 V. AC: r′e1 = 80.3 Ω, r′e2 = 56.2 Ω; Rc1 = R3 ∥ βac·r′e2 = 5.33 kΩ, so Av1 = 66; Av2 = R5/r′e2 = 178 (R6 is bypassed by C2); A′v = Av1·Av2 ≈ 11,748. Book: VB1 = 2.16 V, VE1 = 1.46 V, VC1 ≅ 5.16 V, VB2 = 5.16 V, VE2 = 4.46 V, VC2 ≅ 7.54 V, Av1 = 66, Av2 = 179, A′v = 11,814 (small differences come from rounding the dc voltages and r′e).",
+   "vi": "Tầng 1: VB1 = 12 × 22/122 = 2,16 V, VE1 = 1,46 V, IE1 = 0,311 mA, VC1 ≅ 12 − IC1·R3 = 5,15 V (bỏ qua dòng cực B của Q2 như sách). Tầng 2: VB2 = VC1 = 5,15 V, VE2 = 4,45 V, IE2 = 0,445 mA, VC2 = 12 − IE2·R5 = 7,55 V. Xoay chiều: r′e1 = 80,3 Ω, r′e2 = 56,2 Ω; Rc1 = R3 ∥ βac·r′e2 = 5,33 kΩ nên Av1 = 66; Av2 = R5/r′e2 = 178 (R6 đã được C2 thoát); A′v = Av1·Av2 ≈ 11.748. Sách: VB1 = 2,16 V, VE1 = 1,46 V, VC1 ≅ 5,16 V, VB2 = 5,16 V, VE2 = 4,46 V, VC2 ≅ 7,54 V, Av1 = 66, Av2 = 179, A′v = 11.814 (lệch nhỏ là do làm tròn điện áp một chiều và r′e)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Problem 33 (p.331)",
+   "vi": "Floyd 9e, Ch.6, Bài tập 33 (tr.331)"
+  },
+  "origin": "goc",
+  "check": "script + book answer",
+  "fig": "assets/figs/m04/fig6_58.png"
+ },
+ {
   "kind": "mcq",
   "q": {
    "en": "The transistors in a class B amplifier are biased",
