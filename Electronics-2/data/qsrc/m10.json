@@ -1,0 +1,332 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is a servomechanism?",
+   "vi": "Servo là gì?"
+  },
+  "sol": {
+   "en": "A servomechanism is an electric control system for an automatic powered mechanism that produces motion or force using a low-energy input signal. The amplified system typically drives an electric or hydraulic motor; the motion can be rotary or linear depending on the mechanical transmission of the force.",
+   "vi": "Servo là hệ điều khiển điện cho cơ cấu có động lực tự động, tạo chuyển động hoặc lực bằng tín hiệu vào có năng lượng thấp. Hệ khuếch đại thường dẫn động động cơ điện hoặc thủy lực; chuyển động có thể quay hoặc thẳng tùy cách truyền lực cơ khí."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Open/closed loop and the follow-up",
+   "vi": "Vòng hở/kín và bộ sai số (follow-up)"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-1 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-1 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the difference between an open-loop system and a closed-loop system?",
+   "vi": "Khác biệt giữa hệ vòng hở và hệ vòng kín là gì?"
+  },
+  "sol": {
+   "en": "A closed-loop system has a feedback mechanism: the output is continually compared with the input and any difference is applied to control the output so as to reduce the difference to zero, called the null. An open-loop system has no feedback.",
+   "vi": "Hệ vòng kín có cơ chế hồi tiếp: ngõ ra liên tục được so sánh với ngõ vào và độ chênh được dùng để điều khiển ngõ ra sao cho giảm về không (null). Hệ vòng hở không có hồi tiếp."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Open/closed loop and the follow-up",
+   "vi": "Vòng hở/kín và bộ sai số (follow-up)"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-2 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-2 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the purpose of a follow-up?",
+   "vi": "Mục đích của follow-up là gì?"
+  },
+  "sol": {
+   "en": "All closed-loop systems have an error detector, the follow-up, which calculates the difference between the desired input and the actual measured state. When the feedback signal is equal and opposite to the control signal the voltage at the summing point is zero and the servomotor stops. The summing circuit is a resistor network adding the follow-up and control voltages to give a difference signal to the amplifier.",
+   "vi": "Mọi hệ vòng kín có bộ phát hiện sai số (follow-up) tính hiệu giữa ngõ vào mong muốn và trạng thái đo được. Khi tín hiệu hồi tiếp bằng và ngược tín hiệu điều khiển, điện áp ở điểm cộng bằng không và động cơ servo dừng. Mạch cộng là mạng điện trở cộng điện áp follow-up và điều khiển để tạo tín hiệu hiệu cấp cho bộ khuếch đại."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Open/closed loop and the follow-up",
+   "vi": "Vòng hở/kín và bộ sai số (follow-up)"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-3 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-3 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Describe the operation of an analog transducer.",
+   "vi": "Mô tả hoạt động của một cảm biến tương tự (analog transducer)."
+  },
+  "sol": {
+   "en": "An analog transducer converts the position of the physical flight-control surface into a variable electric signal the controller can process. It is basically a transformer with two secondary coils and a moving core attached to the controlled unit; as the core moves the voltages induced in the two secondaries change, and their differential is the feedback signal.",
+   "vi": "Cảm biến tương tự biến vị trí của bề mặt điều khiển bay thành tín hiệu điện biến thiên cho bộ điều khiển xử lý. Về cơ bản là biến áp có hai cuộn thứ cấp và lõi di động gắn với bộ phận được điều khiển; khi lõi dịch chuyển, điện áp cảm ứng ở hai cuộn thứ cấp thay đổi và hiệu của chúng là tín hiệu hồi tiếp."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Transducers: LVDT, RVDT, inductive, capacitive",
+   "vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-4 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-4 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the difference between a selsyn, a magnasyn, and an autosyn synchro?",
+   "vi": "Khác biệt giữa synchro selsyn, magnasyn và autosyn là gì?"
+  },
+  "sol": {
+   "en": "The selsyn uses DC power; the magnasyn and autosyn use AC power and so make use of electric induction rather than resistance current flows defined by the rotor brushes. Magnasyn systems use permanent-magnet rotors; autosyn systems use electromagnetic rotors.",
+   "vi": "Selsyn dùng nguồn một chiều; magnasyn và autosyn dùng xoay chiều nên tận dụng cảm ứng điện thay vì dòng qua điện trở do chổi rôto xác định. Magnasyn dùng rôto nam châm vĩnh cửu; autosyn dùng rôto nam châm điện."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-5 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-5 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Describe the operation of an AC synchro system.",
+   "vi": "Mô tả hoạt động của hệ synchro AC."
+  },
+  "sol": {
+   "en": "A synchro system is a servomechanism that transmits information from one point to another. AC synchros function as rotary transformers: if transmitter and receiver are at the same shaft angle the induced stator voltages are identical and no current flows. If the transmitter rotor moves, the stator voltages differ, producing a current in the receiver stator and a torque that aligns the receiver with the transmitter. Either unit may be turned to rotate the other.",
+   "vi": "Hệ synchro là servo truyền thông tin từ điểm này đến điểm khác. Synchro AC hoạt động như biến áp quay: nếu bộ phát và bộ thu cùng góc trục thì điện áp cảm ứng stato giống nhau và không có dòng. Nếu rôto bộ phát dịch chuyển, điện áp stato khác nhau, tạo dòng trong stato bộ thu và mô-men làm bộ thu thẳng hàng với bộ phát. Có thể quay một trong hai bộ để quay bộ kia."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-6 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-6 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What purpose does the damping device serve in a synchro receiver?",
+   "vi": "Thiết bị tắt dần trong bộ thu synchro có mục đích gì?"
+  },
+  "sol": {
+   "en": "It prevents hunting, the overshoot and undershoot that occur when the receiver tries to match the transmitter signal. Without it the receiver would oscillate back and forth before coming to rest; the damper feeds back some of the signal, slowing the approach to the indication point.",
+   "vi": "Nó ngăn hunting, tức vượt quá và hụt quá khi bộ thu cố khớp tín hiệu bộ phát. Không có nó bộ thu sẽ dao động qua lại trước khi dừng; bộ tắt dần hồi tiếp một phần tín hiệu, làm chậm tiến tới điểm chỉ báo."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-7 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-7 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the purpose of a control synchro system and what function does it perform?",
+   "vi": "Mục đích của hệ synchro điều khiển và chức năng của nó là gì?"
+  },
+  "sol": {
+   "en": "A control synchro system minimises errors in the output signal due to current loading, magnetic nonlinearity or temperature variations. It consists of a synchronous transmitter driving a receiver known as a control transformer, which has three equally spaced stator windings and a rotor wound with more turns for sensitivity, so it detects a null as it is turned by a servo motor moving the load.",
+   "vi": "Hệ synchro điều khiển giảm thiểu sai số tín hiệu ra do tải dòng, phi tuyến từ và biến thiên nhiệt độ. Gồm bộ phát đồng bộ dẫn bộ thu gọi là biến áp điều khiển, có ba cuộn stato cách đều và rôto quấn nhiều vòng hơn để nhạy hơn, nên phát hiện điểm null khi bị động cơ servo kéo tải quay."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Differential, control synchros and resolvers",
+   "vi": "Synchro vi sai, synchro điều khiển và resolver"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-8 (p.3.15), printed answer p.3.16",
+   "vi": "EASA M04 SM03, Câu hỏi 3-8 (tr.3.15), đáp án in tr.3.16"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is a differential synchro system and how does it operate?",
+   "vi": "Hệ synchro vi sai là gì và hoạt động ra sao?"
+  },
+  "sol": {
+   "en": "It has a torque transmitter and torque receiver plus a torque differential transmitter (TDX) between them. The TDX has a three-phase rotor winding accepting two position inputs at once, adding the shaft angle input to an electrical angle input on the rotor and outputting the sum or difference on its stator, which is displayed by the torque receiver.",
+   "vi": "Gồm bộ phát mô-men và bộ thu mô-men cùng bộ phát vi sai mô-men (TDX) ở giữa. TDX có cuộn rôto ba pha nhận đồng thời hai ngõ vào vị trí, cộng góc trục cơ với góc điện ở rôto và cho tổng hoặc hiệu ở stato, được bộ thu mô-men hiển thị."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Differential, control synchros and resolvers",
+   "vi": "Synchro vi sai, synchro điều khiển và resolver"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-9 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-9 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is a resolver and what purpose does it serve?",
+   "vi": "Resolver là gì và dùng để làm gì?"
+  },
+  "sol": {
+   "en": "A resolver is a synchro system used to transmit angular position data with a high degree of accuracy. It is a variable transformer with two stator windings at 90 degrees and one energised rotor winding; an angular input to the rotor shaft gives rectangular coordinates on the stator, related by sine and cosine functions to the angle.",
+   "vi": "Resolver là một hệ synchro dùng truyền dữ liệu vị trí góc với độ chính xác cao. Đó là biến áp biến đổi với hai cuộn stato lệch 90° và một cuộn rôto được cấp điện; góc ở trục rôto cho tọa độ vuông góc ở stato, liên hệ với góc bằng hàm sin và cos."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Differential, control synchros and resolvers",
+   "vi": "Synchro vi sai, synchro điều khiển và resolver"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-10 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-10 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Explain the operation of an inductive transmitter.",
+   "vi": "Giải thích hoạt động của bộ phát cảm ứng."
+  },
+  "sol": {
+   "en": "The centre limb of the E shape is fed primary voltage and the upper and lower limbs hold the secondary windings. An I-shaped bar pivots with the sensed element at the open end of the E; the gap to the upper and lower limbs changes, so the voltages induced in the secondary coils change, and their output is interpreted as the sensor position.",
+   "vi": "Nhánh giữa của chữ E được cấp điện áp sơ cấp, nhánh trên và dưới chứa cuộn thứ cấp. Thanh chữ I xoay cùng phần tử được đo ở đầu hở của chữ E; khe hở tới nhánh trên và dưới thay đổi nên điện áp cảm ứng ở các cuộn thứ cấp thay đổi, và đầu ra này được hiểu là vị trí cảm biến."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Transducers: LVDT, RVDT, inductive, capacitive",
+   "vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-11 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-11 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "How does a capacitance transmitter measure fuel quantity?",
+   "vi": "Bộ phát điện dung đo lượng nhiên liệu như thế nào?"
+  },
+  "sol": {
+   "en": "Capacitance depends on plate area, plate distance and the dielectric constant of the material between the plates. A tank unit has two concentric plates a fixed distance apart, so its capacitance changes with the dielectric constant of what fills the gap: fuel, air or a mixture according to the fuel level. (Note: the printed answer says “the amount of voltage that a capacitor can store”; capacitance is meant.)",
+   "vi": "Điện dung phụ thuộc diện tích bản, khoảng cách và hằng số điện môi giữa các bản. Bộ phận trong bể có hai bản đồng tâm cách nhau cố định nên điện dung đổi theo hằng số điện môi của vật chất lấp khe: nhiên liệu, không khí hoặc hỗn hợp theo mức nhiên liệu. (Lưu ý: đáp án in ghi “lượng điện áp mà tụ có thể tích”; ý nói điện dung.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Transducers: LVDT, RVDT, inductive, capacitive",
+   "vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-12 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-12 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Explain the principle of deadband.",
+   "vi": "Giải thích nguyên lý vùng chết (deadband)."
+  },
+  "sol": {
+   "en": "The interval in the signal domain of a transducer where there is a null (no output) is the deadband, e.g. the linear or angular motion allowed either side of the null before a signal appears. It determines control-system precision: a tight deadband gives high precision, but if it is too tight the inertia of the output causes oscillation (hunting) around the null.",
+   "vi": "Khoảng trong miền tín hiệu của cảm biến mà ở đó có null (không có ngõ ra) là vùng chết, ví dụ chuyển động thẳng hoặc góc cho phép hai bên điểm null trước khi xuất hiện tín hiệu. Nó quyết định độ chính xác hệ điều khiển: vùng chết hẹp cho độ chính xác cao, nhưng quá hẹp thì quán tính ngõ ra gây dao động (hunting) quanh điểm null."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Stability, hunting and damping",
+   "vi": "Ổn định, dao động tìm (hunting) và tắt dần"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-13 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-13 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Explain the operation of a viscous damper.",
+   "vi": "Giải thích hoạt động của bộ tắt dần nhớt."
+  },
+  "sol": {
+   "en": "A viscous (inertial) damper is sometimes used instead of a damping generator to lower the servomotor speed. It consists of a low-inertia conducting drag cup on the motor shaft and a rotating permanent-magnet flywheel; as the motor speeds up a viscous torque proportional to the relative velocity acts as a drag, giving the damping.",
+   "vi": "Bộ tắt dần nhớt (quán tính) đôi khi dùng thay máy phát tắt dần để giảm tốc độ động cơ servo. Gồm cốc kéo dẫn điện quán tính thấp trên trục động cơ và bánh đà nam châm vĩnh cửu quay; khi động cơ tăng tốc, mô-men nhớt tỉ lệ với vận tốc tương đối đóng vai trò lực cản tạo tắt dần."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Stability, hunting and damping",
+   "vi": "Ổn định, dao động tìm (hunting) và tắt dần"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-14 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-14 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Name some of the most common types of synchro defects.",
+   "vi": "Kể tên một số lỗi synchro phổ biến nhất."
+  },
+  "sol": {
+   "en": "Inherent electrical errors from design limitations (e.g. winding distribution) and random manufacturing defects. Common ones: air-gap inaccuracies, especially stator ellipticity, and unbalanced stator winding impedance from too many turns on one leg, giving nonuniform flux amplitude.",
+   "vi": "Sai số điện vốn có do giới hạn thiết kế (ví dụ phân bố cuộn dây) và lỗi chế tạo ngẫu nhiên. Phổ biến: sai lệch khe hở không khí, nhất là độ elip stato, và mất cân bằng trở kháng cuộn stato do quấn quá nhiều vòng ở một nhánh, gây biên độ từ thông không đều."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Differential, control synchros and resolvers",
+   "vi": "Synchro vi sai, synchro điều khiển và resolver"
+  },
+  "src": {
+   "en": "EASA M04 SM03, Question 3-15 (p.3.17), printed answer p.3.18",
+   "vi": "EASA M04 SM03, Câu hỏi 3-15 (tr.3.17), đáp án in tr.3.18"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ }
+]

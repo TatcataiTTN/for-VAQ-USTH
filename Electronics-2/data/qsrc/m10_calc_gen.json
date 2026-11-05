@@ -1,0 +1,800 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 10 rpm per volt of error and a tachometer giving 0.1 V per rpm. The control input is −9 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 10 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.1 V mỗi vòng/phút. Ngõ vào điều khiển là −9 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "30 rpm",
+    "vi": "30 rpm"
+   },
+   {
+    "en": "45 rpm",
+    "vi": "45 rpm"
+   },
+   {
+    "en": "60 rpm",
+    "vi": "60 rpm"
+   },
+   {
+    "en": "90 rpm",
+    "vi": "90 rpm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 10×9/(2 + 1) = 30 rpm (error signal 3 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 10×9/(2 + 1) = 30 vòng/phút (sai số 3 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the same velocity servo (control −9 V, equal R2 = R3, 10 rpm/V motor, 0.1 V/rpm tachometer) what is the error signal at the very first instant, before the load moves?",
+   "vi": "Ở servo vận tốc đó (điều khiển −9 V, R2 = R3, động cơ 10 vòng/phút/V, máy phát tốc 0.1 V/vòng/phút), tín hiệu sai số ở thời điểm đầu tiên, trước khi tải chuyển động, là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "-4.5 V",
+    "vi": "-4.5 V"
+   },
+   {
+    "en": "4.5 V",
+    "vi": "4.5 V"
+   },
+   {
+    "en": "-3 V",
+    "vi": "-3 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The tach output is 0, so the sum point is (−9 + 0)/2 = -4.5 V. (Book: −9 V → −4.5 V.)",
+   "vi": "Máy phát tốc bằng 0 nên điểm cộng là (−9 + 0)/2 = -4.5 V. (Sách: −9 V → −4,5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 10 rpm per volt of error and a tachometer giving 0.1 V per rpm. The control input is −6 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 10 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.1 V mỗi vòng/phút. Ngõ vào điều khiển là −6 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "20 rpm",
+    "vi": "20 rpm"
+   },
+   {
+    "en": "40 rpm",
+    "vi": "40 rpm"
+   },
+   {
+    "en": "60 rpm",
+    "vi": "60 rpm"
+   },
+   {
+    "en": "30 rpm",
+    "vi": "30 rpm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 10×6/(2 + 1) = 20 rpm (error signal 2 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 10×6/(2 + 1) = 20 vòng/phút (sai số 2 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the same velocity servo (control −6 V, equal R2 = R3, 10 rpm/V motor, 0.1 V/rpm tachometer) what is the error signal at the very first instant, before the load moves?",
+   "vi": "Ở servo vận tốc đó (điều khiển −6 V, R2 = R3, động cơ 10 vòng/phút/V, máy phát tốc 0.1 V/vòng/phút), tín hiệu sai số ở thời điểm đầu tiên, trước khi tải chuyển động, là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3 V",
+    "vi": "3 V"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "-2 V",
+    "vi": "-2 V"
+   },
+   {
+    "en": "-3 V",
+    "vi": "-3 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "The tach output is 0, so the sum point is (−6 + 0)/2 = -3 V. (Book: −9 V → −4.5 V.)",
+   "vi": "Máy phát tốc bằng 0 nên điểm cộng là (−6 + 0)/2 = -3 V. (Sách: −9 V → −4,5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 10 rpm per volt of error and a tachometer giving 0.1 V per rpm. The control input is −12 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 10 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.1 V mỗi vòng/phút. Ngõ vào điều khiển là −12 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "80 rpm",
+    "vi": "80 rpm"
+   },
+   {
+    "en": "60 rpm",
+    "vi": "60 rpm"
+   },
+   {
+    "en": "40 rpm",
+    "vi": "40 rpm"
+   },
+   {
+    "en": "120 rpm",
+    "vi": "120 rpm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 10×12/(2 + 1) = 40 rpm (error signal 4 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 10×12/(2 + 1) = 40 vòng/phút (sai số 4 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the same velocity servo (control −12 V, equal R2 = R3, 10 rpm/V motor, 0.1 V/rpm tachometer) what is the error signal at the very first instant, before the load moves?",
+   "vi": "Ở servo vận tốc đó (điều khiển −12 V, R2 = R3, động cơ 10 vòng/phút/V, máy phát tốc 0.1 V/vòng/phút), tín hiệu sai số ở thời điểm đầu tiên, trước khi tải chuyển động, là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-12 V",
+    "vi": "-12 V"
+   },
+   {
+    "en": "6 V",
+    "vi": "6 V"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "-6 V",
+    "vi": "-6 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "The tach output is 0, so the sum point is (−12 + 0)/2 = -6 V. (Book: −9 V → −4.5 V.)",
+   "vi": "Máy phát tốc bằng 0 nên điểm cộng là (−12 + 0)/2 = -6 V. (Sách: −9 V → −4,5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 10 rpm per volt of error and a tachometer giving 0.1 V per rpm. The control input is −15 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 10 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.1 V mỗi vòng/phút. Ngõ vào điều khiển là −15 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "150 rpm",
+    "vi": "150 rpm"
+   },
+   {
+    "en": "100 rpm",
+    "vi": "100 rpm"
+   },
+   {
+    "en": "75 rpm",
+    "vi": "75 rpm"
+   },
+   {
+    "en": "50 rpm",
+    "vi": "50 rpm"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 10×15/(2 + 1) = 50 rpm (error signal 5 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 10×15/(2 + 1) = 50 vòng/phút (sai số 5 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 20 rpm per volt of error and a tachometer giving 0.05 V per rpm. The control input is −9 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 20 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.05 V mỗi vòng/phút. Ngõ vào điều khiển là −9 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "60 rpm",
+    "vi": "60 rpm"
+   },
+   {
+    "en": "180 rpm",
+    "vi": "180 rpm"
+   },
+   {
+    "en": "90 rpm",
+    "vi": "90 rpm"
+   },
+   {
+    "en": "120 rpm",
+    "vi": "120 rpm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 20×9/(2 + 1) = 60 rpm (error signal 3 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 20×9/(2 + 1) = 60 vòng/phút (sai số 3 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In the same velocity servo (control −9 V, equal R2 = R3, 20 rpm/V motor, 0.05 V/rpm tachometer) what is the error signal at the very first instant, before the load moves?",
+   "vi": "Ở servo vận tốc đó (điều khiển −9 V, R2 = R3, động cơ 20 vòng/phút/V, máy phát tốc 0.05 V/vòng/phút), tín hiệu sai số ở thời điểm đầu tiên, trước khi tải chuyển động, là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-4.5 V",
+    "vi": "-4.5 V"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "-9 V",
+    "vi": "-9 V"
+   },
+   {
+    "en": "4.5 V",
+    "vi": "4.5 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The tach output is 0, so the sum point is (−9 + 0)/2 = -4.5 V. (Book: −9 V → −4.5 V.)",
+   "vi": "Máy phát tốc bằng 0 nên điểm cộng là (−9 + 0)/2 = -4.5 V. (Sách: −9 V → −4,5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 5 rpm per volt of error and a tachometer giving 0.2 V per rpm. The control input is −8 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 5 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.2 V mỗi vòng/phút. Ngõ vào điều khiển là −8 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "26.7 rpm",
+    "vi": "26.7 rpm"
+   },
+   {
+    "en": "13.3 rpm",
+    "vi": "13.3 rpm"
+   },
+   {
+    "en": "40 rpm",
+    "vi": "40 rpm"
+   },
+   {
+    "en": "20 rpm",
+    "vi": "20 rpm"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 5×8/(2 + 1) = 13.3 rpm (error signal 2.67 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 5×8/(2 + 1) = 13.3 vòng/phút (sai số 2.67 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A velocity servo has equal summing resistors R2 = R3, a motor turning 10 rpm per volt of error and a tachometer giving 0.1 V per rpm. The control input is −10 V. What is the steady-state speed?",
+   "vi": "Servo vận tốc có R2 = R3, động cơ quay 10 vòng/phút cho mỗi volt sai số và máy phát tốc cho 0.1 V mỗi vòng/phút. Ngõ vào điều khiển là −10 V. Tốc độ ổn định là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "33.3 rpm",
+    "vi": "33.3 rpm"
+   },
+   {
+    "en": "50 rpm",
+    "vi": "50 rpm"
+   },
+   {
+    "en": "100 rpm",
+    "vi": "100 rpm"
+   },
+   {
+    "en": "66.7 rpm",
+    "vi": "66.7 rpm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "At balance N = K·e and e = (Vin − Vtach)/2 with Vtach = t·N, so N = K·Vin/(2 + K·t) = 10×10/(2 + 1) = 33.3 rpm (error signal 3.33 V). (Book example: −9 V, 10 rpm/V, 0.1 V/rpm → 30 rpm, error −3 V.)",
+   "vi": "Khi cân bằng N = K·e và e = (Vin − Vtach)/2 với Vtach = t·N nên N = K·Vin/(2 + K·t) = 10×10/(2 + 1) = 33.3 vòng/phút (sai số 3.33 V). (Ví dụ sách: −9 V, 10 vòng/phút/V, 0,1 V/vòng/phút → 30 vòng/phút, sai số −3 V.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.71",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.71"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a dc position servo with equal summing resistors R2 = R3, the input wiper gives 8 V and the feedback wiper gives -2 V. What is the voltage at the sum point (error signal)?",
+   "vi": "Ở servo vị trí một chiều có R2 = R3, chổi ngõ vào cho 8 V và chổi hồi tiếp cho -2 V. Điện áp tại điểm cộng (tín hiệu sai số) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "10 V",
+    "vi": "10 V"
+   },
+   {
+    "en": "6 V",
+    "vi": "6 V"
+   },
+   {
+    "en": "3 V",
+    "vi": "3 V"
+   },
+   {
+    "en": "8 V",
+    "vi": "8 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "With equal resistors the sum point is the average: (8 + (-2))/2 = 3 V. The motor stops when it reaches 0 V, i.e. feedback = −input. (Book: +10 V and 0 V give +5 V.)",
+   "vi": "Với điện trở bằng nhau điểm cộng là trung bình: (8 + (-2))/2 = 3 V. Động cơ dừng khi về 0 V, tức hồi tiếp = −ngõ vào. (Sách: +10 V và 0 V cho +5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.66",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.66"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a dc position servo with equal summing resistors R2 = R3, the input wiper gives -6 V and the feedback wiper gives 2 V. What is the voltage at the sum point (error signal)?",
+   "vi": "Ở servo vị trí một chiều có R2 = R3, chổi ngõ vào cho -6 V và chổi hồi tiếp cho 2 V. Điện áp tại điểm cộng (tín hiệu sai số) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-2 V",
+    "vi": "-2 V"
+   },
+   {
+    "en": "-4 V",
+    "vi": "-4 V"
+   },
+   {
+    "en": "-8 V",
+    "vi": "-8 V"
+   },
+   {
+    "en": "-6 V",
+    "vi": "-6 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "With equal resistors the sum point is the average: (-6 + (2))/2 = -2 V. The motor stops when it reaches 0 V, i.e. feedback = −input. (Book: +10 V and 0 V give +5 V.)",
+   "vi": "Với điện trở bằng nhau điểm cộng là trung bình: (-6 + (2))/2 = -2 V. Động cơ dừng khi về 0 V, tức hồi tiếp = −ngõ vào. (Sách: +10 V và 0 V cho +5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.66",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.66"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a dc position servo with equal summing resistors R2 = R3, the input wiper gives 12 V and the feedback wiper gives -4 V. What is the voltage at the sum point (error signal)?",
+   "vi": "Ở servo vị trí một chiều có R2 = R3, chổi ngõ vào cho 12 V và chổi hồi tiếp cho -4 V. Điện áp tại điểm cộng (tín hiệu sai số) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4 V",
+    "vi": "4 V"
+   },
+   {
+    "en": "12 V",
+    "vi": "12 V"
+   },
+   {
+    "en": "16 V",
+    "vi": "16 V"
+   },
+   {
+    "en": "8 V",
+    "vi": "8 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "With equal resistors the sum point is the average: (12 + (-4))/2 = 4 V. The motor stops when it reaches 0 V, i.e. feedback = −input. (Book: +10 V and 0 V give +5 V.)",
+   "vi": "Với điện trở bằng nhau điểm cộng là trung bình: (12 + (-4))/2 = 4 V. Động cơ dừng khi về 0 V, tức hồi tiếp = −ngõ vào. (Sách: +10 V và 0 V cho +5 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Servo loops and components",
+   "vi": "Vòng servo và linh kiện"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.66",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.66"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A synchro has a 2.2:1 step-down from the rotor to a single stator coil. With 115 V on the rotor, what is the maximum voltage induced in one stator coil?",
+   "vi": "Synchro có tỉ số giảm 2,2:1 từ rôto xuống một cuộn stato. Với 115 V trên rôto, điện áp cực đại cảm ứng trong một cuộn stato là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "26.1 V",
+    "vi": "26.1 V"
+   },
+   {
+    "en": "52.3 V",
+    "vi": "52.3 V"
+   },
+   {
+    "en": "90.5 V",
+    "vi": "90.5 V"
+   },
+   {
+    "en": "253 V",
+    "vi": "253 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "V = 115/2.2 = 52.3 V at maximum magnetic coupling. (Book: 115 V → 52 V.)",
+   "vi": "V = 115/2,2 = 52.3 V khi ghép từ cực đại. (Sách: 115 V → 52 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.14",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A synchro has a 2.2:1 step-down from the rotor to a single stator coil. With 26 V on the rotor, what is the maximum voltage induced in one stator coil?",
+   "vi": "Synchro có tỉ số giảm 2,2:1 từ rôto xuống một cuộn stato. Với 26 V trên rôto, điện áp cực đại cảm ứng trong một cuộn stato là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "57.2 V",
+    "vi": "57.2 V"
+   },
+   {
+    "en": "20.5 V",
+    "vi": "20.5 V"
+   },
+   {
+    "en": "5.91 V",
+    "vi": "5.91 V"
+   },
+   {
+    "en": "11.8 V",
+    "vi": "11.8 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "V = 26/2.2 = 11.8 V at maximum magnetic coupling. (Book: 115 V → 52 V.)",
+   "vi": "V = 26/2,2 = 11.8 V khi ghép từ cực đại. (Sách: 115 V → 52 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.14",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A synchro has a 2.2:1 step-down from the rotor to a single stator coil. With 90 V on the rotor, what is the maximum voltage induced in one stator coil?",
+   "vi": "Synchro có tỉ số giảm 2,2:1 từ rôto xuống một cuộn stato. Với 90 V trên rôto, điện áp cực đại cảm ứng trong một cuộn stato là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "40.9 V",
+    "vi": "40.9 V"
+   },
+   {
+    "en": "90 V",
+    "vi": "90 V"
+   },
+   {
+    "en": "198 V",
+    "vi": "198 V"
+   },
+   {
+    "en": "20.5 V",
+    "vi": "20.5 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "V = 90/2.2 = 40.9 V at maximum magnetic coupling. (Book: 115 V → 52 V.)",
+   "vi": "V = 90/2,2 = 40.9 V khi ghép từ cực đại. (Sách: 115 V → 52 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.14",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A synchro has a 2.2:1 step-down from the rotor to a single stator coil. With 57.5 V on the rotor, what is the maximum voltage induced in one stator coil?",
+   "vi": "Synchro có tỉ số giảm 2,2:1 từ rôto xuống một cuộn stato. Với 57.5 V trên rôto, điện áp cực đại cảm ứng trong một cuộn stato là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "45.3 V",
+    "vi": "45.3 V"
+   },
+   {
+    "en": "57.5 V",
+    "vi": "57.5 V"
+   },
+   {
+    "en": "26.1 V",
+    "vi": "26.1 V"
+   },
+   {
+    "en": "13.1 V",
+    "vi": "13.1 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "V = 57.5/2.2 = 26.1 V at maximum magnetic coupling. (Book: 115 V → 52 V.)",
+   "vi": "V = 57.5/2,2 = 26.1 V khi ghép từ cực đại. (Sách: 115 V → 52 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.14",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A synchro has a 2.2:1 step-down from the rotor to a single stator coil. With 230 V on the rotor, what is the maximum voltage induced in one stator coil?",
+   "vi": "Synchro có tỉ số giảm 2,2:1 từ rôto xuống một cuộn stato. Với 230 V trên rôto, điện áp cực đại cảm ứng trong một cuộn stato là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "52.3 V",
+    "vi": "52.3 V"
+   },
+   {
+    "en": "506 V",
+    "vi": "506 V"
+   },
+   {
+    "en": "105 V",
+    "vi": "105 V"
+   },
+   {
+    "en": "181 V",
+    "vi": "181 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "V = 230/2.2 = 105 V at maximum magnetic coupling. (Book: 115 V → 52 V.)",
+   "vi": "V = 230/2,2 = 105 V khi ghép từ cực đại. (Sách: 115 V → 52 V.)"
+  },
+  "level": 2,
+  "topic": {
+   "en": "Synchro systems",
+   "vi": "Hệ synchro"
+  },
+  "src": {
+   "en": "Generated – modelled on SERVOMECHANISM (sv) p.14",
+   "vi": "Bổ sung – sinh theo dạng SERVOMECHANISM (sv) tr.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ }
+]
