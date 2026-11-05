@@ -1,0 +1,3164 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The maximum voltage gain from a single transistor amplifier stage is usually between",
+   "vi": "Độ lợi điện áp cực đại từ một tầng khuếch đại dùng một transistor thường nằm trong khoảng"
+  },
+  "opts": [
+   {
+    "en": "10 and 100",
+    "vi": "10 và 100"
+   },
+   {
+    "en": "1 and 2",
+    "vi": "1 và 2"
+   },
+   {
+    "en": "1 000 and 10 000",
+    "vi": "1 000 và 10 000"
+   },
+   {
+    "en": "0.1 and 0.9",
+    "vi": "0,1 và 0,9"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Hence two or three stages are cascaded for more gain.",
+   "vi": "Vì vậy nối tầng hai hoặc ba tầng để có thêm độ lợi."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Why are amplifiers connected in cascade?",
+   "vi": "Vì sao các bộ khuếch đại được nối tầng?"
+  },
+  "opts": [
+   {
+    "en": "Many applications need much more gain than one stage gives",
+    "vi": "Nhiều ứng dụng cần độ lợi lớn hơn nhiều so với một tầng"
+   },
+   {
+    "en": "A single stage cannot amplify at all",
+    "vi": "Một tầng không thể khuếch đại được"
+   },
+   {
+    "en": "Cascading removes the need for a power supply",
+    "vi": "Nối tầng loại bỏ nhu cầu nguồn cấp"
+   },
+   {
+    "en": "It lowers the gain to a safe value",
+    "vi": "Nó hạ độ lợi xuống mức an toàn"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Each stage increases the voltage gain in succession.",
+   "vi": "Mỗi tầng nối tiếp làm tăng độ lợi điện áp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The total gain of a cascade is",
+   "vi": "Độ lợi tổng của chuỗi ghép tầng là"
+  },
+  "opts": [
+   {
+    "en": "the product of the gains of each stage",
+    "vi": "tích các độ lợi của từng tầng"
+   },
+   {
+    "en": "the sum of the stage gains",
+    "vi": "tổng các độ lợi từng tầng"
+   },
+   {
+    "en": "the average of the stage gains",
+    "vi": "trung bình các độ lợi từng tầng"
+   },
+   {
+    "en": "the gain of the first stage only",
+    "vi": "chỉ độ lợi của tầng đầu"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "In decibels the stage gains add.",
+   "vi": "Tính bằng dB thì độ lợi các tầng cộng lại."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Feedback is",
+   "vi": "Hồi tiếp là"
+  },
+  "opts": [
+   {
+    "en": "sending a small portion of the output signal back to the input",
+    "vi": "đưa một phần nhỏ tín hiệu ra trở lại ngõ vào"
+   },
+   {
+    "en": "removing the input signal entirely",
+    "vi": "loại bỏ hoàn toàn tín hiệu vào"
+   },
+   {
+    "en": "amplifying only the power supply ripple",
+    "vi": "chỉ khuếch đại gợn của nguồn"
+   },
+   {
+    "en": "connecting two outputs together",
+    "vi": "nối hai ngõ ra với nhau"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "There are positive (regenerative) and negative (degenerative) feedback.",
+   "vi": "Có hồi tiếp dương (tái sinh) và âm (suy giảm)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "With positive feedback the returned signal is",
+   "vi": "Với hồi tiếp dương, tín hiệu trả về"
+  },
+  "opts": [
+   {
+    "en": "in phase with the input and adds constructively",
+    "vi": "cùng pha với tín hiệu vào và cộng cùng chiều"
+   },
+   {
+    "en": "out of phase and subtracts from the input",
+    "vi": "lệch pha và trừ vào tín hiệu vào"
+   },
+   {
+    "en": "a dc level that shifts the Q-point only",
+    "vi": "mức một chiều chỉ làm dịch điểm Q"
+   },
+   {
+    "en": "removed by the coupling capacitor",
+    "vi": "bị tụ ghép loại bỏ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The output amplitude is greater than without feedback.",
+   "vi": "Biên độ ra lớn hơn khi không có hồi tiếp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Too much positive feedback causes",
+   "vi": "Hồi tiếp dương quá mức gây ra"
+  },
+  "opts": [
+   {
+    "en": "oscillation (e.g. an audio system squealing)",
+    "vi": "dao động (ví dụ hệ âm thanh hú)"
+   },
+   {
+    "en": "a lower output amplitude",
+    "vi": "biên độ ra thấp hơn"
+   },
+   {
+    "en": "perfect stability of the Q-point",
+    "vi": "điểm Q ổn định hoàn hảo"
+   },
+   {
+    "en": "a zero output",
+    "vi": "ngõ ra bằng không"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Oscillators deliberately use positive feedback.",
+   "vi": "Mạch dao động cố ý dùng hồi tiếp dương."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Negative feedback signal is",
+   "vi": "Tín hiệu hồi tiếp âm"
+  },
+  "opts": [
+   {
+    "en": "out of phase with the input, giving a lower-amplitude output",
+    "vi": "lệch pha với tín hiệu vào, cho biên độ ra thấp hơn"
+   },
+   {
+    "en": "in phase with the input, raising the gain",
+    "vi": "cùng pha với tín hiệu vào, làm tăng độ lợi"
+   },
+   {
+    "en": "always zero",
+    "vi": "luôn bằng không"
+   },
+   {
+    "en": "identical to the supply voltage",
+    "vi": "giống điện áp nguồn"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It causes destructive interference and degenerates the input signal.",
+   "vi": "Nó gây giao thoa triệt tiêu và làm suy giảm tín hiệu vào."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Negative feedback tends to",
+   "vi": "Hồi tiếp âm có xu hướng"
+  },
+  "opts": [
+   {
+    "en": "stabilise the amplifier so it works in its normal range without oscillation",
+    "vi": "ổn định bộ khuếch đại để hoạt động trong dải bình thường không dao động"
+   },
+   {
+    "en": "make the amplifier oscillate",
+    "vi": "làm bộ khuếch đại dao động"
+   },
+   {
+    "en": "double the gain of every stage",
+    "vi": "nhân đôi độ lợi mỗi tầng"
+   },
+   {
+    "en": "remove the need for biasing",
+    "vi": "loại bỏ nhu cầu phân cực"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It lowers gain but improves stability.",
+   "vi": "Nó giảm độ lợi nhưng tăng ổn định."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The quiescent operating point (Q-point) is",
+   "vi": "Điểm làm việc tĩnh (điểm Q) là"
+  },
+  "opts": [
+   {
+    "en": "the steady-state voltage or current at a terminal with no input signal applied",
+    "vi": "điện áp hoặc dòng ở trạng thái ổn định tại một chân khi không có tín hiệu vào"
+   },
+   {
+    "en": "the highest output voltage the stage can deliver",
+    "vi": "điện áp ra cao nhất mà tầng có thể cấp"
+   },
+   {
+    "en": "the frequency at which the gain is unity",
+    "vi": "tần số mà độ lợi bằng một"
+   },
+   {
+    "en": "the point where the load line meets the signal",
+    "vi": "điểm đường tải gặp tín hiệu"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "An unstable Q-point drifts with temperature and supply.",
+   "vi": "Điểm Q không ổn định sẽ trôi theo nhiệt độ và nguồn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Direct coupling is chosen for",
+   "vi": "Ghép trực tiếp được chọn cho"
+  },
+  "opts": [
+   {
+    "en": "pulse amplifiers, differential amplifiers and regulator circuits",
+    "vi": "mạch khuếch đại xung, vi sai và mạch ổn áp"
+   },
+   {
+    "en": "transformer impedance matching only",
+    "vi": "chỉ phối hợp trở kháng bằng biến áp"
+   },
+   {
+    "en": "audio filters only",
+    "vi": "chỉ bộ lọc âm thanh"
+   },
+   {
+    "en": "RF tuning circuits only",
+    "vi": "chỉ mạch chỉnh cộng hưởng RF"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It uses fewer components and gives higher gain.",
+   "vi": "Nó dùng ít linh kiện hơn và cho độ lợi cao hơn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An advantage of direct coupling is",
+   "vi": "Ưu điểm của ghép trực tiếp là"
+  },
+  "opts": [
+   {
+    "en": "good frequency response because no capacitors or inductors are used",
+    "vi": "đáp ứng tần số tốt vì không dùng tụ hay cuộn cảm"
+   },
+   {
+    "en": "perfect impedance matching between stages",
+    "vi": "phối hợp trở kháng hoàn hảo giữa các tầng"
+   },
+   {
+    "en": "immunity to supply fluctuations",
+    "vi": "miễn nhiễm với dao động nguồn"
+   },
+   {
+    "en": "isolation of each stage’s dc bias",
+    "vi": "cách ly phân cực một chiều từng tầng"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Drawbacks: impedance matching and supply-voltage fluctuations.",
+   "vi": "Nhược điểm: phối hợp trở kháng và dao động nguồn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "RC coupling is the most common method because it",
+   "vi": "Ghép RC là phương pháp phổ biến nhất vì nó"
+  },
+  "opts": [
+   {
+    "en": "eliminates the impedance-matching problems of direct coupling",
+    "vi": "loại bỏ vấn đề phối hợp trở kháng của ghép trực tiếp"
+   },
+   {
+    "en": "amplifies dc signals best",
+    "vi": "khuếch đại tín hiệu một chiều tốt nhất"
+   },
+   {
+    "en": "uses no capacitors",
+    "vi": "không dùng tụ điện"
+   },
+   {
+    "en": "gives the largest possible gain",
+    "vi": "cho độ lợi lớn nhất có thể"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The capacitor blocks the dc bias and passes the ac signal.",
+   "vi": "Tụ chặn phân cực một chiều và cho tín hiệu xoay chiều đi qua."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In RC coupling the coupling capacitor",
+   "vi": "Trong ghép RC, tụ ghép"
+  },
+  "opts": [
+   {
+    "en": "blocks the dc bias and passes the ac signal to the next stage",
+    "vi": "chặn phân cực một chiều và cho tín hiệu xoay chiều sang tầng sau"
+   },
+   {
+    "en": "passes dc and blocks ac",
+    "vi": "cho dc đi qua và chặn ac"
+   },
+   {
+    "en": "stores the signal for later release",
+    "vi": "lưu tín hiệu để giải phóng sau"
+   },
+   {
+    "en": "replaces the transistor",
+    "vi": "thay thế transistor"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Each stage’s bias is isolated from the next.",
+   "vi": "Phân cực mỗi tầng được cách ly với tầng sau."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Impedance coupling uses",
+   "vi": "Ghép trở kháng dùng"
+  },
+  "opts": [
+   {
+    "en": "a coil as the load of the first stage",
+    "vi": "cuộn cảm làm tải của tầng thứ nhất"
+   },
+   {
+    "en": "a capacitor only",
+    "vi": "chỉ tụ điện"
+   },
+   {
+    "en": "a transformer with two secondaries",
+    "vi": "biến áp có hai thứ cấp"
+   },
+   {
+    "en": "a wire link",
+    "vi": "dây nối trực tiếp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The coil’s impedance is high at high frequency, so it works best there.",
+   "vi": "Trở kháng cuộn cảm cao ở tần số cao nên hiệu quả nhất ở đó."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A transformer-coupled stage can aid greatly with",
+   "vi": "Tầng ghép biến áp giúp nhiều cho"
+  },
+  "opts": [
+   {
+    "en": "impedance matching between stages",
+    "vi": "phối hợp trở kháng giữa các tầng"
+   },
+   {
+    "en": "removing all distortion",
+    "vi": "loại bỏ hết méo"
+   },
+   {
+    "en": "raising the supply voltage",
+    "vi": "tăng điện áp nguồn"
+   },
+   {
+    "en": "measuring temperature",
+    "vi": "đo nhiệt độ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It is described as very efficient.",
+   "vi": "Được mô tả là rất hiệu quả."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.41 (PDF p.52)",
+   "vi": "EASA M04 SM01, tr.1.41 (PDF tr.52)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Power amplifiers are designed to",
+   "vi": "Bộ khuếch đại công suất được thiết kế để"
+  },
+  "opts": [
+   {
+    "en": "obtain a large amount of power with the fewest transistors and low distortion",
+    "vi": "tạo công suất lớn với ít transistor nhất và méo thấp"
+   },
+   {
+    "en": "obtain the highest voltage gain at any cost",
+    "vi": "đạt độ lợi điện áp cao nhất bằng mọi giá"
+   },
+   {
+    "en": "amplify only dc signals",
+    "vi": "chỉ khuếch đại tín hiệu một chiều"
+   },
+   {
+    "en": "replace the load with a resistor",
+    "vi": "thay tải bằng điện trở"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Examples of loads: loudspeakers and servomotors in flight control.",
+   "vi": "Ví dụ tải: loa và động cơ servo trong điều khiển bay."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.41 (PDF p.52)",
+   "vi": "EASA M04 SM01, tr.1.41 (PDF tr.52)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a push-pull amplifier the transistors",
+   "vi": "Trong bộ khuếch đại đẩy kéo, các transistor"
+  },
+  "opts": [
+   {
+    "en": "carry the load peaks alternately",
+    "vi": "gánh các đỉnh tải luân phiên"
+   },
+   {
+    "en": "conduct together at all times and share equally",
+    "vi": "dẫn đồng thời mọi lúc và chia đều"
+   },
+   {
+    "en": "both turn off at the signal peaks",
+    "vi": "cùng tắt ở các đỉnh tín hiệu"
+   },
+   {
+    "en": "only amplify the positive half",
+    "vi": "chỉ khuếch đại nửa dương"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "When one conducts the other is off; the output transformer combines the halves.",
+   "vi": "Khi một transistor dẫn thì transistor kia tắt; biến áp ra ghép hai nửa."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.41 (PDF p.52)",
+   "vi": "EASA M04 SM01, tr.1.41 (PDF tr.52)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A push-pull amplifier is a classic example of a",
+   "vi": "Bộ khuếch đại đẩy kéo là ví dụ điển hình của"
+  },
+  "opts": [
+   {
+    "en": "class B amplifier",
+    "vi": "bộ khuếch đại lớp B"
+   },
+   {
+    "en": "class A amplifier",
+    "vi": "bộ khuếch đại lớp A"
+   },
+   {
+    "en": "class C amplifier",
+    "vi": "bộ khuếch đại lớp C"
+   },
+   {
+    "en": "class D switching regulator",
+    "vi": "ổn áp xung lớp D"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Each transistor conducts for 50 % of the input.",
+   "vi": "Mỗi transistor dẫn 50 % tín hiệu vào."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.41 (PDF p.52)",
+   "vi": "EASA M04 SM01, tr.1.41 (PDF tr.52)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In class AB operation the transistor current flows for",
+   "vi": "Ở chế độ lớp AB, dòng transistor chảy trong"
+  },
+  "opts": [
+   {
+    "en": "more than 50 % but less than 100 % of the input signal",
+    "vi": "hơn 50 % nhưng dưới 100 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "exactly 100 % of the input signal",
+    "vi": "đúng 100 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "exactly 50 % of the input signal",
+    "vi": "đúng 50 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "less than 50 % of the input signal",
+    "vi": "dưới 50 % chu kỳ tín hiệu vào"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The output is distorted but both polarities are available.",
+   "vi": "Ngõ ra méo nhưng có cả hai cực tính."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In class B operation the transistor current flows for",
+   "vi": "Ở chế độ lớp B, dòng transistor chảy trong"
+  },
+  "opts": [
+   {
+    "en": "only 50 % of the input signal",
+    "vi": "chỉ 50 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "100 % of the input signal",
+    "vi": "100 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "less than 50 % of the input signal",
+    "vi": "dưới 50 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "none of the input signal",
+    "vi": "không phần nào của tín hiệu vào"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Class B is about twice as efficient as class A.",
+   "vi": "Lớp B hiệu suất gấp khoảng hai lần lớp A."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In class C operation the transistor current flows for",
+   "vi": "Ở chế độ lớp C, dòng transistor chảy trong"
+  },
+  "opts": [
+   {
+    "en": "less than 50 % of the input signal",
+    "vi": "dưới 50 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "more than 50 % of the input signal",
+    "vi": "trên 50 % chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "all of the input signal",
+    "vi": "toàn bộ chu kỳ tín hiệu vào"
+   },
+   {
+    "en": "exactly 75 % of the input signal",
+    "vi": "đúng 75 % chu kỳ tín hiệu vào"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Class C is used with tuned circuits.",
+   "vi": "Lớp C dùng với mạch cộng hưởng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The total gain of a cascade is the product of the gains of each stage.",
+   "vi": "Độ lợi tổng của chuỗi ghép tầng là tích độ lợi từng tầng."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Gains multiply.",
+   "vi": "Độ lợi nhân với nhau."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Positive feedback returns a signal that is out of phase with the input.",
+   "vi": "Hồi tiếp dương trả về tín hiệu lệch pha với tín hiệu vào."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Positive feedback is in phase; negative feedback is out of phase.",
+   "vi": "Hồi tiếp dương cùng pha; hồi tiếp âm lệch pha."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Negative feedback tends to stabilise an amplifier.",
+   "vi": "Hồi tiếp âm có xu hướng ổn định bộ khuếch đại."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It lowers amplitude but improves stability.",
+   "vi": "Nó giảm biên độ nhưng tăng ổn định."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.39 (PDF p.50)",
+   "vi": "EASA M04 SM01, tr.1.39 (PDF tr.50)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Direct coupling uses more components and gives lower gain than other coupling methods.",
+   "vi": "Ghép trực tiếp dùng nhiều linh kiện hơn và cho độ lợi thấp hơn các cách ghép khác."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It uses fewer components and gives higher gain.",
+   "vi": "Nó dùng ít linh kiện hơn và cho độ lợi cao hơn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Direct coupling is subject to supply-voltage fluctuations and impedance-matching issues.",
+   "vi": "Ghép trực tiếp chịu dao động điện áp nguồn và vấn đề phối hợp trở kháng."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "These are its stated drawbacks.",
+   "vi": "Đó là các nhược điểm được nêu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "In RC coupling a capacitor passes the dc bias and blocks the ac signal.",
+   "vi": "Trong ghép RC, tụ điện cho phân cực một chiều đi qua và chặn tín hiệu xoay chiều."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It blocks dc and passes ac.",
+   "vi": "Nó chặn dc và cho ac đi qua."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.40 (PDF p.51)",
+   "vi": "EASA M04 SM01, tr.1.40 (PDF tr.51)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A push-pull stage lets the two transistors carry the load peaks alternately.",
+   "vi": "Tầng đẩy kéo cho hai transistor gánh các đỉnh tải luân phiên."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Hence no equalising resistors are needed.",
+   "vi": "Do đó không cần điện trở cân bằng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.41 (PDF p.52)",
+   "vi": "EASA M04 SM01, tr.1.41 (PDF tr.52)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Connecting two transistors in parallel with equalising resistors is more efficient than push-pull.",
+   "vi": "Mắc song song hai transistor với điện trở cân bằng hiệu quả hơn đẩy kéo."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The equalising resistors consume valuable power; push-pull is more efficient.",
+   "vi": "Điện trở cân bằng tiêu tốn công suất; đẩy kéo hiệu quả hơn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.41 (PDF p.52)",
+   "vi": "EASA M04 SM01, tr.1.41 (PDF tr.52)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Class B amplifiers are about twice as efficient as class A because the device uses power for half the input signal.",
+   "vi": "Lớp B hiệu suất gấp khoảng hai lần lớp A vì phần tử chỉ dùng điện cho nửa tín hiệu vào."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Class A conducts 100 % of the cycle.",
+   "vi": "Lớp A dẫn 100 % chu kỳ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The Class AB amplifier has better efficiency and poorer fidelity than the Class A amplifier.",
+   "vi": "Bộ khuếch đại lớp AB có hiệu suất tốt hơn và độ trung thực kém hơn lớp A."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Used where both halves of the signal are needed but exact reproduction is not.",
+   "vi": "Dùng khi cần cả hai nửa tín hiệu nhưng không cần tái tạo chính xác."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.38 (PDF p.49)",
+   "vi": "EASA M04 SM01, tr.1.38 (PDF tr.49)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "An oscillator with direct coupling between output and input has no means of controlling the amplitude.",
+   "vi": "Mạch dao động ghép trực tiếp giữa ngõ ra và ngõ vào không có cách điều khiển biên độ."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Real designs add automatic bias control.",
+   "vi": "Thiết kế thực tế thêm điều khiển phân cực tự động."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.42 (PDF p.53)",
+   "vi": "EASA M04 SM01, tr.1.42 (PDF tr.53)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "An astable multivibrator needs an external trigger pulse to generate its output.",
+   "vi": "Mạch đa hài phi ổn cần xung kích ngoài để tạo ngõ ra."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It is free-running; the monostable needs a trigger.",
+   "vi": "Nó chạy tự do; đa hài đơn ổn mới cần xung kích."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "EASA M04 SM01, p.1.42 (PDF p.53)",
+   "vi": "EASA M04 SM01, tr.1.42 (PDF tr.53)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "EASA text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A cascade has stage voltage gains of 10, 20. What is the overall voltage gain?",
+   "vi": "Chuỗi ghép tầng có độ lợi điện áp các tầng là 10, 20. Độ lợi điện áp tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "200",
+    "vi": "200"
+   },
+   {
+    "en": "30",
+    "vi": "30"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   },
+   {
+    "en": "400",
+    "vi": "400"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Overall gain = product = 10 × 20 = 200.",
+   "vi": "Độ lợi tổng = tích = 10 × 20 = 200."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A cascade has stage voltage gains of 15, 15, 15. What is the overall voltage gain?",
+   "vi": "Chuỗi ghép tầng có độ lợi điện áp các tầng là 15, 15, 15. Độ lợi điện áp tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3380",
+    "vi": "3380"
+   },
+   {
+    "en": "45",
+    "vi": "45"
+   },
+   {
+    "en": "1120",
+    "vi": "1120"
+   },
+   {
+    "en": "6750",
+    "vi": "6750"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Overall gain = product = 15 × 15 × 15 = 3380.",
+   "vi": "Độ lợi tổng = tích = 15 × 15 × 15 = 3380."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A cascade has stage voltage gains of 5, 8, 12. What is the overall voltage gain?",
+   "vi": "Chuỗi ghép tầng có độ lợi điện áp các tầng là 5, 8, 12. Độ lợi điện áp tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "480",
+    "vi": "480"
+   },
+   {
+    "en": "25",
+    "vi": "25"
+   },
+   {
+    "en": "160",
+    "vi": "160"
+   },
+   {
+    "en": "960",
+    "vi": "960"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Overall gain = product = 5 × 8 × 12 = 480.",
+   "vi": "Độ lợi tổng = tích = 5 × 8 × 12 = 480."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A cascade has stage voltage gains of 100, 50. What is the overall voltage gain?",
+   "vi": "Chuỗi ghép tầng có độ lợi điện áp các tầng là 100, 50. Độ lợi điện áp tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5000",
+    "vi": "5000"
+   },
+   {
+    "en": "150",
+    "vi": "150"
+   },
+   {
+    "en": "2500",
+    "vi": "2500"
+   },
+   {
+    "en": "10,000",
+    "vi": "10,000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Overall gain = product = 100 × 50 = 5000.",
+   "vi": "Độ lợi tổng = tích = 100 × 50 = 5000."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A cascade has stage voltage gains of 25, 4, 10. What is the overall voltage gain?",
+   "vi": "Chuỗi ghép tầng có độ lợi điện áp các tầng là 25, 4, 10. Độ lợi điện áp tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "39",
+    "vi": "39"
+   },
+   {
+    "en": "333",
+    "vi": "333"
+   },
+   {
+    "en": "2000",
+    "vi": "2000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Overall gain = product = 25 × 4 × 10 = 1000.",
+   "vi": "Độ lợi tổng = tích = 25 × 4 × 10 = 1000."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A cascade has stage voltage gains of 30, 30. What is the overall voltage gain?",
+   "vi": "Chuỗi ghép tầng có độ lợi điện áp các tầng là 30, 30. Độ lợi điện áp tổng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "900",
+    "vi": "900"
+   },
+   {
+    "en": "60",
+    "vi": "60"
+   },
+   {
+    "en": "450",
+    "vi": "450"
+   },
+   {
+    "en": "1800",
+    "vi": "1800"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Overall gain = product = 30 × 30 = 900.",
+   "vi": "Độ lợi tổng = tích = 30 × 30 = 900."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Express a voltage gain of 12 in decibels.",
+   "vi": "Biểu diễn độ lợi điện áp 12 theo decibel."
+  },
+  "opts": [
+   {
+    "en": "21.58 dB",
+    "vi": "21.58 dB"
+   },
+   {
+    "en": "10.79 dB",
+    "vi": "10.79 dB"
+   },
+   {
+    "en": "12 dB",
+    "vi": "12 dB"
+   },
+   {
+    "en": "43.17 dB",
+    "vi": "43.17 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "dB = 20·log₁₀(12) = 21.58 dB (10·log is for power).",
+   "vi": "dB = 20·log₁₀(12) = 21.58 dB (10·log dành cho công suất)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Express a voltage gain of 50 in decibels.",
+   "vi": "Biểu diễn độ lợi điện áp 50 theo decibel."
+  },
+  "opts": [
+   {
+    "en": "33.98 dB",
+    "vi": "33.98 dB"
+   },
+   {
+    "en": "16.99 dB",
+    "vi": "16.99 dB"
+   },
+   {
+    "en": "50 dB",
+    "vi": "50 dB"
+   },
+   {
+    "en": "67.96 dB",
+    "vi": "67.96 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "dB = 20·log₁₀(50) = 33.98 dB (10·log is for power).",
+   "vi": "dB = 20·log₁₀(50) = 33.98 dB (10·log dành cho công suất)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Express a voltage gain of 100 in decibels.",
+   "vi": "Biểu diễn độ lợi điện áp 100 theo decibel."
+  },
+  "opts": [
+   {
+    "en": "40 dB",
+    "vi": "40 dB"
+   },
+   {
+    "en": "20.00 dB",
+    "vi": "20.00 dB"
+   },
+   {
+    "en": "100 dB",
+    "vi": "100 dB"
+   },
+   {
+    "en": "80.00 dB",
+    "vi": "80.00 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "dB = 20·log₁₀(100) = 40.00 dB (10·log is for power).",
+   "vi": "dB = 20·log₁₀(100) = 40.00 dB (10·log dành cho công suất)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Express a voltage gain of 2500 in decibels.",
+   "vi": "Biểu diễn độ lợi điện áp 2500 theo decibel."
+  },
+  "opts": [
+   {
+    "en": "67.96 dB",
+    "vi": "67.96 dB"
+   },
+   {
+    "en": "33.98 dB",
+    "vi": "33.98 dB"
+   },
+   {
+    "en": "2500 dB",
+    "vi": "2500 dB"
+   },
+   {
+    "en": "135.92 dB",
+    "vi": "135.92 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "dB = 20·log₁₀(2500) = 67.96 dB (10·log is for power).",
+   "vi": "dB = 20·log₁₀(2500) = 67.96 dB (10·log dành cho công suất)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Express a voltage gain of 20 in decibels.",
+   "vi": "Biểu diễn độ lợi điện áp 20 theo decibel."
+  },
+  "opts": [
+   {
+    "en": "26.02 dB",
+    "vi": "26.02 dB"
+   },
+   {
+    "en": "13.01 dB",
+    "vi": "13.01 dB"
+   },
+   {
+    "en": "20 dB",
+    "vi": "20 dB"
+   },
+   {
+    "en": "52.04 dB",
+    "vi": "52.04 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "dB = 20·log₁₀(20) = 26.02 dB (10·log is for power).",
+   "vi": "dB = 20·log₁₀(20) = 26.02 dB (10·log dành cho công suất)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Express a voltage gain of 400 in decibels.",
+   "vi": "Biểu diễn độ lợi điện áp 400 theo decibel."
+  },
+  "opts": [
+   {
+    "en": "52.04 dB",
+    "vi": "52.04 dB"
+   },
+   {
+    "en": "26.02 dB",
+    "vi": "26.02 dB"
+   },
+   {
+    "en": "400 dB",
+    "vi": "400 dB"
+   },
+   {
+    "en": "104.08 dB",
+    "vi": "104.08 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "dB = 20·log₁₀(400) = 52.04 dB (10·log is for power).",
+   "vi": "dB = 20·log₁₀(400) = 52.04 dB (10·log dành cho công suất)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Stages of 10, 10, 10 dB are cascaded. What is the overall gain as a plain voltage ratio?",
+   "vi": "Các tầng 10, 10, 10 dB được ghép nối tiếp. Độ lợi tổng dưới dạng tỉ số điện áp thường là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "31.6",
+    "vi": "31.6"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "30",
+    "vi": "30"
+   },
+   {
+    "en": "3.16",
+    "vi": "3.16"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Decibels add: 10 + 10 + 10 = 30 dB → 10^(30/20) = 31.6.",
+   "vi": "dB cộng lại: 10 + 10 + 10 = 30 dB → 10^(30/20) = 31.6."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Stages of 20, 14, 6 dB are cascaded. What is the overall gain as a plain voltage ratio?",
+   "vi": "Các tầng 20, 14, 6 dB được ghép nối tiếp. Độ lợi tổng dưới dạng tỉ số điện áp thường là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "100",
+    "vi": "100"
+   },
+   {
+    "en": "10,000",
+    "vi": "10,000"
+   },
+   {
+    "en": "40",
+    "vi": "40"
+   },
+   {
+    "en": "10",
+    "vi": "10"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Decibels add: 20 + 14 + 6 = 40 dB → 10^(40/20) = 100.",
+   "vi": "dB cộng lại: 20 + 14 + 6 = 40 dB → 10^(40/20) = 100."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Stages of 26, 20 dB are cascaded. What is the overall gain as a plain voltage ratio?",
+   "vi": "Các tầng 26, 20 dB được ghép nối tiếp. Độ lợi tổng dưới dạng tỉ số điện áp thường là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "200",
+    "vi": "200"
+   },
+   {
+    "en": "39,800",
+    "vi": "39,800"
+   },
+   {
+    "en": "46",
+    "vi": "46"
+   },
+   {
+    "en": "20",
+    "vi": "20"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Decibels add: 26 + 20 = 46 dB → 10^(46/20) = 200.",
+   "vi": "dB cộng lại: 26 + 20 = 46 dB → 10^(46/20) = 200."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Stages of 12, 12, 12, 12 dB are cascaded. What is the overall gain as a plain voltage ratio?",
+   "vi": "Các tầng 12, 12, 12, 12 dB được ghép nối tiếp. Độ lợi tổng dưới dạng tỉ số điện áp thường là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "251",
+    "vi": "251"
+   },
+   {
+    "en": "63,100",
+    "vi": "63,100"
+   },
+   {
+    "en": "48",
+    "vi": "48"
+   },
+   {
+    "en": "25.1",
+    "vi": "25.1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Decibels add: 12 + 12 + 12 + 12 = 48 dB → 10^(48/20) = 251.",
+   "vi": "dB cộng lại: 12 + 12 + 12 + 12 = 48 dB → 10^(48/20) = 251."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two cascaded stages have Av1 = 20 and Av2 = 50. A source/input divider passes 0.9 of the signal to the first stage. What is the overall gain from the source?",
+   "vi": "Hai tầng ghép có Av1 = 20 và Av2 = 50. Bộ chia nguồn/ngõ vào chỉ cho 0.9 tín hiệu tới tầng đầu. Độ lợi tổng tính từ nguồn là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "900",
+    "vi": "900"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "1110",
+    "vi": "1110"
+   },
+   {
+    "en": "63",
+    "vi": "63"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "0.9 × 20 × 50 = 900 (loading by the divider reduces the overall gain).",
+   "vi": "0.9 × 20 × 50 = 900 (tải của bộ chia làm giảm độ lợi tổng)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two cascaded stages have Av1 = 10 and Av2 = 30. A source/input divider passes 0.8 of the signal to the first stage. What is the overall gain from the source?",
+   "vi": "Hai tầng ghép có Av1 = 10 và Av2 = 30. Bộ chia nguồn/ngõ vào chỉ cho 0.8 tín hiệu tới tầng đầu. Độ lợi tổng tính từ nguồn là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "240",
+    "vi": "240"
+   },
+   {
+    "en": "300",
+    "vi": "300"
+   },
+   {
+    "en": "375",
+    "vi": "375"
+   },
+   {
+    "en": "32",
+    "vi": "32"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "0.8 × 10 × 30 = 240 (loading by the divider reduces the overall gain).",
+   "vi": "0.8 × 10 × 30 = 240 (tải của bộ chia làm giảm độ lợi tổng)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two cascaded stages have Av1 = 40 and Av2 = 25. A source/input divider passes 0.5 of the signal to the first stage. What is the overall gain from the source?",
+   "vi": "Hai tầng ghép có Av1 = 40 và Av2 = 25. Bộ chia nguồn/ngõ vào chỉ cho 0.5 tín hiệu tới tầng đầu. Độ lợi tổng tính từ nguồn là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "500",
+    "vi": "500"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "2000",
+    "vi": "2000"
+   },
+   {
+    "en": "32.5",
+    "vi": "32.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "0.5 × 40 × 25 = 500 (loading by the divider reduces the overall gain).",
+   "vi": "0.5 × 40 × 25 = 500 (tải của bộ chia làm giảm độ lợi tổng)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two cascaded stages have Av1 = 15 and Av2 = 15. A source/input divider passes 0.95 of the signal to the first stage. What is the overall gain from the source?",
+   "vi": "Hai tầng ghép có Av1 = 15 và Av2 = 15. Bộ chia nguồn/ngõ vào chỉ cho 0.95 tín hiệu tới tầng đầu. Độ lợi tổng tính từ nguồn là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "214",
+    "vi": "214"
+   },
+   {
+    "en": "225",
+    "vi": "225"
+   },
+   {
+    "en": "237",
+    "vi": "237"
+   },
+   {
+    "en": "28.5",
+    "vi": "28.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "0.95 × 15 × 15 = 214 (loading by the divider reduces the overall gain).",
+   "vi": "0.95 × 15 × 15 = 214 (tải của bộ chia làm giảm độ lợi tổng)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An amplifier has open-loop gain A = 100,000 and a negative-feedback fraction B = 0.01. What is the closed-loop gain Acl = A/(1 + A·B)?",
+   "vi": "Bộ khuếch đại có độ lợi vòng hở A = 100,000 và tỉ lệ hồi tiếp âm B = 0.01. Độ lợi vòng kín Acl = A/(1 + A·B) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "99.9",
+    "vi": "99.9"
+   },
+   {
+    "en": "105",
+    "vi": "105"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "-100.1",
+    "vi": "-100.1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Acl = 100,000/(1 + 100,000×0.01) = 99.9 ≈ 1/B = 100 when A·B ≫ 1.",
+   "vi": "Acl = 100,000/(1 + 100,000×0.01) = 99.9 ≈ 1/B = 100 khi A·B ≫ 1."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An amplifier has open-loop gain A = 50,000 and a negative-feedback fraction B = 0.1. What is the closed-loop gain Acl = A/(1 + A·B)?",
+   "vi": "Bộ khuếch đại có độ lợi vòng hở A = 50,000 và tỉ lệ hồi tiếp âm B = 0.1. Độ lợi vòng kín Acl = A/(1 + A·B) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "9.998",
+    "vi": "9.998"
+   },
+   {
+    "en": "15",
+    "vi": "15"
+   },
+   {
+    "en": "5000",
+    "vi": "5000"
+   },
+   {
+    "en": "-10",
+    "vi": "-10"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Acl = 50,000/(1 + 50,000×0.1) = 9.998 ≈ 1/B = 10 when A·B ≫ 1.",
+   "vi": "Acl = 50,000/(1 + 50,000×0.1) = 9.998 ≈ 1/B = 10 khi A·B ≫ 1."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An amplifier has open-loop gain A = 200,000 and a negative-feedback fraction B = 0.05. What is the closed-loop gain Acl = A/(1 + A·B)?",
+   "vi": "Bộ khuếch đại có độ lợi vòng hở A = 200,000 và tỉ lệ hồi tiếp âm B = 0.05. Độ lợi vòng kín Acl = A/(1 + A·B) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "20",
+    "vi": "20"
+   },
+   {
+    "en": "25",
+    "vi": "25"
+   },
+   {
+    "en": "10,000",
+    "vi": "10,000"
+   },
+   {
+    "en": "-20",
+    "vi": "-20"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Acl = 200,000/(1 + 200,000×0.05) = 20 ≈ 1/B = 20 when A·B ≫ 1.",
+   "vi": "Acl = 200,000/(1 + 200,000×0.05) = 20 ≈ 1/B = 20 khi A·B ≫ 1."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An amplifier has open-loop gain A = 1,000 and a negative-feedback fraction B = 0.02. What is the closed-loop gain Acl = A/(1 + A·B)?",
+   "vi": "Bộ khuếch đại có độ lợi vòng hở A = 1,000 và tỉ lệ hồi tiếp âm B = 0.02. Độ lợi vòng kín Acl = A/(1 + A·B) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "47.62",
+    "vi": "47.62"
+   },
+   {
+    "en": "50",
+    "vi": "50"
+   },
+   {
+    "en": "20",
+    "vi": "20"
+   },
+   {
+    "en": "-52.63",
+    "vi": "-52.63"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Acl = 1,000/(1 + 1,000×0.02) = 47.62 ≈ 1/B = 50 when A·B ≫ 1.",
+   "vi": "Acl = 1,000/(1 + 1,000×0.02) = 47.62 ≈ 1/B = 50 khi A·B ≫ 1."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A feedback oscillator amplifier has Av = 20. What feedback fraction B satisfies the oscillation condition A·B = 1?",
+   "vi": "Bộ khuếch đại của dao động hồi tiếp có Av = 20. Tỉ lệ hồi tiếp B nào thỏa điều kiện dao động A·B = 1?"
+  },
+  "opts": [
+   {
+    "en": "0.05",
+    "vi": "0.05"
+   },
+   {
+    "en": "20",
+    "vi": "20"
+   },
+   {
+    "en": "0.0476",
+    "vi": "0.0476"
+   },
+   {
+    "en": "0.1",
+    "vi": "0.1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "B = 1/Av = 0.05.",
+   "vi": "B = 1/Av = 0.05."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A feedback oscillator amplifier has Av = 50. What feedback fraction B satisfies the oscillation condition A·B = 1?",
+   "vi": "Bộ khuếch đại của dao động hồi tiếp có Av = 50. Tỉ lệ hồi tiếp B nào thỏa điều kiện dao động A·B = 1?"
+  },
+  "opts": [
+   {
+    "en": "0.02",
+    "vi": "0.02"
+   },
+   {
+    "en": "50",
+    "vi": "50"
+   },
+   {
+    "en": "0.0196",
+    "vi": "0.0196"
+   },
+   {
+    "en": "0.04",
+    "vi": "0.04"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "B = 1/Av = 0.02.",
+   "vi": "B = 1/Av = 0.02."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A feedback oscillator amplifier has Av = 100. What feedback fraction B satisfies the oscillation condition A·B = 1?",
+   "vi": "Bộ khuếch đại của dao động hồi tiếp có Av = 100. Tỉ lệ hồi tiếp B nào thỏa điều kiện dao động A·B = 1?"
+  },
+  "opts": [
+   {
+    "en": "0.01",
+    "vi": "0.01"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   },
+   {
+    "en": "0.0099",
+    "vi": "0.0099"
+   },
+   {
+    "en": "0.02",
+    "vi": "0.02"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "B = 1/Av = 0.01.",
+   "vi": "B = 1/Av = 0.01."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A feedback oscillator amplifier has Av = 250. What feedback fraction B satisfies the oscillation condition A·B = 1?",
+   "vi": "Bộ khuếch đại của dao động hồi tiếp có Av = 250. Tỉ lệ hồi tiếp B nào thỏa điều kiện dao động A·B = 1?"
+  },
+  "opts": [
+   {
+    "en": "0.004",
+    "vi": "0.004"
+   },
+   {
+    "en": "250",
+    "vi": "250"
+   },
+   {
+    "en": "0.00398",
+    "vi": "0.00398"
+   },
+   {
+    "en": "0.008",
+    "vi": "0.008"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "B = 1/Av = 0.004.",
+   "vi": "B = 1/Av = 0.004."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A two-supply class B push-pull amplifier has VCC = 20 V and RL = 50 Ω. What is Ic(sat)?",
+   "vi": "Bộ khuếch đại đẩy kéo lớp B hai nguồn có VCC = 20 V và RL = 50 Ω. Ic(sat) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.4 A",
+    "vi": "0.4 A"
+   },
+   {
+    "en": "1e+03 A",
+    "vi": "1e+03 A"
+   },
+   {
+    "en": "0.2 A",
+    "vi": "0.2 A"
+   },
+   {
+    "en": "0.8 A",
+    "vi": "0.8 A"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Ic(sat) = VCC/RL = 20/50 = 0.4 A.",
+   "vi": "Ic(sat) = VCC/RL = 20/50 = 0.4 A."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A two-supply class B push-pull amplifier has VCC = 15 V and RL = 75 Ω. What is Ic(sat)?",
+   "vi": "Bộ khuếch đại đẩy kéo lớp B hai nguồn có VCC = 15 V và RL = 75 Ω. Ic(sat) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.2 A",
+    "vi": "0.2 A"
+   },
+   {
+    "en": "1.12e+03 A",
+    "vi": "1.12e+03 A"
+   },
+   {
+    "en": "0.1 A",
+    "vi": "0.1 A"
+   },
+   {
+    "en": "0.4 A",
+    "vi": "0.4 A"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Ic(sat) = VCC/RL = 15/75 = 0.2 A.",
+   "vi": "Ic(sat) = VCC/RL = 15/75 = 0.2 A."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A two-supply class B push-pull amplifier has VCC = 12 V and RL = 8 Ω. What is Ic(sat)?",
+   "vi": "Bộ khuếch đại đẩy kéo lớp B hai nguồn có VCC = 12 V và RL = 8 Ω. Ic(sat) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.5 A",
+    "vi": "1.5 A"
+   },
+   {
+    "en": "96 A",
+    "vi": "96 A"
+   },
+   {
+    "en": "0.75 A",
+    "vi": "0.75 A"
+   },
+   {
+    "en": "3 A",
+    "vi": "3 A"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Ic(sat) = VCC/RL = 12/8 = 1.5 A.",
+   "vi": "Ic(sat) = VCC/RL = 12/8 = 1.5 A."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A two-supply class B push-pull amplifier has VCC = 24 V and RL = 50 Ω. What is Ic(sat)?",
+   "vi": "Bộ khuếch đại đẩy kéo lớp B hai nguồn có VCC = 24 V và RL = 50 Ω. Ic(sat) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.48 A",
+    "vi": "0.48 A"
+   },
+   {
+    "en": "1.2e+03 A",
+    "vi": "1.2e+03 A"
+   },
+   {
+    "en": "0.24 A",
+    "vi": "0.24 A"
+   },
+   {
+    "en": "0.96 A",
+    "vi": "0.96 A"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Ic(sat) = VCC/RL = 24/50 = 0.48 A.",
+   "vi": "Ic(sat) = VCC/RL = 24/50 = 0.48 A."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A class C transistor is on for 10 % of the cycle with Vce(sat) = 0.18 V and Ic(sat) = 25 mA. What is the average power dissipation?",
+   "vi": "Transistor lớp C dẫn 10 % chu kỳ với Vce(sat) = 0.18 V và Ic(sat) = 25 mA. Công suất tiêu tán trung bình là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.45 mW",
+    "vi": "0.45 mW"
+   },
+   {
+    "en": "4.5 mW",
+    "vi": "4.5 mW"
+   },
+   {
+    "en": "0.045 mW",
+    "vi": "0.045 mW"
+   },
+   {
+    "en": "2.5 mW",
+    "vi": "2.5 mW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "PD = duty × Vce(sat) × Ic(sat) = 0.1 × 0.18 V × 25 mA = 0.45 mW.",
+   "vi": "PD = chu kỳ × Vce(sat) × Ic(sat) = 0.1 × 0.18 V × 25 mA = 0.45 mW."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A class C transistor is on for 20 % of the cycle with Vce(sat) = 0.2 V and Ic(sat) = 40 mA. What is the average power dissipation?",
+   "vi": "Transistor lớp C dẫn 20 % chu kỳ với Vce(sat) = 0.2 V và Ic(sat) = 40 mA. Công suất tiêu tán trung bình là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.6 mW",
+    "vi": "1.6 mW"
+   },
+   {
+    "en": "8 mW",
+    "vi": "8 mW"
+   },
+   {
+    "en": "16 mW",
+    "vi": "16 mW"
+   },
+   {
+    "en": "0.16 mW",
+    "vi": "0.16 mW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "PD = duty × Vce(sat) × Ic(sat) = 0.2 × 0.2 V × 40 mA = 1.6 mW.",
+   "vi": "PD = chu kỳ × Vce(sat) × Ic(sat) = 0.2 × 0.2 V × 40 mA = 1.6 mW."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A class C transistor is on for 5 % of the cycle with Vce(sat) = 0.15 V and Ic(sat) = 100 mA. What is the average power dissipation?",
+   "vi": "Transistor lớp C dẫn 5 % chu kỳ với Vce(sat) = 0.15 V và Ic(sat) = 100 mA. Công suất tiêu tán trung bình là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.75 mW",
+    "vi": "0.75 mW"
+   },
+   {
+    "en": "15 mW",
+    "vi": "15 mW"
+   },
+   {
+    "en": "7.5 mW",
+    "vi": "7.5 mW"
+   },
+   {
+    "en": "0.075 mW",
+    "vi": "0.075 mW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "PD = duty × Vce(sat) × Ic(sat) = 0.05 × 0.15 V × 100 mA = 0.75 mW.",
+   "vi": "PD = chu kỳ × Vce(sat) × Ic(sat) = 0.05 × 0.15 V × 100 mA = 0.75 mW."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the resonant frequency of a tank circuit with L = 10 mH and C = 0.001 μF?",
+   "vi": "Tần số cộng hưởng của mạch tank có L = 10 mH và C = 0.001 μF là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "50.3 kHz",
+    "vi": "50.3 kHz"
+   },
+   {
+    "en": "316 kHz",
+    "vi": "316 kHz"
+   },
+   {
+    "en": "8.01 kHz",
+    "vi": "8.01 kHz"
+   },
+   {
+    "en": "0.00159 kHz",
+    "vi": "0.00159 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fr = 1/(2π√(LC)) = 50.3 kHz.",
+   "vi": "fr = 1/(2π√(LC)) = 50.3 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the resonant frequency of a tank circuit with L = 1 mH and C = 0.0001 μF?",
+   "vi": "Tần số cộng hưởng của mạch tank có L = 1 mH và C = 0.0001 μF là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "503 kHz",
+    "vi": "503 kHz"
+   },
+   {
+    "en": "3.16e+03 kHz",
+    "vi": "3.16e+03 kHz"
+   },
+   {
+    "en": "80.1 kHz",
+    "vi": "80.1 kHz"
+   },
+   {
+    "en": "0.00503 kHz",
+    "vi": "0.00503 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fr = 1/(2π√(LC)) = 503 kHz.",
+   "vi": "fr = 1/(2π√(LC)) = 503 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the resonant frequency of a tank circuit with L = 5 mH and C = 0.01 μF?",
+   "vi": "Tần số cộng hưởng của mạch tank có L = 5 mH và C = 0.01 μF là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "22.5 kHz",
+    "vi": "22.5 kHz"
+   },
+   {
+    "en": "141 kHz",
+    "vi": "141 kHz"
+   },
+   {
+    "en": "3.58 kHz",
+    "vi": "3.58 kHz"
+   },
+   {
+    "en": "0.00225 kHz",
+    "vi": "0.00225 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fr = 1/(2π√(LC)) = 22.5 kHz.",
+   "vi": "fr = 1/(2π√(LC)) = 22.5 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "What is the resonant frequency of a tank circuit with L = 0.1 mH and C = 0.0005 μF?",
+   "vi": "Tần số cộng hưởng của mạch tank có L = 0.1 mH và C = 0.0005 μF là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "712 kHz",
+    "vi": "712 kHz"
+   },
+   {
+    "en": "4.47e+03 kHz",
+    "vi": "4.47e+03 kHz"
+   },
+   {
+    "en": "113 kHz",
+    "vi": "113 kHz"
+   },
+   {
+    "en": "0.0159 kHz",
+    "vi": "0.0159 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fr = 1/(2π√(LC)) = 712 kHz.",
+   "vi": "fr = 1/(2π√(LC)) = 712 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC-coupled stage has a total resistance of 10 kΩ seen by a 1.0 μF coupling capacitor. What is the low-frequency (corner) frequency? (fc = 1/(2πRC))",
+   "vi": "Tầng ghép RC có tổng điện trở 10 kΩ nhìn từ tụ ghép 1.0 μF. Tần số góc thấp là bao nhiêu? (fc = 1/(2πRC))"
+  },
+  "opts": [
+   {
+    "en": "15.9 Hz",
+    "vi": "15.9 Hz"
+   },
+   {
+    "en": "100 Hz",
+    "vi": "100 Hz"
+   },
+   {
+    "en": "2.53 Hz",
+    "vi": "2.53 Hz"
+   },
+   {
+    "en": "159 Hz",
+    "vi": "159 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fc = 1/(2π × 10 kΩ × 1.0 μF) = 15.9 Hz; the capacitor blocks dc and signals well below fc.",
+   "vi": "fc = 1/(2π × 10 kΩ × 1.0 μF) = 15.9 Hz; tụ chặn dc và các tín hiệu thấp hơn nhiều so với fc."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC-coupled stage has a total resistance of 4.7 kΩ seen by a 10 μF coupling capacitor. What is the low-frequency (corner) frequency? (fc = 1/(2πRC))",
+   "vi": "Tầng ghép RC có tổng điện trở 4.7 kΩ nhìn từ tụ ghép 10 μF. Tần số góc thấp là bao nhiêu? (fc = 1/(2πRC))"
+  },
+  "opts": [
+   {
+    "en": "3.39 Hz",
+    "vi": "3.39 Hz"
+   },
+   {
+    "en": "21.3 Hz",
+    "vi": "21.3 Hz"
+   },
+   {
+    "en": "0.539 Hz",
+    "vi": "0.539 Hz"
+   },
+   {
+    "en": "33.9 Hz",
+    "vi": "33.9 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fc = 1/(2π × 4.7 kΩ × 10 μF) = 3.39 Hz; the capacitor blocks dc and signals well below fc.",
+   "vi": "fc = 1/(2π × 4.7 kΩ × 10 μF) = 3.39 Hz; tụ chặn dc và các tín hiệu thấp hơn nhiều so với fc."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC-coupled stage has a total resistance of 22 kΩ seen by a 0.1 μF coupling capacitor. What is the low-frequency (corner) frequency? (fc = 1/(2πRC))",
+   "vi": "Tầng ghép RC có tổng điện trở 22 kΩ nhìn từ tụ ghép 0.1 μF. Tần số góc thấp là bao nhiêu? (fc = 1/(2πRC))"
+  },
+  "opts": [
+   {
+    "en": "72.3 Hz",
+    "vi": "72.3 Hz"
+   },
+   {
+    "en": "455 Hz",
+    "vi": "455 Hz"
+   },
+   {
+    "en": "11.5 Hz",
+    "vi": "11.5 Hz"
+   },
+   {
+    "en": "723 Hz",
+    "vi": "723 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fc = 1/(2π × 22 kΩ × 0.1 μF) = 72.3 Hz; the capacitor blocks dc and signals well below fc.",
+   "vi": "fc = 1/(2π × 22 kΩ × 0.1 μF) = 72.3 Hz; tụ chặn dc và các tín hiệu thấp hơn nhiều so với fc."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC-coupled stage has a total resistance of 1 kΩ seen by a 100 μF coupling capacitor. What is the low-frequency (corner) frequency? (fc = 1/(2πRC))",
+   "vi": "Tầng ghép RC có tổng điện trở 1 kΩ nhìn từ tụ ghép 100 μF. Tần số góc thấp là bao nhiêu? (fc = 1/(2πRC))"
+  },
+  "opts": [
+   {
+    "en": "1.59 Hz",
+    "vi": "1.59 Hz"
+   },
+   {
+    "en": "10 Hz",
+    "vi": "10 Hz"
+   },
+   {
+    "en": "0.253 Hz",
+    "vi": "0.253 Hz"
+   },
+   {
+    "en": "15.9 Hz",
+    "vi": "15.9 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "fc = 1/(2π × 1 kΩ × 100 μF) = 1.59 Hz; the capacitor blocks dc and signals well below fc.",
+   "vi": "fc = 1/(2π × 1 kΩ × 100 μF) = 1.59 Hz; tụ chặn dc và các tín hiệu thấp hơn nhiều so với fc."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "Generated – cascade/feedback formulas (Floyd Ch.6, 7, 12)",
+   "vi": "Bổ sung – công thức ghép tầng/hồi tiếp (Floyd Ch.6, 7, 12)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A total voltage gain of 1000 is needed from identical stages, each limited to about 40. How many stages are needed, what is the gain per stage and the total in dB?",
+   "vi": "Cần độ lợi điện áp tổng 1000 từ các tầng giống nhau, mỗi tầng tối đa khoảng 40. Cần bao nhiêu tầng, độ lợi mỗi tầng và tổng theo dB là bao nhiêu?"
+  },
+  "sol": {
+   "en": "Two stages would need √1000 = 31.6 each (> 40), so use three stages: 1000^(1/3) = 10 each. Total 60 dB = 3 × 20 dB. (EASA: one stage gives only about 10–100.)",
+   "vi": "Hai tầng cần √1000 = 31.6 mỗi tầng (> 40) nên dùng ba tầng: 1000^(1/3) = 10 mỗi tầng. Tổng 60 dB = 3 × 20 dB. (EASA: một tầng chỉ cho khoảng 10–100.)"
+  },
+  "level": 3,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Generated – design problem on cascade/feedback/coupling",
+   "vi": "Bổ sung – bài thiết kế về ghép tầng/hồi tiếp/ghép tụ"
+  },
+  "origin": "bo_sung",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "An op-amp has open-loop gain A = 100,000. What feedback fraction B gives a closed-loop gain of 50, and what is B approximately?",
+   "vi": "Op-amp có độ lợi vòng hở A = 100.000. Tỉ lệ hồi tiếp B nào cho độ lợi vòng kín 50, và B xấp xỉ bằng bao nhiêu?"
+  },
+  "sol": {
+   "en": "Acl = A/(1 + A·B) → B = 1/Acl − 1/A = 0.02 − 0.00001 = 0.01999 ≈ 1/Acl = 0.02 (the loop gain A·B = 1999 ≫ 1).",
+   "vi": "Acl = A/(1 + A·B) → B = 1/Acl − 1/A = 0,02 − 0,00001 = 0.01999 ≈ 1/Acl = 0,02 (độ lợi vòng A·B = 1999 ≫ 1)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Positive and negative feedback",
+   "vi": "Hồi tiếp dương và âm"
+  },
+  "src": {
+   "en": "Generated – design problem on cascade/feedback/coupling",
+   "vi": "Bổ sung – bài thiết kế về ghép tầng/hồi tiếp/ghép tụ"
+  },
+  "origin": "bo_sung",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "An RC-coupled stage sees a total resistance of 4.7 kΩ. What coupling capacitor puts the low-frequency corner at 20 Hz?",
+   "vi": "Một tầng ghép RC nhìn thấy tổng điện trở 4,7 kΩ. Tụ ghép nào đặt tần số góc thấp ở 20 Hz?"
+  },
+  "sol": {
+   "en": "C = 1/(2π·fc·R) = 1/(2π × 20 Hz × 4.7 kΩ) = 1.69 μF → use the next standard value, 2.2 μF (corner ≈ 15.4 Hz), so that the corner is not above 20 Hz.",
+   "vi": "C = 1/(2π·fc·R) = 1/(2π × 20 Hz × 4,7 kΩ) = 1.69 μF → chọn giá trị chuẩn kế tiếp 2,2 μF (tần số góc ≈ 15.4 Hz) để tần số góc không vượt 20 Hz."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Coupling methods",
+   "vi": "Các cách ghép tầng"
+  },
+  "src": {
+   "en": "Generated – design problem on cascade/feedback/coupling",
+   "vi": "Bổ sung – bài thiết kế về ghép tầng/hồi tiếp/ghép tụ"
+  },
+  "origin": "bo_sung",
+  "check": "script"
+ }
+]

@@ -1,0 +1,648 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Each stage of a four-stage amplifier has a voltage gain of 15. The overall voltage gain is",
+   "vi": "Mỗi tầng của bộ khuếch đại bốn tầng có độ lợi điện áp 15. Độ lợi điện áp tổng là"
+  },
+  "opts": [
+   {
+    "en": "60",
+    "vi": "60"
+   },
+   {
+    "en": "15",
+    "vi": "15"
+   },
+   {
+    "en": "50,625",
+    "vi": "50,625"
+   },
+   {
+    "en": "3078",
+    "vi": "3078"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Overall gain is the product of the stage gains: 15⁴ = 50,625.",
+   "vi": "Độ lợi tổng là tích các độ lợi từng tầng: 15⁴ = 50.625."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Self-Test Q14 (p.327)",
+   "vi": "Floyd 9e, Ch.6, Self-Test câu 14 (tr.327)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The overall gain found in the previous question can be expressed in decibels as",
+   "vi": "Độ lợi tổng ở câu trước tính theo decibel là"
+  },
+  "opts": [
+   {
+    "en": "94.1 dB",
+    "vi": "94.1 dB"
+   },
+   {
+    "en": "47.0 dB",
+    "vi": "47.0 dB"
+   },
+   {
+    "en": "35.6 dB",
+    "vi": "35.6 dB"
+   },
+   {
+    "en": "69.8 dB",
+    "vi": "69.8 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "20·log₁₀(50,625) = 94.1 dB (equivalently 4 × 23.5 dB).",
+   "vi": "20·log₁₀(50.625) = 94,1 dB (tương đương 4 × 23,5 dB)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Self-Test Q15 (p.327)",
+   "vi": "Floyd 9e, Ch.6, Self-Test câu 15 (tr.327)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The overall voltage gain of a multistage amplifier is the product of the gains of each stage.",
+   "vi": "Độ lợi điện áp tổng của bộ khuếch đại nhiều tầng là tích các độ lợi của từng tầng."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Gains multiply; in decibels they add.",
+   "vi": "Độ lợi nhân với nhau; tính bằng dB thì cộng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, True/False Quiz Q13 (p.326)",
+   "vi": "Floyd 9e, Ch.6, Đúng/Sai câu 13 (tr.326)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Each of three cascaded amplifier stages has a voltage gain of 10 dB. What is the overall gain in dB, and the actual overall voltage gain?",
+   "vi": "Mỗi một trong ba tầng khuếch đại ghép nối tiếp có độ lợi điện áp 10 dB. Độ lợi tổng theo dB và độ lợi điện áp thực là bao nhiêu?"
+  },
+  "sol": {
+   "en": "Decibels add: 3 × 10 dB = 30 dB. Actual gain: 10^(30/20) = 31.6 (each stage 10^(10/20) = 3.162, and 3.162³ = 31.6).",
+   "vi": "Decibel cộng lại: 3 × 10 dB = 30 dB. Độ lợi thực: 10^(30/20) = 31.6 (mỗi tầng 10^(10/20) = 3.162 và 3.162³ = 31.6)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Problem 30 (p.330)",
+   "vi": "Floyd 9e, Ch.6, Bài tập 30 (tr.330)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Express the following voltage gains in dB: (a) 12 (b) 50 (c) 100 (d) 2500.",
+   "vi": "Đổi các độ lợi điện áp sau sang dB: (a) 12 (b) 50 (c) 100 (d) 2500."
+  },
+  "sol": {
+   "en": "dB = 20·log₁₀(Av): (a) 21.58 dB (b) 33.98 dB (c) 40 dB (d) 67.96 dB.",
+   "vi": "dB = 20·log₁₀(Av): (a) 21.58 dB (b) 33.98 dB (c) 40 dB (d) 67.96 dB."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Problem 34 (p.331)",
+   "vi": "Floyd 9e, Ch.6, Bài tập 34 (tr.331)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Express the following gains in dB as standard voltage gains: (a) 3 dB (b) 6 dB (c) 10 dB (d) 20 dB (e) 40 dB.",
+   "vi": "Đổi các độ lợi dB sau sang độ lợi điện áp thông thường: (a) 3 dB (b) 6 dB (c) 10 dB (d) 20 dB (e) 40 dB."
+  },
+  "sol": {
+   "en": "Av = 10^(dB/20): (a) 1.413 (b) 1.995 (c) 3.162 (d) 10 (e) 100.",
+   "vi": "Av = 10^(dB/20): (a) 1.413 (b) 1.995 (c) 3.162 (d) 10 (e) 100."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Cascade amplifiers and gain",
+   "vi": "Khuếch đại ghép tầng và độ lợi"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.6, Problem 35 (p.331)",
+   "vi": "Floyd 9e, Ch.6, Bài tập 35 (tr.331)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The transistors in a class B amplifier are biased",
+   "vi": "Các transistor trong bộ khuếch đại lớp B được phân cực"
+  },
+  "opts": [
+   {
+    "en": "into cutoff",
+    "vi": "vào vùng ngắt"
+   },
+   {
+    "en": "in saturation",
+    "vi": "ở vùng bão hòa"
+   },
+   {
+    "en": "at midpoint of the load line",
+    "vi": "ở giữa đường tải"
+   },
+   {
+    "en": "right at cutoff",
+    "vi": "đúng ở ngưỡng ngắt"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Class B biases each transistor exactly at cutoff, so it conducts for half the cycle.",
+   "vi": "Lớp B phân cực mỗi transistor đúng tại ngưỡng ngắt nên chỉ dẫn nửa chu kỳ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q8 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 8 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Crossover distortion is a problem for",
+   "vi": "Méo giao chéo (crossover distortion) là vấn đề của"
+  },
+  "opts": [
+   {
+    "en": "class A amplifiers",
+    "vi": "bộ khuếch đại lớp A"
+   },
+   {
+    "en": "class AB amplifiers",
+    "vi": "bộ khuếch đại lớp AB"
+   },
+   {
+    "en": "class B amplifiers",
+    "vi": "bộ khuếch đại lớp B"
+   },
+   {
+    "en": "all of these amplifiers",
+    "vi": "tất cả các bộ khuếch đại trên"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "In class B neither transistor conducts near zero crossing; class AB biasing removes this.",
+   "vi": "Ở lớp B không transistor nào dẫn gần điểm không; phân cực lớp AB loại bỏ điều này."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q9 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 9 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A BJT class B push-pull amplifier with no transformer coupling uses",
+   "vi": "Bộ khuếch đại đẩy kéo lớp B dùng BJT không ghép biến áp dùng"
+  },
+  "opts": [
+   {
+    "en": "two npn transistors",
+    "vi": "hai transistor npn"
+   },
+   {
+    "en": "two pnp transistors",
+    "vi": "hai transistor pnp"
+   },
+   {
+    "en": "complementary symmetry transistors",
+    "vi": "các transistor đối xứng bù (npn và pnp)"
+   },
+   {
+    "en": "none of these",
+    "vi": "không loại nào ở trên"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "An npn and a pnp transistor in complementary symmetry.",
+   "vi": "Một transistor npn và một pnp đối xứng bù."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q10 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 10 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A current mirror in a push-pull amplifier should give an ICQ that is",
+   "vi": "Gương dòng trong mạch đẩy kéo nên cho ICQ"
+  },
+  "opts": [
+   {
+    "en": "equal to the current in the bias resistors and diodes",
+    "vi": "bằng dòng trong các điện trở phân cực và điốt"
+   },
+   {
+    "en": "twice the current in the bias resistors and diodes",
+    "vi": "gấp đôi dòng trong các điện trở phân cực và điốt"
+   },
+   {
+    "en": "half the current in the bias resistors and diodes",
+    "vi": "bằng một nửa dòng trong các điện trở phân cực và điốt"
+   },
+   {
+    "en": "zero",
+    "vi": "bằng không"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A 1:1 mirror reproduces the bias-string current as ICQ.",
+   "vi": "Gương 1:1 sao chép dòng của dãy phân cực thành ICQ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q11 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 11 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The maximum efficiency of a class B push-pull amplifier is",
+   "vi": "Hiệu suất cực đại của bộ khuếch đại đẩy kéo lớp B là"
+  },
+  "opts": [
+   {
+    "en": "25%",
+    "vi": "25%"
+   },
+   {
+    "en": "50%",
+    "vi": "50%"
+   },
+   {
+    "en": "79%",
+    "vi": "79%"
+   },
+   {
+    "en": "98%",
+    "vi": "98%"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "η(max) = π/4 ≈ 78.5 % ≈ 79 %.",
+   "vi": "η(max) = π/4 ≈ 78,5 % ≈ 79 %."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q12 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 12 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A two-supply class B push-pull amplifier has VCC = 20 V and a 50 Ω load. The value of Ic(sat) is",
+   "vi": "Bộ khuếch đại đẩy kéo lớp B hai nguồn có VCC = 20 V và tải 50 Ω. Giá trị Ic(sat) là"
+  },
+  "opts": [
+   {
+    "en": "5 mA",
+    "vi": "5 mA"
+   },
+   {
+    "en": "0.4 A",
+    "vi": "0.4 A"
+   },
+   {
+    "en": "4 mA",
+    "vi": "4 mA"
+   },
+   {
+    "en": "40 mA",
+    "vi": "40 mA"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Ic(sat) = VCC/RL = 20/50 = 0.4 A.",
+   "vi": "Ic(sat) = VCC/RL = 20/50 = 0,4 A."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q13 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 13 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The maximum efficiency of a class AB amplifier is",
+   "vi": "Hiệu suất cực đại của bộ khuếch đại lớp AB là"
+  },
+  "opts": [
+   {
+    "en": "higher than a class B",
+    "vi": "cao hơn lớp B"
+   },
+   {
+    "en": "the same as a class B",
+    "vi": "bằng lớp B"
+   },
+   {
+    "en": "about the same as a class A",
+    "vi": "xấp xỉ lớp A"
+   },
+   {
+    "en": "slightly less than a class B",
+    "vi": "hơi thấp hơn lớp B"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "The small bias current of class AB costs a little efficiency compared with class B.",
+   "vi": "Dòng phân cực nhỏ của lớp AB làm giảm nhẹ hiệu suất so với lớp B."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Self-Test Q14 (p.376)",
+   "vi": "Floyd 9e, Ch.7, Self-Test câu 14 (tr.376)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Each transistor in a class B amplifier conducts for the entire input cycle.",
+   "vi": "Mỗi transistor trong bộ khuếch đại lớp B dẫn suốt cả chu kỳ vào."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Each conducts for half the cycle (180°).",
+   "vi": "Mỗi transistor chỉ dẫn nửa chu kỳ (180°)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, True/False Quiz Q5 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Đúng/Sai câu 5 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Class AB operation overcomes the problem of crossover distortion.",
+   "vi": "Chế độ lớp AB khắc phục vấn đề méo giao chéo."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A small forward bias keeps both transistors slightly on at the crossover.",
+   "vi": "Một phân cực thuận nhỏ giữ cả hai transistor hơi dẫn tại điểm giao chéo."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, True/False Quiz Q6 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Đúng/Sai câu 6 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Darlington transistors can be used to increase the input resistance of a class AB amplifier.",
+   "vi": "Có thể dùng transistor Darlington để tăng điện trở vào của bộ khuếch đại lớp AB."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The Darlington pair multiplies the effective beta.",
+   "vi": "Cặp Darlington nhân beta hiệu dụng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Push-pull amplifiers",
+   "vi": "Mạch khuếch đại đẩy kéo"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, True/False Quiz Q9 (p.375)",
+   "vi": "Floyd 9e, Ch.7, Đúng/Sai câu 9 (tr.375)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A class C amplifier transistor is on for 10 % of the input cycle with Vce(sat) = 0.18 V and Ic(sat) = 25 mA. Average power dissipation at maximum output?",
+   "vi": "Transistor của bộ khuếch đại lớp C dẫn 10 % chu kỳ vào với Vce(sat) = 0,18 V và Ic(sat) = 25 mA. Công suất tiêu tán trung bình ở ngõ ra cực đại là bao nhiêu?"
+  },
+  "sol": {
+   "en": "PD(avg) = (on-time/period)·Vce(sat)·Ic(sat) = 0.10 × 0.18 V × 25 mA = 0.45 mW.",
+   "vi": "PD(avg) = (thời gian dẫn/chu kỳ)·Vce(sat)·Ic(sat) = 0,10 × 0,18 V × 25 mA = 0.45 mW."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Problem 19 (p.379)",
+   "vi": "Floyd 9e, Ch.7, Bài tập 19 (tr.379)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Resonant frequency of a tank circuit with L = 10 mH and C = 0.001 μF.",
+   "vi": "Tần số cộng hưởng của mạch tank có L = 10 mH và C = 0,001 μF."
+  },
+  "sol": {
+   "en": "fr = 1/(2π√(LC)) = 1/(2π√(10 mH × 0.001 μF)) = 50.33 kHz.",
+   "vi": "fr = 1/(2π√(LC)) = 1/(2π√(10 mH × 0,001 μF)) = 50.33 kHz."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Oscillation basics",
+   "vi": "Cơ sở dao động"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Problem 20 (p.379)",
+   "vi": "Floyd 9e, Ch.7, Bài tập 20 (tr.379)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Maximum peak-to-peak output of a tuned class C amplifier with VCC = 12 V.",
+   "vi": "Điện áp ra đỉnh–đỉnh cực đại của bộ khuếch đại lớp C có tải cộng hưởng với VCC = 12 V."
+  },
+  "sol": {
+   "en": "The collector tank swings symmetrically about VCC, so the peak is VCC and the peak-to-peak output is 2·VCC = 24 V (ideal).",
+   "vi": "Mạch tank ở cực góp dao động đối xứng quanh VCC nên đỉnh là VCC và điện áp đỉnh–đỉnh là 2·VCC = 24 V (lý tưởng)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Amplifier classes",
+   "vi": "Các lớp khuếch đại"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.7, Problem 21 (p.379)",
+   "vi": "Floyd 9e, Ch.7, Bài tập 21 (tr.379)"
+  },
+  "origin": "goc",
+  "check": "script"
+ }
+]
