@@ -1,0 +1,3257 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 47 kΩ, R2 = 18 kΩ and Vout(max) = ±10 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 47 kΩ, R2 = 18 kΩ và Vout(max) = ±10 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7.23 V",
+    "vi": "7.23 V"
+   },
+   {
+    "en": "10 V",
+    "vi": "10 V"
+   },
+   {
+    "en": "3.83 V",
+    "vi": "3.83 V"
+   },
+   {
+    "en": "2.77 V",
+    "vi": "2.77 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 18/(47+18) × 10 = 2.77 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 18/(47+18) × 10 = 2.77 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 47 kΩ, R2 = 18 kΩ and Vout(max) = ±10 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 47 kΩ, R2 = 18 kΩ và Vout(max) = ±10 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5.54 V",
+    "vi": "5.54 V"
+   },
+   {
+    "en": "1.38 V",
+    "vi": "1.38 V"
+   },
+   {
+    "en": "14.5 V",
+    "vi": "14.5 V"
+   },
+   {
+    "en": "2.77 V",
+    "vi": "2.77 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 5.54 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 5.54 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 33 kΩ, R2 = 18 kΩ and Vout(max) = ±11 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 33 kΩ, R2 = 18 kΩ và Vout(max) = ±11 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7.12 V",
+    "vi": "7.12 V"
+   },
+   {
+    "en": "3.88 V",
+    "vi": "3.88 V"
+   },
+   {
+    "en": "6 V",
+    "vi": "6 V"
+   },
+   {
+    "en": "7.76 V",
+    "vi": "7.76 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 18/(33+18) × 11 = 3.88 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 18/(33+18) × 11 = 3.88 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 33 kΩ, R2 = 18 kΩ and Vout(max) = ±11 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 33 kΩ, R2 = 18 kΩ và Vout(max) = ±11 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7.76 V",
+    "vi": "7.76 V"
+   },
+   {
+    "en": "14.2 V",
+    "vi": "14.2 V"
+   },
+   {
+    "en": "22 V",
+    "vi": "22 V"
+   },
+   {
+    "en": "3.88 V",
+    "vi": "3.88 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 7.76 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 7.76 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 150 kΩ, R2 = 68 kΩ and Vout(max) = ±11 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 150 kΩ, R2 = 68 kΩ và Vout(max) = ±11 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3.43 V",
+    "vi": "3.43 V"
+   },
+   {
+    "en": "7.57 V",
+    "vi": "7.57 V"
+   },
+   {
+    "en": "4.99 V",
+    "vi": "4.99 V"
+   },
+   {
+    "en": "6.86 V",
+    "vi": "6.86 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 68/(150+68) × 11 = 3.43 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 68/(150+68) × 11 = 3.43 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 150 kΩ, R2 = 68 kΩ and Vout(max) = ±11 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 150 kΩ, R2 = 68 kΩ và Vout(max) = ±11 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "22 V",
+    "vi": "22 V"
+   },
+   {
+    "en": "6.86 V",
+    "vi": "6.86 V"
+   },
+   {
+    "en": "3.43 V",
+    "vi": "3.43 V"
+   },
+   {
+    "en": "1.72 V",
+    "vi": "1.72 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 6.86 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 6.86 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 100 kΩ, R2 = 100 kΩ and Vout(max) = ±12 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 100 kΩ, R2 = 100 kΩ và Vout(max) = ±12 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "24 V",
+    "vi": "24 V"
+   },
+   {
+    "en": "3 V",
+    "vi": "3 V"
+   },
+   {
+    "en": "6 V",
+    "vi": "6 V"
+   },
+   {
+    "en": "12 V",
+    "vi": "12 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 12 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 12 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 68 kΩ, R2 = 10 kΩ and Vout(max) = ±8 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 68 kΩ, R2 = 10 kΩ và Vout(max) = ±8 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.03 V",
+    "vi": "1.03 V"
+   },
+   {
+    "en": "2.05 V",
+    "vi": "2.05 V"
+   },
+   {
+    "en": "8 V",
+    "vi": "8 V"
+   },
+   {
+    "en": "1.18 V",
+    "vi": "1.18 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 10/(68+10) × 8 = 1.03 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 10/(68+10) × 8 = 1.03 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 68 kΩ, R2 = 10 kΩ and Vout(max) = ±8 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 68 kΩ, R2 = 10 kΩ và Vout(max) = ±8 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.513 V",
+    "vi": "0.513 V"
+   },
+   {
+    "en": "2.05 V",
+    "vi": "2.05 V"
+   },
+   {
+    "en": "13.9 V",
+    "vi": "13.9 V"
+   },
+   {
+    "en": "1.03 V",
+    "vi": "1.03 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 2.05 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 2.05 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 22 kΩ, R2 = 4.7 kΩ and Vout(max) = ±12 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 22 kΩ, R2 = 4.7 kΩ và Vout(max) = ±12 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2.11 V",
+    "vi": "2.11 V"
+   },
+   {
+    "en": "4.22 V",
+    "vi": "4.22 V"
+   },
+   {
+    "en": "9.89 V",
+    "vi": "9.89 V"
+   },
+   {
+    "en": "12 V",
+    "vi": "12 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 4.7/(22+4.7) × 12 = 2.11 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 4.7/(22+4.7) × 12 = 2.11 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 22 kΩ, R2 = 4.7 kΩ and Vout(max) = ±12 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 22 kΩ, R2 = 4.7 kΩ và Vout(max) = ±12 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4.22 V",
+    "vi": "4.22 V"
+   },
+   {
+    "en": "19.8 V",
+    "vi": "19.8 V"
+   },
+   {
+    "en": "24 V",
+    "vi": "24 V"
+   },
+   {
+    "en": "1.06 V",
+    "vi": "1.06 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 4.22 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 4.22 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 56 kΩ, R2 = 15 kΩ and Vout(max) = ±10 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 56 kΩ, R2 = 15 kΩ và Vout(max) = ±10 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4.23 V",
+    "vi": "4.23 V"
+   },
+   {
+    "en": "10 V",
+    "vi": "10 V"
+   },
+   {
+    "en": "2.11 V",
+    "vi": "2.11 V"
+   },
+   {
+    "en": "7.89 V",
+    "vi": "7.89 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 15/(56+15) × 10 = 2.11 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 15/(56+15) × 10 = 2.11 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 56 kΩ, R2 = 15 kΩ and Vout(max) = ±10 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 56 kΩ, R2 = 15 kΩ và Vout(max) = ±10 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2.11 V",
+    "vi": "2.11 V"
+   },
+   {
+    "en": "4.23 V",
+    "vi": "4.23 V"
+   },
+   {
+    "en": "20 V",
+    "vi": "20 V"
+   },
+   {
+    "en": "15.8 V",
+    "vi": "15.8 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 4.23 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 4.23 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 10 kΩ, R2 = 2.2 kΩ and Vout(max) = ±13 V. What is VUTP?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 10 kΩ, R2 = 2.2 kΩ và Vout(max) = ±13 V. VUTP là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2.34 V",
+    "vi": "2.34 V"
+   },
+   {
+    "en": "13 V",
+    "vi": "13 V"
+   },
+   {
+    "en": "2.86 V",
+    "vi": "2.86 V"
+   },
+   {
+    "en": "10.7 V",
+    "vi": "10.7 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VUTP = R2/(R1+R2)·Vout(max) = 2.2/(10+2.2) × 13 = 2.34 V.",
+   "vi": "VUTP = R2/(R1+R2)·Vout(max) = 2.2/(10+2.2) × 13 = 2.34 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 3",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator with positive feedback has R1 = 10 kΩ, R2 = 2.2 kΩ and Vout(max) = ±13 V. What is the hysteresis voltage?",
+   "vi": "Mạch so sánh có hồi tiếp dương với R1 = 10 kΩ, R2 = 2.2 kΩ và Vout(max) = ±13 V. Điện áp hysteresis là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "26 V",
+    "vi": "26 V"
+   },
+   {
+    "en": "4.69 V",
+    "vi": "4.69 V"
+   },
+   {
+    "en": "1.17 V",
+    "vi": "1.17 V"
+   },
+   {
+    "en": "21.3 V",
+    "vi": "21.3 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 4.69 V.",
+   "vi": "VHYS = VUTP − VLTP = 2·R2/(R1+R2)·Vout(max) = 4.69 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 6",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator is bounded with two back-to-back 3.3 V zener diodes (0.7 V forward drop). What is the output amplitude?",
+   "vi": "Mạch so sánh được giới hạn bằng hai zener 3.3 V mắc ngược chiều nhau (sụt áp thuận 0,7 V). Biên độ ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "±2.6 V",
+    "vi": "±2.6 V"
+   },
+   {
+    "en": "±8 V",
+    "vi": "±8 V"
+   },
+   {
+    "en": "±3.3 V",
+    "vi": "±3.3 V"
+   },
+   {
+    "en": "±4 V",
+    "vi": "±4 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "One zener conducts in breakdown and the other forward: |Vout| = VZ + 0.7 = 4 V.",
+   "vi": "Một zener dẫn ở vùng đánh thủng và zener kia dẫn thuận: |Vout| = VZ + 0.7 = 4 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator is bounded with two back-to-back 4.7 V zener diodes (0.7 V forward drop). What is the output amplitude?",
+   "vi": "Mạch so sánh được giới hạn bằng hai zener 4.7 V mắc ngược chiều nhau (sụt áp thuận 0,7 V). Biên độ ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "±10.8 V",
+    "vi": "±10.8 V"
+   },
+   {
+    "en": "±5.4 V",
+    "vi": "±5.4 V"
+   },
+   {
+    "en": "±9.4 V",
+    "vi": "±9.4 V"
+   },
+   {
+    "en": "±4 V",
+    "vi": "±4 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "One zener conducts in breakdown and the other forward: |Vout| = VZ + 0.7 = 5.4 V.",
+   "vi": "Một zener dẫn ở vùng đánh thủng và zener kia dẫn thuận: |Vout| = VZ + 0.7 = 5.4 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator is bounded with two back-to-back 5.6 V zener diodes (0.7 V forward drop). What is the output amplitude?",
+   "vi": "Mạch so sánh được giới hạn bằng hai zener 5.6 V mắc ngược chiều nhau (sụt áp thuận 0,7 V). Biên độ ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "±4.9 V",
+    "vi": "±4.9 V"
+   },
+   {
+    "en": "±5.6 V",
+    "vi": "±5.6 V"
+   },
+   {
+    "en": "±12.6 V",
+    "vi": "±12.6 V"
+   },
+   {
+    "en": "±6.3 V",
+    "vi": "±6.3 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "One zener conducts in breakdown and the other forward: |Vout| = VZ + 0.7 = 6.3 V.",
+   "vi": "Một zener dẫn ở vùng đánh thủng và zener kia dẫn thuận: |Vout| = VZ + 0.7 = 6.3 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator is bounded with two back-to-back 6.2 V zener diodes (0.7 V forward drop). What is the output amplitude?",
+   "vi": "Mạch so sánh được giới hạn bằng hai zener 6.2 V mắc ngược chiều nhau (sụt áp thuận 0,7 V). Biên độ ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "±6.9 V",
+    "vi": "±6.9 V"
+   },
+   {
+    "en": "±5.5 V",
+    "vi": "±5.5 V"
+   },
+   {
+    "en": "±6.2 V",
+    "vi": "±6.2 V"
+   },
+   {
+    "en": "±13.8 V",
+    "vi": "±13.8 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "One zener conducts in breakdown and the other forward: |Vout| = VZ + 0.7 = 6.9 V.",
+   "vi": "Một zener dẫn ở vùng đánh thủng và zener kia dẫn thuận: |Vout| = VZ + 0.7 = 6.9 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator is bounded with two back-to-back 8.2 V zener diodes (0.7 V forward drop). What is the output amplitude?",
+   "vi": "Mạch so sánh được giới hạn bằng hai zener 8.2 V mắc ngược chiều nhau (sụt áp thuận 0,7 V). Biên độ ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "±8.9 V",
+    "vi": "±8.9 V"
+   },
+   {
+    "en": "±7.5 V",
+    "vi": "±7.5 V"
+   },
+   {
+    "en": "±17.8 V",
+    "vi": "±17.8 V"
+   },
+   {
+    "en": "±8.2 V",
+    "vi": "±8.2 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "One zener conducts in breakdown and the other forward: |Vout| = VZ + 0.7 = 8.9 V.",
+   "vi": "Một zener dẫn ở vùng đánh thủng và zener kia dẫn thuận: |Vout| = VZ + 0.7 = 8.9 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator is bounded with two back-to-back 9.1 V zener diodes (0.7 V forward drop). What is the output amplitude?",
+   "vi": "Mạch so sánh được giới hạn bằng hai zener 9.1 V mắc ngược chiều nhau (sụt áp thuận 0,7 V). Biên độ ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "±18.2 V",
+    "vi": "±18.2 V"
+   },
+   {
+    "en": "±8.4 V",
+    "vi": "±8.4 V"
+   },
+   {
+    "en": "±9.1 V",
+    "vi": "±9.1 V"
+   },
+   {
+    "en": "±9.8 V",
+    "vi": "±9.8 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "One zener conducts in breakdown and the other forward: |Vout| = VZ + 0.7 = 9.8 V.",
+   "vi": "Một zener dẫn ở vùng đánh thủng và zener kia dẫn thuận: |Vout| = VZ + 0.7 = 9.8 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator has Vin = 2.5 V on the noninverting input and Vref = 1.5 V on the inverting input. The output is",
+   "vi": "Mạch so sánh có Vin = 2.5 V ở ngõ vào không đảo và Vref = 1.5 V ở ngõ vào đảo. Ngõ ra ở"
+  },
+  "opts": [
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "−Vout(max)",
+    "vi": "−Vout(max)"
+   },
+   {
+    "en": "+Vout(max)",
+    "vi": "+Vout(max)"
+   },
+   {
+    "en": "Vin − Vref",
+    "vi": "Vin − Vref"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "(+) input above (−) input → the output saturates at +Vout(max).",
+   "vi": "Ngõ (+) cao hơn ngõ (−) → ngõ ra bão hòa ở +Vout(max)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator has Vin = -1 V on the noninverting input and Vref = 0 V on the inverting input. The output is",
+   "vi": "Mạch so sánh có Vin = -1 V ở ngõ vào không đảo và Vref = 0 V ở ngõ vào đảo. Ngõ ra ở"
+  },
+  "opts": [
+   {
+    "en": "Aol·Vref",
+    "vi": "Aol·Vref"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "−Vout(max)",
+    "vi": "−Vout(max)"
+   },
+   {
+    "en": "Vin − Vref",
+    "vi": "Vin − Vref"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "(+) input below (−) input → the output saturates at −Vout(max).",
+   "vi": "Ngõ (+) thấp hơn ngõ (−) → ngõ ra bão hòa ở −Vout(max)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator has Vin = 3 V on the noninverting input and Vref = 5 V on the inverting input. The output is",
+   "vi": "Mạch so sánh có Vin = 3 V ở ngõ vào không đảo và Vref = 5 V ở ngõ vào đảo. Ngõ ra ở"
+  },
+  "opts": [
+   {
+    "en": "Vin − Vref",
+    "vi": "Vin − Vref"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "Aol·Vref",
+    "vi": "Aol·Vref"
+   },
+   {
+    "en": "−Vout(max)",
+    "vi": "−Vout(max)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "(+) input below (−) input → the output saturates at −Vout(max).",
+   "vi": "Ngõ (+) thấp hơn ngõ (−) → ngõ ra bão hòa ở −Vout(max)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator has Vin = 0.4 V on the noninverting input and Vref = -0.4 V on the inverting input. The output is",
+   "vi": "Mạch so sánh có Vin = 0.4 V ở ngõ vào không đảo và Vref = -0.4 V ở ngõ vào đảo. Ngõ ra ở"
+  },
+  "opts": [
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "+Vout(max)",
+    "vi": "+Vout(max)"
+   },
+   {
+    "en": "Aol·Vref",
+    "vi": "Aol·Vref"
+   },
+   {
+    "en": "−Vout(max)",
+    "vi": "−Vout(max)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "(+) input above (−) input → the output saturates at +Vout(max).",
+   "vi": "Ngõ (+) cao hơn ngõ (−) → ngõ ra bão hòa ở +Vout(max)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator has Vin = 6 V on the noninverting input and Vref = 2 V on the inverting input. The output is",
+   "vi": "Mạch so sánh có Vin = 6 V ở ngõ vào không đảo và Vref = 2 V ở ngõ vào đảo. Ngõ ra ở"
+  },
+  "opts": [
+   {
+    "en": "Aol·Vref",
+    "vi": "Aol·Vref"
+   },
+   {
+    "en": "−Vout(max)",
+    "vi": "−Vout(max)"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   },
+   {
+    "en": "+Vout(max)",
+    "vi": "+Vout(max)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "(+) input above (−) input → the output saturates at +Vout(max).",
+   "vi": "Ngõ (+) cao hơn ngõ (−) → ngõ ra bão hòa ở +Vout(max)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A comparator has Vin = -3 V on the noninverting input and Vref = -1 V on the inverting input. The output is",
+   "vi": "Mạch so sánh có Vin = -3 V ở ngõ vào không đảo và Vref = -1 V ở ngõ vào đảo. Ngõ ra ở"
+  },
+  "opts": [
+   {
+    "en": "Aol·Vref",
+    "vi": "Aol·Vref"
+   },
+   {
+    "en": "+Vout(max)",
+    "vi": "+Vout(max)"
+   },
+   {
+    "en": "−Vout(max)",
+    "vi": "−Vout(max)"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "(+) input below (−) input → the output saturates at −Vout(max).",
+   "vi": "Ngõ (+) thấp hơn ngõ (−) → ngõ ra bão hòa ở −Vout(max)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 2",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 2"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A summing amplifier has Ri = 10 kΩ on every input, Rf = 22 kΩ and inputs 0.1, 1, 0.5 V. What is VOUT?",
+   "vi": "Mạch cộng có Ri = 10 kΩ ở mọi ngõ vào, Rf = 22 kΩ và các ngõ vào 0,1, 1, 0,5 V. VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-1.17 V",
+    "vi": "-1.17 V"
+   },
+   {
+    "en": "3.52 V",
+    "vi": "3.52 V"
+   },
+   {
+    "en": "-3.52 V",
+    "vi": "-3.52 V"
+   },
+   {
+    "en": "-1.6 V",
+    "vi": "-1.6 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(22/10)(1.6) = -3.52 V.",
+   "vi": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(22/10)(1.6) = -3.52 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A summing amplifier has Ri = 4.7 kΩ on every input, Rf = 47 kΩ and inputs 0.2, 0.3 V. What is VOUT?",
+   "vi": "Mạch cộng có Ri = 4.7 kΩ ở mọi ngõ vào, Rf = 47 kΩ và các ngõ vào 0,2, 0,3 V. VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5 V",
+    "vi": "5 V"
+   },
+   {
+    "en": "-0.5 V",
+    "vi": "-0.5 V"
+   },
+   {
+    "en": "-5 V",
+    "vi": "-5 V"
+   },
+   {
+    "en": "-0.05 V",
+    "vi": "-0.05 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(47/4.7)(0.5) = -5 V.",
+   "vi": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(47/4.7)(0.5) = -5 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A summing amplifier has Ri = 10 kΩ on every input, Rf = 100 kΩ and inputs 0.5, 0.25, 0.1 V. What is VOUT?",
+   "vi": "Mạch cộng có Ri = 10 kΩ ở mọi ngõ vào, Rf = 100 kΩ và các ngõ vào 0,5, 0,25, 0,1 V. VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-8.5 V",
+    "vi": "-8.5 V"
+   },
+   {
+    "en": "-0.085 V",
+    "vi": "-0.085 V"
+   },
+   {
+    "en": "-2.83 V",
+    "vi": "-2.83 V"
+   },
+   {
+    "en": "8.5 V",
+    "vi": "8.5 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(100/10)(0.85) = -8.5 V.",
+   "vi": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(100/10)(0.85) = -8.5 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A summing amplifier has Ri = 5 kΩ on every input, Rf = 15 kΩ and inputs 1, 2 V. What is VOUT?",
+   "vi": "Mạch cộng có Ri = 5 kΩ ở mọi ngõ vào, Rf = 15 kΩ và các ngõ vào 1, 2 V. VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-1 V",
+    "vi": "-1 V"
+   },
+   {
+    "en": "-3 V",
+    "vi": "-3 V"
+   },
+   {
+    "en": "-9 V",
+    "vi": "-9 V"
+   },
+   {
+    "en": "9 V",
+    "vi": "9 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(15/5)(3) = -9 V.",
+   "vi": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(15/5)(3) = -9 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A summing amplifier has Ri = 22 kΩ on every input, Rf = 68 kΩ and inputs 3, 1, 2 V. What is VOUT?",
+   "vi": "Mạch cộng có Ri = 22 kΩ ở mọi ngõ vào, Rf = 68 kΩ và các ngõ vào 3, 1, 2 V. VOUT là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "18.5 V",
+    "vi": "18.5 V"
+   },
+   {
+    "en": "-1.94 V",
+    "vi": "-1.94 V"
+   },
+   {
+    "en": "-6 V",
+    "vi": "-6 V"
+   },
+   {
+    "en": "-18.5 V",
+    "vi": "-18.5 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(68/22)(6) = -18.5 V.",
+   "vi": "VOUT = −(Rf/Ri)(V1 + … + Vn) = −(68/22)(6) = -18.5 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 9",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To average 2 inputs with an inverting summer using Ri = 10 kΩ on each input, Rf must be",
+   "vi": "Để lấy trung bình 2 ngõ vào bằng mạch cộng đảo với Ri = 10 kΩ mỗi ngõ, Rf phải bằng"
+  },
+  "opts": [
+   {
+    "en": "5 kΩ",
+    "vi": "5 kΩ"
+   },
+   {
+    "en": "20 kΩ",
+    "vi": "20 kΩ"
+   },
+   {
+    "en": "2.5 kΩ",
+    "vi": "2.5 kΩ"
+   },
+   {
+    "en": "10 kΩ",
+    "vi": "10 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Gain per input = 1/n → Rf = Ri/n = 10/2 = 5 kΩ.",
+   "vi": "Độ lợi mỗi ngõ = 1/n → Rf = Ri/n = 10/2 = 5 kΩ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To average 3 inputs with an inverting summer using Ri = 12 kΩ on each input, Rf must be",
+   "vi": "Để lấy trung bình 3 ngõ vào bằng mạch cộng đảo với Ri = 12 kΩ mỗi ngõ, Rf phải bằng"
+  },
+  "opts": [
+   {
+    "en": "2 kΩ",
+    "vi": "2 kΩ"
+   },
+   {
+    "en": "12 kΩ",
+    "vi": "12 kΩ"
+   },
+   {
+    "en": "36 kΩ",
+    "vi": "36 kΩ"
+   },
+   {
+    "en": "4 kΩ",
+    "vi": "4 kΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Gain per input = 1/n → Rf = Ri/n = 12/3 = 4 kΩ.",
+   "vi": "Độ lợi mỗi ngõ = 1/n → Rf = Ri/n = 12/3 = 4 kΩ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To average 4 inputs with an inverting summer using Ri = 10 kΩ on each input, Rf must be",
+   "vi": "Để lấy trung bình 4 ngõ vào bằng mạch cộng đảo với Ri = 10 kΩ mỗi ngõ, Rf phải bằng"
+  },
+  "opts": [
+   {
+    "en": "2.5 kΩ",
+    "vi": "2.5 kΩ"
+   },
+   {
+    "en": "40 kΩ",
+    "vi": "40 kΩ"
+   },
+   {
+    "en": "2 kΩ",
+    "vi": "2 kΩ"
+   },
+   {
+    "en": "10 kΩ",
+    "vi": "10 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Gain per input = 1/n → Rf = Ri/n = 10/4 = 2.5 kΩ.",
+   "vi": "Độ lợi mỗi ngõ = 1/n → Rf = Ri/n = 10/4 = 2.5 kΩ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To average 5 inputs with an inverting summer using Ri = 47 kΩ on each input, Rf must be",
+   "vi": "Để lấy trung bình 5 ngõ vào bằng mạch cộng đảo với Ri = 47 kΩ mỗi ngõ, Rf phải bằng"
+  },
+  "opts": [
+   {
+    "en": "4.7 kΩ",
+    "vi": "4.7 kΩ"
+   },
+   {
+    "en": "7.83 kΩ",
+    "vi": "7.83 kΩ"
+   },
+   {
+    "en": "235 kΩ",
+    "vi": "235 kΩ"
+   },
+   {
+    "en": "9.4 kΩ",
+    "vi": "9.4 kΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Gain per input = 1/n → Rf = Ri/n = 47/5 = 9.4 kΩ.",
+   "vi": "Độ lợi mỗi ngõ = 1/n → Rf = Ri/n = 47/5 = 9.4 kΩ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To average 8 inputs with an inverting summer using Ri = 10 kΩ on each input, Rf must be",
+   "vi": "Để lấy trung bình 8 ngõ vào bằng mạch cộng đảo với Ri = 10 kΩ mỗi ngõ, Rf phải bằng"
+  },
+  "opts": [
+   {
+    "en": "80 kΩ",
+    "vi": "80 kΩ"
+   },
+   {
+    "en": "1.11 kΩ",
+    "vi": "1.11 kΩ"
+   },
+   {
+    "en": "0.625 kΩ",
+    "vi": "0.625 kΩ"
+   },
+   {
+    "en": "1.25 kΩ",
+    "vi": "1.25 kΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Gain per input = 1/n → Rf = Ri/n = 10/8 = 1.25 kΩ.",
+   "vi": "Độ lợi mỗi ngõ = 1/n → Rf = Ri/n = 10/8 = 1.25 kΩ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "To average 10 inputs with an inverting summer using Ri = 22 kΩ on each input, Rf must be",
+   "vi": "Để lấy trung bình 10 ngõ vào bằng mạch cộng đảo với Ri = 22 kΩ mỗi ngõ, Rf phải bằng"
+  },
+  "opts": [
+   {
+    "en": "2 kΩ",
+    "vi": "2 kΩ"
+   },
+   {
+    "en": "22 kΩ",
+    "vi": "22 kΩ"
+   },
+   {
+    "en": "1.1 kΩ",
+    "vi": "1.1 kΩ"
+   },
+   {
+    "en": "2.2 kΩ",
+    "vi": "2.2 kΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Gain per input = 1/n → Rf = Ri/n = 22/10 = 2.2 kΩ.",
+   "vi": "Độ lợi mỗi ngõ = 1/n → Rf = Ri/n = 22/10 = 2.2 kΩ."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a scaling adder with Rf = 100 kΩ, what input resistor gives an input a weight (gain) of 2?",
+   "vi": "Trong mạch cộng có trọng số với Rf = 100 kΩ, điện trở vào nào cho ngõ đó trọng số (độ lợi) 2?"
+  },
+  "opts": [
+   {
+    "en": "200 kΩ",
+    "vi": "200 kΩ"
+   },
+   {
+    "en": "50 kΩ",
+    "vi": "50 kΩ"
+   },
+   {
+    "en": "100 kΩ",
+    "vi": "100 kΩ"
+   },
+   {
+    "en": "25 kΩ",
+    "vi": "25 kΩ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Weight = Rf/Ri → Ri = 100/2 = 50 kΩ (bigger weight needs a smaller resistor).",
+   "vi": "Trọng số = Rf/Ri → Ri = 100/2 = 50 kΩ (trọng số lớn cần điện trở nhỏ)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a scaling adder with Rf = 100 kΩ, what input resistor gives an input a weight (gain) of 8?",
+   "vi": "Trong mạch cộng có trọng số với Rf = 100 kΩ, điện trở vào nào cho ngõ đó trọng số (độ lợi) 8?"
+  },
+  "opts": [
+   {
+    "en": "12.5 kΩ",
+    "vi": "12.5 kΩ"
+   },
+   {
+    "en": "100 kΩ",
+    "vi": "100 kΩ"
+   },
+   {
+    "en": "11.1 kΩ",
+    "vi": "11.1 kΩ"
+   },
+   {
+    "en": "800 kΩ",
+    "vi": "800 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Weight = Rf/Ri → Ri = 100/8 = 12.5 kΩ (bigger weight needs a smaller resistor).",
+   "vi": "Trọng số = Rf/Ri → Ri = 100/8 = 12.5 kΩ (trọng số lớn cần điện trở nhỏ)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a scaling adder with Rf = 47 kΩ, what input resistor gives an input a weight (gain) of 4?",
+   "vi": "Trong mạch cộng có trọng số với Rf = 47 kΩ, điện trở vào nào cho ngõ đó trọng số (độ lợi) 4?"
+  },
+  "opts": [
+   {
+    "en": "188 kΩ",
+    "vi": "188 kΩ"
+   },
+   {
+    "en": "9.4 kΩ",
+    "vi": "9.4 kΩ"
+   },
+   {
+    "en": "11.8 kΩ",
+    "vi": "11.8 kΩ"
+   },
+   {
+    "en": "47 kΩ",
+    "vi": "47 kΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Weight = Rf/Ri → Ri = 47/4 = 11.8 kΩ (bigger weight needs a smaller resistor).",
+   "vi": "Trọng số = Rf/Ri → Ri = 47/4 = 11.8 kΩ (trọng số lớn cần điện trở nhỏ)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a scaling adder with Rf = 10 kΩ, what input resistor gives an input a weight (gain) of 5?",
+   "vi": "Trong mạch cộng có trọng số với Rf = 10 kΩ, điện trở vào nào cho ngõ đó trọng số (độ lợi) 5?"
+  },
+  "opts": [
+   {
+    "en": "1 kΩ",
+    "vi": "1 kΩ"
+   },
+   {
+    "en": "2 kΩ",
+    "vi": "2 kΩ"
+   },
+   {
+    "en": "1.67 kΩ",
+    "vi": "1.67 kΩ"
+   },
+   {
+    "en": "50 kΩ",
+    "vi": "50 kΩ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Weight = Rf/Ri → Ri = 10/5 = 2 kΩ (bigger weight needs a smaller resistor).",
+   "vi": "Trọng số = Rf/Ri → Ri = 10/5 = 2 kΩ (trọng số lớn cần điện trở nhỏ)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a scaling adder with Rf = 220 kΩ, what input resistor gives an input a weight (gain) of 20?",
+   "vi": "Trong mạch cộng có trọng số với Rf = 220 kΩ, điện trở vào nào cho ngõ đó trọng số (độ lợi) 20?"
+  },
+  "opts": [
+   {
+    "en": "5.5 kΩ",
+    "vi": "5.5 kΩ"
+   },
+   {
+    "en": "220 kΩ",
+    "vi": "220 kΩ"
+   },
+   {
+    "en": "11 kΩ",
+    "vi": "11 kΩ"
+   },
+   {
+    "en": "4400 kΩ",
+    "vi": "4400 kΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Weight = Rf/Ri → Ri = 220/20 = 11 kΩ (bigger weight needs a smaller resistor).",
+   "vi": "Trọng số = Rf/Ri → Ri = 220/20 = 11 kΩ (trọng số lớn cần điện trở nhỏ)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a scaling adder with Rf = 68 kΩ, what input resistor gives an input a weight (gain) of 16?",
+   "vi": "Trong mạch cộng có trọng số với Rf = 68 kΩ, điện trở vào nào cho ngõ đó trọng số (độ lợi) 16?"
+  },
+  "opts": [
+   {
+    "en": "68 kΩ",
+    "vi": "68 kΩ"
+   },
+   {
+    "en": "4 kΩ",
+    "vi": "4 kΩ"
+   },
+   {
+    "en": "4.25 kΩ",
+    "vi": "4.25 kΩ"
+   },
+   {
+    "en": "1090 kΩ",
+    "vi": "1090 kΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Weight = Rf/Ri → Ri = 68/16 = 4.25 kΩ (bigger weight needs a smaller resistor).",
+   "vi": "Trọng số = Rf/Ri → Ri = 68/16 = 4.25 kΩ (trọng số lớn cần điện trở nhỏ)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 14",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator has R = 56 kΩ and C = 0.022 μF and a 5 V step input. What is the rate of change of the output?",
+   "vi": "Mạch tích phân có R = 56 kΩ và C = 0.022 μF với bước nhảy vào 5 V. Tốc độ biến thiên của ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-0.00406 V/ms",
+    "vi": "-0.00406 V/ms"
+   },
+   {
+    "en": "-4.06 V/ms",
+    "vi": "-4.06 V/ms"
+   },
+   {
+    "en": "-6.16 V/ms",
+    "vi": "-6.16 V/ms"
+   },
+   {
+    "en": "-4060 V/ms",
+    "vi": "-4060 V/ms"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ΔVout/Δt = −Vin/(R·C) = −5/(56 kΩ × 0.022 μF) = -4.06 V/ms.",
+   "vi": "ΔVout/Δt = −Vin/(R·C) = −5/(56 kΩ × 0.022 μF) = -4.06 V/ms."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator has R = 10 kΩ and C = 0.01 μF and a 2 V step input. What is the rate of change of the output?",
+   "vi": "Mạch tích phân có R = 10 kΩ và C = 0.01 μF với bước nhảy vào 2 V. Tốc độ biến thiên của ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "20 V/ms",
+    "vi": "20 V/ms"
+   },
+   {
+    "en": "-20 V/ms",
+    "vi": "-20 V/ms"
+   },
+   {
+    "en": "-20,000 V/ms",
+    "vi": "-20,000 V/ms"
+   },
+   {
+    "en": "-0.02 V/ms",
+    "vi": "-0.02 V/ms"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ΔVout/Δt = −Vin/(R·C) = −2/(10 kΩ × 0.01 μF) = -20 V/ms.",
+   "vi": "ΔVout/Δt = −Vin/(R·C) = −2/(10 kΩ × 0.01 μF) = -20 V/ms."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator has R = 100 kΩ and C = 0.1 μF and a 10 V step input. What is the rate of change of the output?",
+   "vi": "Mạch tích phân có R = 100 kΩ và C = 0.1 μF với bước nhảy vào 10 V. Tốc độ biến thiên của ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-100 V/ms",
+    "vi": "-100 V/ms"
+   },
+   {
+    "en": "-1 V/ms",
+    "vi": "-1 V/ms"
+   },
+   {
+    "en": "-0.001 V/ms",
+    "vi": "-0.001 V/ms"
+   },
+   {
+    "en": "-1000 V/ms",
+    "vi": "-1000 V/ms"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "ΔVout/Δt = −Vin/(R·C) = −10/(100 kΩ × 0.1 μF) = -1 V/ms.",
+   "vi": "ΔVout/Δt = −Vin/(R·C) = −10/(100 kΩ × 0.1 μF) = -1 V/ms."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator has R = 22 kΩ and C = 0.047 μF and a 1 V step input. What is the rate of change of the output?",
+   "vi": "Mạch tích phân có R = 22 kΩ và C = 0.047 μF với bước nhảy vào 1 V. Tốc độ biến thiên của ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-0.967 V/ms",
+    "vi": "-0.967 V/ms"
+   },
+   {
+    "en": "-967 V/ms",
+    "vi": "-967 V/ms"
+   },
+   {
+    "en": "0.967 V/ms",
+    "vi": "0.967 V/ms"
+   },
+   {
+    "en": "-1.03 V/ms",
+    "vi": "-1.03 V/ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔVout/Δt = −Vin/(R·C) = −1/(22 kΩ × 0.047 μF) = -0.967 V/ms.",
+   "vi": "ΔVout/Δt = −Vin/(R·C) = −1/(22 kΩ × 0.047 μF) = -0.967 V/ms."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator has R = 47 kΩ and C = 0.01 μF and a 3 V step input. What is the rate of change of the output?",
+   "vi": "Mạch tích phân có R = 47 kΩ và C = 0.01 μF với bước nhảy vào 3 V. Tốc độ biến thiên của ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-6.38 V/ms",
+    "vi": "-6.38 V/ms"
+   },
+   {
+    "en": "-1.41 V/ms",
+    "vi": "-1.41 V/ms"
+   },
+   {
+    "en": "6.38 V/ms",
+    "vi": "6.38 V/ms"
+   },
+   {
+    "en": "-0.00638 V/ms",
+    "vi": "-0.00638 V/ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "ΔVout/Δt = −Vin/(R·C) = −3/(47 kΩ × 0.01 μF) = -6.38 V/ms.",
+   "vi": "ΔVout/Δt = −Vin/(R·C) = −3/(47 kΩ × 0.01 μF) = -6.38 V/ms."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator has R = 33 kΩ and C = 0.068 μF and a 8 V step input. What is the rate of change of the output?",
+   "vi": "Mạch tích phân có R = 33 kΩ và C = 0.068 μF với bước nhảy vào 8 V. Tốc độ biến thiên của ngõ ra là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-0.00357 V/ms",
+    "vi": "-0.00357 V/ms"
+   },
+   {
+    "en": "-3570 V/ms",
+    "vi": "-3570 V/ms"
+   },
+   {
+    "en": "-3.57 V/ms",
+    "vi": "-3.57 V/ms"
+   },
+   {
+    "en": "-18 V/ms",
+    "vi": "-18 V/ms"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "ΔVout/Δt = −Vin/(R·C) = −8/(33 kΩ × 0.068 μF) = -3.57 V/ms.",
+   "vi": "ΔVout/Δt = −Vin/(R·C) = −8/(33 kΩ × 0.068 μF) = -3.57 V/ms."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator (R = 10 kΩ, C = 10 μF) with output initially 0 V receives 5 V for 10 ms. What is the output at the end?",
+   "vi": "Mạch tích phân (R = 10 kΩ, C = 10 μF) có ngõ ra ban đầu 0 V nhận 5 V trong 10 ms. Ngõ ra cuối khoảng này là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-5 V",
+    "vi": "-5 V"
+   },
+   {
+    "en": "-0.05 V",
+    "vi": "-0.05 V"
+   },
+   {
+    "en": "-0.5 V",
+    "vi": "-0.5 V"
+   },
+   {
+    "en": "0.5 V",
+    "vi": "0.5 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Vout = −Vin·t/(R·C) = −5 × 10 ms/(10 kΩ × 10 μF) = -0.5 V.",
+   "vi": "Vout = −Vin·t/(R·C) = −5 × 10 ms/(10 kΩ × 10 μF) = -0.5 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator (R = 10 kΩ, C = 1 μF) with output initially 0 V receives 2 V for 5 ms. What is the output at the end?",
+   "vi": "Mạch tích phân (R = 10 kΩ, C = 1 μF) có ngõ ra ban đầu 0 V nhận 2 V trong 5 ms. Ngõ ra cuối khoảng này là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-1 V",
+    "vi": "-1 V"
+   },
+   {
+    "en": "1 V",
+    "vi": "1 V"
+   },
+   {
+    "en": "-0.1 V",
+    "vi": "-0.1 V"
+   },
+   {
+    "en": "-10 V",
+    "vi": "-10 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Vout = −Vin·t/(R·C) = −2 × 5 ms/(10 kΩ × 1 μF) = -1 V.",
+   "vi": "Vout = −Vin·t/(R·C) = −2 × 5 ms/(10 kΩ × 1 μF) = -1 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator (R = 20 kΩ, C = 5 μF) with output initially 0 V receives 4 V for 10 ms. What is the output at the end?",
+   "vi": "Mạch tích phân (R = 20 kΩ, C = 5 μF) có ngõ ra ban đầu 0 V nhận 4 V trong 10 ms. Ngõ ra cuối khoảng này là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.4 V",
+    "vi": "0.4 V"
+   },
+   {
+    "en": "-0.4 V",
+    "vi": "-0.4 V"
+   },
+   {
+    "en": "-40 V",
+    "vi": "-40 V"
+   },
+   {
+    "en": "-4 V",
+    "vi": "-4 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Vout = −Vin·t/(R·C) = −4 × 10 ms/(20 kΩ × 5 μF) = -0.4 V.",
+   "vi": "Vout = −Vin·t/(R·C) = −4 × 10 ms/(20 kΩ × 5 μF) = -0.4 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An integrator (R = 50 kΩ, C = 2 μF) with output initially 0 V receives 1 V for 20 ms. What is the output at the end?",
+   "vi": "Mạch tích phân (R = 50 kΩ, C = 2 μF) có ngõ ra ban đầu 0 V nhận 1 V trong 20 ms. Ngõ ra cuối khoảng này là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-2 V",
+    "vi": "-2 V"
+   },
+   {
+    "en": "-0.2 V",
+    "vi": "-0.2 V"
+   },
+   {
+    "en": "-20 V",
+    "vi": "-20 V"
+   },
+   {
+    "en": "0.2 V",
+    "vi": "0.2 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Vout = −Vin·t/(R·C) = −1 × 20 ms/(50 kΩ × 2 μF) = -0.2 V.",
+   "vi": "Vout = −Vin·t/(R·C) = −1 × 20 ms/(50 kΩ × 2 μF) = -0.2 V."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A triangular wave of 2 V peak-to-peak and period 1000 μs drives a differentiator with Rf = 15 kΩ and C = 0.047 μF. What is the output amplitude (magnitude of each level)?",
+   "vi": "Sóng tam giác 2 V đỉnh–đỉnh, chu kỳ 1000 μs đưa vào mạch vi phân có Rf = 15 kΩ và C = 0.047 μF. Biên độ ngõ ra (độ lớn mỗi mức) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5.64 V",
+    "vi": "5.64 V"
+   },
+   {
+    "en": "2 V",
+    "vi": "2 V"
+   },
+   {
+    "en": "2.82 V",
+    "vi": "2.82 V"
+   },
+   {
+    "en": "1.41 V",
+    "vi": "1.41 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "|slope| = 2 V/(500 μs) = 4000 V/s; |Vout| = Rf·C·slope = 2.82 V (square wave).",
+   "vi": "|độ dốc| = 2 V/(500 μs) = 4000 V/s; |Vout| = Rf·C·độ dốc = 2.82 V (sóng vuông)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 18",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A triangular wave of 5 V peak-to-peak and period 20 μs drives a differentiator with Rf = 10 kΩ and C = 0.001 μF. What is the output amplitude (magnitude of each level)?",
+   "vi": "Sóng tam giác 5 V đỉnh–đỉnh, chu kỳ 20 μs đưa vào mạch vi phân có Rf = 10 kΩ và C = 0.001 μF. Biên độ ngõ ra (độ lớn mỗi mức) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2.5 V",
+    "vi": "2.5 V"
+   },
+   {
+    "en": "5 V",
+    "vi": "5 V"
+   },
+   {
+    "en": "50 V",
+    "vi": "50 V"
+   },
+   {
+    "en": "10 V",
+    "vi": "10 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "|slope| = 5 V/(10 μs) = 500,000 V/s; |Vout| = Rf·C·slope = 5 V (square wave).",
+   "vi": "|độ dốc| = 5 V/(10 μs) = 500,000 V/s; |Vout| = Rf·C·độ dốc = 5 V (sóng vuông)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 18",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A triangular wave of 4 V peak-to-peak and period 200 μs drives a differentiator with Rf = 22 kΩ and C = 0.01 μF. What is the output amplitude (magnitude of each level)?",
+   "vi": "Sóng tam giác 4 V đỉnh–đỉnh, chu kỳ 200 μs đưa vào mạch vi phân có Rf = 22 kΩ và C = 0.01 μF. Biên độ ngõ ra (độ lớn mỗi mức) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "17.6 V",
+    "vi": "17.6 V"
+   },
+   {
+    "en": "4.4 V",
+    "vi": "4.4 V"
+   },
+   {
+    "en": "8.8 V",
+    "vi": "8.8 V"
+   },
+   {
+    "en": "88 V",
+    "vi": "88 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "|slope| = 4 V/(100 μs) = 40,000 V/s; |Vout| = Rf·C·slope = 8.8 V (square wave).",
+   "vi": "|độ dốc| = 4 V/(100 μs) = 40,000 V/s; |Vout| = Rf·C·độ dốc = 8.8 V (sóng vuông)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 18",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A triangular wave of 1 V peak-to-peak and period 500 μs drives a differentiator with Rf = 47 kΩ and C = 0.022 μF. What is the output amplitude (magnitude of each level)?",
+   "vi": "Sóng tam giác 1 V đỉnh–đỉnh, chu kỳ 500 μs đưa vào mạch vi phân có Rf = 47 kΩ và C = 0.022 μF. Biên độ ngõ ra (độ lớn mỗi mức) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1 V",
+    "vi": "1 V"
+   },
+   {
+    "en": "41.4 V",
+    "vi": "41.4 V"
+   },
+   {
+    "en": "8.27 V",
+    "vi": "8.27 V"
+   },
+   {
+    "en": "4.14 V",
+    "vi": "4.14 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "|slope| = 1 V/(250 μs) = 4000 V/s; |Vout| = Rf·C·slope = 4.14 V (square wave).",
+   "vi": "|độ dốc| = 1 V/(250 μs) = 4000 V/s; |Vout| = Rf·C·độ dốc = 4.14 V (sóng vuông)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 18",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A triangular wave of 2 V peak-to-peak and period 2000 μs drives a differentiator with Rf = 10 kΩ and C = 0.1 μF. What is the output amplitude (magnitude of each level)?",
+   "vi": "Sóng tam giác 2 V đỉnh–đỉnh, chu kỳ 2000 μs đưa vào mạch vi phân có Rf = 10 kΩ và C = 0.1 μF. Biên độ ngõ ra (độ lớn mỗi mức) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "20 V",
+    "vi": "20 V"
+   },
+   {
+    "en": "2 V",
+    "vi": "2 V"
+   },
+   {
+    "en": "4 V",
+    "vi": "4 V"
+   },
+   {
+    "en": "1 V",
+    "vi": "1 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "|slope| = 2 V/(1000 μs) = 2000 V/s; |Vout| = Rf·C·slope = 2 V (square wave).",
+   "vi": "|độ dốc| = 2 V/(1000 μs) = 2000 V/s; |Vout| = Rf·C·độ dốc = 2 V (sóng vuông)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 18",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The reference voltage of a comparator sets",
+   "vi": "Điện áp tham chiếu của mạch so sánh đặt"
+  },
+  "opts": [
+   {
+    "en": "the voltage gain",
+    "vi": "độ lợi điện áp"
+   },
+   {
+    "en": "the trip (threshold) level",
+    "vi": "mức ngưỡng chuyển"
+   },
+   {
+    "en": "the supply voltage",
+    "vi": "điện áp nguồn"
+   },
+   {
+    "en": "the bandwidth",
+    "vi": "băng thông"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The output changes state when Vin crosses Vref.",
+   "vi": "Ngõ ra đổi trạng thái khi Vin cắt Vref."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Compared with a plain comparator, a comparator with hysteresis is less sensitive to",
+   "vi": "So với mạch so sánh thường, mạch có hysteresis ít nhạy hơn với"
+  },
+  "opts": [
+   {
+    "en": "the load",
+    "vi": "tải"
+   },
+   {
+    "en": "the supply voltage",
+    "vi": "điện áp nguồn"
+   },
+   {
+    "en": "the input frequency",
+    "vi": "tần số vào"
+   },
+   {
+    "en": "noise near the threshold",
+    "vi": "nhiễu gần ngưỡng"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Two trigger points separated by VHYS ignore noise smaller than VHYS.",
+   "vi": "Hai ngưỡng cách nhau VHYS bỏ qua nhiễu nhỏ hơn VHYS."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Positive feedback in a comparator makes the transition",
+   "vi": "Hồi tiếp dương trong mạch so sánh làm quá trình chuyển trạng thái"
+  },
+  "opts": [
+   {
+    "en": "slower",
+    "vi": "chậm hơn"
+   },
+   {
+    "en": "impossible",
+    "vi": "không thể xảy ra"
+   },
+   {
+    "en": "faster and regenerative",
+    "vi": "nhanh và tự tái sinh"
+   },
+   {
+    "en": "linear",
+    "vi": "tuyến tính"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Once triggered, the feedback pushes the input further past the threshold.",
+   "vi": "Khi đã kích, hồi tiếp đẩy ngõ vào vượt xa ngưỡng hơn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Comparators and hysteresis",
+   "vi": "Mạch so sánh và trễ (hysteresis)"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The inverting input of a summing amplifier is called the",
+   "vi": "Ngõ vào đảo của mạch cộng được gọi là"
+  },
+  "opts": [
+   {
+    "en": "reference point",
+    "vi": "điểm tham chiếu"
+   },
+   {
+    "en": "output node",
+    "vi": "nút ra"
+   },
+   {
+    "en": "summing point (virtual ground)",
+    "vi": "điểm cộng (đất ảo)"
+   },
+   {
+    "en": "bias node",
+    "vi": "nút phân cực"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "All input currents add there while the node stays at ≈0 V.",
+   "vi": "Mọi dòng vào cộng tại đó trong khi nút này giữ ≈0 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A scaling adder gives the inputs different",
+   "vi": "Mạch cộng có trọng số cho các ngõ vào khác nhau về"
+  },
+  "opts": [
+   {
+    "en": "feedback capacitors",
+    "vi": "tụ hồi tiếp"
+   },
+   {
+    "en": "phase shifts",
+    "vi": "độ lệch pha"
+   },
+   {
+    "en": "supply voltages",
+    "vi": "điện áp nguồn"
+   },
+   {
+    "en": "weights, by using different input resistors",
+    "vi": "trọng số, bằng các điện trở vào khác nhau"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Weight of input n = Rf/Rn.",
+   "vi": "Trọng số ngõ n = Rf/Rn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An R/2R ladder is used in a",
+   "vi": "Mạch thang R/2R được dùng trong"
+  },
+  "opts": [
+   {
+    "en": "comparator with hysteresis",
+    "vi": "mạch so sánh có hysteresis"
+   },
+   {
+    "en": "differentiator",
+    "vi": "mạch vi phân"
+   },
+   {
+    "en": "digital-to-analog converter",
+    "vi": "bộ chuyển đổi số–tương tự"
+   },
+   {
+    "en": "voltage follower",
+    "vi": "mạch lặp điện áp"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "It needs only two resistor values and produces a weighted sum of bits.",
+   "vi": "Chỉ cần hai giá trị điện trở và tạo tổng có trọng số của các bit."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an ideal integrator for a constant nonzero input is",
+   "vi": "Ngõ ra của mạch tích phân lý tưởng với tín hiệu vào hằng khác không là"
+  },
+  "opts": [
+   {
+    "en": "a sine wave",
+    "vi": "sóng sin"
+   },
+   {
+    "en": "a constant dc level",
+    "vi": "mức một chiều không đổi"
+   },
+   {
+    "en": "a square wave",
+    "vi": "sóng vuông"
+   },
+   {
+    "en": "a linear ramp",
+    "vi": "đường dốc tuyến tính"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "A constant current charges C at a constant rate.",
+   "vi": "Dòng không đổi nạp C với tốc độ không đổi."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Applying a square wave to an integrator gives",
+   "vi": "Đưa sóng vuông vào mạch tích phân cho"
+  },
+  "opts": [
+   {
+    "en": "a sine wave",
+    "vi": "sóng sin"
+   },
+   {
+    "en": "a triangular wave",
+    "vi": "sóng tam giác"
+   },
+   {
+    "en": "a dc level",
+    "vi": "mức một chiều"
+   },
+   {
+    "en": "narrow spikes",
+    "vi": "các xung nhọn hẹp"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Alternating constant input gives alternating up and down ramps.",
+   "vi": "Vào hằng đổi dấu cho các đường dốc lên xuống luân phiên."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The resistor in parallel with the feedback capacitor of a practical integrator",
+   "vi": "Điện trở song song với tụ hồi tiếp của mạch tích phân thực tế"
+  },
+  "opts": [
+   {
+    "en": "limits the dc gain and prevents offset-induced saturation",
+    "vi": "giới hạn độ lợi một chiều và ngăn bão hòa do offset"
+   },
+   {
+    "en": "makes the output a square wave",
+    "vi": "làm ngõ ra thành sóng vuông"
+   },
+   {
+    "en": "reduces the supply current",
+    "vi": "giảm dòng nguồn"
+   },
+   {
+    "en": "increases the bandwidth",
+    "vi": "làm tăng băng thông"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Without it the dc offset is integrated until the output saturates.",
+   "vi": "Không có nó thì offset một chiều bị tích phân đến khi ngõ ra bão hòa."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A differentiator tends to be noisy because",
+   "vi": "Mạch vi phân dễ nhiễu vì"
+  },
+  "opts": [
+   {
+    "en": "its gain rises with frequency",
+    "vi": "độ lợi của nó tăng theo tần số"
+   },
+   {
+    "en": "its gain falls with frequency",
+    "vi": "độ lợi của nó giảm theo tần số"
+   },
+   {
+    "en": "it uses a zener diode",
+    "vi": "nó dùng điốt zener"
+   },
+   {
+    "en": "it has no feedback",
+    "vi": "nó không có hồi tiếp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "XC falls at high frequency, so Rf/XC grows and amplifies noise.",
+   "vi": "XC giảm ở tần số cao nên Rf/XC tăng và khuếch đại nhiễu."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A differentiator with a step input produces",
+   "vi": "Mạch vi phân với tín hiệu vào là bước nhảy cho ra"
+  },
+  "opts": [
+   {
+    "en": "a spike at the transitions",
+    "vi": "xung nhọn tại các thời điểm chuyển"
+   },
+   {
+    "en": "a dc level equal to the step",
+    "vi": "mức một chiều bằng bước nhảy"
+   },
+   {
+    "en": "a triangular wave",
+    "vi": "sóng tam giác"
+   },
+   {
+    "en": "a ramp",
+    "vi": "đường dốc"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The derivative of a step is nonzero only at the edge.",
+   "vi": "Đạo hàm của bước nhảy chỉ khác không tại cạnh."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Applying a ramp to a differentiator gives",
+   "vi": "Đưa đường dốc vào mạch vi phân cho"
+  },
+  "opts": [
+   {
+    "en": "a ramp",
+    "vi": "đường dốc"
+   },
+   {
+    "en": "a sine wave",
+    "vi": "sóng sin"
+   },
+   {
+    "en": "a constant (dc) output",
+    "vi": "ngõ ra hằng (một chiều)"
+   },
+   {
+    "en": "zero output",
+    "vi": "ngõ ra bằng không"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The slope of a ramp is constant, so the derivative is a dc level.",
+   "vi": "Độ dốc của đường dốc không đổi nên đạo hàm là mức một chiều."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.13 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.13 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the top 10 kΩ input resistor opens in Figure 13–22, the magnitude of the output voltage |VOUT| will",
+   "vi": "Nếu điện trở vào 10 kΩ trên cùng bị hở trong Hình 13–22 thì độ lớn điện áp ra |VOUT| sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "|VOUT| = 3 + 1 + 8 = 12 V before; without the +3 V input: 1 + 8 = 9 V.",
+   "vi": "|VOUT| = 3 + 1 + 8 = 12 V trước đó; bỏ ngõ +3 V: 1 + 8 = 9 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q4",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 4"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_22.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If VIN2 is changed to −1 V in Figure 13–22, the magnitude |VOUT| will",
+   "vi": "Nếu đổi VIN2 thành −1 V trong Hình 13–22 thì độ lớn |VOUT| sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "|VOUT| = |3 − 1 + 8| = 10 V instead of 12 V.",
+   "vi": "|VOUT| = |3 − 1 + 8| = 10 V thay vì 12 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q5",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_22.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If VIN3 is changed to −7 V in Figure 13–24, the magnitude |VOUT| will",
+   "vi": "Nếu đổi VIN3 thành −7 V trong Hình 13–24 thì độ lớn |VOUT| sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "|VOUT| = (25/100)|1 + 2 − 7 + 4| = 0 V instead of 2.5 V.",
+   "vi": "|VOUT| = (25/100)|1 + 2 − 7 + 4| = 0 V thay vì 2,5 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q7",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_24.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Rf opens in Figure 13–25, the magnitude |VOUT| will",
+   "vi": "Nếu Rf bị hở trong Hình 13–25 thì độ lớn |VOUT| sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Before: |VOUT| ≈ 8.8 V. With no feedback the op-amp is open loop and the output saturates at its limit (larger).",
+   "vi": "Trước đó: |VOUT| ≈ 8,8 V. Không có hồi tiếp thì op-amp vòng hở và ngõ ra bão hòa ở mức giới hạn (lớn hơn)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_25.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If R2 in Figure 13–23 is changed from 1.0 kΩ to 2.0 kΩ, the magnitude |VOUT| will",
+   "vi": "Nếu đổi R2 trong Hình 13–23 từ 1,0 kΩ lên 2,0 kΩ thì độ lớn |VOUT| sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The 0.5 V input’s gain falls from 10 to 5: |VOUT| = 2 + 2.5 = 4.5 V instead of 7 V.",
+   "vi": "Độ lợi của ngõ 0,5 V giảm từ 10 xuống 5: |VOUT| = 2 + 2,5 = 4,5 V thay vì 7 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Summing, averaging, scaling amplifiers",
+   "vi": "Mạch cộng, trung bình, cộng có trọng số"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q6",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_23.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Rf is increased in Figure 13–40, the amplitude of the output voltage will",
+   "vi": "Nếu tăng Rf trong Hình 13–40 thì biên độ điện áp ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "|Vout| = Rf·C·|dVin/dt| is proportional to Rf.",
+   "vi": "|Vout| = Rf·C·|dVin/dt| tỉ lệ với Rf."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Differentiator",
+   "vi": "Mạch vi phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_40.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If Ri is increased in Figure 13–35, the slope of the output ramp will",
+   "vi": "Nếu tăng Ri trong Hình 13–35 thì độ dốc của đường dốc ngõ ra sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Slope = Vin/(Ri·C): larger Ri, smaller slope.",
+   "vi": "Độ dốc = Vin/(Ri·C): Ri lớn hơn thì độ dốc nhỏ hơn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Integrator",
+   "vi": "Mạch tích phân"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd CA Q9",
+   "vi": "Bổ sung – sinh theo dạng Floyd CA câu 9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "fig": "assets/figs/m03/fig13_35.png",
+  "check": "figure + formula"
+ }
+]
