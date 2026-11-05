@@ -1,0 +1,4790 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 100,000 and Acm = 0.5. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 100,000 và Acm = 0.5. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "-106.0 dB",
+    "vi": "-106.0 dB"
+   },
+   {
+    "en": "86.0 dB",
+    "vi": "86.0 dB"
+   },
+   {
+    "en": "100.0 dB",
+    "vi": "100.0 dB"
+   },
+   {
+    "en": "106.0 dB",
+    "vi": "106.0 dB"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 200,000; CMRR(dB) = 20·log10(200,000) = 106.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 200,000; CMRR(dB) = 20·log10(200,000) = 106.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 200,000 and Acm = 2. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 200,000 và Acm = 2. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "100.0 dB",
+    "vi": "100.0 dB"
+   },
+   {
+    "en": "120.0 dB",
+    "vi": "120.0 dB"
+   },
+   {
+    "en": "-100.0 dB",
+    "vi": "-100.0 dB"
+   },
+   {
+    "en": "80.0 dB",
+    "vi": "80.0 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 100,000; CMRR(dB) = 20·log10(100,000) = 100.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 100,000; CMRR(dB) = 20·log10(100,000) = 100.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 50,000 and Acm = 0.25. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 50,000 và Acm = 0.25. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "94.0 dB",
+    "vi": "94.0 dB"
+   },
+   {
+    "en": "53.0 dB",
+    "vi": "53.0 dB"
+   },
+   {
+    "en": "106.0 dB",
+    "vi": "106.0 dB"
+   },
+   {
+    "en": "-106.0 dB",
+    "vi": "-106.0 dB"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 200,000; CMRR(dB) = 20·log10(200,000) = 106.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 200,000; CMRR(dB) = 20·log10(200,000) = 106.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 150,000 and Acm = 1.5. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 150,000 và Acm = 1.5. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "103.5 dB",
+    "vi": "103.5 dB"
+   },
+   {
+    "en": "-100.0 dB",
+    "vi": "-100.0 dB"
+   },
+   {
+    "en": "100.0 dB",
+    "vi": "100.0 dB"
+   },
+   {
+    "en": "50.0 dB",
+    "vi": "50.0 dB"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 100,000; CMRR(dB) = 20·log10(100,000) = 100.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 100,000; CMRR(dB) = 20·log10(100,000) = 100.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 80,000 and Acm = 0.2. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 80,000 và Acm = 0.2. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "92.0 dB",
+    "vi": "92.0 dB"
+   },
+   {
+    "en": "-112.0 dB",
+    "vi": "-112.0 dB"
+   },
+   {
+    "en": "132.0 dB",
+    "vi": "132.0 dB"
+   },
+   {
+    "en": "112.0 dB",
+    "vi": "112.0 dB"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 400,000; CMRR(dB) = 20·log10(400,000) = 112.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 400,000; CMRR(dB) = 20·log10(400,000) = 112.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 250,000 and Acm = 0.05. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 250,000 và Acm = 0.05. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "134.0 dB",
+    "vi": "134.0 dB"
+   },
+   {
+    "en": "154.0 dB",
+    "vi": "154.0 dB"
+   },
+   {
+    "en": "-134.0 dB",
+    "vi": "-134.0 dB"
+   },
+   {
+    "en": "114.0 dB",
+    "vi": "114.0 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 5,000,000; CMRR(dB) = 20·log10(5,000,000) = 134.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 5,000,000; CMRR(dB) = 20·log10(5,000,000) = 134.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 120,000 and Acm = 0.4. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 120,000 và Acm = 0.4. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "129.5 dB",
+    "vi": "129.5 dB"
+   },
+   {
+    "en": "-109.5 dB",
+    "vi": "-109.5 dB"
+   },
+   {
+    "en": "109.5 dB",
+    "vi": "109.5 dB"
+   },
+   {
+    "en": "89.5 dB",
+    "vi": "89.5 dB"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 300,000; CMRR(dB) = 20·log10(300,000) = 109.5 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 300,000; CMRR(dB) = 20·log10(300,000) = 109.5 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 300,000 and Acm = 0.6. What is the CMRR in decibels?",
+   "vi": "Một op-amp có Aol = 300,000 và Acm = 0.6. CMRR là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "109.5 dB",
+    "vi": "109.5 dB"
+   },
+   {
+    "en": "134.0 dB",
+    "vi": "134.0 dB"
+   },
+   {
+    "en": "114.0 dB",
+    "vi": "114.0 dB"
+   },
+   {
+    "en": "94.0 dB",
+    "vi": "94.0 dB"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "CMRR = Aol/Acm = 500,000; CMRR(dB) = 20·log10(500,000) = 114.0 dB (10·log10 is the power formula; Acm/Aol inverts the ratio).",
+   "vi": "CMRR = Aol/Acm = 500,000; CMRR(dB) = 20·log10(500,000) = 114.0 dB (10·log10 là công thức công suất; Acm/Aol là đảo tỉ số)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 100,000 and CMRR = 100 dB. What is the common-mode gain Acm?",
+   "vi": "Một op-amp có Aol = 100,000 và CMRR = 100 dB. Độ lợi chế độ chung Acm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "1",
+    "vi": "1"
+   },
+   {
+    "en": "1e-05",
+    "vi": "1e-05"
+   },
+   {
+    "en": "10",
+    "vi": "10"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "CMRR = 10^(100/20) = 100,000; Acm = Aol/CMRR = 100,000/100,000 = 1.",
+   "vi": "CMRR = 10^(100/20) = 100,000; Acm = Aol/CMRR = 100,000/100,000 = 1."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 200,000 and CMRR = 90 dB. What is the common-mode gain Acm?",
+   "vi": "Một op-amp có Aol = 200,000 và CMRR = 90 dB. Độ lợi chế độ chung Acm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.0002",
+    "vi": "0.0002"
+   },
+   {
+    "en": "63.2",
+    "vi": "63.2"
+   },
+   {
+    "en": "0.632",
+    "vi": "0.632"
+   },
+   {
+    "en": "6.32",
+    "vi": "6.32"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "CMRR = 10^(90/20) = 31,623; Acm = Aol/CMRR = 200,000/31,623 = 6.32.",
+   "vi": "CMRR = 10^(90/20) = 31,623; Acm = Aol/CMRR = 200,000/31,623 = 6.32."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 50,000 and CMRR = 80 dB. What is the common-mode gain Acm?",
+   "vi": "Một op-amp có Aol = 50,000 và CMRR = 80 dB. Độ lợi chế độ chung Acm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5",
+    "vi": "5"
+   },
+   {
+    "en": "50",
+    "vi": "50"
+   },
+   {
+    "en": "0.5",
+    "vi": "0.5"
+   },
+   {
+    "en": "0.0005",
+    "vi": "0.0005"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "CMRR = 10^(80/20) = 10,000; Acm = Aol/CMRR = 50,000/10,000 = 5.",
+   "vi": "CMRR = 10^(80/20) = 10,000; Acm = Aol/CMRR = 50,000/10,000 = 5."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 150,000 and CMRR = 110 dB. What is the common-mode gain Acm?",
+   "vi": "Một op-amp có Aol = 150,000 và CMRR = 110 dB. Độ lợi chế độ chung Acm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1360",
+    "vi": "1360"
+   },
+   {
+    "en": "1.5e-06",
+    "vi": "1.5e-06"
+   },
+   {
+    "en": "0.0474",
+    "vi": "0.0474"
+   },
+   {
+    "en": "0.474",
+    "vi": "0.474"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "CMRR = 10^(110/20) = 316,228; Acm = Aol/CMRR = 150,000/316,228 = 0.474.",
+   "vi": "CMRR = 10^(110/20) = 316,228; Acm = Aol/CMRR = 150,000/316,228 = 0.474."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has Aol = 90,000 and CMRR = 94 dB. What is the common-mode gain Acm?",
+   "vi": "Một op-amp có Aol = 90,000 và CMRR = 94 dB. Độ lợi chế độ chung Acm là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.8",
+    "vi": "1.8"
+   },
+   {
+    "en": "18",
+    "vi": "18"
+   },
+   {
+    "en": "957",
+    "vi": "957"
+   },
+   {
+    "en": "4,510,000,000",
+    "vi": "4,510,000,000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "CMRR = 10^(94/20) = 50,119; Acm = Aol/CMRR = 90,000/50,119 = 1.8.",
+   "vi": "CMRR = 10^(94/20) = 50,119; Acm = Aol/CMRR = 90,000/50,119 = 1.8."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q8",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 10 V in 5 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 10 V trong 5 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1 V/μs",
+    "vi": "1 V/μs"
+   },
+   {
+    "en": "2000 V/μs",
+    "vi": "2000 V/μs"
+   },
+   {
+    "en": "2 V/μs",
+    "vi": "2 V/μs"
+   },
+   {
+    "en": "50 V/μs",
+    "vi": "50 V/μs"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "SR = ΔV/Δt = 10 V / 5 μs = 2 V/μs.",
+   "vi": "SR = ΔV/Δt = 10 V / 5 μs = 2 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 12 V in 8 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 12 V trong 8 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1500 V/μs",
+    "vi": "1500 V/μs"
+   },
+   {
+    "en": "0.75 V/μs",
+    "vi": "0.75 V/μs"
+   },
+   {
+    "en": "1.5 V/μs",
+    "vi": "1.5 V/μs"
+   },
+   {
+    "en": "0.667 V/μs",
+    "vi": "0.667 V/μs"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "SR = ΔV/Δt = 12 V / 8 μs = 1.5 V/μs.",
+   "vi": "SR = ΔV/Δt = 12 V / 8 μs = 1.5 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 20 V in 10 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 20 V trong 10 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2 V/μs",
+    "vi": "2 V/μs"
+   },
+   {
+    "en": "1 V/μs",
+    "vi": "1 V/μs"
+   },
+   {
+    "en": "200 V/μs",
+    "vi": "200 V/μs"
+   },
+   {
+    "en": "2000 V/μs",
+    "vi": "2000 V/μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "SR = ΔV/Δt = 20 V / 10 μs = 2 V/μs.",
+   "vi": "SR = ΔV/Δt = 20 V / 10 μs = 2 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 6 V in 4 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 6 V trong 4 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.5 V/μs",
+    "vi": "1.5 V/μs"
+   },
+   {
+    "en": "0.75 V/μs",
+    "vi": "0.75 V/μs"
+   },
+   {
+    "en": "24 V/μs",
+    "vi": "24 V/μs"
+   },
+   {
+    "en": "0.667 V/μs",
+    "vi": "0.667 V/μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "SR = ΔV/Δt = 6 V / 4 μs = 1.5 V/μs.",
+   "vi": "SR = ΔV/Δt = 6 V / 4 μs = 1.5 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 15 V in 25 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 15 V trong 25 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.6 V/μs",
+    "vi": "0.6 V/μs"
+   },
+   {
+    "en": "0.3 V/μs",
+    "vi": "0.3 V/μs"
+   },
+   {
+    "en": "375 V/μs",
+    "vi": "375 V/μs"
+   },
+   {
+    "en": "600 V/μs",
+    "vi": "600 V/μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "SR = ΔV/Δt = 15 V / 25 μs = 0.6 V/μs.",
+   "vi": "SR = ΔV/Δt = 15 V / 25 μs = 0.6 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 24 V in 16 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 24 V trong 16 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.667 V/μs",
+    "vi": "0.667 V/μs"
+   },
+   {
+    "en": "384 V/μs",
+    "vi": "384 V/μs"
+   },
+   {
+    "en": "0.75 V/μs",
+    "vi": "0.75 V/μs"
+   },
+   {
+    "en": "1.5 V/μs",
+    "vi": "1.5 V/μs"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "SR = ΔV/Δt = 24 V / 16 μs = 1.5 V/μs.",
+   "vi": "SR = ΔV/Δt = 24 V / 16 μs = 1.5 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 9 V in 3 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 9 V trong 3 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.5 V/μs",
+    "vi": "1.5 V/μs"
+   },
+   {
+    "en": "3000 V/μs",
+    "vi": "3000 V/μs"
+   },
+   {
+    "en": "27 V/μs",
+    "vi": "27 V/μs"
+   },
+   {
+    "en": "3 V/μs",
+    "vi": "3 V/μs"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "SR = ΔV/Δt = 9 V / 3 μs = 3 V/μs.",
+   "vi": "SR = ΔV/Δt = 9 V / 3 μs = 3 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The output of an op-amp changes by 5 V in 20 μs. What is the slew rate?",
+   "vi": "Ngõ ra của một op-amp thay đổi 5 V trong 20 μs. Slew rate là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4 V/μs",
+    "vi": "4 V/μs"
+   },
+   {
+    "en": "100 V/μs",
+    "vi": "100 V/μs"
+   },
+   {
+    "en": "250 V/μs",
+    "vi": "250 V/μs"
+   },
+   {
+    "en": "0.25 V/μs",
+    "vi": "0.25 V/μs"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "SR = ΔV/Δt = 5 V / 20 μs = 0.25 V/μs.",
+   "vi": "SR = ΔV/Δt = 5 V / 20 μs = 0.25 V/μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "How long does the output of an op-amp with a slew rate of 0.5 V/μs take to change by 20 V?",
+   "vi": "Op-amp có slew rate 0.5 V/μs cần bao lâu để ngõ ra thay đổi 20 V?"
+  },
+  "opts": [
+   {
+    "en": "10 μs",
+    "vi": "10 μs"
+   },
+   {
+    "en": "40 μs",
+    "vi": "40 μs"
+   },
+   {
+    "en": "40,000 μs",
+    "vi": "40,000 μs"
+   },
+   {
+    "en": "0.025 μs",
+    "vi": "0.025 μs"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Δt = ΔV/SR = 20/0.5 = 40 μs.",
+   "vi": "Δt = ΔV/SR = 20/0.5 = 40 μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "How long does the output of an op-amp with a slew rate of 2 V/μs take to change by 24 V?",
+   "vi": "Op-amp có slew rate 2 V/μs cần bao lâu để ngõ ra thay đổi 24 V?"
+  },
+  "opts": [
+   {
+    "en": "48 μs",
+    "vi": "48 μs"
+   },
+   {
+    "en": "12,000 μs",
+    "vi": "12,000 μs"
+   },
+   {
+    "en": "0.0833 μs",
+    "vi": "0.0833 μs"
+   },
+   {
+    "en": "12 μs",
+    "vi": "12 μs"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Δt = ΔV/SR = 24/2 = 12 μs.",
+   "vi": "Δt = ΔV/SR = 24/2 = 12 μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "How long does the output of an op-amp with a slew rate of 0.8 V/μs take to change by 10 V?",
+   "vi": "Op-amp có slew rate 0.8 V/μs cần bao lâu để ngõ ra thay đổi 10 V?"
+  },
+  "opts": [
+   {
+    "en": "12,500 μs",
+    "vi": "12,500 μs"
+   },
+   {
+    "en": "0.08 μs",
+    "vi": "0.08 μs"
+   },
+   {
+    "en": "12.5 μs",
+    "vi": "12.5 μs"
+   },
+   {
+    "en": "6.25 μs",
+    "vi": "6.25 μs"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Δt = ΔV/SR = 10/0.8 = 12.5 μs.",
+   "vi": "Δt = ΔV/SR = 10/0.8 = 12.5 μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "How long does the output of an op-amp with a slew rate of 1.5 V/μs take to change by 30 V?",
+   "vi": "Op-amp có slew rate 1.5 V/μs cần bao lâu để ngõ ra thay đổi 30 V?"
+  },
+  "opts": [
+   {
+    "en": "0.05 μs",
+    "vi": "0.05 μs"
+   },
+   {
+    "en": "10 μs",
+    "vi": "10 μs"
+   },
+   {
+    "en": "20,000 μs",
+    "vi": "20,000 μs"
+   },
+   {
+    "en": "20 μs",
+    "vi": "20 μs"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Δt = ΔV/SR = 30/1.5 = 20 μs.",
+   "vi": "Δt = ΔV/SR = 30/1.5 = 20 μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "How long does the output of an op-amp with a slew rate of 0.9 V/μs take to change by 18 V?",
+   "vi": "Op-amp có slew rate 0.9 V/μs cần bao lâu để ngõ ra thay đổi 18 V?"
+  },
+  "opts": [
+   {
+    "en": "20 μs",
+    "vi": "20 μs"
+   },
+   {
+    "en": "0.05 μs",
+    "vi": "0.05 μs"
+   },
+   {
+    "en": "16.2 μs",
+    "vi": "16.2 μs"
+   },
+   {
+    "en": "20,000 μs",
+    "vi": "20,000 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Δt = ΔV/SR = 18/0.9 = 20 μs.",
+   "vi": "Δt = ΔV/SR = 18/0.9 = 20 μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "How long does the output of an op-amp with a slew rate of 13 V/μs take to change by 26 V?",
+   "vi": "Op-amp có slew rate 13 V/μs cần bao lâu để ngõ ra thay đổi 26 V?"
+  },
+  "opts": [
+   {
+    "en": "338 μs",
+    "vi": "338 μs"
+   },
+   {
+    "en": "1 μs",
+    "vi": "1 μs"
+   },
+   {
+    "en": "2 μs",
+    "vi": "2 μs"
+   },
+   {
+    "en": "0.5 μs",
+    "vi": "0.5 μs"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Δt = ΔV/SR = 26/13 = 2 μs.",
+   "vi": "Δt = ΔV/SR = 26/13 = 2 μs."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 9.2 μA and 8.8 μA. What is the input offset current?",
+   "vi": "Hai dòng vào của một op-amp là 9.2 μA và 8.8 μA. Dòng offset ngõ vào là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "18 μA",
+    "vi": "18 μA"
+   },
+   {
+    "en": "400 μA",
+    "vi": "400 μA"
+   },
+   {
+    "en": "9 μA",
+    "vi": "9 μA"
+   },
+   {
+    "en": "0.4 μA",
+    "vi": "0.4 μA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "IOS = |I1 − I2| = |9.2 − 8.8| = 0.4 μA (the average 9 μA is the bias current).",
+   "vi": "IOS = |I1 − I2| = |9.2 − 8.8| = 0.4 μA (trung bình 9 μA là dòng phân cực)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q11",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 9.2 μA and 8.8 μA. What is the bias current IBIAS?",
+   "vi": "Hai dòng vào của một op-amp là 9.2 μA và 8.8 μA. Dòng phân cực IBIAS là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "9.2 μA",
+    "vi": "9.2 μA"
+   },
+   {
+    "en": "0.4 μA",
+    "vi": "0.4 μA"
+   },
+   {
+    "en": "18.4 μA",
+    "vi": "18.4 μA"
+   },
+   {
+    "en": "9 μA",
+    "vi": "9 μA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "IBIAS = (I1 + I2)/2 = (9.2 + 8.8)/2 = 9 μA.",
+   "vi": "IBIAS = (I1 + I2)/2 = (9.2 + 8.8)/2 = 9 μA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 12.4 μA and 11.6 μA. What is the input offset current?",
+   "vi": "Hai dòng vào của một op-amp là 12.4 μA và 11.6 μA. Dòng offset ngõ vào là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.8 μA",
+    "vi": "0.8 μA"
+   },
+   {
+    "en": "144 μA",
+    "vi": "144 μA"
+   },
+   {
+    "en": "800 μA",
+    "vi": "800 μA"
+   },
+   {
+    "en": "24 μA",
+    "vi": "24 μA"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "IOS = |I1 − I2| = |12.4 − 11.6| = 0.8 μA (the average 12 μA is the bias current).",
+   "vi": "IOS = |I1 − I2| = |12.4 − 11.6| = 0.8 μA (trung bình 12 μA là dòng phân cực)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q11",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 12.4 μA and 11.6 μA. What is the bias current IBIAS?",
+   "vi": "Hai dòng vào của một op-amp là 12.4 μA và 11.6 μA. Dòng phân cực IBIAS là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "12.4 μA",
+    "vi": "12.4 μA"
+   },
+   {
+    "en": "0.8 μA",
+    "vi": "0.8 μA"
+   },
+   {
+    "en": "12 μA",
+    "vi": "12 μA"
+   },
+   {
+    "en": "24.8 μA",
+    "vi": "24.8 μA"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "IBIAS = (I1 + I2)/2 = (12.4 + 11.6)/2 = 12 μA.",
+   "vi": "IBIAS = (I1 + I2)/2 = (12.4 + 11.6)/2 = 12 μA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 50 μA and 47 μA. What is the input offset current?",
+   "vi": "Hai dòng vào của một op-amp là 50 μA và 47 μA. Dòng offset ngõ vào là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "97 μA",
+    "vi": "97 μA"
+   },
+   {
+    "en": "3 μA",
+    "vi": "3 μA"
+   },
+   {
+    "en": "3000 μA",
+    "vi": "3000 μA"
+   },
+   {
+    "en": "48.5 μA",
+    "vi": "48.5 μA"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "IOS = |I1 − I2| = |50 − 47| = 3 μA (the average 48.5 μA is the bias current).",
+   "vi": "IOS = |I1 − I2| = |50 − 47| = 3 μA (trung bình 48.5 μA là dòng phân cực)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q11",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 50 μA and 47 μA. What is the bias current IBIAS?",
+   "vi": "Hai dòng vào của một op-amp là 50 μA và 47 μA. Dòng phân cực IBIAS là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "97 μA",
+    "vi": "97 μA"
+   },
+   {
+    "en": "100 μA",
+    "vi": "100 μA"
+   },
+   {
+    "en": "50 μA",
+    "vi": "50 μA"
+   },
+   {
+    "en": "48.5 μA",
+    "vi": "48.5 μA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "IBIAS = (I1 + I2)/2 = (50 + 47)/2 = 48.5 μA.",
+   "vi": "IBIAS = (I1 + I2)/2 = (50 + 47)/2 = 48.5 μA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 105 μA and 98 μA. What is the input offset current?",
+   "vi": "Hai dòng vào của một op-amp là 105 μA và 98 μA. Dòng offset ngõ vào là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "203 μA",
+    "vi": "203 μA"
+   },
+   {
+    "en": "7000 μA",
+    "vi": "7000 μA"
+   },
+   {
+    "en": "10,300 μA",
+    "vi": "10,300 μA"
+   },
+   {
+    "en": "7 μA",
+    "vi": "7 μA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "IOS = |I1 − I2| = |105 − 98| = 7 μA (the average 102 μA is the bias current).",
+   "vi": "IOS = |I1 − I2| = |105 − 98| = 7 μA (trung bình 102 μA là dòng phân cực)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q11",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 105 μA and 98 μA. What is the bias current IBIAS?",
+   "vi": "Hai dòng vào của một op-amp là 105 μA và 98 μA. Dòng phân cực IBIAS là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7 μA",
+    "vi": "7 μA"
+   },
+   {
+    "en": "203 μA",
+    "vi": "203 μA"
+   },
+   {
+    "en": "105 μA",
+    "vi": "105 μA"
+   },
+   {
+    "en": "102 μA",
+    "vi": "102 μA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "IBIAS = (I1 + I2)/2 = (105 + 98)/2 = 102 μA.",
+   "vi": "IBIAS = (I1 + I2)/2 = (105 + 98)/2 = 102 μA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 6.5 μA and 6.1 μA. What is the input offset current?",
+   "vi": "Hai dòng vào của một op-amp là 6.5 μA và 6.1 μA. Dòng offset ngõ vào là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "12.6 μA",
+    "vi": "12.6 μA"
+   },
+   {
+    "en": "39.6 μA",
+    "vi": "39.6 μA"
+   },
+   {
+    "en": "0.4 μA",
+    "vi": "0.4 μA"
+   },
+   {
+    "en": "6.3 μA",
+    "vi": "6.3 μA"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "IOS = |I1 − I2| = |6.5 − 6.1| = 0.4 μA (the average 6.3 μA is the bias current).",
+   "vi": "IOS = |I1 − I2| = |6.5 − 6.1| = 0.4 μA (trung bình 6.3 μA là dòng phân cực)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q11",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 6.5 μA and 6.1 μA. What is the bias current IBIAS?",
+   "vi": "Hai dòng vào của một op-amp là 6.5 μA và 6.1 μA. Dòng phân cực IBIAS là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "13 μA",
+    "vi": "13 μA"
+   },
+   {
+    "en": "6.5 μA",
+    "vi": "6.5 μA"
+   },
+   {
+    "en": "6.3 μA",
+    "vi": "6.3 μA"
+   },
+   {
+    "en": "12.6 μA",
+    "vi": "12.6 μA"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "IBIAS = (I1 + I2)/2 = (6.5 + 6.1)/2 = 6.3 μA.",
+   "vi": "IBIAS = (I1 + I2)/2 = (6.5 + 6.1)/2 = 6.3 μA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 80 μA and 75.5 μA. What is the input offset current?",
+   "vi": "Hai dòng vào của một op-amp là 80 μA và 75.5 μA. Dòng offset ngõ vào là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "156 μA",
+    "vi": "156 μA"
+   },
+   {
+    "en": "4500 μA",
+    "vi": "4500 μA"
+   },
+   {
+    "en": "6040 μA",
+    "vi": "6040 μA"
+   },
+   {
+    "en": "4.5 μA",
+    "vi": "4.5 μA"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "IOS = |I1 − I2| = |80 − 75.5| = 4.5 μA (the average 77.8 μA is the bias current).",
+   "vi": "IOS = |I1 − I2| = |80 − 75.5| = 4.5 μA (trung bình 77.8 μA là dòng phân cực)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q11",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The input currents of an op-amp are 80 μA and 75.5 μA. What is the bias current IBIAS?",
+   "vi": "Hai dòng vào của một op-amp là 80 μA và 75.5 μA. Dòng phân cực IBIAS là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "77.8 μA",
+    "vi": "77.8 μA"
+   },
+   {
+    "en": "80 μA",
+    "vi": "80 μA"
+   },
+   {
+    "en": "160 μA",
+    "vi": "160 μA"
+   },
+   {
+    "en": "156 μA",
+    "vi": "156 μA"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "IBIAS = (I1 + I2)/2 = (80 + 75.5)/2 = 77.8 μA.",
+   "vi": "IBIAS = (I1 + I2)/2 = (80 + 75.5)/2 = 77.8 μA."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 7",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 47 kΩ and Ri = 4.7 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 47 kΩ và Ri = 4.7 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-10",
+    "vi": "-10"
+   },
+   {
+    "en": "11",
+    "vi": "11"
+   },
+   {
+    "en": "1.1",
+    "vi": "1.1"
+   },
+   {
+    "en": "10",
+    "vi": "10"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 47/4.7 = 11 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 47/4.7 = 11 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 100 kΩ and Ri = 2.2 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 100 kΩ và Ri = 2.2 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "47.45",
+    "vi": "47.45"
+   },
+   {
+    "en": "45.45",
+    "vi": "45.45"
+   },
+   {
+    "en": "1.022",
+    "vi": "1.022"
+   },
+   {
+    "en": "46.45",
+    "vi": "46.45"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 100/2.2 = 46.45 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 100/2.2 = 46.45 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 220 kΩ and Ri = 3.3 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 220 kΩ và Ri = 3.3 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.015",
+    "vi": "1.015"
+   },
+   {
+    "en": "67.67",
+    "vi": "67.67"
+   },
+   {
+    "en": "66.67",
+    "vi": "66.67"
+   },
+   {
+    "en": "-66.67",
+    "vi": "-66.67"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 220/3.3 = 67.67 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 220/3.3 = 67.67 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 68 kΩ and Ri = 1.0 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 68 kΩ và Ri = 1.0 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "70",
+    "vi": "70"
+   },
+   {
+    "en": "68",
+    "vi": "68"
+   },
+   {
+    "en": "-68",
+    "vi": "-68"
+   },
+   {
+    "en": "69",
+    "vi": "69"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 68/1.0 = 69 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 68/1.0 = 69 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 330 kΩ and Ri = 10 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 330 kΩ và Ri = 10 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-33",
+    "vi": "-33"
+   },
+   {
+    "en": "35",
+    "vi": "35"
+   },
+   {
+    "en": "1.03",
+    "vi": "1.03"
+   },
+   {
+    "en": "34",
+    "vi": "34"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 330/10 = 34 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 330/10 = 34 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 22 kΩ and Ri = 1.0 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 22 kΩ và Ri = 1.0 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "24",
+    "vi": "24"
+   },
+   {
+    "en": "22",
+    "vi": "22"
+   },
+   {
+    "en": "1.045",
+    "vi": "1.045"
+   },
+   {
+    "en": "23",
+    "vi": "23"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 22/1.0 = 23 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 22/1.0 = 23 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 150 kΩ and Ri = 3.0 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 150 kΩ và Ri = 3.0 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1.02",
+    "vi": "1.02"
+   },
+   {
+    "en": "50",
+    "vi": "50"
+   },
+   {
+    "en": "-50",
+    "vi": "-50"
+   },
+   {
+    "en": "51",
+    "vi": "51"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 150/3.0 = 51 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 150/3.0 = 51 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 470 kΩ and Ri = 10 kΩ. What is the closed-loop gain?",
+   "vi": "Mạch không đảo có Rf = 470 kΩ và Ri = 10 kΩ. Độ lợi vòng kín là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-47",
+    "vi": "-47"
+   },
+   {
+    "en": "49",
+    "vi": "49"
+   },
+   {
+    "en": "48",
+    "vi": "48"
+   },
+   {
+    "en": "1.021",
+    "vi": "1.021"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Acl(NI) = 1 + Rf/Ri = 1 + 470/10 = 48 (the “+1” is what distinguishes it from the inverting gain).",
+   "vi": "Acl(NI) = 1 + Rf/Ri = 1 + 470/10 = 48 (số “+1” là điểm khác với độ lợi mạch đảo)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q16",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverting amplifier has Rf = 100 kΩ and Ri = 2.2 kΩ. What is the output for Vin = 20 mV?",
+   "vi": "Mạch đảo có Rf = 100 kΩ và Ri = 2.2 kΩ. Điện áp ra khi Vin = 20 mV là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.44 mV",
+    "vi": "0.44 mV"
+   },
+   {
+    "en": "-929 mV",
+    "vi": "-929 mV"
+   },
+   {
+    "en": "-909 mV",
+    "vi": "-909 mV"
+   },
+   {
+    "en": "909 mV",
+    "vi": "909 mV"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Acl(I) = −Rf/Ri = −100/2.2 = -45.5; Vout = Acl·Vin = -45.5 × 20 mV = -909 mV (inverted).",
+   "vi": "Acl(I) = −Rf/Ri = −100/2.2 = -45.5; Vout = Acl·Vin = -45.5 × 20 mV = -909 mV (đảo pha)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15 / Fig. 12–22",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15 / Hình 12–22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverting amplifier has Rf = 47 kΩ and Ri = 1.0 kΩ. What is the output for Vin = 50 mV?",
+   "vi": "Mạch đảo có Rf = 47 kΩ và Ri = 1.0 kΩ. Điện áp ra khi Vin = 50 mV là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-2400 mV",
+    "vi": "-2400 mV"
+   },
+   {
+    "en": "-2350 mV",
+    "vi": "-2350 mV"
+   },
+   {
+    "en": "2350 mV",
+    "vi": "2350 mV"
+   },
+   {
+    "en": "1.06 mV",
+    "vi": "1.06 mV"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Acl(I) = −Rf/Ri = −47/1.0 = -47; Vout = Acl·Vin = -47 × 50 mV = -2350 mV (inverted).",
+   "vi": "Acl(I) = −Rf/Ri = −47/1.0 = -47; Vout = Acl·Vin = -47 × 50 mV = -2350 mV (đảo pha)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15 / Fig. 12–22",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15 / Hình 12–22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverting amplifier has Rf = 220 kΩ and Ri = 10 kΩ. What is the output for Vin = 100 mV?",
+   "vi": "Mạch đảo có Rf = 220 kΩ và Ri = 10 kΩ. Điện áp ra khi Vin = 100 mV là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "4.55 mV",
+    "vi": "4.55 mV"
+   },
+   {
+    "en": "-2200 mV",
+    "vi": "-2200 mV"
+   },
+   {
+    "en": "2200 mV",
+    "vi": "2200 mV"
+   },
+   {
+    "en": "2300 mV",
+    "vi": "2300 mV"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Acl(I) = −Rf/Ri = −220/10 = -22; Vout = Acl·Vin = -22 × 100 mV = -2200 mV (inverted).",
+   "vi": "Acl(I) = −Rf/Ri = −220/10 = -22; Vout = Acl·Vin = -22 × 100 mV = -2200 mV (đảo pha)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15 / Fig. 12–22",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15 / Hình 12–22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverting amplifier has Rf = 68 kΩ and Ri = 4.7 kΩ. What is the output for Vin = 15 mV?",
+   "vi": "Mạch đảo có Rf = 68 kΩ và Ri = 4.7 kΩ. Điện áp ra khi Vin = 15 mV là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "232 mV",
+    "vi": "232 mV"
+   },
+   {
+    "en": "1.04 mV",
+    "vi": "1.04 mV"
+   },
+   {
+    "en": "217 mV",
+    "vi": "217 mV"
+   },
+   {
+    "en": "-217 mV",
+    "vi": "-217 mV"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(I) = −Rf/Ri = −68/4.7 = -14.5; Vout = Acl·Vin = -14.5 × 15 mV = -217 mV (inverted).",
+   "vi": "Acl(I) = −Rf/Ri = −68/4.7 = -14.5; Vout = Acl·Vin = -14.5 × 15 mV = -217 mV (đảo pha)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15 / Fig. 12–22",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15 / Hình 12–22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverting amplifier has Rf = 330 kΩ and Ri = 3.3 kΩ. What is the output for Vin = 8 mV?",
+   "vi": "Mạch đảo có Rf = 330 kΩ và Ri = 3.3 kΩ. Điện áp ra khi Vin = 8 mV là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.08 mV",
+    "vi": "0.08 mV"
+   },
+   {
+    "en": "800 mV",
+    "vi": "800 mV"
+   },
+   {
+    "en": "-800 mV",
+    "vi": "-800 mV"
+   },
+   {
+    "en": "-808 mV",
+    "vi": "-808 mV"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Acl(I) = −Rf/Ri = −330/3.3 = -100; Vout = Acl·Vin = -100 × 8 mV = -800 mV (inverted).",
+   "vi": "Acl(I) = −Rf/Ri = −330/3.3 = -100; Vout = Acl·Vin = -100 × 8 mV = -800 mV (đảo pha)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15 / Fig. 12–22",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15 / Hình 12–22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An inverting amplifier has Rf = 150 kΩ and Ri = 10 kΩ. What is the output for Vin = 40 mV?",
+   "vi": "Mạch đảo có Rf = 150 kΩ và Ri = 10 kΩ. Điện áp ra khi Vin = 40 mV là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "640 mV",
+    "vi": "640 mV"
+   },
+   {
+    "en": "-640 mV",
+    "vi": "-640 mV"
+   },
+   {
+    "en": "600 mV",
+    "vi": "600 mV"
+   },
+   {
+    "en": "-600 mV",
+    "vi": "-600 mV"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Acl(I) = −Rf/Ri = −150/10 = -15; Vout = Acl·Vin = -15 × 40 mV = -600 mV (inverted).",
+   "vi": "Acl(I) = −Rf/Ri = −150/10 = -15; Vout = Acl·Vin = -15 × 40 mV = -600 mV (đảo pha)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15 / Fig. 12–22",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15 / Hình 12–22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 100 kΩ and Ri = 4.7 kΩ. What is the feedback fraction B?",
+   "vi": "Mạch không đảo có Rf = 100 kΩ và Ri = 4.7 kΩ. Hệ số hồi tiếp B là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "21.3",
+    "vi": "21.3"
+   },
+   {
+    "en": "0.955",
+    "vi": "0.955"
+   },
+   {
+    "en": "0.047",
+    "vi": "0.047"
+   },
+   {
+    "en": "0.0449",
+    "vi": "0.0449"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "B = Ri/(Ri + Rf) = 4.7/(4.7+100) = 0.0449; it is the reciprocal of the ideal gain 1/Acl.",
+   "vi": "B = Ri/(Ri + Rf) = 4.7/(4.7+100) = 0.0449; nó là nghịch đảo của độ lợi lý tưởng 1/Acl."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 47 kΩ and Ri = 1.0 kΩ. What is the feedback fraction B?",
+   "vi": "Mạch không đảo có Rf = 47 kΩ và Ri = 1.0 kΩ. Hệ số hồi tiếp B là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "48",
+    "vi": "48"
+   },
+   {
+    "en": "0.979",
+    "vi": "0.979"
+   },
+   {
+    "en": "0.0208",
+    "vi": "0.0208"
+   },
+   {
+    "en": "0.0213",
+    "vi": "0.0213"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "B = Ri/(Ri + Rf) = 1.0/(1.0+47) = 0.0208; it is the reciprocal of the ideal gain 1/Acl.",
+   "vi": "B = Ri/(Ri + Rf) = 1.0/(1.0+47) = 0.0208; nó là nghịch đảo của độ lợi lý tưởng 1/Acl."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 220 kΩ and Ri = 3.3 kΩ. What is the feedback fraction B?",
+   "vi": "Mạch không đảo có Rf = 220 kΩ và Ri = 3.3 kΩ. Hệ số hồi tiếp B là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.985",
+    "vi": "0.985"
+   },
+   {
+    "en": "0.015",
+    "vi": "0.015"
+   },
+   {
+    "en": "66.7",
+    "vi": "66.7"
+   },
+   {
+    "en": "0.0148",
+    "vi": "0.0148"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "B = Ri/(Ri + Rf) = 3.3/(3.3+220) = 0.0148; it is the reciprocal of the ideal gain 1/Acl.",
+   "vi": "B = Ri/(Ri + Rf) = 3.3/(3.3+220) = 0.0148; nó là nghịch đảo của độ lợi lý tưởng 1/Acl."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 68 kΩ and Ri = 10 kΩ. What is the feedback fraction B?",
+   "vi": "Mạch không đảo có Rf = 68 kΩ và Ri = 10 kΩ. Hệ số hồi tiếp B là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.872",
+    "vi": "0.872"
+   },
+   {
+    "en": "0.128",
+    "vi": "0.128"
+   },
+   {
+    "en": "7.8",
+    "vi": "7.8"
+   },
+   {
+    "en": "0.147",
+    "vi": "0.147"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "B = Ri/(Ri + Rf) = 10/(10+68) = 0.128; it is the reciprocal of the ideal gain 1/Acl.",
+   "vi": "B = Ri/(Ri + Rf) = 10/(10+68) = 0.128; nó là nghịch đảo của độ lợi lý tưởng 1/Acl."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 330 kΩ and Ri = 2.2 kΩ. What is the feedback fraction B?",
+   "vi": "Mạch không đảo có Rf = 330 kΩ và Ri = 2.2 kΩ. Hệ số hồi tiếp B là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.00667",
+    "vi": "0.00667"
+   },
+   {
+    "en": "150",
+    "vi": "150"
+   },
+   {
+    "en": "0.993",
+    "vi": "0.993"
+   },
+   {
+    "en": "0.00662",
+    "vi": "0.00662"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "B = Ri/(Ri + Rf) = 2.2/(2.2+330) = 0.00662; it is the reciprocal of the ideal gain 1/Acl.",
+   "vi": "B = Ri/(Ri + Rf) = 2.2/(2.2+330) = 0.00662; nó là nghịch đảo của độ lợi lý tưởng 1/Acl."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier has Rf = 150 kΩ and Ri = 15 kΩ. What is the feedback fraction B?",
+   "vi": "Mạch không đảo có Rf = 150 kΩ và Ri = 15 kΩ. Hệ số hồi tiếp B là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.0909",
+    "vi": "0.0909"
+   },
+   {
+    "en": "0.909",
+    "vi": "0.909"
+   },
+   {
+    "en": "0.1",
+    "vi": "0.1"
+   },
+   {
+    "en": "10",
+    "vi": "10"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "B = Ri/(Ri + Rf) = 15/(15+150) = 0.0909; it is the reciprocal of the ideal gain 1/Acl.",
+   "vi": "B = Ri/(Ri + Rf) = 15/(15+150) = 0.0909; nó là nghịch đảo của độ lợi lý tưởng 1/Acl."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 12",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a noninverting amplifier with Ri = 1.0 kΩ and |Acl| = 50.",
+   "vi": "Tìm Rf cho mạch không đảo có Ri = 1.0 kΩ và |Acl| = 50."
+  },
+  "opts": [
+   {
+    "en": "49 kΩ",
+    "vi": "49 kΩ"
+   },
+   {
+    "en": "490 kΩ",
+    "vi": "490 kΩ"
+   },
+   {
+    "en": "4.9 kΩ",
+    "vi": "4.9 kΩ"
+   },
+   {
+    "en": "50 kΩ",
+    "vi": "50 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Rf = (Acl − 1)·Ri = 49 kΩ.",
+   "vi": "Rf = (Acl − 1)·Ri = 49 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a noninverting amplifier with Ri = 2.2 kΩ and |Acl| = 100.",
+   "vi": "Tìm Rf cho mạch không đảo có Ri = 2.2 kΩ và |Acl| = 100."
+  },
+  "opts": [
+   {
+    "en": "220 kΩ",
+    "vi": "220 kΩ"
+   },
+   {
+    "en": "45.5 kΩ",
+    "vi": "45.5 kΩ"
+   },
+   {
+    "en": "21.8 kΩ",
+    "vi": "21.8 kΩ"
+   },
+   {
+    "en": "218 kΩ",
+    "vi": "218 kΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Rf = (Acl − 1)·Ri = 218 kΩ.",
+   "vi": "Rf = (Acl − 1)·Ri = 218 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a inverting amplifier with Ri = 10 kΩ and |Acl| = 25.",
+   "vi": "Tìm Rf cho mạch đảo có Ri = 10 kΩ và |Acl| = 25."
+  },
+  "opts": [
+   {
+    "en": "240 kΩ",
+    "vi": "240 kΩ"
+   },
+   {
+    "en": "25 kΩ",
+    "vi": "25 kΩ"
+   },
+   {
+    "en": "250 kΩ",
+    "vi": "250 kΩ"
+   },
+   {
+    "en": "2500 kΩ",
+    "vi": "2500 kΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Rf = |Acl|·Ri = 250 kΩ.",
+   "vi": "Rf = |Acl|·Ri = 250 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a inverting amplifier with Ri = 2.2 kΩ and |Acl| = 75.",
+   "vi": "Tìm Rf cho mạch đảo có Ri = 2.2 kΩ và |Acl| = 75."
+  },
+  "opts": [
+   {
+    "en": "16.5 kΩ",
+    "vi": "16.5 kΩ"
+   },
+   {
+    "en": "163 kΩ",
+    "vi": "163 kΩ"
+   },
+   {
+    "en": "165 kΩ",
+    "vi": "165 kΩ"
+   },
+   {
+    "en": "34.1 kΩ",
+    "vi": "34.1 kΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Rf = |Acl|·Ri = 165 kΩ.",
+   "vi": "Rf = |Acl|·Ri = 165 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a noninverting amplifier with Ri = 4.7 kΩ and |Acl| = 12.",
+   "vi": "Tìm Rf cho mạch không đảo có Ri = 4.7 kΩ và |Acl| = 12."
+  },
+  "opts": [
+   {
+    "en": "2.55 kΩ",
+    "vi": "2.55 kΩ"
+   },
+   {
+    "en": "517 kΩ",
+    "vi": "517 kΩ"
+   },
+   {
+    "en": "56.4 kΩ",
+    "vi": "56.4 kΩ"
+   },
+   {
+    "en": "51.7 kΩ",
+    "vi": "51.7 kΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Rf = (Acl − 1)·Ri = 51.7 kΩ.",
+   "vi": "Rf = (Acl − 1)·Ri = 51.7 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a inverting amplifier with Ri = 1.0 kΩ and |Acl| = 150.",
+   "vi": "Tìm Rf cho mạch đảo có Ri = 1.0 kΩ và |Acl| = 150."
+  },
+  "opts": [
+   {
+    "en": "150 kΩ",
+    "vi": "150 kΩ"
+   },
+   {
+    "en": "15 kΩ",
+    "vi": "15 kΩ"
+   },
+   {
+    "en": "1500 kΩ",
+    "vi": "1500 kΩ"
+   },
+   {
+    "en": "149 kΩ",
+    "vi": "149 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Rf = |Acl|·Ri = 150 kΩ.",
+   "vi": "Rf = |Acl|·Ri = 150 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a noninverting amplifier with Ri = 12 kΩ and |Acl| = 8.",
+   "vi": "Tìm Rf cho mạch không đảo có Ri = 12 kΩ và |Acl| = 8."
+  },
+  "opts": [
+   {
+    "en": "84 kΩ",
+    "vi": "84 kΩ"
+   },
+   {
+    "en": "0.667 kΩ",
+    "vi": "0.667 kΩ"
+   },
+   {
+    "en": "96 kΩ",
+    "vi": "96 kΩ"
+   },
+   {
+    "en": "840 kΩ",
+    "vi": "840 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Rf = (Acl − 1)·Ri = 84 kΩ.",
+   "vi": "Rf = (Acl − 1)·Ri = 84 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Find Rf for a inverting amplifier with Ri = 3.3 kΩ and |Acl| = 60.",
+   "vi": "Tìm Rf cho mạch đảo có Ri = 3.3 kΩ và |Acl| = 60."
+  },
+  "opts": [
+   {
+    "en": "198 kΩ",
+    "vi": "198 kΩ"
+   },
+   {
+    "en": "19.8 kΩ",
+    "vi": "19.8 kΩ"
+   },
+   {
+    "en": "1980 kΩ",
+    "vi": "1980 kΩ"
+   },
+   {
+    "en": "18.2 kΩ",
+    "vi": "18.2 kΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Rf = |Acl|·Ri = 198 kΩ.",
+   "vi": "Rf = |Acl|·Ri = 198 kΩ."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 15",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a unity-gain frequency of 1 MHz. What is the closed-loop bandwidth when Acl = 10?",
+   "vi": "Op-amp có tần số độ lợi đơn vị 1 MHz. Băng thông vòng kín khi Acl = 10 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1 MHz",
+    "vi": "1 MHz"
+   },
+   {
+    "en": "10 MHz",
+    "vi": "10 MHz"
+   },
+   {
+    "en": "91 kHz",
+    "vi": "91 kHz"
+   },
+   {
+    "en": "100 kHz",
+    "vi": "100 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "BWcl = fT/Acl = 1 MHz / 10 = 100 kHz.",
+   "vi": "BWcl = fT/Acl = 1 MHz / 10 = 100 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q30",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a unity-gain frequency of 5 MHz. What is the closed-loop bandwidth when Acl = 50?",
+   "vi": "Op-amp có tần số độ lợi đơn vị 5 MHz. Băng thông vòng kín khi Acl = 50 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "250 MHz",
+    "vi": "250 MHz"
+   },
+   {
+    "en": "100 kHz",
+    "vi": "100 kHz"
+   },
+   {
+    "en": "10 kHz",
+    "vi": "10 kHz"
+   },
+   {
+    "en": "98 kHz",
+    "vi": "98 kHz"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "BWcl = fT/Acl = 5 MHz / 50 = 100 kHz.",
+   "vi": "BWcl = fT/Acl = 5 MHz / 50 = 100 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q30",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a unity-gain frequency of 3 MHz. What is the closed-loop bandwidth when Acl = 100?",
+   "vi": "Op-amp có tần số độ lợi đơn vị 3 MHz. Băng thông vòng kín khi Acl = 100 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "300 MHz",
+    "vi": "300 MHz"
+   },
+   {
+    "en": "3 kHz",
+    "vi": "3 kHz"
+   },
+   {
+    "en": "3 MHz",
+    "vi": "3 MHz"
+   },
+   {
+    "en": "30 kHz",
+    "vi": "30 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "BWcl = fT/Acl = 3 MHz / 100 = 30 kHz.",
+   "vi": "BWcl = fT/Acl = 3 MHz / 100 = 30 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q30",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a unity-gain frequency of 10 MHz. What is the closed-loop bandwidth when Acl = 20?",
+   "vi": "Op-amp có tần số độ lợi đơn vị 10 MHz. Băng thông vòng kín khi Acl = 20 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "200 MHz",
+    "vi": "200 MHz"
+   },
+   {
+    "en": "50 kHz",
+    "vi": "50 kHz"
+   },
+   {
+    "en": "500 kHz",
+    "vi": "500 kHz"
+   },
+   {
+    "en": "476 kHz",
+    "vi": "476 kHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "BWcl = fT/Acl = 10 MHz / 20 = 500 kHz.",
+   "vi": "BWcl = fT/Acl = 10 MHz / 20 = 500 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q30",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a unity-gain frequency of 1.5 MHz. What is the closed-loop bandwidth when Acl = 25?",
+   "vi": "Op-amp có tần số độ lợi đơn vị 1.5 MHz. Băng thông vòng kín khi Acl = 25 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "60 kHz",
+    "vi": "60 kHz"
+   },
+   {
+    "en": "1.5 MHz",
+    "vi": "1.5 MHz"
+   },
+   {
+    "en": "37.5 MHz",
+    "vi": "37.5 MHz"
+   },
+   {
+    "en": "6 kHz",
+    "vi": "6 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "BWcl = fT/Acl = 1.5 MHz / 25 = 60 kHz.",
+   "vi": "BWcl = fT/Acl = 1.5 MHz / 25 = 60 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q30",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a unity-gain frequency of 8 MHz. What is the closed-loop bandwidth when Acl = 40?",
+   "vi": "Op-amp có tần số độ lợi đơn vị 8 MHz. Băng thông vòng kín khi Acl = 40 là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "8 MHz",
+    "vi": "8 MHz"
+   },
+   {
+    "en": "195 kHz",
+    "vi": "195 kHz"
+   },
+   {
+    "en": "200 kHz",
+    "vi": "200 kHz"
+   },
+   {
+    "en": "320 MHz",
+    "vi": "320 MHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "BWcl = fT/Acl = 8 MHz / 40 = 200 kHz.",
+   "vi": "BWcl = fT/Acl = 8 MHz / 40 = 200 kHz."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q30",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Aol = 100 dB, fc(ol) = 10 Hz and fc(cl) = 10,000 Hz. What is the closed-loop gain in dB?",
+   "vi": "Aol = 100 dB, fc(ol) = 10 Hz và fc(cl) = 10,000 Hz. Độ lợi vòng kín là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "80.0 dB",
+    "vi": "80.0 dB"
+   },
+   {
+    "en": "160.0 dB",
+    "vi": "160.0 dB"
+   },
+   {
+    "en": "60.0 dB",
+    "vi": "60.0 dB"
+   },
+   {
+    "en": "40.0 dB",
+    "vi": "40.0 dB"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "1 + B·Aol = fc(cl)/fc(ol) = 1000; Acl = Aol/1000 = 100 → 40.0 dB (i.e. Aol(dB) − 20·log10 1000).",
+   "vi": "1 + B·Aol = fc(cl)/fc(ol) = 1000; Acl = Aol/1000 = 100 → 40.0 dB (tức Aol(dB) − 20·log10 1000)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 37",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Aol = 89 dB, fc(ol) = 750 Hz and fc(cl) = 5,500 Hz. What is the closed-loop gain in dB?",
+   "vi": "Aol = 89 dB, fc(ol) = 750 Hz và fc(cl) = 5,500 Hz. Độ lợi vòng kín là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "17.3 dB",
+    "vi": "17.3 dB"
+   },
+   {
+    "en": "71.7 dB",
+    "vi": "71.7 dB"
+   },
+   {
+    "en": "69.0 dB",
+    "vi": "69.0 dB"
+   },
+   {
+    "en": "77.7 dB",
+    "vi": "77.7 dB"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "1 + B·Aol = fc(cl)/fc(ol) = 7.33333; Acl = Aol/7.33333 = 3,843 → 71.7 dB (i.e. Aol(dB) − 20·log10 7.33333).",
+   "vi": "1 + B·Aol = fc(cl)/fc(ol) = 7.33333; Acl = Aol/7.33333 = 3,843 → 71.7 dB (tức Aol(dB) − 20·log10 7.33333)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 37",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Aol = 106 dB, fc(ol) = 5 Hz and fc(cl) = 50,000 Hz. What is the closed-loop gain in dB?",
+   "vi": "Aol = 106 dB, fc(ol) = 5 Hz và fc(cl) = 50,000 Hz. Độ lợi vòng kín là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "186.0 dB",
+    "vi": "186.0 dB"
+   },
+   {
+    "en": "86.0 dB",
+    "vi": "86.0 dB"
+   },
+   {
+    "en": "26.0 dB",
+    "vi": "26.0 dB"
+   },
+   {
+    "en": "32.0 dB",
+    "vi": "32.0 dB"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "1 + B·Aol = fc(cl)/fc(ol) = 10000; Acl = Aol/10000 = 20 → 26.0 dB (i.e. Aol(dB) − 20·log10 10000).",
+   "vi": "1 + B·Aol = fc(cl)/fc(ol) = 10000; Acl = Aol/10000 = 20 → 26.0 dB (tức Aol(dB) − 20·log10 10000)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 37",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Aol = 94 dB, fc(ol) = 20 Hz and fc(cl) = 20,000 Hz. What is the closed-loop gain in dB?",
+   "vi": "Aol = 94 dB, fc(ol) = 20 Hz và fc(cl) = 20,000 Hz. Độ lợi vòng kín là bao nhiêu dB?"
+  },
+  "opts": [
+   {
+    "en": "74.0 dB",
+    "vi": "74.0 dB"
+   },
+   {
+    "en": "34.0 dB",
+    "vi": "34.0 dB"
+   },
+   {
+    "en": "154.0 dB",
+    "vi": "154.0 dB"
+   },
+   {
+    "en": "40.0 dB",
+    "vi": "40.0 dB"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "1 + B·Aol = fc(cl)/fc(ol) = 1000; Acl = Aol/1000 = 50 → 34.0 dB (i.e. Aol(dB) − 20·log10 1000).",
+   "vi": "1 + B·Aol = fc(cl)/fc(ol) = 1000; Acl = Aol/1000 = 50 → 34.0 dB (tức Aol(dB) − 20·log10 1000)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 37",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 1,000 Hz. What is the phase shift at 1,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 1,000 Hz. Độ lệch pha tại 1,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-90.0°",
+    "vi": "-90.0°"
+   },
+   {
+    "en": "-22.5°",
+    "vi": "-22.5°"
+   },
+   {
+    "en": "-45.0°",
+    "vi": "-45.0°"
+   },
+   {
+    "en": "45.0°",
+    "vi": "45.0°"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "θ = −tan⁻¹(f/fc) = −tan⁻¹(1) = -45.0° (the lag is negative; f = fc gives −45°).",
+   "vi": "θ = −tan⁻¹(f/fc) = −tan⁻¹(1) = -45.0° (độ trễ mang dấu âm; f = fc cho −45°)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 31–32",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 31–32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 2,000 Hz. What is the phase shift at 4,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 2,000 Hz. Độ lệch pha tại 4,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-26.6°",
+    "vi": "-26.6°"
+   },
+   {
+    "en": "-31.7°",
+    "vi": "-31.7°"
+   },
+   {
+    "en": "-63.4°",
+    "vi": "-63.4°"
+   },
+   {
+    "en": "-90.0°",
+    "vi": "-90.0°"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "θ = −tan⁻¹(f/fc) = −tan⁻¹(2) = -63.4° (the lag is negative; f = fc gives −45°).",
+   "vi": "θ = −tan⁻¹(f/fc) = −tan⁻¹(2) = -63.4° (độ trễ mang dấu âm; f = fc cho −45°)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 31–32",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 31–32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 2,000 Hz. What is Vout/Vin at 4,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 2,000 Hz. Tỉ số Vout/Vin tại 4,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.447",
+    "vi": "0.447"
+   },
+   {
+    "en": "0.200",
+    "vi": "0.200"
+   },
+   {
+    "en": "0.333",
+    "vi": "0.333"
+   },
+   {
+    "en": "2.236",
+    "vi": "2.236"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 2²) = 0.447.",
+   "vi": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 2²) = 0.447."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 29",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 29"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 5,000 Hz. What is the phase shift at 2,500 Hz?",
+   "vi": "Mạch trễ RC có fc = 5,000 Hz. Độ lệch pha tại 2,500 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "26.6°",
+    "vi": "26.6°"
+   },
+   {
+    "en": "-26.6°",
+    "vi": "-26.6°"
+   },
+   {
+    "en": "-13.3°",
+    "vi": "-13.3°"
+   },
+   {
+    "en": "-63.4°",
+    "vi": "-63.4°"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "θ = −tan⁻¹(f/fc) = −tan⁻¹(0.5) = -26.6° (the lag is negative; f = fc gives −45°).",
+   "vi": "θ = −tan⁻¹(f/fc) = −tan⁻¹(0.5) = -26.6° (độ trễ mang dấu âm; f = fc cho −45°)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 31–32",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 31–32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 5,000 Hz. What is Vout/Vin at 2,500 Hz?",
+   "vi": "Mạch trễ RC có fc = 5,000 Hz. Tỉ số Vout/Vin tại 2,500 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.894",
+    "vi": "0.894"
+   },
+   {
+    "en": "0.707",
+    "vi": "0.707"
+   },
+   {
+    "en": "1.118",
+    "vi": "1.118"
+   },
+   {
+    "en": "0.800",
+    "vi": "0.800"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 0.5²) = 0.894.",
+   "vi": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 0.5²) = 0.894."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 29",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 29"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 8,500 Hz. What is the phase shift at 17,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 8,500 Hz. Độ lệch pha tại 17,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-63.4°",
+    "vi": "-63.4°"
+   },
+   {
+    "en": "63.4°",
+    "vi": "63.4°"
+   },
+   {
+    "en": "-26.6°",
+    "vi": "-26.6°"
+   },
+   {
+    "en": "-31.7°",
+    "vi": "-31.7°"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "θ = −tan⁻¹(f/fc) = −tan⁻¹(2) = -63.4° (the lag is negative; f = fc gives −45°).",
+   "vi": "θ = −tan⁻¹(f/fc) = −tan⁻¹(2) = -63.4° (độ trễ mang dấu âm; f = fc cho −45°)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 31–32",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 31–32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 8,500 Hz. What is Vout/Vin at 17,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 8,500 Hz. Tỉ số Vout/Vin tại 17,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.707",
+    "vi": "0.707"
+   },
+   {
+    "en": "2.236",
+    "vi": "2.236"
+   },
+   {
+    "en": "0.447",
+    "vi": "0.447"
+   },
+   {
+    "en": "0.200",
+    "vi": "0.200"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 2²) = 0.447.",
+   "vi": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 2²) = 0.447."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 29",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 29"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 12,000 Hz. What is the phase shift at 3,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 12,000 Hz. Độ lệch pha tại 3,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-14.0°",
+    "vi": "-14.0°"
+   },
+   {
+    "en": "-7.0°",
+    "vi": "-7.0°"
+   },
+   {
+    "en": "-90.0°",
+    "vi": "-90.0°"
+   },
+   {
+    "en": "14.0°",
+    "vi": "14.0°"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "θ = −tan⁻¹(f/fc) = −tan⁻¹(0.25) = -14.0° (the lag is negative; f = fc gives −45°).",
+   "vi": "θ = −tan⁻¹(f/fc) = −tan⁻¹(0.25) = -14.0° (độ trễ mang dấu âm; f = fc cho −45°)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 31–32",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 31–32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 12,000 Hz. What is Vout/Vin at 3,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 12,000 Hz. Tỉ số Vout/Vin tại 3,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.970",
+    "vi": "0.970"
+   },
+   {
+    "en": "1.031",
+    "vi": "1.031"
+   },
+   {
+    "en": "0.941",
+    "vi": "0.941"
+   },
+   {
+    "en": "0.800",
+    "vi": "0.800"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 0.25²) = 0.970.",
+   "vi": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 0.25²) = 0.970."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 29",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 29"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 10,000 Hz. What is the phase shift at 100,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 10,000 Hz. Độ lệch pha tại 100,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "-84.3°",
+    "vi": "-84.3°"
+   },
+   {
+    "en": "-42.1°",
+    "vi": "-42.1°"
+   },
+   {
+    "en": "84.3°",
+    "vi": "84.3°"
+   },
+   {
+    "en": "-90.0°",
+    "vi": "-90.0°"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "θ = −tan⁻¹(f/fc) = −tan⁻¹(10) = -84.3° (the lag is negative; f = fc gives −45°).",
+   "vi": "θ = −tan⁻¹(f/fc) = −tan⁻¹(10) = -84.3° (độ trễ mang dấu âm; f = fc cho −45°)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 31–32",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 31–32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An RC lag circuit has fc = 10,000 Hz. What is Vout/Vin at 100,000 Hz?",
+   "vi": "Mạch trễ RC có fc = 10,000 Hz. Tỉ số Vout/Vin tại 100,000 Hz là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.707",
+    "vi": "0.707"
+   },
+   {
+    "en": "0.091",
+    "vi": "0.091"
+   },
+   {
+    "en": "0.100",
+    "vi": "0.100"
+   },
+   {
+    "en": "10.050",
+    "vi": "10.050"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 10²) = 0.100.",
+   "vi": "Vout/Vin = 1/√(1 + (f/fc)²) = 1/√(1 + 10²) = 0.100."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 29",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 29"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier uses an op-amp with Aol = 100,000, Zin = 2 MΩ and Zout = 75 Ω; Rf = 100 kΩ, Ri = 1.0 kΩ. What is Zin(NI)?",
+   "vi": "Mạch không đảo dùng op-amp có Aol = 100,000, Zin = 2 MΩ, Zout = 75 Ω; Rf = 100 kΩ, Ri = 1.0 kΩ. Zin(NI) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "2.02e-06 GΩ",
+    "vi": "2.02e-06 GΩ"
+   },
+   {
+    "en": "1.98 GΩ",
+    "vi": "1.98 GΩ"
+   },
+   {
+    "en": "1.98e-05 GΩ",
+    "vi": "1.98e-05 GΩ"
+   },
+   {
+    "en": "200 GΩ",
+    "vi": "200 GΩ"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "B = 1.0/(1.0+100) = 0.00990; 1 + B·Aol = 991.1; Zin(NI) = (1 + B·Aol)·Zin = 1.98 GΩ.",
+   "vi": "B = 1.0/(1.0+100) = 0.00990; 1 + B·Aol = 991.1; Zin(NI) = (1 + B·Aol)·Zin = 1.98 GΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Same amplifier (Aol = 100,000, Zout = 75 Ω, Rf = 100 kΩ, Ri = 1.0 kΩ). What is Zout(NI)?",
+   "vi": "Cùng mạch (Aol = 100,000, Zout = 75 Ω, Rf = 100 kΩ, Ri = 1.0 kΩ). Zout(NI) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "75.7 mΩ",
+    "vi": "75.7 mΩ"
+   },
+   {
+    "en": "74,300,000 mΩ",
+    "vi": "74,300,000 mΩ"
+   },
+   {
+    "en": "0.75 mΩ",
+    "vi": "0.75 mΩ"
+   },
+   {
+    "en": "75,000 mΩ",
+    "vi": "75,000 mΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Zout(NI) = Zout/(1 + B·Aol) = 75/991.1 = 75.7 mΩ.",
+   "vi": "Zout(NI) = Zout/(1 + B·Aol) = 75/991.1 = 75.7 mΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier uses an op-amp with Aol = 200,000, Zin = 1 MΩ and Zout = 60 Ω; Rf = 47 kΩ, Ri = 4.7 kΩ. What is Zin(NI)?",
+   "vi": "Mạch không đảo dùng op-amp có Aol = 200,000, Zin = 1 MΩ, Zout = 60 Ω; Rf = 47 kΩ, Ri = 4.7 kΩ. Zin(NI) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.001 GΩ",
+    "vi": "0.001 GΩ"
+   },
+   {
+    "en": "5.5e-08 GΩ",
+    "vi": "5.5e-08 GΩ"
+   },
+   {
+    "en": "18.2 GΩ",
+    "vi": "18.2 GΩ"
+   },
+   {
+    "en": "9.09e-05 GΩ",
+    "vi": "9.09e-05 GΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "B = 4.7/(4.7+47) = 0.09091; 1 + B·Aol = 18,182.8; Zin(NI) = (1 + B·Aol)·Zin = 18.2 GΩ.",
+   "vi": "B = 4.7/(4.7+47) = 0.09091; 1 + B·Aol = 18,182.8; Zin(NI) = (1 + B·Aol)·Zin = 18.2 GΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Same amplifier (Aol = 200,000, Zout = 60 Ω, Rf = 47 kΩ, Ri = 4.7 kΩ). What is Zout(NI)?",
+   "vi": "Cùng mạch (Aol = 200,000, Zout = 60 Ω, Rf = 47 kΩ, Ri = 4.7 kΩ). Zout(NI) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3.3 mΩ",
+    "vi": "3.3 mΩ"
+   },
+   {
+    "en": "0.3 mΩ",
+    "vi": "0.3 mΩ"
+   },
+   {
+    "en": "1,090,000,000 mΩ",
+    "vi": "1,090,000,000 mΩ"
+   },
+   {
+    "en": "33 mΩ",
+    "vi": "33 mΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Zout(NI) = Zout/(1 + B·Aol) = 60/18,182.8 = 3.3 mΩ.",
+   "vi": "Zout(NI) = Zout/(1 + B·Aol) = 60/18,182.8 = 3.3 mΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A noninverting amplifier uses an op-amp with Aol = 150,000, Zin = 5 MΩ and Zout = 100 Ω; Rf = 220 kΩ, Ri = 3.3 kΩ. What is Zin(NI)?",
+   "vi": "Mạch không đảo dùng op-amp có Aol = 150,000, Zin = 5 MΩ, Zout = 100 Ω; Rf = 220 kΩ, Ri = 3.3 kΩ. Zin(NI) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "7.39e-05 GΩ",
+    "vi": "7.39e-05 GΩ"
+   },
+   {
+    "en": "750 GΩ",
+    "vi": "750 GΩ"
+   },
+   {
+    "en": "2.25e-06 GΩ",
+    "vi": "2.25e-06 GΩ"
+   },
+   {
+    "en": "11.1 GΩ",
+    "vi": "11.1 GΩ"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "B = 3.3/(3.3+220) = 0.01478; 1 + B·Aol = 2,217.7; Zin(NI) = (1 + B·Aol)·Zin = 11.1 GΩ.",
+   "vi": "B = 3.3/(3.3+220) = 0.01478; 1 + B·Aol = 2,217.7; Zin(NI) = (1 + B·Aol)·Zin = 11.1 GΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Same amplifier (Aol = 150,000, Zout = 100 Ω, Rf = 220 kΩ, Ri = 3.3 kΩ). What is Zout(NI)?",
+   "vi": "Cùng mạch (Aol = 150,000, Zout = 100 Ω, Rf = 220 kΩ, Ri = 3.3 kΩ). Zout(NI) là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "45.1 mΩ",
+    "vi": "45.1 mΩ"
+   },
+   {
+    "en": "451 mΩ",
+    "vi": "451 mΩ"
+   },
+   {
+    "en": "100,000 mΩ",
+    "vi": "100,000 mΩ"
+   },
+   {
+    "en": "0.667 mΩ",
+    "vi": "0.667 mΩ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Zout(NI) = Zout/(1 + B·Aol) = 100/2,217.7 = 45.1 mΩ.",
+   "vi": "Zout(NI) = Zout/(1 + B·Aol) = 100/2,217.7 = 45.1 mΩ."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Problem 19",
+   "vi": "Bổ sung – sinh theo dạng Floyd Bài 19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a midrange open-loop gain of 40 dB. What is the gain as a plain ratio?",
+   "vi": "Op-amp có độ lợi vòng hở vùng giữa 40 dB. Giá trị tỉ số tương ứng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "400",
+    "vi": "400"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "2",
+    "vi": "2"
+   },
+   {
+    "en": "100",
+    "vi": "100"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Aol = 10^(40/20) = 100 (20·log is for voltage ratios).",
+   "vi": "Aol = 10^(40/20) = 100 (20·log dùng cho tỉ số điện áp)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a midrange open-loop gain of 60 dB. What is the gain as a plain ratio?",
+   "vi": "Op-amp có độ lợi vòng hở vùng giữa 60 dB. Giá trị tỉ số tương ứng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "3",
+    "vi": "3"
+   },
+   {
+    "en": "1,000,000",
+    "vi": "1,000,000"
+   },
+   {
+    "en": "600",
+    "vi": "600"
+   },
+   {
+    "en": "1000",
+    "vi": "1000"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Aol = 10^(60/20) = 1000 (20·log is for voltage ratios).",
+   "vi": "Aol = 10^(60/20) = 1000 (20·log dùng cho tỉ số điện áp)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a midrange open-loop gain of 80 dB. What is the gain as a plain ratio?",
+   "vi": "Op-amp có độ lợi vòng hở vùng giữa 80 dB. Giá trị tỉ số tương ứng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "10,000",
+    "vi": "10,000"
+   },
+   {
+    "en": "800",
+    "vi": "800"
+   },
+   {
+    "en": "4",
+    "vi": "4"
+   },
+   {
+    "en": "100,000,000",
+    "vi": "100,000,000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Aol = 10^(80/20) = 10,000 (20·log is for voltage ratios).",
+   "vi": "Aol = 10^(80/20) = 10,000 (20·log dùng cho tỉ số điện áp)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a midrange open-loop gain of 100 dB. What is the gain as a plain ratio?",
+   "vi": "Op-amp có độ lợi vòng hở vùng giữa 100 dB. Giá trị tỉ số tương ứng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "1000",
+    "vi": "1000"
+   },
+   {
+    "en": "10,000,000,000",
+    "vi": "10,000,000,000"
+   },
+   {
+    "en": "1,000,000",
+    "vi": "1,000,000"
+   },
+   {
+    "en": "100,000",
+    "vi": "100,000"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Aol = 10^(100/20) = 100,000 (20·log is for voltage ratios).",
+   "vi": "Aol = 10^(100/20) = 100,000 (20·log dùng cho tỉ số điện áp)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a midrange open-loop gain of 106 dB. What is the gain as a plain ratio?",
+   "vi": "Op-amp có độ lợi vòng hở vùng giữa 106 dB. Giá trị tỉ số tương ứng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5.3",
+    "vi": "5.3"
+   },
+   {
+    "en": "200,000",
+    "vi": "200,000"
+   },
+   {
+    "en": "39,800,000,000",
+    "vi": "39,800,000,000"
+   },
+   {
+    "en": "2,000,000",
+    "vi": "2,000,000"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Aol = 10^(106/20) = 200,000 (20·log is for voltage ratios).",
+   "vi": "Aol = 10^(106/20) = 200,000 (20·log dùng cho tỉ số điện áp)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp has a midrange open-loop gain of 120 dB. What is the gain as a plain ratio?",
+   "vi": "Op-amp có độ lợi vòng hở vùng giữa 120 dB. Giá trị tỉ số tương ứng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "6",
+    "vi": "6"
+   },
+   {
+    "en": "1,000,000,000,000",
+    "vi": "1,000,000,000,000"
+   },
+   {
+    "en": "1,000,000",
+    "vi": "1,000,000"
+   },
+   {
+    "en": "1200",
+    "vi": "1200"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Aol = 10^(120/20) = 1,000,000 (20·log is for voltage ratios).",
+   "vi": "Aol = 10^(120/20) = 1,000,000 (20·log dùng cho tỉ số điện áp)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – modelled on Floyd Self-Test Q10",
+   "vi": "Bổ sung – sinh theo dạng Floyd Self-Test câu 10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The closed-loop gain of an inverting amplifier is set mainly by",
+   "vi": "Độ lợi vòng kín của mạch khuếch đại đảo chủ yếu được quyết định bởi"
+  },
+  "opts": [
+   {
+    "en": "the supply voltage",
+    "vi": "điện áp nguồn cấp"
+   },
+   {
+    "en": "the open-loop gain of the op-amp",
+    "vi": "độ lợi vòng hở của op-amp"
+   },
+   {
+    "en": "the ratio of two external resistors",
+    "vi": "tỉ số hai điện trở ngoài"
+   },
+   {
+    "en": "the slew rate",
+    "vi": "slew rate"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "With a large Aol, Acl ≈ −Rf/Ri, set by external components.",
+   "vi": "Với Aol lớn, Acl ≈ −Rf/Ri do linh kiện ngoài quyết định."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The inverting input of an op-amp in a negative-feedback amplifier is at approximately the same voltage as the noninverting input. This is called",
+   "vi": "Ở mạch khuếch đại hồi tiếp âm, ngõ vào đảo có điện áp xấp xỉ ngõ vào không đảo. Hiện tượng này gọi là"
+  },
+  "opts": [
+   {
+    "en": "common-mode rejection",
+    "vi": "triệt tín hiệu chung"
+   },
+   {
+    "en": "slew-rate limiting",
+    "vi": "giới hạn slew rate"
+   },
+   {
+    "en": "a virtual short (virtual ground when Vin+ = 0)",
+    "vi": "đoản mạch ảo (đất ảo khi Vin+ = 0)"
+   },
+   {
+    "en": "offset nulling",
+    "vi": "chỉnh null offset"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "High Aol forces the differential input to ≈ 0 V.",
+   "vi": "Aol lớn buộc điện áp vi sai ngõ vào ≈ 0 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A large CMRR means the op-amp",
+   "vi": "CMRR lớn nghĩa là op-amp"
+  },
+  "opts": [
+   {
+    "en": "amplifies noise common to both inputs",
+    "vi": "khuếch đại nhiễu chung ở hai ngõ vào"
+   },
+   {
+    "en": "has a small bandwidth",
+    "vi": "có băng thông nhỏ"
+   },
+   {
+    "en": "has a low open-loop gain",
+    "vi": "có độ lợi vòng hở thấp"
+   },
+   {
+    "en": "amplifies the difference signal far more than the common signal",
+    "vi": "khuếch đại tín hiệu hiệu lớn hơn nhiều so với tín hiệu chung"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "CMRR = Aol/Acm; larger means better rejection of common-mode noise.",
+   "vi": "CMRR = Aol/Acm; càng lớn thì triệt nhiễu chung càng tốt."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "If an op-amp output cannot follow a fast input step, the limiting parameter is",
+   "vi": "Khi ngõ ra op-amp không theo kịp bước nhảy nhanh ở ngõ vào, tham số giới hạn là"
+  },
+  "opts": [
+   {
+    "en": "output impedance",
+    "vi": "trở kháng ra"
+   },
+   {
+    "en": "input offset current",
+    "vi": "dòng offset ngõ vào"
+   },
+   {
+    "en": "slew rate",
+    "vi": "slew rate"
+   },
+   {
+    "en": "CMRR",
+    "vi": "CMRR"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Slew rate limits the maximum dV/dt of the output.",
+   "vi": "Slew rate giới hạn dV/dt cực đại của ngõ ra."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a noninverting amplifier with negative feedback, the output impedance",
+   "vi": "Ở mạch không đảo có hồi tiếp âm, trở kháng ra"
+  },
+  "opts": [
+   {
+    "en": "increases",
+    "vi": "tăng"
+   },
+   {
+    "en": "decreases",
+    "vi": "giảm"
+   },
+   {
+    "en": "is unchanged",
+    "vi": "không đổi"
+   },
+   {
+    "en": "becomes infinite",
+    "vi": "trở thành vô cùng"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Zout(NI) = Zout/(1 + B·Aol), far below the open-loop Zout.",
+   "vi": "Zout(NI) = Zout/(1 + B·Aol), nhỏ hơn nhiều Zout vòng hở."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a voltage-follower, the input impedance is",
+   "vi": "Ở mạch lặp điện áp, trở kháng vào"
+  },
+  "opts": [
+   {
+    "en": "extremely high",
+    "vi": "cực kỳ cao"
+   },
+   {
+    "en": "very low",
+    "vi": "rất thấp"
+   },
+   {
+    "en": "equal to Rf",
+    "vi": "bằng Rf"
+   },
+   {
+    "en": "equal to Ri",
+    "vi": "bằng Ri"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Zin(VF) = (1 + Aol)·Zin, which is enormous.",
+   "vi": "Zin(VF) = (1 + Aol)·Zin, rất lớn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Impedances and compensation",
+   "vi": "Trở kháng và bù"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The unity-gain frequency of an op-amp is the frequency where",
+   "vi": "Tần số độ lợi đơn vị của op-amp là tần số tại đó"
+  },
+  "opts": [
+   {
+    "en": "the phase shift is 0°",
+    "vi": "độ lệch pha bằng 0°"
+   },
+   {
+    "en": "the output saturates",
+    "vi": "ngõ ra bão hòa"
+   },
+   {
+    "en": "the gain falls by 3 dB",
+    "vi": "độ lợi giảm 3 dB"
+   },
+   {
+    "en": "the open-loop gain falls to 1 (0 dB)",
+    "vi": "độ lợi vòng hở giảm xuống 1 (0 dB)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "fT is where |Aol| = 1.",
+   "vi": "fT là điểm có |Aol| = 1."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Above the critical frequency, a single-pole compensated op-amp gain falls at",
+   "vi": "Phía trên tần số tới hạn, độ lợi của op-amp bù một cực suy giảm với tốc độ"
+  },
+  "opts": [
+   {
+    "en": "3 dB per decade",
+    "vi": "3 dB mỗi decade"
+   },
+   {
+    "en": "it stays constant",
+    "vi": "giữ nguyên"
+   },
+   {
+    "en": "20 dB per decade",
+    "vi": "20 dB mỗi decade"
+   },
+   {
+    "en": "40 dB per decade",
+    "vi": "40 dB mỗi decade"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "One RC lag stage gives −20 dB/decade (−6 dB/octave).",
+   "vi": "Một tầng trễ RC cho −20 dB/decade (−6 dB/octave)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The phase shift of an RC lag circuit at its critical frequency is",
+   "vi": "Độ lệch pha của mạch trễ RC tại tần số tới hạn là"
+  },
+  "opts": [
+   {
+    "en": "−45°",
+    "vi": "−45°"
+   },
+   {
+    "en": "0°",
+    "vi": "0°"
+   },
+   {
+    "en": "−90°",
+    "vi": "−90°"
+   },
+   {
+    "en": "−180°",
+    "vi": "−180°"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "θ = −tan⁻¹(1) = −45° at f = fc.",
+   "vi": "θ = −tan⁻¹(1) = −45° tại f = fc."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Frequency response and bandwidth",
+   "vi": "Đáp ứng tần số và băng thông"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The purpose of a compensating resistor at the noninverting input of an inverting amplifier is to",
+   "vi": "Điện trở bù ở ngõ vào không đảo của mạch đảo dùng để"
+  },
+  "opts": [
+   {
+    "en": "increase the bandwidth",
+    "vi": "tăng băng thông"
+   },
+   {
+    "en": "reduce the slew rate",
+    "vi": "giảm slew rate"
+   },
+   {
+    "en": "cancel the output error caused by the bias currents",
+    "vi": "triệt sai số ngõ ra do dòng phân cực"
+   },
+   {
+    "en": "increase the voltage gain",
+    "vi": "tăng độ lợi điện áp"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Rc = Ri‖Rf makes both bias-current voltage drops equal.",
+   "vi": "Rc = Ri‖Rf làm hai sụt áp do dòng phân cực bằng nhau."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Offset, bias and slew rate",
+   "vi": "Dòng/áp offset, dòng phân cực và slew rate"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Which input of an op-amp is marked “+”?",
+   "vi": "Ngõ vào nào của op-amp được ký hiệu “+”?"
+  },
+  "opts": [
+   {
+    "en": "the output",
+    "vi": "ngõ ra"
+   },
+   {
+    "en": "the noninverting input",
+    "vi": "ngõ vào không đảo"
+   },
+   {
+    "en": "the supply input",
+    "vi": "chân nguồn"
+   },
+   {
+    "en": "the inverting input",
+    "vi": "ngõ vào đảo"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "A signal at “+” appears at the output in phase.",
+   "vi": "Tín hiệu ở “+” xuất hiện ở ngõ ra cùng pha."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Op-amp basics",
+   "vi": "Khái niệm op-amp"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "An op-amp circuit has Rf open and Vin applied. The output most likely",
+   "vi": "Mạch op-amp bị hở Rf và có tín hiệu Vin. Ngõ ra nhiều khả năng"
+  },
+  "opts": [
+   {
+    "en": "equals Vin",
+    "vi": "bằng Vin"
+   },
+   {
+    "en": "saturates at a supply rail",
+    "vi": "bão hòa ở mức nguồn"
+   },
+   {
+    "en": "is exactly zero",
+    "vi": "bằng đúng không"
+   },
+   {
+    "en": "becomes a pure sine of unity gain",
+    "vi": "trở thành sin với độ lợi bằng 1"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "No feedback → open-loop gain → tiny inputs drive the output to the rail.",
+   "vi": "Không hồi tiếp → độ lợi vòng hở → tín hiệu nhỏ cũng đẩy ngõ ra tới mức nguồn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The voltage-follower is mainly used as",
+   "vi": "Mạch lặp điện áp chủ yếu dùng làm"
+  },
+  "opts": [
+   {
+    "en": "an oscillator",
+    "vi": "mạch dao động"
+   },
+   {
+    "en": "a buffer isolating a high-impedance source from a load",
+    "vi": "mạch đệm cách ly nguồn trở kháng cao với tải"
+   },
+   {
+    "en": "a phase inverter",
+    "vi": "mạch đảo pha"
+   },
+   {
+    "en": "a high-gain amplifier",
+    "vi": "bộ khuếch đại độ lợi cao"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Gain 1, very high Zin and very low Zout make an ideal buffer.",
+   "vi": "Độ lợi 1, Zin rất cao, Zout rất thấp tạo nên mạch đệm lý tưởng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Negative feedback and gain",
+   "vi": "Hồi tiếp âm và hệ số khuếch đại"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "If the same 5 mV signal is applied to both inputs of an ideal op-amp, the output is",
+   "vi": "Nếu cùng tín hiệu 5 mV đặt vào cả hai ngõ vào của op-amp lý tưởng, ngõ ra là"
+  },
+  "opts": [
+   {
+    "en": "10 mV",
+    "vi": "10 mV"
+   },
+   {
+    "en": "the supply voltage",
+    "vi": "điện áp nguồn"
+   },
+   {
+    "en": "5 mV",
+    "vi": "5 mV"
+   },
+   {
+    "en": "0 V",
+    "vi": "0 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "The differential input is 0 V, so the ideal output is 0 V.",
+   "vi": "Điện áp vi sai ngõ vào bằng 0 nên ngõ ra lý tưởng bằng 0 V."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Input modes and CMRR",
+   "vi": "Chế độ ngõ vào và CMRR"
+  },
+  "src": {
+   "en": "Generated – conceptual variant of Floyd Ch.12 Self-Test",
+   "vi": "Bổ sung – dạng khái niệm theo Floyd Ch.12 Self-Test"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "chapter text"
+ }
+]

@@ -1,0 +1,51 @@
+{
+ "m02": {
+  "n": 165,
+  "n_goc": 51,
+  "n_bo_sung": 114,
+  "essays": 13,
+  "essays_goc": 13,
+  "audit": {
+   "ca/3opt": {
+    "n": 7,
+    "pos": [
+     2,
+     4,
+     1
+    ],
+    "chi2": 2.0,
+    "correct_is_longest": 0.143
+   },
+   "mcq/3opt": {
+    "n": 1,
+    "pos": [
+     1,
+     0,
+     0
+    ],
+    "chi2": 2.0,
+    "correct_is_longest": 0.0
+   },
+   "mcq/4opt": {
+    "n": 143,
+    "pos": [
+     34,
+     34,
+     35,
+     40
+    ],
+    "chi2": 0.69,
+    "correct_is_longest": 0.178
+   },
+   "tf/2opt": {
+    "n": 14,
+    "pos": [
+     9,
+     5
+    ],
+    "chi2": 1.14,
+    "correct_is_longest": 0.357
+   }
+  }
+ }
+}
