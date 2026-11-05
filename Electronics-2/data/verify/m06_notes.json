@@ -1,0 +1,12 @@
+{"vi":["Circuit-Action câu 5 (Hình 15–11, tăng R2 thì «băng thông» thế nào) bị loại: R2 chỉ đổi hệ số tắt dần/đỉnh nhô, còn «băng thông» phụ thuộc định nghĩa (−3 dB hay fc) nên mơ hồ; sách không in đáp án. Thay bằng các câu bổ sung về hệ số tắt dần.",
+"Đúng/Sai câu 7 («tần số tới hạn chỉ phụ thuộc R và C») chọn Đúng theo công thức của Floyd (fc = 1/(2πRC); Sallen-Key: 1/(2π√(RARBCACB))); chặt chẽ hơn, điểm −3 dB còn phụ thuộc hệ số tắt dần.",
+"Circuit-Action câu 2 (thông cao): «băng thông» hiểu là từ fc đến giới hạn trên của op-amp; mức khó 2.",
+"Bài 5: tính chính xác Q = √(3,2·3,9)/0,7 = 5,05; sách in 5,04.",
+"Bài 19(b): BW tính chính xác 96,45 Hz (làm tròn 96,5 Hz); sách in 96,4 Hz do cắt bớt chữ số; f0 = 449 Hz trùng sách.",
+"Các bài 7–12 và 18–21 phụ thuộc hình chưa đưa vào, ngoại trừ Bài 13 và 19(b)."],
+"en":["Circuit-Action Q5 (Fig. 15–11, increasing R2, effect on “bandwidth”) was removed: R2 changes only the damping/peaking and “bandwidth” depends on the definition (−3 dB vs fc), so it is ambiguous; no printed answer. Generated damping-factor items replace it.",
+"True/False Q7 (“critical frequency depends only on R and C”) is marked True following Floyd’s formulas (fc = 1/(2πRC); Sallen-Key: 1/(2π√(RA·RB·CA·CB))); strictly the −3 dB point also depends on damping.",
+"Circuit-Action Q2 (high-pass): “bandwidth” is read as fc up to the op-amp’s upper limit; level 2.",
+"Problem 5: exact Q = √(3.2·3.9)/0.7 = 5.05; the book prints 5.04.",
+"Problem 19(b): the exact BW is 96.45 Hz (rounds to 96.5 Hz); the book prints 96.4 Hz (truncated); f0 = 449 Hz matches.",
+"Figure-dependent problems 7–12 and 18–21 are not included, except Problems 13 and 19(b)."]}

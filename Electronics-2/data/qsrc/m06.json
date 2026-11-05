@@ -1,0 +1,1773 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The term pole in filter terminology refers to",
+   "vi": "Thuật ngữ “cực” (pole) trong kỹ thuật lọc chỉ"
+  },
+  "opts": [
+   {
+    "en": "a high-gain op-amp",
+    "vi": "một op-amp độ lợi cao"
+   },
+   {
+    "en": "one complete active filter",
+    "vi": "một bộ lọc tích cực hoàn chỉnh"
+   },
+   {
+    "en": "a single RC circuit",
+    "vi": "một mạch RC đơn"
+   },
+   {
+    "en": "the feedback circuit",
+    "vi": "mạch hồi tiếp"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Each RC circuit in the frequency-selective network is one pole.",
+   "vi": "Mỗi mạch RC trong mạng chọn tần là một cực."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q1 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 1 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A single resistor and a single capacitor can be connected to form a filter with a roll-off rate of",
+   "vi": "Một điện trở và một tụ điện có thể tạo bộ lọc có tốc độ suy giảm"
+  },
+  "opts": [
+   {
+    "en": "−20 dB/decade",
+    "vi": "−20 dB/decade"
+   },
+   {
+    "en": "−40 dB/decade",
+    "vi": "−40 dB/decade"
+   },
+   {
+    "en": "−6 dB/octave",
+    "vi": "−6 dB/octave"
+   },
+   {
+    "en": "answers (a) and (c)",
+    "vi": "đáp án (a) và (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "One pole rolls off at −20 dB/decade, which is the same slope as −6 dB/octave.",
+   "vi": "Một cực suy giảm −20 dB/decade, cùng độ dốc với −6 dB/octave."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q2 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 2 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A band-pass response has",
+   "vi": "Đáp ứng thông dải có"
+  },
+  "opts": [
+   {
+    "en": "two critical frequencies",
+    "vi": "hai tần số tới hạn"
+   },
+   {
+    "en": "one critical frequency",
+    "vi": "một tần số tới hạn"
+   },
+   {
+    "en": "a flat curve in the passband",
+    "vi": "đường cong phẳng trong dải thông"
+   },
+   {
+    "en": "a wide bandwidth",
+    "vi": "băng thông rộng"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A lower and an upper critical frequency bound the passband.",
+   "vi": "Tần số tới hạn dưới và trên giới hạn dải thông."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q3 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 3 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The lowest frequency passed by a low-pass filter is",
+   "vi": "Tần số thấp nhất mà bộ lọc thông thấp cho qua là"
+  },
+  "opts": [
+   {
+    "en": "1 Hz",
+    "vi": "1 Hz"
+   },
+   {
+    "en": "0 Hz",
+    "vi": "0 Hz"
+   },
+   {
+    "en": "10 Hz",
+    "vi": "10 Hz"
+   },
+   {
+    "en": "dependent on the critical frequency",
+    "vi": "phụ thuộc tần số tới hạn"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "A low-pass filter passes dc (0 Hz) up to its critical frequency.",
+   "vi": "Bộ lọc thông thấp cho qua từ một chiều (0 Hz) đến tần số tới hạn."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q4 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 4 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The quality factor (Q) of a band-pass filter depends on",
+   "vi": "Hệ số phẩm chất (Q) của bộ lọc thông dải phụ thuộc vào"
+  },
+  "opts": [
+   {
+    "en": "the critical frequencies",
+    "vi": "các tần số tới hạn"
+   },
+   {
+    "en": "only the bandwidth",
+    "vi": "chỉ băng thông"
+   },
+   {
+    "en": "the center frequency and the bandwidth",
+    "vi": "tần số trung tâm và băng thông"
+   },
+   {
+    "en": "only the center frequency",
+    "vi": "chỉ tần số trung tâm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "Q = f0/BW.",
+   "vi": "Q = f0/BW."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q5 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 5 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The damping factor of an active filter determines",
+   "vi": "Hệ số tắt dần của bộ lọc tích cực quyết định"
+  },
+  "opts": [
+   {
+    "en": "the voltage gain",
+    "vi": "độ lợi điện áp"
+   },
+   {
+    "en": "the critical frequency",
+    "vi": "tần số tới hạn"
+   },
+   {
+    "en": "the response characteristic",
+    "vi": "đặc tính đáp ứng"
+   },
+   {
+    "en": "the roll-off rate",
+    "vi": "tốc độ suy giảm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "DF sets whether the response is Butterworth, Chebyshev or Bessel.",
+   "vi": "DF quyết định đáp ứng là Butterworth, Chebyshev hay Bessel."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q6 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 6 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A maximally flat frequency response is known as",
+   "vi": "Đáp ứng tần số phẳng tối đa được gọi là"
+  },
+  "opts": [
+   {
+    "en": "Chebyshev",
+    "vi": "Chebyshev"
+   },
+   {
+    "en": "Butterworth",
+    "vi": "Butterworth"
+   },
+   {
+    "en": "Bessel",
+    "vi": "Bessel"
+   },
+   {
+    "en": "Colpitts",
+    "vi": "Colpitts"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Butterworth: flat passband (Colpitts is an oscillator).",
+   "vi": "Butterworth: dải thông phẳng (Colpitts là mạch dao động)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q7 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 7 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The damping factor of a filter is set by",
+   "vi": "Hệ số tắt dần của bộ lọc được đặt bởi"
+  },
+  "opts": [
+   {
+    "en": "the negative feedback circuit",
+    "vi": "mạch hồi tiếp âm"
+   },
+   {
+    "en": "the positive feedback circuit",
+    "vi": "mạch hồi tiếp dương"
+   },
+   {
+    "en": "the frequency-selective circuit",
+    "vi": "mạch chọn tần"
+   },
+   {
+    "en": "the gain of the op-amp",
+    "vi": "độ lợi của op-amp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "DF = 2 − R1/R2 for the Sallen-Key stage: set by the negative-feedback divider.",
+   "vi": "DF = 2 − R1/R2 cho tầng Sallen-Key: do bộ chia hồi tiếp âm đặt."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q8 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 8 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "The number of poles in a filter affect the",
+   "vi": "Số cực của bộ lọc ảnh hưởng đến"
+  },
+  "opts": [
+   {
+    "en": "voltage gain",
+    "vi": "độ lợi điện áp"
+   },
+   {
+    "en": "bandwidth",
+    "vi": "băng thông"
+   },
+   {
+    "en": "center frequency",
+    "vi": "tần số trung tâm"
+   },
+   {
+    "en": "roll-off rate",
+    "vi": "tốc độ suy giảm"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Roll-off = −20 dB/decade per pole.",
+   "vi": "Tốc độ suy giảm = −20 dB/decade mỗi cực."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q9 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 9 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Sallen-Key low-pass filters are",
+   "vi": "Bộ lọc thông thấp Sallen-Key là"
+  },
+  "opts": [
+   {
+    "en": "single-pole filters",
+    "vi": "bộ lọc một cực"
+   },
+   {
+    "en": "second-order filters",
+    "vi": "bộ lọc bậc hai"
+   },
+   {
+    "en": "Butterworth filters",
+    "vi": "bộ lọc Butterworth"
+   },
+   {
+    "en": "band-pass filters",
+    "vi": "bộ lọc thông dải"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The basic Sallen-Key stage has two RC sections: two poles.",
+   "vi": "Tầng Sallen-Key cơ bản có hai khâu RC: hai cực."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q10 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 10 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "When low-pass filters are cascaded, the roll-off rate",
+   "vi": "Khi ghép tầng các bộ lọc thông thấp, tốc độ suy giảm"
+  },
+  "opts": [
+   {
+    "en": "increases",
+    "vi": "tăng"
+   },
+   {
+    "en": "decreases",
+    "vi": "giảm"
+   },
+   {
+    "en": "does not change",
+    "vi": "không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Poles add: two 2-pole stages give −80 dB/decade.",
+   "vi": "Các cực cộng lại: hai tầng 2 cực cho −80 dB/decade."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q11 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 11 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "In a high-pass filter, the roll-off occurs",
+   "vi": "Ở bộ lọc thông cao, sự suy giảm xảy ra"
+  },
+  "opts": [
+   {
+    "en": "above the critical frequency",
+    "vi": "phía trên tần số tới hạn"
+   },
+   {
+    "en": "below the critical frequency",
+    "vi": "phía dưới tần số tới hạn"
+   },
+   {
+    "en": "during the mid range",
+    "vi": "trong vùng giữa"
+   },
+   {
+    "en": "at the center frequency",
+    "vi": "tại tần số trung tâm"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Frequencies below fc are attenuated.",
+   "vi": "Các tần số dưới fc bị suy giảm."
+  },
+  "level": 1,
+  "topic": {
+   "en": "High-pass filters",
+   "vi": "Bộ lọc thông cao"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q12 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 12 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A two-pole Sallen-Key high-pass filter contains",
+   "vi": "Bộ lọc thông cao Sallen-Key hai cực gồm"
+  },
+  "opts": [
+   {
+    "en": "one capacitor and two resistors",
+    "vi": "một tụ điện và hai điện trở"
+   },
+   {
+    "en": "two capacitors and two resistors",
+    "vi": "hai tụ điện và hai điện trở"
+   },
+   {
+    "en": "a feedback circuit",
+    "vi": "một mạch hồi tiếp"
+   },
+   {
+    "en": "answers (b) and (c)",
+    "vi": "đáp án (b) và (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "Two RC sections (two C, two R) plus the R1/R2 feedback divider.",
+   "vi": "Hai khâu RC (hai C, hai R) cộng bộ chia hồi tiếp R1/R2."
+  },
+  "level": 1,
+  "topic": {
+   "en": "High-pass filters",
+   "vi": "Bộ lọc thông cao"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q13 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 13 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "When a low-pass and a high-pass filter are cascaded to get a band-pass filter, the critical frequency of the low-pass filter must be",
+   "vi": "Khi ghép tầng bộ lọc thông thấp và thông cao để được bộ lọc thông dải, tần số tới hạn của bộ lọc thông thấp phải"
+  },
+  "opts": [
+   {
+    "en": "equal to the critical frequency of the high-pass filter",
+    "vi": "bằng tần số tới hạn của bộ lọc thông cao"
+   },
+   {
+    "en": "less than the critical frequency of the high-pass filter",
+    "vi": "nhỏ hơn tần số tới hạn của bộ lọc thông cao"
+   },
+   {
+    "en": "greater than the critical frequency of the high-pass filter",
+    "vi": "lớn hơn tần số tới hạn của bộ lọc thông cao"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "The passband lies between the high-pass fc (lower edge) and the low-pass fc (upper edge), so the low-pass fc must be greater.",
+   "vi": "Dải thông nằm giữa fc của thông cao (biên dưới) và fc của thông thấp (biên trên) nên fc thông thấp phải lớn hơn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q14 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 14 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A state-variable filter consists of",
+   "vi": "Bộ lọc biến trạng thái gồm"
+  },
+  "opts": [
+   {
+    "en": "one op-amp with multiple-feedback paths",
+    "vi": "một op-amp với nhiều đường hồi tiếp"
+   },
+   {
+    "en": "a summing amplifier and two integrators",
+    "vi": "một mạch cộng và hai mạch tích phân"
+   },
+   {
+    "en": "a summing amplifier and two differentiators",
+    "vi": "một mạch cộng và hai mạch vi phân"
+   },
+   {
+    "en": "three Butterworth stages",
+    "vi": "ba tầng Butterworth"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "A summing stage feeds two cascaded integrators in a feedback loop.",
+   "vi": "Một tầng cộng cấp cho hai mạch tích phân nối tiếp trong vòng hồi tiếp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q15 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 15 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "When the gain of a filter is minimum at its center frequency, it is",
+   "vi": "Khi độ lợi của bộ lọc cực tiểu tại tần số trung tâm thì đó là"
+  },
+  "opts": [
+   {
+    "en": "a band-pass filter",
+    "vi": "bộ lọc thông dải"
+   },
+   {
+    "en": "a band-stop filter",
+    "vi": "bộ lọc chắn dải"
+   },
+   {
+    "en": "a notch filter",
+    "vi": "bộ lọc notch"
+   },
+   {
+    "en": "answers (b) and (c)",
+    "vi": "đáp án (b) và (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "A band-stop (notch) filter has its minimum gain at f0.",
+   "vi": "Bộ lọc chắn dải (notch) có độ lợi cực tiểu tại f0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Self-Test Q16 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Self-Test câu 16 (tr.801)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text + script"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The response of a filter can be identified by its passband.",
+   "vi": "Đáp ứng của bộ lọc có thể nhận biết qua dải thông của nó."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Low-pass, high-pass, band-pass and band-stop are named by their passband.",
+   "vi": "Thông thấp, thông cao, thông dải, chắn dải được gọi tên theo dải thông."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q1 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 1 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A filter pole is the cutoff frequency of a filter.",
+   "vi": "Cực của bộ lọc là tần số cắt của bộ lọc."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "A pole is one RC circuit, not a frequency.",
+   "vi": "Cực là một mạch RC, không phải một tần số."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q2 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 2 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A single-pole filter has one RC circuit.",
+   "vi": "Bộ lọc một cực có một mạch RC."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "By definition.",
+   "vi": "Theo định nghĩa."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q3 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 3 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A single-pole filter produces a roll-off of −25 dB/decade.",
+   "vi": "Bộ lọc một cực cho độ suy giảm −25 dB/decade."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It is −20 dB/decade.",
+   "vi": "Là −20 dB/decade."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q4 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 4 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A low-pass filter can pass a dc voltage.",
+   "vi": "Bộ lọc thông thấp có thể cho điện áp một chiều đi qua."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Its passband starts at 0 Hz.",
+   "vi": "Dải thông của nó bắt đầu từ 0 Hz."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q5 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 5 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A high-pass filter passes any frequency above dc.",
+   "vi": "Bộ lọc thông cao cho qua mọi tần số trên mức một chiều."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It passes only frequencies above its critical frequency; those between dc and fc are attenuated.",
+   "vi": "Nó chỉ cho qua các tần số trên tần số tới hạn; tần số từ 0 đến fc bị suy giảm."
+  },
+  "level": 1,
+  "topic": {
+   "en": "High-pass filters",
+   "vi": "Bộ lọc thông cao"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q6 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 6 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The critical frequency of a filter depends only on R and C values.",
+   "vi": "Tần số tới hạn của bộ lọc chỉ phụ thuộc vào giá trị R và C."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Floyd: fc = 1/(2πRC) (single pole) or 1/(2π√(RA·RB·CA·CB)) (Sallen-Key); the gain network sets the damping, not fc.",
+   "vi": "Floyd: fc = 1/(2πRC) (một cực) hoặc 1/(2π√(RA·RB·CA·CB)) (Sallen-Key); mạng đặt độ lợi chỉ quyết định hệ số tắt dần, không quyết định fc."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q7 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 7 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The band-pass filter has two critical frequencies.",
+   "vi": "Bộ lọc thông dải có hai tần số tới hạn."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Lower and upper.",
+   "vi": "Dưới và trên."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q8 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 8 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The quality factor of a band-pass filter is the ratio of bandwidth to the center frequency.",
+   "vi": "Hệ số phẩm chất của bộ lọc thông dải là tỉ số băng thông trên tần số trung tâm."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Q = f0/BW: center frequency over bandwidth.",
+   "vi": "Q = f0/BW: tần số trung tâm chia băng thông."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q9 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 9 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The higher the Q, the narrower the bandwidth of a band-pass filter.",
+   "vi": "Q càng cao thì băng thông bộ lọc thông dải càng hẹp."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "BW = f0/Q.",
+   "vi": "BW = f0/Q."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q10 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 10 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The Butterworth characteristic provides a flat response in the passband.",
+   "vi": "Đặc tính Butterworth cho đáp ứng phẳng trong dải thông."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Maximally flat.",
+   "vi": "Phẳng tối đa."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q11 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 11 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Filters with a Chebyshev response have a slow roll-off.",
+   "vi": "Bộ lọc có đáp ứng Chebyshev có độ suy giảm chậm."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Chebyshev has a faster roll-off than Butterworth, at the price of passband ripple.",
+   "vi": "Chebyshev suy giảm nhanh hơn Butterworth, đổi lại có gợn trong dải thông."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q12 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 12 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A Chebyshev response has ripples in the passband.",
+   "vi": "Đáp ứng Chebyshev có gợn trong dải thông."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "That is its characteristic.",
+   "vi": "Đó là đặc trưng của nó."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q13 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 13 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Bessel filters are useful in filtering pulse waveforms.",
+   "vi": "Bộ lọc Bessel hữu ích để lọc các dạng xung."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Linear phase keeps the pulse shape.",
+   "vi": "Pha tuyến tính giữ nguyên dạng xung."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q14 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 14 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "The order of a filter is the number of poles it contains.",
+   "vi": "Bậc của bộ lọc là số cực mà nó có."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "By definition.",
+   "vi": "Theo định nghĩa."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q15 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 15 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A Sallen-Key filter is also known as a VCVS filter.",
+   "vi": "Bộ lọc Sallen-Key còn gọi là bộ lọc VCVS."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Voltage-controlled voltage source.",
+   "vi": "Nguồn áp điều khiển bằng áp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q16 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 16 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Multiple feedback is used in low-pass filters.",
+   "vi": "Hồi tiếp nhiều đường được dùng trong bộ lọc thông thấp."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "Floyd uses the multiple-feedback topology for band-pass filters.",
+   "vi": "Floyd dùng cấu hình hồi tiếp nhiều đường cho bộ lọc thông dải."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q17 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 17 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A state-variable filter uses differentiators.",
+   "vi": "Bộ lọc biến trạng thái dùng các mạch vi phân."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "It uses a summing amplifier and two integrators.",
+   "vi": "Nó dùng một mạch cộng và hai mạch tích phân."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q18 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 18 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "A band-stop filter rejects certain frequencies.",
+   "vi": "Bộ lọc chắn dải loại bỏ một số tần số nhất định."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "It attenuates a band around f0.",
+   "vi": "Nó làm suy giảm một dải quanh f0."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q19 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 19 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "en": "Filter response can be measured using a sweep generator.",
+   "vi": "Có thể đo đáp ứng bộ lọc bằng máy phát quét tần."
+  },
+  "opts": [
+   {
+    "en": "True",
+    "vi": "Đúng"
+   },
+   {
+    "en": "False",
+    "vi": "Sai"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "A sweep generator with a scope or analyzer displays the response curve.",
+   "vi": "Máy phát quét tần cùng dao động ký hoặc máy phân tích hiển thị đường đáp ứng."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, True/False Quiz Q20 (p.799)",
+   "vi": "Floyd 9e, Ch.15, Đúng/Sai câu 20 (tr.799)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "check": "chapter text"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the critical frequency of a low-pass filter is increased, the bandwidth will",
+   "vi": "Nếu tăng tần số tới hạn của bộ lọc thông thấp thì băng thông sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "The passband runs from 0 Hz to fc, so BW = fc.",
+   "vi": "Dải thông chạy từ 0 Hz đến fc nên BW = fc."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q1 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 1 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the critical frequency of a high-pass filter is increased, the bandwidth will",
+   "vi": "Nếu tăng tần số tới hạn của bộ lọc thông cao thì băng thông sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "The passband runs from fc up to the op-amp’s upper limit, so a higher fc shrinks it.",
+   "vi": "Dải thông chạy từ fc đến giới hạn trên của op-amp nên fc cao hơn làm nó hẹp lại."
+  },
+  "level": 2,
+  "topic": {
+   "en": "High-pass filters",
+   "vi": "Bộ lọc thông cao"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q2 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 2 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the Q of a band-pass filter is increased, the bandwidth will",
+   "vi": "Nếu tăng Q của bộ lọc thông dải thì băng thông sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "BW = f0/Q.",
+   "vi": "BW = f0/Q."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q3 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 3 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the values of CA and CB in Figure 15–11 are increased by the same amount, the critical frequency will",
+   "vi": "Nếu tăng CA và CB trong Hình 15–11 cùng một lượng thì tần số tới hạn sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "fc = 1/(2π√(RA·RB·CA·CB)) falls as the capacitors grow.",
+   "vi": "fc = 1/(2π√(RA·RB·CA·CB)) giảm khi các tụ tăng."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q4 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 4 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m06/fig15_11.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If two filters like the one in Figure 15–15 are cascaded, the roll-off rate of the frequency response will",
+   "vi": "Nếu ghép tầng hai bộ lọc giống bộ lọc ở Hình 15–15 thì tốc độ suy giảm sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "Two 2-pole stages give four poles: −80 dB/decade instead of −40 dB/decade.",
+   "vi": "Hai tầng 2 cực cho bốn cực: −80 dB/decade thay vì −40 dB/decade."
+  },
+  "level": 2,
+  "topic": {
+   "en": "High-pass filters",
+   "vi": "Bộ lọc thông cao"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q6 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 6 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m06/fig15_15.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the value of R2 in Figure 15–19 is decreased, the Q will",
+   "vi": "Nếu giảm giá trị R2 trong Hình 15–19 thì Q sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "BW = 1/(π·R2·C) widens as R2 falls, and Q = f0/BW falls.",
+   "vi": "BW = 1/(π·R2·C) rộng ra khi R2 giảm và Q = f0/BW giảm."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q7 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 7 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m06/fig15_19.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ca",
+  "q": {
+   "en": "If the capacitors in Figure 15–19 are changed to 0.022 μF, the center frequency will",
+   "vi": "Nếu đổi các tụ trong Hình 15–19 thành 0,022 μF thì tần số trung tâm sẽ"
+  },
+  "opts": [
+   {
+    "en": "Increase",
+    "vi": "Tăng"
+   },
+   {
+    "en": "Decrease",
+    "vi": "Giảm"
+   },
+   {
+    "en": "Not change",
+    "vi": "Không đổi"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "f0 ∝ 1/C: larger capacitors lower f0 (0.01 μF → 0.022 μF).",
+   "vi": "f0 ∝ 1/C: tụ lớn hơn làm f0 giảm (0,01 μF → 0,022 μF)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Circuit-Action Quiz Q8 (p.800)",
+   "vi": "Floyd 9e, Ch.15, Circuit-Action câu 8 (tr.800)"
+  },
+  "origin": "goc",
+  "fixed_order": true,
+  "fig": "assets/figs/m06/fig15_19.png",
+  "check": "figure + formula"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A low-pass filter has a critical frequency of 800 Hz. What is its bandwidth?",
+   "vi": "Bộ lọc thông thấp có tần số tới hạn 800 Hz. Băng thông là bao nhiêu?"
+  },
+  "sol": {
+   "en": "A low-pass passband extends from 0 Hz to fc, so BW = 800 Hz.",
+   "vi": "Dải thông của bộ lọc thông thấp từ 0 Hz đến fc nên BW = 800 Hz."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Low-pass filters",
+   "vi": "Bộ lọc thông thấp"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 2 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 2 (tr.801)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "A single-pole high-pass filter has R = 2.2 kΩ and C = 0.0015 μF. What is the critical frequency? Can the bandwidth be determined?",
+   "vi": "Bộ lọc thông cao một cực có R = 2,2 kΩ và C = 0,0015 μF. Tần số tới hạn là bao nhiêu? Có xác định được băng thông không?"
+  },
+  "sol": {
+   "en": "fc = 1/(2πRC) = 1/(2π × 2.2 kΩ × 0.0015 μF) = 48.2 kHz (book: 48.2 kHz). The bandwidth cannot be found from this information: it also depends on the upper limit of the op-amp.",
+   "vi": "fc = 1/(2πRC) = 1/(2π × 2,2 kΩ × 0,0015 μF) = 48.2 kHz (sách: 48,2 kHz). Không xác định được băng thông từ thông tin này: nó còn phụ thuộc giới hạn trên của op-amp."
+  },
+  "level": 1,
+  "topic": {
+   "en": "High-pass filters",
+   "vi": "Bộ lọc thông cao"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 3 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 3 (tr.801)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the roll-off rate of the filter in Problem 3?",
+   "vi": "Tốc độ suy giảm của bộ lọc ở Bài 3 là bao nhiêu?"
+  },
+  "sol": {
+   "en": "A single pole: −20 dB/decade (−6 dB/octave).",
+   "vi": "Một cực: −20 dB/decade (−6 dB/octave)."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Filter responses and poles",
+   "vi": "Đáp ứng bộ lọc và số cực"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 4 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 4 (tr.801)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Bandwidth and Q of a band-pass filter with critical frequencies 3.2 kHz and 3.9 kHz.",
+   "vi": "Băng thông và Q của bộ lọc thông dải có tần số tới hạn 3,2 kHz và 3,9 kHz."
+  },
+  "sol": {
+   "en": "BW = 3.9 − 3.2 = 0.7 kHz = 700 Hz (book: 700 Hz). f0 = √(fc1·fc2) = 3533 Hz, so Q = f0/BW = 3533/700 = 5.05 (book prints 5.04 from slightly different rounding).",
+   "vi": "BW = 3,9 − 3,2 = 0,7 kHz = 700 Hz (sách: 700 Hz). f0 = √(fc1·fc2) = 3533 Hz nên Q = f0/BW = 3533/700 = 5.05 (sách in 5,04 do làm tròn hơi khác)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 5 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 5 (tr.801)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the center frequency of a filter with Q = 15 and a bandwidth of 1 kHz?",
+   "vi": "Tần số trung tâm của bộ lọc có Q = 15 và băng thông 1 kHz là bao nhiêu?"
+  },
+  "sol": {
+   "en": "f0 = Q·BW = 15 × 1 kHz = 15 kHz.",
+   "vi": "f0 = Q·BW = 15 × 1 kHz = 15 kHz."
+  },
+  "level": 1,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 6 (p.801)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 6 (tr.801)"
+  },
+  "origin": "goc",
+  "check": "script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Multiple-feedback band-pass filter of Fig. 15–47(b): R1 = 47 kΩ, R2 = 150 kΩ, R3 = 1.8 kΩ, C1 = C2 = 0.022 μF. Find f0 and BW.",
+   "vi": "Bộ lọc thông dải hồi tiếp nhiều đường Hình 15–47(b): R1 = 47 kΩ, R2 = 150 kΩ, R3 = 1,8 kΩ, C1 = C2 = 0,022 μF. Tìm f0 và BW."
+  },
+  "sol": {
+   "en": "f0 = (1/(2πC))·√((R1 + R3)/(R1·R2·R3)) = 449 Hz; BW = 1/(π·R2·C) = 96.5 Hz; Q = 4.65 (book: f0 = 449 Hz, BW = 96.4 Hz).",
+   "vi": "f0 = (1/(2πC))·√((R1 + R3)/(R1·R2·R3)) = 449 Hz; BW = 1/(π·R2·C) = 96.5 Hz; Q = 4.65 (sách: f0 = 449 Hz, BW = 96,4 Hz)."
+  },
+  "level": 3,
+  "topic": {
+   "en": "Band-pass and band-stop filters",
+   "vi": "Bộ lọc thông dải và chắn dải"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 19 (p.804)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 19 (tr.804)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Add stages to a Butterworth low-pass filter to reach −120 dB/decade (six poles). What R1/R2 ratios give the Butterworth damping factors 1.932, 1.414 and 0.518?",
+   "vi": "Thêm tầng cho bộ lọc thông thấp Butterworth để đạt −120 dB/decade (sáu cực). Tỉ số R1/R2 nào cho các hệ số tắt dần Butterworth 1,932; 1,414 và 0,518?"
+  },
+  "sol": {
+   "en": "DF = 2 − R1/R2 → R1/R2 = 2 − DF: 0.068, 0.586, 1.482 (book: 0.068, 0.586, 1.482).",
+   "vi": "DF = 2 − R1/R2 → R1/R2 = 2 − DF: 0.068, 0.586, 1.482 (sách: 0,068; 0,586; 1,482)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Butterworth, Chebyshev, Bessel; damping",
+   "vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+  },
+  "src": {
+   "en": "Floyd 9e, Ch.15, Problem 13 (p.803)",
+   "vi": "Floyd 9e, Ch.15, Bài tập 13 (tr.803)"
+  },
+  "origin": "goc",
+  "check": "script + book answer"
+ }
+]
