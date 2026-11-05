@@ -68,10 +68,12 @@ def scan(M):
                         last[state] = int(mi[1]); text = mi[2]
                         out.append(dict(book='floyd', kind=state, chapter=n, section=sect, number=str(last[state]), sub=sub, pdf=p, printed=p - OFFSET, text=text, answer=None))
                         continue
-                    if out and out[-1]['kind'] == state and out[-1]['chapter'] == n and len(ln) > 1 and not ln.startswith(('Answers', 'Section ', 'SECTION')) and (x1 - x0) > 60:
+                    if re.match(r'^[▶▲◀]|^FIGURE\b|^Multisim|^These file|^file circuits|^with a logo|^folder on', ln) and out and out[-1]['kind'] == state:
+                        out[-1]['closed'] = True; continue                                  # a figure caption or a Multisim note ends the statement
+                    if out and out[-1]['kind'] == state and out[-1]['chapter'] == n and not out[-1].get('closed') and len(ln) > 1 and not ln.startswith(('Answers', 'Section ', 'SECTION')) and (x1 - x0) > 60:
                         out[-1]['text'] += ' ' + ln
     for e in out:
-        e['text'] = clean(e['text'])
+        e.pop('closed', None); e['text'] = clean(e['text'])
         if e['kind'] != 'related_problem': e.update(analyse(e['text']))
     return out
 

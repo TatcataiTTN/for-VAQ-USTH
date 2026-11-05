@@ -44,6 +44,22 @@ with sync_playwright() as pw:
         stats = pg.inner_text('#progress'); 
         if '1' not in stats or ('M02' not in stats): bad.append((lang, 'progress panel content', stats[:120]))
         if not pg.evaluate("() => !!document.querySelector('#progress table')"): bad.append((lang, 'progress: no recent results table'))
+        # ---- Lab
+        pg.goto(f'{BASE}{lang}/lab/index.html', wait_until='load'); pg.wait_for_selector('#lab .panel', timeout=10000)
+        txt = lambda sel: pg.inner_text(sel)
+        o = txt('#tool-opamp .laboutput'); t5 = txt('#tool-timer555 .laboutput'); fl = txt('#tool-filter .laboutput'); bn = txt('#tool-binary .laboutput'); rg = txt('#tool-regulator .laboutput')
+        for what, hay, need in (('opamp gain', o, '-22'), ('opamp vout', o, '1.1'), ('opamp bw', o, '45.45'), ('555 f', t5, '4.031'), ('filter fc', fl, '48.2'), ('binary', bn, '1010111'), ('twos complement', bn, '11011011'), ('bcd', bn, '1000 0111'), ('lm317', rg, '14.25')):
+            if need not in hay.replace(',', '.').replace('−', '-'): bad.append((lang, 'lab ' + what, need, hay[:120]))
+        pg.fill('#tool-opamp input >> nth=1', '1k'); pg.fill('#tool-opamp input >> nth=1', '10k')
+        # ---- Analyser
+        pg.goto(f'{BASE}{lang}/analyse/index.html', wait_until='load'); pg.wait_for_selector('#analyser textarea', timeout=20000)
+        pg.fill('#analyser textarea', 'An inverting amplifier has Ri = 10 kΩ and Rf = 220 kΩ. What is the voltage gain and the output for a 50 mV input?'); pg.click('#analyser .btn >> nth=0')
+        pg.wait_for_selector('#analyser .qitem', timeout=5000); nsim = pg.evaluate("() => document.querySelectorAll('#analyser .qitem').length"); mods = pg.evaluate("() => [...document.querySelectorAll('#analyser a.bm-chip')].map(a => a.textContent)")
+        if nsim < 5 or not mods: bad.append((lang, 'analyser matches', nsim, mods))
+        pg.fill('#analyser textarea', 'recipe for chocolate cake with sugar and butter'); pg.click('#analyser .btn >> nth=0'); pg.wait_for_timeout(200)
+        if not pg.evaluate("() => !!document.querySelector('#analyser .callout.warn')"): bad.append((lang, 'analyser did not flag an off-topic question'))
+        pg.fill('#analyser textarea', 'Tính tần số cắt của bộ lọc thông thấp RC với R = 2,2 kΩ và C = 0,0015 μF.'); pg.click('#analyser .btn >> nth=0'); pg.wait_for_timeout(200)
+        if pg.evaluate("() => document.querySelectorAll('#analyser .qitem').length") < 3: bad.append((lang, 'analyser: Vietnamese question found too little'))
         if errs: bad.append((lang, 'console/page errors', errs[:3]))
         print(lang, 'finder total', total, 'jaeger numeric+answer', cnt, 'module+search', cnt2, 'papers', npap, 'saved', saved and saved['score'])
         ctx.close()

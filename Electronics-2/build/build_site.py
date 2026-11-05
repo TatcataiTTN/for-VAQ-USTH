@@ -12,12 +12,12 @@ S = {
             orig='gốc', notes='Nội dung chi tiết', quiz='Tự kiểm tra nhanh (10 câu, ưu tiên câu gốc trong sách)', practice='Luyện tập sâu',
             open_bank='Mở ngân hàng câu hỏi của module', nb='Notebook Jupyter', nb_txt='Tải notebook (đã chạy sẵn, có đầu ra thật):',
             prev='← Module trước', next='Module sau →', soon='Sắp có', openm='Mở bài giảng →', modules='Các module', clo='CLO',
-            prac_title='Luyện tập theo module', exam_title='Luyện đề tổng hợp', src_title='Nguồn tài liệu và bảng đối chiếu', books_title='Bản đồ nội dung sách', ex_title='Tra cứu bài tập có số', wr_title='Luyện viết tay'),
+            prac_title='Luyện tập theo module', exam_title='Luyện đề tổng hợp', src_title='Nguồn tài liệu và bảng đối chiếu', books_title='Bản đồ nội dung sách', ex_title='Tra cứu bài tập có số', wr_title='Luyện viết tay', an_title='Phân tích đề', lab_title='Phòng thí nghiệm'),
  'en': dict(home='Home', objectives='🎯 After this module you will', source='Source', easa='EASA Part-66', time='Time', nq='Questions',
             orig='original', notes='Detailed notes', quiz='Quick self-check (10 questions, textbook originals first)', practice='Deep practice',
             open_bank='Open this module\'s question bank', nb='Jupyter notebook', nb_txt='Download the notebook (already executed, real outputs):',
             prev='← Previous module', next='Next module →', soon='Coming soon', openm='Open lesson →', modules='Modules', clo='CLO',
-            prac_title='Practice by module', exam_title='Mixed mock tests', src_title='Sources and mapping', books_title='Book content map', ex_title='Exercise finder', wr_title='Written practice'),
+            prac_title='Practice by module', exam_title='Mixed mock tests', src_title='Sources and mapping', books_title='Book content map', ex_title='Exercise finder', wr_title='Written practice', an_title='Question analyser', lab_title='Lab'),
 }
 
 def loc(v, lang):
@@ -107,7 +107,7 @@ def main():
             b = banks[m['id']]
             if c: module_page(m, c, b, lang)
             if b: bank_page(m, b, lang)
-        index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); sources_page(lang, banks); books_page(lang); exercises_page(lang); written_pages(lang)
+        index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); sources_page(lang, banks); books_page(lang); exercises_page(lang); written_pages(lang); tool_pages(lang)
     write('index.html', '<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=vi/index.html"><title>AE2.025 Electronics 2</title></head>'
           '<body><p><a href="vi/index.html">Tiếng Việt</a> · <a href="en/index.html">English</a></p></body></html>')
     print('built', sum(1 for v in contents.values() if v), 'module pages')
@@ -131,8 +131,8 @@ def index_page(lang, contents, banks):
         if c: h += f'<a class="mod-card" href="modules/{m["slug"]}/index.html">{inner}<p><b>{s["openm"]}</b></p></a>'
         else: h += f'<div class="mod-card" style="opacity:.5;cursor:default">{inner}<p>{s["soon"]}</p></div>'
     h += '</div>'
-    tools = {'vi': [('Ngân hàng câu hỏi theo module', 'practice/index.html'), ('Đề tính giờ trộn mọi module', 'exam/index.html'), ('Luyện viết tay có đáp án in', 'written/index.html'), ('Tra cứu bài tập có số của cả bốn quyển', 'exercises/index.html'), ('Bản đồ nội dung sách', 'books/index.html'), ('Nguồn và bảng đối chiếu', 'sources/index.html')],
-             'en': [('Practice bank by module', 'practice/index.html'), ('Timed sets mixed from every module', 'exam/index.html'), ('Written practice with printed answers', 'written/index.html'), ('Exercise finder for all four books', 'exercises/index.html'), ('Book content map', 'books/index.html'), ('Sources and coverage', 'sources/index.html')]}[lang]
+    tools = {'vi': [('Ngân hàng câu hỏi theo module', 'practice/index.html'), ('Đề tính giờ trộn mọi module', 'exam/index.html'), ('Luyện viết tay có đáp án in', 'written/index.html'), ('Tra cứu bài tập có số của cả bốn quyển', 'exercises/index.html'), ('Phân tích một câu hỏi: module và bài tương tự trong sách', 'analyse/index.html'), ('Phòng thí nghiệm: máy tính op-amp, lọc, 555, ổn áp, nhị phân', 'lab/index.html'), ('Bản đồ nội dung sách', 'books/index.html'), ('Nguồn và bảng đối chiếu', 'sources/index.html')],
+             'en': [('Practice bank by module', 'practice/index.html'), ('Timed sets mixed from every module', 'exam/index.html'), ('Written practice with printed answers', 'written/index.html'), ('Exercise finder for all four books', 'exercises/index.html'), ('Question analyser: module and similar exercises in the books', 'analyse/index.html'), ('Lab: op-amp, filter, 555, regulator and binary calculators', 'lab/index.html'), ('Book content map', 'books/index.html'), ('Sources and coverage', 'sources/index.html')]}[lang]
     h += '<h2>' + ('Công cụ luyện tập' if lang == 'vi' else 'Practice tools') + '</h2><ul>' + ''.join(f'<li><a href="{u}">{esc(t)}</a></li>' for t, u in tools) + '</ul>'
     mods_json = json.dumps([dict(id=m['id'], title=m[lang], href=f'practice/{m["id"]}.html') for m in MODS], ensure_ascii=False).replace("'", '&#39;')
     h += '<h2>' + ('Tiến độ của bạn' if lang == 'vi' else 'Your progress') + f'</h2><div id="progress" data-mods=\'{mods_json}\'><p class="muted">…</p></div>'
@@ -181,6 +181,13 @@ def exercises_page(lang):
     import exercises_body; importlib.reload(exercises_body)
     write(f'{lang}/exercises/index.html', page(s['ex_title'], exercises_body.exercises_body(lang), lang, 'exercises/index.html', scripts=('exercises.js', 'bookmap.js'),
           desc=('Danh mục mọi bài tập của Floyd, Jaeger và EASA: bài có số, cần hình, đáp án in, thuộc module nào.' if lang == 'vi' else 'Index of every exercise of Floyd, Jaeger and EASA: numeric, figure, printed answer, module.')))
+
+def tool_pages(lang):
+    s = S[lang]; vi = lang == 'vi'
+    h = f'<h1>{s["an_title"]}</h1><p class="lead">' + ('Dán một câu hỏi: hệ thống nhận ra các đại lượng, dạng đề, module phù hợp và các bài giống nhất trong 4.858 bài đã quét của bốn quyển, kèm vị trí trong sách và đáp án in. Câu không khớp bài nào được đánh dấu là nằm ngoài danh mục.' if vi else 'Paste a question: the system finds its quantities, its kind, the best-matching modules and the most similar exercises among the 4,858 scanned from the four books, with the place in the book and the printed answer. A question that matches nothing is flagged as outside the catalogue.') + '</p><div id="analyser" data-src="../../exercises/catalog.json"></div>'
+    write(f'{lang}/analyse/index.html', page(s['an_title'], h, lang, 'analyse/index.html', scripts=('analyse.js',)))
+    h = f'<h1>{s["lab_title"]}</h1><p class="lead">' + ('Máy tính để kiểm bài làm tay: op-amp, decibel, bộ lọc, IC 555, ổn áp LM317, đổi cơ số. Nhập giá trị có hậu tố SI (10k, 2,2k, 0,0015u, 47n, 1M).' if vi else 'Calculators to check your hand work: op-amp, decibel, filters, 555 timer, LM317 regulator, base conversion. Values accept SI suffixes (10k, 2.2k, 0.0015u, 47n, 1M).') + '</p><div id="lab"></div>'
+    write(f'{lang}/lab/index.html', page(s['lab_title'], h, lang, 'lab/index.html', scripts=('lab.js',)))
 
 def written_pages(lang):
     s = S[lang]
