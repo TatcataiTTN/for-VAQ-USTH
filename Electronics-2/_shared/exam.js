@@ -29,6 +29,7 @@ function submit(){
     var ok=ans[qi]===q.correct;if(ok)score++;
     opts[q.correct].classList.add('correct');if(ans[qi]!==undefined&&!ok)opts[ans[qi]].classList.add('wrong');
     var ex=box.querySelector('.explain');ex.innerHTML='';var h=el('div',null,ok?T.ok:(ans[qi]===undefined?T.noAns:T.bad)+(ok?'':LETTERS[q.correct]));h.style.fontWeight='800';ex.appendChild(h);ex.appendChild(document.createTextNode(q.explain));ex.classList.add('show')});
+  try{localStorage.setItem('prog:exam:'+cur,JSON.stringify({t:Date.now(),name:D.sets[cur].name||String(cur+1),score:score,n:set.length,secs:MIN*60-left}))}catch(e){}
   var r=document.getElementById('res');r.textContent=T.result(score,set.length);r.scrollIntoView({behavior:'smooth',block:'center'});
 }
 render();

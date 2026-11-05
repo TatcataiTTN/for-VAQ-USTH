@@ -1,0 +1,77 @@
+"""Merge the scans of Floyd, Jaeger, EASA (and SERVO: it has no exercises) into data/numeric/catalog.json.
+Each entry: id, book, kind, chapter, section, number, pdf, printed, text, answer, nq (quantities with units), numeric, figure, sim, module(s), in_site(modules), cls.
+cls: in_site | ready (mapped, numeric, no figure, no simulator) | figure | simulation | conceptual | outside (belongs to no module of AE2.025).
+Run: python3 -I build/numeric/scan_jaeger.py && scan_floyd.py && scan_easa.py && scan_all.py"""
+import re, os, sys, json, collections
+sys.path.insert(0, os.path.dirname(__file__))
+from common import *
+M = load_map()
+
+def load(name): return json.load(open(os.path.join(OUT, name), encoding='utf-8'))
+raw = load('floyd_raw.json') + load('jaeger_raw.json') + load('easa_raw.json')
+FANS = {int(c): {int(n): t for n, t in d.items()} for c, d in load('floyd_answers.json').items()}      # printed answers of the odd Floyd problems
+
+# ---- module of each entry
+FLOYD_CH = {12: 'm02', 13: 'm03', 14: 'm05', 15: 'm06', 16: 'm07', 17: 'm08'}
+jsec = {s['num']: [m for m, r in s['mods'].items()] for c in M['jaeger5']['chapters'] for s in c['sections'] if s['num']}
+# ---- what the banks already hold
+held = collections.defaultdict(set)
+KMAP = {'Self-Test': 'selftest', 'True/False Quiz': 'truefalse', 'Circuit-Action Quiz': 'circuit_action', 'Problem': 'problem'}
+for mid in ['m%02d' % i for i in range(1, 11)]:
+    b = json.load(open(os.path.join(ROOT, 'data', 'qbank', mid + '.json'), encoding='utf-8'))
+    for it in b['items'] + b.get('essays', []):
+        s = it['src']['en'] if isinstance(it['src'], dict) else it['src']
+        m = re.match(r'^Floyd 9e, Ch\.(\d+), (Self-Test|True/False Quiz|Circuit-Action Quiz|Problem) (?:Q)?(\d+)\b', s)
+        if m: held[('floyd', int(m[1]), KMAP[m[2]], m[3])].add(mid)
+        m = re.match(r'^EASA M04 SM0?\d, Question (\d+-\d+)\b', s)
+        if m: held[('easa', 0, 'question', m[1])].add(mid)
+
+def modules_of(e):
+    b, k, n, sec = e['book'], e['kind'], e['chapter'], e['section']
+    if b == 'floyd':
+        if n in FLOYD_CH: return [FLOYD_CH[n]]
+        if n in (6, 7):
+            if sec in ('6–6', '7–2', '7–3') or (n == 7 and k in ('truefalse', 'circuit_action', 'selftest', 'problem', 'related_problem') and sec in (None, '7–2', '7–3', '7–1') and False): return ['m04']
+        return []
+    if b == 'jaeger5':
+        return jsec.get(sec, []) if sec else []
+    if b == 'easa':
+        if n == 1: return ['m01'] if int(e['number'].split('-')[1]) >= 23 else []
+        return ['m09'] if n == 2 else ['m10']
+    return []
+
+cat = []
+for e in raw:
+    e = dict(e); b = e['book']
+    if b == 'floyd' and e['kind'] == 'problem' and e['number'].isdigit(): e['answer'] = FANS.get(e['chapter'], {}).get(int(e['number']))
+    e['modules'] = modules_of(e)
+    key = (b, e['chapter'] if b == 'floyd' else 0, e['kind'], e['number'])
+    e['in_site'] = sorted(held.get(key, []))
+    if b == 'floyd' and e['chapter'] in (6, 7) and e['in_site']: e['modules'] = sorted(set(e['modules']) | set(e['in_site']))
+    cat.append(e)
+
+def cls(e):
+    if e['in_site']: return 'in_site'
+    if not e['modules']: return 'outside'
+    if e.get('sim'): return 'simulation'
+    if not e['numeric']: return 'conceptual'
+    if e.get('figure'): return 'figure'
+    return 'ready'
+for i, e in enumerate(cat):
+    e['id'] = f"{e['book']}-{e['kind']}-{e['chapter']}-{e['number'] or i}-{i}"; e['cls'] = cls(e)
+
+json.dump(cat, open(os.path.join(OUT, 'catalog.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
+# ---- summary
+C = collections.Counter
+by = collections.defaultdict(lambda: C())
+for e in cat:
+    k = (e['book'], e['kind']); by[k]['total'] += 1; by[k]['numeric'] += e['numeric']; by[k]['figure'] += bool(e.get('figure')); by[k]['answer'] += bool(e['answer']); by[k]['mapped'] += bool(e['modules']); by[k]['in_site'] += bool(e['in_site']); by[k]['ready'] += e['cls'] == 'ready'
+print(f"{'book / kind':28s} total numeric figure answer mapped in_site ready")
+for k, v in sorted(by.items()): print(f"{k[0] + ' / ' + k[1]:28s} {v['total']:5d} {v['numeric']:7d} {v['figure']:6d} {v['answer']:6d} {v['mapped']:6d} {v['in_site']:7d} {v['ready']:5d}")
+print('TOTAL entries', len(cat), '| numeric', sum(e['numeric'] for e in cat))
+pm = collections.defaultdict(C)
+for e in cat:
+    for m in e['modules']: pm[m]['mapped'] += 1; pm[m][e['cls']] += 1; pm[m]['numeric'] += e['numeric']
+print('per module:')
+for m in sorted(pm): print(' ', m, dict(pm[m]))
+json.dump({'by_kind': {f'{k[0]}/{k[1]}': dict(v) for k, v in by.items()}, 'per_module': {m: dict(v) for m, v in pm.items()}, 'total': len(cat)}, open(os.path.join(OUT, 'summary.json'), 'w'), indent=1)

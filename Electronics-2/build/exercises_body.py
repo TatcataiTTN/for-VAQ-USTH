@@ -1,0 +1,56 @@
+"""Bodies of the 'Exercise finder' page and of the Written Practice hub (vi / en). Numbers come from data/numeric/summary.json (build/numeric/scan_all.py)."""
+import os, json
+from hx import esc, table, callout, ul
+from modules import MODS
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+KIND = {'vi': {'exercise': 'Exercise (khung trong bài, có ANSWERS in sẵn)', 'example': 'Example (ví dụ có lời giải)', 'problem': 'Problem (bài cuối chương)', 'related_problem': 'Related Problem (bài tương tự sau ví dụ)',
+               'selftest': 'Self-Test', 'truefalse': 'True/False Quiz', 'circuit_action': 'Circuit-Action Quiz', 'question': 'Câu hỏi EASA (có đáp án in)'},
+        'en': {'exercise': 'Exercise (in-text box with printed ANSWERS)', 'example': 'Example (worked)', 'problem': 'Problem (end of chapter)', 'related_problem': 'Related Problem (after an example)',
+               'selftest': 'Self-Test', 'truefalse': 'True/False Quiz', 'circuit_action': 'Circuit-Action Quiz', 'question': 'EASA question (printed answer)'}}
+BOOK = {'floyd': 'Floyd 9e', 'jaeger5': 'Jaeger 5e', 'easa': 'EASA M04'}
+
+def summary(): return json.load(open(os.path.join(ROOT, 'data', 'numeric', 'summary.json'), encoding='utf-8'))
+
+def exercises_body(lang):
+    vi = lang == 'vi'; S = summary(); bk = S['by_kind']
+    h = '<h1>' + ('Tra cứu bài tập có số' if vi else 'Exercise finder (numeric problems)') + '</h1>'
+    tot = sum(v['total'] for v in bk.values()); num = sum(v['numeric'] for v in bk.values()); ans = sum(v['answer'] for v in bk.values())
+    h += '<p class="lead">' + (f'Đã quét TOÀN BỘ bài tập của bốn quyển trong thư mục tài liệu: {tot:,} mục, trong đó {num:,} mục có số liệu và {ans:,} mục có đáp án in sẵn trong sách. Mỗi mục ghi rõ vị trí (chương, mục, trang in, trang PDF), có số hay không, có cần hình hay mô phỏng không, thuộc module nào và site đã có chưa.'
+                              if vi else f'Every exercise of the four books in the source folder has been scanned: {tot:,} items, {num:,} of them with numbers and {ans:,} with an answer printed in the book. Each item shows where it is (chapter, section, printed page, PDF page), whether it has numbers, needs a figure or a simulator, which module it belongs to and whether the site already has it.') + '</p>'
+    rows = []
+    for k, v in sorted(bk.items()):
+        b, kind = k.split('/')
+        rows.append([BOOK[b], esc(KIND[lang].get(kind, kind)), f"{v['total']:,}", f"{v['numeric']:,}", f"{v['figure']:,}", f"{v['answer']:,}", f"{v['mapped']:,}", f"{v['in_site']:,}"])
+    head = ['Sách', 'Loại', 'Tổng', 'Có số', 'Cần hình', 'Đáp án in', 'Thuộc module', 'Đã có trên site'] if vi else ['Book', 'Type', 'Total', 'Numeric', 'Figure', 'Printed answer', 'In a module', 'On the site']
+    h += table(head, rows, 'left')
+    h += callout('info', 'Cách đọc' if vi else 'How to read', ul([
+        ('“Có số” nghĩa là đề có ít nhất một đại lượng kèm đơn vị (V, mA, kΩ, Hz, dB…) hoặc ≥ 3 số; “cần hình” là đề nhắc Hình/Bảng trong sách; “cần mô phỏng” là đề đòi SPICE/MATLAB…' if vi else
+         '“Numeric” means at least one quantity with a unit (V, mA, kΩ, Hz, dB…) or three or more numbers; “figure” means the statement refers to a Figure/Table in the book; “simulator” means it asks for SPICE/MATLAB…'),
+        ('Đề Floyd lấy từ lớp chữ của PDF nên công thức nhúng trong dòng có thể thiếu ký hiệu: đây là chỉ mục để tìm bài, hãy đọc đề gốc ở trang đã ghi. Đề Jaeger đã dựng lại số mũ (10^6 không bị dính thành 106).' if vi else
+         'Floyd statements come from the PDF text layer, so inline mathematics may lose symbols: this is an index to find the exercise, read the original at the page given. Jaeger statements have their exponents rebuilt (10^6 is not flattened to 106).'),
+        ('Chỉ trích ngắn (khoảng 190 ký tự) để nhận diện bài; đáp án in là đáp án của sách (chỉ kết quả cuối).' if vi else 'Only a short snippet (about 190 characters) is shown to identify the exercise; the printed answer is the book\'s (final result only).'),
+    ]))
+    # per module: how many numeric exercises are ready to be added / already on the site
+    pm = S['per_module']; rows = []
+    for m in MODS:
+        v = pm.get(m['id'], {})
+        rows.append([m['id'][1:], esc(m[lang]), v.get('mapped', 0), v.get('numeric', 0), v.get('in_site', 0), v.get('ready', 0), v.get('figure', 0), v.get('simulation', 0), v.get('conceptual', 0)])
+    head2 = ['#', 'Module', 'Bài thuộc module', 'Có số', 'Đã có trên site', 'Sẵn sàng thêm', 'Cần hình', 'Cần mô phỏng', 'Lý thuyết'] if vi else ['#', 'Module', 'Exercises in module', 'Numeric', 'On the site', 'Ready to add', 'Figure', 'Simulator', 'Conceptual']
+    h += '<h2>' + ('Theo module' if vi else 'By module') + '</h2>' + table(head2, rows, 'left')
+    h += '<h2>' + ('Danh mục đầy đủ' if vi else 'Full index') + '</h2><div id="exfind" data-src="../../exercises/catalog.json"></div>'
+    return h
+
+def written_body(lang):
+    vi = lang == 'vi'
+    h = '<h1>' + ('Luyện viết tay (Written Practice)' if vi else 'Written Practice') + '</h1>'
+    h += '<p class="lead">' + ('Bài tập có số từ chính sách giáo trình, có đáp án in sẵn. Làm như đi thi (đồng hồ, chỉ hiện đề), rồi tự chấm từng bài; hoặc học với đáp án. Kết quả lưu trong trình duyệt và hiện ở bảng tiến độ trên trang chủ.'
+                              if vi else 'Numeric exercises from the textbooks themselves, each with its printed answer. Take a paper as an exam (timer, statements only) and mark yourself exercise by exercise, or study with the answers. Results are kept in this browser and feed the progress panel on the home page.') + '</p>'
+    h += callout('info', 'Quy trình' if vi else 'Workflow', ul([
+        ('1) Làm một đề như đi thi. 2) Tự chấm từng bài so với đáp án in. 3) Làm lại những bài mất điểm ở chế độ học, rồi luyện thêm ở Ngân hàng câu hỏi.' if vi else '1) Take a paper as an exam. 2) Mark yourself against the printed answers. 3) Redo the lost exercises in study mode, then drill more in the Practice bank.'),
+        ('Đáp án là kết quả cuối in trong sách; cách làm bạn tự viết ra. Bài ghi “cần hình” dùng hình vẽ của sách ở trang đã nêu.' if vi else 'The answer is the final result printed in the book; you write the working yourself. Exercises marked “figure needed” use the book\'s figure at the page given.'),
+    ]))
+    h += '<div id="written-hub" data-src="../../written/papers.json"><p class="muted">…</p></div>'
+    return h
+
+def written_paper_body(lang):
+    return '<div id="written" data-src="../../written/papers.json"><p class="muted">…</p></div>'
