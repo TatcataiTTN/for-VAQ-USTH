@@ -1,0 +1,288 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Describe how printed circuit board traces are made.",
+   "vi": "Mô tả cách tạo các đường dẫn trên PCB."
+  },
+  "sol": {
+   "en": "Copper foil is bonded to the surface of the pre-preg board in a heat press operation. The circuit traces are applied as a pattern using etch-resistive ink. Then the unwanted copper is etched away using a photosensitive chemical process (ammonium persulfate or ferric chloride), leaving only the conductive pathways, called traces.",
+   "vi": "Lá đồng được dán lên bề mặt tấm pre-preg bằng ép nhiệt. Hình đường dẫn được tạo bằng mực chống ăn mòn. Sau đó đồng thừa bị ăn mòn bằng quá trình hóa học nhạy sáng (amoni persunfat hoặc sắt clorua), chỉ còn các đường dẫn điện gọi là traces."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB construction and materials",
+   "vi": "Cấu tạo và vật liệu PCB"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-1 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-1 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the difference between single-layer boards and double-layer boards?",
+   "vi": "Khác biệt giữa PCB một lớp và hai lớp là gì?"
+  },
+  "sol": {
+   "en": "Single-layer boards have the copper-foil traces on one side and the components on the opposite side. Double-layer boards have circuit traces on both sides and can also have components mounted on both sides.",
+   "vi": "PCB một lớp có đường đồng ở một mặt và linh kiện ở mặt đối diện. PCB hai lớp có đường dẫn ở cả hai mặt và cũng có thể gắn linh kiện ở cả hai mặt."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB construction and materials",
+   "vi": "Cấu tạo và vật liệu PCB"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-2 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-2 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What are the advantages of plated-through holes?",
+   "vi": "Ưu điểm của lỗ xuyên mạ là gì?"
+  },
+  "sol": {
+   "en": "The difference from non-plated holes is the presence of copper inside the insulating board material. Plated through holes have less resistivity at the joint and provide a degree of mechanical stiffness.",
+   "vi": "Khác với lỗ không mạ là có đồng bên trong vật liệu cách điện. Lỗ xuyên mạ có điện trở suất thấp hơn tại mối nối và tăng độ cứng cơ học."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Mounting technologies and soldering",
+   "vi": "Công nghệ lắp linh kiện và hàn"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-3 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-3 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Describe surface mount technology components.",
+   "vi": "Mô tả linh kiện công nghệ dán bề mặt."
+  },
+  "sol": {
+   "en": "Instead of placing component leads through holes, surface-mount components are placed on the same side as the copper traces and small leads that lie flat are soldered to copper pads, which give both electrical connection and mechanical rigidity. SMT allows more components on the same PCB because both sides can be used. Ball Grid Arrays replace the leads with small solder balls on the bottom of the component.",
+   "vi": "Thay vì cho chân xuyên lỗ, linh kiện dán bề mặt đặt cùng mặt với đường đồng và các chân nhỏ nằm phẳng được hàn vào chân đồng, vừa nối điện vừa tạo độ cứng cơ học. SMT cho nhiều linh kiện hơn trên cùng PCB vì dùng được cả hai mặt. BGA thay chân bằng các viên thiếc nhỏ ở đáy linh kiện."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Mounting technologies and soldering",
+   "vi": "Công nghệ lắp linh kiện và hàn"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-4 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-4 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "How do the soldering techniques differ for through-hole technology components versus surface mount technology components?",
+   "vi": "Kỹ thuật hàn khác nhau thế nào giữa linh kiện lỗ xuyên và linh kiện dán bề mặt?"
+  },
+  "sol": {
+   "en": "Through-hole: the board moves on a conveyor and is dipped in molten tin-lead solder; solder is sucked up through the plated-through holes to form the joints (flow soldering). Surface mount: solder paste is applied to the copper pads and a reflow oven melts it to form the joints (reflow soldering).",
+   "vi": "Lỗ xuyên: bo di chuyển trên băng tải và nhúng vào thiếc chì nóng chảy; thiếc dâng lên qua lỗ xuyên mạ tạo mối hàn (hàn flow). Dán bề mặt: phết kem hàn lên chân đồng và lò reflow làm chảy để tạo mối hàn (hàn reflow)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Mounting technologies and soldering",
+   "vi": "Công nghệ lắp linh kiện và hàn"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-5 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-5 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "Describe the three different types of vias used in multi-layer boards.",
+   "vi": "Mô tả ba loại via dùng trong PCB nhiều lớp."
+  },
+  "sol": {
+   "en": "A through-hole via consists of a conductive tube and two pads at the ends of the barrel connected to the circuit trace. Blind vias are exposed to only one side of the board. Buried vias connect internal layers without being exposed to either surface.",
+   "vi": "Via xuyên gồm ống dẫn điện và hai chân ở hai đầu nối với đường dẫn. Via mù chỉ lộ ra một mặt của bo. Via chôn nối các lớp bên trong mà không lộ ra mặt nào."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Multilayer boards and vias",
+   "vi": "PCB nhiều lớp và via"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-6 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-6 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What causes static electricity and electrostatic induction?",
+   "vi": "Điều gì gây ra tĩnh điện và cảm ứng tĩnh điện?"
+  },
+  "sol": {
+   "en": "Static electricity is caused by friction (walking on carpet gives 1 500 V at 65 % RH and up to 35 000 V at 20 % RH). Electrostatic induction occurs when a charged object induces the redistribution of charges in another object.",
+   "vi": "Tĩnh điện do ma sát (đi trên thảm tạo 1 500 V ở 65 % RH và tới 35 000 V ở 20 % RH). Cảm ứng tĩnh điện xảy ra khi một vật tích điện làm phân bố lại điện tích trong vật khác."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Static electricity and ESD",
+   "vi": "Tĩnh điện và ESD"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-7 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-7 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is Electro-Static Discharge (ESD) and how can it damage electronic components?",
+   "vi": "ESD là gì và nó làm hỏng linh kiện điện tử như thế nào?"
+  },
+  "sol": {
+   "en": "ESD is the transfer of electrostatic charge between bodies at different potentials by direct contact or induced by an electrostatic field. When a charged component is suddenly grounded the charge dissipates to ground, but the component is damaged by excessive heat and/or breakdown of its dielectric material.",
+   "vi": "ESD là sự truyền điện tích tĩnh giữa các vật có điện thế khác nhau do tiếp xúc trực tiếp hoặc do điện trường tĩnh cảm ứng. Khi linh kiện tích điện bị nối đất đột ngột, điện tích xả xuống đất nhưng làm hỏng linh kiện do nhiệt quá mức và/hoặc đánh thủng điện môi."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Static electricity and ESD",
+   "vi": "Tĩnh điện và ESD"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-8 (p.2.11), printed answer p.2.12",
+   "vi": "EASA M04 SM02, Câu hỏi 2-8 (tr.2.11), đáp án in tr.2.12"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "How susceptible are electronic components to damage from ESD?",
+   "vi": "Linh kiện điện tử nhạy với hư hỏng do ESD đến mức nào?"
+  },
+  "sol": {
+   "en": "Bipolar transistors are susceptible between 380 and 7 000 V; CMOS devices between 250 and 3 000 V; EPROMs used in computer memories as low as 100 V.",
+   "vi": "Transistor lưỡng cực nhạy trong khoảng 380–7 000 V; linh kiện CMOS 250–3 000 V; EPROM dùng trong bộ nhớ máy tính nhạy tới mức thấp 100 V."
+  },
+  "level": 2,
+  "topic": {
+   "en": "Static electricity and ESD",
+   "vi": "Tĩnh điện và ESD"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-9 (p.2.13), printed answer p.2.14",
+   "vi": "EASA M04 SM02, Câu hỏi 2-9 (tr.2.13), đáp án in tr.2.14"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What precautions must be taken when working in an ESD controlled environment?",
+   "vi": "Cần có những biện pháp phòng ngừa nào khi làm việc trong môi trường kiểm soát ESD?"
+  },
+  "sol": {
+   "en": "Insulating materials (nylon, mylar, vinyl, rubber, mica, ceramics, fibreglass, wood, styrofoam, plastic) store static and must be kept out of the work area. Technicians should enter wearing anti-static (steel mesh) smocks and conductive (leather-soled) footwear.",
+   "vi": "Các vật liệu cách điện (nylon, mylar, vinyl, cao su, mica, gốm, sợi thủy tinh, gỗ, xốp, nhựa) tích tĩnh điện và phải để ngoài khu làm việc. Kỹ thuật viên cần mặc áo chống tĩnh điện (lưới thép) và giày dẫn điện (đế da)."
+  },
+  "level": 2,
+  "topic": {
+   "en": "ESD protection and handling",
+   "vi": "Chống ESD và thao tác"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-10 (p.2.13), printed answer p.2.14",
+   "vi": "EASA M04 SM02, Câu hỏi 2-10 (tr.2.13), đáp án in tr.2.14"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "How does one maintain a static-free workstation?",
+   "vi": "Làm thế nào để duy trì bàn làm việc không có tĩnh điện?"
+  },
+  "sol": {
+   "en": "The work station should have a static-dissipative floor mat and table-top mat connected through a 1 megohm resistor to a common ground point. The wrist strap must be secure around the wrist at all times while seated, and its coil cord plugged into a receptacle with a 1 megohm resistor to the same common ground point.",
+   "vi": "Bàn làm việc cần thảm sàn và thảm mặt bàn tiêu tán tĩnh điện, nối qua điện trở 1 megaohm tới một điểm đất chung. Dây đeo cổ tay phải đeo chắc suốt thời gian ngồi và dây xoắn cắm vào ổ có điện trở 1 megaohm tới cùng điểm đất chung."
+  },
+  "level": 2,
+  "topic": {
+   "en": "ESD protection and handling",
+   "vi": "Chống ESD và thao tác"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-11 (p.2.13), printed answer p.2.14",
+   "vi": "EASA M04 SM02, Câu hỏi 2-11 (tr.2.13), đáp án in tr.2.14"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What is the reason for using ionizers?",
+   "vi": "Lý do dùng máy ion hóa là gì?"
+  },
+  "sol": {
+   "en": "A controlled environment should have ionizers to neutralize charged insulators found in the work environment: an air stream containing both positive and negative ions neutralizes a charged surface, which stays neutral while the ion stream is present.",
+   "vi": "Môi trường kiểm soát cần máy ion hóa để trung hòa các chất cách điện tích điện: dòng khí chứa cả ion dương và âm trung hòa bề mặt tích điện, và bề mặt giữ trung hòa chừng nào dòng ion còn."
+  },
+  "level": 2,
+  "topic": {
+   "en": "ESD protection and handling",
+   "vi": "Chống ESD và thao tác"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-12 (p.2.13), printed answer p.2.14",
+   "vi": "EASA M04 SM02, Câu hỏi 2-12 (tr.2.13), đáp án in tr.2.14"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "en": "What precautions should be used when handling ESD sensitive components?",
+   "vi": "Cần lưu ý gì khi thao tác với linh kiện nhạy ESD?"
+  },
+  "sol": {
+   "en": "Transport them in a closed conductive container stored on a grounded rack that touches the grounded table mat at the work station; discharge body charge with the grounded wrist strap before opening it; package components in electrostatic-shielded conductive bags; use a grounded soldering iron.",
+   "vi": "Vận chuyển trong hộp dẫn điện kín, để trên giá nối đất và chạm thảm bàn nối đất tại bàn làm việc; xả điện tích cơ thể bằng dây đeo cổ tay nối đất trước khi mở; đóng gói trong túi dẫn điện chắn tĩnh điện; dùng mỏ hàn nối đất."
+  },
+  "level": 2,
+  "topic": {
+   "en": "ESD protection and handling",
+   "vi": "Chống ESD và thao tác"
+  },
+  "src": {
+   "en": "EASA M04 SM02, Question 2-13 (p.2.13), printed answer p.2.14",
+   "vi": "EASA M04 SM02, Câu hỏi 2-13 (tr.2.13), đáp án in tr.2.14"
+  },
+  "origin": "goc",
+  "check": "EASA printed answer"
+ }
+]

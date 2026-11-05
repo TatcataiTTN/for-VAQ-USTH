@@ -357,5 +357,34 @@
     "correct_is_longest": 0.333
    }
   }
+ },
+ "m09": {
+  "n": 89,
+  "n_goc": 0,
+  "n_bo_sung": 89,
+  "essays": 13,
+  "essays_goc": 13,
+  "audit": {
+   "mcq/4opt": {
+    "n": 68,
+    "pos": [
+     17,
+     17,
+     17,
+     17
+    ],
+    "chi2": 0.0,
+    "correct_is_longest": 0.09
+   },
+   "tf/2opt": {
+    "n": 21,
+    "pos": [
+     11,
+     10
+    ],
+    "chi2": 0.05,
+    "correct_is_longest": 0.476
+   }
+  }
  }
 }

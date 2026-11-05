@@ -1,0 +1,12 @@
+{"vi":["EASA M04 không có câu trắc nghiệm: 13 câu hỏi mở 2-1…2-13 được đưa vào dạng bài có lời giải (đáp án in sẵn của sách). Các câu trắc nghiệm/đúng-sai là câu BỔ SUNG, rút từ nội dung và mỗi câu đều được script đối chiếu với văn bản trang EASA tương ứng (data/verify/m09_evidence.json).",
+"Tr.2.7 (PDF 94) in «surface resistivity of 105 to 1012 ohms per square inch»: ảnh trang cho thấy sách tự in như vậy (mất số mũ, có lẽ là 10⁵–10¹²); số này không dùng trong câu hỏi.",
+"Tr.2.5 (PDF 92): câu «any circuit trace smaller than 30 square centimeters can cause radio frequency coupling interference at 100 MHz» diễn đạt khó hiểu nên không dùng.",
+"Đáp án 2-5 ghi «tin-lead solder» trong khi phần nội dung ghi «tin solder»; câu hỏi dùng cách diễn đạt «thiếc nóng chảy».",
+"Hình 2-10: nhãn (1) via xuyên, (2) via mù, (3) via chôn theo đoạn văn trang 92.",
+"Floyd Application Activities (bố trí mạch in) chưa được đọc nên không trích."],
+"en":["EASA M04 has no multiple-choice items: the 13 open questions 2-1…2-13 are included as worked items (the book’s printed answers). The multiple-choice and true/false items are GENERATED from the text and each one is checked by script against the matching EASA page (data/verify/m09_evidence.json).",
+"p.2.7 (PDF 94) prints “surface resistivity of 105 to 1012 ohms per square inch”: the page image shows the book itself prints it that way (exponents lost, probably 10⁵–10¹²); the figure is not used in any question.",
+"p.2.5 (PDF 92): the sentence “any circuit trace smaller than 30 square centimeters can cause radio frequency coupling interference at 100 MHz” is unclear and is not used.",
+"Answer 2-5 says “tin-lead solder” while the body text says “tin solder”; the questions use “molten solder”.",
+"Fig. 2-10: labels (1) through-hole via, (2) blind via, (3) buried via per the text on page 92.",
+"Floyd Application Activities (circuit-board layout) were not read and are not cited."]}

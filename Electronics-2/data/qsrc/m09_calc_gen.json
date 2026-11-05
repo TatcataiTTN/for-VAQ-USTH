@@ -1,0 +1,506 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A copper trace is 100 mm long, 0.25 mm wide and 35 μm thick (ρ = 1.68×10⁻⁸ Ω·m). What is its resistance?",
+   "vi": "Một đường đồng dài 100 mm, rộng 0.25 mm, dày 35 μm (ρ = 1,68×10⁻⁸ Ω·m). Điện trở của nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.000192 Ω",
+    "vi": "0.000192 Ω"
+   },
+   {
+    "en": "192 Ω",
+    "vi": "192 Ω"
+   },
+   {
+    "en": "0.384 Ω",
+    "vi": "0.384 Ω"
+   },
+   {
+    "en": "0.192 Ω",
+    "vi": "0.192 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "R = ρL/(w·t) = 1.68e-8 × 100 mm / (0.25 mm × 35 μm) = 0.192 Ω.",
+   "vi": "R = ρL/(w·t) = 1,68e-8 × 100 mm / (0.25 mm × 35 μm) = 0.192 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A copper trace is 50 mm long, 0.5 mm wide and 35 μm thick (ρ = 1.68×10⁻⁸ Ω·m). What is its resistance?",
+   "vi": "Một đường đồng dài 50 mm, rộng 0.5 mm, dày 35 μm (ρ = 1,68×10⁻⁸ Ω·m). Điện trở của nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.096 Ω",
+    "vi": "0.096 Ω"
+   },
+   {
+    "en": "4.8e-05 Ω",
+    "vi": "4.8e-05 Ω"
+   },
+   {
+    "en": "48 Ω",
+    "vi": "48 Ω"
+   },
+   {
+    "en": "0.048 Ω",
+    "vi": "0.048 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "R = ρL/(w·t) = 1.68e-8 × 50 mm / (0.5 mm × 35 μm) = 0.048 Ω.",
+   "vi": "R = ρL/(w·t) = 1,68e-8 × 50 mm / (0.5 mm × 35 μm) = 0.048 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A copper trace is 200 mm long, 0.3 mm wide and 70 μm thick (ρ = 1.68×10⁻⁸ Ω·m). What is its resistance?",
+   "vi": "Một đường đồng dài 200 mm, rộng 0.3 mm, dày 70 μm (ρ = 1,68×10⁻⁸ Ω·m). Điện trở của nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.00016 Ω",
+    "vi": "0.00016 Ω"
+   },
+   {
+    "en": "160 Ω",
+    "vi": "160 Ω"
+   },
+   {
+    "en": "0.32 Ω",
+    "vi": "0.32 Ω"
+   },
+   {
+    "en": "0.16 Ω",
+    "vi": "0.16 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "R = ρL/(w·t) = 1.68e-8 × 200 mm / (0.3 mm × 70 μm) = 0.16 Ω.",
+   "vi": "R = ρL/(w·t) = 1,68e-8 × 200 mm / (0.3 mm × 70 μm) = 0.16 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A copper trace is 25 mm long, 0.15 mm wide and 35 μm thick (ρ = 1.68×10⁻⁸ Ω·m). What is its resistance?",
+   "vi": "Một đường đồng dài 25 mm, rộng 0.15 mm, dày 35 μm (ρ = 1,68×10⁻⁸ Ω·m). Điện trở của nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "8e-05 Ω",
+    "vi": "8e-05 Ω"
+   },
+   {
+    "en": "80 Ω",
+    "vi": "80 Ω"
+   },
+   {
+    "en": "0.16 Ω",
+    "vi": "0.16 Ω"
+   },
+   {
+    "en": "0.08 Ω",
+    "vi": "0.08 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "R = ρL/(w·t) = 1.68e-8 × 25 mm / (0.15 mm × 35 μm) = 0.08 Ω.",
+   "vi": "R = ρL/(w·t) = 1,68e-8 × 25 mm / (0.15 mm × 35 μm) = 0.08 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A copper trace is 150 mm long, 1.0 mm wide and 35 μm thick (ρ = 1.68×10⁻⁸ Ω·m). What is its resistance?",
+   "vi": "Một đường đồng dài 150 mm, rộng 1.0 mm, dày 35 μm (ρ = 1,68×10⁻⁸ Ω·m). Điện trở của nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.072 Ω",
+    "vi": "0.072 Ω"
+   },
+   {
+    "en": "7.2e-05 Ω",
+    "vi": "7.2e-05 Ω"
+   },
+   {
+    "en": "72 Ω",
+    "vi": "72 Ω"
+   },
+   {
+    "en": "0.144 Ω",
+    "vi": "0.144 Ω"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "R = ρL/(w·t) = 1.68e-8 × 150 mm / (1.0 mm × 35 μm) = 0.072 Ω.",
+   "vi": "R = ρL/(w·t) = 1,68e-8 × 150 mm / (1.0 mm × 35 μm) = 0.072 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A copper trace is 80 mm long, 0.2 mm wide and 18 μm thick (ρ = 1.68×10⁻⁸ Ω·m). What is its resistance?",
+   "vi": "Một đường đồng dài 80 mm, rộng 0.2 mm, dày 18 μm (ρ = 1,68×10⁻⁸ Ω·m). Điện trở của nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.747 Ω",
+    "vi": "0.747 Ω"
+   },
+   {
+    "en": "373 Ω",
+    "vi": "373 Ω"
+   },
+   {
+    "en": "0.000373 Ω",
+    "vi": "0.000373 Ω"
+   },
+   {
+    "en": "0.373 Ω",
+    "vi": "0.373 Ω"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "R = ρL/(w·t) = 1.68e-8 × 80 mm / (0.2 mm × 18 μm) = 0.373 Ω.",
+   "vi": "R = ρL/(w·t) = 1,68e-8 × 80 mm / (0.2 mm × 18 μm) = 0.373 Ω."
+  },
+  "level": 2,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A 100 mm × 0.25 mm × 35 μm copper trace carries 1.0 A. What is the voltage drop along it?",
+   "vi": "Đường đồng 100 mm × 0.25 mm × 35 μm mang dòng 1.0 A. Sụt áp dọc theo nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "192,000 mV",
+    "vi": "192,000 mV"
+   },
+   {
+    "en": "5210 mV",
+    "vi": "5210 mV"
+   },
+   {
+    "en": "384 mV",
+    "vi": "384 mV"
+   },
+   {
+    "en": "192 mV",
+    "vi": "192 mV"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "en": "R = 0.192 Ω; V = I·R = 1.0 × 0.192 = 192 mV.",
+   "vi": "R = 0.192 Ω; V = I·R = 1.0 × 0.192 = 192 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A 50 mm × 0.5 mm × 35 μm copper trace carries 2.0 A. What is the voltage drop along it?",
+   "vi": "Đường đồng 50 mm × 0.5 mm × 35 μm mang dòng 2.0 A. Sụt áp dọc theo nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.096 mV",
+    "vi": "0.096 mV"
+   },
+   {
+    "en": "96 mV",
+    "vi": "96 mV"
+   },
+   {
+    "en": "41,700 mV",
+    "vi": "41,700 mV"
+   },
+   {
+    "en": "192 mV",
+    "vi": "192 mV"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "R = 0.048 Ω; V = I·R = 2.0 × 0.048 = 96 mV.",
+   "vi": "R = 0.048 Ω; V = I·R = 2.0 × 0.048 = 96 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "A 200 mm × 0.3 mm × 70 μm copper trace carries 0.5 A. What is the voltage drop along it?",
+   "vi": "Đường đồng 200 mm × 0.3 mm × 70 μm mang dòng 0.5 A. Sụt áp dọc theo nó là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "0.08 mV",
+    "vi": "0.08 mV"
+   },
+   {
+    "en": "80 mV",
+    "vi": "80 mV"
+   },
+   {
+    "en": "160 mV",
+    "vi": "160 mV"
+   },
+   {
+    "en": "80,000 mV",
+    "vi": "80,000 mV"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "en": "R = 0.16 Ω; V = I·R = 0.5 × 0.16 = 80 mV.",
+   "vi": "R = 0.16 Ω; V = I·R = 0.5 × 0.16 = 80 mV."
+  },
+  "level": 3,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two parallel copper areas of 1.0 cm² on adjacent layers are separated by 0.2 mm of FR-4 (εr = 4.5). What is the capacitance between them?",
+   "vi": "Hai vùng đồng song song 1.0 cm² ở hai lớp liền kề cách nhau 0.2 mm FR-4 (εr = 4.5). Điện dung giữa chúng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "19.9 pF",
+    "vi": "19.9 pF"
+   },
+   {
+    "en": "0.0199 pF",
+    "vi": "0.0199 pF"
+   },
+   {
+    "en": "19,900 pF",
+    "vi": "19,900 pF"
+   },
+   {
+    "en": "4.43 pF",
+    "vi": "4.43 pF"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "en": "C = ε0·εr·A/d = 8.854e-12 × 4.5 × 1.0 cm² / 0.2 mm = 19.9 pF — a source of the unintended coupling the text warns about.",
+   "vi": "C = ε0·εr·A/d = 8,854e-12 × 4.5 × 1.0 cm² / 0.2 mm = 19.9 pF — nguồn của ghép ký sinh mà sách cảnh báo."
+  },
+  "level": 3,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two parallel copper areas of 4.0 cm² on adjacent layers are separated by 0.1 mm of FR-4 (εr = 4.5). What is the capacitance between them?",
+   "vi": "Hai vùng đồng song song 4.0 cm² ở hai lớp liền kề cách nhau 0.1 mm FR-4 (εr = 4.5). Điện dung giữa chúng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "319 pF",
+    "vi": "319 pF"
+   },
+   {
+    "en": "35.4 pF",
+    "vi": "35.4 pF"
+   },
+   {
+    "en": "159 pF",
+    "vi": "159 pF"
+   },
+   {
+    "en": "0.159 pF",
+    "vi": "0.159 pF"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "C = ε0·εr·A/d = 8.854e-12 × 4.5 × 4.0 cm² / 0.1 mm = 159 pF — a source of the unintended coupling the text warns about.",
+   "vi": "C = ε0·εr·A/d = 8,854e-12 × 4.5 × 4.0 cm² / 0.1 mm = 159 pF — nguồn của ghép ký sinh mà sách cảnh báo."
+  },
+  "level": 3,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "en": "Two parallel copper areas of 0.25 cm² on adjacent layers are separated by 0.36 mm of FR-4 (εr = 4.3). What is the capacitance between them?",
+   "vi": "Hai vùng đồng song song 0.25 cm² ở hai lớp liền kề cách nhau 0.36 mm FR-4 (εr = 4.3). Điện dung giữa chúng là bao nhiêu?"
+  },
+  "opts": [
+   {
+    "en": "5.29 pF",
+    "vi": "5.29 pF"
+   },
+   {
+    "en": "2640 pF",
+    "vi": "2640 pF"
+   },
+   {
+    "en": "2.64 pF",
+    "vi": "2.64 pF"
+   },
+   {
+    "en": "0.615 pF",
+    "vi": "0.615 pF"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "en": "C = ε0·εr·A/d = 8.854e-12 × 4.3 × 0.25 cm² / 0.36 mm = 2.64 pF — a source of the unintended coupling the text warns about.",
+   "vi": "C = ε0·εr·A/d = 8,854e-12 × 4.3 × 0.25 cm² / 0.36 mm = 2.64 pF — nguồn của ghép ký sinh mà sách cảnh báo."
+  },
+  "level": 3,
+  "topic": {
+   "en": "PCB trace physics",
+   "vi": "Vật lý đường dẫn PCB"
+  },
+  "src": {
+   "en": "Generated – modelled on PCB trace physics (R = ρL/(w·t)); not from the EASA text",
+   "vi": "Bổ sung – sinh theo dạng vật lý đường dẫn PCB (R = ρL/(w·t)); không có trong văn bản EASA"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script"
+ }
+]
