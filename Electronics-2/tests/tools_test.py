@@ -1,6 +1,6 @@
 """Exercise finder, Written Practice (study + exam + self-marking + save) and the Your-progress panel, in vi and en.
 Usage: python3 tests/tools_test.py [baseURL]  (needs python3 -m http.server 8765 in the project root)"""
-import sys
+import sys, re
 from playwright.sync_api import sync_playwright
 BASE = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8765/'
 bad = []
@@ -24,10 +24,25 @@ with sync_playwright() as pw:
         pg.select_option('#exfind select >> nth=2', 'm02'); pg.fill('#exfind input[type=search]', 'op amp')
         cnt2 = pg.evaluate("() => +document.querySelector('#exfind .score').textContent.match(/(\\d[\\d,. ]*)\\s*(?:\\/|of)/)[1].replace(/[^0-9]/g,'')")
         if cnt2 < 1: bad.append((lang, 'finder: module+search found nothing', cnt2))
+        # ---- Jaeger problems solved by the site: own class, own label, count 122; the 21 unsolved keep their reason
+        pg.goto(f'{BASE}{lang}/exercises/index.html', wait_until='load'); pg.wait_for_selector('#exfind .qitem', timeout=20000)
+        pg.select_option('#exfind select >> nth=3', 'solved')
+        nsol = pg.evaluate("() => +document.querySelector('#exfind .score').textContent.match(/(\\d[\\d,. ]*)\\s*(?:\\/|of)/)[1].replace(/[^0-9]/g,'')")
+        if nsol != 122: bad.append((lang, 'finder: solved class count', nsol))
+        lab = pg.evaluate("() => document.querySelector('#exfind details summary').textContent")
+        if not re.search(r'site tính|Computed by this site', lab): bad.append((lang, 'finder: computed label', lab))
+        pg.select_option('#exfind select >> nth=3', 'ready'); pg.select_option('#exfind select >> nth=0', 'jaeger5'); pg.select_option('#exfind select >> nth=1', 'problem')
+        nskip = pg.evaluate("() => document.querySelectorAll('#exfind .srcnote').length")
+        if nskip != 21: bad.append((lang, 'finder: no skip reasons shown'))
         # ---- written hub and paper
         pg.goto(f'{BASE}{lang}/written/index.html', wait_until='load'); pg.wait_for_selector('#written-hub .panel', timeout=15000)
         npap = pg.evaluate("() => document.querySelectorAll('#written-hub .panel').length")
-        if npap != 7: bad.append((lang, 'written hub papers', npap))
+        if npap != 12: bad.append((lang, 'written hub papers', npap))
+        pg.goto(f'{BASE}{lang}/written/paper.html?p=jaeger-prob-m03', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
+        pg.click('#written .panel >> nth=0 >> button'); box = pg.inner_text('#written .callout.good')
+        if not re.search(r'site tính|Computed by this site', box) or not re.search(r'Cách tính|Method', box): bad.append((lang, 'written: computed answer box', box[:120]))
+        npr = pg.evaluate("() => document.querySelectorAll('#written .panel').length")
+        if npr != 34: bad.append((lang, 'written: jaeger-prob-m03 problems', npr))
         pg.goto(f'{BASE}{lang}/written/paper.html?p=jaeger-m01', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
         pg.click('#written .panel >> nth=0 >> button'); shown = pg.evaluate("() => !document.querySelector('#written .callout.good').classList.contains('hide')")
         if not shown: bad.append((lang, 'study: answer not shown'))

@@ -6,14 +6,14 @@
   var X = {
     vi: { fail: 'Không tải được đề: ', start: '▶ Bắt đầu làm bài', study: '📖 Học với đáp án', exam: '⏱ Làm như đi thi', all: '◀ Tất cả đề', toStudy: '📖 Chuyển sang chế độ học', toExam: '⏱ Làm như đi thi',
       parts: function (n) { return n + ' bài'; }, marks: function (n) { return n + ' điểm'; }, minutes: function (m) { return m + ' phút'; }, best: function (s, t) { return 'điểm tự chấm tốt nhất ' + s + ' / ' + t; },
-      ans: '✔ Xem đáp án in trong sách', hide: 'Ẩn đáp án', ansl: 'Đáp án in trong sách', ref: 'Nguồn: ', fig: 'Cần hình vẽ trong sách (xem trang đã ghi).', unknown: 'Không có đề này. ',
+      ans: '✔ Xem đáp án in trong sách', hide: 'Ẩn đáp án', ansl: 'Đáp án in trong sách', calc: 'Đáp án do site tính (sách không in đáp án)', hw: 'Cách tính: ', as: 'Giả định: ', howc: 'Cách dùng: che đáp án, tự giải trên giấy trước, rồi so cả phương pháp. Sách KHÔNG in đáp án các bài này: đáp án do site tính bằng công thức của sách và kiểm lại bằng một cách độc lập; chỗ đề chưa nói rõ đã ghi ở phần Giả định, nếu bạn chọn khác thì kết quả khác theo.', ref: 'Nguồn: ', fig: 'Cần hình vẽ trong sách (xem trang đã ghi).', unknown: 'Không có đề này. ',
       how: 'Cách dùng: che đáp án, tự giải trên giấy trước, rồi mở đáp án và so cả phương pháp, không chỉ con số. Đáp án là đáp án IN trong sách (chỉ có kết quả cuối); lời giải chi tiết bạn tự viết ra.',
       examIntro: function (m, n) { return 'Thời gian ' + m + ' phút cho ' + n + ' bài. Làm trên giấy; trang chỉ hiện đề. Hết giờ hoặc khi bấm Kết thúc, đáp án hiện ra và bạn tự chấm từng bài.'; },
       notes: 'Ghi nháp (lưu trong trình duyệt này)', finish: 'Kết thúc và chấm', sure: 'Kết thúc bài thi và xem đáp án?', up: '⏱ Hết giờ — ', mark: 'Tự chấm', used: function (u, m) { return 'Thời gian đã dùng: ' + u + ' / ' + m + ':00. Mỗi bài 0, 0,5 hoặc 1 điểm: đúng con số mà thiếu cách làm thì chỉ nửa điểm.'; },
       mine: 'Điểm của tôi: ', save: 'Lưu kết quả', saved: function (s, t) { return ' Đã lưu: ' + s + ' / ' + t + '. Kết quả hiện ở bảng tiến độ trên trang chủ.'; }, part: 'Bài ', total: 'Tổng' },
     en: { fail: 'Could not load the papers: ', start: '▶ Start', study: '📖 Study with answers', exam: '⏱ Take it as an exam', all: '◀ All papers', toStudy: '📖 Switch to study mode', toExam: '⏱ Take it as an exam',
       parts: function (n) { return n + ' exercise' + (n === 1 ? '' : 's'); }, marks: function (n) { return n + ' mark' + (n === 1 ? '' : 's'); }, minutes: function (m) { return m + ' min'; }, best: function (s, t) { return 'best self-mark ' + s + ' / ' + t; },
-      ans: '✔ Show the printed answer', hide: 'Hide the answer', ansl: 'Printed answer', ref: 'Source: ', fig: 'A figure from the book is needed (see the page given).', unknown: 'Unknown paper. ',
+      ans: '✔ Show the printed answer', hide: 'Hide the answer', ansl: 'Printed answer', calc: 'Computed by this site (the book prints no answer)', hw: 'Method: ', as: 'Assumptions: ', howc: 'How to use: cover the answer, solve on paper first, then compare your method. The book prints NO answer for these exercises: the answers were computed by this site with the book\'s formulas and re-checked by an independent route; whatever the statement leaves open is listed under Assumptions, and a different choice changes the result accordingly.', ref: 'Source: ', fig: 'A figure from the book is needed (see the page given).', unknown: 'Unknown paper. ',
       how: 'How to use: cover the answer, solve on paper first, then open the answer and compare your method, not only the number. The answer is the one PRINTED in the book (final result only); you write the full working yourself.',
       examIntro: function (m, n) { return m + ' minutes for ' + n + ' exercises. Work on paper; the page shows the statements only. At the end (or when time is up) the answers appear and you mark yourself exercise by exercise.'; },
       notes: 'Scratch notes (kept in this browser)', finish: 'Finish and mark', sure: 'Finish the exam and see the answers?', up: '⏱ Time is up — ', mark: 'Self-marking', used: function (u, m) { return 'Time used: ' + u + ' of ' + m + ':00. Each exercise is worth 0, 0.5 or 1: a correct number without the method earns half.'; },
@@ -45,6 +45,15 @@
     var sw = el('p'), o = el('a', 'btn small alt', mode === 'exam' ? X.toStudy : X.toExam); o.href = 'paper.html?p=' + encodeURIComponent(P.id) + (mode === 'exam' ? '' : '&mode=exam'); sw.appendChild(o);
     var b = el('a', 'btn small alt', X.all); b.href = './'; b.style.marginLeft = '6px'; sw.appendChild(b); h.appendChild(sw); return h;
   }
+  function answerBox(pt, cls) {
+    var a = el('div', 'callout good' + (cls ? ' ' + cls : ''));
+    if (!pt.computed) { a.innerHTML = '<b>' + X.ansl + '.</b> '; a.appendChild(document.createTextNode(pt.answer)); return a; }
+    var h = el('b', null, X.calc + '.'); a.appendChild(h);
+    pt.answer.forEach(function (r) { var d = el('div'); d.appendChild(el('span', 'muted', r[0] + (r[1] ? ': ' : ''))); if (r[1]) d.appendChild(el('b', null, r[1])); a.appendChild(d); });
+    if (pt.how) a.appendChild(el('div', 'small', X.hw + pt.how));
+    if (pt.assume && pt.assume.length) a.appendChild(el('div', 'small', X.as + pt.assume.join(' ')));
+    return a;
+  }
   function statement(pt, n) {
     var b = el('div', 'part'); b.appendChild(el('div', 'qtxt', n + '. ' + pt.text));
     var m = el('div', 'srcnote', X.ref + pt.ref + (pt.fig ? ' · ' + X.fig : '')); b.appendChild(m); return b;
@@ -59,13 +68,13 @@
     page.innerHTML = ''; page.appendChild(head(P, 'study')); var k = 0;
     P.problems.forEach(function (q) {
       q.forEach(function (pt) {
-        var box = el('div', 'panel'), b = statement(pt, ++k), ans = el('div', 'callout good hide'); ans.innerHTML = '<b>' + X.ansl + '.</b> '; ans.appendChild(document.createTextNode(pt.answer));
+        var box = el('div', 'panel'), b = statement(pt, ++k), ans = answerBox(pt, 'hide');
         var bt = el('button', 'btn alt small', X.ans); bt.type = 'button';
         bt.onclick = function () { ans.classList.toggle('hide'); bt.textContent = ans.classList.contains('hide') ? X.ans : X.hide; };
         b.appendChild(bt); b.appendChild(ans); box.appendChild(b); page.appendChild(box);
       });
     });
-    page.appendChild(el('div', 'callout', X.how));
+    page.appendChild(el('div', 'callout', P.problems[0] && P.problems[0][0].computed ? X.howc : X.how));
   }
   function examFlow(P) {
     var key = 'written:notes:' + P.id, notes = get(key, {}), secs = P.minutes * 60, t0 = null, timer = null, finished = false, n = 0;
@@ -96,7 +105,7 @@
       function upd() { var s = 0; sels.forEach(function (x) { s += parseFloat(x.value); }); sc.textContent = fmt(s) + ' / ' + fmt(total(P)); return s; }
       P.problems.forEach(function (q) {
         q.forEach(function (pt) {
-          var box = el('div', 'panel'), b = statement(pt, ++k), ans = el('div', 'callout good'); ans.innerHTML = '<b>' + X.ansl + '.</b> '; ans.appendChild(document.createTextNode(pt.answer)); b.appendChild(ans);
+          var box = el('div', 'panel'), b = statement(pt, ++k), ans = answerBox(pt); b.appendChild(ans);
           var row = el('div', 'row'), lab = el('label', null, X.mine), sel = el('select');
           for (var m = 0; m <= pt.marks + 1e-9; m += 0.5) { var o = el('option', null, fmt(m) + ' / ' + fmt(pt.marks)); o.value = String(m); sel.appendChild(o); }
           sel.onchange = upd; sels.push(sel); lab.appendChild(sel); row.appendChild(lab); b.appendChild(row); box.appendChild(b); page.appendChild(box);

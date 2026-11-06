@@ -1,0 +1,3470 @@
+{
+"solved": {
+"6.33": {
+"number": "6.33",
+"section": "6.4",
+"modules": [
+"m01"
+],
+"pdf": 379,
+"printed": 350,
+"parts": [
+[
+"Parallel-plate capacitance",
+"194.2 fF"
+],
+[
+"Total capacitance (3 × parallel plate)",
+"582.7 fF"
+]
+],
+"how": "C = εox·L·W/tox with L = 3.75 mm, W = 1.5 μm, tox = 1 μm, then ×3.",
+"assume": []
+},
+"7.1": {
+"number": "7.1",
+"section": "7.1",
+"modules": [
+"m01"
+],
+"pdf": 433,
+"printed": 404,
+"parts": [
+[
+"tox = 10 nm: K′n, K′p",
+"172.7 μA/V², 69.06 μA/V²"
+],
+[
+"tox = 5 nm: K′n, K′p",
+"345.3 μA/V², 138.1 μA/V²"
+]
+],
+"how": "K′ = μ·Cox″ with Cox″ = εox/tox, εox = 3.9·8.854×10⁻¹⁴ F/cm, 1 nm = 10⁻⁷ cm.",
+"assume": []
+},
+"7.3": {
+"number": "7.3",
+"section": "7.1",
+"modules": [
+"m01"
+],
+"pdf": 433,
+"printed": 404,
+"parts": [
+[
+"(a) n-well leakage",
+"250.0 pA"
+],
+[
+"(b) vO = 2.5 V: one reverse-biased junction per inverter (NMOS drain)",
+"200.0 pA (plus the well: 450.0 pA)"
+],
+[
+"(c) vO = 0 V: the PMOS drain is the reverse-biased junction",
+"200.0 pA (plus the well: 450.0 pA)"
+]
+],
+"how": "I = J·A; per inverter one 2 μm × 5 μm drain junction is reverse biased; × 20 million inverters.",
+"assume": [
+"The n-well of part (a) is counted separately; the totals with the well are shown in brackets."
+]
+},
+"7.4": {
+"number": "7.4",
+"section": "7.1",
+"modules": [
+"m01"
+],
+"pdf": 433,
+"printed": 404,
+"parts": [
+[
+"Parallel-plate capacitance",
+"172.7 fF"
+],
+[
+"Total capacitance (3 × parallel plate)",
+"518.0 fF"
+]
+],
+"how": "C = εox·L·W/tox with L = 5 mm, W = 1 μm, tox = 1 μm, then ×3.",
+"assume": []
+},
+"7.10": {
+"number": "7.10",
+"section": "7.1",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"Kn = Kp: vO = vI at",
+"1.25 V; IDD = 42.25 μA with (W/L)N = 2/1"
+],
+[
+"Kn = 2.5Kp: vO = vI at",
+"1.104 V; IDD = 25.37 μA with (W/L)N = 2/1"
+]
+],
+"how": "KR = Kn/Kp; vO = vI where both devices are saturated: vI = (VDD + VTP + VTN√KR)/(1 + √KR); IDD = (Kn/2)(vI − VTN)² with Kn = K′n·2 = 200 μA/V².",
+"assume": [
+"K′n = 100 μA/V² (Table 7.1)."
+]
+},
+"7.11": {
+"number": "7.11",
+"section": "7.1",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"(a) VDD = 3.3 V, VTN = 0.75 V, VTP = −0.75 V",
+""
+],
+[
+"Kn = Kp: vO = vI at",
+"1.65 V; IDD = 81.0 μA with (W/L)N = 2/1"
+],
+[
+"Kn = 2.5Kp: vO = vI at",
+"1.447 V; IDD = 48.63 μA with (W/L)N = 2/1"
+],
+[
+"(b) VDD = 2.5 V, VTN = 0.60 V, VTP = −0.50 V",
+""
+],
+[
+"Kn = Kp: vO = vI at",
+"1.3 V; IDD = 49.0 μA with (W/L)N = 2/1"
+],
+[
+"Kn = 2.5Kp: vO = vI at",
+"1.142 V; IDD = 29.42 μA with (W/L)N = 2/1"
+]
+],
+"how": "Same method as Problem 7.10.",
+"assume": [
+"K′n = 100 μA/V²."
+]
+},
+"7.12": {
+"number": "7.12",
+"section": "7.1",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"(a) VDD = 1.8 V, VT = ±0.45 V",
+""
+],
+[
+"Kn = Kp: vO = vI at",
+"0.9 V; IDD = 20.25 μA with (W/L)N = 2/1"
+],
+[
+"Kn = 2.5Kp: vO = vI at",
+"0.7987 V; IDD = 12.16 μA with (W/L)N = 2/1"
+],
+[
+"(b) VDD = 2.5 V, VTN = 0.75 V, VTP = −0.65 V",
+""
+],
+[
+"Kn = Kp: vO = vI at",
+"1.3 V; IDD = 30.25 μA with (W/L)N = 2/1"
+],
+[
+"Kn = 2.5Kp: vO = vI at",
+"1.176 V; IDD = 18.16 μA with (W/L)N = 2/1"
+],
+[
+"(c) VDD = 2.5 V, VTN = 0.65 V, VTP = −0.75 V",
+""
+],
+[
+"Kn = Kp: vO = vI at",
+"1.2 V; IDD = 30.25 μA with (W/L)N = 2/1"
+],
+[
+"Kn = 2.5Kp: vO = vI at",
+"1.076 V; IDD = 18.16 μA with (W/L)N = 2/1"
+]
+],
+"how": "Same method as Problem 7.10.",
+"assume": [
+"K′n = 100 μA/V²."
+]
+},
+"7.15": {
+"number": "7.15",
+"section": "7.2",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"Switching threshold (KR = 2.5)",
+"1.104 V"
+]
+],
+"how": "W/L = 2/1 for both: Kn/Kp = K′n/K′p = 2.5, vI = (VDD + VTP + VTN√KR)/(1 + √KR).",
+"assume": []
+},
+"7.16": {
+"number": "7.16",
+"section": "7.2",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"Switching threshold (KR = 2.5)",
+"0.7987 V"
+]
+],
+"how": "Same method as Problem 7.15.",
+"assume": []
+},
+"7.17": {
+"number": "7.17",
+"section": "7.2",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"VIL, VIH",
+"0.9019 V, 1.22 V"
+],
+[
+"VOL, VOH",
+"0.1738 V, 2.378 V"
+],
+[
+"NML, NMH",
+"0.7282 V, 1.159 V"
+]
+],
+"how": "Eqs. (7.7)–(7.12) with KR = 2.5, checked against the simulated transfer curve (slope = −1 points).",
+"assume": []
+},
+"7.18": {
+"number": "7.18",
+"section": "7.2",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"(a) symmetrical (KR = 1): NML, NMH",
+"1.2 V, 1.2 V"
+],
+[
+"(b) (W/L)N = (W/L)P → KR = 2.5",
+""
+],
+[
+"VIL, VIH",
+"1.168 V, 1.608 V"
+],
+[
+"VOL, VOH",
+"0.2406 V, 3.132 V"
+],
+[
+"NML, NMH",
+"0.9275 V, 1.524 V"
+]
+],
+"how": "Eq. (7.14) for KR = 1 (checked numerically); Eqs. (7.7)–(7.12) for KR = 2.5.",
+"assume": []
+},
+"7.23": {
+"number": "7.23",
+"section": "7.2",
+"modules": [
+"m01"
+],
+"pdf": 434,
+"printed": 405,
+"parts": [
+[
+"Kn, (W/L)N minimum",
+"0.6098 mA/V², 6.098/1"
+],
+[
+"Kp, (W/L)P minimum",
+"7.444 μA/V², 0.1861/1"
+]
+],
+"how": "Output low: NMOS (vGS = 5 V) in the triode region, iD = Kn[(VDD−VTN)vDS − vDS²/2] = 1.5 mA at vDS = 0.6 V. Output high: PMOS in the triode region, iD = Kp[(VDD−|VTP|)vSD − vSD²/2] = 60 μA at vSD = 2.6 V.",
+"assume": [
+"VTN = 0.6 V, VTP = −0.6 V and K′n = 100, K′p = 40 μA/V² (not given in the statement)."
+]
+},
+"7.24": {
+"number": "7.24",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"(a) VDD = 2.5 V",
+""
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"1.895 ns, 1.895 ns, 1.895 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"3.789 ns, 3.789 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 947.4 ps, tf = 1.895 ns, tr = 1.895 ns"
+],
+[
+"(b) VDD = 2.0 V",
+""
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"2.571 ns, 2.571 ns, 2.571 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"5.143 ns, 5.143 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 1.286 ns, tf = 2.571 ns, tr = 2.571 ns"
+],
+[
+"(c) VDD = 1.8 V",
+""
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"3.0 ns, 3.0 ns, 3.0 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"6.0 ns, 6.0 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 1.5 ns, tf = 3.0 ns, tr = 3.0 ns"
+]
+],
+"how": "τPHL = 2.4·Ronn·C with Ronn = 1/[Kn(VDD − VTN)], τPLH likewise with Kp(VDD + VTP); tr = 2τPLH, tf = 2τPHL, τP = average. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": [
+"VTN = −VTP = 0.6 V for all three supplies (the statement gives no other value)."
+]
+},
+"7.25": {
+"number": "7.25",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"VDD = 2.5 V: switching threshold",
+"1.2 V"
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"1.846 ns, 1.946 ns, 1.896 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"3.692 ns, 3.892 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 948.0 ps, tf = 1.846 ns, tr = 1.946 ns"
+],
+[
+"VDD = 1.8 V: switching threshold",
+"0.85 V"
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"2.88 ns, 3.13 ns, 3.005 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"5.76 ns, 6.261 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 1.503 ns, tf = 2.88 ns, tr = 3.13 ns"
+],
+[
+"VDD = 3.3 V: switching threshold",
+"1.6 V"
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"1.309 ns, 1.358 ns, 1.334 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"2.618 ns, 2.717 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 666.9 ps, tf = 1.309 ns, tr = 1.358 ns"
+]
+],
+"how": "As Problem 7.24(a) with VTN = 0.55 V, VTP = −0.65 V; threshold vI = (VDD + VTP + VTN√KR)/(1 + √KR), KR = Kn/Kp = 1. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": [
+"C = 0.3 pF as in Problem 7.24."
+]
+},
+"7.26": {
+"number": "7.26",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"VDD = 2.5 V: switching threshold",
+"1.3 V"
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"1.946 ns, 1.846 ns, 1.896 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"3.892 ns, 3.692 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 948.0 ps, tf = 1.946 ns, tr = 1.846 ns"
+],
+[
+"VDD = 1.8 V: switching threshold",
+"0.95 V"
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"3.13 ns, 2.88 ns, 3.005 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"6.261 ns, 5.76 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 1.503 ns, tf = 3.13 ns, tr = 2.88 ns"
+],
+[
+"VDD = 3.3 V: switching threshold",
+"1.7 V"
+],
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"1.358 ns, 1.309 ns, 1.334 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"2.717 ns, 2.618 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 666.9 ps, tf = 1.358 ns, tr = 1.309 ns"
+]
+],
+"how": "As Problem 7.25 with VTN = 0.65 V, VTP = −0.55 V. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": [
+"C = 0.3 pF as in Problem 7.24."
+]
+},
+"7.27": {
+"number": "7.27",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"3.158 ns, 7.895 ns, 5.526 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"6.316 ns, 15.79 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 2.763 ns, tf = 3.158 ns, tr = 7.895 ns"
+]
+],
+"how": "Kn = 200 μA/V², Kp = 80 μA/V² (both 2/1). The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": [
+"VTN = −VTP = 0.6 V."
+]
+},
+"7.28": {
+"number": "7.28",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"3.243 ns, 7.692 ns, 5.468 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"6.486 ns, 15.38 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 2.734 ns, tf = 3.243 ns, tr = 7.692 ns"
+],
+[
+"Switching threshold (KR = 2.5)",
+"1.154 V"
+]
+],
+"how": "As Problem 7.27 with VTN = 0.65 V, VTP = −0.55 V. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": []
+},
+"7.29": {
+"number": "7.29",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"1.176 ns, 1.176 ns, 1.176 ns"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"2.353 ns, 2.353 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 588.2 ps, tf = 1.176 ns, tr = 1.176 ns"
+]
+],
+"how": "The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": []
+},
+"7.30": {
+"number": "7.30",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"τPHL, τPLH, τP (Eq. 7.23, 2.4·Ron·C)",
+"631.6 ps, 631.6 ps, 631.6 ps"
+],
+[
+"tf = 2τPHL, tr = 2τPLH (Eq. 7.19)",
+"1.263 ns, 1.263 ns"
+],
+[
+"with the first estimate 1.2·Ron·C (Eq. 7.15/7.18)",
+"τP = 315.8 ps, tf = 631.6 ps, tr = 631.6 ps"
+]
+],
+"how": "The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": []
+},
+"7.31": {
+"number": "7.31",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"Eq. 7.23 (2.4·Ron·C)",
+"(W/L)N = 4.211/1, (W/L)P = 10.53/1"
+],
+[
+"Eq. 7.15/7.18 (1.2·Ron·C)",
+"(W/L)N = 2.105/1, (W/L)P = 5.263/1"
+]
+],
+"how": "τP = k·C/[Kn(VDD − VTN)] with equal rise and fall times (Kp = Kn) solved for Kn and Kp. The 1.2 version agrees with scaling the reference inverter of Fig. 7.12 by Eq. (7.20). The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": []
+},
+"7.33": {
+"number": "7.33",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"(a) VDD = 2.5 V",
+""
+],
+[
+"Eq. 7.23 (2.4·Ron·C)",
+"(W/L)N = 126.3/1, (W/L)P = 315.8/1"
+],
+[
+"Eq. 7.15/7.18 (1.2·Ron·C)",
+"(W/L)N = 63.16/1, (W/L)P = 157.9/1"
+],
+[
+"(b) VDD = 1.8 V, VT = ±0.45 V",
+""
+],
+[
+"Eq. 7.23 (2.4·Ron·C)",
+"(W/L)N = 177.8/1, (W/L)P = 444.4/1"
+],
+[
+"Eq. 7.15/7.18 (1.2·Ron·C)",
+"(W/L)N = 88.89/1, (W/L)P = 222.2/1"
+]
+],
+"how": "As Problem 7.31. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": [
+"Part (a): VT = ±0.6 V."
+]
+},
+"7.35": {
+"number": "7.35",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"Eq. 7.23 (2.4·Ron·C)",
+"(W/L)N = 6.316/1, (W/L)P = 15.79/1"
+],
+[
+"Eq. 7.15/7.18 (1.2·Ron·C)",
+"(W/L)N = 3.158/1, (W/L)P = 7.895/1"
+]
+],
+"how": "As Problem 7.31. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": []
+},
+"7.37": {
+"number": "7.37",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"Eq. 7.23 (2.4·Ron·C)",
+"(W/L)N = 11.52/1, (W/L)P = 28.8/1"
+],
+[
+"Eq. 7.15/7.18 (1.2·Ron·C)",
+"(W/L)N = 5.76/1, (W/L)P = 14.4/1"
+]
+],
+"how": "As Problem 7.31. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
+"assume": []
+},
+"7.41": {
+"number": "7.41",
+"section": "7.3",
+"modules": [
+"m01"
+],
+"pdf": 435,
+"printed": 406,
+"parts": [
+[
+"(a) S(Kn) = (Kn/τ)(dτ/dKn)",
+"-1.0"
+],
+[
+"(a) Kn 25 % low",
+"τp increases by 33.33 % exactly (25.0 % by the linearised sensitivity)"
+],
+[
+"(b) S(VTN) = VTN/(VDD − VTN)",
+"0.4286"
+],
+[
+"(b) VTN 0.75 V → 0.85 V",
+"τp increases by 6.061 %"
+]
+],
+"how": "τp ∝ 1/[Kn(VDD − VTN)] from Eq. (7.18); the sensitivity of a power law is its exponent.",
+"assume": [
+"VDD = 2.5 V in part (b) (not given in the statement)."
+]
+},
+"7.51": {
+"number": "7.51",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 436,
+"printed": 407,
+"parts": [
+[
+"(a) average power per gate",
+"200.0 nW"
+],
+[
+"(b) supply current at 1.8 V",
+"55.56 A"
+]
+],
+"how": "P/N and I = P/VDD.",
+"assume": []
+},
+"7.52": {
+"number": "7.52",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 436,
+"printed": 407,
+"parts": [
+[
+"Power per gate",
+"500.0 nW"
+],
+[
+"VDD = 3.3 V: C max (P = C·VDD²·f)",
+"4.591e-16 F"
+],
+[
+"VDD = 2.5 V: C max (P = C·VDD²·f)",
+"8.000e-16 F"
+],
+[
+"VDD = 1.8 V: C max (P = C·VDD²·f)",
+"1.543 fF"
+]
+],
+"how": "P = 5 W/10⁷ gates; Eq. (7.24) P = C·VDD²·f solved for C at f = 100 MHz.",
+"assume": []
+},
+"7.53": {
+"number": "7.53",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 436,
+"printed": 407,
+"parts": [
+[
+"(a) n-well leakage",
+"200.0 pA"
+],
+[
+"(b) vO = 2.5 V: reverse-biased NMOS drain junctions",
+"187.5 pA"
+],
+[
+"(c) vO = 0 V: reverse-biased PMOS drain junctions",
+"187.5 pA"
+]
+],
+"how": "I = J·A; the well is 0.5 cm × 1 cm; each drain is 0.5 μm × 1.25 μm = 6.25×10⁻⁹ cm²; × 200 million inverters.",
+"assume": [
+"The well leakage of part (a) is not added to (b) and (c)."
+]
+},
+"7.54": {
+"number": "7.54",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 436,
+"printed": 407,
+"parts": [
+[
+"VDD = 2.5 V",
+"2.5 W"
+],
+[
+"VDD = 3.3 V",
+"4.356 W"
+]
+],
+"how": "P = N·C·VDD²·f with f the full switching cycle rate: each line changes at every 2 ns access, so a charge-discharge cycle lasts 4 ns (f = 250 MHz).",
+"assume": [
+"If f were taken as the access rate 500 MHz the powers double."
+]
+},
+"7.55": {
+"number": "7.55",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 436,
+"printed": 407,
+"parts": [
+[
+"On-resistance allowed",
+"25.0 mΩ"
+],
+[
+"Kn needed",
+"21.05 A/V²"
+],
+[
+"W/L",
+"2.105e+5"
+],
+[
+"Area W·L (L = 1 μm)",
+"2.105e+5 μm² = 0.2105 mm²"
+]
+],
+"how": "Deep triode: R = 1/[Kn(VGS − VTN)] with VGS = 2.5 V.",
+"assume": [
+"VTN = 0.6 V and K′n = 100 μA/V² (not given in the statement)."
+]
+},
+"7.56": {
+"number": "7.56",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 436,
+"printed": 407,
+"parts": [
+[
+"Minimum gate delay",
+"25.0 ns"
+]
+],
+"how": "Each switching gate dissipates PDP/τ; 0.2 × 10⁸ gates × PDP/τ ≤ 40 W.",
+"assume": []
+},
+"7.57": {
+"number": "7.57",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 437,
+"printed": 408,
+"parts": [
+[
+"VDD = 3.3 V",
+"peak IDD = 496.5 μA at vI = 1.414 V"
+],
+[
+"VDD = 2.5 V",
+"peak IDD = 190.3 μA at vI = 1.104 V"
+]
+],
+"how": "Both devices saturated at vI = switching threshold: IDD,max = (Kn/2)(vI − VTN)², Kn = 15·K′n.",
+"assume": [
+"VTN = −VTP = 0.6 V, K′n = 100, K′p = 40 μA/V²."
+]
+},
+"7.58": {
+"number": "7.58",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 437,
+"printed": 408,
+"parts": [
+[
+"(a) VDD = 1.8 V",
+"peak IDD = 40.53 μA at vI = 0.8325 V"
+],
+[
+"(b) VDD = 2.5 V, VTN = 0.55 V, VTP = −0.65 V",
+"peak IDD = 190.3 μA at vI = 1.054 V"
+]
+],
+"how": "As Problem 7.57.",
+"assume": [
+"Part (a) keeps VT = ±0.6 V (not restated)."
+]
+},
+"7.59": {
+"number": "7.59",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 437,
+"printed": 408,
+"parts": [
+[
+"(a) VDD = 3.3 V, VT = ±0.8 V",
+"peak IDD = 72.25 μA at vI = 1.65 V"
+],
+[
+"(b) VDD = 2.0 V, VT = ±0.5 V",
+"peak IDD = 25.0 μA at vI = 1.0 V"
+]
+],
+"how": "Symmetrical inverter: Kn = Kp = 200 μA/V², vI = VDD/2.",
+"assume": []
+},
+"7.60": {
+"number": "7.60",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 437,
+"printed": 408,
+"parts": [
+[
+"(a) VTN = 0.45 V, VTP = −0.55 V",
+"peak IDD = 25.0 μA at vI = 0.95 V"
+],
+[
+"(b) VTN = 0.55 V, VTP = −0.45 V",
+"peak IDD = 25.0 μA at vI = 1.05 V"
+]
+],
+"how": "As Problem 7.59(a) with (W/L)N = 2/1, (W/L)P = 5/1, VDD = 2.0 V.",
+"assume": []
+},
+"7.61": {
+"number": "7.61",
+"section": "7.4",
+"modules": [
+"m01"
+],
+"pdf": 437,
+"printed": 408,
+"parts": [
+[
+"PDP ≥ C·VDD²/5 (Eq. 7.28)",
+"375.0 fJ"
+],
+[
+"Power at 100 MHz (P = C·VDD²·f)",
+"187.5 μW"
+],
+[
+"Check with PDP = Pav·τP using τP of Problem 7.24(a)",
+"355.3 fJ"
+]
+],
+"how": "Eq. (7.28) is the lower bound of the PDP; the last line is the same quantity from Pav·τP (about 5 % lower because Eq. 7.28 assumes the 80 % transition-time rule).",
+"assume": [
+"C = 0.3 pF, VDD = 2.5 V as in Problem 7.24(a)."
+]
+},
+"9.19": {
+"number": "9.19",
+"section": "9.2",
+"modules": [
+"m01"
+],
+"pdf": 536,
+"printed": 507,
+"parts": [
+[
+"Minimum logic swing ΔV (VT = 25 mV)",
+"0.3831 V"
+]
+],
+"how": "Solve NM = ΔV/2 − VT[1 + ln(ΔV/VT − 1)] = 0.1 V numerically (the NM grows with ΔV).",
+"assume": [
+"Room temperature: VT = 25 mV (the value the book uses in Section 9.3)."
+]
+},
+"9.22": {
+"number": "9.22",
+"section": "9.2",
+"modules": [
+"m01"
+],
+"pdf": 536,
+"printed": 507,
+"parts": [
+[
+"-55 °C: VT = 18.8 mV, ΔV needed for NM = 0.1 V",
+"0.3449 V"
+],
+[
+"27 °C: VT = 25.86 mV, ΔV needed for NM = 0.1 V",
+"0.3883 V"
+],
+[
+"75 °C: VT = 30.0 mV, ΔV needed for NM = 0.1 V",
+"0.4128 V"
+],
+[
+"Logic swing to design for",
+"ΔV ≥ 0.4128 V (set by the hottest case, +75 °C)"
+]
+],
+"how": "NM falls as VT = kT/q rises, so the +75 °C end of the range sets ΔV; the same ΔV then gives NM > 0.1 V at lower temperatures.",
+"assume": [
+"ΔV = IEE·RC is taken as temperature independent."
+]
+},
+"9.106": {
+"number": "9.106",
+"section": "9.15",
+"modules": [
+"m01"
+],
+"pdf": 543,
+"printed": 514,
+"parts": [
+[
+"(a) τ = PDP/P at 0.3 mW",
+"1.667 ns"
+],
+[
+"(b) P = PDP/τ for τ = 1 ns",
+"500.0 μW"
+]
+],
+"how": "PDP = P·τ (Eq. 9.x, definition of the power-delay product).",
+"assume": []
+},
+"9.109": {
+"number": "9.109",
+"section": "9.15",
+"modules": [
+"m01"
+],
+"pdf": 543,
+"printed": 514,
+"parts": [
+[
+"Power per gate",
+"400.0 μW"
+],
+[
+"Minimum gate delay τ = PDP/P",
+"62.5 ps"
+]
+],
+"how": "All gates dissipate the same power: P = 20 W/50,000, τ = PDP/P.",
+"assume": []
+},
+"10.33": {
+"number": "10.33",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 608,
+"printed": 579,
+"parts": [
+[
+"Voltage gain (ac fundamental)",
+"16.0 V/V (24.08 dB)"
+],
+[
+"Harmonics present",
+"2nd (1200 Hz) and 3rd (1800 Hz) harmonics; fundamental 600 Hz"
+],
+[
+"THD = √(V2² + V3²)/V1",
+"22.36 %"
+]
+],
+"how": "Gain = amplitude of the 600 Hz output component / input amplitude (the dc terms are not part of the gain). THD checked with an FFT of the waveform.",
+"assume": []
+},
+"10.34": {
+"number": "10.34",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 608,
+"printed": 579,
+"parts": [
+[
+"Voltage gain",
+"1250.0 V/V (61.94 dB)"
+],
+[
+"Harmonics present",
+"3rd (3 kHz) and 5th (5 kHz); only odd harmonics"
+],
+[
+"THD",
+"10.77 %"
+]
+],
+"how": "Gain = 5 V/4 mV at 1 kHz; THD = √(0.5² + 0.2²)/5 checked with an FFT.",
+"assume": []
+},
+"10.37": {
+"number": "10.37",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 608,
+"printed": 579,
+"parts": [
+[
+"Fourier amplitudes V1, V2, V3",
+"10.11 V, 0 V, 1.222 V"
+],
+[
+"Distortion from the first three components",
+"12.09 % (the VTC is odd, so the 2nd harmonic is zero)"
+]
+],
+"how": "Fourier components of 10·tanh(1.5·sin ωt) found with an FFT and by direct integration; THD = √(V2² + V3²)/V1. The plot of part (a) is not reproduced.",
+"assume": []
+},
+"10.40": {
+"number": "10.40",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"Maximum output resistance",
+"1.0 Ω"
+]
+],
+"how": "The same current flows in RL and Rout: P ∝ R, so Rout/RL ≤ 2 W/100 W.",
+"assume": []
+},
+"10.41": {
+"number": "10.41",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"Minimum input resistance",
+"4.95 MΩ"
+]
+],
+"how": "vid = 1 mV·Rin/(Rin + 50 kΩ) ≥ 0.99 mV.",
+"assume": []
+},
+"10.42": {
+"number": "10.42",
+"section": "10.8",
+"modules": [
+"m02"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"vid",
+"15.0 μV"
+],
+[
+"Gain needed for vid ≤ 1 μV",
+"A ≥ 1.500e+7 (143.5 dB)"
+],
+[
+"i+ = vid/Rid",
+"15.0 pA"
+]
+],
+"how": "vid = vo/A; A = 120 dB = 10⁶.",
+"assume": []
+},
+"10.43": {
+"number": "10.43",
+"section": "10.8",
+"modules": [
+"m02"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"A",
+"1.995e+5"
+],
+[
+"vid",
+"50.12 μV"
+],
+[
+"Gain needed for vid ≤ 1 μV",
+"A ≥ 1.000e+7 (140.0 dB)"
+]
+],
+"how": "vid = vo/A with A = 10^(106/20).",
+"assume": []
+},
+"10.44": {
+"number": "10.44",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"(a) R1 = 12 kΩ, R2 = 120 kΩ",
+"Av = -10.0 (20.0 dB), Rin = 12.0 kΩ, Rout = 0 (ideal op amp)"
+],
+[
+"(b) R1 = 160 kΩ, R2 = 330 kΩ",
+"Av = -2.062 (6.288 dB), Rin = 160.0 kΩ, Rout = 0 (ideal op amp)"
+],
+[
+"(c) R1 = 4.3 kΩ, R2 = 270 kΩ",
+"Av = -62.79 (35.96 dB), Rin = 4.3 kΩ, Rout = 0 (ideal op amp)"
+]
+],
+"how": "Figure P10.44 is the inverting amplifier: Av = −R2/R1, Rin = R1, Rout = 0 for the ideal op amp.",
+"assume": [
+"Figure P10.44 read from the book page: inverting amplifier."
+]
+},
+"10.45": {
+"number": "10.45",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"(a) R1 = 4.7 kΩ, R2 = 220 kΩ",
+"Av = -46.81 (33.41 dB), Rin = 4.7 kΩ, Rout = 0 (ideal op amp)"
+],
+[
+"(b) R1 = 47 kΩ, R2 = 2.2 MΩ",
+"Av = -46.81 (33.41 dB), Rin = 47.0 kΩ, Rout = 0 (ideal op amp)"
+]
+],
+"how": "As Problem 10.44: both circuits have the same gain, 10× different input resistance.",
+"assume": [
+"Figure P10.44 read from the book page: inverting amplifier."
+]
+},
+"10.52": {
+"number": "10.52",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"(a) Prob. 10.45(a)",
+"nominal |Av| = 46.81 (33.41 dB); worst case 42.35 to 51.74 (32.54 to 34.28 dB); Rin nominal 4.7 kΩ, worst case 4.465 kΩ to 4.935 kΩ"
+],
+[
+"(b) Prob. 10.44(b)",
+"nominal |Av| = 2.062 (6.288 dB); worst case 1.866 to 2.28 (5.419 to 7.157 dB); Rin nominal 160.0 kΩ, worst case 152.0 kΩ to 168.0 kΩ"
+],
+[
+"(c) Prob. 10.44(c)",
+"nominal |Av| = 62.79 (35.96 dB); worst case 56.81 to 69.4 (35.09 to 36.83 dB); Rin nominal 4.3 kΩ, worst case 4.085 kΩ to 4.515 kΩ"
+]
+],
+"how": "|Av| = R2/R1: the largest gain has R2 +5 % and R1 −5 %, the smallest the reverse; Rin = R1 ± 5 %.",
+"assume": [
+"Same circuit as Problem 10.44 (Figure P10.44)."
+]
+},
+"10.53": {
+"number": "10.53",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"Ideal R2 for R1 = 15 kΩ",
+"376.8 kΩ"
+],
+[
+"Standard 1 % values",
+"R1 = 15.0 kΩ, R2 = 374.0 kΩ"
+],
+[
+"Resulting gain",
+"24.93 (27.94 dB)"
+]
+],
+"how": "|Av| = R2/R1 with Rin = R1; R2 taken from the nearest value of the E96 table.",
+"assume": [
+"Appendix A 1 % table taken as the E96 series."
+]
+},
+"10.54": {
+"number": "10.54",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"Ideal R2",
+"200.0 kΩ"
+],
+[
+"Standard 1 % values",
+"R1 = 2.0 kΩ, R2 = 200.0 kΩ"
+],
+[
+"Resulting gain",
+"100.0 (40.0 dB)"
+]
+],
+"how": "As Problem 10.53.",
+"assume": [
+"E96 series."
+]
+},
+"10.55": {
+"number": "10.55",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"Ideal R2",
+"446.7 kΩ"
+],
+[
+"Standard 1 % values",
+"R1 = 100.0 kΩ, R2 = 442.0 kΩ"
+],
+[
+"Resulting gain",
+"4.42 (12.91 dB)"
+]
+],
+"how": "As Problem 10.53.",
+"assume": [
+"E96 series."
+]
+},
+"10.59": {
+"number": "10.59",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"R",
+"2.0 MΩ"
+]
+],
+"how": "Transresistance amplifier (virtual ground): vO = −iS·R, so R = 5 V/2.5 μA; the 100 kΩ source resistance does not matter.",
+"assume": []
+},
+"10.65": {
+"number": "10.65",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 611,
+"printed": 582,
+"parts": [
+[
+"Ideal R2/R1",
+"13.13"
+],
+[
+"Choice (R1 = 10 kΩ ≥ 2 kΩ)",
+"R1 = 10.0 kΩ, R2 = 130.0 kΩ"
+],
+[
+"Resulting gain",
+"14.0 (22.92 dB)"
+]
+],
+"how": "Av = 1 + R2/R1; R2 from the E96 table.",
+"assume": [
+"R1 = 10 kΩ chosen; other pairs also work."
+]
+},
+"10.66": {
+"number": "10.66",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 611,
+"printed": 582,
+"parts": [
+[
+"Input resistance",
+"R3 = 100 kΩ from the + input to ground"
+],
+[
+"Gain network",
+"R1 = 10.0 kΩ, R2 = 10.0 kΩ"
+],
+[
+"Resulting gain",
+"2.0 (6.021 dB)"
+]
+],
+"how": "The ideal noninverting amplifier has infinite input resistance, so the 100 kΩ is set by a resistor R3 to ground at the input; Av = 1 + R2/R1.",
+"assume": [
+"R1 = 10 kΩ chosen."
+]
+},
+"10.67": {
+"number": "10.67",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 611,
+"printed": 582,
+"parts": [
+[
+"Ideal R2/R1",
+"198.5"
+],
+[
+"Choice (R1 = 1.00 kΩ)",
+"R1 = 1.00 kΩ, R2 = 200.0 kΩ"
+],
+[
+"Resulting gain",
+"201.0 (46.06 dB)"
+]
+],
+"how": "Av = 1 + R2/R1; R2 from the E96 table.",
+"assume": [
+"R1 = 1 kΩ chosen."
+]
+},
+"10.75": {
+"number": "10.75",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"(a) zeros (rad/s)",
+"double zero at s = 0"
+],
+[
+"(a) poles (rad/s)",
+"-1.0, -50.0, -3000.0, -10000.0"
+],
+[
+"(b) zeros (rad/s)",
+"-1.0, -50.0"
+],
+[
+"(b) poles (rad/s)",
+"4.268 + j6.931, 4.268 − j6.931, -9.172, -52.13, -947.2"
+]
+],
+"how": "(a): s² + 51s + 50 = (s + 1)(s + 50) and s² + 13000s + 3×10⁷ = (s + 3000)(s + 10000); (b): numerator (s + 1)(s + 50), denominator roots found numerically (rebuilt to check).",
+"assume": [
+"Part (b): Av(s) = −10⁵(s² + 51s + 50)/(s⁵ + 10³s⁴ + 5×10⁴s³ + 2×10⁴s² + 1.3×10⁴s + 3×10⁷), as printed; its denominator has a complex pair in the right half-plane (unstable), which is what the printed coefficients give."
+]
+},
+"10.76": {
+"number": "10.76",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"Amid",
+"60.0 dB (1000.0)"
+],
+[
+"fL, fH",
+"10.0 Hz, 10000.0 Hz (poles at 10 Hz and 10 kHz)"
+],
+[
+"BW",
+"9990.0 Hz"
+],
+[
+"Type",
+"band-pass"
+]
+],
+"how": "Midband: s ≫ 20π, s ≪ 2π×10⁴: Av = 2π×10⁷/(2π×10⁴) = 10³. The −3 dB frequencies are found by a numerical sweep and agree with the pole frequencies.",
+"assume": []
+},
+"10.77": {
+"number": "10.77",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"Amid",
+"80.0 dB (10000.0)"
+],
+[
+"fH",
+"100.0 Hz"
+],
+[
+"fL",
+"0 (dc gain is the mid-band gain)"
+],
+[
+"BW",
+"100.0 Hz"
+],
+[
+"Type",
+"low-pass"
+]
+],
+"how": "Av(0) = 2π×10⁶/200π = 10⁴; single pole at 200π rad/s = 100 Hz.",
+"assume": []
+},
+"10.78": {
+"number": "10.78",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"Amid",
+"80.0 dB (10000.0)"
+],
+[
+"fL",
+"100.0 Hz"
+],
+[
+"fH",
+"∞ (ideal single-pole high-pass)"
+],
+[
+"BW",
+"∞"
+],
+[
+"Type",
+"high-pass"
+]
+],
+"how": "For s ≫ 200π the gain is 10⁴; zero at the origin and pole at 200π rad/s = 100 Hz (Eq. 10.78).",
+"assume": []
+},
+"10.79": {
+"number": "10.79",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"Amid (at f0)",
+"33.98 dB (50.0)"
+],
+[
+"f0, Q",
+"1.592 MHz, 100.0"
+],
+[
+"fL, fH",
+"1.584 MHz, 1.6 MHz"
+],
+[
+"BW = f0/Q",
+"15.92 kHz"
+],
+[
+"Type",
+"band-pass (second order)"
+]
+],
+"how": "ω0 = √10¹⁴ = 10⁷ rad/s, ω0/Q = 10⁵ rad/s so Q = 100; at ω0 |Av| = 5×10⁶/10⁵ = 50. Cutoffs by a numerical sweep; fL·fH = f0².",
+"assume": []
+},
+"10.80": {
+"number": "10.80",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"Amid (gain away from the notch)",
+"26.02 dB (20.0)"
+],
+[
+"Notch frequency, Q",
+"159.2 kHz (ω0 = 10⁶ rad/s), Q = 100.0"
+],
+[
+"fL, fH (−3 dB edges of the notch)",
+"158.4 kHz, 160.0 kHz"
+],
+[
+"BW of the rejected band",
+"1.592 kHz"
+],
+[
+"Type",
+"band-reject (notch)"
+]
+],
+"how": "Numerator zeros on the jω axis at ω = 10⁶ rad/s (gain 0); far from it Av → −20. Edges found numerically; BW = ω0/(2πQ) = 1.59 kHz.",
+"assume": []
+},
+"10.81": {
+"number": "10.81",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"Amid",
+"60.0 dB (1000.0)"
+],
+[
+"fL, fH (−3 dB)",
+"28.33 Hz, 99.02 kHz"
+],
+[
+"BW",
+"99.0 kHz"
+],
+[
+"Type",
+"band-pass"
+],
+[
+"Poles",
+"10 Hz, 25 Hz, 100 kHz, 1 MHz; double zero at 0"
+]
+],
+"how": "Between 25 Hz and 100 kHz: Av ≈ 4π²×10¹⁴/(4π²×10¹¹) = 10³. The two low poles are close, so the exact lower −3 dB point (numerical) lies a little above 25 Hz.",
+"assume": []
+},
+"10.85": {
+"number": "10.85",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"f = 5.0 Hz",
+"|Av| = 447.2, phase 63.41°: vo = 0.8944 V · sin(ωt + 63.41°)"
+],
+[
+"f = 500.0 Hz",
+"|Av| = 998.6, phase -1.717°: vo = 1.997 V · sin(ωt − 1.717°)"
+],
+[
+"f = 50.0 kHz",
+"|Av| = 196.1, phase -78.68°: vo = 0.3922 V · sin(ωt − 78.68°)"
+]
+],
+"how": "Evaluate Av(jω) of Problem 10.76 (complex arithmetic; checked against the pole-zero product form).",
+"assume": []
+},
+"10.86": {
+"number": "10.86",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"f = 1.0 Hz",
+"|Av| = 100.0, phase 89.43°: vo = 30.0 mV · sin(ωt + 89.43°)"
+],
+[
+"f = 50.0 Hz",
+"|Av| = 4472.0, phase 63.43°: vo = 1342.0 mV · sin(ωt + 63.43°)"
+],
+[
+"f = 5.0 kHz",
+"|Av| = 9998.0, phase 1.146°: vo = 2999.0 mV · sin(ωt + 1.146°)"
+]
+],
+"how": "Evaluate Av(jω) of Problem 10.78.",
+"assume": []
+},
+"10.87": {
+"number": "10.87",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"f = 2.0 Hz",
+"|Av| = 9998.0, phase -1.146°: vo = 99980.0 μV · sin(ωt − 1.146°)"
+],
+[
+"f = 2.0 kHz",
+"|Av| = 499.4, phase -87.14°: vo = 4994.0 μV · sin(ωt − 87.14°)"
+],
+[
+"f = 200.0 kHz",
+"|Av| = 5.0, phase -89.97°: vo = 50.0 μV · sin(ωt − 89.97°)"
+]
+],
+"how": "Evaluate Av(jω) of Problem 10.77.",
+"assume": []
+},
+"10.88": {
+"number": "10.88",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"f = 1.59 MHz",
+"|Av| = 49.08, phase -169.0°: vo = 0.1963 V · sin(ωt − 169.0°)"
+],
+[
+"f = 1.0 MHz",
+"|Av| = 0.5191, phase -90.59°: vo = 0.002076 V · sin(ωt − 90.59°)"
+],
+[
+"f = 5.0 MHz",
+"|Av| = 0.1771, phase 90.2°: vo = 7.084e-4 V · sin(ωt + 90.2°)"
+]
+],
+"how": "Evaluate Av(jω) of Problem 10.79.",
+"assume": []
+},
+"10.89": {
+"number": "10.89",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"f = 159.0 kHz",
+"|Av| = 3.824, phase 101.0°: vo = 0.956 V · sin(ωt + 101.0°)"
+],
+[
+"f = 50.0 kHz",
+"|Av| = 20.0, phase 179.8°: vo = 5.0 V · sin(ωt + 179.8°)"
+],
+[
+"f = 200.0 kHz",
+"|Av| = 20.0, phase -178.8°: vo = 4.999 V · sin(ωt − 178.8°)"
+]
+],
+"how": "Evaluate Av(jω) of Problem 10.80.",
+"assume": []
+},
+"10.90": {
+"number": "10.90",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"f = 5.0 Hz",
+"|Av| = 87.71, phase 142.1°: vo = 0.1754 V · sin(ωt + 142.1°)"
+],
+[
+"f = 500.0 Hz",
+"|Av| = 998.5, phase 3.693°: vo = 1.997 V · sin(ωt + 3.693°)"
+],
+[
+"f = 50.0 kHz",
+"|Av| = 893.3, phase -29.39°: vo = 1.787 V · sin(ωt − 29.39°)"
+]
+],
+"how": "Evaluate Av(jω) of Problem 10.81.",
+"assume": []
+},
+"10.91": {
+"number": "10.91",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"(a) Av(s) = A0·ωH/(s + ωH)",
+"A0 = 19.95 (26 dB), ωH = 3.142e+7 rad/s: Av(s) = 6.268e+8/(s + 3.142e+7)"
+],
+[
+"(b) with 180° at f = 0",
+"Av(s) = −6.268e+8/(s + 3.142e+7)"
+]
+],
+"how": "Single-pole low-pass amplifier, Eq. (10.66).",
+"assume": []
+},
+"10.92": {
+"number": "10.92",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"(a) Av(s) = A0·ωH·s/[(s + ωL)(s + ωH)]",
+"A0 = 100 (40 dB), ωL = 2513.0, ωH = 6.283e+5 rad/s: Av(s) = 6.283e+7·s/[(s + 2513.0)(s + 6.283e+5)]"
+],
+[
+"(b) with 180° at f = 0",
+"the same with a minus sign in front"
+]
+],
+"how": "Band-pass amplifier = high-pass × low-pass; midband gain A0 requires ωH ≫ ωL.",
+"assume": []
+},
+"10.94": {
+"number": "10.94",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"(a) phase shifts needed",
+"linear in frequency: 10° at 500 Hz, 30° at 1500 Hz, 50° at 2500 Hz (each frequency delayed by the same time 55.6 μs)"
+],
+[
+"Output",
+"vo(t) = 3.162·[sin(1000πt − 10°) + 0.333 sin(3000πt − 30°) + 0.2 sin(5000πt − 50°)] V = 3.162·[sin 1000π(t − 55.6 μs) + 0.333 sin 3000π(t − 55.6 μs) + 0.2 sin 5000π(t − 55.6 μs)] V"
+]
+],
+"how": "No waveform distortion needs equal gain and a time delay td constant: phase = −ω·td. At 500 Hz 10° = 360°·500·td gives td = 55.6 μs.",
+"assume": [
+"The phase shifts are taken as lags (delays)."
+]
+},
+"10.95": {
+"number": "10.95",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"Midband gain",
+"-0.8279 dB (0.9091)"
+],
+[
+"Upper cutoff fH",
+"1.751 kHz"
+]
+],
+"how": "Ex. 10.8: Av = [R2/(R1+R2)]/(1 + s/ωH), ωH = 1/[(R1‖R2)C].",
+"assume": []
+},
+"10.96": {
+"number": "10.96",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"Midband gain",
+"-4.437 dB (0.6)"
+],
+[
+"Upper cutoff fH",
+"13.26 kHz"
+]
+],
+"how": "Same formulas as Problem 10.95.",
+"assume": []
+},
+"10.97": {
+"number": "10.97",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 613,
+"printed": 584,
+"parts": [
+[
+"(a) R2 for loss ≤ 0.5 dB",
+"R2/(R1 + R2) ≥ 0.9441 → R2 ≥ 10.46 kΩ"
+],
+[
+"(a) C for fH = 20 kHz (R2 = that minimum)",
+"13.6 nF"
+],
+[
+"(b) standard values",
+"R1 = 620 Ω, R2 = 11 kΩ → loss 0.4763 dB, C = 13.56 nF → 13 nF gives fH = 20.86 kHz"
+]
+],
+"how": "Loss at low frequency = −20·log₁₀[R2/(R1+R2)] ≤ 0.5 dB gives R2 ≥ 16.9·R1; then C = 1/[2π(R1‖R2)fH].",
+"assume": [
+"Standard values from the 5 % series (620 Ω and 11 kΩ)."
+]
+},
+"10.99": {
+"number": "10.99",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"(a) R1, R2, C",
+"R1 = 10.0 kΩ, R2 = 100.0 kΩ, C = 79.58 pF"
+],
+[
+"(b) standard values",
+"R1 = 10.0 kΩ, R2 = 100 kΩ, C = 82 pF → fH = 19.41 kHz"
+]
+],
+"how": "Active low-pass amplifier (inverting, C across R2): Av = −(R2/R1)/(1 + sR2C); Rin = R1, |Av| = 10, fH = 1/(2πR2C).",
+"assume": [
+"Circuit: inverting amplifier with C in parallel with R2 (Section 10.10.2/10.10.5)."
+]
+},
+"10.101": {
+"number": "10.101",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"Midband gain",
+"-0.9995 dB (0.8913)"
+],
+[
+"Cutoff frequency (the high-pass has a LOWER cutoff fL; fH is infinite)",
+"173.0 Hz"
+]
+],
+"how": "Ex. 10.9: Av = [R2/(R1+R2)]·s/(s + ωL), ωL = 1/[(R1 + R2)C]. (The statement says \"upper\" but only the lower cutoff exists.)",
+"assume": []
+},
+"10.102": {
+"number": "10.102",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"Midband gain",
+"-2.984 dB (0.7092)"
+],
+[
+"Cutoff frequency (lower cutoff fL)",
+"282.2 Hz"
+]
+],
+"how": "Same formulas as Problem 10.101.",
+"assume": []
+},
+"10.103": {
+"number": "10.103",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"(a) R2 for loss ≤ 0.5 dB at high frequency",
+"R2 ≥ 6.582 kΩ"
+],
+[
+"(a) C for fL = 20 kHz",
+"1.141 nF"
+],
+[
+"(b) standard values",
+"R1 = 390 Ω, R2 = 6.8 kΩ → loss 0.4844 dB, C = 1.107 nF → use 1.1 nF (fL = 20.12 kHz)"
+]
+],
+"how": "Loss = −20·log₁₀[R2/(R1+R2)] ≤ 0.5 dB gives R2 ≥ 16.9·R1; C = 1/[2π(R1 + R2)fL].",
+"assume": [
+"Standard values from the 5 % series."
+]
+},
+"10.105": {
+"number": "10.105",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"(a) R1, R2, C",
+"R1 = 20.0 kΩ, R2 = 200.0 kΩ, C = 7.958 nF"
+],
+[
+"(b) standard values",
+"R1 = 20.0 kΩ, R2 = 200 kΩ, C = 8.2 nF → fL = 970.5 Hz"
+]
+],
+"how": "Active high-pass amplifier (inverting, C in series with R1): Rin(high f) = R1, |Av| = R2/R1 = 10, fL = 1/(2πR1C) (same form as Example 10.10).",
+"assume": []
+},
+"11.3": {
+"number": "11.3",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"Minimum loop gain",
+"T ≥ 499.0 (1 + T ≥ 500)"
+]
+],
+"how": "FGE = 1/(1 + T) < 0.2 % → T > 499. The ideal gain (50 dB) does not matter for the fractional error.",
+"assume": []
+},
+"11.4": {
+"number": "11.4",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) S = (A/Av)(dAv/dA) = 1/(1 + Aβ)",
+"9.990e-4"
+],
+[
+"(b) estimated change of Av for a 10 % change of A",
+"0.00999 %"
+],
+[
+"(b) exact change",
+"0.009083 %"
+]
+],
+"how": "Av = A/(1 + Aβ), dAv/dA = 1/(1 + Aβ)², so S = 1/(1 + Aβ); T = 10⁵ × 0.01 = 1000.",
+"assume": []
+},
+"11.5": {
+"number": "11.5",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) R1 = 12 kΩ, R2 = 150 kΩ, A = 86 dB",
+""
+],
+[
+"Noninverting",
+"Ideal Av = 13.5, T = Aβ = 1478.0, actual Av = 13.49"
+],
+[
+"Gain error GE = ideal − actual",
+"0.009128"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.06761 %"
+],
+[
+"(b) R1 = 1.2 kΩ",
+""
+],
+[
+"Noninverting",
+"Ideal Av = 126.0, T = Aβ = 158.4, actual Av = 125.2"
+],
+[
+"Gain error GE = ideal − actual",
+"0.7907"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.6275 %"
+]
+],
+"how": "Eqs. (11.4)–(11.6) with β = R1/(R1 + R2); checked with an exact nodal solution of the circuit.",
+"assume": []
+},
+"11.6": {
+"number": "11.6",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) A = 94 dB",
+""
+],
+[
+"Noninverting",
+"Ideal Av = 8.581, T = Aβ = 5841.0, actual Av = 8.579"
+],
+[
+"Gain error GE = ideal − actual",
+"0.001469"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.01712 %"
+],
+[
+"(b) A = 100 dB",
+""
+],
+[
+"Noninverting",
+"Ideal Av = 8.581, T = Aβ = 11650.0, actual Av = 8.58"
+],
+[
+"Gain error GE = ideal − actual",
+"7.362e-4"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.00858 %"
+]
+],
+"how": "As Problem 11.5.",
+"assume": []
+},
+"11.9": {
+"number": "11.9",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) R1 = 11 kΩ, R2 = 220 kΩ, A = 86 dB",
+""
+],
+[
+"Inverting",
+"Ideal Av = -20.0, T = Aβ = 950.1, actual Av = -19.98"
+],
+[
+"Gain error GE = ideal − actual",
+"-0.02103"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.1051 %"
+],
+[
+"(b) R1 = 1.1 kΩ",
+""
+],
+[
+"Inverting",
+"Ideal Av = -200.0, T = Aβ = 99.27, actual Av = -198.0"
+],
+[
+"Gain error GE = ideal − actual",
+"-1.995"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.9973 %"
+]
+],
+"how": "Eq. (11.17): Av = −(R2/R1)·T/(1 + T), T = Aβ, β = R1/(R1 + R2).",
+"assume": []
+},
+"11.11": {
+"number": "11.11",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) A = 94 dB",
+""
+],
+[
+"Inverting",
+"Ideal Av = -10.0, T = Aβ = 4556.0, actual Av = -9.998"
+],
+[
+"Gain error GE = ideal − actual",
+"-0.002194"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.02194 %"
+],
+[
+"(b) A = 100 dB",
+""
+],
+[
+"Inverting",
+"Ideal Av = -10.0, T = Aβ = 9091.0, actual Av = -9.999"
+],
+[
+"Gain error GE = ideal − actual",
+"-0.0011"
+],
+[
+"Fractional gain error FGE = 1/(1+T)",
+"0.011 %"
+]
+],
+"how": "As Problem 11.9.",
+"assume": []
+},
+"11.12": {
+"number": "11.12",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"Required open-loop gain",
+"A ≥ 42000.0 (92.47 dB)"
+]
+],
+"how": "FGE = 1/(1 + Aβ) ≤ 0.15 % with β = 1/Av(ideal) = 1/63.1.",
+"assume": []
+},
+"11.13": {
+"number": "11.13",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"Required open-loop gain",
+"A ≥ 2.003e+5 (106.0 dB)"
+]
+],
+"how": "Inverting: β = R1/(R1 + R2) = 1/(1 + |Av|) = 1/200.5; FGE = 1/(1 + Aβ) ≤ 0.1 %.",
+"assume": []
+},
+"11.17": {
+"number": "11.17",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"(a) A = 100 dB",
+""
+],
+[
+"Noninverting",
+"Av = 14.39, Rin = 3.474 GΩ, Rout = 43.17 mΩ (T = 6948.0); exact circuit: Av = 14.39, Rin = 3.462 GΩ, Rout = 43.62 mΩ"
+],
+[
+"(b) A = 94 dB",
+""
+],
+[
+"Noninverting",
+"Av = 14.39, Rin = 1.742 GΩ, Rout = 86.13 mΩ (T = 3482.0); exact circuit: Av = 14.39, Rin = 1.735 GΩ, Rout = 87.03 mΩ"
+]
+],
+"how": "Av = A/(1+T), Rin = Rid(1+T), Rout = Ro/(1+T)‖(R1+R2); checked with an exact nodal analysis.",
+"assume": []
+},
+"11.18": {
+"number": "11.18",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"(a) R1 = 15 kΩ, R2 = 150 kΩ",
+""
+],
+[
+"Noninverting",
+"Av = 10.99, Rin = 363.0 MΩ, Rout = 110.2 mΩ (T = 1814.0); exact circuit: Av = 10.99, Rin = 362.5 MΩ, Rout = 117.7 mΩ"
+],
+[
+"(b) R1 = 1.2 kΩ",
+""
+],
+[
+"Noninverting",
+"Av = 125.2, Rin = 31.87 MΩ, Rout = 1.255 Ω (T = 158.4); exact circuit: Av = 125.2, Rin = 31.83 MΩ, Rout = 1.262 Ω"
+]
+],
+"how": "As Problem 11.17.",
+"assume": []
+},
+"11.19": {
+"number": "11.19",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"(a) A = 94 dB",
+""
+],
+[
+"Inverting",
+"Av = -9.998, Rin = 4.701 kΩ, Rout = 43.89 mΩ (T = 4556.0); exact circuit: Av = -9.998, Rin = 4.701 kΩ, Rout = 44.26 mΩ"
+],
+[
+"(b) A = 100 dB",
+""
+],
+[
+"Inverting",
+"Av = -9.999, Rin = 4.7 kΩ, Rout = 22.0 mΩ (T = 9091.0); exact circuit: Av = -9.999, Rin = 4.7 kΩ, Rout = 22.19 mΩ"
+]
+],
+"how": "Av = −(R2/R1)T/(1+T), Rin = R1 + Rid‖[R2/(1+A)] (11.37), Rout = Ro/(1+T)‖(R1+R2); checked with an exact nodal analysis.",
+"assume": []
+},
+"11.20": {
+"number": "11.20",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"(a) A = 100 dB",
+""
+],
+[
+"Inverting",
+"Av = -19.58, Rin = 2.4 kΩ, Rout = 41.16 mΩ (T = 4858.0); exact circuit: Av = -19.58, Rin = 2.4 kΩ, Rout = 41.47 mΩ"
+],
+[
+"(b) A = 94 dB",
+""
+],
+[
+"Inverting",
+"Av = -19.58, Rin = 2.401 kΩ, Rout = 82.1 mΩ (T = 2435.0); exact circuit: Av = -19.58, Rin = 2.401 kΩ, Rout = 82.73 mΩ"
+]
+],
+"how": "As Problem 11.19.",
+"assume": []
+},
+"11.21": {
+"number": "11.21",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"(a) configuration",
+"noninverting: only series feedback at the input can raise Rin far above the resistors (an inverting stage has Rin ≈ R1 and is limited by R1)"
+],
+[
+"(b) |Av| = 200: T = A/200",
+"250.0"
+],
+[
+"Rin = Rid(1+T)",
+"125.5 MΩ < 2×10⁸ Ω: NOT met"
+],
+[
+"Rout = Ro/(1+T)",
+"139.4 mΩ ≤ 0.2 Ω: met"
+]
+],
+"how": "β = 1/200, T = 5×10⁴/200 = 250.",
+"assume": []
+},
+"11.22": {
+"number": "11.22",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"T = A/200",
+"50.0"
+],
+[
+"Rin = Rid(1+T)",
+"51.0 MΩ < 10⁸ Ω: NOT met"
+],
+[
+"Rout = Ro/(1+T)",
+"1.961 Ω > 0.2 Ω: NOT met"
+],
+[
+"Gain |Av| = 200",
+"can be met"
+],
+[
+"Conclusion",
+"a single stage cannot meet Rin and Rout; only the gain can"
+]
+],
+"how": "Noninverting stage with β = 1/200 (the best choice for Rin).",
+"assume": []
+},
+"11.25": {
+"number": "11.25",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"Gain error from the finite open-loop gain alone",
+"0.4992 %"
+],
+[
+"Resistor tolerance allowed (worst case)",
+"±0.2536 %"
+]
+],
+"how": "Worst case: R2 low and R1 high; total gain error = 1 − (Av,actual/Av,ideal) ≤ 1 %, solved numerically with Eq. (11.17). A 0.1 % resistor is therefore adequate.",
+"assume": []
+},
+"11.26": {
+"number": "11.26",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"Gain error from the finite open-loop gain alone",
+"1.237 %"
+],
+[
+"Resistor tolerance allowed (worst case)",
+"±0.3932 %"
+]
+],
+"how": "As Problem 11.25 with Av = A/(1 + Aβ), β = R1/(R1+R2); total error ≤ 2 %.",
+"assume": []
+},
+"11.31": {
+"number": "11.31",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"(a) largest Rin (series input feedback, β = 1)",
+"4.0 GΩ"
+],
+[
+"(b) smallest Rin (shunt input feedback, β = 1)",
+"400.0 mΩ"
+],
+[
+"(c) largest Rout (series output feedback)",
+"100.0 MΩ"
+],
+[
+"(d) smallest Rout (shunt output feedback)",
+"10.0 mΩ"
+]
+],
+"how": "Series feedback multiplies a port resistance by (1 + Aβ), shunt feedback divides it by (1 + Aβ); a resistive network cannot give β > 1, so the extremes use β = 1 and Aβ = A = 10⁵.",
+"assume": [
+"β ≤ 1 for a passive resistive feedback network."
+]
+},
+"11.32": {
+"number": "11.32",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"(a) largest current gain",
+"Ai = A·Rid/Ro = 3.162e+5 (110.0 dB)"
+],
+[
+"(b) largest transconductance",
+"Gm = A/Ro = 6.325 S"
+]
+],
+"how": "Negative feedback can only lower a gain below its open-loop value: for the current amplifier the open-loop (short-circuit) gain is A·Rid/Ro, for the transconductance amplifier A/Ro.",
+"assume": []
+},
+"11.35": {
+"number": "11.35",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"Loop gain T (return ratio, loading included)",
+"9112.0"
+],
+[
+"Ideal gain",
+"3.0"
+],
+[
+"Actual voltage gain",
+"3.0"
+],
+[
+"Input resistance",
+"368.3 MΩ"
+],
+[
+"Output resistance (RL removed)",
+"399.0 mΩ"
+]
+],
+"how": "Exact nodal analysis of the noninverting circuit with Rid = 30 kΩ, Ro = 5 kΩ, RL = 20 kΩ; T is the return ratio of the dependent source (it includes the loading of Rid, Ro, RL and the feedback network).",
+"assume": [
+"The textbook approximates the loaded amplifier by the Section 11.5 two-port method; the exact values are given here."
+]
+},
+"11.37": {
+"number": "11.37",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 705,
+"printed": 676,
+"parts": [
+[
+"(a) S(Rin) = (A/Rin)(dRin/dA) = Aβ/(1 + Aβ)",
+"0.998"
+],
+[
+"(b) change of Rin for a 10 % change of A",
+"9.98 % (exact 9.98 %)"
+],
+[
+"(c) S(Rout) = −Aβ/(1 + Aβ)",
+"-0.999"
+],
+[
+"(d) change of Rout for a 10 % change of A",
+"-9.99 % (exact -9.083 %)"
+]
+],
+"how": "Rin = Rid(1 + Aβ), Rout = Ro/(1 + Aβ); differentiate with respect to A.",
+"assume": []
+},
+"11.42": {
+"number": "11.42",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 705,
+"printed": 676,
+"parts": [
+[
+"Loop gain T (return ratio, loading included)",
+"7238.0"
+],
+[
+"Ideal gain",
+"-2.0"
+],
+[
+"Actual voltage gain",
+"-2.0"
+],
+[
+"Input resistance",
+"15.0 kΩ"
+],
+[
+"Output resistance (RL removed)",
+"502.3 mΩ"
+]
+],
+"how": "Exact nodal analysis of the inverting circuit with Rid = 30 kΩ, Ro = 5 kΩ, RL = 20 kΩ.",
+"assume": [
+"Exact values are given; the textbook uses the Section 11.6 two-port approximation."
+]
+},
+"11.61": {
+"number": "11.61",
+"section": "11.10",
+"modules": [
+"m04"
+],
+"pdf": 706,
+"printed": 677,
+"parts": [
+[
+"vi amplitude 1 mV",
+"fundamental 12.18 V, 3rd 0.8137 V, 5th 0.06775 V, THD = 6.706 %"
+],
+[
+"vi amplitude 2 mV",
+"fundamental 16.77 V, 3rd 2.831 V, 5th 0.6451 V, THD = 17.34 %"
+]
+],
+"how": "Fourier series of 15·tanh(1000·vi) found by numerical integration (odd symmetry: only odd harmonics) and checked with an FFT; THD = √(ΣVn²)/V1 up to the 39th harmonic.",
+"assume": [
+"The statement asks for MATLAB; the same numbers are computed here with NumPy."
+]
+},
+"11.76": {
+"number": "11.76",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"Load current at ±10 V",
+"1.0 mA"
+],
+[
+"Maximum feedback-network current",
+"500.0 μA"
+],
+[
+"R1 + R2 ≥",
+"20.0 kΩ"
+],
+[
+"Design (5 % values)",
+"R1 = 110 Ω, R2 = 22 kΩ → gain 201.0 (46.06 dB); output current at ±10 V = 1.452 mA ≤ 1.5 mA"
+]
+],
+"how": "The op amp must supply the load current plus the current in R1 + R2: 10 V/10 kΩ + 10 V/(R1 + R2) ≤ 1.5 mA.",
+"assume": [
+"R1 = 100 Ω would need R1 + R2 ≈ 19.95 kΩ, just under the limit, so 110 Ω is used."
+]
+},
+"11.77": {
+"number": "11.77",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"Load current at ±15 V",
+"3.0 mA"
+],
+[
+"R2 ≥ (feedback current ≤ 1 mA)",
+"15.0 kΩ"
+],
+[
+"Design (5 % values)",
+"R1 = 110 Ω, R2 = 16 kΩ → gain -145.5 (43.25 dB); output current = 3.938 mA ≤ 4 mA"
+]
+],
+"how": "Inverting: the feedback current is vo/R2 (virtual ground): 15/5k + 15/R2 ≤ 4 mA → R2 ≥ 15 kΩ; R1 ≈ R2/141.",
+"assume": [
+"110 Ω and 16 kΩ are 5 % values; the ideal ratio 141 would be 15 kΩ/106 Ω."
+]
+},
+"11.79": {
+"number": "11.79",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"(a) R2 (the feedback current must fit in the remaining 0.5 mA)",
+"20.0 kΩ"
+],
+[
+"(a) R1 = R2/199.5 (as small as possible)",
+"100.2 Ω"
+],
+[
+"(b) largest input amplitude",
+"50.12 mV"
+],
+[
+"(c) input resistance",
+"100.2 Ω"
+]
+],
+"how": "Output guaranteed ±10 V into 4 kΩ → 2.5 mA; the 5 kΩ load takes 2 mA, so 10 V/R2 ≤ 0.5 mA → R2 ≥ 20 kΩ; Rin = R1 = R2/|Av|.",
+"assume": []
+},
+"11.87": {
+"number": "11.87",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"(a) open-loop bandwidth",
+"20.0 Hz"
+],
+[
+"(b) unity-gain frequency",
+"2.0 MHz"
+],
+[
+"(c) open-loop gain",
+"1.500e+5 (103.5 dB)"
+]
+],
+"how": "fT = A0·BW (gain-bandwidth product); 100 dB = 10⁵.",
+"assume": []
+},
+"11.88": {
+"number": "11.88",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"Open-loop bandwidth",
+"25.12 Hz"
+],
+[
+"(a) noninverting, Av = 32 dB: BW = fT/Av",
+"25.12 kHz"
+],
+[
+"(b) inverting, |Av| = 32 dB: BW = fT/(1 + |Av|)",
+"24.5 kHz"
+]
+],
+"how": "Single-pole op amp: closed-loop BW = fT·β with β = 1/Av (noninverting) or 1/(1 + |Av|) (inverting).",
+"assume": []
+},
+"11.89": {
+"number": "11.89",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"Open-loop bandwidth",
+"50.0 Hz"
+],
+[
+"(a) voltage follower: BW = fT",
+"5.0 MHz"
+],
+[
+"(b) unity-gain inverter: BW = fT/2",
+"2.5 MHz"
+]
+],
+"how": "β = 1 for the follower, β = 1/2 for the unity-gain inverter.",
+"assume": []
+},
+"11.90": {
+"number": "11.90",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"Open-loop bandwidth",
+"100.0 Hz"
+],
+[
+"(a) voltage follower",
+"10.0 MHz"
+],
+[
+"(b) unity-gain inverter",
+"5.0 MHz"
+]
+],
+"how": "As Problem 11.89 with fT = 10 MHz.",
+"assume": []
+},
+"11.91": {
+"number": "11.91",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"(a) maximum noninverting gain",
+"200.0 (46.02 dB)"
+],
+[
+"(b) maximum inverting gain",
+"|Av| = 199.0"
+]
+],
+"how": "BW = fT/Av (noninverting), fT/(1 + |Av|) (inverting) ≥ 20 kHz with fT = 4 MHz. The open-loop gain (94 dB) only fixes the open-loop bandwidth, 80 Hz.",
+"assume": []
+},
+"11.92": {
+"number": "11.92",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"Open-loop bandwidth",
+"250.6 Hz"
+],
+[
+"(a) noninverting, gain 3",
+"1.667 MHz"
+],
+[
+"(b) inverting, gain 3",
+"1.25 MHz"
+]
+],
+"how": "BW = fT/Av and fT/(1 + |Av|).",
+"assume": []
+},
+"11.93": {
+"number": "11.93",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"(a) mid-band gain, fL, fH",
+"10000.0 (80.0 dB), 1.0 kHz, 1.0 MHz"
+],
+[
+"(b) closed-loop gain 100",
+"T0 = Aβ = 100.0; closed-loop mid-band gain 99.01; fL = 9.901 Hz (≈ fL/(1 + T0) = 9.901 Hz), fH = 101.0 MHz (≈ fH(1 + T0) = 101.0 MHz)"
+],
+[
+"(c) closed-loop gain 40",
+"T0 = Aβ = 250.0; closed-loop mid-band gain 39.84; fL = 3.984 Hz (≈ fL/(1 + T0) = 3.984 Hz), fH = 251.0 MHz (≈ fH(1 + T0) = 251.0 MHz)"
+]
+],
+"how": "A(s) = 2π×10¹⁰ s/[(s + 2000π)(s + 2π×10⁶)]: band-pass with mid-band gain 10⁴. Feedback with β = 1/Acl multiplies the upper cutoff by (1 + Aβ) and divides the lower cutoff by it; exact −3 dB points were found numerically from Acl = A/(1 + βA) and agree within 2 %.",
+"assume": []
+},
+"11.97": {
+"number": "11.97",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"(a) Zout(s)",
+"Ro(1 + s/ωH)/(1 + T0 + s/ωH) with Ro = 250 Ω, T0 = A0β = 950.1, ωH = 1575.0 rad/s (250.6 Hz)"
+],
+[
+"Low-frequency value",
+"262.8 mΩ"
+],
+[
+"Zero / pole",
+"zero at 250.6 Hz, pole at 238.3 kHz"
+],
+[
+"(b) Bode plot",
+"flat at 262.8 mΩ up to 250.6 Hz, rises 20 dB/decade (inductive) to Ro = 250 Ω at 238.3 kHz, then flat"
+]
+],
+"how": "Zout = Ro/(1 + T(s)) with T(s) = A(s)β, A(s) = A0/(1 + s/ωH), β = R1/(R1 + R2) = 1/21 for the inverting gain 20, ωH = ωT/A0.",
+"assume": []
+},
+"11.100": {
+"number": "11.100",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 709,
+"printed": 680,
+"parts": [
+[
+"(a) Zin(s)",
+"Rid(1 + T0 + s/ωH)/(1 + s/ωH) with Rid = 100 kΩ, T0 = 997.6, ωH = 787.3 rad/s (125.3 Hz)"
+],
+[
+"Low-frequency value",
+"99.86 MΩ"
+],
+[
+"Pole / zero",
+"pole at 125.3 Hz, zero at 125.1 kHz"
+],
+[
+"(b) Bode plot",
+"flat at 99.86 MΩ up to 125.3 Hz, falls 20 dB/decade (capacitive) to Rid = 100 kΩ at 125.1 kHz, then flat"
+]
+],
+"how": "Zin = Rid(1 + T(s)), T(s) = A(s)β with β = 1/20 for the noninverting gain 20, ωH = ωT/A0.",
+"assume": []
+},
+"11.109": {
+"number": "11.109",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"(a) 50 V peak-to-peak (Vp = 25 V) at 20 kHz",
+"SR ≥ 2π·f·Vp = 3.142 MV/s = 3.142 V/μs"
+],
+[
+"(b) at 20 Hz",
+"SR ≥ 3.142 kV/s = 0.003142 V/μs"
+]
+],
+"how": "The maximum slope of Vp·sin ωt is ωVp.",
+"assume": []
+},
+"11.110": {
+"number": "11.110",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Full-power bandwidth",
+"88.42 kHz"
+]
+],
+"how": "fFP = SR/(2π·Vp) with SR = 10 V/μs and Vp = 18 V.",
+"assume": []
+},
+"12.25": {
+"number": "12.25",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 790,
+"printed": 761,
+"parts": [
+[
+"Maximum gain with 2 stages (≤ 50 each)",
+"2500.0 < 5000"
+],
+[
+"Stages needed",
+"3 (≈ 17.1 = 24.66 dB each, or 50 × 50 × 2 = 5000)"
+]
+],
+"how": "Total gain is the product of the stage gains: 50ⁿ ≥ 5000 gives n ≥ 2.2 → 3 stages. The Rin and Rout requirements need the op-amp table that the statement refers to (not reproduced in the text).",
+"assume": [
+"Only the gain constraint is evaluated here."
+]
+},
+"12.69": {
+"number": "12.69",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 793,
+"printed": 764,
+"parts": [
+[
+"Ideal LSB",
+"0.125 VFS (endpoints 0 and 0.875 VFS)"
+],
+[
+"001",
+"step 0.8 LSB, DNL -0.2 LSB, INL -0.2 LSB"
+],
+[
+"010",
+"step 1.6 LSB, DNL 0.6 LSB, INL 0.4 LSB"
+],
+[
+"011",
+"step 0.4 LSB, DNL -0.6 LSB, INL -0.2 LSB"
+],
+[
+"100",
+"step 1.0 LSB, DNL 0 LSB, INL -0.2 LSB"
+],
+[
+"101",
+"step 1.24 LSB, DNL 0.24 LSB, INL 0.04 LSB"
+],
+[
+"110",
+"step 0.76 LSB, DNL -0.24 LSB, INL -0.2 LSB"
+],
+[
+"111",
+"step 1.2 LSB, DNL 0.2 LSB, INL 0 LSB"
+],
+[
+"Largest errors",
+"differential 0.6 LSB, integral 0.4 LSB"
+]
+],
+"how": "Step size = ΔVout/LSB, differential error = step − 1 LSB, integral error = actual output − ideal line through the end points, in LSB; the sum of the differential errors reproduces the integral error.",
+"assume": []
+},
+"12.83": {
+"number": "12.83",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 794,
+"printed": 765,
+"parts": [
+[
+"Code (decimal)",
+"11186"
+],
+[
+"LSB = VFS/2¹⁴",
+"312.5 μV"
+],
+[
+"Input range",
+"3.495 V ≤ vX ≤ 3.496 V (N·LSB ± ½ LSB, N·LSB = 3.496 V)"
+]
+],
+"how": "Eq. (12.53) and Fig. 12.28: the quantization error of an ideal ADC is at most ½ LSB.",
+"assume": [
+"Range taken as (N ± ½)·LSB as in Fig. 12.28."
+]
+},
+"12.84": {
+"number": "12.84",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 794,
+"printed": 765,
+"parts": [
+[
+"(a) LSB = VFS/2²⁰",
+"1.907 μV"
+],
+[
+"(b) 1.630500 V",
+"N = 854852, code 11010000101101000100 (back-converted 1.631 V)"
+],
+[
+"(c) 0.997030 V",
+"N = 522731, code 01111111100111101011 (back-converted 0.997 V)"
+]
+],
+"how": "Code = nearest integer to vX/LSB (quantization error ≤ ½ LSB).",
+"assume": []
+},
+"12.86": {
+"number": "12.86",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 795,
+"printed": 766,
+"parts": [
+[
+"vX = 3.76 V",
+"code 110000001000 (3080); TT = N/fC = 3.08 ms"
+],
+[
+"vX = 4.333 V",
+"code 110111011101 (3549); TT = N/fC = 3.549 ms"
+]
+],
+"how": "The counter runs until the DAC output reaches vX: N clock periods, with N = vX/VFS·2¹² truncated (the DAC output must not exceed vX).",
+"assume": [
+"Code obtained by truncation (counting converter stops when the DAC output first exceeds vX)."
+]
+},
+"12.92": {
+"number": "12.92",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 795,
+"printed": 766,
+"parts": [
+[
+"LSB time T1/2²⁰",
+"190.7 ns"
+],
+[
+"Switch timing error allowed (< 0.1 LSB)",
+"19.07 ns"
+]
+],
+"how": "A timing error ΔT in T1 is a fractional error ΔT/T1 of full scale; 0.1 LSB = 0.1/2²⁰ of full scale.",
+"assume": []
+}
+},
+"skipped": {
+"7.46": {
+"reason": "needs Table 7.3 and the spreadsheet solution of Problem 7.45 (a differential equation to be solved with software)",
+"modules": [
+"m01"
+],
+"pdf": 436
+},
+"7.64": {
+"reason": "asks for a plot of the power-delay characteristic",
+"modules": [
+"m01"
+],
+"pdf": 437
+},
+"9.86": {
+"reason": "needs the full standard-TTL circuit analysis (several transistor states) with ±20 % resistors; not done",
+"modules": [
+"m01"
+],
+"pdf": 541
+},
+"10.29": {
+"reason": "depends on Figure P10.28 (a transfer characteristic) and Problem 10.28",
+"modules": [
+"m02"
+],
+"pdf": 608
+},
+"10.30": {
+"reason": "depends on Figure P10.28 (a transfer characteristic) and Problem 10.28",
+"modules": [
+"m02"
+],
+"pdf": 608
+},
+"11.24": {
+"reason": "depends on Figure P11.24",
+"modules": [
+"m04"
+],
+"pdf": 704
+},
+"11.64": {
+"reason": "depends on Problem 11.63 and Figure P11.63",
+"modules": [
+"m02"
+],
+"pdf": 706
+},
+"11.95": {
+"reason": "fourth-order band-pass: the closed-loop response with feedback needs a stability (Nyquist/phase-margin) analysis; not done",
+"modules": [
+"m02"
+],
+"pdf": 709
+},
+"11.112": {
+"reason": "asks to draw a macro-model circuit (no numerical answer)",
+"modules": [
+"m02"
+],
+"pdf": 710
+},
+"11.113": {
+"reason": "asks to draw a macro-model circuit (no numerical answer)",
+"modules": [
+"m02"
+],
+"pdf": 710
+},
+"12.15": {
+"reason": "depends on Problem 12.14 and Figure P12.14",
+"modules": [
+"m04"
+],
+"pdf": 788
+},
+"12.27": {
+"reason": "depends on the design of Problem 12.26 (spreadsheet design with a parameter table that is not in the text)",
+"modules": [
+"m04"
+],
+"pdf": 790
+},
+"12.31": {
+"reason": "the op-amp specification list is truncated in the text (only Ao = 85 dB survives); the other specifications are missing",
+"modules": [
+"m04"
+],
+"pdf": 790
+},
+"12.40": {
+"reason": "depends on Design Example 12.6 and Figure 12.5",
+"modules": [
+"m06"
+],
+"pdf": 791
+},
+"12.79": {
+"reason": "asks to derive a formula (no numerical answer)",
+"modules": [
+"m05"
+],
+"pdf": 794
+},
+"12.87": {
+"reason": "ambiguous: the output code depends on the instant at which the input is sampled and the input changes during the conversion",
+"modules": [
+"m05"
+],
+"pdf": 795
+},
+"12.89": {
+"reason": "the \"0.1 LSB time\" criterion for a successive-approximation converter is not defined in the text (clock frequency alone would be 16 × 50,000 = 800 kHz)",
+"modules": [
+"m05"
+],
+"pdf": 795
+},
+"12.90": {
+"reason": "the statement is truncated in the text (the converter is described in a figure)",
+"modules": [
+"m05"
+],
+"pdf": 795
+},
+"12.102": {
+"reason": "depends on Problem 12.101 and a figure",
+"modules": [
+"m07"
+],
+"pdf": 796
+},
+"12.105": {
+"reason": "depends on the low-pass filter circuit in the EIA box on page 747",
+"modules": [
+"m03"
+],
+"pdf": 796
+},
+"12.118": {
+"reason": "depends on the function-generator circuit in the EIA box on page 754",
+"modules": [
+"m03",
+"m07"
+],
+"pdf": 798
+}
+}
+}

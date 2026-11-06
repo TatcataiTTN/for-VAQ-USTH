@@ -40,11 +40,18 @@ def modules_of(e):
         return ['m09'] if n == 2 else ['m10']
     return []
 
+SOLVED = load('jaeger_solved.json') if os.path.exists(os.path.join(OUT, 'jaeger_solved.json')) else dict(solved={}, skipped={})
+def parts_text(parts): return ' | '.join((f'{a}: {b}' if b else a) for a, b in parts)
 cat = []
 for e in raw:
     e = dict(e); b = e['book']
     if b == 'floyd' and e['kind'] == 'problem' and e['number'].isdigit(): e['answer'] = FANS.get(e['chapter'], {}).get(int(e['number']))
     e['modules'] = modules_of(e)
+    if b == 'jaeger5' and e['kind'] == 'problem' and e['number'] in SOLVED['solved']:
+        sv = SOLVED['solved'][e['number']]; e['answer'] = parts_text(sv['parts']); e['ans_kind'] = 'computed'; e['how'] = sv['how']; e['assume'] = sv['assume']; e['parts'] = sv['parts']
+        e['modules'] = sorted(set(e['modules']) | set(sv['modules']))
+    elif b == 'jaeger5' and e['kind'] == 'problem' and e['number'] in SOLVED['skipped']: e['skip'] = SOLVED['skipped'][e['number']]['reason']
+    elif e.get('answer'): e['ans_kind'] = 'printed'
     key = (b, e['chapter'] if b == 'floyd' else 0, e['kind'], e['number'])
     e['in_site'] = sorted(held.get(key, []))
     if b == 'floyd' and e['chapter'] in (6, 7) and e['in_site']: e['modules'] = sorted(set(e['modules']) | set(e['in_site']))
@@ -52,6 +59,7 @@ for e in raw:
 
 def cls(e):
     if e['in_site']: return 'in_site'
+    if e.get('ans_kind') == 'computed': return 'solved'
     if not e['modules']: return 'outside'
     if e.get('sim'): return 'simulation'
     if not e['numeric']: return 'conceptual'
@@ -65,9 +73,9 @@ json.dump(cat, open(os.path.join(OUT, 'catalog.json'), 'w', encoding='utf-8'), e
 C = collections.Counter
 by = collections.defaultdict(lambda: C())
 for e in cat:
-    k = (e['book'], e['kind']); by[k]['total'] += 1; by[k]['numeric'] += e['numeric']; by[k]['figure'] += bool(e.get('figure')); by[k]['answer'] += bool(e['answer']); by[k]['mapped'] += bool(e['modules']); by[k]['in_site'] += bool(e['in_site']); by[k]['ready'] += e['cls'] == 'ready'
-print(f"{'book / kind':28s} total numeric figure answer mapped in_site ready")
-for k, v in sorted(by.items()): print(f"{k[0] + ' / ' + k[1]:28s} {v['total']:5d} {v['numeric']:7d} {v['figure']:6d} {v['answer']:6d} {v['mapped']:6d} {v['in_site']:7d} {v['ready']:5d}")
+    k = (e['book'], e['kind']); by[k]['total'] += 1; by[k]['numeric'] += e['numeric']; by[k]['figure'] += bool(e.get('figure')); by[k]['answer'] += e.get('ans_kind') == 'printed'; by[k]['solved'] += e.get('ans_kind') == 'computed'; by[k]['skipped'] += bool(e.get('skip')); by[k]['mapped'] += bool(e['modules']); by[k]['in_site'] += bool(e['in_site']); by[k]['ready'] += e['cls'] == 'ready'
+print(f"{'book / kind':28s} total numeric figure answer solved mapped in_site ready")
+for k, v in sorted(by.items()): print(f"{k[0] + ' / ' + k[1]:28s} {v['total']:5d} {v['numeric']:7d} {v['figure']:6d} {v['answer']:6d} {v['solved']:6d} {v['mapped']:6d} {v['in_site']:7d} {v['ready']:5d}")
 print('TOTAL entries', len(cat), '| numeric', sum(e['numeric'] for e in cat))
 pm = collections.defaultdict(C)
 for e in cat:

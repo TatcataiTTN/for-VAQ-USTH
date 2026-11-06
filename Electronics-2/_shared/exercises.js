@@ -5,17 +5,17 @@
   var L = (document.documentElement.lang || 'vi').slice(0, 2);
   var X = {
     vi: { load: 'Đang tải danh mục bài tập…', fail: 'Không tải được danh mục: ', book: 'Sách', kind: 'Loại', mod: 'Module', cls: 'Phân loại', all: 'Tất cả', none: 'Không thuộc module nào',
-      num: 'Chỉ bài có số', ans: 'Chỉ bài có đáp án in', search: 'Tìm trong đề, số bài, mục…', n: function (a, b) { return a + ' / ' + b + ' bài'; }, page: 'Trang', prev: '◀ Trước', next: 'Sau ▶',
-      pg: function (p, d) { return 'tr.' + p + ' (PDF ' + d + ')'; }, ansl: 'Đáp án in trong sách', fig: 'cần hình', sim: 'cần mô phỏng', numt: 'có số', site: 'đã có trên site', nonum: 'lý thuyết',
+      num: 'Chỉ bài có số', ans: 'Chỉ bài có đáp án (in hoặc site tính)', search: 'Tìm trong đề, số bài, mục…', n: function (a, b) { return a + ' / ' + b + ' bài'; }, page: 'Trang', prev: '◀ Trước', next: 'Sau ▶',
+      pg: function (p, d) { return 'tr.' + p + ' (PDF ' + d + ')'; }, ansl: 'Đáp án in trong sách', calc: 'Đáp án do site tính (sách không in)', skipl: 'Chưa giải (lý do): ', fig: 'cần hình', sim: 'cần mô phỏng', numt: 'có số', site: 'đã có trên site', nonum: 'lý thuyết',
       books: { floyd: 'Floyd 9e', jaeger5: 'Jaeger 5e', easa: 'EASA M04' },
       kinds: { exercise: 'Exercise (trong bài)', example: 'Example', problem: 'Problem (cuối chương)', related_problem: 'Related Problem', selftest: 'Self-Test', truefalse: 'True/False', circuit_action: 'Circuit-Action', checkup: 'Section Checkup', question: 'Câu hỏi EASA' },
-      classes: { ready: 'Sẵn sàng luyện (có số, không cần hình)', figure: 'Cần hình trong sách', simulation: 'Cần mô phỏng (SPICE/MATLAB…)', conceptual: 'Lý thuyết (không số)', in_site: 'Đã có trong ngân hàng của site', outside: 'Ngoài các module (nền tảng / ngoài đề cương)' } },
+      classes: { solved: 'Site đã giải và kiểm (sách không in đáp án)', ready: 'Sẵn sàng luyện (có số, không cần hình)', figure: 'Cần hình trong sách', simulation: 'Cần mô phỏng (SPICE/MATLAB…)', conceptual: 'Lý thuyết (không số)', in_site: 'Đã có trong ngân hàng của site', outside: 'Ngoài các module (nền tảng / ngoài đề cương)' } },
     en: { load: 'Loading the exercise index…', fail: 'Could not load the index: ', book: 'Book', kind: 'Type', mod: 'Module', cls: 'Class', all: 'All', none: 'In no module',
-      num: 'Numeric only', ans: 'With printed answer only', search: 'Search statement, number, section…', n: function (a, b) { return a + ' of ' + b + ' exercises'; }, page: 'Page', prev: '◀ Previous', next: 'Next ▶',
-      pg: function (p, d) { return 'p.' + p + ' (PDF ' + d + ')'; }, ansl: 'Printed answer', fig: 'figure needed', sim: 'simulator needed', numt: 'numeric', site: 'already on the site', nonum: 'conceptual',
+      num: 'Numeric only', ans: 'With an answer only (printed or computed)', search: 'Search statement, number, section…', n: function (a, b) { return a + ' of ' + b + ' exercises'; }, page: 'Page', prev: '◀ Previous', next: 'Next ▶',
+      pg: function (p, d) { return 'p.' + p + ' (PDF ' + d + ')'; }, ansl: 'Printed answer', calc: 'Computed by this site (the book prints none)', skipl: 'Not solved (reason): ', fig: 'figure needed', sim: 'simulator needed', numt: 'numeric', site: 'already on the site', nonum: 'conceptual',
       books: { floyd: 'Floyd 9e', jaeger5: 'Jaeger 5e', easa: 'EASA M04' },
       kinds: { exercise: 'Exercise (in-text)', example: 'Example', problem: 'Problem (end of chapter)', related_problem: 'Related Problem', selftest: 'Self-Test', truefalse: 'True/False', circuit_action: 'Circuit-Action', checkup: 'Section Checkup', question: 'EASA question' },
-      classes: { ready: 'Ready to practise (numeric, no figure)', figure: 'Needs a figure from the book', simulation: 'Needs a simulator (SPICE/MATLAB…)', conceptual: 'Conceptual (no numbers)', in_site: 'Already in the site\'s bank', outside: 'Outside the modules (background / beyond syllabus)' } }
+      classes: { solved: 'Solved and checked by this site (no printed answer)', ready: 'Ready to practise (numeric, no figure)', figure: 'Needs a figure from the book', simulation: 'Needs a simulator (SPICE/MATLAB…)', conceptual: 'Conceptual (no numbers)', in_site: 'Already in the site\'s bank', outside: 'Outside the modules (background / beyond syllabus)' } }
   }[L];
   function el(t, c, txt) { var e = document.createElement(t); if (c) e.className = c; if (txt !== undefined) e.textContent = txt; return e; }
   var renderNow = function () { };
@@ -63,7 +63,8 @@
       [[r[F.numeric], X.numt, 'tag good'], [!r[F.numeric], X.nonum, 'tag'], [r[F.figure], X.fig, 'tag exam'], [r[F.sim], X.sim, 'tag exam'], [r[F.in_site].length, X.site + ' (' + r[F.in_site].join(', ') + ')', 'tag good']].forEach(function (p) { if (p[0]) h.appendChild(el('span', p[2], p[1])); });
       r[F.modules].forEach(function (m) { h.appendChild(el('span', 'bm-chip r-core', m)); });
       d.appendChild(h); d.appendChild(el('div', 'qtxt', r[F.text] || '—'));
-      if (r[F.answer]) { var a = el('details'); a.appendChild(el('summary', null, X.ansl)); a.appendChild(el('div', 'explain show', r[F.answer])); d.appendChild(a); }
+      if (r[F.answer]) { var a = el('details'); a.appendChild(el('summary', null, r[F.ans_kind] === 'computed' ? X.calc : X.ansl)); a.appendChild(el('div', 'explain show', r[F.answer])); d.appendChild(a); }
+      if (r[F.skip]) d.appendChild(el('div', 'srcnote', X.skipl + r[F.skip]));
       return d;
     }
     function render() {

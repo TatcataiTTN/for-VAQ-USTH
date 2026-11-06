@@ -14,14 +14,14 @@ def summary(): return json.load(open(os.path.join(ROOT, 'data', 'numeric', 'summ
 def exercises_body(lang):
     vi = lang == 'vi'; S = summary(); bk = S['by_kind']
     h = '<h1>' + ('Tra cứu bài tập có số' if vi else 'Exercise finder (numeric problems)') + '</h1>'
-    tot = sum(v['total'] for v in bk.values()); num = sum(v['numeric'] for v in bk.values()); ans = sum(v['answer'] for v in bk.values())
-    h += '<p class="lead">' + (f'Đã quét TOÀN BỘ bài tập của bốn quyển trong thư mục tài liệu: {tot:,} mục, trong đó {num:,} mục có số liệu và {ans:,} mục có đáp án in sẵn trong sách. Mỗi mục ghi rõ vị trí (chương, mục, trang in, trang PDF), có số hay không, có cần hình hay mô phỏng không, thuộc module nào và site đã có chưa.'
-                              if vi else f'Every exercise of the four books in the source folder has been scanned: {tot:,} items, {num:,} of them with numbers and {ans:,} with an answer printed in the book. Each item shows where it is (chapter, section, printed page, PDF page), whether it has numbers, needs a figure or a simulator, which module it belongs to and whether the site already has it.') + '</p>'
+    tot = sum(v['total'] for v in bk.values()); num = sum(v['numeric'] for v in bk.values()); ans = sum(v['answer'] for v in bk.values()); sol = sum(v.get('solved', 0) for v in bk.values()); skp = sum(v.get('skipped', 0) for v in bk.values())
+    h += '<p class="lead">' + (f'Đã quét TOÀN BỘ bài tập của bốn quyển trong thư mục tài liệu: {tot:,} mục, trong đó {num:,} mục có số liệu, {ans:,} mục có đáp án in sẵn trong sách và {sol:,} bài Jaeger không có đáp án in nhưng đã được site giải và kiểm lại (nhãn riêng, không lẫn với đáp án của sách). Mỗi mục ghi rõ vị trí (chương, mục, trang in, trang PDF), có số hay không, có cần hình hay mô phỏng không, thuộc module nào và site đã có chưa.'
+                              if vi else f'Every exercise of the four books in the source folder has been scanned: {tot:,} items, {num:,} of them with numbers, {ans:,} with an answer printed in the book and {sol:,} Jaeger problems that print no answer but were solved and re-checked by this site (labelled separately from the book\'s answers). Each item shows where it is (chapter, section, printed page, PDF page), whether it has numbers, needs a figure or a simulator, which module it belongs to and whether the site already has it.') + '</p>'
     rows = []
     for k, v in sorted(bk.items()):
         b, kind = k.split('/')
-        rows.append([BOOK[b], esc(KIND[lang].get(kind, kind)), f"{v['total']:,}", f"{v['numeric']:,}", f"{v['figure']:,}", f"{v['answer']:,}", f"{v['mapped']:,}", f"{v['in_site']:,}"])
-    head = ['Sách', 'Loại', 'Tổng', 'Có số', 'Cần hình', 'Đáp án in', 'Thuộc module', 'Đã có trên site'] if vi else ['Book', 'Type', 'Total', 'Numeric', 'Figure', 'Printed answer', 'In a module', 'On the site']
+        rows.append([BOOK[b], esc(KIND[lang].get(kind, kind)), f"{v['total']:,}", f"{v['numeric']:,}", f"{v['figure']:,}", f"{v['answer']:,}", f"{v.get('solved', 0):,}", f"{v['mapped']:,}", f"{v['in_site']:,}"])
+    head = ['Sách', 'Loại', 'Tổng', 'Có số', 'Cần hình', 'Đáp án in', 'Site tự giải', 'Thuộc module', 'Đã có trên site'] if vi else ['Book', 'Type', 'Total', 'Numeric', 'Figure', 'Printed answer', 'Solved by site', 'In a module', 'On the site']
     h += table(head, rows, 'left')
     h += callout('info', 'Cách đọc' if vi else 'How to read', ul([
         ('“Có số” nghĩa là đề có ít nhất một đại lượng kèm đơn vị (V, mA, kΩ, Hz, dB…) hoặc ≥ 3 số; “cần hình” là đề nhắc Hình/Bảng trong sách; “cần mô phỏng” là đề đòi SPICE/MATLAB…' if vi else
@@ -29,13 +29,15 @@ def exercises_body(lang):
         ('Đề Floyd lấy từ lớp chữ của PDF nên công thức nhúng trong dòng có thể thiếu ký hiệu: đây là chỉ mục để tìm bài, hãy đọc đề gốc ở trang đã ghi. Đề Jaeger đã dựng lại số mũ (10^6 không bị dính thành 106).' if vi else
          'Floyd statements come from the PDF text layer, so inline mathematics may lose symbols: this is an index to find the exercise, read the original at the page given. Jaeger statements have their exponents rebuilt (10^6 is not flattened to 106).'),
         ('Chỉ trích ngắn (khoảng 190 ký tự) để nhận diện bài; đáp án in là đáp án của sách (chỉ kết quả cuối).' if vi else 'Only a short snippet (about 190 characters) is shown to identify the exercise; the printed answer is the book\'s (final result only).'),
+        (f'“Site tự giải” = problem Jaeger sách không in đáp án; đáp án do site tính bằng công thức của sách và kiểm lại bằng cách độc lập (mô phỏng số, mạch chính xác, FFT, nghiệm đa thức…), kèm cách tính và giả định. {skp} bài Jaeger thuộc nhóm này được giữ lại chưa giải kèm lý do (cần hình, đề thiếu dữ kiện, đòi vẽ/chứng minh…). Các bài khác có số nhưng ngoài tập này vẫn chưa có đáp án.' if vi else
+         f'“Solved by site” = Jaeger problems with no printed answer; the answer was computed by this site with the book\'s formulas and re-checked by an independent route (numerical simulation, exact circuit, FFT, polynomial roots…), with the method and assumptions. {skp} Jaeger problems of this group are left unsolved, each with its reason (figure needed, data missing, asks for a sketch or proof…). Other numeric problems outside this set still have no answer.'),
     ]))
     # per module: how many numeric exercises are ready to be added / already on the site
     pm = S['per_module']; rows = []
     for m in MODS:
         v = pm.get(m['id'], {})
-        rows.append([m['id'][1:], esc(m[lang]), v.get('mapped', 0), v.get('numeric', 0), v.get('in_site', 0), v.get('ready', 0), v.get('figure', 0), v.get('simulation', 0), v.get('conceptual', 0)])
-    head2 = ['#', 'Module', 'Bài thuộc module', 'Có số', 'Đã có trên site', 'Sẵn sàng thêm', 'Cần hình', 'Cần mô phỏng', 'Lý thuyết'] if vi else ['#', 'Module', 'Exercises in module', 'Numeric', 'On the site', 'Ready to add', 'Figure', 'Simulator', 'Conceptual']
+        rows.append([m['id'][1:], esc(m[lang]), v.get('mapped', 0), v.get('numeric', 0), v.get('in_site', 0), v.get('solved', 0), v.get('ready', 0), v.get('figure', 0), v.get('simulation', 0), v.get('conceptual', 0)])
+    head2 = ['#', 'Module', 'Bài thuộc module', 'Có số', 'Đã có trên site', 'Site tự giải', 'Sẵn sàng thêm', 'Cần hình', 'Cần mô phỏng', 'Lý thuyết'] if vi else ['#', 'Module', 'Exercises in module', 'Numeric', 'On the site', 'Solved by site', 'Ready to add', 'Figure', 'Simulator', 'Conceptual']
     h += '<h2>' + ('Theo module' if vi else 'By module') + '</h2>' + table(head2, rows, 'left')
     h += '<h2>' + ('Danh mục đầy đủ' if vi else 'Full index') + '</h2><div id="exfind" data-src="../../exercises/catalog.json"></div>'
     return h
