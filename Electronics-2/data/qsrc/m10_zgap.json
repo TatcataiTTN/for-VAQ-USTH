@@ -1,0 +1,370 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Xung PWM 12 V có chu kỳ làm việc (duty) 40 % đặt lên servomotor. Điện áp trung bình là bao nhiêu?",
+"en": "A 12 V PWM pulse train with a 40 % duty cycle drives a servomotor. What is the average voltage?"
+},
+"opts": [
+{
+"vi": "4.8 V",
+"en": "4.8 V"
+},
+{
+"vi": "12 V",
+"en": "12 V"
+},
+{
+"vi": "7.2 V",
+"en": "7.2 V"
+},
+{
+"vi": "0.48 V",
+"en": "0.48 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điện áp trung bình = duty × V = 0,40 × 12 = 4,8 V.",
+"en": "The average voltage = duty × V = 0.40 × 12 = 4.8 V."
+},
+"level": 1,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §9–4, §16–6",
+"en": "Gap-fill (coverage loop) – Floyd 9e §9–4, §16–6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-pwm"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Để tăng tốc độ servomotor điều khiển bằng PWM mà không đổi biên độ xung, cần làm gì?",
+"en": "To make a PWM-driven servomotor run faster without changing the pulse amplitude, what must be done?"
+},
+"opts": [
+{
+"vi": "Tăng chu kỳ làm việc (duty cycle)",
+"en": "Increase the duty cycle"
+},
+{
+"vi": "Giảm duty cycle",
+"en": "Decrease the duty cycle"
+},
+{
+"vi": "Giảm biên độ xung",
+"en": "Reduce the pulse amplitude"
+},
+{
+"vi": "Đảo cực xung",
+"en": "Reverse the pulse polarity"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Duty cao hơn nghĩa là điện áp trung bình đặt lên động cơ cao hơn, nên động cơ quay nhanh hơn.",
+"en": "A higher duty cycle means a higher average voltage on the motor, so it turns faster."
+},
+"level": 1,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §9–4, §16–6",
+"en": "Gap-fill (coverage loop) – Floyd 9e §9–4, §16–6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-pwm"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "555 phi ổn có R1 = 1 kΩ, R2 = 10 kΩ cấp xung biên độ 12 V cho một servomotor qua mạch lái. Duty cycle và điện áp trung bình của xung là bao nhiêu?",
+"en": "An astable 555 with R1 = 1 kΩ, R2 = 10 kΩ supplies 12 V pulses to a servomotor through a driver. What are the duty cycle and the average pulse voltage?"
+},
+"opts": [
+{
+"vi": "52.4 %, 6.29 V",
+"en": "52.4 %, 6.29 V"
+},
+{
+"vi": "90.9 %, 10.9 V",
+"en": "90.9 %, 10.9 V"
+},
+{
+"vi": "4.76 %, 0.571 V",
+"en": "4.76 %, 0.571 V"
+},
+{
+"vi": "50 %, 6 V",
+"en": "50 %, 6 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "duty = (R1 + R2)/(R1 + 2R2) = 11/21 = 52,4 %; V_tb = 0,524 × 12 = 6,29 V. (Floyd không có mạch 555 lái servo; đây là phép tính ứng dụng.)",
+"en": "duty = (R1 + R2)/(R1 + 2R2) = 11/21 = 52.4 %; Vavg = 0.524 × 12 = 6.29 V. (Floyd has no 555 circuit that drives a servo; this is an application calculation.)"
+},
+"level": 3,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §9–4, §16–6",
+"en": "Gap-fill (coverage loop) – Floyd 9e §9–4, §16–6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-pwm"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Điều chế độ rộng xung (PWM) điều khiển động cơ bằng cách thay đổi đại lượng nào của xung?",
+"en": "Pulse-width modulation (PWM) controls a motor by changing which property of the pulses?"
+},
+"opts": [
+{
+"vi": "Độ rộng xung (duty cycle), biên độ giữ nguyên",
+"en": "The pulse width (duty cycle) while the amplitude stays fixed"
+},
+{
+"vi": "Biên độ xung",
+"en": "The pulse amplitude"
+},
+{
+"vi": "Pha của nguồn",
+"en": "The phase of the supply"
+},
+{
+"vi": "Số cực của động cơ",
+"en": "The number of motor poles"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "PWM đổi điện áp trung bình bằng độ rộng xung, nên công suất tiêu tán trên phần tử đóng cắt rất thấp.",
+"en": "PWM changes the average voltage through the pulse width, so the dissipation in the switching device is very low."
+},
+"level": 1,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §9–4, §16–6",
+"en": "Gap-fill (coverage loop) – Floyd 9e §9–4, §16–6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-pwm"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một resolver có bao nhiêu cuộn stato và chúng đặt lệch nhau bao nhiêu độ?",
+"en": "How many stator windings does a resolver have and how far apart are they?"
+},
+"opts": [
+{
+"vi": "Hai cuộn, lệch 90°",
+"en": "Two windings, 90° apart"
+},
+{
+"vi": "Ba cuộn, lệch 120°",
+"en": "Three windings, 120° apart"
+},
+{
+"vi": "Hai cuộn, lệch 180°",
+"en": "Two windings, 180° apart"
+},
+{
+"vi": "Một cuộn",
+"en": "One winding"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Resolver có hai cuộn stato lệch 90° cho điện áp ∝ sin θ và cos θ; synchro mới có ba cuộn lệch 120°.",
+"en": "The resolver has two stator windings 90° apart giving voltages ∝ sin θ and cos θ; it is the synchro that has three windings 120° apart."
+},
+"level": 1,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.9",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.9"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-resolver"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Hai cuộn của resolver cho điện áp ∝ sin θ = 0,5 và ∝ cos θ = 0,866 (cùng hệ số tỉ lệ). Góc rôto θ là bao nhiêu?",
+"en": "The two windings of a resolver give voltages ∝ sin θ = 0.5 and ∝ cos θ = 0.866 (same scale factor). What is the rotor angle θ?"
+},
+"opts": [
+{
+"vi": "30°",
+"en": "30°"
+},
+{
+"vi": "60°",
+"en": "60°"
+},
+{
+"vi": "45°",
+"en": "45°"
+},
+{
+"vi": "150°",
+"en": "150°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "θ = atan2(sin θ, cos θ) = atan2(0,5; 0,866) = 30°.",
+"en": "θ = atan2(sin θ, cos θ) = atan2(0.5, 0.866) = 30°."
+},
+"level": 2,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.9",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.9"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-resolver"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một resolver cho ∝ sin θ = +0,707 và ∝ cos θ = −0,707. Góc rôto là bao nhiêu (trên vòng tròn 0–360°)?",
+"en": "A resolver gives ∝ sin θ = +0.707 and ∝ cos θ = −0.707. What is the rotor angle (on the 0–360° circle)?"
+},
+"opts": [
+{
+"vi": "135°",
+"en": "135°"
+},
+{
+"vi": "45°",
+"en": "45°"
+},
+{
+"vi": "225°",
+"en": "225°"
+},
+{
+"vi": "315°",
+"en": "315°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Sin dương, cos âm nên góc nằm ở góc phần tư thứ hai: θ = atan2(0,707; −0,707) = 135° (không phải 45°). Hai điện áp xác định duy nhất góc trên cả vòng tròn.",
+"en": "Positive sine and negative cosine put the angle in the second quadrant: θ = atan2(0.707, −0.707) = 135° (not 45°). The two voltages identify the angle uniquely over the whole circle."
+},
+"level": 3,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.9",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.9"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-resolver"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Theo EASA, thiết bị đo góc nào bền nhất và ngõ ra sin/cos của nó thường được đưa tới đâu cho máy tính bay?",
+"en": "According to EASA, which angular-measurement device is the most robust and where do its sin/cos outputs usually go for the flight computers?"
+},
+"opts": [
+{
+"vi": "Resolver; bộ chuyển đổi A/D",
+"en": "The resolver; an analog-to-digital converter"
+},
+{
+"vi": "Biến trở; bộ khuếch đại công suất",
+"en": "A potentiometer; a power amplifier"
+},
+{
+"vi": "Synchro DC selsyn; bộ so sánh",
+"en": "The DC selsyn; a comparator"
+},
+{
+"vi": "LVDT; bộ lọc thông thấp",
+"en": "The LVDT; a low-pass filter"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Resolver là thiết bị đo góc bền nhất; điện áp sin và cos được số hoá bằng ADC cho máy tính bay.",
+"en": "The resolver is the most robust angular-measurement device; its sine and cosine voltages are digitised by an ADC for the flight computers."
+},
+"level": 2,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.9",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.9"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-resolver"
+}
+]

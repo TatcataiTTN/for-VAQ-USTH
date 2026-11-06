@@ -7,6 +7,7 @@ var state={ans:{},ess:{},level:'all',topic:'all',origin:'all',tab:'mcq',page:0,o
 try{var s=JSON.parse(localStorage.getItem(KEY)||'null');if(s){state.ans=s.ans||{};state.ess=s.ess||{}}}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify({ans:state.ans,ess:state.ess}));var a=0,c=0;D.items.forEach(function(it){var v=state.ans[it.id];if(v!==undefined){a++;if(v===it.correct)c++}});localStorage.setItem('prog:bank:'+D.module,JSON.stringify({t:Date.now(),a:a,c:c,n:D.items.length,e:Object.keys(state.ess).length,en:(D.essays||[]).length}))}catch(e){}}
 var topics=[];D.items.forEach(function(i){if(topics.indexOf(i.topic)<0)topics.push(i.topic)});
+try{var qp=new URLSearchParams(location.search).get('topic');if(qp&&topics.indexOf(qp)>=0)state.topic=qp}catch(e){}
 function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!==undefined)e.textContent=txt;return e}
 function stats(){var n=D.items.length,a=0,c=0;D.items.forEach(function(it){var v=state.ans[it.id];if(v!==undefined){a++;if(v===it.correct)c++}});return {n:n,a:a,c:c}}
 function filtered(){return state.order.map(function(i){return D.items[i]}).filter(function(it){

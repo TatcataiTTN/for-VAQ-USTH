@@ -143,3 +143,5 @@ details.bm-legend{margin:.6em 0}details.bm-legend ul{list-style:none;padding-lef
 .labform{display:flex;flex-wrap:wrap;gap:10px 16px;margin:.4em 0}.labform label{font-size:.9rem}.labform input,.labform select{font:inherit;padding:3px 6px;border:1px solid var(--border);border-radius:6px;background:var(--card);color:var(--text)}
 .laboutput{margin:.5em 0}.labrow{padding:2px 0}.labk{color:var(--muted)}
 #analyser textarea{font:inherit;padding:8px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text)}
+.cf-formula{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88rem;background:var(--code);padding:1px 7px;border-radius:6px;word-break:break-word}
+details.qitem>summary{cursor:pointer}details.qitem h4{margin:.8em 0 .2em}

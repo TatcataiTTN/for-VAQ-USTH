@@ -1,0 +1,1152 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Trong bộ đảo CMOS với ngõ vào ở mức thấp (0 V), transistor nào dẫn và ngõ ra bằng bao nhiêu?",
+"en": "In a CMOS inverter with the input LOW (0 V), which transistor conducts and what is the output?"
+},
+"opts": [
+{
+"vi": "PMOS dẫn, NMOS tắt; ngõ ra ≈ VDD",
+"en": "The PMOS conducts and the NMOS is off; output ≈ VDD"
+},
+{
+"vi": "NMOS dẫn, PMOS tắt; ngõ ra ≈ VDD",
+"en": "The NMOS conducts and the PMOS is off; output ≈ VDD"
+},
+{
+"vi": "PMOS dẫn, NMOS tắt; ngõ ra ≈ 0 V",
+"en": "The PMOS conducts and the NMOS is off; output ≈ 0 V"
+},
+{
+"vi": "Cả hai cùng dẫn mạnh; ngõ ra ≈ VDD/2",
+"en": "Both conduct strongly; output ≈ VDD/2"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Ngõ vào thấp làm VGS của PMOS = −VDD (bật) còn NMOS có VGS = 0 (tắt), nên PMOS kéo ngõ ra lên VDD.",
+"en": "A LOW input gives the PMOS VGS = −VDD (on) and the NMOS VGS = 0 (off), so the PMOS pulls the output up to VDD."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Vì sao bộ đảo CMOS có công suất tĩnh gần bằng 0?",
+"en": "Why does a CMOS inverter have almost zero static power?"
+},
+"opts": [
+{
+"vi": "Ở trạng thái ổn định luôn có một transistor tắt nên không có đường dòng từ nguồn xuống đất",
+"en": "In a steady state one transistor is always off, so there is no dc path from the supply to ground"
+},
+{
+"vi": "Điện trở tải rất lớn nên dòng rất nhỏ",
+"en": "The load resistor is very large so the current is tiny"
+},
+{
+"vi": "Điện áp nguồn của CMOS luôn bằng 0",
+"en": "The CMOS supply voltage is always zero"
+},
+{
+"vi": "Cả NMOS và PMOS đều luôn dẫn một chút",
+"en": "Both the NMOS and the PMOS always conduct a little"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Chỉ khi chuyển trạng thái, cả hai transistor cùng dẫn trong thời gian ngắn và tụ tải được nạp/xả: đó là công suất động.",
+"en": "Only while switching do both conduct briefly and the load capacitance charges/discharges: that is the dynamic power."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ đảo CMOS đối xứng có VDD = 3,3 V, VTN = 0,7 V, VTP = −0,7 V và KR = Kn/Kp = 1. Ngưỡng chuyển mạch VSP là bao nhiêu?",
+"en": "A symmetric CMOS inverter has VDD = 3.3 V, VTN = 0.7 V, VTP = −0.7 V and KR = Kn/Kp = 1. What is the switching threshold VSP?"
+},
+"opts": [
+{
+"vi": "1.65 V",
+"en": "1.65 V"
+},
+{
+"vi": "2.35 V",
+"en": "2.35 V"
+},
+{
+"vi": "0.95 V",
+"en": "0.95 V"
+},
+{
+"vi": "3.3 V",
+"en": "3.3 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VSP = (VDD + VTP + VTN·√KR)/(1 + √KR) = (3,3 − 0,7 + 0,7)/2 = 1,65 V = VDD/2.",
+"en": "VSP = (VDD + VTP + VTN·√KR)/(1 + √KR) = (3.3 − 0.7 + 0.7)/2 = 1.65 V = VDD/2."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ đảo CMOS đối xứng có VDD = 5 V, VTN = 1 V, VTP = −1 V và KR = Kn/Kp = 1. Ngưỡng chuyển mạch VSP là bao nhiêu?",
+"en": "A symmetric CMOS inverter has VDD = 5 V, VTN = 1 V, VTP = −1 V and KR = Kn/Kp = 1. What is the switching threshold VSP?"
+},
+"opts": [
+{
+"vi": "2.5 V",
+"en": "2.5 V"
+},
+{
+"vi": "3.5 V",
+"en": "3.5 V"
+},
+{
+"vi": "1.5 V",
+"en": "1.5 V"
+},
+{
+"vi": "5 V",
+"en": "5 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VSP = (VDD + VTP + VTN·√KR)/(1 + √KR) = (5 − 1 + 1)/2 = 2,5 V = VDD/2.",
+"en": "VSP = (VDD + VTP + VTN·√KR)/(1 + √KR) = (5 − 1 + 1)/2 = 2.5 V = VDD/2."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ đảo CMOS có VDD = 2,5 V, VTN = 0,5 V, VTP = −0,5 V và KR = Kn/Kp = 4. Ngưỡng chuyển mạch VSP là bao nhiêu?",
+"en": "A CMOS inverter has VDD = 2.5 V, VTN = 0.5 V, VTP = −0.5 V and KR = Kn/Kp = 4. What is the switching threshold VSP?"
+},
+"opts": [
+{
+"vi": "1.00 V",
+"en": "1.00 V"
+},
+{
+"vi": "1.25 V",
+"en": "1.25 V"
+},
+{
+"vi": "0.8 V",
+"en": "0.8 V"
+},
+{
+"vi": "0.833 V",
+"en": "0.833 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "√KR = 2 nên VSP = (2,5 − 0,5 + 0,5·2)/(1 + 2) = 3/3 = 1,00 V. KR lớn nghĩa là NMOS mạnh hơn, ngưỡng thấp hơn VDD/2. Lỗi hay gặp: quên căn bậc hai của KR.",
+"en": "√KR = 2 so VSP = (2.5 − 0.5 + 0.5·2)/(1 + 2) = 3/3 = 1.00 V. A larger KR means a stronger NMOS and a threshold below VDD/2. Common slip: leaving out the square root of KR."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Nếu tăng Kn (NMOS mạnh hơn) và giữ nguyên các thông số khác, ngưỡng chuyển mạch VSP của bộ đảo CMOS thay đổi thế nào?",
+"en": "If Kn is increased (a stronger NMOS) with everything else unchanged, how does the CMOS inverter switching threshold VSP change?"
+},
+"opts": [
+{
+"vi": "VSP giảm (dịch về phía mức thấp)",
+"en": "VSP decreases (moves toward the low level)"
+},
+{
+"vi": "VSP tăng",
+"en": "VSP increases"
+},
+{
+"vi": "VSP không đổi vì chỉ phụ thuộc VDD",
+"en": "VSP is unchanged because it depends only on VDD"
+},
+{
+"vi": "VSP tăng đúng bằng tỉ lệ Kn",
+"en": "VSP rises in proportion to Kn"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VSP = (VDD + VTP + VTN√KR)/(1 + √KR) giảm khi KR tăng (với VTN < VDD + VTP).",
+"en": "VSP = (VDD + VTP + VTN√KR)/(1 + √KR) falls as KR rises (when VTN < VDD + VTP)."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một bộ đảo CMOS tải C = 0,5 pF, VDD = 2,5 V chuyển trạng thái ở f = 100 MHz. Công suất động P = C·V²·f là bao nhiêu?",
+"en": "A CMOS inverter drives C = 0.5 pF at VDD = 2.5 V and switches at f = 100 MHz. What is the dynamic power P = C·V²·f?"
+},
+"opts": [
+{
+"vi": "312.5 μW",
+"en": "312.5 μW"
+},
+{
+"vi": "125 μW",
+"en": "125 μW"
+},
+{
+"vi": "625 μW",
+"en": "625 μW"
+},
+{
+"vi": "31.25 μW",
+"en": "31.25 μW"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "P = 0,5·10⁻¹² × 2,5² × 10⁸ = 312,5 μW. Công suất tỉ lệ với bình phương điện áp nguồn.",
+"en": "P = 0.5·10⁻¹² × 2.5² × 10⁸ = 312.5 μW. The power scales with the square of the supply voltage."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Nếu giảm một nửa điện áp nguồn VDD của một bộ đảo CMOS (giữ nguyên C và f), công suất động thay đổi thế nào?",
+"en": "If the supply VDD of a CMOS inverter is halved (C and f unchanged), how does the dynamic power change?"
+},
+"opts": [
+{
+"vi": "Giảm 4 lần",
+"en": "It falls by a factor of 4"
+},
+{
+"vi": "Giảm 2 lần",
+"en": "It falls by a factor of 2"
+},
+{
+"vi": "Giảm 8 lần",
+"en": "It falls by a factor of 8"
+},
+{
+"vi": "Không đổi",
+"en": "It does not change"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "P = C·V²·f tỉ lệ V², nên V → V/2 cho P → P/4.",
+"en": "P = C·V²·f is proportional to V², so V → V/2 gives P → P/4."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một cổng CMOS có thời gian trễ tPHL = 0,4 ns và tPLH = 0,6 ns. Trễ truyền trung bình τp là bao nhiêu?",
+"en": "A CMOS gate has delays tPHL = 0.4 ns and tPLH = 0.6 ns. What is the average propagation delay τp?"
+},
+"opts": [
+{
+"vi": "0.5 ns",
+"en": "0.5 ns"
+},
+{
+"vi": "1.0 ns",
+"en": "1.0 ns"
+},
+{
+"vi": "0.2 ns",
+"en": "0.2 ns"
+},
+{
+"vi": "0.24 ns",
+"en": "0.24 ns"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "τp = (tPHL + tPLH)/2 = (0,4 + 0,6)/2 = 0,5 ns.",
+"en": "τp = (tPHL + tPLH)/2 = (0.4 + 0.6)/2 = 0.5 ns."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một cổng có công suất trung bình P = 312,5 μW và trễ truyền τp = 1 ns. Tích công suất–trễ (PDP = P·τp) là bao nhiêu?",
+"en": "A gate has an average power P = 312.5 μW and a propagation delay τp = 1 ns. What is the power–delay product (PDP = P·τp)?"
+},
+"opts": [
+{
+"vi": "0.3125 pJ",
+"en": "0.3125 pJ"
+},
+{
+"vi": "312.5 pJ",
+"en": "312.5 pJ"
+},
+{
+"vi": "3.125 pJ",
+"en": "3.125 pJ"
+},
+{
+"vi": "0.03125 pJ",
+"en": "0.03125 pJ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "PDP = 312,5·10⁻⁶ W × 10⁻⁹ s = 3,125·10⁻¹³ J = 0,3125 pJ.",
+"en": "PDP = 312.5·10⁻⁶ W × 10⁻⁹ s = 3.125·10⁻¹³ J = 0.3125 pJ."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Khi vIN bằng đúng ngưỡng chuyển mạch VSP của bộ đảo CMOS, hai transistor ở trạng thái nào?",
+"en": "When vIN equals exactly the switching threshold VSP of a CMOS inverter, what are the two transistors doing?"
+},
+"opts": [
+{
+"vi": "Cả hai ở vùng bão hoà và ngõ ra đang chuyển nhanh",
+"en": "Both are in saturation and the output is switching steeply"
+},
+{
+"vi": "NMOS ở vùng cắt, PMOS ở vùng tuyến tính",
+"en": "The NMOS is cut off and the PMOS is in the triode region"
+},
+{
+"vi": "Cả hai ở vùng cắt",
+"en": "Both are cut off"
+},
+{
+"vi": "Cả hai ở vùng tuyến tính",
+"en": "Both are in the triode region"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VSP được định nghĩa khi vIN = vOUT; khi đó dòng hai transistor bằng nhau trong vùng bão hoà và độ lợi của bộ đảo cực lớn.",
+"en": "VSP is defined where vIN = vOUT; the two saturation currents are equal there and the inverter gain is very large."
+},
+"level": 3,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.11, 7.1–7.3",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.11, 7.1–7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một op-amp không hồi tiếp có V₊ = 2 mV và V₋ = 0, nguồn ±13 V và Aol = 10⁵. Ngõ ra là bao nhiêu?",
+"en": "An open-loop op-amp has V₊ = 2 mV and V₋ = 0, supplies of ±13 V and Aol = 10⁵. What is the output?"
+},
+"opts": [
+{
+"vi": "Bão hoà ở khoảng +13 V",
+"en": "Saturated at about +13 V"
+},
+{
+"vi": "+200 V",
+"en": "+200 V"
+},
+{
+"vi": "+2 mV",
+"en": "+2 mV"
+},
+{
+"vi": "0 V",
+"en": "0 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Aol·(V₊ − V₋) = 10⁵ × 2 mV = 200 V vượt xa nguồn, nên ngõ ra bão hoà ở mức nguồn dương (mạch so sánh).",
+"en": "Aol·(V₊ − V₋) = 10⁵ × 2 mV = 200 V is far beyond the supply, so the output saturates at the positive supply (comparator action)."
+},
+"level": 1,
+"topic": {
+"en": "Op-amp circuits in the logic context",
+"vi": "Mạch op-amp trong ngữ cảnh logic"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 Q1-35…1-38",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 Q1-35…1-38"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-opamp-logic"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch op-amp nào làm cầu nối giữa tín hiệu tương tự và mức logic số?",
+"en": "Which op-amp circuit bridges an analog signal to digital logic levels?"
+},
+"opts": [
+{
+"vi": "Mạch so sánh (comparator)",
+"en": "The comparator"
+},
+{
+"vi": "Mạch tích phân",
+"en": "The integrator"
+},
+{
+"vi": "Mạch vi phân",
+"en": "The differentiator"
+},
+{
+"vi": "Mạch lặp điện áp",
+"en": "The voltage follower"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Mạch so sánh có ngõ ra chỉ hai mức bão hoà, phù hợp với mức logic cao/thấp.",
+"en": "The comparator has only two saturated output levels, which match logic HIGH/LOW."
+},
+"level": 1,
+"topic": {
+"en": "Op-amp circuits in the logic context",
+"vi": "Mạch op-amp trong ngữ cảnh logic"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 Q1-35…1-38",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 Q1-35…1-38"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-opamp-logic"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch lặp điện áp dùng op-amp được cấp 3 V ở ngõ vào. Ngõ ra là bao nhiêu và độ lợi là bao nhiêu?",
+"en": "A voltage follower built with an op-amp receives 3 V at its input. What are the output and the gain?"
+},
+"opts": [
+{
+"vi": "3 V, độ lợi 1",
+"en": "3 V, gain 1"
+},
+{
+"vi": "6 V, độ lợi 2",
+"en": "6 V, gain 2"
+},
+{
+"vi": "−3 V, độ lợi −1",
+"en": "−3 V, gain −1"
+},
+{
+"vi": "0 V, độ lợi 0",
+"en": "0 V, gain 0"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Ngõ ra nối thẳng về ngõ vào đảo nên Acl = 1 và cùng pha: Vout = Vin.",
+"en": "The output is wired straight to the inverting input so Acl = 1 and in phase: Vout = Vin."
+},
+"level": 1,
+"topic": {
+"en": "Op-amp circuits in the logic context",
+"vi": "Mạch op-amp trong ngữ cảnh logic"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 Q1-35…1-38",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 Q1-35…1-38"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-opamp-logic"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một bộ giải mã (decoder) có 4 ngõ vào mã thì có bao nhiêu ngõ ra?",
+"en": "How many outputs does a decoder with 4 code inputs have?"
+},
+"opts": [
+{
+"vi": "16",
+"en": "16"
+},
+{
+"vi": "4",
+"en": "4"
+},
+{
+"vi": "8",
+"en": "8"
+},
+{
+"vi": "15",
+"en": "15"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "n ngõ vào mã cho 2ⁿ ngõ ra: 2⁴ = 16.",
+"en": "n code inputs give 2ⁿ outputs: 2⁴ = 16."
+},
+"level": 1,
+"topic": {
+"en": "Adders and combinational circuits",
+"vi": "Bộ cộng và mạch tổ hợp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (encoders, decoders)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (encoders, decoders)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-combinational"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ mã hoá ưu tiên 4→2 có ngõ vào D3 D2 D1 D0 = 0 1 0 1 (D3 ưu tiên cao nhất). Mã ngõ ra là gì?",
+"en": "A 4→2 priority encoder has inputs D3 D2 D1 D0 = 0 1 0 1 (D3 has the highest priority). What is the output code?"
+},
+"opts": [
+{
+"vi": "10",
+"en": "10"
+},
+{
+"vi": "01",
+"en": "01"
+},
+{
+"vi": "11",
+"en": "11"
+},
+{
+"vi": "00",
+"en": "00"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Bộ mã hoá ưu tiên chọn ngõ vào CAO cao nhất đang ở mức 1: D2, nên mã là 2 = 10₂.",
+"en": "The priority encoder picks the highest-priority input that is HIGH: D2, so the code is 2 = 10₂."
+},
+"level": 2,
+"topic": {
+"en": "Adders and combinational circuits",
+"vi": "Bộ cộng và mạch tổ hợp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (encoders, decoders)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (encoders, decoders)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-combinational"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một cổng TTL có VOH = 2,4 V, VOL = 0,4 V, VIH = 2,0 V, VIL = 0,8 V. Biên nhiễu mức cao NMH là bao nhiêu?",
+"en": "A TTL gate has VOH = 2.4 V, VOL = 0.4 V, VIH = 2.0 V, VIL = 0.8 V. What is the high-level noise margin NMH?"
+},
+"opts": [
+{
+"vi": "0.4 V",
+"en": "0.4 V"
+},
+{
+"vi": "1.6 V",
+"en": "1.6 V"
+},
+{
+"vi": "0.8 V",
+"en": "0.8 V"
+},
+{
+"vi": "1.2 V",
+"en": "1.2 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "NMH = VOH − VIH = 2,4 − 2,0 = 0,4 V (NML = VIL − VOL = 0,8 − 0,4 = 0,4 V).",
+"en": "NMH = VOH − VIH = 2.4 − 2.0 = 0.4 V (NML = VIL − VOL = 0.8 − 0.4 = 0.4 V)."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.2, 7.1",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.2, 7.1"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-families"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một cổng CMOS 5 V có VOH = 4,9 V, VOL = 0,1 V, VIH = 3,5 V, VIL = 1,5 V. Biên nhiễu của cổng (giá trị nhỏ hơn trong NMH và NML) là bao nhiêu?",
+"en": "A 5 V CMOS gate has VOH = 4.9 V, VOL = 0.1 V, VIH = 3.5 V, VIL = 1.5 V. What is the gate noise margin (the smaller of NMH and NML)?"
+},
+"opts": [
+{
+"vi": "1.4 V",
+"en": "1.4 V"
+},
+{
+"vi": "3.4 V",
+"en": "3.4 V"
+},
+{
+"vi": "2.0 V",
+"en": "2.0 V"
+},
+{
+"vi": "0.1 V",
+"en": "0.1 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "NMH = 4,9 − 3,5 = 1,4 V; NML = 1,5 − 0,1 = 1,4 V; biên nhiễu = 1,4 V.",
+"en": "NMH = 4.9 − 3.5 = 1.4 V; NML = 1.5 − 0.1 = 1.4 V; the noise margin is 1.4 V."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §6.2, 7.1",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §6.2, 7.1"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-families"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Họ logic nào có công suất tĩnh nhỏ nhất nhưng nhạy với tĩnh điện (ESD)?",
+"en": "Which logic family has the lowest static power but is sensitive to static electricity (ESD)?"
+},
+"opts": [
+{
+"vi": "CMOS",
+"en": "CMOS"
+},
+{
+"vi": "TTL",
+"en": "TTL"
+},
+{
+"vi": "Cả hai như nhau",
+"en": "Both the same"
+},
+{
+"vi": "Cả hai đều không nhạy ESD",
+"en": "Neither is ESD-sensitive"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "CMOS gần như không có dòng tĩnh nhưng cực cổng MOS mỏng dễ bị hỏng bởi ESD (xem module 09).",
+"en": "CMOS draws almost no static current but its thin MOS gate is easily damaged by ESD (see module 09)."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (TTL, CMOS)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (TTL, CMOS)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-families"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Quá trình nào chuyển mẫu mạch lên wafer bán dẫn khi chế tạo vi mạch?",
+"en": "Which process transfers the circuit pattern onto the semiconductor wafer when an IC is made?"
+},
+"opts": [
+{
+"vi": "Quang khắc (photolithography) kèm các bước hoá học",
+"en": "Photolithography with chemical etching steps"
+},
+{
+"vi": "Hàn sóng",
+"en": "Flow soldering"
+},
+{
+"vi": "Ép nhiệt lá đồng",
+"en": "Heat-pressing copper foil"
+},
+{
+"vi": "Mạ điện lỗ xuyên",
+"en": "Plating through holes"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Mạch được khắc lên wafer bằng quang khắc và các bước hoá học; hàn sóng và mạ lỗ là công nghệ bảng mạch in.",
+"en": "The circuit is patterned onto the wafer by photolithography and chemical steps; flow soldering and hole plating belong to printed circuit boards."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (IC manufacture)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (IC manufacture)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-fabrication"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Vi mạch (chip) được chế tạo trên vật liệu nền nào?",
+"en": "On which base material are integrated circuit chips made?"
+},
+"opts": [
+{
+"vi": "Wafer bán dẫn mỏng",
+"en": "A thin semiconductor wafer"
+},
+{
+"vi": "Tấm giấy tẩm epoxy dày 1,5 mm",
+"en": "A 1.5 mm epoxy-impregnated paper board"
+},
+{
+"vi": "Lá đồng",
+"en": "Copper foil"
+},
+{
+"vi": "Thanh nam châm",
+"en": "A magnet bar"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Vi mạch được xây dựng trên wafer bán dẫn mỏng được đánh bóng, làm sạch và kiểm tra.",
+"en": "ICs are built on thin semiconductor wafers that are polished, cleaned and tested."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (IC manufacture)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (IC manufacture)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-fabrication"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Tăng số transistor trên một chip thường kéo theo hệ quả nào, ngoài việc tăng tốc độ?",
+"en": "Besides higher speed, what usually comes with more transistors on a chip?"
+},
+"opts": [
+{
+"vi": "Công suất tiêu thụ và nhiệt toả ra cũng tăng",
+"en": "Power consumption and heat also rise"
+},
+{
+"vi": "Công suất tiêu thụ giảm",
+"en": "Power consumption falls"
+},
+{
+"vi": "Chip hết cần quang khắc",
+"en": "The chip no longer needs photolithography"
+},
+{
+"vi": "Chip không toả nhiệt",
+"en": "The chip produces no heat"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Nhiều transistor chuyển mạch hơn nghĩa là công suất động lớn hơn, nên cần tản nhiệt.",
+"en": "More switching transistors mean more dynamic power, so the heat must be removed."
+},
+"level": 2,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (IC manufacture)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (IC manufacture)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-fabrication"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Sau khi chế tạo và kiểm tra, wafer được xử lý tiếp thế nào để có các vi mạch riêng lẻ?",
+"en": "After fabrication and testing, what is done to the wafer to obtain individual integrated circuits?"
+},
+"opts": [
+{
+"vi": "Cắt thành từng chip (die)",
+"en": "It is cut into individual chips (dies)"
+},
+{
+"vi": "Nấu chảy lại thành thỏi",
+"en": "Melted back into an ingot"
+},
+{
+"vi": "Ép nhiệt cùng lá đồng",
+"en": "Heat-pressed with copper foil"
+},
+{
+"vi": "Nhúng vào bể hàn sóng",
+"en": "Dipped into a flow-solder bath"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Mỗi wafer chứa nhiều mạch giống nhau; sau kiểm tra, wafer được cắt ra thành từng chip.",
+"en": "A wafer holds many identical circuits; after testing it is cut into separate chips."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (IC manufacture)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (IC manufacture)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-fabrication"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Theo EASA, bước nào sau đây là một phần của quy trình chế tạo vi mạch trên wafer?",
+"en": "According to EASA, which of the following is part of making an integrated circuit on a wafer?"
+},
+"opts": [
+{
+"vi": "Đánh bóng, làm sạch và kiểm tra wafer",
+"en": "Polishing, cleaning and testing the wafer"
+},
+{
+"vi": "Cuốn dây biến áp",
+"en": "Winding transformer coils"
+},
+{
+"vi": "Hàn sóng các chân linh kiện",
+"en": "Flow-soldering component leads"
+},
+{
+"vi": "Ăn mòn lá đồng bằng sắt clorua để tạo đường dẫn PCB",
+"en": "Etching copper foil with ferric chloride to make PCB traces"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Chip làm trên wafer mỏng được đánh bóng, làm sạch, khắc mạch bằng quang khắc và hoá học rồi kiểm tra; ăn mòn đồng bằng sắt clorua là công nghệ làm PCB.",
+"en": "Chips are made on thin wafers that are polished, cleaned, patterned by photolithography and chemistry, then tested; etching copper with ferric chloride belongs to PCB making."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (IC manufacture)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (IC manufacture)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-fabrication"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "“Chip” (die) trong chế tạo vi mạch là gì?",
+"en": "What is a “chip” (die) in integrated-circuit fabrication?"
+},
+"opts": [
+{
+"vi": "Một miếng nhỏ cắt từ wafer, chứa một mạch tích hợp hoàn chỉnh",
+"en": "A small piece cut from the wafer that holds one complete integrated circuit"
+},
+{
+"vi": "Một bảng mạch in nhiều lớp",
+"en": "A multilayer printed circuit board"
+},
+{
+"vi": "Một lớp đồng trên bảng mạch",
+"en": "A layer of copper on a circuit board"
+},
+{
+"vi": "Một loại mực chống ăn mòn",
+"en": "A type of etch-resistive ink"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Mỗi wafer chứa nhiều mạch giống nhau; mỗi miếng cắt ra là một chip chứa một mạch tích hợp.",
+"en": "A wafer holds many identical circuits; each piece cut out is a chip holding one integrated circuit."
+},
+"level": 1,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (IC manufacture)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (IC manufacture)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-fabrication"
+}
+]

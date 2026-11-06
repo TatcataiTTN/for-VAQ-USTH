@@ -1,0 +1,830 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ chuyển đổi điện áp sang dòng (V-to-I) dùng op-amp có Vin = 5 V và R1 = 10 kΩ. Dòng qua tải là bao nhiêu?",
+"en": "A voltage-to-current (V-to-I) converter built with an op-amp has Vin = 5 V and R1 = 10 kΩ. What is the load current?"
+},
+"opts": [
+{
+"vi": "0.5 mA",
+"en": "0.5 mA"
+},
+{
+"vi": "5 mA",
+"en": "5 mA"
+},
+{
+"vi": "50 μA",
+"en": "50 μA"
+},
+{
+"vi": "0.05 mA",
+"en": "0.05 mA"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Hồi tiếp âm ép điện áp trên R1 bằng Vin nên I = Vin/R1 = 5/10 000 = 0,5 mA.",
+"en": "Negative feedback forces the voltage across R1 to equal Vin, so I = Vin/R1 = 5/10,000 = 0.5 mA."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Trong bộ chuyển đổi V-to-I, tải tăng từ 1 kΩ lên 2 kΩ (vẫn trong dải tuân thủ). Dòng tải thay đổi thế nào?",
+"en": "In a V-to-I converter the load rises from 1 kΩ to 2 kΩ (still within the compliance range). How does the load current change?"
+},
+"opts": [
+{
+"vi": "Không đổi vì I = Vin/R1",
+"en": "It does not change because I = Vin/R1"
+},
+{
+"vi": "Giảm một nửa",
+"en": "It halves"
+},
+{
+"vi": "Tăng gấp đôi",
+"en": "It doubles"
+},
+{
+"vi": "Giảm 4 lần",
+"en": "It falls by a factor of 4"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Dòng chỉ phụ thuộc Vin và R1, không phụ thuộc giá trị tải: đây là nguồn dòng không đổi.",
+"en": "The current depends only on Vin and R1, not on the load value: this is a constant-current source."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Nguồn dòng V-to-I có tải nằm trong vòng hồi tiếp, R1 = 1 kΩ, dòng đặt 2 mA và op-amp bão hoà ở ±10 V. Điện trở tải lớn nhất còn giữ dòng không đổi (dải tuân thủ) là bao nhiêu?",
+"en": "A V-to-I current source has the load in the feedback loop, R1 = 1 kΩ, a set current of 2 mA and an op-amp that saturates at ±10 V. What is the largest load resistance that still keeps the current constant (compliance range)?"
+},
+"opts": [
+{
+"vi": "4 kΩ",
+"en": "4 kΩ"
+},
+{
+"vi": "5 kΩ",
+"en": "5 kΩ"
+},
+{
+"vi": "10 kΩ",
+"en": "10 kΩ"
+},
+{
+"vi": "3 kΩ",
+"en": "3 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Vout = I·(RL + R1) ≤ 10 V nên RL ≤ 10/0,002 − 1000 = 4 kΩ; quá giá trị đó op-amp bão hoà và dòng không còn không đổi.",
+"en": "Vout = I·(RL + R1) ≤ 10 V so RL ≤ 10/0.002 − 1000 = 4 kΩ; beyond that the op-amp saturates and the current is no longer constant."
+},
+"level": 3,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ chuyển đổi dòng sang điện áp (I-to-V) có Iin = 50 μA và Rf = 22 kΩ. Điện áp ra là bao nhiêu?",
+"en": "A current-to-voltage (I-to-V) converter has Iin = 50 μA and Rf = 22 kΩ. What is the output voltage?"
+},
+"opts": [
+{
+"vi": "−1.1 V",
+"en": "−1.1 V"
+},
+{
+"vi": "+1.1 V",
+"en": "+1.1 V"
+},
+{
+"vi": "−0.0023 V",
+"en": "−0.0023 V"
+},
+{
+"vi": "−11 V",
+"en": "−11 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Vout = −Iin·Rf = −50·10⁻⁶ × 22·10³ = −1,1 V.",
+"en": "Vout = −Iin·Rf = −50·10⁻⁶ × 22·10³ = −1.1 V."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cần bộ chuyển đổi I-to-V cho điện áp ra −5 V khi Iin = 20 μA. Giá trị Rf là bao nhiêu?",
+"en": "An I-to-V converter must give −5 V when Iin = 20 μA. What is Rf?"
+},
+"opts": [
+{
+"vi": "250 kΩ",
+"en": "250 kΩ"
+},
+{
+"vi": "25 kΩ",
+"en": "25 kΩ"
+},
+{
+"vi": "100 kΩ",
+"en": "100 kΩ"
+},
+{
+"vi": "2.5 MΩ",
+"en": "2.5 MΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Rf = |Vout|/Iin = 5/(20·10⁻⁶) = 250 kΩ.",
+"en": "Rf = |Vout|/Iin = 5/(20·10⁻⁶) = 250 kΩ."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Vì sao dòng tải của nguồn dòng V-to-I không phụ thuộc giá trị tải?",
+"en": "Why is the load current of a V-to-I current source independent of the load value?"
+},
+"opts": [
+{
+"vi": "Hồi tiếp âm ép điện áp trên R1 bằng Vin",
+"en": "Negative feedback forces the voltage across R1 to equal Vin"
+},
+{
+"vi": "Tải được nối nối tiếp với một nguồn áp lý tưởng",
+"en": "The load is in series with an ideal voltage source"
+},
+{
+"vi": "Op-amp không có dòng ra",
+"en": "The op-amp has no output current"
+},
+{
+"vi": "R1 luôn bằng tải",
+"en": "R1 always equals the load"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điện áp trên R1 bằng Vin cố định nên dòng I = Vin/R1 cố định; op-amp tự điều chỉnh điện áp ra để đẩy dòng đó qua tải.",
+"en": "The voltage across R1 is held at Vin, so I = Vin/R1 is fixed; the op-amp adjusts its output voltage to push that current through the load."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Trong bộ chuyển đổi V-to-I với Vin = 2 V, tăng R1 từ 1 kΩ lên 2 kΩ. Dòng tải đổi từ bao nhiêu sang bao nhiêu?",
+"en": "In a V-to-I converter with Vin = 2 V, R1 is raised from 1 kΩ to 2 kΩ. The load current changes from what to what?"
+},
+"opts": [
+{
+"vi": "Từ 2 mA xuống 1 mA",
+"en": "From 2 mA to 1 mA"
+},
+{
+"vi": "Từ 2 mA lên 4 mA",
+"en": "From 2 mA to 4 mA"
+},
+{
+"vi": "Từ 1 mA xuống 0,5 mA",
+"en": "From 1 mA to 0.5 mA"
+},
+{
+"vi": "Không đổi",
+"en": "No change"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "I = Vin/R1: 2/1000 = 2 mA, rồi 2/2000 = 1 mA.",
+"en": "I = Vin/R1: 2/1000 = 2 mA, then 2/2000 = 1 mA."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-v-i"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một mạch tách đỉnh (peak detector) dùng op-amp và điốt nhận sóng sin đỉnh 3,2 V (điốt nằm trong vòng hồi tiếp). Điện áp tụ giữ ở trạng thái ổn định là bao nhiêu?",
+"en": "A peak detector built with an op-amp and a diode receives a sine of 3.2 V peak (the diode is inside the feedback loop). What voltage does the hold capacitor reach?"
+},
+"opts": [
+{
+"vi": "3.2 V",
+"en": "3.2 V"
+},
+{
+"vi": "2.5 V",
+"en": "2.5 V"
+},
+{
+"vi": "3.9 V",
+"en": "3.9 V"
+},
+{
+"vi": "0 V",
+"en": "0 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điốt nằm trong vòng hồi tiếp nên sụt áp 0,7 V được bù: tụ nạp tới đúng giá trị đỉnh 3,2 V.",
+"en": "The diode is inside the feedback loop so its 0.7 V drop is compensated: the capacitor charges to exactly the peak value 3.2 V."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-peak"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch tách đỉnh dùng op-amp giữ giá trị nào của tín hiệu vào?",
+"en": "Which value of the input does an op-amp peak detector hold?"
+},
+"opts": [
+{
+"vi": "Giá trị đỉnh lớn nhất đã xuất hiện",
+"en": "The largest peak value that has occurred"
+},
+{
+"vi": "Giá trị trung bình",
+"en": "The average value"
+},
+{
+"vi": "Giá trị tức thời hiện tại",
+"en": "The present instantaneous value"
+},
+{
+"vi": "Giá trị đỉnh–đỉnh",
+"en": "The peak-to-peak value"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Tụ chỉ được nạp khi Vin lớn hơn điện áp đang giữ, nên nó ghi nhớ đỉnh cao nhất tới khi bị xả.",
+"en": "The capacitor charges only when Vin exceeds the held voltage, so it remembers the highest peak until it is discharged."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-peak"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Vì sao trong mạch tách đỉnh dùng op-amp, điốt được đặt trong vòng hồi tiếp của op-amp?",
+"en": "Why is the diode placed inside the op-amp feedback loop in an op-amp peak detector?"
+},
+"opts": [
+{
+"vi": "Để sụt áp thuận 0,7 V của điốt được bù",
+"en": "So the diode's 0.7 V forward drop is compensated"
+},
+{
+"vi": "Để tăng điện áp đỉnh thêm 0,7 V",
+"en": "To raise the peak voltage by 0.7 V"
+},
+{
+"vi": "Để tụ xả nhanh hơn",
+"en": "So the capacitor discharges faster"
+},
+{
+"vi": "Để op-amp hoạt động như mạch tích phân",
+"en": "So the op-amp acts as an integrator"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Op-amp tự nâng điện áp ra thêm 0,7 V để điốt dẫn, nên điện áp tụ bằng đúng Vin.",
+"en": "The op-amp raises its output by 0.7 V so the diode conducts, so the capacitor voltage equals Vin exactly."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-peak"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Làm thế nào để đưa mạch tách đỉnh về trạng thái ban đầu, sẵn sàng đo đỉnh mới?",
+"en": "How do you reset a peak detector so it can measure a new peak?"
+},
+"opts": [
+{
+"vi": "Xả tụ giữ (ví dụ bằng một công tắc)",
+"en": "Discharge the hold capacitor (for example with a switch)"
+},
+{
+"vi": "Đảo cực nguồn",
+"en": "Reverse the supply polarity"
+},
+{
+"vi": "Tăng điện áp vào",
+"en": "Raise the input voltage"
+},
+{
+"vi": "Thay điốt bằng điện trở",
+"en": "Replace the diode by a resistor"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Tụ giữ đỉnh cho tới khi bị xả; xả tụ đưa ngõ ra về 0.",
+"en": "The capacitor holds the peak until it is discharged; discharging it returns the output to zero."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §14–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-peak"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ADC 8 bit có thang đo đầy đủ VFS = 5 V. Một LSB (bước mã) bằng bao nhiêu?",
+"en": "An 8-bit ADC has a full-scale range VFS = 5 V. How large is one LSB (code step)?"
+},
+"opts": [
+{
+"vi": "19.53 mV",
+"en": "19.53 mV"
+},
+{
+"vi": "19.61 mV",
+"en": "19.61 mV"
+},
+{
+"vi": "4.883 mV",
+"en": "4.883 mV"
+},
+{
+"vi": "625 mV",
+"en": "625 mV"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "LSB = VFS/2ⁿ = 5/256 = 19,53 mV (không phải 5/255).",
+"en": "LSB = VFS/2ⁿ = 5/256 = 19.53 mV (not 5/255)."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ADC 10 bit với VFS = 5 V nhận điện áp vào 3 V. Mã số nguyên gần nhất là bao nhiêu?",
+"en": "A 10-bit ADC with VFS = 5 V receives 3 V. What is the nearest integer code?"
+},
+"opts": [
+{
+"vi": "614",
+"en": "614"
+},
+{
+"vi": "768",
+"en": "768"
+},
+{
+"vi": "600",
+"en": "600"
+},
+{
+"vi": "512",
+"en": "512"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "LSB = 5/1024 = 4,883 mV; 3/0,004883 = 614,4 → mã 614.",
+"en": "LSB = 5/1024 = 4.883 mV; 3/0.004883 = 614.4 → code 614."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ADC 12 bit có VFS = 10 V. Sai số lượng tử tối đa (±½ LSB) là bao nhiêu?",
+"en": "A 12-bit ADC has VFS = 10 V. What is the maximum quantisation error (±½ LSB)?"
+},
+"opts": [
+{
+"vi": "1.22 mV",
+"en": "1.22 mV"
+},
+{
+"vi": "2.44 mV",
+"en": "2.44 mV"
+},
+{
+"vi": "0.61 mV",
+"en": "0.61 mV"
+},
+{
+"vi": "417 mV",
+"en": "417 mV"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "LSB = 10/4096 = 2,441 mV; sai số lượng tử tối đa là nửa LSB = 1,22 mV.",
+"en": "LSB = 10/4096 = 2.441 mV; the maximum quantisation error is half an LSB = 1.22 mV."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ADC 12 bit có bao nhiêu mức (mã) khác nhau?",
+"en": "How many different levels (codes) does a 12-bit ADC have?"
+},
+"opts": [
+{
+"vi": "4096",
+"en": "4096"
+},
+{
+"vi": "4095",
+"en": "4095"
+},
+{
+"vi": "144",
+"en": "144"
+},
+{
+"vi": "2048",
+"en": "2048"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "2¹² = 4096 mức, từ mã 0 tới 4095.",
+"en": "2¹² = 4096 levels, from code 0 to 4095."
+},
+"level": 1,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ADC xấp xỉ liên tiếp (SAR) 12 bit chạy với đồng hồ f_C = 1 MHz. Thời gian chuyển đổi n/f_C là bao nhiêu?",
+"en": "A 12-bit successive-approximation (SAR) ADC runs from a clock f_C = 1 MHz. What is the conversion time n/f_C?"
+},
+"opts": [
+{
+"vi": "12 μs",
+"en": "12 μs"
+},
+{
+"vi": "4096 μs",
+"en": "4096 μs"
+},
+{
+"vi": "1 μs",
+"en": "1 μs"
+},
+{
+"vi": "24 μs",
+"en": "24 μs"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "SAR cần đúng n = 12 chu kỳ đồng hồ: 12/10⁶ = 12 μs.",
+"en": "A SAR needs exactly n = 12 clock cycles: 12/10⁶ = 12 μs."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "DAC 4 bit có VFS = 5 V, mã vào 1010₂. Điện áp ra v_O = VFS·Σ bᵢ·2⁻ⁱ là bao nhiêu?",
+"en": "A 4-bit DAC has VFS = 5 V and the input code 1010₂. What is the output v_O = VFS·Σ bᵢ·2⁻ⁱ?"
+},
+"opts": [
+{
+"vi": "3.125 V",
+"en": "3.125 V"
+},
+{
+"vi": "2.5 V",
+"en": "2.5 V"
+},
+{
+"vi": "3.333 V",
+"en": "3.333 V"
+},
+{
+"vi": "1.875 V",
+"en": "1.875 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "1010₂ = 0,5 + 0,125 = 0,625 của thang đo; 0,625 × 5 V = 3,125 V.",
+"en": "1010₂ = 0.5 + 0.125 = 0.625 of full scale; 0.625 × 5 V = 3.125 V."
+},
+"level": 2,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cần bộ ADC có LSB không lớn hơn 1 mV với VFS = 5 V. Cần ít nhất bao nhiêu bit?",
+"en": "An ADC needs an LSB of no more than 1 mV with VFS = 5 V. What is the minimum number of bits?"
+},
+"opts": [
+{
+"vi": "13",
+"en": "13"
+},
+{
+"vi": "12",
+"en": "12"
+},
+{
+"vi": "10",
+"en": "10"
+},
+{
+"vi": "14",
+"en": "14"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "2ⁿ ≥ 5/0,001 = 5000: 2¹² = 4096 chưa đủ (LSB 1,22 mV), 2¹³ = 8192 đủ (LSB 0,61 mV).",
+"en": "2ⁿ ≥ 5/0.001 = 5000: 2¹² = 4096 is not enough (LSB 1.22 mV), 2¹³ = 8192 is (LSB 0.61 mV)."
+},
+"level": 3,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Jaeger 5e §12.5–12.6",
+"en": "Gap-fill (coverage loop) – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m05-adc-dac"
+}
+]

@@ -1,0 +1,58 @@
+"""Module 05 concepts: special-purpose op-amp circuits and A/D-D/A (Floyd 9e Ch.14; Jaeger 5e Ch.12)."""
+from lib import K
+M = 'm05'
+K('m05-instrumentation', M, ('Mạch khuếch đại thiết bị (IA)', 'Instrumentation amplifier'),
+  ('Hai bộ đệm vào và một tầng vi sai; một điện trở RG đặt độ lợi, CMRR rất cao, Zin rất lớn. Dùng cho tín hiệu nhỏ từ cảm biến có nhiễu chung lớn.', 'Two input buffers and a difference stage; one resistor RG sets the gain, with very high CMRR and Zin. Used for small sensor signals riding on large common-mode noise.'),
+  facts=[('Av = 1 + 2R/RG', ('Hai tầng vào, tầng ra có độ lợi 1.', 'Two input stages, unity-gain output stage.')), ('AD622: G = 1 + 50,5 kΩ/RG', ('Tính RG = 50,5 kΩ/(G − 1).', 'So RG = 50.5 kΩ/(G − 1).'))],
+  steps=[('Phần chung bị triệt, chỉ phần HIỆU được khuếch đại: Vout = Av·(V₁ − V₂).', 'The common part is rejected; only the DIFFERENCE is amplified: Vout = Av·(V₁ − V₂).'), ('Cho trước độ lợi G: giải RG từ công thức.', 'Given a gain G: solve for RG.')],
+  traps=[('Bỏ số “1 +” trong G = 1 + 50,5 kΩ/RG.', 'Dropping the “1 +” in G = 1 + 50.5 kΩ/RG.'), ('Khuếch đại cả phần chung: nó bị triệt.', 'Amplifying the common-mode part: it is rejected.')],
+  angles=[('R = 100 kΩ, RG = 1 kΩ: độ lợi và ngõ ra với 5 mV vi sai?', 'R = 100 kΩ, RG = 1 kΩ: gain and output for a 5 mV difference?'), ('Tìm RG để có G = 1000.', 'Find RG for G = 1000.')],
+  topics=['Instrumentation amplifiers'], kw=['instrumentation amplifier', 'ia', 'rg', 'ad622', 'gain resistor', 'sensor', 'strain gauge', 'bridge', 'differential gain', 'cmrr'], kwv=['khuếch đại thiết bị', 'mạch ia', 'cảm biến', 'cầu', 'điện trở đặt độ lợi', 'vi sai'],
+  src=['Floyd 9e §14–1'], related=['m02-modes-cmrr'], chk='instrumentation')
+K('m05-isolation', M, ('Mạch khuếch đại cách ly', 'Isolation amplifier'),
+  ('Hai tầng cách ly điện giữa ngõ vào và ngõ ra (ghép quang, biến áp hoặc tụ): không có đường dẫn điện nên bảo vệ thiết bị và người khỏi điện áp cao, và chống nhiễu.', 'Two electrically isolated stages, input and output (optical, transformer or capacitive coupling): no electrical path, so equipment and people are protected from high voltages and noise is blocked.'),
+  facts=[('Độ lợi tổng = tích độ lợi hai tầng', ('Ví dụ 30 × 10 = 300.', 'For example 30 × 10 = 300.'))],
+  steps=[('Nhân độ lợi tầng vào với tầng ra.', 'Multiply the input-stage gain by the output-stage gain.')],
+  traps=[('Cho rằng có chung đất giữa hai phía.', 'Assuming the two sides share a ground.')],
+  angles=[('Vì sao dùng mạch cách ly?', 'Why use an isolation amplifier?'), ('Độ lợi tổng của hai tầng cách ly.', 'Overall gain of the two isolated stages.')],
+  topics=['Isolation amplifiers'], kw=['isolation amplifier', 'isolation', 'optical coupling', 'barrier', 'high voltage', 'iso124', 'safety'], kwv=['khuếch đại cách ly', 'cách ly', 'ghép quang', 'điện áp cao', 'an toàn'],
+  src=['Floyd 9e §14–2'], related=['m05-instrumentation'], chk='isolation')
+K('m05-ota', M, ('Mạch khuếch đại hỗ dẫn (OTA)', 'Operational transconductance amplifier'),
+  ('OTA biến điện áp vào thành dòng ra; dòng phân cực IBIAS đặt hỗ dẫn gm nên độ lợi điều khiển được bằng điện (AM, AGC).', 'The OTA turns an input voltage into an output current; the bias current sets gm, so the gain is electrically controllable (AM, AGC).'),
+  facts=[('Iout = gm·Vin ,  Av = gm·RL ,  gm = K·IBIAS', ('Đơn vị gm là siemens (S).', 'gm is measured in siemens (S).'))],
+  steps=[('Đổi μS, μA, mV về đơn vị cơ bản trước khi nhân.', 'Convert μS, μA, mV to base units before multiplying.'), ('Iout = gm·Vin rồi Vout = Iout·RL.', 'Iout = gm·Vin, then Vout = Iout·RL.')],
+  traps=[('Sai đơn vị: 1 μS × 1 mV = 1 nA.', 'Unit slips: 1 μS × 1 mV = 1 nA.'), ('Cho rằng gm cố định: nó phụ thuộc IBIAS.', 'Treating gm as fixed: it follows IBIAS.')],
+  angles=[('gm = 5000 μS, Vin = 100 mV: Iout?', 'gm = 5000 μS, Vin = 100 mV: Iout?'), ('RL cần để có Vout = 5 V khi Iout = 500 μA.', 'RL needed for Vout = 5 V at Iout = 500 μA.')],
+  topics=['OTA'], kw=['ota', 'transconductance', 'gm', 'siemens', 'bias current', 'lm13700', 'agc', 'amplitude modulation', 'iabc'], kwv=['hỗ dẫn', 'ota', 'gm', 'siemens', 'dòng phân cực', 'điều khiển độ lợi'],
+  src=['Floyd 9e §14–3'], related=['m02-bias-offset'], chk='ota')
+K('m05-log', M, ('Mạch logarit và đối logarit', 'Log and antilog amplifiers'),
+  ('Điốt trong đường hồi tiếp cho điện áp tỉ lệ với logarit của dòng; mạch đối logarit làm ngược lại (hàm mũ). Dùng để nén dải động và nhân/chia bằng cộng/trừ.', 'A diode in the feedback path gives a voltage proportional to the logarithm of its current; the antilog circuit does the reverse (exponential). Used to compress dynamic range and to multiply/divide by adding/subtracting.'),
+  facts=[('Vout ≈ −0,025·ln(Vin/(R·IR))', ('Dùng ln, không phải log₁₀.', 'Use ln, not log₁₀.')), ('Vout ≈ −R·IR·exp(−Vin/0,025)', ('Mạch đối logarit.', 'Antilog circuit.'))],
+  steps=[('Nhận mạch (log hay đối log) rồi mới thế số.', 'Identify the circuit (log or antilog) before substituting.'), ('Đổi IR (nA) về A và Vin về V.', 'Convert IR (nA) to A and Vin to V.')],
+  traps=[('Dùng log₁₀ thay vì ln.', 'Using log₁₀ instead of ln.'), ('Mạch log đảo cho Vout âm: nêu |Vout| khi hỏi “tăng/giảm”.', 'The inverting log amplifier gives a negative Vout: state |Vout| when asked about “increase/decrease”.')],
+  angles=[('Tính Vout của mạch log với Vin, R, IR cho trước.', 'Compute the log-amp output for given Vin, R, IR.'), ('Vì sao mạch log cần bù nhiệt?', 'Why does a log amplifier need temperature compensation?')],
+  topics=['Log and antilog amplifiers'], kw=['log amplifier', 'logarithmic', 'antilog', 'exponential', 'ln', 'diode feedback', 'dynamic range', 'compress'], kwv=['mạch logarit', 'logarit', 'đối logarit', 'hàm mũ', 'nén dải động', 'điốt hồi tiếp'],
+  src=['Floyd 9e §14–4'], related=['m05-instrumentation'], chk='log')
+K('m05-v-i', M, ('Bộ chuyển đổi V–I, I–V và nguồn dòng không đổi', 'V-to-I, I-to-V converters and constant-current sources'),
+  ('Hồi tiếp âm ép điện áp trên R1 bằng Vin nên dòng tải không phụ thuộc tải (trong dải cho phép của nguồn). Bộ chuyển I–V đặt dòng vào Rf.', 'Negative feedback forces the voltage across R1 to equal Vin, so the load current is independent of the load (within the supply compliance range). An I-to-V converter drives the current through Rf.'),
+  facts=[('V→I: I_L = Vin/R1', ('Dòng tải không đổi.', 'Constant load current.')), ('I→V: Vout = −Iin·Rf', ('Mạch đảo với dòng vào.', 'Inverting stage with an input current.'))],
+  steps=[('Kiểm tra tải còn nằm trong dải tuân thủ (compliance) của nguồn.', 'Check that the load is within the supply compliance range.'), ('Dòng tải I = Vin/R1, bỏ qua giá trị tải.', 'Load current I = Vin/R1, whatever the load value.')],
+  traps=[('Quên giới hạn nguồn: tải quá lớn làm op-amp bão hoà.', 'Forgetting the supply limit: too large a load saturates the op-amp.')],
+  angles=[('Dòng qua tải 1 kΩ khi Vin = 5 V, R1 = 10 kΩ.', 'Load current through 1 kΩ for Vin = 5 V, R1 = 10 kΩ.')],
+  topics=['Converters and peak detector'], kw=['voltage-to-current', 'current-to-voltage', 'constant current', 'current source', 'compliance', 'v-to-i', 'i-to-v'], kwv=['chuyển đổi điện áp sang dòng', 'nguồn dòng', 'dòng không đổi', 'chuyển đổi dòng sang điện áp'],
+  src=['Floyd 9e §14–5'], related=['m02-inverting'], chk='vi')
+K('m05-peak', M, ('Mạch tách đỉnh', 'Peak detector'),
+  ('Op-amp làm bộ so sánh nạp tụ qua điốt tới giá trị đỉnh; tụ giữ đỉnh tới khi bị xả. Điốt nằm trong vòng hồi tiếp nên sụt áp 0,7 V được bù.', 'An op-amp acting as a comparator charges a capacitor through a diode to the peak; the capacitor holds it until discharged. The diode sits inside the feedback loop so its 0.7 V drop is compensated.'),
+  facts=[], steps=[('Ngõ ra theo đỉnh vào: tụ chỉ nạp khi Vin lớn hơn điện áp đang giữ.', 'The output follows the input peak: the capacitor charges only when Vin exceeds the held voltage.')],
+  traps=[('Quên điốt trong vòng hồi tiếp nên sai số 0,7 V biến mất.', 'Forgetting that the diode is in the loop, so the 0.7 V error disappears.')],
+  angles=[('Mạch tách đỉnh giữ giá trị nào?', 'What value does a peak detector hold?')],
+  topics=['Converters and peak detector'], kw=['peak detector', 'peak', 'hold capacitor', 'diode', 'sample'], kwv=['tách đỉnh', 'giữ đỉnh', 'tụ giữ', 'điốt'],
+  src=['Floyd 9e §14–5'], related=['m03-comparator'])
+K('m05-adc-dac', M, ('Chuyển đổi A/D và D/A: độ phân giải, lượng tử hoá', 'A/D and D/A conversion: resolution and quantisation'),
+  ('Bộ DAC n bit chia thang đo VFS thành 2ⁿ mức; bộ ADC lượng tử hoá điện áp thành mã N, sai số lượng tử ±½ LSB. Bộ ADC xấp xỉ liên tiếp (SAR) cần n chu kỳ đồng hồ.', 'An n-bit DAC divides the full-scale range VFS into 2ⁿ levels; an ADC quantises a voltage to a code N with a quantisation error of ±½ LSB. A successive-approximation (SAR) ADC needs n clock cycles.'),
+  facts=[('LSB = VFS/2ⁿ', ('Một bước của mã.', 'One code step.')), ('mã N tương ứng (N ± ½)·LSB', ('Khoảng điện áp cho cùng một mã.', 'The voltage span of one code.')), ('SAR: T_chuyển đổi = n/f_C', ('n bit, tần số đồng hồ f_C.', 'n bits, clock frequency f_C.'))],
+  steps=[('Tính LSB = VFS/2ⁿ.', 'Compute LSB = VFS/2ⁿ.'), ('Mã N = làm tròn(Vin/LSB); điện áp tương ứng N·LSB.', 'Code N = round(Vin/LSB); the matching voltage is N·LSB.')],
+  traps=[('Chia cho 2ⁿ − 1 thay vì 2ⁿ khi đề định nghĩa LSB bằng VFS/2ⁿ.', 'Dividing by 2ⁿ − 1 instead of 2ⁿ when the text defines LSB = VFS/2ⁿ.'), ('Quên rằng sai số lượng tử tối đa là nửa LSB.', 'Forgetting that the maximum quantisation error is half an LSB.')],
+  angles=[('ADC 10 bit, VFS = 5 V: LSB và mã cho 3 V?', '10-bit ADC, VFS = 5 V: LSB and the code for 3 V?'), ('Thời gian chuyển đổi SAR 12 bit ở 1 MHz.', 'SAR conversion time for 12 bits at 1 MHz.')],
+  topics=['Converters and peak detector'], kw=['adc', 'dac', 'a/d', 'd/a', 'analog-to-digital', 'digital-to-analog', 'resolution', 'lsb', 'quantization', 'successive approximation', 'sampling', 'bits'], kwv=['adc', 'dac', 'chuyển đổi a/d', 'chuyển đổi d/a', 'độ phân giải', 'lượng tử', 'số bit', 'lsb'],
+  src=['Jaeger 5e §12.5–12.6'], related=['m03-scaling'], chk='adcdac')

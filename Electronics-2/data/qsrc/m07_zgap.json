@@ -1,0 +1,94 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ dao động thư giãn op-amp có R1 = R2 = 10 kΩ (B = 0,5), R = 10 kΩ và C = 10 nF. Tần số f = 1/(2RC·ln((1+B)/(1−B))) là bao nhiêu?",
+"en": "An op-amp relaxation oscillator has R1 = R2 = 10 kΩ (B = 0.5), R = 10 kΩ and C = 10 nF. What is f = 1/(2RC·ln((1+B)/(1−B)))?"
+},
+"opts": [
+{
+"vi": "4.55 kHz",
+"en": "4.55 kHz"
+},
+{
+"vi": "5 kHz",
+"en": "5 kHz"
+},
+{
+"vi": "9.1 kHz",
+"en": "9.1 kHz"
+},
+{
+"vi": "7.21 kHz",
+"en": "7.21 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "(1+B)/(1−B) = 3, ln 3 = 1,0986 nên f = 1/(2 × 10⁻⁴ × 1,0986) = 4,55 kHz.",
+"en": "(1+B)/(1−B) = 3, ln 3 = 1.0986 so f = 1/(2 × 10⁻⁴ × 1.0986) = 4.55 kHz."
+},
+"level": 3,
+"topic": {
+"en": "Relaxation oscillators",
+"vi": "Mạch dao động thư giãn"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §16–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §16–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m07-relaxation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Ngõ ra của một bộ dao động thư giãn dùng op-amp có hysteresis và mạch RC là dạng sóng nào?",
+"en": "What waveform appears at the output of a relaxation oscillator made of an op-amp with hysteresis and an RC circuit?"
+},
+"opts": [
+{
+"vi": "Sóng vuông, còn điện áp tụ có dạng cong nạp–xả giữa hai ngưỡng",
+"en": "A square wave, while the capacitor voltage is a charge–discharge curve between the two thresholds"
+},
+{
+"vi": "Sóng sin thuần",
+"en": "A pure sine wave"
+},
+{
+"vi": "Điện áp một chiều không đổi",
+"en": "A constant dc voltage"
+},
+{
+"vi": "Xung kim",
+"en": "A train of spikes"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Tụ nạp–xả giữa +B·Vsat và −B·Vsat; mỗi lần chạm ngưỡng, bộ so sánh đổi mức nên ngõ ra là sóng vuông.",
+"en": "The capacitor charges and discharges between +B·Vsat and −B·Vsat; each time it reaches a threshold the comparator flips, so the output is a square wave."
+},
+"level": 1,
+"topic": {
+"en": "Relaxation oscillators",
+"vi": "Mạch dao động thư giãn"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §16–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §16–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m07-relaxation"
+}
+]

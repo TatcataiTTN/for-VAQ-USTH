@@ -20,6 +20,7 @@
   function el(t, c, txt) { var e = document.createElement(t); if (c) e.className = c; if (txt !== undefined) e.textContent = txt; return e; }
   var renderNow = function () { };
   var S = { book: 'all', kind: 'all', mod: 'all', cls: 'all', num: false, ans: false, q: '', page: 0, size: 30 }, D = [], F = {};
+  try { var P = new URLSearchParams(location.search); if (/^m(0[1-9]|10)$/.test(P.get('mod') || '')) S.mod = P.get('mod'); if (P.get('q')) S.q = P.get('q').toLowerCase(); } catch (e) { }
   root.appendChild(el('p', 'muted', X.load));
   fetch(root.getAttribute('data-src')).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(function (j) {
     F = {}; j.fields.forEach(function (f, i) { F[f] = i; });
@@ -30,7 +31,7 @@
     var l = el('label', null, label + ' '), s = el('select');
     opts.forEach(function (o) { var op = el('option', null, o[1]); op.value = o[0]; s.appendChild(op); });
     s.onchange = function () { S[key] = s.value; S.page = 0; renderNow(); };
-    l.appendChild(s); return l;
+    s.value = S[key]; l.appendChild(s); return l;
   }
   function init() {
     root.innerHTML = '';
@@ -41,7 +42,7 @@
     bar.appendChild(sel(X.mod, [['all', X.all], ['none', X.none]].concat(mods), 'mod'));
     bar.appendChild(sel(X.cls, [['all', X.all]].concat(Object.keys(X.classes).map(function (k) { return [k, X.classes[k]]; })), 'cls'));
     [['num', X.num], ['ans', X.ans]].forEach(function (p) { var l = el('label'), c = el('input'); c.type = 'checkbox'; c.onchange = function () { S[p[0]] = c.checked; S.page = 0; render(); }; l.appendChild(c); l.appendChild(document.createTextNode(' ' + p[1])); bar.appendChild(l); });
-    var q = el('input'); q.type = 'search'; q.placeholder = X.search; q.oninput = function () { S.q = q.value.toLowerCase(); S.page = 0; render(); }; bar.appendChild(q);
+    var q = el('input'); q.type = 'search'; q.placeholder = X.search; q.value = S.q; q.oninput = function () { S.q = q.value.toLowerCase(); S.page = 0; render(); }; bar.appendChild(q);
     root.appendChild(bar);
     var info = el('div', 'score'); root.appendChild(info);
     var list = el('div'); root.appendChild(list);

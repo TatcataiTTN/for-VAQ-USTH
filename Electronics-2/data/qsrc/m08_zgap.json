@@ -1,0 +1,94 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp tuyến tính có VIN = 12 V, VOUT = 5 V, IL = 0,5 A. Công suất tiêu tán (toả nhiệt) trên phần tử pass là bao nhiêu?",
+"en": "A linear regulator has VIN = 12 V, VOUT = 5 V, IL = 0.5 A. What power is dissipated as heat in the pass element?"
+},
+"opts": [
+{
+"vi": "3.5 W",
+"en": "3.5 W"
+},
+{
+"vi": "6 W",
+"en": "6 W"
+},
+{
+"vi": "2.5 W",
+"en": "2.5 W"
+},
+{
+"vi": "8.5 W",
+"en": "8.5 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "P_D = (VIN − VOUT)·IL = 7 × 0,5 = 3,5 W (không phải VIN·IL = 6 W).",
+"en": "P_D = (VIN − VOUT)·IL = 7 × 0.5 = 3.5 W (not VIN·IL = 6 W)."
+},
+"level": 2,
+"topic": {
+"en": "IC regulators",
+"vi": "IC ổn áp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §17–4",
+"en": "Gap-fill (coverage loop) – Floyd 9e §17–4"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m08-heat"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp tuyến tính nhận 12 V và cho ra 5 V. Hiệu suất xấp xỉ (bỏ qua dòng tĩnh) là bao nhiêu?",
+"en": "A linear regulator takes 12 V and delivers 5 V. What is its approximate efficiency (neglecting quiescent current)?"
+},
+"opts": [
+{
+"vi": "41.7 %",
+"en": "41.7 %"
+},
+{
+"vi": "58.3 %",
+"en": "58.3 %"
+},
+{
+"vi": "100 %",
+"en": "100 %"
+},
+{
+"vi": "71 %",
+"en": "71 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "η ≈ VOUT/VIN = 5/12 = 41,7 %; phần còn lại (58,3 %) biến thành nhiệt.",
+"en": "η ≈ VOUT/VIN = 5/12 = 41.7 %; the other 58.3 % becomes heat."
+},
+"level": 2,
+"topic": {
+"en": "IC regulators",
+"vi": "IC ổn áp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §17–4",
+"en": "Gap-fill (coverage loop) – Floyd 9e §17–4"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m08-heat"
+}
+]

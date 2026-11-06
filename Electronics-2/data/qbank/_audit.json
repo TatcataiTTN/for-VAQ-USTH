@@ -110,9 +110,9 @@
   }
  },
  "m05": {
-  "n": 104,
+  "n": 122,
   "n_goc": 32,
-  "n_bo_sung": 72,
+  "n_bo_sung": 90,
   "essays": 12,
   "essays_goc": 12,
   "audit": {
@@ -137,15 +137,15 @@
     "correct_is_longest": 1.0
    },
    "mcq/4opt": {
-    "n": 79,
+    "n": 97,
     "pos": [
-     20,
-     20,
-     20,
-     19
+     25,
+     24,
+     24,
+     24
     ],
-    "chi2": 0.04,
-    "correct_is_longest": 0.135
+    "chi2": 0.03,
+    "correct_is_longest": 0.167
    },
    "mcq/5opt": {
     "n": 1,
@@ -233,9 +233,9 @@
   }
  },
  "m07": {
-  "n": 117,
+  "n": 119,
   "n_goc": 36,
-  "n_bo_sung": 81,
+  "n_bo_sung": 83,
   "essays": 11,
   "essays_goc": 11,
   "audit": {
@@ -260,15 +260,15 @@
     "correct_is_longest": 0.0
    },
    "mcq/4opt": {
-    "n": 84,
+    "n": 86,
     "pos": [
-     21,
-     21,
+     22,
+     22,
      21,
      21
     ],
-    "chi2": 0.0,
-    "correct_is_longest": 0.197
+    "chi2": 0.05,
+    "correct_is_longest": 0.205
    },
    "mcq/6opt": {
     "n": 1,
@@ -295,9 +295,9 @@
   }
  },
  "m08": {
-  "n": 103,
+  "n": 105,
   "n_goc": 28,
-  "n_bo_sung": 75,
+  "n_bo_sung": 77,
   "essays": 17,
   "essays_goc": 17,
   "audit": {
@@ -312,15 +312,15 @@
     "correct_is_longest": 0.25
    },
    "mcq/4opt": {
-    "n": 76,
+    "n": 78,
     "pos": [
      19,
      19,
-     18,
-     20
+     19,
+     21
     ],
-    "chi2": 0.11,
-    "correct_is_longest": 0.159
+    "chi2": 0.15,
+    "correct_is_longest": 0.155
    },
    "mcq/5opt": {
     "n": 1,
@@ -388,22 +388,22 @@
   }
  },
  "m10": {
-  "n": 105,
+  "n": 113,
   "n_goc": 0,
-  "n_bo_sung": 105,
+  "n_bo_sung": 113,
   "essays": 15,
   "essays_goc": 15,
   "audit": {
    "mcq/4opt": {
-    "n": 76,
+    "n": 84,
     "pos": [
-     19,
-     19,
-     19,
-     19
+     21,
+     21,
+     21,
+     21
     ],
     "chi2": 0.0,
-    "correct_is_longest": 0.197
+    "correct_is_longest": 0.203
    },
    "tf/2opt": {
     "n": 29,
@@ -456,22 +456,22 @@
   }
  },
  "m01": {
-  "n": 79,
+  "n": 104,
   "n_goc": 0,
-  "n_bo_sung": 79,
+  "n_bo_sung": 104,
   "essays": 24,
   "essays_goc": 24,
   "audit": {
    "mcq/4opt": {
-    "n": 70,
+    "n": 95,
     "pos": [
-     18,
-     18,
-     17,
-     17
+     24,
+     24,
+     24,
+     23
     ],
-    "chi2": 0.06,
-    "correct_is_longest": 0.315
+    "chi2": 0.03,
+    "correct_is_longest": 0.303
    },
    "tf/2opt": {
     "n": 9,

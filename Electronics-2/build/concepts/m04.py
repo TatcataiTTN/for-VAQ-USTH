@@ -1,0 +1,51 @@
+"""Module 04 concepts: coupling, amplifier classes, push-pull and feedback (EASA M04 SM01; Floyd Ch.6-7, 12)."""
+from lib import K
+M = 'm04'
+K('m04-cascade', M, ('Ghép tầng và độ lợi tổng', 'Cascaded stages and overall gain'),
+  ('Một tầng dùng một transistor chỉ cho độ lợi điện áp khoảng 10–100 (EASA); ghép nhiều tầng thì độ lợi tổng là TÍCH các độ lợi, hay TỔNG khi tính bằng dB.', 'A single-transistor stage gives only about 10–100 of voltage gain (EASA); cascading stages gives an overall gain that is the PRODUCT of the stage gains, or the SUM when expressed in dB.'),
+  facts=[('Av(tổng) = Av1·Av2·…·Avn', ('Độ lợi dạng số lần nhân với nhau.', 'Linear gains multiply.')), ('Av(dB) = 20·log₁₀(Av) ,  Av(tổng, dB) = Σ Av,k(dB)', ('Độ lợi dB cộng với nhau.', 'Gains in dB add.'))],
+  steps=[('Đổi mọi độ lợi về cùng một dạng (số lần hoặc dB) rồi mới kết hợp.', 'Express all gains in one form (ratio or dB) before combining.'), ('Muốn độ lợi A từ tầng ≤ 40: chọn số tầng n sao cho 40ⁿ ≥ A rồi chia đều.', 'For a gain A from stages ≤ 40: pick n with 40ⁿ ≥ A and split evenly.')],
+  traps=[('Cộng độ lợi dạng số lần (phải nhân), hoặc nhân độ lợi dB (phải cộng).', 'Adding linear gains (they multiply) or multiplying dB gains (they add).'), ('Bỏ qua hiệu ứng tải giữa các tầng.', 'Ignoring loading between stages.')],
+  angles=[('Ba tầng 10 × 10 × 10: độ lợi tổng và dB?', 'Three stages 10 × 10 × 10: overall gain and dB?'), ('Hai tầng 20 dB và 14 dB: độ lợi tổng?', 'Two stages of 20 dB and 14 dB: overall gain?')],
+  topics=['Cascade amplifiers and gain'], kw=['cascade', 'multistage', 'overall gain', 'stage gain', 'decibel', 'db', 'product of gains', 'total gain'], kwv=['ghép tầng', 'nhiều tầng', 'độ lợi tổng', 'tích các độ lợi', 'decibel', 'db'],
+  src=['Floyd 9e §6–6', 'EASA M04 SM01 (cascade)'], related=['m04-coupling', 'm02-frequency'], chk='cascade')
+K('m04-coupling', M, ('Bốn cách ghép tầng', 'The four coupling methods'),
+  ('Ghép trực tiếp (ít linh kiện, độ lợi cao, nhạy trôi nguồn), ghép RC (tụ chặn một chiều, phổ biến nhất), ghép trở kháng (cuộn cảm, tần số cao) và ghép biến áp (phối hợp trở kháng, tầng công suất).', 'Direct coupling (few parts, high gain, sensitive to drift), RC coupling (the capacitor blocks dc, most common), impedance coupling (a coil, high frequency) and transformer coupling (impedance matching, power stages).'),
+  facts=[('fc = 1/(2π·R·C)', ('Tần số góc ghép RC; R là điện trở tổng nhìn từ tụ.', 'RC-coupling corner frequency; R is the total resistance seen by the capacitor.'))],
+  steps=[('Chọn cách ghép theo nhu cầu: một chiều → trực tiếp; chỉ xoay chiều → RC; công suất/phối hợp → biến áp.', 'Choose by need: dc → direct; ac only → RC; power/matching → transformer.'), ('Với ghép RC: tính R nhìn từ tụ rồi fc.', 'For RC coupling: find R seen by the capacitor, then fc.')],
+  traps=[('Cho rằng ghép RC cho qua tín hiệu một chiều.', 'Thinking RC coupling passes dc.'), ('Dùng điện trở sai để tính fc.', 'Using the wrong resistance for fc.')],
+  angles=[('Cách ghép nào cho qua cả tín hiệu một chiều?', 'Which coupling passes dc?'), ('Tính tần số góc của tụ ghép RC.', 'Compute the corner frequency of an RC coupling capacitor.')],
+  topics=['Coupling methods'], kw=['coupling', 'direct coupling', 'rc coupling', 'transformer coupling', 'impedance coupling', 'coupling capacitor', 'blocks dc', 'impedance matching'], kwv=['ghép tầng', 'ghép trực tiếp', 'ghép rc', 'ghép biến áp', 'ghép trở kháng', 'tụ ghép', 'chặn một chiều'],
+  src=['EASA M04 SM01 (coupling)'], related=['m04-cascade', 'm06-poles'], chk='coupling')
+K('m04-classes', M, ('Các lớp khuếch đại A, AB, B, C', 'Amplifier classes A, AB, B and C'),
+  ('Lớp càng hiệu suất thì méo càng lớn (độ trung thực thấp): lớp A dẫn cả chu kỳ, B nửa chu kỳ, AB giữa hai lớp đó, C dưới nửa chu kỳ (tải cộng hưởng).', 'The more efficient the class, the higher the distortion (lower fidelity): class A conducts the whole cycle, B half, AB in between, C less than half (tuned load).'),
+  facts=[('Lớp B đẩy kéo: η ≈ 79 % (lý thuyết π/4)', ('Lớp AB thấp hơn một chút.', 'Class AB slightly lower.')), ('Lớp C: PD = duty·Vce(sat)·Ic(sat)', ('Công suất tiêu tán rất nhỏ do dẫn ngắn.', 'Very little dissipation because it conducts briefly.'))],
+  steps=[('Xác định góc dẫn: 360° (A), 180°–360° (AB), 180° (B), <180° (C).', 'Identify the conduction angle: 360° (A), 180°–360° (AB), 180° (B), <180° (C).'), ('Chọn lớp theo yêu cầu: trung thực → A/AB; hiệu suất → B/C.', 'Choose by need: fidelity → A/AB; efficiency → B/C.')],
+  traps=[('Nghĩ lớp C dùng cho âm thanh trung thực: nó cần tải điều chỉnh vì méo lớn.', 'Thinking class C suits hi-fi: it needs a tuned load because of heavy distortion.')],
+  angles=[('Lớp nào hiệu suất cao nhất, méo lớn nhất?', 'Which class is the most efficient and most distorting?'), ('Góc dẫn của lớp B.', 'Conduction angle of class B.')],
+  topics=['Amplifier classes'], kw=['class a', 'class b', 'class ab', 'class c', 'efficiency', 'conduction angle', 'fidelity', 'tuned', 'power amplifier'], kwv=['lớp a', 'lớp b', 'lớp ab', 'lớp c', 'hiệu suất', 'góc dẫn', 'khuếch đại công suất'],
+  src=['Floyd 9e §7–2, 7–3', 'EASA M04 SM01 (classes)'], related=['m04-push-pull'], chk='classes')
+K('m04-push-pull', M, ('Mạch khuếch đại đẩy kéo', 'Push-pull amplifiers'),
+  ('Hai transistor luân phiên gánh đỉnh tải: khi một dẫn, một tắt. Lớp B phân cực đúng tại ngưỡng ngắt và có méo giao chéo; lớp AB phân cực thuận nhỏ (điốt/gương dòng) để loại méo đó.', 'Two transistors carry the load peaks alternately: when one conducts the other is off. Class B is biased right at cutoff and has crossover distortion; class AB uses a small forward bias (diodes/current mirror) to remove it.'),
+  facts=[('Ic(sat) = VCC/RL ,  η ≈ 79 %', ('Dòng đỉnh và hiệu suất lớp B.', 'Peak current and class B efficiency.'))],
+  steps=[('Mỗi transistor dẫn một nửa chu kỳ; ghép lại thành toàn chu kỳ ở tải.', 'Each transistor conducts half a cycle; together they give the full cycle at the load.'), ('Với méo giao chéo: tăng phân cực thuận nhỏ → lớp AB.', 'Against crossover distortion: add a small forward bias → class AB.')],
+  traps=[('Cho rằng cả hai transistor dẫn đồng thời ở lớp B.', 'Thinking both transistors conduct together in class B.')],
+  angles=[('Méo giao chéo là gì và khắc phục thế nào?', 'What is crossover distortion and how is it cured?'), ('Dòng đỉnh qua tải khi VCC = 12 V, RL = 8 Ω.', 'Peak load current for VCC = 12 V, RL = 8 Ω.')],
+  topics=['Push-pull amplifiers'], kw=['push-pull', 'push pull', 'complementary', 'crossover distortion', 'class b amplifier', 'npn', 'pnp', 'cutoff bias'], kwv=['đẩy kéo', 'méo giao chéo', 'bổ phụ', 'phân cực ngưỡng ngắt'],
+  src=['Floyd 9e §7–2', 'EASA M04 SM01 (push-pull)'], related=['m04-classes'], chk='pushpull')
+K('m04-feedback', M, ('Hồi tiếp dương và âm', 'Positive and negative feedback'),
+  ('Hồi tiếp đưa một phần ngõ ra về ngõ vào. Dương (cùng pha) tăng biên độ, quá nhiều gây dao động; âm (ngược pha) giảm độ lợi nhưng tăng ổn định, giảm méo và mở rộng băng thông.', 'Feedback returns part of the output to the input. Positive (in phase) raises the amplitude and too much causes oscillation; negative (out of phase) lowers the gain but improves stability, reduces distortion and widens the bandwidth.'),
+  facts=[('Acl = A/(1 + A·B) → 1/B khi A·B ≫ 1', ('Hồi tiếp âm: độ lợi do mạng hồi tiếp đặt.', 'Negative feedback: the network sets the gain.'))],
+  steps=[('Xác định pha tín hiệu trả về: cùng pha = dương, ngược pha = âm.', 'Find the phase of the returned signal: in phase = positive, out of phase = negative.'), ('Với hồi tiếp âm, tính B rồi Acl.', 'For negative feedback, find B and then Acl.')],
+  traps=[('Nghĩ hồi tiếp âm làm tăng độ lợi.', 'Thinking negative feedback raises the gain.'), ('Quên rằng hồi tiếp âm lấy độ lợi đổi lấy độ ổn định và có thể cần thêm tầng.', 'Forgetting that it trades gain for stability and may need extra stages.')],
+  angles=[('A = 100 000 và Acl = 50: tìm B.', 'A = 100,000 and Acl = 50: find B.'), ('Tác dụng của hồi tiếp âm lên méo và băng thông.', 'Effect of negative feedback on distortion and bandwidth.')],
+  topics=['Positive and negative feedback'], kw=['positive feedback', 'negative feedback', 'feedback', 'regenerative', 'degenerative', 'distortion', 'stability'], kwv=['hồi tiếp dương', 'hồi tiếp âm', 'hồi tiếp', 'méo', 'ổn định'],
+  src=['Floyd 9e §12–3', 'EASA M04 SM01 (feedback)'], related=['m02-feedback-gain', 'm04-oscillation', 'm07-barkhausen'], chk='feedback')
+K('m04-oscillation', M, ('Cơ sở của dao động', 'Oscillation basics'),
+  ('Mạch dao động cần hồi tiếp dương sao cho độ lợi vòng bằng 1 và lệch pha 0°; hồi tiếp dương quá mạnh thì biên độ tăng cho tới khi bị giới hạn.', 'An oscillator needs positive feedback with a loop gain of 1 and 0° phase shift; too much positive feedback makes the amplitude grow until it is limited.'),
+  facts=[('A·B = 1 ,  φ = 0°', ('Điều kiện duy trì dao động.', 'The condition to sustain oscillation.'))],
+  steps=[('Kiểm tra pha vòng 0° trước, rồi độ lợi vòng ≥ 1 lúc khởi động.', 'Check the 0° loop phase first, then loop gain ≥ 1 at start-up.')],
+  traps=[('Lẫn “độ lợi vòng bằng 1” với “độ lợi bộ khuếch đại bằng 1”.', 'Mixing “loop gain = 1” with “amplifier gain = 1”.')],
+  angles=[('Điều kiện để mạch hồi tiếp dao động.', 'The condition for a feedback circuit to oscillate.')],
+  topics=['Oscillation basics'], kw=['oscillation', 'oscillator', 'loop gain', 'barkhausen', 'sustained', 'start-up', 'phase shift'], kwv=['dao động', 'mạch dao động', 'độ lợi vòng', 'khởi động', 'lệch pha'],
+  src=['EASA M04 SM01 (oscillators)'], related=['m07-barkhausen', 'm04-feedback'], chk='oscillation')
