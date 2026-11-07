@@ -12,12 +12,12 @@ S = {
             orig='gốc', notes='Nội dung chi tiết', quiz='Tự kiểm tra nhanh (10 câu, ưu tiên câu gốc trong sách)', practice='Luyện tập sâu',
             open_bank='Mở ngân hàng câu hỏi của module', nb='Notebook Jupyter', nb_txt='Tải notebook (đã chạy sẵn, có đầu ra thật):',
             prev='← Module trước', next='Module sau →', soon='Sắp có', openm='Mở bài giảng →', modules='Các module', clo='CLO',
-            prac_title='Luyện tập theo module', exam_title='Luyện đề tổng hợp', src_title='Nguồn tài liệu và bảng đối chiếu', books_title='Bản đồ nội dung sách', ex_title='Tra cứu bài tập có số', wr_title='Luyện viết tay', an_title='Phân tích đề', cf_title='Khái niệm', lab_title='Phòng thí nghiệm'),
+            prac_title='Luyện tập theo module', exam_title='Luyện đề thi thử', src_title='Nguồn tài liệu và bảng đối chiếu', books_title='Bản đồ nội dung sách', ex_title='Tra cứu bài tập có số', wr_title='Luyện viết tay', an_title='Phân tích đề', cf_title='Khái niệm', lab_title='Phòng thí nghiệm'),
  'en': dict(home='Home', objectives='🎯 After this module you will', source='Source', easa='EASA Part-66', time='Time', nq='Questions',
             orig='original', notes='Detailed notes', quiz='Quick self-check (10 questions, textbook originals first)', practice='Deep practice',
             open_bank='Open this module\'s question bank', nb='Jupyter notebook', nb_txt='Download the notebook (already executed, real outputs):',
             prev='← Previous module', next='Next module →', soon='Coming soon', openm='Open lesson →', modules='Modules', clo='CLO',
-            prac_title='Practice by module', exam_title='Mixed mock tests', src_title='Sources and mapping', books_title='Book content map', ex_title='Exercise finder', wr_title='Written practice', an_title='Question analyser', cf_title='Concept finder', lab_title='Lab'),
+            prac_title='Practice by module', exam_title='Mock exams', src_title='Sources and mapping', books_title='Book content map', ex_title='Exercise finder', wr_title='Written practice', an_title='Question analyser', cf_title='Concept finder', lab_title='Lab'),
 }
 
 def loc(v, lang):
@@ -131,8 +131,8 @@ def index_page(lang, contents, banks):
         if c: h += f'<a class="mod-card" href="modules/{m["slug"]}/index.html">{inner}<p><b>{s["openm"]}</b></p></a>'
         else: h += f'<div class="mod-card" style="opacity:.5;cursor:default">{inner}<p>{s["soon"]}</p></div>'
     h += '</div>'
-    tools = {'vi': [('Ngân hàng câu hỏi theo module', 'practice/index.html'), ('Đề tính giờ trộn mọi module', 'exam/index.html'), ('Luyện viết tay có đáp án in', 'written/index.html'), ('Tra cứu bài tập có số của cả bốn quyển', 'exercises/index.html'), ('Phân tích một câu hỏi: module và bài tương tự trong sách', 'analyse/index.html'), ('Concept finder: định nghĩa, công thức, bước, bẫy và độ phủ của từng khái niệm', 'concepts/index.html'), ('Phòng thí nghiệm: máy tính op-amp, lọc, 555, ổn áp, nhị phân', 'lab/index.html'), ('Bản đồ nội dung sách', 'books/index.html'), ('Nguồn và bảng đối chiếu', 'sources/index.html')],
-             'en': [('Practice bank by module', 'practice/index.html'), ('Timed sets mixed from every module', 'exam/index.html'), ('Written practice with printed answers', 'written/index.html'), ('Exercise finder for all four books', 'exercises/index.html'), ('Question analyser: module and similar exercises in the books', 'analyse/index.html'), ('Concept finder: definition, formulas, steps, traps and coverage of each concept', 'concepts/index.html'), ('Lab: op-amp, filter, 555, regulator and binary calculators', 'lab/index.html'), ('Book content map', 'books/index.html'), ('Sources and coverage', 'sources/index.html')]}[lang]
+    tools = {'vi': [('Ngân hàng câu hỏi theo module', 'practice/index.html'), ('Đề thi thử: giữa kỳ, cuối kỳ, nhanh, tùy chỉnh, có bản in A4', 'exam/index.html'), ('Luyện viết tay có đáp án in', 'written/index.html'), ('Tra cứu bài tập có số của cả bốn quyển', 'exercises/index.html'), ('Phân tích một câu hỏi: module và bài tương tự trong sách', 'analyse/index.html'), ('Concept finder: định nghĩa, công thức, bước, bẫy và độ phủ của từng khái niệm', 'concepts/index.html'), ('Phòng thí nghiệm: máy tính op-amp, lọc, 555, ổn áp, nhị phân', 'lab/index.html'), ('Bản đồ nội dung sách', 'books/index.html'), ('Nguồn và bảng đối chiếu', 'sources/index.html')],
+             'en': [('Practice bank by module', 'practice/index.html'), ('Mock exams: midterm, final, speed, custom, with an A4 print version', 'exam/index.html'), ('Written practice with printed answers', 'written/index.html'), ('Exercise finder for all four books', 'exercises/index.html'), ('Question analyser: module and similar exercises in the books', 'analyse/index.html'), ('Concept finder: definition, formulas, steps, traps and coverage of each concept', 'concepts/index.html'), ('Lab: op-amp, filter, 555, regulator and binary calculators', 'lab/index.html'), ('Book content map', 'books/index.html'), ('Sources and coverage', 'sources/index.html')]}[lang]
     h += '<h2>' + ('Công cụ luyện tập' if lang == 'vi' else 'Practice tools') + '</h2><ul>' + ''.join(f'<li><a href="{u}">{esc(t)}</a></li>' for t, u in tools) + '</ul>'
     mods_json = json.dumps([dict(id=m['id'], title=m[lang], href=f'practice/{m["id"]}.html') for m in MODS], ensure_ascii=False).replace("'", '&#39;')
     h += '<h2>' + ('Tiến độ của bạn' if lang == 'vi' else 'Your progress') + f'</h2><div id="progress" data-mods=\'{mods_json}\'><p class="muted">…</p></div>'
@@ -146,21 +146,23 @@ def practice_index(lang, banks):
     h = f'<h1>{s["prac_title"]}</h1>' + table(head, rows, 'left')
     write(f'{lang}/practice/index.html', page(s['prac_title'], h, lang, 'practice/index.html'))
 
-def exam_page(lang, banks, nsets=6, per=20):
-    s = S[lang]; rng = random.Random(2025); pool = []
+def exam_page(lang, banks):
+    """Mock exams: hub (index.html), runner (run.html), A4 print view (print.html) and the question pool + fixed papers (data.json); see build/exams.py."""
+    import exams; importlib.reload(exams)
+    s = S[lang]; defs = exams.build(banks); pool = []
     for m in MODS:
         b = banks[m['id']]
-        if b: pool += [i for i in b['items'] if i['kind'] == 'mcq']
-    if not pool: return
-    sets = []
-    for k in range(nsets):
-        pick = rng.sample(pool, min(per, len(pool)))
-        sets.append(dict(name=('Đề ' if lang == 'vi' else 'Set ') + str(k + 1), items=[localize(i, lang, '../../') for i in pick]))
-    js = json.dumps(dict(minutes=30, sets=sets), ensure_ascii=False).replace('</', '<\\/')
-    note = {'vi': 'Mỗi đề 20 câu trộn từ mọi module (cả câu gốc và câu bổ sung), 30 phút; đáp án chỉ hiện sau khi nộp.',
-            'en': 'Each set has 20 questions mixed from all modules (originals and generated), 30 minutes; answers appear only after you submit.'}[lang]
-    h = f'<h1>{s["exam_title"]}</h1><p class="lead">{note}</p><div id="exam"></div><script type="application/json" id="exam-data">{js}</script>'
-    write(f'{lang}/exam/index.html', page(s['exam_title'], h, lang, 'exam/index.html', scripts=('exam.js',)))
+        if not b: continue
+        for it in b['items']:
+            if exams.eligible(it):
+                d = localize(it, lang, '../../'); pool.append(dict(id=d['id'], m=m['id'], q=d['q'], o=d['opts'], c=d['correct'], e=d['explain'], s=d['src'], l=d['level'], g=int(it['origin'] == 'goc'), **({'f': d['fig']} if 'fig' in d else {})))
+    data = dict(lang=lang, mods={m['id']: m[lang] for m in MODS}, pool=pool, papers=defs['papers'], mixed=defs['mixed'], types=defs['types'])
+    write(f'{lang}/exam/data.json', json.dumps(data, ensure_ascii=False, separators=(',', ':')))
+    lead = {'vi': 'Đề giữa kỳ, cuối kỳ, đề nhanh, đề tùy chỉnh và sáu đề luyện hỗn hợp, lấy từ ngân hàng câu hỏi của site. Có đồng hồ, chế độ không quay lại, bảng số câu, chấm theo module, làm lại câu sai và bản in A4 có đáp án.',
+            'en': 'Midterm, final, speed and custom exams plus six mixed practice sets, drawn from the site\'s question bank. With a timer, a no-going-back mode, a question palette, scoring by module, redo of the wrong answers and an A4 print version with the key.'}[lang]
+    for page_name, mode, head in (('index', 'hub', f'<h1>{s["exam_title"]}</h1><p class="lead">{lead}</p>'), ('run', 'run', ''), ('print', 'print', '')):
+        h = head + f'<div id="exam" data-mode="{mode}" data-src="data.json"></div>'
+        write(f'{lang}/exam/{page_name}.html', page(s['exam_title'], h, lang, f'exam/{page_name}.html', scripts=('exam.js',)))
 
 def sources_page(lang, banks):
     s = S[lang]
@@ -184,7 +186,8 @@ def exercises_page(lang):
 
 def tool_pages(lang):
     s = S[lang]; vi = lang == 'vi'
-    h = f'<h1>{s["an_title"]}</h1><p class="lead">' + ('Dán một câu hỏi: hệ thống nhận ra các đại lượng, dạng đề, module phù hợp và các bài giống nhất trong 4.858 bài đã quét của bốn quyển, kèm vị trí trong sách và đáp án in. Câu không khớp bài nào được đánh dấu là nằm ngoài danh mục.' if vi else 'Paste a question: the system finds its quantities, its kind, the best-matching modules and the most similar exercises among the 4,858 scanned from the four books, with the place in the book and the printed answer. A question that matches nothing is flagged as outside the catalogue.') + '</p><div id="analyser" data-src="../../exercises/catalog.json"></div>'
+    ntot = json.load(open(os.path.join(ROOT, 'data', 'numeric', 'summary.json'), encoding='utf-8'))['total']; ntot_vi = f'{ntot:,}'.replace(',', '.'); ntot_en = f'{ntot:,}'
+    h = f'<h1>{s["an_title"]}</h1><p class="lead">' + (f'Dán một câu hỏi: hệ thống nhận ra các đại lượng, dạng đề, module phù hợp và các bài giống nhất trong {ntot_vi} bài đã quét của bốn quyển, kèm vị trí trong sách và đáp án in. Câu không khớp bài nào được đánh dấu là nằm ngoài danh mục.' if vi else f'Paste a question: the system finds its quantities, its kind, the best-matching modules and the most similar exercises among the {ntot_en} scanned from the four books, with the place in the book and the printed answer. A question that matches nothing is flagged as outside the catalogue.') + '</p><div id="analyser" data-src="../../exercises/catalog.json"></div>'
     write(f'{lang}/analyse/index.html', page(s['an_title'], h, lang, 'analyse/index.html', scripts=('analyse.js',)))
     ncon = len(json.load(open(os.path.join(ROOT, 'concepts', 'data.json'), encoding='utf-8'))['concepts'])
     h = f'<h1>{s["cf_title"]}</h1><p class="lead">' + (f'{ncon} khái niệm của 10 module: định nghĩa, công thức (đã tính lại bằng một đường độc lập), các bước làm, bẫy thường gặp, cách ra đề, số câu hỏi trong ngân hàng và số bài tập sách nhắc tới. Dán một câu hỏi để biết nó thuộc khái niệm nào, duyệt theo module, tra theo từ khoá, hoặc xem bảng độ phủ của ngân hàng câu hỏi.' if vi else f'{ncon} concepts from the 10 modules: definition, formulas (recomputed by an independent route), steps, common traps, how it is asked, how many bank questions and book exercises mention it. Paste a question to see which concept it belongs to, browse by module, look up a keyword, or read the coverage table of the question bank.') + '</p><div id="concepts" data-src="../../concepts/data.json"></div>'

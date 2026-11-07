@@ -145,3 +145,6 @@ details.bm-legend{margin:.6em 0}details.bm-legend ul{list-style:none;padding-lef
 #analyser textarea{font:inherit;padding:8px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text)}
 .cf-formula{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88rem;background:var(--code);padding:1px 7px;border-radius:6px;word-break:break-word}
 details.qitem>summary{cursor:pointer}details.qitem h4{margin:.8em 0 .2em}
+.xq{margin:.7em 0;break-inside:avoid;page-break-inside:avoid}.xo{margin:.15em 0 .15em 1.2em}.xprint table.t td,.xprint table.t th{font-size:.85rem}
+@media print{header.top,footer.foot,.noprint,.exambar{display:none!important}body{background:#fff!important;color:#000!important}main.wrap{max-width:none!important;padding:0!important;margin:0!important}.xbreak{break-before:page;page-break-before:always}.xprint{font-size:11pt}.xprint .qfig{max-height:180px}@page{size:A4;margin:14mm}}
+

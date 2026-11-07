@@ -13,7 +13,7 @@ with sync_playwright() as pw:
         pg.on('pageerror', lambda x, e=errs: e.append('pageerror: ' + str(x)))
         pg.on('response', lambda r, e=errs: e.append(f'{r.status} {r.url}') if r.status >= 400 else None)
         pg.goto(BASE + rel, wait_until='load')
-        info = pg.evaluate("() => ({slides: document.querySelectorAll('.mdeck-slide').length, quiz: document.querySelectorAll('.quiz .qitem').length, bank: document.querySelectorAll('#bank .qitem').length, exam: document.querySelectorAll('#exam .qitem').length})")
+        info = pg.evaluate("() => ({slides: document.querySelectorAll('.mdeck-slide').length, quiz: document.querySelectorAll('.quiz .qitem').length, bank: document.querySelectorAll('#bank .qitem').length, exam: document.querySelectorAll('#exam .qitem, #exam .panel, #exam .xq').length})")
         pg.evaluate("async () => { for (let y = 0; y < document.body.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 30)); } }"); pg.wait_for_timeout(300)
         broken = pg.evaluate("() => [...document.images].filter(i => i.complete && i.naturalWidth === 0).map(i => i.src)")
         if info['quiz']:
@@ -24,7 +24,8 @@ with sync_playwright() as pw:
             if not pg.evaluate("() => !!document.querySelector('#bank .qitem .explain.show')"): errs.append('bank explanation not shown')
         if '/modules/' in rel and info['slides'] < 15: errs.append(f"only {info['slides']} slides")
         if '/practice/m' in rel and info['bank'] == 0: errs.append('bank empty')
-        if rel.endswith('exam/index.html') and info['exam'] == 0: errs.append('exam empty')
+        if rel.endswith('exam/index.html') and info['exam'] < 15: errs.append('exam hub: too few cards ' + str(info['exam']))
+        if rel.endswith('exam/print.html') or rel.endswith('exam/run.html'): pass         # these need ?exam=...; they are exercised in tests/exam_test.py
         errs += ['broken img ' + s for s in broken]
         if '/modules/' in rel: pg.screenshot(path=f"{ROOT}/tests/shots/{rel.replace('/', '_')}.png", full_page=False)
         fails += bool(errs); print('FAIL' if errs else 'ok  ', rel, info, errs[:4]); pg.close()

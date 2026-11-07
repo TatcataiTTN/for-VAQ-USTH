@@ -4,12 +4,12 @@
   var root = document.getElementById('progress'); if (!root) return;
   var L = (document.documentElement.lang || 'vi').slice(0, 2), mods = JSON.parse(root.getAttribute('data-mods') || '[]');
   var X = {
-    vi: { empty: 'Chưa có kết quả. Làm một vài câu ở Ngân hàng câu hỏi, một đề tính giờ hoặc một đề viết tay: kết quả, module cần ôn và các đề đã làm sẽ hiện ở đây (chỉ lưu trong trình duyệt này).',
+    vi: { empty: 'Chưa có kết quả. Làm một vài câu ở Ngân hàng câu hỏi, một đề thi thử hoặc một đề viết tay: kết quả, module cần ôn và các đề đã làm sẽ hiện ở đây (chỉ lưu trong trình duyệt này).',
       answered: 'Câu đã làm', correct: 'Đúng', worked: 'Bài tự luận đã làm được', sets: 'Đề đã nộp', bymod: 'Độ chính xác theo module', none: 'chưa làm', revisit: 'Module cần ôn (đúng dưới 60 %, ít nhất 5 câu)',
-      recent: 'Kết quả gần đây', col: ['Khi nào', 'Đề', 'Điểm', 'Thời gian'], exam: 'Đề tính giờ ', written: 'Viết tay · ', reset: 'Xóa toàn bộ tiến độ của tôi', confirm: 'Xóa mọi kết quả đã lưu trong trình duyệt này?', quick: 'Quiz nhanh trong bài giảng' },
-    en: { empty: 'No results yet. Answer a few questions in the Practice bank, take a timed set or a written paper: your results, the modules to revisit and the papers you took will appear here (stored only in this browser).',
+      recent: 'Kết quả gần đây', col: ['Khi nào', 'Đề', 'Điểm', 'Thời gian'], exam: 'Thi thử · ', written: 'Viết tay · ', reset: 'Xóa toàn bộ tiến độ của tôi', confirm: 'Xóa mọi kết quả đã lưu trong trình duyệt này?', quick: 'Quiz nhanh trong bài giảng' },
+    en: { empty: 'No results yet. Answer a few questions in the Practice bank, take a mock exam or a written paper: your results, the modules to revisit and the papers you took will appear here (stored only in this browser).',
       answered: 'Questions answered', correct: 'Correct', worked: 'Worked problems solved', sets: 'Sets submitted', bymod: 'Accuracy by module', none: 'not started', revisit: 'Modules to revisit (below 60 %, at least 5 answers)',
-      recent: 'Recent results', col: ['When', 'Set', 'Score', 'Time'], exam: 'Timed set ', written: 'Written · ', reset: 'Delete all my progress', confirm: 'Delete every result saved in this browser?', quick: 'Quick quizzes inside the lessons' }
+      recent: 'Recent results', col: ['When', 'Set', 'Score', 'Time'], exam: 'Mock exam · ', written: 'Written · ', reset: 'Delete all my progress', confirm: 'Delete every result saved in this browser?', quick: 'Quick quizzes inside the lessons' }
   }[L];
   function el(t, c, txt) { var e = document.createElement(t); if (c) e.className = c; if (txt !== undefined) e.textContent = txt; return e; }
   function get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }

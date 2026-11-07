@@ -1,6 +1,6 @@
 """Site data from the catalogue:  exercises/catalog.json (compact table of every exercise, snippets only)  and  written/papers.json (Written Practice papers).
-Papers = Jaeger 5e in-text EXERCISES that have a printed answer, belong to a section mapped to a module and need no simulator.
-Floyd statements are only indexed (their inline mathematics is not reliably extractable); their printed answers are listed in the finder."""
+Papers: (1) Jaeger 5e in-text EXERCISES with a printed answer, (2) Floyd 9e end-of-chapter Problems with a printed answer (odd-numbered; statements rebuilt from the characters, see
+floyd_text.py), (3) Jaeger Problems without a printed answer that this site solved and checked.  Floyd problems that need a Multisim file or whose answer is a figure are left out."""
 import json, os, sys, re
 sys.path.insert(0, os.path.dirname(__file__))
 from common import *
@@ -27,18 +27,35 @@ for m in MODS:
     if len(items) < 3: continue
     items.sort(key=lambda e: (e['pdf'], e['id']))
     probs = [[dict(text=e['text'], marks=1, answer=e['answer'], ref=f"Jaeger 5e §{e['section']}, p.{e['printed']} (PDF {e['pdf']})", fig=int(bool(e.get('figure'))), page=e['pdf'])] for e in items]
-    papers.append(dict(id=f'jaeger-{mid}', module=mid, minutes=max(15, 6 * len(items)),
+    papers.append(dict(id=f'jaeger-{mid}', module=mid, group='jaeger-box', minutes=max(15, 6 * len(items)),
                        title={'vi': f'{mid.upper()} · {m["vi"]}: bài tập có số của Jaeger (đáp án in sẵn)', 'en': f'{mid.upper()} · {m["en"]}: Jaeger numeric exercises (printed answers)'},
                        note={'vi': 'Mỗi phần là một khung EXERCISE của Jaeger 5e kèm ANSWERS in ngay dưới. Thời gian là giả định của site (6 phút mỗi bài); mỗi bài 1 điểm. Bài có ghi “cần hình” dùng hình vẽ trong sách ở trang đã nêu.',
                              'en': 'Each part is an EXERCISE box of Jaeger 5e with its printed ANSWERS. The time limit is this site\'s assumption (6 minutes per exercise); 1 mark each. Parts marked “figure needed” refer to the figure in the book at the page given.'},
                        problems=probs))
+CHUNK = 12                                                          # at most 12 problems per paper
+for m in MODS:                                                      # Floyd end-of-chapter problems with a printed answer
+    mid = m['id']
+    items = [e for e in cat if e['book'] == 'floyd' and e['kind'] == 'problem' and mid in e['modules'] and e.get('answer')
+             and not re.search(r'Open file|Multisim file|Open the Multisim', e['text']) and not re.search(r'Figure ANS|See Figure ANS', e['answer'])]
+    if len(items) < 3: continue
+    items.sort(key=lambda e: (e['chapter'], int(e['number'])))
+    k = -(-len(items) // CHUNK); size = -(-len(items) // k)
+    for j in range(k):
+        part = items[j * size:(j + 1) * size]
+        probs = [[dict(text=e['text'], marks=1, answer=e['answer'], ref=f"Floyd 9e Ch.{e['chapter']} Problem {e['number']}, p.{e['printed']} (PDF {e['pdf']})", fig=int(bool(e.get('figure'))), page=e['pdf'])] for e in part]
+        tag_vi = f' · phần {j + 1}/{k}' if k > 1 else ''; tag_en = f' · part {j + 1} of {k}' if k > 1 else ''
+        papers.append(dict(id=f'floyd-{mid}' + (f'-{j + 1}' if k > 1 else ''), module=mid, group='floyd', minutes=max(15, 6 * len(part)),
+                           title={'vi': f'{mid.upper()} · {m["vi"]}: problem cuối chương của Floyd (đáp án in){tag_vi}', 'en': f'{mid.upper()} · {m["en"]}: Floyd end-of-chapter problems (printed answers){tag_en}'},
+                           note={'vi': 'Problem cuối chương của Floyd 9e có đáp án in ở phụ lục (chỉ các bài số lẻ), chương ' + ', '.join(sorted({str(e['chapter']) for e in part}, key=int)) + '. Bài cần mở file Multisim hoặc có đáp án là hình vẽ đã được bỏ. Thời gian là giả định của site (6 phút mỗi bài); mỗi bài 1 điểm. Bài ghi “cần hình” dùng hình của sách ở trang đã nêu; đáp án chỉ có kết quả cuối, cách làm bạn tự viết.',
+                                 'en': 'End-of-chapter problems of Floyd 9e whose answer is printed in the appendix (odd-numbered only), chapter ' + ', '.join(sorted({str(e['chapter']) for e in part}, key=int)) + '. Problems that need a Multisim file or whose answer is a figure are left out. The time limit is this site\'s assumption (6 minutes per problem); 1 mark each. Parts marked “figure needed” use the book\'s figure at the page given; the answer is the final result only, you write the working yourself.'},
+                           problems=probs))
 for m in MODS:                                                      # problems without a printed answer, solved and checked by this site
     mid = m['id']
     items = [e for e in cat if e['book'] == 'jaeger5' and e['kind'] == 'problem' and mid in e['modules'] and e.get('ans_kind') == 'computed']
     if len(items) < 3: continue
     items.sort(key=lambda e: (e['pdf'], [int(x) for x in e['number'].split('.')]))
     probs = [[dict(text=e['text'], marks=1, answer=e['parts'], how=e['how'], assume=e['assume'], ref=f"Jaeger 5e Problem {e['number']}, p.{e['printed']} (PDF {e['pdf']})", fig=int(bool(e.get('figure'))), page=e['pdf'], computed=1)] for e in items]
-    papers.append(dict(id=f'jaeger-prob-{mid}', module=mid, minutes=max(20, 8 * len(items)),
+    papers.append(dict(id=f'jaeger-prob-{mid}', module=mid, group='jaeger-solved', minutes=max(20, 8 * len(items)),
                        title={'vi': f'{mid.upper()} · {m["vi"]}: problem Jaeger không có đáp án in (site tự giải và kiểm)', 'en': f'{mid.upper()} · {m["en"]}: Jaeger problems without a printed answer (solved and checked by this site)'},
                        note={'vi': 'Sách không in đáp án các problem này. Đáp án do site tính theo công thức của chính sách và kiểm lại bằng một cách độc lập (mô phỏng số, mạch chính xác, FFT, nghiệm đa thức…); phần “Giả định” ghi chỗ đề chưa nói rõ. Thời gian là giả định (8 phút mỗi bài).',
                              'en': 'The book prints no answer for these problems. The answers were computed by this site with the book\'s own formulas and re-checked by an independent route (numerical simulation, exact circuit solution, FFT, polynomial roots…); the “Assumptions” lines state what the statement leaves open. The time limit is an assumption (8 minutes per problem).'},
