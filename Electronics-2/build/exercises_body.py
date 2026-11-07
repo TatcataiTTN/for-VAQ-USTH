@@ -39,6 +39,19 @@ def exercises_body(lang):
         rows.append([m['id'][1:], esc(m[lang]), v.get('mapped', 0), v.get('numeric', 0), v.get('in_site', 0), v.get('solved', 0), v.get('ready', 0), v.get('figure', 0), v.get('simulation', 0), v.get('conceptual', 0)])
     head2 = ['#', 'Module', 'Bài thuộc module', 'Có số', 'Đã có trên site', 'Site tự giải', 'Sẵn sàng thêm', 'Cần hình', 'Cần mô phỏng', 'Lý thuyết'] if vi else ['#', 'Module', 'Exercises in module', 'Numeric', 'On the site', 'Solved by site', 'Ready to add', 'Figure', 'Simulator', 'Conceptual']
     h += '<h2>' + ('Theo module' if vi else 'By module') + '</h2>' + table(head2, rows, 'left')
+    cov = json.load(open(os.path.join(ROOT, 'data', 'numeric', 'coverage.json'), encoding='utf-8'))
+    cols = ['printed', 'solved', 'bank', 'figure', 'sim', 'skipped', 'open']
+    ch = {'vi': ['Module', 'Bài có số', 'Đáp án in (Viết tay)', 'Site giải và kiểm', 'Trong ngân hàng câu hỏi', 'Cần hình của sách', 'Cần mô phỏng', 'Chưa giải (có lý do)', 'Chưa làm'],
+          'en': ['Module', 'Numeric exercises', 'Printed answer (Written)', 'Solved and checked', 'In the question bank', 'Needs a book figure', 'Needs a simulator', 'Not solved (reason given)', 'Nothing yet']}[lang]
+    rows = []
+    for m in MODS:
+        v = cov['per_module'].get(m['id'])
+        if v: rows.append([m['id'][1:], esc(m[lang]), v['total']] + [v.get(c, 0) for c in cols])
+    u = cov['unique']; rows.append(['Σ', '', cov['unique_total']] + [u.get(c, 0) for c in cols])
+    h += '<h2>' + ('Độ phủ của các bài tính' if vi else 'Coverage of the calculation exercises') + '</h2>' + table(ch, rows, 'left')
+    cov_note = {'vi': f'Bài “có số” của bốn quyển thuộc các module (một bài thuộc hai module được đếm ở mỗi module, dòng Σ đếm mỗi bài một lần): {cov["unique_total"]} bài. Có đáp án để luyện (in sẵn, site giải và kiểm, hoặc đã thành câu của ngân hàng): {u.get("printed", 0) + u.get("solved", 0) + u.get("bank", 0)}. Còn lại không phải là sót: {u.get("figure", 0)} bài cần hình của sách (finder ghi trang chứa hình, sách chỉ in đáp án cho bài số lẻ nên phần lớn chưa có đáp án), {u.get("sim", 0)} bài cần SPICE/MATLAB, {u.get("skipped", 0)} bài đã xem và không giải, mỗi bài có lý do (đòi vẽ hay thiết kế nhiều đáp án, phụ thuộc hình hay bài trước, đề thiếu dữ kiện). “Chưa làm” = bài giải được mà chưa giải: phải bằng 0.',
+                'en': f'“Numeric” exercises of the four books that belong to the modules (an exercise in two modules is counted in each; the Σ row counts every exercise once): {cov["unique_total"]}. With an answer to practise on (printed, solved and checked by this site, or turned into a bank question): {u.get("printed", 0) + u.get("solved", 0) + u.get("bank", 0)}. The rest is not an oversight: {u.get("figure", 0)} need a figure of the book (the finder gives the page; the book prints answers only for odd-numbered problems so most have none yet), {u.get("sim", 0)} need SPICE/MATLAB, {u.get("skipped", 0)} were examined and left unsolved, each with its reason (asks for a drawing or a design with several answers, depends on a figure or an earlier problem, data missing). “Nothing yet” = solvable but not solved: it must be 0.'}[lang]
+    h += '<p class="srcnote">' + cov_note + '</p>'
     h += '<h2>' + ('Danh mục đầy đủ' if vi else 'Full index') + '</h2><div id="exfind" data-src="../../exercises/catalog.json"></div>'
     return h
 

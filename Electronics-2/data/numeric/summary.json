@@ -5,33 +5,33 @@
    "numeric": 149,
    "figure": 154,
    "answer": 0,
-   "solved": 0,
-   "skipped": 0,
+   "solved": 12,
+   "skipped": 1,
    "mapped": 62,
    "in_site": 0,
-   "ready": 12
+   "ready": 1
   },
   "floyd/related_problem": {
    "total": 209,
    "numeric": 152,
    "figure": 98,
    "answer": 0,
-   "solved": 0,
-   "skipped": 0,
+   "solved": 14,
+   "skipped": 1,
    "mapped": 62,
    "in_site": 0,
-   "ready": 15
+   "ready": 1
   },
   "floyd/checkup": {
    "total": 569,
    "numeric": 76,
    "figure": 56,
    "answer": 0,
-   "solved": 0,
-   "skipped": 0,
+   "solved": 12,
+   "skipped": 8,
    "mapped": 177,
    "in_site": 0,
-   "ready": 20
+   "ready": 8
   },
   "floyd/truefalse": {
    "total": 239,
@@ -50,7 +50,7 @@
    "figure": 3,
    "answer": 0,
    "solved": 0,
-   "skipped": 0,
+   "skipped": 1,
    "mapped": 116,
    "in_site": 112,
    "ready": 1
@@ -60,11 +60,11 @@
    "numeric": 418,
    "figure": 418,
    "answer": 425,
-   "solved": 0,
-   "skipped": 0,
+   "solved": 11,
+   "skipped": 9,
    "mapped": 259,
    "in_site": 82,
-   "ready": 25
+   "ready": 14
   },
   "floyd/circuit_action": {
    "total": 154,
@@ -79,9 +79,9 @@
   },
   "jaeger5/exercise": {
    "total": 648,
-   "numeric": 421,
+   "numeric": 420,
    "figure": 265,
-   "answer": 589,
+   "answer": 593,
    "solved": 0,
    "skipped": 0,
    "mapped": 137,
@@ -93,11 +93,11 @@
    "numeric": 93,
    "figure": 82,
    "answer": 0,
-   "solved": 0,
-   "skipped": 0,
+   "solved": 10,
+   "skipped": 3,
    "mapped": 27,
    "in_site": 0,
-   "ready": 13
+   "ready": 3
   },
   "jaeger5/problem": {
    "total": 2192,
@@ -129,64 +129,67 @@
    "numeric": 99,
    "conceptual": 45,
    "in_site": 32,
-   "ready": 12,
-   "simulation": 13,
-   "solved": 23
+   "solved": 25,
+   "ready": 10,
+   "simulation": 13
   },
   "m02": {
    "mapped": 361,
    "conceptual": 104,
    "numeric": 204,
-   "ready": 73,
+   "solved": 61,
    "figure": 77,
+   "ready": 43,
    "in_site": 64,
-   "simulation": 12,
-   "solved": 31
+   "simulation": 12
   },
   "m03": {
    "mapped": 265,
    "figure": 65,
-   "numeric": 136,
+   "numeric": 135,
    "conceptual": 83,
-   "ready": 26,
+   "solved": 38,
    "in_site": 47,
-   "simulation": 10,
-   "solved": 34
+   "ready": 22,
+   "simulation": 10
   },
   "m05": {
    "mapped": 161,
-   "ready": 22,
+   "solved": 14,
    "numeric": 78,
-   "figure": 36,
+   "figure": 35,
    "conceptual": 50,
+   "ready": 14,
    "in_site": 44,
-   "simulation": 4,
-   "solved": 5
+   "simulation": 4
   },
   "m06": {
    "mapped": 155,
-   "ready": 9,
+   "solved": 2,
    "numeric": 45,
    "conceptual": 66,
    "figure": 24,
    "simulation": 6,
-   "in_site": 50
+   "in_site": 50,
+   "ready": 7
   },
   "m07": {
    "mapped": 124,
    "conceptual": 40,
    "numeric": 44,
    "figure": 26,
-   "ready": 5,
+   "solved": 1,
+   "ready": 4,
    "simulation": 6,
    "in_site": 47
   },
   "m08": {
    "mapped": 104,
-   "ready": 16,
+   "solved": 12,
    "numeric": 40,
    "conceptual": 33,
    "figure": 10,
+   "ready": 4,
    "in_site": 45
   },
   "m01": {

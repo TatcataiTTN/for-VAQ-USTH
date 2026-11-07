@@ -1,0 +1,1633 @@
+{
+"solved": {
+"floyd|checkup|12|12–5.3": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "12",
+"number": "12–5.3",
+"modules": [
+"m02"
+],
+"pdf": 642,
+"printed": 624,
+"parts": [
+[
+"B = Ri/(Ri + Rf)",
+"0.01961"
+],
+[
+"1 + B·Aol",
+"2353.9"
+],
+[
+"Zin(I) ≈ Ri",
+"2.0 kΩ"
+],
+[
+"Zout(I) = Zout/(1 + B·Aol)",
+"25.5 mΩ"
+]
+],
+"how": "Inverting amplifier (Floyd §12–4): Zin ≈ Ri; Zout(I) = Zout/(1 + B·Aol) with B = Ri/(Ri + Rf).",
+"assume": [
+"Exact nodal solution gives Zin = 2.001 kΩ (the approximation Zin ≈ Ri is what the book uses)."
+],
+"ctx": null
+},
+"floyd|checkup|12|12–7.2": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "12",
+"number": "12–7.2",
+"modules": [
+"m02"
+],
+"pdf": 651,
+"printed": 633,
+"parts": [
+[
+"Open-loop 3 dB bandwidth",
+"100 Hz"
+]
+],
+"how": "For a single-pole response starting at 0 Hz the open-loop 3 dB bandwidth equals the upper critical frequency fc(ol).",
+"assume": [
+"The op-amp response is low-pass down to dc, so the bandwidth is fc(ol)."
+],
+"ctx": null
+},
+"floyd|checkup|12|12–7.4": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "12",
+"number": "12–7.4",
+"modules": [
+"m02"
+],
+"pdf": 651,
+"printed": 633,
+"parts": [
+[
+"Total gain",
+"50 dB"
+]
+],
+"how": "Stage gains in dB add.",
+"assume": [],
+"ctx": null
+},
+"floyd|checkup|12|12–7.5": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "12",
+"number": "12–7.5",
+"modules": [
+"m02"
+],
+"pdf": 651,
+"printed": 633,
+"parts": [
+[
+"Total phase lag",
+"-54.2°"
+]
+],
+"how": "Phase lags of the stages add: −49° + (−5.2°).",
+"assume": [],
+"ctx": null
+},
+"floyd|checkup|12|12–8.2": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "12",
+"number": "12–8.2",
+"modules": [
+"m02"
+],
+"pdf": 654,
+"printed": 636,
+"parts": [
+[
+"New bandwidth",
+"50 kHz"
+]
+],
+"how": "Gain × bandwidth is constant: 30 × 100 kHz = 3 MHz, so at a gain of 60 the bandwidth is 3 MHz/60.",
+"assume": [
+"The op-amp has a single-pole response (constant gain–bandwidth product)."
+],
+"ctx": null
+},
+"floyd|checkup|13|13–2.3": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "13",
+"number": "13–2.3",
+"modules": [
+"m03"
+],
+"pdf": 705,
+"printed": 687,
+"parts": [
+[
+"Resistor for the double-weight input",
+"5.0 kΩ"
+]
+],
+"how": "In a scaling adder the weight of an input is Rf/Rk, so twice the weight needs half the resistance: 10 kΩ/2.",
+"assume": [
+"The lower-weighted input has the larger resistor (10 kΩ)."
+],
+"ctx": null
+},
+"floyd|checkup|14|14–1.4": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "14",
+"number": "14–1.4",
+"modules": [
+"m05"
+],
+"pdf": 742,
+"printed": 724,
+"parts": [
+[
+"Gain G = 1 + 50.5 kΩ/RG",
+"6.05"
+]
+],
+"how": "AD622: G = 1 + 50.5 kΩ/RG (Floyd §14–1).",
+"assume": [],
+"ctx": null
+},
+"floyd|checkup|16|16–3.2": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "16",
+"number": "16–3.2",
+"modules": [
+"m07"
+],
+"pdf": 835,
+"printed": 817,
+"parts": [
+[
+"Vout = Vin/3",
+"1.667 V rms"
+],
+[
+"Phase shift",
+"0°"
+]
+],
+"how": "At the resonant frequency the lead-lag network has B = 1/3 and 0° phase shift (Floyd §16–3).",
+"assume": [],
+"ctx": null
+},
+"floyd|checkup|17|17–1.3": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "17",
+"number": "17–1.3",
+"modules": [
+"m08"
+],
+"pdf": 873,
+"printed": 855,
+"parts": [
+[
+"Line regulation = (ΔVOUT/ΔVIN)·100 % (Eq. 17–1)",
+"1.2 %"
+],
+[
+"Line regulation in %/V = (ΔVOUT/VOUT)·100 %/ΔVIN (Eq. 17–2)",
+"0.06 %/V"
+]
+],
+"how": "Floyd Eq. 17–1 and 17–2.",
+"assume": [],
+"ctx": null
+},
+"floyd|checkup|17|17–1.4": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "17",
+"number": "17–1.4",
+"modules": [
+"m08"
+],
+"pdf": 873,
+"printed": 855,
+"parts": [
+[
+"Full-load voltage",
+"4.92 V"
+],
+[
+"Load regulation = (VNL − VFL)/VFL·100 %",
+"1.63 %"
+],
+[
+"Per mA of load current",
+"0.00163 %/mA"
+]
+],
+"how": "Thevenin model of the supply: VFL = VNL − IFL·ROUT; load regulation from Eq. 17–3.",
+"assume": [
+"The 5.0 V is the no-load voltage VNL and 1.0 A is the full-load current."
+],
+"ctx": null
+},
+"floyd|checkup|17|17–2.2": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "17",
+"number": "17–2.2",
+"modules": [
+"m08"
+],
+"pdf": 878,
+"printed": 860,
+"parts": [
+[
+"Vref = Vout/(closed-loop gain)",
+"2.0 V"
+]
+],
+"how": "Series regulator: VOUT = Acl·VREF with Acl = 1 + R2/R3 (Floyd §17–2), so VREF = 8 V/4.",
+"assume": [],
+"ctx": null
+},
+"floyd|checkup|7|7–3.3": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "7",
+"number": "7–3.3",
+"modules": [
+"m04"
+],
+"pdf": 383,
+"printed": 365,
+"parts": [
+[
+"Efficiency η = Pout/(Pout + PD)",
+"90.91 %"
+]
+],
+"how": "Power taken from the supply = output power + power dissipated in the transistor; η = Pout/(Pout + PD(avg)) (Floyd §7–3).",
+"assume": [
+"The 100 mW is the average power dissipated in the transistor."
+],
+"ctx": null
+},
+"floyd|example|12|12–10": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–10",
+"modules": [
+"m02"
+],
+"pdf": 651,
+"printed": 633,
+"parts": [
+[
+"Open-loop midrange gain",
+"92 dB"
+],
+[
+"Total phase lag at f = fc1",
+"-48.6°"
+]
+],
+"how": "Stage gains add in dB; the phase lags of the stages add: −tan⁻¹(f/fc1) − tan⁻¹(f/fc2) − tan⁻¹(f/fc3).",
+"assume": [],
+"ctx": null
+},
+"floyd|example|12|12–11": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–11",
+"modules": [
+"m02"
+],
+"pdf": 652,
+"printed": 634,
+"parts": [
+[
+"BWcl = BWol(1 + B·Aol(mid))",
+"60.2 kHz"
+]
+],
+"how": "Closed-loop bandwidth BWcl = BWol(1 + B·Aol(mid)) (Floyd §12–8).",
+"assume": [],
+"ctx": null
+},
+"floyd|example|12|12–8": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–8",
+"modules": [
+"m02"
+],
+"pdf": 648,
+"printed": 630,
+"parts": [
+[
+"(a) f = 0 Hz",
+"100,000"
+],
+[
+"(b) f = 10 Hz",
+"99,504"
+],
+[
+"(c) f = 100 Hz",
+"70,711"
+],
+[
+"(d) f = 1000 Hz",
+"9,950"
+]
+],
+"how": "Aol = Aol(mid)/√(1 + (f/fc(ol))²) (Floyd §12–7).",
+"assume": [
+"The book prints 99,503 for (b): it truncates 99,503.7."
+],
+"ctx": null
+},
+"floyd|example|12|12–9": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–9",
+"modules": [
+"m02"
+],
+"pdf": 649,
+"printed": 631,
+"parts": [
+[
+"f = 1 Hz",
+"-0.573°"
+],
+[
+"f = 10 Hz",
+"-5.71°"
+],
+[
+"f = 100 Hz",
+"-45.0°"
+],
+[
+"f = 1000 Hz",
+"-84.3°"
+],
+[
+"f = 10000 Hz",
+"-89.4°"
+]
+],
+"how": "RC lag circuit: θ = −tan⁻¹(f/fc); plot θ against f on a log axis.",
+"assume": [],
+"ctx": null
+},
+"floyd|example|14|14–1": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–1",
+"modules": [
+"m05"
+],
+"pdf": 738,
+"printed": 720,
+"parts": [
+[
+"RG = 2R/(Acl − 1)",
+"100.2 Ω"
+]
+],
+"how": "Instrumentation amplifier: Acl = 1 + 2R/RG (Floyd §14–1).",
+"assume": [],
+"ctx": null
+},
+"floyd|example|14|14–5": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–5",
+"modules": [
+"m05"
+],
+"pdf": 749,
+"printed": 731,
+"parts": [
+[
+"Iout = gm·Vin",
+"25.0 μA"
+]
+],
+"how": "OTA: Iout = gm·Vin; 1 μS × 1 mV = 1 nA.",
+"assume": [],
+"ctx": null
+},
+"floyd|example|14|14–8": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–8",
+"modules": [
+"m05"
+],
+"pdf": 756,
+"printed": 738,
+"parts": [
+[
+"Vout = −0.025·ln(Vin/(IR·R1))",
+"-149.8 mV"
+]
+],
+"how": "Log amplifier of Figure 14–31.",
+"assume": [
+"Values read from Figure 14–31: Vin = +2 V, R1 = 100 kΩ; IR = 50 nA given in the example."
+],
+"ctx": null
+},
+"floyd|example|14|14–9": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–9",
+"modules": [
+"m05"
+],
+"pdf": 757,
+"printed": 739,
+"parts": [
+[
+"Vout = −0.025·ln(Vin/(IEBO·R1))",
+"-175.1 mV"
+]
+],
+"how": "Transistor log amplifier (Floyd §14–4): use the natural logarithm.",
+"assume": [],
+"ctx": null
+},
+"floyd|example|15|15–1": {
+"book": "floyd",
+"kind": "example",
+"chapter": "15",
+"number": "15–1",
+"modules": [
+"m06"
+],
+"pdf": 786,
+"printed": 768,
+"parts": [
+[
+"Q = f0/BW",
+"15.0"
+],
+[
+"Classification",
+"narrow-band (Q > 10)"
+]
+],
+"how": "Band-pass filter: Q = f0/BW; Q > 10 is narrow-band (Floyd §15–1).",
+"assume": [],
+"ctx": null
+},
+"floyd|example|17|17–1": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–1",
+"modules": [
+"m08"
+],
+"pdf": 871,
+"printed": 853,
+"parts": [
+[
+"Line regulation (%/V)",
+"0.333 %/V"
+]
+],
+"how": "Floyd Eq. 17–2: line regulation = (ΔVOUT/VOUT)·100 %/ΔVIN.",
+"assume": [],
+"ctx": null
+},
+"floyd|example|17|17–2": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–2",
+"modules": [
+"m08"
+],
+"pdf": 872,
+"printed": 854,
+"parts": [
+[
+"Load regulation",
+"0.84 %"
+],
+[
+"Per mA",
+"0.084 %/mA"
+]
+],
+"how": "Floyd Eq. 17–3: load regulation = (VNL − VFL)/VFL·100 %; the load current changes by 10 mA.",
+"assume": [],
+"ctx": null
+},
+"floyd|example|17|17–9": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–9",
+"modules": [
+"m08"
+],
+"pdf": 897,
+"printed": 879,
+"parts": [
+[
+"R1 = VOUT/IL",
+"10.0 Ω"
+]
+],
+"how": "The 7805 holds 5 V between its output and ground terminals, so the current-setting resistor is R1 = 5 V/IL (neglecting IG).",
+"assume": [
+"The regulator ground-terminal current IG is neglected."
+],
+"ctx": null
+},
+"floyd|problem|12|22": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "22",
+"modules": [
+"m02"
+],
+"pdf": 677,
+"printed": 659,
+"parts": [
+[
+"(a) Compensating resistor",
+"75.0 Ω, in the feedback path (between the output and the inverting input)"
+],
+[
+"(b) Output error voltage",
+"150.0 μV"
+]
+],
+"how": "Bias-current compensation (Floyd §12–6): the resistor equals the resistance seen by the other input; the error is IOS × R.",
+"assume": [
+"The two currents (42 μA and 40 μA) are the input currents after compensation: the error is the offset current × 75 Ω."
+],
+"ctx": null
+},
+"floyd|problem|12|24": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "24",
+"modules": [
+"m02"
+],
+"pdf": 677,
+"printed": 659,
+"parts": [
+[
+"Output error voltage",
+"2 nV"
+]
+],
+"how": "A voltage follower has unity gain, so the input offset voltage appears unchanged at the output.",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|12|26": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "26",
+"modules": [
+"m02"
+],
+"pdf": 678,
+"printed": 660,
+"parts": [
+[
+"Closed-loop gain",
+"70 dB (3162.0)"
+]
+],
+"how": "Gains in dB subtract: 120 dB − 50 dB.",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|12|28": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "28",
+"modules": [
+"m02"
+],
+"pdf": 678,
+"printed": 660,
+"parts": [
+[
+"XC at 3 kHz = R·fc/f",
+"1.667 kΩ"
+]
+],
+"how": "RC lag circuit: XC = R at f = fc, and XC ∝ 1/f.",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|12|30": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "30",
+"modules": [
+"m02"
+],
+"pdf": 678,
+"printed": 660,
+"parts": [
+[
+"(a) f = 100 Hz",
+"79600.0"
+],
+[
+"(b) f = 1 kHz",
+"56570.0"
+],
+[
+"(c) f = 10 kHz",
+"7960.0"
+],
+[
+"(d) f = 1 MHz",
+"80.0"
+]
+],
+"how": "Aol = Aol(mid)/√(1 + (f/fc(ol))²).",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|12|32": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "32",
+"modules": [
+"m02"
+],
+"pdf": 678,
+"printed": 660,
+"parts": [
+[
+"(a) 100 Hz",
+"-0.674°"
+],
+[
+"(b) 400 Hz",
+"-2.694°"
+],
+[
+"(c) 850 Hz",
+"-5.711°"
+],
+[
+"(d) 8.5 kHz",
+"-45.0°"
+],
+[
+"(e) 25 kHz",
+"-71.22°"
+],
+[
+"(f) 85 kHz",
+"-84.29°"
+]
+],
+"how": "θ = −tan⁻¹(f/fc) with fc = 8.5 kHz; plot θ against f on a log axis.",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|12|36": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "36",
+"modules": [
+"m02"
+],
+"pdf": 679,
+"printed": 661,
+"parts": [
+[
+"BWcl = BWol(1 + B·Aol(mid))",
+"4.051 MHz"
+]
+],
+"how": "BWcl = fc(ol)(1 + B·Aol(mid)).",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|12|52": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "52",
+"modules": [
+"m02"
+],
+"pdf": 681,
+"printed": 663,
+"parts": [
+[
+"Ri",
+"10 kΩ (sets Zin ≈ Ri)"
+],
+[
+"Rf = 68·Ri",
+"680 kΩ"
+],
+[
+"Compensating resistor Rc = Ri‖Rf at the + input",
+"9.86 kΩ → use 10 kΩ"
+],
+[
+"Resulting gain",
+"-67.98 (within ±5 % of −68)"
+]
+],
+"how": "Inverting amplifier: |Av| = Rf/Ri, Zin ≈ Ri (Floyd §12–4); bias compensation Rc = Ri‖Rf (§12–6).",
+"assume": [
+"One valid design (several are possible): the book's even-numbered problems have no printed answer.",
+"Aol of the 741 taken as 200,000 for the check."
+],
+"ctx": null
+},
+"floyd|problem|12|56": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "56",
+"modules": [
+"m02"
+],
+"pdf": 683,
+"printed": 665,
+"parts": [
+[
+"Acl(max) = fT/BW",
+"200.0 (46.0 dB)"
+]
+],
+"how": "Gain × bandwidth = fT: with BW ≥ 5 kHz the closed-loop gain cannot exceed fT/5 kHz.",
+"assume": [
+"741 unity-gain bandwidth fT = 1 MHz (typical datasheet value; the book's datasheet figure is an image)."
+],
+"ctx": null
+},
+"floyd|problem|14|22": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "14",
+"number": "22",
+"modules": [
+"m05"
+],
+"pdf": 779,
+"printed": 761,
+"parts": [
+[
+"(a) ln 0.5",
+"-0.6931"
+],
+[
+"(b) ln 2",
+"0.6931"
+],
+[
+"(c) ln 50",
+"3.912"
+],
+[
+"(d) ln 130",
+"4.868"
+]
+],
+"how": "Natural logarithms.",
+"assume": [],
+"ctx": null
+},
+"floyd|problem|17|28": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "17",
+"number": "28",
+"modules": [
+"m08"
+],
+"pdf": 907,
+"printed": 889,
+"parts": [
+[
+"R1 = 1.25 V/IL",
+"2.5 Ω"
+],
+[
+"Power in R1",
+"0.625 W (use a 1 W resistor)"
+]
+],
+"how": "LM317 as a current regulator: IL = VREF/R1 (+ IADJ), with VREF = 1.25 V; the load goes where RL normally sits and R1 is the only resistor.",
+"assume": [
+"IADJ (≈ 50 μA) is neglected."
+],
+"ctx": null
+},
+"floyd|related_problem|12|12–10": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–10",
+"modules": [
+"m02"
+],
+"pdf": 651,
+"printed": 633,
+"parts": [
+[
+"Open-loop midrange gain",
+"75 dB"
+],
+[
+"Total phase lag at f = fc1",
+"-71.57°"
+]
+],
+"how": "50 dB + 25 dB; −tan⁻¹(1) − tan⁻¹(1500/3000).",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|12|12–2": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–2",
+"modules": [
+"m02"
+],
+"pdf": 628,
+"printed": 610,
+"parts": [
+[
+"Slew rate = ΔVout/Δt",
+"20.0 V/μs"
+]
+],
+"how": "ΔVout = +7 V − (−8 V) = 15 V in 0.75 μs.",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|12|12–8": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–8",
+"modules": [
+"m02"
+],
+"pdf": 648,
+"printed": 630,
+"parts": [
+[
+"(a) f = 2 Hz",
+"79,996"
+],
+[
+"(b) f = 10 Hz",
+"79,900"
+],
+[
+"(c) f = 2500 Hz",
+"6,380"
+]
+],
+"how": "Aol = Aol(mid)/√(1 + (f/fc(ol))²).",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|12|12–9": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–9",
+"modules": [
+"m02"
+],
+"pdf": 649,
+"printed": 631,
+"parts": [
+[
+"Frequency for a 60° phase shift",
+"173.2 Hz"
+]
+],
+"how": "θ = −tan⁻¹(f/fc) = −60° ⇒ f = fc·tan 60°.",
+"assume": [
+"fc = 100 Hz, as in Example 12–9."
+],
+"ctx": null
+},
+"floyd|related_problem|14|14–1": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–1",
+"modules": [
+"m05"
+],
+"pdf": 738,
+"printed": 720,
+"parts": [
+[
+"RG = 2R/(Acl − 1)",
+"240.7 Ω"
+]
+],
+"how": "RG = 2R/(Acl − 1) with R = 39 kΩ.",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|14|14–8": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–8",
+"modules": [
+"m05"
+],
+"pdf": 757,
+"printed": 739,
+"parts": [
+[
+"Vout for Vin = +4 V",
+"-167.1 mV"
+]
+],
+"how": "Vout = −0.025 ln(Vin/(IR·R1)).",
+"assume": [
+"R1 = 100 kΩ and IR = 50 nA as in Example 14–8 (Figure 14–31)."
+],
+"ctx": null
+},
+"floyd|related_problem|14|14–9": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–9",
+"modules": [
+"m05"
+],
+"pdf": 757,
+"printed": 739,
+"parts": [
+[
+"Vout with R1 = 33 kΩ",
+"-193.2 mV"
+]
+],
+"how": "Vout = −0.025 ln(Vin/(IEBO·R1)).",
+"assume": [
+"Vin = 3 V and IEBO = 40 nA as in Example 14–9."
+],
+"ctx": null
+},
+"floyd|related_problem|15|15–2": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–2",
+"modules": [
+"m06"
+],
+"pdf": 789,
+"printed": 771,
+"parts": [
+[
+"DF = 2 − R1/R2",
+"1.44"
+]
+],
+"how": "Damping factor of the two-pole Sallen-Key filter: DF = 2 − R1/R2 (Floyd §15–2).",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|17|17–1": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–1",
+"modules": [
+"m08"
+],
+"pdf": 871,
+"printed": 853,
+"parts": [
+[
+"Regulation (%/V)",
+"0.6 %/V"
+]
+],
+"how": "Eq. 17–2 with ΔVOUT = 0.42 V, VOUT = 20 V, ΔVIN = 3.5 V.",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|17|17–2": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–2",
+"modules": [
+"m08"
+],
+"pdf": 872,
+"printed": 854,
+"parts": [
+[
+"Load regulation",
+"1.12 %"
+],
+[
+"Per mA",
+"0.0225 %/mA"
+]
+],
+"how": "Eq. 17–3 with VNL = 18 V, VFL = 17.8 V, ΔIL = 50 mA.",
+"assume": [],
+"ctx": null
+},
+"floyd|related_problem|17|17–6": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–6",
+"modules": [
+"m08"
+],
+"pdf": 890,
+"printed": 872,
+"parts": [
+[
+"VOUT = 1.25 V(1 + R2/R1) + IADJ·R2",
+"12.71 V"
+]
+],
+"how": "LM317 output (Floyd §17–4).",
+"assume": [
+"R1 = 220 Ω (Figure 17–30), IADJ = 50 μA as in Example 17–6."
+],
+"ctx": null
+},
+"floyd|related_problem|17|17–7": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–7",
+"modules": [
+"m08"
+],
+"pdf": 894,
+"printed": 876,
+"parts": [
+[
+"Qext turns on at IREG = 0.7 V/Rext",
+"467.0 mA"
+]
+],
+"how": "The external pass transistor turns on when the drop across Rext reaches 0.7 V.",
+"assume": [
+"VBE(on) = 0.7 V."
+],
+"ctx": null
+},
+"floyd|related_problem|17|17–9": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–9",
+"modules": [
+"m08"
+],
+"pdf": 897,
+"printed": 879,
+"parts": [
+[
+"R1 = 8 V/0.5 A",
+"16.0 Ω"
+]
+],
+"how": "A 7808 holds 8 V across R1.",
+"assume": [
+"IG neglected."
+],
+"ctx": null
+},
+"floyd|related_problem|7|7–3": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "7",
+"number": "7–3",
+"modules": [
+"m04"
+],
+"pdf": 370,
+"printed": 352,
+"parts": [
+[
+"Maximum peak output voltage ≈ VCC",
+"15 V"
+],
+[
+"Maximum peak output current ≈ VCC/RL",
+"100.0 mA"
+]
+],
+"how": "Ideal limits of the push-pull stage: Vout(peak) ≈ VCC, Iout(peak) ≈ VCC/RL.",
+"assume": [
+"RL = 150 Ω from Figure 7–15 (Example 7–3)."
+],
+"ctx": null
+},
+"jaeger5|example|10|10.10": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "10",
+"number": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 592,
+"printed": 563,
+"parts": [
+[
+"ω = 0",
+"|Av| = 100.0 (40.0 dB), phase 0°"
+],
+[
+"ω = 3 rad/s",
+"|Av| = 27.1 (28.7 dB), phase 40.6°"
+]
+],
+"how": "Substitute s = jω and take magnitude and phase of the complex number.",
+"assume": [],
+"ctx": "Transfer function of the example: Av(s) = 50(s² + 4)/(s² + 2s + 2)."
+},
+"jaeger5|example|10|10.11": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "10",
+"number": "10.11",
+"modules": [
+"m03"
+],
+"pdf": 596,
+"printed": 567,
+"parts": [
+[
+"R1 = Rin",
+"5 kΩ"
+],
+[
+"R2 = |Av|·R1 (|Av| = 100 for 40 dB)",
+"500 kΩ"
+],
+[
+"C = 1/(2π·fH·R2)",
+"159.0 pF"
+],
+[
+"With standard values R1 = 5.1 kΩ, R2 = 510 kΩ, C = 160 pF",
+"fH = 1.95 kHz"
+]
+],
+"how": "Active low-pass filter: inverting amplifier with C in parallel with R2; Rin = R1, |Av| = R2/R1, fH = 1/(2π·R2·C).",
+"assume": [
+"Standard values are the nearest of the Appendix A tables, as in the book."
+],
+"ctx": null
+},
+"jaeger5|example|10|10.3": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "10",
+"number": "10.3",
+"modules": [
+"m02"
+],
+"pdf": 567,
+"printed": 538,
+"parts": [
+[
+"Av = A·Rid/(RI + Rid)·RL/(Ro + RL)",
+"82.64"
+],
+[
+"In decibels",
+"38.3 dB"
+]
+],
+"how": "Voltage gain of the differential amplifier model including the source resistance RI and the load RL (Jaeger Eq. 10.33).",
+"assume": [],
+"ctx": null
+},
+"jaeger5|example|10|10.4": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "10",
+"number": "10.4",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 572,
+"printed": 543,
+"parts": [
+[
+"R1 = Rin",
+"20 kΩ"
+],
+[
+"R2 = |Av|·R1 (|Av| = 10^(40/20) = 100)",
+"2 MΩ"
+],
+[
+"Gain",
+"−100 (40 dB)"
+]
+],
+"how": "Ideal inverting amplifier: Rin = R1, Av = −R2/R1.",
+"assume": [
+"Ideal op amp."
+],
+"ctx": null
+},
+"jaeger5|example|11|11.1": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.1",
+"modules": [
+"m02"
+],
+"pdf": 621,
+"printed": 592,
+"parts": [
+[
+"Ideal gain",
+"200 (46 dB)"
+],
+[
+"T = A·β",
+"50.0"
+],
+[
+"Actual gain = Aideal·T/(1 + T)",
+"196.1"
+],
+[
+"Fractional gain error = 1/(1 + T)",
+"1.96 % (the book rounds to 2 %)"
+]
+],
+"how": "Finite open-loop gain: Av = Aideal·T/(1 + T), FGE = 1/(1 + T) (Jaeger §11.2).",
+"assume": [
+"The op amp is ideal except for its finite open-loop gain A = 10,000 (80 dB)."
+],
+"ctx": null
+},
+"jaeger5|example|11|11.13": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 671,
+"printed": 642,
+"parts": [
+[
+"Gain error ≈ 1/A − 1/CMRR",
+"-9.000e-4 = -0.09 %"
+],
+[
+"Av",
+"1.001"
+]
+],
+"how": "Voltage-follower gain error with finite gain and finite CMRR (Jaeger Eq. 12.38).",
+"assume": [
+"CMRR = 60 dB = 1000."
+],
+"ctx": null
+},
+"jaeger5|example|11|11.15": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.15",
+"modules": [
+"m02"
+],
+"pdf": 680,
+"printed": 651,
+"parts": [
+[
+"(a) Op-amp bandwidth fB = fT/Ao",
+"100.0 Hz"
+],
+[
+"(b) fH = fB(1 + Ao·β), β = 1/1000",
+"10.1 kHz"
+],
+[
+"(c) Op-amp transfer function",
+"Av(s) = 2π×10⁷/(s + 200π)"
+],
+[
+"(d) Noninverting amplifier",
+"Av(s) = 2π×10⁷/(s + 2.02π×10⁴)"
+]
+],
+"how": "Single-pole op amp: Av(s) = Ao·ωB/(s + ωB) with ωB = 2π·fT/Ao; closed loop: pole moves to ωB(1 + Ao·β).",
+"assume": [],
+"ctx": null
+},
+"jaeger5|example|11|11.16": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.16",
+"modules": [
+"m02"
+],
+"pdf": 682,
+"printed": 653,
+"parts": [
+[
+"(a) Op-amp cutoff fB = fT/Ao",
+"2.5 Hz"
+],
+[
+"(b) fH = fB(1 + Ao·β), β = 1/(1 + |Av|) = 1/101",
+"4.95 kHz"
+],
+[
+"(c) Op-amp transfer function",
+"Av(s) = 10⁶π/(s + 5π)"
+],
+[
+"(d) Inverting amplifier",
+"Av(s) = −9.9×10⁵π/(s + 9.906π×10³)"
+]
+],
+"how": "Inverting amplifier: Av(s) = −(R2/R1)·Aoβ·ωB/(s + ωB(1 + Aoβ)), with the feedback factor β = 1/(1 + |Av|).",
+"assume": [
+"Closed-loop gain 40 dB means |Av(0)| = 100."
+],
+"ctx": null
+},
+"jaeger5|example|11|11.2": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.2",
+"modules": [
+"m02"
+],
+"pdf": 624,
+"printed": 595,
+"parts": [
+[
+"1 + T = 1 + A·R1/(R1 + R2)",
+"251.0"
+],
+[
+"Rout = [Ro/(1 + T)] ‖ (R1 + R2)",
+"0.199 Ω"
+]
+],
+"how": "Output resistance of the noninverting amplifier (Jaeger Eq. 11.25).",
+"assume": [
+"The op amp is ideal except for finite A and nonzero Ro.",
+"The book prints 0.198 Ω after “0.199 Ω ‖ 40 kΩ”; 50/251 = 0.1992 and the 40 kΩ in parallel changes nothing visible, so 0.199 Ω is the value (the book's last digit is a small arithmetic slip)."
+],
+"ctx": null
+},
+"jaeger5|example|11|11.3": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.3",
+"modules": [
+"m02"
+],
+"pdf": 625,
+"printed": 596,
+"parts": [
+[
+"β = 1/|Av| = 10^(−35/20)",
+"0.01778"
+],
+[
+"A ≥ (1/β)(Ro/Rout − 1)",
+"70200.0 (96.9 dB)"
+]
+],
+"how": "Rout = Ro/(1 + Aβ) ≤ 0.2 Ω (Jaeger Eq. 11.26).",
+"assume": [
+"The book rounds A to 7.03 × 10⁴ using 56.2; the exact value is 7.02 × 10⁴."
+],
+"ctx": null
+}
+},
+"skipped": {
+"floyd|checkup|12|12–9.3": {
+"reason": "depends on the op-amp stage of the application section (its gain is in a figure not repeated in the question)",
+"modules": [
+"m02"
+],
+"pdf": 657
+},
+"floyd|checkup|12|12–9.4": {
+"reason": "depends on the audio amplifier of the application section (supply and circuit are in a figure)",
+"modules": [
+"m02"
+],
+"pdf": 657
+},
+"floyd|checkup|12|12–9.6": {
+"reason": "needs the datasheet of the op-amp used in the application (supply current is in a datasheet image)",
+"modules": [
+"m02"
+],
+"pdf": 658
+},
+"floyd|checkup|12|12–9.7": {
+"reason": "needs the datasheet of the op-amp used in the application (output swing is in a datasheet image)",
+"modules": [
+"m02"
+],
+"pdf": 658
+},
+"floyd|checkup|14|14–4.2": {
+"reason": "conceptual (explain why): no calculation",
+"modules": [
+"m05"
+],
+"pdf": 760
+},
+"floyd|checkup|16|16–3.3": {
+"reason": "conceptual (explain why): no calculation",
+"modules": [
+"m07"
+],
+"pdf": 835
+},
+"floyd|checkup|17|17–6.7": {
+"reason": "depends on the regulator circuit and input voltage of Section 17–6 (not in the question)",
+"modules": [
+"m08"
+],
+"pdf": 900
+},
+"floyd|checkup|17|17–6.8": {
+"reason": "depends on the regulator circuit and input voltage of Section 17–6 (not in the question)",
+"modules": [
+"m08"
+],
+"pdf": 900
+},
+"floyd|example|14|14–3": {
+"reason": "asks to draw the decoupling connections of the ISO124 (drawing, no calculation)",
+"modules": [
+"m05"
+],
+"pdf": 744
+},
+"floyd|related_problem|14|14–7": {
+"reason": "depends on the modulation circuit and signals of Example 14–7 (figure)",
+"modules": [
+"m05"
+],
+"pdf": 753
+},
+"floyd|selftest|7|17": {
+"reason": "conceptual multiple choice (class C conduction angle); Floyd prints no Self-Test answers",
+"modules": [
+"m04"
+],
+"pdf": 395
+},
+"floyd|problem|7|22": {
+"reason": "needs Problem 21 and the class C power formulas with VCE(sat), IC(sat) that the statement does not give",
+"modules": [
+"m04"
+],
+"pdf": 397
+},
+"floyd|problem|12|34": {
+"reason": "depends on the Bode plot of Problem 33 (figure)",
+"modules": [
+"m02"
+],
+"pdf": 678
+},
+"floyd|problem|12|51": {
+"reason": "design with several valid answers; the book's answer is a circuit figure (Figure ANS–32)",
+"modules": [
+"m02"
+],
+"pdf": 681
+},
+"floyd|problem|12|55": {
+"reason": "design with several valid answers; the book's answer is a circuit figure (Figure ANS–34)",
+"modules": [
+"m02"
+],
+"pdf": 683
+},
+"floyd|problem|13|29": {
+"reason": "design; the book's answer is a circuit figure (Figure ANS–37)",
+"modules": [
+"m03"
+],
+"pdf": 735
+},
+"floyd|problem|15|14": {
+"reason": "asks for block diagrams (drawing)",
+"modules": [
+"m06"
+],
+"pdf": 821
+},
+"floyd|problem|15|22": {
+"reason": "modification of the band-stop filter of Problem 21 (figure, values not in the statement)",
+"modules": [
+"m06"
+],
+"pdf": 823
+},
+"floyd|problem|17|24": {
+"reason": "ambiguous: “maximum regulator current with no load is 2 mA” does not say which current limits R1 and R2",
+"modules": [
+"m08"
+],
+"pdf": 907
+},
+"floyd|problem|17|30": {
+"reason": "needs the ADP1612/1613 datasheet (image)",
+"modules": [
+"m08"
+],
+"pdf": 907
+},
+"jaeger5|example|10|10.6": {
+"reason": "open-ended exploration comparing two circuits in a figure",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 579
+},
+"jaeger5|example|12|12.1": {
+"reason": "multi-part analysis of a three-op-amp circuit given only in a figure",
+"modules": [
+"m04"
+],
+"pdf": 717
+},
+"jaeger5|example|12|12.3": {
+"reason": "multi-stage design to several specifications; the book's solution chooses its own stages",
+"modules": [
+"m04"
+],
+"pdf": 723
+}
+}
+}

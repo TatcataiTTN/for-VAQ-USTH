@@ -52,6 +52,9 @@ def scan(M, progress=False):
                         if nb['bbox'][1] > b['bbox'][3] + 90: break
                         q.append(' '.join(nb['lines']))                           # an equation block between the statement and the answer belongs to the statement
                 qt = clean(' '.join(q)); sec = sec_of(p)
+                if ans is None:                                                      # the answer can stand on the same text line as the last equation: 'Av(s) = … A NSWERS: 250; 125 Hz'
+                    ma = re.search(r'\bA\s?N\s?S\s?W\s?E\s?R\s?S?\s?:\s*', qt)
+                    if ma: ans = qt[ma.end():]; qt = qt[:ma.start()].strip()
                 out.append(dict(book='jaeger5', kind='exercise', chapter=int(sec.split('.')[0]) if sec else None, section=sec, number='', pdf=p, printed=p - OFFSET,
                                 text=qt, answer=clean(ans) if ans else None, **analyse(qt)))
             m = None; mi = 0

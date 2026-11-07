@@ -1,0 +1,160 @@
+{
+ "order": [
+  "printed",
+  "solved",
+  "bank",
+  "figure",
+  "sim",
+  "skipped",
+  "open"
+ ],
+ "per_module": {
+  "m01": {
+   "printed": 25,
+   "total": 125,
+   "sim": 14,
+   "figure": 44,
+   "solved": 39,
+   "skipped": 3
+  },
+  "m02": {
+   "solved": 60,
+   "total": 204,
+   "figure": 61,
+   "skipped": 14,
+   "bank": 19,
+   "printed": 47,
+   "sim": 3
+  },
+  "m03": {
+   "figure": 52,
+   "total": 135,
+   "solved": 32,
+   "bank": 9,
+   "printed": 35,
+   "skipped": 4,
+   "sim": 3
+  },
+  "m04": {
+   "figure": 43,
+   "total": 99,
+   "bank": 7,
+   "printed": 12,
+   "solved": 25,
+   "skipped": 8,
+   "sim": 4
+  },
+  "m05": {
+   "solved": 14,
+   "total": 78,
+   "figure": 27,
+   "skipped": 7,
+   "bank": 8,
+   "printed": 19,
+   "sim": 3
+  },
+  "m06": {
+   "solved": 2,
+   "total": 45,
+   "figure": 20,
+   "bank": 6,
+   "printed": 11,
+   "skipped": 3,
+   "sim": 3
+  },
+  "m07": {
+   "figure": 19,
+   "total": 44,
+   "solved": 1,
+   "skipped": 3,
+   "bank": 9,
+   "printed": 12
+  },
+  "m08": {
+   "solved": 12,
+   "total": 40,
+   "figure": 10,
+   "skipped": 4,
+   "bank": 6,
+   "printed": 8
+  },
+  "m09": {
+   "printed": 3,
+   "total": 3
+  }
+ },
+ "per_kind": {
+  "easa/question": {
+   "printed": 12,
+   "total": 12
+  },
+  "floyd/checkup": {
+   "solved": 12,
+   "total": 22,
+   "skipped": 8,
+   "figure": 2
+  },
+  "floyd/circuit_action": {
+   "bank": 15,
+   "total": 18,
+   "figure": 3
+  },
+  "floyd/example": {
+   "figure": 27,
+   "total": 40,
+   "solved": 12,
+   "skipped": 1
+  },
+  "floyd/problem": {
+   "bank": 24,
+   "total": 124,
+   "figure": 24,
+   "printed": 56,
+   "skipped": 9,
+   "solved": 11
+  },
+  "floyd/related_problem": {
+   "figure": 33,
+   "total": 48,
+   "solved": 14,
+   "skipped": 1
+  },
+  "floyd/selftest": {
+   "bank": 23,
+   "total": 24,
+   "skipped": 1
+  },
+  "floyd/truefalse": {
+   "bank": 2,
+   "total": 2
+  },
+  "jaeger5/example": {
+   "solved": 10,
+   "total": 21,
+   "figure": 8,
+   "skipped": 3
+  },
+  "jaeger5/exercise": {
+   "printed": 90,
+   "total": 91,
+   "sim": 1
+  },
+  "jaeger5/problem": {
+   "figure": 158,
+   "total": 322,
+   "solved": 115,
+   "sim": 28,
+   "skipped": 21
+  }
+ },
+ "unique": {
+  "figure": 255,
+  "bank": 64,
+  "printed": 158,
+  "solved": 174,
+  "skipped": 44,
+  "sim": 29
+ },
+ "unique_total": 724,
+ "open": []
+}

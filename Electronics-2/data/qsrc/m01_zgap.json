@@ -1148,5 +1148,189 @@
 "gap"
 ],
 "concept": "m01-fabrication"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một bộ mã hoá có 16 đường vào (một đường lên 1 tại một thời điểm) cần bao nhiêu bit ngõ ra?",
+"en": "An encoder with 16 input lines (one HIGH at a time) needs how many output bits?"
+},
+"opts": [
+{
+"vi": "4",
+"en": "4"
+},
+{
+"vi": "16",
+"en": "16"
+},
+{
+"vi": "8",
+"en": "8"
+},
+{
+"vi": "2",
+"en": "2"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "2ⁿ = 16 nên n = log₂16 = 4 bit.",
+"en": "2ⁿ = 16 so n = log₂16 = 4 bits."
+},
+"level": 1,
+"topic": {
+"en": "Adders and combinational circuits",
+"vi": "Bộ cộng và mạch tổ hợp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (encoders, decoders)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (encoders, decoders)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-combinational"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cần ghép bao nhiêu bộ giải mã 3→8 có chân enable để tạo bộ giải mã 4→16?",
+"en": "How many 3→8 decoders with an enable pin are needed to build a 4→16 decoder?"
+},
+"opts": [
+{
+"vi": "2",
+"en": "2"
+},
+{
+"vi": "1",
+"en": "1"
+},
+{
+"vi": "4",
+"en": "4"
+},
+{
+"vi": "16",
+"en": "16"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "16 ngõ ra / 8 ngõ ra mỗi bộ = 2 bộ; bit cao nhất của mã chọn bộ nào được enable.",
+"en": "16 outputs / 8 outputs per decoder = 2 decoders; the most significant code bit selects which one is enabled."
+},
+"level": 2,
+"topic": {
+"en": "Adders and combinational circuits",
+"vi": "Bộ cộng và mạch tổ hợp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 (encoders, decoders)",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 (encoders, decoders)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-combinational"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Op-amp không hồi tiếp (nguồn ±15 V, Aol = 10⁵) có V₊ = 3,2 V và V₋ = 3,1 V. Ngõ ra là bao nhiêu?",
+"en": "An open-loop op-amp (±15 V supplies, Aol = 10⁵) has V₊ = 3.2 V and V₋ = 3.1 V. What is the output?"
+},
+"opts": [
+{
+"vi": "Bão hoà ở khoảng +15 V",
+"en": "Saturated at about +15 V"
+},
+{
+"vi": "+10 kV",
+"en": "+10 kV"
+},
+{
+"vi": "+0.1 V",
+"en": "+0.1 V"
+},
+{
+"vi": "0 V",
+"en": "0 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Aol·(V₊ − V₋) = 10⁵ × 0,1 V = 10 kV vượt xa nguồn nên ngõ ra bão hoà ở +15 V.",
+"en": "Aol·(V₊ − V₋) = 10⁵ × 0.1 V = 10 kV is far beyond the supply, so the output saturates at +15 V."
+},
+"level": 1,
+"topic": {
+"en": "Op-amp circuits in the logic context",
+"vi": "Mạch op-amp trong ngữ cảnh logic"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 Q1-35…1-38",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 Q1-35…1-38"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-opamp-logic"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch so sánh có điện áp tham chiếu 2 V ở ngõ đảo; tín hiệu 2,5 V đặt vào ngõ không đảo, nguồn ±12 V. Ngõ ra ở mức nào?",
+"en": "A comparator has a 2 V reference on the inverting input and a 2.5 V signal on the noninverting input, ±12 V supplies. What is the output level?"
+},
+"opts": [
+{
+"vi": "Mức cao, khoảng +12 V",
+"en": "HIGH, about +12 V"
+},
+{
+"vi": "Mức thấp, khoảng −12 V",
+"en": "LOW, about −12 V"
+},
+{
+"vi": "0,5 V",
+"en": "0.5 V"
+},
+{
+"vi": "2,5 V",
+"en": "2.5 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "V₊ − V₋ = +0,5 V > 0 nên ngõ ra bão hoà ở mức dương.",
+"en": "V₊ − V₋ = +0.5 V > 0 so the output saturates positive."
+},
+"level": 1,
+"topic": {
+"en": "Op-amp circuits in the logic context",
+"vi": "Mạch op-amp trong ngữ cảnh logic"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM01 Q1-35…1-38",
+"en": "Gap-fill (coverage loop) – EASA M04 SM01 Q1-35…1-38"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m01-opamp-logic"
 }
 ]

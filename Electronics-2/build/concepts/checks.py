@@ -3,6 +3,7 @@
 and raises AssertionError on a mismatch.  A check returns a short text of what it verified."""
 import math, itertools, cmath
 import numpy as np
+TRAPZ = getattr(np, 'trapezoid', None) or np.trapz
 from scipy.optimize import brentq
 CHECKS = {}
 def chk(name):
@@ -90,7 +91,7 @@ def _():
         must(close(v, vsp_formula(VDD, VTN, VTP, Kn / Kp), 1e-6), (VDD, v))
     must(close(vsp_formula(2.5, 0.6, -0.6, 1), 1.25), 'VDD/2')
     # dynamic energy: supply delivers C*V^2 per charge-discharge cycle (integrate i*V through an RC charge)
-    C, R, V = 10e-12, 1e3, 2.5; t = np.linspace(0, 40 * R * C, 400001); i = V / R * np.exp(-t / (R * C)); E = np.trapz(i * V, t)
+    C, R, V = 10e-12, 1e3, 2.5; t = np.linspace(0, 40 * R * C, 400001); i = V / R * np.exp(-t / (R * C)); E = TRAPZ(i * V, t)
     must(close(E, C * V ** 2, 1e-4), E); must(close(C * V ** 2 * 100e6, 10e-12 * 6.25 * 1e8), 'P')
     return 'switching threshold against the root of ID(n) = ID(p) for four parameter sets, VSP = VDD/2 for the symmetric case, CV^2 supply energy by numerical integration'
 # ------------------------------------------------------------------ module 02 and the circuits below: nodal solution with a finite-gain op-amp
@@ -264,7 +265,7 @@ def _():
     Pout = 0.5 * VCC ** 2 / RL                                       # sine of peak VCC across RL
     Ip = VCC / RL
     # each transistor supplies a half-sine of current during its half cycle: its average over the whole cycle is Ip/pi; the two together draw 2 Ip/pi from the supplies
-    Iavg_one = np.trapz(Ip * np.sin(th), th) / (2 * math.pi); Pdc = VCC * 2 * Iavg_one
+    Iavg_one = TRAPZ(Ip * np.sin(th), th) / (2 * math.pi); Pdc = VCC * 2 * Iavg_one
     must(close(Pout / Pdc, math.pi / 4, 1e-9) and abs(Pout / Pdc - 0.785398) < 1e-5, Pout / Pdc)
     return 'class B push-pull efficiency pi/4 = 78.5 % (about 79 %) from the average supply current of a full-swing sine'
 @chk('pushpull')
@@ -454,7 +455,7 @@ def _():
 def _():
     VIN = 24.0
     for duty in (0.25, 0.4, 0.75):
-        T = 100e-6; t = np.linspace(0, T, 200001); sw = np.where(t < duty * T, VIN, 0.0); must(close(np.trapz(sw, t) / T, duty * VIN, 1e-3), duty)
+        T = 100e-6; t = np.linspace(0, T, 200001); sw = np.where(t < duty * T, VIN, 0.0); must(close(TRAPZ(sw, t) / T, duty * VIN, 1e-3), duty)
     must(close(40e-6 / 100e-6, 0.4), 'duty'); return 'average of the switch-node waveform equals duty x VIN (three duty cycles); 40 us of 100 us = 40 %'
 @chk('heat')
 def _():
@@ -503,7 +504,7 @@ def _():
 @chk('pwm')
 def _():
     for duty in (0.1, 0.4, 0.9):
-        T = 1e-3; t = np.linspace(0, T, 400001); v = np.where(t < duty * T, 12.0, 0.0); must(close(np.trapz(v, t) / T, 12 * duty, 1e-3), duty)
+        T = 1e-3; t = np.linspace(0, T, 400001); v = np.where(t < duty * T, 12.0, 0.0); must(close(TRAPZ(v, t) / T, 12 * duty, 1e-3), duty)
     must(close(0.4 * 12, 4.8), 'example'); return 'average of a 12 V pulse train equals duty x 12 V (duty 10 %, 40 %, 90 %)'
 
 @chk('opampsat')

@@ -366,5 +366,511 @@
 "gap"
 ],
 "concept": "m10-resolver"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Hai cuộn thứ cấp của một LVDT (nối ngược pha) cho 3,2 V và 1,8 V. Điện áp ngõ ra là bao nhiêu?",
+"en": "The two secondaries of an LVDT (connected in series opposition) give 3.2 V and 1.8 V. What is the output voltage?"
+},
+"opts": [
+{
+"vi": "1.4 V",
+"en": "1.4 V"
+},
+{
+"vi": "5.0 V",
+"en": "5.0 V"
+},
+{
+"vi": "2.5 V",
+"en": "2.5 V"
+},
+{
+"vi": "0 V",
+"en": "0 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Ngõ ra là hiệu hai điện áp thứ cấp: 3,2 − 1,8 = 1,4 V; pha của nó cho biết lõi lệch về phía cuộn nào.",
+"en": "The output is the difference of the secondary voltages: 3.2 − 1.8 = 1.4 V; its phase tells on which side the core has moved."
+},
+"level": 1,
+"topic": {
+"en": "Transducers: LVDT, RVDT, inductive, capacitive",
+"vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.4, 3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.4, 3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-lvdt"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một LVDT có độ nhạy 0,2 V/mm trong dải tuyến tính. Lõi lệch 3 mm khỏi tâm thì điện áp ngõ ra là bao nhiêu?",
+"en": "An LVDT has a sensitivity of 0.2 V/mm in its linear range. What is the output when the core is 3 mm off centre?"
+},
+"opts": [
+{
+"vi": "0.6 V",
+"en": "0.6 V"
+},
+{
+"vi": "1.5 V",
+"en": "1.5 V"
+},
+{
+"vi": "0.067 V",
+"en": "0.067 V"
+},
+{
+"vi": "6 V",
+"en": "6 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Ngõ ra tuyến tính theo độ dời: 0,2 V/mm × 3 mm = 0,6 V.",
+"en": "The output is linear in displacement: 0.2 V/mm × 3 mm = 0.6 V."
+},
+"level": 1,
+"topic": {
+"en": "Transducers: LVDT, RVDT, inductive, capacitive",
+"vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.4, 3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.4, 3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-lvdt"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Ngõ ra của LVDT ở trên là 1,5 V với độ nhạy 0,2 V/mm (trong dải tuyến tính). Lõi lệch bao nhiêu milimét?",
+"en": "The LVDT above outputs 1.5 V with a sensitivity of 0.2 V/mm (linear range). How far is the core from the centre?"
+},
+"opts": [
+{
+"vi": "7.5 mm",
+"en": "7.5 mm"
+},
+{
+"vi": "0.3 mm",
+"en": "0.3 mm"
+},
+{
+"vi": "3 mm",
+"en": "3 mm"
+},
+{
+"vi": "75 mm",
+"en": "75 mm"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Độ dời = ngõ ra/độ nhạy = 1,5 V / 0,2 V/mm = 7,5 mm.",
+"en": "Displacement = output/sensitivity = 1.5 V / 0.2 V/mm = 7.5 mm."
+},
+"level": 2,
+"topic": {
+"en": "Transducers: LVDT, RVDT, inductive, capacitive",
+"vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.4, 3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.4, 3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-lvdt"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Lõi LVDT nằm đúng tâm và mỗi cuộn thứ cấp cho 2,0 V. Điện áp ngõ ra hiệu là bao nhiêu và đây gọi là điểm nào?",
+"en": "The LVDT core is exactly centred and each secondary gives 2.0 V. What is the differential output and what is this position called?"
+},
+"opts": [
+{
+"vi": "0 V, điểm không (null)",
+"en": "0 V, the null position"
+},
+{
+"vi": "4,0 V, điểm bão hoà",
+"en": "4.0 V, saturation"
+},
+{
+"vi": "2,0 V, điểm giữa",
+"en": "2.0 V, mid-point"
+},
+{
+"vi": "1,0 V, điểm chuẩn",
+"en": "1.0 V, reference"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Hai điện áp bằng nhau và ngược pha nên hiệu bằng 0: đó là điểm null.",
+"en": "The two voltages are equal and opposite so the difference is 0: the null position."
+},
+"level": 1,
+"topic": {
+"en": "Transducers: LVDT, RVDT, inductive, capacitive",
+"vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.4, 3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.4, 3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-lvdt"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Máy biến áp điều khiển (CT) cho điện áp sai số 0,15 V mỗi độ lệch góc (vùng góc nhỏ). Sai số góc 8° cho điện áp sai số là bao nhiêu?",
+"en": "A control transformer (CT) gives an error voltage of 0.15 V per degree of angular error (small-angle range). What error voltage does an 8° error give?"
+},
+"opts": [
+{
+"vi": "1.2 V",
+"en": "1.2 V"
+},
+{
+"vi": "0.019 V",
+"en": "0.019 V"
+},
+{
+"vi": "12 V",
+"en": "12 V"
+},
+{
+"vi": "0.12 V",
+"en": "0.12 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điện áp sai số tỉ lệ với sai số góc: 0,15 V/° × 8° = 1,2 V.",
+"en": "The error voltage is proportional to the angular error: 0.15 V/° × 8° = 1.2 V."
+},
+"level": 1,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 pp.3.7–3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 pp.3.7–3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-control-synchro"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Với cùng độ nhạy 0,12 V/° của một CT, điện áp sai số đo được là 3,0 V. Sai số góc là bao nhiêu?",
+"en": "With a CT sensitivity of 0.12 V/°, the measured error voltage is 3.0 V. What is the angular error?"
+},
+"opts": [
+{
+"vi": "25°",
+"en": "25°"
+},
+{
+"vi": "0.36°",
+"en": "0.36°"
+},
+{
+"vi": "2.5°",
+"en": "2.5°"
+},
+{
+"vi": "250°",
+"en": "250°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Sai số góc = 3,0 V / 0,12 V/° = 25° (pha của điện áp cho biết chiều lệch).",
+"en": "Angular error = 3.0 V / 0.12 V/° = 25° (the phase of the voltage gives the direction)."
+},
+"level": 2,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 pp.3.7–3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 pp.3.7–3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-control-synchro"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một synchro vi sai (TDX) nhận hai góc vào 40° và 25°. Góc ngõ ra khi nối bình thường và khi đảo hai dây S1–S3 của một ngõ vào là bao nhiêu?",
+"en": "A differential synchro (TDX) receives two input angles 40° and 25°. What is the output angle when wired normally and when two leads S1–S3 of one input are reversed?"
+},
+"opts": [
+{
+"vi": "65° (cộng) và 15° (trừ)",
+"en": "65° (sum) and 15° (difference)"
+},
+{
+"vi": "15° (cộng) và 65° (trừ)",
+"en": "15° (sum) and 65° (difference)"
+},
+{
+"vi": "65° và 65°",
+"en": "65° and 65°"
+},
+{
+"vi": "40° và 25°",
+"en": "40° and 25°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "TDX cho tổng hai góc: 40° + 25° = 65°; đảo S1–S3 đổi dấu một góc nên được hiệu 40° − 25° = 15°.",
+"en": "The TDX gives the sum of the two angles: 40° + 25° = 65°; reversing S1–S3 negates one angle, giving the difference 40° − 25° = 15°."
+},
+"level": 2,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 pp.3.7–3.10",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 pp.3.7–3.10"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-control-synchro"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một resolver có điện áp kích thích đỉnh 10 V. Ở góc rôto 30°, hai ngõ ra sin và cos có biên độ đỉnh bao nhiêu?",
+"en": "A resolver is excited with 10 V peak. At a rotor angle of 30°, what are the peak amplitudes of the sine and cosine outputs?"
+},
+"opts": [
+{
+"vi": "5,00 V và 8,66 V",
+"en": "5.00 V and 8.66 V"
+},
+{
+"vi": "8,66 V và 5,00 V",
+"en": "8.66 V and 5.00 V"
+},
+{
+"vi": "10 V và 10 V",
+"en": "10 V and 10 V"
+},
+{
+"vi": "3,33 V và 6,67 V",
+"en": "3.33 V and 6.67 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Ngõ ra sin = 10·sin 30° = 5,00 V; ngõ ra cos = 10·cos 30° = 8,66 V (hai cuộn lệch 90°).",
+"en": "Sine output = 10·sin 30° = 5.00 V; cosine output = 10·cos 30° = 8.66 V (windings 90° apart)."
+},
+"level": 2,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.9",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.9"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-resolver"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một resolver cho ∝ sin θ = 0,866 và ∝ cos θ = 0,5. Góc rôto là bao nhiêu?",
+"en": "A resolver gives ∝ sin θ = 0.866 and ∝ cos θ = 0.5. What is the rotor angle?"
+},
+"opts": [
+{
+"vi": "60°",
+"en": "60°"
+},
+{
+"vi": "30°",
+"en": "30°"
+},
+{
+"vi": "45°",
+"en": "45°"
+},
+{
+"vi": "120°",
+"en": "120°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "θ = atan2(0,866; 0,5) = 60°.",
+"en": "θ = atan2(0.866, 0.5) = 60°."
+},
+"level": 2,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – EASA M04 SM03 p.3.9",
+"en": "Gap-fill (coverage loop) – EASA M04 SM03 p.3.9"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-resolver"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Xung PWM 24 V có chu kỳ làm việc 25 % đặt lên servomotor. Điện áp trung bình là bao nhiêu?",
+"en": "A 24 V PWM pulse train with a 25 % duty cycle drives a servomotor. What is the average voltage?"
+},
+"opts": [
+{
+"vi": "6 V",
+"en": "6 V"
+},
+{
+"vi": "24 V",
+"en": "24 V"
+},
+{
+"vi": "18 V",
+"en": "18 V"
+},
+{
+"vi": "0.25 V",
+"en": "0.25 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điện áp trung bình = duty × V = 0,25 × 24 = 6 V.",
+"en": "The average voltage = duty × V = 0.25 × 24 = 6 V."
+},
+"level": 1,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §9–4, §16–6",
+"en": "Gap-fill (coverage loop) – Floyd 9e §9–4, §16–6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-pwm"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cần điện áp trung bình 9 V từ xung PWM 12 V. Chu kỳ làm việc phải bằng bao nhiêu?",
+"en": "An average voltage of 9 V is needed from 12 V PWM pulses. What duty cycle is required?"
+},
+"opts": [
+{
+"vi": "75 %",
+"en": "75 %"
+},
+{
+"vi": "25 %",
+"en": "25 %"
+},
+{
+"vi": "9 %",
+"en": "9 %"
+},
+{
+"vi": "133 %",
+"en": "133 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "duty = V_tb/V = 9/12 = 0,75 = 75 %.",
+"en": "duty = Vavg/V = 9/12 = 0.75 = 75 %."
+},
+"level": 1,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §9–4, §16–6",
+"en": "Gap-fill (coverage loop) – Floyd 9e §9–4, §16–6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m10-pwm"
 }
 ]

@@ -90,5 +90,97 @@
 "gap"
 ],
 "concept": "m07-relaxation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ dao động thư giãn op-amp có R1 = 30 kΩ, R2 = 10 kΩ, Vsat = ±12 V. Hai ngưỡng của tụ là bao nhiêu?",
+"en": "An op-amp relaxation oscillator has R1 = 30 kΩ, R2 = 10 kΩ, Vsat = ±12 V. What are the two capacitor thresholds?"
+},
+"opts": [
+{
+"vi": "±3 V",
+"en": "±3 V"
+},
+{
+"vi": "±12 V",
+"en": "±12 V"
+},
+{
+"vi": "±4 V",
+"en": "±4 V"
+},
+{
+"vi": "±9 V",
+"en": "±9 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "B = R2/(R1 + R2) = 10/40 = 0,25; ngưỡng = ±B·Vsat = ±0,25 × 12 = ±3 V.",
+"en": "B = R2/(R1 + R2) = 10/40 = 0.25; thresholds = ±B·Vsat = ±0.25 × 12 = ±3 V."
+},
+"level": 2,
+"topic": {
+"en": "Relaxation oscillators",
+"vi": "Mạch dao động thư giãn"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §16–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §16–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m07-relaxation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Với R1 = 30 kΩ, R2 = 10 kΩ (B = 0,25), R = 10 kΩ và C = 22 nF, tần số của bộ dao động thư giãn f = 1/(2RC·ln((1+B)/(1−B))) là bao nhiêu?",
+"en": "With R1 = 30 kΩ, R2 = 10 kΩ (B = 0.25), R = 10 kΩ and C = 22 nF, what is the relaxation oscillator frequency f = 1/(2RC·ln((1+B)/(1−B)))?"
+},
+"opts": [
+{
+"vi": "4.45 kHz",
+"en": "4.45 kHz"
+},
+{
+"vi": "2.27 kHz",
+"en": "2.27 kHz"
+},
+{
+"vi": "2.07 kHz",
+"en": "2.07 kHz"
+},
+{
+"vi": "8.9 kHz",
+"en": "8.9 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "ln(1,25/0,75) = 0,5108 nên f = 1/(2 × 10⁴ × 22·10⁻⁹ × 0,5108) = 4,45 kHz.",
+"en": "ln(1.25/0.75) = 0.5108 so f = 1/(2 × 10⁴ × 22·10⁻⁹ × 0.5108) = 4.45 kHz."
+},
+"level": 3,
+"topic": {
+"en": "Relaxation oscillators",
+"vi": "Mạch dao động thư giãn"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §16–5",
+"en": "Gap-fill (coverage loop) – Floyd 9e §16–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m07-relaxation"
 }
 ]

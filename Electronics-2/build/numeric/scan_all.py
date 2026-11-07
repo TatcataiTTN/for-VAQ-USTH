@@ -41,6 +41,7 @@ def modules_of(e):
     return []
 
 SOLVED = load('jaeger_solved.json') if os.path.exists(os.path.join(OUT, 'jaeger_solved.json')) else dict(solved={}, skipped={})
+CALC = load('calc_solved.json') if os.path.exists(os.path.join(OUT, 'calc_solved.json')) else dict(solved={}, skipped={})     # Floyd/Jaeger Examples, Related Problems, Checkups, even problems (build/numeric/csol)
 def parts_text(parts): return ' | '.join((f'{a}: {b}' if b else a) for a, b in parts)
 cat = []
 for e in raw:
@@ -52,6 +53,12 @@ for e in raw:
         e['modules'] = sorted(set(e['modules']) | set(sv['modules']))
     elif b == 'jaeger5' and e['kind'] == 'problem' and e['number'] in SOLVED['skipped']: e['skip'] = SOLVED['skipped'][e['number']]['reason']
     elif e.get('answer'): e['ans_kind'] = 'printed'
+    ck = '|'.join((b, e['kind'], str(e['chapter']), str(e['number'])))
+    if ck in CALC['solved'] and e.get('ans_kind') != 'printed':
+        sv = CALC['solved'][ck]; e['answer'] = parts_text(sv['parts']); e['ans_kind'] = 'computed'; e['how'] = sv['how']; e['assume'] = sv['assume']; e['parts'] = sv['parts']; e['calc'] = 1
+        if sv.get('ctx'): e['ctx'] = sv['ctx']
+        e['modules'] = sorted(set(e['modules']) | set(sv['modules']))
+    elif ck in CALC['skipped']: e['skip'] = CALC['skipped'][ck]['reason']
     key = (b, e['chapter'] if b == 'floyd' else 0, e['kind'], e['number'])
     e['in_site'] = sorted(held.get(key, []))
     if b == 'floyd' and e['chapter'] in (6, 7) and e['in_site']: e['modules'] = sorted(set(e['modules']) | set(e['in_site']))

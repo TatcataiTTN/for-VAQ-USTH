@@ -90,5 +90,97 @@
 "gap"
 ],
 "concept": "m08-heat"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một IC ổn áp 78XX nhận VIN = 15 V, cho VOUT = 5 V với IL = 0,8 A. Công suất tiêu tán trong IC là bao nhiêu?",
+"en": "A 78XX IC regulator takes VIN = 15 V and delivers VOUT = 5 V at IL = 0.8 A. What power does the IC dissipate?"
+},
+"opts": [
+{
+"vi": "8 W",
+"en": "8 W"
+},
+{
+"vi": "12 W",
+"en": "12 W"
+},
+{
+"vi": "4 W",
+"en": "4 W"
+},
+{
+"vi": "10 W",
+"en": "10 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "P_D = (VIN − VOUT)·IL = 10 V × 0,8 A = 8 W (cần tản nhiệt lớn).",
+"en": "P_D = (VIN − VOUT)·IL = 10 V × 0.8 A = 8 W (a large heat sink is needed)."
+},
+"level": 2,
+"topic": {
+"en": "IC regulators",
+"vi": "IC ổn áp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §17–4",
+"en": "Gap-fill (coverage loop) – Floyd 9e §17–4"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m08-heat"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Ổn áp tuyến tính có VIN = 12 V, VOUT = 5 V, công suất tiêu tán cho phép tối đa 5 W. Dòng tải lớn nhất là bao nhiêu?",
+"en": "A linear regulator with VIN = 12 V and VOUT = 5 V may dissipate at most 5 W. What is the largest load current?"
+},
+"opts": [
+{
+"vi": "0.714 A",
+"en": "0.714 A"
+},
+{
+"vi": "1 A",
+"en": "1 A"
+},
+{
+"vi": "0.417 A",
+"en": "0.417 A"
+},
+{
+"vi": "2.4 A",
+"en": "2.4 A"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "IL = P_D/(VIN − VOUT) = 5 W / 7 V = 0,714 A.",
+"en": "IL = P_D/(VIN − VOUT) = 5 W / 7 V = 0.714 A."
+},
+"level": 2,
+"topic": {
+"en": "IC regulators",
+"vi": "IC ổn áp"
+},
+"src": {
+"vi": "Bổ sung (lấp khoảng trống độ phủ) – Floyd 9e §17–4",
+"en": "Gap-fill (coverage loop) – Floyd 9e §17–4"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"gap"
+],
+"concept": "m08-heat"
 }
 ]
