@@ -23,6 +23,5 @@ SKIP = {
     ('floyd', 'problem', '17', '24'): 'ambiguous: “maximum regulator current with no load is 2 mA” does not say which current limits R1 and R2',
     ('floyd', 'problem', '17', '30'): 'needs the ADP1612/1613 datasheet (image)',
     ('jaeger5', 'example', '10', '10.6'): 'open-ended exploration comparing two circuits in a figure',
-    ('jaeger5', 'example', '12', '12.1'): 'multi-part analysis of a three-op-amp circuit given only in a figure',
     ('jaeger5', 'example', '12', '12.3'): 'multi-stage design to several specifications; the book\'s solution chooses its own stages',
 }

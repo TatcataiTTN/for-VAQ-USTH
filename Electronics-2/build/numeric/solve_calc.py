@@ -4,7 +4,7 @@ Candidates = numeric, mapped to a module, no figure, no simulator, not already i
 Run: python3 -I build/numeric/solve_calc.py"""
 import sys, os, json
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(HERE, 'csol')); sys.path.insert(0, HERE)
-import floyd, floyd_fig, jaeger
+import floyd, floyd_fig, jaeger, jaeger_fig
 from core import REG
 from skipped import SKIP
 from common import OUT

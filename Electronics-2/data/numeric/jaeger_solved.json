@@ -19,7 +19,8 @@
 ]
 ],
 "how": "C = εox·L·W/tox with L = 3.75 mm, W = 1.5 μm, tox = 1 μm, then ×3.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.1": {
 "number": "7.1",
@@ -40,7 +41,8 @@
 ]
 ],
 "how": "K′ = μ·Cox″ with Cox″ = εox/tox, εox = 3.9·8.854×10⁻¹⁴ F/cm, 1 nm = 10⁻⁷ cm.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.3": {
 "number": "7.3",
@@ -67,7 +69,8 @@
 "how": "I = J·A; per inverter one 2 μm × 5 μm drain junction is reverse biased; × 20 million inverters.",
 "assume": [
 "The n-well of part (a) is counted separately; the totals with the well are shown in brackets."
-]
+],
+"circuit": null
 },
 "7.4": {
 "number": "7.4",
@@ -88,7 +91,8 @@
 ]
 ],
 "how": "C = εox·L·W/tox with L = 5 mm, W = 1 μm, tox = 1 μm, then ×3.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.10": {
 "number": "7.10",
@@ -111,7 +115,8 @@
 "how": "KR = Kn/Kp; vO = vI where both devices are saturated: vI = (VDD + VTP + VTN√KR)/(1 + √KR); IDD = (Kn/2)(vI − VTN)² with Kn = K′n·2 = 200 μA/V².",
 "assume": [
 "K′n = 100 μA/V² (Table 7.1)."
-]
+],
+"circuit": null
 },
 "7.11": {
 "number": "7.11",
@@ -150,7 +155,8 @@
 "how": "Same method as Problem 7.10.",
 "assume": [
 "K′n = 100 μA/V²."
-]
+],
+"circuit": null
 },
 "7.12": {
 "number": "7.12",
@@ -201,7 +207,8 @@
 "how": "Same method as Problem 7.10.",
 "assume": [
 "K′n = 100 μA/V²."
-]
+],
+"circuit": null
 },
 "7.15": {
 "number": "7.15",
@@ -218,7 +225,8 @@
 ]
 ],
 "how": "W/L = 2/1 for both: Kn/Kp = K′n/K′p = 2.5, vI = (VDD + VTP + VTN√KR)/(1 + √KR).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.16": {
 "number": "7.16",
@@ -235,7 +243,8 @@
 ]
 ],
 "how": "Same method as Problem 7.15.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.17": {
 "number": "7.17",
@@ -260,7 +269,8 @@
 ]
 ],
 "how": "Eqs. (7.7)–(7.12) with KR = 2.5, checked against the simulated transfer curve (slope = −1 points).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.18": {
 "number": "7.18",
@@ -293,7 +303,8 @@
 ]
 ],
 "how": "Eq. (7.14) for KR = 1 (checked numerically); Eqs. (7.7)–(7.12) for KR = 2.5.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.23": {
 "number": "7.23",
@@ -316,7 +327,8 @@
 "how": "Output low: NMOS (vGS = 5 V) in the triode region, iD = Kn[(VDD−VTN)vDS − vDS²/2] = 1.5 mA at vDS = 0.6 V. Output high: PMOS in the triode region, iD = Kp[(VDD−|VTP|)vSD − vSD²/2] = 60 μA at vSD = 2.6 V.",
 "assume": [
 "VTN = 0.6 V, VTP = −0.6 V and K′n = 100, K′p = 40 μA/V² (not given in the statement)."
-]
+],
+"circuit": null
 },
 "7.24": {
 "number": "7.24",
@@ -379,7 +391,8 @@
 "how": "τPHL = 2.4·Ronn·C with Ronn = 1/[Kn(VDD − VTN)], τPLH likewise with Kp(VDD + VTP); tr = 2τPLH, tf = 2τPHL, τP = average. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
 "assume": [
 "VTN = −VTP = 0.6 V for all three supplies (the statement gives no other value)."
-]
+],
+"circuit": null
 },
 "7.25": {
 "number": "7.25",
@@ -442,7 +455,8 @@
 "how": "As Problem 7.24(a) with VTN = 0.55 V, VTP = −0.65 V; threshold vI = (VDD + VTP + VTN√KR)/(1 + √KR), KR = Kn/Kp = 1. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
 "assume": [
 "C = 0.3 pF as in Problem 7.24."
-]
+],
+"circuit": null
 },
 "7.26": {
 "number": "7.26",
@@ -505,7 +519,8 @@
 "how": "As Problem 7.25 with VTN = 0.65 V, VTP = −0.55 V. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
 "assume": [
 "C = 0.3 pF as in Problem 7.24."
-]
+],
+"circuit": null
 },
 "7.27": {
 "number": "7.27",
@@ -532,7 +547,8 @@
 "how": "Kn = 200 μA/V², Kp = 80 μA/V² (both 2/1). The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
 "assume": [
 "VTN = −VTP = 0.6 V."
-]
+],
+"circuit": null
 },
 "7.28": {
 "number": "7.28",
@@ -561,7 +577,8 @@
 ]
 ],
 "how": "As Problem 7.27 with VTN = 0.65 V, VTP = −0.55 V. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.29": {
 "number": "7.29",
@@ -586,7 +603,8 @@
 ]
 ],
 "how": "The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.30": {
 "number": "7.30",
@@ -611,7 +629,8 @@
 ]
 ],
 "how": "The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.31": {
 "number": "7.31",
@@ -632,7 +651,8 @@
 ]
 ],
 "how": "τP = k·C/[Kn(VDD − VTN)] with equal rise and fall times (Kp = Kn) solved for Kn and Kp. The 1.2 version agrees with scaling the reference inverter of Fig. 7.12 by Eq. (7.20). The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.33": {
 "number": "7.33",
@@ -671,7 +691,8 @@
 "how": "As Problem 7.31. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
 "assume": [
 "Part (a): VT = ±0.6 V."
-]
+],
+"circuit": null
 },
 "7.35": {
 "number": "7.35",
@@ -692,7 +713,8 @@
 ]
 ],
 "how": "As Problem 7.31. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.37": {
 "number": "7.37",
@@ -713,7 +735,8 @@
 ]
 ],
 "how": "As Problem 7.31. The book gives two estimates: Eq. (7.15)/(7.18) with 1.2·Ron·C and, after the SPICE comparison of Fig. 7.15, the revised Eq. (7.23) with 2.4·Ron·C. Both are listed.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.41": {
 "number": "7.41",
@@ -744,7 +767,8 @@
 "how": "τp ∝ 1/[Kn(VDD − VTN)] from Eq. (7.18); the sensitivity of a power law is its exponent.",
 "assume": [
 "VDD = 2.5 V in part (b) (not given in the statement)."
-]
+],
+"circuit": null
 },
 "7.51": {
 "number": "7.51",
@@ -765,7 +789,8 @@
 ]
 ],
 "how": "P/N and I = P/VDD.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.52": {
 "number": "7.52",
@@ -794,7 +819,8 @@
 ]
 ],
 "how": "P = 5 W/10⁷ gates; Eq. (7.24) P = C·VDD²·f solved for C at f = 100 MHz.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.53": {
 "number": "7.53",
@@ -821,7 +847,8 @@
 "how": "I = J·A; the well is 0.5 cm × 1 cm; each drain is 0.5 μm × 1.25 μm = 6.25×10⁻⁹ cm²; × 200 million inverters.",
 "assume": [
 "The well leakage of part (a) is not added to (b) and (c)."
-]
+],
+"circuit": null
 },
 "7.54": {
 "number": "7.54",
@@ -844,7 +871,8 @@
 "how": "P = N·C·VDD²·f with f the full switching cycle rate: each line changes at every 2 ns access, so a charge-discharge cycle lasts 4 ns (f = 250 MHz).",
 "assume": [
 "If f were taken as the access rate 500 MHz the powers double."
-]
+],
+"circuit": null
 },
 "7.55": {
 "number": "7.55",
@@ -875,7 +903,8 @@
 "how": "Deep triode: R = 1/[Kn(VGS − VTN)] with VGS = 2.5 V.",
 "assume": [
 "VTN = 0.6 V and K′n = 100 μA/V² (not given in the statement)."
-]
+],
+"circuit": null
 },
 "7.56": {
 "number": "7.56",
@@ -892,7 +921,8 @@
 ]
 ],
 "how": "Each switching gate dissipates PDP/τ; 0.2 × 10⁸ gates × PDP/τ ≤ 40 W.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.57": {
 "number": "7.57",
@@ -915,7 +945,8 @@
 "how": "Both devices saturated at vI = switching threshold: IDD,max = (Kn/2)(vI − VTN)², Kn = 15·K′n.",
 "assume": [
 "VTN = −VTP = 0.6 V, K′n = 100, K′p = 40 μA/V²."
-]
+],
+"circuit": null
 },
 "7.58": {
 "number": "7.58",
@@ -938,7 +969,8 @@
 "how": "As Problem 7.57.",
 "assume": [
 "Part (a) keeps VT = ±0.6 V (not restated)."
-]
+],
+"circuit": null
 },
 "7.59": {
 "number": "7.59",
@@ -959,7 +991,8 @@
 ]
 ],
 "how": "Symmetrical inverter: Kn = Kp = 200 μA/V², vI = VDD/2.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.60": {
 "number": "7.60",
@@ -980,7 +1013,8 @@
 ]
 ],
 "how": "As Problem 7.59(a) with (W/L)N = 2/1, (W/L)P = 5/1, VDD = 2.0 V.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "7.61": {
 "number": "7.61",
@@ -1007,7 +1041,8 @@
 "how": "Eq. (7.28) is the lower bound of the PDP; the last line is the same quantity from Pav·τP (about 5 % lower because Eq. 7.28 assumes the 80 % transition-time rule).",
 "assume": [
 "C = 0.3 pF, VDD = 2.5 V as in Problem 7.24(a)."
-]
+],
+"circuit": null
 },
 "9.19": {
 "number": "9.19",
@@ -1026,7 +1061,8 @@
 "how": "Solve NM = ΔV/2 − VT[1 + ln(ΔV/VT − 1)] = 0.1 V numerically (the NM grows with ΔV).",
 "assume": [
 "Room temperature: VT = 25 mV (the value the book uses in Section 9.3)."
-]
+],
+"circuit": null
 },
 "9.22": {
 "number": "9.22",
@@ -1057,7 +1093,8 @@
 "how": "NM falls as VT = kT/q rises, so the +75 °C end of the range sets ΔV; the same ΔV then gives NM > 0.1 V at lower temperatures.",
 "assume": [
 "ΔV = IEE·RC is taken as temperature independent."
-]
+],
+"circuit": null
 },
 "9.106": {
 "number": "9.106",
@@ -1078,7 +1115,8 @@
 ]
 ],
 "how": "PDP = P·τ (Eq. 9.x, definition of the power-delay product).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "9.109": {
 "number": "9.109",
@@ -1099,7 +1137,65 @@
 ]
 ],
 "how": "All gates dissipate the same power: P = 20 W/50,000, τ = PDP/P.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"10.27": {
+"number": "10.27",
+"section": "10.5",
+"modules": [
+"m02"
+],
+"pdf": 607,
+"printed": 578,
+"parts": [
+[
+"(a) largest possible VO",
+"+15 V"
+],
+[
+"(b) smallest possible VO",
+"−9 V"
+]
+],
+"how": "A network of resistors and diodes contains no source: every node voltage is a weighted average of the voltages of the nodes it is connected to (a diode can only lower it), so no node can lie above the highest supply (+15 V) or below the lowest (−9 V). VO can come close to +15 V (tied to that terminal through a small resistance and a conducting diode) and to −9 V, but not to +6 V or 0 V as extremes: those are intermediate values.",
+"assume": [
+"Random resistor–diode networks fed from +15 V, −9 V and 0 V were solved (300 networks, ideal 0.6 V diodes): all node voltages stayed between -9.00 V and 15.00 V, inside the limits.",
+"The “most nearly” answers are the limits; the exact extremes also lose a diode drop."
+],
+"circuit": "Fig. P10.27 (p.578): a box containing only resistors and diodes with the terminals +15 V, −9 V, ground and the output vO."
+},
+"10.28": {
+"number": "10.28",
+"section": "10.5",
+"modules": [
+"m02"
+],
+"pdf": 608,
+"printed": 579,
+"parts": [
+[
+"(a) small-signal gain at VB = 0.6 V",
+"Av = ΔvO/ΔvI = (4 V − 12 V)/(0.7 V − 0.5 V) = -40.0 V/V"
+],
+[
+"(a) largest undistorted VM",
+"0.1 V (the segment is straight between vI = 0.5 V and 0.7 V)"
+],
+[
+"(b) vI(t)",
+"vI(t) = 0.6 + VM sin 1000t V"
+],
+[
+"(b) vO(t)",
+"vO(t) = 8 − 40·VM sin 1000t V (for VM = 0.1 V: 8 − 4 sin 1000t V)"
+]
+],
+"how": "The amplifier is linear only where the transfer curve is straight: around vI = 0.6 V the curve falls from (0.5 V, 12 V) to (0.7 V, 4 V), a slope of −40; the bias point is vO = 8 V, so vO = 8 − 40(vI − 0.6).",
+"assume": [
+"The vertices (0.3, 14), (0.5, 12), (0.7, 4), (0.9, 2) were read from the figure."
+],
+"circuit": "Fig. P10.28 (p.579): transfer characteristic vO (0 to 14 V) versus vI (0 to 1.2 V) of an amplifier: 14 V up to 0.3 V, then a straight fall through (0.5 V, 12 V) and (0.7 V, 4 V) to 2 V at 0.9 V, then flat."
 },
 "10.33": {
 "number": "10.33",
@@ -1124,7 +1220,8 @@
 ]
 ],
 "how": "Gain = amplitude of the 600 Hz output component / input amplitude (the dc terms are not part of the gain). THD checked with an FFT of the waveform.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.34": {
 "number": "10.34",
@@ -1149,7 +1246,8 @@
 ]
 ],
 "how": "Gain = 5 V/4 mV at 1 kHz; THD = √(0.5² + 0.2²)/5 checked with an FFT.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.37": {
 "number": "10.37",
@@ -1170,7 +1268,75 @@
 ]
 ],
 "how": "Fourier components of 10·tanh(1.5·sin ωt) found with an FFT and by direct integration; THD = √(V2² + V3²)/V1. The plot of part (a) is not reproduced.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"10.38": {
+"number": "10.38",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 608,
+"printed": 579,
+"parts": [
+[
+"(a) overall voltage gain Av = vo/vi",
+"955.2 = 59.6 dB"
+],
+[
+"(a) current gain Ai = io/ii",
+"1.600e+6 = 124.1 dB"
+],
+[
+"(a) power gain AP = Av·Ai",
+"1.528e+9 = 91.84 dB"
+],
+[
+"(b) amplitude of vi for 20 V p-p at vo",
+"VI = 10 V/Av = 0.01047 V"
+]
+],
+"how": "Voltage divider RI–Rid at the input, the gain A = 60 dB = 1000, and the divider Ro–RL at the output: Av = [Rid/(Rid + RI)]·A·[RL/(RL + Ro)]; ii = vi/(RI + Rid), io = vo/RL; AP = Po/Pi = Av·Ai.",
+"assume": [
+"AP is taken as Av·Ai (source voltage and source current), the textbook definition of power gain from vi and ii.",
+"RI = 5 kΩ and RL = 600 Ω are given in the statement; Rid = 1 MΩ, Ro = 25 Ω and A = 60 dB are the parameters listed under it."
+],
+"circuit": "Fig. P10.38 (p.579): an amplifier model: signal source vi in series with RI drives the amplifier input resistance Rid (voltage vid across it); the output is a dependent source A·vid in series with Ro driving the load RL (Rid = 1 MΩ, Ro = 25 Ω, A = 60 dB; RI = 5 kΩ, RL = 600 Ω)."
+},
+"10.39": {
+"number": "10.39",
+"section": "10.6",
+"modules": [
+"m02"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"(a) overall gain Av",
+"5.929"
+],
+[
+"(a) amplitude of vi for 15 V p-p at vo",
+"VI = 7.5 V/Av = 1.265 V"
+],
+[
+"(b) io, vo for 0.5 W in RL",
+"io = 28.9 mA, vo = 17.32 V (peak values)"
+],
+[
+"(b) power dissipated in the amplifier model",
+"in Ro: 0.8333 W; in Rid: 427.0 μW; total ≈ 0.8338 W (the dependent source delivers 1.333 W)"
+]
+],
+"how": "Av = [Rid/(Rid + RI)]·A·[RL/(RL + Ro)] with RI = 5 kΩ, RL = 600 Ω (Problem 10.38); for 0.5 W in RL the load current is √(PL/RL) and the amplifier dissipates io²·Ro in its output resistance plus vid²/Rid in its input resistance.",
+"assume": [
+"The statement says the amplifier is “designed to match” the source and load of Problem 10.38, but its listed Ro = 1 kΩ is not 600 Ω: the load RL = 600 Ω is kept.",
+"Powers are for sinusoidal peak amplitudes: the 0.5 W is taken as the power in RL with io, vo as the rms-equivalent quantities (the ratios do not change).",
+"“Power dissipated in the amplifier” is read as the loss in the model resistances Ro and Rid; the dependent source supplies it."
+],
+"circuit": "Fig. P10.38 (p.580): an amplifier model: signal source vi in series with RI drives the amplifier input resistance Rid (voltage vid across it); the output is a dependent source A·vid in series with Ro driving the load RL (Rid = 5 kΩ, Ro = 1 kΩ, A = 30 dB)."
 },
 "10.40": {
 "number": "10.40",
@@ -1187,7 +1353,8 @@
 ]
 ],
 "how": "The same current flows in RL and Rout: P ∝ R, so Rout/RL ≤ 2 W/100 W.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.41": {
 "number": "10.41",
@@ -1204,7 +1371,8 @@
 ]
 ],
 "how": "vid = 1 mV·Rin/(Rin + 50 kΩ) ≥ 0.99 mV.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.42": {
 "number": "10.42",
@@ -1229,7 +1397,8 @@
 ]
 ],
 "how": "vid = vo/A; A = 120 dB = 10⁶.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.43": {
 "number": "10.43",
@@ -1254,7 +1423,8 @@
 ]
 ],
 "how": "vid = vo/A with A = 10^(106/20).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.44": {
 "number": "10.44",
@@ -1282,7 +1452,8 @@
 "how": "Figure P10.44 is the inverting amplifier: Av = −R2/R1, Rin = R1, Rout = 0 for the ideal op amp.",
 "assume": [
 "Figure P10.44 read from the book page: inverting amplifier."
-]
+],
+"circuit": null
 },
 "10.45": {
 "number": "10.45",
@@ -1306,7 +1477,162 @@
 "how": "As Problem 10.44: both circuits have the same gain, 10× different input resistance.",
 "assume": [
 "Figure P10.44 read from the book page: inverting amplifier."
+],
+"circuit": null
+},
+"10.46": {
+"number": "10.46",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"Voltage gain Av = −R2/R1",
+"-12.13"
+],
+[
+"Output voltage",
+"vo(t) = -0.6067 sin(4638t) V"
+],
+[
+"Input current",
+"ii(t) = vi/R1 = 66.67 sin(4638t) μA"
 ]
+],
+"how": "Ideal inverting amplifier: v− = 0, so ii = vi/R1 and vo = −R2·ii.",
+"assume": [],
+"circuit": "Fig. P10.44 (p.580): inverting amplifier: vI (source with the resistor R1) → R1 → the − input, feedback resistor R2 from the output to the − input, + input grounded; the currents iI and io are marked."
+},
+"10.47": {
+"number": "10.47",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"(a) vI = 0",
+"vO = 0"
+],
+[
+"(b) VI = 0.22 V",
+"VO = -2.2 V"
+],
+[
+"(c) vI = 0.15 sin 2500πt V",
+"vO = -1.5 sin 2500πt V"
+],
+[
+"(d) vI = 0.22 − 0.15 sin 2500πt V",
+"vO = -2.2 + 1.5 sin 2500πt V"
+],
+[
+"(e) input current iI",
+"(b) 10.0 μA; (c) 6.82 sin 2500πt μA; (d) 10.0 − 6.82 sin 2500πt μA"
+],
+[
+"(f) op-amp output current iO = vO/R2 (into R2)",
+"(b) -10.0 μA; (c) -6.82 sin 2500πt μA; (d) -10.0 + 6.82 sin 2500πt μA"
+],
+[
+"(g) v− for part (d)",
+"0 V (virtual ground)"
+]
+],
+"how": "Ideal inverting amplifier with gain −R2/R1 = −10: vO = −10·vI, iI = vI/R1, iO = vO/R2 (the only load of the output is R2), v− = v+ = 0.",
+"assume": [
+"No power-supply limits are given, so no clipping is applied.",
+"iO is the current leaving the op-amp output towards R2 (arrow direction of the figure); iO = iI by KCL at the summing node."
+],
+"circuit": "Fig. P10.44 (p.580): inverting amplifier: vI (source with the resistor R1) → R1 → the − input, feedback resistor R2 from the output to the − input, + input grounded; the currents iI and io are marked."
+},
+"10.48": {
+"number": "10.48",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 609,
+"printed": 580,
+"parts": [
+[
+"(a) vO(t)",
+"vO = 4.0 − 20.0·Vi sin 2000πt V  (= 4 − 20·Vi sin 2000πt V)"
+],
+[
+"(b) largest Vi without clipping",
+"0.4 V (the positive peak 4 + 20·Vi reaches +12 V)"
+],
+[
+"(c) vI = 0.6 + Vi sin 2000πt",
+"vO = −12 − 20·Vi sin 2000πt V: the dc output is already at the −12 V limit, so any Vi > 0 clips the negative peaks: largest undistorted Vi = 0"
+]
+],
+"how": "Gain −R2/R1 = −20; the output may swing only between the supplies (±12 V).",
+"assume": [
+"The output is assumed to reach the supply voltages exactly."
+],
+"circuit": "Fig. P10.44 (p.580): inverting amplifier: vI (source with the resistor R1) → R1 → the − input, feedback resistor R2 from the output to the − input, + input grounded; the currents iI and io are marked."
+},
+"10.49": {
+"number": "10.49",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"(a) Av = vo/vi",
+"-19.51 (25.81 dB)"
+],
+[
+"(b) with a 1.5 kΩ source resistance in series with the source",
+"Av = −R2/(R1 + Rs) = -16.49 (24.35 dB), i.e. -15.5 % smaller"
+]
+],
+"how": "The source resistance adds to R1 because the − input is a virtual ground: the input resistance of the stage is R1, so Av = −R2/(R1 + Rs).",
+"assume": [
+"Av = vo/vi with vi the open-circuit source voltage."
+],
+"circuit": "Fig. P10.44 (p.581): inverting amplifier: vI (source with the resistor R1) → R1 → the − input, feedback resistor R2 from the output to the − input, + input grounded; the currents iI and io are marked."
+},
+"10.50": {
+"number": "10.50",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"(a) vI = 0.5 + Vi sin 5000πt V",
+"vO = -5.0 − 10·Vi sin 5000πt V"
+],
+[
+"(b) largest Vi without clipping",
+"0.5 V (vO swings −5 V ∓ 10·Vi: the negative peak −5 − 10·Vi reaches −10 V)"
+],
+[
+"(c) vI = −0.25 + Vi sin 2000πt V",
+"vO = 2.5 − 10·Vi sin 2000πt V; largest Vi = 0.75 V (the positive peak 2.5 + 10·Vi reaches +10 V)"
+]
+],
+"how": "Gain −R2/R1 = −10, outputs limited to ±10 V.",
+"assume": [],
+"circuit": "Fig. P10.44 (p.581): inverting amplifier: vI (source with the resistor R1) → R1 → the − input, feedback resistor R2 from the output to the − input, + input grounded; the currents iI and io are marked."
 },
 "10.52": {
 "number": "10.52",
@@ -1334,7 +1660,8 @@
 "how": "|Av| = R2/R1: the largest gain has R2 +5 % and R1 −5 %, the smallest the reverse; Rin = R1 ± 5 %.",
 "assume": [
 "Same circuit as Problem 10.44 (Figure P10.44)."
-]
+],
+"circuit": null
 },
 "10.53": {
 "number": "10.53",
@@ -1362,7 +1689,8 @@
 "how": "|Av| = R2/R1 with Rin = R1; R2 taken from the nearest value of the E96 table.",
 "assume": [
 "Appendix A 1 % table taken as the E96 series."
-]
+],
+"circuit": null
 },
 "10.54": {
 "number": "10.54",
@@ -1390,7 +1718,8 @@
 "how": "As Problem 10.53.",
 "assume": [
 "E96 series."
-]
+],
+"circuit": null
 },
 "10.55": {
 "number": "10.55",
@@ -1418,7 +1747,8 @@
 "how": "As Problem 10.53.",
 "assume": [
 "E96 series."
-]
+],
+"circuit": null
 },
 "10.59": {
 "number": "10.59",
@@ -1436,7 +1766,126 @@
 ]
 ],
 "how": "Transresistance amplifier (virtual ground): vO = −iS·R, so R = 5 V/2.5 μA; the 100 kΩ source resistance does not matter.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"10.60": {
+"number": "10.60",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"Voltage gain Av = 1 + R2/R1",
+"92.46 = 39.32 dB"
+],
+[
+"Input resistance",
+"∞ (ideal op amp: ii = 0)"
+],
+[
+"Output resistance",
+"0 (ideal op amp)"
+]
+],
+"how": "Ideal noninverting amplifier (Jaeger Eq. 10.53 and the examples of §10.9).",
+"assume": [],
+"circuit": "Fig. P10.60 (p.581): noninverting amplifier: vi drives the + input, R2 from the output to the − input and R1 from the − input to ground; the input current ii and the output current io are marked."
+},
+"10.61": {
+"number": "10.61",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"vo(t) = (1 + R2/R1)·vi",
+"vo(t) = 0.4004 sin 9125t V (gain 10.01)"
+]
+],
+"how": "Ideal noninverting amplifier.",
+"assume": [],
+"circuit": "Fig. P10.60 (p.581): noninverting amplifier: vi drives the + input, R2 from the output to the − input and R1 from the − input to ground; the input current ii and the output current io are marked."
+},
+"10.62": {
+"number": "10.62",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 610,
+"printed": 581,
+"parts": [
+[
+"(a) R1 = 30.0 kΩ, R2 = 120.0 kΩ",
+"Av = 5.0 (13.98 dB); Rin = ∞; Rout = 0"
+],
+[
+"(b) R1 = 18.0 kΩ, R2 = 300.0 kΩ",
+"Av = 17.67 (24.94 dB); Rin = ∞; Rout = 0"
+],
+[
+"(c) R1 = 3.3 kΩ, R2 = 390.0 kΩ",
+"Av = 119.2 (41.52 dB); Rin = ∞; Rout = 0"
+]
+],
+"how": "Av = 1 + R2/R1, infinite input resistance and zero output resistance for the ideal op amp.",
+"assume": [],
+"circuit": "Fig. P10.60 (p.581): noninverting amplifier: vi drives the + input, R2 from the output to the − input and R1 from the − input to ground; the input current ii and the output current io are marked."
+},
+"10.63": {
+"number": "10.63",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 611,
+"printed": 582,
+"parts": [
+[
+"(a) vI = 0",
+"vO = 0"
+],
+[
+"(b) VI = 0.33 V",
+"VO = 5.73 V"
+],
+[
+"(c) vi = 0.18 sin 3250πt V",
+"vO = 3.125 sin 3250πt V"
+],
+[
+"(d) vI = 0.33 − 0.18 sin 3250πt V",
+"vO = 5.73 − 3.125 sin 3250πt V"
+],
+[
+"(e) input current iI",
+"0 for all three (ideal op amp, infinite input resistance)"
+],
+[
+"(f) op-amp output current iO = vO/(R1 + R2)",
+"(b) 15.0 μA; (c) 8.182 sin 3250πt μA; (d) 15.0 − 8.182 sin 3250πt μA"
+],
+[
+"(g) v− for part (d)",
+"v− = v+ = vI = 0.33 − 0.18 sin 3250πt V"
+]
+],
+"how": "Ideal noninverting amplifier: vO = (1 + R2/R1)·vI = 17.36·vI; the only load of the output is R2 + R1 to ground.",
+"assume": [
+"No supply limits are given, so no clipping is applied."
+],
+"circuit": "Fig. P10.60 (p.582): noninverting amplifier: vi drives the + input, R2 from the output to the − input and R1 from the − input to ground; the input current ii and the output current io are marked."
 },
 "10.65": {
 "number": "10.65",
@@ -1464,7 +1913,8 @@
 "how": "Av = 1 + R2/R1; R2 from the E96 table.",
 "assume": [
 "R1 = 10 kΩ chosen; other pairs also work."
-]
+],
+"circuit": null
 },
 "10.66": {
 "number": "10.66",
@@ -1492,7 +1942,8 @@
 "how": "The ideal noninverting amplifier has infinite input resistance, so the 100 kΩ is set by a resistor R3 to ground at the input; Av = 1 + R2/R1.",
 "assume": [
 "R1 = 10 kΩ chosen."
-]
+],
+"circuit": null
 },
 "10.67": {
 "number": "10.67",
@@ -1520,7 +1971,153 @@
 "how": "Av = 1 + R2/R1; R2 from the E96 table.",
 "assume": [
 "R1 = 1 kΩ chosen."
+],
+"circuit": null
+},
+"10.69": {
+"number": "10.69",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 611,
+"printed": 582,
+"parts": [
+[
+"Output voltage",
+"vo(t) = −R3·(v1/R1 + v2/R2) = −1.88 sin 10000t − 0.235 sin 3770t V"
+],
+[
+"Voltage at the summing junction",
+"v− = 0 (virtual ground)"
 ]
+],
+"how": "Ideal summing amplifier: v− = 0, the currents v1/R1 and v2/R2 add and flow through R3.",
+"assume": [],
+"circuit": "Fig. P10.69 (p.582): inverting summing amplifier: v1 through R1 and v2 through R2 to the − input v−, R3 from the output to the − input, + input grounded."
+},
+"10.70": {
+"number": "10.70",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 611,
+"printed": 582,
+"parts": [
+[
+"(a) 0110, vI = 2 sin 4000πt V",
+"vO = −(1/4 + 1/8)·vI = -0.75 sin 4000πt V"
+],
+[
+"(b) 1011",
+"vO = −(1/2 + 1/8 + 1/16)·vI = -1.375 sin 4000πt V"
+],
+[
+"(c) all 16 codes: vO amplitude (V) = −(n/16)·2 V, n = 8b1 + 4b2 + 2b3 + b4",
+"0000: +0, 0001: -0.125, 0010: -0.25, 0011: -0.375, 0100: -0.5, 0101: -0.625, 0110: -0.75, 0111: -0.875, 1000: -1, 1001: -1.125, 1010: -1.25, 1011: -1.375, 1100: -1.5, 1101: -1.625, 1110: -1.75, 1111: -1.875"
+]
+],
+"how": "Each switch connects its resistor to vI (bi = 1) or to 0 V (bi = 0); the summing amplifier with feedback resistor R gives vO = −(b1·R/2R + b2·R/4R + b3·R/8R + b4·R/16R)·vI = −(n/16)·vI.",
+"assume": [
+"b1 is the bit of the 2R resistor (the most significant) and b4 the bit of the 16R resistor, as drawn."
+],
+"circuit": "Fig. P10.70 (p.582): summing amplifier with feedback resistor R and four input resistors 2R, 4R, 8R, 16R, each switched by a bit b1…b4 either to 0 V (bi = 0) or to the input vI (bi = 1)."
+},
+"10.72": {
+"number": "10.72",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"(a) gain Av = vo/(v1 − v2)",
+"−10"
+],
+[
+"(b) input resistance presented to v2",
+"R + 10R = 11R = 110.0 kΩ"
+],
+[
+"(c) input resistance at v1",
+"R = 10.0 kΩ (for v2 = 0; in general i1 depends on v2 also)"
+],
+[
+"(d) v1 = 3 V, v2 = 1.5 cos 8300πt V",
+"vO = −10(v1 − v2) = -30.0 + 15 cos 8300πt V"
+],
+[
+"(e) v1 = 3 − 1.5 cos 8300πt, v2 = 1.5 sin 8300πt",
+"vO = −10(3 − 1.5 cos 8300πt − 1.5 sin 8300πt) = −30 + 15 cos 8300πt + 15 sin 8300πt V = −30 + 21.2 sin(8300πt + 45°) V"
+]
+],
+"how": "Difference amplifier with R1 = R3 = R and R2 = R4 = 10R: vO = −(R2/R1)(v1 − v2) = −10(v1 − v2) (Jaeger Eq. 10.64); Rin2 = R + 10R and Rin1 = R for v2 = 0.",
+"assume": [
+"Av is defined as vo/(v1 − v2), so it is negative for this connection (v1 on the inverting side)."
+],
+"circuit": "Fig. P10.72 (p.583): difference amplifier: v1 through R to the − input and 10R feedback from the output to the − input; v2 through R to the + input with 10R from the + input to ground."
+},
+"10.73": {
+"number": "10.73",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"(a) node voltages",
+"v1 = 3.1 V, v2 = 3.2 V, v+ = v− = 2.9091 V, vO = 1.0 V"
+],
+[
+"(b) output current IO (into the 10R feedback resistor, leaving the output)",
+"IO = (vO − v−)/10R = -1.909 μA"
+],
+[
+"(c) currents entering from v1 and v2",
+"i1 = (v1 − v−)/R = 1.909 μA; i2 = v2/11R = 2.909 μA"
+]
+],
+"how": "Ideal op amp: v+ = v2·10R/(11R) = v−; vO = −10(V1 − V2); currents from Ohm's law.",
+"assume": [
+"IO is the current delivered by the op-amp output through the feedback resistor (no other load)."
+],
+"circuit": "Fig. P10.72 (p.583): difference amplifier with R = 100 kΩ: v1 through R to the − input and 10R feedback, v2 through R to the + input with 10R to ground."
+},
+"10.74": {
+"number": "10.74",
+"section": "10.9",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 612,
+"printed": 583,
+"parts": [
+[
+"vO = −10(v1 − v2)",
+"vO = −20 sin 2000πt V (the common-mode term 2 sin 1000πt cancels)"
+],
+[
+"i1 = (v1 − v−)/R with v− = (10/11)v2",
+"i1 = 12.12 sin 1000πt μA + 133.3 sin 2000πt μA"
+],
+[
+"i2 = v2/(11R)",
+"i2 = 12.12 sin 1000πt μA"
+]
+],
+"how": "Ideal difference amplifier with R = 15 kΩ and 10R: v1 − v2 = 2 sin 2000πt, so vO = −10(v1 − v2); v+ = v− = (10/11)v2 gives the input currents.",
+"assume": [],
+"circuit": "Fig. P10.72 (p.583): difference amplifier with R = 15 kΩ: v1 through R to the − input and 10R feedback, v2 through R to the + input with 10R to ground; i1 and i2 are the currents drawn from the sources."
 },
 "10.75": {
 "number": "10.75",
@@ -1551,7 +2148,8 @@
 "how": "(a): s² + 51s + 50 = (s + 1)(s + 50) and s² + 13000s + 3×10⁷ = (s + 3000)(s + 10000); (b): numerator (s + 1)(s + 50), denominator roots found numerically (rebuilt to check).",
 "assume": [
 "Part (b): Av(s) = −10⁵(s² + 51s + 50)/(s⁵ + 10³s⁴ + 5×10⁴s³ + 2×10⁴s² + 1.3×10⁴s + 3×10⁷), as printed; its denominator has a complex pair in the right half-plane (unstable), which is what the printed coefficients give."
-]
+],
+"circuit": null
 },
 "10.76": {
 "number": "10.76",
@@ -1580,7 +2178,8 @@
 ]
 ],
 "how": "Midband: s ≫ 20π, s ≪ 2π×10⁴: Av = 2π×10⁷/(2π×10⁴) = 10³. The −3 dB frequencies are found by a numerical sweep and agree with the pole frequencies.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.77": {
 "number": "10.77",
@@ -1613,7 +2212,8 @@
 ]
 ],
 "how": "Av(0) = 2π×10⁶/200π = 10⁴; single pole at 200π rad/s = 100 Hz.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.78": {
 "number": "10.78",
@@ -1646,7 +2246,8 @@
 ]
 ],
 "how": "For s ≫ 200π the gain is 10⁴; zero at the origin and pole at 200π rad/s = 100 Hz (Eq. 10.78).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.79": {
 "number": "10.79",
@@ -1679,7 +2280,8 @@
 ]
 ],
 "how": "ω0 = √10¹⁴ = 10⁷ rad/s, ω0/Q = 10⁵ rad/s so Q = 100; at ω0 |Av| = 5×10⁶/10⁵ = 50. Cutoffs by a numerical sweep; fL·fH = f0².",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.80": {
 "number": "10.80",
@@ -1712,7 +2314,8 @@
 ]
 ],
 "how": "Numerator zeros on the jω axis at ω = 10⁶ rad/s (gain 0); far from it Av → −20. Edges found numerically; BW = ω0/(2πQ) = 1.59 kHz.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.81": {
 "number": "10.81",
@@ -1745,7 +2348,8 @@
 ]
 ],
 "how": "Between 25 Hz and 100 kHz: Av ≈ 4π²×10¹⁴/(4π²×10¹¹) = 10³. The two low poles are close, so the exact lower −3 dB point (numerical) lies a little above 25 Hz.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.85": {
 "number": "10.85",
@@ -1770,7 +2374,8 @@
 ]
 ],
 "how": "Evaluate Av(jω) of Problem 10.76 (complex arithmetic; checked against the pole-zero product form).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.86": {
 "number": "10.86",
@@ -1795,7 +2400,8 @@
 ]
 ],
 "how": "Evaluate Av(jω) of Problem 10.78.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.87": {
 "number": "10.87",
@@ -1820,7 +2426,8 @@
 ]
 ],
 "how": "Evaluate Av(jω) of Problem 10.77.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.88": {
 "number": "10.88",
@@ -1845,7 +2452,8 @@
 ]
 ],
 "how": "Evaluate Av(jω) of Problem 10.79.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.89": {
 "number": "10.89",
@@ -1870,7 +2478,8 @@
 ]
 ],
 "how": "Evaluate Av(jω) of Problem 10.80.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.90": {
 "number": "10.90",
@@ -1895,7 +2504,8 @@
 ]
 ],
 "how": "Evaluate Av(jω) of Problem 10.81.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.91": {
 "number": "10.91",
@@ -1916,7 +2526,8 @@
 ]
 ],
 "how": "Single-pole low-pass amplifier, Eq. (10.66).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.92": {
 "number": "10.92",
@@ -1937,7 +2548,8 @@
 ]
 ],
 "how": "Band-pass amplifier = high-pass × low-pass; midband gain A0 requires ωH ≫ ωL.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.94": {
 "number": "10.94",
@@ -1960,7 +2572,8 @@
 "how": "No waveform distortion needs equal gain and a time delay td constant: phase = −ω·td. At 500 Hz 10° = 360°·500·td gives td = 55.6 μs.",
 "assume": [
 "The phase shifts are taken as lags (delays)."
-]
+],
+"circuit": null
 },
 "10.95": {
 "number": "10.95",
@@ -1981,7 +2594,8 @@
 ]
 ],
 "how": "Ex. 10.8: Av = [R2/(R1+R2)]/(1 + s/ωH), ωH = 1/[(R1‖R2)C].",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.96": {
 "number": "10.96",
@@ -2002,7 +2616,8 @@
 ]
 ],
 "how": "Same formulas as Problem 10.95.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.97": {
 "number": "10.97",
@@ -2029,7 +2644,32 @@
 "how": "Loss at low frequency = −20·log₁₀[R2/(R1+R2)] ≤ 0.5 dB gives R2 ≥ 16.9·R1; then C = 1/[2π(R1‖R2)fH].",
 "assume": [
 "Standard values from the 5 % series (620 Ω and 11 kΩ)."
+],
+"circuit": null
+},
+"10.98": {
+"number": "10.98",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"(a) R1 = 2.0 kΩ, R2 = 10.0 kΩ, C = 1.0 nF",
+"low-frequency gain −R2/R1 = -5.0 (13.98 dB); fH = 1/(2πR2C) = 15.92 kHz"
+],
+[
+"(b) R1 = 3.3 kΩ, R2 = 56.0 kΩ, C = 100.0 pF",
+"low-frequency gain −R2/R1 = -16.97 (24.59 dB); fH = 1/(2πR2C) = 28.42 kHz"
 ]
+],
+"how": "Low-pass inverting amplifier (Jaeger Fig. 10.32): Av(s) = −(R2/R1)/(1 + sR2C), so the low-frequency gain is −R2/R1 and the −3 dB frequency fH = 1/(2πR2C).",
+"assume": [
+"The gain in dB is 20 log|Av|; the minus sign (inversion) is shown separately."
+],
+"circuit": "Fig. 10.32 (p.585): low-pass amplifier: vi through R1 to the − input; the feedback is R2 in parallel with C from the output to the − input; + input grounded."
 },
 "10.99": {
 "number": "10.99",
@@ -2052,7 +2692,8 @@
 "how": "Active low-pass amplifier (inverting, C across R2): Av = −(R2/R1)/(1 + sR2C); Rin = R1, |Av| = 10, fH = 1/(2πR2C).",
 "assume": [
 "Circuit: inverting amplifier with C in parallel with R2 (Section 10.10.2/10.10.5)."
-]
+],
+"circuit": null
 },
 "10.101": {
 "number": "10.101",
@@ -2073,7 +2714,8 @@
 ]
 ],
 "how": "Ex. 10.9: Av = [R2/(R1+R2)]·s/(s + ωL), ωL = 1/[(R1 + R2)C]. (The statement says \"upper\" but only the lower cutoff exists.)",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.102": {
 "number": "10.102",
@@ -2094,7 +2736,8 @@
 ]
 ],
 "how": "Same formulas as Problem 10.101.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "10.103": {
 "number": "10.103",
@@ -2121,7 +2764,30 @@
 "how": "Loss = −20·log₁₀[R2/(R1+R2)] ≤ 0.5 dB gives R2 ≥ 16.9·R1; C = 1/[2π(R1 + R2)fL].",
 "assume": [
 "Standard values from the 5 % series."
+],
+"circuit": null
+},
+"10.104": {
+"number": "10.104",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"(a) R1 = 4.2 kΩ, R2 = 20.0 kΩ, C = 560.0 pF",
+"high-frequency gain −R2/R1 = -4.762 (13.56 dB); fL = 1/(2πR1C) = 67.67 kHz"
+],
+[
+"(b) R1 = 2.7 kΩ, R2 = 56.0 kΩ, C = 2.0 nF",
+"high-frequency gain −R2/R1 = -20.74 (26.34 dB); fL = 1/(2πR1C) = 29.47 kHz"
 ]
+],
+"how": "High-pass inverting amplifier (Jaeger Fig. 10.33): Av(s) = −(R2/R1)·sR1C/(1 + sR1C): the high-frequency gain is −R2/R1 and the −3 dB frequency fL = 1/(2πR1C).",
+"assume": [],
+"circuit": "Fig. 10.33 (p.585): high-pass amplifier: vi through C in series with R1 to the − input; feedback resistor R2 from the output to the − input; + input grounded."
 },
 "10.105": {
 "number": "10.105",
@@ -2142,7 +2808,193 @@
 ]
 ],
 "how": "Active high-pass amplifier (inverting, C in series with R1): Rin(high f) = R1, |Av| = R2/R1 = 10, fL = 1/(2πR1C) (same form as Example 10.10).",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"10.107": {
+"number": "10.107",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"vo(t) = −(1/RC)∫vi dt + vo(0)",
+"vo(t) = 0.2653·(cos 2000πt − 1) V = -0.2653 + 0.2653 cos 2000πt V"
+],
+[
+"RC",
+"60.0 μs; 1/RC = 16667.0 s⁻¹"
+]
+],
+"how": "Ideal integrator (Jaeger Fig. 10.34): vo(t) = vo(0) − (1/RC)∫ vi dτ; with vi = 0.1 sin ωt, ω = 2000π, vo = (0.1/(RCω))(cos ωt − 1).",
+"assume": [
+"The dc offset −0.265 V comes from vo(0) = 0: the output starts at 0 V and swings below it."
+],
+"circuit": "Fig. 10.34 (p.585): integrator: vi through R to the − input and the capacitor C from the output to the − input; + input grounded."
+},
+"10.108": {
+"number": "10.108",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"(a) vo(0) = 0",
+"for 0 ≤ t ≤ 1 ms: vo(t) = −5 V × (t/1 ms) (a ramp falling 5000.0 V/s = 5 V/ms to -5.0 V at t = 1 ms); for t > 1 ms the input is 0, so vo stays at -5.0 V"
+],
+[
+"(b) vo(0) = −2.5 V",
+"the same ramp starting from −2.5 V: vo(t) = −2.5 − 5·(t/1 ms) V down to -7.5 V at t = 1 ms, then constant at -7.5 V"
+]
+],
+"how": "RC = 10 kΩ × 0.1 μF = 1 ms, so a 5 V pulse makes the output fall 5 V per millisecond (vo = vo(0) − (1/RC)∫vi dt); after the pulse the input is 0 and the capacitor holds its charge.",
+"assume": [
+"The op amp is ideal with no supply limit.",
+"The waveform asked for is described by its segments and levels."
+],
+"circuit": "Fig. 10.34 (p.585): integrator: vi through R to the − input and the capacitor C from the output to the − input; + input grounded."
+},
+"10.111": {
+"number": "10.111",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 614,
+"printed": 585,
+"parts": [
+[
+"vo(t) = −RC·dvi/dt",
+"vo(t) = 67.86 sin 3000πt V  (RC = 2.4 ms, ωRC = 22.62)"
+]
+],
+"how": "Ideal differentiator (Jaeger Fig. 10.33/10.35): vo = −RC·dvi/dt; for vi = 3 cos ωt, vo = 3ωRC sin ωt.",
+"assume": [
+"The result (67.9 V amplitude) shows that the ideal differentiator would need far larger supplies than a real op amp has: the high-pass of the practical circuit limits it."
+],
+"circuit": "Fig. 10.33 (p.585): differentiator: vi through C to the − input, feedback resistor R from the output to the − input; + input grounded (R and C are the values of the statement)."
+},
+"10.114": {
+"number": "10.114",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 615,
+"printed": 586,
+"parts": [
+[
+"(a) output current IO = VEE/R (the source node is held at 0 V)",
+"IO = 0.5 A"
+],
+[
+"(b) VGS and minimum VDD",
+"VGS = VTN + √(2·ID/Kn) = 4.5 V; saturation needs VDS ≥ VGS − VTN = 2.0 V, so VDD(min) = 2.0 V (source at 0 V)"
+],
+[
+"(c) power ratings",
+"resistor: IO²R = 5.0 W; FET at VDD(min): ID·VDS = 1.0 W (it grows as 0.5 A × VDD for a higher supply)"
+]
+],
+"how": "The op amp (+ input grounded) forces the MOSFET source node to 0 V (virtual ground), so IO = ID = VEE/R, independent of the transistor; with ID = (Kn/2)(VGS − VTN)² the gate voltage follows.",
+"assume": [
+"The drain is assumed connected directly to VDD; Kn follows ID = (Kn/2)(VGS − VTN)² (Jaeger)."
+],
+"circuit": "Fig. P10.114 (p.586): an op amp with + input grounded and its output driving the gate of an NMOS transistor whose drain goes to VDD and whose source is fed back to the − input and connected through R to −VEE; the output current IO is the drain current."
+},
+"10.115": {
+"number": "10.115",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 615,
+"printed": 586,
+"parts": [
+[
+"(a) IO = IC = βF/(βF + 1)·VEE/R",
+"IE = 1.0 A, IO = 0.9677 A (IB = 32.3 mA)"
+],
+[
+"(b) op-amp output voltage = VBE (emitter at 0 V)",
+"VBE = VT·ln(IC/IS) = 0.7475 V (VT = 25 mV)"
+],
+[
+"(c) minimum VCC for the forward-active region",
+"VCB ≥ 0: VC ≥ VB = 0.748 V, so VCC(min) ≈ 0.748 V"
+],
+[
+"(d) power ratings",
+"resistor: IE²R = 15.0 W; transistor at VCC = 15 V: IC·VCE + IB·VBE = 14.54 W"
+]
+],
+"how": "The op amp holds the emitter at 0 V, so IE = VEE/R = 1 A and IC = βF/(βF + 1)·IE; the base is VBE above the emitter.",
+"assume": [
+"VT = 25 mV and the collector is tied directly to VCC; VCE = VCC because the emitter is at 0 V."
+],
+"circuit": "Fig. P10.115 (p.586): an op amp with + input grounded and its output driving the base of an npn transistor whose collector goes to VCC and whose emitter is fed back to the − input and connected through R to −VEE; the output current IO is the collector current."
+},
+"10.117": {
+"number": "10.117",
+"section": "10.10",
+"modules": [
+"m03"
+],
+"pdf": 615,
+"printed": 586,
+"parts": [
+[
+"nominal low-frequency gain and cutoff",
+"|Av0| = R2/R1 = 33.0 (30.37 dB); fH = 4.823 kHz"
+],
+[
+"worst-case gain",
+"27.0 to 40.33 (28.63 to 32.11 dB)"
+],
+[
+"worst-case cutoff frequency",
+"3.654 kHz to 10.72 kHz"
+]
+],
+"how": "Gain −R2/R1 and fH = 1/(2πR2C); the extremes occur at the corners of the tolerance box: gain largest for R2 high and R1 low, fH largest for R2 and C both low (R2·C smallest).",
+"assume": [
+"All 8 tolerance corners were evaluated: the extremes above are the largest and smallest values."
+],
+"circuit": "Fig. P10.117 (p.586): low-pass amplifier: vi through R1 to the − input; the feedback is R2 in parallel with C from the output to the − input; + input grounded."
+},
+"11.1": {
+"number": "11.1",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) A = ∞",
+"T = inf; Aideal = 1/β = 8.0; Av = A/(1 + Aβ) = 8.0; FGE = (Av − Aideal)/Aideal = 0 %"
+],
+[
+"(b) A = 84 dB",
+"T = 1981.1; Aideal = 1/β = 8.0; Av = A/(1 + Aβ) = 7.996; FGE = (Av − Aideal)/Aideal = -0.05045 %"
+],
+[
+"(c) A = 20",
+"T = 2.5; Aideal = 1/β = 8.0; Av = A/(1 + Aβ) = 5.7143; FGE = (Av − Aideal)/Aideal = -28.57 %"
+]
+],
+"how": "Feedback amplifier equations (Jaeger Eq. 11.4): T = Aβ, Av = A/(1 + Aβ) = Aideal/(1 + 1/T) with Aideal = 1/β = 8; FGE = (Av − Aideal)/Aideal = −1/(1 + T).",
+"assume": [
+"A in dB is converted with A = 10^(dB/20)."
+],
+"circuit": "Fig. 11.1 (p.673): classic feedback amplifier: a summing block (vd = vi − vf) feeds the amplifier A, whose output vo drives the load and the feedback network β that returns vf = β·vo."
 },
 "11.3": {
 "number": "11.3",
@@ -2159,7 +3011,8 @@
 ]
 ],
 "how": "FGE = 1/(1 + T) < 0.2 % → T > 499. The ideal gain (50 dB) does not matter for the fractional error.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.4": {
 "number": "11.4",
@@ -2184,7 +3037,8 @@
 ]
 ],
 "how": "Av = A/(1 + Aβ), dAv/dA = 1/(1 + Aβ)², so S = 1/(1 + Aβ); T = 10⁵ × 0.01 = 1000.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.5": {
 "number": "11.5",
@@ -2229,7 +3083,8 @@
 ]
 ],
 "how": "Eqs. (11.4)–(11.6) with β = R1/(R1 + R2); checked with an exact nodal solution of the circuit.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.6": {
 "number": "11.6",
@@ -2274,7 +3129,36 @@
 ]
 ],
 "how": "As Problem 11.5.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.8": {
+"number": "11.8",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"(a) feedback factor β = R1/(R1 + R2)",
+"0.009901"
+],
+[
+"(b) loop gain T = Aβ and closed-loop gain Av = A/(1 + T)",
+"T = 394.17, Av = 100.74 (ideal 1 + R2/R1 = 101.0)"
+],
+[
+"(c) gain error GE = Av − Aideal, FGE = GE/Aideal",
+"GE = -0.2556, FGE = -0.2531 %"
+]
+],
+"how": "Noninverting (series-shunt) amplifier: β = R1/(R1 + R2); T = Aβ; Av = A/(1 + Aβ).",
+"assume": [
+"The statement gives only the open-loop gain A = 92 dB (no Rid or Ro), so the op amp is taken as having infinite input resistance and zero output resistance; then RI = 0 and RL do not change Av."
+],
+"circuit": "Fig. P11.8 (p.673): part (a): noninverting voltage amplifier: vI (with source resistance RI) drives the + input; R2 from the output to the − input and R1 from the − input to ground; load RL (four feedback amplifiers (a) to (d) are drawn)."
 },
 "11.9": {
 "number": "11.9",
@@ -2319,7 +3203,34 @@
 ]
 ],
 "how": "Eq. (11.17): Av = −(R2/R1)·T/(1 + T), T = Aβ, β = R1/(R1 + R2).",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.10": {
+"number": "11.10",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 702,
+"printed": 673,
+"parts": [
+[
+"β = R1/(R1 + R2)",
+"0.009901"
+],
+[
+"loop gain T = Aβ",
+"99.01"
+],
+[
+"closed-loop gain Av = −(R2/R1)·T/(1 + T)",
+"-99.0 (ideal −100.0; FGE = -1.0 %)"
+]
+],
+"how": "Inverting amplifier with finite gain (Jaeger Eq. 11.14): β = R1/(R1 + R2), Av = −(R2/R1)/(1 + 1/T).",
+"assume": [],
+"circuit": "Fig. 11.3 (p.673): inverting amplifier with a finite-gain op amp A: vi through R1 to the − input (voltage vid across the inputs), R2 from the output to the − input, + input grounded."
 },
 "11.11": {
 "number": "11.11",
@@ -2364,7 +3275,8 @@
 ]
 ],
 "how": "As Problem 11.9.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.12": {
 "number": "11.12",
@@ -2381,7 +3293,8 @@
 ]
 ],
 "how": "FGE = 1/(1 + Aβ) ≤ 0.15 % with β = 1/Av(ideal) = 1/63.1.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.13": {
 "number": "11.13",
@@ -2398,7 +3311,44 @@
 ]
 ],
 "how": "Inverting: β = R1/(R1 + R2) = 1/(1 + |Av|) = 1/200.5; FGE = 1/(1 + Aβ) ≤ 0.1 %.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.15": {
+"number": "11.15",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 703,
+"printed": 674,
+"parts": [
+[
+"output voltage vo (closed-loop gain Av)",
+"4.7977 V (Av = 47.977)"
+],
+[
+"i1 = v1/R1 (current in R1)",
+"99.95 μA"
+],
+[
+"i2 = (vo − v1)/R2 (current in R2)",
+"99.95 μA"
+],
+[
+"i− = vid/Rid (into the − input)",
+"47.98 pA"
+],
+[
+"i+",
+"47.98 pA (the same current flows out of the + input side through Rid: i+ = −i−... the input current of the + terminal equals i−)"
+]
+],
+"how": "Solve the loop: vo = A·vid, v1 = vo·R1/(R1 + R2), vid = vx − v1; then the currents from Ohm's law. The exact nodal solution of the circuit gives the same values.",
+"assume": [
+"i+ is the current entering the + input, equal in magnitude to i− because the current flows through Rid from the + to the − terminal; the result is tiny (nanoamps)."
+],
+"circuit": "Fig. 11.6 (p.674): noninverting amplifier with a finite-gain op amp (input resistance Rid between the inputs, gain A·vid): vx drives the + input; R2 from the output to the − input (current i2) and R1 from the − input to ground (current i1); i− and i+ are the input currents."
 },
 "11.17": {
 "number": "11.17",
@@ -2427,7 +3377,8 @@
 ]
 ],
 "how": "Av = A/(1+T), Rin = Rid(1+T), Rout = Ro/(1+T)‖(R1+R2); checked with an exact nodal analysis.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.18": {
 "number": "11.18",
@@ -2456,7 +3407,8 @@
 ]
 ],
 "how": "As Problem 11.17.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.19": {
 "number": "11.19",
@@ -2485,7 +3437,8 @@
 ]
 ],
 "how": "Av = −(R2/R1)T/(1+T), Rin = R1 + Rid‖[R2/(1+A)] (11.37), Rout = Ro/(1+T)‖(R1+R2); checked with an exact nodal analysis.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.20": {
 "number": "11.20",
@@ -2514,7 +3467,8 @@
 ]
 ],
 "how": "As Problem 11.19.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.21": {
 "number": "11.21",
@@ -2543,7 +3497,8 @@
 ]
 ],
 "how": "β = 1/200, T = 5×10⁴/200 = 250.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.22": {
 "number": "11.22",
@@ -2576,7 +3531,36 @@
 ]
 ],
 "how": "Noninverting stage with β = 1/200 (the best choice for Rin).",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.23": {
+"number": "11.23",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"Thévenin voltage (open circuit) per volt of vs",
+"Vth = -17.642·vs"
+],
+[
+"Thévenin resistance",
+"Rth = 0.06701 Ω"
+],
+[
+"Norton equivalent",
+"In = Vth/Rth = -263.29·vs (current source) in parallel with 0.06701 Ω"
+]
+],
+"how": "Inverting amplifier with finite A, Rid and Ro: open-circuit voltage gain ≈ −(R2/R1)·T/(1 + T) and output resistance Rth = Ro/(1 + Aβ) with β = R1/(R1 + R2) (Jaeger §11.4); the Norton current is Vth/Rth.",
+"assume": [
+"The two-terminal network is taken between the op-amp output and ground, with vs inside the box as drawn (is = vs/R1 is the source current)."
+],
+"circuit": "Fig. P11.23 (p.675): inverting amplifier in a box (a two-terminal network): source vs with current is through R1 to the − input, R2 from the output to the − input, + input grounded; the terminals of the network are the op-amp output and ground."
 },
 "11.25": {
 "number": "11.25",
@@ -2597,7 +3581,8 @@
 ]
 ],
 "how": "Worst case: R2 low and R1 high; total gain error = 1 − (Av,actual/Av,ideal) ≤ 1 %, solved numerically with Eq. (11.17). A 0.1 % resistor is therefore adequate.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.26": {
 "number": "11.26",
@@ -2618,7 +3603,8 @@
 ]
 ],
 "how": "As Problem 11.25 with Av = A/(1 + Aβ), β = R1/(R1+R2); total error ≤ 2 %.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.31": {
 "number": "11.31",
@@ -2649,7 +3635,8 @@
 "how": "Series feedback multiplies a port resistance by (1 + Aβ), shunt feedback divides it by (1 + Aβ); a resistive network cannot give β > 1, so the extremes use β = 1 and Aβ = A = 10⁵.",
 "assume": [
 "β ≤ 1 for a passive resistive feedback network."
-]
+],
+"circuit": null
 },
 "11.32": {
 "number": "11.32",
@@ -2670,7 +3657,56 @@
 ]
 ],
 "how": "Negative feedback can only lower a gain below its open-loop value: for the current amplifier the open-loop (short-circuit) gain is A·Rid/Ro, for the transconductance amplifier A/Ro.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.33": {
+"number": "11.33",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"closed-loop gain Av = 1 + R2/R1",
+"10.07 (20.06 dB)"
+]
+],
+"how": "Noninverting amplifier: Av = 1 + R2/R1; RI and RL do not matter for an ideal op amp.",
+"assume": [
+"The statement gives no op-amp parameters (A, Rid, Ro), so the op amp is taken as ideal: with a finite A the gain would be slightly lower."
+],
+"circuit": "Fig. P11.8 (p.675): part (a): noninverting voltage amplifier with source resistance RI, feedback divider R2 (output to − input) and R1 (− input to ground), load RL."
+},
+"11.34": {
+"number": "11.34",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 704,
+"printed": 675,
+"parts": [
+[
+"voltage gain",
+"1 + R2/R1 = 10.0 (20.0 dB)"
+],
+[
+"input resistance",
+"∞"
+],
+[
+"output resistance",
+"0"
+]
+],
+"how": "Ideal noninverting amplifier (series-shunt feedback): Av = 1 + R2/R1, Rin → ∞, Rout → 0.",
+"assume": [
+"No A, Rid or Ro are given, so the op amp is ideal and RI, RL have no effect; the finite-gain values would be Rin = Rid(1 + Aβ) and Rout = Ro/(1 + Aβ)."
+],
+"circuit": "Fig. P11.8 (p.675): part (a): noninverting voltage amplifier with source resistance RI, feedback divider R2/R1 and load RL."
 },
 "11.35": {
 "number": "11.35",
@@ -2705,7 +3741,8 @@
 "how": "Exact nodal analysis of the noninverting circuit with Rid = 30 kΩ, Ro = 5 kΩ, RL = 20 kΩ; T is the return ratio of the dependent source (it includes the loading of Rid, Ro, RL and the feedback network).",
 "assume": [
 "The textbook approximates the loaded amplifier by the Section 11.5 two-port method; the exact values are given here."
-]
+],
+"circuit": null
 },
 "11.37": {
 "number": "11.37",
@@ -2734,7 +3771,8 @@
 ]
 ],
 "how": "Rin = Rid(1 + Aβ), Rout = Ro/(1 + Aβ); differentiate with respect to A.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.42": {
 "number": "11.42",
@@ -2769,7 +3807,66 @@
 "how": "Exact nodal analysis of the inverting circuit with Rid = 30 kΩ, Ro = 5 kΩ, RL = 20 kΩ.",
 "assume": [
 "Exact values are given; the textbook uses the Section 11.6 two-port approximation."
+],
+"circuit": null
+},
+"11.44": {
+"number": "11.44",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 705,
+"printed": 676,
+"parts": [
+[
+"β(s) = R/(R + 1/sC) = sRC/(1 + sRC)",
+"RC = 240.0 μs, 1/RC = 4166.7 s⁻¹"
+],
+[
+"loop gain T(s) = A·β(s)",
+"T(s) = 19953.0·sRC/(1 + sRC) = 4.7886 s/(1 + 240.0·10⁻⁶ s)"
+],
+[
+"closed-loop gain Av(s) = −(1/sRC)/(1 + 1/T(s)) = −A/(1 + sRC(1 + A))",
+"Av(s) = −19953.0/(1 + 4.7889 s): a single pole at 0.20882 rad/s = 0.03323 Hz, dc gain −19953.0"
 ]
+],
+"how": "Integrator with a finite-gain op amp: the feedback is through C, so β(s) = sRC/(1 + sRC), T(s) = Aβ(s) and Av(s) = Aideal(s)/(1 + 1/T(s)) with Aideal(s) = −1/(sRC) (Jaeger §11.4); algebra gives Av(s) = −A/(1 + sRC(1 + A)).",
+"assume": [
+"The op-amp gain is taken as the constant A = 86 dB = 19,953 (no frequency dependence), as stated.",
+"Checked against the exact frequency response of the circuit at four frequencies."
+],
+"circuit": "Fig. 10.34 (p.676): integrator: vi through R to the − input and the capacitor C from the output to the − input; + input grounded."
+},
+"11.45": {
+"number": "11.45",
+"section": "11.1",
+"modules": [
+"m04"
+],
+"pdf": 705,
+"printed": 676,
+"parts": [
+[
+"β(s) = (1/sC... ) → β(s) = 1/(1 + sRC)",
+"RC = 200.0 μs"
+],
+[
+"loop gain T(s) = A·β(s)",
+"T(s) = 10000.0/(1 + 200.0·10⁻⁶ s)"
+],
+[
+"Av(s) = −sRC/(1 + 1/T(s)) = −A·sRC/(1 + A + sRC)",
+"Av(s) = −2.0 s/(10001.0 + 200.0·10⁻⁶ s)"
+]
+],
+"how": "Differentiator with a finite-gain op amp: β(s) = R_in... the feedback attenuation is β(s) = (1/sC)/(1/sC + R)... = 1/(1 + sRC) with the ideal Aideal(s) = −sRC; then Av(s) = Aideal/(1 + 1/T) = −sRC·A/(1 + A + sRC).",
+"assume": [
+"The op-amp gain is the constant A = 80 dB = 10,000, as stated.",
+"Checked against the exact frequency response of the circuit at four frequencies."
+],
+"circuit": "Fig. 10.35 (p.676): differentiator: vi through C to the − input and the resistor R from the output to the − input; + input grounded."
 },
 "11.61": {
 "number": "11.61",
@@ -2792,7 +3889,189 @@
 "how": "Fourier series of 15·tanh(1000·vi) found by numerical integration (odd symmetry: only odd harmonics) and checked with an FFT; THD = √(ΣVn²)/V1 up to the 39th harmonic.",
 "assume": [
 "The statement asks for MATLAB; the same numbers are computed here with NumPy."
+],
+"circuit": null
+},
+"11.63": {
+"number": "11.63",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 706,
+"printed": 677,
+"parts": [
+[
+"ideal output voltage (no input signal)",
+"0 V"
+],
+[
+"worst-case output voltage",
+"|VO| = 37.0 mV (VOS = ±2 mV, IB1 = 100 nA at the + input, IB2 = 95 nA at the − input); the two polarities give -37.0 mV and 7.0 mV"
+],
+[
+"total error",
+"37.0 mV (the ideal output is 0 V)"
+],
+[
+"better R1",
+"R1 = R2·R3/(R2 + R3) = 90.91 kΩ makes the dc drops of the two bias currents cancel; the worst-case error then is only the offset-voltage term and the offset current: 27.0 mV (instead of 37.0 mV)"
 ]
+],
+"how": "With no input, VO = (1 + R2/R3)(VOS − IB1·R1) + R2·IB2 (superposition of offset voltage and bias currents; Jaeger Eq. 11.101); choosing R1 = R2‖R3 cancels the bias-current drops except for the offset current.",
+"assume": [
+"IB1 enters the + input and IB2 the − input; the worst-case polarity of VOS is the one that adds to the bias-current term."
+],
+"circuit": "Fig. P11.63 (p.677): noninverting-type amplifier with no signal: R1 = 100 kΩ from the + input to ground, R3 = 100 kΩ from the − input to ground, feedback resistor R2 = 1 MΩ from the output to the − input."
+},
+"11.67": {
+"number": "11.67",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 706,
+"printed": 677,
+"parts": [
+[
+"gain 46 dB = 199.5 → R2/R1 = A − 1",
+"R2/R1 = 198.53"
+],
+[
+"bias-current compensation: R1‖R2 = 10 kΩ (the resistance seen by the + input)",
+"R1 = 10.05 kΩ, R2 = 1.9953 MΩ"
+],
+[
+"nearest standard values R1 = 10 kΩ, R2 = 2.0 MΩ",
+"gain = 1 + R2/R1 = 201.0 = 46.06 dB; R1‖R2 = 9.95 kΩ"
+]
+],
+"how": "Noninverting amplifier gain 1 + R2/R1; the input-bias currents cause equal dc drops (and cancel) when the resistance at the − input, R1‖R2, equals the resistance 10 kΩ at the + input.",
+"assume": [
+"Both conditions determine R1 and R2 exactly; standard values give 46.06 dB."
+],
+"circuit": "Fig. P11.67 (p.677): noninverting amplifier: the source vi in series with a 10 kΩ resistor drives the + input; R2 from the output to the − input and R1 from the − input to ground."
+},
+"11.68": {
+"number": "11.68",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 706,
+"printed": 677,
+"parts": [
+[
+"(a) ideal output voltage",
+"vo = (1 + R2/R1)·vi = 91.909 × (-0.005 V) = -0.45955 V"
+],
+[
+"(b) actual output voltage for the worst-case polarity of VOS (also with the finite gain A = 10,000 and IB = 100 nA)",
+"-0.36349 V (the other polarity gives -0.54563 V; finite gain alone: -0.45536 V)"
+],
+[
+"(c) percentage error compared with the ideal output",
+"-20.9 %"
+]
+],
+"how": "Superposition: the signal gain (1 + R2/R1) with the finite-gain correction 1/(1 + 1/T), plus the offset term (1 + R2/R1)·VOS and the bias-current term (IB·(R2 − (1 + R2/R1)·Rs)).",
+"assume": [
+"The 0.005 V source is drawn with its − terminal at the 1 kΩ resistor (+ at ground), so vi = −5 mV at the + input; the error percentages are the same for +5 mV.",
+"The input-bias currents of both inputs are taken equal (100 nA) as no offset current is given."
+],
+"circuit": "Fig. P11.68 (p.677): noninverting amplifier: a 0.005 V source (− terminal towards the amplifier) in series with 1 kΩ drives the + input; 100 kΩ from the output to the − input and 1.1 kΩ from the − input to ground."
+},
+"11.69": {
+"number": "11.69",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"(a) VI = −1 V",
+"VO = 6.8 V, V− = -6.800e-12 V"
+],
+[
+"(b) VI = +2 V",
+"VO = -10.0 V, V− = 0.4615 V (the ideal -13.6 V is beyond the supply: the output saturates at -10.0 V and V− = (VI·R2 + VO·R1)/(R1 + R2))"
+]
+],
+"how": "Inverting amplifier with gain −R2/R1 = −6.8 and ±10 V supplies: if the ideal output is inside the supplies V− = 0; otherwise the output is clamped at the supply and V− follows from the divider of VI and VO (the op amp is no longer in feedback).",
+"assume": [
+"The output saturates at exactly the supply voltage."
+],
+"circuit": "Fig. P11.69 (p.678): inverting amplifier: VI through 1 kΩ to the − input (V−), 6.8 kΩ from the output to the − input, + input grounded; supplies +10 V and −10 V."
+},
+"11.71": {
+"number": "11.71",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"(a) VI = 0.5 V",
+"VO = -5.0 V, V− = 5.000e-12 V"
+],
+[
+"(b) VI = 1.2 V",
+"VO = -10.0 V, V− = 0.1818 V (ideal -12.0 V: saturated at -10.0 V)"
+]
+],
+"how": "As Problem 11.69 with the feedback resistor 10 kΩ: gain −10.",
+"assume": [],
+"circuit": "Fig. P11.69 (p.678): inverting amplifier: VI through 1 kΩ to the − input, the feedback resistor (10 kΩ here instead of 6.8 kΩ) from the output to the − input, + input grounded; supplies ±10 V."
+},
+"11.73": {
+"number": "11.73",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"(a) VI = 300 mV",
+"VO = 12.0 V, VID = VI − V− = 12.0 pV"
+],
+[
+"(b) VI = 600 mV",
+"VO = 15.0 V, VID = VI − V− = 225.0 mV"
+]
+],
+"how": "Noninverting amplifier of gain 1 + 39 = 40 with ±15 V supplies: for VI = 0.3 V the output is 12 V and VID ≈ 0; for 0.6 V the ideal 24 V is beyond +15 V, the op amp saturates and VID = VI − VO·R1/(R1 + R2) ≠ 0.",
+"assume": [
+"The output saturates at exactly the supply voltage; VID is the voltage between the inputs (V+ = VI)."
+],
+"circuit": "Fig. P11.73 (p.678): noninverting amplifier: VI on the + input, 39 kΩ from the output to the − input and 1 kΩ from the − input to ground; supplies +15 V and −15 V."
+},
+"11.75": {
+"number": "11.75",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"(a) VI = 300 mV",
+"VO = 13.16 V, VID = VI − V− = 13.16 pV"
+],
+[
+"(b) VI = 600 mV",
+"VO = 15.0 V, VID = VI − V− = 258.0 mV"
+]
+],
+"how": "As Problem 11.73 with the 1 kΩ resistor replaced by 910 Ω: gain 1 + 39/0.91 = 43.86.",
+"assume": [],
+"circuit": "Fig. P11.73 (p.678): noninverting amplifier: VI on the + input, 39 kΩ from the output to the − input and 910 Ω (instead of 1 kΩ) from the − input to ground; supplies ±15 V."
 },
 "11.76": {
 "number": "11.76",
@@ -2823,7 +4102,8 @@
 "how": "The op amp must supply the load current plus the current in R1 + R2: 10 V/10 kΩ + 10 V/(R1 + R2) ≤ 1.5 mA.",
 "assume": [
 "R1 = 100 Ω would need R1 + R2 ≈ 19.95 kΩ, just under the limit, so 110 Ω is used."
-]
+],
+"circuit": null
 },
 "11.77": {
 "number": "11.77",
@@ -2850,7 +4130,36 @@
 "how": "Inverting: the feedback current is vo/R2 (virtual ground): 15/5k + 15/R2 ≤ 4 mA → R2 ≥ 15 kΩ; R1 ≈ R2/141.",
 "assume": [
 "110 Ω and 16 kΩ are 5 % values; the ideal ratio 141 would be 15 kΩ/106 Ω."
+],
+"circuit": null
+},
+"11.78": {
+"number": "11.78",
+"section": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 707,
+"printed": 678,
+"parts": [
+[
+"emitter voltage",
+"10 V (the op amp makes the emitter follow its + input)"
+],
+[
+"maximum emitter current for IB ≤ 5 mA",
+"IE = (βF + 1)·IB = 305.0 mA"
+],
+[
+"minimum R",
+"R = 10 V/IE = 32.79 Ω"
 ]
+],
+"how": "The op amp forces the emitter (the − input) to 10 V, so IE = 10 V/R; the op amp supplies only the base current IB = IE/(βF + 1) ≤ 5 mA, i.e. IE ≤ 61 × 5 mA.",
+"assume": [
+"VBE is inside the loop and does not matter; βF = 60 is the minimum value."
+],
+"circuit": "Fig. P11.78 (p.678): an op amp whose + input is at +10 V and whose output drives the base of an npn transistor with collector at +25 V; the emitter is fed back to the − input and goes through R to ground."
 },
 "11.79": {
 "number": "11.79",
@@ -2879,7 +4188,174 @@
 ]
 ],
 "how": "Output guaranteed ±10 V into 4 kΩ → 2.5 mA; the 5 kΩ load takes 2 mA, so 10 V/R2 ≤ 0.5 mA → R2 ≥ 20 kΩ; Rin = R1 = R2/|Av|.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.80": {
+"number": "11.80",
+"section": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"(a) differential-mode and common-mode input voltages",
+"vid = v1 − v2 = 0 V; vic = (v1 + v2)/2 = 3 V"
+],
+[
+"(b) output voltage",
+"vo = 107.1 mV (= Acm·3 V with Acm = 0.035711)"
+],
+[
+"(c) output with matched resistor pairs",
+"0 V"
+],
+[
+"(d) CMRR = |Ad/Acm|",
+"Ad = -9.8198, Acm = 0.035711: CMRR = 274.98 = 48.79 dB"
+]
+],
+"how": "vo = Ad·vid + Acm·vic with Acm = [R4/(R3 + R4)](1 + R2/R1) − R2/R1 (R1 = 10.1 k, R2 = 99 k, R3 = 9.9 k, R4 = 101 k) and Ad from the exact nodal solution; a matched amplifier would have Acm = 0.",
+"assume": [
+"The op amp is ideal; the mismatch alone produces the common-mode gain."
+],
+"circuit": "Fig. P11.80 (p.679): difference amplifier with slightly mismatched resistors: v1 through 10.1 kΩ to the − input and 99 kΩ feedback; v2 through 9.9 kΩ to the + input and 101 kΩ from the + input to ground; ideal op amp."
+},
+"11.81": {
+"number": "11.81",
+"section": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"(a) output voltage",
+"vo = 2.1068 V"
+],
+[
+"(b) with matched resistors (10 kΩ, 100 kΩ)",
+"vo = −10(v1 − v2) = 2.0 V"
+],
+[
+"(c) error in amplifying (v1 − v2)",
+"0.1068 V = 5.341 % of the correct output"
+]
+],
+"how": "Exact nodal solution of the mismatched difference amplifier for v1 = 3.90 V and v2 = 4.10 V; the matched amplifier gives −10(v1 − v2) = 2 V.",
+"assume": [],
+"circuit": "Fig. P11.80 (p.679): difference amplifier with slightly mismatched resistors: v1 through 10.1 kΩ to the − input and 99 kΩ feedback; v2 through 9.9 kΩ to the + input and 101 kΩ from the + input to ground; ideal op amp."
+},
+"11.82": {
+"number": "11.82",
+"section": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"(a) differential-mode and common-mode input voltages",
+"vid = v1 − v2 = 0.5 sin 5000πt V; vic = (v1 + v2)/2 = 10 sin 120πt V"
+],
+[
+"(b) differential-mode and common-mode gains",
+"Ad = -9.8198, Acm = 0.035711"
+],
+[
+"(c) CMRR",
+"274.98 = 48.79 dB"
+],
+[
+"(d) output voltage",
+"vo = Ad·vid + Acm·vic = -4.91 sin 5000πt + 0.3571 sin 120πt V"
+]
+],
+"how": "Superposition of the differential part (gain Ad) and the common-mode part (gain Acm), both from the exact nodal solution of the mismatched resistors of Fig. P11.80 (ideal op amp).",
+"assume": [
+"The signs follow the connection of Fig. P11.80 (Ad ≈ −10)."
+],
+"circuit": "Fig. P11.80 (p.679): difference amplifier with slightly mismatched resistors: v1 through 10.1 kΩ to the − input and 99 kΩ feedback; v2 through 9.9 kΩ to the + input and 101 kΩ from the + input to ground; ideal op amp."
+},
+"11.83": {
+"number": "11.83",
+"section": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"differential input and common-mode voltage",
+"vd = 0.01 V, vcm = (5.01 V + 5 V)/2 = 5.005 V"
+],
+[
+"error of the reading, VCM/CMRR (CMRR = 86 dB = 19,953)",
+"±0.2508 mV"
+],
+[
+"range of indicated voltages",
+"9.7492 mV to 10.251 mV"
+]
+],
+"how": "A meter with finite CMRR indicates vd ± vcm/CMRR: the 5 V common-mode level produces an error of about 0.25 mV on the 10 mV reading (2.5 %).",
+"assume": [
+"The sign of the error is unknown, so the reading can be anywhere in ± the error."
+],
+"circuit": "Fig. P11.83 (p.679): an analog dc multimeter: its + terminal is connected to the top of a 0.01 V source in series with a 5 V source, and its − terminal to the node between the two sources (so the meter should read 0.01 V with a 5 V common-mode level)."
+},
+"11.84": {
+"number": "11.84",
+"section": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"(a) middle resistor 10 kΩ (as drawn)",
+"I = 375.0 μA; V1 = 9.375 V, V2 = 5.625 V; V = V1 − V2 = 3.75 V; VCM = 7.5 V; required CMRR = VCM/(0.0001·V) = 20000.0 = 86.02 dB"
+],
+[
+"(b) middle resistor 100 Ω",
+"I = 498.3 μA; V1 = 7.5249 V, V2 = 7.4751 V; V = V1 − V2 = 0.04983 V; VCM = 7.5 V; required CMRR = VCM/(0.0001·V) = 1.5050e+6 = 123.6 dB"
+]
+],
+"how": "Series divider: I = 15 V/(15 k + Rm + 15 k); the meter measures V = V1 − V2 = Rm·I with the common-mode level VCM = (V1 + V2)/2; an error below 0.01 % of V needs CMRR > VCM/(10⁻⁴·V).",
+"assume": [
+"The statement says “the 20-kΩ resistor” but the figure and part (b) show a 10 kΩ resistor between V1 and V2: the figure value is used."
+],
+"circuit": "Fig. P11.84 (p.679): a 15 V source in series with 15 kΩ, then 10 kΩ, then 15 kΩ back to the source (ground at the bottom); V1 is the node between the first 15 kΩ and the 10 kΩ, V2 the node between the 10 kΩ and the last 15 kΩ; the voltmeter reads V = V1 − V2 across the 10 kΩ."
+},
+"11.85": {
+"number": "11.85",
+"section": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 708,
+"printed": 679,
+"parts": [
+[
+"Worst-case CMRR",
+"2000.0 = 66.02 dB (corner R1, R2, R3, R4 = R(1 +, −, −, + 0.025 %))"
+],
+[
+"Approximation CMRR ≈ (1 + R2/R1)/(4·tolerance)",
+"2000.0 = 66.02 dB"
+]
+],
+"how": "Difference amplifier: vo = −(R2/R1)v1 + (R4/(R3 + R4))(1 + R2/R1)v2, so Adm = ½[(R4/(R3 + R4))(1 + R2/R1) + R2/R1] and Acm = (R4/(R3 + R4))(1 + R2/R1) − R2/R1. With all four resistors R(1 ± 0.025 %) the worst CMRR = |Adm/Acm| occurs at a corner of the tolerance box (16 corners checked, 3000 random sets are never worse); the closed forms were checked against the exact nodal solution.",
+"assume": [
+"Only the resistor mismatch is considered (the op amp is ideal); the result is the CMRR of the amplifier, not of the op amp."
+],
+"circuit": "Fig. P11.85 (p.679): difference amplifier with four equal resistors R: v1 through R to the − input, R from the output to the − input; v2 through R to the + input, R from the + input to ground."
 },
 "11.87": {
 "number": "11.87",
@@ -2904,7 +4380,8 @@
 ]
 ],
 "how": "fT = A0·BW (gain-bandwidth product); 100 dB = 10⁵.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.88": {
 "number": "11.88",
@@ -2929,7 +4406,8 @@
 ]
 ],
 "how": "Single-pole op amp: closed-loop BW = fT·β with β = 1/Av (noninverting) or 1/(1 + |Av|) (inverting).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.89": {
 "number": "11.89",
@@ -2954,7 +4432,8 @@
 ]
 ],
 "how": "β = 1 for the follower, β = 1/2 for the unity-gain inverter.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.90": {
 "number": "11.90",
@@ -2979,7 +4458,8 @@
 ]
 ],
 "how": "As Problem 11.89 with fT = 10 MHz.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.91": {
 "number": "11.91",
@@ -3000,7 +4480,8 @@
 ]
 ],
 "how": "BW = fT/Av (noninverting), fT/(1 + |Av|) (inverting) ≥ 20 kHz with fT = 4 MHz. The open-loop gain (94 dB) only fixes the open-loop bandwidth, 80 Hz.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.92": {
 "number": "11.92",
@@ -3025,7 +4506,8 @@
 ]
 ],
 "how": "BW = fT/Av and fT/(1 + |Av|).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.93": {
 "number": "11.93",
@@ -3050,7 +4532,8 @@
 ]
 ],
 "how": "A(s) = 2π×10¹⁰ s/[(s + 2000π)(s + 2π×10⁶)]: band-pass with mid-band gain 10⁴. Feedback with β = 1/Acl multiplies the upper cutoff by (1 + Aβ) and divides the lower cutoff by it; exact −3 dB points were found numerically from Acl = A/(1 + βA) and agree within 2 %.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.97": {
 "number": "11.97",
@@ -3079,7 +4562,8 @@
 ]
 ],
 "how": "Zout = Ro/(1 + T(s)) with T(s) = A(s)β, A(s) = A0/(1 + s/ωH), β = R1/(R1 + R2) = 1/21 for the inverting gain 20, ωH = ωT/A0.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.100": {
 "number": "11.100",
@@ -3108,7 +4592,220 @@
 ]
 ],
 "how": "Zin = Rid(1 + T(s)), T(s) = A(s)β with β = 1/20 for the noninverting gain 20, ωH = ωT/A0.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"11.102": {
+"number": "11.102",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Op-amp parameters",
+"Ao = 70795.0 (97 dB), fT = 2.0 MHz, pole fb = fT/Ao = 28.25 Hz"
+],
+[
+"Exact transfer function",
+"Av(s) = (-1.2566e+8) / (8.1600e-5·s² + 1036.4·s + 1.2568e+7)"
+],
+[
+"Poles",
+"1.932 kHz, 2.02 MHz"
+],
+[
+"Ideal function",
+"ideal: Av = −(R2/R1)/(1 + sR2C) = −10.0/(1 + s·8.160e-5), pole at 1.95 kHz"
+],
+[
+"dc gain",
+"actual -9.9984 (ideal -10.0): the op amp adds a second pole near fT/(1 + R2/R1) = 181.8 kHz"
+]
+],
+"how": "Inverting amplifier with Z1, Z2 and a single-pole op amp A(s) = Ao/(1 + s/ωb): Av(s) = −(Z2/Z1)/[1 + (1 + Z2/Z1)/A(s)], which gives the rational function above (coefficients derived by hand and verified against an exact nodal ac solution of the circuit at seven frequencies from 10 Hz to 3 MHz). The Bode plot itself is not drawn here: the poles, zeros and gains above define it.",
+"assume": [
+"The \"Bode plot\" part of the statement is not reproduced; the transfer function and its poles/zeros are given instead."
+],
+"circuit": "Fig. 10.32 (p.681): inverting low-pass filter: input resistor R1 to the − input, R2 in parallel with C in the feedback path, + input grounded."
+},
+"11.103": {
+"number": "11.103",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Op-amp parameters",
+"Ao = 1.0000e+5 (100 dB), fT = 2.0 MHz, pole fb = fT/Ao = 20.0 Hz"
+],
+[
+"Exact transfer function",
+"Av(s) = (-2.4640e+8) / (7.5000e-5·s² + 963.1·s + 1.2569e+7)"
+],
+[
+"Poles",
+"2.079 kHz, 2.042 MHz"
+],
+[
+"Ideal function",
+"ideal: Av = −(R2/R1)/(1 + sR2C) = −19.61/(1 + s·7.500e-5), pole at 2.122 kHz"
+],
+[
+"dc gain",
+"actual -19.604 (ideal -19.61): the op amp adds a second pole near fT/(1 + R2/R1) = 97.05 kHz"
+]
+],
+"how": "Inverting amplifier with Z1, Z2 and a single-pole op amp A(s) = Ao/(1 + s/ωb): Av(s) = −(Z2/Z1)/[1 + (1 + Z2/Z1)/A(s)], which gives the rational function above (coefficients derived by hand and verified against an exact nodal ac solution of the circuit at seven frequencies from 10 Hz to 3 MHz). The Bode plot itself is not drawn here: the poles, zeros and gains above define it.",
+"assume": [
+"The \"Bode plot\" part of the statement is not reproduced; the transfer function and its poles/zeros are given instead."
+],
+"circuit": "Fig. 10.32 (p.681): inverting low-pass filter: input resistor R1 to the − input, R2 in parallel with C in the feedback path, + input grounded."
+},
+"11.104": {
+"number": "11.104",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Op-amp parameters",
+"Ao = 39811.0 (92 dB), fT = 1.0 MHz, pole fb = fT/Ao = 25.12 Hz"
+],
+[
+"Exact transfer function",
+"Av(s) = (-1.2118e+8) / (4.0500e-6·s² + 45.733·s + 6.2864e+6)"
+],
+[
+"Poles",
+"22.15 kHz, 1.775 MHz"
+],
+[
+"Ideal function",
+"ideal: Av = −(R2/R1)/(1 + sR2C) = −19.29/(1 + s·4.050e-6), pole at 39.3 kHz"
+],
+[
+"dc gain",
+"actual -19.276 (ideal -19.29): the op amp adds a second pole near fT/(1 + R2/R1) = 49.3 kHz"
+]
+],
+"how": "Inverting amplifier with Z1, Z2 and a single-pole op amp A(s) = Ao/(1 + s/ωb): Av(s) = −(Z2/Z1)/[1 + (1 + Z2/Z1)/A(s)], which gives the rational function above (coefficients derived by hand and verified against an exact nodal ac solution of the circuit at seven frequencies from 10 Hz to 3 MHz). The Bode plot itself is not drawn here: the poles, zeros and gains above define it.",
+"assume": [
+"The \"Bode plot\" part of the statement is not reproduced; the transfer function and its poles/zeros are given instead."
+],
+"circuit": "Fig. 10.32 (p.681): inverting low-pass filter: input resistor R1 to the − input, R2 in parallel with C in the feedback path, + input grounded."
+},
+"11.105": {
+"number": "11.105",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Op-amp parameters",
+"Ao = 1.0000e+5 (100 dB), fT = 5.0 MHz, pole fb = fT/Ao = 50.0 Hz"
+],
+[
+"Exact transfer function",
+"Av(s) = (-3.1416e+7) / (5.0000e-4·s² + 15709.0·s + 314.16)"
+],
+[
+"Poles",
+"3.183 mHz, 5.0 MHz"
+],
+[
+"Ideal function",
+"ideal: Av = −1/(sRC) = −1/(s·5.000e-4) (unity-gain frequency 1/(2πRC) = 318.3 Hz)"
+],
+[
+"Behaviour",
+"a finite-gain integrator: dc gain −Ao·(fb/pole) → -1.0000e+5, i.e. the ideal pole at 0 moves to 3.183 mHz; a second pole near 5.0 MHz"
+]
+],
+"how": "Inverting amplifier with Z1, Z2 and a single-pole op amp A(s) = Ao/(1 + s/ωb): Av(s) = −(Z2/Z1)/[1 + (1 + Z2/Z1)/A(s)], which gives the rational function above (coefficients derived by hand and verified against an exact nodal ac solution of the circuit at seven frequencies from 10 Hz to 3 MHz). The Bode plot itself is not drawn here: the poles, zeros and gains above define it.",
+"assume": [
+"The \"Bode plot\" part of the statement is not reproduced; the transfer function and its poles/zeros are given instead."
+],
+"circuit": "Fig. 10.34 (p.681): inverting integrator: input resistor R to the − input and capacitor C in the feedback path, + input grounded."
+},
+"11.106": {
+"number": "11.106",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Op-amp parameters",
+"Ao = 50119.0 (94 dB), fT = 1.0 MHz, pole fb = fT/Ao = 19.95 Hz"
+],
+[
+"Exact transfer function",
+"Av(s) = (-2035.8·s) / (3.5640e-4·s² + 204.62·s + 6.2833e+6)  (the numerator ∝ s: a zero at s = 0)"
+],
+[
+"Poles",
+"5.181 kHz, 86.19 kHz"
+],
+[
+"Ideal function",
+"ideal: Av = −(R2/R1)·sR1C/(1 + sR1C) = −10.0·s·3.240e-5/(1 + s·3.240e-5), zero at 0, pole at 4.912 kHz"
+],
+[
+"Behaviour",
+"passband gain −10.0 between the corner and about 90.91 kHz (op-amp pole)"
+]
+],
+"how": "Inverting amplifier with Z1, Z2 and a single-pole op amp A(s) = Ao/(1 + s/ωb): Av(s) = −(Z2/Z1)/[1 + (1 + Z2/Z1)/A(s)], which gives the rational function above (coefficients derived by hand and verified against an exact nodal ac solution of the circuit at seven frequencies from 10 Hz to 3 MHz). The Bode plot itself is not drawn here: the poles, zeros and gains above define it.",
+"assume": [
+"The \"Bode plot\" part of the statement is not reproduced; the transfer function and its poles/zeros are given instead."
+],
+"circuit": "Fig. 10.33 (p.681): inverting high-pass filter: capacitor C in series with R1 at the input, R2 in the feedback path, + input grounded."
+},
+"11.107": {
+"number": "11.107",
+"section": "11.13",
+"modules": [
+"m02"
+],
+"pdf": 710,
+"printed": 681,
+"parts": [
+[
+"Nominal (130 kΩ, 22 kΩ)",
+"gain 6.9081 (ideal 6.9091), bandwidth f_B = β·fT = 144.7 kHz"
+],
+[
+"Worst-case maximum gain (130 k +5 %, 22 k −5 %)",
+"7.53, bandwidth 132.8 kHz"
+],
+[
+"Worst-case minimum gain (130 k −5 %, 22 k +5 %)",
+"6.3455, bandwidth 157.6 kHz"
+],
+[
+"Bandwidth range",
+"132.8 kHz (high-gain corner) to 157.6 kHz (low-gain corner)"
+]
+],
+"how": "Noninverting amplifier: β = R22/(R130 + R22), Av = A/(1 + Aβ), bandwidth f_B = β·fT (Table 11.3; the exact single-pole value (fT/A)(1 + Aβ) differs by under 0.01 %). Worst case = the four corners of the ±5 % box (gain and β are monotone in each resistor); each corner was also solved as an exact circuit with a single-pole op amp and its −3 dB frequency found by root search.",
+"assume": [
+"Worst-case values are for the resistor tolerances only (A and fT are taken as exactly 50,000 and 1 MHz)."
+],
+"circuit": "Fig. P11.107 (p.681): noninverting amplifier: vs on the + input of the op amp A(s); 130 kΩ (5 %) from the output to the − input and 22 kΩ (5 %) from the − input to ground."
 },
 "11.109": {
 "number": "11.109",
@@ -3129,7 +4826,8 @@
 ]
 ],
 "how": "The maximum slope of Vp·sin ωt is ωVp.",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "11.110": {
 "number": "11.110",
@@ -3146,7 +4844,808 @@
 ]
 ],
 "how": "fFP = SR/(2π·Vp) with SR = 10 V/μs and Vp = 18 V.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"12.4": {
+"number": "12.4",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 787,
+"printed": 758,
+"parts": [
+[
+"(a) Av (ideal)",
+"70.5 (36.96 dB)"
+],
+[
+"(a) Rin",
+"24.0 kΩ"
+],
+[
+"(a) Rout",
+"0"
+],
+[
+"(b) Av (A = 1.000e+5, Rid = 500.0 kΩ, Ro = 200.0 Ω)",
+"70.484 (36.96 dB)"
+],
+[
+"(b) Rin",
+"24.0 kΩ"
+],
+[
+"(b) Rout",
+"11.6 mΩ"
+],
+[
+"(c) new circuit",
+"inverting 10.0 kΩ / 47.0 kΩ → inverting 24.0 kΩ / 360.0 kΩ"
+],
+[
+"(c, stages interchanged) (a) Av (ideal)",
+"70.5 (36.96 dB)"
+],
+[
+"(c, stages interchanged) (a) Rin",
+"10.0 kΩ"
+],
+[
+"(c, stages interchanged) (a) Rout",
+"0"
+],
+[
+"(c, stages interchanged) (b) Av (A = 1.000e+5, Rid = 500.0 kΩ, Ro = 200.0 Ω)",
+"70.484 (36.96 dB)"
+],
+[
+"(c, stages interchanged) (b) Rin",
+"10.0 kΩ"
+],
+[
+"(c, stages interchanged) (b) Rout",
+"33.4 mΩ"
+]
+],
+"how": "Ideal op amps: Av = product of the stage gains, Rin = Rin of the first stage, Rout = 0 (Eq. 12.2). Finite op amps: Table 11.3 / Eq. (12.1): stage gain A/(1 + Aβ) (noninverting) or −(R2/R1)·T/(1 + T) (inverting) with T = Aβ, β = R1/(R1 + R2); Rin = Rid(1 + Aβ) or R1 + Rid‖R2/(1 + A); Rout = Ro/(1 + Aβ); stages combined with the loading divider Rin2/(Rout1 + Rin2); the overall Rin is that of the first stage and the overall Rout that of the last. All numbers were also obtained from an exact nodal solution of the complete circuit; the book formulas agree within 8.6e-4 % in the gain and within 4.5 % in Rout (they neglect the loading of Rid on the feedback divider).",
+"assume": [
+"Rin and Rout of the cascade are those of the first and last amplifier (ideal source, no load), as stated in Sec. 12.1.1."
+],
+"circuit": "Fig. P12.2 (p.758): two inverting stages in cascade: vI → 24 kΩ → (− input) with 360 kΩ feedback; its output → 10 kΩ → (− input) with 47 kΩ feedback → vo1; both + inputs grounded."
+},
+"12.5": {
+"number": "12.5",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 787,
+"printed": 758,
+"parts": [
+[
+"(a) Av (ideal)",
+"-72.0 (37.15 dB)"
+],
+[
+"(a) Rin",
+"∞"
+],
+[
+"(a) Rout",
+"0"
+],
+[
+"(b) Av (A = 19950.0, Rid = 250.0 kΩ, Ro = 100.0 Ω)",
+"-71.93 (37.14 dB)"
+],
+[
+"(b) Rin",
+"551.4 MΩ"
+],
+[
+"(b) Rout",
+"48.3 mΩ"
+],
+[
+"(c) new circuit",
+"inverting 20.0 kΩ / 160.0 kΩ → noninverting 160.0 kΩ / 20.0 kΩ"
+],
+[
+"(c, stages interchanged) (a) Av (ideal)",
+"-72.0 (37.15 dB)"
+],
+[
+"(c, stages interchanged) (a) Rin",
+"20.0 kΩ"
+],
+[
+"(c, stages interchanged) (a) Rout",
+"0"
+],
+[
+"(c, stages interchanged) (b) Av (A = 19950.0, Rid = 250.0 kΩ, Ro = 100.0 Ω)",
+"-71.93 (37.14 dB)"
+],
+[
+"(c, stages interchanged) (b) Rin",
+"20.01 kΩ"
+],
+[
+"(c, stages interchanged) (b) Rout",
+"48.3 mΩ"
+]
+],
+"how": "Ideal op amps: Av = product of the stage gains, Rin = Rin of the first stage, Rout = 0 (Eq. 12.2). Finite op amps: Table 11.3 / Eq. (12.1): stage gain A/(1 + Aβ) (noninverting) or −(R2/R1)·T/(1 + T) (inverting) with T = Aβ, β = R1/(R1 + R2); Rin = Rid(1 + Aβ) or R1 + Rid‖R2/(1 + A); Rout = Ro/(1 + Aβ); stages combined with the loading divider Rin2/(Rout1 + Rin2); the overall Rin is that of the first stage and the overall Rout that of the last. All numbers were also obtained from an exact nodal solution of the complete circuit; the book formulas agree within 0.0065 % in the gain and within 7.1 % in Rout (they neglect the loading of Rid on the feedback divider).",
+"assume": [
+"Rin and Rout of the cascade are those of the first and last amplifier (ideal source, no load), as stated in Sec. 12.1.1."
+],
+"circuit": "Fig. P12.5 (p.758): noninverting stage (vI on the + input, feedback divider 160 kΩ from the output / 20 kΩ to ground) followed by an inverting stage (20 kΩ in, 160 kΩ feedback); the figure carries a stray label \"(c)\" under it."
+},
+"12.6": {
+"number": "12.6",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 787,
+"printed": 758,
+"parts": [
+[
+"(a) Av (ideal)",
+"60.953 (35.7 dB)"
+],
+[
+"(a) Rin",
+"∞"
+],
+[
+"(a) Rout",
+"0"
+],
+[
+"(b) Av (A = 1.995e+5, Rid = 300.0 kΩ, Ro = 200.0 Ω)",
+"60.947 (35.7 dB)"
+],
+[
+"(b) Rin",
+"6.435 GΩ"
+],
+[
+"(b) Rout",
+"6.91 mΩ"
+],
+[
+"(c) new circuit",
+"noninverting 100.0 kΩ / 18.0 kΩ → noninverting 390.0 kΩ / 47.0 kΩ"
+],
+[
+"(c, stages interchanged) (a) Av (ideal)",
+"60.953 (35.7 dB)"
+],
+[
+"(c, stages interchanged) (a) Rin",
+"∞"
+],
+[
+"(c, stages interchanged) (a) Rout",
+"0"
+],
+[
+"(c, stages interchanged) (b) Av (A = 1.995e+5, Rid = 300.0 kΩ, Ro = 200.0 Ω)",
+"60.947 (35.7 dB)"
+],
+[
+"(c, stages interchanged) (b) Rin",
+"9.116 GΩ"
+],
+[
+"(c, stages interchanged) (b) Rout",
+"10.6 mΩ"
+]
+],
+"how": "Ideal op amps: Av = product of the stage gains, Rin = Rin of the first stage, Rout = 0 (Eq. 12.2). Finite op amps: Table 11.3 / Eq. (12.1): stage gain A/(1 + Aβ) (noninverting) or −(R2/R1)·T/(1 + T) (inverting) with T = Aβ, β = R1/(R1 + R2); Rin = Rid(1 + Aβ) or R1 + Rid‖R2/(1 + A); Rout = Ro/(1 + Aβ); stages combined with the loading divider Rin2/(Rout1 + Rin2); the overall Rin is that of the first stage and the overall Rout that of the last. All numbers were also obtained from an exact nodal solution of the complete circuit; the book formulas agree within 8.3e-4 % in the gain and within 14.0 % in Rout (they neglect the loading of Rid on the feedback divider).",
+"assume": [
+"Rin and Rout of the cascade are those of the first and last amplifier (ideal source, no load), as stated in Sec. 12.1.1."
+],
+"circuit": "Fig. P12.6 (p.758): two noninverting stages in cascade: vI on the + input of the first, feedback divider 390 kΩ / 47 kΩ; its output on the + input of the second, feedback divider 100 kΩ / 18 kΩ."
+},
+"12.7": {
+"number": "12.7",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"(a) Av (ideal)",
+"-6504.3 (76.26 dB)"
+],
+[
+"(a) Rin",
+"3.0 kΩ"
+],
+[
+"(a) Rout",
+"0"
+],
+[
+"(b) Av (A = 50120.0, Rid = 400.0 kΩ, Ro = 250.0 Ω)",
+"-6496.1 (76.25 dB)"
+],
+[
+"(b) Rin",
+"3.001 kΩ"
+],
+[
+"(b) Rout",
+"98.8 mΩ"
+]
+],
+"how": "Ideal: Av = product of the stage gains, Rin = first stage, Rout = 0 (Eq. 12.2). Finite op amps: Table 11.3 / Eq. (12.1): stage gain A/(1 + Aβ) (noninverting) or −(R2/R1)·T/(1 + T) (inverting) with T = Aβ, β = R1/(R1 + R2); Rin = Rid(1 + Aβ) or R1 + Rid‖R2/(1 + A); Rout = Ro/(1 + Aβ); stages combined with the loading divider Rin2/(Rout1 + Rin2); the overall Rin is that of the first stage and the overall Rout that of the last. The values were also found by an exact nodal solution of the whole circuit (book formulas agree within 0.0014 % in gain).",
+"assume": [
+"The open-loop gain in dB is converted with A = 10^(dB/20)."
+],
+"circuit": "Fig. P12.3 (p.759): three identical inverting stages in cascade: each 3 kΩ in series with the − input and 56 kΩ feedback, + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.8": {
+"number": "12.8",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"(a) vI = 1 mV",
+"vI = 1.0 mV; v−A = 0 V; vOA = -18.67 mV; v−B = 0 V; vOB = 348.4 mV; v−C = 0 V; vO = -6.504 V; all three op amps are in their linear range"
+],
+[
+"(b) vI = 3 mV",
+"vI = 3.0 mV; v−A = 0 V; vOA = -56.0 mV; v−B = 0 V; vOB = 1.045 V; v−C = 382.0 mV; vO = -12.0 V; op amp C saturated at −12 V (output cannot reach the linear value)"
+],
+[
+"(c) vI = 2 mV, A = 80 dB",
+"vI = 2.0 mV; v−A = 3.726 μV; vOA = -37.26 mV; v−B = -69.42 μV; vOB = 694.2 mV; v−C = 48.69 mV; vO = -12.0 V; op amp C saturated at −12 V (output cannot reach the linear value)"
+]
+],
+"how": "Ideal op amps with ±12 V supplies: node voltages from the stage gains (vO = Av·vI) while |vO| < 12 V; when a stage would exceed the supply its output is clamped at the rail, its feedback loop is broken and the − input of that stage is the divider voltage of its resistors (Example 12.1(c)). Exact nodal solution (clamped output = fixed source) gives the same voltages.",
+"assume": [
+"The figure shows seven nodes besides ground (vI, the three − inputs, the three outputs); the statement says 8 nodes, probably counting the ground (0 V) as the 8th. All seven are listed.",
+"The output saturates exactly at the supply voltage (as in Example 12.1).",
+"Case (c) uses finite gain A = 80 dB = 10^4 with infinite Rid and zero Ro (nothing else is specified)."
+],
+"circuit": "Fig. P12.3 (p.759): three identical inverting stages in cascade: each 3 kΩ in series with the − input and 56 kΩ feedback, + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.9": {
+"number": "12.9",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"(a) Av (ideal)",
+"-1350.0 (62.61 dB)"
+],
+[
+"(a) Rin",
+"56.0 kΩ"
+],
+[
+"(a) Rout",
+"0"
+],
+[
+"(b) Av (A = 50120.0, Rid = 400.0 kΩ, Ro = 250.0 Ω)",
+"-1348.9 (62.6 dB)"
+],
+[
+"(b) Rin",
+"56.01 kΩ"
+],
+[
+"(b) Rout",
+"75.7 mΩ"
+]
+],
+"how": "Ideal: Av = product of the stage gains, Rin = first stage, Rout = 0 (Eq. 12.2). Finite op amps: Table 11.3 / Eq. (12.1): stage gain A/(1 + Aβ) (noninverting) or −(R2/R1)·T/(1 + T) (inverting) with T = Aβ, β = R1/(R1 + R2); Rin = Rid(1 + Aβ) or R1 + Rid‖R2/(1 + A); Rout = Ro/(1 + Aβ); stages combined with the loading divider Rin2/(Rout1 + Rin2); the overall Rin is that of the first stage and the overall Rout that of the last. The values were also found by an exact nodal solution of the whole circuit (book formulas agree within 0.0052 % in gain).",
+"assume": [
+"The open-loop gain in dB is converted with A = 10^(dB/20)."
+],
+"circuit": "Fig. P12.9 (p.759): three inverting stages in cascade: 56 kΩ in / 560 kΩ feedback, then 18 kΩ / 180 kΩ, then 20 kΩ / 270 kΩ; + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.10": {
+"number": "12.10",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"(a) vI = 5 mV",
+"vI = 5.0 mV; v−A = 0 V; vOA = -50.0 mV; v−B = 0 V; vOB = 500.0 mV; v−C = 0 V; vO = -6.75 V; all three op amps are in their linear range"
+],
+[
+"(b) vI = 10 mV",
+"vI = 10.0 mV; v−A = 0 V; vOA = -100.0 mV; v−B = 0 V; vOB = 1.0 V; v−C = 103.4 mV; vO = -12.0 V; op amp C saturated at −12 V (output cannot reach the linear value)"
+],
+[
+"(c) vI = 10 mV, A = 80 dB",
+"vI = 10.0 mV; v−A = 9.989 μV; vOA = -99.89 mV; v−B = -99.78 μV; vOB = 997.8 mV; v−C = 101.4 mV; vO = -12.0 V; op amp C saturated at −12 V (output cannot reach the linear value)"
+]
+],
+"how": "Ideal op amps with ±12 V supplies: node voltages from the stage gains (vO = Av·vI) while |vO| < 12 V; when a stage would exceed the supply its output is clamped at the rail, its feedback loop is broken and the − input of that stage is the divider voltage of its resistors (Example 12.1(c)). Exact nodal solution (clamped output = fixed source) gives the same voltages.",
+"assume": [
+"The figure shows seven nodes besides ground (vI, the three − inputs, the three outputs); the statement says 8 nodes, probably counting the ground (0 V) as the 8th. All seven are listed.",
+"The output saturates exactly at the supply voltage (as in Example 12.1).",
+"Case (c) uses finite gain A = 80 dB = 10^4 with infinite Rid and zero Ro (nothing else is specified)."
+],
+"circuit": "Fig. P12.9 (p.759): three inverting stages in cascade: 56 kΩ in / 560 kΩ feedback, then 18 kΩ / 180 kΩ, then 20 kΩ / 270 kΩ; + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.11": {
+"number": "12.11",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"Av",
+"-2960.5 (69.43 dB)"
+],
+[
+"Rin",
+"3.9 kΩ"
+],
+[
+"Rout",
+"0"
+]
+],
+"how": "Three identical inverting stages: Av = (−56/3.9)³; Rin = 3.9 kΩ (first stage); Rout = 0.",
+"assume": [
+"Ideal op amps (the statement gives no op-amp parameters)."
+],
+"circuit": "Fig. P12.3 (p.759): three identical inverting stages in cascade: each 3 kΩ in series with the − input and 56 kΩ feedback, + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.12": {
+"number": "12.12",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"Gain per stage",
+"4.6416 (each stage inverts)"
+],
+[
+"New input resistor R1 = 56 kΩ / 4.6416",
+"12.06 kΩ"
+],
+[
+"Overall gain",
+"-100.0 = 40.0 dB (magnitude 100)"
+],
+[
+"New Rin",
+"12.06 kΩ"
+]
+],
+"how": "40 dB = 100 = G³ with three identical inverting stages: G = 100^(1/3) = Rf/R1; Rin = R1 of the first stage (Sec. 12.1.1).",
+"assume": [
+"The statement speaks of \"the 2-kΩ resistors\" but Fig. P12.3 shows 3-kΩ input resistors (and 12.11 also says 3 kΩ): the three input resistors of the figure are replaced and the 56-kΩ feedback resistors are kept. 40 dB is taken as magnitude 100 (the amplifier is inverting, so Av = −100)."
+],
+"circuit": "Fig. P12.3 (p.759): three identical inverting stages in cascade: each 3 kΩ in series with the − input and 56 kΩ feedback, + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.13": {
+"number": "12.13",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"Voltage gain (nominal, min, max)",
+"-1350.0; -1822.8; -999.85"
+],
+[
+"Input resistance = R1 of the first stage (nominal, min, max)",
+"56.0 kΩ; 53.2 kΩ; 58.8 kΩ"
+],
+[
+"Output resistance",
+"0"
+]
+],
+"how": "Av = Π(−R2/R1): gain magnitude is maximum with every feedback resistor +5 % and every input resistor −5 % (and minimum the reverse); the sign is negative (three inversions). Checked by all 2⁶ corners and 400 random points.",
+"assume": [
+"\"Minimum\" and \"maximum\" refer to the magnitude of the (negative) gain."
+],
+"circuit": "Fig. P12.9 (p.759): three inverting stages in cascade: 56 kΩ in / 560 kΩ feedback, then 18 kΩ / 180 kΩ, then 20 kΩ / 270 kΩ; + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.14": {
+"number": "12.14",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"Av (ideal)",
+"3048.6 (69.68 dB)"
+],
+[
+"Rin",
+"1.0 MΩ"
+],
+[
+"Rout",
+"0"
+],
+[
+"(b) node voltages for vI = 1 mV",
+"vI = 1.0 mV; v−A = 1.0 mV; vOA = 14.5 mV; v−B = 14.5 mV; vOB = 210.25 mV; v−C = 210.25 mV; vO = 3.0486 V"
+]
+],
+"how": "Three noninverting stages: Av = (1 + 27/2)³ = 14.5³; Rin = 1 MΩ (the shunt resistor; the + input is ideal); Rout = 0. Node voltages: vO1 = 14.5 vI, vO2 = 14.5² vI, vO3 = 14.5³ vI; each − input equals the + input of its stage (ideal op amp): v−A = vI, v−B = vO1, v−C = vO2. Exact nodal solution agrees.",
+"assume": [
+"The statement says eight nodes; seven non-ground nodes are shown in the figure (vI, three − inputs, three outputs), the 8th is probably the ground."
+],
+"circuit": "Fig. P12.14 (p.759): three noninverting stages in cascade (feedback divider 27 kΩ from the output / 2 kΩ to ground in each); vI drives the + input of the first stage, which is also tied to ground by 1 MΩ; the output of each stage drives the + input of the next; vO is the output of the third."
+},
+"12.15": {
+"number": "12.15",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"Av (ideal)",
+"1000.0 (60.0 dB)"
+],
+[
+"Rin",
+"470.0 kΩ"
+],
+[
+"Rout",
+"0"
+],
+[
+"node voltages for vI = 1 mV",
+"vI = 1.0 mV; v−A = 1.0 mV; vOA = 10.0 mV; v−B = 10.0 mV; vOB = 100.0 mV; v−C = 100.0 mV; vO = 1.0 V"
+]
+],
+"how": "As Prob. 12.14 with the 2-kΩ resistors replaced by 3 kΩ: Av = (1 + 27/3)³ = 10³ = 1000; Rin = 470 kΩ; Rout = 0.",
+"assume": [
+"\"All the 2-kΩ resistors\" are the three divider resistors to ground; the 27-kΩ feedback resistors are kept."
+],
+"circuit": "Fig. P12.14 (p.759): three noninverting stages in cascade (feedback divider 27 kΩ from the output / 2 kΩ to ground in each); vI drives the + input of the first stage, which is also tied to ground by 1 MΩ; the output of each stage drives the + input of the next; vO is the output of the third."
+},
+"12.16": {
+"number": "12.16",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 788,
+"printed": 759,
+"parts": [
+[
+"Voltage gain (nominal, min, max)",
+"3048.6; 2726.7; 3409.6"
+],
+[
+"Input resistance (nominal, min, max)",
+"1.0 MΩ; 980.0 kΩ; 1.02 MΩ"
+],
+[
+"Output resistance",
+"0 (ideal op amps)"
+]
+],
+"how": "Av = Π(1 + R2/R1) is monotone in every resistor: the extremes occur when each feedback resistor is at +2 % and each resistor to ground at −2 % (max) or the reverse (min). Checked by evaluating all 2⁷ corners of the tolerance box and 400 random points inside it (none lies outside the range).",
+"assume": [],
+"circuit": "Fig. P12.14 (p.759): three noninverting stages in cascade (feedback divider 27 kΩ from the output / 2 kΩ to ground in each); vI drives the + input of the first stage, which is also tied to ground by 1 MΩ; the output of each stage drives the + input of the next; vO is the output of the third."
+},
+"12.17": {
+"number": "12.17",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 789,
+"printed": 760,
+"parts": [
+[
+"Av (ideal)",
+"-2970.0 (69.46 dB)"
+],
+[
+"Rin",
+"120.0 kΩ"
+],
+[
+"Rout",
+"0"
+],
+[
+"(b) node voltages for vI = 0.004 V",
+"vI = 4.0 mV; v−A = 4.0 mV; vOA = 54.0 mV; v−B = 0 V; vOB = -1.08 V; v−C = -1.08 V; vO = -11.88 V"
+]
+],
+"how": "Av = (1 + 150/12)(−200/10)(1 + 200/20) = 13.5·(−20)·11; Rin = 120 kΩ (shunt resistor; the first + input is ideal); Rout = 0. vOA = 13.5 vI, vOB = −20 vOA, vO = 11 vOB; v−A = vI, v−B = 0 (virtual ground), v−C = vOB. Exact nodal solution agrees.",
+"assume": [
+"No supply voltage is given, so the op amps are taken as unsaturated (|vO| = 11.88 V stays below the usual ±12 V anyway).",
+"Seven non-ground nodes are listed (the statement says eight; the 8th is probably the ground)."
+],
+"circuit": "Fig. P12.17 (p.760): noninverting stage (vI on the + input, tied to ground by 120 kΩ; divider 150 kΩ / 12 kΩ), then an inverting stage (10 kΩ in, 200 kΩ feedback), then a noninverting stage (divider 200 kΩ / 20 kΩ); vO is the output of the third."
+},
+"12.18": {
+"number": "12.18",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 789,
+"printed": 760,
+"parts": [
+[
+"Voltage gain (nominal, min, max)",
+"-2970.0; -3143.4; -2806.4"
+],
+[
+"Input resistance = 120 kΩ shunt (nominal, min, max)",
+"120.0 kΩ; 118.8 kΩ; 121.2 kΩ"
+],
+[
+"Output resistance",
+"0"
+]
+],
+"how": "Corner evaluation of the product Av = (1 + R2/R1)(−R2/R1)(1 + R2/R1) over the 2⁷ corners of the ±1 % tolerance box, checked with 400 random points.",
+"assume": [
+"\"Minimum\" and \"maximum\" refer to the magnitude of the (negative) gain."
+],
+"circuit": "Fig. P12.17 (p.760): noninverting stage (vI on the + input, tied to ground by 120 kΩ; divider 150 kΩ / 12 kΩ), then an inverting stage (10 kΩ in, 200 kΩ feedback), then a noninverting stage (divider 200 kΩ / 20 kΩ); vO is the output of the third."
+},
+"12.19": {
+"number": "12.19",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 789,
+"printed": 760,
+"parts": [
+[
+"P12.2 stage A (inverting 24.0 kΩ/360.0 kΩ)",
+"Av(0) = -14.988 (ideal -15.0); f_B = β·fT = 187.5 kHz (β = 0.0625)"
+],
+[
+"P12.2 stage B (inverting 10.0 kΩ/47.0 kΩ)",
+"Av(0) = -4.6987 (ideal -4.7); f_B = β·fT = 526.3 kHz (β = 0.1754)"
+],
+[
+"P12.2 overall",
+"Av(0) = 70.423 (36.95 dB); bandwidth f_H = 169.1 kHz (from |Av(jω_H)| = |Av(0)|/√2, Eq. 12.6)"
+],
+[
+"P12.5 stage A (noninverting 160.0 kΩ/20.0 kΩ)",
+"Av(0) = 8.9959 (ideal 9.0); f_B = β·fT = 333.3 kHz (β = 0.1111)"
+],
+[
+"P12.5 stage B (inverting 20.0 kΩ/160.0 kΩ)",
+"Av(0) = -7.9964 (ideal -8.0); f_B = β·fT = 333.3 kHz (β = 0.1111)"
+],
+[
+"P12.5 overall",
+"Av(0) = -71.935 (37.14 dB); bandwidth f_H = 214.5 kHz (from |Av(jω_H)| = |Av(0)|/√2, Eq. 12.6)"
+],
+[
+"P12.6 stage A (noninverting 390.0 kΩ/47.0 kΩ)",
+"Av(0) = 9.2935 (ideal 9.298); f_B = β·fT = 322.7 kHz (β = 0.1076)"
+],
+[
+"P12.6 stage B (noninverting 100.0 kΩ/18.0 kΩ)",
+"Av(0) = 6.5534 (ideal 6.556); f_B = β·fT = 457.6 kHz (β = 0.1525)"
+],
+[
+"P12.6 overall",
+"Av(0) = 60.904 (35.69 dB); bandwidth f_H = 242.1 kHz (from |Av(jω_H)| = |Av(0)|/√2, Eq. 12.6)"
+]
+],
+"how": "Each closed-loop stage has Av(0) = Av,ideal·T/(1 + T) with T = Ao·β, β = R1/(R1 + R2), and bandwidth f_B = β·fT (Table 11.3); the cascade is Av(s) = ΠAv_k(s) (Eq. 12.3) and its −3 dB frequency solves Eq. (12.6). Check: the full circuit with single-pole op amps (A(s) = Ao/(1 + s/ωb), ωb = 2π·fT/Ao) solved exactly at s = jω by nodal analysis gives the same −3 dB frequency within 2 % (exact: 169.2 kHz; 214.6 kHz; 242.2 kHz).",
+"assume": [
+"Ao in dB is converted with A = 10^(dB/20); Rid = ∞ and Ro = 0 (the statement gives no other op-amp parameters)."
+],
+"circuit": "Figs. P12.2, P12.5 and P12.6 (p.760): Fig. P12.2: two inverting stages 24k/360k and 10k/47k; Fig. P12.5: noninverting 160k/20k then inverting 20k/160k; Fig. P12.6: noninverting 390k/47k then noninverting 100k/18k."
+},
+"12.20": {
+"number": "12.20",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 789,
+"printed": 760,
+"parts": [
+[
+"P12.3 stage A (inverting 3.0 kΩ/56.0 kΩ)",
+"Av(0) = -18.663 (ideal -18.67); f_B = β·fT = 152.5 kHz (β = 0.05085)"
+],
+[
+"P12.3 stage B (inverting 3.0 kΩ/56.0 kΩ)",
+"Av(0) = -18.663 (ideal -18.67); f_B = β·fT = 152.5 kHz (β = 0.05085)"
+],
+[
+"P12.3 stage C (inverting 3.0 kΩ/56.0 kΩ)",
+"Av(0) = -18.663 (ideal -18.67); f_B = β·fT = 152.5 kHz (β = 0.05085)"
+],
+[
+"P12.3 overall",
+"Av(0) = -6500.5 (76.26 dB); bandwidth f_H = 77.77 kHz (from |Av(jω_H)| = |Av(0)|/√2, Eq. 12.6)"
+]
+],
+"how": "Each closed-loop stage has Av(0) = Av,ideal·T/(1 + T) with T = Ao·β, β = R1/(R1 + R2), and bandwidth f_B = β·fT (Table 11.3); the cascade is Av(s) = ΠAv_k(s) (Eq. 12.3) and its −3 dB frequency solves Eq. (12.6). Check: the full circuit with single-pole op amps (A(s) = Ao/(1 + s/ωb), ωb = 2π·fT/Ao) solved exactly at s = jω by nodal analysis gives the same −3 dB frequency within 2 % (exact: 77.79 kHz).",
+"assume": [
+"Ao in dB is converted with A = 10^(dB/20); Rid = ∞ and Ro = 0 (the statement gives no other op-amp parameters)."
+],
+"circuit": "Fig. P12.3 (p.760): three identical inverting stages in cascade: each 3 kΩ in series with the − input and 56 kΩ feedback, + inputs grounded; vI drives the first stage, vO is the output of the third."
+},
+"12.21": {
+"number": "12.21",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 789,
+"printed": 760,
+"parts": [
+[
+"P12.14 stage A (noninverting 27.0 kΩ/2.0 kΩ)",
+"Av(0) = 14.489 (ideal 14.5); f_B = β·fT = 344.8 kHz (β = 0.06897)"
+],
+[
+"P12.14 stage B (noninverting 27.0 kΩ/2.0 kΩ)",
+"Av(0) = 14.489 (ideal 14.5); f_B = β·fT = 344.8 kHz (β = 0.06897)"
+],
+[
+"P12.14 stage C (noninverting 27.0 kΩ/2.0 kΩ)",
+"Av(0) = 14.489 (ideal 14.5); f_B = β·fT = 344.8 kHz (β = 0.06897)"
+],
+[
+"P12.14 overall",
+"Av(0) = 3042.0 (69.66 dB); bandwidth f_H = 175.8 kHz (from |Av(jω_H)| = |Av(0)|/√2, Eq. 12.6)"
+]
+],
+"how": "Each closed-loop stage has Av(0) = Av,ideal·T/(1 + T) with T = Ao·β, β = R1/(R1 + R2), and bandwidth f_B = β·fT (Table 11.3); the cascade is Av(s) = ΠAv_k(s) (Eq. 12.3) and its −3 dB frequency solves Eq. (12.6). Check: the full circuit with single-pole op amps (A(s) = Ao/(1 + s/ωb), ωb = 2π·fT/Ao) solved exactly at s = jω by nodal analysis gives the same −3 dB frequency within 2 % (exact: 175.9 kHz).",
+"assume": [
+"Ao in dB is converted with A = 10^(dB/20); Rid = ∞ and Ro = 0 (the statement gives no other op-amp parameters)."
+],
+"circuit": "Fig. P12.14 (p.760): three noninverting stages in cascade (feedback divider 27 kΩ from the output / 2 kΩ to ground in each); vI drives the + input of the first stage, which is also tied to ground by 1 MΩ; the output of each stage drives the + input of the next; vO is the output of the third."
+},
+"12.22": {
+"number": "12.22",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 789,
+"printed": 760,
+"parts": [
+[
+"P12.17 stage A (noninverting 150.0 kΩ/12.0 kΩ)",
+"Av(0) = 13.482 (ideal 13.5); f_B = β·fT = 370.4 kHz (β = 0.07407)"
+],
+[
+"P12.17 stage B (inverting 10.0 kΩ/200.0 kΩ)",
+"Av(0) = -19.958 (ideal -20.0); f_B = β·fT = 238.1 kHz (β = 0.04762)"
+],
+[
+"P12.17 stage C (noninverting 200.0 kΩ/20.0 kΩ)",
+"Av(0) = 10.988 (ideal 11.0); f_B = β·fT = 454.5 kHz (β = 0.09091)"
+],
+[
+"P12.17 overall",
+"Av(0) = -2956.5 (69.42 dB); bandwidth f_H = 164.5 kHz (from |Av(jω_H)| = |Av(0)|/√2, Eq. 12.6)"
+]
+],
+"how": "Each closed-loop stage has Av(0) = Av,ideal·T/(1 + T) with T = Ao·β, β = R1/(R1 + R2), and bandwidth f_B = β·fT (Table 11.3); the cascade is Av(s) = ΠAv_k(s) (Eq. 12.3) and its −3 dB frequency solves Eq. (12.6). Check: the full circuit with single-pole op amps (A(s) = Ao/(1 + s/ωb), ωb = 2π·fT/Ao) solved exactly at s = jω by nodal analysis gives the same −3 dB frequency within 2 % (exact: 164.8 kHz).",
+"assume": [
+"Ao in dB is converted with A = 10^(dB/20); Rid = ∞ and Ro = 0 (the statement gives no other op-amp parameters)."
+],
+"circuit": "Fig. P12.17 (p.760): noninverting stage (vI on the + input, tied to ground by 120 kΩ; divider 150 kΩ / 12 kΩ), then an inverting stage (10 kΩ in, 200 kΩ feedback), then a noninverting stage (divider 200 kΩ / 20 kΩ); vO is the output of the third."
+},
+"12.23": {
+"number": "12.23",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 790,
+"printed": 761,
+"parts": [
+[
+"(a) voltage gain",
+"-2642.8 (68.44 dB)"
+],
+[
+"(a) input resistance",
+"920.2 MΩ"
+],
+[
+"(a) output resistance",
+"51.2 mΩ"
+],
+[
+"(a) bandwidth",
+"35.9 kHz (exact circuit with single-pole op amps: 35.61 kHz)"
+],
+[
+"(b) the 10 nodes for vI = 0 (offset +10 mV at each + input, ±15 V supplies)",
+"vI = 0 V; v−A = 10.0 mV; vOA = 49.2 mV; v−B = 10.2 mV; vOB = -4.27 V; v−C = -3.09 V; vO = -14.9 V; V+ = 15.0 V; V− = −15.0 V; ground = 0 V. The output of the third op amp would be -21.0 V without the supply limit, so op amp C saturates at -14.9 V"
+]
+],
+"how": "Table 11.3 / Eq. (12.1): stage gain A/(1 + Aβ) (noninverting) or −(R2/R1)·T/(1 + T) (inverting) with T = Aβ, β = R1/(R1 + R2); Rin = Rid(1 + Aβ) or R1 + Rid‖R2/(1 + A); Rout = Ro/(1 + Aβ); stages combined with the loading divider Rin2/(Rout1 + Rin2); the overall Rin is that of the first stage and the overall Rout that of the last. Bandwidth: Each closed-loop stage has Av(0) = Av,ideal·T/(1 + T) with T = Ao·β, β = R1/(R1 + R2), and bandwidth f_B = β·fT (Table 11.3); the cascade is Av(s) = Π… Offsets: each op amp is replaced by an ideal-gain amplifier whose + input sits 10 mV above the external + node; when an output would pass ±15 V the amplifier is replaced by a fixed source at the rail (its feedback loop is open, Example 12.1(c)).",
+"assume": [
+"The ten nodes are the seven circuit nodes (vI, three − inputs, three outputs) plus V+, V− and ground, as listed in Example 12.1.",
+"Offsets of +10 mV at the + input of every op amp, output saturation exactly at ±15 V; three significant digits are shown."
+],
+"circuit": "Fig. P12.23 (p.761): three stages in cascade: a noninverting amplifier (divider 47 kΩ / 12 kΩ), an inverting amplifier (2 kΩ in, 220 kΩ feedback) and a noninverting amplifier (47 kΩ / 12 kΩ); each op amp is drawn with its supply pins (+, −); vI drives the + input of the first stage, vO is the output of the third."
+},
+"12.24": {
+"number": "12.24",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 790,
+"printed": 761,
+"parts": [
+[
+"Voltage gain (nominal, min, max)",
+"-2642.8; -4469.1; -1583.0"
+],
+[
+"Input resistance (nominal, min, max)",
+"920.0 MΩ; 774.0 MΩ; 1.08 GΩ"
+],
+[
+"Output resistance (nominal, min, max)",
+"51.2 mΩ; 43.8 mΩ; 60.1 mΩ"
+],
+[
+"Bandwidth (nominal, min, max)",
+"35.9 kHz; 29.43 kHz; 43.77 kHz"
+]
+],
+"how": "The quantities of Prob. 12.23 (Ao = 86 dB, Rid = 250 kΩ, Ro = 200 Ω, fT = 4 MHz) are evaluated at all 2⁶ corners of the ±10 % tolerance box of the six resistors (each quantity is monotone in every resistor, so the extremes are at corners); 400 random points inside the box are checked to lie within [min, max].",
+"assume": [
+"\"Min\" and \"max\" refer to the magnitude of the gain; the sign is the same for all corners."
+],
+"circuit": "Fig. P12.23 (p.761): three stages in cascade: a noninverting amplifier (divider 47 kΩ / 12 kΩ), an inverting amplifier (2 kΩ in, 220 kΩ feedback) and a noninverting amplifier (47 kΩ / 12 kΩ); each op amp is drawn with its supply pins (+, −); vI drives the + input of the first stage, vO is the output of the third."
 },
 "12.25": {
 "number": "12.25",
@@ -3169,7 +5668,431 @@
 "how": "Total gain is the product of the stage gains: 50ⁿ ≥ 5000 gives n ≥ 2.2 → 3 stages. The Rin and Rout requirements need the op-amp table that the statement refers to (not reproduced in the text).",
 "assume": [
 "Only the gain constraint is evaluated here."
+],
+"circuit": null
+},
+"12.35": {
+"number": "12.35",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 791,
+"printed": 762,
+"parts": [
+[
+"Voltage gain vo/(v1 − v2) = −(R4/R3)(1 + R2/R1)",
+"-51.0"
+],
+[
+"Output voltage",
+"vo = 5.1 V -5.1·sin(2000πt) V, i.e. vo = 5.1 − 5.1·sin(2000πt) V (between 0 and 10.2 V)"
 ]
+],
+"how": "Instrumentation amplifier (Eq. 12.10 and the formula printed beside Fig. 12.4): vo = −(R4/R3)(1 + R2/R1)(v1 − v2) with v1 − v2 = (2 + 0.1 sin 2000πt) − 2.1 = −0.1 + 0.1 sin 2000πt. Checked with an exact nodal solution of the three-op-amp circuit (the middle resistor is 2R1).",
+"assume": [
+"Ideal op amps and no supply limits (none are given); the output swing 0 … 10.2 V therefore is not clipped."
+],
+"circuit": "Fig. 12.4 (p.762): instrumentation amplifier: v1 and v2 drive the + inputs of op amps ① and ②; resistors R2, 2R1, R2 in series between their outputs (the − inputs are at the nodes v1 and v2 of the 2R1 resistor); op amp ③ with R3, R4 forms the difference amplifier."
+},
+"12.36": {
+"number": "12.36",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 791,
+"printed": 762,
+"parts": [
+[
+"Voltage gain vo/(v1 − v2) = −(R4/R3)(1 + R2/R1)",
+"-12.0"
+],
+[
+"Output voltage",
+"vo = -6.0 V + 2.4·sin(4000πt) V (dc -6.0 V, amplitude 2.4 V)"
+]
+],
+"how": "As Prob. 12.35: vo = G(v1 − v2) with v1 − v2 = (4 − 0.2 sin 4000πt) − 3.5 = 0.5 − 0.2 sin 4000πt.",
+"assume": [
+"Ideal op amps and no supply limits (none are given)."
+],
+"circuit": "Fig. 12.4 (p.762): instrumentation amplifier of Fig. 12.4 (op amps ① and ② with R2, 2R1, R2; difference amplifier ③ with R3, R4)."
+},
+"12.37": {
+"number": "12.37",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 791,
+"printed": 762,
+"parts": [
+[
+"Rin1 (input v1, v2 grounded)",
+"1.297 GΩ"
+],
+[
+"Rin2 (input v2, v1 grounded)",
+"1.299 GΩ"
+],
+[
+"Rout",
+"2.52 mΩ"
+]
+],
+"how": "Exact nodal solution of the instrumentation amplifier with each op amp modelled by A, Rid between the inputs, 2Ric from each input to ground (Fig. 11.44) and Ro. Book estimate: op amp ① or ② is a noninverting amplifier with β = 2R1/(2R1 + R2) = 0.08696, so the source sees 2Ric (the resistor at its own + input) in parallel with Rid(1 + Aβ): Rin = 1.3 GΩ (the 2Ric at the − input is fed from the op-amp output, not from the source). the simplified entry of Table 11.3, Ric ‖ Rid(1 + Aβ), would give 717.0 MΩ; the exact nodal values are given. The output resistance is that of op amp ③, Rout = Ro/(1 + Aβ3) = 2.5 mΩ with β3 = R3/(R3 + R4) = 0.5.",
+"assume": [
+"Rin1 is measured with v2 grounded and Rin2 with v1 grounded.",
+"The common-mode input resistance is modelled as in Fig. 11.44 (a resistor 2Ric from each op-amp input to ground); with the simplified Table 11.3 formula Ric ‖ Rid(1 + Aβ) the input resistances would be about 0.55 times smaller (ambiguity logged)."
+],
+"circuit": "Fig. 12.4 (p.762): instrumentation amplifier of Fig. 12.4 (op amps ① and ② with R2, 2R1, R2 between their outputs; difference amplifier ③ with R3, R4)."
+},
+"12.38": {
+"number": "12.38",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 791,
+"printed": 762,
+"parts": [
+[
+"node voltages",
+"v1 = 6.0 V, v2 = 5.02 V, v3 = 4.98 V, v4 = 4.0 V, v5 = 1.998 V, v6 = 1.998 V, vo = -2.01201 V"
+],
+[
+"currents (into the op-amp outputs)",
+"i1 = 600.6 μA, i2 = 12.25 fA, i3 = -400.6 μA"
+],
+[
+"differential-mode gain",
+"Adm = vo/vid = -50.0501 (33.99 dB), vid = va − vb"
+],
+[
+"common-mode gain",
+"Acm = vo/vic = -0.002002 (-53.97 dB), vic = (va + vb)/2"
+],
+[
+"CMRR",
+"|Adm/Acm| = 25000.0 = 87.96 dB"
+]
+],
+"how": "Ideal op amps: v2 = va, v3 = vb, so the current through 4.9k + 200 Ω + 4.9k is (va − vb)/200 and v1 = va + 24.5(va − vb), v4 = vb − 24.5(va − vb); then the difference amplifier gives v6 = v4·9.99/20, v5 = v6 and vo = v5(1 + 10.01/9.99) − (10.01/9.99)v1. Adm and Acm come from vo = Adm·vid + Acm·vic (vid = va − vb, vic = (va + vb)/2); the same values follow from the exact nodal solution of the circuit.",
+"assume": [
+"Current directions follow the arrows of the figure (from the node into the op-amp output); the common-mode gain arises only from the 0.2 % mismatch of the 9.99 k / 10.01 k resistors."
+],
+"circuit": "Fig. P12.38 (p.762): instrumentation amplifier with ideal op amps: va on the + input of the upper op amp (output v1; 4.9 kΩ from v1 to its − input v2), vb on the + input of the lower op amp (output v4; 4.9 kΩ from v4 to its − input v3); 200 Ω between v2 and v3; difference amplifier: 9.99 kΩ from v1 to v5 (− input) with 10.01 kΩ feedback v5→vo, 10.01 kΩ (R3) from v4 to v6 (+ input) with 9.99 kΩ from v6 to ground; i1, i2, i3 are drawn flowing from the nodes v1, v4, vo into the op-amp outputs."
+},
+"12.39": {
+"number": "12.39",
+"section": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 791,
+"printed": 762,
+"parts": [
+[
+"node voltages",
+"v1 = 3.0 V, v2 = 3.0 V, v3 = 3.0 V, v4 = 3.0 V, v5 = 1.4985 V, v6 = 1.4985 V, vo = -0.00600601 V"
+],
+[
+"currents (into the op-amp outputs)",
+"i1 = 150.3 μA, i2 = 150.0 μA, i3 = -150.3 μA"
+]
+],
+"how": "Purely common-mode input (va = vb = 3 V): no current in the 4.9k–200 Ω–4.9k chain, v1 = v2 = v3 = v4 = 3 V; the difference amplifier gives v6 = v5 = 3·0.4995 = 1.4985 V and vo = v5(1 + 10.01/9.99) − (10.01/9.99)·3 = −6.006 mV. Exact nodal solution agrees.",
+"assume": [
+"Current directions follow the arrows of Fig. P12.38."
+],
+"circuit": "Fig. P12.38 (p.762): instrumentation amplifier with ideal op amps: va on the + input of the upper op amp (output v1; 4.9 kΩ from v1 to its − input v2), vb on the + input of the lower op amp (output v4; 4.9 kΩ from v4 to its − input v3); 200 Ω between v2 and v3; difference amplifier: 9.99 kΩ from v1 to v5 (− input) with 10.01 kΩ feedback v5→vo, 10.01 kΩ (R3) from v4 to v6 (+ input) with 9.99 kΩ from v6 to ground; i1, i2, i3 are drawn flowing from the nodes v1, v4, vo into the op-amp outputs."
+},
+"12.40": {
+"number": "12.40",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 791,
+"printed": 762,
+"parts": [
+[
+"(a) R1 = R2 = 1/(√2·ωo·C) with C = C2 = 5 nF",
+"R1 = R2 = 900.3 Ω, C1 = 10.0 nF, C2 = 5.0 nF (nearest standard 1 % value to be taken from Appendix A)"
+],
+[
+"(a) check",
+"fo = 25.0 kHz, Q = 0.70711; −3 dB frequency of the exact circuit = 25.0 kHz"
+],
+[
+"(a) filter bandwidth",
+"f_H = fo = 25.0 kHz (the low-pass filter extends from dc to f_H)"
+],
+[
+"(b) frequency scaling KF = 2: every capacitor divided by 2, R unchanged",
+"R1 = R2 = 900.3 Ω, C1 = 5.0 nF, C2 = 2.5 nF; fo = 50.0 kHz, Q = 0.70711, f_H = 50.0 kHz"
+]
+],
+"how": "Design Example 12.6 with C1 = 2C2 = 2C and R1 = R2 = R: ωo = 1/√(R1R2C1C2) = 1/(√2·RC), Q = √(C1/C2)·√(R1R2)/(R1 + R2) = 1/√2 (Eqs. 12.19), so R = 1/(√2·ωo·C). The exact circuit (Fig. 12.5 with an ideal follower) solved at s = jω confirms |A(jωo)| = Q and that the −3 dB frequency equals fo; frequency scaling (Eq. 12.37) halves the capacitors.",
+"assume": [
+"\"Assume C = 0.005 μF\" is read as C2 = C = 5 nF, C1 = 2C = 10 nF (as in Example 12.6)."
+],
+"circuit": "Fig. 12.5 (p.762): two-pole low-pass filter: vI → R1 → node v1 → R2 → node v2 (+ input of a voltage follower, output vo); C1 from v1 to the output; C2 from v2 to ground."
+},
+"12.47": {
+"number": "12.47",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 763,
+"parts": [
+[
+"Design (C2 = C = 10 nF chosen)",
+"R1 = R2 = 5.627 kΩ (the exercise in Sec. 12.3.1 for the same case gives 5.62 kΩ), C1 = 2C = 20.0 nF, C2 = 10.0 nF"
+],
+[
+"Check on the exact circuit",
+"fo = 2.0 kHz, Q = 0.70711, −3 dB frequency (bandwidth) = 2.0 kHz"
+]
+],
+"how": "Maximally flat means Q = 1/√2, for which f_H = fo. Use C1 = 2C2 = 2C and R1 = R2 = 1/(√2·ωo·C) (Design Example 12.6); the value of C sets the impedance level. The exact circuit confirms the −3 dB frequency.",
+"assume": [
+"The statement does not fix the capacitor: C2 = 10 nF is chosen as in Example 12.6 (any other C works with R scaled as 1/C)."
+],
+"circuit": "Fig. 12.5 (p.763): two-pole low-pass filter: vI → R1 → v1 → R2 → v2 (+ input of a voltage follower); C1 from v1 to the output; C2 from v2 to ground."
+},
+"12.48": {
+"number": "12.48",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 763,
+"parts": [
+[
+"Amplifier gain K from Q = 1/(3 − K)",
+"K = 3 − 1/Q = 2.0  (noninverting amplifier: (K − 1)R′ = R′, e.g. two equal resistors)"
+],
+[
+"Natural frequency from the −3 dB condition",
+"x = fL/fo = 0.78615 (x⁴ + x² − 1 = 0), so fo = 30.528 kHz"
+],
+[
+"R and C (C1 = C2 = 1 nF chosen)",
+"R1 = R2 = 1/(2π·fo·C) = 5.213 kΩ"
+],
+[
+"Check on the exact circuit",
+"lower half-power frequency = 24.0 kHz; |A(jωo)| = 2.0 = K·Q"
+]
+],
+"how": "High-pass filter of Fig. 12.7 with R1 = R2 = R, C1 = C2 = C: ωo = 1/(RC), Q = 1/(3 − K) (Eq. 12.26), so Q = 1 needs K = 2. The lower half-power frequency fL satisfies |A(jω)| = K/√2: with x = ω/ωo and Q = 1 it gives x⁴ + x² − 1 = 0, x = 0.786, so fo = fL/0.786. The −3 dB condition |A| = K/√2 reads x⁴/√((1 − x²)² + x²/Q²) = 1/√2. Verified by solving the exact circuit at s = jω (root of |A| = K/√2).",
+"assume": [
+"\"Lower-half power frequency\" is taken as the exact −3 dB frequency (fo = 30.5 kHz). If one set fo = 24 kHz instead (the book says ωo approximately equals the lower cutoff), the real half-power frequency would be 18.87 kHz.",
+"The capacitor value is not given: C1 = C2 = 1 nF chosen (R scales as 1/C)."
+],
+"circuit": "Fig. 12.7 (p.763): high-pass filter with gain: vI → C1 → v1 → C2 → v2 → R2 to ground; R1 from v1 to the output; the output is vo = K·v2 from a noninverting amplifier with resistors (K − 1)R and R."
+},
+"12.49": {
+"number": "12.49",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 763,
+"parts": [
+[
+"(a) center frequency fo = 1/(2πC√(Rth·R2))",
+"51.15 kHz"
+],
+[
+"(a) Q = ½√(R2/Rth)",
+"7.0711"
+],
+[
+"(a) bandwidth BW = fo/Q = 1/(π·R2·C)",
+"7.234 kHz"
+],
+[
+"(a) check on the exact circuit",
+"peak at 51.154 kHz, −3 dB edges 47.66 kHz and 54.9 kHz (width 7.234 kHz), peak gain 100.0 = 2Q²"
+],
+[
+"(b) magnitude scaling KM = 3.3 (R × KM, C ÷ KM)",
+"Rth = 3.3 kΩ, R2 = 660.0 kΩ, C1 = C2 = 66.67 pF; fo = 51.15 kHz and Q = 7.071 unchanged"
+],
+[
+"(c) frequency scaling KF = 2 (C ÷ 2, R unchanged)",
+"C1 = C2 = 110.0 pF; fo = 102.3 kHz, Q = 7.071, BW = 14.47 kHz"
+]
+],
+"how": "Band-pass filter of Fig. 12.9 with C1 = C2 = C (Eq. 12.32): ωo = 1/(C√(Rth R2)), Q = ½√(R2/Rth), BW = 2/(R2 C). Magnitude scaling (Eq. 12.35) multiplies R by KM and divides C by KM (fo, Q unchanged); frequency scaling (Eq. 12.37) divides C by KF. The exact circuit (Thévenin source) solved at s = jω gives the same fo, bandwidth and peak gain.",
+"assume": [
+"Rth = R1‖R3 is the Thévenin resistance of Fig. 12.9(b); as given, R1 and R3 individually are not needed."
+],
+"circuit": "Fig. 12.9 (p.763): band-pass filter with the inverting op-amp configuration: vI → R1 (R3 from the node to ground, giving the Thévenin source vth with Rth = R1‖R3) → node v1; C1 from v1 to the output; C2 from v1 to the − input; R2 from the − input to the output; + input grounded."
+},
+"12.50": {
+"number": "12.50",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 763,
+"parts": [
+[
+"(a) design with R3 = ∞ (Rth = R1) and C1 = C2 = C = 10 nF",
+"R1 = Rth = 1/(2Q·ωo·C) = 2.653 kΩ, R2 = 4Q²·R1 = 265.3 kΩ"
+],
+[
+"(a) bandwidth",
+"BW = fo/Q = 120.0 Hz  (peak gain 2Q² = 50.0)"
+],
+[
+"(a) check on the exact circuit",
+"peak 600.0 Hz, edges 543.0 Hz – 663.0 Hz, gain 50.0"
+],
+[
+"(b) frequency scaling to 2.25 kHz: KF = 3.75, C ÷ KF",
+"C1 = C2 = 2.667 nF, R1 and R2 unchanged; fo = 2.25 kHz, Q = 5, BW = 450.0 Hz"
+]
+],
+"how": "From Eq. (12.32) with R3 = ∞: Q = ½√(R2/R1) ⇒ R2 = 4Q²R1, and ωo = 1/(C√(R1R2)) = 1/(2Q·R1·C) ⇒ R1 = 1/(2Q·ωo·C). Frequency scaling (Eq. 12.37): C′ = C/KF with KF = 2250/600. The exact circuit confirms fo, the bandwidth and the gain 2Q².",
+"assume": [
+"The capacitor is not specified: C1 = C2 = 10 nF is chosen (R1, R2 scale as 1/C)."
+],
+"circuit": "Fig. 12.9 (p.763): band-pass filter with the inverting op-amp configuration: vI → R1 → v1 (R3 omitted, R3 = ∞); C1 from v1 to the output; C2 from v1 to the − input; R2 from the − input to the output."
+},
+"12.52": {
+"number": "12.52",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 763,
+"parts": [
+[
+"(a) center frequency",
+"ωo = 1.0 (unchanged; also the geometric mean of the band edges 0.89847 and 1.113)"
+],
+[
+"(a) bandwidth",
+"BW = ωo·√(√2 − 1)/Q = 0.21453 (a single stage has ωo/Q = 0.33333)"
+],
+[
+"(a) Q of the overall filter",
+"Q = ωo/BW = Q/√(√2 − 1) = 4.6613"
+],
+[
+"(b) transfer function",
+"A(s) = [−2Q·s·ωo/(s² + sωo/Q + ωo²)]² with 2Q = 6, ωo = 1: A(s) = 36 s² / (s² + s/3 + 1)²; center gain (2Q²)² = 324"
+]
+],
+"how": "Each stage (C1 = C2, R3 = ∞) has A(s) = −2Q·sωo/(s² + sωo/Q + ωo²) with gain 2Q² at ωo (Sec. 12.3.3). The cascade is the product (Eq. 12.3), so the center frequency stays ωo; |A|/|A(jωo)| = [1 + Q²(x − 1/x)²]⁻¹ for two stages and the −3 dB condition gives (x − 1/x)² = (√2 − 1)/Q², i.e. BW = ωo·√(√2 − 1)/Q. Confirmed by root-finding on the exact product.",
+"assume": [
+"Q of the overall filter is defined as center frequency / (−3 dB bandwidth)."
+],
+"circuit": "Fig. 12.9 (p.763): band-pass filter with the inverting op-amp configuration (R3 = ∞, C1 = C2); two identical filters in cascade."
+},
+"12.54": {
+"number": "12.54",
+"section": "12.3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 763,
+"parts": [
+[
+"Single stages",
+"fo1 = 5 kHz, fo2 = 6 kHz, Q = 5 each (bandwidths fo/Q = 1 kHz and 1.2 kHz, peak gain 2Q² = 50 each)"
+],
+[
+"Center frequency (maximum of the overall response)",
+"5.4772 kHz (geometric mean of the −3 dB edges: 5.4772 kHz; geometric mean of fo1, fo2: 5.4772 kHz)"
+],
+[
+"−3 dB frequencies",
+"4.817 kHz and 6.228 kHz"
+],
+[
+"Bandwidth",
+"1.411 kHz"
+],
+[
+"Q of the overall filter = fp/BW",
+"3.882"
+],
+[
+"Peak gain",
+"1364.0 (62.69 dB; the response has a single hump)"
+]
+],
+"how": "Overall response = product of the two single-stage band-pass responses A_k(jf) = −2Q·j(f/fo_k)/(1 − (f/fo_k)² + j(f/fo_k)/Q) (Eq. 12.3 with R3 = ∞). The peak is found by a one-dimensional search, the −3 dB frequencies relative to the peak by root finding. The same numbers come from solving the two filters of Fig. 12.9 as exact circuits (op amp, R, C) and multiplying their gains (the second filter does not load the first because the first output is an op-amp output).",
+"assume": [
+"\"Center frequency\" is taken as the frequency of maximum gain (the response is not symmetric on a log scale); the geometric mean of the band edges is also shown. Q = center frequency / bandwidth."
+],
+"circuit": "Fig. 12.9 (p.763): band-pass filter with the inverting op-amp configuration (R3 = ∞, C1 = C2); two such filters in cascade, tuned to 5 kHz and 6 kHz, Q = 5 each."
+},
+"12.67": {
+"number": "12.67",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 793,
+"printed": 764,
+"parts": [
+[
+"(a) input 0110: vO = −VREF(b1/2 + b2/4 + b3/8 + b4/16)",
+"−0.96 V (= −2.56·(0.25 + 0.125); magnitude 0.96 V)"
+],
+[
+"(b) input 1001",
+"-1.44 V (= −2.56·(0.5 + 0.0625))"
+],
+[
+"(c) table of all 16 codes (vO = −VREF·N/16, LSB = VREF/16 = 0.16 V)",
+"0000: 0 V; 0001: -0.16 V; 0010: -0.32 V; 0011: -0.48 V; 0100: -0.64 V; 0101: -0.8 V; 0110: -0.96 V; 0111: -1.12 V; 1000: -1.28 V; 1001: -1.44 V; 1010: -1.6 V; 1011: -1.76 V; 1100: -1.92 V; 1101: -2.08 V; 1110: -2.24 V; 1111: -2.4 V"
+]
+],
+"how": "The op amp with R in feedback sums the currents of the legs: vO = −R·Σ b_k·VREF/R_k = −VREF(b1/2 + b2/4 + b3/8 + b4/16) (Eq. 12.52 gives the magnitude). Exact nodal solution of the circuit for all 16 codes gives the same values.",
+"assume": [
+"The circuit as drawn inverts, so vO is negative; Eq. (12.52) in the book quotes the same value without the minus sign."
+],
+"circuit": "Fig. P12.67 (p.764): weighted-resistor DAC: switches b1…b4 (b1 = MSB) connect resistors 2R, 4R, 8R, 16R either to ground (0) or to VREF (1); the summing node is the − input of an op amp with feedback resistor R, + input grounded; the switch settings drawn are b1 b2 b3 b4 = 0 1 1 0."
+},
+"12.68": {
+"number": "12.68",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 793,
+"printed": 764,
+"parts": [
+[
+"Offset error (output for input code 0000)",
+"vOS = Vos(1 + Rf/Rp) = 9.922 mV (Rp = 2R‖4R‖8R‖16R = 1.0667R; noise gain 1 + 1.05R/Rp = 1.9844); = 0.062 LSB"
+],
+[
+"Gain error (deviation of the slope from the ideal converter)",
+"+5.0 % (slope 1.05 times the ideal); at full scale (code 1111): 0.12 V more negative = 0.75 LSB"
+]
+],
+"how": "With feedback resistor Rf = 1.05R the transfer function is vO = −1.05·VREF·N/16 + Vos·(1 + Rf/Rp): the offset voltage is amplified by the noise gain of the summing amplifier (all legs are low-impedance to ground or VREF, so the noise gain does not depend on the code) and adds to every output; the slope is 5 % high. Exact nodal solution for all 16 codes confirms both.",
+"assume": [
+"VREF = 2.56 V from Prob. 12.67 is used (it affects only the values in LSB, not the % gain error or the offset in mV).",
+"Offset error = output for the all-zero code, gain error = relative deviation of the slope (Sec. 12.5.2)."
+],
+"circuit": "Fig. P12.67 (p.764): weighted-resistor DAC: switches b1…b4 (b1 = MSB) connect resistors 2R, 4R, 8R, 16R either to ground (0) or to VREF (1); the summing node is the − input of an op amp with feedback resistor R, + input grounded; the switch settings drawn are b1 b2 b3 b4 = 0 1 1 0."
 },
 "12.69": {
 "number": "12.69",
@@ -3218,7 +6141,159 @@
 ]
 ],
 "how": "Step size = ΔVout/LSB, differential error = step − 1 LSB, integral error = actual output − ideal line through the end points, in LSB; the sum of the differential errors reproduces the integral error.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"12.70": {
+"number": "12.70",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 793,
+"printed": 764,
+"parts": [
+[
+"Input 0001 (b1 only)",
+"vO = -1.25 V (= −VREF/2)"
+],
+[
+"Input 0010 (b2)",
+"vO = -0.625 V (= −VREF/4)"
+],
+[
+"Input 0100 (b3)",
+"vO = -0.3125 V (= −VREF/8)"
+],
+[
+"Input 1000 (b4)",
+"vO = -0.15625 V (= −VREF/16)"
+]
+],
+"how": "Successive Thévenin equivalents from the left: the termination 2R in parallel with a 2R leg is R, which in series with R gives 2R again, so at every node the part of the ladder to the left looks like 2R; a switched leg therefore delivers VREF/2 to the next node and each step toward the LSB halves the contribution. For the MSB leg next to the op amp, i = VREF/(2R) and vO = −R·i = −VREF/2; the others are VREF/4, VREF/8 and VREF/16. The nodal solution of the whole ladder agrees.",
+"assume": [
+"The word is written b4 b3 b2 b1 as in the figure, so \"0001\" switches b1 (the leg next to the op amp, the MSB of the converter, weight 1/2) — the four combinations give the four binary weights.",
+"The circuit as drawn inverts, so the outputs are negative (the magnitudes are VREF/2 … VREF/16)."
+],
+"circuit": "Fig. P12.70 (p.764): R-2R ladder DAC: a 2R termination to ground at the left, then three series resistors R; four legs of 2R (b4 at the left end … b1 next to the op amp) switched between ground (0) and VREF (1); the right end of the ladder is the − input (virtual ground) of an op amp with feedback R; drawn switches: b4 b3 b2 b1 = 0 1 1 0."
+},
+"12.72": {
+"number": "12.72",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 794,
+"printed": 765,
+"parts": [
+[
+"(a) nominal outputs and errors (ideal step = (u(111) − u(000))/7 = 0.12598 VREF)",
+"000: 0 × VREF; INL 0 LSB | 001: 0.13187 × VREF; step 1.047 LSB, DNL 0.0467, INL 0.0467 LSB | 010: 0.25 × VREF; step 0.9377 LSB, DNL -0.0623, INL -0.0156 LSB | 011: 0.38187 × VREF; step 1.047 LSB, DNL 0.0467, INL 0.0312 LSB | 100: 0.5 × VREF; step 0.9377 LSB, DNL -0.0623, INL -0.0312 LSB | 101: 0.63187 × VREF; step 1.047 LSB, DNL 0.0467, INL 0.0156 LSB | 110: 0.75 × VREF; step 0.9377 LSB, DNL -0.0623, INL -0.0467 LSB | 111: 0.88187 × VREF; step 1.047 LSB, DNL 0.0467, INL 0 LSB"
+],
+[
+"(a) largest errors for the nominal resistors",
+"differential 0.0623 LSB, integral 0.0467 LSB"
+],
+[
+"(b) worst case with 5 % resistors (R, 2R, 4R, 8R each ±5 %)",
+"differential linearity error up to 0.408 LSB, integral linearity error up to 0.204 LSB"
+]
+],
+"how": "vO/VREF = −Σ b_k R/R_k: nominal weights 0.5, 0.25 and 1.2/9.1 = 0.1319 (instead of 0.125). The gain is not the ideal one, so the ideal step is recomputed from the end points, (u111 − u000)/7 (as in Table 12.7 and Prob. 12.69); DNL = step/LSB − 1 and INL = running sum of the DNL. Worst case: the largest errors over the 16 corners of the ±5 % tolerance box of the four resistors; 20 000 random resistor sets inside the box never exceed them.",
+"assume": [
+"The 8R resistor is 9.1 kΩ (a standard value), not 9.6 kΩ, so even the nominal converter has linearity errors.",
+"The worst case is found at the corners of the tolerance box (checked with random sets); sign convention: the circuit inverts, the table lists the magnitudes."
+],
+"circuit": "Fig. P12.67 (p.765): weighted-resistor DAC as in Fig. P12.67 with three bits: resistors 2R = 2.4 kΩ (b1), 4R = 4.8 kΩ (b2), 8R = 9.1 kΩ (b3) and feedback R = 1.2 kΩ."
+},
+"12.76": {
+"number": "12.76",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 794,
+"printed": 765,
+"parts": [
+[
+"Output magnitudes, steps, DNL, INL",
+"000: 0 V; INL 0 LSB | 001: 0.73867 V; step 1.182 LSB, DNL 0.182, INL 0.182 LSB | 010: 1.4339 V; step 1.112 LSB, DNL 0.112, INL 0.294 LSB | 011: 2.0894 V; step 1.049 LSB, DNL 0.0487, INL 0.343 LSB | 100: 2.7084 V; step 0.9905 LSB, DNL -0.00952, INL 0.333 LSB | 101: 3.2941 V; step 0.9369 LSB, DNL -0.0631, INL 0.27 LSB | 110: 3.8488 V; step 0.8876 LSB, DNL -0.112, INL 0.158 LSB | 111: 4.3752 V; step 0.8421 LSB, DNL -0.158, INL 0 LSB"
+],
+[
+"Ideal LSB (end points)",
+"0.62503 V (VREF/8 = 0.625 V)"
+],
+[
+"Largest errors",
+"differential 0.182 LSB, integral 0.343 LSB"
+]
+],
+"how": "With RREF the reference node moves with the data: v_ref = VREF/(1 + RREF·G) where G is the total conductance of the legs connected to it, and |vO| = R·G·v_ref. R = 1.2188 kΩ makes the full-scale code 111 equal to 7/8·VREF (zero gain error), so the ideal LSB is VREF/8; the data-dependent drop across RREF (superposition error) is what produces the linearity errors. Exact nodal solution of the circuit for all 8 codes agrees with the closed form.",
+"assume": [
+"The circuit inverts; magnitudes are listed. The ideal step is taken from the end points; with R = 1.2188 kΩ this equals VREF/8 (verified)."
+],
+"circuit": "Fig. P12.76 (p.765): weighted-resistor DAC with three bits: resistors 2 kΩ (b1), 4 kΩ (b2), 8 kΩ (b3) from the − input of the op amp (feedback R, + input grounded) to switches connected to ground (0) or to VREF through the series resistor RREF (1)."
+},
+"12.77": {
+"number": "12.77",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 794,
+"printed": 765,
+"parts": [
+[
+"(a) R for zero gain error (code 111 → 7/8 VREF) with Ron = 200 Ω and RREF = 0",
+"R = 0.875/Σ[1/(Rk + Ron)] = 1.0742 kΩ (Σ = 0.81459 mS); with RREF = 250 Ω the same condition gives 1.2929 kΩ"
+],
+[
+"(b) RREF = 0, R from (a)",
+"largest DNL 0.188 LSB, largest INL 0.094 LSB (step sizes in LSB: 1.048, 0.9981, 1.048, 0.8121, 1.048, 0.9981, 1.048)"
+],
+[
+"(c) RREF = 250 Ω, same R as in (a)",
+"largest DNL 0.224 LSB, largest INL 0.417 LSB (end-point LSB 0.51925 V; steps in LSB: 1.224, 1.1, 1.092, 0.8052, 0.99, 0.895, 0.8933); gain error: full scale 3.6348 V instead of 4.375 V = -16.9 % (not zero any more); with R re-trimmed to 1.2929 kΩ the gain error vanishes and the linearity errors stay the same (0.224 and 0.417 LSB) because they are measured against the end-point step"
+]
+],
+"how": "Each leg is Rk + Ron (Ron = 200 Ω of its switch). |vO| = R·G·VREF/(1 + RREF·G) with G = Σ b_k/(Rk + Ron). The on-resistance is not binary-weighted, so the effective weights 1/(2.2k), 1/(4.2k), 1/(8.2k) are not in the ratio 4:2:1 and the converter is nonlinear. Zero gain error means |vO(111)| = 7/8·VREF. Errors are measured against the end-point step. Exact nodal solution of the circuit agrees with the closed form.",
+"assume": [
+"Part (a) is solved with RREF = 0 (the statement does not say; the RREF = 250 Ω value is also given).",
+"In (c) the resistor R is kept from (a); the end-point LSB is recomputed because a gain error now exists (the re-trimmed case is also shown)."
+],
+"circuit": "Fig. P12.76 (p.765): weighted-resistor DAC with three bits: resistors 2 kΩ (b1), 4 kΩ (b2), 8 kΩ (b3) from the − input of the op amp (feedback R, + input grounded) to switches connected to ground (0) or to VREF through the series resistor RREF (1)."
+},
+"12.82": {
+"number": "12.82",
+"section": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 794,
+"printed": 765,
+"parts": [
+[
+"Number of resistors (Fig. 12.25 technique, 2ⁿ equal resistors)",
+"1024"
+],
+[
+"(a) squares per resistor = R/Rs",
+"10.0 squares"
+],
+[
+"(a) squares of the whole string",
+"1024 × 10.0 = 10240 squares"
+],
+[
+"(b) length of the string for W = 2.5 μm",
+"10240 × 2.5 μm = 25.6 mm = 1.008 inches"
+]
+],
+"how": "The resistor string of Fig. 12.25 has 2ⁿ equal resistors (1024 for 10 bits, the exercise in Sec. 12.5.3). A resistor of R ohms in a film of sheet resistance Rs has R/Rs squares; its length is squares × width.",
+"assume": [
+"One square is taken as one width of length (all resistors have the minimum width, same material)."
+],
+"circuit": "Fig. 12.25 (p.765): inherently monotonic DAC: a long string of equal resistors between VREF and ground, a switch tree that connects one tap to a voltage-follower op amp, decoded from the binary input (a 3-bit version has 8 resistors)."
 },
 "12.83": {
 "number": "12.83",
@@ -3245,7 +6320,8 @@
 "how": "Eq. (12.53) and Fig. 12.28: the quantization error of an ideal ADC is at most ½ LSB.",
 "assume": [
 "Range taken as (N ± ½)·LSB as in Fig. 12.28."
-]
+],
+"circuit": null
 },
 "12.84": {
 "number": "12.84",
@@ -3270,7 +6346,8 @@
 ]
 ],
 "how": "Code = nearest integer to vX/LSB (quantization error ≤ ½ LSB).",
-"assume": []
+"assume": [],
+"circuit": null
 },
 "12.86": {
 "number": "12.86",
@@ -3293,7 +6370,83 @@
 "how": "The counter runs until the DAC output reaches vX: N clock periods, with N = vX/VFS·2¹² truncated (the DAC output must not exceed vX).",
 "assume": [
 "Code obtained by truncation (counting converter stops when the DAC output first exceeds vX)."
+],
+"circuit": null
+},
+"12.88": {
+"number": "12.88",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 795,
+"printed": 766,
+"parts": [
+[
+"(a) 12-bit",
+"LSB = VFS/2ⁿ = 805.66 μV; offset < 0.1 LSB = 80.57 μV"
+],
+[
+"(b) 20-bit",
+"LSB = VFS/2ⁿ = 3.1471 μV; offset < 0.1 LSB = 314.7 nV"
 ]
+],
+"how": "The comparator offset VOS shifts every transition of the successive-approximation converter by VOS, so it is an error of VOS/LSB least-significant bits: require VOS < 0.1·VFS/2ⁿ.",
+"assume": [],
+"circuit": "Fig. 12.33 (p.766): successive-approximation ADC: a comparator compares the input vX with the output of a DAC driven by the successive-approximation register (SAR) and the clock; the comparator decides each bit."
+},
+"12.90": {
+"number": "12.90",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 795,
+"printed": 766,
+"parts": [
+[
+"(a) effective reference voltage (offset +10 mV at the + input)",
+"V − Vos = 2.99 V (the ramp slope is (V − Vos)/RC); for an offset of the opposite sign V + Vos = 3.01 V"
+],
+[
+"(b) RC time constant (ramp reaches VFS in T = 1/30 s)",
+"RC = V·T/VFS = 19.53 ms"
+],
+[
+"(b) C for R = 50 kΩ",
+"390.6 nF"
+]
+],
+"how": "Integrator (Fig. P12.90): vO = −(1/RC)∫(V − Vos)dt, so the offset appears as an error of the reference: Vref,eff = V − Vos. For a single-slope converter |vO| = V·t/RC must equal VFS at t = T: RC = V·T/VFS.",
+"assume": [
+"The sign of the offset is not given: +10 mV at the + input is assumed (V − Vos); the opposite sign is also shown.",
+"In (b) the reference V = 3 V of part (a) is used (nothing else is specified) and the offset is neglected."
+],
+"circuit": "Fig. P12.90 (p.766): ramp generator of an integrating converter: source V through R to the − input of an op amp with capacitor C in feedback (a reset switch across C), + input grounded; output vO."
+},
+"12.91": {
+"number": "12.91",
+"section": "12.6",
+"modules": [
+"m05"
+],
+"pdf": 795,
+"printed": 766,
+"parts": [
+[
+"Output (t ≥ 0)",
+"vO(t) = −A·V·[1 − exp(−t/((A + 1)RC))] = −2×10⁵·[1 − e^(−t/(40001·RC))] V (the ideal ramp is −V·t/RC)"
+],
+[
+"Minimum RC for an error below 1 mV at t = 200 ms",
+"RC ≥ 64.04 ms (64.04 ms); error at that RC = 1.0 mV"
+]
+],
+"how": "Op amp with finite gain A: vO = −A·v−, KCL at the − node gives (A + 1)RC·dvO/dt + vO = −A·V, so vO(t) = −A·V(1 − e^(−t/τ)), τ = (A + 1)RC (a first-order lag, not a perfect ramp). The error |ideal − actual| at T = 0.2 s is ≈ V·T/(A·RC) + V·T²/(2A·RC²), decreasing with RC; the minimum RC is found by root finding on the exact expression. Numerical integration of the circuit equation reproduces the output.",
+"assume": [
+"The error is the difference of magnitudes of the ideal ramp −V·t/RC and the actual output at t = 200 ms; \"less than 1 mV\" is taken as the equality limit for the minimum RC."
+],
+"circuit": "Fig. P12.90 (p.766): integrator: source V through R to the − input of an op amp with capacitor C in feedback (reset switch across C), + input grounded; a 5-V step is applied at t = 0."
 },
 "12.92": {
 "number": "12.92",
@@ -3314,7 +6467,240 @@
 ]
 ],
 "how": "A timing error ΔT in T1 is a fractional error ΔT/T1 of full scale; 0.1 LSB = 0.1/2²⁰ of full scale.",
-"assume": []
+"assume": [],
+"circuit": null
+},
+"12.97": {
+"number": "12.97",
+"section": "12.7",
+"modules": [
+"m07"
+],
+"pdf": 796,
+"printed": 767,
+"parts": [
+[
+"Frequency of oscillation fo = 1/(2πRC)",
+"62.41 kHz"
+],
+[
+"Conditions for the amplitude network, Eq. (12.82)",
+"(R2 + R3)/R1 = 2.08 > 2 and (R2 + R3‖R4)/R1 = 1.805 < 2: both satisfied"
+],
+[
+"Amplitude from Eq. (12.85), VD = 0.6 V",
+"vO ≈ 3VD/[(2 − R2/R1)(1 + R4/R3) − R4/R1] = 3.732 V (from KCL of Eqs. 12.83–12.84, equal to Eq. 12.85)"
+],
+[
+"Check: time-domain simulation of the same circuit (ideal op amp, diode drop 0.6 V)",
+"frequency 62.37 kHz, amplitude 4.41 V (Eq. 12.85 is only an estimate)"
+]
+],
+"how": "Wien bridge (Eq. 12.74–12.75): the loop gain is zero-phase at ωo = 1/RC where |T| = G/3, so oscillation needs G = 3. The diode network (Fig. 12.48) switches R4 in parallel with R3 at the peaks; the amplitude estimate of Eq. (12.85) follows from the equivalent circuit with D1 on (Fig. 12.49). Anchor: the book's own exercise with the Fig. 12.48 values (R = 10 kΩ, C = 1 nF, R1 = R2 = 10 kΩ, R3 = 12 kΩ, R4 = 24 kΩ, VD = 0.6 V) gives 15.9 kHz and 3.0 V, reproduced here.",
+"assume": [
+"The diode on-voltage is not given: VD = 0.6 V as in the book's exercise is assumed (the amplitude is proportional to VD).",
+"The time-domain simulation (piecewise-linear diodes) gives a larger amplitude than Eq. (12.85) because the book's formula is a peak-voltage estimate; the book's own SPICE value for its exercise is 3.33 V against 3.0 V from the formula."
+],
+"circuit": "Fig. 12.48 (p.767): Wien-bridge oscillator: series RC from the output to the + input and parallel RC from the + input to ground; the − input network R1 (to ground), R2, then R3 in parallel with R4 + back-to-back diodes D1/D2 to the output (the figure also shows the lamp version of Fig. 12.47)."
+},
+"12.99": {
+"number": "12.99",
+"section": "12.7",
+"modules": [
+"m07"
+],
+"pdf": 796,
+"printed": 767,
+"parts": [
+[
+"Frequency fo = 1/(2π√3·RC)",
+"18.38 kHz"
+],
+[
+"Start-up and limiting condition (RF must pass 12R = 60 kΩ)",
+"RF (diodes off) = R2 + R3 = 62.0 kΩ > 12R; RF (diode on, R4 in parallel with R3) = 59.29 kΩ < 12R"
+],
+[
+"Amplitude estimate (diode on, VD = 0.6 V; by the same method as Eq. 12.85)",
+"Vpk ≈ VD/[(1 − R2/12R)(1 + R4/R3) − R4/12R] = 9.153 V"
+],
+[
+"Check: time-domain simulation (ideal op amp, diode drop 0.6 V)",
+"frequency 18.37 kHz, amplitude 11.1 V"
+]
+],
+"how": "Phase-shift oscillator (Fig. 12.46, Eqs. 12.78–12.81): T(jωo) = RF/(12R) at ωo = 1/(√3RC), so RF must be 12R. With the diode network of Fig. 12.50 RF = R2 + R3 (> 12R, oscillation starts) and falls below 12R when a diode conducts, which limits the amplitude. The amplitude estimate sets the current through RF equal to the value that the RC network needs at the peak, vO/(12R), with the equivalent circuit of D1 on (R4 in series with VD, in parallel with R3), the − input being a virtual ground.",
+"assume": [
+"The book gives no amplitude formula for the phase-shift oscillator: the estimate above is derived here by analogy with Eq. (12.85), and VD = 0.6 V is assumed. The time-domain simulation of the piecewise-linear circuit gives a somewhat larger amplitude (checked within 30 %).",
+"No supply voltage is given; the amplitude of about 10 V assumes supplies larger than that."
+],
+"circuit": "Fig. 12.50 (p.767): phase-shift oscillator: three series capacitors C with two resistors R to ground (after the first and second capacitor) feeding the − input of an op amp; the feedback network RF = R2 in series with R3, with R4 and the anti-parallel diodes D1, D2 in parallel with R3."
+},
+"12.101": {
+"number": "12.101",
+"section": "12.7",
+"modules": [
+"m07"
+],
+"pdf": 796,
+"printed": 767,
+"parts": [
+[
+"(a) circuit",
+"four identical inverting integrators (R from the input to the − input, C in feedback, + input grounded), each output driving the next; the output of the fourth is fed back to the input of the first (Fig. 10.34 integrator ×4)"
+],
+[
+"(b) frequency of oscillation",
+"T(s) = (−1/sRC)⁴ = 1/(sRC)⁴ has gain 1 and phase 0° at ωo = 1/RC = 1.0 Mrad/s: fo = 1/(2πRC) = 159.2 kHz"
+],
+[
+"(c) phasors of the four outputs for Vo1 = 1∠0°",
+"Vo1 = 1∠0°, Vo2 = 1∠90°, Vo3 = 1∠180°, Vo4 = 1∠270° (= 1∠−90°) (each integrator gives −1/j = +90° at ωo)"
+]
+],
+"how": "Each ideal integrator has Vo/Vi = −1/(sRC); four in a ring give T(s) = 1/(sRC)⁴, which equals +1 at s = jωo with ωo = 1/RC (the phase of each stage is +90°, 4 × 90° = 360°). The characteristic equation s⁴ = (1/RC)⁴ has the roots ±jωo (and ±ωo); checked numerically. Part (d) (amplitude-stabilisation design for about 2 V) is a design choice and is not solved here.",
+"assume": [
+"Part (a) is a drawing: it is described in words.",
+"Part (d) is an open design (no specific stabilisation network is prescribed) and is not answered.",
+"The ideal integrator ring also has a real root +ωo (a growing mode); the oscillation criterion used is the Barkhausen condition of the book."
+],
+"circuit": "Fig. 10.34 (p.767): inverting integrator: input resistor R to the − input of the op amp, capacitor C in feedback, + input grounded (four of them are cascaded in a ring in this problem)."
+},
+"12.114": {
+"number": "12.114",
+"section": "12.9",
+"modules": [
+"m03",
+"m07"
+],
+"pdf": 798,
+"printed": 769,
+"parts": [
+[
+"Design equations (output 0 V / 5 V; node on the + input)",
+"VL = 5·RB‖RF/(RA + RB‖RF) with output low, VH = VL + 5/(RF·G) with G = 1/RA + 1/RB + 1/RF"
+],
+[
+"Choice RA = 10 kΩ (as in the figure)",
+"RF = 95.0 kΩ, RB = 2.405 kΩ (RF = 9.5·RA, RB = 0.2405·RA)"
+],
+[
+"Thresholds (exact circuit)",
+"upper 1.05 V, lower 0.95 V: centre 1.0 V, hysteresis ±0.05 V"
+]
+],
+"how": "Fig. P12.111 topology: the + input is the node of RA (to the 5-V supply), RB (to ground) and RF (to the comparator output, 0 V or 5 V), the input signal is applied to the − input. With the output high the node voltage is VH, with the output low VL; centre 1 V and hysteresis ±0.05 V need VL = 0.95 V and VH = 1.05 V, which give RF = 9.5·RA and RB = RA/4.158.",
+"assume": [
+"Only two conditions (centre, hysteresis) for three resistors: RA = 10 kΩ is chosen as in Fig. P12.111; the others follow (the nearest standard values should be chosen in practice).",
+"The comparator output swings 0 V to 5 V (supply pins +5 V and ground in the figure)."
+],
+"circuit": "Fig. P12.111 (p.769): Schmitt trigger: comparator (supply 5 V and ground); + input node with 10 kΩ to a 5-V source, 15 kΩ to ground and 100 kΩ to the output; the signal vS on the − input."
+},
+"12.117": {
+"number": "12.117",
+"section": "12.9",
+"modules": [
+"m03",
+"m07"
+],
+"pdf": 798,
+"printed": 769,
+"parts": [
+[
+"(a) design (β = R1/(R1 + R2) = 0.5, symmetric supplies)",
+"R1 = R2 = 12.0 kΩ, R = 15.0 kΩ, C = T/(2R·ln 3) = 30.34 nF  (T = 2RC·ln[(1 + β)/(1 − β)] = 1 ms)"
+],
+[
+"(a) peak output current (when the output switches)",
+"(VCC + βVEE)/R + VCC/(R1 + R2) = 708.0 μA < 1 mA"
+],
+[
+"(b) worst-case frequency (R ±5 %, C ±10 %)",
+"815.5 Hz to 1.244 kHz (nominal 1 kHz)"
+],
+[
+"(c) supplies +4.75 V and −5.25 V, nominal components",
+"T1 = RC ln[(1 + βVEE/VCC)/(1 − β)], T2 = RC ln[(1 + βVCC/VEE)/(1 − β)]: f = 999.0 Hz"
+]
+],
+"how": "Astable multivibrator (Eqs. 12.91, 12.94, 12.95): T = T1 + T2 with T1 = RC·ln[(1 + βVEE/VCC)/(1 − β)], T2 = RC·ln[(1 + βVCC/VEE)/(1 − β)]; symmetric supplies: T = 2RC·ln[(1 + β)/(1 − β)]. The current limit is met at the switching instant, when the capacitor is at −βVEE. Worst case = extreme over the 16 corners of the tolerance box (confirmed by 2000 random sets); exact event-driven numerical simulation of the capacitor reproduces the period of the design and of case (c).",
+"assume": [
+"The statement leaves free β, R and C: β = 0.5 with R1 = R2 = 12 kΩ and R = 15 kΩ is chosen (any other choice meeting the 1 mA limit works; only the product RC·ln[(1+β)/(1−β)] matters for the frequency).",
+"\"Worst-case\" means the minimum and maximum frequency over the tolerance extremes of R1, R2, R (±5 %) and C (±10 %)."
+],
+"circuit": "Fig. 12.60 (p.769): astable multivibrator: comparator (op amp) with positive-feedback divider R2 (from the output) and R1 (to ground) on the + input, and R from the output to the − input with C from the − input to ground; supplies VCC and −VEE."
+},
+"12.119": {
+"number": "12.119",
+"section": "12.9",
+"modules": [
+"m03",
+"m07"
+],
+"pdf": 798,
+"printed": 769,
+"parts": [
+[
+"β = R1/(R1 + R2)",
+"0.35714"
+],
+[
+"RC",
+"1.683 ms"
+],
+[
+"Pulse width T = RC·ln[(1 + VD/VCC)/(1 − β)]",
+"893.8 μs"
+],
+[
+"Recovery time Tr = RC·ln[(1 + βVCC/VEE)/(1 − VD/VEE)]",
+"678.9 μs"
+],
+[
+"Minimum interval between triggers",
+"1.573 ms"
+]
+],
+"how": "Monostable multivibrator (Eqs. 12.100 and 12.101): the capacitor starts at −VD (clamped by D2), charges toward VCC until it reaches βVCC (pulse width T) and then discharges from βVCC toward −VEE until D2 clamps it at −VD again (recovery time Tr). Numerical event simulation of the two exponentials gives the same times. Anchor: the book's exercise (Fig. 12.64: VCC = VEE = 5 V, R1 = 22 kΩ, R2 = 18 kΩ, R = 11 kΩ, C = 2 nF) gives 20.4 μs and 33.4 μs between triggers, which the formulas reproduce with VD = 0.7 V.",
+"assume": [
+"The diode on-voltage is not given: VD = 0.7 V is used (it reproduces the book's exercise 20.4 μs / 33.4 μs).",
+"R1 = 15 kΩ (to ground) and R2 = 27 kΩ (feedback) read from Fig. P12.116, with R = 51 kΩ and C = 0.033 μF; the supplies are ±7.5 V."
+],
+"circuit": "Fig. P12.116 (p.769): astable-multivibrator comparator (op amp with the output-switching symbol): + input with 15 kΩ to ground and 27 kΩ from the output; 51 kΩ from the output to the − input with 0.033 μF from the − input to ground; supply +12 V (changed to ±7.5 V in this problem) and two diodes added as in Fig. 12.62."
+},
+"12.120": {
+"number": "12.120",
+"section": "12.9",
+"modules": [
+"m03",
+"m07"
+],
+"pdf": 798,
+"printed": 769,
+"parts": [
+[
+"β from the ratio T/Tr = 4",
+"β = R1/(R1 + R2) = 0.95753  (R2/R1 = 0.04435)"
+],
+[
+"RC from T = RC·ln[(1 + VD/VCC)/(1 − β)]",
+"6.079 μs"
+],
+[
+"Example choice",
+"C = 100 pF → R = 60.79 kΩ; R1 = 19 kΩ, R2 = 842.7 Ω (≈ 1 kΩ gives β = 0.95)"
+],
+[
+"Check (formulas and numerical simulation)",
+"T = 20.0 μs, Tr = 5.0 μs; stability condition βVEE = 4.79 V > VD"
+]
+],
+"how": "Two equations (Eqs. 12.100, 12.101) fix β and RC: the ratio T/Tr = ln[(1 + VD/VCC)/(1 − β)] / ln[(1 + βVCC/VEE)/(1 − VD/VEE)] = 4 gives β by root finding, then RC = T/ln[(1 + VD/VCC)/(1 − β)]. R, C and R1 are then free choices.",
+"assume": [
+"VD = 0.7 V is used (it reproduces the book's exercise 20.4 μs / 33.4 μs).",
+"The requirement T/Tr = 4 forces β close to 1 (about 0.95): R2 must be only about 5 % of R1, so the design is sensitive to resistor tolerance; C = 100 pF and R1 = 19 kΩ are example choices."
+],
+"circuit": "Fig. 12.62 (p.769): monostable multivibrator: comparator with divider R2 (from the output) and R1 (to ground) on the + input, R from the output to the − input with C from the − input to ground; trigger diode D1 and clamp diode D2 on the − input."
 }
 },
 "skipped": {
@@ -3388,13 +6774,6 @@
 ],
 "pdf": 710
 },
-"12.15": {
-"reason": "depends on Problem 12.14 and Figure P12.14",
-"modules": [
-"m04"
-],
-"pdf": 788
-},
 "12.27": {
 "reason": "depends on the design of Problem 12.26 (spreadsheet design with a parameter table that is not in the text)",
 "modules": [
@@ -3408,13 +6787,6 @@
 "m04"
 ],
 "pdf": 790
-},
-"12.40": {
-"reason": "depends on Design Example 12.6 and Figure 12.5",
-"modules": [
-"m06"
-],
-"pdf": 791
 },
 "12.79": {
 "reason": "asks to derive a formula (no numerical answer)",
@@ -3432,13 +6804,6 @@
 },
 "12.89": {
 "reason": "the \"0.1 LSB time\" criterion for a successive-approximation converter is not defined in the text (clock frequency alone would be 16 × 50,000 = 800 kHz)",
-"modules": [
-"m05"
-],
-"pdf": 795
-},
-"12.90": {
-"reason": "the statement is truncated in the text (the converter is described in a figure)",
 "modules": [
 "m05"
 ],
@@ -3465,6 +6830,119 @@
 "m07"
 ],
 "pdf": 798
+},
+"12.46": {
+"reason": "the sensitivity S(ωo, Q) of the band-pass filter depends on which element is varied to change Q (S = −1 if R2 changes, +1 if Rth changes); the statement does not say, and the value is independent of fo and Q",
+"modules": [
+"m06"
+],
+"pdf": 792
+},
+"12.71": {
+"reason": "the on-resistance of the MOSFET switch depends on the source voltage (body effect with VSB up to VREF) and on the operating point, which the statement does not fix; the answer would depend on that unstated assumption",
+"modules": [
+"m05"
+],
+"pdf": 793
+},
+"12.81": {
+"reason": "the figure shows only the op-amp stage; the reference of the inverted R-2R ladder (how VBB is applied to the ladder) is not given, so the output table cannot be determined without an assumption",
+"modules": [
+"m05"
+],
+"pdf": 794
+},
+"12.85": {
+"reason": "asks to plot a transfer function and to explain a design preference (no numerical answer)",
+"modules": [
+"m05"
+],
+"pdf": 795
+},
+"12.103": {
+"reason": "asks to draw an output waveform (no numerical answer)",
+"modules": [
+"m03"
+],
+"pdf": 796
+},
+"12.104": {
+"reason": "depends on the circuit in the EIA box on page 747 (not a numbered figure)",
+"modules": [
+"m03"
+],
+"pdf": 796
+},
+"12.107": {
+"reason": "asks to draw an output waveform (no numerical answer)",
+"modules": [
+"m03"
+],
+"pdf": 796
+},
+"10.71": {
+"reason": "the on-resistance of the MOSFET switch depends on the signal voltage vI passing through it (body effect with VSB = vI), which the statement does not give; no unique W/L follows",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 612
+},
+"11.38": {
+"reason": "transresistance amplifier of Fig. P11.8(d): the statement gives RI, RL and RF but no op-amp gain, input resistance or output resistance, which the loop gain needs",
+"modules": [
+"m04"
+],
+"pdf": 705
+},
+"11.40": {
+"reason": "transresistance amplifier of Fig. P11.8(d): no op-amp gain, input resistance or output resistance is given (same as Prob. 11.38)",
+"modules": [
+"m04"
+],
+"pdf": 705
+},
+"11.48": {
+"reason": "transconductance amplifier of Fig. P11.8(c): the statement gives RI, RL and R1 but no op-amp gain, input resistance or output resistance",
+"modules": [
+"m04"
+],
+"pdf": 705
+},
+"11.50": {
+"reason": "transconductance amplifier of Fig. P11.8(c): no op-amp gain, input resistance or output resistance is given (same as Prob. 11.48)",
+"modules": [
+"m04"
+],
+"pdf": 705
+},
+"11.52": {
+"reason": "depends on the amplifier of Example 11.7 (Fig. 11.18), whose transistor-level parameters are needed; not done",
+"modules": [
+"m04"
+],
+"pdf": 705
+},
+"11.53": {
+"reason": "current amplifier of Fig. P11.8(b): the statement gives RI, RL, R1 and R2 but no op-amp gain, input resistance or output resistance",
+"modules": [
+"m04"
+],
+"pdf": 706
+},
+"11.55": {
+"reason": "current amplifier of Fig. P11.8(b): no op-amp gain, input resistance or output resistance is given (same as Prob. 11.53)",
+"modules": [
+"m04"
+],
+"pdf": 706
+},
+"11.115": {
+"reason": "asks for the element values of a macro-model from a manufacturer data sheet (AD745J nominal specifications), which are not in the text",
+"modules": [
+"m02"
+],
+"pdf": 711
 }
 }
 }

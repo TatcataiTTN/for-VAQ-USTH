@@ -18,57 +18,51 @@
    "skipped": 3
   },
   "m02": {
-   "solved": 74,
+   "solved": 118,
    "total": 204,
-   "skipped": 15,
+   "skipped": 17,
    "bank": 19,
    "printed": 47,
-   "figure": 46,
    "sim": 3
   },
   "m03": {
-   "solved": 52,
+   "solved": 80,
    "total": 135,
    "bank": 9,
    "printed": 35,
-   "skipped": 4,
-   "figure": 32,
+   "skipped": 8,
    "sim": 3
   },
   "m04": {
-   "solved": 31,
+   "solved": 63,
    "total": 99,
    "bank": 7,
    "printed": 12,
-   "skipped": 8,
-   "figure": 37,
+   "skipped": 13,
    "sim": 4
   },
   "m05": {
-   "solved": 27,
+   "solved": 38,
    "total": 78,
-   "skipped": 8,
+   "skipped": 10,
    "bank": 8,
    "printed": 19,
-   "figure": 13,
    "sim": 3
   },
   "m06": {
-   "solved": 14,
+   "solved": 22,
    "total": 45,
    "bank": 6,
    "printed": 11,
    "skipped": 3,
-   "figure": 8,
    "sim": 3
   },
   "m07": {
-   "solved": 13,
+   "solved": 20,
    "total": 44,
    "skipped": 3,
    "bank": 9,
-   "printed": 12,
-   "figure": 7
+   "printed": 12
   },
   "m08": {
    "solved": 22,
@@ -124,10 +118,9 @@
    "total": 2
   },
   "jaeger5/example": {
-   "solved": 10,
+   "solved": 19,
    "total": 21,
-   "figure": 8,
-   "skipped": 3
+   "skipped": 2
   },
   "jaeger5/exercise": {
    "printed": 90,
@@ -135,20 +128,20 @@
    "sim": 1
   },
   "jaeger5/problem": {
-   "figure": 158,
+   "figure": 44,
    "total": 322,
-   "solved": 115,
+   "solved": 216,
    "sim": 28,
-   "skipped": 21
+   "skipped": 34
   }
  },
  "unique": {
-  "solved": 261,
+  "solved": 371,
   "bank": 64,
   "printed": 158,
-  "skipped": 46,
+  "skipped": 58,
   "sim": 29,
-  "figure": 166
+  "figure": 44
  },
  "unique_total": 724,
  "open": []

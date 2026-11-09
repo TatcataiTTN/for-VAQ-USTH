@@ -50,6 +50,7 @@ for e in raw:
     e['modules'] = modules_of(e)
     if b == 'jaeger5' and e['kind'] == 'problem' and e['number'] in SOLVED['solved']:
         sv = SOLVED['solved'][e['number']]; e['answer'] = parts_text(sv['parts']); e['ans_kind'] = 'computed'; e['how'] = sv['how']; e['assume'] = sv['assume']; e['parts'] = sv['parts']
+        if sv.get('circuit'): e['circuit'] = sv['circuit']
         e['modules'] = sorted(set(e['modules']) | set(sv['modules']))
     elif b == 'jaeger5' and e['kind'] == 'problem' and e['number'] in SOLVED['skipped']: e['skip'] = SOLVED['skipped'][e['number']]['reason']
     elif e.get('answer'): e['ans_kind'] = 'printed'

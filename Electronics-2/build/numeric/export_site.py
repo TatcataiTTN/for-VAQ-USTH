@@ -49,24 +49,31 @@ for m in MODS:                                                      # Floyd end-
                            note={'vi': 'Problem cuối chương của Floyd 9e có đáp án in ở phụ lục (chỉ các bài số lẻ), chương ' + ', '.join(sorted({str(e['chapter']) for e in part}, key=int)) + '. Bài cần mở file Multisim hoặc có đáp án là hình vẽ đã được bỏ. Thời gian là giả định của site (6 phút mỗi bài); mỗi bài 1 điểm. Bài ghi “cần hình” dùng hình của sách ở trang đã nêu; đáp án chỉ có kết quả cuối, cách làm bạn tự viết.',
                                  'en': 'End-of-chapter problems of Floyd 9e whose answer is printed in the appendix (odd-numbered only), chapter ' + ', '.join(sorted({str(e['chapter']) for e in part}, key=int)) + '. Problems that need a Multisim file or whose answer is a figure are left out. The time limit is this site\'s assumption (6 minutes per problem); 1 mark each. Parts marked “figure needed” use the book\'s figure at the page given; the answer is the final result only, you write the working yourself.'},
                            problems=probs))
+FIGS = json.load(open(os.path.join(OUT, 'figs.json'), encoding='utf-8')) if os.path.exists(os.path.join(OUT, 'figs.json')) else {}
+JFIGS = json.load(open(os.path.join(OUT, 'jfigs.json'), encoding='utf-8')) if os.path.exists(os.path.join(OUT, 'jfigs.json')) else {}
+def figs_of(e):                                       # the book figures the circuit description names (cut out by build/numeric/figexport.py for Floyd, jfigexport.py for Jaeger)
+    if not e.get('circuit'): return []
+    head = re.split(r'\(pp?\.|:', e['circuit'], 1)[0]
+    if e['book'] == 'jaeger5': return [JFIGS[l] for l in dict.fromkeys(re.findall(r'P?\d+\.\d+', head)) if l in JFIGS]
+    return [FIGS[l] for l in dict.fromkeys(re.findall(r'\d+–\d+', head)) if l in FIGS]
 for m in MODS:                                                      # problems without a printed answer, solved and checked by this site
     mid = m['id']
     items = [e for e in cat if e['book'] == 'jaeger5' and e['kind'] == 'problem' and mid in e['modules'] and e.get('ans_kind') == 'computed']
     if len(items) < 3: continue
     items.sort(key=lambda e: (e['pdf'], [int(x) for x in e['number'].split('.')]))
-    probs = [[dict(text=e['text'], marks=1, answer=e['parts'], how=e['how'], assume=e['assume'], ref=f"Jaeger 5e Problem {e['number']}, p.{e['printed']} (PDF {e['pdf']})", fig=int(bool(e.get('figure'))), page=e['pdf'], computed=1)] for e in items]
-    papers.append(dict(id=f'jaeger-prob-{mid}', module=mid, group='jaeger-solved', minutes=max(20, 8 * len(items)),
-                       title={'vi': f'{mid.upper()} · {m["vi"]}: problem Jaeger không có đáp án in (site tự giải và kiểm)', 'en': f'{mid.upper()} · {m["en"]}: Jaeger problems without a printed answer (solved and checked by this site)'},
-                       note={'vi': 'Sách không in đáp án các problem này. Đáp án do site tính theo công thức của chính sách và kiểm lại bằng một cách độc lập (mô phỏng số, mạch chính xác, FFT, nghiệm đa thức…); phần “Giả định” ghi chỗ đề chưa nói rõ. Thời gian là giả định (8 phút mỗi bài).',
-                             'en': 'The book prints no answer for these problems. The answers were computed by this site with the book\'s own formulas and re-checked by an independent route (numerical simulation, exact circuit solution, FFT, polynomial roots…); the “Assumptions” lines state what the statement leaves open. The time limit is an assumption (8 minutes per problem).'},
-                       problems=probs))
+    k = -(-len(items) // 20); size = -(-len(items) // k)                         # at most 20 problems per paper
+    for j in range(k):
+        part = items[j * size:(j + 1) * size]
+        probs = [[dict(text=e['text'], marks=1, answer=e['parts'], how=e['how'], assume=e['assume'], ref=f"Jaeger 5e Problem {e['number']}, p.{e['printed']} (PDF {e['pdf']})", fig=0 if e.get('circuit') else int(bool(e.get('figure'))), page=e['pdf'], computed=1, circuit=e.get('circuit'), figs=figs_of(e))] for e in part]
+        tag_vi = f' · phần {j + 1}/{k}' if k > 1 else ''; tag_en = f' · part {j + 1} of {k}' if k > 1 else ''
+        papers.append(dict(id=f'jaeger-prob-{mid}' + (f'-{j + 1}' if k > 1 else ''), module=mid, group='jaeger-solved', minutes=max(20, 8 * len(part)),
+                           title={'vi': f'{mid.upper()} · {m["vi"]}: problem Jaeger không có đáp án in (site tự giải và kiểm){tag_vi}', 'en': f'{mid.upper()} · {m["en"]}: Jaeger problems without a printed answer (solved and checked by this site){tag_en}'},
+                           note={'vi': 'Sách không in đáp án các problem này. Đáp án do site tính theo công thức của chính sách và kiểm lại bằng một cách độc lập (mô phỏng số, mạch chính xác, FFT, nghiệm đa thức…); phần “Giả định” ghi chỗ đề chưa nói rõ. Bài có hình trong sách thì hình được cắt từ PDF và đặt dưới đề, kèm mô tả mạch bằng lời. Thời gian là giả định (8 phút mỗi bài).',
+                                 'en': 'The book prints no answer for these problems. The answers were computed by this site with the book\'s own formulas and re-checked by an independent route (numerical simulation, exact circuit solution, FFT, polynomial roots…); the “Assumptions” lines state what the statement leaves open. Where the problem refers to a figure of the book, the figure is cut from the PDF and shown under the statement with a description of the circuit in words. The time limit is an assumption (8 minutes per problem).'},
+                           problems=probs))
 KLAB = {'circuit_action': ('Circuit Action', 'Circuit Action'), 'checkup': ('Section Checkup', 'Section Checkup'), 'example': ('Example', 'Example'), 'related_problem': ('Related Problem của Example', 'Related Problem of Example'), 'problem': ('Problem', 'Problem')}
 KORD = {'example': 0, 'related_problem': 1, 'checkup': 2, 'circuit_action': 3, 'problem': 4}
 def sortkey(e): return (e['book'], e['chapter'] or 0, KORD.get(e['kind'], 9), [int(x) if x.isdigit() else 0 for x in re.split(r'[–.\-]', str(e['number']))])
-FIGS = json.load(open(os.path.join(OUT, 'figs.json'), encoding='utf-8')) if os.path.exists(os.path.join(OUT, 'figs.json')) else {}
-def figs_of(e):                                       # the book figures the circuit description names (cut out by build/numeric/figexport.py)
-    if not e.get('circuit'): return []
-    head = re.split(r'\(pp?\.|:', e['circuit'], 1)[0]; return [FIGS[l] for l in dict.fromkeys(re.findall(r'\d+–\d+', head)) if l in FIGS]
 def ctx_of(e):                                        # a Related Problem refers to its Example: print the Example statement with it
     if e.get('ctx'): return e['ctx']
     if e['kind'] == 'related_problem':

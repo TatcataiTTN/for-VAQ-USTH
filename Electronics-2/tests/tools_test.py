@@ -5,6 +5,7 @@ from playwright.sync_api import sync_playwright
 BASE = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8765/'
 import json, os
 _CAT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'exercises', 'catalog.json'), encoding='utf-8')); EXPECT_SOLVED = sum(1 for r in _CAT['rows'] if r[_CAT['fields'].index('cls')] == 'solved')     # the finder's class 'solved' = every exercise solved and checked by the site
+_F = {k: _CAT['fields'].index(k) for k in _CAT['fields']}; EXPECT_SKIP = sum(1 for r in _CAT['rows'] if r[_F['book']] == 'jaeger5' and r[_F['kind']] == 'problem' and r[_F['cls']] == 'ready' and r[_F['skip']])
 PAPERS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'written', 'papers.json'), encoding='utf-8'))
 bad = []
 with sync_playwright() as pw:
@@ -40,16 +41,24 @@ with sync_playwright() as pw:
         if not re.search(r'site tính|Computed by this site', lab): bad.append((lang, 'finder: computed label', lab))
         pg.select_option('#exfind select >> nth=3', 'ready'); pg.select_option('#exfind select >> nth=0', 'jaeger5'); pg.select_option('#exfind select >> nth=1', 'problem')
         nskip = pg.evaluate("() => document.querySelectorAll('#exfind .srcnote').length")
-        if nskip != 21: bad.append((lang, 'finder: no skip reasons shown'))
+        if nskip != EXPECT_SKIP: bad.append((lang, 'finder: skip reasons shown', nskip, EXPECT_SKIP))
         # ---- written hub and paper
         pg.goto(f'{BASE}{lang}/written/index.html', wait_until='load'); pg.wait_for_selector('#written-hub .panel', timeout=15000)
         npap = pg.evaluate("() => document.querySelectorAll('#written-hub .panel').length")
         if npap != len(PAPERS): bad.append((lang, 'written hub papers', npap, len(PAPERS)))
-        pg.goto(f'{BASE}{lang}/written/paper.html?p=jaeger-prob-m03', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
+        jp3 = [p for p in PAPERS if p['id'] == 'jaeger-prob-m03-1'][0]
+        pg.goto(f'{BASE}{lang}/written/paper.html?p=jaeger-prob-m03-1', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
         pg.click('#written .panel >> nth=0 >> button'); box = pg.inner_text('#written .callout.good')
         if not re.search(r'site tính|Computed by this site', box) or not re.search(r'Cách tính|Method', box): bad.append((lang, 'written: computed answer box', box[:120]))
         npr = pg.evaluate("() => document.querySelectorAll('#written .panel').length")
-        if npr != 34: bad.append((lang, 'written: jaeger-prob-m03 problems', npr))
+        if npr != len(jp3['problems']) or npr < 10: bad.append((lang, 'written: jaeger-prob-m03-1 problems', npr, len(jp3['problems'])))
+        # ---- Jaeger problems that need a figure: the figure cut from the PDF and the circuit in words are shown
+        jfig = [p for p in PAPERS if p['id'].startswith('jaeger-prob-') and any(q[0].get('figs') for q in p['problems'])]
+        if len(jfig) < 5: bad.append((lang, 'written: jaeger papers with figures', len(jfig)))
+        jf = jfig[0]; nfj = sum(len(q[0].get('figs') or []) for q in jf['problems'])
+        pg.goto(f'{BASE}{lang}/written/paper.html?p={jf["id"]}', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000); pg.wait_for_timeout(600)
+        imgs = pg.evaluate("async () => { const a = [...document.querySelectorAll('#written img.bookfig')]; await Promise.all(a.map(i => i.decode().catch(() => {}))); return a.map(i => i.naturalWidth); }")
+        if nfj < 3 or len(imgs) != nfj or min(imgs or [0]) < 100: bad.append((lang, 'written: jaeger figure images', jf['id'], nfj, imgs[:5]))
         pg.goto(f'{BASE}{lang}/written/paper.html?p=calc-m08-1', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
         cp = [p for p in PAPERS if p['id'] == 'calc-m08-1'][0]; ctxn = sum(1 for q in cp['problems'] if q[0].get('ctx'))
         got_ctx = pg.evaluate("() => [...document.querySelectorAll('#written .srcnote')].filter(e => /^(Bối cảnh trong sách|Context in the book)/.test(e.textContent)).length")

@@ -3824,6 +3824,74 @@
 "ctx": null,
 "circuit": null
 },
+"jaeger5|example|10|10.5": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "10",
+"number": "10.5",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 576,
+"printed": 547,
+"parts": [
+[
+"Voltage gain Av = 1 + R2/R1",
+"15.33"
+],
+[
+"Output voltage vo = Av·vi",
+"1.533 V"
+],
+[
+"Output current io = vo/(R1 + R2)",
+"33.3 μA"
+]
+],
+"how": "Ideal noninverting amplifier (Eq. 10.53): Av = 1 + R2/R1; the input current is zero, so the output current flows only through R2 + R1. The exact nodal solution gives the same vo and io.",
+"assume": [
+"Ideal op amp."
+],
+"ctx": null,
+"circuit": "Fig. 10.22 (p.547): noninverting amplifier: vi on the + input, R2 from the output to the − input, R1 from the − input to ground; R1 = 3 kΩ, R2 = 43 kΩ, vi = +0.1 V."
+},
+"jaeger5|example|10|10.7": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "10",
+"number": "10.7",
+"modules": [
+"m02",
+"m03"
+],
+"pdf": 583,
+"printed": 554,
+"parts": [
+[
+"V+ = V− = V2·R2/(R1 + R2)",
+"2.73 V"
+],
+[
+"I1 = I2 = (V1 − V−)/R1",
+"227.0 μA"
+],
+[
+"VO = V1 − I1(R1 + R2)",
+"-20.0 V"
+],
+[
+"Op-amp output current IO = −I2",
+"-227.0 μA"
+]
+],
+"how": "Ideal difference amplifier: V+ from the divider on V2, V− = V+, I1 from Ohm's law on R1, VO from KVL around R1 and R2; check: VO = −(R2/R1)(V1 − V2) = −20 V. Exact nodal solution agrees.",
+"assume": [
+"Ideal op amp."
+],
+"ctx": null,
+"circuit": "Fig. 10.25 (p.554): difference amplifier: V1 through R1 to the − input with R2 feedback; V2 through R1 to the + input with R2 to ground; V1 = 5 V, V2 = 3 V, R1 = 10 kΩ, R2 = 100 kΩ."
+},
 "jaeger5|example|11|11.1": {
 "book": "jaeger5",
 "kind": "example",
@@ -3858,6 +3926,99 @@
 ],
 "ctx": null,
 "circuit": null
+},
+"jaeger5|example|11|11.10": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.10",
+"modules": [
+"m02"
+],
+"pdf": 660,
+"printed": 631,
+"parts": [
+[
+"|VO| ≤ (1 + R2/R1)·|VOS|",
+"0.2505 V"
+],
+[
+"Range (the sign of VOS is not known)",
+"−0.251 V ≤ VO ≤ +0.251 V"
+]
+],
+"how": "Offset of an otherwise ideal noninverting amplifier (Eq. 11.95): the offset voltage is amplified by the noninverting gain 1 + R2/R1 = 83.5. The exact nodal solution (offset source at the + input) agrees.",
+"assume": [
+"The sign of VOS is not specified (only |VOS| ≤ 3 mV), so only the range is known."
+],
+"ctx": null,
+"circuit": "Fig. 11.32 (p.631): noninverting amplifier with the input grounded (vI = 0) and the op-amp offset voltage VOS modelled in series with the + input; R2 = 99 kΩ from the output to the − input, R1 = 1.2 kΩ from the − input to ground."
+},
+"jaeger5|example|11|11.11": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.11",
+"modules": [
+"m02"
+],
+"pdf": 664,
+"printed": 635,
+"parts": [
+[
+"Load of the op amp for |vO| = 10 V: REQ = 10 V/2.5 mA",
+"4 kΩ; with RL ≥ 5 kΩ the feedback resistor must satisfy RL‖R2 ≥ 4 kΩ, i.e. R2 ≥ 20 kΩ"
+],
+[
+"Gain 20 dB",
+"|Av| = R2/R1 = 10"
+],
+[
+"Acceptable pairs (R1, R2)",
+"2.2 kΩ/22 kΩ, 2.7 kΩ/27 kΩ, 4.7 kΩ/47 kΩ, 10 kΩ/100 kΩ"
+],
+[
+"Chosen design",
+"R1 = 10 kΩ, R2 = 100 kΩ: IO = 10 V/5 kΩ + 10 V/110 kΩ = 2.1 mA < 2.5 mA, Rin = 10 kΩ"
+]
+],
+"how": "The op amp supplies the load current and the current in the feedback network: IO = vO/RL + vO/(R1 + R2). With RL = 5 kΩ the current limit forces R2 ≥ 20 kΩ; a gain of 10 sets R2 = 10·R1; R1 = 10 kΩ, R2 = 100 kΩ keeps Rin high. The exact nodal solution gives vO = 10 V and IO = 2.09 mA.",
+"assume": [
+"Design example: several resistor pairs are acceptable (the book chooses 10 kΩ and 100 kΩ)."
+],
+"ctx": null,
+"circuit": "Fig. 11.39 (p.635): inverting amplifier: input resistor R1 to the − input, feedback R2, load RL = 5 kΩ at the output, + input grounded."
+},
+"jaeger5|example|11|11.12": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.12",
+"modules": [
+"m02"
+],
+"pdf": 669,
+"printed": 640,
+"parts": [
+[
+"Differential and common-mode input voltages",
+"VID = 0.002 V, VIC = 5.0 V"
+],
+[
+"Output vO = A(VID + VIC/CMRR), CMRR = 10⁴",
+"6.25 V (the ideal value is 5.0 V)"
+],
+[
+"Error from the common-mode input",
+"25.0 % of the ideal output"
+]
+],
+"how": "Eq. (11.110): vO = A_d·vid + A_cm·vic with A_cm = A_d/CMRR. The common-mode term 2500·5.000/10⁴ = 1.25 V is a 25 % error.",
+"assume": [
+"CMRR = +10⁴ (the sign of the CMRR is not specified, the book assumes +)."
+],
+"ctx": null,
+"circuit": "Fig. 11.40 (p.640): differential amplifier with inputs V1 and V2 and differential gain A = 2500 (finite common-mode rejection)."
 },
 "jaeger5|example|11|11.13": {
 "book": "jaeger5",
@@ -4008,6 +4169,147 @@
 ],
 "ctx": null,
 "circuit": null
+},
+"jaeger5|example|11|11.4": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "11",
+"number": "11.4",
+"modules": [
+"m02"
+],
+"pdf": 628,
+"printed": 599,
+"parts": [
+[
+"β = R1/(R1 + R2)",
+"0.03774 = 1/26.5"
+],
+[
+"A = 10^(90/20)",
+"31623.0"
+],
+[
+"Rin = Rid(1 + Aβ)",
+"2.39 GΩ"
+]
+],
+"how": "Eq. (11.31) for the series-shunt noninverting amplifier: Rin = Rid(1 + Aβ). The exact nodal solution of the circuit (Rid between the inputs) gives 2.39 GΩ; the small difference is the loading of Rid by R1‖R2, which the formula neglects.",
+"assume": [
+"Op amp ideal except for the finite gain A = 90 dB and Rid = 2 MΩ (Ro = 0)."
+],
+"ctx": null,
+"circuit": "Fig. 11.6 (p.599): noninverting amplifier with a finite-gain op amp having input resistance Rid between the inputs: vx on the + input, R2 from the output to the − input, R1 from the − input to ground."
+},
+"jaeger5|example|12|12.1": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "12",
+"number": "12.1",
+"modules": [
+"m04"
+],
+"pdf": 717,
+"printed": 688,
+"parts": [
+[
+"(a) voltage gain",
+"(1 + R2/R1)(−R4/R3)(1 + R6/R5) = -1320.0"
+],
+[
+"(a) input resistance",
+"75.0 kΩ (the 75 kΩ resistor; the + input of the first op amp is ideal)"
+],
+[
+"(a) output resistance",
+"0"
+],
+[
+"(b) vI = 5 mV",
+"vOA = 55.0 mV, vOB = -1.1 V, vO = -6.6 V; v−A = 5.00 mV, v−B = 0, v−C = -1.1 V"
+],
+[
+"(c) vI = 10 mV",
+"vOA = 110.0 mV, vOB = -2.2 V; the third output would be −13.2 V, so it saturates at -12.0 V and v−C = -2.0 V"
+],
+[
+"(d) largest linear amplitude",
+"12 V/1320 = 9.09 mV"
+]
+],
+"how": "Three stages (noninverting, inverting, noninverting) with ±12-V supplies: gains multiply, Rin is the 75 kΩ shunt resistor, Rout = 0 (Eq. 12.2); nodes follow vOA = 11 vI, vOB = −20 vOA, vO = 6 vOB. When vO would exceed the rail, the output is clamped at −12 V, the loop of the third stage is open and v−C = −12·20/120 = −2 V. The exact nodal solution with the clamped output as a fixed source gives all the printed values.",
+"assume": [
+"The book counts 10 nodes (including V+, V− and ground), here the seven circuit nodes are given.",
+"The output saturates at exactly the supply voltage."
+],
+"ctx": null,
+"circuit": "Three-stage amplifier of the worked example (p.688; the figure has no number): noninverting stage (R1 = 15 kΩ to ground, R2 = 150 kΩ feedback; input tied to ground by R7 = 75 kΩ), inverting stage (R3 = 21 kΩ in, R4 = 420 kΩ feedback), noninverting stage (R5 = 20 kΩ to ground, R6 = 100 kΩ feedback); supplies ±12 V."
+},
+"jaeger5|example|12|12.5": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "12",
+"number": "12.5",
+"modules": [
+"m05"
+],
+"pdf": 729,
+"printed": 700,
+"parts": [
+[
+"VO = −(R4/R3)(1 + R2/R1)(V1 − V2)",
+"-5.5 V"
+],
+[
+"Current in 2R1: I = (V1 − V2)/2R1",
+"8.33 μA"
+],
+[
+"VA = V1 + I·R2",
+"3.75 V"
+],
+[
+"VB = V2 − I·R2",
+"1.0 V"
+]
+],
+"how": "Instrumentation amplifier (Eq. 12.13): the ideal op amps ① and ② put V1 and V2 on the ends of 2R1, so I = (V1 − V2)/2R1 and VA, VB are I·R2 above and below; the difference amplifier gives VO = −(R4/R3)(VA − VB). The exact nodal solution of the three-op-amp circuit agrees.",
+"assume": [
+"Ideal op amps."
+],
+"ctx": null,
+"circuit": "Fig. 12.4 (p.700): instrumentation amplifier: V1 and V2 on the + inputs of op amps ① and ②; R2, 2R1, R2 in series between their outputs; op amp ③ with R3, R4 forms the difference amplifier; V1 = 2.5 V, V2 = 2.25 V, R1 = 15 kΩ, R2 = 150 kΩ, R3 = 15 kΩ, R4 = 30 kΩ."
+},
+"jaeger5|example|12|12.6": {
+"book": "jaeger5",
+"kind": "example",
+"chapter": "12",
+"number": "12.6",
+"modules": [
+"m06"
+],
+"pdf": 733,
+"printed": 704,
+"parts": [
+[
+"R = 1/(√2·ωo·C) with C2 = C = 0.01 μF",
+"2.251 kΩ"
+],
+[
+"Standard 1 % value and capacitors",
+"R1 = R2 = 2.26 kΩ, C1 = 0.02 μF, C2 = 0.01 μF"
+],
+[
+"Check",
+"fo = 4.98 kHz, Q = 0.7071; −3 dB frequency of the exact circuit 4.98 kHz"
+]
+],
+"how": "Maximally flat second-order low-pass filter (Q = 1/√2): C1 = 2C2 = 2C, R1 = R2 = R = 1/(√2·ωo·C); then fH = fo. The exact circuit (Fig. 12.5 with an ideal follower) solved at s = jω confirms |A(jωo)| = Q and fH ≈ fo = 4.98 kHz.",
+"assume": [
+"Ideal op amp (voltage follower)."
+],
+"ctx": null,
+"circuit": "Fig. 12.5 (p.704): two-pole low-pass filter: vI → R1 → v1 → R2 → v2 (+ input of a voltage follower); C1 from v1 to the output; C2 from v2 to ground."
 }
 },
 "skipped": {
@@ -4172,13 +4474,6 @@
 "m03"
 ],
 "pdf": 579
-},
-"jaeger5|example|12|12.1": {
-"reason": "multi-part analysis of a three-op-amp circuit given only in a figure",
-"modules": [
-"m04"
-],
-"pdf": 717
 },
 "jaeger5|example|12|12.3": {
 "reason": "multi-stage design to several specifications; the book's solution chooses its own stages",
