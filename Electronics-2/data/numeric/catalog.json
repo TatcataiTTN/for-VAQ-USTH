@@ -82901,7 +82901,7 @@
 "pdf": 378,
 "printed": 349,
 "text": "A high-speed microprocessor must drive a 64-bit data bus in which each line has a capacitive load C of 50 pF, and the logic swing is 2.5 V. The bus drivers must discharge the load capacitance from 2.5 V to 0 V in 0.8 ns, as depicted in Fig. P6.31. Draw the waveform for the current in the output of the bus driver as a function of time for the indicated waveform. What is the peak current in the microprocessor chip if all 64 drivers are switching simultaneously? Bus driver and switching waveform.",
-"answer": null,
+"answer": "Current of one driver iC = C·ΔV/Δt: 156.2 mA (a rectangular pulse of this height lasting 800.0 ps, zero before and after) | Peak current for all 64 drivers switching together (2.5 V in 0.8 ns): 10.0 A | With the values drawn in the figure (3.3 V in 1 ns): 165.0 mA per driver, 10.56 A for 64 drivers",
 "stars": 0,
 "nq": 5,
 "numeric": true,
@@ -82910,9 +82910,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "The load capacitance is discharged by the driver along the linear fall of the figure: iC = −C·dvO/dt = C·ΔV/Δt, constant during the fall. The 64 lines add: Ipeak = 64·C·ΔV/Δt. Numerical differentiation of the ramp and integration of the current (charge C·ΔV) confirm it.",
+"assume": [
+"The statement says a 2.5 V swing in 0.8 ns, while the waveform of Fig. P6.31 is drawn from 3.3 V with a fall time labelled 1 ns: the statement's numbers are used and the figure's numbers are also given."
+],
+"parts": [
+[
+"Current of one driver iC = C·ΔV/Δt",
+"156.2 mA (a rectangular pulse of this height lasting 800.0 ps, zero before and after)"
+],
+[
+"Peak current for all 64 drivers switching together (2.5 V in 0.8 ns)",
+"10.0 A"
+],
+[
+"With the values drawn in the figure (3.3 V in 1 ns)",
+"165.0 mA per driver, 10.56 A for 64 drivers"
+]
+],
+"circuit": "Fig. P6.31 (p.349): inverter-type bus driver (supplies V+ and V−) discharging the load capacitance C (50 pF) with the current iC flowing from the capacitor into the output; below, vO(t) falls linearly from the high level to 0 V in the time marked 1 ns.",
 "in_site": [],
 "id": "jaeger5-problem-6-6.31-3906",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -82923,7 +82943,7 @@
 "pdf": 379,
 "printed": 350,
 "text": "Repeat Prob. 6.31 for a processor with a 1-GHz clock. Assume that the fall time must be 0.1 ns instead of 1 ns, as depicted in Fig. P6.31.",
-"answer": null,
+"answer": "Current of one driver iC = C·ΔV/Δt: 1.25 A (a rectangular pulse of this height lasting 100.0 ps, zero before and after) | Peak current for all 64 drivers switching together (2.5 V in 0.1 ns): 80.0 A | With a 3.3 V swing as drawn in the figure: 1.65 A per driver, 105.6 A for 64 drivers | Clock: a 1-GHz clock (period 1 ns) leaves 0.9 ns between the falling edges; the fall time is 0.1 ns (statement)",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -82932,9 +82952,34 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "The load capacitance is discharged by the driver along the linear fall of the figure: iC = −C·dvO/dt = C·ΔV/Δt, constant during the fall. The 64 lines add: Ipeak = 64·C·ΔV/Δt. Numerical differentiation of the ramp and integration of the current (charge C·ΔV) confirm it.",
+"assume": [
+"The statement says a 2.5 V swing in 0.8 ns, while the waveform of Fig. P6.31 is drawn from 3.3 V with a fall time labelled 1 ns: the statement's numbers are used and the figure's numbers are also given.",
+"Repeat of Prob. 6.31 with a fall time of 0.1 ns."
+],
+"parts": [
+[
+"Current of one driver iC = C·ΔV/Δt",
+"1.25 A (a rectangular pulse of this height lasting 100.0 ps, zero before and after)"
+],
+[
+"Peak current for all 64 drivers switching together (2.5 V in 0.1 ns)",
+"80.0 A"
+],
+[
+"With a 3.3 V swing as drawn in the figure",
+"1.65 A per driver, 105.6 A for 64 drivers"
+],
+[
+"Clock",
+"a 1-GHz clock (period 1 ns) leaves 0.9 ns between the falling edges; the fall time is 0.1 ns (statement)"
+]
+],
+"circuit": "Fig. P6.31 (p.350): inverter-type bus driver discharging the load capacitance C (50 pF); vO(t) falls linearly (in the figure from the high level to 0 V in 1 ns; here the fall time is 0.1 ns).",
 "in_site": [],
 "id": "jaeger5-problem-6-6.32-3907",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -84684,7 +84729,7 @@
 "pdf": 384,
 "printed": 355,
 "text": "Scale the sizes of the resistors and transistors in the five inverters in Fig. 6.24 to change the power dissipation level to 2 mW.",
-"answer": null,
+"answer": "Reference power (VDD·IDD at vO = VL): 199.7 μW (IDD = 79.86 μA, checked from the resistor design and from the switching and load devices of (b)) | Power factor: 2 mW / 200.0 μW = 10.02 ≈ 10 (the exact factor is rounded to 10 since the reference power is 0.2 mW) | (a) resistor load: R = 28.8 kΩ/10 = 2.88 kΩ (L/W = 288/1); MS: 2.22/1 → 22.2/1 | (b) saturated load: MS 4.71/1 → 47.1/1; ML 1/1.68 → 5.952/1 (velocity-saturation version 1/1.56 → 6.41/1) | (c) linear load: MS 2.22/1 → 22.2/1; ML 1/5.72 → 1.748/1 (1/3.81 → 2.625/1) | (d) depletion load: MS 2.22/1 → 22.2/1; ML 1.81/1 → 18.1/1 | (e) pseudo-NMOS: MS 2.22/1 → 22.2/1; ML 1/1.11 → 9.009/1 (1/1.28 → 7.812/1)",
 "stars": 0,
 "nq": 1,
 "numeric": true,
@@ -84693,9 +84738,46 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "In ratioed logic the voltage levels depend only on W/L ratios, so multiplying every W/L by k multiplies every drain current and the power by k and leaves VH and VL unchanged (Sec. 6.11.3); a resistor is divided by k. The reference gates of Fig. 6.24 dissipate 0.2 mW (checked: 2.3 V/28.8 kΩ = 79.9 μA; the switching transistor 2.22/1 and the saturated-load pair of (b) carry the same current in the square-law model), so 2 mW needs k = 10.",
+"assume": [
+"Power is taken as the static power VDD·IDD with the output low (0.2 mW) for all five reference designs; the book says only \"power dissipation level\".",
+"The load sizes in parentheses are the velocity-saturation versions printed in the figure."
+],
+"parts": [
+[
+"Reference power (VDD·IDD at vO = VL)",
+"199.7 μW (IDD = 79.86 μA, checked from the resistor design and from the switching and load devices of (b))"
+],
+[
+"Power factor",
+"2 mW / 200.0 μW = 10.02 ≈ 10 (the exact factor is rounded to 10 since the reference power is 0.2 mW)"
+],
+[
+"(a) resistor load",
+"R = 28.8 kΩ/10 = 2.88 kΩ (L/W = 288/1); MS: 2.22/1 → 22.2/1"
+],
+[
+"(b) saturated load",
+"MS 4.71/1 → 47.1/1; ML 1/1.68 → 5.952/1 (velocity-saturation version 1/1.56 → 6.41/1)"
+],
+[
+"(c) linear load",
+"MS 2.22/1 → 22.2/1; ML 1/5.72 → 1.748/1 (1/3.81 → 2.625/1)"
+],
+[
+"(d) depletion load",
+"MS 2.22/1 → 22.2/1; ML 1.81/1 → 18.1/1"
+],
+[
+"(e) pseudo-NMOS",
+"MS 2.22/1 → 22.2/1; ML 1/1.11 → 9.009/1 (1/1.28 → 7.812/1)"
+]
+],
+"circuit": "Fig. 6.24 (p.355): five NMOS inverter designs, VDD = 2.5 V: (a) 28.8 kΩ resistor load (L/W = 2880), MS 2.22/1; (b) saturated load ML 1/1.68 (1/1.56), MS 4.71/1; (c) linear load (gate at +4 V) ML 1/5.72 (1/3.81), MS 2.22/1; (d) depletion load ML 1.81/1, MS 2.22/1; (e) pseudo-NMOS ML 1/1.11 (1/1.28), MS 2.22/1.",
 "in_site": [],
 "id": "jaeger5-problem-6-6.119-3994",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -84772,7 +84854,7 @@
 "pdf": 385,
 "printed": 356,
 "text": "(a) Scale the transistor sizes in Fig. 6.30(b) to decrease the gate power by a factor of 8. (b) Scale the transistor sizes in Fig. 6.30(b) to increase the gate power by a factor of 3.5.",
-"answer": null,
+"answer": "(a) power ÷ 8: ML (load) 1.81/1 → 0.226/1, MA 4.44/1 → 0.555/1, MB 4.44/1 → 0.555/1, MC 8.88/1 → 1.11/1, MD 8.88/1 → 1.11/1 | (b) power × 3.5: ML (load) 1.81/1 → 6.33/1, MA 4.44/1 → 15.5/1, MB 4.44/1 → 15.5/1, MC 8.88/1 → 31.1/1, MD 8.88/1 → 31.1/1",
 "stars": 0,
 "nq": 0,
 "numeric": true,
@@ -84781,9 +84863,26 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Power scaling (Sec. 6.11.3): all W/L ratios of the gate are multiplied by the same factor, which multiplies every current and the power by that factor and leaves the logic levels unchanged: factor 1/8 for (a), 3.5 for (b).",
+"assume": [
+"Fig. 6.30(b): depletion-load NMOS gate with ML = 1.81/1, MA = MB = 4.44/1 and MC = MD = 8.88/1 (as drawn; the figure also shows the 4.44/1 equivalents of the two blocks).",
+"W/L ratios below 1 (e.g. 0.226/1) mean a transistor longer than wide."
+],
+"parts": [
+[
+"(a) power ÷ 8",
+"ML (load) 1.81/1 → 0.226/1, MA 4.44/1 → 0.555/1, MB 4.44/1 → 0.555/1, MC 8.88/1 → 1.11/1, MD 8.88/1 → 1.11/1"
+],
+[
+"(b) power × 3.5",
+"ML (load) 1.81/1 → 6.33/1, MA 4.44/1 → 15.5/1, MB 4.44/1 → 15.5/1, MC 8.88/1 → 31.1/1, MD 8.88/1 → 31.1/1"
+]
+],
+"circuit": "Fig. 6.30 (p.356): NMOS gate with a depletion-mode load ML (1.81/1) from +2.5 V to the output Y and a switching network to ground: transistor A (4.44/1) in series with B (4.44/1), with C and D (8.88/1 each, in series with each other) in parallel with A.",
 "in_site": [],
 "id": "jaeger5-problem-6-6.123-3998",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -85613,7 +85712,7 @@
 "pdf": 433,
 "printed": 404,
 "text": "The CMOS inverter in Fig. P7.5 has VDD = 2.5 V and VSS = 0 V. What are the values of VH and VL for this inverter? (b) Repeat for VDD = 1.8 V. (c) Repeat for VDD = 1 V and −VSS = −1 V.",
-"answer": null,
+"answer": "(a) VDD = 2.5 V, VSS = 0: VH = VDD = 2.5 V, VL = VSS = 0 V | (b) VDD = 1.8 V, VSS = 0: VH = VDD = 1.8 V, VL = VSS = 0 V | (c) VDD = 1 V, VSS = −1 V: VH = VDD = 1.0 V, VL = VSS = -1.0 V",
 "stars": 0,
 "nq": 5,
 "numeric": true,
@@ -85622,9 +85721,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "In a static CMOS inverter one transistor is always cut off in each logic state, so the output reaches the supply rails: VH = VDD and VL = VSS (−VSS = −1 V means the lower rail is at −1 V). The numerical transfer curve (full square-law model) at the two extreme inputs confirms it.",
+"assume": [
+"W/L ratios and thresholds do not matter for the levels."
+],
+"parts": [
+[
+"(a) VDD = 2.5 V, VSS = 0",
+"VH = VDD = 2.5 V, VL = VSS = 0 V"
+],
+[
+"(b) VDD = 1.8 V, VSS = 0",
+"VH = VDD = 1.8 V, VL = VSS = 0 V"
+],
+[
+"(c) VDD = 1 V, VSS = −1 V",
+"VH = VDD = 1.0 V, VL = VSS = -1.0 V"
+]
+],
+"circuit": "Fig. P7.5 (p.404): CMOS inverter: PMOS MP (source to VDD) above NMOS MN (source to −VSS/ground), gates tied to vI, drains tied to vO.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.5-4037",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -85635,7 +85754,7 @@
 "pdf": 433,
 "printed": 404,
 "text": "The CMOS inverter in Fig. P7.5 has VDD = 3.3 V, VSS = 0 V, (W/L)N = 4/1, and (W/L)P = 10/1. What are the values of VH and VL for this inverter? (b) Repeat for (W/L)N = 6/1 and (W/L)P = 15/1.",
-"answer": null,
+"answer": "(a) VDD = 3.3 V, (W/L)N = 4/1, (W/L)P = 10/1: VH = 3.3 V, VL = 0 V | (b) (W/L)N = 6/1, (W/L)P = 15/1: VH = 3.3 V, VL = 0 V",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -85644,9 +85763,25 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Static CMOS inverter: VH = VDD and VL = 0 whatever the W/L ratios (one transistor is cut off in each state and the other is in the triode region with zero current); the numerical transfer curve confirms it for these sizes.",
+"assume": [
+"The W/L ratios are given but do not change VH and VL."
+],
+"parts": [
+[
+"(a) VDD = 3.3 V, (W/L)N = 4/1, (W/L)P = 10/1",
+"VH = 3.3 V, VL = 0 V"
+],
+[
+"(b) (W/L)N = 6/1, (W/L)P = 15/1",
+"VH = 3.3 V, VL = 0 V"
+]
+],
+"circuit": "Fig. P7.5 (p.404): CMOS inverter: PMOS MP (source to VDD) above NMOS MN (source to −VSS/ground), gates tied to vI, drains tied to vO.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.6-4038",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -85657,7 +85792,7 @@
 "pdf": 434,
 "printed": 405,
 "text": "The CMOS inverter in Fig. P7.5 has VDD = 2.5 V, VSS = 0 V, (W/L)N = 4/1, and (W/L)P = 10/1. What are the values of VH and VL for this inverter? (b) Repeat for (W/L)N = 4/1 and (W/L)P = 4/1.",
-"answer": null,
+"answer": "(a) VDD = 2.5 V, (W/L)N = 4/1, (W/L)P = 10/1: VH = 2.5 V, VL = 0 V | (b) (W/L)N = 4/1, (W/L)P = 4/1: VH = 2.5 V, VL = 0 V",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -85666,9 +85801,25 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Static CMOS inverter: VH = VDD and VL = 0 whatever the W/L ratios (one transistor is cut off in each state and the other is in the triode region with zero current); the numerical transfer curve confirms it for these sizes.",
+"assume": [
+"The W/L ratios are given but do not change VH and VL."
+],
+"parts": [
+[
+"(a) VDD = 2.5 V, (W/L)N = 4/1, (W/L)P = 10/1",
+"VH = 2.5 V, VL = 0 V"
+],
+[
+"(b) (W/L)N = 4/1, (W/L)P = 4/1",
+"VH = 2.5 V, VL = 0 V"
+]
+],
+"circuit": "Fig. P7.5 (p.405): CMOS inverter: PMOS MP (source to VDD) above NMOS MN (source to −VSS/ground), gates tied to vI, drains tied to vO.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.7-4039",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -85679,7 +85830,7 @@
 "pdf": 434,
 "printed": 405,
 "text": "The CMOS inverter in Fig. P7.5 has VDD = 1.8 V and VSS = 0 V. If VT N = 0.45 V and VT P = −0.45 V, what are the regions of operation of the transistors for (a) VI = VL? (b) VI = VH? (c) VI = VO = 1.65 V?",
-"answer": null,
+"answer": "(a) vI = VL: NMOS (vGS = 0 V, vDS = 1.8 V): cutoff; PMOS (vSG = 1.8 V, vSD = 0 V): triode | (b) vI = VH: NMOS (vGS = 1.8 V, vDS = 0 V): triode; PMOS (vSG = 0 V, vSD = 1.8 V): cutoff | (c) vI = vO = 1.65 V: NMOS (vGS = 1.65 V, vDS = 1.65 V): saturation; PMOS (vSG = 0.15 V, vSD = 0.15 V): cutoff",
 "stars": 0,
 "nq": 5,
 "numeric": true,
@@ -85688,9 +85839,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "A transistor is cut off if vGS ≤ VT, in the triode region if vDS < vGS − VT and saturated if vDS ≥ vGS − VT (PMOS with the source-referenced magnitudes vSG, vSD, |VTP|). In the static states one transistor is off and the other is in the triode region with vDS = 0.",
+"assume": [
+"Point (c) is just a pair of voltages (the PMOS is cut off there, so it is not a dc operating point of the circuit)."
+],
+"parts": [
+[
+"(a) vI = VL",
+"NMOS (vGS = 0 V, vDS = 1.8 V): cutoff; PMOS (vSG = 1.8 V, vSD = 0 V): triode"
+],
+[
+"(b) vI = VH",
+"NMOS (vGS = 1.8 V, vDS = 0 V): triode; PMOS (vSG = 0 V, vSD = 1.8 V): cutoff"
+],
+[
+"(c) vI = vO = 1.65 V",
+"NMOS (vGS = 1.65 V, vDS = 1.65 V): saturation; PMOS (vSG = 0.15 V, vSD = 0.15 V): cutoff"
+]
+],
+"circuit": "Fig. P7.5 (p.405): CMOS inverter: PMOS MP (source to VDD) above NMOS MN (source to −VSS/ground), gates tied to vI, drains tied to vO.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.8-4040",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -85701,7 +85872,7 @@
 "pdf": 434,
 "printed": 405,
 "text": "The CMOS inverter in Fig. P7.5 has VDD = 2.5 V and VSS = 0 V. If VT N = 0.60 V and VT P = −0.60 V, what are the regions of operation of the transistors for (a) VI = VL? (b) VI = VH? (c) VI = VO = 1.25 V?",
-"answer": null,
+"answer": "(a) vI = VL: NMOS (vGS = 0 V, vDS = 2.5 V): cutoff; PMOS (vSG = 2.5 V, vSD = 0 V): triode | (b) vI = VH: NMOS (vGS = 2.5 V, vDS = 0 V): triode; PMOS (vSG = 0 V, vSD = 2.5 V): cutoff | (c) vI = vO = 1.25 V: NMOS (vGS = 1.25 V, vDS = 1.25 V): saturation; PMOS (vSG = 1.25 V, vSD = 1.25 V): saturation",
 "stars": 0,
 "nq": 5,
 "numeric": true,
@@ -85710,9 +85881,27 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "A transistor is cut off if vGS ≤ VT, in the triode region if vDS < vGS − VT and saturated if vDS ≥ vGS − VT (PMOS with the source-referenced magnitudes vSG, vSD, |VTP|). In the static states one transistor is off and the other is in the triode region with vDS = 0.",
+"assume": [],
+"parts": [
+[
+"(a) vI = VL",
+"NMOS (vGS = 0 V, vDS = 2.5 V): cutoff; PMOS (vSG = 2.5 V, vSD = 0 V): triode"
+],
+[
+"(b) vI = VH",
+"NMOS (vGS = 2.5 V, vDS = 0 V): triode; PMOS (vSG = 0 V, vSD = 2.5 V): cutoff"
+],
+[
+"(c) vI = vO = 1.25 V",
+"NMOS (vGS = 1.25 V, vDS = 1.25 V): saturation; PMOS (vSG = 1.25 V, vSD = 1.25 V): saturation"
+]
+],
+"circuit": "Fig. P7.5 (p.405): CMOS inverter: PMOS MP (source to VDD) above NMOS MN (source to −VSS/ground), gates tied to vI, drains tied to vO.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.9-4041",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -85900,7 +86089,7 @@
 "pdf": 434,
 "printed": 405,
 "text": "(a) The CMOS gate in Fig. P7.14 is called pseudo- NMOS. Find VH and VL for this gate. (b) Repeat for VDD = 2.5 V. (c) Repeat for VDD = 1.8 V.",
-"answer": null,
+"answer": "(a) VDD = 3.3 V: VH = 3.3 V, VL = 0.1103 V | (b) VDD = 2.5 V: VH = 2.5 V, VL = 0.07758 V | (c) VDD = 1.8 V: VH = 1.8 V, VL = 0.049 V",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -85909,9 +86098,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Pseudo-NMOS: the PMOS gate is grounded, so it is always on. vI = 0: the NMOS is off and VH = VDD. vI = VDD: the NMOS (Kn = 5·100 μA/V²) is in the triode region and the PMOS (Kp = 40 μA/V², vSG = VDD) is in saturation: ½Kp(VDD − |VTP|)² = Kn[(VDD − VTN)VL − VL²/2], so VL = (VDD − VTN) − √[(VDD − VTN)² − Kp(VDD − |VTP|)²/Kn]. A bisection on the full piecewise model gives the same value.",
+"assume": [
+"VTN = 0.6 V and VTP = −0.6 V, K′n = 100 and K′p = 40 μA/V² (problem-set defaults)."
+],
+"parts": [
+[
+"(a) VDD = 3.3 V",
+"VH = 3.3 V, VL = 0.1103 V"
+],
+[
+"(b) VDD = 2.5 V",
+"VH = 2.5 V, VL = 0.07758 V"
+],
+[
+"(c) VDD = 1.8 V",
+"VH = 1.8 V, VL = 0.049 V"
+]
+],
+"circuit": "Fig. P7.14 (p.405): pseudo-NMOS gate: PMOS MP with its gate grounded (W/L = 1/1) from VDD (= 3.3 V) to the output, NMOS MN (W/L = 5/1) with the input vI from the output to ground.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.14-4046",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -86101,6 +86310,7 @@
 "modules": [
 "m01"
 ],
+"skip": "asks for graphs of the noise margins against a parameter (a plot, no single numerical answer)",
 "in_site": [],
 "id": "jaeger5-problem-7-7.20-4052",
 "cls": "figure"
@@ -86136,7 +86346,7 @@
 "pdf": 434,
 "printed": 405,
 "text": "The outputs of two CMOS inverters are accidentally tied together, as shown in Fig. P7.22. What is the voltage at the common output node if the NMOS and PMOS transistors have W/L ratios of 20/1 and 40/1, respectively? What is the current in the circuit?",
-"answer": null,
+"answer": "Output voltage (both outputs tied: MP1 on, MN2 on, MN1 and MP2 off): vO = 0.9836 V (NMOS: triode, PMOS: triode) | Current from VDD through MP1 and MN2: 2.77 mA",
 "stars": 0,
 "nq": 0,
 "numeric": true,
@@ -86145,9 +86355,25 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Left inverter input 0 V: MP1 (40/1) on, MN1 off; right inverter input 2.5 V: MN2 (20/1) on, MP2 off. The current of MP1 equals that of MN2: Kp[(VDD − |VTP|)(VDD − vO) − (VDD − vO)²/2] = Kn[(VDD − VTN)vO − vO²/2] (both in the triode region), a quadratic in vO; the bisection on the full piecewise model gives the same value, and the current follows from either transistor.",
+"assume": [
+"K′n = 100, K′p = 40 μA/V², VTN = 0.6 V, VTP = −0.6 V; the NMOS transistors are 20/1 and the PMOS 40/1."
+],
+"parts": [
+[
+"Output voltage (both outputs tied: MP1 on, MN2 on, MN1 and MP2 off)",
+"vO = 0.9836 V (NMOS: triode, PMOS: triode)"
+],
+[
+"Current from VDD through MP1 and MN2",
+"2.77 mA"
+]
+],
+"circuit": "Fig. P7.22 (p.405): the outputs of two CMOS inverters tied together: left input 0 V (MP1, MN1), right input +2.5 V (MP2, MN2), both between +2.5 V and ground; the current I flows from MP1 through MN2.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.22-4054",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -86834,7 +87060,7 @@
 "pdf": 435,
 "printed": 406,
 "text": "(a) Scale the reference inverter in Fig. 7.12 to achieve a 0.3 ns delay with C = 0.5 pF. (b) What is the delay of the new inverter if C = 1.5 pF?",
-"answer": null,
+"answer": "Scale factor S = (τref/τ′)·(C′/Cref): 5.263 (τref = 3.16 ns for 1 pF) | (a) new sizes: (W/L)N = 10.53/1, (W/L)P = 26.32/1 | (b) delay with the new load: τP′ = 900.0 ps (C = 1.5 pF)",
 "stars": 0,
 "nq": 3,
 "numeric": true,
@@ -86843,9 +87069,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Performance scaling, Eq. (7.20): τP′ = [(W/L)/(W/L)′]·(C′/Cref)·τref with the reference inverter of Fig. 7.12 ((W/L)N = 2/1, (W/L)P = 5/1, τref = 3.16 ns for 1 pF). The scaled sizes were put back into the delay equation (7.15, 1.2·Ron·C with the new Kn, Kp) and reproduce the target delay. (The book's own exercise for 5 pF and 1 ns prints 31.5/1 and 78.8/1; this method gives 31.6/1 and 78.9/1: 0.3 % rounding of τref.)",
+"assume": [
+"The revised delay estimate (Eq. 7.23, 2.4·Ron·C) would double τref but leaves the scaling rule unchanged only if the reference delay is taken from the same equation; the book's reference value 3.16 ns/pF is used."
+],
+"parts": [
+[
+"Scale factor S = (τref/τ′)·(C′/Cref)",
+"5.263 (τref = 3.16 ns for 1 pF)"
+],
+[
+"(a) new sizes",
+"(W/L)N = 10.53/1, (W/L)P = 26.32/1"
+],
+[
+"(b) delay with the new load",
+"τP′ = 900.0 ps (C = 1.5 pF)"
+]
+],
+"circuit": "Fig. 7.12 (p.406): reference inverter: PMOS (W/L = 5/1) above NMOS (W/L = 2/1), gates tied to vI, drains to vO with the load capacitance C; VDD = 2.5 V.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.39-4071",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -86856,7 +87102,7 @@
 "pdf": 435,
 "printed": 406,
 "text": "(a) Scale the reference inverter in Fig. 7.12 to achieve a 0.4 ns delay with C = 2 pF. (b) What is the delay of the new inverter if C = 3 pF?",
-"answer": null,
+"answer": "Scale factor S = (τref/τ′)·(C′/Cref): 15.79 (τref = 3.16 ns for 1 pF) | (a) new sizes: (W/L)N = 31.58/1, (W/L)P = 78.95/1 | (b) delay with the new load: τP′ = 600.0 ps (C = 3.0 pF)",
 "stars": 0,
 "nq": 3,
 "numeric": true,
@@ -86865,9 +87111,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Performance scaling, Eq. (7.20): τP′ = [(W/L)/(W/L)′]·(C′/Cref)·τref with the reference inverter of Fig. 7.12 ((W/L)N = 2/1, (W/L)P = 5/1, τref = 3.16 ns for 1 pF). The scaled sizes were put back into the delay equation (7.15, 1.2·Ron·C with the new Kn, Kp) and reproduce the target delay. (The book's own exercise for 5 pF and 1 ns prints 31.5/1 and 78.8/1; this method gives 31.6/1 and 78.9/1: 0.3 % rounding of τref.)",
+"assume": [
+"The revised delay estimate (Eq. 7.23, 2.4·Ron·C) would double τref but leaves the scaling rule unchanged only if the reference delay is taken from the same equation; the book's reference value 3.16 ns/pF is used."
+],
+"parts": [
+[
+"Scale factor S = (τref/τ′)·(C′/Cref)",
+"15.79 (τref = 3.16 ns for 1 pF)"
+],
+[
+"(a) new sizes",
+"(W/L)N = 31.58/1, (W/L)P = 78.95/1"
+],
+[
+"(b) delay with the new load",
+"τP′ = 600.0 ps (C = 3.0 pF)"
+]
+],
+"circuit": "Fig. 7.12 (p.406): reference inverter: PMOS (W/L = 5/1) above NMOS (W/L = 2/1), gates tied to vI, drains to vO with the load capacitance C; VDD = 2.5 V.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.40-4072",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -87056,7 +87322,7 @@
 "pdf": 436,
 "printed": 407,
 "text": "Resize the transistors in Fig. 7.20 based upon the 1-V saturation velocity case in Table 7.3 to achieve the same propagation delay as the non velocity saturated case.",
-"answer": null,
+"answer": "Delay ratio from Table 7.3: τP(VSAT = 1 V)/τP(unlimited) = 0.89/0.71 = 1.2535 | Scale factor for the transistors: 1.2535 (delay is inversely proportional to W/L) | (b) reference inverter: MN: 2.0/1 → 2.507/1 | (b) reference inverter: MP: 5.0/1 → 6.268/1 | (c) NOR gate: each NMOS: 2.0/1 → 2.507/1 | (c) NOR gate: each PMOS: 10.0/1 → 12.54/1",
 "stars": 0,
 "nq": 0,
 "numeric": true,
@@ -87065,9 +87331,42 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Table 7.3 (symmetrical inverter of Fig. 7.12 with C = 0.2 pF) gives τP = 0.71 ns without velocity saturation and 0.89 ns with VSAT = 1 V, so every W/L must be multiplied by 0.89/0.71 to recover the same delay (and by a further factor for a shorter delay): τP is inversely proportional to W/L at fixed load (Eq. 7.20). Anchor: the book's exercise for the inverter gives 2.51/1 and 6.27/1, reproduced by 2·1.2535 and 5·1.2535.",
+"assume": [
+"The same factor is applied to every transistor of the circuit (the relative sizes that equalise the on-resistances are kept).",
+"Fig. 7.20 contains the reference inverter (b) and the two-input NOR gate (c); both are resized."
+],
+"parts": [
+[
+"Delay ratio from Table 7.3",
+"τP(VSAT = 1 V)/τP(unlimited) = 0.89/0.71 = 1.2535"
+],
+[
+"Scale factor for the transistors",
+"1.2535 (delay is inversely proportional to W/L)"
+],
+[
+"(b) reference inverter: MN",
+"2.0/1 → 2.507/1"
+],
+[
+"(b) reference inverter: MP",
+"5.0/1 → 6.268/1"
+],
+[
+"(c) NOR gate: each NMOS",
+"2.0/1 → 2.507/1"
+],
+[
+"(c) NOR gate: each PMOS",
+"10.0/1 → 12.54/1"
+]
+],
+"circuit": "Fig. 7.20 (p.407): reference inverter (PMOS 5/1, NMOS 2/1) and the two-input NOR gate (series PMOS 10/1, parallel NMOS 2/1), VDD = 2.5 V.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.48-4080",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -87078,7 +87377,7 @@
 "pdf": 436,
 "printed": 407,
 "text": "Resize the transistors in Fig. 7.22 based upon the 1-V saturation velocity case in Table 7.3 to achieve one-half the propagation delay of the non velocity saturated case.",
-"answer": null,
+"answer": "Delay ratio from Table 7.3: τP(VSAT = 1 V)/τP(unlimited) = 0.89/0.71 = 1.2535 | Scale factor for the transistors: 2.507 (delay is inversely proportional to W/L) | each NMOS: 2.0/1 → 5.014/1 | each PMOS: 15.0/1 → 37.61/1",
 "stars": 0,
 "nq": 0,
 "numeric": true,
@@ -87087,9 +87386,33 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Table 7.3 (symmetrical inverter of Fig. 7.12 with C = 0.2 pF) gives τP = 0.71 ns without velocity saturation and 0.89 ns with VSAT = 1 V, so every W/L must be multiplied by 0.89/0.71 to recover the same delay (and by a further factor for a shorter delay): τP is inversely proportional to W/L at fixed load (Eq. 7.20). Anchor: the book's exercise for the inverter gives 2.51/1 and 6.27/1, reproduced by 2·1.2535 and 5·1.2535.",
+"assume": [
+"The same factor is applied to every transistor of the circuit (the relative sizes that equalise the on-resistances are kept)."
+],
+"parts": [
+[
+"Delay ratio from Table 7.3",
+"τP(VSAT = 1 V)/τP(unlimited) = 0.89/0.71 = 1.2535"
+],
+[
+"Scale factor for the transistors",
+"2.507 (delay is inversely proportional to W/L)"
+],
+[
+"each NMOS",
+"2.0/1 → 5.014/1"
+],
+[
+"each PMOS",
+"15.0/1 → 37.61/1"
+]
+],
+"circuit": "Fig. 7.22 (p.407): three-input NOR gate: three series PMOS (15/1 each) and three parallel NMOS (2/1 each), load C, VDD = 2.5 V.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.49-4081",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -87100,7 +87423,7 @@
 "pdf": 436,
 "printed": 407,
 "text": "Resize the transistors in Fig. 7.27 based upon the 1-V saturation velocity case in Table 7.3 to achieve one third the propagation delay of the non velocity saturated case with C = 0.3 pF.",
-"answer": null,
+"answer": "Delay ratio from Table 7.3: τP(VSAT = 1 V)/τP(unlimited) = 0.89/0.71 = 1.2535 | Scale factor for the transistors: 3.7606 (delay is inversely proportional to W/L) | PMOS A, C, D: 15.0/1 → 56.41/1 | PMOS B: 7.5/1 → 28.2/1 | NMOS MA: 2.0/1 → 7.521/1 | NMOS MB, MC, MD: 4.0/1 → 15.04/1",
 "stars": 0,
 "nq": 1,
 "numeric": true,
@@ -87109,9 +87432,41 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Table 7.3 (symmetrical inverter of Fig. 7.12 with C = 0.2 pF) gives τP = 0.71 ns without velocity saturation and 0.89 ns with VSAT = 1 V, so every W/L must be multiplied by 0.89/0.71 to recover the same delay (and by a further factor for a shorter delay): τP is inversely proportional to W/L at fixed load (Eq. 7.20). Anchor: the book's exercise for the inverter gives 2.51/1 and 6.27/1, reproduced by 2·1.2535 and 5·1.2535.",
+"assume": [
+"The same factor is applied to every transistor of the circuit (the relative sizes that equalise the on-resistances are kept)."
+],
+"parts": [
+[
+"Delay ratio from Table 7.3",
+"τP(VSAT = 1 V)/τP(unlimited) = 0.89/0.71 = 1.2535"
+],
+[
+"Scale factor for the transistors",
+"3.7606 (delay is inversely proportional to W/L)"
+],
+[
+"PMOS A, C, D",
+"15.0/1 → 56.41/1"
+],
+[
+"PMOS B",
+"7.5/1 → 28.2/1"
+],
+[
+"NMOS MA",
+"2.0/1 → 7.521/1"
+],
+[
+"NMOS MB, MC, MD",
+"4.0/1 → 15.04/1"
+]
+],
+"circuit": "Fig. 7.27 (p.407): complex gate Y = A + BC + BD (CMOS implementation): PMOS 15/1 (A, C, D) and 7.5/1 (B); NMOS MA 2/1, MB, MC, MD 4/1; VDD = 2.5 V.",
 "in_site": [],
 "id": "jaeger5-problem-7-7.50-4082",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -89796,7 +90151,7 @@
 "pdf": 535,
 "printed": 506,
 "text": "The values of IE E and RC in Fig. 9.6 are changed to 5 mA and 200 Ω, respectively. What are the new values of VH, VL, VREF, and ∆V ?",
-"answer": null,
+"answer": "VH, VL: -0.7 V, -1.7 V | ΔV = IEE·RC: 1.0 V | VREF = (VH + VL)/2: -1.2 V",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -89805,9 +90160,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Eqs. (9.12)–(9.18): the follower outputs are one VBE below the collector levels. With Q1 off the collector is at 0 V (minus R1·IEE if the common resistor R1 is present), with the current switched in it is IEE·RC lower: VH = −R1·IEE − VBE, VL = VH − IEE·RC, VREF = (VH + VL)/2. Check by KCL with βF = 40 (base currents of the followers included): ΔV = 0.9756 V and VH = -0.7005 V, i.e. the neglected iB·RC terms are below 6 %.",
+"assume": [
+"The follower resistors R = 42 kΩ are unchanged (follower current ≈ 0.1 mA)."
+],
+"parts": [
+[
+"VH, VL",
+"-0.7 V, -1.7 V"
+],
+[
+"ΔV = IEE·RC",
+"1.0 V"
+],
+[
+"VREF = (VH + VL)/2",
+"-1.2 V"
+]
+],
+"circuit": "Fig. 9.6 (p.506): ECL gate with emitter followers: current switch Q1 (input vI), Q2 (base at VREF) with RC = 2 kΩ in each collector and the tail current source IEE = 0.3 mA to −VEE = −5.2 V; emitter followers Q3, Q4 take the outputs vO1 (= Ā) and vO2 from the collectors, each loaded by R = 42 kΩ to −5.2 V. (IEE changed to 5 mA and RC to 200 Ω).",
 "in_site": [],
 "id": "jaeger5-problem-9-9.8-4205",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -89818,7 +90193,7 @@
 "pdf": 535,
 "printed": 506,
 "text": "The values of IE E, RC, and I3 and I4 in Fig. 9.6 are changed to 1 mA, 600 Ω, and 0.3 mA, respectively. What are the new values of VH, VL, VREF, and ∆V ?",
-"answer": null,
+"answer": "VH, VL: -0.7 V, -1.3 V | ΔV = IEE·RC: 0.6 V | VREF = (VH + VL)/2: -1.0 V",
 "stars": 0,
 "nq": 3,
 "numeric": true,
@@ -89827,9 +90202,27 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Eqs. (9.12)–(9.18): the follower outputs are one VBE below the collector levels. With Q1 off the collector is at 0 V (minus R1·IEE if the common resistor R1 is present), with the current switched in it is IEE·RC lower: VH = −R1·IEE − VBE, VL = VH − IEE·RC, VREF = (VH + VL)/2. Check by KCL with βF = 40 (base currents of the followers included): ΔV = 0.5854 V and VH = -0.7044 V, i.e. the neglected iB·RC terms are below 6 %.",
+"assume": [],
+"parts": [
+[
+"VH, VL",
+"-0.7 V, -1.3 V"
+],
+[
+"ΔV = IEE·RC",
+"0.6 V"
+],
+[
+"VREF = (VH + VL)/2",
+"-1.0 V"
+]
+],
+"circuit": "Fig. 9.6 (p.506): ECL gate with emitter followers: current switch Q1 (input vI), Q2 (base at VREF) with RC = 2 kΩ in each collector and the tail current source IEE = 0.3 mA to −VEE = −5.2 V; emitter followers Q3, Q4 take the outputs vO1 (= Ā) and vO2 from the collectors, each loaded by R = 42 kΩ to −5.2 V. (IEE = 1 mA, RC = 600 Ω, follower currents I3 = I4 = 0.3 mA).",
 "in_site": [],
 "id": "jaeger5-problem-9-9.9-4206",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -89871,6 +90264,7 @@
 "modules": [
 "m01"
 ],
+"skip": "redesign of the ECL gate of Fig. 9.6 for a 0.8 V swing with its noise margins (Sec. 9.3 transfer-curve analysis); the level part is as Prob. 9.8, the noise-margin part was not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.11-4208",
 "cls": "figure"
@@ -89884,7 +90278,7 @@
 "pdf": 535,
 "printed": 506,
 "text": "Advanced small geometry transistors have values of VBE that are larger than 0.7 V. (a) Redesign the ECL gate in Fig. 9.6 if VBE of the transistors is 0.85 V. What are the new values of VO H, VOL, and VRE F? (b) Repeat for VBE = 0.95 V.",
-"answer": null,
+"answer": "VBE = 0.85 V: VOH = -0.85 V, VOL = -1.45 V, VREF = -1.15 V (ΔV = 0.6 V unchanged) | VBE = 0.95 V: VOH = -0.95 V, VOL = -1.55 V, VREF = -1.25 V (ΔV = 0.6 V unchanged) | Follower resistors for the same 0.1 mA currents (VEE = −5.2 V): R ≈ (VOH + 5.2 V)/0.1 mA: 43.5 kΩ (a) and 42.5 kΩ (b) instead of 42 kΩ (optional)",
 "stars": 1,
 "nq": 3,
 "numeric": true,
@@ -89893,9 +90287,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Same design equations as Prob. 9.8: the output high level is one VBE below the collector level (0 V), VOH = −VBE; the swing ΔV = IEE·RC = 0.6 V and VREF = VOH − ΔV/2 are kept. A larger VBE lowers both levels and VREF by the same amount.",
+"assume": [
+"The swing 0.6 V (IEE = 0.3 mA, RC = 2 kΩ) of Fig. 9.6 is kept; the supply −5.2 V and R are only touched if the follower current should stay at 0.1 mA (optional)."
+],
+"parts": [
+[
+"VBE = 0.85 V",
+"VOH = -0.85 V, VOL = -1.45 V, VREF = -1.15 V (ΔV = 0.6 V unchanged)"
+],
+[
+"VBE = 0.95 V",
+"VOH = -0.95 V, VOL = -1.55 V, VREF = -1.25 V (ΔV = 0.6 V unchanged)"
+],
+[
+"Follower resistors for the same 0.1 mA currents (VEE = −5.2 V)",
+"R ≈ (VOH + 5.2 V)/0.1 mA: 43.5 kΩ (a) and 42.5 kΩ (b) instead of 42 kΩ (optional)"
+]
+],
+"circuit": "Fig. 9.6 (p.506): ECL gate with emitter followers: current switch Q1 (input vI), Q2 (base at VREF) with RC = 2 kΩ in each collector and the tail current source IEE = 0.3 mA to −VEE = −5.2 V; emitter followers Q3, Q4 take the outputs vO1 (= Ā) and vO2 from the collectors, each loaded by R = 42 kΩ to −5.2 V.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.12-4209",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -89906,7 +90320,7 @@
 "pdf": 535,
 "printed": 506,
 "text": "Emitter followers are added to the outputs of the circuit in Fig. P9.4 in the same manner as in Fig. 9.6. (a) Draw the new circuit. (b) If IE E = 0.3 mA, R1 = 3.33 kΩ, RC = 2 kΩ, and VREF = −2 V, what are the values of VH, VL, and the logic swing ∆V ? (c) Are the input and output levels of this gate compatible with each other?",
-"answer": null,
+"answer": "(b) VH, VL, ΔV: VH = −IEE·R1 − VBE = -1.699 V, VL = -2.299 V, ΔV = IEE·RC = 0.6 V | (c) input levels expected with VREF = −2 V: VREF ± ΔV/2 = -1.7 V and -2.3 V; output levels -1.699 V and -2.299 V: compatible: the outputs equal the input levels",
 "stars": 0,
 "nq": 4,
 "numeric": true,
@@ -89915,9 +90329,25 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "With R1 in the common collector path the collector levels are −IEE·R1 (current switched away) and −IEE·R1 − IEE·RC; the emitter followers subtract VBE = 0.7 V. The logic levels sit symmetrically about VREF = −2 V only if VREF = (VH + VL)/2 = −2.0 V, which holds here. KCL check with βF = 40 agrees within 6 %.",
+"assume": [
+"Part (a) is a drawing (emitter followers on both outputs, as in Fig. 9.6) and is not reproduced."
+],
+"parts": [
+[
+"(b) VH, VL, ΔV",
+"VH = −IEE·R1 − VBE = -1.699 V, VL = -2.299 V, ΔV = IEE·RC = 0.6 V"
+],
+[
+"(c) input levels expected with VREF = −2 V",
+"VREF ± ΔV/2 = -1.7 V and -2.3 V; output levels -1.699 V and -2.299 V: compatible: the outputs equal the input levels"
+]
+],
+"circuit": "Fig. P9.4 (p.506): current switch: Q1 (input vI) and Q2 (base at VREF) with RC in each collector, a common resistor R1 from ground to the two collector resistors, tail current source IEE to −VEE; emitter followers (as in Fig. 9.6) are added to the two outputs.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.13-4210",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -89928,7 +90358,7 @@
 "pdf": 535,
 "printed": 506,
 "text": "Emitter followers are added to the outputs of the circuit in Fig. P9.4 in the same manner as in Fig. 9.6. (a) Draw the new circuit. (b) What are the values of RC, VH, VL, and VREF if IE E = 1.5 mA, R1 = 800 Ω, and ∆V = 0.4 V?",
-"answer": null,
+"answer": "RC = ΔV/IEE: 266.7 Ω | VH, VL, VREF: -1.9 V, -2.3 V, -2.1 V",
 "stars": 0,
 "nq": 3,
 "numeric": true,
@@ -89937,9 +90367,25 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "ΔV = IEE·RC gives RC; VH = −IEE·R1 − VBE; VL = VH − ΔV; VREF = (VH + VL)/2. KCL check with βF = 40 agrees within 6 %.",
+"assume": [
+"Part (a) is a drawing and is not reproduced."
+],
+"parts": [
+[
+"RC = ΔV/IEE",
+"266.7 Ω"
+],
+[
+"VH, VL, VREF",
+"-1.9 V, -2.3 V, -2.1 V"
+]
+],
+"circuit": "Fig. P9.4 (p.506): current switch: Q1 (input vI) and Q2 (base at VREF) with RC in each collector, a common resistor R1 from ground to the two collector resistors, tail current source IEE to −VEE; emitter followers (as in Fig. 9.6) are added to the two outputs.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.14-4211",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -89959,6 +90405,7 @@
 "modules": [
 "m01"
 ],
+"skip": "fanout of the ECL inverter of Fig. P9.6 (the degradation of VH with the number of loads, βF = 30); multi-transistor analysis not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.15-4212",
 "cls": "figure"
@@ -89981,6 +90428,7 @@
 "modules": [
 "m01"
 ],
+"skip": "power redesign of the resistor-biased ECL gate of Fig. 9.8(b) with unchanged VH and VL (the modified collector resistors must be re-derived); not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.16-4213",
 "cls": "figure"
@@ -90025,6 +90473,7 @@
 "modules": [
 "m01"
 ],
+"skip": "ECL gate of Fig. P9.18: levels, noise margins and average power need the Sec. 9.3 noise-margin analysis; not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.18-4215",
 "cls": "figure"
@@ -90080,6 +90529,7 @@
 "modules": [
 "m01"
 ],
+"skip": "effect of a 20 % change of all resistors of Fig. 9.8(a) and (b) on the levels and noise margins (needs the Sec. 9.3 analysis); not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.20-4217",
 "cls": "figure"
@@ -90102,6 +90552,7 @@
 "modules": [
 "m01"
 ],
+"skip": "redesign of the gate of Fig. 9.8(b) for a 0.8 V swing with noise margins and minimum VCB; not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.21-4218",
 "cls": "figure"
@@ -90191,6 +90642,7 @@
 "modules": [
 "m01"
 ],
+"skip": "depends on the gate of Fig. P9.18 (levels and noise margins); not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.24-4221",
 "cls": "figure"
@@ -90235,6 +90687,7 @@
 "modules": [
 "m01"
 ],
+"skip": "open design of an electronic current source with the topology of Fig. P9.25 (several free choices) for the gate of Fig. P9.18; not done",
 "in_site": [],
 "id": "jaeger5-problem-9-9.26-4223",
 "cls": "figure"
@@ -91328,7 +91781,7 @@
 "pdf": 540,
 "printed": 511,
 "text": "Suppose the output in Fig. P9.81 is accidentally shorted to ground. (a) Calculate the emitter current in the circuit if RS = 0 and βF = 100. (b) Repeat for RS = 130 Ω.",
-"answer": null,
+"answer": "(a) RS = 0, βF = 100: IB = (VCC − VBE − VD1)/RC = 2.25 mA, IE = (βF + 1)·IB = 227.2 mA | (b) RS = 130 Ω: βF·IB = 225.0 mA would need 29.2 V across RS, so Q4 saturates (VCE = 0.15 V): IC = (VCC − VD1 − VCEsat)/RS = 31.92 mA, IE = IC + IB = 34.17 mA (saturated)",
 "stars": 0,
 "nq": 1,
 "numeric": true,
@@ -91337,9 +91790,25 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "With the output shorted to ground the base current is set by RC alone: IB = (5 − 0.7 − 0.7)/1.6 kΩ. Without RS the transistor is forward active: IE = (βF + 1)IB. With RS = 130 Ω the collector current cannot exceed (VCC − VD − VCEsat)/RS, so the transistor saturates and the emitter current is limited to that value plus IB. KVL around the collector branch checks that VC stays above VD1 + VCEsat.",
+"assume": [
+"VBE = VD1 = 0.7 V, VCEsat = 0.15 V (Table 9.3); the output short circuit holds vO = 0 V."
+],
+"parts": [
+[
+"(a) RS = 0, βF = 100",
+"IB = (VCC − VBE − VD1)/RC = 2.25 mA, IE = (βF + 1)·IB = 227.2 mA"
+],
+[
+"(b) RS = 130 Ω",
+"βF·IB = 225.0 mA would need 29.2 V across RS, so Q4 saturates (VCE = 0.15 V): IC = (VCC − VD1 − VCEsat)/RS = 31.92 mA, IE = IC + IB = 34.17 mA (saturated)"
+]
+],
+"circuit": "Fig. P9.81 (p.511): TTL totem-pole output stage: VCC = +5 V; RC = 1.6 kΩ to the base of Q4 and RS = 130 Ω to its collector; emitter of Q4 through diode D1 to the output vO, which sinks the load current iL (here shorted to ground).",
 "in_site": [],
 "id": "jaeger5-problem-9-9.81-4278",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91425,6 +91894,7 @@
 "modules": [
 "m01"
 ],
+"skip": "currents in the four transistors of the low-power TTL gate of Fig. 9.37 (multi-emitter Q1, phase splitter Q2, output pair, with βF and βR); the multi-transistor analysis was not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.85-4282",
 "cls": "figure"
@@ -91558,6 +92028,7 @@
 "modules": [
 "m01"
 ],
+"skip": "minimum supply voltage of the low-power TTL gate of Fig. P9.89 (figure not read in this pass)",
 "in_site": [],
 "id": "jaeger5-problem-9-9.91-4288",
 "cls": "figure"
@@ -91580,6 +92051,7 @@
 "modules": [
 "m01"
 ],
+"skip": "fanout limit of the standard TTL gate of Fig. 9.47 for VH ≥ 2.4 V (multi-transistor output-stage analysis); not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.92-4289",
 "cls": "figure"
@@ -91602,6 +92074,7 @@
 "modules": [
 "m01"
 ],
+"skip": "fanout limit of the standard TTL gate of Fig. 9.47 with modified resistors (same analysis as Prob. 9.92); not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.93-4290",
 "cls": "figure"
@@ -91624,6 +92097,7 @@
 "modules": [
 "m01"
 ],
+"skip": "asks for a plot of the fanout of the standard TTL gate against βR (a graph; the single-value fanout problems 9.92 and 9.93 were not done in this pass)",
 "in_site": [],
 "id": "jaeger5-problem-9-9.94-4291",
 "cls": "figure"
@@ -91690,6 +92164,7 @@
 "modules": [
 "m01"
 ],
+"skip": "TTL-type gate of Fig. P9.97 with six resistors: logic function, levels and input currents (multi-transistor analysis); not done in this pass",
 "in_site": [],
 "id": "jaeger5-problem-9-9.97-4294",
 "cls": "figure"
@@ -91725,7 +92200,7 @@
 "pdf": 542,
 "printed": 513,
 "text": "Prior to the availability of Schottky diodes, the Baker clamp circuit in Fig. P9.99 was used to prevent saturation. What is the collector-emitter voltage of the transistor in this circuit assuming that iB > iC/βF? What are iD1, iD2, and iC if iBB = 250μA,iCC = 1mA,βF = 20,andβR = 2?",
-"answer": null,
+"answer": "Collector-emitter voltage (identical diodes): vCE = vBE + vD2 − vD1 = vBE ≈ 0.7 V: the base-collector junction stays at about 0 V, so the transistor is not saturated | iD1: 190.5 μA | iD2 = iB: 59.52 μA | iC = iCC + iD1: 1.19 mA",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -91734,9 +92209,33 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Baker clamp: D2 feeds the base, D1 returns the excess base drive to the collector. KCL at the base node: iBB = iD1 + iD2; at the collector node: iC = iCC + iD1; the transistor stays at the edge of the forward-active region, iB = iD2 = iC/βF. Solving gives iD1 = (iBB − iCC/βF)/(1 + 1/βF). The loop vCE = vBE + vD2 − vD1 gives 0.7 V for identical diodes.",
+"assume": [
+"Ideal identical diodes and forward-active operation (βR = 2 is not needed)."
+],
+"parts": [
+[
+"Collector-emitter voltage (identical diodes)",
+"vCE = vBE + vD2 − vD1 = vBE ≈ 0.7 V: the base-collector junction stays at about 0 V, so the transistor is not saturated"
+],
+[
+"iD1",
+"190.5 μA"
+],
+[
+"iD2 = iB",
+"59.52 μA"
+],
+[
+"iC = iCC + iD1",
+"1.19 mA"
+]
+],
+"circuit": "Fig. P9.99 (p.513): Baker clamp: current source iBB into the node joined to the base through diode D2 and to the collector through diode D1; current source iCC into the collector; emitter grounded.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.99-4296",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91791,7 +92290,7 @@
 "pdf": 542,
 "printed": 513,
 "text": "What is the logic function of the gate in Fig. P9.102. Find VH, VL, and VREF for the circuit, assuming VE E = −3 V, RC = 3.3 kΩ, and RE = 2.4 kΩ. Assume VBE = 0.7 and VD = 0.4 V for the Schottky diode. –VEE",
-"answer": null,
+"answer": "Logic function: Y = A + B + C (OR): Y is the collector of QR, which is off (Y = 0 V) when any input transistor is on | VH: 0 V (QR off, no current in RC) | VL: -0.8 V: the Schottky diode clamps the collector of QR at VREF − VD (without the clamp RC would drop 2.61 V) | VREF = (VH + VL)/2: -0.4 V",
 "stars": 0,
 "nq": 4,
 "numeric": true,
@@ -91800,9 +92299,33 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "The three input transistors and QR share the emitter resistor RE; with all inputs low QR conducts and the collector level would be −IE·RC (IE = (VREF − VBE + VEE)/RE), far below VREF, so the Schottky diode clamps it at VREF − VD. With VREF centred between the levels, VREF = VL/2 and VL = VREF − VD give VREF = −VD = −0.4 V and VL = −0.8 V; then IE = 0.79 mA, so the clamp is indeed active.",
+"assume": [
+"VREF is taken centred between VH and VL as in Eq. (9.18a) (the statement does not say how VREF is chosen)."
+],
+"parts": [
+[
+"Logic function",
+"Y = A + B + C (OR): Y is the collector of QR, which is off (Y = 0 V) when any input transistor is on"
+],
+[
+"VH",
+"0 V (QR off, no current in RC)"
+],
+[
+"VL",
+"-0.8 V: the Schottky diode clamps the collector of QR at VREF − VD (without the clamp RC would drop 2.61 V)"
+],
+[
+"VREF = (VH + VL)/2",
+"-0.4 V"
+]
+],
+"circuit": "Fig. P9.102 (p.513): ECL OR gate: input transistors A, B, C (collectors to ground) and the reference transistor QR (Schottky-clamped, base at VREF, collector Y through RC to ground) with emitters tied to RE and −VEE.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.102-4299",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91813,7 +92336,7 @@
 "pdf": 542,
 "printed": 513,
 "text": "Estimate iB and iC of the Schottky transistor in Fig. P9.103 if the external collector terminal is open. Assume the forward voltage of the Schottky diode is 0.45 V.",
-"answer": null,
+"answer": "Current from the 4 kΩ resistor: 1.075 mA | iB: 26.22 μA | iC (through the Schottky diode): 1.049 mA | Check: VCE = VBE − VSchottky = 0.25 V > VCEsat = 0.15 V: forward active",
 "stars": 0,
 "nq": 1,
 "numeric": true,
@@ -91822,9 +92345,33 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "With the external collector open the whole collector current is supplied through the Schottky diode from the base node, so the current from the resistor splits as iin = iB + iC = (βF + 1)iB with βF = 40 (Table 9.3) and iin = (5 − 0.7)/4 kΩ.",
+"assume": [
+"βF = 40 and VBE = 0.7 V (Table 9.3) are used; the Schottky forward voltage is 0.45 V as given."
+],
+"parts": [
+[
+"Current from the 4 kΩ resistor",
+"1.075 mA"
+],
+[
+"iB",
+"26.22 μA"
+],
+[
+"iC (through the Schottky diode)",
+"1.049 mA"
+],
+[
+"Check",
+"VCE = VBE − VSchottky = 0.25 V > VCEsat = 0.15 V: forward active"
+]
+],
+"circuit": "Fig. P9.103 (p.513): Schottky-clamped transistor Q1: the base is fed from +5 V through 4 kΩ, the emitter is grounded and the external collector terminal is open (i = 0).",
 "in_site": [],
 "id": "jaeger5-problem-9-9.103-4300",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91835,7 +92382,7 @@
 "pdf": 542,
 "printed": 513,
 "text": "The power dissipation of a particular IC chip is 50 W, and the chip will contain 50 million logic gates. The gates must have an average propagation delay of 1 ns. (a) What is the power-delay product of the logic family? (b) What is the lowest PDP that can be plotted on the graph in Fig. 9.51?",
-"answer": null,
+"answer": "(a) power per gate = 50.0 W/5e+07: 1.0 μW | (a) power-delay product = P·τ: 1.0 fJ | (b) lowest PDP on the graph (lower left corner: 0.1 mW × 0.1 ns): 10.0 fJ | Comparison: the required PDP is below the lowest value that can be plotted (ratio 0.1)",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -91844,9 +92391,33 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "PDP = (chip power/number of gates) × delay; the corner of the graph of Fig. 9.51 (0.1 mW, 0.1 ns) gives the smallest plottable PDP, 10 fJ (axes read from the vector drawing).",
+"assume": [
+"The graph limits (0.1 mW … 100 mW, 0.1 ns … 100 ns) are read from the axis labels of Fig. 9.51."
+],
+"parts": [
+[
+"(a) power per gate = 50.0 W/5e+07",
+"1.0 μW"
+],
+[
+"(a) power-delay product = P·τ",
+"1.0 fJ"
+],
+[
+"(b) lowest PDP on the graph (lower left corner: 0.1 mW × 0.1 ns)",
+"10.0 fJ"
+],
+[
+"Comparison",
+"the required PDP is below the lowest value that can be plotted (ratio 0.1)"
+]
+],
+"circuit": "Fig. 9.51 (p.513): power-delay graph: propagation delay 0.1–100 ns against power dissipation 0.1–100 mW (log axes) with lines of constant PDP (50 pJ, 1 pJ, 100 fJ) and points for the logic families (74LS: 2 mW, 10 ns; ECL 100K: about 40 mW, 0.7 ns); the gate on the left is the Schottky TTL gate.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.104-4301",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91857,7 +92428,7 @@
 "pdf": 543,
 "printed": 514,
 "text": "The power dissipation of a particular IC chip is limited to 100 W, and the chip will contain 250 million logic gates. The gates must have an average propagation delay of 0.25 ns. (a) What is the powerdelay product of the logic family? (b) What is the lowest PDP that can be plotted on the graph in Fig. 9.51?",
-"answer": null,
+"answer": "(a) power per gate = 100.0 W/2.5e+08: 400.0 nW | (a) power-delay product = P·τ: 1.000e-16 J | (b) lowest PDP on the graph (lower left corner: 0.1 mW × 0.1 ns): 10.0 fJ | Comparison: the required PDP is below the lowest value that can be plotted (ratio 0.01)",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -91866,9 +92437,33 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "PDP = (chip power/number of gates) × delay; the corner of the graph of Fig. 9.51 (0.1 mW, 0.1 ns) gives the smallest plottable PDP, 10 fJ (axes read from the vector drawing).",
+"assume": [
+"The graph limits (0.1 mW … 100 mW, 0.1 ns … 100 ns) are read from the axis labels of Fig. 9.51."
+],
+"parts": [
+[
+"(a) power per gate = 100.0 W/2.5e+08",
+"400.0 nW"
+],
+[
+"(a) power-delay product = P·τ",
+"1.000e-16 J"
+],
+[
+"(b) lowest PDP on the graph (lower left corner: 0.1 mW × 0.1 ns)",
+"10.0 fJ"
+],
+[
+"Comparison",
+"the required PDP is below the lowest value that can be plotted (ratio 0.01)"
+]
+],
+"circuit": "Fig. 9.51 (p.514): power-delay graph: propagation delay 0.1–100 ns against power dissipation 0.1–100 mW (log axes) with lines of constant PDP (50 pJ, 1 pJ, 100 fJ) and points for the logic families (74LS: 2 mW, 10 ns; ECL 100K: about 40 mW, 0.7 ns); the gate on the left is the Schottky TTL gate.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.105-4302",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91914,7 +92509,7 @@
 "pdf": 543,
 "printed": 514,
 "text": "The 74LS gate in Fig. 9.51 is redesigned to operate at a power of 5 mW. (a) What is the gate delay of the new design? Assume a constant power-delay product. (b) What power is required to achieve a delay of 0.3 ns?",
-"answer": null,
+"answer": "PDP of the 74LS gate read from Fig. 9.51: 2.0 mW × 10.0 ns = 20.0 pJ | (a) delay at 5 mW (constant PDP): 4.0 ns | (b) power for a 0.3 ns delay: 66.7 mW",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -91923,9 +92518,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Constant power-delay product: τ = PDP/P. The 74LS point of Fig. 9.51 was read from the vector drawing (log interpolation between the axis labels: 1.99 mW, 10.0 ns).",
+"assume": [
+"Reading of the graph: about 2 mW and 10 ns for 74LS (±3 %)."
+],
+"parts": [
+[
+"PDP of the 74LS gate read from Fig. 9.51",
+"2.0 mW × 10.0 ns = 20.0 pJ"
+],
+[
+"(a) delay at 5 mW (constant PDP)",
+"4.0 ns"
+],
+[
+"(b) power for a 0.3 ns delay",
+"66.7 mW"
+]
+],
+"circuit": "Fig. 9.51 (p.514): power-delay graph: propagation delay 0.1–100 ns against power dissipation 0.1–100 mW (log axes) with lines of constant PDP (50 pJ, 1 pJ, 100 fJ) and points for the logic families (74LS: 2 mW, 10 ns; ECL 100K: about 40 mW, 0.7 ns); the gate on the left is the Schottky TTL gate.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.107-4304",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",
@@ -91936,7 +92551,7 @@
 "pdf": 543,
 "printed": 514,
 "text": "The ECL-100K gate in Fig. 9.51 is redesigned to operate at a power of 10 mW. (a) What is the gate delay of the new design? Assume a constant powerdelay product. (b) What power is required to achieve a delay of 0.2 ns?",
-"answer": null,
+"answer": "PDP of the ECL 100K gate read from Fig. 9.51: 40.0 mW × 700.0 ps = 28.0 pJ | (a) delay at 10 mW (constant PDP): 2.8 ns | (b) power for a 0.2 ns delay: 140.0 mW",
 "stars": 0,
 "nq": 2,
 "numeric": true,
@@ -91945,9 +92560,29 @@
 "modules": [
 "m01"
 ],
+"ans_kind": "computed",
+"how": "Constant power-delay product: τ = PDP/P. The ECL 100K point of Fig. 9.51 was read from the vector drawing (39.6 mW, 0.70 ns).",
+"assume": [
+"Reading of the graph: about 40 mW and 0.7 ns for ECL 100K (±3 %)."
+],
+"parts": [
+[
+"PDP of the ECL 100K gate read from Fig. 9.51",
+"40.0 mW × 700.0 ps = 28.0 pJ"
+],
+[
+"(a) delay at 10 mW (constant PDP)",
+"2.8 ns"
+],
+[
+"(b) power for a 0.2 ns delay",
+"140.0 mW"
+]
+],
+"circuit": "Fig. 9.51 (p.514): power-delay graph: propagation delay 0.1–100 ns against power dissipation 0.1–100 mW (log axes) with lines of constant PDP (50 pJ, 1 pJ, 100 fJ) and points for the logic families (74LS: 2 mW, 10 ns; ECL 100K: about 40 mW, 0.7 ns); the gate on the left is the Schottky TTL gate.",
 "in_site": [],
 "id": "jaeger5-problem-9-9.108-4305",
-"cls": "figure"
+"cls": "solved"
 },
 {
 "book": "jaeger5",

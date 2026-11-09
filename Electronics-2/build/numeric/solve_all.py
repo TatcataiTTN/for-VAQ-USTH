@@ -2,7 +2,7 @@
 Exit status 1 if any solver fails: this is the verification of the solved Jaeger problems.   Run: python3 -I build/numeric/solve_all.py"""
 import sys, os, json
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(HERE, 'jsol')); sys.path.insert(0, HERE)
-import ch07, ch09, ch10, ch11, ch12, figs10, figs11, figs12, figs6, figs9
+import ch07, ch09, ch10, ch11, ch12, figs10, figs11, figs12, figs6, figs7, figs9
 from core import REG
 from skipped import SKIP
 from common import OUT

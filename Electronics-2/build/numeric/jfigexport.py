@@ -51,6 +51,8 @@ def drawings(page):
         out.append(r)
     return out
 TALL = {'P11.8': 600}                                                                       # figures taller than the usual 340 pt search window (four stacked sub-figures)
+MANUAL = {'P9.102': (60, 200, 556, 356), 'P9.4': (326, 494, 482, 665)}                       # boxes (page points) fixed by eye where wires that look like text-block rules make the automatic grouping fall apart
+FULLW = {'6.24', '6.30', '7.20', '7.27', '9.6', '9.51', 'P7.22', 'P9.4', 'P9.103'}      # figures that run across (almost) the whole page width: search the full width, wide gaps allowed, no right-hand clamp
 WIDE = {'P12.23': 40}                                                                        # figure labels whose drawing starts left of the caption (checked by eye)
 def box_for(page, cap, problem, cap_label=''):
     """Problem figures (P…) are left-aligned with their caption in one of the two columns of the problem pages; figures of the text are centred over the caption line."""
@@ -61,7 +63,9 @@ def box_for(page, cap, problem, cap_label=''):
     if not problem and right: hi = min(hi, min(c.x0 for c in right) - 8)
     nxt = [c.x0 for c in page_captions(page) if c.x0 > cap.x0 + 120]                          # a caption of the other column of the page bounds the figure on the right
     if problem and nxt: hi = min(hi, min(nxt) - 6)
-    if cap_label in WIDE: lo = min(lo, WIDE[cap_label])                                          # a wide problem figure whose caption is not left-aligned with it
+    if cap_label in WIDE: lo = min(lo, WIDE[cap_label])
+    gapx, gapy = 70, 28
+    if cap_label in FULLW: lo, hi, gapx, gapy = 30, page.rect.width - 30, 130, 45                                          # a wide problem figure whose caption is not left-aligned with it
     rects = [r for r in drawings(page) if r.y1 <= cap.y0 + 3 and r.y1 > cap.y0 - TALL.get(cap_label, 340) and r.x1 > lo and r.x0 < hi]
     cur = None
     for r in sorted(rects, key=lambda r: -r.y1):
@@ -72,25 +76,30 @@ def box_for(page, cap, problem, cap_label=''):
     while grown:                                                                               # grow to a fixpoint (the result does not depend on the order of the rectangles)
         grown = False
         for r in rects:
-            if r.y1 >= cur.y0 - 28 and r.y0 <= cur.y1 + 2 and r.x1 > cur.x0 - 70 and r.x0 < cur.x1 + 70:
+            if r.y1 >= cur.y0 - gapy and r.y0 <= cur.y1 + 2 and r.x1 > cur.x0 - gapx and r.x0 < cur.x1 + gapx:
                 before = tuple(cur); cur.include_rect(r)
                 if tuple(cur) != before: grown = True                                           # (a degenerate line never counts as growth: no endless loop)
     return cur
-def labels(page, box, cap):
+def labels(page, box, cap, m=14):
     """Add the short labels (a whole text line of at most 14 characters: 'R2', '27 kΩ', 'vo', '(a)') that touch the box; the statements of the problems are long lines and stay out."""
-    big = fitz.Rect(box.x0 - 14, box.y0 - 14, box.x1 + 14, box.y1 + 10); u = fitz.Rect(box)
+    big = fitz.Rect(box.x0 - m, box.y0 - 14, box.x1 + m, box.y1 + 10); u = fitz.Rect(box)
     for b in page.get_text('dict')['blocks']:
         for l in b.get('lines', []):
             txt = ''.join(sp['text'] for sp in l['spans']).strip(); r = fitz.Rect(l['bbox'])
-            if not txt or len(txt) > 14 or txt.startswith('Figure') or r.y1 > cap.y0 + 1 or r.width > 90 or re.fullmatch(r'\d{1,2}\.\d{1,3}\.?', txt): continue            # (problem numbers such as '12.11.' of the next column stay out)
+            if not txt or len(txt) > 14 or txt.startswith('Figure') or r.y1 > cap.y0 + 1 or r.width > 90 or re.fullmatch(r'\d{1,2}\.\d{1,3}\.?', txt) or (txt[0].islower() and txt.endswith('.')): continue            # (problem numbers and the tail of a sentence such as 'diode.' stay out; problem numbers such as '12.11.' of the next column stay out)
             if r.intersects(big): u.include_rect(r)
     return u
 def export(doc, lab, hint=None, dpi=150):
     hs = captions(doc, lab, hint) or (captions(doc, lab) if hint else [])
     if not hs: return None, 'caption not found'
-    p, cap = hs[0]; page = doc[p - 1]; box = box_for(page, cap, lab.startswith('P'), lab)
+    p, cap = hs[0]; page = doc[p - 1]
+    if lab in MANUAL:
+        box = fitz.Rect(*MANUAL[lab]); box = fitz.Rect(box.x0, box.y0, box.x1, min(box.y1, cap.y0 - 1))
+        return Image.open(io.BytesIO(page.get_pixmap(clip=box, dpi=dpi).tobytes('png'))), f'p{p} manual box {[round(v) for v in box]}'
+    box = box_for(page, cap, lab.startswith('P'), lab)
     if box is None: return None, 'no vector drawing above the caption'
-    box = labels(page, box, cap); y0 = box.y0 - 8
+    full = lab in FULLW
+    box = labels(page, box, cap, 40 if full else 14); y0 = box.y0 - 8
     for c in page_captions(page):                                                              # the caption of the figure above, in the same column, stays out
         if c.y1 <= box.y0 + 3 and c.y1 > box.y0 - 14 and c.x1 > box.x0 and c.x0 < box.x1: y0 = max(y0, c.y1 + 1)
     for b in page.get_text('dict')['blocks']:                                                  # and so do the last lines of the text above it
@@ -106,7 +115,7 @@ def export(doc, lab, hint=None, dpi=150):
     for d in page.get_drawings():
         if is_blue(d.get('fill')) or is_blue(d.get('color')): foreign.append(d['rect'])
     for r in foreign:
-        if r.y1 > y0 and r.y0 < y1:
+        if r.y1 > y0 and r.y0 < y1 and not full:
             if r.x0 >= box.x0 + 0.6 * (box.x1 - box.x0) and r.x0 < x1: x1 = r.x0 - 0.5                  # foreign text/icon on the right side (the other column): cut before it
             if r.x1 <= box.x0 + 0.5 and r.x1 > x0: x0 = r.x1 + 0.5
     box = fitz.Rect(x0, max(0, y0), x1, y1)
