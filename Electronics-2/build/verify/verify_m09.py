@@ -9,7 +9,8 @@ class Pages(dict):
         return self[n]
 pages = Pages()
 ev = json.load(open(os.path.join(ROOT, 'data', 'verify', 'm09_evidence.json'), encoding='utf-8'))
-items = json.load(open(os.path.join(ROOT, 'data/qsrc/m09.json'), encoding='utf-8')) + json.load(open(os.path.join(ROOT, 'data/qsrc/m09_gen.json'), encoding='utf-8'))
+ev.update(json.load(open(os.path.join(ROOT, 'data', 'verify', 'm09_l2_evidence.json'), encoding='utf-8')))          # the 39 level-2 questions of build/gen/gen_m09_l2.py
+items = json.load(open(os.path.join(ROOT, 'data/qsrc/m09.json'), encoding='utf-8')) + json.load(open(os.path.join(ROOT, 'data/qsrc/m09_gen.json'), encoding='utf-8')) + json.load(open(os.path.join(ROOT, 'data/qsrc/m09_zl2.json'), encoding='utf-8'))
 calc = json.load(open(os.path.join(ROOT, 'data/qsrc/m09_calc_gen.json'), encoding='utf-8'))
 fails = []; n = 0
 for it in items:

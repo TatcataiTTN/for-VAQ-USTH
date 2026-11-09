@@ -1,0 +1,12 @@
+{
+ "vi": [
+  "Hình 14–44(b) (oscilloscope Multisim) và Checkup 14–5.3 không giải được: biên độ phải đọc từ ảnh chụp màn hình và nguồn ghi “100 µV” không nói rms hay đỉnh (sai số ≥ 25 %).",
+  "NGHI VẤN ĐÁP ÁN IN (Floyd 9e, Problem 17, Chương 14): đáp án in Av ≈ 11,6 cho mạch OTA Hình 14–56 (RBIAS = 220 kΩ, ±12 V, RL = 6,8 kΩ, K = 16 μS/μA) lớn hơn khoảng 4 % so với 11,2 theo chính phương pháp của sách (IBIAS = (24 V − 1,4 V)/220 kΩ). Chưa tìm ra nguyên nhân; Problem 18 (thêm biến trở 10 kΩ) giải theo phương pháp của sách và ghi chú chênh lệch này.",
+  "Bài 6 (băng thông ở độ lợi 10, dùng đồ thị Hình 14–6): đọc đường cong từ bản vẽ vector của PDF, điểm −3 dB ≈ 0,4 MHz; cách đọc “chỗ đường cong bắt đầu hạ” của Ví dụ 14–2 cho khoảng 0,3 MHz."
+ ],
+ "en": [
+  "Figure 14–44(b) (a Multisim oscilloscope screenshot) and Checkup 14–5.3 cannot be solved: the amplitude must be read off a screenshot and the source is given as “100 µV” without saying rms or peak (error ≥ 25 %).",
+  "PRINTED-ANSWER DOUBT (Floyd 9e, Chapter 14 Problem 17): the printed answer Av ≈ 11.6 for the OTA of Figure 14–56 (RBIAS = 220 kΩ, ±12 V, RL = 6.8 kΩ, K = 16 μS/μA) is about 4 % above the 11.2 given by the book's own method (IBIAS = (24 V − 1.4 V)/220 kΩ). Cause not found; Problem 18 (with a 10 kΩ rheostat added) is solved with the book's method and notes the difference.",
+  "Problem 6 (bandwidth at gain 10, using the graph of Figure 14–6): the curve was read from the vector drawing of the PDF, the −3 dB point is ≈ 0.4 MHz; the rough “where the curve begins to drop” rule of Example 14–2 gives about 0.3 MHz."
+ ]
+}

@@ -60,9 +60,13 @@ for m in MODS:                                                      # problems w
                        note={'vi': 'Sách không in đáp án các problem này. Đáp án do site tính theo công thức của chính sách và kiểm lại bằng một cách độc lập (mô phỏng số, mạch chính xác, FFT, nghiệm đa thức…); phần “Giả định” ghi chỗ đề chưa nói rõ. Thời gian là giả định (8 phút mỗi bài).',
                              'en': 'The book prints no answer for these problems. The answers were computed by this site with the book\'s own formulas and re-checked by an independent route (numerical simulation, exact circuit solution, FFT, polynomial roots…); the “Assumptions” lines state what the statement leaves open. The time limit is an assumption (8 minutes per problem).'},
                        problems=probs))
-KLAB = {'checkup': ('Section Checkup', 'Section Checkup'), 'example': ('Example', 'Example'), 'related_problem': ('Related Problem của Example', 'Related Problem of Example'), 'problem': ('Problem', 'Problem')}
-KORD = {'example': 0, 'related_problem': 1, 'checkup': 2, 'problem': 3}
+KLAB = {'circuit_action': ('Circuit Action', 'Circuit Action'), 'checkup': ('Section Checkup', 'Section Checkup'), 'example': ('Example', 'Example'), 'related_problem': ('Related Problem của Example', 'Related Problem of Example'), 'problem': ('Problem', 'Problem')}
+KORD = {'example': 0, 'related_problem': 1, 'checkup': 2, 'circuit_action': 3, 'problem': 4}
 def sortkey(e): return (e['book'], e['chapter'] or 0, KORD.get(e['kind'], 9), [int(x) if x.isdigit() else 0 for x in re.split(r'[–.\-]', str(e['number']))])
+FIGS = json.load(open(os.path.join(OUT, 'figs.json'), encoding='utf-8')) if os.path.exists(os.path.join(OUT, 'figs.json')) else {}
+def figs_of(e):                                       # the book figures the circuit description names (cut out by build/numeric/figexport.py)
+    if not e.get('circuit'): return []
+    head = re.split(r'\(pp?\.|:', e['circuit'], 1)[0]; return [FIGS[l] for l in dict.fromkeys(re.findall(r'\d+–\d+', head)) if l in FIGS]
 def ctx_of(e):                                        # a Related Problem refers to its Example: print the Example statement with it
     if e.get('ctx'): return e['ctx']
     if e['kind'] == 'related_problem':
@@ -80,7 +84,7 @@ for m in MODS:                                                      # book calcu
         def ref(e):
             if e['book'] == 'floyd': return f"Floyd 9e Ch.{e['chapter']} {KLAB[e['kind']][1]} {e['number']}, p.{e['printed']} (PDF {e['pdf']})"
             return f"Jaeger 5e Example {e['number']}, p.{e['printed']} (PDF {e['pdf']})"
-        probs = [[dict(text=e['text'], ctx=ctx_of(e), marks=1, answer=e['parts'], how=e['how'], assume=e['assume'], ref=ref(e), fig=0, page=e['pdf'], computed=1)] for e in part]
+        probs = [[dict(text=e['text'], ctx=ctx_of(e), marks=1, answer=e['parts'], how=e['how'], assume=e['assume'], ref=ref(e), fig=0, page=e['pdf'], computed=1, circuit=e.get('circuit'), figs=figs_of(e))] for e in part]
         tag_vi = f' · phần {j + 1}/{k}' if k > 1 else ''; tag_en = f' · part {j + 1} of {k}' if k > 1 else ''
         papers.append(dict(id=f'calc-{mid}' + (f'-{j + 1}' if k > 1 else ''), module=mid, group='calc-solved', minutes=max(15, 6 * len(part)),
                            title={'vi': f'{mid.upper()} · {m["vi"]}: bài tính trong sách không có đáp án in (site tự giải và kiểm){tag_vi}', 'en': f'{mid.upper()} · {m["en"]}: book calculations without a printed answer (solved and checked by this site){tag_en}'},

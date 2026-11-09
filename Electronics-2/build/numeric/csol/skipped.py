@@ -1,5 +1,7 @@
 """Calculation exercises that are NOT solved here, each with the reason.  Key = (book, kind, chapter, number)."""
 SKIP = {
+    ('floyd', 'checkup', '14', '14–5.3'): 'needs the gain read from a Multisim oscilloscope screenshot (Figure 14–44b: IA output on 50 mV/div) and the source in the schematic is given as “100 µV” without saying rms or peak, so the gain cannot be fixed to better than about ±25 %',
+    ('floyd', 'problem', '12', '54'): 'depends on the student\'s own design of Problem 53 (its answer is a circuit figure, Figure ANS–33) and on reading the output-swing-versus-load curve of Figure 12–79',
     ('floyd', 'checkup', '12', '12–9.3'): 'depends on the op-amp stage of the application section (its gain is in a figure not repeated in the question)',
     ('floyd', 'checkup', '12', '12–9.4'): 'depends on the audio amplifier of the application section (supply and circuit are in a figure)',
     ('floyd', 'checkup', '12', '12–9.6'): 'needs the datasheet of the op-amp used in the application (supply current is in a datasheet image)',

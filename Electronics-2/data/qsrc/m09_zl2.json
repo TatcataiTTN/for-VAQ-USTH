@@ -1,0 +1,1757 @@
+[
+{
+"kind": "mcq",
+"q": {
+"en": "How many times larger is the static voltage produced by walking on a carpet at 20 % relative humidity (up to 35,000 V) than at 65 % relative humidity (1,500 V)?",
+"vi": "Đi trên thảm ở độ ẩm tương đối 20 % (tới 35.000 V) cho điện áp tĩnh lớn gấp bao nhiêu lần so với ở độ ẩm 65 % (1.500 V)?"
+},
+"opts": [
+{
+"en": "About 23 times",
+"vi": "Khoảng 23 lần"
+},
+{
+"en": "About 2.3 times",
+"vi": "Khoảng 2,3 lần"
+},
+{
+"en": "About 230 times",
+"vi": "Khoảng 230 lần"
+},
+{
+"en": "About 13 times",
+"vi": "Khoảng 13 lần"
+}
+],
+"correct": 0,
+"explain": {
+"en": "35,000 V ÷ 1,500 V = 23.3: dry air multiplies the charge by more than twenty, which is why humidity and conductive floors matter.",
+"vi": "35.000 V ÷ 1.500 V = 23,3: không khí khô làm điện tích tăng hơn hai mươi lần, đó là lý do độ ẩm và sàn dẫn điện quan trọng."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A technician has walked across a carpet at 65 % humidity and carries about 1,500 V. Using the damage ranges in the text (bipolar 380–7,000 V, CMOS 250–3,000 V, EPROM from 100 V), which parts can he damage by touching them?",
+"vi": "Một kỹ thuật viên vừa đi trên thảm ở độ ẩm 65 % và mang khoảng 1.500 V. Theo các khoảng gây hỏng trong sách (lưỡng cực 380–7.000 V, CMOS 250–3.000 V, EPROM từ 100 V), anh ấy có thể làm hỏng những linh kiện nào khi chạm vào?"
+},
+"opts": [
+{
+"en": "Bipolar transistors, CMOS devices and EPROMs",
+"vi": "Transistor lưỡng cực, linh kiện CMOS và EPROM"
+},
+{
+"en": "Only EPROMs",
+"vi": "Chỉ EPROM"
+},
+{
+"en": "CMOS devices and EPROMs but not bipolar transistors",
+"vi": "CMOS và EPROM nhưng không phải transistor lưỡng cực"
+},
+{
+"en": "No type: 1,500 V is below every threshold",
+"vi": "Không loại nào: 1.500 V thấp hơn mọi ngưỡng"
+}
+],
+"correct": 0,
+"explain": {
+"en": "1,500 V is above the lowest damaging voltage of all three families (380 V, 250 V, 100 V), so all of them are at risk.",
+"vi": "1.500 V lớn hơn điện áp gây hỏng thấp nhất của cả ba họ (380 V, 250 V, 100 V), nên cả ba đều có nguy cơ."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A person carries only 200 V. Which of these parts can still be damaged (lowest damaging voltage: bipolar 380 V, CMOS 250 V, EPROM 100 V)?",
+"vi": "Một người chỉ mang 200 V. Linh kiện nào dưới đây vẫn có thể bị hỏng (điện áp gây hỏng thấp nhất: lưỡng cực 380 V, CMOS 250 V, EPROM 100 V)?"
+},
+"opts": [
+{
+"en": "EPROMs only",
+"vi": "Chỉ EPROM"
+},
+{
+"en": "CMOS devices only",
+"vi": "Chỉ CMOS"
+},
+{
+"en": "Bipolar transistors and EPROMs",
+"vi": "Transistor lưỡng cực và EPROM"
+},
+{
+"en": "All three types",
+"vi": "Cả ba loại"
+}
+],
+"correct": 0,
+"explain": {
+"en": "200 V exceeds the 100 V of EPROMs but not the 250 V of CMOS or the 380 V of bipolar transistors.",
+"vi": "200 V vượt 100 V của EPROM nhưng không vượt 250 V của CMOS hay 380 V của transistor lưỡng cực."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A device is damaged only by discharges of about 2,500 V or more. In MIL-STD-1686C it belongs to",
+"vi": "Một linh kiện chỉ bị hỏng khi phóng điện khoảng 2.500 V trở lên. Theo MIL-STD-1686C nó thuộc"
+},
+"opts": [
+{
+"en": "Class II (1,001 to 4,000 V)",
+"vi": "Lớp II (1.001 đến 4.000 V)"
+},
+{
+"en": "Class I (100 to 1,000 V)",
+"vi": "Lớp I (100 đến 1.000 V)"
+},
+{
+"en": "Neither class: the standard stops at 1,000 V",
+"vi": "Không lớp nào: tiêu chuẩn dừng ở 1.000 V"
+},
+{
+"en": "Class III (above 4,000 V)",
+"vi": "Lớp III (trên 4.000 V)"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The standard recognizes two classes by sensitivity: Class I for 100 to 1,000 V and Class II for 1,001 to 4,000 V; 2,500 V falls in Class II (most components are in Class I).",
+"vi": "Tiêu chuẩn có hai lớp theo độ nhạy: Lớp I 100–1.000 V và Lớp II 1.001–4.000 V; 2.500 V thuộc Lớp II (đa số linh kiện thuộc Lớp I)."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Most electronic components are in MIL-STD-1686C Class I. This means that",
+"vi": "Đa số linh kiện điện tử thuộc Lớp I của MIL-STD-1686C. Điều đó có nghĩa là"
+},
+"opts": [
+{
+"en": "they can be damaged by discharges of only 100 to 1,000 V",
+"vi": "chúng có thể bị hỏng chỉ với phóng điện 100 đến 1.000 V"
+},
+{
+"en": "they tolerate 1,001 to 4,000 V without damage",
+"vi": "chúng chịu được 1.001 đến 4.000 V mà không hỏng"
+},
+{
+"en": "they need no ESD control at the work station",
+"vi": "chúng không cần kiểm soát ESD tại bàn làm việc"
+},
+{
+"en": "they are damaged only by induction, never by contact",
+"vi": "chúng chỉ bị hỏng do cảm ứng, không bao giờ do tiếp xúc"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Class I covers the most sensitive items (100 to 1,000 V), and most components are in it, so ordinary handling voltages are enough to damage them.",
+"vi": "Lớp I gồm các linh kiện nhạy nhất (100–1.000 V) và đa số linh kiện thuộc lớp này, nên điện áp xử lý thông thường cũng đủ làm hỏng."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "According to the definition, an electrostatic charge can pass from one body to another by",
+"vi": "Theo định nghĩa, điện tích tĩnh có thể truyền từ vật này sang vật khác bằng"
+},
+"opts": [
+{
+"en": "conduction through physical contact or induction from a field",
+"vi": "dẫn điện qua tiếp xúc hoặc cảm ứng từ một trường"
+},
+{
+"en": "convection in moving air or radiation as light",
+"vi": "đối lưu trong không khí chuyển động hoặc bức xạ ánh sáng"
+},
+{
+"en": "conduction only: a charge cannot act at a distance",
+"vi": "chỉ dẫn điện: điện tích không tác động từ xa được"
+},
+{
+"en": "induction only: contact discharges are harmless",
+"vi": "chỉ cảm ứng: phóng điện do tiếp xúc vô hại"
+}
+],
+"correct": 0,
+"explain": {
+"en": "ESD is the transfer of charge between bodies at different potentials, caused by direct contact or induced by an electrostatic field.",
+"vi": "ESD là sự truyền điện tích giữa các vật có điện thế khác nhau, do tiếp xúc trực tiếp hoặc do trường tĩnh điện cảm ứng."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A charged component is suddenly grounded. What happens?",
+"vi": "Một linh kiện đang tích điện đột ngột được nối đất. Điều gì xảy ra?"
+},
+"opts": [
+{
+"en": "The charge flows to ground but the component can be damaged by excessive heat or dielectric breakdown",
+"vi": "Điện tích thoát xuống đất nhưng linh kiện có thể hỏng do quá nhiệt hoặc đánh thủng điện môi"
+},
+{
+"en": "It is safely discharged: grounding never harms a component",
+"vi": "Nó được xả an toàn: nối đất không bao giờ làm hại linh kiện"
+},
+{
+"en": "The charge stays on the part because insulators cannot discharge",
+"vi": "Điện tích ở lại trên linh kiện vì chất cách điện không xả được"
+},
+{
+"en": "The component becomes permanently magnetized",
+"vi": "Linh kiện bị nhiễm từ vĩnh viễn"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The sudden discharge dissipates the charge to ground, but in the process the part is damaged by heat and/or breakdown of its internal dielectric.",
+"vi": "Xả đột ngột làm điện tích thoát xuống đất, nhưng đồng thời linh kiện bị hỏng do nhiệt và/hoặc đánh thủng điện môi bên trong."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "In the comb-and-paper example the comb is charged negative. The side of the paper closest to the comb becomes",
+"vi": "Trong ví dụ chiếc lược và mẩu giấy, lược tích điện âm. Mặt giấy gần lược nhất trở nên"
+},
+"opts": [
+{
+"en": "slightly positive (opposite charges attract)",
+"vi": "hơi dương (điện tích trái dấu hút nhau)"
+},
+{
+"en": "slightly negative",
+"vi": "hơi âm"
+},
+{
+"en": "neutral, because paper is an insulator",
+"vi": "trung hòa, vì giấy là chất cách điện"
+},
+{
+"en": "strongly negative",
+"vi": "âm mạnh"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Electrostatic induction redistributes charge: the near side is attracted to positive, the far side repelled to negative, so the paper is pulled to the comb.",
+"vi": "Cảm ứng tĩnh điện làm điện tích phân bố lại: mặt gần bị hút thành dương, mặt xa bị đẩy thành âm, nên giấy bị hút về phía lược."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Why do newer components need stronger ESD precautions than older ones?",
+"vi": "Vì sao linh kiện mới cần phòng ngừa ESD chặt chẽ hơn linh kiện cũ?"
+},
+"opts": [
+{
+"en": "Shrinking geometries make them susceptible to lower discharge voltages",
+"vi": "Kích thước nhỏ đi khiến chúng nhạy với điện áp phóng thấp hơn"
+},
+{
+"en": "Larger geometries store more charge",
+"vi": "Kích thước lớn hơn tích nhiều điện tích hơn"
+},
+{
+"en": "They contain more metal that attracts charge",
+"vi": "Chúng chứa nhiều kim loại hơn nên hút điện tích"
+},
+{
+"en": "They are packaged only in plastic",
+"vi": "Chúng chỉ được đóng gói bằng nhựa"
+}
+],
+"correct": 0,
+"explain": {
+"en": "As components get faster and more capable their geometries shrink, so they become susceptible to ever lower discharge voltages: the ESD problem is getting worse, not better.",
+"vi": "Khi linh kiện nhanh hơn và nhiều chức năng hơn, kích thước thu nhỏ nên chúng nhạy với điện áp phóng ngày càng thấp: vấn đề ESD ngày càng nghiêm trọng."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which action increases the static charge on a technician the most?",
+"vi": "Hành động nào làm tăng điện tích tĩnh trên người kỹ thuật viên nhiều nhất?"
+},
+"opts": [
+{
+"en": "Walking fast across an ordinary floor when the humidity is below 20 %",
+"vi": "Đi nhanh trên sàn thường khi độ ẩm dưới 20 %"
+},
+{
+"en": "Standing still in humid air",
+"vi": "Đứng yên trong không khí ẩm"
+},
+{
+"en": "Sitting at the bench wearing a grounded wrist strap",
+"vi": "Ngồi ở bàn làm việc có đeo dây nối đất"
+},
+{
+"en": "Walking slowly on a conductively coated floor",
+"vi": "Đi chậm trên sàn phủ lớp dẫn điện"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Friction builds the charge; it grows as humidity drops below 20 % and the faster the person walks, while conductive floors and a grounded strap let it leak away.",
+"vi": "Ma sát tạo điện tích; điện tích tăng khi độ ẩm xuống dưới 20 % và khi đi nhanh hơn, còn sàn dẫn điện và dây nối đất cho điện tích thoát đi."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Plastics produce charges of 5,000 to 10,000 V. Compared with the lowest damaging voltage of a CMOS device (250 V), such a charge is at least",
+"vi": "Nhựa tạo điện tích 5.000 đến 10.000 V. So với điện áp gây hỏng thấp nhất của linh kiện CMOS (250 V), điện tích đó lớn gấp ít nhất"
+},
+"opts": [
+{
+"en": "20 times larger",
+"vi": "20 lần"
+},
+{
+"en": "2 times larger",
+"vi": "2 lần"
+},
+{
+"en": "200 times larger",
+"vi": "200 lần"
+},
+{
+"en": "40 times larger",
+"vi": "40 lần"
+}
+],
+"correct": 0,
+"explain": {
+"en": "5,000 V ÷ 250 V = 20 at the very least (10,000 V gives 40): a plastic item near a CMOS part is far above its damage level.",
+"vi": "5.000 V ÷ 250 V = 20 ít nhất (10.000 V cho 40): vật bằng nhựa gần linh kiện CMOS vượt xa mức gây hỏng."
+},
+"level": 2,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.6 (PDF p.93)",
+"vi": "EASA M04 SM02, tr.2.6 (PDF tr.93)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "What does the 1 MΩ resistor in the grounding path of a mat or wrist strap do if the ground becomes electrically live?",
+"vi": "Điện trở 1 MΩ trong đường nối đất của thảm hoặc dây đeo cổ tay có tác dụng gì nếu đất bất ngờ mang điện?"
+},
+"opts": [
+{
+"en": "It limits the current through the person and so protects the personnel",
+"vi": "Nó hạn chế dòng qua người và nhờ đó bảo vệ người làm việc"
+},
+{
+"en": "It drains the static charge faster than a direct wire",
+"vi": "Nó xả điện tích tĩnh nhanh hơn dây nối trực tiếp"
+},
+{
+"en": "It ionizes the air around the work station",
+"vi": "Nó ion hoá không khí quanh bàn làm việc"
+},
+{
+"en": "It measures the charge on the wrist",
+"vi": "Nó đo điện tích trên cổ tay"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The resistor is required to protect personnel in the event the ground becomes electrically live: it keeps a fault current through the body small (230 V across 1 MΩ is only 0.23 mA).",
+"vi": "Điện trở bắt buộc để bảo vệ người nếu đất mang điện: nó giữ dòng sự cố qua cơ thể nhỏ (230 V trên 1 MΩ chỉ là 0,23 mA)."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A technician uses a heel strap instead of conductive shoes. For it to work",
+"vi": "Một kỹ thuật viên dùng dây đeo gót thay cho giày dẫn điện. Để nó hoạt động"
+},
+"opts": [
+{
+"en": "the grounding cord must run into the sock to touch the skin",
+"vi": "dây nối đất phải luồn vào trong tất để chạm da"
+},
+{
+"en": "the cord must be wound around the outside of a rubber sole",
+"vi": "dây phải quấn quanh bên ngoài đế cao su"
+},
+{
+"en": "no skin contact is needed because the shoe conducts",
+"vi": "không cần chạm da vì giày dẫn điện"
+},
+{
+"en": "the strap must be worn on the wrist as well",
+"vi": "cũng phải đeo dây ở cổ tay"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The charge must be able to leave the body, so the grounding cord has to make contact with the skin inside the sock.",
+"vi": "Điện tích phải thoát khỏi cơ thể nên dây nối đất phải tiếp xúc với da bên trong tất."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A static-dissipative mat must have a surface resistivity of 10⁵ to 10¹² ohms per square inch. Which value qualifies?",
+"vi": "Thảm tiêu tán tĩnh điện phải có điện trở suất bề mặt từ 10⁵ đến 10¹² ôm trên inch vuông. Giá trị nào đạt?"
+},
+"opts": [
+{
+"en": "10⁸ Ω per square inch",
+"vi": "10⁸ Ω trên inch vuông"
+},
+{
+"en": "10² Ω per square inch (as conductive as metal)",
+"vi": "10² Ω trên inch vuông (dẫn điện như kim loại)"
+},
+{
+"en": "10¹⁵ Ω per square inch (an insulator)",
+"vi": "10¹⁵ Ω trên inch vuông (chất cách điện)"
+},
+{
+"en": "10³ Ω per square inch",
+"vi": "10³ Ω trên inch vuông"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Only 10⁸ lies inside the 10⁵ to 10¹² range: dissipative enough to bleed charge away without being a short circuit, and not an insulator that would store it.",
+"vi": "Chỉ 10⁸ nằm trong khoảng 10⁵ đến 10¹²: đủ dẫn để xả điện tích mà không như đoản mạch, và không phải chất cách điện tích điện."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Besides giving a surface free of static charge, a conductive table-top mat must also",
+"vi": "Ngoài việc tạo mặt bàn không có điện tích tĩnh, thảm dẫn điện còn phải"
+},
+"opts": [
+{
+"en": "remove the static charge from conductive items placed on it",
+"vi": "xả điện tích tĩnh khỏi các vật dẫn điện đặt lên nó"
+},
+{
+"en": "insulate the components from ground",
+"vi": "cách ly linh kiện khỏi đất"
+},
+{
+"en": "generate ions to neutralize insulators",
+"vi": "tạo ion để trung hòa chất cách điện"
+},
+{
+"en": "store the charge for later measurement",
+"vi": "lưu điện tích để đo sau"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The mat is connected through 1 MΩ to a common ground point so that charge on items resting on it drains away.",
+"vi": "Thảm được nối qua 1 MΩ tới điểm đất chung để điện tích trên các vật đặt lên nó thoát đi."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A technician tests a wrist strap at the grounding test station and the green light does not come on. What should he conclude?",
+"vi": "Kỹ thuật viên kiểm tra dây đeo cổ tay ở trạm thử nối đất và đèn xanh không sáng. Anh ấy nên kết luận gì?"
+},
+"opts": [
+{
+"en": "The strap is not worn properly or not working; fix or replace it before entering the controlled area",
+"vi": "Dây không đeo đúng hoặc không hoạt động; sửa hoặc thay trước khi vào khu vực kiểm soát"
+},
+{
+"en": "The strap is fine: green only means the station has power",
+"vi": "Dây vẫn tốt: đèn xanh chỉ báo trạm có điện"
+},
+{
+"en": "He may enter and test again later at the bench",
+"vi": "Anh ấy có thể vào rồi thử lại sau ở bàn làm việc"
+},
+{
+"en": "Only footwear needs to be tested, not straps",
+"vi": "Chỉ cần thử giày dép, không cần thử dây đeo"
+}
+],
+"correct": 0,
+"explain": {
+"en": "All anti-static devices are tested before entering the controlled environment; green means the strap is worn properly and working as intended, so no green light means it is not.",
+"vi": "Mọi thiết bị chống tĩnh điện được thử trước khi vào khu vực kiểm soát; đèn xanh nghĩa là dây đeo đúng và hoạt động, không có đèn xanh nghĩa là chưa đạt."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Besides wrist straps, a grounding test station can also be used to test",
+"vi": "Ngoài dây đeo cổ tay, trạm thử nối đất còn dùng để thử"
+},
+"opts": [
+{
+"en": "footwear, heel straps and coil cords",
+"vi": "giày dép, dây đeo gót và dây xoắn"
+},
+{
+"en": "ionizers and field meters",
+"vi": "máy ion hoá và đồng hồ đo trường"
+},
+{
+"en": "conductive bags and totes",
+"vi": "túi và hộp dẫn điện"
+},
+{
+"en": "soldering irons only",
+"vi": "chỉ mỏ hàn"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The same station checks footwear, heel straps and coil cords, i.e. every personal grounding path.",
+"vi": "Cùng một trạm kiểm tra giày dép, dây đeo gót và dây xoắn, tức mọi đường nối đất cá nhân."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "How does an ionizer neutralize a charged insulating surface?",
+"vi": "Máy ion hoá trung hòa bề mặt cách điện đang tích điện như thế nào?"
+},
+"opts": [
+{
+"en": "An air stream with positive and negative ions lets the surface attract the ions of opposite charge",
+"vi": "Luồng khí chứa ion dương và âm cho bề mặt hút các ion trái dấu"
+},
+{
+"en": "It heats the surface until the charge evaporates",
+"vi": "Nó làm nóng bề mặt cho điện tích bốc hơi"
+},
+{
+"en": "It sprays water mist to raise the humidity to 100 %",
+"vi": "Nó phun sương nước để độ ẩm lên 100 %"
+},
+{
+"en": "It generates a strong magnetic field",
+"vi": "Nó tạo từ trường mạnh"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Positively or negatively charged surfaces attract ions of the opposite charge; once neutralized the surface stays so as long as the ion stream is present.",
+"vi": "Bề mặt tích điện dương hoặc âm hút ion trái dấu; khi đã trung hòa, bề mặt giữ trạng thái đó chừng nào luồng ion còn."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A work-station ionizer is normally mounted 30 to 36 inches above the area to be controlled. In centimetres this is about",
+"vi": "Máy ion hoá tại bàn làm việc thường lắp cao 30 đến 36 inch so với khu vực cần kiểm soát. Tính ra centimet là khoảng"
+},
+"opts": [
+{
+"en": "76 to 91 cm",
+"vi": "76 đến 91 cm"
+},
+{
+"en": "30 to 36 cm",
+"vi": "30 đến 36 cm"
+},
+{
+"en": "300 to 360 cm",
+"vi": "300 đến 360 cm"
+},
+{
+"en": "50 to 60 cm",
+"vi": "50 đến 60 cm"
+}
+],
+"correct": 0,
+"explain": {
+"en": "1 inch = 2.54 cm: 30 × 2.54 = 76.2 cm and 36 × 2.54 = 91.4 cm.",
+"vi": "1 inch = 2,54 cm: 30 × 2,54 = 76,2 cm và 36 × 2,54 = 91,4 cm."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "The ionization pattern of an overhead ionizer is about 36 inches wide by 48 inches long. Its area is about",
+"vi": "Vùng ion hoá của máy ion hoá treo trên cao rộng khoảng 36 inch và dài 48 inch. Diện tích của nó khoảng"
+},
+"opts": [
+{
+"en": "1.1 m²",
+"vi": "1,1 m²"
+},
+{
+"en": "0.11 m²",
+"vi": "0,11 m²"
+},
+{
+"en": "11 m²",
+"vi": "11 m²"
+},
+{
+"en": "1.7 m²",
+"vi": "1,7 m²"
+}
+],
+"correct": 0,
+"explain": {
+"en": "36 in × 48 in = 1,728 in²; each in² is 6.45·10⁻⁴ m², so about 1.1 m² (a bench-sized area).",
+"vi": "36 in × 48 in = 1.728 in²; mỗi in² là 6,45·10⁻⁴ m², nên khoảng 1,1 m² (cỡ một mặt bàn)."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Before handling sensitive components, how should a technician make sure the ionizer is working?",
+"vi": "Trước khi xử lý linh kiện nhạy, kỹ thuật viên làm thế nào để chắc chắn máy ion hoá đang hoạt động?"
+},
+"opts": [
+{
+"en": "Use an electrostatic field meter to detect static charges in the work area",
+"vi": "Dùng đồng hồ đo trường tĩnh điện để dò điện tích tĩnh trong khu vực làm việc"
+},
+{
+"en": "Listen for the fan noise",
+"vi": "Nghe tiếng quạt"
+},
+{
+"en": "Touch a grounded rack with a bare hand",
+"vi": "Chạm tay trần vào giá nối đất"
+},
+{
+"en": "Check that the room is at 65 % humidity",
+"vi": "Kiểm tra phòng có độ ẩm 65 %"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The text recommends an electrostatic field meter to be assured that the ionizer is functioning properly before sensitive parts are handled.",
+"vi": "Sách khuyến nghị dùng đồng hồ đo trường tĩnh điện để chắc chắn máy ion hoá hoạt động tốt trước khi xử lý linh kiện nhạy."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which type of ionizer is meant for periodic, localized cleaning?",
+"vi": "Loại máy ion hoá nào dùng để làm sạch cục bộ định kỳ?"
+},
+"opts": [
+{
+"en": "A high-pressure, low-volume air gun",
+"vi": "Súng khí áp suất cao, lưu lượng nhỏ"
+},
+{
+"en": "A low-pressure, high-volume wall-mounted unit",
+"vi": "Thiết bị gắn tường áp suất thấp, lưu lượng lớn"
+},
+{
+"en": "A topical anti-stat spray",
+"vi": "Dung dịch xịt chống tĩnh điện"
+},
+{
+"en": "An overhead sign",
+"vi": "Biển báo treo trên cao"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Air guns are the high-pressure, low-volume type for localized cleaning; the low-pressure, high-volume units hang over the work station and blow ionized air down on the area.",
+"vi": "Súng khí là loại áp suất cao, lưu lượng nhỏ cho làm sạch cục bộ; loại áp suất thấp, lưu lượng lớn treo trên bàn và thổi khí ion xuống khu vực."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A closed conductive container of ESD-sensitive parts is brought from its rack to the work station. When it arrives it must",
+"vi": "Hộp dẫn điện kín chứa linh kiện nhạy ESD được mang từ giá tới bàn làm việc. Khi tới nơi nó phải"
+},
+"opts": [
+{
+"en": "make contact with the grounded table mat",
+"vi": "tiếp xúc với thảm bàn đã nối đất"
+},
+{
+"en": "be opened at once on any desk",
+"vi": "được mở ngay trên bất kỳ bàn nào"
+},
+{
+"en": "be placed on a plastic tray",
+"vi": "được đặt trên khay nhựa"
+},
+{
+"en": "be wrapped in a nylon cloth",
+"vi": "được bọc vải ni lông"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The container is stored on a grounded rack and, at the bench, touches the grounded mat so its charge equalizes with ground before it is opened.",
+"vi": "Hộp được cất trên giá nối đất và khi ở bàn thì chạm vào thảm nối đất để điện tích cân bằng với đất trước khi mở."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which sequence is correct for installing an ESD-sensitive part taken from a protective container?",
+"vi": "Trình tự nào đúng để lắp một linh kiện nhạy ESD lấy từ hộp bảo vệ?"
+},
+"opts": [
+{
+"en": "Put on the grounded wrist strap to discharge the body, open the container, install with a grounded soldering iron",
+"vi": "Đeo dây nối đất để xả điện cơ thể, mở hộp, lắp bằng mỏ hàn nối đất"
+},
+{
+"en": "Open the container, then put on the wrist strap, then install with an ordinary soldering iron",
+"vi": "Mở hộp, rồi đeo dây, rồi lắp bằng mỏ hàn thường"
+},
+{
+"en": "Install with a grounded iron, then discharge the body, then open the container",
+"vi": "Lắp bằng mỏ hàn nối đất, rồi xả điện cơ thể, rồi mở hộp"
+},
+{
+"en": "Open the container, install, then test the wrist strap",
+"vi": "Mở hộp, lắp, rồi thử dây đeo"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Charge on the body is discharged first (grounded strap), only then is the protective container opened, and a grounded soldering iron is used for installation.",
+"vi": "Xả điện cơ thể trước (dây nối đất), sau đó mới mở hộp bảo vệ và dùng mỏ hàn nối đất khi lắp."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "From the outside to the inside, an electrostatic-shielded conductive bag is made of",
+"vi": "Từ ngoài vào trong, túi dẫn điện che chắn tĩnh điện gồm"
+},
+"opts": [
+{
+"en": "a metalized sheet or aluminum foil, an insulation layer, then an anti-static layer",
+"vi": "lớp màng kim loại hoặc lá nhôm, lớp cách điện, rồi lớp chống tĩnh điện"
+},
+{
+"en": "an anti-static layer, an insulation layer, then a metalized sheet",
+"vi": "lớp chống tĩnh điện, lớp cách điện, rồi lớp màng kim loại"
+},
+{
+"en": "an insulation layer, a metalized sheet, then an anti-static layer",
+"vi": "lớp cách điện, lớp màng kim loại, rồi lớp chống tĩnh điện"
+},
+{
+"en": "a metalized sheet, an anti-static layer, then an insulation layer",
+"vi": "lớp màng kim loại, lớp chống tĩnh điện, rồi lớp cách điện"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The bag is laminated: outer transparent metalized sheet or aluminum foil, a middle insulation layer and an inner anti-static layer that touches the part.",
+"vi": "Túi nhiều lớp: ngoài là màng kim loại trong suốt hoặc lá nhôm, giữa là lớp cách điện, trong là lớp chống tĩnh điện tiếp xúc với linh kiện."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.8 (PDF p.95)",
+"vi": "EASA M04 SM02, tr.2.8 (PDF tr.95)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Where must the warning signs for an ESD-controlled area be placed?",
+"vi": "Biển cảnh báo khu vực kiểm soát ESD phải đặt ở đâu?"
+},
+"opts": [
+{
+"en": "Outside the controlled area, so people are warned before they enter",
+"vi": "Bên ngoài khu vực kiểm soát để cảnh báo trước khi người ta vào"
+},
+{
+"en": "Only on the component bags",
+"vi": "Chỉ trên các túi linh kiện"
+},
+{
+"en": "Inside the ionizer housing",
+"vi": "Bên trong vỏ máy ion hoá"
+},
+{
+"en": "On the wrist strap",
+"vi": "Trên dây đeo cổ tay"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Signage is placed outside any ESD-controlled area to warn people that special precautions are needed before they go in.",
+"vi": "Biển báo đặt bên ngoài mọi khu vực kiểm soát ESD để cảnh báo cần có biện pháp đặc biệt trước khi vào."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which of these is NOT named in the text as an insulating material that stores static electricity and must be kept out of the work area?",
+"vi": "Vật liệu nào dưới đây KHÔNG được sách nêu là chất cách điện tích tĩnh điện cần để ngoài khu vực làm việc?"
+},
+"opts": [
+{
+"en": "Copper",
+"vi": "Đồng"
+},
+{
+"en": "Styrofoam",
+"vi": "Xốp polystyrene"
+},
+{
+"en": "Mica",
+"vi": "Mica"
+},
+{
+"en": "Fiberglass",
+"vi": "Sợi thủy tinh"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The list is nylon, mylar, vinyl, rubber, mica, ceramics, fiberglass, wood, styrofoam and plastic; copper is a conductor, and conductive materials are grounded instead.",
+"vi": "Danh sách gồm nylon, mylar, vinyl, cao su, mica, gốm, sợi thủy tinh, gỗ, xốp và nhựa; đồng là chất dẫn điện, vật dẫn điện được nối đất."
+},
+"level": 2,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.7 (PDF p.94)",
+"vi": "EASA M04 SM02, tr.2.7 (PDF tr.94)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which technology lets more components fit on the same PCB, and what is its drawback?",
+"vi": "Công nghệ nào cho nhiều linh kiện hơn trên cùng một PCB, và nhược điểm của nó là gì?"
+},
+"opts": [
+{
+"en": "Surface mount: both sides can be used, but alignment and soldering are harder",
+"vi": "Dán bề mặt: dùng được cả hai mặt nhưng khó căn chỉnh và hàn hơn"
+},
+{
+"en": "Through hole: both sides can be used, but it needs special equipment",
+"vi": "Xuyên lỗ: dùng được cả hai mặt nhưng cần thiết bị đặc biệt"
+},
+{
+"en": "BGA: a simple iron is enough, but pin density is low",
+"vi": "BGA: chỉ cần mỏ hàn đơn giản nhưng mật độ chân thấp"
+},
+{
+"en": "Plated through hole: the cheapest and quickest to make",
+"vi": "Lỗ mạ xuyên: rẻ nhất và nhanh làm nhất"
+}
+],
+"correct": 0,
+"explain": {
+"en": "SMT parts sit on the trace side and on both faces, so the density is higher; the only disadvantage given is that SMT components are more difficult to align and solder.",
+"vi": "Linh kiện SMT nằm trên mặt có đường mạch và dùng được cả hai mặt nên mật độ cao hơn; nhược điểm duy nhất nêu là khó căn chỉnh và hàn."
+},
+"level": 2,
+"topic": {
+"en": "Mounting technologies and soldering",
+"vi": "Công nghệ lắp linh kiện và hàn"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.3 (PDF p.90)",
+"vi": "EASA M04 SM02, tr.2.3 (PDF tr.90)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "The text describes BGA packages as having",
+"vi": "Sách mô tả gói BGA là có"
+},
+"opts": [
+{
+"en": "higher pin density, but they need special equipment instead of a simple soldering iron",
+"vi": "mật độ chân cao hơn, nhưng cần thiết bị đặc biệt thay cho mỏ hàn đơn giản"
+},
+{
+"en": "lower pin density and easy hand soldering",
+"vi": "mật độ chân thấp và dễ hàn tay"
+},
+{
+"en": "leads that pass through plated holes",
+"vi": "chân luồn qua các lỗ mạ"
+},
+{
+"en": "no solder because they are glued",
+"vi": "không dùng thiếc vì được dán keo"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Solder balls under the component give more connections in less space; installing or removing them needs special equipment.",
+"vi": "Các viên thiếc dưới linh kiện cho nhiều kết nối hơn trong diện tích nhỏ hơn; lắp hoặc tháo chúng cần thiết bị đặc biệt."
+},
+"level": 2,
+"topic": {
+"en": "Mounting technologies and soldering",
+"vi": "Công nghệ lắp linh kiện và hàn"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.3 (PDF p.90)",
+"vi": "EASA M04 SM02, tr.2.3 (PDF tr.90)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Leaded components are inserted into holes and the board is dipped in molten solder. This is",
+"vi": "Linh kiện có chân được cắm vào lỗ rồi bo mạch được nhúng vào thiếc nóng chảy. Đó là"
+},
+"opts": [
+{
+"en": "flow soldering with through-hole components",
+"vi": "hàn dòng (flow) với linh kiện xuyên lỗ"
+},
+{
+"en": "reflow soldering",
+"vi": "hàn nung chảy (reflow)"
+},
+{
+"en": "hand soldering with an iron",
+"vi": "hàn tay bằng mỏ hàn"
+},
+{
+"en": "ball-grid-array bonding",
+"vi": "liên kết BGA"
+}
+],
+"correct": 0,
+"explain": {
+"en": "In flow soldering the board moves on a conveyor and is dipped in molten tin; the solder is drawn up through the plated-through holes to form the joints.",
+"vi": "Trong hàn dòng, bo mạch đi trên băng tải và được nhúng thiếc nóng chảy; thiếc dâng lên qua lỗ mạ để tạo mối hàn."
+},
+"level": 2,
+"topic": {
+"en": "Mounting technologies and soldering",
+"vi": "Công nghệ lắp linh kiện và hàn"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.4 (PDF p.91)",
+"vi": "EASA M04 SM02, tr.2.4 (PDF tr.91)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Chip components are placed on solder-paste pads, held by an adhesive and heated in a controlled oven. This is",
+"vi": "Linh kiện chip được đặt lên các chân có kem hàn, giữ bằng keo dính rồi nung trong lò có kiểm soát. Đó là"
+},
+"opts": [
+{
+"en": "reflow soldering (surface mount)",
+"vi": "hàn nung chảy (reflow, dán bề mặt)"
+},
+{
+"en": "flow soldering",
+"vi": "hàn dòng (flow)"
+},
+{
+"en": "hand soldering with an iron",
+"vi": "hàn tay bằng mỏ hàn"
+},
+{
+"en": "wire wrapping",
+"vi": "quấn dây"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Solder paste is applied to the copper pads, parts are picked and placed and held by adhesive, then a reflow oven melts the paste to form the electrical connection and mechanical bond.",
+"vi": "Kem hàn bôi lên chân đồng, linh kiện được gắp đặt và giữ bằng keo, rồi lò reflow làm chảy kem hàn tạo kết nối điện và liên kết cơ học."
+},
+"level": 2,
+"topic": {
+"en": "Mounting technologies and soldering",
+"vi": "Công nghệ lắp linh kiện và hàn"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.4 (PDF p.91)",
+"vi": "EASA M04 SM02, tr.2.4 (PDF tr.91)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which statement about non-plated and plated through holes is correct?",
+"vi": "Phát biểu nào về lỗ xuyên không mạ và lỗ mạ xuyên là đúng?"
+},
+"opts": [
+{
+"en": "Non-plated holes are cheaper and quicker to make but give less conductivity and stiffness at the joint",
+"vi": "Lỗ không mạ rẻ và nhanh làm hơn nhưng độ dẫn điện và độ cứng ở mối nối kém hơn"
+},
+{
+"en": "Non-plated holes are more expensive but conduct better",
+"vi": "Lỗ không mạ đắt hơn nhưng dẫn tốt hơn"
+},
+{
+"en": "Plated and non-plated holes differ only in diameter",
+"vi": "Lỗ mạ và không mạ chỉ khác đường kính"
+},
+{
+"en": "Plated holes have more resistivity at the joint",
+"vi": "Lỗ mạ có điện trở suất ở mối nối lớn hơn"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Copper inside the hole is what makes the difference: lower resistivity and some mechanical stiffness, at the price of a more expensive and slower process.",
+"vi": "Lớp đồng trong lỗ tạo ra khác biệt: điện trở suất thấp hơn và có độ cứng cơ học, đổi lại quy trình đắt và chậm hơn."
+},
+"level": 2,
+"topic": {
+"en": "Mounting technologies and soldering",
+"vi": "Công nghệ lắp linh kiện và hàn"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.3 (PDF p.90)",
+"vi": "EASA M04 SM02, tr.2.3 (PDF tr.90)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A via must join layers 2 and 3 of a multi-layer board and be invisible from both outer surfaces. It is a",
+"vi": "Một via phải nối lớp 2 và lớp 3 của PCB nhiều lớp và không lộ ra cả hai mặt ngoài. Đó là via"
+},
+"opts": [
+{
+"en": "buried via",
+"vi": "chôn (buried)"
+},
+{
+"en": "blind via",
+"vi": "mù (blind)"
+},
+{
+"en": "through-hole via",
+"vi": "xuyên lỗ (through-hole)"
+},
+{
+"en": "thermal via",
+"vi": "tản nhiệt (thermal)"
+}
+],
+"correct": 0,
+"explain": {
+"en": "A buried via connects internal layers without being exposed to either surface.",
+"vi": "Via chôn nối các lớp bên trong mà không lộ ra mặt nào."
+},
+"level": 2,
+"topic": {
+"en": "Multilayer boards and vias",
+"vi": "PCB nhiều lớp và via"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.5 (PDF p.92)",
+"vi": "EASA M04 SM02, tr.2.5 (PDF tr.92)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A via starts on the top surface and stops at an inner layer without reaching the bottom surface. It is a",
+"vi": "Một via bắt đầu từ mặt trên và dừng ở lớp trong, không tới mặt dưới. Đó là via"
+},
+"opts": [
+{
+"en": "blind via",
+"vi": "mù (blind)"
+},
+{
+"en": "buried via",
+"vi": "chôn (buried)"
+},
+{
+"en": "through-hole via",
+"vi": "xuyên lỗ (through-hole)"
+},
+{
+"en": "thermal via",
+"vi": "tản nhiệt (thermal)"
+}
+],
+"correct": 0,
+"explain": {
+"en": "A blind via is exposed to only one side of the board.",
+"vi": "Via mù chỉ lộ ra một mặt của bo mạch."
+},
+"level": 2,
+"topic": {
+"en": "Multilayer boards and vias",
+"vi": "PCB nhiều lớp và via"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.5 (PDF p.92)",
+"vi": "EASA M04 SM02, tr.2.5 (PDF tr.92)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A power transistor on a multi-layer board runs too hot. Which feature of the board helps carry its heat away?",
+"vi": "Một transistor công suất trên PCB nhiều lớp quá nóng. Đặc điểm nào của bo mạch giúp dẫn nhiệt đi?"
+},
+"opts": [
+{
+"en": "An array of thermal vias",
+"vi": "Một dãy via tản nhiệt"
+},
+{
+"en": "A blind via to the top layer only",
+"vi": "Một via mù chỉ tới lớp trên"
+},
+{
+"en": "More solder balls under the part",
+"vi": "Thêm viên thiếc dưới linh kiện"
+},
+{
+"en": "A thicker protective laminate",
+"vi": "Lớp phủ bảo vệ dày hơn"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Thermal vias are used to carry heat away from power devices and are typically arranged in an array.",
+"vi": "Via tản nhiệt dùng để dẫn nhiệt khỏi linh kiện công suất và thường được bố trí thành dãy."
+},
+"level": 2,
+"topic": {
+"en": "Multilayer boards and vias",
+"vi": "PCB nhiều lớp và via"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.5 (PDF p.92)",
+"vi": "EASA M04 SM02, tr.2.5 (PDF tr.92)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Why is computer modelling used when designing high-frequency multi-layer boards?",
+"vi": "Vì sao dùng mô hình máy tính khi thiết kế PCB nhiều lớp tần số cao?"
+},
+"opts": [
+{
+"en": "To limit unintended capacitive and inductive coupling between the layers",
+"vi": "Để hạn chế ghép điện dung và điện cảm không mong muốn giữa các lớp"
+},
+{
+"en": "To reduce the number of vias to zero",
+"vi": "Để giảm số via xuống 0"
+},
+{
+"en": "To avoid the need for copper traces",
+"vi": "Để khỏi cần các đường đồng"
+},
+{
+"en": "To make the board thicker",
+"vi": "Để làm bo mạch dày hơn"
+}
+],
+"correct": 0,
+"explain": {
+"en": "As designs become more complex, unintended coupling mechanisms appear between layers, particularly at high frequency; modelling is used to mitigate them.",
+"vi": "Khi thiết kế phức tạp hơn, các cơ chế ghép không mong muốn xuất hiện giữa các lớp, nhất là ở tần số cao; mô hình hóa dùng để giảm chúng."
+},
+"level": 2,
+"topic": {
+"en": "Multilayer boards and vias",
+"vi": "PCB nhiều lớp và via"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.5 (PDF p.92)",
+"vi": "EASA M04 SM02, tr.2.5 (PDF tr.92)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "Which order of the PCB manufacturing steps described in the text is correct?",
+"vi": "Thứ tự các bước chế tạo PCB mô tả trong sách là thế nào?"
+},
+"opts": [
+{
+"en": "Bond copper foil (heat press), print the pattern in etch-resistive ink, etch away the unwanted copper",
+"vi": "Dán lá đồng (ép nhiệt), in mẫu bằng mực chống ăn mòn, ăn mòn bỏ đồng thừa"
+},
+{
+"en": "Etch the copper, bond the foil, then print the ink pattern",
+"vi": "Ăn mòn đồng, dán lá đồng, rồi in mẫu mực"
+},
+{
+"en": "Print the ink pattern, etch, then bond the copper foil",
+"vi": "In mẫu mực, ăn mòn, rồi dán lá đồng"
+},
+{
+"en": "Etch the copper, print the ink pattern, then bond the foil",
+"vi": "Ăn mòn đồng, in mẫu mực, rồi dán lá đồng"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The foil is bonded to the board in a heat press, the circuit pattern is applied with etch-resistive ink, and the chemical etch removes the copper not protected by the ink.",
+"vi": "Lá đồng được ép nhiệt lên bo mạch, mẫu mạch in bằng mực chống ăn mòn, rồi ăn mòn hóa học bỏ phần đồng không được mực che."
+},
+"level": 2,
+"topic": {
+"en": "PCB construction and materials",
+"vi": "Cấu tạo và vật liệu PCB"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.2 (PDF p.89)",
+"vi": "EASA M04 SM02, tr.2.2 (PDF tr.89)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "After etching, what remains of the copper foil?",
+"vi": "Sau khi ăn mòn, phần nào của lá đồng còn lại?"
+},
+"opts": [
+{
+"en": "Only the pattern protected by the etch-resistive ink: the traces",
+"vi": "Chỉ phần mẫu được mực chống ăn mòn che: các đường mạch (traces)"
+},
+{
+"en": "The whole foil, now thinner",
+"vi": "Toàn bộ lá đồng nhưng mỏng hơn"
+},
+{
+"en": "Only the copper under the components",
+"vi": "Chỉ phần đồng dưới linh kiện"
+},
+{
+"en": "Nothing: the traces are added afterwards as wire",
+"vi": "Không còn gì: đường mạch được thêm sau bằng dây"
+}
+],
+"correct": 0,
+"explain": {
+"en": "The unwanted copper is etched away by a photosensitive chemical process (ammonium persulfate or ferric chloride), leaving only the conductive pathways called traces.",
+"vi": "Đồng thừa bị ăn mòn bằng quá trình hóa học cảm quang (amoni persunfat hoặc sắt(III) clorua), chỉ còn các đường dẫn gọi là traces."
+},
+"level": 2,
+"topic": {
+"en": "PCB construction and materials",
+"vi": "Cấu tạo và vật liệu PCB"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.2 (PDF p.89)",
+"vi": "EASA M04 SM02, tr.2.2 (PDF tr.89)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+},
+{
+"kind": "mcq",
+"q": {
+"en": "A printed circuit board in an aircraft system is defective. What does the text recommend?",
+"vi": "Một bo mạch in trong hệ thống máy bay bị hỏng. Sách khuyến nghị gì?"
+},
+"opts": [
+{
+"en": "Replace the removable module (LRM) and repair the board in an equipped shop",
+"vi": "Thay mô-đun tháo được (LRM) và sửa bo mạch trong xưởng có đủ thiết bị"
+},
+{
+"en": "Re-solder the joints in the field with a simple iron",
+"vi": "Hàn lại mối nối ngay hiện trường bằng mỏ hàn đơn giản"
+},
+{
+"en": "Scrape off the protective laminate and repair it on the aircraft",
+"vi": "Cạo lớp phủ bảo vệ và sửa ngay trên máy bay"
+},
+{
+"en": "Leave it: printed circuit boards cannot be repaired",
+"vi": "Bỏ qua: bo mạch in không sửa được"
+}
+],
+"correct": 0,
+"explain": {
+"en": "Soldering needs special equipment with precise heat control and should not be done in the field; Line Replaceable Modules allow replacement of defective units, with repair by knowledgeable technicians in an equipped shop.",
+"vi": "Hàn cần thiết bị đặc biệt có kiểm soát nhiệt chính xác, không nên làm ở hiện trường; LRM cho phép thay đơn vị hỏng, việc sửa do kỹ thuật viên có hiểu biết thực hiện trong xưởng đủ thiết bị."
+},
+"level": 2,
+"topic": {
+"en": "PCB repair and LRMs",
+"vi": "Sửa PCB và LRM"
+},
+"src": {
+"en": "EASA M04 SM02, p.2.5 (PDF p.92)",
+"vi": "EASA M04 SM02, tr.2.5 (PDF tr.92)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "EASA text",
+"tags": [
+"l2"
+]
+}
+]

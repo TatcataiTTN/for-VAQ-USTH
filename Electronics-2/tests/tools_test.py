@@ -4,6 +4,7 @@ import sys, re
 from playwright.sync_api import sync_playwright
 BASE = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8765/'
 import json, os
+_CAT = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'exercises', 'catalog.json'), encoding='utf-8')); EXPECT_SOLVED = sum(1 for r in _CAT['rows'] if r[_CAT['fields'].index('cls')] == 'solved')     # the finder's class 'solved' = every exercise solved and checked by the site
 PAPERS = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'written', 'papers.json'), encoding='utf-8'))
 bad = []
 with sync_playwright() as pw:
@@ -34,7 +35,7 @@ with sync_playwright() as pw:
         pg.goto(f'{BASE}{lang}/exercises/index.html', wait_until='load'); pg.wait_for_selector('#exfind .qitem', timeout=20000)
         pg.select_option('#exfind select >> nth=3', 'solved')
         nsol = pg.evaluate("() => +document.querySelector('#exfind .score').textContent.match(/(\\d[\\d,. ]*)\\s*(?:\\/|of)/)[1].replace(/[^0-9]/g,'')")
-        if nsol != 181: bad.append((lang, 'finder: solved class count', nsol))
+        if nsol != EXPECT_SOLVED: bad.append((lang, 'finder: solved class count', nsol, EXPECT_SOLVED))
         lab = pg.evaluate("() => document.querySelector('#exfind details summary').textContent")
         if not re.search(r'site tính|Computed by this site', lab): bad.append((lang, 'finder: computed label', lab))
         pg.select_option('#exfind select >> nth=3', 'ready'); pg.select_option('#exfind select >> nth=0', 'jaeger5'); pg.select_option('#exfind select >> nth=1', 'problem')
@@ -43,18 +44,26 @@ with sync_playwright() as pw:
         # ---- written hub and paper
         pg.goto(f'{BASE}{lang}/written/index.html', wait_until='load'); pg.wait_for_selector('#written-hub .panel', timeout=15000)
         npap = pg.evaluate("() => document.querySelectorAll('#written-hub .panel').length")
-        if npap != 32: bad.append((lang, 'written hub papers', npap))
+        if npap != len(PAPERS): bad.append((lang, 'written hub papers', npap, len(PAPERS)))
         pg.goto(f'{BASE}{lang}/written/paper.html?p=jaeger-prob-m03', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
         pg.click('#written .panel >> nth=0 >> button'); box = pg.inner_text('#written .callout.good')
         if not re.search(r'site tính|Computed by this site', box) or not re.search(r'Cách tính|Method', box): bad.append((lang, 'written: computed answer box', box[:120]))
         npr = pg.evaluate("() => document.querySelectorAll('#written .panel').length")
         if npr != 34: bad.append((lang, 'written: jaeger-prob-m03 problems', npr))
-        pg.goto(f'{BASE}{lang}/written/paper.html?p=calc-m08', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
-        cp = [p for p in PAPERS if p['id'] == 'calc-m08'][0]; ctxn = sum(1 for q in cp['problems'] if q[0].get('ctx'))
+        pg.goto(f'{BASE}{lang}/written/paper.html?p=calc-m08-1', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
+        cp = [p for p in PAPERS if p['id'] == 'calc-m08-1'][0]; ctxn = sum(1 for q in cp['problems'] if q[0].get('ctx'))
         got_ctx = pg.evaluate("() => [...document.querySelectorAll('#written .srcnote')].filter(e => /^(Bối cảnh trong sách|Context in the book)/.test(e.textContent)).length")
         if ctxn < 3 or got_ctx != ctxn: bad.append((lang, 'written: related problems show their example', ctxn, got_ctx))
         pg.click('#written .panel >> nth=0 >> button'); box = pg.inner_text('#written .callout.good')
         if not re.search(r'site tính|Computed by this site', box) or not re.search(r'Cách tính|Method', box): bad.append((lang, 'written: calc answer box', box[:100]))
+        # ---- Floyd calculations that refer to a book figure: the circuit is described in words and the figure cut from the PDF is shown
+        figs_total = sum(1 for p in PAPERS if p['id'].startswith('calc-') for q in p['problems'] if q[0].get('figs'))
+        if figs_total < 80: bad.append((lang, 'written: problems with a book figure', figs_total))
+        pg.goto(f'{BASE}{lang}/written/paper.html?p=calc-m02-1', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000); pg.wait_for_timeout(600)
+        cm = [p for p in PAPERS if p['id'] == 'calc-m02-1'][0]; nfig = sum(len(q[0].get('figs') or []) for q in cm['problems']); ncirc = sum(1 for q in cm['problems'] if q[0].get('circuit'))
+        imgs = pg.evaluate("async () => { const a = [...document.querySelectorAll('#written img.bookfig')]; await Promise.all(a.map(i => i.decode().catch(() => {}))); return a.map(i => i.naturalWidth); }")
+        circ = pg.evaluate("() => [...document.querySelectorAll('#written .srcnote')].filter(e => /^(Mạch trong hình|Circuit of the book figure)/.test(e.textContent)).length")
+        if nfig < 5 or len(imgs) != nfig or min(imgs or [0]) < 100 or circ != ncirc: bad.append((lang, 'written: figure images/circuit text', nfig, imgs[:5], ncirc, circ))
         pg.goto(f'{BASE}{lang}/written/paper.html?p=floyd-m05-1', wait_until='load'); pg.wait_for_selector('#written .panel', timeout=15000)
         fl = [p for p in PAPERS if p['id'] == 'floyd-m05-1'][0]; first = fl['problems'][0][0]['text']
         got = pg.inner_text('#written .qtxt >> nth=0')

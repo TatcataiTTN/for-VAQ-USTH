@@ -148,3 +148,5 @@ details.qitem>summary{cursor:pointer}details.qitem h4{margin:.8em 0 .2em}
 .xq{margin:.7em 0;break-inside:avoid;page-break-inside:avoid}.xo{margin:.15em 0 .15em 1.2em}.xprint table.t td,.xprint table.t th{font-size:.85rem}
 @media print{header.top,footer.foot,.noprint,.exambar{display:none!important}body{background:#fff!important;color:#000!important}main.wrap{max-width:none!important;padding:0!important;margin:0!important}.xbreak{break-before:page;page-break-before:always}.xprint{font-size:11pt}.xprint .qfig{max-height:180px}@page{size:A4;margin:14mm}}
 
+/* figures of the book shown next to a Written Practice problem (cut from the PDF by build/numeric/figexport.py) */
+img.bookfig { display: block; max-width: 100%; height: auto; margin: .5em 0; background: #fff; border: 1px solid var(--line, #d8d8d8); border-radius: 4px; padding: 2px; }

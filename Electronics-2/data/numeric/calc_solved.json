@@ -32,7 +32,8 @@
 "assume": [
 "Exact nodal solution gives Zin = 2.001 kΩ (the approximation Zin ≈ Ri is what the book uses)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|12|12–7.2": {
 "book": "floyd",
@@ -54,7 +55,8 @@
 "assume": [
 "The op-amp response is low-pass down to dc, so the bandwidth is fc(ol)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|12|12–7.4": {
 "book": "floyd",
@@ -74,7 +76,8 @@
 ],
 "how": "Stage gains in dB add.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|12|12–7.5": {
 "book": "floyd",
@@ -94,7 +97,8 @@
 ],
 "how": "Phase lags of the stages add: −49° + (−5.2°).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|12|12–8.2": {
 "book": "floyd",
@@ -116,7 +120,8 @@
 "assume": [
 "The op-amp has a single-pole response (constant gain–bandwidth product)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|13|13–2.3": {
 "book": "floyd",
@@ -138,7 +143,8 @@
 "assume": [
 "The lower-weighted input has the larger resistor (10 kΩ)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|14|14–1.4": {
 "book": "floyd",
@@ -158,7 +164,35 @@
 ],
 "how": "AD622: G = 1 + 50.5 kΩ/RG (Floyd §14–1).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|checkup|14|14–5.1": {
+"book": "floyd",
+"kind": "checkup",
+"chapter": "14",
+"number": "14–5.1",
+"modules": [
+"m05"
+],
+"pdf": 762,
+"printed": 744,
+"parts": [
+[
+"IL = VIN/Ri for RL = 1.0 kΩ",
+"0.68 mA"
+],
+[
+"IL for RL = 5 kΩ",
+"0.68 mA (the same: IL does not depend on RL)"
+]
+],
+"how": "Op-amp constant-current source: the − input is a virtual ground, so Ii = VIN/Ri flows through the load RL in the feedback path (Eq. 14–11): 6.8 V/10 kΩ = 0.68 mA.",
+"assume": [
+"The output must reach 3.4 V for the 5 kΩ load, which a ±12 V to ±15 V supply allows (supplies are not given)."
+],
+"ctx": null,
+"circuit": "Figure 14–36 (p.742): constant-current source: the input voltage VIN is applied through Ri to the − input, the + input is grounded and the load RL is connected in the feedback path between the output and the − input."
 },
 "floyd|checkup|16|16–3.2": {
 "book": "floyd",
@@ -182,7 +216,8 @@
 ],
 "how": "At the resonant frequency the lead-lag network has B = 1/3 and 0° phase shift (Floyd §16–3).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|17|17–1.3": {
 "book": "floyd",
@@ -206,7 +241,8 @@
 ],
 "how": "Floyd Eq. 17–1 and 17–2.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|17|17–1.4": {
 "book": "floyd",
@@ -236,7 +272,8 @@
 "assume": [
 "The 5.0 V is the no-load voltage VNL and 1.0 A is the full-load current."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|17|17–2.2": {
 "book": "floyd",
@@ -256,7 +293,8 @@
 ],
 "how": "Series regulator: VOUT = Acl·VREF with Acl = 1 + R2/R3 (Floyd §17–2), so VREF = 8 V/4.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|checkup|7|7–3.3": {
 "book": "floyd",
@@ -278,7 +316,71 @@
 "assume": [
 "The 100 mW is the average power dissipated in the transistor."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|circuit_action|12|5": {
+"book": "floyd",
+"kind": "circuit_action",
+"chapter": "12",
+"number": "5",
+"modules": [
+"m02"
+],
+"pdf": 672,
+"printed": 654,
+"parts": [
+[
+"Feedback attenuation B = Ri/(Ri + Rf): 100 kΩ → 68 kΩ",
+"B = 0.0099 → 0.0145: (a) increase"
+]
+],
+"how": "B = Ri/(Ri + Rf) with Ri = 1.0 kΩ: a smaller Rf makes the divider ratio larger (0.0099 → 0.0145).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 12–28 (p.623): inverting amplifier, Ri = 1.0 kΩ in series with the input to the − input, Rf = 100 kΩ from the output to the − input, + input grounded."
+},
+"floyd|circuit_action|13|5": {
+"book": "floyd",
+"kind": "circuit_action",
+"chapter": "13",
+"number": "5",
+"modules": [
+"m03"
+],
+"pdf": 728,
+"printed": 710,
+"parts": [
+[
+"VOUT with VIN2 = +1 V → −1 V",
+"-12.0 V → -10.0 V: (a) increase"
+]
+],
+"how": "VOUT = −(VIN1 + VIN2 + VIN3): VIN2 falls from +1 V to −1 V, the sum falls from 12 V to 10 V and VOUT rises from −12 V to −10 V.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–22 (p.680): inverting summing amplifier, VIN1 = +3 V, VIN2 = +1 V, VIN3 = +8 V, three 10 kΩ input resistors, Rf = 10 kΩ."
+},
+"floyd|circuit_action|13|7": {
+"book": "floyd",
+"kind": "circuit_action",
+"chapter": "13",
+"number": "7",
+"modules": [
+"m03"
+],
+"pdf": 728,
+"printed": 710,
+"parts": [
+[
+"VOUT with VIN3 = +3 V → −7 V",
+"-2.5 V → -2.96e-16 V: (a) increase"
+]
+],
+"how": "Averaging amplifier, Rf/R = 1/4: VOUT = −(1/4)(VIN1 + VIN2 + VIN3 + VIN4); the sum drops from 10 V to 0 V, so VOUT goes from −2.5 V to 0 V.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–24 (p.682): averaging amplifier, four inputs VIN1…VIN4 = +1, +2, +3, +4 V each through 100 kΩ to the − input, Rf = 25 kΩ, + input grounded (book result −2.5 V)."
 },
 "floyd|example|12|12–10": {
 "book": "floyd",
@@ -302,7 +404,8 @@
 ],
 "how": "Stage gains add in dB; the phase lags of the stages add: −tan⁻¹(f/fc1) − tan⁻¹(f/fc2) − tan⁻¹(f/fc3).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|example|12|12–11": {
 "book": "floyd",
@@ -322,7 +425,126 @@
 ],
 "how": "Closed-loop bandwidth BWcl = BWol(1 + B·Aol(mid)) (Floyd §12–8).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|12|12–12": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–12",
+"modules": [
+"m02"
+],
+"pdf": 653,
+"printed": 635,
+"parts": [
+[
+"(a) Acl and BW = fT/Acl",
+"67.7; 44.3 kHz"
+],
+[
+"(b) |Acl| and BW = fT/|Acl|",
+"47.0; 63.8 kHz"
+]
+],
+"how": "BW(cl) = fT/|Acl| (Floyd Eq. 12–23): (a) Acl = 1 + 220 kΩ/3.3 kΩ = 67.7, (b) Acl = −47 kΩ/1.0 kΩ = −47. The book prints 44.3 kHz and 63.8 kHz.",
+"assume": [
+"An exact single-pole solution gives 44.4 kHz and 62.5 kHz (the inverting amplifier's loop attenuation is 1/48 rather than 1/47, so the textbook value is about 2 % high)."
+],
+"ctx": null,
+"circuit": "Figure 12–43 (p.635): (a) noninverting amplifier with Rf = 220 kΩ and Ri = 3.3 kΩ; (b) inverting amplifier with Rf = 47 kΩ and Ri = 1.0 kΩ."
+},
+"floyd|example|12|12–4": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–4",
+"modules": [
+"m02"
+],
+"pdf": 636,
+"printed": 618,
+"parts": [
+[
+"Rf = |Acl(I)|·Ri",
+"220.0 kΩ"
+]
+],
+"how": "Inverting amplifier: |Acl(I)| = Rf/Ri, so Rf = 100 × 2.2 kΩ = 220 kΩ (Ri = 2.2 kΩ is read from Figure 12–22).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 12–22 (p.618): inverting amplifier, Ri = 2.2 kΩ in series with the input to the − input, feedback resistor Rf (unknown) from the output to the − input, + input grounded."
+},
+"floyd|example|12|12–5": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–5",
+"modules": [
+"m02"
+],
+"pdf": 639,
+"printed": 621,
+"parts": [
+[
+"Attenuation B = Ri/(Ri + Rf)",
+"0.0435"
+],
+[
+"Zin(NI) = (1 + Aol·B)·Zin",
+"17.4 GΩ"
+],
+[
+"Zout(NI) = Zout/(1 + Aol·B)",
+"8.6 mΩ"
+],
+[
+"(b) Acl(NI) = 1 + Rf/Ri",
+"23.0"
+]
+],
+"how": "Noninverting amplifier (Floyd §12–5): B = Ri/(Ri + Rf), Zin(NI) = (1 + Aol·B)·Zin, Zout(NI) = Zout/(1 + Aol·B). The book prints 17.4 GΩ, 8.6 mΩ and 23.0.",
+"assume": [
+"The exact nodal solution of the op-amp model gives Zin = 17.4 GΩ and Zout = 8.7 mΩ."
+],
+"ctx": null,
+"circuit": "Figure 12–25 (p.621): noninverting amplifier, Rf = 220 kΩ from the output to the inverting input, Ri = 10 kΩ from the inverting input to ground, signal on the + input."
+},
+"floyd|example|12|12–7": {
+"book": "floyd",
+"kind": "example",
+"chapter": "12",
+"number": "12–7",
+"modules": [
+"m02"
+],
+"pdf": 641,
+"printed": 623,
+"parts": [
+[
+"Zin(I) ≈ Ri",
+"1.0 kΩ"
+],
+[
+"Attenuation B = Ri/(Ri + Rf)",
+"0.0099"
+],
+[
+"Zout(I) = Zout/(1 + Aol·B)",
+"101.0 mΩ"
+],
+[
+"Acl(I) = −Rf/Ri",
+"-100.0"
+]
+],
+"how": "Inverting amplifier (Floyd §12–5): Zin(I) ≈ Ri, B = Ri/(Ri + Rf), Zout(I) = Zout/(1 + Aol·B), Acl(I) = −Rf/Ri.",
+"assume": [
+"BOOK ERROR: the printed solution gives B = 1.0 kΩ/101 kΩ = 0.001, but 1/101 = 0.0099; with B = 0.001 it prints Zout(I) = 980 mΩ. The correct value is 50 Ω/(1 + 50,000 × 0.0099) = 0.101 Ω (an exact KCL solution of the op-amp model confirms it). Still “zero for all practical purposes”."
+],
+"ctx": null,
+"circuit": "Figure 12–28 (p.623): inverting amplifier, Ri = 1.0 kΩ in series with the input to the − input, Rf = 100 kΩ from the output to the − input, + input grounded."
 },
 "floyd|example|12|12–8": {
 "book": "floyd",
@@ -356,7 +578,8 @@
 "assume": [
 "The book prints 99,503 for (b): it truncates 99,503.7."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|example|12|12–9": {
 "book": "floyd",
@@ -392,7 +615,146 @@
 ],
 "how": "RC lag circuit: θ = −tan⁻¹(f/fc); plot θ against f on a log axis.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|13|13–1": {
+"book": "floyd",
+"kind": "example",
+"chapter": "13",
+"number": "13–1",
+"modules": [
+"m03"
+],
+"pdf": 688,
+"printed": 670,
+"parts": [
+[
+"Reference voltage VREF = R2/(R1 + R2)·(+15 V)",
+"1.63 V"
+],
+[
+"Output",
+"+14.0 V whenever Vin > 1.63 V and −14.0 V whenever Vin < 1.63 V: a rectangular wave that is high for 39.4 % of each cycle of the ±5 V sine (switching at 19.0° and 161.0°)"
+]
+],
+"how": "Zero-level detector shifted by the divider reference (Floyd §13–1); the output switches between the saturated levels ±14 V each time Vin crosses VREF. The book prints VREF = 1.63 V and draws the output in Figure 13–4.",
+"assume": [
+"The duty cycle (39 %) is derived here; the book only draws the waveform."
+],
+"ctx": null,
+"circuit": "Figure 13–3 (p.670): (a) a sine wave Vin of 5 V peak (−5 V to +5 V); (b) an op-amp comparator with Vin on the + input and the reference on the − input, taken from a divider between +15 V and ground: R1 = 8.2 kΩ (from +15 V) and R2 = 1.0 kΩ (to ground)."
+},
+"floyd|example|13|13–10": {
+"book": "floyd",
+"kind": "example",
+"chapter": "13",
+"number": "13–10",
+"modules": [
+"m03"
+],
+"pdf": 707,
+"printed": 689,
+"parts": [
+[
+"Rate of change of Vout, Vin = +2.5 V",
+"-25.0 mV/μs (= −25 kV/s)"
+],
+[
+"Vin = −2.5 V",
+"+25 mV/μs"
+],
+[
+"(b) output waveform",
+"a triangular wave between 0 V and −5 V (5 V peak-to-peak): a falling ramp while the input is +2.5 V and a rising ramp while it is −2.5 V; ΔVout = 25 mV/μs × 200 μs = 5 V"
+]
+],
+"how": "Ideal integrator: ΔVout/Δt = −Vin/(Ri·C) = −2.5 V/(10 kΩ × 0.01 μF) = −25 mV/μs (Floyd §13–3).",
+"assume": [
+"BOOK INCONSISTENCY: the statement says “the pulse width is 100 μs”, but Figure 13–35(b) and the printed solution use 200 μs per half-period (ΔVout = 25 mV/μs × 200 μs = 5 V). With literally 100 μs the output would swing only 2.5 V."
+],
+"ctx": null,
+"circuit": "Figure 13–35 (p.690): ideal integrator, Ri = 10 kΩ from the input to the − input, C = 0.01 μF from the output to the − input, + input grounded. Vin is a square wave between −2.5 V and +2.5 V; in the drawing each half-period is 200 μs."
+},
+"floyd|example|13|13–2": {
+"book": "floyd",
+"kind": "example",
+"chapter": "13",
+"number": "13–2",
+"modules": [
+"m03"
+],
+"pdf": 691,
+"printed": 673,
+"parts": [
+[
+"VUTP = R2/(R1 + R2)·(+Vout(max))",
+"2.5 V"
+],
+[
+"VLTP = R2/(R1 + R2)·(−Vout(max))",
+"-2.5 V"
+]
+],
+"how": "Floyd Eq. 13–1/13–2; swept the input up and down in a state machine to find the switching points (independent check).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–9 (p.673): comparator with positive feedback (Floyd Fig. 13–7 arrangement): Vin on the − input, R1 from the output to the + input, R2 from the + input to ground; in Example 13–2 R1 = R2 = 100 kΩ."
+},
+"floyd|example|13|13–4": {
+"book": "floyd",
+"kind": "example",
+"chapter": "13",
+"number": "13–4",
+"modules": [
+"m03"
+],
+"pdf": 695,
+"printed": 677,
+"parts": [
+[
+"Comparator references (R-ladder, 8 equal resistors, VREF = 8 V)",
+"1.0 V, 2.0 V, 3.0 V, 4.0 V, 5.0 V, 6.0 V, 7.0 V"
+],
+[
+"Binary output sequence (D2 D1 D0) for the 12 samples",
+"011, 101, 110, 110, 100, 001, 000, 001, 010, 101, 110, 111"
+]
+],
+"how": "A flash ADC with a ladder of 8 equal resistors: comparator k switches on when Vin exceeds k·VREF/8; the priority encoder outputs the number of the highest comparator that is on, i.e. floor(Vin/LSB). With VREF = 8 V the LSB is 1 V.",
+"assume": [
+"The 12 sample values (3.7, 5.2, 6.2, 6.6, 4.7, 1.7, 0.6, 1.0, 2.7, 5.0, 6.6, 7.2 V) are read from the dots of Figure 13–17 to about ±0.1 V; samples 8 and 10 lie on a comparator threshold, where the book's code (001 and 101) is used.",
+"VREF = 8 V is implied by the 0–8 V axis of Figure 13–17 and the printed codes (not stated in the example)."
+],
+"ctx": null,
+"circuit": "Figures 13–16 and 13–17 (pp.677–678): a three-digit simultaneous (flash) ADC: a resistor ladder of 8 equal resistors R from VREF to ground gives 7 reference voltages to 7 op-amp comparators (Vin on the + inputs); a priority encoder (inputs 1–7, enable input) outputs D2D1D0. Vin is an analog waveform between 0 and 8 V sampled by 12 enable pulses."
+},
+"floyd|example|13|13–9": {
+"book": "floyd",
+"kind": "example",
+"chapter": "13",
+"number": "13–9",
+"modules": [
+"m03"
+],
+"pdf": 702,
+"printed": 684,
+"parts": [
+[
+"Contribution of each bit (D0, D1, D2, D3) = −Rf·5 V/Rk",
+"−0.25 V, −0.5 V, −1 V, −2 V"
+],
+[
+"Output for the count 0000 → 1111",
+"a staircase from 0 V to -3.75 V in steps of -0.25 V"
+]
+],
+"how": "Binary-weighted scaling adder: the − input is a virtual ground, so each 1 sends 5 V/Rk through Rf (Floyd §13–2). The book prints −0.25, −0.5, −1, −2 V per bit and the 0 to −3.75 V staircase (Figure 13–28).",
+"assume": [
+"All 16 codes were also solved by KCL with a finite open-loop gain."
+],
+"ctx": null,
+"circuit": "Figure 13–27 (p.684): four-digit binary-weighted DAC (scaling adder): input resistors D0 = 200 kΩ, D1 = 100 kΩ, D2 = 50 kΩ, D3 = 25 kΩ to the − input, Rf = 10 kΩ, + input grounded; a binary 1 is +5 V and a 0 is 0 V. The input waveforms D0…D3 form the straight binary count 0000 to 1111."
 },
 "floyd|example|14|14–1": {
 "book": "floyd",
@@ -412,7 +774,60 @@
 ],
 "how": "Instrumentation amplifier: Acl = 1 + 2R/RG (Floyd §14–1).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|14|14–10": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–10",
+"modules": [
+"m05"
+],
+"pdf": 758,
+"printed": 740,
+"parts": [
+[
+"antilog(Vin/25 mV)",
+"1101.0 (e^7.004)"
+],
+[
+"Vout = −Rf·IEBO·antilog(Vin/25 mV)",
+"-2.99 V"
+]
+],
+"how": "Antilog amplifier (Floyd §14–4): Vout = −Rf·IEBO·antilog(Vin/25 mV) = −(68 kΩ)(40 nA)(1101) = −3 V. It undoes the log amplifier of Example 14–9, whose output for a 3 V input is −175.1 mV.",
+"assume": [],
+"ctx": null,
+"circuit": "Figures 14–34 and 14–33 (p.740): antilog amplifier: the input +175.1 mV is applied to the emitter of a grounded-base transistor whose collector goes to the − input; feedback resistor Rf = 68 kΩ (Example 14–10)."
+},
+"floyd|example|14|14–2": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–2",
+"modules": [
+"m05"
+],
+"pdf": 740,
+"printed": 722,
+"parts": [
+[
+"Voltage gain Av = 50.5 kΩ/RG + 1",
+"100.0"
+],
+[
+"Bandwidth from Figure 14–6 (gain 100 curve)",
+"≈ 80 kHz (the book's reading of the point where the curve begins to drop)"
+]
+],
+"how": "AD622: Av = 50.5 kΩ/RG + 1 = 50.5 kΩ/510 Ω + 1 = 100 (Floyd Eq. 14–1). The gain-100 curve of Figure 14–6 is flat up to about 80 kHz and then falls.",
+"assume": [
+"Read from the vector drawing of Figure 14–6, the gain-100 curve stays flat to 60.1 kHz and is 3 dB down (gain 70.7) at 112.0 kHz; the book's 80 kHz lies between the two (it is a rough reading)."
+],
+"ctx": null,
+"circuit": "Figures 14–7 and 14–6 (pp.722–723): AD622 instrumentation amplifier, supplies +15 V (pin 7) and −15 V (pin 4), inputs +IN (pin 3) and −IN (pin 2), gain resistor RG = 510 Ω between pins 1 and 8, REF pin 5, output pin 6. Gain: Av = 50.5 kΩ/RG + 1; Figure 14–6 is the graph of gain versus frequency of the AD622 for gains 1, 10, 100 and 1000."
 },
 "floyd|example|14|14–5": {
 "book": "floyd",
@@ -432,7 +847,51 @@
 ],
 "how": "OTA: Iout = gm·Vin; 1 μS × 1 mV = 1 nA.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|14|14–7": {
+"book": "floyd",
+"kind": "example",
+"chapter": "14",
+"number": "14–7",
+"modules": [
+"m05"
+],
+"pdf": 752,
+"printed": 734,
+"parts": [
+[
+"IBIAS(max) = (VMOD(max) + 9 V − 1.4 V)/RBIAS",
+"314.0 μA"
+],
+[
+"gm(max) and Av(max) = gm·RL",
+"5.03 mS, 50.3"
+],
+[
+"Vout(max)",
+"2.51 V"
+],
+[
+"IBIAS(min), gm(min), Av(min)",
+"154.0 μA, 2.46 mS, 24.6"
+],
+[
+"Vout(min)",
+"1.23 V"
+],
+[
+"Output",
+"a 1 MHz carrier whose amplitude follows the 1 kHz modulating sine between 1.23 V and 2.51 V (amplitude modulation)"
+]
+],
+"how": "OTA amplitude modulator: the bias current follows VMOD, so the gain does (Floyd §14–3). Maximum at VMOD = +10 V, minimum at +1 V; Vout = Av·Vin with Vin = 50 mV as in the book.",
+"assume": [
+"The book multiplies the 50 mV peak-to-peak input by the gain, so the quoted values are peak-to-peak amplitudes of the carrier."
+],
+"ctx": null,
+"circuit": "Figure 14–25 (p.733): OTA amplitude modulator, supplies +9 V and −9 V; carrier Vin = 50 mV pp at 1 MHz through R1 = 10 kΩ to the − input, R2 = 10 kΩ from the + input to ground, RL = 10 kΩ; the bias input takes VMOD (1 kHz sine between +1 V and +10 V) through RBIAS = 56 kΩ."
 },
 "floyd|example|14|14–8": {
 "book": "floyd",
@@ -454,7 +913,8 @@
 "assume": [
 "Values read from Figure 14–31: Vin = +2 V, R1 = 100 kΩ; IR = 50 nA given in the example."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|example|14|14–9": {
 "book": "floyd",
@@ -474,7 +934,8 @@
 ],
 "how": "Transistor log amplifier (Floyd §14–4): use the natural logarithm.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|example|15|15–1": {
 "book": "floyd",
@@ -498,7 +959,273 @@
 ],
 "how": "Band-pass filter: Q = f0/BW; Q > 10 is narrow-band (Floyd §15–1).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|15|15–2": {
+"book": "floyd",
+"kind": "example",
+"chapter": "15",
+"number": "15–2",
+"modules": [
+"m06"
+],
+"pdf": 789,
+"printed": 771,
+"parts": [
+[
+"R1 = 0.586·R2 for Butterworth (DF = 2 − R1/R2 = 1.414)",
+"5.86 kΩ"
+],
+[
+"Nearest standard 5 % value",
+"5.6 kΩ (DF = 2 − 5.6/10 = 1.44, very close to Butterworth)"
+]
+],
+"how": "Damping factor DF = 2 − R1/R2; Butterworth needs DF = 1.414, so R1/R2 = 0.586 (Floyd Table 15–1). The book prints R1 = 5.86 kΩ and picks 5.6 kΩ.",
+"assume": [
+"The independent check uses an exact Sallen-Key response: with R1/R2 = 0.586 its gain at fc is 1/√2 of the dc gain (maximally flat)."
+],
+"ctx": null,
+"circuit": "Figure 15–6 (p.770): general active single-pole (first-order) filter block: a frequency-selective RC circuit drives the + input of a noninverting op-amp whose gain and damping factor are set by the feedback resistors R1 (from the output to the − input) and R2 (from the − input to ground)."
+},
+"floyd|example|15|15–4": {
+"book": "floyd",
+"kind": "example",
+"chapter": "15",
+"number": "15–4",
+"modules": [
+"m06"
+],
+"pdf": 793,
+"printed": 775,
+"parts": [
+[
+"C = 1/(2πR·fc), CA1 = CB1 = CA2 = CB2",
+"33.0 nF"
+],
+[
+"Stage 1 (DF = 1.848): R1 = 0.152·R2",
+"274.0 Ω (use 270 Ω)"
+],
+[
+"Stage 2 (DF = 0.765): R3 = 1.235·R4",
+"2.22 kΩ (use 2.2 kΩ)"
+]
+],
+"how": "Both stages need the same fc, so with equal R the capacitors are equal: C = 1/(2πR·fc); the feedback ratios of Table 15–1 for a four-pole Butterworth filter are R1/R2 = 0.152 and R3/R4 = 1.235 with R2 = R4 = 1.8 kΩ.",
+"assume": [
+"The exact response of the two cascaded sections with the book's values is 3 dB down at 2.68 kHz."
+],
+"ctx": null,
+"circuit": "Figure 15–12(b) (p.775): four-pole Sallen-Key low-pass filter made of two cascaded two-pole stages: stage 1 with RA1 = RB1 (RC low-pass circuit), CA1 = CB1 and feedback resistors R1 and R2; stage 2 with RA2 = RB2, CA2 = CB2 and feedback resistors R3 and R4."
+},
+"floyd|example|15|15–5": {
+"book": "floyd",
+"kind": "example",
+"chapter": "15",
+"number": "15–5",
+"modules": [
+"m06"
+],
+"pdf": 796,
+"printed": 778,
+"parts": [
+[
+"C = CA = CB = 1/(2πR·fc) with R = RA = RB = R2 = 3.3 kΩ",
+"4.82 nF"
+],
+[
+"R1 = 0.586·R2 (DF = 1.414)",
+"1.93 kΩ"
+],
+[
+"If R1 = 3.3 kΩ is chosen instead",
+"R2 = R1/0.586 = 5.63 kΩ"
+]
+],
+"how": "Equal-value Sallen-Key high-pass: fc = 1/(2πRC), R1/R2 = 0.586 for a Butterworth response (Floyd §15–4). The book prints 0.0048 μF and 1.93 kΩ.",
+"assume": [
+"The exact response is 3 dB down at 9.998 kHz."
+],
+"ctx": null,
+"circuit": "Figure 15–15 (p.777): Sallen-Key high-pass filter: input through CA to a node, CB from that node to the + input, RA from the node to the output (feedback), RB from the + input to ground; gain-setting resistors R1 (output to − input) and R2 (− input to ground)."
+},
+"floyd|example|15|15–8": {
+"book": "floyd",
+"kind": "example",
+"chapter": "15",
+"number": "15–8",
+"modules": [
+"m06"
+],
+"pdf": 804,
+"printed": 786,
+"parts": [
+[
+"Centre frequency f0 = 1/(2π·R4·C1)",
+"60.3 Hz ≈ 60 Hz"
+],
+[
+"R5 for Q = 10 with R6 = 3.3 kΩ: R5 = (3Q − 1)·R6",
+"95.7 kΩ (standard value 100 kΩ gives Q = 10.4)"
+]
+],
+"how": "The band-stop filter uses the state-variable filter: f0 equals the critical frequency of the integrators and Q = (1/3)(R5/R6 + 1), so R5 = (3Q − 1)R6 (Floyd §15–6). R6 is free to choose.",
+"assume": [
+"Exact solution of the whole circuit (state-variable filter + summing amplifier): notch at 60.29 Hz, depth > 60 dB, Q = 10.0."
+],
+"ctx": null,
+"circuit": "Figure 15–26 (p.786): band-stop (notch) filter made from a state-variable filter and a summing amplifier: R1 = R2 = R3 = 10 kΩ, integrators R4 = R7 = 12 kΩ with C1 = C2 = 0.22 μF, Q-setting resistors R5 (from the BP output) and R6 (to ground); the high-pass and low-pass outputs are added by R8 = R9 = R10 = 10 kΩ."
+},
+"floyd|example|16|16–1": {
+"book": "floyd",
+"kind": "example",
+"chapter": "16",
+"number": "16–1",
+"modules": [
+"m07"
+],
+"pdf": 832,
+"printed": 814,
+"parts": [
+[
+"Resonant frequency fr = 1/(2πRC)",
+"1.59 kHz"
+],
+[
+"Rf for a closed-loop gain of 3: Rf = (Av − 1)(R3 + r′ds)",
+"3.0 kΩ"
+]
+],
+"how": "Wien-bridge: fr = 1/(2πRC); oscillations need a closed-loop gain of 3 to offset the lead-lag attenuation 1/3, and the amplifier is a noninverting stage with Ri = R3 + r′ds (Floyd §16–2). The book prints 1.59 kHz and 3.0 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 16–12 (p.814): Wien-bridge oscillator with automatic gain control: lead-lag network R1 = R2 = 10 kΩ, C1 = C2 = 0.01 μF on the + input; negative feedback from the output to the − input through the 10 kΩ potentiometer Rf, with a JFET (2N5458, drain-source resistance r′ds) and R3 = 1.0 kΩ in the source in series to ground; diode D1 (1N914), R4 = 10 kΩ and C3 = 1.0 μF rectify the output to bias the JFET gate."
+},
+"floyd|example|16|16–3": {
+"book": "floyd",
+"kind": "example",
+"chapter": "16",
+"number": "16–3",
+"modules": [
+"m07"
+],
+"pdf": 838,
+"printed": 820,
+"parts": [
+[
+"(a) CT = C1·C2/(C1 + C2)",
+"9.09 nF"
+],
+[
+"(a) fr = 1/(2π√(L·CT))",
+"7.465 kHz"
+],
+[
+"(b) fr = f0·√(Q²/(Q² + 1)) for Q = 8",
+"7.407 kHz"
+]
+],
+"how": "Colpitts oscillator: the tank capacitors C1 and C2 are in series, fr = 1/(2π√(L·CT)); a loaded tank lowers it by √(Q²/(Q² + 1)) (Floyd §16–4). The book prints 0.0091 μF, 7.46 kHz and 7.40 kHz.",
+"assume": [
+"Exact lossy-tank solution for Q = 8: 7.406 kHz."
+],
+"ctx": null,
+"circuit": "Figure 16–21 (p.821): Colpitts oscillator, +12 V: bias resistors R1, R2, collector resistor R3, emitter resistor R4, coupling/bypass capacitors C3, C4, C5; the tank is L = 50 mH with C1 = 0.1 μF and C2 = 0.01 μF in series (the capacitive divider gives the feedback)."
+},
+"floyd|example|16|16–4": {
+"book": "floyd",
+"kind": "example",
+"chapter": "16",
+"number": "16–4",
+"modules": [
+"m07"
+],
+"pdf": 845,
+"printed": 827,
+"parts": [
+[
+"Frequency fr = (1/(4R1C))(R2/R3)",
+"8.25 kHz"
+],
+[
+"R1 for 20 kHz: R1 = (1/(4·f·C))(R2/R3)",
+"4.12 kΩ"
+]
+],
+"how": "Triangular-wave oscillator (Floyd Eq. 16–10); the book prints 8.25 kHz and 4.13 kΩ.",
+"assume": [
+"The simulation of the integrator + comparator confirms both frequencies."
+],
+"ctx": null,
+"circuit": "Figure 16–30 (p.827): triangular-wave oscillator with two op-amps: an integrator with R1 = 10 kΩ and C = 0.01 μF (input from the comparator output) and a comparator with hysteresis whose positive-feedback resistors are R2 = 33 kΩ and R3 = 10 kΩ; the comparator output swings between +Vmax and −Vmax. Book formulas: VUTP = +Vmax·(R3/R2), fr = (1/(4R1C))(R2/R3)."
+},
+"floyd|example|16|16–5": {
+"book": "floyd",
+"kind": "example",
+"chapter": "16",
+"number": "16–5",
+"modules": [
+"m07"
+],
+"pdf": 846,
+"printed": 828,
+"parts": [
+[
+"Gate voltage VG = R4/(R3 + R4)·(+V) = peak of the sawtooth",
+"7.5 V"
+],
+[
+"Peak-to-peak amplitude Vp − VF",
+"6.5 V (from 1 V to 7.5 V)"
+],
+[
+"Input voltage VIN = R2/(R1 + R2)·(−V)",
+"-1.92 V"
+],
+[
+"Frequency f = (|VIN|/(Ri·C))(1/(Vp − VF))",
+"629.0 Hz (period 1.59 ms)"
+],
+[
+"(b) waveform",
+"a sawtooth ramping from about 1 V up to 7.5 V in 1.59 ms, then dropping back quickly when the PUT fires"
+]
+],
+"how": "PUT sawtooth generator (Floyd §16–5): the ramp slope is |VIN|/(Ri·C) and the PUT fires when the output reaches VG. The book prints 7.5 V, 6.5 V, 628 Hz and 1.59 ms.",
+"assume": [
+"The book neglects the loading of the 68 kΩ/10 kΩ divider by Ri (the current is taken as |VIN|/Ri); including it lowers the frequency to about 579.0 Hz."
+],
+"ctx": null,
+"circuit": "Figure 16–32 (p.828): sawtooth generator with a PUT: an op-amp integrator whose input resistor Ri = 100 kΩ is fed from a divider between −15 V: R1 = 68 kΩ (to −15 V) and R2 = 10 kΩ (to ground); feedback capacitor C = 0.0047 μF; the PUT (anode at the − input, cathode at the output through the gate network) has its gate at the divider R3 = 10 kΩ (from +15 V) and R4 = 10 kΩ (to ground), so VG = 7.5 V."
+},
+"floyd|example|16|16–6": {
+"book": "floyd",
+"kind": "example",
+"chapter": "16",
+"number": "16–6",
+"modules": [
+"m07"
+],
+"pdf": 852,
+"printed": 834,
+"parts": [
+[
+"Frequency f = 1.44/((R1 + 2R2)·Cext)",
+"5.64 kHz"
+],
+[
+"Duty cycle = (R1 + R2)/(R1 + 2R2)",
+"59.5 %"
+]
+],
+"how": "555 astable (Floyd Eq. 16–12 and 16–13). The book prints 5.64 kHz and 59.5 %.",
+"assume": [
+"A time-stepped simulation gives 5.652 kHz and 59.5 % (the book's 1.44 is 1/0.694)."
+],
+"ctx": null,
+"circuit": "Figure 16–41 (p.834): astable 555 timer on +5.5 V: R1 = 2.2 kΩ (VCC to the discharge pin), R2 = 4.7 kΩ (discharge pin to the threshold/trigger pins), Cext = 0.022 μF to ground, 0.01 μF on the control pin. Figure 16–40: a diode D1 across R2 makes Cext charge through R1 only."
 },
 "floyd|example|17|17–1": {
 "book": "floyd",
@@ -518,7 +1245,8 @@
 ],
 "how": "Floyd Eq. 17–2: line regulation = (ΔVOUT/VOUT)·100 %/ΔVIN.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|example|17|17–2": {
 "book": "floyd",
@@ -542,7 +1270,112 @@
 ],
 "how": "Floyd Eq. 17–3: load regulation = (VNL − VFL)/VFL·100 %; the load current changes by 10 mA.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|17|17–5": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–5",
+"modules": [
+"m08"
+],
+"pdf": 880,
+"printed": 862,
+"parts": [
+[
+"Worst case: output shorted, VR1 = VIN",
+"IR1 = 568.2 mA"
+],
+[
+"Power in R1: PR1 = VR1²/R1",
+"7.1 W → use a resistor rated at least 10 W"
+]
+],
+"how": "With the output short-circuited VOUT = 0, so VR1 = 12.5 V and PR1 = 12.5²/22 Ω = 7.10 W; choose the next standard rating, 10 W (Floyd §17–2).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 17–15 (p.862): series regulator with current limiting: R1 = 22 Ω in series with the input (VIN to the output), the pass transistor Q1 with R2 = 1.0 kΩ, R3 = 10 kΩ and R4 = 10 kΩ; the worst case for R1 is a short-circuited output (VOUT = 0), when all of VIN appears across R1."
+},
+"floyd|example|17|17–6": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–6",
+"modules": [
+"m08"
+],
+"pdf": 890,
+"printed": 872,
+"parts": [
+[
+"VOUT(min), R2 = 0",
+"1.25 V"
+],
+[
+"VOUT(max), R2 = 5 kΩ: VREF(1 + R2/R1) + IADJ·R2",
+"29.66 V + 0.25 V = 29.9 V"
+]
+],
+"how": "LM317 (Floyd §17–5): the regulator holds VREF = 1.25 V across R1, so the current through R1 plus IADJ flows in R2. The book prints 1.25 V and 29.9 V.",
+"assume": [
+"The 35 V input is high enough for 29.9 V out (a dropout margin of a few volts is needed)."
+],
+"ctx": null,
+"circuit": "Figure 17–30 (p.872): adjustable LM317 regulator: input +35 V; R1 = 220 Ω between the output and the adjustment terminal; R2 = 5 kΩ (maximum) potentiometer from the adjustment terminal to ground; decoupling capacitors C1, C2, C3. VOUT = VREF(1 + R2/R1) + IADJ·R2 with VREF = 1.25 V."
+},
+"floyd|example|17|17–7": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–7",
+"modules": [
+"m08"
+],
+"pdf": 894,
+"printed": 876,
+"parts": [
+[
+"Rext = 0.7 V/Imax",
+"1.0 Ω"
+]
+],
+"how": "Qext turns on when the voltage across Rext reaches its base-emitter voltage 0.7 V, which happens at Imax = 0.7 V/Rext; so Rext = 0.7 V/0.7 A = 1 Ω (Floyd §17–6). Check with the printed answer of Problem 25: 0.7 V/250 mA = 2.8 Ω.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 17–34 (p.876): fixed three-terminal regulator (78xx) with an external pass transistor Qext (pnp): Rext is connected between the input terminal of the regulator and the base/emitter of Qext so that Qext turns on when the current through the regulator (and Rext) makes VRext = 0.7 V; the load current is IL = Iext + Imax."
+},
+"floyd|example|17|17–8": {
+"book": "floyd",
+"kind": "example",
+"chapter": "17",
+"number": "17–8",
+"modules": [
+"m08"
+],
+"pdf": 894,
+"printed": 876,
+"parts": [
+[
+"Load current IL = VOUT/RL",
+"2.4 A"
+],
+[
+"Current through Qext: Iext = IL − Imax",
+"1.7 A"
+],
+[
+"Pext(min) = Iext(VIN − VOUT)",
+"10.2 W → choose a transistor rated at least 15 W"
+]
+],
+"how": "External pass transistor (Floyd §17–6): the regulator handles Imax = 0.7 A and Qext the rest of the load current, dropping VIN − VOUT = 6 V. The book prints 2.4 A, 1.7 A and 10.2 W.",
+"assume": [
+"No heat sink is assumed, as stated."
+],
+"ctx": null,
+"circuit": "Figure 17–34 (p.876): fixed three-terminal regulator (78xx) with an external pass transistor Qext (pnp): Rext is connected between the input terminal of the regulator and the base/emitter of Qext so that Qext turns on when the current through the regulator (and Rext) makes VRext = 0.7 V; the load current is IL = Iext + Imax."
 },
 "floyd|example|17|17–9": {
 "book": "floyd",
@@ -564,7 +1397,115 @@
 "assume": [
 "The regulator ground-terminal current IG is neglected."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|example|6|6–6": {
+"book": "floyd",
+"kind": "example",
+"chapter": "6",
+"number": "6–6",
+"modules": [
+"m04"
+],
+"pdf": 303,
+"printed": 285,
+"parts": [
+[
+"ac collector resistance Rc = RC ‖ RL",
+"833.0 Ω"
+],
+[
+"Voltage gain Av = Rc/r′e",
+"127.0"
+]
+],
+"how": "RC = 1.0 kΩ is read from Figure 6–16; with the emitter bypassed Av = Rc/r′e where Rc = RC ‖ RL (Floyd §6–6). The book prints 833 Ω and 127.",
+"assume": [
+"The unloaded gain was 152 in Example 6–5 (RC/r′e)."
+],
+"ctx": null,
+"circuit": "Figure 6–16 (p.284): voltage-divider biased 2N3904 common-emitter amplifier. VCC = +12 V, R1 = 22 kΩ (VCC to base), R2 = 6.8 kΩ (base to ground), RC = 1.0 kΩ, RE = 560 Ω with the bypass capacitor C2 across it; input coupling C1, output coupling C3."
+},
+"floyd|example|7|7–2": {
+"book": "floyd",
+"kind": "example",
+"chapter": "7",
+"number": "7–2",
+"modules": [
+"m04"
+],
+"pdf": 363,
+"printed": 345,
+"parts": [
+[
+"Input signal (50 mV pp)",
+"17.7 mV rms"
+],
+[
+"Input resistance Rin(tot) = R1 ‖ R2 ‖ β(RE1 + r′e)",
+"5.59 kΩ"
+],
+[
+"Input power Pin = Vin²/Rin",
+"55.9 nW"
+],
+[
+"Power gain Ap = Av²·Rin/RL",
+"544,000"
+],
+[
+"Output power Pout = Pin·Ap = Vout²/RL",
+"30.4 mW"
+],
+[
+"DC supply power PDC = ICC·VCC",
+"2.97 W (IE(Q3) = 0.247 A)"
+],
+[
+"Efficiency η = Pout/PDC",
+"1.0 %  (the book prints ≈ 4 %, see the note)"
+]
+],
+"how": "Floyd Example 7–2 with the circuit of Example 7–1: Av1 = Rc1/(RE1 + r′e) = 27.9; PDC = ICC·VCC with IE(Q3) = VE(Q3)/RE3 = 8.2 V/33 Ω ≈ 0.25 A; η = Pout/PDC. Pout is also checked as Vout²/RL (Vout = Av·Vin).",
+"assume": [
+"BOOK ERROR 1: the printed solution says 50 mV peak-to-peak is 35.4 mV rms. 35.4 mV rms is 50 mV PEAK (100 mV pp); 50 mV pp is 17.7 mV rms. The book's numbers (Pin = 149 nW, Pout = 122 mW, η ≈ 4 %) are reproduced here for 35.4 mV to confirm the circuit values, but the figure says 50 mV pp, which gives η ≈ 1 %.",
+"BOOK ERROR 2 (also in Example 7–1): the printed Rin(tot) = 56 kΩ ‖ 10 kΩ ‖ 200(68 Ω + 14 Ω) = 8.4 kΩ is only 56 kΩ ‖ 10 kΩ; with the 16.4 kΩ branch it is 5.6 kΩ, so the power gain of Example 7–1 is about 5.5·10⁵, not 817,330. Pout does not depend on it.",
+"Either way the lesson is the same: a class A power stage is very inefficient."
+],
+"ctx": null,
+"circuit": "Figure 7–5 (p.344, Example 7–1): VCC = +12 V. Stage 1 = voltage-divider biased common-emitter Q1 with R1 = 56 kΩ, R2 = 10 kΩ, RC = 4.7 kΩ, swamping RE1 = 68 Ω in series with RE2 = 560 Ω (RE2 bypassed by C2). Stage 2 = Darlington emitter follower Q2–Q3 biased by R3 = 5.6 kΩ and R4 = 22 kΩ (R3 from VCC, R4 to ground), emitter resistor RE3 = 33 Ω (2 W); the load is an 8 Ω speaker through C4. Source Vs = 50 mV pp at 1 kHz. βac = 200 for all transistors."
+},
+"floyd|problem|12|20": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "20",
+"modules": [
+"m02"
+],
+"pdf": 677,
+"printed": 659,
+"parts": [
+[
+"(a) Zin(VF) = (1 + Aol)·Zin;  Zout(VF) = Zout/(1 + Aol)",
+"1320.0 GΩ;  455.0 μΩ"
+],
+[
+"(b) Zin(VF) = (1 + Aol)·Zin;  Zout(VF) = Zout/(1 + Aol)",
+"500.0 GΩ;  600.0 μΩ"
+],
+[
+"(c) Zin(VF) = (1 + Aol)·Zin;  Zout(VF) = Zout/(1 + Aol)",
+"40.0 GΩ;  1.5 mΩ"
+]
+],
+"how": "Voltage follower: the feedback attenuation is B = 1, so Zin(VF) = (1 + Aol)·Zin and Zout(VF) = Zout/(1 + Aol) (Floyd §12–5, Eq. 12–17 and 12–18). Problem 19 asks the same for the noninverting amplifiers of Figure 12–68 (its printed answers 8.41 GΩ / 89.2 mΩ … follow the same formula).",
+"assume": [
+"An exact KCL solution of the op-amp model agrees with the formulas to better than 0.1 %."
+],
+"ctx": null,
+"circuit": "Figure 12–69 (p.659): three voltage followers (output connected to the − input, signal on the + input). (a) Aol = 220,000, Zin = 6 MΩ, Zout = 100 Ω; (b) Aol = 100,000, Zin = 5 MΩ, Zout = 60 Ω; (c) Aol = 50,000, Zin = 800 kΩ, Zout = 75 Ω."
 },
 "floyd|problem|12|22": {
 "book": "floyd",
@@ -590,7 +1531,8 @@
 "assume": [
 "The two currents (42 μA and 40 μA) are the input currents after compensation: the error is the offset current × 75 Ω."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|24": {
 "book": "floyd",
@@ -610,7 +1552,8 @@
 ],
 "how": "A voltage follower has unity gain, so the input offset voltage appears unchanged at the output.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|26": {
 "book": "floyd",
@@ -630,7 +1573,8 @@
 ],
 "how": "Gains in dB subtract: 120 dB − 50 dB.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|28": {
 "book": "floyd",
@@ -650,7 +1594,8 @@
 ],
 "how": "RC lag circuit: XC = R at f = fc, and XC ∝ 1/f.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|30": {
 "book": "floyd",
@@ -682,7 +1627,8 @@
 ],
 "how": "Aol = Aol(mid)/√(1 + (f/fc(ol))²).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|32": {
 "book": "floyd",
@@ -722,7 +1668,8 @@
 ],
 "how": "θ = −tan⁻¹(f/fc) with fc = 8.5 kHz; plot θ against f on a log axis.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|36": {
 "book": "floyd",
@@ -742,7 +1689,95 @@
 ],
 "how": "BWcl = fc(ol)(1 + B·Aol(mid)).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|problem|12|42": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "42",
+"modules": [
+"m02"
+],
+"pdf": 680,
+"printed": 662,
+"parts": [
+[
+"(a) output pin shorted to the − input",
+"Vout ≈ 0 V (≈ 37.0 nV for Vin = 100 mV, Aol = 200,000, Zout = 75 Ω): the op-amp holds the − input at the + input voltage (0 V) and sinks the source current Vin/R1 = 0.1 mA; no signal at the output"
+],
+[
+"(b) R3 open",
+"The + input has no dc path: its bias current charges the stray capacitance until the output drives into saturation at one supply rail; the ac gain (−10) is not available"
+],
+[
+"(c) R3 = 10 kΩ instead of 910 Ω",
+"Gain unchanged (−10); a dc offset appears: Vout(dc) = Ib·[R2 − R3(1 + R2/R1)] = -8.0 mV for Ib = 80 nA (instead of -0.8 μV with 910 Ω)"
+],
+[
+"(d) R1 and R2 swapped",
+"Gain becomes −R2/R1 = −1.0 kΩ/10 kΩ = -0.1 instead of -10.0: the output is 100 times smaller (still inverted); 100 mV in gives -10.0 mV"
+]
+],
+"how": "Inverting amplifier with bias compensation (R3 ≈ R1 ‖ R2 = 909 Ω). Effects obtained from the ideal gain −R2/R1 and from the dc error of the input bias current, Vout(dc) = Ib·[R2 − R3(1 + R2/R1)] (exact nodal solution used as check).",
+"assume": [
+"Ib = 80 nA is the typical LM741 value of Figure 12–77 (an assumption: the statement gives no op-amp); both inputs are taken to draw the same bias current.",
+"The statement gives no input signal for this problem; Problem 41 uses 100 mV, which is used here only for the numbers of (a) and (d)."
+],
+"ctx": null,
+"circuit": "Figure 12–75 (p.662): inverting amplifier, R1 = 1.0 kΩ from the input to the − input, R2 = 10 kΩ from the output to the − input, R3 = 910 Ω from the + input to ground (bias-current compensation)."
+},
+"floyd|problem|12|48": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "48",
+"modules": [
+"m02"
+],
+"pdf": 681,
+"printed": 663,
+"parts": [
+[
+"Ri for |Acl| = 100 with Rf = 100 kΩ",
+"1.0 kΩ"
+],
+[
+"Zin(I) of the amplifier ≈ Ri",
+"1.0 kΩ"
+]
+],
+"how": "Inverting amplifier: Ri = Rf/|Acl| = 1.0 kΩ and Zin(I) ≈ Ri (Floyd §12–5). The LM741 typical input resistance (2.0 MΩ, datasheet Figure 12–77) only matters for the noninverting configuration, where Zin(NI) = (1 + Aol·B)·Zin.",
+"assume": [
+"Exact KCL solution with Aol = 200,000 and Zin = 2 MΩ gives 1.001 kΩ, i.e. Ri to 0.1 %.",
+"The statement says “input impedances” (plural); the only input impedance of the inverting amplifier is Zin(I) ≈ Ri."
+],
+"ctx": null,
+"circuit": "Figure 12–77 (p.664): partial LM741 datasheet, “LM741” column, typical values: input resistance 2.0 MΩ, large-signal voltage gain 200 V/mV (200,000), slew rate 0.5 V/μs, input bias current 80 nA."
+},
+"floyd|problem|12|50": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "12",
+"number": "50",
+"modules": [
+"m02"
+],
+"pdf": 681,
+"printed": 663,
+"parts": [
+[
+"Time for a −8 V → +8 V step at the slew rate",
+"32.0 μs"
+]
+],
+"how": "Slew rate = ΔVout/Δt, so Δt = 16 V/(0.5 V/μs) = 32 μs (typical LM741 slew rate, Figure 12–77, unity gain).",
+"assume": [
+"Slew-rate limited transition; the rise time of the small-signal response (0.3 μs typ) is much shorter."
+],
+"ctx": null,
+"circuit": "Figure 12–77 (p.664): partial LM741 datasheet; LM741 column, typical slew rate 0.5 V/μs (TA = 25 °C, unity gain)."
 },
 "floyd|problem|12|52": {
 "book": "floyd",
@@ -777,7 +1812,8 @@
 "One valid design (several are possible): the book's even-numbered problems have no printed answer.",
 "Aol of the 741 taken as 200,000 for the check."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|problem|12|56": {
 "book": "floyd",
@@ -799,7 +1835,160 @@
 "assume": [
 "741 unity-gain bandwidth fT = 1 MHz (typical datasheet value; the book's datasheet figure is an image)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|problem|13|20": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "13",
+"number": "20",
+"modules": [
+"m03"
+],
+"pdf": 733,
+"printed": 715,
+"parts": [
+[
+"Healthy circuit (zener pair drop Vb = 4.3 + 0.7 = 5.0 V)",
+"Vout = ±10.0 V, VC = ±5.0 V: it should switch between +10 V and −10 V with trigger points ±5 V"
+],
+[
+"Observed",
+"VB = +10 V / −1.4 V and VC = +5 V / −0.7 V: the positive half is correct, the negative half is not"
+],
+[
+"Is it operating properly?",
+"No"
+],
+[
+"Likely fault",
+"One of the zener diodes is shorted (the one that should be in breakdown when the output is negative): the negative output is then limited by a single 0.7 V junction, giving Vb = 0.7 V, Vout = −2·0.7 = -1.4 V and VC = −0.7 V, exactly the observed values"
+]
+],
+"how": "Zener-bounded comparator with hysteresis (Example 13–3): Vout = ±Vb(R1 + R2)/R1 and VUTP/VLTP = ±Vb·R2/R1 with Vb = VZ + 0.7 V. The observed negative levels fit Vb = 0.7 V, i.e. one zener replaced by a short.",
+"assume": [
+"An open zener would stop the output from switching to that level at all; the observation shows a limited negative level, so a short is more consistent."
+],
+"ctx": null,
+"circuit": "Figure 13–71 (p.715): (b) a comparator with hysteresis and zener bounding (Figure 13–13 type): input A through Ri = 100 kΩ to the − input, two 4.3 V zeners D1 and D2 in series between the − input (node) and the output B, R1 = 10 kΩ from B to the + input (node C) and R2 = 10 kΩ from C to ground. (a) the observed waveforms: VA a ±6 V sine; VB switches between +10 V and −1.4 V; VC between +5 V and −0.7 V; the output switches high when VA falls to −0.7 V and low when VA reaches +5 V."
+},
+"floyd|problem|13|26": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "13",
+"number": "26",
+"modules": [
+"m03"
+],
+"pdf": 735,
+"printed": 717,
+"parts": [
+[
+"Reference range with R1 = R3 = 56 kΩ (as drawn)",
+"-9.8 V … +9.8 V (duty cycle 6.31 % … 93.7 %)"
+],
+[
+"Reference range with R1 = 1.0 kΩ",
+"-9.587 V … +11.96 V"
+],
+[
+"Effect on the duty cycle (10 V peak sine)",
+"minimum 0 % (the reference exceeds the 10 V peak, so over the top 9.08 % of the potentiometer travel the output never goes high), maximum 90.8 % instead of 93.7 %: the range is no longer symmetrical and part of the control is wasted"
+]
+],
+"how": "Reference voltage = +12 V − I·(R1 + x·R2) with I = 24 V/(R1 + R2 + R3); the pulse is high while the sine exceeds the reference, duty = (π − 2·asin(Vref/Vp))/(2π). The 10 V peak sine of Problem 27 is used (Application Activity text).",
+"assume": [
+"The effect is derived here (the book gives no answer for this even-numbered problem); the duty cycles are computed by sampling the sine wave."
+],
+"ctx": null,
+"circuit": "Figure 13–50 (p.700): sine/pulse generator: a 10 V peak sine wave goes to the + input of an LM111 comparator; the − input is the wiper of a 500 kΩ potentiometer R2 between R1 = 56 kΩ (to +12 V) and R3 = 56 kΩ (to −12 V); output pulled up to +5 V by R4 = 1 kΩ."
+},
+"floyd|problem|13|28": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "13",
+"number": "28",
+"modules": [
+"m03"
+],
+"pdf": 735,
+"printed": 717,
+"parts": [
+[
+"Required reference range (same 98 % of the sine peak as the original)",
+"±4.9 V"
+],
+[
+"R1 = R3 for that range (R2 = 500 kΩ, ±12 V supplies)",
+"362.0 kΩ (standard value 360 kΩ gives ±4.92 V and a duty-cycle range of 5.77 % … 94.2 %)"
+]
+],
+"how": "The reference at the ends of the potentiometer is ±(12 V − I·R1) with I = 24 V/(2R1 + R2). The original design (R1 = 56 kΩ) gives ±9.8 V for a 10 V peak sine (duty 6.4 %–93.6 %); for a 5 V peak sine the same fractions need ±4.9 V.",
+"assume": [
+"A design problem: the book prints no answer. Assumed: the pot R2 = 500 kΩ and the ±12 V supplies stay, only R1 = R3 change, and the duty range of the original design is kept (the pulse spec of Table 13–1 is 15 %–85 %, which any R1 above this value also meets).",
+"Another valid design would change R2 or the supply instead."
+],
+"ctx": null,
+"circuit": "Figure 13–50 (p.700): sine/pulse generator: 10 V peak sine on the + input of an LM111; − input from the wiper of a 500 kΩ potentiometer R2 between R1 = 56 kΩ (to +12 V) and R3 = 56 kΩ (to −12 V); R4 = 1 kΩ pull-up to +5 V."
+},
+"floyd|problem|14|12": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "14",
+"number": "12",
+"modules": [
+"m05"
+],
+"pdf": 777,
+"printed": 759,
+"parts": [
+[
+"Gain as drawn: Av1·Av2 = (Rf1/Ri1 + 1)(Rf2/Ri2 + 1)",
+"331.0 × 4.13 = 1368.0"
+],
+[
+"Output-stage gain needed for 440",
+"Av2 = 440/331.0 = 1.329"
+],
+[
+"Rf2 for that gain (Ri2 = 15 kΩ)",
+"4.94 kΩ; standard values: 4.7 kΩ → total 434.7, 5.1 kΩ → 443.5"
+]
+],
+"how": "Total gain = Av1·Av2 with Av1 = 330 kΩ/1.0 kΩ + 1 = 331 and Av2 = Rf2/Ri2 + 1; only Rf2 (or Ri2) of the output stage may change: Rf2/Ri2 = 0.329, i.e. Rf2 ≈ 4.9 kΩ for Ri2 = 15 kΩ.",
+"assume": [
+"Figure 14–55(b) is read as Rs = 10 kΩ, Rf1 = 330 kΩ, Ri1 = 1.0 kΩ, Ri2 = 15 kΩ and Rf2 = 47 kΩ; the same figure, part (a), is checked by Problem 11 whose printed answer (change 18 kΩ to 68 kΩ) follows from the same formulas."
+],
+"ctx": null,
+"circuit": "Figure 14–55(b) (p.759): 3656KG isolation amplifier, supply +15 V. Input stage: Rs = 10 kΩ, Rf1 = 330 kΩ (pin 10 to 6), Ri1 = 1.0 kΩ from pin 6 to ground; output stage: Ri2 = 15 kΩ, Rf2 = 47 kΩ (pin 14 to 15), output pin 15."
+},
+"floyd|problem|14|18": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "14",
+"number": "18",
+"modules": [
+"m05"
+],
+"pdf": 778,
+"printed": 760,
+"parts": [
+[
+"RBIAS = 220 kΩ (rheostat at 0): maximum gain",
+"IBIAS = 102.7 μA → Av = 11.2"
+],
+[
+"RBIAS = 220 kΩ + 10 kΩ: minimum gain",
+"IBIAS = 98.26 μA → Av = 10.7"
+]
+],
+"how": "IBIAS = (+V − (−V) − 1.4 V)/RBIAS, gm = K·IBIAS with K = 16 μS/μA, Av = gm·RL (Example 14–6/14–7 method).",
+"assume": [
+"NOTE: the printed answer of Problem 17 (same circuit without the rheostat) is Av ≅ 11.6, about 4 % above the 11.2 given by the book's own method (1.4 V drop in the bias path); with that 4 % scaling the range would be about 11.1 to 11.6. Cause not found in the book."
+],
+"ctx": null,
+"circuit": "Figure 14–56 (p.759): OTA amplifier, supplies +12 V and −12 V, RBIAS = 220 kΩ from +12 V to the bias input, R1 = 10 kΩ from Vin to the − input, R2 = 10 kΩ from the + input to ground, load RL = 6.8 kΩ (K = 16 μS/μA)."
 },
 "floyd|problem|14|22": {
 "book": "floyd",
@@ -831,7 +2020,344 @@
 ],
 "how": "Natural logarithms.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|problem|14|28": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "14",
+"number": "28",
+"modules": [
+"m05"
+],
+"pdf": 779,
+"printed": 761,
+"parts": [
+[
+"antilog(Vin/25 mV) = e^9",
+"8103.0"
+],
+[
+"Vout = −Rf·IEBO·antilog(Vin/25 mV)",
+"-48.6 V"
+]
+],
+"how": "Antilog amplifier (Floyd §14–4): Vout = −(100 kΩ)(60 nA)·e^(0.225/0.025) = −6 mV × 8103 = −48.6 V.",
+"assume": [
+"This is the ideal result; it is larger than any normal op-amp supply, so the real output would saturate near the negative supply (the supply voltage is not given)."
+],
+"ctx": null,
+"circuit": "Figure 14–61 (p.760): antilog amplifier: the input +0.225 V is applied to the emitter of a grounded-base transistor whose collector goes to the − input; Rf = 100 kΩ from the output to the − input, + input grounded."
+},
+"floyd|problem|14|6": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "14",
+"number": "6",
+"modules": [
+"m05"
+],
+"pdf": 776,
+"printed": 758,
+"parts": [
+[
+"RG for a gain of 10",
+"5.61 kΩ"
+],
+[
+"Bandwidth from the gain-10 curve of Figure 14–6",
+"≈ 400.0 kHz (3 dB down: the curve peaks at 11.0 near 204.0 kHz and falls to 7.07 at 399.0 kHz)"
+]
+],
+"how": "Gain 10 needs RG = 50.5 kΩ/9 = 5.6 kΩ; the bandwidth is read from the gain-10 curve of Figure 14–6 at the −3 dB point (gain 7.07).",
+"assume": [
+"The graph reading comes from the vector drawing of Figure 14–6 (the curve points were converted with the log-log axes, calibration checked on the flat levels 1, 10, 100, 1000). If the book's rougher rule of Example 14–2 (“where the curve begins to drop”) is used the answer is about 0.3 MHz.",
+"The statement says the gain is “set to 10” (RG would be 5.6 kΩ) although the figure shows 1.0 kΩ."
+],
+"ctx": null,
+"circuit": "Figures 14–54 and 14–6 (pp.758, 723): AD622 instrumentation amplifier, supplies ±15 V, +IN pin 3, −IN pin 2, RG = 1.0 kΩ between pins 1 and 8, output pin 6, REF pin 5. Gain Av = 50.5 kΩ/RG + 1 (51.5 as drawn). Figure 14–6 is the AD622 graph of gain versus frequency (curves for gains 1, 10, 100, 1000)."
+},
+"floyd|problem|14|8": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "14",
+"number": "8",
+"modules": [
+"m05"
+],
+"pdf": 776,
+"printed": 758,
+"parts": [
+[
+"RG = 50.5 kΩ/(Av − 1) for Av = 20",
+"2.658 kΩ (nearest standard value 2.7 kΩ gives Av = 19.7)"
+]
+],
+"how": "Av = 50.5 kΩ/RG + 1 (Floyd Eq. 14–1) gives RG = 50.5 kΩ/19 = 2.66 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figures 14–54 and 14–6 (pp.758, 723): AD622 instrumentation amplifier, supplies ±15 V, +IN pin 3, −IN pin 2, RG = 1.0 kΩ between pins 1 and 8, output pin 6, REF pin 5. Gain Av = 50.5 kΩ/RG + 1 (51.5 as drawn). Figure 14–6 is the AD622 graph of gain versus frequency (curves for gains 1, 10, 100, 1000)."
+},
+"floyd|problem|15|12": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "15",
+"number": "12",
+"modules": [
+"m06"
+],
+"pdf": 821,
+"printed": 803,
+"parts": [
+[
+"Critical frequency of each stage fc = 1/(2π·√(R1R2C1C2))",
+"189.8 Hz"
+],
+[
+"Equal-value stage with C = 0.22 μF: R = 1/(2π·fc·C)",
+"3.81 kΩ (standard 3.9 kΩ gives fc = 185.5 Hz; 3.6 kΩ gives 201.0 Hz)"
+],
+[
+"Result",
+"R1 = R2 = R5 = R6 = 3.8 kΩ (≈ 3.9 kΩ), C1 = C2 = C3 = C4 = 0.22 μF; the gain-setting resistors R3/R4 = 0.147 (DF = 1.853) and R7/R8 = 1.214 (DF = 0.786) are unchanged: they are the four-pole Butterworth ratios of Table 15–1 (0.152 and 1.235), so the response curve is kept"
+]
+],
+"how": "In the book's model the response (damping factor) of an equal-value Sallen-Key stage depends only on R3/R4 (R7/R8) and fc = 1/(2πRC); the unequal-value circuit has fc = 1/(2π√(R1R2C1C2)) = 190 Hz. Replacing both resistors by R = 1/(2π·fc·C) with C = 0.22 μF keeps fc and the feedback resistors keep the Butterworth shape.",
+"assume": [
+"Exact check of the new circuit: the cascade is 3 dB down at 187.0 Hz.",
+"This follows the textbook equal-value model; the exact response of the original unequal-value circuit is not identical (its damping depends on the component ratios), so “without changing the response curve” is interpreted as keeping fc and the Butterworth feedback ratios."
+],
+"ctx": null,
+"circuit": "Figure 15–45 (p.805): two cascaded Sallen-Key low-pass sections, each with unequal values. Stage 1: R1 = 4.7 kΩ, R2 = 6.8 kΩ, C1 = 0.22 μF (feedback capacitor), C2 = 0.1 μF (to ground), gain resistors R3 = 1.0 kΩ and R4 = 6.8 kΩ. Stage 2: R5 = 4.7 kΩ, R6 = 6.8 kΩ, C3 = 0.22 μF, C4 = 0.1 μF, gain resistors R7 = 6.8 kΩ and R8 = 5.6 kΩ."
+},
+"floyd|problem|15|20": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "15",
+"number": "20",
+"modules": [
+"m06"
+],
+"pdf": 823,
+"printed": 805,
+"parts": [
+[
+"Centre frequency f0 = 1/(2π·R4·C1)",
+"1.326 kHz"
+],
+[
+"R5 = (3Q − 1)·R6 for Q = 50 (choose R6 = 1.0 kΩ)",
+"149.0 kΩ (standard value 150 kΩ gives Q = 50.3)"
+],
+[
+"Bandwidth BW = f0/Q",
+"26.5 Hz"
+]
+],
+"how": "State-variable band-pass: Q = (1/3)(R5/R6 + 1), so R5 = (3Q − 1)R6 = 149·R6; with R6 = 1.0 kΩ, R5 = 149 kΩ. BW = f0/Q = 1.326 kHz/50.",
+"assume": [
+"R5 and R6 are not in the figure (they are to be chosen); only their ratio matters: R6 = 1.0 kΩ is an arbitrary choice.",
+"Exact solution of the three-op-amp circuit gives f0 = 1.326 kHz and Q = 50.0."
+],
+"ctx": null,
+"circuit": "Figure 15–48 (p.806): state-variable filter, R1 = R2 = R3 = R4 = R7 = 12 kΩ, C1 = C2 = 0.01 μF; R5 (from the BP output) and R6 (to ground) set Q and are left to be chosen."
+},
+"floyd|problem|16|12": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "16",
+"number": "12",
+"modules": [
+"m07"
+],
+"pdf": 866,
+"printed": 848,
+"parts": [
+[
+"(a) type",
+"Colpitts oscillator (one inductor, two capacitors C1 and C3 forming the capacitive divider)"
+],
+[
+"(a) fr = 1/(2π√(L1·CT)), CT = C1·C3/(C1 + C3)",
+"CT = 90.9 pF, fr = 236.1 kHz"
+],
+[
+"(b) type",
+"Hartley oscillator (two inductors L1 and L2 with one capacitor C2)"
+],
+[
+"(b) fr = 1/(2π√(LT·C2)), LT = L1 + L2",
+"LT = 11.5 mH, fr = 68.46 kHz"
+]
+],
+"how": "Colpitts: fr = 1/(2π√(L·CT)) with the two tank capacitors in series; Hartley: fr = 1/(2π√(LT·C)) with LT = L1 + L2 (Floyd §16–4). Q > 10 so loading is neglected.",
+"assume": [
+"The two inductors of the Hartley circuit are taken as uncoupled (no mutual inductance is given).",
+"The coupling and bypass capacitors (1 μF) are taken as ac shorts."
+],
+"ctx": null,
+"circuit": "Figure 16–60 (p.848): (a) a transistor oscillator whose tank is L1 = 5 mH with C1 = 100 pF (from the inductor's lower end to ground) and C3 = 1000 pF (from the collector to ground, ac), feedback taken from the C1 junction through C2 = 1 μF to the base (C4 = 1 μF bypass); (b) a transistor oscillator with L1 = 1.5 mH and L2 = 10 mH each from a side of the tank to ground and C2 = 470 pF across both (C1, C3, C4 = 1 μF coupling/bypass capacitors)."
+},
+"floyd|problem|16|16": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "16",
+"number": "16",
+"modules": [
+"m07"
+],
+"pdf": 867,
+"printed": 849,
+"parts": [
+[
+"Gate voltage VG = R5/(R4 + R5)·(+12 V) = peak of the output",
+"3.84 V"
+],
+[
+"Peak-to-peak amplitude Vp − VF (VF = 1 V)",
+"2.84 V"
+],
+[
+"Input voltage VIN = R2/(R1 + R2)·(−12 V)",
+"-2.16 V"
+],
+[
+"Frequency f = (|VIN|/(R3·C))(1/(Vp − VF))",
+"3.47 kHz"
+]
+],
+"how": "PUT sawtooth generator solved as Example 16–5: the gate divider R4 = 100 kΩ, R5 = 47 kΩ from +12 V sets the firing level VG; the input divider R1 = 100 kΩ, R2 = 22 kΩ from −12 V sets the ramp current through R3 = 100 kΩ into C = 0.0022 μF.",
+"assume": [
+"As in the book's Example 16–5 the loading of the input divider by R3 is neglected; including it the frequency would be 2.94 kHz."
+],
+"ctx": null,
+"circuit": "Figure 16–63 (p.849): PUT sawtooth generator: an op-amp integrator with C = 0.0022 μF; the input R3 = 100 kΩ is fed from the divider R1 = 100 kΩ (to −12 V) and R2 = 22 kΩ (to ground); the PUT gate is set by R4 = 100 kΩ (from +12 V) and R5 = 47 kΩ (to ground)."
+},
+"floyd|problem|17|14": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "17",
+"number": "14",
+"modules": [
+"m08"
+],
+"pdf": 906,
+"printed": 888,
+"parts": [
+[
+"Shunt current: IQ1 = (VIN − VOUT)/R1 − IL − I(R3 + R4); with VOUT, R1 and the divider unchanged, ΔIQ1 = −ΔIL",
+"IL falls from VOUT/1 kΩ to VOUT/1.2 kΩ, so IQ1 INCREASES by VOUT·(1/1 kΩ − 1/1.2 kΩ) = VOUT/6 kΩ"
+],
+[
+"For VOUT = 17 V (the input voltage)",
+"ΔIQ1 = +2.83 mA"
+],
+[
+"For the regulated value VOUT = 5.1 V(1 + R3/R4) = 18.2 V",
+"ΔIQ1 = +3.03 mA"
+]
+],
+"how": "Shunt regulator: Q1 takes the current that the load does not (Floyd §17–3); the series current through R1 is fixed when VIN and VOUT are fixed. The change in shunt current equals the decrease of the load current, ≈ 3 mA.",
+"assume": [
+"The design output of this circuit is 5.1 V × (10 kΩ + 3.9 kΩ)/3.9 kΩ = 18.18 V, which is higher than the 17 V input in the statement (the regulator could not reach it); so the numbers above are given for both VOUT = 17 V and 18.2 V. The change is about 3 mA either way.",
+"R1 = 100 Ω is confirmed by the printed answers of Problems 13 (1 V/100 Ω = 10 mA) and 15 (25 V/100 Ω = 250 mA, 6.25 W)."
+],
+"ctx": null,
+"circuit": "Figure 17–48 (p.890): shunt voltage regulator: R1 = 100 Ω in series between VIN and VOUT; the shunt transistor Q1 (collector at VOUT, emitter to ground) is driven by an op-amp whose − input is the 5.1 V zener (fed by R2 = 12 kΩ from VIN) and whose + input is the divider R3 = 10 kΩ (from VOUT) and R4 = 3.9 kΩ (to ground); the load is the variable RL."
+},
+"floyd|problem|17|16": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "17",
+"number": "16",
+"modules": [
+"m08"
+],
+"pdf": 906,
+"printed": 888,
+"parts": [
+[
+"Period T = 1/f and on-time ton = T − toff",
+"T = 100.0 μs, ton = 40.0 μs"
+],
+[
+"Duty cycle D = ton/T",
+"40.0 %"
+],
+[
+"VOUT = D·VIN (average of the chopped input)",
+"4.8 V"
+]
+],
+"how": "Step-down switching regulator (Floyd §17–4): the inductor/capacitor filter averages the switched waveform, VOUT = (ton/T)·VIN = 0.4 × 12 V.",
+"assume": [
+"Ideal switch and diode (no drops). The feedback network of the figure, 2.7 V × (10 kΩ + 15 kΩ)/15 kΩ = 4.5 V, is the voltage the loop would regulate to by adjusting ton; with the fixed 60 μs off-time given here the output is 4.8 V."
+],
+"ctx": null,
+"circuit": "Figure 17–49 (p.891): basic step-down switching regulator: +12 V input, series MOSFET Q1 driven by a modulator (f0 = 10 kHz, toff = 60 μs), freewheeling diode D1, inductor L, output capacitor C, load RL; the feedback divider R2 = 10 kΩ and R3 = 15 kΩ is compared with the 2.7 V zener D2 (fed through R1 = 4.7 kΩ) to set the pulse width."
+},
+"floyd|problem|17|22": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "17",
+"number": "22",
+"modules": [
+"m08"
+],
+"pdf": 907,
+"printed": 889,
+"parts": [
+[
+"Minimum output (R2 = 0)",
+"−1.25 V"
+],
+[
+"Maximum output (R2 = 10 kΩ): −[1.25 V(1 + R2/R1) + IADJ·R2]",
+"−[27.85 V + 0.5 V] = −28.35 V"
+]
+],
+"how": "The LM337 is the negative counterpart of the LM317 (Floyd §17–5): the same formula applies to the magnitude, with the output negative. The input of −35 V is more negative than −28.4 V by enough margin.",
+"assume": [
+"The sign convention of IADJ for the LM337 is taken as for the LM317 (it adds to the drop in R2), as in Example 17–6."
+],
+"ctx": null,
+"circuit": "Figure 17–52 (p.893): LM337 negative adjustable regulator: input −35 V; R1 = 470 Ω between the output and the adjustment terminal; R2 = 10 kΩ potentiometer from the adjustment terminal to ground. |VOUT| = 1.25 V(1 + R2/R1) + IADJ·R2."
+},
+"floyd|problem|17|26": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "17",
+"number": "26",
+"modules": [
+"m08"
+],
+"pdf": 907,
+"printed": 889,
+"parts": [
+[
+"Load current IL = VOUT/RL",
+"1.2 A"
+],
+[
+"External current Iext = IL − Imax",
+"0.7 A"
+],
+[
+"Power in Qext: Pext = Iext(VIN − VOUT)",
+"2.1 W"
+],
+[
+"(Rext for Imax = 500 mA)",
+"1.4 Ω"
+]
+],
+"how": "Floyd Example 17–8 method: Qext carries the part of the load current that the regulator does not (1.2 A − 0.5 A) and drops VIN − VOUT = 15 V − 12 V = 3 V.",
+"assume": [
+"The input voltage 15 V is read from Figure 17–53 (the 7812 needs a few volts more than 12 V, which 15 V gives)."
+],
+"ctx": null,
+"circuit": "Figure 17–53 (p.894): fixed regulator (7809 in the figure; a 7812 in Problem 26) with an external pass transistor Qext and Rext as in Figure 17–34, input +15 V, output decoupling C2."
 },
 "floyd|problem|17|28": {
 "book": "floyd",
@@ -857,7 +2383,104 @@
 "assume": [
 "IADJ (≈ 50 μA) is neglected."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|problem|6|32": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "6",
+"number": "32",
+"modules": [
+"m04"
+],
+"pdf": 349,
+"printed": 331,
+"parts": [
+[
+"(a) Av1 (stage 1, loaded by the input resistance of stage 2)",
+"93.5"
+],
+[
+"(a) Av2 (stage 2 with RL = 18 kΩ: Rc = RC ‖ RL)",
+"255.0"
+],
+[
+"(b) overall voltage gain Av = Av1·Av2",
+"23840.0"
+],
+[
+"(c) in dB",
+"Av1 = 39.4 dB, Av2 = 48.1 dB, Av = 87.55 dB (= sum of the stage dB values)"
+],
+[
+"Extra: output for the 50 μV, 75 Ω source (the source resistance only divides the input)",
+"Vin = 47.6 μV, Vout = 1.13 V"
+]
+],
+"how": "DC: VB = VCC·R2/(R1 + R2) = 2.985 V, IE = (VB − 0.7 V)/RE = 2.285 mA, r′e = 25 mV/IE = 10.94 Ω. Rin(tot) of a stage = R1 ‖ R2 ‖ β·r′e = 1.482 kΩ; Av1 = (RC ‖ Rin(tot2))/r′e, Av2 = (RC ‖ RL)/r′e (Floyd §6–6).",
+"assume": [
+"Gains are voltage gains base-to-collector of the amplifier as in Problem 31; the 75 Ω source resistance does not change them (it only reduces the signal at the input, shown as an extra).",
+"Same figure as Problem 31, whose printed answers (Av1 = 93.6, Av2 = 303 unloaded) are reproduced within 1 % (r′e rounding).",
+"The 50 μV is taken as the same kind of value (rms or peak) as the output."
+],
+"ctx": null,
+"circuit": "Figure 6–57 (p.331): two identical capacitively coupled voltage-divider biased common-emitter stages, VCC = +15 V. Stage 1: R1 = 33 kΩ, R2 = 8.2 kΩ, RC = R3 = 3.3 kΩ, RE = R4 = 1.0 kΩ bypassed by C2. Stage 2 (after coupling capacitor C3): R5 = 33 kΩ, R6 = 8.2 kΩ, RC = R7 = 3.3 kΩ, RE = R8 = 1.0 kΩ bypassed by C4; output through C5. βac = βDC = 175."
+},
+"floyd|problem|7|16": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "7",
+"number": "16",
+"modules": [
+"m04"
+],
+"pdf": 397,
+"printed": 379,
+"parts": [
+[
+"(a) maximum load power, VCC = 15 V",
+"375.0 mW  (peak 7.5 V and 100.0 mA)"
+],
+[
+"(b) maximum load power, VCC = 24 V",
+"0.96 W  (peak 12.0 V and 160.0 mA)"
+]
+],
+"how": "Single-supply class AB: VCEQ = VCC/2 and the ideal maximum peak output voltage is VCEQ, so Pout(max) = (0.707·Ic)(0.707·VCEQ) = VCC²/(8·RL) (Floyd §7–2). Ideal: transistor saturation voltage neglected.",
+"assume": [
+"Ideal limit; the actual maximum is slightly smaller because VCE(sat) of the transistors is not zero.",
+"RL = 75 Ω and VCC = +15 V are read from Figure 7–46 and confirmed by the printed answer of Problem 15(b) (167 mW for a 10 V pp input)."
+],
+"ctx": null,
+"circuit": "Figure 7–46 (p.379): class AB push-pull emitter-follower output stage on a single supply VCC = +15 V. R1 = 1.0 kΩ from VCC to the base of the upper (npn) transistor Q1, diodes D1 and D2 in series between the two bases, R2 = 1.0 kΩ from the base of the lower (pnp) transistor Q2 to ground; Q1 collector at VCC, Q2 collector at ground, the emitters joined at the output, which drives RL = 75 Ω through the coupling capacitor C3. The source Vs is coupled to the two bases through C1 and C2."
+},
+"floyd|problem|7|18": {
+"book": "floyd",
+"kind": "problem",
+"chapter": "7",
+"number": "18",
+"modules": [
+"m04"
+],
+"pdf": 397,
+"printed": 379,
+"parts": [
+[
+"Input resistance Rin = β(r′e + RL) ‖ R1 ‖ R2",
+"484.6 Ω"
+],
+[
+"Actual rms signal at the amplifier input",
+"0.906 V"
+]
+],
+"how": "ICQ = 6.8 mA, so r′e = 25 mV/ICQ = 3.68 Ω. Eq. 7–8: Rin = β(r′e + RL) ‖ R1 ‖ R2 (the diode ac resistances are negligible, as in Example 7–6). The 50 Ω source and Rin form a voltage divider: Vin = Vs·Rin/(Rs + Rin).",
+"assume": [
+"r′e from the dc current 6.8 mA of Problem 15(a); ignoring r′e changes the result in the third digit."
+],
+"ctx": null,
+"circuit": "Figure 7–46 (p.379): class AB push-pull emitter-follower output stage on a single supply VCC = +15 V. R1 = 1.0 kΩ from VCC to the base of the upper (npn) transistor Q1, diodes D1 and D2 in series between the two bases, R2 = 1.0 kΩ from the base of the lower (pnp) transistor Q2 to ground; Q1 collector at VCC, Q2 collector at ground, the emitters joined at the output, which drives RL = 75 Ω through the coupling capacitor C3. The source Vs is coupled to the two bases through C1 and C2."
 },
 "floyd|related_problem|12|12–10": {
 "book": "floyd",
@@ -881,7 +2504,35 @@
 ],
 "how": "50 dB + 25 dB; −tan⁻¹(1) − tan⁻¹(1500/3000).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|12|12–12": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–12",
+"modules": [
+"m02"
+],
+"pdf": 654,
+"printed": 636,
+"parts": [
+[
+"(a) BW = fT/Acl",
+"29.6 kHz (Acl = 67.7)"
+],
+[
+"(b) BW = fT/|Acl|",
+"42.6 kHz (|Acl| = 47.0)"
+]
+],
+"how": "Same amplifiers as Example 12–12 (Figure 12–43) with fT = 2 MHz; BW = fT/|Acl|. The open-loop gain (90 dB) only needs to exceed the closed-loop gain.",
+"assume": [
+"Exact single-pole solution: 29.6 kHz and 41.7 kHz."
+],
+"ctx": null,
+"circuit": "Figure 12–43 (p.635): (a) noninverting amplifier with Rf = 220 kΩ and Ri = 3.3 kΩ; (b) inverting amplifier with Rf = 47 kΩ and Ri = 1.0 kΩ."
 },
 "floyd|related_problem|12|12–2": {
 "book": "floyd",
@@ -901,7 +2552,116 @@
 ],
 "how": "ΔVout = +7 V − (−8 V) = 15 V in 0.75 μs.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|12|12–3": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–3",
+"modules": [
+"m02"
+],
+"pdf": 634,
+"printed": 616,
+"parts": [
+[
+"Closed-loop gain Acl(NI) = 1 + Rf/Ri",
+"32.9"
+]
+],
+"how": "Noninverting amplifier: Acl(NI) = 1 + Rf/Ri with Rf = 150 kΩ and Ri = 4.7 kΩ (read from Figure 12–18); the example gives 22.3 for Rf = 100 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 12–18 (p.616): noninverting amplifier, Rf = 100 kΩ from the output to the inverting input, Ri = 4.7 kΩ from the inverting input to ground, signal on the + input."
+},
+"floyd|related_problem|12|12–4": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–4",
+"modules": [
+"m02"
+],
+"pdf": 637,
+"printed": 619,
+"parts": [
+[
+"Rf = |Acl(I)|·Ri",
+"67.5 kΩ (nearest standard value 68 kΩ)"
+]
+],
+"how": "Rf = 25 × 2.7 kΩ = 67.5 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 12–22 (p.618): inverting amplifier, Ri = 2.2 kΩ in series with the input to the − input, feedback resistor Rf (unknown) from the output to the − input, + input grounded."
+},
+"floyd|related_problem|12|12–5": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–5",
+"modules": [
+"m02"
+],
+"pdf": 640,
+"printed": 622,
+"parts": [
+[
+"Zin(NI) = (1 + Aol·B)·Zin",
+"20.5 GΩ"
+],
+[
+"Zout(NI) = Zout/(1 + Aol·B)",
+"14.0 mΩ"
+],
+[
+"(b) Acl(NI) = 1 + Rf/Ri",
+"23.0"
+]
+],
+"how": "Same circuit as Example 12–5 (Rf = 220 kΩ, Ri = 10 kΩ, so B = 0.0435) with the new op-amp values.",
+"assume": [
+"Exact nodal solution: Zin = 20.5 GΩ, Zout = 14.0 mΩ."
+],
+"ctx": null,
+"circuit": "Figure 12–25 (p.621): noninverting amplifier, Rf = 220 kΩ from the output to the inverting input, Ri = 10 kΩ from the inverting input to ground, signal on the + input."
+},
+"floyd|related_problem|12|12–7": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "12",
+"number": "12–7",
+"modules": [
+"m02"
+],
+"pdf": 642,
+"printed": 624,
+"parts": [
+[
+"Zin(I) ≈ Ri",
+"560.0 Ω"
+],
+[
+"Attenuation B = Ri/(Ri + Rf)",
+"0.00678"
+],
+[
+"Zout(I) = Zout/(1 + Aol·B)",
+"110.0 mΩ"
+],
+[
+"Acl(I) = −Rf/Ri",
+"-146.4"
+]
+],
+"how": "Same method as Example 12–7 with Ri = 560 Ω and Rf = 82 kΩ.",
+"assume": [
+"Exact nodal solution: Zin = 560.8 Ω, Zout = 110.0 mΩ."
+],
+"ctx": null,
+"circuit": "Figure 12–28 (p.623): inverting amplifier, Ri = 1.0 kΩ in series with the input to the − input, Rf = 100 kΩ from the output to the − input, + input grounded."
 },
 "floyd|related_problem|12|12–8": {
 "book": "floyd",
@@ -929,7 +2689,8 @@
 ],
 "how": "Aol = Aol(mid)/√(1 + (f/fc(ol))²).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|related_problem|12|12–9": {
 "book": "floyd",
@@ -951,7 +2712,268 @@
 "assume": [
 "fc = 100 Hz, as in Example 12–9."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|13|13–1": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–1",
+"modules": [
+"m03"
+],
+"pdf": 688,
+"printed": 670,
+"parts": [
+[
+"Reference voltage VREF = R2/(R1 + R2)·(+15 V)",
+"1.96 V"
+]
+],
+"how": "Same divider as Figure 13–3(b) with R1 = 22 kΩ and R2 = 3.3 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–3 (p.670): (a) a sine wave Vin of 5 V peak (−5 V to +5 V); (b) an op-amp comparator with Vin on the + input and the reference on the − input, taken from a divider between +15 V and ground: R1 = 8.2 kΩ (from +15 V) and R2 = 1.0 kΩ (to ground)."
+},
+"floyd|related_problem|13|13–10": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–10",
+"modules": [
+"m03"
+],
+"pdf": 708,
+"printed": 690,
+"parts": [
+[
+"C for 0 → −5 V in 100 μs with Ri = 10 kΩ, Vin = 2.5 V",
+"5.0 nF = 0.005 μF"
+],
+[
+"Alternative: keep C = 0.01 μF",
+"Ri = 5.0 kΩ"
+]
+],
+"how": "The slope must be 5 V/100 μs = 50 mV/μs = Vin/(Ri·C), so Ri·C = 2.5 V/(50 mV/μs) = 50 μs: halve the time constant (C = 5 nF with Ri = 10 kΩ, or Ri = 5 kΩ with C = 0.01 μF).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–35 (p.690): ideal integrator, Ri = 10 kΩ from the input to the − input, C = 0.01 μF from the output to the − input, + input grounded. Vin is a square wave between −2.5 V and +2.5 V; in the drawing each half-period is 200 μs."
+},
+"floyd|related_problem|13|13–11": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–11",
+"modules": [
+"m03"
+],
+"pdf": 711,
+"printed": 693,
+"parts": [
+[
+"Time constant Rf·C",
+"3.3 μs"
+],
+[
+"Slope of Vin",
+"±2.0 V/μs"
+],
+[
+"Vout during the rising ramp / falling ramp",
+"-6.6 V / +6.6 V (a square wave)"
+]
+],
+"how": "Differentiator: Vout = −Rf·C·(ΔVin/Δt) = −(3.3 μs)(2 V/μs) = −6.6 V on the rising ramp (the book gets −4.4 V for Rf = 2.2 kΩ).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–40 (p.692): ideal op-amp differentiator, C = 0.001 μF in series with the input to the − input, Rf = 2.2 kΩ from the output to the − input, + input grounded. Vin is a triangular wave between −5 V and +5 V, 5 μs per ramp (10 μs period)."
+},
+"floyd|related_problem|13|13–13": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–13",
+"modules": [
+"m03"
+],
+"pdf": 715,
+"printed": 697,
+"parts": [
+[
+"VOUT = −(Rf/R)(VIN2 + VIN3 + VIN4), R1 open",
+"-3.76 V"
+]
+],
+"how": "With R1 open the 1 V input is disconnected; the remaining inputs are amplified by −Rf/R = −47 kΩ/10 kΩ = −4.7.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–47 (p.697): summing amplifier, four inputs VIN1 = 1 V, VIN2 = 0.5 V, VIN3 = 0.2 V, VIN4 = 0.1 V, each through 10 kΩ (R1…R4) to the − input, feedback R5 = 10 kΩ in the book example (−1.8 V)."
+},
+"floyd|related_problem|13|13–2": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–2",
+"modules": [
+"m03"
+],
+"pdf": 691,
+"printed": 673,
+"parts": [
+[
+"VUTP",
+"3.83 V"
+],
+[
+"VLTP",
+"-3.83 V"
+],
+[
+"Hysteresis VHYS = VUTP − VLTP",
+"7.65 V"
+]
+],
+"how": "Same circuit as Figure 13–9 with R1 = 68 kΩ, R2 = 82 kΩ and ±7 V output levels.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–9 (p.673): comparator with positive feedback (Floyd Fig. 13–7 arrangement): Vin on the − input, R1 from the output to the + input, R2 from the + input to ground; in Example 13–2 R1 = R2 = 100 kΩ."
+},
+"floyd|related_problem|13|13–3": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–3",
+"modules": [
+"m03"
+],
+"pdf": 694,
+"printed": 676,
+"parts": [
+[
+"Voltage across the zener pair Vb = VZ + 0.7 V",
+"4.0 V"
+],
+[
+"Output levels Vout = Vb(R1 + R2)/R1",
+"±5.81 V"
+],
+[
+"VUTP = R2/(R1 + R2)·(+Vout) = Vb·R2/R1",
+"1.81 V"
+],
+[
+"VLTP",
+"-1.81 V"
+]
+],
+"how": "Example 13–3 method: the − input stands at Vout ∓ Vb and equals the + input voltage, so Vout − Vb = Vout·R2/(R1 + R2); hence Vout = Vb(R1 + R2)/R1 and VUTP = Vb·R2/R1. The same formulas give the book's ±7.94 V and ±2.54 V for 4.7 V zeners, 100 kΩ and 47 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–13 (p.675): comparator with hysteresis and zener bounding: Vin (a ±5 V sine) through Ri to the − input; D1 and D2, two zener diodes in series (4.7 V each in the book example), between the − input and the output; R1 = 100 kΩ from the output to the + input and R2 = 47 kΩ from the + input to ground. One zener is always forward biased (0.7 V) while the other is in breakdown."
+},
+"floyd|related_problem|13|13–5": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–5",
+"modules": [
+"m03"
+],
+"pdf": 698,
+"printed": 680,
+"parts": [
+[
+"VOUT = −(VIN1 + VIN2 + VIN3 + VIN4)",
+"-11.5 V"
+]
+],
+"how": "All input resistors and Rf are 10 kΩ, so the gain is −1 for every input and the output is the inverted sum: −(3 + 1 + 8 − 0.5) V.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–22 (p.680): inverting summing amplifier, three inputs VIN1 = +3 V, VIN2 = +1 V, VIN3 = +8 V, each through 10 kΩ to the − input, Rf = 10 kΩ, + input grounded. Book result −12 V."
+},
+"floyd|related_problem|13|13–6": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–6",
+"modules": [
+"m03"
+],
+"pdf": 699,
+"printed": 681,
+"parts": [
+[
+"Gain Rf/R",
+"8.182"
+],
+[
+"VOUT = −(Rf/R)(VIN1 + VIN2)",
+"-5.727 V"
+]
+],
+"how": "Figure 13–23 with VIN1 = 0.2 V and VIN2 = 0.5 V; R1 = R2 = 2.2 kΩ, Rf = 18 kΩ.",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–23 (p.681): summing amplifier with VIN1 = 0.2 V and VIN2 = 0.5 V through R1 = R2 = 1.0 kΩ to the − input, Rf = 10 kΩ, + input grounded (book result −7 V)."
+},
+"floyd|related_problem|13|13–8": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–8",
+"modules": [
+"m03"
+],
+"pdf": 701,
+"printed": 683,
+"parts": [
+[
+"Weights Rf/R1, Rf/R2, Rf/R3",
+"0.455, 0.122, 0.179"
+],
+[
+"VOUT = −(w1·VIN1 + w2·VIN2 + w3·VIN3)",
+"-3.036 V"
+]
+],
+"how": "Scaling adder: the weight of each input is Rf/Rk; the inputs of Example 13–8 are +3 V, +2 V and +8 V (Figure 13–25).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 13–25 (p.683): scaling adder, VIN1 = +3 V through R1, VIN2 = +2 V through R2, VIN3 = +8 V through R3, Rf = 10 kΩ; in Example 13–8 R1 = 47 kΩ, R2 = 100 kΩ, R3 = 10 kΩ (VOUT = −8.84 V)."
+},
+"floyd|related_problem|13|13–9": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "13",
+"number": "13–9",
+"modules": [
+"m03"
+],
+"pdf": 703,
+"printed": 685,
+"parts": [
+[
+"Do the other resistors have to change?",
+"Yes. Binary weighting needs R(D0) : R(D1) : R(D2) : R(D3) = 8 : 4 : 2 : 1, so with 400 kΩ for D0 the others must be 200 kΩ, 100 kΩ and 50 kΩ (all doubled)"
+],
+[
+"Effect of changing only D0 to 400 kΩ",
+"D0 would count 1/4 as much as D1 instead of 1/2: code 0001 → -0.125 V, 0010 → -0.5 V, 0011 → -0.625 V: the staircase is no longer uniform"
+],
+[
+"Output step after doubling all four input resistors (Rf = 10 kΩ)",
+"−0.125 V per count (0 to −1.875 V); Rf = 20 kΩ restores −0.25 V per count (0 to −3.75 V)"
+]
+],
+"how": "The weight of an input is Rf/Rk; for a binary DAC the weights must be in the ratio 1 : 2 : 4 : 8, so all the input resistors scale together (Floyd §13–2).",
+"assume": [
+"The statement does not say whether the original output step (−0.25 V) must be kept; both options are given."
+],
+"ctx": null,
+"circuit": "Figure 13–27 (p.684): four-digit binary-weighted DAC (scaling adder): input resistors D0 = 200 kΩ, D1 = 100 kΩ, D2 = 50 kΩ, D3 = 25 kΩ to the − input, Rf = 10 kΩ, + input grounded; a binary 1 is +5 V and a 0 is 0 V. The input waveforms D0…D3 form the straight binary count 0000 to 1111."
 },
 "floyd|related_problem|14|14–1": {
 "book": "floyd",
@@ -971,7 +2993,118 @@
 ],
 "how": "RG = 2R/(Acl − 1) with R = 39 kΩ.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|14|14–10": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–10",
+"modules": [
+"m05"
+],
+"pdf": 759,
+"printed": 741,
+"parts": [
+[
+"Vout = −Rf·IEBO·antilog(Vin/25 mV) with Rf = 100 kΩ",
+"-4.4 V"
+]
+],
+"how": "Vout is proportional to Rf: −3 V × 100 kΩ/68 kΩ.",
+"assume": [
+"Provided the op-amp output can reach this value (the supply voltages are not given)."
+],
+"ctx": null,
+"circuit": "Figures 14–34 and 14–33 (p.740): antilog amplifier: the input +175.1 mV is applied to the emitter of a grounded-base transistor whose collector goes to the − input; feedback resistor Rf = 68 kΩ (Example 14–10)."
+},
+"floyd|related_problem|14|14–2": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–2",
+"modules": [
+"m05"
+],
+"pdf": 741,
+"printed": 723,
+"parts": [
+[
+"RG = 50.5 kΩ/(Av − 1) for Av = 45",
+"1.15 kΩ"
+],
+[
+"Standard values",
+"1.1 kΩ → Av = 46.9; 1.2 kΩ → Av = 43.1 (either is “approximately 45”)"
+]
+],
+"how": "Av = 50.5 kΩ/RG + 1, so RG = 50.5 kΩ/44 = 1.15 kΩ (printed answer to the similar Problem 7: for a gain of 24 “change RG to 2.2 kΩ”, 50.5 kΩ/23 = 2.20 kΩ).",
+"assume": [],
+"ctx": null,
+"circuit": "Figures 14–7 and 14–6 (pp.722–723): AD622 instrumentation amplifier, supplies +15 V (pin 7) and −15 V (pin 4), inputs +IN (pin 3) and −IN (pin 2), gain resistor RG = 510 Ω between pins 1 and 8, REF pin 5, output pin 6. Gain: Av = 50.5 kΩ/RG + 1; Figure 14–6 is the graph of gain versus frequency of the AD622 for gains 1, 10, 100 and 1000."
+},
+"floyd|related_problem|14|14–4": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–4",
+"modules": [
+"m05"
+],
+"pdf": 746,
+"printed": 728,
+"parts": [
+[
+"Example 14–4 as drawn: Av1·Av2 = (Rf1/Ri1 + 1)(Rf2/Ri2 + 1)",
+"11.0 × 5.7 = 62.7"
+],
+[
+"A choice with total gain ≈ 100 (input stage unchanged, Av1 = 11)",
+"Rf2 = 82 kΩ with Ri2 = 10 kΩ: Av2 = 9.2, total = 101.2"
+],
+[
+"Another choice",
+"Ri1 = 3.3 kΩ (Av1 = 7.67) with the original output stage gives 43.7: too low, so change the output stage"
+]
+],
+"how": "The total gain is the product of the stage gains, Av(tot) = (Rf1/Ri1 + 1)(Rf2/Ri2 + 1) (Eq. 14–3, 14–4); for 100 with Av1 = 11 the output stage needs Av2 = 9.1, i.e. Rf2/Ri2 = 8.1.",
+"assume": [
+"A design exercise: many resistor pairs give “approximately 100”; one is given."
+],
+"ctx": null,
+"circuit": "Figure 14–15 (p.728): 3656KG isolation amplifier. Input stage: Rs = 10 kΩ (pin 7), Rf1 = 22 kΩ (pin 10 to 6), Ri1 = 2.2 kΩ from pin 6 to ground; output stage: Ri2 = 10 kΩ, Rf2 = 47 kΩ (pin 14 to 15), output at pin 15; supply +15 V."
+},
+"floyd|related_problem|14|14–6": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "14",
+"number": "14–6",
+"modules": [
+"m05"
+],
+"pdf": 751,
+"printed": 733,
+"parts": [
+[
+"IBIAS for ±9 V (book)",
+"503.0 μA → Av = 80.5"
+],
+[
+"IBIAS = (12 V + 12 V − 1.4 V)/33 kΩ for ±12 V",
+"685.0 μA"
+],
+[
+"New gm = K·IBIAS and Av = gm·RL",
+"11.0 mS, Av = 110.0: yes, the gain increases from 80.5 to about 110.0"
+]
+],
+"how": "The bias current, and so gm and the gain, depend on the supply voltages through IBIAS = (+V − (−V) − 1.4 V)/RBIAS (Floyd §14–3, Example 14–6).",
+"assume": [
+"K = 16 μS/μA is taken constant (the book's value for this current); at the larger bias current the graph of Figure 14–18 may differ slightly."
+],
+"ctx": null,
+"circuit": "Figure 14–23 (p.731): OTA (LM13700) amplifier, supplies +9 V and −9 V, RBIAS = 33 kΩ from +9 V to the bias input, R1 = 10 kΩ from Vin to the − input, R2 = 10 kΩ from the + input to ground, load RL = 10 kΩ. IBIAS = (+V − (−V) − 1.4 V)/RBIAS, gm = K·IBIAS with K ≈ 16 μS/μA (Figure 14–18), Av = gm·RL (book result 80.5)."
 },
 "floyd|related_problem|14|14–8": {
 "book": "floyd",
@@ -993,7 +3126,8 @@
 "assume": [
 "R1 = 100 kΩ and IR = 50 nA as in Example 14–8 (Figure 14–31)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|related_problem|14|14–9": {
 "book": "floyd",
@@ -1015,7 +3149,8 @@
 "assume": [
 "Vin = 3 V and IEBO = 40 nA as in Example 14–9."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|related_problem|15|15–2": {
 "book": "floyd",
@@ -1035,7 +3170,329 @@
 ],
 "how": "Damping factor of the two-pole Sallen-Key filter: DF = 2 − R1/R2 (Floyd §15–2).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|15|15–3": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–3",
+"modules": [
+"m06"
+],
+"pdf": 792,
+"printed": 774,
+"parts": [
+[
+"Critical frequency fc = 1/(2πRC)",
+"7.23 kHz"
+],
+[
+"R1 = 0.586·R2 (Butterworth)",
+"1.29 kΩ"
+]
+],
+"how": "Equal-value Sallen-Key: fc = 1/(2πRC) with RA = RB = 2.2 kΩ and CA = CB = 0.01 μF; R1/R2 = 0.586 for DF = 1.414 (Example 15–3 method).",
+"assume": [
+"The exact response with R1 = 0.586·R2 is 3 dB down at 7.235 kHz."
+],
+"ctx": null,
+"circuit": "Figure 15–11 (p.774): Sallen-Key low-pass filter: input through RA to a node, RB from that node to the + input, CA from the node to the output (feedback), CB from the + input to ground; gain-setting resistors R1 (output to − input) and R2 (− input to ground). In Example 15–3 RA = RB = R2 = 1.0 kΩ and CA = CB = 0.022 μF (fc = 7.23 kHz, R1 = 586 Ω)."
+},
+"floyd|related_problem|15|15–4": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–4",
+"modules": [
+"m06"
+],
+"pdf": 793,
+"printed": 775,
+"parts": [
+[
+"C = 1/(2πR·fc) for every capacitor",
+"234.0 nF"
+],
+[
+"R2 = R4",
+"680 Ω (equal to the filter resistors)"
+],
+[
+"R1 = 0.152·R2 (stage 1)",
+"103.0 Ω (nearest standard 100 Ω or 110 Ω)"
+],
+[
+"R3 = 1.235·R4 (stage 2)",
+"840.0 Ω (nearest standard 820 Ω or 840 Ω → 820 Ω)"
+]
+],
+"how": "Same method as Example 15–4 with R = 680 Ω and fc = 1 kHz.",
+"assume": [
+"The exact response with the computed (not rounded) values is 3 dB down at 1.0 kHz."
+],
+"ctx": null,
+"circuit": "Figure 15–12(b) (p.775): four-pole Sallen-Key low-pass filter made of two cascaded two-pole stages: stage 1 with RA1 = RB1 (RC low-pass circuit), CA1 = CB1 and feedback resistors R1 and R2; stage 2 with RA2 = RB2, CA2 = CB2 and feedback resistors R3 and R4."
+},
+"floyd|related_problem|15|15–5": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–5",
+"modules": [
+"m06"
+],
+"pdf": 796,
+"printed": 778,
+"parts": [
+[
+"RA = RB = R2",
+"10 kΩ"
+],
+[
+"CA = CB = 1/(2πR·fc)",
+"53.1 nF (standard value 0.056 μF gives fc = 284.0 Hz; 0.047 μF gives 339.0 Hz)"
+],
+[
+"R1 = 0.586·R2",
+"5.86 kΩ (standard 5.6 kΩ)"
+]
+],
+"how": "Same method as Example 15–5 with R = 10 kΩ and fc = 300 Hz.",
+"assume": [
+"The exact response with the computed values is 3 dB down at 300.0 Hz."
+],
+"ctx": null,
+"circuit": "Figure 15–15 (p.777): Sallen-Key high-pass filter: input through CA to a node, CB from that node to the + input, RA from the node to the output (feedback), RB from the + input to ground; gain-setting resistors R1 (output to − input) and R2 (− input to ground)."
+},
+"floyd|related_problem|15|15–6": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–6",
+"modules": [
+"m06"
+],
+"pdf": 800,
+"printed": 782,
+"parts": [
+[
+"Centre frequency f0",
+"544.0 Hz"
+],
+[
+"Maximum gain A0 = R2/(2R1)",
+"2.43"
+],
+[
+"Q = π·f0·C·R2",
+"5.64"
+],
+[
+"Bandwidth BW = f0/Q",
+"96.5 Hz"
+]
+],
+"how": "Multiple-feedback band-pass (Floyd §15–5): f0 = (1/2πC)·√((R1 + R3)/(R1R2R3)), A0 = R2/2R1, Q = π·f0·C·R2, BW = f0/Q; Example 15–6 (R2 = 180 kΩ) gives 736 Hz, 1.32 and 177 Hz.",
+"assume": [
+"The exact transfer function of the circuit gives a peak at 544.0 Hz, gain 2.43 and a −3 dB bandwidth of 96.5 Hz."
+],
+"ctx": null,
+"circuit": "Figure 15–19 (p.781): multiple-feedback band-pass filter: input through R1 = 68 kΩ to a node; from that node C1 = 0.01 μF to the output, R3 = 2.7 kΩ to ground and C2 = 0.01 μF to the − input; R2 = 180 kΩ from the output to the − input; + input grounded."
+},
+"floyd|related_problem|15|15–7": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–7",
+"modules": [
+"m06"
+],
+"pdf": 802,
+"printed": 784,
+"parts": [
+[
+"f0 = 1/(2π·R4·C1) = 1/(2π·R7·C2)",
+"21.9 kHz"
+],
+[
+"Q = (1/3)(R5/R6 + 1)",
+"101.0"
+],
+[
+"BW = f0/Q",
+"216.0 Hz"
+]
+],
+"how": "State-variable band-pass (Floyd §15–5): f0 = fc of the integrators, Q = (1/3)(R5/R6 + 1), BW = f0/Q. Example 15–7 (R4 = R6 = R7 = 1.0 kΩ) gives 7.23 kHz, 33.7 and 215 Hz.",
+"assume": [
+"Exact solution of the three-op-amp circuit: peak at 21.92 kHz, Q = 101.0."
+],
+"ctx": null,
+"circuit": "Figure 15–22 (p.783): state-variable filter with three op-amps: R1 = R2 = R3 = 10 kΩ around the first (summing) op-amp, two integrators with R4 = R7 = 1.0 kΩ and C1 = C2 = 0.022 μF, band-pass output taken from the second op-amp; Q-setting resistors R5 = 100 kΩ (from the BP output) and R6 = 1.0 kΩ (to ground) feed the + input of the first op-amp."
+},
+"floyd|related_problem|15|15–8": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "15",
+"number": "15–8",
+"modules": [
+"m06"
+],
+"pdf": 804,
+"printed": 786,
+"parts": [
+[
+"New integrator resistors R4 = R7 = 1/(2π·f0·C)",
+"6.03 kΩ (standard 6.2 kΩ gives 116.7 Hz; 6.0 kΩ gives 120.6 Hz)"
+],
+[
+"Or keep R4 = R7 = 12 kΩ and change C1 = C2",
+"111.0 nF (0.11 μF)"
+]
+],
+"how": "f0 = 1/(2πRC) of the integrators is inversely proportional to R·C: doubling the centre frequency halves R4 = R7 (both, so the integrators stay matched) or halves C1 = C2; R5/R6 (the Q) need not change.",
+"assume": [
+"Exact solution of the circuit with R4 = R7 = 6.03 kΩ: notch at 120.0 Hz."
+],
+"ctx": null,
+"circuit": "Figure 15–26 (p.786): band-stop (notch) filter made from a state-variable filter and a summing amplifier: R1 = R2 = R3 = 10 kΩ, integrators R4 = R7 = 12 kΩ with C1 = C2 = 0.22 μF, Q-setting resistors R5 (from the BP output) and R6 (to ground); the high-pass and low-pass outputs are added by R8 = R9 = R10 = 10 kΩ."
+},
+"floyd|related_problem|16|16–2": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "16",
+"number": "16–2",
+"modules": [
+"m07"
+],
+"pdf": 834,
+"printed": 816,
+"parts": [
+[
+"(a) Rf = 29·R3",
+"238.0 kΩ"
+],
+[
+"(b) fr = 1/(2π√6·R·C)",
+"7.92 kHz"
+]
+],
+"how": "Phase-shift oscillator: the three-section network attenuates by 29 at fr = 1/(2π√6·RC) with a phase shift of 180°, so the inverting amplifier needs Acl = 29: Rf = 29·R3 (Floyd §16–2).",
+"assume": [
+"Exact solution of the unloaded three-section network: 180° at 7.924 kHz with attenuation 29.0."
+],
+"ctx": null,
+"circuit": "Figure 16–14 (p.816): three-section RC phase-shift oscillator: an inverting op-amp with feedback resistor Rf; the feedback network is three series capacitors C1 = C2 = C3 = 0.001 μF with shunt resistors R1 = R2 = R3 = 10 kΩ in Example 16–2; the loop gain needs Acl = 29, B = R3/Rf = 1/29."
+},
+"floyd|related_problem|16|16–3": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "16",
+"number": "16–3",
+"modules": [
+"m07"
+],
+"pdf": 839,
+"printed": 821,
+"parts": [
+[
+"CT = C1·C2/(C1 + C2) and f0 = 1/(2π√(L·CT))",
+"9.09 nF, 7.465 kHz"
+],
+[
+"Frequency for Q = 4: fr = f0·√(Q²/(Q² + 1))",
+"7.242 kHz"
+]
+],
+"how": "The resonant frequency of a loaded tank is fr = f0·√(Q²/(Q² + 1)) (Floyd §16–4, Example 16–3 uses it for Q = 8: 7.40 kHz): for Q = 4, fr = 7.46 kHz × 0.9701.",
+"assume": [
+"An exact admittance calculation of a coil with Q = 4 gives 7.228 kHz (the textbook factor is an approximation)."
+],
+"ctx": null,
+"circuit": "Figure 16–21 (p.821): Colpitts oscillator, +12 V: bias resistors R1, R2, collector resistor R3, emitter resistor R4, coupling/bypass capacitors C3, C4, C5; the tank is L = 50 mH with C1 = 0.1 μF and C2 = 0.01 μF in series (the capacitive divider gives the feedback)."
+},
+"floyd|related_problem|16|16–4": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "16",
+"number": "16–4",
+"modules": [
+"m07"
+],
+"pdf": 845,
+"printed": 827,
+"parts": [
+[
+"Trigger points VUTP = +Vmax·R3/R2, VLTP = −Vmax·R3/R2",
+"±3.03 V"
+],
+[
+"Peak-to-peak amplitude of the triangular wave",
+"6.06 V"
+]
+],
+"how": "The comparator trigger points set the triangle: VUTP = +Vmax(R3/R2), VLTP = −Vmax(R3/R2) (Floyd §16–5): ±10 V × 10 kΩ/33 kΩ. The frequency (8.25 kHz) does not depend on Vmax.",
+"assume": [
+"A time-stepped simulation of the integrator and comparator gives a peak of 3.03 V and 8.24 kHz."
+],
+"ctx": null,
+"circuit": "Figure 16–30 (p.827): triangular-wave oscillator with two op-amps: an integrator with R1 = 10 kΩ and C = 0.01 μF (input from the comparator output) and a comparator with hysteresis whose positive-feedback resistors are R2 = 33 kΩ and R3 = 10 kΩ; the comparator output swings between +Vmax and −Vmax. Book formulas: VUTP = +Vmax·(R3/R2), fr = (1/(4R1C))(R2/R3)."
+},
+"floyd|related_problem|16|16–5": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "16",
+"number": "16–5",
+"modules": [
+"m07"
+],
+"pdf": 847,
+"printed": 829,
+"parts": [
+[
+"f = (|VIN|/(Ri·C))(1/(Vp − VF)) with Ri = 56 kΩ",
+"1.124 kHz"
+],
+[
+"Ratio to Example 16–5",
+"the slope is inversely proportional to Ri: 628 Hz × 100 kΩ/56 kΩ"
+]
+],
+"how": "Same method as Example 16–5: VIN = −1.92 V, Vp − VF = 6.5 V, now with Ri = 56 kΩ.",
+"assume": [
+"Including the loading of the divider by Ri (not done in the book) the frequency would be about 973.0 Hz."
+],
+"ctx": null,
+"circuit": "Figure 16–32 (p.828): sawtooth generator with a PUT: an op-amp integrator whose input resistor Ri = 100 kΩ is fed from a divider between −15 V: R1 = 68 kΩ (to −15 V) and R2 = 10 kΩ (to ground); feedback capacitor C = 0.0047 μF; the PUT (anode at the − input, cathode at the output through the gate network) has its gate at the divider R3 = 10 kΩ (from +15 V) and R4 = 10 kΩ (to ground), so VG = 7.5 V."
+},
+"floyd|related_problem|16|16–6": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "16",
+"number": "16–6",
+"modules": [
+"m07"
+],
+"pdf": 852,
+"printed": 834,
+"parts": [
+[
+"Duty cycle with the diode across R2: tH = 0.694·R1·C, tL = 0.694·R2·C",
+"31.9 %"
+],
+[
+"Frequency 1/(0.694(R1 + R2)Cext)",
+"9.49 kHz"
+]
+],
+"how": "With D1 across R2, Cext charges through R1 only and discharges through R2: duty cycle = R1/(R1 + R2) (Floyd §16–6).",
+"assume": [
+"The diode forward drop (≈ 0.7 V) is neglected, as in the book; a time-stepped simulation confirms the duty cycle."
+],
+"ctx": null,
+"circuit": "Figure 16–41 (p.834): astable 555 timer on +5.5 V: R1 = 2.2 kΩ (VCC to the discharge pin), R2 = 4.7 kΩ (discharge pin to the threshold/trigger pins), Cext = 0.022 μF to ground, 0.01 μF on the control pin. Figure 16–40: a diode D1 across R2 makes Cext charge through R1 only."
 },
 "floyd|related_problem|17|17–1": {
 "book": "floyd",
@@ -1055,7 +3512,8 @@
 ],
 "how": "Eq. 17–2 with ΔVOUT = 0.42 V, VOUT = 20 V, ΔVIN = 3.5 V.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|related_problem|17|17–2": {
 "book": "floyd",
@@ -1079,7 +3537,52 @@
 ],
 "how": "Eq. 17–3 with VNL = 18 V, VFL = 17.8 V, ΔIL = 50 mA.",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|17|17–3": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–3",
+"modules": [
+"m08"
+],
+"pdf": 876,
+"printed": 858,
+"parts": [
+[
+"VOUT = (1 + R2/R3)·VREF",
+"7.333 V"
+]
+],
+"how": "Series regulator: the op-amp keeps the voltage at the divider R2/R3 equal to the zener voltage, so VOUT = (1 + R2/R3)·VREF = (1 + 22/18) × 3.3 V (Floyd Eq. 17–3, Example 17–3 gives 10.2 V for 5.1 V and equal resistors).",
+"assume": [
+"R1 only sets the zener current (6.5 mA), which is enough to keep the zener in breakdown."
+],
+"ctx": null,
+"circuit": "Figure 17–7 (p.857): series voltage regulator with an op-amp: the 5.1 V zener D1 (fed from VIN = +15 V through R1 = 1.0 kΩ) is the reference VREF on the + input; the pass transistor Q1 is driven by the op-amp; the feedback divider R2 = 10 kΩ (output to − input) and R3 = 10 kΩ (− input to ground). VOUT = (1 + R2/R3)·VREF (book result 10.2 V)."
+},
+"floyd|related_problem|17|17–5": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "17",
+"number": "17–5",
+"modules": [
+"m08"
+],
+"pdf": 881,
+"printed": 863,
+"parts": [
+[
+"Power in R1: PR1 = VIN²/R1 (output shorted)",
+"17.5 W → use a resistor rated at least 20 W"
+]
+],
+"how": "Worst case again VOUT = 0: PR1 = 24²/33 Ω = 17.5 W; the next standard rating is 20 W (the printed answer to Problem 15, same method: 6.25 W for 25 V across 100 Ω).",
+"assume": [],
+"ctx": null,
+"circuit": "Figure 17–15 (p.862): series regulator with current limiting: R1 = 22 Ω in series with the input (VIN to the output), the pass transistor Q1 with R2 = 1.0 kΩ, R3 = 10 kΩ and R4 = 10 kΩ; the worst case for R1 is a short-circuited output (VOUT = 0), when all of VIN appears across R1."
 },
 "floyd|related_problem|17|17–6": {
 "book": "floyd",
@@ -1101,7 +3604,8 @@
 "assume": [
 "R1 = 220 Ω (Figure 17–30), IADJ = 50 μA as in Example 17–6."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|related_problem|17|17–7": {
 "book": "floyd",
@@ -1123,7 +3627,8 @@
 "assume": [
 "VBE(on) = 0.7 V."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "floyd|related_problem|17|17–9": {
 "book": "floyd",
@@ -1145,7 +3650,35 @@
 "assume": [
 "IG neglected."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
+},
+"floyd|related_problem|6|6–6": {
+"book": "floyd",
+"kind": "related_problem",
+"chapter": "6",
+"number": "6–6",
+"modules": [
+"m04"
+],
+"pdf": 304,
+"printed": 286,
+"parts": [
+[
+"ac collector resistance Rc = RC ‖ RL",
+"1.525 kΩ"
+],
+[
+"Voltage gain Av = Rc/r′e",
+"82.5"
+]
+],
+"how": "Rc = 1.8 kΩ ‖ 10 kΩ; Av = Rc/r′e with the given r′e = 18.5 Ω (the emitter is bypassed). The changed R1, R2, RE only change the dc bias, which the statement already gives as r′e.",
+"assume": [
+"R1, R2 and RE affect only r′e, which is given."
+],
+"ctx": null,
+"circuit": "Figure 6–16 (p.284): voltage-divider biased 2N3904 common-emitter amplifier. VCC = +12 V, R1 = 22 kΩ (VCC to base), R2 = 6.8 kΩ (base to ground), RC = 1.0 kΩ, RE = 560 Ω with the bypass capacitor C2 across it; input coupling C1, output coupling C3."
 },
 "floyd|related_problem|7|7–3": {
 "book": "floyd",
@@ -1171,7 +3704,8 @@
 "assume": [
 "RL = 150 Ω from Figure 7–15 (Example 7–3)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|10|10.10": {
 "book": "jaeger5",
@@ -1195,7 +3729,8 @@
 ],
 "how": "Substitute s = jω and take magnitude and phase of the complex number.",
 "assume": [],
-"ctx": "Transfer function of the example: Av(s) = 50(s² + 4)/(s² + 2s + 2)."
+"ctx": "Transfer function of the example: Av(s) = 50(s² + 4)/(s² + 2s + 2).",
+"circuit": null
 },
 "jaeger5|example|10|10.11": {
 "book": "jaeger5",
@@ -1229,7 +3764,8 @@
 "assume": [
 "Standard values are the nearest of the Appendix A tables, as in the book."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|10|10.3": {
 "book": "jaeger5",
@@ -1253,7 +3789,8 @@
 ],
 "how": "Voltage gain of the differential amplifier model including the source resistance RI and the load RL (Jaeger Eq. 10.33).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|10|10.4": {
 "book": "jaeger5",
@@ -1284,7 +3821,8 @@
 "assume": [
 "Ideal op amp."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|11|11.1": {
 "book": "jaeger5",
@@ -1318,7 +3856,8 @@
 "assume": [
 "The op amp is ideal except for its finite open-loop gain A = 10,000 (80 dB)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|11|11.13": {
 "book": "jaeger5",
@@ -1344,7 +3883,8 @@
 "assume": [
 "CMRR = 60 dB = 1000."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|11|11.15": {
 "book": "jaeger5",
@@ -1376,7 +3916,8 @@
 ],
 "how": "Single-pole op amp: Av(s) = Ao·ωB/(s + ωB) with ωB = 2π·fT/Ao; closed loop: pole moves to ωB(1 + Ao·β).",
 "assume": [],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|11|11.16": {
 "book": "jaeger5",
@@ -1410,7 +3951,8 @@
 "assume": [
 "Closed-loop gain 40 dB means |Av(0)| = 100."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|11|11.2": {
 "book": "jaeger5",
@@ -1437,7 +3979,8 @@
 "The op amp is ideal except for finite A and nonzero Ro.",
 "The book prints 0.198 Ω after “0.199 Ω ‖ 40 kΩ”; 50/251 = 0.1992 and the 40 kΩ in parallel changes nothing visible, so 0.199 Ω is the value (the book's last digit is a small arithmetic slip)."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 },
 "jaeger5|example|11|11.3": {
 "book": "jaeger5",
@@ -1463,10 +4006,25 @@
 "assume": [
 "The book rounds A to 7.03 × 10⁴ using 56.2; the exact value is 7.02 × 10⁴."
 ],
-"ctx": null
+"ctx": null,
+"circuit": null
 }
 },
 "skipped": {
+"floyd|checkup|14|14–5.3": {
+"reason": "needs the gain read from a Multisim oscilloscope screenshot (Figure 14–44b: IA output on 50 mV/div) and the source in the schematic is given as “100 µV” without saying rms or peak, so the gain cannot be fixed to better than about ±25 %",
+"modules": [
+"m05"
+],
+"pdf": 765
+},
+"floyd|problem|12|54": {
+"reason": "depends on the student's own design of Problem 53 (its answer is a circuit figure, Figure ANS–33) and on reading the output-swing-versus-load curve of Figure 12–79",
+"modules": [
+"m02"
+],
+"pdf": 683
+},
 "floyd|checkup|12|12–9.3": {
 "reason": "depends on the op-amp stage of the application section (its gain is in a figure not repeated in the question)",
 "modules": [

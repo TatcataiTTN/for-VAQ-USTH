@@ -359,22 +359,22 @@
   }
  },
  "m09": {
-  "n": 93,
+  "n": 132,
   "n_goc": 0,
-  "n_bo_sung": 93,
+  "n_bo_sung": 132,
   "essays": 13,
   "essays_goc": 13,
   "audit": {
    "mcq/4opt": {
-    "n": 72,
+    "n": 111,
     "pos": [
-     18,
-     18,
-     18,
-     18
+     28,
+     28,
+     28,
+     27
     ],
-    "chi2": 0.0,
-    "correct_is_longest": 0.1
+    "chi2": 0.03,
+    "correct_is_longest": 0.303
    },
    "tf/2opt": {
     "n": 21,

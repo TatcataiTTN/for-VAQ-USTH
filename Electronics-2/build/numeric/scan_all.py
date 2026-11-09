@@ -57,6 +57,7 @@ for e in raw:
     if ck in CALC['solved'] and e.get('ans_kind') != 'printed':
         sv = CALC['solved'][ck]; e['answer'] = parts_text(sv['parts']); e['ans_kind'] = 'computed'; e['how'] = sv['how']; e['assume'] = sv['assume']; e['parts'] = sv['parts']; e['calc'] = 1
         if sv.get('ctx'): e['ctx'] = sv['ctx']
+        if sv.get('circuit'): e['circuit'] = sv['circuit']             # the circuit of a book figure, described in words with its values (the figure itself is not republished)
         e['modules'] = sorted(set(e['modules']) | set(sv['modules']))
     elif ck in CALC['skipped']: e['skip'] = CALC['skipped'][ck]['reason']
     key = (b, e['chapter'] if b == 'floyd' else 0, e['kind'], e['number'])

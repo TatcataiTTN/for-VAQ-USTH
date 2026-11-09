@@ -1,10 +1,18 @@
-{"vi":["Đúng/Sai câu 2 («load regulation phụ thuộc công suất tiêu tán ở tải») bị loại: diễn đạt không rõ (load regulation phụ thuộc dòng tải, không trực tiếp công suất), sách không in đáp án.",
-"Self-Test câu 10 (LM317) có 7 phương án trong sách; ở đây giữ 6 phương án (bỏ phương án nhiễu «đáp án (b) và (d)») vì bộ ghép hỗ trợ tối đa 6 lựa chọn; đáp án đúng vẫn là «(d) và (e)».",
-"Self-Test câu 6 chọn «bảo vệ bộ ổn áp»: giới hạn dòng bảo vệ bộ ổn áp/transistor pass khỏi dòng quá lớn.",
-"Bài 16 chỉ tính VOUT lý tưởng (= chu kỳ × VIN, bỏ qua sụt áp công tắc và điốt); sách không in đáp án cho bài chẵn.",
-"Các bài 5–6, 12, 14, 18–19, 22, 24, 26, 28–30 phụ thuộc hình hoặc thiếu dữ liệu nên chưa đưa vào."],
-"en":["True/False Q2 (“load regulation depends on the power dissipated in the load”) was removed: the wording is unclear (load regulation depends on load current, not directly on power); no printed answer.",
-"Self-Test Q10 (LM317) has 7 options in the book; 6 are kept here (the distractor “answers (b) and (d) only” was dropped) because the bank supports at most 6 choices; the correct answer is still “(d) and (e)”.",
-"Self-Test Q6 chooses “protection of the regulator”: current limiting protects the regulator / pass transistor from excessive current.",
-"Problem 16 gives only the ideal VOUT (= duty × VIN, ignoring switch and diode drops); the book prints no answers for even problems.",
-"Problems 5–6, 12, 14, 18–19, 22, 24, 26, 28–30 depend on figures or lack data and are not included."]}
+{
+ "vi": [
+  "Đúng/Sai câu 2 («load regulation phụ thuộc công suất tiêu tán ở tải») bị loại: diễn đạt không rõ (load regulation phụ thuộc dòng tải, không trực tiếp công suất), sách không in đáp án.",
+  "Self-Test câu 10 (LM317) có 7 phương án trong sách; ở đây giữ 6 phương án (bỏ phương án nhiễu «đáp án (b) và (d)») vì bộ ghép hỗ trợ tối đa 6 lựa chọn; đáp án đúng vẫn là «(d) và (e)».",
+  "Self-Test câu 6 chọn «bảo vệ bộ ổn áp»: giới hạn dòng bảo vệ bộ ổn áp/transistor pass khỏi dòng quá lớn.",
+  "Bài 16 chỉ tính VOUT lý tưởng (= chu kỳ × VIN, bỏ qua sụt áp công tắc và điốt); sách không in đáp án cho bài chẵn.",
+  "Các bài 5–6, 12, 14, 18–19, 22, 24, 26, 28–30 phụ thuộc hình hoặc thiếu dữ liệu nên chưa đưa vào.",
+  "Problem 14 (Hình 17–48): điện áp ra thiết kế của mạch là 5,1 V × (10 kΩ + 3,9 kΩ)/3,9 kΩ = 18,2 V, cao hơn điện áp vào 17 V trong đề; bài được giải cho cả VOUT = 17 V và 18,2 V (độ thay đổi dòng shunt ≈ 3 mA). Problem 16 (Hình 17–49): với toff = 60 μs thì VOUT = 4,8 V, còn mạch hồi tiếp (zener 2,7 V, 10 kΩ/15 kΩ) sẽ điều chỉnh về 4,5 V."
+ ],
+ "en": [
+  "True/False Q2 (“load regulation depends on the power dissipated in the load”) was removed: the wording is unclear (load regulation depends on load current, not directly on power); no printed answer.",
+  "Self-Test Q10 (LM317) has 7 options in the book; 6 are kept here (the distractor “answers (b) and (d) only” was dropped) because the bank supports at most 6 choices; the correct answer is still “(d) and (e)”.",
+  "Self-Test Q6 chooses “protection of the regulator”: current limiting protects the regulator / pass transistor from excessive current.",
+  "Problem 16 gives only the ideal VOUT (= duty × VIN, ignoring switch and diode drops); the book prints no answers for even problems.",
+  "Problems 5–6, 12, 14, 18–19, 22, 24, 26, 28–30 depend on figures or lack data and are not included.",
+  "Problem 14 (Figure 17–48): the design output of the circuit is 5.1 V × (10 kΩ + 3.9 kΩ)/3.9 kΩ = 18.2 V, higher than the 17 V input in the statement; the problem is solved for both VOUT = 17 V and 18.2 V (shunt-current change ≈ 3 mA). Problem 16 (Figure 17–49): with toff = 60 μs VOUT = 4.8 V, while the feedback network (2.7 V zener, 10 kΩ/15 kΩ) would regulate to 4.5 V."
+ ]
+}

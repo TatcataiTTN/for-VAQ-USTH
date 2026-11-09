@@ -1,0 +1,158 @@
+{
+"How many times larger is the static voltage produced by walking on a carpet at 20 % relative humidity (up to 35,000 V) than at 65 % relative humidity (1,500 V)?": {
+"page": 93,
+"rx": "35\\s*000\\s+volts\\s+of\\s+static\\s+electricity\\s+at\\s+20%"
+},
+"A technician has walked across a carpet at 65 % humidity and carries about 1,500 V. Using the damage ranges in the text (bipolar 380–7,000 V, CMOS 250–3,000 V, EPROM from 100 V), which parts can he damage by touching them?": {
+"page": 93,
+"rx": "bi-polar\\s+transistors\\s+are\\s+susceptible\\s+to\\s+ESD\\s+between\\s+380"
+},
+"A person carries only 200 V. Which of these parts can still be damaged (lowest damaging voltage: bipolar 380 V, CMOS 250 V, EPROM 100 V)?": {
+"page": 93,
+"rx": "EPROMs,\\s+used\\s+in\\s+computer\\s+memories,\\s+are\\s+susceptible"
+},
+"A device is damaged only by discharges of about 2,500 V or more. In MIL-STD-1686C it belongs to": {
+"page": 93,
+"rx": "Class\\s+II\\s+for\\s+1\\s*001\\s+to\\s+4\\s*000"
+},
+"Most electronic components are in MIL-STD-1686C Class I. This means that": {
+"page": 93,
+"rx": "Most\\s+electronic\\s+components\\s+are\\s+in\\s+Class\\s+I"
+},
+"According to the definition, an electrostatic charge can pass from one body to another by": {
+"page": 93,
+"rx": "through\\s+induction\\s+from\\s+an\\s+electromagnetic\\s+field,\\s+or\\s+through\\s+conduction\\s+via\\s+physical\\s+contact"
+},
+"A charged component is suddenly grounded. What happens?": {
+"page": 93,
+"rx": "component\\s+will\\s+be\\s+damaged\\s+due\\s+to\\s+excessive\\s+heat"
+},
+"In the comb-and-paper example the comb is charged negative. The side of the paper closest to the comb becomes": {
+"page": 93,
+"rx": "side\\s+of\\s+the\\s+paper\\s+closest\\s+to\\s+the\\s+comb\\s+will\\s+end\\s+up\\s+being\\s+slightly\\s+positive"
+},
+"Why do newer components need stronger ESD precautions than older ones?": {
+"page": 94,
+"rx": "physical\\s+geometries\\s+are\\s+shrinking"
+},
+"Which action increases the static charge on a technician the most?": {
+"page": 93,
+"rx": "The\\s+faster\\s+the\\s+person\\s+walks,\\s+the\\s+higher\\s+the\\s+charge"
+},
+"Plastics produce charges of 5,000 to 10,000 V. Compared with the lowest damaging voltage of a CMOS device (250 V), such a charge is at least": {
+"page": 93,
+"rx": "Plastics\\s+used\\s+in\\s+most\\s+products\\s+will\\s+produce\\s+charges\\s+from\\s+5\\s*000\\s+to\\s+10\\s*000"
+},
+"What does the 1 MΩ resistor in the grounding path of a mat or wrist strap do if the ground becomes electrically live?": {
+"page": 94,
+"rx": "The\\s+resistor\\s+is\\s+required\\s+to\\s+protect\\s+personnel"
+},
+"A technician uses a heel strap instead of conductive shoes. For it to work": {
+"page": 94,
+"rx": "grounding\\s+cord\\s+must\\s+run\\s+into\\s+the\\s+sock"
+},
+"A static-dissipative mat must have a surface resistivity of 10⁵ to 10¹² ohms per square inch. Which value qualifies?": {
+"page": 94,
+"rx": "surface\\s+resistivity\\s+of\\s+10\\s*5\\s+to\\s+10\\s*12"
+},
+"Besides giving a surface free of static charge, a conductive table-top mat must also": {
+"page": 94,
+"rx": "must\\s+also\\s+remove\\s+the\\s+static\\s+charge\\s+from\\s+conductive\\s+items"
+},
+"A technician tests a wrist strap at the grounding test station and the green light does not come on. What should he conclude?": {
+"page": 94,
+"rx": "A\\s+green\\s+indicator\\s+light\\s+means\\s+that\\s+the\\s+wrist\\s+strap"
+},
+"Besides wrist straps, a grounding test station can also be used to test": {
+"page": 94,
+"rx": "test\\s+footwear,\\s+heal\\s+straps,\\s+and\\s+coil\\s+cords"
+},
+"How does an ionizer neutralize a charged insulating surface?": {
+"page": 95,
+"rx": "air\\s+stream\\s+containing\\s+both\\s+positive\\s+and\\s+negative\\s+ions"
+},
+"A work-station ionizer is normally mounted 30 to 36 inches above the area to be controlled. In centimetres this is about": {
+"page": 95,
+"rx": "mounted\\s+30\"?\\s*-?\\s*36\"?\\s+above"
+},
+"The ionization pattern of an overhead ionizer is about 36 inches wide by 48 inches long. Its area is about": {
+"page": 95,
+"rx": "approximately\\s+36\"?\\s*wide\\s+x\\s+48\"?\\s*long"
+},
+"Before handling sensitive components, how should a technician make sure the ionizer is working?": {
+"page": 95,
+"rx": "electrostatic\\s+field\\s+meter\\s+to\\s+detect\\s+static\\s+charges"
+},
+"Which type of ionizer is meant for periodic, localized cleaning?": {
+"page": 95,
+"rx": "high-pressure,\\s+low-volume\\s+air\\s+guns\\s+for\\s+periodic\\s+localized\\s+cleaning"
+},
+"A closed conductive container of ESD-sensitive parts is brought from its rack to the work station. When it arrives it must": {
+"page": 95,
+"rx": "it\\s+must\\s+make\\s+contact\\s+with\\s+the\\s+grounded\\s+table\\s+mat"
+},
+"Which sequence is correct for installing an ESD-sensitive part taken from a protective container?": {
+"page": 95,
+"rx": "should\\s+first\\s+be\\s+discharged,\\s+by\\s+wearing"
+},
+"From the outside to the inside, an electrostatic-shielded conductive bag is made of": {
+"page": 95,
+"rx": "outer\\s+layer\\s+of\\s+transparent\\s+metalized\\s+sheet"
+},
+"Where must the warning signs for an ESD-controlled area be placed?": {
+"page": 94,
+"rx": "Signage\\s+must\\s+be\\s+placed\\s+outside\\s+any\\s+ESD\\s+controlled"
+},
+"Which of these is NOT named in the text as an insulating material that stores static electricity and must be kept out of the work area?": {
+"page": 94,
+"rx": "nylon,\\s+mylar,\\s+vinyl,\\s+rubber,\\s+mica,\\s+ceramics"
+},
+"Which technology lets more components fit on the same PCB, and what is its drawback?": {
+"page": 90,
+"rx": "allows\\s+more\\s+components\\s+and\\s+circuits\\s+to\\s+be\\s+placed\\s+on\\s+the\\s+same\\s+PCB"
+},
+"The text describes BGA packages as having": {
+"page": 90,
+"rx": "higher\\s+pin\\s+density\\s+compared\\s+to\\s+other"
+},
+"Leaded components are inserted into holes and the board is dipped in molten solder. This is": {
+"page": 91,
+"rx": "in\\s+molten\\s+tin\\s+solder\\s+and\\s+the\\s+solder\\s+is\\s+sucked\\s+up"
+},
+"Chip components are placed on solder-paste pads, held by an adhesive and heated in a controlled oven. This is": {
+"page": 91,
+"rx": "held\\s+in\\s+place\\s+with\\s+an\\s+adhesive"
+},
+"Which statement about non-plated and plated through holes is correct?": {
+"page": 90,
+"rx": "less\\s+expensive\\s+and\\s+take\\s+less\\s+time\\s+to\\s+manufacture"
+},
+"A via must join layers 2 and 3 of a multi-layer board and be invisible from both outer surfaces. It is a": {
+"page": 92,
+"rx": "buried\\s+vias\\s+\\(3\\)\\s+that\\s+connect\\s+internal\\s+layers"
+},
+"A via starts on the top surface and stops at an inner layer without reaching the bottom surface. It is a": {
+"page": 92,
+"rx": "blind\\s+vias\\s+\\(2\\)\\s+that\\s+are\\s+exposed\\s+to\\s+only\\s+one\\s+side"
+},
+"A power transistor on a multi-layer board runs too hot. Which feature of the board helps carry its heat away?": {
+"page": 92,
+"rx": "Thermal\\s+vias\\s+are\\s+used\\s+to\\s+carry\\s+heat\\s+away"
+},
+"Why is computer modelling used when designing high-frequency multi-layer boards?": {
+"page": 92,
+"rx": "unintended\\s+capacitive\\s+and\\s+inductive"
+},
+"Which order of the PCB manufacturing steps described in the text is correct?": {
+"page": 89,
+"rx": "heat\\s+press\\s+operation"
+},
+"After etching, what remains of the copper foil?": {
+"page": 89,
+"rx": "unwanted\\s+copper\\s+is\\s+etched\\s+away"
+},
+"A printed circuit board in an aircraft system is defective. What does the text recommend?": {
+"page": 92,
+"rx": "should\\s+not\\s+performed\\s+in\\s+the\\s+field"
+}
+}
