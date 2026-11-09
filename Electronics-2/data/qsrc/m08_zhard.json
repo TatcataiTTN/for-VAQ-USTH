@@ -1,0 +1,416 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Thiết kế LM317 ra 9 V với R1 = 240 Ω: R2 = (9/1,25 − 1)·240 = 1488 Ω; dùng điện trở chuẩn 1,5 kΩ. Với IADJ = 50 μA, điện áp ra thực là",
+"en": "Design an LM317 for 9 V with R1 = 240 Ω: R2 = (9/1.25 − 1)·240 = 1488 Ω; the nearest standard resistor is 1.5 kΩ. With IADJ = 50 μA the actual output is"
+},
+"opts": [
+{
+"vi": "9,14 V",
+"en": "9.14 V"
+},
+{
+"vi": "9,06 V",
+"en": "9.06 V"
+},
+{
+"vi": "9 V",
+"en": "9 V"
+},
+{
+"vi": "8,99 V",
+"en": "8.99 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VOUT = 1,25(1 + R2/R1) + IADJ·R2 = 1,25 × 7,25 + 50 μA × 1,5 kΩ = 9,0625 + 0,075 = 9,1375 ≈ 9,14 V (bỏ IADJ cho 9,06 V).",
+"en": "VOUT = 1.25(1 + R2/R1) + IADJ·R2 = 1.25 × 7.25 + 50 μA × 1.5 kΩ = 9.0625 + 0.075 = 9.1375 ≈ 9.14 V (ignoring IADJ gives 9.06 V)."
+},
+"level": 3,
+"topic": {
+"en": "IC regulators",
+"vi": "IC ổn áp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.17",
+"en": "Generated hard multi-step question – Floyd 9e Ch.17"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-ic-regulators"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "IC 7805 nhận VIN = 12 V, cấp IL = 0,6 A. Nhiệt trở: θJC = 5 °C/W, θCS = 1 °C/W, tản nhiệt θSA = 10 °C/W, nhiệt độ môi trường 40 °C. Nhiệt độ mối nối xấp xỉ",
+"en": "A 7805 IC takes VIN = 12 V and supplies IL = 0.6 A. Thermal resistances: θJC = 5 °C/W, θCS = 1 °C/W, heat sink θSA = 10 °C/W, ambient 40 °C. The junction temperature is about"
+},
+"opts": [
+{
+"vi": "107,2 °C",
+"en": "107.2 °C"
+},
+{
+"vi": "155,2 °C",
+"en": "155.2 °C"
+},
+{
+"vi": "61 °C",
+"en": "61 °C"
+},
+{
+"vi": "103 °C",
+"en": "103 °C"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "PD = (12 − 5) × 0,6 = 4,2 W; Tj = Ta + PD·(θJC + θCS + θSA) = 40 + 4,2 × 16 = 107,2 °C (dùng VIN·IL = 7,2 W là sai: chỉ phần (VIN − VOUT)·IL toả nhiệt trong IC; bỏ θCS cho 103 °C).",
+"en": "PD = (12 − 5) × 0.6 = 4.2 W; Tj = Ta + PD·(θJC + θCS + θSA) = 40 + 4.2 × 16 = 107.2 °C (using VIN·IL = 7.2 W is wrong: only (VIN − VOUT)·IL heats the IC; omitting θCS gives 103 °C)."
+},
+"level": 3,
+"topic": {
+"en": "IC regulators",
+"vi": "IC ổn áp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–4",
+"en": "Generated hard multi-step question – Floyd 9e §17–4"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-heat"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp nối tiếp cần giới hạn dòng ở IL(max) = 1,2 A bằng điện trở cảm biến R4 (IL(max) = 0,7 V/R4). Công suất tiêu tán tối thiểu mà R4 phải chịu là",
+"en": "A series regulator must limit the current to IL(max) = 1.2 A with a sense resistor R4 (IL(max) = 0.7 V/R4). The minimum power rating R4 must handle is"
+},
+"opts": [
+{
+"vi": "0,84 W",
+"en": "0.84 W"
+},
+{
+"vi": "0,408 W",
+"en": "0.408 W"
+},
+{
+"vi": "2,47 W",
+"en": "2.47 W"
+},
+{
+"vi": "1,68 W",
+"en": "1.68 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R4 = 0,7/1,2 = 0,583 Ω; P = I²R = 1,2² × 0,583 = 0,84 W (= 0,7 V × 1,2 A); chọn điện trở ≥ 1 W.",
+"en": "R4 = 0.7/1.2 = 0.583 Ω; P = I²R = 1.2² × 0.583 = 0.84 W (= 0.7 V × 1.2 A); choose a resistor of at least 1 W."
+},
+"level": 3,
+"topic": {
+"en": "Series regulators and current limiting",
+"vi": "Ổn áp nối tiếp và giới hạn dòng"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–2",
+"en": "Generated hard multi-step question – Floyd 9e §17–2"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-current-limit"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Ổn áp song song VIN = 20 V, VOUT = 12 V, tải 0–100 mA, dòng tối thiểu qua phần tử shunt 10 mA. Điện trở nối tiếp R1 lớn nhất và công suất cực đại ở phần tử shunt (khi hở tải) là",
+"en": "A shunt regulator with VIN = 20 V and VOUT = 12 V serves a 0–100 mA load and needs at least 10 mA through the shunt element. The largest series resistor R1 and the maximum shunt-element power (load open) are"
+},
+"opts": [
+{
+"vi": "72,7 Ω; 1,32 W",
+"en": "72.7 Ω; 1.32 W"
+},
+{
+"vi": "80 Ω; 1,2 W",
+"en": "80 Ω; 1.2 W"
+},
+{
+"vi": "72,7 Ω; 2,2 W",
+"en": "72.7 Ω; 2.2 W"
+},
+{
+"vi": "109 Ω; 1,32 W",
+"en": "109 Ω; 1.32 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R1 = (VIN − VOUT)/(IL(max) + IZ(min)) = 8/0,11 = 72,7 Ω; khi hở tải toàn bộ 110 mA qua phần tử shunt: P = 12 V × 110 mA = 1,32 W.",
+"en": "R1 = (VIN − VOUT)/(IL(max) + IZ(min)) = 8/0.11 = 72.7 Ω; with the load open all 110 mA flows in the shunt element: P = 12 V × 110 mA = 1.32 W."
+},
+"level": 3,
+"topic": {
+"en": "Shunt regulators",
+"vi": "Ổn áp song song"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–3",
+"en": "Generated hard multi-step question – Floyd 9e §17–3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-shunt"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp xung giảm áp VIN = 24 V, VOUT = 5 V, IL = 2 A, hiệu suất 88 %. Dòng lấy từ nguồn vào và công suất tiêu tán của bộ ổn áp tuyến tính cùng tải là",
+"en": "A step-down switching regulator with VIN = 24 V, VOUT = 5 V, IL = 2 A and 88 % efficiency. The current drawn from the input and the dissipation of a linear regulator doing the same job are"
+},
+"opts": [
+{
+"vi": "473 mA; 38 W",
+"en": "473 mA; 38 W"
+},
+{
+"vi": "2000 mA; 38 W",
+"en": "2000 mA; 38 W"
+},
+{
+"vi": "2270 mA; 48 W",
+"en": "2270 mA; 48 W"
+},
+{
+"vi": "473 mA; 10 W",
+"en": "473 mA; 10 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Pout = 5 × 2 = 10 W; Pin = 10/0,88 = 11,36 W; Iin = Pin/24 = 473 mA. Bộ tuyến tính: η ≈ 5/24 = 20,8 % và tiêu tán (24 − 5) × 2 = 38 W.",
+"en": "Pout = 5 × 2 = 10 W; Pin = 10/0.88 = 11.36 W; Iin = Pin/24 = 473 mA. Linear regulator: η ≈ 5/24 = 20.8 % and dissipation (24 − 5) × 2 = 38 W."
+},
+"level": 3,
+"topic": {
+"en": "Switching regulators",
+"vi": "Ổn áp xung"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–5",
+"en": "Generated hard multi-step question – Floyd 9e §17–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-switching"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp xung tăng áp (boost) lý tưởng có VOUT = VIN/(1 − D). Để tạo 15 V từ 5 V cần chu kỳ làm việc D bằng",
+"en": "An ideal step-up (boost) switching regulator has VOUT = VIN/(1 − D). To make 15 V from 5 V the duty cycle D must be"
+},
+"opts": [
+{
+"vi": "0,667",
+"en": "0.667"
+},
+{
+"vi": "0,333",
+"en": "0.333"
+},
+{
+"vi": "0,75",
+"en": "0.75"
+},
+{
+"vi": "0,25",
+"en": "0.25"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "D = 1 − VIN/VOUT = 1 − 5/15 = 0,667 (công thức giảm áp VOUT = D·VIN sẽ cho 0,333 sai).",
+"en": "D = 1 − VIN/VOUT = 1 − 5/15 = 0.667 (the step-down formula VOUT = D·VIN would give 0.333, which is wrong)."
+},
+"level": 3,
+"topic": {
+"en": "Switching regulators",
+"vi": "Ổn áp xung"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–5",
+"en": "Generated hard multi-step question – Floyd 9e §17–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-switching"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp cho 12,00 V khi VIN = 15 V và 12,05 V khi VIN = 18 V. Line regulation theo %/V là",
+"en": "A regulator gives 12.00 V at VIN = 15 V and 12.05 V at VIN = 18 V. The line regulation in %/V is"
+},
+"opts": [
+{
+"vi": "0,139 %/V",
+"en": "0.139 %/V"
+},
+{
+"vi": "1,67 %/V",
+"en": "1.67 %/V"
+},
+{
+"vi": "0,417 %/V",
+"en": "0.417 %/V"
+},
+{
+"vi": "0,278 %/V",
+"en": "0.278 %/V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "(ΔVOUT/VOUT)·100 %/ΔVIN = (0,05/12 × 100 %)/3 V = 0,139 %/V (Floyd Eq. 17–2).",
+"en": "(ΔVOUT/VOUT)·100 %/ΔVIN = (0.05/12 × 100 %)/3 V = 0.139 %/V (Floyd Eq. 17–2)."
+},
+"level": 3,
+"topic": {
+"en": "Regulation and regulator blocks",
+"vi": "Điều chỉnh và các khối của bộ ổn áp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.17",
+"en": "Generated hard multi-step question – Floyd 9e Ch.17"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-regulation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ ổn áp nối tiếp có zener tham chiếu 2,4 V cần ra 9 V: R2/R3 = 9/2,4 − 1 = 2,75. Với R3 = 10 kΩ và điện trở chuẩn R2 = 27 kΩ, điện áp ra thực là",
+"en": "A series regulator with a 2.4 V reference must give 9 V: R2/R3 = 9/2.4 − 1 = 2.75. With R3 = 10 kΩ and the standard value R2 = 27 kΩ the actual output is"
+},
+"opts": [
+{
+"vi": "8,88 V",
+"en": "8.88 V"
+},
+{
+"vi": "9 V",
+"en": "9 V"
+},
+{
+"vi": "3,29 V",
+"en": "3.29 V"
+},
+{
+"vi": "6,48 V",
+"en": "6.48 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VOUT = (1 + R2/R3)·VREF = (1 + 2,7) × 2,4 = 8,88 V (R2 lý tưởng 27,5 kΩ).",
+"en": "VOUT = (1 + R2/R3)·VREF = (1 + 2.7) × 2.4 = 8.88 V (the ideal R2 is 27.5 kΩ)."
+},
+"level": 3,
+"topic": {
+"en": "Series regulators and current limiting",
+"vi": "Ổn áp nối tiếp và giới hạn dòng"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–2",
+"en": "Generated hard multi-step question – Floyd 9e §17–2"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-series"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Nguồn có VNL = 5,10 V và điện trở ra tương đương 0,1 Ω cấp dòng đầy tải 2 A. Load regulation (VNL − VFL)/VFL là",
+"en": "A supply has VNL = 5.10 V and an equivalent output resistance of 0.1 Ω delivering a full-load current of 2 A. The load regulation (VNL − VFL)/VFL is"
+},
+"opts": [
+{
+"vi": "4,08 %",
+"en": "4.08 %"
+},
+{
+"vi": "3,92 %",
+"en": "3.92 %"
+},
+{
+"vi": "2 %",
+"en": "2 %"
+},
+{
+"vi": "1,96 %",
+"en": "1.96 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VFL = 5,10 − 2 × 0,1 = 4,9 V; (5,10 − 4,90)/4,90 = 4,08 % (mẫu số là VFL; dùng VNL cho 3,92 %; quên nhân dòng 2 A cho 2,0 %).",
+"en": "VFL = 5.10 − 2 × 0.1 = 4.9 V; (5.10 − 4.90)/4.90 = 4.08 % (the denominator is VFL; using VNL gives 3.92 %; forgetting the 2 A gives 2.0 %)."
+},
+"level": 3,
+"topic": {
+"en": "Regulation and regulator blocks",
+"vi": "Điều chỉnh và các khối của bộ ổn áp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §17–1",
+"en": "Generated hard multi-step question – Floyd 9e §17–1"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m08-regulation"
+}
+]

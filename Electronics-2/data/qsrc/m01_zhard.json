@@ -1,0 +1,462 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Giá trị thập phân của 101101₂ + 11011₂ là bao nhiêu (cộng nhị phân rồi đổi)?",
+"en": "What is the decimal value of 101101₂ + 11011₂ (add in binary, then convert)?"
+},
+"opts": [
+{
+"vi": "72",
+"en": "72"
+},
+{
+"vi": "63",
+"en": "63"
+},
+{
+"vi": "18",
+"en": "18"
+},
+{
+"vi": "467",
+"en": "467"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "101101₂ = 45 và 11011₂ = 27; 45 + 27 = 72 = 1001000₂. (OR bit-wise cho 63; trừ cho 18.)",
+"en": "101101₂ = 45 and 11011₂ = 27; 45 + 27 = 72 = 1001000₂. (A bitwise OR gives 63; subtracting gives 18.)"
+},
+"level": 3,
+"topic": {
+"en": "Binary numbers and conversion",
+"vi": "Hệ nhị phân và đổi số"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-binary"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Số thập phân 59 viết ở dạng BCD là",
+"en": "The decimal number 59 written in BCD is"
+},
+"opts": [
+{
+"vi": "0101 1001",
+"en": "0101 1001"
+},
+{
+"vi": "111011",
+"en": "111011"
+},
+{
+"vi": "1001 0101",
+"en": "1001 0101"
+},
+{
+"vi": "0101 1010",
+"en": "0101 1010"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "BCD mã hoá từng chữ số: 5 = 0101, 9 = 1001. Nhị phân thuần của 59 là 111011; 1010 không phải mã BCD hợp lệ.",
+"en": "BCD codes each digit: 5 = 0101, 9 = 1001. Plain binary 59 is 111011; 1010 is not a valid BCD code."
+},
+"level": 3,
+"topic": {
+"en": "Binary numbers and conversion",
+"vi": "Hệ nhị phân và đổi số"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-binary"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ cộng 4 bit nối chuỗi (ripple) cộng 1011₂ và 0110₂. Các bit tổng S3S2S1S0 và số nhớ ra cuối cùng là",
+"en": "A 4-bit ripple-carry adder adds 1011₂ and 0110₂. The sum bits S3S2S1S0 and the final carry out are"
+},
+"opts": [
+{
+"vi": "S = 0001, nhớ ra = 1",
+"en": "S = 0001, carry out = 1"
+},
+{
+"vi": "S = 0001, nhớ ra = 0",
+"en": "S = 0001, carry out = 0"
+},
+{
+"vi": "S = 1111, nhớ ra = 0",
+"en": "S = 1111, carry out = 0"
+},
+{
+"vi": "S = 1001, nhớ ra = 1",
+"en": "S = 1001, carry out = 1"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "11 + 6 = 17 = 1 0001₂: bốn bit thấp 0001 và nhớ ra 1 (bit thứ 5).",
+"en": "11 + 6 = 17 = 1 0001₂: low four bits 0001 and a carry out of 1 (the fifth bit)."
+},
+"level": 3,
+"topic": {
+"en": "Adders and combinational circuits",
+"vi": "Bộ cộng và mạch tổ hợp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-adders"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "JK flip-flop bắt đầu với Q = 0. Qua bốn xung nhịp liên tiếp với (J, K) = (1,0), (1,1), (0,0), (1,1), dãy Q sau mỗi xung là",
+"en": "A JK flip-flop starts with Q = 0. Over four successive clock pulses with (J, K) = (1,0), (1,1), (0,0), (1,1), the sequence of Q after each pulse is"
+},
+"opts": [
+{
+"vi": "1, 0, 0, 1",
+"en": "1, 0, 0, 1"
+},
+{
+"vi": "1, 1, 1, 0",
+"en": "1, 1, 1, 0"
+},
+{
+"vi": "1, 0, 1, 0",
+"en": "1, 0, 1, 0"
+},
+{
+"vi": "0, 1, 1, 0",
+"en": "0, 1, 1, 0"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "(1,0) đặt Q = 1; (1,1) đảo → 0; (0,0) giữ → 0; (1,1) đảo → 1.",
+"en": "(1,0) sets Q = 1; (1,1) toggles → 0; (0,0) holds → 0; (1,1) toggles → 1."
+},
+"level": 3,
+"topic": {
+"en": "Flip-flops and sequential logic",
+"vi": "Flip-flop và logic tuần tự"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-flipflops"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ đếm nhị phân 3 bit (các flip-flop đảo nối tầng) bắt đầu ở 000. Sau 13 xung nhịp nó ở trạng thái",
+"en": "A 3-bit binary counter (cascaded toggle flip-flops) starts at 000. After 13 clock pulses its state is"
+},
+"opts": [
+{
+"vi": "101",
+"en": "101"
+},
+{
+"vi": "110",
+"en": "110"
+},
+{
+"vi": "111",
+"en": "111"
+},
+{
+"vi": "100",
+"en": "100"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Bộ đếm lặp lại sau 2³ = 8 xung: 13 mod 8 = 5 = 101₂ (13 = 1101₂ thì giữ ba bit thấp).",
+"en": "The counter repeats every 2³ = 8 pulses: 13 mod 8 = 5 = 101₂ (13 = 1101₂, keep the three low bits)."
+},
+"level": 3,
+"topic": {
+"en": "Flip-flops and sequential logic",
+"vi": "Flip-flop và logic tuần tự"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-flipflops"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Biểu thức NOT(A·B̄ + Ā·B) tương đương với cổng nào?",
+"en": "The expression NOT(A·B̄ + Ā·B) is equivalent to which gate?"
+},
+"opts": [
+{
+"vi": "XNOR",
+"en": "XNOR"
+},
+{
+"vi": "XOR",
+"en": "XOR"
+},
+{
+"vi": "NAND",
+"en": "NAND"
+},
+{
+"vi": "NOR",
+"en": "NOR"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "A·B̄ + Ā·B là XOR; đảo của XOR là XNOR (ngõ ra 1 khi hai ngõ vào bằng nhau). Bảng chân lý: 1, 0, 0, 1.",
+"en": "A·B̄ + Ā·B is XOR; the inverse of XOR is XNOR (output 1 when the inputs are equal). Truth table: 1, 0, 0, 1."
+},
+"level": 3,
+"topic": {
+"en": "Logic gates",
+"vi": "Cổng logic"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-gates"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ đảo CMOS có VDD = 3,3 V, VTN = 0,6 V, VTP = −0,8 V, Kn = 225 μA/V², Kp = 100 μA/V². Ngưỡng chuyển mạch VSP là bao nhiêu?",
+"en": "A CMOS inverter has VDD = 3.3 V, VTN = 0.6 V, VTP = −0.8 V, Kn = 225 μA/V², Kp = 100 μA/V². What is the switching threshold VSP?"
+},
+"opts": [
+{
+"vi": "1,36 V",
+"en": "1.36 V"
+},
+{
+"vi": "1,65 V",
+"en": "1.65 V"
+},
+{
+"vi": "1,18 V",
+"en": "1.18 V"
+},
+{
+"vi": "1,55 V",
+"en": "1.55 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "KR = Kn/Kp = 2,25 nên √KR = 1,5: VSP = (3,3 − 0,8 + 0,6·1,5)/(1 + 1,5) = 1,36 V (không phải VDD/2).",
+"en": "KR = Kn/Kp = 2.25 so √KR = 1.5: VSP = (3.3 − 0.8 + 0.6·1.5)/(1 + 1.5) = 1.36 V (not VDD/2)."
+},
+"level": 3,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Jaeger 5e §7.2",
+"en": "Generated hard multi-step question – Jaeger 5e §7.2"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một vi mạch CMOS có 10 000 cổng, mỗi cổng tải C = 2 pF, VDD = 1,8 V, xung nhịp 200 MHz, hệ số hoạt động (tỉ lệ cổng chuyển trạng thái) 10 %. Công suất động P = α·N·C·V²·f là bao nhiêu?",
+"en": "A CMOS chip has 10,000 gates, each loaded with C = 2 pF, VDD = 1.8 V, a 200 MHz clock and an activity factor (fraction of gates switching) of 10 %. What is the dynamic power P = α·N·C·V²·f?"
+},
+"opts": [
+{
+"vi": "1,296 W",
+"en": "1.296 W"
+},
+{
+"vi": "12,96 W",
+"en": "12.96 W"
+},
+{
+"vi": "0,72 W",
+"en": "0.72 W"
+},
+{
+"vi": "0,13 mW",
+"en": "0.13 mW"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "P = 0,1 × 10⁴ × 2·10⁻¹² × 1,8² × 2·10⁸ = 1,296 W. Bỏ hệ số hoạt động cho 12,96 W; quên bình phương V cho 0,72 W; chỉ tính một cổng cho 0,13 mW.",
+"en": "P = 0.1 × 10⁴ × 2·10⁻¹² × 1.8² × 2·10⁸ = 1.296 W. Ignoring the activity factor gives 12.96 W; forgetting to square V gives 0.72 W; counting a single gate gives 0.13 mW."
+},
+"level": 3,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Jaeger 5e §7.3",
+"en": "Generated hard multi-step question – Jaeger 5e §7.3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-cmos"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cổng A (VOH = 4,8 V, VOL = 0,2 V) điều khiển cổng B (VIH = 3,2 V, VIL = 1,4 V). Nhiễu lớn nhất chịu được trên đường đang ở mức THẤP và ở mức CAO lần lượt là",
+"en": "Gate A (VOH = 4.8 V, VOL = 0.2 V) drives gate B (VIH = 3.2 V, VIL = 1.4 V). The largest noise tolerated on a line that is LOW and on one that is HIGH is"
+},
+"opts": [
+{
+"vi": "1,2 V (mức thấp) và 1,6 V (mức cao)",
+"en": "1.2 V (LOW) and 1.6 V (HIGH)"
+},
+{
+"vi": "1,6 V (mức thấp) và 1,2 V (mức cao)",
+"en": "1.6 V (LOW) and 1.2 V (HIGH)"
+},
+{
+"vi": "0,2 V (mức thấp) và 1,4 V (mức cao)",
+"en": "0.2 V (LOW) and 1.4 V (HIGH)"
+},
+{
+"vi": "2,8 V (mức thấp) và 3,4 V (mức cao)",
+"en": "2.8 V (LOW) and 3.4 V (HIGH)"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "NML = VIL − VOL = 1,4 − 0,2 = 1,2 V; NMH = VOH − VIH = 4,8 − 3,2 = 1,6 V (lấy VO của cổng phát, VI của cổng nhận).",
+"en": "NML = VIL − VOL = 1.4 − 0.2 = 1.2 V; NMH = VOH − VIH = 4.8 − 3.2 = 1.6 V (VO of the driving gate, VI of the receiving gate)."
+},
+"level": 3,
+"topic": {
+"en": "ICs, TTL and CMOS",
+"vi": "IC, TTL và CMOS"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Jaeger 5e §6.2",
+"en": "Generated hard multi-step question – Jaeger 5e §6.2"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-families"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cần tối thiểu bao nhiêu bộ giải mã 2→4 có chân enable để tạo một bộ giải mã 4→16?",
+"en": "What is the minimum number of 2→4 decoders with an enable pin needed to build a 4→16 decoder?"
+},
+"opts": [
+{
+"vi": "5",
+"en": "5"
+},
+{
+"vi": "4",
+"en": "4"
+},
+{
+"vi": "2",
+"en": "2"
+},
+{
+"vi": "8",
+"en": "8"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Một bộ giải mã (2 bit cao) bật một trong bốn bộ giải mã còn lại (2 bit thấp): 1 + 4 = 5 bộ, cho 4 × 4 = 16 ngõ ra.",
+"en": "One decoder (the two high bits) enables one of four more decoders (the two low bits): 1 + 4 = 5, giving 4 × 4 = 16 outputs."
+},
+"level": 3,
+"topic": {
+"en": "Adders and combinational circuits",
+"vi": "Bộ cộng và mạch tổ hợp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM01; Jaeger 5e Ch.7",
+"en": "Generated hard multi-step question – EASA M04 SM01; Jaeger 5e Ch.7"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m01-combinational"
+}
+]

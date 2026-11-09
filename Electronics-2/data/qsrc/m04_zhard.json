@@ -1,0 +1,324 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Tầng 1 có độ lợi không tải 30 và trở kháng ra 2 kΩ, tải là tầng 2 có Rin = 6 kΩ và độ lợi 20. Độ lợi tổng (có xét tải) và giá trị dB là",
+"en": "Stage 1 has an unloaded gain of 30 and an output resistance of 2 kΩ and drives stage 2 with Rin = 6 kΩ and a gain of 20. The overall gain (loading included) and its value in dB are"
+},
+"opts": [
+{
+"vi": "450; 53,1 dB",
+"en": "450; 53.1 dB"
+},
+{
+"vi": "600; 55,6 dB",
+"en": "600; 55.6 dB"
+},
+{
+"vi": "22,5; 27 dB",
+"en": "22.5; 27 dB"
+},
+{
+"vi": "50; 34 dB",
+"en": "50; 34 dB"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Tầng 1 bị tải: 30 × 6/(2 + 6) = 22,5; tổng = 22,5 × 20 = 450 = 53,1 dB (bỏ qua tải cho 600 = 55,6 dB).",
+"en": "Stage 1 is loaded: 30 × 6/(2 + 6) = 22.5; total = 22.5 × 20 = 450 = 53.1 dB (ignoring loading gives 600 = 55.6 dB)."
+},
+"level": 3,
+"topic": {
+"en": "Cascade amplifiers and gain",
+"vi": "Khuếch đại ghép tầng và độ lợi"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01",
+"en": "Generated hard multi-step question – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-cascade"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Ba khối nối tiếp có độ lợi 18 dB, 26 dB và −3 dB (bộ suy giảm). Độ lợi điện áp tổng dạng số lần là",
+"en": "Three blocks in cascade have gains of 18 dB, 26 dB and −3 dB (an attenuator). The overall voltage gain as a ratio is"
+},
+"opts": [
+{
+"vi": "112,2",
+"en": "112.2"
+},
+{
+"vi": "28,6",
+"en": "28.6"
+},
+{
+"vi": "281,8",
+"en": "281.8"
+},
+{
+"vi": "41",
+"en": "41"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "18 + 26 − 3 = 41 dB → 10^(41/20) = 112,2 (nhân: 7,94 × 20 × 0,708 = 112,2).",
+"en": "18 + 26 − 3 = 41 dB → 10^(41/20) = 112.2 (multiplying: 7.94 × 20 × 0.708 = 112.2)."
+},
+"level": 3,
+"topic": {
+"en": "Cascade amplifiers and gain",
+"vi": "Khuếch đại ghép tầng và độ lợi"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01",
+"en": "Generated hard multi-step question – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-cascade"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Khuếch đại đẩy kéo lớp B (hai nguồn) có VCC = 18 V, RL = 8 Ω, ngõ ra biên độ cực đại. Công suất tiêu tán trong mỗi transistor là",
+"en": "A class B push-pull amplifier (two supplies) with VCC = 18 V and RL = 8 Ω delivers its maximum output swing. The power dissipated in each transistor is"
+},
+"opts": [
+{
+"vi": "2,77 W",
+"en": "2.77 W"
+},
+{
+"vi": "5,53 W",
+"en": "5.53 W"
+},
+{
+"vi": "20,25 W",
+"en": "20.25 W"
+},
+{
+"vi": "12,9 W",
+"en": "12.9 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Pout = VCC²/(2RL) = 20,25 W; Pdc = 2VCC²/(πRL) = 25,78 W (η = 78,5 %); tiêu tán tổng = 5,53 W, mỗi transistor một nửa = 2,77 W.",
+"en": "Pout = VCC²/(2RL) = 20.25 W; Pdc = 2VCC²/(πRL) = 25.78 W (η = 78.5 %); total dissipation = 5.53 W, half in each transistor = 2.77 W."
+},
+"level": 3,
+"topic": {
+"en": "Push-pull amplifiers",
+"vi": "Mạch khuếch đại đẩy kéo"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §7–2",
+"en": "Generated hard multi-step question – Floyd 9e §7–2"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-push-pull"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Khuếch đại lớp C có VCC = 12 V, Rc (tank song song) = 100 Ω, Vout(pp) = 2·VCC, transistor dẫn 5 % chu kỳ với VCE(sat) = 0,3 V, IC(sat) = 0,5 A. Hiệu suất η = Pout/(Pout + PD) là",
+"en": "A class C amplifier has VCC = 12 V, tank parallel resistance Rc = 100 Ω, Vout(pp) = 2·VCC, and the transistor conducts for 5 % of the cycle with VCE(sat) = 0.3 V and IC(sat) = 0.5 A. The efficiency η = Pout/(Pout + PD) is"
+},
+"opts": [
+{
+"vi": "98,97 %",
+"en": "98.97 %"
+},
+{
+"vi": "1,04 %",
+"en": "1.04 %"
+},
+{
+"vi": "1,03 %",
+"en": "1.03 %"
+},
+{
+"vi": "78,5 %",
+"en": "78.5 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Pout = (2·VCC)²/(8·Rc) = 0,72 W; PD = duty × VCE(sat) × IC(sat) = 0,05 × 0,3 × 0,5 = 7,5 mW; η = 0,72/(0,72 + 0,0075) = 98,97 %.",
+"en": "Pout = (2·VCC)²/(8·Rc) = 0.72 W; PD = duty × VCE(sat) × IC(sat) = 0.05 × 0.3 × 0.5 = 7.5 mW; η = 0.72/(0.72 + 0.0075) = 98.97 %."
+},
+"level": 3,
+"topic": {
+"en": "Amplifier classes",
+"vi": "Các lớp khuếch đại"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §7–3",
+"en": "Generated hard multi-step question – Floyd 9e §7–3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-classes"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Tầng trước có trở kháng ra 4,7 kΩ ghép RC (C = 2,2 μF) vào tầng sau có Rin = 3,3 kΩ. Độ lợi tại 5 Hz so với dải giữa là",
+"en": "A stage with an output resistance of 4.7 kΩ is RC-coupled (C = 2.2 μF) to a stage with Rin = 3.3 kΩ. The gain at 5 Hz relative to midband is"
+},
+"opts": [
+{
+"vi": "-6,31 dB",
+"en": "-6.31 dB"
+},
+{
+"vi": "-3,01 dB",
+"en": "-3.01 dB"
+},
+{
+"vi": "-13,1 dB",
+"en": "-13.1 dB"
+},
+{
+"vi": "-5,15 dB",
+"en": "-5.15 dB"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R = 4,7 + 3,3 = 8 kΩ; fc = 1/(2π·8k·2,2 μF) = 9,04 Hz. Tại 5 Hz: 1/√(1 + (fc/f)²) = 0,484 = -6,31 dB.",
+"en": "R = 4.7 + 3.3 = 8 kΩ; fc = 1/(2π·8k·2.2 μF) = 9.04 Hz. At 5 Hz: 1/√(1 + (fc/f)²) = 0.484 = -6.31 dB."
+},
+"level": 3,
+"topic": {
+"en": "Coupling methods",
+"vi": "Các cách ghép tầng"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01",
+"en": "Generated hard multi-step question – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-coupling"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch có hồi tiếp âm với Aol = 10 000 và B = 0,01. Nếu Aol giảm 20 % (còn 8000), độ lợi vòng kín thay đổi bao nhiêu phần trăm?",
+"en": "A negative-feedback circuit has Aol = 10,000 and B = 0.01. If Aol falls by 20 % (to 8000), by how many percent does the closed-loop gain change?"
+},
+"opts": [
+{
+"vi": "−0,247 %",
+"en": "−0.247 %"
+},
+{
+"vi": "−20 %",
+"en": "−20 %"
+},
+{
+"vi": "−0,5 %",
+"en": "−0.5 %"
+},
+{
+"vi": "−2,0 %",
+"en": "−2.0 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Acl = A/(1 + AB): 10 000/101 = 99,01 và 8000/81 = 98,77; thay đổi = -0,247 % (hồi tiếp âm làm độ lợi bền với Aol).",
+"en": "Acl = A/(1 + AB): 10,000/101 = 99.01 and 8000/81 = 98.77; change = -0.247 % (negative feedback makes the gain robust against Aol)."
+},
+"level": 3,
+"topic": {
+"en": "Positive and negative feedback",
+"vi": "Hồi tiếp dương và âm"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01",
+"en": "Generated hard multi-step question – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-feedback"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mỗi tầng khuếch đại cho độ lợi điện áp tối đa 15. Cần tối thiểu bao nhiêu tầng nối tiếp để có độ lợi trên 1000?",
+"en": "Each amplifier stage gives a maximum voltage gain of 15. What is the minimum number of cascaded stages for an overall gain above 1000?"
+},
+"opts": [
+{
+"vi": "3",
+"en": "3"
+},
+{
+"vi": "2",
+"en": "2"
+},
+{
+"vi": "4",
+"en": "4"
+},
+{
+"vi": "67",
+"en": "67"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "15² = 225 < 1000 còn 15³ = 3375 > 1000 nên cần 3 tầng (độ lợi nhân với nhau, không cộng).",
+"en": "15² = 225 < 1000 but 15³ = 3375 > 1000, so 3 stages are needed (gains multiply, they do not add)."
+},
+"level": 3,
+"topic": {
+"en": "Cascade amplifiers and gain",
+"vi": "Khuếch đại ghép tầng và độ lợi"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01",
+"en": "Generated hard multi-step question – Floyd 9e §6–6, §7–2, §7–3; EASA M04 SM01"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m04-cascade"
+}
+]

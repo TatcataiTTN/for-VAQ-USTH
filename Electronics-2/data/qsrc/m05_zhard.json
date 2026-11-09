@@ -1,0 +1,370 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch khuếch đại thiết bị có R = 25 kΩ, RG = 500 Ω nhận 3,100 V và 3,085 V ở hai ngõ vào. Điện áp ra là",
+"en": "An instrumentation amplifier with R = 25 kΩ and RG = 500 Ω receives 3.100 V and 3.085 V at its two inputs. The output is"
+},
+"opts": [
+{
+"vi": "1,515 V",
+"en": "1.515 V"
+},
+{
+"vi": "312,3 V",
+"en": "312.3 V"
+},
+{
+"vi": "1,5 V",
+"en": "1.5 V"
+},
+{
+"vi": "0,7575 V",
+"en": "0.7575 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "G = 1 + 2R/RG = 1 + 100 = 101; chỉ phần vi sai (15 mV) được khuếch đại: 101 × 15 mV = 1,515 V; thành phần chung 3,0925 V bị triệt.",
+"en": "G = 1 + 2R/RG = 1 + 100 = 101; only the difference (15 mV) is amplified: 101 × 15 mV = 1.515 V; the common-mode part 3.0925 V is rejected."
+},
+"level": 3,
+"topic": {
+"en": "Instrumentation amplifiers",
+"vi": "Mạch khuếch đại thiết bị"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.14; Jaeger 5e §12.5–12.6",
+"en": "Generated hard multi-step question – Floyd 9e Ch.14; Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-instrumentation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Cần mạch khuếch đại thiết bị có độ lợi 250 với R = 47 kΩ (G = 1 + 2R/RG). Điện trở RG phải bằng",
+"en": "An instrumentation amplifier must have a gain of 250 with R = 47 kΩ (G = 1 + 2R/RG). The gain resistor RG must be"
+},
+"opts": [
+{
+"vi": "377,5 Ω",
+"en": "377.5 Ω"
+},
+{
+"vi": "376 Ω",
+"en": "376 Ω"
+},
+{
+"vi": "188,8 Ω",
+"en": "188.8 Ω"
+},
+{
+"vi": "374,5 Ω",
+"en": "374.5 Ω"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "RG = 2R/(G − 1) = 94 kΩ/249 = 377,5 Ω (nhớ trừ 1; dùng 2R/G cho 376 Ω là sai nhẹ).",
+"en": "RG = 2R/(G − 1) = 94 kΩ/249 = 377.5 Ω (remember the −1; using 2R/G gives 376 Ω, slightly off)."
+},
+"level": 3,
+"topic": {
+"en": "Instrumentation amplifiers",
+"vi": "Mạch khuếch đại thiết bị"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.14; Jaeger 5e §12.5–12.6",
+"en": "Generated hard multi-step question – Floyd 9e Ch.14; Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-instrumentation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "OTA có gm = K·IBIAS với K = 16 μS/μA. Với IBIAS = 62,5 μA, tải RL = 5 kΩ và Vin = 50 mV, điện áp ra và độ lợi là",
+"en": "An OTA has gm = K·IBIAS with K = 16 μS/μA. With IBIAS = 62.5 μA, a load RL = 5 kΩ and Vin = 50 mV, the output voltage and gain are"
+},
+"opts": [
+{
+"vi": "0,25 V; Av = 5",
+"en": "0.25 V; Av = 5"
+},
+{
+"vi": "250 V; Av = 5000",
+"en": "250 V; Av = 5000"
+},
+{
+"vi": "50 V; Av = 1000",
+"en": "50 V; Av = 1000"
+},
+{
+"vi": "0,05 V; Av = 1",
+"en": "0.05 V; Av = 1"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "gm = 16 μS/μA × 62,5 μA = 1000 μS; Iout = gm·Vin = 50 μA; Vout = Iout·RL = 0,25 V; Av = gm·RL = 5 (đổi μS, μA về đơn vị gốc).",
+"en": "gm = 16 μS/μA × 62.5 μA = 1000 μS; Iout = gm·Vin = 50 μA; Vout = Iout·RL = 0.25 V; Av = gm·RL = 5 (convert μS, μA to base units)."
+},
+"level": 3,
+"topic": {
+"en": "OTA",
+"vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §14–3",
+"en": "Generated hard multi-step question – Floyd 9e §14–3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-ota"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "OTA (K = 16 μS/μA) có dòng phân cực biến điệu IBIAS = 50 μA ± 20 μA, tải 10 kΩ, sóng mang 10 mV. Biên độ ngõ ra lớn nhất và độ sâu điều biên là",
+"en": "An OTA (K = 16 μS/μA) with a modulated bias current IBIAS = 50 μA ± 20 μA, a 10 kΩ load and a 10 mV carrier. The largest output amplitude and the modulation depth are"
+},
+"opts": [
+{
+"vi": "112 mV; 40 %",
+"en": "112 mV; 40 %"
+},
+{
+"vi": "48 mV; 40 %",
+"en": "48 mV; 40 %"
+},
+{
+"vi": "112 mV; 57,1 %",
+"en": "112 mV; 57.1 %"
+},
+{
+"vi": "80 mV; 0 %",
+"en": "80 mV; 0 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "gm(max) = 16 × 70 = 1120 μS → 112 mV; gm(min) = 16 × 30 = 480 μS → 48 mV; m = (112 − 48)/(112 + 48) = 0,4 = 40 %.",
+"en": "gm(max) = 16 × 70 = 1120 μS → 112 mV; gm(min) = 16 × 30 = 480 μS → 48 mV; m = (112 − 48)/(112 + 48) = 0.4 = 40 %."
+},
+"level": 3,
+"topic": {
+"en": "OTA",
+"vi": "Mạch khuếch đại hỗ dẫn (OTA)"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §14–3",
+"en": "Generated hard multi-step question – Floyd 9e §14–3"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-ota"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch logarit (IEBO = 30 nA, R1 = 47 kΩ) nhận Vin = 2 V. Điện áp ra là bao nhiêu và khi Vin tăng 10 lần thì ngõ ra thay đổi bao nhiêu?",
+"en": "A log amplifier (IEBO = 30 nA, R1 = 47 kΩ) receives Vin = 2 V. What is the output and by how much does it change when Vin rises tenfold?"
+},
+"opts": [
+{
+"vi": "-181,4 mV; thay đổi -57,6 mV",
+"en": "-181.4 mV; changes by -57.6 mV"
+},
+{
+"vi": "-78,8 mV; thay đổi -25 mV",
+"en": "-78.8 mV; changes by -25 mV"
+},
+{
+"vi": "181,4 mV; thay đổi 57,6 mV",
+"en": "181.4 mV; changes by 57.6 mV"
+},
+{
+"vi": "-18,14 mV; thay đổi -576 mV",
+"en": "-18.14 mV; changes by -576 mV"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Vout = −0,025·ln(Vin/(IEBO·R1)) = −0,025·ln(1418) = -181,4 mV; Vin × 10 cộng thêm −0,025·ln 10 = -57,6 mV (nén dải động).",
+"en": "Vout = −0.025·ln(Vin/(IEBO·R1)) = −0.025·ln(1418) = -181.4 mV; Vin × 10 adds −0.025·ln 10 = -57.6 mV (dynamic-range compression)."
+},
+"level": 3,
+"topic": {
+"en": "Log and antilog amplifiers",
+"vi": "Mạch logarit và đối logarit"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §14–4",
+"en": "Generated hard multi-step question – Floyd 9e §14–4"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-log"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "ADC SAR 12 bit có VFS = 4,096 V, đồng hồ 2 MHz nhận 2,3456 V. Một LSB, mã số nguyên gần nhất và thời gian chuyển đổi n/f_C lần lượt là",
+"en": "A 12-bit SAR ADC with VFS = 4.096 V and a 2 MHz clock receives 2.3456 V. One LSB, the nearest integer code and the conversion time n/f_C are"
+},
+"opts": [
+{
+"vi": "1 mV; 2346; 6 μs",
+"en": "1 mV; 2346; 6 μs"
+},
+{
+"vi": "1 mV; 2346; 2048 μs",
+"en": "1 mV; 2346; 2048 μs"
+},
+{
+"vi": "1,0005 mV; 2345; 6 μs",
+"en": "1.0005 mV; 2345; 6 μs"
+},
+{
+"vi": "1 mV; 2345; 1 μs",
+"en": "1 mV; 2345; 1 μs"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "LSB = 4,096/4096 = 1 mV; 2,3456 V/1 mV = 2345,6 → mã 2346 (làm tròn); SAR cần n = 12 chu kỳ: 12/2 MHz = 6 μs.",
+"en": "LSB = 4.096/4096 = 1 mV; 2.3456 V/1 mV = 2345.6 → code 2346 (rounded); a SAR needs n = 12 clock cycles: 12/2 MHz = 6 μs."
+},
+"level": 3,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Jaeger 5e §12.5–12.6",
+"en": "Generated hard multi-step question – Jaeger 5e §12.5–12.6"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-adc-dac"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch cách ly có tầng vào độ lợi 12 và tầng ra độ lợi 8, ngõ vào 15 mV rms. Điện áp ra rms là",
+"en": "An isolation amplifier has an input stage of gain 12 and an output stage of gain 8 with a 15 mV rms input. The output voltage is"
+},
+"opts": [
+{
+"vi": "1,44 V rms",
+"en": "1.44 V rms"
+},
+{
+"vi": "0,3 V rms",
+"en": "0.3 V rms"
+},
+{
+"vi": "0,18 V rms",
+"en": "0.18 V rms"
+},
+{
+"vi": "1440 V rms",
+"en": "1440 V rms"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Độ lợi tổng = tích hai tầng: 12 × 8 = 96; 96 × 15 mV = 1,44 V rms (hai tầng cách ly điện nhưng tín hiệu vẫn nhân).",
+"en": "The overall gain is the product of the two stages: 12 × 8 = 96; 96 × 15 mV = 1.44 V rms (the stages are electrically isolated but the signal is still multiplied)."
+},
+"level": 3,
+"topic": {
+"en": "Isolation amplifiers",
+"vi": "Mạch khuếch đại cách ly"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §14–2",
+"en": "Generated hard multi-step question – Floyd 9e §14–2"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-isolation"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Nguồn dòng V–I (tải nằm trong vòng hồi tiếp) có Vin = 3,3 V, R1 = 1,5 kΩ, op-amp bão hoà ở ±11 V. Dòng tải và điện trở tải lớn nhất còn giữ dòng không đổi là",
+"en": "A V-to-I current source (load in the feedback loop) has Vin = 3.3 V, R1 = 1.5 kΩ and an op-amp that saturates at ±11 V. The load current and the largest load resistance that keeps it constant are"
+},
+"opts": [
+{
+"vi": "2,2 mA; 3,5 kΩ",
+"en": "2.2 mA; 3.5 kΩ"
+},
+{
+"vi": "2,2 mA; 5 kΩ",
+"en": "2.2 mA; 5 kΩ"
+},
+{
+"vi": "1,1 mA; 3,5 kΩ",
+"en": "1.1 mA; 3.5 kΩ"
+},
+{
+"vi": "2,2 mA; 2 kΩ",
+"en": "2.2 mA; 2 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "I = Vin/R1 = 2,2 mA. Vout = I·(RL + R1) ≤ 11 V → RL ≤ 11/2,2 mA − 1,5 kΩ = 3,5 kΩ.",
+"en": "I = Vin/R1 = 2.2 mA. Vout = I·(RL + R1) ≤ 11 V → RL ≤ 11/2.2 mA − 1.5 kΩ = 3.5 kΩ."
+},
+"level": 3,
+"topic": {
+"en": "Converters and peak detector",
+"vi": "Mạch chuyển đổi và tách đỉnh"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e §14–5",
+"en": "Generated hard multi-step question – Floyd 9e §14–5"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m05-v-i"
+}
+]

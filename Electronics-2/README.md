@@ -1,6 +1,6 @@
 # AE2.025 Electronics 2 — hệ thống tự học song ngữ (VI/EN)
 
-Site: https://tatcataittn.github.io/for-VAQ-USTH/Electronics-2/  ·  10 module, ~1.100 câu hỏi (gốc từ sách + bổ sung), notebook Jupyter, luyện đề tính giờ.
+Site: https://tatcataittn.github.io/for-VAQ-USTH/Electronics-2/  ·  10 module, 1.251 câu hỏi (gốc từ sách + bổ sung, trong đó 161 câu mức 3), notebook Jupyter, luyện đề tính giờ.
 
 | Thư mục | Nội dung |
 |---|---|

@@ -1,0 +1,278 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Servo vận tốc: điện áp điều khiển 15 V, hai điện trở cộng bằng nhau (điện áp ở điểm cộng = trung bình của điện áp điều khiển và điện áp máy phát tốc, e = (Vc − Vt)/2), động cơ 20 vòng/phút mỗi volt, máy phát tốc 0,05 V mỗi vòng/phút. Tốc độ cân bằng và điện áp sai số ở điểm cộng là",
+"en": "A velocity servo has a 15 V control voltage and two equal summing resistors (the summing-point voltage is the average of the control and tachometer voltages, e = (Vc − Vt)/2), a motor of 20 rpm per volt and a tachometer of 0.05 V per rpm. The steady speed and the error voltage at the summing point are"
+},
+"opts": [
+{
+"vi": "100 vòng/phút; 5 V",
+"en": "100 rpm; 5 V"
+},
+{
+"vi": "150 vòng/phút; 7,5 V",
+"en": "150 rpm; 7.5 V"
+},
+{
+"vi": "300 vòng/phút; 15 V",
+"en": "300 rpm; 15 V"
+},
+{
+"vi": "50 vòng/phút; 5 V",
+"en": "50 rpm; 5 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Cân bằng: ω = km·e và e = (Vc − kt·ω)/2 → ω = 20 × (15 − 0,05ω)/2 = 150 − 0,5ω → ω = 100 vòng/phút; e = (15 − 5)/2 = 5 V (sai số không bằng 0 vì servo vận tốc cần một sai số để quay).",
+"en": "Balance: ω = km·e and e = (Vc − kt·ω)/2 → ω = 20 × (15 − 0.05ω)/2 = 150 − 0.5ω → ω = 100 rpm; e = (15 − 5)/2 = 5 V (the error is not zero because a velocity servo needs an error to keep turning)."
+},
+"level": 3,
+"topic": {
+"en": "Stability, hunting and damping",
+"vi": "Ổn định, dao động tìm (hunting) và tắt dần"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM03; SERVOMECHANISM (sv)",
+"en": "Generated hard multi-step question – EASA M04 SM03; SERVOMECHANISM (sv)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m10-stability"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Servomotor cần tối thiểu 2 V để thắng ma sát tĩnh. Máy biến áp điều khiển có độ nhạy 0,15 V/° và bộ khuếch đại có độ lợi 40. Sai số góc tĩnh nhỏ nhất của vòng servo là",
+"en": "The servomotor needs at least 2 V to overcome static friction. The control transformer has a sensitivity of 0.15 V/° and the amplifier a gain of 40. The smallest static angular error of the servo loop is"
+},
+"opts": [
+{
+"vi": "0,333°",
+"en": "0.333°"
+},
+{
+"vi": "13,3°",
+"en": "13.3°"
+},
+{
+"vi": "533°",
+"en": "533°"
+},
+{
+"vi": "0,05°",
+"en": "0.05°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điện áp sai số cần thiết = 2 V/40 = 0,05 V; góc = 0,05/0,15 = 0,333° (cũng là lý do vùng chết quyết định độ chính xác).",
+"en": "The error voltage needed = 2 V/40 = 0.05 V; angle = 0.05/0.15 = 0.333° (this is also why the deadband decides the accuracy)."
+},
+"level": 3,
+"topic": {
+"en": "Open/closed loop and the follow-up",
+"vi": "Vòng hở/kín và bộ sai số (follow-up)"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM03; SERVOMECHANISM (sv)",
+"en": "Generated hard multi-step question – EASA M04 SM03; SERVOMECHANISM (sv)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m10-control-synchro"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Synchro vi sai TDX được nối để góc ra = θ₁ + θ₂, với θ₁ = 135° là góc của máy phát TX nối vào stato TDX và θ₂ = 60° là góc cơ khí của rôto TDX. Nếu đổi chỗ hai dây S1 và S3 giữa TX và TDX (θ₂ giữ nguyên), góc ra trở thành",
+"en": "A differential synchro TDX is connected so that its output angle = θ₁ + θ₂, where θ₁ = 135° is the angle of the transmitter TX feeding the TDX stator and θ₂ = 60° is the mechanical angle of the TDX rotor. If the S1 and S3 leads between the TX and the TDX are interchanged (θ₂ unchanged), the output angle becomes"
+},
+"opts": [
+{
+"vi": "−75° (= 285°)",
+"en": "−75° (= 285°)"
+},
+{
+"vi": "75°",
+"en": "75°"
+},
+{
+"vi": "195°",
+"en": "195°"
+},
+{
+"vi": "−195° (= 165°)",
+"en": "−195° (= 165°)"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Đổi S1–S3 đảo chiều quay, tức đổi dấu θ₁ (đã kiểm bằng điện áp stato, S2 là điểm không): góc ra = −135° + 60° = −75° = 285°. 75° có độ lớn đúng nhưng sai chiều; 195° là khi chưa đổi dây; −195° là khi đổi dấu cả θ₂.",
+"en": "Interchanging S1–S3 reverses the sense of rotation, i.e. it changes the sign of θ₁ (checked with the stator voltages, S2 being the zero): output = −135° + 60° = −75° = 285°. 75° has the right size but the wrong sense; 195° is the unmodified wiring; −195° negates θ₂ as well."
+},
+"level": 3,
+"topic": {
+"en": "Differential, control synchros and resolvers",
+"vi": "Synchro vi sai, synchro điều khiển và resolver"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – SERVOMECHANISM §3.7–3.9 (đảo S1–S3; TDX cộng/trừ tuỳ cách nối)",
+"en": "Generated hard multi-step question – SERVOMECHANISM §3.7–3.9 (S1–S3 reversal; TDX adds or subtracts by wiring)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m10-control-synchro"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Synchro có rôto 115 V qua tỉ số hạ áp 2,2:1 vào mỗi cuộn stato. Khi trục rôto lệch 60° so với trục cuộn stato S1 (điện áp cuộn ∝ cos của góc lệch), điện áp hiệu dụng trên cuộn S1 là",
+"en": "A synchro has a 115 V rotor with a 2.2:1 step-down to each stator coil. With the rotor shaft 60° from the axis of stator coil S1 (coil voltage ∝ cos of the offset), the rms voltage on coil S1 is"
+},
+"opts": [
+{
+"vi": "26,1 V",
+"en": "26.1 V"
+},
+{
+"vi": "52,3 V",
+"en": "52.3 V"
+},
+{
+"vi": "45,3 V",
+"en": "45.3 V"
+},
+{
+"vi": "57,5 V",
+"en": "57.5 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Cực đại = 115/2,2 = 52,3 V (sách SERVOMECHANISM dùng 52 V); V = Vmax·cos 60° = 26,1 V (cos 60° = 0,5).",
+"en": "Maximum = 115/2.2 = 52.3 V (the SERVOMECHANISM text uses 52 V); V = Vmax·cos 60° = 26.1 V (cos 60° = 0.5)."
+},
+"level": 3,
+"topic": {
+"en": "Synchro systems",
+"vi": "Hệ synchro"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM03; SERVOMECHANISM (sv)",
+"en": "Generated hard multi-step question – EASA M04 SM03; SERVOMECHANISM (sv)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m10-synchro"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Servomotor quay 3000 vòng/phút qua hộp số giảm tốc 60:1 (bỏ qua tổn hao). Tốc độ trục tải và hệ số nhân mô-men là",
+"en": "A servomotor turns at 3000 rpm through a 60:1 reduction gear train (losses neglected). The load-shaft speed and the torque multiplication are"
+},
+"opts": [
+{
+"vi": "50 vòng/phút; ×60",
+"en": "50 rpm; ×60"
+},
+{
+"vi": "180000 vòng/phút; ×60",
+"en": "180000 rpm; ×60"
+},
+{
+"vi": "50 vòng/phút; ÷60",
+"en": "50 rpm; ÷60"
+},
+{
+"vi": "50 vòng/phút; ×1",
+"en": "50 rpm; ×1"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Giảm tốc 60:1 chia tốc độ cho 60 (3000/60 = 50 vòng/phút) và nhân mô-men với 60 (công suất không đổi nếu bỏ qua tổn hao): đó là vai trò của hộp số trong servo.",
+"en": "A 60:1 reduction divides the speed by 60 (3000/60 = 50 rpm) and multiplies the torque by 60 (power unchanged if losses are neglected): this is the gear train's job in a servo."
+},
+"level": 3,
+"topic": {
+"en": "Servo loops and components",
+"vi": "Vòng servo và linh kiện"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM03; SERVOMECHANISM (sv)",
+"en": "Generated hard multi-step question – EASA M04 SM03; SERVOMECHANISM (sv)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m10-servo-loop"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Đầu dò dung kháng trong bình nhiên liệu gồm hai bản trụ đồng tâm cố định, điện dung khi rỗng C0 = 100 pF, hằng số điện môi nhiên liệu 2,1 (không khí 1,0). Khi bình đầy 60 % chiều cao, điện dung xấp xỉ",
+"en": "A fuel-tank capacitance probe has two fixed concentric cylindrical plates, an empty capacitance C0 = 100 pF, and a fuel dielectric constant of 2.1 (air 1.0). With the tank 60 % full by height the capacitance is about"
+},
+"opts": [
+{
+"vi": "166 pF",
+"en": "166 pF"
+},
+{
+"vi": "210 pF",
+"en": "210 pF"
+},
+{
+"vi": "160 pF",
+"en": "160 pF"
+},
+{
+"vi": "126 pF",
+"en": "126 pF"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Phần ngập nhiên liệu và phần còn không khí là hai tụ song song: C = C0·[(1 − h) + εr·h] = 100 × (0,4 + 2,1 × 0,6) = 166 pF (diện tích và khoảng cách bản không đổi, chỉ điện môi đổi).",
+"en": "The fuel-covered and the air-filled parts are two capacitors in parallel: C = C0·[(1 − h) + εr·h] = 100 × (0.4 + 2.1 × 0.6) = 166 pF (plate area and spacing are fixed, only the dielectric changes)."
+},
+"level": 3,
+"topic": {
+"en": "Transducers: LVDT, RVDT, inductive, capacitive",
+"vi": "Cảm biến: LVDT, RVDT, cảm ứng, điện dung"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM03; SERVOMECHANISM (sv)",
+"en": "Generated hard multi-step question – EASA M04 SM03; SERVOMECHANISM (sv)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m10-lvdt"
+}
+]

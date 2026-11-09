@@ -1,0 +1,462 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch không đảo thiết kế độ lợi 50 (B = 1/50) dùng op-amp có Aol = 2·10⁴. Độ lợi vòng kín thực và sai số độ lợi là",
+"en": "A noninverting amplifier designed for a gain of 50 (B = 1/50) uses an op-amp with Aol = 2·10⁴. The actual closed-loop gain and the gain error are"
+},
+"opts": [
+{
+"vi": "49,88; -0,249 %",
+"en": "49.88; -0.249 %"
+},
+{
+"vi": "50; 0 %",
+"en": "50; 0 %"
+},
+{
+"vi": "50,12; +0,25 %",
+"en": "50.12; +0.25 %"
+},
+{
+"vi": "24,94; -50 %",
+"en": "24.94; -50 %"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Acl = Aol/(1 + B·Aol) = 20 000/(1 + 400) = 49,88; sai số = (49,88 − 50)/50 = −0,25 % (vòng kín hầu như không phụ thuộc Aol).",
+"en": "Acl = Aol/(1 + B·Aol) = 20,000/(1 + 400) = 49.88; error = (49.88 − 50)/50 = −0.25 % (the closed loop is almost independent of Aol)."
+},
+"level": 3,
+"topic": {
+"en": "Negative feedback and gain",
+"vi": "Hồi tiếp âm và hệ số khuếch đại"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-feedback-gain"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch đảo có Ri = 10 kΩ, Rf = 100 kΩ dùng op-amp có Aol = 5000. Độ lợi vòng kín chính xác là",
+"en": "An inverting amplifier with Ri = 10 kΩ and Rf = 100 kΩ uses an op-amp with Aol = 5000. The exact closed-loop gain is"
+},
+"opts": [
+{
+"vi": "-9,978",
+"en": "-9.978"
+},
+{
+"vi": "-10",
+"en": "-10"
+},
+{
+"vi": "-9,956",
+"en": "-9.956"
+},
+{
+"vi": "-9,98",
+"en": "-9.98"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Acl = −(Rf/Ri)/(1 + (1 + Rf/Ri)/Aol) = −10/(1 + 11/5000) = -9,978 (nhiễu độ lợi là 1 + Rf/Ri = 11, không phải 10).",
+"en": "Acl = −(Rf/Ri)/(1 + (1 + Rf/Ri)/Aol) = −10/(1 + 11/5000) = -9.978 (the noise gain is 1 + Rf/Ri = 11, not 10)."
+},
+"level": 3,
+"topic": {
+"en": "Negative feedback and gain",
+"vi": "Hồi tiếp âm và hệ số khuếch đại"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-inverting"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Op-amp có fT = 2 MHz và slew rate 0,8 V/μs làm mạch không đảo độ lợi 20, tín hiệu vào hình sin biên độ 0,2 V. Tần số cao nhất không méo là",
+"en": "An op-amp with fT = 2 MHz and a slew rate of 0.8 V/μs is used as a noninverting amplifier of gain 20 with a 0.2 V peak sine input. The highest undistorted frequency is"
+},
+"opts": [
+{
+"vi": "31,8 kHz",
+"en": "31.8 kHz"
+},
+{
+"vi": "100 kHz",
+"en": "100 kHz"
+},
+{
+"vi": "637 kHz",
+"en": "637 kHz"
+},
+{
+"vi": "2000 kHz",
+"en": "2000 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Băng thông: fT/Acl = 100 kHz. Slew rate: Vp = 20 × 0,2 = 4 V nên f ≤ SR/(2π·Vp) = 31,8 kHz. Giới hạn nhỏ hơn quyết định: 31,8 kHz.",
+"en": "Bandwidth: fT/Acl = 100 kHz. Slew rate: Vp = 20 × 0.2 = 4 V so f ≤ SR/(2π·Vp) = 31.8 kHz. The smaller limit decides: 31.8 kHz."
+},
+"level": 3,
+"topic": {
+"en": "Offset, bias and slew rate",
+"vi": "Dòng/áp offset, dòng phân cực và slew rate"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-slew-rate"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch đảo Ri = 1 kΩ, Rf = 100 kΩ, không có điện trở bù, op-amp có VOS = 2 mV và dòng phân cực 80 nA mỗi ngõ. Sai số một chiều ở ngõ ra, trường hợp xấu nhất (cùng dấu), xấp xỉ",
+"en": "An inverting amplifier with Ri = 1 kΩ and Rf = 100 kΩ, no compensating resistor, uses an op-amp with VOS = 2 mV and 80 nA bias current at each input. The worst-case (same sign) dc output error is about"
+},
+"opts": [
+{
+"vi": "210 mV",
+"en": "210 mV"
+},
+{
+"vi": "202 mV",
+"en": "202 mV"
+},
+{
+"vi": "8 mV",
+"en": "8 mV"
+},
+{
+"vi": "2 mV",
+"en": "2 mV"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "VOS bị khuếch đại với độ lợi nhiễu 1 + Rf/Ri = 101: 202 mV; dòng phân cực chảy qua Rf: 80 nA × 100 kΩ = 8 mV. Tổng 210 mV.",
+"en": "VOS is amplified by the noise gain 1 + Rf/Ri = 101: 202 mV; the bias current flows through Rf: 80 nA × 100 kΩ = 8 mV. Total 210 mV."
+},
+"level": 3,
+"topic": {
+"en": "Offset, bias and slew rate",
+"vi": "Dòng/áp offset, dòng phân cực và slew rate"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-bias-offset"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch khuếch đại vi sai có độ lợi vi sai 100 và CMRR 90 dB. Ngõ vào có thành phần vi sai 2 mV và chung 1,5 V. Điện áp ra xấp xỉ",
+"en": "A differential amplifier has a differential gain of 100 and a CMRR of 90 dB. The input has a 2 mV differential and a 1.5 V common-mode component. The output is about"
+},
+"opts": [
+{
+"vi": "204,7 mV",
+"en": "204.7 mV"
+},
+{
+"vi": "200 mV",
+"en": "200 mV"
+},
+{
+"vi": "150200 mV",
+"en": "150200 mV"
+},
+{
+"vi": "1867 mV",
+"en": "1867 mV"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "CMRR 90 dB = 31 623 nên Acm = 100/31 623 = 3,16·10⁻³; Vout = 100 × 2 mV + 3,16·10⁻³ × 1,5 V = 200 + 4,74 = 204,7 mV.",
+"en": "CMRR of 90 dB = 31,623 so Acm = 100/31,623 = 3.16·10⁻³; Vout = 100 × 2 mV + 3.16·10⁻³ × 1.5 V = 200 + 4.74 = 204.7 mV."
+},
+"level": 3,
+"topic": {
+"en": "Input modes and CMRR",
+"vi": "Chế độ ngõ vào và CMRR"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-modes-cmrr"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch không đảo có Ri = 1 kΩ, Rf = 49 kΩ, op-amp Aol = 120 000, Zin = 2 MΩ, Zout = 75 Ω. Trở kháng ra của mạch có hồi tiếp là",
+"en": "A noninverting amplifier has Ri = 1 kΩ and Rf = 49 kΩ with an op-amp of Aol = 120,000, Zin = 2 MΩ, Zout = 75 Ω. The output impedance with feedback is"
+},
+"opts": [
+{
+"vi": "31,2 mΩ",
+"en": "31.2 mΩ"
+},
+{
+"vi": "0,625 mΩ",
+"en": "0.625 mΩ"
+},
+{
+"vi": "180000 Ω",
+"en": "180000 Ω"
+},
+{
+"vi": "3,75 Ω",
+"en": "3.75 Ω"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "B = 1/50 = 0,02; 1 + B·Aol = 2401; Zout(NI) = 75/2401 = 31,2 mΩ (và Zin(NI) = 2401 × 2 MΩ = 4,8 GΩ).",
+"en": "B = 1/50 = 0.02; 1 + B·Aol = 2401; Zout(NI) = 75/2401 = 31.2 mΩ (and Zin(NI) = 2401 × 2 MΩ = 4.8 GΩ)."
+},
+"level": 3,
+"topic": {
+"en": "Impedances and compensation",
+"vi": "Trở kháng và bù"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-impedances"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Hai tầng giống hệt nhau, mỗi tầng dùng op-amp fT = 1 MHz với độ lợi 20, mắc nối tiếp. Băng thông −3 dB của cả hai tầng xấp xỉ",
+"en": "Two identical stages, each an op-amp with fT = 1 MHz at a gain of 20, are cascaded. The −3 dB bandwidth of the pair is about"
+},
+"opts": [
+{
+"vi": "32,2 kHz",
+"en": "32.2 kHz"
+},
+{
+"vi": "50 kHz",
+"en": "50 kHz"
+},
+{
+"vi": "25 kHz",
+"en": "25 kHz"
+},
+{
+"vi": "100 kHz",
+"en": "100 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Mỗi tầng: BW = fT/Acl = 50 kHz (một cực). Hai cực giống nhau nối tiếp: BW = 50 kHz × √(√2 − 1) = 32,2 kHz.",
+"en": "Each stage: BW = fT/Acl = 50 kHz (one pole). Two identical poles in cascade: BW = 50 kHz × √(√2 − 1) = 32.2 kHz."
+},
+"level": 3,
+"topic": {
+"en": "Frequency response and bandwidth",
+"vi": "Đáp ứng tần số và băng thông"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-frequency"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Op-amp có Aol(mid) = 200 000 và fc(ol) = 10 Hz làm mạch có độ lợi vòng kín 40 (một cực). Độ lợi tại 100 kHz là",
+"en": "An op-amp with Aol(mid) = 200,000 and fc(ol) = 10 Hz is used with a closed-loop gain of 40 (single pole). The gain at 100 kHz is"
+},
+"opts": [
+{
+"vi": "25,1 dB",
+"en": "25.1 dB"
+},
+{
+"vi": "32 dB",
+"en": "32 dB"
+},
+{
+"vi": "29 dB",
+"en": "29 dB"
+},
+{
+"vi": "26 dB",
+"en": "26 dB"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "fT = 200 000 × 10 = 2 MHz; BWcl = 2 MHz/40 = 50 kHz. Tại 100 kHz: 40/√(1 + 2²) = 17,89 = 25,1 dB (đã vượt quá băng thông).",
+"en": "fT = 200,000 × 10 = 2 MHz; BWcl = 2 MHz/40 = 50 kHz. At 100 kHz: 40/√(1 + 2²) = 17.89 = 25.1 dB (already beyond the bandwidth)."
+},
+"level": 3,
+"topic": {
+"en": "Frequency response and bandwidth",
+"vi": "Đáp ứng tần số và băng thông"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-frequency"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch đảo Ri = 10 kΩ, Rf = 220 kΩ, dòng phân cực 100 nA và dòng offset 10 nA. Với điện trở bù đúng giá trị ở ngõ không đảo, sai số ngõ ra do dòng vào xấp xỉ",
+"en": "An inverting amplifier with Ri = 10 kΩ and Rf = 220 kΩ has a bias current of 100 nA and an offset current of 10 nA. With the correct compensating resistor at the noninverting input, the output error from the input currents is about"
+},
+"opts": [
+{
+"vi": "2,2 mV",
+"en": "2.2 mV"
+},
+{
+"vi": "22 mV",
+"en": "22 mV"
+},
+{
+"vi": "0,957 mV",
+"en": "0.957 mV"
+},
+{
+"vi": "0 mV",
+"en": "0 mV"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Rc = Ri‖Rf = 9,565 kΩ; sai số còn lại = IOS·Rf = 10 nA × 220 kΩ = 2,2 mV (không bù: IB·Rf = 22 mV).",
+"en": "Rc = Ri‖Rf = 9.565 kΩ; the remaining error = IOS·Rf = 10 nA × 220 kΩ = 2.2 mV (uncompensated: IB·Rf = 22 mV)."
+},
+"level": 3,
+"topic": {
+"en": "Impedances and compensation",
+"vi": "Trở kháng và bù"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-bias-offset"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Một op-amp có ba tầng với tần số tới hạn 1 kHz, 20 kHz và 100 kHz. Độ trễ pha tổng tại f = 20 kHz xấp xỉ",
+"en": "An op-amp has three stages with critical frequencies of 1 kHz, 20 kHz and 100 kHz. The total phase lag at f = 20 kHz is about"
+},
+"opts": [
+{
+"vi": "-143,4°",
+"en": "-143.4°"
+},
+{
+"vi": "-45°",
+"en": "-45°"
+},
+{
+"vi": "-135°",
+"en": "-135°"
+},
+{
+"vi": "-53,4°",
+"en": "-53.4°"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "θ = −tan⁻¹(20/1) − tan⁻¹(20/20) − tan⁻¹(20/100) = −87,1° − 45° − 11,3° = -143,4°.",
+"en": "θ = −tan⁻¹(20/1) − tan⁻¹(20/20) − tan⁻¹(20/100) = −87.1° − 45° − 11.3° = -143.4°."
+},
+"level": 3,
+"topic": {
+"en": "Frequency response and bandwidth",
+"vi": "Đáp ứng tần số và băng thông"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.12; Jaeger 5e Ch.10–11",
+"en": "Generated hard multi-step question – Floyd 9e Ch.12; Jaeger 5e Ch.10–11"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m02-frequency"
+}
+]

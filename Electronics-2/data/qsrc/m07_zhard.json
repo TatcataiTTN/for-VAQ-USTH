@@ -1,0 +1,324 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch dao động cầu Wien có R = 8,2 kΩ, C = 0,022 μF. Tần số dao động và điện trở hồi tiếp Rf tối thiểu để khởi động khi Ri = 10 kΩ (độ lợi > 3) là",
+"en": "A Wien-bridge oscillator has R = 8.2 kΩ and C = 0.022 μF. The oscillation frequency and the minimum feedback resistor Rf to start up with Ri = 10 kΩ (gain > 3) are"
+},
+"opts": [
+{
+"vi": "882,2 Hz; Rf > 20 kΩ",
+"en": "882.2 Hz; Rf > 20 kΩ"
+},
+{
+"vi": "882,2 Hz; Rf > 30 kΩ",
+"en": "882.2 Hz; Rf > 30 kΩ"
+},
+{
+"vi": "360,2 Hz; Rf > 20 kΩ",
+"en": "360.2 Hz; Rf > 20 kΩ"
+},
+{
+"vi": "5543 Hz; Rf > 290 kΩ",
+"en": "5543 Hz; Rf > 290 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "fr = 1/(2πRC) = 882,2 Hz; B = 1/3 nên Av = 1 + Rf/Ri phải > 3 → Rf > 2·Ri = 20 kΩ.",
+"en": "fr = 1/(2πRC) = 882.2 Hz; B = 1/3 so Av = 1 + Rf/Ri must exceed 3 → Rf > 2·Ri = 20 kΩ."
+},
+"level": 3,
+"topic": {
+"en": "RC oscillators",
+"vi": "Mạch dao động RC"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-wien"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch dao động dịch pha ba tầng RC (R = 4,7 kΩ, C = 0,01 μF) với Ri = 4,7 kΩ. Tần số dao động và Rf tối thiểu (độ lợi 29) là",
+"en": "A three-section RC phase-shift oscillator (R = 4.7 kΩ, C = 0.01 μF) with Ri = 4.7 kΩ. The oscillation frequency and the minimum Rf (gain 29) are"
+},
+"opts": [
+{
+"vi": "1,382 kHz; Rf = 136 kΩ",
+"en": "1.382 kHz; Rf = 136 kΩ"
+},
+{
+"vi": "3,386 kHz; Rf = 136 kΩ",
+"en": "3.386 kHz; Rf = 136 kΩ"
+},
+{
+"vi": "1,382 kHz; Rf = 9,4 kΩ",
+"en": "1.382 kHz; Rf = 9.4 kΩ"
+},
+{
+"vi": "3,386 kHz; Rf = 14,1 kΩ",
+"en": "3.386 kHz; Rf = 14.1 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "fr = 1/(2π√6·RC) = 1,382 kHz; B = 1/29 nên Rf = 29·Ri = 136 kΩ (đã kiểm: mạng thang ba tầng cho |B| = 1/29, pha 180°).",
+"en": "fr = 1/(2π√6·RC) = 1.382 kHz; B = 1/29 so Rf = 29·Ri = 136 kΩ (checked: the three-section ladder gives |B| = 1/29 at 180°)."
+},
+"level": 3,
+"topic": {
+"en": "RC oscillators",
+"vi": "Mạch dao động RC"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-phase-shift"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch dao động Colpitts có L = 100 μH, C1 = 470 pF, C2 = 47 pF. Tần số dao động và độ lợi tối thiểu Av > C1/C2 là",
+"en": "A Colpitts oscillator has L = 100 μH, C1 = 470 pF and C2 = 47 pF. The oscillation frequency and the minimum gain Av > C1/C2 are"
+},
+"opts": [
+{
+"vi": "2,43 MHz; Av > 10",
+"en": "2.43 MHz; Av > 10"
+},
+{
+"vi": "0,7 MHz; Av > 10",
+"en": "0.7 MHz; Av > 10"
+},
+{
+"vi": "2,43 MHz; Av > 0,1",
+"en": "2.43 MHz; Av > 0.1"
+},
+{
+"vi": "2,32 MHz; Av > 1",
+"en": "2.32 MHz; Av > 1"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "CT = C1C2/(C1 + C2) = 42,7 pF (hai tụ nối tiếp nhìn từ cuộn cảm); f0 = 1/(2π√(L·CT)) = 2,43 MHz; B = C2/C1 = 0,1 nên Av > 10.",
+"en": "CT = C1C2/(C1 + C2) = 42.7 pF (two capacitors in series seen by the coil); f0 = 1/(2π√(L·CT)) = 2.43 MHz; B = C2/C1 = 0.1 so Av > 10."
+},
+"level": 3,
+"topic": {
+"en": "LC and crystal oscillators",
+"vi": "Mạch dao động LC và thạch anh"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-lc"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Thạch anh có Ls = 0,1 H và Cs = 0,04 pF. Tần số cộng hưởng nối tiếp fs = 1/(2π√(Ls·Cs)) là",
+"en": "A crystal has Ls = 0.1 H and Cs = 0.04 pF. The series resonant frequency fs = 1/(2π√(Ls·Cs)) is"
+},
+"opts": [
+{
+"vi": "2,516 MHz",
+"en": "2.516 MHz"
+},
+{
+"vi": "0,4005 MHz",
+"en": "0.4005 MHz"
+},
+{
+"vi": "15,81 MHz",
+"en": "15.81 MHz"
+},
+{
+"vi": "0,002516 MHz",
+"en": "0.002516 MHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "√(0,1 × 0,04·10⁻¹²) = 6,32·10⁻⁸ → fs = 1/(2π × 6,32·10⁻⁸) = 2,516 MHz (đã kiểm: trở kháng tổng bằng thuần trở đúng tại fs).",
+"en": "√(0.1 × 0.04·10⁻¹²) = 6.32·10⁻⁸ → fs = 1/(2π × 6.32·10⁻⁸) = 2.516 MHz (checked: the impedance is purely resistive at fs)."
+},
+"level": 3,
+"topic": {
+"en": "LC and crystal oscillators",
+"vi": "Mạch dao động LC và thạch anh"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-lc"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Thiết kế 555 phi ổn có f = 2 kHz, chu kỳ làm việc 65 %, Cext = 10 nF (f = 1,44/((R1 + 2R2)C), duty = (R1 + R2)/(R1 + 2R2)). Giá trị R1 và R2 xấp xỉ",
+"en": "Design an astable 555 for f = 2 kHz with a 65 % duty cycle and Cext = 10 nF (f = 1.44/((R1 + 2R2)C), duty = (R1 + R2)/(R1 + 2R2)). R1 and R2 are about"
+},
+"opts": [
+{
+"vi": "R1 ≈ 21,6 kΩ; R2 ≈ 25,2 kΩ",
+"en": "R1 ≈ 21.6 kΩ; R2 ≈ 25.2 kΩ"
+},
+{
+"vi": "R1 ≈ 25,2 kΩ; R2 ≈ 21,6 kΩ",
+"en": "R1 ≈ 25.2 kΩ; R2 ≈ 21.6 kΩ"
+},
+{
+"vi": "R1 ≈ 46,8 kΩ; R2 ≈ 25,2 kΩ",
+"en": "R1 ≈ 46.8 kΩ; R2 ≈ 25.2 kΩ"
+},
+{
+"vi": "R1 ≈ 24 kΩ; R2 ≈ 24 kΩ",
+"en": "R1 ≈ 24 kΩ; R2 ≈ 24 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R1 + 2R2 = 1,44/(f·C) = 72 kΩ; duty = 0,65 → R2 = (1 − duty)(R1 + 2R2) = 25,2 kΩ; R1 = 21,6 kΩ (kiểm: tH + tL cho 2004 Hz, duty 0,65).",
+"en": "R1 + 2R2 = 1.44/(f·C) = 72 kΩ; duty = 0.65 → R2 = (1 − duty)(R1 + 2R2) = 25.2 kΩ; R1 = 21.6 kΩ (check: tH + tL gives 2004 Hz, duty 0.65)."
+},
+"level": 3,
+"topic": {
+"en": "The 555 timer",
+"vi": "IC định thời 555"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-555-astable"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "555 đơn ổn cần độ rộng xung tW = 250 ms với C = 4,7 μF (tW = 1,1·R·C). Điện trở R phải bằng",
+"en": "A monostable 555 needs a pulse width tW = 250 ms with C = 4.7 μF (tW = 1.1·R·C). The resistor R must be"
+},
+"opts": [
+{
+"vi": "48,36 kΩ",
+"en": "48.36 kΩ"
+},
+{
+"vi": "76,76 kΩ",
+"en": "76.76 kΩ"
+},
+{
+"vi": "53,19 kΩ",
+"en": "53.19 kΩ"
+},
+{
+"vi": "58,51 kΩ",
+"en": "58.51 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R = tW/(1,1·C) = 0,25/(1,1 × 4,7·10⁻⁶) = 48,36 kΩ (hệ số 0,693 là của chế độ phi ổn).",
+"en": "R = tW/(1.1·C) = 0.25/(1.1 × 4.7·10⁻⁶) = 48.36 kΩ (the factor 0.693 belongs to the astable mode)."
+},
+"level": 3,
+"topic": {
+"en": "The 555 timer",
+"vi": "IC định thời 555"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-555-monostable"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "555 phi ổn (Vcc = 12 V, R1 = R2 = 10 kΩ, Cext = 10 nF) có chân điều khiển (chân 5) được giữ ở 9 V thay vì 8 V mặc định (2/3 Vcc). Tần số khi đó xấp xỉ",
+"en": "An astable 555 (Vcc = 12 V, R1 = R2 = 10 kΩ, Cext = 10 nF) has its control pin (pin 5) held at 9 V instead of the default 8 V (2/3 Vcc). The frequency is then about"
+},
+"opts": [
+{
+"vi": "3,96 kHz",
+"en": "3.96 kHz"
+},
+{
+"vi": "4,81 kHz",
+"en": "4.81 kHz"
+},
+{
+"vi": "4,75 kHz",
+"en": "4.75 kHz"
+},
+{
+"vi": "2,64 kHz",
+"en": "2.64 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Ngưỡng là 9 V và 4,5 V: tH = (R1 + R2)C·ln((12 − 4,5)/(12 − 9)) = 183,3 μs; tL = R2C·ln 2 = 69,31 μs; f = 3,96 kHz (mặc định 4,81 kHz; đã kiểm bằng mô phỏng theo thời gian).",
+"en": "The thresholds are 9 V and 4.5 V: tH = (R1 + R2)C·ln((12 − 4.5)/(12 − 9)) = 183.3 μs; tL = R2C·ln 2 = 69.31 μs; f = 3.96 kHz (default 4.81 kHz; checked by time-domain simulation)."
+},
+"level": 3,
+"topic": {
+"en": "The 555 timer",
+"vi": "IC định thời 555"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.16",
+"en": "Generated hard multi-step question – Floyd 9e Ch.16"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m07-555-astable"
+}
+]

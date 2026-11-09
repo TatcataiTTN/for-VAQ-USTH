@@ -19,14 +19,32 @@ KINDS = ('mcq', 'ca')                                   # true/false items (2 op
 
 def eligible(it): return it['kind'] in KINDS and 3 <= len(it['opts']) <= 6
 
-def pick(items, k, weights, rng, used):
-    """k items of one module, stratified by level, textbook originals favoured, none from `used`."""
+def allocate(quota, weights, rng):
+    """Level targets per module so that the WHOLE paper has the requested mix (rounding per module alone gave the Final 22 % level-3 instead of 25 %).
+    Global totals by largest remainder (ties go to the harder level), per-module floors, then the remaining slots are handed out by largest fractional part."""
+    n = sum(quota.values()); lvs = sorted(weights)
+    tot = {lv: int(n * weights[lv]) for lv in lvs}
+    for lv in sorted(lvs, key=lambda lv: (-(n * weights[lv] - tot[lv]), -lv))[:n - sum(tot.values())]: tot[lv] += 1
+    t = {m: {lv: int(k * weights[lv]) for lv in lvs} for m, k in quota.items()}
+    need = {lv: tot[lv] - sum(t[m][lv] for m in t) for lv in lvs}; slots = {m: quota[m] - sum(t[m].values()) for m in t}
+    cand = sorted(((quota[m] * weights[lv] - t[m][lv], rng.random(), m, lv) for m in t for lv in lvs), reverse=True)
+    for _, _, m, lv in cand:
+        if slots[m] > 0 and need[lv] > 0: t[m][lv] += 1; slots[m] -= 1; need[lv] -= 1
+    for lv in lvs:                                         # leftovers (cannot happen when the totals agree, kept as a guard)
+        for m in t:
+            while slots[m] > 0 and need[lv] > 0: t[m][lv] += 1; slots[m] -= 1; need[lv] -= 1
+    assert sum(need.values()) == 0 and sum(slots.values()) == 0, (need, slots)
+    return t
+
+def pick(items, k, weights, rng, used, target=None):
+    """k items of one module, stratified by level (`target` = level counts from allocate()), textbook originals favoured, none from `used`."""
     avail = collections.defaultdict(list)
     for it in items:
         if it['id'] not in used: avail[it['level']].append(it)
     for lv in avail: avail[lv].sort(key=lambda it: rng.random() + (0 if it['origin'] == 'goc' else 0.5))
-    target = {lv: int(k * w) for lv, w in weights.items()}; rest = k - sum(target.values())
-    for lv in sorted(weights, key=lambda lv: -(k * weights[lv] - target[lv]))[:rest]: target[lv] += 1
+    if target is None:
+        target = {lv: int(k * w) for lv, w in weights.items()}; rest = k - sum(target.values())
+        for lv in sorted(weights, key=lambda lv: -(k * weights[lv] - target[lv]))[:rest]: target[lv] += 1
     got = []
     for lv in sorted(weights):
         take = avail[lv][:target[lv]]; got += take; avail[lv] = avail[lv][len(take):]
@@ -43,11 +61,11 @@ def build(banks):
     for tname in ('midterm', 'final'):
         t = TYPES[tname]; used = set()
         for letter in t['papers']:
-            rng = random.Random(seed); seed += 17; ids = []
+            rng = random.Random(seed); seed += 17; ids = []; alloc = allocate({m: k for m, k in t['quota'].items() if m in byMod}, t['levels'], rng)
             for m in ORDER:
                 k = t['quota'].get(m, 0)
                 if k and m in byMod:
-                    got = pick(byMod[m], k, t['levels'], rng, used); assert len(got) == k, (tname, letter, m, len(got), k); ids += [it['id'] for it in got]; used.update(it['id'] for it in got)
+                    got = pick(byMod[m], k, t['levels'], rng, used, alloc[m]); assert len(got) == k, (tname, letter, m, len(got), k); ids += [it['id'] for it in got]; used.update(it['id'] for it in got)
             papers.append(dict(id=f'{tname}-{letter}', type=tname, label=letter, ids=ids, minutes=t['minutes'], forward=t['forward']))
     pool = [it for m in ORDER if m in byMod for it in byMod[m]]; rng = random.Random(2025); mixed = []
     for k in range(6):                                   # the six mixed sets of 20 questions that existed before

@@ -1,0 +1,370 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ lọc thông thấp Butterworth bậc 4 gồm hai tầng Sallen-Key có hệ số tắt dần DF = 1,848 và DF = 0,765. Tỉ số R1/R2 của tầng có DF = 0,765 là (DF = 2 − R1/R2)",
+"en": "A 4th-order Butterworth low-pass filter uses two Sallen-Key stages with damping factors DF = 1.848 and DF = 0.765. The ratio R1/R2 of the stage with DF = 0.765 is (DF = 2 − R1/R2)"
+},
+"opts": [
+{
+"vi": "1,235",
+"en": "1.235"
+},
+{
+"vi": "0,152",
+"en": "0.152"
+},
+{
+"vi": "0,765",
+"en": "0.765"
+},
+{
+"vi": "2,765",
+"en": "2.765"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R1/R2 = 2 − DF = 2 − 0,765 = 1,235; tầng DF = 1,848 cần R1/R2 = 0,152. Hai giá trị DF lấy từ các cực Butterworth bậc 4 (2 sin 22,5° và 2 sin 67,5°).",
+"en": "R1/R2 = 2 − DF = 2 − 0.765 = 1.235; the DF = 1.848 stage needs R1/R2 = 0.152. The two DF values come from the 4th-order Butterworth poles (2 sin 22.5° and 2 sin 67.5°)."
+},
+"level": 3,
+"topic": {
+"en": "Butterworth, Chebyshev, Bessel; damping",
+"vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-characteristics"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ lọc thông thấp Butterworth 3 cực có fc = 1 kHz. Độ suy giảm tại 8 kHz (đáp ứng Butterworth chính xác) xấp xỉ",
+"en": "A 3-pole Butterworth low-pass filter has fc = 1 kHz. The attenuation at 8 kHz (exact Butterworth response) is about"
+},
+"opts": [
+{
+"vi": "-54,2 dB",
+"en": "-54.2 dB"
+},
+{
+"vi": "-18,1 dB",
+"en": "-18.1 dB"
+},
+{
+"vi": "-36,1 dB",
+"en": "-36.1 dB"
+},
+{
+"vi": "-72,2 dB",
+"en": "-72.2 dB"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "|H|² = 1/(1 + (f/fc)^(2n)) = 1/(1 + 8⁶): −10·log₁₀(262 145) = -54,2 dB (đoạn tiệm cận −60 dB/decade × log 8 = −54,2 dB cũng cho kết quả này vì ở xa fc).",
+"en": "|H|² = 1/(1 + (f/fc)^(2n)) = 1/(1 + 8⁶): −10·log₁₀(262,145) = -54.2 dB (the asymptote −60 dB/decade × log 8 = −54.2 dB agrees because we are far from fc)."
+},
+"level": 3,
+"topic": {
+"en": "Filter responses and poles",
+"vi": "Đáp ứng bộ lọc và số cực"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-poles"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Thiết kế tầng Sallen-Key thông thấp có RA = RB = R và CA = CB = 10 nF, fc = 2,5 kHz. R phải bằng",
+"en": "Design a low-pass Sallen-Key stage with RA = RB = R and CA = CB = 10 nF for fc = 2.5 kHz. R must be"
+},
+"opts": [
+{
+"vi": "6,37 kΩ",
+"en": "6.37 kΩ"
+},
+{
+"vi": "3,18 kΩ",
+"en": "3.18 kΩ"
+},
+{
+"vi": "40 kΩ",
+"en": "40 kΩ"
+},
+{
+"vi": "4,5 kΩ",
+"en": "4.5 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "fc = 1/(2π·R·C) → R = 1/(2π × 2500 × 10 nF) = 6,37 kΩ (với RA = RB, CA = CB thì căn trong công thức tổng quát bằng RC).",
+"en": "fc = 1/(2π·R·C) → R = 1/(2π × 2500 × 10 nF) = 6.37 kΩ (with RA = RB, CA = CB the root of the general formula equals RC)."
+},
+"level": 3,
+"topic": {
+"en": "Low-pass filters",
+"vi": "Bộ lọc thông thấp"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-sallen-key"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ lọc thông dải ghép từ thông cao fc = 300 Hz và thông thấp fc = 3,4 kHz. Tần số trung tâm f0 = √(f₁f₂), Q và loại (hẹp/rộng) là",
+"en": "A band-pass filter is built from a 300 Hz high-pass and a 3.4 kHz low-pass. The centre frequency f0 = √(f₁f₂), the Q and the type (narrow/wide) are"
+},
+"opts": [
+{
+"vi": "1010 Hz; Q = 0,326; dải rộng",
+"en": "1010 Hz; Q = 0.326; wide-band"
+},
+{
+"vi": "1850 Hz; Q = 0,597; dải rộng",
+"en": "1850 Hz; Q = 0.597; wide-band"
+},
+{
+"vi": "1010 Hz; Q = 3,07; dải hẹp",
+"en": "1010 Hz; Q = 3.07; narrow-band"
+},
+{
+"vi": "3400 Hz; Q = 1,1; dải hẹp",
+"en": "3400 Hz; Q = 1.1; narrow-band"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "f0 = √(300 × 3400) = 1010 Hz (trung bình nhân); BW = 3400 − 300 = 3100 Hz; Q = f0/BW = 0,326 < 1 nên là dải rộng (dải hẹp khi Q > 10).",
+"en": "f0 = √(300 × 3400) = 1010 Hz (geometric mean); BW = 3400 − 300 = 3100 Hz; Q = f0/BW = 0.326 < 1 so it is wide-band (narrow-band needs Q > 10)."
+},
+"level": 3,
+"topic": {
+"en": "Band-pass and band-stop filters",
+"vi": "Bộ lọc thông dải và chắn dải"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-bandpass"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ lọc thông dải hồi tiếp nhiều đường (hai tụ bằng nhau C = 10 nF) cần f0 = 1 kHz và Q = 10. Điện trở R2 đặt băng thông (BW = 1/(π·R2·C)) phải bằng",
+"en": "A multiple-feedback band-pass filter (two equal capacitors C = 10 nF) must have f0 = 1 kHz and Q = 10. The resistor R2 that sets the bandwidth (BW = 1/(π·R2·C)) must be"
+},
+"opts": [
+{
+"vi": "318,3 kΩ",
+"en": "318.3 kΩ"
+},
+{
+"vi": "159,2 kΩ",
+"en": "159.2 kΩ"
+},
+{
+"vi": "31,83 kΩ",
+"en": "31.83 kΩ"
+},
+{
+"vi": "3183 kΩ",
+"en": "3183 kΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "BW = f0/Q = 100 Hz; R2 = 1/(π·BW·C) = 1/(π × 100 × 10 nF) = 318,3 kΩ (đã kiểm bằng đáp ứng tần số của mạch: đỉnh ở f0, băng thông 100 Hz).",
+"en": "BW = f0/Q = 100 Hz; R2 = 1/(π·BW·C) = 1/(π × 100 × 10 nF) = 318.3 kΩ (checked on the circuit's frequency response: peak at f0, bandwidth 100 Hz)."
+},
+"level": 3,
+"topic": {
+"en": "Band-pass and band-stop filters",
+"vi": "Bộ lọc thông dải và chắn dải"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-bandpass"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Bộ lọc thông cao Butterworth 4 cực (hai tầng Sallen-Key). Độ suy giảm tại f = fc/10 xấp xỉ",
+"en": "A 4-pole Butterworth high-pass filter (two Sallen-Key stages). The attenuation at f = fc/10 is about"
+},
+"opts": [
+{
+"vi": "-80 dB",
+"en": "-80 dB"
+},
+{
+"vi": "−40 dB",
+"en": "−40 dB"
+},
+{
+"vi": "−20 dB",
+"en": "−20 dB"
+},
+{
+"vi": "−60 dB",
+"en": "−60 dB"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "|H|² = 1/(1 + (fc/f)^(2n)) = 1/(1 + 10⁸) → −80 dB: mỗi cực −20 dB/decade, bốn cực −80 dB/decade.",
+"en": "|H|² = 1/(1 + (fc/f)^(2n)) = 1/(1 + 10⁸) → −80 dB: each pole gives −20 dB/decade, four poles −80 dB/decade."
+},
+"level": 3,
+"topic": {
+"en": "High-pass filters",
+"vi": "Bộ lọc thông cao"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-poles"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Tầng Sallen-Key hai cực đáp ứng Bessel có DF = 1,732. Tỉ số R1/R2 và hệ số phẩm chất tương ứng Q = 1/DF là",
+"en": "A two-pole Sallen-Key stage with a Bessel response has DF = 1.732. The ratio R1/R2 and the corresponding quality factor Q = 1/DF are"
+},
+"opts": [
+{
+"vi": "0,268; Q = 0,577",
+"en": "0.268; Q = 0.577"
+},
+{
+"vi": "0,586; Q = 0,707",
+"en": "0.586; Q = 0.707"
+},
+{
+"vi": "3,73; Q = 1,73",
+"en": "3.73; Q = 1.73"
+},
+{
+"vi": "0,268; Q = 1,73",
+"en": "0.268; Q = 1.73"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R1/R2 = 2 − DF = 2 − 1,732 = 0,268; Q = 1/DF = 0,577 (Butterworth hai cực: DF = 1,414, Q = 0,707, R1/R2 = 0,586).",
+"en": "R1/R2 = 2 − DF = 2 − 1.732 = 0.268; Q = 1/DF = 0.577 (two-pole Butterworth: DF = 1.414, Q = 0.707, R1/R2 = 0.586)."
+},
+"level": 3,
+"topic": {
+"en": "Butterworth, Chebyshev, Bessel; damping",
+"vi": "Butterworth, Chebyshev, Bessel; hệ số tắt dần"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-characteristics"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Hai bộ lọc thông thấp RC một cực giống nhau (mỗi bộ fc = 10 kHz) được ghép nối tiếp qua mạch đệm. Tần số −3 dB của cả hai xấp xỉ",
+"en": "Two identical single-pole RC low-pass filters (each fc = 10 kHz) are cascaded through a buffer. The −3 dB frequency of the pair is about"
+},
+"opts": [
+{
+"vi": "6,44 kHz",
+"en": "6.44 kHz"
+},
+{
+"vi": "10 kHz",
+"en": "10 kHz"
+},
+{
+"vi": "5 kHz",
+"en": "5 kHz"
+},
+{
+"vi": "7,07 kHz",
+"en": "7.07 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "|H|² = 1/(1 + (f/fc)²)² = 1/2 → (f/fc)² = √2 − 1 → f = fc·√(√2 − 1) = 6,44 kHz (ghép cực làm hẹp băng thông, không giữ nguyên fc).",
+"en": "|H|² = 1/(1 + (f/fc)²)² = 1/2 → (f/fc)² = √2 − 1 → f = fc·√(√2 − 1) = 6.44 kHz (cascading poles narrows the bandwidth; fc does not stay)."
+},
+"level": 3,
+"topic": {
+"en": "Filter responses and poles",
+"vi": "Đáp ứng bộ lọc và số cực"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.15",
+"en": "Generated hard multi-step question – Floyd 9e Ch.15"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m06-cascade"
+}
+]

@@ -3,18 +3,18 @@
 ## Đã xong (10/10 module, song ngữ VI/EN)
 | Module | Nguồn chính | Câu hỏi đóng (gốc + bổ sung) | Bài có lời giải | Cách kiểm chứng |
 |---|---|---|---|---|
-| m01 IC & logic | EASA M04 SM01 (Q1-23…1-46) | 79 | 24 | 57 câu đối chiếu trang EASA, 46 câu tính lại bằng script |
-| m02 Op-amp | Floyd ch.12 | 165 (51 gốc) | 13 | `build/verify/verify_m02.py` (100 câu số) + đáp án lẻ của sách |
-| m03 Mạch op-amp cơ bản | Floyd ch.13 | 111 (33 gốc) | 14 | `verify_m03.py` (59 câu số) |
-| m04 Ghép tầng & hồi tiếp | Floyd §6-6, §7-2, §7-3 + EASA SM01 tr.49-53 | 100 (24 gốc, gồm 11 Circuit-Action có hình) | 11 (gồm Bài 31, 33 có hình, đối chiếu đáp án sách) | `verify_m04.py` (33 chứng cứ EASA + 43 câu số + 11 Circuit-Action tính lại bằng mô hình mạch + 3 đáp án lẻ của sách) |
-| m05 Op-amp chuyên dụng | Floyd ch.14 | 104 (32 gốc) | 12 | `verify_m05.py` (56 câu số) |
-| m06 Bộ lọc tích cực | Floyd ch.15 | 126 (43 gốc) | 10 | `verify_m06.py` (58 câu số) |
-| m07 Dao động & 555 | Floyd ch.16 | 117 (36 gốc) | 11 | `verify_m07.py` (60 câu số) |
-| m08 Ổn áp | Floyd ch.17 | 103 (28 gốc) | 17 | `verify_m08.py` (54 câu số) |
-| m09 PCB | EASA M04 SM02 | 89 | 13 | `verify_m09.py` (90 chứng cứ EASA + 12 câu số) |
-| m10 Servo & synchro | EASA M04 SM03 + `SERVOMECHANISM (sv).pdf` | 105 | 15 | `verify_m10.py` (101 chứng cứ + 19 câu số) |
+| m01 IC & logic | EASA M04 SM01 (Q1-23…1-46) | 118 (tất cả bổ sung; 11 câu mức 3) | 24 | 57 câu đối chiếu trang EASA, 46 câu tính lại bằng script |
+| m02 Op-amp | Floyd ch.12 | 175 (51 gốc; 20 câu mức 3) | 13 | `build/verify/verify_m02.py` (100 câu số) + đáp án lẻ của sách |
+| m03 Mạch op-amp cơ bản | Floyd ch.13 | 120 (33 gốc; 18 câu mức 3) | 14 | `verify_m03.py` (59 câu số) |
+| m04 Ghép tầng & hồi tiếp | Floyd §6-6, §7-2, §7-3 + EASA SM01 tr.49-53 | 107 (24 gốc, gồm 11 Circuit-Action có hình; 15 câu mức 3) | 11 (gồm Bài 31, 33 có hình, đối chiếu đáp án sách) | `verify_m04.py` (33 chứng cứ EASA + 43 câu số + 11 Circuit-Action tính lại bằng mô hình mạch + 3 đáp án lẻ của sách) |
+| m05 Op-amp chuyên dụng | Floyd ch.14 | 130 (32 gốc; 15 câu mức 3) | 12 | `verify_m05.py` (56 câu số) |
+| m06 Bộ lọc tích cực | Floyd ch.15 | 134 (43 gốc; 16 câu mức 3) | 10 | `verify_m06.py` (58 câu số) |
+| m07 Dao động & 555 | Floyd ch.16 | 128 (36 gốc; 21 câu mức 3) | 11 | `verify_m07.py` (60 câu số) |
+| m08 Ổn áp | Floyd ch.17 | 116 (28 gốc; 18 câu mức 3) | 17 | `verify_m08.py` (54 câu số) |
+| m09 PCB | EASA M04 SM02 | 93 (10 câu mức 3) | 13 | `verify_m09.py` (90 chứng cứ EASA + 12 câu số) |
+| m10 Servo & synchro | EASA M04 SM03 + `SERVOMECHANISM (sv).pdf` | 130 (17 câu mức 3) | 15 | `verify_m10.py` (101 chứng cứ + 19 câu số) |
 
-Mỗi module có: bài giảng 5 phần (VI/EN), ghi chú chi tiết với 5 ví dụ có lời giải số, ngân hàng câu hỏi (có giải thích, nguồn từng câu), luyện đề, notebook Jupyter VI+EN đã chạy sẵn, và `data/verify/mNN_notes.json` ghi lại lỗi/nghi vấn của sách (hiển thị ở trang Nguồn & đối chiếu).
+Tổng ngân hàng: 1.251 câu (mức 1: 628, mức 2: 462, mức 3: 161). Mỗi module có: bài giảng 5 phần (VI/EN), ghi chú chi tiết với 5 ví dụ có lời giải số, ngân hàng câu hỏi (có giải thích, nguồn từng câu), luyện đề, notebook Jupyter VI+EN đã chạy sẵn, và `data/verify/mNN_notes.json` ghi lại lỗi/nghi vấn của sách (hiển thị ở trang Nguồn & đối chiếu).
 
 ## Bản đồ nội dung sách (trang `vi|en/books/index.html`)
 Mục lục thật của 4 quyển (Floyd 9e: 145 mục + 122 phần cuối chương; Jaeger 5e: 274 mục; EASA M04: 127 tiêu đề; SERVO sv: 69 mục) với trang in, trang PDF, module dùng (core / lab / ref / cited / optional), số câu hỏi neo vào từng mục. Có lọc theo module, chỉ mục đã gán, tìm theo tên.
@@ -47,6 +47,15 @@ Câu hỏi “đã đủ các câu tính toán chưa” được trả lời b�
 - Chạy: `python3 -I build/verify/verify_calc_solved.py` (chạy mọi solver, thoát lỗi nếu có bài tính giải được mà chưa giải hay chưa được ghi lý do bỏ). `scan_all.py` gộp `calc_solved.json` vào catalog.
 - Giới hạn còn lại, nói thẳng: 255 bài cần hình (158 là problem Jaeger không có đáp án in, 61 là Example/Related của Floyd, còn lại là problem Floyd chẵn…). Muốn luyện được cần cắt hình từ PDF và đọc giá trị trong hình (với Floyd, nhãn hình nằm trong lớp chữ nên đọc được; Jaeger cần đọc ảnh). Cờ “có số” của bộ quét chỉ nhận đề có đại lượng kèm đơn vị hoặc ≥ 3 số, nên vài đề tính không đơn vị (“nếu Q tăng gấp đôi thì băng thông là bao nhiêu”) có thể không được tính vào 724.
 - Mức khái niệm: 65/65 khái niệm có công thức đều có ≥ 3 câu tính trong ngân hàng (612 trong 1.173 câu là câu tính; m09 PCB 16 và m10 servo 38 vì EASA chủ yếu định tính).
+
+## Câu khó mức 3 và rà soát ngân hàng (`build/gen/gen_hard.py`, `build/verify/verify_hard.py`, `build/verify/audit_bank.py`)
+- **Vì sao**: rà soát cho thấy ngân hàng chỉ có 82 câu mức 3 (module 01 chỉ có 1) nên đề Final không đạt 25 % câu khó. Đã viết **78 câu khó nhiều bước** (m01 10, m02 10, m03 9, m04 7, m05 8, m06 8, m07 7, m08 9, m09 4, m10 6; thẻ `hard`, tệp `data/qsrc/mNN_zhard.json`): tính hai bước trở lên (hồi tiếp với Aol hữu hạn, trễ pha ba tầng, phương trình dòng cân bằng của bộ đảo CMOS, nhiệt độ mối nối 7805, ổn áp shunt, nối TX–TDX khi đảo S1–S3, đầu dò điện dung nhiên liệu…). Đáp án nhiễu là **lỗi hay gặp đã tính** (quên bình phương, nhầm 2R với R, dùng sai mẫu số…). Số liệu lấy từ sách chỉ khi sách có (EASA: CMOS dễ hỏng từ 250 V, EPROM từ 100 V, dây đeo cổ tay nối đất qua 1 MΩ; SERVOMECHANISM: S2 là điểm không, đảo S1–S3 đảo chiều quay, cuộn synchro tối đa 52 V). Ý “người chỉ cảm thấy tia lửa từ 3000 V” không có trong sách nên đã bỏ.
+- **Kiểm chứng ba lớp**: (1) mỗi câu trong bộ sinh có một đường tính thứ hai (giải hệ nút, mô phỏng theo thời gian, nghiệm số, vét cạn…) và dừng nếu lệch; (2) `verify_hard.py` tính lại độc lập cả 78 câu bằng phương pháp khác (hệ cực Butterworth của scipy, nghiệm số của đáp ứng phức, mô phỏng Schmitt, tích phân số cho công suất, `solve_ivp` cho 555…), so với đáp án đã lưu (dung sai 0,6 %) và đối chiếu bản ghép `data/qbank` (cùng câu, cùng đáp án đúng, mức 3); thử cố ý sửa sai hai đáp án kỳ vọng thì script báo lỗi; (3) đọc từng câu, đã sửa: câu hysteresis thiếu cách nối R1/R2 (nay theo Floyd Hình 13–7), câu synchro vi sai phụ thuộc quy ước cộng/trừ (nay nói rõ nối để ra θ₁+θ₂ rồi đảo S1–S3), phương án nhiễu vô nghĩa hoặc trùng nghĩa (0,23 mA = 230 µA).
+- **Đề thi**: `build/exams.py` có `allocate()` (và bản JS tương ứng trong `_shared/exam.js`) chia mức độ theo cả đề (phần dư lớn nhất), nên Final A/B/C có 12 / 25 / 13 câu mức 1/2/3 (26 % câu khó; trước là 22 %), Midterm 10/15/5. Ba đề cùng loại không trùng câu.
+- **Trình bày**: `build/assemble.py` có bước `polish()` (idempotent): phương án nhiễu in bằng `%g` (`2.02e-06 GΩ`, `1e+03 A`; 20 câu) được đổi sang tiền tố SI hoặc ×10ⁿ; số trong phần tiếng Việt trùng nguyên văn với bản tiếng Anh (chưa địa phương hoá, ≈ 1.700 chỗ ở 447 câu) được đổi sang dấu phẩy thập phân và dấu chấm hàng nghìn, không đụng số hiệu như “Hình 13.7”. Không chữ số nào bị đổi (so với bản sao lưu).
+- **`build/verify/audit_bank.py`** (đã đạt: 1.251 câu, 0 lỗi): đáp án trong phạm vi, phương án không trùng (EN, VI), có giải thích và nguồn, không trùng đề, không ký tự rác (`nan`, `None`, `e+`, `{}`), không còn dấu chấm thập phân hay dấu cách ngăn nghìn trong tiếng Việt, tương ứng chữ số EN/VI trong phương án, phương án chỉ có tiếng Anh ở phía VI (ngoại trừ chữ viết tắt và tên chân đã xem từng cái), lệch vị trí đáp án.
+- **Cách làm tiếp**: `python3 -I build/gen/gen_hard.py && python3 build/assemble.py && python3 -I build/concepts_data.py && python3 build/build_site.py`, rồi `verify_hard.py`, `audit_bank.py` và các kiểm thử trình duyệt. `tests/site_test.py` nay chờ hub đề thi dựng xong (trước đó đếm thẻ ngay khi `load`, nên chập chờn).
+- Lưu ý: các thay đổi này làm `assemble.py` xáo lại vị trí đáp án của mọi module có thêm câu (m01–m10): kết quả cũ lưu trong trình duyệt (`bank:mNN`) có thể lệch, bấm “Reset” ở bảng tiến độ.
 
 ## Đề thi thử: midterm, final, speed, tùy chỉnh (`exam/`, `build/exams.py`, `_shared/exam.js`)
 - **Cấu trúc do site đặt** (đề cương AE2.025 không nêu hình thức thi; trang ghi rõ điều này): Midterm = module 01–05, 30 câu, 40 phút, **không quay lại câu trước** (kiểu Moodle), 3 đề cố định A/B/C + đề ngẫu nhiên; Final = 10 module, 50 câu, 60 phút, đi lại tự do, 3 đề A/B/C + ngẫu nhiên; Speed = 30 câu ngẫu nhiên từ mọi module, 20 phút; Tùy chỉnh = chọn module, số câu, thời gian, có cho quay lại không, chỉ câu gốc của sách; cùng với 6 đề luyện hỗn hợp 20 câu/30 phút như trước. Số câu theo module và tỉ lệ mức độ nằm trong `build/exams.py` (chỉnh ở đó).

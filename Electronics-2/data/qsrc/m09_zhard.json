@@ -1,0 +1,186 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Đường dẫn đồng dày 70 μm (2 oz), rộng 0,5 mm, dài 20 cm (ρ = 1,68·10⁻⁸ Ω·m) mang dòng 3 A. Điện áp rơi trên đường dẫn và công suất toả nhiệt là",
+"en": "A copper trace 70 μm thick (2 oz), 0.5 mm wide and 20 cm long (ρ = 1.68·10⁻⁸ Ω·m) carries 3 A. The voltage drop along it and the power dissipated are"
+},
+"opts": [
+{
+"vi": "288 mV; 0,864 W",
+"en": "288 mV; 0.864 W"
+},
+{
+"vi": "2880 mV; 8,64 W",
+"en": "2880 mV; 8.64 W"
+},
+{
+"vi": "144 mV; 0,432 W",
+"en": "144 mV; 0.432 W"
+},
+{
+"vi": "288 mV; 0,288 W",
+"en": "288 mV; 0.288 W"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "R = ρL/(w·t) = 1,68·10⁻⁸ × 0,2/(0,5·10⁻³ × 70·10⁻⁶) = 96 mΩ; V = I·R = 288 mV; P = I²R = 0,864 W (quên bình phương dòng cho 0,288 W).",
+"en": "R = ρL/(w·t) = 1.68·10⁻⁸ × 0.2/(0.5·10⁻³ × 70·10⁻⁶) = 96 mΩ; V = I·R = 288 mV; P = I²R = 0.864 W (forgetting to square the current gives 0.288 W)."
+},
+"level": 3,
+"topic": {
+"en": "PCB trace physics",
+"vi": "Vật lý đường dẫn PCB"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – tự thiết kế (R = ρL/A)",
+"en": "Generated hard multi-step question – self-designed (R = ρL/A)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m09-trace"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mỗi via có điện trở 1,2 mΩ. Dùng 5 via song song để nối hai lớp thì điện trở tương đương là",
+"en": "Each via has a resistance of 1.2 mΩ. Five vias in parallel joining two layers give an equivalent resistance of"
+},
+"opts": [
+{
+"vi": "0,24 mΩ",
+"en": "0.24 mΩ"
+},
+{
+"vi": "6 mΩ",
+"en": "6 mΩ"
+},
+{
+"vi": "1,2 mΩ",
+"en": "1.2 mΩ"
+},
+{
+"vi": "0,048 mΩ",
+"en": "0.048 mΩ"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Điện trở song song = R/N = 1,2 mΩ/5 = 0,24 mΩ (thêm via vừa giảm điện trở vừa tăng khả năng tải dòng và dẫn nhiệt).",
+"en": "Parallel resistance = R/N = 1.2 mΩ/5 = 0.24 mΩ (more vias lower the resistance and raise the current and heat capacity)."
+},
+"level": 3,
+"topic": {
+"en": "Multilayer boards and vias",
+"vi": "PCB nhiều lớp và via"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM02",
+"en": "Generated hard multi-step question – EASA M04 SM02"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m09-vias"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Theo EASA M04, ngưỡng ESD thấp nhất làm hỏng: transistor lưỡng cực 380 V, CMOS 250 V, EPROM 100 V. Một kỹ thuật viên đã tích tĩnh điện 300 V chạm vào bảng mạch. Loại linh kiện nào có nguy cơ hỏng?",
+"en": "According to EASA M04 the lowest ESD voltage that can damage a part is 380 V for bipolar transistors, 250 V for CMOS and 100 V for EPROMs. A technician carrying 300 V of static charge touches a circuit board. Which device types are at risk?"
+},
+"opts": [
+{
+"vi": "CMOS và EPROM, không phải transistor lưỡng cực",
+"en": "CMOS and EPROM, but not bipolar transistors"
+},
+{
+"vi": "Cả ba loại",
+"en": "All three types"
+},
+{
+"vi": "Chỉ EPROM",
+"en": "Only EPROM"
+},
+{
+"vi": "Transistor lưỡng cực và CMOS",
+"en": "Bipolar transistors and CMOS"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "So 300 V với ngưỡng thấp nhất: 300 ≥ 250 (CMOS) và 300 ≥ 100 (EPROM) nên cả hai có nguy cơ; 300 < 380 nên transistor lưỡng cực chưa tới ngưỡng. (Khoảng nhạy cảm là khoảng giữa các linh kiện cùng loại, nên \"có nguy cơ\" chứ chưa chắc hỏng.)",
+"en": "Compare 300 V with the lowest thresholds: 300 ≥ 250 (CMOS) and 300 ≥ 100 (EPROM) so both are at risk; 300 < 380 so bipolar transistors are below their threshold. (The ranges span different parts of one family, so \"at risk\" does not mean \"certain to fail\".)"
+},
+"level": 3,
+"topic": {
+"en": "Static electricity and ESD",
+"vi": "Tĩnh điện và ESD"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM02 §2.7 (ESD-sensitive items)",
+"en": "Generated hard multi-step question – EASA M04 SM02 §2.7 (ESD-sensitive items)"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m09-esd-physics"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Dây đeo cổ tay nối đất qua điện trở 1 MΩ. Nếu đất bất ngờ mang điện 230 V, dòng tối đa qua người (bỏ qua điện trở cơ thể) xấp xỉ",
+"en": "A wrist strap is grounded through 1 MΩ. If the ground suddenly becomes live at 230 V, the maximum current through the person (body resistance neglected) is about"
+},
+"opts": [
+{
+"vi": "230 μA",
+"en": "230 μA"
+},
+{
+"vi": "230 mA",
+"en": "230 mA"
+},
+{
+"vi": "23 μA",
+"en": "23 μA"
+},
+{
+"vi": "23 mA",
+"en": "23 mA"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "I = V/R = 230 V/1 MΩ = 230 μA: điện trở 1 MΩ giữ dòng ở mức thấp, đó là lý do dây đeo không nối thẳng xuống đất.",
+"en": "I = V/R = 230 V/1 MΩ = 230 μA: the 1 MΩ resistor keeps the current low, which is why the strap is never wired straight to ground."
+},
+"level": 3,
+"topic": {
+"en": "ESD protection and handling",
+"vi": "Chống ESD và thao tác"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – EASA M04 SM02",
+"en": "Generated hard multi-step question – EASA M04 SM02"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m09-esd-protection"
+}
+]

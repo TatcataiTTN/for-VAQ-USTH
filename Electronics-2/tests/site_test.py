@@ -13,6 +13,9 @@ with sync_playwright() as pw:
         pg.on('pageerror', lambda x, e=errs: e.append('pageerror: ' + str(x)))
         pg.on('response', lambda r, e=errs: e.append(f'{r.status} {r.url}') if r.status >= 400 else None)
         pg.goto(BASE + rel, wait_until='load')
+        if rel.endswith('exam/index.html'):                    # the hub builds its cards after fetching data.json (about 0.4 MB): wait for them instead of racing the load event
+            try: pg.wait_for_function("() => document.querySelectorAll('#exam .qitem, #exam .panel, #exam .xq').length >= 15", timeout=15000)
+            except Exception: pass
         info = pg.evaluate("() => ({slides: document.querySelectorAll('.mdeck-slide').length, quiz: document.querySelectorAll('.quiz .qitem').length, bank: document.querySelectorAll('#bank .qitem').length, exam: document.querySelectorAll('#exam .qitem, #exam .panel, #exam .xq').length})")
         pg.evaluate("async () => { for (let y = 0; y < document.body.scrollHeight; y += 700) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 30)); } }"); pg.wait_for_timeout(300)
         broken = pg.evaluate("() => [...document.images].filter(i => i.complete && i.naturalWidth === 0).map(i => i.src)")

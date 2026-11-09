@@ -1,0 +1,416 @@
+[
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch so sánh có hysteresis, ngõ ra bị giới hạn bởi hai zener 5,1 V ngược chiều (sụt thuận 0,7 V), R1 = 33 kΩ nối từ ngõ ra về ngõ vào không đảo và R2 = 6,8 kΩ nối từ ngõ vào không đảo xuống đất (Floyd Hình 13–7). Điện áp ngưỡng trên VUTP và độ rộng vòng trễ VHYS là",
+"en": "A comparator with hysteresis has its output bounded by two back-to-back 5.1 V zeners (0.7 V forward drop), R1 = 33 kΩ from the output to the noninverting input and R2 = 6.8 kΩ from the noninverting input to ground (Floyd Fig. 13–7). The upper trigger point VUTP and the hysteresis width VHYS are"
+},
+"opts": [
+{
+"vi": "0,991 V; 1,98 V",
+"en": "0.991 V; 1.98 V"
+},
+{
+"vi": "2,05 V; 4,1 V",
+"en": "2.05 V; 4.1 V"
+},
+{
+"vi": "4,81 V; 9,62 V",
+"en": "4.81 V; 9.62 V"
+},
+{
+"vi": "0,871 V; 1,74 V",
+"en": "0.871 V; 1.74 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Biên độ ngõ ra = ±(5,1 + 0,7) = ±5,8 V; B = 6,8/(33 + 6,8) = 0,171; VUTP = 0,171 × 5,8 = 0,991 V; VHYS = 2·VUTP = 1,98 V.",
+"en": "Output swing = ±(5.1 + 0.7) = ±5.8 V; B = 6.8/(33 + 6.8) = 0.171; VUTP = 0.171 × 5.8 = 0.991 V; VHYS = 2·VUTP = 1.98 V."
+},
+"level": 3,
+"topic": {
+"en": "Comparators and hysteresis",
+"vi": "Mạch so sánh và trễ (hysteresis)"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-hysteresis"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Sóng vuông ±2 V, 500 Hz, chu kỳ làm việc 50 % đặt vào mạch tích phân R = 10 kΩ, C = 47 nF. Biên độ đỉnh–đỉnh của sóng tam giác ở ngõ ra xấp xỉ",
+"en": "A ±2 V, 500 Hz square wave with a 50 % duty cycle drives an integrator with R = 10 kΩ and C = 47 nF. The peak-to-peak amplitude of the triangular output is about"
+},
+"opts": [
+{
+"vi": "4,26 V",
+"en": "4.26 V"
+},
+{
+"vi": "8,51 V",
+"en": "8.51 V"
+},
+{
+"vi": "2,13 V",
+"en": "2.13 V"
+},
+{
+"vi": "0,94 V",
+"en": "0.94 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Độ dốc = Vin/(R·C) = 2/(10 kΩ × 47 nF) = 4255 V/s; nửa chu kỳ 1 ms nên ΔV = 4,26 V (đi xuống rồi lên: đỉnh–đỉnh bằng đúng ΔV này).",
+"en": "Slope = Vin/(R·C) = 2/(10 kΩ × 47 nF) = 4255 V/s; a half period of 1 ms gives ΔV = 4.26 V (down then up: the peak-to-peak equals this ΔV)."
+},
+"level": 3,
+"topic": {
+"en": "Integrator",
+"vi": "Mạch tích phân"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-integrator"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch tích phân R = 100 kΩ, C = 0,1 μF, op-amp bão hoà ở ±11 V, nhận bước +1,5 V không đổi. Sau bao lâu ngõ ra chạm mức bão hoà −11 V (từ 0 V)?",
+"en": "An integrator with R = 100 kΩ and C = 0.1 μF, op-amp saturating at ±11 V, receives a constant +1.5 V step. How long until the output reaches −11 V (from 0 V)?"
+},
+"opts": [
+{
+"vi": "73,3 ms",
+"en": "73.3 ms"
+},
+{
+"vi": "7330 ms",
+"en": "7330 ms"
+},
+{
+"vi": "1,36 ms",
+"en": "1.36 ms"
+},
+{
+"vi": "147 ms",
+"en": "147 ms"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "RC = 10 ms; độ dốc = 1,5/10 ms = 150 V/s; t = 11 V/150 V/s = 73,3 ms.",
+"en": "RC = 10 ms; slope = 1.5/10 ms = 150 V/s; t = 11 V/150 V/s = 73.3 ms."
+},
+"level": 3,
+"topic": {
+"en": "Integrator",
+"vi": "Mạch tích phân"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-integrator"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Sóng tam giác ±1 V, 1 kHz đặt vào mạch vi phân Rf = 10 kΩ, C = 10 nF. Biên độ đỉnh của sóng vuông ngõ ra là",
+"en": "A ±1 V, 1 kHz triangular wave drives a differentiator with Rf = 10 kΩ and C = 10 nF. The peak amplitude of the square-wave output is"
+},
+"opts": [
+{
+"vi": "0,4 V",
+"en": "0.4 V"
+},
+{
+"vi": "0,8 V",
+"en": "0.8 V"
+},
+{
+"vi": "0,2 V",
+"en": "0.2 V"
+},
+{
+"vi": "0,1 V",
+"en": "0.1 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Độ dốc tam giác = 2 V/0,5 ms = 4000 V/s; |Vout| = Rf·C·độ dốc = 10⁻⁴ s × 4000 V/s = 0,4 V (đảo dấu).",
+"en": "Triangle slope = 2 V/0.5 ms = 4000 V/s; |Vout| = Rf·C·slope = 10⁻⁴ s × 4000 V/s = 0.4 V (inverted)."
+},
+"level": 3,
+"topic": {
+"en": "Differentiator",
+"vi": "Mạch vi phân"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-differentiator"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch cộng đảo Rf = 20 kΩ có ba ngõ vào: +2 V qua 10 kΩ, −1 V qua 20 kΩ, +0,5 V qua 5 kΩ. Điện áp ra là",
+"en": "An inverting summer with Rf = 20 kΩ has three inputs: +2 V through 10 kΩ, −1 V through 20 kΩ, +0.5 V through 5 kΩ. The output voltage is"
+},
+"opts": [
+{
+"vi": "-5 V",
+"en": "-5 V"
+},
+{
+"vi": "-1,5 V",
+"en": "-1.5 V"
+},
+{
+"vi": "5 V",
+"en": "5 V"
+},
+{
+"vi": "-7 V",
+"en": "-7 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Mỗi ngõ có độ lợi −Rf/Rk: −2, −1, −4. Vout = −(2×2) − (−1)(1) − (0,5×4) → −4 + 1 − 2 = −5 V.",
+"en": "Each input has gain −Rf/Rk: −2, −1, −4. Vout = −2·2 + (−1)(−1) + (−4)(0.5) = −4 + 1 − 2 = −5 V."
+},
+"level": 3,
+"topic": {
+"en": "Summing, averaging, scaling amplifiers",
+"vi": "Mạch cộng, trung bình, cộng có trọng số"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-summing"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "DAC 4 bit dùng mạch cộng đảo Rf = 10 kΩ, các điện trở vào 10 kΩ (MSB), 20 kΩ, 40 kΩ, 80 kΩ (LSB), mức logic 1 = 5 V. Với mã 1011 điện áp ra là",
+"en": "A 4-bit DAC uses an inverting summer with Rf = 10 kΩ and input resistors 10 kΩ (MSB), 20 kΩ, 40 kΩ, 80 kΩ (LSB), logic 1 = 5 V. For the code 1011 the output is"
+},
+"opts": [
+{
+"vi": "-6,875 V",
+"en": "-6.875 V"
+},
+{
+"vi": "-3,438 V",
+"en": "-3.438 V"
+},
+{
+"vi": "-8,125 V",
+"en": "-8.125 V"
+},
+{
+"vi": "6,875 V",
+"en": "6.875 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Trọng số 1, 0,5, 0,25, 0,125 (= Rf/Rk). Mã 1011: 1 + 0 + 0,25 + 0,125 = 1,375; Vout = −5 × 1,375 = −6,875 V.",
+"en": "Weights 1, 0.5, 0.25, 0.125 (= Rf/Rk). Code 1011: 1 + 0 + 0.25 + 0.125 = 1.375; Vout = −5 × 1.375 = −6.875 V."
+},
+"level": 3,
+"topic": {
+"en": "Summing, averaging, scaling amplifiers",
+"vi": "Mạch cộng, trung bình, cộng có trọng số"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-scaling"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch trung bình bốn ngõ vào dùng Ri = 10 kΩ nhận 1,2 V; 2,4 V; 3,6 V; 4,8 V. Rf phải bằng bao nhiêu và điện áp ra là",
+"en": "A four-input averaging amplifier with Ri = 10 kΩ receives 1.2 V, 2.4 V, 3.6 V, 4.8 V. What must Rf be and what is the output?"
+},
+"opts": [
+{
+"vi": "Rf = 2,5 kΩ; Vout = −3,0 V",
+"en": "Rf = 2.5 kΩ; Vout = −3.0 V"
+},
+{
+"vi": "Rf = 40 kΩ; Vout = −12 V",
+"en": "Rf = 40 kΩ; Vout = −12 V"
+},
+{
+"vi": "Rf = 2,5 kΩ; Vout = +3,0 V",
+"en": "Rf = 2.5 kΩ; Vout = +3.0 V"
+},
+{
+"vi": "Rf = 10 kΩ; Vout = −12 V",
+"en": "Rf = 10 kΩ; Vout = −12 V"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Trung bình cần Rf/Ri = 1/4 → Rf = 2,5 kΩ; tổng = 12 V; Vout = −12/4 = −3,0 V (mạch đảo nên âm).",
+"en": "Averaging needs Rf/Ri = 1/4 → Rf = 2.5 kΩ; the sum is 12 V; Vout = −12/4 = −3.0 V (negative: the circuit inverts)."
+},
+"level": 3,
+"topic": {
+"en": "Summing, averaging, scaling amplifiers",
+"vi": "Mạch cộng, trung bình, cộng có trọng số"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-averaging"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch tích phân thực dùng Ri = 10 kΩ, C = 0,1 μF và điện trở Rf = 1 MΩ mắc song song với C. Độ lợi một chiều và tần số dưới đó mạch hoạt động như mạch khuếch đại đảo là",
+"en": "A practical integrator uses Ri = 10 kΩ, C = 0.1 μF and a resistor Rf = 1 MΩ in parallel with C. The dc gain and the frequency below which it behaves as an inverting amplifier are"
+},
+"opts": [
+{
+"vi": "−100 (40 dB); 1,59 Hz",
+"en": "−100 (40 dB); 1.59 Hz"
+},
+{
+"vi": "−100 (40 dB); 159 Hz",
+"en": "−100 (40 dB); 159 Hz"
+},
+{
+"vi": "−10 (20 dB); 1,59 Hz",
+"en": "−10 (20 dB); 1.59 Hz"
+},
+{
+"vi": "−1000 (60 dB); 15,9 Hz",
+"en": "−1000 (60 dB); 15.9 Hz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Độ lợi một chiều = −Rf/Ri = −100; điểm gãy fc = 1/(2π·Rf·C) = 1,59 Hz; trên tần số này tụ chiếm ưu thế và mạch tích phân.",
+"en": "dc gain = −Rf/Ri = −100; the corner fc = 1/(2π·Rf·C) = 1.59 Hz; above it the capacitor dominates and the circuit integrates."
+},
+"level": 3,
+"topic": {
+"en": "Integrator",
+"vi": "Mạch tích phân"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-integrator"
+},
+{
+"kind": "mcq",
+"q": {
+"vi": "Mạch vi phân thực có Rin = 1 kΩ mắc nối tiếp với C = 10 nF, Rf = 10 kΩ. Độ lợi tần số cao tối đa và tần số tới hạn trên của vùng vi phân là",
+"en": "A practical differentiator has Rin = 1 kΩ in series with C = 10 nF and Rf = 10 kΩ. The maximum high-frequency gain and the frequency above which it stops differentiating are"
+},
+"opts": [
+{
+"vi": "−10 (20 dB); 15,9 kHz",
+"en": "−10 (20 dB); 15.9 kHz"
+},
+{
+"vi": "−10 (20 dB); 1,59 kHz",
+"en": "−10 (20 dB); 1.59 kHz"
+},
+{
+"vi": "−1 (0 dB); 15,9 kHz",
+"en": "−1 (0 dB); 15.9 kHz"
+},
+{
+"vi": "−100 (40 dB); 1,59 kHz",
+"en": "−100 (40 dB); 1.59 kHz"
+}
+],
+"correct": 0,
+"explain": {
+"vi": "Trên fc = 1/(2π·Rin·C) = 15,9 kHz tụ gần như ngắn mạch, độ lợi bị giới hạn bởi Rf/Rin = 10 (nhiễu cao tần không còn tăng).",
+"en": "Above fc = 1/(2π·Rin·C) = 15.9 kHz the capacitor is nearly a short and the gain is limited to Rf/Rin = 10 (high-frequency noise is no longer amplified)."
+},
+"level": 3,
+"topic": {
+"en": "Differentiator",
+"vi": "Mạch vi phân"
+},
+"src": {
+"vi": "Bổ sung (câu khó nhiều bước) – Floyd 9e Ch.13",
+"en": "Generated hard multi-step question – Floyd 9e Ch.13"
+},
+"origin": "bo_sung",
+"fixed_order": false,
+"check": "script",
+"tags": [
+"hard"
+],
+"concept": "m03-differentiator"
+}
+]

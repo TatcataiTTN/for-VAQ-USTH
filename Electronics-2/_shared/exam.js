@@ -53,16 +53,29 @@
   }).catch(function (e) { root.innerHTML = ''; root.appendChild(el('div', 'callout bad', X.fail + e.message)); });
 
   // ------------------------------------------------------------------ random draws (same rules as the fixed papers: levels mixed, textbook originals favoured)
+  // level targets per module so the WHOLE paper has the requested mix (same algorithm as build/exams.py allocate(): global largest remainder, per-module floors, leftovers by fractional part)
+  function allocate(quota, W) {
+    var ms = Object.keys(quota), lvs = [1, 2, 3], n = 0, tot = {}, t = {}, need = {}, slots = {};
+    ms.forEach(function (m) { n += quota[m]; });
+    var sum = 0; lvs.forEach(function (lv) { tot[lv] = Math.floor(n * (W[lv] || 0)); sum += tot[lv]; });
+    lvs.slice().sort(function (a, b) { return ((n * (W[b] || 0) - tot[b]) - (n * (W[a] || 0) - tot[a])) || (b - a); }).slice(0, n - sum).forEach(function (lv) { tot[lv]++; });
+    ms.forEach(function (m) { t[m] = {}; var s = 0; lvs.forEach(function (lv) { t[m][lv] = Math.floor(quota[m] * (W[lv] || 0)); s += t[m][lv]; }); slots[m] = quota[m] - s; });
+    lvs.forEach(function (lv) { var s = 0; ms.forEach(function (m) { s += t[m][lv]; }); need[lv] = tot[lv] - s; });
+    var cand = []; ms.forEach(function (m) { lvs.forEach(function (lv) { cand.push({ f: quota[m] * (W[lv] || 0) - t[m][lv], r: Math.random(), m: m, lv: lv }); }); });
+    cand.sort(function (a, b) { return (b.f - a.f) || (b.r - a.r); });
+    cand.forEach(function (c) { if (slots[c.m] > 0 && need[c.lv] > 0) { t[c.m][c.lv]++; slots[c.m]--; need[c.lv]--; } });
+    lvs.forEach(function (lv) { ms.forEach(function (m) { while (slots[m] > 0 && need[lv] > 0) { t[m][lv]++; slots[m]--; need[lv]--; } }); });
+    return t;
+  }
   function draw(spec) {                                   // spec: {quota:{m:k}} or {mods:[..], n:k}, levels, orig
     var quota = spec.quota; if (!quota) { quota = {}; var ms = spec.mods.filter(function (m) { return POOL[m]; }), per = Math.floor(spec.n / ms.length), extra = spec.n - per * ms.length;
       ms.forEach(function (m) { quota[m] = per; }); shuffle(ms.slice(), Math.random).slice(0, extra).forEach(function (m) { quota[m]++; }); }
-    var W = spec.levels || { 1: .35, 2: .5, 3: .15 }, out = [];
+    var W = spec.levels || { 1: .35, 2: .5, 3: .15 }, out = [], TG = allocate(quota, W);
     Object.keys(quota).sort().forEach(function (m) {
       var k = quota[m], items = (POOL[m] || []).filter(function (it) { return !spec.orig || it.g; }); if (!k || !items.length) return;
       var by = {}; items.forEach(function (it) { (by[it.l] = by[it.l] || []).push(it); });
       Object.keys(by).forEach(function (lv) { by[lv].sort(function (a, b) { return (Math.random() + (a.g ? 0 : .5)) - (Math.random() + (b.g ? 0 : .5)); }); });
-      var target = {}, sum = 0; [1, 2, 3].forEach(function (lv) { target[lv] = Math.floor(k * (W[lv] || 0)); sum += target[lv]; });
-      [1, 2, 3].sort(function (a, b) { return (k * (W[b] || 0) - target[b]) - (k * (W[a] || 0) - target[a]); }).slice(0, k - sum).forEach(function (lv) { target[lv]++; });
+      var target = TG[m];
       var got = []; [1, 2, 3].forEach(function (lv) { var t = (by[lv] || []).splice(0, target[lv]); got = got.concat(t); });
       while (got.length < k) { var lv = Object.keys(by).sort(function (a, b) { return by[b].length - by[a].length; })[0]; if (lv === undefined || !by[lv].length) break; got.push(by[lv].shift()); }
       shuffle(got, Math.random).forEach(function (it) { out.push(it.id); });
