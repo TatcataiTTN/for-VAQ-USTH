@@ -1,0 +1,130 @@
+{
+ "range_out": {
+  "vi": "{what} = {x} nằm ngoài phạm vi bảng [{lo}, {hi}] (không ngoại suy)",
+  "en": "{what} = {x} is outside the table range [{lo}, {hi}] (no extrapolation)"
+ },
+ "no_interval": {
+  "vi": "{what} = {x}: không tìm thấy khoảng",
+  "en": "{what} = {x}: no bracketing interval found"
+ },
+ "q_range": {
+  "vi": "chất lượng x phải thuộc [0, 1]",
+  "en": "quality x must be in [0, 1]"
+ },
+ "wet_note": {
+  "vi": "vùng ẩm: {prop} = {prop}_f + x({prop}_g − {prop}_f), x = {x}. ",
+  "en": "wet region: {prop} = {prop}_f + x({prop}_g − {prop}_f), x = {x}. "
+ },
+ "q_note": {
+  "vi": "x = (y − y_f)/(y_g − y_f)",
+  "en": "x = (y − y_f)/(y_g − y_f)"
+ },
+ "q_warn": {
+  "vi": ". CẢNH BÁO: x = {x} ngoài [0, 1], trạng thái không nằm trong vùng ẩm",
+  "en": ". WARNING: x = {x} is outside [0, 1], the state is not in the wet region"
+ },
+ "blk_T_out": {
+  "vi": "T = {T} °C nằm ngoài các hàng của khối P = {P} MPa [{lo}, {hi}] (ô trống của sách: dưới T_sat không phải hơi quá nhiệt / ngoài giới hạn bảng)",
+  "en": "T = {T} °C is outside the rows of the P = {P} MPa block [{lo}, {hi}] (blank cell of the book: below T_sat it is not superheated, or beyond the table limit)"
+ },
+ "blk_lin": {
+  "vi": "nội suy tuyến tính theo T trong khối P = {P} MPa",
+  "en": "linear interpolation in T inside the P = {P} MPa block"
+ },
+ "blk_between": {
+  "vi": "P = {P} MPa nằm giữa khối {P1} và {P2} MPa nhưng khối {P2} MPa không có T = {T} °C: {why}",
+  "en": "P = {P} MPa lies between the {P1} and {P2} MPa blocks but the {P2} MPa block has no T = {T} °C: {why}"
+ },
+ "blk_bi": {
+  "vi": "nội suy hai chiều: tuyến tính theo T trong khối {P1} và {P2} MPa, rồi tuyến tính theo P (f = {f})",
+  "en": "two-way interpolation: linear in T inside the {P1} and {P2} MPa blocks, then linear in P (f = {f})"
+ },
+ "comp_approx": {
+  "vi": "xấp xỉ lỏng nén ≈ lỏng bão hòa cùng T (y ≈ y_f@T)",
+  "en": "compressed-liquid approximation ≈ saturated liquid at the same T (y ≈ y_f@T)"
+ },
+ "T_input": {
+  "vi": "T là biến vào",
+  "en": "T is the input variable"
+ },
+ "inv_out_block": {
+  "vi": "{prop} = {value} nằm ngoài các hàng của khối P = {P} MPa [{lo}, {hi}]",
+  "en": "{prop} = {value} is outside the rows of the P = {P} MPa block [{lo}, {hi}]"
+ },
+ "inv_note_block": {
+  "vi": "T tìm ngược từ {prop} = {value} trong khối P = {P} MPa",
+  "en": "T found backwards from {prop} = {value} inside the P = {P} MPa block"
+ },
+ "inv_note_bi": {
+  "vi": "T tìm ngược từ {prop} = {value}: nội suy theo {prop} trong khối {P1} và {P2} MPa rồi tuyến tính theo P (f = {f})",
+  "en": "T found backwards from {prop} = {value}: interpolate in {prop} inside the {P1} and {P2} MPa blocks, then linear in P (f = {f})"
+ },
+ "inv_note": {
+  "vi": "T tìm ngược từ {prop} = {value} (nội suy tuyến tính theo {prop})",
+  "en": "T found backwards from {prop} = {value} (linear interpolation in {prop})"
+ },
+ "inv_note_k": {
+  "vi": "T tìm ngược từ {prop} = {value}",
+  "en": "T found backwards from {prop} = {value}"
+ },
+ "no_match": {
+  "vi": "'{name}' khớp {n} hàng trong {table}",
+  "en": "'{name}' matches {n} rows in {table}"
+ },
+ "no_match_form": {
+  "vi": "'{name}' khớp {n} hàng của A-26 (dùng công thức kèm pha, vd 'CO2(g)', 'H2O(ᐉ)')",
+  "en": "'{name}' matches {n} rows of A-26 (use the formula with phase, e.g. 'CO2(g)', 'H2O(ᐉ)')"
+ },
+ "no_gas": {
+  "vi": "A-2b không có {gas}",
+  "en": "A-2b has no {gas}"
+ },
+ "poly_out": {
+  "vi": "T = {T} K ngoài khoảng hiệu lực {lo}–{hi} K của đa thức {name}",
+  "en": "T = {T} K is outside the validity range {lo}–{hi} K of the {name} polynomial"
+ },
+ "poly_note": {
+  "vi": "đa thức A-2c: cp = a + bT + cT² + dT³; sai số lớn nhất của sách {emax} %, trung bình {eavg} %",
+  "en": "A-2c polynomial: cp = a + bT + cT² + dT³; the book's maximum error {emax} %, average {eavg} %"
+ },
+ "poly_mass": {
+  "vi": "; chia M = {M} kg/kmol (A-1)",
+  "en": "; divided by M = {M} kg/kmol (A-1)"
+ },
+ "iso_note": {
+  "vi": "k = 1,4. Bảng thưa (bước 0,1–0,2; sau Ma = 3 nhảy tới 5): nội suy tuyến tính có thể sai khác đáng kể giữa hai hàng",
+  "en": "k = 1.4. Sparse table (step 0.1–0.2; jumps from Ma = 3 to 5): linear interpolation can differ noticeably between two rows"
+ },
+ "iso_inf": {
+  "vi": "ô ∞ của bảng (A/A* tại Ma = 0)",
+  "en": "∞ cell of the table (A/A* at Ma = 0)"
+ },
+ "iso_inv_note": {
+  "vi": "Ma tìm ngược từ {prop} = {value}",
+  "en": "Ma found backwards from {prop} = {value}"
+ },
+ "iso_sub": {
+  "vi": " (nhánh dưới âm)",
+  "en": " (subsonic branch)"
+ },
+ "iso_sup": {
+  "vi": " (nhánh siêu âm)",
+  "en": " (supersonic branch)"
+ },
+ "err_tag": {
+  "vi": "LỖI IN của sách",
+  "en": "BOOK PRINT ERROR"
+ },
+ "err_sys_tag": {
+  "vi": "lệch hệ thống của sách",
+  "en": "systematic offset in the book"
+ },
+ "err_fmt": {
+  "vi": "{tag}: ô {col} tại {key} in {printed}, kỳ vọng ≈ {expected} ({how})",
+  "en": "{tag}: cell {col} at {key} printed {printed}, expected ≈ {expected} ({how})"
+ },
+ "blk_v_warn": {
+  "vi": "CẢNH BÁO: v tỉ lệ nghịch với P nên nội suy tuyến tính theo P có thể sai lớn (đo được: +12 % ở 0,15 MPa/200 °C; +80 % ở 0,03 MPa); nên tra đúng khối P in sẵn hoặc nội suy theo 1/P",
+  "en": "WARNING: v is inversely proportional to P so linear interpolation in P can be badly off (measured: +12 % at 0.15 MPa/200 °C; +80 % at 0.03 MPa); look up a printed P block or interpolate in 1/P"
+ }
+}

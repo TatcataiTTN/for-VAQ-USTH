@@ -1,0 +1,1816 @@
+{
+"method": "Đọc tay từ ảnh trang PDF render 130 dpi (pdftoppm), công cụ Read; chép trước khi so với bảng đã trích. Giá trị là số IN (kể cả ô lỗi in của sách).",
+"n": 192,
+"corrections": [
+"A-7 P=15 MPa, T=60: s=0,8234. Lần đầu tôi chép nhầm nhóm (ghi là P=10 MPa); verify_props phát hiện lệch, xem lại ảnh trang 16: 0,8234 thuộc nhóm P=15 MPa, bảng trích đúng."
+],
+"cells": [
+{
+"table": "A-4",
+"at": {
+"T_C": 0.01
+},
+"col": "Psat_kPa",
+"value": 0.6117,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 0.01
+},
+"col": "vg",
+"value": 206.0,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 20
+},
+"col": "hf",
+"value": 83.915,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 60
+},
+"col": "sfg",
+"value": 7.0769,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 100
+},
+"col": "Psat_kPa",
+"value": 101.42,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 100
+},
+"col": "hg",
+"value": 2675.6,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 150
+},
+"col": "sg",
+"value": 6.8371,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 200
+},
+"col": "vf",
+"value": 0.001157,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 200
+},
+"col": "hfg",
+"value": 1939.8,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 125
+},
+"col": "ufg",
+"value": 2009.5,
+"pdf_page": 8
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 250
+},
+"col": "ug",
+"value": 2601.8,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 300
+},
+"col": "Psat_kPa",
+"value": 8587.9,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 315
+},
+"col": "Psat_kPa",
+"value": 10556,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 350
+},
+"col": "hfg",
+"value": 892.7,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 360
+},
+"col": "sf",
+"value": 3.9165,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 373.95
+},
+"col": "Psat_kPa",
+"value": 22064,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 373.95
+},
+"col": "vg",
+"value": 0.003106,
+"pdf_page": 9
+},
+{
+"table": "A-4",
+"at": {
+"T_C": 205
+},
+"col": "uf",
+"value": 872.86,
+"pdf_page": 9
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 1.0
+},
+"col": "Tsat_C",
+"value": 6.97,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 1.0
+},
+"col": "vg",
+"value": 129.19,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 10
+},
+"col": "hf",
+"value": 191.81,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 101.325
+},
+"col": "Tsat_C",
+"value": 99.97,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 101.325
+},
+"col": "sg",
+"value": 7.3545,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 500
+},
+"col": "hfg",
+"value": 2108.0,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 750
+},
+"col": "sg",
+"value": 6.6837,
+"pdf_page": 10
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 1000
+},
+"col": "hg",
+"value": 2777.1,
+"pdf_page": 11
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 3000
+},
+"col": "vf",
+"value": 0.001217,
+"pdf_page": 11
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 10000
+},
+"col": "Tsat_C",
+"value": 311.0,
+"pdf_page": 11
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 20000
+},
+"col": "sfg",
+"value": 0.9164,
+"pdf_page": 11
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 22064
+},
+"col": "Tsat_C",
+"value": 373.95,
+"pdf_page": 11
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 22000
+},
+"col": "ufg",
+"value": 140.8,
+"pdf_page": 11
+},
+{
+"table": "A-5",
+"at": {
+"Psat_kPa": 22064
+},
+"col": "hg",
+"value": 2084.3,
+"pdf_page": 11
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.01,
+"T_C": 50
+},
+"col": "v",
+"value": 14.867,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.01,
+"T_C": 50
+},
+"col": "s",
+"value": 8.1741,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.01,
+"T_C": 1300
+},
+"col": "h",
+"value": 5413.4,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.05,
+"T_C": 100
+},
+"col": "v",
+"value": 3.4187,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.05,
+"T_C": 500
+},
+"col": "s",
+"value": 9.1566,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.1,
+"T_C": 300
+},
+"col": "s",
+"value": 8.2172,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.5,
+"T_C": 500
+},
+"col": "u",
+"value": 3129.0,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.8,
+"T_C": 1300
+},
+"col": "s",
+"value": 9.5625,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.2,
+"T_C": 150
+},
+"col": "v",
+"value": 0.95986,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.2,
+"sat": true
+},
+"col": "h",
+"value": 2706.3,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.8,
+"sat": true
+},
+"col": "h",
+"value": 2768.3,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 0.01,
+"sat": true
+},
+"col": "v",
+"value": 14.67,
+"pdf_page": 12
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 1.0,
+"T_C": 300
+},
+"col": "u",
+"value": 2793.7,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 1.0,
+"T_C": 1300
+},
+"col": "h",
+"value": 5411.9,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 1.2,
+"T_C": 200
+},
+"col": "h",
+"value": 2816.1,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 1.6,
+"T_C": 500
+},
+"col": "u",
+"value": 3120.1,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 2.0,
+"T_C": 225
+},
+"col": "v",
+"value": 0.10381,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 2.5,
+"T_C": 225
+},
+"col": "s",
+"value": 6.2629,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 3.0,
+"T_C": 1300
+},
+"col": "u",
+"value": 4682.6,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 3.5,
+"T_C": 500
+},
+"col": "s",
+"value": 7.1593,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 1.4,
+"sat": true
+},
+"col": "h",
+"value": 2788.9,
+"pdf_page": 13
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 15,
+"T_C": 350
+},
+"col": "v",
+"value": 0.011481,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 15,
+"T_C": 350
+},
+"col": "h",
+"value": 2693.1,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 20,
+"T_C": 400
+},
+"col": "h",
+"value": 2816.9,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 20,
+"T_C": 1300
+},
+"col": "s",
+"value": 8.0574,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 25,
+"T_C": 375
+},
+"col": "v",
+"value": 0.001978,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 30,
+"T_C": 425
+},
+"col": "h",
+"value": 2611.8,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 40,
+"T_C": 400
+},
+"col": "s",
+"value": 4.1145,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 60,
+"T_C": 1300
+},
+"col": "h",
+"value": 5324.5,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 50,
+"T_C": 375
+},
+"col": "v",
+"value": 0.00156,
+"pdf_page": 15
+},
+{
+"table": "A-6",
+"at": {
+"P_MPa": 17.5,
+"sat": true
+},
+"col": "u",
+"value": 2390.7,
+"pdf_page": 15
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"T_C": 0
+},
+"col": "v",
+"value": 0.0009977,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"T_C": 0
+},
+"col": "u",
+"value": 0.04,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"T_C": 0
+},
+"col": "h",
+"value": 5.03,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"T_C": 0
+},
+"col": "s",
+"value": 0.0001,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"T_C": 100
+},
+"col": "h",
+"value": 422.85,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"T_C": 260
+},
+"col": "s",
+"value": 2.8841,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 10,
+"T_C": 300
+},
+"col": "h",
+"value": 1343.3,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 15,
+"T_C": 60
+},
+"col": "s",
+"value": 0.8234,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 15,
+"T_C": 340
+},
+"col": "h",
+"value": 1592.4,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 20,
+"T_C": 360
+},
+"col": "u",
+"value": 1703.6,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 30,
+"T_C": 380
+},
+"col": "h",
+"value": 1838.2,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 50,
+"T_C": 0
+},
+"col": "s",
+"value": -0.001,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 50,
+"T_C": 380
+},
+"col": "v",
+"value": 0.0015884,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 50,
+"T_C": 200
+},
+"col": "h",
+"value": 875.19,
+"pdf_page": 16
+},
+{
+"table": "A-7",
+"at": {
+"P_MPa": 5,
+"sat": true
+},
+"col": "h",
+"value": 1154.5,
+"pdf_page": 16
+},
+{
+"table": "A-11",
+"at": {
+"T_C": -40
+},
+"col": "Psat_kPa",
+"value": 51.25,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": -40
+},
+"col": "uf",
+"value": -0.036,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": -40
+},
+"col": "hfg",
+"value": 225.86,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": -40
+},
+"col": "sf",
+"value": 0.0,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": -22
+},
+"col": "hg",
+"value": 237.17,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 0
+},
+"col": "Psat_kPa",
+"value": 293.01,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 0
+},
+"col": "sg",
+"value": 0.93139,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 18
+},
+"col": "vg",
+"value": 0.038271,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": -10
+},
+"col": "hf",
+"value": 38.55,
+"pdf_page": 20
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 20
+},
+"col": "hf",
+"value": 79.32,
+"pdf_page": 21
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 40
+},
+"col": "Psat_kPa",
+"value": 1017.1,
+"pdf_page": 21
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 60
+},
+"col": "hfg",
+"value": 139.1,
+"pdf_page": 21
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 100
+},
+"col": "Psat_kPa",
+"value": 3975.1,
+"pdf_page": 21
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 100
+},
+"col": "vf",
+"value": 0.0015269,
+"pdf_page": 21
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 100
+},
+"col": "sg",
+"value": 0.81215,
+"pdf_page": 21
+},
+{
+"table": "A-11",
+"at": {
+"T_C": 75
+},
+"col": "sf",
+"value": 0.56241,
+"pdf_page": 21
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 60
+},
+"col": "Tsat_C",
+"value": -36.95,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 60
+},
+"col": "hg",
+"value": 227.79,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 140
+},
+"col": "hf",
+"value": 27.08,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 400
+},
+"col": "Tsat_C",
+"value": 8.91,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 800
+},
+"col": "sg",
+"value": 0.91835,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 800
+},
+"col": "hf",
+"value": 95.47,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 1000
+},
+"col": "vg",
+"value": 0.020313,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 3000
+},
+"col": "Tsat_C",
+"value": 86.16,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 3000
+},
+"col": "sf",
+"value": 0.62118,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 200
+},
+"col": "Tsat_C",
+"value": -10.09,
+"pdf_page": 22
+},
+{
+"table": "A-12",
+"at": {
+"Psat_kPa": 280
+},
+"col": "hf",
+"value": 50.18,
+"pdf_page": 22
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.06,
+"T_C": -20
+},
+"col": "v",
+"value": 0.33608,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.06,
+"T_C": -20
+},
+"col": "s",
+"value": 1.0174,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.06,
+"T_C": 100
+},
+"col": "h",
+"value": 344.99,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.1,
+"T_C": -20
+},
+"col": "u",
+"value": 219.66,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.14,
+"T_C": -10
+},
+"col": "h",
+"value": 246.36,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.14,
+"T_C": 100
+},
+"col": "v",
+"value": 0.21449,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.18,
+"T_C": 50
+},
+"col": "s",
+"value": 1.1256,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.24,
+"T_C": 0
+},
+"col": "v",
+"value": 0.08617,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.28,
+"T_C": 140
+},
+"col": "h",
+"value": 383.18,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.32,
+"T_C": 60
+},
+"col": "u",
+"value": 278.15,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.4,
+"T_C": 140
+},
+"col": "s",
+"value": 1.2942,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.06,
+"sat": true
+},
+"col": "s",
+"value": 0.9644,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.14,
+"sat": true
+},
+"col": "h",
+"value": 239.16,
+"pdf_page": 23
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.5,
+"T_C": 20
+},
+"col": "v",
+"value": 0.042115,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.5,
+"T_C": 160
+},
+"col": "h",
+"value": 402.72,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.6,
+"T_C": 100
+},
+"col": "u",
+"value": 310.73,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.7,
+"T_C": 60
+},
+"col": "h",
+"value": 298.42,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.8,
+"T_C": 40
+},
+"col": "v",
+"value": 0.027035,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.8,
+"T_C": 60
+},
+"col": "h",
+"value": 296.81,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.8,
+"T_C": 180
+},
+"col": "h",
+"value": 422.64,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 1.0,
+"T_C": 180
+},
+"col": "u",
+"value": 386.04,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 1.2,
+"T_C": 50
+},
+"col": "h",
+"value": 278.27,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 1.6,
+"T_C": 180
+},
+"col": "s",
+"value": 1.2676,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 0.5,
+"sat": true
+},
+"col": "u",
+"value": 238.75,
+"pdf_page": 24
+},
+{
+"table": "A-13",
+"at": {
+"P_MPa": 1.6,
+"sat": true
+},
+"col": "h",
+"value": 277.86,
+"pdf_page": 24
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 200
+},
+"col": "h",
+"value": 199.97,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 200
+},
+"col": "vr",
+"value": 1707.0,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 300
+},
+"col": "h",
+"value": 300.19,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 300
+},
+"col": "s0",
+"value": 1.70203,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 600
+},
+"col": "Pr",
+"value": 16.28,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 630
+},
+"col": "Pr",
+"value": 19.84,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 630
+},
+"col": "vr",
+"value": 92.84,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1040
+},
+"col": "vr",
+"value": 23.29,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1240
+},
+"col": "h",
+"value": 1324.93,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1240
+},
+"col": "s0",
+"value": 3.21751,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 550
+},
+"col": "u",
+"value": 396.86,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1000
+},
+"col": "Pr",
+"value": 114.0,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 800
+},
+"col": "s0",
+"value": 2.71787,
+"pdf_page": 28
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1260
+},
+"col": "vr",
+"value": 12.435,
+"pdf_page": 29
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1600
+},
+"col": "Pr",
+"value": 791.2,
+"pdf_page": 29
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1800
+},
+"col": "vr",
+"value": 3.994,
+"pdf_page": 29
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 2250
+},
+"col": "Pr",
+"value": 3464,
+"pdf_page": 29
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1700
+},
+"col": "u",
+"value": 1392.7,
+"pdf_page": 29
+},
+{
+"table": "A-17",
+"at": {
+"T_K": 1800
+},
+"col": "u",
+"value": 1487.2,
+"pdf_page": 29
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 360
+},
+"col": "h",
+"value": 85.97,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 360
+},
+"col": "vr",
+"value": 396.6,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 537
+},
+"col": "u",
+"value": 91.53,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 1000
+},
+"col": "Pr",
+"value": 12.3,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 2150
+},
+"col": "Pr",
+"value": 223.5,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 3950
+},
+"col": "h",
+"value": 1073.2,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 3950
+},
+"col": "s0",
+"value": 1.12955,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 3300
+},
+"col": "vr",
+"value": 0.8621,
+"pdf_page": 76
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 5300
+},
+"col": "Pr",
+"value": 11481,
+"pdf_page": 77
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 4000
+},
+"col": "Pr",
+"value": 3280,
+"pdf_page": 77
+},
+{
+"table": "A-17E",
+"at": {
+"T_R": 4600
+},
+"col": "s0",
+"value": 1.17575,
+"pdf_page": 77
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "Air",
+"T_K": 250
+},
+"col": "cp",
+"value": 1.003,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "Air",
+"T_K": 1000
+},
+"col": "cv",
+"value": 0.855,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "CO2",
+"T_K": 300
+},
+"col": "k",
+"value": 1.288,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "CO",
+"T_K": 750
+},
+"col": "cp",
+"value": 1.126,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "H2",
+"T_K": 250
+},
+"col": "cp",
+"value": 14.051,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "H2",
+"T_K": 1000
+},
+"col": "cv",
+"value": 10.859,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "N2",
+"T_K": 600
+},
+"col": "cp",
+"value": 1.075,
+"pdf_page": 4
+},
+{
+"table": "A-2b",
+"at": {
+"gas": "O2",
+"T_K": 900
+},
+"col": "k",
+"value": 1.319,
+"pdf_page": 4
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Air"
+},
+"col": "M",
+"value": 28.97,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Water"
+},
+"col": "Tcr",
+"value": 647.1,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Water"
+},
+"col": "Pcr",
+"value": 22.06,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Nitrogen"
+},
+"col": "M",
+"value": 28.013,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Helium"
+},
+"col": "Tcr",
+"value": 5.3,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Tetrafluoroethane (R-134a)"
+},
+"col": "Pcr",
+"value": 4.059,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Xenon"
+},
+"col": "Vcr",
+"value": 0.1186,
+"pdf_page": 2
+},
+{
+"table": "A-1",
+"at": {
+"substance": "Hydrogen (normal)"
+},
+"col": "R",
+"value": 4.124,
+"pdf_page": 2
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Nitrogen"
+},
+"col": "b",
+"value": -0.001571,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Benzene"
+},
+"col": "a",
+"value": -36.22,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Benzene"
+},
+"col": "c",
+"value": -0.0003157,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Air"
+},
+"col": "d",
+"value": -1.966e-09,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Carbon dioxide"
+},
+"col": "c",
+"value": -3.501e-05,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Methanol"
+},
+"col": "d",
+"value": -8.039e-09,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Propylene"
+},
+"col": "d",
+"value": 2.462e-08,
+"pdf_page": 5
+},
+{
+"table": "A-2c",
+"at": {
+"substance": "Ammonia"
+},
+"col": "c",
+"value": 9.9072e-06,
+"pdf_page": 5
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 0.1
+},
+"col": "Ma_star",
+"value": 0.1094,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 0.1
+},
+"col": "A_Astar",
+"value": 5.8218,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 1.0
+},
+"col": "P_P0",
+"value": 0.5283,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 3.0
+},
+"col": "rho_rho0",
+"value": 0.076,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 2.0
+},
+"col": "A_Astar",
+"value": 1.6875,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 5.0
+},
+"col": "A_Astar",
+"value": 25.0,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 5.0
+},
+"col": "T_T0",
+"value": 0.1667,
+"pdf_page": 48
+},
+{
+"table": "A-32",
+"at": {
+"Ma": 0.9
+},
+"col": "T_T0",
+"value": 0.8606,
+"pdf_page": 48
+}
+]
+}

@@ -1,0 +1,41 @@
+{
+ "m01": {
+  "n": 120,
+  "n_goc": 29,
+  "n_bo_sung": 91,
+  "essays": 24,
+  "essays_goc": 24,
+  "audit": {
+   "mcq/3opt": {
+    "n": 2,
+    "pos": [
+     1,
+     1,
+     0
+    ],
+    "chi2": 1.0,
+    "correct_is_longest": 0.0
+   },
+   "mcq/4opt": {
+    "n": 96,
+    "pos": [
+     18,
+     28,
+     26,
+     24
+    ],
+    "chi2": 2.33,
+    "correct_is_longest": 0.172
+   },
+   "tf/2opt": {
+    "n": 22,
+    "pos": [
+     10,
+     12
+    ],
+    "chi2": 0.18,
+    "correct_is_longest": 0.545
+   }
+  }
+ }
+}

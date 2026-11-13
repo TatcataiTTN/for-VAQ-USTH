@@ -1,0 +1,3221 @@
+{
+ "book": "cengel",
+ "offset": 26,
+ "pages": 963,
+ "chapters": [
+  {
+   "num": 1,
+   "title": "Introduction and Basic Concepts",
+   "pdf": 27,
+   "printed": 1,
+   "pdf_end": 76,
+   "sections": [
+    {
+     "num": "1–1",
+     "title": "Thermodynamics and Energy",
+     "pdf": 28,
+     "printed": 2,
+     "kind": "section",
+     "subs": [
+      "Application Areas of Thermodynamics"
+     ],
+     "toc_num": "1–1",
+     "title_source": "contents",
+     "pdf_end": 28
+    },
+    {
+     "num": "1–2",
+     "title": "Importance of Dimensions and Units",
+     "pdf": 29,
+     "printed": 3,
+     "kind": "section",
+     "subs": [
+      "Some SI and English Units",
+      "Dimensional Homogeneity",
+      "Unity Conversion Ratios"
+     ],
+     "toc_num": "1–2",
+     "title_source": "contents",
+     "pdf_end": 35
+    },
+    {
+     "num": "1–3",
+     "title": "Systems and Control Volumes",
+     "pdf": 36,
+     "printed": 10,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "1–3",
+     "title_source": "contents",
+     "pdf_end": 37
+    },
+    {
+     "num": "1–4",
+     "title": "Properties of a System",
+     "pdf": 38,
+     "printed": 12,
+     "kind": "section",
+     "subs": [
+      "Continuum"
+     ],
+     "toc_num": "1–4",
+     "title_source": "contents",
+     "pdf_end": 38
+    },
+    {
+     "num": "1–5",
+     "title": "Density and Specific Gravity",
+     "pdf": 39,
+     "printed": 13,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "1–5",
+     "title_source": "contents",
+     "pdf_end": 39
+    },
+    {
+     "num": "1–6",
+     "title": "State and Equilibrium",
+     "pdf": 40,
+     "printed": 14,
+     "kind": "section",
+     "subs": [
+      "The State Postulate"
+     ],
+     "toc_num": "1–6",
+     "title_source": "contents",
+     "pdf_end": 40
+    },
+    {
+     "num": "1–7",
+     "title": "Processes and Cycles",
+     "pdf": 41,
+     "printed": 15,
+     "kind": "section",
+     "subs": [
+      "The Steady-Flow Process"
+     ],
+     "toc_num": "1–7",
+     "title_source": "contents",
+     "pdf_end": 42
+    },
+    {
+     "num": "1–8",
+     "title": "Temperature and the Zeroth Law of Thermodynamics",
+     "pdf": 43,
+     "printed": 17,
+     "kind": "section",
+     "subs": [
+      "Temperature Scales",
+      "The International Temperature Scale of 1990 (ITS-90)"
+     ],
+     "toc_num": "1–8",
+     "title_source": "contents",
+     "pdf_end": 46
+    },
+    {
+     "num": "1–9",
+     "title": "Pressure",
+     "pdf": 47,
+     "printed": 21,
+     "kind": "section",
+     "subs": [
+      "Variation of Pressure with Depth"
+     ],
+     "toc_num": "1–9",
+     "title_source": "contents",
+     "pdf_end": 51
+    },
+    {
+     "num": "1–10",
+     "title": "The Manometer",
+     "pdf": 52,
+     "printed": 26,
+     "kind": "section",
+     "subs": [
+      "Other Pressure Measurement Devices"
+     ],
+     "toc_num": "1–10",
+     "title_source": "contents",
+     "pdf_end": 54
+    },
+    {
+     "num": "1–11",
+     "title": "The Barometer and Atmospheric Pressure",
+     "pdf": 55,
+     "printed": 29,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "1–11",
+     "title_source": "contents",
+     "pdf_end": 58
+    },
+    {
+     "num": "1–12",
+     "title": "Problem-Solving Technique",
+     "pdf": 59,
+     "printed": 33,
+     "kind": "section",
+     "subs": [
+      "Step 1:  Problem Statement",
+      "Step 2:  Schematic",
+      "Step 3:  Assumptions and Approximations",
+      "Step 4:  Physical Laws",
+      "Step 5:  Properties",
+      "Step 6:  Calculations",
+      "Step 7:  Reasoning, Verification, and Discussion",
+      "Engineering Software Packages",
+      "A Remark on Significant Digits"
+     ],
+     "toc_num": "1–12",
+     "title_source": "contents",
+     "pdf_end": 64
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 65,
+     "printed": 39
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 65,
+     "printed": 39
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 66,
+     "printed": 40
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 72,
+     "printed": 46
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 76,
+     "printed": 50
+    }
+   ],
+   "features": [],
+   "toc_sections": [
+    {
+     "num": "1–1",
+     "title": "Thermodynamics and Energy"
+    },
+    {
+     "num": "1–2",
+     "title": "Importance of Dimensions and Units"
+    },
+    {
+     "num": "1–3",
+     "title": "Systems and Control Volumes"
+    },
+    {
+     "num": "1–4",
+     "title": "Properties of a System"
+    },
+    {
+     "num": "1–5",
+     "title": "Density and Specific Gravity"
+    },
+    {
+     "num": "1–6",
+     "title": "State and Equilibrium"
+    },
+    {
+     "num": "1–7",
+     "title": "Processes and Cycles"
+    },
+    {
+     "num": "1–8",
+     "title": "Temperature and the Zeroth Law of Thermodynamics"
+    },
+    {
+     "num": "1–9",
+     "title": "Pressure"
+    },
+    {
+     "num": "1–10",
+     "title": "The Manometer"
+    },
+    {
+     "num": "1–11",
+     "title": "The Barometer and Atmospheric Pressure"
+    },
+    {
+     "num": "1–12",
+     "title": "Problem-Solving Technique"
+    }
+   ],
+   "answers_printed": 19,
+   "n_problems": 129,
+   "n_problems_with_answer": 19
+  },
+  {
+   "num": 2,
+   "title": "Energy Conversion and General Energy Analysis",
+   "pdf": 77,
+   "printed": 51,
+   "pdf_end": 136,
+   "sections": [
+    {
+     "num": "2–1",
+     "title": "Introduction",
+     "pdf": 78,
+     "printed": 52,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "2–1",
+     "title_source": "contents",
+     "pdf_end": 78
+    },
+    {
+     "num": "2–2",
+     "title": "Forms of Energy",
+     "pdf": 79,
+     "printed": 53,
+     "kind": "section",
+     "subs": [
+      "Some Physical Insight to Internal Energy",
+      "Mechanical Energy",
+      "More on Nuclear Energy"
+     ],
+     "toc_num": "2–2",
+     "title_source": "contents",
+     "pdf_end": 85
+    },
+    {
+     "num": "2–3",
+     "title": "Energy Transfer by Heat",
+     "pdf": 86,
+     "printed": 60,
+     "kind": "section",
+     "subs": [
+      "Historical Background on Heat"
+     ],
+     "toc_num": "2–3",
+     "title_source": "contents",
+     "pdf_end": 87
+    },
+    {
+     "num": "2–4",
+     "title": "Energy Transfer by Work",
+     "pdf": 88,
+     "printed": 62,
+     "kind": "section",
+     "subs": [
+      "Electrical Work"
+     ],
+     "toc_num": "2–4",
+     "title_source": "contents",
+     "pdf_end": 91
+    },
+    {
+     "num": "2–5",
+     "title": "Mechanical Forms of Work",
+     "pdf": 92,
+     "printed": 66,
+     "kind": "section",
+     "subs": [
+      "Shaft Work",
+      "Spring Work",
+      "Work Done on Elastic Solid Bars",
+      "Work Associated with the Stretching of a Liquid Film",
+      "Work Done to Raise or to Accelerate a Body",
+      "Nonmechanical Forms of Work"
+     ],
+     "toc_num": "2–5",
+     "title_source": "contents",
+     "pdf_end": 95
+    },
+    {
+     "num": "2–6",
+     "title": "The First Law of Thermodynamics",
+     "pdf": 96,
+     "printed": 70,
+     "kind": "section",
+     "subs": [
+      "Energy Balance",
+      "Energy Change of a System, ∆Esystem",
+      "Mechanisms of Energy Transfer, Ein and Eout"
+     ],
+     "toc_num": "2–6",
+     "title_source": "contents",
+     "pdf_end": 103
+    },
+    {
+     "num": "2–7",
+     "title": "Energy Conversion Efficiencies",
+     "pdf": 104,
+     "printed": 78,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "2–7",
+     "title_source": "contents",
+     "pdf_end": 111
+    },
+    {
+     "num": "2–8",
+     "title": "Energy and Environment",
+     "pdf": 112,
+     "printed": 86,
+     "kind": "section",
+     "subs": [
+      "Ozone and Smog",
+      "Acid Rain",
+      "The Greenhouse Effect:  Global Warming and Climate Change"
+     ],
+     "toc_num": "2–8",
+     "title_source": "contents",
+     "pdf_end": 117
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 122,
+     "printed": 96
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 123,
+     "printed": 97
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 124,
+     "printed": 98
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 131,
+     "printed": 105
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 134,
+     "printed": 108
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 135,
+     "printed": 109
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 118,
+     "printed": 92
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "2–1",
+     "title": "Introduction"
+    },
+    {
+     "num": "2–2",
+     "title": "Forms of Energy"
+    },
+    {
+     "num": "2–3",
+     "title": "Energy Transfer by Heat"
+    },
+    {
+     "num": "2–4",
+     "title": "Energy Transfer by Work"
+    },
+    {
+     "num": "2–5",
+     "title": "Mechanical Forms of Work"
+    },
+    {
+     "num": "2–6",
+     "title": "The First Law of Thermodynamics"
+    },
+    {
+     "num": "2–7",
+     "title": "Energy Conversion Efficiencies"
+    },
+    {
+     "num": "2–8",
+     "title": "Energy and Environment"
+    }
+   ],
+   "answers_printed": 13,
+   "n_problems": 148,
+   "n_problems_with_answer": 13
+  },
+  {
+   "num": 3,
+   "title": "Properties of Pure Substances",
+   "pdf": 137,
+   "printed": 111,
+   "pdf_end": 190,
+   "sections": [
+    {
+     "num": "3–1",
+     "title": "Pure Substance",
+     "pdf": 138,
+     "printed": 112,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "3–1",
+     "title_source": "contents",
+     "pdf_end": 138
+    },
+    {
+     "num": "3–2",
+     "title": "Phases of a Pure Substance",
+     "pdf": 138,
+     "printed": 112,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "3–2",
+     "title_source": "contents",
+     "pdf_end": 138
+    },
+    {
+     "num": "3–3",
+     "title": "Phase-Change Processes of Pure Substances",
+     "pdf": 139,
+     "printed": 113,
+     "kind": "section",
+     "subs": [
+      "Compressed Liquid and Saturated Liquid",
+      "Saturated Vapor and Superheated Vapor",
+      "Saturation Temperature and Saturation Pressure",
+      "Some Consequences of Tsat and Psat Dependence"
+     ],
+     "toc_num": "3–3",
+     "title_source": "contents",
+     "pdf_end": 143
+    },
+    {
+     "num": "3–4",
+     "title": "Property Diagrams for Phase-Change Processes",
+     "pdf": 144,
+     "printed": 118,
+     "kind": "section",
+     "subs": [
+      "1   The T-v Diagram",
+      "2   The P-v Diagram",
+      "Extending the Diagrams to Include the Solid Phase",
+      "3   The P-T Diagram",
+      "The P-v-T Surface"
+     ],
+     "toc_num": "3–4",
+     "title_source": "contents",
+     "pdf_end": 151
+    },
+    {
+     "num": "3–5",
+     "title": "Property Tables",
+     "pdf": 152,
+     "printed": 126,
+     "kind": "section",
+     "subs": [
+      "Enthalpy—A Combination Property",
+      "1a   Saturated Liquid and Saturated Vapor States",
+      "1b   Saturated Liquid–Vapor Mixture",
+      "2   Superheated Vapor",
+      "3   Compressed Liquid",
+      "Reference State and Reference Values"
+     ],
+     "toc_num": "3–5",
+     "title_source": "contents",
+     "pdf_end": 162
+    },
+    {
+     "num": "3–6",
+     "title": "The Ideal-Gas Equation of State",
+     "pdf": 163,
+     "printed": 137,
+     "kind": "section",
+     "subs": [
+      "Is Water Vapor an Ideal Gas?"
+     ],
+     "toc_num": "3–6",
+     "title_source": "contents",
+     "pdf_end": 164
+    },
+    {
+     "num": "3–7",
+     "title": "Compressibility Factor—A Measure of Deviation from Ideal-Gas",
+     "pdf": 165,
+     "printed": 139,
+     "kind": "section",
+     "subs": [
+      "Behavior"
+     ],
+     "toc_num": "3–7",
+     "title_source": "contents",
+     "pdf_end": 169
+    },
+    {
+     "num": "3–8",
+     "title": "Other Equations of State",
+     "pdf": 170,
+     "printed": 144,
+     "kind": "section",
+     "subs": [
+      "Van der Waals Equation of State",
+      "Beattie-Bridgeman Equation of State",
+      "Benedict-Webb-Rubin Equation of State",
+      "Virial Equation of State",
+      "Vapor Pressure and Phase Equilibrium"
+     ],
+     "toc_num": "3–8",
+     "title_source": "contents",
+     "pdf_end": 174
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 179,
+     "printed": 153
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 180,
+     "printed": 154
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 180,
+     "printed": 154
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 186,
+     "printed": 160
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 190,
+     "printed": 164
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 175,
+     "printed": 149
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "3–1",
+     "title": "Pure Substance"
+    },
+    {
+     "num": "3–2",
+     "title": "Phases of a Pure Substance"
+    },
+    {
+     "num": "3–3",
+     "title": "Phase-Change Processes of Pure Substances"
+    },
+    {
+     "num": "3–4",
+     "title": "Property Diagrams for Phase-Change Processes"
+    },
+    {
+     "num": "3–5",
+     "title": "Property Tables"
+    },
+    {
+     "num": "3–6",
+     "title": "The Ideal-Gas Equation of State"
+    },
+    {
+     "num": "3–7",
+     "title": "Compressibility Factor—A Measure of Deviation from Ideal-Gas"
+    },
+    {
+     "num": "3–8",
+     "title": "Other Equations of State"
+    }
+   ],
+   "answers_printed": 24,
+   "n_problems": 145,
+   "n_problems_with_answer": 24
+  },
+  {
+   "num": 4,
+   "title": "Energy Analysis of Closed Systems",
+   "pdf": 191,
+   "printed": 165,
+   "pdf_end": 244,
+   "sections": [
+    {
+     "num": "4–1",
+     "title": "Moving Boundary Work",
+     "pdf": 192,
+     "printed": 166,
+     "kind": "section",
+     "subs": [
+      "Polytropic Process"
+     ],
+     "toc_num": "4–1",
+     "title_source": "contents",
+     "pdf_end": 198
+    },
+    {
+     "num": "4–2",
+     "title": "Energy Balance for Closed Systems",
+     "pdf": 199,
+     "printed": 173,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "4–2",
+     "title_source": "contents",
+     "pdf_end": 203
+    },
+    {
+     "num": "4–3",
+     "title": "Specific Heats",
+     "pdf": 204,
+     "printed": 178,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "4–3",
+     "title_source": "contents",
+     "pdf_end": 205
+    },
+    {
+     "num": "4–4",
+     "title": "Internal Energy, Enthalpy, and Specific Heats of Ideal Gases",
+     "pdf": 206,
+     "printed": 180,
+     "kind": "section",
+     "subs": [
+      "Specific Heat Relations of Ideal Gases"
+     ],
+     "toc_num": "4–4",
+     "title_source": "contents",
+     "pdf_end": 214
+    },
+    {
+     "num": "4–5",
+     "title": "Internal Energy, Enthalpy, and Specific Heat of Solids and Liquids",
+     "pdf": 215,
+     "printed": 189,
+     "kind": "section",
+     "subs": [
+      "Internal Energy Changes",
+      "Enthalpy Changes"
+     ],
+     "toc_num": "4–5",
+     "title_source": "contents",
+     "pdf_end": 218
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 226,
+     "printed": 200
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 227,
+     "printed": 201
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 227,
+     "printed": 201
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 236,
+     "printed": 210
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 241,
+     "printed": 215
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 219,
+     "printed": 193
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "4–1",
+     "title": "Moving Boundary Work"
+    },
+    {
+     "num": "4–2",
+     "title": "Energy Balance for Closed Systems"
+    },
+    {
+     "num": "4–3",
+     "title": "Specific Heats"
+    },
+    {
+     "num": "4–4",
+     "title": "Internal Energy, Enthalpy, and Specific Heats of Ideal Gases"
+    },
+    {
+     "num": "4–5",
+     "title": "Internal Energy, Enthalpy, and Specific Heat of Solids and Liquids"
+    }
+   ],
+   "answers_printed": 38,
+   "n_problems": 180,
+   "n_problems_with_answer": 38
+  },
+  {
+   "num": 5,
+   "title": "Mass and Energy Analysis of Control Volumes",
+   "pdf": 245,
+   "printed": 219,
+   "pdf_end": 304,
+   "sections": [
+    {
+     "num": "5–1",
+     "title": "Conservation of Mass",
+     "pdf": 246,
+     "printed": 220,
+     "kind": "section",
+     "subs": [
+      "Mass and Volume Flow Rates",
+      "Conservation of Mass Principle",
+      "Mass Balance for Steady-Flow Processes",
+      "Special Case:  Incompressible Flow"
+     ],
+     "toc_num": "5–1",
+     "title_source": "contents",
+     "pdf_end": 251
+    },
+    {
+     "num": "5–2",
+     "title": "Flow Work and the Energy of a Flowing Fluid",
+     "pdf": 252,
+     "printed": 226,
+     "kind": "section",
+     "subs": [
+      "Total Energy of a Flowing Fluid",
+      "Energy Transport by Mass"
+     ],
+     "toc_num": "5–2",
+     "title_source": "contents",
+     "pdf_end": 255
+    },
+    {
+     "num": "5–3",
+     "title": "Energy Analysis of Steady-Flow Systems",
+     "pdf": 256,
+     "printed": 230,
+     "kind": "section",
+     "subs": [
+      "Energy Balance"
+     ],
+     "toc_num": "5–3",
+     "title_source": "contents",
+     "pdf_end": 258
+    },
+    {
+     "num": "5–4",
+     "title": "Some Steady-Flow Engineering Devices",
+     "pdf": 259,
+     "printed": 233,
+     "kind": "section",
+     "subs": [
+      "1 Nozzles and Diffusers",
+      "2 Turbines and Compressors",
+      "3 Throttling Valves",
+      "4a Mixing Chambers",
+      "4b Heat Exchangers",
+      "5 Pipe and Duct Flow"
+     ],
+     "toc_num": "5–4",
+     "title_source": "contents",
+     "pdf_end": 271
+    },
+    {
+     "num": "5–5",
+     "title": "Energy Analysis of Unsteady-Flow Processes",
+     "pdf": 272,
+     "printed": 246,
+     "kind": "section",
+     "subs": [
+      "Mass Balance",
+      "Energy Balance"
+     ],
+     "toc_num": "5–5",
+     "title_source": "contents",
+     "pdf_end": 277
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 281,
+     "printed": 255
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 282,
+     "printed": 256
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 282,
+     "printed": 256
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 296,
+     "printed": 270
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 303,
+     "printed": 277
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 304,
+     "printed": 278
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 278,
+     "printed": 252
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "5–1",
+     "title": "Conservation of Mass"
+    },
+    {
+     "num": "5–2",
+     "title": "Flow Work and the Energy of a Flowing Fluid"
+    },
+    {
+     "num": "5–3",
+     "title": "Energy Analysis of Steady-Flow Systems"
+    },
+    {
+     "num": "5–4",
+     "title": "Some Steady-Flow Engineering Devices"
+    },
+    {
+     "num": "5–5",
+     "title": "Energy Analysis of Unsteady-Flow Processes"
+    }
+   ],
+   "answers_printed": 58,
+   "n_problems": 217,
+   "n_problems_with_answer": 57
+  },
+  {
+   "num": 6,
+   "title": "The Second Law of Thermodynamics",
+   "pdf": 305,
+   "printed": 279,
+   "pdf_end": 356,
+   "sections": [
+    {
+     "num": "6–1",
+     "title": "Introduction to the Second Law",
+     "pdf": 306,
+     "printed": 280,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "6–1",
+     "title_source": "contents",
+     "pdf_end": 306
+    },
+    {
+     "num": "6–2",
+     "title": "Thermal Energy Reservoirs",
+     "pdf": 307,
+     "printed": 281,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "6–2",
+     "title_source": "contents",
+     "pdf_end": 307
+    },
+    {
+     "num": "6–3",
+     "title": "Heat Engines",
+     "pdf": 308,
+     "printed": 282,
+     "kind": "section",
+     "subs": [
+      "Thermal Efficiency",
+      "Can We Save Qout ?",
+      "The Second Law of Thermodynamics: Kelvin–Planck Statement"
+     ],
+     "toc_num": "6–3",
+     "title_source": "contents",
+     "pdf_end": 312
+    },
+    {
+     "num": "6–4",
+     "title": "Refrigerators and Heat Pumps",
+     "pdf": 313,
+     "printed": 287,
+     "kind": "section",
+     "subs": [
+      "Coefficient of Performance",
+      "Heat Pumps",
+      "The Second Law of Thermodynamics: Clausius Statement",
+      "Equivalence of the Two Statements"
+     ],
+     "toc_num": "6–5",
+     "title_source": "contents",
+     "pdf_end": 318
+    },
+    {
+     "num": "6–5",
+     "title": "Perpetual-Motion Machines",
+     "pdf": 319,
+     "printed": 293,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "6–6",
+     "title_source": "contents",
+     "pdf_end": 321
+    },
+    {
+     "num": "6–6",
+     "title": "Reversible and Irreversible Processes",
+     "pdf": 322,
+     "printed": 296,
+     "kind": "section",
+     "subs": [
+      "Irreversibilities",
+      "Internally and Externally Reversible Processes"
+     ],
+     "toc_num": "6–7",
+     "title_source": "contents",
+     "pdf_end": 324
+    },
+    {
+     "num": "6–7",
+     "title": "The Carnot Cycle",
+     "pdf": 325,
+     "printed": 299,
+     "kind": "section",
+     "subs": [
+      "The Reversed Carnot Cycle"
+     ],
+     "toc_num": "6–8",
+     "title_source": "contents",
+     "pdf_end": 326
+    },
+    {
+     "num": "6–8",
+     "title": "The Carnot Principles",
+     "pdf": 327,
+     "printed": 301,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "6–9",
+     "title_source": "contents",
+     "pdf_end": 328
+    },
+    {
+     "num": "6–9",
+     "title": "The Thermodynamic Temperature Scale",
+     "pdf": 329,
+     "printed": 303,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "6–10",
+     "title_source": "contents",
+     "pdf_end": 330
+    },
+    {
+     "num": "6–10",
+     "title": "The Carnot Heat Engine",
+     "pdf": 331,
+     "printed": 305,
+     "kind": "section",
+     "subs": [
+      "The Quality of Energy",
+      "Quantity versus Quality in Daily Life"
+     ],
+     "toc_num": "6–11",
+     "title_source": "contents",
+     "pdf_end": 334
+    },
+    {
+     "num": "6–11",
+     "title": "The Carnot Refrigerator and Heat Pump",
+     "pdf": 335,
+     "printed": 309,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "6–12",
+     "title_source": "contents",
+     "pdf_end": 336
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 341,
+     "printed": 315
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 342,
+     "printed": 316
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 342,
+     "printed": 316
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 350,
+     "printed": 324
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 355,
+     "printed": 329
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 356,
+     "printed": 330
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 337,
+     "printed": 311
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "6–1",
+     "title": "Introduction to the Second Law"
+    },
+    {
+     "num": "6–2",
+     "title": "Thermal Energy Reservoirs"
+    },
+    {
+     "num": "6–3",
+     "title": "Heat Engines"
+    },
+    {
+     "num": "6–5",
+     "title": "Refrigerators and Heat Pumps"
+    },
+    {
+     "num": "6–6",
+     "title": "Perpetual-Motion Machines"
+    },
+    {
+     "num": "6–7",
+     "title": "Reversible and Irreversible Processes"
+    },
+    {
+     "num": "6–8",
+     "title": "The Carnot Cycle"
+    },
+    {
+     "num": "6–9",
+     "title": "The Carnot Principles"
+    },
+    {
+     "num": "6–10",
+     "title": "The Thermodynamic Temperature Scale"
+    },
+    {
+     "num": "6–11",
+     "title": "The Carnot Heat Engine"
+    },
+    {
+     "num": "6–12",
+     "title": "The Carnot Refrigerator and Heat Pump"
+    }
+   ],
+   "answers_printed": 30,
+   "n_problems": 172,
+   "n_problems_with_answer": 30
+  },
+  {
+   "num": 7,
+   "title": "Entropy",
+   "pdf": 357,
+   "printed": 331,
+   "pdf_end": 448,
+   "sections": [
+    {
+     "num": "7–1",
+     "title": "Entropy",
+     "pdf": 358,
+     "printed": 332,
+     "kind": "section",
+     "subs": [
+      "A Special Case:  Internally Reversible Isothermal Heat Transfer",
+      "Processes"
+     ],
+     "toc_num": "7–1",
+     "title_source": "contents",
+     "pdf_end": 360
+    },
+    {
+     "num": "7–2",
+     "title": "The Increase of Entropy Principle",
+     "pdf": 361,
+     "printed": 335,
+     "kind": "section",
+     "subs": [
+      "Some Remarks about Entropy"
+     ],
+     "toc_num": "7–2",
+     "title_source": "contents",
+     "pdf_end": 364
+    },
+    {
+     "num": "7–3",
+     "title": "Entropy Change of Pure Substances",
+     "pdf": 365,
+     "printed": 339,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "7–3",
+     "title_source": "contents",
+     "pdf_end": 368
+    },
+    {
+     "num": "7–4",
+     "title": "Isentropic Processes",
+     "pdf": 369,
+     "printed": 343,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "7–4",
+     "title_source": "contents",
+     "pdf_end": 369
+    },
+    {
+     "num": "7–5",
+     "title": "Property Diagrams Involving Entropy",
+     "pdf": 370,
+     "printed": 344,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "7–5",
+     "title_source": "contents",
+     "pdf_end": 371
+    },
+    {
+     "num": "7–6",
+     "title": "What Is Entropy?",
+     "pdf": 372,
+     "printed": 346,
+     "kind": "section",
+     "subs": [
+      "Entropy and Entropy Generation in Daily Life"
+     ],
+     "toc_num": "7–6",
+     "title_source": "contents",
+     "pdf_end": 375
+    },
+    {
+     "num": "7–7",
+     "title": "The T ds Relations",
+     "pdf": 376,
+     "printed": 350,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "7–7",
+     "title_source": "contents",
+     "pdf_end": 376
+    },
+    {
+     "num": "7–8",
+     "title": "Entropy Change of Liquids and Solids",
+     "pdf": 377,
+     "printed": 351,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "7–8",
+     "title_source": "contents",
+     "pdf_end": 379
+    },
+    {
+     "num": "7–9",
+     "title": "The Entropy Change of Ideal Gases",
+     "pdf": 380,
+     "printed": 354,
+     "kind": "section",
+     "subs": [
+      "Constant Specific Heats (Approximate Analysis)",
+      "Variable Specific Heats (Exact Analysis)",
+      "Isentropic Processes of Ideal Gases",
+      "Constant Specific Heats (Approximate Analysis)",
+      "Variable Specific Heats (Exact Analysis)",
+      "Relative Pressure and Relative Specific Volume"
+     ],
+     "toc_num": "7–9",
+     "title_source": "contents",
+     "pdf_end": 387
+    },
+    {
+     "num": "7–10",
+     "title": "Reversible Steady-Flow Work",
+     "pdf": 388,
+     "printed": 362,
+     "kind": "section",
+     "subs": [
+      "Proof that Steady-Flow Devices Deliver the Most and Consume the Least",
+      "Work when the Process Is Reversible"
+     ],
+     "toc_num": "7–10",
+     "title_source": "contents",
+     "pdf_end": 391
+    },
+    {
+     "num": "7–11",
+     "title": "Minimizing the Compressor Work",
+     "pdf": 392,
+     "printed": 366,
+     "kind": "section",
+     "subs": [
+      "Multistage Compression with Intercooling"
+     ],
+     "toc_num": "7–11",
+     "title_source": "contents",
+     "pdf_end": 395
+    },
+    {
+     "num": "7–12",
+     "title": "Isentropic Efficiencies of Steady-Flow Devices",
+     "pdf": 396,
+     "printed": 370,
+     "kind": "section",
+     "subs": [
+      "Isentropic Efficiency of Turbines",
+      "Isentropic Efficiencies of Compressors and Pumps",
+      "Isentropic Efficiency of Nozzles"
+     ],
+     "toc_num": "7–12",
+     "title_source": "contents",
+     "pdf_end": 402
+    },
+    {
+     "num": "7–13",
+     "title": "Entropy Balance",
+     "pdf": 403,
+     "printed": 377,
+     "kind": "section",
+     "subs": [
+      "Entropy Change of a System, ∆S system",
+      "Mechanisms of Entropy Transfer, Sin and Sout",
+      "1 Heat Transfer",
+      "2 Mass Flow",
+      "Entropy Generation, Sgen",
+      "Closed Systems",
+      "Control Volumes",
+      "Entropy Generation Associated with a Heat Transfer Process"
+     ],
+     "toc_num": "7–13",
+     "title_source": "contents",
+     "pdf_end": 416
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 426,
+     "printed": 400
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 427,
+     "printed": 401
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 428,
+     "printed": 402
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 440,
+     "printed": 414
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 447,
+     "printed": 421
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 448,
+     "printed": 422
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 417,
+     "printed": 391
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "7–1",
+     "title": "Entropy"
+    },
+    {
+     "num": "7–2",
+     "title": "The Increase of Entropy Principle"
+    },
+    {
+     "num": "7–3",
+     "title": "Entropy Change of Pure Substances"
+    },
+    {
+     "num": "7–4",
+     "title": "Isentropic Processes"
+    },
+    {
+     "num": "7–5",
+     "title": "Property Diagrams Involving Entropy"
+    },
+    {
+     "num": "7–6",
+     "title": "What Is Entropy?"
+    },
+    {
+     "num": "7–7",
+     "title": "The T ds Relations"
+    },
+    {
+     "num": "7–8",
+     "title": "Entropy Change of Liquids and Solids"
+    },
+    {
+     "num": "7–9",
+     "title": "The Entropy Change of Ideal Gases"
+    },
+    {
+     "num": "7–10",
+     "title": "Reversible Steady-Flow Work"
+    },
+    {
+     "num": "7–11",
+     "title": "Minimizing the Compressor Work"
+    },
+    {
+     "num": "7–12",
+     "title": "Isentropic Efficiencies of Steady-Flow Devices"
+    },
+    {
+     "num": "7–13",
+     "title": "Entropy Balance"
+    }
+   ],
+   "answers_printed": 41,
+   "n_problems": 241,
+   "n_problems_with_answer": 39
+  },
+  {
+   "num": 8,
+   "title": "Exergy: A Measure of Work Potential",
+   "pdf": 449,
+   "printed": 423,
+   "pdf_end": 512,
+   "sections": [
+    {
+     "num": "8–1",
+     "title": "Exergy: Work Potential of Energy",
+     "pdf": 450,
+     "printed": 424,
+     "kind": "section",
+     "subs": [
+      "Exergy (Work Potential) Associated with Kinetic and Potential Energy"
+     ],
+     "toc_num": "8–1",
+     "title_source": "contents",
+     "pdf_end": 452
+    },
+    {
+     "num": "8–2",
+     "title": "Reversible Work and Irreversibility",
+     "pdf": 453,
+     "printed": 427,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "8–2",
+     "title_source": "contents",
+     "pdf_end": 457
+    },
+    {
+     "num": "8–3",
+     "title": "Second-Law Efficiency, ηII",
+     "pdf": 458,
+     "printed": 432,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "8–3",
+     "title_source": "contents",
+     "pdf_end": 459
+    },
+    {
+     "num": "8–4",
+     "title": "Exergy Change of a System",
+     "pdf": 460,
+     "printed": 434,
+     "kind": "section",
+     "subs": [
+      "Exergy of a Fixed Mass: Nonflow (or Closed System) Exergy",
+      "Exergy of a Flow Stream:  Flow (or Stream) Exergy"
+     ],
+     "toc_num": "8–4",
+     "title_source": "contents",
+     "pdf_end": 465
+    },
+    {
+     "num": "8–5",
+     "title": "Exergy Transfer by Heat, Work, and Mass",
+     "pdf": 466,
+     "printed": 440,
+     "kind": "section",
+     "subs": [
+      "Exergy Transfer by Heat Transfer, Q",
+      "Exergy Transfer by Work, W",
+      "Exergy Transfer by Mass, m"
+     ],
+     "toc_num": "8–5",
+     "title_source": "contents",
+     "pdf_end": 468
+    },
+    {
+     "num": "8–6",
+     "title": "The Decrease of Exergy Principle and Exergy Destruction",
+     "pdf": 469,
+     "printed": 443,
+     "kind": "section",
+     "subs": [
+      "Exergy Destruction"
+     ],
+     "toc_num": "8–6",
+     "title_source": "contents",
+     "pdf_end": 469
+    },
+    {
+     "num": "8–7",
+     "title": "Exergy Balance: Closed Systems",
+     "pdf": 470,
+     "printed": 444,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "8–7",
+     "title_source": "contents",
+     "pdf_end": 482
+    },
+    {
+     "num": "8–8",
+     "title": "Exergy Balance: Control Volumes",
+     "pdf": 483,
+     "printed": 457,
+     "kind": "section",
+     "subs": [
+      "Exergy Balance for Steady-Flow Systems",
+      "Reversible Work, W rev",
+      "Second-Law Efficiency of Steady-Flow Devices, ηII"
+     ],
+     "toc_num": "8–8",
+     "title_source": "contents",
+     "pdf_end": 490
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 495,
+     "printed": 469
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 496,
+     "printed": 470
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 496,
+     "printed": 470
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 505,
+     "printed": 479
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 511,
+     "printed": 485
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 511,
+     "printed": 485
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 491,
+     "printed": 465
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "8–1",
+     "title": "Exergy: Work Potential of Energy"
+    },
+    {
+     "num": "8–2",
+     "title": "Reversible Work and Irreversibility"
+    },
+    {
+     "num": "8–3",
+     "title": "Second-Law Efficiency, ηII"
+    },
+    {
+     "num": "8–4",
+     "title": "Exergy Change of a System"
+    },
+    {
+     "num": "8–5",
+     "title": "Exergy Transfer by Heat, Work, and Mass"
+    },
+    {
+     "num": "8–6",
+     "title": "The Decrease of Exergy Principle and Exergy Destruction"
+    },
+    {
+     "num": "8–7",
+     "title": "Exergy Balance: Closed Systems"
+    },
+    {
+     "num": "8–8",
+     "title": "Exergy Balance: Control Volumes"
+    }
+   ],
+   "answers_printed": 41,
+   "n_problems": 158,
+   "n_problems_with_answer": 41
+  },
+  {
+   "num": 9,
+   "title": "Gas Power Cycles",
+   "pdf": 513,
+   "printed": 487,
+   "pdf_end": 576,
+   "sections": [
+    {
+     "num": "9–1",
+     "title": "Basic Considerations in the Analysis of Power Cycles",
+     "pdf": 514,
+     "printed": 488,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–1",
+     "title_source": "contents",
+     "pdf_end": 515
+    },
+    {
+     "num": "9–2",
+     "title": "The Carnot Cycle and Its Value in Engineering",
+     "pdf": 516,
+     "printed": 490,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–2",
+     "title_source": "contents",
+     "pdf_end": 517
+    },
+    {
+     "num": "9–3",
+     "title": "Air-Standard Assumptions",
+     "pdf": 518,
+     "printed": 492,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–3",
+     "title_source": "contents",
+     "pdf_end": 518
+    },
+    {
+     "num": "9–4",
+     "title": "An Overview of Reciprocating Engines",
+     "pdf": 519,
+     "printed": 493,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–4",
+     "title_source": "contents",
+     "pdf_end": 519
+    },
+    {
+     "num": "9–5",
+     "title": "Otto Cycle: The Ideal Cycle for Spark-Ignition Engines",
+     "pdf": 520,
+     "printed": 494,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–5",
+     "title_source": "contents",
+     "pdf_end": 525
+    },
+    {
+     "num": "9–6",
+     "title": "Diesel Cycle: The Ideal Cycle for Compression-Ignition Engines",
+     "pdf": 526,
+     "printed": 500,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–6",
+     "title_source": "contents",
+     "pdf_end": 528
+    },
+    {
+     "num": "9–7",
+     "title": "Stirling and Ericsson Cycles",
+     "pdf": 529,
+     "printed": 503,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–7",
+     "title_source": "contents",
+     "pdf_end": 532
+    },
+    {
+     "num": "9–8",
+     "title": "Brayton Cycle:  The Ideal Cycle for Gas-Turbine Engines",
+     "pdf": 533,
+     "printed": 507,
+     "kind": "section",
+     "subs": [
+      "Development of Gas Turbines",
+      "Deviation of Actual Gas-Turbine Cycles from Idealized Ones"
+     ],
+     "toc_num": "9–8",
+     "title_source": "contents",
+     "pdf_end": 540
+    },
+    {
+     "num": "9–9",
+     "title": "The Brayton Cycle with Regeneration",
+     "pdf": 541,
+     "printed": 515,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–9",
+     "title_source": "contents",
+     "pdf_end": 542
+    },
+    {
+     "num": "9–10",
+     "title": "The Brayton Cycle with Intercooling, Reheating, and Regeneration",
+     "pdf": 543,
+     "printed": 517,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–10",
+     "title_source": "contents",
+     "pdf_end": 546
+    },
+    {
+     "num": "9–11",
+     "title": "Ideal Jet-Propulsion Cycles",
+     "pdf": 547,
+     "printed": 521,
+     "kind": "section",
+     "subs": [
+      "Modifications to Turbojet Engines"
+     ],
+     "toc_num": "9–11",
+     "title_source": "contents",
+     "pdf_end": 552
+    },
+    {
+     "num": "9–12",
+     "title": "Second-Law Analysis of Gas Power Cycles",
+     "pdf": 553,
+     "printed": 527,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "9–12",
+     "title_source": "contents",
+     "pdf_end": 555
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 563,
+     "printed": 537
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 564,
+     "printed": 538
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 565,
+     "printed": 539
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 572,
+     "printed": 546
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 575,
+     "printed": 549
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 576,
+     "printed": 550
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 556,
+     "printed": 530
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "9–1",
+     "title": "Basic Considerations in the Analysis of Power Cycles"
+    },
+    {
+     "num": "9–2",
+     "title": "The Carnot Cycle and Its Value in Engineering"
+    },
+    {
+     "num": "9–3",
+     "title": "Air-Standard Assumptions"
+    },
+    {
+     "num": "9–4",
+     "title": "An Overview of Reciprocating Engines"
+    },
+    {
+     "num": "9–5",
+     "title": "Otto Cycle: The Ideal Cycle for Spark-Ignition Engines"
+    },
+    {
+     "num": "9–6",
+     "title": "Diesel Cycle: The Ideal Cycle for Compression-Ignition Engines"
+    },
+    {
+     "num": "9–7",
+     "title": "Stirling and Ericsson Cycles"
+    },
+    {
+     "num": "9–8",
+     "title": "Brayton Cycle:  The Ideal Cycle for Gas-Turbine Engines"
+    },
+    {
+     "num": "9–9",
+     "title": "The Brayton Cycle with Regeneration"
+    },
+    {
+     "num": "9–10",
+     "title": "The Brayton Cycle with Intercooling, Reheating, and Regeneration"
+    },
+    {
+     "num": "9–11",
+     "title": "Ideal Jet-Propulsion Cycles"
+    },
+    {
+     "num": "9–12",
+     "title": "Second-Law Analysis of Gas Power Cycles"
+    }
+   ],
+   "answers_printed": 27,
+   "n_problems": 191,
+   "n_problems_with_answer": 27
+  },
+  {
+   "num": 10,
+   "title": "Vapor and Combined Power Cycles",
+   "pdf": 577,
+   "printed": 551,
+   "pdf_end": 632,
+   "sections": [
+    {
+     "num": "10–1",
+     "title": "The Carnot Vapor Cycle",
+     "pdf": 578,
+     "printed": 552,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "10–1",
+     "title_source": "contents",
+     "pdf_end": 578
+    },
+    {
+     "num": "10–2",
+     "title": "Rankine Cycle:  The Ideal Cycle for Vapor Power Cycles",
+     "pdf": 579,
+     "printed": 553,
+     "kind": "section",
+     "subs": [
+      "Energy Analysis of the Ideal Rankine Cycle"
+     ],
+     "toc_num": "10–2",
+     "title_source": "contents",
+     "pdf_end": 582
+    },
+    {
+     "num": "10–3",
+     "title": "Deviation of Actual Vapor Power Cycles from Idealized Ones",
+     "pdf": 583,
+     "printed": 557,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "10–3",
+     "title_source": "contents",
+     "pdf_end": 585
+    },
+    {
+     "num": "10–4",
+     "title": "How Can We Increase the Efficiency of the Rankine Cycle?",
+     "pdf": 586,
+     "printed": 560,
+     "kind": "section",
+     "subs": [
+      "Lowering the Condenser Pressure (Lowers T low,av)",
+      "Superheating the Steam to High Temperatures (Increases Thigh,av)",
+      "Increasing the Boiler Pressure (Increases Thigh,av)"
+     ],
+     "toc_num": "10–4",
+     "title_source": "contents",
+     "pdf_end": 589
+    },
+    {
+     "num": "10–5",
+     "title": "The Ideal Reheat Rankine Cycle",
+     "pdf": 590,
+     "printed": 564,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "10–5",
+     "title_source": "contents",
+     "pdf_end": 593
+    },
+    {
+     "num": "10–6",
+     "title": "The Ideal Regenerative Rankine Cycle",
+     "pdf": 594,
+     "printed": 568,
+     "kind": "section",
+     "subs": [
+      "Open Feedwater Heaters",
+      "Closed Feedwater Heaters"
+     ],
+     "toc_num": "10–6",
+     "title_source": "contents",
+     "pdf_end": 601
+    },
+    {
+     "num": "10–7",
+     "title": "Second-Law Analysis of Vapor Power Cycles",
+     "pdf": 602,
+     "printed": 576,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "10–7",
+     "title_source": "contents",
+     "pdf_end": 603
+    },
+    {
+     "num": "10–8",
+     "title": "Cogeneration",
+     "pdf": 604,
+     "printed": 578,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "10–8",
+     "title_source": "contents",
+     "pdf_end": 608
+    },
+    {
+     "num": "10–9",
+     "title": "Combined Gas–Vapor Power Cycles",
+     "pdf": 609,
+     "printed": 583,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "10–9",
+     "title_source": "contents",
+     "pdf_end": 611
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 615,
+     "printed": 589
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 615,
+     "printed": 589
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 616,
+     "printed": 590
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 625,
+     "printed": 599
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 628,
+     "printed": 602
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 629,
+     "printed": 603
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 612,
+     "printed": 586
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "10–1",
+     "title": "The Carnot Vapor Cycle"
+    },
+    {
+     "num": "10–2",
+     "title": "Rankine Cycle:  The Ideal Cycle for Vapor Power Cycles"
+    },
+    {
+     "num": "10–3",
+     "title": "Deviation of Actual Vapor Power Cycles from Idealized Ones"
+    },
+    {
+     "num": "10–4",
+     "title": "How Can We Increase the Efficiency of the Rankine Cycle?"
+    },
+    {
+     "num": "10–5",
+     "title": "The Ideal Reheat Rankine Cycle"
+    },
+    {
+     "num": "10–6",
+     "title": "The Ideal Regenerative Rankine Cycle"
+    },
+    {
+     "num": "10–7",
+     "title": "Second-Law Analysis of Vapor Power Cycles"
+    },
+    {
+     "num": "10–8",
+     "title": "Cogeneration"
+    },
+    {
+     "num": "10–9",
+     "title": "Combined Gas–Vapor Power Cycles"
+    }
+   ],
+   "answers_printed": 28,
+   "n_problems": 133,
+   "n_problems_with_answer": 28
+  },
+  {
+   "num": 11,
+   "title": "Refrigeration Cycles",
+   "pdf": 633,
+   "printed": 607,
+   "pdf_end": 676,
+   "sections": [
+    {
+     "num": "11–1",
+     "title": "Refrigerators and Heat Pumps",
+     "pdf": 634,
+     "printed": 608,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–1",
+     "title_source": "contents",
+     "pdf_end": 634
+    },
+    {
+     "num": "11–2",
+     "title": "The Reversed Carnot Cycle",
+     "pdf": 635,
+     "printed": 609,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–2",
+     "title_source": "contents",
+     "pdf_end": 635
+    },
+    {
+     "num": "11–3",
+     "title": "The Ideal Vapor-Compression Refrigeration Cycle",
+     "pdf": 636,
+     "printed": 610,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–3",
+     "title_source": "contents",
+     "pdf_end": 639
+    },
+    {
+     "num": "11–4",
+     "title": "Actual Vapor-Compression Refrigeration Cycle",
+     "pdf": 640,
+     "printed": 614,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–4",
+     "title_source": "contents",
+     "pdf_end": 641
+    },
+    {
+     "num": "11–5",
+     "title": "Selecting the Right Refrigerant",
+     "pdf": 642,
+     "printed": 616,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–5",
+     "title_source": "contents",
+     "pdf_end": 643
+    },
+    {
+     "num": "11–6",
+     "title": "Heat Pump Systems",
+     "pdf": 644,
+     "printed": 618,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–6",
+     "title_source": "contents",
+     "pdf_end": 645
+    },
+    {
+     "num": "11–7",
+     "title": "Innovative Vapor-Compression Refrigeration Systems",
+     "pdf": 646,
+     "printed": 620,
+     "kind": "section",
+     "subs": [
+      "Cascade Refrigeration Systems",
+      "Multistage Compression Refrigeration Systems",
+      "Multipurpose Refrigeration Systems with a Single Compressor",
+      "Liquefaction of Gases"
+     ],
+     "toc_num": "11–7",
+     "title_source": "contents",
+     "pdf_end": 653
+    },
+    {
+     "num": "11–8",
+     "title": "Gas Refrigeration Cycles",
+     "pdf": 654,
+     "printed": 628,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "11–8",
+     "title_source": "contents",
+     "pdf_end": 656
+    },
+    {
+     "num": "11–9",
+     "title": "Absorption Refrigeration Systems",
+     "pdf": 657,
+     "printed": 631,
+     "kind": "section",
+     "subs": [
+      "Systems"
+     ],
+     "toc_num": "11–9",
+     "title_source": "contents",
+     "pdf_end": 659
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 662,
+     "printed": 636
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 663,
+     "printed": 637
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 663,
+     "printed": 637
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 670,
+     "printed": 644
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 673,
+     "printed": 647
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 674,
+     "printed": 648
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 660,
+     "printed": 634
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "11–1",
+     "title": "Refrigerators and Heat Pumps"
+    },
+    {
+     "num": "11–2",
+     "title": "The Reversed Carnot Cycle"
+    },
+    {
+     "num": "11–3",
+     "title": "The Ideal Vapor-Compression Refrigeration Cycle"
+    },
+    {
+     "num": "11–4",
+     "title": "Actual Vapor-Compression Refrigeration Cycle"
+    },
+    {
+     "num": "11–5",
+     "title": "Selecting the Right Refrigerant"
+    },
+    {
+     "num": "11–6",
+     "title": "Heat Pump Systems"
+    },
+    {
+     "num": "11–7",
+     "title": "Innovative Vapor-Compression Refrigeration Systems"
+    },
+    {
+     "num": "11–8",
+     "title": "Gas Refrigeration Cycles"
+    },
+    {
+     "num": "11–9",
+     "title": "Absorption Refrigeration Systems"
+    }
+   ],
+   "answers_printed": 22,
+   "n_problems": 129,
+   "n_problems_with_answer": 22
+  },
+  {
+   "num": 12,
+   "title": "Thermodynamic Property Relations",
+   "pdf": 677,
+   "printed": 651,
+   "pdf_end": 706,
+   "sections": [
+    {
+     "num": "12–1",
+     "title": "A Little Math—Partial Derivatives and Associated Relations",
+     "pdf": 678,
+     "printed": 652,
+     "kind": "section",
+     "subs": [
+      "Partial Differentials",
+      "Partial Differential Relations"
+     ],
+     "toc_num": "12–1",
+     "title_source": "contents",
+     "pdf_end": 681
+    },
+    {
+     "num": "12–2",
+     "title": "The Maxwell Relations",
+     "pdf": 682,
+     "printed": 656,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "12–2",
+     "title_source": "contents",
+     "pdf_end": 683
+    },
+    {
+     "num": "12–3",
+     "title": "The Clapeyron Equation",
+     "pdf": 684,
+     "printed": 658,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "12–3",
+     "title_source": "contents",
+     "pdf_end": 686
+    },
+    {
+     "num": "12–4",
+     "title": "General Relations",
+     "pdf": 687,
+     "printed": 661,
+     "kind": "section",
+     "subs": [],
+     "toc_num": null,
+     "title_source": "body-heading",
+     "pdf_end": 693
+    },
+    {
+     "num": "12–5",
+     "title": "The Joule-Thomson Coefficient",
+     "pdf": 694,
+     "printed": 668,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "12–5",
+     "title_source": "contents",
+     "pdf_end": 694
+    },
+    {
+     "num": "12–6",
+     "title": "The ∆h, ∆u, and ∆s of Real Gases",
+     "pdf": 695,
+     "printed": 669,
+     "kind": "section",
+     "subs": [
+      "Enthalpy Changes of Real Gases",
+      "Internal Energy Changes of Real Gases",
+      "Entropy Changes of Real Gases"
+     ],
+     "toc_num": "12–6",
+     "title_source": "contents",
+     "pdf_end": 699
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 700,
+     "printed": 674
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 701,
+     "printed": 675
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 701,
+     "printed": 675
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 704,
+     "printed": 678
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 705,
+     "printed": 679
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 706,
+     "printed": 680
+    }
+   ],
+   "features": [],
+   "toc_sections": [
+    {
+     "num": "12–1",
+     "title": "A Little Math—Partial Derivatives and Associated Relations"
+    },
+    {
+     "num": "12–2",
+     "title": "The Maxwell Relations"
+    },
+    {
+     "num": "12–3",
+     "title": "The Clapeyron Equation"
+    },
+    {
+     "num": "12–4",
+     "title": "General Relations for du, dh, ds, Cv, and Cp"
+    },
+    {
+     "num": "12–5",
+     "title": "The Joule-Thomson Coefficient"
+    },
+    {
+     "num": "12–6",
+     "title": "The ∆h, ∆u, and ∆s of Real Gases"
+    }
+   ],
+   "answers_printed": 16,
+   "n_problems": 98,
+   "n_problems_with_answer": 16
+  },
+  {
+   "num": 13,
+   "title": "Gas Mixtures",
+   "pdf": 707,
+   "printed": 681,
+   "pdf_end": 742,
+   "sections": [
+    {
+     "num": "13–1",
+     "title": "Composition of a Gas Mixture: Mass and Mole Fractions",
+     "pdf": 708,
+     "printed": 682,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "13–1",
+     "title_source": "contents",
+     "pdf_end": 709
+    },
+    {
+     "num": "13–2",
+     "title": "P-v-T Behavior of Gas Mixtures: Ideal and Real Gases",
+     "pdf": 710,
+     "printed": 684,
+     "kind": "section",
+     "subs": [
+      "Ideal-Gas Mixtures",
+      "Real-Gas Mixtures"
+     ],
+     "toc_num": "13–2",
+     "title_source": "contents",
+     "pdf_end": 714
+    },
+    {
+     "num": "13–3",
+     "title": "Properties of Gas Mixtures: Ideal and Real Gases",
+     "pdf": 715,
+     "printed": 689,
+     "kind": "section",
+     "subs": [
+      "Ideal-Gas Mixtures",
+      "Real-Gas Mixtures",
+      "Mixtures",
+      "Ideal Gas Mixtures and Ideal Solutions",
+      "Minimum Work of Separation of Mixtures",
+      "Reversible Mixing Processes",
+      "Second-Law Efficiency",
+      "Special-Case:  Separation of a Two-Component Mixture",
+      "An Application: Desalination Processes"
+     ],
+     "toc_num": "13–3",
+     "title_source": "contents",
+     "pdf_end": 722
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 734,
+     "printed": 708
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 735,
+     "printed": 709
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 735,
+     "printed": 709
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 739,
+     "printed": 713
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 740,
+     "printed": 714
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 723,
+     "printed": 697
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "13–1",
+     "title": "Composition of a Gas Mixture: Mass and Mole Fractions"
+    },
+    {
+     "num": "13–2",
+     "title": "P-v-T Behavior of Gas Mixtures: Ideal and Real Gases"
+    },
+    {
+     "num": "13–3",
+     "title": "Properties of Gas Mixtures: Ideal and Real Gases"
+    }
+   ],
+   "answers_printed": 11,
+   "n_problems": 105,
+   "n_problems_with_answer": 10
+  },
+  {
+   "num": 14,
+   "title": "Gas–Vapor Mixtures and Air-Conditioning",
+   "pdf": 743,
+   "printed": 717,
+   "pdf_end": 776,
+   "sections": [
+    {
+     "num": "14–1",
+     "title": "Dry and Atmospheric Air",
+     "pdf": 744,
+     "printed": 718,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "14–1",
+     "title_source": "contents",
+     "pdf_end": 744
+    },
+    {
+     "num": "14–2",
+     "title": "Specific and Relative Humidity of Air",
+     "pdf": 745,
+     "printed": 719,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "14–2",
+     "title_source": "contents",
+     "pdf_end": 746
+    },
+    {
+     "num": "14–3",
+     "title": "Dew-Point Temperature",
+     "pdf": 747,
+     "printed": 721,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "14–3",
+     "title_source": "contents",
+     "pdf_end": 748
+    },
+    {
+     "num": "14–4",
+     "title": "Adiabatic Saturation and Wet-Bulb Temperatures",
+     "pdf": 749,
+     "printed": 723,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "14–4",
+     "title_source": "contents",
+     "pdf_end": 751
+    },
+    {
+     "num": "14–5",
+     "title": "The Psychrometric Chart",
+     "pdf": 752,
+     "printed": 726,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "14–5",
+     "title_source": "contents",
+     "pdf_end": 752
+    },
+    {
+     "num": "14–6",
+     "title": "Human Comfort and Air-Conditioning",
+     "pdf": 753,
+     "printed": 727,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "14–6",
+     "title_source": "contents",
+     "pdf_end": 754
+    },
+    {
+     "num": "14–7",
+     "title": "Air-Conditioning Processes",
+     "pdf": 755,
+     "printed": 729,
+     "kind": "section",
+     "subs": [
+      "Simple Heating and Cooling (w = constant)",
+      "Heating with Humidification",
+      "Cooling with Dehumidification",
+      "Evaporative Cooling",
+      "Adiabatic Mixing of Airstreams",
+      "Wet Cooling Towers"
+     ],
+     "toc_num": "14–7",
+     "title_source": "contents",
+     "pdf_end": 764
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 765,
+     "printed": 739
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 767,
+     "printed": 741
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 767,
+     "printed": 741
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 773,
+     "printed": 747
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 775,
+     "printed": 749
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 776,
+     "printed": 750
+    }
+   ],
+   "features": [],
+   "toc_sections": [
+    {
+     "num": "14–1",
+     "title": "Dry and Atmospheric Air"
+    },
+    {
+     "num": "14–2",
+     "title": "Specific and Relative Humidity of Air"
+    },
+    {
+     "num": "14–3",
+     "title": "Dew-Point Temperature"
+    },
+    {
+     "num": "14–4",
+     "title": "Adiabatic Saturation and Wet-Bulb Temperatures"
+    },
+    {
+     "num": "14–5",
+     "title": "The Psychrometric Chart"
+    },
+    {
+     "num": "14–6",
+     "title": "Human Comfort and Air-Conditioning"
+    },
+    {
+     "num": "14–7",
+     "title": "Air-Conditioning Processes"
+    }
+   ],
+   "answers_printed": 21,
+   "n_problems": 157,
+   "n_problems_with_answer": 21
+  },
+  {
+   "num": 15,
+   "title": "Chemical Reactions",
+   "pdf": 777,
+   "printed": 751,
+   "pdf_end": 818,
+   "sections": [
+    {
+     "num": "15–1",
+     "title": "Fuels and Combustion",
+     "pdf": 778,
+     "printed": 752,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "15–1",
+     "title_source": "contents",
+     "pdf_end": 781
+    },
+    {
+     "num": "15–2",
+     "title": "Theoretical and Actual Combustion Processes",
+     "pdf": 782,
+     "printed": 756,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "15–2",
+     "title_source": "contents",
+     "pdf_end": 787
+    },
+    {
+     "num": "15–3",
+     "title": "Enthalpy of Formation and Enthalpy of Combustion",
+     "pdf": 788,
+     "printed": 762,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "15–3",
+     "title_source": "contents",
+     "pdf_end": 790
+    },
+    {
+     "num": "15–4",
+     "title": "First-Law Analysis of Reacting Systems",
+     "pdf": 791,
+     "printed": 765,
+     "kind": "section",
+     "subs": [
+      "Steady-Flow Systems",
+      "Closed Systems"
+     ],
+     "toc_num": "15–4",
+     "title_source": "contents",
+     "pdf_end": 795
+    },
+    {
+     "num": "15–5",
+     "title": "Adiabatic Flame Temperature",
+     "pdf": 796,
+     "printed": 770,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "15–5",
+     "title_source": "contents",
+     "pdf_end": 798
+    },
+    {
+     "num": "15–6",
+     "title": "Entropy Change of Reacting Systems",
+     "pdf": 799,
+     "printed": 773,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "15–6",
+     "title_source": "contents",
+     "pdf_end": 800
+    },
+    {
+     "num": "15–7",
+     "title": "Second-Law Analysis of Reacting systems",
+     "pdf": 801,
+     "printed": 775,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "15–7",
+     "title_source": "contents",
+     "pdf_end": 805
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 808,
+     "printed": 782
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 809,
+     "printed": 783
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 809,
+     "printed": 783
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 814,
+     "printed": 788
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 817,
+     "printed": 791
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 818,
+     "printed": 792
+    }
+   ],
+   "features": [
+    {
+     "name": "TOPIC OF SPECIAL INTEREST",
+     "pdf": 806,
+     "printed": 780
+    }
+   ],
+   "toc_sections": [
+    {
+     "num": "15–1",
+     "title": "Fuels and Combustion"
+    },
+    {
+     "num": "15–2",
+     "title": "Theoretical and Actual Combustion Processes"
+    },
+    {
+     "num": "15–3",
+     "title": "Enthalpy of Formation and Enthalpy of Combustion"
+    },
+    {
+     "num": "15–4",
+     "title": "First-Law Analysis of Reacting Systems"
+    },
+    {
+     "num": "15–5",
+     "title": "Adiabatic Flame Temperature"
+    },
+    {
+     "num": "15–6",
+     "title": "Entropy Change of Reacting Systems"
+    },
+    {
+     "num": "15–7",
+     "title": "Second-Law Analysis of Reacting systems"
+    }
+   ],
+   "answers_printed": 32,
+   "n_problems": 133,
+   "n_problems_with_answer": 32
+  },
+  {
+   "num": 16,
+   "title": "Chemical and Phase Equilibrium",
+   "pdf": 819,
+   "printed": 793,
+   "pdf_end": 848,
+   "sections": [
+    {
+     "num": "16–1",
+     "title": "Criterion for Chemical Equilibrium",
+     "pdf": 820,
+     "printed": 794,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "16–1",
+     "title_source": "contents",
+     "pdf_end": 821
+    },
+    {
+     "num": "16–2",
+     "title": "The Equilibrium Constant for Ideal-Gas Mixtures",
+     "pdf": 822,
+     "printed": 796,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "16–2",
+     "title_source": "contents",
+     "pdf_end": 824
+    },
+    {
+     "num": "16–3",
+     "title": "Some Remarks about the KP  of Ideal-Gas Mixtures",
+     "pdf": 825,
+     "printed": 799,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "16–3",
+     "title_source": "contents",
+     "pdf_end": 829
+    },
+    {
+     "num": "16–4",
+     "title": "Chemical Equilibrium for Simultaneous Reactions",
+     "pdf": 830,
+     "printed": 804,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "16–4",
+     "title_source": "contents",
+     "pdf_end": 831
+    },
+    {
+     "num": "16–5",
+     "title": "Variation of KP with Temperature",
+     "pdf": 832,
+     "printed": 806,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "16–5",
+     "title_source": "contents",
+     "pdf_end": 833
+    },
+    {
+     "num": "16–6",
+     "title": "Phase Equilibrium",
+     "pdf": 834,
+     "printed": 808,
+     "kind": "section",
+     "subs": [
+      "Phase Equilibrium for a Single-Component System",
+      "The Phase Rule",
+      "Phase Equilibrium for a Multicomponent System"
+     ],
+     "toc_num": "16–6",
+     "title_source": "contents",
+     "pdf_end": 840
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 841,
+     "printed": 815
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 842,
+     "printed": 816
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 843,
+     "printed": 817
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 846,
+     "printed": 820
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 847,
+     "printed": 821
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 848,
+     "printed": 822
+    }
+   ],
+   "features": [],
+   "toc_sections": [
+    {
+     "num": "16–1",
+     "title": "Criterion for Chemical Equilibrium"
+    },
+    {
+     "num": "16–2",
+     "title": "The Equilibrium Constant for Ideal-Gas Mixtures"
+    },
+    {
+     "num": "16–3",
+     "title": "Some Remarks about the KP  of Ideal-Gas Mixtures"
+    },
+    {
+     "num": "16–4",
+     "title": "Chemical Equilibrium for Simultaneous Reactions"
+    },
+    {
+     "num": "16–5",
+     "title": "Variation of KP with Temperature"
+    },
+    {
+     "num": "16–6",
+     "title": "Phase Equilibrium"
+    }
+   ],
+   "answers_printed": 22,
+   "n_problems": 111,
+   "n_problems_with_answer": 22
+  },
+  {
+   "num": 17,
+   "title": "Compressible Flow",
+   "pdf": 849,
+   "printed": 823,
+   "pdf_end": 907,
+   "sections": [
+    {
+     "num": "17–1",
+     "title": "Stagnation Properties",
+     "pdf": 850,
+     "printed": 824,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "17–1",
+     "title_source": "contents",
+     "pdf_end": 852
+    },
+    {
+     "num": "17–2",
+     "title": "Speed of Sound and Mach Number",
+     "pdf": 853,
+     "printed": 827,
+     "kind": "section",
+     "subs": [],
+     "toc_num": "17–2",
+     "title_source": "contents",
+     "pdf_end": 854
+    },
+    {
+     "num": "17–3",
+     "title": "One-Dimensional Isentropic Flow",
+     "pdf": 855,
+     "printed": 829,
+     "kind": "section",
+     "subs": [
+      "Variation of Fluid Velocity with Flow Area",
+      "Property Relations for Isentropic Flow of Ideal Gases"
+     ],
+     "toc_num": "17–3",
+     "title_source": "contents",
+     "pdf_end": 861
+    },
+    {
+     "num": "17–4",
+     "title": "Isentropic Flow through Nozzles",
+     "pdf": 862,
+     "printed": 836,
+     "kind": "section",
+     "subs": [
+      "Converging Nozzles",
+      "Converging–Diverging Nozzles"
+     ],
+     "toc_num": "17–4",
+     "title_source": "contents",
+     "pdf_end": 870
+    },
+    {
+     "num": "17–5",
+     "title": "Shock Waves and Expansion",
+     "pdf": 871,
+     "printed": 845,
+     "kind": "section",
+     "subs": [
+      "Normal Shocks",
+      "Oblique Shocks",
+      "Prandtl–Meyer Expansion Waves"
+     ],
+     "toc_num": "17–5",
+     "title_source": "contents",
+     "pdf_end": 885
+    },
+    {
+     "num": "17–6",
+     "title": "Duct Flow with Heat Transfer and Negligible Friction (Rayleigh Flow)",
+     "pdf": 886,
+     "printed": 860,
+     "kind": "section",
+     "subs": [
+      "Property Relations for Rayleigh Flow",
+      "Choked Rayleigh Flow"
+     ],
+     "toc_num": "17–6",
+     "title_source": "contents",
+     "pdf_end": 894
+    },
+    {
+     "num": "17–7",
+     "title": "Steam Nozzles",
+     "pdf": 895,
+     "printed": 869,
+     "kind": "section",
+     "subs": [
+      "Appendix 1",
+      "Property Tables and Charts (SI Units)",
+      "Table A-1",
+      "Molar mass, gas constant, and critical-point properties",
+      "Table A-2",
+      "Ideal-gas specific heats of various common gases",
+      "Table A-3",
+      "Properties of common liquids, solids, and foods",
+      "Table A-4",
+      "Saturated water—Temperature table",
+      "Table A-5",
+      "Saturated water—Pressure table",
+      "Table A-6  Superheated water",
+      "Table A-7",
+      "Compressed liquid water",
+      "Table A-8",
+      "Saturated ice—water vapor",
+      "Figure A-9 T-s diagram for water",
+      "Figure A-10 Mollier diagram for water",
+      "Table A-11 Saturated refrigerant-134a—Temperature table",
+      "Table A-12  Saturated refrigerant-134a—Pressure table",
+      "Table A-13 Superheated refrigerant-134a",
+      "Figure A-14  P-h diagram for refrigerant-134a",
+      "Figure A-15  Nelson–Obert generalized compressibility chart",
+      "Table A-16  Properties of the atmosphere at high altitude",
+      "Table A-17 Ideal-gas properties of air",
+      "Table A-18  Ideal-gas properties of nitrogen, N2",
+      "Table A-19  Ideal-gas properties of oxygen, O2",
+      "Table A-20 Ideal-gas properties of carbon dioxide, CO2",
+      "Table A-21 Ideal-gas properties of carbon monoxide, CO",
+      "Table A-22 Ideal-gas properties of hydrogen, H2",
+      "Table A-23 Ideal-gas properties of water vapor, H2O",
+      "Table A-24 Ideal-gas properties of monatomic oxygen, O",
+      "Table A-25 Ideal-gas properties of hydroxyl, OH",
+      "Table A-26 Enthalpy of formation, Gibbs function of formation, and",
+      "absolute entropy at 25°C, 1 atm",
+      "Table A-27 Properties of some common fuels and hydrocarbons",
+      "Table A-28  Natural Logarithms of the equilibrium constant Kp",
+      "Figure A-29  Generalized enthalpy departure chart",
+      "Figure A-30  Generalized entropy departure chart",
+      "Figure A-31  Psychrometric chart at 1 atm total pressure",
+      "Table A-32 One-dimensional isentropic compressible-flow functions for an",
+      "ideal gas with k = 1.4",
+      "Table A-33 One-dimensional normal-shock functions for an ideal gas with k",
+      "=1.4",
+      "Table A-34 Rayleigh flow functions for an ideal gas with k = 1.4",
+      "Appendix 2",
+      "Property Tables and Charts (English Units)",
+      "Table A-1E Molar mass, gas constant, and critical-point properties",
+      "Table A-2E Ideal-gas specific heats of various common gases",
+      "Table A-3E Properties of common liquids, solids, and foods",
+      "Table A-4E Saturated water—Temperature table",
+      "Table A-5E Saturated water—Pressure table",
+      "Table A-6E Superheated water",
+      "Table A-7E Compressed liquid water",
+      "Table A-8E Saturated ice—water vapor",
+      "Figure A-9E T-s diagram for water",
+      "Figure A-10E  Mollier diagram for water",
+      "Table A-11E Saturated refrigerant-134a—Temperature table",
+      "Table A-12E  Saturated refrigerant-134a—Pressure table",
+      "Table A-13E Superheated refrigerant-134a",
+      "Figure A-14E P-h diagram for refrigerant-134a",
+      "Table A-15E",
+      "Table A-16E  Properties of the atomosphere at high altitude",
+      "Table A-17E Ideal-gas properties of air",
+      "Table A-18E  Ideal-gas properties of nitrogen, N2",
+      "Table A-19E   Ideal-gas properties of oxygen, O2",
+      "Table A-20E   Ideal-gas properties of carbon dioxide, CO2",
+      "Table A-21E   Ideal-gas properties of carbon monoxide, CO",
+      "Table A-22E   Ideal-gas properties of hydrogen, H2",
+      "Table A-23E   Ideal-gas properties of water vapor, H2O",
+      "Table A-24E",
+      "Table A-25E",
+      "Table A-26E   Enthalpy of formation, Gibbs function of formation, and",
+      "absolute entropy at 77°C, 1 atm",
+      "Table A-27E    Properties of some common fuels and hydrocarbons",
+      "Figure A-31E   Psycrometric chart at 1 atm total pressure"
+     ],
+     "toc_num": "17–7",
+     "title_source": "contents",
+     "pdf_end": 897
+    }
+   ],
+   "end_parts": [
+    {
+     "name": "SUMMARY",
+     "pdf": 898,
+     "printed": 872
+    },
+    {
+     "name": "REFERENCES AND SUGGESTED READING",
+     "pdf": 899,
+     "printed": 873
+    },
+    {
+     "name": "PROBLEMS",
+     "pdf": 900,
+     "printed": 874
+    },
+    {
+     "name": "Review Problems",
+     "pdf": 905,
+     "printed": 879
+    },
+    {
+     "name": "Fundamentals of Engineering (FE) Exam Problems",
+     "pdf": 906,
+     "printed": 880
+    },
+    {
+     "name": "Design and Essay Problems",
+     "pdf": 907,
+     "printed": 881
+    }
+   ],
+   "features": [],
+   "toc_sections": [
+    {
+     "num": "17–1",
+     "title": "Stagnation Properties"
+    },
+    {
+     "num": "17–2",
+     "title": "Speed of Sound and Mach Number"
+    },
+    {
+     "num": "17–3",
+     "title": "One-Dimensional Isentropic Flow"
+    },
+    {
+     "num": "17–4",
+     "title": "Isentropic Flow through Nozzles"
+    },
+    {
+     "num": "17–5",
+     "title": "Shock Waves and Expansion"
+    },
+    {
+     "num": "17–6",
+     "title": "Duct Flow with Heat Transfer and Negligible Friction (Rayleigh Flow)"
+    },
+    {
+     "num": "17–7",
+     "title": "Steam Nozzles"
+    }
+   ],
+   "answers_printed": 30,
+   "n_problems": 163,
+   "n_problems_with_answer": 30
+  }
+ ],
+ "back": {
+  "glossary_pdf": 909,
+  "last_chapter_pdf": 907,
+  "answers_appendix": false,
+  "answers_total": 473
+ }
+}

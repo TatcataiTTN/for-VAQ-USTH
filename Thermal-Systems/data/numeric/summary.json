@@ -1,0 +1,429 @@
+{
+ "total": 1441,
+ "by_source": {
+  "cengel": 825,
+  "farokhi": 387,
+  "elsayed": 219,
+  "tut": 10
+ },
+ "by_class": {
+  "conceptual": 460,
+  "needs_table": 53,
+  "unclear": 240,
+  "printed_answer": 132,
+  "ready": 267,
+  "needs_figure": 97,
+  "solved_example": 171,
+  "needs_chart": 9,
+  "outside": 12
+ },
+ "by_source_chapter_kind": {
+  "cengel|11|example": {
+   "total": 6,
+   "solved_example": 6,
+   "answer_printed": 0,
+   "numeric": 6,
+   "text_reliable_false": 0
+  },
+  "cengel|11|problem": {
+   "total": 129,
+   "conceptual": 43,
+   "answer_printed": 22,
+   "numeric": 91,
+   "text_reliable_false": 1,
+   "printed_answer": 22,
+   "needs_table": 21,
+   "needs_figure": 9,
+   "unclear": 16,
+   "ready": 18
+  },
+  "cengel|14|example": {
+   "total": 9,
+   "solved_example": 9,
+   "answer_printed": 0,
+   "numeric": 9,
+   "text_reliable_false": 0
+  },
+  "cengel|14|problem": {
+   "total": 157,
+   "conceptual": 59,
+   "answer_printed": 21,
+   "numeric": 102,
+   "text_reliable_false": 0,
+   "ready": 34,
+   "needs_table": 11,
+   "unclear": 18,
+   "printed_answer": 21,
+   "needs_chart": 9,
+   "needs_figure": 5
+  },
+  "cengel|15|example": {
+   "total": 11,
+   "solved_example": 11,
+   "answer_printed": 0,
+   "numeric": 11,
+   "text_reliable_false": 0
+  },
+  "cengel|15|problem": {
+   "total": 133,
+   "conceptual": 39,
+   "answer_printed": 32,
+   "numeric": 101,
+   "text_reliable_false": 4,
+   "printed_answer": 32,
+   "ready": 37,
+   "needs_table": 1,
+   "needs_figure": 4,
+   "unclear": 20
+  },
+  "cengel|17|example": {
+   "total": 16,
+   "solved_example": 16,
+   "answer_printed": 0,
+   "numeric": 10,
+   "text_reliable_false": 0
+  },
+  "cengel|17|problem": {
+   "total": 163,
+   "conceptual": 71,
+   "answer_printed": 30,
+   "numeric": 92,
+   "text_reliable_false": 6,
+   "printed_answer": 30,
+   "ready": 41,
+   "needs_table": 6,
+   "unclear": 13,
+   "needs_figure": 2
+  },
+  "cengel|9|example": {
+   "total": 10,
+   "solved_example": 10,
+   "answer_printed": 0,
+   "numeric": 8,
+   "text_reliable_false": 0
+  },
+  "cengel|9|problem": {
+   "total": 191,
+   "conceptual": 90,
+   "answer_printed": 27,
+   "numeric": 103,
+   "text_reliable_false": 0,
+   "needs_table": 10,
+   "unclear": 14,
+   "printed_answer": 27,
+   "ready": 48,
+   "needs_figure": 2
+  },
+  "elsayed|10|example": {
+   "total": 6,
+   "solved_example": 6,
+   "answer_printed": 0,
+   "numeric": 6,
+   "text_reliable_false": 1
+  },
+  "elsayed|10|problem": {
+   "total": 21,
+   "conceptual": 11,
+   "answer_printed": 0,
+   "numeric": 10,
+   "text_reliable_false": 0,
+   "ready": 9,
+   "needs_table": 1
+  },
+  "elsayed|11|example": {
+   "total": 6,
+   "solved_example": 5,
+   "answer_printed": 0,
+   "numeric": 6,
+   "text_reliable_false": 0,
+   "unclear": 1
+  },
+  "elsayed|11|problem": {
+   "total": 10,
+   "ready": 5,
+   "answer_printed": 0,
+   "numeric": 6,
+   "text_reliable_false": 0,
+   "needs_figure": 1,
+   "conceptual": 4
+  },
+  "elsayed|1|problem": {
+   "total": 52,
+   "ready": 13,
+   "answer_printed": 0,
+   "numeric": 15,
+   "text_reliable_false": 1,
+   "conceptual": 36,
+   "needs_table": 2,
+   "unclear": 1
+  },
+  "elsayed|2|example": {
+   "total": 16,
+   "solved_example": 16,
+   "answer_printed": 0,
+   "numeric": 16,
+   "text_reliable_false": 4
+  },
+  "elsayed|2|problem": {
+   "total": 31,
+   "needs_figure": 3,
+   "answer_printed": 0,
+   "numeric": 28,
+   "text_reliable_false": 4,
+   "ready": 21,
+   "conceptual": 3,
+   "unclear": 4
+  },
+  "elsayed|3|example": {
+   "total": 9,
+   "solved_example": 9,
+   "answer_printed": 0,
+   "numeric": 9,
+   "text_reliable_false": 0
+  },
+  "elsayed|3|problem": {
+   "total": 12,
+   "outside": 12,
+   "answer_printed": 0,
+   "numeric": 9,
+   "text_reliable_false": 1
+  },
+  "elsayed|4|example": {
+   "total": 11,
+   "solved_example": 11,
+   "answer_printed": 0,
+   "numeric": 11,
+   "text_reliable_false": 4
+  },
+  "elsayed|4|problem": {
+   "total": 24,
+   "unclear": 6,
+   "answer_printed": 0,
+   "numeric": 23,
+   "text_reliable_false": 6,
+   "ready": 12,
+   "conceptual": 1,
+   "needs_figure": 5
+  },
+  "elsayed|9|example": {
+   "total": 7,
+   "solved_example": 7,
+   "answer_printed": 0,
+   "numeric": 6,
+   "text_reliable_false": 0
+  },
+  "elsayed|9|problem": {
+   "total": 14,
+   "needs_figure": 11,
+   "answer_printed": 0,
+   "numeric": 13,
+   "text_reliable_false": 0,
+   "conceptual": 1,
+   "ready": 2
+  },
+  "farokhi|1|problem": {
+   "total": 5,
+   "unclear": 4,
+   "answer_printed": 0,
+   "numeric": 4,
+   "text_reliable_false": 4,
+   "ready": 1
+  },
+  "farokhi|2|example": {
+   "total": 16,
+   "solved_example": 16,
+   "answer_printed": 0,
+   "numeric": 11,
+   "text_reliable_false": 1
+  },
+  "farokhi|2|problem": {
+   "total": 55,
+   "conceptual": 14,
+   "answer_printed": 0,
+   "numeric": 38,
+   "text_reliable_false": 24,
+   "needs_figure": 15,
+   "ready": 2,
+   "unclear": 24
+  },
+  "farokhi|3|example": {
+   "total": 6,
+   "solved_example": 6,
+   "answer_printed": 0,
+   "numeric": 6,
+   "text_reliable_false": 2
+  },
+  "farokhi|3|problem": {
+   "total": 22,
+   "conceptual": 3,
+   "answer_printed": 0,
+   "numeric": 19,
+   "text_reliable_false": 11,
+   "unclear": 11,
+   "needs_figure": 5,
+   "ready": 3
+  },
+  "farokhi|4|example": {
+   "total": 21,
+   "solved_example": 21,
+   "answer_printed": 0,
+   "numeric": 15,
+   "text_reliable_false": 8
+  },
+  "farokhi|4|problem": {
+   "total": 68,
+   "unclear": 43,
+   "answer_printed": 0,
+   "numeric": 51,
+   "text_reliable_false": 43,
+   "needs_figure": 10,
+   "ready": 2,
+   "conceptual": 13
+  },
+  "farokhi|6|example": {
+   "total": 13,
+   "solved_example": 13,
+   "answer_printed": 0,
+   "numeric": 3,
+   "text_reliable_false": 1
+  },
+  "farokhi|6|problem": {
+   "total": 85,
+   "unclear": 37,
+   "answer_printed": 0,
+   "numeric": 57,
+   "text_reliable_false": 37,
+   "conceptual": 20,
+   "ready": 7,
+   "needs_figure": 21
+  },
+  "farokhi|7|example": {
+   "total": 7,
+   "solved_example": 7,
+   "answer_printed": 0,
+   "numeric": 5,
+   "text_reliable_false": 2
+  },
+  "farokhi|7|problem": {
+   "total": 44,
+   "unclear": 27,
+   "answer_printed": 0,
+   "numeric": 35,
+   "text_reliable_false": 27,
+   "conceptual": 7,
+   "ready": 6,
+   "needs_figure": 4
+  },
+  "farokhi|App.K|quiz": {
+   "total": 45,
+   "conceptual": 45,
+   "answer_printed": 0,
+   "numeric": 45,
+   "text_reliable_false": 0
+  },
+  "tut|Tutorials I|example": {
+   "total": 2,
+   "solved_example": 2,
+   "answer_printed": 0,
+   "numeric": 2,
+   "text_reliable_false": 0
+  },
+  "tut|Tutorials I|problem": {
+   "total": 8,
+   "ready": 6,
+   "answer_printed": 0,
+   "numeric": 8,
+   "text_reliable_false": 1,
+   "unclear": 1,
+   "needs_table": 1
+  }
+ },
+ "by_source_class": {
+  "cengel": {
+   "conceptual": 302,
+   "needs_table": 49,
+   "unclear": 81,
+   "printed_answer": 132,
+   "ready": 178,
+   "needs_figure": 22,
+   "solved_example": 52,
+   "needs_chart": 9
+  },
+  "farokhi": {
+   "unclear": 146,
+   "ready": 21,
+   "conceptual": 102,
+   "needs_figure": 55,
+   "solved_example": 63
+  },
+  "elsayed": {
+   "ready": 62,
+   "conceptual": 56,
+   "needs_table": 3,
+   "unclear": 12,
+   "needs_figure": 20,
+   "solved_example": 54,
+   "outside": 12
+  },
+  "tut": {
+   "ready": 6,
+   "unclear": 1,
+   "solved_example": 2,
+   "needs_table": 1
+  }
+ },
+ "by_module": {
+  "?": {
+   "conceptual": 45
+  },
+  "m01": {
+   "unclear": 20,
+   "ready": 38,
+   "conceptual": 42,
+   "needs_figure": 8,
+   "solved_example": 22,
+   "needs_table": 2
+  },
+  "m02": {
+   "conceptual": 104,
+   "needs_table": 11,
+   "unclear": 64,
+   "printed_answer": 27,
+   "ready": 68,
+   "needs_figure": 17,
+   "solved_example": 43
+  },
+  "m03": {
+   "conceptual": 102,
+   "printed_answer": 43,
+   "needs_table": 32,
+   "needs_figure": 14,
+   "unclear": 34,
+   "ready": 52,
+   "solved_example": 16,
+   "needs_chart": 9
+  },
+  "m04": {
+   "conceptual": 57,
+   "printed_answer": 32,
+   "ready": 52,
+   "needs_table": 2,
+   "needs_figure": 8,
+   "unclear": 47,
+   "solved_example": 24
+  },
+  "m05": {
+   "conceptual": 110,
+   "printed_answer": 30,
+   "ready": 57,
+   "needs_table": 6,
+   "unclear": 75,
+   "needs_figure": 50,
+   "solved_example": 50
+  },
+  "out": {
+   "solved_example": 16,
+   "outside": 12
+  }
+ }
+}

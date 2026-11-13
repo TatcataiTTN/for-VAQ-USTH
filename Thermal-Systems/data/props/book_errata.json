@@ -1,0 +1,737 @@
+{
+ "description": "Lỗi in của Appendix 1 (Cengel) tìm thấy khi kiểm nhất quán nội bảng; giá trị in được trả nguyên trong thư viện nhưng đánh dấu suspect. expected = giá trị kỳ vọng suy từ quan hệ vật lý + hàng xóm (không phải số của sách).",
+ "n": 43,
+ "errors": [
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 550.0
+   },
+   "col": "h",
+   "printed": 555.74,
+   "expected": 554.74,
+   "pdf_page": 28,
+   "how": "h − u = R·T với R = 0.28706 (trung vị cả bảng); hàng xóm cho biết ô h lệch",
+   "diff": 0.999,
+   "how_en": "h − u = R·T with R = 0.28706 (median of the table); neighbouring rows show that the h cell is off",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 630.0
+   },
+   "col": "Pr",
+   "printed": 19.84,
+   "expected": 19.47,
+   "pdf_page": 28,
+   "how": "P_r = P_r(hàng trước)·exp(Δs°/R); hai cặp liền kề lệch ngược dấu",
+   "diff": 0.0188,
+   "how_en": "P_r = P_r(previous row)·exp(Δs°/R); the two adjacent pairs deviate with opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 820.0
+   },
+   "col": "Pr",
+   "printed": 52.59,
+   "expected": 52.49,
+   "pdf_page": 28,
+   "how": "P_r = P_r(hàng trước)·exp(Δs°/R); hai cặp liền kề lệch ngược dấu",
+   "diff": 0.0019,
+   "how_en": "P_r = P_r(previous row)·exp(Δs°/R); the two adjacent pairs deviate with opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1040.0
+   },
+   "col": "vr",
+   "printed": 23.29,
+   "expected": 22.39,
+   "pdf_page": 28,
+   "how": "v_r = const·T/P_r, const = 2.8700 (trung vị)",
+   "diff": 0.0401,
+   "how_en": "v_r = const·T/P_r, const = 2.8700 (median)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1800.0
+   },
+   "col": "vr",
+   "printed": 3.994,
+   "expected": 3.943,
+   "pdf_page": 29,
+   "how": "v_r = const·T/P_r, const = 2.8700 (trung vị)",
+   "diff": 0.0128,
+   "how_en": "v_r = const·T/P_r, const = 2.8700 (median)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17E",
+   "key": {
+    "T_R": 537.0
+   },
+   "col": "h",
+   "printed": 128.1,
+   "expected": 128.35,
+   "pdf_page": 76,
+   "how": "h = h(hàng trước) + Δs°·T_lm; P_r và s° ở hàng này khớp nhau nên ô h lệch (nguyên nhân chưa xác định: có thể hàng này ứng với 536,67 R)",
+   "diff": [
+    0.00047,
+    -0.00045
+   ],
+   "how_en": "h = h(previous row) + Δs°·T_lm; P_r and s° of this row agree with each other so the h cell is off (cause not determined: this row may really correspond to 536.67 R)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17E",
+   "key": {
+    "T_R": 1600.0
+   },
+   "col": "Pr",
+   "printed": 71.13,
+   "expected": 71.72,
+   "pdf_page": 76,
+   "how": "P_r = P_r(hàng trước)·exp(Δs°/R); hai cặp liền kề lệch ngược dấu",
+   "diff": -0.0082,
+   "how_en": "P_r = P_r(previous row)·exp(Δs°/R); the two adjacent pairs deviate with opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17E",
+   "key": {
+    "T_R": 2150.0
+   },
+   "col": "Pr",
+   "printed": 223.5,
+   "expected": 233.5,
+   "pdf_page": 76,
+   "how": "P_r = P_r(hàng trước)·exp(Δs°/R); hai cặp liền kề lệch ngược dấu",
+   "diff": -0.0427,
+   "how_en": "P_r = P_r(previous row)·exp(Δs°/R); the two adjacent pairs deviate with opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17E",
+   "key": {
+    "T_R": 2200.0
+   },
+   "col": "s0",
+   "printed": 0.95919,
+   "expected": 0.95869,
+   "pdf_page": 76,
+   "how": "s° = s°(hàng sau) − R·ln(P_r sau / P_r này); P_r hàng này và hàng hai bên khớp nhau",
+   "diff": [
+    0.00051,
+    -0.00052
+   ],
+   "how_en": "s° = s°(next row) − R·ln(P_r next / P_r this); P_r of this row and of its neighbours are mutually consistent",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-18",
+   "key": {
+    "T_K": 1320.0
+   },
+   "col": "u",
+   "printed": 29378.0,
+   "expected": 29878,
+   "pdf_page": 31,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 499.9,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-18",
+   "key": {
+    "T_K": 1960.0
+   },
+   "col": "h",
+   "printed": 63381.0,
+   "expected": 63371,
+   "pdf_page": 31,
+   "how": "h̄ = ū + Ru·T (ū khớp nội suy hàng xóm)",
+   "diff": 9.6,
+   "how_en": "h̄ = ū + Ru·T (ū agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-19",
+   "key": {
+    "T_K": 460.0
+   },
+   "col": "h",
+   "printed": 13525.0,
+   "expected": 13535,
+   "pdf_page": 32,
+   "how": "h̄ = ū + Ru·T (ū khớp nội suy hàng xóm)",
+   "diff": -9.7,
+   "how_en": "h̄ = ū + Ru·T (ū agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-19",
+   "key": {
+    "T_K": 3150.0
+   },
+   "col": "u",
+   "printed": 86601.0,
+   "expected": 86604,
+   "pdf_page": 33,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 3.4,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-19",
+   "key": {
+    "T_K": 990.0
+   },
+   "col": "s0",
+   "printed": 242.12,
+   "expected": 243.122,
+   "pdf_page": 32,
+   "how": "s̄° = s̄°(hàng trước) + Δh̄/T_lm; hai hiệu liền kề lệch bằng nhau, ngược dấu",
+   "diff": -1.002,
+   "how_en": "s̄° = s̄°(previous row) + Δh̄/T_lm; the two adjacent differences are equal and of opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-19",
+   "key": {
+    "T_K": 2300.0
+   },
+   "col": "s0",
+   "printed": 273.891,
+   "expected": 273.98,
+   "pdf_page": 33,
+   "how": "s̄° = s̄°(hàng trước) + Δh̄/T_lm; hai hiệu liền kề lệch bằng nhau, ngược dấu",
+   "diff": -0.089,
+   "how_en": "s̄° = s̄°(previous row) + Δh̄/T_lm; the two adjacent differences are equal and of opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 360.0
+   },
+   "col": "u",
+   "printed": 8752.0,
+   "expected": 8755,
+   "pdf_page": 34,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 2.8,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 370.0
+   },
+   "col": "u",
+   "printed": 9068.0,
+   "expected": 9072,
+   "pdf_page": 34,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 3.6,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 440.0
+   },
+   "col": "u",
+   "printed": 11393.0,
+   "expected": 11396,
+   "pdf_page": 34,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 2.6,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 730.0
+   },
+   "col": "u",
+   "printed": 22522.0,
+   "expected": 22552,
+   "pdf_page": 34,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 30.4,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 860.0
+   },
+   "col": "u",
+   "printed": 28125.0,
+   "expected": 28146,
+   "pdf_page": 34,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 20.6,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 1480.0
+   },
+   "col": "h",
+   "printed": 66911.0,
+   "expected": 69911,
+   "pdf_page": 35,
+   "how": "h̄ = ū + Ru·T (ū khớp nội suy hàng xóm)",
+   "diff": -3000.4,
+   "how_en": "h̄ = ū + Ru·T (ū agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 1580.0
+   },
+   "col": "h",
+   "printed": 76767.0,
+   "expected": 75767,
+   "pdf_page": 35,
+   "how": "h̄ = ū + Ru·T (ū khớp nội suy hàng xóm)",
+   "diff": 1000.1,
+   "how_en": "h̄ = ū + Ru·T (ū agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 1600.0
+   },
+   "col": "u",
+   "printed": 63741.0,
+   "expected": 63641,
+   "pdf_page": 35,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": -100.2,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 1660.0
+   },
+   "col": "u",
+   "printed": 66592.0,
+   "expected": 66684,
+   "pdf_page": 35,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": 92.0,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 2000.0
+   },
+   "col": "h",
+   "printed": 100804.0,
+   "expected": 100814,
+   "pdf_page": 35,
+   "how": "h̄ = ū + Ru·T (ū khớp nội suy hàng xóm)",
+   "diff": -9.9,
+   "how_en": "h̄ = ū + Ru·T (ū agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 1200.0
+   },
+   "col": "s0",
+   "printed": 297.307,
+   "expected": 279.306,
+   "pdf_page": 35,
+   "how": "s̄° = s̄°(hàng trước) + Δh̄/T_lm; hai hiệu liền kề lệch bằng nhau, ngược dấu",
+   "diff": 18.001,
+   "how_en": "s̄° = s̄°(previous row) + Δh̄/T_lm; the two adjacent differences are equal and of opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-20",
+   "key": {
+    "T_K": 1540.0
+   },
+   "col": "s0",
+   "printed": 292.654,
+   "expected": 293.653,
+   "pdf_page": 35,
+   "how": "s̄° = s̄°(hàng trước) + Δh̄/T_lm; hai hiệu liền kề lệch bằng nhau, ngược dấu",
+   "diff": -0.999,
+   "how_en": "s̄° = s̄°(previous row) + Δh̄/T_lm; the two adjacent differences are equal and of opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-21",
+   "key": {
+    "T_K": 1180.0
+   },
+   "col": "h",
+   "printed": 36406.0,
+   "expected": 36413,
+   "pdf_page": 37,
+   "how": "h̄ = ū + Ru·T (ū khớp nội suy hàng xóm)",
+   "diff": -7.1,
+   "how_en": "h̄ = ū + Ru·T (ū agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-21",
+   "key": {
+    "T_K": 1240.0
+   },
+   "col": "u",
+   "printed": 28426.0,
+   "expected": 28156,
+   "pdf_page": 37,
+   "how": "ū = h̄ − Ru·T (h̄ khớp nội suy hàng xóm)",
+   "diff": -269.9,
+   "how_en": "ū = h̄ − Ru·T (h̄ agrees with interpolation between neighbouring rows)",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-21",
+   "key": {
+    "T_K": 1200.0
+   },
+   "col": "s0",
+   "printed": 240.663,
+   "expected": 240.562,
+   "pdf_page": 37,
+   "how": "s̄° = s̄°(hàng trước) + Δh̄/T_lm; hai hiệu liền kề lệch bằng nhau, ngược dấu",
+   "diff": 0.101,
+   "how_en": "s̄° = s̄°(previous row) + Δh̄/T_lm; the two adjacent differences are equal and of opposite sign",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1700.0
+   },
+   "col": "u",
+   "printed": 1392.7,
+   "expected": 1392.1,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.597,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1750.0
+   },
+   "col": "u",
+   "printed": 1439.8,
+   "expected": 1439.25,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.55,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1800.0
+   },
+   "col": "u",
+   "printed": 1487.2,
+   "expected": 1486.6,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.603,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1850.0
+   },
+   "col": "u",
+   "printed": 1534.9,
+   "expected": 1534.24,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.655,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1900.0
+   },
+   "col": "u",
+   "printed": 1582.6,
+   "expected": 1581.99,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.608,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 1950.0
+   },
+   "col": "u",
+   "printed": 1630.6,
+   "expected": 1629.94,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.661,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 2000.0
+   },
+   "col": "u",
+   "printed": 1678.7,
+   "expected": 1677.99,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.714,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 2050.0
+   },
+   "col": "u",
+   "printed": 1726.8,
+   "expected": 1726.13,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.667,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 2150.0
+   },
+   "col": "u",
+   "printed": 1823.8,
+   "expected": 1823.13,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.673,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 2200.0
+   },
+   "col": "u",
+   "printed": 1872.4,
+   "expected": 1871.67,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.725,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-17",
+   "key": {
+    "T_K": 2250.0
+   },
+   "col": "u",
+   "printed": 1921.3,
+   "expected": 1920.52,
+   "pdf_page": 29,
+   "how": "u = h − R·T (R = 0,28706): u in lệch hệ thống −0,5…−0,8 kJ/kg (≈0,04 %) từ 1700 K; không rõ ô h hay u (nguồn Keenan–Kaye); coi là cảnh báo nhẹ",
+   "diff": -0.778,
+   "kind": "systematic_offset",
+   "how_en": "u = h − R·T (R = 0.28706): printed u is off systematically by −0.5…−0.8 kJ/kg (≈0.04 %) from 1700 K; unclear whether h or u (Keenan–Kaye source); treated as a mild warning",
+   "seen_image": true,
+   "printed_in_image": "bản chữ = ảnh"
+  },
+  {
+   "table": "A-2a",
+   "key": {
+    "gas": "Butane"
+   },
+   "col": "R",
+   "printed": 0.1433,
+   "expected": 0.143,
+   "pdf_page": 3,
+   "how": "cp − cv = 1,7164 − 1,5734 = 0,1430 và A-1 (n-butane) cho R = 0,1430; A-2a in 0,1433",
+   "diff": -0.0003,
+   "how_en": "cp − cv = 1.7164 − 1.5734 = 0.1430 and A-1 (n-butane) gives R = 0.1430; A-2a prints 0.1433",
+   "seen_image": false,
+   "kind": "book_print_error",
+   "printed_in_image": "chưa so ảnh"
+  },
+  {
+   "table": "A-32",
+   "key": {
+    "Ma": 3.0
+   },
+   "col": "rho_rho0",
+   "printed": 0.076,
+   "expected": 0.07623,
+   "pdf_page": 48,
+   "how": "ρ/ρ0 = (1+0,2·Ma²)^−2,5 tại Ma = 3,0 cho 0,0762",
+   "diff": -0.00023,
+   "how_en": "ρ/ρ0 = (1+0.2·Ma²)^−2.5 at Ma = 3.0 gives 0.0762",
+   "seen_image": true,
+   "kind": "book_print_error",
+   "printed_in_image": "bản chữ = ảnh"
+  }
+ ],
+ "not_errors_or_corrections": [
+  {
+   "table": "A-17",
+   "row": {
+    "T_K": 550
+   },
+   "note": "QA (_qa/app.json) nghi u(550 K)=396,86; kiểm nhất quán cho thấy h = 555,74 mới là ô sai (h−u = RT và Δs°=Δh/T chỉ khớp với h ≈ 554,74; u = 396,86 khớp 554,74 − 0,287·550). Giá trị u in đúng."
+  },
+  {
+   "table": "A-17",
+   "row": {
+    "T_K": 630
+   },
+   "note": "QA nghi v_r(630 K)=92,84. Kiểm nhất quán: v_r khớp hàng xóm (96,92; 88,99 → 92,87); P_r = 19,84 mới lệch (≈ 19,47 theo s° và hàng xóm). Ô sai là P_r."
+  },
+  {
+   "table": "A-17",
+   "row": {
+    "T_K": ">=1700"
+   },
+   "note": "Từ 1700 K h − u thấp hơn R·T (R = 0,28706) khoảng 0,5–0,7 kJ/kg (≈0,04 %) đều ở mọi hàng: lệch hệ thống của nguồn Keenan–Kaye, không phải lỗi từng ô; không đánh dấu suspect."
+  },
+  {
+   "table": "A-17",
+   "row": {
+    "T_K": 298
+   },
+   "note": "v_r·P_r/T lệch 0,06 % ở hàng 298 K và h−u hơi lệch ở hàng 298 K của A-18…A-25 (≈1,3–1,9 kJ/kmol): hàng 298 K được sách thêm riêng (làm tròn khác), không coi là lỗi."
+  },
+  {
+   "table": "A-2a",
+   "row": {
+    "gas": "Carbon monoxide"
+   },
+   "note": "k = 1,400 trong khi cp/cv = 1,040/0,744 = 1,398: k tính từ giá trị chưa làm tròn của sách; không phải lỗi."
+  }
+ ]
+}

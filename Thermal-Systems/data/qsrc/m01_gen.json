@@ -1,0 +1,2018 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ phản lực hút 30 kg/s không khí, f = 0.01, vận tốc phụt 500 m/s (vòi giãn nở hoàn toàn), bay ở 200 m/s. Lực đẩy thực là:",
+   "en": "A jet engine takes in 30 kg/s of air, f = 0.01, exhaust speed 500 m/s (fully expanded nozzle), flight speed 200 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "9.15 kN",
+    "en": "9.15 kN"
+   },
+   {
+    "vi": "9.00 kN",
+    "en": "9.00 kN"
+   },
+   {
+    "vi": "15.15 kN",
+    "en": "15.15 kN"
+   },
+   {
+    "vi": "21.15 kN",
+    "en": "21.15 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁa[(1+f)ue − u] = 30×[1.01×500 − 200] = 9,150 N = 9.15 kN. Bỏ f cho 9.00; quên trừ lực cản ram ṁa·u cho 15.15; cộng u cho 21.15.",
+   "en": "T = ṁa[(1+f)ue − u] = 30×[1.01×500 − 200] = 9,150 N = 9.15 kN. Dropping f gives 9.00; forgetting the ram drag ṁa·u gives 15.15; adding u gives 21.15."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbojet",
+   "en": "Added – generated from the type: turbojet thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_thrust)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ phản lực hút 100 kg/s không khí, f = 0.01, vận tốc phụt 700 m/s (vòi giãn nở hoàn toàn), bay ở 100 m/s. Lực đẩy thực là:",
+   "en": "A jet engine takes in 100 kg/s of air, f = 0.01, exhaust speed 700 m/s (fully expanded nozzle), flight speed 100 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "60.70 kN",
+    "en": "60.70 kN"
+   },
+   {
+    "vi": "60.00 kN",
+    "en": "60.00 kN"
+   },
+   {
+    "vi": "70.70 kN",
+    "en": "70.70 kN"
+   },
+   {
+    "vi": "80.70 kN",
+    "en": "80.70 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁa[(1+f)ue − u] = 100×[1.01×700 − 100] = 60,700 N = 60.70 kN. Bỏ f cho 60.00; quên trừ lực cản ram ṁa·u cho 70.70; cộng u cho 80.70.",
+   "en": "T = ṁa[(1+f)ue − u] = 100×[1.01×700 − 100] = 60,700 N = 60.70 kN. Dropping f gives 60.00; forgetting the ram drag ṁa·u gives 70.70; adding u gives 80.70."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbojet",
+   "en": "Added – generated from the type: turbojet thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_thrust)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ phản lực hút 80 kg/s không khí, f = 0.015, vận tốc phụt 450 m/s (vòi giãn nở hoàn toàn), bay ở 100 m/s. Lực đẩy thực là:",
+   "en": "A jet engine takes in 80 kg/s of air, f = 0.015, exhaust speed 450 m/s (fully expanded nozzle), flight speed 100 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "28.54 kN",
+    "en": "28.54 kN"
+   },
+   {
+    "vi": "28.00 kN",
+    "en": "28.00 kN"
+   },
+   {
+    "vi": "36.54 kN",
+    "en": "36.54 kN"
+   },
+   {
+    "vi": "44.54 kN",
+    "en": "44.54 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁa[(1+f)ue − u] = 80×[1.015×450 − 100] = 28,540 N = 28.54 kN. Bỏ f cho 28.00; quên trừ lực cản ram ṁa·u cho 36.54; cộng u cho 44.54.",
+   "en": "T = ṁa[(1+f)ue − u] = 80×[1.015×450 − 100] = 28,540 N = 28.54 kN. Dropping f gives 28.00; forgetting the ram drag ṁa·u gives 36.54; adding u gives 44.54."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbojet",
+   "en": "Added – generated from the type: turbojet thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_thrust)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ phản lực hút 60 kg/s không khí, f = 0.01, vận tốc phụt 800 m/s (vòi giãn nở hoàn toàn), bay ở 100 m/s. Lực đẩy thực là:",
+   "en": "A jet engine takes in 60 kg/s of air, f = 0.01, exhaust speed 800 m/s (fully expanded nozzle), flight speed 100 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "42.48 kN",
+    "en": "42.48 kN"
+   },
+   {
+    "vi": "42.00 kN",
+    "en": "42.00 kN"
+   },
+   {
+    "vi": "48.48 kN",
+    "en": "48.48 kN"
+   },
+   {
+    "vi": "54.48 kN",
+    "en": "54.48 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁa[(1+f)ue − u] = 60×[1.01×800 − 100] = 42,480 N = 42.48 kN. Bỏ f cho 42.00; quên trừ lực cản ram ṁa·u cho 48.48; cộng u cho 54.48.",
+   "en": "T = ṁa[(1+f)ue − u] = 60×[1.01×800 − 100] = 42,480 N = 42.48 kN. Dropping f gives 42.00; forgetting the ram drag ṁa·u gives 48.48; adding u gives 54.48."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbojet",
+   "en": "Added – generated from the type: turbojet thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_thrust)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ bay ở 300 m/s với vận tốc phụt 750 m/s (vòi giãn nở hoàn toàn, bỏ qua f). Hiệu suất đẩy η_p = 2u/(u + ue) là:",
+   "en": "An engine flies at 300 m/s with an exhaust speed of 750 m/s (fully expanded nozzle, f neglected). The propulsive efficiency η_p = 2u/(u + ue) is:"
+  },
+  "opts": [
+   {
+    "vi": "57.1 %",
+    "en": "57.1 %"
+   },
+   {
+    "vi": "40.0 %",
+    "en": "40.0 %"
+   },
+   {
+    "vi": "60.0 %",
+    "en": "60.0 %"
+   },
+   {
+    "vi": "71.4 %",
+    "en": "71.4 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_p = 2×300/(300 + 750) = 57.1 %. Đảo tỉ số cho 71.4 %; dùng u/ue cho 40.0 %. Càng gần ue ≈ u thì η_p càng cao (nhưng lực đẩy càng nhỏ).",
+   "en": "η_p = 2×300/(300 + 750) = 57.1 %. Inverting the ratio gives 71.4 %; using u/ue gives 40.0 %. The closer ue is to u, the higher η_p (but the smaller the thrust)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất đẩy",
+   "en": "Added – generated from the type: propulsive efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etap_s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ bay ở 100 m/s với vận tốc phụt 250 m/s (vòi giãn nở hoàn toàn, bỏ qua f). Hiệu suất đẩy η_p = 2u/(u + ue) là:",
+   "en": "An engine flies at 100 m/s with an exhaust speed of 250 m/s (fully expanded nozzle, f neglected). The propulsive efficiency η_p = 2u/(u + ue) is:"
+  },
+  "opts": [
+   {
+    "vi": "57.1 %",
+    "en": "57.1 %"
+   },
+   {
+    "vi": "40.0 %",
+    "en": "40.0 %"
+   },
+   {
+    "vi": "60.0 %",
+    "en": "60.0 %"
+   },
+   {
+    "vi": "71.4 %",
+    "en": "71.4 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_p = 2×100/(100 + 250) = 57.1 %. Đảo tỉ số cho 71.4 %; dùng u/ue cho 40.0 %. Càng gần ue ≈ u thì η_p càng cao (nhưng lực đẩy càng nhỏ).",
+   "en": "η_p = 2×100/(100 + 250) = 57.1 %. Inverting the ratio gives 71.4 %; using u/ue gives 40.0 %. The closer ue is to u, the higher η_p (but the smaller the thrust)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất đẩy",
+   "en": "Added – generated from the type: propulsive efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etap_s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ bay ở 250 m/s với vận tốc phụt 375 m/s (vòi giãn nở hoàn toàn, bỏ qua f). Hiệu suất đẩy η_p = 2u/(u + ue) là:",
+   "en": "An engine flies at 250 m/s with an exhaust speed of 375 m/s (fully expanded nozzle, f neglected). The propulsive efficiency η_p = 2u/(u + ue) is:"
+  },
+  "opts": [
+   {
+    "vi": "80.0 %",
+    "en": "80.0 %"
+   },
+   {
+    "vi": "66.7 %",
+    "en": "66.7 %"
+   },
+   {
+    "vi": "33.3 %",
+    "en": "33.3 %"
+   },
+   {
+    "vi": "60.0 %",
+    "en": "60.0 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_p = 2×250/(250 + 375) = 80.0 %. Đảo tỉ số cho 60.0 %; dùng u/ue cho 66.7 %. Càng gần ue ≈ u thì η_p càng cao (nhưng lực đẩy càng nhỏ).",
+   "en": "η_p = 2×250/(250 + 375) = 80.0 %. Inverting the ratio gives 60.0 %; using u/ue gives 66.7 %. The closer ue is to u, the higher η_p (but the smaller the thrust)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất đẩy",
+   "en": "Added – generated from the type: propulsive efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etap_s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet: ṁa = 80 kg/s, f = 0.03, ue = 800 m/s, u = 250 m/s, Pe = Pa. Hiệu suất đẩy theo biểu thức thứ nhất (công đẩy chia công đẩy cộng tổn thất vệt ½ṁe(ue − u)²) là:",
+   "en": "Turbojet: ṁa = 80 kg/s, f = 0.03, ue = 800 m/s, u = 250 m/s, Pe = Pa. The propulsive efficiency by the first expression (thrust power over thrust power plus wake loss ½ṁe(ue − u)²) is:"
+  },
+  "opts": [
+   {
+    "vi": "47.95 %",
+    "en": "47.95 %"
+   },
+   {
+    "vi": "47.62 %",
+    "en": "47.62 %"
+   },
+   {
+    "vi": "48.10 %",
+    "en": "48.10 %"
+   },
+   {
+    "vi": "68.75 %",
+    "en": "68.75 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = 45,920 N; T·u = 11.480 MW; ½ṁe(ue − u)² = ½×82.4×550² = 12.463 MW; η_p = 47.95 %. Công thức 2u/(u+ue) = 47.62 % bỏ qua f nên chỉ gần đúng.",
+   "en": "T = 45,920 N; T·u = 11.480 MW; ½ṁe(ue − u)² = ½×82.4×550² = 12.463 MW; η_p = 47.95 %. The formula 2u/(u+ue) = 47.62 % ignores f, so it is only approximate."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất đẩy có f",
+   "en": "Added – generated from the type: propulsive efficiency with f"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etap_1)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet: ṁa = 40 kg/s, f = 0.02, ue = 800 m/s, u = 250 m/s, Pe = Pa. Hiệu suất đẩy theo biểu thức thứ nhất (công đẩy chia công đẩy cộng tổn thất vệt ½ṁe(ue − u)²) là:",
+   "en": "Turbojet: ṁa = 40 kg/s, f = 0.02, ue = 800 m/s, u = 250 m/s, Pe = Pa. The propulsive efficiency by the first expression (thrust power over thrust power plus wake loss ½ṁe(ue − u)²) is:"
+  },
+  "opts": [
+   {
+    "vi": "47.84 %",
+    "en": "47.84 %"
+   },
+   {
+    "vi": "47.62 %",
+    "en": "47.62 %"
+   },
+   {
+    "vi": "47.94 %",
+    "en": "47.94 %"
+   },
+   {
+    "vi": "68.75 %",
+    "en": "68.75 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = 22,640 N; T·u = 5.660 MW; ½ṁe(ue − u)² = ½×40.8×550² = 6.171 MW; η_p = 47.84 %. Công thức 2u/(u+ue) = 47.62 % bỏ qua f nên chỉ gần đúng.",
+   "en": "T = 22,640 N; T·u = 5.660 MW; ½ṁe(ue − u)² = ½×40.8×550² = 6.171 MW; η_p = 47.84 %. The formula 2u/(u+ue) = 47.62 % ignores f, so it is only approximate."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất đẩy có f",
+   "en": "Added – generated from the type: propulsive efficiency with f"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etap_1)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet: ṁa = 80 kg/s, f = 0.015, ue = 600 m/s, u = 150 m/s, Pe = Pa. Hiệu suất đẩy theo biểu thức thứ nhất (công đẩy chia công đẩy cộng tổn thất vệt ½ṁe(ue − u)²) là:",
+   "en": "Turbojet: ṁa = 80 kg/s, f = 0.015, ue = 600 m/s, u = 150 m/s, Pe = Pa. The propulsive efficiency by the first expression (thrust power over thrust power plus wake loss ½ṁe(ue − u)²) is:"
+  },
+  "opts": [
+   {
+    "vi": "40.12 %",
+    "en": "40.12 %"
+   },
+   {
+    "vi": "40.00 %",
+    "en": "40.00 %"
+   },
+   {
+    "vi": "43.12 %",
+    "en": "43.12 %"
+   },
+   {
+    "vi": "75.00 %",
+    "en": "75.00 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = 36,720 N; T·u = 5.508 MW; ½ṁe(ue − u)² = ½×81.2×450² = 8.221 MW; η_p = 40.12 %. Công thức 2u/(u+ue) = 40.00 % bỏ qua f nên chỉ gần đúng.",
+   "en": "T = 36,720 N; T·u = 5.508 MW; ½ṁe(ue − u)² = ½×81.2×450² = 8.221 MW; η_p = 40.12 %. The formula 2u/(u+ue) = 40.00 % ignores f, so it is only approximate."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất đẩy có f",
+   "en": "Added – generated from the type: propulsive efficiency with f"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etap_1)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet (vòi không nghẹt): f = 0.02, ue = 800 m/s, u = 200 m/s, nhiệt trị QR = 43 MJ/kg. Hiệu suất nhiệt η_th = [(1+f)ue² − u²]/(2f·QR) là:",
+   "en": "Turbojet (unchoked nozzle): f = 0.02, ue = 800 m/s, u = 200 m/s, heating value QR = 43 MJ/kg. The thermal efficiency η_th = [(1+f)ue² − u²]/(2f·QR) is:"
+  },
+  "opts": [
+   {
+    "vi": "35.63 %",
+    "en": "35.63 %"
+   },
+   {
+    "vi": "69.77 %",
+    "en": "69.77 %"
+   },
+   {
+    "vi": "71.26 %",
+    "en": "71.26 %"
+   },
+   {
+    "vi": "37.95 %",
+    "en": "37.95 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tử số = 612,800 m²/s²; mẫu = 2×0.02×43×10⁶ = 1,720,000; η_th = 35.63 %. Quên hệ số 2 cho 71.26 % (vượt quá thực tế); quên trừ u² cho 37.95 %.",
+   "en": "Numerator = 612,800 m²/s²; denominator = 2×0.02×43×10⁶ = 1,720,000; η_th = 35.63 %. Forgetting the factor 2 gives 71.26 % (unrealistic); forgetting −u² gives 37.95 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất nhiệt",
+   "en": "Added – generated from the type: thermal efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etath)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet (vòi không nghẹt): f = 0.02, ue = 700 m/s, u = 250 m/s, nhiệt trị QR = 42 MJ/kg. Hiệu suất nhiệt η_th = [(1+f)ue² − u²]/(2f·QR) là:",
+   "en": "Turbojet (unchoked nozzle): f = 0.02, ue = 700 m/s, u = 250 m/s, heating value QR = 42 MJ/kg. The thermal efficiency η_th = [(1+f)ue² − u²]/(2f·QR) is:"
+  },
+  "opts": [
+   {
+    "vi": "26.03 %",
+    "en": "26.03 %"
+   },
+   {
+    "vi": "50.89 %",
+    "en": "50.89 %"
+   },
+   {
+    "vi": "52.06 %",
+    "en": "52.06 %"
+   },
+   {
+    "vi": "29.75 %",
+    "en": "29.75 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tử số = 437,300 m²/s²; mẫu = 2×0.02×42×10⁶ = 1,680,000; η_th = 26.03 %. Quên hệ số 2 cho 52.06 % (vượt quá thực tế); quên trừ u² cho 29.75 %.",
+   "en": "Numerator = 437,300 m²/s²; denominator = 2×0.02×42×10⁶ = 1,680,000; η_th = 26.03 %. Forgetting the factor 2 gives 52.06 % (unrealistic); forgetting −u² gives 29.75 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất nhiệt",
+   "en": "Added – generated from the type: thermal efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etath)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet (vòi không nghẹt): f = 0.025, ue = 800 m/s, u = 250 m/s, nhiệt trị QR = 44 MJ/kg. Hiệu suất nhiệt η_th = [(1+f)ue² − u²]/(2f·QR) là:",
+   "en": "Turbojet (unchoked nozzle): f = 0.025, ue = 800 m/s, u = 250 m/s, heating value QR = 44 MJ/kg. The thermal efficiency η_th = [(1+f)ue² − u²]/(2f·QR) is:"
+  },
+  "opts": [
+   {
+    "vi": "26.98 %",
+    "en": "26.98 %"
+   },
+   {
+    "vi": "52.50 %",
+    "en": "52.50 %"
+   },
+   {
+    "vi": "53.95 %",
+    "en": "53.95 %"
+   },
+   {
+    "vi": "29.82 %",
+    "en": "29.82 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tử số = 593,500 m²/s²; mẫu = 2×0.025×44×10⁶ = 2,200,000; η_th = 26.98 %. Quên hệ số 2 cho 53.95 % (vượt quá thực tế); quên trừ u² cho 29.82 %.",
+   "en": "Numerator = 593,500 m²/s²; denominator = 2×0.025×44×10⁶ = 2,200,000; η_th = 26.98 %. Forgetting the factor 2 gives 53.95 % (unrealistic); forgetting −u² gives 29.82 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất nhiệt",
+   "en": "Added – generated from the type: thermal efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etath)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một động cơ cho lực đẩy 60 kN ở vận tốc bay 250 m/s, đốt 1.5 kg/s nhiên liệu có nhiệt trị 42 MJ/kg. Hiệu suất tổng η_o = η_p·η_th là:",
+   "en": "An engine gives a thrust of 60 kN at 250 m/s and burns 1.5 kg/s of fuel of heating value 42 MJ/kg. The overall efficiency η_o = η_p·η_th is:"
+  },
+  "opts": [
+   {
+    "vi": "23.81 %",
+    "en": "23.81 %"
+   },
+   {
+    "vi": "11.90 %",
+    "en": "11.90 %"
+   },
+   {
+    "vi": "0.24 %",
+    "en": "0.24 %"
+   },
+   {
+    "vi": "6.61 %",
+    "en": "6.61 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_o = T·u/(ṁf·QR) = 60,000×250/(1.5×42,000,000) = 23.81 % (công đẩy chia nhiệt cấp). Quên khi đổi: u phải là m/s (không phải km/h): chia 3.6 cho 6.61 %.",
+   "en": "η_o = T·u/(ṁf·QR) = 60,000×250/(1.5×42,000,000) = 23.81 % (thrust power over fuel heat rate). Beware units: u must be in m/s; dividing by 3.6 wrongly gives 6.61 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất tổng",
+   "en": "Added – generated from the type: overall efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etao)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một động cơ cho lực đẩy 45 kN ở vận tốc bay 250 m/s, đốt 0.5 kg/s nhiên liệu có nhiệt trị 42 MJ/kg. Hiệu suất tổng η_o = η_p·η_th là:",
+   "en": "An engine gives a thrust of 45 kN at 250 m/s and burns 0.5 kg/s of fuel of heating value 42 MJ/kg. The overall efficiency η_o = η_p·η_th is:"
+  },
+  "opts": [
+   {
+    "vi": "53.57 %",
+    "en": "53.57 %"
+   },
+   {
+    "vi": "26.79 %",
+    "en": "26.79 %"
+   },
+   {
+    "vi": "0.54 %",
+    "en": "0.54 %"
+   },
+   {
+    "vi": "14.88 %",
+    "en": "14.88 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_o = T·u/(ṁf·QR) = 45,000×250/(0.5×42,000,000) = 53.57 % (công đẩy chia nhiệt cấp). Quên khi đổi: u phải là m/s (không phải km/h): chia 3.6 cho 14.88 %.",
+   "en": "η_o = T·u/(ṁf·QR) = 45,000×250/(0.5×42,000,000) = 53.57 % (thrust power over fuel heat rate). Beware units: u must be in m/s; dividing by 3.6 wrongly gives 14.88 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất tổng",
+   "en": "Added – generated from the type: overall efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etao)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một động cơ cho lực đẩy 30 kN ở vận tốc bay 220 m/s, đốt 0.75 kg/s nhiên liệu có nhiệt trị 42 MJ/kg. Hiệu suất tổng η_o = η_p·η_th là:",
+   "en": "An engine gives a thrust of 30 kN at 220 m/s and burns 0.75 kg/s of fuel of heating value 42 MJ/kg. The overall efficiency η_o = η_p·η_th is:"
+  },
+  "opts": [
+   {
+    "vi": "20.95 %",
+    "en": "20.95 %"
+   },
+   {
+    "vi": "10.48 %",
+    "en": "10.48 %"
+   },
+   {
+    "vi": "0.21 %",
+    "en": "0.21 %"
+   },
+   {
+    "vi": "5.82 %",
+    "en": "5.82 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_o = T·u/(ṁf·QR) = 30,000×220/(0.75×42,000,000) = 20.95 % (công đẩy chia nhiệt cấp). Quên khi đổi: u phải là m/s (không phải km/h): chia 3.6 cho 5.82 %.",
+   "en": "η_o = T·u/(ṁf·QR) = 30,000×220/(0.75×42,000,000) = 20.95 % (thrust power over fuel heat rate). Beware units: u must be in m/s; dividing by 3.6 wrongly gives 5.82 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất tổng",
+   "en": "Added – generated from the type: overall efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_etao)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ đốt 1.2 kg/s nhiên liệu và sinh lực đẩy 20 kN. TSFC tính bằng mg/(N·s) là:",
+   "en": "An engine burns 1.2 kg/s of fuel and produces 20 kN of thrust. The TSFC in mg/(N·s) is:"
+  },
+  "opts": [
+   {
+    "vi": "60.0 mg/(N·s)",
+    "en": "60.0 mg/(N·s)"
+   },
+   {
+    "vi": "0.1 mg/(N·s)",
+    "en": "0.1 mg/(N·s)"
+   },
+   {
+    "vi": "216.0 mg/(N·s)",
+    "en": "216.0 mg/(N·s)"
+   },
+   {
+    "vi": "60,000.0 mg/(N·s)",
+    "en": "60,000.0 mg/(N·s)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "TSFC = ṁf/T = 1.2/20,000 = 0.0000600 kg/(N·s) = 60.0 mg/(N·s). Nhầm kg với mg cho hệ số 10³; đổi sang giờ thêm 3600 cho 216.0.",
+   "en": "TSFC = ṁf/T = 1.2/20,000 = 0.0000600 kg/(N·s) = 60.0 mg/(N·s). Confusing kg with mg gives a factor of 10³; converting to hours multiplies by 3600 and gives 216.0."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng TSFC",
+   "en": "Added – generated from the type: TSFC"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_tsfc)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ đốt 0.6 kg/s nhiên liệu và sinh lực đẩy 12 kN. TSFC tính bằng mg/(N·s) là:",
+   "en": "An engine burns 0.6 kg/s of fuel and produces 12 kN of thrust. The TSFC in mg/(N·s) is:"
+  },
+  "opts": [
+   {
+    "vi": "50.0 mg/(N·s)",
+    "en": "50.0 mg/(N·s)"
+   },
+   {
+    "vi": "0.0 mg/(N·s)",
+    "en": "0.0 mg/(N·s)"
+   },
+   {
+    "vi": "180.0 mg/(N·s)",
+    "en": "180.0 mg/(N·s)"
+   },
+   {
+    "vi": "50,000.0 mg/(N·s)",
+    "en": "50,000.0 mg/(N·s)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "TSFC = ṁf/T = 0.6/12,000 = 0.0000500 kg/(N·s) = 50.0 mg/(N·s). Nhầm kg với mg cho hệ số 10³; đổi sang giờ thêm 3600 cho 180.0.",
+   "en": "TSFC = ṁf/T = 0.6/12,000 = 0.0000500 kg/(N·s) = 50.0 mg/(N·s). Confusing kg with mg gives a factor of 10³; converting to hours multiplies by 3600 and gives 180.0."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng TSFC",
+   "en": "Added – generated from the type: TSFC"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_tsfc)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay bay ở Ma 0.78 tại độ cao 9 km (ISA, T = 229.65 K). Vận tốc bay thực (γ = 1.4, R = 287 J/kg·K) là:",
+   "en": "An aircraft flies at Ma 0.78 at 9 km (ISA, T = 229.65 K). The true flight speed (γ = 1.4, R = 287 J/kg·K) is:"
+  },
+  "opts": [
+   {
+    "vi": "236.9 m/s",
+    "en": "236.9 m/s"
+   },
+   {
+    "vi": "265.4 m/s",
+    "en": "265.4 m/s"
+   },
+   {
+    "vi": "200.2 m/s",
+    "en": "200.2 m/s"
+   },
+   {
+    "vi": "72.0 m/s",
+    "en": "72.0 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a = √(γRT) = √(1.4×287×229.65) = 303.8 m/s; u = Ma·a = 236.9 m/s = 853 km/h. Dùng T mực nước biển (288.15 K) cho 265.4 m/s: vận tốc âm giảm theo độ cao nên cùng Ma thì u nhỏ hơn.",
+   "en": "a = √(γRT) = √(1.4×287×229.65) = 303.8 m/s; u = Ma·a = 236.9 m/s = 853 km/h. Using the sea-level temperature (288.15 K) gives 265.4 m/s: the speed of sound falls with altitude, so the same Ma means a lower u."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí quyển chuẩn ISA",
+   "en": "International Standard Atmosphere"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Mach và vận tốc bay",
+   "en": "Added – generated from the type: Mach number and flight speed"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_speed)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay bay ở Ma 0.85 tại độ cao 11 km (ISA, T = 216.65 K). Vận tốc bay thực (γ = 1.4, R = 287 J/kg·K) là:",
+   "en": "An aircraft flies at Ma 0.85 at 11 km (ISA, T = 216.65 K). The true flight speed (γ = 1.4, R = 287 J/kg·K) is:"
+  },
+  "opts": [
+   {
+    "vi": "250.8 m/s",
+    "en": "250.8 m/s"
+   },
+   {
+    "vi": "289.2 m/s",
+    "en": "289.2 m/s"
+   },
+   {
+    "vi": "212.0 m/s",
+    "en": "212.0 m/s"
+   },
+   {
+    "vi": "74.0 m/s",
+    "en": "74.0 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a = √(γRT) = √(1.4×287×216.65) = 295.0 m/s; u = Ma·a = 250.8 m/s = 903 km/h. Dùng T mực nước biển (288.15 K) cho 289.2 m/s: vận tốc âm giảm theo độ cao nên cùng Ma thì u nhỏ hơn.",
+   "en": "a = √(γRT) = √(1.4×287×216.65) = 295.0 m/s; u = Ma·a = 250.8 m/s = 903 km/h. Using the sea-level temperature (288.15 K) gives 289.2 m/s: the speed of sound falls with altitude, so the same Ma means a lower u."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí quyển chuẩn ISA",
+   "en": "International Standard Atmosphere"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Mach và vận tốc bay",
+   "en": "Added – generated from the type: Mach number and flight speed"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_speed)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay bay ở Ma 0.45 tại độ cao 3 km (ISA, T = 268.65 K). Vận tốc bay thực (γ = 1.4, R = 287 J/kg·K) là:",
+   "en": "An aircraft flies at Ma 0.45 at 3 km (ISA, T = 268.65 K). The true flight speed (γ = 1.4, R = 287 J/kg·K) is:"
+  },
+  "opts": [
+   {
+    "vi": "147.8 m/s",
+    "en": "147.8 m/s"
+   },
+   {
+    "vi": "153.1 m/s",
+    "en": "153.1 m/s"
+   },
+   {
+    "vi": "125.0 m/s",
+    "en": "125.0 m/s"
+   },
+   {
+    "vi": "48.6 m/s",
+    "en": "48.6 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a = √(γRT) = √(1.4×287×268.65) = 328.5 m/s; u = Ma·a = 147.8 m/s = 532 km/h. Dùng T mực nước biển (288.15 K) cho 153.1 m/s: vận tốc âm giảm theo độ cao nên cùng Ma thì u nhỏ hơn.",
+   "en": "a = √(γRT) = √(1.4×287×268.65) = 328.5 m/s; u = Ma·a = 147.8 m/s = 532 km/h. Using the sea-level temperature (288.15 K) gives 153.1 m/s: the speed of sound falls with altitude, so the same Ma means a lower u."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí quyển chuẩn ISA",
+   "en": "International Standard Atmosphere"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Mach và vận tốc bay",
+   "en": "Added – generated from the type: Mach number and flight speed"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_speed)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay bay ở Ma 0.8 tại độ cao 10 km (ISA, T = 223.15 K). Vận tốc bay thực (γ = 1.4, R = 287 J/kg·K) là:",
+   "en": "An aircraft flies at Ma 0.8 at 10 km (ISA, T = 223.15 K). The true flight speed (γ = 1.4, R = 287 J/kg·K) is:"
+  },
+  "opts": [
+   {
+    "vi": "239.5 m/s",
+    "en": "239.5 m/s"
+   },
+   {
+    "vi": "272.2 m/s",
+    "en": "272.2 m/s"
+   },
+   {
+    "vi": "202.5 m/s",
+    "en": "202.5 m/s"
+   },
+   {
+    "vi": "71.7 m/s",
+    "en": "71.7 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a = √(γRT) = √(1.4×287×223.15) = 299.4 m/s; u = Ma·a = 239.5 m/s = 862 km/h. Dùng T mực nước biển (288.15 K) cho 272.2 m/s: vận tốc âm giảm theo độ cao nên cùng Ma thì u nhỏ hơn.",
+   "en": "a = √(γRT) = √(1.4×287×223.15) = 299.4 m/s; u = Ma·a = 239.5 m/s = 862 km/h. Using the sea-level temperature (288.15 K) gives 272.2 m/s: the speed of sound falls with altitude, so the same Ma means a lower u."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí quyển chuẩn ISA",
+   "en": "International Standard Atmosphere"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Mach và vận tốc bay",
+   "en": "Added – generated from the type: Mach number and flight speed"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_speed)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay có η_o = 0.2, nhiệt trị 44 MJ/kg, L/D = 10; khối lượng đầu chặng bay gấp 1.3 lần cuối chặng. Tầm bay theo Breguet (g = 9.80665 m/s²) là:",
+   "en": "An aircraft has η_o = 0.2, heating value 44 MJ/kg, L/D = 10; the start-of-cruise mass is 1.3 times the end mass. The Breguet range (g = 9.80665 m/s²) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,354 km",
+    "en": "2,354 km"
+   },
+   {
+    "vi": "2,692 km",
+    "en": "2,692 km"
+   },
+   {
+    "vi": "235 km",
+    "en": "235 km"
+   },
+   {
+    "vi": "2,677 km",
+    "en": "2,677 km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.2×44,000,000/9.80665×10×ln(1.3) = 2,354 km. Lỗi: dùng (m1 − m2)/m2 thay cho ln(m1/m2) cho 2,692 km; quên L/D cho 235 km.",
+   "en": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.2×44,000,000/9.80665×10×ln(1.3) = 2,354 km. Slips: using (m1 − m2)/m2 instead of ln(m1/m2) gives 2,692 km; forgetting L/D gives 235 km."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tầm bay Breguet",
+   "en": "Added – generated from the type: Breguet range"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_breguet)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay có η_o = 0.25, nhiệt trị 44 MJ/kg, L/D = 18; khối lượng đầu chặng bay gấp 1.2 lần cuối chặng. Tầm bay theo Breguet (g = 9.80665 m/s²) là:",
+   "en": "An aircraft has η_o = 0.25, heating value 44 MJ/kg, L/D = 18; the start-of-cruise mass is 1.2 times the end mass. The Breguet range (g = 9.80665 m/s²) is:"
+  },
+  "opts": [
+   {
+    "vi": "3,681 km",
+    "en": "3,681 km"
+   },
+   {
+    "vi": "4,038 km",
+    "en": "4,038 km"
+   },
+   {
+    "vi": "205 km",
+    "en": "205 km"
+   },
+   {
+    "vi": "4,027 km",
+    "en": "4,027 km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.25×44,000,000/9.80665×18×ln(1.2) = 3,681 km. Lỗi: dùng (m1 − m2)/m2 thay cho ln(m1/m2) cho 4,038 km; quên L/D cho 205 km.",
+   "en": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.25×44,000,000/9.80665×18×ln(1.2) = 3,681 km. Slips: using (m1 − m2)/m2 instead of ln(m1/m2) gives 4,038 km; forgetting L/D gives 205 km."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tầm bay Breguet",
+   "en": "Added – generated from the type: Breguet range"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_breguet)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay có η_o = 0.25, nhiệt trị 42 MJ/kg, L/D = 10; khối lượng đầu chặng bay gấp 1.3 lần cuối chặng. Tầm bay theo Breguet (g = 9.80665 m/s²) là:",
+   "en": "An aircraft has η_o = 0.25, heating value 42 MJ/kg, L/D = 10; the start-of-cruise mass is 1.3 times the end mass. The Breguet range (g = 9.80665 m/s²) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,809 km",
+    "en": "2,809 km"
+   },
+   {
+    "vi": "3,212 km",
+    "en": "3,212 km"
+   },
+   {
+    "vi": "281 km",
+    "en": "281 km"
+   },
+   {
+    "vi": "3,194 km",
+    "en": "3,194 km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.25×42,000,000/9.80665×10×ln(1.3) = 2,809 km. Lỗi: dùng (m1 − m2)/m2 thay cho ln(m1/m2) cho 3,212 km; quên L/D cho 281 km.",
+   "en": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.25×42,000,000/9.80665×10×ln(1.3) = 2,809 km. Slips: using (m1 − m2)/m2 instead of ln(m1/m2) gives 3,212 km; forgetting L/D gives 281 km."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tầm bay Breguet",
+   "en": "Added – generated from the type: Breguet range"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_breguet)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay có η_o = 0.35, nhiệt trị 44 MJ/kg, L/D = 14; khối lượng đầu chặng bay gấp 1.3 lần cuối chặng. Tầm bay theo Breguet (g = 9.80665 m/s²) là:",
+   "en": "An aircraft has η_o = 0.35, heating value 44 MJ/kg, L/D = 14; the start-of-cruise mass is 1.3 times the end mass. The Breguet range (g = 9.80665 m/s²) is:"
+  },
+  "opts": [
+   {
+    "vi": "5,768 km",
+    "en": "5,768 km"
+   },
+   {
+    "vi": "6,596 km",
+    "en": "6,596 km"
+   },
+   {
+    "vi": "412 km",
+    "en": "412 km"
+   },
+   {
+    "vi": "6,558 km",
+    "en": "6,558 km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.35×44,000,000/9.80665×14×ln(1.3) = 5,768 km. Lỗi: dùng (m1 − m2)/m2 thay cho ln(m1/m2) cho 6,596 km; quên L/D cho 412 km.",
+   "en": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.35×44,000,000/9.80665×14×ln(1.3) = 5,768 km. Slips: using (m1 − m2)/m2 instead of ln(m1/m2) gives 6,596 km; forgetting L/D gives 412 km."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tầm bay Breguet",
+   "en": "Added – generated from the type: Breguet range"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_breguet)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ tên lửa sinh lực đẩy 150 kN, tiêu thụ 60 kg/s thuốc phóng. Xung riêng Is = F/(ṁp·g0) là:",
+   "en": "A rocket engine produces 150 kN of thrust and consumes 60 kg/s of propellant. The specific impulse Is = F/(ṁp·g0) is:"
+  },
+  "opts": [
+   {
+    "vi": "254.9 s",
+    "en": "254.9 s"
+   },
+   {
+    "vi": "2,500.0 s",
+    "en": "2,500.0 s"
+   },
+   {
+    "vi": "277.8 s",
+    "en": "277.8 s"
+   },
+   {
+    "vi": "127.5 s",
+    "en": "127.5 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Is = 150,000/(60×9.80665) = 254.9 s. T/ṁp = 2,500 m/s là vận tốc phụt hiệu dụng, không phải Is (cần chia g0).",
+   "en": "Is = 150,000/(60×9.80665) = 254.9 s. T/ṁp = 2,500 m/s is the effective exhaust velocity, not Is (divide by g0)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng xung riêng",
+   "en": "Added – generated from the type: specific impulse"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_isp)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ tên lửa sinh lực đẩy 300 kN, tiêu thụ 30 kg/s thuốc phóng. Xung riêng Is = F/(ṁp·g0) là:",
+   "en": "A rocket engine produces 300 kN of thrust and consumes 30 kg/s of propellant. The specific impulse Is = F/(ṁp·g0) is:"
+  },
+  "opts": [
+   {
+    "vi": "1,019.7 s",
+    "en": "1,019.7 s"
+   },
+   {
+    "vi": "10,000.0 s",
+    "en": "10,000.0 s"
+   },
+   {
+    "vi": "1,111.1 s",
+    "en": "1,111.1 s"
+   },
+   {
+    "vi": "509.9 s",
+    "en": "509.9 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Is = 300,000/(30×9.80665) = 1,019.7 s. T/ṁp = 10,000 m/s là vận tốc phụt hiệu dụng, không phải Is (cần chia g0).",
+   "en": "Is = 300,000/(30×9.80665) = 1,019.7 s. T/ṁp = 10,000 m/s is the effective exhaust velocity, not Is (divide by g0)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng xung riêng",
+   "en": "Added – generated from the type: specific impulse"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_isp)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbofan hút tổng cộng 600 kg/s không khí, tỉ số rẽ nhánh BPR = 8. Lưu lượng đi qua quạt (dòng lạnh, rẽ nhánh) là:",
+   "en": "A turbofan takes in 600 kg/s of air in total with BPR = 8. The flow through the fan bypass (cold stream) is:"
+  },
+  "opts": [
+   {
+    "vi": "533.3 kg/s",
+    "en": "533.3 kg/s"
+   },
+   {
+    "vi": "66.7 kg/s",
+    "en": "66.7 kg/s"
+   },
+   {
+    "vi": "4,800.0 kg/s",
+    "en": "4,800.0 kg/s"
+   },
+   {
+    "vi": "75.0 kg/s",
+    "en": "75.0 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "BPR = ṁc/ṁh và ṁc + ṁh = ṁa ⇒ ṁc = BPR/(1+BPR)·ṁa = 8/9×600 = 533.3 kg/s; lõi chỉ nhận 66.7 kg/s.",
+   "en": "BPR = ṁc/ṁh and ṁc + ṁh = ṁa ⇒ ṁc = BPR/(1+BPR)·ṁa = 8/9×600 = 533.3 kg/s; the core receives only 66.7 kg/s."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số rẽ nhánh",
+   "en": "Added – generated from the type: bypass ratio"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_bpr)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbofan hút tổng cộng 400 kg/s không khí, tỉ số rẽ nhánh BPR = 4. Lưu lượng đi qua quạt (dòng lạnh, rẽ nhánh) là:",
+   "en": "A turbofan takes in 400 kg/s of air in total with BPR = 4. The flow through the fan bypass (cold stream) is:"
+  },
+  "opts": [
+   {
+    "vi": "320.0 kg/s",
+    "en": "320.0 kg/s"
+   },
+   {
+    "vi": "80.0 kg/s",
+    "en": "80.0 kg/s"
+   },
+   {
+    "vi": "1,600.0 kg/s",
+    "en": "1,600.0 kg/s"
+   },
+   {
+    "vi": "100.0 kg/s",
+    "en": "100.0 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "BPR = ṁc/ṁh và ṁc + ṁh = ṁa ⇒ ṁc = BPR/(1+BPR)·ṁa = 4/5×400 = 320.0 kg/s; lõi chỉ nhận 80.0 kg/s.",
+   "en": "BPR = ṁc/ṁh and ṁc + ṁh = ṁa ⇒ ṁc = BPR/(1+BPR)·ṁa = 4/5×400 = 320.0 kg/s; the core receives only 80.0 kg/s."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số rẽ nhánh",
+   "en": "Added – generated from the type: bypass ratio"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_bpr)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbofan (vòi không nghẹt): ṁh = 25 kg/s, BPR = 6, f = 0.02, ue,h = 550 m/s, ue,c = 350 m/s, bay ở 230 m/s. Lực đẩy thực là:",
+   "en": "Turbofan (unchoked nozzles): ṁh = 25 kg/s, BPR = 6, f = 0.02, ue,h = 550 m/s, ue,c = 350 m/s, flying at 230 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "26.27 kN",
+    "en": "26.27 kN"
+   },
+   {
+    "vi": "8.28 kN",
+    "en": "8.28 kN"
+   },
+   {
+    "vi": "21.27 kN",
+    "en": "21.27 kN"
+   },
+   {
+    "vi": "11.28 kN",
+    "en": "11.28 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) với ṁc = BPR·ṁh = 150 kg/s: 8,275 + 18,000 = 26,275 N = 26.27 kN. Bỏ dòng quạt chỉ còn 8.28 kN (lõi); quên nhân BPR cho dòng quạt cho 11.28 kN.",
+   "en": "T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) with ṁc = BPR·ṁh = 150 kg/s: 8,275 + 18,000 = 26,275 N = 26.27 kN. Dropping the fan stream leaves 8.28 kN (core only); forgetting to multiply by BPR for the fan stream gives 11.28 kN."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbofan",
+   "en": "Added – generated from the type: turbofan thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_tf)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbofan (vòi không nghẹt): ṁh = 25 kg/s, BPR = 5, f = 0.02, ue,h = 550 m/s, ue,c = 350 m/s, bay ở 200 m/s. Lực đẩy thực là:",
+   "en": "Turbofan (unchoked nozzles): ṁh = 25 kg/s, BPR = 5, f = 0.02, ue,h = 550 m/s, ue,c = 350 m/s, flying at 200 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "27.77 kN",
+    "en": "27.77 kN"
+   },
+   {
+    "vi": "9.03 kN",
+    "en": "9.03 kN"
+   },
+   {
+    "vi": "22.77 kN",
+    "en": "22.77 kN"
+   },
+   {
+    "vi": "12.78 kN",
+    "en": "12.78 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) với ṁc = BPR·ṁh = 125 kg/s: 9,025 + 18,750 = 27,775 N = 27.77 kN. Bỏ dòng quạt chỉ còn 9.03 kN (lõi); quên nhân BPR cho dòng quạt cho 12.78 kN.",
+   "en": "T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) with ṁc = BPR·ṁh = 125 kg/s: 9,025 + 18,750 = 27,775 N = 27.77 kN. Dropping the fan stream leaves 9.03 kN (core only); forgetting to multiply by BPR for the fan stream gives 12.78 kN."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbofan",
+   "en": "Added – generated from the type: turbofan thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_tf)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbofan (vòi không nghẹt): ṁh = 20 kg/s, BPR = 4, f = 0.02, ue,h = 450 m/s, ue,c = 400 m/s, bay ở 230 m/s. Lực đẩy thực là:",
+   "en": "Turbofan (unchoked nozzles): ṁh = 20 kg/s, BPR = 4, f = 0.02, ue,h = 450 m/s, ue,c = 400 m/s, flying at 230 m/s. The net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "18.18 kN",
+    "en": "18.18 kN"
+   },
+   {
+    "vi": "4.58 kN",
+    "en": "4.58 kN"
+   },
+   {
+    "vi": "17.18 kN",
+    "en": "17.18 kN"
+   },
+   {
+    "vi": "7.98 kN",
+    "en": "7.98 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) với ṁc = BPR·ṁh = 80 kg/s: 4,580 + 13,600 = 18,180 N = 18.18 kN. Bỏ dòng quạt chỉ còn 4.58 kN (lõi); quên nhân BPR cho dòng quạt cho 7.98 kN.",
+   "en": "T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) with ṁc = BPR·ṁh = 80 kg/s: 4,580 + 13,600 = 18,180 N = 18.18 kN. Dropping the fan stream leaves 4.58 kN (core only); forgetting to multiply by BPR for the fan stream gives 7.98 kN."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbofan",
+   "en": "Added – generated from the type: turbofan thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_tf)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay khối lượng 78,000 kg bay bằng đều với C_L = 0.4, C_D = 0.03. Lực đẩy cần thiết (T_u = F_x = (C_D/C_L)·m·g) là:",
+   "en": "An aircraft of mass 78,000 kg is in level cruise with C_L = 0.4, C_D = 0.03. The required thrust (T_u = F_x = (C_D/C_L)·m·g) is:"
+  },
+  "opts": [
+   {
+    "vi": "57.4 kN",
+    "en": "57.4 kN"
+   },
+   {
+    "vi": "764.9 kN",
+    "en": "764.9 kN"
+   },
+   {
+    "vi": "10,198.9 kN",
+    "en": "10,198.9 kN"
+   },
+   {
+    "vi": "22.9 kN",
+    "en": "22.9 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P = F_z ⇒ lực đẩy = lực cản = (C_D/C_L)·P = (0.03/0.4)×78,000×9.80665 = 57.4 kN (≈ 7.5 % trọng lượng). Đảo tỉ số cho 10,199 kN (lớn hơn cả trọng lượng, vô lý).",
+   "en": "P = F_z ⇒ thrust = drag = (C_D/C_L)·P = (0.03/0.4)×78,000×9.80665 = 57.4 kN (≈ 7.5 % of the weight). Inverting the ratio gives 10,199 kN (more than the weight, absurd)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng bốn lực khi bay bằng",
+   "en": "Added – generated from the type: four forces in cruise"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_cruise)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay khối lượng 78,000 kg bay bằng đều với C_L = 0.4, C_D = 0.025. Lực đẩy cần thiết (T_u = F_x = (C_D/C_L)·m·g) là:",
+   "en": "An aircraft of mass 78,000 kg is in level cruise with C_L = 0.4, C_D = 0.025. The required thrust (T_u = F_x = (C_D/C_L)·m·g) is:"
+  },
+  "opts": [
+   {
+    "vi": "47.8 kN",
+    "en": "47.8 kN"
+   },
+   {
+    "vi": "764.9 kN",
+    "en": "764.9 kN"
+   },
+   {
+    "vi": "12,238.7 kN",
+    "en": "12,238.7 kN"
+   },
+   {
+    "vi": "19.1 kN",
+    "en": "19.1 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P = F_z ⇒ lực đẩy = lực cản = (C_D/C_L)·P = (0.025/0.4)×78,000×9.80665 = 47.8 kN (≈ 6.2 % trọng lượng). Đảo tỉ số cho 12,239 kN (lớn hơn cả trọng lượng, vô lý).",
+   "en": "P = F_z ⇒ thrust = drag = (C_D/C_L)·P = (0.025/0.4)×78,000×9.80665 = 47.8 kN (≈ 6.2 % of the weight). Inverting the ratio gives 12,239 kN (more than the weight, absurd)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng bốn lực khi bay bằng",
+   "en": "Added – generated from the type: four forces in cruise"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_cruise)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay khối lượng 78,000 kg bay bằng đều với C_L = 0.55, C_D = 0.02. Lực đẩy cần thiết (T_u = F_x = (C_D/C_L)·m·g) là:",
+   "en": "An aircraft of mass 78,000 kg is in level cruise with C_L = 0.55, C_D = 0.02. The required thrust (T_u = F_x = (C_D/C_L)·m·g) is:"
+  },
+  "opts": [
+   {
+    "vi": "27.8 kN",
+    "en": "27.8 kN"
+   },
+   {
+    "vi": "764.9 kN",
+    "en": "764.9 kN"
+   },
+   {
+    "vi": "21,035.3 kN",
+    "en": "21,035.3 kN"
+   },
+   {
+    "vi": "15.3 kN",
+    "en": "15.3 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P = F_z ⇒ lực đẩy = lực cản = (C_D/C_L)·P = (0.02/0.55)×78,000×9.80665 = 27.8 kN (≈ 3.6 % trọng lượng). Đảo tỉ số cho 21,035 kN (lớn hơn cả trọng lượng, vô lý).",
+   "en": "P = F_z ⇒ thrust = drag = (C_D/C_L)·P = (0.02/0.55)×78,000×9.80665 = 27.8 kN (≈ 3.6 % of the weight). Inverting the ratio gives 21,035 kN (more than the weight, absurd)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng bốn lực khi bay bằng",
+   "en": "Added – generated from the type: four forces in cruise"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_cruise)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Lực nâng F_z = C_L·V²·(ρ/2)·S của máy bay có S = 122 m², C_L = 1.2, V = 120 m/s ở 10 km (mật độ ISA ρ = 0.4127 kg/m³) là:",
+   "en": "The lift F_z = C_L·V²·(ρ/2)·S of an aircraft with S = 122 m², C_L = 1.2, V = 120 m/s at 10 km (ISA density ρ = 0.4127 kg/m³) is:"
+  },
+  "opts": [
+   {
+    "vi": "435.0 kN",
+    "en": "435.0 kN"
+   },
+   {
+    "vi": "870.1 kN",
+    "en": "870.1 kN"
+   },
+   {
+    "vi": "3.6 kN",
+    "en": "3.6 kN"
+   },
+   {
+    "vi": "44.4 kN",
+    "en": "44.4 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F_z = 1.2×120²×(0.4127/2)×122 = 435,025 N = 435.0 kN. Quên hệ số ½ cho 870.1 kN; dùng V thay V² cho 3.6 kN.",
+   "en": "F_z = 1.2×120²×(0.4127/2)×122 = 435,025 N = 435.0 kN. Forgetting the factor ½ gives 870.1 kN; using V instead of V² gives 3.6 kN."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực nâng",
+   "en": "Added – generated from the type: lift"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_lift)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Lực nâng F_z = C_L·V²·(ρ/2)·S của máy bay có S = 122 m², C_L = 0.5, V = 120 m/s ở 10 km (mật độ ISA ρ = 0.4127 kg/m³) là:",
+   "en": "The lift F_z = C_L·V²·(ρ/2)·S of an aircraft with S = 122 m², C_L = 0.5, V = 120 m/s at 10 km (ISA density ρ = 0.4127 kg/m³) is:"
+  },
+  "opts": [
+   {
+    "vi": "181.3 kN",
+    "en": "181.3 kN"
+   },
+   {
+    "vi": "362.5 kN",
+    "en": "362.5 kN"
+   },
+   {
+    "vi": "1.5 kN",
+    "en": "1.5 kN"
+   },
+   {
+    "vi": "18.5 kN",
+    "en": "18.5 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F_z = 0.5×120²×(0.4127/2)×122 = 181,261 N = 181.3 kN. Quên hệ số ½ cho 362.5 kN; dùng V thay V² cho 1.5 kN.",
+   "en": "F_z = 0.5×120²×(0.4127/2)×122 = 181,261 N = 181.3 kN. Forgetting the factor ½ gives 362.5 kN; using V instead of V² gives 1.5 kN."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực nâng",
+   "en": "Added – generated from the type: lift"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_lift)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Lực nâng F_z = C_L·V²·(ρ/2)·S của máy bay có S = 260 m², C_L = 0.3, V = 70 m/s ở 0 km (mật độ ISA ρ = 1.2250 kg/m³) là:",
+   "en": "The lift F_z = C_L·V²·(ρ/2)·S of an aircraft with S = 260 m², C_L = 0.3, V = 70 m/s at 0 km (ISA density ρ = 1.2250 kg/m³) is:"
+  },
+  "opts": [
+   {
+    "vi": "234.1 kN",
+    "en": "234.1 kN"
+   },
+   {
+    "vi": "468.2 kN",
+    "en": "468.2 kN"
+   },
+   {
+    "vi": "3.3 kN",
+    "en": "3.3 kN"
+   },
+   {
+    "vi": "23.9 kN",
+    "en": "23.9 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F_z = 0.3×70²×(1.2250/2)×260 = 234,097 N = 234.1 kN. Quên hệ số ½ cho 468.2 kN; dùng V thay V² cho 3.3 kN.",
+   "en": "F_z = 0.3×70²×(1.2250/2)×260 = 234,097 N = 234.1 kN. Forgetting the factor ½ gives 468.2 kN; using V instead of V² gives 3.3 kN."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực nâng",
+   "en": "Added – generated from the type: lift"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_lift)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turboprop: công suất trục SP = 2,500 kW, lực đẩy khí xả Te = 1,500 N, bay 150 m/s, η_pr = 0.85, nhiên liệu 0.2 kg/s. ESFC = ṁf/ESP (ESP = SP + Te·u/η_pr) tính bằng g/(kW·h) là:",
+   "en": "Turboprop: shaft power SP = 2,500 kW, exhaust thrust Te = 1,500 N, flying at 150 m/s, η_pr = 0.85, fuel 0.2 kg/s. ESFC = ṁf/ESP (ESP = SP + Te·u/η_pr) in g/(kW·h) is:"
+  },
+  "opts": [
+   {
+    "vi": "260.4 g/(kW·h)",
+    "en": "260.4 g/(kW·h)"
+   },
+   {
+    "vi": "288.0 g/(kW·h)",
+    "en": "288.0 g/(kW·h)"
+   },
+   {
+    "vi": "264.2 g/(kW·h)",
+    "en": "264.2 g/(kW·h)"
+   },
+   {
+    "vi": "267.5 g/(kW·h)",
+    "en": "267.5 g/(kW·h)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ESP = 2,500,000 + 1,500×150/0.85 = 2,764,706 W; ESFC = 0.2/2,764,706 kg/(W·s) = 260.4 g/(kW·h). Bỏ phần khí xả cho 288.0; bỏ chia η_pr cho 264.2.",
+   "en": "ESP = 2,500,000 + 1,500×150/0.85 = 2,764,706 W; ESFC = 0.2/2,764,706 kg/(W·s) = 260.4 g/(kW·h). Dropping the exhaust part gives 288.0; not dividing by η_pr gives 264.2."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng ESFC của turboprop",
+   "en": "Added – generated from the type: turboprop ESFC"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_esp)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turboprop: công suất trục SP = 2,000 kW, lực đẩy khí xả Te = 1,500 N, bay 120 m/s, η_pr = 0.85, nhiên liệu 0.15 kg/s. ESFC = ṁf/ESP (ESP = SP + Te·u/η_pr) tính bằng g/(kW·h) là:",
+   "en": "Turboprop: shaft power SP = 2,000 kW, exhaust thrust Te = 1,500 N, flying at 120 m/s, η_pr = 0.85, fuel 0.15 kg/s. ESFC = ṁf/ESP (ESP = SP + Te·u/η_pr) in g/(kW·h) is:"
+  },
+  "opts": [
+   {
+    "vi": "244.1 g/(kW·h)",
+    "en": "244.1 g/(kW·h)"
+   },
+   {
+    "vi": "270.0 g/(kW·h)",
+    "en": "270.0 g/(kW·h)"
+   },
+   {
+    "vi": "247.7 g/(kW·h)",
+    "en": "247.7 g/(kW·h)"
+   },
+   {
+    "vi": "250.8 g/(kW·h)",
+    "en": "250.8 g/(kW·h)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ESP = 2,000,000 + 1,500×120/0.85 = 2,211,765 W; ESFC = 0.15/2,211,765 kg/(W·s) = 244.1 g/(kW·h). Bỏ phần khí xả cho 270.0; bỏ chia η_pr cho 247.7.",
+   "en": "ESP = 2,000,000 + 1,500×120/0.85 = 2,211,765 W; ESFC = 0.15/2,211,765 kg/(W·s) = 244.1 g/(kW·h). Dropping the exhaust part gives 270.0; not dividing by η_pr gives 247.7."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng ESFC của turboprop",
+   "en": "Added – generated from the type: turboprop ESFC"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_esp)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòi phun nghẹt có Ae = 0.2 m², Pe = 80 kPa, môi trường Pa = 50 kPa. Lực đẩy áp suất (Pe − Pa)·Ae là:",
+   "en": "A choked nozzle has Ae = 0.2 m², Pe = 80 kPa and ambient Pa = 50 kPa. The pressure thrust (Pe − Pa)·Ae is:"
+  },
+  "opts": [
+   {
+    "vi": "6.0 kN",
+    "en": "6.0 kN"
+   },
+   {
+    "vi": "16.0 kN",
+    "en": "16.0 kN"
+   },
+   {
+    "vi": "10.0 kN",
+    "en": "10.0 kN"
+   },
+   {
+    "vi": "26.0 kN",
+    "en": "26.0 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "(Pe − Pa)·Ae = (80,000 − 50,000)×0.2 = 6,000 N = 6.0 kN, dương vì Pe > Pa (vòi nghẹt, chưa giãn nở hết). Nếu Pe = Pa (vòi giãn nở hoàn toàn) thì bằng 0.",
+   "en": "(Pe − Pa)·Ae = (80,000 − 50,000)×0.2 = 6,000 N = 6.0 kN, positive because Pe > Pa (choked, under-expanded). If Pe = Pa (fully expanded) it is zero."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy áp suất",
+   "en": "Added – generated from the type: pressure thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_pthrust)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòi phun nghẹt có Ae = 0.2 m², Pe = 200 kPa, môi trường Pa = 20 kPa. Lực đẩy áp suất (Pe − Pa)·Ae là:",
+   "en": "A choked nozzle has Ae = 0.2 m², Pe = 200 kPa and ambient Pa = 20 kPa. The pressure thrust (Pe − Pa)·Ae is:"
+  },
+  "opts": [
+   {
+    "vi": "36.0 kN",
+    "en": "36.0 kN"
+   },
+   {
+    "vi": "40.0 kN",
+    "en": "40.0 kN"
+   },
+   {
+    "vi": "4.0 kN",
+    "en": "4.0 kN"
+   },
+   {
+    "vi": "44.0 kN",
+    "en": "44.0 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "(Pe − Pa)·Ae = (200,000 − 20,000)×0.2 = 36,000 N = 36.0 kN, dương vì Pe > Pa (vòi nghẹt, chưa giãn nở hết). Nếu Pe = Pa (vòi giãn nở hoàn toàn) thì bằng 0.",
+   "en": "(Pe − Pa)·Ae = (200,000 − 20,000)×0.2 = 36,000 N = 36.0 kN, positive because Pe > Pa (choked, under-expanded). If Pe = Pa (fully expanded) it is zero."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy áp suất",
+   "en": "Added – generated from the type: pressure thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_pthrust)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay 78,000 kg, S = 122.6 m², bay bằng đều với C_L = 0.9 (F_z = P). Vận tốc cần thiết ở 8 km (ISA) là:",
+   "en": "An aircraft of 78,000 kg with S = 122.6 m² flies level with C_L = 0.9 (F_z = P). The required speed at 8 km (ISA) is:"
+  },
+  "opts": [
+   {
+    "vi": "162.5 m/s",
+    "en": "162.5 m/s"
+   },
+   {
+    "vi": "106.4 m/s",
+    "en": "106.4 m/s"
+   },
+   {
+    "vi": "45.6 m/s",
+    "en": "45.6 m/s"
+   },
+   {
+    "vi": "264.0 m/s",
+    "en": "264.0 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V = √(2P/(ρ·S·C_L)). Ở mực nước biển ρ = 1.225 kg/m³ cho V = 106.4 m/s; ở 8 km ρ = 0.5252 kg/m³ nên V = √(2×78,000×9.80665/(0.5252×122.6×0.9)) = 162.5 m/s, tức gấp √(ρ0/ρ) = 1.527 lần. Nhân thay vì lấy căn cho 45.6.",
+   "en": "V = √(2P/(ρ·S·C_L)). At sea level ρ = 1.225 kg/m³ gives V = 106.4 m/s; at 8 km ρ = 0.5252 kg/m³ so V = √(2×78,000×9.80665/(0.5252×122.6×0.9)) = 162.5 m/s, i.e. √(ρ0/ρ) = 1.527 times larger. Scaling by the ratio instead of its square root gives 45.6."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vận tốc bay bằng theo độ cao",
+   "en": "Added – generated from the type: level-flight speed versus altitude"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_vreq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay 60,000 kg, S = 122.0 m², bay bằng đều với C_L = 1.0 (F_z = P). Vận tốc cần thiết ở 5 km (ISA) là:",
+   "en": "An aircraft of 60,000 kg with S = 122.0 m² flies level with C_L = 1.0 (F_z = P). The required speed at 5 km (ISA) is:"
+  },
+  "opts": [
+   {
+    "vi": "114.5 m/s",
+    "en": "114.5 m/s"
+   },
+   {
+    "vi": "88.7 m/s",
+    "en": "88.7 m/s"
+   },
+   {
+    "vi": "53.3 m/s",
+    "en": "53.3 m/s"
+   },
+   {
+    "vi": "131.0 m/s",
+    "en": "131.0 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V = √(2P/(ρ·S·C_L)). Ở mực nước biển ρ = 1.225 kg/m³ cho V = 88.7 m/s; ở 5 km ρ = 0.7361 kg/m³ nên V = √(2×60,000×9.80665/(0.7361×122.0×1.0)) = 114.5 m/s, tức gấp √(ρ0/ρ) = 1.290 lần. Nhân thay vì lấy căn cho 53.3.",
+   "en": "V = √(2P/(ρ·S·C_L)). At sea level ρ = 1.225 kg/m³ gives V = 88.7 m/s; at 5 km ρ = 0.7361 kg/m³ so V = √(2×60,000×9.80665/(0.7361×122.0×1.0)) = 114.5 m/s, i.e. √(ρ0/ρ) = 1.290 times larger. Scaling by the ratio instead of its square root gives 53.3."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vận tốc bay bằng theo độ cao",
+   "en": "Added – generated from the type: level-flight speed versus altitude"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_vreq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay 78,000 kg, S = 122.6 m², bay bằng đều với C_L = 1.0 (F_z = P). Vận tốc cần thiết ở 10 km (ISA) là:",
+   "en": "An aircraft of 78,000 kg with S = 122.6 m² flies level with C_L = 1.0 (F_z = P). The required speed at 10 km (ISA) is:"
+  },
+  "opts": [
+   {
+    "vi": "173.9 m/s",
+    "en": "173.9 m/s"
+   },
+   {
+    "vi": "100.9 m/s",
+    "en": "100.9 m/s"
+   },
+   {
+    "vi": "34.0 m/s",
+    "en": "34.0 m/s"
+   },
+   {
+    "vi": "302.4 m/s",
+    "en": "302.4 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V = √(2P/(ρ·S·C_L)). Ở mực nước biển ρ = 1.225 kg/m³ cho V = 100.9 m/s; ở 10 km ρ = 0.4127 kg/m³ nên V = √(2×78,000×9.80665/(0.4127×122.6×1.0)) = 173.9 m/s, tức gấp √(ρ0/ρ) = 1.723 lần. Nhân thay vì lấy căn cho 34.0.",
+   "en": "V = √(2P/(ρ·S·C_L)). At sea level ρ = 1.225 kg/m³ gives V = 100.9 m/s; at 10 km ρ = 0.4127 kg/m³ so V = √(2×78,000×9.80665/(0.4127×122.6×1.0)) = 173.9 m/s, i.e. √(ρ0/ρ) = 1.723 times larger. Scaling by the ratio instead of its square root gives 34.0."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vận tốc bay bằng theo độ cao",
+   "en": "Added – generated from the type: level-flight speed versus altitude"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_vreq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai động cơ cùng lực đẩy 10 kN ở u = 250 m/s (bỏ qua f, vòi giãn nở hoàn toàn): A có ue = 375 m/s (lưu lượng lớn, như turbofan), B có ue = 625 m/s (lưu lượng nhỏ, như turbojet). Tỉ số η_p(A)/η_p(B) là:",
+   "en": "Two engines give the same thrust of 10 kN at u = 250 m/s (f neglected, fully expanded nozzle): A has ue = 375 m/s (large flow, turbofan-like), B has ue = 625 m/s (small flow, turbojet-like). The ratio η_p(A)/η_p(B) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.40",
+    "en": "1.40"
+   },
+   {
+    "vi": "0.71",
+    "en": "0.71"
+   },
+   {
+    "vi": "1.67",
+    "en": "1.67"
+   },
+   {
+    "vi": "3.00",
+    "en": "3.00"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lưu lượng cần: ṁA = T/(ue − u) = 80.0 kg/s, ṁB = 26.7 kg/s. η_p(A) = 2u/(u + ueA) = 0.800, η_p(B) = 0.571 ⇒ tỉ số 1.400. Động cơ tăng tốc khối lượng khí lớn hơn với gia tốc nhỏ hơn thì hiệu suất đẩy cao hơn: đây là lý do turbofan thay turbojet cho máy bay dân dụng (slide tr.8, 10, 37).",
+   "en": "Required flows: ṁA = T/(ue − u) = 80.0 kg/s, ṁB = 26.7 kg/s. η_p(A) = 2u/(u + ueA) = 0.800, η_p(B) = 0.571 ⇒ ratio 1.400. The engine that accelerates a larger air mass by a smaller amount has the higher propulsive efficiency: this is why turbofans replaced turbojets in airliners (slides pp.8, 10, 37)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nguyên lý đẩy",
+   "en": "Principles of propulsion"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng so sánh hiệu suất đẩy",
+   "en": "Added – generated from the type: propulsive efficiency comparison"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_cmp)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai động cơ cùng lực đẩy 10 kN ở u = 200 m/s (bỏ qua f, vòi giãn nở hoàn toàn): A có ue = 300 m/s (lưu lượng lớn, như turbofan), B có ue = 500 m/s (lưu lượng nhỏ, như turbojet). Tỉ số η_p(A)/η_p(B) là:",
+   "en": "Two engines give the same thrust of 10 kN at u = 200 m/s (f neglected, fully expanded nozzle): A has ue = 300 m/s (large flow, turbofan-like), B has ue = 500 m/s (small flow, turbojet-like). The ratio η_p(A)/η_p(B) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.40",
+    "en": "1.40"
+   },
+   {
+    "vi": "0.71",
+    "en": "0.71"
+   },
+   {
+    "vi": "1.67",
+    "en": "1.67"
+   },
+   {
+    "vi": "3.00",
+    "en": "3.00"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lưu lượng cần: ṁA = T/(ue − u) = 100.0 kg/s, ṁB = 33.3 kg/s. η_p(A) = 2u/(u + ueA) = 0.800, η_p(B) = 0.571 ⇒ tỉ số 1.400. Động cơ tăng tốc khối lượng khí lớn hơn với gia tốc nhỏ hơn thì hiệu suất đẩy cao hơn: đây là lý do turbofan thay turbojet cho máy bay dân dụng (slide tr.8, 10, 37).",
+   "en": "Required flows: ṁA = T/(ue − u) = 100.0 kg/s, ṁB = 33.3 kg/s. η_p(A) = 2u/(u + ueA) = 0.800, η_p(B) = 0.571 ⇒ ratio 1.400. The engine that accelerates a larger air mass by a smaller amount has the higher propulsive efficiency: this is why turbofans replaced turbojets in airliners (slides pp.8, 10, 37)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nguyên lý đẩy",
+   "en": "Principles of propulsion"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng so sánh hiệu suất đẩy",
+   "en": "Added – generated from the type: propulsive efficiency comparison"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m01: g_cmp)"
+ }
+]

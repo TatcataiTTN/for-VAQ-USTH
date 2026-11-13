@@ -1,0 +1,6347 @@
+{
+ "book": "farokhi",
+ "offset": 34,
+ "pages": 1048,
+ "entries": [
+  {
+   "i": 0,
+   "level": 1,
+   "num": "",
+   "title": "Aircraft Propulsion",
+   "kind": "other",
+   "pdf": 3,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 8,
+   "mods": {}
+  },
+  {
+   "i": 1,
+   "level": 1,
+   "num": "",
+   "title": "Table of Contents",
+   "kind": "other",
+   "pdf": 9,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 18,
+   "mods": {}
+  },
+  {
+   "i": 2,
+   "level": 1,
+   "num": "",
+   "title": "Preface to the Second Edition",
+   "kind": "other",
+   "pdf": 19,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 20,
+   "mods": {}
+  },
+  {
+   "i": 3,
+   "level": 2,
+   "num": "",
+   "title": "Acknowledgments",
+   "kind": "other",
+   "pdf": 20,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 20,
+   "mods": {}
+  },
+  {
+   "i": 4,
+   "level": 1,
+   "num": "",
+   "title": "Preface",
+   "kind": "other",
+   "pdf": 21,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 24,
+   "mods": {}
+  },
+  {
+   "i": 5,
+   "level": 2,
+   "num": "",
+   "title": "Intended Audience",
+   "kind": "other",
+   "pdf": 21,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 21,
+   "mods": {}
+  },
+  {
+   "i": 6,
+   "level": 2,
+   "num": "",
+   "title": "Motivation",
+   "kind": "other",
+   "pdf": 21,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 21,
+   "mods": {}
+  },
+  {
+   "i": 7,
+   "level": 2,
+   "num": "",
+   "title": "Mathematical Level",
+   "kind": "other",
+   "pdf": 21,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 21,
+   "mods": {}
+  },
+  {
+   "i": 8,
+   "level": 2,
+   "num": "",
+   "title": "Chapter Organization and Topical Coverage",
+   "kind": "other",
+   "pdf": 22,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 22,
+   "mods": {}
+  },
+  {
+   "i": 9,
+   "level": 2,
+   "num": "",
+   "title": "Instructor Resources",
+   "kind": "other",
+   "pdf": 23,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 23,
+   "mods": {}
+  },
+  {
+   "i": 10,
+   "level": 2,
+   "num": "",
+   "title": "Acknowledgments",
+   "kind": "other",
+   "pdf": 23,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 24,
+   "mods": {}
+  },
+  {
+   "i": 11,
+   "level": 1,
+   "num": "",
+   "title": "Nomenclature",
+   "kind": "other",
+   "pdf": 25,
+   "printed": null,
+   "chapter": null,
+   "pdf_end": 34,
+   "mods": {}
+  },
+  {
+   "i": 12,
+   "level": 1,
+   "num": "1",
+   "title": "Introduction",
+   "kind": "chapter",
+   "pdf": 35,
+   "printed": 1,
+   "chapter": "1",
+   "pdf_end": 54,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   }
+  },
+  {
+   "i": 13,
+   "level": 2,
+   "num": "1.1",
+   "title": "History of the Airbreathing Jet Engine, a Twentieth-Century Invention—The Beginning",
+   "kind": "section",
+   "pdf": 35,
+   "printed": 1,
+   "chapter": "1",
+   "pdf_end": 37,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 14,
+   "level": 2,
+   "num": "1.2",
+   "title": "Innovations in Aircraft Gas Turbine Engines",
+   "kind": "section",
+   "pdf": 38,
+   "printed": 4,
+   "chapter": "1",
+   "pdf_end": 43,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 15,
+   "level": 3,
+   "num": "1.2.1",
+   "title": "Multispool Configuration",
+   "kind": "section",
+   "pdf": 38,
+   "printed": 4,
+   "chapter": "1",
+   "pdf_end": 38,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 16,
+   "level": 3,
+   "num": "1.2.2",
+   "title": "Variable Stator",
+   "kind": "section",
+   "pdf": 39,
+   "printed": 5,
+   "chapter": "1",
+   "pdf_end": 39,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 17,
+   "level": 3,
+   "num": "1.2.3",
+   "title": "Transonic Compressor",
+   "kind": "section",
+   "pdf": 39,
+   "printed": 5,
+   "chapter": "1",
+   "pdf_end": 39,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 18,
+   "level": 3,
+   "num": "1.2.4",
+   "title": "Low-Emission Combustor",
+   "kind": "section",
+   "pdf": 40,
+   "printed": 6,
+   "chapter": "1",
+   "pdf_end": 40,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 19,
+   "level": 3,
+   "num": "1.2.5",
+   "title": "Turbine Cooling",
+   "kind": "section",
+   "pdf": 41,
+   "printed": 7,
+   "chapter": "1",
+   "pdf_end": 41,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 20,
+   "level": 3,
+   "num": "1.2.6",
+   "title": "Exhaust Nozzles",
+   "kind": "section",
+   "pdf": 42,
+   "printed": 8,
+   "chapter": "1",
+   "pdf_end": 42,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 21,
+   "level": 3,
+   "num": "1.2.7",
+   "title": "Modern Materials and Manufacturing Techniques",
+   "kind": "section",
+   "pdf": 42,
+   "printed": 8,
+   "chapter": "1",
+   "pdf_end": 43,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 22,
+   "level": 2,
+   "num": "1.3",
+   "title": "New Engine Concepts",
+   "kind": "section",
+   "pdf": 44,
+   "printed": 10,
+   "chapter": "1",
+   "pdf_end": 49,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 23,
+   "level": 3,
+   "num": "1.3.1",
+   "title": "Advanced Turboprop (ATP) and Geared Turbofan (GTF)",
+   "kind": "section",
+   "pdf": 44,
+   "printed": 10,
+   "chapter": "1",
+   "pdf_end": 44,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 24,
+   "level": 3,
+   "num": "1.3.2",
+   "title": "Advanced Airbreathing Rocket Technology",
+   "kind": "section",
+   "pdf": 45,
+   "printed": 11,
+   "chapter": "1",
+   "pdf_end": 45,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 25,
+   "level": 3,
+   "num": "1.3.3",
+   "title": "Wave Rotor Topping Cycle",
+   "kind": "section",
+   "pdf": 46,
+   "printed": 12,
+   "chapter": "1",
+   "pdf_end": 47,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 26,
+   "level": 3,
+   "num": "1.3.4",
+   "title": "Pulse Detonation Engine (PDE)",
+   "kind": "section",
+   "pdf": 48,
+   "printed": 14,
+   "chapter": "1",
+   "pdf_end": 48,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 27,
+   "level": 3,
+   "num": "1.3.5",
+   "title": "Millimeter-Scale Gas Turbine Engines: Triumph of MEMS and Digital Fabrication",
+   "kind": "section",
+   "pdf": 48,
+   "printed": 14,
+   "chapter": "1",
+   "pdf_end": 48,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 28,
+   "level": 3,
+   "num": "1.3.6",
+   "title": "Combined Cycle Propulsion: Engines from Takeoff to Space",
+   "kind": "section",
+   "pdf": 49,
+   "printed": 15,
+   "chapter": "1",
+   "pdf_end": 49,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 29,
+   "level": 2,
+   "num": "1.4",
+   "title": "New Vehicles",
+   "kind": "section",
+   "pdf": 50,
+   "printed": 16,
+   "chapter": "1",
+   "pdf_end": 50,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 30,
+   "level": 2,
+   "num": "1.5",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 50,
+   "printed": 16,
+   "chapter": "1",
+   "pdf_end": 51,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 31,
+   "level": 2,
+   "num": "1.6",
+   "title": "Roadmap for the Second Edition",
+   "kind": "section",
+   "pdf": 52,
+   "printed": 18,
+   "chapter": "1",
+   "pdf_end": 52,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "slide Ch.1 tr.5–48; Farokhi Ch.1 is history/innovations (modules.py: Ch.1)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 32,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 53,
+   "printed": 19,
+   "chapter": "1",
+   "pdf_end": 53,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "end-of-chapter References of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 33,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 54,
+   "printed": 20,
+   "chapter": "1",
+   "pdf_end": 54,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "end-of-chapter Problems of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 34,
+   "level": 1,
+   "num": "2",
+   "title": "Compressible Flow with Friction and Heat: A Review",
+   "kind": "chapter",
+   "pdf": 55,
+   "printed": 21,
+   "chapter": "2",
+   "pdf_end": 146,
+   "mods": {}
+  },
+  {
+   "i": 35,
+   "level": 2,
+   "num": "2.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 55,
+   "printed": 21,
+   "chapter": "2",
+   "pdf_end": 55,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "introduction"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 36,
+   "level": 2,
+   "num": "2.2",
+   "title": "A Brief Review of Thermodynamics",
+   "kind": "section",
+   "pdf": 56,
+   "printed": 22,
+   "chapter": "2",
+   "pdf_end": 60,
+   "mods": {
+    "m05": {
+     "role": "background",
+     "basis": "thermodynamics review (AE1.030)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 37,
+   "level": 2,
+   "num": "2.3",
+   "title": "Isentropic Process and Isentropic Flow",
+   "kind": "section",
+   "pdf": 61,
+   "printed": 27,
+   "chapter": "2",
+   "pdf_end": 61,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "isentropic relations: slide Ch.5 tr.32–35"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 38,
+   "level": 2,
+   "num": "2.4",
+   "title": "Conservation Principles for Systems and Control Volumes",
+   "kind": "section",
+   "pdf": 62,
+   "printed": 28,
+   "chapter": "2",
+   "pdf_end": 68,
+   "mods": {
+    "m05": {
+     "role": "background",
+     "basis": "conservation laws (AE1.030)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 39,
+   "level": 2,
+   "num": "2.5",
+   "title": "Speed of Sound & Mach Number",
+   "kind": "section",
+   "pdf": 69,
+   "printed": 35,
+   "chapter": "2",
+   "pdf_end": 71,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "speed of sound and Mach number: slide Ch.5 tr.14+"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 40,
+   "level": 2,
+   "num": "2.6",
+   "title": "Stagnation State",
+   "kind": "section",
+   "pdf": 72,
+   "printed": 38,
+   "chapter": "2",
+   "pdf_end": 74,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "stagnation state: slide Ch.5 tr.3–16"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 41,
+   "level": 2,
+   "num": "2.7",
+   "title": "Quasi-One-Dimensional Flow",
+   "kind": "section",
+   "pdf": 75,
+   "printed": 41,
+   "chapter": "2",
+   "pdf_end": 77,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "quasi-1D flow: slide Ch.5 tr.17–31"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 42,
+   "level": 2,
+   "num": "2.8",
+   "title": "Area–Mach Number Relationship",
+   "kind": "section",
+   "pdf": 78,
+   "printed": 44,
+   "chapter": "2",
+   "pdf_end": 78,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "area–Mach relation: slide Ch.5 tr.25–31"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 43,
+   "level": 2,
+   "num": "2.9",
+   "title": "Sonic Throat",
+   "kind": "section",
+   "pdf": 79,
+   "printed": 45,
+   "chapter": "2",
+   "pdf_end": 82,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "sonic throat: slide Ch.5 tr.36–38"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 44,
+   "level": 2,
+   "num": "2.10",
+   "title": "Waves in Supersonic Flow",
+   "kind": "section",
+   "pdf": 83,
+   "printed": 49,
+   "chapter": "2",
+   "pdf_end": 83,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "shocks: not in slide titles tr.3–59"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 45,
+   "level": 2,
+   "num": "2.11",
+   "title": "Normal Shocks",
+   "kind": "section",
+   "pdf": 84,
+   "printed": 50,
+   "chapter": "2",
+   "pdf_end": 87,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "normal shocks"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 46,
+   "level": 2,
+   "num": "2.12",
+   "title": "Oblique Shocks",
+   "kind": "section",
+   "pdf": 88,
+   "printed": 54,
+   "chapter": "2",
+   "pdf_end": 93,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "oblique shocks"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 47,
+   "level": 2,
+   "num": "2.13",
+   "title": "Conical Shocks",
+   "kind": "section",
+   "pdf": 94,
+   "printed": 60,
+   "chapter": "2",
+   "pdf_end": 96,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "conical shocks"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 48,
+   "level": 2,
+   "num": "2.14",
+   "title": "Expansion Waves",
+   "kind": "section",
+   "pdf": 97,
+   "printed": 63,
+   "chapter": "2",
+   "pdf_end": 100,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "expansion waves"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 49,
+   "level": 2,
+   "num": "2.15",
+   "title": "Frictionless, Constant-Area Duct Flow with Heat Transfer",
+   "kind": "section",
+   "pdf": 101,
+   "printed": 67,
+   "chapter": "2",
+   "pdf_end": 110,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "Rayleigh flow"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 50,
+   "level": 2,
+   "num": "2.16",
+   "title": "Adiabatic Flow of a Calorically Perfect Gas in a Constant-Area Duct with Friction",
+   "kind": "section",
+   "pdf": 111,
+   "printed": 77,
+   "chapter": "2",
+   "pdf_end": 124,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "Fanno flow"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 51,
+   "level": 2,
+   "num": "2.17",
+   "title": "Friction (Drag) Coefficient Cf and D'Arcy Friction Factor fD",
+   "kind": "section",
+   "pdf": 125,
+   "printed": 91,
+   "chapter": "2",
+   "pdf_end": 125,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "friction factor"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 52,
+   "level": 2,
+   "num": "2.18",
+   "title": "Dimensionless Parameters",
+   "kind": "section",
+   "pdf": 125,
+   "printed": 91,
+   "chapter": "2",
+   "pdf_end": 128,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "dimensionless parameters"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 53,
+   "level": 2,
+   "num": "2.19",
+   "title": "Fluid Impulse",
+   "kind": "section",
+   "pdf": 129,
+   "printed": 95,
+   "chapter": "2",
+   "pdf_end": 135,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "fluid impulse"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 54,
+   "level": 2,
+   "num": "2.20",
+   "title": "Summary of Fluid Impulse",
+   "kind": "section",
+   "pdf": 136,
+   "printed": 102,
+   "chapter": "2",
+   "pdf_end": 136,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "summary of fluid impulse"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 55,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 137,
+   "printed": 103,
+   "chapter": "2",
+   "pdf_end": 137,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "end-of-chapter References of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 56,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 137,
+   "printed": 103,
+   "chapter": "2",
+   "pdf_end": 146,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "end-of-chapter Problems of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 57,
+   "level": 1,
+   "num": "3",
+   "title": "Engine Thrust and Performance Parameters",
+   "kind": "chapter",
+   "pdf": 147,
+   "printed": 113,
+   "chapter": "3",
+   "pdf_end": 184,
+   "mods": {}
+  },
+  {
+   "i": 58,
+   "level": 2,
+   "num": "3.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 147,
+   "printed": 113,
+   "chapter": "3",
+   "pdf_end": 152,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "slide Ch.1 tr.7–10 Role of the engine, Principles of propulsion"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 59,
+   "level": 3,
+   "num": "3.1.1",
+   "title": "Takeoff Thrust",
+   "kind": "section",
+   "pdf": 153,
+   "printed": 119,
+   "chapter": "3",
+   "pdf_end": 153,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "slide Ch.1 tr.7–10 Role of the engine, Principles of propulsion"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 60,
+   "level": 2,
+   "num": "3.2",
+   "title": "Installed Thrust—Some Bookkeeping Issues on Thrust and Drag",
+   "kind": "section",
+   "pdf": 153,
+   "printed": 119,
+   "chapter": "3",
+   "pdf_end": 157,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "installed thrust: deeper than the slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 61,
+   "level": 2,
+   "num": "3.3",
+   "title": "Engine Thrust Based on the Sum of Component Impulse",
+   "kind": "section",
+   "pdf": 158,
+   "printed": 124,
+   "chapter": "3",
+   "pdf_end": 161,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "thrust from momentum (slide Ch.1 tr.8–10 Principles of propulsion)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 62,
+   "level": 2,
+   "num": "3.4",
+   "title": "Rocket Thrust",
+   "kind": "section",
+   "pdf": 162,
+   "printed": 128,
+   "chapter": "3",
+   "pdf_end": 162,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "rocket thrust: slide Ch.1 tr.14 non-airbreathing engines"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 63,
+   "level": 2,
+   "num": "3.5",
+   "title": "Airbreathing Engine Performance Parameters",
+   "kind": "section",
+   "pdf": 163,
+   "printed": 129,
+   "chapter": "3",
+   "pdf_end": 173,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "performance parameters (specific thrust, TSFC, efficiencies): slide Ch.1 tr.46–47 Definitions"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 64,
+   "level": 3,
+   "num": "3.5.1",
+   "title": "Specific Thrust",
+   "kind": "section",
+   "pdf": 163,
+   "printed": 129,
+   "chapter": "3",
+   "pdf_end": 163,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "performance parameters (specific thrust, TSFC, efficiencies): slide Ch.1 tr.46–47 Definitions"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 65,
+   "level": 3,
+   "num": "3.5.2",
+   "title": "Specific Fuel Consumption and Specific Impulse",
+   "kind": "section",
+   "pdf": 164,
+   "printed": 130,
+   "chapter": "3",
+   "pdf_end": 164,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "performance parameters (specific thrust, TSFC, efficiencies): slide Ch.1 tr.46–47 Definitions"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 66,
+   "level": 3,
+   "num": "3.5.3",
+   "title": "Thermal Efficiency",
+   "kind": "section",
+   "pdf": 165,
+   "printed": 131,
+   "chapter": "3",
+   "pdf_end": 167,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "performance parameters (specific thrust, TSFC, efficiencies): slide Ch.1 tr.46–47 Definitions"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 67,
+   "level": 3,
+   "num": "3.5.4",
+   "title": "Propulsive Efficiency",
+   "kind": "section",
+   "pdf": 168,
+   "printed": 134,
+   "chapter": "3",
+   "pdf_end": 170,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "performance parameters (specific thrust, TSFC, efficiencies): slide Ch.1 tr.46–47 Definitions"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 68,
+   "level": 3,
+   "num": "3.5.5",
+   "title": "Engine Overall Efficiency and Its Impact on Aircraft Range and Endurance",
+   "kind": "section",
+   "pdf": 171,
+   "printed": 137,
+   "chapter": "3",
+   "pdf_end": 173,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "performance parameters (specific thrust, TSFC, efficiencies): slide Ch.1 tr.46–47 Definitions"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 69,
+   "level": 2,
+   "num": "3.6",
+   "title": "Modern Engines, Their Architecture and Some Performance Characteristics",
+   "kind": "section",
+   "pdf": 174,
+   "printed": 140,
+   "chapter": "3",
+   "pdf_end": 176,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "modern engines: slide Ch.1 tr.48"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 70,
+   "level": 2,
+   "num": "3.7",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 177,
+   "printed": 143,
+   "chapter": "3",
+   "pdf_end": 177,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "summary"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 71,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 178,
+   "printed": 144,
+   "chapter": "3",
+   "pdf_end": 178,
+   "mods": {
+    "m01": {
+     "role": "ref",
+     "basis": "end-of-chapter References of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 72,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 178,
+   "printed": 144,
+   "chapter": "3",
+   "pdf_end": 184,
+   "mods": {
+    "m01": {
+     "role": "core",
+     "basis": "end-of-chapter Problems of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 73,
+   "level": 1,
+   "num": "4",
+   "title": "Gas Turbine Engine Cycle Analysis",
+   "kind": "chapter",
+   "pdf": 185,
+   "printed": 151,
+   "chapter": "4",
+   "pdf_end": 316,
+   "mods": {}
+  },
+  {
+   "i": 74,
+   "level": 2,
+   "num": "4.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 185,
+   "printed": 151,
+   "chapter": "4",
+   "pdf_end": 185,
+   "mods": {
+    "m02": {
+     "role": "core",
+     "basis": "cycle analysis introduction; slide Ch.2 tr.49–52"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 75,
+   "level": 2,
+   "num": "4.2",
+   "title": "The Gas Generator",
+   "kind": "section",
+   "pdf": 185,
+   "printed": 151,
+   "chapter": "4",
+   "pdf_end": 185,
+   "mods": {
+    "m02": {
+     "role": "core",
+     "basis": "gas generator; slide Ch.2 tr.3 (compression, combustion, expansion)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 76,
+   "level": 2,
+   "num": "4.3",
+   "title": "Aircraft Gas Turbine Engines",
+   "kind": "section",
+   "pdf": 186,
+   "printed": 152,
+   "chapter": "4",
+   "pdf_end": 258,
+   "mods": {
+    "m02": {
+     "role": "ref",
+     "basis": "aircraft gas turbine engines (parent of 4.3.x)"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 77,
+   "level": 3,
+   "num": "4.3.1",
+   "title": "The Turbojet Engine",
+   "kind": "section",
+   "pdf": 186,
+   "printed": 152,
+   "chapter": "4",
+   "pdf_end": 230,
+   "mods": {
+    "m02": {
+     "role": "core",
+     "basis": "turbojet cycle analysis ↔ slide Ch.2 tr.49–52 Ideal jet-propulsion cycles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 78,
+   "level": 3,
+   "num": "4.3.2",
+   "title": "The Turbojet Engine with an Afterburner",
+   "kind": "section",
+   "pdf": 231,
+   "printed": 197,
+   "chapter": "4",
+   "pdf_end": 242,
+   "mods": {
+    "m02": {
+     "role": "ref",
+     "basis": "afterburner ↔ slide Ch.2 tr.53–55 Modifications to turbojet engines"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 79,
+   "level": 3,
+   "num": "4.3.3",
+   "title": "The Turbofan Engine",
+   "kind": "section",
+   "pdf": 243,
+   "printed": 209,
+   "chapter": "4",
+   "pdf_end": 254,
+   "mods": {
+    "m02": {
+     "role": "ref",
+     "basis": "turbofan ↔ slide Ch.2 tr.53–55"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 80,
+   "level": 3,
+   "num": "4.3.4",
+   "title": "Ultra-High Bypass (UHB) Turbofan Engines",
+   "kind": "section",
+   "pdf": 255,
+   "printed": 221,
+   "chapter": "4",
+   "pdf_end": 258,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "UHB turbofan"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 81,
+   "level": 2,
+   "num": "4.4",
+   "title": "Analysis of a Mixed-Exhaust Turbofan Engine with an Afterburner",
+   "kind": "section",
+   "pdf": 259,
+   "printed": 225,
+   "chapter": "4",
+   "pdf_end": 274,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "mixed-exhaust turbofan with afterburner"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 82,
+   "level": 3,
+   "num": "4.4.1",
+   "title": "Mixer",
+   "kind": "section",
+   "pdf": 260,
+   "printed": 226,
+   "chapter": "4",
+   "pdf_end": 262,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "mixed-exhaust turbofan with afterburner"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 83,
+   "level": 3,
+   "num": "4.4.2",
+   "title": "Cycle Analysis",
+   "kind": "section",
+   "pdf": 263,
+   "printed": 229,
+   "chapter": "4",
+   "pdf_end": 274,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "mixed-exhaust turbofan with afterburner"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 84,
+   "level": 2,
+   "num": "4.5",
+   "title": "The Turboprop Engine",
+   "kind": "section",
+   "pdf": 275,
+   "printed": 241,
+   "chapter": "4",
+   "pdf_end": 293,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "turboprop"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 85,
+   "level": 3,
+   "num": "4.5.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 275,
+   "printed": 241,
+   "chapter": "4",
+   "pdf_end": 275,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "turboprop"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 86,
+   "level": 3,
+   "num": "4.5.2",
+   "title": "Propeller Theory",
+   "kind": "section",
+   "pdf": 276,
+   "printed": 242,
+   "chapter": "4",
+   "pdf_end": 282,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "turboprop"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 87,
+   "level": 3,
+   "num": "4.5.3",
+   "title": "Turboprop Cycle Analysis",
+   "kind": "section",
+   "pdf": 283,
+   "printed": 249,
+   "chapter": "4",
+   "pdf_end": 293,
+   "mods": {
+    "m02": {
+     "role": "optional",
+     "basis": "turboprop"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 88,
+   "level": 2,
+   "num": "4.6",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 294,
+   "printed": 260,
+   "chapter": "4",
+   "pdf_end": 294,
+   "mods": {
+    "m02": {
+     "role": "ref",
+     "basis": "summary"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 89,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 295,
+   "printed": 261,
+   "chapter": "4",
+   "pdf_end": 295,
+   "mods": {
+    "m02": {
+     "role": "ref",
+     "basis": "end-of-chapter References of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 90,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 295,
+   "printed": 261,
+   "chapter": "4",
+   "pdf_end": 316,
+   "mods": {
+    "m02": {
+     "role": "core",
+     "basis": "end-of-chapter Problems of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 91,
+   "level": 1,
+   "num": "5",
+   "title": "General Aviation and Uninhabited Aerial Vehicle Propulsion System",
+   "kind": "chapter",
+   "pdf": 317,
+   "printed": 283,
+   "chapter": "5",
+   "pdf_end": 360,
+   "mods": {}
+  },
+  {
+   "i": 92,
+   "level": 2,
+   "num": "5.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 317,
+   "printed": 283,
+   "chapter": "5",
+   "pdf_end": 317,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 93,
+   "level": 2,
+   "num": "5.2",
+   "title": "Cycle Analysis",
+   "kind": "section",
+   "pdf": 318,
+   "printed": 284,
+   "chapter": "5",
+   "pdf_end": 326,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 94,
+   "level": 3,
+   "num": "5.2.1",
+   "title": "Otto Cycle",
+   "kind": "section",
+   "pdf": 318,
+   "printed": 284,
+   "chapter": "5",
+   "pdf_end": 318,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 95,
+   "level": 3,
+   "num": "5.2.2",
+   "title": "Real Engine Cycles",
+   "kind": "section",
+   "pdf": 318,
+   "printed": 284,
+   "chapter": "5",
+   "pdf_end": 326,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 96,
+   "level": 2,
+   "num": "5.3",
+   "title": "Power and Efficiency",
+   "kind": "section",
+   "pdf": 327,
+   "printed": 293,
+   "chapter": "5",
+   "pdf_end": 328,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 97,
+   "level": 2,
+   "num": "5.4",
+   "title": "Engine Components and Classifications",
+   "kind": "section",
+   "pdf": 329,
+   "printed": 295,
+   "chapter": "5",
+   "pdf_end": 333,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 98,
+   "level": 3,
+   "num": "5.4.1",
+   "title": "Engine Components",
+   "kind": "section",
+   "pdf": 329,
+   "printed": 295,
+   "chapter": "5",
+   "pdf_end": 329,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 99,
+   "level": 3,
+   "num": "5.4.2",
+   "title": "Reciprocating Engine Classifications",
+   "kind": "section",
+   "pdf": 330,
+   "printed": 296,
+   "chapter": "5",
+   "pdf_end": 333,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 100,
+   "level": 2,
+   "num": "5.5",
+   "title": "Scaling of Aircraft Reciprocating Engines",
+   "kind": "section",
+   "pdf": 334,
+   "printed": 300,
+   "chapter": "5",
+   "pdf_end": 341,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 101,
+   "level": 3,
+   "num": "5.5.1",
+   "title": "Scaling of Aircraft Diesel Engines",
+   "kind": "section",
+   "pdf": 340,
+   "printed": 306,
+   "chapter": "5",
+   "pdf_end": 341,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 102,
+   "level": 2,
+   "num": "5.6",
+   "title": "Aircraft Engine Systems",
+   "kind": "section",
+   "pdf": 342,
+   "printed": 308,
+   "chapter": "5",
+   "pdf_end": 347,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 103,
+   "level": 3,
+   "num": "5.6.1",
+   "title": "Aviation Fuels and Engine Knock",
+   "kind": "section",
+   "pdf": 342,
+   "printed": 308,
+   "chapter": "5",
+   "pdf_end": 343,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 104,
+   "level": 3,
+   "num": "5.6.2",
+   "title": "Carburetion and Fuel Injection Systems",
+   "kind": "section",
+   "pdf": 344,
+   "printed": 310,
+   "chapter": "5",
+   "pdf_end": 344,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 105,
+   "level": 3,
+   "num": "5.6.3",
+   "title": "Ignition Systems",
+   "kind": "section",
+   "pdf": 345,
+   "printed": 311,
+   "chapter": "5",
+   "pdf_end": 346,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 106,
+   "level": 3,
+   "num": "5.6.4",
+   "title": "Lubrication Systems",
+   "kind": "section",
+   "pdf": 347,
+   "printed": 313,
+   "chapter": "5",
+   "pdf_end": 347,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 107,
+   "level": 3,
+   "num": "5.6.5",
+   "title": "Supercharging",
+   "kind": "section",
+   "pdf": 348,
+   "printed": 314,
+   "chapter": "5",
+   "pdf_end": 348,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 108,
+   "level": 2,
+   "num": "5.7",
+   "title": "Electric Engines",
+   "kind": "section",
+   "pdf": 348,
+   "printed": 314,
+   "chapter": "5",
+   "pdf_end": 352,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 109,
+   "level": 3,
+   "num": "5.7.1",
+   "title": "Electric Motors",
+   "kind": "section",
+   "pdf": 349,
+   "printed": 315,
+   "chapter": "5",
+   "pdf_end": 349,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 110,
+   "level": 3,
+   "num": "5.7.2",
+   "title": "Solar cells",
+   "kind": "section",
+   "pdf": 350,
+   "printed": 316,
+   "chapter": "5",
+   "pdf_end": 350,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 111,
+   "level": 3,
+   "num": "5.7.3",
+   "title": "Advanced Batteries",
+   "kind": "section",
+   "pdf": 350,
+   "printed": 316,
+   "chapter": "5",
+   "pdf_end": 351,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 112,
+   "level": 3,
+   "num": "5.7.4",
+   "title": "Fuel cells",
+   "kind": "section",
+   "pdf": 352,
+   "printed": 318,
+   "chapter": "5",
+   "pdf_end": 352,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 113,
+   "level": 3,
+   "num": "5.7.5",
+   "title": "State of the Art for Electric Propulsion – Future Technology",
+   "kind": "section",
+   "pdf": 353,
+   "printed": 319,
+   "chapter": "5",
+   "pdf_end": 353,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 114,
+   "level": 2,
+   "num": "5.8",
+   "title": "Propellers and Reduction Gears",
+   "kind": "section",
+   "pdf": 353,
+   "printed": 319,
+   "chapter": "5",
+   "pdf_end": 355,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 115,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 356,
+   "printed": 322,
+   "chapter": "5",
+   "pdf_end": 357,
+   "mods": {}
+  },
+  {
+   "i": 116,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 358,
+   "printed": 324,
+   "chapter": "5",
+   "pdf_end": 360,
+   "mods": {}
+  },
+  {
+   "i": 117,
+   "level": 1,
+   "num": "6",
+   "title": "Aircraft Engine Inlets and Nozzles",
+   "kind": "chapter",
+   "pdf": 361,
+   "printed": 327,
+   "chapter": "6",
+   "pdf_end": 462,
+   "mods": {}
+  },
+  {
+   "i": 118,
+   "level": 2,
+   "num": "6.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 361,
+   "printed": 327,
+   "chapter": "6",
+   "pdf_end": 361,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets and nozzles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 119,
+   "level": 2,
+   "num": "6.2",
+   "title": "The Flight Mach Number and Its Impact on Inlet Duct Geometry",
+   "kind": "section",
+   "pdf": 362,
+   "printed": 328,
+   "chapter": "6",
+   "pdf_end": 362,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 120,
+   "level": 2,
+   "num": "6.3",
+   "title": "Diffusers",
+   "kind": "section",
+   "pdf": 363,
+   "printed": 329,
+   "chapter": "6",
+   "pdf_end": 363,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 121,
+   "level": 2,
+   "num": "6.4",
+   "title": "An Ideal Diffuser",
+   "kind": "section",
+   "pdf": 364,
+   "printed": 330,
+   "chapter": "6",
+   "pdf_end": 364,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 122,
+   "level": 2,
+   "num": "6.5",
+   "title": "Real Diffusers and Their Stall Characteristics",
+   "kind": "section",
+   "pdf": 365,
+   "printed": 331,
+   "chapter": "6",
+   "pdf_end": 366,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 123,
+   "level": 2,
+   "num": "6.6",
+   "title": "Subsonic Diffuser Performance",
+   "kind": "section",
+   "pdf": 367,
+   "printed": 333,
+   "chapter": "6",
+   "pdf_end": 371,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 124,
+   "level": 2,
+   "num": "6.7",
+   "title": "Subsonic Cruise Inlet",
+   "kind": "section",
+   "pdf": 372,
+   "printed": 338,
+   "chapter": "6",
+   "pdf_end": 381,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 125,
+   "level": 2,
+   "num": "6.8",
+   "title": "Transition Ducts",
+   "kind": "section",
+   "pdf": 382,
+   "printed": 348,
+   "chapter": "6",
+   "pdf_end": 382,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 126,
+   "level": 2,
+   "num": "6.9",
+   "title": "An Interim Summary for Subsonic Inlets",
+   "kind": "section",
+   "pdf": 383,
+   "printed": 349,
+   "chapter": "6",
+   "pdf_end": 383,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 127,
+   "level": 2,
+   "num": "6.10",
+   "title": "Supersonic Inlets",
+   "kind": "section",
+   "pdf": 384,
+   "printed": 350,
+   "chapter": "6",
+   "pdf_end": 392,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 128,
+   "level": 3,
+   "num": "6.10.1",
+   "title": "Isentropic Convergent–Divergent Inlets",
+   "kind": "section",
+   "pdf": 384,
+   "printed": 350,
+   "chapter": "6",
+   "pdf_end": 386,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 129,
+   "level": 3,
+   "num": "6.10.2",
+   "title": "Methods to Start a Supersonic Convergent–Divergent Inlet",
+   "kind": "section",
+   "pdf": 387,
+   "printed": 353,
+   "chapter": "6",
+   "pdf_end": 392,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 130,
+   "level": 2,
+   "num": "6.11",
+   "title": "Normal Shock Inlets",
+   "kind": "section",
+   "pdf": 393,
+   "printed": 359,
+   "chapter": "6",
+   "pdf_end": 395,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 131,
+   "level": 2,
+   "num": "6.12",
+   "title": "External Compression Inlets",
+   "kind": "section",
+   "pdf": 396,
+   "printed": 362,
+   "chapter": "6",
+   "pdf_end": 401,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 132,
+   "level": 3,
+   "num": "6.12.1",
+   "title": "Optimum Ramp Angles",
+   "kind": "section",
+   "pdf": 399,
+   "printed": 365,
+   "chapter": "6",
+   "pdf_end": 399,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 133,
+   "level": 3,
+   "num": "6.12.2",
+   "title": "Design and Off-Design Operation",
+   "kind": "section",
+   "pdf": 400,
+   "printed": 366,
+   "chapter": "6",
+   "pdf_end": 401,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 134,
+   "level": 2,
+   "num": "6.13",
+   "title": "Variable Geometry—External Compression Inlets",
+   "kind": "section",
+   "pdf": 402,
+   "printed": 368,
+   "chapter": "6",
+   "pdf_end": 402,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 135,
+   "level": 3,
+   "num": "6.13.1",
+   "title": "Variable Ramps",
+   "kind": "section",
+   "pdf": 402,
+   "printed": 368,
+   "chapter": "6",
+   "pdf_end": 402,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 136,
+   "level": 2,
+   "num": "6.14",
+   "title": "Mixed-Compression Inlets",
+   "kind": "section",
+   "pdf": 402,
+   "printed": 368,
+   "chapter": "6",
+   "pdf_end": 403,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 137,
+   "level": 2,
+   "num": "6.15",
+   "title": "Supersonic Inlet Types and Their Performance—A Review",
+   "kind": "section",
+   "pdf": 404,
+   "printed": 370,
+   "chapter": "6",
+   "pdf_end": 404,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 138,
+   "level": 2,
+   "num": "6.16",
+   "title": "Standards for Supersonic Inlet Recovery",
+   "kind": "section",
+   "pdf": 405,
+   "printed": 371,
+   "chapter": "6",
+   "pdf_end": 406,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "inlets (6.1–6.16): supersonic inlet shocks; not in slide titles"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 139,
+   "level": 2,
+   "num": "6.17",
+   "title": "Exhaust Nozzle",
+   "kind": "section",
+   "pdf": 407,
+   "printed": 373,
+   "chapter": "6",
+   "pdf_end": 407,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "exhaust nozzle ↔ slide Ch.5 tr.39–49"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 140,
+   "level": 2,
+   "num": "6.18",
+   "title": "Gross Thrust",
+   "kind": "section",
+   "pdf": 407,
+   "printed": 373,
+   "chapter": "6",
+   "pdf_end": 407,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "gross thrust"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 141,
+   "level": 2,
+   "num": "6.19",
+   "title": "Nozzle Adiabatic Efficiency",
+   "kind": "section",
+   "pdf": 407,
+   "printed": 373,
+   "chapter": "6",
+   "pdf_end": 407,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "nozzle efficiency"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 142,
+   "level": 2,
+   "num": "6.20",
+   "title": "Nozzle Total Pressure Ratio",
+   "kind": "section",
+   "pdf": 408,
+   "printed": 374,
+   "chapter": "6",
+   "pdf_end": 408,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "nozzle pressure ratio"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 143,
+   "level": 2,
+   "num": "6.21",
+   "title": "Nozzle Pressure Ratio (NPR) and Critical Nozzle Pressure Ratio (NPRcrit.)",
+   "kind": "section",
+   "pdf": 408,
+   "printed": 374,
+   "chapter": "6",
+   "pdf_end": 409,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "NPR and critical NPR ↔ slide Ch.5 tr.50–55 Effect of back pressure"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 144,
+   "level": 2,
+   "num": "6.22",
+   "title": "Relation Between Nozzle Figures of Merit, ηn and n",
+   "kind": "section",
+   "pdf": 410,
+   "printed": 376,
+   "chapter": "6",
+   "pdf_end": 410,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "nozzle figures of merit"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 145,
+   "level": 2,
+   "num": "6.23",
+   "title": "A Convergent Nozzle or a De Laval?",
+   "kind": "section",
+   "pdf": 410,
+   "printed": 376,
+   "chapter": "6",
+   "pdf_end": 412,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "convergent nozzle or de Laval ↔ slide Ch.5 tr.56–59 converging nozzle"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 146,
+   "level": 2,
+   "num": "6.24",
+   "title": "The Effect of Boundary Layer Formation on Nozzle Internal Performance",
+   "kind": "section",
+   "pdf": 413,
+   "printed": 379,
+   "chapter": "6",
+   "pdf_end": 413,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 147,
+   "level": 2,
+   "num": "6.25",
+   "title": "Nozzle Exit Flow Velocity Coefficient",
+   "kind": "section",
+   "pdf": 413,
+   "printed": 379,
+   "chapter": "6",
+   "pdf_end": 414,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 148,
+   "level": 2,
+   "num": "6.26",
+   "title": "Effect of Flow Angularity on Gross Thrust",
+   "kind": "section",
+   "pdf": 415,
+   "printed": 381,
+   "chapter": "6",
+   "pdf_end": 418,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 149,
+   "level": 2,
+   "num": "6.27",
+   "title": "Nozzle Gross Thrust Coefficient Cfg",
+   "kind": "section",
+   "pdf": 419,
+   "printed": 385,
+   "chapter": "6",
+   "pdf_end": 419,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 150,
+   "level": 2,
+   "num": "6.28",
+   "title": "Overexpanded Nozzle Flow—Shock Losses",
+   "kind": "section",
+   "pdf": 420,
+   "printed": 386,
+   "chapter": "6",
+   "pdf_end": 422,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 151,
+   "level": 2,
+   "num": "6.29",
+   "title": "Nozzle Area Scheduling, A8 and A9/A8",
+   "kind": "section",
+   "pdf": 423,
+   "printed": 389,
+   "chapter": "6",
+   "pdf_end": 424,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 152,
+   "level": 2,
+   "num": "6.30",
+   "title": "Nozzle Exit Area Scheduling, A9/A8",
+   "kind": "section",
+   "pdf": 425,
+   "printed": 391,
+   "chapter": "6",
+   "pdf_end": 427,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 153,
+   "level": 2,
+   "num": "6.31",
+   "title": "Nozzle Cooling",
+   "kind": "section",
+   "pdf": 428,
+   "printed": 394,
+   "chapter": "6",
+   "pdf_end": 429,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 154,
+   "level": 2,
+   "num": "6.32",
+   "title": "Thrust Reverser and Thrust Vectoring",
+   "kind": "section",
+   "pdf": 430,
+   "printed": 396,
+   "chapter": "6",
+   "pdf_end": 434,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 155,
+   "level": 2,
+   "num": "6.33",
+   "title": "Hypersonic Nozzle",
+   "kind": "section",
+   "pdf": 435,
+   "printed": 401,
+   "chapter": "6",
+   "pdf_end": 437,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 156,
+   "level": 2,
+   "num": "6.34",
+   "title": "Exhaust Mixer and Gross Thrust Gain in a Mixed-Flow Turbofan Engine",
+   "kind": "section",
+   "pdf": 438,
+   "printed": 404,
+   "chapter": "6",
+   "pdf_end": 439,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 157,
+   "level": 2,
+   "num": "6.35",
+   "title": "Noise",
+   "kind": "section",
+   "pdf": 440,
+   "printed": 406,
+   "chapter": "6",
+   "pdf_end": 442,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 158,
+   "level": 3,
+   "num": "6.35.1",
+   "title": "Jet Noise",
+   "kind": "section",
+   "pdf": 441,
+   "printed": 407,
+   "chapter": "6",
+   "pdf_end": 441,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 159,
+   "level": 3,
+   "num": "6.35.2",
+   "title": "Chevron Nozzle",
+   "kind": "section",
+   "pdf": 442,
+   "printed": 408,
+   "chapter": "6",
+   "pdf_end": 442,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 160,
+   "level": 2,
+   "num": "6.36",
+   "title": "Nozzle-Turbine (Structural) Integration",
+   "kind": "section",
+   "pdf": 443,
+   "printed": 409,
+   "chapter": "6",
+   "pdf_end": 443,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 161,
+   "level": 2,
+   "num": "6.37",
+   "title": "Summary of Exhaust Systems",
+   "kind": "section",
+   "pdf": 444,
+   "printed": 410,
+   "chapter": "6",
+   "pdf_end": 444,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 162,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 445,
+   "printed": 411,
+   "chapter": "6",
+   "pdf_end": 446,
+   "mods": {
+    "m05": {
+     "role": "ref",
+     "basis": "end-of-chapter References of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 163,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 447,
+   "printed": 413,
+   "chapter": "6",
+   "pdf_end": 462,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "end-of-chapter Problems of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 164,
+   "level": 1,
+   "num": "7",
+   "title": "Combustion Chambers and Afterburners",
+   "kind": "chapter",
+   "pdf": 463,
+   "printed": 429,
+   "chapter": "7",
+   "pdf_end": 558,
+   "mods": {}
+  },
+  {
+   "i": 165,
+   "level": 2,
+   "num": "7.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 463,
+   "printed": 429,
+   "chapter": "7",
+   "pdf_end": 464,
+   "mods": {
+    "m04": {
+     "role": "ref",
+     "basis": "introduction"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 166,
+   "level": 2,
+   "num": "7.2",
+   "title": "Laws Governing Mixture of Gases",
+   "kind": "section",
+   "pdf": 465,
+   "printed": 431,
+   "chapter": "7",
+   "pdf_end": 467,
+   "mods": {
+    "m04": {
+     "role": "core",
+     "basis": "mixture of gases ↔ slide Ch.4 tr.3–12"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 167,
+   "level": 2,
+   "num": "7.3",
+   "title": "Chemical Reaction and Flame Temperature",
+   "kind": "section",
+   "pdf": 468,
+   "printed": 434,
+   "chapter": "7",
+   "pdf_end": 478,
+   "mods": {
+    "m04": {
+     "role": "core",
+     "basis": "chemical reaction and flame temperature ↔ slide Ch.4 tr.13–55"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 168,
+   "level": 2,
+   "num": "7.4",
+   "title": "Chemical Equilibrium and Chemical Composition",
+   "kind": "section",
+   "pdf": 479,
+   "printed": 445,
+   "chapter": "7",
+   "pdf_end": 492,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical equilibrium: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 169,
+   "level": 3,
+   "num": "7.4.1",
+   "title": "The Law of Mass Action",
+   "kind": "section",
+   "pdf": 480,
+   "printed": 446,
+   "chapter": "7",
+   "pdf_end": 481,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical equilibrium: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 170,
+   "level": 3,
+   "num": "7.4.2",
+   "title": "Equilibrium Constant KP",
+   "kind": "section",
+   "pdf": 482,
+   "printed": 448,
+   "chapter": "7",
+   "pdf_end": 492,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical equilibrium: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 171,
+   "level": 2,
+   "num": "7.5",
+   "title": "Chemical Kinetics",
+   "kind": "section",
+   "pdf": 493,
+   "printed": 459,
+   "chapter": "7",
+   "pdf_end": 506,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 172,
+   "level": 3,
+   "num": "7.5.1",
+   "title": "Ignition and Relight Envelope",
+   "kind": "section",
+   "pdf": 494,
+   "printed": 460,
+   "chapter": "7",
+   "pdf_end": 494,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 173,
+   "level": 3,
+   "num": "7.5.2",
+   "title": "Reaction Timescale",
+   "kind": "section",
+   "pdf": 495,
+   "printed": 461,
+   "chapter": "7",
+   "pdf_end": 495,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 174,
+   "level": 3,
+   "num": "7.5.3",
+   "title": "Flammability Limits",
+   "kind": "section",
+   "pdf": 495,
+   "printed": 461,
+   "chapter": "7",
+   "pdf_end": 497,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 175,
+   "level": 3,
+   "num": "7.5.4",
+   "title": "Flame Speed",
+   "kind": "section",
+   "pdf": 498,
+   "printed": 464,
+   "chapter": "7",
+   "pdf_end": 499,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 176,
+   "level": 3,
+   "num": "7.5.5",
+   "title": "Flame Stability",
+   "kind": "section",
+   "pdf": 500,
+   "printed": 466,
+   "chapter": "7",
+   "pdf_end": 503,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 177,
+   "level": 3,
+   "num": "7.5.6",
+   "title": "Spontaneous Ignition Delay Time",
+   "kind": "section",
+   "pdf": 504,
+   "printed": 470,
+   "chapter": "7",
+   "pdf_end": 505,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 178,
+   "level": 3,
+   "num": "7.5.7",
+   "title": "Combustion-Generated Pollutants",
+   "kind": "section",
+   "pdf": 506,
+   "printed": 472,
+   "chapter": "7",
+   "pdf_end": 506,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "chemical kinetics: not in slides"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 179,
+   "level": 2,
+   "num": "7.6",
+   "title": "Combustion Chamber",
+   "kind": "section",
+   "pdf": 507,
+   "printed": 473,
+   "chapter": "7",
+   "pdf_end": 531,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 180,
+   "level": 3,
+   "num": "7.6.1",
+   "title": "Combustion Chamber Total Pressure Loss",
+   "kind": "section",
+   "pdf": 508,
+   "printed": 474,
+   "chapter": "7",
+   "pdf_end": 516,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 181,
+   "level": 3,
+   "num": "7.6.2",
+   "title": "Combustor Flow Pattern and Temperature Profile",
+   "kind": "section",
+   "pdf": 517,
+   "printed": 483,
+   "chapter": "7",
+   "pdf_end": 518,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 182,
+   "level": 3,
+   "num": "7.6.3",
+   "title": "Combustor Liner and Its Cooling Methods",
+   "kind": "section",
+   "pdf": 519,
+   "printed": 485,
+   "chapter": "7",
+   "pdf_end": 521,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 183,
+   "level": 3,
+   "num": "7.6.4",
+   "title": "Combustion Efficiency",
+   "kind": "section",
+   "pdf": 522,
+   "printed": 488,
+   "chapter": "7",
+   "pdf_end": 522,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 184,
+   "level": 3,
+   "num": "7.6.5",
+   "title": "Some Combustor Sizing and Scaling Laws",
+   "kind": "section",
+   "pdf": 523,
+   "printed": 489,
+   "chapter": "7",
+   "pdf_end": 526,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 185,
+   "level": 3,
+   "num": "7.6.6",
+   "title": "Afterburner",
+   "kind": "section",
+   "pdf": 527,
+   "printed": 493,
+   "chapter": "7",
+   "pdf_end": 531,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion chamber design"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 186,
+   "level": 2,
+   "num": "7.7",
+   "title": "Combustion-Generated Pollutants",
+   "kind": "section",
+   "pdf": 532,
+   "printed": 498,
+   "chapter": "7",
+   "pdf_end": 542,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 187,
+   "level": 3,
+   "num": "7.7.1",
+   "title": "Greenhouse Gases, CO2 and H2O",
+   "kind": "section",
+   "pdf": 532,
+   "printed": 498,
+   "chapter": "7",
+   "pdf_end": 532,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 188,
+   "level": 3,
+   "num": "7.7.2",
+   "title": "Carbon Monoxide, CO, and Unburned Hydrocarbons, UHC",
+   "kind": "section",
+   "pdf": 533,
+   "printed": 499,
+   "chapter": "7",
+   "pdf_end": 533,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 189,
+   "level": 3,
+   "num": "7.7.3",
+   "title": "Oxides of Nitrogen, NO and NO2",
+   "kind": "section",
+   "pdf": 534,
+   "printed": 500,
+   "chapter": "7",
+   "pdf_end": 534,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 190,
+   "level": 3,
+   "num": "7.7.4",
+   "title": "Smoke",
+   "kind": "section",
+   "pdf": 535,
+   "printed": 501,
+   "chapter": "7",
+   "pdf_end": 535,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 191,
+   "level": 3,
+   "num": "7.7.5",
+   "title": "Engine Emission Standards",
+   "kind": "section",
+   "pdf": 536,
+   "printed": 502,
+   "chapter": "7",
+   "pdf_end": 536,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 192,
+   "level": 3,
+   "num": "7.7.6",
+   "title": "Low-Emission Combustors",
+   "kind": "section",
+   "pdf": 537,
+   "printed": 503,
+   "chapter": "7",
+   "pdf_end": 540,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 193,
+   "level": 3,
+   "num": "7.7.7",
+   "title": "Impact of NO on the Ozone Layer",
+   "kind": "section",
+   "pdf": 541,
+   "printed": 507,
+   "chapter": "7",
+   "pdf_end": 542,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "pollutants"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 194,
+   "level": 2,
+   "num": "7.8",
+   "title": "Aviation Fuels",
+   "kind": "section",
+   "pdf": 543,
+   "printed": 509,
+   "chapter": "7",
+   "pdf_end": 546,
+   "mods": {
+    "m04": {
+     "role": "ref",
+     "basis": "aviation fuels ↔ slide Ch.4 tr.3–12 FUELS"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 195,
+   "level": 2,
+   "num": "7.9",
+   "title": "Alternative “Drop-In” Jet Fuels (AJFs)",
+   "kind": "section",
+   "pdf": 547,
+   "printed": 513,
+   "chapter": "7",
+   "pdf_end": 548,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "alternative jet fuels"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 196,
+   "level": 2,
+   "num": "7.10",
+   "title": "Combustion Instability: Screech and Rumble",
+   "kind": "section",
+   "pdf": 549,
+   "printed": 515,
+   "chapter": "7",
+   "pdf_end": 549,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion instability"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 197,
+   "level": 3,
+   "num": "7.10.1",
+   "title": "Screech Damper",
+   "kind": "section",
+   "pdf": 549,
+   "printed": 515,
+   "chapter": "7",
+   "pdf_end": 549,
+   "mods": {
+    "m04": {
+     "role": "optional",
+     "basis": "combustion instability"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 198,
+   "level": 2,
+   "num": "7.11",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 550,
+   "printed": 516,
+   "chapter": "7",
+   "pdf_end": 550,
+   "mods": {
+    "m04": {
+     "role": "ref",
+     "basis": "summary"
+    }
+   },
+   "status": "in-scope"
+  },
+  {
+   "i": 199,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 550,
+   "printed": 516,
+   "chapter": "7",
+   "pdf_end": 551,
+   "mods": {
+    "m04": {
+     "role": "ref",
+     "basis": "end-of-chapter References of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 200,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 552,
+   "printed": 518,
+   "chapter": "7",
+   "pdf_end": 558,
+   "mods": {
+    "m04": {
+     "role": "core",
+     "basis": "end-of-chapter Problems of an assigned chapter"
+    }
+   }
+  },
+  {
+   "i": 201,
+   "level": 1,
+   "num": "8",
+   "title": "Axial Compressor Aerodynamics",
+   "kind": "chapter",
+   "pdf": 559,
+   "printed": 525,
+   "chapter": "8",
+   "pdf_end": 684,
+   "mods": {}
+  },
+  {
+   "i": 202,
+   "level": 2,
+   "num": "8.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 559,
+   "printed": 525,
+   "chapter": "8",
+   "pdf_end": 559,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 203,
+   "level": 2,
+   "num": "8.2",
+   "title": "The Geometry",
+   "kind": "section",
+   "pdf": 559,
+   "printed": 525,
+   "chapter": "8",
+   "pdf_end": 559,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 204,
+   "level": 2,
+   "num": "8.3",
+   "title": "Rotor and Stator Frames of Reference",
+   "kind": "section",
+   "pdf": 560,
+   "printed": 526,
+   "chapter": "8",
+   "pdf_end": 562,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 205,
+   "level": 2,
+   "num": "8.4",
+   "title": "The Euler Turbine Equation",
+   "kind": "section",
+   "pdf": 563,
+   "printed": 529,
+   "chapter": "8",
+   "pdf_end": 563,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 206,
+   "level": 2,
+   "num": "8.5",
+   "title": "Axial-Flow Versus Radial-Flow Machines",
+   "kind": "section",
+   "pdf": 564,
+   "printed": 530,
+   "chapter": "8",
+   "pdf_end": 565,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 207,
+   "level": 2,
+   "num": "8.6",
+   "title": "Axial-Flow Compressors and Fans",
+   "kind": "section",
+   "pdf": 566,
+   "printed": 532,
+   "chapter": "8",
+   "pdf_end": 626,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 208,
+   "level": 3,
+   "num": "8.6.1",
+   "title": "Definition of Flow Angles",
+   "kind": "section",
+   "pdf": 568,
+   "printed": 534,
+   "chapter": "8",
+   "pdf_end": 569,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 209,
+   "level": 3,
+   "num": "8.6.2",
+   "title": "Stage Parameters",
+   "kind": "section",
+   "pdf": 570,
+   "printed": 536,
+   "chapter": "8",
+   "pdf_end": 582,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 210,
+   "level": 3,
+   "num": "8.6.3",
+   "title": "Cascade Aerodynamics",
+   "kind": "section",
+   "pdf": 583,
+   "printed": 549,
+   "chapter": "8",
+   "pdf_end": 596,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 211,
+   "level": 3,
+   "num": "8.6.4",
+   "title": "Aerodynamic Forces on Compressor Blades",
+   "kind": "section",
+   "pdf": 597,
+   "printed": 563,
+   "chapter": "8",
+   "pdf_end": 604,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 212,
+   "level": 3,
+   "num": "8.6.5",
+   "title": "Three-Dimensional Flow",
+   "kind": "section",
+   "pdf": 605,
+   "printed": 571,
+   "chapter": "8",
+   "pdf_end": 626,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 213,
+   "level": 2,
+   "num": "8.7",
+   "title": "Compressor Performance Map",
+   "kind": "section",
+   "pdf": 627,
+   "printed": 593,
+   "chapter": "8",
+   "pdf_end": 628,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 214,
+   "level": 2,
+   "num": "8.8",
+   "title": "Compressor Instability – Stall and Surge",
+   "kind": "section",
+   "pdf": 629,
+   "printed": 595,
+   "chapter": "8",
+   "pdf_end": 632,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 215,
+   "level": 2,
+   "num": "8.9",
+   "title": "Multistage Compressors and Their Operating Line",
+   "kind": "section",
+   "pdf": 633,
+   "printed": 599,
+   "chapter": "8",
+   "pdf_end": 637,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 216,
+   "level": 2,
+   "num": "8.10",
+   "title": "Multistage Compressor Stalling Pressure Rise and Stall Margin",
+   "kind": "section",
+   "pdf": 638,
+   "printed": 604,
+   "chapter": "8",
+   "pdf_end": 645,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 217,
+   "level": 2,
+   "num": "8.11",
+   "title": "Multistage Compressor Starting Problem",
+   "kind": "section",
+   "pdf": 646,
+   "printed": 612,
+   "chapter": "8",
+   "pdf_end": 648,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 218,
+   "level": 2,
+   "num": "8.12",
+   "title": "The Effect of Inlet Flow Condition on Compressor Performance",
+   "kind": "section",
+   "pdf": 649,
+   "printed": 615,
+   "chapter": "8",
+   "pdf_end": 653,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 219,
+   "level": 2,
+   "num": "8.13",
+   "title": "Isometric and Cutaway Views of Axial-Flow Compressor Hardware",
+   "kind": "section",
+   "pdf": 654,
+   "printed": 620,
+   "chapter": "8",
+   "pdf_end": 654,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 220,
+   "level": 2,
+   "num": "8.14",
+   "title": "Compressor Design Parameters and Principles",
+   "kind": "section",
+   "pdf": 654,
+   "printed": 620,
+   "chapter": "8",
+   "pdf_end": 669,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 221,
+   "level": 3,
+   "num": "8.14.1",
+   "title": "Blade Design – Blade Selection",
+   "kind": "section",
+   "pdf": 660,
+   "printed": 626,
+   "chapter": "8",
+   "pdf_end": 660,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 222,
+   "level": 3,
+   "num": "8.14.2",
+   "title": "Compressor Annulus Design",
+   "kind": "section",
+   "pdf": 661,
+   "printed": 627,
+   "chapter": "8",
+   "pdf_end": 661,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 223,
+   "level": 3,
+   "num": "8.14.3",
+   "title": "Compressor Stall Margin",
+   "kind": "section",
+   "pdf": 662,
+   "printed": 628,
+   "chapter": "8",
+   "pdf_end": 669,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 224,
+   "level": 2,
+   "num": "8.15",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 670,
+   "printed": 636,
+   "chapter": "8",
+   "pdf_end": 671,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 225,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 672,
+   "printed": 638,
+   "chapter": "8",
+   "pdf_end": 673,
+   "mods": {}
+  },
+  {
+   "i": 226,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 674,
+   "printed": 640,
+   "chapter": "8",
+   "pdf_end": 684,
+   "mods": {}
+  },
+  {
+   "i": 227,
+   "level": 1,
+   "num": "9",
+   "title": "Centrifugal Compressor Aerodynamics",
+   "kind": "chapter",
+   "pdf": 685,
+   "printed": 651,
+   "chapter": "9",
+   "pdf_end": 718,
+   "mods": {}
+  },
+  {
+   "i": 228,
+   "level": 2,
+   "num": "9.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 685,
+   "printed": 651,
+   "chapter": "9",
+   "pdf_end": 685,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 229,
+   "level": 2,
+   "num": "9.2",
+   "title": "Centrifugal Compressors",
+   "kind": "section",
+   "pdf": 686,
+   "printed": 652,
+   "chapter": "9",
+   "pdf_end": 699,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 230,
+   "level": 2,
+   "num": "9.3",
+   "title": "Radial Diffuser",
+   "kind": "section",
+   "pdf": 700,
+   "printed": 666,
+   "chapter": "9",
+   "pdf_end": 703,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 231,
+   "level": 2,
+   "num": "9.4",
+   "title": "Inducer",
+   "kind": "section",
+   "pdf": 704,
+   "printed": 670,
+   "chapter": "9",
+   "pdf_end": 706,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 232,
+   "level": 2,
+   "num": "9.5",
+   "title": "Inlet Guide Vanes (IGVs) and Inducer-Less Impellers",
+   "kind": "section",
+   "pdf": 707,
+   "printed": 673,
+   "chapter": "9",
+   "pdf_end": 707,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 233,
+   "level": 2,
+   "num": "9.6",
+   "title": "Impeller Exit Flow and Blockage Effects",
+   "kind": "section",
+   "pdf": 707,
+   "printed": 673,
+   "chapter": "9",
+   "pdf_end": 707,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 234,
+   "level": 2,
+   "num": "9.7",
+   "title": "Efficiency and Performance",
+   "kind": "section",
+   "pdf": 708,
+   "printed": 674,
+   "chapter": "9",
+   "pdf_end": 710,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 235,
+   "level": 2,
+   "num": "9.8",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 711,
+   "printed": 677,
+   "chapter": "9",
+   "pdf_end": 711,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 236,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 712,
+   "printed": 678,
+   "chapter": "9",
+   "pdf_end": 712,
+   "mods": {}
+  },
+  {
+   "i": 237,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 712,
+   "printed": 678,
+   "chapter": "9",
+   "pdf_end": 718,
+   "mods": {}
+  },
+  {
+   "i": 238,
+   "level": 1,
+   "num": "10",
+   "title": "Aerothermo-dynamics of Gas Turbines",
+   "kind": "chapter",
+   "pdf": 719,
+   "printed": 685,
+   "chapter": "10",
+   "pdf_end": 800,
+   "mods": {}
+  },
+  {
+   "i": 239,
+   "level": 2,
+   "num": "10.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 719,
+   "printed": 685,
+   "chapter": "10",
+   "pdf_end": 719,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 240,
+   "level": 2,
+   "num": "10.2",
+   "title": "Axial-Flow Turbines",
+   "kind": "section",
+   "pdf": 719,
+   "printed": 685,
+   "chapter": "10",
+   "pdf_end": 766,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 241,
+   "level": 3,
+   "num": "10.2.1",
+   "title": "Optimal Nozzle Exit Swirl Mach Number",
+   "kind": "section",
+   "pdf": 732,
+   "printed": 698,
+   "chapter": "10",
+   "pdf_end": 735,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 242,
+   "level": 3,
+   "num": "10.2.2",
+   "title": "Turbine Blade Losses",
+   "kind": "section",
+   "pdf": 736,
+   "printed": 702,
+   "chapter": "10",
+   "pdf_end": 747,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 243,
+   "level": 3,
+   "num": "10.2.3",
+   "title": "Optimum Solidity",
+   "kind": "section",
+   "pdf": 748,
+   "printed": 714,
+   "chapter": "10",
+   "pdf_end": 751,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 244,
+   "level": 3,
+   "num": "10.2.4",
+   "title": "Turbine Cooling",
+   "kind": "section",
+   "pdf": 752,
+   "printed": 718,
+   "chapter": "10",
+   "pdf_end": 766,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 245,
+   "level": 2,
+   "num": "10.3",
+   "title": "Turbine Performance Map",
+   "kind": "section",
+   "pdf": 767,
+   "printed": 733,
+   "chapter": "10",
+   "pdf_end": 767,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 246,
+   "level": 2,
+   "num": "10.4",
+   "title": "The Effect of Cooling on Turbine Efficiency",
+   "kind": "section",
+   "pdf": 768,
+   "printed": 734,
+   "chapter": "10",
+   "pdf_end": 768,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 247,
+   "level": 2,
+   "num": "10.5",
+   "title": "Turbine Blade Profile Design",
+   "kind": "section",
+   "pdf": 769,
+   "printed": 735,
+   "chapter": "10",
+   "pdf_end": 776,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 248,
+   "level": 3,
+   "num": "10.5.1",
+   "title": "Angles",
+   "kind": "section",
+   "pdf": 770,
+   "printed": 736,
+   "chapter": "10",
+   "pdf_end": 770,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 249,
+   "level": 3,
+   "num": "10.5.2",
+   "title": "Other Blade Geometrical Parameters",
+   "kind": "section",
+   "pdf": 771,
+   "printed": 737,
+   "chapter": "10",
+   "pdf_end": 771,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 250,
+   "level": 3,
+   "num": "10.5.3",
+   "title": "Throat Sizing",
+   "kind": "section",
+   "pdf": 771,
+   "printed": 737,
+   "chapter": "10",
+   "pdf_end": 771,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 251,
+   "level": 3,
+   "num": "10.5.4",
+   "title": "Throat Reynolds Number Reo",
+   "kind": "section",
+   "pdf": 772,
+   "printed": 738,
+   "chapter": "10",
+   "pdf_end": 772,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 252,
+   "level": 3,
+   "num": "10.5.5",
+   "title": "Turbine Blade Profile Design",
+   "kind": "section",
+   "pdf": 772,
+   "printed": 738,
+   "chapter": "10",
+   "pdf_end": 772,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 253,
+   "level": 3,
+   "num": "10.5.6",
+   "title": "Blade Vibration and Campbell Diagram",
+   "kind": "section",
+   "pdf": 773,
+   "printed": 739,
+   "chapter": "10",
+   "pdf_end": 773,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 254,
+   "level": 3,
+   "num": "10.5.7",
+   "title": "Turbine Blade and Disk Material Selection and Design Criteria",
+   "kind": "section",
+   "pdf": 774,
+   "printed": 740,
+   "chapter": "10",
+   "pdf_end": 776,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 255,
+   "level": 2,
+   "num": "10.6",
+   "title": "Stresses in Turbine Blades and Disks and Useful Life Estimation",
+   "kind": "section",
+   "pdf": 777,
+   "printed": 743,
+   "chapter": "10",
+   "pdf_end": 779,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 256,
+   "level": 2,
+   "num": "10.7",
+   "title": "Axial-Flow Turbine Design and Practices",
+   "kind": "section",
+   "pdf": 780,
+   "printed": 746,
+   "chapter": "10",
+   "pdf_end": 787,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 257,
+   "level": 2,
+   "num": "10.8",
+   "title": "Gas Turbine Design Summary",
+   "kind": "section",
+   "pdf": 788,
+   "printed": 754,
+   "chapter": "10",
+   "pdf_end": 788,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 258,
+   "level": 2,
+   "num": "10.9",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 789,
+   "printed": 755,
+   "chapter": "10",
+   "pdf_end": 790,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 259,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 791,
+   "printed": 757,
+   "chapter": "10",
+   "pdf_end": 792,
+   "mods": {}
+  },
+  {
+   "i": 260,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 793,
+   "printed": 759,
+   "chapter": "10",
+   "pdf_end": 800,
+   "mods": {}
+  },
+  {
+   "i": 261,
+   "level": 1,
+   "num": "11",
+   "title": "Aircraft Engine Component Matching and Off-Design Analysis",
+   "kind": "chapter",
+   "pdf": 801,
+   "printed": 767,
+   "chapter": "11",
+   "pdf_end": 854,
+   "mods": {}
+  },
+  {
+   "i": 262,
+   "level": 2,
+   "num": "11.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 801,
+   "printed": 767,
+   "chapter": "11",
+   "pdf_end": 801,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 263,
+   "level": 2,
+   "num": "11.2",
+   "title": "Engine (Steady-State) Component Matching",
+   "kind": "section",
+   "pdf": 802,
+   "printed": 768,
+   "chapter": "11",
+   "pdf_end": 818,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 264,
+   "level": 3,
+   "num": "11.2.1",
+   "title": "Engine Corrected Parameters",
+   "kind": "section",
+   "pdf": 803,
+   "printed": 769,
+   "chapter": "11",
+   "pdf_end": 803,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 265,
+   "level": 3,
+   "num": "11.2.2",
+   "title": "Inlet-Compressor Matching",
+   "kind": "section",
+   "pdf": 803,
+   "printed": 769,
+   "chapter": "11",
+   "pdf_end": 804,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 266,
+   "level": 3,
+   "num": "11.2.3",
+   "title": "Compressor–Combustor Matching",
+   "kind": "section",
+   "pdf": 805,
+   "printed": 771,
+   "chapter": "11",
+   "pdf_end": 806,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 267,
+   "level": 3,
+   "num": "11.2.4",
+   "title": "Combustor–Turbine Matching",
+   "kind": "section",
+   "pdf": 807,
+   "printed": 773,
+   "chapter": "11",
+   "pdf_end": 807,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 268,
+   "level": 3,
+   "num": "11.2.5",
+   "title": "Compressor–Turbine Matching and Gas Generator Pumping Characteristics",
+   "kind": "section",
+   "pdf": 808,
+   "printed": 774,
+   "chapter": "11",
+   "pdf_end": 816,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 269,
+   "level": 3,
+   "num": "11.2.6",
+   "title": "Turbine–Afterburner–(Variable-Geometry) Nozzle Matching",
+   "kind": "section",
+   "pdf": 817,
+   "printed": 783,
+   "chapter": "11",
+   "pdf_end": 818,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 270,
+   "level": 2,
+   "num": "11.3",
+   "title": "Engine Off-Design Analysis",
+   "kind": "section",
+   "pdf": 819,
+   "printed": 785,
+   "chapter": "11",
+   "pdf_end": 831,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 271,
+   "level": 3,
+   "num": "11.3.1",
+   "title": "Off-Design Analysis of a Turbojet Engine",
+   "kind": "section",
+   "pdf": 820,
+   "printed": 786,
+   "chapter": "11",
+   "pdf_end": 822,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 272,
+   "level": 3,
+   "num": "11.3.2",
+   "title": "Off-Design Analysis of an Afterburning Turbojet Engine",
+   "kind": "section",
+   "pdf": 823,
+   "printed": 789,
+   "chapter": "11",
+   "pdf_end": 826,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 273,
+   "level": 3,
+   "num": "11.3.3",
+   "title": "Off-Design Analysis of a Separate-Flow Turbofan (Two-Spool) Engine",
+   "kind": "section",
+   "pdf": 827,
+   "printed": 793,
+   "chapter": "11",
+   "pdf_end": 831,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 274,
+   "level": 2,
+   "num": "11.4",
+   "title": "Unchoked Nozzles and Other Off-Design Iteration Strategies",
+   "kind": "section",
+   "pdf": 832,
+   "printed": 798,
+   "chapter": "11",
+   "pdf_end": 835,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 275,
+   "level": 3,
+   "num": "11.4.1",
+   "title": "Unchoked Exhaust Nozzle",
+   "kind": "section",
+   "pdf": 833,
+   "printed": 799,
+   "chapter": "11",
+   "pdf_end": 833,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 276,
+   "level": 3,
+   "num": "11.4.2",
+   "title": "Unchoked Turbine Nozzle",
+   "kind": "section",
+   "pdf": 834,
+   "printed": 800,
+   "chapter": "11",
+   "pdf_end": 834,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 277,
+   "level": 3,
+   "num": "11.4.3",
+   "title": "Turbine Efficiency at Off-Design",
+   "kind": "section",
+   "pdf": 835,
+   "printed": 801,
+   "chapter": "11",
+   "pdf_end": 835,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 278,
+   "level": 3,
+   "num": "11.4.4",
+   "title": "Variable Gas Properties",
+   "kind": "section",
+   "pdf": 835,
+   "printed": 801,
+   "chapter": "11",
+   "pdf_end": 835,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 279,
+   "level": 2,
+   "num": "11.5",
+   "title": "Principles of Engine Performance Testing",
+   "kind": "section",
+   "pdf": 836,
+   "printed": 802,
+   "chapter": "11",
+   "pdf_end": 843,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 280,
+   "level": 3,
+   "num": "11.5.1",
+   "title": "Force of Inlet Bellmouth on Engine Thrust Stand",
+   "kind": "section",
+   "pdf": 838,
+   "printed": 804,
+   "chapter": "11",
+   "pdf_end": 843,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 281,
+   "level": 2,
+   "num": "11.6",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 844,
+   "printed": 810,
+   "chapter": "11",
+   "pdf_end": 845,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 282,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 846,
+   "printed": 812,
+   "chapter": "11",
+   "pdf_end": 846,
+   "mods": {}
+  },
+  {
+   "i": 283,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 847,
+   "printed": 813,
+   "chapter": "11",
+   "pdf_end": 854,
+   "mods": {}
+  },
+  {
+   "i": 284,
+   "level": 1,
+   "num": "12",
+   "title": "Chemical Rocket and Hypersonic Propulsion",
+   "kind": "chapter",
+   "pdf": 855,
+   "printed": 821,
+   "chapter": "12",
+   "pdf_end": 936,
+   "mods": {}
+  },
+  {
+   "i": 285,
+   "level": 2,
+   "num": "12.1",
+   "title": "Introduction",
+   "kind": "section",
+   "pdf": 855,
+   "printed": 821,
+   "chapter": "12",
+   "pdf_end": 856,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 286,
+   "level": 2,
+   "num": "12.2",
+   "title": "From Takeoff to Earth Orbit",
+   "kind": "section",
+   "pdf": 857,
+   "printed": 823,
+   "chapter": "12",
+   "pdf_end": 857,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 287,
+   "level": 2,
+   "num": "12.3",
+   "title": "Chemical Rockets",
+   "kind": "section",
+   "pdf": 858,
+   "printed": 824,
+   "chapter": "12",
+   "pdf_end": 859,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 288,
+   "level": 2,
+   "num": "12.4",
+   "title": "Chemical Rocket Applications",
+   "kind": "section",
+   "pdf": 860,
+   "printed": 826,
+   "chapter": "12",
+   "pdf_end": 860,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 289,
+   "level": 3,
+   "num": "12.4.1",
+   "title": "Launch Engines",
+   "kind": "section",
+   "pdf": 860,
+   "printed": 826,
+   "chapter": "12",
+   "pdf_end": 860,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 290,
+   "level": 3,
+   "num": "12.4.2",
+   "title": "Boost Engines",
+   "kind": "section",
+   "pdf": 860,
+   "printed": 826,
+   "chapter": "12",
+   "pdf_end": 860,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 291,
+   "level": 3,
+   "num": "12.4.3",
+   "title": "Space Maneuver Engines",
+   "kind": "section",
+   "pdf": 861,
+   "printed": 827,
+   "chapter": "12",
+   "pdf_end": 861,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 292,
+   "level": 3,
+   "num": "12.4.4",
+   "title": "Attitude Control Rockets",
+   "kind": "section",
+   "pdf": 861,
+   "printed": 827,
+   "chapter": "12",
+   "pdf_end": 861,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 293,
+   "level": 2,
+   "num": "12.5",
+   "title": "New Parameters in Rocket Propulsion",
+   "kind": "section",
+   "pdf": 861,
+   "printed": 827,
+   "chapter": "12",
+   "pdf_end": 863,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 294,
+   "level": 2,
+   "num": "12.6",
+   "title": "Thrust Coefficient, CF",
+   "kind": "section",
+   "pdf": 864,
+   "printed": 830,
+   "chapter": "12",
+   "pdf_end": 866,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 295,
+   "level": 2,
+   "num": "12.7",
+   "title": "Characteristic Velocity, c*",
+   "kind": "section",
+   "pdf": 867,
+   "printed": 833,
+   "chapter": "12",
+   "pdf_end": 868,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 296,
+   "level": 2,
+   "num": "12.8",
+   "title": "Flight Performance",
+   "kind": "section",
+   "pdf": 869,
+   "printed": 835,
+   "chapter": "12",
+   "pdf_end": 878,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 297,
+   "level": 2,
+   "num": "12.9",
+   "title": "Multistage Rockets",
+   "kind": "section",
+   "pdf": 879,
+   "printed": 845,
+   "chapter": "12",
+   "pdf_end": 880,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 298,
+   "level": 2,
+   "num": "12.10",
+   "title": "Propulsive and Overall Efficiencies",
+   "kind": "section",
+   "pdf": 881,
+   "printed": 847,
+   "chapter": "12",
+   "pdf_end": 882,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 299,
+   "level": 2,
+   "num": "12.11",
+   "title": "Chemical Rocket Combustion Chamber",
+   "kind": "section",
+   "pdf": 883,
+   "printed": 849,
+   "chapter": "12",
+   "pdf_end": 895,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 300,
+   "level": 3,
+   "num": "12.11.1",
+   "title": "Liquid Propellant Combustion Chambers",
+   "kind": "section",
+   "pdf": 883,
+   "printed": 849,
+   "chapter": "12",
+   "pdf_end": 888,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 301,
+   "level": 3,
+   "num": "12.11.2",
+   "title": "Solid Propellant Combustion Chambers",
+   "kind": "section",
+   "pdf": 889,
+   "printed": 855,
+   "chapter": "12",
+   "pdf_end": 895,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 302,
+   "level": 2,
+   "num": "12.12",
+   "title": "Thrust Chamber Cooling",
+   "kind": "section",
+   "pdf": 896,
+   "printed": 862,
+   "chapter": "12",
+   "pdf_end": 902,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 303,
+   "level": 3,
+   "num": "12.12.1",
+   "title": "Liquid Propellant Thrust Chambers",
+   "kind": "section",
+   "pdf": 896,
+   "printed": 862,
+   "chapter": "12",
+   "pdf_end": 901,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 304,
+   "level": 3,
+   "num": "12.12.2",
+   "title": "Cooling of Solid Propellant Thrust Chambers",
+   "kind": "section",
+   "pdf": 902,
+   "printed": 868,
+   "chapter": "12",
+   "pdf_end": 902,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 305,
+   "level": 2,
+   "num": "12.13",
+   "title": "Combustor Volume and Shape",
+   "kind": "section",
+   "pdf": 903,
+   "printed": 869,
+   "chapter": "12",
+   "pdf_end": 903,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 306,
+   "level": 2,
+   "num": "12.14",
+   "title": "Rocket Nozzles",
+   "kind": "section",
+   "pdf": 904,
+   "printed": 870,
+   "chapter": "12",
+   "pdf_end": 917,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 307,
+   "level": 3,
+   "num": "12.14.1",
+   "title": "Multiphase Flow in Rocket Nozzles",
+   "kind": "section",
+   "pdf": 908,
+   "printed": 874,
+   "chapter": "12",
+   "pdf_end": 916,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 308,
+   "level": 3,
+   "num": "12.14.2",
+   "title": "Flow Expansion in Rocket Nozzles",
+   "kind": "section",
+   "pdf": 917,
+   "printed": 883,
+   "chapter": "12",
+   "pdf_end": 917,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 309,
+   "level": 3,
+   "num": "12.14.3",
+   "title": "Thrust Vectoring Nozzles",
+   "kind": "section",
+   "pdf": 918,
+   "printed": 884,
+   "chapter": "12",
+   "pdf_end": 918,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 310,
+   "level": 2,
+   "num": "12.15",
+   "title": "High-Speed Airbreathing Engines",
+   "kind": "section",
+   "pdf": 918,
+   "printed": 884,
+   "chapter": "12",
+   "pdf_end": 928,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 311,
+   "level": 3,
+   "num": "12.15.1",
+   "title": "Supersonic Combustion Ramjet",
+   "kind": "section",
+   "pdf": 925,
+   "printed": 891,
+   "chapter": "12",
+   "pdf_end": 928,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 312,
+   "level": 2,
+   "num": "12.16",
+   "title": "Rocket-Based Airbreathing Propulsion",
+   "kind": "section",
+   "pdf": 929,
+   "printed": 895,
+   "chapter": "12",
+   "pdf_end": 930,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 313,
+   "level": 2,
+   "num": "12.17",
+   "title": "Summary",
+   "kind": "section",
+   "pdf": 931,
+   "printed": 897,
+   "chapter": "12",
+   "pdf_end": 931,
+   "mods": {},
+   "status": "out"
+  },
+  {
+   "i": 314,
+   "level": 2,
+   "num": "",
+   "title": "References",
+   "kind": "endpart",
+   "pdf": 932,
+   "printed": 898,
+   "chapter": "12",
+   "pdf_end": 932,
+   "mods": {}
+  },
+  {
+   "i": 315,
+   "level": 2,
+   "num": "",
+   "title": "Problems",
+   "kind": "endpart",
+   "pdf": 933,
+   "printed": 899,
+   "chapter": "12",
+   "pdf_end": 936,
+   "mods": {}
+  },
+  {
+   "i": 316,
+   "level": 1,
+   "num": "App.A",
+   "title": "U.S. Standard Atmosphere",
+   "kind": "appendix",
+   "pdf": 937,
+   "printed": 903,
+   "chapter": "App.A",
+   "pdf_end": 940,
+   "mods": {}
+  },
+  {
+   "i": 317,
+   "level": 2,
+   "num": "",
+   "title": "U.S. Standard Atmosphere U.S. Units",
+   "kind": "other",
+   "pdf": 937,
+   "printed": 903,
+   "chapter": "App.A",
+   "pdf_end": 938,
+   "mods": {}
+  },
+  {
+   "i": 318,
+   "level": 2,
+   "num": "",
+   "title": "U.S. Standard Atmosphere SI Units",
+   "kind": "other",
+   "pdf": 939,
+   "printed": 905,
+   "chapter": "App.A",
+   "pdf_end": 940,
+   "mods": {}
+  },
+  {
+   "i": 319,
+   "level": 1,
+   "num": "App.B",
+   "title": "Isentropic Table",
+   "kind": "appendix",
+   "pdf": 941,
+   "printed": 907,
+   "chapter": "App.B",
+   "pdf_end": 957,
+   "mods": {
+    "m05": {
+     "role": "core",
+     "basis": "modules.py: Appendix B Isentropic Table; slide Ch.5 uses isentropic functions (Cengel Table A-32 is the primary table)"
+    }
+   }
+  },
+  {
+   "i": 320,
+   "level": 2,
+   "num": "",
+   "title": "Isentropic Table γ = 1.4",
+   "kind": "other",
+   "pdf": 942,
+   "printed": 908,
+   "chapter": "App.B",
+   "pdf_end": 949,
+   "mods": {}
+  },
+  {
+   "i": 321,
+   "level": 2,
+   "num": "",
+   "title": "Isentropic Table γ = 1.3",
+   "kind": "other",
+   "pdf": 950,
+   "printed": 916,
+   "chapter": "App.B",
+   "pdf_end": 957,
+   "mods": {}
+  },
+  {
+   "i": 322,
+   "level": 1,
+   "num": "App.C",
+   "title": "Normal Shock Table",
+   "kind": "appendix",
+   "pdf": 958,
+   "printed": 924,
+   "chapter": "App.C",
+   "pdf_end": 970,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "normal-shock/Rayleigh/Fanno tables: shocks/Rayleigh/Fanno are not in slide titles"
+    }
+   }
+  },
+  {
+   "i": 323,
+   "level": 2,
+   "num": "",
+   "title": "Normal Shock Table γ = 1.4",
+   "kind": "other",
+   "pdf": 959,
+   "printed": 925,
+   "chapter": "App.C",
+   "pdf_end": 964,
+   "mods": {}
+  },
+  {
+   "i": 324,
+   "level": 2,
+   "num": "",
+   "title": "Normal Shock Table γ = 1.3",
+   "kind": "other",
+   "pdf": 965,
+   "printed": 931,
+   "chapter": "App.C",
+   "pdf_end": 970,
+   "mods": {}
+  },
+  {
+   "i": 325,
+   "level": 1,
+   "num": "App.D",
+   "title": "Rayleigh Flow",
+   "kind": "appendix",
+   "pdf": 971,
+   "printed": 937,
+   "chapter": "App.D",
+   "pdf_end": 979,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "normal-shock/Rayleigh/Fanno tables: shocks/Rayleigh/Fanno are not in slide titles"
+    }
+   }
+  },
+  {
+   "i": 326,
+   "level": 2,
+   "num": "",
+   "title": "Rayleigh Flow γ = 1.4",
+   "kind": "other",
+   "pdf": 972,
+   "printed": 938,
+   "chapter": "App.D",
+   "pdf_end": 975,
+   "mods": {}
+  },
+  {
+   "i": 327,
+   "level": 2,
+   "num": "",
+   "title": "Rayleigh Flow γ = 1.3",
+   "kind": "other",
+   "pdf": 976,
+   "printed": 942,
+   "chapter": "App.D",
+   "pdf_end": 979,
+   "mods": {}
+  },
+  {
+   "i": 328,
+   "level": 1,
+   "num": "App.E",
+   "title": "Fanno Flow",
+   "kind": "appendix",
+   "pdf": 980,
+   "printed": 946,
+   "chapter": "App.E",
+   "pdf_end": 988,
+   "mods": {
+    "m05": {
+     "role": "optional",
+     "basis": "normal-shock/Rayleigh/Fanno tables: shocks/Rayleigh/Fanno are not in slide titles"
+    }
+   }
+  },
+  {
+   "i": 329,
+   "level": 2,
+   "num": "",
+   "title": "Fanno Flow γ = 1.4",
+   "kind": "other",
+   "pdf": 981,
+   "printed": 947,
+   "chapter": "App.E",
+   "pdf_end": 984,
+   "mods": {}
+  },
+  {
+   "i": 330,
+   "level": 2,
+   "num": "",
+   "title": "Fanno Flow γ = 1.3",
+   "kind": "other",
+   "pdf": 985,
+   "printed": 951,
+   "chapter": "App.E",
+   "pdf_end": 988,
+   "mods": {}
+  },
+  {
+   "i": 331,
+   "level": 1,
+   "num": "App.F",
+   "title": "Prandtl–Meyer Function and Mach Angle",
+   "kind": "appendix",
+   "pdf": 989,
+   "printed": 955,
+   "chapter": "App.F",
+   "pdf_end": 991,
+   "mods": {}
+  },
+  {
+   "i": 332,
+   "level": 1,
+   "num": "App.G",
+   "title": "Oblique Shock Charts",
+   "kind": "appendix",
+   "pdf": 992,
+   "printed": 958,
+   "chapter": "App.G",
+   "pdf_end": 996,
+   "mods": {}
+  },
+  {
+   "i": 333,
+   "level": 2,
+   "num": "",
+   "title": "Oblique Shock Charts γ = 1.4",
+   "kind": "other",
+   "pdf": 993,
+   "printed": 959,
+   "chapter": "App.G",
+   "pdf_end": 996,
+   "mods": {}
+  },
+  {
+   "i": 334,
+   "level": 1,
+   "num": "App.H",
+   "title": "Conical Shock Charts",
+   "kind": "appendix",
+   "pdf": 997,
+   "printed": 963,
+   "chapter": "App.H",
+   "pdf_end": 999,
+   "mods": {}
+  },
+  {
+   "i": 335,
+   "level": 2,
+   "num": "",
+   "title": "Conical Shock Charts γ = 1.4",
+   "kind": "other",
+   "pdf": 998,
+   "printed": 964,
+   "chapter": "App.H",
+   "pdf_end": 999,
+   "mods": {}
+  },
+  {
+   "i": 336,
+   "level": 1,
+   "num": "App.I",
+   "title": "Cascade Data",
+   "kind": "appendix",
+   "pdf": 1000,
+   "printed": 966,
+   "chapter": "App.I",
+   "pdf_end": 1005,
+   "mods": {}
+  },
+  {
+   "i": 337,
+   "level": 2,
+   "num": "",
+   "title": "NACA-65 Series Cascade Data",
+   "kind": "other",
+   "pdf": 1000,
+   "printed": 966,
+   "chapter": "App.I",
+   "pdf_end": 1000,
+   "mods": {}
+  },
+  {
+   "i": 338,
+   "level": 2,
+   "num": "",
+   "title": "Cascade Data",
+   "kind": "other",
+   "pdf": 1001,
+   "printed": 967,
+   "chapter": "App.I",
+   "pdf_end": 1005,
+   "mods": {}
+  },
+  {
+   "i": 339,
+   "level": 1,
+   "num": "App.J",
+   "title": "Websites",
+   "kind": "appendix",
+   "pdf": 1006,
+   "printed": 972,
+   "chapter": "App.J",
+   "pdf_end": 1006,
+   "mods": {}
+  },
+  {
+   "i": 340,
+   "level": 1,
+   "num": "App.K",
+   "title": "10-Minute Quiz",
+   "kind": "appendix",
+   "pdf": 1007,
+   "printed": 973,
+   "chapter": "App.K",
+   "pdf_end": 1024,
+   "mods": {
+    "m01": {
+     "role": "optional",
+     "basis": "10-minute quiz: no answers printed; per-quiz module not assigned (? to be done in P3)"
+    },
+    "m02": {
+     "role": "optional",
+     "basis": "10-minute quiz: no answers printed; per-quiz module not assigned (? to be done in P3)"
+    },
+    "m04": {
+     "role": "optional",
+     "basis": "10-minute quiz: no answers printed; per-quiz module not assigned (? to be done in P3)"
+    },
+    "m05": {
+     "role": "optional",
+     "basis": "10-minute quiz: no answers printed; per-quiz module not assigned (? to be done in P3)"
+    }
+   }
+  },
+  {
+   "i": 341,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 1",
+   "kind": "other",
+   "pdf": 1007,
+   "printed": 973,
+   "chapter": "App.K",
+   "pdf_end": 1007,
+   "mods": {}
+  },
+  {
+   "i": 342,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 2",
+   "kind": "other",
+   "pdf": 1007,
+   "printed": 973,
+   "chapter": "App.K",
+   "pdf_end": 1007,
+   "mods": {}
+  },
+  {
+   "i": 343,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 3",
+   "kind": "other",
+   "pdf": 1008,
+   "printed": 974,
+   "chapter": "App.K",
+   "pdf_end": 1008,
+   "mods": {}
+  },
+  {
+   "i": 344,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 4",
+   "kind": "other",
+   "pdf": 1008,
+   "printed": 974,
+   "chapter": "App.K",
+   "pdf_end": 1008,
+   "mods": {}
+  },
+  {
+   "i": 345,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 5",
+   "kind": "other",
+   "pdf": 1008,
+   "printed": 974,
+   "chapter": "App.K",
+   "pdf_end": 1008,
+   "mods": {}
+  },
+  {
+   "i": 346,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 6",
+   "kind": "other",
+   "pdf": 1008,
+   "printed": 974,
+   "chapter": "App.K",
+   "pdf_end": 1008,
+   "mods": {}
+  },
+  {
+   "i": 347,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 7",
+   "kind": "other",
+   "pdf": 1009,
+   "printed": 975,
+   "chapter": "App.K",
+   "pdf_end": 1009,
+   "mods": {}
+  },
+  {
+   "i": 348,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 8",
+   "kind": "other",
+   "pdf": 1009,
+   "printed": 975,
+   "chapter": "App.K",
+   "pdf_end": 1009,
+   "mods": {}
+  },
+  {
+   "i": 349,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 9",
+   "kind": "other",
+   "pdf": 1009,
+   "printed": 975,
+   "chapter": "App.K",
+   "pdf_end": 1009,
+   "mods": {}
+  },
+  {
+   "i": 350,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 10",
+   "kind": "other",
+   "pdf": 1010,
+   "printed": 976,
+   "chapter": "App.K",
+   "pdf_end": 1010,
+   "mods": {}
+  },
+  {
+   "i": 351,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 11",
+   "kind": "other",
+   "pdf": 1010,
+   "printed": 976,
+   "chapter": "App.K",
+   "pdf_end": 1010,
+   "mods": {}
+  },
+  {
+   "i": 352,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 12",
+   "kind": "other",
+   "pdf": 1010,
+   "printed": 976,
+   "chapter": "App.K",
+   "pdf_end": 1010,
+   "mods": {}
+  },
+  {
+   "i": 353,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 13",
+   "kind": "other",
+   "pdf": 1011,
+   "printed": 977,
+   "chapter": "App.K",
+   "pdf_end": 1011,
+   "mods": {}
+  },
+  {
+   "i": 354,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 14",
+   "kind": "other",
+   "pdf": 1011,
+   "printed": 977,
+   "chapter": "App.K",
+   "pdf_end": 1011,
+   "mods": {}
+  },
+  {
+   "i": 355,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 15",
+   "kind": "other",
+   "pdf": 1011,
+   "printed": 977,
+   "chapter": "App.K",
+   "pdf_end": 1011,
+   "mods": {}
+  },
+  {
+   "i": 356,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 16",
+   "kind": "other",
+   "pdf": 1011,
+   "printed": 977,
+   "chapter": "App.K",
+   "pdf_end": 1011,
+   "mods": {}
+  },
+  {
+   "i": 357,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 17",
+   "kind": "other",
+   "pdf": 1012,
+   "printed": 978,
+   "chapter": "App.K",
+   "pdf_end": 1012,
+   "mods": {}
+  },
+  {
+   "i": 358,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 18",
+   "kind": "other",
+   "pdf": 1013,
+   "printed": 979,
+   "chapter": "App.K",
+   "pdf_end": 1013,
+   "mods": {}
+  },
+  {
+   "i": 359,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 19",
+   "kind": "other",
+   "pdf": 1013,
+   "printed": 979,
+   "chapter": "App.K",
+   "pdf_end": 1013,
+   "mods": {}
+  },
+  {
+   "i": 360,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 20",
+   "kind": "other",
+   "pdf": 1013,
+   "printed": 979,
+   "chapter": "App.K",
+   "pdf_end": 1013,
+   "mods": {}
+  },
+  {
+   "i": 361,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 21",
+   "kind": "other",
+   "pdf": 1014,
+   "printed": 980,
+   "chapter": "App.K",
+   "pdf_end": 1014,
+   "mods": {}
+  },
+  {
+   "i": 362,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 22",
+   "kind": "other",
+   "pdf": 1014,
+   "printed": 980,
+   "chapter": "App.K",
+   "pdf_end": 1014,
+   "mods": {}
+  },
+  {
+   "i": 363,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 23",
+   "kind": "other",
+   "pdf": 1014,
+   "printed": 980,
+   "chapter": "App.K",
+   "pdf_end": 1014,
+   "mods": {}
+  },
+  {
+   "i": 364,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 24",
+   "kind": "other",
+   "pdf": 1015,
+   "printed": 981,
+   "chapter": "App.K",
+   "pdf_end": 1015,
+   "mods": {}
+  },
+  {
+   "i": 365,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 25",
+   "kind": "other",
+   "pdf": 1016,
+   "printed": 982,
+   "chapter": "App.K",
+   "pdf_end": 1016,
+   "mods": {}
+  },
+  {
+   "i": 366,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 26",
+   "kind": "other",
+   "pdf": 1016,
+   "printed": 982,
+   "chapter": "App.K",
+   "pdf_end": 1016,
+   "mods": {}
+  },
+  {
+   "i": 367,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 27",
+   "kind": "other",
+   "pdf": 1017,
+   "printed": 983,
+   "chapter": "App.K",
+   "pdf_end": 1017,
+   "mods": {}
+  },
+  {
+   "i": 368,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 28",
+   "kind": "other",
+   "pdf": 1017,
+   "printed": 983,
+   "chapter": "App.K",
+   "pdf_end": 1017,
+   "mods": {}
+  },
+  {
+   "i": 369,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 29",
+   "kind": "other",
+   "pdf": 1017,
+   "printed": 983,
+   "chapter": "App.K",
+   "pdf_end": 1017,
+   "mods": {}
+  },
+  {
+   "i": 370,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 30",
+   "kind": "other",
+   "pdf": 1018,
+   "printed": 984,
+   "chapter": "App.K",
+   "pdf_end": 1018,
+   "mods": {}
+  },
+  {
+   "i": 371,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 31",
+   "kind": "other",
+   "pdf": 1019,
+   "printed": 985,
+   "chapter": "App.K",
+   "pdf_end": 1019,
+   "mods": {}
+  },
+  {
+   "i": 372,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 32",
+   "kind": "other",
+   "pdf": 1019,
+   "printed": 985,
+   "chapter": "App.K",
+   "pdf_end": 1019,
+   "mods": {}
+  },
+  {
+   "i": 373,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 33",
+   "kind": "other",
+   "pdf": 1020,
+   "printed": 986,
+   "chapter": "App.K",
+   "pdf_end": 1020,
+   "mods": {}
+  },
+  {
+   "i": 374,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 34",
+   "kind": "other",
+   "pdf": 1020,
+   "printed": 986,
+   "chapter": "App.K",
+   "pdf_end": 1020,
+   "mods": {}
+  },
+  {
+   "i": 375,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 35",
+   "kind": "other",
+   "pdf": 1021,
+   "printed": 987,
+   "chapter": "App.K",
+   "pdf_end": 1021,
+   "mods": {}
+  },
+  {
+   "i": 376,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 36",
+   "kind": "other",
+   "pdf": 1021,
+   "printed": 987,
+   "chapter": "App.K",
+   "pdf_end": 1021,
+   "mods": {}
+  },
+  {
+   "i": 377,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 37",
+   "kind": "other",
+   "pdf": 1022,
+   "printed": 988,
+   "chapter": "App.K",
+   "pdf_end": 1022,
+   "mods": {}
+  },
+  {
+   "i": 378,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 38",
+   "kind": "other",
+   "pdf": 1022,
+   "printed": 988,
+   "chapter": "App.K",
+   "pdf_end": 1022,
+   "mods": {}
+  },
+  {
+   "i": 379,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 39",
+   "kind": "other",
+   "pdf": 1022,
+   "printed": 988,
+   "chapter": "App.K",
+   "pdf_end": 1022,
+   "mods": {}
+  },
+  {
+   "i": 380,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 40",
+   "kind": "other",
+   "pdf": 1022,
+   "printed": 988,
+   "chapter": "App.K",
+   "pdf_end": 1022,
+   "mods": {}
+  },
+  {
+   "i": 381,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 41",
+   "kind": "other",
+   "pdf": 1023,
+   "printed": 989,
+   "chapter": "App.K",
+   "pdf_end": 1023,
+   "mods": {}
+  },
+  {
+   "i": 382,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 42",
+   "kind": "other",
+   "pdf": 1023,
+   "printed": 989,
+   "chapter": "App.K",
+   "pdf_end": 1023,
+   "mods": {}
+  },
+  {
+   "i": 383,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 43",
+   "kind": "other",
+   "pdf": 1023,
+   "printed": 989,
+   "chapter": "App.K",
+   "pdf_end": 1023,
+   "mods": {}
+  },
+  {
+   "i": 384,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 44",
+   "kind": "other",
+   "pdf": 1023,
+   "printed": 989,
+   "chapter": "App.K",
+   "pdf_end": 1023,
+   "mods": {}
+  },
+  {
+   "i": 385,
+   "level": 2,
+   "num": "",
+   "title": "Quiz No. 45",
+   "kind": "other",
+   "pdf": 1024,
+   "printed": 990,
+   "chapter": "App.K",
+   "pdf_end": 1024,
+   "mods": {}
+  },
+  {
+   "i": 386,
+   "level": 1,
+   "num": "App.L",
+   "title": "Some “Rules of Thumb” and Trends in Aircraft Propulsion",
+   "kind": "appendix",
+   "pdf": 1025,
+   "printed": 991,
+   "chapter": "App.L",
+   "pdf_end": 1032,
+   "mods": {
+    "m01": {
+     "role": "optional",
+     "basis": "rules of thumb (inlet loss, ambient T) vs TSFC/thrust: background to performance parameters"
+    }
+   }
+  },
+  {
+   "i": 387,
+   "level": 1,
+   "num": "",
+   "title": "INDEX",
+   "kind": "other",
+   "pdf": 1033,
+   "printed": 999,
+   "chapter": null,
+   "pdf_end": 1045,
+   "mods": {}
+  },
+  {
+   "i": 388,
+   "level": 1,
+   "num": "",
+   "title": "Conversion factors",
+   "kind": "other",
+   "pdf": 1046,
+   "printed": 1012,
+   "chapter": null,
+   "pdf_end": 1048,
+   "mods": {}
+  }
+ ],
+ "examples": {
+  "1": [],
+  "2": [
+   {
+    "num": "2.1\n",
+    "pdf": 57,
+    "printed": 23,
+    "label": "E X A M P L E 2 . 1 Calculate the density of (dry) air where its static pressure"
+   },
+   {
+    "num": "2.2\n",
+    "pdf": 62,
+    "printed": 28,
+    "label": "E X A M P L E 2 . 2 Air is compressed from p1 = 100 kPa, T1 = 15◦C to"
+   },
+   {
+    "num": "2.3\n",
+    "pdf": 64,
+    "printed": 30,
+    "label": "E X A M P L E 2 . 3 Consider the control volume shown. There are two inlets"
+   },
+   {
+    "num": "2.4\n",
+    "pdf": 66,
+    "printed": 32,
+    "label": "E X A M P L E 2 . 4 In placing a curved plate in front of a garden hose with a"
+   },
+   {
+    "num": "2.5\n",
+    "pdf": 68,
+    "printed": 34,
+    "label": "E X A M P L E 2 . 5 Let us consider a control volume with heat transfer rate"
+   },
+   {
+    "num": "2.6\n",
+    "pdf": 108,
+    "printed": 74,
+    "label": "E X A M P L E 2 . 6 Air enters a constant-area duct of circular cross-section"
+   },
+   {
+    "num": "2.7\n",
+    "pdf": 109,
+    "printed": 75,
+    "label": "E X A M P L E 2 . 7 Air enters a constant-area combustion chamber at Mach"
+   },
+   {
+    "num": "2.8\n",
+    "pdf": 110,
+    "printed": 76,
+    "label": "E X A M P L E 2 . 8 A subsonic flow in a constant-area duct is subjected to heat"
+   },
+   {
+    "num": "2.9\n",
+    "pdf": 122,
+    "printed": 88,
+    "label": "E X A M P L E 2 . 9 Air enters a constant-area duct of circular cross-section"
+   },
+   {
+    "num": "2.10\n",
+    "pdf": 122,
+    "printed": 88,
+    "label": "E X A M P L E 2 . 1 0 Air flows in a duct with a rectangular cross-section of 1 ×"
+   },
+   {
+    "num": "2.11\n",
+    "pdf": 123,
+    "printed": 89,
+    "label": "E X A M P L E 2 . 1 1 Consider a supersonic flow of air in a long duct with fric-"
+   },
+   {
+    "num": "2.12",
+    "pdf": 130,
+    "printed": 96,
+    "label": "E X A M P L E 2 . 1 2 (Subsonic Diffuser)"
+   },
+   {
+    "num": "2.13",
+    "pdf": 131,
+    "printed": 97,
+    "label": "E X A M P L E 2 . 1 3 (Supersonic Nozzle)"
+   },
+   {
+    "num": "2.14",
+    "pdf": 134,
+    "printed": 100,
+    "label": "E X A M P L E 2 . 1 4 (Axial-Flow Compressor)"
+   },
+   {
+    "num": "2.15",
+    "pdf": 135,
+    "printed": 101,
+    "label": "E X A M P L E 2 . 1 5 (Combustor)"
+   },
+   {
+    "num": "2.16",
+    "pdf": 135,
+    "printed": 101,
+    "label": "E X A M P L E 2 . 1 6 (Axial-Flow Turbine)"
+   }
+  ],
+  "3": [
+   {
+    "num": "3.1\n",
+    "pdf": 152,
+    "printed": 118,
+    "label": "E X A M P L E 3 . 1 An airbreathing engine has a flight Mach number of M0 ="
+   },
+   {
+    "num": "3.2\n",
+    "pdf": 153,
+    "printed": 119,
+    "label": "E X A M P L E 3 . 2 A separate flow turbofan engine develops exhaust veloci-"
+   },
+   {
+    "num": "3.3\n",
+    "pdf": 163,
+    "printed": 129,
+    "label": "E X A M P L E 3 . 3 A liquid propellant rocket engine consumes 200 kg/s of"
+   },
+   {
+    "num": "3.4\n",
+    "pdf": 166,
+    "printed": 132,
+    "label": "E X A M P L E 3 . 4 Consider an aircraft engine (a turbojet) in takeoff conditio"
+   },
+   {
+    "num": "3.5\n",
+    "pdf": 170,
+    "printed": 136,
+    "label": "E X A M P L E 3 . 5 A turbojet engine is flying at 200 m/s. The products of com-"
+   },
+   {
+    "num": "3.6\n",
+    "pdf": 170,
+    "printed": 136,
+    "label": "E X A M P L E 3 . 6 Consider a turbofan engine flying at the same speed as the"
+   }
+  ],
+  "4": [
+   {
+    "num": "4.1\n",
+    "pdf": 191,
+    "printed": 157,
+    "label": "E X A M P L E 4 . 1 An aircraft is flying at an altitude where the ambient stati"
+   },
+   {
+    "num": "4.2\n",
+    "pdf": 197,
+    "printed": 163,
+    "label": "E X A M P L E 4 . 2 A multistage axial-flow compressor has a mass flow rate"
+   },
+   {
+    "num": "4.3\n",
+    "pdf": 202,
+    "printed": 168,
+    "label": "E X A M P L E 4 . 3 A gas turbine combustor has inlet condition Tt3 = 800 K,"
+   },
+   {
+    "num": "4.4\n",
+    "pdf": 210,
+    "printed": 176,
+    "label": "E X A M P L E 4 . 4 Consider an uncooled gas turbine with its inlet condition"
+   },
+   {
+    "num": "4.5\n",
+    "pdf": 210,
+    "printed": 176,
+    "label": "E X A M P L E 4 . 5 Consider a turbine nozzle blade row with a hot gas mass"
+   },
+   {
+    "num": "4.6\n",
+    "pdf": 211,
+    "printed": 177,
+    "label": "E X A M P L E 4 . 6 Consider the internally cooled turbine nozzle blade row of"
+   },
+   {
+    "num": "4.7\n",
+    "pdf": 218,
+    "printed": 184,
+    "label": "E X A M P L E 4 . 7 Consider a convergent–divergent nozzle with a pressure"
+   },
+   {
+    "num": "4.8\n",
+    "pdf": 227,
+    "printed": 193,
+    "label": "E X A M P L E 4 . 8 Prove the ideal thermal efficiency for the Brayton cycle, as"
+   },
+   {
+    "num": "4.9\n",
+    "pdf": 227,
+    "printed": 193,
+    "label": "E X A M P L E 4 . 9 Prove the thermal efficiency of an ideal Carnot cycle is"
+   },
+   {
+    "num": "4.10\n",
+    "pdf": 229,
+    "printed": 195,
+    "label": "E X A M P L E 4 . 1 0 Calculate the propulsive efficiency of a turbojet engine"
+   },
+   {
+    "num": "4.11\n",
+    "pdf": 240,
+    "printed": 206,
+    "label": "E X A M P L E 4 . 1 1 An afterburning turbojet engine operates at"
+   },
+   {
+    "num": "4.12\n",
+    "pdf": 242,
+    "printed": 208,
+    "label": "E X A M P L E 4 . 1 2 Use a spreadsheet or write a computer program (e.g.,"
+   },
+   {
+    "num": "4.13\n",
+    "pdf": 251,
+    "printed": 217,
+    "label": "E X A M P L E 4 . 1 3 A high-bypass ratio (separate-exhaust) turbofan engine"
+   },
+   {
+    "num": "4.14\n",
+    "pdf": 254,
+    "printed": 220,
+    "label": "E X A M P L E 4 . 1 4 Write a computer program or use the spreadsheet to cal-"
+   },
+   {
+    "num": "4.15\n",
+    "pdf": 257,
+    "printed": 223,
+    "label": "E X A M P L E 4 . 1 5 A geared turbofan (GTF) is used in a UHB engine with"
+   },
+   {
+    "num": "4.16\n",
+    "pdf": 270,
+    "printed": 236,
+    "label": "E X A M P L E 4 . 1 6 A mixed-exhaust turbofan engine with afterburner is fly-"
+   },
+   {
+    "num": "4.17\n",
+    "pdf": 272,
+    "printed": 238,
+    "label": "E X A M P L E 4 . 1 7 A mixed exhaust turbofan engine with afterburner has"
+   },
+   {
+    "num": "4.18\n",
+    "pdf": 280,
+    "printed": 246,
+    "label": "E X A M P L E 4 . 1 8 A propeller of diameter dp = 3 m, is in forward flight with"
+   },
+   {
+    "num": "4.19\n",
+    "pdf": 281,
+    "printed": 247,
+    "label": "E X A M P L E 4 . 1 9 A propeller of 1.8-m diameter (5.89 ft) produces 6.2 kN"
+   },
+   {
+    "num": "4.20\n",
+    "pdf": 290,
+    "printed": 256,
+    "label": "E X A M P L E 4 . 2 0 An advanced turboprop flies at M0 = 0.7 at an altitude where"
+   },
+   {
+    "num": "4.21\n",
+    "pdf": 292,
+    "printed": 258,
+    "label": "E X A M P L E 4 . 2 1 For the turboprop engine specified in Example 4.20, vary"
+   }
+  ],
+  "6": [
+   {
+    "num": "6.1\n",
+    "pdf": 389,
+    "printed": 355,
+    "label": "E X A M P L E 6 . 1 Consider an isentropic fixed-geometry C–D inlet, which"
+   },
+   {
+    "num": "6.2\n",
+    "pdf": 391,
+    "printed": 357,
+    "label": "E X A M P L E 6 . 2 Calculate the contraction ratio A1∕Ath, and the maximum"
+   },
+   {
+    "num": "6.3\n",
+    "pdf": 392,
+    "printed": 358,
+    "label": "E X A M P L E 6 . 3 A supersonic convergent–divergent inlet is to be designed"
+   },
+   {
+    "num": "6.4\n",
+    "pdf": 395,
+    "printed": 361,
+    "label": "E X A M P L E 6 . 4 A normal shock inlet operates in a Mach 1.4 stream. Cal-"
+   },
+   {
+    "num": "6.5\n",
+    "pdf": 397,
+    "printed": 363,
+    "label": "E X A M P L E 6 . 5 A two-ramp external compression inlet in a supersonic"
+   },
+   {
+    "num": "6.6\n",
+    "pdf": 412,
+    "printed": 378,
+    "label": "E X A M P L E 6 . 6 An exhaust nozzle has a pressure ratio of 8, i.e., pt7∕p0 ="
+   },
+   {
+    "num": "6.7\n",
+    "pdf": 414,
+    "printed": 380,
+    "label": "E X A M P L E 6 . 7 The total temperature of the gas entering a convergent–"
+   },
+   {
+    "num": "6.8\n",
+    "pdf": 417,
+    "printed": 383,
+    "label": "E X A M P L E 6 . 8 Calculate and graph the divergence correction factor CA"
+   },
+   {
+    "num": "6.9\n",
+    "pdf": 418,
+    "printed": 384,
+    "label": "E X A M P L E 6 . 9 Calculate and graph the divergence correction factor"
+   },
+   {
+    "num": "6.10\n",
+    "pdf": 424,
+    "printed": 390,
+    "label": "E X A M P L E 6 . 1 0 Calculate and graph the ratio of nozzle throat area with"
+   },
+   {
+    "num": "6.11\n",
+    "pdf": 431,
+    "printed": 397,
+    "label": "E X A M P L E 6 . 1 1 Some details of thrust reversing and percentage contribu-"
+   },
+   {
+    "num": "6.12\n",
+    "pdf": 436,
+    "printed": 402,
+    "label": "E X A M P L E 6 . 1 2 Demonstrate that a hypersonic airbreathing propulsion sys-"
+   },
+   {
+    "num": "6.13\n",
+    "pdf": 439,
+    "printed": 405,
+    "label": "E X A M P L E 6 . 1 3 For a range of hot-to-cold temperature ratios between 1.5"
+   }
+  ],
+  "7": [
+   {
+    "num": "7.1\n",
+    "pdf": 464,
+    "printed": 430,
+    "label": "E X A M P L E 7 . 1 If a mixture contains 12 kg of H2 and 8.0 kg of O2, deter-"
+   },
+   {
+    "num": "7.2\n",
+    "pdf": 472,
+    "printed": 438,
+    "label": "E X A M P L E 7 . 2 The standard heat of formation of the following naturally"
+   },
+   {
+    "num": "7.3\n",
+    "pdf": 474,
+    "printed": 440,
+    "label": "E X A M P L E 7 . 3 Establish the lower and higher heating values of hydrogen,"
+   },
+   {
+    "num": "7.4\n",
+    "pdf": 477,
+    "printed": 443,
+    "label": "E X A M P L E 7 . 4 Consider a chemical reaction involving H2 and O2 in"
+   },
+   {
+    "num": "7.5\n",
+    "pdf": 478,
+    "printed": 444,
+    "label": "E X A M P L E 7 . 5 One mole of methane is burned with 120% theoretical air."
+   },
+   {
+    "num": "7.6\n",
+    "pdf": 481,
+    "printed": 447,
+    "label": "E X A M P L E 7 . 6 One mole of nitrogen, N2(g), is heated to 6250 K at the"
+   },
+   {
+    "num": "7.7\n",
+    "pdf": 489,
+    "printed": 455,
+    "label": "E X A M P L E 7 . 7 Now, let us revisit the stoichiometric combustion of hydro-"
+   }
+  ],
+  "8": [
+   {
+    "num": "8.1\n",
+    "pdf": 568,
+    "printed": 534,
+    "label": "E X A M P L E 8 . 1 The absolute flow at the pitchline to a compressor rotor is"
+   },
+   {
+    "num": "8.2\n",
+    "pdf": 579,
+    "printed": 545,
+    "label": "E X A M P L E 8 . 2 An axial-flow compressor stage has a pitchline radius of"
+   },
+   {
+    "num": "8.3\n",
+    "pdf": 582,
+    "printed": 548,
+    "label": "E X A M P L E 8 . 3 A rotor blade row is cut at pitchline, rm. The velocity vec-"
+   },
+   {
+    "num": "8.4\n",
+    "pdf": 594,
+    "printed": 560,
+    "label": "E X A M P L E 8 . 4 A rotor blade row at pitchline radius is shown. The rotor"
+   },
+   {
+    "num": "8.5\n",
+    "pdf": 604,
+    "printed": 570,
+    "label": "E X A M P L E 8 . 5 A compressor stage develops a total pressure ratio of 𝜋s ="
+   },
+   {
+    "num": "8.6\n",
+    "pdf": 604,
+    "printed": 570,
+    "label": "E X A M P L E 8 . 6 The profile loss parameter for a compressor blade rotor"
+   },
+   {
+    "num": "8.7\n",
+    "pdf": 614,
+    "printed": 580,
+    "label": "E X A M P L E 8 . 7 Compare the degree-of-reaction profile of a compressor"
+   },
+   {
+    "num": "8.8\n",
+    "pdf": 663,
+    "printed": 629,
+    "label": "E X A M P L E 8 . 8 Design an axial-flow compressor with the following design"
+   }
+  ],
+  "9": [
+   {
+    "num": "9.1\n",
+    "pdf": 693,
+    "printed": 659,
+    "label": "E X A M P L E 9 . 1 Use a spreadsheet to calculate and graph the ratio of Mach"
+   },
+   {
+    "num": "9.2\n",
+    "pdf": 697,
+    "printed": 663,
+    "label": "E X A M P L E 9 . 2 Consider a centrifugal compressor impeller with the fol-"
+   },
+   {
+    "num": "9.3\n",
+    "pdf": 703,
+    "printed": 669,
+    "label": "E X A M P L E 9 . 3 For an impeller tip Mach number of 1.2, and equal static"
+   },
+   {
+    "num": "9.4\n",
+    "pdf": 705,
+    "printed": 671,
+    "label": "E X A M P L E 9 . 4 Calculate and graph the inducer D-factor for solidity of one"
+   },
+   {
+    "num": "9.5\n",
+    "pdf": 706,
+    "printed": 672,
+    "label": "E X A M P L E 9 . 5 In Example 9.1, we calculated an eye-to-tip radius ratio of"
+   },
+   {
+    "num": "9.6\n",
+    "pdf": 711,
+    "printed": 677,
+    "label": "E X A M P L E 9 . 6 The inlet flow to a centrifugal compressor is described by"
+   }
+  ],
+  "10": [
+   {
+    "num": "10.1\n",
+    "pdf": 730,
+    "printed": 696,
+    "label": "E X A M P L E 1 0 . 1 The combustor discharge into a turbine nozzle has a total"
+   },
+   {
+    "num": "10.2\n",
+    "pdf": 731,
+    "printed": 697,
+    "label": "E X A M P L E 1 0 . 2 The turbine nozzle in Example 10.1 produced a slightly"
+   },
+   {
+    "num": "10.3\n",
+    "pdf": 731,
+    "printed": 697,
+    "label": "E X A M P L E 1 0 . 3 A turbine stage at pitchline has the following velocity vect"
+   },
+   {
+    "num": "10.4\n",
+    "pdf": 748,
+    "printed": 714,
+    "label": "E X A M P L E 1 0 . 4 A turbine stage is characterized by a loading coefficient"
+   },
+   {
+    "num": "10.5\n",
+    "pdf": 756,
+    "printed": 722,
+    "label": "E X A M P L E 1 0 . 5 The total gas temperature at the exit of a turbine nozzle is"
+   },
+   {
+    "num": "10.6\n",
+    "pdf": 761,
+    "printed": 727,
+    "label": "E X A M P L E 1 0 . 6 Let us consider a gas turbine engine with the following"
+   },
+   {
+    "num": "10.7\n",
+    "pdf": 780,
+    "printed": 746,
+    "label": "E X A M P L E 1 0 . 7 We intend to design an axial-flow turbine to drive a par-"
+   }
+  ],
+  "11": [
+   {
+    "num": "11.1\n",
+    "pdf": 815,
+    "printed": 781,
+    "label": "E X A M P L E 1 1 . 1 A compressor performance map is shown. The nominal"
+   },
+   {
+    "num": "11.2\n",
+    "pdf": 821,
+    "printed": 787,
+    "label": "E X A M P L E 1 1 . 2 Assume a turbojet engine has the following design-point"
+   },
+   {
+    "num": "11.3\n",
+    "pdf": 824,
+    "printed": 790,
+    "label": "E X A M P L E 1 1 . 3 An afterburning turbojet engine has the following design-"
+   },
+   {
+    "num": "11.4\n",
+    "pdf": 831,
+    "printed": 797,
+    "label": "E X A M P L E 1 1 . 4 Consider a separate-flow turbofan engine (as in Fig-"
+   },
+   {
+    "num": "11.5\n",
+    "pdf": 844,
+    "printed": 810,
+    "label": "E X A M P L E 1 1 . 5 A small airbreathing drone engine is on a thrust stand. The"
+   }
+  ],
+  "12": [
+   {
+    "num": "12.1\n",
+    "pdf": 864,
+    "printed": 830,
+    "label": "E X A M P L E 1 2 . 1 The Space Shuttle Main Engine (SSME) produces 375,000"
+   },
+   {
+    "num": "12.2\n",
+    "pdf": 864,
+    "printed": 830,
+    "label": "E X A M P L E 1 2 . 2 A rocket engine has a propellant mass flow rate of 1000"
+   },
+   {
+    "num": "12.3\n",
+    "pdf": 866,
+    "printed": 832,
+    "label": "E X A M P L E 1 2 . 3 A rocket engine has a chamber pressure of pc = 200 atm"
+   },
+   {
+    "num": "12.4\n",
+    "pdf": 869,
+    "printed": 835,
+    "label": "E X A M P L E 1 2 . 4 A liquid propellant rocket uses hydrogen fuel and oxygen"
+   },
+   {
+    "num": "12.5\n",
+    "pdf": 869,
+    "printed": 835,
+    "label": "E X A M P L E 1 2 . 5 Consider a fuel-rich combustion of hydrogen and oxygen"
+   },
+   {
+    "num": "12.6\n",
+    "pdf": 872,
+    "printed": 838,
+    "label": "E X A M P L E 1 2 . 6 The specific impulse of a chemical rocket is 400 s. The"
+   },
+   {
+    "num": "12.7\n",
+    "pdf": 874,
+    "printed": 840,
+    "label": "E X A M P L E 1 2 . 7 A rocket is vertically launched and operates for 30 s and ha"
+   },
+   {
+    "num": "12.8\n",
+    "pdf": 878,
+    "printed": 844,
+    "label": "E X A M P L E 1 2 . 8 A rocket plane has a propellant mass fraction of 𝜁= 0.80"
+   },
+   {
+    "num": "12.9\n",
+    "pdf": 883,
+    "printed": 849,
+    "label": "E X A M P L E 1 2 . 9 A liquid propellant rocket uses hydrogen and oxygen as"
+   },
+   {
+    "num": "12.10\n",
+    "pdf": 888,
+    "printed": 854,
+    "label": "E X A M P L E 1 2 . 1 0 A liquid propellant rocket injector plate uses an unlike"
+   },
+   {
+    "num": "12.11\n",
+    "pdf": 894,
+    "printed": 860,
+    "label": "E X A M P L E 1 2 . 1 1 A solid rocket motor has a design chamber pressure of 7"
+   },
+   {
+    "num": "12.12\n",
+    "pdf": 902,
+    "printed": 868,
+    "label": "E X A M P L E 1 2 . 1 2 A liquid propellant rocket combustor is regeneratively"
+   },
+   {
+    "num": "12.13\n",
+    "pdf": 916,
+    "printed": 882,
+    "label": "E X A M P L E 1 2 . 1 3 A solid propellant rocket motor uses a composite propel-"
+   },
+   {
+    "num": "12.13\n",
+    "pdf": 923,
+    "printed": 889,
+    "label": "E X A M P L E 1 2 . 1 3 A conventional ramjet has a maximum temperature Tt4 ="
+   }
+  ]
+ },
+ "n_bookmarks": 389,
+ "back": {
+  "index_pdf": 1033,
+  "answers_appendix": false,
+  "quizzes": 45
+ },
+ "answers": {
+  "appendix": false,
+  "inline": false,
+  "note": "Farokhi prints neither answers to the chapter problems nor answers to the Appendix K quizzes (checked by text search for answer/solution in Problems pages and in PDF pp.1007–1024 and by image of p.1024). Companion website has instructor resources only (not available here)."
+ }
+}

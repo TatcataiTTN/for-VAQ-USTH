@@ -1,0 +1,36 @@
+{
+ "question": "CLO3: air conditioning / ECS / cooling pack / air cycle machine / bleed air in Farokhi and El-Sayed (slide Ch.3 tr.29-36 = \"Air conditioner in aircraft\", \"AIR CYCLE COOLING PACK\", \"Operation of the Cooling Pack\")",
+ "commands": [
+  "grep -n -i -E 'air.?condition|air cycle|cooling pack|environmental control|\\bECS\\b|customer bleed|cabin|pressuriz|refrigerat|\\bECU\\b' OCR_output/10_Farokhi_Aircraft_Propulsion.md",
+  "grep -n -i -E 'air.?condition|air cycle|cooling pack|environmental control|\\bECS\\b|cabin|pressuriz|refrigerat|passenger|compressor bleed|customer' OCR_output/11_ElSayed_Aircraft_Propulsion_and_Gas_Turbine_Engines.md"
+ ],
+ "farokhi": {
+  "found": false,
+  "note": "No hit for air conditioning, ECS, cooling pack, air cycle, customer bleed, cabin, refrigeration. The only hits are rocket propellant tank pressurization (Ch.12), turbine-cooling bleed and inlet boundary-layer bleed (not cabin air). So: không có."
+ },
+ "elsayed": {
+  "found": "one sentence only",
+  "hits": [
+   {
+    "printed": 301,
+    "chapter": 5,
+    "md_line": 9970,
+    "text": "Comment on a bleed ratio: \"bleeding has its applications for cabin-air conditioning as well as other anti-icing functions.\" (turbofan Ch.5, outside the scope chapters; the sentence names the use, no ECS description, no air-cycle machine, no cooling pack)"
+   },
+   {
+    "printed": 13,
+    "chapter": 1,
+    "md_line": 1698,
+    "text": "history: \"enclosed cabin airplane became the standard\" (no ECS)"
+   },
+   {
+    "printed": 500,
+    "chapter": 6,
+    "md_line": 16136,
+    "text": "\"Engine noise in the cabin area is reduced\" (propfan; no ECS)"
+   }
+  ],
+  "note": "Turbine-cooling bleed (Ch.5 Examples, Ch.14) and bleed valves of compressors (Ch.13) are not air-conditioning content."
+ },
+ "conclusion": "Neither book describes the aircraft ECS / air cycle machine / cooling pack. Best textbook anchors for CLO3 stay Cengel Ch.11 (esp. §11-8 gas refrigeration = reversed Brayton) and Ch.14 §14-7 (air-conditioning processes); the cooling-pack slides tr.29-36 have no book counterpart."
+}

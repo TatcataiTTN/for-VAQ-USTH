@@ -1,0 +1,265 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Property tables · AE2.013 · Thermal Systems</title><meta name="description" content="">
+<script>(function(){try{var t=localStorage.getItem('site-theme');if(t&&t!=='light')document.documentElement.setAttribute('data-theme',t);var f=localStorage.getItem('site-font');if(f)document.documentElement.style.fontSize=f}catch(e){}})();</script>
+<link rel="icon" href="../../assets/images/usth_logo.png"><link rel="stylesheet" href="../../_shared/vendor/katex/katex.min.css"><link rel="stylesheet" href="../../_shared/common.css"></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="../index.html"><img src="../../assets/images/usth_logo.png" alt="USTH"><span>AE2.013 · Thermal Systems</span></a><nav><details class="navgrp"><summary>Learn ▾</summary><div class="pop"><a href="../index.html">Home</a><a href="../modules/01-introduction-propulsion/index.html">M01 · Introduction, principles of propulsion and engine classification</a><a href="../modules/02-gas-power-cycles/index.html">M02 · Gas power cycles: Carnot, Otto, Diesel, Brayton and jet-propulsion cycles</a><a href="../modules/03-refrigeration-aircraft-air-conditioning/index.html">M03 · Refrigeration cycles and aircraft air conditioning</a><a href="../modules/04-fuels-and-combustion/index.html">M04 · Fuels and the combustion process</a><a href="../modules/05-compressible-flow/index.html">M05 · Compressible flow</a></div></details><details class="navgrp"><summary>Practise ▾</summary><div class="pop"><a href="../practice/index.html">Question bank</a><a href="../exam/index.html">Mock exams</a><a href="../written/index.html">Written practice (multi-step)</a></div></details><details class="navgrp"><summary>Tools ▾</summary><div class="pop"><a href="../lab/index.html">Lab</a><a href="../props/index.html">Property tables</a><a href="../concepts/index.html">Concept finder</a><a href="../analyse/index.html">Question analyser</a><a href="../exercises/index.html">Exercise finder</a></div></details><details class="navgrp"><summary>Sources ▾</summary><div class="pop"><a href="../slides/index.html">Lecturer slides</a><a href="../books/index.html">Book map</a><a href="../sources/index.html">Sources, coverage, source errors</a></div></details><a class="lang-sw" href="../../vi/props/index.html">🇻🇳 VI</a>
+<details class="menu"><summary>🎨</summary><div class="pop"><button data-set-theme="light">Light</button><button data-set-theme="dark">Dark</button><button data-set-theme="sepia">Sepia</button><hr><button data-set-font="14px">Small text</button><button data-set-font="16px">Medium text</button><button data-set-font="19px">Large text</button></div></details></nav></div></header>
+<main class="wrap"><style>
+#props-app .pcard{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:6px 16px 14px;margin:16px 0;box-shadow:var(--shadow)}
+#props-app .prow{display:flex;flex-wrap:wrap;gap:10px 16px;margin:.6em 0}
+#props-app .pf{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1 1 200px;font-size:.9rem}
+#props-app .pf label{color:var(--muted);font-size:.84rem;line-height:1.3}
+#props-app .pf .pfb{display:flex;align-items:center;gap:6px;min-width:0}
+#props-app .pf .pfu{color:var(--muted);font-size:.82rem;white-space:nowrap}
+#props-app select,#props-app input[type=text]{font:inherit;width:100%;min-width:0;box-sizing:border-box;padding:5px 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg);color:var(--text)}
+#props-app input.bad{border-color:var(--bad);background:var(--badbg)}
+#props-app .perr{color:var(--bad);font-size:.8rem}
+#props-app .pbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:.6em 0}
+#props-app button.pbtn{font:inherit;font-size:.9rem;padding:6px 14px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;cursor:pointer}
+#props-app button.pbtn.ghost{background:none;color:var(--accent)}
+#props-app button.pchip{font:inherit;font-size:.82rem;padding:3px 10px;border-radius:99px;border:1px solid var(--border);background:var(--code);color:var(--text);cursor:pointer}
+#props-app .tw{overflow-x:auto;max-width:100%}
+#props-app table.pres{border-collapse:collapse;margin:8px 0;max-width:100%;font-size:.92em}
+#props-app table.pres th,#props-app table.pres td{border:1px solid var(--border);padding:4px 10px;text-align:left}
+#props-app table.pres td.v{font-variant-numeric:tabular-nums;font-weight:600;text-align:right}
+#props-app table.pres th{background:var(--code)}
+#props-app .sus{background:var(--warnbg);color:var(--warn);font-weight:700}
+#props-app .badge{display:inline-block;font-size:.72rem;font-weight:800;padding:1px 7px;border-radius:99px;background:var(--warnbg);color:var(--warn);border:1px solid var(--warn);margin-left:6px}
+#props-app .src{font-size:.88rem;margin:.4em 0;padding:6px 10px;border-left:3px solid var(--info);background:var(--infobg);border-radius:0 8px 8px 0}
+#props-app .src ul{margin:.2em 0;padding-left:1.2em}
+#props-app .ptab{max-height:60vh;overflow:auto;border:1px solid var(--border);border-radius:8px}
+#props-app table.full{border-collapse:collapse;font-size:.8rem;font-variant-numeric:tabular-nums}
+#props-app table.full th,#props-app table.full td{border:1px solid var(--border);padding:2px 7px;text-align:right;white-space:nowrap}
+#props-app table.full th{background:var(--code);position:sticky;top:0}
+#props-app .pimg img{max-width:100%;border:1px solid var(--border);border-radius:6px;margin:6px 0}
+#props-app details{margin:.5em 0}
+#props-app summary{cursor:pointer;font-weight:700}
+#props-app .note{font-size:.86rem;color:var(--muted);margin:.3em 0}
+</style><div id="props-app" data-lang="en" data-root="../../"><h1>Property tables lookup (Appendix 1, Cengel &amp; Boles)</h1><p class="lead">Look up water, R-134a, air and other gases, constants, fuels and isentropic flow from the tables printed in Appendix 1 (SI units; for air also the English-unit table A-17E). Every result comes with its source cell: table, printed page, the rows used and the page image so you can check it yourself.</p><div class="callout"><b class="t">Scope</b>Linear interpolation in the table&#x27;s printed variable (superheated vapour: linear in T inside the two neighbouring pressure blocks, then linear in P; wet region: y = y_f + x·y_fg). Values outside the table are refused, never extrapolated. The charts (T-s, Mollier, P-h, psychrometric, generalized departure) are NOT read: out of scope. Substance names stay in English as printed in the tables.</div><div class="pcard"><div class="prow"><div class="pf"><label for="p-sub">Substance / table group</label><select id="p-sub"></select></div><div class="pf"><label for="p-mode">Lookup type</label><select id="p-mode"></select></div></div><div class="prow" id="p-inputs"></div><div class="pbar"><button type="button" class="pbtn" id="p-go">Look up</button><button type="button" class="pbtn ghost" id="p-clear">Clear result</button><button type="button" class="pbtn ghost" id="p-fullbtn">Show whole table</button><span class="note">Quick examples:</span> <span id="p-exs"></span></div><div class="note" id="p-ready">…</div></div><div id="p-out" aria-live="polite"></div><div id="p-tabwrap"></div><h2>Print errors of the book found</h2><p>Found by internal consistency checks (h − u = RT, Δs° = Δh/T, v_r·P_r/T = constant, h_fg = h_g − h_f…). The PRINTED number is still used in lookups; the &quot;expected&quot; column is a derived value, not a number from the book.</p><div id="p-errata"></div><h2>Reliability</h2><p>Every table went through: structure checks; comparison with the page images by hand reading; internal consistency checks; comparison with iapws / CoolProp; re-running the worked examples of Tutorials I. Details: data/props/crosscheck.json, book_errata.json, handread.json.</p><div class="callout warn" id="props-todo"><b class="t">NOT DONE (stated plainly)</b>A-3, A-8, A-16, A-28 (equilibrium constants K_p), A-33, A-34 (normal shock, Rayleigh) and all English-unit tables except A-17E (A-1E…A-16E, A-18E…A-27E) were not extracted; the vector charts (A-9, A-10, A-14, A-15, A-29…A-31) are not read for values.</div></div><script type="application/json" id="props-i18n">{"exact": "exact table row", "linear": "linear interpolation", "bilinear": "two-way interpolation", "polynomial": "A-2c polynomial", "formula": "formula", "quantity": "Quantity", "value": "Value", "unit": "Unit", "method": "Method", "src": "Source", "table": "Table", "pgin": "printed page", "pgpdf": "PDF p.", "rows": "Rows used", "inputs": "Inputs", "notes": "Notes", "suspect": "SUSPECTED PRINT ERROR", "suspect_msg": "The result uses a cell that the book prints wrongly (the printed number is kept, but doubtful). See the list of print errors below.", "err": "Cannot look up", "range_hint": "The value is outside the table or the table cell is blank: the library does not extrapolate.", "req": "Enter a number.", "img": "Show page image", "full": "Show whole table", "hide": "Hide table", "e_table": "Table", "e_row": "Row", "e_col": "Cell", "e_printed": "Printed", "e_exp": "Expected", "e_how": "How expected value was derived", "e_img": "Image checked", "yes": "yes", "no": "not yet", "sub_opts": [["water", "Water (H₂O)"], ["r134a", "R-134a"], ["air", "Air (ideal gas)"], ["gas", "Other ideal gases (per kmol)"], ["const", "Constants and specific heats"], ["form", "Enthalpy of formation, fuels"], ["iso", "Isentropic compressible flow (k = 1.4)"]], "modes": {"w_satT": "Saturated, by temperature (A-4)", "w_satP": "Saturated, by pressure (A-5)", "w_sh": "Superheated vapour (A-6)", "w_comp": "Compressed liquid (A-7)", "r_satT": "Saturated, by temperature (A-11)", "r_satP": "Saturated, by pressure (A-12)", "r_sh": "Superheated vapour (A-13)", "air": "Air: h, P_r, u, v_r, s° (A-17 / A-17E)", "gas": "Gas tables (A-18…A-25): h̄, ū, s̄°", "c_crit": "Molar mass, gas constant, critical point (A-1)", "c_cp300": "c_p, c_v, k at 300 K (A-2a)", "c_cpT": "c_p, c_v, k versus T (A-2b)", "c_poly": "c_p(T) polynomial (A-2c)", "f_form": "Enthalpy and Gibbs function of formation, absolute entropy (A-26)", "f_fuel": "Fuels: HHV, LHV (A-27)", "iso": "Isentropic flow functions (A-32)"}, "F": {"T_C": "Temperature T", "Pk": "Pressure P", "Pm": "Pressure P", "x": "Quality x (optional; empty = saturated liquid/vapour only)", "given": "Known", "value": "Value", "sys": "Unit system", "gas": "Substance", "T_K": "Temperature T", "T_R": "Temperature T", "sub": "Substance", "fuel": "Fuel", "Ma": "Mach number"}, "OPT": {"T": "T", "h": "h", "s": "s", "u": "u", "v": "v", "Pr": "P_r", "vr": "v_r", "s0": "s°", "SI": "SI (K, kJ/kg)", "E": "English (R, Btu/lbm)", "Ma": "Ma", "AAs_sub": "A/A* (subsonic)", "AAs_sup": "A/A* (supersonic)", "PP0": "P/P₀", "rr0": "ρ/ρ₀", "TT0": "T/T₀"}, "NAME": {"Psat_kPa": "Saturation pressure", "Tsat_C": "Saturation temperature", "vf": "Specific volume, sat. liquid", "vg": "Specific volume, sat. vapour", "uf": "Internal energy, sat. liquid", "ufg": "Internal energy of vaporization", "ug": "Internal energy, sat. vapour", "hf": "Enthalpy, sat. liquid", "hfg": "Enthalpy of vaporization", "hg": "Enthalpy, sat. vapour", "sf": "Entropy, sat. liquid", "sfg": "Entropy of vaporization", "sg": "Entropy, sat. vapour", "v": "Specific volume", "u": "Internal energy", "h": "Enthalpy", "s": "Entropy", "T_C": "Temperature", "T_K": "Temperature", "T_R": "Temperature", "Pr": "Relative pressure", "vr": "Relative specific volume", "s0": "Absolute entropy s° (1 atm)", "M": "Molar mass", "R": "Gas constant", "Tcr": "Critical temperature", "Pcr": "Critical pressure", "Vcr": "Critical molar volume", "cp": "c_p", "cv": "c_v", "k": "k = c_p/c_v", "hf0": "Enthalpy of formation h̄_f°", "gf0": "Gibbs function of formation ḡ_f°", "rho": "Density", "HHV": "Higher heating value (HHV)", "LHV": "Lower heating value (LHV)", "cp_mol": "c_p (molar)", "cp_mass": "c_p (mass basis, divided by M)", "Ma": "Mach number", "Ma_star": "Ma*", "A_Astar": "A/A*", "P_P0": "P/P₀", "rho_rho0": "ρ/ρ₀", "T_T0": "T/T₀", "hx": "Enthalpy of the wet mixture", "vx": "Specific volume of the wet mixture", "ux": "Internal energy of the wet mixture", "sx": "Entropy of the wet mixture"}, "oneexs": ["Saturated water at 100 °C", "R-134a at 0.8 MPa, s = 0.94456", "Air, P_r = 11.088 (compression rp = 8)"]}</script><script>document.addEventListener("DOMContentLoaded",function(){
+(function(){
+var app=document.getElementById('props-app'); if(!app||!window.Props) return;
+var LANG=app.getAttribute('data-lang'), ROOT=app.getAttribute('data-root');
+var S=JSON.parse(document.getElementById('props-i18n').textContent);
+var P=window.Props, tables={}, ready=false;
+P.setLang(LANG);
+var SYM={Psat_kPa:'P<sub>sat</sub>',Tsat_C:'T<sub>sat</sub>',vf:'v<sub>f</sub>',vg:'v<sub>g</sub>',uf:'u<sub>f</sub>',ufg:'u<sub>fg</sub>',ug:'u<sub>g</sub>',hf:'h<sub>f</sub>',hfg:'h<sub>fg</sub>',hg:'h<sub>g</sub>',sf:'s<sub>f</sub>',sfg:'s<sub>fg</sub>',sg:'s<sub>g</sub>',v:'v',u:'u',h:'h',s:'s',T_C:'T',T_K:'T',T_R:'T',Pr:'P<sub>r</sub>',vr:'v<sub>r</sub>',s0:'s°',M:'M',R:'R',Tcr:'T<sub>cr</sub>',Pcr:'P<sub>cr</sub>',Vcr:'V<sub>cr</sub>',cp:'c<sub>p</sub>',cv:'c<sub>v</sub>',k:'k',hf0:'h̄<sub>f</sub>°',gf0:'ḡ<sub>f</sub>°',rho:'ρ',HHV:'HHV',LHV:'LHV',cp_mol:'c̄<sub>p</sub>',cp_mass:'c<sub>p</sub>',Ma:'Ma',Ma_star:'Ma*',A_Astar:'A/A*',P_P0:'P/P<sub>0</sub>',rho_rho0:'ρ/ρ<sub>0</sub>',T_T0:'T/T<sub>0</sub>',hx:'h',vx:'v',ux:'u',sx:'s'};
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function fmt(x){
+  if(typeof x!=='number') return x===null?'—':esc(x);
+  if(!isFinite(x)) return '—';
+  var a=Math.abs(x), s;
+  if(a!==0&&(a<1e-3||a>=1e7)) s=x.toExponential(4); else s=String(+x.toPrecision(7));
+  s=s.replace('-','−'); if(LANG==='vi') s=s.replace('.',','); return s;
+}
+function unitHTML(u){return esc(u||'').replace(/m3/g,'m³').replace(/\^2/g,'²')}
+function parseNum(str){ str=String(str).replace(/−/g,'-').replace(/\s/g,'').replace(',','.'); if(str===''||!/^[-+]?(\d+\.?\d*|\.\d+)([eE][-+]?\d+)?$/.test(str)) return NaN; return parseFloat(str); }
+function load(){
+  return P.load(P.fetchLoader(ROOT+'data/props/')).then(function(){ ready=true; });
+}
+// ---------- cau hinh che do tra ----------
+var WCOLS=['Psat_kPa','vf','vg','uf','ufg','ug','hf','hfg','hg','sf','sfg','sg'], WCOLS_P=['Tsat_C','vf','vg','uf','ufg','ug','hf','hfg','hg','sf','sfg','sg'];
+var GIV_SH=['T','h','s','u','v'], PROPS4=['v','u','h','s'];
+var GASES=['N2','O2','CO2','CO','H2','H2O','O','OH'];
+function sel(opts){return opts}
+function names(file,idx){var t=P.table(file);return t.rows.map(function(r){return r[idx]})}
+var GROUPS={water:['w_satT','w_satP','w_sh','w_comp'],r134a:['r_satT','r_satP','r_sh'],air:['air'],gas:['gas'],const:['c_crit','c_cp300','c_cpT','c_poly'],form:['f_form','f_fuel'],iso:['iso']};
+function givenOpts(list){return list.map(function(g){return {v:g,l:S.OPT[g]}})}
+var MODES={
+ w_satT:{fields:function(){return [{id:'T',lab:S.F.T_C,unit:'°C',def:'100'},{id:'x',lab:S.F.x,unit:'',def:'',opt:true}]}},
+ w_satP:{fields:function(){return [{id:'P',lab:S.F.Pk,unit:'kPa',def:'101,325'},{id:'x',lab:S.F.x,unit:'',def:'',opt:true}]}},
+ w_sh:{fields:function(){return [{id:'P',lab:S.F.Pm,unit:'MPa',def:'1'},{id:'g',lab:S.F.given,type:'select',opts:givenOpts(GIV_SH),def:'T'},{id:'val',lab:S.F.value,unit:'°C',def:'300',unitBy:'g'}]}},
+ w_comp:{fields:function(){return [{id:'P',lab:S.F.Pm,unit:'MPa',def:'10'},{id:'T',lab:S.F.T_C,unit:'°C',def:'100'}]}},
+ r_satT:{fields:function(){return [{id:'T',lab:S.F.T_C,unit:'°C',def:'20'},{id:'x',lab:S.F.x,unit:'',def:'',opt:true}]}},
+ r_satP:{fields:function(){return [{id:'P',lab:S.F.Pk,unit:'kPa',def:'800'},{id:'x',lab:S.F.x,unit:'',def:'',opt:true}]}},
+ r_sh:{fields:function(){return [{id:'P',lab:S.F.Pm,unit:'MPa',def:'0,8'},{id:'g',lab:S.F.given,type:'select',opts:givenOpts(GIV_SH),def:'T'},{id:'val',lab:S.F.value,unit:'°C',def:'60',unitBy:'g'}]}},
+ air:{fields:function(){return [{id:'sys',lab:S.F.sys,type:'select',opts:givenOpts(['SI','E']),def:'SI'},{id:'g',lab:S.F.given,type:'select',opts:givenOpts(['T','h','Pr','u','vr','s0']),def:'T'},{id:'val',lab:S.F.value,unit:'K',def:'300',unitBy:'air'}]}},
+ gas:{fields:function(){return [{id:'gas',lab:S.F.gas,type:'select',opts:GASES.map(function(g){return {v:g,l:g}}),def:'N2'},{id:'g',lab:S.F.given,type:'select',opts:givenOpts(['T','h','u','s0']),def:'T'},{id:'val',lab:S.F.value,unit:'K',def:'500',unitBy:'gas'}]}},
+ c_crit:{fields:function(){return [{id:'sub',lab:S.F.sub,type:'select',opts:P.table('A1').rows.map(function(r){return {v:r[0],l:r[0]+(r[1]!=='—'?' ('+r[1]+')':'')}}),def:'Air'}]}},
+ c_cp300:{fields:function(){return [{id:'sub',lab:S.F.sub,type:'select',opts:P.table('A2a').rows.map(function(r){return {v:r[0],l:r[0]+(r[1]!=='—'?' ('+r[1]+')':'')}}),def:'Air'}]}},
+ c_cpT:{fields:function(){return [{id:'gas',lab:S.F.gas,type:'select',opts:['Air','CO2','CO','H2','N2','O2'].map(function(g){return {v:g,l:g}}),def:'Air'},{id:'T',lab:S.F.T_K,unit:'K',def:'600'}]}},
+ c_poly:{fields:function(){return [{id:'sub',lab:S.F.sub,type:'select',opts:P.table('A2c').rows.map(function(r){return {v:r[0],l:r[0]+(r[1]!=='-'?' ('+r[1]+')':'')}}),def:'Air'},{id:'T',lab:S.F.T_K,unit:'K',def:'500'}]}},
+ f_form:{fields:function(){return [{id:'sub',lab:S.F.sub,type:'select',opts:P.table('A26').rows.map(function(r){return {v:r[1],l:r[0]+' · '+r[1]}}),def:'CO2(g)'}]}},
+ f_fuel:{fields:function(){return [{id:'sub',lab:S.F.fuel,type:'select',opts:P.table('A27').rows.map(function(r){return {v:r[0],l:r[0]+' · '+r[1]}}),def:'Methane (g)'}]}},
+ iso:{fields:function(){return [{id:'g',lab:S.F.given,type:'select',opts:givenOpts(['Ma','AAs_sub','AAs_sup','PP0','rr0','TT0']),def:'Ma'},{id:'val',lab:S.F.value,unit:'',def:'2'}]}}
+};
+function unitFor(mode,gv,extra){
+  if(mode==='w_sh'||mode==='r_sh') return {T:'°C',h:'kJ/kg',s:'kJ/(kg·K)',u:'kJ/kg',v:'m³/kg'}[gv];
+  if(mode==='air') return extra==='SI'?{T:'K',h:'kJ/kg',Pr:'',u:'kJ/kg',vr:'',s0:'kJ/(kg·K)'}[gv]:{T:'R',h:'Btu/lbm',Pr:'',u:'Btu/lbm',vr:'',s0:'Btu/(lbm·R)'}[gv];
+  if(mode==='gas') return {T:'K',h:'kJ/kmol',u:'kJ/kmol',s0:'kJ/(kmol·K)'}[gv];
+  return '';
+}
+var cur={group:'water',mode:'w_satT'}, vals={};
+var elSub=document.getElementById('p-sub'), elMode=document.getElementById('p-mode'), elIn=document.getElementById('p-inputs'), elOut=document.getElementById('p-out'), elTab=document.getElementById('p-tabwrap');
+function fillSub(){ elSub.innerHTML=S.sub_opts.map(function(o){return '<option value="'+o[0]+'">'+esc(o[1])+'</option>'}).join(''); }
+function fillMode(){ elMode.innerHTML=GROUPS[cur.group].map(function(m){return '<option value="'+m+'">'+esc(S.modes[m])+'</option>'}).join(''); elMode.value=cur.mode; }
+function buildFields(preset){
+  var spec=MODES[cur.mode].fields(); var h='';
+  spec.forEach(function(f){
+    var v=(preset&&preset[f.id]!==undefined)?preset[f.id]:f.def;
+    h+='<div class="pf"><label for="pf-'+f.id+'">'+esc(f.lab)+'</label><div class="pfb">';
+    if(f.type==='select'){ h+='<select id="pf-'+f.id+'" data-f="'+f.id+'">'+f.opts.map(function(o){return '<option value="'+esc(o.v)+'"'+(o.v===v?' selected':'')+'>'+esc(o.l)+'</option>'}).join('')+'</select>'; }
+    else { h+='<input type="text" inputmode="decimal" autocomplete="off" id="pf-'+f.id+'" data-f="'+f.id+'" value="'+esc(String(v).replace('.',LANG==='vi'?',':'.'))+'">'+'<span class="pfu" id="pu-'+f.id+'">'+unitHTML(f.unit)+'</span>'; }
+    h+='</div><div class="perr" id="pe-'+f.id+'"></div></div>';
+  });
+  elIn.innerHTML=h;
+  elIn.querySelectorAll('select').forEach(function(s){ s.addEventListener('change',refreshUnits); });
+  elIn.querySelectorAll('input').forEach(function(i){ i.addEventListener('keydown',function(e){ if(e.key==='Enter') run(); }); });
+  refreshUnits();
+}
+function refreshUnits(){
+  var spec=MODES[cur.mode].fields();
+  spec.forEach(function(f){ if(!f.unitBy) return; var u=document.getElementById('pu-'+f.id); if(!u) return;
+    var g=elIn.querySelector('[data-f="g"]'), sy=elIn.querySelector('[data-f="sys"]');
+    var gv=g?g.value:'', ex=(f.unitBy==='air')?(sy?sy.value:'SI'):'';
+    if(cur.mode==='iso') u.innerHTML=''; else u.innerHTML=unitHTML(unitFor(cur.mode,gv,ex)); });
+}
+function getVals(){
+  var spec=MODES[cur.mode].fields(), out={}, ok=true;
+  spec.forEach(function(f){
+    var el=elIn.querySelector('[data-f="'+f.id+'"]'), er=document.getElementById('pe-'+f.id); er.textContent=''; if(el.classList) el.classList.remove('bad');
+    if(f.type==='select'){ out[f.id]=el.value; return; }
+    var raw=el.value.trim();
+    if(raw===''&&f.opt){ out[f.id]=null; return; }
+    var n=parseNum(raw); if(isNaN(n)){ ok=false; er.textContent=S.req; el.classList.add('bad'); }
+    out[f.id]=n;
+  });
+  return ok?out:null;
+}
+// ---------- tinh ----------
+function lk(name,res){return {name:name,res:res}}
+function tryLk(items,name,fn){ try{ items.push(lk(name,fn())); }catch(e){ if(e&&e.name==='PropsRangeError') throw e; throw e; } }
+function compute(v){
+  var m=cur.mode, items=[], sub=(m[0]==='r')?'R134a':'water';
+  function add(k,fn){ items.push(lk(k,fn())); }
+  if(m==='w_satT'||m==='r_satT'){
+    WCOLS.slice(1).forEach(function(c){ add(c,function(){return P.sat_T(sub,v.T,c)}); }); add('Psat_kPa',function(){return P.sat_T(sub,v.T,'Psat_kPa')});
+    if(v.x!==null&&v.x!==undefined){ ['v','u','h','s'].forEach(function(c){ add(c+'x',function(){return P.wet_T(sub,v.T,v.x,c)}); }); }
+  } else if(m==='w_satP'||m==='r_satP'){
+    WCOLS_P.slice(1).forEach(function(c){ add(c,function(){return P.sat_P(sub,v.P,c)}); }); add('Tsat_C',function(){return P.sat_P(sub,v.P,'Tsat_C')});
+    if(v.x!==null&&v.x!==undefined){ ['v','u','h','s'].forEach(function(c){ add(c+'x',function(){return P.wet_P(sub,v.P,v.x,c)}); }); }
+  } else if(m==='w_sh'||m==='r_sh'){
+    if(v.g==='T'){ PROPS4.forEach(function(c){ add(c,function(){return P.superheated(sub,v.P,v.val,c)}); }); }
+    else { var inv=P.superheated_inverse(sub,v.P,v.g,v.val); items.push(lk('T_C',inv)); PROPS4.forEach(function(c){ if(c!==v.g) items.push(lk(c,derived(inv,inv.extra[c],c))); }); }
+  } else if(m==='w_comp'){
+    PROPS4.forEach(function(c){ add(c,function(){return P.compressed(v.P,v.T,c)}); });
+    var ap=[]; PROPS4.forEach(function(c){ try{ var r=P.compressed_approx(v.T,c); items.push(lk(c+'~',r)); }catch(e){} });
+  } else if(m==='air'){
+    var ic=v.sys==='SI'?'T_K':'T_R';
+    if(v.g==='T'){ ['h','Pr','u','vr','s0'].forEach(function(c){ add(c,function(){return P.air(v.val,c,v.sys)}); }); }
+    else { var ia=P.air_inverse(v.g,v.val,v.sys); items.push(lk(ic,ia)); ['h','Pr','u','vr','s0'].forEach(function(c){ if(c!==v.g) items.push(lk(c,derived(ia,ia.extra[c],c))); }); }
+  } else if(m==='gas'){
+    if(v.g==='T'){ ['h','u','s0'].forEach(function(c){ add(c,function(){return P.gas_kmol(v.gas,v.val,c)}); }); }
+    else { var ig=P.gas_kmol_inverse(v.gas,v.g,v.val); items.push(lk('T_K',ig)); ['h','u','s0'].forEach(function(c){ if(c!==v.g) add(c,function(){return P.gas_kmol(v.gas,ig.value,c)}); }); }
+  } else if(m==='c_crit'){ ['M','R','Tcr','Pcr','Vcr'].forEach(function(c){ add(c,function(){return P.critical(v.sub,c)}); });
+  } else if(m==='c_cp300'){ ['R','cp','cv','k'].forEach(function(c){ add(c,function(){return P.cp_300(v.sub,c)}); });
+  } else if(m==='c_cpT'){ ['cp','cv','k'].forEach(function(c){ add(c,function(){return P.cp_T(v.gas,v.T,c)}); });
+  } else if(m==='c_poly'){
+    add('cp_mol',function(){return P.cp_poly(v.sub,v.T,false)});
+    try{ items.push(lk('cp_mass',P.cp_poly(v.sub,v.T,true))); }catch(e){}
+  } else if(m==='f_form'){ ['hf0','gf0','s0'].forEach(function(c){ add(c,function(){return P.formation(v.sub,c)}); });
+  } else if(m==='f_fuel'){ ['M','rho','hfg','cp','HHV','LHV'].forEach(function(c){ add(c,function(){return P.fuel(v.sub,c)}); });
+  } else if(m==='iso'){
+    var Ma=v.val, cols=['Ma_star','A_Astar','P_P0','rho_rho0','T_T0'];
+    if(v.g!=='Ma'){ var pm={AAs_sub:['A_Astar','sub'],AAs_sup:['A_Astar','sup'],PP0:['P_P0','sub'],rr0:['rho_rho0','sub'],TT0:['T_T0','sub']}[v.g]; var iv=P.isentropic_inverse(pm[0],v.val,pm[1]); items.push(lk('Ma',iv)); Ma=iv.value; }
+    cols.forEach(function(c){ add(c,function(){return P.isentropic(Ma,c)}); });
+  }
+  return items;
+}
+function derived(parent,value,col){ // gia tri phu tinh cung phep noi suy nguoc: dung lai nguon cua phep tra nguoc
+  var r=JSON.parse(JSON.stringify(parent)); r.value=value; r.unit=''; r.derivedUnit=true; return r;
+}
+var UNITS_FIX={Psat_kPa:'kPa',Tsat_C:'°C',T_C:'°C'};
+// ---------- hien thi ----------
+function methodLabel(m){return S[m]||m}
+function pageLink(pdf){var n=('0'+pdf).slice(-2); return ROOT+'assets/appendix/p'+n+'.jpg'}
+function render(items,vals0){
+  var h='<div class="pcard"><div class="tw"><table class="pres"><tr><th>'+esc(S.quantity)+'</th><th>'+esc(S.value)+'</th><th>'+esc(S.unit)+'</th><th>'+esc(S.method)+'</th></tr>';
+  var anySus=false, notes={}, srcs={};
+  items.forEach(function(it){
+    var r=it.res, sus=r.suspect; if(sus) anySus=true;
+    var unit=r.unit; if(r.derivedUnit){ unit=guessUnit(it.name,r); }
+    h+='<tr><td>'+(SYM[it.name]||esc(it.name))+' — '+esc(S.NAME[it.name]||S.NAME[it.name.replace(/x$/,'')+'x']||it.name)+'</td><td class="v'+(sus?' sus':'')+'">'+fmt(r.value)+(sus?'<span class="badge">'+esc(S.suspect)+'</span>':'')+'</td><td>'+unitHTML(unit)+'</td><td>'+esc(methodLabel(r.method))+'</td></tr>';
+    if(r.note) notes[r.note]=1;
+    (r.rows_used||[]).forEach(function(u){ var k=r.table+'|'+JSON.stringify(u.key)+'|'+u.pdf_page+(u.sat_row?'|sat':''); var o=srcs[k]||(srcs[k]={table:r.table,key:u.key,pdf:u.pdf_page,sat:u.sat_row,cells:{}}); for(var c in u.cells) o.cells[c]=u.cells[c]; });
+  });
+  h+='</table></div>';
+  if(anySus) h+='<div class="callout warn"><b class="t">⚠ '+esc(S.suspect)+'</b>'+esc(S.suspect_msg)+'</div>';
+  // nguon
+  var tp={}; items.forEach(function(it){ var r=it.res; tp[r.table]=tp[r.table]||{}; (r.pdf_pages||[r.pdf_page]).forEach(function(p){tp[r.table][p]=1}); });
+  h+='<div class="src"><b>'+esc(S.src)+':</b> ';
+  h+=Object.keys(tp).map(function(t){ return esc(S.table)+' '+esc(t)+', '+Object.keys(tp[t]).map(function(p){p=+p; return esc(S.pgin)+' '+(p+908)+' ('+esc(S.pgpdf)+p+') <a href="'+pageLink(p)+'" target="_blank" rel="noopener" data-pageimg="'+p+'">'+esc(S.img)+'</a>'}).join('; ') }).join(' · ');
+  h+='<details><summary>'+esc(S.rows)+' ('+Object.keys(srcs).length+')</summary><ul>';
+  Object.keys(srcs).forEach(function(k){ var o=srcs[k]; var ks=Object.keys(o.key).map(function(c){return (SYM[c]||esc(c)).replace(/<sub>|<\/sub>/g,'')+' = '+fmt(o.key[c])}).join(', '); var cs=Object.keys(o.cells).map(function(c){return (SYM[c]||esc(c))+' = '+fmt(o.cells[c])}).join(', ');
+    h+='<li>'+esc(o.table)+(o.sat?' (Sat.)':'')+' · '+ks+' · '+esc(S.pgin)+' '+(o.pdf+908)+' · '+cs+'</li>'; });
+  h+='</ul></details>';
+  var nk=Object.keys(notes); if(nk.length) h+='<details open><summary>'+esc(S.notes)+'</summary><ul>'+nk.map(function(n){return '<li>'+esc(LANG==='vi'?n.replace(/(\d)\.(\d)/g,'$1,$2'):n)+'</li>'}).join('')+'</ul></details>';
+  h+='</div></div>';
+  elOut.innerHTML=h;
+}
+function guessUnit(name,r){
+  var m=cur.mode;
+  if(m==='w_sh'||m==='r_sh') return {v:'m3/kg',u:'kJ/kg',h:'kJ/kg',s:'kJ/(kg·K)'}[name]||'';
+  if(m==='air'){ var sy=elIn.querySelector('[data-f="sys"]').value; return sy==='SI'?{h:'kJ/kg',u:'kJ/kg',s0:'kJ/(kg·K)'}[name]||'':{h:'Btu/lbm',u:'Btu/lbm',s0:'Btu/(lbm·R)'}[name]||''; }
+  return '';
+}
+function showError(msg){
+  elOut.innerHTML='<div class="pcard"><div class="callout bad"><b class="t">'+esc(S.err)+'</b>'+esc(msg)+'<br><span class="note">'+esc(S.range_hint)+'</span></div></div>';
+}
+function run(){
+  if(!ready) return;
+  var v=getVals(); if(!v) return;
+  try{ var items=compute(v); render(items,v); }
+  catch(e){ if(e&&e.name==='PropsRangeError') showError(e.message); else showError(String(e&&e.message||e)); }
+}
+// ---------- nguyen bang ----------
+var FILE_OF={w_satT:'A4',w_satP:'A5',w_sh:'A6',w_comp:'A7',r_satT:'A11',r_satP:'A12',r_sh:'A13',air:'A17',gas:'A18',c_crit:'A1',c_cp300:'A2a',c_cpT:'A2b',c_poly:'A2c',f_form:'A26',f_fuel:'A27',iso:'A32'};
+function susMap(tb){ var m={}; P.table('book_errata').errors.forEach(function(e){ if(e.table!==tb) return; m[e.col+'|'+Object.keys(e.key).map(function(k){return e.key[k]}).join('|')]=e; }); return m; }
+function showTable(){
+  var file=FILE_OF[cur.mode]; if(cur.mode==='air'){ var sy=elIn.querySelector('[data-f="sys"]'); if(sy&&sy.value==='E') file='A17E'; }
+  if(cur.mode==='gas'){ var g=elIn.querySelector('[data-f="gas"]'); file={N2:'A18',O2:'A19',CO2:'A20',CO:'A21',H2:'A22',H2O:'A23',O:'A24',OH:'A25'}[g.value]; }
+  var t=P.table(file), sm=susMap(t.table), h='<div class="note"><b>'+esc(S.table)+' '+esc(t.table)+'</b> — '+esc(t.title[LANG])+' · '+esc(S.pgin)+' '+t.printed_pages.join(', ')+' ('+esc(S.pgpdf)+t.pdf_pages.join(', ')+') '+t.pdf_pages.map(function(p){return '<a href="'+pageLink(p)+'" target="_blank" rel="noopener">'+p+'</a>'}).join(' ')+'</div>';
+  function head(cols){ return '<tr>'+cols.map(function(c){ return '<th>'+(SYM[c]||esc(c))+'<br><span style="font-weight:400">'+unitHTML(t.units[c]||'')+'</span></th>'}).join('')+'</tr>'; }
+  function cell(c,v,key){ var e=sm[c+'|'+key]; return '<td'+(e?' class="sus" title="'+esc(S.e_exp+': '+e.expected)+'"':'')+'>'+fmt(v)+'</td>'; }
+  h+='<div class="ptab"><table class="full">';
+  if(t.blocks){
+    t.blocks.forEach(function(b){ var cap='P = '+fmt(b.param.P_MPa)+' MPa'+(b.param.Tsat_C!==null?' (T<sub>sat</sub> = '+fmt(b.param.Tsat_C)+' °C)':'');
+      h+='<tr><th colspan="'+t.columns.length+'" style="text-align:left">'+cap+'</th></tr>'+head(t.columns);
+      if(b.sat&&b.param.Tsat_C!==null) h+='<tr><td>Sat.</td>'+b.sat.map(function(v,i){return cell(t.columns[i+1],v,b.param.Tsat_C)}).join('')+'</tr>';
+      b.rows.forEach(function(r){ h+='<tr>'+r.map(function(v,i){return cell(t.columns[i],v,r[0])}).join('')+'</tr>'; }); });
+  } else {
+    h+=head(t.columns);
+    t.rows.forEach(function(r){ h+='<tr>'+r.map(function(v,i){return cell(t.columns[i],v,r[t.columns.indexOf(t.index)>=0?t.columns.indexOf(t.index):0])}).join('')+'</tr>'; });
+  }
+  h+='</table></div>';
+  elTab.innerHTML=h; elTab.setAttribute('data-open','1'); document.getElementById('p-fullbtn').textContent=S.hide;
+}
+function toggleTable(){ if(elTab.getAttribute('data-open')==='1'){ elTab.innerHTML=''; elTab.removeAttribute('data-open'); document.getElementById('p-fullbtn').textContent=S.full; } else showTable(); }
+// ---------- vi du ----------
+var EXS=[
+ {label:S.oneexs[0],group:'water',mode:'w_satT',preset:{T:'100'}},
+ {label:S.oneexs[1],group:'r134a',mode:'r_sh',preset:{P:'0,8',g:'s',val:'0,94456'}},
+ {label:S.oneexs[2],group:'air',mode:'air',preset:{sys:'SI',g:'Pr',val:'11,088'}}
+];
+function setMode(group,mode,preset){ cur.group=group; cur.mode=mode; elSub.value=group; fillMode(); buildFields(preset); elOut.innerHTML=''; if(elTab.getAttribute('data-open')==='1'){ showTable(); } }
+function init(){
+  fillSub(); fillMode(); buildFields();
+  elSub.addEventListener('change',function(){ cur.group=elSub.value; cur.mode=GROUPS[cur.group][0]; fillMode(); buildFields(); elOut.innerHTML=''; if(elTab.getAttribute('data-open')==='1') showTable(); });
+  elMode.addEventListener('change',function(){ cur.mode=elMode.value; buildFields(); elOut.innerHTML=''; if(elTab.getAttribute('data-open')==='1') showTable(); });
+  document.getElementById('p-go').addEventListener('click',run);
+  document.getElementById('p-clear').addEventListener('click',function(){ elOut.innerHTML=''; });
+  document.getElementById('p-fullbtn').addEventListener('click',toggleTable);
+  var ex=document.getElementById('p-exs'); ex.innerHTML=EXS.map(function(e,i){return '<button type="button" class="pchip" data-ex="'+i+'">'+esc(e.label)+'</button>'}).join(' ');
+  ex.addEventListener('click',function(e){ var b=e.target.closest('[data-ex]'); if(!b) return; var o=EXS[+b.getAttribute('data-ex')]; setMode(o.group,o.mode,o.preset); run(); });
+  // danh sach loi in
+  var E=P.table('book_errata').errors, h='<tr><th>'+esc(S.e_table)+'</th><th>'+esc(S.e_row)+'</th><th>'+esc(S.e_col)+'</th><th>'+esc(S.e_printed)+'</th><th>'+esc(S.e_exp)+'</th><th>'+esc(S.e_how)+'</th><th>'+esc(S.e_img)+'</th></tr>';
+  E.forEach(function(e){ var k=Object.keys(e.key).map(function(c){return c+' = '+fmt(e.key[c])}).join(', '); h+='<tr><td>'+esc(e.table)+'</td><td>'+esc(k)+'</td><td>'+(SYM[e.col]||esc(e.col))+'</td><td>'+fmt(e.printed)+'</td><td>'+fmt(e.expected)+'</td><td style="text-align:left;white-space:normal;min-width:260px">'+esc(LANG==='en'?(e.how_en||e.how):e.how)+'</td><td>'+(e.seen_image?esc(S.yes):esc(S.no))+'</td></tr>'; });
+  document.getElementById('p-errata').innerHTML='<div class="ptab"><table class="full">'+h+'</table></div>';
+  document.getElementById('p-ready').textContent='';
+  app.setAttribute('data-ready','1');
+}
+load().then(init).catch(function(e){ document.getElementById('p-ready').textContent=String(e&&e.message||e); });
+})();
+});</script></main>
+<footer class="foot"><div class="wrap"><p><b>References of the syllabus:</b></p><ul style="margin:.3em 0 .8em;padding-left:1.2em"><li>[1] Yunus A. Çengel &amp; Michael A. Boles, Thermodynamics: An Engineering Approach, McGraw-Hill (PDF 963 pp.)</li><li>[2] Ahmed F. El-Sayed, Aircraft Propulsion and Gas Turbine Engines, 2nd ed., CRC Press, 2017 (EPUB)</li><li>[3] Saeed Farokhi, Aircraft Propulsion, 2nd ed., Wiley, 2014 (PDF 1048 pp.)</li></ul><p>Unofficial self-study material for USTH course AE2.013 Thermal Systems, following the syllabus, the lecturer's slides and the three references of the course. Original questions are quoted from the slides and books (source shown per question); every answer was re-solved and checked by script. Property data come from the textbook tables (Cengel & Boles) and were cross-checked against libraries. Original content belongs to its authors, publishers and the lecturer.</p></div></footer>
+<script src="../../_shared/vendor/katex/katex.min.js"></script><script src="../../_shared/vendor/katex/auto-render.min.js"></script>
+<script src="../../_shared/i18n.js"></script><script src="../../_shared/theme.js"></script><script src="../../_shared/nav.js"></script><script src="../../_shared/props.js"></script><script src="../../_shared/math.js"></script></body></html>

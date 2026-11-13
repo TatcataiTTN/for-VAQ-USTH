@@ -1,0 +1,3394 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí chảy qua động cơ phản lực với lưu lượng 30 kg/s, nhiên liệu 1 kg/s; khí xả rời vòi phun với vận tốc tương đối 610 m/s, áp suất cân bằng ở cửa ra. Công suất đẩy (thrust power) là 1.12×10⁶ W. Phương trình T·u = (ṁa+ṁf)ue·u − ṁa·u² cho vận tốc máy bay u là:",
+   "en": "Air flows through a jet engine at 30 kg/s and the fuel flow is 1 kg/s. The exhaust gases leave the nozzle at a relative velocity of 610 m/s with pressure equilibrium at the exit plane. The thrust power is 1.12×10⁶ W. The equation T·u = (ṁa+ṁf)ue·u − ṁa·u² gives the flight speed u as:"
+  },
+  "opts": [
+   {
+    "vi": "564.2 m/s hoặc 66.2 m/s",
+    "en": "564.2 m/s or 66.2 m/s"
+   },
+   {
+    "vi": "541.0 m/s hoặc 69.0 m/s",
+    "en": "541.0 m/s or 69.0 m/s"
+   },
+   {
+    "vi": "59.2 m/s (bỏ qua số hạng bậc hai)",
+    "en": "59.2 m/s (dropping the quadratic term)"
+   },
+   {
+    "vi": "193.2 m/s",
+    "en": "193.2 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Công suất đẩy = (31×610)u − 30u² = 1.12×10⁶ ⇒ 30u² − 18 910u + 1.12×10⁶ = 0, hai nghiệm 564.16 và 66.18 m/s (sách in 564.15 và 66.17). Nghiệm lớn là chế độ bay thực tế của động cơ phản lực; nghiệm nhỏ là chế độ bay chậm với cùng công suất đẩy.",
+   "en": "Thrust power = (31×610)u − 30u² = 1.12×10⁶ ⇒ 30u² − 18,910u + 1.12×10⁶ = 0, two roots 564.16 and 66.18 m/s (the book prints 564.15 and 66.17). The larger root is the realistic jet cruise; the smaller one is a slow flight state with the same thrust power."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.1 (tr.79)",
+   "en": "El-Sayed Ch.2 Example 2.1 (p.79)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer + script (ex21)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay hạ cánh lăn trên đường băng ở 100 mph; động cơ ở chế độ chạy chậm hút 100 lbm/s không khí và phụt với vận tốc 450 ft/s. Lực đẩy tiến của động cơ là bao nhiêu? (1 mph = 1.4667 ft/s)",
+   "en": "A landing aircraft rolls at 100 mph; the idling engine consumes air at 100 lbm/s and produces an exhaust velocity of 450 ft/s. What is the forward thrust of the engine? (1 mph = 1.4667 ft/s)"
+  },
+  "opts": [
+   {
+    "vi": "942 lbf",
+    "en": "942 lbf"
+   },
+   {
+    "vi": "1,398 lbf",
+    "en": "1,398 lbf"
+   },
+   {
+    "vi": "1,853 lbf",
+    "en": "1,853 lbf"
+   },
+   {
+    "vi": "642 lbf",
+    "en": "642 lbf"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = ṁa(Ue − U)/gc = (100/32.2)×(450 − 146.67) = 942 lbf. Quên trừ vận tốc bay cho 1,398 lbf; cộng thay vì trừ cho 1,853 lbf.",
+   "en": "T = ṁa(Ue − U)/gc = (100/32.2)×(450 − 146.67) = 942 lbf. Forgetting the flight speed gives 1,398 lbf; adding instead of subtracting gives 1,853 lbf."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.2a (tr.80)",
+   "en": "El-Sayed Ch.2 Example 2.2a (p.80)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 942 lbf + script (ex22)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cũng trong tình huống trên (100 mph, 100 lbm/s), nếu dòng phụt bị làm lệch 90° (thành phần ngang của vận tốc phụt bằng 0) và lưu lượng giữ nguyên, lực đẩy theo phương chuyển động là:",
+   "en": "In the same situation (100 mph, 100 lbm/s), if the exhaust is deflected 90° (zero horizontal exhaust velocity) with the mass flow kept constant, the thrust along the flight direction is:"
+  },
+  "opts": [
+   {
+    "vi": "−455.5 lbf",
+    "en": "−455.5 lbf"
+   },
+   {
+    "vi": "−942.0 lbf",
+    "en": "−942.0 lbf"
+   },
+   {
+    "vi": "0.0 lbf",
+    "en": "0.0 lbf"
+   },
+   {
+    "vi": "455.5 lbf",
+    "en": "455.5 lbf"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thành phần ngang của Ue bằng 0: T = (100/32.2)×(0 − 146.67) = −455.5 lbf, âm nghĩa là lực hãm (đẩy ngược): chính là lý do bộ đảo chiều lực đẩy giúp phanh. Chú ý dấu: lực đẩy tiến dương, ngược là âm.",
+   "en": "Horizontal Ue = 0: T = (100/32.2)×(0 − 146.67) = −455.5 lbf; the negative sign means a braking (reverse) force, which is why thrust reversers help to brake. Mind the sign: forward thrust positive, reverse negative."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.2b (tr.80)",
+   "en": "El-Sayed Ch.2 Example 2.2b (p.80)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer −455.5 lbf + script (ex22)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet bay ở độ cao 9 km (Ta = 229.74 K, Pa = 30.8 kPa), Ai = 0.235 m², Ae = 0.25 m², f = 0.02, Pe = 200 kPa, Ue = 600 m/s. Với lưu lượng khí không đổi 40 kg/s, lực đẩy áp suất (Pe − Pa)·Ae bằng:",
+   "en": "A turbojet flies at 9 km (Ta = 229.74 K, Pa = 30.8 kPa) with Ai = 0.235 m², Ae = 0.25 m², f = 0.02, Pe = 200 kPa, Ue = 600 m/s. With a constant air flow of 40 kg/s, the pressure thrust (Pe − Pa)·Ae equals:"
+  },
+  "opts": [
+   {
+    "vi": "42,300 N",
+    "en": "42,300 N"
+   },
+   {
+    "vi": "39,762 N",
+    "en": "39,762 N"
+   },
+   {
+    "vi": "50,000 N",
+    "en": "50,000 N"
+   },
+   {
+    "vi": "42 N",
+    "en": "42 N"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lực đẩy áp suất = Ae(Pe − Pa) = 0.25×(200 − 30.8)×10³ = 42,300 N, không phụ thuộc vận tốc bay. Nhầm Ai thay cho Ae cho 39,762 N; dùng Pe thay cho (Pe − Pa) cho 50 000 N; quên đổi kPa sang Pa cho 42.3 (kN, không phải N).",
+   "en": "Pressure thrust = Ae(Pe − Pa) = 0.25×(200 − 30.8)×10³ = 42,300 N, independent of flight speed. Using Ai instead of Ae gives 39,762 N; using Pe instead of (Pe − Pa) gives 50,000 N; forgetting kPa → Pa gives 42.3 (kN, not N)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.3 (tr.81)",
+   "en": "El-Sayed Ch.2 Example 2.3 (p.81)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 42,300 N + script (ex23)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng động cơ (Ví dụ 2.3, trường hợp lưu lượng khí tỉ lệ với vận tốc bay: ṁa = ρ·U·Ai), lực đẩy thực khi bay ở 1000 km/h gần nhất với:",
+   "en": "Same engine (Example 2.3, case where the air flow follows the flight speed: ṁa = ρ·U·Ai), the net thrust at 1000 km/h is closest to:"
+  },
+  "opts": [
+   {
+    "vi": "52,491 N",
+    "en": "52,491 N"
+   },
+   {
+    "vi": "60,962 N",
+    "en": "60,962 N"
+   },
+   {
+    "vi": "55,670 N",
+    "en": "55,670 N"
+   },
+   {
+    "vi": "10,191 N",
+    "en": "10,191 N"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ρ = Pa/(R·Ta) = 0.4671 kg/m³; U = 277.78 m/s; ṁa = ρ·U·Ai = 30.49 kg/s. Thrust động lượng = ṁa(1+f)Ue = 18,662 N; áp suất = 42,300 N; cản động lượng = ṁa·U = 8,470 N. Lực đẩy thực = 52,491 N (khớp công thức sách 42 300 + 18.66U − 8.47×10⁻³U² tại U = 1000). Chọn giá trị lưu lượng cố định 40 kg/s sẽ cho 66 780 − 11.11U = 55 670 N, sai vì lưu lượng thực giảm ở độ cao.",
+   "en": "ρ = Pa/(R·Ta) = 0.4671 kg/m³; U = 277.78 m/s; ṁa = ρ·U·Ai = 30.49 kg/s. Momentum thrust = ṁa(1+f)Ue = 18,662 N; pressure thrust = 42,300 N; momentum drag = ṁa·U = 8,470 N. Net thrust = 52,491 N (agrees with the book formula 42,300 + 18.66U − 8.47×10⁻³U² at U = 1000). Using the fixed 40 kg/s case would give 66,780 − 11.11U = 55,670 N, wrong because the real flow is lower at altitude."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.3 case 2 (tr.81–83)",
+   "en": "El-Sayed Ch.2 Example 2.3 case 2 (pp.81–83)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "formula printed in book + script (ex23)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet một trục: Pe,dư = 41 kPa, Ae = 0.214 m², Ue = 584 m/s, ṁ = 69.4 kg/s (bỏ qua nhiên liệu), cửa vào ở áp suất khí quyển với U = 0. Lực đẩy của động cơ là:",
+   "en": "Single-spool turbojet: exit gauge pressure 41 kPa, Ae = 0.214 m², Ue = 584 m/s, ṁ = 69.4 kg/s (fuel neglected), inlet at atmospheric pressure with U = 0. The engine thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "49,304 N",
+    "en": "49,304 N"
+   },
+   {
+    "vi": "40,530 N",
+    "en": "40,530 N"
+   },
+   {
+    "vi": "8,774 N",
+    "en": "8,774 N"
+   },
+   {
+    "vi": "70,987 N",
+    "en": "70,987 N"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = (Pe − Pa)Ae + ṁUe = 41 000×0.214 + 69.4×584 = 8,774 + 40,530 = 49,304 N (sách in 49 304 N). Hai thành phần đều phải có mặt: chỉ động lượng cho 40,530 N, chỉ áp suất cho 8,774 N; dùng áp suất tuyệt đối thay cho áp suất dư cho 70,987 N.",
+   "en": "T = (Pe − Pa)Ae + ṁUe = 41,000×0.214 + 69.4×584 = 8,774 + 40,530 = 49,304 N (the book prints 49,304 N). Both terms must be present: momentum alone gives 40,530 N, pressure alone 8,774 N; using absolute instead of gauge pressure gives 70,987 N."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.4 (tr.86)",
+   "en": "El-Sayed Ch.2 Example 2.4 (p.86)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 49,304 N + script (ex24)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet chiến đấu bay ở 10 km (Ta = 223.3 K, Pa = 0.265 bar), Ma 0.8; khí xả rời vòi phun ở 570 m/s, 0.67 bar; Ae/ṁa = 0.006 m²·s/kg; f = 0.02. Lực đẩy riêng T/ṁa (N·s/kg) là:",
+   "en": "A turbojet powers a fighter at 10 km (Ta = 223.3 K, Pa = 0.265 bar) and Ma 0.8; the exhaust leaves the nozzle at 570 m/s and 0.67 bar; Ae/ṁa = 0.006 m²·s/kg; f = 0.02. The specific thrust T/ṁa (N·s/kg) is:"
+  },
+  "opts": [
+   {
+    "vi": "584.8 N·s/kg",
+    "en": "584.8 N·s/kg"
+   },
+   {
+    "vi": "341.8 N·s/kg",
+    "en": "341.8 N·s/kg"
+   },
+   {
+    "vi": "182.8 N·s/kg",
+    "en": "182.8 N·s/kg"
+   },
+   {
+    "vi": "573.4 N·s/kg",
+    "en": "573.4 N·s/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "u = Ma·√(γRTa) = 0.8×√(1.4×287×223.3) = 239.6 m/s. T/ṁa = [(1+f)ue − u] + (Pe − Pa)·Ae/ṁa = (1.02×570 − 239.6) + 0.006×(0.67 − 0.265)×10⁵ = 341.8 + 243 = 584.77 N·s/kg (sách: 584.77). Nếu bỏ lực đẩy áp suất chỉ còn 341.8.",
+   "en": "u = Ma·√(γRTa) = 0.8×√(1.4×287×223.3) = 239.6 m/s. T/ṁa = [(1+f)ue − u] + (Pe − Pa)·Ae/ṁa = (1.02×570 − 239.6) + 0.006×(0.67 − 0.265)×10⁵ = 341.8 + 243 = 584.77 N·s/kg (book: 584.77). Dropping the pressure thrust leaves only 341.8."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.5 (tr.94)",
+   "en": "El-Sayed Ch.2 Example 2.5 (p.94)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 584.77 + script (ex25)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với số liệu của Ví dụ 2.5 (T/ṁa = 584.77 N·s/kg, u = 239.6 m/s, ue = 570 m/s, f = 0.02), hiệu suất đẩy theo biểu thức thứ nhất (công đẩy chia công đẩy cộng tổn thất vệt khí xả) là:",
+   "en": "With the data of Example 2.5 (T/ṁa = 584.77 N·s/kg, u = 239.6 m/s, ue = 570 m/s, f = 0.02), the propulsive efficiency by the first expression (thrust power over thrust power plus wake loss) is:"
+  },
+  "opts": [
+   {
+    "vi": "71.6 %",
+    "en": "71.6 %"
+   },
+   {
+    "vi": "102.3 %",
+    "en": "102.3 %"
+   },
+   {
+    "vi": "59.2 %",
+    "en": "59.2 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_p = 2(T/ṁ)u/[2(T/ṁ)u + (1+f)(ue − u)²] = 71.57 %. Biểu thức thứ hai cho 102.3 % (> 100 %: vô lý vì vòi phun nghẹt, Pe ≠ Pa), biểu thức thứ ba 2u/(u+ue) chỉ ước lượng thô 59.19 %.",
+   "en": "η_p = 2(T/ṁ)u/[2(T/ṁ)u + (1+f)(ue − u)²] = 71.57 %. The second expression gives 102.3 % (> 100 %: unphysical because the nozzle is choked, Pe ≠ Pa); the third, 2u/(u+ue), is only a rough 59.19 %."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.5 (tr.95)",
+   "en": "El-Sayed Ch.2 Example 2.5 (p.95)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 71.56 % + script (ex25)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbofan bay Ma 0.9 ở 33 000 ft (Ta = −50.4 °C, Pa = 26.2 kPa), BPR = 3, dòng lõi 22.7 kg/s, f = 0.015. Vòi lạnh: Pec = 55.26 kPa, uec = 339.7 m/s, Aec = 0.299 m². Vòi nóng: Peh = 32.56 kPa, ueh = 452 m/s, Aeh = 0.229 m². Lực đẩy của động cơ là:",
+   "en": "A turbofan flies at Ma 0.9 at 33,000 ft (Ta = −50.4 °C, Pa = 26.2 kPa), BPR = 3, core flow 22.7 kg/s, f = 0.015. Cold nozzle: Pec = 55.26 kPa, uec = 339.7 m/s, Aec = 0.299 m². Hot nozzle: Peh = 32.56 kPa, ueh = 452 m/s, Aeh = 0.229 m². The engine thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "19.25 kN",
+    "en": "19.25 kN"
+   },
+   {
+    "vi": "9.10 kN",
+    "en": "9.10 kN"
+   },
+   {
+    "vi": "10.56 kN",
+    "en": "10.56 kN"
+   },
+   {
+    "vi": "33.08 kN",
+    "en": "33.08 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "u = 0.9×√(1.4×287×222.75) = 269.3 m/s. T = ṁh[(1+f)ueh − u] + ṁc(uec − u) + Aeh(Peh − Pa) + Aec(Pec − Pa) = 4,302 + 4,798 + 1,456 + 8,689 = 19,245 N = 19.25 kN (sách in 19.257 kN, chênh do làm tròn). Cả hai vòi đều nghẹt (Pe > Pa) nên có lực đẩy áp suất, ≈ 10.15 kN; dùng Pe thay cho (Pe − Pa) sẽ cho 33.08 kN.",
+   "en": "u = 0.9×√(1.4×287×222.75) = 269.3 m/s. T = ṁh[(1+f)ueh − u] + ṁc(uec − u) + Aeh(Peh − Pa) + Aec(Pec − Pa) = 4,302 + 4,798 + 1,456 + 8,689 = 19,245 N = 19.25 kN (the book prints 19.257 kN, rounding). Both nozzles are choked (Pe > Pa), so there is a pressure thrust of ≈ 10.15 kN; using Pe instead of (Pe − Pa) would give 33.08 kN."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.6 (tr.95–96)",
+   "en": "El-Sayed Ch.2 Example 2.6 (pp.95–96)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 19.257 kN + script (ex26)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Boeing 747 dùng 4 động cơ CF6, mỗi động cơ: lực đẩy 24.0 kN, lưu lượng khí 125 kg/s, BPR 5.0, nhiên liệu 0.75 kg/s, Ma 0.8, độ cao 10 km (Ta = 223.2 K), nhiệt trị 42 800 kJ/kg. Quạt cho 75 % lực đẩy; các vòi giãn nở hoàn toàn. Vận tốc ra khỏi vòi quạt (dòng lạnh) là:",
+   "en": "The Boeing 747 has four CF6 turbofans, each with thrust 24.0 kN, air flow 125 kg/s, BPR 5.0, fuel flow 0.75 kg/s, Ma 0.8, altitude 10 km (Ta = 223.2 K), heating value 42,800 kJ/kg. The fan gives 75 % of the thrust; the nozzles expand fully. The fan (cold) exit velocity is:"
+  },
+  "opts": [
+   {
+    "vi": "412 m/s",
+    "en": "412 m/s"
+   },
+   {
+    "vi": "173 m/s",
+    "en": "173 m/s"
+   },
+   {
+    "vi": "1,104 m/s",
+    "en": "1,104 m/s"
+   },
+   {
+    "vi": "432 m/s",
+    "en": "432 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "U = 0.8×√(1.4×287×223.2) = 239.6 m/s. ṁc = 5/6×125 = 104.2 kg/s. T_fan = 0.75×24 = 18 kN = ṁc(uec − U) ⇒ uec = 18 000/104.2 + 239.6 = 412 m/s (sách: 413). Lỗi hay gặp: chia cho dòng lõi hay cho dòng tổng.",
+   "en": "U = 0.8×√(1.4×287×223.2) = 239.6 m/s. ṁc = 5/6×125 = 104.2 kg/s. T_fan = 0.75×24 = 18 kN = ṁc(uec − U) ⇒ uec = 18,000/104.2 + 239.6 = 412 m/s (book: 413). Typical slips: dividing by the core flow or by the total flow."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.7 (tr.99–100)",
+   "en": "El-Sayed Ch.2 Example 2.7 (pp.99–100)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 413 m/s + script (ex27)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với động cơ CF6 trên (Ví dụ 2.7; uec ≈ 413 m/s, ueh ≈ 510 m/s, U ≈ 240 m/s, ṁh = 20.8 kg/s, ṁc = 104.2 kg/s), hiệu suất đẩy là:",
+   "en": "For the CF6 engine above (Example 2.7; uec ≈ 413 m/s, ueh ≈ 510 m/s, U ≈ 240 m/s, ṁh = 20.8 kg/s, ṁc = 104.2 kg/s), the propulsive efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "71.3 %",
+    "en": "71.3 %"
+   },
+   {
+    "vi": "25.1 %",
+    "en": "25.1 %"
+   },
+   {
+    "vi": "64.0 %",
+    "en": "64.0 %"
+   },
+   {
+    "vi": "73.5 %",
+    "en": "73.5 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_p = F·U/[F·U + ½(ṁeh(ueh − U)² + ṁc(uec − U)²)] = ΔK̇E-cơ sở: F·U = 5.75 MW, công cấp cho dòng khí ΔK̇E = 8.07 MW ⇒ η_p = 71.3 % (sách 71.2 %). Lấy 2U/(U + ueh) = 64.0 % là nhầm công thức một dòng cho turbofan; η_th = 25.13 % là hiệu suất nhiệt, không phải η_p.",
+   "en": "η_p = F·U/ΔK̇E with F·U = 5.75 MW and the power imparted to the airflow ΔK̇E = 8.07 MW ⇒ η_p = 71.3 % (book 71.2 %). Taking 2U/(U + ueh) = 64.0 % wrongly applies the single-stream formula to a turbofan; η_th = 25.13 % is the thermal efficiency, not η_p."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.7 (tr.100)",
+   "en": "El-Sayed Ch.2 Example 2.7 (p.100)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 71.2 % + script (ex27)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cũng với động cơ CF6 (Ví dụ 2.7), hiệu suất tổng η_o = η_p·η_th bằng:",
+   "en": "Also for the CF6 engine (Example 2.7), the overall efficiency η_o = η_p·η_th is:"
+  },
+  "opts": [
+   {
+    "vi": "17.9 %",
+    "en": "17.9 %"
+   },
+   {
+    "vi": "25.1 %",
+    "en": "25.1 %"
+   },
+   {
+    "vi": "71.3 %",
+    "en": "71.3 %"
+   },
+   {
+    "vi": "21.5 %",
+    "en": "21.5 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_th = ΔK̇E/(ṁf·QR) = 8.07/32.1 = 25.13 %; η_o = 71.3 % × 25.13 % = 17.91 % (sách 17.93 %). Kiểm: η_o = F·U/(ṁf·QR) = 17.91 %.",
+   "en": "η_th = ΔK̇E/(ṁf·QR) = 8.07/32.1 = 25.13 %; η_o = 71.3 % × 25.13 % = 17.91 % (book 17.93 %). Check: η_o = F·U/(ṁf·QR) = 17.91 %."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.7 (tr.101)",
+   "en": "El-Sayed Ch.2 Example 2.7 (p.101)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 17.93 % + script (ex27)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Boeing 747 có L/D = 17, nhiệt trị 45 000 kJ/kg, tỉ số khối lượng cuối/đầu chặng bay là 0.673, hiệu suất tổng 0.35. Tầm bay theo phương trình Breguet (g = 9.8 m/s²) là:",
+   "en": "A Boeing 747 has L/D = 17, fuel heating value 45,000 kJ/kg, a weight ratio at the end/start of cruise of 0.673 and overall efficiency 0.35. The Breguet range (g = 9.8 m/s²) is:"
+  },
+  "opts": [
+   {
+    "vi": "10,820 km",
+    "en": "10,820 km"
+   },
+   {
+    "vi": "13,103 km",
+    "en": "13,103 km"
+   },
+   {
+    "vi": "27,321 km",
+    "en": "27,321 km"
+   },
+   {
+    "vi": "3,783 km",
+    "en": "3,783 km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.35×45×10⁶/9.8×17×ln(1/0.673) = 10,820 km (sách 10 819 km, làm tròn ln = 0.396). Lỗi hay gặp: dùng (1 − 0.673) thay cho ln(1/0.673) hoặc quên nhân L/D.",
+   "en": "S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.35×45×10⁶/9.8×17×ln(1/0.673) = 10,820 km (book 10,819 km, ln rounded to 0.396). Typical slips: using (1 − 0.673) instead of ln(1/0.673) or forgetting L/D."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.9 (tr.107)",
+   "en": "El-Sayed Ch.2 Example 2.9 (p.107)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 10,819 km + script (ex29)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay bay 4000 km, tốc độ không khí 250 m/s, L/D = 10, TSFC = 0.08 kg/N/h, m1 = 50 000 kg. Với gió xuôi 50 m/s (Vg = 300 m/s), lượng nhiên liệu tiêu thụ là:",
+   "en": "An aircraft flies 4000 km at an airspeed of 250 m/s, L/D = 10, TSFC = 0.08 kg/N/h, m1 = 50,000 kg. With a 50 m/s tail wind (Vg = 300 m/s) the fuel consumed is:"
+  },
+  "opts": [
+   {
+    "vi": "12,601 kg",
+    "en": "12,601 kg"
+   },
+   {
+    "vi": "17,655 kg",
+    "en": "17,655 kg"
+   },
+   {
+    "vi": "14,711 kg",
+    "en": "14,711 kg"
+   },
+   {
+    "vi": "15,121 kg",
+    "en": "15,121 kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ln(m1/m2) = S·g·TSFC/(Vg·L/D) = 4×10⁶×9.8×(0.08/3600)/(300×10) = 0.2904 ⇒ m1/m2 = 1.3369; nhiên liệu = m1(1 − m2/m1) = 12,601 kg (sách ≈ 12 600). Gió ngược 50 m/s (Vg = 200 m/s) cho 17,655 kg (sách 17 654): gió ngược làm tăng lượng nhiên liệu cho cùng quãng đường.",
+   "en": "ln(m1/m2) = S·g·TSFC/(Vg·L/D) = 4×10⁶×9.8×(0.08/3600)/(300×10) = 0.2904 ⇒ m1/m2 = 1.3369; fuel = m1(1 − m2/m1) = 12,601 kg (book ≈ 12,600). A 50 m/s head wind (Vg = 200 m/s) gives 17,655 kg (book 17,654): a head wind raises the fuel needed for the same distance."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.11 (tr.110–112)",
+   "en": "El-Sayed Ch.2 Example 2.11 (pp.110–112)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answers 12,600 / 17,654 kg + script (ex211)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sau khi chạm bánh, phi công dùng đảo chiều lực đẩy. Động cơ hút 40 kg/s không khí, f = 2.5 %, tốc độ máy bay 80 m/s, vận tốc khí xả 500 m/s, áp suất xả bằng áp suất môi trường. Giả thiết dòng phụt hoàn toàn quay ngược về phía trước. Độ lớn lực đẩy ngược là:",
+   "en": "After touchdown the pilot applies thrust reverse. Air is sucked into the engine at 40 kg/s, f = 2.5 %, aircraft speed 80 m/s, exhaust gas speed 500 m/s, exhaust pressure equal to ambient. Assume the jet is turned fully forward. The magnitude of the reverse thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "23,700 N",
+    "en": "23,700 N"
+   },
+   {
+    "vi": "17,300 N",
+    "en": "17,300 N"
+   },
+   {
+    "vi": "20,500 N",
+    "en": "20,500 N"
+   },
+   {
+    "vi": "23,200 N",
+    "en": "23,200 N"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Giả thiết của site (đề không nêu góc đảo): đảo hoàn toàn 180°, nên T = ṁa[(1+f)(−ue) − u]. Độ lớn = 40×(1.025×500 + 80) = 23,700 N: cả hai thành phần cùng hướng hãm (động lượng của dòng phụt đảo chiều và lực cản ram). Nếu trừ vận tốc bay như lực đẩy tiến sẽ ra 17,300 N (sai dấu).",
+   "en": "Site assumption (the problem gives no reverser angle): full 180° reversal, so T = ṁa[(1+f)(−ue) − u]. Magnitude = 40×(1.025×500 + 80) = 23,700 N: both terms brake (reversed jet momentum and ram drag). Subtracting the flight speed as for forward thrust gives 17,300 N (wrong sign)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.4 (giả thiết đảo 180°)",
+   "en": "El-Sayed Ch.2 Problem 2.4 (180° reversal assumed)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (p24); no printed answer"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trước khi bật bộ đốt sau, máy bay bay ở 475 mph; 20 giây sau khi bật, bay ở 560 mph. Gia tốc trung bình trong 20 giây (m/s²) là: (1 mph = 0.44704 m/s)",
+   "en": "Before the afterburners are turned on, an airplane is traveling at 475 mph. Twenty seconds after, it is traveling at 560 mph. The average acceleration over those 20 s (m/s²) is: (1 mph = 0.44704 m/s)"
+  },
+  "opts": [
+   {
+    "vi": "1.900 m/s²",
+    "en": "1.900 m/s²"
+   },
+   {
+    "vi": "4.250 m/s²",
+    "en": "4.250 m/s²"
+   },
+   {
+    "vi": "3.800 m/s²",
+    "en": "3.800 m/s²"
+   },
+   {
+    "vi": "12.517 m/s²",
+    "en": "12.517 m/s²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Δv = 85 mph = 85×0.44704 = 37.998 m/s; a = Δv/Δt = 1.900 m/s². Quên đổi mph sang m/s cho 4.25; chia nhầm cho vận tốc cuối cho 12.52.",
+   "en": "Δv = 85 mph = 85×0.44704 = 37.998 m/s; a = Δv/Δt = 1.900 m/s². Forgetting the mph → m/s conversion gives 4.25; using the final speed instead of Δv gives 12.52."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.28(1)",
+   "en": "El-Sayed Ch.2 Problem 2.28(1)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (p228)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài toán (475 → 560 mph trong 20 s, gia tốc không đổi), quãng đường máy bay đi được trong 20 s là:",
+   "en": "Same problem (475 → 560 mph in 20 s, constant acceleration): the distance the plane travels in those 20 s is:"
+  },
+  "opts": [
+   {
+    "vi": "4,627 m",
+    "en": "4,627 m"
+   },
+   {
+    "vi": "5,007 m",
+    "en": "5,007 m"
+   },
+   {
+    "vi": "4,247 m",
+    "en": "4,247 m"
+   },
+   {
+    "vi": "2,313 m",
+    "en": "2,313 m"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Gia tốc không đổi ⇒ vận tốc trung bình = (475 + 560)/2 = 517.5 mph = 231.34 m/s; s = v_tb·t = 4,627 m ≈ 2.87 dặm. Dùng vận tốc cuối (560 mph) cho 5,007 m, vận tốc đầu cho 4,247 m.",
+   "en": "Constant acceleration ⇒ mean speed = (475 + 560)/2 = 517.5 mph = 231.34 m/s; s = v_mean·t = 4,627 m ≈ 2.87 mi. Using the final speed (560 mph) gives 5,007 m, the initial speed 4,247 m."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.28(2)",
+   "en": "El-Sayed Ch.2 Problem 2.28(2)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (p228)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 1.1. Hiệu suất nhiệt của chu trình Carnot giữa T1 = 288 K và T2 = 2000 K là:",
+   "en": "Farokhi Problem 1.1. The thermal efficiency of a Carnot cycle between T1 = 288 K and T2 = 2000 K is:"
+  },
+  "opts": [
+   {
+    "vi": "85.6 %",
+    "en": "85.6 %"
+   },
+   {
+    "vi": "14.4 %",
+    "en": "14.4 %"
+   },
+   {
+    "vi": "66.7 %",
+    "en": "66.7 %"
+   },
+   {
+    "vi": "62.1 %",
+    "en": "62.1 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − T1/T2 = 1 − 288/2000 = 85.6 %. Nhầm cho T1/T2 = 14.4 % (đó là phần nhiệt thải); dùng T2 = 864 K (nhiệt độ cuối nén Brayton) cho 66.7 %.",
+   "en": "η = 1 − T1/T2 = 1 − 288/2000 = 85.6 %. Using T1/T2 = 14.4 % is the heat rejected fraction; using T2 = 864 K (end of Brayton compression) gives 66.7 %."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiệt động lực học ôn tập",
+   "en": "Thermodynamics review"
+  },
+  "src": {
+   "vi": "Farokhi Ch.1 Problem 1.1",
+   "en": "Farokhi Ch.1 Problem 1.1"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (f1x)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 1.2. Chu trình Brayton lý tưởng có T1 = 288 K, T2 = 864 K (T3 không ảnh hưởng đến hiệu suất). Hiệu suất nhiệt là:",
+   "en": "Farokhi Problem 1.2. An ideal Brayton cycle has T1 = 288 K and T2 = 864 K (T3 has no effect on efficiency). The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "66.7 %",
+    "en": "66.7 %"
+   },
+   {
+    "vi": "85.6 %",
+    "en": "85.6 %"
+   },
+   {
+    "vi": "56.8 %",
+    "en": "56.8 %"
+   },
+   {
+    "vi": "33.3 %",
+    "en": "33.3 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − T1/T2 = 1 − 288/864 = 66.67 %, tương đương 1 − r_p^(−(γ−1)/γ) với r_p^((γ−1)/γ) = 3 (r_p = 46.8). Lấy T3 vào công thức là sai.",
+   "en": "η = 1 − T1/T2 = 1 − 288/864 = 66.67 %, equivalent to 1 − r_p^(−(γ−1)/γ) with r_p^((γ−1)/γ) = 3 (r_p = 46.8). Putting T3 into the formula is wrong."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiệt động lực học ôn tập",
+   "en": "Thermodynamics review"
+  },
+  "src": {
+   "vi": "Farokhi Ch.1 Problem 1.2",
+   "en": "Farokhi Ch.1 Problem 1.2"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (f1x)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 1.3. Chu trình Humphrey (cháy đẳng tích) với T1 = 288 K, T2 = 864 K, T3 = 2000 K, γ = 1.4, η = 1 − γ(T1/T2)[(T3/T2)^(1/γ) − 1]/[(T3/T2) − 1]. So với Brayton 66.67 % cùng T1, T2, hiệu suất Humphrey là:",
+   "en": "Farokhi Problem 1.3. The Humphrey (constant-volume combustion) cycle with T1 = 288 K, T2 = 864 K, T3 = 2000 K, γ = 1.4, η = 1 − γ(T1/T2)[(T3/T2)^(1/γ) − 1]/[(T3/T2) − 1]. Compared with Brayton (66.67 %) at the same T1 and T2, the Humphrey efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "70.85 %",
+    "en": "70.85 %"
+   },
+   {
+    "vi": "66.67 %",
+    "en": "66.67 %"
+   },
+   {
+    "vi": "85.60 %",
+    "en": "85.60 %"
+   },
+   {
+    "vi": "20.55 %",
+    "en": "20.55 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T3/T2 = 2.3148; (T3/T2)^(1/γ) = 1.8212; η = 1 − 1.4×0.3333×0.8212/1.3148 = 70.85 %, cao hơn Brayton 66.67 % và thấp hơn Carnot 85.6 %. Lỗi: dùng mũ γ thay cho 1/γ.",
+   "en": "T3/T2 = 2.3148; (T3/T2)^(1/γ) = 1.8212; η = 1 − 1.4×0.3333×0.8212/1.3148 = 70.85 %, above Brayton 66.67 % and below Carnot 85.6 %. Slip: using exponent γ instead of 1/γ."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Nhiệt động lực học ôn tập",
+   "en": "Thermodynamics review"
+  },
+  "src": {
+   "vi": "Farokhi Ch.1 Problem 1.3",
+   "en": "Farokhi Ch.1 Problem 1.3"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (f1x), Humphrey recomputed from cv/cp heat balance"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 1.4. Rôto của động cơ tuabin khí cỡ milimét có bán kính 1 mm, cần tốc độ đỉnh cánh gần bằng tốc độ âm (340 m/s). Tốc độ quay là:",
+   "en": "Farokhi Problem 1.4. The rotor of a millimetre-scale gas turbine has a radius of 1 mm and must reach a tip speed near the speed of sound (340 m/s). The rotational speed is:"
+  },
+  "opts": [
+   {
+    "vi": "3.247 ×10⁶ rpm",
+    "en": "3.247 ×10⁶ rpm"
+   },
+   {
+    "vi": "0.340 ×10⁶ rpm",
+    "en": "0.340 ×10⁶ rpm"
+   },
+   {
+    "vi": "1.623 ×10⁶ rpm",
+    "en": "1.623 ×10⁶ rpm"
+   },
+   {
+    "vi": "20.400 ×10⁶ rpm",
+    "en": "20.400 ×10⁶ rpm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ω = V/r = 340/0.001 = 340 000 rad/s; n = ω·60/(2π) = 3,246,761 vòng/phút = 3.247×10⁶ rpm. Nhầm đơn vị rad/s với vòng/phút cho 0.34×10⁶; quên chia 2π cho 20.40×10⁶.",
+   "en": "ω = V/r = 340/0.001 = 340,000 rad/s; n = ω·60/(2π) = 3,246,761 rpm = 3.247×10⁶ rpm. Confusing rad/s with rpm gives 0.34×10⁶; forgetting 2π gives 20.40×10⁶."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiệt động lực học ôn tập",
+   "en": "Thermodynamics review"
+  },
+  "src": {
+   "vi": "Farokhi Ch.1 Problem 1.4",
+   "en": "Farokhi Ch.1 Problem 1.4"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (f14)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Example 3.3. Tên lửa nhiên liệu lỏng tiêu thụ 200 kg/s chất oxy hoá và 50 kg/s nhiên liệu; khí tăng tốc trong vòi phun đến V9 = 4000 m/s, p9 = 200 kPa ở mực nước biển (p0 = 100 kPa), đường kính cửa ra 2 m. Lực đẩy tổng (gross) của tên lửa là:",
+   "en": "Farokhi Example 3.3. A liquid-propellant rocket consumes 200 kg/s of oxidiser and 50 kg/s of fuel; the gas leaves the nozzle at V9 = 4000 m/s and p9 = 200 kPa at sea level (p0 = 100 kPa) with an exit diameter of 2 m. The rocket gross thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "1,314 kN",
+    "en": "1,314 kN"
+   },
+   {
+    "vi": "1,000 kN",
+    "en": "1,000 kN"
+   },
+   {
+    "vi": "314 kN",
+    "en": "314 kN"
+   },
+   {
+    "vi": "1,628 kN",
+    "en": "1,628 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lực đẩy động lượng = ṁ·V9 = 250×4000 = 1000 kN; lực đẩy áp suất = (p9 − p0)·A9 = 100 kPa×π×2²/4 = 314.16 kN; Fg = 1,314 kN (sách 1314 kN). Thiếu lực đẩy áp suất cho 1000 kN; dùng p9 thay cho (p9 − p0) cho 1,628 kN.",
+   "en": "Momentum thrust = ṁ·V9 = 250×4000 = 1000 kN; pressure thrust = (p9 − p0)·A9 = 100 kPa×π×2²/4 = 314.16 kN; Fg = 1,314 kN (book 1314 kN). Omitting the pressure thrust gives 1000 kN; using p9 instead of (p9 − p0) gives 1,628 kN."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Example 3.3 (tr.129)",
+   "en": "Farokhi Ch.3 Example 3.3 (p.129)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 1314 kN + script (f33)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Example 3.4. Turbojet cất cánh (V0 ≈ 0): ṁ0 = 100 kg/s, ṁf = 2 kg/s, QR = 42 000 kJ/kg, V9 = 900 m/s. Hiệu suất nhiệt η_th = (ṁ0 + ṁf)V9²/(2ṁf·QR) bằng:",
+   "en": "Farokhi Example 3.4. A turbojet at takeoff (V0 ≈ 0): ṁ0 = 100 kg/s, ṁf = 2 kg/s, QR = 42,000 kJ/kg, V9 = 900 m/s. The thermal efficiency η_th = (ṁ0 + ṁf)V9²/(2ṁf·QR) is:"
+  },
+  "opts": [
+   {
+    "vi": "49.2 %",
+    "en": "49.2 %"
+   },
+   {
+    "vi": "48.2 %",
+    "en": "48.2 %"
+   },
+   {
+    "vi": "24.6 %",
+    "en": "24.6 %"
+   },
+   {
+    "vi": "1.1 %",
+    "en": "1.1 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_th = 102×900²/(2×2×42 000×10³) = 49.2 % (sách 49.2 %), nghĩa là ~51 % năng lượng nhiên liệu còn nằm trong khí xả. Lực đẩy lúc cất cánh F ≈ ṁ9·V9 = 102×900 = 91.8 kN. Lỗi: dùng ṁ0 thay cho ṁ0 + ṁf, quên hệ số 2.",
+   "en": "η_th = 102×900²/(2×2×42,000×10³) = 49.2 % (book 49.2 %), i.e. ~51 % of the fuel energy stays in the exhaust. Takeoff thrust F ≈ ṁ9·V9 = 102×900 = 91.8 kN. Slips: using ṁ0 instead of ṁ0 + ṁf, forgetting the factor 2."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Example 3.4 (tr.132)",
+   "en": "Farokhi Ch.3 Example 3.4 (p.132)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 49.2 % + script (f34)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Example 3.5. Turbojet bay 200 m/s, vận tốc khí xả 900 m/s. Ước lượng hiệu suất đẩy bằng η_p ≈ 2/(1 + V9/V0):",
+   "en": "Farokhi Example 3.5. A turbojet flies at 200 m/s and the exhaust velocity is 900 m/s. Estimate the propulsive efficiency by η_p ≈ 2/(1 + V9/V0):"
+  },
+  "opts": [
+   {
+    "vi": "36.4 %",
+    "en": "36.4 %"
+   },
+   {
+    "vi": "44.4 %",
+    "en": "44.4 %"
+   },
+   {
+    "vi": "22.2 %",
+    "en": "22.2 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V9/V0 = 4.5; η_p = 2/(1 + 4.5) = 36.36 % (sách ghi 36.3 %: cắt bớt, không làm tròn). Thấp vì tốc độ phụt vượt xa tốc độ bay.",
+   "en": "V9/V0 = 4.5; η_p = 2/(1 + 4.5) = 36.36 % (the book prints 36.3 %: truncated, not rounded). Low because the jet speed far exceeds the flight speed."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Example 3.5 (tr.136)",
+   "en": "Farokhi Ch.3 Example 3.5 (p.136)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 36.3 % + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Example 3.6. Turbofan bay 200 m/s, vận tốc phụt cả hai vòi 250 m/s. Hiệu suất đẩy ước lượng 2/(1 + V9/V0) là:",
+   "en": "Farokhi Example 3.6. A turbofan flies at 200 m/s with a 250 m/s exhaust speed in both nozzles. The propulsive efficiency estimated by 2/(1 + V9/V0) is:"
+  },
+  "opts": [
+   {
+    "vi": "88.89 %",
+    "en": "88.89 %"
+   },
+   {
+    "vi": "55.56 %",
+    "en": "55.56 %"
+   },
+   {
+    "vi": "36.36 %",
+    "en": "36.36 %"
+   },
+   {
+    "vi": "80.00 %",
+    "en": "80.00 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_p = 2/(1 + 1.25) = 88.89 % (sách 88.9 %). So với turbojet 36.36 %, tăng 52.5 điểm phần trăm; sách ghi \"52.6 % increase\" nhưng tăng tương đối thực là 144 %. Quên hệ số 2 ở tử số cho 55.6 %; lấy V0/V9 cho 80 %.",
+   "en": "η_p = 2/(1 + 1.25) = 88.89 % (book 88.9 %). Against the turbojet 36.36 % that is +52.5 percentage points; the book says \"52.6 % increase\" but the true relative rise is 144 %. Forgetting the factor 2 in the numerator gives 55.6 %; taking V0/V9 gives 80 %."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Example 3.6 (tr.136)",
+   "en": "Farokhi Ch.3 Example 3.6 (p.136)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 88.9 % + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 3.7. Ống dòng hút khí của động cơ lúc cất cánh: tốc độ 10 m/s ở diện tích A0 và 100 m/s ở A1; p0 = 100 kPa, ρ0 = 1 kg/m³. Dùng phương trình Bernoulli (dòng không nén được), tỉ số p1/p0 là:",
+   "en": "Farokhi Problem 3.7. The capture streamtube of an engine at takeoff: speed 10 m/s at area A0 and 100 m/s at A1; p0 = 100 kPa, ρ0 = 1 kg/m³. Using the Bernoulli equation (incompressible flow), the ratio p1/p0 is:"
+  },
+  "opts": [
+   {
+    "vi": "0.9505",
+    "en": "0.9505"
+   },
+   {
+    "vi": "1.0521",
+    "en": "1.0521"
+   },
+   {
+    "vi": "0.9995",
+    "en": "0.9995"
+   },
+   {
+    "vi": "0.9000",
+    "en": "0.9000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "p1 = p0 + ½ρ(V0² − V1²) = 100 000 + 0.5×1×(10² − 100²) = 95,050 Pa ⇒ p1/p0 = 0.9505. (Tỉ số diện tích bắt dòng A0/A1 = V1/V0 = 10 theo liên tục.) Đảo dấu cho 1.0521.",
+   "en": "p1 = p0 + ½ρ(V0² − V1²) = 100,000 + 0.5×1×(10² − 100²) = 95,050 Pa ⇒ p1/p0 = 0.9505. (The capture area ratio A0/A1 = V1/V0 = 10 by continuity.) Reversing the sign gives 1.0521."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.7(b)",
+   "en": "Farokhi Ch.3 Problem 3.7(b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (analytic)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 3.8. Động cơ tên lửa đốt 50 kg/s thuốc phóng, vận tốc phụt 3500 m/s, vòi phun giãn nở hoàn toàn. Xung riêng Is (s) là:",
+   "en": "Farokhi Problem 3.8. A rocket motor burns propellant at 50 kg/s with an exhaust speed of 3500 m/s, the nozzle perfectly expanded. The specific impulse Is (s) is:"
+  },
+  "opts": [
+   {
+    "vi": "356.9 s",
+    "en": "356.9 s"
+   },
+   {
+    "vi": "388.9 s",
+    "en": "388.9 s"
+   },
+   {
+    "vi": "17.8 s",
+    "en": "17.8 s"
+   },
+   {
+    "vi": "7.1 s",
+    "en": "7.1 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F = ṁp·V9 = 50×3500 = 175 kN; Is = F/(ṁp·g0) = V9/g0 = 3500/9.80665 = 356.9 s (với g0 = 9.8: 357,1 s). Is có đơn vị giây, không phải m/s; chia cho 9 hoặc quên g0 đều sai.",
+   "en": "F = ṁp·V9 = 50×3500 = 175 kN; Is = F/(ṁp·g0) = V9/g0 = 3500/9.80665 = 356.9 s (with g0 = 9.8: 357.1 s). Is is in seconds, not m/s."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.8",
+   "en": "Farokhi Ch.3 Problem 3.8"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (analytic)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 3.13. Động cơ turboshaft đốt 1 kg/s nhiên liệu nhiệt trị 42 000 kJ/kg, hiệu suất nhiệt 0.333. Công suất trục là:",
+   "en": "Farokhi Problem 3.13. A turboshaft engine burns fuel of heating value 42,000 kJ/kg at 1 kg/s with a thermal efficiency of 0.333. The shaft power is:"
+  },
+  "opts": [
+   {
+    "vi": "13,986 kW",
+    "en": "13,986 kW"
+   },
+   {
+    "vi": "42,000 kW",
+    "en": "42,000 kW"
+   },
+   {
+    "vi": "13,986,000 kW",
+    "en": "13,986,000 kW"
+   },
+   {
+    "vi": "126,126 kW",
+    "en": "126,126 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "℘s = η_th·ṁf·QR = 0.333×1×42 000 kJ/s = 13 986 kW ≈ 14 MW. Với turboshaft, hiệu suất nhiệt định nghĩa theo công suất trục (El-Sayed Eq. 2.17), không phải động năng dòng khí.",
+   "en": "℘s = η_th·ṁf·QR = 0.333×1×42,000 kJ/s = 13,986 kW ≈ 14 MW. For a turboshaft the thermal efficiency is defined on shaft power (El-Sayed Eq. 2.17), not on jet kinetic energy."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.13",
+   "en": "Farokhi Ch.3 Problem 3.13"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (analytic)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Farokhi Problem 3.17(a). Vòi phun hội tụ giãn nở hoàn toàn: Ma cửa ra M8 = 1.0, áp suất toàn phần cửa ra bằng 98 % cửa vào, Ma cửa vào M7 = 0.5, A8 = 0.5 m², γ = 1.33, dòng đoạn nhiệt. Diện tích cửa vào A7 là:",
+   "en": "Farokhi Problem 3.17(a). A convergent nozzle is perfectly expanded with exit Mach number M8 = 1.0, exit total pressure 98 % of the inlet total pressure, inlet Mach number M7 = 0.5, A8 = 0.5 m², γ = 1.33, adiabatic flow. The inlet area A7 is:"
+  },
+  "opts": [
+   {
+    "vi": "0.6592 m²",
+    "en": "0.6592 m²"
+   },
+   {
+    "vi": "0.6727 m²",
+    "en": "0.6727 m²"
+   },
+   {
+    "vi": "0.3642 m²",
+    "en": "0.3642 m²"
+   },
+   {
+    "vi": "0.6461 m²",
+    "en": "0.6461 m²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Liên tục với Tt không đổi: ṁ ∝ A·pt·f(M), f(M) = M(1 + (γ−1)M²/2)^(−(γ+1)/(2(γ−1))). f(1) = 0.5832, f(0.5) = 0.4335. A7 = A8·(pt8/pt7)·f(1)/f(0.5) = 0.5×0.98×0.5832/0.4335 = 0.6592 m². Bỏ tổn thất áp suất toàn phần cho 0.6727 m².",
+   "en": "Continuity with constant Tt: ṁ ∝ A·pt·f(M), f(M) = M(1 + (γ−1)M²/2)^(−(γ+1)/(2(γ−1))). f(1) = 0.5832, f(0.5) = 0.4335. A7 = A8·(pt8/pt7)·f(1)/f(0.5) = 0.5×0.98×0.5832/0.4335 = 0.6592 m². Ignoring the total-pressure loss gives 0.6727 m²."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.17(a)",
+   "en": "Farokhi Ch.3 Problem 3.17(a)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (f317); mass-flow function recomputed by sympy-free numeric route"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một máy bay bay ở 280 m/s tại độ cao 20 km (áp suất môi trường 26,5 kPa, nhiệt độ 223,16 K). Dòng phụt có vận tốc 600 m/s, áp suất 30 kPa, nhiệt độ 750 K. Hệ đẩy hút 200 kg/s không khí và đốt 6 kg/s nhiên liệu có nhiệt trị 42 600 kJ/kg. Tính: (1) lực đẩy riêng T/ṁa; (2) hiệu suất đẩy, hiệu suất nhiệt, hiệu suất tổng; (3) TSFC; (4) số Mach tại cửa ra (γ = 4/3, R = 287 J/kg·K).",
+   "en": "An aircraft flies at 280 m/s at 20 km altitude (ambient pressure 26.5 kPa, temperature 223.16 K). The jet speed, pressure and temperature are 600 m/s, 30 kPa and 750 K. The propulsion system consumes 200 kg/s of air and burns 6 kg/s of fuel with heating value 42,600 kJ/kg. Calculate: (1) specific thrust T/ṁa; (2) propulsive, thermal and overall efficiency; (3) TSFC; (4) exhaust Mach number (γ = 4/3, R = 287 J/kg·K)."
+  },
+  "sol": {
+   "vi": "Giả thiết: khí xả là khí lý tưởng R = 287 J/kg·K (đề cho R); diện tích cửa ra chưa cho nên suy ra từ liên tục: Ae = ṁe/(ρe·ue).\nBước 1. ṁe = 200 + 6 = 206 kg/s; f = 6/200 = 0.03; ρe = Pe/(R·Te) = 30 000/(287×750) = 0.1394 kg/m³; Ae = 206/(0.1394×600) = 2.463 m².\nBước 2. Lực đẩy = ṁa[(1+f)ue − u] + (Pe − Pa)Ae = 200×(1.03×600 − 280) + (30 000 − 26 500)×2.463 = 67,600 + 8,622 = 76,222 N. Lực đẩy riêng T/ṁa = 381.1 N·s/kg.\nBước 3. Công đẩy T·u = 21.342 MW; tổn thất vệt khí xả ½·ṁe·(ue − u)² = 10.547 MW. η_p = 0.6693. Công cấp cho dòng khí = T·u + tổn thất = 31.889 MW; nhiệt cấp ṁf·QR = 255.6 MW; η_th = 0.1248; η_o = T·u/(ṁf·QR) = 0.0835 (= η_p·η_th = 0.0835, kiểm).\nBước 4. TSFC = ṁf/T = 6/76,222 = 78.7 mg/(N·s) = 0.2834 kg/(N·h).\nBước 5. a_e = √(γ R Te) = √(4/3×287×750) = 535.7 m/s; Ma_e = 600/535.7 = 1.120.\nKiểm hai cách: (a) công thức đóng như trên; (b) cân bằng thể tích kiểm soát giải số (xem verify_m01.py). Nhận xét: Pe > Pa nên có thành phần lực đẩy áp suất 8,622 N; dùng công thức η_p = 2u/(u+ue) = 0.636 sẽ lệch vì nó chỉ đúng khi Pe = Pa và bỏ qua f.",
+   "en": "Assumption: exhaust is an ideal gas with R = 287 J/kg·K (given); the exit area is not given, so it follows from continuity: Ae = ṁe/(ρe·ue).\nStep 1. ṁe = 200 + 6 = 206 kg/s; f = 6/200 = 0.03; ρe = Pe/(R·Te) = 30,000/(287×750) = 0.1394 kg/m³; Ae = 206/(0.1394×600) = 2.463 m².\nStep 2. Thrust = ṁa[(1+f)ue − u] + (Pe − Pa)Ae = 200×(1.03×600 − 280) + (30,000 − 26,500)×2.463 = 67,600 + 8,622 = 76,222 N. Specific thrust T/ṁa = 381.1 N·s/kg.\nStep 3. Thrust power T·u = 21.342 MW; wake loss ½·ṁe·(ue − u)² = 10.547 MW. η_p = 0.6693. Power imparted to the airflow = 31.889 MW; fuel heat rate ṁf·QR = 255.6 MW; η_th = 0.1248; η_o = T·u/(ṁf·QR) = 0.0835 (= η_p·η_th = 0.0835, check).\nStep 4. TSFC = ṁf/T = 6/76,222 = 78.7 mg/(N·s) = 0.2834 kg/(N·h).\nStep 5. a_e = √(γ R Te) = √(4/3×287×750) = 535.7 m/s; Ma_e = 600/535.7 = 1.120.\nTwo routes: (a) closed forms above; (b) control-volume balance solved numerically (see verify_m01.py). Remark: Pe > Pa, so there is a pressure-thrust term of 8,622 N; the shortcut η_p = 2u/(u+ue) = 0.636 is off because it holds only for Pe = Pa and f ≈ 0."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.2 (cũng 2.20)",
+   "en": "El-Sayed Ch.2 Problem 2.2 (also 2.20)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p22)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một động cơ turbojet đẩy máy bay bay ở 240 m/s, vận tốc phụt 560 m/s, lực đẩy riêng 525 N·s/kg. Dùng ba công thức hiệu suất đẩy, tính η_p và nhận xét (bỏ qua f).",
+   "en": "A turbojet powers an aircraft flying at 240 m/s with exhaust speed 560 m/s and specific thrust 525 N·s/kg. Using the three formulae, calculate the propulsive efficiency and comment (ignore the fuel-to-air ratio)."
+  },
+  "sol": {
+   "vi": "Công thức 1 (công đẩy / (công đẩy + tổn thất vệt)): η_p = 2(T/ṁ)u / [2(T/ṁ)u + (ue − u)²] = 2×525×240/(2×525×240 + 320²) = 252,000/354,400 = 0.7111.\nCông thức 2 (động năng cấp thêm): η_p = 2(T/ṁ)u/(ue² − u²) = 252,000/256,000 = 0.9844.\nCông thức 3: η_p = 2u/(u + ue) = 480/800 = 0.6000.\nNhận xét: nếu Pe = Pa thì T/ṁ = ue − u = 320 N·s/kg, nhưng đề cho 525, nghĩa là có thêm 205 N·s/kg lực đẩy áp suất (vòi phun nghẹt, Pe > Pa). Khi đó công thức 3 chỉ là ước lượng thô, công thức 2 cho giá trị gần 1 vô lý và không được dùng; công thức 1 là cách đúng (và nó trùng công thức 2 nếu dùng vận tốc phụt hiệu dụng).\nKiểm: công thức 1 tính lại bằng định nghĩa công đẩy/(công đẩy + ½ṁ(ue−u)²) với ṁ = 1 kg/s cho cùng kết quả.",
+   "en": "Formula 1 (thrust power / (thrust power + wake loss)): η_p = 2(T/ṁ)u / [2(T/ṁ)u + (ue − u)²] = 2×525×240/(2×525×240 + 320²) = 252,000/354,400 = 0.7111.\nFormula 2 (kinetic energy added): η_p = 2(T/ṁ)u/(ue² − u²) = 252,000/256,000 = 0.9844.\nFormula 3: η_p = 2u/(u + ue) = 480/800 = 0.6000.\nComment: if Pe = Pa then T/ṁ = ue − u = 320 N·s/kg, but 525 is given, so there is an extra 205 N·s/kg of pressure thrust (choked nozzle, Pe > Pa). Then formula 3 is only a rough estimate, formula 2 gives an unphysical value near 1 and must not be used; formula 1 is the right one (and equals formula 2 if the effective jet velocity is used).\nCheck: formula 1 recomputed from the definition thrust power/(thrust power + ½ṁ(ue−u)²) with ṁ = 1 kg/s gives the same value."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.5 (phần đầu)",
+   "en": "El-Sayed Ch.2 Problem 2.5 (first part)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p25a)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một máy bay một động cơ turbojet có: ṁa = 100 kg/s, ue = 770 m/s, η_o = 0.16, η_o,max = 0.18, f = 0.02, L/D = 10, m1/m2 = 1.2. Với λ = η_o,max/η_o thì u = (1+f)ue/2·[1 ± √((λ−1)/λ)]. Tính: (1) các vận tốc bay có thể; (2) nhiệt trị QR; (3) tầm bay; (4) thời gian bay; (5) khối lượng m1, m2; (6) lực đẩy tương ứng. (Giả thiết lưu lượng nhiên liệu không đổi ṁf = f·ṁa trong chặng bay.)",
+   "en": "A single-turbojet aircraft has ṁa = 100 kg/s, ue = 770 m/s, η_o = 0.16, η_o,max = 0.18, f = 0.02, L/D = 10, m1/m2 = 1.2. With λ = η_o,max/η_o the flight speed is u = (1+f)ue/2·[1 ± √((λ−1)/λ)]. Calculate: (1) possible flight speeds; (2) heating value QR; (3) range; (4) trip time; (5) masses m1 and m2; (6) the thrust. (Assume constant fuel flow ṁf = f·ṁa during the leg.)"
+  },
+  "sol": {
+   "vi": "(1) λ = 0.18/0.16 = 1.125; √((λ−1)/λ) = √(0.125/1.125) = 1/3. u = 1.02×770/2×(1 ± 1/3) = 523.6 m/s hoặc 261.8 m/s.\n(2) η_o = T·u/(ṁf·QR) = u[(1+f)ue − u]/(f·QR) ⇒ QR = 523.6×261.8/(0.02×0.16) = 42.84 MJ/kg (hai vận tốc cho cùng QR vì tích u[(1+f)ue − u] đối xứng). Kiểm: η_o,max = (1+f)²ue²/(4f·QR) = 0.1800 ✓.\n(3) S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.16×42.84e6/9.80665×10×ln1.2 = 1,274.3 km (như nhau cho cả hai vận tốc, vì tầm chỉ phụ thuộc η_o).\n(4) t = S/u = 0.676 h (u lớn) hoặc 1.352 h (u nhỏ).\n(5) Nhiên liệu đốt = ṁf·t = 2×t; m1 − m2 = m1(1 − 1/1.2) = m1/6 ⇒ m1 = 6·ṁf·t = 29,204 kg, m2 = 24,336 kg (u lớn); m1 = 58,407 kg, m2 = 48,673 kg (u nhỏ).\n(6) T = ṁa[(1+f)ue − u] = 26,180 N (u lớn) hoặc 52,360 N (u nhỏ).\nKiểm hai cách: tầm bay cũng tính từ S = (u/g)(T/ṁf)(L/D)ln(m1/m2) cho cùng 1,274.3 km.",
+   "en": "(1) λ = 0.18/0.16 = 1.125; √((λ−1)/λ) = √(0.125/1.125) = 1/3. u = 1.02×770/2×(1 ± 1/3) = 523.6 m/s or 261.8 m/s.\n(2) η_o = T·u/(ṁf·QR) = u[(1+f)ue − u]/(f·QR) ⇒ QR = 523.6×261.8/(0.02×0.16) = 42.84 MJ/kg (both speeds give the same QR because the product u[(1+f)ue − u] is symmetric). Check: η_o,max = (1+f)²ue²/(4f·QR) = 0.1800 ✓.\n(3) S = η_o·QR/g·(L/D)·ln(m1/m2) = 0.16×42.84e6/9.80665×10×ln1.2 = 1,274.3 km (the same for both speeds, because range depends on η_o only).\n(4) t = S/u = 0.676 h (high u) or 1.352 h (low u).\n(5) Fuel burned = ṁf·t = 2×t; m1 − m2 = m1(1 − 1/1.2) = m1/6 ⇒ m1 = 6·ṁf·t = 29,204 kg, m2 = 24,336 kg (high u); m1 = 58,407 kg, m2 = 48,673 kg (low u).\n(6) T = ṁa[(1+f)ue − u] = 26,180 N (high u) or 52,360 N (low u).\nTwo routes: range also from S = (u/g)(T/ṁf)(L/D)ln(m1/m2), giving the same 1,274.3 km."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.5 (phần sau)",
+   "en": "El-Sayed Ch.2 Problem 2.5 (second part)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p25b)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Động cơ turbofan lưu lượng rẽ nhánh cao JT9D ở công suất tĩnh tối đa (V0 = 0) trên mực nước biển chuẩn có: lưu lượng khí qua lõi 247 lbm/s, qua ống rẽ nhánh 1248 lbm/s, vận tốc ra khỏi lõi 1190 ft/s, ra khỏi ống rẽ nhánh 885 ft/s, lưu lượng nhiên liệu 15 570 lbm/h. Với áp suất ra bằng áp suất môi trường, ước lượng: (1) lực đẩy; (2) hiệu suất nhiệt (nhiệt trị 18 400 Btu/lbm); (3) hiệu suất đẩy và TSFC.",
+   "en": "The JT9D high-BPR turbofan at maximum static power (V0 = 0) on a standard sea-level day has core air flow 247 lbm/s, bypass flow 1248 lbm/s, core exit velocity 1190 ft/s, bypass exit velocity 885 ft/s and fuel flow 15,570 lbm/h. With exhaust pressure equal to ambient, estimate: (1) the thrust; (2) the thermal efficiency (heating value 18,400 Btu/lbm); (3) the propulsive efficiency and TSFC."
+  },
+  "sol": {
+   "vi": "Giả thiết: bỏ qua khối lượng nhiên liệu trong dòng lõi (4.3 lbm/s so với 247 lbm/s, sai lệch 0.4 %); 1 lbf = 32.174 lbm·ft/s²; 1 Btu = 778.169 ft·lbf.\n(1) T = (ṁc·uc + ṁh·uh)/gc = (1248×885 + 247×1190)/32.174 = 43,464 lbf = 193.3 kN. (Farokhi Problem 3.4 cho lực đẩy cất cánh 43 500 lbf: khớp trong 0.1 %.)\n(2) Công suất động năng = ½(ṁh·uh² + ṁc·uc²)/gc = 20.63×10⁶ ft·lbf/s; nhiệt cấp = (15 570/3600)×18 400×778.169 = 61.93×10⁶ ft·lbf/s ⇒ η_th = 0.333.\n(3) V0 = 0 nên công đẩy F·V0 = 0 ⇒ η_p = 0 và η_o = 0 (động cơ đứng yên không thực hiện công đẩy). TSFC = 15 570/43,464 = 0.358 lbm/(h·lbf) = 10.15 mg/(N·s)... (đổi: 1 lbm/(h·lbf) = 28.33 mg/(N·s)) = 10.1 mg/(N·s).\nKiểm hai cách: đổi toàn bộ sang SI (kg, m/s, N) cho T = 193,337 N, η_th = 0.333.",
+   "en": "Assumptions: fuel mass in the core stream neglected (4.3 lbm/s against 247 lbm/s, 0.4 % effect); 1 lbf = 32.174 lbm·ft/s²; 1 Btu = 778.169 ft·lbf.\n(1) T = (ṁc·uc + ṁh·uh)/gc = (1248×885 + 247×1190)/32.174 = 43,464 lbf = 193.3 kN. (Farokhi Problem 3.4 gives a takeoff thrust of 43,500 lbf: agreement within 0.1 %.)\n(2) Kinetic power = ½(ṁh·uh² + ṁc·uc²)/gc = 20.63×10⁶ ft·lbf/s; fuel heat rate = (15,570/3600)×18,400×778.169 = 61.93×10⁶ ft·lbf/s ⇒ η_th = 0.333.\n(3) V0 = 0 so thrust power F·V0 = 0 ⇒ η_p = 0 and η_o = 0 (a stationary engine does no propulsive work). TSFC = 15,570/43,464 = 0.358 lbm/(h·lbf) (1 lbm/(h·lbf) = 28.33 mg/(N·s)) = 10.1 mg/(N·s).\nTwo routes: everything converted to SI (kg, m/s, N) gives T = 193,337 N and η_th = 0.333."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.12",
+   "en": "El-Sayed Ch.2 Problem 2.12"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p212)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Máy bay có hai động cơ turbojet: vận tốc phụt 2300 km/h, hiệu suất tổng cực đại 0.15, f = 0.0175, L/D = 10, m1/m2 = 1.2. Tầm cực đại S = η_o,max·QR/g·(L/D)·ln(m1/m2), tại vận tốc u = (1+f)ue/2 và η_o,max = (1+f)²ue²/(4f·QR). Tính: (1) vận tốc bay; (2) nhiệt trị QR; (3) tầm bay cực đại; (4) thời gian bay.",
+   "en": "An aircraft has two turbojets: exhaust speed 2300 km/h, maximum overall efficiency 0.15, f = 0.0175, L/D = 10, m1/m2 = 1.2. The maximum range is S = η_o,max·QR/g·(L/D)·ln(m1/m2) at flight speed u = (1+f)ue/2, with η_o,max = (1+f)²ue²/(4f·QR). Calculate: (1) flight speed; (2) heating value QR; (3) maximum range; (4) trip time."
+  },
+  "sol": {
+   "vi": "ue = 2300/3.6 = 638.89 m/s.\n(1) u = (1+f)ue/2 = 1.0175×638.89/2 = 325.0 m/s = 1,170 km/h.\n(2) QR = (1+f)²ue²/(4f·η_o,max) = 422,590/(4×0.0175×0.15) = 40.25 MJ/kg.\n(3) S = 0.15×40.25e6/9.80665×10×ln1.2 = 1,122.4 km.\n(4) t = S/u = 3,453 s = 0.959 h.\nĐề còn hỏi m1, m2 nhưng không cho lưu lượng không khí nên bỏ (xem ghi chú nguồn). Kiểm: tầm = u·t; hiệu suất tổng tại u đó tính lại = η_o = u[(1+f)ue − u]/(f·QR) = 0.1500.",
+   "en": "ue = 2300/3.6 = 638.89 m/s.\n(1) u = (1+f)ue/2 = 1.0175×638.89/2 = 325.0 m/s = 1,170 km/h.\n(2) QR = (1+f)²ue²/(4f·η_o,max) = 422,590/(4×0.0175×0.15) = 40.25 MJ/kg.\n(3) S = 0.15×40.25e6/9.80665×10×ln1.2 = 1,122.4 km.\n(4) t = S/u = 3,453 s = 0.959 h.\nThe problem also asks for m1 and m2, but no air flow rate is given, so this part is dropped (see source notes). Check: range = u·t; the overall efficiency recomputed at that u is η_o = u[(1+f)ue − u]/(f·QR) = 0.1500."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tầm bay (Breguet)",
+   "en": "Range (Breguet)"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.13 (câu 1–4)",
+   "en": "El-Sayed Ch.2 Problem 2.13 (parts 1–4)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p213)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "ESFC của một động cơ turboprop tiêu thụ 1500 lb nhiên liệu mỗi giờ, sinh 700 lb lực đẩy khí xả và 3300 mã lực trục khi bay 250 mph? Hiệu suất cánh quạt 0.9.",
+   "en": "What is the ESFC of a turboprop engine that consumes 1500 lb of fuel per hour and produces 700 lb of exhaust thrust and 3300 shaft horsepower during flight at 250 mph? The propeller efficiency is 0.9."
+  },
+  "sol": {
+   "vi": "ESP = SP + Te·u/η_pr (El-Sayed Eq. 2.19b). 250 mph = 366.67 ft/s; Te·u = 700×366.67 = 256,667 ft·lbf/s = 466.7 hp (1 hp = 550 ft·lbf/s).\nESP = 3300 + 466.7/0.9 = 3,818.5 hp.\nESFC = 1500/3,818.5 = 0.3928 lb/(h·hp) = 0.2389 kg/(kW·h).\nNhận xét: nằm dưới khoảng điển hình 0.45–0.60 lb/(h·hp) mà sách nêu (tr.104); số liệu đề là ước lượng. Kiểm: đổi sang SI: T_e·u = 3.114 kW×... cho cùng ESP = 2,847 kW.",
+   "en": "ESP = SP + Te·u/η_pr (El-Sayed Eq. 2.19b). 250 mph = 366.67 ft/s; Te·u = 700×366.67 = 256,667 ft·lbf/s = 466.7 hp (1 hp = 550 ft·lbf/s).\nESP = 3300 + 466.7/0.9 = 3,818.5 hp.\nESFC = 1500/3,818.5 = 0.3928 lb/(h·hp) = 0.2389 kg/(kW·h).\nRemark: this is below the typical 0.45–0.60 lb/(h·hp) quoted in the book (p.104); the problem data are an estimate. Check: in SI the same ESP is 2,847 kW."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.19",
+   "en": "El-Sayed Ch.2 Problem 2.19"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p219)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Máy bay (m = 174 000 kg) đang bay ở 241.40 m/s. Bộ đốt sau được bật trong 2.00 phút, cho lực đẩy trung bình 20 kN. (1) Vận tốc sau 2.00 phút? (2) Quãng đường bay trong 2.00 phút đó? (Coi khối lượng không đổi.)",
+   "en": "An airplane (m = 174,000 kg) is cruising at 241.40 m/s. The afterburners are ignited for 2.00 min providing an average thrust of 20 kN. (1) What is the velocity after those 2.00 min? (2) How far did the airplane travel? (Assume constant mass.)"
+  },
+  "sol": {
+   "vi": "Giả thiết (đề không nói): 20 kN là lực dư thực sự làm tăng tốc (đã trừ lực cản), gia tốc không đổi.\na = F/m = 20 000/174 000 = 0.11494 m/s².\n(1) v = v0 + a·t = 241.40 + 0.11494×120 = 255.19 m/s.\n(2) s = v0·t + ½a·t² = 241.40×120 + 0.5×0.11494×120² = 28,968.0 + 827.6 = 29,796 m = 29.80 km.\nKiểm: s = vtb·t = (241.40 + 255.19)/2×120 = 29,796 m.",
+   "en": "Assumption (not stated): the 20 kN is the net accelerating force (drag already subtracted), acceleration constant.\na = F/m = 20,000/174,000 = 0.11494 m/s².\n(1) v = v0 + a·t = 241.40 + 0.11494×120 = 255.19 m/s.\n(2) s = v0·t + ½a·t² = 241.40×120 + 0.5×0.11494×120² = 28,968.0 + 827.6 = 29,796 m = 29.80 km.\nCheck: s = mean speed × t = (241.40 + 255.19)/2×120 = 29,796 m."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.29",
+   "en": "El-Sayed Ch.2 Problem 2.29"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p229)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 1.1–1.3. (1) Chu trình Carnot giữa T1 = 288 K và T2 = 2000 K có hiệu suất nhiệt bao nhiêu? (2) Chu trình Brayton lý tưởng có T1 = 288 K, T2 = 864 K (nhiệt độ cuối nén)? (3) Chu trình Humphrey (cháy đẳng tích) có cùng T1 = 288 K, T2 = 864 K và T3 = Tmax = 2000 K, γ = 1.4, cho η_th = 1 − γ(T1/T2)[(T3/T2)^(1/γ) − 1]/[(T3/T2) − 1]; so sánh với Brayton.",
+   "en": "Farokhi Problems 1.1–1.3. (1) What is the thermal efficiency of a Carnot cycle between T1 = 288 K and T2 = 2000 K? (2) Of an ideal Brayton cycle with T1 = 288 K and T2 = 864 K (end of compression)? (3) Of a Humphrey (constant-volume combustion) cycle with the same T1 = 288 K, T2 = 864 K and T3 = Tmax = 2000 K, γ = 1.4, given η_th = 1 − γ(T1/T2)[(T3/T2)^(1/γ) − 1]/[(T3/T2) − 1]; compare with Brayton."
+  },
+  "sol": {
+   "vi": "(1) η_Carnot = 1 − T1/T2 = 1 − 288/2000 = 0.856.\n(2) Brayton: η = 1 − T1/T2 = 1 − 288/864 = 0.6667 (tương đương tỉ số nén áp r_p^((γ−1)/γ) = 3; T3 không ảnh hưởng).\n(3) T3/T2 = 2000/864 = 2.3148; (T3/T2)^(1/1.4) = 1.8212; η = 1 − 1.4×(288/864)×(1.8212 − 1)/(2.3148 − 1) = 0.7085.\nSo sánh: Humphrey 70.85 % > Brayton 66.67 % (cháy đẳng tích thêm nhiệt ở thể tích nhỏ nên hiệu suất cao hơn), nhưng đều thấp hơn Carnot 85.6 % ở cùng giới hạn nhiệt độ.\nKiểm hai cách: Humphrey tính lại bằng q_in = cv(T3 − T2′), q_out = cp(T4 − T1) với T4 từ đoạn giãn đoạn nhiệt (xem verify).",
+   "en": "(1) η_Carnot = 1 − T1/T2 = 1 − 288/2000 = 0.856.\n(2) Brayton: η = 1 − T1/T2 = 1 − 288/864 = 0.6667 (equivalent to pressure ratio r_p^((γ−1)/γ) = 3; T3 has no effect).\n(3) T3/T2 = 2000/864 = 2.3148; (T3/T2)^(1/1.4) = 1.8212; η = 1 − 1.4×(288/864)×(1.8212 − 1)/(2.3148 − 1) = 0.7085.\nComparison: Humphrey 70.85 % > Brayton 66.67 % (constant-volume heat addition at smaller volume gives higher efficiency) but both are below Carnot 85.6 % at the same temperature limits.\nTwo routes: Humphrey recomputed from q_in = cv(T3 − T2′), q_out = cp(T4 − T1) with T4 from the isentropic expansion (see verify)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Nhiệt động lực học ôn tập",
+   "en": "Thermodynamics review"
+  },
+  "src": {
+   "vi": "Farokhi Ch.1 Problems 1.1–1.3",
+   "en": "Farokhi Ch.1 Problems 1.1–1.3"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f1x)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 1.5. Động cơ EJ200: SFC (công suất tối đa) 0.81 lbm/h/lbf, lực đẩy mực nước biển 13 500 lbf; SFC có bộ đốt sau 1.75 lbm/h/lbf, lực đẩy khi bật bộ đốt sau 20 250–22 250 lbf. Tính lượng nhiên liệu đốt thêm trong 30 phút dùng bộ đốt sau (lực đẩy 21 000 lbf) so với 30 phút không dùng (13 500 lbf).",
+   "en": "Farokhi Problem 1.5. EJ200: SFC (max power) 0.81 lbm/h/lbf, sea-level thrust 13,500 lbf; SFC with afterburner 1.75 lbm/h/lbf, thrust with afterburner 20,250–22,250 lbf. Calculate the additional fuel burned in 30 min of afterburner use (21,000 lbf thrust) compared with 30 min without (13,500 lbf)."
+  },
+  "sol": {
+   "vi": "Nhiên liệu = SFC × lực đẩy × thời gian.\nCó bộ đốt sau: 1.75 × 21 000 × 0.5 = 18,375.0 lbm.\nKhông: 0.81 × 13 500 × 0.5 = 5,467.5 lbm.\nĐốt thêm = 12,907.5 lbm ≈ 5,855 kg.\nNhận xét: lực đẩy tăng 21 000/13 500 − 1 = 56 % nhưng mức tiêu hao nhiên liệu tăng 236 %, vì thế bộ đốt sau chỉ dùng ngắn.\nKiểm: đổi sang SI qua 1 lbm/h/lbf = 28.33 mg/(N·s) cho cùng kết quả.",
+   "en": "Fuel = SFC × thrust × time.\nWith afterburner: 1.75 × 21,000 × 0.5 = 18,375.0 lbm.\nWithout: 0.81 × 13,500 × 0.5 = 5,467.5 lbm.\nExtra = 12,907.5 lbm ≈ 5,855 kg.\nRemark: thrust rises by 56 % but fuel flow by 236 %, hence afterburners are used only briefly.\nCheck: conversion to SI through 1 lbm/h/lbf = 28.33 mg/(N·s) gives the same result."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tiêu hao nhiên liệu riêng và xung riêng",
+   "en": "Specific fuel consumption and specific impulse"
+  },
+  "src": {
+   "vi": "Farokhi Ch.1 Problem 1.5",
+   "en": "Farokhi Ch.1 Problem 1.5"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f15)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 3.5. Một động cơ hút khí bay ở Ma 2.0, nhiệt độ môi trường −50 °C, áp suất 10 kPa. Lưu lượng khí 25 kg/s, lưu lượng nhiên liệu bằng 3 % lưu lượng khí, nhiệt trị 42 800 kJ/kg. Vận tốc phụt 1050 m/s, vòi phun giãn nở hoàn toàn (p9 = p0). Tính: (a) lực cản ram (kN); (b) lực đẩy tổng (gross) (kN); (c) lực đẩy thực (kN); (d) TSFC (kg/h/N); (e) η_th; (f) η_p; (g) η_o.",
+   "en": "Farokhi Problem 3.5. An airbreathing engine flies at Mach 2.0 where T0 = −50 °C and p0 = 10 kPa. Air flow 25 kg/s, fuel flow 3 % of the air flow, heating value 42,800 kJ/kg. Exhaust speed 1050 m/s, perfectly expanded (p9 = p0). Calculate: (a) ram drag (kN); (b) gross thrust (kN); (c) net thrust (kN); (d) TSFC (kg/h/N); (e) η_th; (f) η_p; (g) η_o."
+  },
+  "sol": {
+   "vi": "Giả thiết γ = 1.4, R = 287 J/kg·K, T0 = 223.15 K.\nV0 = Ma·√(γRT0) = 2×299.44 = 598.9 m/s.\n(a) Lực cản ram = ṁ0·V0 = 25×598.9 = 14.972 kN.\n(b) Gross = (ṁ0 + ṁf)·V9 = 25.75×1050 = 27.038 kN (p9 = p0 nên không có lực đẩy áp suất).\n(c) Net = 27.038 − 14.972 = 12.066 kN.\n(d) TSFC = 0.75/12,065.7 N = 62.16 mg/(s·N) = 0.2238 kg/(h·N).\n(e) ΔKE = ½[25.75×1050² − 25×598.9²] = 9.712 MW; η_th = ΔKE/(ṁf·QR) = 9.712/32.1 = 0.3025.\n(f) η_p = Fn·V0/ΔKE = 7.226/9.712 = 0.7440.\n(g) η_o = η_th·η_p = 0.2251 (= Fn·V0/(ṁf·QR) = 0.2251, kiểm).",
+   "en": "Assume γ = 1.4, R = 287 J/kg·K, T0 = 223.15 K.\nV0 = Ma·√(γRT0) = 2×299.44 = 598.9 m/s.\n(a) Ram drag = ṁ0·V0 = 25×598.9 = 14.972 kN.\n(b) Gross = (ṁ0 + ṁf)·V9 = 25.75×1050 = 27.038 kN (p9 = p0, so no pressure thrust).\n(c) Net = 27.038 − 14.972 = 12.066 kN.\n(d) TSFC = 0.75/12,065.7 N = 62.16 mg/(s·N) = 0.2238 kg/(h·N).\n(e) ΔKE = ½[25.75×1050² − 25×598.9²] = 9.712 MW; η_th = ΔKE/(ṁf·QR) = 9.712/32.1 = 0.3025.\n(f) η_p = Fn·V0/ΔKE = 7.226/9.712 = 0.7440.\n(g) η_o = η_th·η_p = 0.2251 (= Fn·V0/(ṁf·QR) = 0.2251, check)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.5",
+   "en": "Farokhi Ch.3 Problem 3.5"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f35)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 3.6. Máy bay turboprop bay ở V0 = 150 m/s, hiệu suất cánh quạt 0.75, lực đẩy cánh quạt 5000 N, lưu lượng khí qua động cơ 5 kg/s. Vòi phun giãn nở hoàn toàn và cho lực đẩy tổng 1000 N. Tính: (a) công suất trục truyền cho cánh quạt (kW); (b) vận tốc phụt (bỏ qua lưu lượng nhiên liệu); (c) chứng tỏ ΔK̇E nhỏ so với công suất trục rồi ước lượng η_p = F·V0/(℘s + ΔK̇E).",
+   "en": "Farokhi Problem 3.6. A turboprop aircraft flies at V0 = 150 m/s with propeller efficiency 0.75. Propeller thrust is 5000 N, engine air flow 5 kg/s, the nozzle is perfectly expanded and gives 1000 N gross thrust. Calculate: (a) shaft power delivered to the propeller (kW); (b) the nozzle exit velocity (neglect fuel flow); (c) show that the net kinetic power ΔK̇E is small against the shaft power, then estimate η_p = F·V0/(℘s + ΔK̇E)."
+  },
+  "sol": {
+   "vi": "(a) η_prop = Fprop·V0/℘s ⇒ ℘s = 5000×150/0.75 = 1,000.0 kW.\n(b) Vòi phun giãn nở hoàn toàn: Fg = ṁ·V9 ⇒ V9 = 1000/5 = 200 m/s.\n(c) ΔK̇E = ½ṁ(V9² − V0²) = 0.5×5×(40,000 − 22,500) = 43.75 kW, chỉ 4.4 % của ℘s. Lực đẩy tổng F = Fprop + (Fg − ṁV0) = 5000 + (1000 − 750) = 5,250 N (lực đẩy thực của ống xả chỉ 250 N vì còn trừ lực cản ram 750 N).\nη_p = F·V0/(℘s + ΔK̇E) = 3,144.1/(1,000.0 + 43.75) = 0.7545; gần đúng η_p ≈ F·V0/℘s = 0.7875.\nKiểm: η_p cũng ≈ η_prop + đóng góp ống xả: (2,994,356 + 37,500)/(1,000,000 + 43,750) = 0.7545.",
+   "en": "(a) η_prop = Fprop·V0/℘s ⇒ ℘s = 5000×150/0.75 = 1,000.0 kW.\n(b) Perfectly expanded: Fg = ṁ·V9 ⇒ V9 = 1000/5 = 200 m/s.\n(c) ΔK̇E = ½ṁ(V9² − V0²) = 0.5×5×(40,000 − 22,500) = 43.75 kW, only 4.4 % of ℘s. Total thrust F = Fprop + (Fg − ṁV0) = 5000 + (1000 − 750) = 5,250 N (the exhaust net thrust is only 250 N because the 750 N ram drag must be subtracted).\nη_p = F·V0/(℘s + ΔK̇E) = 3,144.1/(1,000.0 + 43.75) = 0.7545; approximately η_p ≈ F·V0/℘s = 0.7875.\nCheck: η_p as propeller plus exhaust contribution: (2,994,356 + 37,500)/(1,000,000 + 43,750) = 0.7545."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.6",
+   "en": "Farokhi Ch.3 Problem 3.6"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f36)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 3.9 (câu a–d). Động cơ turbofan, p0 = 10 kPa, Ma0 = 0.85, a0 = 300 m/s, ṁ0 = 75 kg/s. Vòi phun lõi (9): ṁ9 = 10 kg/s, p9 = 15 kPa, Ma9 = 1.5, a9 = 450 m/s, γ9 = 1.33, cp9 = 1157 J/kg·K. Vòi quạt (19): ṁ19 = 65 kg/s, p19 = 15 kPa, Ma19 = 1.5, a19 = 310 m/s, γ = 1.4, cp = 1004 J/kg·K. Tính: (a) lực cản ram; (b) lực đẩy tổng vòi lõi Fg9; (c) lực đẩy tổng vòi quạt Fg19; (d) lực đẩy thực Fn. (Gợi ý: tìm diện tích vòi phun từ lưu lượng và khối lượng riêng.)",
+   "en": "Farokhi Problem 3.9 (parts a–d). Turbofan with p0 = 10 kPa, Ma0 = 0.85, a0 = 300 m/s, ṁ0 = 75 kg/s. Core nozzle (9): ṁ9 = 10 kg/s, p9 = 15 kPa, Ma9 = 1.5, a9 = 450 m/s, γ9 = 1.33, cp9 = 1157 J/kg·K. Fan nozzle (19): ṁ19 = 65 kg/s, p19 = 15 kPa, Ma19 = 1.5, a19 = 310 m/s, γ = 1.4, cp = 1004 J/kg·K. Calculate: (a) ram drag; (b) core gross thrust Fg9; (c) fan gross thrust Fg19; (d) net thrust Fn. (Hint: find the nozzle areas from mass flow and density.)"
+  },
+  "sol": {
+   "vi": "(a) Dram = ṁ0·V0 = 75×(0.85×300) = 19.125 kN.\n(b) Lõi: R = cp(γ−1)/γ = 287.1 J/kg·K; T9 = a²/(γR) = 530.4 K; V9 = 1.5×450 = 675 m/s; ρ9 = p9/(R·T9) = 0.0985 kg/m³; A9 = ṁ/(ρV) = 0.1504 m². Fg9 = ṁ9V9 + A9(p9 − p0) = 10×675 + 0.1504×5000 = 7.502 kN.\n(c) Quạt: R = 286.9; T19 = 239.3 K; V19 = 465 m/s; ρ19 = 0.2185 kg/m³; A19 = 0.6397 m². Fg19 = 65×465 + 0.6397×5000 = 33.423 kN.\n(d) Fn = Fg9 + Fg19 − Dram = 21.800 kN.\nKiểm: tính ρ qua nhiệt độ tĩnh T = Tt/(1 + (γ−1)/2·Ma²) với Tt suy từ a thì cho cùng kết quả (cách khác: Fg = ṁV + A·Δp với A = ṁ/(ρ V)); xem verify.",
+   "en": "(a) Dram = ṁ0·V0 = 75×(0.85×300) = 19.125 kN.\n(b) Core: R = cp(γ−1)/γ = 287.1 J/kg·K; T9 = a²/(γR) = 530.4 K; V9 = 1.5×450 = 675 m/s; ρ9 = p9/(R·T9) = 0.0985 kg/m³; A9 = ṁ/(ρV) = 0.1504 m². Fg9 = ṁ9V9 + A9(p9 − p0) = 10×675 + 0.1504×5000 = 7.502 kN.\n(c) Fan: R = 286.9; T19 = 239.3 K; V19 = 465 m/s; ρ19 = 0.2185 kg/m³; A19 = 0.6397 m². Fg19 = 65×465 + 0.6397×5000 = 33.423 kN.\n(d) Fn = Fg9 + Fg19 − Dram = 21.800 kN.\nCheck: density found through static temperature from Tt = T(1 + (γ−1)/2·Ma²) gives the same result (second route: Fg = ṁV + A·Δp with A = ṁ/(ρV)); see verify."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.9 (câu a–d)",
+   "en": "Farokhi Ch.3 Problem 3.9 (parts a–d)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f39)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 3.10. Một ramjet bay ở Ma 2.0 tại độ cao có T0 = −50 °C, lưu lượng khí 10 kg/s. Số Mach phụt bằng số Mach bay (Ma9 = Ma0), vòi phun giãn nở hoàn toàn, Tt9 = 2500 K. Giả thiết γ = 1.4, cp = 1004 J/kg·K, lưu lượng nhiên liệu 4 % lưu lượng khí. Tính: (a) lực cản ram (kN); (b) lực đẩy tổng (kN); (c) lực đẩy thực (kN); (d) hiệu suất đẩy.",
+   "en": "Farokhi Problem 3.10. A ramjet flies at Mach 2.0 where T0 = −50 °C, engine air flow 10 kg/s. The exhaust Mach number equals the flight Mach number (Ma9 = Ma0), the nozzle is perfectly expanded, Tt9 = 2500 K. Assume γ = 1.4, cp = 1004 J/kg·K and fuel flow 4 % of the air flow. Calculate: (a) ram drag (kN); (b) gross thrust (kN); (c) net thrust (kN); (d) propulsive efficiency."
+  },
+  "sol": {
+   "vi": "R = cp(γ−1)/γ = 286.86 J/kg·K. V0 = 2×√(1.4×287×223.15) = 598.9 m/s (R khí quyển = 287).\n(a) Dram = 10×598.9 = 5.989 kN.\n(b) T9 = Tt9/(1 + 0.2×2²) = 2500/1.8 = 1,388.9 K; V9 = 2×√(1.4×286.86×1,388.9) = 1,493.7 m/s; Fg = 10.4×1,493.7 = 15.534 kN.\n(c) Fn = 15.534 − 5.989 = 9.546 kN.\n(d) ΔKE = ½(10.4×V9² − 10×V0²) = 9.809 MW; η_p = Fn·V0/ΔKE = 0.5828. (Công thức gần đúng 2/(1 + V9/V0) = 0.5724 cao hơn vì bỏ qua lưu lượng nhiên liệu.)\nKiểm: V9 tính lại qua V9 = Ma9·a9 với a9 = √(γRT9) = 746.8 m/s.",
+   "en": "R = cp(γ−1)/γ = 286.86 J/kg·K. V0 = 2×√(1.4×287×223.15) = 598.9 m/s (ambient R = 287).\n(a) Dram = 10×598.9 = 5.989 kN.\n(b) T9 = Tt9/(1 + 0.2×2²) = 2500/1.8 = 1,388.9 K; V9 = 2×√(1.4×286.86×1,388.9) = 1,493.7 m/s; Fg = 10.4×1,493.7 = 15.534 kN.\n(c) Fn = 15.534 − 5.989 = 9.546 kN.\n(d) ΔKE = ½(10.4×V9² − 10×V0²) = 9.809 MW; η_p = Fn·V0/ΔKE = 0.5828. (The approximation 2/(1 + V9/V0) = 0.5724 is higher because it ignores the fuel flow.)\nCheck: V9 recomputed from V9 = Ma9·a9 with a9 = √(γRT9) = 746.8 m/s."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.10",
+   "en": "Farokhi Ch.3 Problem 3.10"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f310)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Farokhi Problem 3.11. Máy bay turbojet bay ở V0 = 300 m/s, vận tốc phụt 600 m/s, lưu lượng khí 100 kg/s, lưu lượng nhiên liệu 2.5 kg/s, nhiệt trị 42 000 kJ/kg, vòi phun giãn nở hoàn toàn. Tính: (a) lực cản ram (kN); (b) lực đẩy tổng (kN); (c) lực đẩy thực (kN); (d) TSFC (mg/s/kN); và thêm η_th, η_p.",
+   "en": "Farokhi Problem 3.11. A turbojet cruises at V0 = 300 m/s with exhaust speed 600 m/s, air flow 100 kg/s, fuel flow 2.5 kg/s, heating value 42,000 kJ/kg, nozzle perfectly expanded. Calculate: (a) ram drag (kN); (b) gross thrust (kN); (c) net thrust (kN); (d) TSFC (mg/s/kN); and in addition η_th and η_p."
+  },
+  "sol": {
+   "vi": "(a) Dram = ṁ·V0 = 100×300 = 30.0 kN.\n(b) Fg = (ṁ + ṁf)·V9 = 102.5×600 = 61.5 kN.\n(c) Fn = 61.5 − 30.0 = 31.5 kN.\n(d) TSFC = ṁf/Fn = 2.5/31.5 = 79,365 mg/(s·kN) (= 79.37 mg/(s·N)).\nThêm: ΔKE = ½(102.5×600² − 100×300²) = 13.95 MW; η_th = 13.95/105 = 0.1329; η_p = Fn·V0/ΔKE = 0.6774; η_o = 0.0900.\nKiểm: η_o = Fn·V0/(ṁf·QR) = 0.0900.",
+   "en": "(a) Dram = ṁ·V0 = 100×300 = 30.0 kN.\n(b) Fg = (ṁ + ṁf)·V9 = 102.5×600 = 61.5 kN.\n(c) Fn = 61.5 − 30.0 = 31.5 kN.\n(d) TSFC = ṁf/Fn = 2.5/31.5 = 79,365 mg/(s·kN) (= 79.37 mg/(s·N)).\nExtra: ΔKE = ½(102.5×600² − 100×300²) = 13.95 MW; η_th = 13.95/105 = 0.1329; η_p = Fn·V0/ΔKE = 0.6774; η_o = 0.0900.\nCheck: η_o = Fn·V0/(ṁf·QR) = 0.0900."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "Farokhi Ch.3 Problem 3.11",
+   "en": "Farokhi Ch.3 Problem 3.11"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: f311)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ví dụ 2.4. Một turbojet một trục có bảng (cửa ra từng bộ phận; áp suất là áp suất dư; lưu lượng 69.4 kg/s, bỏ qua nhiên liệu): Máy nén 0.117 m², 124 m/s, 648 kPa; Khuếch tán 0.132 m², 112 m/s, 655 kPa; Buồng đốt 0.374 m², 94 m/s, 641 kPa; Tuabin 0.310 m², 271 m/s, 145 kPa; Ống xả 0.420 m², 196 m/s, 145 kPa; Vòi phun 0.214 m², 584 m/s, 41 kPa. Tính lực đẩy sinh ra ở từng bộ phận và chứng minh tổng bằng lực đẩy cả động cơ.",
+   "en": "El-Sayed Example 2.4. A single-spool turbojet has the table (outlet of each component; gauge pressure; flow 69.4 kg/s, fuel neglected): Compressor 0.117 m², 124 m/s, 648 kPa; Diffuser 0.132 m², 112 m/s, 655 kPa; Combustor 0.374 m², 94 m/s, 641 kPa; Turbine 0.310 m², 271 m/s, 145 kPa; Jet pipe 0.420 m², 196 m/s, 145 kPa; Nozzle 0.214 m², 584 m/s, 41 kPa. Calculate the thrust generated by each component and prove that the sum equals the engine thrust."
+  },
+  "sol": {
+   "vi": "Mỗi bộ phận: F = Pe·Ae − Pi·Ai + ṁ(Ue − Ui) (áp suất dư; cửa vào máy nén coi P = 0 dư, U = 0).\n   Máy nén: 84,422 N (phía trước)\n   Bộ khuếch tán: 9,811 N (phía trước)\n   Buồng đốt: 152,025 N (phía trước)\n   Tuabin: −182,500 N (phía sau)\n   Ống xả: 10,745 N (phía trước)\n   Vòi phun: −25,199 N (phía sau)\nTổng = 49,304 N.\nToàn động cơ: T = Pe,dư·Ae + ṁ·Ue = 41 000×0.214 + 69.4×584 = 49,304 N. Hai kết quả trùng nhau (khác biệt do làm tròn). Nhận xét: máy nén, khuếch tán, buồng đốt, ống xả đẩy về phía trước; tuabin (−182,500 N) và vòi phun kéo về phía sau; hiệu số là lực đẩy 49.3 kN.\nGhi chú nguồn: lời giải in trong sách có vài lỗi chép (dòng buồng đốt, \"4 × 10³\" thay cho 41 × 10³, −25 118 và −25 198 cho vòi phun); các số ở đây tính lại.",
+   "en": "Each component: F = Pe·Ae − Pi·Ai + ṁ(Ue − Ui) (gauge pressures; compressor inlet taken as 0 gauge, U = 0).\n   Compressor: 84,422 N (forward)\n   Diffuser: 9,811 N (forward)\n   Combustion chamber: 152,025 N (forward)\n   Turbine: −182,500 N (rearward)\n   Jet pipe: 10,745 N (forward)\n   Nozzle: −25,199 N (rearward)\nSum = 49,304 N.\nWhole engine: T = Pe,gauge·Ae + ṁ·Ue = 41,000×0.214 + 69.4×584 = 49,304 N. The two agree (differences are rounding). Remark: compressor, diffuser, combustor and jet pipe push forward; the turbine (−182,500 N) and the nozzle pull rearward; the difference is the thrust of 49.3 kN.\nSource note: the printed solution contains several typos (combustor line, \"4 × 10³\" for 41 × 10³, −25,118 and −25,198 for the nozzle); the numbers here are recomputed."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Example 2.4 (tr.83–86)",
+   "en": "El-Sayed Ch.2 Example 2.4 (pp.83–86)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: ex24)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Problem 2.21. Chứng minh η_o/ue² = λ(1 − u/ue)(u/ue) với λ = 1/(f·QR) (vòi phun không nghẹt, bỏ qua f trong lực đẩy). Suy ra khi nào η_o/(λue²) đạt cực đại và giá trị đó.",
+   "en": "El-Sayed Problem 2.21. Prove that η_o/ue² = λ(1 − u/ue)(u/ue) with λ = 1/(f·QR) (unchoked nozzle, f neglected in the thrust). Deduce when η_o/(λue²) is maximum and its value."
+  },
+  "sol": {
+   "vi": "Với vòi phun không nghẹt và bỏ qua f: T = ṁa(ue − u). η_o = T·u/(ṁf·QR) = ṁa(ue − u)u/(f·ṁa·QR) = (ue − u)u/(f·QR).\nChia cho ue²: η_o/ue² = (1/(f·QR))·(1 − u/ue)(u/ue) = λ(1 − x)x với x = u/ue.\nĐặt h(x) = x(1 − x): h′(x) = 1 − 2x = 0 ⇒ x = 1/2; h″ = −2 < 0 nên là cực đại, h_max = 1/4. Vậy η_o,max = λ·ue²/4 = ue²/(4f·QR) tại u = ue/2.\nÝ nghĩa: tại u = 0 và u = ue, η_o = 0 (không có công đẩy hoặc không có lực đẩy); hiệu suất tổng tốt nhất khi bay bằng nửa vận tốc phụt. Khi giữ f trong lực đẩy, kết quả là (1+f)²ue²/(4f·QR) tại u = (1+f)ue/2 (xem Problem 2.5).\nKiểm: tính h(x) bằng số trên lưới 0–1 cho cực đại tại x = 0.5, h = 0.25.",
+   "en": "For an unchoked nozzle with f neglected: T = ṁa(ue − u). η_o = T·u/(ṁf·QR) = ṁa(ue − u)u/(f·ṁa·QR) = (ue − u)u/(f·QR).\nDivide by ue²: η_o/ue² = (1/(f·QR))·(1 − u/ue)(u/ue) = λ(1 − x)x with x = u/ue.\nLet h(x) = x(1 − x): h′(x) = 1 − 2x = 0 ⇒ x = 1/2; h″ = −2 < 0 so it is a maximum, h_max = 1/4. Hence η_o,max = λ·ue²/4 = ue²/(4f·QR) at u = ue/2.\nMeaning: at u = 0 and u = ue, η_o = 0 (no thrust power, or no thrust); the best overall efficiency occurs when flying at half the jet speed. Keeping f in the thrust gives (1+f)²ue²/(4f·QR) at u = (1+f)ue/2 (see Problem 2.5).\nCheck: evaluating h(x) numerically on a 0–1 grid gives the maximum at x = 0.5, h = 0.25."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hiệu suất đẩy, nhiệt, tổng",
+   "en": "Propulsive, thermal and overall efficiency"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.21",
+   "en": "El-Sayed Ch.2 Problem 2.21"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (verify_m01: p221)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Problem 2.11. Chứng minh lực đẩy riêng và TSFC của turbofan: T/ṁa = [(1+f)/(1+β)]·ue,h + [β/(1+β)]·ue,c − u và TSFC = f/[(1+β)(T/ṁa)] (β = tỉ số rẽ nhánh, f = ṁf/ṁh).",
+   "en": "El-Sayed Problem 2.11. Show that the specific thrust and TSFC of a turbofan are T/ṁa = [(1+f)/(1+β)]·ue,h + [β/(1+β)]·ue,c − u and TSFC = f/[(1+β)(T/ṁa)] (β = bypass ratio, f = ṁf/ṁh)."
+  },
+  "sol": {
+   "vi": "Dòng nóng ṁh, dòng lạnh ṁc = β·ṁh, tổng ṁa = ṁh + ṁc = (1+β)ṁh. Với vòi phun không nghẹt: T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) (El-Sayed Eq. 2.4).\nChia cho ṁa = (1+β)ṁh: T/ṁa = [(1+f)ue,h − u]/(1+β) + β(ue,c − u)/(1+β) = (1+f)ue,h/(1+β) + β·ue,c/(1+β) − u(1+β)/(1+β) = (1+f)/(1+β)·ue,h + β/(1+β)·ue,c − u. ∎\nTSFC = ṁf/T, với ṁf = f·ṁh = f·ṁa/(1+β) ⇒ TSFC = f·ṁa/[(1+β)·T] = f/[(1+β)(T/ṁa)]. ∎\nKiểm số: ṁh = 20, β = 4, f = 0.02, ue,h = 500, ue,c = 350, u = 200: T trực tiếp = 20×(1.02×500 − 200) + 80×(350 − 200) = 6 200 + 12 000 = 18 200 N; công thức riêng: (1.02×500/5 + 4×350/5 − 200)×100 = (102 + 280 − 200)×100 = 18 200 N ✓.",
+   "en": "Hot stream ṁh, cold stream ṁc = β·ṁh, total ṁa = ṁh + ṁc = (1+β)ṁh. For unchoked nozzles: T = ṁh[(1+f)ue,h − u] + ṁc(ue,c − u) (El-Sayed Eq. 2.4).\nDivide by ṁa = (1+β)ṁh: T/ṁa = [(1+f)ue,h − u]/(1+β) + β(ue,c − u)/(1+β) = (1+f)ue,h/(1+β) + β·ue,c/(1+β) − u(1+β)/(1+β) = (1+f)/(1+β)·ue,h + β/(1+β)·ue,c − u. ∎\nTSFC = ṁf/T, with ṁf = f·ṁh = f·ṁa/(1+β) ⇒ TSFC = f·ṁa/[(1+β)·T] = f/[(1+β)(T/ṁa)]. ∎\nNumerical check: ṁh = 20, β = 4, f = 0.02, ue,h = 500, ue,c = 350, u = 200: direct T = 20×(1.02×500 − 200) + 80×(350 − 200) = 6,200 + 12,000 = 18,200 N; specific-thrust formula: (1.02×500/5 + 4×350/5 − 200)×100 = (102 + 280 − 200)×100 = 18,200 N ✓."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Lực đẩy và công thức lực đẩy",
+   "en": "Thrust and the thrust equation"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.2 Problem 2.11",
+   "en": "El-Sayed Ch.2 Problem 2.11"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "algebra + numeric check (verify_m01: p211)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.21. Những loại động cơ nào không có chi tiết chuyển động?",
+   "en": "El-Sayed Ch.1 Problem 1.21. Which engines have no moving parts?"
+  },
+  "sol": {
+   "vi": "Ramjet: chỉ gồm cửa hút (khuếch tán), vùng cháy và vòi phun, không có máy nén lẫn tuabin quay (El-Sayed §1.4.1; Slide Ch.1 tr.18 \"no moving mechanical parts\"). Scramjet cũng vậy (không có tuabin máy). Pulsejet không van (\"valveless\", động cơ sóng) không có chi tiết mòn chuyển động (§1.4.2; Slide tr.21). Pulsejet có van thì có van lò xo chuyển động nên không thuộc nhóm này.",
+   "en": "Ramjet: only an inlet (diffuser), a combustion zone and a nozzle, with neither compressor nor turbine rotating (El-Sayed §1.4.1; Slide Ch.1 p.18 \"no moving mechanical parts\"). The scramjet is the same (no turbomachinery). The valveless pulsejet (wave engine) has no moving parts to wear out (§1.4.2; Slide p.21). The valved pulsejet has spring-loaded valves, so it is not in this group."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.21",
+   "en": "El-Sayed Ch.1 Problem 1.21"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.18, 21)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.22. Loại động cơ nào dẫn động phần lớn máy bay chở khách hiện nay?",
+   "en": "El-Sayed Ch.1 Problem 1.22. What is the type of engine that powers most of today's airliners?"
+  },
+  "sol": {
+   "vi": "Turbofan tỉ số rẽ nhánh cao (BPR ≥ 5:1), ví dụ JT9, CF6, CFM56, PW4000, GE90, Trent (El-Sayed §1.5.4). Ở tốc độ cận âm chúng tiết kiệm nhiên liệu và êm hơn các loại phản lực khác. Slide Ch.1 tr.41 ghi \"Widely used in commercial transport aircraft\" và tr.42 nêu CFM56 cho họ Airbus A320.",
+   "en": "The high-bypass-ratio turbofan (BPR ≥ 5:1), e.g. JT9, CF6, CFM56, PW4000, GE90, Trent (El-Sayed §1.5.4). At subsonic speed they are more fuel efficient and quieter than other jet engines. Slide Ch.1 p.41 says \"Widely used in commercial transport aircraft\" and p.42 gives the CFM56 for the Airbus A320 family."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.22",
+   "en": "El-Sayed Ch.1 Problem 1.22"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.41–42)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.23. Loại động cơ nào được dùng trên trực thăng?",
+   "en": "El-Sayed Ch.1 Problem 1.23. What is the type of engine used in a helicopter?"
+  },
+  "sol": {
+   "vi": "Động cơ trục (turboshaft): bố trí giống turboprop nhưng đưa công suất ra trục (tuabin công suất tự do), hộp số chính thuộc trực thăng chứ không thuộc động cơ, và tránh lực đẩy dư bằng giãn nở thêm trong tuabin và/hoặc quay ống xả 90° (El-Sayed §1.5.3; Slide Ch.1 tr.34–35).",
+   "en": "The turboshaft: laid out like a turboprop but delivering shaft power (free power turbine); the main gearbox belongs to the helicopter, not to the engine, and residual thrust is avoided by further expansion in the turbine and/or turning the exhaust through 90° (El-Sayed §1.5.3; Slide Ch.1 pp.34–35)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.23",
+   "en": "El-Sayed Ch.1 Problem 1.23"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.34–35)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.24. Turboprop khác turbojet ở điểm nào?",
+   "en": "El-Sayed Ch.1 Problem 1.24. How is a turboprop different from a turbojet?"
+  },
+  "sol": {
+   "vi": "Turbojet: toàn bộ năng lượng khí chủ yếu thành động năng phụt ra, lực đẩy do ống phun (phản lực trực tiếp). Turboprop: thiết kế tối ưu để sinh công suất trục quay cánh quạt qua hộp giảm tốc; lực đẩy chính do cánh quạt, ống xả chỉ cho lực đẩy dư (phản lực gián tiếp). Vì vậy turboprop hiệu quả hơn ở tốc độ dưới 400–450 mph và độ cao dưới 30 000 ft (El-Sayed §1.5.2; Slide Ch.1 tr.31–32, 44–45).",
+   "en": "Turbojet: the gas energy becomes mainly jet kinetic energy and thrust comes from the nozzle (direct reaction). Turboprop: optimised to produce shaft power that turns a propeller through a reduction gearbox; the propeller gives the main thrust and the exhaust only a residual thrust (indirect reaction). Hence the turboprop is more efficient below 400–450 mph and 30,000 ft (El-Sayed §1.5.2; Slide Ch.1 pp.31–32, 44–45)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.24",
+   "en": "El-Sayed Ch.1 Problem 1.24"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.31–32, 43–45)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.32. So sánh ramjet và scramjet.",
+   "en": "El-Sayed Ch.1 Problem 1.32. Compare ramjet and scramjet engines."
+  },
+  "sol": {
+   "vi": "Giống nhau: không có máy nén/tuabin, nén bằng hiệu ứng ram ở cửa hút, đều cần được gia tốc ban đầu bằng nguồn ngoài. Khác nhau: ramjet làm dòng khí giảm xuống cận âm trước buồng đốt; scramjet cháy ở tốc độ khí siêu âm nên đạt tốc độ lớn hơn (dự báo Ma 12–24 theo El-Sayed §1.4.3; hydro là nhiên liệu thường dùng) nhưng phức tạp về khí động học hơn nhiều. Ramjet hiệu quả ở tốc độ cao nhưng kém ở tốc độ cận âm (§1.4.1; Slide Ch.1 tr.18, 22).",
+   "en": "Alike: no compressor or turbine, compression by the ram effect in the inlet, both need an initial boost from an external source. Different: the ramjet slows the flow to subsonic speed before the combustor; the scramjet burns at supersonic air speed, so it reaches greater speeds (projected Ma 12–24 per El-Sayed §1.4.3; hydrogen is the usual fuel) but is aerodynamically much more complex. The ramjet is efficient at high speed but poor at subsonic speed (§1.4.1; Slide Ch.1 pp.18, 22)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.32",
+   "en": "El-Sayed Ch.1 Problem 1.32"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.18, 22)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.47. Phân loại turbojet theo (1) hệ nén, (2) số trục, (3) bộ đốt sau.",
+   "en": "El-Sayed Ch.1 Problem 1.47. Classify turbojet engines according to (1) compression system, (2) number of spools, (3) afterburning."
+  },
+  "sol": {
+   "vi": "(1) Máy nén ly tâm hoặc hướng trục (turbojet đầu tiên của Whittle W.1 và von Ohain He S-1 dùng máy nén ly tâm; Slide Ch.1 tr.28 vẽ cả hai). (2) Một trục (single spool) hoặc hai trục (double spool). (3) Có bộ đốt sau (afterburning, tăng lực đẩy, đổi lại tốn nhiên liệu; Concorde là máy bay dân dụng duy nhất có bộ đốt sau) hoặc không. Ngoài ra sách còn nêu phân loại hạt nhân/không hạt nhân (El-Sayed §1.5.1).",
+   "en": "(1) Centrifugal or axial compressor (the first turbojets, Whittle W.1 and von Ohain He S-1, used centrifugal compressors; Slide Ch.1 p.28 shows both). (2) Single spool or double spool. (3) Afterburning (extra thrust at the cost of fuel; Concorde was the only civil transport with afterburners) or non-afterburning. The book also lists nuclear/non-nuclear (El-Sayed §1.5.1)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.47",
+   "en": "El-Sayed Ch.1 Problem 1.47"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.28, 30)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ch.1 Problem 1.48. Phân loại turbofan theo (1) BPR, (2) vị trí quạt, (3) số trục, (4) bộ đốt sau.",
+   "en": "El-Sayed Ch.1 Problem 1.48. Classify turbofan engines according to (1) BPR, (2) fan location, (3) number of spools, (4) afterburning."
+  },
+  "sol": {
+   "vi": "(1) BPR thấp (chủ yếu quân sự) hoặc cao (≥ 5:1, máy bay chở khách: JT9, CF6, CFM56, PW4000, GE90). (2) Quạt phía trước (forward fan) hoặc phía sau (aft fan). (3) Một, hai (GE90, CF6, PW4000, CFM56) hoặc ba trục (Rolls-Royce RB211, Trent; Slide Ch.1 tr.40 ghi Trent XWB 3 trục, tr.42 ghi CFM56 2 trục). (4) Có hoặc không có bộ đốt sau (BPR thấp quân sự, ví dụ F100). Ngoài ra: dòng trộn/không trộn, ống ngắn/dài, quạt giảm tốc/trực tiếp (El-Sayed §1.5.4).",
+   "en": "(1) Low BPR (mainly military) or high BPR (≥ 5:1, airliners: JT9, CF6, CFM56, PW4000, GE90). (2) Forward fan or aft fan. (3) One, two (GE90, CF6, PW4000, CFM56) or three spools (Rolls-Royce RB211, Trent; Slide Ch.1 p.40 gives the Trent XWB as 3-spool, p.42 the CFM56 as 2-spool). (4) Afterburning or not (low-BPR military engines such as the F100). Also: mixed/unmixed flow, short/long duct, geared/ungeared fan (El-Sayed §1.5.4)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "El-Sayed Ch.1 Problem 1.48",
+   "en": "El-Sayed Ch.1 Problem 1.48"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "book text El-Sayed §1.x (đối chiếu slide Ch.1 tr.36–42)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.5: máy bay bay bằng đều (level cruise, vận tốc không đổi). Cặp đẳng thức nào đúng?",
+   "en": "Slide Ch.1 p.5: an aircraft in level cruise at constant speed. Which pair of equalities holds?"
+  },
+  "opts": [
+   {
+    "vi": "Lực đẩy = lực cản và lực nâng = trọng lượng",
+    "en": "Thrust = drag and lift = weight"
+   },
+   {
+    "vi": "Lực đẩy = trọng lượng và lực nâng = lực cản",
+    "en": "Thrust = weight and lift = drag"
+   },
+   {
+    "vi": "Lực đẩy = lực nâng và lực cản = trọng lượng",
+    "en": "Thrust = lift and drag = weight"
+   },
+   {
+    "vi": "Lực đẩy + lực nâng = lực cản + trọng lượng",
+    "en": "Thrust + lift = drag + weight"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bay bằng không gia tốc: theo phương ngang T_u = F_x, theo phương đứng P = F_z (slide tr.5). Các cặp còn lại ghép lực khác phương với nhau.",
+   "en": "Unaccelerated level flight: horizontally T_u = F_x, vertically P = F_z (slide p.5). The other pairs match forces acting in different directions."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.5",
+   "en": "Slide Ch.1 p.5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.6: F_x = C_D·V²·(ρ/2)·S. Nếu vận tốc bay tăng gấp đôi (ρ, S, C_D không đổi) thì lực cản tăng gấp bốn.",
+   "en": "Slide Ch.1 p.6: F_x = C_D·V²·(ρ/2)·S. If the flight speed doubles (ρ, S, C_D unchanged) the drag becomes four times larger."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lực cản tỉ lệ với V², nên V → 2V cho F_x → 4F_x. Công suất cản F_x·V tăng 8 lần.",
+   "en": "Drag is proportional to V², so V → 2V gives F_x → 4F_x. The drag power F_x·V rises eightfold."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.6",
+   "en": "Slide Ch.1 p.6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.6: ở bay bằng, lực đẩy cần thiết bằng trọng lượng của máy bay.",
+   "en": "Slide Ch.1 p.6: in level flight the required thrust equals the weight of the aircraft."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Lực đẩy cần bằng lực cản: T_u = F_x = (C_D/C_L)·m·g (suy ra từ F_z = P; ô T_u trên slide để trống). Máy bay có C_L/C_D ≈ 17 chỉ cần lực đẩy cỡ 1/17 trọng lượng.",
+   "en": "Required thrust equals drag: T_u = F_x = (C_D/C_L)·m·g (derived from F_z = P; the T_u box on the slide is left blank). An aircraft with C_L/C_D ≈ 17 needs a thrust of only about 1/17 of its weight."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.6",
+   "en": "Slide Ch.1 p.6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.6 (ρ = \"air density (attitude)\", nghĩa là altitude): ở cùng V, S, C_L, bay cao hơn thì lực nâng nhỏ hơn vì ρ giảm.",
+   "en": "Slide Ch.1 p.6 (ρ = \"air density (attitude)\", meaning altitude): at the same V, S and C_L, flying higher gives less lift because ρ falls."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F_z ∝ ρ; mật độ ISA giảm từ 1.225 kg/m³ (mực nước biển) còn 0.413 kg/m³ ở 10 km, nên muốn giữ F_z = P phải tăng V hoặc C_L.",
+   "en": "F_z ∝ ρ; ISA density falls from 1.225 kg/m³ (sea level) to 0.413 kg/m³ at 10 km, so V or C_L must rise to keep F_z = P."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí động học và bốn lực",
+   "en": "Aerodynamics and the four forces"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.6",
+   "en": "Slide Ch.1 p.6"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.7: động cơ máy bay tạo lực đẩy dựa trên nguyên lý nào?",
+   "en": "Slide Ch.1 p.7: on which principle does the airplane engine generate its propulsive force?"
+  },
+  "opts": [
+   {
+    "vi": "Nguyên lý tác dụng – phản lực (định luật 3 Newton)",
+    "en": "The action–reaction principle (Newton's third law)"
+   },
+   {
+    "vi": "Nguyên lý Archimedes về lực đẩy nổi",
+    "en": "Archimedes' buoyancy principle"
+   },
+   {
+    "vi": "Hiệu ứng Magnus trên cánh quạt quay",
+    "en": "The Magnus effect on a rotating propeller"
+   },
+   {
+    "vi": "Nguyên lý bảo toàn mômen động lượng của rôto",
+    "en": "Conservation of angular momentum of the rotor"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Động cơ gia tốc một khối lượng khí về phía sau; phản lực của khí lên động cơ là lực đẩy (slide tr.7–10).",
+   "en": "The engine accelerates a mass of gas rearwards; the reaction of the gas on the engine is the thrust (slides pp.7–10)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nguyên lý đẩy",
+   "en": "Principles of propulsion"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.7",
+   "en": "Slide Ch.1 p.7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.8 và tr.10: so với đẩy bằng cánh quạt (\"propulsion by action\"), đẩy bằng phản lực (\"by reaction\") thường:",
+   "en": "Slide Ch.1 pp.8 and 10: compared with propeller propulsion (\"by action\"), jet propulsion (\"by reaction\") typically:"
+  },
+  "opts": [
+   {
+    "vi": "hất ra sau một khối lượng khí nhỏ với gia tốc lớn",
+    "en": "expels a small mass of air rearwards with a great acceleration"
+   },
+   {
+    "vi": "hất ra sau một khối lượng khí lớn với gia tốc nhỏ",
+    "en": "expels a large mass of air rearwards with a small acceleration"
+   },
+   {
+    "vi": "hất ra sau một khối lượng khí nhỏ với gia tốc nhỏ",
+    "en": "expels a small mass of air rearwards with a small acceleration"
+   },
+   {
+    "vi": "hất ra sau một khối lượng khí lớn với gia tốc lớn",
+    "en": "expels a large mass of air rearwards with a great acceleration"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cánh quạt: khối lượng khí lớn, tăng tốc ít (tr.8). Phản lực: khối lượng nhỏ, tăng tốc nhiều (tr.10). Cùng một lực đẩy T = ṁ(ue − u) có thể đạt bằng ṁ lớn/ue − u nhỏ (hiệu suất đẩy cao) hoặc ngược lại.",
+   "en": "Propeller: large air mass, little acceleration (p.8). Jet: small mass, great acceleration (p.10). The same thrust T = ṁ(ue − u) can come from large ṁ with small ue − u (high propulsive efficiency) or the opposite."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nguyên lý đẩy",
+   "en": "Principles of propulsion"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.8",
+   "en": "Slide Ch.1 p.8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.10 (quả bóng được bơm): khi mở miệng bóng, khí phụt ra phía sau và quả bóng dịch chuyển ngược chiều dòng phụt; trước khi mở, hợp lực trên bóng bằng 0 vì P1 tác dụng đều lên thành bóng.",
+   "en": "Slide Ch.1 p.10 (inflated balloon): when the mouth is opened the gas jets backwards and the balloon moves opposite to the jet; before opening, the net force on the balloon is zero because P1 acts evenly on the walls."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Áp suất trong P1 > P0 tác dụng đều lên mọi phía nên F = 0; khi mở miệng, thiếu mặt thành chịu áp suất ở phía miệng, phản lực đẩy bóng ngược chiều dòng phụt.",
+   "en": "The internal pressure P1 > P0 acts evenly in all directions so F = 0; when the mouth opens, the wall area at the mouth no longer carries pressure and the reaction pushes the balloon opposite to the jet."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nguyên lý đẩy",
+   "en": "Principles of propulsion"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.10",
+   "en": "Slide Ch.1 p.10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.11: động cơ hàng không vũ trụ là máy biến đổi:",
+   "en": "Slide Ch.1 p.11: aerospace engines are machines that transform:"
+  },
+  "opts": [
+   {
+    "vi": "thế năng (hoá năng) chứa trong nhiên liệu và không khí thành động năng hoặc cơ năng",
+    "en": "the potential energy contained in fuel and air into kinetic or mechanical energy"
+   },
+   {
+    "vi": "nhiệt của khí quyển thành điện năng",
+    "en": "atmospheric heat into electrical energy"
+   },
+   {
+    "vi": "động năng của dòng khí thành hoá năng của nhiên liệu",
+    "en": "the kinetic energy of the airflow into chemical energy of the fuel"
+   },
+   {
+    "vi": "cơ năng của cánh quạt thành nhiệt năng của khí xả",
+    "en": "propeller mechanical energy into exhaust thermal energy"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Năng lượng E của khí sinh ra từ cháy hỗn hợp nhiên liệu–không khí chuyển thành động năng E_c (phản lực) hoặc cơ năng E_m (trục).",
+   "en": "The gas energy E produced by burning the air–fuel mixture becomes kinetic energy E_c (jet) or mechanical energy E_m (shaft)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.11",
+   "en": "Slide Ch.1 p.11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.12: ba giai đoạn biến đổi của không khí trong phần lớn hệ đẩy, theo thứ tự, là:",
+   "en": "Slide Ch.1 p.12: the three transformation phases of air in most propulsion systems, in order, are:"
+  },
+  "opts": [
+   {
+    "vi": "nén, cháy, giãn nở",
+    "en": "compression, combustion, expansion"
+   },
+   {
+    "vi": "cháy, nén, giãn nở",
+    "en": "combustion, compression, expansion"
+   },
+   {
+    "vi": "giãn nở, cháy, nén",
+    "en": "expansion, combustion, compression"
+   },
+   {
+    "vi": "nén, giãn nở, cháy",
+    "en": "compression, expansion, combustion"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Không khí được nén, nhận nhiên liệu và cháy, rồi giãn nở cho ra động năng và/hoặc cơ năng (sơ đồ tr.12). Đây cũng là thứ tự chu trình Brayton (chương 2).",
+   "en": "Air is compressed, receives fuel and burns, then expands to give kinetic and/or mechanical energy (diagram p.12). This is also the order of the Brayton cycle (chapter 2)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.12",
+   "en": "Slide Ch.1 p.12"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.13: trong sơ đồ phân loại, động cơ piston (reciprocating) và động cơ phản lực (jet propulsion) cùng thuộc nhánh nào?",
+   "en": "Slide Ch.1 p.13: in the classification tree, reciprocating engines and jet propulsion engines both belong to which branch?"
+  },
+  "opts": [
+   {
+    "vi": "Động cơ hút khí (airbreathing)",
+    "en": "Airbreathing engines"
+   },
+   {
+    "vi": "Động cơ không hút khí (non-airbreathing)",
+    "en": "Non-airbreathing engines"
+   },
+   {
+    "vi": "Động cơ tên lửa",
+    "en": "Rocket engines"
+   },
+   {
+    "vi": "Động cơ điện",
+    "en": "Electric engines"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cả hai lấy không khí khí quyển làm chất oxy hoá nên là airbreathing; nhánh non-airbreathing là tên lửa (tr.13–14).",
+   "en": "Both take atmospheric air as oxidiser, so they are airbreathing; the non-airbreathing branch is the rocket (pp.13–14)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.13",
+   "en": "Slide Ch.1 p.13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.14: tên lửa không dùng không khí nên có thể hoạt động trong chân không vì nó mang theo cả chất oxy hoá lẫn nhiên liệu.",
+   "en": "Slide Ch.1 p.14: a rocket does not use air, so it can operate in a vacuum because it carries both oxidiser and fuel."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hình tr.14 chỉ rõ \"Oxidiser\" và \"Fuel\" đưa vào buồng đốt; nhờ đó tên lửa hoạt động ngoài khí quyển, còn ramjet, turbojet… phụ thuộc vào không khí.",
+   "en": "The figure on p.14 shows \"Oxidiser\" and \"Fuel\" feeding the combustion chamber; that is why a rocket works outside the atmosphere while ramjets, turbojets etc. depend on air."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.14",
+   "en": "Slide Ch.1 p.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.16: bốn kỳ của động cơ piston bốn kỳ, theo thứ tự vòng làm việc, là:",
+   "en": "Slide Ch.1 p.16: the four strokes of a four-stroke piston engine, in working order, are:"
+  },
+  "opts": [
+   {
+    "vi": "nạp, nén, sinh công (cháy–giãn nở), xả",
+    "en": "intake, compression, power (combustion–expansion), exhaust"
+   },
+   {
+    "vi": "nạp, sinh công, nén, xả",
+    "en": "intake, power, compression, exhaust"
+   },
+   {
+    "vi": "nén, nạp, xả, sinh công",
+    "en": "compression, intake, exhaust, power"
+   },
+   {
+    "vi": "nạp, nén, xả, sinh công",
+    "en": "intake, compression, exhaust, power"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Intake → Compression → Power → Exhaust (các đĩa màu trên hình tr.16). Trong động cơ piston bốn giai đoạn này diễn ra lần lượt trong cùng một xi-lanh; trong động cơ phản lực chúng diễn ra đồng thời ở các bộ phận khác nhau.",
+   "en": "Intake → Compression → Power → Exhaust (coloured discs in the figure on p.16). In a piston engine the four phases follow each other in the same cylinder; in a jet engine they occur simultaneously in different components."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.16",
+   "en": "Slide Ch.1 p.16"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.17: động cơ phản lực chỉ cần bugi để khởi động và không cần hệ thống đánh lửa liên tục hay bộ chế hoà khí như động cơ piston.",
+   "en": "Slide Ch.1 p.17: a jet engine uses spark plugs only for starting and needs neither the continuous ignition system nor the carburetor of a piston engine."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cháy trong buồng đốt phản lực là liên tục nên chỉ cần mồi lửa khi khởi động; cùng với khả năng bay cao và nhanh, đó là lý do phản lực thay thế piston từ thập niên 1940.",
+   "en": "Combustion in a jet combustor is continuous, so ignition is needed only at start; together with higher altitude and speed capability this is why jets replaced pistons from the 1940s."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.17",
+   "en": "Slide Ch.1 p.17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.18–19: ramjet thích hợp nhất với điều kiện nào và có đặc điểm gì?",
+   "en": "Slide Ch.1 pp.18–19: under which condition is a ramjet most suitable and what is its feature?"
+  },
+  "opts": [
+   {
+    "vi": "chỉ hiệu quả ở tốc độ cao; không có chi tiết cơ khí chuyển động; cần vận tốc ban đầu từ nguồn ngoài",
+    "en": "efficient at high speed only; no moving mechanical parts; needs initial motion from an external source"
+   },
+   {
+    "vi": "hiệu quả ở mọi tốc độ kể cả đứng yên; có máy nén hướng trục",
+    "en": "efficient at all speeds including standstill; has an axial compressor"
+   },
+   {
+    "vi": "chỉ hiệu quả ở tốc độ thấp; có van một chiều lò xo",
+    "en": "efficient at low speed only; has spring-loaded one-way valves"
+   },
+   {
+    "vi": "hiệu quả ở tốc độ cao; dùng tuabin dẫn động cánh quạt",
+    "en": "efficient at high speed; uses a turbine driving a propeller"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ramjet nén không khí bằng hiệu ứng ram ở cửa hút nên chỉ có lực đẩy thực khi bay đủ nhanh; không có máy nén/tuabin; ứng dụng điển hình là tên lửa hành trình BrahMos (tr.19).",
+   "en": "The ramjet compresses air by the ram effect in the inlet, so it gives net thrust only when flying fast enough; no compressor/turbine; a typical application is the BrahMos cruise missile (p.19)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.18",
+   "en": "Slide Ch.1 p.18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.20–21: pulsejet có van hoạt động giống ramjet nhưng thêm van một chiều lò xo, nên quá trình cháy gián đoạn (theo xung); pulsejet không van dựa vào sóng áp suất truyền qua lại trong động cơ.",
+   "en": "Slide Ch.1 pp.20–21: a valved pulsejet works like a ramjet plus spring-loaded one-way valves, so combustion is intermittent (pulsing); the valveless pulsejet relies on pressure waves travelling back and forth in the engine."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Van đóng khi áp suất cháy tăng, buộc khí xả ra phía sau; áp suất giảm thì van mở nạp khí mới. Loại không van thay van bằng sóng áp suất, không có chi tiết mòn (slide tr.20 minh hoạ bằng PULSJET ARGUS AR 019-014 trên đường ray phóng; El-Sayed §1.4.2 nêu bom bay V-1).",
+   "en": "The valves close as combustion pressure rises, forcing gas rearwards; when pressure falls they open to admit fresh air. The valveless type replaces valves by pressure waves, with no wearing parts (p.20 illustrates it with the PULSJET ARGUS AR 019-014 on a launch rail; El-Sayed §1.4.2 mentions the V-1 buzz bomb)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.20",
+   "en": "Slide Ch.1 p.20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.22: scramjet khác ramjet thông thường ở điểm nào?",
+   "en": "Slide Ch.1 p.22: how does a scramjet differ from a conventional ramjet?"
+  },
+  "opts": [
+   {
+    "vi": "Cháy diễn ra khi không khí qua động cơ vẫn siêu âm",
+    "en": "Combustion takes place while the air through the engine is still supersonic"
+   },
+   {
+    "vi": "Không khí bị làm chậm xuống cận âm trước khi cháy",
+    "en": "The air is slowed to subsonic speed before combustion"
+   },
+   {
+    "vi": "Có thêm máy nén ly tâm để nén khí ở tốc độ thấp",
+    "en": "It adds a centrifugal compressor for compression at low speed"
+   },
+   {
+    "vi": "Mang theo oxy lỏng riêng để cháy",
+    "en": "It carries its own liquid oxygen for combustion"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Scramjet = Supersonic Combustion RAMJET; vì không phải hãm dòng xuống cận âm nên tổn thất ít hơn ở tốc độ rất lớn và đạt tốc độ cao hơn ramjet (tr.22). Phương án \"mang oxy riêng\" là turborocket.",
+   "en": "Scramjet = Supersonic Combustion RAMJET; since the flow need not be slowed to subsonic speed it loses less at very high speeds and exceeds ramjet speeds (p.22). The \"own oxygen\" option is the turborocket."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.22",
+   "en": "Slide Ch.1 p.22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.24: turboramjet là:",
+   "en": "Slide Ch.1 p.24: a turboramjet is:"
+  },
+  "opts": [
+   {
+    "vi": "một turbojet đặt bên trong một ramjet; van rẽ dòng chặn khí vào turbojet ở chế độ ramjet",
+    "en": "a turbojet mounted inside a ramjet; bypass flaps block the flow into the turbojet in ramjet mode"
+   },
+   {
+    "vi": "một ramjet đặt bên trong một turbojet; van rẽ dòng chặn khí vào ramjet ở chế độ turbojet",
+    "en": "a ramjet mounted inside a turbojet; bypass flaps block the flow into the ramjet in turbojet mode"
+   },
+   {
+    "vi": "một turbojet và một tên lửa dùng chung buồng đốt",
+    "en": "a turbojet and a rocket sharing the combustor"
+   },
+   {
+    "vi": "một turbofan có cánh quạt không bọc ống",
+    "en": "a turbofan with an unducted fan"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hình tr.24: (a) van rẽ dòng cho khí vào turbojet; (b) van chặn khi chuyển sang ramjet ở tốc độ cao. Ứng dụng: SR-71 Blackbird, \"máy bay phản lực nhanh nhất thế giới: Ma 3\" (tr.25).",
+   "en": "Figure p.24: (a) bypass flaps let flow into the turbojet; (b) flaps block it in ramjet mode at high speed. Application: SR-71 Blackbird, \"the world's fastest jet-powered plane: Mach 3\" (p.25)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.24",
+   "en": "Slide Ch.1 p.24"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.26: turborocket mang theo oxy của riêng nó và tiêu hao nhiên liệu nhiều hơn turboramjet, phù hợp với máy bay đánh chặn hoặc phương tiện phóng có hành trình toàn tăng tốc, ngắn.",
+   "en": "Slide Ch.1 p.26: a turborocket carries its own oxygen and burns more fuel than a turboramjet; it suits interceptors or space launchers with an entirely accelerative, short flight plan."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vì có oxy riêng nên không bị giới hạn bởi không khí loãng ở độ cao lớn, nhưng khối lượng oxy làm tăng tiêu hao; thích hợp hành trình ngắn (tr.26).",
+   "en": "With its own oxygen it is not limited by thin air at high altitude, but the oxygen mass raises consumption; hence short missions (p.26)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.26",
+   "en": "Slide Ch.1 p.26"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.27: bốn họ chính trong khung nét đứt của nhánh gas turbine là:",
+   "en": "Slide Ch.1 p.27: the four main families in the dashed box of the gas-turbine branch are:"
+  },
+  "opts": [
+   {
+    "vi": "turbojet, turboprop, turboshaft, turbofan",
+    "en": "turbojet, turboprop, turboshaft, turbofan"
+   },
+   {
+    "vi": "turbojet, ramjet, scramjet, turbofan",
+    "en": "turbojet, ramjet, scramjet, turbofan"
+   },
+   {
+    "vi": "turboprop, turboshaft, pulsejet, turborocket",
+    "en": "turboprop, turboshaft, pulsejet, turborocket"
+   },
+   {
+    "vi": "turbojet, turbofan, propfan, rocket",
+    "en": "turbojet, turbofan, propfan, rocket"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ngoài khung còn propfan/turboprofan và advanced ducted fan. Ramjet, scramjet, pulsejet, turboramjet, turborocket là các nhánh jet propulsion khác trên cây phân loại tr.13.",
+   "en": "Outside the box are propfan/turboprofan and advanced ducted fan. Ramjet, scramjet, pulsejet, turboramjet and turborocket are other jet-propulsion branches of the tree on p.13."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.27",
+   "en": "Slide Ch.1 p.27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.28: trong turbojet, tuabin lấy từ khí cháy năng lượng cần thiết để dẫn động máy nén; phần năng lượng còn lại giãn nở trong ống phun tạo lực đẩy.",
+   "en": "Slide Ch.1 p.28: in a turbojet the turbine extracts from the gases the energy needed to drive the compressor; the remaining energy expands in the nozzle to produce thrust."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tuabin và máy nén nối cùng một trục; công tuabin = công máy nén (cộng tổn thất cơ khí). Phần enthalpy còn lại biến thành động năng phụt (xem chương 2: chu trình Brayton).",
+   "en": "Turbine and compressor share a shaft; turbine work = compressor work (plus mechanical losses). The remaining enthalpy becomes jet kinetic energy (see chapter 2: Brayton cycle)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.28",
+   "en": "Slide Ch.1 p.28"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.31: trong turboprop, lực đẩy chủ yếu do bộ phận nào cung cấp?",
+   "en": "Slide Ch.1 p.31: in a turboprop, which component provides most of the thrust?"
+  },
+  "opts": [
+   {
+    "vi": "Cánh quạt, được tuabin dẫn động qua hộp giảm tốc",
+    "en": "The propeller, driven by the turbine through a reduction gearbox"
+   },
+   {
+    "vi": "Ống phun của bộ phát khí",
+    "en": "The gas-generator thrust nozzle"
+   },
+   {
+    "vi": "Quạt bọc ống phía trước",
+    "en": "The ducted fan at the front"
+   },
+   {
+    "vi": "Bộ đốt sau",
+    "en": "The afterburner"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "\"The propulsive force is provided by the propeller and not by a thrust nozzle\" (tr.31); ống xả chỉ thoát khí cháy và cho lực đẩy dư. Vì thế turboprop thuộc nhóm phản lực gián tiếp (tr.45).",
+   "en": "\"The propulsive force is provided by the propeller and not by a thrust nozzle\" (p.31); the exhaust only evacuates burnt gas and gives a residual thrust. So the turboprop belongs to indirect reaction (p.45)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.31",
+   "en": "Slide Ch.1 p.31"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.32: dải tốc độ và độ cao mà turboprop hiệu quả hơn turbojet, theo slide, là:",
+   "en": "Slide Ch.1 p.32: the speed and altitude range where a turboprop is more efficient than a turbojet, per the slide, is:"
+  },
+  "opts": [
+   {
+    "vi": "dưới 400–450 mph và dưới 30 000 ft",
+    "en": "below 400–450 mph and below 30,000 ft"
+   },
+   {
+    "vi": "trên 400–450 mph và trên 30 000 ft",
+    "en": "above 400–450 mph and above 30,000 ft"
+   },
+   {
+    "vi": "dưới 400–450 mph và trên 30 000 ft",
+    "en": "below 400–450 mph and above 30,000 ft"
+   },
+   {
+    "vi": "trên 400–450 mph và dưới 30 000 ft",
+    "en": "above 400–450 mph and below 30,000 ft"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cánh quạt hiệu quả ở tốc độ thấp hơn, đầu cánh quay dưới tốc độ siêu âm; turbojet hiệu quả hơn ở tốc độ và độ cao lớn hơn. 400–450 mph ≈ 640–720 km/h; 30 000 ft ≈ 9.1 km.",
+   "en": "The propeller is efficient at lower speed with tips turning below the speed of sound; the turbojet is better at higher speed and altitude. 400–450 mph ≈ 640–720 km/h; 30,000 ft ≈ 9.1 km."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.32",
+   "en": "Slide Ch.1 p.32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.34–35: turboshaft dùng cho trực thăng; hộp số chính thuộc về trực thăng chứ không thuộc động cơ, và lực đẩy dư được tránh bằng cách cho giãn nở thêm trong tuabin hoặc quay ống xả 90°.",
+   "en": "Slide Ch.1 pp.34–35: the turboshaft is used for helicopters; the main gearbox belongs to the vehicle, not the engine, and residual thrust is avoided by further expansion in the turbine or by turning the exhaust 90°."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tuabin công suất tự do (free power turbine) lấy gần hết năng lượng khí thành công trục; khí xả ra có năng lượng thấp nên lực đẩy dư không đáng kể.",
+   "en": "The free power turbine takes almost all the gas energy as shaft work; the exhaust has little energy left so residual thrust is negligible."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.35",
+   "en": "Slide Ch.1 p.35"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.37: tỉ số rẽ nhánh (bypass ratio) của turbofan được định nghĩa là:",
+   "en": "Slide Ch.1 p.37: the bypass ratio of a turbofan is defined as:"
+  },
+  "opts": [
+   {
+    "vi": "lưu lượng khối lượng dòng rẽ nhánh chia lưu lượng khối lượng vào lõi",
+    "en": "bypass mass flow rate divided by the mass flow rate entering the core"
+   },
+   {
+    "vi": "lưu lượng khối lượng vào lõi chia lưu lượng khối lượng dòng rẽ nhánh",
+    "en": "core mass flow rate divided by the bypass mass flow rate"
+   },
+   {
+    "vi": "lưu lượng dòng rẽ nhánh chia tổng lưu lượng qua động cơ",
+    "en": "bypass flow divided by the total engine flow"
+   },
+   {
+    "vi": "lực đẩy của quạt chia lực đẩy của lõi",
+    "en": "fan thrust divided by core thrust"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "BPR = ṁ_c/ṁ_h (lạnh/nóng). Ví dụ BPR = 5 ⇒ ṁ_c = 5/6·ṁ_a, ṁ_h = 1/6·ṁ_a. Phương án chia cho tổng lưu lượng cho kết quả bé hơn 1 và không phải BPR.",
+   "en": "BPR = ṁ_c/ṁ_h (cold/hot). E.g. BPR = 5 ⇒ ṁ_c = 5/6·ṁ_a, ṁ_h = 1/6·ṁ_a. Dividing by the total flow gives a number below 1, which is not the BPR."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.37",
+   "en": "Slide Ch.1 p.37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.37: so với turbojet, hai lợi ích chính của turbofan trên slide là:",
+   "en": "Slide Ch.1 p.37: compared with a turbojet, the two main benefits of the turbofan on the slide are:"
+  },
+  "opts": [
+   {
+    "vi": "hiệu suất đẩy và hiệu suất tổng tốt hơn; ồn giảm",
+    "en": "better propulsive and global efficiency; lower noise"
+   },
+   {
+    "vi": "hiệu suất đẩy thấp hơn nhưng lực đẩy lớn hơn; ồn tăng",
+    "en": "lower propulsive efficiency but more thrust; higher noise"
+   },
+   {
+    "vi": "không cần máy nén; nhẹ hơn",
+    "en": "no compressor needed; lighter"
+   },
+   {
+    "vi": "bay được ở Ma 3; không cần nhiên liệu",
+    "en": "can fly at Mach 3; needs no fuel"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khối lượng không khí lớn hơn được tăng tốc ít hơn nên ue gần u hơn: η_p = 2/(1 + ue/u) tăng (tr.37); vận tốc phụt nhỏ hơn làm giảm tiếng ồn.",
+   "en": "A larger air mass is accelerated less, so ue is closer to u and η_p = 2/(1 + ue/u) rises (p.37); a lower jet speed reduces noise."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.37",
+   "en": "Slide Ch.1 p.37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.38: trong turbofan hai trục, cụm trục thấp áp (LP spool) và cao áp (HP spool) độc lập về cơ khí, nhờ vậy ghép máy nén–tuabin tốt hơn và giảm khối lượng, chiều dài.",
+   "en": "Slide Ch.1 p.38: in a twin-spool turbofan the low-pressure (LP) and high-pressure (HP) spools are mechanically independent, giving better compressor–turbine matching and less weight and length."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "\"1 spool = 1 cụm máy nén–tuabin\". Mỗi cụm quay ở tốc độ tối ưu riêng; tăng lực đẩy mà không tăng kích thước động cơ (tr.38).",
+   "en": "\"1 spool = 1 compressor–turbine assembly\". Each assembly turns at its own optimum speed; thrust rises without increasing engine size (p.38)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.38",
+   "en": "Slide Ch.1 p.38"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.40 và tr.42: Trent XWB (Airbus A350) là động cơ hai trục, còn CFM56 (họ Airbus A320) là động cơ ba trục.",
+   "en": "Slide Ch.1 pp.40 and 42: the Trent XWB (Airbus A350) is a two-spool engine and the CFM56 (Airbus A320 family) is a three-spool engine."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ngược lại: Trent XWB là 3 trục (3 spool), CFM56 là 2 trục (2 spool), theo chú thích trên slide.",
+   "en": "The opposite: the Trent XWB is 3-spool and the CFM56 is 2-spool, as the slide captions say."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.40",
+   "en": "Slide Ch.1 p.40"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.43–45: động cơ nào thuộc phản lực trực tiếp mà toàn bộ năng lượng khí E chuyển hoàn toàn thành động năng E_c dùng để đẩy?",
+   "en": "Slide Ch.1 pp.43–45: which engines belong to direct reaction with the whole gas energy E turned into kinetic energy E_c used for propulsion?"
+  },
+  "opts": [
+   {
+    "vi": "Tên lửa và ramjet",
+    "en": "Rockets and ramjets"
+   },
+   {
+    "vi": "Turbojet",
+    "en": "Turbojets"
+   },
+   {
+    "vi": "Turboshaft và turboprop",
+    "en": "Turboshaft and turboprop engines"
+   },
+   {
+    "vi": "Động cơ piston",
+    "en": "Reciprocating engines"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tr.43: tất cả năng lượng khí là E_c (tên lửa, ramjet). Tr.44: turbojet vẫn là phản lực trực tiếp nhưng một phần nhỏ chuyển thành cơ năng E_m (kéo máy nén) . Tr.45: turboshaft/turboprop là gián tiếp (phần chính là E_m).",
+   "en": "p.43: all the gas energy is E_c (rockets, ramjets). p.44: the turbojet is still direct reaction but a small part becomes mechanical energy E_m (driving the compressor). p.45: turboshaft/turboprop are indirect (main part E_m)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.43",
+   "en": "Slide Ch.1 p.43"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.45: \"phản lực gián tiếp\" (indirect reaction) nghĩa là phần chính của năng lượng khí E được biến thành:",
+   "en": "Slide Ch.1 p.45: \"indirect reaction propulsion\" means the main part of the gas energy E is transformed into:"
+  },
+  "opts": [
+   {
+    "vi": "cơ năng E_m, dùng để đẩy qua cánh quạt hoặc rôto",
+    "en": "mechanical energy E_m, used for propulsion through a propeller or rotor"
+   },
+   {
+    "vi": "động năng E_c, dùng để đẩy trực tiếp qua ống phun",
+    "en": "kinetic energy E_c, used directly through the nozzle"
+   },
+   {
+    "vi": "nhiệt thải ra khí quyển",
+    "en": "heat rejected to the atmosphere"
+   },
+   {
+    "vi": "năng lượng điện nạp vào ắc quy",
+    "en": "electric energy stored in a battery"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Turboshaft và turboprop: phần chính là E_m, phần còn lại thành E_c (lực đẩy dư). Turbojet đảo lại: phần chính là E_c (tr.44).",
+   "en": "Turboshaft and turboprop: the main part is E_m and the rest becomes E_c (residual thrust). The turbojet is the opposite: the main part is E_c (p.44)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.45",
+   "en": "Slide Ch.1 p.45"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.46–47: \"gas generator\" (bộ phát khí) là:",
+   "en": "Slide Ch.1 p.46–47: the \"gas generator\" is:"
+  },
+  "opts": [
+   {
+    "vi": "phần của cụm động cơ trong đó thực hiện chu trình nhiệt động cần thiết để sinh năng lượng",
+    "en": "the part of the engine assembly in which the thermodynamic cycle necessary to produce energy is achieved"
+   },
+   {
+    "vi": "bộ phận cung cấp khí nén cho cabin",
+    "en": "the component that supplies compressed air to the cabin"
+   },
+   {
+    "vi": "máy phát điện gắn với trục cánh quạt",
+    "en": "the electric generator attached to the propeller shaft"
+   },
+   {
+    "vi": "bộ khởi động bằng khí nén",
+    "en": "the compressed-air starter"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Gas generator = máy nén + buồng đốt + tuabin dẫn máy nén (hình tr.46). Gắn thêm vòi phun thì thành turbojet; lấy khí nén ra thì thành turbo-air generator; lấy công trục ra thì thành APU (tr.47).",
+   "en": "Gas generator = compressor + combustor + compressor turbine (figure p.46). Adding a nozzle gives a turbojet; bleeding compressed air gives a turbo-air generator; extracting shaft work gives an APU (p.47)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.46",
+   "en": "Slide Ch.1 p.46"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.47: \"turbo-air generator\" và \"auxiliary power unit\" khác nhau ở sản phẩm đầu ra:",
+   "en": "Slide Ch.1 p.47: the \"turbo-air generator\" and the \"auxiliary power unit\" differ in their output:"
+  },
+  "opts": [
+   {
+    "vi": "khí nén cấp ra (turbo-air generator) và công/năng lượng cho các ứng dụng khác (APU)",
+    "en": "delivered compressed air (turbo-air generator) and energy for various applications (APU)"
+   },
+   {
+    "vi": "lực đẩy (turbo-air generator) và khí nén (APU)",
+    "en": "thrust (turbo-air generator) and compressed air (APU)"
+   },
+   {
+    "vi": "công trục (turbo-air generator) và lực đẩy (APU)",
+    "en": "shaft work (turbo-air generator) and thrust (APU)"
+   },
+   {
+    "vi": "chúng không khác nhau",
+    "en": "they do not differ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide ghi \"Delivery of air under pressure\" cho turbo-air generator và \"Energy used for various applications\" cho APU; hình APU có hai mũi tên công W1, W2 (slide không nói rõ ý nghĩa của W1, W2).",
+   "en": "The slide says \"Delivery of air under pressure\" for the turbo-air generator and \"Energy used for various applications\" for the APU; the APU figure shows two work arrows W1 and W2 (the slide does not explain W1 and W2)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.47",
+   "en": "Slide Ch.1 p.47"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.48 (đồ thị độ cao – vận tốc): theo thứ tự từ thấp/chậm đến cao/nhanh, các động cơ được xếp là:",
+   "en": "Slide Ch.1 p.48 (altitude–speed chart): from low/slow to high/fast the engines are ordered:"
+  },
+  "opts": [
+   {
+    "vi": "turboshaft, turboprop, turbofan (by-pass turbojet), turbojet, ramjet, tên lửa",
+    "en": "turboshaft, turboprop, turbofan (by-pass turbojet), turbojet, ramjet, rocket"
+   },
+   {
+    "vi": "turboprop, turboshaft, turbojet, turbofan, tên lửa, ramjet",
+    "en": "turboprop, turboshaft, turbojet, turbofan, rocket, ramjet"
+   },
+   {
+    "vi": "turbojet, turbofan, turboprop, turboshaft, ramjet, tên lửa",
+    "en": "turbojet, turbofan, turboprop, turboshaft, ramjet, rocket"
+   },
+   {
+    "vi": "tên lửa, ramjet, turbojet, turbofan, turboprop, turboshaft",
+    "en": "rocket, ramjet, turbojet, turbofan, turboprop, turboshaft"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trực thăng (turboshaft) sát mặt đất; turboprop thấp hơn (dưới ~9 km trên hình); turbofan ~10 km (máy bay dân dụng); turbojet (Concorde, Rafale) cao và nhanh hơn; ramjet ~25 km; tên lửa trên ~40 km.",
+   "en": "Helicopters (turboshaft) near the ground; turboprops lower down (below ~9 km on the chart); turbofans ~10 km (airliners); turbojets (Concorde, Rafale) higher and faster; ramjet ~25 km; rockets above ~40 km."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Phân loại theo ứng dụng",
+   "en": "Classification by application"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.48",
+   "en": "Slide Ch.1 p.48"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.1 tr.48 ghi tropopause (\"~10–11 km\") tại −56 °C và 264 hPa. Theo khí quyển chuẩn ISA (Farokhi Appendix A), áp suất tại độ cao 11 km (đỉnh tầng đối lưu theo ISA) là:",
+   "en": "Slide Ch.1 p.48 labels the tropopause (\"~10–11 km\") at −56 °C and 264 hPa. According to the ISA (Farokhi Appendix A), the pressure at 11 km (ISA tropopause) is:"
+  },
+  "opts": [
+   {
+    "vi": "khoảng 226.3 hPa",
+    "en": "about 226.3 hPa"
+   },
+   {
+    "vi": "khoảng 264 hPa",
+    "en": "about 264 hPa"
+   },
+   {
+    "vi": "khoảng 101.3 hPa",
+    "en": "about 101.3 hPa"
+   },
+   {
+    "vi": "khoảng 500 hPa",
+    "en": "about 500 hPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ISA: p(11 km) = 101 325×(216.65/288.15)^5.2559 = 22 632 Pa = 226.3 hPa; nằm giữa 26.50 kPa (10 km) và 19.40 kPa (12 km) của bảng Farokhi. 264 hPa là áp suất ở 10 km (ISA 264.4 hPa), còn −56 °C là nhiệt độ ở 11 km: slide ghép giá trị của hai độ cao khác nhau.",
+   "en": "ISA: p(11 km) = 101,325×(216.65/288.15)^5.2559 = 22,632 Pa = 226.3 hPa; it lies between 26.50 kPa (10 km) and 19.40 kPa (12 km) of the Farokhi table. 264 hPa is the pressure at 10 km (ISA 264.4 hPa) while −56 °C is the temperature at 11 km: the slide pairs values of two different altitudes."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khí quyển chuẩn ISA",
+   "en": "International Standard Atmosphere"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.48",
+   "en": "Slide Ch.1 p.48"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.8: trong đẩy bằng cánh quạt (\"propulsion by action\"), một khối lượng khí nhỏ được hất ra sau với gia tốc rất lớn.",
+   "en": "Slide Ch.1 p.8: in propeller propulsion (\"propulsion by action\") a small mass of air is expelled rearwards with a very great acceleration."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ngược lại: cánh quạt hất một khối lượng khí lớn ra sau và chỉ tăng tốc nhẹ (tr.8). \"Khối lượng nhỏ, gia tốc lớn\" là đặc trưng của phản lực (tr.10).",
+   "en": "The opposite: a propeller expels a large mass of air with only a low increase of speed (p.8). \"Small mass, great acceleration\" characterises jet reaction (p.10)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nguyên lý đẩy",
+   "en": "Principles of propulsion"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.8",
+   "en": "Slide Ch.1 p.8"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.18–19: ramjet hiệu quả ở tốc độ thấp và có thể tự khởi động từ trạng thái đứng yên.",
+   "en": "Slide Ch.1 pp.18–19: a ramjet is efficient at low speed and can start by itself from standstill."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ramjet chỉ hiệu quả ở tốc độ cao (tr.18) và cần được cấp chuyển động từ nguồn ngoài (tr.19): nén chỉ nhờ hiệu ứng ram, nên thiếu lực đẩy tĩnh.",
+   "en": "A ramjet is efficient only at high speed (p.18) and needs motion imparted from an external source (p.19): compression comes only from the ram effect, so there is no static thrust."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.18",
+   "en": "Slide Ch.1 p.18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.13: động cơ tuabin khí (gas turbine) thuộc nhánh không hút khí (non-airbreathing).",
+   "en": "Slide Ch.1 p.13: the gas turbine engine belongs to the non-airbreathing branch."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Gas turbine nằm dưới Jet propulsion engines của nhánh Airbreathing: nó lấy không khí làm chất oxy hoá. Chỉ tên lửa mới là non-airbreathing.",
+   "en": "The gas turbine sits under Jet propulsion engines of the Airbreathing branch: it takes air as oxidiser. Only the rocket is non-airbreathing."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.13",
+   "en": "Slide Ch.1 p.13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.31: trong turboprop, lực đẩy chính do ống phun cung cấp còn cánh quạt chỉ phụ trợ.",
+   "en": "Slide Ch.1 p.31: in a turboprop the main thrust comes from the nozzle and the propeller only assists."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ngược lại: \"The propulsive force is provided by the propeller and not by a thrust nozzle\". Ống xả chỉ thoát khí cháy từ bộ phát khí.",
+   "en": "The opposite: \"The propulsive force is provided by the propeller and not by a thrust nozzle\". The exhaust only evacuates burnt gas from the gas generator."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.31",
+   "en": "Slide Ch.1 p.31"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.37: so với turbojet, turbofan làm tăng tiếng ồn nhưng giảm hiệu suất đẩy.",
+   "en": "Slide Ch.1 p.37: compared with a turbojet, the turbofan increases noise but lowers propulsive efficiency."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Turbofan cho hiệu suất đẩy và hiệu suất tổng tốt hơn, tiếng ồn giảm (tr.37) nhờ vận tốc phụt thấp hơn trên khối lượng khí lớn hơn.",
+   "en": "The turbofan gives better propulsive and global efficiency and lower noise (p.37) thanks to a lower jet speed on a larger air mass."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.37",
+   "en": "Slide Ch.1 p.37"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.44: turbojet thuộc loại phản lực gián tiếp vì phần chính của năng lượng khí biến thành cơ năng E_m.",
+   "en": "Slide Ch.1 p.44: the turbojet is indirect reaction propulsion because the main part of the gas energy becomes mechanical energy E_m."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tr.44: turbojet là phản lực TRỰC TIẾP; phần chính của năng lượng thành động năng E_c dùng để đẩy, phần còn lại thành E_m (kéo máy nén). Gián tiếp là turboshaft và turboprop (tr.45).",
+   "en": "p.44: the turbojet is DIRECT reaction; the main part of the energy becomes kinetic energy E_c for propulsion and the rest E_m (driving the compressor). Indirect reaction is the turboshaft and turboprop (p.45)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Phân loại động cơ",
+   "en": "Engine classification"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.44",
+   "en": "Slide Ch.1 p.44"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.22: scramjet làm không khí chậm xuống tốc độ cận âm trước khi cháy giống ramjet thông thường.",
+   "en": "Slide Ch.1 p.22: a scramjet slows the air to subsonic speed before combustion, like a conventional ramjet."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Điểm khác biệt là scramjet cháy khi dòng vẫn siêu âm (\"Combustion takes place at supersonic air velocities\"); ramjet thông thường mới làm chậm dòng xuống cận âm.",
+   "en": "The difference is that the scramjet burns while the flow is still supersonic (\"Combustion takes place at supersonic air velocities\"); the conventional ramjet slows the flow to subsonic speed."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.22",
+   "en": "Slide Ch.1 p.22"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.35: hộp số chính của trực thăng thuộc về động cơ turboshaft.",
+   "en": "Slide Ch.1 p.35: the main gearbox of a helicopter is part of the turboshaft engine."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Slide nhấn mạnh: hộp số chính là một phần của phương tiện (hộp giảm tốc rôto), không phải của động cơ. Ở turboprop thì hộp giảm tốc cánh quạt thuộc cụm động cơ (tr.31).",
+   "en": "The slide stresses that the main gearbox is part of the vehicle (rotor reduction gearbox), not of the engine. In a turboprop the propeller reduction gearbox is part of the engine assembly (p.31)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.35",
+   "en": "Slide Ch.1 p.35"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.30: Rolls-Royce/Snecma Olympus 593 của Concorde là động cơ turboprop.",
+   "en": "Slide Ch.1 p.30: the Rolls-Royce/Snecma Olympus 593 of the Concorde is a turboprop engine."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Slide xếp Olympus 593 ở mục \"Turbojet – Application\" (Concorde); El-Sayed §1.5.1 nêu Concorde là máy bay dân dụng duy nhất có bộ đốt sau.",
+   "en": "The slide lists the Olympus 593 under \"Turbojet – Application\" (Concorde); El-Sayed §1.5.1 notes the Concorde was the only civil transport with afterburners."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ phản lực",
+   "en": "Jet engines"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.30",
+   "en": "Slide Ch.1 p.30"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.1 tr.48: đồ thị cho thấy turboshaft và turboprop hoạt động ở vùng độ cao lớn hơn vùng của ramjet và tên lửa.",
+   "en": "Slide Ch.1 p.48: the chart shows turboshaft and turboprop operating at higher altitudes than ramjets and rockets."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ngược lại: turboshaft/turboprop ở vùng thấp, chậm (sát mặt đất đến khoảng 9 km trên hình); ramjet ~25 km và tên lửa ~40 km trở lên.",
+   "en": "The opposite: turboshaft/turboprop are in the low, slow region (near the ground up to about 9 km on the chart); ramjet ~25 km and rockets ~40 km and above."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Phân loại theo ứng dụng",
+   "en": "Classification by application"
+  },
+  "src": {
+   "vi": "Slide Ch.1 tr.48",
+   "en": "Slide Ch.1 p.48"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ }
+]
