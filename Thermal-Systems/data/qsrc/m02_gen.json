@@ -1,0 +1,2102 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Carnot hoạt động giữa nguồn nóng 727 °C và nguồn lạnh 27 °C. Hiệu suất nhiệt là:",
+   "en": "A Carnot cycle operates between a 727 °C source and a 27 °C sink. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,700",
+    "en": "0.700"
+   },
+   {
+    "vi": "0,963",
+    "en": "0.963"
+   },
+   {
+    "vi": "0,764",
+    "en": "0.764"
+   },
+   {
+    "vi": "0,300",
+    "en": "0.300"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phải đổi sang kelvin: η = 1 − T_L/T_H = 1 − 300,15/1.000,15 = 0,700. Dùng °C trực tiếp cho 0,963; cộng 273,15 hai lần cho 0,764; T_L/T_H = 0,300 là tỉ số nhiệt chứ không phải hiệu suất.",
+   "en": "Convert to kelvin: η = 1 − T_L/T_H = 1 − 300.15/1,000.15 = 0.700. Using °C directly gives 0.963; adding 273.15 twice gives 0.764; T_L/T_H = 0.300 is the temperature ratio, not the efficiency."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Carnot",
+   "en": "Added – generated from the type: Carnot efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Carnot hoạt động giữa nguồn nóng 477 °C và nguồn lạnh -23 °C. Hiệu suất nhiệt là:",
+   "en": "A Carnot cycle operates between a 477 °C source and a -23 °C sink. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,667",
+    "en": "0.667"
+   },
+   {
+    "vi": "1,048",
+    "en": "1.048"
+   },
+   {
+    "vi": "0,756",
+    "en": "0.756"
+   },
+   {
+    "vi": "0,333",
+    "en": "0.333"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phải đổi sang kelvin: η = 1 − T_L/T_H = 1 − 250,15/750,15 = 0,667. Dùng °C trực tiếp cho 1,048; cộng 273,15 hai lần cho 0,756; T_L/T_H = 0,333 là tỉ số nhiệt chứ không phải hiệu suất.",
+   "en": "Convert to kelvin: η = 1 − T_L/T_H = 1 − 250.15/750.15 = 0.667. Using °C directly gives 1.048; adding 273.15 twice gives 0.756; T_L/T_H = 0.333 is the temperature ratio, not the efficiency."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Carnot",
+   "en": "Added – generated from the type: Carnot efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một động cơ nhiệt thuận nghịch có hiệu suất 60 % thải nhiệt ở 300 K. Nhiệt độ nguồn nóng tối thiểu (K) là:",
+   "en": "A reversible heat engine of 60 % efficiency rejects heat at 300 K. The minimum source temperature (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "750 K",
+    "en": "750 K"
+   },
+   {
+    "vi": "480 K",
+    "en": "480 K"
+   },
+   {
+    "vi": "500 K",
+    "en": "500 K"
+   },
+   {
+    "vi": "120 K",
+    "en": "120 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − T_L/T_H ⇒ T_H = T_L/(1 − η) = 300/0,4 = 750 K. T_L(1 + η) = 480; T_L/η = 500; T_L(1 − η) = 120 đều là nhầm biến đổi.",
+   "en": "η = 1 − T_L/T_H ⇒ T_H = T_L/(1 − η) = 300/0.4 = 750 K. T_L(1 + η) = 480; T_L/η = 500; T_L(1 − η) = 120 are algebra slips."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Carnot ngược",
+   "en": "Added – generated from the type: inverse Carnot efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí lạnh-chuẩn có tỉ số nén r = 7, k = 1,4. Hiệu suất nhiệt là:",
+   "en": "A cold-air-standard Otto cycle has compression ratio r = 7, k = 1.4. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,541",
+    "en": "0.541"
+   },
+   {
+    "vi": "0,857",
+    "en": "0.857"
+   },
+   {
+    "vi": "0,426",
+    "en": "0.426"
+   },
+   {
+    "vi": "0,459",
+    "en": "0.459"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − 1/r^(k−1) = 1 − 7^(−0,4) = 0,541. 1 − 1/r = 0,857 quên số mũ; số mũ (k−1)/k (của Brayton) cho 0,426; r^(1−k) = 0,459 là 1 − η.",
+   "en": "η = 1 − 1/r^(k−1) = 1 − 7^(−0.4) = 0.541. 1 − 1/r = 0.857 forgets the exponent; the exponent (k−1)/k (Brayton's) gives 0.426; r^(1−k) = 0.459 is 1 − η."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Otto",
+   "en": "Added – generated from the type: Otto efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí lạnh-chuẩn có tỉ số nén r = 11, k = 1,4. Hiệu suất nhiệt là:",
+   "en": "A cold-air-standard Otto cycle has compression ratio r = 11, k = 1.4. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,617",
+    "en": "0.617"
+   },
+   {
+    "vi": "0,909",
+    "en": "0.909"
+   },
+   {
+    "vi": "0,496",
+    "en": "0.496"
+   },
+   {
+    "vi": "0,383",
+    "en": "0.383"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − 1/r^(k−1) = 1 − 11^(−0,4) = 0,617. 1 − 1/r = 0,909 quên số mũ; số mũ (k−1)/k (của Brayton) cho 0,496; r^(1−k) = 0,383 là 1 − η.",
+   "en": "η = 1 − 1/r^(k−1) = 1 − 11^(−0.4) = 0.617. 1 − 1/r = 0.909 forgets the exponent; the exponent (k−1)/k (Brayton's) gives 0.496; r^(1−k) = 0.383 is 1 − η."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Otto",
+   "en": "Added – generated from the type: Otto efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một động cơ xăng lý tưởng (Otto, k = 1,4) cần hiệu suất nhiệt 55 %. Tỉ số nén cần có là:",
+   "en": "An ideal gasoline engine (Otto, k = 1.4) needs a thermal efficiency of 55 %. The required compression ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "7,36",
+    "en": "7.36"
+   },
+   {
+    "vi": "2,22",
+    "en": "2.22"
+   },
+   {
+    "vi": "1,77",
+    "en": "1.77"
+   },
+   {
+    "vi": "16,36",
+    "en": "16.36"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1 − η = r^(1−k) ⇒ r = (1 − η)^(−1/(k−1)) = 0,45^(−2,5) = 7,36. 1/(1 − η) = 2,22 quên số mũ; số mũ −1/k cho 1,77; số mũ −k/(k−1) cho 16,36.",
+   "en": "1 − η = r^(1−k) ⇒ r = (1 − η)^(−1/(k−1)) = 0.45^(−2.5) = 7.36. 1/(1 − η) = 2.22 forgets the exponent; exponent −1/k gives 1.77; exponent −k/(k−1) gives 16.36."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số nén từ hiệu suất Otto",
+   "en": "Added – generated from the type: compression ratio from Otto efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một động cơ xăng lý tưởng (Otto, k = 1,4) cần hiệu suất nhiệt 62 %. Tỉ số nén cần có là:",
+   "en": "An ideal gasoline engine (Otto, k = 1.4) needs a thermal efficiency of 62 %. The required compression ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "11,23",
+    "en": "11.23"
+   },
+   {
+    "vi": "2,63",
+    "en": "2.63"
+   },
+   {
+    "vi": "2,00",
+    "en": "2.00"
+   },
+   {
+    "vi": "29,56",
+    "en": "29.56"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1 − η = r^(1−k) ⇒ r = (1 − η)^(−1/(k−1)) = 0,38^(−2,5) = 11,23. 1/(1 − η) = 2,63 quên số mũ; số mũ −1/k cho 2,00; số mũ −k/(k−1) cho 29,56.",
+   "en": "1 − η = r^(1−k) ⇒ r = (1 − η)^(−1/(k−1)) = 0.38^(−2.5) = 11.23. 1/(1 − η) = 2.63 forgets the exponent; exponent −1/k gives 2.00; exponent −k/(k−1) gives 29.56."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số nén từ hiệu suất Otto",
+   "en": "Added – generated from the type: compression ratio from Otto efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí lạnh-chuẩn (k = 1,4; c_v = 0,718 kJ/kg·K): r = 9, đầu nén 100 kPa, 20 °C, nhiệt cấp đẳng tích 1000 kJ/kg. Nhiệt độ cực đại T₃ (K) là:",
+   "en": "Cold-air-standard Otto cycle (k = 1.4; c_v = 0.718 kJ/kg·K): r = 9, start of compression 100 kPa, 20 °C, heat added at constant volume 1000 kJ/kg. The maximum temperature T₃ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "2.099 K",
+    "en": "2,099 K"
+   },
+   {
+    "vi": "1.686 K",
+    "en": "1,686 K"
+   },
+   {
+    "vi": "1.826 K",
+    "en": "1,826 K"
+   },
+   {
+    "vi": "1.701 K",
+    "en": "1,701 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = T₁r^(k−1) = 293,15·9^0,4 = 706,0 K; T₃ = T₂ + q_in/c_v = 706,0 + 1000/0,718 = 2.099 K. Bỏ bước nén cho 1.686; 1.826 là °C; dùng c_p thay c_v cho 1.701.",
+   "en": "T₂ = T₁r^(k−1) = 293.15·9^0.4 = 706.0 K; T₃ = T₂ + q_in/c_v = 706.0 + 1000/0.718 = 2,099 K. Skipping the compression gives 1,686; 1,826 is in °C; using c_p instead of c_v gives 1,701."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Otto khí lạnh: T₃",
+   "en": "Added – generated from the type: cold-air Otto: T₃"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí lạnh-chuẩn (k = 1,4; c_v = 0,718; R = 0,287): r = 10, đầu nén 95 kPa, 25 °C, nhiệt cấp 1200 kJ/kg. Áp suất cực đại P₃ (kPa) là:",
+   "en": "Cold-air-standard Otto cycle (k = 1.4; c_v = 0.718; R = 0.287): r = 10, start of compression 95 kPa, 25 °C, heat added 1200 kJ/kg. The maximum pressure P₃ (kPa) is:"
+  },
+  "opts": [
+   {
+    "vi": "7.712 kPa",
+    "en": "7,712 kPa"
+   },
+   {
+    "vi": "2.386 kPa",
+    "en": "2,386 kPa"
+   },
+   {
+    "vi": "4.025 kPa",
+    "en": "4,025 kPa"
+   },
+   {
+    "vi": "771 kPa",
+    "en": "771 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 748,9 K, P₂ = P₁r^k = 2.386 kPa; T₃ = T₂ + q/c_v = 2.420 K; đẳng tích nên P₃ = P₂T₃/T₂ = 7.712 kPa. 2.386 là P₂ (trước cấp nhiệt); chia thêm cho r cho 771; dùng T₁ theo °C+273 cho 4.025.",
+   "en": "T₂ = 748.9 K, P₂ = P₁r^k = 2,386 kPa; T₃ = T₂ + q/c_v = 2,420 K; constant volume so P₃ = P₂T₃/T₂ = 7,712 kPa. 2,386 is P₂ (before heat addition); dividing again by r gives 771; adding 273 twice in T₁ gives 4,025."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Otto khí lạnh: P₃",
+   "en": "Added – generated from the type: cold-air Otto: P₃"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí lạnh-chuẩn (k = 1,4; c_v = 0,718 kJ/kg·K): r = 8,5, đầu nén 101 kPa, 15 °C, nhiệt cấp đẳng tích 900 kJ/kg. Nhiệt độ cực đại T₃ (K) là:",
+   "en": "Cold-air-standard Otto cycle (k = 1.4; c_v = 0.718 kJ/kg·K): r = 8.5, start of compression 101 kPa, 15 °C, heat added at constant volume 900 kJ/kg. The maximum temperature T₃ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.932 K",
+    "en": "1,932 K"
+   },
+   {
+    "vi": "1.542 K",
+    "en": "1,542 K"
+   },
+   {
+    "vi": "1.659 K",
+    "en": "1,659 K"
+   },
+   {
+    "vi": "1.574 K",
+    "en": "1,574 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = T₁r^(k−1) = 288,15·8,5^0,4 = 678,2 K; T₃ = T₂ + q_in/c_v = 678,2 + 900/0,718 = 1.932 K. Bỏ bước nén cho 1.542; 1.659 là °C; dùng c_p thay c_v cho 1.574.",
+   "en": "T₂ = T₁r^(k−1) = 288.15·8.5^0.4 = 678.2 K; T₃ = T₂ + q_in/c_v = 678.2 + 900/0.718 = 1,932 K. Skipping the compression gives 1,542; 1,659 is in °C; using c_p instead of c_v gives 1,574."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Otto khí lạnh: T₃",
+   "en": "Added – generated from the type: cold-air Otto: T₃"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí lạnh-chuẩn (k = 1,4; c_v = 0,718; R = 0,287): r = 9,5, đầu nén 100 kPa, 30 °C, nhiệt cấp 1100 kJ/kg. Áp suất cực đại P₃ (kPa) là:",
+   "en": "Cold-air-standard Otto cycle (k = 1.4; c_v = 0.718; R = 0.287): r = 9.5, start of compression 100 kPa, 30 °C, heat added 1100 kJ/kg. The maximum pressure P₃ (kPa) is:"
+  },
+  "opts": [
+   {
+    "vi": "7.139 kPa",
+    "en": "7,139 kPa"
+   },
+   {
+    "vi": "2.338 kPa",
+    "en": "2,338 kPa"
+   },
+   {
+    "vi": "3.755 kPa",
+    "en": "3,755 kPa"
+   },
+   {
+    "vi": "751 kPa",
+    "en": "751 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 746,0 K, P₂ = P₁r^k = 2.338 kPa; T₃ = T₂ + q/c_v = 2.278 K; đẳng tích nên P₃ = P₂T₃/T₂ = 7.139 kPa. 2.338 là P₂ (trước cấp nhiệt); chia thêm cho r cho 751; dùng T₁ theo °C+273 cho 3.755.",
+   "en": "T₂ = 746.0 K, P₂ = P₁r^k = 2,338 kPa; T₃ = T₂ + q/c_v = 2,278 K; constant volume so P₃ = P₂T₃/T₂ = 7,139 kPa. 2,338 is P₂ (before heat addition); dividing again by r gives 751; adding 273 twice in T₁ gives 3,755."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Otto khí lạnh: P₃",
+   "en": "Added – generated from the type: cold-air Otto: P₃"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí lạnh-chuẩn (k = 1,4) có tỉ số nén r = 16 và tỉ số cắt r_c = 2,0. Hiệu suất nhiệt là:",
+   "en": "A cold-air-standard Diesel cycle (k = 1.4) has compression ratio r = 16 and cutoff ratio r_c = 2.0. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,614",
+    "en": "0.614"
+   },
+   {
+    "vi": "0,670",
+    "en": "0.670"
+   },
+   {
+    "vi": "0,459",
+    "en": "0.459"
+   },
+   {
+    "vi": "0,807",
+    "en": "0.807"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 16^(−0,4)·(2,639 − 1)/(1,4·1,00) = 0,614. Công thức Otto cho 0,670 (cao hơn); quên k trong ngoặc cho 0,459; mẫu số k·r_c thay k(r_c − 1) cho 0,807.",
+   "en": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 16^(−0.4)·(2.639 − 1)/(1.4·1.00) = 0.614. The Otto formula gives 0.670 (too high); forgetting k in the bracket gives 0.459; the denominator k·r_c instead of k(r_c − 1) gives 0.807."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Diesel",
+   "en": "Added – generated from the type: Diesel efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí lạnh-chuẩn (k = 1,4) có tỉ số nén r = 18 và tỉ số cắt r_c = 2,5. Hiệu suất nhiệt là:",
+   "en": "A cold-air-standard Diesel cycle (k = 1.4) has compression ratio r = 18 and cutoff ratio r_c = 2.5. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,609",
+    "en": "0.609"
+   },
+   {
+    "vi": "0,685",
+    "en": "0.685"
+   },
+   {
+    "vi": "0,453",
+    "en": "0.453"
+   },
+   {
+    "vi": "0,766",
+    "en": "0.766"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 18^(−0,4)·(3,607 − 1)/(1,4·1,50) = 0,609. Công thức Otto cho 0,685 (cao hơn); quên k trong ngoặc cho 0,453; mẫu số k·r_c thay k(r_c − 1) cho 0,766.",
+   "en": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 18^(−0.4)·(3.607 − 1)/(1.4·1.50) = 0.609. The Otto formula gives 0.685 (too high); forgetting k in the bracket gives 0.453; the denominator k·r_c instead of k(r_c − 1) gives 0.766."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Diesel",
+   "en": "Added – generated from the type: Diesel efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí lạnh-chuẩn (k = 1,4) có tỉ số nén r = 20 và tỉ số cắt r_c = 1,8. Hiệu suất nhiệt là:",
+   "en": "A cold-air-standard Diesel cycle (k = 1.4) has compression ratio r = 20 and cutoff ratio r_c = 1.8. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,656",
+    "en": "0.656"
+   },
+   {
+    "vi": "0,698",
+    "en": "0.698"
+   },
+   {
+    "vi": "0,518",
+    "en": "0.518"
+   },
+   {
+    "vi": "0,847",
+    "en": "0.847"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 20^(−0,4)·(2,277 − 1)/(1,4·0,80) = 0,656. Công thức Otto cho 0,698 (cao hơn); quên k trong ngoặc cho 0,518; mẫu số k·r_c thay k(r_c − 1) cho 0,847.",
+   "en": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 20^(−0.4)·(2.277 − 1)/(1.4·0.80) = 0.656. The Otto formula gives 0.698 (too high); forgetting k in the bracket gives 0.518; the denominator k·r_c instead of k(r_c − 1) gives 0.847."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Diesel",
+   "en": "Added – generated from the type: Diesel efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí lạnh-chuẩn (k = 1,4; c_p = 1,005; c_v = 0,718): r = 18, đầu nén 100 kPa và 27 °C, r_c = 2,2. Nhiệt độ cuối quá trình giãn đẳng entropi T₄ (K) là:",
+   "en": "Cold-air-standard Diesel cycle (k = 1.4; c_p = 1.005; c_v = 0.718): r = 18, start of compression 100 kPa and 27 °C, r_c = 2.2. The temperature at the end of isentropic expansion T₄ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "905 K",
+    "en": "905 K"
+   },
+   {
+    "vi": "660 K",
+    "en": "660 K"
+   },
+   {
+    "vi": "1.531 K",
+    "en": "1,531 K"
+   },
+   {
+    "vi": "1.151 K",
+    "en": "1,151 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 954 K; T₃ = r_cT₂ = 2.098 K; V₃/V₄ = r_c/r ⇒ T₄ = T₃(r_c/r)^0,4 = 905 K. Dùng V₃/V₄ = 1/r (quên r_c) cho 660 K; T₃/r_c^0,4 = 1.531 K (chia nhầm cho r_c thay vì nhân r_c/r); số mũ (k−1)/k thay k−1 cho 1.151 K.",
+   "en": "T₂ = 954 K; T₃ = r_cT₂ = 2,098 K; V₃/V₄ = r_c/r ⇒ T₄ = T₃(r_c/r)^0.4 = 905 K. Using V₃/V₄ = 1/r (forgetting r_c) gives 660 K; T₃/r_c^0.4 = 1,531 K (dividing by r_c instead of using r_c/r); the exponent (k−1)/k instead of k−1 gives 1,151 K."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Diesel khí lạnh: T₄",
+   "en": "Added – generated from the type: cold-air Diesel: T₄"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí lạnh-chuẩn (k = 1,4; c_p = 1,005; c_v = 0,718): r = 16, đầu nén 95 kPa và 40 °C, r_c = 2,0. Nhiệt độ cuối quá trình giãn đẳng entropi T₄ (K) là:",
+   "en": "Cold-air-standard Diesel cycle (k = 1.4; c_p = 1.005; c_v = 0.718): r = 16, start of compression 95 kPa and 40 °C, r_c = 2.0. The temperature at the end of isentropic expansion T₄ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "826 K",
+    "en": "826 K"
+   },
+   {
+    "vi": "626 K",
+    "en": "626 K"
+   },
+   {
+    "vi": "1.439 K",
+    "en": "1,439 K"
+   },
+   {
+    "vi": "1.048 K",
+    "en": "1,048 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 949 K; T₃ = r_cT₂ = 1.899 K; V₃/V₄ = r_c/r ⇒ T₄ = T₃(r_c/r)^0,4 = 826 K. Dùng V₃/V₄ = 1/r (quên r_c) cho 626 K; T₃/r_c^0,4 = 1.439 K (chia nhầm cho r_c thay vì nhân r_c/r); số mũ (k−1)/k thay k−1 cho 1.048 K.",
+   "en": "T₂ = 949 K; T₃ = r_cT₂ = 1,899 K; V₃/V₄ = r_c/r ⇒ T₄ = T₃(r_c/r)^0.4 = 826 K. Using V₃/V₄ = 1/r (forgetting r_c) gives 626 K; T₃/r_c^0.4 = 1,439 K (dividing by r_c instead of using r_c/r); the exponent (k−1)/k instead of k−1 gives 1,048 K."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Diesel khí lạnh: T₄",
+   "en": "Added – generated from the type: cold-air Diesel: T₄"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí lạnh-chuẩn (k = 1,4; c_p = 1,005; c_v = 0,718; R = 0,287): r = 20, 100 kPa và 20 °C, r_c = 1,9. MEP (kPa) là:",
+   "en": "Cold-air-standard Diesel cycle (k = 1.4; c_p = 1.005; c_v = 0.718; R = 0.287): r = 20, 100 kPa and 20 °C, r_c = 1.9. The MEP (kPa) is:"
+  },
+  "opts": [
+   {
+    "vi": "716 kPa",
+    "en": "716 kPa"
+   },
+   {
+    "vi": "680 kPa",
+    "en": "680 kPa"
+   },
+   {
+    "vi": "1.100 kPa",
+    "en": "1,100 kPa"
+   },
+   {
+    "vi": "756 kPa",
+    "en": "756 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 972, T₃ = 1.846, T₄ = 720 K; q_in = c_p(T₃ − T₂) = 879, q_out = c_v(T₄ − T₁) = 306, w_net = 572 kJ/kg; v₁ = 0,841 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 716 kPa. Chia w_net cho v₁ cho 680; dùng q_in thay w_net cho 1.100; v₁(r_c − 1) thay v₁(1 − 1/r) cho 756.",
+   "en": "T₂ = 972, T₃ = 1,846, T₄ = 720 K; q_in = c_p(T₃ − T₂) = 879, q_out = c_v(T₄ − T₁) = 306, w_net = 572 kJ/kg; v₁ = 0.841 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 716 kPa. Dividing w_net by v₁ gives 680; using q_in instead of w_net gives 1,100; v₁(r_c − 1) instead of v₁(1 − 1/r) gives 756."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Diesel khí lạnh: MEP",
+   "en": "Added – generated from the type: cold-air Diesel: MEP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với cùng tỉ số nén r = 16 và khí lạnh (k = 1,4), hiệu suất Otto lớn hơn hiệu suất Diesel (r_c = 2) bao nhiêu điểm phần trăm?",
+   "en": "At the same compression ratio r = 16 and cold air (k = 1.4), by how many percentage points does the Otto efficiency exceed the Diesel efficiency (r_c = 2)?"
+  },
+  "opts": [
+   {
+    "vi": "5,63",
+    "en": "5.63"
+   },
+   {
+    "vi": "38,62",
+    "en": "38.62"
+   },
+   {
+    "vi": "61,38",
+    "en": "61.38"
+   },
+   {
+    "vi": "11,26",
+    "en": "11.26"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_Otto = 1 − 16^(−0,4) = 0,6701; η_Diesel = 0,6138 ⇒ chênh 5,63 điểm %. Đây là hệ quả của đại lượng trong ngoặc > 1 (slide tr.31). 38,62 là phần nhiệt thải của Diesel; 61,38 là chính η_Diesel.",
+   "en": "η_Otto = 1 − 16^(−0.4) = 0.6701; η_Diesel = 0.6138 ⇒ gap 5.63 percentage points. It follows from the bracket being > 1 (slide p.31). 38.62 is the Diesel heat-rejection share; 61.38 is η_Diesel itself."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng so sánh Otto và Diesel",
+   "en": "Added – generated from the type: Otto versus Diesel comparison"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản khí lạnh (k = 1,4): r_p = 10, T₁ = 27 °C, T₃ = 1200 K. Nhiệt độ ra máy nén T₂ và ra tuabin T₄ lần lượt là:",
+   "en": "Simple cold-air Brayton cycle (k = 1.4): r_p = 10, T₁ = 27 °C, T₃ = 1200 K. The compressor-exit T₂ and turbine-exit T₄ temperatures are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "579 K; 622 K",
+    "en": "579 K; 622 K"
+   },
+   {
+    "vi": "3.002 K; 120 K",
+    "en": "3,002 K; 120 K"
+   },
+   {
+    "vi": "754 K; 478 K",
+    "en": "754 K; 478 K"
+   },
+   {
+    "vi": "622 K; 579 K",
+    "en": "622 K; 579 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "x = r_p^((k−1)/k) = 10^0,2857 = 1,9307; T₂ = T₁x = 579 K; T₄ = T₃/x = 622 K. T₁r_p và T₃/r_p quên số mũ; số mũ k−1 = 0,4 cho 754 K và 478 K; cặp có 622 K đứng trước đảo vị trí hai trạng thái.",
+   "en": "x = r_p^((k−1)/k) = 10^0.2857 = 1.9307; T₂ = T₁x = 579 K; T₄ = T₃/x = 622 K. T₁r_p and T₃/r_p forget the exponent; the exponent k−1 = 0.4 gives 754 K and 478 K; the pair starting with 622 K swaps the two states."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton khí lạnh: T₂, T₄",
+   "en": "Added – generated from the type: cold-air Brayton: T₂, T₄"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: brayton_k)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản khí lạnh (k = 1,4): r_p = 8, T₁ = 15 °C, T₃ = 1100 K. Tỉ số công hồi r_bw = w_comp/w_turb là:",
+   "en": "Simple cold-air Brayton cycle (k = 1.4): r_p = 8, T₁ = 15 °C, T₃ = 1100 K. The back work ratio r_bw = w_comp/w_turb is:"
+  },
+  "opts": [
+   {
+    "vi": "0,475",
+    "en": "0.475"
+   },
+   {
+    "vi": "0,525",
+    "en": "0.525"
+   },
+   {
+    "vi": "0,405",
+    "en": "0.405"
+   },
+   {
+    "vi": "0,262",
+    "en": "0.262"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khí lạnh: w_comp = c_pT₁(x − 1) = 235,0, w_turb = c_pT₃(1 − 1/x) = 495,2 ⇒ r_bw = T₁x/T₃ = 0,475. 0,525 là phần công tuabin còn lại; w_comp/q_in = 0,405; T₁/T₃ = 0,262 bỏ thừa số x.",
+   "en": "Cold air: w_comp = c_pT₁(x − 1) = 235.0, w_turb = c_pT₃(1 − 1/x) = 495.2 ⇒ r_bw = T₁x/T₃ = 0.475. 0.525 is the remaining share of the turbine work; w_comp/q_in = 0.405; T₁/T₃ = 0.262 drops the factor x."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton khí lạnh: tỉ số công hồi",
+   "en": "Added – generated from the type: cold-air Brayton: back work ratio"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản khí lạnh (k = 1,4; c_p = 1,005): r_p = 12, T₁ = 30 °C, T₃ = 1300 K. Công thực riêng w_net và hiệu suất lần lượt là:",
+   "en": "Simple cold-air Brayton cycle (k = 1.4; c_p = 1.005): r_p = 12, T₁ = 30 °C, T₃ = 1300 K. The net work per kg and the efficiency are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "349 kJ/kg; 0,508",
+    "en": "349 kJ/kg; 0.508"
+   },
+   {
+    "vi": "664 kJ/kg; 0,508",
+    "en": "664 kJ/kg; 0.508"
+   },
+   {
+    "vi": "349 kJ/kg; 0,767",
+    "en": "349 kJ/kg; 0.767"
+   },
+   {
+    "vi": "315 kJ/kg; 0,508",
+    "en": "315 kJ/kg; 0.508"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 617 K, T₄ = 639 K; w_comp = 315, w_turb = 664 ⇒ w_net = 349 kJ/kg; q_in = c_p(T₃ − T₂) = 687 ⇒ η = 0,508 (= 1 − 1/x). w_turb (664) và w_comp (315) là công của từng máy chứ không phải công thực; 0,767 là hiệu suất Carnot.",
+   "en": "T₂ = 617 K, T₄ = 639 K; w_comp = 315, w_turb = 664 ⇒ w_net = 349 kJ/kg; q_in = c_p(T₃ − T₂) = 687 ⇒ η = 0.508 (= 1 − 1/x). w_turb (664) and w_comp (315) are the work of single machines, not the net work; 0.767 is the Carnot efficiency."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton khí lạnh: w_net, η",
+   "en": "Added – generated from the type: cold-air Brayton: w_net, η"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: brayton_k)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản khí lạnh (k = 1,4): r_p = 16. Hiệu suất nhiệt là:",
+   "en": "Simple cold-air Brayton cycle (k = 1.4): r_p = 16. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,547",
+    "en": "0.547"
+   },
+   {
+    "vi": "0,938",
+    "en": "0.938"
+   },
+   {
+    "vi": "0,670",
+    "en": "0.670"
+   },
+   {
+    "vi": "0,791",
+    "en": "0.791"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − 1/r_p^((k−1)/k) = 1 − 1/16^0,2857 = 0,547. 1 − 1/r_p = 0,938 quên số mũ; số mũ k−1 cho 0,670; 1 − T₁/T₃ = 0,791 là hiệu suất Carnot.",
+   "en": "η = 1 − 1/r_p^((k−1)/k) = 1 − 1/16^0.2857 = 0.547. 1 − 1/r_p = 0.938 forgets the exponent; the exponent k−1 gives 0.670; 1 − T₁/T₃ = 0.791 is the Carnot efficiency."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Brayton",
+   "en": "Added – generated from the type: Brayton efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với T_min = 300 K, T_max = 1000 K và k = 1,4, tỉ số áp r_p cho công thực cực đại của chu trình Brayton khí lạnh (slide tr.40) là:",
+   "en": "With T_min = 300 K, T_max = 1000 K and k = 1.4, the pressure ratio r_p giving the maximum net work of the cold-air Brayton cycle (slide p.40) is:"
+  },
+  "opts": [
+   {
+    "vi": "8,22",
+    "en": "8.22"
+   },
+   {
+    "vi": "67,62",
+    "en": "67.62"
+   },
+   {
+    "vi": "1,41",
+    "en": "1.41"
+   },
+   {
+    "vi": "2,70",
+    "en": "2.70"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r_p,opt = (T_max/T_min)^(k/[2(k−1)]) = 3,333^1,75 = 8,22. Số mũ k/(k−1) = 3,5 là giá trị làm w_net = 0 (67,6); số mũ (k−1)/k cho 1,41; (T₃/T₁)^k/2 cho 2,70.",
+   "en": "r_p,opt = (T_max/T_min)^(k/[2(k−1)]) = 3.333^1.75 = 8.22. The exponent k/(k−1) = 3.5 gives the value at which w_net = 0 (67.6); the exponent (k−1)/k gives 1.41; (T₃/T₁)^k/2 gives 2.70."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng r_p tối ưu cho công",
+   "en": "Added – generated from the type: work-optimal r_p"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với T_min = 288 K, T_max = 1400 K và k = 1,4, tỉ số áp r_p cho công thực cực đại của chu trình Brayton khí lạnh (slide tr.40) là:",
+   "en": "With T_min = 288 K, T_max = 1400 K and k = 1.4, the pressure ratio r_p giving the maximum net work of the cold-air Brayton cycle (slide p.40) is:"
+  },
+  "opts": [
+   {
+    "vi": "15,91",
+    "en": "15.91"
+   },
+   {
+    "vi": "253,26",
+    "en": "253.26"
+   },
+   {
+    "vi": "1,57",
+    "en": "1.57"
+   },
+   {
+    "vi": "4,58",
+    "en": "4.58"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r_p,opt = (T_max/T_min)^(k/[2(k−1)]) = 4,861^1,75 = 15,91. Số mũ k/(k−1) = 3,5 là giá trị làm w_net = 0 (253,3); số mũ (k−1)/k cho 1,57; (T₃/T₁)^k/2 cho 4,58.",
+   "en": "r_p,opt = (T_max/T_min)^(k/[2(k−1)]) = 4.861^1.75 = 15.91. The exponent k/(k−1) = 3.5 gives the value at which w_net = 0 (253.3); the exponent (k−1)/k gives 1.57; (T₃/T₁)^k/2 gives 4.58."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng r_p tối ưu cho công",
+   "en": "Added – generated from the type: work-optimal r_p"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton khí lạnh với T_min = 300 K, T_max = 1000 K (slide tr.40; k = 1,4; c_p = 1,005). Tại r_p cho công cực đại, công thực riêng và hiệu suất lần lượt là:",
+   "en": "A cold-air Brayton cycle with T_min = 300 K, T_max = 1000 K (slide p.40; k = 1.4; c_p = 1.005). At the r_p of maximum work, the net work per kg and the efficiency are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "206 kJ/kg; 0,452",
+    "en": "206 kJ/kg; 0.452"
+   },
+   {
+    "vi": "206 kJ/kg; 0,700",
+    "en": "206 kJ/kg; 0.700"
+   },
+   {
+    "vi": "189 kJ/kg; 0,539",
+    "en": "189 kJ/kg; 0.539"
+   },
+   {
+    "vi": "455 kJ/kg; 0,452",
+    "en": "455 kJ/kg; 0.452"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r_p,opt = 8,22 ⇒ x = √(T₃/T₁) = 1,8257; T₂ = T₄ = 547,7 K; w_net = c_p(T₃ − T₂) − c_p(T₄ − T₁) = 205,6 kJ/kg; η = 1 − 1/x = 0,452, thấp hơn Carnot 0,700. Tại r_p = 15 (slide) công chỉ còn 189 kJ/kg dù η = 0,539 cao hơn: công cực đại và hiệu suất cực đại không cùng điểm.",
+   "en": "r_p,opt = 8.22 ⇒ x = √(T₃/T₁) = 1.8257; T₂ = T₄ = 547.7 K; w_net = c_p(T₃ − T₂) − c_p(T₄ − T₁) = 205.6 kJ/kg; η = 1 − 1/x = 0.452, below the Carnot value 0.700. At r_p = 15 (slide) the work is only 189 kJ/kg although η = 0.539 is higher: maximum work and maximum efficiency do not coincide."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton: công cực đại",
+   "en": "Added – generated from the type: Brayton at maximum work"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: brayton_wmax)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton khí lạnh (k = 1,4; c_p = 1,005): r_p = 10, T₁ = 300 K, T₃ = 1300 K, η_c = 85 %, η_t = 88 %. Tỉ số công hồi là:",
+   "en": "Cold-air Brayton cycle (k = 1.4; c_p = 1.005): r_p = 10, T₁ = 300 K, T₃ = 1300 K, η_c = 85 %, η_t = 88 %. The back work ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "0,596",
+    "en": "0.596"
+   },
+   {
+    "vi": "0,446",
+    "en": "0.446"
+   },
+   {
+    "vi": "0,333",
+    "en": "0.333"
+   },
+   {
+    "vi": "0,430",
+    "en": "0.430"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "w_comp = w_s/η_c = 280,6/0,85 = 330,1; w_turb = η_tw_s = 0,88·629,8 = 554,2 kJ/kg ⇒ r_bw = 0,596. Lý tưởng cho 0,446; nhân cả hai η cho 0,333; nhân η_c/η_t cho 0,430 (đúng phải chia cho η_c và nhân η_t ở mẫu: r_bw = r_bw,s/(η_cη_t)).",
+   "en": "w_comp = w_s/η_c = 280.6/0.85 = 330.1; w_turb = η_tw_s = 0.88·629.8 = 554.2 kJ/kg ⇒ r_bw = 0.596. The ideal cycle gives 0.446; multiplying by both η gives 0.333; multiplying by η_c/η_t gives 0.430 (the correct factor is 1/(η_cη_t): r_bw = r_bw,s/(η_cη_t))."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton thực: tỉ số công hồi",
+   "en": "Added – generated from the type: real Brayton: back work ratio"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng chu trình (r_p = 10, T₁ = 300 K, T₃ = 1300 K, η_c = 85 %, η_t = 88 %, khí lạnh): hiệu suất nhiệt là:",
+   "en": "The same cycle (r_p = 10, T₁ = 300 K, T₃ = 1300 K, η_c = 85 %, η_t = 88 %, cold air): the thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,332",
+    "en": "0.332"
+   },
+   {
+    "vi": "0,482",
+    "en": "0.482"
+   },
+   {
+    "vi": "0,309",
+    "en": "0.309"
+   },
+   {
+    "vi": "0,308",
+    "en": "0.308"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = T₁ + w_comp/c_p = 628 K; q_in = c_p(T₃ − T₂) = 675; w_net = 224 kJ/kg ⇒ η = 0,332 (lý tưởng 0,482). Nhiệt cấp vào tăng khi máy nén kém hiệu quả vì T₂ cao hơn nhưng công thực giảm nhiều hơn.",
+   "en": "T₂ = T₁ + w_comp/c_p = 628 K; q_in = c_p(T₃ − T₂) = 675; w_net = 224 kJ/kg ⇒ η = 0.332 (ideal 0.482). Less heat is needed when the compressor is less efficient (T₂ is higher), but the net work drops even more."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton thực: hiệu suất",
+   "en": "Added – generated from the type: real Brayton: efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton khí lạnh (k = 1,4; c_p = 1,005): r_p = 8, T₁ = 290 K, T₃ = 1200 K, η_c = 80 %, η_t = 85 %. Tỉ số công hồi là:",
+   "en": "Cold-air Brayton cycle (k = 1.4; c_p = 1.005): r_p = 8, T₁ = 290 K, T₃ = 1200 K, η_c = 80 %, η_t = 85 %. The back work ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "0,644",
+    "en": "0.644"
+   },
+   {
+    "vi": "0,438",
+    "en": "0.438"
+   },
+   {
+    "vi": "0,298",
+    "en": "0.298"
+   },
+   {
+    "vi": "0,412",
+    "en": "0.412"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "w_comp = w_s/η_c = 236,5/0,8 = 295,6; w_turb = η_tw_s = 0,85·540,2 = 459,2 kJ/kg ⇒ r_bw = 0,644. Lý tưởng cho 0,438; nhân cả hai η cho 0,298; nhân η_c/η_t cho 0,412 (đúng phải chia cho η_c và nhân η_t ở mẫu: r_bw = r_bw,s/(η_cη_t)).",
+   "en": "w_comp = w_s/η_c = 236.5/0.8 = 295.6; w_turb = η_tw_s = 0.85·540.2 = 459.2 kJ/kg ⇒ r_bw = 0.644. The ideal cycle gives 0.438; multiplying by both η gives 0.298; multiplying by η_c/η_t gives 0.412 (the correct factor is 1/(η_cη_t): r_bw = r_bw,s/(η_cη_t))."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton thực: tỉ số công hồi",
+   "en": "Added – generated from the type: real Brayton: back work ratio"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng chu trình (r_p = 8, T₁ = 290 K, T₃ = 1200 K, η_c = 80 %, η_t = 85 %, khí lạnh): hiệu suất nhiệt là:",
+   "en": "The same cycle (r_p = 8, T₁ = 290 K, T₃ = 1200 K, η_c = 80 %, η_t = 85 %, cold air): the thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,264",
+    "en": "0.264"
+   },
+   {
+    "vi": "0,448",
+    "en": "0.448"
+   },
+   {
+    "vi": "0,241",
+    "en": "0.241"
+   },
+   {
+    "vi": "0,188",
+    "en": "0.188"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = T₁ + w_comp/c_p = 584 K; q_in = c_p(T₃ − T₂) = 619; w_net = 164 kJ/kg ⇒ η = 0,264 (lý tưởng 0,448). Nhiệt cấp vào tăng khi máy nén kém hiệu quả vì T₂ cao hơn nhưng công thực giảm nhiều hơn.",
+   "en": "T₂ = T₁ + w_comp/c_p = 584 K; q_in = c_p(T₃ − T₂) = 619; w_net = 164 kJ/kg ⇒ η = 0.264 (ideal 0.448). Less heat is needed when the compressor is less efficient (T₂ is higher), but the net work drops even more."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton thực: hiệu suất",
+   "en": "Added – generated from the type: real Brayton: efficiency"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton khí lạnh có bộ hồi nhiệt lý tưởng (ε = 100 %): T₁ = 300 K, T₃ = 1200 K, r_p = 6, k = 1,4. Hiệu suất nhiệt là:",
+   "en": "A cold-air Brayton cycle with an ideal regenerator (ε = 100 %): T₁ = 300 K, T₃ = 1200 K, r_p = 6, k = 1.4. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,583",
+    "en": "0.583"
+   },
+   {
+    "vi": "0,401",
+    "en": "0.401"
+   },
+   {
+    "vi": "0,850",
+    "en": "0.850"
+   },
+   {
+    "vi": "0,750",
+    "en": "0.750"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_regen = 1 − (T₁/T₃)r_p^((k−1)/k) = 1 − (300/1200)·1,6685 = 0,583 (slide tr.45). Không hồi nhiệt: 0,401; (T₁/T₃)/x thay cho (T₁/T₃)x cho 0,850; Carnot 0,750.",
+   "en": "η_regen = 1 − (T₁/T₃)r_p^((k−1)/k) = 1 − (300/1200)·1.6685 = 0.583 (slide p.45). Without regeneration: 0.401; (T₁/T₃)/x instead of (T₁/T₃)x gives 0.850; Carnot 0.750."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Brayton có hồi nhiệt",
+   "en": "Added – generated from the type: Brayton efficiency with regeneration"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton khí lạnh có bộ hồi nhiệt lý tưởng (ε = 100 %): T₁ = 300 K, T₃ = 1400 K, r_p = 8, k = 1,4. Hiệu suất nhiệt là:",
+   "en": "A cold-air Brayton cycle with an ideal regenerator (ε = 100 %): T₁ = 300 K, T₃ = 1400 K, r_p = 8, k = 1.4. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,612",
+    "en": "0.612"
+   },
+   {
+    "vi": "0,448",
+    "en": "0.448"
+   },
+   {
+    "vi": "0,882",
+    "en": "0.882"
+   },
+   {
+    "vi": "0,786",
+    "en": "0.786"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_regen = 1 − (T₁/T₃)r_p^((k−1)/k) = 1 − (300/1400)·1,8114 = 0,612 (slide tr.45). Không hồi nhiệt: 0,448; (T₁/T₃)/x thay cho (T₁/T₃)x cho 0,882; Carnot 0,786.",
+   "en": "η_regen = 1 − (T₁/T₃)r_p^((k−1)/k) = 1 − (300/1400)·1.8114 = 0.612 (slide p.45). Without regeneration: 0.448; (T₁/T₃)/x instead of (T₁/T₃)x gives 0.882; Carnot 0.786."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu suất Brayton có hồi nhiệt",
+   "en": "Added – generated from the type: Brayton efficiency with regeneration"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với T₁ = 300 K, T₃ = 1200 K, k = 1,4 (khí lạnh), hồi nhiệt lý tưởng chỉ có lợi (η_regen > η không hồi nhiệt) khi r_p nhỏ hơn giá trị nào?",
+   "en": "With T₁ = 300 K, T₃ = 1200 K, k = 1.4 (cold air), an ideal regenerator helps (η_regen > η without regeneration) only when r_p is below which value?"
+  },
+  "opts": [
+   {
+    "vi": "11,31",
+    "en": "11.31"
+   },
+   {
+    "vi": "128,00",
+    "en": "128.00"
+   },
+   {
+    "vi": "1,49",
+    "en": "1.49"
+   },
+   {
+    "vi": "5,66",
+    "en": "5.66"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_regen = η_simple ⇔ (T₁/T₃)x = 1/x ⇔ x² = T₃/T₁ ⇒ r_p = (T₃/T₁)^(k/[2(k−1)]) = 4^1,75 = 11,31: cũng là r_p cho công cực đại. Dưới giá trị này T₄ > T₂ nên khí xả còn nóng hơn khí nén và hồi nhiệt có ích. Số mũ k/(k−1) cho 128,0; (k−1)/k cho 1,49.",
+   "en": "η_regen = η_simple ⇔ (T₁/T₃)x = 1/x ⇔ x² = T₃/T₁ ⇒ r_p = (T₃/T₁)^(k/[2(k−1)]) = 4^1.75 = 11.31: also the r_p of maximum work. Below it T₄ > T₂ so the exhaust is hotter than the compressed air and regeneration helps. The exponent k/(k−1) gives 128.0; (k−1)/k gives 1.49."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng r_p giao điểm hồi nhiệt",
+   "en": "Added – generated from the type: regeneration cross-over r_p"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ hồi nhiệt có hiệu quả ε = 0,7 (khí lạnh): khí nén ra máy nén ở T₂ = 520 K, khí xả tuabin vào bộ hồi nhiệt ở T₄ = 780 K. Nhiệt độ khí nén sau bộ hồi nhiệt T₅ (K) là:",
+   "en": "A regenerator of effectiveness ε = 0.7 (cold air): compressed air leaves the compressor at T₂ = 520 K, turbine exhaust enters the regenerator at T₄ = 780 K. The compressed-air temperature after the regenerator T₅ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "702 K",
+    "en": "702 K"
+   },
+   {
+    "vi": "598 K",
+    "en": "598 K"
+   },
+   {
+    "vi": "546 K",
+    "en": "546 K"
+   },
+   {
+    "vi": "891 K",
+    "en": "891 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ε = (T₅ − T₂)/(T₄ − T₂) ⇒ T₅ = T₂ + ε(T₄ − T₂) = 520 + 0,7·260 = 702 K. T₄ − ε(T₄ − T₂) = 598 là nhiệt độ khí xả ra khỏi bộ hồi nhiệt (T₆); εT₄ = 546; chia cho ε cho 891.",
+   "en": "ε = (T₅ − T₂)/(T₄ − T₂) ⇒ T₅ = T₂ + ε(T₄ − T₂) = 520 + 0.7·260 = 702 K. T₄ − ε(T₄ − T₂) = 598 is the temperature of the exhaust leaving the regenerator (T₆); εT₄ = 546; dividing by ε gives 891."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu quả bộ hồi nhiệt",
+   "en": "Added – generated from the type: regenerator effectiveness"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ hồi nhiệt có hiệu quả ε = 0,8 (khí lạnh): khí nén ra máy nén ở T₂ = 600 K, khí xả tuabin vào bộ hồi nhiệt ở T₄ = 900 K. Nhiệt độ khí nén sau bộ hồi nhiệt T₅ (K) là:",
+   "en": "A regenerator of effectiveness ε = 0.8 (cold air): compressed air leaves the compressor at T₂ = 600 K, turbine exhaust enters the regenerator at T₄ = 900 K. The compressed-air temperature after the regenerator T₅ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "840 K",
+    "en": "840 K"
+   },
+   {
+    "vi": "660 K",
+    "en": "660 K"
+   },
+   {
+    "vi": "720 K",
+    "en": "720 K"
+   },
+   {
+    "vi": "975 K",
+    "en": "975 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ε = (T₅ − T₂)/(T₄ − T₂) ⇒ T₅ = T₂ + ε(T₄ − T₂) = 600 + 0,8·300 = 840 K. T₄ − ε(T₄ − T₂) = 660 là nhiệt độ khí xả ra khỏi bộ hồi nhiệt (T₆); εT₄ = 720; chia cho ε cho 975.",
+   "en": "ε = (T₅ − T₂)/(T₄ − T₂) ⇒ T₅ = T₂ + ε(T₄ − T₂) = 600 + 0.8·300 = 840 K. T₄ − ε(T₄ − T₂) = 660 is the temperature of the exhaust leaving the regenerator (T₆); εT₄ = 720; dividing by ε gives 975."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng hiệu quả bộ hồi nhiệt",
+   "en": "Added – generated from the type: regenerator effectiveness"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton khí lạnh (k = 1,4; c_p = 1,005): r_p = 9, T₁ = 300 K, T₃ = 1200 K, η_c = 85 %, η_t = 88 %, bộ hồi nhiệt ε = 75 %. Hiệu suất nhiệt là:",
+   "en": "A cold-air Brayton cycle (k = 1.4; c_p = 1.005): r_p = 9, T₁ = 300 K, T₃ = 1200 K, η_c = 85 %, η_t = 88 %, regenerator ε = 75 %. The thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,356",
+    "en": "0.356"
+   },
+   {
+    "vi": "0,311",
+    "en": "0.311"
+   },
+   {
+    "vi": "0,466",
+    "en": "0.466"
+   },
+   {
+    "vi": "0,374",
+    "en": "0.374"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 608 K, T₄ = 708 K; T₅ = T₂ + ε(T₄ − T₂) = 683 K; q_in = c_p(T₃ − T₅) = 520; w_net = 185 kJ/kg (hồi nhiệt không đổi công) ⇒ η = 0,356. Không hồi nhiệt: 0,311; chu trình lý tưởng: 0,466; 0,374 dùng T₄ thay T₅ trong q_in (ε = 100 %).",
+   "en": "T₂ = 608 K, T₄ = 708 K; T₅ = T₂ + ε(T₄ − T₂) = 683 K; q_in = c_p(T₃ − T₅) = 520; w_net = 185 kJ/kg (regeneration does not change the work) ⇒ η = 0.356. Without regeneration: 0.311; ideal cycle: 0.466; 0.374 uses T₄ instead of T₅ in q_in (ε = 100 %)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Brayton thực có hồi nhiệt",
+   "en": "Added – generated from the type: real Brayton with regeneration"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nén không khí (khí lạnh, c_p = 1,005) từ 300 K với tỉ số áp 12: tiết kiệm công nén (kJ/kg) khi dùng hai cấp có làm mát trung gian về 300 K, tỉ số áp mỗi cấp bằng nhau, so với một cấp là:",
+   "en": "Compressing air (cold air, c_p = 1.005) from 300 K with a pressure ratio of 12: the compression work saved (kJ/kg) by two stages with intercooling back to 300 K and equal stage pressure ratios, compared with one stage, is:"
+  },
+  "opts": [
+   {
+    "vi": "54,8 kJ/kg",
+    "en": "54.8 kJ/kg"
+   },
+   {
+    "vi": "257,0 kJ/kg",
+    "en": "257.0 kJ/kg"
+   },
+   {
+    "vi": "155,9 kJ/kg",
+    "en": "155.9 kJ/kg"
+   },
+   {
+    "vi": "183,2 kJ/kg",
+    "en": "183.2 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một cấp: w₁ = c_pT₁(r_p^0,2857 − 1) = 311,7 kJ/kg. Hai cấp: mỗi cấp r_p = √12 = 3,464, w₂ = 2c_pT₁(r_p^0,1429 − 1) = 257,0. Tiết kiệm = 54,8 kJ/kg (vùng hồng slide tr.46). 257,0 là công hai cấp; 155,9 chia đôi công một cấp.",
+   "en": "One stage: w₁ = c_pT₁(r_p^0.2857 − 1) = 311.7 kJ/kg. Two stages: each r_p = √12 = 3.464, w₂ = 2c_pT₁(r_p^0.1429 − 1) = 257.0. Saving = 54.8 kJ/kg (pink area of slide p.46). 257.0 is the two-stage work; 155.9 halves the one-stage work."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tiết kiệm công nén nhờ làm mát trung gian",
+   "en": "Added – generated from the type: compression work saved by intercooling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nén không khí (khí lạnh, c_p = 1,005) từ 290 K với tỉ số áp 16: tiết kiệm công nén (kJ/kg) khi dùng hai cấp có làm mát trung gian về 290 K, tỉ số áp mỗi cấp bằng nhau, so với một cấp là:",
+   "en": "Compressing air (cold air, c_p = 1.005) from 290 K with a pressure ratio of 16: the compression work saved (kJ/kg) by two stages with intercooling back to 290 K and equal stage pressure ratios, compared with one stage, is:"
+  },
+  "opts": [
+   {
+    "vi": "68,8 kJ/kg",
+    "en": "68.8 kJ/kg"
+   },
+   {
+    "vi": "283,3 kJ/kg",
+    "en": "283.3 kJ/kg"
+   },
+   {
+    "vi": "176,1 kJ/kg",
+    "en": "176.1 kJ/kg"
+   },
+   {
+    "vi": "210,5 kJ/kg",
+    "en": "210.5 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một cấp: w₁ = c_pT₁(r_p^0,2857 − 1) = 352,1 kJ/kg. Hai cấp: mỗi cấp r_p = √16 = 4,000, w₂ = 2c_pT₁(r_p^0,1429 − 1) = 283,3. Tiết kiệm = 68,8 kJ/kg (vùng hồng slide tr.46). 283,3 là công hai cấp; 176,1 chia đôi công một cấp.",
+   "en": "One stage: w₁ = c_pT₁(r_p^0.2857 − 1) = 352.1 kJ/kg. Two stages: each r_p = √16 = 4.000, w₂ = 2c_pT₁(r_p^0.1429 − 1) = 283.3. Saving = 68.8 kJ/kg (pink area of slide p.46). 283.3 is the two-stage work; 176.1 halves the one-stage work."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tiết kiệm công nén nhờ làm mát trung gian",
+   "en": "Added – generated from the type: compression work saved by intercooling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nén hai cấp từ 100 kPa tới 1600 kPa có làm mát trung gian về nhiệt độ đầu vào. Áp suất trung gian làm tổng công nén nhỏ nhất (kPa) là:",
+   "en": "Two-stage compression from 100 kPa to 1600 kPa with intercooling back to the inlet temperature. The intermediate pressure that minimises the total compression work (kPa) is:"
+  },
+  "opts": [
+   {
+    "vi": "400 kPa",
+    "en": "400 kPa"
+   },
+   {
+    "vi": "850 kPa",
+    "en": "850 kPa"
+   },
+   {
+    "vi": "16 kPa",
+    "en": "16 kPa"
+   },
+   {
+    "vi": "4.000 kPa",
+    "en": "4,000 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Công nhỏ nhất khi tỉ số áp hai cấp bằng nhau: P_m = √(P₁P₃) = √(100·1600) = 400 kPa (tỉ số 4 mỗi cấp). Trung bình cộng cho 850; 1600/100 = 16 là tỉ số tổng; 100√1600 = 4.000 lẫn đơn vị.",
+   "en": "Work is smallest when both stages have the same pressure ratio: P_m = √(P₁P₃) = √(100·1600) = 400 kPa (ratio 4 per stage). The arithmetic mean gives 850; 1600/100 = 16 is the overall ratio; 100√1600 = 4,000 mixes units."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng áp suất trung gian tối ưu",
+   "en": "Added – generated from the type: optimal intermediate pressure"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet lý tưởng, áp suất cửa vào và cửa ra bằng áp suất môi trường: lưu lượng khí 50 kg/s, vận tốc khí thải 600 m/s, vận tốc bay 200 m/s (bỏ qua lượng nhiên liệu). Lực đẩy thực (kN) là:",
+   "en": "An ideal turbojet with inlet and exit pressures equal to ambient: air flow 50 kg/s, exhaust velocity 600 m/s, flight speed 200 m/s (fuel mass neglected). The net thrust (kN) is:"
+  },
+  "opts": [
+   {
+    "vi": "20,0 kN",
+    "en": "20.0 kN"
+   },
+   {
+    "vi": "30,0 kN",
+    "en": "30.0 kN"
+   },
+   {
+    "vi": "40,0 kN",
+    "en": "40.0 kN"
+   },
+   {
+    "vi": "8.000,0 kN",
+    "en": "8,000.0 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F = ṁ(V_exit − V_inlet) = 50·(600 − 200) = 20.000 N = 20,0 kN (slide tr.52). ṁV_exit = 30,0 kN là lực đẩy tổng (chưa trừ lực cản ram); cộng V_inlet cho 40,0; ṁ(V₂² − V₁²)/2 = 8.000,0 kW là độ tăng động năng.",
+   "en": "F = ṁ(V_exit − V_inlet) = 50·(600 − 200) = 20,000 N = 20.0 kN (slide p.52). ṁV_exit = 30.0 kN is the gross thrust (ram drag not subtracted); adding V_inlet gives 40.0; ṁ(V₂² − V₁²)/2 = 8,000.0 kW is the kinetic-energy rise."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbojet",
+   "en": "Added – generated from the type: turbojet thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet lý tưởng, áp suất cửa vào và cửa ra bằng áp suất môi trường: lưu lượng khí 120 kg/s, vận tốc khí thải 450 m/s, vận tốc bay 250 m/s (bỏ qua lượng nhiên liệu). Lực đẩy thực (kN) là:",
+   "en": "An ideal turbojet with inlet and exit pressures equal to ambient: air flow 120 kg/s, exhaust velocity 450 m/s, flight speed 250 m/s (fuel mass neglected). The net thrust (kN) is:"
+  },
+  "opts": [
+   {
+    "vi": "24,0 kN",
+    "en": "24.0 kN"
+   },
+   {
+    "vi": "54,0 kN",
+    "en": "54.0 kN"
+   },
+   {
+    "vi": "84,0 kN",
+    "en": "84.0 kN"
+   },
+   {
+    "vi": "8.400,0 kN",
+    "en": "8,400.0 kN"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "F = ṁ(V_exit − V_inlet) = 120·(450 − 250) = 24.000 N = 24,0 kN (slide tr.52). ṁV_exit = 54,0 kN là lực đẩy tổng (chưa trừ lực cản ram); cộng V_inlet cho 84,0; ṁ(V₂² − V₁²)/2 = 8.400,0 kW là độ tăng động năng.",
+   "en": "F = ṁ(V_exit − V_inlet) = 120·(450 − 250) = 24,000 N = 24.0 kN (slide p.52). ṁV_exit = 54.0 kN is the gross thrust (ram drag not subtracted); adding V_inlet gives 84.0; ṁ(V₂² − V₁²)/2 = 8,400.0 kW is the kinetic-energy rise."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lực đẩy turbojet",
+   "en": "Added – generated from the type: turbojet thrust"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 250,0 K đi vào bộ khuếch tán lý tưởng của máy bay bay 250 m/s (c_p = 1,005 kJ/kg·K), ra với vận tốc coi như bằng 0. Nhiệt độ ra T₂ (K) là:",
+   "en": "Air at 250.0 K enters the ideal diffuser of an aircraft flying at 250 m/s (c_p = 1.005 kJ/kg·K) and leaves at essentially zero velocity. The exit temperature T₂ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "281,1 K",
+    "en": "281.1 K"
+   },
+   {
+    "vi": "218,9 K",
+    "en": "218.9 K"
+   },
+   {
+    "vi": "31.344,5 K",
+    "en": "31,344.5 K"
+   },
+   {
+    "vi": "312,2 K",
+    "en": "312.2 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + V²/2 ⇒ T₂ = T₁ + V²/(2c_p) = 250,0 + 250²/(2·1005) = 281,1 K (slide tr.49–51, Cengel Ví dụ 9–9). Dấu − cho 218,9; quên đổi kJ→J cho 31.345; quên hệ số 2 cho 312,2.",
+   "en": "h₂ = h₁ + V²/2 ⇒ T₂ = T₁ + V²/(2c_p) = 250.0 + 250²/(2·1005) = 281.1 K (slide pp.49–51, Cengel Example 9–9). A minus sign gives 218.9; forgetting the kJ→J conversion gives 31,345; forgetting the factor 2 gives 312.2."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ ra bộ khuếch tán",
+   "en": "Added – generated from the type: diffuser exit temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 216,65 K đi vào bộ khuếch tán lý tưởng của máy bay bay 300 m/s (c_p = 1,005 kJ/kg·K), ra với vận tốc coi như bằng 0. Nhiệt độ ra T₂ (K) là:",
+   "en": "Air at 216.65 K enters the ideal diffuser of an aircraft flying at 300 m/s (c_p = 1.005 kJ/kg·K) and leaves at essentially zero velocity. The exit temperature T₂ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "261,4 K",
+    "en": "261.4 K"
+   },
+   {
+    "vi": "171,9 K",
+    "en": "171.9 K"
+   },
+   {
+    "vi": "44.992,8 K",
+    "en": "44,992.8 K"
+   },
+   {
+    "vi": "306,2 K",
+    "en": "306.2 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + V²/2 ⇒ T₂ = T₁ + V²/(2c_p) = 216,65 + 300²/(2·1005) = 261,4 K (slide tr.49–51, Cengel Ví dụ 9–9). Dấu − cho 171,9; quên đổi kJ→J cho 44.993; quên hệ số 2 cho 306,2.",
+   "en": "h₂ = h₁ + V²/2 ⇒ T₂ = T₁ + V²/(2c_p) = 216.65 + 300²/(2·1005) = 261.4 K (slide pp.49–51, Cengel Example 9–9). A minus sign gives 171.9; forgetting the kJ→J conversion gives 44,993; forgetting the factor 2 gives 306.2."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ ra bộ khuếch tán",
+   "en": "Added – generated from the type: diffuser exit temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet lý tưởng khí lạnh (k = 1,4; c_p = 1,005): bay 250 m/s ở độ cao có 220 K, 25 kPa; r_p máy nén = 12; nhiệt độ vào tuabin 1400 K; công tuabin = công máy nén. Nhiệt độ ra tuabin T₅ (K) là:",
+   "en": "An ideal cold-air turbojet (k = 1.4; c_p = 1.005): flight 250 m/s where the air is 220 K, 25 kPa; compressor r_p = 12; turbine inlet 1400 K; turbine work = compressor work. The turbine exit temperature T₅ (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.140 K",
+    "en": "1,140 K"
+   },
+   {
+    "vi": "889 K",
+    "en": "889 K"
+   },
+   {
+    "vi": "688 K",
+    "en": "688 K"
+   },
+   {
+    "vi": "1.109 K",
+    "en": "1,109 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 251,1 K (khuếch tán); T₃ = T₂·12^0,2857 = 510,7 K; T₃ − T₂ = T₄ − T₅ ⇒ T₅ = T₄ − T₃ + T₂ = 1.140,4 K. Quên + T₂ cho 889; giãn nở cả r_p cho 688; dùng T_a thay T₂ cho 1.109.",
+   "en": "T₂ = 251.1 K (diffuser); T₃ = T₂·12^0.2857 = 510.7 K; T₃ − T₂ = T₄ − T₅ ⇒ T₅ = T₄ − T₃ + T₂ = 1,140.4 K. Forgetting + T₂ gives 889; expanding through the whole r_p gives 688; using T_a instead of T₂ gives 1,109."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng turbojet lý tưởng: T₅",
+   "en": "Added – generated from the type: ideal turbojet: T₅"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet lý tưởng khí lạnh (k = 1,4; c_p = 1,005): bay 200 m/s ở 230 K, 30 kPa; r_p = 10; T₄ = 1300 K; ṁ = 30 kg/s. Hiệu suất \"đẩy\" của slide η_P = Ẇ_p/Q̇_in (%) là:",
+   "en": "An ideal cold-air turbojet (k = 1.4; c_p = 1.005): flight 200 m/s at 230 K, 30 kPa; r_p = 10; T₄ = 1300 K; ṁ = 30 kg/s. The slide's \"propulsive\" efficiency η_P = Ẇ_p/Q̇_in (%) is:"
+  },
+  "opts": [
+   {
+    "vi": "18,2",
+    "en": "18.2"
+   },
+   {
+    "vi": "34,8",
+    "en": "34.8"
+   },
+   {
+    "vi": "14,2",
+    "en": "14.2"
+   },
+   {
+    "vi": "78,9",
+    "en": "78.9"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 249,9, T₃ = 482,5, T₅ = T₄ − T₃ + T₂ = 1.067,4 K; P₅ = P₄(T₅/T₄)^3,5; nhiệt độ ra vòi T₆ = T₅(P_a/P₅)^0,2857 = 619,7 K; V₆ = √[2c_p(T₅ − T₆)] = 949 m/s. Ẇ_p = ṁ(V₆ − V)V = 4,49 MW; Q̇_in = ṁc_p(T₄ − T₃) = 24,65 MW ⇒ η_P = 18,2 %. 2V/(V + V₆) = 34,8 % là hiệu suất đẩy kiểu Farokhi; dùng T₄ − T₂ trong Q̇_in cho 14,2 %; (V₆ − V)/V₆ = 78,9 % không có ý nghĩa vật lý.",
+   "en": "T₂ = 249.9, T₃ = 482.5, T₅ = T₄ − T₃ + T₂ = 1,067.4 K; P₅ = P₄(T₅/T₄)^3.5; nozzle-exit temperature T₆ = T₅(P_a/P₅)^0.2857 = 619.7 K; V₆ = √[2c_p(T₅ − T₆)] = 949 m/s. Ẇ_p = ṁ(V₆ − V)V = 4.49 MW; Q̇_in = ṁc_p(T₄ − T₃) = 24.65 MW ⇒ η_P = 18.2 %. 2V/(V + V₆) = 34.8 % is Farokhi's propulsive efficiency; using T₄ − T₂ in Q̇_in gives 14.2 %; (V₆ − V)/V₆ = 78.9 % has no physical meaning."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng turbojet lý tưởng: hiệu suất η_P",
+   "en": "Added – generated from the type: ideal turbojet: η_P"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xi-lanh có thể tích làm việc V_d = 0,5 L và thể tích chết V_c = 0,0625 L. Tỉ số nén là:",
+   "en": "A cylinder has displacement volume V_d = 0.5 L and clearance volume V_c = 0.0625 L. The compression ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "9,0",
+    "en": "9.0"
+   },
+   {
+    "vi": "8,0",
+    "en": "8.0"
+   },
+   {
+    "vi": "1,1",
+    "en": "1.1"
+   },
+   {
+    "vi": "0,0",
+    "en": "0.0"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r = V_max/V_min = V_BDC/V_TDC = (V_d + V_c)/V_c = (0,5 + 0,0625)/0,0625 = 9,0 (slide tr.15). V_d/V_c = 8,0 quên cộng V_c (bằng r − 1); (V_d + V_c)/V_d = 1,12 đảo tỉ số.",
+   "en": "r = V_max/V_min = V_BDC/V_TDC = (V_d + V_c)/V_c = (0.5 + 0.0625)/0.0625 = 9.0 (slide p.15). V_d/V_c = 8.0 forgets to add V_c (it equals r − 1); (V_d + V_c)/V_d = 1.12 inverts the ratio."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số nén từ thể tích",
+   "en": "Added – generated from the type: compression ratio from volumes"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xi-lanh có thể tích làm việc V_d = 0,4 L và thể tích chết V_c = 0,04 L. Tỉ số nén là:",
+   "en": "A cylinder has displacement volume V_d = 0.4 L and clearance volume V_c = 0.04 L. The compression ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "11,0",
+    "en": "11.0"
+   },
+   {
+    "vi": "10,0",
+    "en": "10.0"
+   },
+   {
+    "vi": "1,1",
+    "en": "1.1"
+   },
+   {
+    "vi": "0,0",
+    "en": "0.0"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r = V_max/V_min = V_BDC/V_TDC = (V_d + V_c)/V_c = (0,4 + 0,04)/0,04 = 11,0 (slide tr.15). V_d/V_c = 10,0 quên cộng V_c (bằng r − 1); (V_d + V_c)/V_d = 1,10 đảo tỉ số.",
+   "en": "r = V_max/V_min = V_BDC/V_TDC = (V_d + V_c)/V_c = (0.4 + 0.04)/0.04 = 11.0 (slide p.15). V_d/V_c = 10.0 forgets to add V_c (it equals r − 1); (V_d + V_c)/V_d = 1.10 inverts the ratio."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số nén từ thể tích",
+   "en": "Added – generated from the type: compression ratio from volumes"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ bốn kỳ 4 xi-lanh, tổng thể tích làm việc 2,4 L, MEP = 900 kPa, tốc độ 3000 vòng/phút. Công suất thực (kW) là:",
+   "en": "A 4-cylinder four-stroke engine, total displacement 2.4 L, MEP = 900 kPa, speed 3000 rev/min. The net power (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "54,0 kW",
+    "en": "54.0 kW"
+   },
+   {
+    "vi": "108,0 kW",
+    "en": "108.0 kW"
+   },
+   {
+    "vi": "13,5 kW",
+    "en": "13.5 kW"
+   },
+   {
+    "vi": "3.240,0 kW",
+    "en": "3,240.0 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "W_cycle = MEP·V_d = 900·0,0024 = 2,16 kJ; bốn kỳ: một chu trình mỗi hai vòng ⇒ P = W_cycle·N/(2·60) = 2,16·3000/120 = 54,0 kW. Coi mỗi vòng một chu trình (hai kỳ) cho 108,0 kW; chia cho số xi-lanh (đã nằm trong V_d tổng) cho 13,5; nhân 60 thay vì chia cho 3.240.",
+   "en": "W_cycle = MEP·V_d = 900·0.0024 = 2.16 kJ; four-stroke: one cycle per two revolutions ⇒ P = W_cycle·N/(2·60) = 2.16·3000/120 = 54.0 kW. Counting one cycle per revolution (two-stroke) gives 108.0 kW; dividing by the number of cylinders (already included in the total V_d) gives 13.5; multiplying by 60 instead of dividing gives 3,240."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất từ MEP",
+   "en": "Added – generated from the type: power from MEP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ bốn kỳ 6 xi-lanh, tổng thể tích làm việc 4,5 L, MEP = 1100 kPa, tốc độ 2400 vòng/phút. Công suất thực (kW) là:",
+   "en": "A 6-cylinder four-stroke engine, total displacement 4.5 L, MEP = 1100 kPa, speed 2400 rev/min. The net power (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "99,0 kW",
+    "en": "99.0 kW"
+   },
+   {
+    "vi": "198,0 kW",
+    "en": "198.0 kW"
+   },
+   {
+    "vi": "16,5 kW",
+    "en": "16.5 kW"
+   },
+   {
+    "vi": "5.940,0 kW",
+    "en": "5,940.0 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "W_cycle = MEP·V_d = 1100·0,0045 = 4,95 kJ; bốn kỳ: một chu trình mỗi hai vòng ⇒ P = W_cycle·N/(2·60) = 4,95·2400/120 = 99,0 kW. Coi mỗi vòng một chu trình (hai kỳ) cho 198,0 kW; chia cho số xi-lanh (đã nằm trong V_d tổng) cho 16,5; nhân 60 thay vì chia cho 5.940.",
+   "en": "W_cycle = MEP·V_d = 1100·0.0045 = 4.95 kJ; four-stroke: one cycle per two revolutions ⇒ P = W_cycle·N/(2·60) = 4.95·2400/120 = 99.0 kW. Counting one cycle per revolution (two-stroke) gives 198.0 kW; dividing by the number of cylinders (already included in the total V_d) gives 16.5; multiplying by 60 instead of dividing gives 5,940."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất từ MEP",
+   "en": "Added – generated from the type: power from MEP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m02: formula/model)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dùng bảng A-17 (nhiệt dung riêng thay đổi): không khí nén đẳng entropi từ 300 K với tỉ số áp 10. Nhiệt độ cuối T₂s (K) là:",
+   "en": "Using Table A-17 (variable specific heats): air compressed isentropically from 300 K with a pressure ratio of 10. The final temperature T₂s (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "574 K",
+    "en": "574 K"
+   },
+   {
+    "vi": "3.000 K",
+    "en": "3,000 K"
+   },
+   {
+    "vi": "754 K",
+    "en": "754 K"
+   },
+   {
+    "vi": "559 K",
+    "en": "559 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_r1 = 1,386 ⇒ P_r2 = 10·P_r1 = 13,86 ⇒ T₂s = 574,1 K (nội suy tuyến tính). Khí lạnh k = 1,4 cho 579,2 K (lệch vì c_p tăng theo T). T₁r_p và T₁r_p^0,4 là sai công thức.",
+   "en": "P_r1 = 1.386 ⇒ P_r2 = 10·P_r1 = 13.86 ⇒ T₂s = 574.1 K (linear interpolation). Cold air k = 1.4 gives 579.2 K (different because c_p rises with T). T₁r_p and T₁r_p^0.4 are wrong formulas."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Bảng A-17 (nhiệt dung riêng thay đổi)",
+   "en": "Table A-17 (variable specific heats)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tra bảng A-17 theo P_r",
+   "en": "Added – generated from the type: A-17 look-up by P_r"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "bảng A-17 (props) + verify_m02: table_Pr"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dùng bảng A-17 (nhiệt dung riêng thay đổi): không khí nén đẳng entropi từ 320 K với tỉ số áp 12. Nhiệt độ cuối T₂s (K) là:",
+   "en": "Using Table A-17 (variable specific heats): air compressed isentropically from 320 K with a pressure ratio of 12. The final temperature T₂s (K) is:"
+  },
+  "opts": [
+   {
+    "vi": "642 K",
+    "en": "642 K"
+   },
+   {
+    "vi": "3.840 K",
+    "en": "3,840 K"
+   },
+   {
+    "vi": "865 K",
+    "en": "865 K"
+   },
+   {
+    "vi": "614 K",
+    "en": "614 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_r1 = 1,738 ⇒ P_r2 = 12·P_r1 = 20,85 ⇒ T₂s = 641,7 K (nội suy tuyến tính). Khí lạnh k = 1,4 cho 650,9 K (lệch vì c_p tăng theo T). T₁r_p và T₁r_p^0,4 là sai công thức.",
+   "en": "P_r1 = 1.738 ⇒ P_r2 = 12·P_r1 = 20.85 ⇒ T₂s = 641.7 K (linear interpolation). Cold air k = 1.4 gives 650.9 K (different because c_p rises with T). T₁r_p and T₁r_p^0.4 are wrong formulas."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Bảng A-17 (nhiệt dung riêng thay đổi)",
+   "en": "Table A-17 (variable specific heats)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tra bảng A-17 theo P_r",
+   "en": "Added – generated from the type: A-17 look-up by P_r"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "bảng A-17 (props) + verify_m02: table_Pr"
+ }
+]

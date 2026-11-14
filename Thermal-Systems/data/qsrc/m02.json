@@ -1,0 +1,3921 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto lý tưởng có r = 8; đầu quá trình nén không khí ở 100 kPa, 17 °C; nhiệt cấp đẳng tích 800 kJ/kg; tính đến sự thay đổi nhiệt dung riêng theo nhiệt độ (bảng A-17, lấy T₁ = 290 K). Nhiệt độ cực đại trong chu trình là:",
+   "en": "An ideal Otto cycle has r = 8; at the start of compression the air is at 100 kPa and 17 °C; 800 kJ/kg of heat is added at constant volume; account for the variation of specific heats with temperature (Table A-17, take T₁ = 290 K). The maximum temperature in the cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "1.575,1 K",
+    "en": "1,575.1 K"
+   },
+   {
+    "vi": "1.780,5 K",
+    "en": "1,780.5 K"
+   },
+   {
+    "vi": "1.404,2 K",
+    "en": "1,404.2 K"
+   },
+   {
+    "vi": "1.302,0 K",
+    "en": "1,302.0 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂: v_r2 = v_r1/r = 676,1/8 = 84,51 ⇒ T₂ = 652,4 K, u₂ = 475,11 kJ/kg; u₃ = u₂ + q_in = 1.275,11 kJ/kg ⇒ T₃ = 1.575,1 K (slide tr.3). Dùng cv hằng (nén T₂ = 290·8^0,4) cho 1.780,5 K; bỏ bước nén cho 1.404,2 K; 1.302,0 là °C.",
+   "en": "T₂: v_r2 = v_r1/r = 676.1/8 = 84.51 ⇒ T₂ = 652.4 K, u₂ = 475.11 kJ/kg; u₃ = u₂ + q_in = 1,275.11 kJ/kg ⇒ T₃ = 1,575.1 K (slide p.3). Constant cv (T₂ = 290·8^0.4) gives 1,780.5 K; skipping the compression step gives 1,404.2 K; 1,302.0 is in °C."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.1–6 (= Cengel Ví dụ 9–2)",
+   "en": "Tutorials I p.1–6 (= Cengel Example 9–2)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.3 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #1): hiệu suất nhiệt của chu trình, tính từ w_net/q_in với nhiệt dung riêng thay đổi, là:",
+   "en": "Same problem (Tutorials I #1): the thermal efficiency from w_net/q_in with variable specific heats is:"
+  },
+  "opts": [
+   {
+    "vi": "0,523",
+    "en": "0.523"
+   },
+   {
+    "vi": "0,565",
+    "en": "0.565"
+   },
+   {
+    "vi": "0,477",
+    "en": "0.477"
+   },
+   {
+    "vi": "0,875",
+    "en": "0.875"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "u₄ = 588,74 kJ/kg (v_r4 = r·v_r3 = 48,864), q_out = u₄ − u₁ = 381,83 kJ/kg, w_net = 418,17 kJ/kg, η = 0,523. Công thức khí lạnh 1 − r^(1−k) cho 0,565 (cao hơn vì cv thật tăng theo T); 0,477 là q_out/q_in; 1 − 1/r cho 0,875.",
+   "en": "u₄ = 588.74 kJ/kg (v_r4 = r·v_r3 = 48.864), q_out = u₄ − u₁ = 381.83 kJ/kg, w_net = 418.17 kJ/kg, η = 0.523. The cold-air formula 1 − r^(1−k) gives 0.565 (higher, because the real cv rises with T); 0.477 is q_out/q_in; 1 − 1/r gives 0.875."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.1–6 (= Cengel Ví dụ 9–2)",
+   "en": "Tutorials I p.1–6 (= Cengel Example 9–2)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.5 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #1): áp suất có ích trung bình MEP = w_net/(v₁ − v₂) là:",
+   "en": "Same problem (Tutorials I #1): the mean effective pressure MEP = w_net/(v₁ − v₂) is:"
+  },
+  "opts": [
+   {
+    "vi": "574 kPa",
+    "en": "574 kPa"
+   },
+   {
+    "vi": "502 kPa",
+    "en": "502 kPa"
+   },
+   {
+    "vi": "1.099 kPa",
+    "en": "1,099 kPa"
+   },
+   {
+    "vi": "9.795 kPa",
+    "en": "9,795 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "v₁ = RT₁/P₁ = 0,287·290/100 = 0,832 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 418,17/(0,832·0,875) = 574 kPa. Chia cho v₁ (quên v₂) cho 502; dùng q_in thay w_net cho 1.099; dùng 17 (°C) thay T₁ cho 9.795.",
+   "en": "v₁ = RT₁/P₁ = 0.287·290/100 = 0.832 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 418.17/(0.832·0.875) = 574 kPa. Dividing by v₁ (forgetting v₂) gives 502; using q_in instead of w_net gives 1,099; using 17 (°C) for T₁ gives 9,795."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.1–6 (= Cengel Ví dụ 9–2)",
+   "en": "Tutorials I p.1–6 (= Cengel Example 9–2)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.6 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #1. Chu trình Otto lý tưởng có tỉ số nén 8. Đầu quá trình nén không khí ở 100 kPa, 17 °C; nhiệt cấp trong quá trình đẳng tích 800 kJ/kg. Tính đến sự thay đổi nhiệt dung riêng theo nhiệt độ, tính (a) nhiệt độ và áp suất cực đại, (b) công thực, (c) hiệu suất nhiệt, (d) MEP.",
+   "en": "Tutorials I #1. An ideal Otto cycle has a compression ratio of 8. At the beginning of compression the air is at 100 kPa and 17 °C; 800 kJ/kg of heat is added at constant volume. Accounting for the variation of specific heats with temperature, determine (a) the maximum temperature and pressure, (b) the net work, (c) the thermal efficiency, (d) the MEP."
+  },
+  "sol": {
+   "vi": "Giả thiết (slide tr.2): không khí-chuẩn, bỏ qua động năng/thế năng, nhiệt dung riêng thay đổi: dùng bảng A-17 (nội suy tuyến tính). 17 °C lấy 290 K như slide (290,15 K chỉ đổi T₃ +0,3 K); R = 0,287 kJ/(kg·K).\nBước 1 (1→2 đẳng entropi). T₁ = 290 K ⇒ u₁ = 206,91 kJ/kg, v_r1 = 676,1. v_r2 = v_r1/r = 84,51 ⇒ T₂ = 652,4 K, u₂ = 475,11 kJ/kg. P₂ = P₁(T₂/T₁)·r = 100·(652,4/290)·8 = 1.799,7 kPa.\nBước 2 (2→3 đẳng tích). u₃ = u₂ + q_in = 475,11 + 800 = 1.275,11 kJ/kg ⇒ T₃ = 1.575,1 K, v_r3 = 6,108. P₃ = P₂·T₃/T₂ = 4.345 kPa. Vậy (a) T_max = 1.575,1 K, P_max = 4,345 MPa.\nBước 3 (3→4 đẳng entropi). v_r4 = r·v_r3 = 48,86 ⇒ T₄ = 795,6 K, u₄ = 588,74 kJ/kg. q_out = u₄ − u₁ = 381,83 kJ/kg.\nBước 4. (b) w_net = q_in − q_out = 800 − 381,83 = 418,17 kJ/kg. (c) η = w_net/q_in = 0,523 (khí lạnh: 1 − 8^(−0,4) = 0,565). (d) v₁ = 0,287·290/100 = 0,832 m³/kg; MEP = w_net/[v₁(1 − 1/8)] = 574 kPa.\nHai đường: (A) bảng A-17 như trên; (B) tích phân số cp(T) đa thức A-2c và CoolProp (verify_m02.py), lệch ≤ 1 %. Đáp số slide: 1575,1 K; 4.345 MPa; 418,17 kJ/kg; 52,3 %; 574 kPa.",
+   "en": "Assumptions (slide p.2): air-standard, negligible kinetic/potential energy, variable specific heats: Table A-17 with linear interpolation. 17 °C is taken as 290 K as on the slide (290.15 K changes T₃ by +0.3 K only); R = 0.287 kJ/(kg·K).\nStep 1 (1→2 isentropic). T₁ = 290 K ⇒ u₁ = 206.91 kJ/kg, v_r1 = 676.1. v_r2 = v_r1/r = 84.51 ⇒ T₂ = 652.4 K, u₂ = 475.11 kJ/kg. P₂ = P₁(T₂/T₁)·r = 100·(652.4/290)·8 = 1,799.7 kPa.\nStep 2 (2→3 constant volume). u₃ = u₂ + q_in = 475.11 + 800 = 1,275.11 kJ/kg ⇒ T₃ = 1,575.1 K, v_r3 = 6.108. P₃ = P₂·T₃/T₂ = 4,345 kPa. So (a) T_max = 1,575.1 K, P_max = 4.345 MPa.\nStep 3 (3→4 isentropic). v_r4 = r·v_r3 = 48.86 ⇒ T₄ = 795.6 K, u₄ = 588.74 kJ/kg. q_out = u₄ − u₁ = 381.83 kJ/kg.\nStep 4. (b) w_net = q_in − q_out = 800 − 381.83 = 418.17 kJ/kg. (c) η = w_net/q_in = 0.523 (cold air: 1 − 8^(−0.4) = 0.565). (d) v₁ = 0.287·290/100 = 0.832 m³/kg; MEP = w_net/[v₁(1 − 1/8)] = 574 kPa.\nTwo routes: (A) Table A-17 as above; (B) numerical integration of cp(T) from the A-2c polynomial and from CoolProp (verify_m02.py), within 1 %. Slide results: 1575.1 K; 4.345 MPa; 418.17 kJ/kg; 52.3 %; 574 kPa."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.1–6 (= Cengel Ví dụ 9–2)",
+   "en": "Tutorials I p.1–6 (= Cengel Example 9–2)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel lý tưởng, không khí, r = 18, r_c = 2; đầu nén: 14,7 psia, 80 °F (= 540 R), 117 in³. Giả thiết khí lạnh (k = 1,4). Nhiệt độ sau quá trình cấp nhiệt đẳng áp (T₃) là:",
+   "en": "Ideal Diesel cycle, air, r = 18, r_c = 2; start of compression 14.7 psia, 80 °F (= 540 R), 117 in³. Cold-air-standard (k = 1.4). The temperature after the constant-pressure heat addition (T₃) is:"
+  },
+  "opts": [
+   {
+    "vi": "3.432 R",
+    "en": "3,432 R"
+   },
+   {
+    "vi": "1.716 R",
+    "en": "1,716 R"
+   },
+   {
+    "vi": "6.864 R",
+    "en": "6,864 R"
+   },
+   {
+    "vi": "1.080 R",
+    "en": "1,080 R"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = T₁ r^(k−1) = 540·18^0,4 = 1.716 R; quá trình 2→3 đẳng áp nên T₃ = T₂·V₃/V₂ = r_c T₂ = 3.432 R. Quên r_c cho 1.716; nhân r_c hai lần cho 6.864; T₁·r_c cho 1.080 (bỏ nén).",
+   "en": "T₂ = T₁ r^(k−1) = 540·18^0.4 = 1,716 R; process 2→3 is isobaric so T₃ = T₂·V₃/V₂ = r_c T₂ = 3,432 R. Forgetting r_c gives 1,716; applying r_c twice gives 6,864; T₁·r_c gives 1,080 (no compression)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.7–13 (= Cengel Ví dụ 9–3)",
+   "en": "Tutorials I p.7–13 (= Cengel Example 9–3)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.9 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #2): hiệu suất nhiệt từ W_net/Q_in (c_p = 0,240; c_v = 0,171 Btu/lbm·R) là:",
+   "en": "Same problem (Tutorials I #2): the thermal efficiency from W_net/Q_in (c_p = 0.240; c_v = 0.171 Btu/lbm·R) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,632",
+    "en": "0.632"
+   },
+   {
+    "vi": "0,685",
+    "en": "0.685"
+   },
+   {
+    "vi": "0,484",
+    "en": "0.484"
+   },
+   {
+    "vi": "0,368",
+    "en": "0.368"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "m = P₁V₁/(RT₁) = 0,00498 lbm; Q_in = m c_p(T₃ − T₂) = 2,049 Btu; Q_out = m c_v(T₄ − T₁) = 0,753 Btu; W_net = 1,296 Btu; η = 0,632. Công thức Otto cho 0,685 (sai: bỏ ngoặc r_c); quên k ở mẫu số ngoặc cho 0,484; Q_out/Q_in = 0,368. Slide dùng k = 1,4 cho nhiệt độ nhưng c_p/c_v = 1,4035 cho nhiệt lượng; công thức chính xác với k = 1,4 cho 0,6316.",
+   "en": "m = P₁V₁/(RT₁) = 0.00498 lbm; Q_in = m c_p(T₃ − T₂) = 2.049 Btu; Q_out = m c_v(T₄ − T₁) = 0.753 Btu; W_net = 1.296 Btu; η = 0.632. The Otto formula gives 0.685 (wrong: drops the r_c bracket); forgetting k in the bracket denominator gives 0.484; Q_out/Q_in = 0.368. The slide uses k = 1.4 for temperatures but c_p/c_v = 1.4035 for the heats; the exact formula with k = 1.4 gives 0.6316."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.7–13 (= Cengel Ví dụ 9–3)",
+   "en": "Tutorials I p.7–13 (= Cengel Example 9–3)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.12 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #2): MEP = W_net/(V₁ − V₂) là:",
+   "en": "Same problem (Tutorials I #2): the MEP = W_net/(V₁ − V₂) is:"
+  },
+  "opts": [
+   {
+    "vi": "109,5 psia",
+    "en": "109.5 psia"
+   },
+   {
+    "vi": "103,5 psia",
+    "en": "103.5 psia"
+   },
+   {
+    "vi": "840,8 psia",
+    "en": "840.8 psia"
+   },
+   {
+    "vi": "38,8 psia",
+    "en": "38.8 psia"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "W_net = 1,296 Btu = 12.103,9 lbf·in; V₁ − V₂ = 117 − 6,5 = 110,5 in³ ⇒ MEP = 109,5 psia (slide làm tròn 110). Chia cho V₁ cho 103,5; 841 là P₂ và 38,8 là P₄.",
+   "en": "W_net = 1.296 Btu = 12,103.9 lbf·in; V₁ − V₂ = 117 − 6.5 = 110.5 in³ ⇒ MEP = 109.5 psia (the slide rounds to 110). Dividing by V₁ gives 103.5; 841 is P₂ and 38.8 is P₄."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.7–13 (= Cengel Ví dụ 9–3)",
+   "en": "Tutorials I p.7–13 (= Cengel Example 9–3)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.13 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #2. Chu trình Diesel lý tưởng, không khí, r = 18, r_c = 2; đầu nén: 14,7 psia, 80 °F, 117 in³. Giả thiết khí lạnh. Tính (a) T và P ở cuối mỗi quá trình, (b) công thực và hiệu suất, (c) MEP.",
+   "en": "Tutorials I #2. Ideal Diesel cycle with air, r = 18, r_c = 2; at the start of compression 14.7 psia, 80 °F, 117 in³. Cold-air-standard. Determine (a) T and P at the end of each process, (b) the net work and thermal efficiency, (c) the MEP."
+  },
+  "sol": {
+   "vi": "Giả thiết: khí lạnh; R = 0,3704 psia·ft³/(lbm·R); c_p = 0,240; c_v = 0,171 Btu/(lbm·R); 80 °F = 540 R; nhiệt độ/áp suất dùng k = 1,4 (như slide), nhiệt lượng dùng c_p, c_v (tỉ số 1,4035).\n(a) V₂ = V₁/18 = 6,5 in³; V₃ = r_c V₂ = 13 in³. T₂ = 540·18^0,4 = 1.716 R; P₂ = 14,7·18^1,4 = 841 psia = P₃; T₃ = T₂·r_c = 3.432 R; T₄ = T₃(V₃/V₄)^0,4 = 1.425 R; P₄ = P₃(V₃/V₄)^1,4 = 38,8 psia.\n(b) m = P₁V₁/(RT₁) = (14,7·117)/(0,3704·540·1728) = 0,00498 lbm. Q_in = m c_p(T₃ − T₂) = 2,049 Btu; Q_out = m c_v(T₄ − T₁) = 0,753 Btu; W_net = 1,296 Btu; η = 0,632.\n(c) MEP = W_net/(V₁ − V₂) = 1,296·778,17·12/110,5 = 109,5 psia (slide: 110).\nHai đường: (A) công thức đóng như trên; (B) đổi sang SI và dựng chu trình bằng tích phân ∮P dV (verify_m02.py). Ghi chú nguồn: slide nói hằng số \"ở 25 °C/77 °F\" nhưng dùng 80 °F; dẫn \"Table A–2a\" (bảng đúng là A-2E(a)); η chính xác với k = 1,4 là 0,6316.",
+   "en": "Assumptions: cold air; R = 0.3704 psia·ft³/(lbm·R); c_p = 0.240; c_v = 0.171 Btu/(lbm·R); 80 °F = 540 R; temperatures/pressures use k = 1.4 (as on the slide), heats use c_p, c_v (ratio 1.4035).\n(a) V₂ = V₁/18 = 6.5 in³; V₃ = r_c V₂ = 13 in³. T₂ = 540·18^0.4 = 1,716 R; P₂ = 14.7·18^1.4 = 841 psia = P₃; T₃ = T₂·r_c = 3,432 R; T₄ = T₃(V₃/V₄)^0.4 = 1,425 R; P₄ = P₃(V₃/V₄)^1.4 = 38.8 psia.\n(b) m = P₁V₁/(RT₁) = (14.7·117)/(0.3704·540·1728) = 0.00498 lbm. Q_in = m c_p(T₃ − T₂) = 2.049 Btu; Q_out = m c_v(T₄ − T₁) = 0.753 Btu; W_net = 1.296 Btu; η = 0.632.\n(c) MEP = W_net/(V₁ − V₂) = 1.296·778.17·12/110.5 = 109.5 psia (slide: 110).\nTwo routes: (A) closed forms as above; (B) convert to SI and build the cycle by integrating ∮P dV (verify_m02.py). Source notes: the slide says the constants are \"at 25 °C/77 °F\" but uses 80 °F; it cites \"Table A–2a\" (the table is A-2E(a)); the exact η with k = 1.4 is 0.6316."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.7–13 (= Cengel Ví dụ 9–3)",
+   "en": "Tutorials I p.7–13 (= Cengel Example 9–3)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto khí-chuẩn có r = 9,5; trước nén không khí ở 100 kPa, 35 °C, 600 cm³; nhiệt độ cuối quá trình giãn đẳng entropi là 800 K. Dùng nhiệt dung riêng ở nhiệt độ phòng (k = 1,4; c_v = 0,718 kJ/kg·K). Nhiệt độ cao nhất của chu trình là:",
+   "en": "An air-standard Otto cycle has r = 9.5; before compression the air is at 100 kPa, 35 °C, 600 cm³; the temperature at the end of the isentropic expansion is 800 K. Use room-temperature specific heats (k = 1.4; c_v = 0.718 kJ/kg·K). The highest temperature of the cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "1.969 K",
+    "en": "1,969 K"
+   },
+   {
+    "vi": "800 K",
+    "en": "800 K"
+   },
+   {
+    "vi": "325 K",
+    "en": "325 K"
+   },
+   {
+    "vi": "1.522 K",
+    "en": "1,522 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "3→4 là đẳng entropi: T₃ = T₄ r^(k−1) = 800·9,5^0,4 = 1.968,7 K. T₃ = T₄ là nhầm giãn nở với đẳng nhiệt; chia cho r^(k−1) cho 325,1; dùng số mũ (k−1)/k thay k−1 cho 1.522,1.",
+   "en": "3→4 is isentropic: T₃ = T₄ r^(k−1) = 800·9.5^0.4 = 1,968.7 K. T₃ = T₄ treats the expansion as isothermal; dividing by r^(k−1) gives 325.1; using the exponent (k−1)/k instead of k−1 gives 1,522.1."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.14 (= Cengel Bài 9–37)",
+   "en": "Tutorials I p.14 (= Cengel Problem 9–37)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–37 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #3): nhiệt lượng cấp vào chu trình Q_in (kJ) với khối lượng khí m = P₁V₁/(RT₁) là:",
+   "en": "Same problem (Tutorials I #3): the heat added Q_in (kJ) with the air mass m = P₁V₁/(RT₁) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,590 kJ",
+    "en": "0.590 kJ"
+   },
+   {
+    "vi": "0,826 kJ",
+    "en": "0.826 kJ"
+   },
+   {
+    "vi": "0,350 kJ",
+    "en": "0.350 kJ"
+   },
+   {
+    "vi": "0,240 kJ",
+    "en": "0.240 kJ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "m = 100·0,0006/(0,287·308) = 0,000679 kg; T₂ = 308·9,5^0,4 = 757,9 K; Q_in = m c_v(T₃ − T₂) = 0,000679·0,718·1.210,8 = 0,590 kJ (đáp án in 0,59). Dùng c_p thay c_v cho 0,826 (đẳng tích phải dùng c_v); 0,350 là công thực; 0,240 là nhiệt thải.",
+   "en": "m = 100·0.0006/(0.287·308) = 0.000679 kg; T₂ = 308·9.5^0.4 = 757.9 K; Q_in = m c_v(T₃ − T₂) = 0.000679·0.718·1,210.8 = 0.590 kJ (printed answer 0.59). Using c_p instead of c_v gives 0.826 (constant-volume heating needs c_v); 0.350 is the net work; 0.240 is the heat rejected."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.14 (= Cengel Bài 9–37)",
+   "en": "Tutorials I p.14 (= Cengel Problem 9–37)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–37 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #3. Chu trình Otto khí-chuẩn có r = 9,5. Trước nén: 100 kPa, 35 °C, 600 cm³. Nhiệt độ cuối giãn đẳng entropi 800 K. Dùng nhiệt dung riêng ở nhiệt độ phòng, tính (a) nhiệt độ và áp suất cực đại, (b) nhiệt cấp vào (kJ), (c) hiệu suất, (d) MEP.",
+   "en": "Tutorials I #3. An air-standard Otto cycle has r = 9.5. Before compression: 100 kPa, 35 °C, 600 cm³. The temperature at the end of the isentropic expansion is 800 K. Using room-temperature specific heats determine (a) the highest temperature and pressure, (b) the heat added (kJ), (c) the thermal efficiency, (d) the MEP."
+  },
+  "sol": {
+   "vi": "(Slide không có lời giải; đề không in c_v, R: lấy A-2a: c_v = 0,718 kJ/(kg·K), R = 0,287, k = 1,4. 35 °C = 308 K; nếu 308,15 K thì P₃ = 6.069 kPa, MEP = 652,0 kPa.)\n(a) T₃ = T₄ r^(k−1) = 800·9,5^0,4 = 1.968,7 K. T₂ = 308·9,5^0,4 = 757,9 K; P₂ = 100·9,5^1,4 = 2.337,8 kPa; P₃ = P₂T₃/T₂ = 6.072 kPa.\n(b) m = 0,000679 kg; q_in = c_v(T₃ − T₂) = 869,3 kJ/kg; Q_in = 0,590 kJ.\n(c) η = 1 − 9,5^(−0,4) = 0,5936 (kiểm: w_net/q_in = (869,3 − 353,3)/869,3).\n(d) v₁ = 0,287·308/100 = 0,8840 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 516,1/(0,8840·0,8947) = 652,5 kPa.\nĐáp án in (Cengel 9–37): 1969 K, 6072 kPa; 0,59 kJ; 59,4 %; 652 kPa: khớp. Hai đường: công thức đóng, và tích phân ∮P dV số (verify_m02.py).",
+   "en": "(The slide has no solution; the statement prints neither c_v nor R: take A-2a: c_v = 0.718 kJ/(kg·K), R = 0.287, k = 1.4. 35 °C = 308 K; with 308.15 K, P₃ = 6,069 kPa and MEP = 652.0 kPa.)\n(a) T₃ = T₄ r^(k−1) = 800·9.5^0.4 = 1,968.7 K. T₂ = 308·9.5^0.4 = 757.9 K; P₂ = 100·9.5^1.4 = 2,337.8 kPa; P₃ = P₂T₃/T₂ = 6,072 kPa.\n(b) m = 0.000679 kg; q_in = c_v(T₃ − T₂) = 869.3 kJ/kg; Q_in = 0.590 kJ.\n(c) η = 1 − 9.5^(−0.4) = 0.5936 (check: w_net/q_in = (869.3 − 353.3)/869.3).\n(d) v₁ = 0.287·308/100 = 0.8840 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 516.1/(0.8840·0.8947) = 652.5 kPa.\nPrinted answer (Cengel 9–37): 1969 K, 6072 kPa; 0.59 kJ; 59.4 %; 652 kPa: matches. Two routes: closed forms, and numerical ∮P dV integration (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.14 (= Cengel Bài 9–37)",
+   "en": "Tutorials I p.14 (= Cengel Problem 9–37)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–37 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto lý tưởng có r = 8, T_min = 540 R, T_max = 2400 R; tính đến nhiệt dung riêng thay đổi (bảng A-17E). Nhiệt cấp vào (Btu/lbm) là:",
+   "en": "An ideal Otto cycle has r = 8, T_min = 540 R, T_max = 2400 R; account for variable specific heats (Table A-17E). The heat added (Btu/lbm) is:"
+  },
+  "opts": [
+   {
+    "vi": "241,4 Btu/lbm",
+    "en": "241.4 Btu/lbm"
+   },
+   {
+    "vi": "198,3 Btu/lbm",
+    "en": "198.3 Btu/lbm"
+   },
+   {
+    "vi": "278,3 Btu/lbm",
+    "en": "278.3 Btu/lbm"
+   },
+   {
+    "vi": "488,2 Btu/lbm",
+    "en": "488.2 Btu/lbm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ từ v_r: v_r2 = v_r1/8 ⇒ T₂ = 1.211,9 R, u₂ = 211,28 Btu/lbm; u₃(2400 R) = 452,70; q_in = u₃ − u₂ = 241,4 Btu/lbm. Cold-air với c_v = 0,171 cho 198,3; với c_p = 0,240 cho 278,3; h₃ − h₁ cho 488,2 (bỏ nén).",
+   "en": "T₂ from v_r: v_r2 = v_r1/8 ⇒ T₂ = 1,211.9 R, u₂ = 211.28 Btu/lbm; u₃(2400 R) = 452.70; q_in = u₃ − u₂ = 241.4 Btu/lbm. Cold air with c_v = 0.171 gives 198.3; with c_p = 0.240 gives 278.3; h₃ − h₁ gives 488.2 (skipping the compression)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.15 (= Cengel Bài 9–35E)",
+   "en": "Tutorials I p.15 (= Cengel Problem 9–35E)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17E) + QA tut"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #4): hiệu suất nhiệt của chu trình Otto (A-17E) và hiệu suất Carnot giữa cùng hai giới hạn nhiệt độ lần lượt là:",
+   "en": "Same problem (Tutorials I #4): the thermal efficiency of the Otto cycle (A-17E) and the Carnot efficiency between the same temperature limits are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "0,530 và 0,775",
+    "en": "0.530 and 0.775"
+   },
+   {
+    "vi": "0,565 và 0,775",
+    "en": "0.565 and 0.775"
+   },
+   {
+    "vi": "0,530 và 0,483",
+    "en": "0.530 and 0.483"
+   },
+   {
+    "vi": "0,775 và 0,530",
+    "en": "0.775 and 0.530"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − q_out/q_in = 1 − 113,5/241,4 = 0,530; Carnot = 1 − T_L/T_H = 1 − 540/2400 = 0,775. Hiệu suất Otto luôn thấp hơn Carnot; cặp có 0,565 dùng công thức khí lạnh (k = 1,4); cặp có 0,483 tính nhầm Carnot với T₂ thay T₁; cặp có 0,775 đứng trước đảo thứ tự hai giá trị.",
+   "en": "η = 1 − q_out/q_in = 1 − 113.5/241.4 = 0.530; Carnot = 1 − T_L/T_H = 1 − 540/2400 = 0.775. The Otto efficiency is always below the Carnot value; the pair with 0.565 uses the cold-air formula (k = 1.4); the pair with 0.483 mistakes T₂ for T₁ in the Carnot value; the pair starting with 0.775 swaps the two values."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.15 (= Cengel Bài 9–35E)",
+   "en": "Tutorials I p.15 (= Cengel Problem 9–35E)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17E) + QA tut"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #4. Chu trình Otto lý tưởng, không khí, r = 8; T_min = 540 R, T_max = 2400 R. Tính đến nhiệt dung riêng thay đổi, tính (a) nhiệt cấp vào, (b) hiệu suất, (c) hiệu suất Carnot giữa cùng hai nhiệt độ.",
+   "en": "Tutorials I #4. Ideal Otto cycle with air, r = 8; T_min = 540 R, T_max = 2400 R. Accounting for variable specific heats, determine (a) the heat added, (b) the thermal efficiency, (c) the Carnot efficiency between the same limits."
+  },
+  "sol": {
+   "vi": "(Slide không có lời giải; đề không nêu bảng và P₁: dùng A-17E (đơn vị R), không tính MEP.)\n(a) T₁ = 540 R ⇒ u₁ = 92,04 Btu/lbm, v_r1 = 144,32; v_r2 = v_r1/8 ⇒ T₂ = 1.211,9 R, u₂ = 211,28. T₃ = 2400 R ⇒ u₃ = 452,70, v_r3 = 2,419. q_in = u₃ − u₂ = 241,4 Btu/lbm.\n(b) v_r4 = 8·v_r3 = 19,35 ⇒ T₄ = 1.181,1 R, u₄ = 205,54; q_out = u₄ − u₁ = 113,5; w_net = 127,9 Btu/lbm; η = 0,530 (khí lạnh 0,565).\n(c) η_Carnot = 1 − 540/2400 = 0,775 (nhiệt độ tuyệt đối R).\nHai đường: bảng A-17E và tích phân số cp(T) (verify_m02.py).",
+   "en": "(The slide has no solution; the statement names no table and gives no P₁: use A-17E (R units); MEP is not asked.)\n(a) T₁ = 540 R ⇒ u₁ = 92.04 Btu/lbm, v_r1 = 144.32; v_r2 = v_r1/8 ⇒ T₂ = 1,211.9 R, u₂ = 211.28. T₃ = 2400 R ⇒ u₃ = 452.70, v_r3 = 2.419. q_in = u₃ − u₂ = 241.4 Btu/lbm.\n(b) v_r4 = 8·v_r3 = 19.35 ⇒ T₄ = 1,181.1 R, u₄ = 205.54; q_out = u₄ − u₁ = 113.5; w_net = 127.9 Btu/lbm; η = 0.530 (cold air 0.565).\n(c) η_Carnot = 1 − 540/2400 = 0.775 (absolute temperatures in R).\nTwo routes: Table A-17E and numerical integration of cp(T) (verify_m02.py)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.15 (= Cengel Bài 9–35E)",
+   "en": "Tutorials I p.15 (= Cengel Problem 9–35E)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17E)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Diesel khí-chuẩn: r = 16, r_c = 2; đầu nén 95 kPa, 27 °C; tính đến nhiệt dung riêng thay đổi (A-17). Nhiệt độ sau cấp nhiệt T₃ là:",
+   "en": "Air-standard Diesel cycle: r = 16, r_c = 2; start of compression 95 kPa, 27 °C; accounting for variable specific heats (A-17). The temperature after heat addition T₃ is:"
+  },
+  "opts": [
+   {
+    "vi": "1.724,7 K",
+    "en": "1,724.7 K"
+   },
+   {
+    "vi": "1.818,9 K",
+    "en": "1,818.9 K"
+   },
+   {
+    "vi": "600,0 K",
+    "en": "600.0 K"
+   },
+   {
+    "vi": "862,4 K",
+    "en": "862.4 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "v_r2 = v_r1/16 ⇒ T₂ = 862,4 K; 2→3 đẳng áp: T₃ = r_c T₂ = 1.724,7 K (đáp án in 1724,8 K). Khí lạnh (T₂ = 300·16^0,4) cho 1.818,9 K; r_c·T₁ cho 600 K; 862,4 K là T₂.",
+   "en": "v_r2 = v_r1/16 ⇒ T₂ = 862.4 K; 2→3 isobaric: T₃ = r_c T₂ = 1,724.7 K (printed answer 1724.8 K). Cold air (T₂ = 300·16^0.4) gives 1,818.9 K; r_c·T₁ gives 600 K; 862.4 K is T₂."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.16 (= Cengel Bài 9–47)",
+   "en": "Tutorials I p.16 (= Cengel Problem 9–47)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–47 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #5): hiệu suất nhiệt của chu trình (nhiệt dung riêng thay đổi) là:",
+   "en": "Same problem (Tutorials I #5): the thermal efficiency of the cycle (variable specific heats) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,563",
+    "en": "0.563"
+   },
+   {
+    "vi": "0,614",
+    "en": "0.614"
+   },
+   {
+    "vi": "0,670",
+    "en": "0.670"
+   },
+   {
+    "vi": "0,437",
+    "en": "0.437"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "q_in = h₃ − h₂ = 1.910,5 − 890,9 = 1.019,6 kJ/kg; v_r4 = v_r3·r/r_c ⇒ T₄ = 882,0 K, q_out = u₄ − u₁ = 445,6 kJ/kg; η = 0,563 (đáp án in 56,3 %). Công thức khí lạnh cho 0,614; công thức Otto cho 0,670; q_out/q_in = 0,437.",
+   "en": "q_in = h₃ − h₂ = 1,910.5 − 890.9 = 1,019.6 kJ/kg; v_r4 = v_r3·r/r_c ⇒ T₄ = 882.0 K, q_out = u₄ − u₁ = 445.6 kJ/kg; η = 0.563 (printed answer 56.3 %). The cold-air formula gives 0.614; the Otto formula gives 0.670; q_out/q_in = 0.437."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.16 (= Cengel Bài 9–47)",
+   "en": "Tutorials I p.16 (= Cengel Problem 9–47)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–47 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #5. Chu trình Diesel khí-chuẩn có r = 16, r_c = 2. Đầu nén: 95 kPa, 27 °C. Tính đến nhiệt dung riêng thay đổi, tính (a) nhiệt độ sau cấp nhiệt, (b) hiệu suất nhiệt, (c) MEP.",
+   "en": "Tutorials I #5. An air-standard Diesel cycle has r = 16, r_c = 2. Start of compression: 95 kPa, 27 °C. Accounting for variable specific heats, determine (a) the temperature after heat addition, (b) the thermal efficiency, (c) the MEP."
+  },
+  "sol": {
+   "vi": "(Slide không có lời giải; đề không nêu bảng: dùng A-17; 27 °C = 300 K.)\nT₁ = 300 K ⇒ u₁ = 214,07 kJ/kg, v_r1 = 621,2. 1→2: v_r2 = v_r1/16 ⇒ T₂ = 862,4 K, h₂ = 890,89 kJ/kg.\n2→3 (P = const): T₃ = r_c T₂ = 1.724,7 K ⇒ h₃ = 1.910,48, v_r3 = 4,55; q_in = h₃ − h₂ = 1.019,6 kJ/kg.\n3→4: v₄/v₃ = r/r_c = 8 ⇒ v_r4 = 8v_r3 = 36,4 ⇒ T₄ = 882,0 K, u₄ = 659,64; q_out = u₄ − u₁ = 445,6 kJ/kg.\n(b) w_net = 574,0 kJ/kg; η = 0,563. (c) v₁ = 0,287·300/95 = 0,9063 m³/kg; MEP = w_net/[v₁(1 − 1/16)] = 675,6 kPa.\nĐáp án in (Cengel 9–47): 1724,8 K; 56,3 %; 675,9 kPa. Khác nhau nhỏ (1724,7; 675,6) do nội suy tuyến tính. Hai đường: A-17 và tích phân số cp(T) (verify_m02.py).",
+   "en": "(The slide has no solution; the statement names no table: use A-17; 27 °C = 300 K.)\nT₁ = 300 K ⇒ u₁ = 214.07 kJ/kg, v_r1 = 621.2. 1→2: v_r2 = v_r1/16 ⇒ T₂ = 862.4 K, h₂ = 890.89 kJ/kg.\n2→3 (P = const): T₃ = r_c T₂ = 1,724.7 K ⇒ h₃ = 1,910.48, v_r3 = 4.55; q_in = h₃ − h₂ = 1,019.6 kJ/kg.\n3→4: v₄/v₃ = r/r_c = 8 ⇒ v_r4 = 8v_r3 = 36.4 ⇒ T₄ = 882.0 K, u₄ = 659.64; q_out = u₄ − u₁ = 445.6 kJ/kg.\n(b) w_net = 574.0 kJ/kg; η = 0.563. (c) v₁ = 0.287·300/95 = 0.9063 m³/kg; MEP = w_net/[v₁(1 − 1/16)] = 675.6 kPa.\nPrinted answers (Cengel 9–47): 1724.8 K; 56.3 %; 675.9 kPa. Small differences (1724.7; 675.6) come from linear interpolation. Two routes: A-17 and numerical integration of cp(T) (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.16 (= Cengel Bài 9–47)",
+   "en": "Tutorials I p.16 (= Cengel Problem 9–47)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–47 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ Diesel lý tưởng có r = 20, không khí đầu nén ở 95 kPa, 20 °C; nhiệt độ cực đại không quá 2200 K; nhiệt dung riêng hằng (c_p = 1,005; c_v = 0,718 kJ/kg·K). Tỉ số cắt r_c = T₃/T₂ là:",
+   "en": "An ideal diesel engine has r = 20, the air at the start of compression is at 95 kPa, 20 °C; the maximum temperature must not exceed 2200 K; constant specific heats (c_p = 1.005; c_v = 0.718 kJ/kg·K). The cutoff ratio r_c = T₃/T₂ is:"
+  },
+  "opts": [
+   {
+    "vi": "2,265",
+    "en": "2.265"
+   },
+   {
+    "vi": "7,509",
+    "en": "7.509"
+   },
+   {
+    "vi": "0,375",
+    "en": "0.375"
+   },
+   {
+    "vi": "3,172",
+    "en": "3.172"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 293·20^0,4 = 971,1 K; r_c = T₃/T₂ = 2200/971,1 = 2,265. 2200/293 = 7,51 quên nén; 2200/(293·20) = 0,375 lấy T₂ = r·T₁; thêm hệ số k cho 3,172.",
+   "en": "T₂ = 293·20^0.4 = 971.1 K; r_c = T₃/T₂ = 2200/971.1 = 2.265. 2200/293 = 7.51 forgets the compression; 2200/(293·20) = 0.375 takes T₂ = r·T₁; an extra factor k gives 3.172."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.17 (= Cengel Bài 9–51)",
+   "en": "Tutorials I p.17 (= Cengel Problem 9–51)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–51 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #6): hiệu suất nhiệt và MEP lần lượt là:",
+   "en": "Same problem (Tutorials I #6): the thermal efficiency and the MEP are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "0,6351 và 932,8 kPa",
+    "en": "0.6351 and 932.8 kPa"
+   },
+   {
+    "vi": "0,6983 và 932,8 kPa",
+    "en": "0.6983 and 932.8 kPa"
+   },
+   {
+    "vi": "0,6351 và 886,2 kPa",
+    "en": "0.6351 and 886.2 kPa"
+   },
+   {
+    "vi": "0,4893 và 932,8 kPa",
+    "en": "0.4893 and 932.8 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 20^(−0,4)(3,142 − 1)/(1,4·1,265) = 0,6351; q_in = 1.235,0, q_out = 450,6, w_net = 784,4 kJ/kg; v₁ = 0,8852 m³/kg; MEP = w_net/[v₁(1 − 1/20)] = 932,8 kPa. Công thức Otto cho 0,6983; chia w_net cho v₁ cho 886,2 kPa; quên k trong ngoặc cho 0,4893.",
+   "en": "η = 1 − r^(1−k)(r_c^k − 1)/[k(r_c − 1)] = 1 − 20^(−0.4)(3.142 − 1)/(1.4·1.265) = 0.6351; q_in = 1,235.0, q_out = 450.6, w_net = 784.4 kJ/kg; v₁ = 0.8852 m³/kg; MEP = w_net/[v₁(1 − 1/20)] = 932.8 kPa. The Otto formula gives 0.6983; dividing w_net by v₁ gives 886.2 kPa; forgetting k in the bracket gives 0.4893."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.17 (= Cengel Bài 9–51)",
+   "en": "Tutorials I p.17 (= Cengel Problem 9–51)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–51 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #6. Động cơ Diesel lý tưởng có r = 20, không khí. Đầu nén: 95 kPa, 20 °C. Nhiệt độ cực đại không vượt quá 2200 K. Giả thiết nhiệt dung riêng hằng ở nhiệt độ phòng. Tính (a) hiệu suất nhiệt, (b) MEP.",
+   "en": "Tutorials I #6. An ideal diesel engine has r = 20 and uses air. Start of compression: 95 kPa, 20 °C. The maximum temperature must not exceed 2200 K. Assume constant specific heats at room temperature. Determine (a) the thermal efficiency, (b) the MEP."
+  },
+  "sol": {
+   "vi": "(Slide không có lời giải; đề không in c_p, c_v, R, k: A-2a (c_p = 1,005; c_v = 0,718; R = 0,287; k = 1,4); 20 °C = 293 K.)\nT₂ = 293·20^0,4 = 971,1 K; T₃ = 2200 K ⇒ r_c = T₃/T₂ = 2,265. T₄ = T₃(r_c/r)^(k−1) = 920,6 K.\nq_in = c_p(T₃ − T₂) = 1.235,0 kJ/kg; q_out = c_v(T₄ − T₁) = 450,6 kJ/kg; w_net = 784,4 kJ/kg. (a) η = 0,6351 (kiểm bằng công thức r_c: 0,6352).\n(b) v₁ = 0,287·293/95 = 0,8852 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 932,8 kPa.\nĐáp án in (Cengel 9–51): 63,5 %; 933 kPa. Hai đường: công thức đóng và tích phân số ∮P dV (verify_m02.py).",
+   "en": "(The slide has no solution; the statement prints no c_p, c_v, R, k: A-2a (c_p = 1.005; c_v = 0.718; R = 0.287; k = 1.4); 20 °C = 293 K.)\nT₂ = 293·20^0.4 = 971.1 K; T₃ = 2200 K ⇒ r_c = T₃/T₂ = 2.265. T₄ = T₃(r_c/r)^(k−1) = 920.6 K.\nq_in = c_p(T₃ − T₂) = 1,235.0 kJ/kg; q_out = c_v(T₄ − T₁) = 450.6 kJ/kg; w_net = 784.4 kJ/kg. (a) η = 0.6351 (check with the r_c formula: 0.6352).\n(b) v₁ = 0.287·293/95 = 0.8852 m³/kg; MEP = w_net/[v₁(1 − 1/r)] = 932.8 kPa.\nPrinted answers (Cengel 9–51): 63.5 %; 933 kPa. Two routes: closed forms and numerical ∮P dV integration (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.17 (= Cengel Bài 9–51)",
+   "en": "Tutorials I p.17 (= Cengel Problem 9–51)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–51 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhà máy tuabin khí theo chu trình Brayton lý tưởng, r_p = 8; nhiệt độ vào máy nén 300 K, vào tuabin 1300 K; nhiệt dung riêng thay đổi (A-17). Nhiệt độ ra máy nén và ra tuabin lần lượt là:",
+   "en": "A gas-turbine plant on an ideal Brayton cycle, r_p = 8; compressor inlet 300 K, turbine inlet 1300 K; variable specific heats (A-17). The compressor-exit and turbine-exit temperatures are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "540 K và 770 K",
+    "en": "540 K and 770 K"
+   },
+   {
+    "vi": "543 K và 718 K",
+    "en": "543 K and 718 K"
+   },
+   {
+    "vi": "2.400 K và 162 K",
+    "en": "2,400 K and 162 K"
+   },
+   {
+    "vi": "540 K và 1.060 K",
+    "en": "540 K and 1,060 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_r2 = r_p·P_r1 = 8·1,386 = 11,09 ⇒ T₂ ≈ 540 K; P_r4 = P_r3/r_p = 330,9/8 = 41,36 ⇒ T₄ ≈ 770 K (slide tr.19–20). Khí lạnh k = 1,4 cho 543 K và 718 K (không đúng với bảng); T₁·r_p và T₃/r_p quên số mũ (k−1)/k; cặp có 1.060 K coi tuabin chỉ giảm nhiệt độ đúng bằng mức máy nén tăng.",
+   "en": "P_r2 = r_p·P_r1 = 8·1.386 = 11.09 ⇒ T₂ ≈ 540 K; P_r4 = P_r3/r_p = 330.9/8 = 41.36 ⇒ T₄ ≈ 770 K (slide p.19–20). Cold air k = 1.4 gives 543 K and 718 K (not the table values); T₁·r_p and T₃/r_p forget the exponent (k−1)/k; the pair with 1,060 K assumes the turbine temperature drop equals the compressor temperature rise."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.18–23 (= Cengel Ví dụ 9–5)",
+   "en": "Tutorials I p.18–23 (= Cengel Example 9–5)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.19–20 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I, Brayton): tỉ số công hồi (back work ratio) w_comp/w_turb là:",
+   "en": "Same problem (Tutorials I, Brayton): the back work ratio w_comp/w_turb is:"
+  },
+  "opts": [
+   {
+    "vi": "0,402",
+    "en": "0.402"
+   },
+   {
+    "vi": "0,598",
+    "en": "0.598"
+   },
+   {
+    "vi": "0,418",
+    "en": "0.418"
+   },
+   {
+    "vi": "0,673",
+    "en": "0.673"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "w_comp = h₂ − h₁ = 243,99, w_turb = h₃ − h₄ = 606,58 kJ/kg ⇒ r_bw = 0,4022 (slide làm tròn T₂ = 540 K nên in 0,403); 1 − r_bw = 0,598 là phần công ra có ích; khí lạnh cho 0,418 (= T₁r_p^((k−1)/k)/T₃, không khớp bảng); 0,673 chia cho w_net.",
+   "en": "w_comp = h₂ − h₁ = 243.99, w_turb = h₃ − h₄ = 606.58 kJ/kg ⇒ r_bw = 0.4022 (the slide rounds T₂ to 540 K and prints 0.403); 1 − r_bw = 0.598 is the useful share of the turbine work; cold air gives 0.418; 0.673 divides by w_net."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.18–23 (= Cengel Ví dụ 9–5)",
+   "en": "Tutorials I p.18–23 (= Cengel Example 9–5)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.21 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I, Brayton): hiệu suất nhiệt chu trình (tính từ q_in = h₃ − h₂, w_net) là:",
+   "en": "Same problem (Tutorials I, Brayton): the thermal efficiency (from q_in = h₃ − h₂ and w_net) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,426",
+    "en": "0.426"
+   },
+   {
+    "vi": "0,448",
+    "en": "0.448"
+   },
+   {
+    "vi": "0,769",
+    "en": "0.769"
+   },
+   {
+    "vi": "0,598",
+    "en": "0.598"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "q_in = 851,79, w_net = 362,59 kJ/kg ⇒ η = 0,426; kiểm: 1 − q_out/q_in = 1 − 489,2/851,8. Công thức khí lạnh 1 − r_p^(−0,2857) cho 0,448; 1 − T₁/T₃ = 0,769 là hiệu suất Carnot; w_net/w_turb = 0,598 chính là 1 − r_bw.",
+   "en": "q_in = 851.79, w_net = 362.59 kJ/kg ⇒ η = 0.426; check: 1 − q_out/q_in = 1 − 489.2/851.8. The cold-air formula 1 − r_p^(−0.2857) gives 0.448; 1 − T₁/T₃ = 0.769 is the Carnot efficiency; w_net/w_turb = 0.598 is simply 1 − r_bw."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.18–23 (= Cengel Ví dụ 9–5)",
+   "en": "Tutorials I p.18–23 (= Cengel Example 9–5)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.22 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I (ví dụ Brayton). Nhà máy tuabin khí chạy theo chu trình Brayton lý tưởng, r_p = 8, nhiệt độ vào máy nén 300 K, vào tuabin 1300 K. Giả thiết không khí-chuẩn, nhiệt dung riêng thay đổi. Tính (a) nhiệt độ ra máy nén và ra tuabin, (b) tỉ số công hồi, (c) hiệu suất nhiệt.",
+   "en": "Tutorials I (Brayton example). A gas-turbine plant runs on an ideal Brayton cycle, r_p = 8, compressor-inlet temperature 300 K, turbine-inlet 1300 K. Air-standard, variable specific heats. Determine (a) the compressor and turbine exit temperatures, (b) the back work ratio, (c) the thermal efficiency."
+  },
+  "sol": {
+   "vi": "T₁ = 300 K ⇒ h₁ = 300,19 kJ/kg, P_r1 = 1,386. T₃ = 1300 K ⇒ h₃ = 1395,97, P_r3 = 330,9.\n(a) P_r2 = 8·1,386 = 11,09 ⇒ T₂ = 539,8 K (slide làm tròn 540 K), h₂ = 544,18. P_r4 = 330,9/8 = 41,36 ⇒ T₄ = 770,3 K (slide 770 K), h₄ = 789,39 kJ/kg.\n(b) w_comp = h₂ − h₁ = 243,99; w_turb = h₃ − h₄ = 606,58; r_bw = 0,4022. Slide: 244,16/606,60 = 0,403 (do làm tròn T₂ = 540 K, h₂ = 544,35).\n(c) q_in = h₃ − h₂ = 851,79; w_net = 362,59; η = 0,4257 (slide 42,6 %); q_out = h₄ − h₁ = 489,2. Kiểm: khí lạnh 1 − 8^(−0,2857) = 0,4480.\nHai đường: bảng A-17 và tích phân số cp(T) (verify_m02.py), lệch ≤ 1 %.",
+   "en": "T₁ = 300 K ⇒ h₁ = 300.19 kJ/kg, P_r1 = 1.386. T₃ = 1300 K ⇒ h₃ = 1395.97, P_r3 = 330.9.\n(a) P_r2 = 8·1.386 = 11.09 ⇒ T₂ = 539.8 K (the slide rounds to 540 K), h₂ = 544.18. P_r4 = 330.9/8 = 41.36 ⇒ T₄ = 770.3 K (slide 770 K), h₄ = 789.39 kJ/kg.\n(b) w_comp = h₂ − h₁ = 243.99; w_turb = h₃ − h₄ = 606.58; r_bw = 0.4022. Slide: 244.16/606.60 = 0.403 (because T₂ is rounded to 540 K, h₂ = 544.35).\n(c) q_in = h₃ − h₂ = 851.79; w_net = 362.59; η = 0.4257 (slide 42.6 %); q_out = h₄ − h₁ = 489.2. Check: cold air 1 − 8^(−0.2857) = 0.4480.\nTwo routes: Table A-17 and numerical integration of cp(T) (verify_m02.py), within 1 %."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.18–23 (= Cengel Ví dụ 9–5)",
+   "en": "Tutorials I p.18–23 (= Cengel Example 9–5)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide tr.18–23 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản lý tưởng, r_p = 10, không khí vào máy nén ở 520 R, vào tuabin ở 2000 R; nhiệt dung riêng thay đổi (A-17E). Nhiệt độ ra máy nén (R) là:",
+   "en": "A simple ideal Brayton cycle, r_p = 10, air enters the compressor at 520 R and the turbine at 2000 R; variable specific heats (A-17E). The compressor-exit temperature (R) is:"
+  },
+  "opts": [
+   {
+    "vi": "996,5 R",
+    "en": "996.5 R"
+   },
+   {
+    "vi": "1.004,0 R",
+    "en": "1,004.0 R"
+   },
+   {
+    "vi": "5.200,0 R",
+    "en": "5,200.0 R"
+   },
+   {
+    "vi": "1.306,2 R",
+    "en": "1,306.2 R"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_r1(520 R) = 1,215; P_r2 = 10·P_r1 = 12,15 ⇒ T₂ = 996,5 R. Khí lạnh T₁·10^0,2857 = 1.004,0 R (gần vì T còn thấp); 520·10 và 520·10^0,4 là nhầm công thức.",
+   "en": "P_r1(520 R) = 1.215; P_r2 = 10·P_r1 = 12.15 ⇒ T₂ = 996.5 R. Cold air T₁·10^0.2857 = 1,004.0 R (close because T is still low); 520·10 and 520·10^0.4 are wrong formulas."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.28 (= Cengel Bài 9–73E)",
+   "en": "Tutorials I p.28 (= Cengel Problem 9–73E)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17E) + QA tut"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #7): tỉ số công hồi và hiệu suất nhiệt lần lượt là:",
+   "en": "Same problem (Tutorials I #7): the back work ratio and the thermal efficiency are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "0,485 và 0,465",
+    "en": "0.485 and 0.465"
+   },
+   {
+    "vi": "0,485 và 0,498",
+    "en": "0.485 and 0.498"
+   },
+   {
+    "vi": "0,515 và 0,465",
+    "en": "0.515 and 0.465"
+   },
+   {
+    "vi": "0,485 và 0,740",
+    "en": "0.485 and 0.740"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "w_comp = h₂ − h₁ = 115,84, w_turb = h₃ − h₄ = 238,88 Btu/lbm ⇒ r_bw = 0,485; q_in = h₃ − h₂ = 264,60; η = w_net/q_in = 0,465 (T₄ = 1.099,3 R). Cặp có 0,498 dùng nhầm công thức hồi nhiệt 1 − (T₁/T₃)r_p^0,2857; cặp có 0,515 đảo r_bw thành 1 − r_bw; cặp có 0,740 lấy hiệu suất Carnot.",
+   "en": "w_comp = h₂ − h₁ = 115.84, w_turb = h₃ − h₄ = 238.88 Btu/lbm ⇒ r_bw = 0.485; q_in = h₃ − h₂ = 264.60; η = w_net/q_in = 0.465 (T₄ = 1,099.3 R). The pair with 0.498 uses the regenerative formula 1 − (T₁/T₃)r_p^0.2857 by mistake; the pair with 0.515 replaces r_bw by 1 − r_bw; the pair with 0.740 takes the Carnot efficiency."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.28 (= Cengel Bài 9–73E)",
+   "en": "Tutorials I p.28 (= Cengel Problem 9–73E)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17E) + QA tut"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #7. Chu trình Brayton đơn giản lý tưởng, không khí, r_p = 10; vào máy nén 520 R, vào tuabin 2000 R. Nhiệt dung riêng thay đổi. Tính (a) nhiệt độ ra máy nén, (b) tỉ số công hồi, (c) hiệu suất nhiệt.",
+   "en": "Tutorials I #7. A simple ideal Brayton cycle with air, r_p = 10; compressor inlet 520 R, turbine inlet 2000 R. Variable specific heats. Determine (a) the compressor-exit temperature, (b) the back work ratio, (c) the thermal efficiency."
+  },
+  "sol": {
+   "vi": "(Slide không có lời giải; đề không nêu bảng: dùng A-17E.)\n(a) h₁ = 124,27 Btu/lbm, P_r1 = 1,215; P_r2 = 10·P_r1 ⇒ T₂ = 996,5 R, h₂ = 240,11.\n(b) T₃ = 2000 R ⇒ h₃ = 504,71, P_r3 = 174,00; P_r4 = P_r3/10 ⇒ T₄ = 1.099,3 R, h₄ = 265,83. w_comp = 115,84; w_turb = 238,88; r_bw = 0,485.\n(c) q_in = h₃ − h₂ = 264,60; w_net = 123,05; η = 0,465.\nHai đường: A-17E và tích phân số cp(T) (verify_m02.py).",
+   "en": "(The slide has no solution; no table named: use A-17E.)\n(a) h₁ = 124.27 Btu/lbm, P_r1 = 1.215; P_r2 = 10·P_r1 ⇒ T₂ = 996.5 R, h₂ = 240.11.\n(b) T₃ = 2000 R ⇒ h₃ = 504.71, P_r3 = 174.00; P_r4 = P_r3/10 ⇒ T₄ = 1,099.3 R, h₄ = 265.83. w_comp = 115.84; w_turb = 238.88; r_bw = 0.485.\n(c) q_in = h₃ − h₂ = 264.60; w_net = 123.05; η = 0.465.\nTwo routes: A-17E and numerical integration of cp(T) (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Tutorials I tr.28 (= Cengel Bài 9–73E)",
+   "en": "Tutorials I p.28 (= Cengel Problem 9–73E)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17E)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy nén của động cơ tuabin khí nén không khí từ 300 K, 100 kPa lên 700 kPa và 580 K (trạng thái thực). Nhiệt cấp vào 950 kJ/kg trước tuabin; hiệu suất tuabin 86 %; nhiệt dung riêng thay đổi. Nhiệt độ vào tuabin T₃ là:",
+   "en": "The compressor of a gas-turbine engine takes air from 300 K, 100 kPa to 700 kPa and 580 K (the actual state). 950 kJ/kg of heat is added before the turbine; turbine efficiency 86 %; variable specific heats. The turbine-inlet temperature T₃ is:"
+  },
+  "opts": [
+   {
+    "vi": "1.417 K",
+    "en": "1,417 K"
+   },
+   {
+    "vi": "1.525 K",
+    "en": "1,525 K"
+   },
+   {
+    "vi": "1.245 K",
+    "en": "1,245 K"
+   },
+   {
+    "vi": "1.144 K",
+    "en": "1,144 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h(580 K) = 586,04 kJ/kg ⇒ h₃ = h₂ + q_in = 1.536,04 kJ/kg ⇒ T₃ = 1.417 K. Dùng c_p = 1,005 từ 580 K cho 1.525 K; từ 300 K cho 1.245 K; 1.144 là °C.",
+   "en": "h₂ = h(580 K) = 586.04 kJ/kg ⇒ h₃ = h₂ + q_in = 1,536.04 kJ/kg ⇒ T₃ = 1,417 K. Using c_p = 1.005 from 580 K gives 1,525 K; from 300 K gives 1,245 K; 1,144 is in °C."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Tutorials I tr.29 (= Cengel Bài 9–83)",
+   "en": "Tutorials I p.29 (= Cengel Problem 9–83)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17) + QA tut"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Tutorials I #8): phần công tuabin dùng để chạy máy nén và hiệu suất nhiệt lần lượt là:",
+   "en": "Same problem (Tutorials I #8): the fraction of the turbine work used to drive the compressor and the thermal efficiency are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "0,527 và 0,270",
+    "en": "0.527 and 0.270"
+   },
+   {
+    "vi": "0,454 và 0,362",
+    "en": "0.454 and 0.362"
+   },
+   {
+    "vi": "1,896 và 0,270",
+    "en": "1.896 and 0.270"
+   },
+   {
+    "vi": "0,527 và 0,473",
+    "en": "0.527 and 0.473"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₃ = 1.417 K, P_r3 = 474,1; P_r4s = P_r3/7 ⇒ h₄s = 905,83; w_turb = η_t(h₃ − h₄s) = 542,0 kJ/kg (slide đáp 542,0); w_comp = h₂ − h₁ = 285,85 (đáp 285,9); w_comp/w_turb = 0,527; w_net = 256,1; η = w_net/q_in = 0,270. Bỏ η_t (coi tuabin lý tưởng) cho 0,454 và 0,362; w_turb/w_comp là nghịch đảo; w_net/w_turb = 1 − r_bw.",
+   "en": "T₃ = 1,417 K, P_r3 = 474.1; P_r4s = P_r3/7 ⇒ h₄s = 905.83; w_turb = η_t(h₃ − h₄s) = 542.0 kJ/kg (QA: 542.0); w_comp = h₂ − h₁ = 285.85 (285.9); w_comp/w_turb = 0.527; w_net = 256.1; η = w_net/q_in = 0.270. Ignoring η_t (ideal turbine) gives 0.454 and 0.362; w_turb/w_comp is the inverse; w_net/w_turb = 1 − r_bw."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Tutorials I tr.29 (= Cengel Bài 9–83)",
+   "en": "Tutorials I p.29 (= Cengel Problem 9–83)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17) + QA tut"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tutorials I #8. Không khí vào máy nén của động cơ tuabin khí ở 300 K, 100 kPa, được nén tới 700 kPa và 580 K. Nhiệt cấp cho không khí 950 kJ/kg trước khi vào tuabin. Hiệu suất tuabin 86 %. Nhiệt dung riêng thay đổi. Tính (a) phần công tuabin dùng chạy máy nén, (b) hiệu suất nhiệt.",
+   "en": "Tutorials I #8. Air enters the compressor of a gas-turbine engine at 300 K and 100 kPa and is compressed to 700 kPa and 580 K. 950 kJ/kg of heat is added to the air before it enters the turbine. Turbine efficiency 86 %. Variable specific heats. Determine (a) the fraction of the turbine work used to drive the compressor, (b) the thermal efficiency."
+  },
+  "sol": {
+   "vi": "(Slide không có lời giải. Giả định: P₃ = P₂ (không tổn thất buồng đốt), áp suất ra tuabin = 100 kPa = P₁; T₂ = 580 K là trạng thái THỰC (không đẳng entropi: máy nén đẳng entropi cùng r_p = 7 chỉ đạt 520,3 K, tức η_c ≈ 0,78).\nh₁ = 300,19; h₂ = h(580 K) = 586,04 ⇒ w_comp = 285,85 kJ/kg. h₃ = h₂ + 950 = 1.536,04 ⇒ T₃ = 1.417 K, P_r3 = 474,1.\nTuabin: P_r4s = P_r3/7 = 67,73 ⇒ T₄s = 875,8 K, h₄s = 905,83; w_turb = 0,86·(h₃ − h₄s) = 542,0 kJ/kg.\n(a) w_comp/w_turb = 0,527. (b) w_net = 256,1 kJ/kg; η = w_net/q_in = 0,270.\nHai đường: A-17 và tích phân số cp(T) (verify_m02.py).",
+   "en": "(The slide has no solution. Assumptions: P₃ = P₂ (no combustor loss), turbine exit pressure = 100 kPa = P₁; T₂ = 580 K is the ACTUAL state (not isentropic: an isentropic compressor of the same r_p = 7 would reach only 520.3 K, i.e. η_c ≈ 0.78).\nh₁ = 300.19; h₂ = h(580 K) = 586.04 ⇒ w_comp = 285.85 kJ/kg. h₃ = h₂ + 950 = 1,536.04 ⇒ T₃ = 1,417 K, P_r3 = 474.1.\nTurbine: P_r4s = P_r3/7 = 67.73 ⇒ T₄s = 875.8 K, h₄s = 905.83; w_turb = 0.86·(h₃ − h₄s) = 542.0 kJ/kg.\n(a) w_comp/w_turb = 0.527. (b) w_net = 256.1 kJ/kg; η = w_net/q_in = 0.270.\nTwo routes: A-17 and numerical integration of cp(T) (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Tutorials I tr.29 (= Cengel Bài 9–83)",
+   "en": "Tutorials I p.29 (= Cengel Problem 9–83)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (A-17)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton của Ví dụ 9–5 (r_p = 8, 300 K và 1300 K) nhưng η_c = 80 %, η_t = 85 %. Tỉ số công hồi và hiệu suất nhiệt là:",
+   "en": "The Brayton cycle of Example 9–5 (r_p = 8, 300 K and 1300 K) but with η_c = 80 % and η_t = 85 %. The back work ratio and thermal efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "0,592 và 0,266",
+    "en": "0.592 and 0.266"
+   },
+   {
+    "vi": "0,402 và 0,426",
+    "en": "0.402 and 0.426"
+   },
+   {
+    "vi": "0,592 và 0,247",
+    "en": "0.592 and 0.247"
+   },
+   {
+    "vi": "0,379 và 0,266",
+    "en": "0.379 and 0.266"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "w_comp = w_s/η_c = 243,99/0,80 = 304,99 kJ/kg; w_turb = η_t w_s = 0,85·606,58 = 515,60 kJ/kg ⇒ r_bw = 0,592 (sách 0,592); h₂ = 605,18 ⇒ q_in = h₃ − h₂ = 790,79; w_net = 210,61 ⇒ η = 0,266 (sách 26,6 %). Chu trình lý tưởng cho 0,402 và 0,426; cặp có 0,247 tính q_in từ h₂s; cặp có 0,379 lấy nhầm tỉ số η_c/η_t.",
+   "en": "w_comp = w_s/η_c = 243.99/0.80 = 304.99 kJ/kg; w_turb = η_t w_s = 0.85·606.58 = 515.60 kJ/kg ⇒ r_bw = 0.592 (book 0.592); h₂ = 605.18 ⇒ q_in = h₃ − h₂ = 790.79; w_net = 210.61 ⇒ η = 0.266 (book 26.6 %). The ideal cycle gives 0.402 and 0.426; the pair with 0.247 takes q_in from h₂s; the pair with 0.379 takes the ratio η_c/η_t by mistake."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–6 (tr.513–514)",
+   "en": "Cengel Example 9–6 (pp.513–514)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–6 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thêm bộ hồi nhiệt có hiệu quả ε = 80 % vào chu trình thực của Ví dụ 9–6 (h₂a = 605,39; h₄a = 880,36 kJ/kg). Entanpi h₅ sau bộ hồi nhiệt và hiệu suất mới là:",
+   "en": "Add a regenerator of effectiveness ε = 80 % to the actual cycle of Example 9–6 (h₂a = 605.39; h₄a = 880.36 kJ/kg). The enthalpy h₅ leaving the regenerator and the new efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "825,3 kJ/kg và 0,369",
+    "en": "825.3 kJ/kg and 0.369"
+   },
+   {
+    "vi": "880,4 kJ/kg và 0,408",
+    "en": "880.4 kJ/kg and 0.408"
+   },
+   {
+    "vi": "825,3 kJ/kg và 0,266",
+    "en": "825.3 kJ/kg and 0.266"
+   },
+   {
+    "vi": "660,2 kJ/kg và 0,286",
+    "en": "660.2 kJ/kg and 0.286"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ε = (h₅ − h₂a)/(h₄a − h₂a) ⇒ h₅ = 605,18 + 0,8·(880,37 − 605,18) = 825,33 kJ/kg (sách 825,37); q_in = h₃ − h₅ = 570,64 (tiết kiệm 220,2 kJ/kg); công thực không đổi (210,61) ⇒ η = 0,369 (sách 36,9 %). Không có hồi nhiệt η vẫn 0,266; dùng ε = 0,2 thay 0,8 cho h₅ thấp hơn nhiều.",
+   "en": "ε = (h₅ − h₂a)/(h₄a − h₂a) ⇒ h₅ = 605.18 + 0.8·(880.37 − 605.18) = 825.33 kJ/kg (book 825.37); q_in = h₃ − h₅ = 570.64 (saves 220.2 kJ/kg); the net work is unchanged (210.61) ⇒ η = 0.369 (book 36.9 %). Without regeneration η stays 0.266; using ε = 0.2 instead of 0.8 gives a much lower h₅."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–7 (tr.516)",
+   "en": "Cengel Example 9–7 (p.516)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–7 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 9–6 và 9–7. Chu trình Brayton r_p = 8, T₁ = 300 K, T₃ = 1300 K, nhiệt dung riêng thay đổi. (a) Với η_c = 80 %, η_t = 85 %: tỉ số công hồi, hiệu suất nhiệt, nhiệt độ ra tuabin. (b) Thêm bộ hồi nhiệt ε = 80 %: hiệu suất.",
+   "en": "Cengel Examples 9–6 and 9–7. A Brayton cycle with r_p = 8, T₁ = 300 K, T₃ = 1300 K, variable specific heats. (a) With η_c = 80 %, η_t = 85 %: back work ratio, thermal efficiency, turbine exit temperature. (b) Add a regenerator ε = 80 %: the efficiency."
+  },
+  "sol": {
+   "vi": "(a) Từ Ví dụ 9–5: w_s,comp = 243,99, w_s,turb = 606,58 kJ/kg. w_comp = 243,99/0,80 = 304,99; w_turb = 0,85·606,58 = 515,60; r_bw = 0,592. h₂a = 300,19 + 304,99 = 605,18 (T₂a = 598 K); q_in = h₃ − h₂a = 790,79; w_net = 210,61; η = 0,266; h₄a = h₃ − w_turb = 880,37 ⇒ T₄a = 853 K.\n(b) h₅ = h₂a + ε(h₄a − h₂a) = 825,33; q_in = h₃ − h₅ = 570,64; η = 210,61/570,64 = 0,369. Sách: 0,592; 26,6 %; 853 K; 825,37; 36,9 %. Hai đường: A-17 và tích phân số cp(T) (verify_m02.py).",
+   "en": "(a) From Example 9–5: w_s,comp = 243.99, w_s,turb = 606.58 kJ/kg. w_comp = 243.99/0.80 = 304.99; w_turb = 0.85·606.58 = 515.60; r_bw = 0.592. h₂a = 300.19 + 304.99 = 605.18 (T₂a = 598 K); q_in = h₃ − h₂a = 790.79; w_net = 210.61; η = 0.266; h₄a = h₃ − w_turb = 880.37 ⇒ T₄a = 853 K.\n(b) h₅ = h₂a + ε(h₄a − h₂a) = 825.33; q_in = h₃ − h₅ = 570.64; η = 210.61/570.64 = 0.369. Book: 0.592; 26.6 %; 853 K; 825.37; 36.9 %. Two routes: A-17 and numerical integration of cp(T) (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–6 (tr.513–514)",
+   "en": "Cengel Example 9–6 (pp.513–514)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–6, 9–7 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lý tưởng hai cấp nén (làm mát trung gian về 300 K) và hai cấp giãn (hâm nóng về 1300 K), tỉ số áp tổng 8, không hồi nhiệt (Ví dụ 9–8a). So với chu trình một cấp cùng r_p, tỉ số công hồi và hiệu suất thay đổi thế nào?",
+   "en": "An ideal gas cycle with two compression stages (intercooled to 300 K) and two expansion stages (reheated to 1300 K), overall pressure ratio 8, no regenerator (Example 9–8a). Compared with the single-stage cycle of the same r_p, how do the back work ratio and the efficiency change?"
+  },
+  "opts": [
+   {
+    "vi": "Tỉ số công hồi giảm (0,402 → 0,304) nhưng hiệu suất cũng giảm (0,426 → 0,358)",
+    "en": "Back work ratio falls (0.402 → 0.304) but efficiency also falls (0.426 → 0.358)"
+   },
+   {
+    "vi": "Cả tỉ số công hồi và hiệu suất đều tăng",
+    "en": "Both back work ratio and efficiency rise"
+   },
+   {
+    "vi": "Tỉ số công hồi tăng nhưng hiệu suất giảm",
+    "en": "Back work ratio rises but efficiency falls"
+   },
+   {
+    "vi": "Tỉ số công hồi giảm và hiệu suất tăng",
+    "en": "Back work ratio falls and efficiency rises"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = T₄ = 403,3 K, h₂ = 404,32; T₇ = 1.006,4 K, h₇ = 1.053,31. w_comp = 2(h₂ − h₁) = 208,25, w_turb = 2(h₆ − h₇) = 685,32 ⇒ r_bw = 0,304 (giảm từ 0,402); q_in = (h₆ − h₄) + (h₈ − h₇) = 1.334,31 ⇒ η = 0,358 (giảm từ 0,426): làm mát trung gian và hâm nóng làm tăng công thực nhưng cũng tăng nhiệt cấp, nên chỉ có lợi khi kèm hồi nhiệt.",
+   "en": "T₂ = T₄ = 403.3 K, h₂ = 404.32; T₇ = 1,006.4 K, h₇ = 1,053.31. w_comp = 2(h₂ − h₁) = 208.25, w_turb = 2(h₆ − h₇) = 685.32 ⇒ r_bw = 0.304 (down from 0.402); q_in = (h₆ − h₄) + (h₈ − h₇) = 1,334.31 ⇒ η = 0.358 (down from 0.426): intercooling and reheating raise the net work but also the heat added, so they pay off only together with regeneration."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–8 (tr.519–520)",
+   "en": "Cengel Example 9–8 (pp.519–520)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–8 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng chu trình hai cấp (Ví dụ 9–8) nhưng có bộ hồi nhiệt lý tưởng (ε = 100 %, h₅ = h₇): hiệu suất nhiệt là:",
+   "en": "The same two-stage cycle (Example 9–8) with an ideal regenerator (ε = 100 %, h₅ = h₇): the thermal efficiency is:"
+  },
+  "opts": [
+   {
+    "vi": "0,696",
+    "en": "0.696"
+   },
+   {
+    "vi": "0,358",
+    "en": "0.358"
+   },
+   {
+    "vi": "0,426",
+    "en": "0.426"
+   },
+   {
+    "vi": "0,534",
+    "en": "0.534"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Công không đổi (w_net = 477,07 kJ/kg) nhưng q_in = (h₆ − h₅) + (h₈ − h₇) = 2(h₆ − h₇) = 685,32 ⇒ η = 0,696 (sách 69,6 %). Không hồi nhiệt: 0,358; chu trình một cấp: 0,426.",
+   "en": "The work is unchanged (w_net = 477.07 kJ/kg) but q_in = (h₆ − h₅) + (h₈ − h₇) = 2(h₆ − h₇) = 685.32 ⇒ η = 0.696 (book 69.6 %). Without regeneration: 0.358; the single-stage cycle: 0.426."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–8 (tr.519–520)",
+   "en": "Cengel Example 9–8 (pp.519–520)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–8 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay phản lực bay 850 ft/s ở độ cao có không khí 5 psia, −40 °F; r_p = 10; nhiệt độ vào tuabin 2000 °F; khí-chuẩn, c_p = 0,240 Btu/lbm·R. Theo chu trình phản lực lý tưởng (công tuabin = công máy nén), nhiệt độ ra tuabin T₅ là:",
+   "en": "A turbojet flies at 850 ft/s where the air is at 5 psia and −40 °F; r_p = 10; turbine inlet 2000 °F; cold-air-standard, c_p = 0.240 Btu/lbm·R. For the ideal jet cycle (turbine work = compressor work) the turbine exit temperature T₅ is:"
+  },
+  "opts": [
+   {
+    "vi": "2.013 R",
+    "en": "2,013 R"
+   },
+   {
+    "vi": "1.533 R",
+    "en": "1,533 R"
+   },
+   {
+    "vi": "1.274 R",
+    "en": "1,274 R"
+   },
+   {
+    "vi": "927 R",
+    "en": "927 R"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khuếch tán: T₂ = T₁ + V²/(2c_p) = 420 + 850²/(2·0,240·25 037) = 480 R; máy nén: T₃ = T₂·10^0,2857 = 927 R; công tuabin = công nén ⇒ T₅ = T₄ − T₃ + T₂ = 2460 − 927 + 480 = 2.013 R (sách 2013 R). 1.533 là T₄ − T₃ (quên + T₂); 1.274 coi tuabin giãn hết r_p; 927 là T₃.",
+   "en": "Diffuser: T₂ = T₁ + V²/(2c_p) = 420 + 850²/(2·0.240·25,037) = 480 R; compressor: T₃ = T₂·10^0.2857 = 927 R; turbine work = compressor work ⇒ T₅ = T₄ − T₃ + T₂ = 2460 − 927 + 480 = 2,013 R (book 2013 R). 1,533 is T₄ − T₃ (forgetting + T₂); 1,274 lets the turbine expand through the whole r_p; 927 is T₃."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–9 (tr.523–524)",
+   "en": "Cengel Example 9–9 (pp.523–524)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–9 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng bài (Ví dụ 9–9): vận tốc khí ở cửa ra vòi phun (ft/s) và \"hiệu suất đẩy\" η_P = Ẇ_P/Q̇_in lần lượt là:",
+   "en": "Same problem (Example 9–9): the gas velocity at the nozzle exit (ft/s) and the \"propulsive efficiency\" η_P = Ẇ_P/Q̇_in are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "3.286 ft/s và 22,5 %",
+    "en": "3,286 ft/s and 22.5 %"
+   },
+   {
+    "vi": "2.436 ft/s và 22,5 %",
+    "en": "2,436 ft/s and 22.5 %"
+   },
+   {
+    "vi": "3.286 ft/s và 41,1 %",
+    "en": "3,286 ft/s and 41.1 %"
+   },
+   {
+    "vi": "3.286 ft/s và 17,4 %",
+    "en": "3,286 ft/s and 17.4 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₆ = T₅(P₆/P₅)^((k−1)/k) = 2.013·(5/39,6)^0,2857 = 1.115 R; V₆ = √[2c_p(T₅ − T₆)] = 3.286 ft/s. Ẇ_P = ṁ(V₆ − V₁)V₁ = 8.271 Btu/s; Q̇_in = ṁc_p(T₄ − T₃) = 36.793 Btu/s ⇒ η_P = 22,5 % (sách 22,5 %). Chú ý: η_P của Cengel/slide = công đẩy/nhiệt cấp, là \"hiệu suất tổng\" η_o của Farokhi/El-Sayed; công thức 2V/(V + V₆) = 41,1 % là hiệu suất đẩy kiểu Farokhi (không cùng đại lượng); mẫu số thay bằng ṁc_p(T₄ − T₂) cho 17,4 %.",
+   "en": "T₆ = T₅(P₆/P₅)^((k−1)/k) = 2,013·(5/39.6)^0.2857 = 1,115 R; V₆ = √[2c_p(T₅ − T₆)] = 3,286 ft/s. Ẇ_P = ṁ(V₆ − V₁)V₁ = 8,271 Btu/s; Q̇_in = ṁc_p(T₄ − T₃) = 36,793 Btu/s ⇒ η_P = 22.5 % (book 22.5 %). Note: the η_P of Cengel and the slide = thrust power/heat input, which Farokhi and El-Sayed call the overall efficiency η_o; the formula 2V/(V + V₆) = 41.1 % is Farokhi's propulsive efficiency (a different quantity); using ṁc_p(T₄ − T₂) in the denominator gives 17.4 %."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–9 (tr.523–524)",
+   "en": "Cengel Example 9–9 (pp.523–524)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–9 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 9–9. Máy bay turbojet bay 850 ft/s ở độ cao có không khí 5 psia và −40 °F. Máy nén r_p = 10, nhiệt độ vào tuabin 2000 °F, lưu lượng khí 100 lbm/s. Khí lạnh-chuẩn. Tính (a) nhiệt độ và áp suất ra tuabin, (b) vận tốc khí ở cửa ra vòi phun, (c) hiệu suất đẩy của chu trình.",
+   "en": "Cengel Example 9–9. A turbojet flies at 850 ft/s where the air is at 5 psia and −40 °F. Compressor r_p = 10, turbine inlet 2000 °F, air flow 100 lbm/s. Cold-air-standard. Determine (a) the temperature and pressure at the turbine exit, (b) the gas velocity at the nozzle exit, (c) the propulsive efficiency of the cycle."
+  },
+  "sol": {
+   "vi": "Giả thiết: c_p = 0,240 Btu/(lbm·R), k = 1,4; 1 Btu/lbm = 25 037 ft²/s²; °F + 460 = R (−40 °F = 420 R; 2000 °F = 2460 R); chỉ khuếch tán và vòi phun có động năng; công tuabin = công nén.\n1→2 (khuếch tán): T₂ = 420 + 850²/(2·0,240·25 037) = 480,1 R; P₂ = 5(T₂/T₁)^3,5 = 7,99 psia.\n2→3: T₃ = T₂·10^0,2857 = 927,0 R; P₃ = P₄ = 79,9 psia.\n4→5: T₅ = T₄ − T₃ + T₂ = 2.013,2 R; P₅ = P₄(T₅/T₄)^3,5 = 39,6 psia.\n5→6: T₆ = T₅(5/P₅)^0,2857 = 1.114,6 R; V₆ = √[2c_p(T₅ − T₆)] = 3.286 ft/s.\n(c) Ẇ_P = ṁ(V₆ − V₁)V₁ = 8.271 Btu/s; Q̇_in = ṁc_p(T₄ − T₃) = 36.793 Btu/s; η_P = 0,2248.\nSách: 480 R, 8,0 psia; 927 R, 80 psia; 2013 R, 39,7 psia; 1114 R; 3288 ft/s; 8276 Btu/s; 36 794 Btu/s; 22,5 %. Hai đường: công thức đóng như trên và đổi sang SI, cân bằng năng lượng từng bộ phận (verify_m02.py).",
+   "en": "Assumptions: c_p = 0.240 Btu/(lbm·R), k = 1.4; 1 Btu/lbm = 25,037 ft²/s²; °F + 460 = R (−40 °F = 420 R; 2000 °F = 2460 R); only the diffuser inlet and nozzle exit carry kinetic energy; turbine work = compressor work.\n1→2 (diffuser): T₂ = 420 + 850²/(2·0.240·25,037) = 480.1 R; P₂ = 5(T₂/T₁)^3.5 = 7.99 psia.\n2→3: T₃ = T₂·10^0.2857 = 927.0 R; P₃ = P₄ = 79.9 psia.\n4→5: T₅ = T₄ − T₃ + T₂ = 2,013.2 R; P₅ = P₄(T₅/T₄)^3.5 = 39.6 psia.\n5→6: T₆ = T₅(5/P₅)^0.2857 = 1,114.6 R; V₆ = √[2c_p(T₅ − T₆)] = 3,286 ft/s.\n(c) Ẇ_P = ṁ(V₆ − V₁)V₁ = 8,271 Btu/s; Q̇_in = ṁc_p(T₄ − T₃) = 36,793 Btu/s; η_P = 0.2248.\nBook: 480 R, 8.0 psia; 927 R, 80 psia; 2013 R, 39.7 psia; 1114 R; 3288 ft/s; 8276 Btu/s; 36,794 Btu/s; 22.5 %. Two routes: closed forms as above and conversion to SI with component energy balances (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Cengel Ví dụ 9–9 (tr.523–524)",
+   "en": "Cengel Example 9–9 (pp.523–524)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed solution Cengel Ex 9–9 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet lý tưởng (El-Sayed Ví dụ 4,2): bay 310 m/s ở 9150 m (32 kPa, 240 K), π_c = 12, T₀₄ = 1400 K, Q_R = 42 700 kJ/kg, c_p = 1,005 kJ/kg·K, vòi không nghẹt. Tỉ số nhiên liệu/không khí f = c_p(T₀₄ − T₀₃)/(Q_R − c_pT₀₄) là:",
+   "en": "Ideal turbojet (El-Sayed Example 4.2): flight 310 m/s at 9150 m (32 kPa, 240 K), π_c = 12, T₀₄ = 1400 K, Q_R = 42,700 kJ/kg, c_p = 1.005 kJ/kg·K, unchoked nozzle. The fuel-to-air ratio f = c_p(T₀₄ − T₀₃)/(Q_R − c_pT₀₄) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,0198",
+    "en": "0.0198"
+   },
+   {
+    "vi": "0,0222",
+    "en": "0.0222"
+   },
+   {
+    "vi": "0,0192",
+    "en": "0.0192"
+   },
+   {
+    "vi": "0,0271",
+    "en": "0.0271"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀₂ = 240 + 310²/(2·1005) = 287,8 K (nhiệt độ hãm ở cửa vào, chưa nén); T₀₃ = T₀₂·12^0,2857 = 585,4 K; f = 1,005·(1400 − 585,4)/(42 700 − 1,005·1400) = 0,0198 (sách 0,0198). Nhầm T₀₃ bằng nhiệt độ môi trường nén 12^0,2857 cho 0,0222; bỏ c_pT₀₄ ở mẫu số cho 0,0192; dùng T₀₂ thay T₀₃ cho 0,0271.",
+   "en": "T₀₂ = 240 + 310²/(2·1005) = 287.8 K (stagnation temperature at the inlet, not yet compressed); T₀₃ = T₀₂·12^0.2857 = 585.4 K; f = 1.005·(1400 − 585.4)/(42,700 − 1.005·1400) = 0.0198 (book 0.0198). Compressing the ambient 240 K by 12^0.2857 gives 0.0222; dropping c_pT₀₄ in the denominator gives 0.0192; using T₀₂ for T₀₃ gives 0.0271."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "El-Sayed Ví dụ 4,2 (tr.216–218)",
+   "en": "El-Sayed Example 4.2 (pp.216–218)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer El-Sayed Ex 4.2 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "El-Sayed Ví dụ 4,2. Máy bay Fiat G91Y dùng hai động cơ turbojet J85-GT-13A, mỗi động cơ T = 12,12 kN ở 9150 m (32 kPa, 240 K). π_c = 12, nhiệt độ vào tuabin 1400 K, vận tốc bay 310 m/s, các bộ phận lý tưởng, vòi không nghẹt, c_p = 1005 J/kg·K, Q_R = 42 700 kJ/kg. Tính f, vận tốc xả, lưu lượng khí, hiệu suất đẩy, nhiệt, tổng.",
+   "en": "El-Sayed Example 4.2. The Fiat G91Y has two J85-GT-13A turbojets, each T = 12.12 kN at 9150 m (32 kPa, 240 K). π_c = 12, turbine inlet 1400 K, flight speed 310 m/s, ideal components, unchoked nozzle, c_p = 1005 J/kg·K, Q_R = 42,700 kJ/kg. Determine f, the exhaust velocity, the air flow, the propulsive, thermal and overall efficiency."
+  },
+  "sol": {
+   "vi": "Khuếch tán: T₀₂ = 240 + 310²/(2·1005) = 287,8 K; P₀₂ = 32(T₀₂/240)^3,5 = 60,4 kPa. Máy nén: T₀₃ = 585,4 K; P₀₃ = 12P₀₂. f = 0,01983. Tuabin (công = công nén): T₀₅ = T₀₄ − (T₀₃ − T₀₂)/(1 + f) = 1.108,2 K; P₀₅ = 320,0 kPa. Vòi phun: T₇ = T₀₅(32/P₀₅)^0,2857 = 574,0 K; V_j = √[2c_p(T₀₅ − T₇)] = 1.036,2 m/s.\nLực đẩy riêng = (1 + f)V_j − V = 746,8 N·s/kg ⇒ ṁ_a = 12 120/746,8 = 16,23 kg/s. η_p = 2V/(V + V_j) = 0,4605 (biểu thức 1: 0,4626); η_th = 0,5911; η_o = η_p·η_th = 0,2735 (= T·V/(ṁ_fQ_R)).\nSO VỚI SÁCH: sách in V_j = 1044,34 m/s, ṁ_a = 16,06 kg/s, η_p = 45,97 %, η_th = 60,36 %, η_o = 27,75 %. Hai chỗ tính sai trong sách: T₀₃ = 287,8·2,035 = 585,7 K (sách in 587,5) và T₇ = 1106,1/1,9283 = 573,6 K (sách in 563,6); sửa hai chỗ này cho V_j ≈ 1036 m/s. Đáp án in vì vậy KHÔNG dùng làm đáp án đúng (ghi trong m02_notes.json). Hai đường: chuỗi đóng như trên và giải số từng bộ phận (verify_m02.py).",
+   "en": "Diffuser: T₀₂ = 240 + 310²/(2·1005) = 287.8 K; P₀₂ = 32(T₀₂/240)^3.5 = 60.4 kPa. Compressor: T₀₃ = 585.4 K; P₀₃ = 12P₀₂. f = 0.01983. Turbine (work = compressor work): T₀₅ = T₀₄ − (T₀₃ − T₀₂)/(1 + f) = 1,108.2 K; P₀₅ = 320.0 kPa. Nozzle: T₇ = T₀₅(32/P₀₅)^0.2857 = 574.0 K; V_j = √[2c_p(T₀₅ − T₇)] = 1,036.2 m/s.\nSpecific thrust = (1 + f)V_j − V = 746.8 N·s/kg ⇒ ṁ_a = 12,120/746.8 = 16.23 kg/s. η_p = 2V/(V + V_j) = 0.4605 (expression 1: 0.4626); η_th = 0.5911; η_o = η_p·η_th = 0.2735 (= T·V/(ṁ_fQ_R)).\nVERSUS THE BOOK: the book prints V_j = 1044.34 m/s, ṁ_a = 16.06 kg/s, η_p = 45.97 %, η_th = 60.36 %, η_o = 27.75 %. Two arithmetic slips in the book: T₀₃ = 287.8·2.035 = 585.7 K (the book prints 587.5) and T₇ = 1106.1/1.9283 = 573.6 K (the book prints 563.6); correcting them gives V_j ≈ 1036 m/s. The printed answers are therefore NOT used as the correct answers (recorded in m02_notes.json). Two routes: the closed chain above and a component-by-component numerical solution (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "El-Sayed Ví dụ 4,2 (tr.216–218)",
+   "en": "El-Sayed Example 4.2 (pp.216–218)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script; printed answers reproduce only with two book slips (notes)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Carnot không khí khép kín giữa 350 K và 1200 K; áp suất trước và sau nén đẳng nhiệt là 150 và 300 kPa; công thực mỗi chu trình 0,5 kJ; nhiệt dung riêng thay đổi. Áp suất cực đại (kPa) và nhiệt cấp vào (kJ) lần lượt là:",
+   "en": "A closed air Carnot cycle between 350 K and 1200 K; the pressures before and after the isothermal compression are 150 and 300 kPa; net work 0.5 kJ per cycle; variable specific heats. The maximum pressure (kPa) and the heat added (kJ) are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "30.013 kPa và 0,706 kJ",
+    "en": "30,013 kPa and 0.706 kJ"
+   },
+   {
+    "vi": "22.388 kPa và 0,706 kJ",
+    "en": "22,388 kPa and 0.706 kJ"
+   },
+   {
+    "vi": "30.013 kPa và 0,500 kJ",
+    "en": "30,013 kPa and 0.500 kJ"
+   },
+   {
+    "vi": "60.025 kPa và 0,206 kJ",
+    "en": "60,025 kPa and 0.206 kJ"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đẳng entropi 350 → 1200 K: P_max = P₂·P_r(1200)/P_r(350) = 300·238,0/2,379 = 30.013 kPa (sách 30 013). Δs = R ln(300/150) = 0,1989 kJ/kg·K; q_in = T_HΔs = 238,7 kJ/kg; w_net = (T_H − T_L)Δs = 169,1 ⇒ m = 0,5/169,1 = 0,00296 kg; Q_in = m q_in = 0,706 kJ. Giá trị 22.388 kPa dùng k = 1,4 thay vì bảng; 0,5 kJ là công thực; 0,206 kJ là nhiệt thải.",
+   "en": "Isentropic 350 → 1200 K: P_max = P₂·P_r(1200)/P_r(350) = 300·238.0/2.379 = 30,013 kPa (book 30,013). Δs = R ln(300/150) = 0.1989 kJ/kg·K; q_in = T_HΔs = 238.7 kJ/kg; w_net = (T_H − T_L)Δs = 169.1 ⇒ m = 0.5/169.1 = 0.00296 kg; Q_in = m q_in = 0.706 kJ. The value 22,388 kPa uses k = 1.4 instead of the table; 0.5 kJ is the net work; 0.206 kJ is the rejected heat."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–23",
+   "en": "Cengel Problem 9–23"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–23 + script (slide tr.11–13)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình không khí khép kín: 1-2 nén đẳng entropi 100 kPa, 27 °C → 1 MPa; 2-3 cấp nhiệt đẳng áp 2800 kJ/kg; 3-4 thải nhiệt đẳng tích về 100 kPa; 4-1 thải nhiệt đẳng áp về trạng thái đầu. Nhiệt dung riêng hằng (c_p = 1,005; c_v = 0,718). Nhiệt độ cực đại và hiệu suất nhiệt là:",
+   "en": "A closed air cycle: 1-2 isentropic compression 100 kPa, 27 °C → 1 MPa; 2-3 constant-pressure heat addition of 2800 kJ/kg; 3-4 constant-volume heat rejection to 100 kPa; 4-1 constant-pressure heat rejection to the initial state. Constant specific heats (c_p = 1.005; c_v = 0.718). The maximum temperature and the thermal efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "3.365 K và 21,0 %",
+    "en": "3,365 K and 21.0 %"
+   },
+   {
+    "vi": "3.086 K và 21,0 %",
+    "en": "3,086 K and 21.0 %"
+   },
+   {
+    "vi": "3.365 K và 48,2 %",
+    "en": "3,365 K and 48.2 %"
+   },
+   {
+    "vi": "4.479 K và 21,0 %",
+    "en": "4,479 K and 21.0 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂ = 300·10^0,2857 = 579,2 K; T₃ = T₂ + q/c_p = 3.365 K (sách 3360 K). T₄ = T₃·(P₄/P₃) = 336,5 K (v = const). q_out = c_v(T₃ − T₄) + c_p(T₄ − T₁) = 2.211,4 kJ/kg ⇒ η = 1 − 2.211,4/2800 = 0,2102 (sách 21,0 %). Bỏ bước nén cho 3.086 K; công thức Brayton 1 − 1/r_p^0,2857 cho 48,2 % không áp dụng vì chu trình này không phải Brayton; dùng c_v ở quá trình đẳng áp cho 4.479 K.",
+   "en": "T₂ = 300·10^0.2857 = 579.2 K; T₃ = T₂ + q/c_p = 3,365 K (book 3360 K). T₄ = T₃·(P₄/P₃) = 336.5 K (v = const). q_out = c_v(T₃ − T₄) + c_p(T₄ − T₁) = 2,211.4 kJ/kg ⇒ η = 1 − 2,211.4/2800 = 0.2102 (book 21.0 %). Skipping the compression gives 3,086 K; the Brayton formula 1 − 1/r_p^0.2857 gives 48.2 % but this cycle is not a Brayton cycle; using c_v for the constant-pressure process gives 4,479 K."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình khí không chuẩn",
+   "en": "Non-standard air-standard cycles"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–16",
+   "en": "Cengel Problem 9–16"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–16 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình không khí kín, 0,004 kg: 1-2 nén đẳng entropi 100 kPa, 27 °C → 1 MPa; 2-3 cấp nhiệt đẳng áp 2,76 kJ; 3-1 thải nhiệt theo đường thẳng P = c₁v + c₂ về trạng thái đầu. Nhiệt dung riêng hằng. Nhiệt thải (kJ) và hiệu suất là:",
+   "en": "A closed air cycle, 0.004 kg: 1-2 isentropic compression 100 kPa, 27 °C → 1 MPa; 2-3 constant-pressure heat addition of 2.76 kJ; 3-1 heat rejection along the straight line P = c₁v + c₂ back to the initial state. Constant specific heats. The heat rejected (kJ) and the efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "1,679 kJ và 39,2 %",
+    "en": "1.679 kJ and 39.2 %"
+   },
+   {
+    "vi": "0,584 kJ và 78,9 %",
+    "en": "0.584 kJ and 78.9 %"
+   },
+   {
+    "vi": "1,679 kJ và 48,2 %",
+    "en": "1.679 kJ and 48.2 %"
+   },
+   {
+    "vi": "1,081 kJ và 60,8 %",
+    "en": "1.081 kJ and 60.8 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₃ = T₂ + q/c_p = 1.265,8 K; v₁ = 0,861, v₃ = 0,3633 m³/kg. Quá trình 3→1 là đường thẳng trên P–v: w₃₁ = (P₃ + P₁)/2·(v₁ − v₃) = 273,7 kJ/kg; q₃₁ = c_v(T₁ − T₃) + w₃₁ = −419,7 kJ/kg ⇒ Q_out = 1,679 kJ (sách 1,679); w_net = w₁₂ + w₂₃ + w₃₁ = 270,3 kJ/kg ⇒ η = 0,392 (sách 39,2 %). Quên hệ số 1/2 của hình thang cho 0,584 kJ; 1,081 kJ là công thực.",
+   "en": "T₃ = T₂ + q/c_p = 1,265.8 K; v₁ = 0.861, v₃ = 0.3633 m³/kg. Process 3→1 is a straight line on P–v: w₃₁ = (P₃ + P₁)/2·(v₁ − v₃) = 273.7 kJ/kg; q₃₁ = c_v(T₁ − T₃) + w₃₁ = −419.7 kJ/kg ⇒ Q_out = 1.679 kJ (book 1.679); w_net = w₁₂ + w₂₃ + w₃₁ = 270.3 kJ/kg ⇒ η = 0.392 (book 39.2 %). Forgetting the factor 1/2 of the trapezoid gives 0.584 kJ; 1.081 kJ is the net work."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình khí không chuẩn",
+   "en": "Non-standard air-standard cycles"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–19",
+   "en": "Cengel Problem 9–19"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–19 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Otto lý tưởng r = 8; không khí 95 kPa, 27 °C; nhiệt cấp đẳng tích 750 kJ/kg; nhiệt dung riêng thay đổi. Áp suất cực đại (kPa) và công thực (kJ/kg) lần lượt là:",
+   "en": "An ideal Otto cycle, r = 8; air at 95 kPa and 27 °C; 750 kJ/kg of heat added at constant volume; variable specific heats. The maximum pressure (kPa) and the net work (kJ/kg) are, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "3.898 kPa và 392,3 kJ/kg",
+    "en": "3,898 kPa and 392.3 kJ/kg"
+   },
+   {
+    "vi": "1.705 kPa và 392,3 kJ/kg",
+    "en": "1,705 kPa and 392.3 kJ/kg"
+   },
+   {
+    "vi": "3.898 kPa và 357,7 kJ/kg",
+    "en": "3,898 kPa and 357.7 kJ/kg"
+   },
+   {
+    "vi": "487 kPa và 423,5 kJ/kg",
+    "en": "487 kPa and 423.5 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "v_r2 = v_r1/8 ⇒ T₂ = 673,1 K, u₂ = 491,2; u₃ = u₂ + 750 = 1.241,2 ⇒ T₃ = 1.539 K (sách 1539 K); P₃ = P₁·r·T₃/T₁ = 95·8·1.539/300 = 3.898 kPa (sách 3898). T₄ = 775 K, q_out = u₄ − u₁ = 357,7 ⇒ w_net = 392,3 kJ/kg (sách 392,4). 1.705 kPa là P₂ (chưa cấp nhiệt); 357,7 là q_out; cặp có 487 kPa lấy P₃/r và dùng η khí lạnh nhân q_in.",
+   "en": "v_r2 = v_r1/8 ⇒ T₂ = 673.1 K, u₂ = 491.2; u₃ = u₂ + 750 = 1,241.2 ⇒ T₃ = 1,539 K (book 1539 K); P₃ = P₁·r·T₃/T₁ = 95·8·1,539/300 = 3,898 kPa (book 3898). T₄ = 775 K, q_out = u₄ − u₁ = 357.7 ⇒ w_net = 392.3 kJ/kg (book 392.4). 1,705 kPa is P₂ (before heat addition); 357.7 is q_out; the pair with 487 kPa takes P₃/r and multiplies q_in by the cold-air η."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–34",
+   "en": "Cengel Problem 9–34"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–34 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ Diesel 6 xi-lanh, 4 kỳ, 4,5 L, r = 17; không khí 95 kPa, 55 °C; nhiên liệu Q = 42 500 kJ/kg, tỉ lệ không khí–nhiên liệu 24, hiệu suất cháy 98 %; c_p = 1,110, c_v = 0,823 kJ/kg·K (k = 1,349) tại 850 K. Nhiệt độ cực đại là (đáp án in của sách 2383 K):",
+   "en": "A six-cylinder, four-stroke, 4.5-L diesel engine, r = 17; air at 95 kPa and 55 °C; fuel Q = 42,500 kJ/kg, air–fuel ratio 24, combustion efficiency 98 %; c_p = 1.110, c_v = 0.823 kJ/kg·K (k = 1.349) at 850 K. The maximum temperature is (the book prints 2383 K):"
+  },
+  "opts": [
+   {
+    "vi": "2.445 K",
+    "en": "2,445 K"
+   },
+   {
+    "vi": "2.383 K",
+    "en": "2,383 K"
+   },
+   {
+    "vi": "2.582 K",
+    "en": "2,582 K"
+   },
+   {
+    "vi": "2.172 K",
+    "en": "2,172 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "q_in = ηc·HV/AF = 0,98·42 500/24 = 1.735,4 kJ/kg (không phụ thuộc khối lượng). T₂ = 328·17^0,349 = 881,7 K; T₃ = T₂ + q_in/c_p = 2.445 K; r_c = 2,77. Đáp án in 2383 K, r_c = 2,7, 4,36 kJ, 0,543, 969 kPa, 72,7 kW, 159 g/kWh chỉ khớp khi AF = 25 (T₃ = 2.383 K): đề in 24, đáp án in tính với 25 (lỗi sách, ghi trong ghi chú). Dùng k = 1,4 cho T₂ cho 2.582 K; 2.172 là °C.",
+   "en": "q_in = ηc·HV/AF = 0.98·42,500/24 = 1,735.4 kJ/kg (independent of the mass). T₂ = 328·17^0.349 = 881.7 K; T₃ = T₂ + q_in/c_p = 2,445 K; r_c = 2.77. The printed answers 2383 K, r_c = 2.7, 4.36 kJ, 0.543, 969 kPa, 72.7 kW, 159 g/kWh are reproduced only with AF = 25 (T₃ = 2,383 K): the statement prints 24 but the answers were computed with 25 (book error, see the notes). Using k = 1.4 for T₂ gives 2,582 K; 2,172 is in °C."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–59",
+   "en": "Cengel Problem 9–59"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script; printed answers reproduce only with AF = 25 (notes)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel 9–59. Động cơ diesel 6 xi-lanh, 4 kỳ, 4,5 L, chu trình Diesel lý tưởng, r = 17. Không khí 95 kPa, 55 °C đầu nén, 2000 vòng/phút. Nhiên liệu Q_HV = 42 500 kJ/kg, tỉ lệ không khí–nhiên liệu 24, hiệu suất cháy 98 %. Dùng nhiệt dung riêng hằng tại 850 K (c_p = 1,110; c_v = 0,823; k = 1,349). Tính (a) T_max và r_c, (b) công thực mỗi chu trình và hiệu suất, (c) MEP, (d) công suất, (e) mức tiêu hao nhiên liệu riêng (g/kWh).",
+   "en": "Cengel 9–59. Six-cylinder, four-stroke, 4.5-L diesel engine on the ideal diesel cycle, r = 17. Air at 95 kPa, 55 °C at the start of compression, 2000 rpm. Fuel Q_HV = 42,500 kJ/kg, air–fuel ratio 24, combustion efficiency 98 %. Constant specific heats at 850 K (c_p = 1.110; c_v = 0.823; k = 1.349). Determine (a) T_max and r_c, (b) the net work per cycle and the efficiency, (c) the MEP, (d) the power, (e) the specific fuel consumption (g/kWh)."
+  },
+  "sol": {
+   "vi": "Giả thiết: khí-chuẩn, nhiệt dung riêng hằng; R = 0,287; 55 °C = 328 K; V_d = 4,5/6 = 0,75 L mỗi xi-lanh.\nV₁ = V_d·r/(r − 1) = 0,7969 L ⇒ m = P₁V₁/(RT₁) = 0,8042 g/xi-lanh. q_in = ηc·Q_HV/AF = 1.735,4 kJ/kg (AF = 24).\nT₂ = T₁r^(k−1) = 881,7 K; T₃ = T₂ + q_in/c_p = 2.445 K; r_c = T₃/T₂ = 2,773. T₄ = T₃(r_c/r)^(k−1) = 1.299 K; q_out = c_v(T₄ − T₁) = 798,8; w_net = 936,6 kJ/kg; η = 0,5397.\n(b) W_cycle (6 xi-lanh) = 6·m·w_net = 4,519 kJ. (c) MEP = W/V_d(xi-lanh) = 1.004 kPa. (d) 4 kỳ: một chu trình mỗi 2 vòng ⇒ P = W_cycle·N/2 = 75,3 kW. (e) sfc = ṁ_f/P = 160,2 g/kWh.\nSAI LỆCH NGUỒN: đề in AF = 24 nhưng các đáp án in (2383 K; 2,7; 4,36 kJ; 0,543; 969 kPa; 72,7 kW; 159 g/kWh) chỉ khớp khi AF = 25: T₃ = 2.383 K, r_c = 2,70, W = 4,36 kJ, η = 0,543, MEP = 969 kPa, P = 72,7 kW, sfc = 159 g/kWh. Ở đây trả lời theo đề (AF = 24) và nêu cả hai. Hai đường: công thức đóng và tích phân ∮P dV số (verify_m02.py).",
+   "en": "Assumptions: air-standard, constant specific heats; R = 0.287; 55 °C = 328 K; V_d = 4.5/6 = 0.75 L per cylinder.\nV₁ = V_d·r/(r − 1) = 0.7969 L ⇒ m = P₁V₁/(RT₁) = 0.8042 g per cylinder. q_in = ηc·Q_HV/AF = 1,735.4 kJ/kg (AF = 24).\nT₂ = T₁r^(k−1) = 881.7 K; T₃ = T₂ + q_in/c_p = 2,445 K; r_c = T₃/T₂ = 2.773. T₄ = T₃(r_c/r)^(k−1) = 1,299 K; q_out = c_v(T₄ − T₁) = 798.8; w_net = 936.6 kJ/kg; η = 0.5397.\n(b) W_cycle (6 cylinders) = 6·m·w_net = 4.519 kJ. (c) MEP = W/V_d(cylinder) = 1,004 kPa. (d) Four-stroke: one cycle per 2 revolutions ⇒ P = W_cycle·N/2 = 75.3 kW. (e) sfc = ṁ_f/P = 160.2 g/kWh.\nSOURCE DISCREPANCY: the statement prints AF = 24 but the printed answers (2383 K; 2.7; 4.36 kJ; 0.543; 969 kPa; 72.7 kW; 159 g/kWh) are reproduced only with AF = 25: T₃ = 2,383 K, r_c = 2.70, W = 4.36 kJ, η = 0.543, MEP = 969 kPa, P = 72.7 kW, sfc = 159 g/kWh. Here we answer the statement as printed (AF = 24) and show both. Two routes: closed forms and numerical ∮P dV integration (verify_m02.py)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–59",
+   "en": "Cengel Problem 9–59"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script; printed answers reproduce only with AF = 25 (notes)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản: r_p = 12, T₁ = 300 K, T₃ = 1000 K, không khí c_p = 1,005, k = 1,4. Lưu lượng khí cần cho công suất 70 MW khi máy nén và tuabin có η = 100 % và khi cả hai có η = 85 % lần lượt là (kg/s):",
+   "en": "A simple Brayton cycle: r_p = 12, T₁ = 300 K, T₃ = 1000 K, air c_p = 1.005, k = 1.4. The air flow required for 70 MW when the compressor and turbine have η = 100 % and when both have η = 85 % is, respectively (kg/s):"
+  },
+  "opts": [
+   {
+    "vi": "351 và 1.037",
+    "en": "351 and 1,037"
+   },
+   {
+    "vi": "1.037 và 351",
+    "en": "1,037 and 351"
+   },
+   {
+    "vi": "137 và 161",
+    "en": "137 and 161"
+   },
+   {
+    "vi": "351 và 414",
+    "en": "351 and 414"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "x = 12^0,2857 = 2,0339; lý tưởng: w_comp = c_pT₁(x − 1) = 311,7, w_turb = c_pT₃(1 − 1/x) = 510,9, w_net = 199,2 kJ/kg ⇒ ṁ = 70 000/199,2 = 351 kg/s (sách 352). Với η = 85 %: w_comp = 366,7, w_turb = 434,3, w_net = 67,5 ⇒ ṁ = 1.037 kg/s (sách 1037): công thực giảm gần 3 lần nên lưu lượng gấp 3. Chia cho w_turb thay w_net cho 137 và 161; nhân η sau cùng cho 414.",
+   "en": "x = 12^0.2857 = 2.0339; ideal: w_comp = c_pT₁(x − 1) = 311.7, w_turb = c_pT₃(1 − 1/x) = 510.9, w_net = 199.2 kJ/kg ⇒ ṁ = 70,000/199.2 = 351 kg/s (book 352). With η = 85 %: w_comp = 366.7, w_turb = 434.3, w_net = 67.5 ⇒ ṁ = 1,037 kg/s (book 1037): the net work falls almost threefold so the flow triples. Dividing by w_turb instead of w_net gives 137 and 161; applying η to w_net only gives 414."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–76",
+   "en": "Cengel Problem 9–76"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–76 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhà máy tuabin khí Brayton đơn giản giữa 100 và 1200 kPa; không khí vào máy nén ở 30 °C, 150 m³/phút; ra tuabin ở 500 °C; η_c = 82 %, η_t = 88 %; nhiệt dung riêng thay đổi. Công suất thực (kW), tỉ số công hồi và hiệu suất là:",
+   "en": "A simple Brayton gas-turbine plant between 100 and 1200 kPa; air enters the compressor at 30 °C at 150 m³/min and leaves the turbine at 500 °C; η_c = 82 %, η_t = 88 %; variable specific heats. The net power (kW), back work ratio and efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "660 kW; 0,625; 0,319",
+    "en": "660 kW; 0.625; 0.319"
+   },
+   {
+    "vi": "561 kW; 0,625; 0,319",
+    "en": "561 kW; 0.625; 0.319"
+   },
+   {
+    "vi": "660 kW; 0,375; 0,319",
+    "en": "660 kW; 0.375; 0.319"
+   },
+   {
+    "vi": "660 kW; 0,625; 0,508",
+    "en": "660 kW; 0.625; 0.508"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ṁ = ρ·V̇ = 100/(0,287·303)·150/60 = 2,875 kg/s. Máy nén: T₂s = 609,3 K ⇒ w_comp = (h₂s − h₁)/0,82 = 382,4 kJ/kg. Tuabin: h₄a = h(773,15 K) = 792,5; T₃ giải từ η_t = (h₃ − h₄a)/(h₃ − h₄s) ⇒ T₃ = 1.307 K, w_turb = 611,9. w_net = 229,5 ⇒ Ẇ = 660 kW (sách 659); r_bw = 0,625 (0,625); η = w_net/(h₃ − h₂a) = 0,319 (0,319). Giá trị 561 kW là công suất nhân nhầm 0,85; 0,375 là 1 − r_bw; 0,508 là hiệu suất lý tưởng của r_p = 12.",
+   "en": "ṁ = ρ·V̇ = 100/(0.287·303)·150/60 = 2.875 kg/s. Compressor: T₂s = 609.3 K ⇒ w_comp = (h₂s − h₁)/0.82 = 382.4 kJ/kg. Turbine: h₄a = h(773.15 K) = 792.5; T₃ follows from η_t = (h₃ − h₄a)/(h₃ − h₄s) ⇒ T₃ = 1,307 K, w_turb = 611.9. w_net = 229.5 ⇒ Ẇ = 660 kW (book 659); r_bw = 0.625 (0.625); η = w_net/(h₃ − h₂a) = 0.319 (0.319). 561 kW wrongly multiplies the power by 0.85; 0.375 is 1 − r_bw; 0.508 is the ideal efficiency at r_p = 12."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Brayton thực: hiệu suất máy nén và tuabin",
+   "en": "Real Brayton cycle: compressor and turbine efficiency"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–84",
+   "en": "Cengel Problem 9–84"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–84 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton có hồi nhiệt: r_p = 7, T_min = 310 K, T_max = 1150 K, η_c = 75 %, η_t = 82 %, ε = 65 %. Đề không nêu giả thiết nhiệt dung riêng; đáp án in (783 K; 108,1 kJ/kg; 22,5 %) khớp khi dùng bảng A-17. Nhiệt độ ra tuabin và hiệu suất theo bảng A-17 là:",
+   "en": "A Brayton cycle with regeneration: r_p = 7, T_min = 310 K, T_max = 1150 K, η_c = 75 %, η_t = 82 %, ε = 65 %. The statement names no specific-heat assumption; the printed answers (783 K; 108.1 kJ/kg; 22.5 %) match Table A-17. The turbine-exit temperature and the efficiency from Table A-17 are:"
+  },
+  "opts": [
+   {
+    "vi": "783 K và 22,5 %",
+    "en": "783 K and 22.5 %"
+   },
+   {
+    "vi": "748 K và 21,2 %",
+    "en": "748 K and 21.2 %"
+   },
+   {
+    "vi": "783 K và 18,0 %",
+    "en": "783 K and 18.0 %"
+   },
+   {
+    "vi": "0 K và 22,5 %",
+    "en": "0 K and 22.5 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂s = 537 K ⇒ w_comp = (h₂s − h₁)/0,75 = 308,0; T₄s = 699 K ⇒ w_turb = 0,82(h₃ − h₄s) = 416,1; T₄ = 783 K (sách 783); h₅ = h₂ + 0,65(h₄ − h₂) = 738,4 ⇒ q_in = h₃ − h₅ = 480,8; w_net = 108,1 (sách 108,1) ⇒ η = 22,5 %. Cp hằng 1,005 cho T₄ = 748 K, η = 21,2 % (lệch 1 điểm %); bỏ hồi nhiệt trong q_in cho 18,0 %.",
+   "en": "T₂s = 537 K ⇒ w_comp = (h₂s − h₁)/0.75 = 308.0; T₄s = 699 K ⇒ w_turb = 0.82(h₃ − h₄s) = 416.1; T₄ = 783 K (book 783); h₅ = h₂ + 0.65(h₄ − h₂) = 738.4 ⇒ q_in = h₃ − h₅ = 480.8; w_net = 108.1 (book 108.1) ⇒ η = 22.5 %. Constant c_p = 1.005 gives T₄ = 748 K, η = 21.2 % (one percentage point off); leaving out the regenerator in q_in gives 18.0 %."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–96",
+   "en": "Cengel Problem 9–96"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–96 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy nén của động cơ tuabin khí có hồi nhiệt nén không khí từ 300 K, 100 kPa lên 800 kPa và 580 K (thực); ε = 72 %; không khí vào tuabin ở 1200 K; η_t = 86 %; nhiệt dung riêng thay đổi. Nhiệt trao đổi trong bộ hồi nhiệt (kJ/kg) và hiệu suất nhiệt là:",
+   "en": "The compressor of a regenerative gas-turbine engine compresses air from 300 K, 100 kPa to 800 kPa and 580 K (actual); ε = 72 %; the turbine inlet is 1200 K; η_t = 86 %; variable specific heats. The heat transferred in the regenerator (kJ/kg) and the thermal efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "152,5 kJ/kg và 36,0 %",
+    "en": "152.5 kJ/kg and 36.0 %"
+   },
+   {
+    "vi": "211,8 kJ/kg và 36,0 %",
+    "en": "211.8 kJ/kg and 36.0 %"
+   },
+   {
+    "vi": "152,5 kJ/kg và 28,1 %",
+    "en": "152.5 kJ/kg and 28.1 %"
+   },
+   {
+    "vi": "59,3 kJ/kg và 36,0 %",
+    "en": "59.3 kJ/kg and 36.0 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h(580 K) = 586,0; w_turb = 0,86(h₃ − h₄s) = 479,9 ⇒ h₄ = 797,9; q_regen = ε(h₄ − h₂) = 152,5 kJ/kg (sách 152,5); h₅ = 738,6; q_in = h₃ − h₅ = 539,2; w_net = 194,1 ⇒ η = 0,360 (sách 36,0 %). 211,8 là q_regen,max (ε = 1); bỏ hồi nhiệt trong q_in cho 28,1 %; dùng (1 − ε) thay ε cho 59,3.",
+   "en": "h₂ = h(580 K) = 586.0; w_turb = 0.86(h₃ − h₄s) = 479.9 ⇒ h₄ = 797.9; q_regen = ε(h₄ − h₂) = 152.5 kJ/kg (book 152.5); h₅ = 738.6; q_in = h₃ − h₅ = 539.2; w_net = 194.1 ⇒ η = 0.360 (book 36.0 %). 211.8 is q_regen,max (ε = 1); leaving out the regenerator in q_in gives 28.1 %; using (1 − ε) instead of ε gives 59.3."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt (regeneration)",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–98",
+   "en": "Cengel Problem 9–98"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–98 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhà máy tuabin khí hai cấp nén và hai cấp giãn, tỉ số áp tổng 9, không khí vào mỗi cấp nén ở 300 K và mỗi cấp tuabin ở 1200 K, nhiệt dung riêng thay đổi. Lưu lượng khí tối thiểu cho công suất thực 110 MW (kg/s) là (chia đều tỉ số áp cho các cấp):",
+   "en": "A gas-turbine plant with two compression and two expansion stages, overall pressure ratio 9, air entering each compressor stage at 300 K and each turbine stage at 1200 K, variable specific heats. The minimum air flow for a net power of 110 MW (kg/s) is (equal pressure ratio in every stage):"
+  },
+  "opts": [
+   {
+    "vi": "250 kg/s",
+    "en": "250 kg/s"
+   },
+   {
+    "vi": "166 kg/s",
+    "en": "166 kg/s"
+   },
+   {
+    "vi": "345 kg/s",
+    "en": "345 kg/s"
+   },
+   {
+    "vi": "125 kg/s",
+    "en": "125 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi cấp √9 = 3: T₂ = 410,1 K, h₂ = 411,3; T₇ = 912,0 K, h₇ = 946,4. w_comp = 2(h₂ − h₁) = 222,1; w_turb = 2(h₆ − h₇) = 662,9; w_net = 440,7 kJ/kg ⇒ ṁ = 110 000/440,7 = 250 kg/s (sách 250). Chia cho w_turb: 166; chu trình một cấp (w_net = 318,8) cho 345: hai cấp có công thực lớn hơn nên cần ít khí hơn. Hồi nhiệt không đổi công thực.",
+   "en": "Each stage √9 = 3: T₂ = 410.1 K, h₂ = 411.3; T₇ = 912.0 K, h₇ = 946.4. w_comp = 2(h₂ − h₁) = 222.1; w_turb = 2(h₆ − h₇) = 662.9; w_net = 440.7 kJ/kg ⇒ ṁ = 110,000/440.7 = 250 kg/s (book 250). Dividing by w_turb gives 166; the single-stage cycle (w_net = 318.8) gives 345: the two-stage cycle has more net work and needs less air. Regeneration does not change the net work."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–110",
+   "en": "Cengel Problem 9–110"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–110 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Động cơ tuabin khí hồi nhiệt, hai cấp nén và hai cấp giãn, tỉ số áp mỗi cấp 3,5; không khí vào mỗi cấp nén 300 K và mỗi cấp tuabin 1200 K; η_c = 78 %, η_t = 86 %, ε = 72 %; c_p = 1,005, k = 1,4. Tỉ số công hồi và hiệu suất là:",
+   "en": "A regenerative gas-turbine engine with two compression and two expansion stages, pressure ratio 3.5 per stage; air enters each compressor stage at 300 K and each turbine stage at 1200 K; η_c = 78 %, η_t = 86 %, ε = 72 %; c_p = 1.005, k = 1.4. The back work ratio and the efficiency are:"
+  },
+  "opts": [
+   {
+    "vi": "0,533 và 0,392",
+    "en": "0.533 and 0.392"
+   },
+   {
+    "vi": "0,533 và 0,277",
+    "en": "0.533 and 0.277"
+   },
+   {
+    "vi": "0,358 và 0,392",
+    "en": "0.358 and 0.392"
+   },
+   {
+    "vi": "0,533 và 0,676",
+    "en": "0.533 and 0.676"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "x = 3,5^0,2857 = 1,4304; w_comp = 2c_pT₁(x − 1)/0,78 = 332,7; w_turb = 2·0,86·c_pT₃(1 − 1/x) = 624,1 ⇒ r_bw = 0,533 (sách 53,2 %). T₂ = 465,5 K, T₄ = 889,5 K; T₅ = T₂ + 0,72(T₄ − T₂) = 770,8 K; q_in = c_p(T₃ − T₅) + c_p(T₃ − T₄) = 743,4; w_net = 291,4 ⇒ η = 0,392 (sách 39,2 %). Không hồi nhiệt η = 0,277; bỏ η_c, η_t: r_bw = 0,358; quên nhiệt hâm nóng trong q_in cho η = 0,676.",
+   "en": "x = 3.5^0.2857 = 1.4304; w_comp = 2c_pT₁(x − 1)/0.78 = 332.7; w_turb = 2·0.86·c_pT₃(1 − 1/x) = 624.1 ⇒ r_bw = 0.533 (book 53.2 %). T₂ = 465.5 K, T₄ = 889.5 K; T₅ = T₂ + 0.72(T₄ − T₂) = 770.8 K; q_in = c_p(T₃ − T₅) + c_p(T₃ − T₄) = 743.4; w_net = 291.4 ⇒ η = 0.392 (book 39.2 %). Without regeneration η = 0.277; ignoring η_c, η_t: r_bw = 0.358; forgetting the reheat heat in q_in gives η = 0.676."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Làm mát trung gian và hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–150",
+   "en": "Cengel Problem 9–150"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–150 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Turbojet đứng yên trên mặt đất (bị phanh giữ): r_p = 12, không khí 27 °C, 95 kPa, 10 kg/s; nhiên liệu 42 700 kJ/kg cháy hết với lưu lượng 0,2 kg/s; bỏ qua bộ khuếch tán, hiệu suất các bộ phận và phần tăng khối lượng ở cửa ra. Đề không nêu nhiệt dung riêng: dùng bảng A-17. Lực phanh cần giữ máy bay là:",
+   "en": "A turbojet held stationary on the ground by its brakes: r_p = 12, air at 27 °C, 95 kPa, 10 kg/s; fuel of 42,700 kJ/kg burnt completely at 0.2 kg/s; neglect the diffuser, component inefficiencies and the small mass increase at the exit. The statement names no specific-heat assumption: use Table A-17. The brake force needed is:"
+  },
+  "opts": [
+   {
+    "vi": "9.088 N",
+    "en": "9,088 N"
+   },
+   {
+    "vi": "9.318 N",
+    "en": "9,318 N"
+   },
+   {
+    "vi": "9.270 N",
+    "en": "9,270 N"
+   },
+   {
+    "vi": "9.397 N",
+    "en": "9,397 N"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "q = ṁ_fQ_R/ṁ = 854,0 kJ/kg. T₂ = 603 K (P_r); T₃ từ h₃ = h₂ + q ⇒ 1.358 K; công tuabin = công nén ⇒ h₄ = h₃ − (h₂ − h₁) ⇒ T₄ = 1.094 K, P₄ = 471 kPa; vòi phun giãn tới 95 kPa: T₅ = 726 K, V = √[2(h₄ − h₅)] = 909 m/s; F = ṁV = 9.088 N (sách 9089). Cp hằng 1,005 cho 9.318 N (cao hơn 2,5 %); thêm ṁ_f vào lưu lượng cho 9.270 N.",
+   "en": "q = ṁ_fQ_R/ṁ = 854.0 kJ/kg. T₂ = 603 K (P_r); T₃ from h₃ = h₂ + q ⇒ 1,358 K; turbine work = compressor work ⇒ h₄ = h₃ − (h₂ − h₁) ⇒ T₄ = 1,094 K, P₄ = 471 kPa; the nozzle expands to 95 kPa: T₅ = 726 K, V = √[2(h₄ − h₅)] = 909 m/s; F = ṁV = 9,088 N (book 9089). Constant c_p = 1.005 gives 9,318 N (2.5 % higher); adding ṁ_f to the flow gives 9,270 N."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–119",
+   "en": "Cengel Problem 9–119"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–119 (A-17 reproduces it) + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình Brayton đơn giản, T_min = 300 K, T_max = 1300 K, nhiệt dung riêng thay đổi. Tăng gấp đôi tỉ số áp từ 6 lên 12 (giữ nguyên hai nhiệt độ). Công thực riêng và hiệu suất thay đổi lần lượt là:",
+   "en": "A simple Brayton cycle, T_min = 300 K, T_max = 1300 K, variable specific heats. The pressure ratio is doubled from 6 to 12 (both temperatures unchanged). The net work per kg and the efficiency change by, respectively:"
+  },
+  "opts": [
+   {
+    "vi": "công +41,4 kJ/kg, hiệu suất +10,6 điểm %",
+    "en": "work +41.4 kJ/kg, efficiency +10.6 percentage points"
+   },
+   {
+    "vi": "công −41,4 kJ/kg, hiệu suất +10,6 điểm %",
+    "en": "work −41.4 kJ/kg, efficiency +10.6 percentage points"
+   },
+   {
+    "vi": "công +41,4 kJ/kg, hiệu suất −10,6 điểm %",
+    "en": "work +41.4 kJ/kg, efficiency −10.6 percentage points"
+   },
+   {
+    "vi": "công +82,9 kJ/kg, hiệu suất +21,1 điểm %",
+    "en": "work +82.9 kJ/kg, efficiency +21.1 percentage points"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r_p = 6: w_net = 339,5 kJ/kg, η = 0,380; r_p = 12: w_net = 381,0 kJ/kg, η = 0,485. Hiệu: Δw = +41,4 kJ/kg (sách 41,5), Δη = +10,6 điểm % (sách 10,6). Với T_max/T_min = 4,33 (khí lạnh) r_p tối ưu cho công là 4,33^1,75 ≈ 13, nên cả 6 và 12 đều nằm dưới điểm tối ưu: công và hiệu suất cùng tăng. Công giảm hoặc hiệu suất giảm chỉ xảy ra khi vượt r_p,opt; gấp đôi các số chênh là nhầm nhân hai.",
+   "en": "r_p = 6: w_net = 339.5 kJ/kg, η = 0.380; r_p = 12: w_net = 381.0 kJ/kg, η = 0.485. Differences: Δw = +41.4 kJ/kg (book 41.5), Δη = +10.6 percentage points (book 10.6). With T_max/T_min = 4.33 (cold air) the work-optimal r_p is 4.33^1.75 ≈ 13, so both 6 and 12 lie below the optimum: work and efficiency both rise. A fall in work or efficiency would occur only beyond r_p,opt; doubling the differences is a factor-two slip."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Brayton đơn giản",
+   "en": "The simple Brayton cycle"
+  },
+  "src": {
+   "vi": "Cengel Bài 9–147",
+   "en": "Cengel Problem 9–147"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer Cengel 9–147 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.3: dù ở chế độ đẩy nào, động cơ tuabin khí luôn có ba giai đoạn hoạt động theo thứ tự:",
+   "en": "Slide Ch.2 p.3: whatever the propulsion mode, a gas-turbine engine always has three operating phases in the order:"
+  },
+  "opts": [
+   {
+    "vi": "nén, cháy, giãn nở",
+    "en": "compression, combustion, expansion"
+   },
+   {
+    "vi": "cháy, nén, giãn nở",
+    "en": "combustion, compression, expansion"
+   },
+   {
+    "vi": "giãn nở, nén, cháy",
+    "en": "expansion, compression, combustion"
+   },
+   {
+    "vi": "nén, giãn nở, cháy",
+    "en": "compression, expansion, combustion"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Không khí được nén, nhận nhiệt từ nhiên liệu cháy, rồi giãn nở trong tuabin và vòi phun (slide tr.3; cùng thứ tự với chu trình Brayton ở tr.33–36).",
+   "en": "Air is compressed, receives heat from burning fuel, then expands in the turbine and nozzle (slide p.3; the same order as the Brayton cycle on pp.33–36)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.3",
+   "en": "Slide Ch.2 p.3"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.4: thiết bị hoặc hệ thống dùng để tạo ra công thực (net power output) được gọi là động cơ (engine) và chu trình nhiệt động mà nó làm việc theo gọi là:",
+   "en": "Slide Ch.2 p.4: the devices or systems used to produce a net power output are called engines, and the thermodynamic cycles they operate on are called:"
+  },
+  "opts": [
+   {
+    "vi": "chu trình công suất (power cycle)",
+    "en": "power cycles"
+   },
+   {
+    "vi": "chu trình lạnh (refrigeration cycle)",
+    "en": "refrigeration cycles"
+   },
+   {
+    "vi": "chu trình hơi (vapor cycle)",
+    "en": "vapor cycles"
+   },
+   {
+    "vi": "chu trình hở (open cycle)",
+    "en": "open cycles"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Power cycle sinh công; refrigeration cycle (máy lạnh, điều hoà, bơm nhiệt) tạo hiệu ứng làm lạnh (tr.4). Vapor/gas, open/closed là các cách phân loại khác (tr.5–6).",
+   "en": "A power cycle produces work; a refrigeration cycle (refrigerator, air conditioner, heat pump) produces a cooling effect (p.4). Vapor/gas and open/closed are other classifications (pp.5–6)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.4",
+   "en": "Slide Ch.2 p.4"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.5: trong chu trình khí (gas cycle) môi chất làm việc:",
+   "en": "Slide Ch.2 p.5: in a gas cycle the working fluid:"
+  },
+  "opts": [
+   {
+    "vi": "ở pha khí suốt toàn bộ chu trình",
+    "en": "remains in the gaseous phase throughout the entire cycle"
+   },
+   {
+    "vi": "ở pha hơi một phần chu trình và pha lỏng ở phần khác",
+    "en": "is vapor in one part of the cycle and liquid in another"
+   },
+   {
+    "vi": "được đổi mới ở cuối mỗi chu trình",
+    "en": "is renewed at the end of each cycle"
+   },
+   {
+    "vi": "luôn là không khí sạch không có nhiên liệu",
+    "en": "is always clean air without any fuel"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là định nghĩa của slide tr.5. Chu trình hơi (vapor cycle) có pha lỏng ở một phần; \"được đổi mới mỗi chu trình\" là chu trình hở (tr.6).",
+   "en": "That is the definition on slide p.5. A vapor cycle has a liquid phase in part of the cycle; \"renewed every cycle\" describes an open cycle (p.6)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.5",
+   "en": "Slide Ch.2 p.5"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.7: động cơ đốt trong (internal combustion) khác động cơ đốt ngoài ở chỗ:",
+   "en": "Slide Ch.2 p.7: an internal-combustion engine differs from an external-combustion engine in that:"
+  },
+  "opts": [
+   {
+    "vi": "nhiệt được tạo ra bằng cách đốt nhiên liệu ngay trong biên hệ thống",
+    "en": "heat is provided by burning the fuel within the system boundaries"
+   },
+   {
+    "vi": "nhiệt được cấp từ nguồn ngoài như lò, giếng địa nhiệt, lò phản ứng hạt nhân",
+    "en": "heat is supplied from an external source such as a furnace, geothermal well or nuclear reactor"
+   },
+   {
+    "vi": "môi chất luôn là hơi nước",
+    "en": "the working fluid is always steam"
+   },
+   {
+    "vi": "không có quá trình nén",
+    "en": "there is no compression process"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Động cơ ô tô là ví dụ động cơ đốt trong; nhà máy nhiệt điện hơi nước là ví dụ đốt ngoài (tr.7).",
+   "en": "Automobile engines are internal-combustion; steam power plants are external-combustion (p.7)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.7",
+   "en": "Slide Ch.2 p.7"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.9: trong các giả thiết lý tưởng hoá khi phân tích chu trình công suất, điều nào KHÔNG được giả thiết?",
+   "en": "Slide Ch.2 p.9: among the idealizations used in analysing power cycles, which one is NOT assumed?"
+  },
+  "opts": [
+   {
+    "vi": "Môi chất chịu tổn thất áp suất do ma sát trong ống và bộ trao đổi nhiệt",
+    "en": "The working fluid suffers a pressure drop from friction in pipes and heat exchangers"
+   },
+   {
+    "vi": "Chu trình không có ma sát",
+    "en": "The cycle involves no friction"
+   },
+   {
+    "vi": "Mọi quá trình nén và giãn diễn ra gần cân bằng (quasi-equilibrium)",
+    "en": "All expansion and compression processes take place in a quasi-equilibrium manner"
+   },
+   {
+    "vi": "Ống nối các bộ phận được cách nhiệt tốt, truyền nhiệt qua ống không đáng kể",
+    "en": "The connecting pipes are well insulated and heat transfer through them is negligible"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide giả thiết không ma sát nên không có tổn thất áp suất; điều kiện có tổn thất áp suất mô tả hệ thống thực, không phải chu trình lý tưởng.",
+   "en": "The slide assumes no friction, hence no pressure drop; the condition with a pressure drop describes a real system, not the idealised cycle."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.9",
+   "en": "Slide Ch.2 p.9"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.10: công thực của chu trình (W_net) bằng diện tích bao bởi chu trình trên giản đồ P–v, và hiệu suất nhiệt là η_th = W_net/Q_in.",
+   "en": "Slide Ch.2 p.10: the net work of the cycle (W_net) equals the area enclosed by the cycle on the P–v diagram, and the thermal efficiency is η_th = W_net/Q_in."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "∮P dv = w_net và hiệu suất nhiệt = công thực/nhiệt cấp vào (tr.10). Trên giản đồ T–s, diện tích bên trong cũng là q_net = w_net.",
+   "en": "∮P dv = w_net and the thermal efficiency = net work/heat added (p.10). On a T–s diagram the enclosed area is also q_net = w_net."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.10",
+   "en": "Slide Ch.2 p.10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.11: bốn quá trình thuận nghịch của chu trình Carnot là:",
+   "en": "Slide Ch.2 p.11: the four reversible processes of the Carnot cycle are:"
+  },
+  "opts": [
+   {
+    "vi": "nhận nhiệt đẳng nhiệt, giãn đẳng entropi, thải nhiệt đẳng nhiệt, nén đẳng entropi",
+    "en": "isothermal heat addition, isentropic expansion, isothermal heat rejection, isentropic compression"
+   },
+   {
+    "vi": "nhận nhiệt đẳng tích, giãn đẳng entropi, thải nhiệt đẳng tích, nén đẳng entropi",
+    "en": "constant-volume heat addition, isentropic expansion, constant-volume heat rejection, isentropic compression"
+   },
+   {
+    "vi": "nhận nhiệt đẳng áp, giãn đẳng entropi, thải nhiệt đẳng áp, nén đẳng entropi",
+    "en": "constant-pressure heat addition, isentropic expansion, constant-pressure heat rejection, isentropic compression"
+   },
+   {
+    "vi": "nhận nhiệt đẳng nhiệt, giãn đẳng áp, thải nhiệt đẳng nhiệt, nén đẳng áp",
+    "en": "isothermal heat addition, isobaric expansion, isothermal heat rejection, isobaric compression"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trên T–s Carnot là hình chữ nhật: hai cạnh ngang là đẳng nhiệt T_H, T_L, hai cạnh đứng là đẳng entropi (tr.11–12). Đẳng tích là Otto, đẳng áp là Brayton.",
+   "en": "On T–s the Carnot cycle is a rectangle: two horizontal sides are isotherms T_H, T_L and two vertical sides are isentropes (pp.11–12). Constant volume is Otto, constant pressure is Brayton."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.11",
+   "en": "Slide Ch.2 p.11"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.13: hiệu suất nhiệt của chu trình Carnot chỉ phụ thuộc vào hai nhiệt độ nguồn nóng và nguồn lạnh (tuyệt đối) và không phụ thuộc môi chất.",
+   "en": "Slide Ch.2 p.13: the Carnot thermal efficiency depends only on the (absolute) temperatures of the hot source and the cold sink, and not on the working fluid."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "η_th,Carnot = 1 − T_L/T_H. Đây là hiệu suất lớn nhất có thể giữa hai nguồn đó; không có động cơ nào hơn (tr.13).",
+   "en": "η_th,Carnot = 1 − T_L/T_H. It is the highest efficiency possible between those two reservoirs; no engine can exceed it (p.13)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.13",
+   "en": "Slide Ch.2 p.13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.13: vì sao không chế tạo động cơ chạy theo chu trình gần với Carnot?",
+   "en": "Slide Ch.2 p.13: why is it not practical to build an engine that closely approximates the Carnot cycle?"
+  },
+  "opts": [
+   {
+    "vi": "vì nhiệt độ nguồn nóng và nguồn lạnh dùng được trong thực tế bị giới hạn và các quá trình không thể thuận nghịch hoàn toàn",
+    "en": "because the source and sink temperatures usable in practice are limited and the processes cannot be totally reversible"
+   },
+   {
+    "vi": "vì hiệu suất Carnot lớn hơn 1",
+    "en": "because the Carnot efficiency exceeds 1"
+   },
+   {
+    "vi": "vì Carnot chỉ chạy được bằng hơi nước",
+    "en": "because Carnot works only with steam"
+   },
+   {
+    "vi": "vì Carnot cần nhiệt độ nguồn lạnh bằng 0 °C",
+    "en": "because Carnot needs a cold sink at 0 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide tr.13: \"the source and sink temperatures that can be used in practice are not without limits\". Hiệu suất Carnot luôn nhỏ hơn 1 và nhiệt độ phải dùng theo K.",
+   "en": "Slide p.13: \"the source and sink temperatures that can be used in practice are not without limits\". The Carnot efficiency is always below 1 and temperatures must be in K."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.13",
+   "en": "Slide Ch.2 p.13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.14: giả thiết nào sau đây KHÔNG thuộc bốn giả thiết không khí-chuẩn (air-standard)?",
+   "en": "Slide Ch.2 p.14: which of the following is NOT one of the four air-standard assumptions?"
+  },
+  "opts": [
+   {
+    "vi": "Quá trình cháy được tính bằng phản ứng hoá học tạo sản phẩm cháy với thành phần thay đổi",
+    "en": "Combustion is treated as a chemical reaction giving products of changing composition"
+   },
+   {
+    "vi": "Môi chất là không khí tuần hoàn trong vòng kín và luôn là khí lý tưởng",
+    "en": "The working fluid is air circulating in a closed loop and always an ideal gas"
+   },
+   {
+    "vi": "Mọi quá trình tạo nên chu trình đều thuận nghịch bên trong",
+    "en": "All processes making up the cycle are internally reversible"
+   },
+   {
+    "vi": "Quá trình xả được thay bằng quá trình thải nhiệt đưa môi chất về trạng thái đầu",
+    "en": "The exhaust process is replaced by heat rejection that restores the working fluid to its initial state"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Giả thiết 3 của slide: quá trình cháy được thay bằng cấp nhiệt từ nguồn ngoài (hình \"Heating section\"), không tính phản ứng hoá học.",
+   "en": "Assumption 3 of the slide: combustion is replaced by heat addition from an external source (the \"Heating section\" figure); no chemical reaction is modelled."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.14",
+   "en": "Slide Ch.2 p.14"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.15: tỉ số nén r của động cơ piston bằng:",
+   "en": "Slide Ch.2 p.15: the compression ratio r of a reciprocating engine equals:"
+  },
+  "opts": [
+   {
+    "vi": "V_max/V_min = V_BDC/V_TDC",
+    "en": "V_max/V_min = V_BDC/V_TDC"
+   },
+   {
+    "vi": "V_min/V_max = V_TDC/V_BDC",
+    "en": "V_min/V_max = V_TDC/V_BDC"
+   },
+   {
+    "vi": "(V_BDC − V_TDC)/V_TDC",
+    "en": "(V_BDC − V_TDC)/V_TDC"
+   },
+   {
+    "vi": "thể tích làm việc chia cho thể tích xi-lanh",
+    "en": "displacement volume divided by the cylinder volume"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r = V_BDC/V_TDC = (V_d + V_c)/V_c, với V_c là thể tích chết (clearance, ở TDC) và V_d thể tích làm việc (displacement). (V_BDC − V_TDC)/V_TDC bằng r − 1.",
+   "en": "r = V_BDC/V_TDC = (V_d + V_c)/V_c with V_c the clearance volume (at TDC) and V_d the displacement volume. (V_BDC − V_TDC)/V_TDC equals r − 1."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.15",
+   "en": "Slide Ch.2 p.15"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.16–17: công thực W_net = MEP × thể tích làm việc (V_max − V_min); với hai động cơ cùng kích thước, động cơ có MEP lớn hơn cho công thực mỗi chu trình lớn hơn.",
+   "en": "Slide Ch.2 pp.16–17: W_net = MEP × displacement volume (V_max − V_min); for two engines of equal size the one with the larger MEP delivers more net work per cycle."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "MEP là áp suất không đổi giả định tác dụng suốt hành trình sinh cùng công thực; vì thế dùng để so sánh các động cơ cùng kích thước (tr.17).",
+   "en": "The MEP is the constant pressure that would produce the same net work over the stroke; it is therefore used to compare engines of equal size (p.17)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.17",
+   "en": "Slide Ch.2 p.17"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.18: điểm khác nhau cơ bản giữa động cơ SI và CI là:",
+   "en": "Slide Ch.2 p.18: the basic difference between SI and CI engines is:"
+  },
+  "opts": [
+   {
+    "vi": "SI đốt hỗn hợp nhiên liệu–không khí bằng bugi; CI tự cháy do nén hỗn hợp vượt nhiệt độ tự cháy",
+    "en": "SI ignites the air–fuel mixture with a spark plug; CI self-ignites when the mixture is compressed above its self-ignition temperature"
+   },
+   {
+    "vi": "SI dùng chu trình Diesel, CI dùng chu trình Otto",
+    "en": "SI uses the Diesel cycle and CI the Otto cycle"
+   },
+   {
+    "vi": "SI là động cơ đốt ngoài, CI là động cơ đốt trong",
+    "en": "SI is external combustion and CI internal combustion"
+   },
+   {
+    "vi": "SI có nhiều xi-lanh hơn CI",
+    "en": "SI has more cylinders than CI"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu trình lý tưởng cho SI là Otto, cho CI là Diesel (tr.19, 26). Cả hai đều là động cơ đốt trong.",
+   "en": "The ideal cycle for SI is Otto and for CI is Diesel (pp.19, 26). Both are internal-combustion engines."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.18",
+   "en": "Slide Ch.2 p.18"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ở động cơ bốn kỳ (slide tr.19), một chu trình nhiệt động hoàn chỉnh (nạp, nén, sinh công, xả) cần bao nhiêu vòng quay của trục khuỷu?",
+   "en": "In a four-stroke engine (slide p.19) one complete thermodynamic cycle (intake, compression, power, exhaust) needs how many crankshaft revolutions?"
+  },
+  "opts": [
+   {
+    "vi": "2 vòng (bốn hành trình)",
+    "en": "2 revolutions (four strokes)"
+   },
+   {
+    "vi": "1 vòng",
+    "en": "1 revolution"
+   },
+   {
+    "vi": "4 vòng",
+    "en": "4 revolutions"
+   },
+   {
+    "vi": "0,5 vòng",
+    "en": "0.5 revolution"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi hành trình là nửa vòng quay nên bốn hành trình = 2 vòng (slide ghi \"four complete strokes (two mechanical cycles)\"). Vì vậy công suất = W_net·N/2 với N là số vòng/phút (xem Cengel 9–59).",
+   "en": "Each stroke is half a revolution, so four strokes = 2 revolutions (the slide says \"four complete strokes (two mechanical cycles)\"). Hence power = W_net·N/2 with N the rev/min (see Cengel 9–59)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Động cơ piston: r, MEP",
+   "en": "Reciprocating engines: r, MEP"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.19",
+   "en": "Slide Ch.2 p.19"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.20: bốn quá trình của chu trình Otto lý tưởng, theo thứ tự 1-2, 2-3, 3-4, 4-1, là:",
+   "en": "Slide Ch.2 p.20: the four processes of the ideal Otto cycle, in the order 1-2, 2-3, 3-4, 4-1, are:"
+  },
+  "opts": [
+   {
+    "vi": "nén đẳng entropi, cấp nhiệt đẳng tích, giãn đẳng entropi, thải nhiệt đẳng tích",
+    "en": "isentropic compression, constant-volume heat addition, isentropic expansion, constant-volume heat rejection"
+   },
+   {
+    "vi": "nén đẳng entropi, cấp nhiệt đẳng áp, giãn đẳng entropi, thải nhiệt đẳng tích",
+    "en": "isentropic compression, constant-pressure heat addition, isentropic expansion, constant-volume heat rejection"
+   },
+   {
+    "vi": "nén đẳng nhiệt, cấp nhiệt đẳng tích, giãn đẳng nhiệt, thải nhiệt đẳng tích",
+    "en": "isothermal compression, constant-volume heat addition, isothermal expansion, constant-volume heat rejection"
+   },
+   {
+    "vi": "nén đẳng entropi, cấp nhiệt đẳng tích, giãn đẳng entropi, thải nhiệt đẳng áp",
+    "en": "isentropic compression, constant-volume heat addition, isentropic expansion, constant-pressure heat rejection"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cấp nhiệt đẳng áp là chu trình Diesel; thải nhiệt đẳng áp không phải Otto. Otto: hai đẳng entropi + hai đẳng tích (slide tr.20).",
+   "en": "Isobaric heat addition is the Diesel cycle; isobaric rejection is not Otto. Otto: two isentropes + two isochores (slide p.20)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.20",
+   "en": "Slide Ch.2 p.20"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.24: hiệu suất lý tưởng của chu trình Otto 1 − 1/r^(k−1) chỉ phụ thuộc tỉ số nén r và tỉ số nhiệt dung riêng k, không phụ thuộc lượng nhiệt cấp vào q_in (khi k hằng).",
+   "en": "Slide Ch.2 p.24: the ideal Otto efficiency 1 − 1/r^(k−1) depends only on the compression ratio r and the specific-heat ratio k, not on the heat added q_in (for constant k)."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Với nhiệt dung riêng hằng, T₄/T₁ = T₃/T₂ = r^(k−1) nên q_in bị triệt tiêu trong tỉ số q_out/q_in. Với cp biến đổi (bảng A-17) η có phụ thuộc nhẹ vào q_in (Tutorials I #1: 52,3 % so với khí lạnh 56,5 %).",
+   "en": "With constant specific heats T₄/T₁ = T₃/T₂ = r^(k−1) so q_in cancels in q_out/q_in. With variable cp (Table A-17) η depends slightly on q_in (Tutorials I #1: 52.3 % versus cold air 56.5 %)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.24",
+   "en": "Slide Ch.2 p.24"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.25: vùng tô hồng \"typical compression ratios for gasoline engines\" nằm ở khoảng:",
+   "en": "Slide Ch.2 p.25: the pink band \"typical compression ratios for gasoline engines\" lies at about:"
+  },
+  "opts": [
+   {
+    "vi": "r ≈ 7 đến 10",
+    "en": "r ≈ 7 to 10"
+   },
+   {
+    "vi": "r ≈ 12 đến 24",
+    "en": "r ≈ 12 to 24"
+   },
+   {
+    "vi": "r ≈ 2 đến 4",
+    "en": "r ≈ 2 to 4"
+   },
+   {
+    "vi": "r ≈ 20 đến 30",
+    "en": "r ≈ 20 to 30"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Động cơ xăng bị giới hạn bởi hiện tượng tự cháy sớm (kích nổ) của hỗn hợp; diesel nén chỉ không khí nên dùng r = 12–24 (tr.27). Với k = 1,4, η_Otto tại r = 7 và 10 là 0,541 và 0,602.",
+   "en": "Gasoline engines are limited by premature self-ignition (knock) of the mixture; a diesel compresses air only and uses r = 12–24 (p.27). With k = 1.4 the Otto η at r = 7 and 10 is 0.541 and 0.602."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.25",
+   "en": "Slide Ch.2 p.25"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.27: động cơ diesel có thể dùng tỉ số nén cao hơn nhiều (12–24) vì:",
+   "en": "Slide Ch.2 p.27: a diesel engine can use a much higher compression ratio (12–24) because:"
+  },
+  "opts": [
+   {
+    "vi": "trong kỳ nén chỉ có không khí được nén nên không thể tự cháy sớm; nhiên liệu cháy khi được phun vào không khí nóng",
+    "en": "only air is compressed during the compression stroke so auto-ignition is impossible; the fuel burns when injected into the hot air"
+   },
+   {
+    "vi": "nhiên liệu diesel có trị số octan cao hơn xăng",
+    "en": "diesel fuel has a higher octane number than gasoline"
+   },
+   {
+    "vi": "diesel không có bugi nên không cần làm mát",
+    "en": "a diesel has no spark plug and needs no cooling"
+   },
+   {
+    "vi": "diesel nén đẳng nhiệt",
+    "en": "a diesel compresses isothermally"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là lý do slide tr.27 nêu. Bugi được thay bằng vòi phun nhiên liệu (tr.26).",
+   "en": "That is the reason given on p.27. The spark plug is replaced by a fuel injector (p.26)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.27",
+   "en": "Slide Ch.2 p.27"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.28: quá trình DUY NHẤT mà chu trình Otto và Diesel lý tưởng khác nhau là:",
+   "en": "Slide Ch.2 p.28: the ONLY process in which the ideal Otto and Diesel cycles differ is:"
+  },
+  "opts": [
+   {
+    "vi": "cấp nhiệt: đẳng tích ở Otto, đẳng áp ở Diesel",
+    "en": "heat addition: constant volume in Otto, constant pressure in Diesel"
+   },
+   {
+    "vi": "nén: đẳng entropi ở Otto, đẳng nhiệt ở Diesel",
+    "en": "compression: isentropic in Otto, isothermal in Diesel"
+   },
+   {
+    "vi": "thải nhiệt: đẳng tích ở Otto, đẳng áp ở Diesel",
+    "en": "heat rejection: constant volume in Otto, constant pressure in Diesel"
+   },
+   {
+    "vi": "giãn nở: đẳng entropi ở Otto, đa hướng ở Diesel",
+    "en": "expansion: isentropic in Otto, polytropic in Diesel"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cả hai đều có nén đẳng entropi 1-2, giãn đẳng entropi 3-4 và thải nhiệt đẳng tích 4-1; chỉ 2-3 khác (tr.28).",
+   "en": "Both have isentropic compression 1-2, isentropic expansion 3-4 and constant-volume rejection 4-1; only 2-3 differs (p.28)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.28",
+   "en": "Slide Ch.2 p.28"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.31: tỉ số cắt (cutoff ratio) của chu trình Diesel được định nghĩa là:",
+   "en": "Slide Ch.2 p.31: the cutoff ratio of the Diesel cycle is defined as:"
+  },
+  "opts": [
+   {
+    "vi": "r_c = V₃/V₂ = v₃/v₂",
+    "en": "r_c = V₃/V₂ = v₃/v₂"
+   },
+   {
+    "vi": "r_c = V₁/V₂",
+    "en": "r_c = V₁/V₂"
+   },
+   {
+    "vi": "r_c = P₃/P₂",
+    "en": "r_c = P₃/P₂"
+   },
+   {
+    "vi": "r_c = V₄/V₃",
+    "en": "r_c = V₄/V₃"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "r_c = thể tích cuối/đầu quá trình cấp nhiệt đẳng áp 2→3. V₁/V₂ là tỉ số nén r; P₃/P₂ = 1 trong Diesel; V₄/V₃ = r/r_c.",
+   "en": "r_c = volume at the end/start of the isobaric heat addition 2→3. V₁/V₂ is the compression ratio r; P₃/P₂ = 1 in the Diesel cycle; V₄/V₃ = r/r_c."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.31",
+   "en": "Slide Ch.2 p.31"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.31: với cùng tỉ số nén r (và khí lạnh), hiệu suất của chu trình Otto lớn hơn hiệu suất của chu trình Diesel.",
+   "en": "Slide Ch.2 p.31: for the same compression ratio r (cold air) the Otto efficiency is greater than the Diesel efficiency."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đại lượng trong ngoặc [(r_c^k − 1)/(k(r_c − 1))] luôn lớn hơn 1 nên η_Diesel < η_Otto cùng r. Diesel vẫn thực tế hiệu quả hơn vì dùng r cao hơn nhiều (tr.32). Khi r_c → 1 ngoặc → 1 và Diesel → Otto.",
+   "en": "The bracket [(r_c^k − 1)/(k(r_c − 1))] is always above 1 so η_Diesel < η_Otto at the same r. Diesels are nevertheless more efficient in practice because they use a much higher r (p.32). As r_c → 1 the bracket → 1 and Diesel → Otto."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.31",
+   "en": "Slide Ch.2 p.31"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.32: hiệu suất nhiệt của các động cơ diesel lớn vào khoảng 35 đến 40 %.",
+   "en": "Slide Ch.2 p.32: the thermal efficiencies of large diesel engines range from about 35 to 40 percent."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là hiệu suất của động cơ thực (nhỏ hơn nhiều so với η lý tưởng 0,6–0,7 của chu trình khí-chuẩn); ứng dụng: đầu máy xe lửa, máy phát dự phòng, tàu lớn, xe tải nặng (tr.32).",
+   "en": "That is the efficiency of real engines (far below the ideal air-standard 0.6–0.7); applications: locomotives, emergency generators, large ships, heavy trucks (p.32)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.32",
+   "en": "Slide Ch.2 p.32"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.33–34: tuabin khí thực tế thường làm việc theo chu trình hở, và chu trình hở này được mô hình hoá thành chu trình kín bằng cách:",
+   "en": "Slide Ch.2 pp.33–34: a real gas turbine usually works on an open cycle, and that open cycle is modelled as a closed one by:"
+  },
+  "opts": [
+   {
+    "vi": "thay buồng đốt bằng bộ trao đổi nhiệt cấp nhiệt và dùng bộ trao đổi nhiệt thứ hai để thải nhiệt đưa khí về trạng thái đầu",
+    "en": "replacing the combustion chamber by a heat exchanger adding heat and using a second heat exchanger to reject heat back to the initial state"
+   },
+   {
+    "vi": "bỏ máy nén",
+    "en": "removing the compressor"
+   },
+   {
+    "vi": "thay tuabin bằng van tiết lưu",
+    "en": "replacing the turbine by a throttle"
+   },
+   {
+    "vi": "bơm nhiên liệu lỏng vào máy nén",
+    "en": "pumping liquid fuel into the compressor"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là các quá trình 2-3 (cấp nhiệt đẳng áp) và 4-1 (thải nhiệt đẳng áp) của Brayton khí-chuẩn (tr.34–35).",
+   "en": "These are processes 2-3 (isobaric heat addition) and 4-1 (isobaric heat rejection) of the air-standard Brayton cycle (pp.34–35)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.34",
+   "en": "Slide Ch.2 p.34"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.35–36: bốn quá trình của chu trình Brayton lý tưởng là:",
+   "en": "Slide Ch.2 pp.35–36: the four processes of the ideal Brayton cycle are:"
+  },
+  "opts": [
+   {
+    "vi": "nén đẳng entropi, cấp nhiệt đẳng áp, giãn đẳng entropi, thải nhiệt đẳng áp",
+    "en": "isentropic compression, constant-pressure heat addition, isentropic expansion, constant-pressure heat rejection"
+   },
+   {
+    "vi": "nén đẳng entropi, cấp nhiệt đẳng tích, giãn đẳng entropi, thải nhiệt đẳng tích",
+    "en": "isentropic compression, constant-volume heat addition, isentropic expansion, constant-volume heat rejection"
+   },
+   {
+    "vi": "nén đẳng nhiệt, cấp nhiệt đẳng áp, giãn đẳng nhiệt, thải nhiệt đẳng áp",
+    "en": "isothermal compression, constant-pressure heat addition, isothermal expansion, constant-pressure heat rejection"
+   },
+   {
+    "vi": "nén đẳng entropi, cấp nhiệt đẳng áp, giãn đẳng entropi, thải nhiệt đẳng tích",
+    "en": "isentropic compression, constant-pressure heat addition, isentropic expansion, constant-volume heat rejection"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Brayton: hai đẳng entropi + hai đẳng áp (tr.35). Cấp nhiệt đẳng áp rồi thải đẳng tích là Diesel; cả hai quá trình đẳng tích là Otto.",
+   "en": "Brayton: two isentropes + two isobars (p.35). Isobaric addition with isochoric rejection is Diesel; two isochoric heat transfers is Otto."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.35",
+   "en": "Slide Ch.2 p.35"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.39: hiệu suất nhiệt của chu trình Brayton lý tưởng (khí lạnh) chỉ phụ thuộc tỉ số áp suất r_p và k: η = 1 − 1/r_p^((k−1)/k); tăng r_p thì η tăng.",
+   "en": "Slide Ch.2 p.39: the ideal (cold-air) Brayton efficiency depends only on the pressure ratio r_p and k: η = 1 − 1/r_p^((k−1)/k); raising r_p raises η."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cùng dạng với Otto nhưng số mũ (k−1)/k và r_p = P₂/P₁ thay cho r. η không phụ thuộc T₃ (nhiệt độ cực đại) khi cp hằng, nhưng T₃ quyết định công thực.",
+   "en": "Same form as Otto but with exponent (k−1)/k and r_p = P₂/P₁ in place of r. η does not depend on T₃ (maximum temperature) for constant cp, but T₃ fixes the net work."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.39",
+   "en": "Slide Ch.2 p.39"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.40: với T_min, T_max cố định, công thực của chu trình Brayton lý tưởng khi tăng r_p:",
+   "en": "Slide Ch.2 p.40: for fixed T_min and T_max the net work of the ideal Brayton cycle as r_p increases:"
+  },
+  "opts": [
+   {
+    "vi": "tăng đến cực đại tại r_p = (T_max/T_min)^(k/[2(k−1)]) rồi giảm",
+    "en": "first increases, reaching a maximum at r_p = (T_max/T_min)^(k/[2(k−1)]), then decreases"
+   },
+   {
+    "vi": "tăng liên tục",
+    "en": "increases continuously"
+   },
+   {
+    "vi": "giảm liên tục",
+    "en": "decreases continuously"
+   },
+   {
+    "vi": "không đổi",
+    "en": "stays constant"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khi r_p tăng, w_comp tăng nhanh hơn w_turb ở phía r_p lớn; tại r_p lớn nhất T₂ = T₃ và công thực bằng 0 (hình tr.40: r_p = 2; 8,2; 15 với 300 K và 1000 K). Hiệu suất thì tăng mãi.",
+   "en": "As r_p grows the compressor work rises faster than the turbine work at large r_p; at the largest r_p T₂ = T₃ and the net work is zero (figure p.40: r_p = 2; 8.2; 15 with 300 K and 1000 K). The efficiency keeps rising."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.40",
+   "en": "Slide Ch.2 p.40"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.41: biện pháp nào KHÔNG được nêu trên slide để nâng hiệu suất tuabin khí?",
+   "en": "Slide Ch.2 p.41: which measure is NOT listed on the slide for raising gas-turbine efficiency?"
+  },
+  "opts": [
+   {
+    "vi": "Giảm nhiệt độ vào tuabin để giảm tải nhiệt",
+    "en": "Lowering the turbine inlet temperature to reduce the thermal load"
+   },
+   {
+    "vi": "Tăng nhiệt độ vào tuabin nhờ vật liệu mới và làm mát cánh",
+    "en": "Raising the turbine inlet temperature through new materials and blade cooling"
+   },
+   {
+    "vi": "Tăng hiệu suất các bộ phận turbomachinery",
+    "en": "Raising the efficiencies of the turbomachinery components"
+   },
+   {
+    "vi": "Thêm làm mát trung gian, hồi nhiệt và hâm nóng vào chu trình cơ bản",
+    "en": "Adding intercooling, regeneration and reheating to the basic cycle"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide nêu ba hướng: tăng nhiệt độ vào tuabin, tăng hiệu suất các bộ phận, bổ sung hồi nhiệt/làm mát trung gian/hâm nóng (làm gần gấp đôi hiệu suất của tuabin khí đời đầu).",
+   "en": "The slide lists three directions: raise the turbine inlet temperature, raise component efficiencies, add regeneration/intercooling/reheating (which nearly doubled the efficiency of early gas turbines)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.41",
+   "en": "Slide Ch.2 p.41"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.43: bộ hồi nhiệt (regenerator) trong chu trình Brayton:",
+   "en": "Slide Ch.2 p.43: the regenerator in a Brayton cycle:"
+  },
+  "opts": [
+   {
+    "vi": "làm nóng không khí ra khỏi máy nén bằng khí xả nóng của tuabin, giảm nhiệt (nhiên liệu) cấp vào để có cùng công thực",
+    "en": "heats the air leaving the compressor with the hot turbine exhaust, reducing the heat (fuel) input for the same net work"
+   },
+   {
+    "vi": "làm mát không khí giữa hai cấp máy nén",
+    "en": "cools the air between two compressor stages"
+   },
+   {
+    "vi": "tăng công thực bằng cách giãn nở nhiều cấp",
+    "en": "raises the net work by multistage expansion"
+   },
+   {
+    "vi": "làm nóng khí xả bằng không khí lạnh vào máy nén",
+    "en": "heats the exhaust with the cold air entering the compressor"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ hồi nhiệt là bộ trao đổi nhiệt ngược dòng giữa dòng khí nén (sau máy nén) và dòng khí xả; không thay đổi công thực nếu bỏ qua tổn thất áp suất. Làm mát khí giữa hai cấp máy nén là làm mát trung gian; giãn nở nhiều cấp là hâm nóng.",
+   "en": "The regenerator is a counter-flow heat exchanger between the compressed air (after the compressor) and the exhaust; it does not change the net work if pressure losses are neglected. Cooling the air between two compressor stages is intercooling; multistage expansion is reheating."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Hồi nhiệt",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.43",
+   "en": "Slide Ch.2 p.43"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.44–45: hiệu quả (effectiveness) ε của bộ hồi nhiệt, với khí lạnh, được tính là:",
+   "en": "Slide Ch.2 pp.44–45: the regenerator effectiveness ε, for cold air, is:"
+  },
+  "opts": [
+   {
+    "vi": "ε = (T₅ − T₂)/(T₄ − T₂)",
+    "en": "ε = (T₅ − T₂)/(T₄ − T₂)"
+   },
+   {
+    "vi": "ε = (T₄ − T₅)/(T₄ − T₂)",
+    "en": "ε = (T₄ − T₅)/(T₄ − T₂)"
+   },
+   {
+    "vi": "ε = (T₅ − T₂)/(T₃ − T₂)",
+    "en": "ε = (T₅ − T₂)/(T₃ − T₂)"
+   },
+   {
+    "vi": "ε = (T₄ − T₂)/(T₅ − T₂)",
+    "en": "ε = (T₄ − T₂)/(T₅ − T₂)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ε = q_regen,act/q_regen,max = (h₅ − h₂)/(h₄ − h₂): nhiệt thực nhận/nhiệt lớn nhất có thể nhận (lấy khí nén lên tới nhiệt độ khí xả T₄). Slide tr.44 viết \"regen,mã\" mà ý là \"regen,max\".",
+   "en": "ε = q_regen,act/q_regen,max = (h₅ − h₂)/(h₄ − h₂): heat actually received/maximum heat receivable (heating the compressed air up to the exhaust temperature T₄). Slide p.44 writes \"regen,mã\" meaning \"regen,max\"."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Hồi nhiệt",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.44",
+   "en": "Slide Ch.2 p.44"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.45: với bộ hồi nhiệt lý tưởng (khí lạnh), η_th,regen = 1 − (T₁/T₃)·r_p^((k−1)/k). Khi tăng r_p, η_th,regen:",
+   "en": "Slide Ch.2 p.45: for an ideal regenerator (cold air) η_th,regen = 1 − (T₁/T₃)·r_p^((k−1)/k). As r_p increases, η_th,regen:"
+  },
+  "opts": [
+   {
+    "vi": "giảm; hồi nhiệt hiệu quả nhất ở r_p thấp và T₁/T₃ thấp",
+    "en": "decreases; regeneration is most effective at low r_p and low T₁/T₃"
+   },
+   {
+    "vi": "tăng như hiệu suất không hồi nhiệt",
+    "en": "increases like the efficiency without regeneration"
+   },
+   {
+    "vi": "không đổi",
+    "en": "stays constant"
+   },
+   {
+    "vi": "tăng rồi giảm tại r_p tối ưu",
+    "en": "rises then falls at an optimum r_p"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Số hạng (T₁/T₃)·r_p^((k−1)/k) tăng theo r_p nên η_regen giảm (các đường đi xuống trong hình tr.45); nó cắt đường không hồi nhiệt tại r_p = (T₃/T₁)^(k/[2(k−1)]) (trùng r_p cho công cực đại). Trên điểm đó hồi nhiệt có hại vì T₄ < T₂.",
+   "en": "The term (T₁/T₃)·r_p^((k−1)/k) grows with r_p so η_regen falls (the descending curves of the figure on p.45); it crosses the no-regeneration curve at r_p = (T₃/T₁)^(k/[2(k−1)]) (the r_p of maximum work). Above that point regeneration is harmful because T₄ < T₂."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.45",
+   "en": "Slide Ch.2 p.45"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.46: so với nén một cấp, nén hai cấp có làm mát trung gian giữa hai áp suất cho trước:",
+   "en": "Slide Ch.2 p.46: compared with single-stage compression, two-stage compression with intercooling between two given pressures:"
+  },
+  "opts": [
+   {
+    "vi": "giảm công nén (vùng hồng \"work saved\") và giãn nhiều cấp có hâm nóng làm tăng công tuabin",
+    "en": "reduces the compressor work (pink \"work saved\" area), and multistage expansion with reheating raises the turbine work"
+   },
+   {
+    "vi": "tăng công nén",
+    "en": "increases the compressor work"
+   },
+   {
+    "vi": "không đổi công nén nhưng tăng nhiệt cấp vào",
+    "en": "leaves the compressor work unchanged but raises the heat input"
+   },
+   {
+    "vi": "giảm công tuabin",
+    "en": "reduces the turbine work"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Công nén ổn định ∝ thể tích riêng của khí; làm mát giữa các cấp giữ v nhỏ, hâm nóng giữ v lớn khi giãn nở (Cengel §9-10). Nhưng nhiệt cấp vào cũng tăng, nên cần hồi nhiệt (Cengel Ví dụ 9–8).",
+   "en": "Steady-flow compression work ∝ specific volume; cooling between stages keeps v small, reheating keeps v large during expansion (Cengel §9-10). The heat input rises as well, so regeneration is needed (Cengel Example 9–8)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Làm mát trung gian, hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.46",
+   "en": "Slide Ch.2 p.46"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.47: khí xả của tuabin khí giàu oxy, nên có thể hâm nóng (reheat) đơn giản bằng cách phun thêm nhiên liệu vào khí xả giữa hai cấp giãn nở.",
+   "en": "Slide Ch.2 p.47: the exhaust gases of a gas turbine are rich in oxygen, so reheating can be done simply by spraying additional fuel into the exhaust gases between two expansion stages."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tuabin khí thường cháy với lượng không khí gấp khoảng bốn lần lượng cần cho cháy hoàn toàn (Cengel §9-10), nên khí xả vẫn còn nhiều oxy.",
+   "en": "Gas turbines typically burn with about four times the air needed for complete combustion (Cengel §9-10), so the exhaust still contains much oxygen."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Làm mát trung gian, hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.47",
+   "en": "Slide Ch.2 p.47"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.48: nếu tăng số cấp nén và giãn (có làm mát trung gian, hâm nóng, hồi nhiệt), hiệu suất nhiệt tiến tới giới hạn lý thuyết là hiệu suất Carnot.",
+   "en": "Slide Ch.2 p.48: if the number of compression and expansion stages is increased (with intercooling, reheating and regeneration), the thermal efficiency approaches the theoretical limit, the Carnot efficiency."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khi số cấp → ∞ nén và giãn tiến tới đẳng nhiệt và chu trình tiến tới chu trình Ericsson, cùng hiệu suất với Carnot giữa T_max và T_min; nhưng đóng góp của mỗi cấp thêm càng nhỏ và dùng quá hai hoặc ba cấp không kinh tế.",
+   "en": "As the number of stages → ∞ compression and expansion approach isothermal and the cycle approaches the Ericsson cycle, with the Carnot efficiency between T_max and T_min; each added stage contributes less and more than two or three stages is not economical."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Làm mát trung gian, hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.48",
+   "en": "Slide Ch.2 p.48"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.48: tiêu đề của các slide tr.46–48 (bị cắt trong bản trích) đầy đủ là:",
+   "en": "Slide Ch.2 p.48: the full title of slides pp.46–48 (truncated in the text extraction) is:"
+  },
+  "opts": [
+   {
+    "vi": "The Brayton cycle with intercooling, reheating, and regeneration",
+    "en": "The Brayton cycle with intercooling, reheating, and regeneration"
+   },
+   {
+    "vi": "The Brayton cycle with intercooling only",
+    "en": "The Brayton cycle with intercooling only"
+   },
+   {
+    "vi": "The Brayton cycle with reheating and afterburning",
+    "en": "The Brayton cycle with reheating and afterburning"
+   },
+   {
+    "vi": "The Brayton cycle with intercooling and bypass",
+    "en": "The Brayton cycle with intercooling and bypass"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ảnh slide tr.48 cho thấy tiêu đề hai dòng \"The Brayton cycle with intercooling, / reheating, and regeneration\": có hâm nóng và hồi nhiệt.",
+   "en": "The image of slide p.48 shows the two-line title \"The Brayton cycle with intercooling, / reheating, and regeneration\": reheating and regeneration are included."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Làm mát trung gian, hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.48",
+   "en": "Slide Ch.2 p.48"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.49: trong chu trình phản lực lý tưởng, tuabin giãn khí tới áp suất sao cho công tuabin chỉ vừa đủ chạy máy nén và các thiết bị phụ; phần năng lượng còn lại được vòi phun biến thành động năng, nên công thực trên trục bằng không.",
+   "en": "Slide Ch.2 p.49: in the ideal jet-propulsion cycle the turbine expands the gas only to the pressure at which its power just drives the compressor and auxiliaries; the rest of the energy becomes kinetic energy in the nozzle, so the net shaft work is zero."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khác với Brayton đơn giản (tuabin giãn tới áp suất môi trường và cho công thực), turbojet dùng phần entanpi còn lại để gia tốc khí qua vòi phun và tạo lực đẩy (tr.49).",
+   "en": "Unlike the simple Brayton cycle (turbine expands to ambient pressure and delivers net work), the turbojet uses the remaining enthalpy to accelerate the gas in the nozzle and produce thrust (p.49)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.49",
+   "en": "Slide Ch.2 p.49"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.51: trong chu trình phản lực lý tưởng, các quá trình nào được giả thiết đẳng entropi?",
+   "en": "Slide Ch.2 p.51: in the ideal jet-propulsion cycle which processes are assumed isentropic?"
+  },
+  "opts": [
+   {
+    "vi": "trong bộ khuếch tán (diffuser), máy nén, tuabin và vòi phun",
+    "en": "in the diffuser, the compressor, the turbine and the nozzle"
+   },
+   {
+    "vi": "chỉ trong máy nén và tuabin",
+    "en": "in the compressor and turbine only"
+   },
+   {
+    "vi": "chỉ trong buồng đốt",
+    "en": "in the burner only"
+   },
+   {
+    "vi": "trong máy nén, buồng đốt và vòi phun",
+    "en": "in the compressor, burner and nozzle"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide tr.51: các quá trình 1-2 (khuếch tán), 2-3 (nén), 4-5 (tuabin), 5-6 (vòi phun) đẳng entropi; 3-4 cấp nhiệt đẳng áp.",
+   "en": "Slide p.51: processes 1-2 (diffuser), 2-3 (compressor), 4-5 (turbine), 5-6 (nozzle) are isentropic; 3-4 is isobaric heat addition."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.51",
+   "en": "Slide Ch.2 p.51"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.52: khi áp suất ở cửa vào và cửa ra turbojet bằng áp suất môi trường, lực đẩy thực là:",
+   "en": "Slide Ch.2 p.52: when the inlet and exit pressures of a turbojet equal the ambient pressure, the net thrust is:"
+  },
+  "opts": [
+   {
+    "vi": "F = ṁ(V_exit − V_inlet)",
+    "en": "F = ṁ(V_exit − V_inlet)"
+   },
+   {
+    "vi": "F = ṁ(V_exit + V_inlet)",
+    "en": "F = ṁ(V_exit + V_inlet)"
+   },
+   {
+    "vi": "F = ṁV_exit",
+    "en": "F = ṁV_exit"
+   },
+   {
+    "vi": "F = ṁ(V_exit² − V_inlet²)/2",
+    "en": "F = ṁ(V_exit² − V_inlet²)/2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lực đẩy = hiệu động lượng dòng ra và dòng vào (V đo so với máy bay): F = (ṁV)_exit − (ṁV)_inlet. Biểu thức ṁ(V_exit² − V_inlet²)/2 là độ tăng động năng chứ không phải lực.",
+   "en": "Thrust = outflow minus inflow momentum (V relative to the aircraft): F = (ṁV)_exit − (ṁV)_inlet. The expression ṁ(V_exit² − V_inlet²)/2 is the kinetic-energy rise, not a force."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.52",
+   "en": "Slide Ch.2 p.52"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.52 định nghĩa hiệu suất đẩy η_P = Ẇ_p/Q̇_in. Đại lượng này tương ứng với đại lượng nào trong Farokhi và El-Sayed?",
+   "en": "Slide Ch.2 p.52 defines the propulsive efficiency η_P = Ẇ_p/Q̇_in. Which quantity of Farokhi and El-Sayed does it correspond to?"
+  },
+  "opts": [
+   {
+    "vi": "hiệu suất tổng η_o = F·V/(ṁ_f·Q_R) (công đẩy chia nhiệt cấp)",
+    "en": "the overall efficiency η_o = F·V/(ṁ_f·Q_R) (thrust power over heat input)"
+   },
+   {
+    "vi": "hiệu suất đẩy η_p = 2V/(V + V_e) (công đẩy chia độ tăng động năng)",
+    "en": "the propulsive efficiency η_p = 2V/(V + V_e) (thrust power over kinetic-energy rise)"
+   },
+   {
+    "vi": "hiệu suất nhiệt η_th = độ tăng động năng chia nhiệt cấp",
+    "en": "the thermal efficiency η_th = kinetic-energy rise over heat input"
+   },
+   {
+    "vi": "hiệu suất vòi phun",
+    "en": "the nozzle efficiency"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cengel/slide chia công đẩy cho nhiệt cấp vào, tức tích η_p·η_th của Farokhi và El-Sayed (xem m01). Ví dụ Cengel 9–9: 22,5 %. Hai tên gọi khác nhau cho hai đại lượng khác nhau: ghi trong mục lỗi/nghi vấn nguồn.",
+   "en": "Cengel and the slide divide thrust power by the heat input, i.e. the product η_p·η_th of Farokhi and El-Sayed (see m01). Cengel Example 9–9: 22.5 %. The same name denotes different quantities: see the source notes."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.52",
+   "en": "Slide Ch.2 p.52"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.2 tr.53–55: động cơ nào KHÔNG có máy nén và tuabin?",
+   "en": "Slide Ch.2 pp.53–55: which engine has neither a compressor nor a turbine?"
+  },
+  "opts": [
+   {
+    "vi": "ramjet (Air inlet, Fuel nozzles, Flame holders, Jet nozzle)",
+    "en": "the ramjet (Air inlet, Fuel nozzles, Flame holders, Jet nozzle)"
+   },
+   {
+    "vi": "turbofan (Fan, LP/HP compressor, Duct, Burners, turbines)",
+    "en": "the turbofan (Fan, LP/HP compressor, Duct, Burners, turbines)"
+   },
+   {
+    "vi": "turboprop (Propeller, Gear reduction, Compressor, Burners, Turbine)",
+    "en": "the turboprop (Propeller, Gear reduction, Compressor, Burners, Turbine)"
+   },
+   {
+    "vi": "turbojet (Diffuser, Compressor, Burner, Turbine, Nozzle)",
+    "en": "the turbojet (Diffuser, Compressor, Burner, Turbine, Nozzle)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ramjet nén không khí chỉ bằng hiệu ứng ram ở cửa hút (tr.55) nên cần tốc độ bay cao; các loại còn lại đều có máy nén và tuabin (tr.51, 53, 54).",
+   "en": "The ramjet compresses air only by the ram effect in the inlet (p.55) and therefore needs high flight speed; all the others have a compressor and a turbine (pp.51, 53, 54)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.55",
+   "en": "Slide Ch.2 p.55"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.13: hiệu suất nhiệt của chu trình Carnot phụ thuộc vào loại môi chất làm việc (không khí, hơi nước, helium cho giá trị khác nhau).",
+   "en": "Slide Ch.2 p.13: the Carnot thermal efficiency depends on the working fluid (air, steam and helium give different values)."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: η_Carnot = 1 − T_L/T_H chỉ phụ thuộc hai nhiệt độ tuyệt đối, mọi môi chất cho cùng giá trị (cũng là kết quả của Cengel Ví dụ 9–1).",
+   "en": "False: η_Carnot = 1 − T_L/T_H depends only on the two absolute temperatures; every fluid gives the same value (also the result of Cengel Example 9–1)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot",
+   "en": "The Carnot cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.13",
+   "en": "Slide Ch.2 p.13"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.24: với nhiệt dung riêng hằng, tăng nhiệt cấp vào q_in của chu trình Otto (cùng r) sẽ làm hiệu suất 1 − 1/r^(k−1) tăng lên.",
+   "en": "Slide Ch.2 p.24: with constant specific heats, raising the heat added q_in of an Otto cycle (same r) raises the efficiency 1 − 1/r^(k−1)."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: η chỉ phụ thuộc r và k; q_in chỉ làm tăng công thực và nhiệt độ cực đại, không đổi η (với nhiệt dung hằng).",
+   "en": "False: η depends only on r and k; q_in raises the net work and the peak temperature but not η (for constant specific heats)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Otto",
+   "en": "The Otto cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.24",
+   "en": "Slide Ch.2 p.24"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.31: với cùng tỉ số nén r (khí lạnh), chu trình Diesel có hiệu suất cao hơn chu trình Otto.",
+   "en": "Slide Ch.2 p.31: at the same compression ratio r (cold air) the Diesel cycle has a higher efficiency than the Otto cycle."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: ngoặc vuông (r_c^k − 1)/[k(r_c − 1)] luôn lớn hơn 1 nên η_Diesel < η_Otto cùng r. Diesel chỉ hơn trong thực tế vì dùng r cao hơn nhiều (12–24 so với 7–10).",
+   "en": "False: the bracket (r_c^k − 1)/[k(r_c − 1)] is always above 1 so η_Diesel < η_Otto at equal r. Diesel wins only in practice because it uses a much higher r (12–24 versus 7–10)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Diesel",
+   "en": "The Diesel cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.31",
+   "en": "Slide Ch.2 p.31"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.39: hiệu suất nhiệt của chu trình Brayton lý tưởng (khí lạnh) tăng khi tăng nhiệt độ vào tuabin T₃ ở cùng tỉ số áp suất r_p.",
+   "en": "Slide Ch.2 p.39: the thermal efficiency of the ideal (cold-air) Brayton cycle increases when the turbine inlet temperature T₃ is raised at the same pressure ratio r_p."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: η = 1 − 1/r_p^((k−1)/k) chỉ phụ thuộc r_p và k. T₃ cao hơn làm tăng công thực (và vì vậy công suất trên mỗi kg khí), không đổi η của chu trình khí lạnh lý tưởng.",
+   "en": "False: η = 1 − 1/r_p^((k−1)/k) depends only on r_p and k. A higher T₃ raises the net work (hence the power per kg of air) but not the η of the ideal cold-air cycle."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.39",
+   "en": "Slide Ch.2 p.39"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.40: với T_min và T_max cố định, tỉ số áp suất cho công thực cực đại của chu trình Brayton cũng là tỉ số áp suất cho hiệu suất cực đại.",
+   "en": "Slide Ch.2 p.40: for fixed T_min and T_max, the pressure ratio giving the maximum net work of the Brayton cycle also gives the maximum efficiency."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: công thực đạt cực đại tại r_p = (T_max/T_min)^(k/[2(k−1)]) (8,2 trên slide) rồi giảm, trong khi hiệu suất 1 − 1/r_p^((k−1)/k) tăng đơn điệu theo r_p.",
+   "en": "False: the net work peaks at r_p = (T_max/T_min)^(k/[2(k−1)]) (8.2 on the slide) and then falls, while the efficiency 1 − 1/r_p^((k−1)/k) rises monotonically with r_p."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Brayton",
+   "en": "The Brayton cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.40",
+   "en": "Slide Ch.2 p.40"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.45: bộ hồi nhiệt luôn làm tăng hiệu suất của chu trình Brayton, và càng hiệu quả khi tỉ số áp suất r_p càng cao.",
+   "en": "Slide Ch.2 p.45: a regenerator always raises the efficiency of the Brayton cycle, and the higher the pressure ratio r_p the more effective it is."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: η_regen = 1 − (T₁/T₃)r_p^((k−1)/k) giảm khi r_p tăng; hồi nhiệt hiệu quả nhất ở r_p thấp và T₁/T₃ thấp, và vô ích khi r_p vượt (T₃/T₁)^(k/[2(k−1)]) vì lúc đó T₄ < T₂.",
+   "en": "False: η_regen = 1 − (T₁/T₃)r_p^((k−1)/k) falls as r_p rises; regeneration is most effective at low r_p and low T₁/T₃, and useless when r_p exceeds (T₃/T₁)^(k/[2(k−1)]) because then T₄ < T₂."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Hồi nhiệt",
+   "en": "Regeneration"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.45",
+   "en": "Slide Ch.2 p.45"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.46: làm mát trung gian giữa hai cấp máy nén làm tăng công nén cần thiết giữa hai áp suất cho trước.",
+   "en": "Slide Ch.2 p.46: intercooling between two compressor stages increases the compression work needed between two given pressures."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: làm mát giữ thể tích riêng nhỏ nên công nén giảm (vùng hồng \"work saved\" ở hình tr.46).",
+   "en": "False: cooling keeps the specific volume small so the compression work decreases (the pink \"work saved\" area of the figure on p.46)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Làm mát trung gian, hâm nóng",
+   "en": "Intercooling and reheating"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.46",
+   "en": "Slide Ch.2 p.46"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.49: trong chu trình phản lực lý tưởng, tuabin giãn khí tới áp suất môi trường, như trong chu trình Brayton đơn giản.",
+   "en": "Slide Ch.2 p.49: in the ideal jet-propulsion cycle the turbine expands the gas to the ambient pressure, as in the simple Brayton cycle."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: tuabin chỉ giãn đến áp suất mà công tuabin vừa đủ chạy máy nén và thiết bị phụ; phần giãn nở còn lại diễn ra trong vòi phun để tạo động năng (tr.49).",
+   "en": "False: the turbine expands only to the pressure at which its work just drives the compressor and auxiliaries; the remaining expansion happens in the nozzle to create kinetic energy (p.49)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.49",
+   "en": "Slide Ch.2 p.49"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.55: động cơ ramjet nén không khí bằng một máy nén hướng trục và dẫn động nó bằng một tuabin nhỏ.",
+   "en": "Slide Ch.2 p.55: a ramjet compresses the air with an axial compressor driven by a small turbine."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: ramjet không có máy nén và tuabin; nén bằng hiệu ứng ram ở cửa hút (Air inlet), rồi cháy ở buồng có Flame holders và phụt qua Jet nozzle (hình tr.55).",
+   "en": "False: a ramjet has neither compressor nor turbine; it compresses by the ram effect in the air inlet, then burns in a chamber with flame holders and exhausts through the jet nozzle (figure p.55)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình phản lực lý tưởng",
+   "en": "Ideal jet-propulsion cycle"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.55",
+   "en": "Slide Ch.2 p.55"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.2 tr.10: công thực của chu trình bằng diện tích nằm dưới đường cấp nhiệt trên giản đồ P–v.",
+   "en": "Slide Ch.2 p.10: the net work of the cycle equals the area under the heat-addition line on the P–v diagram."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: công thực là diện tích BÊN TRONG đường khép kín của chu trình (công giãn nở trừ công nén), không phải diện tích dưới một quá trình.",
+   "en": "False: the net work is the area ENCLOSED by the closed cycle (expansion work minus compression work), not the area under one process."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Khái niệm chu trình công suất khí",
+   "en": "Gas power cycle concepts"
+  },
+  "src": {
+   "vi": "Slide Ch.2 tr.10",
+   "en": "Slide Ch.2 p.10"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide (xem ảnh) + sách"
+ }
+]
