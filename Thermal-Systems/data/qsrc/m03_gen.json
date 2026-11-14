@@ -1,0 +1,2196 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tủ lạnh Carnot đảo ngược giữ không gian lạnh ở -10 °C và thải nhiệt ra môi trường ở 35 °C. COP của nó là:",
+   "en": "A reversed-Carnot refrigerator keeps the cold space at -10 °C and rejects heat to the environment at 35 °C. Its COP is:"
+  },
+  "opts": [
+   {
+    "vi": "5,85",
+    "en": "5.85"
+   },
+   {
+    "vi": "6,85",
+    "en": "6.85"
+   },
+   {
+    "vi": "0,17",
+    "en": "0.17"
+   },
+   {
+    "vi": "0,85",
+    "en": "0.85"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_R,Carnot = 1/(T_H/T_L − 1) = T_L/(T_H − T_L) = 263,15/45 = 5,85 (slide tr.13; nhiệt độ đổi sang K). 6,85 là COP bơm nhiệt = COP_R + 1; 0,171 là T_H/T_L − 1 chưa nghịch đảo; 0,854 chỉ là tỉ số nhiệt độ.",
+   "en": "COP_R,Carnot = 1/(T_H/T_L − 1) = T_L/(T_H − T_L) = 263.15/45 = 5.85 (slide p.13; temperatures in K). 6.85 is the heat-pump COP = COP_R + 1; 0.171 is T_H/T_L − 1 not yet inverted; 0.854 is only the temperature ratio."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP Carnot đảo ngược",
+   "en": "Added – generated from the type: reversed-Carnot COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tủ lạnh Carnot đảo ngược giữ không gian lạnh ở 0 °C và thải nhiệt ra môi trường ở 40 °C. COP của nó là:",
+   "en": "A reversed-Carnot refrigerator keeps the cold space at 0 °C and rejects heat to the environment at 40 °C. Its COP is:"
+  },
+  "opts": [
+   {
+    "vi": "6,83",
+    "en": "6.83"
+   },
+   {
+    "vi": "7,83",
+    "en": "7.83"
+   },
+   {
+    "vi": "0,15",
+    "en": "0.15"
+   },
+   {
+    "vi": "0,87",
+    "en": "0.87"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_R,Carnot = 1/(T_H/T_L − 1) = T_L/(T_H − T_L) = 273,15/40 = 6,83 (slide tr.13; nhiệt độ đổi sang K). 7,83 là COP bơm nhiệt = COP_R + 1; 0,146 là T_H/T_L − 1 chưa nghịch đảo; 0,872 chỉ là tỉ số nhiệt độ.",
+   "en": "COP_R,Carnot = 1/(T_H/T_L − 1) = T_L/(T_H − T_L) = 273.15/40 = 6.83 (slide p.13; temperatures in K). 7.83 is the heat-pump COP = COP_R + 1; 0.146 is T_H/T_L − 1 not yet inverted; 0.872 is only the temperature ratio."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP Carnot đảo ngược",
+   "en": "Added – generated from the type: reversed-Carnot COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tủ lạnh Carnot đảo ngược giữ không gian lạnh ở -20 °C và thải nhiệt ra môi trường ở 30 °C. COP của nó là:",
+   "en": "A reversed-Carnot refrigerator keeps the cold space at -20 °C and rejects heat to the environment at 30 °C. Its COP is:"
+  },
+  "opts": [
+   {
+    "vi": "5,06",
+    "en": "5.06"
+   },
+   {
+    "vi": "6,06",
+    "en": "6.06"
+   },
+   {
+    "vi": "0,20",
+    "en": "0.20"
+   },
+   {
+    "vi": "0,84",
+    "en": "0.84"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_R,Carnot = 1/(T_H/T_L − 1) = T_L/(T_H − T_L) = 253,15/50 = 5,06 (slide tr.13; nhiệt độ đổi sang K). 6,06 là COP bơm nhiệt = COP_R + 1; 0,198 là T_H/T_L − 1 chưa nghịch đảo; 0,835 chỉ là tỉ số nhiệt độ.",
+   "en": "COP_R,Carnot = 1/(T_H/T_L − 1) = T_L/(T_H − T_L) = 253.15/50 = 5.06 (slide p.13; temperatures in K). 6.06 is the heat-pump COP = COP_R + 1; 0.198 is T_H/T_L − 1 not yet inverted; 0.835 is only the temperature ratio."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP Carnot đảo ngược",
+   "en": "Added – generated from the type: reversed-Carnot COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bơm nhiệt Carnot lấy nhiệt từ không khí ngoài trời ở 5 °C và sưởi phòng ở 45 °C. COP của nó là:",
+   "en": "A Carnot heat pump takes heat from outdoor air at 5 °C and heats a room at 45 °C. Its COP is:"
+  },
+  "opts": [
+   {
+    "vi": "7,95",
+    "en": "7.95"
+   },
+   {
+    "vi": "6,95",
+    "en": "6.95"
+   },
+   {
+    "vi": "0,87",
+    "en": "0.87"
+   },
+   {
+    "vi": "1,14",
+    "en": "1.14"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_HP,Carnot = 1/(1 − T_L/T_H) = T_H/(T_H − T_L) = 318,15/40 = 7,95 (slide tr.13). 6,95 là COP_R = COP_HP − 1 của máy lạnh cùng hai nhiệt độ; 0,87 là tỉ số nhiệt độ; 1,14 là T_H/T_L chưa dùng công thức COP.",
+   "en": "COP_HP,Carnot = 1/(1 − T_L/T_H) = T_H/(T_H − T_L) = 318.15/40 = 7.95 (slide p.13). 6.95 is COP_R = COP_HP − 1 of a refrigerator between the same temperatures; 0.87 is the temperature ratio; 1.14 is T_H/T_L, not yet the COP formula."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP bơm nhiệt Carnot",
+   "en": "Added – generated from the type: Carnot heat-pump COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tủ lạnh có COP_R = 3,2. Nếu cùng thiết bị đó chạy như bơm nhiệt (cùng Q_L, Q_H, công) thì COP_HP là:",
+   "en": "A refrigerator has COP_R = 3.2. If the same machine is run as a heat pump (same Q_L, Q_H and work), its COP_HP is:"
+  },
+  "opts": [
+   {
+    "vi": "4,2",
+    "en": "4.2"
+   },
+   {
+    "vi": "2,2",
+    "en": "2.2"
+   },
+   {
+    "vi": "0,3",
+    "en": "0.3"
+   },
+   {
+    "vi": "3,2",
+    "en": "3.2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Q_H = Q_L + W ⇒ COP_HP = Q_H/W = COP_R + 1 = 4,2 (Cengel Hệ thức 11–3). COP_R − 1 = 2,2 trừ sai dấu; 1/COP_R = 0,31 nghịch đảo; giữ nguyên 3,2 quên rằng công cũng thành nhiệt thải.",
+   "en": "Q_H = Q_L + W ⇒ COP_HP = Q_H/W = COP_R + 1 = 4.2 (Cengel Eq. 11–3). COP_R − 1 = 2.2 subtracts; 1/COP_R = 0.31 inverts; keeping 3.2 forgets that the work also ends up as rejected heat."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tủ lạnh, bơm nhiệt, COP",
+   "en": "Refrigerators, heat pumps, COP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP_HP = COP_R + 1",
+   "en": "Added – generated from the type: COP_HP = COP_R + 1"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tủ lạnh Carnot có COP_R = 5,0 và thải nhiệt ở 310 K. Nhiệt độ không gian lạnh T_L (°C) là:",
+   "en": "A Carnot refrigerator has COP_R = 5.0 and rejects heat at 310 K. The cold-space temperature T_L (°C) is:"
+  },
+  "opts": [
+   {
+    "vi": "−14,8 °C",
+    "en": "−14.8 °C"
+   },
+   {
+    "vi": "−221,5 °C",
+    "en": "−221.5 °C"
+   },
+   {
+    "vi": "1.276,8 °C",
+    "en": "1,276.8 °C"
+   },
+   {
+    "vi": "258,3 °C",
+    "en": "258.3 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP = T_L/(T_H − T_L) ⇒ T_L = COP·T_H/(1 + COP) = 5·310/6 = 258,3 K = −14,8 °C. T_H/(1 + COP) = −221,5 °C là nhầm biến đổi; 258,3 chưa đổi sang °C.",
+   "en": "COP = T_L/(T_H − T_L) ⇒ T_L = COP·T_H/(1 + COP) = 5·310/6 = 258.3 K = −14.8 °C. T_H/(1 + COP) = −221.5 °C is an algebra slip; 258.3 is not yet converted to °C."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng suy T_L từ COP Carnot",
+   "en": "Added – generated from the type: T_L from the Carnot COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tủ lạnh dùng R-134a, chu trình nén hơi lý tưởng giữa 180 kPa và 900 kPa, ṁ = 0,04 kg/s. Nhiệt lượng lấy khỏi không gian lạnh Q̇_L (kW) là:",
+   "en": "A refrigerator uses R-134a on the ideal vapor-compression cycle between 180 kPa and 900 kPa, ṁ = 0.04 kg/s. The refrigeration rate Q̇_L (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "5,65 kW",
+    "en": "5.65 kW"
+   },
+   {
+    "vi": "6,99 kW",
+    "en": "6.99 kW"
+   },
+   {
+    "vi": "1,34 kW",
+    "en": "1.34 kW"
+   },
+   {
+    "vi": "141,25 kW",
+    "en": "141.25 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₁ = h_g@180 kPa = 242,86; h₃ = h₄ = h_f@900 kPa = 101,61 kJ/kg ⇒ Q̇_L = ṁ(h₁ − h₄) = 0,04·141,25 = 5,65 kW. 6,99 là Q̇_H; 1,34 là công máy nén; 141,25 quên nhân ṁ.",
+   "en": "h₁ = h_g@180 kPa = 242.86; h₃ = h₄ = h_f@900 kPa = 101.61 kJ/kg ⇒ Q̇_L = ṁ(h₁ − h₄) = 0.04·141.25 = 5.65 kW. 6.99 is Q̇_H; 1.34 is the compressor power; 141.25 forgets to multiply by ṁ."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất lạnh của chu trình nén hơi",
+   "en": "Added – generated from the type: refrigeration rate of the vapor-compression cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tủ lạnh dùng R-134a, chu trình nén hơi lý tưởng giữa 200 kPa và 1000 kPa, ṁ = 0,08 kg/s. Nhiệt lượng lấy khỏi không gian lạnh Q̇_L (kW) là:",
+   "en": "A refrigerator uses R-134a on the ideal vapor-compression cycle between 200 kPa and 1000 kPa, ṁ = 0.08 kg/s. The refrigeration rate Q̇_L (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "10,97 kW",
+    "en": "10.97 kW"
+   },
+   {
+    "vi": "13,66 kW",
+    "en": "13.66 kW"
+   },
+   {
+    "vi": "2,69 kW",
+    "en": "2.69 kW"
+   },
+   {
+    "vi": "137,14 kW",
+    "en": "137.14 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₁ = h_g@200 kPa = 244,46; h₃ = h₄ = h_f@1000 kPa = 107,32 kJ/kg ⇒ Q̇_L = ṁ(h₁ − h₄) = 0,08·137,14 = 10,97 kW. 13,66 là Q̇_H; 2,69 là công máy nén; 137,14 quên nhân ṁ.",
+   "en": "h₁ = h_g@200 kPa = 244.46; h₃ = h₄ = h_f@1000 kPa = 107.32 kJ/kg ⇒ Q̇_L = ṁ(h₁ − h₄) = 0.08·137.14 = 10.97 kW. 13.66 is Q̇_H; 2.69 is the compressor power; 137.14 forgets to multiply by ṁ."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất lạnh của chu trình nén hơi",
+   "en": "Added – generated from the type: refrigeration rate of the vapor-compression cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a, chu trình nén hơi lý tưởng giữa 240 kPa và 1200 kPa, ṁ = 0,06 kg/s. Công suất điện của máy nén Ẇ (kW) là:",
+   "en": "R-134a, ideal vapor-compression cycle between 240 kPa and 1200 kPa, ṁ = 0.06 kg/s. The compressor power Ẇ (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,01 kW",
+    "en": "2.01 kW"
+   },
+   {
+    "vi": "9,78 kW",
+    "en": "9.78 kW"
+   },
+   {
+    "vi": "7,77 kW",
+    "en": "7.77 kW"
+   },
+   {
+    "vi": "33,57 kW",
+    "en": "33.57 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ nội suy theo s₁ = s_g@240 kPa ở 1200 kPa: h₂ = 280,85; h₁ = 247,28 kJ/kg ⇒ Ẇ = ṁ(h₂ − h₁) = 0,06·33,57 = 2,01 kW. 9,78 là Q̇_H; 7,77 là Q̇_L; 33,57 quên ṁ.",
+   "en": "h₂ interpolated at s₁ = s_g@240 kPa and 1200 kPa: h₂ = 280.85; h₁ = 247.28 kJ/kg ⇒ Ẇ = ṁ(h₂ − h₁) = 0.06·33.57 = 2.01 kW. 9.78 is Q̇_H; 7.77 is Q̇_L; 33.57 forgets ṁ."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất máy nén",
+   "en": "Added – generated from the type: compressor power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a, chu trình nén hơi lý tưởng giữa 140 kPa và 1000 kPa, ṁ = 0,05 kg/s. Công suất điện của máy nén Ẇ (kW) là:",
+   "en": "R-134a, ideal vapor-compression cycle between 140 kPa and 1000 kPa, ṁ = 0.05 kg/s. The compressor power Ẇ (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,05 kW",
+    "en": "2.05 kW"
+   },
+   {
+    "vi": "8,64 kW",
+    "en": "8.64 kW"
+   },
+   {
+    "vi": "6,59 kW",
+    "en": "6.59 kW"
+   },
+   {
+    "vi": "41,05 kW",
+    "en": "41.05 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ nội suy theo s₁ = s_g@140 kPa ở 1000 kPa: h₂ = 280,21; h₁ = 239,16 kJ/kg ⇒ Ẇ = ṁ(h₂ − h₁) = 0,05·41,05 = 2,05 kW. 8,64 là Q̇_H; 6,59 là Q̇_L; 41,05 quên ṁ.",
+   "en": "h₂ interpolated at s₁ = s_g@140 kPa and 1000 kPa: h₂ = 280.21; h₁ = 239.16 kJ/kg ⇒ Ẇ = ṁ(h₂ − h₁) = 0.05·41.05 = 2.05 kW. 8.64 is Q̇_H; 6.59 is Q̇_L; 41.05 forgets ṁ."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất máy nén",
+   "en": "Added – generated from the type: compressor power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 320 kPa (bay hơi) và 1400 kPa (ngưng tụ). COP của tủ lạnh là:",
+   "en": "Ideal vapor-compression cycle with R-134a between 320 kPa (evaporator) and 1400 kPa (condenser). The COP of the refrigerator is:"
+  },
+  "opts": [
+   {
+    "vi": "4,06",
+    "en": "4.06"
+   },
+   {
+    "vi": "5,06",
+    "en": "5.06"
+   },
+   {
+    "vi": "0,25",
+    "en": "0.25"
+   },
+   {
+    "vi": "1,25",
+    "en": "1.25"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_R = (h₁ − h₄)/(h₂ − h₁) = 124,66/30,68 = 4,06. 5,06 là COP bơm nhiệt = COP_R + 1; 0,25 và 1,25 là các tỉ số đảo hoặc nhầm Q_H với Q_L.",
+   "en": "COP_R = (h₁ − h₄)/(h₂ − h₁) = 124.66/30.68 = 4.06. 5.06 is the heat-pump COP = COP_R + 1; 0.25 and 1.25 are inverted ratios or Q_H mixed up with Q_L."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP của chu trình nén hơi lý tưởng",
+   "en": "Added – generated from the type: COP of the ideal vapor-compression cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 100 kPa (bay hơi) và 800 kPa (ngưng tụ). COP của tủ lạnh là:",
+   "en": "Ideal vapor-compression cycle with R-134a between 100 kPa (evaporator) and 800 kPa (condenser). The COP of the refrigerator is:"
+  },
+  "opts": [
+   {
+    "vi": "3,21",
+    "en": "3.21"
+   },
+   {
+    "vi": "4,21",
+    "en": "4.21"
+   },
+   {
+    "vi": "0,31",
+    "en": "0.31"
+   },
+   {
+    "vi": "1,31",
+    "en": "1.31"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_R = (h₁ − h₄)/(h₂ − h₁) = 138,97/43,23 = 3,21. 4,21 là COP bơm nhiệt = COP_R + 1; 0,31 và 1,31 là các tỉ số đảo hoặc nhầm Q_H với Q_L.",
+   "en": "COP_R = (h₁ − h₄)/(h₂ − h₁) = 138.97/43.23 = 3.21. 4.21 is the heat-pump COP = COP_R + 1; 0.31 and 1.31 are inverted ratios or Q_H mixed up with Q_L."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP của chu trình nén hơi lý tưởng",
+   "en": "Added – generated from the type: COP of the ideal vapor-compression cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 120 kPa (bay hơi) và 900 kPa (ngưng tụ). COP của tủ lạnh là:",
+   "en": "Ideal vapor-compression cycle with R-134a between 120 kPa (evaporator) and 900 kPa (condenser). The COP of the refrigerator is:"
+  },
+  "opts": [
+   {
+    "vi": "3,22",
+    "en": "3.22"
+   },
+   {
+    "vi": "4,22",
+    "en": "4.22"
+   },
+   {
+    "vi": "0,31",
+    "en": "0.31"
+   },
+   {
+    "vi": "1,31",
+    "en": "1.31"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_R = (h₁ − h₄)/(h₂ − h₁) = 135,36/42,00 = 3,22. 4,22 là COP bơm nhiệt = COP_R + 1; 0,31 và 1,31 là các tỉ số đảo hoặc nhầm Q_H với Q_L.",
+   "en": "COP_R = (h₁ − h₄)/(h₂ − h₁) = 135.36/42.00 = 3.22. 4.22 is the heat-pump COP = COP_R + 1; 0.31 and 1.31 are inverted ratios or Q_H mixed up with Q_L."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP của chu trình nén hơi lý tưởng",
+   "en": "Added – generated from the type: COP of the ideal vapor-compression cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 160 kPa và 800 kPa. Chất lượng hơi x₄ của môi chất vào dàn bay hơi (sau tiết lưu) là:",
+   "en": "Ideal vapor-compression cycle with R-134a between 160 kPa and 800 kPa. The quality x₄ of the refrigerant entering the evaporator (after throttling) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,306",
+    "en": "0.306"
+   },
+   {
+    "vi": "0,694",
+    "en": "0.694"
+   },
+   {
+    "vi": "0,374",
+    "en": "0.374"
+   },
+   {
+    "vi": "0,267",
+    "en": "0.267"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tiết lưu đẳng entanpi: h₄ = h₃ = h_f@800 kPa = 95,47 kJ/kg. Ở 160 kPa: h_f = 31,21, h_fg = 209,90 ⇒ x₄ = (h₄ − h_f)/h_fg = 0,306. 0,694 là phần lỏng; dùng h_fg của áp suất cao cho 0,374; chia cho h_g cho 0,267.",
+   "en": "Isenthalpic throttling: h₄ = h₃ = h_f@800 kPa = 95.47 kJ/kg. At 160 kPa: h_f = 31.21, h_fg = 209.90 ⇒ x₄ = (h₄ − h_f)/h_fg = 0.306. 0.694 is the liquid fraction; using h_fg of the high pressure gives 0.374; dividing by h_g gives 0.267."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chất lượng hơi sau tiết lưu",
+   "en": "Added – generated from the type: quality after throttling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 200 kPa và 1000 kPa. Chất lượng hơi x₄ của môi chất vào dàn bay hơi (sau tiết lưu) là:",
+   "en": "Ideal vapor-compression cycle with R-134a between 200 kPa and 1000 kPa. The quality x₄ of the refrigerant entering the evaporator (after throttling) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,334",
+    "en": "0.334"
+   },
+   {
+    "vi": "0,666",
+    "en": "0.666"
+   },
+   {
+    "vi": "0,421",
+    "en": "0.421"
+   },
+   {
+    "vi": "0,282",
+    "en": "0.282"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tiết lưu đẳng entanpi: h₄ = h₃ = h_f@1000 kPa = 107,32 kJ/kg. Ở 200 kPa: h_f = 38,43, h_fg = 206,03 ⇒ x₄ = (h₄ − h_f)/h_fg = 0,334. 0,666 là phần lỏng; dùng h_fg của áp suất cao cho 0,421; chia cho h_g cho 0,282.",
+   "en": "Isenthalpic throttling: h₄ = h₃ = h_f@1000 kPa = 107.32 kJ/kg. At 200 kPa: h_f = 38.43, h_fg = 206.03 ⇒ x₄ = (h₄ − h_f)/h_fg = 0.334. 0.666 is the liquid fraction; using h_fg of the high pressure gives 0.421; dividing by h_g gives 0.282."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chất lượng hơi sau tiết lưu",
+   "en": "Added – generated from the type: quality after throttling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một hệ lạnh R-134a (chu trình nén hơi lý tưởng giữa 180 kPa và 900 kPa) phải đạt công suất lạnh 12 kW. Lưu lượng khối lượng cần thiết (kg/s) là:",
+   "en": "An R-134a refrigeration system (ideal vapor-compression cycle between 180 kPa and 900 kPa) must deliver 12 kW of cooling. The required mass flow rate (kg/s) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,085 kg/s",
+    "en": "0.085 kg/s"
+   },
+   {
+    "vi": "0,358 kg/s",
+    "en": "0.358 kg/s"
+   },
+   {
+    "vi": "0,069 kg/s",
+    "en": "0.069 kg/s"
+   },
+   {
+    "vi": "0,058 kg/s",
+    "en": "0.058 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "q_L = h₁ − h₄ = 242,86 − 101,61 = 141,25 kJ/kg ⇒ ṁ = Q̇_L/q_L = 12/141,25 = 0,085 kg/s. 12/w = 0,358 chia cho công nén; 12/q_H = 0,069 chia cho nhiệt thải; 12/h_fg = 0,058 coi toàn bộ h_fg là hiệu ứng lạnh.",
+   "en": "q_L = h₁ − h₄ = 242.86 − 101.61 = 141.25 kJ/kg ⇒ ṁ = Q̇_L/q_L = 12/141.25 = 0.085 kg/s. 12/w = 0.358 divides by the compressor work; 12/q_H = 0.069 divides by the rejected heat; 12/h_fg = 0.058 treats all of h_fg as the cooling effect."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lưu lượng khối lượng theo tải lạnh",
+   "en": "Added – generated from the type: mass flow from the cooling load"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một hệ lạnh R-134a (chu trình nén hơi lý tưởng giữa 240 kPa và 1200 kPa) phải đạt công suất lạnh 25 kW. Lưu lượng khối lượng cần thiết (kg/s) là:",
+   "en": "An R-134a refrigeration system (ideal vapor-compression cycle between 240 kPa and 1200 kPa) must deliver 25 kW of cooling. The required mass flow rate (kg/s) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,193 kg/s",
+    "en": "0.193 kg/s"
+   },
+   {
+    "vi": "0,745 kg/s",
+    "en": "0.745 kg/s"
+   },
+   {
+    "vi": "0,153 kg/s",
+    "en": "0.153 kg/s"
+   },
+   {
+    "vi": "0,123 kg/s",
+    "en": "0.123 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "q_L = h₁ − h₄ = 247,28 − 117,77 = 129,51 kJ/kg ⇒ ṁ = Q̇_L/q_L = 25/129,51 = 0,193 kg/s. 25/w = 0,745 chia cho công nén; 25/q_H = 0,153 chia cho nhiệt thải; 25/h_fg = 0,123 coi toàn bộ h_fg là hiệu ứng lạnh.",
+   "en": "q_L = h₁ − h₄ = 247.28 − 117.77 = 129.51 kJ/kg ⇒ ṁ = Q̇_L/q_L = 25/129.51 = 0.193 kg/s. 25/w = 0.745 divides by the compressor work; 25/q_H = 0.153 divides by the rejected heat; 25/h_fg = 0.123 treats all of h_fg as the cooling effect."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng lưu lượng khối lượng theo tải lạnh",
+   "en": "Added – generated from the type: mass flow from the cooling load"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một máy lạnh có COP = 3,6 lấy 9 kW từ không gian lạnh. Nhiệt lượng thải ra môi trường Q̇_H (kW) là:",
+   "en": "A refrigerator with COP = 3.6 removes 9 kW from the cold space. The heat rejected to the environment Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "11,50 kW",
+    "en": "11.50 kW"
+   },
+   {
+    "vi": "41,40 kW",
+    "en": "41.40 kW"
+   },
+   {
+    "vi": "2,50 kW",
+    "en": "2.50 kW"
+   },
+   {
+    "vi": "6,50 kW",
+    "en": "6.50 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ẇ = Q̇_L/COP = 9/3,6 = 2,50 kW; Q̇_H = Q̇_L + Ẇ = 9·(1 + 1/3,6) = 11,50 kW (cân bằng năng lượng quanh chu trình). 41,40 nhân thêm COP; 2,50 chỉ là công; 6,50 trừ thay vì cộng.",
+   "en": "Ẇ = Q̇_L/COP = 9/3.6 = 2.50 kW; Q̇_H = Q̇_L + Ẇ = 9·(1 + 1/3.6) = 11.50 kW (energy balance around the cycle). 41.40 multiplies by COP; 2.50 is only the work; 6.50 subtracts instead of adding."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tủ lạnh, bơm nhiệt, COP",
+   "en": "Refrigerators, heat pumps, COP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng cân bằng năng lượng của máy lạnh",
+   "en": "Added – generated from the type: energy balance of a refrigerator"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một máy lạnh có COP = 4,2 lấy 15 kW từ không gian lạnh. Nhiệt lượng thải ra môi trường Q̇_H (kW) là:",
+   "en": "A refrigerator with COP = 4.2 removes 15 kW from the cold space. The heat rejected to the environment Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "18,57 kW",
+    "en": "18.57 kW"
+   },
+   {
+    "vi": "78,00 kW",
+    "en": "78.00 kW"
+   },
+   {
+    "vi": "3,57 kW",
+    "en": "3.57 kW"
+   },
+   {
+    "vi": "11,43 kW",
+    "en": "11.43 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ẇ = Q̇_L/COP = 15/4,2 = 3,57 kW; Q̇_H = Q̇_L + Ẇ = 15·(1 + 1/4,2) = 18,57 kW (cân bằng năng lượng quanh chu trình). 78,00 nhân thêm COP; 3,57 chỉ là công; 11,43 trừ thay vì cộng.",
+   "en": "Ẇ = Q̇_L/COP = 15/4.2 = 3.57 kW; Q̇_H = Q̇_L + Ẇ = 15·(1 + 1/4.2) = 18.57 kW (energy balance around the cycle). 78.00 multiplies by COP; 3.57 is only the work; 11.43 subtracts instead of adding."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tủ lạnh, bơm nhiệt, COP",
+   "en": "Refrigerators, heat pumps, COP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng cân bằng năng lượng của máy lạnh",
+   "en": "Added – generated from the type: energy balance of a refrigerator"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bơm nhiệt R-134a chạy chu trình nén hơi lý tưởng giữa 140 kPa và 800 kPa, công suất điện máy nén 3 kW. Nhiệt lượng cấp cho không gian sưởi (kW) là:",
+   "en": "An R-134a heat pump runs the ideal vapor-compression cycle between 140 kPa and 800 kPa with a 3 kW compressor. The heat delivered to the heated space (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "14,9 kW",
+    "en": "14.9 kW"
+   },
+   {
+    "vi": "11,9 kW",
+    "en": "11.9 kW"
+   },
+   {
+    "vi": "0,6 kW",
+    "en": "0.6 kW"
+   },
+   {
+    "vi": "17,9 kW",
+    "en": "17.9 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_HP = (h₂ − h₃)/(h₂ − h₁) = 179,92/36,23 = 4,97 ⇒ Q̇_H = COP_HP·Ẇ = 4,97·3 = 14,9 kW. 11,9 dùng COP_R (đó là Q̇_L); 0,6 chia thay vì nhân.",
+   "en": "COP_HP = (h₂ − h₃)/(h₂ − h₁) = 179.92/36.23 = 4.97 ⇒ Q̇_H = COP_HP·Ẇ = 4.97·3 = 14.9 kW. 11.9 uses COP_R (that is Q̇_L); 0.6 divides instead of multiplying."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tủ lạnh, bơm nhiệt, COP",
+   "en": "Refrigerators, heat pumps, COP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất sưởi của bơm nhiệt",
+   "en": "Added – generated from the type: heating capacity of a heat pump"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với cùng áp suất ngưng 800 kPa, chu trình nén hơi lý tưởng R-134a có áp suất bay hơi 240 kPa so với 140 kPa. COP của chu trình bay hơi 240 kPa là:",
+   "en": "At the same 800 kPa condenser pressure, an ideal R-134a vapor-compression cycle has an evaporator pressure of 240 kPa instead of 140 kPa. The COP of the 240 kPa cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "6,06",
+    "en": "6.06"
+   },
+   {
+    "vi": "3,97",
+    "en": "3.97"
+   },
+   {
+    "vi": "3,17",
+    "en": "3.17"
+   },
+   {
+    "vi": "3,76",
+    "en": "3.76"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "240 kPa: h₁ = 247,28, h₂ = 272,31, h₄ = 95,47 kJ/kg ⇒ COP = 151,81/25,03 = 6,06; ở 140 kPa COP = 3,97. Nâng áp suất bay hơi (T_sat từ −18,8 lên −5,4 °C) vừa tăng q_L vừa giảm công nén nên COP tăng khoảng 53 %. Quy tắc của Cengel §11-3 (bổ sung): COP tăng 2–4 % cho mỗi °C tăng nhiệt độ bay hơi.",
+   "en": "240 kPa: h₁ = 247.28, h₂ = 272.31, h₄ = 95.47 kJ/kg ⇒ COP = 151.81/25.03 = 6.06; at 140 kPa the COP = 3.97. Raising the evaporator pressure (T_sat from −18.8 to −5.4 °C) both raises q_L and lowers the compression work, so the COP rises by about 53 %. Cengel §11-3 rule of thumb (added): the COP improves by 2–4 % for each °C the evaporating temperature is raised."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng ảnh hưởng áp suất bay hơi tới COP",
+   "en": "Added – generated from the type: effect of evaporator pressure on the COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a vào máy nén là hơi quá nhiệt ở 0,14 MPa, −10 °C (h₁ = 246,36 kJ/kg); nén tới 0,8 MPa với hiệu suất đẳng entropi 80 % (h₂ₛ = 284,21 kJ/kg); môi chất ra dàn ngưng là lỏng ở 30 °C (h₃ ≅ h_f@30 °C = 93,58 kJ/kg). COP của tủ lạnh là:",
+   "en": "R-134a enters the compressor as superheated vapor at 0.14 MPa, −10 °C (h₁ = 246.36 kJ/kg); it is compressed to 0.8 MPa with an isentropic efficiency of 80 % (h₂ₛ = 284.21 kJ/kg); the refrigerant leaves the condenser as liquid at 30 °C (h₃ ≅ h_f@30 °C = 93.58 kJ/kg). The COP of the refrigerator is:"
+  },
+  "opts": [
+   {
+    "vi": "3,23",
+    "en": "3.23"
+   },
+   {
+    "vi": "4,04",
+    "en": "4.04"
+   },
+   {
+    "vi": "3,19",
+    "en": "3.19"
+   },
+   {
+    "vi": "4,23",
+    "en": "4.23"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 246,36 + (284,21 − 246,36)/0,8 = 293,67 kJ/kg; q_L = h₁ − h₄ = 246,36 − 93,58 = 152,78; w = h₂ − h₁ = 47,31 ⇒ COP = 3,23. 4,04 dùng công đẳng entropi (bỏ η_c); 3,19 bỏ quá lạnh (h₃ = h_f ở áp suất ngưng); 4,23 là COP bơm nhiệt.",
+   "en": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 246.36 + (284.21 − 246.36)/0.8 = 293.67 kJ/kg; q_L = h₁ − h₄ = 246.36 − 93.58 = 152.78; w = h₂ − h₁ = 47.31 ⇒ COP = 3.23. 4.04 uses the isentropic work (drops η_c); 3.19 ignores the subcooling (h₃ = h_f at the condenser pressure); 4.23 is the heat-pump COP."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình lạnh thực",
+   "en": "Real refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chu trình thực có hiệu suất máy nén và quá lạnh",
+   "en": "Added – generated from the type: actual cycle with compressor efficiency and subcooling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a vào máy nén là hơi quá nhiệt ở 0,14 MPa, −10 °C (h₁ = 246,36 kJ/kg); nén tới 1,0 MPa với hiệu suất đẳng entropi 75 % (h₂ₛ = 289,25 kJ/kg); môi chất ra dàn ngưng là lỏng ở 28 °C (h₃ ≅ h_f@28 °C = 90,69 kJ/kg). COP của tủ lạnh là:",
+   "en": "R-134a enters the compressor as superheated vapor at 0.14 MPa, −10 °C (h₁ = 246.36 kJ/kg); it is compressed to 1.0 MPa with an isentropic efficiency of 75 % (h₂ₛ = 289.25 kJ/kg); the refrigerant leaves the condenser as liquid at 28 °C (h₃ ≅ h_f@28 °C = 90.69 kJ/kg). The COP of the refrigerator is:"
+  },
+  "opts": [
+   {
+    "vi": "2,72",
+    "en": "2.72"
+   },
+   {
+    "vi": "3,63",
+    "en": "3.63"
+   },
+   {
+    "vi": "2,43",
+    "en": "2.43"
+   },
+   {
+    "vi": "3,72",
+    "en": "3.72"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 246,36 + (289,25 − 246,36)/0,75 = 303,55 kJ/kg; q_L = h₁ − h₄ = 246,36 − 90,69 = 155,67; w = h₂ − h₁ = 57,19 ⇒ COP = 2,72. 3,63 dùng công đẳng entropi (bỏ η_c); 2,43 bỏ quá lạnh (h₃ = h_f ở áp suất ngưng); 3,72 là COP bơm nhiệt.",
+   "en": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 246.36 + (289.25 − 246.36)/0.75 = 303.55 kJ/kg; q_L = h₁ − h₄ = 246.36 − 90.69 = 155.67; w = h₂ − h₁ = 57.19 ⇒ COP = 2.72. 3.63 uses the isentropic work (drops η_c); 2.43 ignores the subcooling (h₃ = h_f at the condenser pressure); 3.72 is the heat-pump COP."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình lạnh thực",
+   "en": "Real refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chu trình thực có hiệu suất máy nén và quá lạnh",
+   "en": "Added – generated from the type: actual cycle with compressor efficiency and subcooling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a vào máy nén là hơi quá nhiệt ở 0,14 MPa, −10 °C (h₁ = 246,36 kJ/kg); nén tới 0,7 MPa với hiệu suất đẳng entropi 85 % (h₂ₛ = 281,21 kJ/kg); môi chất ra dàn ngưng là lỏng ở 26 °C (h₃ ≅ h_f@26 °C = 87,83 kJ/kg). COP của tủ lạnh là:",
+   "en": "R-134a enters the compressor as superheated vapor at 0.14 MPa, −10 °C (h₁ = 246.36 kJ/kg); it is compressed to 0.7 MPa with an isentropic efficiency of 85 % (h₂ₛ = 281.21 kJ/kg); the refrigerant leaves the condenser as liquid at 26 °C (h₃ ≅ h_f@26 °C = 87.83 kJ/kg). The COP of the refrigerator is:"
+  },
+  "opts": [
+   {
+    "vi": "3,87",
+    "en": "3.87"
+   },
+   {
+    "vi": "4,55",
+    "en": "4.55"
+   },
+   {
+    "vi": "3,84",
+    "en": "3.84"
+   },
+   {
+    "vi": "4,87",
+    "en": "4.87"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 246,36 + (281,21 − 246,36)/0,85 = 287,36 kJ/kg; q_L = h₁ − h₄ = 246,36 − 87,83 = 158,53; w = h₂ − h₁ = 41,00 ⇒ COP = 3,87. 4,55 dùng công đẳng entropi (bỏ η_c); 3,84 bỏ quá lạnh (h₃ = h_f ở áp suất ngưng); 4,87 là COP bơm nhiệt.",
+   "en": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 246.36 + (281.21 − 246.36)/0.85 = 287.36 kJ/kg; q_L = h₁ − h₄ = 246.36 − 87.83 = 158.53; w = h₂ − h₁ = 41.00 ⇒ COP = 3.87. 4.55 uses the isentropic work (drops η_c); 3.84 ignores the subcooling (h₃ = h_f at the condenser pressure); 4.87 is the heat-pump COP."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình lạnh thực",
+   "en": "Real refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chu trình thực có hiệu suất máy nén và quá lạnh",
+   "en": "Added – generated from the type: actual cycle with compressor efficiency and subcooling"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một máy điều hoà 5 tấn lạnh (1 tấn lạnh = 211 kJ/phút theo Cengel §11-1) có COP = 3,5. Công suất điện (kW) cần cấp là:",
+   "en": "An air conditioner rated 5 tons of refrigeration (1 ton = 211 kJ/min, Cengel §11-1) has COP = 3.5. The electric power required (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "5,02 kW",
+    "en": "5.02 kW"
+   },
+   {
+    "vi": "17,58 kW",
+    "en": "17.58 kW"
+   },
+   {
+    "vi": "301,43 kW",
+    "en": "301.43 kW"
+   },
+   {
+    "vi": "61,54 kW",
+    "en": "61.54 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Q̇_L = 5·211 kJ/phút = 1 055 kJ/phút = 17,58 kW; Ẇ = Q̇_L/COP = 17,58/3,5 = 5,02 kW. 17,58 là tải lạnh chứ không phải công suất điện; 301,4 quên đổi phút sang giây; nhân COP thay vì chia cho 61,5.",
+   "en": "Q̇_L = 5·211 kJ/min = 1,055 kJ/min = 17.58 kW; Ẇ = Q̇_L/COP = 17.58/3.5 = 5.02 kW. 17.58 is the cooling load, not the electric power; 301.4 forgets to convert minutes to seconds; multiplying by COP instead of dividing gives 61.5."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Đơn vị và quy đổi",
+   "en": "Units and conversions"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tấn lạnh và công suất điện",
+   "en": "Added – generated from the type: tons of refrigeration and electric power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "Cengel §11-1 (211 kJ/min) + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide tr.32 nói khí xả vào bộ trao đổi nhiệt sơ cấp \"ở áp suất trung bình 30 đến 40 psi\" nhưng không nói đó là áp suất dư (gauge) hay tuyệt đối. Nếu là áp suất dư và áp suất khí quyển 101,3 kPa, giới hạn trên 40 psi tương ứng áp suất tuyệt đối (kPa) khoảng:",
+   "en": "Slide p.32 says the bleed air enters the primary heat exchanger \"at an average pressure of 30 to 40 p.s.i.\" without saying gauge or absolute. If it is gauge and atmospheric pressure is 101.3 kPa, the upper limit of 40 psi corresponds to an absolute pressure (kPa) of about:"
+  },
+  "opts": [
+   {
+    "vi": "377 kPa",
+    "en": "377 kPa"
+   },
+   {
+    "vi": "276 kPa",
+    "en": "276 kPa"
+   },
+   {
+    "vi": "552 kPa",
+    "en": "552 kPa"
+   },
+   {
+    "vi": "107 kPa",
+    "en": "107 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1 psi = 6,894757 kPa ⇒ 40 psi = 276 kPa (áp suất dư); áp suất tuyệt đối = dư + khí quyển = 276 + 101,3 = 377 kPa. Nếu 40 psi là áp suất tuyệt đối thì chỉ 276 kPa: slide không nói rõ, ghi vào mục lỗi nguồn. 107 chia thay vì nhân.",
+   "en": "1 psi = 6.894757 kPa ⇒ 40 psi = 276 kPa (gauge); absolute = gauge + atmospheric = 276 + 101.3 = 377 kPa. If 40 psi were already absolute it would be only 276 kPa: the slide does not say, recorded in the source-error list. 107 divides instead of multiplying."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Đơn vị và quy đổi",
+   "en": "Units and conversions"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng đổi psi sang kPa (áp suất dư/tuyệt đối)",
+   "en": "Added – generated from the type: psi to kPa (gauge/absolute)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide tr.32 + hệ số đổi (script)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide tr.35 cho trục ACM quay 40,000 đến 50,000 vòng/phút. Tốc độ góc ở 50,000 vòng/phút (rad/s) là:",
+   "en": "Slide p.35 gives the ACM shaft speed as 40.000 to 50.000 rpm. The angular speed at 50,000 rpm (rad/s) is:"
+  },
+  "opts": [
+   {
+    "vi": "5.236 rad/s",
+    "en": "5,236 rad/s"
+   },
+   {
+    "vi": "833 rad/s",
+    "en": "833 rad/s"
+   },
+   {
+    "vi": "314.159 rad/s",
+    "en": "314,159 rad/s"
+   },
+   {
+    "vi": "2.618 rad/s",
+    "en": "2,618 rad/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ω = 2π·n/60 = 2π·50 000/60 = 5.236 rad/s. 833 là số vòng/giây (chưa nhân 2π); 314.159 quên chia 60; 2.618 chỉ nhân π.",
+   "en": "ω = 2π·n/60 = 2π·50,000/60 = 5,236 rad/s. 833 is revolutions per second (2π not applied); 314,159 forgets to divide by 60; 2,618 multiplies by π only."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Đơn vị và quy đổi",
+   "en": "Units and conversions"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng đổi vòng/phút sang rad/s",
+   "en": "Added – generated from the type: rpm to rad/s"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide tr.35 + công thức (script)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo slide tr.32, khí xả vào pack ở khoảng 150 °C và nhiệt độ giảm khoảng 100 °C khi qua bộ trao đổi nhiệt sơ cấp. Nhiệt độ khí sau bộ sơ cấp (suy ra, minh hoạ) xấp xỉ:",
+   "en": "According to slide p.32 the bleed air enters the pack at about 150 °C and drops by about 100 °C in the primary heat exchanger. The air temperature after the primary exchanger (derived, illustrative) is about:"
+  },
+  "opts": [
+   {
+    "vi": "50 °C",
+    "en": "50 °C"
+   },
+   {
+    "vi": "250 °C",
+    "en": "250 °C"
+   },
+   {
+    "vi": "100 °C",
+    "en": "100 °C"
+   },
+   {
+    "vi": "15 °C",
+    "en": "15 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "150 − 100 = 50 °C: giá trị suy ra bằng phép trừ hai số của slide, slide không in nhiệt độ này. 250 °C là cộng thay vì trừ; 100 °C là chính độ giảm; 15 °C là nhầm với nhiệt độ môi trường.",
+   "en": "150 − 100 = 50 °C: derived by subtracting two slide numbers; the slide does not print this temperature. 250 °C adds instead of subtracting; 100 °C is the drop itself; 15 °C is confused with the ambient temperature."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Cooling pack / ACM",
+   "en": "Cooling pack / ACM"
+  },
+  "src": {
+   "vi": "Slide Ch.3 tr.32: nhiệt độ khí sau bộ trao đổi nhiệt sơ cấp (suy ra)",
+   "en": "Slide Ch.3 p.32: air temperature after the primary heat exchanger (derived)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "số học trên số của slide (minh hoạ)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuỗi số của slide tr.32–33: vào 150 °C, bộ sơ cấp giảm ~100 °C, máy nén ACM tăng 30–40 °C, bộ thứ cấp giảm 60–70 °C. Nhiệt độ thấp nhất có thể sau bộ thứ cấp (minh hoạ, cộng các cận) là:",
+   "en": "The chain of numbers on slides p.32–33: entry 150 °C, primary exchanger −~100 °C, ACM compressor +30–40 °C, secondary exchanger −60–70 °C. The lowest possible temperature after the secondary exchanger (illustrative, combining the bounds) is:"
+  },
+  "opts": [
+   {
+    "vi": "10 °C",
+    "en": "10 °C"
+   },
+   {
+    "vi": "30 °C",
+    "en": "30 °C"
+   },
+   {
+    "vi": "20 °C",
+    "en": "20 °C"
+   },
+   {
+    "vi": "−20 °C",
+    "en": "−20 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cận thấp: 150 − 100 + 30 − 70 = 10 °C (tăng ít nhất ở máy nén, giảm nhiều nhất ở bộ thứ cấp). Cận cao: 150 − 100 + 40 − 60 = 30 °C. 20 và −20 bỏ một bước hoặc trộn lẫn các cận. Khoảng 10–30 °C khớp với \"20 to 10 °C\" ở tr.34 (đọc là 10–20 °C): slide không mâu thuẫn.",
+   "en": "Lower bound: 150 − 100 + 30 − 70 = 10 °C (smallest rise in the compressor, largest drop in the secondary exchanger). Upper bound: 150 − 100 + 40 − 60 = 30 °C. 20 and −20 skip a step or mix the bounds. The range 10–30 °C is consistent with \"20 to 10 °C\" on p.34 (read as 10–20 °C): the slides do not contradict one another."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Cooling pack / ACM",
+   "en": "Cooling pack / ACM"
+  },
+  "src": {
+   "vi": "Slide Ch.3 tr.32–34: chuỗi nhiệt độ qua pack (suy ra)",
+   "en": "Slide Ch.3 p.32–34: temperature chain through the pack (derived)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "số học trên số của slide (minh hoạ)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lạnh lý tưởng (Brayton ngược) dùng không khí (k = 1,4, c_p hằng) có tỉ số áp r_p = 2. COP của chu trình đơn giản (không hồi nhiệt) là:",
+   "en": "An ideal gas refrigeration cycle (reversed Brayton) with air (k = 1.4, constant c_p) has pressure ratio r_p = 2. The COP of the simple cycle (no regeneration) is:"
+  },
+  "opts": [
+   {
+    "vi": "4,57",
+    "en": "4.57"
+   },
+   {
+    "vi": "0,22",
+    "en": "0.22"
+   },
+   {
+    "vi": "5,57",
+    "en": "5.57"
+   },
+   {
+    "vi": "1,00",
+    "en": "1.00"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP = q_L/w_net = 1/(r_p^((k−1)/k) − 1) = 1/(2^0,2857 − 1) = 1/0,2190 = 4,57 (Cengel §11-8, bổ sung từ sách). 0,219 chưa nghịch đảo; 1/(1 − r_p^(−0,2857)) = 5,57 là COP bơm nhiệt; 1/(r_p − 1) = 1,00 bỏ số mũ.",
+   "en": "COP = q_L/w_net = 1/(r_p^((k−1)/k) − 1) = 1/(2^0.2857 − 1) = 1/0.2190 = 4.57 (Cengel §11-8, added from the book). 0.219 is not yet inverted; 1/(1 − r_p^(−0.2857)) = 5.57 is the heat-pump COP; 1/(r_p − 1) = 1.00 drops the exponent."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP chu trình khí lạnh",
+   "en": "Added – generated from the type: gas-cycle COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "công thức đóng + sympy (verify_m03)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lạnh lý tưởng (Brayton ngược) dùng không khí (k = 1,4, c_p hằng) có tỉ số áp r_p = 4. COP của chu trình đơn giản (không hồi nhiệt) là:",
+   "en": "An ideal gas refrigeration cycle (reversed Brayton) with air (k = 1.4, constant c_p) has pressure ratio r_p = 4. The COP of the simple cycle (no regeneration) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,06",
+    "en": "2.06"
+   },
+   {
+    "vi": "0,49",
+    "en": "0.49"
+   },
+   {
+    "vi": "3,06",
+    "en": "3.06"
+   },
+   {
+    "vi": "0,33",
+    "en": "0.33"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP = q_L/w_net = 1/(r_p^((k−1)/k) − 1) = 1/(4^0,2857 − 1) = 1/0,4860 = 2,06 (Cengel §11-8, bổ sung từ sách). 0,486 chưa nghịch đảo; 1/(1 − r_p^(−0,2857)) = 3,06 là COP bơm nhiệt; 1/(r_p − 1) = 0,33 bỏ số mũ.",
+   "en": "COP = q_L/w_net = 1/(r_p^((k−1)/k) − 1) = 1/(4^0.2857 − 1) = 1/0.4860 = 2.06 (Cengel §11-8, added from the book). 0.486 is not yet inverted; 1/(1 − r_p^(−0.2857)) = 3.06 is the heat-pump COP; 1/(r_p − 1) = 0.33 drops the exponent."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP chu trình khí lạnh",
+   "en": "Added – generated from the type: gas-cycle COP"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "công thức đóng + sympy (verify_m03)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lạnh lý tưởng dùng không khí (k = 1,4): không khí vào tuabin ở 40 °C, tỉ số áp 3,0. Nhiệt độ không khí ra khỏi tuabin (°C) là:",
+   "en": "An ideal gas refrigeration cycle with air (k = 1.4): air enters the turbine at 40 °C, pressure ratio 3.0. The air temperature leaving the turbine (°C) is:"
+  },
+  "opts": [
+   {
+    "vi": "−44 °C",
+    "en": "−44 °C"
+   },
+   {
+    "vi": "29 °C",
+    "en": "29 °C"
+   },
+   {
+    "vi": "−169 °C",
+    "en": "−169 °C"
+   },
+   {
+    "vi": "155 °C",
+    "en": "155 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₄ = T₃/r_p^((k−1)/k) = 313,15/3,0^0,2857 = 313,15/1,3687 = 228,8 K = −44,4 °C. Dùng °C trong công thức cho 29; chia T cho r_p cho −169; nhân (nén thay vì giãn) cho 155 °C.",
+   "en": "T₄ = T₃/r_p^((k−1)/k) = 313.15/3.0^0.2857 = 313.15/1.3687 = 228.8 K = −44.4 °C. Using °C in the formula gives 29; dividing T by r_p gives −169; multiplying (compression instead of expansion) gives 155 °C."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ ra tuabin của chu trình khí lạnh",
+   "en": "Added – generated from the type: turbine outlet temperature of the gas cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lạnh lý tưởng dùng không khí (k = 1,4): không khí vào tuabin ở 50 °C, tỉ số áp 2,5. Nhiệt độ không khí ra khỏi tuabin (°C) là:",
+   "en": "An ideal gas refrigeration cycle with air (k = 1.4): air enters the turbine at 50 °C, pressure ratio 2.5. The air temperature leaving the turbine (°C) is:"
+  },
+  "opts": [
+   {
+    "vi": "−24 °C",
+    "en": "−24 °C"
+   },
+   {
+    "vi": "38 °C",
+    "en": "38 °C"
+   },
+   {
+    "vi": "−144 °C",
+    "en": "−144 °C"
+   },
+   {
+    "vi": "147 °C",
+    "en": "147 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₄ = T₃/r_p^((k−1)/k) = 323,15/2,5^0,2857 = 323,15/1,2993 = 248,7 K = −24,4 °C. Dùng °C trong công thức cho 38; chia T cho r_p cho −144; nhân (nén thay vì giãn) cho 147 °C.",
+   "en": "T₄ = T₃/r_p^((k−1)/k) = 323.15/2.5^0.2857 = 323.15/1.2993 = 248.7 K = −24.4 °C. Using °C in the formula gives 38; dividing T by r_p gives −144; multiplying (compression instead of expansion) gives 147 °C."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ ra tuabin của chu trình khí lạnh",
+   "en": "Added – generated from the type: turbine outlet temperature of the gas cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lạnh có hồi nhiệt dùng không khí (k = 1,4, c_p = 1,005): máy nén hút ở 0 °C, r_p = 3; sau tản nhiệt 35 °C, sau hồi nhiệt −10 °C (vào tuabin). Máy nén và tuabin đẳng entropi. Lưu lượng khối lượng cần cho tải lạnh 15 kW (kg/s) là:",
+   "en": "A regenerative gas refrigeration cycle with air (k = 1.4, c_p = 1.005): compressor inlet 0 °C, r_p = 3; after the heat sink 35 °C, after the regenerator −10 °C (turbine inlet). Compressor and turbine are isentropic. The mass flow rate for a 15 kW refrigeration load (kg/s) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,416 kg/s",
+    "en": "0.416 kg/s"
+   },
+   {
+    "vi": "0,185 kg/s",
+    "en": "0.185 kg/s"
+   },
+   {
+    "vi": "0,500 kg/s",
+    "en": "0.500 kg/s"
+   },
+   {
+    "vi": "0,211 kg/s",
+    "en": "0.211 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₅ = T₄/3^0,2857 = 263,15/1,3687 = 192,3 K. Hồi nhiệt: T₆ = T₁ − (T₃ − T₄) = 273,15 − 45 = 228,15 K. q_L = c_p(T₆ − T₅) = 1,005·(228,15 − 192,3) = 36,07 kJ/kg ⇒ ṁ = 15/36,07 = 0,416 kg/s. Dùng T₁ − T₅ (bỏ hồi nhiệt) cho 0,185; chia cho công thực 30,0 kJ/kg cho 0,500; dùng T₄ − T₅ thay cho T₆ − T₅ cho 0,211.",
+   "en": "T₅ = T₄/3^0.2857 = 263.15/1.3687 = 192.3 K. Regenerator: T₆ = T₁ − (T₃ − T₄) = 273.15 − 45 = 228.15 K. q_L = c_p(T₆ − T₅) = 1.005·(228.15 − 192.3) = 36.07 kJ/kg ⇒ ṁ = 15/36.07 = 0.416 kg/s. Using T₁ − T₅ (ignoring the regenerator) gives 0.185; dividing by the net work 30.0 kJ/kg gives 0.500; using T₄ − T₅ instead of T₆ − T₅ gives 0.211."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chu trình khí lạnh có hồi nhiệt",
+   "en": "Added – generated from the type: regenerative gas refrigeration cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình khí lạnh đơn giản dùng không khí (k = 1,4): máy nén hút ở 10 °C, vào tuabin ở 45 °C, r_p = 3, hiệu suất đẳng entropi của máy nén 80 % và của tuabin 85 %. COP của chu trình là:",
+   "en": "A simple gas refrigeration cycle with air (k = 1.4): compressor inlet 10 °C, turbine inlet 45 °C, r_p = 3, isentropic efficiency 80 % for the compressor and 85 % for the turbine. The COP of the cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "0,66",
+    "en": "0.66"
+   },
+   {
+    "vi": "2,71",
+    "en": "2.71"
+   },
+   {
+    "vi": "0,29",
+    "en": "0.29"
+   },
+   {
+    "vi": "1,84",
+    "en": "1.84"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "x = 3^0,2857 = 1,3687. Nén thực: T₂ = T₁ + T₁(x − 1)/η_c = 413,7 K; giãn thực: T₄ = T₃ − η_t(T₃ − T₃/x) = 245,3 K. q_L = c_p(T₁ − T₄) = 38,04; w_c = 131,16; w_t = 73,22; w_net = 57,95 kJ/kg ⇒ COP = 0,66. Chu trình lý tưởng cho 2,71; bỏ công tuabin cho 0,29; nhân hiệu suất vào COP lý tưởng cho 1,84 (sai: hiệu suất tác động khác nhau lên tử và mẫu).",
+   "en": "x = 3^0.2857 = 1.3687. Real compression: T₂ = T₁ + T₁(x − 1)/η_c = 413.7 K; real expansion: T₄ = T₃ − η_t(T₃ − T₃/x) = 245.3 K. q_L = c_p(T₁ − T₄) = 38.04; w_c = 131.16; w_t = 73.22; w_net = 57.95 kJ/kg ⇒ COP = 0.66. The ideal cycle gives 2.71; ignoring the turbine work gives 0.29; multiplying the efficiencies into the ideal COP gives 1.84 (wrong: efficiencies act differently on numerator and denominator)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng chu trình khí lạnh có hiệu suất thiết bị",
+   "en": "Added – generated from the type: gas cycle with component efficiencies"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 25 °C, độ ẩm tương đối 60 %. Điểm sương (dew point) xấp xỉ (bảng A-4/A-5), °C:",
+   "en": "Air at 25 °C and 60 % relative humidity. The dew point is about (Tables A-4/A-5), in °C:"
+  },
+  "opts": [
+   {
+    "vi": "16,6 °C",
+    "en": "16.6 °C"
+   },
+   {
+    "vi": "15,0 °C",
+    "en": "15.0 °C"
+   },
+   {
+    "vi": "25,0 °C",
+    "en": "25.0 °C"
+   },
+   {
+    "vi": "85,5 °C",
+    "en": "85.5 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_g@25 °C = 3,170 kPa (A-4) ⇒ P_v = φ·P_g = 0,6·3,170 = 1,902 kPa. Điểm sương = T_sat@P_v = 16,6 °C (A-5, nội suy tuyến tính). Nhân φ với nhiệt độ cho 15,0 (sai: φ là tỉ số áp suất); điểm sương không bằng nhiệt độ không khí khi φ < 1; coi P_v = φ·100 kPa cho 85,5 °C. Slide tr.35 viết \"due point\": đúng là dew point.",
+   "en": "P_g@25 °C = 3.170 kPa (A-4) ⇒ P_v = φ·P_g = 0.6·3.170 = 1.902 kPa. Dew point = T_sat@P_v = 16.6 °C (A-5, linear interpolation). Multiplying φ by the temperature gives 15.0 (wrong: φ is a pressure ratio); the dew point is not the air temperature when φ < 1; taking P_v = φ·100 kPa gives 85.5 °C. Slide p.35 writes \"due point\": dew point is meant."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Điểm sương",
+   "en": "Dew point"
+  },
+  "src": {
+   "vi": "Slide Ch.3 tr.35 (điểm sương) + Cengel §14-3 (bổ sung từ sách)",
+   "en": "Slide Ch.3 p.35 (dew point) + Cengel §14-3 (added from the book)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "bảng A-4/A-5 ↔ IAPWS-IF97 (verify_m03)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 30 °C, độ ẩm tương đối 50 %. Điểm sương (dew point) xấp xỉ (bảng A-4/A-5), °C:",
+   "en": "Air at 30 °C and 50 % relative humidity. The dew point is about (Tables A-4/A-5), in °C:"
+  },
+  "opts": [
+   {
+    "vi": "18,4 °C",
+    "en": "18.4 °C"
+   },
+   {
+    "vi": "15,0 °C",
+    "en": "15.0 °C"
+   },
+   {
+    "vi": "30,0 °C",
+    "en": "30.0 °C"
+   },
+   {
+    "vi": "81,3 °C",
+    "en": "81.3 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_g@30 °C = 4,247 kPa (A-4) ⇒ P_v = φ·P_g = 0,5·4,247 = 2,123 kPa. Điểm sương = T_sat@P_v = 18,4 °C (A-5, nội suy tuyến tính). Nhân φ với nhiệt độ cho 15,0 (sai: φ là tỉ số áp suất); điểm sương không bằng nhiệt độ không khí khi φ < 1; coi P_v = φ·100 kPa cho 81,3 °C. Slide tr.35 viết \"due point\": đúng là dew point.",
+   "en": "P_g@30 °C = 4.247 kPa (A-4) ⇒ P_v = φ·P_g = 0.5·4.247 = 2.123 kPa. Dew point = T_sat@P_v = 18.4 °C (A-5, linear interpolation). Multiplying φ by the temperature gives 15.0 (wrong: φ is a pressure ratio); the dew point is not the air temperature when φ < 1; taking P_v = φ·100 kPa gives 81.3 °C. Slide p.35 writes \"due point\": dew point is meant."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Điểm sương",
+   "en": "Dew point"
+  },
+  "src": {
+   "vi": "Slide Ch.3 tr.35 (điểm sương) + Cengel §14-3 (bổ sung từ sách)",
+   "en": "Slide Ch.3 p.35 (dew point) + Cengel §14-3 (added from the book)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "bảng A-4/A-5 ↔ IAPWS-IF97 (verify_m03)"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 0,14 và 0,8 MPa (Tutorials I) có COP lớn hơn COP của chu trình Carnot đảo ngược chạy giữa hai nhiệt độ bão hòa tương ứng.",
+   "en": "The ideal R-134a vapor-compression cycle between 0.14 and 0.8 MPa (Tutorials I) has a higher COP than the reversed Carnot cycle between the corresponding saturation temperatures."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Carnot đảo ngược là chu trình lạnh có COP lớn nhất giữa hai mức nhiệt độ (slide tr.13–14). Giữa T_L = −18,77 °C và T_H = 31,31 °C: COP_Carnot = 5,08; chu trình nén hơi lý tưởng cho 3,97, tức 78 % của Carnot (do tiết lưu bất thuận nghịch và nén hơi quá nhiệt).",
+   "en": "The reversed Carnot cycle has the largest COP between two temperature levels (slides p.13–14). Between T_L = −18.77 °C and T_H = 31.31 °C: COP_Carnot = 5.08; the vapor-compression cycle gives 3.97, i.e. 78 % of Carnot (irreversible throttling and superheated-vapor compression)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng so sánh với Carnot",
+   "en": "Added – generated from the type: comparison with Carnot"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "công thức + script"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hệ số hiệu quả của bơm nhiệt chạy theo chu trình nén hơi luôn lớn hơn 1, ngay cả khi COP của tủ lạnh cùng chu trình rất nhỏ.",
+   "en": "The COP of a heat pump on the vapor-compression cycle is always above 1, even when the COP of the refrigerator on the same cycle is very small."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_HP = COP_R + 1 (Cengel Hệ thức 11–3) và COP_R > 0, nên COP_HP > 1: bơm nhiệt, xấu nhất, cũng như lò điện trở. (Trong thực tế một phần Q_H mất qua ống nên COP_HP có thể tụt xuống dưới 1 khi nhiệt độ ngoài trời quá thấp: Cengel §11-1.)",
+   "en": "COP_HP = COP_R + 1 (Cengel Eq. 11–3) and COP_R > 0, so COP_HP > 1: at worst a heat pump equals a resistance heater. (In practice part of Q_H is lost through piping, so COP_HP can drop below 1 when the outdoor temperature is too low: Cengel §11-1.)"
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tủ lạnh, bơm nhiệt, COP",
+   "en": "Refrigerators, heat pumps, COP"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP_HP > 1",
+   "en": "Added – generated from the type: COP_HP > 1"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "Cengel §11-1 + sympy"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Trong chu trình khí lạnh đơn giản, nếu giảm nhiệt độ vào tuabin T₃ (làm mát tốt hơn) và giữ nguyên r_p thì nhiệt độ ra tuabin T₄ giảm.",
+   "en": "In the simple gas refrigeration cycle, lowering the turbine inlet temperature T₃ (better cooling) at fixed r_p lowers the turbine outlet temperature T₄."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₄ = T₃/r_p^((k−1)/k): T₄ tỉ lệ với T₃ khi r_p cố định. Vì vậy hồi nhiệt (hạ T₃ xuống dưới nhiệt độ môi trường) cho nhiệt độ rất thấp (Cengel §11-8, bổ sung).",
+   "en": "T₄ = T₃/r_p^((k−1)/k): T₄ is proportional to T₃ at fixed r_p. That is why regeneration (lowering T₃ below ambient) reaches very low temperatures (Cengel §11-8, added)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng T₄ phụ thuộc T₃",
+   "en": "Added – generated from the type: T₄ depends on T₃"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "công thức đóng"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Trong chu trình khí lạnh đơn giản với c_p và k hằng, COP phụ thuộc vào tỉ số áp r_p nhưng không phụ thuộc vào nhiệt độ T₁ và T₃.",
+   "en": "In the simple gas refrigeration cycle with constant c_p and k, the COP depends on the pressure ratio r_p but not on the temperatures T₁ and T₃."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP = q_L/w_net = 1/(r_p^((k−1)/k) − 1): các c_p(T₁ − T₄) và c_p[(T₂ − T₁) − (T₃ − T₄)] đều có cùng thừa số nhiệt độ nên triệt tiêu; chỉ còn r_p. (Điều này đúng cho chu trình lý tưởng không hồi nhiệt; nhiệt độ vẫn quyết định công suất lạnh tuyệt đối.)",
+   "en": "COP = q_L/w_net = 1/(r_p^((k−1)/k) − 1): c_p(T₁ − T₄) and c_p[(T₂ − T₁) − (T₃ − T₄)] share the same temperature factor and cancel; only r_p remains. (True for the ideal cycle without regeneration; the temperatures still set the absolute refrigeration rate.)"
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình khí lạnh",
+   "en": "Gas refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng COP khí lạnh chỉ phụ thuộc r_p",
+   "en": "Added – generated from the type: gas-cycle COP depends only on r_p"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "sympy (verify_m03)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ lạnh R-134a, chu trình nén hơi lý tưởng giữa 240 kPa và 1200 kPa, có công suất lạnh 20 kW. Nhiệt lượng dàn ngưng thải ra môi trường Q̇_H (kW) là:",
+   "en": "An R-134a refrigeration system on the ideal vapor-compression cycle between 240 kPa and 1200 kPa has a refrigeration rate of 20 kW. The heat rejected by the condenser to the environment Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "25,2 kW",
+    "en": "25.2 kW"
+   },
+   {
+    "vi": "20,0 kW",
+    "en": "20.0 kW"
+   },
+   {
+    "vi": "77,2 kW",
+    "en": "77.2 kW"
+   },
+   {
+    "vi": "5,2 kW",
+    "en": "5.2 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ṁ = Q̇_L/(h₁ − h₄) = 20/129,51 = 0,1544 kg/s; Q̇_H = ṁ(h₂ − h₃) = 0,1544·163,08 = 25,2 kW (= Q̇_L + Ẇ = 20 + 5,2). 20 là Q̇_L; 77,2 nhân COP; 5,2 chỉ là công máy nén.",
+   "en": "ṁ = Q̇_L/(h₁ − h₄) = 20/129.51 = 0.1544 kg/s; Q̇_H = ṁ(h₂ − h₃) = 0.1544·163.08 = 25.2 kW (= Q̇_L + Ẇ = 20 + 5.2). 20 is Q̇_L; 77.2 multiplies by the COP; 5.2 is only the compressor power."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt thải của dàn ngưng theo tải lạnh",
+   "en": "Added – generated from the type: condenser heat rejection from the cooling load"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ lạnh R-134a, chu trình nén hơi lý tưởng giữa 320 kPa và 1400 kPa, có công suất lạnh 30 kW. Nhiệt lượng dàn ngưng thải ra môi trường Q̇_H (kW) là:",
+   "en": "An R-134a refrigeration system on the ideal vapor-compression cycle between 320 kPa and 1400 kPa has a refrigeration rate of 30 kW. The heat rejected by the condenser to the environment Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "37,4 kW",
+    "en": "37.4 kW"
+   },
+   {
+    "vi": "30,0 kW",
+    "en": "30.0 kW"
+   },
+   {
+    "vi": "121,9 kW",
+    "en": "121.9 kW"
+   },
+   {
+    "vi": "7,4 kW",
+    "en": "7.4 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ṁ = Q̇_L/(h₁ − h₄) = 30/124,66 = 0,2407 kg/s; Q̇_H = ṁ(h₂ − h₃) = 0,2407·155,34 = 37,4 kW (= Q̇_L + Ẇ = 30 + 7,4). 30 là Q̇_L; 121,9 nhân COP; 7,4 chỉ là công máy nén.",
+   "en": "ṁ = Q̇_L/(h₁ − h₄) = 30/124.66 = 0.2407 kg/s; Q̇_H = ṁ(h₂ − h₃) = 0.2407·155.34 = 37.4 kW (= Q̇_L + Ẇ = 30 + 7.4). 30 is Q̇_L; 121.9 multiplies by the COP; 7.4 is only the compressor power."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt thải của dàn ngưng theo tải lạnh",
+   "en": "Added – generated from the type: condenser heat rejection from the cooling load"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong chu trình nén hơi lý tưởng R-134a giữa 140 kPa và 800 kPa, thay van tiết lưu bằng một tuabin đẳng entropi (giãn lỏng bão hòa từ 800 kPa về 140 kPa, sinh công trừ vào công máy nén). COP mới lớn hơn COP cũ khoảng:",
+   "en": "In the ideal R-134a vapor-compression cycle between 140 kPa and 800 kPa, the throttling valve is replaced by an isentropic turbine (expanding saturated liquid from 800 kPa to 140 kPa and delivering work that offsets the compressor). The new COP exceeds the old one by about:"
+  },
+  "opts": [
+   {
+    "vi": "27,5 %",
+    "en": "27.5 %"
+   },
+   {
+    "vi": "4,5 %",
+    "en": "4.5 %"
+   },
+   {
+    "vi": "18,0 %",
+    "en": "18.0 %"
+   },
+   {
+    "vi": "6,8 %",
+    "en": "6.8 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "s₃ = s_f@800 kPa; x₄ₛ = 0,292; h₄ₛ = 88,94 kJ/kg (so với h₄ = 95,47). q_L mới = h₁ − h₄ₛ = 150,22; w mới = (h₂ − h₁) − (h₃ − h₄ₛ) = 29,70 ⇒ COP mới = 5,06 so với 3,97: tăng 27,5 %. 4,5 % chỉ là mức tăng q_L; 18,0 % là công tuabin trên công nén.",
+   "en": "s₃ = s_f@800 kPa; x₄ₛ = 0.292; h₄ₛ = 88.94 kJ/kg (versus h₄ = 95.47). New q_L = h₁ − h₄ₛ = 150.22; new w = (h₂ − h₁) − (h₃ − h₄ₛ) = 29.70 ⇒ new COP = 5.06 versus 3.97: up 27.5 %. 4.5 % is only the increase of q_L; 18.0 % is turbine work over compressor work."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tuabin thay van tiết lưu",
+   "en": "Added – generated from the type: turbine instead of the throttling valve"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong chu trình nén hơi lý tưởng R-134a giữa 200 kPa và 1000 kPa, thay van tiết lưu bằng một tuabin đẳng entropi (giãn lỏng bão hòa từ 1000 kPa về 200 kPa, sinh công trừ vào công máy nén). COP mới lớn hơn COP cũ khoảng:",
+   "en": "In the ideal R-134a vapor-compression cycle between 200 kPa and 1000 kPa, the throttling valve is replaced by an isentropic turbine (expanding saturated liquid from 1000 kPa to 200 kPa and delivering work that offsets the compressor). The new COP exceeds the old one by about:"
+  },
+  "opts": [
+   {
+    "vi": "29,6 %",
+    "en": "29.6 %"
+   },
+   {
+    "vi": "4,7 %",
+    "en": "4.7 %"
+   },
+   {
+    "vi": "19,2 %",
+    "en": "19.2 %"
+   },
+   {
+    "vi": "6,0 %",
+    "en": "6.0 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "s₃ = s_f@1000 kPa; x₄ₛ = 0,303; h₄ₛ = 100,86 kJ/kg (so với h₄ = 107,32). q_L mới = h₁ − h₄ₛ = 143,60; w mới = (h₂ − h₁) − (h₃ − h₄ₛ) = 27,11 ⇒ COP mới = 5,30 so với 4,09: tăng 29,6 %. 4,7 % chỉ là mức tăng q_L; 19,2 % là công tuabin trên công nén.",
+   "en": "s₃ = s_f@1000 kPa; x₄ₛ = 0.303; h₄ₛ = 100.86 kJ/kg (versus h₄ = 107.32). New q_L = h₁ − h₄ₛ = 143.60; new w = (h₂ − h₁) − (h₃ − h₄ₛ) = 27.11 ⇒ new COP = 5.30 versus 4.09: up 29.6 %. 4.7 % is only the increase of q_L; 19.2 % is turbine work over compressor work."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tuabin thay van tiết lưu",
+   "en": "Added – generated from the type: turbine instead of the throttling valve"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 200 kPa và 1000 kPa (T_sat tương ứng −10,09 °C và 39,37 °C). Tỉ số COP của chu trình trên COP của chu trình Carnot đảo ngược giữa hai nhiệt độ bão hòa đó xấp xỉ:",
+   "en": "Ideal R-134a vapor-compression cycle between 200 kPa and 1000 kPa (T_sat = −10.09 °C and 39.37 °C). The ratio of its COP to that of a reversed Carnot cycle between those saturation temperatures is about:"
+  },
+  "opts": [
+   {
+    "vi": "0,77",
+    "en": "0.77"
+   },
+   {
+    "vi": "1,30",
+    "en": "1.30"
+   },
+   {
+    "vi": "0,65",
+    "en": "0.65"
+   },
+   {
+    "vi": "21,73",
+    "en": "21.73"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_cycle = 4,09; COP_Carnot = T_L/(T_H − T_L) = 263,06/49,46 = 5,32 ⇒ tỉ số = 0,77 (< 1 vì tiết lưu bất thuận nghịch và hơi nén quá nhiệt). 1,30 là tỉ số đảo; 0,65 chia cho COP bơm nhiệt Carnot; 21,73 chia cho T_H/T_L − 1 chưa nghịch đảo.",
+   "en": "COP_cycle = 4.09; COP_Carnot = T_L/(T_H − T_L) = 263.06/49.46 = 5.32 ⇒ ratio = 0.77 (< 1 because of irreversible throttling and superheated-vapor compression). 1.30 is the inverted ratio; 0.65 divides by the Carnot heat-pump COP; 21.73 divides by T_H/T_L − 1 not yet inverted."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số COP thực/Carnot",
+   "en": "Added – generated from the type: COP ratio actual/Carnot"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a giữa 100 kPa và 800 kPa (T_sat tương ứng −26,37 °C và 31,31 °C). Tỉ số COP của chu trình trên COP của chu trình Carnot đảo ngược giữa hai nhiệt độ bão hòa đó xấp xỉ:",
+   "en": "Ideal R-134a vapor-compression cycle between 100 kPa and 800 kPa (T_sat = −26.37 °C and 31.31 °C). The ratio of its COP to that of a reversed Carnot cycle between those saturation temperatures is about:"
+  },
+  "opts": [
+   {
+    "vi": "0,75",
+    "en": "0.75"
+   },
+   {
+    "vi": "1,33",
+    "en": "1.33"
+   },
+   {
+    "vi": "0,61",
+    "en": "0.61"
+   },
+   {
+    "vi": "13,75",
+    "en": "13.75"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP_cycle = 3,21; COP_Carnot = T_L/(T_H − T_L) = 246,78/57,68 = 4,28 ⇒ tỉ số = 0,75 (< 1 vì tiết lưu bất thuận nghịch và hơi nén quá nhiệt). 1,33 là tỉ số đảo; 0,61 chia cho COP bơm nhiệt Carnot; 13,75 chia cho T_H/T_L − 1 chưa nghịch đảo.",
+   "en": "COP_cycle = 3.21; COP_Carnot = T_L/(T_H − T_L) = 246.78/57.68 = 4.28 ⇒ ratio = 0.75 (< 1 because of irreversible throttling and superheated-vapor compression). 1.33 is the inverted ratio; 0.61 divides by the Carnot heat-pump COP; 13.75 divides by T_H/T_L − 1 not yet inverted."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình Carnot đảo ngược",
+   "en": "Reversed Carnot cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tỉ số COP thực/Carnot",
+   "en": "Added – generated from the type: COP ratio actual/Carnot"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide tr.33 cho độ tăng nhiệt độ qua máy nén ACM là khoảng 30–40 °C và (suy ra từ tr.32) khí vào máy nén khoảng 50 °C; slide KHÔNG cho tỉ số nén. Minh hoạ: giả sử nén đẳng entropi, k = 1,4, độ tăng 35 K. Tỉ số áp của máy nén sẽ xấp xỉ:",
+   "en": "Slide p.33 gives the temperature rise through the ACM compressor as about 30–40 °C and (derived from p.32) the air entering it as about 50 °C; the slide gives NO pressure ratio. Illustration: assume isentropic compression, k = 1.4, a 35 K rise. The compressor pressure ratio would be about:"
+  },
+  "opts": [
+   {
+    "vi": "1,43",
+    "en": "1.43"
+   },
+   {
+    "vi": "1,11",
+    "en": "1.11"
+   },
+   {
+    "vi": "1,03",
+    "en": "1.03"
+   },
+   {
+    "vi": "0,70",
+    "en": "0.70"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₂/T₁ = (323,15 + 35)/323,15 = 1,1083; đẳng entropi: r_p = (T₂/T₁)^(k/(k−1)) = 1,1083^3,5 = 1,43. Đây chỉ là minh hoạ (nén thực có tổn thất cần tỉ số áp cao hơn cho cùng độ tăng nhiệt độ… hoặc ngược lại, tuỳ cách định nghĩa; slide không cho số). 1,108 là tỉ số nhiệt độ; 1,030 dùng số mũ ngược (k−1)/k.",
+   "en": "T₂/T₁ = (323.15 + 35)/323.15 = 1.1083; isentropic: r_p = (T₂/T₁)^(k/(k−1)) = 1.1083^3.5 = 1.43. This is only an illustration (the slides give no number; a real, lossy compressor needs a different pressure ratio for the same rise). 1.108 is the temperature ratio; 1.030 uses the inverted exponent (k−1)/k."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Cooling pack / ACM",
+   "en": "Cooling pack / ACM"
+  },
+  "src": {
+   "vi": "Slide Ch.3 tr.32–33 + Cengel §11-8 (minh hoạ, giả thiết đẳng entropi)",
+   "en": "Slide Ch.3 p.32–33 + Cengel §11-8 (illustration, isentropic assumption)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "công thức đóng (verify_m03: tích phân đẳng entropi)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide tr.34–35: khí vào tuabin ACM khoảng 10–20 °C (lấy 15 °C) và ra ở −10 °C; slide KHÔNG cho tỉ số giãn. Minh hoạ: giả sử giãn đẳng entropi, k = 1,4. Tỉ số áp qua tuabin sẽ xấp xỉ:",
+   "en": "Slides p.34–35: the air enters the ACM turbine at about 10–20 °C (take 15 °C) and leaves at −10 °C; the slides give NO expansion ratio. Illustration: assume isentropic expansion, k = 1.4. The pressure ratio across the turbine would be about:"
+  },
+  "opts": [
+   {
+    "vi": "1,37",
+    "en": "1.37"
+   },
+   {
+    "vi": "1,10",
+    "en": "1.10"
+   },
+   {
+    "vi": "1,03",
+    "en": "1.03"
+   },
+   {
+    "vi": "1,50",
+    "en": "1.50"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₁/T₂ = 288,15/263,15 = 1,0950; r_p = (T₁/T₂)^(k/(k−1)) = 1,0950^3,5 = 1,37. Minh hoạ giả thiết đẳng entropi: tuabin thực có tổn thất cần tỉ số lớn hơn cho cùng độ giảm nhiệt độ. 1,095 là tỉ số nhiệt độ; 1,026 dùng số mũ (k−1)/k; 1,5 dùng °C (15/10).",
+   "en": "T₁/T₂ = 288.15/263.15 = 1.0950; r_p = (T₁/T₂)^(k/(k−1)) = 1.0950^3.5 = 1.37. Illustration under the isentropic assumption: a real, lossy turbine needs a larger ratio for the same temperature drop. 1.095 is the temperature ratio; 1.026 uses the exponent (k−1)/k; 1.5 uses °C (15/10)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Cooling pack / ACM",
+   "en": "Cooling pack / ACM"
+  },
+  "src": {
+   "vi": "Slide Ch.3 tr.34–35 + Cengel §11-8 (minh hoạ, giả thiết đẳng entropi)",
+   "en": "Slide Ch.3 p.34–35 + Cengel §11-8 (illustration, isentropic assumption)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "công thức đóng (verify_m03: tích phân đẳng entropi)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một máy điều hoà 3,5 tấn lạnh (1 tấn = 211 kJ/phút) có COP = 4,0 chạy liên tục để giữ nhiệt độ phòng không đổi. Nhiệt lượng nó thải ra ngoài trời Q̇_H (kW) là:",
+   "en": "An air conditioner of 3.5 tons (1 ton = 211 kJ/min) with COP = 4.0 runs continuously to hold a constant room temperature. The heat it rejects outdoors Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "15,39 kW",
+    "en": "15.39 kW"
+   },
+   {
+    "vi": "12,31 kW",
+    "en": "12.31 kW"
+   },
+   {
+    "vi": "3,08 kW",
+    "en": "3.08 kW"
+   },
+   {
+    "vi": "49,23 kW",
+    "en": "49.23 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Q̇_L = 3,5·211/60 = 12,31 kW (bằng nhiệt xâm nhập phòng khi nhiệt độ không đổi); Ẇ = Q̇_L/COP = 3,08 kW; Q̇_H = Q̇_L + Ẇ = 15,39 kW. 12,31 chỉ là tải lạnh; 3,08 chỉ là công suất điện; 49,2 nhân COP.",
+   "en": "Q̇_L = 3.5·211/60 = 12.31 kW (equal to the heat leaking into the room at constant temperature); Ẇ = Q̇_L/COP = 3.08 kW; Q̇_H = Q̇_L + Ẇ = 15.39 kW. 12.31 is only the cooling load; 3.08 is only the electric power; 49.2 multiplies by COP."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Đơn vị và quy đổi",
+   "en": "Units and conversions"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tấn lạnh, COP và nhiệt thải",
+   "en": "Added – generated from the type: tons, COP and rejected heat"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "Cengel §11-1 (211 kJ/min) + Bài 11–101 (dạng) + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a vào máy nén ở 0,14 MPa, −10 °C (h₁ = 246,36 kJ/kg), nén tới 0,8 MPa với η_c = 80 % (h₂ₛ = 284,21 kJ/kg); ra dàn ngưng là lỏng ở 30 °C (h₃ ≅ 93,58 kJ/kg); ṁ = 0,05 kg/s. Nhiệt lượng thải ra ở dàn ngưng Q̇_H (kW) là:",
+   "en": "R-134a enters the compressor at 0.14 MPa, −10 °C (h₁ = 246.36 kJ/kg), is compressed to 0.8 MPa with η_c = 80 % (h₂ₛ = 284.21 kJ/kg); it leaves the condenser as liquid at 30 °C (h₃ ≅ 93.58 kJ/kg); ṁ = 0.05 kg/s. The heat rejected in the condenser Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "10,00 kW",
+    "en": "10.00 kW"
+   },
+   {
+    "vi": "9,53 kW",
+    "en": "9.53 kW"
+   },
+   {
+    "vi": "7,64 kW",
+    "en": "7.64 kW"
+   },
+   {
+    "vi": "2,37 kW",
+    "en": "2.37 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 293,67 kJ/kg (trạng thái thật, không phải h₂ₛ); Q̇_H = ṁ(h₂ − h₃) = 0,05·(293,67 − 93,58) = 10,00 kW (= Q̇_L + Ẇ = 7,64 + 2,37). 9,53 dùng h₂ₛ; 7,64 là Q̇_L; 2,37 là công máy nén.",
+   "en": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 293.67 kJ/kg (the real state, not h₂ₛ); Q̇_H = ṁ(h₂ − h₃) = 0.05·(293.67 − 93.58) = 10.00 kW (= Q̇_L + Ẇ = 7.64 + 2.37). 9.53 uses h₂ₛ; 7.64 is Q̇_L; 2.37 is the compressor power."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình lạnh thực",
+   "en": "Real refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt thải của chu trình thực",
+   "en": "Added – generated from the type: heat rejection of the actual cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "R-134a vào máy nén ở 0,14 MPa, −10 °C (h₁ = 246,36 kJ/kg), nén tới 1,0 MPa với η_c = 75 % (h₂ₛ = 289,25 kJ/kg); ra dàn ngưng là lỏng ở 28 °C (h₃ ≅ 90,69 kJ/kg); ṁ = 0,04 kg/s. Nhiệt lượng thải ra ở dàn ngưng Q̇_H (kW) là:",
+   "en": "R-134a enters the compressor at 0.14 MPa, −10 °C (h₁ = 246.36 kJ/kg), is compressed to 1.0 MPa with η_c = 75 % (h₂ₛ = 289.25 kJ/kg); it leaves the condenser as liquid at 28 °C (h₃ ≅ 90.69 kJ/kg); ṁ = 0.04 kg/s. The heat rejected in the condenser Q̇_H (kW) is:"
+  },
+  "opts": [
+   {
+    "vi": "8,51 kW",
+    "en": "8.51 kW"
+   },
+   {
+    "vi": "7,94 kW",
+    "en": "7.94 kW"
+   },
+   {
+    "vi": "6,23 kW",
+    "en": "6.23 kW"
+   },
+   {
+    "vi": "2,29 kW",
+    "en": "2.29 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 303,55 kJ/kg (trạng thái thật, không phải h₂ₛ); Q̇_H = ṁ(h₂ − h₃) = 0,04·(303,55 − 90,69) = 8,51 kW (= Q̇_L + Ẇ = 6,23 + 2,29). 7,94 dùng h₂ₛ; 6,23 là Q̇_L; 2,29 là công máy nén.",
+   "en": "h₂ = h₁ + (h₂ₛ − h₁)/η_c = 303.55 kJ/kg (the real state, not h₂ₛ); Q̇_H = ṁ(h₂ − h₃) = 0.04·(303.55 − 90.69) = 8.51 kW (= Q̇_L + Ẇ = 6.23 + 2.29). 7.94 uses h₂ₛ; 6.23 is Q̇_L; 2.29 is the compressor power."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình lạnh thực",
+   "en": "Real refrigeration cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt thải của chu trình thực",
+   "en": "Added – generated from the type: heat rejection of the actual cycle"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu trình nén hơi lý tưởng R-134a có áp suất ngưng 800 kPa. Khi áp suất bay hơi tăng từ 140 lên 200 kPa (nhiệt độ bão hòa tăng từ −18,77 lên −10,09 °C), COP tăng trung bình bao nhiêu phần trăm cho mỗi °C?",
+   "en": "An ideal R-134a vapor-compression cycle has a 800 kPa condenser pressure. When the evaporator pressure rises from 140 to 200 kPa (saturation temperature from −18.77 to −10.09 °C), by how many percent does the COP rise on average per °C?"
+  },
+  "opts": [
+   {
+    "vi": "3,5 %",
+    "en": "3.5 %"
+   },
+   {
+    "vi": "30,3 %",
+    "en": "30.3 %"
+   },
+   {
+    "vi": "0,1 %",
+    "en": "0.1 %"
+   },
+   {
+    "vi": "13,9 %",
+    "en": "13.9 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "COP(140 kPa) = 3,966, COP(200 kPa) = 5,169: tăng 30,3 % trên 8,68 °C ⇒ 3,5 %/°C: nằm trong khoảng 2–4 % mỗi °C mà Cengel §11-3 nêu như quy tắc kinh nghiệm (bổ sung). 30,3 là tổng mức tăng, chưa chia cho số °C; 0,139 là mức tăng tuyệt đối mỗi °C; 13,9 nhầm đơn vị.",
+   "en": "COP(140 kPa) = 3.966, COP(200 kPa) = 5.169: up 30.3 % over 8.68 °C ⇒ 3.5 %/°C: inside the 2–4 % per °C that Cengel §11-3 gives as a rule of thumb (added). 30.3 is the total rise, not yet divided by the number of °C; 0.139 is the absolute rise per °C; 13.9 mixes the units."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Chu trình nén hơi lý tưởng",
+   "en": "Ideal vapor-compression cycle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng mức tăng COP theo nhiệt độ bay hơi",
+   "en": "Added – generated from the type: COP gain per degree of evaporating temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m03: bảng ↔ CoolProp / công thức)"
+ }
+]

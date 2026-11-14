@@ -69,7 +69,7 @@ MODS = [
     dict(id='m03', slug='03-refrigeration-aircraft-air-conditioning', vi='Chu trình lạnh và điều hoà không khí trên tàu bay', en='Refrigeration cycles and aircraft air conditioning',
          clo=['CLO3'], slides=[('ch3', 3, 36), ('tut', 24, 27)], blank_slides=[('ch3', 37, 38)],
          books=dict(cengel='Ch.11 §11-1…11-4 (core); §11-8 gas refrigeration (gần nhất với cooling pack); Ch.14 §14-7 (ref)', farokhi='— (không có mục ECS/cooling pack: đã grep, xem data/bookmap/ecs_search.json)', elsayed='— (không có mục ECS/cooling pack; chỉ một câu ở tr.301 ngoài phạm vi)'),
-         src=['Slide Ch.3 tr.3–36', 'Tutorials I tr.24–27', 'Cengel Ch.11 Refrigeration Cycles (§11-8 Gas Refrigeration Cycles is the nearest section to the air-cycle cooling pack of the slides); Ch.14 Gas–Vapor Mixtures and Air Conditioning §14-7 (ref)', 'Farokhi and El-Sayed: no section on ECS/cooling pack found (data/bookmap/ecs_search.json)']),
+         src=['Slide Ch.3 tr.3–36', 'Tutorials I tr.24–27', 'Cengel Ch.11 Refrigeration Cycles (§11-8 Gas Refrigeration Cycles, ref); Ch.14 §14-7 (ref)']),
     dict(id='m04', slug='04-fuels-and-combustion', vi='Nhiên liệu và quá trình cháy', en='Fuels and the combustion process',
          clo=['CLO2', 'CLO4'], slides=[('ch4', 3, 55)], blank_slides=[('ch4', 56, 61)],
          books=dict(cengel='Ch.15 §15-1…15-3 (core)', farokhi='Ch.7 §7.2–7.3 (core)', elsayed='Ch.10 §10.7–10.8 (core)'),

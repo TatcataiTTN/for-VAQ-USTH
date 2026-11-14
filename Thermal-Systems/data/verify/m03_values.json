@@ -1,0 +1,5046 @@
+{
+ "registry": [
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 239.16,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 275.38904377104376,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 143.69,
+   "tol": 0.005,
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 36.22904377104376,
+   "tol": 0.005,
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 179.91904377104376,
+   "tol": 0.005,
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.9661549144955606,
+   "tol": 0.005,
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.3224726518294983,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 38.99348148148148,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "Tutorials I"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "h1",
+   "value": 236.97,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "h2",
+   "value": 273.5377682926829,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "h3",
+   "value": 88.82,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "qL",
+   "value": 148.15,
+   "tol": 0.005,
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "w",
+   "value": 36.56776829268293,
+   "tol": 0.005,
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "qH",
+   "value": 184.71776829268293,
+   "tol": 0.005,
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "cop",
+   "value": 4.051382048098469,
+   "tol": 0.005,
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "x4",
+   "value": 0.3092596046251399,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "Cengel 11-12"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "h4s",
+   "value": 82.57991965194203,
+   "tol": {
+    "abs": 0.04
+   },
+   "what": "Cengel 11-14"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "dq",
+   "value": 0.042120015849193004,
+   "tol": {
+    "abs": 0.002
+   },
+   "what": "Cengel 11-14"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 120,
+    "Ph": 700
+   },
+   "out": "dcop",
+   "value": 0.2565416573238748,
+   "tol": {
+    "abs": 0.002
+   },
+   "what": "Cengel 11-14"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h4s",
+   "value": 88.94005853564917,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel Ex.11-1 discussion"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 5.058063368821001,
+   "tol": 0.006,
+   "what": "Cengel Ex.11-1 discussion"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.3224726518294983,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "Cengel 11-15"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "h1",
+   "value": 246.36,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "h2",
+   "value": 286.69,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "h3",
+   "value": 87.83,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "h2s",
+   "value": 284.2095031055901,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "qL",
+   "value": 158.53000000000003,
+   "tol": 0.006,
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "w",
+   "value": 40.329999999999984,
+   "tol": 0.006,
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "cop",
+   "value": 3.9308207289858688,
+   "tol": 0.006,
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "T2": 50,
+    "T3": 26,
+    "P3": 0.72
+   },
+   "out": "eta_c",
+   "value": 0.9384949939397497,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "Cengel Ex.11-2"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "h1",
+   "value": 246.36,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "h2",
+   "value": 288.53,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "h3",
+   "value": 84.98,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "h2s",
+   "value": 281.2111501597444,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "qL",
+   "value": 161.38,
+   "tol": 0.006,
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "w",
+   "value": 42.16999999999996,
+   "tol": 0.006,
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "cop",
+   "value": 3.8268911548494224,
+   "tol": 0.006,
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "T2": 50,
+    "T3": 24,
+    "P3": 0.65
+   },
+   "out": "eta_c",
+   "value": 0.8264441584003899,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "Cengel 11-18"
+  },
+  {
+   "model": "prob_11_20",
+   "params": {},
+   "out": "m",
+   "value": 0.034234851078397806,
+   "tol": {
+    "abs": 0.0005
+   },
+   "what": "Cengel 11-20"
+  },
+  {
+   "model": "prob_11_20",
+   "params": {},
+   "out": "W",
+   "value": 1.8826953294074664,
+   "tol": {
+    "abs": 0.012
+   },
+   "what": "Cengel 11-20"
+  },
+  {
+   "model": "prob_11_20",
+   "params": {},
+   "out": "QL",
+   "value": 4.989815131804176,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-20"
+  },
+  {
+   "model": "prob_11_20",
+   "params": {},
+   "out": "dP",
+   "value": 1.7224999999999966,
+   "tol": {
+    "abs": 0.2
+   },
+   "what": "Cengel 11-20"
+  },
+  {
+   "model": "prob_11_20",
+   "params": {},
+   "out": "gain",
+   "value": 0.24058541595344168,
+   "tol": {
+    "abs": 0.012
+   },
+   "what": "Cengel 11-20"
+  },
+  {
+   "model": "prob_11_20",
+   "params": {},
+   "out": "h2",
+   "value": 301.3535305719921,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "Cengel 11-20"
+  },
+  {
+   "model": "prob_11_22",
+   "params": {},
+   "out": "m",
+   "value": 0.007271536229589539,
+   "tol": {
+    "abs": 0.0001
+   },
+   "what": "Cengel 11-22"
+  },
+  {
+   "model": "prob_11_22",
+   "params": {},
+   "out": "P3",
+   "value": 672.1067415730336,
+   "tol": {
+    "abs": 3.0
+   },
+   "what": "Cengel 11-22"
+  },
+  {
+   "model": "prob_11_22",
+   "params": {},
+   "out": "cop",
+   "value": 2.426043029701456,
+   "tol": {
+    "abs": 0.015
+   },
+   "what": "Cengel 11-22"
+  },
+  {
+   "model": "prob_11_22",
+   "params": {},
+   "out": "h4",
+   "value": 86.83399999999999,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "Cengel 11-22"
+  },
+  {
+   "model": "prob_11_22",
+   "params": {},
+   "out": "h2",
+   "value": 298.8551348314607,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "Cengel 11-22"
+  },
+  {
+   "model": "prob_11_32",
+   "params": {},
+   "out": "m",
+   "value": 0.08341675008341676,
+   "tol": {
+    "abs": 0.0004
+   },
+   "what": "Cengel 11-32"
+  },
+  {
+   "model": "prob_11_32",
+   "params": {},
+   "out": "W",
+   "value": 3.5493827160493816,
+   "tol": {
+    "abs": 0.03
+   },
+   "what": "Cengel 11-32"
+  },
+  {
+   "model": "prob_11_32",
+   "params": {},
+   "out": "QL",
+   "value": 13.117283950617285,
+   "tol": {
+    "abs": 0.04
+   },
+   "what": "Cengel 11-32"
+  },
+  {
+   "model": "prob_11_32",
+   "params": {},
+   "out": "Wres",
+   "value": 13.117283950617287,
+   "tol": {
+    "abs": 0.04
+   },
+   "what": "Cengel 11-32"
+  },
+  {
+   "model": "carnot_prob_11_2",
+   "params": {},
+   "out": "cop",
+   "value": 5.648026315789471,
+   "tol": 0.003,
+   "what": "Cengel 11-2"
+  },
+  {
+   "model": "carnot_prob_11_2",
+   "params": {},
+   "out": "qL",
+   "value": 147.03787049999997,
+   "tol": 0.004,
+   "what": "Cengel 11-2"
+  },
+  {
+   "model": "carnot_prob_11_2",
+   "params": {},
+   "out": "w",
+   "value": 26.033496000000014,
+   "tol": 0.004,
+   "what": "Cengel 11-2"
+  },
+  {
+   "model": "flash_two_stage",
+   "params": {
+    "Pl": 140,
+    "Pi": 400,
+    "Ph": 800
+   },
+   "out": "x6",
+   "value": 0.1645529982777517,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "Cengel 11-96"
+  },
+  {
+   "model": "flash_two_stage",
+   "params": {
+    "Pl": 140,
+    "Pi": 400,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 146.38702364177234,
+   "tol": {
+    "abs": 0.2
+   },
+   "what": "Cengel 11-96"
+  },
+  {
+   "model": "flash_two_stage",
+   "params": {
+    "Pl": 140,
+    "Pi": 400,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 32.636264525111244,
+   "tol": {
+    "abs": 0.15
+   },
+   "what": "Cengel 11-96"
+  },
+  {
+   "model": "flash_two_stage",
+   "params": {
+    "Pl": 140,
+    "Pi": 400,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 4.485409889025079,
+   "tol": {
+    "abs": 0.02
+   },
+   "what": "Cengel 11-96"
+  },
+  {
+   "model": "flash_two_stage",
+   "params": {
+    "Pl": 140,
+    "Pi": 400,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 260.6195294117647,
+   "tol": {
+    "abs": 0.15
+   },
+   "what": "Cengel 11-96"
+  },
+  {
+   "model": "flash_two_stage",
+   "params": {
+    "Pl": 140,
+    "Pi": 400,
+    "Ph": 800
+   },
+   "out": "h4",
+   "value": 274.4932881668836,
+   "tol": {
+    "abs": 0.2
+   },
+   "what": "Cengel 11-96"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 303.15,
+    "T3": 343.15,
+    "rp": 2.5
+   },
+   "out": "T4",
+   "value": 264.11122398340933,
+   "tol": {
+    "abs": 1.2
+   },
+   "what": "Cengel 11-97"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 303.15,
+    "T3": 343.15,
+    "rp": 2.5
+   },
+   "out": "T2",
+   "value": 393.8716459340424,
+   "tol": {
+    "abs": 1.2
+   },
+   "what": "Cengel 11-97"
+  },
+  {
+   "model": "gas_simple_ode",
+   "params": {
+    "T1": 303.15,
+    "T3": 343.15,
+    "rp": 2.5
+   },
+   "out": "T4",
+   "value": 264.11122398340933,
+   "tol": {
+    "abs": 1e-06
+   },
+   "what": "Cengel 11-97 (ODE of the isentrope)"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "T2",
+   "value": 395.49738005379874,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "Cengel 11-61"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "T5",
+   "value": 173.72206736402137,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "Cengel 11-61"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "T6",
+   "value": 224.14999999999998,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "Cengel 11-61"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "qL",
+   "value": 50.680072299158496,
+   "tol": 0.03,
+   "what": "Cengel 11-61"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "w",
+   "value": 45.14404465490925,
+   "tol": 0.03,
+   "what": "Cengel 11-61"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "cop",
+   "value": 1.1226302978957208,
+   "tol": 0.03,
+   "what": "Cengel 11-61"
+  },
+  {
+   "model": "gas_regen_ode",
+   "params": {
+    "T1": 266.15,
+    "T3": 300.15,
+    "T4": 258.15,
+    "rp": 4.0
+   },
+   "out": "T5",
+   "value": 173.72206736402137,
+   "tol": {
+    "abs": 1e-06
+   },
+   "what": "Cengel 11-61 (ODE)"
+  },
+  {
+   "model": "gas_A17",
+   "params": {
+    "T1": 285.0,
+    "T3": 320.0,
+    "rp": 5.0
+   },
+   "out": "T2",
+   "value": 450.36170212765956,
+   "tol": {
+    "abs": 2.0
+   },
+   "what": "Cengel 11-56"
+  },
+  {
+   "model": "gas_A17",
+   "params": {
+    "T1": 285.0,
+    "T3": 320.0,
+    "rp": 5.0
+   },
+   "out": "T4",
+   "value": 201.7948717948718,
+   "tol": {
+    "abs": 2.0
+   },
+   "what": "Cengel 11-56"
+  },
+  {
+   "model": "gas_A17",
+   "params": {
+    "T1": 285.0,
+    "T3": 320.0,
+    "rp": 5.0
+   },
+   "out": "qL",
+   "value": 83.37512820512819,
+   "tol": 0.012,
+   "what": "Cengel 11-56"
+  },
+  {
+   "model": "gas_A17",
+   "params": {
+    "T1": 285.0,
+    "T3": 320.0,
+    "rp": 5.0
+   },
+   "out": "wnet",
+   "value": 48.50453136933987,
+   "tol": 0.012,
+   "what": "Cengel 11-56"
+  },
+  {
+   "model": "gas_A17",
+   "params": {
+    "T1": 285.0,
+    "T3": 320.0,
+    "rp": 5.0
+   },
+   "out": "cop",
+   "value": 1.7189142096903203,
+   "tol": 0.02,
+   "what": "Cengel 11-56"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 250.14999999999998,
+    "T3": 300.15,
+    "rp": 3.0
+   },
+   "out": "T2",
+   "value": 342.38983737654667,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "Cengel 11-55"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 250.14999999999998,
+    "T3": 300.15,
+    "rp": 3.0
+   },
+   "out": "T4",
+   "value": 219.28957668631742,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "Cengel 11-55"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 250.14999999999998,
+    "T3": 300.15,
+    "rp": 3.0
+   },
+   "out": "cop",
+   "value": 2.711951875834561,
+   "tol": 0.03,
+   "what": "Cengel 11-55"
+  },
+  {
+   "model": "gas_A17E",
+   "params": {
+    "T1": 460.0,
+    "T3": 540.0,
+    "rp": 4.0
+   },
+   "out": "T2",
+   "value": 683.2358208955224,
+   "tol": {
+    "abs": 3.0
+   },
+   "what": "Cengel Ex.11-5"
+  },
+  {
+   "model": "gas_A17E",
+   "params": {
+    "T1": 460.0,
+    "T3": 540.0,
+    "rp": 4.0
+   },
+   "out": "T4",
+   "value": 362.92263610315183,
+   "tol": {
+    "abs": 3.0
+   },
+   "what": "Cengel Ex.11-5"
+  },
+  {
+   "model": "gas_A17E",
+   "params": {
+    "T1": 460.0,
+    "T3": 540.0,
+    "rp": 4.0
+   },
+   "out": "qL",
+   "value": 23.23148997134672,
+   "tol": 0.15,
+   "what": "Cengel Ex.11-5"
+  },
+  {
+   "model": "gas_A17E",
+   "params": {
+    "T1": 460.0,
+    "T3": 540.0,
+    "rp": 4.0
+   },
+   "out": "cop",
+   "value": 2.070550016830016,
+   "tol": 0.03,
+   "what": "Cengel Ex.11-5"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 268.15,
+    "TH": 293.15
+   },
+   "out": "cop",
+   "value": 10.725999999999987,
+   "tol": 0.003,
+   "what": "Cengel 11-84"
+  },
+  {
+   "model": "water_latent",
+   "params": {
+    "T": 100
+   },
+   "out": "hfg",
+   "value": 2256.4,
+   "tol": 0.002,
+   "what": "tr.7"
+  },
+  {
+   "model": "water_latent",
+   "params": {
+    "T": 100
+   },
+   "out": "sens",
+   "value": 419.16900000000004,
+   "tol": 0.002,
+   "what": "tr.7"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 263.15,
+    "TH": 313.15
+   },
+   "out": "cop",
+   "value": 5.262999999999999,
+   "tol": 0.003,
+   "what": "tr.13"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 273.15,
+    "TH": 313.15
+   },
+   "out": "cop",
+   "value": 6.828749999999997,
+   "tol": 0.003,
+   "what": "tr.13"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 263.15,
+    "TH": 308.15
+   },
+   "out": "cop",
+   "value": 5.847777777777778,
+   "tol": 0.003,
+   "what": "generated"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 273.15,
+    "TH": 313.15
+   },
+   "out": "cop",
+   "value": 6.828749999999997,
+   "tol": 0.003,
+   "what": "generated"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 253.14999999999998,
+    "TH": 303.15
+   },
+   "out": "cop",
+   "value": 5.062999999999998,
+   "tol": 0.003,
+   "what": "generated"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 278.15,
+    "TH": 318.15
+   },
+   "out": "cop_hp",
+   "value": 7.953749999999998,
+   "tol": 0.003,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "cop_r": 3.2
+   },
+   "out": "cop_hp",
+   "value": 4.2,
+   "tol": 1e-12,
+   "what": "generated"
+  },
+  {
+   "model": "carnot_inverse",
+   "params": {
+    "cop": 5.0,
+    "TH": 310.0
+   },
+   "out": "TL",
+   "value": 258.3333333333333,
+   "tol": 1e-09,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "h1",
+   "value": 242.86,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "h2",
+   "value": 276.3823123123123,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "h3",
+   "value": 101.61,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "qL",
+   "value": 141.25,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "w",
+   "value": 33.522312312312295,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "qH",
+   "value": 174.7723123123123,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "cop",
+   "value": 4.213611480140073,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "x4",
+   "value": 0.3205541392082351,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "T2",
+   "value": 42.08708708708709,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h1",
+   "value": 244.46,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h2",
+   "value": 278.0315289017341,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h3",
+   "value": 107.32,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "qL",
+   "value": 137.14000000000001,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "w",
+   "value": 33.57152890173407,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "qH",
+   "value": 170.71152890173408,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "cop",
+   "value": 4.085009068291684,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "x4",
+   "value": 0.3343687812454496,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "T2",
+   "value": 45.73121387283235,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h1",
+   "value": 247.28,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h2",
+   "value": 280.85200576368874,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h3",
+   "value": 117.77,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "qL",
+   "value": 129.51,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "w",
+   "value": 33.572005763688736,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "qH",
+   "value": 163.08200576368876,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "cop",
+   "value": 3.8576783559377668,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "x4",
+   "value": 0.3608232158720758,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "T2",
+   "value": 52.27089337175792,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "h1",
+   "value": 239.16,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "h2",
+   "value": 280.208838150289,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "h3",
+   "value": 107.32,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "qL",
+   "value": 131.84,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "w",
+   "value": 41.048838150289015,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "qH",
+   "value": 172.88883815028902,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "cop",
+   "value": 3.2117839612732557,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "x4",
+   "value": 0.3783477932855526,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 1000
+   },
+   "out": "T2",
+   "value": 47.70520231213871,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "h1",
+   "value": 251.88,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "h2",
+   "value": 282.559647887324,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "h3",
+   "value": 127.22,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "qL",
+   "value": 124.66,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "w",
+   "value": 30.679647887323995,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "qH",
+   "value": 155.339647887324,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "cop",
+   "value": 4.063280010834354,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "x4",
+   "value": 0.3663074420496137,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "T2",
+   "value": 57.634366197183105,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 234.44,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 277.66798757763974,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 138.97,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 43.22798757763974,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 182.19798757763974,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.214815395937703,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.36005710075520353,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 41.18944099378882,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "h1",
+   "value": 236.97,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "h2",
+   "value": 278.9734234234234,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "h3",
+   "value": 101.61,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "qL",
+   "value": 135.36,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "w",
+   "value": 42.00342342342341,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "qH",
+   "value": 177.3634234234234,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "cop",
+   "value": 3.2225944689193082,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "x4",
+   "value": 0.3688922044013428,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 120,
+    "Ph": 900
+   },
+   "out": "T2",
+   "value": 44.53153153153155,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 241.11,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 274.5686531986532,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 145.64000000000001,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 33.45865319865317,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 179.09865319865318,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 4.352835098749956,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.30614578370652684,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 160,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 38.215185185185184,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h1",
+   "value": 244.46,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h2",
+   "value": 278.0315289017341,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h3",
+   "value": 107.32,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "qL",
+   "value": 137.14000000000001,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "w",
+   "value": 33.57152890173407,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "qH",
+   "value": 170.71152890173408,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "cop",
+   "value": 4.085009068291684,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "x4",
+   "value": 0.3343687812454496,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "T2",
+   "value": 45.73121387283235,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "h1",
+   "value": 242.86,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "h2",
+   "value": 276.3823123123123,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "h3",
+   "value": 101.61,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "qL",
+   "value": 141.25,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "w",
+   "value": 33.522312312312295,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "qH",
+   "value": 174.7723123123123,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "cop",
+   "value": 4.213611480140073,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "x4",
+   "value": 0.3205541392082351,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 180,
+    "Ph": 900
+   },
+   "out": "T2",
+   "value": 42.08708708708709,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_mass_flow",
+   "params": {
+    "Pl": 180,
+    "Ph": 900,
+    "load": 12.0
+   },
+   "out": "m",
+   "value": 0.08495575221238938,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h1",
+   "value": 247.28,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h2",
+   "value": 280.85200576368874,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h3",
+   "value": 117.77,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "qL",
+   "value": 129.51,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "w",
+   "value": 33.572005763688736,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "qH",
+   "value": 163.08200576368876,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "cop",
+   "value": 3.8576783559377668,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "x4",
+   "value": 0.3608232158720758,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "T2",
+   "value": 52.27089337175792,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_mass_flow",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200,
+    "load": 25.0
+   },
+   "out": "m",
+   "value": 0.19303528685043628,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "energy_balance",
+   "params": {
+    "QL": 9.0,
+    "cop": 3.6
+   },
+   "out": "QH",
+   "value": 11.5,
+   "tol": 1e-12,
+   "what": "generated"
+  },
+  {
+   "model": "energy_balance",
+   "params": {
+    "QL": 15.0,
+    "cop": 4.2
+   },
+   "out": "QH",
+   "value": 18.571428571428573,
+   "tol": 1e-12,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 239.16,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 275.38904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 143.69,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 36.22904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 179.91904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.9661549144955606,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.3224726518294983,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 38.99348148148148,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "hp_heating",
+   "params": {
+    "Pl": 140,
+    "Ph": 800,
+    "W": 3.0
+   },
+   "out": "QH",
+   "value": 14.89846474348668,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 239.16,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 275.38904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 143.69,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 36.22904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 179.91904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.9661549144955606,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.3224726518294983,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 38.99348148148148,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 247.28,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 272.311037037037,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 151.81,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 25.03103703703701,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 176.841037037037,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 6.06487057549295,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.2507649787780081,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 36.0734074074074,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "h1",
+   "value": 246.36,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "h2",
+   "value": 293.6718788819876,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "h2s",
+   "value": 284.2095031055901,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "h3",
+   "value": 93.58,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "qL",
+   "value": 152.78000000000003,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "w",
+   "value": 47.31187888198758,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "cop",
+   "value": 3.2292101605410117,
+   "tol": 0.012,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "h1",
+   "value": 246.36,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "h2",
+   "value": 303.5532717948718,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "h2s",
+   "value": 289.25495384615385,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "h3",
+   "value": 90.69,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "qL",
+   "value": 155.67000000000002,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "w",
+   "value": 57.193271794871805,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "cop",
+   "value": 2.7218236536339937,
+   "tol": 0.012,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "h1",
+   "value": 246.36,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "h2",
+   "value": 287.3613531291111,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "h2s",
+   "value": 281.2111501597444,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "h3",
+   "value": 87.83,
+   "tol": {
+    "abs": 0.1
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "qL",
+   "value": 158.53000000000003,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "w",
+   "value": 41.00135312911107,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.7,
+    "eta_c": 0.85,
+    "T3": 26
+   },
+   "out": "cop",
+   "value": 3.86645776057189,
+   "tol": 0.012,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "tons": 5,
+    "cop": 3.5
+   },
+   "out": "W",
+   "value": 5.023809523809524,
+   "tol": 1e-09,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "psi": 40
+   },
+   "out": "kPa_abs",
+   "value": 377.11528,
+   "tol": 1e-06,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "rpm": 50000
+   },
+   "out": "omega",
+   "value": 5235.987755982988,
+   "tol": 1e-12,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "chain": 1
+   },
+   "out": "lo",
+   "value": 10.0,
+   "tol": 1e-12,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "chain": 1
+   },
+   "out": "hi",
+   "value": 30.0,
+   "tol": 1e-12,
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 293.15,
+    "T3": 313.15,
+    "rp": 2.0
+   },
+   "out": "cop",
+   "value": 4.565925369504057,
+   "tol": 0.03,
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 293.15,
+    "T3": 313.15,
+    "rp": 2.0
+   },
+   "out": "T4",
+   "value": 256.8880167337918,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 293.15,
+    "T3": 313.15,
+    "rp": 4.0
+   },
+   "out": "cop",
+   "value": 2.057637347500211,
+   "tol": 0.03,
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 293.15,
+    "T3": 313.15,
+    "rp": 4.0
+   },
+   "out": "T4",
+   "value": 210.73432266141117,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 283.15,
+    "T3": 313.15,
+    "rp": 3.0
+   },
+   "out": "T4",
+   "value": 228.7873761096795,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple",
+   "params": {
+    "T1": 283.15,
+    "T3": 323.15,
+    "rp": 2.5
+   },
+   "out": "T4",
+   "value": 248.71788439527535,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 273.15,
+    "T3": 308.15,
+    "T4": 263.15,
+    "rp": 3.0
+   },
+   "out": "T5",
+   "value": 192.25737832751767,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 273.15,
+    "T3": 308.15,
+    "T4": 263.15,
+    "rp": 3.0
+   },
+   "out": "T6",
+   "value": 228.14999999999998,
+   "tol": {
+    "abs": 1.5
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 273.15,
+    "T3": 308.15,
+    "T4": 263.15,
+    "rp": 3.0
+   },
+   "out": "qL",
+   "value": 36.07208478084471,
+   "tol": 0.03,
+   "what": "generated"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 273.15,
+    "T3": 308.15,
+    "T4": 263.15,
+    "rp": 3.0
+   },
+   "out": "w",
+   "value": 29.977333117619168,
+   "tol": 0.03,
+   "what": "generated"
+  },
+  {
+   "model": "gas_regen",
+   "params": {
+    "T1": 273.15,
+    "T3": 308.15,
+    "T4": 263.15,
+    "rp": 3.0
+   },
+   "out": "cop",
+   "value": 1.2033120037500387,
+   "tol": 0.03,
+   "what": "generated"
+  },
+  {
+   "model": "gas_regen_mass",
+   "params": {
+    "T1": 273.15,
+    "T3": 308.15,
+    "T4": 263.15,
+    "rp": 3.0,
+    "load": 15.0
+   },
+   "out": "m",
+   "value": 0.41583401932913566,
+   "tol": 0.03,
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple_eff",
+   "params": {
+    "T1": 283.15,
+    "T3": 318.15,
+    "rp": 3.0,
+    "etac": 0.8,
+    "etat": 0.85
+   },
+   "out": "T2",
+   "value": 413.66024361967413,
+   "tol": {
+    "abs": 2.0
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple_eff",
+   "params": {
+    "T1": 283.15,
+    "T3": 318.15,
+    "rp": 3.0,
+    "etac": 0.8,
+    "etat": 0.85
+   },
+   "out": "T4",
+   "value": 245.29681950471132,
+   "tol": {
+    "abs": 2.0
+   },
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple_eff",
+   "params": {
+    "T1": 283.15,
+    "T3": 318.15,
+    "rp": 3.0,
+    "etac": 0.8,
+    "etat": 0.85
+   },
+   "out": "qL",
+   "value": 38.0424463977651,
+   "tol": 0.04,
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple_eff",
+   "params": {
+    "T1": 283.15,
+    "T3": 318.15,
+    "rp": 3.0,
+    "etac": 0.8,
+    "etat": 0.85
+   },
+   "out": "w",
+   "value": 57.94534844000742,
+   "tol": 0.04,
+   "what": "generated"
+  },
+  {
+   "model": "gas_simple_eff",
+   "params": {
+    "T1": 283.15,
+    "T3": 318.15,
+    "rp": 3.0,
+    "etac": 0.8,
+    "etat": 0.85
+   },
+   "out": "cop",
+   "value": 0.6565228689089961,
+   "tol": 0.05,
+   "what": "generated"
+  },
+  {
+   "model": "dew_point",
+   "params": {
+    "T": 25,
+    "phi": 0.6
+   },
+   "out": "Tdp",
+   "value": 16.620844799999997,
+   "tol": {
+    "abs": 0.15
+   },
+   "what": "generated"
+  },
+  {
+   "model": "dew_point",
+   "params": {
+    "T": 30,
+    "phi": 0.5
+   },
+   "out": "Tdp",
+   "value": 18.383902,
+   "tol": {
+    "abs": 0.15
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 239.16,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 275.38904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 143.69,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 36.22904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 179.91904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.9661549144955606,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.3224726518294983,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 38.99348148148148,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 254.37999999999997,
+    "TH": 304.46
+   },
+   "out": "cop",
+   "value": 5.079472843450478,
+   "tol": 0.004,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h1",
+   "value": 247.28,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h2",
+   "value": 280.85200576368874,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "h3",
+   "value": 117.77,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "qL",
+   "value": 129.51,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "w",
+   "value": 33.572005763688736,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "qH",
+   "value": 163.08200576368876,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "cop",
+   "value": 3.8576783559377668,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "x4",
+   "value": 0.3608232158720758,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200
+   },
+   "out": "T2",
+   "value": 52.27089337175792,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_QH_from_load",
+   "params": {
+    "Pl": 240,
+    "Ph": 1200,
+    "load": 20.0
+   },
+   "out": "QH",
+   "value": 25.184465410190526,
+   "tol": 0.006,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "h1",
+   "value": 251.88,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "h2",
+   "value": 282.559647887324,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "h3",
+   "value": 127.22,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "qL",
+   "value": 124.66,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "w",
+   "value": 30.679647887323995,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "qH",
+   "value": 155.339647887324,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "cop",
+   "value": 4.063280010834354,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "x4",
+   "value": 0.3663074420496137,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400
+   },
+   "out": "T2",
+   "value": 57.634366197183105,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_QH_from_load",
+   "params": {
+    "Pl": 320,
+    "Ph": 1400,
+    "load": 30.0
+   },
+   "out": "QH",
+   "value": 37.38319779094914,
+   "tol": 0.006,
+   "what": "generated"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h4s",
+   "value": 88.94005853564917,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "generated"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "dcop",
+   "value": 0.27530655707237184,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h4s",
+   "value": 100.86301445426223,
+   "tol": {
+    "abs": 0.05
+   },
+   "what": "generated"
+  },
+  {
+   "model": "turbine_instead_of_valve",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "dcop",
+   "value": 0.29643277954758007,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h1",
+   "value": 244.46,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h2",
+   "value": 278.0315289017341,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "h3",
+   "value": 107.32,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "qL",
+   "value": 137.14000000000001,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "w",
+   "value": 33.57152890173407,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "qH",
+   "value": 170.71152890173408,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "cop",
+   "value": 4.085009068291684,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "x4",
+   "value": 0.3343687812454496,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 1000
+   },
+   "out": "T2",
+   "value": 45.73121387283235,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 263.06,
+    "TH": 312.52
+   },
+   "out": "cop",
+   "value": 5.318641326324306,
+   "tol": 0.004,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 234.44,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 277.66798757763974,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 138.97,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 43.22798757763974,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 182.19798757763974,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.214815395937703,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.36005710075520353,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 100,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 41.18944099378882,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "carnot",
+   "params": {
+    "TL": 246.77999999999997,
+    "TH": 304.46
+   },
+   "out": "cop",
+   "value": 4.278432732316227,
+   "tol": 0.004,
+   "what": "generated"
+  },
+  {
+   "model": "acm_illustration",
+   "params": {
+    "Tin": 323.15,
+    "dT": 35.0
+   },
+   "out": "PR",
+   "value": 1.4332197471694932,
+   "tol": 0.0003,
+   "what": "generated"
+  },
+  {
+   "model": "acm_illustration",
+   "params": {
+    "Tin": 288.15,
+    "Tout": 263.15
+   },
+   "out": "PRt",
+   "value": 1.3738944636644956,
+   "tol": 0.0003,
+   "what": "generated"
+  },
+  {
+   "model": "identity",
+   "params": {
+    "tons": 3.5,
+    "cop": 4.0
+   },
+   "out": "QH",
+   "value": 15.385416666666668,
+   "tol": 1e-09,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 0.8,
+    "eta_c": 0.8,
+    "T3": 30
+   },
+   "out": "qH",
+   "value": 200.0918788819876,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_real",
+   "params": {
+    "P1": 0.14,
+    "T1": -10,
+    "P2": 1.0,
+    "eta_c": 0.75,
+    "T3": 28
+   },
+   "out": "qH",
+   "value": 212.86327179487182,
+   "tol": 0.1,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 239.16,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 275.38904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 143.69,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 36.22904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 179.91904377104376,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 3.9661549144955606,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.3224726518294983,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 140,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 38.99348148148148,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "h1",
+   "value": 244.46,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "h2",
+   "value": 273.2825521885522,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "h3",
+   "value": 95.47,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "qL",
+   "value": 148.99,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "w",
+   "value": 28.82255218855218,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "qH",
+   "value": 177.8125521885522,
+   "tol": {
+    "abs": 0.06
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "cop",
+   "value": 5.169216071683488,
+   "tol": 0.005,
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "x4",
+   "value": 0.27685288550211135,
+   "tol": {
+    "abs": 0.003
+   },
+   "what": "generated"
+  },
+  {
+   "model": "vcrc_ideal",
+   "params": {
+    "Pl": 200,
+    "Ph": 800
+   },
+   "out": "T2",
+   "value": 36.99507407407407,
+   "tol": {
+    "abs": 0.3
+   },
+   "what": "generated"
+  },
+  {
+   "model": "cop_per_degree",
+   "params": {
+    "Pl1": 140,
+    "Pl2": 200,
+    "Ph": 800
+   },
+   "out": "pct",
+   "value": 3.4946067108598795,
+   "tol": {
+    "abs": 0.15
+   },
+   "what": "generated"
+  }
+ ],
+ "printed": [
+  {
+   "src": "Tutorials I tr.25–27",
+   "name": "h1",
+   "printed": 239.16,
+   "mine": 239.16,
+   "tol": 0.005,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Tutorials I tr.25–27",
+   "name": "h2",
+   "printed": 275.39,
+   "mine": 275.38904377104376,
+   "tol": 0.01,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Tutorials I tr.25–27",
+   "name": "h3=h4",
+   "printed": 95.47,
+   "mine": 95.47,
+   "tol": 0.005,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Tutorials I tr.26",
+   "name": "Q_L",
+   "printed": 7.18,
+   "mine": 7.1845,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Tutorials I tr.26",
+   "name": "W_in",
+   "printed": 1.81,
+   "mine": 1.8114521885521881,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Tutorials I tr.27",
+   "name": "Q_H",
+   "printed": 9.0,
+   "mine": 8.995952188552188,
+   "tol": 0.05,
+   "unit": "kW",
+   "note": "slide prints 9.0 and 8.99"
+  },
+  {
+   "src": "Tutorials I tr.27",
+   "name": "COP",
+   "printed": 3.97,
+   "mine": 3.9661549144955606,
+   "tol": 0.005,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–12",
+   "name": "(a) Q_L",
+   "printed": 7.41,
+   "mine": 7.407500000000001,
+   "tol": 0.01,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–12",
+   "name": "(a) W_in",
+   "printed": 1.83,
+   "mine": 1.8283884146341465,
+   "tol": 0.01,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–12",
+   "name": "(b) Q_H",
+   "printed": 9.23,
+   "mine": 9.235888414634147,
+   "tol": 0.015,
+   "unit": "kW",
+   "note": "table route 9.236 rounds to 9.24: the book/EES h2 is ~0.03 kJ/kg lower"
+  },
+  {
+   "src": "Cengel 11–12",
+   "name": "(c) COP",
+   "printed": 4.06,
+   "mine": 4.051382048098469,
+   "tol": 0.015,
+   "unit": "",
+   "note": "EES h2 ≈ 273.50 gives 4.056; the table interpolation gives 4.051"
+  },
+  {
+   "src": "Cengel 11–14",
+   "name": "increase of Q_L",
+   "printed": 4.2,
+   "mine": 4.2120015849193,
+   "tol": 0.1,
+   "unit": "%",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–1 discussion",
+   "name": "h4s",
+   "printed": 88.94,
+   "mine": 88.94005853564917,
+   "tol": 0.02,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–1 discussion",
+   "name": "turbine power",
+   "printed": 0.33,
+   "mine": 0.3264970732175414,
+   "tol": 0.01,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–1 discussion",
+   "name": "COP with turbine",
+   "printed": 5.07,
+   "mine": 5.058063368821001,
+   "tol": 0.02,
+   "unit": "",
+   "note": "book 5.07 uses rounded 1.48 kW; unrounded 5.06"
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "h1",
+   "printed": 246.36,
+   "mine": 246.36,
+   "tol": 0.005,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "h2",
+   "printed": 286.69,
+   "mine": 286.69,
+   "tol": 0.005,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "h3",
+   "printed": 87.83,
+   "mine": 87.83,
+   "tol": 0.005,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "h2s",
+   "printed": 284.21,
+   "mine": 284.2095031055901,
+   "tol": 0.05,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "Q_L",
+   "printed": 7.93,
+   "mine": 7.926500000000002,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "W_in",
+   "printed": 2.02,
+   "mine": 2.0164999999999993,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "eta_c",
+   "printed": 0.939,
+   "mine": 0.9384949939397497,
+   "tol": 0.001,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–2",
+   "name": "COP",
+   "printed": 3.93,
+   "mine": 3.9308207289858688,
+   "tol": 0.005,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–18",
+   "name": "(a) Q_L",
+   "printed": 19.4,
+   "mine": 19.365599999999997,
+   "tol": 0.05,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–18",
+   "name": "(a) W_in",
+   "printed": 5.06,
+   "mine": 5.060399999999995,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–18",
+   "name": "(b) eta_c",
+   "printed": 0.825,
+   "mine": 0.8264441584003899,
+   "tol": 0.003,
+   "unit": "",
+   "note": "linear interpolation in s gives h2s 281.21 (CoolProp 281.17)"
+  },
+  {
+   "src": "Cengel 11–18",
+   "name": "(c) COP",
+   "printed": 3.83,
+   "mine": 3.8268911548494224,
+   "tol": 0.01,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–20",
+   "name": "(a) W_in",
+   "printed": 1.88,
+   "mine": 1.8826953294074664,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–20",
+   "name": "(b) Q_L",
+   "printed": 4.99,
+   "mine": 4.989815131804176,
+   "tol": 0.01,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–20",
+   "name": "(c) pressure drop",
+   "printed": 1.65,
+   "mine": 1.7224999999999966,
+   "tol": 0.1,
+   "unit": "kPa",
+   "note": "P_sat(−18.5 °C) interpolated linearly between −18 and −20 °C"
+  },
+  {
+   "src": "Cengel 11–20",
+   "name": "(c) heat gain",
+   "printed": 0.241,
+   "mine": 0.24058541595344168,
+   "tol": 0.002,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–22",
+   "name": "(a) mass flow",
+   "printed": 0.00727,
+   "mine": 0.007271536229589539,
+   "tol": 1e-05,
+   "unit": "kg/s",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–22",
+   "name": "(b) condenser pressure",
+   "printed": 672,
+   "mine": 672.1067415730336,
+   "tol": 1.5,
+   "unit": "kPa",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–22",
+   "name": "(c) COP",
+   "printed": 2.43,
+   "mine": 2.426043029701456,
+   "tol": 0.01,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–32",
+   "name": "(a) W_in",
+   "printed": 3.55,
+   "mine": 3.5493827160493816,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–32",
+   "name": "(b) Q_L",
+   "printed": 13.12,
+   "mine": 13.117283950617285,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–32",
+   "name": "(c) extra power",
+   "printed": 13.12,
+   "mine": 13.117283950617287,
+   "tol": 0.005,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–2",
+   "name": "(a) COP",
+   "printed": 5.64,
+   "mine": 5.648026315789471,
+   "tol": 0.01,
+   "unit": "",
+   "note": "book likely uses 273 K: 5.645"
+  },
+  {
+   "src": "Cengel 11–2",
+   "name": "(b) q_L",
+   "printed": 147.0,
+   "mine": 147.03787049999997,
+   "tol": 0.2,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–2",
+   "name": "(c) w_net",
+   "printed": 26.1,
+   "mine": 26.033496000000014,
+   "tol": 0.1,
+   "unit": "kJ/kg",
+   "note": "q_L/COP = 147/5.64 = 26.06 rounds to 26.1; unrounded 26.03"
+  },
+  {
+   "src": "Cengel 11–96",
+   "name": "(a) flash fraction",
+   "printed": 0.165,
+   "mine": 0.1645529982777517,
+   "tol": 0.001,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–96",
+   "name": "(b) q_L",
+   "printed": 146.4,
+   "mine": 146.38702364177234,
+   "tol": 0.1,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–96",
+   "name": "(b) w",
+   "printed": 32.6,
+   "mine": 32.636264525111244,
+   "tol": 0.1,
+   "unit": "kJ/kg",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–96",
+   "name": "(c) COP",
+   "printed": 4.49,
+   "mine": 4.485409889025079,
+   "tol": 0.01,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–97",
+   "name": "T of air entering the cabin",
+   "printed": -9.0,
+   "mine": -9.038776016590646,
+   "tol": 0.5,
+   "unit": "°C",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–61",
+   "name": "(a) lowest temperature",
+   "printed": -99.4,
+   "mine": -99.4279326359786,
+   "tol": 0.1,
+   "unit": "°C",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–61",
+   "name": "(b) COP",
+   "printed": 1.12,
+   "mine": 1.1226302978957208,
+   "tol": 0.005,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–61",
+   "name": "(c) mass flow",
+   "printed": 0.237,
+   "mine": 0.23677945700561384,
+   "tol": 0.001,
+   "unit": "kg/s",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–56",
+   "name": "(a) refrigeration rate",
+   "printed": 6.67,
+   "mine": 6.670010256410255,
+   "tol": 0.01,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–56",
+   "name": "(b) net power",
+   "printed": 3.88,
+   "mine": 3.88036250954719,
+   "tol": 0.01,
+   "unit": "kW",
+   "note": ""
+  },
+  {
+   "src": "Cengel 11–56",
+   "name": "(c) COP",
+   "printed": 1.72,
+   "mine": 1.7189142096903203,
+   "tol": 0.005,
+   "unit": "",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–5",
+   "name": "T_max",
+   "printed": 223.0,
+   "mine": 223.56582089552234,
+   "tol": 1.5,
+   "unit": "°F",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–5",
+   "name": "T_min",
+   "printed": -97.0,
+   "mine": -96.74736389684819,
+   "tol": 1.5,
+   "unit": "°F",
+   "note": ""
+  },
+  {
+   "src": "Cengel Ex.11–5",
+   "name": "COP",
+   "printed": 2.06,
+   "mine": 2.070550016830016,
+   "tol": 0.015,
+   "unit": "",
+   "note": "w_net is a small difference of large numbers (about 11.2 of 53.6 and 42.4 Btu/lbm): a 0.05 Btu/lbm rounding moves COP by 1 %"
+  },
+  {
+   "src": "Cengel Ex.11–5",
+   "name": "Q_refrig",
+   "printed": 2.32,
+   "mine": 2.323148997134672,
+   "tol": 0.02,
+   "unit": "Btu/s",
+   "note": ""
+  }
+ ],
+ "fe": {
+  "11-110": 28.260644799999998,
+  "11-111": 32.63099011747157,
+  "11-112": 0.22614840989399293,
+  "11-113": 31.188984657060523,
+  "11-114": 0.604485266691533,
+  "11-115": 5.878331485900209,
+  "11-116": -57.71604253502673,
+  "11-117": 27.5844332901351,
+  "11-119": 3.1952610794208
+ },
+ "cp": {
+  "h4s_12": 82.60130933462517,
+  "x4_15": 0.32253389390704734,
+  "h2s_18": 281.16239992880605,
+  "T2_22": 33.46510439103406,
+  "h2_22": 272.6309525341858,
+  "m_22": 0.01262221378705822,
+  "cop_22": 4.21107300333834,
+  "s_672_60": 1.0299222564986865,
+  "tut": {
+   "h1": 239.17592324292534,
+   "h2": 275.3879219537149,
+   "h3": 95.50136041152003,
+   "cop": 3.967595491728454,
+   "x4": 0.32253389390704734,
+   "qL": 143.6745628314053,
+   "w": 36.21199871078957,
+   "qH": 179.8865615421949
+  },
+  "p12": {
+   "h1": 236.97952025838381,
+   "h2": 273.51192874372055,
+   "h3": 88.84926678464933,
+   "cop": 4.0547628698827936,
+   "x4": 0.309327676323796,
+   "qL": 148.13025347373448,
+   "w": 36.53240848533673,
+   "qH": 184.66266195907122
+  },
+  "flash": null
+ }
+}
