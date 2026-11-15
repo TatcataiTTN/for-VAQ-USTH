@@ -1,0 +1,3033 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 15–1 = slide Ch.4 tr.13–17. Một kmol octan (C₈H₁₈) được đốt bằng không khí chứa 20 kmol O₂. Giả thiết sản phẩm chỉ gồm CO₂, H₂O, O₂ và N₂: xác định số mol từng khí trong sản phẩm và tỉ lệ không khí–nhiên liệu của quá trình.",
+   "en": "Cengel Example 15–1 = slide Ch.4 p.13–17. One kmol of octane (C₈H₁₈) is burned with air that contains 20 kmol of O₂. Assuming the products contain only CO₂, H₂O, O₂ and N₂, determine the mole number of each gas in the products and the air–fuel ratio of this combustion process."
+  },
+  "sol": {
+   "vi": "Giả thiết (slide tr.13–14): sản phẩm chỉ có CO₂, H₂O, O₂, N₂; không khí khô = 1 kmol O₂ + 3,76 kmol N₂.\nBước 1 (cân bằng nguyên tố, slide tr.15). C₈H₁₈ + 20(O₂ + 3,76 N₂) → x CO₂ + y H₂O + z O₂ + w N₂. C: 8 = x → x = 8. H: 18 = 2y → y = 9. O: 20 × 2 = 2x + y + 2z → 40 = 16 + 9 + 2z → z = 7,5. N₂: 20 × 3,76 = w = 75,2.\nPhương trình: C₈H₁₈ + 20(O₂ + 3,76 N₂) → 8 CO₂ + 9 H₂O + 7,5 O₂ + 75,2 N₂ (slide tr.16). Hệ số 20 là số mol O₂, KHÔNG phải số mol không khí: không khí = 20 + 75,2 = 95,2 kmol (= 20 × 4,76).\nBước 2 (tỉ lệ không khí–nhiên liệu, slide tr.17). AF = (20 × 4,76 kmol)(29 kg/kmol) / [(8 kmol)(12 kg/kmol) + (9 kmol)(2 kg/kmol)] = 2.760,8 / 114 = 24,22 kg không khí/kg nhiên liệu. Slide làm tròn M_air = 29 (tr.14 ghi 28,97): với 28,97 và M(C₈H₁₈) = 114,231 kg/kmol (A-27) được 24,19.\nKiểm tra số mol: chất phản ứng 1 + 95,2 = 96,2 kmol, sản phẩm 8 + 9 + 7,5 + 75,2 = 99,7 kmol: số mol không bảo toàn, chỉ số nguyên tử mỗi nguyên tố được bảo toàn (slide tr.11).\nHai đường: (A) đại số tay như trên; (B) sympy giải ma trận nguyên tố [C, H, O, N] với ẩn (x, y, z, w): (8, 9, 15/2, 376/5) trùng. Đáp số: 8 CO₂; 9 H₂O; 7,5 O₂; 75,2 N₂; AF = 24,2 kg/kg (slide 24,2).",
+   "en": "Assumptions (slides p.13–14): products only CO₂, H₂O, O₂, N₂; dry air = 1 kmol O₂ + 3.76 kmol N₂.\nStep 1 (element balances, slide p.15). C₈H₁₈ + 20(O₂ + 3.76 N₂) → x CO₂ + y H₂O + z O₂ + w N₂. C: 8 = x → x = 8. H: 18 = 2y → y = 9. O: 20 × 2 = 2x + y + 2z → 40 = 16 + 9 + 2z → z = 7.5. N₂: 20 × 3.76 = w = 75.2.\nEquation: C₈H₁₈ + 20(O₂ + 3.76 N₂) → 8 CO₂ + 9 H₂O + 7.5 O₂ + 75.2 N₂ (slide p.16). The coefficient 20 is the number of moles of O₂, NOT of air: air = 20 + 75.2 = 95.2 kmol (= 20 × 4.76).\nStep 2 (air–fuel ratio, slide p.17). AF = (20 × 4.76 kmol)(29 kg/kmol) / [(8 kmol)(12 kg/kmol) + (9 kmol)(2 kg/kmol)] = 2,760.8 / 114 = 24.22 kg air/kg fuel. The slide rounds M_air to 29 (p.14 prints 28.97): with 28.97 and M(C₈H₁₈) = 114.231 kg/kmol (A-27) the result is 24.19.\nMole check: reactants 1 + 95.2 = 96.2 kmol, products 8 + 9 + 7.5 + 75.2 = 99.7 kmol: moles are not conserved, only the atoms of each element are (slide p.11).\nTwo routes: (A) hand algebra as above; (B) sympy solves the element matrix [C, H, O, N] for the unknowns (x, y, z, w): (8, 9, 15/2, 376/5), identical. Answer: 8 CO₂; 9 H₂O; 7.5 O₂; 75.2 N₂; AF = 24.2 kg/kg (slide 24.2)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.13–17 = Cengel Ex 15-1",
+   "en": "Slide Ch.4 p.13–17 = Cengel Ex 15-1"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + slide p.15-17 (printed answer 24.2)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.15–16 (Cengel Ví dụ 15–1): C₈H₁₈ + 20(O₂ + 3,76 N₂) → x CO₂ + y H₂O + z O₂ + w N₂. Dãy hệ số (x; y; z; w) của sản phẩm là:",
+   "en": "Slide Ch.4 p.15–16 (Cengel Example 15–1): C₈H₁₈ + 20(O₂ + 3.76 N₂) → x CO₂ + y H₂O + z O₂ + w N₂. The coefficients (x; y; z; w) of the products are:"
+  },
+  "opts": [
+   {
+    "vi": "8; 9; 7,5; 75,2",
+    "en": "8; 9; 7.5; 75.2"
+   },
+   {
+    "vi": "8; 18; 7,5; 75,2",
+    "en": "8; 18; 7.5; 75.2"
+   },
+   {
+    "vi": "8; 9; 12,5; 75,2",
+    "en": "8; 9; 12.5; 75.2"
+   },
+   {
+    "vi": "8; 9; 7,5; 95,2",
+    "en": "8; 9; 7.5; 95.2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C: x = 8. H: 18 = 2y → y = 9. O: 40 = 2x + y + 2z = 25 + 2z → z = 7,5. N₂: w = 20 × 3,76 = 75,2. Dãy (8; 18; 7,5; 75,2) quên rằng H₂ chỉ có 2 nguyên tử H mỗi phân tử (y = 18/2); dãy (8; 9; 12,5; 75,2) lấy z bằng O₂ lý thuyết 12,5 thay vì phần O₂ thừa 20 − 12,5 = 7,5; dãy (8; 9; 7,5; 95,2) nhầm số mol không khí (95,2) với số mol N₂.",
+   "en": "C: x = 8. H: 18 = 2y → y = 9. O: 40 = 2x + y + 2z = 25 + 2z → z = 7.5. N₂: w = 20 × 3.76 = 75.2. The set (8; 18; 7.5; 75.2) forgets that each H₂O takes 2 H atoms (y = 18/2); (8; 9; 12.5; 75.2) takes z as the theoretical O₂ 12.5 instead of the excess 20 − 12.5 = 7.5; (8; 9; 7.5; 95.2) confuses the moles of air (95.2) with the moles of N₂."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.15–16 = Cengel Ex 15-1",
+   "en": "Slide Ch.4 p.15–16 = Cengel Ex 15-1"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide p.15-16 + sympy"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 15–2 = slide Ch.4 tr.27–32. Etan (C₂H₆) được đốt với 20 % không khí thừa. Giả thiết cháy hoàn toàn, khí cháy là khí lý tưởng, áp suất tổng 100 kPa. Xác định (a) tỉ lệ không khí–nhiên liệu, (b) nhiệt độ điểm sương của sản phẩm.",
+   "en": "Cengel Example 15–2 = slide Ch.4 p.27–32. Ethane (C₂H₆) is burned with 20 percent excess air. Assuming complete combustion, ideal-gas products and a total pressure of 100 kPa, determine (a) the air–fuel ratio and (b) the dew-point temperature of the products."
+  },
+  "sol": {
+   "vi": "Giả thiết (tr.27): cháy hoàn toàn; khí cháy là khí lý tưởng.\nBước 1 (slide tr.28–29). C₂H₆ + 1,2 a_th (O₂ + 3,76 N₂) → 2 CO₂ + 3 H₂O + 0,2 a_th O₂ + (1,2 × 3,76) a_th N₂. Cân bằng O₂: 1,2 a_th = 2 + 1,5 + 0,2 a_th → a_th = 3,5. Vậy C₂H₆ + 4,2 (O₂ + 3,76 N₂) → 2 CO₂ + 3 H₂O + 0,7 O₂ + 15,79 N₂.\nBước 2 (a) (tr.30). AF = (4,2 × 4,76 kmol)(29 kg/kmol) / [(2 kmol)(12 kg/kmol) + (3 kmol)(2 kg/kmol)] = 579,8 / 30 = 19,3 kg/kg.\nBước 3 (b) (tr.31–32). Số mol sản phẩm N_prod = 2 + 3 + 0,7 + 15,79 = 21,49 kmol. P_v = (N_v/N_prod) P = (3/21,49)(100 kPa) = 13,96 kPa. T_dp = T_sat@13,96 kPa: bảng A-5 có hàng 10 kPa (45,81 °C) và 15 kPa (53,97 °C); nội suy tuyến tính: 45,81 + (13,96 − 10)/5 × 8,16 = 52,27 °C (slide làm tròn 52,3).\nHai đường: (A) nội suy bảng A-5 như trên; (B) IAPWS-IF97 cho T_sat(13,96 kPa) = 52,49 °C. Lệch 0,22 °C là sai số của nội suy tuyến tính trên hai hàng cách nhau 5 kPa (T_sat(P) lồi lên), không phải lỗi của lời giải: dung sai khai báo 0,35 °C.\nĐáp số: AF = 19,3 kg/kg; T_dp ≈ 52,3 °C (iapws 52,5 °C).",
+   "en": "Assumptions (p.27): complete combustion; ideal-gas products.\nStep 1 (slides p.28–29). C₂H₆ + 1.2 a_th (O₂ + 3.76 N₂) → 2 CO₂ + 3 H₂O + 0.2 a_th O₂ + (1.2 × 3.76) a_th N₂. O₂ balance: 1.2 a_th = 2 + 1.5 + 0.2 a_th → a_th = 3.5. So C₂H₆ + 4.2 (O₂ + 3.76 N₂) → 2 CO₂ + 3 H₂O + 0.7 O₂ + 15.79 N₂.\nStep 2 (a) (p.30). AF = (4.2 × 4.76 kmol)(29 kg/kmol) / [(2 kmol)(12 kg/kmol) + (3 kmol)(2 kg/kmol)] = 579.8 / 30 = 19.3 kg/kg.\nStep 3 (b) (p.31–32). Product moles N_prod = 2 + 3 + 0.7 + 15.79 = 21.49 kmol. P_v = (N_v/N_prod) P = (3/21.49)(100 kPa) = 13.96 kPa. T_dp = T_sat@13.96 kPa: Table A-5 has the rows 10 kPa (45.81 °C) and 15 kPa (53.97 °C); linear interpolation: 45.81 + (13.96 − 10)/5 × 8.16 = 52.27 °C (the slide rounds to 52.3).\nTwo routes: (A) interpolation in Table A-5 as above; (B) IAPWS-IF97 gives T_sat(13.96 kPa) = 52.49 °C. The 0.22 °C gap is the error of linear interpolation between rows 5 kPa apart (T_sat(P) is concave), not an error of the solution: declared tolerance 0.35 °C.\nAnswer: AF = 19.3 kg/kg; T_dp ≈ 52.3 °C (iapws 52.5 °C)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.27–32 = Cengel Ex 15-2",
+   "en": "Slide Ch.4 p.27–32 = Cengel Ex 15-2"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + slide p.30-32 (printed 19.3 and 52.3)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.27–32 (Cengel Ví dụ 15–2): etan C₂H₆ cháy hoàn toàn với 20 % không khí thừa ở áp suất tổng 100 kPa; sản phẩm: 2 CO₂ + 3 H₂O + 0,7 O₂ + 15,79 N₂. Nhiệt độ điểm sương của sản phẩm (bảng A-5) xấp xỉ:",
+   "en": "Slide Ch.4 p.27–32 (Cengel Example 15–2): ethane C₂H₆ is burned completely with 20 percent excess air at a total pressure of 100 kPa; products: 2 CO₂ + 3 H₂O + 0.7 O₂ + 15.79 N₂. The dew-point temperature of the products (Table A-5) is about:"
+  },
+  "opts": [
+   {
+    "vi": "52,3 °C",
+    "en": "52.3 °C"
+   },
+   {
+    "vi": "99,6 °C",
+    "en": "99.6 °C"
+   },
+   {
+    "vi": "55,5 °C",
+    "en": "55.5 °C"
+   },
+   {
+    "vi": "49,1 °C",
+    "en": "49.1 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P_v = 3/21,49 × 100 = 13,96 kPa; T_dp = T_sat@13,96 kPa = 52,3 °C (nội suy A-5, slide 52,3; IAPWS 52,5 °C). 99,6 °C là T_sat ở áp suất TỔNG 100 kPa, không phải ở áp suất riêng phần của hơi nước. 55,5 °C dùng số mol sản phẩm khô (không tính H₂O) làm mẫu số của P_v. 49,1 °C lấy P_v = N_v/N_O₂,th × 10 kPa (chia cho mol nhiên liệu).",
+   "en": "P_v = 3/21.49 × 100 = 13.96 kPa; T_dp = T_sat@13.96 kPa = 52.3 °C (A-5 interpolation, slide 52.3; IAPWS 52.5 °C). 99.6 °C is T_sat at the TOTAL pressure 100 kPa, not at the partial pressure of the vapor. 55.5 °C uses the dry product moles (without the H₂O) as the denominator of P_v. 49.1 °C takes P_v = N_v / N_O₂,th × 10 kPa (divides by moles of fuel)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.27–32 = Cengel Ex 15-2",
+   "en": "Slide Ch.4 p.27–32 = Cengel Ex 15-2"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + slide p.32 (52.3)"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 15–3 (ví dụ không có trên slide; cùng §15-2). Một khí thiên nhiên có thành phần thể tích: 72 % CH₄, 9 % H₂, 14 % N₂, 2 % O₂ và 3 % CO₂. Khí này được đốt với lượng không khí ẩm lý thuyết vào buồng đốt ở 20 °C, 1 atm, độ ẩm tương đối 80 %. Giả thiết cháy hoàn toàn, áp suất tổng 1 atm: xác định nhiệt độ điểm sương của sản phẩm.",
+   "en": "Cengel Example 15–3 (not on the slides; same §15-2). A certain natural gas has the volumetric analysis 72 percent CH₄, 9 percent H₂, 14 percent N₂, 2 percent O₂ and 3 percent CO₂. It is burned with the stoichiometric amount of air that enters the combustion chamber at 20 °C, 1 atm and 80 percent relative humidity. Assuming complete combustion and a total pressure of 1 atm, determine the dew-point temperature of the products."
+  },
+  "sol": {
+   "vi": "Giả thiết: cháy hoàn toàn, đúng lượng không khí lý thuyết (không có O₂ tự do), khí lý tưởng; P_sat@20 °C = 2,3392 kPa (A-4). Hơi ẩm trong không khí không phản ứng: cân bằng bằng không khí khô rồi cộng hơi ẩm vào hai vế.\nBước 1 (cho 1 kmol nhiên liệu). (0,72 CH₄ + 0,09 H₂ + 0,14 N₂ + 0,02 O₂ + 0,03 CO₂) + a_th (O₂ + 3,76 N₂) → x CO₂ + y H₂O + z N₂. C: x = 0,72 + 0,03 = 0,75. H: 0,72×4 + 0,09×2 = 2y → y = 1,53. O₂: 0,02 + 0,03 + a_th = x + y/2 → a_th = 1,465. N₂: z = 0,14 + 3,76 × 1,465 = 5,648.\nBước 2 (hơi ẩm trong không khí). Không khí khô: 4,76 × 1,465 = 6,97 kmol. P_v,air = φ P_sat = 0,80 × 2,3392 = 1,871 kPa. N_v,air = (P_v,air/P_tổng)(N_khô + N_v,air) → N_v,air = P_v,air/(P − P_v,air) × N_khô = 0,131 kmol (sách 0,131).\nBước 3 (sản phẩm). 0,75 CO₂ + (1,661) H₂O + 5,648 N₂: N_prod = 8,060 kmol. P_v,prod = (1,661/8,060)(101,325) = 20,88 kPa → T_dp = T_sat@20,88 kPa = 60,9 °C (nội suy A-5 giữa 20 kPa: 60,06 °C và 25 kPa: 64,96 °C; sách ghi 60,9 °C).\nKiểm tra bằng không khí khô: P_v = 1,53/7,928 × 101,325 = 19,55 kPa → T_dp = 59,5 °C (sách 59,5 °C): hơi ẩm trong không khí nâng điểm sương lên 1,4 °C.\nHai đường: (A) nội suy A-5; (B) IAPWS-IF97 cho 61,00 °C (lệch 0,07 °C do nội suy). Đáp số: T_dp ≈ 60,9 °C với không khí ẩm; 59,5 °C với không khí khô.",
+   "en": "Assumptions: complete combustion, exactly the theoretical air (no free O₂), ideal gases; P_sat@20 °C = 2.3392 kPa (A-4). The moisture of the air does not react: balance with dry air and add the moisture to both sides.\nStep 1 (per kmol of fuel). (0.72 CH₄ + 0.09 H₂ + 0.14 N₂ + 0.02 O₂ + 0.03 CO₂) + a_th (O₂ + 3.76 N₂) → x CO₂ + y H₂O + z N₂. C: x = 0.72 + 0.03 = 0.75. H: 0.72×4 + 0.09×2 = 2y → y = 1.53. O₂: 0.02 + 0.03 + a_th = x + y/2 → a_th = 1.465. N₂: z = 0.14 + 3.76 × 1.465 = 5.648.\nStep 2 (moisture of the air). Dry air: 4.76 × 1.465 = 6.97 kmol. P_v,air = φ P_sat = 0.80 × 2.3392 = 1.871 kPa. N_v,air = (P_v,air/P_total)(N_dry + N_v,air) → N_v,air = P_v,air/(P − P_v,air) × N_dry = 0.131 kmol (book 0.131).\nStep 3 (products). 0.75 CO₂ + (1.661) H₂O + 5.648 N₂: N_prod = 8.060 kmol. P_v,prod = (1.661/8.060)(101.325) = 20.88 kPa → T_dp = T_sat@20.88 kPa = 60.9 °C (A-5 interpolation between 20 kPa: 60.06 °C and 25 kPa: 64.96 °C; the book prints 60.9 °C).\nCheck with dry air: P_v = 1.53/7.928 × 101.325 = 19.55 kPa → T_dp = 59.5 °C (book 59.5 °C): the moisture of the air raises the dew point by 1.4 °C.\nTwo routes: (A) A-5 interpolation; (B) IAPWS-IF97 gives 61.00 °C (gap 0.07 °C from the interpolation). Answer: T_dp ≈ 60.9 °C with moist air; 59.5 °C with dry air."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Ví dụ 15–3",
+   "en": "Cengel Ch.15 Example 15–3"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + printed 60.9 / 59.5 C"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 15–4 = slide Ch.4 tr.33–39. Octan (C₈H₁₈) cháy với không khí khô. Phân tích thể tích sản phẩm trên cơ sở khô: CO₂ 10,02 %; O₂ 5,62 %; CO 0,88 %; N₂ 83,48 %. Sản phẩm được làm nguội tới 25 °C ở 100 kPa. Xác định (a) tỉ lệ không khí–nhiên liệu, (b) phần trăm không khí lý thuyết đã dùng, (c) lượng H₂O ngưng tụ.",
+   "en": "Cengel Example 15–4 = slide Ch.4 p.33–39. Octane (C₈H₁₈) is burned with dry air. The volumetric analysis of the products on a dry basis is CO₂ 10.02 %, O₂ 5.62 %, CO 0.88 %, N₂ 83.48 %. The products are cooled to 25 °C at 100 kPa. Determine (a) the air–fuel ratio, (b) the percentage of theoretical air used and (c) the amount of H₂O that condenses."
+  },
+  "sol": {
+   "vi": "Giả thiết: khí lý tưởng (phần thể tích = phần mol); lấy 100 kmol sản phẩm khô. P_sat@25 °C = 3,1698 kPa (A-4).\nBước 1 (slide tr.34). x C₈H₁₈ + a (O₂ + 3,76 N₂) → 10,02 CO₂ + 0,88 CO + 5,62 O₂ + 83,48 N₂ + b H₂O. N₂: 3,76 a = 83,48 → a = 22,20. C: 8x = 10,02 + 0,88 → x = 1,3625 (slide làm tròn 1,36). H: 18x = 2b → b = 12,263 (slide 12,24). Kiểm O₂: a = 10,02 + 0,44 + 5,62 + b/2 = 22,211 (slide 22,20 = 22,20; lệch 0,009 do làm tròn thành phần).\nBước 2 (tr.35). Chia cho x: C₈H₁₈ + 16,30(O₂ + 3,76 N₂) → 7,35 CO₂ + 0,65 CO + 4,12 O₂ + 61,27 N₂ + 9 H₂O (slide: 16,32; 7,37; 0,65; 4,13; 61,38).\n(a) AF = (16,32 × 4,76)(29)/[(8)(12) + (9)(2)] = 19,76 kg/kg theo số làm tròn của slide; với số không làm tròn (16,295 kmol không khí/kmol nhiên liệu): 19,73 kg/kg.\n(b) Không khí lý thuyết: C₈H₁₈ + a_th(O₂ + 3,76 N₂) → 8 CO₂ + 9 H₂O + 3,76 a_th N₂ → a_th = 8 + 4,5 = 12,5. Phần trăm = 16,32/12,5 = 130,6 % (slide ghi 131 %); không làm tròn x: 130,4 % → khoảng 31 % không khí thừa.\n(c) Sản phẩm trên 1 kmol nhiên liệu: 82,39 kmol (slide 82,53) gồm 9 kmol H₂O. (9 − N_w)/(82,39 − N_w) = 3,1698/100 → N_w = 6,60 kmol (slide 6,59), tức 73,3 % hơi nước ngưng tụ (slide 73 %).\nHai đường: (A) cân bằng tay; (B) sympy giải N₂, C, H (chính xác, phân số) và kiểm O₂; N_w giải bằng scipy brentq với P_sat từ IAPWS-IF97 (3,1698 → 3,1697 kPa). Đáp số: AF ≈ 19,7–19,8 kg/kg; ≈ 131 % lý thuyết; N_w ≈ 6,60 kmol/kmol nhiên liệu.",
+   "en": "Assumptions: ideal gases (volume fraction = mole fraction); take 100 kmol of dry products. P_sat@25 °C = 3.1698 kPa (A-4).\nStep 1 (slide p.34). x C₈H₁₈ + a (O₂ + 3.76 N₂) → 10.02 CO₂ + 0.88 CO + 5.62 O₂ + 83.48 N₂ + b H₂O. N₂: 3.76 a = 83.48 → a = 22.20. C: 8x = 10.02 + 0.88 → x = 1.3625 (the slide rounds to 1.36). H: 18x = 2b → b = 12.263 (slide 12.24). O₂ check: a = 10.02 + 0.44 + 5.62 + b/2 = 22.211 (slide 22.20 = 22.20; gap 0.009 from rounding of the composition).\nStep 2 (p.35). Divide by x: C₈H₁₈ + 16.30(O₂ + 3.76 N₂) → 7.35 CO₂ + 0.65 CO + 4.12 O₂ + 61.27 N₂ + 9 H₂O (slide: 16.32; 7.37; 0.65; 4.13; 61.38).\n(a) AF = (16.32 × 4.76)(29)/[(8)(12) + (9)(2)] = 19.76 kg/kg with the slide's rounded numbers; unrounded (16.295 kmol air/kmol fuel): 19.73 kg/kg.\n(b) Theoretical air: C₈H₁₈ + a_th(O₂ + 3.76 N₂) → 8 CO₂ + 9 H₂O + 3.76 a_th N₂ → a_th = 8 + 4.5 = 12.5. Percentage = 16.32/12.5 = 130.6 % (slide prints 131 %); with x unrounded: 130.4 % → about 31 percent excess air.\n(c) Products per kmol of fuel: 82.39 kmol (slide 82.53) including 9 kmol H₂O. (9 − N_w)/(82.39 − N_w) = 3.1698/100 → N_w = 6.60 kmol (slide 6.59), i.e. 73.3 % of the vapor condenses (slide 73 %).\nTwo routes: (A) hand balances; (B) sympy solves N₂, C, H exactly (fractions) and checks O₂; N_w solved with scipy brentq using P_sat from IAPWS-IF97 (3.1698 → 3.1697 kPa). Answer: AF ≈ 19.7–19.8 kg/kg; ≈ 131 % theoretical; N_w ≈ 6.60 kmol per kmol fuel."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.33–39 = Cengel Ex 15-4",
+   "en": "Slide Ch.4 p.33–39 = Cengel Ex 15-4"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + slide p.34-39 (printed 19.76, 131 %, 6.59 kmol, 73 %)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.33–36 (Cengel Ví dụ 15–4): octan cháy với không khí khô, sản phẩm khô (mol %): 10,02 CO₂; 0,88 CO; 5,62 O₂; 83,48 N₂. Phương trình cho 1 kmol nhiên liệu có 16,32 kmol O₂ trong không khí. Tỉ lệ không khí–nhiên liệu AF (kg/kg, M_air = 29) xấp xỉ:",
+   "en": "Slide Ch.4 p.33–36 (Cengel Example 15–4): octane burned with dry air, dry products (mol %): 10.02 CO₂; 0.88 CO; 5.62 O₂; 83.48 N₂. The equation per kmol of fuel has 16.32 kmol O₂ in the air. The air–fuel ratio AF (kg/kg, M_air = 29) is about:"
+  },
+  "opts": [
+   {
+    "vi": "19,76 kg/kg",
+    "en": "19.76 kg/kg"
+   },
+   {
+    "vi": "16,32 kg/kg",
+    "en": "16.32 kg/kg"
+   },
+   {
+    "vi": "15,14 kg/kg",
+    "en": "15.14 kg/kg"
+   },
+   {
+    "vi": "4,58 kg/kg",
+    "en": "4.58 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "AF = (16,32 × 4,76 kmol)(29 kg/kmol)/[(8)(12) + (9)(2)] = 2.252,8/114 = 19,76 kg/kg (slide tr.36; không làm tròn x = 1,3625 thì 19,73). 16,32 kg/kg là số kmol O₂ trên kmol nhiên liệu, chưa nhân 4,76 và khối lượng mol. 15,14 kg/kg là AF của cháy lý thuyết (12,5 kmol O₂), không phải của quá trình thực. 4,58 kg/kg bỏ N₂ khỏi không khí (chỉ O₂: 16,32 × 32)/114.",
+   "en": "AF = (16.32 × 4.76 kmol)(29 kg/kmol)/[(8)(12) + (9)(2)] = 2,252.8/114 = 19.76 kg/kg (slide p.36; with the unrounded x = 1.3625: 19.73). 16.32 kg/kg is the kmol O₂ per kmol fuel, not yet multiplied by 4.76 and the molar masses. 15.14 kg/kg is the AF of theoretical combustion (12.5 kmol O₂), not of the actual process. 4.58 kg/kg drops the N₂ of the air (only O₂: 16.32 × 32)/114."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.36 = Cengel Ex 15-4",
+   "en": "Slide Ch.4 p.36 = Cengel Ex 15-4"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide p.36 (printed 19.76) + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.36–37 (Cengel Ví dụ 15–4): không khí thực tế dùng là 16,32 kmol O₂ trên kmol octan; không khí lý thuyết cần a_th = 12,5 kmol O₂. Phần trăm không khí lý thuyết đã dùng là:",
+   "en": "Slide Ch.4 p.36–37 (Cengel Example 15–4): the actual air is 16.32 kmol O₂ per kmol of octane; the theoretical air needs a_th = 12.5 kmol O₂. The percentage of theoretical air used is:"
+  },
+  "opts": [
+   {
+    "vi": "130,6 %",
+    "en": "130.6 %"
+   },
+   {
+    "vi": "31,0 %",
+    "en": "31.0 %"
+   },
+   {
+    "vi": "76,6 %",
+    "en": "76.6 %"
+   },
+   {
+    "vi": "23,4 %",
+    "en": "23.4 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "16,32/12,5 = 1,306 = 130,6 % (slide ghi 131 %, tức 31 % không khí thừa); phần trăm không khí lý thuyết = N_air,thực/N_air,lt = m_air,thực/m_air,lt vì cùng khối lượng mol; 100 % = cháy lý thuyết. 31,0 % là phần trăm không khí THỪA (131 % − 100 %). 76,6 % đảo ngược tỉ số (lý thuyết/thực). 23,4 % lấy phần thừa chia cho lượng thực tế ((16,32 − 12,5)/16,32).",
+   "en": "16.32/12.5 = 1.306 = 130.6 % (slide prints 131 %, i.e. 31 percent excess air); percent theoretical air = N_air,act/N_air,th = m_air,act/m_air,th because the molar mass is the same; 100 % = theoretical combustion. 31.0 % is the percent EXCESS air (131 % − 100 %). 76.6 % inverts the ratio (theoretical/actual). 23.4 % divides the excess by the actual amount ((16.32 − 12.5)/16.32)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.36–37 = Cengel Ex 15-4",
+   "en": "Slide Ch.4 p.36–37 = Cengel Ex 15-4"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide p.37 (printed 131 %) + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.38–39 (Cengel Ví dụ 15–4): sản phẩm trên 1 kmol octan gồm 82,53 kmol, trong đó 9 kmol H₂O. Làm nguội tới 25 °C ở 100 kPa (P_sat = 3,1698 kPa), lượng nước ngưng tụ N_w (kmol/kmol nhiên liệu) là:",
+   "en": "Slide Ch.4 p.38–39 (Cengel Example 15–4): the products per kmol of octane total 82.53 kmol, of which 9 kmol is H₂O. When cooled to 25 °C at 100 kPa (P_sat = 3.1698 kPa) the condensed water N_w (kmol per kmol of fuel) is:"
+  },
+  "opts": [
+   {
+    "vi": "6,59 kmol",
+    "en": "6.59 kmol"
+   },
+   {
+    "vi": "2,41 kmol",
+    "en": "2.41 kmol"
+   },
+   {
+    "vi": "6,38 kmol",
+    "en": "6.38 kmol"
+   },
+   {
+    "vi": "9,00 kmol",
+    "en": "9.00 kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "(9 − N_w)/(82,53 − N_w) = 0,031698 → N_w = (9 − 0,031698 × 82,53)/(1 − 0,031698) = 6,59 kmol, tức 73 % lượng hơi nước (slide tr.39: 6,59 kmol, 73 %). 2,41 kmol là lượng hơi nước CÒN LẠI (9 − N_w). 6,38 kmol quên rằng mẫu số cũng giảm đi N_w: 9 − 0,031698 × 82,53. 9,00 kmol cho rằng toàn bộ 9 kmol ngưng tụ.",
+   "en": "(9 − N_w)/(82.53 − N_w) = 0.031698 → N_w = (9 − 0.031698 × 82.53)/(1 − 0.031698) = 6.59 kmol, i.e. 73 % of the vapor (slide p.39: 6.59 kmol, 73 %). 2.41 kmol is the vapor REMAINING (9 − N_w). 6.38 kmol forgets that the denominator also shrinks by N_w: 9 − 0.031698 × 82.53. 9.00 kmol assumes all 9 kmol condense."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.38–39 = Cengel Ex 15-4",
+   "en": "Slide Ch.4 p.38–39 = Cengel Ex 15-4"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide p.39 (printed 6.59) + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ví dụ 15–5 = slide Ch.4 tr.53–55. Xác định entanpi cháy của octan lỏng (C₈H₁₈) ở 25 °C, 1 atm bằng số liệu entanpi hình thành của bảng A-26; giả thiết nước trong sản phẩm ở thể lỏng. So với nhiệt trị của bảng A-27.",
+   "en": "Cengel Example 15–5 = slide Ch.4 p.53–55. Determine the enthalpy of combustion of liquid octane (C₈H₁₈) at 25 °C and 1 atm using the enthalpy-of-formation data of Table A-26; assume the water in the products is liquid. Compare with the heating value of Table A-27."
+  },
+  "sol": {
+   "vi": "Dữ liệu A-26 (25 °C, 1 atm): h̄_f°(CO₂) = −393.520; h̄_f°(H₂O ℓ) = −285.830; h̄_f°(C₈H₁₈ ℓ) = −249.950 kJ/kmol; O₂ và N₂ là nguyên tố bền nên h̄_f° = 0 (slide tr.53, 49). Slide tr.53 ghi các giá trị này KHÔNG có dấu trừ (dấu trừ xuất hiện ở tr.54).\nBước 1. C₈H₁₈ + a_th(O₂ + 3,76 N₂) → 8 CO₂ + 9 H₂O(ℓ) + 3,76 a_th N₂; chất phản ứng và sản phẩm đều ở trạng thái chuẩn nên ΔE_state = 0.\nBước 2 (slide tr.54). h̄_C = H_prod − H_react = (8)(−393.520) + (9)(−285.830) − (1)(−249.950) = −3.148.160 − 2.572.470 + 249.950 = −5.470.680 kJ/kmol (slide làm tròn −5.471.000). Chia cho M = 114,231 kg/kmol (A-27): −47.891 kJ/kg (slide −47.891).\nBước 3 (đối chiếu A-27). Nhiệt trị cao của octan lỏng A-27: 47.890 kJ/kg; |h̄_C|/M = 47.891 kJ/kg (lệch 0,003 %). Vì nước lỏng, h̄_C là HHV.\nBước 4 (LHV). Nếu H₂O ở thể hơi (h̄_f° = −241.820): h̄_C = −5.074.590 kJ/kmol → LHV = 44.424 kJ/kg; kiểm tra HHV = LHV + m h_fg: m = 9 × 18,015/114,231 = 1,419 kg H₂O/kg, h_fg@25 °C = 2.441,7 kJ/kg → HHV = 47.890 kJ/kg. A-27 LHV = 44.430.\nBước 5 (octan khí, mục Thảo luận của sách). h̄_f°(C₈H₁₈ g) = −208.450 → h̄_C = −5.512.180 kJ/kmol = −48.255 kJ/kg (sách ghi −5.512.200 và −48.255).\nHai đường: (A) entanpi hình thành bảng A-26; (B) nhiệt trị A-27 × M: 47.890 × 114,231 = 5.470.523 kJ/kmol, lệch 0,003 %. Đáp số: h̄_C = −5.470.680 kJ/kmol ≈ −5,47×10⁶ kJ/kmol = −47.891 kJ/kg.",
+   "en": "Data from A-26 (25 °C, 1 atm): h̄_f°(CO₂) = −393,520; h̄_f°(H₂O ℓ) = −285,830; h̄_f°(C₈H₁₈ ℓ) = −249,950 kJ/kmol; O₂ and N₂ are stable elements so h̄_f° = 0 (slides p.53, 49). Slide p.53 prints these values WITHOUT the minus sign (the sign appears on p.54).\nStep 1. C₈H₁₈ + a_th(O₂ + 3.76 N₂) → 8 CO₂ + 9 H₂O(ℓ) + 3.76 a_th N₂; reactants and products are both at the standard state so ΔE_state = 0.\nStep 2 (slide p.54). h̄_C = H_prod − H_react = (8)(−393,520) + (9)(−285,830) − (1)(−249,950) = −3,148,160 − 2,572,470 + 249,950 = −5,470,680 kJ/kmol (the slide rounds to −5,471,000). Divide by M = 114.231 kg/kmol (A-27): −47,891 kJ/kg (slide −47,891).\nStep 3 (check with A-27). The higher heating value of liquid octane in A-27 is 47,890 kJ/kg; |h̄_C|/M = 47,891 kJ/kg (difference 0.003 %). Because the water is liquid, h̄_C is the HHV.\nStep 4 (LHV). With H₂O vapor (h̄_f° = −241,820): h̄_C = −5,074,590 kJ/kmol → LHV = 44,424 kJ/kg; check HHV = LHV + m h_fg: m = 9 × 18.015/114.231 = 1.419 kg H₂O/kg, h_fg@25 °C = 2,441.7 kJ/kg → HHV = 47,890 kJ/kg. A-27 LHV = 44,430.\nStep 5 (gaseous octane, the book's Discussion). h̄_f°(C₈H₁₈ g) = −208,450 → h̄_C = −5,512,180 kJ/kmol = −48,255 kJ/kg (the book prints −5,512,200 and −48,255).\nTwo routes: (A) formation enthalpies of Table A-26; (B) heating value of A-27 × M: 47,890 × 114.231 = 5,470,523 kJ/kmol, difference 0.003 %. Answer: h̄_C = −5,470,680 kJ/kmol ≈ −5.47×10⁶ kJ/kmol = −47,891 kJ/kg."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.53–55 = Cengel Ex 15-5",
+   "en": "Slide Ch.4 p.53–55 = Cengel Ex 15-5"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + slide p.54 (printed -5,471,000 and -47,891) + A-27"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.54 (Cengel Ví dụ 15–5): h̄_C của octan lỏng C₈H₁₈ ở 25 °C, 1 atm, nước sản phẩm ở thể lỏng, là −5.471.000 kJ/kmol. Tính trên 1 kg nhiên liệu (M = 114,231 kg/kmol), entanpi cháy là:",
+   "en": "Slide Ch.4 p.54 (Cengel Example 15–5): the enthalpy of combustion of liquid octane C₈H₁₈ at 25 °C, 1 atm, liquid water in the products, is −5,471,000 kJ/kmol. Per kilogram of fuel (M = 114.231 kg/kmol) it is:"
+  },
+  "opts": [
+   {
+    "vi": "−47.891 kJ/kg",
+    "en": "−47,891 kJ/kg"
+   },
+   {
+    "vi": "−5.471.000 kJ/kg",
+    "en": "−5,471,000 kJ/kg"
+   },
+   {
+    "vi": "47.891 kJ/kg",
+    "en": "47,891 kJ/kg"
+   },
+   {
+    "vi": "−48.255 kJ/kg",
+    "en": "−48,255 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "h̄_C/M = −5.470.680/114,231 = −47.891 kJ/kg (slide −47.891); nhiệt trị cao A-27 = 47.890 kJ/kg vì nước ở thể lỏng. −5.471.000 kJ/kg chưa chia cho khối lượng mol (vẫn là kJ/kmol). 47.891 kJ/kg sai dấu: entanpi cháy của phản ứng tỏa nhiệt là ÂM. −48.255 kJ/kg dùng octan KHÍ (−5.512.200 kJ/kmol), không phải octan lỏng.",
+   "en": "h̄_C/M = −5,470,680/114.231 = −47,891 kJ/kg (slide −47,891); the A-27 higher heating value is 47,890 kJ/kg because the water is liquid. −5,471,000 kJ/kg not yet divided by the molar mass (still kJ/kmol). 47,891 kJ/kg wrong sign: the enthalpy of combustion of an exothermic reaction is NEGATIVE. −48,255 kJ/kg uses GASEOUS octane (−5,512,200 kJ/kmol), not liquid octane."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Slide Ch.4 tr.54 = Cengel Ex 15-5",
+   "en": "Slide Ch.4 p.54 = Cengel Ex 15-5"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide p.54 (printed -47,891) + A-27"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–13. Metan (CH₄) được đốt với lượng không khí lý thuyết (stoichiometric). Giả thiết cháy hoàn toàn. Tỉ lệ không khí–nhiên liệu AF (theo khối lượng) là:",
+   "en": "Cengel Ch.15 Problem 15–13. Methane (CH₄) is burned with the stoichiometric amount of air. Assuming complete combustion, the air–fuel ratio AF (mass basis) is:"
+  },
+  "opts": [
+   {
+    "vi": "17,3 kg/kg",
+    "en": "17.3 kg/kg"
+   },
+   {
+    "vi": "4,0 kg/kg",
+    "en": "4.0 kg/kg"
+   },
+   {
+    "vi": "9,5 kg/kg",
+    "en": "9.5 kg/kg"
+   },
+   {
+    "vi": "0,1 kg/kg",
+    "en": "0.1 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a_th = 2,00 kmol O₂/kmol nhiên liệu (cân bằng O₂); O₂ thực = 1,00 × a_th = 2,00; không khí = 4,76 × 2,00 = 9,52 kmol; AF = 9,52 × 29/16,00 = 17,25 kg/kg. Tỉ lệ nhiên liệu–không khí FA = 1/AF = 0,058 là đáp án thứ hai của đề. 4,0 kg/kg bỏ N₂ của không khí (chỉ tính O₂). 9,5 kg/kg là AF theo mol (kmol không khí/kmol nhiên liệu), chưa đổi sang khối lượng. 0,1 kg/kg là tỉ lệ nhiên liệu–không khí FA = 1/AF.",
+   "en": "a_th = 2.00 kmol O₂ per kmol fuel (O₂ balance); actual O₂ = 1.00 × a_th = 2.00; air = 4.76 × 2.00 = 9.52 kmol; AF = 9.52 × 29/16.00 = 17.25 kg/kg. The fuel–air ratio FA = 1/AF = 0.058 is the second answer of the statement. 4.0 kg/kg drops the N₂ of the air (O₂ only). 9.5 kg/kg is the AF on a mole basis (kmol air per kmol fuel), not converted to mass. 0.1 kg/kg is the fuel–air ratio FA = 1/AF."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–13",
+   "en": "Cengel Ch.15 Problem 15–13"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–14. Propan (C₃H₈) được đốt với 75 % không khí thừa. Giả thiết cháy hoàn toàn. Tỉ lệ không khí–nhiên liệu là:",
+   "en": "Cengel Ch.15 Problem 15–14. Propane (C₃H₈) is burned with 75 percent excess air. Assuming complete combustion, the air–fuel ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "27,5 kg/kg",
+    "en": "27.5 kg/kg"
+   },
+   {
+    "vi": "6,4 kg/kg",
+    "en": "6.4 kg/kg"
+   },
+   {
+    "vi": "41,6 kg/kg",
+    "en": "41.6 kg/kg"
+   },
+   {
+    "vi": "15,7 kg/kg",
+    "en": "15.7 kg/kg"
+   },
+   {
+    "vi": "11,8 kg/kg",
+    "en": "11.8 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a_th = 5,00 kmol O₂/kmol nhiên liệu (cân bằng O₂); O₂ thực = 1,75 × a_th = 8,75; không khí = 4,76 × 8,75 = 41,65 kmol; AF = 41,65 × 29/44,00 = 27,45 kg/kg (đáp án in 27,5). 6,4 kg/kg bỏ N₂ của không khí (chỉ tính O₂). 41,6 kg/kg là AF theo mol (kmol không khí/kmol nhiên liệu), chưa đổi sang khối lượng. 15,7 kg/kg dùng không khí lý thuyết (λ = 1), bỏ qua phần thừa. 11,8 kg/kg hiểu 75 % không khí thừa là 75 % không khí lý thuyết.",
+   "en": "a_th = 5.00 kmol O₂ per kmol fuel (O₂ balance); actual O₂ = 1.75 × a_th = 8.75; air = 4.76 × 8.75 = 41.65 kmol; AF = 41.65 × 29/44.00 = 27.45 kg/kg (printed answer 27.5). 6.4 kg/kg drops the N₂ of the air (O₂ only). 41.6 kg/kg is the AF on a mole basis (kmol air per kmol fuel), not converted to mass. 15.7 kg/kg uses theoretical air (λ = 1) and ignores the excess. 11.8 kg/kg reads 75 percent excess air as 75 percent theoretical air."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–14",
+   "en": "Cengel Ch.15 Problem 15–14"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 27.5 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–15. Axetilen (C₂H₂) được đốt với lượng không khí lý thuyết, cháy hoàn toàn. Tỉ lệ không khí–nhiên liệu theo khối lượng và theo mol là:",
+   "en": "Cengel Ch.15 Problem 15–15. Acetylene (C₂H₂) is burned with the stoichiometric amount of air, complete combustion. The air–fuel ratio on a mass basis and on a mole basis is:"
+  },
+  "opts": [
+   {
+    "vi": "13,3 kg/kg; 11,9 kmol/kmol",
+    "en": "13.3 kg/kg; 11.9 kmol/kmol"
+   },
+   {
+    "vi": "3,1 kg/kg; 2,5 kmol/kmol",
+    "en": "3.1 kg/kg; 2.5 kmol/kmol"
+   },
+   {
+    "vi": "11,9 kg/kg; 13,3 kmol/kmol",
+    "en": "11.9 kg/kg; 13.3 kmol/kmol"
+   },
+   {
+    "vi": "6,6 kg/kg; 5,9 kmol/kmol",
+    "en": "6.6 kg/kg; 5.9 kmol/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₂H₂ + 2,5(O₂ + 3,76 N₂) → 2 CO₂ + H₂O + 9,4 N₂: không khí = 2,5 × 4,76 = 11,9 kmol/kmol nhiên liệu (AF mol); AF khối lượng = 11,9 × 29/26 = 13,3 kg/kg. Phương án thứ hai bỏ N₂ của không khí; phương án đổi chỗ hai số nhầm đơn vị; phương án cuối chia đôi vì đọc sai hệ số của C₂H₂ trong phương trình.",
+   "en": "C₂H₂ + 2.5(O₂ + 3.76 N₂) → 2 CO₂ + H₂O + 9.4 N₂: air = 2.5 × 4.76 = 11.9 kmol per kmol fuel (mole AF); mass AF = 11.9 × 29/26 = 13.3 kg/kg. The second option drops the N₂ of the air; the swapped option mixes the units; the last option halves the values by misreading the coefficient of C₂H₂."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–15",
+   "en": "Cengel Ch.15 Problem 15–15"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–16. Một kmol etan (C₂H₆) cháy với lượng không khí chưa biết. Phân tích sản phẩm cho thấy cháy hoàn toàn và có 3 kmol O₂ tự do trong sản phẩm. Tỉ lệ không khí–nhiên liệu AF (kg/kg) là:",
+   "en": "Cengel Ch.15 Problem 15–16. One kmol of ethane (C₂H₆) is burned with an unknown amount of air. The product analysis shows complete combustion and 3 kmol of free O₂ in the products. The air–fuel ratio AF (kg/kg) is:"
+  },
+  "opts": [
+   {
+    "vi": "29,9 kg/kg",
+    "en": "29.9 kg/kg"
+   },
+   {
+    "vi": "13,8 kg/kg",
+    "en": "13.8 kg/kg"
+   },
+   {
+    "vi": "16,1 kg/kg",
+    "en": "16.1 kg/kg"
+   },
+   {
+    "vi": "30,9 kg/kg",
+    "en": "30.9 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "O₂ vào = a_th + 3 = 3,5 + 3 = 6,5 kmol (O₂ thừa 3 kmol, hơi nước 3 kmol cần 1,5 và CO₂ cần 2); không khí = 6,5 × 4,76 = 30,94 kmol; AF = 30,94 × 29/30 = 29,9 kg/kg; phần trăm không khí lý thuyết = 6,5/3,5 = 185,7 % (câu b của sách). 13,8 kg/kg coi 3 kmol O₂ tự do là toàn bộ O₂ cấp vào. 16,1 kg/kg dùng không khí lý thuyết a_th = 3,5, bỏ phần thừa. 30,9 kg/kg là AF theo mol.",
+   "en": "O₂ in = a_th + 3 = 3.5 + 3 = 6.5 kmol (3 kmol O₂ left over, 3 kmol H₂O need 1.5 and CO₂ needs 2); air = 6.5 × 4.76 = 30.94 kmol; AF = 30.94 × 29/30 = 29.9 kg/kg; percent theoretical air = 6.5/3.5 = 185.7 % (part b of the book). 13.8 kg/kg takes the 3 kmol of free O₂ as all the O₂ supplied. 16.1 kg/kg uses the theoretical air a_th = 3.5 and ignores the excess. 30.9 kg/kg is the AF on a mole basis."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–16",
+   "en": "Cengel Ch.15 Problem 15–16"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–17E (câu a). Etylen (C₂H₄) được đốt với 200 % không khí lý thuyết, cháy hoàn toàn, áp suất tổng 14,5 psia. Tỉ lệ không khí–nhiên liệu (lbm không khí/lbm nhiên liệu) là:",
+   "en": "Cengel Ch.15 Problem 15–17E (part a). Ethylene (C₂H₄) is burned with 200 percent theoretical air, complete combustion, total pressure 14.5 psia. The air–fuel ratio (lbm air per lbm fuel) is:"
+  },
+  "opts": [
+   {
+    "vi": "29,6 lbm/lbm",
+    "en": "29.6 lbm/lbm"
+   },
+   {
+    "vi": "6,9 lbm/lbm",
+    "en": "6.9 lbm/lbm"
+   },
+   {
+    "vi": "28,6 lbm/lbm",
+    "en": "28.6 lbm/lbm"
+   },
+   {
+    "vi": "14,8 lbm/lbm",
+    "en": "14.8 lbm/lbm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₂H₄ + 3(O₂ + 3,76 N₂) cần a_th = 3; 200 % → 6 kmol O₂ → không khí 6 × 4,76 = 28,56 kmol; AF = 28,56 × 29/28 = 29,6 (đáp án in 29,6). Tỉ số khối lượng không phụ thuộc hệ đơn vị. 6,9 lbm/lbm bỏ N₂ của không khí (chỉ tính O₂). 28,6 lbm/lbm là AF theo mol (kmol không khí/kmol nhiên liệu), chưa đổi sang khối lượng. 14,8 lbm/lbm dùng không khí lý thuyết (λ = 1), bỏ qua phần thừa.",
+   "en": "C₂H₄ + 3(O₂ + 3.76 N₂) needs a_th = 3; 200 % → 6 kmol O₂ → air 6 × 4.76 = 28.56 kmol; AF = 28.56 × 29/28 = 29.6 (printed answer 29.6). A mass ratio does not depend on the unit system. 6.9 lbm/lbm drops the N₂ of the air (O₂ only). 28.6 lbm/lbm is the AF on a mole basis (kmol air per kmol fuel), not converted to mass. 14.8 lbm/lbm uses theoretical air (λ = 1) and ignores the excess."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–17E (câu a)",
+   "en": "Cengel Ch.15 Problem 15–17E (part a)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 29.6 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–18 (câu b). Propylen (C₃H₆) được đốt với 50 % không khí thừa, cháy hoàn toàn, áp suất tổng 105 kPa. Nhiệt độ mà hơi nước trong sản phẩm bắt đầu ngưng tụ (bảng A-5) xấp xỉ:",
+   "en": "Cengel Ch.15 Problem 15–18 (part b). Propylene (C₃H₆) is burned with 50 percent excess air, complete combustion, total pressure 105 kPa. The temperature at which the water vapor in the products starts to condense (Table A-5) is about:"
+  },
+  "opts": [
+   {
+    "vi": "44,4 °C",
+    "en": "44.4 °C"
+   },
+   {
+    "vi": "100,9 °C",
+    "en": "100.9 °C"
+   },
+   {
+    "vi": "46,3 °C",
+    "en": "46.3 °C"
+   },
+   {
+    "vi": "31,4 °C",
+    "en": "31.4 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₃H₆ + 6,75(O₂ + 3,76 N₂) → 3 CO₂ + 3 H₂O + 2,25 O₂ + 25,38 N₂; N_prod = 33,63 kmol; P_v = 3/33,63 × 105 = 9,37 kPa → T_dp = T_sat = 44,4 °C (nội suy A-5; IAPWS 44,5 °C). AF = 22,2 kg/kg (câu a). 100,9 °C là T_sat ở áp suất tổng 105 kPa. 46,3 °C bỏ H₂O khỏi tổng số mol sản phẩm. 31,4 °C chia số mol cho hệ số của nhiên liệu sai (4,5 O₂ thay vì 6,75).",
+   "en": "C₃H₆ + 6.75(O₂ + 3.76 N₂) → 3 CO₂ + 3 H₂O + 2.25 O₂ + 25.38 N₂; N_prod = 33.63 kmol; P_v = 3/33.63 × 105 = 9.37 kPa → T_dp = T_sat = 44.4 °C (A-5 interpolation; IAPWS 44.5 °C). AF = 22.2 kg/kg (part a). 100.9 °C is T_sat at the total pressure of 105 kPa. 46.3 °C leaves the H₂O out of the total product moles. 31.4 °C uses the wrong O₂ supply (4.5 instead of 6.75 kmol)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–18 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–18 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–19. Rượu propylic (C₃H₇OH) được đốt với 50 % không khí thừa. Viết phương trình cháy hoàn toàn và xác định tỉ lệ không khí–nhiên liệu.",
+   "en": "Cengel Ch.15 Problem 15–19. Propyl alcohol (C₃H₇OH) is burned with 50 percent excess air. Write the balanced equation for complete combustion and determine the air-to-fuel ratio."
+  },
+  "opts": [
+   {
+    "vi": "15,5 kg/kg",
+    "en": "15.5 kg/kg"
+   },
+   {
+    "vi": "3,6 kg/kg",
+    "en": "3.6 kg/kg"
+   },
+   {
+    "vi": "32,1 kg/kg",
+    "en": "32.1 kg/kg"
+   },
+   {
+    "vi": "10,4 kg/kg",
+    "en": "10.4 kg/kg"
+   },
+   {
+    "vi": "5,2 kg/kg",
+    "en": "5.2 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "a_th = 4,50 kmol O₂/kmol nhiên liệu (cân bằng O₂); O₂ thực = 1,50 × a_th = 6,75; không khí = 4,76 × 6,75 = 32,13 kmol; AF = 32,13 × 29/60,00 = 15,53 kg/kg (đáp án in 15,5). Nhiên liệu có O nên a_th = 3 + 2 − 0,5 = 4,5 (O trong nhiên liệu cấp bớt O₂). 3,6 kg/kg bỏ N₂ của không khí (chỉ tính O₂). 32,1 kg/kg là AF theo mol (kmol không khí/kmol nhiên liệu), chưa đổi sang khối lượng. 10,4 kg/kg dùng không khí lý thuyết (λ = 1), bỏ qua phần thừa. 5,2 kg/kg hiểu 50 % không khí thừa là 50 % không khí lý thuyết.",
+   "en": "a_th = 4.50 kmol O₂ per kmol fuel (O₂ balance); actual O₂ = 1.50 × a_th = 6.75; air = 4.76 × 6.75 = 32.13 kmol; AF = 32.13 × 29/60.00 = 15.53 kg/kg (printed answer 15.5). The fuel contains O, so a_th = 3 + 2 − 0.5 = 4.5 (the O in the fuel supplies some of the oxygen). 3.6 kg/kg drops the N₂ of the air (O₂ only). 32.1 kg/kg is the AF on a mole basis (kmol air per kmol fuel), not converted to mass. 10.4 kg/kg uses theoretical air (λ = 1) and ignores the excess. 5.2 kg/kg reads 50 percent excess air as 50 percent theoretical air."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–19",
+   "en": "Cengel Ch.15 Problem 15–19"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 15.5 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–20. Butan (C₄H₁₀) được đốt với 200 % không khí lý thuyết, cháy hoàn toàn. Cần phun bao nhiêu kmol nước vào buồng đốt trên mỗi kmol nhiên liệu để sản phẩm có nhiệt độ điểm sương 60 °C ở áp suất sản phẩm 100 kPa? (P_sat@60 °C = 19,947 kPa).",
+   "en": "Cengel Ch.15 Problem 15–20. Butane (C₄H₁₀) is burned in 200 percent theoretical air, complete combustion. How many kmol of water must be sprayed into the combustion chamber per kmol of fuel if the products are to have a dew-point temperature of 60 °C at a product pressure of 100 kPa? (P_sat@60 °C = 19.947 kPa)."
+  },
+  "opts": [
+   {
+    "vi": "9,80 kmol",
+    "en": "9.80 kmol"
+   },
+   {
+    "vi": "12,84 kmol",
+    "en": "12.84 kmol"
+   },
+   {
+    "vi": "7,84 kmol",
+    "en": "7.84 kmol"
+   },
+   {
+    "vi": "14,80 kmol",
+    "en": "14.80 kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sản phẩm khi chưa phun: 4 CO₂ + 5 H₂O + 6,5 O₂ + 48,88 N₂ = 64,38 kmol. Điểm sương 60 °C ⇒ P_v = 19,947 kPa, y_v = 0,19947. (5 + w)/(64,38 + w) = 0,19947 ⇒ w = (12,842 − 5)/(1 − 0,19947) = 9,80 kmol nước/kmol nhiên liệu. 12,84 kmol lấy N_v = (P_sat/P) N_prod mà không trừ 5 kmol hơi đã có sẵn. 7,84 kmol quên rằng nước phun cũng làm tăng N_prod (mẫu số). 14,80 kmol là tổng lượng hơi nước (5 + w), không phải lượng phun.",
+   "en": "Products before spraying: 4 CO₂ + 5 H₂O + 6.5 O₂ + 48.88 N₂ = 64.38 kmol. Dew point 60 °C ⇒ P_v = 19.947 kPa, y_v = 0.19947. (5 + w)/(64.38 + w) = 0.19947 ⇒ w = (12.842 − 5)/(1 − 0.19947) = 9.80 kmol water per kmol fuel. 12.84 kmol takes N_v = (P_sat/P) N_prod without subtracting the 5 kmol of vapor already present. 7.84 kmol forgets that the sprayed water also increases N_prod (the denominator). 14.80 kmol is the total vapor (5 + w), not the amount sprayed."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–20",
+   "en": "Cengel Ch.15 Problem 15–20"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–21. Một hỗn hợp nhiên liệu gồm 20 % khối lượng metan (CH₄) và 80 % khối lượng etanol (C₂H₆O) được đốt hoàn toàn với không khí lý thuyết. Lưu lượng nhiên liệu tổng 31 kg/s. Lưu lượng không khí cần thiết là:",
+   "en": "Cengel Ch.15 Problem 15–21. A fuel mixture of 20 percent by mass methane (CH₄) and 80 percent by mass ethanol (C₂H₆O) is burned completely with theoretical air. The total fuel flow rate is 31 kg/s. The required air flow rate is:"
+  },
+  "opts": [
+   {
+    "vi": "330 kg/s",
+    "en": "330 kg/s"
+   },
+   {
+    "vi": "535 kg/s",
+    "en": "535 kg/s"
+   },
+   {
+    "vi": "279 kg/s",
+    "en": "279 kg/s"
+   },
+   {
+    "vi": "407 kg/s",
+    "en": "407 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tính cho 100 kg nhiên liệu: 20/16 = 1,25 kmol CH₄ cần 2 O₂ mỗi kmol và 80/46 = 1,739 kmol C₂H₆O cần 3 O₂ mỗi kmol ⇒ O₂ = 2,5 + 5,217 = 7,717 kmol; không khí = 36,73 kmol × 29 = 1.065,3 kg ⇒ AF = 10,653 kg/kg ⇒ ṁ_air = 10,653 × 31 = 330,2 kg/s (đáp án in 330 kg/s). 535 kg/s chỉ tính metan cho toàn bộ 31 kg/s. 279 kg/s chỉ tính etanol cho toàn bộ 31 kg/s. 407 kg/s lấy trung bình cộng AF của hai nhiên liệu (50 %–50 %) thay vì theo phần khối lượng.",
+   "en": "For 100 kg of fuel: 20/16 = 1.25 kmol CH₄ needing 2 O₂ per kmol and 80/46 = 1.739 kmol C₂H₆O needing 3 O₂ per kmol ⇒ O₂ = 2.5 + 5.217 = 7.717 kmol; air = 36.73 kmol × 29 = 1,065.3 kg ⇒ AF = 10.653 kg/kg ⇒ ṁ_air = 10.653 × 31 = 330.2 kg/s (printed answer 330 kg/s). 535 kg/s treats all 31 kg/s as methane. 279 kg/s treats all 31 kg/s as ethanol. 407 kg/s averages the two AF values 50–50 instead of by mass fractions."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–21",
+   "en": "Cengel Ch.15 Problem 15–21"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 330 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–22 (câu b). Octan (C₈H₁₈) được đốt với 250 % không khí lý thuyết (không khí vào ở 25 °C), cháy hoàn toàn, áp suất tổng 1 atm = 101,325 kPa. Nhiệt độ điểm sương của sản phẩm (A-5) xấp xỉ:",
+   "en": "Cengel Ch.15 Problem 15–22 (part b). Octane (C₈H₁₈) is burned with 250 percent theoretical air (air enters at 25 °C), complete combustion, total pressure 1 atm = 101.325 kPa. The dew-point temperature of the products (A-5) is about:"
+  },
+  "opts": [
+   {
+    "vi": "35,7 °C",
+    "en": "35.7 °C"
+   },
+   {
+    "vi": "100,0 °C",
+    "en": "100.0 °C"
+   },
+   {
+    "vi": "36,8 °C",
+    "en": "36.8 °C"
+   },
+   {
+    "vi": "52,7 °C",
+    "en": "52.7 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sản phẩm: 8 CO₂ + 9 H₂O + 18,75 O₂ + 117,5 N₂ = 153,25 kmol; P_v = 9/153,25 × 101,325 = 5,95 kPa → T_dp ≈ 35,7 °C (nội suy A-5; IAPWS 36,0 °C). AF = 37,8 kg/kg (câu a). 100,0 °C là T_sat ở áp suất tổng. 36,8 °C bỏ H₂O khỏi tổng số mol. 52,7 °C dùng sản phẩm của cháy lý thuyết (không có không khí thừa).",
+   "en": "Products: 8 CO₂ + 9 H₂O + 18.75 O₂ + 117.5 N₂ = 153.25 kmol; P_v = 9/153.25 × 101.325 = 5.95 kPa → T_dp ≈ 35.7 °C (A-5 interpolation; IAPWS 36.0 °C). AF = 37.8 kg/kg (part a). 100.0 °C is T_sat at the total pressure. 36.8 °C leaves the H₂O out of the total moles. 52.7 °C uses the products of theoretical combustion (no excess air)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–22 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–22 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–23. Xăng (coi là C₈H₁₈) được đốt ổn định với không khí trong một động cơ phản lực. Nếu tỉ lệ không khí–nhiên liệu là 18 kg không khí/kg nhiên liệu, phần trăm không khí lý thuyết đã dùng là:",
+   "en": "Cengel Ch.15 Problem 15–23. Gasoline (assumed C₈H₁₈) is burned steadily with air in a jet engine. If the air–fuel ratio is 18 kg air/kg fuel, the percentage of theoretical air used is:"
+  },
+  "opts": [
+   {
+    "vi": "118,9 %",
+    "en": "118.9 %"
+   },
+   {
+    "vi": "18,9 %",
+    "en": "18.9 %"
+   },
+   {
+    "vi": "84,1 %",
+    "en": "84.1 %"
+   },
+   {
+    "vi": "74,4 %",
+    "en": "74.4 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "AF lý thuyết của octan = 12,5 × 4,76 × 29/114 = 15,14 kg/kg; % lý thuyết = 18/15,14 = 118,9 % (≈ 19 % thừa). 18,9 % là phần trăm không khí THỪA, không phải phần trăm lý thuyết. 84,1 % đảo ngược tỉ số. 74,4 % dùng AF của Ví dụ 15–1 (24,2) thay cho AF lý thuyết.",
+   "en": "Theoretical AF of octane = 12.5 × 4.76 × 29/114 = 15.14 kg/kg; % theoretical = 18/15.14 = 118.9 % (≈ 19 % excess). 18.9 % is the percent EXCESS air, not percent theoretical. 84.1 % inverts the ratio. 74.4 % uses the AF of Example 15–1 (24.2) in place of the theoretical AF."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–23",
+   "en": "Cengel Ch.15 Problem 15–23"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–24. Trong một buồng đốt, etan (C₂H₆) được đốt với lưu lượng 8 kg/h, không khí vào buồng đốt với lưu lượng 176 kg/h. Phần trăm không khí THỪA là:",
+   "en": "Cengel Ch.15 Problem 15–24. In a combustion chamber, ethane (C₂H₆) is burned at a rate of 8 kg/h with air entering at a rate of 176 kg/h. The percentage of EXCESS air is:"
+  },
+  "opts": [
+   {
+    "vi": "37 %",
+    "en": "37 %"
+   },
+   {
+    "vi": "137 %",
+    "en": "137 %"
+   },
+   {
+    "vi": "27 %",
+    "en": "27 %"
+   },
+   {
+    "vi": "22 %",
+    "en": "22 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "AF thực = 176/8 = 22; AF lý thuyết của etan (a_th = 3,5): 3,5 × 4,76 × 29/30 = 16,10; không khí lý thuyết = 22/16,10 = 136,6 % ⇒ thừa 36,6 % (đáp án in 37 %). 137 % là phần trăm không khí LÝ THUYẾT (137 %), chưa trừ 100 %. 27 % lấy (AF − AF_lt)/AF thay vì chia cho AF_lt. 22 % là AF thực tế (22 kg/kg).",
+   "en": "Actual AF = 176/8 = 22; theoretical AF of ethane (a_th = 3.5): 3.5 × 4.76 × 29/30 = 16.10; percent theoretical air = 22/16.10 = 136.6 % ⇒ excess 36.6 % (printed answer 37 %). 137 % is the percent THEORETICAL air (137 %), not yet minus 100 %. 27 % divides by the actual AF instead of by the theoretical AF. 22 % is the actual AF (22 kg/kg)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–24",
+   "en": "Cengel Ch.15 Problem 15–24"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 37 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–25 (câu b). Một kilogam butan (C₄H₁₀) được đốt với 25 kg không khí ở 30 °C, 90 kPa. Cháy hoàn toàn, áp suất sản phẩm 90 kPa. Nhiệt độ điểm sương của sản phẩm (A-5) xấp xỉ:",
+   "en": "Cengel Ch.15 Problem 15–25 (part b). One kilogram of butane (C₄H₁₀) is burned with 25 kg of air at 30 °C and 90 kPa. Complete combustion, product pressure 90 kPa. The dew-point temperature of the products (A-5) is about:"
+  },
+  "opts": [
+   {
+    "vi": "42,7 °C",
+    "en": "42.7 °C"
+   },
+   {
+    "vi": "96,5 °C",
+    "en": "96.5 °C"
+   },
+   {
+    "vi": "51,5 °C",
+    "en": "51.5 °C"
+   },
+   {
+    "vi": "30,0 °C",
+    "en": "30.0 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "AF thực = 25; AF lý thuyết của butan = 6,5 × 4,76 × 29/58 = 15,47 ⇒ 161,6 % lý thuyết (câu a; đáp án in của bản Anh 15–26E: 161 %). Sản phẩm: 4 CO₂ + 5 H₂O + 4,00 O₂ + 39,50 N₂ = 52,50 kmol; P_v = 5/52,50 × 90 = 8,57 kPa → T_dp ≈ 42,7 °C (IAPWS 42,8 °C). 96,5 °C là T_sat ở áp suất tổng 90 kPa. 51,5 °C dùng số mol sản phẩm của cháy lý thuyết. 30,0 °C lấy nhiệt độ không khí vào làm điểm sương.",
+   "en": "Actual AF = 25; theoretical AF of butane = 6.5 × 4.76 × 29/58 = 15.47 ⇒ 161.6 % theoretical (part a; printed answer of the English-unit twin 15–26E: 161 %). Products: 4 CO₂ + 5 H₂O + 4.00 O₂ + 39.50 N₂ = 52.50 kmol; P_v = 5/52.50 × 90 = 8.57 kPa → T_dp ≈ 42.7 °C (IAPWS 42.8 °C). 96.5 °C is T_sat at the total pressure of 90 kPa. 51.5 °C uses the product moles of theoretical combustion. 30.0 °C takes the air inlet temperature as the dew point."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–25 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–25 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script; bản đồng dạng 15–26E có đáp án in 161 % và 113 °F"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–27. Một khí thiên nhiên có thành phần thể tích: 65 % CH₄, 8 % H₂, 18 % N₂, 3 % O₂ và 6 % CO₂. Khí này được đốt hoàn toàn với lượng không khí khô lý thuyết. Tỉ lệ không khí–nhiên liệu là:",
+   "en": "Cengel Ch.15 Problem 15–27. A certain natural gas has the volumetric analysis 65 percent CH₄, 8 percent H₂, 18 percent N₂, 3 percent O₂ and 6 percent CO₂. It is burned completely with the stoichiometric amount of dry air. The air–fuel ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "9,42 kg/kg",
+    "en": "9.42 kg/kg"
+   },
+   {
+    "vi": "6,24 kg/kg",
+    "en": "6.24 kg/kg"
+   },
+   {
+    "vi": "17,52 kg/kg",
+    "en": "17.52 kg/kg"
+   },
+   {
+    "vi": "10,83 kg/kg",
+    "en": "10.83 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cho 1 kmol nhiên liệu: O₂ cần = 0,65×2 + 0,08×0,5 − 0,03 = 1,310 kmol (CO₂ và N₂ trong nhiên liệu trơ); không khí = 6,236 kmol; M nhiên liệu = 0,65×16 + 0,08×2 + 0,18×28 + 0,03×32 + 0,06×44 = 19,20 kg/kmol ⇒ AF = 6,236 × 29/19,20 = 9,42 kg/kg. 6,24 kg/kg là AF theo mol (kmol/kmol). 17,52 kg/kg chỉ lấy hai thành phần cháy được (CH₄ + H₂) làm khối lượng nhiên liệu. 10,83 kg/kg quên O₂ có sẵn trong nhiên liệu (0,03 kmol) và N₂ trơ khi tính AF.",
+   "en": "Per kmol of fuel: O₂ needed = 0.65×2 + 0.08×0.5 − 0.03 = 1.310 kmol (the CO₂ and N₂ of the fuel are inert); air = 6.236 kmol; fuel molar mass = 0.65×16 + 0.08×2 + 0.18×28 + 0.03×32 + 0.06×44 = 19.20 kg/kmol ⇒ AF = 6.236 × 29/19.20 = 9.42 kg/kg. 6.24 kg/kg is the AF on a mole basis (kmol/kmol). 17.52 kg/kg uses only the two combustibles (CH₄ + H₂) as the fuel mass. 10.83 kg/kg forgets the O₂ already in the fuel and the inert N₂ in the AF."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–27",
+   "en": "Cengel Ch.15 Problem 15–27"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–29 (câu a). Một nhiên liệu khí có thành phần thể tích 60 % CH₄, 30 % H₂ và 10 % N₂ được đốt hoàn toàn với 130 % không khí lý thuyết. Tỉ lệ không khí–nhiên liệu là:",
+   "en": "Cengel Ch.15 Problem 15–29 (part a). A gaseous fuel with a volumetric analysis of 60 percent CH₄, 30 percent H₂ and 10 percent N₂ is burned to completion with 130 percent theoretical air. The air–fuel ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "18,6 kg/kg",
+    "en": "18.6 kg/kg"
+   },
+   {
+    "vi": "14,3 kg/kg",
+    "en": "14.3 kg/kg"
+   },
+   {
+    "vi": "8,4 kg/kg",
+    "en": "8.4 kg/kg"
+   },
+   {
+    "vi": "23,8 kg/kg",
+    "en": "23.8 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cho 1 kmol nhiên liệu: a_th = 0,6×2 + 0,3×0,5 = 1,35 kmol O₂; O₂ thực = 1,3 × 1,35 = 1,755; không khí = 8,35 kmol; M = 0,6×16 + 0,3×2 + 0,1×28 = 13,0 kg/kmol ⇒ AF = 8,35 × 29/13,0 = 18,64 kg/kg (đáp án in 18,6). 14,3 kg/kg bỏ qua 30 % không khí thừa. 8,4 kg/kg là AF theo mol. 23,8 kg/kg không tính khối lượng 10 % N₂ trơ của nhiên liệu.",
+   "en": "Per kmol of fuel: a_th = 0.6×2 + 0.3×0.5 = 1.35 kmol O₂; actual O₂ = 1.3 × 1.35 = 1.755; air = 8.35 kmol; M = 0.6×16 + 0.3×2 + 0.1×28 = 13.0 kg/kmol ⇒ AF = 8.35 × 29/13.0 = 18.64 kg/kg (printed answer 18.6). 14.3 kg/kg ignores the 30 percent excess. 8.4 kg/kg is the AF on a mole basis. 23.8 kg/kg does not count the mass of the 10 % inert N₂ of the fuel."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–29 (câu a)",
+   "en": "Cengel Ch.15 Problem 15–29 (part a)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 18.6 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–29 (câu b). Cùng nhiên liệu (60 % CH₄, 30 % H₂, 10 % N₂) cháy với 130 % không khí lý thuyết; sản phẩm được làm nguội tới 20 °C ở 1 atm (P_sat@20 °C = 2,3392 kPa). Phần hơi nước ngưng tụ là:",
+   "en": "Cengel Ch.15 Problem 15–29 (part b). The same fuel (60 % CH₄, 30 % H₂, 10 % N₂) burns with 130 percent theoretical air; the products are cooled to 20 °C at 1 atm (P_sat@20 °C = 2.3392 kPa). The fraction of the water vapor that condenses is:"
+  },
+  "opts": [
+   {
+    "vi": "88 %",
+    "en": "88 %"
+   },
+   {
+    "vi": "16 %",
+    "en": "16 %"
+   },
+   {
+    "vi": "12 %",
+    "en": "12 %"
+   },
+   {
+    "vi": "98 %",
+    "en": "98 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sản phẩm: N_v = 1,50, N_prod = 9,20 kmol; (N_v − N_w)/(N_prod − N_w) = 2,3392/101,325 ⇒ N_w = 1,318 kmol = 87,9 % (đáp án in 88 %). 16 % là phần MOL hơi nước trong sản phẩm, không phải phần ngưng tụ. 12 % là phần hơi nước CÒN LẠI. 98 % giả sử y_v còn lại = P_sat/P = 2,3 % và coi như toàn bộ phần còn lại ngưng tụ.",
+   "en": "Products: N_v = 1.50, N_prod = 9.20 kmol; (N_v − N_w)/(N_prod − N_w) = 2.3392/101.325 ⇒ N_w = 1.318 kmol = 87.9 % (printed answer 88 %). 16 % is the mole fraction of vapor in the products, not the condensed fraction. 12 % is the vapor REMAINING. 98 % assumes the remaining vapor mole fraction P_sat/P = 2.3 % is the amount left and condenses the rest."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–29 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–29 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 88 % + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–31. Một loại than có thành phần theo khối lượng: 82 % C, 5 % H₂O, 2 % H₂, 1 % O₂ và 10 % tro. Than được đốt với 50 % không khí thừa. Tỉ lệ không khí–nhiên liệu (kg không khí/kg than) là:",
+   "en": "Cengel Ch.15 Problem 15–31. A certain coal has the mass analysis 82 percent C, 5 percent H₂O, 2 percent H₂, 1 percent O₂ and 10 percent ash. The coal is burned with 50 percent excess air. The air–fuel ratio (kg air/kg coal) is:"
+  },
+  "opts": [
+   {
+    "vi": "15,1 kg/kg",
+    "en": "15.1 kg/kg"
+   },
+   {
+    "vi": "15,2 kg/kg",
+    "en": "15.2 kg/kg"
+   },
+   {
+    "vi": "17,4 kg/kg",
+    "en": "17.4 kg/kg"
+   },
+   {
+    "vi": "10,1 kg/kg",
+    "en": "10.1 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cho 100 kg than: C = 82/12 = 6,833 kmol, H₂ = 2/2 = 1 kmol, O₂ = 1/32 = 0,0312 kmol; H₂O và tro trơ (khối lượng vẫn tính vào than). a_th = C + H₂/2 − O₂ = 7,302 kmol; O₂ thực = 1,5 × 7,302; không khí = 52,14 kmol = 1.512,0 kg ⇒ AF = 15,12 kg/kg (đáp án in 15,1). 15,2 kg/kg bỏ qua O₂ có sẵn trong than. 17,4 kg/kg chia cho khối lượng chỉ gồm C, H₂ và O₂ (87 kg) thay vì 100 kg than. 10,1 kg/kg bỏ 50 % không khí thừa.",
+   "en": "For 100 kg of coal: C = 82/12 = 6.833 kmol, H₂ = 2/2 = 1 kmol, O₂ = 1/32 = 0.0312 kmol; H₂O and ash are inert (their mass still counts as coal). a_th = C + H₂/2 − O₂ = 7.302 kmol; actual O₂ = 1.5 × 7.302; air = 52.14 kmol = 1,512.0 kg ⇒ AF = 15.12 kg/kg (printed answer 15.1). 15.2 kg/kg ignores the O₂ already in the coal. 17.4 kg/kg divides by only the C + H₂ + O₂ mass (87 kg) instead of the 100 kg of coal. 10.1 kg/kg drops the 50 % excess air."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–31",
+   "en": "Cengel Ch.15 Problem 15–31"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 15.1 + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–32. Octan (C₈H₁₈) cháy với không khí khô. Phân tích thể tích sản phẩm trên cơ sở khô: 9,21 % CO₂; 0,61 % CO; 7,06 % O₂; 83,12 % N₂. Xác định (a) tỉ lệ không khí–nhiên liệu, (b) phần trăm không khí lý thuyết đã dùng.",
+   "en": "Cengel Ch.15 Problem 15–32. Octane (C₈H₁₈) is burned with dry air. The volumetric analysis of the products on a dry basis is 9.21 percent CO₂, 0.61 percent CO, 7.06 percent O₂ and 83.12 percent N₂. Determine (a) the air–fuel ratio and (b) the percentage of theoretical air used."
+  },
+  "sol": {
+   "vi": "Phương pháp của slide tr.33–37 (thử trên Ví dụ 15–4, đáp số in khớp). Lấy 100 kmol sản phẩm khô: x C₈H₁₈ + a(O₂ + 3,76 N₂) → 9,21 CO₂ + 0,61 CO + 7,06 O₂ + 83,12 N₂ + b H₂O.\nN₂: 3,76 a = 83,12 → a = 22,106. C: 8x = 9,21 + 0,61 = 9,82 → x = 1,2275. H: 18x = 2b → b = 11,047. Kiểm O₂: a = 9,21 + 0,305 + 7,06 + b/2 = 22,099 so với 22,106 (lệch 0,008: đóng trong làm tròn thành phần).\n(a) Không khí/kmol nhiên liệu = a/x = 18,009 kmol O₂ → AF = (18,009 × 4,76)(29)/114 = 21,81 kg/kg.\n(b) a_th = 12,5 → 18,009/12,5 = 144,1 % lý thuyết (≈ 44 % thừa).\nHai đường: (A) cân bằng tay như trên; (B) sympy giải (N₂, C, H) bằng số hữu tỉ và kiểm O₂. Sách không in đáp số; phương pháp đã kiểm trên Ví dụ 15–4 (19,76 kg/kg; 131 %) và bài 15–34 (34,5; 200 % in) cùng cách làm.",
+   "en": "Method of slides p.33–37 (tested on Example 15–4, printed numbers reproduced). Take 100 kmol of dry products: x C₈H₁₈ + a(O₂ + 3.76 N₂) → 9.21 CO₂ + 0.61 CO + 7.06 O₂ + 83.12 N₂ + b H₂O.\nN₂: 3.76 a = 83.12 → a = 22.106. C: 8x = 9.21 + 0.61 = 9.82 → x = 1.2275. H: 18x = 2b → b = 11.047. O₂ check: a = 9.21 + 0.305 + 7.06 + b/2 = 22.099 versus 22.106 (gap 0.008: closed within the rounding of the composition).\n(a) Oxygen per kmol of fuel = a/x = 18.009 kmol O₂ → AF = (18.009 × 4.76)(29)/114 = 21.81 kg/kg.\n(b) a_th = 12.5 → 18.009/12.5 = 144.1 % theoretical (≈ 44 % excess).\nTwo routes: (A) hand balances as above; (B) sympy solves (N₂, C, H) with rational numbers and checks O₂. The book prints no answer; the method was tested on Example 15–4 (19.76 kg/kg; 131 %) and Problem 15–34 (34.5; 200 % printed), same procedure."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–32",
+   "en": "Cengel Ch.15 Problem 15–32"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in); phương pháp thử trên Ví dụ 15–4 và bài 15–34"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–33 (câu b). Cacbon (C) cháy với không khí khô. Phân tích thể tích sản phẩm: 10,06 % CO₂; 0,42 % CO; 10,69 % O₂; 78,83 % N₂. Phần trăm không khí lý thuyết đã dùng là:",
+   "en": "Cengel Ch.15 Problem 15–33 (part b). Carbon (C) is burned with dry air. The volumetric analysis of the products is 10.06 percent CO₂, 0.42 percent CO, 10.69 percent O₂ and 78.83 percent N₂. The percentage of theoretical air used is:"
+  },
+  "opts": [
+   {
+    "vi": "200 %",
+    "en": "200 %"
+   },
+   {
+    "vi": "100 %",
+    "en": "100 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "300 %",
+    "en": "300 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cho 100 kmol sản phẩm khô: a = 78,83/3,76 = 20,965 kmol O₂; x C = 10,06 + 0,42 = 10,48 kmol; a_th = 1 kmol O₂ trên kmol C ⇒ % = a/(x·1) = 20,965/10,48 = 200,1 % (AF = 23,0 kg/kg; kiểm O₂ lệch 0,005). 100 % là phần trăm không khí thừa. 50 % đảo ngược tỉ số. 300 % cộng nhầm 100 % vào kết quả.",
+   "en": "For 100 kmol of dry products: a = 78.83/3.76 = 20.965 kmol O₂; x C = 10.06 + 0.42 = 10.48 kmol; a_th = 1 kmol O₂ per kmol C ⇒ % = a/(x·1) = 20.965/10.48 = 200.1 % (AF = 23.0 kg/kg; O₂ check gap 0.005). 100 % is the percent excess air. 50 % inverts the ratio. 300 % adds 100 % by mistake."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–33 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–33 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–34 (câu a). Metan (CH₄) cháy với không khí khô. Phân tích thể tích sản phẩm trên cơ sở khô: 5,20 % CO₂; 0,33 % CO; 11,24 % O₂; 83,23 % N₂. Tỉ lệ không khí–nhiên liệu (kg/kg) là:",
+   "en": "Cengel Ch.15 Problem 15–34 (part a). Methane (CH₄) is burned with dry air. The volumetric analysis of the products on a dry basis is 5.20 percent CO₂, 0.33 percent CO, 11.24 percent O₂ and 83.23 percent N₂. The air–fuel ratio (kg/kg) is:"
+  },
+  "opts": [
+   {
+    "vi": "34,5 kg/kg",
+    "en": "34.5 kg/kg"
+   },
+   {
+    "vi": "19,1 kg/kg",
+    "en": "19.1 kg/kg"
+   },
+   {
+    "vi": "17,3 kg/kg",
+    "en": "17.3 kg/kg"
+   },
+   {
+    "vi": "8,0 kg/kg",
+    "en": "8.0 kg/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "100 kmol sản phẩm khô: a = 83,23/3,76 = 22,136; C: x = 5,20 + 0,33 = 5,53 kmol CH₄; không khí/kmol nhiên liệu = 4,76 × 4,003 = 19,05 kmol; AF = 19,05 × 29/16 = 34,5 kg/kg; % lý thuyết = 4,003/2 = 200,1 % (đáp án in 34,5 và 200 %). 19,1 kg/kg là AF theo mol. 17,3 kg/kg là AF lý thuyết của metan (17,3). 8,0 kg/kg bỏ N₂ của không khí (chỉ O₂).",
+   "en": "100 kmol of dry products: a = 83.23/3.76 = 22.136; C: x = 5.20 + 0.33 = 5.53 kmol CH₄; air per kmol fuel = 4.76 × 4.003 = 19.05 kmol; AF = 19.05 × 29/16 = 34.5 kg/kg; % theoretical = 4.003/2 = 200.1 % (printed answers 34.5 and 200 %). 19.1 kg/kg is the AF on a mole basis. 17.3 kg/kg is the theoretical AF of methane (17.3). 8.0 kg/kg drops the N₂ of the air (O₂ only)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–34 (câu a)",
+   "en": "Cengel Ch.15 Problem 15–34 (part a)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 34.5 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–42. Xác định entanpi cháy của metan (CH₄) ở 25 °C, 1 atm bằng entanpi hình thành của bảng A-26, giả thiết nước trong sản phẩm ở thể lỏng. So với bảng A-27. Entanpi cháy (kJ/kmol CH₄) là:",
+   "en": "Cengel Ch.15 Problem 15–42. Determine the enthalpy of combustion of methane (CH₄) at 25 °C and 1 atm using the enthalpy of formation data of Table A-26, assuming the water in the products is liquid. Compare with Table A-27. The enthalpy of combustion (kJ/kmol CH₄) is:"
+  },
+  "opts": [
+   {
+    "vi": "−890.330 kJ/kmol",
+    "en": "−890,330 kJ/kmol"
+   },
+   {
+    "vi": "802.310 kJ/kmol",
+    "en": "802,310 kJ/kmol"
+   },
+   {
+    "vi": "−802.310 kJ/kmol",
+    "en": "−802,310 kJ/kmol"
+   },
+   {
+    "vi": "−965.180 kJ/kmol",
+    "en": "−965,180 kJ/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "CH₄ + 2 O₂ → CO₂ + 2 H₂O(ℓ): h̄_C = (1)(−393.520) + (2)(−285.830) − (1)(−74.850) = −890.330 kJ/kmol (đáp án in −890.330). Đối chiếu A-27: HHV = 55.530 kJ/kg × 16,043 = 890.868 kJ/kmol (lệch 0,06 %). 802.310 kJ/kmol sai dấu. −802.310 kJ/kmol dùng H₂O hơi (−241.820) nên là LHV, không phải entanpi cháy với nước lỏng. −965.180 kJ/kmol quên trừ entanpi hình thành của nhiên liệu (−74.850).",
+   "en": "CH₄ + 2 O₂ → CO₂ + 2 H₂O(ℓ): h̄_C = (1)(−393,520) + (2)(−285,830) − (1)(−74,850) = −890,330 kJ/kmol (printed answer −890,330). Check with A-27: HHV = 55,530 kJ/kg × 16.043 = 890,868 kJ/kmol (difference 0.06 %). 802,310 kJ/kmol wrong sign. −802,310 kJ/kmol uses H₂O vapor (−241,820), so it is the LHV, not the enthalpy of combustion with liquid water. −965,180 kJ/kmol forgets to subtract the enthalpy of formation of the fuel (−74,850)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–42",
+   "en": "Cengel Ch.15 Problem 15–42"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer −890,330 + A-27"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–44 (lặp lại 15–42 cho etan khí C₂H₆). Entanpi cháy của etan khí ở 25 °C, 1 atm, nước sản phẩm ở thể lỏng (A-26) là:",
+   "en": "Cengel Ch.15 Problem 15–44 (repeat of 15–42 for gaseous ethane C₂H₆). The enthalpy of combustion of gaseous ethane at 25 °C and 1 atm with liquid water in the products (A-26) is:"
+  },
+  "opts": [
+   {
+    "vi": "−1.559.850 kJ/kmol",
+    "en": "−1,559,850 kJ/kmol"
+   },
+   {
+    "vi": "−1.427.820 kJ/kmol",
+    "en": "−1,427,820 kJ/kmol"
+   },
+   {
+    "vi": "−779.925 kJ/kmol",
+    "en": "−779,925 kJ/kmol"
+   },
+   {
+    "vi": "−1.729.210 kJ/kmol",
+    "en": "−1,729,210 kJ/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₂H₆ + 3,5 O₂ → 2 CO₂ + 3 H₂O(ℓ): h̄_C = 2(−393.520) + 3(−285.830) − (−84.680) = −1.559.850 kJ/kmol = −51.874 kJ/kg. A-27: HHV = 51.900 × 30,07 = 1.560.633 kJ/kmol (lệch 0,05 %); sách không in đáp án. −1.427.820 kJ/kmol dùng H₂O hơi (LHV). −779.925 kJ/kmol viết phương trình cho 1/2 kmol C₂H₆ (hệ số 2 CO₂ bị chia). −1.729.210 kJ/kmol cộng thay vì trừ entanpi hình thành nhiên liệu.",
+   "en": "C₂H₆ + 3.5 O₂ → 2 CO₂ + 3 H₂O(ℓ): h̄_C = 2(−393,520) + 3(−285,830) − (−84,680) = −1,559,850 kJ/kmol = −51,874 kJ/kg. A-27: HHV = 51,900 × 30.07 = 1,560,633 kJ/kmol (difference 0.05 %); the book prints no answer. −1,427,820 kJ/kmol uses H₂O vapor (LHV). −779,925 kJ/kmol writes the equation for 1/2 kmol of C₂H₆ (halves the CO₂ coefficient). −1,729,210 kJ/kmol adds instead of subtracting the fuel enthalpy of formation (twice)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–44",
+   "en": "Cengel Ch.15 Problem 15–44"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + A-27 (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–49. Metan (CH₄) cháy hoàn toàn với lượng không khí lý thuyết trong quá trình dòng ổn định. Chất phản ứng và sản phẩm đều ở 25 °C, 1 atm; nước trong sản phẩm ở thể lỏng. Nhiệt truyền ra khỏi buồng đốt trên mỗi kmol nhiên liệu là:",
+   "en": "Cengel Ch.15 Problem 15–49. Methane (CH₄) is burned completely with the stoichiometric amount of air in a steady-flow process. Reactants and products are both at 25 °C and 1 atm and the water in the products is liquid. The heat transferred out of the chamber per kmol of fuel is:"
+  },
+  "opts": [
+   {
+    "vi": "890.330 kJ/kmol",
+    "en": "890,330 kJ/kmol"
+   },
+   {
+    "vi": "802.310 kJ/kmol",
+    "en": "802,310 kJ/kmol"
+   },
+   {
+    "vi": "55.496 kJ/kmol",
+    "en": "55,496 kJ/kmol"
+   },
+   {
+    "vi": "−890.330 kJ/kmol",
+    "en": "−890,330 kJ/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Q = H_prod − H_react = h̄_C = −890.330 kJ/kmol: nhiệt tỏa ra 890.330 kJ/kmol CH₄ (đáp án in 890.330). Nếu dùng 100 % không khí thừa mà vẫn ở 25 °C thì kết quả như cũ: N₂ và O₂ thừa vào và ra ở cùng trạng thái chuẩn, h̄_f° = 0 (nửa sau của đề). 802.310 kJ/kmol tính với H₂O hơi (LHV). 55.496 kJ/kmol đã chia cho khối lượng mol (kJ/kg, không phải kJ/kmol). −890.330 kJ/kmol nhiệt đi VÀO buồng đốt (sai dấu): phản ứng tỏa nhiệt.",
+   "en": "Q = H_prod − H_react = h̄_C = −890,330 kJ/kmol: heat released 890,330 kJ/kmol CH₄ (printed answer 890,330). With 100 percent excess air still at 25 °C the result is unchanged: the extra N₂ and O₂ enter and leave at the same standard state with h̄_f° = 0 (second half of the statement). 802,310 kJ/kmol computed with H₂O vapor (LHV). 55,496 kJ/kmol divided by the molar mass (kJ/kg, not kJ/kmol). −890,330 kJ/kmol heat INTO the chamber (wrong sign): the reaction is exothermic."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–49",
+   "en": "Cengel Ch.15 Problem 15–49"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 890,330 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–50. Hiđrô (H₂) cháy hoàn toàn với lượng không khí lý thuyết trong quá trình dòng ổn định; chất phản ứng và sản phẩm ở 25 °C, 1 atm, nước ở thể lỏng. Nhiệt tỏa ra khỏi buồng đốt trên MỖI KG hiđrô (A-26; M = 2,016 kg/kmol) là:",
+   "en": "Cengel Ch.15 Problem 15–50. Hydrogen (H₂) is burned completely with the stoichiometric amount of air in a steady-flow process; reactants and products at 25 °C and 1 atm, liquid water. The heat released from the chamber per KILOGRAM of hydrogen (A-26; M = 2.016 kg/kmol) is:"
+  },
+  "opts": [
+   {
+    "vi": "141.781 kJ/kg",
+    "en": "141,781 kJ/kg"
+   },
+   {
+    "vi": "285.830 kJ/kg",
+    "en": "285,830 kJ/kg"
+   },
+   {
+    "vi": "119.950 kJ/kg",
+    "en": "119,950 kJ/kg"
+   },
+   {
+    "vi": "15.866 kJ/kg",
+    "en": "15,866 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "H₂ + ½ O₂ → H₂O(ℓ): h̄_C = h̄_f°(H₂O ℓ) = −285.830 kJ/kmol ⇒ 141.781 kJ/kg. Đối chiếu A-27: HHV(H₂) = 141.800 kJ/kg (lệch 0,014 %); LHV = 120.000. 50 % không khí thừa không đổi kết quả khi mọi dòng ở 25 °C. 285.830 kJ/kg là kJ/kmol, chưa chia cho M. 119.950 kJ/kg tính với H₂O hơi (LHV; A-27 ghi 120.000). 15.866 kJ/kg chia cho khối lượng mol của H₂O (18,015) thay vì của H₂.",
+   "en": "H₂ + 1/2 O₂ → H₂O(ℓ): h̄_C = h̄_f°(H₂O ℓ) = −285,830 kJ/kmol ⇒ 141,781 kJ/kg. Check with A-27: HHV(H₂) = 141,800 kJ/kg (difference 0.014 %); LHV = 120,000. 50 % excess air does not change the result when all streams are at 25 °C. 285,830 kJ/kg is kJ per kmol, not divided by M. 119,950 kJ/kg computed with H₂O vapor (LHV; A-27 prints 120,000). 15,866 kJ/kg divides by the molar mass of H₂O (18.015) instead of that of H₂."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–50",
+   "en": "Cengel Ch.15 Problem 15–50"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + A-27 (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–104 (câu c). Hỗn hợp nhiên liệu khí gồm 30 % propan (C₃H₈) và 70 % butan (C₄H₁₀) theo thể tích được đốt trong không khí sao cho tỉ lệ không khí–nhiên liệu là 20 kg/kg và cháy hoàn toàn. Số kmol O₂ trong sản phẩm trên mỗi kmol nhiên liệu là (dùng khối lượng mol chính xác của A-1/A-27: M_air = 28,97; C₃H₈ 44,097; C₄H₁₀ 58,123) [Bổ sung: chỉ dẫn khối lượng mol chính xác, đề gốc không nêu]:",
+   "en": "Cengel Ch.15 Problem 15–104 (part c). A gaseous fuel mixture of 30 percent propane (C₃H₈) and 70 percent butane (C₄H₁₀) on a volume basis is burned in air such that the air–fuel ratio is 20 kg air/kg fuel and combustion is complete. The kmol of O₂ in the products per kmol of fuel is (use the exact molar masses of A-1/A-27: M_air = 28.97; C₃H₈ 44.097; C₄H₁₀ 58.123) [Added: the molar-mass hint, not in the original statement]:"
+  },
+  "opts": [
+   {
+    "vi": "1,77 kmol/kmol",
+    "en": "1.77 kmol/kmol"
+   },
+   {
+    "vi": "2,77 kmol/kmol",
+    "en": "2.77 kmol/kmol"
+   },
+   {
+    "vi": "7,82 kmol/kmol",
+    "en": "7.82 kmol/kmol"
+   },
+   {
+    "vi": "0,00 kmol/kmol",
+    "en": "0.00 kmol/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhiên liệu: C = 0,3×3 + 0,7×4 = 3,7; H = 0,3×8 + 0,7×10 = 9,4; M = 53,916 kg/kmol ⇒ AF_lt = 15,474 và λ = 20/AF_lt = 1,2925. Không khí = 20 × 53,916/28,97 = 37,22 kmol ⇒ O₂ vào = 7,820; N₂ = 29,40 (in 29,41); H₂O = 4,7 (in 4,7); O₂ ra = O₂ vào − (C + H/4) = 7,820 − 6,050 = 1,770 (in 1,77). Với khối lượng mol làm tròn (29; 12; 1) được 1,74: kết quả nhạy với chuẩn làm tròn vì là hiệu của hai số gần nhau. 2,77 kmol/kmol cộng nhầm 1 kmol (lấy O₂ vào thay vì O₂ thừa). 7,82 kmol/kmol là tổng O₂ cấp vào (7,82), chưa trừ lượng O₂ đã dùng. 0,00 kmol/kmol cho rằng cháy lý thuyết không còn O₂.",
+   "en": "Fuel: C = 0.3×3 + 0.7×4 = 3.7; H = 0.3×8 + 0.7×10 = 9.4; M = 53.916 kg/kmol ⇒ AF_th = 15.474 and λ = 20/AF_th = 1.2925. Air = 20 × 53.916/28.97 = 37.22 kmol ⇒ O₂ in = 7.820; N₂ = 29.40 (printed 29.41); H₂O = 4.7 (printed 4.7); O₂ out = O₂ in − (C + H/4) = 7.820 − 6.050 = 1.770 (printed 1.77). With rounded masses (29; 12; 1) the result is 1.74: it is sensitive to the rounding convention because it is a difference of two close numbers. 2.77 kmol/kmol adds one kmol by mistake. 7.82 kmol/kmol is the total O₂ supplied (7.82), not yet minus the O₂ consumed. 0.00 kmol/kmol assumes theoretical combustion leaves no O₂."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–104 (câu c)",
+   "en": "Cengel Ch.15 Problem 15–104 (part c)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answers 29.41 / 4.7 / 1.77 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–53 (câu b). Axetilen (C₂H₂) cháy hoàn toàn với 20 % không khí thừa trong buồng đốt dòng ổn định. Nhiên liệu và không khí vào ở 25 °C, sản phẩm ra ở 1500 K. Nhiệt truyền ra khỏi buồng đốt trên mỗi kmol C₂H₂ (A-26, A-18…A-23) là:",
+   "en": "Cengel Ch.15 Problem 15–53 (part b). Acetylene (C₂H₂) is burned completely with 20 percent excess air in a steady-flow combustion chamber. The fuel and air enter at 25 °C and the products leave at 1500 K. The heat transferred out of the chamber per kmol of C₂H₂ (A-26, A-18…A-23) is:"
+  },
+  "opts": [
+   {
+    "vi": "630.565 kJ/kmol",
+    "en": "630,565 kJ/kmol"
+   },
+   {
+    "vi": "1.255.590 kJ/kmol",
+    "en": "1,255,590 kJ/kmol"
+   },
+   {
+    "vi": "722.670 kJ/kmol",
+    "en": "722,670 kJ/kmol"
+   },
+   {
+    "vi": "707.373 kJ/kmol",
+    "en": "707,373 kJ/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chất phản ứng: C₂H₂ + 3 (O₂ + 3,76 N₂); sản phẩm: 2 CO₂ + 1 H₂O + 0,5 O₂ + 11,28 N₂ (AF = 15,9 kg/kg, câu a). Q_ra = H_react − H_prod, H_react = +226.730 (h̄_f°(C₂H₂)); H_prod = Σ N(h̄_f° + h̄_1500 − h̄_298) với h̄_1500 − 8 669-loại: CO₂ 61.714; H₂O 48.095; O₂ 40.610; N₂ 38.404 kJ/kmol ⇒ H_prod = −403.835; Q_ra = 630.565 kJ/kmol. Đã thử cùng đường giải trên bài 15–55, 15–56, 15–60, 15–67, 15–70 (đáp án in khớp). 1.255.590 kJ/kmol chỉ tính −Σ N h̄_f° (cháy ở 25 °C), bỏ entanpi hiển nhiệt của sản phẩm. 722.670 kJ/kmol dùng H₂O lỏng ở 1500 K (sai pha). 707.373 kJ/kmol cộng nhầm hai kmol N₂ nữa của entanpi sản phẩm.",
+   "en": "Reactants: C₂H₂ + 3 (O₂ + 3.76 N₂); products: 2 CO₂ + 1 H₂O + 0.5 O₂ + 11.28 N₂ (AF = 15.9 kg/kg, part a). Q_out = H_react − H_prod, H_react = +226,730 (h̄_f°(C₂H₂)); H_prod = Σ N(h̄_f° + h̄(1500 K) − h̄(298 K)) with the differences: CO₂ 61,714; H₂O 48,095; O₂ 40,610; N₂ 38,404 kJ/kmol ⇒ H_prod = −403,835; Q_out = 630,565 kJ/kmol. The same route was tested on Problems 15–55, 15–56, 15–60, 15–67, 15–70 (printed answers reproduced). 1,255,590 kJ/kmol counts only −Σ N h̄_f° (combustion at 25 °C) and drops the sensible enthalpy of the products. 722,670 kJ/kmol uses liquid H₂O at 1500 K (wrong phase). 707,373 kJ/kmol adds the enthalpy of two extra kmol of N₂ to the products."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Định luật 1 cho cháy",
+   "en": "First law for combustion"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–53 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–53 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in); đường giải thử trên 15–55/56/60/67/70"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–55 (câu b). Benzen khí (C₆H₆) ở 25 °C cháy dòng ổn định với 95 % không khí lý thuyết vào ở 25 °C. Toàn bộ hiđrô cháy thành H₂O, một phần cacbon cháy thành CO; sản phẩm ra ở 1000 K. Nhiệt truyền ra khỏi buồng đốt (kJ/kmol C₆H₆) là:",
+   "en": "Cengel Ch.15 Problem 15–55 (part b). Benzene gas (C₆H₆) at 25 °C is burned in a steady-flow process with 95 percent theoretical air entering at 25 °C. All the hydrogen burns to H₂O but part of the carbon burns to CO; the products leave at 1000 K. The heat transferred out of the chamber (kJ/kmol C₆H₆) is:"
+  },
+  "opts": [
+   {
+    "vi": "2.112.779 kJ/kmol",
+    "en": "2,112,779 kJ/kmol"
+   },
+   {
+    "vi": "2.957.268 kJ/kmol",
+    "en": "2,957,268 kJ/kmol"
+   },
+   {
+    "vi": "2.285.974 kJ/kmol",
+    "en": "2,285,974 kJ/kmol"
+   },
+   {
+    "vi": "2.325.022 kJ/kmol",
+    "en": "2,325,022 kJ/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₆H₆ + 7,125 (O₂ + 3,76 N₂) → 5,25 CO₂ + 0,75 CO + 3 H₂O + 26,79 N₂ (O: 14,25 = 2x + y + 3 và x + y = 6). Q_ra = 82.930 − [5,25(−393.520 + 33.405) + 0,75(−110.530 + 21.686) + 3(−241.820 + 25.978) + 26,79 × 21.460] = 2.112.779 kJ/kmol (đáp án in 2.112.800; lệch 0,0010 %). Phần mol CO = 0,75/35,79 = 2,1 % (câu a, in 2,1 %). 2.957.268 kJ/kmol bỏ entanpi hiển nhiệt của sản phẩm (chỉ −Σ N h̄_f°). 2.285.974 kJ/kmol giả cháy hoàn toàn thành CO₂ với 100 % không khí. 2.325.022 kJ/kmol tính 0,75 kmol CO như CO₂ (bỏ chênh lệch entanpi hình thành).",
+   "en": "C₆H₆ + 7.125 (O₂ + 3.76 N₂) → 5.25 CO₂ + 0.75 CO + 3 H₂O + 26.79 N₂ (O: 14.25 = 2x + y + 3 and x + y = 6). Q_out = 82,930 − [5.25(−393,520 + 33,405) + 0.75(−110,530 + 21,686) + 3(−241,820 + 25,978) + 26.79 × 21,460] = 2,112,779 kJ/kmol (printed answer 2,112,800; difference 0.0010 %). CO mole fraction = 0.75/35.79 = 2.1 % (part a, printed 2.1 %). 2,957,268 kJ/kmol drops the sensible enthalpy of the products (only −Σ N h̄_f°). 2,285,974 kJ/kmol assumes complete combustion to CO₂ with 100 % air. 2,325,022 kJ/kmol counts the 0.75 kmol of CO as CO₂ (ignores the formation-enthalpy difference)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Định luật 1 cho cháy",
+   "en": "First law for combustion"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–55 (câu b)",
+   "en": "Cengel Ch.15 Problem 15–55 (part b)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answers 2.1 % and 2,112,800 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–56. Nhiên liệu diesel (C₁₂H₂₆) ở 25 °C cháy trong buồng đốt dòng ổn định với 20 % không khí thừa cũng vào ở 25 °C. Sản phẩm ra ở 500 K. Giả thiết cháy hoàn toàn: lưu lượng khối lượng nhiên liệu cần có để cung cấp nhiệt 2000 kJ/s là:",
+   "en": "Cengel Ch.15 Problem 15–56. Diesel fuel (C₁₂H₂₆) at 25 °C is burned in a steady-flow combustion chamber with 20 percent excess air that also enters at 25 °C. The products leave at 500 K. Assuming complete combustion, the fuel mass flow rate needed to supply heat at 2000 kJ/s is:"
+  },
+  "opts": [
+   {
+    "vi": "49,5 g/s",
+    "en": "49.5 g/s"
+   },
+   {
+    "vi": "44,9 g/s",
+    "en": "44.9 g/s"
+   },
+   {
+    "vi": "0,8 g/s",
+    "en": "0.8 g/s"
+   },
+   {
+    "vi": "58,0 g/s",
+    "en": "58.0 g/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₁₂H₂₆ + 18,5 (O₂ + 3,76 N₂) là cháy lý thuyết: a_th = 12 + 6,5 = 18,5; 20 % thừa → 22,2 O₂ → sản phẩm 12 CO₂ + 13 H₂O + 3,7 O₂ + 83,5 N₂. Q_ra = 6.869.098 kJ/kmol (dùng h̄_f° C₁₂H₂₆(g) = −291.010 của A-26 và h̄ − h̄_298 của A-18…A-23 tại 500 K). ṁ = 2000 kJ/s × 170 kg/kmol / 6.869.098 kJ/kmol = 0,04950 kg/s = 49,5 g/s (đáp án in 49,5). 44,9 g/s bỏ entanpi hiển nhiệt của sản phẩm (chỉ dùng |h̄_C|). 0,8 g/s đọc 2000 kJ/min thay cho 2000 kJ/s. 58,0 g/s đọc 500 K thành 500 °C (773 K).",
+   "en": "C₁₂H₂₆ + 18.5 (O₂ + 3.76 N₂) is the stoichiometric equation: a_th = 12 + 6.5 = 18.5; 20 % excess → 22.2 O₂ → products 12 CO₂ + 13 H₂O + 3.7 O₂ + 83.5 N₂. Q_out = 6,869,098 kJ/kmol (h̄_f° of C₁₂H₂₆(g) = −291,010 from A-26 and h̄ − h̄_298 from A-18…A-23 at 500 K). ṁ = 2000 kJ/s × 170 kg/kmol / 6,869,098 kJ/kmol = 0.04950 kg/s = 49.5 g/s (printed answer 49.5). 44.9 g/s drops the sensible enthalpy of the products (uses |h̄_C| only). 0.8 g/s reads 2000 kJ/min instead of 2000 kJ/s. 58.0 g/s reads 500 K as 500 °C (773 K)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Định luật 1 cho cháy",
+   "en": "First law for combustion"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–56",
+   "en": "Cengel Ch.15 Problem 15–56"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 49.5 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–60. Etan khí (C₂H₆) ở 25 °C cháy với lưu lượng 5 kg/h trong buồng đốt dòng ổn định với lượng không khí lý thuyết được gia nhiệt tới 500 K trước khi vào. Phân tích khí cho thấy toàn bộ hiđrô cháy thành H₂O nhưng chỉ 95 % cacbon thành CO₂, 5 % còn lại thành CO. Sản phẩm ra ở 800 K. Tốc độ nhiệt truyền ra khỏi buồng đốt (kJ/h) là:",
+   "en": "Cengel Ch.15 Problem 15–60. Ethane gas (C₂H₆) at 25 °C is burned at a rate of 5 kg/h in a steady-flow combustion chamber with the stoichiometric amount of air preheated to 500 K. The gas analysis shows that all the hydrogen burns to H₂O but only 95 percent of the carbon burns to CO₂ and 5 percent forms CO. The products leave at 800 K. The rate of heat transfer from the chamber (kJ/h) is:"
+  },
+  "opts": [
+   {
+    "vi": "200.167 kJ/h",
+    "en": "200,167 kJ/h"
+   },
+   {
+    "vi": "183.649 kJ/h",
+    "en": "183,649 kJ/h"
+   },
+   {
+    "vi": "1.201.005 kJ/h",
+    "en": "1,201,005 kJ/h"
+   },
+   {
+    "vi": "220.184 kJ/h",
+    "en": "220,184 kJ/h"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₂H₆ + 3,5 (O₂ + 3,76 N₂) → 1,9 CO₂ + 0,1 CO + 3 H₂O + 0,05 O₂ + 13,16 N₂ (O₂ còn lại 3,5 − 1,9 − 0,05 − 1,5 = 0,05). Q_ra = H_react − H_prod = 1.201.005 kJ/kmol; lưu lượng mol = 5/30 = 0,1667 kmol/h ⇒ 200.167 kJ/h (đáp án in 200.170; M = 30,07 thì 199.701). 183.649 kJ/h coi không khí vào ở 25 °C (bỏ entanpi hiển nhiệt khi gia nhiệt 500 K). 1.201.005 kJ/h là kJ/kmol nhiên liệu, chưa nhân 5/30 kmol/h. 220.184 kJ/h cộng 10 % (làm tròn sai).",
+   "en": "C₂H₆ + 3.5 (O₂ + 3.76 N₂) → 1.9 CO₂ + 0.1 CO + 3 H₂O + 0.05 O₂ + 13.16 N₂ (O₂ left: 3.5 − 1.9 − 0.05 − 1.5 = 0.05). Q_out = H_react − H_prod = 1,201,005 kJ/kmol; mole rate = 5/30 = 0.1667 kmol/h ⇒ 200,167 kJ/h (printed answer 200,170; with M = 30.07 it is 199,701). 183,649 kJ/h takes the air as entering at 25 °C (drops the preheating enthalpy at 500 K). 1,201,005 kJ/h is kJ per kmol of fuel, not multiplied by 5/30 kmol/h. 220,184 kJ/h adds 10 % (bad rounding)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Định luật 1 cho cháy",
+   "en": "First law for combustion"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–60",
+   "en": "Cengel Ch.15 Problem 15–60"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 200,170 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–67. Rượu etylic lỏng (C₂H₅OH(ℓ)) ở 25 °C cháy dòng ổn định với 40 % không khí thừa cũng vào ở 25 °C. Sản phẩm ra ở 600 K, cháy hoàn toàn. Lưu lượng thể tích etanol lỏng cần có để cấp nhiệt 2000 kJ/s (khối lượng riêng 790 kg/m³, M = 46 kg/kmol) là:",
+   "en": "Cengel Ch.15 Problem 15–67. Liquid ethyl alcohol (C₂H₅OH(ℓ)) at 25 °C is burned in a steady-flow chamber with 40 percent excess air that also enters at 25 °C. The products leave at 600 K, complete combustion. The volume flow rate of liquid ethanol required to supply heat at 2000 kJ/s (density 790 kg/m³, M = 46 kg/kmol) is:"
+  },
+  "opts": [
+   {
+    "vi": "6,81 L/min",
+    "en": "6.81 L/min"
+   },
+   {
+    "vi": "6,54 L/min",
+    "en": "6.54 L/min"
+   },
+   {
+    "vi": "0,11 L/min",
+    "en": "0.11 L/min"
+   },
+   {
+    "vi": "5,38 L/min",
+    "en": "5.38 L/min"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₂H₅OH + 3 O₂ → 2 CO₂ + 3 H₂O; 40 % thừa → 4,2 O₂, 15,79 N₂, sản phẩm 2 CO₂ + 3 H₂O + 1,2 O₂ + 15,79 N₂. Q_ra = 1.025.934 kJ/kmol (h̄_f° etanol lỏng A-26). ṁ = 2000/1.025.934 × 46 = 0,090 kg/s ⇒ V̇ = 0,11351 L/s = 6,81 L/min (đáp án in 6,81). 6,54 L/min dùng h̄_f° của etanol KHÍ (−235.310) thay cho lỏng (−277.690). 0,11 L/min quên đổi s sang phút (ra L/s). 5,38 L/min nhân khối lượng riêng thay vì chia (ra kg/min).",
+   "en": "C₂H₅OH + 3 O₂ → 2 CO₂ + 3 H₂O; 40 % excess → 4.2 O₂, 15.79 N₂, products 2 CO₂ + 3 H₂O + 1.2 O₂ + 15.79 N₂. Q_out = 1,025,934 kJ/kmol (h̄_f° of liquid ethanol, A-26). ṁ = 2000/1,025,934 × 46 = 0.090 kg/s ⇒ V̇ = 0.11351 L/s = 6.81 L/min (printed answer 6.81). 6.54 L/min uses h̄_f° of ethanol VAPOR (−235,310) instead of liquid (−277,690). 0.11 L/min forgets to convert s to min (gives L/s). 5.38 L/min multiplies by the density instead of dividing (gives kg/min)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Định luật 1 cho cháy",
+   "en": "First law for combustion"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–67",
+   "en": "Cengel Ch.15 Problem 15–67"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 6.81 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–70. Hiđrô (H₂) ở 7 °C cháy với 20 % không khí thừa cũng ở 7 °C trong quá trình dòng ổn định đoạn nhiệt. Giả thiết cháy hoàn toàn. Nhiệt độ sản phẩm ra (A-18…A-23) xấp xỉ:",
+   "en": "Cengel Ch.15 Problem 15–70. Hydrogen (H₂) at 7 °C is burned with 20 percent excess air that is also at 7 °C during an adiabatic steady-flow combustion process. Assuming complete combustion, the exit temperature of the products (A-18…A-23) is about:"
+  },
+  "opts": [
+   {
+    "vi": "2.251 K",
+    "en": "2,251 K"
+   },
+   {
+    "vi": "2.511 K",
+    "en": "2,511 K"
+   },
+   {
+    "vi": "1.534 K",
+    "en": "1,534 K"
+   },
+   {
+    "vi": "2.416 K",
+    "en": "2,416 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "H₂ + 0,6 (O₂ + 3,76 N₂) cần a_th = 0,5; 20 % thừa → 0,6 O₂, 2,256 N₂; sản phẩm H₂O + 0,1 O₂ + 2,256 N₂. Điều kiện đoạn nhiệt: Σ N_p(h̄_f° + h̄(T) − h̄_298) = Σ N_r(h̄_f° + h̄(280 K) − h̄_298), vế phải = −2.033 kJ/kmol. Thử T = 2250 K: vế trái −2.229; T = 2300 K: 4.706 ⇒ nội suy T = 2.251,4 K (đáp án in 2251,4 K). 2.511 K bỏ 20 % không khí thừa (λ = 1): thiếu lượng khí trơ hấp thụ nhiệt. 1.534 K hiểu 20 % thừa là 120 % thừa (λ = 2,2). 2.416 K dùng khí nóng thêm 150 K (nhầm hiển nhiệt chất phản ứng).",
+   "en": "H₂ + 0.6 (O₂ + 3.76 N₂) needs a_th = 0.5; 20 % excess → 0.6 O₂, 2.256 N₂; products H₂O + 0.1 O₂ + 2.256 N₂. Adiabatic condition: Σ N_p(h̄_f° + h̄(T) − h̄_298) = Σ N_r(h̄_f° + h̄(280 K) − h̄_298), right side = −2,033 kJ/kmol. Try T = 2250 K: left side −2,229; T = 2300 K: 4,706 ⇒ interpolation T = 2,251.4 K (printed answer 2251.4 K). 2,511 K drops the 20 % excess air (λ = 1): too little inert gas to absorb the heat. 1,534 K reads 20 % excess as 120 % excess (λ = 2.2). 2,416 K adds 150 K (misapplied reactant sensible enthalpy)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nhiệt độ ngọn lửa đoạn nhiệt",
+   "en": "Adiabatic flame temperature"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–70",
+   "en": "Cengel Ch.15 Problem 15–70"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 2251.4 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–73. Axetilen (C₂H₂) ở 25 °C cháy dòng ổn định với 30 % không khí thừa ở 27 °C. Nhiệt mất ra môi trường là 75.000 kJ trên mỗi kmol C₂H₂. Giả thiết cháy hoàn toàn. Nhiệt độ sản phẩm ra (A-18…A-23) xấp xỉ:",
+   "en": "Cengel Ch.15 Problem 15–73. Acetylene gas (C₂H₂) at 25 °C is burned in a steady-flow process with 30 percent excess air at 27 °C. Heat is lost to the surroundings at 75,000 kJ per kmol of C₂H₂. Assuming complete combustion, the exit temperature of the products (A-18…A-23) is about:"
+  },
+  "opts": [
+   {
+    "vi": "2.303 K",
+    "en": "2,303 K"
+   },
+   {
+    "vi": "2.418 K",
+    "en": "2,418 K"
+   },
+   {
+    "vi": "2.767 K",
+    "en": "2,767 K"
+   },
+   {
+    "vi": "2.533 K",
+    "en": "2,533 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₂H₂ + 3,25 (O₂ + 3,76 N₂) → 2 CO₂ + H₂O + 0,75 O₂ + 12,22 N₂. H_react = 226.730 + 3,25 × 4,76 kmol không khí ở 300 K: 227.565 kJ/kmol; H_prod(T) = H_react − 75.000 = 152.565 ⇒ nội suy trong A-18…A-23: T = 2.303 K (đáp án in 2301 K; lệch 2 K ≈ 0,09 % do nội suy tuyến tính/làm tròn). 2.418 K bỏ nhiệt mất 75.000 kJ/kmol (coi đoạn nhiệt). 2.767 K bỏ 30 % không khí thừa. 2.533 K cộng nhiệt 75.000 thay vì trừ (sai dấu của nhiệt mất).",
+   "en": "C₂H₂ + 3.25 (O₂ + 3.76 N₂) → 2 CO₂ + H₂O + 0.75 O₂ + 12.22 N₂. H_react = 226,730 + the enthalpy of the 3.25 × 4.76 kmol of air at 300 K: 227,565 kJ/kmol; H_prod(T) = H_react − 75,000 = 152,565 ⇒ interpolation in A-18…A-23: T = 2,303 K (printed answer 2301 K; gap 2 K ≈ 0.09 % from linear interpolation/rounding). 2,418 K ignores the 75,000 kJ/kmol heat loss (treats it as adiabatic). 2,767 K drops the 30 % excess air. 2,533 K adds the 75,000 instead of subtracting (wrong sign of the loss)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nhiệt độ ngọn lửa đoạn nhiệt",
+   "en": "Adiabatic flame temperature"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–73",
+   "en": "Cengel Ch.15 Problem 15–73"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 2301 (table route 2303, Δ 0.09 %) + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ví dụ 15–8 (câu a, bổ sung từ §15-5). Octan lỏng (C₈H₁₈) ở 25 °C, 1 atm cháy với lượng không khí lý thuyết vào cùng trạng thái trong buồng đốt tuabin khí đoạn nhiệt, dòng ổn định, cháy hoàn toàn. Nhiệt độ sản phẩm (A-18…A-23, thử và nội suy) xấp xỉ:",
+   "en": "Cengel Example 15–8 (part a, added from §15-5). Liquid octane (C₈H₁₈) at 25 °C and 1 atm is burned with the theoretical amount of air entering at the same state in an adiabatic steady-flow gas-turbine combustor, complete combustion. The product temperature (A-18…A-23, trial and interpolation) is about:"
+  },
+  "opts": [
+   {
+    "vi": "2.395 K",
+    "en": "2,395 K"
+   },
+   {
+    "vi": "962 K",
+    "en": "962 K"
+   },
+   {
+    "vi": "1.827 K",
+    "en": "1,827 K"
+   },
+   {
+    "vi": "2.682 K",
+    "en": "2,682 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C₈H₁₈ + 12,5 (O₂ + 3,76 N₂) → 8 CO₂ + 9 H₂O + 47 N₂; H_prod = H_react = h̄_f°(C₈H₁₈ ℓ) = −249.950 kJ/kmol ⇒ Σ N_p(h̄_f° + h̄ − h̄_298) = −249.950 ⇒ 8 h̄_CO₂ + 9 h̄_H₂O + 47 h̄_N₂ = 5.646.081 kJ (sách). Thử 2400 K: 5.660.828 (sách 5.660.828, cao hơn), 2350 K thấp hơn ⇒ nội suy T = 2.395 K (sách 2395 K). Nhiệt độ ngọn lửa đoạn nhiệt này vượt giới hạn vật liệu của tuabin nên thực tế dùng nhiều không khí thừa: 400 % cho 962 K (sách 962 K). 962 K là kết quả với 400 % không khí lý thuyết (câu b của sách). 1.827 K có thêm 50 % không khí thừa. 2.682 K cao hơn 12 % (dùng c̄_p nhỏ hằng số).",
+   "en": "C₈H₁₈ + 12.5 (O₂ + 3.76 N₂) → 8 CO₂ + 9 H₂O + 47 N₂; H_prod = H_react = h̄_f°(C₈H₁₈ ℓ) = −249,950 kJ/kmol ⇒ Σ N_p(h̄_f° + h̄ − h̄_298) = −249,950 ⇒ 8 h̄_CO₂ + 9 h̄_H₂O + 47 h̄_N₂ = 5,646,081 kJ (book). Trial 2400 K: 5,660,828 (book 5,660,828, higher), 2350 K is lower ⇒ interpolation T = 2,395 K (book 2395 K). This adiabatic flame temperature exceeds the material limits of a turbine, so real combustors use a lot of excess air: 400 % gives 962 K (book 962 K). 962 K is the result with 400 percent theoretical air (part b of the book). 1,827 K has 50 percent excess air added. 2,682 K 12 % too high (small constant c̄_p used)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nhiệt độ ngọn lửa đoạn nhiệt",
+   "en": "Adiabatic flame temperature"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Ví dụ 15–8 (câu a)",
+   "en": "Cengel Ch.15 Example 15–8 (part a)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 2395 K + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ví dụ 15–10 (câu a, bổ sung từ §15-5). Metan (CH₄) khí ở 25 °C, 1 atm cháy hoàn toàn với 50 % không khí thừa vào ở 25 °C, 1 atm trong buồng đốt đoạn nhiệt dòng ổn định. Nhiệt độ sản phẩm (A-18…A-23) xấp xỉ:",
+   "en": "Cengel Example 15–10 (part a, added from §15-5). Methane (CH₄) gas at 25 °C and 1 atm is burned completely with 50 percent excess air entering at 25 °C and 1 atm in an adiabatic steady-flow combustion chamber. The product temperature (A-18…A-23) is about:"
+  },
+  "opts": [
+   {
+    "vi": "1.789 K",
+    "en": "1,789 K"
+   },
+   {
+    "vi": "2.328 K",
+    "en": "2,328 K"
+   },
+   {
+    "vi": "1.280 K",
+    "en": "1,280 K"
+   },
+   {
+    "vi": "2.189 K",
+    "en": "2,189 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "CH₄ + 3 (O₂ + 3,76 N₂) → CO₂ + 2 H₂O + O₂ + 11,28 N₂; Σ N_p(h̄_f° + h̄ − h̄_298) = h̄_f°(CH₄) = −74.850 ⇒ h̄_CO₂ + 2 h̄_H₂O + h̄_O₂ + 11,28 h̄_N₂ = 937.950 kJ (sách) ⇒ thử và nội suy trong A-18…A-23: T = 1.789 K (sách 1789 K). 2.328 K bỏ phần không khí thừa (λ = 1). 1.280 K hiểu 50 % thừa là 250 % lý thuyết. 2.189 K cộng thêm 400 K (hiển nhiệt N₂ của chất phản ứng).",
+   "en": "CH₄ + 3 (O₂ + 3.76 N₂) → CO₂ + 2 H₂O + O₂ + 11.28 N₂; Σ N_p(h̄_f° + h̄ − h̄_298) = h̄_f°(CH₄) = −74,850 ⇒ h̄_CO₂ + 2 h̄_H₂O + h̄_O₂ + 11.28 h̄_N₂ = 937,950 kJ (book) ⇒ trial and interpolation in A-18…A-23: T = 1,789 K (book 1789 K). 2,328 K ignores the excess air (λ = 1). 1,280 K reads 50 % excess as 250 % theoretical. 2,189 K adds 400 K (reactant N₂ sensible enthalpy)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nhiệt độ ngọn lửa đoạn nhiệt",
+   "en": "Adiabatic flame temperature"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Ví dụ 15–10 (câu a)",
+   "en": "Cengel Ch.15 Example 15–10 (part a)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "printed answer 1789 K + script"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–70 (lời giải đầy đủ). Hiđrô (H₂) ở 7 °C cháy với 20 % không khí thừa cũng ở 7 °C trong quá trình dòng ổn định đoạn nhiệt, cháy hoàn toàn. Xác định nhiệt độ ngọn lửa đoạn nhiệt của sản phẩm.",
+   "en": "Cengel Ch.15 Problem 15–70 (full solution). Hydrogen (H₂) at 7 °C is burned with 20 percent excess air that is also at 7 °C during an adiabatic steady-flow combustion process, complete combustion. Determine the adiabatic flame temperature of the products."
+  },
+  "sol": {
+   "vi": "Giả thiết: dòng ổn định, không công, bỏ qua động/thế năng, Q = 0, khí lý tưởng; h̄(T) lấy từ A-18…A-23 (nội suy tuyến tính giữa các hàng), mốc h̄_298 như slide tr.44.\nBước 1. H₂ + 0,5 (O₂ + 3,76 N₂) là cháy lý thuyết; với 20 % thừa: H₂ + 0,6 O₂ + 2,256 N₂ → H₂O + 0,1 O₂ + 2,256 N₂.\nBước 2 (vế chất phản ứng, T = 280 K). h̄_280 − h̄_298: H₂ −523; O₂ −532; N₂ −528 kJ/kmol. H_react = 0 + (0,6 × −532 + 2,256 × −528 + −523) = −2.033 kJ/kmol.\nBước 3 (vế sản phẩm). H_prod(T) = h̄_f°(H₂O g) + Δh̄_H₂O + 0,1 Δh̄_O₂ + 2,256 Δh̄_N₂ với h̄_f°(H₂O g) = −241.820. T = 2250 K: Δh̄ = 85.658; 68.715; 65.187 ⇒ H_prod = −2.229. T = 2300 K: 4.706.\nBước 4. H_react nằm giữa hai giá trị ⇒ T_ad = 2250 + 50 × (−2.033 − −2.229) / (4.706 − −2.229) = 2.251,4 K (đáp án in 2251,4 K).\nHai đường: (A) nội suy bảng như trên; (B) giải bằng brentq với entanpi tính từ tích phân T ds° trên chính các cột s° của A-18…A-23 (không dùng cột h): chênh dưới 0,15 %. Nhận xét: nhiệt độ ngọn lửa đoạn nhiệt cao hơn nhiều giới hạn vật liệu; thực tế còn có phân ly (slide tr.8) làm nhiệt độ thấp hơn. Slide Ch.4 không có nhiệt độ ngọn lửa đoạn nhiệt: mục này là Bổ sung từ sách.",
+   "en": "Assumptions: steady flow, no work, negligible kinetic/potential energy, Q = 0, ideal gases; h̄(T) from A-18…A-23 (linear interpolation between rows), reference h̄_298 as on slide p.44.\nStep 1. H₂ + 0.5 (O₂ + 3.76 N₂) is theoretical combustion; with 20 % excess: H₂ + 0.6 O₂ + 2.256 N₂ → H₂O + 0.1 O₂ + 2.256 N₂.\nStep 2 (reactant side, T = 280 K). h̄_280 − h̄_298: H₂ −523; O₂ −532; N₂ −528 kJ/kmol. H_react = 0 + (0.6 × −532 + 2.256 × −528 + −523) = −2,033 kJ/kmol.\nStep 3 (product side). H_prod(T) = h̄_f°(H₂O g) + Δh̄_H₂O + 0.1 Δh̄_O₂ + 2.256 Δh̄_N₂ with h̄_f°(H₂O g) = −241,820. T = 2250 K: Δh̄ = 85,658; 68,715; 65,187 ⇒ H_prod = −2,229. T = 2300 K: 4,706.\nStep 4. H_react lies between the two values ⇒ T_ad = 2250 + 50 × (−2,033 − −2,229) / (4,706 − −2,229) = 2,251.4 K (printed answer 2251.4 K).\nTwo routes: (A) table interpolation as above; (B) brentq with enthalpy computed from the integral of T ds° on the s° columns of A-18…A-23 (the h column is not used): difference below 0.15 %. Remark: the adiabatic flame temperature is far above material limits; in reality dissociation (slide p.8) lowers it. Chapter 4 slides contain no adiabatic flame temperature: this item is Added from the book."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Nhiệt độ ngọn lửa đoạn nhiệt",
+   "en": "Adiabatic flame temperature"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–70 (bổ sung từ §15-5)",
+   "en": "Cengel Ch.15 Problem 15–70 (added from §15-5)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + printed answer 2251.4"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–118 (FE). Một nhiên liệu được đốt với 90 % không khí lý thuyết. Điều này tương đương với:",
+   "en": "Cengel Ch.15 Problem 15–118 (FE). A fuel is burned with 90 percent theoretical air. This is equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "10 % không khí thừa",
+    "en": "10 % excess air"
+   },
+   {
+    "vi": "90 % không khí thừa",
+    "en": "90 % excess air"
+   },
+   {
+    "vi": "10 % thiếu không khí",
+    "en": "10 % deficiency of air"
+   },
+   {
+    "vi": "90 % thiếu không khí",
+    "en": "90 % deficiency of air"
+   },
+   {
+    "vi": "đúng lượng không khí lý thuyết",
+    "en": "the stoichiometric amount of air"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Thiếu không khí = 100 % − 90 % = 10 % (slide tr.24: 90 % lý thuyết = 10 % thiếu). Không khí THỪA chỉ có khi lượng không khí lớn hơn 100 % lý thuyết (150 % lý thuyết = 50 % thừa); 100 % lý thuyết là lượng đúng hợp thức.",
+   "en": "Deficiency = 100 % − 90 % = 10 % (slide p.24: 90 percent theoretical = 10 percent deficiency). EXCESS air exists only above 100 percent theoretical (150 percent theoretical = 50 percent excess); 100 percent theoretical is the stoichiometric amount."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–118 (FE)",
+   "en": "Cengel Ch.15 Problem 15–118 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "slide p.24 (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–119 (FE). Propan (C₃H₈) cháy với 150 % không khí lý thuyết. Tỉ lệ khối lượng không khí–nhiên liệu của quá trình là:",
+   "en": "Cengel Ch.15 Problem 15–119 (FE). Propane (C₃H₈) is burned with 150 percent theoretical air. The air–fuel mass ratio of this process is:"
+  },
+  "opts": [
+   {
+    "vi": "5,3",
+    "en": "5.3"
+   },
+   {
+    "vi": "10,5",
+    "en": "10.5"
+   },
+   {
+    "vi": "15,7",
+    "en": "15.7"
+   },
+   {
+    "vi": "23,4",
+    "en": "23.4"
+   },
+   {
+    "vi": "39,3",
+    "en": "39.3"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O: a_th = 5; 150 % → 7,5 O₂ → 7,5 × 4,76 = 35,7 kmol không khí; AF = 35,7 × 29/44 = 23,53 (M_air = 28,97 và 44,097: 23,46): phương án gần nhất là 23,4. 15,7 = 1,0 × 5 × 4,76 × 29/44 là AF lý thuyết; 10,5 là AF chia đôi.",
+   "en": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O: a_th = 5; 150 % → 7.5 O₂ → 7.5 × 4.76 = 35.7 kmol of air; AF = 35.7 × 29/44 = 23.53 (with M_air = 28.97 and 44.097: 23.46): the nearest option is 23.4. 15.7 is the theoretical AF (1.0 × 5 × 4.76 × 29/44); 10.5 is half of it."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–119 (FE)",
+   "en": "Cengel Ch.15 Problem 15–119 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in; chọn phương án gần nhất)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–120 (FE). Một kmol metan (CH₄) cháy với lượng không khí chưa biết. Nếu cháy hoàn toàn và có 2 kmol O₂ tự do trong sản phẩm, tỉ lệ khối lượng không khí–nhiên liệu là:",
+   "en": "Cengel Ch.15 Problem 15–120 (FE). One kmol of methane (CH₄) is burned with an unknown amount of air. If the combustion is complete and there are 2 kmol of free O₂ in the products, the air–fuel mass ratio is:"
+  },
+  "opts": [
+   {
+    "vi": "34,3",
+    "en": "34.3"
+   },
+   {
+    "vi": "17,2",
+    "en": "17.2"
+   },
+   {
+    "vi": "19,0",
+    "en": "19.0"
+   },
+   {
+    "vi": "14,9",
+    "en": "14.9"
+   },
+   {
+    "vi": "12,1",
+    "en": "12.1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "O₂ vào = a_th + 2 = 2 + 2 = 4 kmol (a_th = 2); không khí = 4 × 4,76 = 19,04 kmol; AF = 19,04 × 29/16 = 34,51 (M_air = 28,97 và 16,043: 34,38): phương án gần nhất là 34,3. 17,2 là AF lý thuyết (2 kmol O₂ thay vì 4) — đồng thời là đáp án nhầm \"chỉ O₂ thừa\".",
+   "en": "O₂ in = a_th + 2 = 2 + 2 = 4 kmol (a_th = 2); air = 4 × 4.76 = 19.04 kmol; AF = 19.04 × 29/16 = 34.51 (with M_air = 28.97 and 16.043: 34.38): the nearest option is 34.3. 17.2 is the theoretical AF (2 kmol O₂ instead of 4)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–120 (FE)",
+   "en": "Cengel Ch.15 Problem 15–120 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in; chọn phương án gần nhất)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–123 (FE). Metan (CH₄) cháy hoàn toàn với 80 % không khí thừa trong quá trình dòng ổn định. Chất phản ứng và sản phẩm đều ở 25 °C, 1 atm, nước trong sản phẩm ở thể lỏng. Nhiệt truyền ra khỏi buồng đốt trên mỗi đơn vị khối lượng metan là:",
+   "en": "Cengel Ch.15 Problem 15–123 (FE). Methane (CH₄) is burned completely with 80 percent excess air in a steady-flow combustion process. Reactants and products are both at 25 °C and 1 atm and the water in the products is liquid. The heat transfer from the combustion chamber per unit mass of methane is:"
+  },
+  "opts": [
+   {
+    "vi": "890 MJ/kg",
+    "en": "890 MJ/kg"
+   },
+   {
+    "vi": "802 MJ/kg",
+    "en": "802 MJ/kg"
+   },
+   {
+    "vi": "75 MJ/kg",
+    "en": "75 MJ/kg"
+   },
+   {
+    "vi": "56 MJ/kg",
+    "en": "56 MJ/kg"
+   },
+   {
+    "vi": "50 MJ/kg",
+    "en": "50 MJ/kg"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "|h̄_C| = 890.330 kJ/kmol (nước lỏng, 25 °C; không khí thừa vào và ra cùng trạng thái chuẩn nên không ảnh hưởng) ⇒ 890.330/16,043 = 55.496 kJ/kg = 55,5 MJ/kg ≈ 56 MJ/kg. 890 là MJ/kmol (chưa chia M); 802 là LHV theo kmol; 50 MJ/kg là LHV theo kg (50.050 kJ/kg).",
+   "en": "|h̄_C| = 890,330 kJ/kmol (liquid water, 25 °C; the excess air enters and leaves at the same standard state so it has no effect) ⇒ 890,330/16.043 = 55,496 kJ/kg = 55.5 MJ/kg ≈ 56 MJ/kg. 890 is MJ per kmol (not divided by M); 802 is the LHV per kmol; 50 MJ/kg is the LHV per kg (50,050 kJ/kg)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–123 (FE)",
+   "en": "Cengel Ch.15 Problem 15–123 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script + A-27 (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–124 (FE). Nhiệt trị cao của nhiên liệu hiđrôcacbon CₙHₘ với m = 8 là 1560 MJ/kmol nhiên liệu. Khi đó nhiệt trị thấp của nó là:",
+   "en": "Cengel Ch.15 Problem 15–124 (FE). The higher heating value of a hydrocarbon fuel CₙHₘ with m = 8 is given to be 1560 MJ/kmol of fuel. Then its lower heating value is:"
+  },
+  "opts": [
+   {
+    "vi": "1384 MJ/kmol",
+    "en": "1384 MJ/kmol"
+   },
+   {
+    "vi": "1208 MJ/kmol",
+    "en": "1208 MJ/kmol"
+   },
+   {
+    "vi": "1402 MJ/kmol",
+    "en": "1402 MJ/kmol"
+   },
+   {
+    "vi": "1514 MJ/kmol",
+    "en": "1514 MJ/kmol"
+   },
+   {
+    "vi": "1551 MJ/kmol",
+    "en": "1551 MJ/kmol"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "m = 8 nghĩa là 8 nguyên tử H ⇒ 4 kmol H₂O/kmol nhiên liệu; h_fg của nước ở 25 °C = 44.000 kJ/kmol (2441,7 kJ/kg × 18,015); LHV = HHV − 4 × 44.000 = 1560 − 176 = 1.384 MJ/kmol. 1208 trừ 8 H₂O; 1514 và 1551 trừ 1 và 0,2 kmol H₂O.",
+   "en": "m = 8 means 8 H atoms ⇒ 4 kmol H₂O per kmol of fuel; h_fg of water at 25 °C = 44,000 kJ/kmol (2441.7 kJ/kg × 18.015); LHV = HHV − 4 × 44,000 = 1560 − 176 = 1,384 MJ/kmol. 1208 subtracts 8 H₂O; 1514 and 1551 subtract about 1 and 0.2 kmol of H₂O."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–124 (FE)",
+   "en": "Cengel Ch.15 Problem 15–124 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–125 (FE). Axetilen (C₂H₂) cháy hoàn toàn trong quá trình dòng ổn định. Nhiên liệu và không khí vào ở 25 °C, sản phẩm ra ở 1500 K. Nếu entanpi của sản phẩm so với trạng thái chuẩn là −404 MJ/kmol nhiên liệu, nhiệt truyền ra khỏi buồng đốt là:",
+   "en": "Cengel Ch.15 Problem 15–125 (FE). Acetylene gas (C₂H₂) is burned completely during a steady-flow combustion process. The fuel and the air enter at 25 °C and the products leave at 1500 K. If the enthalpy of the products relative to the standard reference state is −404 MJ/kmol of fuel, the heat transfer from the chamber is:"
+  },
+  "opts": [
+   {
+    "vi": "177 MJ/kmol",
+    "en": "177 MJ/kmol"
+   },
+   {
+    "vi": "227 MJ/kmol",
+    "en": "227 MJ/kmol"
+   },
+   {
+    "vi": "404 MJ/kmol",
+    "en": "404 MJ/kmol"
+   },
+   {
+    "vi": "631 MJ/kmol",
+    "en": "631 MJ/kmol"
+   },
+   {
+    "vi": "751 MJ/kmol",
+    "en": "751 MJ/kmol"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Q_ra = H_react − H_prod; chất phản ứng ở trạng thái chuẩn nên H_react = h̄_f°(C₂H₂) = +226,73 MJ/kmol (A-26: 226.730 kJ/kmol); H_prod = −404 MJ/kmol ⇒ Q_ra = 226,73 − (−404) = 630,7 MJ/kmol ≈ 631. 227 quên H_prod; 404 quên entanpi hình thành dương của C₂H₂; 177 và 751 sai dấu của một số hạng.",
+   "en": "Q_out = H_react − H_prod; the reactants are at the standard state so H_react = h̄_f°(C₂H₂) = +226.73 MJ/kmol (A-26: 226,730 kJ/kmol); H_prod = −404 MJ/kmol ⇒ Q_out = 226.73 − (−404) = 630.7 MJ/kmol ≈ 631. 227 forgets H_prod; 404 forgets the positive formation enthalpy of C₂H₂; 177 and 751 have a wrong sign on one term."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Định luật 1 cho cháy",
+   "en": "First law for combustion"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–125 (FE)",
+   "en": "Cengel Ch.15 Problem 15–125 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel Ch.15 Bài 15–126 (FE). Benzen khí (C₆H₆) cháy với 90 % không khí lý thuyết trong quá trình dòng ổn định. Phần mol của CO trong sản phẩm là:",
+   "en": "Cengel Ch.15 Problem 15–126 (FE). Benzene gas (C₆H₆) is burned with 90 percent theoretical air during a steady-flow combustion process. The mole fraction of the CO in the products is:"
+  },
+  "opts": [
+   {
+    "vi": "1,6 %",
+    "en": "1.6 %"
+   },
+   {
+    "vi": "4,4 %",
+    "en": "4.4 %"
+   },
+   {
+    "vi": "2,5 %",
+    "en": "2.5 %"
+   },
+   {
+    "vi": "10 %",
+    "en": "10 %"
+   },
+   {
+    "vi": "16,7 %",
+    "en": "16.7 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "C₆H₆ + 6,75 (O₂ + 3,76 N₂) (0,9 × 7,5 = 6,75): giả sử hiđrô cháy hết (3 H₂O) và C → CO₂ + CO: C: x + y = 6; O: 13,5 = 2x + y + 3 ⇒ x = 4,5; y = 1,5. N₂ = 25,38; tổng sản phẩm = 4,5 + 1,5 + 3 + 25,38 = 34,38 kmol ⇒ y_CO = 1,5/34,38 = 4,36 % ≈ 4,4 %. Giả thiết \"H cháy hết\" theo slide tr.20 (O có ái lực với H lớn hơn với C).",
+   "en": "C₆H₆ + 6.75 (O₂ + 3.76 N₂) (0.9 × 7.5 = 6.75): assume the hydrogen burns completely (3 H₂O) and C → CO₂ + CO: C: x + y = 6; O: 13.5 = 2x + y + 3 ⇒ x = 4.5; y = 1.5. N₂ = 25.38; total products = 4.5 + 1.5 + 3 + 25.38 = 34.38 kmol ⇒ y_CO = 1.5/34.38 = 4.36 % ≈ 4.4 %. The assumption \"H burns completely\" follows slide p.20 (oxygen has a greater tendency to combine with hydrogen than with carbon)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Cengel Ch.15 Bài 15–126 (FE)",
+   "en": "Cengel Ch.15 Problem 15–126 (FE exam)"
+  },
+  "origin": "goc",
+  "fixed_order": false,
+  "check": "script (không có đáp án in)"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Trong phản ứng cháy, số nguyên tử của mỗi nguyên tố được bảo toàn nhưng tổng số mol nói chung KHÔNG bảo toàn.",
+   "en": "In a combustion reaction the number of atoms of each element is conserved but the total number of moles in general is NOT."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng. Khối lượng và số nguyên tử của từng nguyên tố được bảo toàn (tr.11); tổng số mol thì không. Ví dụ C + O₂ → CO₂ có 2 kmol chất phản ứng và 1 kmol sản phẩm; C₈H₁₈ + 20(O₂ + 3,76 N₂) có 96,2 kmol vào và 99,7 kmol ra.",
+   "en": "True. The mass and the number of atoms of each element are conserved (p.11); the total number of moles is not. For example C + O₂ → CO₂ has 2 kmol of reactants and 1 kmol of product; C₈H₁₈ + 20(O₂ + 3.76 N₂) has 96.2 kmol in and 99.7 kmol out."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.11: bảo toàn khối lượng, không bảo toàn số mol",
+   "en": "Added – from slide Ch.4 p.11: mass is conserved, moles are not"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.11 + Ví dụ 15–1"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.5–6: không khí khô được xấp xỉ gồm 21 % O₂ và 79 % N₂ theo số mol. Số kmol N₂ đi kèm mỗi kmol O₂ là:",
+   "en": "Slide Ch.4 p.5–6: dry air is approximated as 21 percent O₂ and 79 percent N₂ by mole. The kmol of N₂ that accompany each kmol of O₂ is:"
+  },
+  "opts": [
+   {
+    "vi": "3,76",
+    "en": "3.76"
+   },
+   {
+    "vi": "0,27",
+    "en": "0.27"
+   },
+   {
+    "vi": "4,76",
+    "en": "4.76"
+   },
+   {
+    "vi": "3,29",
+    "en": "3.29"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "0,79/0,21 = 3,76 kmol N₂ trên mỗi kmol O₂ (tr.6). 4,76 là số kmol KHÔNG KHÍ trên mỗi kmol O₂ (1 + 3,76); 0,27 = 0,21/0,79 đảo ngược; 3,29 = 79/24 là phép chia sai.",
+   "en": "0.79/0.21 = 3.76 kmol of N₂ per kmol of O₂ (p.6). 4.76 is the kmol of AIR per kmol of O₂ (1 + 3.76); 0.27 = 0.21/0.79 is inverted; 3.29 = 79/24 is a wrong division."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiên liệu và phản ứng cháy",
+   "en": "Fuels and combustion reaction"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.6: 1 kmol O₂ đi kèm 3,76 kmol N₂",
+   "en": "Added – from slide Ch.4 p.6: 1 kmol O₂ comes with 3.76 kmol N₂"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.6"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.7: vì sao N₂ trong không khí, dù là khí trơ, vẫn ảnh hưởng mạnh tới kết quả của quá trình cháy?",
+   "en": "Slide Ch.4 p.7: why does the N₂ of the air, although inert, still affect the outcome of combustion strongly?"
+  },
+  "opts": [
+   {
+    "vi": "Vì nó vào buồng đốt với lượng lớn ở nhiệt độ thấp và ra ở nhiệt độ cao hơn nhiều, hấp thụ một phần lớn năng lượng hóa học giải phóng.",
+    "en": "Because it enters the chamber in large quantity at low temperature and leaves at a much higher temperature, absorbing a large share of the chemical energy released."
+   },
+   {
+    "vi": "Vì nó phản ứng với nhiên liệu tạo ra lượng lớn NO nên làm tăng nhiệt trị.",
+    "en": "Because it reacts with the fuel to make large amounts of NO, which raises the heating value."
+   },
+   {
+    "vi": "Vì nó làm tăng nồng độ O₂ ở vùng cháy.",
+    "en": "Because it raises the O₂ concentration in the flame zone."
+   },
+   {
+    "vi": "Vì nó thay đổi hệ số hợp thức của cacbon.",
+    "en": "Because it changes the stoichiometric coefficient of carbon."
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide tr.7: N₂ vào lượng lớn ở nhiệt độ thấp, ra ở nhiệt độ cao hơn rất nhiều nên hấp thụ phần lớn năng lượng hóa học giải phóng (nhiệt độ ngọn lửa thấp hơn khi có N₂). Chỉ một lượng rất nhỏ N₂ tạo oxit nitơ; nó không làm tăng nhiệt trị và không đổi hệ số hợp thức.",
+   "en": "Slide p.7: N₂ enters in large quantity at low temperature and leaves at a much higher one, so it absorbs a large share of the chemical energy released (the flame is cooler with N₂ present). Only a very small amount forms nitric oxides; it neither raises the heating value nor changes the stoichiometric coefficients."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiên liệu và phản ứng cháy",
+   "en": "Fuels and combustion reaction"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.7: N₂ hấp thụ năng lượng",
+   "en": "Added – from slide Ch.4 p.7: N₂ absorbs energy"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.7"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.8: vì sao cần dự đoán nhiệt độ điểm sương của sản phẩm cháy?",
+   "en": "Slide Ch.4 p.8: why is it important to predict the dew-point temperature of the combustion products?"
+  },
+  "opts": [
+   {
+    "vi": "Vì các giọt nước ngưng thường kết hợp với SO₂ trong khí cháy, tạo axit sunfuric ăn mòn mạnh.",
+    "en": "Because the condensed droplets often combine with SO₂ in the combustion gases to form highly corrosive sulfuric acid."
+   },
+   {
+    "vi": "Vì nước ngưng làm tăng nhiệt độ ngọn lửa.",
+    "en": "Because condensed water raises the flame temperature."
+   },
+   {
+    "vi": "Vì dưới điểm sương nitơ bắt đầu phản ứng với oxy.",
+    "en": "Because below the dew point nitrogen starts to react with oxygen."
+   },
+   {
+    "vi": "Vì điểm sương quyết định số mol không khí lý thuyết.",
+    "en": "Because the dew point determines the moles of theoretical air."
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide tr.8: dưới điểm sương hơi nước ngưng, giọt nước hòa với SO₂ (nếu có) thành axit sunfuric rất ăn mòn nên phải biết điểm sương để giữ ống khói và bộ trao đổi nhiệt trên nhiệt độ đó. Ngưng tụ không làm tăng nhiệt độ ngọn lửa và không liên quan đến N₂ hay a_th.",
+   "en": "Slide p.8: below the dew point water vapor condenses and the droplets combine with any SO₂ to form highly corrosive sulfuric acid, so the stack and heat exchangers must be kept above it. Condensation does not raise the flame temperature and has nothing to do with N₂ or a_th."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.8: điểm sương và ăn mòn",
+   "en": "Added – from slide Ch.4 p.8: dew point and corrosion"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.8"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.10 nêu nhiệt độ bốc cháy tối thiểu trong không khí: xăng 260 °C, cacbon 400 °C, hiđrô 580 °C, CO 610 °C, metan 630 °C. Chất nào cần nhiệt độ bốc cháy tối thiểu CAO NHẤT?",
+   "en": "Slide Ch.4 p.10 gives the minimum ignition temperatures in air: gasoline 260 °C, carbon 400 °C, hydrogen 580 °C, CO 610 °C, methane 630 °C. Which substance needs the HIGHEST minimum ignition temperature?"
+  },
+  "opts": [
+   {
+    "vi": "Metan (630 °C)",
+    "en": "Methane (630 °C)"
+   },
+   {
+    "vi": "Cacbon monoxit CO (610 °C)",
+    "en": "Carbon monoxide (610 °C)"
+   },
+   {
+    "vi": "Hiđrô (580 °C)",
+    "en": "Hydrogen (580 °C)"
+   },
+   {
+    "vi": "Xăng (260 °C)",
+    "en": "Gasoline (260 °C)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Theo slide tr.10 metan có nhiệt độ bốc cháy tối thiểu cao nhất (630 °C), rồi CO (610), hiđrô (580), cacbon (400) và xăng thấp nhất (260). Nhiên liệu phải được đưa trên nhiệt độ này mới cháy; tiếp xúc với oxy thôi chưa đủ.",
+   "en": "By slide p.10 methane has the highest minimum ignition temperature (630 °C), then CO (610), hydrogen (580), carbon (400) and gasoline the lowest (260). The fuel must be brought above this temperature to burn; contact with oxygen alone is not enough."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiên liệu và phản ứng cháy",
+   "en": "Fuels and combustion reaction"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.10: nhiệt độ bốc cháy",
+   "en": "Added – from slide Ch.4 p.10: ignition temperatures"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.10"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.10: ngoài việc vượt nhiệt độ bốc cháy, hỗn hợp nhiên liệu–không khí còn phải nằm trong một khoảng nồng độ thích hợp mới bắt đầu cháy (khí thiên nhiên: khoảng 5–15 % trong không khí).",
+   "en": "Slide Ch.4 p.10: besides exceeding the ignition temperature the fuel–air mixture must also lie in a suitable concentration range to begin burning (natural gas: about 5–15 percent in air)."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng. Slide tr.10: khí thiên nhiên không cháy trong không khí nếu nồng độ nhỏ hơn 5 % hoặc lớn hơn khoảng 15 %, dù đã trên nhiệt độ bốc cháy.",
+   "en": "True. Slide p.10: natural gas does not burn in air at concentrations below 5 percent or above about 15 percent, even above the ignition temperature."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiên liệu và phản ứng cháy",
+   "en": "Fuels and combustion reaction"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.10: giới hạn cháy 5–15 %",
+   "en": "Added – from slide Ch.4 p.10: flammability range 5–15 %"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.10"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.16: trong phương trình C₈H₁₈ + 20(O₂ + 3,76 N₂) → …, hệ số 20 là số mol KHÔNG KHÍ.",
+   "en": "Slide Ch.4 p.16: in the equation C₈H₁₈ + 20(O₂ + 3.76 N₂) → …, the coefficient 20 is the number of moles of AIR."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai. Hệ số 20 là số mol O₂; số mol không khí = 20 + 20 × 3,76 = 95,2 kmol (= 20 × 4,76). Nhầm hai số này làm sai AF.",
+   "en": "False. The coefficient 20 is the number of moles of O₂; the moles of air = 20 + 20 × 3.76 = 95.2 kmol (= 20 × 4.76). Confusing the two gives a wrong AF."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.16: hệ số 20 là mol O₂",
+   "en": "Added – from slide Ch.4 p.16: the coefficient 20 is moles of O₂"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.16"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.19: nguyên nhân nào dưới đây KHÔNG nằm trong các nguyên nhân gây cháy không hoàn toàn mà slide nêu?",
+   "en": "Slide Ch.4 p.19: which of the following is NOT among the causes of incomplete combustion named on the slide?"
+  },
+  "opts": [
+   {
+    "vi": "Có quá nhiều N₂ trong không khí cấp vào.",
+    "en": "Too much N₂ in the air supplied."
+   },
+   {
+    "vi": "Thiếu oxy.",
+    "en": "Insufficient oxygen."
+   },
+   {
+    "vi": "Trộn không đủ trong thời gian nhiên liệu và oxy tiếp xúc ngắn.",
+    "en": "Insufficient mixing during the short time the fuel and the oxygen are in contact."
+   },
+   {
+    "vi": "Phân ly ở nhiệt độ cao.",
+    "en": "Dissociation at high temperature."
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide tr.19 nêu: thiếu oxy; có oxy nhiều hơn mức cần (nhưng trộn không đủ); trộn không đủ trong thời gian tiếp xúc ngắn; phân ly (nhất là ở nhiệt độ cao). N₂ dư không phải nguyên nhân gây cháy không hoàn toàn (nó chỉ hạ nhiệt độ). Lưu ý: nguyên nhân thật của trường hợp có dư oxy là trộn không đủ (Cengel §15-2).",
+   "en": "Slide p.19 lists: insufficient oxygen; more oxygen than needed (but insufficient mixing); insufficient mixing in the short contact time; dissociation (especially at high temperature). Extra N₂ is not a cause of incomplete combustion (it only lowers the temperature). Note: the real cause when oxygen is in excess is insufficient mixing (Cengel §15-2)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.19: nguyên nhân cháy không hoàn toàn",
+   "en": "Added – from slide Ch.4 p.19: causes of incomplete combustion"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.19 + Cengel §15-2"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.20: khi thiếu oxy, hiđrô trong nhiên liệu thường vẫn cháy hết thành H₂O, còn một phần cacbon thành CO hoặc muội than.",
+   "en": "Slide Ch.4 p.20: when oxygen is short, the hydrogen of the fuel normally still burns completely to H₂O, while part of the carbon ends up as CO or soot."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng (tr.20): oxy có ái lực với hiđrô lớn hơn với cacbon, nên H đi hết vào H₂O, còn C có thể thành CO hoặc muội. Vì vậy trong bài cháy thiếu không khí ta coi toàn bộ H thành H₂O rồi chia O còn lại cho CO₂ và CO.",
+   "en": "True (p.20): oxygen has a greater tendency to combine with hydrogen than with carbon, so all H goes to H₂O while C may become CO or soot. That is why in air-deficient problems we put all H into H₂O and share the remaining O between CO₂ and CO."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.20: H cháy trước C",
+   "en": "Added – from slide Ch.4 p.20: hydrogen burns before carbon"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.20"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.23–24: đúng lượng không khí lý thuyết là 100 % không khí lý thuyết. Lượng không khí 150 % lý thuyết và 90 % lý thuyết tương ứng là:",
+   "en": "Slide Ch.4 p.23–24: the stoichiometric amount of air is 100 percent theoretical air. 150 percent and 90 percent theoretical air correspond to:"
+  },
+  "opts": [
+   {
+    "vi": "50 % không khí thừa; 10 % thiếu không khí",
+    "en": "50 % excess air; 10 % deficiency of air"
+   },
+   {
+    "vi": "150 % không khí thừa; 90 % thiếu không khí",
+    "en": "150 % excess air; 90 % deficiency of air"
+   },
+   {
+    "vi": "50 % thiếu không khí; 10 % không khí thừa",
+    "en": "50 % deficiency of air; 10 % excess air"
+   },
+   {
+    "vi": "15 % không khí thừa; 9 % thiếu không khí",
+    "en": "15 % excess air; 9 % deficiency of air"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "% thừa = % lý thuyết − 100 %: 150 % lý thuyết = 50 % thừa; % thiếu = 100 % − % lý thuyết: 90 % lý thuyết = 10 % thiếu (tr.23–24). 200 % thừa = 300 % lý thuyết.",
+   "en": "Percent excess = percent theoretical − 100 %: 150 % theoretical = 50 % excess; percent deficiency = 100 % − percent theoretical: 90 % theoretical = 10 % deficiency (p.23–24). 200 % excess = 300 % theoretical."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.23–24: % thừa, % thiếu, % lý thuyết",
+   "en": "Added – from slide Ch.4 p.23–24: percent excess, deficiency, theoretical"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.23-24"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.24: hệ số tương đương (equivalence ratio) φ là tỉ số giữa tỉ lệ nhiên liệu–không khí thực tế và tỉ lệ nhiên liệu–không khí hợp thức. Một hỗn hợp cháy với 125 % không khí lý thuyết có φ bằng:",
+   "en": "Slide Ch.4 p.24: the equivalence ratio φ is the ratio of the actual fuel–air ratio to the stoichiometric fuel–air ratio. A mixture burned with 125 percent theoretical air has φ equal to:"
+  },
+  "opts": [
+   {
+    "vi": "0,80 (lean)",
+    "en": "0.80 (lean)"
+   },
+   {
+    "vi": "1,25 (rich)",
+    "en": "1.25 (rich)"
+   },
+   {
+    "vi": "0,25 (lean)",
+    "en": "0.25 (lean)"
+   },
+   {
+    "vi": "1,00 (stoichiometric)",
+    "en": "1.00 (stoichiometric)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "φ = (F/A)thực/(F/A)lt = (A/F)lt/(A/F)thực = 1/1,25 = 0,80 < 1: hỗn hợp nghèo (thừa không khí). φ > 1 là giàu (thiếu không khí). 1,25 là nghịch đảo (nhầm φ với % lý thuyết).",
+   "en": "φ = (F/A)act/(F/A)st = (A/F)st/(A/F)act = 1/1.25 = 0.80 < 1: a lean mixture (air in excess). φ > 1 is rich (air deficiency). 1.25 is the inverse (φ confused with the percent theoretical air)."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.24: hệ số tương đương",
+   "en": "Added – from slide Ch.4 p.24: equivalence ratio"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.24 + script"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.26: máy phân tích khí Orsat cho kết quả theo cơ sở nào, và vì sao?",
+   "en": "Slide Ch.4 p.26: on which basis does the Orsat gas analyzer report its result, and why?"
+  },
+  "opts": [
+   {
+    "vi": "Cơ sở khô: mẫu khí được thu trên nước và bão hòa hơi nước nên hơi nước không được tính vào kết quả; lượng H₂O sinh ra suy ra từ cân bằng phương trình.",
+    "en": "Dry basis: the sample is collected over water and stays saturated with vapor, so the water vapor is not counted in the result; the H₂O formed is found from the balanced equation."
+   },
+   {
+    "vi": "Cơ sở ướt: mẫu giữ nguyên hơi nước ở nhiệt độ buồng đốt.",
+    "en": "Wet basis: the sample keeps its water vapor at the combustion chamber temperature."
+   },
+   {
+    "vi": "Cơ sở khối lượng: máy đo khối lượng từng khí.",
+    "en": "Mass basis: the device weighs each gas."
+   },
+   {
+    "vi": "Cơ sở khô: vì máy hấp thụ H₂O đầu tiên rồi mới đo CO₂.",
+    "en": "Dry basis: because the device first absorbs the H₂O and only then measures the CO₂."
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Orsat báo thành phần thể tích trên cơ sở khô (tr.26; Cengel: mẫu thu trên nước, bão hòa hơi nước nên áp suất hơi không đổi và bị bỏ qua). Phần thể tích bằng phần mol với khí lý tưởng; H₂O sinh ra suy ra từ cân bằng (hệ số b trong Ví dụ 15–4). Không đo khối lượng.",
+   "en": "Orsat reports volume fractions on a dry basis (p.26; Cengel: the sample is collected over water and stays saturated so the vapor pressure is constant and ignored). Volume fraction equals mole fraction for ideal gases; the H₂O formed is found from the balance (coefficient b of Example 15–4). It does not measure mass."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Phân tích cháy ngược",
+   "en": "Reverse combustion analysis"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.26: máy phân tích Orsat",
+   "en": "Added – from slide Ch.4 p.26: Orsat analyzer"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.26 + Cengel §15-2"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.31: nhiệt độ điểm sương của sản phẩm cháy (khí lý tưởng) bằng:",
+   "en": "Slide Ch.4 p.31: the dew-point temperature of the combustion products (ideal gases) equals:"
+  },
+  "opts": [
+   {
+    "vi": "nhiệt độ bão hòa của nước ứng với áp suất riêng phần của hơi nước, P_v = (N_v/N_prod) P_prod",
+    "en": "the saturation temperature of water at the partial pressure of the water vapor, P_v = (N_v/N_prod) P_prod"
+   },
+   {
+    "vi": "nhiệt độ bão hòa của nước ứng với áp suất tổng của sản phẩm",
+    "en": "the saturation temperature of water at the total pressure of the products"
+   },
+   {
+    "vi": "nhiệt độ mà tại đó N₂ ngưng tụ",
+    "en": "the temperature at which N₂ condenses"
+   },
+   {
+    "vi": "nhiệt độ ngọn lửa trừ 100 °C",
+    "en": "the flame temperature minus 100 °C"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Điểm sương = T_sat(P_v) với P_v = y_v P_prod = (N_v/N_prod) P_prod (tr.31–32). Dùng áp suất tổng cho điểm sương gần 100 °C ở 100 kPa, sai.",
+   "en": "Dew point = T_sat(P_v) with P_v = y_v P_prod = (N_v/N_prod) P_prod (p.31–32). Using the total pressure gives about 100 °C at 100 kPa, which is wrong."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Điểm sương sản phẩm cháy",
+   "en": "Dew point of products"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.31–32: định nghĩa điểm sương",
+   "en": "Added – from slide Ch.4 p.31–32: definition of dew point"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.31-32"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.43: trạng thái chuẩn dùng làm mốc chung cho các chất trong phản ứng hóa học là:",
+   "en": "Slide Ch.4 p.43: the standard reference state used as a common reference for all substances in chemical reactions is:"
+  },
+  "opts": [
+   {
+    "vi": "25 °C (77 °F) và 1 atm",
+    "en": "25 °C (77 °F) and 1 atm"
+   },
+   {
+    "vi": "0 °C và 1 atm",
+    "en": "0 °C and 1 atm"
+   },
+   {
+    "vi": "25 °C và 1 MPa",
+    "en": "25 °C and 1 MPa"
+   },
+   {
+    "vi": "0 K và 1 atm",
+    "en": "0 K and 1 atm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trạng thái chuẩn (standard reference state) là 25 °C và 1 atm, ký hiệu bằng dấu ° (h°, u°) (tr.43). Bảng A-18…A-23 vì vậy cho h̄(298 K) và ta dùng hiệu h̄(T) − h̄(298 K) (tr.44).",
+   "en": "The standard reference state is 25 °C and 1 atm, marked by the superscript ° (h°, u°) (p.43). Tables A-18…A-23 therefore give h̄(298 K) and we use the difference h̄(T) − h̄(298 K) (p.44)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.43: trạng thái chuẩn",
+   "en": "Added – from slide Ch.4 p.43: standard reference state"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.43"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.49: chất nào sau đây có entanpi hình thành h̄_f° KHÁC không ở trạng thái chuẩn (bảng A-26)?",
+   "en": "Slide Ch.4 p.49: which of the following has a NON-zero enthalpy of formation h̄_f° at the standard state (Table A-26)?"
+  },
+  "opts": [
+   {
+    "vi": "CO₂",
+    "en": "CO₂"
+   },
+   {
+    "vi": "O₂",
+    "en": "O₂"
+   },
+   {
+    "vi": "N₂",
+    "en": "N₂"
+   },
+   {
+    "vi": "H₂",
+    "en": "H₂"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy ước (tr.49): mọi nguyên tố bền (O₂, N₂, H₂, C graphit) có h̄_f° = 0; CO₂ là hợp chất nên h̄_f° = −393.520 kJ/kmol (A-26).",
+   "en": "Convention (p.49): every stable element (O₂, N₂, H₂, C graphite) has h̄_f° = 0; CO₂ is a compound so h̄_f° = −393,520 kJ/kmol (A-26)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.49: h_f = 0 cho nguyên tố bền",
+   "en": "Added – from slide Ch.4 p.49: h_f = 0 for stable elements"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.49 + A-26"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.50: entanpi hình thành h̄_f° của một hợp chất có giá trị ÂM nghĩa là quá trình hình thành hợp chất đó từ các nguyên tố bền tỏa nhiệt.",
+   "en": "Slide Ch.4 p.50: a NEGATIVE enthalpy of formation h̄_f° of a compound means that its formation from the stable elements releases heat."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng (tr.50): giá trị âm nghĩa là nhiệt được giải phóng khi hình thành hợp chất từ các nguyên tố bền; giá trị dương (như C₂H₂: +226.730 kJ/kmol) nghĩa là hấp thụ nhiệt.",
+   "en": "True (p.50): a negative value means heat is released when the compound forms from its stable elements; a positive value (such as C₂H₂: +226,730 kJ/kmol) means heat is absorbed."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.50: dấu của h_f",
+   "en": "Added – from slide Ch.4 p.50: sign of h_f"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.50 + A-26"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.51–52: nhiệt trị cao HHV và nhiệt trị thấp LHV khác nhau ở chỗ:",
+   "en": "Slide Ch.4 p.51–52: the higher heating value HHV and the lower heating value LHV differ in that:"
+  },
+  "opts": [
+   {
+    "vi": "HHV tính khi H₂O trong sản phẩm ở thể lỏng, LHV khi ở thể hơi; HHV = LHV + m·h_fg",
+    "en": "HHV is for liquid H₂O in the products, LHV for vapor; HHV = LHV + m·h_fg"
+   },
+   {
+    "vi": "HHV tính khi H₂O ở thể hơi, LHV khi ở thể lỏng",
+    "en": "HHV is for H₂O vapor, LHV for liquid"
+   },
+   {
+    "vi": "HHV tính ở áp suất cao hơn, LHV ở áp suất thấp hơn",
+    "en": "HHV is taken at a higher pressure, LHV at a lower one"
+   },
+   {
+    "vi": "HHV gồm cả năng lượng hạt nhân của nhiên liệu",
+    "en": "HHV also includes the nuclear energy of the fuel"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhiệt trị = |h_C|; khi H₂O sản phẩm ở thể lỏng ta có HHV, khi ở thể hơi ta có LHV; HHV = LHV + (m h_fg)_H₂O, m là khối lượng H₂O trong sản phẩm trên 1 kg nhiên liệu (tr.51–52). Với nhiên liệu không có H (C, CO) hai giá trị bằng nhau.",
+   "en": "Heating value = |h_C|; with liquid H₂O in the products it is the HHV, with vapor the LHV; HHV = LHV + (m h_fg)_H₂O, with m the mass of H₂O in the products per kg of fuel (p.51–52). For fuels without hydrogen (C, CO) the two are equal."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.51–52: HHV và LHV",
+   "en": "Added – from slide Ch.4 p.51–52: HHV and LHV"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.51-52"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.55: với than, khí thiên nhiên hoặc dầu đốt có thành phần thay đổi theo nguồn, entanpi cháy thường được xác định bằng thực nghiệm (bom nhiệt lượng ở thể tích không đổi hoặc thiết bị dòng ổn định) thay vì tính từ entanpi hình thành.",
+   "en": "Slide Ch.4 p.55: for coal, natural gas or fuel oil whose composition varies with the source, the enthalpy of combustion is usually determined experimentally (bomb calorimeter at constant volume or a steady-flow device) rather than computed from formation enthalpies."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng (tr.55): khi biết chính xác thành phần thì tính từ h̄_f° (Ví dụ 15–5); với nhiên liệu thành phần biến đổi, đo trực tiếp thực tế hơn.",
+   "en": "True (p.55): when the exact composition is known it is computed from h̄_f° (Example 15–5); for fuels of variable composition direct measurement is more practical."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.55: đo nhiệt trị bằng thực nghiệm",
+   "en": "Added – from slide Ch.4 p.55: measuring the heating value"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.55"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.3: khác với hệ không phản ứng, hệ phản ứng khi lập cân bằng năng lượng còn phải kể thêm:",
+   "en": "Slide Ch.4 p.3: unlike a non-reacting system, a reacting system also has to include in its energy balance:"
+  },
+  "opts": [
+   {
+    "vi": "nội năng hóa học gắn với việc phá và hình thành liên kết giữa các nguyên tử",
+    "en": "the chemical internal energy associated with the breaking and forming of bonds between atoms"
+   },
+   {
+    "vi": "năng lượng hạt nhân của các nguyên tử",
+    "en": "the nuclear energy of the atoms"
+   },
+   {
+    "vi": "động năng của vỏ buồng đốt",
+    "en": "the kinetic energy of the combustor casing"
+   },
+   {
+    "vi": "chỉ nội năng ẩn của đổi pha",
+    "en": "only the latent internal energy of phase change"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide tr.3: hệ không phản ứng chỉ cần nội năng hiển nhiệt và nội năng ẩn; hệ phản ứng cần thêm nội năng hóa học (phá và hình thành liên kết). Không xét năng lượng hạt nhân (tr.42).",
+   "en": "Slide p.3: a non-reacting system only needs sensible and latent internal energy; a reacting system also needs chemical internal energy (bond breaking and forming). Nuclear energy is not considered (p.42)."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Entanpi cháy và nhiệt trị",
+   "en": "Enthalpy of combustion, HHV/LHV"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.3: nội năng hóa học",
+   "en": "Added – from slide Ch.4 p.3: chemical internal energy"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.3 + p.42"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cengel §15-1: để đơn giản, xăng thường được coi là nhiên liệu nào, và dầu diesel được coi là nhiên liệu nào?",
+   "en": "Cengel §15-1: for simplicity, gasoline is usually treated as which fuel, and diesel fuel as which?"
+  },
+  "opts": [
+   {
+    "vi": "Xăng = octan C₈H₁₈; diesel = dodecan C₁₂H₂₆",
+    "en": "Gasoline = octane C₈H₁₈; diesel = dodecane C₁₂H₂₆"
+   },
+   {
+    "vi": "Xăng = metan CH₄; diesel = octan C₈H₁₈",
+    "en": "Gasoline = methane CH₄; diesel = octane C₈H₁₈"
+   },
+   {
+    "vi": "Xăng = dodecan C₁₂H₂₆; diesel = octan C₈H₁₈",
+    "en": "Gasoline = dodecane C₁₂H₂₆; diesel = octane C₈H₁₈"
+   },
+   {
+    "vi": "Xăng = metanol CH₃OH; diesel = propan C₃H₈",
+    "en": "Gasoline = methanol CH₃OH; diesel = propane C₃H₈"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cengel §15-1: nhiên liệu lỏng là hỗn hợp nhiều hiđrôcacbon nhưng thường coi là một chất: xăng ≈ octan C₈H₁₈, diesel ≈ dodecan C₁₂H₂₆ (khí thiên nhiên ≈ metan CH₄). Slide tr.4 chỉ nêu CₙHₘ và chưng cất dầu thô thành xăng, dầu hỏa, diesel, dầu mazut.",
+   "en": "Cengel §15-1: liquid fuels are mixtures of many hydrocarbons but are treated as one: gasoline ≈ octane C₈H₁₈, diesel ≈ dodecane C₁₂H₂₆ (natural gas ≈ methane CH₄). Slide p.4 only gives CₙHₘ and the distillation of crude oil into gasoline, kerosene, diesel and fuel oil."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiên liệu và phản ứng cháy",
+   "en": "Fuels and combustion reaction"
+  },
+  "src": {
+   "vi": "Bổ sung từ sách – Cengel §15-1 (slide tr.4 chỉ nêu CₙHₘ)",
+   "en": "Added from the book – Cengel §15-1 (slide p.4 only gives CₙHₘ)"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "Cengel p.752"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.4: nhiên liệu hiđrôcacbon có công thức chung CₙHₘ và tồn tại ở cả ba pha: rắn (than), lỏng (xăng) và khí (khí thiên nhiên).",
+   "en": "Slide Ch.4 p.4: hydrocarbon fuels have the general formula CₙHₘ and exist in all phases: solid (coal), liquid (gasoline) and gas (natural gas)."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng. Slide tr.4: nhiên liệu hiđrôcacbon tồn tại ở mọi pha, ví dụ than, xăng và khí thiên nhiên.",
+   "en": "True. Slide p.4: hydrocarbon fuels exist in all phases, for example coal, gasoline and natural gas."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Nhiên liệu và phản ứng cháy",
+   "en": "Fuels and combustion reaction"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.4: nhiên liệu hiđrôcacbon",
+   "en": "Added – from slide Ch.4 p.4: hydrocarbon fuels"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.4"
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Slide Ch.4 tr.21–22: sản phẩm của cháy lý thuyết (stoichiometric) có thể chứa O₂ tự do và CO.",
+   "en": "Slide Ch.4 p.21–22: the products of theoretical (stoichiometric) combustion may contain free O₂ and CO."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai. Cháy lý thuyết (hoàn toàn với đúng lượng không khí lý thuyết) không còn nhiên liệu chưa cháy, C, H₂, CO, OH hay O₂ tự do; chỉ có CO₂, H₂O (và N₂). Ví dụ CH₄ + 2(O₂ + 3,76 N₂) → CO₂ + 2 H₂O + 7,52 N₂.",
+   "en": "False. Theoretical combustion (complete with exactly the theoretical air) leaves no unburned fuel, C, H₂, CO, OH or free O₂; only CO₂, H₂O (and N₂). Example: CH₄ + 2(O₂ + 3.76 N₂) → CO₂ + 2 H₂O + 7.52 N₂."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Không khí lý thuyết và thừa",
+   "en": "Theoretical and excess air"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.21–22: cháy lý thuyết",
+   "en": "Added – from slide Ch.4 p.21–22: theoretical combustion"
+  },
+  "origin": "bo_sung",
+  "fixed_order": true,
+  "check": "slide p.22"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Slide Ch.4 tr.22: cháy lý thuyết của metan: CH₄ + 2(O₂ + 3,76 N₂) → CO₂ + 2 H₂O + 7,52 N₂. Tổng số kmol sản phẩm trên 1 kmol CH₄ là:",
+   "en": "Slide Ch.4 p.22: theoretical combustion of methane: CH₄ + 2(O₂ + 3.76 N₂) → CO₂ + 2 H₂O + 7.52 N₂. The total kmol of products per kmol of CH₄ is:"
+  },
+  "opts": [
+   {
+    "vi": "10,52",
+    "en": "10.52"
+   },
+   {
+    "vi": "3,00",
+    "en": "3.00"
+   },
+   {
+    "vi": "11,52",
+    "en": "11.52"
+   },
+   {
+    "vi": "9,52",
+    "en": "9.52"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1 + 2 + 7,52 = 10,52 kmol (trong khi chất phản ứng 1 + 2 × 4,76 = 10,52 kmol: trường hợp đặc biệt số mol bằng nhau vì metan có 4 H). 3 bỏ N₂; 9,52 chỉ là số kmol không khí; 11,52 cộng thừa 1 kmol.",
+   "en": "1 + 2 + 7.52 = 10.52 kmol (the reactants are 1 + 2 × 4.76 = 10.52 kmol: a special case of equal mole numbers because methane has 4 H). 3 drops the N₂; 9.52 is only the kmol of air; 11.52 adds an extra kmol."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ lệ AF và cân bằng phản ứng",
+   "en": "AF and balancing"
+  },
+  "src": {
+   "vi": "Bổ sung – từ slide Ch.4 tr.22: tổng số mol sản phẩm",
+   "en": "Added – from slide Ch.4 p.22: total product moles"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "slide p.22 + script"
+ }
+]

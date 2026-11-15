@@ -1,0 +1,3228 @@
+{
+ "registry": [
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 24.21754385964912,
+   "tol": 1e-09,
+   "what": "Ex 15-1 / slide tr.17: 24.2"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "CO2",
+   "value": 8.0,
+   "tol": 1e-09,
+   "what": "Ex 15-1 / slide tr.15-16: 8.0"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "H2O",
+   "value": 9.0,
+   "tol": 1e-09,
+   "what": "Ex 15-1 / slide tr.15-16: 9.0"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "O2",
+   "value": 7.500000000000001,
+   "tol": 1e-09,
+   "what": "Ex 15-1 / slide tr.15-16: 7.5"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "N2",
+   "value": 75.19999999999999,
+   "tol": 1e-09,
+   "what": "Ex 15-1 / slide tr.15-16: 75.2"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 19.3256,
+   "tol": 1e-09,
+   "what": "Ex 15-2"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "exact": false
+   },
+   "out": "N2",
+   "value": 15.792,
+   "tol": 1e-09,
+   "what": "Ex 15-2"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "exact": false
+   },
+   "out": "n_tot",
+   "value": 21.492,
+   "tol": 1e-09,
+   "what": "Ex 15-2"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 100.0
+   },
+   "out": "Pv",
+   "value": 13.958682300390842,
+   "tol": 1e-09,
+   "what": "Ex 15-2 slide tr.31: 13.96 kPa"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 100.0
+   },
+   "out": "Tdp",
+   "value": 52.270569514237856,
+   "tol": {
+    "abs": 0.35
+   },
+   "what": "Ex 15-2 slide tr.32: 52.3 C (A-5 interpolation; iapws 52.49)"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      0.72
+     ],
+     [
+      "H2",
+      0.09
+     ],
+     [
+      "N2",
+      0.14
+     ],
+     [
+      "O2",
+      0.02
+     ],
+     [
+      "CO2",
+      0.03
+     ]
+    ],
+    "lam": 1.0,
+    "P": 101.325,
+    "phi": 0.8,
+    "T_air": 20.0
+   },
+   "out": "Tdp",
+   "value": 60.926995524648476,
+   "tol": {
+    "abs": 0.4
+   },
+   "what": "Ex 15-3: 60.9 C"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      0.72
+     ],
+     [
+      "H2",
+      0.09
+     ],
+     [
+      "N2",
+      0.14
+     ],
+     [
+      "O2",
+      0.02
+     ],
+     [
+      "CO2",
+      0.03
+     ]
+    ],
+    "lam": 1.0,
+    "P": 101.325
+   },
+   "out": "Tdp",
+   "value": 59.51605248221584,
+   "tol": {
+    "abs": 0.4
+   },
+   "what": "Ex 15-3 dry air: 59.5 C"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 10.02,
+    "CO": 0.88,
+    "O2": 5.62,
+    "N2": 83.48
+   },
+   "out": "AF",
+   "value": 19.73141285773481,
+   "tol": 1e-09,
+   "what": "Ex 15-4: slide 19.76 (rounded x = 1.36)"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 10.02,
+    "CO": 0.88,
+    "O2": 5.62,
+    "N2": 83.48
+   },
+   "out": "pct",
+   "value": 130.3611165332813,
+   "tol": 1e-09,
+   "what": "Ex 15-4: slide 131 %"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 10.02,
+    "CO": 0.88,
+    "O2": 5.62,
+    "N2": 83.48,
+    "P": 100.0,
+    "T": 25.0
+   },
+   "out": "Nw",
+   "value": 6.597383135017453,
+   "tol": 0.002,
+   "what": "Ex 15-4: slide 6.59 kmol"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 10.02,
+    "CO": 0.88,
+    "O2": 5.62,
+    "N2": 83.48,
+    "P": 100.0,
+    "T": 25.0
+   },
+   "out": "frac",
+   "value": 0.7330425705574948,
+   "tol": 0.002,
+   "what": "Ex 15-4: slide 73 %"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 10.02,
+    "CO": 0.88,
+    "O2": 5.62,
+    "N2": 83.48,
+    "P": 100.0,
+    "T": 25.0,
+    "slide": true
+   },
+   "out": "Nw",
+   "value": 6.5929473036304795,
+   "tol": 0.002,
+   "what": "slide tr.39 with its own numbers 82.53 and 9"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C8H18_l",
+    "nu": {
+     "CO2": 8,
+     "H2O": 9
+    },
+    "water": "l",
+    "a27": "C8H18",
+    "col": "HHV"
+   },
+   "out": "kJ/kmol",
+   "value": -5470680.0,
+   "tol": 0.0015,
+   "what": "Ex 15-5 slide tr.54: -5,471,000 (rounded)"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C8H18_l",
+    "nu": {
+     "CO2": 8,
+     "H2O": 9
+    },
+    "water": "l",
+    "a27": "C8H18",
+    "col": "HHV"
+   },
+   "out": "kJ/kg",
+   "value": -47891.37799721617,
+   "tol": 0.0015,
+   "what": "Ex 15-5: -47,891; A-27 47,890"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C8H18_l",
+    "nu": {
+     "CO2": 8,
+     "H2O": 9
+    },
+    "water": "g",
+    "a27": "C8H18",
+    "col": "LHV"
+   },
+   "out": "kJ/kg",
+   "value": -44423.93045670615,
+   "tol": 0.0015,
+   "what": "octane LHV vs A-27 44,430"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 17.255,
+   "tol": 1e-09,
+   "what": "Cengel 15–13"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.75,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 27.451136363636362,
+   "tol": 1e-09,
+   "what": "Cengel 15–14"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H2",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "air",
+   "value": 11.899999999999999,
+   "tol": 1e-09,
+   "what": "Cengel 15-15 mole basis"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.8571428571428572,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 29.908666666666665,
+   "tol": 1e-09,
+   "what": "Cengel 15-16"
+  },
+  {
+   "model": "pct",
+   "params": {
+    "num": 6.5,
+    "den": 3.5
+   },
+   "out": "pct",
+   "value": 185.71428571428572,
+   "tol": 1e-09,
+   "what": "Cengel 15-16 b"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H4",
+      1
+     ]
+    ],
+    "lam": 2.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 29.580000000000002,
+   "tol": 1e-09,
+   "what": "Cengel 15-17E a"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C3H6",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "P": 105.0
+   },
+   "out": "Tdp",
+   "value": 44.41153434433542,
+   "tol": {
+    "abs": 0.35
+   },
+   "what": "Cengel 15-18 b"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C3H6",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 22.184999999999995,
+   "tol": 1e-09,
+   "what": "Cengel 15-18 a"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C3H7OH",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 15.529499999999997,
+   "tol": 1e-09,
+   "what": "Cengel 15–19"
+  },
+  {
+   "model": "spray",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 2.0,
+    "P": 100.0,
+    "T": 60.0
+   },
+   "out": "w",
+   "value": 9.79585849374789,
+   "tol": 0.002,
+   "what": "Cengel 15-20"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      0.4181818181818182
+     ],
+     [
+      "C2H5OH",
+      0.5818181818181818
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 10.65308695652174,
+   "tol": 1e-09,
+   "what": "Cengel 15-21 (mole fractions from mass fractions)"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 2.5,
+    "P": 101.325
+   },
+   "out": "Tdp",
+   "value": 35.691294616639475,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "Cengel 15-22 b"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 2.5,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 37.83991228070175,
+   "tol": 1e-09,
+   "what": "Cengel 15-22 a"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "AF": 18.0
+   },
+   "out": "pct",
+   "value": 118.9220515792524,
+   "tol": 1e-09,
+   "what": "Cengel 15-23"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "AF": 22.0
+   },
+   "out": "pct",
+   "value": 136.6063666846049,
+   "tol": 1e-09,
+   "what": "Cengel 15-24"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "AF": 25.0
+   },
+   "out": "pct",
+   "value": 161.60310277957336,
+   "tol": 1e-09,
+   "what": "Cengel 15-25 a / 15-26E a: 161"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 1.6160310277957337,
+    "P": 90.0
+   },
+   "out": "Tdp",
+   "value": 42.65571428571429,
+   "tol": {
+    "abs": 0.4
+   },
+   "what": "Cengel 15-25 b"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      0.65
+     ],
+     [
+      "H2",
+      0.08
+     ],
+     [
+      "N2",
+      0.18
+     ],
+     [
+      "O2",
+      0.03
+     ],
+     [
+      "CO2",
+      0.06
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 9.418354166666663,
+   "tol": 1e-09,
+   "what": "Cengel 15-27"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      0.6
+     ],
+     [
+      "H2",
+      0.3
+     ],
+     [
+      "N2",
+      0.1
+     ]
+    ],
+    "lam": 1.3,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 18.6354,
+   "tol": 1e-09,
+   "what": "Cengel 15-29 a"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      0.6
+     ],
+     [
+      "H2",
+      0.3
+     ],
+     [
+      "N2",
+      0.1
+     ]
+    ],
+    "lam": 1.3,
+    "P": 101.325,
+    "T": 20.0
+   },
+   "out": "frac",
+   "value": 0.8786308813318006,
+   "tol": 0.002,
+   "what": "Cengel 15-29 b"
+  },
+  {
+   "model": "coal",
+   "params": {
+    "wC": 82.0,
+    "wH2": 2.0,
+    "wO2": 1.0,
+    "lam": 1.5
+   },
+   "out": "AF",
+   "value": 15.11969375,
+   "tol": 1e-09,
+   "what": "Cengel 15-31"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 9.21,
+    "CO": 0.61,
+    "O2": 7.06,
+    "N2": 83.12
+   },
+   "out": "AF",
+   "value": 21.80701830409103,
+   "tol": 1e-09,
+   "what": "Cengel 15-32 a"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 9.21,
+    "CO": 0.61,
+    "O2": 7.06,
+    "N2": 83.12
+   },
+   "out": "pct",
+   "value": 144.0741864193786,
+   "tol": 1e-09,
+   "what": "Cengel 15-32 b"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 1,
+    "h": 0,
+    "CO2": 10.06,
+    "CO": 0.42,
+    "O2": 10.69,
+    "N2": 78.83
+   },
+   "out": "AF",
+   "value": 23.012621981755185,
+   "tol": 1e-09,
+   "what": "Cengel 15-33 a"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 1,
+    "h": 0,
+    "CO2": 10.06,
+    "CO": 0.42,
+    "O2": 10.69,
+    "N2": 78.83
+   },
+   "out": "pct",
+   "value": 200.0517703426994,
+   "tol": 1e-09,
+   "what": "Cengel 15-33 b"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 1,
+    "h": 4,
+    "CO2": 5.2,
+    "CO": 0.33,
+    "O2": 11.24,
+    "N2": 83.23
+   },
+   "out": "AF",
+   "value": 34.534397724212226,
+   "tol": 1e-09,
+   "what": "Cengel 15-34 a"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 1,
+    "h": 4,
+    "CO2": 5.2,
+    "CO": 0.33,
+    "O2": 11.24,
+    "N2": 83.23
+   },
+   "out": "pct",
+   "value": 200.14139509830326,
+   "tol": 1e-09,
+   "what": "Cengel 15-34 b"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "CH4",
+    "nu": {
+     "CO2": 1,
+     "H2O": 2
+    },
+    "water": "l",
+    "a27": "CH4",
+    "col": "HHV"
+   },
+   "out": "kJ/kmol",
+   "value": -890330.0,
+   "tol": 0.0015,
+   "what": "Cengel 15–42"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C2H6",
+    "nu": {
+     "CO2": 2,
+     "H2O": 3
+    },
+    "water": "l",
+    "a27": "C2H6",
+    "col": "HHV"
+   },
+   "out": "kJ/kmol",
+   "value": -1559850.0,
+   "tol": 0.0015,
+   "what": "Cengel 15–44"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "H2",
+    "nu": {
+     "H2O": 1
+    },
+    "water": "l",
+    "a27": "H2",
+    "col": "HHV"
+   },
+   "out": "kJ/kmol",
+   "value": -285830.0,
+   "tol": 0.0015,
+   "what": "Cengel 15-50"
+  },
+  {
+   "model": "comb_AF",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      0.3
+     ],
+     [
+      "C4H10",
+      0.7
+     ]
+    ],
+    "AF": 20.0,
+    "exact": true
+   },
+   "out": "N2",
+   "value": 29.402161030100686,
+   "tol": 0.0003,
+   "what": "Cengel 15-104 a"
+  },
+  {
+   "model": "comb_AF",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      0.3
+     ],
+     [
+      "C4H10",
+      0.7
+     ]
+    ],
+    "AF": 20.0,
+    "exact": true
+   },
+   "out": "O2",
+   "value": 1.769723678218268,
+   "tol": 0.0003,
+   "what": "Cengel 15-104 c"
+  },
+  {
+   "model": "comb_AF",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      0.3
+     ],
+     [
+      "C4H10",
+      0.7
+     ]
+    ],
+    "AF": 20.0,
+    "exact": true
+   },
+   "out": "H2O",
+   "value": 4.7,
+   "tol": 0.0003,
+   "what": "Cengel 15-104 b"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C2H2",
+      1,
+      298
+     ],
+     [
+      "O2",
+      3.0,
+      298
+     ],
+     [
+      "N2",
+      11.28,
+      298
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      2.0,
+      1500
+     ],
+     [
+      "H2O_g",
+      1.0,
+      1500
+     ],
+     [
+      "O2",
+      0.4999999999999999,
+      1500
+     ],
+     [
+      "N2",
+      11.28,
+      1500
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 630564.88,
+   "tol": 0.004,
+   "what": "Cengel 15-53 b"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H2",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 15.927692307692308,
+   "tol": 1e-09,
+   "what": "Cengel 15-53 a"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C6H6",
+      1,
+      298
+     ],
+     [
+      "O2",
+      7.125,
+      298
+     ],
+     [
+      "N2",
+      26.79,
+      298
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      5.25,
+      1000
+     ],
+     [
+      "CO",
+      0.75,
+      1000
+     ],
+     [
+      "H2O_g",
+      3,
+      1000
+     ],
+     [
+      "N2",
+      26.79,
+      1000
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 2112779.35,
+   "tol": 0.004,
+   "what": "Cengel 15-55 b: printed 2,112,800"
+  },
+  {
+   "model": "yco",
+   "params": {
+    "lam": 0.95
+   },
+   "out": "yCO",
+   "value": 0.020955574182732608,
+   "tol": 1e-09,
+   "what": "Cengel 15-55 a"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C12H26",
+      1,
+      298
+     ],
+     [
+      "O2",
+      22.2,
+      298
+     ],
+     [
+      "N2",
+      83.472,
+      298
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      12.0,
+      500
+     ],
+     [
+      "H2O_g",
+      13.0,
+      500
+     ],
+     [
+      "O2",
+      3.6999999999999993,
+      500
+     ],
+     [
+      "N2",
+      83.472,
+      500
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 6869097.936000001,
+   "tol": 0.004,
+   "what": "Cengel 15-56"
+  },
+  {
+   "model": "mdot",
+   "params": {
+    "q": 6869097.936000001,
+    "Q": 2000.0,
+    "M": 170.0
+   },
+   "out": "g/s",
+   "value": 49.4970377723262,
+   "tol": 0.004,
+   "what": "Cengel 15-56: printed 49.5"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C2H6",
+      1,
+      298
+     ],
+     [
+      "O2",
+      3.5,
+      500
+     ],
+     [
+      "N2",
+      13.16,
+      500
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      1.9,
+      800
+     ],
+     [
+      "CO",
+      0.1,
+      800
+     ],
+     [
+      "H2O_g",
+      3,
+      800
+     ],
+     [
+      "O2",
+      0.04999999999999982,
+      800
+     ],
+     [
+      "N2",
+      13.16,
+      800
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 1201004.67,
+   "tol": 0.004,
+   "what": "Cengel 15-60 per kmol"
+  },
+  {
+   "model": "mdot",
+   "params": {
+    "q": 1201004.67,
+    "Q": 1.0,
+    "M": 30.0,
+    "kg_h": 5.0
+   },
+   "out": "kJ/h",
+   "value": 200167.44499999998,
+   "tol": 0.004,
+   "what": "Cengel 15-60: printed 200,170"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C2H5OH_l",
+      1,
+      298
+     ],
+     [
+      "O2",
+      4.199999999999999,
+      298
+     ],
+     [
+      "N2",
+      15.791999999999996,
+      298
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      2.0,
+      600
+     ],
+     [
+      "H2O_g",
+      3.0,
+      600
+     ],
+     [
+      "O2",
+      1.1999999999999997,
+      600
+     ],
+     [
+      "N2",
+      15.791999999999996,
+      600
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 1025933.5520000001,
+   "tol": 0.004,
+   "what": "Cengel 15-67"
+  },
+  {
+   "model": "Vflow",
+   "params": {
+    "q": 1025933.5520000001,
+    "Q": 2000.0,
+    "M": 46.0,
+    "rho": 790.0
+   },
+   "out": "L/min",
+   "value": 6.810715721822788,
+   "tol": 0.004,
+   "what": "Cengel 15-67: printed 6.81"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "H2",
+      1,
+      280.0
+     ],
+     [
+      "O2",
+      0.6,
+      280.0
+     ],
+     [
+      "N2",
+      2.256,
+      280.0
+     ]
+    ],
+    "prod": [
+     [
+      "H2O_g",
+      1.0
+     ],
+     [
+      "O2",
+      0.09999999999999998
+     ],
+     [
+      "N2",
+      2.256
+     ]
+    ],
+    "loss": 0.0
+   },
+   "out": "T",
+   "value": 2251.407823130233,
+   "tol": 0.003,
+   "what": "Cengel 15-70: printed 2251.4 K"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "C2H2",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      3.25,
+      300.0
+     ],
+     [
+      "N2",
+      12.219999999999999,
+      300.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      2.0
+     ],
+     [
+      "H2O_g",
+      1.0
+     ],
+     [
+      "O2",
+      0.7500000000000001
+     ],
+     [
+      "N2",
+      12.219999999999999
+     ]
+    ],
+    "loss": 75000.0
+   },
+   "out": "T",
+   "value": 2303.062662102997,
+   "tol": 0.003,
+   "what": "Cengel 15-73: printed 2301 K; table route 2303"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "C8H18_l",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      12.5,
+      298.0
+     ],
+     [
+      "N2",
+      47.0,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      8.0
+     ],
+     [
+      "H2O_g",
+      9.0
+     ],
+     [
+      "N2",
+      47.0
+     ]
+    ],
+    "loss": 0.0
+   },
+   "out": "T",
+   "value": 2394.5045239763294,
+   "tol": 0.003,
+   "what": "Cengel Ex 15-8 a: printed 2395 K"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "C8H18_l",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      50.0,
+      298.0
+     ],
+     [
+      "N2",
+      188.0,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      8.0
+     ],
+     [
+      "H2O_g",
+      9.0
+     ],
+     [
+      "O2",
+      37.5
+     ],
+     [
+      "N2",
+      188.0
+     ]
+    ],
+    "loss": 0.0
+   },
+   "out": "T",
+   "value": 962.0303414479538,
+   "tol": 0.003,
+   "what": "Cengel Ex 15-8 b: printed 962 K"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "CH4",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      3.0,
+      298.0
+     ],
+     [
+      "N2",
+      11.28,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      1.0
+     ],
+     [
+      "H2O_g",
+      2.0
+     ],
+     [
+      "O2",
+      1.0
+     ],
+     [
+      "N2",
+      11.28
+     ]
+    ],
+    "loss": 0.0
+   },
+   "out": "T",
+   "value": 1789.0401917810968,
+   "tol": 0.003,
+   "what": "Cengel Ex 15-10 a: printed 1789 K"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 23.529545454545453,
+   "tol": 1e-09,
+   "what": "Cengel 15-119"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "lam": 2.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 34.51,
+   "tol": 1e-09,
+   "what": "Cengel 15-120"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "CH4",
+    "nu": {
+     "CO2": 1,
+     "H2O": 2
+    },
+    "water": "l",
+    "a27": "CH4",
+    "col": "HHV"
+   },
+   "out": "kJ/kg",
+   "value": -55496.47821479773,
+   "tol": 0.0015,
+   "what": "Cengel 15-123: nearest option 56 MJ/kg"
+  },
+  {
+   "model": "lhv_from_hhv",
+   "params": {
+    "HHV": 1560.0,
+    "m": 8
+   },
+   "out": "LHV",
+   "value": 1384.051098,
+   "tol": 0.001,
+   "what": "Cengel 15-124"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C2H2",
+    "nu": {},
+    "water": "g",
+    "a27": "C2H2",
+    "col": "LHV",
+    "Hprod": -404000.0
+   },
+   "out": "q_out",
+   "value": 630730.0,
+   "tol": 1e-09,
+   "what": "Cengel 15-125 (FE)"
+  },
+  {
+   "model": "yco",
+   "params": {
+    "lam": 0.9,
+    "fuel": "C6H6"
+   },
+   "out": "yCO",
+   "value": 0.04363001745200699,
+   "tol": 1e-09,
+   "what": "Cengel 15-126 (FE)"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H4",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 14.790000000000001,
+   "tol": 1e-09,
+   "what": "F1 C2H4"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 15.47,
+   "tol": 1e-09,
+   "what": "F1 C4H10"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C6H6",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 13.273076923076923,
+   "tol": 1e-09,
+   "what": "F1 C6H6"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH3OH",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 6.470625,
+   "tol": 1e-09,
+   "what": "F1 CH3OH"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H5OH",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 9.002608695652174,
+   "tol": 1e-09,
+   "what": "F1 C2H5OH"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "H2",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 34.51,
+   "tol": 1e-09,
+   "what": "F1 H2"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 18.823636363636364,
+   "tol": 1e-09,
+   "what": "F2 C3H8 0.2"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 1.4,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 21.657999999999994,
+   "tol": 1e-09,
+   "what": "F2 C4H10 0.4"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 24.156999999999996,
+   "tol": 1e-09,
+   "what": "F2 C2H6 0.5"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH3OH",
+      1
+     ]
+    ],
+    "lam": 1.3,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 8.4118125,
+   "tol": 1e-09,
+   "what": "F2 CH3OH 0.3"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H5OH",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 14.404173913043481,
+   "tol": 1e-09,
+   "what": "F2 C2H5OH 0.6"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.25,
+    "exact": false
+   },
+   "out": "AF",
+   "value": 18.919956140350877,
+   "tol": 1e-09,
+   "what": "F2 C8H18 0.25"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "AF": 20.0
+   },
+   "out": "pct",
+   "value": 127.4992755722979,
+   "tol": 1e-09,
+   "what": "F3 C3H8"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "AF": 21.0
+   },
+   "out": "pct",
+   "value": 121.70385395537527,
+   "tol": 1e-09,
+   "what": "F3 CH4"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "AF": 24.0
+   },
+   "out": "pct",
+   "value": 149.02512729229622,
+   "tol": 1e-09,
+   "what": "F3 C2H6"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "AF": 20.5
+   },
+   "out": "pct",
+   "value": 135.4390031874819,
+   "tol": 1e-09,
+   "what": "F3 C8H18"
+  },
+  {
+   "model": "pct_af",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "AF": 19.0
+   },
+   "out": "pct",
+   "value": 122.81835811247575,
+   "tol": 1e-09,
+   "what": "F3 C4H10"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.4,
+    "exact": false
+   },
+   "out": "O2",
+   "value": 1.9999999999999996,
+   "tol": 1e-09,
+   "what": "F4 C3H8"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 1.6,
+    "exact": false
+   },
+   "out": "N2",
+   "value": 39.104,
+   "tol": 1e-09,
+   "what": "F4 C4H10"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "exact": false
+   },
+   "out": "n_tot",
+   "value": 15.28,
+   "tol": 1e-09,
+   "what": "F4 CH4"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C2H5OH",
+      1
+     ]
+    ],
+    "lam": 1.3,
+    "exact": false
+   },
+   "out": "O2",
+   "value": 0.9000000000000001,
+   "tol": 1e-09,
+   "what": "F4 C2H5OH"
+  },
+  {
+   "model": "comb",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.8,
+    "exact": false
+   },
+   "out": "n_tot",
+   "value": 111.6,
+   "tol": 1e-09,
+   "what": "F4 C8H18"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "P": 101.325
+   },
+   "out": "Tdp",
+   "value": 59.16270912547529,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "F5 CH4 1.0 101.325"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "P": 101.325
+   },
+   "out": "Pv",
+   "value": 19.263307984790877,
+   "tol": 1e-09,
+   "what": "F5 Pv CH4"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 100.0
+   },
+   "out": "Tdp",
+   "value": 50.85125654450262,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "F5 C3H8 1.2 100.0"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 100.0
+   },
+   "out": "Pv",
+   "value": 13.089005235602095,
+   "tol": 1e-09,
+   "what": "F5 Pv C3H8"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C2H5OH",
+      1
+     ]
+    ],
+    "lam": 1.3,
+    "P": 101.325
+   },
+   "out": "Tdp",
+   "value": 53.61406146664073,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "F5 C2H5OH 1.3 101.325"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C2H5OH",
+      1
+     ]
+    ],
+    "lam": 1.3,
+    "P": 101.325
+   },
+   "out": "Pv",
+   "value": 14.78190040848084,
+   "tol": 1e-09,
+   "what": "F5 Pv C2H5OH"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "P": 101.325
+   },
+   "out": "Tdp",
+   "value": 45.207657600000005,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "F5 C8H18 1.5 101.325"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "P": 101.325
+   },
+   "out": "Pv",
+   "value": 9.7272,
+   "tol": 1e-09,
+   "what": "F5 Pv C8H18"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "H2",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 101.325
+   },
+   "out": "Tdp",
+   "value": 69.22011471990466,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "F5 H2 1.2 101.325"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "H2",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 101.325
+   },
+   "out": "Pv",
+   "value": 30.19219308700834,
+   "tol": 1e-09,
+   "what": "F5 Pv H2"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 1.1,
+    "P": 150.0
+   },
+   "out": "Tdp",
+   "value": 60.578246017408446,
+   "tol": {
+    "abs": 0.5
+   },
+   "what": "F5 C4H10 1.1 150.0"
+  },
+  {
+   "model": "dew",
+   "params": {
+    "fuel": [
+     [
+      "C4H10",
+      1
+     ]
+    ],
+    "lam": 1.1,
+    "P": 150.0
+   },
+   "out": "Pv",
+   "value": 20.52882246674331,
+   "tol": 1e-09,
+   "what": "F5 Pv C4H10"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 3,
+    "h": 8,
+    "CO2": 9.28,
+    "CO": 1.03,
+    "O2": 5.67,
+    "N2": 84.02
+   },
+   "out": "AF",
+   "value": 20.399038416440444,
+   "tol": 1e-09,
+   "what": "F6 C3H8"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 2,
+    "h": 6,
+    "CO2": 10.37,
+    "CO": 0.9,
+    "O2": 3.41,
+    "N2": 85.32
+   },
+   "out": "pct",
+   "value": 115.05381854076373,
+   "tol": 1e-09,
+   "what": "F6 C2H6"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 8,
+    "h": 18,
+    "CO2": 11.33,
+    "CO": 0.6,
+    "O2": 4.02,
+    "N2": 84.05
+   },
+   "out": "AF",
+   "value": 18.150956478424753,
+   "tol": 1e-09,
+   "what": "F6 C8H18"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 1,
+    "h": 4,
+    "CO2": 7.61,
+    "CO": 0.49,
+    "O2": 6.72,
+    "N2": 85.18
+   },
+   "out": "pct",
+   "value": 139.84108221696877,
+   "tol": 1e-09,
+   "what": "F6 CH4"
+  },
+  {
+   "model": "rev",
+   "params": {
+    "c": 4,
+    "h": 10,
+    "CO2": 11.08,
+    "CO": 1.51,
+    "O2": 2.8,
+    "N2": 84.61
+   },
+   "out": "AF",
+   "value": 17.015513832322174,
+   "tol": 1e-09,
+   "what": "F6 C4H10"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "P": 101.325,
+    "T": 25.0
+   },
+   "out": "frac",
+   "value": 0.8624286028656658,
+   "tol": 0.002,
+   "what": "F7 CH4"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.2,
+    "P": 101.325,
+    "T": 30.0
+   },
+   "out": "frac",
+   "value": 0.7095182538595214,
+   "tol": 0.002,
+   "what": "F7 C3H8"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.0,
+    "P": 100.0,
+    "T": 20.0
+   },
+   "out": "frac",
+   "value": 0.8789610843518245,
+   "tol": 0.002,
+   "what": "F7 C2H6"
+  },
+  {
+   "model": "cond",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.3,
+    "P": 101.325,
+    "T": 40.0
+   },
+   "out": "frac",
+   "value": 0.3636539780576021,
+   "tol": 0.002,
+   "what": "F7 C8H18"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C2H6",
+    "nu": {
+     "CO2": 2,
+     "H2O": 3
+    },
+    "water": "g",
+    "a27": "C2H6",
+    "col": "LHV",
+    "M": 30.07,
+    "liq_listed": false
+   },
+   "out": "kJ/kmol",
+   "value": -1427820.0,
+   "tol": 0.003,
+   "what": "F8 C2H6 g"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C3H8",
+    "nu": {
+     "CO2": 3,
+     "H2O": 4
+    },
+    "water": "l",
+    "a27": "C3H8",
+    "col": "HHV",
+    "M": 44.097,
+    "liq_listed": false
+   },
+   "out": "kJ/kg",
+   "value": -50344.24110483706,
+   "tol": 0.003,
+   "what": "F8 C3H8 l"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C4H10",
+    "nu": {
+     "CO2": 4,
+     "H2O": 5
+    },
+    "water": "g",
+    "a27": "C4H10",
+    "col": "LHV",
+    "M": 58.123,
+    "liq_listed": true
+   },
+   "out": "kJ/kg",
+   "value": -45713.91703800561,
+   "tol": 0.003,
+   "what": "F8 C4H10 g"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "CH3OH_l",
+    "nu": {
+     "CO2": 1,
+     "H2O": 2
+    },
+    "water": "l",
+    "a27": "CH3OH",
+    "col": "HHV",
+    "M": 32.042,
+    "liq_listed": false
+   },
+   "out": "kJ/kmol",
+   "value": -726520.0,
+   "tol": 0.003,
+   "what": "F8 CH3OH l"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C2H2",
+    "nu": {
+     "CO2": 2,
+     "H2O": 1
+    },
+    "water": "g",
+    "a27": "C2H2",
+    "col": "LHV",
+    "M": 26.038,
+    "liq_listed": false
+   },
+   "out": "kJ/kg",
+   "value": -48221.4455795376,
+   "tol": 0.003,
+   "what": "F8 C2H2 g"
+  },
+  {
+   "model": "hC",
+   "params": {
+    "fuel": "C6H6",
+    "nu": {
+     "CO2": 6,
+     "H2O": 3
+    },
+    "water": "l",
+    "a27": "C6H6",
+    "col": "HHV",
+    "M": 78.114,
+    "liq_listed": true
+   },
+   "out": "kJ/kmol",
+   "value": -3301540.0,
+   "tol": 0.003,
+   "what": "F8 C6H6 l"
+  },
+  {
+   "model": "lhv_kg",
+   "params": {
+    "HHV": 55530.0,
+    "H": 4.0,
+    "M": 16.043
+   },
+   "out": "LHV",
+   "value": 50046.33416443309,
+   "tol": 0.002,
+   "what": "F9 CH4: A-27 50050.0"
+  },
+  {
+   "model": "lhv_kg",
+   "params": {
+    "HHV": 51900.0,
+    "H": 6.0,
+    "M": 30.07
+   },
+   "out": "LHV",
+   "value": 47511.517243099435,
+   "tol": 0.002,
+   "what": "F9 C2H6: A-27 47520.0"
+  },
+  {
+   "model": "lhv_kg",
+   "params": {
+    "HHV": 50330.0,
+    "H": 8.0,
+    "M": 44.097
+   },
+   "out": "LHV",
+   "value": 46339.95754813253,
+   "tol": 0.002,
+   "what": "F9 C3H8: A-27 46340.0"
+  },
+  {
+   "model": "lhv_kg",
+   "params": {
+    "HHV": 47890.0,
+    "H": 18.0,
+    "M": 114.231
+   },
+   "out": "LHV",
+   "value": 44424.34681041048,
+   "tol": 0.002,
+   "what": "F9 C8H18: A-27 44430.0"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "CH4",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      3.0,
+      298.0
+     ],
+     [
+      "N2",
+      11.28,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      1.0,
+      1000.0
+     ],
+     [
+      "H2O_g",
+      2.0,
+      1000.0
+     ],
+     [
+      "O2",
+      1.0,
+      1000.0
+     ],
+     [
+      "N2",
+      11.28,
+      1000.0
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 452173.19999999995,
+   "tol": 0.004,
+   "what": "F10 CH4 1.5 1000.0"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C3H8",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      6.0,
+      298.0
+     ],
+     [
+      "N2",
+      22.56,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      3.0,
+      1200.0
+     ],
+     [
+      "H2O_g",
+      4.0,
+      1200.0
+     ],
+     [
+      "O2",
+      0.9999999999999998,
+      1200.0
+     ],
+     [
+      "N2",
+      22.56,
+      1200.0
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 1108752.52,
+   "tol": 0.004,
+   "what": "F10 C3H8 1.2 1200.0"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C2H2",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      5.0,
+      298.0
+     ],
+     [
+      "N2",
+      18.799999999999997,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      2.0,
+      800.0
+     ],
+     [
+      "H2O_g",
+      1.0,
+      800.0
+     ],
+     [
+      "O2",
+      2.5,
+      800.0
+     ],
+     [
+      "N2",
+      18.799999999999997,
+      800.0
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 869519.5,
+   "tol": 0.004,
+   "what": "F10 C2H2 2.0 800.0"
+  },
+  {
+   "model": "q",
+   "params": {
+    "react": [
+     [
+      "C2H6",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      4.55,
+      298.0
+     ],
+     [
+      "N2",
+      17.107999999999997,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      2.0,
+      1400.0
+     ],
+     [
+      "H2O_g",
+      3.0,
+      1400.0
+     ],
+     [
+      "O2",
+      1.0500000000000003,
+      1400.0
+     ],
+     [
+      "N2",
+      17.107999999999997,
+      1400.0
+     ]
+    ]
+   },
+   "out": "q_out",
+   "value": 549165.6120000001,
+   "tol": 0.004,
+   "what": "F10 C2H6 1.3 1400.0"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "C3H8",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      8.0,
+      298.0
+     ],
+     [
+      "N2",
+      30.08,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      3.0
+     ],
+     [
+      "H2O_g",
+      4.0
+     ],
+     [
+      "O2",
+      3.0000000000000004
+     ],
+     [
+      "N2",
+      30.08
+     ]
+    ],
+    "loss": 0.0
+   },
+   "out": "T",
+   "value": 1753.0343238488358,
+   "tol": 0.003,
+   "what": "F11 C3H8 1.6"
+  },
+  {
+   "model": "Tad",
+   "params": {
+    "react": [
+     [
+      "CH4",
+      1,
+      298.0
+     ],
+     [
+      "O2",
+      3.4,
+      298.0
+     ],
+     [
+      "N2",
+      12.783999999999999,
+      298.0
+     ]
+    ],
+    "prod": [
+     [
+      "CO2",
+      1.0
+     ],
+     [
+      "H2O_g",
+      2.0
+     ],
+     [
+      "O2",
+      1.4
+     ],
+     [
+      "N2",
+      12.783999999999999
+     ]
+    ],
+    "loss": 0.0
+   },
+   "out": "T",
+   "value": 1647.7227049567969,
+   "tol": 0.003,
+   "what": "F11 CH4 1.7"
+  },
+  {
+   "model": "phi",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "AF": 40.0
+   },
+   "out": "phi",
+   "value": 0.37839912280701754,
+   "tol": 1e-09,
+   "what": "F12 C8H18"
+  },
+  {
+   "model": "phi",
+   "params": {
+    "fuel": [
+     [
+      "CH4",
+      1
+     ]
+    ],
+    "AF": 13.0
+   },
+   "out": "phi",
+   "value": 1.3273076923076923,
+   "tol": 1e-09,
+   "what": "F12 CH4"
+  },
+  {
+   "model": "phi",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "AF": 25.0
+   },
+   "out": "phi",
+   "value": 0.6274545454545454,
+   "tol": 1e-09,
+   "what": "F12 C3H8"
+  },
+  {
+   "model": "airflow",
+   "params": {
+    "fuel": [
+     [
+      "C8H18",
+      1
+     ]
+    ],
+    "lam": 1.5,
+    "mf": 0.02
+   },
+   "out": "kg/s",
+   "value": 0.454078947368421,
+   "tol": 1e-09,
+   "what": "F13 C8H18"
+  },
+  {
+   "model": "airflow",
+   "params": {
+    "fuel": [
+     [
+      "C3H8",
+      1
+     ]
+    ],
+    "lam": 1.3,
+    "mf": 0.05
+   },
+   "out": "kg/s",
+   "value": 1.0196136363636363,
+   "tol": 1e-09,
+   "what": "F13 C3H8"
+  },
+  {
+   "model": "airflow",
+   "params": {
+    "fuel": [
+     [
+      "C2H6",
+      1
+     ]
+    ],
+    "lam": 1.1,
+    "mf": 0.1
+   },
+   "out": "kg/s",
+   "value": 1.7715133333333335,
+   "tol": 1e-09,
+   "what": "F13 C2H6"
+  }
+ ],
+ "printed": [
+  {
+   "key": "Ex15-1 AF (slide tr.17)",
+   "printed": 24.2,
+   "ours": 24.21754385964912,
+   "tol": 0.01,
+   "note": "slide rounds M_air to 29"
+  },
+  {
+   "key": "Ex15-1 CO2 (slide tr.15)",
+   "printed": 8.0,
+   "ours": 8.0,
+   "tol": 1e-09,
+   "note": ""
+  },
+  {
+   "key": "Ex15-1 H2O (slide tr.15)",
+   "printed": 9.0,
+   "ours": 9.0,
+   "tol": 1e-09,
+   "note": ""
+  },
+  {
+   "key": "Ex15-1 O2 (slide tr.15)",
+   "printed": 7.5,
+   "ours": 7.500000000000001,
+   "tol": 1e-09,
+   "note": ""
+  },
+  {
+   "key": "Ex15-1 N2 (slide tr.15)",
+   "printed": 75.2,
+   "ours": 75.19999999999999,
+   "tol": 1e-09,
+   "note": ""
+  },
+  {
+   "key": "Ex15-2 AF (slide tr.30)",
+   "printed": 19.3,
+   "ours": 19.3256,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Ex15-2 Pv (slide tr.31)",
+   "printed": 13.96,
+   "ours": 13.958682300390842,
+   "tol": 0.001,
+   "note": ""
+  },
+  {
+   "key": "Ex15-2 Tdp (slide tr.32)",
+   "printed": 52.3,
+   "ours": 52.270569514237856,
+   "tol": 0.001,
+   "note": "A-5 linear interpolation 52.27"
+  },
+  {
+   "key": "Ex15-3 Tdp moist air",
+   "printed": 60.9,
+   "ours": 60.926995524648476,
+   "tol": 0.002,
+   "note": ""
+  },
+  {
+   "key": "Ex15-3 Tdp dry air",
+   "printed": 59.5,
+   "ours": 59.51605248221584,
+   "tol": 0.002,
+   "note": ""
+  },
+  {
+   "key": "Ex15-3 a_th",
+   "printed": 1.465,
+   "ours": 1.465,
+   "tol": 0.001,
+   "note": ""
+  },
+  {
+   "key": "Ex15-3 N_v,air",
+   "printed": 0.131,
+   "ours": 0.13121432080314005,
+   "tol": 0.01,
+   "note": ""
+  },
+  {
+   "key": "Ex15-3 N_prod",
+   "printed": 8.059,
+   "ours": 8.05961432080314,
+   "tol": 0.001,
+   "note": ""
+  },
+  {
+   "key": "Ex15-4 AF (slide tr.36)",
+   "printed": 19.76,
+   "ours": 19.73141285773481,
+   "tol": 0.005,
+   "note": "slide: rounded x = 1.36"
+  },
+  {
+   "key": "Ex15-4 pct (slide tr.37)",
+   "printed": 131.0,
+   "ours": 130.3611165332813,
+   "tol": 0.005,
+   "note": "130.56 with the slide numbers 16.32/12.5; 130.36 unrounded"
+  },
+  {
+   "key": "Ex15-4 Nw (slide tr.39)",
+   "printed": 6.59,
+   "ours": 6.597383135017453,
+   "tol": 0.002,
+   "note": ""
+  },
+  {
+   "key": "Ex15-4 fraction (slide tr.39)",
+   "printed": 73.0,
+   "ours": 73.30425705574947,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Ex15-5 hC kJ/kmol (slide tr.54)",
+   "printed": -5471000.0,
+   "ours": -5470680.0,
+   "tol": 0.001,
+   "note": "slide rounded; exact -5,470,680"
+  },
+  {
+   "key": "Ex15-5 hC kJ/kg",
+   "printed": -47891.0,
+   "ours": -47891.37799721617,
+   "tol": 0.0001,
+   "note": ""
+  },
+  {
+   "key": "Ex15-5 A-27 HHV",
+   "printed": 47890.0,
+   "ours": 47891.37799721617,
+   "tol": 0.001,
+   "note": ""
+  },
+  {
+   "key": "Ex15-5 gaseous octane kJ/kmol (book Discussion)",
+   "printed": -5512200.0,
+   "ours": -5512180.0,
+   "tol": 2e-05,
+   "note": ""
+  },
+  {
+   "key": "Ex15-5 gaseous octane kJ/kg",
+   "printed": -48255.0,
+   "ours": -48254.6769265786,
+   "tol": 0.0001,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15–14 AF",
+   "printed": 27.5,
+   "ours": 27.451136363636362,
+   "tol": 0.012,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-17E AF (a)",
+   "printed": 29.6,
+   "ours": 29.580000000000002,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-17E dew point (b) [F] by iapws (A-5E not done)",
+   "printed": 101.0,
+   "ours": 101.05543422013994,
+   "tol": 0.01,
+   "note": "dew point not used as a question: English-unit table A-5E CHƯA LÀM; iapws gives 100.6 F"
+  },
+  {
+   "key": "Cengel 15–19 AF",
+   "printed": 15.5,
+   "ours": 15.529499999999997,
+   "tol": 0.012,
+   "note": " Nhiên liệu có O nên a_th = 3 + 2 − 0,5 = 4,5 (O trong nhiên liệu cấp bớt O₂)."
+  },
+  {
+   "key": "Cengel 15-21 air flow [kg/s]",
+   "printed": 330.0,
+   "ours": 330.24569565217394,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-24 excess air [%]",
+   "printed": 37.0,
+   "ours": 36.60636668460489,
+   "tol": 0.02,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-26E (a) percent theoretical air (same ratio 25:1)",
+   "printed": 161.0,
+   "ours": 161.60310277957336,
+   "tol": 0.01,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-26E (b) dew point [F], SI-equivalent by iapws",
+   "printed": 113.0,
+   "ours": 113.20238511260509,
+   "tol": 0.01,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-29 (a) AF",
+   "printed": 18.6,
+   "ours": 18.6354,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-29 (b) fraction condensed [%]",
+   "printed": 88.0,
+   "ours": 87.86308813318006,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-31 AF",
+   "printed": 15.1,
+   "ours": 15.11969375,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-34 (a) AF",
+   "printed": 34.5,
+   "ours": 34.534397724212226,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-34 (b) % theoretical air",
+   "printed": 200.0,
+   "ours": 200.14139509830326,
+   "tol": 0.005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15–42",
+   "printed": -890330.0,
+   "ours": -890330.0,
+   "tol": 1e-06,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-104 (a) N2 [kmol/kmol fuel], exact masses",
+   "printed": 29.41,
+   "ours": 29.402161030100686,
+   "tol": 0.002,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-104 (b) H2O",
+   "printed": 4.7,
+   "ours": 4.7,
+   "tol": 0.002,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-104 (c) O2 in products, exact masses",
+   "printed": 1.77,
+   "ours": 1.769723678218268,
+   "tol": 0.005,
+   "note": "with rounded masses (29, 12, 1): 1.745"
+  },
+  {
+   "key": "Cengel 15-55 (a) y_CO [%]",
+   "printed": 2.1,
+   "ours": 2.095557418273261,
+   "tol": 0.01,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-55 (b) Q_out [kJ/kmol]",
+   "printed": 2112800.0,
+   "ours": 2112779.35,
+   "tol": 0.0002,
+   "note": "table interpolation; printed value 2,112,800"
+  },
+  {
+   "key": "Cengel 15-56 mass flow [g/s]",
+   "printed": 49.5,
+   "ours": 49.4970377723262,
+   "tol": 0.003,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-60 heat rate [kJ/h]",
+   "printed": 200170.0,
+   "ours": 200167.44499999998,
+   "tol": 0.003,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-67 volume flow [L/min]",
+   "printed": 6.81,
+   "ours": 6.810715721822788,
+   "tol": 0.003,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-70 adiabatic flame temperature [K]",
+   "printed": 2251.4,
+   "ours": 2251.407823130233,
+   "tol": 0.0005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-73 exit temperature [K]",
+   "printed": 2301.0,
+   "ours": 2303.062662102997,
+   "tol": 0.0015,
+   "note": "table (linear) route gives 2303.1: 2 K = 0.09 % from the printed value (interpolation/rounding)"
+  },
+  {
+   "key": "Cengel Ex 15-8 (a) adiabatic flame temperature [K]",
+   "printed": 2395.0,
+   "ours": 2394.5045239763294,
+   "tol": 0.0005,
+   "note": ""
+  },
+  {
+   "key": "Cengel Ex 15-8 (b) 400 % theoretical air [K]",
+   "printed": 962.0,
+   "ours": 962.0303414479538,
+   "tol": 0.002,
+   "note": ""
+  },
+  {
+   "key": "Cengel Ex 15-10 (a) methane, 50 % excess air [K]",
+   "printed": 1789.0,
+   "ours": 1789.0401917810968,
+   "tol": 0.0005,
+   "note": ""
+  },
+  {
+   "key": "Cengel 15-119 FE nearest option (d) 23.4",
+   "printed": 23.4,
+   "ours": 23.529545454545453,
+   "tol": 0.006,
+   "note": "nearest option; exact masses give 23.46"
+  },
+  {
+   "key": "Cengel 15-120 FE nearest option (a) 34.3",
+   "printed": 34.3,
+   "ours": 34.51,
+   "tol": 0.007,
+   "note": "nearest option; exact masses give 34.38"
+  }
+ ],
+ "extra": {
+  "Ti_ex152": 52.48708060493527,
+  "Ti_ex153": 60.99725149477581,
+  "hfg25": 43987.32769799072,
+  "Psat25_iapws": 3.1697468549523626,
+  "A5_maxerr": 0.438352713084015
+ }
+}
