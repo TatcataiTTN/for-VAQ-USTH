@@ -1,0 +1,2350 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 250 K chuyển động với vận tốc 300 m/s (c_p = 1,005 kJ/(kg·K)). Nhiệt độ hãm T₀ là:",
+   "en": "Air at 250 K moves at 300 m/s (c_p = 1.005 kJ/(kg·K)). The stagnation temperature T₀ is:"
+  },
+  "opts": [
+   {
+    "vi": "294,8 K",
+    "en": "294.8 K"
+   },
+   {
+    "vi": "339,6 K",
+    "en": "339.6 K"
+   },
+   {
+    "vi": "45.026,1 K",
+    "en": "45,026.1 K"
+   },
+   {
+    "vi": "205,2 K",
+    "en": "205.2 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = T + V²/(2c_p) = 250 + 300²/(2 × 1,005 × 1000) = 250 + 44,8 = 294,8 K. Các phương án còn lại: 339,6 K quên hệ số 2. 45.026,1 K quên đổi m²/s² → kJ/kg. 205,2 K trừ thay vì cộng.",
+   "en": "T₀ = T + V²/(2c_p) = 250 + 300²/(2 × 1.005 × 1000) = 250 + 44.8 = 294.8 K. The other options: 339.6 K forgets the factor 2. 45,026.1 K forgets the m²/s² → kJ/kg conversion. 205.2 K subtracts instead of adds."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ hãm",
+   "en": "Added – generated from the type: stagnation temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 288 K chuyển động với vận tốc 200 m/s (c_p = 1,005 kJ/(kg·K)). Nhiệt độ hãm T₀ là:",
+   "en": "Air at 288 K moves at 200 m/s (c_p = 1.005 kJ/(kg·K)). The stagnation temperature T₀ is:"
+  },
+  "opts": [
+   {
+    "vi": "307,9 K",
+    "en": "307.9 K"
+   },
+   {
+    "vi": "327,8 K",
+    "en": "327.8 K"
+   },
+   {
+    "vi": "20.188,5 K",
+    "en": "20,188.5 K"
+   },
+   {
+    "vi": "268,1 K",
+    "en": "268.1 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = T + V²/(2c_p) = 288 + 200²/(2 × 1,005 × 1000) = 288 + 19,9 = 307,9 K. Các phương án còn lại: 327,8 K quên hệ số 2. 20.188,5 K quên đổi m²/s² → kJ/kg. 268,1 K trừ thay vì cộng.",
+   "en": "T₀ = T + V²/(2c_p) = 288 + 200²/(2 × 1.005 × 1000) = 288 + 19.9 = 307.9 K. The other options: 327.8 K forgets the factor 2. 20,188.5 K forgets the m²/s² → kJ/kg conversion. 268.1 K subtracts instead of adds."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ hãm",
+   "en": "Added – generated from the type: stagnation temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 220 K chuyển động với vận tốc 350 m/s (c_p = 1,005 kJ/(kg·K)). Nhiệt độ hãm T₀ là:",
+   "en": "Air at 220 K moves at 350 m/s (c_p = 1.005 kJ/(kg·K)). The stagnation temperature T₀ is:"
+  },
+  "opts": [
+   {
+    "vi": "280,9 K",
+    "en": "280.9 K"
+   },
+   {
+    "vi": "341,9 K",
+    "en": "341.9 K"
+   },
+   {
+    "vi": "61.165,3 K",
+    "en": "61,165.3 K"
+   },
+   {
+    "vi": "159,1 K",
+    "en": "159.1 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = T + V²/(2c_p) = 220 + 350²/(2 × 1,005 × 1000) = 220 + 60,9 = 280,9 K. Các phương án còn lại: 341,9 K quên hệ số 2. 61.165,3 K quên đổi m²/s² → kJ/kg. 159,1 K trừ thay vì cộng.",
+   "en": "T₀ = T + V²/(2c_p) = 220 + 350²/(2 × 1.005 × 1000) = 220 + 60.9 = 280.9 K. The other options: 341.9 K forgets the factor 2. 61,165.3 K forgets the m²/s² → kJ/kg conversion. 159.1 K subtracts instead of adds."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ hãm",
+   "en": "Added – generated from the type: stagnation temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 300 K chuyển động với vận tốc 450 m/s (c_p = 1,005 kJ/(kg·K)). Nhiệt độ hãm T₀ là:",
+   "en": "Air at 300 K moves at 450 m/s (c_p = 1.005 kJ/(kg·K)). The stagnation temperature T₀ is:"
+  },
+  "opts": [
+   {
+    "vi": "400,7 K",
+    "en": "400.7 K"
+   },
+   {
+    "vi": "501,5 K",
+    "en": "501.5 K"
+   },
+   {
+    "vi": "101.046,3 K",
+    "en": "101,046.3 K"
+   },
+   {
+    "vi": "199,3 K",
+    "en": "199.3 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = T + V²/(2c_p) = 300 + 450²/(2 × 1,005 × 1000) = 300 + 100,7 = 400,7 K. Các phương án còn lại: 501,5 K quên hệ số 2. 101.046,3 K quên đổi m²/s² → kJ/kg. 199,3 K trừ thay vì cộng.",
+   "en": "T₀ = T + V²/(2c_p) = 300 + 450²/(2 × 1.005 × 1000) = 300 + 100.7 = 400.7 K. The other options: 501.5 K forgets the factor 2. 101,046.3 K forgets the m²/s² → kJ/kg conversion. 199.3 K subtracts instead of adds."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ hãm",
+   "en": "Added – generated from the type: stagnation temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí ở 260 K chuyển động với vận tốc 150 m/s (c_p = 1,005 kJ/(kg·K)). Nhiệt độ hãm T₀ là:",
+   "en": "Air at 260 K moves at 150 m/s (c_p = 1.005 kJ/(kg·K)). The stagnation temperature T₀ is:"
+  },
+  "opts": [
+   {
+    "vi": "271,2 K",
+    "en": "271.2 K"
+   },
+   {
+    "vi": "282,4 K",
+    "en": "282.4 K"
+   },
+   {
+    "vi": "11.454,0 K",
+    "en": "11,454.0 K"
+   },
+   {
+    "vi": "248,8 K",
+    "en": "248.8 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = T + V²/(2c_p) = 260 + 150²/(2 × 1,005 × 1000) = 260 + 11,2 = 271,2 K. Các phương án còn lại: 282,4 K quên hệ số 2. 11.454,0 K quên đổi m²/s² → kJ/kg. 248,8 K trừ thay vì cộng.",
+   "en": "T₀ = T + V²/(2c_p) = 260 + 150²/(2 × 1.005 × 1000) = 260 + 11.2 = 271.2 K. The other options: 282.4 K forgets the factor 2. 11,454.0 K forgets the m²/s² → kJ/kg conversion. 248.8 K subtracts instead of adds."
+  },
+  "level": 1,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng nhiệt độ hãm",
+   "en": "Added – generated from the type: stagnation temperature"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí bay ở 260 m/s, nhiệt độ 255 K và áp suất 50 kPa (c_p = 1,005 kJ/(kg·K); k = 1,4). Áp suất hãm P₀ (hãm đẳng entropi) là:",
+   "en": "Air flies at 260 m/s, temperature 255 K and pressure 50 kPa (c_p = 1.005 kJ/(kg·K); k = 1.4). The stagnation pressure P₀ (isentropic stop) is:"
+  },
+  "opts": [
+   {
+    "vi": "77,1 kPa",
+    "en": "77.1 kPa"
+   },
+   {
+    "vi": "51,8 kPa",
+    "en": "51.8 kPa"
+   },
+   {
+    "vi": "56,6 kPa",
+    "en": "56.6 kPa"
+   },
+   {
+    "vi": "113,5 kPa",
+    "en": "113.5 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = 255 + 260²/2010 = 288,6 K; P₀ = 50 × (288,6/255)^3,5 = 77,1 kPa. Các phương án còn lại: 51,8 kPa đảo mũ: (k−1)/k. 56,6 kPa mũ 1 (đẳng áp). 113,5 kPa quên hệ số 2 trong T₀.",
+   "en": "T₀ = 255 + 260²/2010 = 288.6 K; P₀ = 50 × (288.6/255)^3.5 = 77.1 kPa. The other options: 51.8 kPa inverts the exponent: (k−1)/k. 56.6 kPa exponent 1 (isobaric). 113.5 kPa forgets the factor 2 in T₀."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng áp suất hãm",
+   "en": "Added – generated from the type: stagnation pressure"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí bay ở 280 m/s, nhiệt độ 230 K và áp suất 30 kPa (c_p = 1,005 kJ/(kg·K); k = 1,4). Áp suất hãm P₀ (hãm đẳng entropi) là:",
+   "en": "Air flies at 280 m/s, temperature 230 K and pressure 30 kPa (c_p = 1.005 kJ/(kg·K); k = 1.4). The stagnation pressure P₀ (isentropic stop) is:"
+  },
+  "opts": [
+   {
+    "vi": "51,9 kPa",
+    "en": "51.9 kPa"
+   },
+   {
+    "vi": "31,4 kPa",
+    "en": "31.4 kPa"
+   },
+   {
+    "vi": "35,1 kPa",
+    "en": "35.1 kPa"
+   },
+   {
+    "vi": "83,4 kPa",
+    "en": "83.4 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = 230 + 280²/2010 = 269,0 K; P₀ = 30 × (269,0/230)^3,5 = 51,9 kPa. Các phương án còn lại: 31,4 kPa đảo mũ: (k−1)/k. 35,1 kPa mũ 1 (đẳng áp). 83,4 kPa quên hệ số 2 trong T₀.",
+   "en": "T₀ = 230 + 280²/2010 = 269.0 K; P₀ = 30 × (269.0/230)^3.5 = 51.9 kPa. The other options: 31.4 kPa inverts the exponent: (k−1)/k. 35.1 kPa exponent 1 (isobaric). 83.4 kPa forgets the factor 2 in T₀."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng áp suất hãm",
+   "en": "Added – generated from the type: stagnation pressure"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí bay ở 200 m/s, nhiệt độ 288,15 K và áp suất 101,325 kPa (c_p = 1,005 kJ/(kg·K); k = 1,4). Áp suất hãm P₀ (hãm đẳng entropi) là:",
+   "en": "Air flies at 200 m/s, temperature 288.15 K and pressure 101.325 kPa (c_p = 1.005 kJ/(kg·K); k = 1.4). The stagnation pressure P₀ (isentropic stop) is:"
+  },
+  "opts": [
+   {
+    "vi": "128,0 kPa",
+    "en": "128.0 kPa"
+   },
+   {
+    "vi": "103,3 kPa",
+    "en": "103.3 kPa"
+   },
+   {
+    "vi": "108,3 kPa",
+    "en": "108.3 kPa"
+   },
+   {
+    "vi": "159,4 kPa",
+    "en": "159.4 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = 288,15 + 200²/2010 = 308,1 K; P₀ = 101,325 × (308,1/288,15)^3,5 = 128,0 kPa. Các phương án còn lại: 103,3 kPa đảo mũ: (k−1)/k. 108,3 kPa mũ 1 (đẳng áp). 159,4 kPa quên hệ số 2 trong T₀.",
+   "en": "T₀ = 288.15 + 200²/2010 = 308.1 K; P₀ = 101.325 × (308.1/288.15)^3.5 = 128.0 kPa. The other options: 103.3 kPa inverts the exponent: (k−1)/k. 108.3 kPa exponent 1 (isobaric). 159.4 kPa forgets the factor 2 in T₀."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng áp suất hãm",
+   "en": "Added – generated from the type: stagnation pressure"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí bay ở 240 m/s, nhiệt độ 270 K và áp suất 70 kPa (c_p = 1,005 kJ/(kg·K); k = 1,4). Áp suất hãm P₀ (hãm đẳng entropi) là:",
+   "en": "Air flies at 240 m/s, temperature 270 K and pressure 70 kPa (c_p = 1.005 kJ/(kg·K); k = 1.4). The stagnation pressure P₀ (isentropic stop) is:"
+  },
+  "opts": [
+   {
+    "vi": "99,6 kPa",
+    "en": "99.6 kPa"
+   },
+   {
+    "vi": "72,0 kPa",
+    "en": "72.0 kPa"
+   },
+   {
+    "vi": "77,4 kPa",
+    "en": "77.4 kPa"
+   },
+   {
+    "vi": "137,3 kPa",
+    "en": "137.3 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀ = 270 + 240²/2010 = 298,7 K; P₀ = 70 × (298,7/270)^3,5 = 99,6 kPa. Các phương án còn lại: 72,0 kPa đảo mũ: (k−1)/k. 77,4 kPa mũ 1 (đẳng áp). 137,3 kPa quên hệ số 2 trong T₀.",
+   "en": "T₀ = 270 + 240²/2010 = 298.7 K; P₀ = 70 × (298.7/270)^3.5 = 99.6 kPa. The other options: 72.0 kPa inverts the exponent: (k−1)/k. 77.4 kPa exponent 1 (isobaric). 137.3 kPa forgets the factor 2 in T₀."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng áp suất hãm",
+   "en": "Added – generated from the type: stagnation pressure"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: ODE + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) ở 217 K chảy với vận tốc 250 m/s. Số Mach là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) at 217 K flows at 250 m/s. The Mach number is:"
+  },
+  "opts": [
+   {
+    "vi": "0,847",
+    "en": "0.847"
+   },
+   {
+    "vi": "26,774",
+    "en": "26.774"
+   },
+   {
+    "vi": "1,181",
+    "en": "1.181"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c = √(kRT) = √(1,400 × 287,0 × 217) = 295,3 m/s; Ma = V/c = 250/295,3 = 0,847 (cận âm). Các phương án còn lại: 26,774 quên đổi kJ → J (thiếu ×1000 trong căn). 1,181 đảo tỉ số c/V.",
+   "en": "c = √(kRT) = √(1.400 × 287.0 × 217) = 295.3 m/s; Ma = V/c = 250/295.3 = 0.847 (subsonic). The other options: 26.774 forgets kJ → J (missing ×1000 inside the root). 1.181 inverts the ratio c/V."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tốc độ âm và số Mach",
+   "en": "Speed of sound and Mach number"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng số Mach theo khí",
+   "en": "Added – generated from the type: Mach number by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical dP/drho at constant s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Heli (k = 1,667; R = 2,0769 kJ/(kg·K)) ở 400 K chảy với vận tốc 900 m/s. Số Mach là:",
+   "en": "Helium (k = 1.667; R = 2.0769 kJ/(kg·K)) at 400 K flows at 900 m/s. The Mach number is:"
+  },
+  "opts": [
+   {
+    "vi": "0,765",
+    "en": "0.765"
+   },
+   {
+    "vi": "2,245",
+    "en": "2.245"
+   },
+   {
+    "vi": "24,184",
+    "en": "24.184"
+   },
+   {
+    "vi": "1,308",
+    "en": "1.308"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c = √(kRT) = √(1,667 × 2.076,9 × 400) = 1.176,8 m/s; Ma = V/c = 900/1.176,8 = 0,765 (cận âm). Các phương án còn lại: 2,245 dùng tốc độ âm của không khí. 24,184 quên đổi kJ → J (thiếu ×1000 trong căn). 1,308 đảo tỉ số c/V.",
+   "en": "c = √(kRT) = √(1.667 × 2,076.9 × 400) = 1,176.8 m/s; Ma = V/c = 900/1,176.8 = 0.765 (subsonic). The other options: 2.245 uses the speed of sound of air. 24.184 forgets kJ → J (missing ×1000 inside the root). 1.308 inverts the ratio c/V."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tốc độ âm và số Mach",
+   "en": "Speed of sound and Mach number"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng số Mach theo khí",
+   "en": "Added – generated from the type: Mach number by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical dP/drho at constant s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "CO₂ (k = 1,289; R = 0,1889 kJ/(kg·K)) ở 350 K chảy với vận tốc 280 m/s. Số Mach là:",
+   "en": "Carbon dioxide (k = 1.289; R = 0.1889 kJ/(kg·K)) at 350 K flows at 280 m/s. The Mach number is:"
+  },
+  "opts": [
+   {
+    "vi": "0,959",
+    "en": "0.959"
+   },
+   {
+    "vi": "0,747",
+    "en": "0.747"
+   },
+   {
+    "vi": "30,331",
+    "en": "30.331"
+   },
+   {
+    "vi": "1,043",
+    "en": "1.043"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c = √(kRT) = √(1,289 × 188,9 × 350) = 291,9 m/s; Ma = V/c = 280/291,9 = 0,959 (cận âm). Các phương án còn lại: 0,747 dùng tốc độ âm của không khí. 30,331 quên đổi kJ → J (thiếu ×1000 trong căn). 1,043 đảo tỉ số c/V.",
+   "en": "c = √(kRT) = √(1.289 × 188.9 × 350) = 291.9 m/s; Ma = V/c = 280/291.9 = 0.959 (subsonic). The other options: 0.747 uses the speed of sound of air. 30.331 forgets kJ → J (missing ×1000 inside the root). 1.043 inverts the ratio c/V."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tốc độ âm và số Mach",
+   "en": "Speed of sound and Mach number"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng số Mach theo khí",
+   "en": "Added – generated from the type: Mach number by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical dP/drho at constant s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nitơ (k = 1,4; R = 0,2968 kJ/(kg·K)) ở 300 K chảy với vận tốc 380 m/s. Số Mach là:",
+   "en": "Nitrogen (k = 1.4; R = 0.2968 kJ/(kg·K)) at 300 K flows at 380 m/s. The Mach number is:"
+  },
+  "opts": [
+   {
+    "vi": "1,076",
+    "en": "1.076"
+   },
+   {
+    "vi": "34,035",
+    "en": "34.035"
+   },
+   {
+    "vi": "0,929",
+    "en": "0.929"
+   },
+   {
+    "vi": "3,598",
+    "en": "3.598"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c = √(kRT) = √(1,400 × 296,8 × 300) = 353,1 m/s; Ma = V/c = 380/353,1 = 1,076 (siêu âm). Các phương án còn lại: 34,035 quên đổi kJ → J (thiếu ×1000 trong căn). 0,929 đảo tỉ số c/V. 3,598 dùng °C thay cho K.",
+   "en": "c = √(kRT) = √(1.400 × 296.8 × 300) = 353.1 m/s; Ma = V/c = 380/353.1 = 1.076 (supersonic). The other options: 34.035 forgets kJ → J (missing ×1000 inside the root). 0.929 inverts the ratio c/V. 3.598 uses °C instead of K."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tốc độ âm và số Mach",
+   "en": "Speed of sound and Mach number"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng số Mach theo khí",
+   "en": "Added – generated from the type: Mach number by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical dP/drho at constant s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Argon (k = 1,667; R = 0,2081 kJ/(kg·K)) ở 280 K chảy với vận tốc 300 m/s. Số Mach là:",
+   "en": "Argon (k = 1.667; R = 0.2081 kJ/(kg·K)) at 280 K flows at 300 m/s. The Mach number is:"
+  },
+  "opts": [
+   {
+    "vi": "0,963",
+    "en": "0.963"
+   },
+   {
+    "vi": "0,894",
+    "en": "0.894"
+   },
+   {
+    "vi": "30,440",
+    "en": "30.440"
+   },
+   {
+    "vi": "1,039",
+    "en": "1.039"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c = √(kRT) = √(1,667 × 208,1 × 280) = 311,7 m/s; Ma = V/c = 300/311,7 = 0,963 (cận âm). Các phương án còn lại: 0,894 dùng tốc độ âm của không khí. 30,440 quên đổi kJ → J (thiếu ×1000 trong căn). 1,039 đảo tỉ số c/V.",
+   "en": "c = √(kRT) = √(1.667 × 208.1 × 280) = 311.7 m/s; Ma = V/c = 300/311.7 = 0.963 (subsonic). The other options: 0.894 uses the speed of sound of air. 30.440 forgets kJ → J (missing ×1000 inside the root). 1.039 inverts the ratio c/V."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tốc độ âm và số Mach",
+   "en": "Speed of sound and Mach number"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng số Mach theo khí",
+   "en": "Added – generated from the type: Mach number by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical dP/drho at constant s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Metan (k = 1,3; R = 0,5182 kJ/(kg·K)) ở 320 K chảy với vận tốc 450 m/s. Số Mach là:",
+   "en": "Methane (k = 1.3; R = 0.5182 kJ/(kg·K)) at 320 K flows at 450 m/s. The Mach number is:"
+  },
+  "opts": [
+   {
+    "vi": "0,969",
+    "en": "0.969"
+   },
+   {
+    "vi": "1,255",
+    "en": "1.255"
+   },
+   {
+    "vi": "30,649",
+    "en": "30.649"
+   },
+   {
+    "vi": "1,032",
+    "en": "1.032"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c = √(kRT) = √(1,300 × 518,2 × 320) = 464,3 m/s; Ma = V/c = 450/464,3 = 0,969 (cận âm). Các phương án còn lại: 1,255 dùng tốc độ âm của không khí. 30,649 quên đổi kJ → J (thiếu ×1000 trong căn). 1,032 đảo tỉ số c/V.",
+   "en": "c = √(kRT) = √(1.300 × 518.2 × 320) = 464.3 m/s; Ma = V/c = 450/464.3 = 0.969 (subsonic). The other options: 1.255 uses the speed of sound of air. 30.649 forgets kJ → J (missing ×1000 inside the root). 1.032 inverts the ratio c/V."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tốc độ âm và số Mach",
+   "en": "Speed of sound and Mach number"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng số Mach theo khí",
+   "en": "Added – generated from the type: Mach number by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical dP/drho at constant s)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có T₀ = 450 K, P₀ = 600 kPa chảy đẳng entropi tới Ma = 0,6. Áp suất tĩnh P là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) with T₀ = 450 K, P₀ = 600 kPa flows isentropically to Ma = 0.6. The static pressure P is:"
+  },
+  "opts": [
+   {
+    "vi": "470,4 kPa",
+    "en": "470.4 kPa"
+   },
+   {
+    "vi": "559,7 kPa",
+    "en": "559.7 kPa"
+   },
+   {
+    "vi": "461,9 kPa",
+    "en": "461.9 kPa"
+   },
+   {
+    "vi": "477,7 kPa",
+    "en": "477.7 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0,2000 × 0,36) = 0,9328; P/P₀ = (T/T₀)^(k/(k−1)) = 0,7840; T = 419,8 K; P = 470,4 kPa. Các phương án còn lại: 559,7 kPa dùng T/T₀ mũ −1 cho áp suất. 461,9 kPa trừ thay vì cộng (k−1)Ma²/2. 477,7 kPa dùng k = 1,3 thay cho 1,4.",
+   "en": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0.2000 × 0.36) = 0.9328; P/P₀ = (T/T₀)^(k/(k−1)) = 0.7840; T = 419.8 K; P = 470.4 kPa. The other options: 559.7 kPa uses (T/T₀)^1 for the pressure. 461.9 kPa subtracts instead of adds (k−1)Ma²/2. 477.7 kPa uses k = 1.3 instead of 1.4."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Quan hệ đẳng entropi theo Ma",
+   "en": "Isentropic relations in Ma"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng T, P theo Ma",
+   "en": "Added – generated from the type: T, P from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có T₀ = 500 K, P₀ = 800 kPa chảy đẳng entropi tới Ma = 1,5. Nhiệt độ tĩnh T là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) with T₀ = 500 K, P₀ = 800 kPa flows isentropically to Ma = 1.5. The static temperature T is:"
+  },
+  "opts": [
+   {
+    "vi": "344,8 K",
+    "en": "344.8 K"
+   },
+   {
+    "vi": "263,2 K",
+    "en": "263.2 K"
+   },
+   {
+    "vi": "725,0 K",
+    "en": "725.0 K"
+   },
+   {
+    "vi": "275,0 K",
+    "en": "275.0 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0,2000 × 2,25) = 0,6897; P/P₀ = (T/T₀)^(k/(k−1)) = 0,2724; T = 344,8 K; P = 217,9 kPa. Các phương án còn lại: 263,2 K quên hệ số 1/2 trong (k−1)/2. 725,0 K đảo T/T₀ thành T₀/T. 275,0 K trừ thay vì cộng.",
+   "en": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0.2000 × 2.25) = 0.6897; P/P₀ = (T/T₀)^(k/(k−1)) = 0.2724; T = 344.8 K; P = 217.9 kPa. The other options: 263.2 K forgets the 1/2 in (k−1)/2. 725.0 K inverts T/T₀ into T₀/T. 275.0 K subtracts instead of adds."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Quan hệ đẳng entropi theo Ma",
+   "en": "Isentropic relations in Ma"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng T, P theo Ma",
+   "en": "Added – generated from the type: T, P from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nitơ (k = 1,4; R = 0,2968 kJ/(kg·K)) có T₀ = 400 K, P₀ = 500 kPa chảy đẳng entropi tới Ma = 0,9. Áp suất tĩnh P là:",
+   "en": "Nitrogen (k = 1.4; R = 0.2968 kJ/(kg·K)) with T₀ = 400 K, P₀ = 500 kPa flows isentropically to Ma = 0.9. The static pressure P is:"
+  },
+  "opts": [
+   {
+    "vi": "295,6 kPa",
+    "en": "295.6 kPa"
+   },
+   {
+    "vi": "430,3 kPa",
+    "en": "430.3 kPa"
+   },
+   {
+    "vi": "269,4 kPa",
+    "en": "269.4 kPa"
+   },
+   {
+    "vi": "304,2 kPa",
+    "en": "304.2 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0,2000 × 0,81) = 0,8606; P/P₀ = (T/T₀)^(k/(k−1)) = 0,5913; T = 344,2 K; P = 295,6 kPa. Các phương án còn lại: 430,3 kPa dùng T/T₀ mũ −1 cho áp suất. 269,4 kPa trừ thay vì cộng (k−1)Ma²/2. 304,2 kPa dùng k = 1,3 thay cho 1,4.",
+   "en": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0.2000 × 0.81) = 0.8606; P/P₀ = (T/T₀)^(k/(k−1)) = 0.5913; T = 344.2 K; P = 295.6 kPa. The other options: 430.3 kPa uses (T/T₀)^1 for the pressure. 269.4 kPa subtracts instead of adds (k−1)Ma²/2. 304.2 kPa uses k = 1.3 instead of 1.4."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Quan hệ đẳng entropi theo Ma",
+   "en": "Isentropic relations in Ma"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng T, P theo Ma",
+   "en": "Added – generated from the type: T, P from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "CO₂ (k = 1,289; R = 0,1889 kJ/(kg·K)) có T₀ = 600 K, P₀ = 900 kPa chảy đẳng entropi tới Ma = 1,2. Nhiệt độ tĩnh T là:",
+   "en": "Carbon dioxide (k = 1.289; R = 0.1889 kJ/(kg·K)) with T₀ = 600 K, P₀ = 900 kPa flows isentropically to Ma = 1.2. The static temperature T is:"
+  },
+  "opts": [
+   {
+    "vi": "496,7 K",
+    "en": "496.7 K"
+   },
+   {
+    "vi": "423,7 K",
+    "en": "423.7 K"
+   },
+   {
+    "vi": "724,8 K",
+    "en": "724.8 K"
+   },
+   {
+    "vi": "475,2 K",
+    "en": "475.2 K"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0,1445 × 1,44) = 0,8278; P/P₀ = (T/T₀)^(k/(k−1)) = 0,4304; T = 496,7 K; P = 387,3 kPa. Các phương án còn lại: 423,7 K quên hệ số 1/2 trong (k−1)/2. 724,8 K đảo T/T₀ thành T₀/T. 475,2 K trừ thay vì cộng.",
+   "en": "T/T₀ = 1/(1 + (k−1)Ma²/2) = 1/(1 + 0.1445 × 1.44) = 0.8278; P/P₀ = (T/T₀)^(k/(k−1)) = 0.4304; T = 496.7 K; P = 387.3 kPa. The other options: 423.7 K forgets the 1/2 in (k−1)/2. 724.8 K inverts T/T₀ into T₀/T. 475.2 K subtracts instead of adds."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Quan hệ đẳng entropi theo Ma",
+   "en": "Isentropic relations in Ma"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng T, P theo Ma",
+   "en": "Added – generated from the type: T, P from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy nén đẳng entropi nhận không khí (k = 1,4; R = 0,287 kJ/(kg·K)) ở nhiệt độ hãm 288 K, tỉ số áp suất hãm 6, lưu lượng 0,5 kg/s. Công suất cấp là:",
+   "en": "An isentropic compressor takes air (k = 1.4; R = 0.287 kJ/(kg·K)) at stagnation temperature 288 K, stagnation pressure ratio 6, flow 0.5 kg/s. The power input is:"
+  },
+  "opts": [
+   {
+    "vi": "97 kW",
+    "en": "97 kW"
+   },
+   {
+    "vi": "376 kW",
+    "en": "376 kW"
+   },
+   {
+    "vi": "193 kW",
+    "en": "193 kW"
+   },
+   {
+    "vi": "241 kW",
+    "en": "241 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀₂ = 288 × 6^0,2857 = 480,5 K; w = c_p(T₀₂ − T₀₁) = 1,0045 × 192,5 = 193,4 kJ/kg; Ẇ = 0,5 × 193,4 = 97 kW. Các phương án còn lại: 376 kW dùng mũ 1/k. 193 kW quên nhân lưu lượng (đây là kJ/kg). 241 kW lấy c_p·T₀₂ thay cho độ tăng.",
+   "en": "T₀₂ = 288 × 6^0.2857 = 480.5 K; w = c_p(T₀₂ − T₀₁) = 1.0045 × 192.5 = 193.4 kJ/kg; Ẇ = 0.5 × 193.4 = 97 kW. The other options: 376 kW uses the exponent 1/k. 193 kW forgets the flow rate (this is kJ/kg). 241 kW takes c_p·T₀₂ instead of the rise."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất máy nén",
+   "en": "Added – generated from the type: compressor power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of v dP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy nén đẳng entropi nhận không khí (k = 1,4; R = 0,287 kJ/(kg·K)) ở nhiệt độ hãm 300 K, tỉ số áp suất hãm 12, lưu lượng 0,1 kg/s. Công suất cấp là:",
+   "en": "An isentropic compressor takes air (k = 1.4; R = 0.287 kJ/(kg·K)) at stagnation temperature 300 K, stagnation pressure ratio 12, flow 0.1 kg/s. The power input is:"
+  },
+  "opts": [
+   {
+    "vi": "31 kW",
+    "en": "31 kW"
+   },
+   {
+    "vi": "148 kW",
+    "en": "148 kW"
+   },
+   {
+    "vi": "312 kW",
+    "en": "312 kW"
+   },
+   {
+    "vi": "61 kW",
+    "en": "61 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀₂ = 300 × 12^0,2857 = 610,2 K; w = c_p(T₀₂ − T₀₁) = 1,0045 × 310,2 = 311,6 kJ/kg; Ẇ = 0,1 × 311,6 = 31 kW. Các phương án còn lại: 148 kW dùng mũ 1/k. 312 kW quên nhân lưu lượng (đây là kJ/kg). 61 kW lấy c_p·T₀₂ thay cho độ tăng.",
+   "en": "T₀₂ = 300 × 12^0.2857 = 610.2 K; w = c_p(T₀₂ − T₀₁) = 1.0045 × 310.2 = 311.6 kJ/kg; Ẇ = 0.1 × 311.6 = 31 kW. The other options: 148 kW uses the exponent 1/k. 312 kW forgets the flow rate (this is kJ/kg). 61 kW takes c_p·T₀₂ instead of the rise."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất máy nén",
+   "en": "Added – generated from the type: compressor power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of v dP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy nén đẳng entropi nhận không khí (k = 1,4; R = 0,287 kJ/(kg·K)) ở nhiệt độ hãm 250 K, tỉ số áp suất hãm 8, lưu lượng 2 kg/s. Công suất cấp là:",
+   "en": "An isentropic compressor takes air (k = 1.4; R = 0.287 kJ/(kg·K)) at stagnation temperature 250 K, stagnation pressure ratio 8, flow 2 kg/s. The power input is:"
+  },
+  "opts": [
+   {
+    "vi": "408 kW",
+    "en": "408 kW"
+   },
+   {
+    "vi": "1.716 kW",
+    "en": "1,716 kW"
+   },
+   {
+    "vi": "204 kW",
+    "en": "204 kW"
+   },
+   {
+    "vi": "910 kW",
+    "en": "910 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀₂ = 250 × 8^0,2857 = 452,9 K; w = c_p(T₀₂ − T₀₁) = 1,0045 × 202,9 = 203,8 kJ/kg; Ẇ = 2 × 203,8 = 408 kW. Các phương án còn lại: 1.716 kW dùng mũ 1/k. 204 kW quên nhân lưu lượng (đây là kJ/kg). 910 kW lấy c_p·T₀₂ thay cho độ tăng.",
+   "en": "T₀₂ = 250 × 8^0.2857 = 452.9 K; w = c_p(T₀₂ − T₀₁) = 1.0045 × 202.9 = 203.8 kJ/kg; Ẇ = 2 × 203.8 = 408 kW. The other options: 1,716 kW uses the exponent 1/k. 204 kW forgets the flow rate (this is kJ/kg). 910 kW takes c_p·T₀₂ instead of the rise."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất máy nén",
+   "en": "Added – generated from the type: compressor power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of v dP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy nén đẳng entropi nhận không khí (k = 1,4; R = 0,287 kJ/(kg·K)) ở nhiệt độ hãm 310 K, tỉ số áp suất hãm 4, lưu lượng 1,5 kg/s. Công suất cấp là:",
+   "en": "An isentropic compressor takes air (k = 1.4; R = 0.287 kJ/(kg·K)) at stagnation temperature 310 K, stagnation pressure ratio 4, flow 1.5 kg/s. The power input is:"
+  },
+  "opts": [
+   {
+    "vi": "227 kW",
+    "en": "227 kW"
+   },
+   {
+    "vi": "790 kW",
+    "en": "790 kW"
+   },
+   {
+    "vi": "151 kW",
+    "en": "151 kW"
+   },
+   {
+    "vi": "694 kW",
+    "en": "694 kW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T₀₂ = 310 × 4^0,2857 = 460,7 K; w = c_p(T₀₂ − T₀₁) = 1,0045 × 150,7 = 151,3 kJ/kg; Ẇ = 1,5 × 151,3 = 227 kW. Các phương án còn lại: 790 kW dùng mũ 1/k. 151 kW quên nhân lưu lượng (đây là kJ/kg). 694 kW lấy c_p·T₀₂ thay cho độ tăng.",
+   "en": "T₀₂ = 310 × 4^0.2857 = 460.7 K; w = c_p(T₀₂ − T₀₁) = 1.0045 × 150.7 = 151.3 kJ/kg; Ẇ = 1.5 × 151.3 = 227 kW. The other options: 790 kW uses the exponent 1/k. 151 kW forgets the flow rate (this is kJ/kg). 694 kW takes c_p·T₀₂ instead of the rise."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công suất máy nén",
+   "en": "Added – generated from the type: compressor power"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of v dP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sản phẩm cháy (k = 1,33; R = 0,287 kJ/(kg·K)) vào tuabin ở nhiệt độ hãm 1100 K và giãn nở đẳng entropi với tỉ số áp suất hãm 12. Công riêng của tuabin là:",
+   "en": "Combustion products (k = 1.33; R = 0.287 kJ/(kg·K)) enter a turbine at stagnation temperature 1100 K and expand isentropically with a stagnation pressure ratio 12. The specific work of the turbine is:"
+  },
+  "opts": [
+   {
+    "vi": "586 kJ/kg",
+    "en": "586 kJ/kg"
+   },
+   {
+    "vi": "562 kJ/kg",
+    "en": "562 kJ/kg"
+   },
+   {
+    "vi": "1.076 kJ/kg",
+    "en": "1,076 kJ/kg"
+   },
+   {
+    "vi": "145 kJ/kg",
+    "en": "145 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c_p = kR/(k−1) = 1,1567; T₀₂ = 1100 × (1/12)^0,2481 = 593,8 K; w = c_p(T₀₁ − T₀₂) = 1,1567 × 506,2 = 585,5 kJ/kg. Các phương án còn lại: 562 kJ/kg dùng k = 1,4 của không khí. 1.076 kJ/kg dùng mũ 1/k. 145 kJ/kg dùng R thay cho c_p.",
+   "en": "c_p = kR/(k−1) = 1.1567; T₀₂ = 1100 × (1/12)^0.2481 = 593.8 K; w = c_p(T₀₁ − T₀₂) = 1.1567 × 506.2 = 585.5 kJ/kg. The other options: 562 kJ/kg uses k = 1.4 of air. 1,076 kJ/kg uses the exponent 1/k. 145 kJ/kg uses R instead of c_p."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công tuabin",
+   "en": "Added – generated from the type: turbine work"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of RT dlnP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sản phẩm cháy (k = 1,33; R = 0,287 kJ/(kg·K)) vào tuabin ở nhiệt độ hãm 1300 K và giãn nở đẳng entropi với tỉ số áp suất hãm 20. Công riêng của tuabin là:",
+   "en": "Combustion products (k = 1.33; R = 0.287 kJ/(kg·K)) enter a turbine at stagnation temperature 1300 K and expand isentropically with a stagnation pressure ratio 20. The specific work of the turbine is:"
+  },
+  "opts": [
+   {
+    "vi": "789 kJ/kg",
+    "en": "789 kJ/kg"
+   },
+   {
+    "vi": "751 kJ/kg",
+    "en": "751 kJ/kg"
+   },
+   {
+    "vi": "1.346 kJ/kg",
+    "en": "1,346 kJ/kg"
+   },
+   {
+    "vi": "196 kJ/kg",
+    "en": "196 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c_p = kR/(k−1) = 1,1567; T₀₂ = 1300 × (1/20)^0,2481 = 618,2 K; w = c_p(T₀₁ − T₀₂) = 1,1567 × 681,8 = 788,6 kJ/kg. Các phương án còn lại: 751 kJ/kg dùng k = 1,4 của không khí. 1.346 kJ/kg dùng mũ 1/k. 196 kJ/kg dùng R thay cho c_p.",
+   "en": "c_p = kR/(k−1) = 1.1567; T₀₂ = 1300 × (1/20)^0.2481 = 618.2 K; w = c_p(T₀₁ − T₀₂) = 1.1567 × 681.8 = 788.6 kJ/kg. The other options: 751 kJ/kg uses k = 1.4 of air. 1,346 kJ/kg uses the exponent 1/k. 196 kJ/kg uses R instead of c_p."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công tuabin",
+   "en": "Added – generated from the type: turbine work"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of RT dlnP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sản phẩm cháy (k = 1,33; R = 0,287 kJ/(kg·K)) vào tuabin ở nhiệt độ hãm 950 K và giãn nở đẳng entropi với tỉ số áp suất hãm 6. Công riêng của tuabin là:",
+   "en": "Combustion products (k = 1.33; R = 0.287 kJ/(kg·K)) enter a turbine at stagnation temperature 950 K and expand isentropically with a stagnation pressure ratio 6. The specific work of the turbine is:"
+  },
+  "opts": [
+   {
+    "vi": "394 kJ/kg",
+    "en": "394 kJ/kg"
+   },
+   {
+    "vi": "382 kJ/kg",
+    "en": "382 kJ/kg"
+   },
+   {
+    "vi": "813 kJ/kg",
+    "en": "813 kJ/kg"
+   },
+   {
+    "vi": "98 kJ/kg",
+    "en": "98 kJ/kg"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "c_p = kR/(k−1) = 1,1567; T₀₂ = 950 × (1/6)^0,2481 = 609,0 K; w = c_p(T₀₁ − T₀₂) = 1,1567 × 341,0 = 394,4 kJ/kg. Các phương án còn lại: 382 kJ/kg dùng k = 1,4 của không khí. 813 kJ/kg dùng mũ 1/k. 98 kJ/kg dùng R thay cho c_p.",
+   "en": "c_p = kR/(k−1) = 1.1567; T₀₂ = 950 × (1/6)^0.2481 = 609.0 K; w = c_p(T₀₁ − T₀₂) = 1.1567 × 341.0 = 394.4 kJ/kg. The other options: 382 kJ/kg uses k = 1.4 of air. 813 kJ/kg uses the exponent 1/k. 98 kJ/kg uses R instead of c_p."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Công máy nén / tuabin đẳng entropi",
+   "en": "Isentropic compressor / turbine work"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng công tuabin",
+   "en": "Added – generated from the type: turbine work"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: integral of RT dlnP)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Heli (k = 1,667; R = 2,0769 kJ/(kg·K)) có áp suất hãm 800 kPa và nhiệt độ hãm 500 K đi vào vòi phun hội tụ–phân kỳ (vận tốc vào ≈ 0). Áp suất tới hạn P* là:",
+   "en": "Helium (k = 1.667; R = 2.0769 kJ/(kg·K)) with stagnation pressure 800 kPa and stagnation temperature 500 K enters a converging–diverging nozzle (inlet velocity ≈ 0). The critical pressure P* is:"
+  },
+  "opts": [
+   {
+    "vi": "389,7 kPa",
+    "en": "389.7 kPa"
+   },
+   {
+    "vi": "422,6 kPa",
+    "en": "422.6 kPa"
+   },
+   {
+    "vi": "599,9 kPa",
+    "en": "599.9 kPa"
+   },
+   {
+    "vi": "519,6 kPa",
+    "en": "519.6 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2,667)^(1,667/0,667) = 0,4871; P* = 0,4871 × 800 = 389,7 kPa; T* = 0,7499 × 500 = 375,0 K. Các phương án còn lại: 422,6 kPa dùng P*/P₀ = 0,5283 của không khí. 599,9 kPa dùng T*/T₀ = 2/(k+1) cho áp suất. 519,6 kPa dùng ρ*/ρ₀ (mũ 1/(k−1)).",
+   "en": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2.667)^(1.667/0.667) = 0.4871; P* = 0.4871 × 800 = 389.7 kPa; T* = 0.7499 × 500 = 375.0 K. The other options: 422.6 kPa uses P*/P₀ = 0.5283 of air. 599.9 kPa uses T*/T₀ = 2/(k+1) for the pressure. 519.6 kPa uses ρ*/ρ₀ (exponent 1/(k−1))."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất tới hạn",
+   "en": "Critical properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tính chất tới hạn theo khí",
+   "en": "Added – generated from the type: critical properties by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Metan (k = 1,3; R = 0,5182 kJ/(kg·K)) có áp suất hãm 600 kPa và nhiệt độ hãm 700 K đi vào vòi phun hội tụ–phân kỳ (vận tốc vào ≈ 0). Áp suất tới hạn P* là:",
+   "en": "Methane (k = 1.3; R = 0.5182 kJ/(kg·K)) with stagnation pressure 600 kPa and stagnation temperature 700 K enters a converging–diverging nozzle (inlet velocity ≈ 0). The critical pressure P* is:"
+  },
+  "opts": [
+   {
+    "vi": "327,4 kPa",
+    "en": "327.4 kPa"
+   },
+   {
+    "vi": "317,0 kPa",
+    "en": "317.0 kPa"
+   },
+   {
+    "vi": "521,7 kPa",
+    "en": "521.7 kPa"
+   },
+   {
+    "vi": "376,6 kPa",
+    "en": "376.6 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2,300)^(1,300/0,300) = 0,5457; P* = 0,5457 × 600 = 327,4 kPa; T* = 0,8696 × 700 = 608,7 K. Các phương án còn lại: 317,0 kPa dùng P*/P₀ = 0,5283 của không khí. 521,7 kPa dùng T*/T₀ = 2/(k+1) cho áp suất. 376,6 kPa dùng ρ*/ρ₀ (mũ 1/(k−1)).",
+   "en": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2.300)^(1.300/0.300) = 0.5457; P* = 0.5457 × 600 = 327.4 kPa; T* = 0.8696 × 700 = 608.7 K. The other options: 317.0 kPa uses P*/P₀ = 0.5283 of air. 521.7 kPa uses T*/T₀ = 2/(k+1) for the pressure. 376.6 kPa uses ρ*/ρ₀ (exponent 1/(k−1))."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất tới hạn",
+   "en": "Critical properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tính chất tới hạn theo khí",
+   "en": "Added – generated from the type: critical properties by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "CO₂ (k = 1,289; R = 0,1889 kJ/(kg·K)) có áp suất hãm 1000 kPa và nhiệt độ hãm 600 K đi vào vòi phun hội tụ–phân kỳ (vận tốc vào ≈ 0). Áp suất tới hạn P* là:",
+   "en": "Carbon dioxide (k = 1.289; R = 0.1889 kJ/(kg·K)) with stagnation pressure 1000 kPa and stagnation temperature 600 K enters a converging–diverging nozzle (inlet velocity ≈ 0). The critical pressure P* is:"
+  },
+  "opts": [
+   {
+    "vi": "547,7 kPa",
+    "en": "547.7 kPa"
+   },
+   {
+    "vi": "528,3 kPa",
+    "en": "528.3 kPa"
+   },
+   {
+    "vi": "873,7 kPa",
+    "en": "873.7 kPa"
+   },
+   {
+    "vi": "626,9 kPa",
+    "en": "626.9 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2,289)^(1,289/0,289) = 0,5477; P* = 0,5477 × 1000 = 547,7 kPa; T* = 0,8737 × 600 = 524,2 K. Các phương án còn lại: 528,3 kPa dùng P*/P₀ = 0,5283 của không khí. 873,7 kPa dùng T*/T₀ = 2/(k+1) cho áp suất. 626,9 kPa dùng ρ*/ρ₀ (mũ 1/(k−1)).",
+   "en": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2.289)^(1.289/0.289) = 0.5477; P* = 0.5477 × 1000 = 547.7 kPa; T* = 0.8737 × 600 = 524.2 K. The other options: 528.3 kPa uses P*/P₀ = 0.5283 of air. 873.7 kPa uses T*/T₀ = 2/(k+1) for the pressure. 626.9 kPa uses ρ*/ρ₀ (exponent 1/(k−1))."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất tới hạn",
+   "en": "Critical properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tính chất tới hạn theo khí",
+   "en": "Added – generated from the type: critical properties by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sản phẩm cháy (k = 1,33; R = 0,287 kJ/(kg·K)) có áp suất hãm 900 kPa và nhiệt độ hãm 1100 K đi vào vòi phun hội tụ–phân kỳ (vận tốc vào ≈ 0). Áp suất tới hạn P* là:",
+   "en": "Combustion products (k = 1.33; R = 0.287 kJ/(kg·K)) with stagnation pressure 900 kPa and stagnation temperature 1100 K enters a converging–diverging nozzle (inlet velocity ≈ 0). The critical pressure P* is:"
+  },
+  "opts": [
+   {
+    "vi": "486,3 kPa",
+    "en": "486.3 kPa"
+   },
+   {
+    "vi": "475,5 kPa",
+    "en": "475.5 kPa"
+   },
+   {
+    "vi": "772,5 kPa",
+    "en": "772.5 kPa"
+   },
+   {
+    "vi": "566,6 kPa",
+    "en": "566.6 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2,330)^(1,330/0,330) = 0,5404; P* = 0,5404 × 900 = 486,3 kPa; T* = 0,8584 × 1100 = 944,2 K. Các phương án còn lại: 475,5 kPa dùng P*/P₀ = 0,5283 của không khí. 772,5 kPa dùng T*/T₀ = 2/(k+1) cho áp suất. 566,6 kPa dùng ρ*/ρ₀ (mũ 1/(k−1)).",
+   "en": "P*/P₀ = (2/(k+1))^(k/(k−1)) = (2/2.330)^(1.330/0.330) = 0.5404; P* = 0.5404 × 900 = 486.3 kPa; T* = 0.8584 × 1100 = 944.2 K. The other options: 475.5 kPa uses P*/P₀ = 0.5283 of air. 772.5 kPa uses T*/T₀ = 2/(k+1) for the pressure. 566.6 kPa uses ρ*/ρ₀ (exponent 1/(k−1))."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tính chất tới hạn",
+   "en": "Critical properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng tính chất tới hạn theo khí",
+   "en": "Added – generated from the type: critical properties by gas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòi phun nghẹt, diện tích cổ họng 12 cm². Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 800 kPa, T₀ = 500 K. Lưu lượng khối ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (đơn vị SI đúng) là:",
+   "en": "A choked nozzle with a throat area of 12 cm². Air (k = 1.4; R = 0.287 kJ/(kg·K)) has P₀ = 800 kPa, T₀ = 500 K. The mass flow ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (correct SI units) is:"
+  },
+  "opts": [
+   {
+    "vi": "1,735 kg/s",
+    "en": "1.735 kg/s"
+   },
+   {
+    "vi": "0,055 kg/s",
+    "en": "0.055 kg/s"
+   },
+   {
+    "vi": "1.735,264 kg/s",
+    "en": "1,735.264 kg/s"
+   },
+   {
+    "vi": "0,174 kg/s",
+    "en": "0.174 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A* = 12×10⁻⁴ m²; P₀ = 800.000 Pa; R = 287,0 J/(kg·K); √(k/(RT₀)) = 0,003123 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0,5787; ṁ = 1,735 kg/s. Thay nguyên văn kPa và kJ/(kg·K) cho 0,0549 kg/s (sai). Các phương án còn lại: 0,055 kg/s thay thẳng kPa và kJ/(kg·K) (thiếu √1000). 1.735,264 kg/s P₀ theo Pa và R theo kJ (thừa 10³). 0,174 kg/s đổi cm² → m² bằng 10⁻³ thay vì 10⁻⁴.",
+   "en": "A* = 12×10⁻⁴ m²; P₀ = 800,000 Pa; R = 287.0 J/(kg·K); √(k/(RT₀)) = 0.003123 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0.5787; ṁ = 1.735 kg/s. Plugging kPa and kJ/(kg·K) literally gives 0.0549 kg/s (wrong). The other options: 0.055 kg/s plugs kPa and kJ/(kg·K) straight in (missing √1000). 1,735.264 kg/s P₀ in Pa and R in kJ (extra 10³). 0.174 kg/s converts cm² → m² with 10⁻³ instead of 10⁻⁴."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Bẫy đơn vị (kPa/Pa, kJ/kg·K)",
+   "en": "Unit traps (kPa/Pa, kJ/kg·K)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng dòng nghẹt, bẫy đơn vị",
+   "en": "Added – generated from the type: choked flow, unit trap"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòi phun nghẹt, diện tích cổ họng 5 cm². Heli (k = 1,667; R = 2,0769 kJ/(kg·K)) có P₀ = 1200 kPa, T₀ = 400 K. Lưu lượng khối ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (đơn vị SI đúng) là:",
+   "en": "A choked nozzle with a throat area of 5 cm². Helium (k = 1.667; R = 2.0769 kJ/(kg·K)) has P₀ = 1200 kPa, T₀ = 400 K. The mass flow ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (correct SI units) is:"
+  },
+  "opts": [
+   {
+    "vi": "0,478 kg/s",
+    "en": "0.478 kg/s"
+   },
+   {
+    "vi": "0,015 kg/s",
+    "en": "0.015 kg/s"
+   },
+   {
+    "vi": "478,067 kg/s",
+    "en": "478.067 kg/s"
+   },
+   {
+    "vi": "0,048 kg/s",
+    "en": "0.048 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A* = 5×10⁻⁴ m²; P₀ = 1.200.000 Pa; R = 2.076,9 J/(kg·K); √(k/(RT₀)) = 0,001417 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0,5625; ṁ = 0,478 kg/s. Thay nguyên văn kPa và kJ/(kg·K) cho 0,0151 kg/s (sai). Các phương án còn lại: 0,015 kg/s thay thẳng kPa và kJ/(kg·K) (thiếu √1000). 478,067 kg/s P₀ theo Pa và R theo kJ (thừa 10³). 0,048 kg/s đổi cm² → m² bằng 10⁻³ thay vì 10⁻⁴.",
+   "en": "A* = 5×10⁻⁴ m²; P₀ = 1,200,000 Pa; R = 2,076.9 J/(kg·K); √(k/(RT₀)) = 0.001417 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0.5625; ṁ = 0.478 kg/s. Plugging kPa and kJ/(kg·K) literally gives 0.0151 kg/s (wrong). The other options: 0.015 kg/s plugs kPa and kJ/(kg·K) straight in (missing √1000). 478.067 kg/s P₀ in Pa and R in kJ (extra 10³). 0.048 kg/s converts cm² → m² with 10⁻³ instead of 10⁻⁴."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Bẫy đơn vị (kPa/Pa, kJ/kg·K)",
+   "en": "Unit traps (kPa/Pa, kJ/kg·K)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng dòng nghẹt, bẫy đơn vị",
+   "en": "Added – generated from the type: choked flow, unit trap"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòi phun nghẹt, diện tích cổ họng 20 cm². CO₂ (k = 1,289; R = 0,1889 kJ/(kg·K)) có P₀ = 500 kPa, T₀ = 450 K. Lưu lượng khối ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (đơn vị SI đúng) là:",
+   "en": "A choked nozzle with a throat area of 20 cm². Carbon dioxide (k = 1.289; R = 0.1889 kJ/(kg·K)) has P₀ = 500 kPa, T₀ = 450 K. The mass flow ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (correct SI units) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,282 kg/s",
+    "en": "2.282 kg/s"
+   },
+   {
+    "vi": "0,072 kg/s",
+    "en": "0.072 kg/s"
+   },
+   {
+    "vi": "2.281,779 kg/s",
+    "en": "2,281.779 kg/s"
+   },
+   {
+    "vi": "0,228 kg/s",
+    "en": "0.228 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A* = 20×10⁻⁴ m²; P₀ = 500.000 Pa; R = 188,9 J/(kg·K); √(k/(RT₀)) = 0,003894 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0,5860; ṁ = 2,282 kg/s. Thay nguyên văn kPa và kJ/(kg·K) cho 0,0722 kg/s (sai). Các phương án còn lại: 0,072 kg/s thay thẳng kPa và kJ/(kg·K) (thiếu √1000). 2.281,779 kg/s P₀ theo Pa và R theo kJ (thừa 10³). 0,228 kg/s đổi cm² → m² bằng 10⁻³ thay vì 10⁻⁴.",
+   "en": "A* = 20×10⁻⁴ m²; P₀ = 500,000 Pa; R = 188.9 J/(kg·K); √(k/(RT₀)) = 0.003894 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0.5860; ṁ = 2.282 kg/s. Plugging kPa and kJ/(kg·K) literally gives 0.0722 kg/s (wrong). The other options: 0.072 kg/s plugs kPa and kJ/(kg·K) straight in (missing √1000). 2,281.779 kg/s P₀ in Pa and R in kJ (extra 10³). 0.228 kg/s converts cm² → m² with 10⁻³ instead of 10⁻⁴."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Bẫy đơn vị (kPa/Pa, kJ/kg·K)",
+   "en": "Unit traps (kPa/Pa, kJ/kg·K)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng dòng nghẹt, bẫy đơn vị",
+   "en": "Added – generated from the type: choked flow, unit trap"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòi phun nghẹt, diện tích cổ họng 8 cm². Nitơ (k = 1,4; R = 0,2968 kJ/(kg·K)) có P₀ = 1000 kPa, T₀ = 600 K. Lưu lượng khối ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (đơn vị SI đúng) là:",
+   "en": "A choked nozzle with a throat area of 8 cm². Nitrogen (k = 1.4; R = 0.2968 kJ/(kg·K)) has P₀ = 1000 kPa, T₀ = 600 K. The mass flow ṁ_max = A*P₀√(k/(RT₀))(2/(k+1))^((k+1)/(2(k−1))) (correct SI units) is:"
+  },
+  "opts": [
+   {
+    "vi": "1,298 kg/s",
+    "en": "1.298 kg/s"
+   },
+   {
+    "vi": "0,041 kg/s",
+    "en": "0.041 kg/s"
+   },
+   {
+    "vi": "1.298,084 kg/s",
+    "en": "1,298.084 kg/s"
+   },
+   {
+    "vi": "0,130 kg/s",
+    "en": "0.130 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A* = 8×10⁻⁴ m²; P₀ = 1.000.000 Pa; R = 296,8 J/(kg·K); √(k/(RT₀)) = 0,002804 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0,5787; ṁ = 1,298 kg/s. Thay nguyên văn kPa và kJ/(kg·K) cho 0,0410 kg/s (sai). Các phương án còn lại: 0,041 kg/s thay thẳng kPa và kJ/(kg·K) (thiếu √1000). 1.298,084 kg/s P₀ theo Pa và R theo kJ (thừa 10³). 0,130 kg/s đổi cm² → m² bằng 10⁻³ thay vì 10⁻⁴.",
+   "en": "A* = 8×10⁻⁴ m²; P₀ = 1,000,000 Pa; R = 296.8 J/(kg·K); √(k/(RT₀)) = 0.002804 s/m; (2/(k+1))^((k+1)/(2(k−1))) = 0.5787; ṁ = 1.298 kg/s. Plugging kPa and kJ/(kg·K) literally gives 0.0410 kg/s (wrong). The other options: 0.041 kg/s plugs kPa and kJ/(kg·K) straight in (missing √1000). 1,298.084 kg/s P₀ in Pa and R in kJ (extra 10³). 0.130 kg/s converts cm² → m² with 10⁻³ instead of 10⁻⁴."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Bẫy đơn vị (kPa/Pa, kJ/kg·K)",
+   "en": "Unit traps (kPa/Pa, kJ/kg·K)"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng dòng nghẹt, bẫy đơn vị",
+   "en": "Added – generated from the type: choked flow, unit trap"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: numerical flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 800 kPa, T₀ = 500 K vào vòi hội tụ có diện tích cửa ra 20 cm², xả vào áp suất ngược 600 kPa. Dòng đẳng entropi. Lưu lượng khối là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) at P₀ = 800 kPa, T₀ = 500 K enters a converging nozzle with an exit area of 20 cm² discharging against a back pressure of 600 kPa. Isentropic flow. The mass flow rate is:"
+  },
+  "opts": [
+   {
+    "vi": "2,556 kg/s",
+    "en": "2.556 kg/s"
+   },
+   {
+    "vi": "2,892 kg/s",
+    "en": "2.892 kg/s"
+   },
+   {
+    "vi": "2,130 kg/s",
+    "en": "2.130 kg/s"
+   },
+   {
+    "vi": "80,828 kg/s",
+    "en": "80.828 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 → P* = 422,6 kPa; P_b = 600 kPa > P* ⇒ không nghẹt, P_e = 600,0 kPa, Ma_e = 0,654; T_e = 460,5 K; V_e = 281,5 m/s; ρ_e = 4,539 kg/m³; ṁ = ρ_eA V_e = 2,556 kg/s (ṁ_max = 2,892 kg/s). Các phương án còn lại: 2,892 kg/s bỏ qua chế độ: dùng ṁ_max (nghẹt). 2,130 kg/s nhầm tỉ số mật độ tới hạn 0,6339 và P*/P₀. 80,828 kg/s nhân thừa √1000 (đổi đơn vị hai lần).",
+   "en": "P*/P₀ = 0.5283 → P* = 422.6 kPa; P_b = 600 kPa > P* ⇒ not choked, P_e = 600.0 kPa, Ma_e = 0.654; T_e = 460.5 K; V_e = 281.5 m/s; ρ_e = 4.539 kg/m³; ṁ = ρ_eA V_e = 2.556 kg/s (ṁ_max = 2.892 kg/s). The other options: 2.892 kg/s ignores the regime: uses ṁ_max (choked). 2.130 kg/s mixes up the critical density ratio 0.6339 with P*/P₀. 80.828 kg/s an extra √1000 (units converted twice)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Áp suất ngược và vòi hội tụ",
+   "en": "Back pressure and converging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vòi hội tụ theo P_b",
+   "en": "Added – generated from the type: converging nozzle against P_b"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 800 kPa, T₀ = 500 K vào vòi hội tụ có diện tích cửa ra 20 cm², xả vào áp suất ngược 300 kPa. Dòng đẳng entropi. Lưu lượng khối là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) at P₀ = 800 kPa, T₀ = 500 K enters a converging nozzle with an exit area of 20 cm² discharging against a back pressure of 300 kPa. Isentropic flow. The mass flow rate is:"
+  },
+  "opts": [
+   {
+    "vi": "2,892 kg/s",
+    "en": "2.892 kg/s"
+   },
+   {
+    "vi": "2,742 kg/s",
+    "en": "2.742 kg/s"
+   },
+   {
+    "vi": "2,410 kg/s",
+    "en": "2.410 kg/s"
+   },
+   {
+    "vi": "91,456 kg/s",
+    "en": "91.456 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 → P* = 422,6 kPa; P_b = 300 kPa < P* ⇒ nghẹt, P_e = 422,6 kPa, Ma_e = 1,000; T_e = 416,7 K; V_e = 409,2 m/s; ρ_e = 3,534 kg/m³; ṁ = ρ_eA V_e = 2,892 kg/s (ṁ_max = 2,892 kg/s). Các phương án còn lại: 2,742 kg/s coi dòng không nghẹt và dùng P_e = P_b thấp hơn P*. 2,410 kg/s nhầm tỉ số mật độ tới hạn 0,6339 và P*/P₀. 91,456 kg/s nhân thừa √1000 (đổi đơn vị hai lần).",
+   "en": "P*/P₀ = 0.5283 → P* = 422.6 kPa; P_b = 300 kPa < P* ⇒ choked, P_e = 422.6 kPa, Ma_e = 1.000; T_e = 416.7 K; V_e = 409.2 m/s; ρ_e = 3.534 kg/m³; ṁ = ρ_eA V_e = 2.892 kg/s (ṁ_max = 2.892 kg/s). The other options: 2.742 kg/s treats the flow as not choked and uses P_e = P_b below P*. 2.410 kg/s mixes up the critical density ratio 0.6339 with P*/P₀. 91.456 kg/s an extra √1000 (units converted twice)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Áp suất ngược và vòi hội tụ",
+   "en": "Back pressure and converging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vòi hội tụ theo P_b",
+   "en": "Added – generated from the type: converging nozzle against P_b"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 500 kPa, T₀ = 350 K vào vòi hội tụ có diện tích cửa ra 15 cm², xả vào áp suất ngược 350 kPa. Dòng đẳng entropi. Lưu lượng khối là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) at P₀ = 500 kPa, T₀ = 350 K enters a converging nozzle with an exit area of 15 cm² discharging against a back pressure of 350 kPa. Isentropic flow. The mass flow rate is:"
+  },
+  "opts": [
+   {
+    "vi": "1,511 kg/s",
+    "en": "1.511 kg/s"
+   },
+   {
+    "vi": "1,620 kg/s",
+    "en": "1.620 kg/s"
+   },
+   {
+    "vi": "1,259 kg/s",
+    "en": "1.259 kg/s"
+   },
+   {
+    "vi": "47,766 kg/s",
+    "en": "47.766 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 → P* = 264,1 kPa; P_b = 350 kPa > P* ⇒ không nghẹt, P_e = 350,0 kPa, Ma_e = 0,732; T_e = 316,1 K; V_e = 261,0 m/s; ρ_e = 3,858 kg/m³; ṁ = ρ_eA V_e = 1,511 kg/s (ṁ_max = 1,620 kg/s). Các phương án còn lại: 1,620 kg/s bỏ qua chế độ: dùng ṁ_max (nghẹt). 1,259 kg/s nhầm tỉ số mật độ tới hạn 0,6339 và P*/P₀. 47,766 kg/s nhân thừa √1000 (đổi đơn vị hai lần).",
+   "en": "P*/P₀ = 0.5283 → P* = 264.1 kPa; P_b = 350 kPa > P* ⇒ not choked, P_e = 350.0 kPa, Ma_e = 0.732; T_e = 316.1 K; V_e = 261.0 m/s; ρ_e = 3.858 kg/m³; ṁ = ρ_eA V_e = 1.511 kg/s (ṁ_max = 1.620 kg/s). The other options: 1.620 kg/s ignores the regime: uses ṁ_max (choked). 1.259 kg/s mixes up the critical density ratio 0.6339 with P*/P₀. 47.766 kg/s an extra √1000 (units converted twice)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Áp suất ngược và vòi hội tụ",
+   "en": "Back pressure and converging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vòi hội tụ theo P_b",
+   "en": "Added – generated from the type: converging nozzle against P_b"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 500 kPa, T₀ = 350 K vào vòi hội tụ có diện tích cửa ra 15 cm², xả vào áp suất ngược 150 kPa. Dòng đẳng entropi. Lưu lượng khối là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) at P₀ = 500 kPa, T₀ = 350 K enters a converging nozzle with an exit area of 15 cm² discharging against a back pressure of 150 kPa. Isentropic flow. The mass flow rate is:"
+  },
+  "opts": [
+   {
+    "vi": "1,620 kg/s",
+    "en": "1.620 kg/s"
+   },
+   {
+    "vi": "1,430 kg/s",
+    "en": "1.430 kg/s"
+   },
+   {
+    "vi": "1,350 kg/s",
+    "en": "1.350 kg/s"
+   },
+   {
+    "vi": "51,240 kg/s",
+    "en": "51.240 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 → P* = 264,1 kPa; P_b = 150 kPa < P* ⇒ nghẹt, P_e = 264,1 kPa, Ma_e = 1,000; T_e = 291,7 K; V_e = 342,3 m/s; ρ_e = 3,155 kg/m³; ṁ = ρ_eA V_e = 1,620 kg/s (ṁ_max = 1,620 kg/s). Các phương án còn lại: 1,430 kg/s coi dòng không nghẹt và dùng P_e = P_b thấp hơn P*. 1,350 kg/s nhầm tỉ số mật độ tới hạn 0,6339 và P*/P₀. 51,240 kg/s nhân thừa √1000 (đổi đơn vị hai lần).",
+   "en": "P*/P₀ = 0.5283 → P* = 264.1 kPa; P_b = 150 kPa < P* ⇒ choked, P_e = 264.1 kPa, Ma_e = 1.000; T_e = 291.7 K; V_e = 342.3 m/s; ρ_e = 3.155 kg/m³; ṁ = ρ_eA V_e = 1.620 kg/s (ṁ_max = 1.620 kg/s). The other options: 1.430 kg/s treats the flow as not choked and uses P_e = P_b below P*. 1.350 kg/s mixes up the critical density ratio 0.6339 with P*/P₀. 51.240 kg/s an extra √1000 (units converted twice)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Áp suất ngược và vòi hội tụ",
+   "en": "Back pressure and converging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vòi hội tụ theo P_b",
+   "en": "Added – generated from the type: converging nozzle against P_b"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 1000 kPa, T₀ = 700 K vào vòi hội tụ có diện tích cửa ra 30 cm², xả vào áp suất ngược 700 kPa. Dòng đẳng entropi. Lưu lượng khối là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) at P₀ = 1000 kPa, T₀ = 700 K enters a converging nozzle with an exit area of 30 cm² discharging against a back pressure of 700 kPa. Isentropic flow. The mass flow rate is:"
+  },
+  "opts": [
+   {
+    "vi": "4,272 kg/s",
+    "en": "4.272 kg/s"
+   },
+   {
+    "vi": "4,583 kg/s",
+    "en": "4.583 kg/s"
+   },
+   {
+    "vi": "3,561 kg/s",
+    "en": "3.561 kg/s"
+   },
+   {
+    "vi": "135,104 kg/s",
+    "en": "135.104 kg/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 → P* = 528,3 kPa; P_b = 700 kPa > P* ⇒ không nghẹt, P_e = 700,0 kPa, Ma_e = 0,732; T_e = 632,2 K; V_e = 369,1 m/s; ρ_e = 3,858 kg/m³; ṁ = ρ_eA V_e = 4,272 kg/s (ṁ_max = 4,583 kg/s). Các phương án còn lại: 4,583 kg/s bỏ qua chế độ: dùng ṁ_max (nghẹt). 3,561 kg/s nhầm tỉ số mật độ tới hạn 0,6339 và P*/P₀. 135,104 kg/s nhân thừa √1000 (đổi đơn vị hai lần).",
+   "en": "P*/P₀ = 0.5283 → P* = 528.3 kPa; P_b = 700 kPa > P* ⇒ not choked, P_e = 700.0 kPa, Ma_e = 0.732; T_e = 632.2 K; V_e = 369.1 m/s; ρ_e = 3.858 kg/m³; ṁ = ρ_eA V_e = 4.272 kg/s (ṁ_max = 4.583 kg/s). The other options: 4.583 kg/s ignores the regime: uses ṁ_max (choked). 3.561 kg/s mixes up the critical density ratio 0.6339 with P*/P₀. 135.104 kg/s an extra √1000 (units converted twice)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Áp suất ngược và vòi hội tụ",
+   "en": "Back pressure and converging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng vòi hội tụ theo P_b",
+   "en": "Added – generated from the type: converging nozzle against P_b"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + flux maximum + node thermo.js)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 1000 kPa, T₀ = 600 K (vận tốc vào ≈ 0) giãn nở đẳng entropi trong vòi hội tụ–phân kỳ tới áp suất cửa ra 100 kPa, lưu lượng khối 2 kg/s. Diện tích cửa ra A_e là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) with P₀ = 1000 kPa, T₀ = 600 K (inlet velocity ≈ 0) expands isentropically in a converging–diverging nozzle to an exit pressure of 100 kPa at a mass flow of 2 kg/s. The exit area A_e is:"
+  },
+  "opts": [
+   {
+    "vi": "23,40 cm²",
+    "en": "23.40 cm²"
+   },
+   {
+    "vi": "12,12 cm²",
+    "en": "12.12 cm²"
+   },
+   {
+    "vi": "39,80 cm²",
+    "en": "39.80 cm²"
+   },
+   {
+    "vi": "6,28 cm²",
+    "en": "6.28 cm²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 > P_e/P₀ = 0,100 ⇒ cửa ra siêu âm. A* = ṁ/[P₀√(k/(RT₀))(…)] = 12,121 cm²; Ma_e = √({[(P₀/P_e)^((k−1)/k) − 1]·2/(k−1)}) = 2,157; A_e/A* = 1,931; A_e = 23,40 cm². Các phương án còn lại: 12,12 cm² lấy diện tích cổ họng A* thay cho A_e. 39,80 cm² quên tỉ số vận tốc, chỉ dùng tỉ số khối lượng riêng ρ*/ρ_e. 6,28 cm² chia thay vì nhân cho A/A*.",
+   "en": "P*/P₀ = 0.5283 > P_e/P₀ = 0.100 ⇒ supersonic exit. A* = ṁ/[P₀√(k/(RT₀))(…)] = 12.121 cm²; Ma_e = √({[(P₀/P_e)^((k−1)/k) − 1]·2/(k−1)}) = 2.157; A_e/A* = 1.931; A_e = 23.40 cm². The other options: 12.12 cm² takes the throat area A* instead of A_e. 39.80 cm² forgets the velocity ratio, uses only the density ratio ρ*/ρ_e. 6.28 cm² divides instead of multiplies by A/A*."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Vòi hội tụ–phân kỳ",
+   "en": "Converging–diverging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng diện tích vòi hội tụ–phân kỳ",
+   "en": "Added – generated from the type: converging–diverging areas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux maximum + brentq on A/A*)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nitơ (k = 1,4; R = 0,2968 kJ/(kg·K)) có P₀ = 800 kPa, T₀ = 500 K (vận tốc vào ≈ 0) giãn nở đẳng entropi trong vòi hội tụ–phân kỳ tới áp suất cửa ra 100 kPa, lưu lượng khối 1,5 kg/s. Diện tích cửa ra A_e là:",
+   "en": "Nitrogen (k = 1.4; R = 0.2968 kJ/(kg·K)) with P₀ = 800 kPa, T₀ = 500 K (inlet velocity ≈ 0) expands isentropically in a converging–diverging nozzle to an exit pressure of 100 kPa at a mass flow of 1.5 kg/s. The exit area A_e is:"
+  },
+  "opts": [
+   {
+    "vi": "18,01 cm²",
+    "en": "18.01 cm²"
+   },
+   {
+    "vi": "10,55 cm²",
+    "en": "10.55 cm²"
+   },
+   {
+    "vi": "29,53 cm²",
+    "en": "29.53 cm²"
+   },
+   {
+    "vi": "6,18 cm²",
+    "en": "6.18 cm²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 > P_e/P₀ = 0,125 ⇒ cửa ra siêu âm. A* = ṁ/[P₀√(k/(RT₀))(…)] = 10,549 cm²; Ma_e = √({[(P₀/P_e)^((k−1)/k) − 1]·2/(k−1)}) = 2,014; A_e/A* = 1,708; A_e = 18,01 cm². Các phương án còn lại: 10,55 cm² lấy diện tích cổ họng A* thay cho A_e. 29,53 cm² quên tỉ số vận tốc, chỉ dùng tỉ số khối lượng riêng ρ*/ρ_e. 6,18 cm² chia thay vì nhân cho A/A*.",
+   "en": "P*/P₀ = 0.5283 > P_e/P₀ = 0.125 ⇒ supersonic exit. A* = ṁ/[P₀√(k/(RT₀))(…)] = 10.549 cm²; Ma_e = √({[(P₀/P_e)^((k−1)/k) − 1]·2/(k−1)}) = 2.014; A_e/A* = 1.708; A_e = 18.01 cm². The other options: 10.55 cm² takes the throat area A* instead of A_e. 29.53 cm² forgets the velocity ratio, uses only the density ratio ρ*/ρ_e. 6.18 cm² divides instead of multiplies by A/A*."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Vòi hội tụ–phân kỳ",
+   "en": "Converging–diverging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng diện tích vòi hội tụ–phân kỳ",
+   "en": "Added – generated from the type: converging–diverging areas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux maximum + brentq on A/A*)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4; R = 0,287 kJ/(kg·K)) có P₀ = 1500 kPa, T₀ = 700 K (vận tốc vào ≈ 0) giãn nở đẳng entropi trong vòi hội tụ–phân kỳ tới áp suất cửa ra 200 kPa, lưu lượng khối 3 kg/s. Diện tích cửa ra A_e là:",
+   "en": "Air (k = 1.4; R = 0.287 kJ/(kg·K)) with P₀ = 1500 kPa, T₀ = 700 K (inlet velocity ≈ 0) expands isentropically in a converging–diverging nozzle to an exit pressure of 200 kPa at a mass flow of 3 kg/s. The exit area A_e is:"
+  },
+  "opts": [
+   {
+    "vi": "21,60 cm²",
+    "en": "21.60 cm²"
+   },
+   {
+    "vi": "13,09 cm²",
+    "en": "13.09 cm²"
+   },
+   {
+    "vi": "35,00 cm²",
+    "en": "35.00 cm²"
+   },
+   {
+    "vi": "7,94 cm²",
+    "en": "7.94 cm²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P*/P₀ = 0,5283 > P_e/P₀ = 0,133 ⇒ cửa ra siêu âm. A* = ṁ/[P₀√(k/(RT₀))(…)] = 13,092 cm²; Ma_e = √({[(P₀/P_e)^((k−1)/k) − 1]·2/(k−1)}) = 1,973; A_e/A* = 1,650; A_e = 21,60 cm². Các phương án còn lại: 13,09 cm² lấy diện tích cổ họng A* thay cho A_e. 35,00 cm² quên tỉ số vận tốc, chỉ dùng tỉ số khối lượng riêng ρ*/ρ_e. 7,94 cm² chia thay vì nhân cho A/A*.",
+   "en": "P*/P₀ = 0.5283 > P_e/P₀ = 0.133 ⇒ supersonic exit. A* = ṁ/[P₀√(k/(RT₀))(…)] = 13.092 cm²; Ma_e = √({[(P₀/P_e)^((k−1)/k) − 1]·2/(k−1)}) = 1.973; A_e/A* = 1.650; A_e = 21.60 cm². The other options: 13.09 cm² takes the throat area A* instead of A_e. 35.00 cm² forgets the velocity ratio, uses only the density ratio ρ*/ρ_e. 7.94 cm² divides instead of multiplies by A/A*."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Vòi hội tụ–phân kỳ",
+   "en": "Converging–diverging nozzle"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng diện tích vòi hội tụ–phân kỳ",
+   "en": "Added – generated from the type: converging–diverging areas"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux maximum + brentq on A/A*)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khí lý tưởng k = 1,4 chảy đẳng entropi qua ống có Ma = 0,5. Tỉ số diện tích A/A* (A* là diện tích tại Ma = 1) là:",
+   "en": "An ideal gas with k = 1.4 flows isentropically through a duct at Ma = 0.5. The area ratio A/A* (A* the area where Ma = 1) is:"
+  },
+  "opts": [
+   {
+    "vi": "1,340",
+    "en": "1.340"
+   },
+   {
+    "vi": "0,746",
+    "en": "0.746"
+   },
+   {
+    "vi": "0,898",
+    "en": "0.898"
+   },
+   {
+    "vi": "0,500",
+    "en": "0.500"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/0,5)[0,8333 × 1,0500]^3,000 = 1,3398 (A-32 hàng in: 1,3398). Các phương án còn lại: 0,746 lấy A*/A. 0,898 dùng mũ (k+1)/(k−1) thay cho (k+1)/(2(k−1)). 0,500 lấy A/A* = Ma.",
+   "en": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/0.5)[0.8333 × 1.0500]^3.000 = 1.3398 (A-32 printed row: 1.3398). The other options: 0.746 takes A*/A. 0.898 uses the exponent (k+1)/(k−1) instead of (k+1)/(2(k−1)). 0.500 takes A/A* = Ma."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng A/A* theo Ma",
+   "en": "Added – generated from the type: A/A* from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio; A-32 printed rows)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khí lý tưởng k = 1,4 chảy đẳng entropi qua ống có Ma = 2,5. Tỉ số diện tích A/A* (A* là diện tích tại Ma = 1) là:",
+   "en": "An ideal gas with k = 1.4 flows isentropically through a duct at Ma = 2.5. The area ratio A/A* (A* the area where Ma = 1) is:"
+  },
+  "opts": [
+   {
+    "vi": "2,637",
+    "en": "2.637"
+   },
+   {
+    "vi": "0,379",
+    "en": "0.379"
+   },
+   {
+    "vi": "2,954",
+    "en": "2.954"
+   },
+   {
+    "vi": "17,381",
+    "en": "17.381"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/2,5)[0,8333 × 2,2500]^3,000 = 2,6367 (A-32 hàng in: không có hàng Ma = 2,5). Các phương án còn lại: 0,379 lấy A*/A. 2,954 dùng k = 1,3 thay cho 1,4. 17,381 dùng mũ (k+1)/(k−1) thay cho (k+1)/(2(k−1)).",
+   "en": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/2.5)[0.8333 × 2.2500]^3.000 = 2.6367 (A-32 printed row: no row at Ma = 2.5). The other options: 0.379 takes A*/A. 2.954 uses k = 1.3 instead of 1.4. 17.381 uses the exponent (k+1)/(k−1) instead of (k+1)/(2(k−1))."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng A/A* theo Ma",
+   "en": "Added – generated from the type: A/A* from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio; A-32 printed rows)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khí lý tưởng k = 1,33 chảy đẳng entropi qua ống có Ma = 1,5. Tỉ số diện tích A/A* (A* là diện tích tại Ma = 1) là:",
+   "en": "An ideal gas with k = 1.33 flows isentropically through a duct at Ma = 1.5. The area ratio A/A* (A* the area where Ma = 1) is:"
+  },
+  "opts": [
+   {
+    "vi": "1,185",
+    "en": "1.185"
+   },
+   {
+    "vi": "0,844",
+    "en": "0.844"
+   },
+   {
+    "vi": "2,107",
+    "en": "2.107"
+   },
+   {
+    "vi": "1,500",
+    "en": "1.500"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/1,5)[0,8584 × 1,3713]^3,530 = 1,1853 (A-32 hàng in: k khác 1,4 nên không dùng A-32). Các phương án còn lại: 0,844 lấy A*/A. 2,107 dùng mũ (k+1)/(k−1) thay cho (k+1)/(2(k−1)). 1,500 lấy A/A* = Ma.",
+   "en": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/1.5)[0.8584 × 1.3713]^3.530 = 1.1853 (A-32 printed row: k differs from 1.4 so A-32 does not apply). The other options: 0.844 takes A*/A. 2.107 uses the exponent (k+1)/(k−1) instead of (k+1)/(2(k−1)). 1.500 takes A/A* = Ma."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng A/A* theo Ma",
+   "en": "Added – generated from the type: A/A* from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio; A-32 printed rows)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khí lý tưởng k = 1,4 chảy đẳng entropi qua ống có Ma = 3. Tỉ số diện tích A/A* (A* là diện tích tại Ma = 1) là:",
+   "en": "An ideal gas with k = 1.4 flows isentropically through a duct at Ma = 3. The area ratio A/A* (A* the area where Ma = 1) is:"
+  },
+  "opts": [
+   {
+    "vi": "4,235",
+    "en": "4.235"
+   },
+   {
+    "vi": "0,236",
+    "en": "0.236"
+   },
+   {
+    "vi": "5,160",
+    "en": "5.160"
+   },
+   {
+    "vi": "53,795",
+    "en": "53.795"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/3)[0,8333 × 2,8000]^3,000 = 4,2346 (A-32 hàng in: 4,2346). Các phương án còn lại: 0,236 lấy A*/A. 5,160 dùng k = 1,3 thay cho 1,4. 53,795 dùng mũ (k+1)/(k−1) thay cho (k+1)/(2(k−1)).",
+   "en": "A/A* = (1/Ma)[(2/(k+1))(1 + (k−1)Ma²/2)]^((k+1)/(2(k−1))) = (1/3)[0.8333 × 2.8000]^3.000 = 4.2346 (A-32 printed row: 4.2346). The other options: 0.236 takes A*/A. 5.160 uses k = 1.3 instead of 1.4. 53.795 uses the exponent (k+1)/(k−1) instead of (k+1)/(2(k−1))."
+  },
+  "level": 2,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng A/A* theo Ma",
+   "en": "Added – generated from the type: A/A* from Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio; A-32 printed rows)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4) chảy đẳng entropi vào ống tại Ma₁ = 0,4, P₁ = 200 kPa, T₁ = 350 K. Diện tích dòng chảy giảm còn A₂ = 0.8A₁ (ống hội tụ). Áp suất P₂ là:",
+   "en": "Air (k = 1.4) flows isentropically into a duct at Ma₁ = 0.4, P₁ = 200 kPa, T₁ = 350 K. The flow area decreases to A₂ = 0.8A₁ (converging duct). The pressure P₂ is:"
+  },
+  "opts": [
+   {
+    "vi": "183,3 kPa",
+    "en": "183.3 kPa"
+   },
+   {
+    "vi": "50,5 kPa",
+    "en": "50.5 kPa"
+   },
+   {
+    "vi": "164,1 kPa",
+    "en": "164.1 kPa"
+   },
+   {
+    "vi": "160,0 kPa",
+    "en": "160.0 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A₁/A* = 1,5901; A₂/A* = 0,8 × 1,5901 = 1,2721; nhánh cận âm (dòng đầu cận âm): Ma₂ = 0,5389. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 200 × 0,8207/0,8956 = 183,3 kPa (T₂ = 341,4 K). Các phương án còn lại: 50,5 kPa chọn nhầm nghiệm siêu âm của A₂/A*. 164,1 kPa quên chia cho P₁/P₀ (lấy P₂/P₀ nhân P₁). 160,0 kPa lấy P tỉ lệ với A.",
+   "en": "A₁/A* = 1.5901; A₂/A* = 0.8 × 1.5901 = 1.2721; subsonic branch (the flow starts subsonic): Ma₂ = 0.5389. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 200 × 0.8207/0.8956 = 183.3 kPa (T₂ = 341.4 K). The other options: 50.5 kPa takes the supersonic root of A₂/A* by mistake. 164.1 kPa forgets to divide by P₁/P₀ (takes P₂/P₀ times P₁). 160.0 kPa takes P proportional to A."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Ma₂, P₂ khi diện tích đổi",
+   "en": "Added – generated from the type: Ma₂, P₂ with an area change"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: Hugoniot ODE + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4) chảy đẳng entropi vào ống tại Ma₁ = 0,5, P₁ = 150 kPa, T₁ = 300 K. Diện tích dòng chảy giảm còn A₂ = 0.85A₁ (ống hội tụ). Áp suất P₂ là:",
+   "en": "Air (k = 1.4) flows isentropically into a duct at Ma₁ = 0.5, P₁ = 150 kPa, T₁ = 300 K. The flow area decreases to A₂ = 0.85A₁ (converging duct). The pressure P₂ is:"
+  },
+  "opts": [
+   {
+    "vi": "134,3 kPa",
+    "en": "134.3 kPa"
+   },
+   {
+    "vi": "52,7 kPa",
+    "en": "52.7 kPa"
+   },
+   {
+    "vi": "113,3 kPa",
+    "en": "113.3 kPa"
+   },
+   {
+    "vi": "127,5 kPa",
+    "en": "127.5 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A₁/A* = 1,3398; A₂/A* = 0,85 × 1,3398 = 1,1389; nhánh cận âm (dòng đầu cận âm): Ma₂ = 0,6465. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 150 × 0,7550/0,8430 = 134,3 kPa (T₂ = 290,7 K). Các phương án còn lại: 52,7 kPa chọn nhầm nghiệm siêu âm của A₂/A*. 113,3 kPa quên chia cho P₁/P₀ (lấy P₂/P₀ nhân P₁). 127,5 kPa lấy P tỉ lệ với A.",
+   "en": "A₁/A* = 1.3398; A₂/A* = 0.85 × 1.3398 = 1.1389; subsonic branch (the flow starts subsonic): Ma₂ = 0.6465. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 150 × 0.7550/0.8430 = 134.3 kPa (T₂ = 290.7 K). The other options: 52.7 kPa takes the supersonic root of A₂/A* by mistake. 113.3 kPa forgets to divide by P₁/P₀ (takes P₂/P₀ times P₁). 127.5 kPa takes P proportional to A."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Ma₂, P₂ khi diện tích đổi",
+   "en": "Added – generated from the type: Ma₂, P₂ with an area change"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: Hugoniot ODE + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4) chảy đẳng entropi vào ống tại Ma₁ = 2, P₁ = 100 kPa, T₁ = 300 K. Diện tích dòng chảy tăng còn A₂ = 1.2A₁ (ống phân kỳ). Áp suất P₂ là:",
+   "en": "Air (k = 1.4) flows isentropically into a duct at Ma₁ = 2, P₁ = 100 kPa, T₁ = 300 K. The flow area increases to A₂ = 1.2A₁ (diverging duct). The pressure P₂ is:"
+  },
+  "opts": [
+   {
+    "vi": "71,9 kPa",
+    "en": "71.9 kPa"
+   },
+   {
+    "vi": "734,6 kPa",
+    "en": "734.6 kPa"
+   },
+   {
+    "vi": "9,2 kPa",
+    "en": "9.2 kPa"
+   },
+   {
+    "vi": "120,0 kPa",
+    "en": "120.0 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A₁/A* = 1,6875; A₂/A* = 1,2 × 1,6875 = 2,0250; nhánh siêu âm (dòng đầu siêu âm): Ma₂ = 2,2112. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 100 × 0,0919/0,1278 = 71,9 kPa (T₂ = 273,0 K). Các phương án còn lại: 734,6 kPa chọn nhầm nghiệm cận âm của A₂/A*. 9,2 kPa quên chia cho P₁/P₀ (lấy P₂/P₀ nhân P₁). 120,0 kPa lấy P tỉ lệ với A.",
+   "en": "A₁/A* = 1.6875; A₂/A* = 1.2 × 1.6875 = 2.0250; supersonic branch (the flow starts supersonic): Ma₂ = 2.2112. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 100 × 0.0919/0.1278 = 71.9 kPa (T₂ = 273.0 K). The other options: 734.6 kPa takes the subsonic root of A₂/A* by mistake. 9.2 kPa forgets to divide by P₁/P₀ (takes P₂/P₀ times P₁). 120.0 kPa takes P proportional to A."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Ma₂, P₂ khi diện tích đổi",
+   "en": "Added – generated from the type: Ma₂, P₂ with an area change"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: Hugoniot ODE + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Không khí (k = 1,4) chảy đẳng entropi vào ống tại Ma₁ = 1,5, P₁ = 250 kPa, T₁ = 400 K. Diện tích dòng chảy giảm còn A₂ = 0.9A₁ (ống hội tụ). Áp suất P₂ là:",
+   "en": "Air (k = 1.4) flows isentropically into a duct at Ma₁ = 1.5, P₁ = 250 kPa, T₁ = 400 K. The flow area decreases to A₂ = 0.9A₁ (converging duct). The pressure P₂ is:"
+  },
+  "opts": [
+   {
+    "vi": "339,8 kPa",
+    "en": "339.8 kPa"
+   },
+   {
+    "vi": "627,7 kPa",
+    "en": "627.7 kPa"
+   },
+   {
+    "vi": "92,6 kPa",
+    "en": "92.6 kPa"
+   },
+   {
+    "vi": "225,0 kPa",
+    "en": "225.0 kPa"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A₁/A* = 1,1762; A₂/A* = 0,9 × 1,1762 = 1,0586; nhánh siêu âm (dòng đầu siêu âm): Ma₂ = 1,2811. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 250 × 0,3703/0,2724 = 339,8 kPa (T₂ = 436,7 K). Các phương án còn lại: 627,7 kPa chọn nhầm nghiệm cận âm của A₂/A*. 92,6 kPa quên chia cho P₁/P₀ (lấy P₂/P₀ nhân P₁). 225,0 kPa lấy P tỉ lệ với A.",
+   "en": "A₁/A* = 1.1762; A₂/A* = 0.9 × 1.1762 = 1.0586; supersonic branch (the flow starts supersonic): Ma₂ = 1.2811. P₂ = P₁(P₂/P₀)/(P₁/P₀) = 250 × 0.3703/0.2724 = 339.8 kPa (T₂ = 436.7 K). The other options: 627.7 kPa takes the subsonic root of A₂/A* by mistake. 92.6 kPa forgets to divide by P₁/P₀ (takes P₂/P₀ times P₁). 225.0 kPa takes P proportional to A."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng Ma₂, P₂ khi diện tích đổi",
+   "en": "Added – generated from the type: Ma₂, P₂ with an area change"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: Hugoniot ODE + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay cận âm bay ở độ cao có P = 54,05 kPa, T = 255,7 K (k = 1,4; R = 0,287). Ống Pitot đo P₀ − P = 20 kPa. Tốc độ bay là:",
+   "en": "A subsonic aircraft flies where P = 54.05 kPa, T = 255.7 K (k = 1.4; R = 0.287). A Pitot probe measures P₀ − P = 20 kPa. The flight speed is:"
+  },
+  "opts": [
+   {
+    "vi": "220 m/s",
+    "en": "220 m/s"
+   },
+   {
+    "vi": "98 m/s",
+    "en": "98 m/s"
+   },
+   {
+    "vi": "1.016 m/s",
+    "en": "1,016 m/s"
+   },
+   {
+    "vi": "233 m/s",
+    "en": "233 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P₀ = 74,05 kPa; P/P₀ = 0,7299 ⇒ Ma = √({[(P₀/P)^0,2857 − 1]/0,2}) = 0,686; c = √(1,4 × 287 × 255,7) = 320,5 m/s; V = Ma·c = 220 m/s. Các phương án còn lại: 98 m/s quên hệ số 2/(k−1) = 5 trong biểu thức Ma. 1.016 m/s dùng mũ k/(k−1) thay cho (k−1)/k. 233 m/s dùng c = 340 m/s mặc định.",
+   "en": "P₀ = 74.05 kPa; P/P₀ = 0.7299 ⇒ Ma = √({[(P₀/P)^0.2857 − 1]/0.2}) = 0.686; c = √(1.4 × 287 × 255.7) = 320.5 m/s; V = Ma·c = 220 m/s. The other options: 98 m/s forgets the factor 2/(k−1) = 5 in the Ma expression. 1,016 m/s uses the exponent k/(k−1) instead of (k−1)/k. 233 m/s uses the default c = 340 m/s."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng ống Pitot",
+   "en": "Added – generated from the type: Pitot probe"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay cận âm bay ở độ cao có P = 26,5 kPa, T = 223,3 K (k = 1,4; R = 0,287). Ống Pitot đo P₀ − P = 30 kPa. Tốc độ bay là:",
+   "en": "A subsonic aircraft flies where P = 26.5 kPa, T = 223.3 K (k = 1.4; R = 0.287). A Pitot probe measures P₀ − P = 30 kPa. The flight speed is:"
+  },
+  "opts": [
+   {
+    "vi": "329 m/s",
+    "en": "329 m/s"
+   },
+   {
+    "vi": "147 m/s",
+    "en": "147 m/s"
+   },
+   {
+    "vi": "2.429 m/s",
+    "en": "2,429 m/s"
+   },
+   {
+    "vi": "374 m/s",
+    "en": "374 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P₀ = 56,50 kPa; P/P₀ = 0,4690 ⇒ Ma = √({[(P₀/P)^0,2857 − 1]/0,2}) = 1,099; c = √(1,4 × 287 × 223,3) = 299,5 m/s; V = Ma·c = 329 m/s. Các phương án còn lại: 147 m/s quên hệ số 2/(k−1) = 5 trong biểu thức Ma. 2.429 m/s dùng mũ k/(k−1) thay cho (k−1)/k. 374 m/s dùng c = 340 m/s mặc định.",
+   "en": "P₀ = 56.50 kPa; P/P₀ = 0.4690 ⇒ Ma = √({[(P₀/P)^0.2857 − 1]/0.2}) = 1.099; c = √(1.4 × 287 × 223.3) = 299.5 m/s; V = Ma·c = 329 m/s. The other options: 147 m/s forgets the factor 2/(k−1) = 5 in the Ma expression. 2,429 m/s uses the exponent k/(k−1) instead of (k−1)/k. 374 m/s uses the default c = 340 m/s."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng ống Pitot",
+   "en": "Added – generated from the type: Pitot probe"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy bay cận âm bay ở độ cao có P = 101,325 kPa, T = 288,15 K (k = 1,4; R = 0,287). Ống Pitot đo P₀ − P = 15 kPa. Tốc độ bay là:",
+   "en": "A subsonic aircraft flies where P = 101.325 kPa, T = 288.15 K (k = 1.4; R = 0.287). A Pitot probe measures P₀ − P = 15 kPa. The flight speed is:"
+  },
+  "opts": [
+   {
+    "vi": "153 m/s",
+    "en": "153 m/s"
+   },
+   {
+    "vi": "68 m/s",
+    "en": "68 m/s"
+   },
+   {
+    "vi": "600 m/s",
+    "en": "600 m/s"
+   },
+   {
+    "vi": "156 m/s",
+    "en": "156 m/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "P₀ = 116,33 kPa; P/P₀ = 0,8711 ⇒ Ma = √({[(P₀/P)^0,2857 − 1]/0,2}) = 0,449; c = √(1,4 × 287 × 288,15) = 340,3 m/s; V = Ma·c = 153 m/s. Các phương án còn lại: 68 m/s quên hệ số 2/(k−1) = 5 trong biểu thức Ma. 600 m/s dùng mũ k/(k−1) thay cho (k−1)/k. 156 m/s Bernoulli không nén được V = √(2ΔP/ρ).",
+   "en": "P₀ = 116.33 kPa; P/P₀ = 0.8711 ⇒ Ma = √({[(P₀/P)^0.2857 − 1]/0.2}) = 0.449; c = √(1.4 × 287 × 288.15) = 340.3 m/s; V = Ma·c = 153 m/s. The other options: 68 m/s forgets the factor 2/(k−1) = 5 in the Ma expression. 600 m/s uses the exponent k/(k−1) instead of (k−1)/k. 156 m/s incompressible Bernoulli V = √(2ΔP/ρ)."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tính chất hãm",
+   "en": "Stagnation properties"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng ống Pitot",
+   "en": "Added – generated from the type: Pitot probe"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: energy equation + brentq)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dòng không khí đẳng entropi (k = 1,4) trong ống thu–giãn có diện tích 30 cm² tại Ma = 0,5. Diện tích tại vị trí Ma = 0,8 (cùng nhánh cận âm) là:",
+   "en": "Isentropic airflow (k = 1.4) in a converging–diverging duct has an area of 30 cm² at Ma = 0.5. The area where Ma = 0.8 (same subsonic branch) is:"
+  },
+  "opts": [
+   {
+    "vi": "23,25 cm²",
+    "en": "23.25 cm²"
+   },
+   {
+    "vi": "38,72 cm²",
+    "en": "38.72 cm²"
+   },
+   {
+    "vi": "18,75 cm²",
+    "en": "18.75 cm²"
+   },
+   {
+    "vi": "31,15 cm²",
+    "en": "31.15 cm²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = 1,3398 tại Ma = 0,5 và 1,0382 tại Ma = 0,8: A₂ = 30 × 1,0382/1,3398 = 23,25 cm². Các phương án còn lại: 38,72 cm² đảo tỉ số diện tích. 18,75 cm² giả thiết A tỉ lệ nghịch với Ma. 31,15 cm² quên chia cho A₁/A*.",
+   "en": "A/A* = 1.3398 at Ma = 0.5 and 1.0382 at Ma = 0.8: A₂ = 30 × 1.0382/1.3398 = 23.25 cm². The other options: 38.72 cm² inverts the area ratio. 18.75 cm² assumes A inversely proportional to Ma. 31.15 cm² forgets to divide by A₁/A*."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng diện tích theo Ma",
+   "en": "Added – generated from the type: area against Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dòng không khí đẳng entropi (k = 1,4) trong ống thu–giãn có diện tích 10 cm² tại Ma = 2. Diện tích tại vị trí Ma = 3 (cùng nhánh siêu âm) là:",
+   "en": "Isentropic airflow (k = 1.4) in a converging–diverging duct has an area of 10 cm² at Ma = 2. The area where Ma = 3 (same supersonic branch) is:"
+  },
+  "opts": [
+   {
+    "vi": "25,09 cm²",
+    "en": "25.09 cm²"
+   },
+   {
+    "vi": "3,99 cm²",
+    "en": "3.99 cm²"
+   },
+   {
+    "vi": "6,67 cm²",
+    "en": "6.67 cm²"
+   },
+   {
+    "vi": "42,35 cm²",
+    "en": "42.35 cm²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = 1,6875 tại Ma = 2 và 4,2346 tại Ma = 3: A₂ = 10 × 4,2346/1,6875 = 25,09 cm². Các phương án còn lại: 3,99 cm² đảo tỉ số diện tích. 6,67 cm² giả thiết A tỉ lệ nghịch với Ma. 42,35 cm² quên chia cho A₁/A*.",
+   "en": "A/A* = 1.6875 at Ma = 2 and 4.2346 at Ma = 3: A₂ = 10 × 4.2346/1.6875 = 25.09 cm². The other options: 3.99 cm² inverts the area ratio. 6.67 cm² assumes A inversely proportional to Ma. 42.35 cm² forgets to divide by A₁/A*."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng diện tích theo Ma",
+   "en": "Added – generated from the type: area against Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio)"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dòng không khí đẳng entropi (k = 1,4) trong ống thu–giãn có diện tích 40 cm² tại Ma = 0,3. Diện tích tại vị trí Ma = 0,7 (cùng nhánh cận âm) là:",
+   "en": "Isentropic airflow (k = 1.4) in a converging–diverging duct has an area of 40 cm² at Ma = 0.3. The area where Ma = 0.7 (same subsonic branch) is:"
+  },
+  "opts": [
+   {
+    "vi": "21,51 cm²",
+    "en": "21.51 cm²"
+   },
+   {
+    "vi": "74,38 cm²",
+    "en": "74.38 cm²"
+   },
+   {
+    "vi": "17,14 cm²",
+    "en": "17.14 cm²"
+   },
+   {
+    "vi": "43,77 cm²",
+    "en": "43.77 cm²"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A/A* = 2,0351 tại Ma = 0,3 và 1,0944 tại Ma = 0,7: A₂ = 40 × 1,0944/2,0351 = 21,51 cm². Các phương án còn lại: 74,38 cm² đảo tỉ số diện tích. 17,14 cm² giả thiết A tỉ lệ nghịch với Ma. 43,77 cm² quên chia cho A₁/A*.",
+   "en": "A/A* = 2.0351 at Ma = 0.3 and 1.0944 at Ma = 0.7: A₂ = 40 × 1.0944/2.0351 = 21.51 cm². The other options: 74.38 cm² inverts the area ratio. 17.14 cm² assumes A inversely proportional to Ma. 43.77 cm² forgets to divide by A₁/A*."
+  },
+  "level": 3,
+  "topic": {
+   "vi": "Tỉ số diện tích A/A*",
+   "en": "Area ratio A/A*"
+  },
+  "src": {
+   "vi": "Bổ sung – sinh theo dạng diện tích theo Ma",
+   "en": "Added – generated from the type: area against Ma"
+  },
+  "origin": "bo_sung",
+  "fixed_order": false,
+  "check": "script (verify_m05: flux ratio)"
+ }
+]
