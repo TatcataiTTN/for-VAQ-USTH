@@ -6,7 +6,7 @@ Bằng chứng khảo sát: đã ĐỌC mã engine của Thermal-Systems (`_shar
 | ID | Tính năng (nhãn UI VI / EN) | Quyết định | Hiện có | Phụ thuộc, test |
 |---|---|---|---|---|
 | F01 | Trang chủ: ma trận CO/CLO × module × slide × sách, Tiến độ của bạn, Tiếp tục học | LÀM | có ma trận, tiến độ, tiếp tục | `tests/site_test.py` (tiến độ) |
-| F02 | Slide của giảng viên: 342 slide, ảnh bấm phóng to, dải ảnh theo module | LÀM | có 342 ảnh (`assets/slides/`, 23 MB) và thư viện `slides/index.html`; bản chép VI/EN từng slide: 88/342 (num, bus, swc, fib) | P0 đọc từng slide |
+| F02 | Slide của giảng viên: 342 slide, ảnh bấm phóng to, dải ảnh theo module | LÀM | có 342 ảnh (`assets/slides/`, 23 MB) và thư viện `slides/index.html`; bản chép VI/EN từng slide: 342/342 (211 chi tiết, 131 slide basis=summary chưa phóng to kiểm lại) | P0 đọc từng slide (xong phần đọc; còn kiểm lại 131 slide tóm tắt) |
 | F03 | Module (9 có, 6 thêm theo 4b) | CHỈNH | 9 module chuyển bằng `build/legacy.py`; m10 đến m15 là "sắp có" | P4 |
 | F04 | Quiz nhanh trong trang module (10 câu, ưu tiên câu gốc) | LÀM | có | `site_test.py` |
 | F05 | Ngân hàng câu hỏi theo module (lọc nguồn/mức/chủ đề, lời giải chi tiết) | LÀM | có, 605 câu trắc nghiệm + 129 tự luận (sau khi gộp câu trùng) | `site_test.py` |

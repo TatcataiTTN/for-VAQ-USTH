@@ -1,0 +1,724 @@
+{
+ "deck": "icmux",
+ "pdf": "integrated circuit and multiplexing version 2026.pdf",
+ "pages": 60,
+ "range": [
+  1,
+  60
+ ],
+ "slides": [
+  {
+   "page": 1,
+   "kind": "title",
+   "title": "Aircraft Systems, Analog Systems & Digital Systems: integrated circuit",
+   "text_en": "Title slide \"Aircraft Systems, Analog Systems & Digital Systems\", subtitle \"integrated circuit\", over a photo of a glass cockpit; USTH logo.",
+   "text_vi": "Slide tiêu đề \"Aircraft Systems, Analog Systems & Digital Systems\", phụ đề \"integrated circuit\" (mạch tích hợp), trên ảnh buồng lái kính; logo USTH.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 2,
+   "kind": "content",
+   "title": "Introduction: integrated circuits",
+   "text_en": "Considerable cost savings come from manufacturing all the components of a circuit function on one small slice of semiconductor material (usually silicon). The resulting integrated circuit may contain as few as 10, or more than 100000, active devices (transistors and diodes). Integrated circuits divide into two general classes, linear (analogue) and digital. Typical linear ICs are operational amplifiers; typical digital ICs are logic gates and microprocessors. Figures: a dual in-line package, the pinout of a 14-pin quad NAND gate chip (VDD on pin 14, Gnd on pin 7) and a flat surface-mount package.",
+   "text_vi": "Tiết kiệm chi phí đáng kể nhờ chế tạo mọi linh kiện của một chức năng mạch trên một lát bán dẫn nhỏ (thường là silicon). Mạch tích hợp tạo ra có thể chỉ chứa 10, hoặc hơn 100000, phần tử tích cực (transistor và diode). Mạch tích hợp chia hai lớp chung: tuyến tính (tương tự) và số. IC tuyến tính điển hình là bộ khuếch đại thuật toán; IC số điển hình là cổng logic và vi xử lý. Hình: vỏ hai hàng chân, sơ đồ chân chip bốn cổng NAND 14 chân (VDD chân 14, Gnd chân 7) và vỏ dán bề mặt phẳng.",
+   "formulas": [],
+   "numbers": [
+    "từ 10 đến hơn 100000 phần tử tích cực",
+    "chip 14 chân: VDD chân 14, Gnd chân 7"
+   ],
+   "issues": []
+  },
+  {
+   "page": 3,
+   "kind": "content",
+   "title": "Locations of main ICs on an iPhone 12 logic board",
+   "text_en": "Annotated teardown image of an iPhone 12 logic board (two-layer sandwich PCB with components on both sides joined by vias). Top side: Apple A14 Bionic (SoC with CPU, GPU, Neural Engine), Micron LPDDR4 SDRAM (main memory integrated with the A14), Kioxia 64 GB NAND flash (storage), Qualcomm 5G/LTE transceiver, Qualcomm 5G modem, Avago RF power amplifier and duplexer, Skyworks RF module. Bottom side: display port multiplexer, camera power management IC, Apple U1 ultra-wideband chip, Qualcomm power management for modem RF, LED driver, audio codec and mono audio amplifier, power management ICs, battery charging IC, wireless charging IC. Main functions in four groups: 1 processing and memory; 2 power management; 3 RF, 5G and wireless; 4 display, camera and audio. Notes: IC locations vary with capacity (64, 128 or 256 GB) and market; images are from teardown sources; not a replacement for the official schematic or service manual. Footer: many other small ICs (power supply, logic, protection, sensors) are also on the board.",
+   "text_vi": "Ảnh tháo máy có chú thích của bo mạch logic iPhone 12 (PCB hai lớp kiểu bánh kẹp, linh kiện hai mặt nối qua lỗ xuyên). Mặt trên: Apple A14 Bionic (SoC gồm CPU, GPU, Neural Engine), Micron LPDDR4 SDRAM (bộ nhớ chính tích hợp với A14), Kioxia NAND flash 64 GB (lưu trữ), bộ thu phát 5G/LTE Qualcomm, modem 5G Qualcomm, bộ khuếch đại công suất và song công RF Avago, mô-đun RF Skyworks. Mặt dưới: bộ ghép kênh cổng hiển thị, IC quản lý nguồn camera, chip băng thông siêu rộng Apple U1, IC quản lý nguồn cho RF modem của Qualcomm, bộ điều khiển LED, codec âm thanh và bộ khuếch đại âm thanh mono, các IC quản lý nguồn, IC sạc pin, IC sạc không dây. Chức năng chính chia bốn nhóm: 1 xử lý và bộ nhớ; 2 quản lý nguồn; 3 RF, 5G và không dây; 4 hiển thị, camera và âm thanh. Ghi chú: vị trí IC thay đổi theo dung lượng (64, 128 hoặc 256 GB) và thị trường; ảnh lấy từ nguồn tháo máy; không thay cho sơ đồ hay sổ tay dịch vụ chính thức. Chân slide: còn nhiều IC nhỏ khác (nguồn, logic, bảo vệ, cảm biến) trên bo mạch.",
+   "formulas": [],
+   "numbers": [
+    "bộ nhớ 64 GB; 64/128/256 GB tuỳ phiên bản"
+   ],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 4,
+   "kind": "content",
+   "title": "Applications of integrated circuits in the Airbus A320",
+   "text_en": "Infographic: ICs contain a large number of logic gates, memory elements and processing functions on a single chip and are widely used in the A320 for computation, signal processing, monitoring and control. Six panels: 1 flight control computers (FMGC): microprocessors, memory and logic ICs process flight plans, navigation data and control laws, and implement autopilot, flight director and guidance logic. 2 Engine control (FADEC, in the EEC): ICs process sensor signals (speed, temperature, pressure), control fuel flow, variable stator vanes and bleed in real time, using logic ICs, ADCs/DACs and microcontrollers. 3 Aircraft monitoring (ECAM): ICs process data from engines, hydraulics and electrical systems, detect failures and generate warnings, and drive display controllers. 4 Communication and data systems (ACARS management unit CMU): ICs handle data communication (for example ARINC 429, AFDX), encoding and decoding, error detection; used for ACARS, VHF, SATCOM. 5 Cabin systems (air-conditioning panel): ICs control pressurisation, air conditioning and lighting and interface with the aircraft network. 6 Electrical and power management (electrical load management unit, ELMU): ICs monitor voltage, current and frequency, perform load shedding and fault protection; also in static inverters. Footer: ICs are the building blocks of modern avionics, giving high reliability, low weight and low power consumption.",
+   "text_vi": "Infographic: IC chứa số lượng lớn cổng logic, phần tử nhớ và chức năng xử lý trên một chip và được dùng rộng rãi trên A320 cho tính toán, xử lý tín hiệu, giám sát và điều khiển. Sáu khung: 1 máy tính điều khiển bay (FMGC): vi xử lý, bộ nhớ và IC logic xử lý kế hoạch bay, dữ liệu dẫn đường và luật điều khiển, thực hiện logic lái tự động, bộ chỉ huy bay và dẫn hướng. 2 Điều khiển động cơ (FADEC, trong EEC): IC xử lý tín hiệu cảm biến (tốc độ, nhiệt độ, áp suất), điều khiển lưu lượng nhiên liệu, cánh stator biến đổi và khí xả theo thời gian thực, dùng IC logic, ADC/DAC và vi điều khiển. 3 Giám sát tàu bay (ECAM): IC xử lý dữ liệu từ động cơ, thuỷ lực, điện, phát hiện sự cố và tạo cảnh báo, điều khiển bộ điều khiển hiển thị. 4 Truyền thông và dữ liệu (bộ quản lý ACARS, CMU): IC xử lý truyền dữ liệu (ví dụ ARINC 429, AFDX), mã hoá và giải mã, phát hiện lỗi; dùng cho ACARS, VHF, SATCOM. 5 Hệ cabin (bảng điều hoà không khí): IC điều khiển tăng áp, điều hoà, chiếu sáng và giao tiếp với mạng tàu bay. 6 Điện và quản lý công suất (bộ quản lý tải điện, ELMU): IC giám sát điện áp, dòng, tần số, thực hiện cắt tải và bảo vệ sự cố; còn dùng trong bộ nghịch lưu tĩnh. Chân slide: IC là khối xây dựng của điện tử hàng không hiện đại, cho độ tin cậy cao, khối lượng nhỏ và công suất thấp.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 5,
+   "kind": "content",
+   "title": "FADEC IC in the Airbus A320: structure and operation",
+   "text_en": "FADEC (full authority digital engine control) uses ICs to process sensor signals and control the engine automatically. 1 Overview: each A320 engine has two FADEC channels (A and B) for redundancy; it is built from microprocessors, memory ICs, A/D and D/A converters, logic ICs and interface ICs; it controls the engine with no direct pilot input (full authority). 2 Internal structure (main ICs): power management IC, microprocessor IC (control laws and engine control logic), memory ICs (flash for the program, RAM for data, EEPROM for parameters), A/D converter IC, D/A converter IC, interface ICs (ARINC 429, I/O drivers). 3 Block diagram: engine sensors (N1 and N2 speed, fuel pressure, oil pressure, temperature such as EGT and T2, vibration) feed an A/D converter, then the microprocessor (control laws, logic, monitoring) with a memory IC, then a D/A converter to the actuators (fuel metering valve, variable stator vanes, bleed valves, turbine clearance control); an interface IC (ARINC 429, discrete I/O) links to the aircraft systems (FCU, ECAM). 4 Operation in six steps: sensor input (analogue signals), A/D conversion, data processing (control laws compare actual and target values), output command (D/A), actuator control, monitoring and communication (data and fault messages to ECAM via ARINC 429, built-in test).",
+   "text_vi": "FADEC (điều khiển động cơ số toàn quyền) dùng IC xử lý tín hiệu cảm biến và điều khiển động cơ tự động. 1 Tổng quan: mỗi động cơ A320 có hai kênh FADEC (A và B) để dự phòng; được xây từ vi xử lý, IC nhớ, bộ chuyển đổi A/D và D/A, IC logic và IC giao tiếp; điều khiển động cơ mà không cần phi công trực tiếp (toàn quyền). 2 Cấu trúc bên trong (các IC chính): IC quản lý nguồn, IC vi xử lý (luật điều khiển và logic điều khiển động cơ), IC nhớ (flash cho chương trình, RAM cho dữ liệu, EEPROM cho tham số), IC chuyển A/D, IC chuyển D/A, IC giao tiếp (ARINC 429, bộ điều khiển I/O). 3 Sơ đồ khối: cảm biến động cơ (tốc độ N1 và N2, áp suất nhiên liệu, áp suất dầu, nhiệt độ như EGT và T2, rung) vào bộ chuyển A/D, rồi vi xử lý (luật điều khiển, logic, giám sát) cùng IC nhớ, rồi bộ chuyển D/A tới cơ cấu chấp hành (van định lượng nhiên liệu, cánh stator biến đổi, van xả khí, điều khiển khe hở tuabin); IC giao tiếp (ARINC 429, I/O rời rạc) nối với các hệ tàu bay (FCU, ECAM). 4 Hoạt động sáu bước: ngõ vào cảm biến (tín hiệu tương tự), chuyển A/D, xử lý dữ liệu (luật điều khiển so giá trị thực với giá trị đích), lệnh ra (D/A), điều khiển cơ cấu chấp hành, giám sát và truyền thông (dữ liệu và thông báo lỗi tới ECAM qua ARINC 429, tự kiểm tra tích hợp).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 6,
+   "kind": "content",
+   "title": "Integrated circuit: structure and operating principle",
+   "text_en": "An IC is a miniature electronic circuit with thousands or millions of transistors, resistors, capacitors and interconnections fabricated on one piece of semiconductor, usually silicon. 1 What it is: components (transistors, resistors, capacitors, diodes) on a single chip, joined by thin metal interconnects; the die holds logic circuits, memory cells and I/O circuits. 2 Internal structure (CMOS cross-section): silicon substrate (p-type or n-type), transistor layer (MOS transistors), isolation layer (SiO2), interconnection layers (multiple metal layers) with an inter-layer insulator (SiO2). 3 MOS transistor: when a voltage above threshold is applied to the gate, a conductive channel forms between source and drain, so the transistor acts as an electronic switch; n-channel MOSFET with n+ source and drain in a p-type substrate and a gate oxide of SiO2. 4 How an IC works: input signals pass an input buffer (protection and level shifting), logic circuits (transistors, gates, flip-flops) with a clock if needed, and an output driver (amplification); operation is controlled by a power supply (for example 3.3 V or 5 V) and sometimes a clock. 5 Examples in the A320: microprocessor IC (FADEC, FMGC), memory IC (flash, RAM, EEPROM), A/D converter IC, logic IC, interface IC (ARINC 429, CAN), power management IC.",
+   "text_vi": "IC là mạch điện tử thu nhỏ có hàng nghìn đến hàng triệu transistor, điện trở, tụ điện và dây nối chế tạo trên một mảnh bán dẫn, thường là silicon. 1 Là gì: các linh kiện (transistor, điện trở, tụ, diode) trên một chip, nối bằng dây kim loại mảnh; khuôn chứa mạch logic, ô nhớ và mạch I/O. 2 Cấu trúc bên trong (mặt cắt CMOS): đế silicon (loại p hoặc n), lớp transistor (MOS), lớp cách điện (SiO2), các lớp nối (nhiều lớp kim loại) với chất cách điện giữa lớp (SiO2). 3 Transistor MOS: khi đặt điện áp trên ngưỡng vào gate, kênh dẫn hình thành giữa source và drain nên transistor hoạt động như công tắc điện tử; MOSFET kênh n có source và drain n+ trên đế loại p và oxit gate SiO2. 4 IC hoạt động thế nào: tín hiệu vào qua bộ đệm vào (bảo vệ và dịch mức), mạch logic (transistor, cổng, flip-flop) với xung nhịp khi cần, và bộ đệm ra (khuếch đại); hoạt động được điều khiển bởi nguồn cấp (ví dụ 3,3 V hoặc 5 V) và đôi khi có xung nhịp. 5 Ví dụ trên A320: IC vi xử lý (FADEC, FMGC), IC nhớ (flash, RAM, EEPROM), IC chuyển A/D, IC logic, IC giao tiếp (ARINC 429, CAN), IC quản lý nguồn.",
+   "formulas": [],
+   "numbers": [
+    "nguồn ví dụ 3,3 V hoặc 5 V"
+   ],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 7,
+   "kind": "content",
+   "title": "Internal structure of an integrated circuit",
+   "text_en": "Package (protective casing) with pins (leads); inside it the silicon die (chip) with bond pads as connection points to the package pins. An enlarged part of an IC shows an NMOS transistor, a PMOS transistor, a metal interconnect layer, a resistor and a capacitor. Cross-section of a transistor on the die: source N+, drain N+ in a P region, gate over an oxide layer (SiO2), silicon substrate usually p-type. Characteristics of an IC: 1 made on a small piece of silicon called a silicon die (chip); 2 contains many components (transistors, resistors, capacitors) on the same chip; 3 the components are joined by very small metal interconnects; 4 the chip is enclosed in a protective package with connection pins; 5 an IC can perform various functions such as logic circuits, memory, microprocessor, control circuits, ADC/DAC. Summary line: IC = many electronic components integrated on a single silicon chip and interconnected.",
+   "text_vi": "Vỏ bọc (bảo vệ) có chân; bên trong là khuôn silicon (chip) với các pad hàn dây làm điểm nối tới chân vỏ. Một phần IC phóng to cho thấy transistor NMOS, transistor PMOS, lớp nối kim loại, điện trở và tụ điện. Mặt cắt transistor trên khuôn: source N+, drain N+ trong vùng P, gate nằm trên lớp oxit (SiO2), đế silicon thường loại p. Đặc điểm của IC: 1 chế tạo trên một mảnh silicon nhỏ gọi là khuôn silicon (chip); 2 chứa nhiều linh kiện (transistor, điện trở, tụ) trên cùng chip; 3 các linh kiện nối với nhau bằng dây kim loại rất nhỏ; 4 chip được bọc trong vỏ bảo vệ có chân nối; 5 IC có thể thực hiện nhiều chức năng như mạch logic, bộ nhớ, vi xử lý, mạch điều khiển, ADC/DAC. Dòng tóm tắt: IC = nhiều linh kiện điện tử tích hợp trên một chip silicon và nối với nhau.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 8,
+   "kind": "content",
+   "title": "Layered cross-section of an integrated circuit",
+   "text_en": "Three-dimensional cut-away of a MOS transistor in an IC with layers labelled: interconnection layers (multiple metal layers) with the metal interconnect and an inter-layer insulator (silicon dioxide, SiO2); MOS transistor layer (source n+, gate, drain n+ in a p region); SiO2 insulation layer; silicon substrate (p-type or n-type). Caption: an IC is composed of transistors and other electronic components fabricated on a silicon substrate and then interconnected using multiple metal layers.",
+   "text_vi": "Hình cắt ba chiều một transistor MOS trong IC với các lớp ghi tên: các lớp nối (nhiều lớp kim loại) với dây nối kim loại và chất cách điện giữa lớp (silicon dioxide, SiO2); lớp transistor MOS (source n+, gate, drain n+ trong vùng p); lớp cách điện SiO2; đế silicon (loại p hoặc n). Chú thích: IC gồm transistor và các linh kiện điện tử khác chế tạo trên đế silicon rồi được nối với nhau bằng nhiều lớp kim loại.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 9,
+   "kind": "content",
+   "title": "Scale of integration",
+   "text_en": "The scale of integration is the relative size of a digital IC in terms of the number of logic gates or equivalent devices it contains. SSI (small scale): 1 to 10 gates, basic logic (AND, OR, NAND, NOR), example 74HC00 NAND, one NAND gate is 1 gate. MSI (medium scale): 10 to 100 gates, bus buffers and transceivers, encoders and decoders, small programmed logic arrays, example 74HC138 3-to-8 decoder (about 20 to 30 gates). LSI (large scale): 100 to 1,000 gates, large gate arrays and small memory devices, example CPLD/FPGA or a programmable logic array (hundreds of gates). VLSI (very large scale): 1,000 to 10,000 gates, large memory devices and small microprocessors, example 8 Kbit SRAM (thousands of gates). ULSI (ultra large scale): more than 100,000 gates, large microprocessors, example a CPU (millions of gates). Arrow: from smaller size and lower complexity to larger size and higher performance, with an increasing number of logic gates.",
+   "text_vi": "Quy mô tích hợp là kích thước tương đối của IC số theo số cổng logic hoặc phần tử tương đương. SSI (quy mô nhỏ): 1 đến 10 cổng, logic cơ bản (AND, OR, NAND, NOR), ví dụ 74HC00 NAND, một cổng NAND là 1 cổng. MSI (quy mô vừa): 10 đến 100 cổng, bộ đệm và thu phát bus, bộ mã hoá và giải mã, mảng logic lập trình nhỏ, ví dụ bộ giải mã 3 ra 8 74HC138 (khoảng 20 đến 30 cổng). LSI (quy mô lớn): 100 đến 1000 cổng, mảng cổng lớn và thiết bị nhớ nhỏ, ví dụ CPLD/FPGA hoặc mảng logic lập trình (hàng trăm cổng). VLSI (quy mô rất lớn): 1000 đến 10000 cổng, thiết bị nhớ lớn và vi xử lý nhỏ, ví dụ SRAM 8 Kbit (hàng nghìn cổng). ULSI (quy mô cực lớn): trên 100000 cổng, vi xử lý lớn, ví dụ CPU (hàng triệu cổng). Mũi tên: từ kích thước nhỏ và độ phức tạp thấp đến kích thước lớn và hiệu năng cao, số cổng logic tăng dần.",
+   "formulas": [],
+   "numbers": [
+    "SSI 1 đến 10 cổng",
+    "MSI 10 đến 100",
+    "LSI 100 đến 1000",
+    "VLSI 1000 đến 10000",
+    "ULSI trên 100000"
+   ],
+   "issues": [
+    "Khoảng hở trong bảng: VLSI dừng ở 10000 cổng còn ULSI bắt đầu từ trên 100000 cổng nên khoảng 10000 đến 100000 cổng không thuộc lớp nào."
+   ]
+  },
+  {
+   "page": 10,
+   "kind": "content",
+   "title": "Types of integrated circuits",
+   "text_en": "Three types. 1 Digital ICs handle discrete (binary) signals with values 0 and 1, using logic gates, multiplexers, flip-flops; example 74HC00, a quad 2-input NAND (digital IC, SSI). 2 Analog ICs handle continuous signals; two main types are linear ICs and radio frequency ICs (RFIC); example LM358 dual op-amp (linear IC); an RFIC receiver front-end block diagram: antenna, low-noise amplifier (LNA), mixer, filter, RF out. 3 Mixed (hybrid) ICs combine analog and digital circuits on the same chip, such as A/D and D/A converters: an ADC turns a continuous analogue input into binary data, a DAC turns binary data into an analogue output; example ADC/DAC and sensor interface ICs. Footer: digital ICs process binary signals, analog ICs process continuous signals, mixed ICs combine both.",
+   "text_vi": "Ba loại. 1 IC số xử lý tín hiệu rời rạc (nhị phân) giá trị 0 và 1, dùng cổng logic, bộ ghép kênh, flip-flop; ví dụ 74HC00, bốn cổng NAND hai ngõ vào (IC số, SSI). 2 IC tương tự xử lý tín hiệu liên tục; hai loại chính là IC tuyến tính và IC tần số vô tuyến (RFIC); ví dụ LM358 bộ khuếch đại thuật toán kép (IC tuyến tính); sơ đồ khối phần đầu thu của RFIC: anten, bộ khuếch đại nhiễu thấp (LNA), bộ trộn, bộ lọc, ngõ ra RF. 3 IC hỗn hợp (lai) kết hợp mạch tương tự và mạch số trên cùng chip, như bộ chuyển đổi A/D và D/A: ADC đổi ngõ vào tương tự liên tục thành dữ liệu nhị phân, DAC đổi dữ liệu nhị phân thành ngõ ra tương tự; ví dụ ADC/DAC và IC giao tiếp cảm biến. Chân slide: IC số xử lý tín hiệu nhị phân, IC tương tự xử lý tín hiệu liên tục, IC hỗn hợp kết hợp cả hai.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 11,
+   "kind": "content",
+   "title": "Internal structure of an analog IC (op-amp example)",
+   "text_en": "Operational amplifier IC (LM358) in a plastic package with pins. The die contains a differential amplifier stage, a current mirror stage, a biasing stage and an output stage. A cross-section shows transistors (typically BJT): an NPN transistor (n+, p, n+) and a PNP transistor (p+, n, p+) under a metal interconnect layer (aluminium or copper), an insulating layer (SiO2), the transistor fabrication layers (well, p, n, n+, p+) and the silicon substrate (p-type or n-type). Block diagram: IN- (pin 2) and IN+ (pin 3) feed a differential amplifier stage, then an intermediate gain stage, then an output stage to OUT (pin 1); a biasing and current reference stage supplies them; supply pins V- (pin 4) and V+ (pin 8). Characteristics: 1 fabricated on a single semiconductor chip, typically silicon; 2 many transistors (BJT or MOS), resistors, capacitors and other analog components such as diodes; 3 formed by diffusion and metal interconnect layers on the silicon surface; 4 functions include differential amplifier, intermediate gain stage, biasing circuit, output stage on a single chip; 5 used to process analog signals (amplification, filtering, oscillation, signal conditioning, comparison). Summary: an analog IC integrates many transistors, resistors, capacitors and other analog components on one chip to process analog signals.",
+   "text_vi": "IC khuếch đại thuật toán (LM358) trong vỏ nhựa có chân. Khuôn chứa tầng khuếch đại vi sai, tầng gương dòng, tầng phân cực và tầng ra. Mặt cắt cho thấy transistor (thường là BJT): transistor NPN (n+, p, n+) và transistor PNP (p+, n, p+) dưới lớp nối kim loại (nhôm hoặc đồng), lớp cách điện (SiO2), các lớp chế tạo transistor (giếng, p, n, n+, p+) và đế silicon (loại p hoặc n). Sơ đồ khối: IN- (chân 2) và IN+ (chân 3) vào tầng khuếch đại vi sai, rồi tầng khuếch đại trung gian, rồi tầng ra tới OUT (chân 1); tầng phân cực và dòng chuẩn cấp cho các tầng; chân nguồn V- (chân 4) và V+ (chân 8). Đặc điểm: 1 chế tạo trên một chip bán dẫn, thường là silicon; 2 nhiều transistor (BJT hoặc MOS), điện trở, tụ điện và linh kiện tương tự khác như diode; 3 hình thành bằng khuếch tán và các lớp nối kim loại trên bề mặt silicon; 4 chức năng gồm bộ khuếch đại vi sai, tầng khuếch đại trung gian, mạch phân cực, tầng ra trên một chip; 5 dùng xử lý tín hiệu tương tự (khuếch đại, lọc, dao động, điều hoà tín hiệu, so sánh). Tóm tắt: IC tương tự tích hợp nhiều transistor, điện trở, tụ điện và linh kiện tương tự khác trên một chip để xử lý tín hiệu tương tự.",
+   "formulas": [],
+   "numbers": [
+    "LM358: OUT chân 1, IN- chân 2, IN+ chân 3, V- chân 4, V+ chân 8"
+   ],
+   "issues": []
+  },
+  {
+   "page": 12,
+   "kind": "content",
+   "title": "Internal structure of a digital IC (logic IC example)",
+   "text_en": "IC 74HC00 in a package with pins. The die holds logic gates (AND, OR), control logic, buffer circuits, decoder circuits and an I/O interface (I/O drivers). A CMOS cross-section shows an NMOS transistor (n-channel; n+, p, n+) and a PMOS transistor (p-channel; p+, n, p+) under a metal interconnect (Al/Cu), an inter-layer insulator (SiO2), the transistor layer (p, n, n+, p+ regions) and the silicon substrate. Block diagram of a logic IC: inputs IN A and IN B go to an input buffer, a logic gate and an output buffer to OUT, with control and bias circuits fed by VCC and GND. Key features: 1 fabricated on a silicon die; 2 uses CMOS technology (NMOS and PMOS) to build gates such as AND, OR, NOT, NAND, NOR, XOR; 3 contains millions of transistors, resistors, capacitors and logic circuits on one chip; 4 includes buffers, logic circuits, decoders, control circuits and I/O drivers; 5 processes digital signals (logic 0 and 1) with high speed, accuracy and reliability; 6 widely used in computers, processors, controllers and electronic systems including aircraft. Summary: a digital IC consists of many transistors and components on a silicon chip to perform logic functions for digital signal processing.",
+   "text_vi": "IC 74HC00 trong vỏ có chân. Khuôn chứa cổng logic (AND, OR), logic điều khiển, mạch đệm, mạch giải mã và giao diện I/O (bộ điều khiển I/O). Mặt cắt CMOS cho thấy transistor NMOS (kênh n; n+, p, n+) và transistor PMOS (kênh p; p+, n, p+) dưới lớp nối kim loại (Al/Cu), chất cách điện giữa lớp (SiO2), lớp transistor (các vùng p, n, n+, p+) và đế silicon. Sơ đồ khối IC logic: ngõ vào IN A và IN B vào bộ đệm vào, cổng logic và bộ đệm ra tới OUT, với mạch điều khiển và phân cực cấp bởi VCC và GND. Đặc điểm chính: 1 chế tạo trên khuôn silicon; 2 dùng công nghệ CMOS (NMOS và PMOS) để tạo các cổng như AND, OR, NOT, NAND, NOR, XOR; 3 chứa hàng triệu transistor, điện trở, tụ điện và mạch logic trên một chip; 4 gồm bộ đệm, mạch logic, bộ giải mã, mạch điều khiển và bộ điều khiển I/O; 5 xử lý tín hiệu số (logic 0 và 1) với tốc độ, độ chính xác và độ tin cậy cao; 6 dùng rộng rãi trong máy tính, bộ xử lý, bộ điều khiển và hệ điện tử kể cả tàu bay. Tóm tắt: IC số gồm nhiều transistor và linh kiện trên một chip silicon để thực hiện chức năng logic xử lý tín hiệu số.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Nghi vấn: khung 3 nói IC số chứa \"hàng triệu\" transistor nhưng ví dụ ngay slide là 74HC00 (bốn cổng NAND hai ngõ vào, khoảng 16 transistor CMOS); con số hàng triệu chỉ đúng cho vi xử lý."
+   ]
+  },
+  {
+   "page": 13,
+   "kind": "content",
+   "title": "Comparison of analog and digital integrated circuits",
+   "text_en": "Two columns. Analog ICs process continuous signals whose values vary continuously over time; example the LM358 operational amplifier. Digital ICs process discrete signals with only two logic levels, 0 and 1 (1 = VCC, 0 = 0 V); example the 74HC00 NAND gate IC with NMOS and PMOS transistors. Comparison table. Signal type: analog continuous; digital discrete (only 0 and 1). Purpose: analog amplification, filtering, oscillation, conversion, comparison; digital logic functions, digital data processing and storage. Common transistor technology: analog BJT or CMOS depending on application; digital CMOS (most common). IC examples: analog op-amp (LM358), amplifiers, filters, voltage regulators, ADC/DAC; digital logic gates (74HC00, 74HC08), counters, registers, microprocessors, microcontrollers. Design characteristics: analog focus on linearity, low noise, bandwidth, accuracy; digital focus on speed, logic levels, power consumption, high integration. Typical applications: analog sensor signal amplification, audio processing, analog control; digital computers, digital control systems, data processing, digital equipment in aircraft. Footer: both are fabricated on the same silicon chip but serve different signal-processing purposes.",
+   "text_vi": "Hai cột. IC tương tự xử lý tín hiệu liên tục có giá trị biến thiên liên tục theo thời gian; ví dụ bộ khuếch đại thuật toán LM358. IC số xử lý tín hiệu rời rạc chỉ có hai mức logic 0 và 1 (1 = VCC, 0 = 0 V); ví dụ IC cổng NAND 74HC00 với transistor NMOS và PMOS. Bảng so sánh. Loại tín hiệu: tương tự liên tục; số rời rạc (chỉ 0 và 1). Mục đích: tương tự khuếch đại, lọc, dao động, chuyển đổi, so sánh; số chức năng logic, xử lý và lưu trữ dữ liệu số. Công nghệ transistor thường dùng: tương tự BJT hoặc CMOS tuỳ ứng dụng; số CMOS (phổ biến nhất). Ví dụ IC: tương tự bộ khuếch đại thuật toán (LM358), bộ khuếch đại, bộ lọc, ổn áp, ADC/DAC; số cổng logic (74HC00, 74HC08), bộ đếm, thanh ghi, vi xử lý, vi điều khiển. Đặc điểm thiết kế: tương tự chú trọng tuyến tính, nhiễu thấp, băng thông, độ chính xác; số chú trọng tốc độ, mức logic, công suất tiêu thụ, khả năng tích hợp cao. Ứng dụng tiêu biểu: tương tự khuếch đại tín hiệu cảm biến, xử lý âm thanh, điều khiển tương tự; số máy tính, hệ điều khiển số, xử lý dữ liệu, thiết bị số trên tàu bay. Chân slide: cả hai chế tạo trên cùng chip silicon nhưng phục vụ mục đích xử lý tín hiệu khác nhau.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Nghi vấn: hình cắt của op-amp LM358 ở khung trái ghi \"Power supply terminal / Gate / Drain terminal\" (cách gọi của MOSFET) trong khi slide 11 nói transistor trong IC tương tự thường là BJT."
+   ]
+  },
+  {
+   "page": 14,
+   "kind": "content",
+   "title": "IC pin connections and numbering",
+   "text_en": "Five package styles. (a) Single in-line (SIP, one row): pin 1 at the top and numbering increases downwards. (b) Dual in-line (DIP, two rows): pin 1 at the top left (notch or dot); the left side is numbered top to bottom (1, 2, ... N/2) and the right side bottom to top (N/2+1 ... N). (c) Zig-zag in-line (ZIP, alternating pins): numbering alternates left to right in a zig-zag pattern (1, 2, 3, 4 ...). (d) Quad flat package (QFP, pins on all four sides): pin 1 at the top left (dot); numbering goes counter-clockwise. (e) Pin grid array (PGA, pins in a grid on the bottom): a two-dimensional grid of rows and columns, numbering defined by the manufacturer. Examples: 20-pin DIP (through-hole) and 20-pin SOIC (surface mount), each with pin 1 and pin 20 marked. Note: pin 1 is usually marked by a notch, a dot or a chamfer; the numbering direction depends on the package type; always consult the IC datasheet for the exact pin configuration.",
+   "text_vi": "Năm kiểu vỏ. (a) Một hàng chân (SIP): chân 1 ở trên cùng và số tăng dần xuống dưới. (b) Hai hàng chân (DIP): chân 1 ở góc trên trái (khía hoặc chấm); bên trái đánh số từ trên xuống (1, 2, ... N/2) và bên phải từ dưới lên (N/2+1 ... N). (c) Zig-zag (ZIP, chân xen kẽ): số xen kẽ từ trái sang phải theo kiểu zig-zag (1, 2, 3, 4 ...). (d) Vỏ phẳng bốn cạnh (QFP, chân ở cả bốn cạnh): chân 1 ở góc trên trái (chấm); đánh số ngược chiều kim đồng hồ. (e) Mảng chân dạng lưới (PGA, chân thành lưới ở mặt dưới): lưới hai chiều gồm hàng và cột, cách đánh số do nhà sản xuất định. Ví dụ: DIP 20 chân (xuyên lỗ) và SOIC 20 chân (dán bề mặt), đều đánh dấu chân 1 và chân 20. Lưu ý: chân 1 thường được đánh dấu bằng khía, chấm hoặc vát cạnh; chiều đánh số phụ thuộc kiểu vỏ; luôn xem bảng dữ liệu IC để biết cấu hình chân chính xác.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Nghi vấn (khung e): chữ nói hàng là A, B, C và cột là 1, 2, 3, nhưng hình ghi A, B, C dọc theo trục ngang và 1, 2, 3 theo trục dọc, tức là cột là chữ và hàng là số."
+   ]
+  },
+  {
+   "page": 15,
+   "kind": "content",
+   "title": "Advantages of integrated circuits",
+   "text_en": "1 Reduced power consumption: a circuit with many discrete components consumes P = 200 mW from +5 V whereas the integrated version consumes P = 20 mW. 2 Reduced cost in large quantities: the unit cost falls as production quantity rises (10^3, 10^6, 10^9 on a log scale) because the high initial cost of the wafer is spread out. 3 Increasingly complex circuits: SSI (74HC00, about 4 transistors), MSI (ADC, about 10^2), LSI (microcontroller, about 10^4), VLSI (CPU, about 10^9 transistors). 4 High reliability: fewer solder joints and connections lower the chance of failure; less affected by temperature, humidity and environment; can operate at higher speeds with better stability, important in avionics. 5 Higher cutoff frequencies as dimensions decrease: a smaller transistor (shorter L) has a shorter electron path, lower parasitic capacitance and shorter switching time, giving a higher cutoff frequency and allowing many components on a small chip. Summary: lower power, lower unit cost in mass production, more complex circuits, higher reliability and higher speed as feature size is reduced.",
+   "text_vi": "1 Giảm công suất tiêu thụ: mạch có nhiều linh kiện rời tiêu thụ P = 200 mW từ nguồn +5 V còn bản tích hợp chỉ P = 20 mW. 2 Giảm chi phí khi số lượng lớn: giá đơn vị giảm khi sản lượng tăng (10^3, 10^6, 10^9 theo thang log) vì chi phí ban đầu cho tấm wafer được chia nhỏ. 3 Mạch ngày càng phức tạp: SSI (74HC00, khoảng 4 transistor), MSI (ADC, khoảng 10^2), LSI (vi điều khiển, khoảng 10^4), VLSI (CPU, khoảng 10^9 transistor). 4 Độ tin cậy cao: ít mối hàn và kết nối hơn làm giảm khả năng hỏng; ít chịu ảnh hưởng của nhiệt độ, độ ẩm và môi trường; chạy được ở tốc độ cao hơn và ổn định hơn, quan trọng trong điện tử hàng không. 5 Tần số cắt cao hơn khi kích thước giảm: transistor nhỏ hơn (L ngắn hơn) có quãng đường electron ngắn hơn, điện dung ký sinh thấp hơn và thời gian chuyển mạch ngắn hơn, cho tần số cắt cao hơn và cho phép nhiều linh kiện trên chip nhỏ. Tóm tắt: công suất thấp, giá đơn vị thấp khi sản xuất hàng loạt, mạch phức tạp hơn, độ tin cậy cao hơn và tốc độ cao hơn khi kích thước đặc trưng giảm.",
+   "formulas": [],
+   "numbers": [
+    "P = 200 mW so với 20 mW",
+    "sản lượng 10^3, 10^6, 10^9",
+    "SSI khoảng 4; MSI 10^2; LSI 10^4; VLSI 10^9 transistor"
+   ],
+   "issues": [
+    "Số minh hoạ: P = 200 mW và 20 mW trên slide không nêu nguồn hay điều kiện tính.",
+    "Nghi vấn: \"khoảng 4 transistor\" cho 74HC00 (bốn cổng NAND hai ngõ vào, mỗi cổng CMOS có 4 transistor nên chip khoảng 16); nhãn VLSI với CPU 10^9 transistor trái với slide 9 xếp vi xử lý lớn vào ULSI (VLSI chỉ 1000 đến 10000 cổng)."
+   ]
+  },
+  {
+   "page": 16,
+   "kind": "content",
+   "title": "Disadvantages of integrated circuits",
+   "text_en": "1 Significant investment for a new circuit: circuit design, mask fabrication and mass production need a large initial cost for design tools, prototypes, masks and manufacturing equipment, so an IC is economical only in large quantities and not suited to small production runs. 2 Capacitance and inductance not easily integrated: large capacitors and inductors occupy a large area on the chip and have low values and low efficiency, so large passive components (L, C, RF circuits) are usually discrete or use special technologies. 3 Power dissipation for smaller circuits (higher power density as size decreases): from 180 nm to 45 nm to 7 nm the number of transistors on a chip rises sharply, leakage current increases and heat generation becomes a problem needing advanced thermal management. 4 ICs cannot be modified by the user: components, interconnections and functions are permanently fabricated; a different function needs a new IC; a damaged IC cannot be repaired internally, only replaced. Summary: many advantages (small size, high speed, high reliability, low unit cost) but also high initial cost, difficulty integrating large L and C, higher power dissipation as size decreases, and no user modification.",
+   "text_vi": "1 Cần đầu tư lớn cho mạch mới: thiết kế mạch, chế tạo mặt nạ và sản xuất hàng loạt đòi hỏi chi phí ban đầu lớn cho công cụ thiết kế, mẫu thử, mặt nạ và thiết bị chế tạo, nên IC chỉ kinh tế khi sản xuất số lượng lớn và không phù hợp lô nhỏ. 2 Khó tích hợp điện dung và điện cảm: tụ và cuộn cảm lớn chiếm diện tích lớn trên chip, giá trị thấp và hiệu suất thấp, nên linh kiện thụ động lớn (L, C, mạch RF) thường là linh kiện rời hoặc dùng công nghệ đặc biệt. 3 Tiêu tán công suất ở mạch nhỏ hơn (mật độ công suất cao hơn khi kích thước giảm): từ 180 nm xuống 45 nm rồi 7 nm số transistor trên chip tăng mạnh, dòng rò tăng và sinh nhiệt thành vấn đề cần quản lý nhiệt tiên tiến. 4 Người dùng không sửa được IC: linh kiện, dây nối và chức năng được chế tạo cố định; muốn chức năng khác phải có IC mới; IC hỏng không sửa được bên trong, chỉ thay cả IC. Tóm tắt: nhiều ưu điểm (nhỏ, nhanh, tin cậy cao, giá đơn vị thấp) nhưng cũng có chi phí ban đầu cao, khó tích hợp L và C lớn, tiêu tán công suất cao hơn khi kích thước giảm, và không sửa đổi được.",
+   "formulas": [],
+   "numbers": [
+    "nút công nghệ 180 nm, 45 nm, 7 nm"
+   ],
+   "issues": []
+  },
+  {
+   "page": 17,
+   "kind": "content",
+   "title": "Digital integrated circuits: what specifies a digital logic circuit",
+   "text_en": "A digital logic circuit is specified by input, output, function and time delay. Inputs are digital signals (logic 0 or 1); the circuit (for example an AND gate, flip-flop or counter) has a functional specification plus a timing specification; the outputs are digital signals. Function: defines the logical relationship between inputs and outputs (for example Y = A AND B). Time delay: the output changes only after a certain propagation delay tpd. Figure: an input pulse and the output pulse delayed by tpd.",
+   "text_vi": "Mạch logic số được đặc tả bằng ngõ vào, ngõ ra, chức năng và thời gian trễ. Ngõ vào là tín hiệu số (logic 0 hoặc 1); mạch (ví dụ cổng AND, flip-flop hoặc bộ đếm) có đặc tả chức năng cộng đặc tả thời gian; ngõ ra là tín hiệu số. Chức năng: xác định quan hệ logic giữa ngõ vào và ngõ ra (ví dụ Y = A AND B). Thời gian trễ: ngõ ra chỉ đổi sau một độ trễ lan truyền tpd nhất định. Hình: một xung vào và xung ra trễ tpd.",
+   "formulas": [
+    "Y = A AND B",
+    "t_{pd}"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 18,
+   "kind": "content",
+   "title": "Digital logic circuits: combinational and sequential",
+   "text_en": "Combinational logic circuit: the output is a function only of the present inputs (no state information or memory), Output = f(In). Sequential logic circuit: the output is a function of the present state (it has state information and requires memory), Output = f(In, Previous In); the block diagram shows a combinational circuit with a State block fed back to its inputs.",
+   "text_vi": "Mạch logic tổ hợp: ngõ ra chỉ là hàm của các ngõ vào hiện tại (không có thông tin trạng thái hay bộ nhớ), Output = f(In). Mạch logic tuần tự: ngõ ra là hàm của trạng thái hiện tại (có thông tin trạng thái và cần bộ nhớ), Output = f(In, Previous In); sơ đồ khối có mạch tổ hợp với khối Trạng thái (State) hồi tiếp về ngõ vào.",
+   "formulas": [
+    "Output = f(In)",
+    "Output = f(In, Previous In)"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 19,
+   "kind": "content",
+   "title": "Combinational and sequential logic circuits compared",
+   "text_en": "Combinational circuits: the output depends only on the present input variables; example a 2-input AND gate Y = A.B with its truth table and a timing diagram; no memory is required; example functions AND, OR, NOT, adders, subtractors, multiplexers, demultiplexers, decoders, encoders. Sequential circuits: the output depends on the present inputs and the past history (stored state); a memory element (flip-flop, latch, register) is required; example an edge-triggered D flip-flop, where Q stores the input value at the clock edge (clock rising edge with D = 0 gives Q = 0; with D = 1 gives Q = 1) and Q is updated at each rising edge; example functions flip-flops, registers, shift registers, counters, finite state machines. Table: output dependency (present input only, versus present input and past history); memory (not required, versus required); speed (faster, versus slower); design complexity (easy, versus difficult); common adders (parallel adder, versus serial adder); examples (half and full adder, half and full subtractor, MUX, DEMUX, versus flip-flops, shift registers, binary counters).",
+   "text_vi": "Mạch tổ hợp: ngõ ra chỉ phụ thuộc các biến ngõ vào hiện tại; ví dụ cổng AND hai ngõ vào Y = A.B với bảng chân trị và giản đồ thời gian; không cần bộ nhớ; ví dụ chức năng AND, OR, NOT, bộ cộng, bộ trừ, bộ ghép kênh, bộ tách kênh, bộ giải mã, bộ mã hoá. Mạch tuần tự: ngõ ra phụ thuộc ngõ vào hiện tại và lịch sử quá khứ (trạng thái lưu); cần phần tử nhớ (flip-flop, chốt, thanh ghi); ví dụ flip-flop D kích theo cạnh, Q lưu giá trị ngõ vào tại cạnh xung nhịp (cạnh lên với D = 0 cho Q = 0; với D = 1 cho Q = 1) và Q cập nhật ở mỗi cạnh lên; ví dụ chức năng flip-flop, thanh ghi, thanh ghi dịch, bộ đếm, máy trạng thái hữu hạn. Bảng: phụ thuộc ngõ ra (chỉ ngõ vào hiện tại, so với ngõ vào hiện tại và lịch sử); bộ nhớ (không cần, so với cần); tốc độ (nhanh hơn, so với chậm hơn); độ phức tạp thiết kế (dễ, so với khó); bộ cộng thường dùng (bộ cộng song song, so với bộ cộng nối tiếp); ví dụ (bộ cộng nửa và đầy đủ, bộ trừ nửa và đầy đủ, MUX, DEMUX, so với flip-flop, thanh ghi dịch, bộ đếm nhị phân).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Nghi vấn: hàng \"tốc độ nhanh hơn / chậm hơn\" và \"thiết kế dễ / khó\" là khái quát; tốc độ và độ khó phụ thuộc thiết kế cụ thể, không phải quy luật của mạch tổ hợp hay tuần tự."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 20,
+   "kind": "content",
+   "title": "Combinational logic circuit: three groups with typical ICs",
+   "text_en": "Combinational logic circuits depend only on the present inputs. Three groups. 1 Arithmetic and logical functions (arithmetic and logic operations on binary data): adders (74LS83), subtractors (74LS283), comparators (74LS85), programmable logic devices; example a 4-bit adder with inputs A[3:0], B[3:0] and outputs S[3:0] and Cout. 2 Data transmission (select, route or distribute data between lines): multiplexers (74LS153), demultiplexers (74LS138), encoders (74LS148), decoders (74LS139); example a 4-to-1 multiplexer selecting one of D0 to D3 with select lines S1 and S0. 3 Code converters: binary to decimal BCD (74LS42), decimal to BCD (74LS47), 7-segment display drivers (74LS47), Gray code converters, other code converters; example a BCD to 7-segment decoder turning a 4-bit BCD input into outputs a to g.",
+   "text_vi": "Mạch logic tổ hợp chỉ phụ thuộc ngõ vào hiện tại. Ba nhóm. 1 Chức năng số học và logic (phép toán số học và logic trên dữ liệu nhị phân): bộ cộng (74LS83), bộ trừ (74LS283), bộ so sánh (74LS85), thiết bị logic lập trình; ví dụ bộ cộng 4 bit với ngõ vào A[3:0], B[3:0] và ngõ ra S[3:0] và Cout. 2 Truyền dữ liệu (chọn, định tuyến hoặc phân phối dữ liệu giữa các đường): bộ ghép kênh (74LS153), bộ tách kênh (74LS138), bộ mã hoá (74LS148), bộ giải mã (74LS139); ví dụ bộ ghép kênh 4 ra 1 chọn một trong D0 đến D3 bằng đường chọn S1 và S0. 3 Bộ đổi mã: nhị phân sang thập phân BCD (74LS42), thập phân sang BCD (74LS47), mạch điều khiển hiển thị 7 đoạn (74LS47), bộ đổi mã Gray, các bộ đổi mã khác; ví dụ bộ giải mã BCD sang 7 đoạn đổi ngõ vào BCD 4 bit thành ngõ ra a đến g.",
+   "formulas": [],
+   "numbers": [
+    "74LS83, 74LS283, 74LS85, 74LS153, 74LS138, 74LS148, 74LS139, 74LS42, 74LS47"
+   ],
+   "issues": [
+    "Nghi vấn (cần đối chiếu bảng dữ liệu): slide xếp 74LS283 là bộ trừ, nhưng theo bảng dữ liệu thông dụng 74LS283 là bộ cộng nhị phân 4 bit có nhớ nhanh (cùng chức năng với 74LS83).",
+    "Nghi vấn: 74LS47 được ghi hai lần, vừa là bộ đổi thập phân sang BCD vừa là mạch điều khiển 7 đoạn; theo bảng dữ liệu thông dụng 74LS47 là bộ giải mã BCD sang 7 đoạn, không phải bộ đổi thập phân sang BCD."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 21,
+   "kind": "divider",
+   "title": "Half and Full Adders",
+   "text_en": "Section divider \"Half and Full Adders\".",
+   "text_vi": "Slide ngăn phần \"Half and Full Adders\" (bộ cộng nửa và bộ cộng đầy đủ).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 22,
+   "kind": "content",
+   "title": "Half and full adders: objectives",
+   "text_en": "Adders are important in computers and in other digital systems that process numerical data; understanding basic adder operation is fundamental to digital systems. Objectives: describe the function of a half-adder; draw a half-adder logic diagram; describe the function of the full-adder; draw a full-adder logic diagram using half-adders; implement a full-adder using AND-OR logic.",
+   "text_vi": "Bộ cộng quan trọng trong máy tính và các hệ số khác xử lý dữ liệu số; hiểu hoạt động cơ bản của bộ cộng là nền tảng của hệ số. Mục tiêu: mô tả chức năng bộ cộng nửa; vẽ sơ đồ logic bộ cộng nửa; mô tả chức năng bộ cộng đầy đủ; vẽ sơ đồ logic bộ cộng đầy đủ dùng bộ cộng nửa; thực hiện bộ cộng đầy đủ bằng logic AND-OR.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 23,
+   "kind": "content",
+   "title": "Half adder: truth table and symbol",
+   "text_en": "The half-adder accepts two binary digits on its inputs and produces two binary digits on its outputs (a sum bit and a carry bit). Basic rules of binary addition: 0+0 = 0, 0+1 = 1, 1+0 = 1, 1+1 = 10. Truth table (A, B, Cout, Sum): 00 gives 0, 0; 01 gives 0, 1; 10 gives 0, 1; 11 gives 1, 0. Sum is the sum, Cout is the output carry, A and B are the input variables (operands). Logic symbol: a block with inputs A and B and outputs Sigma (Sum) and Cout (Carry).",
+   "text_vi": "Bộ cộng nửa nhận hai chữ số nhị phân ở ngõ vào và cho hai chữ số nhị phân ở ngõ ra (một bit tổng và một bit nhớ). Quy tắc cộng nhị phân cơ bản: 0+0 = 0, 0+1 = 1, 1+0 = 1, 1+1 = 10. Bảng chân trị (A, B, Cout, Sum): 00 cho 0, 0; 01 cho 0, 1; 10 cho 0, 1; 11 cho 1, 0. Sum là tổng, Cout là nhớ ra, A và B là biến ngõ vào (toán hạng). Ký hiệu logic: khối có ngõ vào A, B và ngõ ra Sigma (Sum) và Cout (Carry).",
+   "formulas": [
+    "1 + 1 = 10"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 24,
+   "kind": "content",
+   "title": "Half adder: logic expressions and diagram",
+   "text_en": "The output carry Cout is 1 only when both A and B are 1, so Cout is the AND of the inputs. The sum output is 1 only if A and B are not equal, so the sum is the exclusive-OR of the inputs. Sum = A xor B = A B-bar + A-bar B; Cout = AB. Figure: an XOR gate and an AND gate sharing inputs A and B.",
+   "text_vi": "Nhớ ra Cout bằng 1 chỉ khi cả A và B bằng 1, nên Cout là AND của các ngõ vào. Ngõ ra tổng bằng 1 chỉ khi A và B không bằng nhau, nên tổng là exclusive-OR của các ngõ vào. Sum = A xor B = A B-gạch + A-gạch B; Cout = AB. Hình: một cổng XOR và một cổng AND dùng chung ngõ vào A và B.",
+   "formulas": [
+    "\\Sigma = A \\oplus B = A\\overline{B} + \\overline{A}B",
+    "C_{out} = AB"
+   ],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: Sum = A xor B và Cout = AB khớp bảng chân trị slide 23 ở cả bốn tổ hợp."
+   ]
+  },
+  {
+   "page": 25,
+   "kind": "content",
+   "title": "Full adder: symbol, circuit and truth table",
+   "text_en": "The full-adder accepts two input bits and an input carry and generates a sum output and an output carry. Logic symbol: inputs A, B (input bits) and Cin (input carry); outputs Sigma (Sum) and Cout (output carry). Logic circuit: a first XOR gives A xor B; a second XOR with Cin gives the sum (A xor B) xor Cin; two AND gates give (A xor B)Cin and AB, which an OR gate combines into Cout = AB + (A xor B)Cin. Truth table (A, B, Cin, then Cout, Sum): 000 gives 0, 0; 001 gives 0, 1; 010 gives 0, 1; 011 gives 1, 0; 100 gives 0, 1; 101 gives 1, 0; 110 gives 1, 0; 111 gives 1, 1. Notes: Cin is the input carry (sometimes CI), Cout the output carry (sometimes CO), Sum the sum, A and B the operands.",
+   "text_vi": "Bộ cộng đầy đủ nhận hai bit ngõ vào và một nhớ vào, tạo ngõ ra tổng và nhớ ra. Ký hiệu logic: ngõ vào A, B (bit vào) và Cin (nhớ vào); ngõ ra Sigma (Sum) và Cout (nhớ ra). Mạch logic: XOR thứ nhất cho A xor B; XOR thứ hai với Cin cho tổng (A xor B) xor Cin; hai cổng AND cho (A xor B)Cin và AB, được cổng OR gộp thành Cout = AB + (A xor B)Cin. Bảng chân trị (A, B, Cin, rồi Cout, Sum): 000 cho 0, 0; 001 cho 0, 1; 010 cho 0, 1; 011 cho 1, 0; 100 cho 0, 1; 101 cho 1, 0; 110 cho 1, 0; 111 cho 1, 1. Ghi chú: Cin là nhớ vào (đôi khi ký hiệu CI), Cout là nhớ ra (đôi khi CO), Sum là tổng, A và B là toán hạng.",
+   "formulas": [
+    "\\Sigma = (A \\oplus B) \\oplus C_{in}",
+    "C_{out} = AB + (A \\oplus B)C_{in}"
+   ],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: bảng chân trị khớp phép cộng A + B + Cin ở cả tám tổ hợp (Sum là bit thấp, Cout là bit cao)."
+   ]
+  },
+  {
+   "page": 26,
+   "kind": "content",
+   "title": "Full adder: sum and carry equations",
+   "text_en": "From the half-adder, the sum of input bits A and B is their exclusive-OR. For the input carry Cin to be added, it must be exclusive-ORed with A xor B, giving the full-adder sum: Sum = (A xor B) xor Cin. The output carry is 1 when both inputs to the first XOR gate are 1s or when both inputs to the second XOR gate are 1s; so it is produced by A ANDed with B and (A xor B) ANDed with Cin: Cout = AB + (A xor B)Cin.",
+   "text_vi": "Từ bộ cộng nửa, tổng của hai bit vào A và B là exclusive-OR của chúng. Để cộng thêm nhớ vào Cin, phải exclusive-OR nó với A xor B, cho tổng của bộ cộng đầy đủ: Sum = (A xor B) xor Cin. Nhớ ra bằng 1 khi cả hai ngõ vào của cổng XOR thứ nhất đều bằng 1 hoặc khi cả hai ngõ vào của cổng XOR thứ hai đều bằng 1; nên nó được tạo bởi A AND B và (A xor B) AND Cin: Cout = AB + (A xor B)Cin.",
+   "formulas": [
+    "\\Sigma = (A \\oplus B) \\oplus C_{in}",
+    "C_{out} = AB + (A \\oplus B)C_{in}"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 27,
+   "kind": "content",
+   "title": "Full adder built from two half-adders",
+   "text_en": "Figure: two half-adders. The first adds A and B, producing A xor B (sum) and AB (carry). The second adds A xor B and Cin, producing the full sum (A xor B) xor Cin and the carry (A xor B)Cin. An OR gate combines the two carries into the output carry AB + (A xor B)Cin.",
+   "text_vi": "Hình: hai bộ cộng nửa. Bộ thứ nhất cộng A và B, cho A xor B (tổng) và AB (nhớ). Bộ thứ hai cộng A xor B và Cin, cho tổng đầy đủ (A xor B) xor Cin và nhớ (A xor B)Cin. Cổng OR gộp hai nhớ thành nhớ ra AB + (A xor B)Cin.",
+   "formulas": [
+    "C_{out} = AB + (A \\oplus B)C_{in}"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 28,
+   "kind": "content",
+   "title": "Full adder example: three input sets",
+   "text_en": "Example: for each of the three full-adders shown, find the outputs for the inputs (A, B, Cin): (a) 1, 0, 0; (b) 1, 1, 0; (c) 1, 0, 1. The outputs are left blank.",
+   "text_vi": "Ví dụ: với mỗi bộ trong ba bộ cộng đầy đủ trên hình, tìm các ngõ ra cho ngõ vào (A, B, Cin): (a) 1, 0, 0; (b) 1, 1, 0; (c) 1, 0, 1. Các ngõ ra để trống.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 29,
+   "kind": "content",
+   "title": "Full adder example: solution",
+   "text_en": "(a) A = 1, B = 0, Cin = 0: 1+0+0 = 1 with no carry, so Sum = 1 and Cout = 0. (b) A = 1, B = 1, Cin = 0: 1+1+0 = 0 with a carry of 1, so Sum = 0 and Cout = 1. (c) A = 1, B = 0, Cin = 1: 1+0+1 = 0 with a carry of 1, so Sum = 0 and Cout = 1.",
+   "text_vi": "(a) A = 1, B = 0, Cin = 0: 1+0+0 = 1 không nhớ, nên Sum = 1 và Cout = 0. (b) A = 1, B = 1, Cin = 0: 1+1+0 = 0 nhớ 1, nên Sum = 0 và Cout = 1. (c) A = 1, B = 0, Cin = 1: 1+0+1 = 0 nhớ 1, nên Sum = 0 và Cout = 1.",
+   "formulas": [],
+   "numbers": [
+    "(a) Sum 1, Cout 0",
+    "(b) Sum 0, Cout 1",
+    "(c) Sum 0, Cout 1"
+   ],
+   "issues": [
+    "Đã kiểm: ba kết quả khớp bảng chân trị slide 25 (100 cho Cout 0, Sum 1; 110 cho Cout 1, Sum 0; 101 cho Cout 1, Sum 0)."
+   ]
+  },
+  {
+   "page": 30,
+   "kind": "divider",
+   "title": "Comparators",
+   "text_en": "Section divider \"Comparators\".",
+   "text_vi": "Slide ngăn phần \"Comparators\" (bộ so sánh).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 31,
+   "kind": "content",
+   "title": "Comparators: objectives",
+   "text_en": "The basic function of a comparator is to compare the magnitudes of two binary quantities and determine their relationship; in its simplest form it determines whether two numbers are equal. Objectives: use the exclusive-NOR gate as a basic comparator; analyse the internal logic of a magnitude comparator with both equality and inequality outputs; apply the 74HC85 comparator to compare the magnitudes of two 4-bit numbers.",
+   "text_vi": "Chức năng cơ bản của bộ so sánh là so sánh độ lớn của hai đại lượng nhị phân và xác định quan hệ giữa chúng; ở dạng đơn giản nhất nó xác định hai số có bằng nhau không. Mục tiêu: dùng cổng exclusive-NOR làm bộ so sánh cơ bản; phân tích logic bên trong của bộ so sánh độ lớn có cả ngõ ra bằng và không bằng; dùng bộ so sánh 74HC85 để so sánh độ lớn hai số 4 bit.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 32,
+   "kind": "content",
+   "title": "Equality: XNOR as a basic comparator",
+   "text_en": "The exclusive-NOR gate can be used as a basic comparator because its output is 0 if the two input bits are not equal and 1 if they are equal. Figure: inputs 0,0 give 1 (equal); 1,0 give 0 (not equal); 0,1 give 0 (not equal); 1,1 give 1 (equal).",
+   "text_vi": "Cổng exclusive-NOR dùng được làm bộ so sánh cơ bản vì ngõ ra bằng 0 nếu hai bit vào không bằng nhau và bằng 1 nếu bằng nhau. Hình: ngõ vào 0,0 cho 1 (bằng); 1,0 cho 0 (không bằng); 0,1 cho 0 (không bằng); 1,1 cho 1 (bằng).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 33,
+   "kind": "content",
+   "title": "Equality of two 2-bit numbers",
+   "text_en": "To compare binary numbers of two bits each, an additional XNOR gate is needed. The two least significant bits (LSBs) of the numbers are compared by gate G1 and the two most significant bits (MSBs) by gate G2. If the numbers are equal, their corresponding bits are the same and the output of each XNOR gate is 1. To produce a single output for equality or inequality, an AND gate is combined with the XNOR gates; HIGH on A = B indicates equality. Figure: A = A1A0 and B = B1B0, with G1 (A0, B0), G2 (A1, B1) and an AND gate.",
+   "text_vi": "Để so sánh số nhị phân hai bit, cần thêm một cổng XNOR. Hai bit có trọng số thấp nhất (LSB) được so bằng cổng G1 và hai bit có trọng số cao nhất (MSB) được so bằng cổng G2. Nếu hai số bằng nhau, các bit tương ứng giống nhau và ngõ ra mỗi cổng XNOR bằng 1. Để có một ngõ ra duy nhất cho bằng hoặc không bằng, ghép một cổng AND với các cổng XNOR; mức CAO ở A = B báo bằng nhau. Hình: A = A1A0 và B = B1B0, với G1 (A0, B0), G2 (A1, B1) và một cổng AND.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 34,
+   "kind": "content",
+   "title": "Equality example: 10 and 10, then 11 and 10",
+   "text_en": "Example: apply (a) 10 and 10 and (b) 11 and 10 to the comparator inputs and find the output by following the logic levels. (a) A0 = 0, B0 = 0 and A1 = 1, B1 = 1: both XNOR outputs are 1, so the AND output is 1 (equal). (b) A0 = 1, B0 = 0 and A1 = 1, B1 = 1: the XNOR outputs are 0 and 1, so the AND output is 0 (not equal).",
+   "text_vi": "Ví dụ: đưa (a) 10 và 10 và (b) 11 và 10 vào ngõ vào bộ so sánh và tìm ngõ ra bằng cách lần theo các mức logic. (a) A0 = 0, B0 = 0 và A1 = 1, B1 = 1: cả hai ngõ ra XNOR bằng 1 nên ngõ ra AND bằng 1 (bằng nhau). (b) A0 = 1, B0 = 0 và A1 = 1, B1 = 1: ngõ ra XNOR là 0 và 1 nên ngõ ra AND bằng 0 (không bằng nhau).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: (a) hai số bằng nhau cho 1; (b) hai số khác nhau cho 0. Đúng."
+   ]
+  },
+  {
+   "page": 35,
+   "kind": "content",
+   "title": "Inequality: 4-bit comparator",
+   "text_en": "In addition to the equality output, fixed-function comparators have outputs showing which number is larger: one output for A > B and one for A < B. To determine the inequality of A and B, first examine the highest-order bit of each: if A3 = 1 and B3 = 0, A is greater than B; if A3 = 0 and B3 = 1, A is less than B; if A3 = B3, examine the next lower bit position. Figure: logic symbol of a 4-bit comparator (COMP) with inputs A0 to A3 and B0 to B3 and outputs A > B, A = B, A < B.",
+   "text_vi": "Ngoài ngõ ra bằng nhau, bộ so sánh chức năng cố định còn có ngõ ra cho biết số nào lớn hơn: một ngõ ra cho A > B và một cho A < B. Để xác định bất đẳng thức giữa A và B, trước hết xét bit bậc cao nhất của mỗi số: nếu A3 = 1 và B3 = 0 thì A lớn hơn B; nếu A3 = 0 và B3 = 1 thì A nhỏ hơn B; nếu A3 = B3 thì xét bit thấp kế tiếp. Hình: ký hiệu logic bộ so sánh 4 bit (COMP) với ngõ vào A0 đến A3 và B0 đến B3 và ngõ ra A > B, A = B, A < B.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 36,
+   "kind": "content",
+   "title": "Inequality example: 4-bit comparator inputs",
+   "text_en": "Example: determine the A = B, A > B and A < B outputs for the inputs shown on the comparator. The inputs listed for pins 0 to 3 are A: 0, 1, 1, 0 and B: 1, 1, 0, 0 (that is A3A2A1A0 = 0110 and B3B2B1B0 = 0011). The outputs are left blank.",
+   "text_vi": "Ví dụ: xác định các ngõ ra A = B, A > B và A < B cho các ngõ vào ghi trên bộ so sánh. Các ngõ vào liệt kê cho chân 0 đến 3 là A: 0, 1, 1, 0 và B: 1, 1, 0, 0 (tức là A3A2A1A0 = 0110 và B3B2B1B0 = 0011). Các ngõ ra để trống.",
+   "formulas": [],
+   "numbers": [
+    "A = 0110 (6); B = 0011 (3)"
+   ],
+   "issues": [
+    "Đã kiểm: A = 0110 (6) lớn hơn B = 0011 (3), nên A > B = 1, A = B = 0, A < B = 0 (slide để trống)."
+   ]
+  },
+  {
+   "page": 37,
+   "kind": "divider",
+   "title": "Decoders",
+   "text_en": "Section divider \"Decoders\".",
+   "text_vi": "Slide ngăn phần \"Decoders\" (bộ giải mã).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 38,
+   "kind": "content",
+   "title": "Decoder: definition",
+   "text_en": "A decoder is a digital circuit that detects the presence of a specified combination of bits (code) on its inputs and indicates it by a specified output level. In general form a decoder has n input lines to handle n bits and from one to 2^n output lines to indicate the presence of one or more n-bit combinations.",
+   "text_vi": "Bộ giải mã là mạch số phát hiện sự có mặt của một tổ hợp bit (mã) xác định ở ngõ vào và báo bằng một mức ngõ ra xác định. Ở dạng tổng quát, bộ giải mã có n đường vào để xử lý n bit và từ một đến 2^n đường ra để báo sự có mặt của một hoặc nhiều tổ hợp n bit.",
+   "formulas": [
+    "2^n"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 39,
+   "kind": "content",
+   "title": "Decoder: basic binary decode of 1001",
+   "text_en": "To detect binary 1001, an AND gate can be the basic decoding element because it gives HIGH only when all inputs are HIGH; so invert the two middle bits (the 0s) so that every AND input is HIGH when 1001 occurs: X = A3 A2-bar A1-bar A0 (A0 is the LSB, A3 the MSB). If a NAND gate replaces the AND, a LOW output indicates the code 1001. Figure: decoding logic for 1001 with an active-HIGH output.",
+   "text_vi": "Để phát hiện nhị phân 1001, cổng AND có thể làm phần tử giải mã cơ bản vì nó cho mức CAO chỉ khi mọi ngõ vào CAO; do đó đảo hai bit giữa (các bit 0) để mọi ngõ vào AND ở mức CAO khi xuất hiện 1001: X = A3 A2-gạch A1-gạch A0 (A0 là LSB, A3 là MSB). Nếu thay AND bằng NAND thì ngõ ra THẤP báo mã 1001. Hình: logic giải mã 1001 với ngõ ra tích cực CAO.",
+   "formulas": [
+    "X = A_3\\overline{A_2}\\,\\overline{A_1}A_0"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 40,
+   "kind": "content",
+   "title": "Decoder example: decode 1011",
+   "text_en": "Example: determine the logic needed to decode 1011 with a HIGH output. The decoding function is formed by complementing only the variables that appear as 0 in the desired number: X = A3 A2-bar A1 A0 (1011). Figure: an AND gate with A0, A1, A3 straight in and A2 through an inverter.",
+   "text_vi": "Ví dụ: xác định logic cần để giải mã 1011 với ngõ ra CAO. Hàm giải mã được tạo bằng cách chỉ lấy bù các biến xuất hiện là 0 trong số cần giải mã: X = A3 A2-gạch A1 A0 (1011). Hình: một cổng AND với A0, A1, A3 vào thẳng và A2 qua bộ đảo.",
+   "formulas": [
+    "X = A_3\\overline{A_2}A_1A_0"
+   ],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: X = 1 chỉ với A3A2A1A0 = 1011."
+   ]
+  },
+  {
+   "page": 41,
+   "kind": "content",
+   "title": "The 4-bit decoder (4-line-to-16-line)",
+   "text_en": "To decode all combinations of four bits, sixteen decoding gates are needed (2^4 = 16). This decoder is called a 4-line-to-16-line decoder (four inputs, sixteen outputs) or a 1-of-16 decoder, because for any given input code one of the sixteen outputs is activated. Table: for decimal digits 0 to 15 the binary inputs A3A2A1A0, the decoding function (for example digit 0 is A3-bar A2-bar A1-bar A0-bar and digit 15 is A3A2A1A0) and the sixteen outputs, which are active LOW: the selected output is 0 and all others are 1.",
+   "text_vi": "Để giải mã mọi tổ hợp của bốn bit cần mười sáu cổng giải mã (2^4 = 16). Bộ giải mã này gọi là bộ giải mã 4 đường sang 16 đường (bốn ngõ vào, mười sáu ngõ ra) hoặc bộ giải mã 1 trong 16, vì với mỗi mã vào, một trong mười sáu ngõ ra được kích hoạt. Bảng: với các chữ số thập phân 0 đến 15, ngõ vào nhị phân A3A2A1A0, hàm giải mã (ví dụ chữ số 0 là A3-gạch A2-gạch A1-gạch A0-gạch và chữ số 15 là A3A2A1A0) và mười sáu ngõ ra tích cực THẤP: ngõ ra được chọn bằng 0 và các ngõ ra khác bằng 1.",
+   "formulas": [
+    "2^4 = 16"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 42,
+   "kind": "content",
+   "title": "Decoder logic symbol: BIN/DEC",
+   "text_en": "The BIN/DEC label says that a binary input makes the corresponding decimal output active. The input labels 1, 2, 4 and 8 are the binary weights of the input bits (2^0, 2^1, 2^2, 2^3). Figure: symbol of a 4-line-to-16-line (1-of-16) decoder with outputs 0 to 15, each with an active-LOW bubble.",
+   "text_vi": "Nhãn BIN/DEC cho biết ngõ vào nhị phân làm ngõ ra thập phân tương ứng tích cực. Các nhãn ngõ vào 1, 2, 4 và 8 là trọng số nhị phân của các bit vào (2^0, 2^1, 2^2, 2^3). Hình: ký hiệu bộ giải mã 4 đường sang 16 đường (1 trong 16) với các ngõ ra 0 đến 15, mỗi ngõ có vòng tròn đảo tích cực THẤP.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 43,
+   "kind": "content",
+   "title": "BCD-to-decimal decoder",
+   "text_en": "The BCD-to-decimal decoder converts each BCD (8421) code into one of ten decimal digit indications; it is also called a 4-line-to-10-line decoder or a 1-of-10 decoder. The table lists the ten BCD codes (0000 to 1001) with their decoding functions (for example digit 0 is A3-bar A2-bar A1-bar A0-bar). Each function is implemented with a NAND gate to give an active-LOW output; if an active-HIGH output is needed, AND gates are used.",
+   "text_vi": "Bộ giải mã BCD sang thập phân đổi mỗi mã BCD (8421) thành một trong mười chỉ báo chữ số thập phân; còn gọi là bộ giải mã 4 đường sang 10 đường hoặc bộ giải mã 1 trong 10. Bảng liệt kê mười mã BCD (0000 đến 1001) với hàm giải mã (ví dụ chữ số 0 là A3-gạch A2-gạch A1-gạch A0-gạch). Mỗi hàm được thực hiện bằng cổng NAND để cho ngõ ra tích cực THẤP; nếu cần ngõ ra tích cực CAO thì dùng cổng AND.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 44,
+   "kind": "content",
+   "title": "Decoder example: 74HC42 with BCD waveforms",
+   "text_en": "The 74HC42 is a fixed-function IC decoder with four BCD inputs and ten active-LOW decimal outputs. Pin assignment in the symbol: inputs A0 (pin 15), A1 (14), A2 (13), A3 (12) with weights 1, 2, 4, 8; outputs OUT0 (1), OUT1 (2), OUT2 (3), OUT3 (4), OUT4 (5), OUT5 (6), OUT6 (7), OUT7 (9), OUT8 (10), OUT9 (11). Task: if the input waveforms of figure (a) (A0 to A3 over t0 to t10) are applied, show the output waveforms. In the input figure A0 to A3 count through the BCD codes 0 to 9 in successive intervals.",
+   "text_vi": "74HC42 là IC giải mã chức năng cố định với bốn ngõ vào BCD và mười ngõ ra thập phân tích cực THẤP. Gán chân trong ký hiệu: ngõ vào A0 (chân 15), A1 (14), A2 (13), A3 (12) với trọng số 1, 2, 4, 8; ngõ ra OUT0 (1), OUT1 (2), OUT2 (3), OUT3 (4), OUT4 (5), OUT5 (6), OUT6 (7), OUT7 (9), OUT8 (10), OUT9 (11). Yêu cầu: nếu đặt dạng sóng ngõ vào ở hình (a) (A0 đến A3 qua t0 đến t10) thì vẽ dạng sóng ngõ ra. Ở hình ngõ vào, A0 đến A3 đếm qua các mã BCD từ 0 đến 9 trong các khoảng liên tiếp.",
+   "formulas": [],
+   "numbers": [
+    "74HC42: A0 chân 15, A1 14, A2 13, A3 12; OUT0 đến OUT6 chân 1 đến 7; OUT7 đến OUT9 chân 9 đến 11"
+   ],
+   "issues": [
+    "Còn sót tham chiếu \"Figure 6-32(a)\" của sách nguồn trong đề; hình trên slide ghi \"input waveforms\", và chú thích ký hiệu logic ghi \"Table\" thay vì \"Figure\"."
+   ]
+  },
+  {
+   "page": 45,
+   "kind": "content",
+   "title": "Decoder example: 74HC42 solution",
+   "text_en": "Solution waveforms: (a) BCD inputs A0 to A3 over t0 to t10 (codes 0 to 9 in order); (b) the ten decimal outputs 0 to 9: each output goes LOW during the interval in which its code is present (output 0 in t0 to t1, output 1 in t1 to t2, and so on up to output 9 in t9 to t10) and stays HIGH otherwise, since the outputs are active LOW.",
+   "text_vi": "Dạng sóng lời giải: (a) ngõ vào BCD A0 đến A3 qua t0 đến t10 (mã 0 đến 9 theo thứ tự); (b) mười ngõ ra thập phân 0 đến 9: mỗi ngõ ra xuống THẤP trong khoảng có mã của nó (ngõ ra 0 ở t0 đến t1, ngõ ra 1 ở t1 đến t2, và cứ thế đến ngõ ra 9 ở t9 đến t10) và ở mức CAO ở các thời điểm khác, vì ngõ ra tích cực THẤP.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 46,
+   "kind": "content",
+   "title": "BCD-to-7-segment decoder",
+   "text_en": "The BCD-to-7-segment decoder accepts the BCD code on its inputs and provides outputs to drive 7-segment display devices to produce a decimal readout. Figure: symbol BCD/7-seg with BCD inputs A0 to A3 (weights 1, 2, 4, 8) and output lines a to g, with active-LOW bubbles, that connect to the 7-segment display device. The slide has a second, empty bullet.",
+   "text_vi": "Bộ giải mã BCD sang 7 đoạn nhận mã BCD ở ngõ vào và cho các ngõ ra điều khiển thiết bị hiển thị 7 đoạn để hiện số thập phân. Hình: ký hiệu BCD/7-seg với ngõ vào BCD A0 đến A3 (trọng số 1, 2, 4, 8) và các đường ra a đến g, có vòng tròn đảo tích cực THẤP, nối với thiết bị hiển thị 7 đoạn. Slide có thêm một gạch đầu dòng thứ hai bị trống.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Slide có một gạch đầu dòng trống (nội dung bị thiếu)."
+   ]
+  },
+  {
+   "page": 47,
+   "kind": "divider",
+   "title": "Encoders",
+   "text_en": "Section divider \"Encoders\".",
+   "text_vi": "Slide ngăn phần \"Encoders\" (bộ mã hoá).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 48,
+   "kind": "content",
+   "title": "Encoder: definition",
+   "text_en": "An encoder is a combinational logic circuit that essentially performs a \"reverse\" decoder function. It accepts an active level on one of its inputs representing a digit, such as a decimal or octal digit, and converts it to a coded output such as BCD or binary. Encoders can also encode various symbols and alphabetic characters.",
+   "text_vi": "Bộ mã hoá là mạch logic tổ hợp về cơ bản thực hiện chức năng giải mã \"ngược\". Nó nhận mức tích cực ở một trong các ngõ vào biểu diễn một chữ số, như chữ số thập phân hoặc bát phân, và đổi thành ngõ ra mã hoá như BCD hoặc nhị phân. Bộ mã hoá cũng có thể mã hoá nhiều ký hiệu và ký tự chữ cái.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 49,
+   "kind": "content",
+   "title": "Decimal-to-BCD encoder",
+   "text_en": "This type of encoder has ten inputs (one for each decimal digit) and four outputs corresponding to the BCD code; it is a basic 10-line-to-4-line encoder. Table: decimal digits 0 to 9 with BCD codes A3A2A1A0 from 0000 to 1001. Figure: logic symbol DEC/BCD with decimal inputs 0 to 9 and BCD outputs weighted 1, 2, 4, 8.",
+   "text_vi": "Loại bộ mã hoá này có mười ngõ vào (mỗi chữ số thập phân một ngõ) và bốn ngõ ra ứng với mã BCD; đó là bộ mã hoá cơ bản 10 đường sang 4 đường. Bảng: các chữ số thập phân 0 đến 9 với mã BCD A3A2A1A0 từ 0000 đến 1001. Hình: ký hiệu logic DEC/BCD với ngõ vào thập phân 0 đến 9 và ngõ ra BCD có trọng số 1, 2, 4, 8.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 50,
+   "kind": "content",
+   "title": "Decimal-to-BCD encoder: equations and logic diagram",
+   "text_en": "A3 = 8 + 9; A2 = 4 + 5 + 6 + 7; A1 = 2 + 3 + 6 + 7; A0 = 1 + 3 + 5 + 7 + 9, each the OR of the decimal inputs whose BCD code has that bit equal to 1. Figure: four OR gates, with outputs A0 (LSB) to A3 (MSB), taking the decimal inputs 1 to 9.",
+   "text_vi": "A3 = 8 + 9; A2 = 4 + 5 + 6 + 7; A1 = 2 + 3 + 6 + 7; A0 = 1 + 3 + 5 + 7 + 9, mỗi hàm là OR của các ngõ vào thập phân có mã BCD với bit đó bằng 1. Hình: bốn cổng OR, ngõ ra A0 (LSB) đến A3 (MSB), nhận các ngõ vào thập phân 1 đến 9.",
+   "formulas": [
+    "A_3 = 8 + 9",
+    "A_2 = 4 + 5 + 6 + 7",
+    "A_1 = 2 + 3 + 6 + 7",
+    "A_0 = 1 + 3 + 5 + 7 + 9"
+   ],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: bốn phương trình khớp bảng BCD của slide 49 (A3 = 1 cho 8, 9; A2 = 1 cho 4 đến 7; A1 = 1 cho 2, 3, 6, 7; A0 = 1 cho 1, 3, 5, 7, 9)."
+   ]
+  },
+  {
+   "page": 51,
+   "kind": "divider",
+   "title": "Multiplexers",
+   "text_en": "Section divider \"Multiplexers\".",
+   "text_vi": "Slide ngăn phần \"Multiplexers\" (bộ ghép kênh).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 52,
+   "kind": "content",
+   "title": "Multiplexer: definition and 1-of-4 selector",
+   "text_en": "A multiplexer (MUX) lets digital information from several sources be routed onto a single line for transmission to a common destination. The basic multiplexer has several data-input lines and a single output line, and also data-select inputs that switch the data of any one input to the output; multiplexers are also called data selectors. Figure: symbol of a 1-of-4 data selector (data inputs D0 to D3, data select S0 and S1, data output Y) and the selection table: S1S0 = 00 selects D0, 01 selects D1, 10 selects D2, 11 selects D3.",
+   "text_vi": "Bộ ghép kênh (MUX) cho phép thông tin số từ nhiều nguồn được dẫn lên một đường duy nhất để truyền tới một đích chung. Bộ ghép kênh cơ bản có nhiều đường vào dữ liệu và một đường ra, cùng các ngõ vào chọn dữ liệu để chuyển dữ liệu của một ngõ vào bất kỳ ra ngõ ra; bộ ghép kênh còn gọi là bộ chọn dữ liệu. Hình: ký hiệu bộ chọn dữ liệu 1 trong 4 (ngõ vào dữ liệu D0 đến D3, ngõ chọn S0 và S1, ngõ ra Y) và bảng chọn: S1S0 = 00 chọn D0, 01 chọn D1, 10 chọn D2, 11 chọn D3.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 53,
+   "kind": "content",
+   "title": "Multiplexer: selecting data with a 2-bit code",
+   "text_en": "A 2-bit code on the data-select inputs lets the data of the selected input pass to the output: binary 0 (S1 = 0, S0 = 0) passes D0; binary 1 (S1 = 0, S0 = 1) passes D1; binary 2 (S1 = 1, S0 = 0) passes D2; binary 3 (S1 = 1, S0 = 1) passes D3.",
+   "text_vi": "Mã 2 bit ở các ngõ vào chọn dữ liệu cho dữ liệu của ngõ vào được chọn đi ra ngõ ra: nhị phân 0 (S1 = 0, S0 = 0) cho D0 đi qua; nhị phân 1 (S1 = 0, S0 = 1) cho D1; nhị phân 2 (S1 = 1, S0 = 0) cho D2; nhị phân 3 (S1 = 1, S0 = 1) cho D3.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 54,
+   "kind": "content",
+   "title": "Multiplexer: output equation and logic diagram",
+   "text_en": "The data output equals D0 only if S1 = 0 and S0 = 0 (Y = D0 S1-bar S0-bar); D1 only if S1 = 0 and S0 = 1 (Y = D1 S1-bar S0); D2 only if S1 = 1 and S0 = 0 (Y = D2 S1 S0-bar); D3 only if S1 = 1 and S0 = 1 (Y = D3 S1 S0). Combined: Y = D0 S1-bar S0-bar + D1 S1-bar S0 + D2 S1 S0-bar + D3 S1 S0. Figure: the 1-of-4 symbol and its logic diagram with two inverters, four AND gates and one OR gate.",
+   "text_vi": "Ngõ ra dữ liệu bằng D0 chỉ khi S1 = 0 và S0 = 0 (Y = D0 S1-gạch S0-gạch); bằng D1 chỉ khi S1 = 0 và S0 = 1 (Y = D1 S1-gạch S0); bằng D2 chỉ khi S1 = 1 và S0 = 0 (Y = D2 S1 S0-gạch); bằng D3 chỉ khi S1 = 1 và S0 = 1 (Y = D3 S1 S0). Gộp lại: Y = D0 S1-gạch S0-gạch + D1 S1-gạch S0 + D2 S1 S0-gạch + D3 S1 S0. Hình: ký hiệu 1 trong 4 và sơ đồ logic gồm hai bộ đảo, bốn cổng AND và một cổng OR.",
+   "formulas": [
+    "Y = D_0\\overline{S_1}\\,\\overline{S_0} + D_1\\overline{S_1}S_0 + D_2S_1\\overline{S_0} + D_3S_1S_0"
+   ],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 55,
+   "kind": "content",
+   "title": "Multiplexer example: waveforms",
+   "text_en": "Example: the data-input and data-select waveforms of Figure 1 (D0 to D3 and S0, S1 over eight intervals) are applied to the multiplexer of Figure 2; determine the output waveform. The select inputs count S1S0 = 00, 01, 10, 11, 00, 01, 10, 11 (S0 = 0, 1, 0, 1, 0, 1, 0, 1 and S1 = 0, 0, 1, 1, 0, 0, 1, 1).",
+   "text_vi": "Ví dụ: các dạng sóng ngõ vào dữ liệu và ngõ vào chọn của Hình 1 (D0 đến D3 và S0, S1 qua tám khoảng) đưa vào bộ ghép kênh của Hình 2; xác định dạng sóng ngõ ra. Các ngõ chọn đếm S1S0 = 00, 01, 10, 11, 00, 01, 10, 11 (S0 = 0, 1, 0, 1, 0, 1, 0, 1 và S1 = 0, 0, 1, 1, 0, 0, 1, 1).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 56,
+   "kind": "content",
+   "title": "Multiplexer example: solution",
+   "text_en": "Solution: the output Y follows the selected data input in each interval: D0, D1, D2, D3, D0, D1, D2, D3. Y is HIGH in the second, fifth and eighth intervals and LOW in the others.",
+   "text_vi": "Lời giải: ngõ ra Y theo ngõ vào dữ liệu được chọn trong mỗi khoảng: D0, D1, D2, D3, D0, D1, D2, D3. Y ở mức CAO ở khoảng thứ hai, thứ năm và thứ tám và THẤP ở các khoảng còn lại.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm theo dạng sóng đọc từ hình: D0 = 0,1,1,0,1,0,1,0; D1 = 0,1,1,1,0,0,1,0; D2 = 1,1,0,0,1,1,0,0; D3 = 0,0,0,0,1,1,1,1 và chọn D0, D1, D2, D3 lặp hai lần cho Y = 0,1,0,0,1,0,0,1, khớp dạng sóng Y trên slide."
+   ]
+  },
+  {
+   "page": 57,
+   "kind": "divider",
+   "title": "Demultiplexers",
+   "text_en": "Section divider \"Demultiplexers\".",
+   "text_vi": "Slide ngăn phần \"Demultiplexers\" (bộ tách kênh).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 58,
+   "kind": "content",
+   "title": "Demultiplexer: definition and 1-line-to-4-line circuit",
+   "text_en": "A demultiplexer (DEMUX) basically reverses the multiplexing function: it takes digital information from one line and distributes it to a given number of output lines, so it is also called a data distributor. The data-input line goes to all of the AND gates; the two data-select lines enable only one gate at a time, and the data on the input line passes through the selected gate to the associated data-output line. Figure: a 1-line-to-4-line demultiplexer with data input, select lines S0 and S1 (each with an inverter) and four AND gates giving outputs D0 to D3.",
+   "text_vi": "Bộ tách kênh (DEMUX) về cơ bản đảo chức năng ghép kênh: nó lấy thông tin số từ một đường và phân phối tới một số đường ra nhất định, nên còn gọi là bộ phân phối dữ liệu. Đường vào dữ liệu nối tới mọi cổng AND; hai đường chọn dữ liệu chỉ cho phép một cổng mỗi lần, và dữ liệu trên đường vào đi qua cổng được chọn tới đường ra dữ liệu tương ứng. Hình: bộ tách kênh 1 đường sang 4 đường với ngõ vào dữ liệu, đường chọn S0 và S1 (mỗi đường có một bộ đảo) và bốn cổng AND cho ngõ ra D0 đến D3.",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 59,
+   "kind": "content",
+   "title": "Demultiplexer example: serial data and select waveforms",
+   "text_en": "Example: the serial data-input waveform (Data in) and the data-select inputs S0 and S1 are shown in Figure 1; determine the data-output waveforms D0 to D3 for the demultiplexer of Figure 2. Figure 1 already draws the outputs: S1S0 counts 00, 01, 10, 11, 00, 01, 10, 11 over eight intervals, Data in is 1, 1, 0, 1, 0, 0, 1, 1, and the outputs carry the labelled values D0 = 1 (interval 1), D1 = 1 (2), D2 = 0 (3), D3 = 1 (4), D0 = 0 (5), D1 = 0 (6), D2 = 1 (7), D3 = 1 (8); each output is nonzero only in its own select interval.",
+   "text_vi": "Ví dụ: dạng sóng dữ liệu nối tiếp ngõ vào (Data in) và các ngõ vào chọn S0 và S1 cho ở Hình 1; xác định dạng sóng ngõ ra dữ liệu D0 đến D3 cho bộ tách kênh ở Hình 2. Hình 1 đã vẽ sẵn các ngõ ra: S1S0 đếm 00, 01, 10, 11, 00, 01, 10, 11 qua tám khoảng, Data in là 1, 1, 0, 1, 0, 0, 1, 1, và các ngõ ra mang giá trị ghi sẵn D0 = 1 (khoảng 1), D1 = 1 (2), D2 = 0 (3), D3 = 1 (4), D0 = 0 (5), D1 = 0 (6), D2 = 1 (7), D3 = 1 (8); mỗi ngõ ra chỉ khác 0 trong khoảng chọn của nó.",
+   "formulas": [],
+   "numbers": [
+    "Data in: 1,1,0,1,0,0,1,1",
+    "S1S0: 00,01,10,11,00,01,10,11"
+   ],
+   "issues": [
+    "Đề hỏi \"xác định dạng sóng ngõ ra\" nhưng Hình 1 đã vẽ sẵn các ngõ ra D0 đến D3 cùng giá trị, tức là đề và đáp án nằm chung một slide.",
+    "Đã kiểm: mỗi giá trị ghi trên D0 đến D3 bằng bit Data in của khoảng mà ngõ chọn chọn nó, đúng chức năng tách kênh."
+   ]
+  },
+  {
+   "page": 60,
+   "kind": "thanks",
+   "title": "Thank you for your attention",
+   "text_en": "Closing slide \"Thank you for your attention\".",
+   "text_vi": "Slide kết \"Thank you for your attention\" (cảm ơn đã chú ý).",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  }
+ ]
+}

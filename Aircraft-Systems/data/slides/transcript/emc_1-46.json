@@ -1,0 +1,572 @@
+{
+ "deck": "emc",
+ "pdf": "Cours_EMC_Aircraft_ver2026.pdf",
+ "pages": 46,
+ "range": [
+  1,
+  46
+ ],
+ "slides": [
+  {
+   "page": 1,
+   "kind": "title",
+   "title": "EMC and Aircraft",
+   "text_en": "Title slide \"EMC and Aircraft\": photos of a KC-46 Pegasus undergoing avionics testing and a Global Hawk inside an anechoic chamber.",
+   "text_vi": "Slide tiêu đề \"EMC and Aircraft\": ảnh KC-46 Pegasus đang thử avionics và Global Hawk trong buồng chống dội (anechoic chamber).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Lỗi chính tả trong chú thích ảnh Global Hawk: \"Dndergoes\" (nhằm \"Undergoes\")."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 2,
+   "kind": "divider",
+   "title": "Historical facts",
+   "text_en": "Section title \"Historical facts\" with no content.",
+   "text_vi": "Tiêu đề phần \"Historical facts\" (lịch sử), không có nội dung.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Slide tiêu đề trống, không có nội dung lịch sử đi kèm."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 3,
+   "kind": "content",
+   "title": "Wi-Fi interference on a Boeing 757",
+   "text_en": "Wi-Fi interfered with the Honeywell Phase 3 displays (PFD, ND) of a Boeing 757; a cockpit placard bans Wi-Fi devices while the engines run \"for purpose of flight\".",
+   "text_vi": "Wi-Fi gây nhiễu màn hình Honeywell Phase 3 (PFD, ND) của Boeing 757; biển trong buồng lái cấm dùng thiết bị Wi-Fi khi động cơ chạy \"for purpose of flight\".",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 4,
+   "kind": "content",
+   "title": "Definition of EMC",
+   "text_en": "EMC is the ability of equipment to operate acceptably in its electromagnetic environment by limiting the generation, propagation and reception of unwanted electromagnetic energy that can cause EMI or physical damage. Sources: electrical equipment (generators, motors), radio transmitters, switching equipment.",
+   "text_vi": "EMC là khả năng thiết bị hoạt động chấp nhận được trong môi trường điện từ của nó bằng cách hạn chế phát sinh, lan truyền và thu nhận năng lượng điện từ ngoài ý muốn có thể gây EMI hoặc hư hỏng vật lý. Nguồn: thiết bị điện (máy phát, động cơ), máy phát vô tuyến, thiết bị chuyển mạch.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 5,
+   "kind": "divider",
+   "title": "EMC Context",
+   "text_en": "Section title \"EMC Context\".",
+   "text_vi": "Tiêu đề phần \"EMC Context\" (bối cảnh EMC).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 6,
+   "kind": "content",
+   "title": "External waves couple into equipment",
+   "text_en": "External electromagnetic waves (radar, VHF/UHF transmitters) couple into wiring bundles, equipment and boards; external and internal (IC) interference cause malfunction and can lead to serious scenarios.",
+   "text_vi": "Sóng điện từ ngoài (radar, máy phát VHF/UHF) ghép vào bó dây, thiết bị và bo mạch; nhiễu ngoài và nhiễu trong (IC) gây trục trặc, có thể dẫn tới kịch bản nghiêm trọng.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 7,
+   "kind": "content",
+   "title": "Electromagnetic environment of an aircraft",
+   "text_en": "The environment includes lightning, atmosphere, solar and cosmic radiation, ground radars, radio stations, multipath reflections, internal systems (generators, avionics, switching) and other aircraft (TCAS). Four steps: unintended generation, propagation, reflection or scattering, reception.",
+   "text_vi": "Môi trường gồm sét, khí quyển, bức xạ Mặt Trời và vũ trụ, radar mặt đất, trạm vô tuyến, phản xạ đa đường, hệ thống nội bộ (máy phát, avionics, chuyển mạch) và máy bay khác (TCAS). Bốn bước: phát sinh ngoài ý muốn, lan truyền, phản xạ hoặc tán xạ, thu nhận.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 8,
+   "kind": "content",
+   "title": "Field strengths of sources",
+   "text_en": "Sources and field strengths: lightning 100 kV/m at 1 m; radar 100 kV/m at 1 m; radio communications 1000 V/m at 1 m (bands VLF 3-30 kHz, LF 30-300 kHz, MF 300 kHz-3 MHz, HF 3-30 MHz, VHF 30-300 MHz, UHF 300 MHz-3 GHz, SHF 3-30 GHz); electric motors 50 V/m at 10 cm; electronic circuits 5 V/m at 10 cm.",
+   "text_vi": "Nguồn và cường độ trường: sét 100 kV/m ở 1 m; radar 100 kV/m ở 1 m; thông tin vô tuyến 1000 V/m ở 1 m (dải VLF 3-30 kHz, LF 30-300 kHz, MF 300 kHz-3 MHz, HF 3-30 MHz, VHF 30-300 MHz, UHF 300 MHz-3 GHz, SHF 3-30 GHz); động cơ điện 50 V/m ở 10 cm; mạch điện tử 5 V/m ở 10 cm.",
+   "formulas": [],
+   "numbers": [
+    "sét 100 kV/m ở 1 m",
+    "vô tuyến 1000 V/m ở 1 m",
+    "động cơ 50 V/m ở 10 cm"
+   ],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 9,
+   "kind": "content",
+   "title": "Types of signals",
+   "text_en": "Signal classes: low and high frequency, periodic and non-periodic, sinusoidal and modulated, narrowband and broadband; the time domain (oscilloscope) and the frequency domain (spectrum analyser).",
+   "text_vi": "Các loại tín hiệu: tần số thấp và cao, tuần hoàn và không tuần hoàn, hình sin và điều chế, băng hẹp và băng rộng; miền thời gian (dao động ký) và miền tần số (máy phân tích phổ).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 10,
+   "kind": "content",
+   "title": "Spectrum of a square wave",
+   "text_en": "Rectangular pulse: v(t) = V sin(w0 t) + (V/3) sin(3 w0 t) + (V/5) sin(5 w0 t) + (V/7) sin(7 w0 t) + ...; only odd harmonics, amplitude falling as 1/n; the spectrum envelope is proportional to 1/n.",
+   "text_vi": "Xung chữ nhật: v(t) = V sin(w0 t) + (V/3) sin(3 w0 t) + (V/5) sin(5 w0 t) + (V/7) sin(7 w0 t) + ...; chỉ có hài lẻ, biên độ giảm theo 1/n; đường bao phổ tỉ lệ 1/n.",
+   "formulas": [
+    "v(t) = V sin(w0 t) + (V/3) sin(3 w0 t) + (V/5) sin(5 w0 t) + (V/7) sin(7 w0 t) + ..."
+   ],
+   "numbers": [],
+   "issues": [
+    "Dạng chuỗi trên slide (và Tooley 14.1.2) là dạng tỉ lệ đã đơn giản hoá: biên độ hài cơ bản của sóng vuông biên độ V thật là 4V/pi, nên V trong công thức phải hiểu là biên độ hài cơ bản."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 11,
+   "kind": "content",
+   "title": "Signals in the aircraft environment",
+   "text_en": "Lightning (low frequency, peak 10 to 200 kA, slow decay), ESD (broadband, about 1 ns rise, kV), digital-circuit EMI, HEMP (rise of a few ns, MHz to GHz), radio (narrowband), jammers.",
+   "text_vi": "Sét (tần thấp, đỉnh 10 đến 200 kA, giảm chậm), ESD (băng rộng, thời gian tăng khoảng 1 ns, kV), EMI mạch số, HEMP (thời gian tăng vài ns, MHz đến GHz), vô tuyến (băng hẹp), thiết bị gây nhiễu (jammer).",
+   "formulas": [],
+   "numbers": [
+    "sét đỉnh 10 đến 200 kA",
+    "ESD tăng khoảng 1 ns"
+   ],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 12,
+   "kind": "content",
+   "title": "Spectrum analyser",
+   "text_en": "Block diagram: attenuator, mixer, IF amplifier, RBW filter, detector, VBW filter, display; the local oscillator sweeps from f_start to f_stop.",
+   "text_vi": "Sơ đồ khối: bộ suy hao, bộ trộn (mixer), khuếch đại IF, bộ lọc RBW, tách sóng, bộ lọc VBW, màn hình; dao động nội LO quét từ f_start đến f_stop.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 13,
+   "kind": "content",
+   "title": "The decibel",
+   "text_en": "L_P = 10 log10(P2/P1); L_A = 20 log10(A2/A1); 20 dB = amplitude x 10, 40 dB = x 100, 60 dB = x 1000. Examples: 1 mV to 1 V = 60 dB; 1 mW to 1 W = 30 dB; 10 uV/m to 1 mV/m = 40 dB; H from 1 to 0.1 A/m = -20 dB.",
+   "text_vi": "L_P = 10 log10(P2/P1); L_A = 20 log10(A2/A1); 20 dB = biên độ gấp 10, 40 dB = 100, 60 dB = 1000. Ví dụ: 1 mV lên 1 V = 60 dB; 1 mW lên 1 W = 30 dB; 10 uV/m lên 1 mV/m = 40 dB; H từ 1 xuống 0,1 A/m = -20 dB.",
+   "formulas": [
+    "L_P = 10 log10(P2/P1)",
+    "L_A = 20 log10(A2/A1)"
+   ],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 14,
+   "kind": "content",
+   "title": "Power ratios in dB",
+   "text_en": "10 W against 5 W is 3 dB (double). Table of power ratio and dB: 0.01 = -20; 0.1 = -10; 0.5 = -3; 1 = 0; 2 = 3; 10 = 10; 100 = 20.",
+   "text_vi": "10 W so với 5 W là 3 dB (gấp đôi). Bảng tỉ số công suất và dB: 0,01 = -20; 0,1 = -10; 0,5 = -3; 1 = 0; 2 = 3; 10 = 10; 100 = 20.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 15,
+   "kind": "content",
+   "title": "Voltage and current ratios in dB",
+   "text_en": "L = 20 log10(V2/V1); the factor 20 is because power is proportional to V^2 at the same impedance. Table: 0.01 = -40; 0.1 = -20; 0.5 = -6; 1 = 0; 2 = 6; 10 = 20; 100 = 40.",
+   "text_vi": "L = 20 log10(V2/V1); hệ số 20 vì công suất tỉ lệ V^2 khi cùng trở kháng. Bảng: 0,01 = -40; 0,1 = -20; 0,5 = -6; 1 = 0; 2 = 6; 10 = 20; 100 = 40.",
+   "formulas": [
+    "L = 20 log10(V2/V1)"
+   ],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 16,
+   "kind": "content",
+   "title": "Voltage and current ratios (text version)",
+   "text_en": "Repeats slide 15 in text form.",
+   "text_vi": "Lặp lại nội dung slide 15 dưới dạng văn bản.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Slide 16 lặp lại slide 15."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 17,
+   "kind": "content",
+   "title": "Exercise: dB of ratios",
+   "text_en": "Exercise answers printed: 200:100 uV/m = 6 dB; 300:100 mV = 9.5 (about 10) dB; 400:100 mA = 12 dB; 500:100 uA/m = 14 dB; 2:1 uW = 3 dB; 3:1 mW = 4.8 (about 5) dB; 5:1 mW = 7 dB.",
+   "text_vi": "Đáp án in của bài tập: 200:100 uV/m = 6 dB; 300:100 mV = 9,5 (khoảng 10) dB; 400:100 mA = 12 dB; 500:100 uA/m = 14 dB; 2:1 uW = 3 dB; 3:1 mW = 4,8 (khoảng 5) dB; 5:1 mW = 7 dB.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: 20 log 2 = 6,02; 20 log 3 = 9,54; 20 log 4 = 12,04; 20 log 5 = 13,98; 10 log 2 = 3,01; 10 log 3 = 4,77; 10 log 5 = 6,99. Các giá trị in đúng (làm tròn)."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 18,
+   "kind": "content",
+   "title": "Absolute levels in dB",
+   "text_en": "Absolute amplitudes in dB: dBm = 10 log(P/1 mW); dBuW; dBmV = 20 log(V/1 mV); dBuV/m; dBnA; dBpA/m.",
+   "text_vi": "Biên độ tuyệt đối theo dB: dBm = 10 log(P/1 mW); dBuW; dBmV = 20 log(V/1 mV); dBuV/m; dBnA; dBpA/m.",
+   "formulas": [
+    "dBm = 10 log(P/1 mW)",
+    "dBmV = 20 log(V/1 mV)"
+   ],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 19,
+   "kind": "content",
+   "title": "Exercise: complete the dBm table",
+   "text_en": "Printed: 0.001 W = 0 dBm; 0.1 W = 20; 0.5 W = 27; 1 W = 30; 2 W = 33; 10 W = 40; 1000 W = 60 dBm; a warning that 0 dBm is not 0 W.",
+   "text_vi": "Đáp án in: 0,001 W = 0 dBm; 0,1 W = 20; 0,5 W = 27; 1 W = 30; 2 W = 33; 10 W = 40; 1000 W = 60 dBm; cảnh báo 0 dBm khác 0 W.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Đã kiểm: 10 log(0,5 W/1 mW) = 26,99; 10 log(2 W/1 mW) = 33,01. Đúng."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 20,
+   "kind": "content",
+   "title": "Adding and subtracting dB",
+   "text_en": "Ratio(dB) = P2(dB) - P1(dB); amplifier stages in cascade add dB (0 dBm + 10 dB + 6 dB = +16 dBm); losses in cascade subtract (0 dBm - 3 dB - 10 dB = -13 dBm); a ratio table.",
+   "text_vi": "Ratio(dB) = P2(dB) - P1(dB); khuếch đại nối tầng cộng dB (0 dBm + 10 dB + 6 dB = +16 dBm); suy hao nối tầng trừ (0 dBm - 3 dB - 10 dB = -13 dBm); bảng tỉ số.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 21,
+   "kind": "content",
+   "title": "Worked exercises with dB",
+   "text_en": "Printed solutions: cable of -2 dB, V_in 1 V gives 0.794 V; amplifier of +40 dB with 10 W in gives \"10000 W (10 kW)\" written beside 100,000 W; +30 dB on -20 dBm gives 10 dBm (10 mW); I_in 34 dBuA with -2 dB gives 32 dBuA.",
+   "text_vi": "Lời giải in: cáp -2 dB, V_in 1 V cho 0,794 V; khuếch đại +40 dB với 10 W vào cho \"10000 W (10 kW)\" ghi cạnh 100.000 W; +30 dB trên -20 dBm cho 10 dBm (10 mW); I_in 34 dBuA trừ 2 dB cho 32 dBuA.",
+   "formulas": [],
+   "numbers": [
+    "100.000 W = 100 kW"
+   ],
+   "issues": [
+    "LỖI SLIDE (đã xác nhận ở Module 09): bài 2 in \"P_out = 10000 W (10 kW)\" trong khi phép tính ngay phía trên ra 100.000 W: 10 W x 10^4 = 100.000 W = 100 kW.",
+    "Đã kiểm: 10^(-2/20) = 0,794; -20 + 30 = 10 dBm = 10 mW; 34 - 2 = 32 dBuA."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 22,
+   "kind": "divider",
+   "title": "EMC Test Results and Standards",
+   "text_en": "Section title with a life-cycle strip: concept, feasibility, development, test, delivery.",
+   "text_vi": "Tiêu đề phần kèm dải vòng đời: khái niệm, khả thi, phát triển, thử nghiệm, bàn giao.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 23,
+   "kind": "content",
+   "title": "EMC standards",
+   "text_en": "An EMC standard is terminology plus rules plus test methods plus limits. Emission: CISPR 32 (multimedia), CISPR 11 (ISM); immunity: IEC 61000-4-2 (ESD), -4-3 (radiated RF field), -4-4 (EFT/burst), -4-5 (surge).",
+   "text_vi": "Chuẩn EMC là thuật ngữ cộng quy tắc cộng phương pháp thử cộng giới hạn. Phát xạ: CISPR 32 (đa phương tiện), CISPR 11 (ISM); miễn nhiễm: IEC 61000-4-2 (ESD), -4-3 (trường RF bức xạ), -4-4 (EFT/burst), -4-5 (surge).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 24,
+   "kind": "content",
+   "title": "Test results diagram",
+   "text_en": "Diagram of test results: RI (61000-4-3, -4-39, -4-8), ESD (61000-4-2), CI (61000-4-6, -4-4, -4-5), CE (CISPR 11/32, FCC 15/18), RE, voltage dips (61000-4-11), harmonics and flicker (61000-3-2, 3-3); LISN.",
+   "text_vi": "Sơ đồ kết quả thử: RI (61000-4-3, -4-39, -4-8), ESD (61000-4-2), CI (61000-4-6, -4-4, -4-5), CE (CISPR 11/32, FCC 15/18), RE, sụt áp (61000-4-11), hài và nhấp nháy (61000-3-2, 3-3); LISN.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 25,
+   "kind": "content",
+   "title": "Why standards are needed",
+   "text_en": "Comparability and repeatability of tests; international harmonisation (IEC, CISPR, ISO; EN, ANSI/FCC).",
+   "text_vi": "Để so sánh được và lặp lại được kết quả thử; hài hoà quốc tế (IEC, CISPR, ISO; EN, ANSI/FCC).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 26,
+   "kind": "content",
+   "title": "CISPR 11 radiated emission limit",
+   "text_en": "CISPR 11 Group 1 Class A, radiated emission at 30 m: 30 dBuV/m from 30 to 230 MHz, 37 dBuV/m above 230 MHz.",
+   "text_vi": "CISPR 11 Nhóm 1 Class A, phát xạ bức xạ ở 30 m: 30 dBuV/m từ 30 đến 230 MHz, 37 dBuV/m trên 230 MHz.",
+   "formulas": [],
+   "numbers": [
+    "30 dBuV/m (30 đến 230 MHz)",
+    "37 dBuV/m (trên 230 MHz)"
+   ],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 27,
+   "kind": "content",
+   "title": "DO-160",
+   "text_en": "DO-160 is a test procedure published by the RTCA, not a requirement. Sections: 4 temperature/altitude, 6 humidity, 8 vibration, 20 EMI/EMC, 22 indirect lightning, 25 ESD.",
+   "text_vi": "DO-160 là quy trình thử do RTCA ban hành, không phải một yêu cầu. Các phần: 4 nhiệt độ/độ cao, 6 độ ẩm, 8 rung, 20 EMI/EMC, 22 sét gián tiếp, 25 ESD.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 28,
+   "kind": "divider",
+   "title": "Reducing EMC problems",
+   "text_en": "Section title \"Reducing EMC\".",
+   "text_vi": "Tiêu đề phần \"Reducing EMC\" (giảm vấn đề EMC).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 29,
+   "kind": "content",
+   "title": "Improving system EMC",
+   "text_en": "Eight measures: 1 twisted or shielded wires, 2 connectors, 3 metal enclosure (Faraday cage), 4 surge protection (TVS, MOV, GDT), 5 short grounding, 6 ferrite beads, 7 filters, 8 filtered cables.",
+   "text_vi": "Tám biện pháp: 1 dây xoắn hoặc bọc, 2 đầu nối, 3 vỏ kim loại (lồng Faraday), 4 chống xung (TVS, MOV, GDT), 5 nối đất ngắn, 6 hạt ferrite, 7 bộ lọc, 8 cáp có lọc.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 30,
+   "kind": "content",
+   "title": "Filtering",
+   "text_en": "Filtering options: ferrite on cables, an EMI filter at the equipment input (LC), RC or LC filters on boards.",
+   "text_vi": "Các lựa chọn lọc: ferrite trên cáp, bộ lọc EMI ở ngõ vào thiết bị (LC), bộ lọc RC hoặc LC trên bo mạch.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 31,
+   "kind": "content",
+   "title": "Cylindrical ferrite core",
+   "text_en": "The interference current makes a magnetic field; the flux concentrates in the ferrite; magnetic losses (hysteresis, eddy currents) turn it into heat.",
+   "text_vi": "Dòng nhiễu sinh từ trường; từ thông tập trung trong ferrite; tổn hao từ (từ trễ, dòng xoáy) hoá thành nhiệt.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 32,
+   "kind": "content",
+   "title": "Common mode and differential mode",
+   "text_en": "Common mode: currents in the same direction, fluxes add, high impedance. Differential mode: opposite currents, fluxes cancel, low impedance. Saturation reduces the effect.",
+   "text_vi": "Chế độ chung: dòng cùng chiều, từ thông cộng, trở kháng cao. Chế độ vi sai: dòng ngược chiều, từ thông triệt tiêu, trở kháng thấp. Bão hoà làm giảm hiệu quả.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 33,
+   "kind": "content",
+   "title": "How ferrites work in practice",
+   "text_en": "How a ferrite works, split types, examples on USB, audio and antenna cables.",
+   "text_vi": "Cách ferrite làm việc, loại tách đôi, ví dụ trên cáp USB, audio và ăng-ten.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 34,
+   "kind": "content",
+   "title": "L and C low-pass filter",
+   "text_en": "Low-pass filter: Z_L = jwL rises and Z_C = 1/(jwC) falls with frequency; L + C and Pi configurations.",
+   "text_vi": "Bộ lọc thông thấp: Z_L = jwL tăng và Z_C = 1/(jwC) giảm theo tần số; cấu hình L + C và Pi.",
+   "formulas": [
+    "Z_L = jwL",
+    "Z_C = 1/(jwC)"
+   ],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 35,
+   "kind": "content",
+   "title": "Decoupling capacitors",
+   "text_en": "A 0.1 uF decoupling capacitor next to the VCC and GND pins of an IC; impedance of capacitors against frequency; several values in parallel: 10 uF, 1 uF, 0.1 uF.",
+   "text_vi": "Tụ tách 0,1 uF đặt gần chân VCC và GND của IC; trở kháng của tụ theo tần số; nhiều giá trị song song: 10 uF, 1 uF, 0,1 uF.",
+   "formulas": [],
+   "numbers": [
+    "0,1 uF; 1 uF; 10 uF"
+   ],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 36,
+   "kind": "content",
+   "title": "Real capacitor at high frequency",
+   "text_en": "A real capacitor at high frequency is a series RLC (ESL, ESR): Z = R + jwL + 1/(jwC); resonant frequency f_r = 1/(2 pi sqrt(LC)); above f_r the capacitor behaves as an inductor; aircraft equipment uses more than 10 capacitors.",
+   "text_vi": "Tụ thực ở tần số cao là RLC nối tiếp (ESL, ESR): Z = R + jwL + 1/(jwC); tần số cộng hưởng f_r = 1/(2 pi sqrt(LC)); trên f_r tụ hoạt động như cuộn cảm; thiết bị máy bay dùng hơn 10 tụ.",
+   "formulas": [
+    "Z = R + jwL + 1/(jwC)",
+    "f_r = 1/(2 pi sqrt(LC))"
+   ],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 37,
+   "kind": "content",
+   "title": "Reducing EMI: source, path, victim",
+   "text_en": "Three elements: interference source, coupling path, sensitive receiver; reduce the source, reduce the coupling, reduce the susceptibility; DO-160.",
+   "text_vi": "Ba yếu tố: nguồn nhiễu, đường ghép, máy thu nhạy; giảm nguồn, giảm đường ghép, giảm độ nhạy; DO-160.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 38,
+   "kind": "content",
+   "title": "Suppressing interference at the source",
+   "text_en": "At the source: metal enclosure, surge protection, twisted or shielded wires, coaxial cable, slow rise times, grounding of mounts.",
+   "text_vi": "Tại nguồn: vỏ kim loại, chống xung, dây xoắn hoặc bọc, cáp đồng trục, thời gian tăng chậm, nối đất giá đỡ.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 39,
+   "kind": "content",
+   "title": "Reducing coupling",
+   "text_en": "Separate power and signal cables, twisted or shielded wires, optical fibre, coaxial cable, short grounding, break ground loops (isolation transformer), output filters, move equipment away from sources.",
+   "text_vi": "Tách cáp công suất và cáp tín hiệu, dây xoắn hoặc bọc, sợi quang, cáp đồng trục, nối đất ngắn, phá vòng đất (biến áp cách ly), lọc ngõ ra, dời thiết bị xa nguồn.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 40,
+   "kind": "content",
+   "title": "Raising the susceptibility threshold",
+   "text_en": "Limit bandwidth, limit gain, grounded enclosure, less sensitive components.",
+   "text_vi": "Giới hạn băng thông, giới hạn độ lợi, vỏ nối đất, linh kiện ít nhạy.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 41,
+   "kind": "content",
+   "title": "Aircraft wiring",
+   "text_en": "Separate power cables from signal cables; strategic routing.",
+   "text_vi": "Tách cáp công suất khỏi cáp tín hiệu; đi dây có chiến lược.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 42,
+   "kind": "content",
+   "title": "Good practice",
+   "text_en": "Short wires, correct pigtail length, do not extend ground wires, clean bonding (V = L di/dt).",
+   "text_vi": "Dây ngắn, độ dài pigtail đúng, không kéo dài dây đất, liên kết sạch (V = L di/dt).",
+   "formulas": [
+    "V = L di/dt"
+   ],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 43,
+   "kind": "content",
+   "title": "Grounding and bonding",
+   "text_en": "Bonding resistance below 0.001 ohm to 0.003 ohm; against lightning, EMI and HIRF; good bond (clean, tight, short) versus poor bond (paint, corrosion, loose).",
+   "text_vi": "Điện trở liên kết dưới 0,001 ohm đến 0,003 ohm; chống sét, EMI và HIRF; liên kết tốt (sạch, chặt, ngắn) và kém (sơn, ăn mòn, lỏng).",
+   "formulas": [],
+   "numbers": [
+    "0,001 đến 0,003 ohm"
+   ],
+   "issues": [
+    "Không khớp (đã ghi ở Module 09): yêu cầu 0,001 đến 0,003 ohm ở slide này, nhưng slide 45 ghi yêu cầu dưới 2,5 mohm và hình đo hiện 0,003 ohm."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 44,
+   "kind": "content",
+   "title": "Grounding connections on aircraft",
+   "text_en": "Purposes: lightning, current return path, preventing RF voltages, electric shock safety, radio transmission and reception, preventing static build-up (fuel).",
+   "text_vi": "Mục đích: sét, đường hồi dòng, ngăn điện áp RF, an toàn điện giật, truyền và thu vô tuyến, ngăn tích tĩnh điện (nhiên liệu).",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  },
+  {
+   "page": 45,
+   "kind": "content",
+   "title": "Bonding procedure",
+   "text_en": "Procedure: connect to the main structure, clean surface, flexible bonding lead, check with a bonding meter (display 0.003 ohm; requirement below 2.5 mohm according to the maintenance data).",
+   "text_vi": "Thủ tục: nối vào kết cấu chính, bề mặt sạch, dây liên kết mềm, kiểm tra bằng thiết bị đo liên kết (hiển thị 0,003 ohm; yêu cầu dưới 2,5 mohm theo dữ liệu bảo dưỡng).",
+   "formulas": [],
+   "numbers": [
+    "3 mohm so với yêu cầu dưới 2,5 mohm"
+   ],
+   "issues": [
+    "LỖI SLIDE (đã ghi ở Module 09): thiết bị đo hiện 0,003 ohm tức 3 mohm, lớn hơn yêu cầu 2,5 mohm ghi trên chính slide này, tức không đạt theo tiêu chí của slide; slide 43 lại ghi 0,001 đến 0,003 ohm."
+   ],
+   "basis": "summary"
+  },
+  {
+   "page": 46,
+   "kind": "thanks",
+   "title": "Conclusion",
+   "text_en": "Conclusion slide.",
+   "text_vi": "Slide kết luận.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [],
+   "basis": "summary"
+  }
+ ]
+}

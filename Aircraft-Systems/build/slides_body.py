@@ -35,6 +35,7 @@ def deck_body(lang, deck):
         h += f'<a href="{{R}}assets/slides/{deck}/p{p:02d}.jpg" target="_blank" rel="noopener"><img class="slide-img" loading="lazy" src="{{R}}assets/slides/{deck}/p{p:02d}.jpg" alt="slide {p}"></a>'
         if s:
             h += f'<p>{esc(s["text_vi"] if vi else s["text_en"])}</p>'
+            if s.get('basis'): h += '<p class="srcnote">' + ('Bản chép dạng tóm tắt từ lượt đọc ảnh slide trước (10/2026); chưa phóng to kiểm lại từng số.' if vi else 'Summary transcript from an earlier read of the slide image (10/2026); numbers not yet rechecked at high zoom.') + '</p>'
             if s['formulas']: h += '<p class="srcnote"><b>' + ('Công thức' if vi else 'Formulas') + ':</b> ' + ' · '.join(f'<code>{esc(x)}</code>' for x in s['formulas']) + '</p>'
             if s['numbers']: h += '<p class="srcnote"><b>' + ('Số liệu' if vi else 'Numbers') + ':</b> ' + '; '.join(esc(x) for x in s['numbers']) + '</p>'
             errs, chk = split_issues(s)
