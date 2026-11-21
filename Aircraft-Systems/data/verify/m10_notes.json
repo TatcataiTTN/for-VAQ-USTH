@@ -1,0 +1,32 @@
+{
+ "vi": [
+  "Tooley 3.2 (Bảng 3.2) viết \"tám trạng thái đầu vào\" cho DAC 4 bit, nhưng bảng có 16 mã (từ 0000 đến 1111) và $V_{out}$ từ 0 V đến −9,375 V.",
+  "Tooley 3.3 nói ADC flash 8 bit cần 256 bộ so sánh và 10 bit cần 1 024; số chính xác là $2^n-1$ = 255 và 1 023 (Floyd 12-2 cho đúng công thức). Hình 3.9 (3 bit, 7 bộ so sánh) vẫn đúng.",
+  "Tooley Chương 3 câu 11: khoá in (b) \"trọng số nhị phân\", trong khi văn bản 3.3 viết DAC của ADC xấp xỉ liên tiếp \"thường dựa trên thang R-2R\". Site giữ khoá (b) vì thang R-2R cho dòng theo trọng số nhị phân và hai phương án kia không phải kiểu DAC.",
+  "Tooley Chương 3 câu 10: lớp chữ OCR đọc \"50 ns to 1 ps\"; ảnh trang và khoá (a) cho thấy đơn vị là micro giây (1 µs).",
+  "Floyd Chương 12 Đúng/Sai số 6 in \"Successful approximation\" (đúng là successive); khoá in là F. Site ghi rõ đây là lỗi chữ.",
+  "Floyd Chương 12 Bài 19(b): đáp án in 3,22 %; giá trị đúng $100/31=3{,}2258\\%$ làm tròn 3,23 % (sách cắt cụt). Ý (c) in 0,024 % (đúng 0,0244 %).",
+  "Floyd Chương 12 Bài 7: đáp án in là 200 (giá trị tuyệt đối); mạch đảo nên độ lợi có dấu là −200. Bài 9 in −33.",
+  "Floyd Chương 12 Bài 25 và 27: đáp án in ở phụ lục (A-27) không khớp đề (Bài 25 hỏi mục đích của ADC nhưng đáp án nói về DAC; Bài 27 hỏi số lệnh trong một giây của C64xx 600 MHz mà đáp án in là 18,75 triệu lệnh/s). Hai bài thuộc phần DSP nên không đưa vào ngân hàng.",
+  "Floyd Chương 12 Bài 13, 14 (ADC xấp xỉ liên tiếp \"maximum ladder output +8 V\") và Bài 16 (\"lowest-weighted resistor\"): đề mơ hồ về trọng số và điện trở nào, nên không đưa vào ngân hàng; Bài 13 có đáp án in \"11, 11, 11\" chưa giải thích được từ đề.",
+  "Floyd 12-3: độ phân giải DAC tính là một phần của $2^n-1$ (6,67 % cho 4 bit) nhưng LSB của DAC 8 bit được nói là 0,39 % toàn thang ($100/256$): hai cách tính khác nhau trong cùng mục. Site dùng $2^n-1$ cho \"độ phân giải\" và không hỏi về \"LSB theo phần trăm\".",
+  "Lớp chữ PDF của Floyd làm mất các dấu so sánh và dấu trừ (ví dụ Phương trình 12-1 hiện \"fsample + 2fa(max)\", \"conversion time of 100 ms\" thay vì 100 µs). Các công thức và số trong module được kiểm lại bằng ảnh trang hoặc bằng tính toán.",
+  "Tooley 3.1 và Floyd 12-1 đều không cho công thức tần số alias; ví dụ 5 kHz lấy mẫu 8 kHz thành 3 kHz là kết quả chuẩn cho sóng sin do site tính.",
+  "Chương 3 của Tooley mở đầu hứa \"sau này sẽ cho thấy thiết bị chuyển đổi dữ liệu dùng trong một số hệ thống tàu bay thực tế\" nhưng chương không có ví dụ tàu bay riêng. Module không đưa ví dụ tàu bay vì chưa có nguồn đã đọc."
+ ],
+ "en": [
+  "Tooley 3.2 (Table 3.2) says \"eight possible input states\" for a 4-bit DAC, but the table has 16 codes (0000 to 1111) and $V_{out}$ from 0 V to −9.375 V.",
+  "Tooley 3.3 says an 8-bit flash ADC needs 256 comparators and 10 bits need 1,024; the exact counts are $2^n-1$ = 255 and 1,023 (Floyd 12-2 gives the formula). Figure 3.9 (3 bits, 7 comparators) is right.",
+  "Tooley Chapter 3 question 11: the key prints (b) \"binary-weighted\" while the text of 3.3 says the DAC of a successive-approximation ADC is \"usually based on an R-2R ladder\". The site keeps key (b) because the R-2R ladder produces binary-weighted currents and the other two options are not DAC types.",
+  "Tooley Chapter 3 question 10: the OCR layer reads \"50 ns to 1 ps\"; the page image and key (a) show the unit is the microsecond (1 µs).",
+  "Floyd Chapter 12 True/False 6 prints \"Successful approximation\" (it should be successive); the printed key is F. The site marks it as a typo.",
+  "Floyd Chapter 12 Problem 19(b): the printed answer is 3.22 %; the exact value $100/31=3.2258\\%$ rounds to 3.23 % (the book truncates). Part (c) prints 0.024 % (exact 0.0244 %).",
+  "Floyd Chapter 12 Problem 7: the printed answer is 200 (magnitude); the circuit is inverting so the signed gain is −200. Problem 9 prints −33.",
+  "Floyd Chapter 12 Problems 25 and 27: the printed answers in the appendix (A-27) do not match the questions (Problem 25 asks the purpose of an ADC but the answer describes a DAC; Problem 27 asks how many instructions per second a 600 MHz C64xx delivers but the printed answer is 18.75 million instructions/s). Both belong to the DSP part so they are not in the bank.",
+  "Floyd Chapter 12 Problems 13, 14 (successive approximation \"maximum ladder output +8 V\") and 16 (\"lowest-weighted resistor\"): the wording is ambiguous about which weight and which resistor, so they are not in the bank; Problem 13 has a printed answer \"11, 11, 11\" that the question does not explain.",
+  "Floyd 12-3: DAC resolution is one part in $2^n-1$ (6.67 % for 4 bits) but the LSB of an 8-bit DAC is said to be 0.39 % of full scale ($100/256$): two different bases in the same section. The site uses $2^n-1$ for \"resolution\" and does not ask about \"LSB as a percentage\".",
+  "Floyd's PDF text layer loses comparison and minus signs (for example Equation 12-1 shows \"fsample + 2fa(max)\", \"conversion time of 100 ms\" instead of 100 µs). Formulas and numbers in the module were rechecked on page images or by computation.",
+  "Neither Tooley 3.1 nor Floyd 12-1 gives an alias-frequency formula; the example of 5 kHz sampled at 8 kHz becoming 3 kHz is the standard result for a sine wave computed by this site.",
+  "Tooley Chapter 3 opens by promising to \"show later how data conversion devices are used in some practical aircraft systems\" but the chapter has no separate aircraft example. The module gives no aircraft example because no source was read."
+ ]
+}

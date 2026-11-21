@@ -84,4 +84,9 @@ MAPPING_ROWS = [{'floyd': 'Ch.2 Number Systems, Operations, and Codes (p.65-124)
   'note_vi': 'Bài giảng 46 slide (đọc từng slide) có 3 nhóm bài tập dB (slide 17, 19, 21), đã giải lại và phát hiện lỗi 10 kW so với 100 kW ở slide 21. Module có 3 demo tương tác (dB và dBm, Fourier '
              'sóng vuông, tụ thực) và ghi lại các điểm không khớp trong tài liệu.',
   'tooley': 'Ch.14 EMC (p.218-237): 14.1 harmonics and pulse spectrum, 14.2 EMC and avionic equipment, 14.3 spectrum analysis (noise floor, Table 14.1 bands), 14.4 effects, sources and reduction of '
-            'EMI, 14.5 wiring, 14.6 grounding and bonding; 9 MCQs (A.14, p.381)'}]
+            'EMI, 14.5 wiring, 14.6 grounding and bonding; 9 MCQs (A.14, p.381)'},
+ {'module': '10: Data Conversion', 'tooley': 'Ch.3 Data conversion (p.39-52): analogue and digital signals, quantising, binary-weighted and R-2R DACs, flash, successive approximation, ramp and dual-slope ADCs; 13 MCQs (key A.3, p.377)',
+  'floyd': 'Ch.12 Signal Conversion and Processing, sections 12-1 to 12-3 (p.698-722): sampling, Nyquist, aliasing, quantization, flash, dual-slope, successive-approximation and sigma-delta ADCs, binary-weighted and R/2R DACs, performance and testing. Sections 12-4, 12-5 (DSP) only mentioned.',
+  'note_vi': 'Hai sách khớp tốt: Tooley đi từ lượng tử hoá đến năm kiểu bộ chuyển đổi với 13 câu trắc nghiệm; Floyd bổ sung lấy mẫu, Nyquist, aliasing, sigma-delta, thông số và cách thử DAC/ADC, kèm câu Đúng/Sai, Self-Test và bài lẻ có đáp án in. Không có slide của giảng viên cho nội dung này.',
+  'note_en': 'The two books match well: Tooley goes from quantising to five converter types with 13 multiple-choice questions; Floyd adds sampling, Nyquist, aliasing, sigma-delta, DAC/ADC specifications and tests, with True/False, Self-Test and odd problems with printed answers. There are no lecturer slides for this content.'}
+]

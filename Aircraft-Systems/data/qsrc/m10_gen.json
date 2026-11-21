@@ -1,0 +1,2941 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC 4 bit, tính theo phần trăm (một phần của $2^n-1$ bước), là:",
+   "en": "The resolution of an 4-bit DAC as a percentage (one part in $2^n-1$ steps) is:"
+  },
+  "opts": [
+   {
+    "vi": "6.67 %",
+    "en": "6.67 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   },
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "6.25 %",
+    "en": "6.25 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$100/(2^{4}-1)=100/15=6.67\\%$.",
+   "en": "$100/(2^{4}-1)=100/15=6.67\\%$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ phân giải DAC",
+   "en": "Added · generated pattern: DAC resolution"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC 6 bit, tính theo phần trăm (một phần của $2^n-1$ bước), là:",
+   "en": "The resolution of an 6-bit DAC as a percentage (one part in $2^n-1$ steps) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.59 %",
+    "en": "1.59 %"
+   },
+   {
+    "vi": "3.12 %",
+    "en": "3.12 %"
+   },
+   {
+    "vi": "1.56 %",
+    "en": "1.56 %"
+   },
+   {
+    "vi": "16.7 %",
+    "en": "16.7 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$100/(2^{6}-1)=100/63=1.59\\%$.",
+   "en": "$100/(2^{6}-1)=100/63=1.59\\%$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ phân giải DAC",
+   "en": "Added · generated pattern: DAC resolution"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC 8 bit, tính theo phần trăm (một phần của $2^n-1$ bước), là:",
+   "en": "The resolution of an 8-bit DAC as a percentage (one part in $2^n-1$ steps) is:"
+  },
+  "opts": [
+   {
+    "vi": "0.781 %",
+    "en": "0.781 %"
+   },
+   {
+    "vi": "0.392 %",
+    "en": "0.392 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   },
+   {
+    "vi": "0.391 %",
+    "en": "0.391 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$100/(2^{8}-1)=100/255=0.392\\%$.",
+   "en": "$100/(2^{8}-1)=100/255=0.392\\%$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ phân giải DAC",
+   "en": "Added · generated pattern: DAC resolution"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC 10 bit, tính theo phần trăm (một phần của $2^n-1$ bước), là:",
+   "en": "The resolution of an 10-bit DAC as a percentage (one part in $2^n-1$ steps) is:"
+  },
+  "opts": [
+   {
+    "vi": "0.0978 %",
+    "en": "0.0978 %"
+   },
+   {
+    "vi": "0.195 %",
+    "en": "0.195 %"
+   },
+   {
+    "vi": "10 %",
+    "en": "10 %"
+   },
+   {
+    "vi": "0.0977 %",
+    "en": "0.0977 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$100/(2^{10}-1)=100/1023=0.0978\\%$.",
+   "en": "$100/(2^{10}-1)=100/1023=0.0978\\%$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ phân giải DAC",
+   "en": "Added · generated pattern: DAC resolution"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC 12 bit, tính theo phần trăm (một phần của $2^n-1$ bước), là:",
+   "en": "The resolution of an 12-bit DAC as a percentage (one part in $2^n-1$ steps) is:"
+  },
+  "opts": [
+   {
+    "vi": "8.33 %",
+    "en": "8.33 %"
+   },
+   {
+    "vi": "0.0244 %",
+    "en": "0.0244 %"
+   },
+   {
+    "vi": "0.694 %",
+    "en": "0.694 %"
+   },
+   {
+    "vi": "0.0488 %",
+    "en": "0.0488 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$100/(2^{12}-1)=100/4095=0.0244\\%$.",
+   "en": "$100/(2^{12}-1)=100/4095=0.0244\\%$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ phân giải DAC",
+   "en": "Added · generated pattern: DAC resolution"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC 16 bit, tính theo phần trăm (một phần của $2^n-1$ bước), là:",
+   "en": "The resolution of an 16-bit DAC as a percentage (one part in $2^n-1$ steps) is:"
+  },
+  "opts": [
+   {
+    "vi": "6.25 %",
+    "en": "6.25 %"
+   },
+   {
+    "vi": "0.00153 %",
+    "en": "0.00153 %"
+   },
+   {
+    "vi": "0.00305 %",
+    "en": "0.00305 %"
+   },
+   {
+    "vi": "0.391 %",
+    "en": "0.391 %"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$100/(2^{16}-1)=100/65535=0.00153\\%$.",
+   "en": "$100/(2^{16}-1)=100/65535=0.00153\\%$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ phân giải DAC",
+   "en": "Added · generated pattern: DAC resolution"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit cần bao nhiêu bộ so sánh?",
+   "en": "How many comparators does a 3-bit flash ADC need?"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "7",
+    "en": "7"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$2^3-1=7$ (không cần bộ so sánh cho trường hợp toàn 0).",
+   "en": "$2^3-1=7$ (no comparator is needed for the all-zeros case)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bộ so sánh flash",
+   "en": "Added · generated pattern: flash comparator count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 5 bit cần bao nhiêu bộ so sánh?",
+   "en": "How many comparators does a 5-bit flash ADC need?"
+  },
+  "opts": [
+   {
+    "vi": "31",
+    "en": "31"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "5",
+    "en": "5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^5-1=31$ (không cần bộ so sánh cho trường hợp toàn 0).",
+   "en": "$2^5-1=31$ (no comparator is needed for the all-zeros case)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bộ so sánh flash",
+   "en": "Added · generated pattern: flash comparator count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 6 bit cần bao nhiêu bộ so sánh?",
+   "en": "How many comparators does a 6-bit flash ADC need?"
+  },
+  "opts": [
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "63",
+    "en": "63"
+   },
+   {
+    "vi": "64",
+    "en": "64"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$2^6-1=63$ (không cần bộ so sánh cho trường hợp toàn 0).",
+   "en": "$2^6-1=63$ (no comparator is needed for the all-zeros case)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bộ so sánh flash",
+   "en": "Added · generated pattern: flash comparator count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 8 bit cần bao nhiêu bộ so sánh?",
+   "en": "How many comparators does a 8-bit flash ADC need?"
+  },
+  "opts": [
+   {
+    "vi": "256",
+    "en": "256"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "255",
+    "en": "255"
+   },
+   {
+    "vi": "128",
+    "en": "128"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$2^8-1=255$ (không cần bộ so sánh cho trường hợp toàn 0).",
+   "en": "$2^8-1=255$ (no comparator is needed for the all-zeros case)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bộ so sánh flash",
+   "en": "Added · generated pattern: flash comparator count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 10 bit cần bao nhiêu bộ so sánh?",
+   "en": "How many comparators does a 10-bit flash ADC need?"
+  },
+  "opts": [
+   {
+    "vi": "1023",
+    "en": "1023"
+   },
+   {
+    "vi": "512",
+    "en": "512"
+   },
+   {
+    "vi": "10",
+    "en": "10"
+   },
+   {
+    "vi": "1024",
+    "en": "1024"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^10-1=1023$ (không cần bộ so sánh cho trường hợp toàn 0).",
+   "en": "$2^10-1=1023$ (no comparator is needed for the all-zeros case)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bộ so sánh flash",
+   "en": "Added · generated pattern: flash comparator count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thành phần tần số cao nhất của một tín hiệu là 3 kHz. Tần số lấy mẫu tối thiểu theo định lý lấy mẫu là:",
+   "en": "The highest frequency component of a signal is 3 kHz. The minimum sampling frequency by the sampling theorem is:"
+  },
+  "opts": [
+   {
+    "vi": "1.5 kHz",
+    "en": "1.5 kHz"
+   },
+   {
+    "vi": "3 kHz",
+    "en": "3 kHz"
+   },
+   {
+    "vi": "6 kHz",
+    "en": "6 kHz"
+   },
+   {
+    "vi": "12 kHz",
+    "en": "12 kHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$f_s\\geq2f_{a(max)}=2\\times3=6$ kHz.",
+   "en": "$f_s\\geq2f_{a(max)}=2\\times3=6$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: Nyquist",
+   "en": "Added · generated pattern: Nyquist"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thành phần tần số cao nhất của một tín hiệu là 15 kHz. Tần số lấy mẫu tối thiểu theo định lý lấy mẫu là:",
+   "en": "The highest frequency component of a signal is 15 kHz. The minimum sampling frequency by the sampling theorem is:"
+  },
+  "opts": [
+   {
+    "vi": "30 kHz",
+    "en": "30 kHz"
+   },
+   {
+    "vi": "60 kHz",
+    "en": "60 kHz"
+   },
+   {
+    "vi": "15 kHz",
+    "en": "15 kHz"
+   },
+   {
+    "vi": "7.5 kHz",
+    "en": "7.5 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_s\\geq2f_{a(max)}=2\\times15=30$ kHz.",
+   "en": "$f_s\\geq2f_{a(max)}=2\\times15=30$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: Nyquist",
+   "en": "Added · generated pattern: Nyquist"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thành phần tần số cao nhất của một tín hiệu là 20 kHz. Tần số lấy mẫu tối thiểu theo định lý lấy mẫu là:",
+   "en": "The highest frequency component of a signal is 20 kHz. The minimum sampling frequency by the sampling theorem is:"
+  },
+  "opts": [
+   {
+    "vi": "40 kHz",
+    "en": "40 kHz"
+   },
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "80 kHz",
+    "en": "80 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_s\\geq2f_{a(max)}=2\\times20=40$ kHz.",
+   "en": "$f_s\\geq2f_{a(max)}=2\\times20=40$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: Nyquist",
+   "en": "Added · generated pattern: Nyquist"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thành phần tần số cao nhất của một tín hiệu là 4 kHz. Tần số lấy mẫu tối thiểu theo định lý lấy mẫu là:",
+   "en": "The highest frequency component of a signal is 4 kHz. The minimum sampling frequency by the sampling theorem is:"
+  },
+  "opts": [
+   {
+    "vi": "2 kHz",
+    "en": "2 kHz"
+   },
+   {
+    "vi": "4 kHz",
+    "en": "4 kHz"
+   },
+   {
+    "vi": "16 kHz",
+    "en": "16 kHz"
+   },
+   {
+    "vi": "8 kHz",
+    "en": "8 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$f_s\\geq2f_{a(max)}=2\\times4=8$ kHz.",
+   "en": "$f_s\\geq2f_{a(max)}=2\\times4=8$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: Nyquist",
+   "en": "Added · generated pattern: Nyquist"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thành phần tần số cao nhất của một tín hiệu là 8 kHz. Tần số lấy mẫu tối thiểu theo định lý lấy mẫu là:",
+   "en": "The highest frequency component of a signal is 8 kHz. The minimum sampling frequency by the sampling theorem is:"
+  },
+  "opts": [
+   {
+    "vi": "32 kHz",
+    "en": "32 kHz"
+   },
+   {
+    "vi": "8 kHz",
+    "en": "8 kHz"
+   },
+   {
+    "vi": "16 kHz",
+    "en": "16 kHz"
+   },
+   {
+    "vi": "4 kHz",
+    "en": "4 kHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$f_s\\geq2f_{a(max)}=2\\times8=16$ kHz.",
+   "en": "$f_s\\geq2f_{a(max)}=2\\times8=16$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: Nyquist",
+   "en": "Added · generated pattern: Nyquist"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số nhị phân 4 bit của Tooley (Hình 3.6a, mức logic 1 là +5 V, bộ khuếch đại đảo) nhận mã 0110. Điện áp ra là:",
+   "en": "The 4-bit binary-weighted DAC of Tooley (Figure 3.6a, logic 1 = +5 V, inverting amplifier) receives code 0110. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-5.625 V",
+    "en": "-5.625 V"
+   },
+   {
+    "vi": "3.750 V",
+    "en": "3.750 V"
+   },
+   {
+    "vi": "-3.750 V",
+    "en": "-3.750 V"
+   },
+   {
+    "vi": "-1.875 V",
+    "en": "-1.875 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0{,}5+b_1\\cdot0{,}25+b_0\\cdot0{,}125)=-3.750$ V; cũng là $-0{,}625\\times6$.",
+   "en": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0.5+b_1\\cdot0.25+b_0\\cdot0.125)=-3.750$ V; also $-0.625\\times6$."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số nhị phân",
+   "en": "Added · generated pattern: binary-weighted DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số nhị phân 4 bit của Tooley (Hình 3.6a, mức logic 1 là +5 V, bộ khuếch đại đảo) nhận mã 1001. Điện áp ra là:",
+   "en": "The 4-bit binary-weighted DAC of Tooley (Figure 3.6a, logic 1 = +5 V, inverting amplifier) receives code 1001. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "5.625 V",
+    "en": "5.625 V"
+   },
+   {
+    "vi": "-2.812 V",
+    "en": "-2.812 V"
+   },
+   {
+    "vi": "-5.625 V",
+    "en": "-5.625 V"
+   },
+   {
+    "vi": "-3.750 V",
+    "en": "-3.750 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0{,}5+b_1\\cdot0{,}25+b_0\\cdot0{,}125)=-5.625$ V; cũng là $-0{,}625\\times9$.",
+   "en": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0.5+b_1\\cdot0.25+b_0\\cdot0.125)=-5.625$ V; also $-0.625\\times9$."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số nhị phân",
+   "en": "Added · generated pattern: binary-weighted DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số nhị phân 4 bit của Tooley (Hình 3.6a, mức logic 1 là +5 V, bộ khuếch đại đảo) nhận mã 0011. Điện áp ra là:",
+   "en": "The 4-bit binary-weighted DAC of Tooley (Figure 3.6a, logic 1 = +5 V, inverting amplifier) receives code 0011. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-0.938 V",
+    "en": "-0.938 V"
+   },
+   {
+    "vi": "-1.875 V",
+    "en": "-1.875 V"
+   },
+   {
+    "vi": "-7.500 V",
+    "en": "-7.500 V"
+   },
+   {
+    "vi": "1.875 V",
+    "en": "1.875 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0{,}5+b_1\\cdot0{,}25+b_0\\cdot0{,}125)=-1.875$ V; cũng là $-0{,}625\\times3$.",
+   "en": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0.5+b_1\\cdot0.25+b_0\\cdot0.125)=-1.875$ V; also $-0.625\\times3$."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số nhị phân",
+   "en": "Added · generated pattern: binary-weighted DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số nhị phân 4 bit của Tooley (Hình 3.6a, mức logic 1 là +5 V, bộ khuếch đại đảo) nhận mã 1100. Điện áp ra là:",
+   "en": "The 4-bit binary-weighted DAC of Tooley (Figure 3.6a, logic 1 = +5 V, inverting amplifier) receives code 1100. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-3.750 V",
+    "en": "-3.750 V"
+   },
+   {
+    "vi": "7.500 V",
+    "en": "7.500 V"
+   },
+   {
+    "vi": "-1.875 V",
+    "en": "-1.875 V"
+   },
+   {
+    "vi": "-7.500 V",
+    "en": "-7.500 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0{,}5+b_1\\cdot0{,}25+b_0\\cdot0{,}125)=-7.500$ V; cũng là $-0{,}625\\times12$.",
+   "en": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0.5+b_1\\cdot0.25+b_0\\cdot0.125)=-7.500$ V; also $-0.625\\times12$."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số nhị phân",
+   "en": "Added · generated pattern: binary-weighted DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số nhị phân 4 bit của Tooley (Hình 3.6a, mức logic 1 là +5 V, bộ khuếch đại đảo) nhận mã 0101. Điện áp ra là:",
+   "en": "The 4-bit binary-weighted DAC of Tooley (Figure 3.6a, logic 1 = +5 V, inverting amplifier) receives code 0101. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "3.125 V",
+    "en": "3.125 V"
+   },
+   {
+    "vi": "-6.250 V",
+    "en": "-6.250 V"
+   },
+   {
+    "vi": "-1.562 V",
+    "en": "-1.562 V"
+   },
+   {
+    "vi": "-3.125 V",
+    "en": "-3.125 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0{,}5+b_1\\cdot0{,}25+b_0\\cdot0{,}125)=-3.125$ V; cũng là $-0{,}625\\times5$.",
+   "en": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0.5+b_1\\cdot0.25+b_0\\cdot0.125)=-3.125$ V; also $-0.625\\times5$."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số nhị phân",
+   "en": "Added · generated pattern: binary-weighted DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số nhị phân 4 bit của Tooley (Hình 3.6a, mức logic 1 là +5 V, bộ khuếch đại đảo) nhận mã 1011. Điện áp ra là:",
+   "en": "The 4-bit binary-weighted DAC of Tooley (Figure 3.6a, logic 1 = +5 V, inverting amplifier) receives code 1011. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "6.875 V",
+    "en": "6.875 V"
+   },
+   {
+    "vi": "-6.875 V",
+    "en": "-6.875 V"
+   },
+   {
+    "vi": "-3.438 V",
+    "en": "-3.438 V"
+   },
+   {
+    "vi": "-2.500 V",
+    "en": "-2.500 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0{,}5+b_1\\cdot0{,}25+b_0\\cdot0{,}125)=-6.875$ V; cũng là $-0{,}625\\times11$.",
+   "en": "$V_{out}=-5\\,(b_3\\cdot1+b_2\\cdot0.5+b_1\\cdot0.25+b_0\\cdot0.125)=-6.875$ V; also $-0.625\\times11$."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số nhị phân",
+   "en": "Added · generated pattern: binary-weighted DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC thang R/2R 4 bit của Floyd (mức cao +5 V, $R_f=2R$) nhận mã 1010. Điện áp ra là:",
+   "en": "Floyd's 4-bit R/2R ladder DAC (high level +5 V, $R_f=2R$) receives code 1010. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-12.5 V",
+    "en": "-12.5 V"
+   },
+   {
+    "vi": "-6.25 V",
+    "en": "-6.25 V"
+   },
+   {
+    "vi": "3.125 V",
+    "en": "3.125 V"
+   },
+   {
+    "vi": "6.25 V",
+    "en": "6.25 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cộng các thành phần: $-5(b_3+b_2/2+b_1/4+b_0/8)=-6.25$ V (1000 cho −5 V, 0100 cho −2,5 V, 0010 cho −1,25 V, 0001 cho −0,625 V).",
+   "en": "Sum the contributions: $-5(b_3+b_2/2+b_1/4+b_0/8)=-6.25$ V (1000 gives −5 V, 0100 gives −2.5 V, 0010 gives −1.25 V, 0001 gives −0.625 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC R-2R",
+   "en": "Added · generated pattern: R-2R DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC thang R/2R 4 bit của Floyd (mức cao +5 V, $R_f=2R$) nhận mã 0111. Điện áp ra là:",
+   "en": "Floyd's 4-bit R/2R ladder DAC (high level +5 V, $R_f=2R$) receives code 0111. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-8.75 V",
+    "en": "-8.75 V"
+   },
+   {
+    "vi": "-4.375 V",
+    "en": "-4.375 V"
+   },
+   {
+    "vi": "4.375 V",
+    "en": "4.375 V"
+   },
+   {
+    "vi": "2.188 V",
+    "en": "2.188 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cộng các thành phần: $-5(b_3+b_2/2+b_1/4+b_0/8)=-4.375$ V (1000 cho −5 V, 0100 cho −2,5 V, 0010 cho −1,25 V, 0001 cho −0,625 V).",
+   "en": "Sum the contributions: $-5(b_3+b_2/2+b_1/4+b_0/8)=-4.375$ V (1000 gives −5 V, 0100 gives −2.5 V, 0010 gives −1.25 V, 0001 gives −0.625 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC R-2R",
+   "en": "Added · generated pattern: R-2R DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC thang R/2R 4 bit của Floyd (mức cao +5 V, $R_f=2R$) nhận mã 1110. Điện áp ra là:",
+   "en": "Floyd's 4-bit R/2R ladder DAC (high level +5 V, $R_f=2R$) receives code 1110. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "8.75 V",
+    "en": "8.75 V"
+   },
+   {
+    "vi": "-8.75 V",
+    "en": "-8.75 V"
+   },
+   {
+    "vi": "-17.5 V",
+    "en": "-17.5 V"
+   },
+   {
+    "vi": "4.375 V",
+    "en": "4.375 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cộng các thành phần: $-5(b_3+b_2/2+b_1/4+b_0/8)=-8.75$ V (1000 cho −5 V, 0100 cho −2,5 V, 0010 cho −1,25 V, 0001 cho −0,625 V).",
+   "en": "Sum the contributions: $-5(b_3+b_2/2+b_1/4+b_0/8)=-8.75$ V (1000 gives −5 V, 0100 gives −2.5 V, 0010 gives −1.25 V, 0001 gives −0.625 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC R-2R",
+   "en": "Added · generated pattern: R-2R DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC thang R/2R 4 bit của Floyd (mức cao +5 V, $R_f=2R$) nhận mã 0011. Điện áp ra là:",
+   "en": "Floyd's 4-bit R/2R ladder DAC (high level +5 V, $R_f=2R$) receives code 0011. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "0.9375 V",
+    "en": "0.9375 V"
+   },
+   {
+    "vi": "-1.875 V",
+    "en": "-1.875 V"
+   },
+   {
+    "vi": "-3.75 V",
+    "en": "-3.75 V"
+   },
+   {
+    "vi": "1.875 V",
+    "en": "1.875 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cộng các thành phần: $-5(b_3+b_2/2+b_1/4+b_0/8)=-1.875$ V (1000 cho −5 V, 0100 cho −2,5 V, 0010 cho −1,25 V, 0001 cho −0,625 V).",
+   "en": "Sum the contributions: $-5(b_3+b_2/2+b_1/4+b_0/8)=-1.875$ V (1000 gives −5 V, 0100 gives −2.5 V, 0010 gives −1.25 V, 0001 gives −0.625 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC R-2R",
+   "en": "Added · generated pattern: R-2R DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC thang R/2R 4 bit của Floyd (mức cao +5 V, $R_f=2R$) nhận mã 1001. Điện áp ra là:",
+   "en": "Floyd's 4-bit R/2R ladder DAC (high level +5 V, $R_f=2R$) receives code 1001. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "2.812 V",
+    "en": "2.812 V"
+   },
+   {
+    "vi": "-5.625 V",
+    "en": "-5.625 V"
+   },
+   {
+    "vi": "5.625 V",
+    "en": "5.625 V"
+   },
+   {
+    "vi": "-11.25 V",
+    "en": "-11.25 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cộng các thành phần: $-5(b_3+b_2/2+b_1/4+b_0/8)=-5.625$ V (1000 cho −5 V, 0100 cho −2,5 V, 0010 cho −1,25 V, 0001 cho −0,625 V).",
+   "en": "Sum the contributions: $-5(b_3+b_2/2+b_1/4+b_0/8)=-5.625$ V (1000 gives −5 V, 0100 gives −2.5 V, 0010 gives −1.25 V, 0001 gives −0.625 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC R-2R",
+   "en": "Added · generated pattern: R-2R DAC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp 4 bit có DAC với các bit nặng 8 V, 4 V, 2 V, 1 V. Điện áp vào không đổi 5.1 V. Mã nhị phân cuối cùng trong SAR là:",
+   "en": "A 4-bit successive-approximation ADC has a DAC with bit weights of 8 V, 4 V, 2 V and 1 V. The constant input is 5.1 V. The final binary code in the SAR is:"
+  },
+  "opts": [
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "0101",
+    "en": "0101"
+   },
+   {
+    "vi": "0110",
+    "en": "0110"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Thử lần lượt từ MSB: 8 V bỏ, 4 V giữ, 6 V bỏ, 5 V giữ. Mã 0101.",
+   "en": "Try each bit from the MSB: 8 V reset, 4 V kept, 6 V reset, 5 V kept. Code 0101."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp 4 bit có DAC với các bit nặng 8 V, 4 V, 2 V, 1 V. Điện áp vào không đổi 11.7 V. Mã nhị phân cuối cùng trong SAR là:",
+   "en": "A 4-bit successive-approximation ADC has a DAC with bit weights of 8 V, 4 V, 2 V and 1 V. The constant input is 11.7 V. The final binary code in the SAR is:"
+  },
+  "opts": [
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thử lần lượt từ MSB: 8 V giữ, 12 V bỏ, 10 V giữ, 11 V giữ. Mã 1011.",
+   "en": "Try each bit from the MSB: 8 V kept, 12 V reset, 10 V kept, 11 V kept. Code 1011."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp 4 bit có DAC với các bit nặng 8 V, 4 V, 2 V, 1 V. Điện áp vào không đổi 3.4 V. Mã nhị phân cuối cùng trong SAR là:",
+   "en": "A 4-bit successive-approximation ADC has a DAC with bit weights of 8 V, 4 V, 2 V and 1 V. The constant input is 3.4 V. The final binary code in the SAR is:"
+  },
+  "opts": [
+   {
+    "vi": "1100",
+    "en": "1100"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "0011",
+    "en": "0011"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Thử lần lượt từ MSB: 8 V bỏ, 4 V bỏ, 2 V giữ, 3 V giữ. Mã 0011.",
+   "en": "Try each bit from the MSB: 8 V reset, 4 V reset, 2 V kept, 3 V kept. Code 0011."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp 4 bit có DAC với các bit nặng 8 V, 4 V, 2 V, 1 V. Điện áp vào không đổi 9.2 V. Mã nhị phân cuối cùng trong SAR là:",
+   "en": "A 4-bit successive-approximation ADC has a DAC with bit weights of 8 V, 4 V, 2 V and 1 V. The constant input is 9.2 V. The final binary code in the SAR is:"
+  },
+  "opts": [
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "0110",
+    "en": "0110"
+   },
+   {
+    "vi": "1001",
+    "en": "1001"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Thử lần lượt từ MSB: 8 V giữ, 12 V bỏ, 10 V bỏ, 9 V giữ. Mã 1001.",
+   "en": "Try each bit from the MSB: 8 V kept, 12 V reset, 10 V reset, 9 V kept. Code 1001."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp 4 bit có DAC với các bit nặng 8 V, 4 V, 2 V, 1 V. Điện áp vào không đổi 13.8 V. Mã nhị phân cuối cùng trong SAR là:",
+   "en": "A 4-bit successive-approximation ADC has a DAC with bit weights of 8 V, 4 V, 2 V and 1 V. The constant input is 13.8 V. The final binary code in the SAR is:"
+  },
+  "opts": [
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Thử lần lượt từ MSB: 8 V giữ, 12 V giữ, 14 V bỏ, 13 V giữ. Mã 1101.",
+   "en": "Try each bit from the MSB: 8 V kept, 12 V kept, 14 V reset, 13 V kept. Code 1101."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp 4 bit có DAC với các bit nặng 8 V, 4 V, 2 V, 1 V. Điện áp vào không đổi 6.6 V. Mã nhị phân cuối cùng trong SAR là:",
+   "en": "A 4-bit successive-approximation ADC has a DAC with bit weights of 8 V, 4 V, 2 V and 1 V. The constant input is 6.6 V. The final binary code in the SAR is:"
+  },
+  "opts": [
+   {
+    "vi": "1001",
+    "en": "1001"
+   },
+   {
+    "vi": "0110",
+    "en": "0110"
+   },
+   {
+    "vi": "0111",
+    "en": "0111"
+   },
+   {
+    "vi": "0101",
+    "en": "0101"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Thử lần lượt từ MSB: 8 V bỏ, 4 V giữ, 6 V giữ, 7 V bỏ. Mã 0110.",
+   "en": "Try each bit from the MSB: 8 V reset, 4 V kept, 6 V kept, 7 V reset. Code 0110."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit của Tooley (Hình 3.9: ngưỡng 0,5 V; 1,5 V; ...; 6,5 V) nhận điện áp vào 2 V. Mã ra (Bit 2, Bit 1, Bit 0) là:",
+   "en": "Tooley's 3-bit flash ADC (Figure 3.9: thresholds 0.5 V, 1.5 V, ..., 6.5 V) receives 2 V. The output code (Bit 2, Bit 1, Bit 0) is:"
+  },
+  "opts": [
+   {
+    "vi": "011",
+    "en": "011"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   },
+   {
+    "vi": "101",
+    "en": "101"
+   },
+   {
+    "vi": "001",
+    "en": "001"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2 bộ so sánh đầu có ngõ ra 1 (ngưỡng thấp hơn 2 V); bộ mã hoá ưu tiên cho mã 010.",
+   "en": "The first 2 comparators output 1 (thresholds below 2 V); the priority encoder gives 010."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC flash",
+   "en": "Added · generated pattern: flash ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit của Tooley (Hình 3.9: ngưỡng 0,5 V; 1,5 V; ...; 6,5 V) nhận điện áp vào 4.7 V. Mã ra (Bit 2, Bit 1, Bit 0) là:",
+   "en": "Tooley's 3-bit flash ADC (Figure 3.9: thresholds 0.5 V, 1.5 V, ..., 6.5 V) receives 4.7 V. The output code (Bit 2, Bit 1, Bit 0) is:"
+  },
+  "opts": [
+   {
+    "vi": "100",
+    "en": "100"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   },
+   {
+    "vi": "101",
+    "en": "101"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "5 bộ so sánh đầu có ngõ ra 1 (ngưỡng thấp hơn 4.7 V); bộ mã hoá ưu tiên cho mã 101.",
+   "en": "The first 5 comparators output 1 (thresholds below 4.7 V); the priority encoder gives 101."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC flash",
+   "en": "Added · generated pattern: flash ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit của Tooley (Hình 3.9: ngưỡng 0,5 V; 1,5 V; ...; 6,5 V) nhận điện áp vào 0.3 V. Mã ra (Bit 2, Bit 1, Bit 0) là:",
+   "en": "Tooley's 3-bit flash ADC (Figure 3.9: thresholds 0.5 V, 1.5 V, ..., 6.5 V) receives 0.3 V. The output code (Bit 2, Bit 1, Bit 0) is:"
+  },
+  "opts": [
+   {
+    "vi": "001",
+    "en": "001"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   },
+   {
+    "vi": "111",
+    "en": "111"
+   },
+   {
+    "vi": "000",
+    "en": "000"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "0 bộ so sánh đầu có ngõ ra 1 (ngưỡng thấp hơn 0.3 V); bộ mã hoá ưu tiên cho mã 000.",
+   "en": "The first 0 comparators output 1 (thresholds below 0.3 V); the priority encoder gives 000."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC flash",
+   "en": "Added · generated pattern: flash ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit của Tooley (Hình 3.9: ngưỡng 0,5 V; 1,5 V; ...; 6,5 V) nhận điện áp vào 6.9 V. Mã ra (Bit 2, Bit 1, Bit 0) là:",
+   "en": "Tooley's 3-bit flash ADC (Figure 3.9: thresholds 0.5 V, 1.5 V, ..., 6.5 V) receives 6.9 V. The output code (Bit 2, Bit 1, Bit 0) is:"
+  },
+  "opts": [
+   {
+    "vi": "001",
+    "en": "001"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   },
+   {
+    "vi": "111",
+    "en": "111"
+   },
+   {
+    "vi": "000",
+    "en": "000"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "7 bộ so sánh đầu có ngõ ra 1 (ngưỡng thấp hơn 6.9 V); bộ mã hoá ưu tiên cho mã 111.",
+   "en": "The first 7 comparators output 1 (thresholds below 6.9 V); the priority encoder gives 111."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC flash",
+   "en": "Added · generated pattern: flash ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit của Tooley (Hình 3.9: ngưỡng 0,5 V; 1,5 V; ...; 6,5 V) nhận điện áp vào 3.2 V. Mã ra (Bit 2, Bit 1, Bit 0) là:",
+   "en": "Tooley's 3-bit flash ADC (Figure 3.9: thresholds 0.5 V, 1.5 V, ..., 6.5 V) receives 3.2 V. The output code (Bit 2, Bit 1, Bit 0) is:"
+  },
+  "opts": [
+   {
+    "vi": "100",
+    "en": "100"
+   },
+   {
+    "vi": "101",
+    "en": "101"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   },
+   {
+    "vi": "011",
+    "en": "011"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "3 bộ so sánh đầu có ngõ ra 1 (ngưỡng thấp hơn 3.2 V); bộ mã hoá ưu tiên cho mã 011.",
+   "en": "The first 3 comparators output 1 (thresholds below 3.2 V); the priority encoder gives 011."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC flash",
+   "en": "Added · generated pattern: flash ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC flash 3 bit của Tooley (Hình 3.9: ngưỡng 0,5 V; 1,5 V; ...; 6,5 V) nhận điện áp vào 5.9 V. Mã ra (Bit 2, Bit 1, Bit 0) là:",
+   "en": "Tooley's 3-bit flash ADC (Figure 3.9: thresholds 0.5 V, 1.5 V, ..., 6.5 V) receives 5.9 V. The output code (Bit 2, Bit 1, Bit 0) is:"
+  },
+  "opts": [
+   {
+    "vi": "101",
+    "en": "101"
+   },
+   {
+    "vi": "001",
+    "en": "001"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   },
+   {
+    "vi": "111",
+    "en": "111"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "6 bộ so sánh đầu có ngõ ra 1 (ngưỡng thấp hơn 5.9 V); bộ mã hoá ưu tiên cho mã 110.",
+   "en": "The first 6 comparators output 1 (thresholds below 5.9 V); the priority encoder gives 110."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC flash",
+   "en": "Added · generated pattern: flash ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ khuếch đại đảo dùng op-amp có $R_f=220$ kΩ và $R_i=1$ kΩ. Độ lợi vòng kín $V_{out}/V_{in}$ là:",
+   "en": "An inverting op-amp amplifier has $R_f=220$ kΩ and $R_i=1$ kΩ. The closed-loop gain $V_{out}/V_{in}$ is:"
+  },
+  "opts": [
+   {
+    "vi": "-220",
+    "en": "-220"
+   },
+   {
+    "vi": "220",
+    "en": "220"
+   },
+   {
+    "vi": "-0.005",
+    "en": "-0.005"
+   },
+   {
+    "vi": "-221",
+    "en": "-221"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$V_{out}/V_{in}=-R_f/R_i=-220/1=-220$ (dấu trừ là đảo pha).",
+   "en": "$V_{out}/V_{in}=-R_f/R_i=-220/1=-220$ (the minus sign is the inversion)."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: op-amp đảo",
+   "en": "Added · generated pattern: inverting op-amp"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ khuếch đại đảo dùng op-amp có $R_f=33$ kΩ và $R_i=1$ kΩ. Độ lợi vòng kín $V_{out}/V_{in}$ là:",
+   "en": "An inverting op-amp amplifier has $R_f=33$ kΩ and $R_i=1$ kΩ. The closed-loop gain $V_{out}/V_{in}$ is:"
+  },
+  "opts": [
+   {
+    "vi": "-33",
+    "en": "-33"
+   },
+   {
+    "vi": "33",
+    "en": "33"
+   },
+   {
+    "vi": "-0.03",
+    "en": "-0.03"
+   },
+   {
+    "vi": "-34",
+    "en": "-34"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$V_{out}/V_{in}=-R_f/R_i=-33/1=-33$ (dấu trừ là đảo pha).",
+   "en": "$V_{out}/V_{in}=-R_f/R_i=-33/1=-33$ (the minus sign is the inversion)."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: op-amp đảo",
+   "en": "Added · generated pattern: inverting op-amp"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ khuếch đại đảo dùng op-amp có $R_f=100$ kΩ và $R_i=4$ kΩ. Độ lợi vòng kín $V_{out}/V_{in}$ là:",
+   "en": "An inverting op-amp amplifier has $R_f=100$ kΩ and $R_i=4$ kΩ. The closed-loop gain $V_{out}/V_{in}$ is:"
+  },
+  "opts": [
+   {
+    "vi": "25",
+    "en": "25"
+   },
+   {
+    "vi": "-25",
+    "en": "-25"
+   },
+   {
+    "vi": "-26",
+    "en": "-26"
+   },
+   {
+    "vi": "-0.04",
+    "en": "-0.04"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$V_{out}/V_{in}=-R_f/R_i=-100/4=-25$ (dấu trừ là đảo pha).",
+   "en": "$V_{out}/V_{in}=-R_f/R_i=-100/4=-25$ (the minus sign is the inversion)."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: op-amp đảo",
+   "en": "Added · generated pattern: inverting op-amp"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ khuếch đại đảo dùng op-amp có $R_f=47$ kΩ và $R_i=2$ kΩ. Độ lợi vòng kín $V_{out}/V_{in}$ là:",
+   "en": "An inverting op-amp amplifier has $R_f=47$ kΩ and $R_i=2$ kΩ. The closed-loop gain $V_{out}/V_{in}$ is:"
+  },
+  "opts": [
+   {
+    "vi": "-23.5",
+    "en": "-23.5"
+   },
+   {
+    "vi": "-24.5",
+    "en": "-24.5"
+   },
+   {
+    "vi": "-0.043",
+    "en": "-0.043"
+   },
+   {
+    "vi": "23.5",
+    "en": "23.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$V_{out}/V_{in}=-R_f/R_i=-47/2=-23.5$ (dấu trừ là đảo pha).",
+   "en": "$V_{out}/V_{in}=-R_f/R_i=-47/2=-23.5$ (the minus sign is the inversion)."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: op-amp đảo",
+   "en": "Added · generated pattern: inverting op-amp"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC có điện áp ra toàn thang 10 V và độ chính xác ±0.1 % của toàn thang. Sai số lớn nhất của một điện áp ra bất kỳ là:",
+   "en": "A DAC has a full-scale output of 10 V and an accuracy of ±0.1 % of full scale. The maximum error of any output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "1 mV",
+    "en": "1 mV"
+   },
+   {
+    "vi": "20 mV",
+    "en": "20 mV"
+   },
+   {
+    "vi": "100 mV",
+    "en": "100 mV"
+   },
+   {
+    "vi": "10 mV",
+    "en": "10 mV"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$10\\times0.001=0.01$ V $=10$ mV.",
+   "en": "$10\\times0.001=0.01$ V $=10$ mV."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ chính xác DAC",
+   "en": "Added · generated pattern: DAC accuracy"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC có điện áp ra toàn thang 5 V và độ chính xác ±0.2 % của toàn thang. Sai số lớn nhất của một điện áp ra bất kỳ là:",
+   "en": "A DAC has a full-scale output of 5 V and an accuracy of ±0.2 % of full scale. The maximum error of any output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "1 mV",
+    "en": "1 mV"
+   },
+   {
+    "vi": "10 mV",
+    "en": "10 mV"
+   },
+   {
+    "vi": "20 mV",
+    "en": "20 mV"
+   },
+   {
+    "vi": "100 mV",
+    "en": "100 mV"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$5\\times0.002=0.01$ V $=10$ mV.",
+   "en": "$5\\times0.002=0.01$ V $=10$ mV."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ chính xác DAC",
+   "en": "Added · generated pattern: DAC accuracy"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC có điện áp ra toàn thang 12 V và độ chính xác ±0.5 % của toàn thang. Sai số lớn nhất của một điện áp ra bất kỳ là:",
+   "en": "A DAC has a full-scale output of 12 V and an accuracy of ±0.5 % of full scale. The maximum error of any output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "60 mV",
+    "en": "60 mV"
+   },
+   {
+    "vi": "600 mV",
+    "en": "600 mV"
+   },
+   {
+    "vi": "120 mV",
+    "en": "120 mV"
+   },
+   {
+    "vi": "6 mV",
+    "en": "6 mV"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$12\\times0.005=0.06$ V $=60$ mV.",
+   "en": "$12\\times0.005=0.06$ V $=60$ mV."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ chính xác DAC",
+   "en": "Added · generated pattern: DAC accuracy"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC có điện áp ra toàn thang 8 V và độ chính xác ±1 % của toàn thang. Sai số lớn nhất của một điện áp ra bất kỳ là:",
+   "en": "A DAC has a full-scale output of 8 V and an accuracy of ±1 % of full scale. The maximum error of any output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "8 mV",
+    "en": "8 mV"
+   },
+   {
+    "vi": "800 mV",
+    "en": "800 mV"
+   },
+   {
+    "vi": "160 mV",
+    "en": "160 mV"
+   },
+   {
+    "vi": "80 mV",
+    "en": "80 mV"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$8\\times0.01=0.08$ V $=80$ mV.",
+   "en": "$8\\times0.01=0.08$ V $=80$ mV."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: độ chính xác DAC",
+   "en": "Added · generated pattern: DAC accuracy"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu hình sin 5 kHz được lấy mẫu ở 8 kHz mà không có bộ lọc chống chồng phổ. Sau khi dựng lại, tần số alias xuất hiện là:",
+   "en": "A 5 kHz sine wave is sampled at 8 kHz with no anti-aliasing filter. After reconstruction the alias frequency that appears is:"
+  },
+  "opts": [
+   {
+    "vi": "5 kHz",
+    "en": "5 kHz"
+   },
+   {
+    "vi": "8 kHz",
+    "en": "8 kHz"
+   },
+   {
+    "vi": "13 kHz",
+    "en": "13 kHz"
+   },
+   {
+    "vi": "3 kHz",
+    "en": "3 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Vì $f>f_s/2$, tần số bị gập về $|f_s-f|=|8-5|=3$ kHz, nằm trong băng $0$ đến $f_s/2=4$ kHz.",
+   "en": "Because $f>f_s/2$, the frequency folds to $|f_s-f|=|8-5|=3$ kHz, inside the band $0$ to $f_s/2=4$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: chồng phổ",
+   "en": "Added · generated pattern: aliasing"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-1 chỉ mô tả alias bằng phổ (Hình 12-3) và không cho công thức gập; kết quả $|f_s-f|$ ở đây là phép tính theo định nghĩa lấy mẫu của một sóng sin.</p>",
+   "en": "<p>Floyd 12-1 describes aliasing through the spectrum (Figure 12-3) and gives no folding formula; the result $|f_s-f|$ here is the standard computation for a sine wave.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu hình sin 7 kHz được lấy mẫu ở 10 kHz mà không có bộ lọc chống chồng phổ. Sau khi dựng lại, tần số alias xuất hiện là:",
+   "en": "A 7 kHz sine wave is sampled at 10 kHz with no anti-aliasing filter. After reconstruction the alias frequency that appears is:"
+  },
+  "opts": [
+   {
+    "vi": "3 kHz",
+    "en": "3 kHz"
+   },
+   {
+    "vi": "17 kHz",
+    "en": "17 kHz"
+   },
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "7 kHz",
+    "en": "7 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vì $f>f_s/2$, tần số bị gập về $|f_s-f|=|10-7|=3$ kHz, nằm trong băng $0$ đến $f_s/2=5$ kHz.",
+   "en": "Because $f>f_s/2$, the frequency folds to $|f_s-f|=|10-7|=3$ kHz, inside the band $0$ to $f_s/2=5$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: chồng phổ",
+   "en": "Added · generated pattern: aliasing"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-1 chỉ mô tả alias bằng phổ (Hình 12-3) và không cho công thức gập; kết quả $|f_s-f|$ ở đây là phép tính theo định nghĩa lấy mẫu của một sóng sin.</p>",
+   "en": "<p>Floyd 12-1 describes aliasing through the spectrum (Figure 12-3) and gives no folding formula; the result $|f_s-f|$ here is the standard computation for a sine wave.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu hình sin 9 kHz được lấy mẫu ở 12 kHz mà không có bộ lọc chống chồng phổ. Sau khi dựng lại, tần số alias xuất hiện là:",
+   "en": "A 9 kHz sine wave is sampled at 12 kHz with no anti-aliasing filter. After reconstruction the alias frequency that appears is:"
+  },
+  "opts": [
+   {
+    "vi": "12 kHz",
+    "en": "12 kHz"
+   },
+   {
+    "vi": "21 kHz",
+    "en": "21 kHz"
+   },
+   {
+    "vi": "9 kHz",
+    "en": "9 kHz"
+   },
+   {
+    "vi": "3 kHz",
+    "en": "3 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Vì $f>f_s/2$, tần số bị gập về $|f_s-f|=|12-9|=3$ kHz, nằm trong băng $0$ đến $f_s/2=6$ kHz.",
+   "en": "Because $f>f_s/2$, the frequency folds to $|f_s-f|=|12-9|=3$ kHz, inside the band $0$ to $f_s/2=6$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: chồng phổ",
+   "en": "Added · generated pattern: aliasing"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-1 chỉ mô tả alias bằng phổ (Hình 12-3) và không cho công thức gập; kết quả $|f_s-f|$ ở đây là phép tính theo định nghĩa lấy mẫu của một sóng sin.</p>",
+   "en": "<p>Floyd 12-1 describes aliasing through the spectrum (Figure 12-3) and gives no folding formula; the result $|f_s-f|$ here is the standard computation for a sine wave.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số 4 bit của Floyd (Hình 12-27: $R$ đầu vào 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ cho D3 đến D0; $R_f=10$ kΩ; mức cao +5 V) nhận mã 1010. Điện áp ra là:",
+   "en": "Floyd's 4-bit weighted DAC (Figure 12-27: input resistors 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ for D3 to D0; $R_f=10$ kΩ; high level +5 V) receives code 1010. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-1.25 V",
+    "en": "-1.25 V"
+   },
+   {
+    "vi": "-2.5 V",
+    "en": "-2.5 V"
+   },
+   {
+    "vi": "-5 V",
+    "en": "-5 V"
+   },
+   {
+    "vi": "2.5 V",
+    "en": "2.5 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mỗi bit 1 cho dòng $5/R_i$ qua $R_f$: D3 cho −2 V, D2 −1 V, D1 −0,5 V, D0 −0,25 V; tổng -2.5 V (mỗi bước mã là −0,25 V).",
+   "en": "Each 1 bit gives a current $5/R_i$ through $R_f$: D3 gives −2 V, D2 −1 V, D1 −0.5 V, D0 −0.25 V; total -2.5 V (each code step is −0.25 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số (Floyd)",
+   "en": "Added · generated pattern: weighted DAC (Floyd)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số 4 bit của Floyd (Hình 12-27: $R$ đầu vào 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ cho D3 đến D0; $R_f=10$ kΩ; mức cao +5 V) nhận mã 0110. Điện áp ra là:",
+   "en": "Floyd's 4-bit weighted DAC (Figure 12-27: input resistors 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ for D3 to D0; $R_f=10$ kΩ; high level +5 V) receives code 0110. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-0.75 V",
+    "en": "-0.75 V"
+   },
+   {
+    "vi": "1.5 V",
+    "en": "1.5 V"
+   },
+   {
+    "vi": "-1.5 V",
+    "en": "-1.5 V"
+   },
+   {
+    "vi": "-3 V",
+    "en": "-3 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mỗi bit 1 cho dòng $5/R_i$ qua $R_f$: D3 cho −2 V, D2 −1 V, D1 −0,5 V, D0 −0,25 V; tổng -1.5 V (mỗi bước mã là −0,25 V).",
+   "en": "Each 1 bit gives a current $5/R_i$ through $R_f$: D3 gives −2 V, D2 −1 V, D1 −0.5 V, D0 −0.25 V; total -1.5 V (each code step is −0.25 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số (Floyd)",
+   "en": "Added · generated pattern: weighted DAC (Floyd)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số 4 bit của Floyd (Hình 12-27: $R$ đầu vào 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ cho D3 đến D0; $R_f=10$ kΩ; mức cao +5 V) nhận mã 1111. Điện áp ra là:",
+   "en": "Floyd's 4-bit weighted DAC (Figure 12-27: input resistors 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ for D3 to D0; $R_f=10$ kΩ; high level +5 V) receives code 1111. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-7.5 V",
+    "en": "-7.5 V"
+   },
+   {
+    "vi": "3.75 V",
+    "en": "3.75 V"
+   },
+   {
+    "vi": "-1.875 V",
+    "en": "-1.875 V"
+   },
+   {
+    "vi": "-3.75 V",
+    "en": "-3.75 V"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Mỗi bit 1 cho dòng $5/R_i$ qua $R_f$: D3 cho −2 V, D2 −1 V, D1 −0,5 V, D0 −0,25 V; tổng -3.75 V (mỗi bước mã là −0,25 V).",
+   "en": "Each 1 bit gives a current $5/R_i$ through $R_f$: D3 gives −2 V, D2 −1 V, D1 −0.5 V, D0 −0.25 V; total -3.75 V (each code step is −0.25 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số (Floyd)",
+   "en": "Added · generated pattern: weighted DAC (Floyd)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số 4 bit của Floyd (Hình 12-27: $R$ đầu vào 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ cho D3 đến D0; $R_f=10$ kΩ; mức cao +5 V) nhận mã 0001. Điện áp ra là:",
+   "en": "Floyd's 4-bit weighted DAC (Figure 12-27: input resistors 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ for D3 to D0; $R_f=10$ kΩ; high level +5 V) receives code 0001. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-0.25 V",
+    "en": "-0.25 V"
+   },
+   {
+    "vi": "-0.125 V",
+    "en": "-0.125 V"
+   },
+   {
+    "vi": "-0.5 V",
+    "en": "-0.5 V"
+   },
+   {
+    "vi": "0.25 V",
+    "en": "0.25 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi bit 1 cho dòng $5/R_i$ qua $R_f$: D3 cho −2 V, D2 −1 V, D1 −0,5 V, D0 −0,25 V; tổng -0.25 V (mỗi bước mã là −0,25 V).",
+   "en": "Each 1 bit gives a current $5/R_i$ through $R_f$: D3 gives −2 V, D2 −1 V, D1 −0.5 V, D0 −0.25 V; total -0.25 V (each code step is −0.25 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số (Floyd)",
+   "en": "Added · generated pattern: weighted DAC (Floyd)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC trọng số 4 bit của Floyd (Hình 12-27: $R$ đầu vào 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ cho D3 đến D0; $R_f=10$ kΩ; mức cao +5 V) nhận mã 1100. Điện áp ra là:",
+   "en": "Floyd's 4-bit weighted DAC (Figure 12-27: input resistors 25 kΩ, 50 kΩ, 100 kΩ, 200 kΩ for D3 to D0; $R_f=10$ kΩ; high level +5 V) receives code 1100. The output voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "-6 V",
+    "en": "-6 V"
+   },
+   {
+    "vi": "-3 V",
+    "en": "-3 V"
+   },
+   {
+    "vi": "-1.5 V",
+    "en": "-1.5 V"
+   },
+   {
+    "vi": "3 V",
+    "en": "3 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mỗi bit 1 cho dòng $5/R_i$ qua $R_f$: D3 cho −2 V, D2 −1 V, D1 −0,5 V, D0 −0,25 V; tổng -3 V (mỗi bước mã là −0,25 V).",
+   "en": "Each 1 bit gives a current $5/R_i$ through $R_f$: D3 gives −2 V, D2 −1 V, D1 −0.5 V, D0 −0.25 V; total -3 V (each code step is −0.25 V)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: DAC trọng số (Floyd)",
+   "en": "Added · generated pattern: weighted DAC (Floyd)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch lấy mẫu-giữ (sample-and-hold) giữ mức đã lấy mẫu không đổi cho đến mẫu kế để:",
+   "en": "The sample-and-hold circuit keeps the sampled level constant until the next sample so that:"
+  },
+  "opts": [
+   {
+    "vi": "ADC có thời gian xử lý giá trị đó",
+    "en": "the ADC has time to process that value"
+   },
+   {
+    "vi": "tần số lấy mẫu tăng gấp đôi",
+    "en": "the sampling frequency doubles"
+   },
+   {
+    "vi": "tín hiệu không cần lọc nữa",
+    "en": "the signal needs no filtering"
+   },
+   {
+    "vi": "DAC không cần điện áp chuẩn",
+    "en": "the DAC needs no reference voltage"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 12-1: giữ giá trị để ADC có thời gian chuyển đổi.",
+   "en": "Floyd 12-1: the value is held so the ADC has time to convert."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: mạch lấy mẫu-giữ",
+   "en": "Added · generated pattern: sample-and-hold"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ lọc chống chồng phổ đặt TRƯỚC mạch lấy mẫu là bộ lọc:",
+   "en": "The anti-aliasing filter placed BEFORE the sampling circuit is a:"
+  },
+  "opts": [
+   {
+    "vi": "thông thấp",
+    "en": "low-pass filter"
+   },
+   {
+    "vi": "thông cao",
+    "en": "high-pass filter"
+   },
+   {
+    "vi": "thông dải",
+    "en": "band-pass filter"
+   },
+   {
+    "vi": "chắn dải",
+    "en": "band-stop filter"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nó loại các thành phần cao hơn tần số Nyquist.",
+   "en": "It removes components above the Nyquist frequency."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: chống chồng phổ",
+   "en": "Added · generated pattern: anti-aliasing"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ lọc thông thấp ở ngõ ra của DAC (Tooley 3.2.2) dùng để:",
+   "en": "The low-pass filter at a DAC output (Tooley 3.2.2) is used to:"
+  },
+  "opts": [
+   {
+    "vi": "làm mịn các bậc thang của điện áp ra",
+    "en": "smooth the steps of the output voltage"
+   },
+   {
+    "vi": "tăng số bit của DAC",
+    "en": "increase the number of bits of the DAC"
+   },
+   {
+    "vi": "đổi tín hiệu ra thành số",
+    "en": "turn the output into a digital signal"
+   },
+   {
+    "vi": "giảm điện áp chuẩn",
+    "en": "reduce the reference voltage"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các thành phần tần số lấy mẫu dư (tạo \"bậc thang\") nằm xa tần số cắt nên bị suy giảm.",
+   "en": "The residual sampling-frequency components (the \"steps\") lie well beyond the cut-off and are attenuated."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: lọc ngõ ra DAC",
+   "en": "Added · generated pattern: DAC output filter"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi dựng lại tín hiệu thử là đường dốc tuyến tính, ADC flash bị hỏng một bộ so sánh (kẹt ở mức THẤP) cho dạng bậc thang thiếu một bước. Lỗi này là:",
+   "en": "A flash ADC with one comparator stuck LOW, tested with a linear ramp, gives a staircase missing one step. This error is:"
+  },
+  "opts": [
+   {
+    "vi": "mã bị thiếu (missing code)",
+    "en": "a missing code"
+   },
+   {
+    "vi": "độ lệch (offset)",
+    "en": "an offset"
+   },
+   {
+    "vi": "không đơn điệu",
+    "en": "nonmonotonic behavior"
+   },
+   {
+    "vi": "chồng phổ",
+    "en": "aliasing"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd Ví dụ 12-4: mã 0011 thiếu, bộ so sánh 3 kẹt LOW.",
+   "en": "Floyd example: code 0011 is missing, comparator 3 stuck LOW."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: lỗi ADC",
+   "en": "Added · generated pattern: ADC faults"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC hai dốc (dual-slope): thời gian xả tụ về 0 V tỉ lệ với điều gì?",
+   "en": "In a dual-slope ADC the time for the capacitor to discharge to 0 V is proportional to:"
+  },
+  "opts": [
+   {
+    "vi": "điện áp vào đã tích vào tụ",
+    "en": "the input voltage that charged the capacitor"
+   },
+   {
+    "vi": "điện áp chuẩn",
+    "en": "the reference voltage"
+   },
+   {
+    "vi": "tần số nguồn",
+    "en": "the supply frequency"
+   },
+   {
+    "vi": "số bit của bộ đếm",
+    "en": "the counter size"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dốc xả có độ nghiêng cố định nên thời gian xả tỉ lệ điện áp ban đầu, tức tỉ lệ $V_{in}$ (Floyd 12-2).",
+   "en": "The discharge ramp has a fixed slope so the discharge time is proportional to the starting voltage, i.e. to $V_{in}$ (Floyd 12-2)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: ADC hai dốc",
+   "en": "Added · generated pattern: dual slope ADC"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC xấp xỉ liên tiếp n bit cần bao nhiêu phép so sánh cho một lần chuyển đổi?",
+   "en": "How many comparisons does an n-bit successive-approximation ADC make per conversion?"
+  },
+  "opts": [
+   {
+    "vi": "n",
+    "en": "n"
+   },
+   {
+    "vi": "$2^n-1$",
+    "en": "$2^n-1$"
+   },
+   {
+    "vi": "$2^n$",
+    "en": "$2^n$"
+   },
+   {
+    "vi": "$n^2$",
+    "en": "$n^2$"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một bit mỗi lần, từ MSB: n bước (ADC0804: 8 phép so sánh, 64 chu kỳ xung nhịp).",
+   "en": "One bit at a time from the MSB: n steps (ADC0804: eight comparisons, 64 clock periods)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: SAR",
+   "en": "Added · generated pattern: SAR"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tại sao thang R-2R dễ chế tạo trên IC hơn DAC trọng số nhị phân 8 bit?",
+   "en": "Why is the R-2R ladder easier to make on an IC than an 8-bit binary-weighted DAC?"
+  },
+  "opts": [
+   {
+    "vi": "chỉ cần hai giá trị điện trở và dễ khớp nhau",
+    "en": "only two resistor values are needed and they match easily"
+   },
+   {
+    "vi": "không cần op-amp",
+    "en": "it needs no op-amp"
+   },
+   {
+    "vi": "không cần điện áp chuẩn",
+    "en": "it needs no reference voltage"
+   },
+   {
+    "vi": "dùng ít bit hơn",
+    "en": "it uses fewer bits"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "DAC trọng số 8 bit cần R đến 128R với sai số dưới 0,5 % (Floyd), dải giá trị rộng khó khớp.",
+   "en": "An 8-bit weighted DAC needs R to 128R at better than 0.5 % (Floyd), a wide range that is hard to match."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: R-2R",
+   "en": "Added · generated pattern: R-2R"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Âm thanh CD lấy mẫu ở 44,1 kHz. Tần số âm tối đa được ghi lại xấp xỉ:",
+   "en": "CD audio is sampled at 44.1 kHz. The highest audio frequency captured is about:"
+  },
+  "opts": [
+   {
+    "vi": "22 kHz",
+    "en": "22 kHz"
+   },
+   {
+    "vi": "44 kHz",
+    "en": "44 kHz"
+   },
+   {
+    "vi": "88 kHz",
+    "en": "88 kHz"
+   },
+   {
+    "vi": "11 kHz",
+    "en": "11 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một nửa tần số lấy mẫu: 22,05 kHz, trên 20 kHz của thiết bị âm thanh thông thường (Floyd 12-1).",
+   "en": "Half the sampling rate: 22.05 kHz, above the 20 kHz usual for audio equipment (Floyd 12-1)."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: lấy mẫu âm thanh",
+   "en": "Added · generated pattern: audio sampling"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần DAC có độ phân giải tốt hơn 1 % (một phần của $2^n-1$ bước). Số bit n nhỏ nhất là:",
+   "en": "A DAC must have a resolution better than 1 % (one part in $2^n-1$ steps). The smallest number of bits n is:"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "8 bit"
+   },
+   {
+    "vi": "7 bit",
+    "en": "7 bit"
+   },
+   {
+    "vi": "9 bit",
+    "en": "9 bit"
+   },
+   {
+    "vi": "6 bit",
+    "en": "6 bit"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cần $100/(2^n-1)<1$. Với $n=7$: $0.7874\\%$ (đạt); với $n=6$: $1.587\\%$ (không đạt).",
+   "en": "Need $100/(2^n-1)<1$. For $n=7$: $0.7874\\%$ (passes); for $n=6$: $1.587\\%$ (fails)."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bit cần thiết",
+   "en": "Added · generated pattern: bits required"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần DAC có độ phân giải tốt hơn 0.5 % (một phần của $2^n-1$ bước). Số bit n nhỏ nhất là:",
+   "en": "A DAC must have a resolution better than 0.5 % (one part in $2^n-1$ steps). The smallest number of bits n is:"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "8 bit"
+   },
+   {
+    "vi": "9 bit",
+    "en": "9 bit"
+   },
+   {
+    "vi": "10 bit",
+    "en": "10 bit"
+   },
+   {
+    "vi": "7 bit",
+    "en": "7 bit"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $100/(2^n-1)<0.5$. Với $n=8$: $0.3922\\%$ (đạt); với $n=7$: $0.7874\\%$ (không đạt).",
+   "en": "Need $100/(2^n-1)<0.5$. For $n=8$: $0.3922\\%$ (passes); for $n=7$: $0.7874\\%$ (fails)."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bit cần thiết",
+   "en": "Added · generated pattern: bits required"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần DAC có độ phân giải tốt hơn 0.1 % (một phần của $2^n-1$ bước). Số bit n nhỏ nhất là:",
+   "en": "A DAC must have a resolution better than 0.1 % (one part in $2^n-1$ steps). The smallest number of bits n is:"
+  },
+  "opts": [
+   {
+    "vi": "12 bit",
+    "en": "12 bit"
+   },
+   {
+    "vi": "9 bit",
+    "en": "9 bit"
+   },
+   {
+    "vi": "11 bit",
+    "en": "11 bit"
+   },
+   {
+    "vi": "10 bit",
+    "en": "10 bit"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Cần $100/(2^n-1)<0.1$. Với $n=10$: $0.09775\\%$ (đạt); với $n=9$: $0.1957\\%$ (không đạt).",
+   "en": "Need $100/(2^n-1)<0.1$. For $n=10$: $0.09775\\%$ (passes); for $n=9$: $0.1957\\%$ (fails)."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bit cần thiết",
+   "en": "Added · generated pattern: bits required"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần DAC có độ phân giải tốt hơn 0.05 % (một phần của $2^n-1$ bước). Số bit n nhỏ nhất là:",
+   "en": "A DAC must have a resolution better than 0.05 % (one part in $2^n-1$ steps). The smallest number of bits n is:"
+  },
+  "opts": [
+   {
+    "vi": "11 bit",
+    "en": "11 bit"
+   },
+   {
+    "vi": "10 bit",
+    "en": "10 bit"
+   },
+   {
+    "vi": "13 bit",
+    "en": "13 bit"
+   },
+   {
+    "vi": "12 bit",
+    "en": "12 bit"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $100/(2^n-1)<0.05$. Với $n=11$: $0.04885\\%$ (đạt); với $n=10$: $0.09775\\%$ (không đạt).",
+   "en": "Need $100/(2^n-1)<0.05$. For $n=11$: $0.04885\\%$ (passes); for $n=10$: $0.09775\\%$ (fails)."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: số bit cần thiết",
+   "en": "Added · generated pattern: bits required"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC cần 2 µs cho mỗi lần chuyển đổi và lấy mẫu liên tục với tốc độ tối đa (thông lượng = 1/thời gian chuyển đổi). Tần số tín hiệu cao nhất có thể số hoá không chồng phổ là:",
+   "en": "An ADC takes 2 µs per conversion and samples continuously at its maximum rate (throughput = 1/conversion time). The highest signal frequency that can be digitised without aliasing is:"
+  },
+  "opts": [
+   {
+    "vi": "500 kHz",
+    "en": "500 kHz"
+   },
+   {
+    "vi": "125 kHz",
+    "en": "125 kHz"
+   },
+   {
+    "vi": "250 kHz",
+    "en": "250 kHz"
+   },
+   {
+    "vi": "1000 kHz",
+    "en": "1000 kHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$f_s=1/2\\,\\mu s=500$ kS/s; $f_{a(max)}=f_s/2=250$ kHz.",
+   "en": "$f_s=1/2\\,\\mu s=500$ kS/s; $f_{a(max)}=f_s/2=250$ kHz."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: thông lượng và Nyquist",
+   "en": "Added · generated pattern: throughput and Nyquist"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-2 định nghĩa thông lượng là tốc độ lấy mẫu mà ADC xử lý được (mẫu trên giây). Giả thiết \"lấy mẫu liên tục ở tốc độ tối đa\" là điều kiện của câu hỏi, không phải của sách.</p>",
+   "en": "<p>Floyd 12-2 defines throughput as the sampling rate an ADC can handle (samples per second). \"Samples continuously at its maximum rate\" is an assumption of the question, not of the book.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC cần 10 µs cho mỗi lần chuyển đổi và lấy mẫu liên tục với tốc độ tối đa (thông lượng = 1/thời gian chuyển đổi). Tần số tín hiệu cao nhất có thể số hoá không chồng phổ là:",
+   "en": "An ADC takes 10 µs per conversion and samples continuously at its maximum rate (throughput = 1/conversion time). The highest signal frequency that can be digitised without aliasing is:"
+  },
+  "opts": [
+   {
+    "vi": "200 kHz",
+    "en": "200 kHz"
+   },
+   {
+    "vi": "25 kHz",
+    "en": "25 kHz"
+   },
+   {
+    "vi": "100 kHz",
+    "en": "100 kHz"
+   },
+   {
+    "vi": "50 kHz",
+    "en": "50 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$f_s=1/10\\,\\mu s=100$ kS/s; $f_{a(max)}=f_s/2=50$ kHz.",
+   "en": "$f_s=1/10\\,\\mu s=100$ kS/s; $f_{a(max)}=f_s/2=50$ kHz."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: thông lượng và Nyquist",
+   "en": "Added · generated pattern: throughput and Nyquist"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-2 định nghĩa thông lượng là tốc độ lấy mẫu mà ADC xử lý được (mẫu trên giây). Giả thiết \"lấy mẫu liên tục ở tốc độ tối đa\" là điều kiện của câu hỏi, không phải của sách.</p>",
+   "en": "<p>Floyd 12-2 defines throughput as the sampling rate an ADC can handle (samples per second). \"Samples continuously at its maximum rate\" is an assumption of the question, not of the book.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC cần 100 µs cho mỗi lần chuyển đổi và lấy mẫu liên tục với tốc độ tối đa (thông lượng = 1/thời gian chuyển đổi). Tần số tín hiệu cao nhất có thể số hoá không chồng phổ là:",
+   "en": "An ADC takes 100 µs per conversion and samples continuously at its maximum rate (throughput = 1/conversion time). The highest signal frequency that can be digitised without aliasing is:"
+  },
+  "opts": [
+   {
+    "vi": "5 kHz",
+    "en": "5 kHz"
+   },
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "2.5 kHz",
+    "en": "2.5 kHz"
+   },
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_s=1/100\\,\\mu s=10$ kS/s; $f_{a(max)}=f_s/2=5$ kHz.",
+   "en": "$f_s=1/100\\,\\mu s=10$ kS/s; $f_{a(max)}=f_s/2=5$ kHz."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: thông lượng và Nyquist",
+   "en": "Added · generated pattern: throughput and Nyquist"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-2 định nghĩa thông lượng là tốc độ lấy mẫu mà ADC xử lý được (mẫu trên giây). Giả thiết \"lấy mẫu liên tục ở tốc độ tối đa\" là điều kiện của câu hỏi, không phải của sách.</p>",
+   "en": "<p>Floyd 12-2 defines throughput as the sampling rate an ADC can handle (samples per second). \"Samples continuously at its maximum rate\" is an assumption of the question, not of the book.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC cần 0.5 µs cho mỗi lần chuyển đổi và lấy mẫu liên tục với tốc độ tối đa (thông lượng = 1/thời gian chuyển đổi). Tần số tín hiệu cao nhất có thể số hoá không chồng phổ là:",
+   "en": "An ADC takes 0.5 µs per conversion and samples continuously at its maximum rate (throughput = 1/conversion time). The highest signal frequency that can be digitised without aliasing is:"
+  },
+  "opts": [
+   {
+    "vi": "2000 kHz",
+    "en": "2000 kHz"
+   },
+   {
+    "vi": "500 kHz",
+    "en": "500 kHz"
+   },
+   {
+    "vi": "4000 kHz",
+    "en": "4000 kHz"
+   },
+   {
+    "vi": "1000 kHz",
+    "en": "1000 kHz"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$f_s=1/0.5\\,\\mu s=2000$ kS/s; $f_{a(max)}=f_s/2=1000$ kHz.",
+   "en": "$f_s=1/0.5\\,\\mu s=2000$ kS/s; $f_{a(max)}=f_s/2=1000$ kHz."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · sinh theo dạng: thông lượng và Nyquist",
+   "en": "Added · generated pattern: throughput and Nyquist"
+  },
+  "detail": {
+   "vi": "<p>Floyd 12-2 định nghĩa thông lượng là tốc độ lấy mẫu mà ADC xử lý được (mẫu trên giây). Giả thiết \"lấy mẫu liên tục ở tốc độ tối đa\" là điều kiện của câu hỏi, không phải của sách.</p>",
+   "en": "<p>Floyd 12-2 defines throughput as the sampling rate an ADC can handle (samples per second). \"Samples continuously at its maximum rate\" is an assumption of the question, not of the book.</p>"
+  }
+ }
+]

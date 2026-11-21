@@ -63,7 +63,7 @@ MODS = [
          books=dict(tooley='Ch.14 (tr.218-237)', floyd='§13-1 (nhiễu xuyên âm), §6-11 (tụ tách), §15-3 (biên nhiễu)'), status='live'),
     # ---- module thêm theo quyết định 4b (21/11/2026): KHÔNG có slide của giảng viên, dựng từ sách. Tooley Ch.12 ESD (tr.197-206) gắn vào m09 như phần mở rộng. ----
     dict(id='m10', slug='10-data-conversion', vi='Chuyển đổi dữ liệu A/D và D/A', en='Data conversion: A/D and D/A', co=['CO4'], clo=[], slides=[], blank_slides=[],
-         books=dict(tooley='Ch.3 (tr.39-52)', floyd='Ch.12 Signal Conversion and Processing (PDF tr.698-739)'), status='planned', noslide=True),
+         books=dict(tooley='Ch.3 (tr.39-52)', floyd='Ch.12 §12-1 đến 12-3 (tr.698-722)'), status='live', noslide=True),
     dict(id='m11', slug='11-sequential-logic', vi='Mạch tuần tự: latch, flip-flop, thanh ghi dịch, bộ đếm, logic khả trình', en='Sequential logic: latches, flip-flops, shift registers, counters, programmable logic', co=[], clo=[], slides=[], blank_slides=[],
          books=dict(tooley='§5.6-5.8 (monostable, bistable, họ logic)', floyd='Ch.7 (PDF tr.388), Ch.8 (450), Ch.9 (498), Ch.10 (562)'), status='planned', noslide=True),
     dict(id='m12', slug='12-avionic-systems', vi='Hệ thống avionics số: fly-by-wire, FMS, GPS, IRS, TCAS, thiết bị thử', en='Digital avionic systems: fly-by-wire, FMS, GPS, IRS, TCAS, test equipment', co=[], clo=['CLO3'], slides=[], blank_slides=[],

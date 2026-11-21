@@ -89,7 +89,7 @@ def slide_strip(m, lang, r):
     for d, p in slides_of(m): items.append((d, p, False))
     for d, a, b in m['blank_slides']:
         for p in range(a, b + 1): items.append((d, p, True))
-    if not slide_index(): return ''
+    if not slide_index() or not items: return ''
     out = f'<h2 id="slides">{s["strip"]}</h2><p class="slidestrip-cap">{len(items) - sum(1 for i in items if i[2])} {s["slides_n"]}' + (f' + {sum(1 for i in items if i[2])} {s["blank"]}' if any(i[2] for i in items) else '') + '</p><div class="slidestrip">'
     for d, p, blank in items:
         lab = slide_label(lang, d, p) + (' (blank)' if blank and lang == 'en' else ' (trống)' if blank else '')
@@ -110,8 +110,10 @@ def module_page(m, c, bank, lang):
         slides += [(x, False) for x in part['slides']]
     h = f'<div class="crumbs"><a href="../../index.html">{s["home"]}</a> › {s["modules"]} › {m["id"].upper()}</div>'
     h += f'<h1>{m["id"][1:]}. {esc(m[lang])}</h1><p class="lead">{c.get("subtitle", "")}</p>'
-    h += (f'<p><span class="tag">CO/CLO: {", ".join(m["co"] + m["clo"]) or ("ngoài CO/CLO nêu" if lang == "vi" else "none stated")}</span><span class="tag">{s["time"]}: ≈ {hnum(est_hours(m), lang)} {s["hours"]}</span>'
-          f'<span class="tag">{len(slides_of(m))} {s["slides_n"]}</span><span class="tag exam">{s["nq"]}: {nq} ({ng} {s["orig"]})</span></p>')
+    tags = f'<span class="tag">CO/CLO: {", ".join(m["co"] + m["clo"]) or ("ngoài CO/CLO nêu" if lang == "vi" else "none stated")}</span>'
+    if slides_of(m): tags += f'<span class="tag">{s["time"]}: ≈ {hnum(est_hours(m), lang)} {s["hours"]}</span><span class="tag">{len(slides_of(m))} {s["slides_n"]}</span>'
+    else: tags += f'<span class="tag">{"không có slide của giảng viên (dựng từ sách)" if lang == "vi" else "no lecturer slides (built from the books)"}</span>'
+    h += '<p>' + tags + f'<span class="tag exam">{s["nq"]}: {nq} ({ng} {s["orig"]})</span></p>'
     h += '<p class="srcnote">' + ' · '.join(esc(x) for x in m['src']) + f' · <a href="../../books/index.html#overview">{s["books_title"]}</a></p>'
     from mapping import MAPPING_ROWS
     mr = next((x for x in MAPPING_ROWS if 'm' + x['module'].split(':')[0].strip() == m['id']), None)

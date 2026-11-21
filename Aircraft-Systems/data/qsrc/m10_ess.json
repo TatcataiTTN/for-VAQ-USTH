@@ -1,0 +1,156 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Điện áp vào của một mạch khuếch đại đảo dùng op-amp là 5 mV, điện áp ra là 1 V. Độ lợi vòng kín là bao nhiêu?",
+   "en": "The input voltage to a certain op-amp inverting amplifier is 5 mV, and the output is 1 V. What is the closed-loop voltage gain?"
+  },
+  "sol": {
+   "vi": "Độ lợi $=V_{out}/V_{in}=1\\,V/5\\,mV=200$. Đáp án in của Floyd là 200 (giá trị tuyệt đối); vì là mạch đảo nên về dấu độ lợi là $-200$ nếu $V_{in}$ và $V_{out}$ lấy theo dấu.",
+   "en": "Gain $=V_{out}/V_{in}=1\\,V/5\\,mV=200$. Floyd's printed answer is 200 (magnitude); for an inverting circuit the signed gain would be $-200$ if $V_{in}$ and $V_{out}$ are taken with sign."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Bài 7 (đáp án A-26)",
+   "en": "Floyd Ch.12 · Problem 7 (answer A-26)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cần độ lợi vòng kín 220 cho bộ khuếch đại đảo. Chọn điện trở hồi tiếp bao nhiêu nếu $R_i=2$ kΩ?",
+   "en": "To achieve a closed-loop voltage gain of 220 with an inverting amplifier, what value of feedback resistor do you use if $R_i=2$ kΩ?"
+  },
+  "sol": {
+   "vi": "$|A|=R_f/R_i$ nên $R_f=220\\times2$ kΩ $=440$ kΩ. Bài chẵn: sách không in đáp án; site tự giải.",
+   "en": "$|A|=R_f/R_i$ so $R_f=220\\times2$ kΩ $=440$ kΩ. Even-numbered: the book prints no answer; solved by this site."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Bài 8 (bài chẵn, không có đáp án in)",
+   "en": "Floyd Ch.12 · Problem 8 (even, no printed answer)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Độ lợi của bộ khuếch đại đảo có $R_f=33$ kΩ và $R_i=1$ kΩ là bao nhiêu?",
+   "en": "What is the gain of an inverting amplifier that uses a 33 k$\\Omega$ feedback resistor if the input resistor is 1 k$\\Omega$?"
+  },
+  "sol": {
+   "vi": "$A=-R_f/R_i=-33$. Đáp án in: $-33$.",
+   "en": "$A=-R_f/R_i=-33$. Printed answer: $-33$."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Bài 9 (đáp án A-26)",
+   "en": "Floyd Ch.12 · Problem 9 (answer A-26)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cần bao nhiêu bộ so sánh cho một bộ chuyển đổi flash 4 bit?",
+   "en": "How many comparators are required to form a 4-bit flash converter?"
+  },
+  "sol": {
+   "vi": "$2^4-1=15$ (Floyd 12-2). Bài chẵn: sách không in đáp án; site tự giải.",
+   "en": "$2^4-1=15$ (Floyd 12-2). Even-numbered: the book prints no answer; solved by this site."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Bài 10 (bài chẵn)",
+   "en": "Floyd Ch.12 · Problem 10 (even)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định độ phân giải (theo phần trăm) của DAC (a) 2 bit (b) 5 bit (c) 12 bit.",
+   "en": "Determine the resolution, expressed as a percentage, for each of the following DACs: (a) 2-bit (b) 5-bit (c) 12-bit."
+  },
+  "sol": {
+   "vi": "$100/(2^n-1)$: (a) $100/3=33{,}33\\%$; (b) $100/31=3{,}226\\%$ (làm tròn 3,23 %); (c) $100/4095=0{,}0244\\%$. Đáp án in của Floyd: 33,33 %, 3,22 %, 0,024 %: ý (b) in 3,22 % (cắt cụt thay vì làm tròn 3,23 %) và ý (c) làm tròn còn 0,024 %.",
+   "en": "$100/(2^n-1)$: (a) $100/3=33.33\\%$; (b) $100/31=3.226\\%$ (rounds to 3.23 %); (c) $100/4095=0.0244\\%$. Floyd's printed answers: 33.33 %, 3.22 %, 0.024 %: part (b) shows 3.22 % (truncated, not rounded to 3.23 %) and part (c) is rounded to 0.024 %."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Bài 19 (đáp án A-26)",
+   "en": "Floyd Ch.12 · Problem 19 (answer A-26)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Làm thế nào để chuyển một tín hiệu tương tự thành một xấp xỉ dạng bậc thang?",
+   "en": "How can an analog signal be converted into a stair-step approximation?"
+  },
+  "sol": {
+   "vi": "Dùng mạch lấy mẫu-giữ (sample-and-hold): lấy mẫu rồi giữ mỗi mẫu không đổi tới mẫu kế (Floyd Hình 12-5). Đáp án in: \"By using a sample-and-hold circuit\".",
+   "en": "Use a sample-and-hold circuit: sample, then hold each sample constant until the next (Floyd Figure 12-5). Printed answer: \"By using a sample-and-hold circuit\"."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Bài 23 (đáp án A-26)",
+   "en": "Floyd Ch.12 · Problem 23 (answer A-26)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Ví dụ 12-4: Xác định độ phân giải (phần trăm) của DAC (a) 8 bit (b) 12 bit. Bài liên quan: DAC 16 bit.",
+   "en": "Example 12-4: Determine the resolution, expressed as a percentage, of (a) an 8-bit DAC (b) a 12-bit DAC. Related problem: a 16-bit DAC."
+  },
+  "sol": {
+   "vi": "(a) $100/255=0{,}392\\%$; (b) $100/4095=0{,}0244\\%$. Bài liên quan 16 bit: $100/65535=0{,}00153\\%$ (đáp án in: 0,00153 %).",
+   "en": "(a) $100/255=0.392\\%$; (b) $100/4095=0.0244\\%$. Related problem, 16 bit: $100/65535=0.00153\\%$ (printed answer: 0.00153 %)."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Ví dụ 12-4 và bài liên quan (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Example 12-4 and related problem (answer p.738)"
+  }
+ }
+]

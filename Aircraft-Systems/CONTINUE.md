@@ -14,6 +14,8 @@ Người dùng trả lời 21/11/2026:
 |---|---|
 | P0c kiểm kê site | XONG 21/11 (bảng dưới) |
 | Nền pipeline mới `build/` (4a) | XONG 21/11, CHƯA push: `modules.py`, `assemble.py` (mã câu ổn định = băm nội dung), `build_site.py`, `legacy.py` (chuyển nội dung 9 module cũ), `migrate_quiz.py`, `migrate_essays.py`, `topics.py`, `mapping.py`, `bookmap_body.py`, `sources_body.py`, `exams.py`, `push.sh`; `_shared/` mới (khoá `ae2021:`); `tests/site_test.py` 11/11 PASS; quét trình duyệt 64 trang × 2 cỡ: 0 tràn, 0 ảnh hỏng, 0 lỗi console, 0 gạch ngang dài |
+| Module 10 (A/D và D/A) | XONG 21/11, CHƯA push: `build/content/m10.py` (5 phần, 16 slide nội dung × 2 ngôn ngữ, 3 hình tự vẽ), `build/numlib/adda.py` (mỗi hàm có hai cách tính), `build/gen/gen_m10.py` → 109 câu trắc nghiệm (38 gốc: Tooley Ch.3 13 câu khoá đọc từ ảnh A.3, Floyd Ch.12 đúng/sai, Self-Test, Checkup; 71 bổ sung, 27 câu mức 3) + 7 tự luận, `build/verify/verify_m10.py` (FAILS: none; 58/71 câu sinh được tính lại độc lập), notebook VI và EN chạy thật (`notebooks/m10_*`), `data/verify/m10_notes.json` (13 điểm nghi vấn của nguồn) |
+| P0a đọc từng slide | CHƯA LÀM. Lần giao 11 tác tử song song đã thất bại (giới hạn sử dụng 5 giờ, không file nào được ghi) và người dùng yêu cầu KHÔNG chia nhiều tác tử: đọc tuần tự trong phiên chính |
 | 342 ảnh slide + chỉ mục | XONG (`build/render_slides.py`, `assets/slides/`, `data/slides/index.json`); CHƯA đọc từng slide (P0a) |
 | 4a–4d hỏi người dùng | XONG 21/11 (xem Quyết định) |
 | P0 kiểm và vá nguồn (slide, Tooley, Floyd) | CHƯA LÀM |
@@ -57,3 +59,9 @@ Chưa đo được ở P0c (cần P0/P8): đọc đủ từng trang của 9 bộ
 
 Các lỗi đã phát hiện khi chuyển (xem `data/verify/migration_notes.json`): Tooley Revision Paper 6 Q2 in hai lựa chọn giống nhau (tr.366), đã thay (c) và ghi chú; hai câu bị trùng nội dung và được gộp (m01, m04); Tooley Ch.10 bắt đầu tr.165 chứ không phải 162; m05 từng ghi sai "Floyd không có bus"; khoá localStorage của Thermal không có tiền tố môn.
 Số đo mức độ: level 3 chỉ có ở một phần ngân hàng (m07 không có câu mức 3; m02 7/102); topic gán bằng từ khoá (m04 memory 57/73, m02 gates 51/102): cần rà ở P4. Vị trí đáp án sau khi xáo theo băm nội dung: m07 3 lựa chọn [23, 8, 16] (chi bình phương 7,19, p ≈ 0,03); lệch độ dài: m05 51 %, m07 61 %, m09 51 % (đáp án đúng là dài nhất): cần cân lại.
+
+
+## Cập nhật cuối phiên 21/11/2026 (sau commit 722d83a)
+- Chưa push: sửa tràn ngang ở thư viện slide (390 px, production báo thất thường), demo hiện dấu phẩy thập phân ở trang Việt, giao diện Ocean, module 10. Cần xác nhận push (prompt mục 0).
+- Số đo hiện tại (bản làm việc): 20 trang module (vi, en), ngân hàng 714 câu trắc nghiệm (605 + 109), 136 tự luận. Ghi chú: `data/qbank/_audit.json` có chi bình phương vị trí và tỉ lệ đáp án dài nhất theo từng nhóm.
+- Còn lại theo thứ tự giá trị trên công sức: P0a đọc slide (tuần tự, ghi từng cụm 5 đến 10 slide vào `data/slides/transcript/` ngay), glossary và tóm tắt công thức (F15, F16), module 11 đến 15, cân lại vị trí và độ dài đáp án m05 đến m09, mức 3 cho m01 đến m09, Written/Concept/Analyser/Exercises, kiểm tra đầu vào, sổ lỗi, tách notebook VI/EN cho m01 đến m09, FEATURES P0b (mở site mẫu bằng trình duyệt).

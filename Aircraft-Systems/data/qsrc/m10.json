@@ -1,0 +1,1504 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một DAC tạo ra được 256 điện áp ra khác nhau. DAC này có độ phân giải:",
+   "en": "A DAC can produce 256 different output voltages. This DAC has a resolution of:"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "8 bits"
+   },
+   {
+    "vi": "128 bit",
+    "en": "128 bits"
+   },
+   {
+    "vi": "256 bit",
+    "en": "256 bits"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "2^8 = 256 mức nên cần 8 bit.",
+   "en": "2^8 = 256 levels so 8 bits are needed."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 1 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q1 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Số mức ra của DAC n bit là $2^n$; 256 mức nghĩa là $n=\\log_2 256=8$. Độ phân giải của DAC được nêu bằng SỐ BIT dùng trong chuyển đổi (Tooley 3.2.1), không phải số mức.</p><p>Bẫy: 256 là số mức chứ không phải số bit; 128 là $2^{7}$.</p>",
+   "en": "<p>A DAC with $n$ bits has $2^n$ output levels; 256 levels means $n=\\log_2 256=8$. The resolution of a DAC is stated as the NUMBER OF BITS used in the conversion (Tooley 3.2.1), not the number of levels.</p><p>Trap: 256 is the number of levels, not bits; 128 is $2^{7}$.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong ADC lưỡng cực, mức logic 1 ở vị trí MSB cho biết:",
+   "en": "In a bipolar ADC a logic 1 in the MSB position indicates:"
+  },
+  "opts": [
+   {
+    "vi": "điện áp vào bằng không",
+    "en": "zero input voltage"
+   },
+   {
+    "vi": "điện áp vào âm",
+    "en": "negative input voltage"
+   },
+   {
+    "vi": "điện áp vào dương",
+    "en": "positive input voltage"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mã bù hai: MSB = 1 là số âm (Tooley 3.1).",
+   "en": "Two's complement code: MSB = 1 means a negative value (Tooley 3.1)."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 2 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q2 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Tooley dùng biểu diễn bù hai cho ADC 4 bit lưỡng cực (Hình 3.3): các mã $0001$ đến $0111$ ứng với điện áp dương, $1000$ đến $1111$ ứng với điện áp âm. Mọi mã có MSB bằng 1 là điện áp âm.</p><p>Nhớ lại Module 01: bù hai, MSB là bit dấu.</p>",
+   "en": "<p>Tooley uses two's complement for the 4-bit bipolar ADC (Figure 3.3): codes $0001$ to $0111$ are positive voltages, $1000$ to $1111$ are negative. Every code whose MSB is 1 is a negative voltage.</p><p>Recall Module 01: two's complement, the MSB is the sign bit.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiểu ADC nào sau đây nhanh nhất?",
+   "en": "Which one of the following types of ADC is the fastest:"
+  },
+  "opts": [
+   {
+    "vi": "kiểu dốc (ramp)",
+    "en": "ramp type"
+   },
+   {
+    "vi": "kiểu flash",
+    "en": "flash type"
+   },
+   {
+    "vi": "kiểu xấp xỉ liên tiếp",
+    "en": "successive approximation type"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Flash 50 ns đến 1 µs; xấp xỉ liên tiếp 10 đến 100 µs; hai dốc 500 µs đến 20 ms.",
+   "en": "Flash 50 ns to 1 µs; successive approximation 10 to 100 µs; dual slope 500 µs to 20 ms."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 3 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q3 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Flash so sánh đồng thời với mọi mức chuẩn nên chỉ cần một bước. Thời gian điển hình theo Tooley 3.3: flash 50 ns đến 1 µs, xấp xỉ liên tiếp 10 đến 100 µs, dốc đôi 500 µs đến 20 ms. Floyd cũng kết luận phương pháp flash (đồng thời) nhanh nhất (Checkup 12-2 câu 1).</p>",
+   "en": "<p>Flash compares with every reference at the same time so one step is enough. Typical times in Tooley 3.3: flash 50 ns to 1 µs, successive approximation 10 to 100 µs, dual slope 500 µs to 20 ms. Floyd also concludes that the flash (simultaneous) method is fastest (Checkup 12-2 question 1).</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiểu ADC nào dùng một số lượng lớn bộ so sánh?",
+   "en": "Which one of the following ADC types uses a large number of comparators:"
+  },
+  "opts": [
+   {
+    "vi": "kiểu dốc (ramp)",
+    "en": "ramp type"
+   },
+   {
+    "vi": "kiểu flash",
+    "en": "flash type"
+   },
+   {
+    "vi": "kiểu xấp xỉ liên tiếp",
+    "en": "successive approximation type"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Flash n bit cần $2^n-1$ bộ so sánh.",
+   "en": "An n-bit flash needs $2^n-1$ comparators."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 4 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q4 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>ADC flash n bit cần $2^n-1$ bộ so sánh (Floyd 12-2): 3 bit cần 7, 4 bit cần 15, 8 bit cần 255. Tooley nói tròn 256 cho 8 bit và 1 024 cho 10 bit; con số chính xác là 255 và 1 023.</p><p>Đây là nhược điểm chính của flash: phức tạp và đắt khi số bit tăng.</p>",
+   "en": "<p>An n-bit flash ADC needs $2^n-1$ comparators (Floyd 12-2): 3 bits need 7, 4 bits need 15, 8 bits need 255. Tooley says 256 for 8 bits and 1,024 for 10 bits in round numbers; the exact counts are 255 and 1,023.</p><p>This is the main drawback of flash: complexity and cost grow quickly with the bit count.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ưu điểm của DAC thang R-2R là:",
+   "en": "The advantage of an R-2R ladder DAC is that:"
+  },
+  "opts": [
+   {
+    "vi": "dùng tổng số điện trở ít hơn",
+    "en": "it uses fewer resistors overall"
+   },
+   {
+    "vi": "dùng ít công tắc tương tự hơn",
+    "en": "it uses a smaller number of analogue switches"
+   },
+   {
+    "vi": "tránh phải dùng nhiều giá trị điện trở khác nhau",
+    "en": "it avoids having a large number of different value resistors"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chỉ cần hai giá trị điện trở, R và 2R.",
+   "en": "Only two resistor values are needed, R and 2R."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 5 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q5 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>DAC trọng số nhị phân 10 bit với R = 1 kΩ cần các điện trở từ 1 kΩ đến 512 kΩ, tất cả phải sai số 1 % hoặc tốt hơn (Tooley 3.2). Thang R-2R chỉ cần hai giá trị, một giá trị gấp đôi giá trị kia, nên dễ chế tạo cặp điện trở khớp nhau trên chip. Tổng số điện trở thì thang R-2R không ít hơn.</p>",
+   "en": "<p>A 10-bit binary-weighted DAC with R = 1 kΩ needs resistors from 1 kΩ to 512 kΩ, all to 1 % or better (Tooley 3.2). The R-2R ladder needs only two values, one double the other, so matched resistors are easy to make on a chip. The total number of resistors is not smaller.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC 10 bit có thể tạo ra:",
+   "en": "A 10-bit DAC is capable of producing:"
+  },
+  "opts": [
+   {
+    "vi": "10 mức ra khác nhau",
+    "en": "10 different output levels"
+   },
+   {
+    "vi": "100 mức ra khác nhau",
+    "en": "100 different output levels"
+   },
+   {
+    "vi": "1 024 mức ra khác nhau",
+    "en": "1,024 different output levels"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$2^{10}=1024$.",
+   "en": "$2^{10}=1024$."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 6 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q6 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Số mức ra là $2^n$. Với $n=10$ ta có 1 024 mức (Tooley 3.2.1). Số bước giữa mức nhỏ nhất và lớn nhất là $2^n-1=1023$ (cách Floyd tính độ phân giải).</p>",
+   "en": "<p>The number of output levels is $2^n$. For $n=10$ that is 1,024 levels (Tooley 3.2.1). The number of steps from the lowest to the highest level is $2^n-1=1023$ (how Floyd computes resolution).</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Quá trình xấp xỉ một tín hiệu tương tự bằng một chuỗi mức rời rạc gọi là:",
+   "en": "The process of approximating an analogue signal to a series of discrete levels is referred to as:"
+  },
+  "opts": [
+   {
+    "vi": "ghép nối (interfacing)",
+    "en": "interfacing"
+   },
+   {
+    "vi": "lượng tử hoá (quantising)",
+    "en": "quantising"
+   },
+   {
+    "vi": "chuyển đổi dữ liệu",
+    "en": "data conversion"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tooley 3.1: lượng tử hoá.",
+   "en": "Tooley 3.1: quantising."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 7 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q7 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Lượng tử hoá gán mỗi giá trị đã lấy mẫu vào một mức rời rạc rồi mã hoá nhị phân (Hình 3.2: điện áp 9,9 V thành mức 10, mã 1010). \"Chuyển đổi dữ liệu\" là tên cả quá trình A/D hay D/A, rộng hơn.</p>",
+   "en": "<p>Quantising assigns each sampled value to a discrete level and then codes it in binary (Figure 3.2: 9.9 V becomes level 10, code 1010). \"Data conversion\" names the whole A/D or D/A process, which is broader.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong DAC trọng số nhị phân, hệ số khuếch đại điện áp của mỗi đầu vào số được quyết định bởi:",
+   "en": "In a binary-weighted DAC the voltage gain for each digital input is determined by:"
+  },
+  "opts": [
+   {
+    "vi": "một dốc có độ nghiêng thay đổi",
+    "en": "a variable slope ramp"
+   },
+   {
+    "vi": "một điện áp chuẩn thay đổi",
+    "en": "a variable reference voltage"
+   },
+   {
+    "vi": "các điện trở có giá trị khác nhau",
+    "en": "resistors having different values"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Gain $=-R_f/R_i$ với $R_i=R,2R,4R,8R$ (Bảng 3.1).",
+   "en": "Gain $=-R_f/R_i$ with $R_i=R,2R,4R,8R$ (Table 3.1)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 8 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q8 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Bảng 3.1: bit 3 (MSB) có hệ số $-R/R=-1$, bit 2 là $-0{,}5$, bit 1 là $-0{,}25$, bit 0 (LSB) là $-0{,}125$. Điện trở đầu vào càng lớn thì hệ số càng nhỏ và trọng số càng thấp.</p>",
+   "en": "<p>Table 3.1: bit 3 (MSB) has gain $-R/R=-1$, bit 2 is $-0.5$, bit 1 is $-0.25$, bit 0 (LSB) is $-0.125$. The larger the input resistor, the smaller the gain and the lower the weight.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của DAC được nêu bằng:",
+   "en": "The resolution of a DAC is stated in terms of:"
+  },
+  "opts": [
+   {
+    "vi": "độ chính xác của điện áp chuẩn",
+    "en": "the accuracy of the voltage reference"
+   },
+   {
+    "vi": "độ lợi vòng hở của bộ so sánh",
+    "en": "the open-loop gain of the comparator"
+   },
+   {
+    "vi": "số bit dùng trong chuyển đổi",
+    "en": "the number of bits used in the conversion"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley 3.2.1, Key Point.",
+   "en": "Tooley 3.2.1, Key Point."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 9 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q9 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Độ chính xác (accuracy) phụ thuộc điện trở và điện áp chuẩn; độ phân giải (resolution) chỉ phụ thuộc số bit. Hai khái niệm này hay bị nhầm. DAC thường có 8, 10 hoặc 12 bit; độ chính xác điển hình 1 % đến 2 %.</p>",
+   "en": "<p>Accuracy depends on the resistors and the reference voltage; resolution depends only on the number of bits. The two are often confused. Typical DACs have 8, 10 or 12 bits; typical accuracy is 1 % to 2 %.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thời gian chuyển đổi điển hình của ADC flash nằm trong khoảng:",
+   "en": "The conversion time of a flash ADC is typically in the range:"
+  },
+  "opts": [
+   {
+    "vi": "50 ns đến 1 µs",
+    "en": "50 ns to 1 µs"
+   },
+   {
+    "vi": "50 µs đến 1 ms",
+    "en": "50 µs to 1 ms"
+   },
+   {
+    "vi": "50 ms đến 1 s",
+    "en": "50 ms to 1 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 3.3: 50 ns đến 1 µs.",
+   "en": "Tooley 3.3: 50 ns to 1 µs."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 10 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q10 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Lớp quét OCR của Tooley in nhầm \"1 ps\"; ảnh trang và khoá (a) cho thấy đơn vị là micro giây. Flash dùng cho tín hiệu thay đổi nhanh, giá cao vì phức tạp.</p>",
+   "en": "<p>Tooley's OCR layer misprints \"1 ps\"; the page image and key (a) show the unit is the microsecond. Flash serves rapidly changing signals and costs more because of its complexity.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC dùng trong ADC xấp xỉ liên tiếp thường là kiểu:",
+   "en": "The DAC used in a successive approximation ADC is usually:"
+  },
+  "opts": [
+   {
+    "vi": "kiểu dốc",
+    "en": "ramp type"
+   },
+   {
+    "vi": "kiểu trọng số nhị phân",
+    "en": "binary-weighted type"
+   },
+   {
+    "vi": "kiểu xấp xỉ liên tiếp",
+    "en": "successive approximation type"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Khoá (b). Văn bản Tooley nói \"thường dựa trên thang R-2R\", là một mạng trọng số nhị phân.",
+   "en": "Key (b). The Tooley text says \"usually based on an R-2R ladder\", which is a binary-weighted network."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 11 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q11 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Có một khác biệt nhỏ trong nguồn: Tooley 3.3 mô tả DAC của SAR \"thường dựa trên thang R-2R\", còn khoá chọn \"trọng số nhị phân\". Thang R-2R cho các dòng theo trọng số nhị phân nên (b) là đáp án gần nhất; hai phương án còn lại không phải loại DAC (ramp và xấp xỉ liên tiếp là kiểu ADC).</p>",
+   "en": "<p>A small mismatch in the source: Tooley 3.3 describes the SAR's DAC as \"usually based on an R-2R ladder\", while the key chooses \"binary-weighted\". The R-2R ladder produces binary-weighted currents so (b) is the closest answer; the other two are not DAC types (ramp and successive approximation are ADC types).</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ở ADC xấp xỉ liên tiếp, khoảng thời gian giữa tín hiệu SC và EOC là:",
+   "en": "In a successive approximation ADC, the time interval between the SC and EOC signals is:"
+  },
+  "opts": [
+   {
+    "vi": "thời gian xung nhịp",
+    "en": "the clock time"
+   },
+   {
+    "vi": "thời gian chu kỳ",
+    "en": "the cycle time"
+   },
+   {
+    "vi": "thời gian chuyển đổi",
+    "en": "the conversion time"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "SC = bắt đầu chuyển đổi, EOC = kết thúc chuyển đổi.",
+   "en": "SC = start conversion, EOC = end of conversion."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 12 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q12 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Khi nhận SC, các bit của SAR lần lượt được đặt và xoá theo ngõ ra bộ so sánh. Khi xong, EOC phát ra và mã 8 bit được đọc. Thời gian giữa hai tín hiệu là thời gian chuyển đổi, điển hình 10 µs đến 100 µs.</p>",
+   "en": "<p>On SC the SAR bits are set and cleared in turn according to the comparator output. When done, EOC is issued and the 8-bit code is read. The time between the two signals is the conversion time, typically 10 µs to 100 µs.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ưu điểm của ADC hai dốc (dual-ramp) là:",
+   "en": "An advantage of a dual-ramp ADC is:"
+  },
+  "opts": [
+   {
+    "vi": "thời gian chuyển đổi nhanh",
+    "en": "a fast conversion time"
+   },
+   {
+    "vi": "khả năng vốn có là loại bỏ nhiễu",
+    "en": "an inherent ability to reject noise"
+   },
+   {
+    "vi": "hoạt động không cần xung nhịp",
+    "en": "the ability to operate without the need for a clock"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Dốc xuống có độ nghiêng cố định nên độ chính xác cao và loại nhiễu; đổi lại chậm.",
+   "en": "The negative ramp has a fixed slope so accuracy is high and noise is rejected; the price is speed."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.3 · Câu 13 (khoá A.3, tr.377)",
+   "en": "Tooley Ch.3 · Q13 (key A.3, p.377)"
+  },
+  "detail": {
+   "vi": "<p>Trong ADC hai dốc, độ nghiêng dốc lên phụ thuộc điện áp vào nhưng dốc xuống cố định (Tooley 3.3), nên độ chính xác cao và nhiễu cùng hiện tượng ngẫu nhiên trên đầu vào bị triệt. Nhược điểm là chậm, 500 µs đến 20 ms. Floyd: dùng nhiều trong vôn kế số.</p>",
+   "en": "<p>In a dual-ramp ADC the slope of the rising ramp depends on the input but the falling ramp is fixed (Tooley 3.3), so accuracy is high and noise and random variation on the input are rejected. The drawback is speed, 500 µs to 20 ms. Floyd: widely used in digital voltmeters.</p>"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Một tín hiệu tương tự có thể được chuyển thành tín hiệu số bằng cách lấy mẫu.",
+   "en": "An analog signal can be converted to a digital signal using sampling."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng: lấy mẫu là bước đầu của chuyển đổi A/D.",
+   "en": "True: sampling is the first step of A/D conversion."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #1 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #1 (answer p.738)"
+  },
+  "detail": {
+   "vi": "<p>Lấy mẫu rồi giữ rồi lượng tử hoá: ba việc nối tiếp. Chỉ lấy mẫu chưa cho mã số, nhưng là điều kiện cần của chuyển đổi (Floyd 12-1).</p>",
+   "en": "<p>Sample, then hold, then quantise: three steps in sequence. Sampling alone does not give a code, but it is required for the conversion (Floyd 12-1).</p>"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "ADC là một \"thành phần dữ liệu tương tự\" (analog data component).",
+   "en": "An ADC is an analog data component."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: ADC là bộ chuyển đổi tương tự sang số.",
+   "en": "False: an ADC is an analog-to-digital converter."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #2 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #2 (answer p.738)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hiện tượng chồng phổ (aliasing) là yếu tố mong muốn khi lấy mẫu.",
+   "en": "Aliasing is a desired factor in sampling."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: aliasing là méo không mong muốn, được loại bằng bộ lọc thông thấp chống chồng phổ.",
+   "en": "False: aliasing is unwanted distortion, removed by a low-pass anti-aliasing filter."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #3 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #3 (answer p.738)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Với cùng một tín hiệu tương tự, tần số lấy mẫu cao hơn cho kết quả chính xác hơn.",
+   "en": "A higher sampling rate is more accurate than a lower sampling rate for a given analog signal."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng: càng nhiều mẫu thì dạng sóng càng được xác định chính xác.",
+   "en": "True: the more samples, the more accurately the waveform is defined."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #4 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #4 (answer p.738)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "\"Successful approximation\" (xấp xỉ thành công) là một phương pháp chuyển đổi A/D.",
+   "en": "Successful approximation is an analog-to-digital conversion method."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai theo khoá của Floyd: tên đúng là successive approximation (xấp xỉ liên tiếp); đề in \"Successful\".",
+   "en": "False in Floyd's key: the correct name is successive approximation; the item prints \"Successful\"."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #6 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #6 (answer p.738)"
+  },
+  "detail": {
+   "vi": "<p>Câu này là một lỗi chữ trong sách: đề in \"Successful\" thay vì \"Successive\". Khoá in là F, nghĩa là phương pháp tên \"successful approximation\" không tồn tại. Phương pháp thật là xấp xỉ liên tiếp (successive approximation), có trong Floyd 12-2.</p>",
+   "en": "<p>A typo in the book: the item prints \"Successful\" instead of \"Successive\". The printed key is F, meaning a method called \"successful approximation\" does not exist. The real method is successive approximation, in Floyd 12-2.</p>"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Điều chế delta dựa trên hiệu của hai mẫu liên tiếp.",
+   "en": "Delta modulation is based on the difference of two successive samples."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng (sigma-delta, Floyd 12-2): lượng tử hoá độ chênh, 1 bit.",
+   "en": "True (sigma-delta, Floyd 12-2): the difference is quantised, 1 bit."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #7 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #7 (answer p.738)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hai loại DAC là DAC đầu vào trọng số nhị phân và DAC thang R/2R.",
+   "en": "Two types of DAC are the binary-weighted input and the R/2R ladder."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng (Floyd 12-3, tóm tắt chương).",
+   "en": "True (Floyd 12-3, chapter summary)."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #8 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #8 (answer p.738)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Quá trình chuyển một giá trị tương tự thành mã gọi là lượng tử hoá.",
+   "en": "The process of converting an analog value to a code is called quantization."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng (Floyd 12-1).",
+   "en": "True (Floyd 12-1)."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #9 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #9 (answer p.738)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "ADC flash khác với ADC đồng thời (simultaneous).",
+   "en": "A flash ADC differs from a simultaneous ADC."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: flash và simultaneous là hai tên của cùng một kiểu.",
+   "en": "False: flash and simultaneous are two names for the same type."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · True/False #10 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · True/False #10 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Loại nào sau đây KHÔNG phải là một kiểu ADC?",
+   "en": "Which of the following is not a type of ADC?"
+  },
+  "opts": [
+   {
+    "vi": "ADC flash",
+    "en": "Flash ADC"
+   },
+   {
+    "vi": "ADC hai dốc",
+    "en": "Dual slope ADC"
+   },
+   {
+    "vi": "ADC xấp xỉ \"lùi\" (recessive)",
+    "en": "Recessive approximation ADC"
+   },
+   {
+    "vi": "ADC sigma-delta",
+    "en": "sigma-delta ADC"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Có xấp xỉ liên tiếp (successive), không có \"recessive\".",
+   "en": "There is successive approximation, not \"recessive\"."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #1 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #1 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DAC là viết tắt của:",
+   "en": "A DAC is a:"
+  },
+  "opts": [
+   {
+    "vi": "máy tính tương tự sang số",
+    "en": "digital-to-analog computer"
+   },
+   {
+    "vi": "máy tính phân tích số",
+    "en": "digital analysis calculator"
+   },
+   {
+    "vi": "bộ chuyển đổi tích luỹ dữ liệu",
+    "en": "data accumulation converter"
+   },
+   {
+    "vi": "bộ chuyển đổi số sang tương tự",
+    "en": "digital-to-analog converter"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "DAC = digital-to-analog converter.",
+   "en": "DAC = digital-to-analog converter."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #2 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #2 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hiện tượng chồng phổ (aliasing) là kết quả của:",
+   "en": "Aliasing results in:"
+  },
+  "opts": [
+   {
+    "vi": "lấy mẫu quá mức",
+    "en": "oversampling"
+   },
+   {
+    "vi": "lấy mẫu dưới mức (undersampling)",
+    "en": "undersampling"
+   },
+   {
+    "vi": "tạo dải bảo vệ",
+    "en": "guard-band formation"
+   },
+   {
+    "vi": "lấy mẫu hoàn hảo",
+    "en": "perfect sampling"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Alias xuất hiện khi tần số lấy mẫu thấp hơn hai lần tần số tín hiệu.",
+   "en": "An alias appears when the sampling frequency is below twice the signal frequency."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #3 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #3 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo định lý lấy mẫu, tần số lấy mẫu nên:",
+   "en": "According to the sampling theorem, the sampling frequency should be:"
+  },
+  "opts": [
+   {
+    "vi": "nhỏ hơn một nửa tần số tín hiệu cao nhất",
+    "en": "less than half the highest signal frequency"
+   },
+   {
+    "vi": "lớn hơn hai lần tần số tín hiệu cao nhất",
+    "en": "greater than twice the highest signal frequency"
+   },
+   {
+    "vi": "nhỏ hơn một nửa tần số tín hiệu thấp nhất",
+    "en": "less than half the lowest signal frequency"
+   },
+   {
+    "vi": "lớn hơn tần số tín hiệu thấp nhất",
+    "en": "greater than the lowest signal frequency"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$f_{sample}\\geq 2f_{a(max)}$; trong thực tế nên lớn hơn.",
+   "en": "$f_{sample}\\geq 2f_{a(max)}$; in practice it should be greater."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #4 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #4 (answer p.738)"
+  },
+  "detail": {
+   "vi": "<p>Floyd Phương trình 12-1: tần số lấy mẫu ít nhất bằng hai lần thành phần tần số cao nhất của tín hiệu tương tự, gọi là tần số Nyquist. Lớp chữ của PDF làm mất dấu $\\geq$; ảnh trang xác nhận. Thực tế nên chọn lớn hơn 2 lần.</p>",
+   "en": "<p>Floyd Equation 12-1: the sampling frequency must be at least twice the highest frequency component of the analog signal, the Nyquist frequency. The PDF text layer lost the $\\geq$ sign; the page image confirms it. In practice choose more than twice.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Op-amp là một bộ khuếch đại tuyến tính có:",
+   "en": "An op-amp is a linear amplifier which has:"
+  },
+  "opts": [
+   {
+    "vi": "một ngõ vào, một ngõ ra",
+    "en": "one input and one output"
+   },
+   {
+    "vi": "một ngõ vào, hai ngõ ra",
+    "en": "one input and two outputs"
+   },
+   {
+    "vi": "hai ngõ vào, một ngõ ra",
+    "en": "two inputs and one output"
+   },
+   {
+    "vi": "hai ngõ vào, hai ngõ ra",
+    "en": "two inputs and two outputs"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Hai ngõ vào (đảo, không đảo), một ngõ ra.",
+   "en": "Two inputs (inverting, non-inverting), one output."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #5 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #5 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Quá trình lượng tử hoá:",
+   "en": "The quantization process:"
+  },
+  "opts": [
+   {
+    "vi": "đổi ngõ ra mạch lấy mẫu-giữ thành mã nhị phân",
+    "en": "converts the sample-and-hold output to binary code"
+   },
+   {
+    "vi": "đổi một xung lấy mẫu thành một mức",
+    "en": "converts a sample impulse to a level"
+   },
+   {
+    "vi": "đổi chuỗi mã nhị phân thành tín hiệu tương tự dựng lại",
+    "en": "converts a sequence of binary codes to a reconstructed analog signal"
+   },
+   {
+    "vi": "lọc bỏ tần số không mong muốn trước khi lấy mẫu",
+    "en": "filters out unwanted frequencies before sampling takes place"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phương án 3 là việc của DAC, phương án 4 là việc của bộ lọc chống chồng phổ.",
+   "en": "Option 3 is the DAC's job, option 4 is the anti-aliasing filter's job."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #6 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #6 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nói chung, tín hiệu tương tự được dựng lại chính xác hơn khi có:",
+   "en": "Generally, an analog signal can be reconstructed more accurately with:"
+  },
+  "opts": [
+   {
+    "vi": "nhiều mức lượng tử hơn",
+    "en": "more quantization levels"
+   },
+   {
+    "vi": "ít mức lượng tử hơn",
+    "en": "fewer quantization levels"
+   },
+   {
+    "vi": "tần số lấy mẫu cao hơn",
+    "en": "a higher sampling frequency"
+   },
+   {
+    "vi": "tần số lấy mẫu thấp hơn",
+    "en": "a lower sampling frequency"
+   },
+   {
+    "vi": "phương án (a) hoặc (c)",
+    "en": "either answer (a) or (c)"
+   }
+  ],
+  "correct": 4,
+  "explain": {
+   "vi": "Cả nhiều mức hơn lẫn lấy mẫu nhanh hơn đều cải thiện.",
+   "en": "Both more levels and faster sampling improve it."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #7 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #7 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thông lượng (throughput) của ADC flash được đo bằng:",
+   "en": "The throughput of a flash ADC is measured in:"
+  },
+  "opts": [
+   {
+    "vi": "độ dời trên giây",
+    "en": "displacement per second"
+   },
+   {
+    "vi": "quãng đường trên giây",
+    "en": "distance per second"
+   },
+   {
+    "vi": "mẫu trên phút",
+    "en": "samples per minute"
+   },
+   {
+    "vi": "mẫu trên giây",
+    "en": "samples per second"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Đơn vị: sps (samples per second).",
+   "en": "Unit: sps (samples per second)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #8 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #8 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vôn kế số dùng:",
+   "en": "A digital voltmeter uses a:"
+  },
+  "opts": [
+   {
+    "vi": "ADC flash",
+    "en": "flash ADC"
+   },
+   {
+    "vi": "ADC xấp xỉ liên tiếp",
+    "en": "successive approximation ADC"
+   },
+   {
+    "vi": "ADC sigma-delta",
+    "en": "sigma-delta ADC"
+   },
+   {
+    "vi": "ADC hai dốc",
+    "en": "dual-slope ADC"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Hai dốc: chính xác, chống nhiễu, chậm; hợp đo lường.",
+   "en": "Dual slope: accurate, noise-rejecting, slow; suits measurement."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #9 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #9 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ADC phổ biến nhất trong viễn thông cho tín hiệu âm thanh là:",
+   "en": "The most common ADC seen in telecommunications based on audio signals is:"
+  },
+  "opts": [
+   {
+    "vi": "ADC flash",
+    "en": "flash ADC"
+   },
+   {
+    "vi": "ADC xấp xỉ liên tiếp",
+    "en": "successive approximation ADC"
+   },
+   {
+    "vi": "ADC sigma-delta",
+    "en": "sigma-delta ADC"
+   },
+   {
+    "vi": "ADC hai dốc",
+    "en": "dual-slope ADC"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Sigma-delta (Floyd 12-2).",
+   "en": "Sigma-delta (Floyd 12-2)."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #10 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #10 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong DAC trọng số nhị phân, điện trở có giá trị nhỏ nhất ứng với:",
+   "en": "In a binary weighted DAC, the lowest-value resistor corresponds to:"
+  },
+  "opts": [
+   {
+    "vi": "đầu vào có trọng số nhị phân cao nhất",
+    "en": "the highest binary weighted input"
+   },
+   {
+    "vi": "đầu vào có trọng số nhị phân thấp nhất",
+    "en": "the lowest binary weighted input"
+   },
+   {
+    "vi": "đầu vào thứ nhất",
+    "en": "the first input"
+   },
+   {
+    "vi": "đầu vào cuối cùng",
+    "en": "the last input"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Điện trở R ứng với $2^3$ (MSB); 2R, 4R, 8R ứng với các bit thấp hơn.",
+   "en": "Resistor R matches $2^3$ (MSB); 2R, 4R, 8R match the lower bits."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Self-Test #11 (đáp án tr.738)",
+   "en": "Floyd Ch.12 · Self-Test #11 (answer p.738)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thành phần cao nhất của một tín hiệu tương tự là 20 kHz. Tần số lấy mẫu tối thiểu là:",
+   "en": "The highest frequency component in an analog signal is 20 kHz. The minimum sampling frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "40 kHz",
+    "en": "40 kHz"
+   },
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "80 kHz",
+    "en": "80 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_s\\geq 2\\times20=40$ kHz.",
+   "en": "$f_s\\geq 2\\times20=40$ kHz."
+  },
+  "topic": {
+   "vi": "Lấy mẫu, Nyquist, lượng tử hoá",
+   "en": "Sampling, Nyquist, quantisation"
+  },
+  "topic_id": "sampling",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Section 12-1 Checkup #3 (đáp án tr.737)",
+   "en": "Floyd Ch.12 · Section 12-1 Checkup #3 (answer p.737)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phương pháp chuyển đổi A/D nào tạo ra luồng dữ liệu một bit?",
+   "en": "Which analog-to-digital conversion method produces a single-bit data stream?"
+  },
+  "opts": [
+   {
+    "vi": "flash",
+    "en": "flash"
+   },
+   {
+    "vi": "hai dốc",
+    "en": "dual-slope"
+   },
+   {
+    "vi": "xấp xỉ liên tiếp",
+    "en": "successive-approximation"
+   },
+   {
+    "vi": "sigma-delta",
+    "en": "sigma-delta"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Sigma-delta (điều chế delta, 1 bit); số bit 1 trong một khoảng cho biết biên độ.",
+   "en": "Sigma-delta (delta modulation, 1 bit); the count of 1s over an interval gives the amplitude."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Section 12-2 Checkup #2 (đáp án tr.737)",
+   "en": "Floyd Ch.12 · Section 12-2 Checkup #2 (answer p.737)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ba loại lỗi ngõ ra của ADC được Floyd nêu là:",
+   "en": "The ADC output errors named by Floyd are:"
+  },
+  "opts": [
+   {
+    "vi": "mã bị thiếu, mã sai và độ lệch (offset)",
+    "en": "missing code, incorrect code and offset"
+   },
+   {
+    "vi": "mã dư, mã trễ và nhiễu",
+    "en": "extra code, late code and noise"
+   },
+   {
+    "vi": "méo, trễ và chồng phổ",
+    "en": "distortion, delay and aliasing"
+   },
+   {
+    "vi": "độ lợi cao, độ lợi thấp và đơn điệu",
+    "en": "high gain, low gain and monotonic"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd Hình 12-24 và Checkup 12-2 câu 4.",
+   "en": "Floyd Figure 12-24 and Checkup 12-2 question 4."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Section 12-2 Checkup #4 (đáp án tr.737)",
+   "en": "Floyd Ch.12 · Section 12-2 Checkup #4 (answer p.737)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong thử nghiệm DAC, các bước đi ngược (step reversal) cho biết:",
+   "en": "In a DAC test, a step reversal indicates:"
+  },
+  "opts": [
+   {
+    "vi": "hoạt động không đơn điệu (nonmonotonic)",
+    "en": "nonmonotonic behavior"
+   },
+   {
+    "vi": "độ lợi thấp",
+    "en": "low gain"
+   },
+   {
+    "vi": "độ lệch ngõ ra",
+    "en": "output offset"
+   },
+   {
+    "vi": "tần số lấy mẫu thấp",
+    "en": "a low sampling frequency"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đơn điệu nghĩa là không có bước lùi khi quét toàn bộ dải mã.",
+   "en": "Monotonic means no reverse steps over the whole code range."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Section 12-3 Checkup #3 (đáp án tr.737)",
+   "en": "Floyd Ch.12 · Section 12-3 Checkup #3 (answer p.737)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi DAC có độ lợi thấp, biên độ các bước:",
+   "en": "With low gain in a DAC, the step amplitudes are:"
+  },
+  "opts": [
+   {
+    "vi": "nhỏ hơn lý tưởng",
+    "en": "less than ideal"
+   },
+   {
+    "vi": "lớn hơn lý tưởng",
+    "en": "greater than ideal"
+   },
+   {
+    "vi": "bằng lý tưởng nhưng lệch gốc",
+    "en": "ideal but shifted"
+   },
+   {
+    "vi": "đảo chiều",
+    "en": "reversed"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Độ lợi thấp: mọi bước nhỏ hơn; độ lợi cao: mọi bước lớn hơn.",
+   "en": "Low gain: all steps smaller; high gain: all steps larger."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Section 12-3 Checkup #4 (đáp án tr.737)",
+   "en": "Floyd Ch.12 · Section 12-3 Checkup #4 (answer p.737)"
+  }
+ }
+]
