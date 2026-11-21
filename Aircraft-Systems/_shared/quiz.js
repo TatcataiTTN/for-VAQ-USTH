@@ -1,87 +1,39 @@
+/* Quick quiz in a module page: click = graded at once, explanation always shown, retry per question / all. Plain text only. */
 (function(){
-  const LANG = document.documentElement.lang === 'en' ? 'en' : 'vi';
-  const L = {
-    vi: {restart: '↺ Làm lại từ đầu', score: 'Điểm', confirm: 'Bạn đã trả lời một số câu, bạn có chắc muốn làm lại từ đầu không?',
-         moreDetail: 'Xem giải thích đầy đủ', answered: 'đã làm'},
-    en: {restart: '↺ Restart', score: 'Score', confirm: 'You have answered some questions already. Restart from the beginning?',
-         moreDetail: 'Show full explanation', answered: 'answered'}
-  }[LANG];
-
-  document.querySelectorAll('.quiz').forEach(function(quizEl){
-    const dataEl = quizEl.querySelector('script[type="application/json"]');
-    if (!dataEl) return;
-    const Q = JSON.parse(dataEl.textContent);
-    const root = quizEl.querySelector('.quiz-root') || (function(){
-      const r = document.createElement('div'); r.className = 'quiz-root'; quizEl.appendChild(r); return r;
-    })();
-    let scoreBar = quizEl.querySelector('.quiz-score');
-    if (!scoreBar){ scoreBar = document.createElement('div'); scoreBar.className='quiz-score'; quizEl.insertBefore(scoreBar, root); }
-    let answered = 0, score = 0;
-
-    function updateScore(){
-      const suffix = answered < Q.items.length ? ` (${answered}/${Q.items.length} ${L.answered})` : '';
-      scoreBar.textContent = `${L.score}: ${score}/${Q.items.length}${suffix}`;
-    }
-
+  document.querySelectorAll('script.quiz-data').forEach(function(dataEl){
+    var Q=JSON.parse(dataEl.textContent);var root=document.getElementById(dataEl.getAttribute('data-root'));if(!root)return;
+    var key='ae2021:quiz:'+location.pathname+':'+dataEl.getAttribute('data-root');
     function build(){
-      root.innerHTML = '';
-      score = 0; answered = 0;
-      Q.items.forEach((q, qi) => {
-        const box = document.createElement('div'); box.className = 'qitem';
-        const head = document.createElement('div');
-        head.innerHTML = `<b>${qi+1}. ${q.q}</b>`;
-        if (q.src) { const s = document.createElement('div'); s.className='pill'; s.style.marginTop='4px'; s.textContent = q.src; head.appendChild(s); }
-        box.appendChild(head);
-        if (q.img) {
-          const img = document.createElement('img');
-          img.src = q.img; img.alt = q.src || ('Question ' + (qi+1));
-          img.style.cssText = 'max-width:100%;max-height:340px;display:block;margin:10px 0;border:1px solid var(--border);border-radius:8px;background:#fff;padding:6px';
-          box.appendChild(img);
-        }
-        const explain = document.createElement('div');
-        explain.className = 'explain'; explain.textContent = q.explain || '';
-        let detailsEl = null;
-        if (q.detail) {
-          detailsEl = document.createElement('details');
-          detailsEl.className = 'explain-detail';
-          const summary = document.createElement('summary');
-          summary.textContent = L.moreDetail;
-          const body = document.createElement('div');
-          body.className = 'explain-detail-body';
-          body.innerHTML = q.detail;
-          detailsEl.appendChild(summary); detailsEl.appendChild(body);
-        }
-        q.opts.forEach((opt, oi) => {
-          const b = document.createElement('button'); b.type='button'; b.className = 'opt'; b.textContent = opt;
-          b.addEventListener('click', () => {
-            if (box.dataset.done) return;
-            box.dataset.done = '1'; answered++;
-            [...box.querySelectorAll('.opt')].forEach(x => x.disabled = true);
-            const correct = oi === q.correct;
-            b.classList.add(correct ? 'correct' : 'wrong');
-            if (!correct) box.querySelectorAll('.opt')[q.correct]?.classList.add('correct');
-            explain.classList.add('show');
-            if (detailsEl) detailsEl.classList.add('show');
-            if (correct) score++;
-            updateScore();
-          });
-          box.appendChild(b);
+      root.innerHTML='';var score=0,done=0;
+      var bar=document.createElement('div');bar.className='quiz-score';root.appendChild(bar);
+      function upd(){bar.textContent=T.score+': '+score+'/'+Q.items.length+'  ('+done+'/'+Q.items.length+' '+T.done+')';try{localStorage.setItem(key,JSON.stringify({score:score,done:done,n:Q.items.length}))}catch(e){}}
+      Q.items.forEach(function(q,qi){
+        var box=document.createElement('div');box.className='qitem';
+        var t=document.createElement('div');t.className='qtxt';var b=document.createElement('b');b.textContent=(qi+1)+'. ';t.appendChild(b);t.appendChild(document.createTextNode(q.q));box.appendChild(t);
+        if(q.fig){var im=document.createElement('img');im.className='qfig';im.src=q.fig;im.loading='lazy';box.appendChild(im)}if(q.src){var s=document.createElement('div');s.className='srcnote';s.textContent='📎 '+q.src;box.appendChild(s)}
+        var ex=document.createElement('div');ex.className='explain';ex.textContent=q.explain||'';
+        q.opts.forEach(function(opt,oi){
+          var btn=document.createElement('button');btn.type='button';btn.className='opt';btn.textContent=LETTERS[oi]+'. '+opt;
+          btn.addEventListener('click',function(){
+            if(btn.dataset.done)return;
+            [].forEach.call(box.querySelectorAll('.opt'),function(x){x.dataset.done='1'});
+            var ok=oi===q.correct;btn.classList.add(ok?'correct':'wrong');
+            if(!ok)box.querySelectorAll('.opt')[q.correct].classList.add('correct');
+            var head=document.createElement('div');head.style.fontWeight='800';head.textContent=ok?T.correct:T.wrongAns+LETTERS[q.correct]+'.';
+            ex.insertBefore(head,ex.firstChild);ex.classList.add('show');if(ok)score++;done++;box.dataset.ok=ok?'1':'0';upd();
+          });box.appendChild(btn);
         });
-        box.appendChild(explain);
-        if (detailsEl) box.appendChild(detailsEl);
-        root.appendChild(box);
+        var rb=document.createElement('button');rb.type='button';rb.className='btn alt';rb.style.marginTop='6px';rb.textContent=T.retryOne;
+        rb.addEventListener('click',function(){
+          if(!box.querySelector('.opt[data-done]'))return;
+          if(box.dataset.ok==='1')score--;done--;delete box.dataset.ok;
+          [].forEach.call(box.querySelectorAll('.opt'),function(x){x.classList.remove('correct','wrong');delete x.dataset.done});
+          ex.classList.remove('show');ex.textContent=q.explain||'';upd();});
+        box.appendChild(ex);box.appendChild(rb);root.appendChild(box);
       });
-      updateScore();
-    }
-    let restartBtn = quizEl.querySelector('.quiz-restart');
-    if (!restartBtn){
-      restartBtn = document.createElement('button'); restartBtn.type='button'; restartBtn.className='quiz-restart';
-      restartBtn.textContent = L.restart;
-      restartBtn.addEventListener('click', () => {
-        if (answered > 0 && !window.confirm(L.confirm)) return;
-        build();
-      });
-      quizEl.appendChild(restartBtn);
+      var r=document.createElement('button');r.type='button';r.className='btn';r.textContent=T.retryAll;
+      r.addEventListener('click',function(){if(done>0&&!confirm(T.confirmAll))return;build();window.scrollTo({top:root.getBoundingClientRect().top+window.scrollY-70,behavior:'smooth'})});root.appendChild(r);
+      upd();
     }
     build();
   });

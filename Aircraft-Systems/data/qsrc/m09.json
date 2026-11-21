@@ -1,0 +1,732 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhiễu không tuần hoàn (aperiodic) là:",
+   "en": "Aperiodic noise is:"
+  },
+  "opts": [
+   {
+    "vi": "đều đặn nhưng không liên tục",
+    "en": "regular but not continuous"
+   },
+   {
+    "vi": "đều đặn và liên tục",
+    "en": "regular and continuous"
+   },
+   {
+    "vi": "hoàn toàn ngẫu nhiên",
+    "en": "entirely random in nature"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 14.4.2: tuần hoàn là lặp liên tục; không tuần hoàn là dự đoán được nhưng không liên tục; ngẫu nhiên là hoàn toàn không dự đoán được.",
+   "en": "Tooley 14.4.2: periodic is continuously repetitive; aperiodic is predictable but not continuous; random is totally unpredictable."
+  },
+  "topic": {
+   "vi": "Tín hiệu, phổ Fourier, máy phân tích phổ",
+   "en": "Signals, Fourier spectrum, spectrum analyser"
+  },
+  "topic_id": "spectrum",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tooley 14.4.2: nhiễu tuần hoàn lặp liên tục, nhiễu không tuần hoàn dự đoán được nhưng không liên tục (ví dụ xung đóng cắt), nhiễu ngẫu nhiên hoàn toàn không dự đoán được. Chữ a-periodic nghĩa là không có chu kỳ đều.</p><p>Thang: tuần hoàn > không tuần hoàn > ngẫu nhiên về độ dự đoán.</p>",
+   "en": "<p>Tooley 14.4.2: periodic noise repeats continuously, aperiodic noise is predictable but not continuous (for example switching pulses), random noise is totally unpredictable. A-periodic means no regular period.</p><p>Scale of predictability: periodic > aperiodic > random.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q1",
+   "en": "Tooley Ch.14 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EMI có thể truyền từ nguồn đến máy thu bằng:",
+   "en": "EMI can be conveyed from a source to a receiver by:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ bức xạ",
+    "en": "radiation only"
+   },
+   {
+    "vi": "cả dẫn điện và bức xạ",
+    "en": "conduction and radiation"
+   },
+   {
+    "vi": "chỉ dẫn điện",
+    "en": "conduction only"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Năng lượng có thể được dẫn qua dây và kết cấu kim loại, hoặc bức xạ qua không khí, nhựa, sợi thuỷ tinh (Tooley 14.4.1).",
+   "en": "The energy can be conducted through wiring and metallic structure, or radiated through air, plastic and fibreglass (Tooley 14.4.1)."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EMI truyền theo hai đường: dẫn điện qua dây và kết cấu kim loại, hoặc bức xạ qua không khí, nhựa, sợi thuỷ tinh. Phương án chỉ một đường bỏ sót đường còn lại, nên cả hai biện pháp cách ly (che chắn và lọc) đều cần.</p><p>Dẫn điện: lọc; bức xạ: che chắn.</p>",
+   "en": "<p>EMI travels by two routes: conduction through wiring and metallic structure, or radiation through air, plastic and fibreglass. The one-route options miss the other, so both countermeasures (screening and filtering) are needed.</p><p>Conducted: filter; radiated: screen.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q2",
+   "en": "Tooley Ch.14 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình của máy phân tích phổ hiển thị:",
+   "en": "The display produced by a spectrum analyser shows:"
+  },
+  "opts": [
+   {
+    "vi": "biên độ theo thời gian",
+    "en": "amplitude plotted against time"
+   },
+   {
+    "vi": "biên độ theo tần số",
+    "en": "amplitude plotted against frequency"
+   },
+   {
+    "vi": "tần số theo thời gian",
+    "en": "frequency plotted against time"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Máy phân tích phổ vẽ mức tín hiệu (biên độ) theo tần số; biên độ theo thời gian là dao động ký.",
+   "en": "A spectrum analyser plots signal level (amplitude) against frequency; amplitude against time is an oscilloscope."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Máy phân tích phổ vẽ biên độ (mức tín hiệu) theo tần số, nên thấy được từng thành phần nhiễu. Dao động ký mới vẽ biên độ theo thời gian. Không có thiết bị nào cho tần số theo thời gian như một đường đơn giản (đó là spectrogram).</p><p>Trục ngang: tần số.</p>",
+   "en": "<p>A spectrum analyser plots amplitude (signal level) against frequency, so each noise component can be seen. An oscilloscope plots amplitude against time. No simple instrument plots frequency against time (that is a spectrogram).</p><p>Horizontal axis: frequency.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q3",
+   "en": "Tooley Ch.14 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EMI có thể được giảm bằng:",
+   "en": "EMI can be reduced by means of:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ che chắn",
+    "en": "screening only"
+   },
+   {
+    "vi": "che chắn và lọc",
+    "en": "screening and filtering"
+   },
+   {
+    "vi": "che chắn, liên kết và lọc",
+    "en": "screening, bonding and filtering"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Cả ba nhóm biện pháp (che chắn, liên kết/nối đất, lọc) đều giảm EMI (Tooley 14.4.3, 14.6).",
+   "en": "All of screening, bonding/grounding and filtering reduce EMI (Tooley 14.4.3, 14.6)."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ba nhóm biện pháp giảm EMI là che chắn, liên kết/nối đất và lọc. Chỉ dùng một hay hai nhóm là không đầy đủ vì mỗi nhóm xử lý một đường truyền khác nhau.</p><p>Slide bài giảng cũng nêu thêm tách cáp và lõi ferrite.</p>",
+   "en": "<p>The three EMI countermeasure groups are screening, bonding/grounding and filtering. Using only one or two is incomplete because each handles a different path.</p><p>The lecture slides also add cable separation and ferrite cores.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q4",
+   "en": "Tooley Ch.14 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ảnh hưởng của HIRF có thể được giảm bằng:",
+   "en": "The effects of HIRF can be reduced by:"
+  },
+  "opts": [
+   {
+    "vi": "che chắn, liên kết và lọc",
+    "en": "screening, bonding and filtering"
+   },
+   {
+    "vi": "chỉ che chắn",
+    "en": "screening only"
+   },
+   {
+    "vi": "che chắn và lọc",
+    "en": "screening and filtering"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 14.6: nối đất và liên kết giúp giảm tác động của trường RF cường độ cao (HIRF) cùng với che chắn và lọc.",
+   "en": "Tooley 14.6: grounding and bonding help minimise the effects of high-intensity radio-frequency fields (HIRF), together with screening and filtering."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>HIRF được giảm bằng cùng bộ ba: che chắn, liên kết và lọc. Liên kết cho đường dòng điện trở kháng thấp, che chắn giữ trường ngoài khỏi dây, lọc loại bỏ phần lọt vào.</p><p>HIRF = trường RF cường độ cao từ bên ngoài.</p>",
+   "en": "<p>HIRF is reduced by the same trio: screening, bonding and filtering. Bonding provides a low-impedance current path, screening keeps the external field off the wiring, filtering removes what gets in.</p><p>HIRF = high-intensity radiated fields from outside.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q5",
+   "en": "Tooley Ch.14 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giá trị tối đa điển hình của điện trở liên kết là:",
+   "en": "The typical maximum value of bonding resistance is:"
+  },
+  "opts": [
+   {
+    "vi": "từ 0,005 Ω đến 0,05 Ω",
+    "en": "between 0.005 Ω and 0.05 Ω"
+   },
+   {
+    "vi": "trên 0,05 Ω",
+    "en": "more than 0.05 Ω"
+   },
+   {
+    "vi": "dưới 0,005 Ω",
+    "en": "less than 0.005 Ω"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Điện trở liên kết phải rất thấp (Tooley 14.6 ghi dưới 0,001 đến 0,003 Ω; slide bài giảng ghi 0,001 đến 0,003 Ω); phương án (a) là phương án phù hợp.",
+   "en": "Bonding resistance must be very low (Tooley 14.6 says below 0.001 to 0.003 Ω; the lecture slide says 0.001 to 0.003 Ω); option (a) is the one that fits."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Điện trở liên kết phải cực nhỏ (cỡ mili-ôm) để dòng sét và tĩnh điện chảy qua mà không tạo chênh lệch điện thế. Chỉ phương án \"dưới 0,005 Ω\" nằm trong khoảng hợp lý; hai phương án kia cho điện trở lớn hơn nhiều.</p><p>Cảnh báo: Tooley và bài giảng nêu ngưỡng khác nhau (0,001 đến 0,003 Ω) nên chỉ dùng mức độ lớn.</p>",
+   "en": "<p>Bonding resistance must be tiny (milliohm order) so lightning and static current flows without creating a potential difference. Only \"below 0.005 Ω\" is in a reasonable range; the other two give far larger resistances.</p><p>Warning: Tooley and the lecture quote different thresholds (0.001 to 0.003 Ω), so use only the order of magnitude.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q6",
+   "en": "Tooley Ch.14 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bảo vệ hiệu quả máy bay khỏi hư hại do sét và phóng tĩnh điện đòi hỏi:",
+   "en": "Effective protection against lightning and static discharge damage to an aircraft requires that:"
+  },
+  "opts": [
+   {
+    "vi": "mọi cáp nguồn và bus phải được cách điện tốt",
+    "en": "all power and bus cables must be well insulated"
+   },
+   {
+    "vi": "mọi phần dẫn điện bị cô lập có điện trở cao với đất",
+    "en": "all isolated conducting parts must have high resistance to ground"
+   },
+   {
+    "vi": "mọi phần của kết cấu kim loại phải được liên kết với đất",
+    "en": "all parts of the metal structure of the aircraft must be bonded to ground"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Phải có đường trở kháng thấp cho dòng sét và tĩnh điện: liên kết toàn bộ kết cấu kim loại, không để vật dẫn bị cô lập.",
+   "en": "A low-impedance path is needed for lightning and static current: bond the whole metal structure, leave no isolated conductors."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Phải liên kết mọi phần kết cấu kim loại với đất để có đường trở kháng thấp cho dòng sét và phóng tĩnh điện; vật dẫn bị cô lập có thể tích điện và phóng tia lửa. Cách điện cáp không giải quyết đường dòng điện.</p><p>Quy tắc: không để vật dẫn \"nổi\".</p>",
+   "en": "<p>All parts of the metal structure must be bonded to ground so there is a low-impedance path for lightning and static discharge current; an isolated conductor can charge up and spark. Cable insulation does not provide a current path.</p><p>Rule: no \"floating\" conductors.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q7",
+   "en": "Tooley Ch.14 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhiễu theo nguồn (supply-borne noise) có thể được loại bỏ bằng:",
+   "en": "Supply-borne noise can be eliminated by means of:"
+  },
+  "opts": [
+   {
+    "vi": "bộ lọc thông dải",
+    "en": "a band-pass filter"
+   },
+   {
+    "vi": "bộ lọc thông thấp",
+    "en": "a low-pass filter"
+   },
+   {
+    "vi": "bộ lọc thông cao",
+    "en": "a high-pass filter"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Nguồn là DC hoặc 400 Hz nên bộ lọc thông thấp giữ nguồn và chặn nhiễu tần cao.",
+   "en": "The supply is DC or 400 Hz, so a low-pass filter keeps the supply and blocks high-frequency noise."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Nguồn cấp là DC hoặc 400 Hz (tần số thấp) còn nhiễu theo nguồn ở tần số cao, nên bộ lọc thông thấp giữ nguồn và chặn nhiễu. Bộ thông cao và thông dải sẽ chặn nguồn.</p><p>Tần cắt RC: f = 1/(2πRC), ví dụ 1 kΩ và 100 nF cho 1,59 kHz.</p>",
+   "en": "<p>The supply is DC or 400 Hz (low frequency) while supply-borne noise is high frequency, so a low-pass filter keeps the supply and blocks the noise. High-pass and band-pass filters would block the supply.</p><p>RC cutoff: f = 1/(2πRC), for example 1 kΩ and 100 nF gives 1.59 kHz.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q8",
+   "en": "Tooley Ch.14 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhiễu do mạch đóng cắt sinh ra nặng hơn khi:",
+   "en": "Noise generated by a switching circuit is worse when:"
+  },
+  "opts": [
+   {
+    "vi": "đóng cắt chậm và dòng lớn",
+    "en": "switching is slow and current is high"
+   },
+   {
+    "vi": "đóng cắt nhanh và dòng lớn",
+    "en": "switching is fast and current is high"
+   },
+   {
+    "vi": "đóng cắt nhanh và dòng nhỏ",
+    "en": "switching is fast and current is low"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Năng lượng điện từ phát ra lớn hơn khi mức tín hiệu thay đổi nhiều và nhanh (Tooley 14.4.2).",
+   "en": "More electromagnetic energy is released when the change in signal level and its rate increase (Tooley 14.4.2)."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Phát xạ mạnh nhất khi mức tín hiệu thay đổi nhiều và nhanh: đóng cắt nhanh với dòng lớn cho di/dt cao. Đóng cắt chậm hay dòng nhỏ đều làm giảm phát xạ.</p><p>Chống: làm chậm cạnh xung, dùng tụ hay mạch snubber.</p>",
+   "en": "<p>Emission is strongest when the signal level changes a lot and fast: fast switching with a large current gives a high di/dt. Slow switching or small current both reduce emission.</p><p>Countermeasures: slow the edges, use capacitors or a snubber.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.14 Q9",
+   "en": "Tooley Ch.14 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Floyd, crosstalk được giảm thiểu bằng cách nào?",
+   "en": "According to Floyd, how is crosstalk minimised?"
+  },
+  "opts": [
+   {
+    "vi": "Dùng cáp xoắn đôi để các trường điện từ triệt tiêu",
+    "en": "Using twisted-pair cables so the fields cancel"
+   },
+   {
+    "vi": "Chỉ dùng dây dẫn trần để giảm điện dung",
+    "en": "Using bare wire only to cut capacitance"
+   },
+   {
+    "vi": "Chỉ dùng cáp có vỏ cách điện rất dày",
+    "en": "Using only cable with a very thick insulating jacket"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hai dây trong mỗi cặp xoắn sao cho cắt nhau gần 90° và triệt tiêu các trường điện từ do tín hiệu sinh ra.",
+   "en": "The two wires in each pair are twisted so that they cross at nearly 90° and cancel the electromagnetic fields generated by the signals."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai dây trong cặp xoắn cắt nhau gần 90° nên trường điện từ do tín hiệu của từng dây triệt tiêu, giảm crosstalk. Dây trần hoặc chỉ cách điện dày không làm triệt tiêu trường.</p><p>Self-Test 1 ở Module 08 hỏi cùng ý.</p>",
+   "en": "<p>The two wires of a twisted pair cross at nearly 90° so the fields from each wire's signal cancel, reducing crosstalk. Bare wire or thick insulation alone does not cancel fields.</p><p>Self-Test 1 in Module 08 asks the same thing.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1, Hình 13-4 (tr.741; Section Checkup)",
+   "en": "Floyd Ch.13 · section 13-1, Figure 13-4 (p.741; Section Checkup)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Loại cáp nào của Floyd bảo vệ tốt hơn trước EMI nhờ vỏ kim loại?",
+   "en": "Which Floyd cable type gives more EMI protection with a metal sleeve?"
+  },
+  "opts": [
+   {
+    "vi": "Cáp điện thoại thông thường",
+    "en": "Ordinary telephone wire"
+   },
+   {
+    "vi": "STP (xoắn đôi có bọc)",
+    "en": "STP (shielded twisted pair)"
+   },
+   {
+    "vi": "UTP (xoắn đôi không bọc)",
+    "en": "UTP (unshielded twisted pair)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd: STP bọc trong ống kim loại và bảo vệ tốt hơn trước EMI; UTP chỉ dùng ở môi trường ít nhiễu và tần số thấp hơn.",
+   "en": "Floyd: STP is encased in a metal sleeve and gives more protection from EMI; UTP is limited to low-noise environments and lower frequencies."
+  },
+  "topic": {
+   "vi": "Chuẩn EMC và DO-160",
+   "en": "EMC standards and DO-160"
+  },
+  "topic_id": "standards",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>STP có vỏ kim loại bao quanh nên bảo vệ tốt hơn trước EMI nhưng đắt và nặng hơn UTP. UTP dùng ở môi trường ít nhiễu và tần số thấp hơn (đến khoảng 1 MHz).</p><p>Chọn: nhiễu cao thì STP, ít nhiễu thì UTP.</p>",
+   "en": "<p>STP has a surrounding metal sleeve so it protects better against EMI but is costlier and heavier than UTP. UTP suits low-noise environments and lower frequencies (up to about 1 MHz).</p><p>Choose: high noise STP, low noise UTP.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1 (tr.741)",
+   "en": "Floyd Ch.13 · section 13-1 (p.741)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Gai dòng và áp trên VCC và đất trong mạch số được hấp thụ bằng cách nào?",
+   "en": "How are current and voltage spikes on the VCC and ground lines of digital circuits absorbed?"
+  },
+  "opts": [
+   {
+    "vi": "Tăng điện trở nguồn",
+    "en": "Increasing the supply resistance"
+   },
+   {
+    "vi": "Tụ tách (decoupling) nối VCC xuống đất",
+    "en": "Decoupling capacitors from VCC to ground"
+   },
+   {
+    "vi": "Rút ngắn xung nhịp",
+    "en": "Shortening the clock pulse"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd: dùng tụ khoảng 1 µF cho cả bo mạch và các tụ nhỏ 0,022 đến 0,1 µF rải rác gần thiết bị chuyển mạch nhanh.",
+   "en": "Floyd: use about a 1 µF capacitor for the whole board and small 0.022 to 0.1 µF capacitors distributed near fast-switching devices."
+  },
+  "topic": {
+   "vi": "Tín hiệu, phổ Fourier, máy phân tích phổ",
+   "en": "Signals, Fourier spectrum, spectrum analyser"
+  },
+  "topic_id": "spectrum",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mạch số chuyển mạch nhanh rút dòng xung từ nguồn nên VCC bị gai. Tụ tách nối VCC xuống đất cung cấp dòng cục bộ và hấp thụ gai; đặt gần chân nguồn của IC. Tăng điện trở nguồn làm gai tệ hơn.</p><p>Phối hợp: tụ khối 1 µF + tụ nhỏ 0,022 đến 0,1 µF.</p>",
+   "en": "<p>Fast-switching digital circuits draw pulses of current from the supply so VCC spikes. A decoupling capacitor from VCC to ground supplies local current and absorbs the spikes; place it close to the IC power pin. Raising the supply resistance makes spikes worse.</p><p>Combine: a 1 µF bulk capacitor with 0.022 to 0.1 µF small ones.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-11 (tr.364)",
+   "en": "Floyd Ch.6 · section 6-11 (p.364)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Noise margin mức CAO V_NH của cổng logic được định nghĩa là:",
+   "en": "The HIGH-level noise margin V_NH of a logic gate is defined as:"
+  },
+  "opts": [
+   {
+    "vi": "V_OH(min) − V_OL(max)",
+    "en": "V_OH(min) − V_OL(max)"
+   },
+   {
+    "vi": "V_IL(max) − V_OL(max)",
+    "en": "V_IL(max) − V_OL(max)"
+   },
+   {
+    "vi": "V_OH(min) − V_IH(min)",
+    "en": "V_OH(min) − V_IH(min)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Phương trình 15-1; V_NL = V_IL(max) − V_OL(max) là phương trình 15-2.",
+   "en": "Equation 15-1; V_NL = V_IL(max) − V_OL(max) is Equation 15-2."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Noise margin mức cao V_NH = V_OH(min) − V_IH(min): phần dư giữa mức cao tối thiểu mà cổng lái đưa ra và mức cao tối thiểu mà cổng nhận chấp nhận. Mức thấp là V_NL = V_IL(max) − V_OL(max). Hai phương án còn lại trộn các đại lượng sai.</p><p>Nhớ: lấy đầu ra trừ đầu vào ở cùng mức.</p>",
+   "en": "<p>The high-level noise margin V_NH = V_OH(min) − V_IH(min): the margin between the minimum high that the driving gate delivers and the minimum high the receiving gate accepts. The low level is V_NL = V_IL(max) − V_OL(max). The other options mix the wrong quantities.</p><p>Remember: output minus input at the same level.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.15 · mục 15-3 (tr.859)",
+   "en": "Floyd Ch.15 · section 15-3 (p.859)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng TTL có VIH(min) = 2,25 V và VIL(max) = 0,65 V, được lái bởi cổng có VOH(min) = 2,4 V và VOL(max) = 0,4 V. Noise margin mức CAO và THẤP là:",
+   "en": "A TTL gate has VIH(min) = 2.25 V and VIL(max) = 0.65 V and is driven by a gate with VOH(min) = 2.4 V and VOL(max) = 0.4 V. The HIGH- and LOW-level noise margins are:"
+  },
+  "opts": [
+   {
+    "vi": "0,15 V và 0,25 V",
+    "en": "0.15 V and 0.25 V"
+   },
+   {
+    "vi": "2,4 V và 0,4 V",
+    "en": "2.4 V and 0.4 V"
+   },
+   {
+    "vi": "0,35 V và 0,15 V",
+    "en": "0.35 V and 0.15 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V_NH = 2,4 − 2,25 = 0,15 V; V_NL = 0,65 − 0,4 = 0,25 V (khớp đáp án in).",
+   "en": "V_NH = 2.4 − 2.25 = 0.15 V; V_NL = 0.65 − 0.4 = 0.25 V (matches the printed answer)."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>V_NH = V_OH(min) − V_IH(min) = 2,4 − 2,25 = 0,15 V; V_NL = V_IL(max) − V_OL(max) = 0,65 − 0,4 = 0,25 V. 2,4 V và 0,4 V chỉ là mức đầu ra, không phải noise margin.</p><p>Noise margin nhỏ nghĩa là dễ bị nhiễu làm đổi mức.</p>",
+   "en": "<p>V_NH = V_OH(min) − V_IH(min) = 2.4 − 2.25 = 0.15 V; V_NL = V_IL(max) − V_OL(max) = 0.65 − 0.4 = 0.25 V. 2.4 V and 0.4 V are just output levels, not noise margins.</p><p>A small noise margin means noise can flip the level easily.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.15 · Bài 3 (tr.887; đáp án A-28)",
+   "en": "Floyd Ch.15 · Problem 3 (p.887; answer A-28)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng có V_IL(max) = 0,8 V được lái bởi cổng có V_OL(max) = 0,4 V. Noise margin mức THẤP là:",
+   "en": "A gate with V_IL(max) = 0.8 V is driven by a gate with V_OL(max) = 0.4 V. The LOW-level noise margin is:"
+  },
+  "opts": [
+   {
+    "vi": "1,2 V",
+    "en": "1.2 V"
+   },
+   {
+    "vi": "0,8 V",
+    "en": "0.8 V"
+   },
+   {
+    "vi": "0,4 V",
+    "en": "0.4 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "V_NL = V_IL(max) − V_OL(max) = 0,8 − 0,4 = 0,4 V.",
+   "en": "V_NL = V_IL(max) − V_OL(max) = 0.8 − 0.4 = 0.4 V."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đây là phương trình 15-2 của Floyd. Cộng thay vì trừ cho 1,2 V sai; 0,8 V chỉ là V_IL(max).</p><p>Noise margin là biên độ nhiễu lớn nhất có thể cộng vào mà cổng vẫn đọc đúng mức thấp.</p>",
+   "en": "<p>This is Floyd Equation 15-2. Adding instead of subtracting gives 1.2 V, which is wrong; 0.8 V is just V_IL(max).</p><p>The noise margin is the largest noise that can be added while the gate still reads a LOW correctly.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.15 · mục 15-3",
+   "en": "Floyd Ch.15 · section 15-3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng được lái có V_OH(min) = 2,4 V và cổng nhận có V_IH(min) = 2,0 V. Noise margin mức CAO là:",
+   "en": "A driving gate has V_OH(min) = 2.4 V and the receiving gate has V_IH(min) = 2.0 V. The HIGH-level noise margin is:"
+  },
+  "opts": [
+   {
+    "vi": "4,4 V",
+    "en": "4.4 V"
+   },
+   {
+    "vi": "2,0 V",
+    "en": "2.0 V"
+   },
+   {
+    "vi": "0,4 V",
+    "en": "0.4 V"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "V_NH = V_OH(min) − V_IH(min) = 2,4 − 2,0 = 0,4 V.",
+   "en": "V_NH = V_OH(min) − V_IH(min) = 2.4 − 2.0 = 0.4 V."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Phương trình 15-1: lấy đầu ra tối thiểu trừ đầu vào tối thiểu ở cùng mức cao. 4,4 V là tổng, vô nghĩa; 2,0 V chỉ là ngưỡng vào.</p>",
+   "en": "<p>Equation 15-1: minimum output minus minimum input at the same HIGH level. 4.4 V is a meaningless sum; 2.0 V is just the input threshold.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.15 · mục 15-3",
+   "en": "Floyd Ch.15 · section 15-3"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Cáp xoắn đôi giảm crosstalk vì các trường điện từ của hai dây triệt tiêu nhau.",
+   "en": "Twisted-pair cable reduces crosstalk because the fields from the two wires cancel."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai dây cắt nhau gần 90° nên từ thông do dòng ngược chiều triệt tiêu. Slide 29 cũng đặt dây xoắn hoặc bọc đầu tiên trong danh sách cải thiện EMC.</p>",
+   "en": "<p>The wires cross at nearly 90° so the flux from opposite currents cancels. Slide 29 also lists twisted or screened wires first among the EMC improvements.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1",
+   "en": "Floyd Ch.13 · section 13-1"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Tụ tách (decoupling) đặt xa chân nguồn của IC vẫn hiệu quả như đặt gần.",
+   "en": "A decoupling capacitor placed far from the IC's supply pin is just as effective as one placed close."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sai: phải đặt gần chân nguồn.",
+   "en": "False: it must be placed close to the supply pin."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Dây dài thêm điện cảm ký sinh nên tụ không cấp được dòng xung nhanh. Floyd 6-11 khuyên đặt các tụ nhỏ phân bố gần thiết bị chuyển mạch nhanh.</p>",
+   "en": "<p>A long lead adds parasitic inductance so the capacitor cannot supply fast current pulses. Floyd 6-11 recommends small capacitors distributed near the fast-switching devices.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-11",
+   "en": "Floyd Ch.6 · section 6-11"
+  }
+ }
+]

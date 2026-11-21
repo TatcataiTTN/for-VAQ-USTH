@@ -1,0 +1,2361 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 10101 tương ứng với số thập phân nào?",
+   "en": "The binary number 10101 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "35",
+    "en": "35"
+   },
+   {
+    "vi": "21",
+    "en": "21"
+   },
+   {
+    "vi": "19",
+    "en": "19"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "10101₂ = 1·16+0·8+1·4+0·2+1·1 = 21.",
+   "en": "10101₂ = 1·16+0·8+1·4+0·2+1·1 = 21."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cách làm nhanh: viết trọng số từng vị trí bit từ phải sang trái là 1, 2, 4, 8, 16 (luỹ thừa của 2), rồi cộng đúng những vị trí có bit bằng 1. Với 10101, các bit bằng 1 nằm ở vị trí trọng số 16, 4 và 1, nên tổng là 16+4+1=21.</p><p>Mẹo kiểm tra nhanh: một số nhị phân kết thúc bằng 1 luôn cho ra số lẻ; 21 là số lẻ nên khớp với chữ số cuối của 10101.</p>",
+   "en": "<p>Quick method: write the weight of each bit position from right to left as 1, 2, 4, 8, 16 (powers of two), then add only the positions where the bit is 1. In 10101, the bits set to 1 sit at weights 16, 4 and 1, so the total is 16+4+1=21.</p><p>A fast sanity check: a binary number ending in 1 is always odd; 21 is odd, which matches the last digit of 10101.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q1",
+   "en": "Tooley Ch.2 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 29 tương ứng với số nhị phân nào?",
+   "en": "The decimal number 29 is equivalent to the binary number:"
+  },
+  "opts": [
+   {
+    "vi": "11101",
+    "en": "11101"
+   },
+   {
+    "vi": "11011",
+    "en": "11011"
+   },
+   {
+    "vi": "10111",
+    "en": "10111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "29 = 16+8+4+1 → 11101₂.",
+   "en": "29 = 16+8+4+1 → 11101₂."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cách làm bằng phương pháp trừ dần trọng số lớn nhất: 29 ≥ 16 nên bit 16 = 1, còn lại 29-16=13; 13 ≥ 8 nên bit 8 = 1, còn lại 5; 5 ≥ 4 nên bit 4 = 1, còn lại 1; 1 không đủ 2 nên bit 2 = 0; cuối cùng bit 1 = 1. Ghép lại theo đúng thứ tự MSB đến LSB được 11101.</p><p>Cách khác thường dùng trong máy tính là chia liên tiếp cho 2 và ghi lại phần dư, đọc phần dư theo thứ tự ngược lại cũng cho cùng kết quả.</p>",
+   "en": "<p>One method is repeated subtraction of the largest available weight: 29 is at least 16, so the 16-bit is 1, leaving 13; 13 is at least 8, so the 8-bit is 1, leaving 5; 5 is at least 4, so the 4-bit is 1, leaving 1; 1 is less than 2, so the 2-bit is 0; finally the 1-bit is 1. Reading from MSB to LSB gives 11101.</p><p>The other common technique, repeated division by 2 while recording remainders, produces the same answer when the remainders are read in reverse order.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q2",
+   "en": "Tooley Ch.2 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bù hai (two's complement) của số nhị phân 10110 là:",
+   "en": "The two's complement of the binary number 10110 is:"
+  },
+  "opts": [
+   {
+    "vi": "01001",
+    "en": "01001"
+   },
+   {
+    "vi": "10001",
+    "en": "10001"
+   },
+   {
+    "vi": "01010",
+    "en": "01010"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đảo bit: 01001, cộng 1 → 01010.",
+   "en": "Invert the bits: 01001, add 1 → 01010."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bù hai gồm đúng hai bước: đảo toàn bộ bit (1 thành 0, 0 thành 1) để ra bù một, rồi cộng thêm 1 vào kết quả đó. Với 10110, đảo bit cho 01001, cộng 1 được 01010.</p><p>Bù hai là cách máy tính biểu diễn số âm để phép trừ có thể thực hiện bằng chính mạch cộng nhị phân, không cần mạch trừ riêng.</p>",
+   "en": "<p>Two's complement takes exactly two steps: invert every bit (1 becomes 0, 0 becomes 1) to get the one's complement, then add 1 to that result. For 10110, inverting gives 01001, and adding 1 gives 01010.</p><p>This representation lets a computer subtract using the same binary adder circuit it already has for addition, without needing a separate subtractor.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q3",
+   "en": "Tooley Ch.2 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số BCD 10010001 tương ứng với số thập phân nào?",
+   "en": "The BCD number 10010001 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "19",
+    "en": "19"
+   },
+   {
+    "vi": "145",
+    "en": "145"
+   },
+   {
+    "vi": "91",
+    "en": "91"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tách nhóm 4 bit: 1001=9, 0001=1 → 91.",
+   "en": "Split into 4-bit groups: 1001 = 9, 0001 = 1 → 91."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>BCD (binary coded decimal) mã hoá riêng từng chữ số thập phân bằng đúng 4 bit, khác với nhị phân thuần tuý vốn mã hoá cả con số. Muốn đọc ngược lại, chỉ cần tách chuỗi bit thành từng nhóm 4 bit rồi đổi mỗi nhóm sang một chữ số 0 đến 9. Với 10010001, nhóm đầu 1001 là 9, nhóm sau 0001 là 1, ghép lại thành 91.</p><p>Vì mỗi nhóm 4 bit BCD chỉ dùng 10 trong 16 tổ hợp có thể (0000 đến 1001), sáu tổ hợp còn lại (1010 đến 1111) không hợp lệ trong BCD.</p>",
+   "en": "<p>BCD (binary coded decimal) encodes each decimal digit separately using exactly 4 bits, unlike plain binary, which encodes the whole number at once. To decode it, split the bit string into groups of 4 and convert each group to a digit from 0 to 9. In 10010001, the first group 1001 is 9 and the second group 0001 is 1, giving 91.</p><p>Because each BCD group only uses 10 of the 16 possible 4-bit patterns (0000 through 1001), the remaining six patterns (1010 through 1111) are invalid in BCD.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q4",
+   "en": "Tooley Ch.2 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 37 tương ứng với mã BCD nào?",
+   "en": "The decimal number 37 is equivalent to the BCD number:"
+  },
+  "opts": [
+   {
+    "vi": "00110111",
+    "en": "00110111"
+   },
+   {
+    "vi": "00100101",
+    "en": "00100101"
+   },
+   {
+    "vi": "00101111",
+    "en": "00101111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "3→0011, 7→0111 → 00110111.",
+   "en": "3→0011, 7→0111 → 00110111."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Chuyển ngược lại với câu trên: mỗi chữ số thập phân được thay bằng đúng 4 bit nhị phân của nó. Số 37 có hai chữ số 3 và 7, đổi riêng từng chữ số được 0011 và 0111, ghép lại là 00110111.</p><p>Đây là lý do BCD được dùng phổ biến trên các bàn phím nhập liệu và màn hình 7 đoạn của thiết bị hàng không: mỗi phím số 0 đến 9 ứng thẳng với một mã 4 bit cố định, không cần mạch đổi cơ số phức tạp.</p>",
+   "en": "<p>This is the reverse of the previous question: each decimal digit is replaced by its own 4-bit binary code. The number 37 has the digits 3 and 7, which convert separately to 0011 and 0111, concatenated as 00110111.</p><p>This is why BCD is common on data-entry keypads and 7-segment displays in avionics equipment: each digit key 0 through 9 maps directly to a fixed 4-bit code, with no complex base-conversion circuitry needed.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q5",
+   "en": "Tooley Ch.2 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dãy số nào sau đây KHÔNG THỂ là một số bát phân (octal)?",
+   "en": "Which one of the following numbers could not be an octal number:"
+  },
+  "opts": [
+   {
+    "vi": "771",
+    "en": "771"
+   },
+   {
+    "vi": "11011",
+    "en": "11011"
+   },
+   {
+    "vi": "139",
+    "en": "139"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Số bát phân chỉ dùng chữ số 0-7; 139 chứa chữ số 9 nên không hợp lệ.",
+   "en": "An octal number uses only the digits 0-7; 139 contains the digit 9 so it is not valid."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một hệ đếm cơ số b chỉ được dùng các chữ số từ 0 đến b-1. Hệ bát phân có cơ số 8 nên chữ số hợp lệ chỉ gồm 0, 1, 2, 3, 4, 5, 6, 7. Trong ba phương án, 139 chứa chữ số 9, vượt quá giới hạn cho phép của hệ bát phân, nên không thể là một số bát phân hợp lệ.</p><p>Đây là cách kiểm tra nhanh áp dụng được cho mọi hệ đếm: chỉ cần nhìn xem có chữ số nào lớn hơn hoặc bằng cơ số hay không.</p>",
+   "en": "<p>A base-b number system only uses digits from 0 to b-1. Octal has base 8, so its valid digits are just 0, 1, 2, 3, 4, 5, 6 and 7. Of the three options, 139 contains the digit 9, which exceeds what octal allows, so it cannot be a valid octal number.</p><p>This quick check works for any number system: simply look for a digit that is greater than or equal to the base.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q6",
+   "en": "Tooley Ch.2 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số bát phân 73 tương ứng với số thập phân nào?",
+   "en": "The octal number 73 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "59",
+    "en": "59"
+   },
+   {
+    "vi": "111",
+    "en": "111"
+   },
+   {
+    "vi": "47",
+    "en": "47"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "73₈ = 7·8+3 = 59.",
+   "en": "73₈ = 7·8+3 = 59."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đổi một số bát phân sang thập phân theo đúng cách đổi trọng số vị trí, chỉ khác là cơ số dùng là 8 thay vì 10 hay 2. Số 73 trong hệ bát phân có chữ số 7 ở vị trí trọng số 8¹=8 và chữ số 3 ở vị trí 8⁰=1, nên giá trị thập phân là 7×8+3×1=59.</p><p>Hệ bát phân từng phổ biến trong các hệ thống máy tính cũ vì một chữ số bát phân đúng bằng 3 bit nhị phân, thuận tiện khi từ dữ liệu có độ dài chia hết cho 3.</p>",
+   "en": "<p>Converting an octal number to decimal follows the same positional-weight method, just with base 8 instead of 10 or 2. The number 73 in octal has digit 7 at weight 8¹=8 and digit 3 at weight 8⁰=1, so its decimal value is 7×8+3×1=59.</p><p>Octal was once common in older computer systems because one octal digit maps exactly to 3 binary bits, which was convenient when a data word length was a multiple of 3.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q7",
+   "en": "Tooley Ch.2 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 100010001 tương ứng với số bát phân nào?",
+   "en": "The binary number 100010001 is equivalent to the octal number:"
+  },
+  "opts": [
+   {
+    "vi": "421",
+    "en": "421"
+   },
+   {
+    "vi": "111",
+    "en": "111"
+   },
+   {
+    "vi": "273",
+    "en": "273"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhóm 3 bit từ phải: 100 010 001 → 4 2 1 → 421₈.",
+   "en": "Group 3 bits from the right: 100 010 001 → 4 2 1 → 421₈."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Vì 2³=8, mỗi chữ số bát phân tương ứng đúng với một nhóm 3 bit nhị phân. Muốn đổi nhị phân sang bát phân, chỉ cần nhóm chuỗi bit thành từng cụm 3 bit tính từ bit cuối cùng bên phải, rồi đổi mỗi cụm thành một chữ số 0 đến 7. Với 100010001, nhóm từ phải được 100, 010, 001, tương ứng 4, 2, 1, ghép lại thành 421₈.</p><p>Nếu số bit không chia hết cho 3, cần đệm thêm số 0 vào bên trái nhóm đầu tiên trước khi đổi.</p>",
+   "en": "<p>Because 2³=8, each octal digit corresponds exactly to a group of 3 binary bits. To convert binary to octal, group the bit string into clusters of 3 starting from the rightmost bit, then convert each cluster to a digit from 0 to 7. For 100010001, grouping from the right gives 100, 010, 001, which are 4, 2 and 1, combining to 421₈.</p><p>If the number of bits is not a multiple of 3, pad the leftmost group with leading zeros before converting.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q8",
+   "en": "Tooley Ch.2 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập lục phân (hex) 111 tương ứng với số bát phân nào?",
+   "en": "The hexadecimal number 111 is equivalent to the octal number:"
+  },
+  "opts": [
+   {
+    "vi": "421",
+    "en": "421"
+   },
+   {
+    "vi": "73",
+    "en": "73"
+   },
+   {
+    "vi": "273",
+    "en": "273"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "111₁₆ = 273₁₀; 273₁₀ = 421₈ (273 = 4·64+2·8+1).",
+   "en": "111₁₆ = 273₁₀; 273₁₀ = 421₈ (273 = 4·64+2·8+1)."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hex và bát phân không nhóm bit theo cùng một cách (hex dùng nhóm 4 bit, bát phân dùng nhóm 3 bit), nên không thể đổi thẳng từ hex sang bát phân bằng cách nhóm lại bit theo kiểu tương ứng 1-1. Cách an toàn luôn là đi qua bước trung gian nhị phân đầy đủ: đổi 111₁₆ sang thập phân được 273, rồi đổi 273 sang bát phân được 421₈.</p><p>Đây chính là bẫy hay gặp nhất khi mới học đổi cơ số: tưởng có thể ánh xạ trực tiếp giữa hai hệ đếm bất kỳ mà không qua nhị phân.</p>",
+   "en": "<p>Hex and octal do not group bits the same way (hex groups them in 4s, octal in 3s), so there is no direct 1-to-1 regrouping shortcut from hex to octal. The safe route always goes through full binary: converting 111₁₆ to decimal gives 273, and converting 273 to octal gives 421₈.</p><p>This is the most common trap for beginners: assuming any two number systems can be mapped directly into each other without going through binary first.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q9",
+   "en": "Tooley Ch.2 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số hex C9 tương ứng với số thập phân nào?",
+   "en": "The hexadecimal number C9 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "21",
+    "en": "21"
+   },
+   {
+    "vi": "129",
+    "en": "129"
+   },
+   {
+    "vi": "201",
+    "en": "201"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "C9₁₆ = 12·16+9 = 201.",
+   "en": "C9₁₆ = 12·16+9 = 201."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trong hex, các chữ cái A đến F thay cho giá trị 10 đến 15. Số C9 có C ở vị trí trọng số 16¹=16 (C=12) và 9 ở vị trí 16⁰=1, nên giá trị thập phân là 12×16+9×1=201.</p><p>Hex được ưa chuộng để hiển thị mã lỗi và địa chỉ bộ nhớ trên thiết bị hàng không chính vì một chữ số hex biểu diễn gọn đúng 4 bit, giúp chuỗi nhị phân dài trở nên ngắn và dễ đọc hơn hẳn.</p>",
+   "en": "<p>In hex, the letters A through F stand in for the values 10 through 15. The number C9 has C at weight 16¹=16 (C=12) and 9 at weight 16⁰=1, so its decimal value is 12×16+9×1=201.</p><p>Hex is favoured for displaying fault codes and memory addresses in avionics precisely because one hex digit compactly represents exactly 4 bits, turning a long binary string into something much shorter and easier to read.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q10",
+   "en": "Tooley Ch.2 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 10110011 tương ứng với số hex nào?",
+   "en": "The binary number 10110011 is equivalent to the hexadecimal number:"
+  },
+  "opts": [
+   {
+    "vi": "B3",
+    "en": "B3"
+   },
+   {
+    "vi": "93",
+    "en": "93"
+   },
+   {
+    "vi": "113",
+    "en": "113"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhóm 4 bit: 1011=B, 0011=3 → B3.",
+   "en": "Group 4 bits: 1011 = B, 0011 = 3 → B3."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Vì 2⁴=16, mỗi chữ số hex tương ứng đúng với một nhóm 4 bit. Nhóm chuỗi nhị phân thành từng cụm 4 bit từ phải sang trái rồi đổi từng cụm sang một ký tự hex. Với 10110011, nhóm được 1011 và 0011, tương ứng B và 3, ghép lại thành B3.</p><p>Cách nhóm 4 bit này chính là lý do hex được dùng làm ngôn ngữ tốc ký chuẩn cho nhị phân trong lập trình và tài liệu kỹ thuật số.</p>",
+   "en": "<p>Because 2⁴=16, each hex digit corresponds exactly to a group of 4 bits. Group the binary string into clusters of 4 from right to left, then convert each cluster to a hex character. For 10110011, grouping gives 1011 and 0011, which are B and 3, combining to B3.</p><p>This 4-bit grouping is exactly why hex serves as the standard shorthand for binary throughout programming and technical documentation.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q11",
+   "en": "Tooley Ch.2 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số hex AD tương ứng với số nhị phân nào?",
+   "en": "The hexadecimal number AD is equivalent to the binary number:"
+  },
+  "opts": [
+   {
+    "vi": "11011010",
+    "en": "11011010"
+   },
+   {
+    "vi": "10101101",
+    "en": "10101101"
+   },
+   {
+    "vi": "10001101",
+    "en": "10001101"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "A=1010, D=1101 → 10101101.",
+   "en": "A=1010, D=1101 → 10101101."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đổi ngược lại với câu trên: mỗi ký tự hex được thay bằng đúng 4 bit nhị phân tương ứng của nó. Ký tự A ứng với 1010, ký tự D ứng với 1101, ghép lại được 10101101.</p><p>Bảng quy đổi 0 đến F sang 4 bit nên được học thuộc vì nó là thao tác lặp lại thường xuyên nhất khi làm việc với địa chỉ bộ nhớ và mã lỗi trên thiết bị số.</p>",
+   "en": "<p>This reverses the previous question: each hex character is replaced by its own 4-bit binary code. The character A corresponds to 1010 and D corresponds to 1101, combining to 10101101.</p><p>The mapping table from 0 through F to 4 bits is worth memorising, since it is the single most frequently repeated operation when working with memory addresses and fault codes on digital equipment.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q12",
+   "en": "Tooley Ch.2 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số bát phân 706₈ tương ứng với:",
+   "en": "The number 706₈ is equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "111001110₂",
+    "en": "111001110₂"
+   },
+   {
+    "vi": "1C6₁₆",
+    "en": "1C6₁₆"
+   },
+   {
+    "vi": "484₁₀",
+    "en": "484₁₀"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "706₈ = 7·64+0·8+6 = 454₁₀ = 1C6₁₆ (1·256+12·16+6=454). Nhị phân đúng của 454 là 111000110, không phải phương án (b).",
+   "en": "706₈ = 7·64+0·8+6 = 454₁₀ = 1C6₁₆ (1·256+12·16+6 = 454). The correct binary form of 454 is 111000110, not option (b)."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Câu này cố ý gài bẫy ở phương án (b): 111001110₂ trông giống nhưng KHÔNG bằng 454. Cách kiểm tra chắc chắn nhất là đổi 706₈ sang thập phân trước (7×64+0×8+6=454), rồi từ 454 đổi tiếp sang từng cơ số còn lại để so sánh: 454 đổi sang hex là 1C6 (1×256+12×16+6=454, khớp phương án a), còn đổi sang nhị phân đúng là 111000110 (256+128+64+4+2=454), không khớp với chuỗi 111001110 ở phương án (b).</p><p>Bài học rút ra: khi các phương án nhìn gần giống nhau, luôn tính lại bằng số thập phân trung gian thay vì so sánh trực quan hai chuỗi bit.</p>",
+   "en": "<p>This question deliberately sets a trap in option (b): 111001110₂ looks similar but is NOT equal to 454. The safest check is to convert 706₈ to decimal first (7×64+0×8+6=454), then convert 454 into each remaining base to compare: 454 in hex is 1C6 (1×256+12×16+6=454, matching option a), while the correct binary form is 111000110 (256+128+64+4+2=454), which does not match the 111001110 string in option (b).</p><p>The lesson here: when answer choices look nearly identical, always recompute through a decimal intermediate value rather than eyeballing two bit strings against each other.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.2 Q13",
+   "en": "Tooley Ch.2 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đổi số bát phân 54 sang thập lục phân:",
+   "en": "When expressed in hexadecimal an octal value of 54 is the same as:"
+  },
+  "opts": [
+   {
+    "vi": "2F",
+    "en": "2F"
+   },
+   {
+    "vi": "4F",
+    "en": "4F"
+   },
+   {
+    "vi": "2C",
+    "en": "2C"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "54₈ = 5·8+4 = 44₁₀ = 2C₁₆ (2·16+12=44).",
+   "en": "54₈ = 5·8+4 = 44₁₀ = 2C₁₆ (2·16+12=44)."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q1",
+   "en": "Tooley Revision Paper 2 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 10100111 tương ứng với số thập phân nào?",
+   "en": "The binary number 10100111 is equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "147 decimal",
+    "en": "147 decimal"
+   },
+   {
+    "vi": "107 decimal",
+    "en": "107 decimal"
+   },
+   {
+    "vi": "167 decimal",
+    "en": "167 decimal"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "128+32+4+2+1 = 167.",
+   "en": "128+32+4+2+1 = 167."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q15",
+   "en": "Tooley Revision Paper 3 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số bát phân 127 tương ứng với số nhị phân nào?",
+   "en": "The octal number 127 is equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "1010111 binary",
+    "en": "1010111 binary"
+   },
+   {
+    "vi": "1001011 binary",
+    "en": "1001011 binary"
+   },
+   {
+    "vi": "1101001 binary",
+    "en": "1101001 binary"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1→001, 2→010, 7→111 → 001010111, bỏ số 0 thừa đầu → 1010111.",
+   "en": "1→001, 2→010, 7→111 → 001010111; dropping the leading zeros gives 1010111."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q18",
+   "en": "Tooley Revision Paper 3 Q18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 10110011 tương ứng với số hex nào?",
+   "en": "The binary number 10110011 is equivalent to the hexadecimal number:"
+  },
+  "opts": [
+   {
+    "vi": "31",
+    "en": "31"
+   },
+   {
+    "vi": "B3",
+    "en": "B3"
+   },
+   {
+    "vi": "113",
+    "en": "113"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "1011=B, 0011=3 → B3.",
+   "en": "1011=B, 0011=3 → B3."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q12",
+   "en": "Tooley Revision Paper 4 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số hệ mười (denary) 63 tương ứng với số nhị phân nào?",
+   "en": "The denary number 63 is equivalent to the binary number:"
+  },
+  "opts": [
+   {
+    "vi": "111111",
+    "en": "111111"
+   },
+   {
+    "vi": "11011",
+    "en": "11011"
+   },
+   {
+    "vi": "110111",
+    "en": "110111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "32+16+8+4+2+1 = 63 → 111111.",
+   "en": "32+16+8+4+2+1 = 63 → 111111."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q3",
+   "en": "Tooley Revision Paper 5 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 10010011 tương ứng với số hex nào?",
+   "en": "The binary number 10010011 is equivalent to the hexadecimal number:"
+  },
+  "opts": [
+   {
+    "vi": "93",
+    "en": "93"
+   },
+   {
+    "vi": "B3",
+    "en": "B3"
+   },
+   {
+    "vi": "C3",
+    "en": "C3"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1001=9, 0011=3 → 93.",
+   "en": "1001=9, 0011=3 → 93."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q4",
+   "en": "Tooley Revision Paper 5 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dải giá trị mà một byte không dấu (unsigned byte) có thể biểu diễn là:",
+   "en": "Which one gives the range of values that can be indicated by an unsigned byte:"
+  },
+  "opts": [
+   {
+    "vi": "-128 to +127",
+    "en": "-128 to +127"
+   },
+   {
+    "vi": "0 to 255",
+    "en": "0 to 255"
+   },
+   {
+    "vi": "0 to 65,535",
+    "en": "0 to 65,535"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "1 byte = 8 bit không dấu → 2⁸ = 256 giá trị, từ 0 đến 255.",
+   "en": "1 byte = 8 unsigned bits → 2⁸ = 256 values, from 0 to 255."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q8",
+   "en": "Tooley Revision Paper 5 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số hex E3 tương ứng với số nhị phân nào?",
+   "en": "The hexadecimal number E3 is equivalent to the binary number:"
+  },
+  "opts": [
+   {
+    "vi": "11100111",
+    "en": "11100111"
+   },
+   {
+    "vi": "11100011",
+    "en": "11100011"
+   },
+   {
+    "vi": "00111110",
+    "en": "00111110"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "E=1110, 3=0011 → 11100011.",
+   "en": "E=1110, 3=0011 → 11100011."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q2",
+   "en": "Tooley Revision Paper 6 Q2"
+  },
+  "note_fix": "Tooley in (a) và (c) cùng là 11100111 (tr.366, PDF 380); (c) được thay bằng 00111110 (hai nhóm 4 bit đảo chỗ)."
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã BCD 10010010 tương ứng với số thập phân nào?",
+   "en": "The BCD number 10010010 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "146",
+    "en": "146"
+   },
+   {
+    "vi": "92",
+    "en": "92"
+   },
+   {
+    "vi": "B2",
+    "en": "B2"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "1001=9, 0010=2 → 92.",
+   "en": "1001=9, 0010=2 → 92."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q3",
+   "en": "Tooley Revision Paper 6 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 100111 tương ứng với số thập phân nào?",
+   "en": "The binary number 100111 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "39",
+    "en": "39"
+   },
+   {
+    "vi": "15",
+    "en": "15"
+   },
+   {
+    "vi": "75",
+    "en": "75"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "32+4+2+1 = 39.",
+   "en": "32+4+2+1 = 39."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q6",
+   "en": "Tooley Revision Paper 7 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một từ (word) 32-bit chứa bao nhiêu byte?",
+   "en": "How many bytes can be contained in a 32-bit word?"
+  },
+  "opts": [
+   {
+    "vi": "one",
+    "en": "one"
+   },
+   {
+    "vi": "two",
+    "en": "two"
+   },
+   {
+    "vi": "four",
+    "en": "four"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "32 bit ÷ 8 bit/byte = 4 byte.",
+   "en": "32 bit ÷ 8 bit/byte = 4 byte."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q10",
+   "en": "Tooley Revision Paper 7 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã BCD tương ứng với số thập phân 123 là:",
+   "en": "What is the BCD equivalent of the decimal number 123?"
+  },
+  "opts": [
+   {
+    "vi": "0001 0010 0100",
+    "en": "0001 0010 0100"
+   },
+   {
+    "vi": "0001 0010 0011",
+    "en": "0001 0010 0011"
+   },
+   {
+    "vi": "0011 0010 0001",
+    "en": "0011 0010 0001"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "1→0001, 2→0010, 3→0011 → 0001 0010 0011.",
+   "en": "1→0001, 2→0010, 3→0011 → 0001 0010 0011."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q3",
+   "en": "Tooley Revision Paper 8 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân lớn nhất mà 8 chữ số nhị phân có thể biểu diễn là:",
+   "en": "What is the largest base-10 number that eight binary digits can represent?"
+  },
+  "opts": [
+   {
+    "vi": "80",
+    "en": "80"
+   },
+   {
+    "vi": "255",
+    "en": "255"
+   },
+   {
+    "vi": "11111111",
+    "en": "11111111"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2⁸-1 = 255 (đáp án (c) 11111111 là dạng nhị phân chứ không phải số thập phân, dễ nhầm).",
+   "en": "2⁸-1 = 255 (answer (c) 11111111 is a binary form, not a decimal number, which is easy to confuse)."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q5",
+   "en": "Tooley Revision Paper 8 Q5"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hệ bát phân là một hệ đếm có trọng số với 8 chữ số.",
+   "en": "The octal number system is a weighted system with eight digits."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bát phân dùng đúng 8 chữ số (0-7), mỗi vị trí có trọng số 8ⁱ: đúng.",
+   "en": "Octal uses exactly 8 digits (0-7), each position having weight 8ⁱ: correct."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một hệ đếm có trọng số (weighted system) là hệ mà giá trị của mỗi chữ số phụ thuộc vào VỊ TRÍ nó đứng, không chỉ vào bản thân chữ số đó. Bát phân thoả điều kiện này: chữ số ở vị trí thứ i (tính từ phải, bắt đầu từ 0) luôn mang trọng số 8ⁱ, giống hệt cách thập phân dùng trọng số 10ⁱ hay nhị phân dùng 2ⁱ.</p>",
+   "en": "<p>A weighted number system is one where each digit's contribution depends on its POSITION, not just the digit itself. Octal fits this exactly: the digit at position i (counted from the right, starting at 0) always carries weight 8ⁱ, the same way decimal uses weight 10ⁱ or binary uses weight 2ⁱ.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #1",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #1"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hệ nhị phân là một hệ đếm có trọng số với 2 chữ số.",
+   "en": "The binary number system is a weighted system with two digits."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhị phân dùng 2 chữ số (0,1), trọng số 2ⁱ: đúng.",
+   "en": "Binary uses 2 digits (0, 1) with weights 2ⁱ: correct."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Nhị phân là hệ đếm có trọng số đơn giản nhất vì chỉ có 2 chữ số khả dĩ (0 và 1). Đây chính là lý do nó khớp hoàn hảo với phần cứng số, vốn chỉ cần phân biệt hai mức điện áp (cao/thấp) thay vì mười mức như thập phân.</p>",
+   "en": "<p>Binary is the simplest possible weighted system because it has only 2 possible digits (0 and 1). This is exactly why it matches digital hardware so well, which only needs to distinguish two voltage levels (high/low) instead of ten levels the way decimal would require.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #2",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #2"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "MSB là viết tắt của 'most significant bit' (bit có trọng số lớn nhất).",
+   "en": "MSB stands for most significant bit."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng theo định nghĩa chuẩn.",
+   "en": "True by the standard definition."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>MSB (Most Significant Bit) luôn là bit nằm ở vị trí có trọng số LỚN NHẤT trong một số nhị phân, thường được viết ở NGOÀI CÙNG BÊN TRÁI. Đối lập với nó là LSB (Least Significant Bit), bit ở vị trí trọng số nhỏ nhất, viết ở ngoài cùng bên phải.</p>",
+   "en": "<p>The MSB (Most Significant Bit) is always the bit at the position with the LARGEST weight in a binary number, conventionally written at the LEFTMOST end. Its counterpart is the LSB (Least Significant Bit), the bit at the smallest-weight position, written at the rightmost end.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #3",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #3"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Trong hệ thập lục phân, 9 + 1 = 10.",
+   "en": "In hexadecimal, 9 + 1 = 10."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Trong hex, 9+1 = A (10 thập phân được viết là A trong hex), không phải '10'.",
+   "en": "In hex, 9 + 1 = A (decimal 10 is written A in hex), not '10'."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trong hệ thập lục phân, chuỗi ký tự '10' không có nghĩa là mười; nó có nghĩa là 1×16+0=16. Giá trị mười thập phân, khi viết bằng MỘT chữ số hex duy nhất, phải dùng ký tự A (vì hex chỉ có 16 chữ số 0-9 và A-F). Đây là lỗi rất dễ mắc phải khi mới chuyển từ tư duy thập phân sang hex.</p>",
+   "en": "<p>In hexadecimal, the string '10' does not mean ten; it means 1×16+0=16. The decimal value ten, written as a SINGLE hex digit, must use the character A (since hex only has 16 digits, 0 through 9 and A through F). This is a very easy mistake to make when first switching from decimal to hex thinking.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #4",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #4"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bù một (1's complement) của số nhị phân 1010 là 0101.",
+   "en": "The 1's complement of the binary number 1010 is 0101."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đảo từng bit: 1→0, 0→1, 1→0, 0→1 → 0101: đúng.",
+   "en": "Invert each bit: 1→0, 0→1, 1→0, 0→1 → 0101: correct."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bù một (1's complement) chỉ có đúng một bước duy nhất: đảo NGƯỢC từng bit riêng lẻ, không cộng thêm gì cả. Với 1010, đảo lần lượt từng bit (1→0, 0→1, 1→0, 0→1) cho ra 0101. Đây là bước ĐẦU trong hai bước tạo bù hai (bù hai = bù một + 1).</p>",
+   "en": "<p>The 1's complement has exactly one single step: invert every individual bit, with no addition afterward. For 1010, inverting each bit in turn (1→0, 0→1, 1→0, 0→1) gives 0101. This is the FIRST of the two steps used to form the 2's complement (2's complement = 1's complement + 1).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #5",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #5"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bù hai (2's complement) của số nhị phân 1111 là 0000.",
+   "en": "The 2's complement of the binary number 1111 is 0000."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bù một của 1111 là 0000, cộng thêm 1 → bù hai = 0001, không phải 0000.",
+   "en": "The one's complement of 1111 is 0000; adding 1 gives the two's complement = 0001, not 0000."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đây là lỗi hay gặp khi nhầm bù một với bù hai. Bù hai luôn cần đủ HAI bước: đảo bit rồi cộng thêm 1, không được bỏ qua bước cộng. Với 1111, đảo bit ra 0000, cộng 1 ra 0001, không dừng lại ở 0000.</p>",
+   "en": "<p>This is a common error from confusing the 1's complement with the 2's complement. The 2's complement always needs BOTH steps: invert the bits, then add 1; the addition step cannot be skipped. For 1111, inverting gives 0000, and adding 1 gives 0001, not just 0000.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #6",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #6"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bit ngoài cùng bên phải của một số nhị phân có dấu là bit dấu.",
+   "en": "The right-most bit in a signed binary number is the sign bit."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bit dấu nằm ở vị trí NGOÀI CÙNG BÊN TRÁI (MSB), không phải bên phải.",
+   "en": "The sign bit is at the LEFT-MOST position (MSB), not on the right."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trong biểu diễn số có dấu (signed number), bit dấu luôn trùng với vị trí MSB: 0 nghĩa là số dương, 1 nghĩa là số âm. Đặt bit dấu ở bên trái giúp giữ nguyên được cách so sánh độ lớn tương đối giữa các số, tương tự cách con người viết dấu trừ ở đầu một số âm trong hệ thập phân.</p>",
+   "en": "<p>In a signed number representation, the sign bit always coincides with the MSB position: 0 means positive, 1 means negative. Placing the sign bit on the left preserves a consistent way of comparing relative magnitude between numbers, similar to how a minus sign is written at the front of a negative decimal number.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #7",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #7"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hệ thập lục phân có 16 ký tự, trong đó 6 ký tự là chữ cái.",
+   "en": "The hexadecimal number system has 16 characters, six of which are alphabetic characters."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "0-9 (10 chữ số) + A,B,C,D,E,F (6 chữ cái) = 16 ký tự: đúng.",
+   "en": "0-9 (10 digits) + A, B, C, D, E, F (6 letters) = 16 characters: correct."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hex cần đúng 16 ký hiệu riêng biệt để biểu diễn 16 giá trị từ 0 đến 15 bằng một chữ số duy nhất. Vì bảng chữ số thập phân chỉ có 10 ký hiệu (0-9), hex phải mượn thêm 6 chữ cái đầu bảng chữ cái (A đến F) để đủ 16 ký hiệu.</p>",
+   "en": "<p>Hex needs exactly 16 distinct symbols to represent 16 values from 0 to 15 using a single digit. Since the decimal digit set only has 10 symbols (0-9), hex borrows the first six letters of the alphabet (A through F) to reach the required 16 symbols.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #8",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #8"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "BCD là viết tắt của 'binary coded decimal'.",
+   "en": "BCD stands for binary coded decimal."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng theo định nghĩa chuẩn.",
+   "en": "True by the standard definition."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>BCD tách riêng và mã hoá TỪNG CHỮ SỐ thập phân bằng 4 bit, khác hẳn cách nhị phân thuần tuý mã hoá toàn bộ con số cùng lúc. Chính vì gắn liền với biểu diễn thập phân, BCD dễ chuyển đổi qua lại với màn hình hiển thị số hơn nhị phân thông thường.</p>",
+   "en": "<p>BCD encodes each decimal digit SEPARATELY using 4 bits, unlike plain binary, which encodes the whole number at once. Because it stays tied to the decimal representation, BCD converts back and forth with numeric displays more directly than ordinary binary does.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #9",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #9"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Có thể phát hiện lỗi trong một mã bằng cách kiểm tra bit chẵn lẻ (parity bit).",
+   "en": "An error in a given code can be detected by verifying the parity bit."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đây chính là nguyên lý hoạt động của kiểm tra chẵn lẻ.",
+   "en": "This is the operating principle of parity checking."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bit chẵn lẻ (parity bit) được thêm vào sao cho tổng số bit 1 trong cả cụm dữ liệu (kể cả bit parity) luôn chẵn (even parity) hoặc luôn lẻ (odd parity) theo quy ước đã chọn. Khi nhận dữ liệu, chỉ cần đếm lại số bit 1: nếu tính chẵn/lẻ không khớp quy ước, chắc chắn có ít nhất một bit đã bị lật do nhiễu trên đường truyền.</p><p>Hạn chế của parity đơn giản là chỉ phát hiện được số LẺ bit lỗi; nếu đúng 2 bit cùng lật, tính chẵn lẻ vẫn giữ nguyên và lỗi sẽ lọt qua không bị phát hiện.</p>",
+   "en": "<p>A parity bit is added so the total count of 1s across the whole data group, including the parity bit itself, always comes out even (even parity) or always odd (odd parity), by convention. On receipt, simply recounting the 1s reveals a mismatch with the chosen convention whenever at least one bit has flipped due to noise on the line.</p><p>Simple parity's limitation is that it only catches an ODD number of bit errors; if exactly 2 bits flip together, the parity stays consistent and the error slips through undetected.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #10",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #10"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "CRC là viết tắt của 'cyclic redundancy check'.",
+   "en": "CRC stands for cyclic redundancy check."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng theo định nghĩa chuẩn.",
+   "en": "True by the standard definition."
+  },
+  "topic": {
+   "vi": "Phát hiện lỗi: parity, checksum, CRC",
+   "en": "Error detection: parity, checksum, CRC"
+  },
+  "topic_id": "errors",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>CRC dùng phép chia đa thức theo modulo-2 (thực chất là phép XOR lặp lại) để sinh ra một mã kiểm tra ngắn gắn kèm theo dữ liệu. So với parity đơn giản, CRC phát hiện được nhiều loại lỗi hơn hẳn, kể cả lỗi cụm (burst error) nhiều bit liên tiếp, nên được dùng rộng rãi trong truyền dữ liệu tốc độ cao.</p>",
+   "en": "<p>CRC uses modulo-2 polynomial division (essentially repeated XOR) to generate a short check code attached to the data. Compared with simple parity, CRC catches far more kinds of errors, including burst errors spanning several consecutive bits, which is why it is widely used in high-speed data transmission.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #11",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #11"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Tổng modulo-2 của 11 và 10 là 100.",
+   "en": "The modulo-2 sum of 11 and 10 is 100."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cộng modulo-2 chính là phép XOR: 11 XOR 10 = 01, không phải 100.",
+   "en": "Modulo-2 addition is the XOR operation: 11 XOR 10 = 01, not 100."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cộng modulo-2 khác hẳn cộng nhị phân thông thường ở một điểm mấu chốt: KHÔNG có carry (nhớ) truyền sang cột kế tiếp. Mỗi cột được cộng độc lập theo quy tắc 0+0=0, 0+1=1, 1+0=1, 1+1=0, đúng bằng phép XOR bit theo bit. Với 11 và 10, XOR từng cột cho 0 và 1, tức 01, không phải 100 như cộng nhị phân thường (có carry) sẽ cho ra.</p>",
+   "en": "<p>Modulo-2 addition differs from ordinary binary addition in one crucial way: there is NO carry propagating to the next column. Each column is added independently following 0+0=0, 0+1=1, 1+0=1, 1+1=0, which is exactly bitwise XOR. For 11 and 10, XORing each column gives 0 and 1, that is 01, not 100 the way ordinary binary addition with carry would produce.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #12",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · True/False #12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "3 × 10¹ + 4 × 10⁰ bằng:",
+   "en": "3 × 10¹ + 4 × 10⁰ is"
+  },
+  "opts": [
+   {
+    "vi": "3.4",
+    "en": "3.4"
+   },
+   {
+    "vi": "34",
+    "en": "34"
+   },
+   {
+    "vi": "0.34",
+    "en": "0.34"
+   },
+   {
+    "vi": "340",
+    "en": "340"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "3×10+4×1 = 30+4 = 34.",
+   "en": "3×10+4×1 = 30+4 = 34."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về hệ đếm",
+   "en": "General number-system concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đây là cách viết tường minh một số thập phân dưới dạng tổng các luỹ thừa của 10, đúng bản chất của một hệ đếm có trọng số. Mỗi số hạng dᵢ×10ⁱ đóng góp đúng giá trị của chữ số ở vị trí i; cộng tất cả các số hạng lại cho ra giá trị đầy đủ của số đó.</p>",
+   "en": "<p>This is the explicit expansion of a decimal number as a sum of powers of ten, exactly the definition of a weighted number system. Each term dᵢ×10ⁱ contributes the value of the digit at position i; adding every term together gives the number's full value.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #1",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giá trị thập phân của số nhị phân 1000 là:",
+   "en": "The decimal equivalent of 1000 is"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "1000₂ = 8₁₀.",
+   "en": "1000₂ = 8₁₀."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bit duy nhất bằng 1 trong 1000 nằm ở vị trí thứ 3 (tính từ 0), mang trọng số 2³=8. Cách nhận diện nhanh: một số nhị phân chỉ có đúng một bit 1 luôn là một luỹ thừa của 2, và vị trí bit đó cho biết ngay số mũ.</p>",
+   "en": "<p>The single 1 bit in 1000 sits at position 3 (counting from 0), carrying weight 2³=8. A quick pattern to notice: a binary number with exactly one bit set to 1 is always a power of 2, and that bit's position tells you the exponent directly.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #2",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 11011101 tương ứng với số thập phân:",
+   "en": "The binary number 11011101 is equal to the decimal number"
+  },
+  "opts": [
+   {
+    "vi": "256",
+    "en": "256"
+   },
+   {
+    "vi": "121",
+    "en": "121"
+   },
+   {
+    "vi": "221",
+    "en": "221"
+   },
+   {
+    "vi": "441",
+    "en": "441"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "128+64+16+8+4+1 = 221.",
+   "en": "128+64+16+8+4+1 = 221."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cộng đúng các trọng số tại những vị trí có bit bằng 1: 11011101 có bit 1 ở các vị trí trọng số 128, 64, 16, 8, 4 và 1, cộng lại được 221. Cách làm này áp dụng được cho bất kỳ số nhị phân nào, dài hay ngắn.</p>",
+   "en": "<p>Sum only the weights at positions where the bit is 1: 11011101 has 1s at the weight positions 128, 64, 16, 8, 4 and 1, adding up to 221. This method works for any binary number, regardless of length.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #3",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 21 tương ứng với số nhị phân:",
+   "en": "The decimal number 21 is equivalent to the binary number"
+  },
+  "opts": [
+   {
+    "vi": "10000",
+    "en": "10000"
+   },
+   {
+    "vi": "10001",
+    "en": "10001"
+   },
+   {
+    "vi": "11111",
+    "en": "11111"
+   },
+   {
+    "vi": "10101",
+    "en": "10101"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "16+4+1 = 21 → 10101₂.",
+   "en": "16+4+1 = 21 → 10101₂."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trừ dần các trọng số lớn nhất còn vừa: 21 chứa 16 (còn dư 5), 5 chứa 4 (còn dư 1), 1 chứa 1 (còn dư 0). Các vị trí trọng số được dùng (16, 4, 1) đặt bit 1, các vị trí còn lại (8, 2) đặt bit 0, cho ra 10101.</p>",
+   "en": "<p>Subtract the largest weight that still fits: 21 contains 16 (leaving 5), 5 contains 4 (leaving 1), 1 contains 1 (leaving 0). The weight positions used (16, 4, 1) get a bit of 1, the remaining positions (8, 2) get 0, giving 10101.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #4",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 250 tương ứng với số nhị phân:",
+   "en": "The decimal number 250 is equivalent to the binary number"
+  },
+  "opts": [
+   {
+    "vi": "11111010",
+    "en": "11111010"
+   },
+   {
+    "vi": "11110110",
+    "en": "11110110"
+   },
+   {
+    "vi": "11111000",
+    "en": "11111000"
+   },
+   {
+    "vi": "11111011",
+    "en": "11111011"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "128+64+32+16+8+2 = 250 → 11111010₂.",
+   "en": "128+64+32+16+8+2 = 250 → 11111010₂."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>250 gần với 256 (=2⁸), nên hầu hết các bit cao đều bằng 1: chỉ thiếu đúng trọng số 4 và 1 so với giá trị lớn nhất 8-bit là 255. Nhận ra một số gần bằng 2ⁿ giúp đoán nhanh dạng nhị phân của nó trước khi tính chi tiết.</p>",
+   "en": "<p>250 is close to 256 (=2⁸), so most of the high-order bits are set to 1; it is simply missing the weights 4 and 1 compared with the 8-bit maximum value of 255. Recognising a number close to 2ⁿ helps predict its binary shape quickly before working out the exact detail.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #5",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tổng 1111 + 1111 trong nhị phân bằng:",
+   "en": "The sum of 1111 + 1111 in binary equals"
+  },
+  "opts": [
+   {
+    "vi": "11111",
+    "en": "11111"
+   },
+   {
+    "vi": "0000",
+    "en": "0000"
+   },
+   {
+    "vi": "2222",
+    "en": "2222"
+   },
+   {
+    "vi": "11110",
+    "en": "11110"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "15+15 = 30 = 11110₂.",
+   "en": "15+15 = 30 = 11110₂."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>1111₂ = 15 thập phân, nên phép cộng thực chất là 15+15=30. Đổi 30 sang nhị phân: 30=16+8+4+2, cho ra 11110. Kiểm tra ngược: cộng trực tiếp theo cột nhị phân (có carry lan truyền) cũng phải ra đúng kết quả này.</p>",
+   "en": "<p>1111₂ equals decimal 15, so the addition is really 15+15=30. Converting 30 to binary: 30=16+8+4+2, giving 11110. As a check, adding column by column directly in binary, with carries propagating, must also produce this same result.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #6",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hiệu 1000 − 100 trong nhị phân bằng:",
+   "en": "The difference of 1000 − 100 equals"
+  },
+  "opts": [
+   {
+    "vi": "101",
+    "en": "101"
+   },
+   {
+    "vi": "100",
+    "en": "100"
+   },
+   {
+    "vi": "111",
+    "en": "111"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "8−4 = 4 = 100₂.",
+   "en": "8−4 = 4 = 100₂."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>1000₂=8, 100₂=4, nên phép trừ là 8−4=4, và 4 viết dưới dạng nhị phân chính là 100. Với các số nhị phân đơn giản như thế này, đổi sang thập phân để tính rồi đổi ngược lại thường nhanh hơn trừ trực tiếp theo cột nhị phân.</p>",
+   "en": "<p>1000₂=8 and 100₂=4, so the subtraction is 8−4=4, and 4 written in binary is exactly 100. For binary numbers this simple, converting to decimal to compute and then converting back is often faster than subtracting column by column in binary directly.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #7",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bù một (1's complement) của 11110000 là:",
+   "en": "The 1's complement of 11110000 is"
+  },
+  "opts": [
+   {
+    "vi": "10000001",
+    "en": "10000001"
+   },
+   {
+    "vi": "00001111",
+    "en": "00001111"
+   },
+   {
+    "vi": "11111111",
+    "en": "11111111"
+   },
+   {
+    "vi": "11111110",
+    "en": "11111110"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đảo từng bit: 1→0, 0→1 → 00001111.",
+   "en": "Invert each bit: 1→0, 0→1 → 00001111."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bù một chỉ đảo bit, không cộng gì thêm. 11110000 đảo từng bit lần lượt cho 00001111. Đây là bước trung gian thường dùng trước khi tính bù hai (bù hai = bù một + 1).</p>",
+   "en": "<p>The 1's complement only inverts bits, with no addition afterward. 11110000, inverted bit by bit, gives 00001111. This is the intermediate step normally used before computing the 2's complement (2's complement = 1's complement + 1).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #8",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bù hai (2's complement) của 11001100 là:",
+   "en": "The 2's complement of 11001100 is"
+  },
+  "opts": [
+   {
+    "vi": "00110110",
+    "en": "00110110"
+   },
+   {
+    "vi": "00110011",
+    "en": "00110011"
+   },
+   {
+    "vi": "00110100",
+    "en": "00110100"
+   },
+   {
+    "vi": "00110101",
+    "en": "00110101"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bù một = 00110011, cộng 1 → 00110100.",
+   "en": "One's complement = 00110011, add 1 → 00110100."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai bước rõ ràng: đảo bit của 11001100 ra 00110011, rồi cộng thêm 1 (00110011+1=00110100). Luôn thực hiện đúng thứ tự đảo trước, cộng sau; đảo NGƯỢC thứ tự sẽ cho kết quả sai.</p>",
+   "en": "<p>Two clear steps: inverting 11001100 gives 00110011, then adding 1 (00110011+1=00110100). Always perform invert first, then add; reversing the order gives a wrong result.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #9",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân +122 được biểu diễn ở dạng bù hai (2's complement) là:",
+   "en": "The decimal number +122 is expressed in the 2's complement form as"
+  },
+  "opts": [
+   {
+    "vi": "10000101",
+    "en": "10000101"
+   },
+   {
+    "vi": "01000101",
+    "en": "01000101"
+   },
+   {
+    "vi": "11111010",
+    "en": "11111010"
+   },
+   {
+    "vi": "01111010",
+    "en": "01111010"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "122 = 64+32+16+8+2 → 01111010 (số dương giữ nguyên dạng nhị phân thường).",
+   "en": "122 = 64+32+16+8+2 → 01111010 (a positive number keeps its ordinary binary form)."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một điểm hay bị bỏ qua: số DƯƠNG trong biểu diễn bù hai giữ nguyên dạng nhị phân bình thường, không cần đảo bit hay cộng gì cả, chỉ cần đủ số bit và bit dấu (MSB) bằng 0. Việc đảo bit và cộng 1 CHỈ áp dụng khi cần biểu diễn số ÂM.</p>",
+   "en": "<p>An easily overlooked point: a POSITIVE number in two's complement representation keeps its ordinary binary form, with no inverting or adding needed, as long as there are enough bits and the sign bit (MSB) is 0. The invert-then-add-1 procedure only applies when representing a NEGATIVE number.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #10",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân −34 được biểu diễn ở dạng bù hai (2's complement) là:",
+   "en": "The decimal number −34 is expressed in the 2's complement form as"
+  },
+  "opts": [
+   {
+    "vi": "01011101",
+    "en": "01011101"
+   },
+   {
+    "vi": "01011110",
+    "en": "01011110"
+   },
+   {
+    "vi": "11011110",
+    "en": "11011110"
+   },
+   {
+    "vi": "10100010",
+    "en": "10100010"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "34 = 00100010, bù một = 11011101, cộng 1 → 11011110.",
+   "en": "34 = 00100010, one's complement = 11011101, add 1 → 11011110."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ba bước đầy đủ cho một số ÂM: viết độ lớn (magnitude) dưới dạng nhị phân thường (34=00100010), đảo toàn bộ bit (11011101), rồi cộng 1 (11011110). Bit dấu (MSB) của kết quả tự động thành 1, đúng quy ước số âm.</p>",
+   "en": "<p>The full three-step process for a NEGATIVE number: write the magnitude in ordinary binary (34=00100010), invert every bit (11011101), then add 1 (11011110). The result's sign bit (MSB) automatically becomes 1, matching the negative-number convention.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #11",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một số nhị phân dấu phẩy động độ chính xác đơn (single-precision) có tổng cộng:",
+   "en": "A single-precision floating-point binary number has a total of"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "8 bits"
+   },
+   {
+    "vi": "32 bit",
+    "en": "32 bits"
+   },
+   {
+    "vi": "16 bit",
+    "en": "16 bits"
+   },
+   {
+    "vi": "24 bit",
+    "en": "24 bits"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chuẩn IEEE 754 single-precision dùng 32 bit.",
+   "en": "The IEEE 754 single-precision standard uses 32 bits."
+  },
+  "topic": {
+   "vi": "Dấu chấm động",
+   "en": "Floating point"
+  },
+  "topic_id": "float",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Chuẩn IEEE 754 chia 32 bit của một số single-precision thành 3 phần: 1 bit dấu, 8 bit mũ (exponent), và 23 bit phần định trị (mantissa/fraction). Cách chia này cho phép biểu diễn cả số rất lớn lẫn rất nhỏ trong cùng một khuôn dạng cố định độ dài.</p>",
+   "en": "<p>The IEEE 754 standard splits a single-precision number's 32 bits into 3 parts: 1 sign bit, 8 exponent bits, and 23 mantissa (fraction) bits. This split lets both very large and very small numbers be represented within the same fixed-length format.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #12",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ở dạng bù hai, số nhị phân 10010011 tương ứng với số thập phân:",
+   "en": "In the 2's complement form, the binary number 10010011 is equal to the decimal number"
+  },
+  "opts": [
+   {
+    "vi": "−19",
+    "en": "219"
+   },
+   {
+    "vi": "−109",
+    "en": "2109"
+   },
+   {
+    "vi": "+109",
+    "en": "+ 109"
+   },
+   {
+    "vi": "+91",
+    "en": "+ 91"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bit dấu=1 (âm). Bù một của 10010011 = 01101100, +1 = 01101101 = 109 → giá trị gốc = −109.",
+   "en": "Sign bit = 1 (negative). One's complement of 10010011 = 01101100, +1 = 01101101 = 109 → the original value = −109."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Để đọc một số bù hai âm về giá trị thập phân, làm ngược lại quy trình mã hoá: đảo bit rồi cộng 1 để tìm ĐỘ LỚN, sau đó gắn dấu âm vì bit dấu ban đầu là 1. Với 10010011, đảo bit ra 01101100, cộng 1 ra 01101101=109, nên giá trị gốc là −109.</p>",
+   "en": "<p>To read a negative two's-complement number back to decimal, reverse the encoding process: invert the bits and add 1 to find the MAGNITUDE, then attach a negative sign since the original sign bit was 1. For 10010011, inverting gives 01101100, adding 1 gives 01101101=109, so the original value is −109.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #13",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 101100111001010100001 viết dưới dạng bát phân là:",
+   "en": "The binary number 101100111001010100001 can be written in octal as"
+  },
+  "opts": [
+   {
+    "vi": "5471241₈",
+    "en": "54712418"
+   },
+   {
+    "vi": "2634521₈",
+    "en": "26345218"
+   },
+   {
+    "vi": "5471230₈",
+    "en": "54712308"
+   },
+   {
+    "vi": "2316250₈",
+    "en": "231625018"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhóm 3 bit từ phải, đệm trái đủ nhóm, rồi đổi từng nhóm sang 1 chữ số bát phân.",
+   "en": "Group 3 bits from the right, pad on the left to complete the group, then convert each group to one octal digit."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Vì 2³=8, mỗi chữ số bát phân ứng đúng với 3 bit nhị phân. Với chuỗi 21 bit (không chia hết cho 3, vẫn cần kiểm tra), nhóm từ phải sang trái thành từng cụm 3 bit, đệm số 0 vào cụm ngoài cùng bên trái nếu thiếu, rồi đổi mỗi cụm sang một chữ số 0-7.</p>",
+   "en": "<p>Because 2³=8, each octal digit corresponds exactly to 3 binary bits. For a 21-bit string, group from right to left into clusters of 3, padding the leftmost cluster with zeros if needed, then convert each cluster to a digit from 0 to 7.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #14",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 10001101010001101111 viết dưới dạng thập lục phân là:",
+   "en": "The binary number 10001101010001101111 can be written in hexadecimal as"
+  },
+  "opts": [
+   {
+    "vi": "AD467₁₆",
+    "en": "AD46716"
+   },
+   {
+    "vi": "8D46F₁₆",
+    "en": "8D46F16"
+   },
+   {
+    "vi": "8C46F₁₆",
+    "en": "8C46F16"
+   },
+   {
+    "vi": "AE46F₁₆",
+    "en": "AE46F16"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Nhóm 4 bit từ phải: 1000 1101 0100 0110 1111 → 8 D 4 6 F.",
+   "en": "Group 4 bits from the right: 1000 1101 0100 0110 1111 → 8 D 4 6 F."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đổi nhị phân sang hex chỉ cần nhóm 4 bit một lần, không cần tính giá trị thập phân trung gian. Mỗi cụm 4 bit đổi trực tiếp sang đúng một ký tự hex theo bảng tra 0000-1111 ứng với 0-F.</p>",
+   "en": "<p>Converting binary to hex only requires grouping into 4s, with no need to compute a decimal intermediate value. Each 4-bit cluster converts directly to exactly one hex character using the 0000-1111 to 0-F lookup.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #15",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân tương ứng với F7A9₁₆ là:",
+   "en": "The binary number for F7A9₁₆ is"
+  },
+  "opts": [
+   {
+    "vi": "1110111110101001",
+    "en": "1110111110101001"
+   },
+   {
+    "vi": "1111111010110001",
+    "en": "1111111010110001"
+   },
+   {
+    "vi": "1111011010101001",
+    "en": "1111011010101001"
+   },
+   {
+    "vi": "1111011110101001",
+    "en": "1111011110101001"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "F=1111, 7=0111, A=1010, 9=1001 → 1111 0111 1010 1001.",
+   "en": "F=1111, 7=0111, A=1010, 9=1001 → 1111 0111 1010 1001."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đổi ngược lại: mỗi ký tự hex thay bằng đúng 4 bit nhị phân tương ứng của nó, ghép các nhóm lại theo đúng thứ tự ban đầu. Không được bỏ số 0 ở đầu mỗi nhóm 4 bit, vì việc đó sẽ làm lệch vị trí các bit tiếp theo.</p>",
+   "en": "<p>Working the other way: each hex character is replaced by its own 4-bit binary code, with the groups joined back in their original order. Leading zeros within each 4-bit group must not be dropped, since doing so would shift the position of the following bits.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #16",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã BCD của số thập phân 473 là:",
+   "en": "The BCD number for decimal 473 is"
+  },
+  "opts": [
+   {
+    "vi": "111011010",
+    "en": "111011010"
+   },
+   {
+    "vi": "010001110011",
+    "en": "010001110011"
+   },
+   {
+    "vi": "010011110011",
+    "en": "010011110011"
+   },
+   {
+    "vi": "110001110011",
+    "en": "110001110011"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "4→0100, 7→0111, 3→0011 → ghép lại 010001110011, đúng phương án (c).",
+   "en": "4→0100, 7→0111, 3→0011 → joined together gives 010001110011, which is option (c)."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mỗi chữ số thập phân của 473 (4, 7, 3) được đổi riêng sang 4 bit BCD của chính nó, không tính chung toàn bộ số 473 sang nhị phân. Đây là điểm khác biệt cốt lõi giữa BCD và nhị phân thuần tuý, dễ gây nhầm lẫn nếu vô tình đổi cả số 473 sang nhị phân thường.</p>",
+   "en": "<p>Each decimal digit of 473 (4, 7, 3) is converted separately to its own 4-bit BCD code, rather than converting the whole number 473 to binary at once. This is the core difference between BCD and plain binary, and it is easy to get wrong if 473 is accidentally converted as a single ordinary binary number.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #17",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tham chiếu Bảng 2-7 (ASCII), lệnh STOP mã hoá ASCII là:",
+   "en": "Refer to Table 2-7. The command STOP in ASCII is"
+  },
+  "opts": [
+   {
+    "vi": "1010010100110010011101010000",
+    "en": "1010010100110010011101010000"
+   },
+   {
+    "vi": "1010011101010010011111010000",
+    "en": "1010011101010010011111010000"
+   },
+   {
+    "vi": "1001010110110110011101010001",
+    "en": "1001010110110110011101010001"
+   },
+   {
+    "vi": "1010011101010010011101100100",
+    "en": "1010011101010010011101100100"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ghép mã ASCII 7-bit của từng ký tự S-T-O-P theo Bảng 2-7 trong sách (đáp án lấy theo answer key gốc của Floyd).",
+   "en": "Concatenate the 7-bit ASCII codes of the characters S-T-O-P from Table 2-7 in the book (the answer follows Floyd's own answer key)."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ASCII mã hoá TỪNG KÝ TỰ riêng lẻ bằng 7 bit cố định, nên một chuỗi ký tự dài chỉ đơn giản là các mã 7-bit nối tiếp nhau theo đúng thứ tự xuất hiện của ký tự. Việc tra đúng bảng ASCII (Bảng 2-7 trong sách) là bắt buộc vì không có công thức tính toán nào thay thế được việc tra bảng cho từng ký tự.</p>",
+   "en": "<p>ASCII encodes each INDIVIDUAL character with a fixed 7 bits, so a longer string of text is simply those 7-bit codes concatenated in the order the characters appear. Looking up the correct ASCII table (Table 2-7 in the book) is required, since no formula can substitute for the table lookup on each character.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #18",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã nào sau đây có lỗi chẵn lẻ (even-parity error)?",
+   "en": "The code that has an even-parity error is"
+  },
+  "opts": [
+   {
+    "vi": "1101000",
+    "en": "1101000"
+   },
+   {
+    "vi": "1010011",
+    "en": "1010011"
+   },
+   {
+    "vi": "1110111",
+    "en": "1110111"
+   },
+   {
+    "vi": "1001000",
+    "en": "1001000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đếm số bit 1: 1010011→4(chẵn), 1101000→3(lẻ), 1001000→2(chẵn), 1110111→6(chẵn). Với quy ước parity chẵn, mã có SỐ BIT 1 LẺ là mã lỗi → 1101000.",
+   "en": "Counting the 1 bits: 1010011 → 4 (even), 1101000 → 3 (odd), 1001000 → 2 (even), 1110111 → 6 (even). With the even-parity convention, the code with an ODD number of 1 bits is the faulty one → 1101000."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Với quy ước parity chẵn, một mã HỢP LỆ luôn có tổng số bit 1 là số chẵn. Đếm số bit 1 của cả 4 phương án, chỉ có 1101000 cho ra số lẻ (3 bit 1), nên đây là mã duy nhất vi phạm quy ước, tức mã bị lỗi.</p>",
+   "en": "<p>Under the even-parity convention, a VALID code always has an even total count of 1 bits. Counting the 1s in all four options, only 1101000 comes out odd (3 ones), so it is the only one violating the convention, meaning it is the faulty code.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #19",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong kiểm tra dư thừa vòng (CRC), việc không có lỗi được thể hiện bằng:",
+   "en": "In the cyclic redundancy check, the absence of errors is indicated by"
+  },
+  "opts": [
+   {
+    "vi": "Số dư = 0",
+    "en": "Remainder = 0"
+   },
+   {
+    "vi": "Số dư = mã sinh (generator code)",
+    "en": "Remainder = generator code"
+   },
+   {
+    "vi": "Số dư = 1",
+    "en": "Remainder = 1"
+   },
+   {
+    "vi": "Thương số = 0",
+    "en": "Quotient = 0"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Không có lỗi khi phép chia CRC cho số dư bằng 0.",
+   "en": "There is no error when the CRC division gives a remainder of 0."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>CRC hoạt động bằng cách chia dữ liệu (coi như một đa thức nhị phân) cho một đa thức sinh (generator polynomial) cố định theo phép chia modulo-2. Nếu dữ liệu nhận được không bị lỗi trong quá trình truyền, phép chia này luôn cho số dư bằng 0 đúng như khi mã hoá; số dư khác 0 là dấu hiệu chắc chắn của lỗi.</p>",
+   "en": "<p>CRC works by dividing the data, treated as a binary polynomial, by a fixed generator polynomial using modulo-2 division. If the received data was not corrupted in transit, this division always yields a remainder of 0, exactly as it did during encoding; a nonzero remainder is a definite sign of an error.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #20",
+   "en": "Floyd Ch.2: Number Systems, Operations, and Codes · Self-Test #20"
+  }
+ }
+]

@@ -1,0 +1,1069 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tính góc tới hạn của mặt phân cách kính (n = 1,5) và không khí (n = 1,0).",
+   "en": "Compute the critical angle of a glass (n = 1.5) to air (n = 1.0) interface."
+  },
+  "opts": [
+   {
+    "vi": "41,8°",
+    "en": "41.8°"
+   },
+   {
+    "vi": "48,2°",
+    "en": "48.2°"
+   },
+   {
+    "vi": "66,7°",
+    "en": "66.7°"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "sin θc = 1/1,5 = 0,667, θc = 41,8° (Tooley Test Your Understanding 10.2).",
+   "en": "sin θc = 1/1.5 = 0.667, θc = 41.8° (Tooley Test Your Understanding 10.2)."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>sin θc = n₂/n₁ = 1,0/1,5 = 0,667 nên θc = 41,8° (Tooley TYU 10.2). 48,2° là 90° − 41,8°, tức góc giữa tia và biên; 66,7 là nhầm phần trăm. Từ kính vào không khí, tia tới lớn hơn 41,8° bị phản xạ toàn phần.</p><p>Demo 2 của Module 08 cho thấy tia khúc xạ biến mất ở 42°.</p>",
+   "en": "<p>sin θc = n₂/n₁ = 1.0/1.5 = 0.667 so θc = 41.8° (Tooley TYU 10.2). 48.2° is 90° − 41.8°, the angle between the ray and the boundary; 66.7 confuses a percentage. From glass into air, a ray above 41.8° is totally reflected.</p><p>Demo 2 of Module 08 shows the refracted ray vanishing at 42°.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sợi có n₁ = 1,53 và n₂ = 1,50. Khẩu độ số NA bằng:",
+   "en": "A fibre has n₁ = 1.53 and n₂ = 1.50. The numerical aperture NA is:"
+  },
+  "opts": [
+   {
+    "vi": "0,9804",
+    "en": "0.9804"
+   },
+   {
+    "vi": "0,3015",
+    "en": "0.3015"
+   },
+   {
+    "vi": "0,0300",
+    "en": "0.0300"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "NA = √(1,53² − 1,50²) = √0,0909 = 0,3015 (0,9804 là n₂/n₁).",
+   "en": "NA = √(1.53² − 1.50²) = √0.0909 = 0.3015 (0.9804 is n₂/n₁)."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>NA = √(n₁² − n₂²) = √(2,3409 − 2,25) = √0,0909 = 0,3015. 0,9804 là n₂/n₁ (dùng cho góc tới hạn), 0,03 là hiệu chiết suất. θa = sin⁻¹(0,3015) = 17,55°.</p><p>Trong NA có căn bậc hai của hiệu hai bình phương, không phải hiệu hai chiết suất.</p>",
+   "en": "<p>NA = √(n₁² − n₂²) = √(2.3409 − 2.25) = √0.0909 = 0.3015. 0.9804 is n₂/n₁ (used for the critical angle) and 0.03 is the index difference. θa = sin⁻¹(0.3015) = 17.55°.</p><p>NA contains the square root of the difference of squares, not the difference of indices.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với NA = 0,275, λ = 1300 nm và lõi 62,5 µm, tần số chuẩn hoá V gần nhất với:",
+   "en": "With NA = 0.275, λ = 1300 nm and a 62.5 µm core, the normalised frequency V is closest to:"
+  },
+  "opts": [
+   {
+    "vi": "13,2",
+    "en": "13.2"
+   },
+   {
+    "vi": "41,5",
+    "en": "41.5"
+   },
+   {
+    "vi": "83,1",
+    "en": "83.1"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "V = π × 62,5×10⁻⁶ × 0,275 / 1300×10⁻⁹ = 41,54.",
+   "en": "V = π × 62.5×10⁻⁶ × 0.275 / 1300×10⁻⁹ = 41.54."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>V = π d NA / λ = π × 62,5×10⁻⁶ × 0,275 / 1300×10⁻⁹ = 41,54. 13,2 chia thêm π; 83,1 nhân gấp đôi vì dùng bán kính thay đường kính ngược.</p><p>Chú ý d là đường kính lõi, không phải bán kính.</p>",
+   "en": "<p>V = π d NA / λ = π × 62.5×10⁻⁶ × 0.275 / 1300×10⁻⁹ = 41.54. 13.2 divides by an extra π; 83.1 doubles it by mixing up radius and diameter.</p><p>Note d is the core diameter, not the radius.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với V = 41,5 sợi đa mode chiết suất bậc truyền khoảng bao nhiêu mode?",
+   "en": "With V = 41.5, about how many modes does a multimode step-index fibre carry?"
+  },
+  "opts": [
+   {
+    "vi": "1 725",
+    "en": "1,725"
+   },
+   {
+    "vi": "41",
+    "en": "41"
+   },
+   {
+    "vi": "863",
+    "en": "863"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "N ≈ V²/2 = 1725/2 ≈ 863.",
+   "en": "N ≈ V²/2 = 1725/2 ≈ 863."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>N ≈ V²/2 = 41,54²/2 = 1725/2 ≈ 863 mode. 41 là chính V và 1 725 là V² quên chia 2.</p><p>Số mode lớn nghĩa là tán sắc mode mạnh.</p>",
+   "en": "<p>N ≈ V²/2 = 41.54²/2 = 1725/2 ≈ 863 modes. 41 is V itself and 1,725 is V² without the division by 2.</p><p>A large mode count means strong modal dispersion.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ngân sách công suất khi vào 1 mW và ra tối thiểu 50 µW là:",
+   "en": "The power budget for 1 mW in and 50 µW minimum out is:"
+  },
+  "opts": [
+   {
+    "vi": "13,0 dB",
+    "en": "13.0 dB"
+   },
+   {
+    "vi": "3,0 dB",
+    "en": "3.0 dB"
+   },
+   {
+    "vi": "20,0 dB",
+    "en": "20.0 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "10 log₁₀(1000/50) = 10 log₁₀(20) = 13,01 dB.",
+   "en": "10 log₁₀(1000/50) = 10 log₁₀(20) = 13.01 dB."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Ngân sách = 10 log₁₀(1 mW/50 µW) = 10 log₁₀(20) = 13,01 dB. 20 dB là tỉ số 20 viết nhầm thành dB, còn 3 dB chỉ là gấp đôi.</p><p>Công suất tính bằng dB là 10 log, không phải 20 log.</p>",
+   "en": "<p>Budget = 10 log₁₀(1 mW/50 µW) = 10 log₁₀(20) = 13.01 dB. 20 dB writes the ratio 20 as dB, and 3 dB is only double.</p><p>Power in dB uses 10 log, not 20 log.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với ngân sách 13 dB và suy hao 0,35 dB/km, chiều dài sợi tối đa là:",
+   "en": "With a 13 dB budget and 0.35 dB/km attenuation, the maximum fibre length is:"
+  },
+  "opts": [
+   {
+    "vi": "4,6 km",
+    "en": "4.6 km"
+   },
+   {
+    "vi": "13,0 km",
+    "en": "13.0 km"
+   },
+   {
+    "vi": "37,2 km",
+    "en": "37.2 km"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "13,01/0,35 = 37,2 km.",
+   "en": "13.01/0.35 = 37.2 km."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>L_max = 13,01 dB / 0,35 dB/km = 37,2 km. 4,6 km là kết quả nếu dùng 2,8 dB/km, 13,0 km là nhầm ngân sách với chiều dài.</p><p>Phụ thuộc suy hao đọc từ đồ thị: 0,18 dB/km (1550 nm) cho 72,3 km.</p>",
+   "en": "<p>L_max = 13.01 dB / 0.35 dB/km = 37.2 km. 4.6 km would result from 2.8 dB/km, and 13.0 km confuses the budget with the length.</p><p>It depends on the attenuation read from the graph: 0.18 dB/km (1550 nm) gives 72.3 km.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ánh sáng đi từ nước (n ≈ 1,33) vào không khí (n = 1,0). Tia khúc xạ:",
+   "en": "Light goes from water (n ≈ 1.33) into air (n = 1.0). The refracted ray:"
+  },
+  "opts": [
+   {
+    "vi": "bẻ về phía pháp tuyến",
+    "en": "bends toward the normal"
+   },
+   {
+    "vi": "không đổi hướng",
+    "en": "does not change direction"
+   },
+   {
+    "vi": "bẻ ra xa pháp tuyến",
+    "en": "bends away from the normal"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Vào môi trường chiết suất thấp hơn thì θr > θi (slide 12). Câu chữ ngược lại trong Tooley 10.2 là sai.",
+   "en": "Entering a lower index gives θr > θi (slide 12). Tooley 10.2's opposite wording is wrong."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Vào môi trường có chiết suất thấp hơn thì θr > θi: tia bẻ ra xa pháp tuyến (slide 12). Câu chữ của Tooley mục 10.2 viết ngược quy tắc này nên không dùng để học. Ví dụ: nước (1,33) vào không khí tại 30° cho sin θr = 1,33 × 0,5 = 0,665, θr = 41,7° > 30°.</p><p>Từ chiết suất cao sang thấp: ra xa; thấp sang cao: về gần.</p>",
+   "en": "<p>Entering a lower index gives θr > θi: the ray bends away from the normal (slide 12). Tooley section 10.2 states the rule backwards so it should not be used for study. Example: water (1.33) into air at 30° gives sin θr = 1.33 × 0.5 = 0.665, θr = 41.7° > 30°.</p><p>High to low index: away; low to high: toward.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai bước sóng có suy hao thấp nhất của sợi silica là khoảng:",
+   "en": "The two lowest-attenuation wavelengths of silica fibre are about:"
+  },
+  "opts": [
+   {
+    "vi": "1390 nm và 1700 nm",
+    "en": "1390 nm and 1700 nm"
+   },
+   {
+    "vi": "850 nm và 1000 nm",
+    "en": "850 nm and 1000 nm"
+   },
+   {
+    "vi": "1310 nm và 1550 nm",
+    "en": "1310 nm and 1550 nm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Slide 26: ≈ 0,35 dB/km ở 1310 nm và ≈ 0,18 dB/km ở 1550 nm; 1,39 µm là đỉnh hấp thụ OH⁻.",
+   "en": "Slide 26: ≈ 0.35 dB/km at 1310 nm and ≈ 0.18 dB/km at 1550 nm; 1.39 µm is the OH⁻ peak."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Slide 26: suy hao cực tiểu ≈ 0,35 dB/km ở 1310 nm và ≈ 0,18 dB/km ở 1550 nm, nên hầu hết hệ quang hoạt động ở hai bước sóng này. 1390 nm là đỉnh hấp thụ OH⁻ (nước) nên tránh; 850 nm dùng cho liên kết ngắn đa mode.</p><p>Ba cửa sổ: 850, 1310, 1550 nm.</p>",
+   "en": "<p>Slide 26: loss minima ≈ 0.35 dB/km at 1310 nm and ≈ 0.18 dB/km at 1550 nm, so most optical systems run at these two wavelengths. 1390 nm is the OH⁻ (water) absorption peak so it is avoided; 850 nm serves short multimode links.</p><p>Three windows: 850, 1310, 1550 nm.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Loại sợi nào có băng thông cao nhất?",
+   "en": "Which fibre type has the highest bandwidth?"
+  },
+  "opts": [
+   {
+    "vi": "Đa mode chiết suất biến thiên",
+    "en": "Multimode graded-index"
+   },
+   {
+    "vi": "Đa mode chiết suất bậc",
+    "en": "Multimode step-index"
+   },
+   {
+    "vi": "Đơn mode",
+    "en": "Single-mode"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đơn mode không có tán sắc mode (slide 30).",
+   "en": "Single-mode has no modal dispersion (slide 30)."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Sợi đơn mode có băng thông cao nhất vì chỉ một mode truyền nên không có tán sắc mode (slide 30). Đa mode chiết suất bậc có băng thông thấp nhất, đa mode chiết suất biến thiên ở giữa.</p><p>Thứ tự băng thông: SM > MM-GI > MM-SI.</p>",
+   "en": "<p>Single-mode fibre has the highest bandwidth because only one mode propagates, so there is no modal dispersion (slide 30). Multimode step-index has the lowest bandwidth, graded-index lies between.</p><p>Bandwidth order: SM > MM-GI > MM-SI.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sáu đầu nối, mỗi đầu tổn hao 0,5 dB. Tổng tổn hao đầu nối là:",
+   "en": "Six connectors, each with 0.5 dB loss. The total connector loss is:"
+  },
+  "opts": [
+   {
+    "vi": "3 dB",
+    "en": "3 dB"
+   },
+   {
+    "vi": "6 dB",
+    "en": "6 dB"
+   },
+   {
+    "vi": "0,5 dB",
+    "en": "0.5 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "6 × 0,5 = 3 dB (Tooley 10.4.2).",
+   "en": "6 × 0.5 = 3 dB (Tooley 10.4.2)."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>6 × 0,5 dB = 3 dB (Tooley 10.4.2), tương đương nhiều km sợi tổn hao thấp. Cộng dB được vì dB là thang logarit của tỉ số: nhiều tổn hao nối tiếp thì cộng.</p><p>0,5 dB ứng với việc mất khoảng 11% công suất ở mỗi đầu nối.</p>",
+   "en": "<p>6 × 0.5 dB = 3 dB (Tooley 10.4.2), equal to several kilometres of low-loss fibre. dB can be added because dB is a logarithmic scale of a ratio: losses in series add.</p><p>0.5 dB means losing about 11% of the power at each connector.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Công suất giảm 20 dB tức là công suất còn lại bằng bao nhiêu lần ban đầu?",
+   "en": "A 20 dB power loss means the remaining power is what fraction of the original?"
+  },
+  "opts": [
+   {
+    "vi": "0,5",
+    "en": "0.5"
+   },
+   {
+    "vi": "0,01",
+    "en": "0.01"
+   },
+   {
+    "vi": "0,1",
+    "en": "0.1"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "10^(−20/10) = 0,01.",
+   "en": "10^(−20/10) = 0.01."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>10^(−20/10) = 10⁻² = 0,01: mất 20 dB là còn 1% công suất. 0,1 là kết quả của −10 dB và 0,5 của −3 dB.</p><p>Trong hệ biên độ (điện áp) −20 dB là 0,1 lần.</p>",
+   "en": "<p>10^(−20/10) = 10⁻² = 0.01: losing 20 dB leaves 1% of the power. 0.1 is the result of −10 dB and 0.5 of −3 dB.</p><p>In amplitude (voltage) terms −20 dB is a factor of 0.1.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 08 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 08 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với n₁ = 1,48 và n₂ = 1,46, góc tới hạn θc tại biên lõi và vỏ xấp xỉ:",
+   "en": "With n₁ = 1.48 and n₂ = 1.46, the critical angle θc at the core-cladding boundary is about:"
+  },
+  "opts": [
+   {
+    "vi": "9,4°",
+    "en": "9.4°"
+   },
+   {
+    "vi": "45,0°",
+    "en": "45.0°"
+   },
+   {
+    "vi": "80,6°",
+    "en": "80.6°"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "θc = sin⁻¹(1,46/1,48) = sin⁻¹(0,9865) ≈ 80,6°.",
+   "en": "θc = sin⁻¹(1.46/1.48) = sin⁻¹(0.9865) ≈ 80.6°."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Hiệu chiết suất chỉ 0,02 nên θc rất gần 90°: tia phải gần như song song trục mới bị phản xạ toàn phần. 9,4° = 90° − 80,6° là góc giữa tia và trục; 45° chỉ đúng khi n₂/n₁ = 0,707.</p><p>Sợi có hiệu chiết suất nhỏ thì nón chấp nhận hẹp.</p>",
+   "en": "<p>The index difference is only 0.02 so θc is very close to 90°: the ray must be almost parallel to the axis to be totally reflected. 9.4° = 90° − 80.6° is the angle between ray and axis; 45° would hold only if n₂/n₁ = 0.707.</p><p>A small index difference means a narrow acceptance cone.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 14, 17",
+   "en": "Tooley 10.2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong sợi n₁ = 1,48, n₂ = 1,46 đặt trong không khí, khẩu độ số NA bằng:",
+   "en": "For a fibre with n₁ = 1.48, n₂ = 1.46 in air, the numerical aperture NA is:"
+  },
+  "opts": [
+   {
+    "vi": "0,986",
+    "en": "0.986"
+   },
+   {
+    "vi": "0,242",
+    "en": "0.242"
+   },
+   {
+    "vi": "0,020",
+    "en": "0.020"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "NA = √(1,48² − 1,46²) = √0,0588 = 0,2425.",
+   "en": "NA = √(1.48² − 1.46²) = √0.0588 = 0.2425."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>1,48² = 2,1904 và 1,46² = 2,1316, hiệu 0,0588, căn = 0,2425 (làm tròn 0,242). θa = sin⁻¹(0,2425) = 14,0°. 0,02 là hiệu chiết suất và 0,986 là n₂/n₁.</p><p>NA đặc trưng khả năng thu sáng.</p>",
+   "en": "<p>1.48² = 2.1904 and 1.46² = 2.1316, difference 0.0588, root = 0.2425 (rounds to 0.242). θa = sin⁻¹(0.2425) = 14.0°. 0.02 is the index difference and 0.986 is n₂/n₁.</p><p>NA describes light-gathering ability.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 17",
+   "en": "Tooley 10.2.1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sợi step-index đa mode có NA = 0,20 chạy ở 850 nm với khoảng 1000 mode. Đường kính lõi xấp xỉ:",
+   "en": "A step-index multimode fibre with NA = 0.20 at 850 nm carries about 1000 modes. The core diameter is about:"
+  },
+  "opts": [
+   {
+    "vi": "605 µm",
+    "en": "605 µm"
+   },
+   {
+    "vi": "60,5 µm",
+    "en": "60.5 µm"
+   },
+   {
+    "vi": "6,05 µm",
+    "en": "6.05 µm"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "V = √(2M) = 44,7; a = Vλ/(2π NA) = 30,25 µm nên d = 60,5 µm.",
+   "en": "V = √(2M) = 44.7; a = Vλ/(2π NA) = 30.25 µm so d = 60.5 µm."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Từ N ≈ V²/2 suy V = √(2 × 1000) = 44,72. Từ V = (2π a/λ) NA suy a = Vλ/(2π NA) = 44,72 × 0,85 µm/(2π × 0,20) = 30,25 µm; d = 2a = 60,5 µm, gần với đáp án trên slide 36. 6,05 µm và 605 µm sai bậc 10.</p><p>Đây là bài slide 36 của bài giảng.</p>",
+   "en": "<p>From N ≈ V²/2, V = √(2 × 1000) = 44.72. From V = (2π a/λ) NA, a = Vλ/(2π NA) = 44.72 × 0.85 µm/(2π × 0.20) = 30.25 µm; d = 2a = 60.5 µm, close to the answer on slide 36. 6.05 µm and 605 µm are off by a factor of 10.</p><p>This is the lecture's slide 36 exercise.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 36",
+   "en": "Fiber optics lecture · slide 36"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cùng sợi đó (a = 30,25 µm, NA = 0,20) ở 1550 nm thì tần số chuẩn hoá V và số mode xấp xỉ:",
+   "en": "The same fibre (a = 30.25 µm, NA = 0.20) at 1550 nm has a normalised frequency V and mode count of about:"
+  },
+  "opts": [
+   {
+    "vi": "V = 24,5; khoảng 301 mode",
+    "en": "V = 24.5; about 301 modes"
+   },
+   {
+    "vi": "V = 44,7; khoảng 1000 mode",
+    "en": "V = 44.7; about 1000 modes"
+   },
+   {
+    "vi": "V = 28,8; khoảng 301 mode",
+    "en": "V = 28.8; about 301 modes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V = 2π a NA/λ = 24,52; M = V²/2 = 300,7.",
+   "en": "V = 2π a NA/λ = 24.52; M = V²/2 = 300.7."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Bước sóng dài hơn thì V nhỏ hơn: V tỉ lệ nghịch với λ. Ở 1320 nm V = 28,8 và M ≈ 414; ở 850 nm V = 44,7 và M = 1000. Phương án thứ ba trộn V của 1320 nm với M của 1550 nm, phương án hai là V tại 850 nm.</p><p>Bài slide 36: ở 1550 nm V ≈ 24,5 và M ≈ 301.</p>",
+   "en": "<p>A longer wavelength gives a smaller V: V is inversely proportional to λ. At 1320 nm V = 28.8 and M ≈ 414; at 850 nm V = 44.7 and M = 1000. The third option mixes the V of 1320 nm with the M of 1550 nm and the second is V at 850 nm.</p><p>Slide 36: at 1550 nm V ≈ 24.5 and M ≈ 301.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 36",
+   "en": "Fiber optics lecture · slide 36"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sợi có suy hao 0,18 dB/km, công suất vào 1 mW và công suất tối thiểu thu được 50 µW. Chiều dài tối đa xấp xỉ:",
+   "en": "A fibre has 0.18 dB/km, 1 mW input and a minimum detectable power of 50 µW. The maximum length is about:"
+  },
+  "opts": [
+   {
+    "vi": "72,3 km",
+    "en": "72.3 km"
+   },
+   {
+    "vi": "37,2 km",
+    "en": "37.2 km"
+   },
+   {
+    "vi": "7,2 km",
+    "en": "7.2 km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "13,01 dB / 0,18 dB/km = 72,3 km.",
+   "en": "13.01 dB / 0.18 dB/km = 72.3 km."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Cùng ngân sách 13,01 dB nhưng suy hao nhỏ hơn nên đi xa hơn. 37,2 km là kết quả ở 0,35 dB/km (1310 nm) và 7,2 km sai một bậc 10.</p><p>Vì vậy khi nộp bài slide 27 cần ghi α đã dùng.</p>",
+   "en": "<p>The same 13.01 dB budget with lower attenuation goes farther. 37.2 km is the result at 0.35 dB/km (1310 nm) and 7.2 km is off by a factor of 10.</p><p>So state the α you used when handing in the slide 27 exercise.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 26, 27",
+   "en": "Fiber optics lecture · slides 26, 27"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Công suất vào 2 mW, sau một đoạn sợi dài 10 km suy hao 0,2 dB/km công suất ra là:",
+   "en": "With 2 mW input, after a 10 km fibre section of 0.2 dB/km the output power is:"
+  },
+  "opts": [
+   {
+    "vi": "0,02 mW",
+    "en": "0.02 mW"
+   },
+   {
+    "vi": "1,26 mW",
+    "en": "1.26 mW"
+   },
+   {
+    "vi": "1,0 mW",
+    "en": "1.0 mW"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tổn hao 2 dB; 2 mW × 10^(−0,2) = 1,26 mW.",
+   "en": "Loss 2 dB; 2 mW × 10^(−0.2) = 1.26 mW."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>A = 0,2 dB/km × 10 km = 2 dB. P_out = P_in × 10^(−2/10) = 2 × 0,631 = 1,26 mW. 1,0 mW sẽ là mất 3 dB; 0,02 mW là mất 20 dB.</p><p>Ghi nhớ: 3 dB ≈ nửa công suất, 10 dB ≈ còn một phần mười.</p>",
+   "en": "<p>A = 0.2 dB/km × 10 km = 2 dB. P_out = P_in × 10^(−2/10) = 2 × 0.631 = 1.26 mW. 1.0 mW would be a 3 dB loss; 0.02 mW would be 20 dB.</p><p>Remember: 3 dB ≈ half the power, 10 dB ≈ one tenth.</p>"
+  },
+  "src": {
+   "vi": "Tooley 10.2.2; bài giảng slide 26",
+   "en": "Tooley 10.2.2; lecture slide 26"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xung giãn thêm trong sợi đa mode; tán sắc mode tính theo công thức đúng cho tia tới hạn là:",
+   "en": "In a multimode fibre, modal dispersion for the critical ray is given by the correct formula:"
+  },
+  "opts": [
+   {
+    "vi": "Δt = (n₁ − n₂)L/c",
+    "en": "Δt = (n₁ − n₂)L/c"
+   },
+   {
+    "vi": "Δt = L/(n₁ c)",
+    "en": "Δt = L/(n₁ c)"
+   },
+   {
+    "vi": "Δt = n₁(n₁ − n₂)L/(c n₂)",
+    "en": "Δt = n₁(n₁ − n₂)L/(c n₂)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tia tới hạn đi L/sin θc = L n₁/n₂.",
+   "en": "The critical ray travels L/sin θc = L n₁/n₂."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Tia dọc trục đi L trong thời gian n₁L/c; tia tới hạn đi L n₁/n₂ nên mất n₁²L/(n₂c). Hiệu: Δt = n₁L/c × (n₁/n₂ − 1) = n₁(n₁ − n₂)L/(c n₂). Slide 28 viết (n₁ − n₂)L/c thiếu hệ số n₁/n₂ (≈ 1,01 đến 1,03, sai khác nhỏ). Với n₁ − n₂ = 0,02 đến 0,04 ra khoảng 67 đến 137 ns/km chứ không phải 10 đến 50 ns/km.</p><p>Đã kiểm bằng code trong notebook.</p>",
+   "en": "<p>The axial ray travels L in a time n₁L/c; the critical ray travels L n₁/n₂ so it takes n₁²L/(n₂c). The difference: Δt = n₁L/c × (n₁/n₂ − 1) = n₁(n₁ − n₂)L/(c n₂). Slide 28 writes (n₁ − n₂)L/c, missing the factor n₁/n₂ (≈ 1.01 to 1.03, a small difference). With n₁ − n₂ = 0.02 to 0.04 it gives about 67 to 137 ns/km, not 10 to 50 ns/km.</p><p>Checked in code in the notebook.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 28",
+   "en": "Fiber optics lecture · slide 28"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ số chuyển đổi giữa suy hao theo dB/km và theo Np/km là:",
+   "en": "The conversion between attenuation in dB/km and in Np/km is:"
+  },
+  "opts": [
+   {
+    "vi": "A(dB/km) = 0,115 × α(Np/km)",
+    "en": "A(dB/km) = 0.115 × α(Np/km)"
+   },
+   {
+    "vi": "A(dB/km) = 4,343 × α(Np/km)",
+    "en": "A(dB/km) = 4.343 × α(Np/km)"
+   },
+   {
+    "vi": "A(dB/km) = 2 × α(Np/km)",
+    "en": "A(dB/km) = 2 × α(Np/km)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "4,343 = 10/ln 10.",
+   "en": "4.343 = 10/ln 10."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>P(L)/P(0) = e^(−αL) nên 10 log₁₀ của nó bằng −4,343 αL. Ví dụ 0,35 dB/km ứng với α = 0,0806 Np/km. 0,115 là hệ số ngược (1/8,686 cho biên độ không phải công suất).</p><p>Tooley mục 10.2.2: hệ số suy hao chỉ tính tổn hao của chính sợi.</p>",
+   "en": "<p>P(L)/P(0) = e^(−αL) so 10 log₁₀ of it equals −4.343 αL. Example: 0.35 dB/km corresponds to α = 0.0806 Np/km. 0.115 is the inverse factor (1/8.686 for amplitude, not power).</p><p>Tooley section 10.2.2: the attenuation coefficient counts only the fibre's own loss.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 26",
+   "en": "Fiber optics lecture · slide 26"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sợi đa mode chiết suất biến thiên (graded-index) so với chiết suất bậc có đặc điểm gì?",
+   "en": "How does graded-index multimode fibre compare with step-index?"
+  },
+  "opts": [
+   {
+    "vi": "Chỉ truyền một mode",
+    "en": "Carries only one mode"
+   },
+   {
+    "vi": "Tán sắc mode cao hơn",
+    "en": "Higher modal dispersion"
+   },
+   {
+    "vi": "Tán sắc mode thấp hơn và băng thông cao hơn",
+    "en": "Lower modal dispersion and higher bandwidth"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Slide 30: MM-GI mặt cắt parabol, tán sắc thấp hơn MM-SI.",
+   "en": "Slide 30: MM-GI has a parabolic profile, lower dispersion than MM-SI."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Ở sợi chiết suất biến thiên, tia xa trục đi trong vùng chiết suất thấp hơn nên chạy nhanh hơn, bù cho đường dài, nên các mode đến gần như đồng thời. Chỉ một mode là sợi đơn mode. Nhãn trên slide (MM-SI) cho cột giữa là nhầm: đúng là MM-GI.</p><p>Thứ tự băng thông: SM > MM-GI > MM-SI.</p>",
+   "en": "<p>In graded-index fibre, rays far from the axis travel in a lower-index region so they run faster, compensating for the longer path, so the modes arrive nearly together. Only one mode is single-mode fibre. The slide's label (MM-SI) on the middle column is a mistake: the correct label is MM-GI.</p><p>Bandwidth order: SM > MM-GI > MM-SI.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 30",
+   "en": "Fiber optics lecture · slide 30"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cáp quang điển hình của Tooley 10.4.1 gồm:",
+   "en": "The typical fibre-optic cable in Tooley 10.4.1 comprises:"
+  },
+  "opts": [
+   {
+    "vi": "2 sợi quang và 5 sợi đệm",
+    "en": "Two optical fibres and five fillers"
+   },
+   {
+    "vi": "5 sợi quang và 2 sợi đệm, băng keo polyester, sợi aramid, vỏ ngoài",
+    "en": "Five optical fibres and two filler strands, separator tape, aramid yarn, outer jacket"
+   },
+   {
+    "vi": "7 sợi quang không có sợi đệm",
+    "en": "Seven optical fibres without fillers"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "5 + 2: năm sợi dẫn sáng, hai sợi đệm giữ hình dạng.",
+   "en": "5 + 2: five light-carrying fibres, two fillers to keep the shape."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Sợi đệm polyester giữ hình dạng cáp, băng keo polyester làm cáp mềm, sợi aramid (Kevlar) chịu kéo, vỏ nhiệt dẻo (thường tím) chống ẩm và cách điện. Mỗi sợi có buffer mã màu (xanh lam, đỏ, xanh lá, vàng, trắng).</p><p>Bài giảng slide 31 vẽ cùng cấu trúc.</p>",
+   "en": "<p>The polyester fillers hold the cable shape, polyester tape makes it flexible, aramid (Kevlar) yarn carries tension, and the thermoplastic jacket (usually purple) resists moisture and insulates. Each fibre has a colour-coded buffer (blue, red, green, yellow, white).</p><p>Lecture slide 31 draws the same structure.</p>"
+  },
+  "src": {
+   "vi": "Tooley 10.4.1",
+   "en": "Tooley 10.4.1"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dấu hiệu nào cho biết đầu nối quang đã được ghép đúng?",
+   "en": "Which sign shows an optical connector has been mated correctly?"
+  },
+  "opts": [
+   {
+    "vi": "Không còn thấy dải màu nào",
+    "en": "No colour band is visible any more"
+   },
+   {
+    "vi": "Dải đỏ trên đế bị vòng ren che ít nhất 50%",
+    "en": "The receptacle's red band is at least 50% covered by the coupling nut"
+   },
+   {
+    "vi": "Dải vàng trên phích bị che hoàn toàn bởi đế",
+    "en": "The plug's yellow band is completely covered by the receptacle"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tooley 10.4.2: kết nối đúng khi dải đỏ bị che ít nhất 50%.",
+   "en": "Tooley 10.4.2: a correct connection is made when the red band is at least 50% covered."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Vòng ren của phích có dải vàng, đế có dải đỏ. Vị trí che 50% cho biết các sợi trong phích đã thẳng hàng đầu-đầu với sợi trong đế. Siết quá chặt có thể làm hỏng sợi nên các chốt dẫn hướng của phích có chức năng giới hạn.</p><p>Ba ren khởi đầu bảo đảm vào thẳng.</p>",
+   "en": "<p>The plug's coupling nut has a yellow band and the receptacle a red band. The 50% covering position indicates that the fibres in the plug are aligned end to end with those in the receptacle. Over-tightening can damage the fibres so the plug's guide pins act as a buffer stop.</p><p>The three start threads ensure a straight start.</p>"
+  },
+  "src": {
+   "vi": "Tooley 10.4.2",
+   "en": "Tooley 10.4.2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao phải ngắt cáp ở cả hai đầu trước khi quan sát mặt đầu nối quang?",
+   "en": "Why must the cable be disconnected at both ends before examining an optical connector face?"
+  },
+  "opts": [
+   {
+    "vi": "Vì sợi quang sẽ bị nóng chảy",
+    "en": "Because the fibre would melt"
+   },
+   {
+    "vi": "Vì đầu nối có điện áp cao",
+    "en": "Because the connector carries a high voltage"
+   },
+   {
+    "vi": "Vì ánh sáng hồng ngoại vô hình và có thể đủ mạnh để gây tổn thương mắt vĩnh viễn",
+    "en": "Because the infrared light is invisible and can be intense enough to cause permanent eye damage"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley Key Point mục 10.4.2.",
+   "en": "Tooley Key Point in section 10.4.2."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Mắt không thấy ánh sáng hồng ngoại nên không phản xạ chớp để tự bảo vệ. Sợi quang không mang điện áp cao và không nóng chảy ở công suất truyền thông.</p><p>Quy tắc an toàn: không bao giờ nhìn vào đầu sợi hay đầu nối đang nối với nguồn.</p>",
+   "en": "<p>The eye cannot see infrared so the blink reflex does not protect it. Fibre carries no high voltage and does not melt at communication power levels.</p><p>Safety rule: never look into a fibre end or connector connected to a source.</p>"
+  },
+  "src": {
+   "vi": "Tooley 10.4.2",
+   "en": "Tooley 10.4.2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Boeing 777 là máy bay thương mại đầu tiên có mạng cục bộ bằng sợi quang. Hai mạng đó là gì?",
+   "en": "The Boeing 777 was the first commercial aircraft with an optical-fibre LAN. What are the two networks?"
+  },
+  "opts": [
+   {
+    "vi": "AFDX và ARINC 429",
+    "en": "AFDX and ARINC 429"
+   },
+   {
+    "vi": "FDDI và CAN",
+    "en": "FDDI and CAN"
+   },
+   {
+    "vi": "AVLAN (avionics) và CABLAN (cabin)",
+    "en": "AVLAN (avionics) and CABLAN (cabin)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley 10.4: AVLAN ở buồng lái và khoang thiết bị điện, CABLAN ở trần khoang khách.",
+   "en": "Tooley 10.4: AVLAN in the flight deck and electrical equipment bay, CABLAN in the cabin roof."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Cả hai theo ARINC 636, cải biên từ FDDI để đạt 100 Mbps. AFDX là mạng Ethernet chuyển mạch của A380/A350 (Module 05), CAN là bus ô tô.</p><p>FDDI là nguồn gốc của chuẩn, không phải tên mạng.</p>",
+   "en": "<p>Both follow ARINC 636, adapted from FDDI to reach 100 Mbps. AFDX is the switched Ethernet of the A380/A350 (Module 05) and CAN is an automotive bus.</p><p>FDDI is the origin of the standard, not the network's name.</p>"
+  },
+  "src": {
+   "vi": "Tooley 10.4",
+   "en": "Tooley 10.4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong bộ chuyển mạch vòng quang (BSU), mức logic CAO trên PRI HI hoặc SEC HI làm gì?",
+   "en": "In a bypass switch unit (BSU) of the optical ring, what does a logic HIGH on PRI HI or SEC HI do?"
+  },
+  "opts": [
+   {
+    "vi": "Ngắt BSU khỏi vòng",
+    "en": "Disconnects the BSU from the ring"
+   },
+   {
+    "vi": "Nối BSU vào vòng sợi quang",
+    "en": "Connects the BSU to the fibre-optic ring"
+   },
+   {
+    "vi": "Tắt bộ định tuyến",
+    "en": "Switches off the router"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tooley 10.5: HI = nối; THẤP = ngắt; PRI RTN và SEC RTN là đường đất (tích cực mức thấp).",
+   "en": "Tooley 10.5: HIGH = connect; LOW = disconnect; PRI RTN and SEC RTN are grounds (active low)."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Bộ định tuyến gửi bốn tín hiệu điều khiển đến BSU: PRI HI, PRI RTN, SEC HI, SEC RTN. Giao diện quang chuyển tín hiệu quang của BSU thành tín hiệu điện và ngược lại. Mức THẤP trên HI ngắt BSU để vòng vẫn chạy khi nút đó hỏng.</p><p>Đây là một cơ chế dự phòng cho mạng vòng.</p>",
+   "en": "<p>The router sends four control signals to the BSU: PRI HI, PRI RTN, SEC HI, SEC RTN. The fibre-optic interface converts the BSU's optical signals to electrical ones and vice versa. A LOW on HI disconnects the BSU so the ring keeps running when that node fails.</p><p>This is a redundancy mechanism for a ring network.</p>"
+  },
+  "src": {
+   "vi": "Tooley 10.5",
+   "en": "Tooley 10.5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong sơ đồ khối liên kết sợi quang (Floyd Hình 13-8), thành phần nào đổi ánh sáng trở lại thành tín hiệu điện?",
+   "en": "In the fibre-optic link block diagram (Floyd Figure 13-8), which block converts light back into an electrical signal?"
+  },
+  "opts": [
+   {
+    "vi": "Đầu nối quang",
+    "en": "The optical connector"
+   },
+   {
+    "vi": "Bộ chuyển đổi ánh sáng sang điện ở phía thu",
+    "en": "The light-to-electrical converter at the receiver"
+   },
+   {
+    "vi": "Bộ chuyển đổi điện sang ánh sáng ở phía phát",
+    "en": "The electrical-to-light converter at the transmitter"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Hình 13-8: nguồn điện → điện-sang-sáng → cáp sợi → sáng-sang-điện → bộ thu.",
+   "en": "Figure 13-8: electrical source → electrical-to-light → fibre cable → light-to-electrical → receiver."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Phía phát tín hiệu điện điều chế cường độ ánh sáng; phía thu photodiode đổi ngược. Đầu nối chỉ ghép ánh sáng vào hoặc ra khỏi cáp. Đáp án in của Bài 7 chương 13 là Hình P-100 với cùng các khối.</p><p>Phát: LED hoặc laser; thu: photodiode.</p>",
+   "en": "<p>At the transmitter the electrical signal modulates the light intensity; at the receiver a photodiode converts it back. Connectors only couple light in or out of the cable. The printed answer to chapter 13 Problem 7 is Figure P-100 with the same blocks.</p><p>Transmit: LED or laser; receive: photodiode.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1, Hình 13-8 (tr.743)",
+   "en": "Floyd Ch.13 · section 13-1, Figure 13-8 (p.743)"
+  }
+ }
+]

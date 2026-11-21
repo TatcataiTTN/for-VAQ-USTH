@@ -1,0 +1,54 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Crosstalk là gì? Làm thế nào để giảm thiểu nó?",
+   "en": "What is crosstalk? How can it be minimized?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Khớp Floyd 13-1 (tr.741) và Section Checkup: cặp dây xoắn cắt nhau gần 90° làm các trường điện từ triệt tiêu. Đây cũng là biện pháp xoắn dây của module (slide 29, 38).",
+   "en": "The printed answer is shown in the image below. Matches Floyd 13-1 (p.741) and the Section Checkup: the twisted wires cross at nearly 90° so the electromagnetic fields cancel. This is also the module's twisting measure (slides 29, 38)."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.13 · Bài 3",
+   "en": "Floyd Ch.13 · Problem 3"
+  },
+  "afig": "assets/figures/essay_floyd_ch13_q03.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch13_qq03.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cổng TTL có VIH(min) = 2,25 V và VIL(max) = 0,65 V, được lái bởi cổng có VOH(min) = 2,4 V và VOL(max) = 0,4 V. Noise margin mức CAO và THẤP là bao nhiêu?",
+   "en": "A TTL gate has the following actual voltage level values: VIH(min) = 2.25 V, VIL(max) = 0.65 V. Assuming it is being driven by a gate with VOH(min) = 2.4 V and VOL(max) = 0.4 V, what are the HIGH- and LOW-level noise margins?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính theo phương trình 15-1 và 15-2: V_NH = 2,4 − 2,25 = 0,15 V; V_NL = 0,65 − 0,4 = 0,25 V, khớp đáp án in (A-28).",
+   "en": "The printed answer is shown in the image below. Own calculation by Equations 15-1 and 15-2: V_NH = 2.4 − 2.25 = 0.15 V; V_NL = 0.65 − 0.4 = 0.25 V, matching the printed answer (A-28)."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.15 · Bài 3",
+   "en": "Floyd Ch.15 · Problem 3"
+  },
+  "afig": "assets/figures/essay_floyd_ch15_q03.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch15_qq03.png"
+  ]
+ }
+]

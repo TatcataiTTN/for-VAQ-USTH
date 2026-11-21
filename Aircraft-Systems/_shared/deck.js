@@ -1,54 +1,43 @@
+/* Mini slide-deck: điều hướng ← →, chấm tròn, Toàn màn hình, tự co giãn cỡ chữ (fit) */
+(function(){
 document.querySelectorAll('.mdeck').forEach(function(deck){
-  const slides = [...deck.querySelectorAll('.mdeck-slide')];
-  const bar = deck.querySelector('.mdeck-bar');
-  const prevBtn = bar.querySelector('.mdeck-prev'), nextBtn = bar.querySelector('.mdeck-next');
-  const count = bar.querySelector('.mdeck-count'), dotsWrap = bar.querySelector('.mdeck-dots');
-  const fsBtn = bar.querySelector('.mdeck-fs');
-  let i = 0;
-  slides.forEach((s, idx) => {
-    const d = document.createElement('button'); d.type = 'button';
-    d.setAttribute('aria-label', 'slide ' + (idx+1));
-    d.addEventListener('click', () => go(idx));
-    dotsWrap.appendChild(d);
-  });
-  const dots = [...dotsWrap.children];
+  var slides=[].slice.call(deck.querySelectorAll('.mdeck-slide'));
+  var bar=deck.querySelector('.mdeck-bar');
+  var prevBtn=bar.querySelector('.mdeck-prev'),nextBtn=bar.querySelector('.mdeck-next');
+  var count=bar.querySelector('.mdeck-count'),dotsWrap=bar.querySelector('.mdeck-dots'),fsBtn=bar.querySelector('.mdeck-fs');
+  var i=0;if(window.T){bar.querySelector('.mdeck-prev').textContent=T.prevS;bar.querySelector('.mdeck-next').textContent=T.nextS;if(fsBtn)fsBtn.textContent=T.fs;}
+  try{var saved=parseInt(sessionStorage.getItem('deck:'+location.pathname+':'+(deck.id||'0')),10);if(saved>=0&&saved<slides.length)i=saved;}catch(e){}
+  slides.forEach(function(s,idx){var d=document.createElement('button');d.type='button';d.title='Slide '+(idx+1);d.addEventListener('click',function(){go(idx)});dotsWrap.appendChild(d)});
+  var dots=[].slice.call(dotsWrap.children);
+  function isFs(){return document.fullscreenElement===deck||document.webkitFullscreenElement===deck}
+  function fit(){
+    slides.forEach(function(s){s.style.fontSize='';s.style.height=''});
+    var s=slides[i],fs=isFs(),lo=fs?16:15,hi=fs?40:26;
+    if(!fs){s.style.height=Math.max(400,Math.min(720,window.innerHeight*0.66))+'px'}
+    if(s.classList.contains('part-divider')){s.style.fontSize=(fs?26:20)+'px';if(!fs)s.style.height='';return}
+    while(hi-lo>0.5){var mid=(lo+hi)/2;s.style.fontSize=mid+'px';if(s.scrollHeight<=s.clientHeight+1)lo=mid;else hi=mid}
+    s.style.fontSize=lo+'px';
+  }
+  function fitSoon(){requestAnimationFrame(function(){requestAnimationFrame(fit)})}
   function render(){
-    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
-    dots.forEach((d, idx) => d.classList.toggle('on', idx === i));
-    count.textContent = (i+1) + '/' + slides.length;
-    prevBtn.disabled = i === 0; nextBtn.disabled = i === slides.length - 1;
+    slides.forEach(function(s,idx){s.classList.toggle('active',idx===i)});
+    dots.forEach(function(d,idx){d.classList.toggle('on',idx===i)});
+    count.textContent=(i+1)+'/'+slides.length;prevBtn.disabled=i===0;nextBtn.disabled=i===slides.length-1;
+    try{sessionStorage.setItem('deck:'+location.pathname+':'+(deck.id||'0'),i)}catch(e){}
     fitSoon();
   }
-  function isFs(){ return document.fullscreenElement === deck || document.webkitFullscreenElement === deck; }
-  function fit(){
-    slides.forEach(s => { s.style.fontSize = ''; s.style.height = ''; });
-    const s = slides[i], fs = isFs();
-    let lo = 16, hi = fs ? 40 : 28;
-    if (!fs) s.style.height = Math.max(380, Math.min(720, window.innerHeight * 0.62)) + 'px';
-    if (fs) lo = 13;
-    while (hi - lo > 0.5) {
-      const mid = (lo + hi) / 2;
-      s.style.fontSize = mid + 'px';
-      if (s.scrollHeight <= s.clientHeight + 1) lo = mid; else hi = mid;
-    }
-    s.style.fontSize = lo + 'px';
-    if (!fs) s.style.height = '';
-  }
-  function fitSoon(){ requestAnimationFrame(() => requestAnimationFrame(fit)); }
-  function go(n){ i = Math.max(0, Math.min(slides.length - 1, n)); render(); }
-  prevBtn.addEventListener('click', () => go(i - 1));
-  nextBtn.addEventListener('click', () => go(i + 1));
-  deck.tabIndex = 0;
-  deck.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowRight') go(i + 1);
-    if (e.key === 'ArrowLeft') go(i - 1);
+  function go(n){i=Math.max(0,Math.min(slides.length-1,n));render()}
+  prevBtn.addEventListener('click',function(){go(i-1)});nextBtn.addEventListener('click',function(){go(i+1)});
+  deck.tabIndex=0;
+  deck.addEventListener('keydown',function(e){
+    if(e.target.closest&&e.target.closest('input,textarea,select'))return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'){go(i+1);e.preventDefault()}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){go(i-1);e.preventDefault()}
   });
-  if (fsBtn) fsBtn.addEventListener('click', () => {
-    if (!document.fullscreenElement) deck.requestFullscreen?.(); else document.exitFullscreen?.();
-  });
-  deck.addEventListener('toggle', fitSoon, true);
-  document.addEventListener('fullscreenchange', fitSoon);
-  document.addEventListener('webkitfullscreenchange', fitSoon);
-  window.addEventListener('resize', fitSoon);
+  if(fsBtn)fsBtn.addEventListener('click',function(){if(!isFs())(deck.requestFullscreen||deck.webkitRequestFullscreen).call(deck);else(document.exitFullscreen||document.webkitExitFullscreen).call(document)});
+  deck.addEventListener('toggle',fitSoon,true);
+  document.addEventListener('fullscreenchange',fitSoon);document.addEventListener('webkitfullscreenchange',fitSoon);
+  window.addEventListener('resize',fitSoon);
   render();
 });
+})();

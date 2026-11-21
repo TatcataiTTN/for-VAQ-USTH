@@ -1,0 +1,1105 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dạng sóng đầu vào ở Hình 3–76 được đưa vào một hệ thống gồm hai cổng đảo (inverter) nối tiếp. Hãy vẽ dạng sóng ngõ ra trên mỗi cổng đảo, đúng tương quan với đầu vào.",
+   "en": "The input waveform shown in Figure 3–76 is applied to a system of two inverters connected in series. Draw the output waveform across each inverter in proper relation to the input."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Hai cổng đảo liên tiếp trả lại đúng dạng sóng ban đầu: ngõ ra cuối trùng ngõ vào.",
+   "en": "The printed answer is shown in the image below. Two inverters in a row return the original waveform: the final output equals the input."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 1",
+   "en": "Floyd Ch.3 · Problem 1"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q01.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_76.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nếu đưa dạng sóng của Hình 3–76 vào điểm A của mạch Hình 3–77, hãy xác định dạng sóng tại các điểm B đến F.",
+   "en": "If the waveform in Figure 3–76 is applied to point A in Figure 3–77, determine the waveforms at points B through F."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Kiểm chứng: B = Ā, C = A, D = Ā, E = A, F = Ā (C đi qua hai cổng đảo, F lấy từ C qua một cổng đảo).",
+   "en": "The printed answer is shown in the image below. Check: B = A′, C = A, D = A′, E = A, F = A′ (C passes through two inverters, F is taken from C through one inverter)."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về logic",
+   "en": "General logic concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 3",
+   "en": "Floyd Ch.3 · Problem 3"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q03.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_76.png",
+   "assets/figures/essay_floyd_fig03_77.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy xác định ngõ ra X của cổng AND 2 ngõ vào với các dạng sóng đầu vào ở Hình 3–78. Trình bày tương quan giữa ngõ ra và các ngõ vào bằng giản đồ thời gian.",
+   "en": "Determine the output, X, for a 2-input AND gate with the input waveforms shown in Figure 3–78. Show the proper relationship of output to inputs with a timing diagram."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 5",
+   "en": "Floyd Ch.3 · Problem 5"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q05.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_78.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Các dạng sóng đầu vào của cổng AND 3 ngõ vào được cho ở Hình 3–80. Hãy vẽ dạng sóng ngõ ra tương quan đúng với các đầu vào bằng giản đồ thời gian.",
+   "en": "The input waveforms applied to a 3-input AND gate are as indicated in Figure 3–80. Show the output waveform in proper relation to the inputs with a timing diagram."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 7",
+   "en": "Floyd Ch.3 · Problem 7"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q07.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_80.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy vẽ ký hiệu hình chữ nhật (rectangular outline) cho cổng OR 3 ngõ vào.",
+   "en": "Draw the rectangular outline symbol for a 3-input OR gate."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 9",
+   "en": "Floyd Ch.3 · Problem 9"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q09.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy xác định ngõ ra của cổng OR 2 ngõ vào khi các dạng sóng đầu vào như ở Hình 3–79 và vẽ giản đồ thời gian.",
+   "en": "Determine the output for a 2-input OR gate when the input waveforms are as in Figure 3–79 and draw a timing diagram."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 11",
+   "en": "Floyd Ch.3 · Problem 11"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q11.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_79.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lặp lại Bài 8 cho cổng OR 4 ngõ vào.<br><i>Bài 8: Các dạng sóng đầu vào của cổng AND 4 ngõ vào được cho ở Hình 3–81. Ngõ ra cổng AND được đưa vào một cổng đảo. Hãy vẽ dạng sóng ngõ ra tổng của hệ thống.</i>",
+   "en": "Repeat Problem 8 for a 4-input OR gate.<br><i>Problem 8: The input waveforms applied to a 4-input AND gate are as indicated in Figure 3–81. The output of the AND gate is fed to an inverter. Draw the net output waveform of this system.</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Vì \"lặp lại Bài 8\" bao gồm cả cổng đảo ở ngõ ra, đáp án in là NOR (OR rồi đảo): ngõ ra chỉ lên mức cao khi cả 4 đầu vào cùng thấp. Đã kiểm chứng đúng như vậy trên toàn bộ các khoảng. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Because \"repeat Problem 8\" includes the inverter at the output, the printed answer is a NOR (OR followed by inversion): the output is HIGH only when all four inputs are LOW. This was verified across all intervals. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 13",
+   "en": "Floyd Ch.3 · Problem 13"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q13.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_81.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy vẽ ký hiệu hình chữ nhật (rectangular outline) cho cổng OR 4 ngõ vào.",
+   "en": "Draw the rectangular outline symbol for a 4-input OR gate."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 15",
+   "en": "Floyd Ch.3 · Problem 15"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q15.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Với tập dạng sóng đầu vào ở Hình 3–83, hãy xác định ngõ ra của cổng được vẽ (NAND) và vẽ giản đồ thời gian.",
+   "en": "For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 17",
+   "en": "Floyd Ch.3 · Problem 17"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q17.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_83.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy xác định dạng sóng ngõ ra trong Hình 3–85 (cổng NAND 4 ngõ vào).",
+   "en": "Determine the output waveform in Figure 3–85."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 19",
+   "en": "Floyd Ch.3 · Problem 19"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q19.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_85.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lặp lại Bài 17 cho cổng NOR 2 ngõ vào.<br><i>Bài 17: Với tập dạng sóng đầu vào ở Hình 3–83, hãy xác định ngõ ra của cổng được vẽ và vẽ giản đồ thời gian.</i>",
+   "en": "Repeat Problem 17 for a 2-input NOR gate.<br><i>Problem 17: For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Chỉ dùng dạng sóng đầu vào của hình; bỏ qua ký hiệu cổng vẽ trong hình vì bài yêu cầu loại cổng khác. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Use only the input waveforms of the figure; ignore the gate symbol drawn in it, since the problem asks for a different gate. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 21",
+   "en": "Floyd Ch.3 · Problem 21"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q21.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_83.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lặp lại Bài 19 cho cổng NOR 4 ngõ vào.<br><i>Bài 19: Hãy xác định dạng sóng ngõ ra trong Hình 3–85.</i>",
+   "en": "Repeat Problem 19 for a 4-input NOR gate.<br><i>Problem 19: Determine the output waveform in Figure 3–85.</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Chỉ dùng dạng sóng đầu vào của hình; bỏ qua ký hiệu cổng vẽ trong hình vì bài yêu cầu loại cổng khác. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Use only the input waveforms of the figure; ignore the gate symbol drawn in it, since the problem asks for a different gate. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 23",
+   "en": "Floyd Ch.3 · Problem 23"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q23.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_85.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cổng exclusive-OR (XOR) khác cổng OR như thế nào về mặt hoạt động logic?",
+   "en": "How does an exclusive-OR gate differ from an OR gate in its logical operation?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 25",
+   "en": "Floyd Ch.3 · Problem 25"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q25.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lặp lại Bài 17 cho cổng exclusive-NOR.<br><i>Bài 17: Với tập dạng sóng đầu vào ở Hình 3–83, hãy xác định ngõ ra của cổng được vẽ và vẽ giản đồ thời gian.</i>",
+   "en": "Repeat Problem 17 for an exclusive-NOR gate.<br><i>Problem 17: For the set of input waveforms in Figure 3–83, determine the output for the gate shown and draw the timing diagram.</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Chỉ dùng dạng sóng đầu vào của hình; bỏ qua ký hiệu cổng vẽ trong hình vì bài yêu cầu loại cổng khác. Đáp án in đã kiểm chứng: đọc mức logic từng khoảng thời gian trực tiếp từ pixel hình đề và hình đáp án, tính lại ngõ ra bằng cổng tương ứng, khớp 100% mọi khoảng; đầu vào trong hình đáp án trùng hình đề.",
+   "en": "The printed answer is shown in the image below. Use only the input waveforms of the figure; ignore the gate symbol drawn in it, since the problem asks for a different gate. Printed answer verified: logic levels in every time interval were read directly from the pixels of the question and answer figures, the output was recomputed with the matching gate, and all intervals agree; the inputs in the answer figure match the question figure."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 27",
+   "en": "Floyd Ch.3 · Problem 27"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q27.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_83.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Trong mảng AND lập trình được với các liên kết (link) lập trình được ở Hình 3–89, hãy xác định các biểu thức Boole ở ngõ ra.",
+   "en": "In the simple programmed AND array with programmable links in Figure 3–89, determine the Boolean output expressions."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm chứng: đọc từng liên kết còn nguyên trong hình, cổng X1 nhận Ā và B, cổng X2 nhận Ā và B̄, cổng X3 nhận A và B̄, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Self-check: reading every intact link in the figure, gate X1 receives A′ and B, gate X2 receives A′ and B′, gate X3 receives A and B′, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 29",
+   "en": "Floyd Ch.3 · Problem 29"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q29.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_89.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy mô tả cổng AND 4 ngõ vào bằng VHDL.",
+   "en": "Describe a 4-input AND gate using VHDL."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Lưu ý lỗi trong đáp án in: tên entity \"4InputAND\" bắt đầu bằng chữ số nên KHÔNG hợp lệ trong VHDL (định danh phải bắt đầu bằng chữ cái), và dòng end entity ghi \"4Input AND\" có khoảng trắng. Phần logic X <= A and B and C and D là đúng.",
+   "en": "The printed answer is shown in the image below. Note on errors in the printed answer: the entity name \"4InputAND\" starts with a digit, so it is NOT a legal VHDL identifier (identifiers must start with a letter), and the end entity line reads \"4Input AND\" with a space. The logic X <= A and B and C and D is correct."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 31",
+   "en": "Floyd Ch.3 · Problem 31"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q31.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Khi so sánh một số loại linh kiện logic, người ta thấy công suất tiêu thụ của một loại tăng lên khi tần số tăng. Linh kiện đó là lưỡng cực (bipolar) hay CMOS?",
+   "en": "In the comparison of certain logic devices, it is noted that the power dissipation for one particular type increases as the frequency increases. Is the device bipolar or CMOS?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Lý do: công suất động của CMOS tỉ lệ với tần số (mỗi lần chuyển mức phải nạp/xả điện dung), còn mạch lưỡng cực tiêu thụ gần như không đổi theo tần số.",
+   "en": "The printed answer is shown in the image below. Reason: CMOS dynamic power grows with frequency (each transition charges/discharges capacitance), while bipolar logic draws nearly constant power regardless of frequency."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 33",
+   "en": "Floyd Ch.3 · Problem 33"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q33.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy xác định tPLH và tPHL từ màn hình dao động ký ở Hình 3–91. Các số đọc cho biết volt/vạch và giây/vạch của từng kênh.",
+   "en": "Determine tPLH and tPHL from the oscilloscope display in Figure 3–91. The readings indicate volts/div and sec/div for each channel."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự đo trên ảnh: tại mức 50%, tPLH ≈ 4,1 ns và tPHL ≈ 11,1 ns (5 ns/vạch). Gần với đáp án in 4,3 ns và 10,5 ns; chênh lệch nhỏ do cách ước lượng điểm 50% trên màn hình, đúng bậc đại lượng và đúng quan hệ tPHL > tPLH.",
+   "en": "The printed answer is shown in the image below. Own measurement on the image: at the 50% level, tPLH ≈ 4.1 ns and tPHL ≈ 11.1 ns (5 ns/div). Close to the printed 4.3 ns and 10.5 ns; the small difference comes from how the 50% point is estimated on screen. The order of magnitude and the relation tPHL > tPLH both agree."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 35",
+   "en": "Floyd Ch.3 · Problem 35"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q35.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_91.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nếu một cổng logic hoạt động với nguồn một chiều +5 V và tiêu thụ dòng trung bình 4 mA, công suất tiêu tán của nó là bao nhiêu?",
+   "en": "If a logic gate operates on a dc supply voltage of +5 V and draws an average current of 4 mA, what is its power dissipation?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính: P = V × I = 5 V × 4 mA = 20 mW, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Own calculation: P = V × I = 5 V × 4 mA = 20 mW, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 37",
+   "en": "Floyd Ch.3 · Problem 37"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q37.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy xét các điều kiện nêu trong Hình 3–92 và xác định các cổng bị hỏng.",
+   "en": "Examine the conditions indicated in Figure 3–92, and identify the faulty gates."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra từng cổng: (a) NAND(1,1)=0 đúng; (b) AND(1,1,0) phải bằng 0 nhưng ra 1, HỎNG; (c) cổng OR có hai đầu vào đảo, 0,0 thành 1,1 nên ngõ ra phải là 1 nhưng ra 0, HỎNG; (d) NOR(0,0,0,1)=0 đúng; (e) XOR(1,0) phải bằng 1 nhưng ra 0, HỎNG; (f) XOR(1,1)=0 đúng. Kết quả (b), (c), (e) khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Gate-by-gate check: (a) NAND(1,1)=0 correct; (b) AND(1,1,0) must be 0 but shows 1, FAULTY; (c) an OR gate with inverted inputs turns 0,0 into 1,1, so the output must be 1 but shows 0, FAULTY; (d) NOR(0,0,0,1)=0 correct; (e) XOR(1,0) must be 1 but shows 0, FAULTY; (f) XOR(1,1)=0 correct. (b), (c), (e) match the printed answer."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 39",
+   "en": "Floyd Ch.3 · Problem 39"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q39.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_92.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Mỗi lần bật công tắc đánh lửa trong mạch Hình 3–17, còi báo động kêu trong ba mươi giây, kể cả khi đã cài dây an toàn. Nguyên nhân khả dĩ nhất của sự cố này là gì?",
+   "en": "Every time the ignition switch is turned on in the circuit of Figure 3–17, the alarm comes on for thirty seconds, even when the seat belt is buckled. What is the most probable cause of this malfunction?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Suy luận: còi = A·B·C. Khi đã cài dây an toàn thì B phải THẤP, còi không thể kêu; nó vẫn kêu trong lúc bộ định thời (C) đang CAO nghĩa là ngõ vào B của cổng AND luôn bị đọc là CAO, tức dây ngõ vào đó bị hở (ngõ vào TTL để hở trôi lên mức cao). Khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Reasoning: alarm = A·B·C. With the belt buckled B must be LOW and the alarm cannot sound; if it still sounds while the timer (C) is HIGH, the AND gate's B input must always be read as HIGH, i.e. that input wire is open (an open TTL input floats HIGH). Matches the printed answer."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về logic",
+   "en": "General logic concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 43",
+   "en": "Floyd Ch.3 · Problem 43"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q43.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_17.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy sửa bộ đếm tần số ở Hình 3–16 để hoạt động với xung cho phép (enable) tích cực mức THẤP thay vì mức CAO trong khoảng 1 ms.",
+   "en": "Modify the frequency counter in Figure 3–16 to operate with an enable pulse that is active-LOW rather than HIGH during the 1 ms interval."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Suy luận: cổng AND chỉ cho xung đi qua khi chân enable ở mức CAO; nếu enable tích cực mức THẤP thì phải đảo nó trước khi vào cổng AND, đúng như đáp án in.",
+   "en": "The printed answer is shown in the image below. Reasoning: the AND gate only passes pulses while its enable pin is HIGH; with an active-LOW enable it must be inverted before reaching the AND gate, as in the printed answer."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về logic",
+   "en": "General logic concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 45",
+   "en": "Floyd Ch.3 · Problem 45"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q45.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_16.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy thiết kế một mạch đặt vào khối màu be ở Hình 3–96 sao cho đèn pha ô tô tự động tắt sau 15 s kể từ khi công tắc đánh lửa tắt, nếu công tắc đèn vẫn đang bật. Giả sử cần mức THẤP để tắt đèn.",
+   "en": "Design a circuit to fit in the beige block of Figure 3–96 that will cause the headlights of an automobile to be turned off automatically 15 s after the ignition switch is turned off, if the light switch is left on. Assume that a LOW is required to turn the lights off."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Kiểm chứng logic của đáp án in: đảo công tắc đánh lửa rồi AND với công tắc đèn, ngõ ra chỉ lên CAO khi đánh lửa TẮT và đèn BẬT; khi đó bộ định thời đếm 15 s rồi xuất mức THẤP để tắt đèn.",
+   "en": "The printed answer is shown in the image below. Logic check of the printed answer: invert the ignition switch and AND it with the light switch; the output goes HIGH only when the ignition is OFF and the lights are ON, after which the timer counts 15 s and outputs a LOW to turn the lights off."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về logic",
+   "en": "General logic concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 47",
+   "en": "Floyd Ch.3 · Problem 47"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q47.png",
+  "figs": [
+   "assets/figures/essay_floyd_fig03_96.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Trong một quy trình sản xuất tự động, linh kiện điện tử được tự động cắm vào bo mạch in (PCB). Trước khi kích hoạt dụng cụ cắm, PCB phải được định vị đúng và linh kiện cần cắm phải nằm trong buồng. Mỗi điều kiện tiên quyết này được báo bằng một mức điện áp CAO. Dụng cụ cắm cần mức điện áp THẤP để kích hoạt. Hãy thiết kế mạch thực hiện quy trình này.",
+   "en": "In a certain automated manufacturing process, electrical components are automatically inserted in a PCB. Before the insertion tool is activated, the PCB must be properly positioned, and the component to be inserted must be in the chamber. Each of these prerequisite conditions is indicated by a HIGH voltage. The insertion tool requires a LOW voltage to activate it. Design a circuit to implement this process."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Kiểm chứng: cần \"cả hai điều kiện CAO thì ngõ ra THẤP\", đó chính là cổng NAND, đúng như đáp án in.",
+   "en": "The printed answer is shown in the image below. Check: the requirement \"both conditions HIGH gives a LOW output\" is exactly a NAND gate, as in the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.3 · Problem 51",
+   "en": "Floyd Ch.3 · Problem 51"
+  },
+  "afig": "assets/figures/essay_floyd_ch03_q51.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng ký hiệu Boolean, viết một biểu thức có giá trị 0 CHỈ KHI tất cả các biến (A, B, C, D) đều bằng 0.",
+   "en": "Using Boolean notation, write an expression that is a 0 only when all of its variables (A, B, C, and D) are 0s."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 1",
+   "en": "Floyd Ch.4 · Problem 1"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q01.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tìm giá trị của các biến sao cho mỗi số hạng TÍCH bằng 1 và mỗi số hạng TỔNG bằng 0:<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) $\\overline{A}$$\\overline{B}$C &nbsp; (d) $\\overline{A}$ + $\\overline{B}$ + C<br>(e) A + $\\overline{B}$ + $\\overline{C}$ &nbsp; (f) $\\overline{A}$ + $\\overline{B}$ + $\\overline{C}$",
+   "en": "Find the values of the variables that make each product term 1 and each sum term 0.<br>(a) ABC &nbsp; (b) A + B + C &nbsp; (c) $\\overline{A}$$\\overline{B}$C &nbsp; (d) $\\overline{A}$ + $\\overline{B}$ + C<br>(e) A + $\\overline{B}$ + $\\overline{C}$ &nbsp; (f) $\\overline{A}$ + $\\overline{B}$ + $\\overline{C}$"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 5",
+   "en": "Floyd Ch.4 · Problem 5"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q05.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định luật đại số Boole làm cơ sở cho mỗi đẳng thức sau:<br>(a) A + AB + ABC + $\\overline{ABCD}$ = $\\overline{ABCD}$ + ABC + AB + A<br>(b) A + $\\overline{AB}$ + ABC + $\\overline{ABCD}$ = $\\overline{DCBA}$ + CBA + $\\overline{BA}$ + A<br>(c) AB(CD + $\\overline{CD}$ + EF + $\\overline{EF}$) = ABCD + AB$\\overline{CD}$ + ABEF + AB$\\overline{EF}$",
+   "en": "Identify the law of Boolean algebra upon which each of the following equalities is based:<br>(a) A + AB + ABC + $\\overline{ABCD}$ = $\\overline{ABCD}$ + ABC + AB + A<br>(b) A + $\\overline{AB}$ + ABC + $\\overline{ABCD}$ = $\\overline{DCBA}$ + CBA + $\\overline{BA}$ + A<br>(c) AB(CD + $\\overline{CD}$ + EF + $\\overline{EF}$) = ABCD + AB$\\overline{CD}$ + ABEF + AB$\\overline{EF}$"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 7",
+   "en": "Floyd Ch.4 · Problem 7"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q07.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Áp dụng các định lý De Morgan cho mỗi biểu thức sau:<br>(a) ~{A + $\\overline{B}$} &nbsp; (b) ~{$\\overline{A}$B} &nbsp; (c) $\\overline{A + B + C}$ &nbsp; (d) $\\overline{ABC}$<br>(e) $\\overline{A(B + C)}$ &nbsp; (f) $\\overline{AB}$ + $\\overline{CD}$ &nbsp; (g) $\\overline{AB + CD}$ &nbsp; (h) ~{(A + $\\overline{B}$)($\\overline{C}$ + D)}",
+   "en": "Apply DeMorgan's theorems to each expression:<br>(a) ~{A + $\\overline{B}$} &nbsp; (b) ~{$\\overline{A}$B} &nbsp; (c) $\\overline{A + B + C}$ &nbsp; (d) $\\overline{ABC}$<br>(e) $\\overline{A(B + C)}$ &nbsp; (f) $\\overline{AB}$ + $\\overline{CD}$ &nbsp; (g) $\\overline{AB + CD}$ &nbsp; (h) ~{(A + $\\overline{B}$)($\\overline{C}$ + D)}"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 9",
+   "en": "Floyd Ch.4 · Problem 9"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q09.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Viết biểu thức Boole cho mỗi mạch logic ở Hình 4–57.",
+   "en": "Write the Boolean expression for each of the logic circuits in Figure 4–57."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra bằng cách đọc mạch: (a) AND 4 ngõ vào, X = ABCD; (b) AND(A,B) rồi OR với C, X = AB + C; (c) đảo A, AND với B, rồi đảo ngõ ra, X = (Ā·B)‾ = A + B̄; (d) OR(A,B) rồi AND với C, X = (A + B)C. Khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Self-check by reading each circuit: (a) 4-input AND, X = ABCD; (b) AND(A,B) then OR with C, X = AB + C; (c) invert A, AND with B, then invert the output, X = (A′·B)′ = A + B′; (d) OR(A,B) then AND with C, X = (A + B)C. Matches the printed answer."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 13",
+   "en": "Floyd Ch.4 · Problem 13"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q13.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq13.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng các kỹ thuật đại số Boole, rút gọn các biểu thức sau đến mức tối đa có thể:<br>(a) A(A + B) &nbsp; (b) A($\\overline{A}$ + AB) &nbsp; (c) BC + $\\overline{B}$C<br>(d) A(A + $\\overline{A}$B) &nbsp; (e) A$\\overline{B}$C + $\\overline{A}$BC + $\\overline{A}$$\\overline{B}$C",
+   "en": "Using Boolean algebra techniques, simplify the following expressions as much as possible:<br>(a) A(A + B) &nbsp; (b) A($\\overline{A}$ + AB) &nbsp; (c) BC + $\\overline{B}$C<br>(d) A(A + $\\overline{A}$B) &nbsp; (e) A$\\overline{B}$C + $\\overline{A}$BC + $\\overline{A}$$\\overline{B}$C"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 19",
+   "en": "Floyd Ch.4 · Problem 19"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q19.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng đại số Boole, rút gọn các biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Using Boolean algebra, simplify the following expressions. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Kiểm chứng bằng sympy: (a), (c), (d), (e) khớp đáp án in. RIÊNG ý (b) KHÔNG khớp: đọc ở độ phân giải 1200 dpi, đề là B̄C̄D + (B+C+D)‾ + B̄C̄D̄E, trong đó thanh gạch dài phủ lên cả tổng (B+C+D) và không có gạch phụ nào trên D; biểu thức này rút gọn đúng thành B̄C̄, còn đáp án in là B̄C̄D + B̄C̄E. Nghi lỗi in của sách (đáp án in chỉ khớp nếu D trong tổng bị đảo, điều mà ảnh quét không cho thấy).",
+   "en": "The printed answer is shown in the image below. Verified with sympy: (a), (c), (d), (e) match the printed answer. Item (b) does NOT: read at 1200 dpi, the problem is B′C′D + (B+C+D)′ + B′C′D′E, where the long bar spans the whole sum (B+C+D) with no extra bar on D; this simplifies exactly to B′C′, while the printed answer is B′C′D + B′C′E. A likely printing error in the book (the printed answer only fits if D inside the sum were complemented, which the scan does not show)."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 21",
+   "en": "Floyd Ch.4 · Problem 21"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q21.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq21.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Chuyển các biểu thức sau sang dạng tổng các tích (SOP). Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Convert the following expressions to sum-of-product (SOP) forms. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự kiểm chứng bằng sympy (ocr/floyd/scripts/verify_ch4.py): biểu thức trong đề và kết quả in là tương đương logic.",
+   "en": "The printed answer is shown in the image below. Verified with sympy (ocr/floyd/scripts/verify_ch4.py): the expression in the problem and the printed result are logically equivalent."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 23",
+   "en": "Floyd Ch.4 · Problem 23"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q23.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq23.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lập bảng chân trị cho mỗi biểu thức SOP chuẩn sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Develop a truth table for each of the following standard SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: (a) có giá trị 1 đúng ở các dòng 001, 110, 111; (b) có giá trị 1 ở 000, 010, 011, 101, 110; khớp Bảng P–3 và P–4 trong đáp án in.",
+   "en": "The printed answer is shown in the image below. Self-check: (a) is 1 exactly on rows 001, 110, 111; (b) is 1 on 000, 010, 011, 101, 110; matches Tables P–3 and P–4 in the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 31",
+   "en": "Floyd Ch.4 · Problem 31"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q31.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq31.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lập bảng chân trị cho mỗi biểu thức SOP sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Develop a truth table for each of the SOP expressions. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: (a) bằng 1 ở 000, 010, 011, 101, 110; (b) bằng 0 chỉ ở 0100, 0111, 1100 (còn lại bằng 1); khớp Bảng P–5 và P–6.",
+   "en": "The printed answer is shown in the image below. Self-check: (a) is 1 on 000, 010, 011, 101, 110; (b) is 0 only on 0100, 0111, 1100 (1 elsewhere); matches Tables P–5 and P–6."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 33",
+   "en": "Floyd Ch.4 · Problem 33"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q33.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq33.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lập bảng chân trị cho mỗi biểu thức POS chuẩn sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Develop a truth table for each of the standard POS expressions. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra ý (a): bằng 1 ở 011, 100, 101, 110, 111, khớp Bảng P–7. Ý (b) có bảng 16 dòng, đối chiếu bằng mắt từng dòng với Bảng P–8 trong ảnh đáp án.",
+   "en": "The printed answer is shown in the image below. Self-check for (a): 1 on 011, 100, 101, 110, 111, matching Table P–7. Item (b) has a 16-row table, compared row by row by eye against Table P–8 in the answer image."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 35",
+   "en": "Floyd Ch.4 · Problem 35"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q35.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq35.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Vẽ bản đồ Karnaugh 3 biến và ghi nhãn mỗi ô theo giá trị nhị phân của nó.",
+   "en": "Draw a 3-variable Karnaugh map and label each cell according to its binary value."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Thứ tự hàng AB là 00, 01, 11, 10 (mã Gray), cột C là 0, 1; mỗi ô được ghi bằng ABC tương ứng.",
+   "en": "The printed answer is shown in the image below. Rows AB run 00, 01, 11, 10 (Gray order), columns C run 0, 1; each cell is labelled with its ABC value."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 37",
+   "en": "Floyd Ch.4 · Problem 37"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q37.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Viết số hạng tích chuẩn cho từng ô của bản đồ Karnaugh 3 biến.",
+   "en": "Write the standard product term for each cell in a 3-variable Karnaugh map."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Ví dụ ô 000 là ĀB̄C̄, ô 101 là AB̄C; mỗi ô là một minterm với biến bằng 0 được đảo.",
+   "en": "The printed answer is shown in the image below. For example cell 000 is A′B′C′ and cell 101 is AB′C; each cell is a minterm with the 0-valued variables complemented."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 39",
+   "en": "Floyd Ch.4 · Problem 39"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q39.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng bản đồ Karnaugh rút gọn mỗi biểu thức về dạng SOP tối thiểu. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Use a Karnaugh map to simplify each expression to a minimum SOP form. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Kiểm chứng: (a) bốn minterm 000, 101, 011, 110 không có hai ô kề nhau nên không rút gọn được; (b) AC[B̄ + B(B + C̄)] = AC; (c) = DF̄ + ĒF̄. Đều khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Check: (a) the four minterms 000, 101, 011, 110 have no adjacent pair, so nothing simplifies; (b) AC[B′ + B(B + C′)] = AC; (c) = DF′ + E′F′. All match the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 41",
+   "en": "Floyd Ch.4 · Problem 41"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q41.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq41.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng bản đồ Karnaugh rút gọn hàm cho bởi Bảng 4–16 về dạng SOP tối thiểu.",
+   "en": "Reduce the function specified in truth Table 4–16 to its minimum SOP form by using a Karnaugh map."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Bảng 4–16 có X = 0 chỉ ở các dòng 010 và 110 (tức B = 1, C = 0), nên X = B̄ + C. Tự tính bằng sympy, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Table 4–16 has X = 0 only on rows 010 and 110 (B = 1, C = 0), so X = B′ + C. Computed with sympy, matches the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 45",
+   "en": "Floyd Ch.4 · Problem 45"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q45.png",
+  "figs": [
+   "assets/figures/essay_floyd_tab4_16.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Giải Bài 46 trong trường hợp sáu tổ hợp nhị phân cuối (1010 đến 1111) không được phép xuất hiện (don't care).<br><i>Bài 46: dùng bản đồ Karnaugh để thực hiện biểu thức SOP tối thiểu cho hàm ở Bảng 4–17.</i>",
+   "en": "Solve Problem 46 for a situation in which the last six binary combinations are not allowed.<br><i>Problem 46: Use the Karnaugh map method to implement the minimum SOP expression for the logic function specified in truth Table 4–17.</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính bằng sympy với 1010 đến 1111 là don't care: SOP tối thiểu = ĀB̄C̄D + BC + AD̄ + CD̄, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Computed with sympy with 1010 to 1111 as don't-cares: minimum SOP = A′B′C′D + BC + AD′ + CD′, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 47",
+   "en": "Floyd Ch.4 · Problem 47"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q47.png",
+  "figs": [
+   "assets/figures/essay_floyd_tab4_17.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng bản đồ Karnaugh rút gọn mỗi biểu thức về dạng POS tối thiểu. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Use a Karnaugh map to simplify each expression to minimum POS form. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm chứng: (a) ba thừa số tổng (maxterm) không có hai thừa số kề nhau nên không rút gọn được; (b) sympy cho (W+X)(W+Z̄)(X+Ȳ)(Ȳ+Z̄), tương đương logic với đáp án in (W+X)(W+Z̄)(X+Ȳ)(W̄+X̄+Ȳ+Z̄) (cả hai đều là dạng POS của cùng một hàm).",
+   "en": "The printed answer is shown in the image below. Self-check: (a) the three maxterms have no adjacent pair so nothing reduces; (b) sympy gives (W+X)(W+Z′)(X+Y′)(Y′+Z′), logically equivalent to the printed answer (W+X)(W+Z′)(X+Y′)(W′+X′+Y′+Z′) (both are POS forms of the same function)."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 49",
+   "en": "Floyd Ch.4 · Problem 49"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q49.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq49.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định biểu thức POS tối thiểu cho hàm ở Bảng 4–17.",
+   "en": "Determine the minimum POS expression for the function in Table 4–17."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính bằng sympy (POSform trên các dòng có X = 0): kết quả có đúng 5 thừa số tổng giống đáp án in.",
+   "en": "The printed answer is shown in the image below. Computed with sympy (POSform over the rows where X = 0): the result has exactly the same 5 sum factors as the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 51",
+   "en": "Floyd Ch.4 · Problem 51"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q51.png",
+  "figs": [
+   "assets/figures/essay_floyd_tab4_17.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Liệt kê các minterm của biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "List the minterms in the expression. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính: các số hạng tương ứng 111, 001, 110, 101, 011 nên các minterm là 1, 3, 5, 6, 7, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Own calculation: the terms are 111, 001, 110, 101, 011, so the minterms are 1, 3, 5, 6, 7, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 53",
+   "en": "Floyd Ch.4 · Problem 53"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q53.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq53.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Viết chương trình VHDL cho biểu thức sau. Đề gốc (có gạch trên đúng như sách) nằm trong ảnh bên dưới.",
+   "en": "Write a program in VHDL for the expression. The original problem (with overlines exactly as in the book) is shown in the image below."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Phần logic Y <= (A and not B and C) or ... khớp biểu thức đề. Lưu ý lỗi nhỏ trong đáp án in: cổng ra được khai báo là X (X: out bit) nhưng phép gán dùng Y, nên chương trình in không biên dịch được nếu giữ nguyên.",
+   "en": "The printed answer is shown in the image below. The logic Y <= (A and not B and C) or ... matches the problem's expression. Note a small error in the printed answer: the output port is declared as X (X: out bit) but the assignment uses Y, so the printed program would not compile as written."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về logic",
+   "en": "General logic concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.4 · Problem 61",
+   "en": "Floyd Ch.4 · Problem 61"
+  },
+  "afig": "assets/figures/essay_floyd_ch04_q61.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch04_qq61.png"
+  ]
+ }
+]

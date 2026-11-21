@@ -10,7 +10,8 @@
   if (typeof module !== "undefined") module.exports = { dbPower: dbPower, dbAmp: dbAmp, dbm: dbm, fromDbm: fromDbm, squareAmp: squareAmp, fr: fr, zcap: zcap };
   if (typeof document === "undefined") return;
   function num(root, k) { return parseFloat(root.querySelector('[data-k="' + k + '"]').value); }
-  function f(x, d) { return isFinite(x) ? x.toFixed(d) : "-"; }
+  function vn(s) { return (document.documentElement.lang || 'vi').slice(0, 2) === 'vi' ? String(s).replace('.', ',') : s; }
+  function f(x, d) { return isFinite(x) ? vn(x.toFixed(d)) : "-"; }
   function db(root) {
     var en = root.getAttribute("data-lang") === "en";
     var T = en ? { p: "Power (W)", g1: "Stage 1 gain (dB)", g2: "Stage 2 gain (dB)", l: "Cable/filter loss (dB)", dbm: "Input level", out: "Output level", tot: "Total gain", pw: "Output power", amp: "Voltage ratio for the total gain (×)", pr: "Power ratio (×)" }
@@ -50,7 +51,7 @@
     var o = root.querySelector(".o");
     function u() {
       var C = num(root, "C") * 1e-9, L = num(root, "L") * 1e-9, R = num(root, "R") * 1e-3, F = fr(L, C);
-      o.innerHTML = [[T.fr, (F / 1e6).toFixed(3) + " MHz"], [T.zmin, (zcap(F, C, L, R) * 1e3).toFixed(1) + " mΩ"], [T.z01, zcap(.1 * F, C, L, R).toFixed(3) + " Ω"], [T.z10, zcap(10 * F, C, L, R).toFixed(3) + " Ω"]]
+      o.innerHTML = [[T.fr, vn((F / 1e6).toFixed(3)) + " MHz"], [T.zmin, vn((zcap(F, C, L, R) * 1e3).toFixed(1)) + " mΩ"], [T.z01, vn(zcap(.1 * F, C, L, R).toFixed(3)) + " Ω"], [T.z10, vn(zcap(10 * F, C, L, R).toFixed(3)) + " Ω"]]
         .map(function (r) { return '<tr><td>' + r[0] + '</td><td class="m">' + r[1] + '</td></tr>'; }).join("");
     }
     root.addEventListener("input", u); u();

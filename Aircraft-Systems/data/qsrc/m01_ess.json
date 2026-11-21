@@ -1,0 +1,807 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Trọng số (weight) của chữ số 7 trong mỗi số thập phân sau là bao nhiêu?<br>(a) 1947 &nbsp; (b) 1799 &nbsp; (c) 1979",
+   "en": "What is the weight of 7 in each of the following decimal numbers?<br>(a) 1947 &nbsp; (b) 1799 &nbsp; (c) 1979"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: 7 ở hàng đơn vị (1), hàng trăm (100), hàng chục (10), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Self-check: 7 is in the units (1), hundreds (100) and tens (10) positions respectively, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 1",
+   "en": "Floyd Ch.2 · Problem 1"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q01.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cho biết giá trị của từng chữ số trong các số thập phân sau:<br>(a) 263 &nbsp; (b) 5436 &nbsp; (c) 234543",
+   "en": "Give the value of each digit in the following decimal numbers:<br>(a) 263 &nbsp; (b) 5436 &nbsp; (c) 234543"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra từng chữ số nhân với trọng số của vị trí, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Self-check: each digit times its positional weight, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về hệ đếm",
+   "en": "General number-system concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 3",
+   "en": "Floyd Ch.2 · Problem 3"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q03.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi các số nhị phân sau sang thập phân:<br>(a) 001 &nbsp; (b) 010 &nbsp; (c) 101 &nbsp; (d) 110<br>(e) 1010 &nbsp; (f) 1011 &nbsp; (g) 1110 &nbsp; (h) 1111",
+   "en": "Convert the following binary numbers to decimal:<br>(a) 001 &nbsp; (b) 010 &nbsp; (c) 101 &nbsp; (d) 110<br>(e) 1010 &nbsp; (f) 1011 &nbsp; (g) 1110 &nbsp; (h) 1111"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). LỖI IN THẬT trong sách: ý (c) 101₂ = 4+0+1 = 5, nhưng đáp án in ghi 3. Các ý còn lại (1, 2, 6, 10, 11, 14, 15) đều đúng. Đừng học thuộc con số 3.",
+   "en": "The printed answer is shown in the image below. A REAL PRINTING ERROR in the book: item (c) 101₂ = 4+0+1 = 5, but the printed answer says 3. All other items (1, 2, 6, 10, 11, 14, 15) are correct. Do not memorise the 3."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 5",
+   "en": "Floyd Ch.2 · Problem 5"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q05.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số nhị phân sau sang thập phân:<br>(a) 110011.11 &nbsp; (b) 101010.01 &nbsp; (c) 1000001.111<br>(d) 1111000.101 &nbsp; (e) 1011100.10101 &nbsp; (f) 1110001.0001<br>(g) 1011010.1010 &nbsp; (h) 1111111.11111",
+   "en": "Convert each binary number to decimal:<br>(a) 110011.11 &nbsp; (b) 101010.01 &nbsp; (c) 1000001.111<br>(d) 1111000.101 &nbsp; (e) 1011100.10101 &nbsp; (f) 1110001.0001<br>(g) 1011010.1010 &nbsp; (h) 1111111.11111"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 7",
+   "en": "Floyd Ch.2 · Problem 7"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q07.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cần bao nhiêu bit để biểu diễn các số thập phân sau?<br>(a) 5 &nbsp; (b) 10 &nbsp; (c) 15 &nbsp; (d) 20<br>(e) 100 &nbsp; (f) 120 &nbsp; (g) 140 &nbsp; (h) 160",
+   "en": "How many bits are required to represent the following decimal numbers?<br>(a) 5 &nbsp; (b) 10 &nbsp; (c) 15 &nbsp; (d) 20<br>(e) 100 &nbsp; (f) 120 &nbsp; (g) 140 &nbsp; (h) 160"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (số bit tối thiểu = độ dài nhị phân của số đó).",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (minimum bits = binary length of the number)."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 9",
+   "en": "Floyd Ch.2 · Problem 9"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q09.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số thập phân sau sang nhị phân bằng phương pháp tổng các trọng số (sum-of-weights):<br>(a) 12 &nbsp; (b) 15 &nbsp; (c) 25 &nbsp; (d) 50<br>(e) 65 &nbsp; (f) 97 &nbsp; (g) 127 &nbsp; (h) 198",
+   "en": "Convert each decimal number to binary by using the sum-of-weights method:<br>(a) 12 &nbsp; (b) 15 &nbsp; (c) 25 &nbsp; (d) 50<br>(e) 65 &nbsp; (f) 97 &nbsp; (g) 127 &nbsp; (h) 198"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 11",
+   "en": "Floyd Ch.2 · Problem 11"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q11.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số thập phân sau sang nhị phân bằng phương pháp chia liên tiếp cho 2:<br>(a) 13 &nbsp; (b) 17 &nbsp; (c) 23 &nbsp; (d) 30<br>(e) 35 &nbsp; (f) 40 &nbsp; (g) 49 &nbsp; (h) 60",
+   "en": "Convert each decimal number to binary using repeated division by 2:<br>(a) 13 &nbsp; (b) 17 &nbsp; (c) 23 &nbsp; (d) 30<br>(e) 35 &nbsp; (f) 40 &nbsp; (g) 49 &nbsp; (h) 60"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 13",
+   "en": "Floyd Ch.2 · Problem 13"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q13.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cộng các số nhị phân:<br>(a) 10 + 10 &nbsp; (b) 10 + 11 &nbsp; (c) 100 + 11<br>(d) 111 + 101 &nbsp; (e) 1111 + 111 &nbsp; (f) 1111 + 1111",
+   "en": "Add the binary numbers:<br>(a) 10 + 10 &nbsp; (b) 10 + 11 &nbsp; (c) 100 + 11<br>(d) 111 + 101 &nbsp; (e) 1111 + 111 &nbsp; (f) 1111 + 1111"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 15",
+   "en": "Floyd Ch.2 · Problem 15"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q15.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Thực hiện các phép nhân nhị phân sau:<br>(a) 11 × 10 &nbsp; (b) 101 × 11 &nbsp; (c) 111 × 110<br>(d) 1100 × 101 &nbsp; (e) 1110 × 1110 &nbsp; (f) 1111 × 1100",
+   "en": "Perform the following binary multiplications:<br>(a) 11 × 10 &nbsp; (b) 101 × 11 &nbsp; (c) 111 × 110<br>(d) 1100 × 101 &nbsp; (e) 1110 × 1110 &nbsp; (f) 1111 × 1100"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 17",
+   "en": "Floyd Ch.2 · Problem 17"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q17.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Có hai cách biểu diễn số không (zero) ở dạng bù một (1's complement) là gì?",
+   "en": "What are two ways of representing zero in 1's complement form?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Kiểm tra bằng định nghĩa: 00000000 và đảo bit của nó là 11111111 (\"âm không\"), cả hai đều biểu diễn 0.",
+   "en": "The printed answer is shown in the image below. Check by definition: 00000000 and its bit-inversion 11111111 (\"negative zero\") both represent 0."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 19",
+   "en": "Floyd Ch.2 · Problem 19"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q19.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định bù một (1's complement) của mỗi số nhị phân sau:<br>(a) 100 &nbsp; (b) 111 &nbsp; (c) 1100<br>(d) 10111011 &nbsp; (e) 1001010 &nbsp; (f) 10101010",
+   "en": "Determine the 1's complement of each binary number:<br>(a) 100 &nbsp; (b) 111 &nbsp; (c) 1100<br>(d) 10111011 &nbsp; (e) 1001010 &nbsp; (f) 10101010"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 21",
+   "en": "Floyd Ch.2 · Problem 21"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q21.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Biểu diễn mỗi số thập phân sau thành số 8 bit dạng dấu-độ lớn (sign-magnitude):<br>(a) +29 &nbsp; (b) −85 &nbsp; (c) +100 &nbsp; (d) −123",
+   "en": "Express each decimal number in binary as an 8-bit sign-magnitude number:<br>(a) +29 &nbsp; (b) −85 &nbsp; (c) +100 &nbsp; (d) −123"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 23",
+   "en": "Floyd Ch.2 · Problem 23"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q23.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Viết mỗi số thập phân sau dưới dạng số 8-bit ở dạng bù hai (2's complement):<br>(a) +12 &nbsp; (b) -68 &nbsp; (c) +101 &nbsp; (d) -125",
+   "en": "Express each decimal number as an 8-bit number in the 2’s complement form:<br>(a) +12 &nbsp; (b) −68 &nbsp; (c) +101 &nbsp; (d) −125"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 25",
+   "en": "Floyd Ch.2 · Problem 25"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q25.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định giá trị thập phân của mỗi số nhị phân có dấu ở dạng bù một (1's complement):<br>(a) 10011001 &nbsp; (b) 01110100 &nbsp; (c) 10111111",
+   "en": "Determine the decimal value of each signed binary number in the 1's complement form:<br>(a) 10011001 &nbsp; (b) 01110100 &nbsp; (c) 10111111"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 27",
+   "en": "Floyd Ch.2 · Problem 27"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q27.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Biểu diễn mỗi số nhị phân dạng dấu-độ lớn sau ở định dạng dấu phẩy động độ chính xác đơn (single-precision floating-point):<br>(a) 0111110000101011 &nbsp; (b) 100110000011000",
+   "en": "Express each of the following sign-magnitude binary numbers in single-precision floating-point format:<br>(a) 0111110000101011 &nbsp; (b) 100110000011000"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). LỖI IN trong ý (b): theo IEEE 754, số −3096 có phần định trị 10000011000 theo sau các số 0 (xác nhận bằng struct.pack của Python), nhưng đáp án in là 11000001100... (lệch một bước và thừa một bit 1). Phần dấu và phần mũ 10001010 trong đáp án in là đúng. Ý (a) hoàn toàn đúng.",
+   "en": "The printed answer is shown in the image below. PRINTING ERROR in item (b): by IEEE 754 the value −3096 has mantissa 10000011000 followed by zeros (confirmed with Python's struct.pack), but the printed answer shows 11000001100... (shifted by one place with an extra leading 1). The sign and the exponent 10001010 in the printed answer are correct. Item (a) is fully correct."
+  },
+  "topic": {
+   "vi": "Dấu chấm động",
+   "en": "Floating point"
+  },
+  "topic_id": "float",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 29",
+   "en": "Floyd Ch.2 · Problem 29"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q29.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi cặp số thập phân sang nhị phân rồi cộng bằng dạng bù hai (2's complement):<br>(a) 33 và 15 &nbsp; (b) 56 và −27 &nbsp; (c) −46 và 25 &nbsp; (d) −110 và −84",
+   "en": "Convert each pair of decimal numbers to binary and add using the 2's complement form:<br>(a) 33 and 15 &nbsp; (b) 56 and −27 &nbsp; (c) −46 and 25 &nbsp; (d) −110 and −84"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. Ý (d) cần 9 bit vì tổng −194 không vừa 8 bit.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. Item (d) needs 9 bits because −194 does not fit in 8 bits."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 31",
+   "en": "Floyd Ch.2 · Problem 31"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q31.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Thực hiện mỗi phép cộng ở dạng bù hai:<br>(a) 10001100 + 00111001 &nbsp; (b) 11011001 + 11100111",
+   "en": "Perform each addition in the 2's complement form:<br>(a) 10001100 + 00111001 &nbsp; (b) 11011001 + 11100111"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (bỏ bit nhớ tràn ở ý b).",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (the overflow carry is discarded in item b)."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 33",
+   "en": "Floyd Ch.2 · Problem 33"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q33.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nhân 01101010 với 11110001 ở dạng bù hai.",
+   "en": "Multiply 01101010 by 11110001 in the 2's complement form."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính: 106 × (−15) = −1590; biểu diễn bù hai 12 bit là 100111001010, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Own calculation: 106 × (−15) = −1590; its 12-bit two's complement is 100111001010, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 35",
+   "en": "Floyd Ch.2 · Problem 35"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q35.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số thập lục phân sau sang nhị phân:<br>(a) 46<sub>16</sub> &nbsp; (b) 54<sub>16</sub> &nbsp; (c) B4<sub>16</sub> &nbsp; (d) 1A3<sub>16</sub><br>(e) FA<sub>16</sub> &nbsp; (f) ABC<sub>16</sub> &nbsp; (g) ABCD<sub>16</sub>",
+   "en": "Convert each hexadecimal number to binary:<br>(a) 46<sub>16</sub> &nbsp; (b) 54<sub>16</sub> &nbsp; (c) B4<sub>16</sub> &nbsp; (d) 1A3<sub>16</sub><br>(e) FA<sub>16</sub> &nbsp; (f) ABC<sub>16</sub> &nbsp; (g) ABCD<sub>16</sub>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). LỖI IN trong ý (g): ABCD₁₆ = 1010 1011 1100 1101 = 1010101111001101, nhưng đáp án in là 1010110010111101 (tức ACBD₁₆, hai nhóm giữa bị đổi chỗ). Các ý còn lại đúng.",
+   "en": "The printed answer is shown in the image below. PRINTING ERROR in item (g): ABCD₁₆ = 1010 1011 1100 1101 = 1010101111001101, but the printed answer is 1010110010111101 (that is ACBD₁₆, with the two middle groups swapped). All other items are correct."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 37",
+   "en": "Floyd Ch.2 · Problem 37"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q37.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số thập lục phân sau sang thập phân:<br>(a) 42<sub>16</sub> &nbsp; (b) 64<sub>16</sub> &nbsp; (c) 2B<sub>16</sub> &nbsp; (d) 4D<sub>16</sub><br>(e) FF<sub>16</sub> &nbsp; (f) BC<sub>16</sub> &nbsp; (g) 6F1<sub>16</sub> &nbsp; (h) ABC<sub>16</sub>",
+   "en": "Convert each hexadecimal number to decimal:<br>(a) 42<sub>16</sub> &nbsp; (b) 64<sub>16</sub> &nbsp; (c) 2B<sub>16</sub> &nbsp; (d) 4D<sub>16</sub><br>(e) FF<sub>16</sub> &nbsp; (f) BC<sub>16</sub> &nbsp; (g) 6F1<sub>16</sub> &nbsp; (h) ABC<sub>16</sub>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 39",
+   "en": "Floyd Ch.2 · Problem 39"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q39.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Thực hiện các phép cộng sau (số thập lục phân):<br>(a) 25<sub>16</sub> + 33<sub>16</sub> &nbsp; (b) 43<sub>16</sub> + 62<sub>16</sub> &nbsp; (c) A4<sub>16</sub> + F5<sub>16</sub> &nbsp; (d) FC<sub>16</sub> + AE<sub>16</sub>",
+   "en": "Perform the following additions:<br>(a) 25<sub>16</sub> + 33<sub>16</sub> &nbsp; (b) 43<sub>16</sub> + 62<sub>16</sub> &nbsp; (c) A4<sub>16</sub> + F5<sub>16</sub> &nbsp; (d) FC<sub>16</sub> + AE<sub>16</sub>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 41",
+   "en": "Floyd Ch.2 · Problem 41"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q41.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số bát phân sau sang thập phân:<br>(a) 14<sub>8</sub> &nbsp; (b) 53<sub>8</sub> &nbsp; (c) 67<sub>8</sub> &nbsp; (d) 174<sub>8</sub><br>(e) 635<sub>8</sub> &nbsp; (f) 254<sub>8</sub> &nbsp; (g) 2673<sub>8</sub> &nbsp; (h) 7777<sub>8</sub>",
+   "en": "Convert each octal number to decimal:<br>(a) 14<sub>8</sub> &nbsp; (b) 53<sub>8</sub> &nbsp; (c) 67<sub>8</sub> &nbsp; (d) 174<sub>8</sub><br>(e) 635<sub>8</sub> &nbsp; (f) 254<sub>8</sub> &nbsp; (g) 2673<sub>8</sub> &nbsp; (h) 7777<sub>8</sub>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 43",
+   "en": "Floyd Ch.2 · Problem 43"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q43.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số bát phân sau sang nhị phân:<br>(a) 17<sub>8</sub> &nbsp; (b) 26<sub>8</sub> &nbsp; (c) 145<sub>8</sub><br>(d) 456<sub>8</sub> &nbsp; (e) 653<sub>8</sub> &nbsp; (f) 777<sub>8</sub>",
+   "en": "Convert each octal number into binary:<br>(a) 17<sub>8</sub> &nbsp; (b) 26<sub>8</sub> &nbsp; (c) 145<sub>8</sub><br>(d) 456<sub>8</sub> &nbsp; (e) 653<sub>8</sub> &nbsp; (f) 777<sub>8</sub>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 45",
+   "en": "Floyd Ch.2 · Problem 45"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q45.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số thập phân sau sang BCD 8421:<br>(a) 10 &nbsp; (b) 13 &nbsp; (c) 18 &nbsp; (d) 21 &nbsp; (e) 25 &nbsp; (f) 36<br>(g) 44 &nbsp; (h) 57 &nbsp; (i) 69 &nbsp; (j) 98 &nbsp; (k) 125 &nbsp; (l) 156",
+   "en": "Convert each of the following decimal numbers to 8421 BCD:<br>(a) 10 &nbsp; (b) 13 &nbsp; (c) 18 &nbsp; (d) 21 &nbsp; (e) 25 &nbsp; (f) 36<br>(g) 44 &nbsp; (h) 57 &nbsp; (i) 69 &nbsp; (j) 98 &nbsp; (k) 125 &nbsp; (l) 156"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. Đáp án in nằm trên hai trang (ảnh ghép hai phần: cuối trang A-1 và đầu trang A-2).",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. The printed answer spans two pages (the image stitches the end of page A-1 and the top of page A-2)."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 47",
+   "en": "Floyd Ch.2 · Problem 47"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q47.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi các số thập phân sau sang BCD:<br>(a) 104 &nbsp; (b) 128 &nbsp; (c) 132 &nbsp; (d) 150 &nbsp; (e) 186<br>(f) 210 &nbsp; (g) 359 &nbsp; (h) 547 &nbsp; (i) 1051",
+   "en": "Convert the following decimal numbers to BCD:<br>(a) 104 &nbsp; (b) 128 &nbsp; (c) 132 &nbsp; (d) 150 &nbsp; (e) 186<br>(f) 210 &nbsp; (g) 359 &nbsp; (h) 547 &nbsp; (i) 1051"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 49",
+   "en": "Floyd Ch.2 · Problem 49"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q49.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi số BCD sau sang thập phân:<br>(a) 10000000 &nbsp; (b) 001000110111<br>(c) 001101000110 &nbsp; (d) 010000100001<br>(e) 011101010100 &nbsp; (f) 100000000000<br>(g) 100101111000 &nbsp; (h) 0001011010000011<br>(i) 1001000000011000 &nbsp; (j) 0110011001100111",
+   "en": "Convert each of the BCD numbers to decimal:<br>(a) 10000000 &nbsp; (b) 001000110111<br>(c) 001101000110 &nbsp; (d) 010000100001<br>(e) 011101010100 &nbsp; (f) 100000000000<br>(g) 100101111000 &nbsp; (h) 0001011010000011<br>(i) 1001000000011000 &nbsp; (j) 0110011001100111"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 51",
+   "en": "Floyd Ch.2 · Problem 51"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q51.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cộng các số BCD sau:<br>(a) 1000 + 0110 &nbsp; (b) 0111 + 0101<br>(c) 1001 + 1000 &nbsp; (d) 1001 + 0111<br>(e) 00100101 + 00100111 &nbsp; (f) 01010001 + 01011000<br>(g) 10011000 + 10010111 &nbsp; (h) 010101100001 + 011100001000",
+   "en": "Add the following BCD numbers:<br>(a) 1000 + 0110 &nbsp; (b) 0111 + 0101<br>(c) 1001 + 1000 &nbsp; (d) 1001 + 0111<br>(e) 00100101 + 00100111 &nbsp; (f) 01010001 + 01011000<br>(g) 10011000 + 10010111 &nbsp; (h) 010101100001 + 011100001000"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (cộng theo số thập phân rồi mã hoá lại BCD).",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (add as decimal values, then re-encode as BCD)."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 53",
+   "en": "Floyd Ch.2 · Problem 53"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q53.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Trong một ứng dụng, dãy nhị phân 4 bit quay vòng định kỳ từ 1111 về 0000. Có bốn bit thay đổi và do trễ mạch, các thay đổi này có thể không xảy ra cùng lúc. Ví dụ, nếu LSB đổi trước thì số sẽ xuất hiện là 1110 trong lúc chuyển từ 1111 sang 0000 và có thể bị hệ thống hiểu nhầm. Hãy minh hoạ cách mã Gray tránh được vấn đề này.",
+   "en": "In a certain application a 4-bit binary sequence cycles from 1111 to 0000 periodically. There are four bit changes, and because of circuit delays, these changes may not occur at the same instant. For example, if the LSB changes first, the number will appear as 1110 during the transition from 1111 to 0000 and may be misinterpreted by the system. Illustrate how the Gray code avoids this problem."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: trong mã Gray 4 bit, 1000 (15 ở Gray) chuyển về 0000 chỉ đổi đúng 1 bit, nên không có trạng thái trung gian sai.",
+   "en": "The printed answer is shown in the image below. Self-check: in 4-bit Gray code the last code 1000 returns to 0000 by changing exactly one bit, so there is no wrong intermediate state."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 55",
+   "en": "Floyd Ch.2 · Problem 55"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q55.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Đổi mỗi mã Gray sau sang nhị phân:<br>(a) 1010 &nbsp; (b) 00010 &nbsp; (c) 11000010001",
+   "en": "Convert each Gray code to binary:<br>(a) 1010 &nbsp; (b) 00010 &nbsp; (c) 11000010001"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. (bit MSB giữ nguyên, các bit sau XOR dồn với bit nhị phân trước đó).",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. (MSB kept, each following bit is XORed with the previous binary bit)."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 57",
+   "en": "Floyd Ch.2 · Problem 57"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q57.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định mỗi ký tự ASCII (xem Bảng 2–7 của sách):<br>(a) 0011000 &nbsp; (b) 1001010 &nbsp; (c) 0111101<br>(d) 0100011 &nbsp; (e) 0111110 &nbsp; (f) 1000010",
+   "en": "Determine each ASCII character. Refer to Table 2–7.<br>(a) 0011000 &nbsp; (b) 1001010 &nbsp; (c) 0111101<br>(d) 0100011 &nbsp; (e) 0111110 &nbsp; (f) 1000010"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã tự tính lại bằng Python (script verify_ch2.py trong ocr/floyd/scripts), khớp đáp án in. 0011000 = 24 thập phân là ký tự điều khiển CAN (Cancel).",
+   "en": "The printed answer is shown in the image below. Recomputed independently in Python (verify_ch2.py in ocr/floyd/scripts); matches the printed answer. 0011000 = decimal 24 is the control character CAN (Cancel)."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 59",
+   "en": "Floyd Ch.2 · Problem 59"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q59.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Viết thông điệp ở Bài 60 dưới dạng thập lục phân.<br><i>Bài 60: Giải mã thông điệp mã ASCII sau: 1001000 1100101 1101100 1101100 1101111 0101110 0100000 1001000 1101111 1110111 0100000 1100001 1110010 1100101 0100000 1111001 1101111 1110101 0111111</i>",
+   "en": "Write the message in Problem 60 in hexadecimal.<br><i>Problem 60: Decode the following ASCII coded message: 1001000 1100101 1101100 1101100 1101111 0101110 0100000 1001000 1101111 1110111 0100000 1100001 1110010 1100101 0100000 1111001 1101111 1110101 0111111</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Thông điệp giải mã được là \"Hello. How are you?\" (tự giải mã bằng Python), đổi từng ký tự sang hex cho đúng 19 byte như đáp án in.",
+   "en": "The printed answer is shown in the image below. The decoded message is \"Hello. How are you?\" (decoded in Python); converting each character to hex gives the same 19 bytes as the printed answer."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 61",
+   "en": "Floyd Ch.2 · Problem 61"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q61.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định mã nào trong các mã kiểm tra chẵn lẻ (even parity) sau bị lỗi:<br>(a) 100110010 &nbsp; (b) 011101010 &nbsp; (c) 10111111010001010",
+   "en": "Determine which of the following even parity codes are in error:<br>(a) 100110010 &nbsp; (b) 011101010 &nbsp; (c) 10111111010001010"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 63",
+   "en": "Floyd Ch.2 · Problem 63"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q63.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Gắn bit chẵn (even parity) thích hợp vào mỗi byte dữ liệu sau:<br>(a) 10100100 &nbsp; (b) 00001001 &nbsp; (c) 11111110",
+   "en": "Attach the proper even parity bit to each of the following bytes of data:<br>(a) 10100100 &nbsp; (b) 00001001 &nbsp; (c) 11111110"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: đếm số bit 1 (3, 2, 7); bit parity được đặt ở đầu byte (1, 0, 1) để tổng số bit 1 chẵn, đúng như đáp án in.",
+   "en": "The printed answer is shown in the image below. Self-check: count the 1s (3, 2, 7); the parity bit is placed in front of the byte (1, 0, 1) so the total number of 1s is even, as in the printed answer."
+  },
+  "topic": {
+   "vi": "Phát hiện lỗi: parity, checksum, CRC",
+   "en": "Error detection: parity, checksum, CRC"
+  },
+  "topic_id": "errors",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 65",
+   "en": "Floyd Ch.2 · Problem 65"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q65.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Kiểm chứng rằng phép trừ modulo-2 giống phép cộng modulo-2, bằng cách cộng kết quả của mỗi phép tính ở Bài 66 với một trong hai số ban đầu để thu được số còn lại.<br><i>Bài 66: Áp dụng modulo-2 cho: (a) 1100 + 1011 &nbsp; (b) 1111 + 0100 &nbsp; (c) 10011001 + 100011100</i>",
+   "en": "Verify that modulo-2 subtraction is the same as modulo-2 addition by adding the result of each operation in problem 66 to either of the original numbers to get the other number. This will show that the result is the same as the difference of the two numbers.<br><i>Problem 66: Apply modulo-2 to the following: (a) 1100 + 1011 &nbsp; (b) 1111 + 0100 &nbsp; (c) 10011001 + 100011100</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính bằng XOR: 1100⊕1011 = 0111; 1111⊕0100 = 1011; 10011001⊕100011100 = 110000101; XOR kết quả với một số ban đầu cho ra đúng số còn lại.",
+   "en": "The printed answer is shown in the image below. Own XOR calculation: 1100⊕1011 = 0111; 1111⊕0100 = 1011; 10011001⊕100011100 = 110000101; XORing each result with one original number returns the other."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 67",
+   "en": "Floyd Ch.2 · Problem 67"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q67.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Giả sử mã tạo ra ở Bài 68 bị lỗi ở bit có trọng số lớn nhất (MSB) trong lúc truyền. Hãy áp dụng CRC để phát hiện lỗi.<br><i>Bài 68: Áp dụng CRC cho các bit dữ liệu 10110010 với mã sinh (generator) 1010 để tạo mã CRC được truyền.</i>",
+   "en": "Assume that the code produced in problem 68 incurs an error in the most significant bit during transmission. Apply CRC to detect the error.<br><i>Problem 68: Apply CRC to the data bits 10110010 using the generator code 1010 to produce the transmitted CRC code.</i>"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính (sách không in đáp án Bài 68): CRC của 10110010 với 1010 là 110, mã truyền 10110010110. Lỗi ở MSB cho 00110010110, chia cho 1010 dư 100 (viết 4 bit là 0100) khác 0 nên phát hiện lỗi, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Own calculation (the book prints no answer for Problem 68): the CRC of 10110010 with 1010 is 110, so the transmitted code is 10110010110. An MSB error gives 00110010110, whose remainder on division by 1010 is 100 (4 bits: 0100), non-zero, so the error is detected, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.2 · Problem 69",
+   "en": "Floyd Ch.2 · Problem 69"
+  },
+  "afig": "assets/figures/essay_floyd_ch02_q69.png"
+ }
+]

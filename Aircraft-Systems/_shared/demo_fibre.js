@@ -26,7 +26,8 @@
   if (typeof module !== "undefined") module.exports = { fibre: fibre, lmax: lmax, snell: snell };
   if (typeof document === "undefined") return;
 
-  function f(x, d) { return (isFinite(x) ? x.toFixed(d) : "-"); }
+  function vn(s) { return (document.documentElement.lang || 'vi').slice(0, 2) === 'vi' ? String(s).replace('.', ',') : s; }
+  function f(x, d) { return (isFinite(x) ? vn(x.toFixed(d)) : "-"); }
   function initCalc(root) {
     var en = root.getAttribute("data-lang") === "en";
     var T = en ? {
@@ -82,7 +83,7 @@
       ctx.strokeStyle = "#d33"; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(cx - L * Math.sin(a), cy + L * Math.cos(a)); ctx.lineTo(cx, cy); ctx.stroke();
       ctx.strokeStyle = "#3a6"; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + L * Math.sin(a), cy + L * Math.cos(a)); ctx.stroke();
       if (s.refracted !== null) { var r = s.refracted * RAD; ctx.strokeStyle = "#27c"; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + L * Math.sin(r), cy - L * Math.cos(r)); ctx.stroke(); }
-      st.innerHTML = (s.refracted === null ? "<b>" + T.tir + "</b>" : T.r + " = <b>" + s.refracted.toFixed(2) + "°</b>") + " &nbsp;·&nbsp; " + T.thc + ": " + (s.thc === null ? T.none : s.thc.toFixed(2) + "°");
+      st.innerHTML = (s.refracted === null ? "<b>" + T.tir + "</b>" : T.r + " = <b>" + s.refracted.toFixed(2) + "°</b>") + " &nbsp;·&nbsp; " + T.thc + ": " + (s.thc === null ? T.none : vn(s.thc.toFixed(2)) + "°");
     }
     root.addEventListener("input", draw); draw();
   }

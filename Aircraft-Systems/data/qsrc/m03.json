@@ -1,0 +1,1836 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng logic chuẩn sản xuất năm 1981 nhiều khả năng được đóng gói dạng:",
+   "en": "A standard logic gate manufactured in 1981 is likely to be supplied in a:"
+  },
+  "opts": [
+   {
+    "vi": "gói QFP",
+    "en": "QFP package"
+   },
+   {
+    "vi": "gói DIL",
+    "en": "DIL package"
+   },
+   {
+    "vi": "gói PGA",
+    "en": "PGA package"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Thập niên 1980, DIL (Dual-In-Line) là kiểu đóng gói phổ biến nhất cho IC logic chuẩn.",
+   "en": "In the 1980s, DIL (Dual-In-Line) was the most common package style for standard logic ICs."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trước khi công nghệ dán bề mặt (surface-mount) trở nên phổ biến từ cuối thập niên 1980, hầu như mọi IC logic tiêu chuẩn đều dùng gói DIL (Dual-In-Line) với hai hàng chân cắm xuyên lỗ, dễ hàn tay và dễ cắm vào đế socket để thay thế khi cần sửa chữa.</p>",
+   "en": "<p>Before surface-mount technology became widespread in the late 1980s, almost every standard logic IC used a DIL (Dual-In-Line) package with two rows of through-hole pins, which was easy to hand-solder and easy to plug into a socket for repair.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q1",
+   "en": "Tooley Ch.8 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng logic chuẩn (standard logic gate) là ví dụ điển hình của loại tích hợp nào?",
+   "en": "A standard logic gate is a typical example of:"
+  },
+  "opts": [
+   {
+    "vi": "thiết bị SSI",
+    "en": "SSI device"
+   },
+   {
+    "vi": "thiết bị VLSI",
+    "en": "VLSI device"
+   },
+   {
+    "vi": "thiết bị LSI",
+    "en": "LSI device"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cổng logic đơn lẻ chỉ chứa vài transistor → thuộc quy mô tích hợp nhỏ SSI.",
+   "en": "A single logic gate contains only a few transistors → it belongs to the smallest integration scale, SSI."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Quy mô tích hợp (scale of integration) được phân loại theo số lượng cổng logic tương đương nằm trong một chip: SSI (Small Scale Integration) chỉ có vài cổng đơn lẻ, MSI (Medium) có vài chục tới khoảng trăm cổng, LSI (Large) lên tới hàng nghìn, còn VLSI (Very Large) chứa hàng triệu transistor trở lên như trong vi xử lý hiện đại.</p>",
+   "en": "<p>Scale of integration is classified by the number of equivalent logic gates on one chip: SSI (Small Scale Integration) holds only a handful of individual gates, MSI (Medium) holds tens to around a hundred gates, LSI (Large) reaches into the thousands, and VLSI (Very Large) contains millions of transistors or more, as in a modern microprocessor.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q2",
+   "en": "Tooley Ch.8 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong các mức độ tích hợp sau, mức nào có mật độ transistor LỚN HƠN?",
+   "en": "Which one of the following scales of integration is the largest:"
+  },
+  "opts": [
+   {
+    "vi": "SSI",
+    "en": "SSI"
+   },
+   {
+    "vi": "MSI",
+    "en": "MSI"
+   },
+   {
+    "vi": "LSI",
+    "en": "LSI"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Thứ tự tăng dần mật độ: SSI < MSI < LSI < VLSI; trong 3 lựa chọn, LSI lớn nhất.",
+   "en": "Order of increasing density: SSI < MSI < LSI < VLSI; of the 3 choices, LSI is the largest."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bốn mức quy mô tích hợp luôn được xếp theo đúng thứ tự SSI, MSI, LSI, VLSI từ ít tới nhiều cổng logic nhất. Ghi nhớ đúng thứ tự này giúp trả lời nhanh mọi câu hỏi so sánh 'mức nào lớn hơn' mà không cần nhớ số cổng chính xác của từng mức.</p>",
+   "en": "<p>The four integration scales always follow the fixed order SSI, MSI, LSI, VLSI, from fewest to most logic gates. Remembering this order makes it quick to answer any 'which scale is larger' question without needing to recall the exact gate count of each level.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q3",
+   "en": "Tooley Ch.8 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vi xử lý (microprocessor) là ví dụ của công nghệ:",
+   "en": "A microprocessor is an example of:"
+  },
+  "opts": [
+   {
+    "vi": "công nghệ SSI",
+    "en": "SSI technology"
+   },
+   {
+    "vi": "công nghệ MSI",
+    "en": "MSI technology"
+   },
+   {
+    "vi": "công nghệ VLSI",
+    "en": "VLSI technology"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Vi xử lý chứa hàng triệu transistor → thuộc quy mô tích hợp rất lớn VLSI.",
+   "en": "A microprocessor contains millions of transistors → it belongs to the very large scale of integration, VLSI."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một vi xử lý hiện đại tích hợp từ vài triệu tới hàng tỉ transistor trên một chip duy nhất, vượt xa ngưỡng vài nghìn cổng của LSI, nên luôn được xếp vào VLSI (Very Large Scale Integration). Đây cũng là công nghệ cho phép thu nhỏ toàn bộ đơn vị xử lý trung tâm của một máy tính vào một con chip duy nhất thay vì cả một bo mạch lớn như thời kỳ đầu.</p>",
+   "en": "<p>A modern microprocessor packs anywhere from several million to billions of transistors onto a single chip, far beyond the few thousand gates typical of LSI, so it is always classed as VLSI (Very Large Scale Integration). This is exactly the technology that allows an entire central processing unit to shrink onto one chip instead of filling a large circuit board as in early computers.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q4",
+   "en": "Tooley Ch.8 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "So với đóng gói DIP, đóng gói PLCC mang lại ưu điểm nào?",
+   "en": "Compared with DIP packaging, PLCC offers:"
+  },
+  "opts": [
+   {
+    "vi": "nhiều chân hơn trên cùng kích thước",
+    "en": "more pins in the same size"
+   },
+   {
+    "vi": "kích thước lớn hơn",
+    "en": "larger size"
+   },
+   {
+    "vi": "độ tin cậy cao hơn",
+    "en": "higher reliability"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "PLCC (Plastic Leaded Chip Carrier) cho phép bố trí nhiều chân hơn trong diện tích nhỏ gọn hơn so với DIP.",
+   "en": "PLCC (Plastic Leaded Chip Carrier) allows more pins in a more compact area than DIP."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>PLCC bố trí chân theo cả bốn cạnh của gói vuông thay vì chỉ hai hàng như DIP, nên với cùng một diện tích đế, PLCC chứa được nhiều chân hơn hẳn. Đánh đổi là PLCC khó hàn tay hơn và thường cần đế cắm chuyên dụng hoặc máy hàn dán bề mặt.</p>",
+   "en": "<p>PLCC places pins along all four sides of a square package instead of just two rows as in DIP, so for the same footprint area it fits considerably more pins. The trade-off is that PLCC is harder to hand-solder and usually needs a dedicated socket or surface-mount soldering equipment.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q5",
+   "en": "Tooley Ch.8 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiểu đóng gói IC nào bắt buộc phải hàn cố định (không thể cắm vào đế/socket)?",
+   "en": "Which IC packaging technology requires the chip to always be soldered in place:"
+  },
+  "opts": [
+   {
+    "vi": "PGA",
+    "en": "PGA"
+   },
+   {
+    "vi": "DIL",
+    "en": "DIL"
+   },
+   {
+    "vi": "SOIC",
+    "en": "SOIC"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "SOIC là gói dán bề mặt (surface-mount), luôn được hàn trực tiếp lên board, không dùng đế cắm như DIL/PGA.",
+   "en": "SOIC is a surface-mount package that is always soldered directly to the board, not plugged into a socket like DIL/PGA."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>SOIC (Small Outline IC) thuộc họ gói dán bề mặt (surface-mount), với chân dạng gull-wing hàn trực tiếp lên lớp đồng của board mạch in, không có phiên bản đế cắm rời như DIL hay PGA. Đặc điểm này giúp SOIC nhỏ gọn hơn nhiều nhưng cũng khó tháo lắp lại hơn khi sửa chữa.</p>",
+   "en": "<p>SOIC (Small Outline IC) belongs to the surface-mount package family, with gull-wing leads soldered directly onto the copper pads of the printed circuit board, with no separate socketed version the way DIL or PGA have. This makes SOIC considerably more compact but also harder to remove and re-seat during repair.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q6",
+   "en": "Tooley Ch.8 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Công nghệ đóng gói IC nào ra đời SỚM NHẤT trong các lựa chọn sau?",
+   "en": "Which of the following IC packaging technologies was the earliest to be used:"
+  },
+  "opts": [
+   {
+    "vi": "ceramic DIP",
+    "en": "ceramic DIP"
+   },
+   {
+    "vi": "PLCC",
+    "en": "PLCC"
+   },
+   {
+    "vi": "ceramic QFP",
+    "en": "ceramic QFP"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ceramic DIP là kiểu đóng gói IC thương mại sớm nhất trong ba lựa chọn.",
+   "en": "Ceramic DIP is the earliest commercial IC package of the three choices."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trong lịch sử đóng gói IC, ceramic DIP xuất hiện từ những năm 1960, sớm hơn nhiều so với plastic DIP (rẻ hơn, ra đời sau) và các gói bề mặt như QFP hay PLCC vốn chỉ phổ biến từ cuối thập niên 1970 trở đi khi nhu cầu thu nhỏ mật độ linh kiện tăng lên.</p>",
+   "en": "<p>In the history of IC packaging, ceramic DIP dates back to the 1960s, well before the cheaper plastic DIP that followed it and before surface-mount packages such as QFP or PLCC, which only became common from the late 1970s onward as the demand for higher component density grew.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q7",
+   "en": "Tooley Ch.8 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các mối nối từ pad trên die IC tới chân ra thường được:",
+   "en": "The connections from the pads on an integrated circuit die are:"
+  },
+  "opts": [
+   {
+    "vi": "hàn siêu âm/nhiệt (welded) vào dây nối trong",
+    "en": "welded to the internal connecting wires"
+   },
+   {
+    "vi": "hàn thiếc vào dây nối trong",
+    "en": "soldered to the internal connecting wires"
+   },
+   {
+    "vi": "bấm (crimp) vào dây nối trong",
+    "en": "crimped to the internal connecting wires"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Kỹ thuật wire-bonding gắn dây vàng/nhôm từ pad tới khung dẫn bằng hàn siêu âm/nhiệt (welded), không phải hàn thiếc thông thường.",
+   "en": "Wire bonding attaches gold/aluminium wires from the pad to the lead frame by ultrasonic/thermal welding, not by ordinary soldering."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Wire-bonding dùng một sợi dây vàng hoặc nhôm rất mảnh, gắn từng đầu dây vào pad trên die và vào khung dẫn (lead frame) bằng nhiệt kết hợp áp lực và sóng siêu âm, tạo ra một mối hàn khuếch tán kim loại thực sự chứ không phải lớp thiếc hàn phủ lên như kỹ thuật hàn thông thường trên board mạch.</p>",
+   "en": "<p>Wire-bonding uses an extremely thin gold or aluminium wire, with each end attached to a pad on the die and to the lead frame using heat combined with pressure and ultrasonic energy, forming a true metal-diffusion weld rather than a layer of solder the way ordinary board-level soldering works.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q8",
+   "en": "Tooley Ch.8 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một IC bus transceiver chứa 64 cổng logic và bộ đệm. Chip này là ví dụ của quy mô tích hợp:",
+   "en": "An IC bus transceiver containing 64 logic gates and buffers is an example of:"
+  },
+  "opts": [
+   {
+    "vi": "MSI",
+    "en": "MSI"
+   },
+   {
+    "vi": "SSI",
+    "en": "SSI"
+   },
+   {
+    "vi": "LSI",
+    "en": "LSI"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vài chục tới ~100 cổng logic tương ứng quy mô tích hợp vừa MSI.",
+   "en": "A few tens up to about 100 logic gates corresponds to medium-scale integration, MSI."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>64 cổng logic nằm gọn trong khoảng vài chục tới một trăm cổng, đúng ngưỡng phân loại MSI (Medium Scale Integration), cao hơn hẳn một cổng logic đơn lẻ (SSI) nhưng còn thấp hơn nhiều so với hàng nghìn cổng của LSI.</p>",
+   "en": "<p>64 logic gates sit comfortably within the tens-to-around-a-hundred gate range that defines MSI (Medium Scale Integration), well above a single standalone gate (SSI) but far below the thousands of gates found in LSI.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q9",
+   "en": "Tooley Ch.8 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Việc kiểm tra sản xuất (production test) trên một wafer IC được thực hiện:",
+   "en": "Production tests are performed on an integrated circuit wafer:"
+  },
+  "opts": [
+   {
+    "vi": "sau khi cắt thành từng chip riêng",
+    "en": "after being cut into individual devices"
+   },
+   {
+    "vi": "chỉ khi chip đã được gắn lên board",
+    "en": "only after the device has been fitted to a board"
+   },
+   {
+    "vi": "trước khi cắt thành từng chip riêng",
+    "en": "before being cut into individual devices"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Wafer được kiểm tra (wafer probing) ngay khi còn nguyên tấm, trước công đoạn cắt (dicing).",
+   "en": "The wafer is tested (wafer probing) while still whole, before the dicing step."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Kiểm tra khi wafer còn nguyên tấm (wafer probing) cho phép loại bỏ ngay những die lỗi bằng đầu dò điện tự động, tránh lãng phí công đoạn đóng gói tốn kém cho những chip vốn đã hỏng ngay từ khâu chế tạo. Việc cắt (dicing) chỉ diễn ra sau khi đã đánh dấu rõ die nào đạt, die nào không đạt.</p>",
+   "en": "<p>Testing while the wafer is still intact (wafer probing) lets defective die be identified immediately with automated electrical probes, avoiding the costly packaging step for chips that were already faulty at the fabrication stage. Dicing only happens after the good and bad die have been clearly marked.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q13",
+   "en": "Tooley Ch.8 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mỗi mạch tích hợp riêng lẻ được cắt ra từ một wafer được gọi là:",
+   "en": "Each individual integrated circuit produced from a wafer is known as a:"
+  },
+  "opts": [
+   {
+    "vi": "die",
+    "en": "die"
+   },
+   {
+    "vi": "blank",
+    "en": "blank"
+   },
+   {
+    "vi": "gate",
+    "en": "gate"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thuật ngữ chuẩn cho một chip cắt rời từ wafer là 'die'.",
+   "en": "The standard term for an individual chip cut from a wafer is a 'die'."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một wafer bán dẫn chứa hàng trăm tới hàng nghìn bản sao của cùng một mạch, mỗi bản sao riêng lẻ sau khi cắt ra được gọi là một 'die' (số nhiều là 'dice' hoặc 'dies'). Chỉ sau khi đóng gói (packaging) die đó vào vỏ nhựa hoặc gốm cùng khung chân, sản phẩm mới được gọi là một IC hoàn chỉnh.</p>",
+   "en": "<p>A semiconductor wafer holds hundreds to thousands of copies of the same circuit; each individual copy, once cut out, is called a 'die' (plural 'dice' or 'dies'). Only after that die is packaged into a plastic or ceramic case with a lead frame does the product become a finished IC.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.8 Q15",
+   "en": "Tooley Ch.8 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Fan-out của một cổng logic TTL chuẩn là:",
+   "en": "A standard TTL logic gate has a fan-out of:"
+  },
+  "opts": [
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "10",
+    "en": "10"
+   },
+   {
+    "vi": "20",
+    "en": "20"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "TTL chuẩn có fan-out danh định là 10 (điều khiển được tối đa 10 đầu vào TTL cùng họ).",
+   "en": "Standard TTL has a nominal fan-out of 10 (it can drive up to 10 TTL inputs of the same family)."
+  },
+  "topic": {
+   "vi": "Fan-in, fan-out và đặc tính IC",
+   "en": "Fan-in, fan-out and IC characteristics"
+  },
+  "topic_id": "fan",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Fan-out giới hạn số đầu vào cùng họ logic mà một đầu ra có thể điều khiển an toàn, vì mỗi đầu vào rút một lượng dòng nhỏ từ đầu ra đó. Vượt quá 10 đầu vào TTL trên một đầu ra TTL chuẩn có thể khiến điện áp mức cao tụt xuống dưới ngưỡng nhận biết logic 1 của các cổng phía sau, gây lỗi logic ngẫu nhiên khó phát hiện.</p>",
+   "en": "<p>Fan-out limits how many same-family logic inputs a single output can safely drive, since each input draws a small amount of current from that output. Exceeding 10 TTL inputs on one standard TTL output can pull the high-level voltage below the logic-1 recognition threshold of the following gates, causing intermittent logic errors that are hard to trace.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.9 Q1",
+   "en": "Tooley Ch.9 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số lượng tải đầu vào chuẩn (cùng họ logic) mà MỘT đầu vào của mạch logic tạo ra được gọi là:",
+   "en": "The equivalent number of standard input loads imposed by the input of a logic circuit is known as:"
+  },
+  "opts": [
+   {
+    "vi": "fan-out",
+    "en": "fan-out"
+   },
+   {
+    "vi": "fan-in",
+    "en": "fan-in"
+   },
+   {
+    "vi": "fan-load",
+    "en": "fan-load"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đây chính là định nghĩa của fan-in.",
+   "en": "This is exactly the definition of fan-in."
+  },
+  "topic": {
+   "vi": "Fan-in, fan-out và đặc tính IC",
+   "en": "Fan-in, fan-out and IC characteristics"
+  },
+  "topic_id": "fan",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Fan-in và fan-out là hai khái niệm dễ nhầm vì nghe tương tự nhau nhưng đo hai chiều khác nhau: fan-out đo khả năng CUNG CẤP tải của một đầu ra, còn fan-in đo lượng tải mà một đầu vào ÁP LÊN nguồn tín hiệu đang điều khiển nó. Một đầu vào chuẩn của cùng họ logic luôn có fan-in bằng 1 theo định nghĩa.</p>",
+   "en": "<p>Fan-in and fan-out are easy to confuse because they sound similar but measure two different directions: fan-out measures an output's capacity to SUPPLY load, while fan-in measures how much load an input PLACES on the source driving it. A standard input of the same logic family always has a fan-in of 1 by definition.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.9 Q2",
+   "en": "Tooley Ch.9 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tên gọi khác của bộ dồn kênh (multiplexer) là:",
+   "en": "Another name for a multiplexer is:"
+  },
+  "opts": [
+   {
+    "vi": "bộ thu phát bus (bus transceiver)",
+    "en": "bus transceiver"
+   },
+   {
+    "vi": "thanh ghi dịch (shift register)",
+    "en": "shift register"
+   },
+   {
+    "vi": "bộ chọn dữ liệu (data selector)",
+    "en": "data selector"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Multiplexer thường được gọi là 'data selector' vì chức năng chọn 1 trong nhiều nguồn dữ liệu đưa ra 1 ngõ ra.",
+   "en": "A multiplexer is often called a 'data selector' because it selects 1 of several data sources for a single output."
+  },
+  "topic": {
+   "vi": "Fan-in, fan-out và đặc tính IC",
+   "en": "Fan-in, fan-out and IC characteristics"
+  },
+  "topic_id": "fan",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cái tên 'data selector' mô tả đúng bản chất chức năng của multiplexer hơn cả cái tên gốc: mạch này không 'trộn' nhiều tín hiệu lại như từ multiplex đôi khi gợi ý, mà chỉ đơn thuần CHỌN đúng một trong nhiều nguồn dữ liệu đầu vào để đưa ra ngõ ra duy nhất, dựa theo mã nhị phân trên các đường chọn.</p>",
+   "en": "<p>The name 'data selector' actually describes a multiplexer's function more accurately than the word 'multiplex' itself might suggest: the circuit does not blend several signals together, it simply SELECTS exactly one of several input data sources to pass through to a single output, based on the binary code on its select lines.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.9 Q4",
+   "en": "Tooley Ch.9 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ dồn kênh 4-sang-1 (4-to-1 multiplexer) cần bao nhiêu đường chọn (select input)?",
+   "en": "A four-to-one multiplexer has:"
+  },
+  "opts": [
+   {
+    "vi": "bốn đường chọn",
+    "en": "four select lines"
+   },
+   {
+    "vi": "một đường chọn",
+    "en": "one select line"
+   },
+   {
+    "vi": "hai đường chọn",
+    "en": "two select lines"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Cần n đường chọn để phân biệt 2ⁿ kênh vào; với 4 kênh, n=2.",
+   "en": "n select lines are needed to distinguish 2ⁿ input channels; with 4 channels, n = 2."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Công thức n=log₂(N) áp dụng cho mọi bộ dồn kênh: cần đủ số đường chọn để mã nhị phân của chúng có thể đánh số hết N kênh dữ liệu đầu vào. Với 4 kênh, cần 2 đường chọn vì 2²=4; với 8 kênh sẽ cần 3 đường vì 2³=8, và cứ thế tăng dần.</p>",
+   "en": "<p>The formula n=log₂(N) applies to every multiplexer: there must be enough select lines for their binary code to number all N input data channels. With 4 channels, 2 select lines are needed because 2²=4; with 8 channels, 3 lines are needed because 2³=8, and so on as the channel count grows.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.9 Q5",
+   "en": "Tooley Ch.9 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một số bộ mã hoá (encoder) có thêm chân enable input/output để cho phép:",
+   "en": "Additional enable inputs and outputs are provided in some encoders in order to permit:"
+  },
+  "opts": [
+   {
+    "vi": "ghép tầng (cascading)",
+    "en": "cascading"
+   },
+   {
+    "vi": "đảo tín hiệu (inverting)",
+    "en": "inverting"
+   },
+   {
+    "vi": "phát hiện lỗi (error detection)",
+    "en": "error detection"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chân enable cho phép nối tầng (cascade) nhiều IC encoder để mở rộng số đầu vào mã hoá.",
+   "en": "The enable pins allow several encoder ICs to be cascaded to expand the number of encoded inputs."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một IC encoder đơn lẻ chỉ mã hoá được một số lượng đầu vào cố định theo thiết kế của nó. Chân enable input/output cho phép ghép nhiều IC encoder lại với nhau theo tầng (cascade), trong đó tầng có mức ưu tiên thấp hơn chỉ được phép hoạt động khi tầng ưu tiên cao hơn báo hiệu 'không có đầu vào nào tích cực' qua chính chân enable output của nó.</p>",
+   "en": "<p>A single encoder IC can only encode a fixed number of inputs by design. The enable input/output pins allow several encoder ICs to be cascaded together, where a lower-priority stage is only allowed to operate once the higher-priority stage signals, through its own enable output, that none of its inputs are currently active.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.9 Q8",
+   "en": "Tooley Ch.9 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch logic trong Hình A2.10 (2 đầu vào A,B qua các tầng đảo, kết hợp qua 4 cổng AND-đảo) là:",
+   "en": "The logic circuit arrangement shown in Figure A2.10 is:"
+  },
+  "opts": [
+   {
+    "vi": "bộ mã hoá 2-sang-4 đường",
+    "en": "2-to-4 line encoder"
+   },
+   {
+    "vi": "bộ giải mã 2-sang-4 đường",
+    "en": "2-to-4 line decoder"
+   },
+   {
+    "vi": "bộ dồn kênh 2-sang-2 đường",
+    "en": "2-to-2 line multiplexer"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2 đầu vào chọn ra đúng 1 trong 4 đường ra (Y0-Y3): đúng cấu trúc bộ giải mã (decoder) 2-sang-4, dùng cổng NAND để tạo ngõ ra tích cực mức thấp.",
+   "en": "2 input lines select exactly 1 of 4 output lines (Y0-Y3): this is the structure of a 2-to-4 decoder, using NAND gates to produce active-LOW outputs."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q12",
+   "en": "Tooley Revision Paper 2 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thiết bị logic trong Hình A2.11 (IC 16 chân với chân EI, GS, EO, A0-A2, 8 đầu vào) là:",
+   "en": "The logic device shown in Figure A2.11 is:"
+  },
+  "opts": [
+   {
+    "vi": "bộ mã hoá 8-sang-3 đường",
+    "en": "8-to-3 line encoder"
+   },
+   {
+    "vi": "bộ mã hoá 4-sang-3 đường",
+    "en": "4-to-3 line encoder"
+   },
+   {
+    "vi": "bộ dồn kênh 4-sang-8 đường",
+    "en": "4-to-8 line multiplexer"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sơ đồ chân khớp chính xác với IC 74148: bộ mã hoá ưu tiên 8-sang-3 đường (8-to-3 priority encoder).",
+   "en": "The pin layout matches the 74148 IC exactly: an 8-to-3 line priority encoder."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q14",
+   "en": "Tooley Revision Paper 2 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các pin trên một IC đóng gói DIL được đánh số:",
+   "en": "The pins on a DIL packaged integrated circuit are numbered:"
+  },
+  "opts": [
+   {
+    "vi": "ngược chiều kim đồng hồ từ pin 1",
+    "en": "anti-clockwise from pin 1"
+   },
+   {
+    "vi": "theo chiều kim đồng hồ từ pin 1",
+    "en": "clockwise from pin 1"
+   },
+   {
+    "vi": "theo chiều kim đồng hồ từ pin 14",
+    "en": "clockwise from pin 14"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy ước chuẩn JEDEC: nhìn từ trên xuống, đánh số ngược chiều kim đồng hồ bắt đầu từ pin 1 (góc có khấc/chấm định vị).",
+   "en": "Standard JEDEC convention: viewed from the top, pins are numbered anti-clockwise starting from pin 1 (the corner with the notch/dot marker)."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q20",
+   "en": "Tooley Revision Paper 2 Q20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Loại thiết bị bán dẫn nào dễ bị hư hại nhất do tĩnh điện?",
+   "en": "Which one of the following classes of semiconductor device is most susceptible to static voltages:"
+  },
+  "opts": [
+   {
+    "vi": "transistor lưỡng cực (BJT)",
+    "en": "bipolar junction transistor (BJT)"
+   },
+   {
+    "vi": "vi xử lý VLSI",
+    "en": "VLSI microprocessor"
+   },
+   {
+    "vi": "chỉnh lưu có điều khiển silicon (SCR)",
+    "en": "silicon controlled rectifier (SCR)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Vi xử lý VLSI dùng công nghệ MOS với lớp oxit cực mỏng ở cổng transistor: cực kỳ nhạy với phóng tĩnh điện (ESD) hơn hẳn linh kiện lưỡng cực (BJT/SCR).",
+   "en": "A VLSI microprocessor uses MOS technology with an extremely thin oxide layer at the transistor gate: far more sensitive to electrostatic discharge (ESD) than bipolar devices (BJT/SCR)."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q10",
+   "en": "Tooley Revision Paper 5 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch tích hợp trong Hình A2.28 (chip khắc 'GD75232', đóng gói dán bề mặt) sử dụng kiểu đóng gói:",
+   "en": "What type of package is used for the integrated circuit shown in Figure A2.28?"
+  },
+  "opts": [
+   {
+    "vi": "Pin grid array (PGA)",
+    "en": "Pin grid array (PGA)"
+   },
+   {
+    "vi": "Small outline integrated circuit (SOIC)",
+    "en": "Small outline integrated circuit (SOIC)"
+   },
+   {
+    "vi": "Dual-in-line pack (DIP)",
+    "en": "Dual-in-line pack (DIP)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chân dạng gull-wing dán bề mặt hai bên, kích thước nhỏ gọn: đặc trưng gói SOIC.",
+   "en": "Gull-wing leads surface-mounted on two sides with a compact size: characteristic of the SOIC package."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q20",
+   "en": "Tooley Revision Paper 7 Q20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thiết bị trong Hình A2.30 (IC 16 chân, đầu vào D0-D7, đầu ra Y/W, chọn A-B-C) có chức năng:",
+   "en": "Which one of the following gives the function of the device shown in Figure A2.30?"
+  },
+  "opts": [
+   {
+    "vi": "Bộ cộng 4-bit (Four-bit adder)",
+    "en": "Four-bit adder"
+   },
+   {
+    "vi": "Bộ dồn kênh (Multiplexer)",
+    "en": "Multiplexer"
+   },
+   {
+    "vi": "Thanh ghi dịch (Shift register)",
+    "en": "Shift register"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "8 đầu vào dữ liệu (D0-D7), 3 đường chọn (A,B,C), 1 đầu ra (Y) và đầu ra phụ đảo (W): đúng cấu trúc IC 74151, bộ dồn kênh 8-sang-1.",
+   "en": "8 data inputs (D0-D7), 3 select lines (A, B, C), 1 output (Y) and an inverted complementary output (W): this is the structure of the 74151 IC, an 8-to-1 multiplexer."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q17",
+   "en": "Tooley Revision Paper 8 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong Hình A2.31 (bộ ADC dốc đơn: bộ so sánh nhận tín hiệu analog và sóng răng cưa, đầu ra điều khiển cổng AND+bộ đếm), chức năng của IC1 là:",
+   "en": "Which one of the following gives the function of IC1 in Figure A2.31?"
+  },
+  "opts": [
+   {
+    "vi": "Bộ so sánh (Comparator)",
+    "en": "Comparator"
+   },
+   {
+    "vi": "Nguồn cấp (Power supply)",
+    "en": "Power supply"
+   },
+   {
+    "vi": "Bộ đổi cực tính (Polarity changer)",
+    "en": "Polarity changer"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "IC1 là ký hiệu op-amp so sánh (comparator) giữa tín hiệu analog vào và sóng răng cưa từ ramp generator: cấu trúc kinh điển của ADC dốc đơn (single-slope ADC).",
+   "en": "IC1 is the symbol of a comparator op-amp between the analog input signal and the sawtooth wave from the ramp generator: the classic structure of a single-slope ADC."
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q20",
+   "en": "Tooley Revision Paper 8 Q20"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ cộng bán phần (half-adder) cộng hai bit nhị phân.",
+   "en": "A half-adder adds two binary bits."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng theo định nghĩa half-adder.",
+   "en": "True by the definition of a half adder."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Half-adder là mạch cộng đơn giản nhất, chỉ xử lý đúng 2 bit đầu vào (A, B) mà không tính tới bit nhớ từ tầng trước, nên chỉ dùng được cho vị trí bit thấp nhất (LSB) khi cộng hai số nhiều bit.</p>",
+   "en": "<p>The half-adder is the simplest adder circuit, handling exactly 2 input bits (A, B) with no carry-in from a previous stage, so it can only be used for the lowest bit position (LSB) when adding two multi-bit numbers.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #1",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #1"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ cộng bán phần chỉ có đầu ra nhớ (carry output).",
+   "en": "A half-adder has a carry output only."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Half-adder có 2 đầu ra: tổng (Σ) VÀ nhớ (Carry), không phải chỉ có carry.",
+   "en": "A half adder has 2 outputs: sum (Σ) AND carry, not just carry."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Half-adder luôn tạo ra ĐỦ HAI đầu ra: tổng (Σ=A XOR B) và nhớ ra (Cout=A AND B). Thiếu một trong hai đầu ra này sẽ không đủ thông tin để cộng đúng, vì bản thân bit tổng và bit nhớ mang hai ý nghĩa hoàn toàn khác nhau trong phép cộng nhị phân.</p>",
+   "en": "<p>A half-adder always produces BOTH outputs: the sum (Σ=A XOR B) and the carry-out (Cout=A AND B). Missing either output would not be enough information to add correctly, since the sum bit and the carry bit carry two entirely different meanings in binary addition.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #2",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #2"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ cộng toàn phần (full adder) cộng hai bit và tạo ra hai đầu ra.",
+   "en": "A full adder adds two bits and produces two outputs."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Full adder cộng BA đầu vào (2 bit dữ liệu + 1 bit nhớ vào Cin), không phải chỉ 2 bit.",
+   "en": "A full adder adds THREE inputs (2 data bits + 1 carry-in Cin), not just 2 bits."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Điểm khác biệt cốt lõi giữa half-adder và full-adder nằm ở chỗ full-adder có THÊM một đầu vào Cin (carry-in) để nhận bit nhớ từ tầng thấp hơn. Nhờ vậy, full-adder có thể ghép nối tiếp nhiều tầng để cộng hai số nhị phân dài bao nhiêu bit cũng được.</p>",
+   "en": "<p>The key difference between a half-adder and a full-adder is that the full-adder has an EXTRA Cin (carry-in) input to receive the carry bit from a lower stage. This is what allows full-adders to be chained together to add binary numbers of any bit length.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #3",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #3"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ cộng toàn phần chỉ có thể hiện thực bằng cổng XOR 2 đầu vào.",
+   "en": "A full-adder can be realized only by using 2-input XOR gates."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Full adder cần kết hợp cả XOR VÀ AND/OR để tạo carry-out, không chỉ dùng XOR.",
+   "en": "A full adder needs both XOR AND AND/OR to produce the carry-out, not just XOR."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>XOR đơn thuần chỉ tính đúng bit TỔNG (Σ=A⊕B⊕Cin), nhưng không thể tự nó tạo ra bit NHỚ RA đúng vì carry-out phụ thuộc vào việc có ÍT NHẤT HAI trong ba bit đầu vào cùng bằng 1, một điều kiện cần thêm cổng AND và OR mới biểu diễn được.</p>",
+   "en": "<p>XOR alone correctly computes only the SUM bit (Σ=A⊕B⊕Cin), but it cannot by itself produce the correct CARRY-OUT, since the carry-out depends on AT LEAST TWO of the three input bits being 1 together, a condition that needs AND and OR gates as well to express.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #4",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #4"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Khi hai bit đầu vào đều là 1 và bit nhớ vào cũng là 1, đầu ra tổng của bộ cộng toàn phần là 1.",
+   "en": "When the input bits are both 1 and the input carry bit is 1, the sum output of a full adder is 1."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "1+1+1=11₂ → tổng (Σ)=1, nhớ ra (Cout)=1: đúng, tổng bằng 1.",
+   "en": "1+1+1 = 11₂ → sum (Σ) = 1, carry out (Cout) = 1: correct, the sum is 1."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Khi cả 3 đầu vào của full-adder (A, B, Cin) đều bằng 1, tổng số học là 1+1+1=3, viết dưới dạng nhị phân 2-bit là 11. Bit thấp của kết quả này (=1) chính là Σ, còn bit cao (=1) chính là Cout, khớp đúng với phát biểu.</p>",
+   "en": "<p>When all 3 full-adder inputs (A, B, Cin) are 1, the arithmetic sum is 1+1+1=3, written as the 2-bit binary value 11. The low bit of this result (=1) is exactly Σ, and the high bit (=1) is exactly Cout, matching the statement.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #5",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #5"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Đầu ra của bộ so sánh (comparator) bằng 0 khi hai số nhị phân đầu vào bằng nhau.",
+   "en": "The output of a comparator is 0 when the two binary inputs given are equal."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Khi hai số bằng nhau, đầu ra 'A=B' của comparator ở mức tích cực (thường là 1/HIGH), không phải 0.",
+   "en": "When two numbers are equal, the comparator's 'A = B' output is active (usually 1/HIGH), not 0."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một bộ so sánh độ lớn (magnitude comparator) chuẩn luôn có 3 đầu ra riêng biệt: A>B, A<B, và A=B, mỗi đầu ra chỉ tích cực (thường ở mức HIGH) đúng khi điều kiện tương ứng đúng. Khi hai số bằng nhau, chính đầu ra A=B mới lên mức tích cực, không phải một đầu ra chung nào đó về 0.</p>",
+   "en": "<p>A standard magnitude comparator always has 3 separate outputs: A>B, A<B, and A=B, each becoming active (usually HIGH) exactly when its own condition holds. When the two numbers are equal, it is specifically the A=B output that goes active, not some shared output dropping to 0.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #6",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #6"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ giải mã (decoder) phát hiện sự hiện diện của một tổ hợp bit đầu vào cụ thể.",
+   "en": "A decoder detects the presence of a specified combination of input bits."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng theo chức năng cơ bản của decoder.",
+   "en": "True by the basic function of a decoder."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một decoder về bản chất là một mạch 'nhận diện mẫu': nó theo dõi các đường đầu vào và chỉ kích hoạt đúng MỘT đường đầu ra tương ứng khi tổ hợp bit đầu vào khớp với đúng mã mà đường ra đó đại diện, còn lại mọi đường ra khác đều không tích cực.</p>",
+   "en": "<p>A decoder is essentially a 'pattern recognition' circuit: it watches the input lines and activates exactly ONE corresponding output line only when the input bit combination matches the code that output represents, while every other output stays inactive.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #7",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #7"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ giải mã 4-sang-10 đường và bộ giải mã 1-trong-10 là hai loại khác nhau.",
+   "en": "The 4-line-to-10-line decoder and the 1-of-10 decoder are two different types."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đây thực chất là CÙNG MỘT loại thiết bị được gọi theo 2 tên khác nhau, không phải hai loại khác nhau.",
+   "en": "These are actually the SAME kind of device with two different names, not two different kinds."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>'4-line-to-10-line decoder' mô tả decoder theo SỐ ĐƯỜNG VÀO/RA vật lý (4 đường vào mã hoá nhị phân, 10 đường ra), còn '1-of-10 decoder' mô tả CHỨC NĂNG của nó (chọn ra đúng 1 trong 10 đường ra). Cả hai tên gọi chỉ cùng một loại IC decoder BCD-sang-thập-phân quen thuộc, không phải hai thiết kế khác nhau.</p>",
+   "en": "<p>'4-line-to-10-line decoder' describes the decoder by its PHYSICAL number of input/output lines (4 binary-coded inputs, 10 outputs), while '1-of-10 decoder' describes its FUNCTION (selecting exactly 1 of 10 outputs). Both names refer to the exact same familiar BCD-to-decimal decoder IC, not two different designs.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #8",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #8"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ mã hoá (encoder) về cơ bản thực hiện chức năng ngược lại với bộ giải mã.",
+   "en": "An encoder essentially performs a reverse decoder function."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng: encoder và decoder là hai chức năng ngược nhau.",
+   "en": "True: an encoder and a decoder are two opposite functions."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Decoder nhận một mã nhị phân gọn và kích hoạt đúng một trong nhiều đường ra tương ứng; encoder làm NGƯỢC LẠI, nhận tín hiệu tích cực trên một trong nhiều đường vào và tạo ra đúng mã nhị phân gọn tương ứng với đường vào đó. Hai mạch này thường xuất hiện thành cặp trong hệ thống bàn phím và mã hoá địa chỉ.</p>",
+   "en": "<p>A decoder takes a compact binary code and activates exactly one of several corresponding outputs; an encoder does the OPPOSITE, taking an active signal on one of several inputs and producing the compact binary code corresponding to that input. These two circuits commonly appear as a pair in keyboard systems and address encoding.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #9",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #9"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ dồn kênh (multiplexer) là mạch logic cho phép dữ liệu số từ một nguồn duy nhất được định tuyến ra nhiều đường.",
+   "en": "A multiplexer is a logic circuit that allows digital information from a single source to be routed onto several lines."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đây là mô tả của DEMULTIPLEXER (1 vào, nhiều ra); multiplexer làm NGƯỢC LẠI: nhiều nguồn vào, chọn ra 1 đường.",
+   "en": "This describes a DEMULTIPLEXER (1 input, many outputs); a multiplexer does the OPPOSITE: many input sources, one selected output line."
+  },
+  "topic": {
+   "vi": "Fan-in, fan-out và đặc tính IC",
+   "en": "Fan-in, fan-out and IC characteristics"
+  },
+  "topic_id": "fan",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Multiplexer và demultiplexer thường bị nhầm lẫn vì tên gọi gần giống nhau nhưng chức năng hoàn toàn ngược nhau. Multiplexer CHỌN 1 trong NHIỀU nguồn vào để đưa ra 1 đường ra duy nhất (nhiều-vào, một-ra); demultiplexer PHÂN PHỐI 1 nguồn vào duy nhất ra 1 trong NHIỀU đường ra (một-vào, nhiều-ra), đúng như mô tả trong câu hỏi.</p>",
+   "en": "<p>Multiplexers and demultiplexers are often confused because their names sound similar but their functions are exact opposites. A multiplexer SELECTS 1 of MANY input sources to route to a single output (many-in, one-out); a demultiplexer DISTRIBUTES a single input source to 1 of MANY outputs (one-in, many-out), which is exactly what the question describes.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · True/False #10",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · True/False #10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ cộng bán phần (half-adder) được đặc trưng bởi:",
+   "en": "A half-adder is characterized by"
+  },
+  "opts": [
+   {
+    "vi": "2 đầu vào và 2 đầu ra",
+    "en": "two inputs and two outputs"
+   },
+   {
+    "vi": "3 đầu vào và 2 đầu ra",
+    "en": "three inputs and two outputs"
+   },
+   {
+    "vi": "2 đầu vào và 3 đầu ra",
+    "en": "two inputs and three outputs"
+   },
+   {
+    "vi": "2 đầu vào và 1 đầu ra",
+    "en": "two inputs and one output"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Half-adder: 2 đầu vào (A,B), 2 đầu ra (Σ, Cout).",
+   "en": "Half adder: 2 inputs (A, B), 2 outputs (Σ, Cout)."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bốn kết hợp số đầu vào/đầu ra trong các phương án đều dễ nhầm nếu không nhớ rõ định nghĩa. Cách chắc ăn nhất là hình dung sơ đồ khối: half-adder chỉ có 2 mũi tên đi vào (A, B) và 2 mũi tên đi ra (Σ, Cout), không hơn không kém.</p>",
+   "en": "<p>The four input/output count combinations among the options are easy to mix up without a clear picture of the definition. The safest approach is to visualise the block diagram: a half-adder has exactly 2 arrows going in (A, B) and 2 arrows going out (Σ, Cout), no more and no less.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #1",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ cộng toàn phần (full-adder) được đặc trưng bởi:",
+   "en": "A full-adder is characterized by"
+  },
+  "opts": [
+   {
+    "vi": "2 đầu vào và 3 đầu ra",
+    "en": "two inputs and three outputs"
+   },
+   {
+    "vi": "3 đầu vào và 2 đầu ra",
+    "en": "three inputs and two outputs"
+   },
+   {
+    "vi": "2 đầu vào và 2 đầu ra",
+    "en": "two inputs and two outputs"
+   },
+   {
+    "vi": "2 đầu vào và 1 đầu ra",
+    "en": "two inputs and one output"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Full-adder: 3 đầu vào (A,B,Cin), 2 đầu ra (Σ, Cout).",
+   "en": "Full adder: 3 inputs (A, B, Cin), 2 outputs (Σ, Cout)."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>So với half-adder, full-adder có THÊM đúng 1 đầu vào (Cin), nhưng số đầu ra vẫn giữ nguyên là 2 (Σ, Cout). Đây là chi tiết dễ nhớ nhầm: nhiều người tưởng full-adder cũng có nhiều đầu ra hơn, nhưng thực ra chỉ số đầu VÀO tăng thêm.</p>",
+   "en": "<p>Compared with a half-adder, a full-adder gains exactly 1 extra input (Cin), but the number of outputs stays at 2 (Σ, Cout). This is an easy detail to misremember: many people assume a full-adder also has more outputs, but only the input count actually increases.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #2",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đầu vào bộ cộng toàn phần là A=1, B=0, Cin=1. Đầu ra là:",
+   "en": "The inputs to a full adder are A=1, B=0, Cin=1. The outputs are"
+  },
+  "opts": [
+   {
+    "vi": "Σ=0, Cout=0",
+    "en": "Σ=0, Cout=0"
+   },
+   {
+    "vi": "Σ=1, Cout=1",
+    "en": "Σ=1, Cout=1"
+   },
+   {
+    "vi": "Σ=0, Cout=1",
+    "en": "Σ=0, Cout=1"
+   },
+   {
+    "vi": "Σ=1, Cout=0",
+    "en": "Σ=1, Cout=0"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "1+0+1 = 10₂ (thập phân 2) → bit tổng Σ=0, bit nhớ Cout=1.",
+   "en": "1+0+1 = 10₂ (decimal 2) → sum bit Σ = 0, carry Cout = 1."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cách làm nhanh cho bất kỳ tổ hợp full-adder nào: cộng đơn giản A+B+Cin theo số học thông thường (1+0+1=2), rồi đổi kết quả sang nhị phân 2-bit (2=10₂). Bit thấp của số nhị phân đó luôn là Σ, bit cao luôn là Cout.</p>",
+   "en": "<p>A quick method for any full-adder combination: simply add A+B+Cin as ordinary arithmetic (1+0+1=2), then convert that result to a 2-bit binary value (2=10₂). The low bit of that binary value is always Σ, and the high bit is always Cout.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #3",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ cộng song song 3-bit có thể cộng:",
+   "en": "A 3-bit parallel adder can add"
+  },
+  "opts": [
+   {
+    "vi": "ba bit tuần tự",
+    "en": "three bits in sequence"
+   },
+   {
+    "vi": "ba số nhị phân 2-bit",
+    "en": "three 2-bit binary numbers"
+   },
+   {
+    "vi": "hai số nhị phân 3-bit",
+    "en": "two 3-bit binary numbers"
+   },
+   {
+    "vi": "ba bit cùng lúc",
+    "en": "three bits at a time"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bộ cộng song song n-bit cộng hai số n-bit cùng lúc; với n=3 → cộng hai số 3-bit.",
+   "en": "An n-bit parallel adder adds two n-bit numbers at the same time; with n = 3 → it adds two 3-bit numbers."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>'Song song' (parallel) trong tên gọi ám chỉ việc TẤT CẢ các bit của cả hai số được đưa vào cùng một lúc trên các đường dây riêng biệt, khác với bộ cộng nối tiếp (serial adder) xử lý từng bit một qua nhiều chu kỳ xung nhịp. Một bộ cộng song song n-bit luôn cộng đúng hai số có n bit mỗi số.</p>",
+   "en": "<p>'Parallel' in the name refers to ALL the bits of both numbers being presented at once on separate wires, unlike a serial adder, which processes one bit at a time over several clock cycles. An n-bit parallel adder always adds exactly two n-bit numbers.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #4",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để mở rộng bộ cộng song song 2-bit thành 4-bit, bạn phải:",
+   "en": "To expand a 2-bit parallel adder to a 4-bit parallel adder, you must"
+  },
+  "opts": [
+   {
+    "vi": "dùng 2 bộ cộng 2-bit, nối đầu ra tổng của bộ này vào đầu vào bit của bộ kia",
+    "en": "use two 2-bit adders and connect the sum outputs of one to the bit inputs of the other"
+   },
+   {
+    "vi": "dùng 2 bộ cộng 2-bit không kết nối",
+    "en": "use two 2-bit adders with no interconnections"
+   },
+   {
+    "vi": "dùng 4 bộ cộng 2-bit không kết nối",
+    "en": "use four 2-bit adders with no interconnections"
+   },
+   {
+    "vi": "dùng 2 bộ cộng 2-bit, nối đầu ra nhớ (carry) của bộ này vào đầu vào nhớ của bộ kia",
+    "en": "use two 2-bit adders with the carry output of one connected to the carry input of the other"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Ghép tầng (cascade) bằng cách nối Carry-out của tầng thấp vào Carry-in của tầng cao: đúng nguyên lý bộ cộng gợn sóng (ripple carry).",
+   "en": "Cascading by connecting the carry-out of the lower stage to the carry-in of the higher stage is the principle of the ripple-carry adder."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Nguyên tắc mở rộng độ rộng bit của bộ cộng luôn giống nhau: nối Cout của tầng LOW hơn vào Cin của tầng CAO hơn kế tiếp, để bit nhớ 'gợn sóng' (ripple) từ tầng thấp lên tầng cao đúng như phép cộng tay thông thường. Ghép 2 bộ cộng 2-bit theo cách này tạo thành đúng 1 bộ cộng 4-bit hoàn chỉnh.</p>",
+   "en": "<p>The principle for widening an adder is always the same: connect the Cout of the LOWER stage to the Cin of the next HIGHER stage, so the carry 'ripples' from low to high exactly the way manual addition works. Chaining two 2-bit adders this way forms exactly one complete 4-bit adder.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #5",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu IC so sánh độ lớn 74HC85 có A=1000 và B=1010, đầu ra là:",
+   "en": "If a 74HC85 magnitude comparator has A=1000 and B=1010, the outputs are"
+  },
+  "opts": [
+   {
+    "vi": "A>B=0,A<B=1,A=B=0",
+    "en": "A>B=0,A<B=1,A=B=0"
+   },
+   {
+    "vi": "A>B=0,A<B=0,A=B=0",
+    "en": "A>B=0,A<B=0,A=B=0"
+   },
+   {
+    "vi": "A>B=0,A<B=0,A=B=1",
+    "en": "A>B=0,A<B=0,A=B=1"
+   },
+   {
+    "vi": "A>B=0,A<B=1,A=B=1",
+    "en": "A>B=0,A<B=1,A=B=1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A=8, B=10 → A<B đúng (=1), A>B sai (=0), A=B sai (=0).",
+   "en": "A = 8, B = 10 → A<B is true (=1), A>B is false (=0), A=B is false (=0)."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trước khi tra bảng chân trị của IC so sánh, luôn đổi các số nhị phân về thập phân để so sánh trực quan trước: 1000=8 và 1010=10, rõ ràng 8<10. Từ đó suy ra ngay đầu ra nào tích cực (A<B=1) và hai đầu ra còn lại chắc chắn không tích cực (=0).</p>",
+   "en": "<p>Before checking a comparator IC's truth table, it helps to convert the binary numbers to decimal for an intuitive comparison first: 1000=8 and 1010=10, so clearly 8<10. From there, it follows directly which output is active (A<B=1) and that the other two outputs must be inactive (=0).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #6",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu bộ giải mã 1-trong-16 với đầu ra tích cực mức thấp có đầu ra decimal 12 ở mức LOW, đầu vào là:",
+   "en": "If a 1-of-16 decoder with active-LOW outputs exhibits a LOW on the decimal 12 output, what are the inputs?"
+  },
+  "opts": [
+   {
+    "vi": "A3A2A1A0=0100",
+    "en": "A3A2A1A0 = 0100"
+   },
+   {
+    "vi": "A3A2A1A0=1010",
+    "en": "A3A2A1A0 = 1010"
+   },
+   {
+    "vi": "A3A2A1A0=1110",
+    "en": "A3A2A1A0 = 1110"
+   },
+   {
+    "vi": "A3A2A1A0=1100",
+    "en": "A3A2A1A0 = 1100"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "12 thập phân = 1100 nhị phân.",
+   "en": "12 decimal = 1100 binary."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Với bộ giải mã, luôn cần đổi đúng số hiệu đầu ra thập phân sang mã nhị phân tương ứng trên các đường địa chỉ A3A2A1A0 trước khi so sánh với các phương án. 12 thập phân đổi sang nhị phân 4-bit là 1100, khớp trực tiếp với một trong các phương án mà không cần suy luận gì thêm về hoạt động bên trong IC.</p>",
+   "en": "<p>For a decoder question, always convert the decimal output number to its corresponding binary code on the address lines A3A2A1A0 before comparing against the options. Decimal 12 converts to the 4-bit binary value 1100, matching one of the options directly without needing any further reasoning about the IC's internal operation.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #7",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ giải mã BCD-sang-7-đoạn có đầu vào 0100. Các đầu ra tích cực là:",
+   "en": "A BCD-to-7 segment decoder has 0100 on its inputs. The active outputs are"
+  },
+  "opts": [
+   {
+    "vi": "a,c,f,g",
+    "en": "a, c, f, g"
+   },
+   {
+    "vi": "b,c,f,g",
+    "en": "b, c, f, g"
+   },
+   {
+    "vi": "b,d,e,g",
+    "en": "b, d, e, g"
+   },
+   {
+    "vi": "b,c,e,f",
+    "en": "b, c, e, f"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "0100₂=4 thập phân; hiển thị số 4 trên LED 7 đoạn cần sáng các đoạn b,c,f,g.",
+   "en": "0100₂ = 4 decimal; displaying the digit 4 on a 7-segment LED needs segments b, c, f and g lit."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bài toán này cần kết hợp hai bước: đổi mã BCD đầu vào sang chữ số thập phân (0100=4), rồi tra bảng quy ước 7 đoạn để biết chữ số đó cần sáng đúng những đoạn nào. Số 4 trên hiển thị 7 đoạn có hình dạng đặc trưng chỉ sáng 4 trong 7 đoạn (b, c, f, g), không sáng đoạn a, d, e.</p>",
+   "en": "<p>This problem combines two steps: converting the input BCD code to a decimal digit (0100=4), then checking the 7-segment convention table to see which segments that digit needs lit. The digit 4 on a 7-segment display has a distinctive shape lighting only 4 of the 7 segments (b, c, f, g), leaving a, d, e unlit.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #8",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu bộ mã hoá ưu tiên bát phân-sang-nhị phân có các đầu vào 0,2,5,6 ở mức tích cực, đầu ra nhị phân tích cực mức cao là:",
+   "en": "If an octal-to-binary priority encoder has its 0,2,5,6 inputs active, the active-HIGH binary output is"
+  },
+  "opts": [
+   {
+    "vi": "000",
+    "en": "000"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   },
+   {
+    "vi": "101",
+    "en": "101"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ưu tiên chọn đầu vào có chỉ số CAO NHẤT trong các đầu vào tích cực {0,2,5,6} → chọn 6 → mã nhị phân 110.",
+   "en": "Select the input with the HIGHEST index among the active inputs {0, 2, 5, 6} → 6 is selected → binary code 110."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Điểm khác biệt cốt lõi của encoder ƯU TIÊN so với encoder thường: khi CÓ NHIỀU đầu vào cùng tích cực một lúc, nó chỉ mã hoá đúng đầu vào có SỐ HIỆU CAO NHẤT, bỏ qua các đầu vào tích cực khác có số hiệu thấp hơn. Với {0,2,5,6} cùng tích cực, số hiệu cao nhất là 6, đổi sang nhị phân 3-bit là 110.</p>",
+   "en": "<p>The core difference of a PRIORITY encoder versus an ordinary one: when SEVERAL inputs are active at once, it only encodes the input with the HIGHEST number, ignoring the other active inputs with lower numbers. With {0,2,5,6} all active, the highest number is 6, which converts to the 3-bit binary value 110.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #9",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nói chung, một bộ dồn kênh (multiplexer) có:",
+   "en": "In general, a multiplexer has"
+  },
+  "opts": [
+   {
+    "vi": "nhiều đầu vào dữ liệu, nhiều đầu ra dữ liệu, và các đầu vào chọn",
+    "en": "several data inputs, several data outputs, and selection inputs"
+   },
+   {
+    "vi": "1 đầu vào dữ liệu, nhiều đầu ra dữ liệu, và các đầu vào chọn",
+    "en": "one data input, several data outputs, and selection inputs"
+   },
+   {
+    "vi": "nhiều đầu vào dữ liệu, 1 đầu ra dữ liệu, và các đầu vào chọn",
+    "en": "several data inputs, one data output, and selection inputs"
+   },
+   {
+    "vi": "1 đầu vào dữ liệu, 1 đầu ra dữ liệu, 1 đầu vào chọn",
+    "en": "one data input, one data output, and one selection input"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đúng định nghĩa multiplexer: nhiều đầu vào, 1 đầu ra, chọn bằng các đường select.",
+   "en": "The definition of a multiplexer: many inputs, 1 output, selected by the select lines."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cấu trúc chuẩn của multiplexer luôn theo đúng mẫu 'nhiều-vào, một-ra': nhiều đường dữ liệu vào, một đường dữ liệu ra duy nhất, và một số đường CHỌN (select) riêng biệt quyết định đường vào nào được nối tới đầu ra tại một thời điểm.</p>",
+   "en": "<p>A multiplexer's standard structure always follows the 'many-in, one-out' pattern: several data input lines, a single data output line, and a separate set of SELECT lines determining which input line connects to the output at any given moment.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #10",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ phân phối dữ liệu (data distributor) về cơ bản giống với:",
+   "en": "Data distributors are basically the same as"
+  },
+  "opts": [
+   {
+    "vi": "bộ mã hoá (encoder)",
+    "en": "encoders"
+   },
+   {
+    "vi": "bộ dồn kênh (multiplexer)",
+    "en": "multiplexers"
+   },
+   {
+    "vi": "bộ giải mã (decoder)",
+    "en": "decoders"
+   },
+   {
+    "vi": "bộ giải dồn kênh (demultiplexer)",
+    "en": "demultiplexers"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "'Data distributor' là tên gọi khác của demultiplexer.",
+   "en": "'Data distributor' is another name for a demultiplexer."
+  },
+  "topic": {
+   "vi": "Bộ giải mã và bộ mã hoá",
+   "en": "Decoders and encoders"
+  },
+  "topic_id": "decoder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cái tên 'data distributor' mô tả đúng chức năng của demultiplexer theo góc nhìn khác: nó PHÂN PHỐI (distribute) một luồng dữ liệu đầu vào duy nhất tới đúng một trong nhiều điểm đến, tương tự cách một trạm phân phối bưu kiện gửi từng gói hàng tới đúng địa chỉ nhận.</p>",
+   "en": "<p>The name 'data distributor' describes a demultiplexer's function from another angle: it DISTRIBUTES a single incoming data stream to exactly one of several destinations, similar to how a parcel distribution centre sends each package to its correct recipient address.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #11",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã nào sau đây có chẵn lẻ chẵn (even parity)?",
+   "en": "Which of the following codes exhibit even parity?"
+  },
+  "opts": [
+   {
+    "vi": "10011000",
+    "en": "10011000"
+   },
+   {
+    "vi": "cả (b) và (c)",
+    "en": "both (b) and (c)"
+   },
+   {
+    "vi": "tất cả",
+    "en": "all of the above"
+   },
+   {
+    "vi": "11010101",
+    "en": "11010101"
+   },
+   {
+    "vi": "01111000",
+    "en": "01111000"
+   },
+   {
+    "vi": "11111111",
+    "en": "11111111"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "10011000 có 3 bit 1 (lẻ). 01111000 có 4 bit 1 (chẵn) ✓. 11111111 có 8 bit 1 (chẵn) ✓. 11010101 có 5 bit 1 (lẻ). Vậy chỉ (b) và (c) có parity chẵn.",
+   "en": "10011000 has three 1s (odd). 01111000 has four 1s (even) ✓. 11111111 has eight 1s (even) ✓. 11010101 has five 1s (odd). So only (b) and (c) have even parity."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cách kiểm tra parity chẵn luôn giống nhau: đếm số bit 1 trong toàn bộ mã, số chẵn thì đạt parity chẵn, số lẻ thì không. Với 4 mã trong câu hỏi, chỉ 2 mã (b) và (c) có số bit 1 là số chẵn, nên đáp án đúng phải chọn CẢ HAI, không phải chỉ một mã riêng lẻ.</p>",
+   "en": "<p>Checking even parity always works the same way: count the 1 bits across the whole code; an even count satisfies even parity, an odd count does not. Among the four codes in the question, only 2 of them, (b) and (c), have an even count of 1 bits, so the correct answer must select BOTH, not just a single code.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #12",
+   "en": "Floyd Ch.6: Functions of Combinational Logic · Self-Test #12"
+  },
+  "fixed_order": true
+ }
+]

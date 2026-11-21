@@ -1,0 +1,180 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Mô tả chế độ đơn mode trong sợi quang.",
+   "en": "Describe the single mode in an optical fiber."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in khớp mục 13-1 (tr.743): đơn mode có lõi nhỏ hơn nhiều so với đa mode, ánh sáng đi gần như thẳng như một tia, băng thông và khoảng cách lớn hơn nhưng đắt hơn.",
+   "en": "The printed answer is shown in the image below. The printed answer matches section 13-1 (p.743): single-mode has a much smaller core than multimode, light travels nearly straight as one ray, more bandwidth and distance but higher cost."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.13 · Problem 5",
+   "en": "Floyd Ch.13 · Problem 5"
+  },
+  "afig": "assets/figures/essay_floyd_ch13_q05.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch13_qq05.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Vẽ sơ đồ khối cơ bản của một liên kết truyền thông bằng sợi quang.",
+   "en": "Draw a basic block diagram of a fiber optics communications link."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in là Hình P-100: nguồn tín hiệu điện, chuyển đổi điện-sang-ánh sáng, đầu nối quang, cáp sợi quang, chuyển đổi ánh sáng-sang-điện và bộ thu; trùng sơ đồ khối ở Hình 13-8 và slide 23 của bài giảng.",
+   "en": "The printed answer is shown in the image below. The printed answer is Figure P-100: electrical signal source, electrical-to-light conversion, optical connectors, fibre-optic cable, light-to-electrical conversion and receiver; the same as Figure 13-8 and lecture slide 23."
+  },
+  "topic": {
+   "vi": "Khái niệm chung",
+   "en": "General concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.13 · Problem 7",
+   "en": "Floyd Ch.13 · Problem 7"
+  },
+  "afig": "assets/figures/essay_floyd_ch13_q07.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch13_qq07.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Sợi có n₁ = 1,53 (SiO₂) và n₂ = 1,50 (SiO₂ pha GeO₂). Tính góc tới hạn θc, góc chấp nhận θa và khẩu độ số NA.",
+   "en": "For a fibre with n₁ = 1.53 (SiO₂) and n₂ = 1.50 (SiO₂ with GeO₂ doping), compute the critical angle θc, the acceptance angle θa and the numerical aperture NA."
+  },
+  "sol": {
+   "vi": "θc = sin⁻¹(n₂/n₁) = sin⁻¹(1,50/1,53) = <b>78,64°</b>.<br>NA = √(n₁² − n₂²) = √(2,3409 − 2,25) = √0,0909 = <b>0,3015</b>.<br>θa = sin⁻¹(NA) = <b>17,55°</b> (n₀ = 1).",
+   "en": "θc = sin⁻¹(n₂/n₁) = sin⁻¹(1.50/1.53) = <b>78.64°</b>.<br>NA = √(n₁² − n₂²) = √(2.3409 − 2.25) = √0.0909 = <b>0.3015</b>.<br>θa = sin⁻¹(NA) = <b>17.55°</b> (n₀ = 1)."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 20",
+   "en": "Lecture Fiber optics · slide 20"
+  },
+  "figs": [
+   "assets/figures/fib_ex20.jpg"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "d_core = 62,5 µm, NA = 0,275, λ = 1300 nm. Tính tần số chuẩn hoá V, số mode N của sợi và góc θa.",
+   "en": "d_core = 62.5 µm, NA = 0.275, λ = 1300 nm. Calculate the normalised frequency V, the number of modes N of the fibre and the angle θa."
+  },
+  "sol": {
+   "vi": "V = π d NA / λ = π × 62,5×10⁻⁶ × 0,275 / 1300×10⁻⁹ = <b>41,54</b>.<br>N ≈ V²/2 = <b>863</b> mode.<br>θa = sin⁻¹(0,275) = <b>15,96°</b>.",
+   "en": "V = π d NA / λ = π × 62.5×10⁻⁶ × 0.275 / 1300×10⁻⁹ = <b>41.54</b>.<br>N ≈ V²/2 = <b>863</b> modes.<br>θa = sin⁻¹(0.275) = <b>15.96°</b>."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 22",
+   "en": "Lecture Fiber optics · slide 22"
+  },
+  "figs": [
+   "assets/figures/fib_ex22.jpg"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tính chiều dài tối đa l_max của sợi (SiO₂): công suất vào 1 mW, bước sóng 1310 nm, công suất ra tối thiểu đo được 50 µW; dùng hệ số suy hao đọc từ đồ thị trước đó.",
+   "en": "Calculate the maximal length l_max of the optical fibre (SiO₂): input power 1 mW, wavelength 1310 nm, minimum measurable output power 50 µW; use the attenuation coefficient given by the previous graph."
+  },
+  "sol": {
+   "vi": "Từ đồ thị slide 26: α ≈ 0,35 dB/km ở 1310 nm. Ngân sách 10 log₁₀(1 mW / 50 µW) = 13,01 dB. l_max = 13,01 / 0,35 = <b>37,2 km</b>. (Với 0,18 dB/km ở 1550 nm: 72,3 km.)",
+   "en": "From the slide 26 graph: α ≈ 0.35 dB/km at 1310 nm. Budget 10 log₁₀(1 mW / 50 µW) = 13.01 dB. l_max = 13.01 / 0.35 = <b>37.2 km</b>. (With 0.18 dB/km at 1550 nm: 72.3 km.)"
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 27",
+   "en": "Lecture Fiber optics · slide 27"
+  },
+  "figs": [
+   "assets/figures/fib_ex27.jpg"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Sợi step-index đa mode có NA = 0,20 hỗ trợ khoảng 1000 mode ở bước sóng 850 nm. Đường kính lõi là bao nhiêu? Sợi hỗ trợ bao nhiêu mode ở 1320 nm và 1550 nm?",
+   "en": "A step-index multimode fiber with a NA of 0.20 supports approximately 1000 modes at an 850 nm wavelength. What is the diameter of its core? How many modes does the fiber support at 1320 nm and 1550 nm?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in trên slide: d = 60,49 µm; ở 1320 nm V = 28,78, M = 414; ở 1550 nm V = 24,51, M = 301. Tự tính lại: V = √(2M) = 44,72; a = Vλ/(2π NA) = 30,25 µm nên d = 60,50 µm; V(1320) = 28,80, M = 414,7; V(1550) = 24,52, M = 300,7. Khớp trong sai số làm tròn.",
+   "en": "The printed answer is shown in the image below. Printed answer on the slide: d = 60.49 µm; at 1320 nm V = 28.78, M = 414; at 1550 nm V = 24.51, M = 301. Recomputed: V = √(2M) = 44.72; a = Vλ/(2π NA) = 30.25 µm so d = 60.50 µm; V(1320) = 28.80, M = 414.7; V(1550) = 24.52, M = 300.7. They agree within rounding."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Bài giảng Fiber optics · slide 36",
+   "en": "Lecture Fiber optics · slide 36"
+  },
+  "afig": "assets/figures/fib_ex36_ans.png",
+  "figs": [
+   "assets/figures/fib_ex36.jpg"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định góc tới hạn cho mặt phân cách kính-không khí (chiết suất kính và không khí lần lượt là 1,5 và 1,0).",
+   "en": "Determine the critical angle for a glass-air interface (values of refractive index for glass and air are respectively 1.5 and 1.0)."
+  },
+  "sol": {
+   "vi": "sin θc = n₂/n₁ = 1,0/1,5 = 0,6667, nên θc = <b>41,81°</b>.",
+   "en": "sin θc = n₂/n₁ = 1.0/1.5 = 0.6667, so θc = <b>41.81°</b>."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley ch.10 · Test Your Understanding 10.2 (và slide 32 của bài giảng)",
+   "en": "Tooley ch.10 · Test Your Understanding 10.2 (and lecture slide 32)"
+  },
+  "figs": [
+   "assets/figures/fib_p14.jpg"
+  ]
+ }
+]

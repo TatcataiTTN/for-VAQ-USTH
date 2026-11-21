@@ -1,0 +1,174 @@
+{
+ "mismatch": [],
+ "dup": [],
+ "per_module": {
+  "m01": {
+   "n": 68,
+   "main": 58,
+   "gen": 10,
+   "topics": {
+    "binary": 19,
+    "complement": 11,
+    "codes": 12,
+    "hexoct": 21,
+    "base-conv": 2,
+    "errors": 1,
+    "general": 1,
+    "float": 1
+   },
+   "levels": {
+    "2": 34,
+    "3": 9,
+    "1": 25
+   }
+  },
+  "m02": {
+   "n": 102,
+   "main": 92,
+   "gen": 10,
+   "topics": {
+    "gates": 51,
+    "seq": 2,
+    "family": 4,
+    "simplify": 15,
+    "tri": 1,
+    "boolean-laws": 24,
+    "general": 5
+   },
+   "levels": {
+    "2": 15,
+    "1": 80,
+    "3": 7
+   }
+  },
+  "m03": {
+   "n": 55,
+   "main": 45,
+   "gen": 10,
+   "topics": {
+    "general": 8,
+    "scale": 9,
+    "adder": 16,
+    "fan": 6,
+    "mux": 4,
+    "decoder": 12
+   },
+   "levels": {
+    "1": 45,
+    "3": 3,
+    "2": 7
+   }
+  },
+  "m04": {
+   "n": 74,
+   "main": 62,
+   "gen": 12,
+   "topics": {
+    "memory": 57,
+    "cpu": 9,
+    "cycle": 5,
+    "general": 2,
+    "structure": 1
+   },
+   "levels": {
+    "1": 56,
+    "3": 3,
+    "2": 15
+   }
+  },
+  "m05": {
+   "n": 62,
+   "main": 36,
+   "gen": 26,
+   "topics": {
+    "arinc429": 31,
+    "generic": 13,
+    "arinc629": 7,
+    "general": 2,
+    "afdx": 3,
+    "rationale": 6
+   },
+   "levels": {
+    "1": 45,
+    "2": 12,
+    "3": 5
+   }
+  },
+  "m06": {
+   "n": 93,
+   "main": 64,
+   "gen": 29,
+   "topics": {
+    "efis": 35,
+    "tech": 19,
+    "seven": 20,
+    "cmc": 3,
+    "ecam": 9,
+    "cockpit": 3,
+    "general": 4
+   },
+   "levels": {
+    "1": 75,
+    "3": 8,
+    "2": 10
+   }
+  },
+  "m07": {
+   "n": 50,
+   "main": 20,
+   "gen": 30,
+   "topics": {
+    "levels": 13,
+    "do178": 11,
+    "loading": 11,
+    "integrity": 15
+   },
+   "levels": {
+    "1": 42,
+    "2": 8
+   }
+  },
+  "m08": {
+   "n": 61,
+   "main": 35,
+   "gen": 26,
+   "topics": {
+    "snell": 12,
+    "system": 13,
+    "na": 17,
+    "loss": 12,
+    "why": 4,
+    "general": 3
+   },
+   "levels": {
+    "1": 38,
+    "3": 12,
+    "2": 11
+   }
+  },
+  "m09": {
+   "n": 42,
+   "main": 18,
+   "gen": 24,
+   "topics": {
+    "spectrum": 4,
+    "what": 8,
+    "db": 13,
+    "bonding": 7,
+    "filter": 7,
+    "standards": 3
+   },
+   "levels": {
+    "1": 23,
+    "2": 7,
+    "3": 12
+   }
+  }
+ },
+ "source_fixes": [
+  {
+   "item": "Tooley Revision Paper 6 Q2",
+   "what": "options (a) and (c) printed identically as 11100111 (printed p.366, PDF p.380); option (c) replaced by 00111110, key (b) 11100011 unchanged"
+  }
+ ]
+}

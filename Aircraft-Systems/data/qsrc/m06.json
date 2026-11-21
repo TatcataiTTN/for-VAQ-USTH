@@ -1,0 +1,2617 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một màn hình đa chức năng (MFD) có thể:",
+   "en": "A multifunction display (MFD) can be:"
+  },
+  "opts": [
+   {
+    "vi": "đặt để hiển thị thông tin từ la bàn từ dự phòng",
+    "en": "set to display information from the standby magnetic compass"
+   },
+   {
+    "vi": "được cấu hình để hiển thị nhiều loại thông tin",
+    "en": "configured for more than one type of information"
+   },
+   {
+    "vi": "chỉ dùng để hiển thị thông tin bay cơ bản",
+    "en": "used only for basic flight information"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "MFD là màn hình cấu hình được: radar thời tiết, bản đồ dẫn đường, danh mục kiểm tra, hoặc thay cho PFD/ND khi một trong hai hỏng (Tooley 1.1.5.6).",
+   "en": "An MFD is a configurable display: weather radar, navigation map, checklists, or a substitute for the PFD/ND if either fails (Tooley 1.1.5.6)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>MFD là màn hình cấu hình được: hiển thị radar thời tiết, bản đồ dẫn đường, danh mục kiểm tra, hoặc thay cho PFD/ND khi một trong hai hỏng. Nó không bị giới hạn ở thông tin bay cơ bản, và không dùng để hiển thị dữ liệu la bàn từ dự phòng, vốn là một cơ cấu cơ độc lập.</p><p>Cách nhớ: \"multifunction\" nghĩa là nhiều chức năng, chọn bằng bảng điều khiển.</p>",
+   "en": "<p>The MFD is a configurable display: weather radar, navigation map, checklists, or a substitute for the PFD/ND if either fails. It is not limited to basic flight data, and it is not meant to show the standby magnetic compass, which is an independent mechanical unit.</p><p>Memory aid: \"multifunction\" means many functions, selected from a control panel.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q1",
+   "en": "Tooley Ch.1 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Những đồng hồ dự phòng nào chạy bằng hệ thống pitot-tĩnh của máy bay?",
+   "en": "Which standby instruments are driven from the aircraft's pitot-static system:"
+  },
+  "opts": [
+   {
+    "vi": "Đồng hồ tốc độ, độ cao và tốc độ lên xuống",
+    "en": "Airspeed indicator, altimeter and vertical speed indicator"
+   },
+   {
+    "vi": "Đồng hồ tốc độ, độ cao và chỉ báo góc tấn",
+    "en": "Airspeed indicator, altimeter and angle-of-attack indicator"
+   },
+   {
+    "vi": "Đồng hồ tốc độ, tốc độ lên xuống và la bàn từ",
+    "en": "Airspeed indicator, vertical speed indicator and magnetic compass"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ba đồng hồ số liệu khí (ASI, độ cao, VSI) dùng áp tĩnh và áp pitot. La bàn từ là cơ cấu từ độc lập, không cần pitot-tĩnh.",
+   "en": "The three air data instruments (ASI, altimeter, VSI) use static and pitot pressure. The magnetic compass is an independent magnetic device and needs no pitot-static supply."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ba đồng hồ chạy bằng hệ pitot-tĩnh là đồng hồ tốc độ (ASI), độ cao và tốc độ lên xuống (VSI): chúng đọc áp tĩnh và áp pitot. La bàn từ là cơ cấu từ độc lập, không cần pitot-tĩnh; chỉ báo góc tấn dùng cánh gió cảm biến riêng.</p><p>Bẫy: la bàn là đồng hồ dự phòng nhưng không phải đồng hồ số liệu khí.</p>",
+   "en": "<p>The three pitot-static instruments are the airspeed indicator (ASI), altimeter and vertical speed indicator (VSI): they read static and pitot pressure. The magnetic compass is an independent magnetic device that needs no pitot-static supply; the angle-of-attack indicator uses its own vane sensor.</p><p>Trap: the compass is a standby instrument but not an air data instrument.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q2",
+   "en": "Tooley Ch.1 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Áp suất tĩnh được dẫn tới:",
+   "en": "Static pressure is fed:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ đồng hồ tốc độ",
+    "en": "only to the airspeed indicator"
+   },
+   {
+    "vi": "chỉ đồng hồ tốc độ và đồng hồ tốc độ lên xuống",
+    "en": "only to the airspeed indicator and vertical speed indicator"
+   },
+   {
+    "vi": "đồng hồ tốc độ, đồng hồ độ cao và đồng hồ tốc độ lên xuống",
+    "en": "to the airspeed indicator as well as the altimeter and vertical speed indicator"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Áp tĩnh đi tới cả ba đồng hồ; chỉ riêng ASI còn nhận thêm áp ram (pitot) để so sánh (hình 1.11).",
+   "en": "Static pressure goes to all three instruments; only the ASI additionally receives ram (pitot) pressure to compare against (Figure 1.11)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Áp tĩnh được dẫn tới cả ba đồng hồ số liệu khí: ASI, độ cao và VSI. Riêng ASI còn nhận thêm áp ram (pitot) để so sánh với áp tĩnh và suy ra tốc độ. Hai phương án \"chỉ ASI\" hoặc \"chỉ ASI và VSI\" bỏ sót độ cao, vốn đo thuần bằng áp tĩnh.</p><p>Sơ đồ hình 1.11 trong sách vẽ rõ ba nhánh áp tĩnh.</p>",
+   "en": "<p>Static pressure goes to all three air data instruments: ASI, altimeter and VSI. Only the ASI also receives ram (pitot) pressure to compare with static pressure and derive speed. The options \"only ASI\" or \"only ASI and VSI\" omit the altimeter, which works purely from static pressure.</p><p>Figure 1.11 in the book clearly shows the three static branches.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q3",
+   "en": "Tooley Ch.1 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chỉ báo vị trí nằm ngang (HSI) dùng thông tin lấy từ:",
+   "en": "The horizontal situation indicator (HSI) uses information derived from:"
+  },
+  "opts": [
+   {
+    "vi": "hệ thống pitot-tĩnh",
+    "en": "the pitot-static system"
+   },
+   {
+    "vi": "đồng hồ tốc độ",
+    "en": "the airspeed indicator"
+   },
+   {
+    "vi": "máy thu VOR",
+    "en": "the VOR receiver"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "HSI gộp thông tin la bàn và dẫn đường vô tuyến (VOR) để hiển thị mặt phẳng ngang (Tooley bảng 1.1).",
+   "en": "The HSI combines compass and radio navigation (VOR) information to show the horizontal situation (Tooley Table 1.1)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>HSI hiển thị mặt phẳng ngang của máy bay: thông tin la bàn và dẫn đường vô tuyến (VOR) cho biết hướng và độ lệch so với tuyến. Hệ pitot-tĩnh và đồng hồ tốc độ thuộc nhóm số liệu khí, không phải nguồn của HSI.</p><p>Ghi nhớ: HSI = la bàn + VOR.</p>",
+   "en": "<p>The HSI shows the aircraft's horizontal situation: compass and radio navigation (VOR) information give heading and deviation from the track. The pitot-static system and airspeed indicator belong to the air data group, not the HSI's source.</p><p>Remember: HSI = compass + VOR.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q4",
+   "en": "Tooley Ch.1 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thuật ngữ \"glass cockpit\" (buồng lái kính) chỉ:",
+   "en": "The term 'glass cockpit' refers to:"
+  },
+  "opts": [
+   {
+    "vi": "việc dùng màn hình LCD và CRT",
+    "en": "the use of LCD and CRT displays"
+   },
+   {
+    "vi": "việc dùng cửa sổ kính cường lực",
+    "en": "the use of toughened glass windows"
+   },
+   {
+    "vi": "việc dùng vách kính trong suốt giữa buồng lái và khoang khách",
+    "en": "the use of a transparent partition between the flight deck and passenger cabin"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "\"Glass cockpit\" là buồng lái dùng màn hình CRT và LCD thay đồng hồ cơ điện (Tooley mục 1.1).",
+   "en": "A \"glass cockpit\" uses CRT and LCD screens in place of electromechanical dials (Tooley section 1.1)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>\"Glass cockpit\" nghĩa là buồng lái dùng màn hình CRT và LCD thay đồng hồ cơ điện. Nó không liên quan đến kính cửa sổ cường lực hay vách kính ngăn khoang khách.</p><p>Từ này gợi hình ảnh mặt kính phẳng của màn hình thay cho nhiều mặt đồng hồ.</p>",
+   "en": "<p>\"Glass cockpit\" means a cockpit using CRT and LCD screens in place of electromechanical dials. It has nothing to do with toughened window glass or a glass partition to the cabin.</p><p>The term evokes the flat glass face of a screen replacing many instrument faces.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q5",
+   "en": "Tooley Ch.1 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các đồng hồ số liệu khí (air data) cơ bản là:",
+   "en": "Basic air data instruments are:"
+  },
+  "opts": [
+   {
+    "vi": "đồng hồ tốc độ, tốc độ lên xuống và chân trời giả",
+    "en": "airspeed indicator, vertical speed indicator and artificial horizon"
+   },
+   {
+    "vi": "đồng hồ tốc độ, độ cao và la bàn từ",
+    "en": "airspeed indicator, altimeter and magnetic compass"
+   },
+   {
+    "vi": "đồng hồ tốc độ, độ cao và tốc độ lên xuống",
+    "en": "airspeed indicator, altimeter and vertical speed indicator"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ba đồng hồ chạy bằng pitot-tĩnh được gọi là đồng hồ số liệu khí: ASI, độ cao, VSI.",
+   "en": "The three pitot-static driven instruments are called air data instruments: ASI, altimeter, VSI."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đồng hồ số liệu khí cơ bản là ASI, độ cao và VSI vì cả ba chạy từ hệ pitot-tĩnh. La bàn từ và chân trời giả không dùng áp không khí (la bàn dùng từ trường, chân trời giả dùng con quay).</p><p>Chú ý \"basic\": bài kiểm tra mong ba chữ ASI, ALT, VSI.</p>",
+   "en": "<p>The basic air data instruments are the ASI, altimeter and VSI because all three run from the pitot-static system. The magnetic compass and artificial horizon do not use air pressure (the compass uses the magnetic field, the horizon uses a gyro).</p><p>Note \"basic\": the exam expects the three: ASI, altimeter, VSI.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q6",
+   "en": "Tooley Ch.1 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ba tham số bay có thể dùng để đánh giá vị trí máy bay là:",
+   "en": "Three airborne parameters that can be used to assess aircraft position are:"
+  },
+  "opts": [
+   {
+    "vi": "hướng bay, tốc độ và độ cao",
+    "en": "heading, airspeed and height"
+   },
+   {
+    "vi": "hướng bay, trọng lượng và tốc độ",
+    "en": "heading, weight and airspeed"
+   },
+   {
+    "vi": "tốc độ, độ cao và trọng lượng",
+    "en": "airspeed, height and weight"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hướng, tốc độ và độ cao là ba đại lượng cơ bản định vị máy bay; trọng lượng không phải tham số vị trí.",
+   "en": "Heading, airspeed and height are the basic quantities that fix the aircraft's position; weight is not a position parameter."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ba tham số đủ để đánh giá vị trí là hướng bay, tốc độ và độ cao. Trọng lượng máy bay không phải tham số vị trí; nó ảnh hưởng hiệu năng nhưng không cho biết máy bay ở đâu hoặc đang đi thế nào.</p><p>Hướng + tốc độ + độ cao cho phép suy ra vị trí theo thời gian (dead reckoning).</p>",
+   "en": "<p>Three parameters suffice to assess position: heading, airspeed and height. Aircraft weight is not a position parameter; it affects performance but not where the aircraft is or how it is moving.</p><p>Heading + speed + height allow position to be derived over time (dead reckoning).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q7",
+   "en": "Tooley Ch.1 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đồng hồ trong hình 1.27 là:",
+   "en": "The instrument shown in Figure 1.27 is the:"
+  },
+  "opts": [
+   {
+    "vi": "ASI",
+    "en": "ASI"
+   },
+   {
+    "vi": "ADI",
+    "en": "ADI"
+   },
+   {
+    "vi": "VSI",
+    "en": "VSI"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mặt đồng hồ ghi \"IAS KNOTS\" với thang 60 đến 400: đây là đồng hồ tốc độ (ASI).",
+   "en": "The dial is marked \"IAS KNOTS\" with a 60 to 400 scale: it is an airspeed indicator (ASI)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mặt đồng hồ ghi \"IAS KNOTS\" với thang 60 đến 400 nên là đồng hồ tốc độ (ASI). ADI là chân trời giả, VSI có thang lên và xuống theo ft/min nên không thể là hình này.</p><p>Cách đọc hình: nhìn đơn vị và thang đo trên mặt số.</p>",
+   "en": "<p>The dial is marked \"IAS KNOTS\" on a 60 to 400 scale so it is an airspeed indicator (ASI). The ADI is the artificial horizon and the VSI has up and down scales in ft/min, so neither fits this picture.</p><p>How to read a picture: look at the units and scale on the dial.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q8",
+   "en": "Tooley Ch.1 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các thông số động cơ như tốc độ tuabin được hiển thị trên:",
+   "en": "Engine parameters such as turbine speed are displayed on:"
+  },
+  "opts": [
+   {
+    "vi": "ECAM",
+    "en": "ECAM"
+   },
+   {
+    "vi": "EHSI",
+    "en": "EHSI"
+   },
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ECAM (Airbus) và EICAS (Boeing) hiển thị thông số động cơ; EADI và EHSI là màn hình bay và dẫn đường.",
+   "en": "ECAM (Airbus) and EICAS (Boeing) show engine parameters; the EADI and EHSI are flight and navigation displays."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Thông số động cơ như tốc độ tuabin hiển thị trên ECAM (Airbus) hoặc EICAS (Boeing). EADI và EHSI chỉ là màn hình tư thế và dẫn đường của EFIS.</p><p>Bộ đôi cần phân biệt: EFIS lo bay và đi đâu, ECAM lo máy bay đang khoẻ ra sao.</p>",
+   "en": "<p>Engine parameters such as turbine speed are shown on the ECAM (Airbus) or EICAS (Boeing). The EADI and EHSI are only the EFIS attitude and navigation displays.</p><p>A pair to tell apart: EFIS handles flying and where to, ECAM handles how healthy the aircraft is.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q9",
+   "en": "Tooley Ch.1 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chỉ báo trượt (slip indicator) của máy bay nằm ở:",
+   "en": "The aircraft slip indicator is found in the:"
+  },
+  "opts": [
+   {
+    "vi": "ECAM",
+    "en": "ECAM"
+   },
+   {
+    "vi": "các màn hình CRT trong khoang hành khách",
+    "en": "CRTs in the passenger cabin"
+   },
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "EADI có chỉ báo trượt (cùng chân trời giả, thanh chỉ lệnh, kim glide slope, chỉ báo localiser).",
+   "en": "The EADI contains the slip indicator (together with the attitude display, command bars, glide slope pointer, localiser indicator)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EADI có chân trời giả, thanh chỉ lệnh, kim glide slope, chỉ báo localiser và chỉ báo trượt (slip). Vì thế chỉ báo trượt nằm trên EADI. ECAM hiển thị động cơ và hệ thống, màn hình CRT trong khoang khách là màn hình giải trí.</p><p>Mẹo: slip/skid là đại lượng tư thế nên ở màn hình tư thế.</p>",
+   "en": "<p>The EADI has the attitude horizon, command bars, glide slope pointer, localiser indicator and slip indicator. So the slip indicator is on the EADI. ECAM shows engines and systems, and the CRTs in the passenger cabin are entertainment screens.</p><p>Tip: slip/skid is an attitude quantity so it sits on the attitude display.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q10",
+   "en": "Tooley Ch.1 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "\"Đường băng nổi lên\" (rising runway) nằm ở đâu?",
+   "en": "Where is the 'rising runway':"
+  },
+  "opts": [
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   },
+   {
+    "vi": "ECAM",
+    "en": "ECAM"
+   },
+   {
+    "vi": "các màn hình CRT trong khoang hành khách",
+    "en": "CRTs in the passenger cabin"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đường băng ký hiệu (rising runway) là chỉ báo localiser trên EADI, hiện ra khi phi công đã bắt được glide slope.",
+   "en": "The symbolic runway (rising runway) is the localiser indicator on the EADI; it appears once the pilot has acquired the glide slope."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>\"Đường băng nổi lên\" (rising runway) là chỉ báo localiser dạng đường băng ký hiệu trên EADI, xuất hiện khi phi công đã bắt được glide slope. ECAM không hiển thị tiếp cận ILS.</p><p>Cùng EADI gồm kim glide slope; phân biệt với EHSI hiển thị hướng và VOR.</p>",
+   "en": "<p>The \"rising runway\" is the localiser indicator drawn as a symbolic runway on the EADI, appearing once the pilot has acquired the glide slope. ECAM does not show the ILS approach.</p><p>The EADI also holds the glide slope pointer; tell it apart from the EHSI which shows heading and VOR.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q11",
+   "en": "Tooley Ch.1 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo quy tắc bay bằng mắt (VFR), nguồn thông tin quan trọng nhất của phi công về vị trí và tư thế máy bay là:",
+   "en": "Under visual flight rules (VFR) the pilot's most important source of information concerning the aircraft's position and attitude is:"
+  },
+  "opts": [
+   {
+    "vi": "đồng hồ độ cao và tốc độ lên xuống",
+    "en": "the altimeter and vertical speed indicators"
+   },
+   {
+    "vi": "nhìn ra ngoài cửa sổ buồng lái",
+    "en": "the view out of the cockpit window"
+   },
+   {
+    "vi": "đồng hồ tốc độ và la bàn từ",
+    "en": "the airspeed indicator and the magnetic compass"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tooley mục 1.1: khi bay VFR, nguồn thông tin quan trọng nhất là cảnh quan nhìn thấy bên ngoài.",
+   "en": "Tooley section 1.1: under VFR the most important source of information is the view out of the cockpit window."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Khi bay bằng mắt (VFR), nguồn thông tin quan trọng nhất về vị trí và tư thế máy bay là cảnh quan nhìn ra ngoài cửa sổ buồng lái. Các đồng hồ chỉ là hỗ trợ, và chúng trở thành nguồn chính khi bay bằng thiết bị (IFR).</p><p>Sự khác biệt VFR và IFR chính là câu 19.</p>",
+   "en": "<p>Under visual flight rules (VFR) the most important source of position and attitude information is the view out of the cockpit window. The instruments are supplementary, and become the main source under instrument flight rules (IFR).</p><p>The VFR and IFR difference is question 19.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q12",
+   "en": "Tooley Ch.1 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EFIS lắp trên máy bay lớn thường gồm:",
+   "en": "The EFIS fitted to a large aircraft usually consists of:"
+  },
+  "opts": [
+   {
+    "vi": "một màn hình đa chức năng duy nhất",
+    "en": "a single multifunction display"
+   },
+   {
+    "vi": "các màn hình bay chính và dẫn đường riêng biệt",
+    "en": "separate primary flight and navigation displays"
+   },
+   {
+    "vi": "một màn hình chính cùng nhiều đồng hồ dự phòng",
+    "en": "a primary display with several standby instruments"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "EFIS gồm PFD (hoặc EADI) và ND (hoặc EHSI), nhân đôi cho cơ trưởng và phó cơ trưởng (Tooley 1.1.5).",
+   "en": "The EFIS consists of a PFD (or EADI) and an ND (or EHSI), duplicated for the captain and first officer (Tooley 1.1.5)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EFIS của máy bay lớn gồm màn hình bay chính (PFD hoặc EADI) và màn hình dẫn đường (ND hoặc EHSI), nhân đôi cho cơ trưởng và phó cơ trưởng. Không phải một MFD duy nhất, và đồng hồ dự phòng là hệ riêng.</p><p>Hình dung: hai cặp PFD và ND.</p>",
+   "en": "<p>The EFIS of a large aircraft consists of a primary flight display (PFD or EADI) and a navigation display (ND or EHSI), duplicated for the captain and first officer. It is not a single MFD, and the standby instruments are a separate system.</p><p>Picture two PFD and ND pairs.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q13",
+   "en": "Tooley Ch.1 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thiết bị trong hình 1.28 là:",
+   "en": "The instrument shown in Figure 1.28 is the:"
+  },
+  "opts": [
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   },
+   {
+    "vi": "ECAM",
+    "en": "ECAM"
+   },
+   {
+    "vi": "EHSI",
+    "en": "EHSI"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Hình có hướng \"HDG\", VOR, WPT, khoảng cách và la bàn quay: đó là EHSI (mặt phẳng ngang).",
+   "en": "The figure shows \"HDG\", VOR, WPT, distance and a rotating compass: it is the EHSI (horizontal situation)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hình 1.28 có hướng \"HDG\", VOR, WPT, khoảng cách và la bàn quay: đó là EHSI. EADI có chân trời giả, còn ECAM hiển thị thông số động cơ và hệ thống.</p><p>Cách đọc hình: tìm dấu hiệu đặc trưng (chân trời giả hay la bàn).</p>",
+   "en": "<p>Figure 1.28 shows \"HDG\", VOR, WPT, distance and a rotating compass: that is the EHSI. The EADI has an attitude horizon and the ECAM shows engine and system parameters.</p><p>How to read a picture: look for the telltale (horizon or compass).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q14",
+   "en": "Tooley Ch.1 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thiết bị trong hình 1.29 là:",
+   "en": "The instrument shown in Figure 1.29 is the:"
+  },
+  "opts": [
+   {
+    "vi": "ECAM",
+    "en": "ECAM"
+   },
+   {
+    "vi": "EHSI",
+    "en": "EHSI"
+   },
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Hình có chân trời giả (thang tư thế ±10, ±20), thanh chỉ lệnh, glide slope, chế độ LAND 3, VNAV: đây là EADI.",
+   "en": "The figure has the attitude horizon (±10, ±20 pitch scale), command bars, glide slope, LAND 3 and VNAV modes: it is the EADI."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hình 1.29 có chân trời giả với thang chúc ngóc, thanh chỉ lệnh, glide slope và chế độ bay (LAND 3, VNAV) nên là EADI. EHSI sẽ có la bàn và dữ liệu VOR, ECAM thì không có chân trời giả.</p><p>Chế độ bay hiển thị ở góc dưới của EADI.</p>",
+   "en": "<p>Figure 1.29 shows an attitude horizon with a pitch scale, command bars, glide slope and flight modes (LAND 3, VNAV), so it is the EADI. The EHSI would have a compass and VOR data, and ECAM has no horizon.</p><p>Flight modes are shown at the lower corners of the EADI.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q15",
+   "en": "Tooley Ch.1 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong bố trí chữ \"T\" cơ bản của các đồng hồ:",
+   "en": "In a basic 'T' configuration of instruments:"
+  },
+  "opts": [
+   {
+    "vi": "ASI ở bên trái và đồng hồ độ cao ở bên phải",
+    "en": "the ASI appears on the left and the altimeter appears on the right"
+   },
+   {
+    "vi": "ADI ở bên trái và ASI ở bên phải",
+    "en": "the ADI appears on the left and the ASI appears on the right"
+   },
+   {
+    "vi": "ADI ở bên trái và HSI ở bên phải",
+    "en": "the ADI appears on the left and the HSI appears on the right"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chữ T: ASI trái, ADI giữa trên, độ cao phải, HSI dưới ADI (Tooley hình 1.23).",
+   "en": "The T: ASI left, ADI top centre, altimeter right, HSI below the ADI (Tooley Figure 1.23)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trong bố trí chữ T cơ bản: đồng hồ tốc độ bên trái, chân trời giả ở giữa trên, độ cao bên phải, HSI dưới chân trời giả. Vì vậy ASI trái và độ cao phải là đúng. Phương án nói ADI trái là sai.</p><p>Giữ nguyên vị trí tương đối giúp phi công chuyển loại máy bay dễ dàng.</p>",
+   "en": "<p>In the basic T layout: airspeed indicator on the left, artificial horizon top centre, altimeter on the right, HSI below the horizon. So ASI left and altimeter right is correct. The option putting the ADI on the left is wrong.</p><p>Keeping the relative positions helps pilots change aircraft type.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q16",
+   "en": "Tooley Ch.1 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ thống chỉ huy bay (flight director) nhận thông tin:",
+   "en": "The flight director system receives information:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ từ VOR/localiser",
+    "en": "only from the VOR/localiser"
+   },
+   {
+    "vi": "từ cả hai nguồn trên",
+    "en": "from both of the above"
+   },
+   {
+    "vi": "chỉ từ con quay tư thế và đồng hồ độ cao",
+    "en": "only from the attitude gyro and altimeter"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Flight director nhận dữ liệu từ con quay tư thế, thu VOR/localiser/glide slope, radar độ cao, la bàn và cảm biến khí áp (Tooley 1.1.4).",
+   "en": "The flight director takes data from the attitude gyro, the VOR/localiser/glide slope receiver, the radar altimeter, the compass system and barometric sensors (Tooley 1.1.4)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hệ thống chỉ huy bay (flight director) nhận dữ liệu từ con quay tư thế, máy thu VOR/localiser/glide slope, radar độ cao, la bàn và cảm biến khí áp. Vì vậy không thể chỉ từ VOR/localiser, cũng không chỉ từ con quay và độ cao: đáp án đúng là cả hai nhóm.</p><p>Chú ý chữ \"only\" trong các phương án sai.</p>",
+   "en": "<p>The flight director takes data from the attitude gyro, the VOR/localiser/glide slope receiver, the radar altimeter, the compass system and barometric sensors. So it cannot be only VOR/localiser, nor only gyro and altimeter: the answer is both groups.</p><p>Watch the word \"only\" in the wrong options.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q17",
+   "en": "Tooley Ch.1 Q17"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EICAS cung cấp các thông tin sau:",
+   "en": "EICAS provides the following information:"
+  },
+  "opts": [
+   {
+    "vi": "thông số động cơ và cảnh báo hệ thống",
+    "en": "engine parameters and system warnings"
+   },
+   {
+    "vi": "chỉ thông số động cơ",
+    "en": "engine parameters only"
+   },
+   {
+    "vi": "thông số động cơ và dữ liệu dẫn đường",
+    "en": "engine parameters and navigational data"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EICAS hiển thị thông số động cơ, cảnh báo của phi hành đoàn và trang hệ thống (điện, thuỷ lực, nhiên liệu...); dữ liệu dẫn đường thuộc ND.",
+   "en": "EICAS shows engine parameters, crew alerts and system pages (electrical, hydraulic, fuel...); navigation data belongs to the ND."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EICAS hiển thị thông số động cơ cùng cảnh báo và trang hệ thống (điện, thuỷ lực, nhiên liệu). Dữ liệu dẫn đường thuộc ND, nên \"động cơ và dẫn đường\" sai; \"chỉ động cơ\" thiếu phần cảnh báo.</p><p>Tương đương Airbus là ECAM.</p>",
+   "en": "<p>EICAS shows engine parameters plus alerts and system pages (electrical, hydraulic, fuel). Navigation data belongs to the ND, so \"engine and navigation\" is wrong; \"engine only\" misses the warnings.</p><p>The Airbus equivalent is ECAM.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q18",
+   "en": "Tooley Ch.1 Q18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai bộ quy tắc bay mà phi công có thể bay theo là:",
+   "en": "The two sets of flight regulations that a pilot may fly by are:"
+  },
+  "opts": [
+   {
+    "vi": "VFR và IFR",
+    "en": "VFR and IFR"
+   },
+   {
+    "vi": "VHF và IFR",
+    "en": "VHF and IFR"
+   },
+   {
+    "vi": "VFR và IFU",
+    "en": "VFR and IFU"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "VFR (visual flight rules, bay bằng mắt) và IFR (instrument flight rules, bay bằng thiết bị).",
+   "en": "VFR (visual flight rules) and IFR (instrument flight rules)."
+  },
+  "topic": {
+   "vi": "Bảo trì tập trung và ACARS",
+   "en": "Central maintenance and ACARS"
+  },
+  "topic_id": "cmc",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai bộ quy tắc bay là VFR (visual flight rules, bay bằng mắt) và IFR (instrument flight rules, bay bằng thiết bị). VHF là dải sóng vô tuyến, \"IFU\" không tồn tại.</p><p>VFR là bối cảnh của câu 12.</p>",
+   "en": "<p>The two sets of flight rules are VFR (visual flight rules) and IFR (instrument flight rules). VHF is a radio band and \"IFU\" does not exist.</p><p>VFR is the context of question 12.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q19",
+   "en": "Tooley Ch.1 Q19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ưu điểm lớn của EFIS là giảm được:",
+   "en": "A major advantage of EFIS is a reduction in:"
+  },
+  "opts": [
+   {
+    "vi": "ảnh hưởng của EMI",
+    "en": "effects of EMI"
+   },
+   {
+    "vi": "các bộ phận chuyển động trong buồng lái",
+    "en": "moving parts present in the flight deck"
+   },
+   {
+    "vi": "dây dẫn và cáp",
+    "en": "wiring and cabling"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "EFIS thay đồng hồ cơ điện bằng màn hình tĩnh nên giảm bộ phận chuyển động. Ngược lại EFIS làm tăng EMI (Tooley mục 15.2), không phải giảm.",
+   "en": "EFIS replaces electromechanical dials with static screens, cutting moving parts. EFIS actually increases EMI (Tooley section 15.2), it does not reduce it."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EFIS thay đồng hồ cơ điện bằng màn hình tĩnh nên giảm bộ phận chuyển động. Ngược lại EFIS làm tăng EMI (Tooley mục 15.2) chứ không giảm, và cũng không giảm đáng kể cáp (cần dây dữ liệu tới màn hình).</p><p>Đây là một bẫy: lợi thế thật là ít chi tiết cơ khí, và nhược điểm là nhiều EMI.</p>",
+   "en": "<p>EFIS replaces electromechanical dials with static screens, cutting moving parts. EFIS actually increases EMI (Tooley section 15.2) rather than reducing it, and does not cut cabling much (data wires still reach the screens).</p><p>A trap: the real advantage is fewer mechanical parts, and the drawback is more EMI.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q21",
+   "en": "Tooley Ch.1 Q21"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thuật ngữ \"chân trời giả\" (artificial horizon) đôi khi dùng để chỉ hiển thị của:",
+   "en": "The term 'artificial horizon' is sometimes used to describe the indication produced by:"
+  },
+  "opts": [
+   {
+    "vi": "đồng hồ độ cao",
+    "en": "the altimeter"
+   },
+   {
+    "vi": "chỉ báo tư thế",
+    "en": "the attitude indicator"
+   },
+   {
+    "vi": "đồng hồ tốc độ lên xuống",
+    "en": "the vertical speed indicator"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chỉ báo tư thế hiển thị máy bay so với đường chân trời, còn gọi là chân trời giả (Tooley bảng 1.1).",
+   "en": "The attitude indicator shows the aircraft relative to the horizon, hence the name artificial horizon (Tooley Table 1.1)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>\"Artificial horizon\" là tên gọi khác của chỉ báo tư thế, vì nó vẽ đường chân trời giả để cho biết máy bay nghiêng hay chúc so với mặt đất. Đồng hồ độ cao và VSI không có đường chân trời.</p><p>Tên này xuất hiện trong bảng 1.1 của Tooley.</p>",
+   "en": "<p>\"Artificial horizon\" is another name for the attitude indicator, because it draws a false horizon line to show whether the aircraft is banked or pitched relative to the ground. The altimeter and VSI have no horizon.</p><p>The name appears in Tooley Table 1.1.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q22",
+   "en": "Tooley Ch.1 Q22"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các hiển thị điển hình trên EHSI là:",
+   "en": "Typical displays on an EHSI are:"
+  },
+  "opts": [
+   {
+    "vi": "VOR, độ cao, tốc độ lên xuống",
+    "en": "VOR, altitude, rate of climb"
+   },
+   {
+    "vi": "VOR, hướng bay, đường bay thực (track)",
+    "en": "VOR, heading, track"
+   },
+   {
+    "vi": "chỉ báo động cơ",
+    "en": "engine indications"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "EHSI hiển thị hướng, track, VOR/DME/ILS/ADF, gió và khoảng cách (Tooley 1.1.3.2). Độ cao và tốc độ lên xuống thuộc PFD.",
+   "en": "The EHSI shows heading, track, VOR/DME/ILS/ADF, wind and range (Tooley 1.1.3.2). Altitude and vertical speed belong to the PFD."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EHSI hiển thị hướng, track (đường bay thực), VOR, DME, ILS, ADF, gió và khoảng cách. Chỉ báo động cơ thuộc ECAM/EICAS, còn độ cao và tốc độ lên xuống thuộc PFD (EADI).</p><p>Phân loại: EHSI = dẫn đường ngang.</p>",
+   "en": "<p>The EHSI shows heading, track, VOR, DME, ILS, ADF, wind and range. Engine indications belong to ECAM/EICAS, and altitude and rate of climb belong to the PFD (EADI).</p><p>Category: EHSI = horizontal navigation.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q23",
+   "en": "Tooley Ch.1 Q23"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong bố trí chữ \"T\" cơ bản của các đồng hồ:",
+   "en": "In a basic 'T' configuration of instruments:"
+  },
+  "opts": [
+   {
+    "vi": "ADI ở trên và HSI ở dưới",
+    "en": "the ADI appears at the top and the HSI appears at the bottom"
+   },
+   {
+    "vi": "HSI ở trên và ASI ở dưới",
+    "en": "the HSI appears at the top and the ASI appears at the bottom"
+   },
+   {
+    "vi": "ASI ở trên và ADI ở dưới",
+    "en": "the ASI appears at the top and the ADI appears at the bottom"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hàng trên của chữ T có ASI, ADI, độ cao; ADI ở giữa trên và HSI nằm ngay dưới ADI.",
+   "en": "The top bar of the T holds ASI, ADI, altimeter; the ADI is top centre and the HSI sits directly below it."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hàng trên của chữ T gồm ASI, ADI và độ cao; ADI ở giữa trên và HSI nằm ngay dưới ADI. Vì thế \"ADI ở trên và HSI ở dưới\" là đúng, còn hai phương án kia đặt ASI hoặc HSI sai hàng.</p><p>Hình dung chữ T: thanh ngang là ba đồng hồ, thân dọc là HSI.</p>",
+   "en": "<p>The top bar of the T holds ASI, ADI and altimeter; the ADI is top centre and the HSI sits directly below it. So \"ADI at the top and HSI at the bottom\" is right, and the other two options put the ASI or HSI in the wrong row.</p><p>Picture the T: the bar is the three dials, the stem is the HSI.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q24",
+   "en": "Tooley Ch.1 Q24"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Lỗi vận hành của FMS có thể được phát hiện bằng cách:",
+   "en": "Operational faults in FMS can be detected by:"
+  },
+  "opts": [
+   {
+    "vi": "kiểm tra bảo dưỡng định kỳ máy bay",
+    "en": "routine maintenance inspection of the aircraft"
+   },
+   {
+    "vi": "kiểm tra trước chuyến bay",
+    "en": "pre-flight checks"
+   },
+   {
+    "vi": "tự động so sánh các đầu ra một cách liên tục",
+    "en": "automatically comparing outputs on a continuous basis"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Hai FMS (cơ trưởng và phó) so sánh chỉ báo và đầu ra liên tục để phát hiện lỗi (Tooley 1.1.8).",
+   "en": "The two FMSs (captain and first officer) compare indications and outputs continuously to detect faults (Tooley 1.1.8)."
+  },
+  "topic": {
+   "vi": "EICAS và ECAM",
+   "en": "EICAS and ECAM"
+  },
+  "topic_id": "ecam",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai FMS (của cơ trưởng và phó cơ trưởng) so sánh chỉ báo và đầu ra với nhau liên tục để phát hiện lỗi. Kiểm tra bảo dưỡng định kỳ hay kiểm tra trước chuyến bay chỉ phát hiện lỗi vào thời điểm đó chứ không liên tục trong khai thác.</p><p>Nguyên tắc: dự phòng kép kèm so sánh liên tục.</p>",
+   "en": "<p>The two FMSs (captain's and first officer's) compare indications and outputs with each other continuously to detect faults. Routine maintenance inspection or pre-flight checks only find faults at those moments, not continuously in operation.</p><p>Principle: dual redundancy with continuous comparison.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q25",
+   "en": "Tooley Ch.1 Q25"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình đánh dấu X trong hình 1.30 là:",
+   "en": "The display marked X in Figure 1.30 is the:"
+  },
+  "opts": [
+   {
+    "vi": "màn hình dẫn đường",
+    "en": "navigation display"
+   },
+   {
+    "vi": "FMS CDU",
+    "en": "FMS CDU"
+   },
+   {
+    "vi": "màn hình bay chính",
+    "en": "primary flight display"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "X chỉ vào thiết bị đặt trên bệ giữa hai ghế phi công: đó là CDU của FMS.",
+   "en": "X points at the unit on the centre pedestal between the two pilot seats: the FMS CDU."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>X chỉ vào thiết bị đặt trên bệ giữa hai ghế phi công, đó là CDU của FMS (có bàn phím và màn hình nhỏ để nhập kế hoạch bay). Màn hình bay chính và dẫn đường là các màn hình lớn trên bảng táp-lô.</p><p>Vị trí lắp là manh mối nhận dạng.</p>",
+   "en": "<p>X points at the unit on the centre pedestal between the two pilot seats, the FMS CDU (a keyboard and small screen to enter the flight plan). The primary flight and navigation displays are the large screens on the instrument panel.</p><p>Mounting position is the identifying clue.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q26",
+   "en": "Tooley Ch.1 Q26"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình đánh dấu Y trong hình 1.31 là:",
+   "en": "The display marked Y in Figure 1.31 is the:"
+  },
+  "opts": [
+   {
+    "vi": "các đồng hồ bay dự phòng",
+    "en": "standby flight instruments"
+   },
+   {
+    "vi": "màn hình bay chính",
+    "en": "primary flight display"
+   },
+   {
+    "vi": "FMS CDU",
+    "en": "FMS CDU"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Y chỉ vào màn hình lớn trước mặt cơ trưởng: màn hình bay chính (PFD).",
+   "en": "Y points at the large screen directly in front of the captain: the primary flight display (PFD)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Y chỉ vào màn hình lớn ngay trước mặt cơ trưởng, tức màn hình bay chính (PFD). Đồng hồ dự phòng là các đồng hồ nhỏ riêng ở giữa, còn CDU nằm trên bệ giữa.</p><p>Ngoài ra bố trí này giữ nguyên vị trí tương đối như chữ T.</p>",
+   "en": "<p>Y points at the large screen directly in front of the captain, the primary flight display (PFD). The standby instruments are small separate dials in the middle and the CDU is on the pedestal.</p><p>This layout also keeps the relative positions of the T.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q27",
+   "en": "Tooley Ch.1 Q27"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình ECAM phía trên cung cấp:",
+   "en": "The upper ECAM display provides:"
+  },
+  "opts": [
+   {
+    "vi": "thông tin dẫn đường",
+    "en": "navigation information"
+   },
+   {
+    "vi": "thông tin bay thứ cấp",
+    "en": "secondary flight information"
+   },
+   {
+    "vi": "các thông số động cơ",
+    "en": "engine parameters"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Màn hình ECAM trên (E/WD) hiển thị thông số động cơ và cảnh báo; màn hình dưới hiển thị trang hệ thống (Tooley 1.1.6).",
+   "en": "The upper ECAM screen (E/WD) shows engine parameters and warnings; the lower one shows system pages (Tooley 1.1.6)."
+  },
+  "topic": {
+   "vi": "EICAS và ECAM",
+   "en": "EICAS and ECAM"
+  },
+  "topic_id": "ecam",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Màn hình ECAM phía trên (E/WD, chính) hiển thị thông số động cơ (N1, EGT, N2, lưu lượng nhiên liệu) cùng vị trí cánh tà, slat và cảnh báo. Màn hình dưới hiển thị trang hệ thống và hậu quả của hỏng hóc. Dẫn đường là việc của ND.</p><p>Nhớ: trên = động cơ và cảnh báo, dưới = hệ thống.</p>",
+   "en": "<p>The upper ECAM screen (E/WD, primary) shows engine parameters (N1, EGT, N2, fuel flow) with flap and slat positions and warnings. The lower screen shows system pages and the consequences of a failure. Navigation is the ND's job.</p><p>Remember: upper = engines and warnings, lower = systems.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.1 Q28",
+   "en": "Tooley Ch.1 Q28"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bước sóng cực đại của ánh sáng phát ra từ một LED đỏ thường là:",
+   "en": "The peak wavelength of light emitted from a red LED is typically:"
+  },
+  "opts": [
+   {
+    "vi": "525 nm",
+    "en": "525 nm"
+   },
+   {
+    "vi": "475 nm",
+    "en": "475 nm"
+   },
+   {
+    "vi": "635 nm",
+    "en": "635 nm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bảng 11.1 của Tooley cho LED đỏ cực đại 635 nm (loại miniature 690 nm). 475 nm là xanh lam, 525 nm là lục.",
+   "en": "Tooley Table 11.1 gives 635 nm for red LEDs (the miniature type 690 nm). 475 nm is blue, 525 nm is green."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 11.1 của Tooley cho LED đỏ tiêu chuẩn cực đại ở 635 nm (loại miniature 690 nm). 475 nm là ánh sáng xanh lam và 525 nm là xanh lục, hai màu có hiệu suất khác.</p><p>Mẹo: đỏ có bước sóng dài nhất trong ba màu này.</p>",
+   "en": "<p>Tooley Table 11.1 gives red LEDs a peak at 635 nm (the miniature type 690 nm). 475 nm is blue and 525 nm is green, colours with different efficiency.</p><p>Tip: red has the longest wavelength of these three colours.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q1",
+   "en": "Tooley Ch.11 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đáp ứng phổ của mắt người đạt cực đại ở khoảng:",
+   "en": "The spectral response of the human eye peaks at around:"
+  },
+  "opts": [
+   {
+    "vi": "550 nm",
+    "en": "550 nm"
+   },
+   {
+    "vi": "650 nm",
+    "en": "650 nm"
+   },
+   {
+    "vi": "450 nm",
+    "en": "450 nm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mắt nhạy nhất ở khoảng 550 nm (ánh sáng lục), hình 11.12; bài giảng ghi cực đại 555 nm.",
+   "en": "The eye is most sensitive near 550 nm (green light), Figure 11.12; the lecture gives a 555 nm peak."
+  },
+  "topic": {
+   "vi": "Buồng lái và dụng cụ cơ",
+   "en": "Cockpit and electromechanical instruments"
+  },
+  "topic_id": "cockpit",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mắt người nhạy nhất ở khoảng 550 nm (ánh sáng lục), hình 11.12; bài giảng ghi 555 nm. 450 nm là xanh lam và 650 nm là đỏ: đều ở hai đầu phổ nhìn thấy, mắt kém nhạy hơn.</p><p>Đây là lý do màu lục dùng cho giá trị bình thường trên màn hình.</p>",
+   "en": "<p>The human eye is most sensitive near 550 nm (green light), Figure 11.12; the lecture gives 555 nm. 450 nm is blue and 650 nm is red: both near the ends of the visible spectrum where the eye is less sensitive.</p><p>That is why green is used for normal values on displays.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q2",
+   "en": "Tooley Ch.11 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai phosphor xanh lam và xanh lục kề nhau cùng sáng trên màn hình CRT. Màu thu được là:",
+   "en": "Adjacent phosphors of blue and green are illuminated on the screen of a CRT. The resultant colour produced will be:"
+  },
+  "opts": [
+   {
+    "vi": "đỏ tươi (magenta)",
+    "en": "magenta"
+   },
+   {
+    "vi": "trắng",
+    "en": "white"
+   },
+   {
+    "vi": "lục lam (cyan)",
+    "en": "cyan"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Lục + lam = cyan; đỏ + lục = vàng; đỏ + lam = magenta; cả ba = trắng (hình 11.9).",
+   "en": "Green + blue = cyan; red + green = yellow; red + blue = magenta; all three = white (Figure 11.9)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cộng màu ánh sáng: lục + lam = lục lam (cyan), đỏ + lục = vàng, đỏ + lam = đỏ tươi (magenta), cả ba = trắng (hình 11.9). Hai điểm phosphor xanh lam và xanh lục kề nhau cùng sáng nên cho cyan.</p><p>Lưu ý đây là trộn cộng (ánh sáng), khác trộn trừ (sơn).</p>",
+   "en": "<p>Adding light colours: green + blue = cyan, red + green = yellow, red + blue = magenta, all three = white (Figure 11.9). Adjacent blue and green phosphors lit together give cyan.</p><p>Note this is additive mixing (light), unlike subtractive mixing (paint).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q3",
+   "en": "Tooley Ch.11 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mắt người nhạy nhất với ánh sáng:",
+   "en": "The human eye is most sensitive to:"
+  },
+  "opts": [
+   {
+    "vi": "xanh lam",
+    "en": "blue light"
+   },
+   {
+    "vi": "đỏ",
+    "en": "red light"
+   },
+   {
+    "vi": "xanh lục",
+    "en": "green light"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đáp án đúng là xanh lục (cực đại khoảng 550 nm, đúng với câu 2, hình 11.12 và slide 6 của bài giảng). Lưu ý: khoá đáp án in trong Tooley (Appendix 3, A.11) ghi câu 4 là (a), mâu thuẫn với chính câu 2 của chương, nên được coi là lỗi in; site dùng đáp án (c).",
+   "en": "The correct answer is green (peak near 550 nm, consistent with question 2, Figure 11.12 and lecture slide 6). Note: the answer key printed in Tooley (Appendix 3, A.11) gives question 4 as (a), which contradicts the chapter's own question 2, so it is treated as a printing error; the site uses (c)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đáp án đúng là ánh sáng xanh lục, nhất quán với câu 2, hình 11.12 và slide 6 của bài giảng (cực đại khoảng 550 nm). Khoá đáp án in của sách ghi câu này là (a) đỏ, mâu thuẫn với chính câu 2 của chương, nên được coi là lỗi in; site dùng đáp án đúng.</p><p>Bài học: luôn đối chiếu chéo các câu trong cùng chương trước khi tin khoá đáp án.</p>",
+   "en": "<p>The correct answer is green light, consistent with question 2, Figure 11.12 and lecture slide 6 (peak near 550 nm). The book's printed answer key gives (a) red for this question, contradicting the chapter's own question 2, so it is treated as a printing error; the site uses the correct answer.</p><p>Lesson: cross-check questions within a chapter before trusting an answer key.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q4 (khoá in ghi (a), site dùng (c): xem giải thích)",
+   "en": "Tooley Ch.11 Q4 (printed key says (a), site uses (c): see explanation)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một hiển thị LED 7 đoạn có các đoạn a, b, c, d và g sáng. Ký tự hiển thị là:",
+   "en": "A seven-segment LED display has segments a, b, c, d and g illuminated. The character displayed will be:"
+  },
+  "opts": [
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "5",
+    "en": "5"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "a, b, c, d, g tạo số 3. Số 2 cần e thay cho c; số 5 cần f thay cho b. (Notebook tự kiểm.)",
+   "en": "Segments a, b, c, d, g form a 3. A 2 needs e instead of c; a 5 needs f instead of b. (Checked in the notebook.)"
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Các đoạn a, b, c, d, g sáng tạo số 3. Số 2 cần đoạn e thay cho c (a, b, g, e, d), số 5 cần đoạn f thay cho b (a, f, g, c, d). Notebook module tự kiểm cả ba.</p><p>Luyện: viết ra bảy đoạn rồi gạch những đoạn tắt cho từng chữ số.</p>",
+   "en": "<p>Segments a, b, c, d, g form a 3. A 2 needs segment e instead of c (a, b, g, e, d) and a 5 needs f instead of b (a, f, g, c, d). The module notebook checks all three.</p><p>Practice: write the seven segments and cross out those that are off for each digit.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q5",
+   "en": "Tooley Ch.11 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đầu vào BCD của bộ giải mã hiển thị 7 đoạn là 1001. Chữ số hiển thị là:",
+   "en": "The BCD input to a seven-segment display decoder is 1001. The digit displayed will be:"
+  },
+  "opts": [
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "9",
+    "en": "9"
+   },
+   {
+    "vi": "7",
+    "en": "7"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "1001₂ = 9 (BCD). Số 8 có mã 1000.",
+   "en": "1001₂ = 9 (BCD). The digit 8 has code 1000."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mã BCD 1001 bằng 9 (8 + 1), nên bộ giải mã hiển thị chữ số 9. Số 8 có mã 1000 và số 7 có mã 0111.</p><p>Từ BCD sang 7 đoạn: 74HC47 giải mã đúng mã này.</p>",
+   "en": "<p>BCD 1001 equals 9 (8 + 1), so the decoder shows the digit 9. The digit 8 has code 1000 and 7 has code 0111.</p><p>BCD to 7-segment: the 74HC47 decodes exactly this code.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q6",
+   "en": "Tooley Ch.11 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điện thế tại lưới của CRT là:",
+   "en": "The potential at the grid of a CRT is:"
+  },
+  "opts": [
+   {
+    "vi": "âm so với cathode",
+    "en": "negative with respect to the cathode"
+   },
+   {
+    "vi": "dương so với cathode",
+    "en": "positive with respect to the cathode"
+   },
+   {
+    "vi": "bằng điện thế cathode",
+    "en": "the same as the cathode"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lưới được đặt âm so với cathode để đẩy bớt electron, nhờ đó điều khiển độ sáng (Tooley 11.1.1).",
+   "en": "The grid is held negative with respect to the cathode to repel electrons, which controls brightness (Tooley 11.1.1)."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Lưới được đặt âm so với cathode để đẩy bớt electron quay lại, qua đó điều khiển số electron tới màn hình, tức độ sáng. Nếu lưới bằng cathode thì không điều khiển được, và nếu dương thì hút thêm electron.</p><p>Van nước: càng âm càng ít electron, càng tối.</p>",
+   "en": "<p>The grid is held negative with respect to the cathode to push some electrons back, thereby controlling how many reach the screen, i.e. brightness. If the grid equalled the cathode it would not control, and if positive it would draw more electrons.</p><p>Water valve picture: the more negative, the fewer electrons, the darker.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q7",
+   "en": "Tooley Ch.11 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chức năng của anode cuối trong CRT là:",
+   "en": "The function of the final anode of a CRT is:"
+  },
+  "opts": [
+   {
+    "vi": "làm lệch chùm electron",
+    "en": "deflecting the electron beam"
+   },
+   {
+    "vi": "điều khiển độ sáng của hiển thị",
+    "en": "controlling the brightness of the display"
+   },
+   {
+    "vi": "gia tốc chùm electron",
+    "en": "accelerating the electron beam"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Anode cuối có thế dương rất cao (vài kilôvôn) để gia tốc chùm; lệch do bản X/Y hoặc cuộn dây, độ sáng do lưới.",
+   "en": "The final anode sits at a very high positive potential (several kilovolts) to accelerate the beam; deflection is by X/Y plates or coils, brightness by the grid."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Anode cuối có điện thế dương rất cao (vài kilôvôn) để gia tốc chùm electron tới phosphor. Làm lệch chùm là việc của bản X, Y hoặc cuộn dây, còn độ sáng do lưới điều khiển.</p><p>Ba vai trò khác nhau: lưới (sáng), anode hội tụ (nét), anode cuối (năng lượng).</p>",
+   "en": "<p>The final anode sits at a very high positive potential (several kilovolts) to accelerate the beam toward the phosphor. Deflecting the beam is the job of the X, Y plates or coils, and brightness is controlled by the grid.</p><p>Three different roles: grid (brightness), focus anodes (sharpness), final anode (energy).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q8",
+   "en": "Tooley Ch.11 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Làm lệch chùm tia CRT bằng điện từ dùng:",
+   "en": "Electromagnetic deflection of a CRT uses:"
+  },
+  "opts": [
+   {
+    "vi": "cuộn dây bên trong CRT",
+    "en": "coils inside the CRT"
+   },
+   {
+    "vi": "các bản X và Y bên trong CRT",
+    "en": "X- and Y-plates inside the CRT"
+   },
+   {
+    "vi": "cuộn dây quanh cổ CRT",
+    "en": "coils around the neck of the CRT"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Làm lệch điện từ dùng hai bộ cuộn dây đặt bên ngoài quanh cổ ống; các bản X, Y bên trong là làm lệch tĩnh điện.",
+   "en": "Electromagnetic deflection uses two sets of coils placed externally around the neck of the tube; X and Y plates inside are electrostatic deflection."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Làm lệch bằng điện từ dùng hai bộ cuộn dây đặt bên ngoài quanh cổ ống, chứ không phải cuộn dây bên trong. Các bản X, Y bên trong là làm lệch tĩnh điện, dùng cho CRT nhỏ.</p><p>Mẹo: \"từ\" nghĩa là cuộn dây ngoài cổ ống.</p>",
+   "en": "<p>Electromagnetic deflection uses two sets of coils placed outside around the neck of the tube, not coils inside. X and Y plates inside are electrostatic deflection, used for small CRTs.</p><p>Tip: \"magnetic\" means coils outside the neck.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q9",
+   "en": "Tooley Ch.11 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ba chùm tia của CRT màu ứng với các màu:",
+   "en": "The three beams in a colour CRT are associated with the colours:"
+  },
+  "opts": [
+   {
+    "vi": "đỏ, vàng và lam",
+    "en": "red, yellow and blue"
+   },
+   {
+    "vi": "lục, lam và vàng",
+    "en": "green, blue and yellow"
+   },
+   {
+    "vi": "đỏ, lục và lam",
+    "en": "red, green and blue"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ba súng điện tử tương ứng ba phosphor đỏ, lục, lam (RGB).",
+   "en": "The three electron guns correspond to the red, green and blue phosphors (RGB)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>CRT màu có ba súng điện tử ứng với ba phosphor đỏ, lục, lam (RGB). Vàng không phải màu gốc mà là kết quả đỏ cộng lục.</p><p>Các chùm chỉ chạm đúng phosphor cùng màu nhờ mặt nạ.</p>",
+   "en": "<p>A colour CRT has three electron guns matching the red, green and blue (RGB) phosphors. Yellow is not a primary but the result of red plus green.</p><p>Each beam hits only phosphors of its own colour thanks to a mask.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q10",
+   "en": "Tooley Ch.11 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "So với màn hình CRT, màn hình AMLCD có:",
+   "en": "When compared with CRT displays, AMLCD displays have:"
+  },
+  "opts": [
+   {
+    "vi": "thể tích lớn hơn và độ tin cậy thấp hơn",
+    "en": "larger volume and lower reliability"
+   },
+   {
+    "vi": "thể tích lớn hơn và độ tin cậy cao hơn",
+    "en": "larger volume and greater reliability"
+   },
+   {
+    "vi": "thể tích nhỏ hơn và độ tin cậy cao hơn",
+    "en": "smaller volume and greater reliability"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ưu điểm chính của AMLCD: khối lượng, công suất, thể tích và độ tin cậy (Tooley, phần mở đầu chương 11).",
+   "en": "The main AMLCD advantages are weight, power, volume and reliability (Tooley, chapter 11 introduction)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>AMLCD ưu việt hơn CRT về khối lượng, công suất, thể tích và độ tin cậy. Vì vậy \"thể tích nhỏ hơn và độ tin cậy cao hơn\" là đúng. Các phương án có thể tích lớn hơn đều sai.</p><p>Ngược lại CRT có góc nhìn rộng và dải nhiệt độ rộng hơn.</p>",
+   "en": "<p>The AMLCD beats the CRT on weight, power, volume and reliability. So \"smaller volume and greater reliability\" is right. The options with larger volume are wrong.</p><p>Conversely the CRT has a wider viewing angle and temperature range.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q11",
+   "en": "Tooley Ch.11 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Anode cuối của màn hình CRT cần:",
+   "en": "The final anode of a CRT display requires:"
+  },
+  "opts": [
+   {
+    "vi": "nguồn xoay chiều điện áp thấp",
+    "en": "a low-voltage AC supply"
+   },
+   {
+    "vi": "nguồn xoay chiều điện áp cao",
+    "en": "a high-voltage AC supply"
+   },
+   {
+    "vi": "nguồn một chiều điện áp cao",
+    "en": "a high-voltage DC supply"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Anode cuối cần thế dương cao không đổi (vài kilôvôn một chiều) để gia tốc chùm.",
+   "en": "The final anode needs a steady high positive potential (several kilovolts DC) to accelerate the beam."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Anode cuối cần điện thế dương cao không đổi (vài kilôvôn một chiều) để gia tốc chùm. Nguồn xoay chiều sẽ làm điện thế đổi dấu và không gia tốc ổn định; nguồn áp thấp không đủ năng lượng cho chùm.</p><p>Chữ \"DC\" cùng \"high-voltage\" là hai từ khoá.</p>",
+   "en": "<p>The final anode needs a steady high positive potential (several kilovolts DC) to accelerate the beam. An AC supply would swing the potential and not accelerate steadily; a low voltage gives the beam too little energy.</p><p>The words \"DC\" and \"high-voltage\" are the two keywords.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q12",
+   "en": "Tooley Ch.11 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dạng sóng làm lệch đưa vào các bản của CRT tĩnh điện là:",
+   "en": "The deflecting waveform supplied to the plates of an electrostatic CRT will be:"
+  },
+  "opts": [
+   {
+    "vi": "sóng sin",
+    "en": "a sine wave"
+   },
+   {
+    "vi": "sóng răng cưa (ramp)",
+    "en": "a ramp wave"
+   },
+   {
+    "vi": "sóng vuông",
+    "en": "a square wave"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Quét raster dùng sóng răng cưa (ramp) với hai tần số khác nhau trên bản X và Y.",
+   "en": "Raster scanning uses ramp (sawtooth) waveforms at two different frequencies on the X and Y plates."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Quét raster dùng sóng răng cưa (ramp) hai tần số khác nhau trên bản X và Y: điện áp tăng tuyến tính rồi quay về nhanh. Sóng sin hay sóng vuông không cho vệt quét đều.</p><p>Ví dụ Tooley: 400 dòng với quét dọc 100 Hz cần răng cưa ngang 40 kHz.</p>",
+   "en": "<p>Raster scanning uses ramp (sawtooth) waveforms at two different frequencies on the X and Y plates: voltage rises linearly then returns quickly. A sine or square wave would not give an even sweep.</p><p>Tooley's example: 400 lines at a 100 Hz vertical scan needs a 40 kHz horizontal sawtooth.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q13",
+   "en": "Tooley Ch.11 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giá trị điển hình của dòng thuận cực đại của một LED chỉ báo là:",
+   "en": "The typical value of maximum forward current for an LED indicator is:"
+  },
+  "opts": [
+   {
+    "vi": "0,03 A",
+    "en": "0.03 A"
+   },
+   {
+    "vi": "0,3 A",
+    "en": "0.3 A"
+   },
+   {
+    "vi": "3 A",
+    "en": "3 A"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bảng 11.1: dòng thuận tối đa 30 đến 40 mA, tức 0,03 đến 0,04 A.",
+   "en": "Table 11.1: maximum forward current is 30 to 40 mA, i.e. 0.03 to 0.04 A."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 11.1: dòng thuận tối đa của LED chỉ báo là 30 đến 40 mA, tức 0,03 đến 0,04 A. 0,3 A và 3 A là quá lớn, sẽ làm cháy LED; dòng điển hình chỉ 7 đến 12 mA.</p><p>Đổi đơn vị cẩn thận: mA sang A chia 1000.</p>",
+   "en": "<p>Table 11.1: the maximum forward current of an indicator LED is 30 to 40 mA, i.e. 0.03 to 0.04 A. 0.3 A and 3 A are far too large and would burn out the LED; the typical current is only 7 to 12 mA.</p><p>Convert units carefully: mA to A divide by 1000.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q14",
+   "en": "Tooley Ch.11 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các mẫu hình dùng để hiển thị ký tự chữ số trong bộ điều khiển CRT được lưu trong:",
+   "en": "The patterns required to display alphanumeric characters in a CRT controller are stored in:"
+  },
+  "opts": [
+   {
+    "vi": "RAM tĩnh",
+    "en": "static RAM"
+   },
+   {
+    "vi": "ROM tạo ký tự",
+    "en": "character generator ROM"
+   },
+   {
+    "vi": "RAM động",
+    "en": "dynamic RAM"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mẫu ký tự cố định nên lưu trong ROM tạo ký tự (hình 11.11).",
+   "en": "Character shapes are fixed, so they live in a character generator ROM (Figure 11.11)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mẫu hình ký tự cố định (ma trận 8 × 8 hoặc 9 × 14) được lưu trong ROM tạo ký tự (character generator ROM), vì dữ liệu không đổi và chỉ cần đọc. RAM tĩnh hay động dùng cho dữ liệu thay đổi (hình ảnh, hiệu chỉnh).</p><p>Đây là chỗ điện tử số gặp màn hình: ROM của Module 04 tạo chữ.</p>",
+   "en": "<p>Fixed character patterns (8 × 8 or 9 × 14 matrices) are stored in a character generator ROM, because the data never changes and only needs reading. Static or dynamic RAM serves data that changes (images, calibration).</p><p>This is where digital electronics meets displays: Module 04's ROM makes the letters.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q15",
+   "en": "Tooley Ch.11 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "So với LCD ma trận thụ động, AMLCD thì:",
+   "en": "When compared with passive matrix LCDs, AMLCDs are:"
+  },
+  "opts": [
+   {
+    "vi": "nhanh hơn và nét hơn",
+    "en": "faster and sharper"
+   },
+   {
+    "vi": "chậm hơn và kém nét hơn",
+    "en": "slower and less sharp"
+   },
+   {
+    "vi": "nhanh hơn và kém nét hơn",
+    "en": "faster and less sharp"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ma trận thụ động đáp ứng chậm và kém nét; AMLCD dùng TFT cho từng ô nên nhanh và nét hơn (Tooley 11.3.2, 11.3.3).",
+   "en": "Passive matrices respond slowly and are less sharp; the AMLCD uses a TFT per cell, so it is faster and sharper (Tooley 11.3.2, 11.3.3)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ma trận thụ động địa chỉ hàng và cột như ma trận nhớ, đáp ứng chậm và kém nét. AMLCD thêm một transistor màng mỏng (TFT) cho từng ô nên nhanh và nét hơn. Phương án \"chậm hơn và kém nét hơn\" mô tả ma trận thụ động.</p><p>Lợi thế thứ hai: dễ cho 256 mức mỗi màu, hơn 16 triệu màu.</p>",
+   "en": "<p>A passive matrix addresses rows and columns like a memory matrix, with slow response and poorer sharpness. The AMLCD adds a thin-film transistor (TFT) per cell so it is faster and sharper. The option \"slower and less sharp\" describes the passive matrix.</p><p>A second advantage: 256 levels per colour, over 16 million colours.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.11 Q16",
+   "en": "Tooley Ch.11 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuẩn cho ACARS được định nghĩa trong:",
+   "en": "The standard for ACARS is defined in:"
+  },
+  "opts": [
+   {
+    "vi": "ARINC 573",
+    "en": "ARINC 573"
+   },
+   {
+    "vi": "ARINC 429",
+    "en": "ARINC 429"
+   },
+   {
+    "vi": "ARINC 724",
+    "en": "ARINC 724"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ACARS ban đầu theo ARINC 597, được sửa thành ARINC 724B (Tooley 15.1).",
+   "en": "ACARS was originally specified in ARINC 597 and revised as ARINC 724B (Tooley 15.1)."
+  },
+  "topic": {
+   "vi": "Bảo trì tập trung và ACARS",
+   "en": "Central maintenance and ACARS"
+  },
+  "topic_id": "cmc",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Chuẩn cho ACARS được định nghĩa trong ARINC 724 (ban đầu theo ARINC 597, sau sửa thành 724B). ARINC 429 là bus dữ liệu avionics, ARINC 573 là chuẩn ghi dữ liệu chuyến bay.</p><p>Nhóm chuẩn ARINC: 429 bus, 573/717 FDR, 724 ACARS, 636 mạng quang.</p>",
+   "en": "<p>The standard for ACARS is defined in ARINC 724 (originally ARINC 597, later revised as 724B). ARINC 429 is the avionics data bus and ARINC 573 is the flight data recorder standard.</p><p>ARINC group: 429 bus, 573/717 FDR, 724 ACARS, 636 optical network.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q1",
+   "en": "Tooley Ch.15 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các thông số động cơ được hiển thị trên:",
+   "en": "Engine parameters are displayed on:"
+  },
+  "opts": [
+   {
+    "vi": "EHSI",
+    "en": "EHSI"
+   },
+   {
+    "vi": "CDU",
+    "en": "CDU"
+   },
+   {
+    "vi": "ECAM",
+    "en": "ECAM"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ECAM (Airbus) hiển thị thông số động cơ và hệ thống; EHSI là màn hình dẫn đường, CDU là thiết bị nhập liệu FMS.",
+   "en": "ECAM (Airbus) shows engine and system parameters; the EHSI is a navigation display and the CDU is the FMS data entry unit."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Thông số động cơ hiển thị trên ECAM (Airbus). EHSI là màn hình dẫn đường, còn CDU là thiết bị nhập liệu của FMS, không phải màn hình thông số động cơ.</p><p>ECAM trên = động cơ và cảnh báo.</p>",
+   "en": "<p>Engine parameters are shown on the ECAM (Airbus). The EHSI is a navigation display and the CDU is the FMS data entry unit, not an engine parameter display.</p><p>ECAM upper = engines and warnings.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q2",
+   "en": "Tooley Ch.15 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các màn hình buồng lái bên trái và bên phải:",
+   "en": "The left and right cockpit displays:"
+  },
+  "opts": [
+   {
+    "vi": "luôn được cấp từ các bộ tạo ký hiệu riêng",
+    "en": "are supplied from separate symbol generators at all times"
+   },
+   {
+    "vi": "chỉ được cấp từ cùng một bộ tạo ký hiệu khi mọi bộ tạo ký hiệu khác đã hỏng",
+    "en": "will only be supplied from the same symbol generator when all other symbol generators have failed"
+   },
+   {
+    "vi": "được cấp từ cùng một bộ tạo ký hiệu",
+    "en": "are supplied from the same symbol generator"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bộ trái nuôi màn hình cơ trưởng, bộ phải nuôi phó cơ trưởng, bộ giữa dự phòng; chỉ khi cả hai bộ kia hỏng thì cùng dùng chung một bộ (Tooley 15.2.2).",
+   "en": "The left generator feeds the captain's displays, the right one the first officer's, the centre one is a backup; only when the others have failed do both sides share one generator (Tooley 15.2.2)."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bộ tạo ký hiệu trái nuôi màn hình cơ trưởng, bộ phải nuôi phó cơ trưởng, bộ giữa là dự phòng. Chỉ khi cả hai bộ kia hỏng thì cả hai bên mới dùng chung một bộ. Vì vậy phương án \"chỉ dùng chung khi các bộ khác hỏng hết\" là đúng.</p><p>Đây là ví dụ dự phòng ba.</p>",
+   "en": "<p>The left symbol generator feeds the captain's displays, the right one the first officer's, and the centre one is the backup. Only when both others have failed do both sides share one generator. So the option \"only shared when the others have failed\" is right.</p><p>This is an example of triple redundancy.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q5",
+   "en": "Tooley Ch.15 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên hệ thống EFIS buồng lái, nếu tất cả các màn hình đều thiếu thông tin từ một nguồn nào đó, nguyên nhân nhiều khả năng nhất là:",
+   "en": "On a flight deck EFIS system, if all of the displays were missing information from a particular source, the most likely cause would be:"
+  },
+  "opts": [
+   {
+    "vi": "bộ điều khiển hiển thị và bộ tạo ký hiệu",
+    "en": "the display controller and symbol generator"
+   },
+   {
+    "vi": "cảm biến, bus đầu vào hoặc bộ điều khiển hiển thị",
+    "en": "the sensor, input bus or display controller"
+   },
+   {
+    "vi": "bộ tạo ký hiệu và màn hình",
+    "en": "the symbol generator and display"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Lỗi chung cho mọi màn hình nằm ở thứ đứng trước tất cả chúng: cảm biến nguồn, bus đưa dữ liệu vào, hoặc bộ điều khiển hiển thị; không phải một bộ tạo ký hiệu riêng lẻ.",
+   "en": "A fault common to every display lies upstream of all of them: the source sensor, the input bus or the display controller; not one individual symbol generator."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Lỗi chung cho mọi màn hình nằm ở thứ đứng trước tất cả chúng: cảm biến nguồn, bus đưa dữ liệu vào, hoặc bộ điều khiển hiển thị; không phải một bộ tạo ký hiệu riêng (chỉ ảnh hưởng một phía). Khi mọi màn hình cùng mất dữ liệu từ một nguồn, hãy tìm ở mắt xích chung.</p><p>Suy luận chẩn đoán: lỗi chung → nguyên nhân chung.</p>",
+   "en": "<p>A fault common to every display lies upstream of all of them: the source sensor, the input bus or the display controller; not one individual symbol generator (which affects only one side). When all displays lose data from one source, look at the common link.</p><p>Diagnostic reasoning: common fault → common cause.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q7",
+   "en": "Tooley Ch.15 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một máy tính bảo trì trung tâm cung cấp:",
+   "en": "A central maintenance computer provides:"
+  },
+  "opts": [
+   {
+    "vi": "kiểm tra mặt đất và BITE bằng bảng điều khiển di động",
+    "en": "ground and BITE testing using a portable control panel"
+   },
+   {
+    "vi": "giám sát và kiểm tra cả trên mặt đất lẫn trong chuyến bay",
+    "en": "ground and in-flight monitoring and testing"
+   },
+   {
+    "vi": "hiển thị cảnh báo và thận trọng của hệ thống",
+    "en": "display of system warnings and cautions"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "CMC thu dữ liệu lỗi và trạng thái từ các LRU liên tục, cả khi bay lẫn trên mặt đất; hiển thị cảnh báo là việc của FWC/ECAM.",
+   "en": "The CMC collects fault and status data from the LRUs continuously, in flight and on the ground; displaying warnings is the job of the FWC/ECAM."
+  },
+  "topic": {
+   "vi": "EICAS và ECAM",
+   "en": "EICAS and ECAM"
+  },
+  "topic_id": "ecam",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>CMC thu dữ liệu lỗi và trạng thái từ các LRU liên tục, cả khi bay lẫn trên mặt đất, nên cung cấp giám sát và kiểm tra ở cả hai giai đoạn. Hiển thị cảnh báo thận trọng là việc của FWC và ECAM, không phải CMC.</p><p>CMC là \"hộp đen bảo trì\" cho kỹ sư mặt đất.</p>",
+   "en": "<p>The CMC collects fault and status data from the LRUs continuously, in flight and on the ground, so it provides monitoring and testing in both phases. Displaying warnings and cautions is the job of the FWC and ECAM, not the CMC.</p><p>The CMC is the \"maintenance black box\" for ground engineers.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q8",
+   "en": "Tooley Ch.15 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dạng sóng quét dùng trên CRT điện từ là:",
+   "en": "The sweep voltage waveform used on an electromagnetic CRT is:"
+  },
+  "opts": [
+   {
+    "vi": "hình sin",
+    "en": "sinusoidal"
+   },
+   {
+    "vi": "hình thang",
+    "en": "trapezoidal"
+   },
+   {
+    "vi": "răng cưa",
+    "en": "sawtooth"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Vì cuộn dây lệch có điện trở nên điện áp quét phải hình thang, không phải răng cưa thẳng như ở CRT tĩnh điện (Tooley 15.2.2).",
+   "en": "Because the deflection coils have resistance, the scan voltage must be trapezoidal rather than the straight sawtooth of an electrostatic CRT (Tooley 15.2.2)."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Vì cuộn dây làm lệch có điện trở nên điện áp quét phải có dạng hình thang, không phải răng cưa thẳng như ở CRT tĩnh điện (Tooley 15.2.2). Sóng sin không quét tuyến tính.</p><p>Điểm khác giữa làm lệch tĩnh điện (răng cưa) và điện từ (hình thang).</p>",
+   "en": "<p>Because the deflection coils have resistance, the scan voltage must be trapezoidal, not the straight sawtooth of an electrostatic CRT (Tooley 15.2.2). A sine wave would not sweep linearly.</p><p>The difference between electrostatic deflection (sawtooth) and electromagnetic (trapezoid).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q10",
+   "en": "Tooley Ch.15 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong EFIS có ba bộ tạo ký hiệu, bộ thứ ba dùng để làm gì?",
+   "en": "In an EFIS with three symbol generators, what is the purpose of the third symbol generator?"
+  },
+  "opts": [
+   {
+    "vi": "tạo đầu ra cho ECAM",
+    "en": "to provide outputs for ECAM"
+   },
+   {
+    "vi": "dự phòng khi hỏng",
+    "en": "standby in case of failure"
+   },
+   {
+    "vi": "so sánh với bộ tạo ký hiệu của phi công",
+    "en": "comparison with the pilot's symbol generator"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bộ giữa là hệ dự phòng có thể thay bộ trái hoặc phải khi hỏng (Tooley 15.2.2).",
+   "en": "The centre generator is a backup that can replace the left or right one on failure (Tooley 15.2.2)."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bộ tạo ký hiệu thứ ba là hệ dự phòng, có thể thay bộ trái hoặc phải khi hỏng. Nó không dùng để so sánh với bộ của phi công (đó là chức năng của các FMS) và cũng không chuyên tạo đầu ra cho ECAM.</p><p>Ba bộ: trái, phải, giữa.</p>",
+   "en": "<p>The third symbol generator is the backup that can replace the left or right one on failure. It is not for comparison with the pilot's generator (that is the FMSs' function) and it is not dedicated to ECAM outputs.</p><p>Three units: left, right, centre.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q11",
+   "en": "Tooley Ch.15 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ thống ACARS dùng các kênh trong:",
+   "en": "The ACARS system uses channels in the:"
+  },
+  "opts": [
+   {
+    "vi": "phổ HF",
+    "en": "HF spectrum"
+   },
+   {
+    "vi": "phổ VHF",
+    "en": "VHF spectrum"
+   },
+   {
+    "vi": "phổ UHF",
+    "en": "UHF spectrum"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "ACARS dùng dải VHF 129 đến 137 MHz (Tooley 15.1, bảng 15.1).",
+   "en": "ACARS uses the VHF band 129 to 137 MHz (Tooley 15.1, Table 15.1)."
+  },
+  "topic": {
+   "vi": "Bảo trì tập trung và ACARS",
+   "en": "Central maintenance and ACARS"
+  },
+  "topic_id": "cmc",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ACARS dùng dải VHF 129 đến 137 MHz (bảng 15.1 liệt kê chín kênh trong dải này). HF và UHF là các dải khác không thuộc ACARS tiêu chuẩn.</p><p>Trong notebook các kênh được kiểm lại đều nằm trong 129 đến 137 MHz.</p>",
+   "en": "<p>ACARS uses the VHF band 129 to 137 MHz (Table 15.1 lists nine channels in it). HF and UHF are other bands not used by standard ACARS.</p><p>In the notebook the channels were rechecked and all lie within 129 to 137 MHz.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q12",
+   "en": "Tooley Ch.15 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu một màn hình CRT của EICAS hỏng:",
+   "en": "If one EICAS CRT fails:"
+  },
+  "opts": [
+   {
+    "vi": "màn hình dự phòng sẽ tự động thay thế",
+    "en": "the standby CRT will automatically take over"
+   },
+   {
+    "vi": "màn hình còn lại sẽ hiển thị dữ liệu EICAS chính",
+    "en": "the remaining CRT will display primary EICAS data"
+   },
+   {
+    "vi": "CDU của FMS sẽ hiển thị dữ liệu của màn hình hỏng",
+    "en": "the FMS CDU will display the failed CRT data"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Màn hình còn hoạt động hiển thị dữ liệu EICAS chính; trang phụ gọi ra bằng bảng điều khiển khi cần.",
+   "en": "The remaining screen displays the primary EICAS data; secondary pages are called up from the control panel when needed."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Nếu một màn hình EICAS hỏng, màn hình còn lại hiển thị dữ liệu EICAS chính; các trang phụ gọi ra bằng bảng điều khiển khi cần. CDU của FMS không có vai trò này và không có màn hình dự phòng tự thay thế.</p><p>Chủ đích: giữ thông tin động cơ chính luôn có mặt.</p>",
+   "en": "<p>If one EICAS display fails, the remaining display shows the primary EICAS data; secondary pages are called up from the control panel when needed. The FMS CDU has no such role and no standby screen takes over automatically.</p><p>Purpose: keep the primary engine information always present.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q13",
+   "en": "Tooley Ch.15 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một phương pháp dùng trên máy bay hiện đại để báo lỗi trong chuyến bay cho trạm kỹ thuật và giám sát mặt đất là:",
+   "en": "A method used in modern aircraft for reporting in-flight faults to an engineering and monitoring ground station is:"
+  },
+  "opts": [
+   {
+    "vi": "TCAS II",
+    "en": "TCAS II"
+   },
+   {
+    "vi": "ACARS",
+    "en": "ACARS"
+   },
+   {
+    "vi": "GPS",
+    "en": "GPS"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "ACARS gửi dữ liệu hiệu năng, lỗi, bảo trì từ máy bay xuống hãng bay qua liên kết VHF.",
+   "en": "ACARS sends performance, fault and maintenance data from the aircraft to the airline over the VHF link."
+  },
+  "topic": {
+   "vi": "EICAS và ECAM",
+   "en": "EICAS and ECAM"
+  },
+  "topic_id": "ecam",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ACARS gửi dữ liệu hiệu năng, lỗi và bảo trì từ máy bay xuống hãng bay qua liên kết VHF. TCAS II là hệ cảnh báo va chạm, GPS là hệ định vị: hai thứ này không báo lỗi về trạm mặt đất.</p><p>Một hệ thống, một việc: ACARS = tin nhắn dữ liệu máy bay và mặt đất.</p>",
+   "en": "<p>ACARS sends performance, fault and maintenance data from the aircraft to the airline over the VHF link. TCAS II is a collision avoidance system and GPS a positioning system: neither reports faults to a ground station.</p><p>One system, one job: ACARS = data messages between aircraft and ground.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.15 Q14",
+   "en": "Tooley Ch.15 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nên chọn bộ giải mã/driver có ngõ ra tích cực mức CAO hay mức THẤP để lái một hiển thị LED 7 đoạn catốt chung?",
+   "en": "Would you select a decoder/driver with active-HIGH or active-LOW outputs to drive a common-cathode 7-segment LED display?"
+  },
+  "opts": [
+   {
+    "vi": "Tích cực mức CAO",
+    "en": "Active-HIGH"
+   },
+   {
+    "vi": "Tích cực mức THẤP",
+    "en": "Active-LOW"
+   },
+   {
+    "vi": "Loại nào cũng được",
+    "en": "Either type works"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hiển thị catốt chung sáng khi anode của đoạn được đưa lên CAO, nên cần ngõ ra tích cực mức CAO. 74HC47 có ngõ ra tích cực mức THẤP nên hợp với hiển thị anode chung (Floyd tr.339).",
+   "en": "A common-cathode display lights a segment when its anode is driven HIGH, so active-HIGH outputs are needed. The 74HC47 has active-LOW outputs, so it suits common-anode displays (Floyd p.339)."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hiển thị catốt chung sáng đoạn khi anode của đoạn được đưa lên CAO, nên cần ngõ ra tích cực mức CAO. 74HC47 có ngõ ra tích cực mức THẤP nên hợp với hiển thị anode chung (Floyd tr.339). Dùng nhầm loại thì các đoạn sáng ngược.</p><p>Cách nhớ: catốt chung nối đất, muốn sáng cần 1.</p>",
+   "en": "<p>A common-cathode display lights a segment when its anode is driven HIGH, so active-HIGH outputs are needed. The 74HC47 has active-LOW outputs so it suits common-anode displays (Floyd p.339). Using the wrong type makes segments light inversely.</p><p>Memory aid: common cathode is grounded, to light you need a 1.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · Section 6–5 Checkup #3 (tr.341; đáp án tr.384)",
+   "en": "Floyd Ch.6 · Section 6–5 Checkup #3 (p.341; answer p.384)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong hệ ghép kênh hiển thị 7 đoạn ở Hình 6-49, IC nào bật luân phiên hai hiển thị?",
+   "en": "In the 7-segment display multiplexing system of Figure 6-49, which IC enables the two displays alternately?"
+  },
+  "opts": [
+   {
+    "vi": "74HC139",
+    "en": "74HC139"
+   },
+   {
+    "vi": "74HC47",
+    "en": "74HC47"
+   },
+   {
+    "vi": "74HC157",
+    "en": "74HC157"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "74HC139 (bộ giải mã) bật lần lượt chữ số A và B; 74HC157 chọn mã BCD; 74HC47 giải mã sang 7 đoạn.",
+   "en": "The 74HC139 (a decoder) enables digit A and digit B in turn; the 74HC157 selects the BCD code; the 74HC47 decodes to 7 segments."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>74HC139 là bộ giải mã bật lần lượt chữ số A và B nên mắt thấy cả hai đều sáng nhờ quét nhanh. 74HC157 chọn mã BCD và 74HC47 giải mã sang 7 đoạn. Tần số quét phải đủ cao để không thấy nhấp nháy.</p><p>Đây là kỹ thuật ghép kênh hiển thị.</p>",
+   "en": "<p>The 74HC139 is the decoder that enables digit A and digit B in turn so the eye sees both lit thanks to fast scanning. The 74HC157 selects the BCD code and the 74HC47 decodes to 7 segments. The scan frequency must be high enough to avoid visible flicker.</p><p>This is display multiplexing.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · Section 6–8 Checkup #4(c) (tr.356; đáp án tr.384)",
+   "en": "Floyd Ch.6 · Section 6–8 Checkup #4(c) (p.356; answer p.384)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong cùng hệ ở Hình 6-49, IC 74HC157 làm gì?",
+   "en": "In the same system (Figure 6-49), what does the 74HC157 do?"
+  },
+  "opts": [
+   {
+    "vi": "Giải mã BCD để cấp năng lượng cho hiển thị",
+    "en": "Decodes the BCD to energise the display"
+   },
+   {
+    "vi": "Bật các hiển thị luân phiên",
+    "en": "Enables the displays alternately"
+   },
+   {
+    "vi": "Ghép kênh hai mã BCD vào bộ giải mã 7 đoạn",
+    "en": "Multiplexes the two BCD codes to the 7-segment decoder"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "74HC157 là bộ chọn dữ liệu (đa hợp) 4 bit: đường chọn xuống THẤP cho mã LSD, lên CAO cho mã MSD.",
+   "en": "The 74HC157 is a 4-bit data selector (multiplexer): the select line LOW passes the LSD code, HIGH passes the MSD code."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>74HC157 là bộ chọn dữ liệu 4 bit (đa hợp): đường chọn xuống THẤP cho mã LSD đi qua, lên CAO cho mã MSD. Nó không giải mã (đó là 74HC47) và không bật các hiển thị (đó là 74HC139).</p><p>Ba IC, ba việc: chọn, giải mã, bật.</p>",
+   "en": "<p>The 74HC157 is a 4-bit data selector (multiplexer): the select line LOW passes the LSD code, HIGH passes the MSD code. It does not decode (that is the 74HC47) or enable the displays (that is the 74HC139).</p><p>Three ICs, three jobs: select, decode, enable.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · Section 6–8 Checkup #4(a) (tr.356; đáp án tr.384)",
+   "en": "Floyd Ch.6 · Section 6–8 Checkup #4(a) (p.356; answer p.384)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với 74HC47, khi chân LT (lamp test) ở mức THẤP và BI/RBO ở mức CAO thì:",
+   "en": "With the 74HC47, when the LT (lamp test) input is LOW and BI/RBO is HIGH:"
+  },
+  "opts": [
+   {
+    "vi": "cả bảy đoạn đều tắt",
+    "en": "all seven segments turn off"
+   },
+   {
+    "vi": "chỉ số 0 ở đầu bị xoá",
+    "en": "only leading zeros are blanked"
+   },
+   {
+    "vi": "cả bảy đoạn đều sáng",
+    "en": "all seven segments turn on"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Lamp test bật cả bảy đoạn để kiểm tra không đoạn nào cháy hỏng (Floyd tr.339).",
+   "en": "Lamp test turns on all seven segments to verify that none is burned out (Floyd p.339)."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Lamp test (LT = 0 khi BI/RBO = 1) bật cả bảy đoạn để kiểm tra không đoạn nào cháy hỏng. Tắt hết đoạn là chức năng blanking (BI), còn xoá số 0 đầu là zero suppression qua chân RBI.</p><p>Ba chức năng: LT, BI, RBI.</p>",
+   "en": "<p>Lamp test (LT = 0 with BI/RBO = 1) turns on all seven segments to verify none is burned out. Turning every segment off is the blanking function (BI), and removing leading zeros is zero suppression through the RBI pin.</p><p>Three functions: LT, BI, RBI.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-5, 74HC47 (tr.339)",
+   "en": "Floyd Ch.6 · section 6-5, 74HC47 (p.339)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao hiển thị 7 đoạn dùng chữ b và d viết thường thay vì B và D in hoa?",
+   "en": "Why does the 7-segment display use lowercase b and d instead of capital B and D?"
+  },
+  "opts": [
+   {
+    "vi": "Vì chữ in hoa không có trong mã thập lục phân",
+    "en": "Capital letters do not exist in hexadecimal"
+   },
+   {
+    "vi": "Vì chữ in hoa B giống số 8 và D giống số 0",
+    "en": "A capital B would look like an 8 and a capital D like a 0"
+   },
+   {
+    "vi": "Vì chữ thường dùng ít đoạn hơn",
+    "en": "Lowercase letters use fewer segments"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd tr.244: chữ b viết thường vì B in hoa giống số 8; tương tự, D in hoa sẽ giống số 0.",
+   "en": "Floyd p.244: the letter b is lowercase because a capital B would be the same as the digit 8; similarly a capital D would look like 0."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Chữ B in hoa giống số 8 và D in hoa giống số 0 trên màn hình 7 đoạn, nên Floyd dùng b và d viết thường để phân biệt. Chữ thường không dùng ít đoạn hơn (b dùng 5 đoạn) và các chữ hex A đến F vẫn tồn tại.</p><p>Vì vậy bảng 4-14 liệt kê b và d.</p>",
+   "en": "<p>A capital B looks like an 8 and a capital D like a 0 on a 7-segment display, so Floyd uses lowercase b and d to tell them apart. Lowercase does not use fewer segments (b uses 5) and the hex letters A to F do exist.</p><p>That is why Table 4-14 lists b and d.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (tr.244)",
+   "en": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (p.244)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào đúng khi so sánh LED và LCD 7 đoạn?",
+   "en": "Which statement correctly compares LED and LCD 7-segment displays?"
+  },
+  "opts": [
+   {
+    "vi": "Cả hai đều tự phát sáng",
+    "en": "Both emit light on their own"
+   },
+   {
+    "vi": "LCD nhìn thấy trong bóng tối, LED thì không",
+    "en": "An LCD can be seen in the dark, an LED cannot"
+   },
+   {
+    "vi": "LED nhìn thấy được trong bóng tối, LCD thì không",
+    "en": "An LED can be seen in the dark, an LCD cannot"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mỗi đoạn LED dùng một đi-ốt phát quang nên tự phát sáng. LCD hoạt động bằng phân cực ánh sáng, đoạn bị kích hoạt không phản xạ ánh sáng nên hiện đen và không nhìn thấy trong tối (Floyd tr.244).",
+   "en": "Each LED segment is a light-emitting diode, so it makes its own light. An LCD works by polarising light; an activated segment does not reflect light and appears black, so it cannot be seen in the dark (Floyd p.244)."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mỗi đoạn LED là một đi-ốt phát quang nên tự phát sáng, nhìn thấy trong bóng tối. LCD hoạt động bằng phân cực ánh sáng, đoạn bị kích hoạt không phản xạ ánh sáng nên hiện đen, và không nhìn thấy trong tối trừ khi có đèn nền.</p><p>Ý nghĩa: điều kiện ánh sáng yếu thì chọn LED.</p>",
+   "en": "<p>Each LED segment is a light-emitting diode so it makes its own light and can be seen in the dark. An LCD works by polarising light; an activated segment does not reflect light so it appears black, and cannot be seen in the dark without a backlight.</p><p>Implication: for low-light conditions choose LED.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (tr.244)",
+   "en": "Floyd Ch.4 · Applied Logic: Seven-Segment Display (p.244)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 4-14 của Floyd, chữ C hiển thị bằng những đoạn nào?",
+   "en": "According to Floyd Table 4-14, which segments form the letter C?"
+  },
+  "opts": [
+   {
+    "vi": "d, e, f, g",
+    "en": "d, e, f, g"
+   },
+   {
+    "vi": "a, d, e, f",
+    "en": "a, d, e, f"
+   },
+   {
+    "vi": "a, b, c, d",
+    "en": "a, b, c, d"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bảng 4-14: C = a, d, e, f. (b: c,d,e,f,g; d: b,c,d,e,g; E: a,d,e,f,g; A: a,b,c,e,f,g.)",
+   "en": "Table 4-14: C = a, d, e, f. (b: c,d,e,f,g; d: b,c,d,e,g; E: a,d,e,f,g; A: a,b,c,e,f,g.)"
+  },
+  "topic": {
+   "vi": "Khái niệm chung về hiển thị",
+   "en": "General display concepts"
+  },
+  "topic_id": "general",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 4-14: C = a, d, e, f; A = a, b, c, e, f, g; b = c, d, e, f, g; d = b, c, d, e, g; E = a, d, e, f, g. Phương án \"a, b, c, d\" là hình chữ khác, còn \"d, e, f, g\" thiếu đoạn a.</p><p>Hình dung chữ C: nửa trên, nửa dưới và cạnh trái.</p>",
+   "en": "<p>Table 4-14: C = a, d, e, f; A = a, b, c, e, f, g; b = c, d, e, f, g; d = b, c, d, e, g; E = a, d, e, f, g. The option \"a, b, c, d\" is a different shape and \"d, e, f, g\" lacks segment a.</p><p>Picture the letter C: top, bottom and left side.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.4 · Bảng 4-14 (tr.245)",
+   "en": "Floyd Ch.4 · Table 4-14 (p.245)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "74HC47 có các ngõ ra a đến g tích cực mức THẤP và có thể lái trực tiếp hiển thị 7 đoạn anode chung.",
+   "en": "The 74HC47 has active-LOW outputs a to g and can drive a common-anode 7-segment display directly."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng (Floyd tr.339).",
+   "en": "True (Floyd p.339)."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hiển thị anode chung nối anode lên VCC nên đoạn sáng khi ngõ ra xuống THẤP. Vì vậy ngõ ra tích cực THẤP của 74HC47 lái trực tiếp được, còn với catốt chung cần bộ giải mã tích cực CAO. Các chân LT, RBI, BI/RBO cũng tích cực mức THẤP.</p>",
+   "en": "<p>A common-anode display ties the anodes to VCC so a segment lights when its output goes LOW. Thus the 74HC47's active-LOW outputs drive it directly, while a common-cathode display needs an active-HIGH decoder. The LT, RBI and BI/RBO pins are also active LOW.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-5 (tr.339)",
+   "en": "Floyd Ch.6 · section 6-5 (p.339)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Zero suppression ở đầu số (leading zero suppression) xoá các số 0 phía sau dấu thập phân.",
+   "en": "Leading zero suppression blanks the zeros after the decimal point."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sai: nó xoá các số 0 ở phía trước (bên trái) số.",
+   "en": "False: it blanks zeros at the front (left) of the number."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd 6-5: xoá số 0 ở đầu số gọi là leading zero suppression; xoá số 0 ở cuối số (phía phải) gọi là trailing zero suppression. Chỉ các số 0 không cần thiết bị xoá: 030.080 hiển thị 30.08, các số 0 cần thiết ở giữa giữ nguyên. Cơ chế dùng chân RBI và BI/RBO nối dây chuyền giữa các bộ 74HC47.</p>",
+   "en": "<p>Floyd 6-5: blanking zeros at the start of a number is leading zero suppression; blanking zeros at the end (right) is trailing zero suppression. Only nonessential zeros are blanked: 030.080 shows as 30.08, essential zeros in the middle stay. The mechanism uses the RBI and BI/RBO pins chained between 74HC47s.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-5, Hình 6-35 (tr.340)",
+   "en": "Floyd Ch.6 · section 6-5, Figure 6-35 (p.340)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để loại các gai điện áp do chuyển mạch nhanh trên VCC và đất của bo mạch số, Floyd khuyên đặt tụ khoảng bao nhiêu cho cả bo mạch?",
+   "en": "To absorb switching spikes on the VCC and ground of a digital board, about what capacitor does Floyd recommend for the whole board?"
+  },
+  "opts": [
+   {
+    "vi": "Khoảng 1 µF từ VCC xuống đất",
+    "en": "About 1 µF from VCC to ground"
+   },
+   {
+    "vi": "Khoảng 1 nF nối tiếp với VCC",
+    "en": "About 1 nF in series with VCC"
+   },
+   {
+    "vi": "Khoảng 1000 µF nối giữa hai chân tín hiệu",
+    "en": "About 1000 µF between two signal pins"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 6-11: 1 µF cho cả bo mạch và 0,022 đến 0,1 µF rải rác.",
+   "en": "Floyd 6-11: 1 µF for the board and 0.022 to 0.1 µF distributed."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về hiển thị",
+   "en": "General display concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tụ tách mắc song song giữa VCC và đất để cho xung tần cao một đường trở kháng thấp. Một tụ khoảng 1 µF lo cả bo mạch, các tụ nhỏ 0,022 đến 0,1 µF đặt gần thiết bị chuyển mạch nhanh hoặc lái nhiều tải (bộ dao động, bộ đếm, bộ đệm, driver bus). Tụ mắc nối tiếp với VCC hay giữa chân tín hiệu không làm việc này.</p><p>Chủ đề này được dạy sâu ở Module 09 (EMC).</p>",
+   "en": "<p>The decoupling capacitor is connected across VCC and ground to give high-frequency spikes a low-impedance path. About a 1 µF capacitor serves the whole board, with small 0.022 to 0.1 µF capacitors placed near fast-switching or heavily loaded devices (oscillators, counters, buffers, bus drivers). A series capacitor in VCC or between signal pins does not do this job.</p><p>The topic is taught in depth in Module 09 (EMC).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-11 (tr.364)",
+   "en": "Floyd Ch.6 · section 6-11 (p.364)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Nhiễu có thể gây ra các tín hiệu sai (glitch) ở ngõ ra bộ giải mã logic do các đầu vào đổi trạng thái không đồng thời.",
+   "en": "Unequal input changes can cause false output pulses (glitches) in decoder logic."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng: glitch xuất hiện khi các ngõ vào đổi không đồng thời.",
+   "en": "True: glitches arise when inputs change at different times."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd 6-11 định nghĩa glitch là xung ngắn sai ở ngõ ra và giải thích nguyên nhân là độ trễ khác nhau giữa các đường tín hiệu. Có thể loại bằng strobe (cho phép bộ giải mã chỉ khi ngõ vào đã ổn định). Cùng ý với Bài 36 chương 7 mà module này đã giải (bộ đếm bất đồng bộ).</p>",
+   "en": "<p>Floyd 6-11 defines a glitch as a short false output pulse and explains the cause as unequal delays along signal paths. It can be removed with a strobe (enabling the decoder only when the inputs have settled). Same idea as chapter 7 Problem 36, solved in this project (an asynchronous counter).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.6 · mục 6-11 (tr.364)",
+   "en": "Floyd Ch.6 · section 6-11 (p.364)"
+  }
+ }
+]

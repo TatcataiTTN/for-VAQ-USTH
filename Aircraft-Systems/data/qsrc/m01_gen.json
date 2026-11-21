@@ -1,0 +1,372 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 45 tương ứng với số nhị phân nào?",
+   "en": "The decimal number 45 is equivalent to the binary number:"
+  },
+  "opts": [
+   {
+    "vi": "101101",
+    "en": "101101"
+   },
+   {
+    "vi": "101110",
+    "en": "101110"
+   },
+   {
+    "vi": "100101",
+    "en": "100101"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "45 = 32+8+4+1 → 101101₂.",
+   "en": "45 = 32+8+4+1 → 101101₂."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 11001 tương ứng với số thập phân nào?",
+   "en": "The binary number 11001 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "19",
+    "en": "19"
+   },
+   {
+    "vi": "25",
+    "en": "25"
+   },
+   {
+    "vi": "27",
+    "en": "27"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "16+8+0+0+1 = 25.",
+   "en": "16+8+0+0+1 = 25."
+  },
+  "topic": {
+   "vi": "Hệ nhị phân và số học nhị phân",
+   "en": "Binary numbers and arithmetic"
+  },
+  "topic_id": "binary",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số hex 2F tương ứng với số thập phân nào?",
+   "en": "The hex number 2F is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "49",
+    "en": "49"
+   },
+   {
+    "vi": "47",
+    "en": "47"
+   },
+   {
+    "vi": "45",
+    "en": "45"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2·16+15 = 47.",
+   "en": "2·16+15 = 47."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 200 tương ứng với số hex nào?",
+   "en": "The decimal number 200 is equivalent to the hex number:"
+  },
+  "opts": [
+   {
+    "vi": "D2",
+    "en": "D2"
+   },
+   {
+    "vi": "B4",
+    "en": "B4"
+   },
+   {
+    "vi": "C8",
+    "en": "C8"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "200 = 12·16+8 → C8.",
+   "en": "200 = 12·16+8 → C8."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số bát phân 47 tương ứng với số thập phân nào?",
+   "en": "The octal number 47 is equivalent to the decimal number:"
+  },
+  "opts": [
+   {
+    "vi": "39",
+    "en": "39"
+   },
+   {
+    "vi": "37",
+    "en": "37"
+   },
+   {
+    "vi": "41",
+    "en": "41"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "4·8+7 = 39.",
+   "en": "4·8+7 = 39."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập phân 68 tương ứng với mã BCD nào?",
+   "en": "The decimal number 68 is equivalent to the BCD code:"
+  },
+  "opts": [
+   {
+    "vi": "01100100",
+    "en": "01100100"
+   },
+   {
+    "vi": "01111000",
+    "en": "01111000"
+   },
+   {
+    "vi": "01101000",
+    "en": "01101000"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "6→0110, 8→1000 → 01101000.",
+   "en": "6→0110, 8→1000 → 01101000."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 11110000 tương ứng với số hex nào?",
+   "en": "The binary number 11110000 is equivalent to the hex number:"
+  },
+  "opts": [
+   {
+    "vi": "FF",
+    "en": "FF"
+   },
+   {
+    "vi": "0F",
+    "en": "0F"
+   },
+   {
+    "vi": "F0",
+    "en": "F0"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "1111=F, 0000=0 → F0.",
+   "en": "1111=F, 0000=0 → F0."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bù hai của số nhị phân 01101 (5 bit) là:",
+   "en": "The two's complement of the 5-bit binary number 01101 is:"
+  },
+  "opts": [
+   {
+    "vi": "01100",
+    "en": "01100"
+   },
+   {
+    "vi": "10011",
+    "en": "10011"
+   },
+   {
+    "vi": "10010",
+    "en": "10010"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đảo bit: 10010, cộng 1 → 10011.",
+   "en": "Invert the bits: 10010, add 1 → 10011."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân 11100101 tương ứng với số bát phân nào?",
+   "en": "The binary number 11100101 is equivalent to the octal number:"
+  },
+  "opts": [
+   {
+    "vi": "354",
+    "en": "354"
+   },
+   {
+    "vi": "345",
+    "en": "345"
+   },
+   {
+    "vi": "344",
+    "en": "344"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Nhóm 3 bit từ phải (đệm trái): 011 100 101 → 3 4 5 → 345₈.",
+   "en": "Group 3 bits from the right (pad on the left): 011 100 101 → 3 4 5 → 345₈."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã ASCII (hex) của ký tự 'A' là:",
+   "en": "The ASCII code (hex) of the character 'A' is:"
+  },
+  "opts": [
+   {
+    "vi": "41",
+    "en": "41"
+   },
+   {
+    "vi": "42",
+    "en": "42"
+   },
+   {
+    "vi": "40",
+    "en": "40"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "'A' = 65 thập phân = 41 hex (chuẩn ASCII).",
+   "en": "'A' = 65 decimal = 41 hex (ASCII standard)."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 01 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 01 (slide number not yet attached)"
+  }
+ }
+]

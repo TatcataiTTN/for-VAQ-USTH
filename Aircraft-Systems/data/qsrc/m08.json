@@ -1,0 +1,1414 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong sợi quang, chiết suất của lõi:",
+   "en": "In an optical fibre, the refractive index of the core is:"
+  },
+  "opts": [
+   {
+    "vi": "nhỏ hơn chiết suất vỏ",
+    "en": "smaller than the cladding"
+   },
+   {
+    "vi": "lớn hơn chiết suất vỏ",
+    "en": "larger than the cladding"
+   },
+   {
+    "vi": "bằng chiết suất vỏ",
+    "en": "the same as the cladding"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Phải có n₁ > n₂ thì mới có phản xạ toàn phần ở biên lõi-vỏ.",
+   "en": "n₁ > n₂ is required for total internal reflection at the core-cladding boundary."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Phải có n₁ > n₂ (chiết suất lõi lớn hơn vỏ) thì ánh sáng mới bị phản xạ toàn phần ở biên lõi và vỏ và được giữ trong lõi. Nếu bằng nhau thì không có biên quang học; nếu nhỏ hơn thì tia luôn khúc xạ ra vỏ và mất.</p><p>Sơ đồ: lõi cao, vỏ thấp.</p>",
+   "en": "<p>n₁ > n₂ is required (core index greater than cladding) so that light is totally reflected at the core-cladding boundary and kept in the core. If equal there is no optical boundary; if smaller the ray always refracts into the cladding and is lost.</p><p>Picture: high core, low cladding.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q1",
+   "en": "Tooley Ch.10 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ phát quang thích hợp dùng với sợi quang là:",
+   "en": "A suitable optical transmitter for use with an optical fibre is:"
+  },
+  "opts": [
+   {
+    "vi": "một diode laser công suất thấp",
+    "en": "a low-power laser diode"
+   },
+   {
+    "vi": "một phototransistor",
+    "en": "a phototransistor"
+   },
+   {
+    "vi": "một photodiode",
+    "en": "a photodiode"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ phát là LED hồng ngoại hoặc diode laser công suất thấp; photodiode và phototransistor là bộ thu (Tooley 10.3).",
+   "en": "The transmitter is an infrared LED or a low-power laser diode; the photodiode and phototransistor are receivers (Tooley 10.3)."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bộ phát quang là LED hồng ngoại hoặc diode laser công suất thấp, ghép trực tiếp vào sợi. Photodiode và phototransistor là bộ thu: chúng cho dòng lớn khi được chiếu sáng và dòng rất nhỏ khi tối.</p><p>Phát = LED/laser, thu = photodiode.</p>",
+   "en": "<p>The optical transmitter is an infrared LED or a low-power laser diode coupled directly to the fibre. The photodiode and phototransistor are receivers: they pass a large current when illuminated and a negligible one in the dark.</p><p>Transmit = LED/laser, receive = photodiode.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q2",
+   "en": "Tooley Ch.10 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đường kính lõi điển hình của sợi đơn mode là:",
+   "en": "The typical core diameter for a monomode fibre is:"
+  },
+  "opts": [
+   {
+    "vi": "50 µm",
+    "en": "50 µm"
+   },
+   {
+    "vi": "125 µm",
+    "en": "125 µm"
+   },
+   {
+    "vi": "5 µm",
+    "en": "5 µm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Hình 10.5: lõi đơn mode 5 µm, vỏ 125 µm; đa mode 50 µm.",
+   "en": "Figure 10.5: single-mode core 5 µm, cladding 125 µm; multimode 50 µm."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hình 10.5: sợi đơn mode có lõi khoảng 5 µm (cùng cỡ bước sóng) và vỏ 125 µm, còn đa mode có lõi 50 µm. Lõi đơn mode nhỏ để chỉ một mode truyền được. 125 µm là đường kính vỏ chứ không phải lõi.</p><p>Nhớ cặp: 5/125 (đơn mode) và 50/125 (đa mode).</p>",
+   "en": "<p>Figure 10.5: a single-mode fibre has a core of about 5 µm (the order of the wavelength) and a 125 µm cladding, while multimode has a 50 µm core. The single-mode core is small so only one mode propagates. 125 µm is the cladding diameter, not the core.</p><p>Remember the pairs: 5/125 (single-mode) and 50/125 (multimode).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q3",
+   "en": "Tooley Ch.10 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong cáp quang nhiều lõi:",
+   "en": "In a multicore fibre-optic cable:"
+  },
+  "opts": [
+   {
+    "vi": "các lõi được mã màu",
+    "en": "the cores are colour coded"
+   },
+   {
+    "vi": "lớp vỏ phản xạ được mã màu",
+    "en": "the cladding is colour coded"
+   },
+   {
+    "vi": "các lớp đệm (buffer) được mã màu",
+    "en": "the buffers are colour coded"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley 10.4.1: buffer mã màu xanh lam, đỏ, xanh lá, vàng, trắng để nhận dạng sợi.",
+   "en": "Tooley 10.4.1: the buffers are colour coded blue, red, green, yellow and white to identify the fibres."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tooley 10.4.1: lớp buffer bảo vệ mỗi sợi được mã màu (xanh lam, đỏ, xanh lá, vàng, trắng) để nhận dạng sợi trong cáp. Lõi và vỏ phản xạ là phần thuỷ tinh bên trong nên không thể tô màu.</p><p>Vỏ ngoài của cáp thường màu tím.</p>",
+   "en": "<p>Tooley 10.4.1: the protective buffer of each fibre is colour-coded (blue, red, green, yellow, white) to identify the fibres in the cable. The core and cladding are the glass inside so they cannot be coloured.</p><p>The cable's outer jacket is usually purple.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q4",
+   "en": "Tooley Ch.10 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bước sóng ánh sáng điển hình trong sợi quang là:",
+   "en": "The typical wavelength of light in a fibre is:"
+  },
+  "opts": [
+   {
+    "vi": "1,3 µm",
+    "en": "1.3 µm"
+   },
+   {
+    "vi": "13 µm",
+    "en": "13 µm"
+   },
+   {
+    "vi": "130 µm",
+    "en": "130 µm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hồng ngoại gần 1,3 µm (1310 nm), cùng 0,85 và 1,55 µm.",
+   "en": "Near-infrared 1.3 µm (1310 nm), together with 0.85 and 1.55 µm."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Sợi quang dùng ánh sáng hồng ngoại gần, điển hình 1,3 µm (1310 nm), ngoài ra 0,85 µm và 1,55 µm; các giá trị này nằm trong cửa sổ suy hao thấp của sợi silica. 13 µm và 130 µm là hồng ngoại xa, không dùng ở sợi.</p><p>Đổi đơn vị: 1,3 µm = 1300 nm.</p>",
+   "en": "<p>Fibre uses near-infrared light, typically 1.3 µm (1310 nm), also 0.85 µm and 1.55 µm; these lie in the low-loss windows of silica fibre. 13 µm and 130 µm are far infrared, not used in fibre.</p><p>Units: 1.3 µm = 1300 nm.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q5",
+   "en": "Tooley Ch.10 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuẩn máy bay nào áp dụng cho mạng sợi quang?",
+   "en": "What aircraft standard applies to fibre-optic networks?"
+  },
+  "opts": [
+   {
+    "vi": "ARINC 573",
+    "en": "ARINC 573"
+   },
+   {
+    "vi": "ARINC 429",
+    "en": "ARINC 429"
+   },
+   {
+    "vi": "ARINC 636",
+    "en": "ARINC 636"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ARINC 636, cải biên từ FDDI, dùng cho AVLAN và CABLAN của Boeing 777 (đến 100 Mbps).",
+   "en": "ARINC 636, adapted from FDDI, for the Boeing 777 AVLAN and CABLAN (up to 100 Mbps)."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ARINC 636 (cải biên từ FDDI) là chuẩn cho mạng quang AVLAN và CABLAN của Boeing 777, tốc độ tới 100 Mbps. ARINC 429 là bus đồng điểm-điểm và 573 là chuẩn ghi dữ liệu chuyến bay.</p><p>Bộ nhớ: 636 = mạng quang.</p>",
+   "en": "<p>ARINC 636 (adapted from FDDI) is the standard for the Boeing 777's optical AVLAN and CABLAN, at up to 100 Mbps. ARINC 429 is a copper point-to-point bus and 573 is the flight data recorder standard.</p><p>Memory: 636 = optical network.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q6",
+   "en": "Tooley Ch.10 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu bộ phóng có góc chấp nhận 45° thì khẩu độ số tương ứng là:",
+   "en": "If a launcher has an acceptance angle of 45°, the corresponding numerical aperture will be:"
+  },
+  "opts": [
+   {
+    "vi": "0,707",
+    "en": "0.707"
+   },
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0,5",
+    "en": "0.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "NA = sin θa = sin 45° = 0,707.",
+   "en": "NA = sin θa = sin 45° = 0.707."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>NA = sin θa = sin 45° = 0,707. 0,5 là sin 30° và 1 là sin 90° (θa = 90°, thu mọi tia). Công thức ngược: θa = sin⁻¹(NA).</p><p>Kiểm tra nhanh: sin 45° = √2/2 ≈ 0,707.</p>",
+   "en": "<p>NA = sin θa = sin 45° = 0.707. 0.5 is sin 30° and 1 is sin 90° (θa = 90°, accepting every ray). The inverse: θa = sin⁻¹(NA).</p><p>Quick check: sin 45° = √2/2 ≈ 0.707.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q7",
+   "en": "Tooley Ch.10 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đường kính vỏ điển hình của sợi đơn mode là:",
+   "en": "The typical cladding diameter for a monomode fibre is:"
+  },
+  "opts": [
+   {
+    "vi": "125 µm",
+    "en": "125 µm"
+   },
+   {
+    "vi": "5 µm",
+    "en": "5 µm"
+   },
+   {
+    "vi": "50 µm",
+    "en": "50 µm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vỏ 125 µm (hình 10.5).",
+   "en": "The cladding is 125 µm (Figure 10.5)."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Vỏ phản xạ của sợi đơn mode điển hình dày 125 µm (hình 10.5). 5 µm là đường kính lõi đơn mode còn 50 µm là lõi đa mode.</p><p>Chuẩn tải 125 µm cho phép dùng chung đầu nối cho nhiều loại sợi.</p>",
+   "en": "<p>The cladding of a typical single-mode fibre is 125 µm (Figure 10.5). 5 µm is the single-mode core diameter and 50 µm the multimode core.</p><p>The common 125 µm size lets connectors be shared across fibre types.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q8",
+   "en": "Tooley Ch.10 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu khẩu độ số của sợi có giá trị 1, điều này cho biết:",
+   "en": "If the numerical aperture of a fibre has a value of 1, this indicates that:"
+  },
+  "opts": [
+   {
+    "vi": "toàn bộ ánh sáng từ nguồn được sợi thu",
+    "en": "all of the light from the source is captured by the fibre"
+   },
+   {
+    "vi": "không có ánh sáng nào từ nguồn được sợi thu",
+    "en": "none of the light from the source is captured by the fibre"
+   },
+   {
+    "vi": "50% ánh sáng từ nguồn được sợi thu",
+    "en": "50 per cent of the light from the source is captured by the fibre"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "NA = 1 ứng với θa = 90°: thu mọi tia từ nguồn (lý tưởng).",
+   "en": "NA = 1 means θa = 90°: every ray from the source is captured (ideal)."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>NA = 1 ứng với θa = 90° nên mọi tia tới từ nguồn đều nằm trong nón chấp nhận và được thu (lý tưởng). NA = 0 mới là không thu được gì; 50% không tương ứng giá trị NA cụ thể.</p><p>Trên thực tế NA của sợi chỉ cỡ 0,2 đến 0,3.</p>",
+   "en": "<p>NA = 1 corresponds to θa = 90° so every ray from the source lies in the acceptance cone and is captured (ideal). Only NA = 0 would capture nothing; 50% does not correspond to a specific NA value.</p><p>In practice a fibre's NA is only about 0.2 to 0.3.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q9",
+   "en": "Tooley Ch.10 Q9"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi thay một đoạn cáp quang nhiều đường, bắt buộc phải bảo đảm rằng:",
+   "en": "When replacing a length of multi-way fibre-optic cable, it is essential to ensure that:"
+  },
+  "opts": [
+   {
+    "vi": "không dải đỏ nào bị che khi siết vòng ren",
+    "en": "none of the red band is covered when the coupling nut is tightened"
+   },
+   {
+    "vi": "toàn bộ dải đỏ bị che khi siết vòng ren",
+    "en": "all of the red band is covered when the coupling nut is tightened"
+   },
+   {
+    "vi": "các đầu nối được căn chỉnh đúng trước khi ghép phích và đế",
+    "en": "the connectors are correctly aligned prior to mating the plug and the receptacle"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Phải căn chỉnh trước khi ghép. Kết nối đúng khi dải đỏ bị che ít nhất 50% (không phải 0% hay 100%).",
+   "en": "Align before mating. A correct connection has the red band at least 50% covered (not 0% or 100%)."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Khi thay cáp nhiều lõi phải căn chỉnh đúng các đầu nối trước khi ghép phích và đế. Kết nối đúng là khi dải đỏ trên đế bị vòng ren che ít nhất 50%, nên \"không che dải đỏ\" hay \"che hoàn toàn\" đều không phải điều kiện bắt buộc.</p><p>Quy tắc: phích có dải vàng, đế có dải đỏ.</p>",
+   "en": "<p>When replacing multi-way cable the connectors must be correctly aligned before mating the plug and receptacle. A correct connection has the receptacle's red band at least 50% covered by the coupling nut, so \"none covered\" or \"all covered\" are not the required conditions.</p><p>Rule: the plug has a yellow band, the receptacle a red band.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q10",
+   "en": "Tooley Ch.10 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để hỗ trợ tốc độ dữ liệu cao, cáp quang cần có:",
+   "en": "In order to support a high data rate, a fibre-optic cable should have:"
+  },
+  "opts": [
+   {
+    "vi": "băng thông rộng",
+    "en": "wide bandwidth"
+   },
+   {
+    "vi": "băng thông bằng không",
+    "en": "zero bandwidth"
+   },
+   {
+    "vi": "băng thông hạn chế",
+    "en": "limited bandwidth"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tốc độ dữ liệu tối đa đi cùng băng thông (Tooley 10.3).",
+   "en": "Maximum data rate goes with bandwidth (Tooley 10.3)."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tốc độ dữ liệu tối đa đi cùng băng thông: băng thông càng rộng thì truyền được xung càng hẹp và nhiều bit hơn mỗi giây. Băng thông bằng không hay hạn chế sẽ giới hạn tốc độ.</p><p>Tooley 10.3 liên hệ băng thông với tán sắc.</p>",
+   "en": "<p>Maximum data rate goes with bandwidth: the wider the bandwidth, the narrower the pulses that can be sent and the more bits per second. Zero or limited bandwidth would restrict the rate.</p><p>Tooley 10.3 links bandwidth with dispersion.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q11",
+   "en": "Tooley Ch.10 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một ưu điểm đáng kể của mạng sợi quang trên máy bay chở khách lớn là:",
+   "en": "A significant advantage of fibre-optic networks in large passenger aircraft is:"
+  },
+  "opts": [
+   {
+    "vi": "chi phí lắp đặt thấp hơn",
+    "en": "lower installation costs"
+   },
+   {
+    "vi": "giảm khối lượng",
+    "en": "reduced weight"
+   },
+   {
+    "vi": "dễ bảo trì",
+    "en": "ease of maintenance"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Giảm khối lượng, tiết kiệm đến khoảng 1 300 kg.",
+   "en": "Reduced weight, saving up to about 1,300 kg."
+  },
+  "topic": {
+   "vi": "Vì sao dùng sợi quang",
+   "en": "Why aircraft use fibre"
+  },
+  "topic_id": "why",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Lợi thế đáng kể của sợi quang trên máy bay lớn là giảm khối lượng: cáp đồng nặng gấp khoảng 5 lần, tiết kiệm có thể tới 1 300 kg. Chi phí lắp đặt không thấp hơn (cần độ chính xác cao) và bảo trì khó hơn ở đầu nối.</p><p>Nhược điểm của sợi: độ chính xác, độ bền cơ học, bán kính uốn.</p>",
+   "en": "<p>A significant advantage of fibre on large aircraft is reduced weight: copper is about 5 times heavier, saving up to 1,300 kg. Installation cost is not lower (high precision needed) and maintenance is harder at connectors.</p><p>Drawbacks of fibre: precision, mechanical strength, bend radius.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q12",
+   "en": "Tooley Ch.10 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một chùm sáng tới biên giữa hai môi trường có chiết suất khác nhau đúng bằng góc tới hạn. Tia ló ra sẽ đi:",
+   "en": "A beam of light is incident at the critical angle at a boundary between two media of different refractive index. The emerging ray will travel:"
+  },
+  "opts": [
+   {
+    "vi": "ra xa biên",
+    "en": "away from the boundary"
+   },
+   {
+    "vi": "dọc theo biên",
+    "en": "along the boundary"
+   },
+   {
+    "vi": "quay ngược về nguồn sáng",
+    "en": "back towards the light source"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tại θc, θr = 90°: tia khúc xạ chạy dọc biên.",
+   "en": "At θc, θr = 90°: the refracted ray runs along the boundary."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tại góc tới hạn, góc khúc xạ bằng 90° nên tia ló chạy dọc theo biên giữa hai môi trường. Nếu nhỏ hơn góc tới hạn, tia khúc xạ rời biên sang môi trường 2; lớn hơn thì phản xạ toàn phần quay lại nguồn.</p><p>Ba vùng: dưới θc (khúc xạ), tại θc (dọc biên), trên θc (TIR).</p>",
+   "en": "<p>At the critical angle the refraction angle is 90° so the emerging ray runs along the boundary. Below the critical angle the refracted ray leaves the boundary into medium 2; above it there is total reflection back toward the source.</p><p>Three regions: below θc (refraction), at θc (along the boundary), above θc (TIR).</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q13",
+   "en": "Tooley Ch.10 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Băng thông của sợi quang bị giới hạn bởi:",
+   "en": "The bandwidth of an optical fibre is limited by:"
+  },
+  "opts": [
+   {
+    "vi": "suy hao và nhiễu xuyên âm trong cáp",
+    "en": "attenuation and cross-talk in the cable"
+   },
+   {
+    "vi": "số lượng và mức độ của các chỗ uốn trong cáp",
+    "en": "the number and severity of bends in the cable"
+   },
+   {
+    "vi": "tán sắc mode xảy ra trong cáp",
+    "en": "modal dispersion occurring in the cable"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tán sắc làm giãn xung nên quyết định tốc độ bit tối đa (Tooley 10.3).",
+   "en": "Dispersion stretches pulses and sets the maximum bit rate (Tooley 10.3)."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Băng thông của sợi đa mode bị giới hạn bởi tán sắc mode: các mode đi đường dài khác nhau nên đến muộn khác nhau và xung bị giãn, nên phải kéo dài thời gian mỗi bit. Suy hao quyết định khoảng cách chứ không phải băng thông, còn uốn cong gây tổn hao công suất.</p><p>Tán sắc giới hạn tốc độ bit; suy hao giới hạn chiều dài.</p>",
+   "en": "<p>The bandwidth of a multimode fibre is limited by modal dispersion: modes travel different path lengths and arrive at different times, so pulses broaden and each bit must be longer. Attenuation sets distance rather than bandwidth, and bending causes power loss.</p><p>Dispersion limits bit rate; attenuation limits length.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q14",
+   "en": "Tooley Ch.10 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ánh sáng lan truyền trong sợi quang nhờ:",
+   "en": "Light propagates in a fibre optic by means of:"
+  },
+  "opts": [
+   {
+    "vi": "khúc xạ liên tục",
+    "en": "continuous refraction"
+   },
+   {
+    "vi": "tán sắc mode",
+    "en": "modal dispersion"
+   },
+   {
+    "vi": "phản xạ toàn phần",
+    "en": "total internal reflection"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chuỗi phản xạ toàn phần ở biên lõi-vỏ.",
+   "en": "A chain of total internal reflections at the core-cladding boundary."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ánh sáng lan truyền trong sợi nhờ chuỗi phản xạ toàn phần ở biên lõi và vỏ. Tán sắc mode là hiện tượng làm giãn xung, không phải cơ chế dẫn sáng; \"khúc xạ liên tục\" là cách dẫn của sợi chiết suất biến thiên, không phải câu trả lời chung.</p><p>TIR cần n₁ > n₂ và góc tới lớn hơn góc tới hạn.</p>",
+   "en": "<p>Light propagates in a fibre by a chain of total internal reflections at the core-cladding boundary. Modal dispersion stretches pulses and is not a guiding mechanism; \"continuous refraction\" is how graded-index fibre guides, not the general answer.</p><p>TIR needs n₁ > n₂ and an incidence angle above the critical angle.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q15",
+   "en": "Tooley Ch.10 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Suy hao của sợi quang điển hình là:",
+   "en": "The attenuation of an optical fibre is typically:"
+  },
+  "opts": [
+   {
+    "vi": "dưới 2 dB mỗi km",
+    "en": "less than 2 dB per km"
+   },
+   {
+    "vi": "từ 2 dB đến 20 dB mỗi km",
+    "en": "between 2 dB and 20 dB per km"
+   },
+   {
+    "vi": "trên 20 dB mỗi km",
+    "en": "more than 20 dB per km"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 10.2.2: sợi chất lượng tốt dưới 2 dB/km ở 1,3 µm (bài giảng cho 0,2 đến 0,5 dB/km ở 1550 nm).",
+   "en": "Tooley 10.2.2: good-quality fibre is below 2 dB/km at 1.3 µm (the lecture gives 0.2 to 0.5 dB/km at 1550 nm)."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tooley 10.2.2: sợi chất lượng tốt có suy hao dưới 2 dB/km ở 1,3 µm, nên 50 m sợi mất khoảng 0,1 dB. Bài giảng cho giá trị còn nhỏ hơn: 0,2 đến 0,5 dB/km ở 1550 nm. Hai phương án còn lại là quá lớn cho sợi quang tốt.</p><p>Cảnh giác: đơn vị là dB trên km.</p>",
+   "en": "<p>Tooley 10.2.2: a good-quality fibre has less than 2 dB/km at 1.3 µm, so 50 m of fibre loses about 0.1 dB. The lecture gives even smaller values: 0.2 to 0.5 dB/km at 1550 nm. The other two options are far too large for good fibre.</p><p>Watch out: the unit is dB per km.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q16",
+   "en": "Tooley Ch.10 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ưu điểm chính của sợi đơn mode là:",
+   "en": "The main advantage of monomode fibres is:"
+  },
+  "opts": [
+   {
+    "vi": "chi phí thấp hơn",
+    "en": "lower cost"
+   },
+   {
+    "vi": "tốc độ dữ liệu nhanh hơn",
+    "en": "faster data rates"
+   },
+   {
+    "vi": "cáp dữ liệu nhỏ hơn",
+    "en": "smaller data cables"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Không có tán sắc mode nên băng thông cao nhất; đổi lại đắt và khó nối.",
+   "en": "No modal dispersion, so the highest bandwidth; in exchange for cost and harder splicing."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Sợi đơn mode không có tán sắc mode nên cho băng thông và tốc độ dữ liệu cao nhất, đổi lại đắt hơn và khó cắt, nối, căn chỉnh. Vì thế \"rẻ hơn\" là sai, và cáp không nhỏ hơn về tổng thể (đường kính vỏ vẫn 125 µm).</p><p>Tooley: đa mode chậm hơn vẫn phổ biến ở máy bay vì dễ lắp.</p>",
+   "en": "<p>Single-mode fibre has no modal dispersion so it gives the highest bandwidth and data rate, in exchange for higher cost and harder cutting, splicing and alignment. So \"cheaper\" is wrong, and the cable is not smaller overall (the cladding is still 125 µm).</p><p>Tooley: slower multimode is still common on aircraft because it is easy to fit.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q17",
+   "en": "Tooley Ch.10 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xung ánh sáng hồng ngoại truyền trong sợi đa mode bị giãn ra. Nguyên nhân là:",
+   "en": "A pulse of infrared light travelling down a multimode fibre optic becomes stretched. This is due to:"
+  },
+  "opts": [
+   {
+    "vi": "tán sắc",
+    "en": "dispersion"
+   },
+   {
+    "vi": "phản xạ",
+    "en": "reflection"
+   },
+   {
+    "vi": "khúc xạ",
+    "en": "refraction"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các mode đi đường dài khác nhau nên đến muộn khác nhau.",
+   "en": "Modes travel different path lengths and so arrive at different times."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Xung hồng ngoại bị giãn trong sợi đa mode là do tán sắc: các mode đi những quãng đường khác nhau nên đến không cùng lúc. Phản xạ và khúc xạ là cơ chế dẫn sáng, không làm giãn xung.</p><p>Hậu quả: giới hạn tốc độ bit.</p>",
+   "en": "<p>An infrared pulse stretched in a multimode fibre is due to dispersion: the modes travel different path lengths so they do not arrive together. Reflection and refraction are the guiding mechanisms and do not stretch pulses.</p><p>Consequence: a limit on the bit rate.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q18",
+   "en": "Tooley Ch.10 Q18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Suy hao trong sợi quang là do:",
+   "en": "Attenuation in an optical fibre is due to:"
+  },
+  "opts": [
+   {
+    "vi": "hấp thụ, tán xạ và bức xạ",
+    "en": "absorption, scattering and radiation"
+   },
+   {
+    "vi": "hấp thụ, tán sắc và bức xạ",
+    "en": "absorption, dispersion and radiation"
+   },
+   {
+    "vi": "hấp thụ, nhiễu xuyên âm và nhiễu",
+    "en": "absorption, cross-talk and noise"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hấp thụ, tán xạ (trong lõi và ở biên) và bức xạ tại chỗ uốn (Tooley 10.2.2). Tán sắc là hiện tượng khác.",
+   "en": "Absorption, scattering (in the core and at the boundary) and radiation at bends (Tooley 10.2.2). Dispersion is a different effect."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Suy hao do hấp thụ, tán xạ (trong lõi và ở biên lõi và vỏ) và bức xạ tại chỗ uốn của sợi (Tooley 10.2.2). Tán sắc là hiện tượng khác (làm giãn xung); nhiễu xuyên âm và nhiễu thuộc hệ thống điện chứ không phải tổn hao công suất trong sợi.</p><p>Hệ số suy hao chỉ tính tổn hao của chính sợi, chưa gồm ghép nối và uốn.</p>",
+   "en": "<p>Attenuation is due to absorption, scattering (in the core and at the core-cladding boundary) and radiation at bends in the fibre (Tooley 10.2.2). Dispersion is a different effect (pulse stretching); crosstalk and noise belong to electrical systems, not to power loss in the fibre.</p><p>The attenuation coefficient counts only the fibre's own loss, not coupling or bending.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q19",
+   "en": "Tooley Ch.10 Q19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sóng ánh sáng trong cáp quang nằm trong phổ:",
+   "en": "Light waves in fibre-optic cables are:"
+  },
+  "opts": [
+   {
+    "vi": "tử ngoại",
+    "en": "in the ultraviolet spectrum"
+   },
+   {
+    "vi": "hồng ngoại",
+    "en": "in the infrared spectrum"
+   },
+   {
+    "vi": "nhìn thấy",
+    "en": "in the visible spectrum"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "850, 1310, 1550 nm đều là hồng ngoại gần, nên không nhìn thấy được.",
+   "en": "850, 1310, 1550 nm are all near-infrared, so not visible."
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>850, 1310 và 1550 nm đều là hồng ngoại gần nên ánh sáng trong cáp quang không nhìn thấy được. Chính vì vô hình mà phải ngắt cáp ở cả hai đầu trước khi nhìn mặt đầu nối: mắt không phản xạ chớp để tự bảo vệ.</p><p>Phổ nhìn thấy chỉ khoảng 400 đến 700 nm.</p>",
+   "en": "<p>850, 1310 and 1550 nm are all near-infrared so the light in fibre cables is not visible. Because it is invisible, the cable must be disconnected at both ends before looking at a connector face: the eye's blink reflex does not protect it.</p><p>The visible spectrum is only about 400 to 700 nm.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.10 Q20",
+   "en": "Tooley Ch.10 Q20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Những phương tiện truyền dữ liệu nào được Floyd liệt kê?",
+   "en": "Which data transmission media does Floyd list?"
+  },
+  "opts": [
+   {
+    "vi": "Chỉ cáp sợi quang, sóng vô tuyến và liên kết vệ tinh",
+    "en": "Only optical fiber cable, radio waves and satellite links"
+   },
+   {
+    "vi": "Dây dẫn, cáp đồng trục, cáp xoắn đôi, cáp sợi quang và không dây",
+    "en": "Wire, coaxial cable, twisted pair cable, optical fiber cable, and wireless"
+   },
+   {
+    "vi": "Chỉ dây dẫn, cáp đồng trục và cáp xoắn đôi bọc kim loại",
+    "en": "Only wire, coaxial cable and shielded twisted pair cable"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Section 13-1 Checkup, câu 1.",
+   "en": "Section 13-1 Checkup, question 1."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd 13-1: phương tiện truyền dữ liệu gồm dây dẫn, cáp đồng trục, cáp xoắn đôi, cáp sợi quang và không dây. Hai phương án còn lại liệt kê thiếu.</p><p>Sợi quang là một trong năm loại, tập trung ở các mục sau.</p>",
+   "en": "<p>Floyd 13-1: data transmission media include wire, coaxial cable, twisted-pair cable, optical fibre cable and wireless. The other two options list too few.</p><p>Optical fibre is one of five, covered in the later sections.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Section 13-1 Checkup #1 (tr.745; đáp án tr.797)",
+   "en": "Floyd Ch.13 · Section 13-1 Checkup #1 (p.745; answer p.797)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Floyd, kích thước 8,3/125 µm là loại sợi nào?",
+   "en": "According to Floyd, what kind of fibre is 8.3/125 µm?"
+  },
+  "opts": [
+   {
+    "vi": "Đa mode, lõi 125 µm và vỏ 8,3 µm",
+    "en": "Multimode, 125 µm core and 8.3 µm cladding"
+   },
+   {
+    "vi": "Đa mode, lõi 8,3 µm và vỏ 125 µm",
+    "en": "Multimode, 8.3 µm core and 125 µm cladding"
+   },
+   {
+    "vi": "Đơn mode, lõi 8,3 µm và vỏ 125 µm",
+    "en": "Single-mode, 8.3 µm core and 125 µm cladding"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Floyd: 50/125 và 62,5/125 là đa mode; 8,3/125 là đơn mode (số đầu là lõi, số sau là vỏ).",
+   "en": "Floyd: 50/125 and 62.5/125 are multimode; 8.3/125 is single-mode (first number core, second cladding)."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd: 50/125 và 62,5/125 là đa mode, 8,3/125 là đơn mode; số đầu là đường kính lõi, số sau là vỏ, tính bằng µm. Đơn mode cho băng thông và khoảng cách lớn hơn nhưng đắt hơn.</p><p>So với Tooley hình 10.5 (5/125) cỡ lõi đơn mode khác một chút vì tuỳ sợi.</p>",
+   "en": "<p>Floyd: 50/125 and 62.5/125 are multimode, 8.3/125 is single-mode; the first number is the core diameter, the second the cladding, in µm. Single-mode gives more bandwidth and distance but costs more.</p><p>Compared with Tooley Figure 10.5 (5/125) the single-mode core size differs slightly because it depends on the fibre.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1 (tr.743)",
+   "en": "Floyd Ch.13 · section 13-1 (p.743)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhược điểm chính của truyền dữ liệu bằng sợi quang theo Floyd là gì?",
+   "en": "What is the main disadvantage of fibre-optic data transmission according to Floyd?"
+  },
+  "opts": [
+   {
+    "vi": "Tốc độ dữ liệu thấp hơn cáp đồng trục thông thường",
+    "en": "Lower data rate than ordinary coaxial cable"
+   },
+   {
+    "vi": "Nhạy với nhiễu điện từ ở môi trường máy bay",
+    "en": "Susceptibility to EMI in the aircraft environment"
+   },
+   {
+    "vi": "Chi phí cao hơn đồng trục, UTP và STP",
+    "en": "Cost, higher than coax, UTP and STP"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Floyd tr.742: sợi quang không nhạy EMI và nhanh hơn; nhược điểm chính là giá.",
+   "en": "Floyd p.742: fibre is not susceptible to EMI and is faster; the main disadvantage is cost."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd tr.742: sợi quang nhanh hơn, dung lượng tín hiệu cao hơn, truyền xa tốt hơn và không nhạy EMI; nhược điểm chính là giá cao hơn đồng trục, UTP và STP. Hai phương án còn lại ngược sự thật (sợi không nhạy EMI, tốc độ cao hơn).</p><p>Cùng ý Tooley 10.1: khó khăn nằm ở độ chính xác lắp đặt.</p>",
+   "en": "<p>Floyd p.742: fibre is faster, has higher signal capacity, transmits farther and is immune to EMI; the main disadvantage is a cost higher than coax, UTP and STP. The other two options reverse the facts (fibre is immune to EMI and faster).</p><p>Same as Tooley 10.1: the difficulty lies in installation precision.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1 (tr.742)",
+   "en": "Floyd Ch.13 · section 13-1 (p.742)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đầu nối nào của Floyd là loại song công, chứa hai sợi cho truyền hai chiều?",
+   "en": "Which Floyd connector is duplex, holding two fibres for two-way communication?"
+  },
+  "opts": [
+   {
+    "vi": "MT",
+    "en": "MT"
+   },
+   {
+    "vi": "FDDI",
+    "en": "FDDI"
+   },
+   {
+    "vi": "ST",
+    "en": "ST"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd: ST phổ biến cho đa mode, MT là đầu nối 12 sợi cho cáp dải, FDDI là song công.",
+   "en": "Floyd: ST is common for multimode, MT is a 12-fibre ribbon connector, FDDI is duplex."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd liệt kê ST, SC, FC, LC, LX-5, MT và FDDI; FDDI là loại song công, chứa hai sợi cho truyền hai chiều. ST phổ biến cho mạng đa mode và MT là 12 sợi cho cáp dải.</p><p>Duplex = hai chiều đồng thời qua hai sợi.</p>",
+   "en": "<p>Floyd lists ST, SC, FC, LC, LX-5, MT and FDDI; the FDDI is duplex, holding two fibres for two-way communication. ST is common for multimode networks and MT is 12-fibre for ribbon cable.</p><p>Duplex = simultaneous two-way over two fibres.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · mục 13-1 (tr.743)",
+   "en": "Floyd Ch.13 · section 13-1 (p.743)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mô tả đúng về chế độ đơn mode trong sợi quang theo đáp án Floyd:",
+   "en": "Which description of single mode in an optical fibre matches Floyd's answer?"
+  },
+  "opts": [
+   {
+    "vi": "Ánh sáng đi thẳng như một tia, lõi nhỏ hơn đa mode, băng thông và khoảng cách lớn hơn nhưng đắt hơn",
+    "en": "Light travels as a single ray, the core is smaller than multimode, more bandwidth and distance but costlier"
+   },
+   {
+    "vi": "Ánh sáng không phản xạ mà đi thẳng trong lớp vỏ, nên không cần lõi chiết suất cao",
+    "en": "Light does not reflect but travels straight through the cladding, so no high-index core is needed"
+   },
+   {
+    "vi": "Ánh sáng đi theo nhiều tia qua lõi lớn, băng thông thấp hơn và rẻ hơn đa mode",
+    "en": "Light travels in many rays through a large core, with lower bandwidth and a lower price than multimode"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đáp án in Floyd A-27, câu 5.",
+   "en": "Floyd's printed answer A-27, problem 5."
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đáp án in Floyd A-27: ở chế độ đơn mode ánh sáng đi như một tia thẳng, lõi nhỏ hơn đa mode, cho băng thông và khoảng cách truyền lớn hơn nhưng đắt hơn. Hai phương án còn lại mô tả đa mode hoặc sai về cơ chế (ánh sáng luôn bị giữ trong lõi).</p><p>So sánh: đa mode có nhiều tia và tán sắc thời gian.</p>",
+   "en": "<p>Floyd's printed answer A-27: in single mode the light travels as a single straight ray, the core is smaller than multimode, giving more bandwidth and distance but a higher cost. The other options describe multimode or are wrong about the mechanism (light is always kept in the core).</p><p>Compare: multimode has many rays and time dispersion.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Bài 5 (tr.793; đáp án tr.797)",
+   "en": "Floyd Ch.13 · Problem 5 (p.793; answer p.797)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Cáp xoắn đôi không bọc (UTP) được dùng trong các ứng dụng điện thoại trong nhà.",
+   "en": "Unshielded twisted pair cables are used for indoor telephone applications."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>UTP được dùng rộng rãi cho điện thoại trong nhà, mạng máy tính và USB; nó mã màu theo bộ 25 cặp chuẩn và dùng đầu nối RJ-45. UTP hợp với môi trường ít nhiễu và tần số thấp hơn đồng trục (khoảng tới 1 MHz); cần chống EMI hơn thì dùng STP.</p><p>So với sợi quang: sợi không nhạy EMI.</p>",
+   "en": "<p>UTP is widely used for indoor telephone, computer networks and USB; it is colour-coded to a standard 25-pair code and uses RJ-45 connectors. UTP suits low-noise environments and lower frequencies than coax (up to about 1 MHz); for more EMI protection use STP.</p><p>Compared with fibre: fibre is immune to EMI.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #3",
+   "en": "Floyd Ch.13 · True/False #3"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Nhiễu xuyên âm (crosstalk) tăng lên khi các cặp xoắn được bó cùng nhau.",
+   "en": "Crosstalk increases when twisted pairs are bundled together."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: crosstalk được giảm thiểu khi các cặp xoắn được bó cùng nhau.",
+   "en": "False: crosstalk is minimised when twisted pairs are bundled together."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai dây trong mỗi cặp xoắn sao cho cắt nhau gần 90°, nên các trường điện từ do tín hiệu sinh ra triệt tiêu. Câu trắc nghiệm Self-Test 1: crosstalk được giảm thiểu bằng cáp xoắn đôi (đáp án (b)). Bài 3 chương 13 của Floyd (đã có ở tự luận Module 09) hỏi đúng điều này.</p>",
+   "en": "<p>The two wires in each pair are twisted so they cross at nearly 90° and the electromagnetic fields generated by the signals cancel. Self-Test 1: crosstalk is minimised by twisted-pair cables (answer (b)). Floyd chapter 13 Problem 3 (in the Module 09 free-response section) asks exactly this.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #4",
+   "en": "Floyd Ch.13 · True/False #4"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Cáp sợi quang truyền xung ánh sáng qua các sợi.",
+   "en": "Optical fiber cables transmit light pulses through the fibers."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Thay vì xung điện qua dây đồng, sợi quang dùng xung ánh sáng. Ưu điểm: tốc độ cao hơn, dung lượng tín hiệu cao hơn, truyền xa hơn, không nhạy EMI; nhược điểm chính là giá. Tốc độ thường 10 đến 40 GHz, có nơi trên 100 GHz (Floyd tr.742).</p>",
+   "en": "<p>Instead of electrical pulses over copper, fibre uses light pulses. Advantages: faster data rates, higher signal capacity, longer distance, immunity to EMI; the main drawback is cost. Common data rates are 10 to 40 GHz, some above 100 GHz (Floyd p.742).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #5",
+   "en": "Floyd Ch.13 · True/False #5"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Sợi quang không thích hợp cho mạng.",
+   "en": "Optical fibers are not suitable for networking."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: sợi quang thường dùng cho viễn thông và mạng.",
+   "en": "False: optical fibre is commonly used for telecommunication and networking."
+  },
+  "topic": {
+   "vi": "Khái niệm chung",
+   "en": "General concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Vì ánh sáng truyền qua sợi với suy hao nhỏ so với cáp điện nên sợi hữu ích cho truyền xa. Boeing 777 là máy bay thương mại đầu tiên có mạng cục bộ bằng sợi quang (AVLAN, CABLAN; Tooley 10.4).</p>",
+   "en": "<p>Because light propagates through the fibre with little attenuation compared with electrical cables, fibre is useful for long-distance transmission. The Boeing 777 was the first commercial aircraft with an optical-fibre LAN (AVLAN, CABLAN; Tooley 10.4).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #6",
+   "en": "Floyd Ch.13 · True/False #6"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Truyền thông ở vùng hồng ngoại có thể là tầm nhìn thẳng hoặc khuếch tán.",
+   "en": "Communication in the infrared region can be line-of-sight or diffused."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "Vì sao dùng sợi quang",
+   "en": "Why aircraft use fibre"
+  },
+  "topic_id": "why",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hồng ngoại tầm nhìn thẳng (LOS) cần máy phát và máy thu thấy nhau, không vật cản; hồng ngoại khuếch tán phản xạ qua bề mặt gần đó như tường. Ánh sáng trong sợi quang cũng là hồng ngoại gần nhưng được dẫn trong sợi nên không cần LOS.</p>",
+   "en": "<p>Line-of-sight (LOS) infrared needs transmitter and receiver to see each other with no obstacles; diffused infrared reflects off nearby surfaces such as walls. Light in optical fibre is also near-infrared but is guided in the fibre so no LOS is needed.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #7",
+   "en": "Floyd Ch.13 · True/False #7"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Các loại sóng rf và vi ba lan truyền qua khí quyển Trái Đất là sóng đất, sóng tầng điện ly và tầm nhìn thẳng.",
+   "en": "Types of rf and microwave signals propagating through Earth's atmosphere are ground wave, ionospheric and line-of-sight."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "Khái niệm chung",
+   "en": "General concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Sóng đất đi theo độ cong Trái Đất (đến khoảng 2 MHz, như dải AM). Sóng tầng điện ly (khoảng 30 đến 85 MHz) bật lên tầng điện ly, như vô tuyến nghiệp dư. Tầm nhìn thẳng cần thấy nhau, cự ly khoảng 100 km nếu đặt mặt đất. Self-Test 6: tín hiệu radio nghiệp dư dội lại từ tầng điện ly (ionosphere).</p>",
+   "en": "<p>Ground waves follow Earth's curvature (up to about 2 MHz, like the AM band). Ionospheric waves (about 30 to 85 MHz) bounce off the ionosphere, as ham radio does. Line-of-sight needs mutual visibility, limited to about 100 km between ground stations. Self-Test 6: ham radio signals bounce off the ionosphere.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #8",
+   "en": "Floyd Ch.13 · True/False #8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ưu điểm của hệ thống sợi quang so với môi trường truyền điện là:",
+   "en": "Advantages fibre-optic systems have over electrical transmission media are:"
+  },
+  "opts": [
+   {
+    "vi": "tốc độ cao hơn, EMI cao hơn và ít méo hơn",
+    "en": "a higher data rate, higher EMI and less distortion"
+   },
+   {
+    "vi": "tốc độ dữ liệu cao hơn, ít nhạy nhiễu hơn và khoảng cách truyền xa hơn",
+    "en": "a higher data rate, less susceptibility to noise and a longer transmission distance"
+   },
+   {
+    "vi": "chi phí thấp hơn, tốc độ cao hơn và đơn giản hơn",
+    "en": "lower cost, higher data rate and simplicity"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd Self-Test 3: đáp án (a).",
+   "en": "Floyd Self-Test 3: answer (a)."
+  },
+  "topic": {
+   "vi": "Vì sao dùng sợi quang",
+   "en": "Why aircraft use fibre"
+  },
+  "topic_id": "why",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Phương án hai sai vì sợi đắt hơn và không đơn giản bằng; phương án ba sai vì sợi không nhạy EMI chứ không \"EMI cao hơn\". Nhắc lại Tooley 10.1: nhẹ, băng thông rộng, ít nhiễu và xuyên âm, suy hao thấp, tin cậy, cách điện.</p><p>Lưu ý chữ \"advantages\".</p>",
+   "en": "<p>The second option is wrong because fibre costs more and is less simple; the third is wrong because fibre is immune to EMI, not \"higher EMI\". Recall Tooley 10.1: light, wide bandwidth, low noise and crosstalk, low attenuation, reliable, electrically isolating.</p><p>Note the word \"advantages\".</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #3",
+   "en": "Floyd Ch.13 · Self-Test #3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai chế độ lan truyền ánh sáng trong sợi quang là:",
+   "en": "The modes of light propagation in optical fibers are:"
+  },
+  "opts": [
+   {
+    "vi": "đa mode và đơn mode",
+    "en": "multimode and single-mode"
+   },
+   {
+    "vi": "đồng bộ và không đồng bộ",
+    "en": "synchronous and asynchronous"
+   },
+   {
+    "vi": "simplex và duplex",
+    "en": "simplex and duplex"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd Self-Test 4: đáp án (b).",
+   "en": "Floyd Self-Test 4: answer (b)."
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Simplex và duplex là chế độ truyền dữ liệu theo hướng; đồng bộ và không đồng bộ là cách đồng bộ nhịp. Đa mode có nhiều tia (tán sắc thời gian), đơn mode lõi nhỏ hơn nhiều nên ánh sáng chạy gần như thẳng.</p><p>Tên gọi dễ nhầm giữa \"mode truyền ánh sáng\" và \"mode truyền dữ liệu\".</p>",
+   "en": "<p>Simplex and duplex are data transmission modes by direction; synchronous and asynchronous are ways of timing. Multimode has many rays (time dispersion); single-mode has a much smaller core so light travels nearly straight.</p><p>The names are easy to confuse: \"light propagation modes\" versus \"data transmission modes\".</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #4",
+   "en": "Floyd Ch.13 · Self-Test #4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phổ điện từ KHÔNG bao gồm:",
+   "en": "The electromagnetic spectrum does NOT include:"
+  },
+  "opts": [
+   {
+    "vi": "vi ba (microwaves)",
+    "en": "microwaves"
+   },
+   {
+    "vi": "tia cực tím (UV)",
+    "en": "UV rays"
+   },
+   {
+    "vi": "sóng âm (sonic waves)",
+    "en": "sonic waves"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Floyd Self-Test 5: đáp án (d) sonic waves.",
+   "en": "Floyd Self-Test 5: answer (d) sonic waves."
+  },
+  "topic": {
+   "vi": "Khái niệm chung",
+   "en": "General concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Sóng âm là sóng cơ học (cần môi trường), không phải sóng điện từ; Floyd còn nhắc sonar tạo sóng âm tần thấp không nằm trong phổ điện từ. UV, radio và vi ba đều là sóng điện từ. Ánh sáng sợi quang là hồng ngoại nằm giữa vi ba và ánh sáng nhìn thấy.</p><p>Câu loại trừ: chú ý NOT.</p>",
+   "en": "<p>Sound waves are mechanical waves (they need a medium), not electromagnetic; Floyd also notes that sonar makes low-frequency sound waves outside the electromagnetic spectrum. UV, radio and microwaves are all electromagnetic. Fibre light is infrared, between microwaves and visible light.</p><p>Elimination question: note the NOT.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #5",
+   "en": "Floyd Ch.13 · Self-Test #5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tia hồng ngoại (IR) được dùng trong thiết bị nào?",
+   "en": "Which device uses IR rays?"
+  },
+  "opts": [
+   {
+    "vi": "Máy X-quang",
+    "en": "X-ray machines"
+   },
+   {
+    "vi": "Phát thanh AM",
+    "en": "AM broadcasting"
+   },
+   {
+    "vi": "Quan sát ban đêm (night vision)",
+    "en": "Night vision"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Floyd Self-Test 7: đáp án (b) IR-rays.",
+   "en": "Floyd Self-Test 7: answer (b) IR-rays."
+  },
+  "topic": {
+   "vi": "Vì sao dùng sợi quang",
+   "en": "Why aircraft use fibre"
+  },
+  "topic_id": "why",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Thiết bị nhìn đêm dùng hồng ngoại; tia X thuộc dải bước sóng ngắn hơn nhiều; phát thanh AM dùng sóng đất tần thấp. Liên hệ: tín hiệu quang trong sợi và các điều khiển từ xa cũng dùng hồng ngoại.</p>",
+   "en": "<p>Night vision uses infrared; X-rays are a much shorter wavelength band; AM broadcasting uses low-frequency ground waves. Link: the optical signals in fibre and remote controls also use infrared.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #7",
+   "en": "Floyd Ch.13 · Self-Test #7"
+  }
+ }
+]

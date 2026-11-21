@@ -1,0 +1,20 @@
+/* Quy tac tu giao dien cu cho cac lop chi site nay dung (demo, hinh slide, bang .tt). Tao tu legacy_*.css, chi giu cac lop thuc su duoc dung. */
+table.tt{border-collapse:collapse;width:100%;margin:12px 0;font-size:.92rem}
+table.tt th,table.tt td{border:1px solid var(--border);padding:6px 10px;text-align:center}
+table.tt th{background:var(--code)}
+.mdeck-fs{margin-left:auto}
+.slide-fig{margin:12px 0;text-align:center}
+.slide-fig img{max-width:100%;max-height:360px;border:1px solid var(--border);border-radius:8px;background:#fff;padding:4px;cursor:zoom-in}
+.slide-fig figcaption{font-size:.72rem;color:var(--muted);margin-top:4px}
+.demo-box{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:18px 0;background:var(--card)}
+.demo-box h3{margin:0 0 8px}
+.di-row{margin:8px 0}
+.di-row label{display:block;font-size:.85rem;font-weight:700;margin-bottom:4px}
+.di-in{width:100%;font-family:ui-monospace,Menlo,monospace;padding:8px;border:1px solid var(--border);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}
+.di-btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.di-btns button,.dal-sel{padding:7px 12px;border-radius:8px;border:1px solid var(--border);background:var(--code,#f6f7fb);color:inherit;cursor:pointer}
+.di-t .m{font-family:ui-monospace,Menlo,monospace}
+.fb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px;margin:8px 0}
+.fb-grid label{font-size:.8rem;font-weight:700;display:flex;flex-direction:column;gap:3px}
+.fb-grid input[type=number]{padding:6px;border:1px solid var(--border);border-radius:8px;background:var(--code,#f6f7fb);color:inherit}
+.fb-cv{max-width:100%;border:1px solid var(--border);border-radius:10px}

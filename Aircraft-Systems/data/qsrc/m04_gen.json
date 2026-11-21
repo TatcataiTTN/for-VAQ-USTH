@@ -1,0 +1,446 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu CPU chạy ở xung nhịp 100MHz, một chu kỳ xung nhịp (T-state) kéo dài:",
+   "en": "If a CPU runs at 100MHz, one clock period (T-state) lasts:"
+  },
+  "opts": [
+   {
+    "vi": "10 ns",
+    "en": "10 ns"
+   },
+   {
+    "vi": "100 ns",
+    "en": "100 ns"
+   },
+   {
+    "vi": "1 ns",
+    "en": "1 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "T = 1/f = 1/100.000.000 = 10ns.",
+   "en": "T = 1/f = 1/100.000.000 = 10ns."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bus dữ liệu 8-bit biểu diễn được giá trị thập phân từ 0 đến:",
+   "en": "An 8-bit data bus can represent decimal values from 0 to:"
+  },
+  "opts": [
+   {
+    "vi": "128",
+    "en": "128"
+   },
+   {
+    "vi": "255",
+    "en": "255"
+   },
+   {
+    "vi": "256",
+    "en": "256"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2⁸-1 = 255.",
+   "en": "2⁸-1 = 255."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bus địa chỉ 16-bit định vị được bao nhiêu ô nhớ khác nhau?",
+   "en": "A 16-bit address bus can address how many unique memory locations?"
+  },
+  "opts": [
+   {
+    "vi": "16.384",
+    "en": "16.384"
+   },
+   {
+    "vi": "65.536",
+    "en": "65.536"
+   },
+   {
+    "vi": "32.768",
+    "en": "32.768"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2¹⁶ = 65.536.",
+   "en": "2¹⁶ = 65.536."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ROM được mô tả đúng nhất là:",
+   "en": "ROM is best described as:"
+  },
+  "opts": [
+   {
+    "vi": "bộ nhớ đọc/ghi, mất dữ liệu khi mất điện",
+    "en": "read/write memory that loses its data when power is removed"
+   },
+   {
+    "vi": "bộ nhớ chỉ đọc nhưng mất dữ liệu khi mất điện",
+    "en": "read-only memory that loses its data when power is removed"
+   },
+   {
+    "vi": "bộ nhớ chỉ đọc, không mất dữ liệu khi mất điện (non-volatile)",
+    "en": "read-only memory that retains its data when power is removed (non-volatile)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ROM là bộ nhớ non-volatile: dữ liệu vẫn còn khi mất điện.",
+   "en": "ROM is non-volatile memory: its data remains when power is lost."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "RAM (bán dẫn thông thường) sẽ mất dữ liệu đã lưu khi nào?",
+   "en": "RAM loses its stored data when:"
+  },
+  "opts": [
+   {
+    "vi": "mất nguồn điện cấp (volatile)",
+    "en": "lost when the power supply is removed (volatile)"
+   },
+   {
+    "vi": "không bao giờ mất",
+    "en": "never lost"
+   },
+   {
+    "vi": "chỉ sau 24 giờ",
+    "en": "only after 24 hours"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "RAM là bộ nhớ volatile (dễ bay hơi), mất dữ liệu ngay khi ngắt điện.",
+   "en": "RAM is volatile memory and loses its data as soon as power is removed."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ALU trong CPU chịu trách nhiệm chính cho việc:",
+   "en": "The ALU is primarily responsible for:"
+  },
+  "opts": [
+   {
+    "vi": "lưu địa chỉ lệnh kế tiếp",
+    "en": "storing the address of the next instruction"
+   },
+   {
+    "vi": "tạo xung clock hệ thống",
+    "en": "generating the system clock"
+   },
+   {
+    "vi": "thực hiện các phép toán số học và logic",
+    "en": "performing arithmetic and logic operations"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ALU = Arithmetic Logic Unit, thực hiện cộng/trừ/AND/OR...",
+   "en": "ALU = Arithmetic Logic Unit, which performs add/subtract/AND/OR and so on."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thanh ghi bộ đếm chương trình (Program Counter) chứa:",
+   "en": "The Program Counter (PC) register holds:"
+  },
+  "opts": [
+   {
+    "vi": "giá trị con trỏ ngăn xếp hiện tại",
+    "en": "the current stack pointer value"
+   },
+   {
+    "vi": "kết quả phép toán ALU gần nhất",
+    "en": "the result of the most recent ALU operation"
+   },
+   {
+    "vi": "địa chỉ của lệnh kế tiếp sẽ thực thi",
+    "en": "the address of the next instruction to be executed"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "PC luôn trỏ tới địa chỉ lệnh tiếp theo cần nạp.",
+   "en": "The PC always points to the address of the next instruction to be fetched."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong chu trình fetch-decode-execute, bước nào lấy lệnh từ bộ nhớ?",
+   "en": "In the fetch-decode-execute cycle, which step retrieves the instruction from memory?"
+  },
+  "opts": [
+   {
+    "vi": "execute (thực thi)",
+    "en": "execute"
+   },
+   {
+    "vi": "fetch (nạp lệnh)",
+    "en": "fetch"
+   },
+   {
+    "vi": "decode (giải mã)",
+    "en": "decode"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bước fetch đọc mã lệnh từ ô nhớ được PC trỏ tới.",
+   "en": "The fetch step reads the instruction code from the memory location pointed to by the PC."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một vi điều khiển thực thi lệnh cần 4 T-state ở xung nhịp 20MHz, thời gian thực thi là:",
+   "en": "A microcontroller executes an instruction requiring 4 T-states at 20MHz clock; execution time is:"
+  },
+  "opts": [
+   {
+    "vi": "20 ns",
+    "en": "20 ns"
+   },
+   {
+    "vi": "200 ns",
+    "en": "200 ns"
+   },
+   {
+    "vi": "80 ns",
+    "en": "80 ns"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "T=1/20MHz=50ns; 4×50ns=200ns.",
+   "en": "T=1/20MHz=50ns; 4×50ns=200ns."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một IC nhớ 16K×8-bit có tổng dung lượng lưu trữ là:",
+   "en": "A 16K×8-bit memory device has a total storage capacity of:"
+  },
+  "opts": [
+   {
+    "vi": "16 KB",
+    "en": "16 KB"
+   },
+   {
+    "vi": "8 KB",
+    "en": "8 KB"
+   },
+   {
+    "vi": "32 KB",
+    "en": "32 KB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "16K từ × 8 bit/từ = 16K byte = 16KB.",
+   "en": "16K words × 8 bits/word = 16K bytes = 16KB."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bus nào mang tín hiệu định thời và điều khiển xuyên suốt hệ thống máy tính?",
+   "en": "Which bus carries timing and control signals throughout the computer system?"
+  },
+  "opts": [
+   {
+    "vi": "control bus",
+    "en": "control bus"
+   },
+   {
+    "vi": "data bus",
+    "en": "data bus"
+   },
+   {
+    "vi": "address bus",
+    "en": "address bus"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Control bus mang các tín hiệu điều khiển/định thời (R/W, clock, interrupt...).",
+   "en": "The control bus carries control/timing signals (R/W, clock, interrupt, and so on)."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một vi xử lý có bus địa chỉ 32-bit định vị trực tiếp được tối đa:",
+   "en": "A microprocessor with a 32-bit address bus can directly address up to:"
+  },
+  "opts": [
+   {
+    "vi": "4 MB",
+    "en": "4 MB"
+   },
+   {
+    "vi": "4 GB",
+    "en": "4 GB"
+   },
+   {
+    "vi": "4 TB",
+    "en": "4 TB"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "2³² byte = 4.294.967.296 byte = 4GB.",
+   "en": "2³² byte = 4.294.967.296 byte = 4GB."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 04 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 04 (slide number not yet attached)"
+  }
+ }
+]

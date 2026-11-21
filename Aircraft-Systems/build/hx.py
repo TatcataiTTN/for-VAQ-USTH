@@ -1,0 +1,58 @@
+"""Bộ dựng HTML: slide, công thức, callout, ví dụ… (Python -> chuỗi HTML)"""
+import html, json, re
+LANG="vi"  # set by build_site before calling module(lang)
+LBL={"vi":dict(expl="📖 Giải thích cho người mới bắt đầu",ex="Ví dụ",part="PHẦN",quiz="Tự kiểm tra nhanh"),"en":dict(expl="📖 Explanation for beginners",ex="Example",part="PART",quiz="Quick self-check")}
+def L(k): return LBL[LANG][k]
+def esc(s): return html.escape(str(s),quote=False)
+def sl(body,kicker=None,title=None,explain=None):
+    h=''
+    if kicker: h+=f'<div class="kicker">{kicker}</div>'
+    if title: h+=f'<h2>{title}</h2>'
+    h+=body
+    if explain: h+=f'<details class="slide-explain"><summary>{L("expl")}</summary><div class="slide-explain-body">{explain}</div></details>'
+    return h
+def M(tex): return f'${tex}$'            # inline LaTeX (rendered by KaTeX in the browser; write r'...' strings so backslashes survive)
+def MD(tex): return f'$${tex}$$'         # display LaTeX
+def formula(label,math,legend=None):
+    """math: LaTeX source (wrapped in $$..$$ unless it already contains a $ delimiter)."""
+    if '$' not in math and '\\(' not in math: math=f'$${math}$$'
+    h=f'<div class="pd-formula"><div class="pd-formula-label">{label}</div><div class="pd-formula-math">{math}</div></div>'
+    if legend: h+='<ul class="pd-legend">'+''.join(f'<li><b>{k}</b><span>{v}</span></li>' for k,v in legend)+'</ul>'
+    return h
+def callout(kind,title,body):
+    k={'info':'','good':' good','warn':' warn','bad':' bad'}[kind]
+    return f'<div class="callout{k}"><b class="t">{title}</b>{body}</div>'
+def ex(title,body): return f'<div class="ex"><div class="exh">{L("ex")} · {title}</div>{body}</div>'
+def table(head,rows,cls=''):
+    return f'<table class="t {cls}"><tr>'+''.join(f'<th>{h}</th>' for h in head)+'</tr>'+''.join('<tr>'+''.join(f'<td>{c}</td>' for c in r)+'</tr>' for r in rows)+'</table>'
+def code(t,lang=''): return f'<pre><code>{esc(t)}</code></pre>'
+def ul(items,ordered=False):
+    t='ol' if ordered else 'ul'; return f'<{t}>'+''.join(f'<li>{i}</li>' for i in items)+f'</{t}>'
+def sim(name): return f'<div class="sim" data-sim="{name}"></div>'
+def diag(path,alt,cap=''): return f'<div class="diag"><a href="{path}" target="_blank" rel="noopener"><img src="{path}" alt="{esc(alt)}" loading="lazy"></a>'+(f'<div style="font-size:.78rem;color:var(--muted)">{cap}</div>' if cap else '')+'</div>'
+def divider(n,total,title,bullets):
+    return f'<div class="kicker">{L("part")} {n}/{total}</div><div class="part-num">{n:02d}</div><h2>{title}</h2><ul class="part-list">'+''.join(f'<li>{b}</li>' for b in bullets)+'</ul>'
+def deck(slides_html,deck_id='d0'):
+    """slides_html: list of (html, is_divider)"""
+    s=''
+    for h,div in slides_html:
+        s+=f'<div class="mdeck-slide{" part-divider" if div else ""}">{h}</div>'
+    return (f'<div class="mdeck" id="{deck_id}"><div class="mdeck-viewport">{s}</div>'
+            '<div class="mdeck-bar"><button class="mdeck-prev" type="button">◀ Trước</button><button class="mdeck-next" type="button">Sau ▶</button>'
+            '<span class="mdeck-count"></span><div class="mdeck-dots"></div><button class="mdeck-fs" type="button">⛶ Toàn màn hình</button></div></div>')
+def quiz_block(root_id,items,title=None):
+    data=json.dumps(dict(items=[dict(q=i['q'],opts=i['opts'],correct=i['correct'],explain=i['explain'],src=i.get('src','')) for i in items]),ensure_ascii=False).replace('</','<\\/')
+    return f'<div class="quiz"><div id="{root_id}"></div></div><script type="application/json" class="quiz-data" data-root="{root_id}">{data}</script>'
+
+def fig(path,alt,cap='',w=None):
+    """Image inside a slide/notes. path relative to site root, e.g. 'assets/figs/m02/fig12_18.png' ({R} prefix added)."""
+    st=f' style="max-width:{w}px"' if w else ''
+    return f'<figure style="margin:8px 0;text-align:center"><img class="fig" src="{{R}}{path}" alt="{esc(alt)}" loading="lazy"{st}>'+(f'<figcaption class="srcnote">{cap}</figcaption>' if cap else '')+'</figure>'
+def tr(vi,en): return vi if LANG=="vi" else en
+
+def src(label):
+    """Small chip naming where a slide/figure/number comes from, e.g. src('Slide Ch.2 tr.21')."""
+    return f'<span class="srcflag">{esc(label)}</span>'
+def supp(vi_or_en=None):
+    """Label for text that is NOT on the lecturer's slides (added from a textbook): 'Bổ sung từ sách' / 'Added from the book'."""
+    return f'<span class="srcflag new">{"Bổ sung từ sách" if LANG=="vi" else "Added from the book"}{": "+esc(vi_or_en) if vi_or_en else ""}</span>'

@@ -1,0 +1,991 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Công suất 0,5 W bằng bao nhiêu dBm?",
+   "en": "What is 0.5 W in dBm?"
+  },
+  "opts": [
+   {
+    "vi": "27 dBm vì 10 log 500 gần bằng 27",
+    "en": "27 dBm because 10 log 500 is about 27"
+   },
+   {
+    "vi": "30 dBm vì 0,5 W gần bằng 1 W",
+    "en": "30 dBm because 0.5 W is close to 1 W"
+   },
+   {
+    "vi": "−3 dBm vì 0,5 là một nửa",
+    "en": "−3 dBm because 0.5 is one half"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "10 log(0,5 W / 1 mW) = 10 log 500 = 26,99 ≈ 27 dBm (slide 19).",
+   "en": "10 log(0.5 W / 1 mW) = 10 log 500 = 26.99 ≈ 27 dBm (slide 19)."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>10 log(0,5 W/1 mW) = 10 log 500 = 26,99, xấp xỉ 27 dBm. 30 dBm là 1 W và −3 dBm là nửa mW. Mốc nhớ: 0 dBm = 1 mW, 30 dBm = 1 W.</p><p>Đổi nhanh: mỗi ×10 công suất là +10 dB.</p>",
+   "en": "<p>10 log(0.5 W/1 mW) = 10 log 500 = 26.99, about 27 dBm. 30 dBm is 1 W and −3 dBm is half a mW. Anchors: 0 dBm = 1 mW, 30 dBm = 1 W.</p><p>Quick rule: each ×10 of power is +10 dB.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cáp có tổn hao −2 dB, điện áp vào 1 V. Điện áp ra xấp xỉ:",
+   "en": "A cable has −2 dB loss and 1 V input. The output voltage is about:"
+  },
+  "opts": [
+   {
+    "vi": "0,5 V",
+    "en": "0.5 V"
+   },
+   {
+    "vi": "0,794 V",
+    "en": "0.794 V"
+   },
+   {
+    "vi": "0,631 V",
+    "en": "0.631 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "V_out = 10^(−2/20) × 1 V = 0,794 V (0,631 là kết quả nếu nhầm dùng hệ số 10).",
+   "en": "V_out = 10^(−2/20) × 1 V = 0.794 V (0.631 is the wrong result from using the factor 10)."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Với điện áp: V_out = V_in × 10^(dB/20) = 10^(−0,1) = 0,794 V. 0,631 là kết quả nếu dùng 10 thay 20 (tính theo công suất).</p><p>Điện áp dùng 20 log, công suất dùng 10 log.</p>",
+   "en": "<p>For voltage: V_out = V_in × 10^(dB/20) = 10^(−0.1) = 0.794 V. 0.631 results from using 10 instead of 20 (the power formula).</p><p>Voltage uses 20 log, power uses 10 log.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ khuếch đại +40 dB, công suất vào 10 W. Công suất ra là:",
+   "en": "An amplifier of +40 dB has 10 W input. The output power is:"
+  },
+  "opts": [
+   {
+    "vi": "10 kW như in trên slide",
+    "en": "10 kW as printed on the slide"
+   },
+   {
+    "vi": "100 kW (10 × 10⁴ W)",
+    "en": "100 kW (10 × 10⁴ W)"
+   },
+   {
+    "vi": "400 W (10 W nhân 40)",
+    "en": "400 W (10 W times 40)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "10 W × 10^(40/10) = 10 × 10⁴ = 100 000 W. Slide 21 in nhầm là 10 kW.",
+   "en": "10 W × 10^(40/10) = 10 × 10⁴ = 100,000 W. Slide 21 mistakenly prints 10 kW."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>+40 dB công suất là ×10⁴, 10 W × 10 000 = 100 kW. Slide 21 in 10 kW là sai (thiếu một bậc 10). 400 W nhầm cộng thành nhân.</p><p>Kiểm tra: +10 dB ×10, +20 dB ×100, +30 dB ×1000, +40 dB ×10⁴.</p>",
+   "en": "<p>+40 dB in power is ×10⁴, 10 W × 10,000 = 100 kW. Slide 21's 10 kW is wrong (off by a factor of 10). 400 W confuses adding with multiplying.</p><p>Check: +10 dB ×10, +20 dB ×100, +30 dB ×1000, +40 dB ×10⁴.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mức vào −20 dBm qua bộ khuếch đại +30 dB. Mức ra là:",
+   "en": "An input level of −20 dBm goes through a +30 dB amplifier. The output level is:"
+  },
+  "opts": [
+   {
+    "vi": "30 dBm",
+    "en": "30 dBm"
+   },
+   {
+    "vi": "−50 dBm",
+    "en": "−50 dBm"
+   },
+   {
+    "vi": "10 dBm",
+    "en": "10 dBm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "−20 + 30 = 10 dBm = 10 mW.",
+   "en": "−20 + 30 = 10 dBm = 10 mW."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Mức dBm cộng trực tiếp với độ lợi dB: −20 + 30 = +10 dBm = 10 mW. −50 dBm là trừ nhầm và 30 dBm là bỏ mức vào.</p><p>Không cộng dBm với dBm; chỉ cộng dBm với dB.</p>",
+   "en": "<p>A dBm level adds directly to a dB gain: −20 + 30 = +10 dBm = 10 mW. −50 dBm subtracts by mistake and 30 dBm ignores the input level.</p><p>Do not add dBm to dBm; only dBm plus dB.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điện áp tăng gấp 10 lần tương ứng bao nhiêu dB?",
+   "en": "A tenfold increase in voltage is how many dB?"
+  },
+  "opts": [
+   {
+    "vi": "+20 dB",
+    "en": "+20 dB"
+   },
+   {
+    "vi": "+100 dB",
+    "en": "+100 dB"
+   },
+   {
+    "vi": "+10 dB",
+    "en": "+10 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "20 log 10 = 20 dB (công suất tăng 10 lần mới là 10 dB).",
+   "en": "20 log 10 = 20 dB (a tenfold power increase would be 10 dB)."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Điện áp tăng ×10 cho 20 log 10 = +20 dB. Công suất ×10 mới là +10 dB. +100 dB là ×10⁵ về điện áp.</p><p>Bình phương: công suất ∝ V², nên hệ số 20 gấp hai lần hệ số 10.</p>",
+   "en": "<p>A tenfold voltage increase gives 20 log 10 = +20 dB. A tenfold power increase is +10 dB. +100 dB is ×10⁵ in voltage.</p><p>Squaring: power ∝ V², so the factor 20 is double the factor 10.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sóng vuông biên độ 50 V (theo dạng V/n), tần số 2 kHz. Hài bậc 5 có biên độ và tần số:",
+   "en": "A 50 V, 2 kHz square wave (V/n form). The fifth harmonic has amplitude and frequency:"
+  },
+  "opts": [
+   {
+    "vi": "10 V và 5 kHz",
+    "en": "10 V and 5 kHz"
+   },
+   {
+    "vi": "250 V và 10 kHz",
+    "en": "250 V and 10 kHz"
+   },
+   {
+    "vi": "10 V và 10 kHz",
+    "en": "10 V and 10 kHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "50/5 = 10 V; 5 × 2 kHz = 10 kHz (Tooley TYU 14.1).",
+   "en": "50/5 = 10 V; 5 × 2 kHz = 10 kHz (Tooley TYU 14.1)."
+  },
+  "topic": {
+   "vi": "Tín hiệu, phổ Fourier, máy phân tích phổ",
+   "en": "Signals, Fourier spectrum, spectrum analyser"
+  },
+  "topic_id": "spectrum",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Sóng vuông chỉ có hài lẻ với biên độ V/n (theo cách đặt của Tooley, V là biên độ cơ bản). Hài 5: 50/5 = 10 V ở 5 × 2 kHz = 10 kHz. 5 kHz nhầm tần số thành chia.</p><p>Hài chẵn của sóng vuông đối xứng bằng 0.</p>",
+   "en": "<p>A square wave has only odd harmonics with amplitude V/n (in Tooley's form, V is the fundamental amplitude). Fifth harmonic: 50/5 = 10 V at 5 × 2 kHz = 10 kHz. 5 kHz divides the frequency by mistake.</p><p>Even harmonics of a symmetric square wave are zero.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tụ 100 nF có ESL 10 nH thì tần số cộng hưởng xấp xỉ:",
+   "en": "A 100 nF capacitor with 10 nH ESL has a resonant frequency of about:"
+  },
+  "opts": [
+   {
+    "vi": "50 kHz",
+    "en": "50 kHz"
+   },
+   {
+    "vi": "500 MHz",
+    "en": "500 MHz"
+   },
+   {
+    "vi": "5,0 MHz",
+    "en": "5.0 MHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "f_r = 1/(2π√(10⁻⁷ × 10⁻⁸)) = 5,03 MHz.",
+   "en": "f_r = 1/(2π√(10⁻⁷ × 10⁻⁸)) = 5.03 MHz."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>f_r = 1/(2π√(LC)) = 1/(2π√(10 nH × 100 nF)) = 1/(2π × 3,16×10⁻⁸) = 5,03 MHz. 50 kHz và 500 MHz sai số bậc 100.</p><p>ESL càng nhỏ, cộng hưởng càng cao, nên tụ nhỏ dùng cho tần số cao.</p>",
+   "en": "<p>f_r = 1/(2π√(LC)) = 1/(2π√(10 nH × 100 nF)) = 1/(2π × 3.16×10⁻⁸) = 5.03 MHz. 50 kHz and 500 MHz are off by a factor of 100.</p><p>The smaller the ESL, the higher the resonance, so small capacitors serve high frequencies.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên tần số cộng hưởng, tụ thực hoạt động như:",
+   "en": "Above its resonant frequency a real capacitor behaves as:"
+  },
+  "opts": [
+   {
+    "vi": "Chuẩn chất lượng cho phần mềm điều khiển bay",
+    "en": "A quality standard for flight control software"
+   },
+   {
+    "vi": "Quy định bắt buộc của chính phủ về EMC cho máy bay",
+    "en": "A mandatory government EMC regulation for aircraft"
+   },
+   {
+    "vi": "Quy trình thử do RTCA ban hành, không phải yêu cầu",
+    "en": "A test procedure published by the RTCA, not a requirement"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Trên f_r thành phần ESL chiếm ưu thế, Z tăng theo tần số (slide 36).",
+   "en": "Above f_r the ESL dominates and Z rises with frequency (slide 36)."
+  },
+  "topic": {
+   "vi": "Chuẩn EMC và DO-160",
+   "en": "EMC standards and DO-160"
+  },
+  "topic_id": "standards",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Dưới f_r tụ thực là tụ; trên f_r điện cảm ký sinh ESL chiếm ưu thế nên Z = ωL tăng theo tần số và tụ hoạt động như cuộn cảm, kém tác dụng lọc. Nó không bao giờ thành điện trở thuần ở dải rộng.</p><p>Vì thế dùng song song tụ lớn và tụ nhỏ.</p>",
+   "en": "<p>Below f_r a real capacitor is a capacitor; above f_r the parasitic inductance ESL dominates so Z = ωL rises with frequency and the capacitor acts as an inductor, a poor filter. It never becomes a pure resistor over a wide band.</p><p>That is why a large and a small capacitor are used in parallel.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "DO-160 là gì?",
+   "en": "What is DO-160?"
+  },
+  "opts": [
+   {
+    "vi": "Chuẩn chất lượng phần mềm",
+    "en": "A software quality standard"
+   },
+   {
+    "vi": "Quy định bắt buộc của chính phủ về EMC",
+    "en": "A mandatory government EMC regulation"
+   },
+   {
+    "vi": "Quy trình thử do RTCA ban hành, không phải một yêu cầu",
+    "en": "A test procedure published by the RTCA, not a requirement"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Slide 27: DO-160 là quy trình thử; DO-178 mới là phần mềm.",
+   "en": "Slide 27: DO-160 is a test procedure; DO-178 is the software one."
+  },
+  "topic": {
+   "vi": "Chuẩn EMC và DO-160",
+   "en": "EMC standards and DO-160"
+  },
+  "topic_id": "standards",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>DO-160 là quy trình thử môi trường (gồm EMC) do RTCA ban hành, chính nó không đặt yêu cầu; yêu cầu đến từ quy định chứng nhận. Chuẩn phần mềm là DO-178.</p><p>Ba chuẩn: DO-160 (thử), DO-178 (phần mềm), DO-254 (phần cứng).</p>",
+   "en": "<p>DO-160 is an environmental (including EMC) test procedure published by the RTCA; it does not set requirements itself, those come from certification rules. The software standard is DO-178.</p><p>Three standards: DO-160 (test), DO-178 (software), DO-254 (hardware).</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giới hạn phát xạ bức xạ CISPR 11 Group 1 Class A trên 230 MHz (ở 30 m) là:",
+   "en": "The CISPR 11 Group 1 Class A radiated emission limit above 230 MHz (at 30 m) is:"
+  },
+  "opts": [
+   {
+    "vi": "Cấm dùng thiết bị Wi-Fi khi động cơ chạy cho mục đích bay",
+    "en": "Banning Wi-Fi devices while the engines run for the purpose of flight"
+   },
+   {
+    "vi": "Tắt toàn bộ màn hình khi bật hệ thống Wi-Fi",
+    "en": "Switching off all displays whenever the Wi-Fi system is on"
+   },
+   {
+    "vi": "Lắp thêm lõi ferrite cho tất cả màn hình buồng lái",
+    "en": "Adding ferrite cores to every cockpit display"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Slide 26: 30 dBµV/m từ 30 đến 230 MHz, 37 dBµV/m trên 230 MHz.",
+   "en": "Slide 26: 30 dBµV/m from 30 to 230 MHz, 37 dBµV/m above 230 MHz."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>CISPR 11 Nhóm 1 Class A, đo ở 30 m: 30 dBµV/m cho 30 đến 230 MHz và 37 dBµV/m trên 230 MHz. 47 dBµV/m là ngưỡng khác (đo ở khoảng cách khác).</p><p>Đọc kỹ khoảng cách đo khi so ngưỡng.</p>",
+   "en": "<p>CISPR 11 Group 1 Class A, measured at 30 m: 30 dBµV/m for 30 to 230 MHz and 37 dBµV/m above 230 MHz. 47 dBµV/m is a different limit (another measuring distance).</p><p>Check the measuring distance when comparing limits.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Wi-Fi gây nhiễu màn hình trên Boeing 757. Biện pháp được nêu trên biển trong buồng lái là:",
+   "en": "Wi-Fi interfered with displays on the Boeing 757. The measure stated on the cockpit placard is:"
+  },
+  "opts": [
+   {
+    "vi": "Ferrite chỉ chặn các tần số rất thấp nên bỏ qua tín hiệu",
+    "en": "Ferrite only blocks very low frequencies so it ignores the signal"
+   },
+   {
+    "vi": "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu nhau",
+    "en": "The currents in the two wires are opposite, so the flux in the core cancels"
+   },
+   {
+    "vi": "Ferrite không có tính chất từ nên không tác động lên gì",
+    "en": "Ferrite has no magnetic property so it acts on nothing"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Slide 3: biển cảnh báo cấm dùng Wi-Fi ở buồng lái khi động cơ chạy.",
+   "en": "Slide 3: the placard bans Wi-Fi devices on the flight deck while the engines run."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Trên Boeing 757 thiết bị Wi-Fi gây nhiễu màn hình, nên biển trong buồng lái cấm dùng Wi-Fi khi động cơ chạy cho mục đích bay. Ferrite là biện pháp kỹ thuật khác, không phải nội dung biển.</p><p>Ví dụ điển hình cho EMI từ thiết bị cá nhân.</p>",
+   "en": "<p>On the Boeing 757, Wi-Fi devices interfered with the displays, so the cockpit placard bans Wi-Fi while the engines run for flight purposes. Ferrite is a different technical fix, not the placard's content.</p><p>A typical example of EMI from personal devices.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tại sao lõi ferrite không ảnh hưởng tín hiệu vi sai mong muốn?",
+   "en": "Why does a ferrite core not affect the wanted differential signal?"
+  },
+  "opts": [
+   {
+    "vi": "Ferrite không có từ tính",
+    "en": "Ferrite is not magnetic"
+   },
+   {
+    "vi": "Ferrite chỉ chặn tần số thấp",
+    "en": "Ferrite blocks only low frequencies"
+   },
+   {
+    "vi": "Dòng hai dây ngược chiều nên từ thông trong lõi triệt tiêu",
+    "en": "The currents in the two wires are opposite so the flux in the core cancels"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Slide 32: chế độ vi sai từ thông triệt tiêu, trở kháng thấp; chế độ chung từ thông cộng, trở kháng cao.",
+   "en": "Slide 32: in differential mode the flux cancels and impedance is low; in common mode the flux adds and impedance is high."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Hai dây tín hiệu mang dòng ngược chiều nên từ thông trong lõi ferrite triệt tiêu: trở kháng thấp, tín hiệu không bị cản. Nhiễu chế độ chung có dòng cùng chiều nên từ thông cộng, trở kháng cao, bị chặn.</p><p>Ferrite lọc nhiễu chế độ chung mà không ảnh hưởng tín hiệu.</p>",
+   "en": "<p>The two signal wires carry opposite currents so the flux in the ferrite cancels: low impedance, the signal is unimpeded. Common-mode noise has same-direction currents so the flux adds, high impedance, it is blocked.</p><p>Ferrite filters common-mode noise without affecting the signal.</p>"
+  },
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 09 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 09 (slide number not yet attached)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Công suất 1 W tương ứng bao nhiêu dBm?",
+   "en": "What is 1 W in dBm?"
+  },
+  "opts": [
+   {
+    "vi": "100 dBm",
+    "en": "100 dBm"
+   },
+   {
+    "vi": "30 dBm",
+    "en": "30 dBm"
+   },
+   {
+    "vi": "0 dBm",
+    "en": "0 dBm"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "10 log(1 W/1 mW) = 10 log 1000 = 30 dBm.",
+   "en": "10 log(1 W/1 mW) = 10 log 1000 = 30 dBm."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>dBm lấy 1 mW làm gốc: 0 dBm = 1 mW. 1 W gấp 1000 lần 1 mW, nên 10 × 3 = 30 dBm. 0 dBm là 1 mW chứ không phải 1 W.</p><p>Mốc: 0 dBm = 1 mW, 30 dBm = 1 W, 60 dBm = 1 kW.</p>",
+   "en": "<p>dBm is referenced to 1 mW: 0 dBm = 1 mW. 1 W is 1000 times 1 mW, so 10 × 3 = 30 dBm. 0 dBm is 1 mW, not 1 W.</p><p>Anchors: 0 dBm = 1 mW, 30 dBm = 1 W, 60 dBm = 1 kW.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 19",
+   "en": "EMC lecture · slide 19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thêm 3 dB độ lợi thì công suất thay đổi khoảng:",
+   "en": "Adding 3 dB of gain changes the power by about:"
+  },
+  "opts": [
+   {
+    "vi": "tăng thêm 3 W",
+    "en": "an extra 3 W"
+   },
+   {
+    "vi": "gấp đôi",
+    "en": "a factor of 2"
+   },
+   {
+    "vi": "gấp ba",
+    "en": "a factor of 3"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "10^(3/10) = 1,995 ≈ 2.",
+   "en": "10^(3/10) = 1.995 ≈ 2."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Công thức G = 10^(dB/10) cho 1,995 với 3 dB. Ba lần sẽ là 4,77 dB. dB là tỉ lệ nên không cộng thêm số oát cố định.</p><p>Ngược lại −3 dB là còn một nửa.</p>",
+   "en": "<p>G = 10^(dB/10) gives 1.995 for 3 dB. A factor of three would be 4.77 dB. dB is a ratio so it never adds a fixed number of watts.</p><p>Conversely −3 dB leaves half.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 14",
+   "en": "EMC lecture · slide 14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mức −90 dBm tương đương công suất:",
+   "en": "A level of −90 dBm is a power of:"
+  },
+  "opts": [
+   {
+    "vi": "1 pW (10⁻¹² W)",
+    "en": "1 pW (10⁻¹² W)"
+   },
+   {
+    "vi": "1 nW (10⁻⁹ W)",
+    "en": "1 nW (10⁻⁹ W)"
+   },
+   {
+    "vi": "10⁻⁹ mW = 1 µW",
+    "en": "10⁻⁹ mW = 1 µW"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "10^(−90/10) mW = 10⁻⁹ mW = 10⁻¹² W.",
+   "en": "10^(−90/10) mW = 10⁻⁹ mW = 10⁻¹² W."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>−90 dBm = 10⁻⁹ mW, và 1 mW = 10⁻³ W nên bằng 10⁻¹² W = 1 pW. Phương án thứ ba tự mâu thuẫn: 10⁻⁹ mW không phải 1 µW. Đây là cỡ công suất của bộ thu tín hiệu yếu (Tooley Hình 14.9).</p><p>Đừng quên đổi mW sang W.</p>",
+   "en": "<p>−90 dBm = 10⁻⁹ mW, and 1 mW = 10⁻³ W so it equals 10⁻¹² W = 1 pW. The third option contradicts itself: 10⁻⁹ mW is not 1 µW. This is the power scale of a weak-signal receiver (Tooley Figure 14.9).</p><p>Do not forget to convert mW to W.</p>"
+  },
+  "src": {
+   "vi": "Tooley 14.4; Bài giảng EMC · slide 18",
+   "en": "Tooley 14.4; EMC lecture · slide 18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tỉ số điện áp 0,5 (giảm một nửa) tương ứng:",
+   "en": "A voltage ratio of 0.5 (halved) is:"
+  },
+  "opts": [
+   {
+    "vi": "−6 dB",
+    "en": "−6 dB"
+   },
+   {
+    "vi": "−3 dB",
+    "en": "−3 dB"
+   },
+   {
+    "vi": "−10 dB",
+    "en": "−10 dB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "20 log 0,5 = −6,02 dB.",
+   "en": "20 log 0.5 = −6.02 dB."
+  },
+  "topic": {
+   "vi": "Đơn vị dB và dBm",
+   "en": "dB and dBm units"
+  },
+  "topic_id": "db",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Điện áp dùng 20 log: 20 × (−0,301) = −6,02 dB. −3 dB là công suất giảm một nửa. Vì công suất ∝ V², điện áp một nửa cho công suất một phần tư (−6 dB).</p>",
+   "en": "<p>Voltage uses 20 log: 20 × (−0.301) = −6.02 dB. −3 dB is power halved. Since power ∝ V², half the voltage gives a quarter of the power (−6 dB).</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 15",
+   "en": "EMC lecture · slide 15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sóng vuông 1 kHz chứa các hài ở:",
+   "en": "A 1 kHz square wave contains harmonics at:"
+  },
+  "opts": [
+   {
+    "vi": "1, 2, 3, 4 kHz...",
+    "en": "1, 2, 3, 4 kHz..."
+   },
+   {
+    "vi": "1, 3, 5, 7 kHz... (chỉ hài lẻ)",
+    "en": "1, 3, 5, 7 kHz... (odd harmonics only)"
+   },
+   {
+    "vi": "chỉ 1 kHz",
+    "en": "1 kHz only"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sóng vuông đối xứng chỉ có hài lẻ, biên độ V/n.",
+   "en": "A symmetric square wave has only odd harmonics, with amplitude V/n."
+  },
+  "topic": {
+   "vi": "Tín hiệu, phổ Fourier, máy phân tích phổ",
+   "en": "Signals, Fourier spectrum, spectrum analyser"
+  },
+  "topic_id": "spectrum",
+  "level": 2,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Chuỗi Fourier của sóng vuông: (4V/π)(sin ωt + sin 3ωt/3 + sin 5ωt/5 + ...). Cạnh càng dốc thì hài cao càng mạnh, nên xung nhanh phát nhiễu băng rộng. Một tần số duy nhất chỉ có ở sóng sin.</p><p>Đây là lý do làm chậm cạnh xung giảm EMI.</p>",
+   "en": "<p>The Fourier series of a square wave: (4V/π)(sin ωt + sin 3ωt/3 + sin 5ωt/5 + ...). The steeper the edge, the stronger the high harmonics, so fast pulses emit broadband noise. A single frequency belongs only to a sine wave.</p><p>This is why slowing the edges reduces EMI.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 10; Tooley TYU 14.1",
+   "en": "EMC lecture · slide 10; Tooley TYU 14.1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tụ 1 µF có ESL 10 nH thì tần số cộng hưởng xấp xỉ:",
+   "en": "A 1 µF capacitor with 10 nH ESL has a resonant frequency of about:"
+  },
+  "opts": [
+   {
+    "vi": "5,03 MHz",
+    "en": "5.03 MHz"
+   },
+   {
+    "vi": "159 kHz",
+    "en": "159 kHz"
+   },
+   {
+    "vi": "1,59 MHz",
+    "en": "1.59 MHz"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "f_r = 1/(2π√(10⁻⁶ × 10⁻⁸)) = 1,59 MHz.",
+   "en": "f_r = 1/(2π√(10⁻⁶ × 10⁻⁸)) = 1.59 MHz."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>√(10⁻¹⁴) = 10⁻⁷ nên f_r = 1/(2π × 10⁻⁷) = 1,59 MHz. 5,03 MHz là kết quả cho 100 nF. Tụ lớn hơn cộng hưởng thấp hơn: nó lọc tốt ở tần số thấp nhưng thành cuộn cảm sớm hơn.</p>",
+   "en": "<p>√(10⁻¹⁴) = 10⁻⁷ so f_r = 1/(2π × 10⁻⁷) = 1.59 MHz. 5.03 MHz is the result for 100 nF. A larger capacitor resonates lower: it filters well at low frequency but turns inductive sooner.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 36",
+   "en": "EMC lecture · slide 36"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cách nào bảo vệ tốt nhất cho dây tín hiệu nhạy khỏi nhiễu điện trường bên ngoài?",
+   "en": "What best protects a sensitive signal wire from an external electric-field disturbance?"
+  },
+  "opts": [
+   {
+    "vi": "Chạy song song với cáp công suất",
+    "en": "Running it parallel to a power cable"
+   },
+   {
+    "vi": "Bọc chống nhiễu nối đất ít nhất một đầu",
+    "en": "A screen grounded at least at one end"
+   },
+   {
+    "vi": "Cuộn dây thành vòng lớn",
+    "en": "Coiling the wire into a large loop"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Lưới bọc nối đất làm lệch dòng nhiễu xuống đất.",
+   "en": "A grounded screen diverts the interference to ground."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Lưới bọc hoạt động như lồng Faraday với trường điện. Vòng lớn tăng diện tích thu từ trường, còn chạy song song với cáp công suất tăng ghép nối. Nối đất hai đầu bảo vệ trường điện từ tốt hơn ở tần số cao nhưng có thể tạo vòng đất ở tần số thấp.</p><p>Quy tắc: tách cáp, xoắn đôi và bọc.</p>",
+   "en": "<p>A screen acts as a Faraday cage for electric fields. A large loop increases the pickup area for magnetic fields, and running parallel to a power cable increases coupling. Grounding both ends protects better at high frequency but can create a ground loop at low frequency.</p><p>Rule: separate cables, twist the pair and screen.</p>"
+  },
+  "src": {
+   "vi": "Tooley 14.4.3; Bài giảng EMC · slide 29, 38",
+   "en": "Tooley 14.4.3; EMC lecture · slides 29, 38"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vòng đất (ground loop) xảy ra khi:",
+   "en": "A ground loop occurs when:"
+  },
+  "opts": [
+   {
+    "vi": "dây tín hiệu được xoắn đôi",
+    "en": "the signal wires are twisted"
+   },
+   {
+    "vi": "tất cả thiết bị chung một điểm đất duy nhất",
+    "en": "all equipment shares a single ground point"
+   },
+   {
+    "vi": "lưới bọc nối đất ở hai điểm khác điện thế, tạo đường cho dòng nhiễu",
+    "en": "a screen is grounded at two points at different potentials, creating a path for interference current"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chênh lệch điện thế đất làm dòng chạy qua lưới bọc.",
+   "en": "The ground potential difference drives current through the screen."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Hai điểm đất của máy bay có thể chênh điện thế do dòng hồi, nên dòng chạy trong lưới bọc và ghép vào tín hiệu. Nối đất một điểm tránh được vòng này. Xoắn đôi là biện pháp giảm nhiễu từ, không phải nguyên nhân.</p>",
+   "en": "<p>Two ground points on an aircraft can differ in potential due to return currents, so current flows in the screen and couples into the signal. Single-point grounding avoids the loop. Twisting is a magnetic-noise reduction measure, not a cause.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 39; Tooley 14.4.3",
+   "en": "EMC lecture · slide 39; Tooley 14.4.3"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong thử nghiệm sét theo thực tế, thủ tục nào đảm bảo an toàn nhiên liệu khi sét đánh?",
+   "en": "In lightning protection, which provision keeps the fuel system safe from a strike?"
+  },
+  "opts": [
+   {
+    "vi": "Tháo hết dây nối đất",
+    "en": "Removing all grounding straps"
+   },
+   {
+    "vi": "Liên kết điện toàn bộ kết cấu và tránh khe hở có thể phóng tia lửa",
+    "en": "Electrical bonding of the whole structure and avoiding gaps that could spark"
+   },
+   {
+    "vi": "Dùng vỏ nhựa cho thùng nhiên liệu",
+    "en": "Using plastic fuel tanks only"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Liên kết toàn kết cấu cho dòng sét một đường dẫn liên tục.",
+   "en": "Bonding the whole structure gives the lightning current a continuous path."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Dòng sét đỉnh 10 đến 200 kA (slide 11); nếu có khe hở trong đường dẫn thì phát tia lửa ngay cạnh nhiên liệu. Vỏ cách điện không có đường dẫn dòng và tháo dây nối đất làm điều ngược lại.</p><p>Cùng nguyên tắc với câu 7 Tooley 14; slide 44 nêu thêm ngăn tích tĩnh điện cho nhiên liệu.</p>",
+   "en": "<p>Lightning peak current is 10 to 200 kA (slide 11); gaps in the path produce sparks next to the fuel. Insulating shells provide no current path and removing grounding straps does the opposite.</p><p>Same principle as Tooley chapter 14 question 7; slide 44 adds preventing static build-up in fuel.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 44; Tooley 14.6",
+   "en": "EMC lecture · slide 44; Tooley 14.6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ lọc RC thông thấp với R = 1 kΩ và C = 100 nF có tần số cắt:",
+   "en": "An RC low-pass filter with R = 1 kΩ and C = 100 nF has a cutoff of:"
+  },
+  "opts": [
+   {
+    "vi": "15,9 kHz",
+    "en": "15.9 kHz"
+   },
+   {
+    "vi": "1,59 kHz",
+    "en": "1.59 kHz"
+   },
+   {
+    "vi": "159 Hz",
+    "en": "159 Hz"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "f_c = 1/(2πRC) = 1/(2π × 10⁻⁴) = 1,59 kHz.",
+   "en": "f_c = 1/(2πRC) = 1/(2π × 10⁻⁴) = 1.59 kHz."
+  },
+  "topic": {
+   "vi": "Lọc, ferrite, tụ tách",
+   "en": "Filtering, ferrite, decoupling"
+  },
+  "topic_id": "filter",
+  "level": 3,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>RC = 1000 × 100×10⁻⁹ = 10⁻⁴ s. f_c = 1/(2π × 10⁻⁴) = 1591 Hz. 159 Hz ứng với C = 1 µF và 15,9 kHz ứng với C = 10 nF.</p><p>Tại f_c biên độ giảm 3 dB.</p>",
+   "en": "<p>RC = 1000 × 100×10⁻⁹ = 10⁻⁴ s. f_c = 1/(2π × 10⁻⁴) = 1591 Hz. 159 Hz corresponds to C = 1 µF and 15.9 kHz to C = 10 nF.</p><p>At f_c the amplitude is down 3 dB.</p>"
+  },
+  "src": {
+   "vi": "Tooley 14.4.3",
+   "en": "Tooley 14.4.3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong nhiễu dẫn điện, nhiễu chế độ chung (common-mode) khác chế độ vi sai ở chỗ:",
+   "en": "In conducted noise, common-mode noise differs from differential-mode in that:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ có ở tần số 400 Hz",
+    "en": "it occurs only at 400 Hz"
+   },
+   {
+    "vi": "dòng nhiễu ngược chiều trên hai dây",
+    "en": "the interference current flows in opposite directions on the two wires"
+   },
+   {
+    "vi": "dòng nhiễu cùng chiều trên cả hai dây so với đất",
+    "en": "the interference current flows in the same direction on both wires relative to ground"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chế độ chung: cùng pha trên cả hai dây; vi sai: ngược pha.",
+   "en": "Common mode: in phase on both wires; differential: opposite phase."
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Lõi ferrite quanh cả hai dây chặn chế độ chung (từ thông cộng) mà không cản tín hiệu vi sai (từ thông triệt tiêu). Chế độ vi sai là chế độ của tín hiệu mong muốn nên không thể lọc bỏ bằng ferrite.</p>",
+   "en": "<p>A ferrite core around both wires blocks common mode (flux adds) without impeding the differential signal (flux cancels). Differential mode is the mode of the wanted signal so ferrite cannot filter it out.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 32",
+   "en": "EMC lecture · slide 32"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nên làm gì để giảm bức xạ từ cáp công suất gây nhiễu sang cáp tín hiệu?",
+   "en": "What reduces interference radiated from a power cable into a signal cable?"
+  },
+  "opts": [
+   {
+    "vi": "Bó chung vào cùng một bó",
+    "en": "Bundle them together"
+   },
+   {
+    "vi": "Chạy song song sát nhau",
+    "en": "Run them close and parallel"
+   },
+   {
+    "vi": "Tách xa nhau và cắt ngang nhau ở góc vuông",
+    "en": "Separate them and cross at right angles"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ghép nối tỉ lệ nghịch với khoảng cách và có hướng.",
+   "en": "Coupling falls with distance and depends on direction."
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "bo_sung",
+  "detail": {
+   "vi": "<p>Cắt vuông góc làm từ thông của cáp này không xuyên qua vòng của cáp kia nên ghép nối gần bằng 0. Bó chung và chạy song song là ghép nối tối đa; slide 39 nêu tách cáp công suất và tín hiệu.</p>",
+   "en": "<p>Crossing at right angles means the flux of one cable does not pass through the loop of the other so coupling is almost zero. Bundling and running parallel give maximum coupling; slide 39 lists separating power and signal cables.</p>"
+  },
+  "src": {
+   "vi": "Bài giảng EMC · slide 39",
+   "en": "EMC lecture · slide 39"
+  }
+ }
+]

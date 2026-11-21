@@ -1,0 +1,812 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phần mềm phân loại Level C là loại mà khi hỏng có thể gây:",
+   "en": "A Level C software classification is one in which a failure could result in:"
+  },
+  "opts": [
+   {
+    "vi": "thương tích chết người cho hành khách hoặc tổ bay",
+    "en": "fatal injuries to passengers or crew"
+   },
+   {
+    "vi": "thương tích nhẹ cho hành khách hoặc tổ bay",
+    "en": "minor injuries to passengers or crew"
+   },
+   {
+    "vi": "mất máy bay",
+    "en": "aircraft loss"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bảng 13.1: mức C là hỏng đáng kể (Major): khối lượng việc làm giảm hiệu quả tổ bay, hành khách khó chịu kể cả thương tích. Mất máy bay là mức A; thương vong nặng là mức B.",
+   "en": "Table 13.1: level C is a major failure: workload impairs crew efficiency, occupant discomfort including injuries. Aircraft loss is level A; serious or fatal injury is level B."
+  },
+  "topic": {
+   "vi": "Mức nghiêm trọng A đến E",
+   "en": "Severity levels A to E"
+  },
+  "topic_id": "levels",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 13.1: mức C là hỏng đáng kể (Major): khối lượng việc làm giảm hiệu quả tổ bay, hành khách khó chịu kể cả thương tích nhẹ. Mất máy bay thuộc mức A (thảm hoạ), thương vong nặng thuộc mức B (nguy hiểm).</p><p>Thang mức: A thảm hoạ, B nguy hiểm, C đáng kể, D nhẹ, E không ảnh hưởng.</p>",
+   "en": "<p>Table 13.1: level C is a major failure: workload impairs crew efficiency and occupants suffer discomfort including minor injuries. Aircraft loss belongs to level A (catastrophic) and serious or fatal injury to level B (hazardous).</p><p>Scale: A catastrophic, B hazardous, C major, D minor, E no effect.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q1",
+   "en": "Tooley Ch.13 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phần mềm phân loại Level B có xác suất hỏng là:",
+   "en": "A Level B software classification is one in which the probability of failure is:"
+  },
+  "opts": [
+   {
+    "vi": "cực kỳ hiếm (extremely remote)",
+    "en": "extremely remote"
+   },
+   {
+    "vi": "hiếm (remote)",
+    "en": "remote"
+   },
+   {
+    "vi": "cực kỳ không thể xảy ra (extremely improbable)",
+    "en": "extremely improbable"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bảng 13.1: A là extremely improbable (dưới 10⁻⁹), B là extremely remote (10⁻⁹ đến 10⁻⁷), C là remote (10⁻⁷ đến 10⁻⁵).",
+   "en": "Table 13.1: A is extremely improbable (below 10⁻⁹), B is extremely remote (10⁻⁹ to 10⁻⁷), C is remote (10⁻⁷ to 10⁻⁵)."
+  },
+  "topic": {
+   "vi": "Mức nghiêm trọng A đến E",
+   "en": "Severity levels A to E"
+  },
+  "topic_id": "levels",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 13.1: A là extremely improbable (dưới 10⁻⁹), B là extremely remote (10⁻⁹ đến 10⁻⁷), C là remote (10⁻⁷ đến 10⁻⁵), D là probable (trên 10⁻⁵). Nghiêm trọng hơn thì xác suất cho phép càng nhỏ.</p><p>Ba chữ mô tả: improbable < remote < probable về khả năng xảy ra.</p>",
+   "en": "<p>Table 13.1: A is extremely improbable (below 10⁻⁹), B is extremely remote (10⁻⁹ to 10⁻⁷), C is remote (10⁻⁷ to 10⁻⁵), D is probable (above 10⁻⁵). The more severe, the smaller the allowed probability.</p><p>Three descriptors: improbable < remote < probable in likelihood.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q2",
+   "en": "Tooley Ch.13 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kế hoạch quản lý cấu hình phần mềm phải được lập và duy trì bởi:",
+   "en": "A software configuration management plan must be created and maintained by:"
+  },
+  "opts": [
+   {
+    "vi": "CAA hoặc FAA",
+    "en": "the CAA or FAA"
+   },
+   {
+    "vi": "nhà khai thác máy bay",
+    "en": "the aircraft operator"
+   },
+   {
+    "vi": "tổ chức thiết kế liên quan (DO)",
+    "en": "the relevant DO"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley 13.2: CMP phải do DO liên quan xây dựng và duy trì, có hiệu lực suốt đời thiết bị.",
+   "en": "Tooley 13.2: the CMP must be devised and maintained by the relevant DO and be effective throughout the life of the equipment."
+  },
+  "topic": {
+   "vi": "DO-178B/C và truy vết",
+   "en": "DO-178B/C and traceability"
+  },
+  "topic_id": "do178",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Tooley 13.2: kế hoạch quản lý cấu hình phần mềm (CMP) do tổ chức thiết kế (DO) liên quan xây dựng và duy trì suốt đời thiết bị. Cơ quan hàng không (CAA, FAA) phê duyệt chứ không soạn, còn nhà khai thác không chịu trách nhiệm thiết kế.</p><p>DO phải chứng minh phần mềm đạt DO-178B/ED-12B.</p>",
+   "en": "<p>Tooley 13.2: the software configuration management plan (CMP) is devised and maintained by the relevant design organisation (DO) throughout the life of the equipment. The aviation authority (CAA, FAA) approves rather than writes it, and the operator is not responsible for design.</p><p>The DO must show the software meets DO-178B/ED-12B.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q3",
+   "en": "Tooley Ch.13 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Radar thời tiết là ví dụ của:",
+   "en": "Weather radar is an example of:"
+  },
+  "opts": [
+   {
+    "vi": "phần mềm Class B",
+    "en": "Class B software"
+   },
+   {
+    "vi": "phần mềm Class C",
+    "en": "Class C software"
+   },
+   {
+    "vi": "phần mềm Class D",
+    "en": "Class D software"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bảng 13.2: mức D gồm cân bằng tự động AHRS, CMC/CFDIU, bộ nạp dữ liệu và radar thời tiết.",
+   "en": "Table 13.2: level D includes AHRS automatic levelling, CMC/CFDIU, data loader and weather radar."
+  },
+  "topic": {
+   "vi": "Mức nghiêm trọng A đến E",
+   "en": "Severity levels A to E"
+  },
+  "topic_id": "levels",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 13.2: mức D gồm cân bằng tự động AHRS, CMC/CFDIU, bộ nạp dữ liệu và radar thời tiết. Mức B gồm TCAS, bộ phát đáp ADS-B và màn hình bay; mức C gồm DME và thoại VHF.</p><p>Trực giác: radar thời tiết mất đi vẫn bay được nên mức thấp.</p>",
+   "en": "<p>Table 13.2: level D includes AHRS automatic levelling, CMC/CFDIU, data loader and weather radar. Level B includes TCAS, ADS-B transponder and flight displays; level C includes DME and VHF voice.</p><p>Intuition: losing weather radar still allows flight, so a low level.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q4",
+   "en": "Tooley Ch.13 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phần mềm điều khiển động cơ điện tử là ví dụ của:",
+   "en": "Electronic engine control software is an example of:"
+  },
+  "opts": [
+   {
+    "vi": "LSAP",
+    "en": "LSAP"
+   },
+   {
+    "vi": "DFLD",
+    "en": "DFLD"
+   },
+   {
+    "vi": "OSS",
+    "en": "OSS"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EEC là phần cứng đích tiêu biểu của LSAP (cùng DFDAU, ECU của APU, FGC). DFLD là dữ liệu; OSS điển hình ở IMA.",
+   "en": "The EEC is a typical LSAP target (with DFDAU, APU ECU, FGC). DFLD is data; OSS is typical of IMA units."
+  },
+  "topic": {
+   "vi": "Nạp phần mềm và dữ liệu",
+   "en": "Loading software and data"
+  },
+  "topic_id": "loading",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>EEC (hay FADEC) là phần cứng đích tiêu biểu của LSAP, cùng DFDAU, ECU của APU và máy tính dẫn hướng bay (FGC). DFLD là dữ liệu nạp được (cơ sở dữ liệu của FMC, TAWS) còn OSS điển hình ở bộ IMA.</p><p>Cách nhớ: EEC chạy mã thực thi cần cho khả phi, nên là bộ phận máy bay.</p>",
+   "en": "<p>The EEC (or FADEC) is a typical LSAP target, with the DFDAU, APU ECU and flight guidance computers (FGC). DFLD is field loadable data (FMC and TAWS databases) and OSS is typical of IMA units.</p><p>Memory aid: the EEC runs executable code needed for airworthiness, so it is an aircraft part.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q5",
+   "en": "Tooley Ch.13 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "OSS và UMS là các lớp cụ thể của:",
+   "en": "OSS and UMS are specific classes of:"
+  },
+  "opts": [
+   {
+    "vi": "DFLD",
+    "en": "DFLD"
+   },
+   {
+    "vi": "LSAP",
+    "en": "LSAP"
+   },
+   {
+    "vi": "FLS",
+    "en": "FLS"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "FLS (field loadable software) có ba loại: LSAP, UMS và OSS.",
+   "en": "FLS (field loadable software) has three types: LSAP, UMS and OSS."
+  },
+  "topic": {
+   "vi": "Nạp phần mềm và dữ liệu",
+   "en": "Loading software and data"
+  },
+  "topic_id": "loading",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>FLS (field loadable software) có ba loại: LSAP, UMS và OSS. DFLD là dữ liệu chứ không phải mã thực thi, nên thuộc loại khác.</p><p>Sơ đồ: FLS ⊃ {LSAP, UMS, OSS}; DFLD đứng riêng.</p>",
+   "en": "<p>FLS (field loadable software) has three types: LSAP, UMS and OSS. DFLD is data, not executable code, so it is a different category.</p><p>Diagram: FLS ⊃ {LSAP, UMS, OSS}; DFLD stands apart.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q6",
+   "en": "Tooley Ch.13 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giai đoạn cuối của việc nạp phần mềm EEC là:",
+   "en": "The final stage of loading EEC software is:"
+  },
+  "opts": [
+   {
+    "vi": "kiểm chứng phần mềm đã nạp",
+    "en": "verifying the loaded software"
+   },
+   {
+    "vi": "bật hệ thống và thử",
+    "en": "switching on and testing the system"
+   },
+   {
+    "vi": "rút PDL",
+    "en": "disconnecting the PDL"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sau khi tháo bộ nạp và nối lại cáp, chạy chương trình kiểm tra bộ nhớ (PASS cho số hiệu và checksum), rồi ghi nhãn (bước 9 và 10).",
+   "en": "After removing the loader and reconnecting the cables, run the memory verification program (PASS for part number and checksums), then mark the plate (steps 9 and 10)."
+  },
+  "topic": {
+   "vi": "Nạp phần mềm và dữ liệu",
+   "en": "Loading software and data"
+  },
+  "topic_id": "loading",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Sau khi tháo bộ nạp và nối lại cáp, chạy chương trình kiểm tra bộ nhớ: PASS cho số hiệu EEC và checksum là đã nạp đúng; sau đó ghi phiên bản, số Service Bulletin và ngày lên nhãn kim loại. Việc rút PDL xảy ra trước bước kiểm chứng, còn \"LOAD COMPLETE\" chỉ nói việc truyền đã xong.</p><p>Bài học: nạp xong chưa phải là đúng, phải kiểm chứng.</p>",
+   "en": "<p>After removing the loader and reconnecting the cables, run the memory verification program: PASS for the EEC part number and checksums means it was loaded correctly; then write the version, Service Bulletin number and date on the metal plate. Removing the PDL happens before the verification step, and \"LOAD COMPLETE\" only says the transfer finished.</p><p>Lesson: loaded is not the same as correct; verify.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.13 Q7",
+   "en": "Tooley Ch.13 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với mã BCD 0111 và parity CHẴN, bit parity là:",
+   "en": "With the BCD code 0111 and EVEN parity, the parity bit is:"
+  },
+  "opts": [
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "Không xác định",
+    "en": "Undetermined"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "0111 có ba bit 1 (lẻ), nên bit parity chẵn phải là 1 để tổng thành bốn (chẵn). Khớp Bảng 2-8 (P = 1 cho 0111).",
+   "en": "0111 has three 1s (odd), so the even parity bit must be 1 to make four (even). Matches Table 2-8 (P = 1 for 0111)."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>0111 có ba bit 1 (lẻ). Để tổng thành chẵn bit parity chẵn phải là 1, đúng Bảng 2-8 của Floyd (P = 1 cho 0111). Nếu đặt 0 thì mã có ba bit 1, vi phạm parity chẵn.</p><p>Công thức nhanh: bit parity chẵn = XOR của các bit dữ liệu.</p>",
+   "en": "<p>0111 has three 1s (odd). To make the total even the even-parity bit must be 1, exactly Floyd Table 2-8 (P = 1 for 0111). Setting 0 would leave three 1s, violating even parity.</p><p>Quick formula: even parity bit = XOR of the data bits.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · mục 2-12, Bảng 2-8 (tr.110)",
+   "en": "Floyd Ch.2 · section 2-12, Table 2-8 (p.110)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Parity có thể phát hiện điều nào sau đây?",
+   "en": "What can a parity bit detect?"
+  },
+  "opts": [
+   {
+    "vi": "Mọi lỗi bất kỳ xảy ra trong nhóm",
+    "en": "Any error whatsoever occurring in the group"
+   },
+   {
+    "vi": "Một lỗi bit (hoặc số lẻ lỗi) trong nhóm",
+    "en": "A single bit error (or an odd number of errors) in the group"
+   },
+   {
+    "vi": "Hai lỗi bit nằm trong cùng một nhóm",
+    "en": "Two bit errors within the same group"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd: parity phát hiện một lỗi bit (hoặc số lẻ lỗi) nhưng không kiểm tra được hai lỗi trong một nhóm.",
+   "en": "Floyd: parity detects a single bit error (or any odd number of errors) but cannot check for two errors in one group."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Parity phát hiện một lỗi bit hoặc số lẻ lỗi vì mỗi lỗi lật tính chẵn lẻ. Hai lỗi trong cùng nhóm lật hai lần nên tổng tính chẵn lẻ không đổi và không phát hiện được. Nó cũng không chỉ ra bit nào sai.</p><p>Giới hạn này giải thích vì sao AFDX dùng CRC thay vì parity.</p>",
+   "en": "<p>Parity detects a single bit error or any odd number of errors because each error flips the parity. Two errors in one group flip it twice so the parity is unchanged and goes undetected. It also does not say which bit is wrong.</p><p>This limit explains why AFDX uses a CRC instead of parity.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · mục 2-12 (tr.110)",
+   "en": "Floyd Ch.2 · section 2-12 (p.110)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong ví dụ CRC của Floyd với D = 11010011 và G = 1010, mã truyền là:",
+   "en": "In Floyd's CRC example with D = 11010011 and G = 1010, the transmitted code is:"
+  },
+  "opts": [
+   {
+    "vi": "110100110000",
+    "en": "110100110000"
+   },
+   {
+    "vi": "110100110100",
+    "en": "110100110100"
+   },
+   {
+    "vi": "110100111010",
+    "en": "110100111010"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Thêm bốn số 0, chia modulo-2 cho 1010 được phần dư 0100; thay bốn số 0 bằng 0100 được 110100110100. Chia lại cho 1010 được dư 0 (đã kiểm bằng code trong notebook).",
+   "en": "Append four zeros, divide modulo-2 by 1010 to get remainder 0100; replacing the four zeros with 0100 gives 110100110100. Dividing again by 1010 leaves 0 (checked in code in the notebook)."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Thêm bốn số 0 cho 11010011 được 110100110000; chia modulo-2 cho 1010 được phần dư 0100; thay bốn số 0 bằng 0100 được mã truyền 110100110100. Chia lại cho 1010 được phần dư 0. 110100110000 là dữ liệu chưa gắn phần dư.</p><p>Đã tự kiểm chứng trong notebook Module 07.</p>",
+   "en": "<p>Appending four zeros to 11010011 gives 110100110000; dividing modulo-2 by 1010 gives remainder 0100; replacing the four zeros with 0100 gives the transmitted code 110100110100. Dividing again by 1010 leaves 0. 110100110000 is the data before the remainder is attached.</p><p>Verified in the Module 07 notebook.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Ví dụ 2-41 (tr.113)",
+   "en": "Floyd Ch.2 · Example 2-41 (p.113)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bên nhận chia dữ liệu nhận được cho mã sinh G và thấy phần dư KHÁC 0. Điều đó nghĩa là:",
+   "en": "The receiver divides the received data by the generator code G and finds a NON-ZERO remainder. This means:"
+  },
+  "opts": [
+   {
+    "vi": "Phải thêm các số 0 rồi chia lại lần nữa",
+    "en": "Append zeros and divide once more"
+   },
+   {
+    "vi": "Không có lỗi nào, dữ liệu được chấp nhận",
+    "en": "There is no error, the data is accepted"
+   },
+   {
+    "vi": "Đã phát hiện lỗi truyền, yêu cầu truyền lại",
+    "en": "A transmission error is detected, request retransmission"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bước 7 của quy trình CRC (Floyd): phần dư khác 0 nghĩa là phát hiện lỗi và bên nhận yêu cầu truyền lại.",
+   "en": "Step 7 of Floyd's CRC process: a non-zero remainder means an error has been detected and the receiver requests retransmission."
+  },
+  "topic": {
+   "vi": "DO-178B/C và truy vết",
+   "en": "DO-178B/C and traceability"
+  },
+  "topic_id": "do178",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bước 7 của quy trình CRC: phần dư khác 0 nghĩa là đã phát hiện lỗi (trong ví dụ 2-42 phần dư 0100) và bên nhận yêu cầu truyền lại. Phần dư 0 mới là không phát hiện lỗi. Không cần thêm số 0 rồi chia lại: bên nhận chỉ chia một lần.</p><p>Lưu ý: có hiếm trường hợp nhiều lỗi triệt tiêu nên phần dư vẫn 0.</p>",
+   "en": "<p>Step 7 of the CRC process: a non-zero remainder means an error is detected (remainder 0100 in Example 2-42) and the receiver requests retransmission. A zero remainder means no error detected. There is no need to append zeros and divide again: the receiver divides once.</p><p>Note: in rare cases multiple errors cancel so the remainder is still 0.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · mục 2-12, quy trình CRC (tr.112)",
+   "en": "Floyd Ch.2 · section 2-12, CRC process (p.112)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Floyd, checksum trong ví dụ kiểm tra ROM được tạo ra bằng cách nào?",
+   "en": "According to Floyd, how is the checksum in the ROM test example produced?"
+  },
+  "opts": [
+   {
+    "vi": "Cộng các cột bit và bỏ bit nhớ (tổng XOR từng cột)",
+    "en": "Summing each column of bits and discarding carries (XOR of each column)"
+   },
+   {
+    "vi": "Chia nội dung ROM cho một mã sinh cố định",
+    "en": "Dividing the ROM contents by a fixed generator code"
+   },
+   {
+    "vi": "Nhân tất cả các từ rồi giữ lại 8 bit thấp nhất",
+    "en": "Multiplying all the words and keeping the low 8 bits"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 11-11: checksum là tổng từng cột bit, bỏ bit nhớ, thực chất là tổng XOR từng cột (Hình 11-74).",
+   "en": "Floyd 11-11: the checksum is the sum of each column of data bits discarding the carries, i.e. the XOR sum of each column (Figure 11-74)."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd 11-11: checksum của ví dụ ROM là tổng từng cột bit bỏ bit nhớ, tức tổng XOR theo cột (hình 11-74). Nhân các từ hay chia cho mã sinh không phải cách tạo checksum này (chia là của CRC).</p><p>XOR theo cột bắt được lỗi 1 bit; hai lỗi cùng cột có thể triệt tiêu.</p>",
+   "en": "<p>Floyd 11-11: the checksum in the ROM example is the sum of each column of bits discarding carries, i.e. the XOR sum by column (Figure 11-74). Multiplying words or dividing by a generator is not how this checksum is made (division belongs to CRC).</p><p>A column XOR catches a single-bit error; two errors in the same column may cancel.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.11 · mục 11-11, kiểm tra ROM bằng checksum",
+   "en": "Floyd Ch.11 · section 11-11, ROM checksum test"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã nào sau đây có parity LẺ bị lỗi? (a) 1011 (b) 1110 (c) 0101 (d) 1000",
+   "en": "Which odd-parity code is in error? (a) 1011 (b) 1110 (c) 0101 (d) 1000"
+  },
+  "opts": [
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "0101",
+    "en": "0101"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Parity lẻ: tổng số bit 1 phải lẻ; 0101 có hai bit 1 (chẵn) nên lỗi.",
+   "en": "Odd parity: the number of 1s must be odd; 0101 has two 1s (even) so it is in error."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Đếm bit 1: 1011 có ba, 1110 có ba, 1000 có một (đều lẻ, hợp lệ); 0101 có hai (chẵn) nên vi phạm parity lẻ. Đã kiểm trong notebook Module 07.</p><p>Để kiểm nhanh: XOR các bit; kết quả 1 nghĩa là số bit 1 lẻ.</p>",
+   "en": "<p>Counting 1s: 1011 has three, 1110 has three, 1000 has one (all odd, valid); 0101 has two (even) so it violates odd parity. Checked in the Module 07 notebook.</p><p>Quick test: XOR the bits; a result of 1 means an odd count of 1s.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Section 2-12 Checkup #1 (tr.114)",
+   "en": "Floyd Ch.2 · Section 2-12 Checkup #1 (p.114)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã nào sau đây có parity CHẴN bị lỗi? (a) 11000110 (b) 00101000 (c) 10101010 (d) 11111011",
+   "en": "Which even-parity code is in error? (a) 11000110 (b) 00101000 (c) 10101010 (d) 11111011"
+  },
+  "opts": [
+   {
+    "vi": "11000110",
+    "en": "11000110"
+   },
+   {
+    "vi": "10101010",
+    "en": "10101010"
+   },
+   {
+    "vi": "11111011",
+    "en": "11111011"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "11111011 có bảy bit 1 (lẻ), vi phạm parity chẵn.",
+   "en": "11111011 has seven 1s (odd), violating even parity."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>11000110 có bốn, 00101000 có hai, 10101010 có bốn (đều chẵn, hợp lệ). Chỉ 11111011 có số lẻ bit 1. Parity chỉ phát hiện lỗi, không sửa và không biết bit nào sai.</p><p>Đã kiểm bằng code.</p>",
+   "en": "<p>11000110 has four, 00101000 has two, 10101010 has four (all even, valid). Only 11111011 has an odd count of 1s. Parity only detects the error, does not correct it, and does not say which bit is wrong.</p><p>Checked in code.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Section 2-12 Checkup #2 (tr.114)",
+   "en": "Floyd Ch.2 · Section 2-12 Checkup #2 (p.114)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thêm bit parity chẵn vào cuối mã 1010100 (có ba bit 1). Mã nhận được là:",
+   "en": "Add an even parity bit to the end of the code 1010100 (three 1s). The resulting code is:"
+  },
+  "opts": [
+   {
+    "vi": "11010100",
+    "en": "11010100"
+   },
+   {
+    "vi": "10101000",
+    "en": "10101000"
+   },
+   {
+    "vi": "10101001",
+    "en": "10101001"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ba bit 1 là lẻ nên bit parity chẵn bằng 1: 10101001.",
+   "en": "Three 1s is odd so the even parity bit is 1: 10101001."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Muốn tổng số bit 1 chẵn thì thêm 1 vào mã có số lẻ bit 1. Các ý khác của bài: 0100000 → 01000001, 1110111 → 11101110, 1000110 → 10001101 (đã kiểm). Phương án có bit 0 giữ nguyên ba bit 1 nên vẫn lẻ; phương án thứ ba đặt bit ở đầu thay vì cuối.</p><p>Đặt bit parity ở đầu hay ở cuối tuỳ thiết kế hệ thống.</p>",
+   "en": "<p>To make the count of 1s even, add a 1 to a code with an odd count. The other parts of the problem: 0100000 → 01000001, 1110111 → 11101110, 1000110 → 10001101 (checked). The option with a 0 bit keeps three 1s so it stays odd; the third puts the bit at the front instead of the end.</p><p>Putting the parity bit first or last is a system design choice.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Section 2-12 Checkup #3(a) (tr.114)",
+   "en": "Floyd Ch.2 · Section 2-12 Checkup #3(a) (p.114)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong phép toán modulo-2 của Floyd, 1 + 1 bằng bao nhiêu?",
+   "en": "In Floyd's modulo-2 operation, what is 1 + 1?"
+  },
+  "opts": [
+   {
+    "vi": "10",
+    "en": "10"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "0 (bỏ bit nhớ)",
+    "en": "0 (carry discarded)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Modulo-2 là cộng nhị phân bỏ bit nhớ, chính là cổng XOR (Bảng 2-9).",
+   "en": "Modulo-2 is binary addition with the carry discarded, which is the XOR gate (Table 2-9)."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bảng 2-9: 00 → 0, 01 → 1, 10 → 1, 11 → 0. Cộng nhị phân thường cho 1 + 1 = 10 (có nhớ), nhưng modulo-2 bỏ nhớ nên còn 0. Quy tắc đơn giản: ra 1 nếu hai bit khác nhau. Đây là phép tính dùng khi chia CRC.</p><p>Trừ modulo-2 giống hệt cộng modulo-2.</p>",
+   "en": "<p>Table 2-9: 00 → 0, 01 → 1, 10 → 1, 11 → 0. Ordinary binary addition gives 1 + 1 = 10 (with carry) but modulo-2 discards the carry leaving 0. Simple rule: the output is 1 if the two bits differ. This is the operation used in CRC division.</p><p>Modulo-2 subtraction is identical to modulo-2 addition.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Section 2-12 Checkup #5 và Bảng 2-9",
+   "en": "Floyd Ch.2 · Section 2-12 Checkup #5 and Table 2-9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong Ví dụ 2-42 của Floyd, dữ liệu nhận được là 100100110100 (đã lỗi một bit) và mã sinh G = 1010. Phần dư khi chia là:",
+   "en": "In Floyd Example 2-42 the received data is 100100110100 (one bit in error) with generator G = 1010. The remainder of the division is:"
+  },
+  "opts": [
+   {
+    "vi": "0100 (khác 0, phát hiện lỗi)",
+    "en": "0100 (non-zero, error detected)"
+   },
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "0000 (không lỗi)",
+    "en": "0000 (no error)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chia modulo-2 cho 1010 cho phần dư 0100, khác 0.",
+   "en": "Dividing modulo-2 by 1010 gives remainder 0100, non-zero."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mã truyền đúng là 110100110100; bit thứ hai từ trái bị lật (1 thành 0) cho 100100110100. Phần dư khác 0 nghĩa là bên nhận phát hiện lỗi và yêu cầu truyền lại. Nếu hai lỗi triệt tiêu thì phần dư có thể là 0 (hiếm).</p><p>Đã tính lại trong notebook.</p>",
+   "en": "<p>The correct transmitted code is 110100110100; the second bit from the left was flipped (1 to 0) giving 100100110100. A non-zero remainder means the receiver detects the error and requests retransmission. If two errors cancel the remainder could be 0 (rare).</p><p>Recomputed in the notebook.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Ví dụ 2-42 (tr.114)",
+   "en": "Floyd Ch.2 · Example 2-42 (p.114)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Mã Hamming dùng để phát hiện và sửa một lỗi bit trong mã truyền.",
+   "en": "The Hamming code is used to detect and correct a single-bit error in a transmitted code."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng: Floyd tr.114.",
+   "en": "True: Floyd p.114."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mã Hamming đưa bốn bit dư thừa vào nhóm 7 bit dữ liệu, đặt ở các vị trí 2ⁿ (n = 0, 1, 2, 3). Khác parity (chỉ phát hiện) và CRC (phát hiện), Hamming còn xác định vị trí bit lỗi để sửa. Floyd nói phiên bản cổ điển nằm trên website của sách.</p>",
+   "en": "<p>The Hamming code introduces four redundancy bits into a 7-bit group of data bits, at positions 2ⁿ (n = 0, 1, 2, 3). Unlike parity (detect only) and CRC (detect), Hamming also locates the bad bit so it can be corrected. Floyd says the classic version is on the book's website.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · mục 2-12, Hamming Code (tr.114)",
+   "en": "Floyd Ch.2 · section 2-12, Hamming Code (p.114)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Theo Floyd, CRC dựa trên phép chia đa thức dùng phép toán modulo-2.",
+   "en": "According to Floyd the CRC is based on polynomial division using modulo-2 operations."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng (Summary chương 2).",
+   "en": "True (chapter 2 Summary)."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bên gửi thêm các số 0 vào dữ liệu, chia cho mã sinh, thay các số 0 bằng phần dư; bên nhận chia lại, dư 0 nghĩa là không phát hiện lỗi. Chương này của Floyd và Tooley 13.4 cùng mô tả ý tưởng \"gắn phần dư để kiểm tra\".</p>",
+   "en": "<p>The sender appends zeros to the data, divides by the generator and replaces the zeros with the remainder; the receiver divides again and a zero remainder means no error detected. Floyd's chapter and Tooley 13.4 describe the same idea of attaching a remainder for checking.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · Summary",
+   "en": "Floyd Ch.2 · Summary"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Parity có thể phát hiện hai lỗi bit trong cùng một nhóm.",
+   "en": "A parity bit can detect two bit errors in the same group."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: parity chỉ phát hiện một lỗi (hoặc số lẻ lỗi).",
+   "en": "False: parity detects a single error (or an odd number of errors)."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum, CRC",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Hai lỗi lật tính chẵn lẻ hai lần nên không đổi. Đây là lý do với phần mềm quan trọng người ta dùng CRC thay vì chỉ parity hay checksum đơn giản (xem Demo ở Module 07).</p>",
+   "en": "<p>Two errors flip the parity twice so it is unchanged. That is why for critical software a CRC is used rather than only parity or a simple checksum (see the demo in Module 07).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.2 · mục 2-12 (tr.110)",
+   "en": "Floyd Ch.2 · section 2-12 (p.110)"
+  }
+ }
+]

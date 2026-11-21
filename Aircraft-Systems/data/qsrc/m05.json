@@ -1,0 +1,1419 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bus hỗ trợ truyền dữ liệu theo cả hai chiều được gọi là:",
+   "en": "A bus that supports the transfer of data in both directions is referred to as:"
+  },
+  "opts": [
+   {
+    "vi": "bus không đồng bộ (asynchronous)",
+    "en": "asynchronous"
+   },
+   {
+    "vi": "bus hai chiều (bidirectional)",
+    "en": "bidirectional"
+   },
+   {
+    "vi": "bus vạn năng (universal)",
+    "en": "universal"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bus truyền được cả 2 chiều gọi là bidirectional (vd ARINC 629, AFDX, MIL-STD-1553); riêng ARINC 429 chỉ truyền 1 chiều (unidirectional).",
+   "en": "A bus that can carry data both ways is called bidirectional (e.g. ARINC 629, AFDX, MIL-STD-1553); ARINC 429 by contrast is unidirectional only."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bus hai chiều (bidirectional) cho phép cùng một đường truyền mang dữ liệu theo cả hai hướng (ở các thời điểm khác nhau), như ARINC 629, AFDX và MIL-STD-1553. \"Universal\" không phải thuật ngữ về hướng truyền, còn \"asynchronous\" mô tả cách đồng bộ chứ không phải hướng.</p><p>Ngược lại ARINC 429 là bus một chiều: muốn hai LRU trao đổi qua lại phải dùng hai kênh 429 riêng biệt.</p>",
+   "en": "<p>A bidirectional bus lets one line carry data in both directions (at different times), like ARINC 629, AFDX and MIL-STD-1553. \"Universal\" is not a term about direction and \"asynchronous\" describes synchronisation, not direction.</p><p>By contrast ARINC 429 is one-way: for two LRUs to exchange data both ways you need two separate 429 channels.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q1",
+   "en": "Tooley Ch.4 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ưu điểm chính của việc dùng bus nối tiếp (serial bus) trên máy bay là:",
+   "en": "The main advantage of using a serial bus in an aircraft is:"
+  },
+  "opts": [
+   {
+    "vi": "giảm kích thước và khối lượng dây dẫn",
+    "en": "reduction in the size and weight of cabling"
+   },
+   {
+    "vi": "hỗ trợ tốc độ dữ liệu cao nhất có thể",
+    "en": "it supports the highest possible data rates"
+   },
+   {
+    "vi": "không cần mạch chuyển đổi dữ liệu",
+    "en": "there is no need for data conversion"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bus nối tiếp chỉ cần 1-2 đôi dây dẫn thay vì hàng chục dây song song, giảm mạnh khối lượng và không gian lắp đặt, đúng như lý do số 1 nêu ở slide bài giảng (giảm dây, giảm khối lượng).",
+   "en": "A serial bus needs only one or two wire pairs instead of dozens of parallel wires, sharply cutting weight and installation space, matching reason #1 in the lecture slide (fewer wires, lower weight)."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Bus nối tiếp truyền từng bit trên 1 đến 2 đôi dây nên giảm mạnh số dây, khối lượng và kích thước cáp, đúng với lý do số 1 trong 6 lý do dùng bus của bài giảng. Nó không loại bỏ nhu cầu chuyển đổi dữ liệu (cần bộ nối tiếp hoá/song song hoá), và tốc độ cao nhất cũng không phải lợi thế đặc trưng của bus nối tiếp.</p><p>Cách nhớ: nối tiếp thì ít dây, ít dây thì nhẹ.</p>",
+   "en": "<p>A serial bus sends bit by bit over one or two wire pairs, so it cuts the number of wires, weight and cable size, which is reason 1 of the lecture's six reasons for using buses. It does not remove the need for data conversion (serialisers and deserialisers are needed), and the highest possible speed is not its defining advantage.</p><p>Memory aid: serial means few wires, few wires means light.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q2",
+   "en": "Tooley Ch.4 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thiết bị nào dùng để giảm thiểu phản xạ tín hiệu (reflections) trên dây bus?",
+   "en": "Which one of the following is used to minimise reflections present in a bus cable:"
+  },
+  "opts": [
+   {
+    "vi": "tấm nối (coupler panel)",
+    "en": "coupler panels"
+   },
+   {
+    "vi": "cáp xoắn đôi có vỏ bọc (shielded twisted pair)",
+    "en": "shielded twisted pair cables"
+   },
+   {
+    "vi": "điện trở đầu cuối bus (bus terminator)",
+    "en": "bus terminators"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Điện trở đầu cuối (terminator, vd 78Ω ở 2 đầu bus ARINC 629 theo đúng slide bài giảng) hấp thụ tín hiệu tới cuối dây, tránh phản xạ ngược gây nhiễu.",
+   "en": "A terminating resistor (e.g. 78Ω at both ends of the ARINC 629 bus, per the lecture slide) absorbs the signal at the end of the cable, preventing reflections that would otherwise cause interference."
+  },
+  "topic": {
+   "vi": "ARINC 629 và các bus hai chiều",
+   "en": "ARINC 629 and bidirectional buses"
+  },
+  "topic_id": "arinc629",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Khi tín hiệu chạy đến cuối dây mà trở kháng không khớp, một phần bị phản xạ ngược gây méo. Điện trở đầu cuối (terminator) có giá trị bằng trở kháng đặc tính của cáp, hấp thụ tín hiệu tới đầu dây nên không còn phản xạ. Bài giảng nêu ví dụ 78 Ω ở hai đầu bus ARINC 629.</p><p>Tấm nối (coupler) dùng để ghép thiết bị vào bus; cáp xoắn đôi có vỏ bọc chống nhiễu ngoài chứ không xử lý phản xạ.</p>",
+   "en": "<p>When a signal reaches the end of a line whose impedance does not match, part of it reflects back and distorts the data. A terminator equal to the cable's characteristic impedance absorbs the arriving signal so nothing reflects. The lecture gives 78 Ω at both ends of an ARINC 629 bus.</p><p>A coupler attaches devices to the bus; a shielded twisted pair rejects outside noise but does not deal with reflections.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q3",
+   "en": "Tooley Ch.4 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Định dạng dữ liệu trên dây nhánh (stub cable) của ARINC 429 là:",
+   "en": "The data format in an ARINC 429 stub cable consists of:"
+  },
+  "opts": [
+   {
+    "vi": "dữ liệu song song từ bus nội bộ",
+    "en": "parallel data from the local bus"
+   },
+   {
+    "vi": "dữ liệu nối tiếp mã hoá Manchester",
+    "en": "Manchester-encoded serial data"
+   },
+   {
+    "vi": "cặp tín hiệu tương tự nối tiếp (serial analogue doublets)",
+    "en": "serial analogue doublets"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Theo đúng đáp án sách Tooley, dây nhánh ARINC 429 mang \"serial analogue doublets\": các cặp xung điện áp tương tự nối tiếp nhau, KHÔNG phải dữ liệu mã hoá Manchester (dễ nhầm vì Manchester là mã hoá của một chuẩn bus khác, ARINC 708/573).",
+   "en": "Per Tooley's own answer key, the ARINC 429 stub cable carries \"serial analogue doublets\": successive pairs of analogue voltage pulses, NOT Manchester-encoded data (easy to confuse, since Manchester is the encoding used by a different bus standard, ARINC 708/573)."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Theo đáp án in của Tooley, dây nhánh (stub) ARINC 429 mang \"serial analogue doublets\": các cặp xung điện áp tương tự nối tiếp. Đây là điểm dễ nhầm vì có người nghĩ mã Manchester; Manchester là mã của ARINC 708 chứ không phải 429. Dữ liệu song song từ bus nội bộ là hình thức bên trong LRU, không phải trên cáp 429.</p><p>Lưu ý: câu này dựa vào cách diễn đạt riêng của sách; nếu tự học chỉ cần nhớ 429 là nối tiếp, mã BPRZ.</p>",
+   "en": "<p>Per Tooley's printed answer, the ARINC 429 stub cable carries \"serial analogue doublets\": pairs of analogue voltage pulses in series. People tend to answer Manchester, but Manchester belongs to ARINC 708, not 429. Parallel data from an internal bus is how data looks inside an LRU, not on the 429 cable.</p><p>Note: this question relies on the book's own wording; for study, just remember 429 is serial and uses BPRZ.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q4",
+   "en": "Tooley Ch.4 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để biểu diễn giá trị âm, dữ liệu BNR dùng:",
+   "en": "In order to represent negative data values, BNR data uses:"
+  },
+  "opts": [
+   {
+    "vi": "số nhị phân bù hai (two's complement)",
+    "en": "two's complement binary"
+   },
+   {
+    "vi": "dữ liệu BCD kèm bit dấu nhị phân",
+    "en": "BCD data and a binary sign bit"
+   },
+   {
+    "vi": "thêm 1 bit chẵn lẻ để chỉ dấu",
+    "en": "an extra parity bit to indicate the sign"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "BNR (Binary Number Representation) mã hoá số nguyên có dấu bằng bù hai trên 19 bit trường Data, với bit 29 (MSB của trường Data) là bit dấu.",
+   "en": "BNR (Binary Number Representation) encodes a signed integer using two's complement across the 19-bit Data field, with bit 29 (the Data field's MSB) acting as the sign bit."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>BNR (Binary Number Representation) mã hoá số nguyên có dấu bằng bù hai trên trường Data 19 bit, bit 29 (MSB của Data) là bit dấu. BCD dùng 4 bit cho mỗi chữ số thập phân và có bit dấu riêng, không phải cách BNR biểu diễn âm. Một bit chẵn lẻ (parity) dùng để phát hiện lỗi truyền chứ không chỉ dấu của dữ liệu.</p><p>Ví dụ: -100 viết 19 bit bù hai là 1111111111110011100.</p>",
+   "en": "<p>BNR (Binary Number Representation) encodes signed integers in two's complement over the 19-bit Data field, with bit 29 (the MSB of Data) as the sign bit. BCD uses 4 bits per decimal digit with a separate sign, which is not how BNR shows negatives. A parity bit detects transmission errors; it does not indicate the sign of the data.</p><p>Example: -100 in 19-bit two's complement is 1111111111110011100.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q5",
+   "en": "Tooley Ch.4 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Môi trường truyền vật lý quy định cho ARINC 629 là:",
+   "en": "The physical bus media specified in ARINC 629 is:"
+  },
+  "opts": [
+   {
+    "vi": "cáp đồng trục (coaxial cable)",
+    "en": "coaxial cable"
+   },
+   {
+    "vi": "cáp quang (fibre-optic)",
+    "en": "fibre-optic"
+   },
+   {
+    "vi": "cáp xoắn đôi có vỏ bọc (shielded twisted pair)",
+    "en": "shielded twisted pair"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ARINC 629 dùng cáp xoắn đôi có vỏ bọc (STP), giống ARINC 429 về vật lý cáp nhưng khác hẳn về giao thức (2 Mbps, hai chiều, không cần bộ điều khiển trung tâm).",
+   "en": "ARINC 629 uses shielded twisted pair (STP) cable, physically similar to ARINC 429, but with a very different protocol (2 Mbps, bidirectional, no central bus controller needed)."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ARINC 629 dùng cáp xoắn đôi có vỏ bọc (STP), giống ARINC 429 về vật lý nhưng khác hoàn toàn về giao thức (2 Mbps, hai chiều, TDMA, không cần bộ điều khiển trung tâm). Cáp quang thuộc về các chuẩn như MIL-STD-1773B hoặc FDDI; cáp đồng trục dùng cho tín hiệu RF và ARINC 708.</p><p>Hai chuẩn khác nhau có thể dùng cùng loại cáp; phân biệt bằng giao thức, không bằng dây.</p>",
+   "en": "<p>ARINC 629 uses shielded twisted pair (STP), the same physical cable as ARINC 429 but a completely different protocol (2 Mbps, two-way, TDMA, no central controller). Fibre belongs to standards such as MIL-STD-1773B or FDDI; coaxial cable serves RF signals and ARINC 708.</p><p>Two standards can share one cable type; tell them apart by protocol, not by wire.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q6",
+   "en": "Tooley Ch.4 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tính hợp lệ của một từ dữ liệu ARINC 429 được kiểm tra bằng:",
+   "en": "The validity of an ARINC 429 data word is checked by using:"
+  },
+  "opts": [
+   {
+    "vi": "bit chẵn lẻ (parity bit)",
+    "en": "a parity bit"
+   },
+   {
+    "vi": "dự phòng bội (multiple redundancy)",
+    "en": "multiple redundancy"
+   },
+   {
+    "vi": "checksum",
+    "en": "a checksum"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bit cuối cùng (bit 32) của từ 32-bit là bit parity lẻ (odd parity): tổng số bit 1 trong cả từ luôn là số lẻ, giúp bên nhận phát hiện lỗi 1-bit đơn giản.",
+   "en": "The last bit (bit 32) of the 32-bit word is an odd-parity bit: the total count of 1-bits across the whole word is always odd, letting the receiver detect simple single-bit errors."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Từ ARINC 429 32 bit có bit cuối (bit 32) là parity lẻ: tổng số bit 1 trong cả từ luôn là số lẻ, nên bên nhận chỉ cần đếm là biết có lỗi 1 bit. Checksum và dự phòng bội (multiple redundancy) là cơ chế của các hệ khác (ví dụ CRC của AFDX), không phải của từ 429.</p><p>Giới hạn: parity 1 bit không phát hiện được số chẵn bit lỗi.</p>",
+   "en": "<p>The last bit (bit 32) of the 32-bit ARINC 429 word is odd parity: the number of 1s in the whole word is always odd, so the receiver only has to count to spot a single-bit error. Checksums and multiple redundancy belong to other systems (for example AFDX's CRC), not to a 429 word.</p><p>Limit: one parity bit cannot detect an even number of bit errors.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q7",
+   "en": "Tooley Ch.4 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trường Label trong một từ dữ liệu ARINC 429 gồm:",
+   "en": "The label field in an ARINC 429 data word consists of:"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "eight bits"
+   },
+   {
+    "vi": "5 bit",
+    "en": "five bits"
+   },
+   {
+    "vi": "3 bit",
+    "en": "three bits"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Label chiếm đúng 8 bit (bit 1-8), đủ để mã hoá 256 loại dữ liệu khác nhau (0-255), vd Label 203 = tốc độ bay theo bảng nhãn ví dụ của bài giảng.",
+   "en": "The Label occupies exactly 8 bits (bits 1-8), enough to encode 256 different data types (0-255), e.g. Label 203 = airspeed in the lecture's example label table."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Trường Label dài đúng 8 bit (bit 1 đến 8), đủ cho 256 giá trị nhãn, ví dụ Label 203 là tốc độ bay chỉ thị. 5 hay 3 bit đều quá ít, và 8+2+19+2+1 = 32 cho thấy các trường khớp tổng độ dài từ.</p><p>Mẹo: nhớ \"Label 8 bit, SDI 2, Data 19, SSM 2, Parity 1\".</p>",
+   "en": "<p>The Label field is exactly 8 bits (bits 1 to 8), enough for 256 label values, for example Label 203 is indicated airspeed. 5 or 3 bits would be too few, and 8+2+19+2+1 = 32 shows the fields add up to the word length.</p><p>Tip: remember \"Label 8, SDI 2, Data 19, SSM 2, Parity 1\".</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q8",
+   "en": "Tooley Ch.4 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các mức điện áp xuất hiện trên cáp bus ARINC 429 là:",
+   "en": "The voltages present on an ARINC 429 data bus cable are:"
+  },
+  "opts": [
+   {
+    "vi": "±5V",
+    "en": "±5V"
+   },
+   {
+    "vi": "±15V",
+    "en": "±15V"
+   },
+   {
+    "vi": "+5V và +10V",
+    "en": "+5V and +10V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi dây dẫn (A hoặc B) mang điện áp +5V, 0V hoặc -5V so với đất; điện áp VI SAI giữa 2 dây mới đạt ±10V. Đề hỏi điện áp TRÊN CÁP (từng dây), nên đáp án là ±5V.",
+   "en": "Each conductor (A or B) carries +5V, 0V or -5V with respect to ground; only the DIFFERENTIAL voltage between the two wires reaches ±10V. The question asks about the voltage ON THE CABLE (each wire), so the answer is ±5V."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mỗi dây A hoặc B mang +5 V, 0 V hoặc -5 V so với đất; chỉ điện áp vi sai giữa hai dây mới đạt ±10 V. Đề hỏi điện áp trên cáp, tức từng dây, nên đáp án ±5 V. Phương án +5 V và +10 V thiếu mức âm; ±15 V không phải mức của chuẩn.</p><p>Bẫy kinh điển: nhầm ±10 V (vi sai) với điện áp từng dây.</p>",
+   "en": "<p>Each wire A or B carries +5 V, 0 V or -5 V relative to ground; only the differential voltage between the two reaches ±10 V. The question asks about the cable, i.e. each wire, so the answer is ±5 V. +5 V and +10 V lack the negative level; ±15 V is not a level of the standard.</p><p>Classic trap: mixing ±10 V (differential) with the voltage of each wire.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q9",
+   "en": "Tooley Ch.4 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tốc độ bit tối đa mà ARINC 429 hỗ trợ là:",
+   "en": "The maximum bit rate supported by ARINC 429 is:"
+  },
+  "opts": [
+   {
+    "vi": "12,5 kbps",
+    "en": "12.5 kbps"
+   },
+   {
+    "vi": "1 Mbps",
+    "en": "1 Mbps"
+   },
+   {
+    "vi": "100 kbps",
+    "en": "100 kbps"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ARINC 429 có 2 tốc độ: low speed 12,5 kbps (phổ biến nhất) và high speed 100 kbps (tốc độ TỐI ĐA được hỗ trợ).",
+   "en": "ARINC 429 has two speeds: low speed 12.5 kbps (most common) and high speed 100 kbps, which is the MAXIMUM rate supported."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ARINC 429 có hai tốc độ: thấp 12,5 kbps (phổ biến nhất) và cao 100 kbps. Tốc độ tối đa được hỗ trợ là 100 kbps. 12,5 kbps là tốc độ thấp, còn 1 Mbps là mức của MIL-STD-1553.</p><p>Thời gian truyền một từ ở 100 kbps là 32/100 000 = 0,32 ms.</p>",
+   "en": "<p>ARINC 429 has two speeds: low 12.5 kbps (the most common) and high 100 kbps. The maximum supported is 100 kbps. 12.5 kbps is the low speed, and 1 Mbps is the MIL-STD-1553 figure.</p><p>Transmitting one word at 100 kbps takes 32/100,000 = 0.32 ms.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q10",
+   "en": "Tooley Ch.4 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trạng thái NULL của ARINC 429 được biểu diễn bằng:",
+   "en": "An ARINC 429 NULL state is represented by:"
+  },
+  "opts": [
+   {
+    "vi": "điện áp 0V",
+    "en": "a voltage of 0V"
+   },
+   {
+    "vi": "điện áp -5V",
+    "en": "a voltage of -5V"
+   },
+   {
+    "vi": "điện áp +5V",
+    "en": "a voltage of +5V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "NULL (không có dữ liệu) tương ứng cả 2 dây A và B đều ở 0V, khác hẳn bit 1 (A=+5V,B=-5V) và bit 0 (A=-5V,B=+5V).",
+   "en": "NULL (no data present) corresponds to both wires A and B sitting at 0V, distinct from bit 1 (A=+5V, B=-5V) and bit 0 (A=-5V, B=+5V)."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>NULL là trạng thái không truyền dữ liệu: cả hai dây A và B ở 0 V. Bit 1 là A = +5 V, B = -5 V; bit 0 là A = -5 V, B = +5 V (đảo ngược). Vì giữa hai bit luôn có trạng thái NULL nên mã gọi là Return to Zero.</p><p>Hãy nhớ: NULL không phải là bit 0.</p>",
+   "en": "<p>NULL is the no-data state: both wires A and B at 0 V. Bit 1 is A = +5 V, B = -5 V; bit 0 is A = -5 V, B = +5 V (reversed). Because a NULL state always sits between bits, the code is called Return to Zero.</p><p>Remember: NULL is not the same as a 0 bit.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q11",
+   "en": "Tooley Ch.4 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tốc độ dữ liệu tối đa mà MIL-STD-1553 hỗ trợ là:",
+   "en": "The maximum data rate supported by MIL-STD-1553 is:"
+  },
+  "opts": [
+   {
+    "vi": "12,5 kbps",
+    "en": "12.5 kbps"
+   },
+   {
+    "vi": "1 Mbps",
+    "en": "1 Mbps"
+   },
+   {
+    "vi": "100 kbps",
+    "en": "100 kbps"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "MIL-STD-1553B hỗ trợ 1 Mbps, nhanh hơn ARINC 429 (tối đa 100 kbps) nhưng chậm hơn ARINC 629 (2 Mbps) và AFDX (100 Mbps).",
+   "en": "MIL-STD-1553B supports 1 Mbps, faster than ARINC 429 (max 100 kbps) but slower than ARINC 629 (2 Mbps) and AFDX (100 Mbps)."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>MIL-STD-1553B hỗ trợ 1 Mbps: nhanh hơn ARINC 429 (tối đa 100 kbps) nhưng chậm hơn ARINC 629 (2 Mbps) và AFDX (100 Mbps). Hai phương án còn lại (12,5 kbps, 100 kbps) là tốc độ của ARINC 429.</p><p>Thứ tự tốc độ: 429 < 1553 < 629 < AFDX.</p>",
+   "en": "<p>MIL-STD-1553B supports 1 Mbps: faster than ARINC 429 (up to 100 kbps) but slower than ARINC 629 (2 Mbps) and AFDX (100 Mbps). The other two options (12.5 kbps, 100 kbps) are ARINC 429 speeds.</p><p>Speed order: 429 < 1553 < 629 < AFDX.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q12",
+   "en": "Tooley Ch.4 Q12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bus tự tạo xung nhịp từ chính tín hiệu dữ liệu (không cần đường clock riêng) được gọi là:",
+   "en": "A bus that is self-clocking is referred to as:"
+  },
+  "opts": [
+   {
+    "vi": "vạn năng (universal)",
+    "en": "universal"
+   },
+   {
+    "vi": "tự đồng bộ (asynchronous)",
+    "en": "asynchronous"
+   },
+   {
+    "vi": "hai chiều (bidirectional)",
+    "en": "bidirectional"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mã hoá BPRZ của ARINC 429 luôn có 1 cạnh chuyển mức giữa mỗi bit (về 0V), nên bên nhận tự tách được nhịp từ chính tín hiệu, không cần đường dây clock riêng: đây là tính chất self-clocking.",
+   "en": "ARINC 429's BPRZ encoding always has a transition in the middle of every bit (return to 0V), so the receiver can recover timing from the signal itself with no separate clock wire: this is the self-clocking property."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Mã BPRZ luôn có một cạnh chuyển mức về 0 V giữa mỗi bit, nên bên nhận tách nhịp trực tiếp từ tín hiệu dữ liệu mà không cần dây clock riêng: đó là tính chất self-clocking. Sách Tooley dùng từ \"asynchronous\" cho khái niệm này (không có clock riêng chung hai bên). \"Bidirectional\" và \"universal\" không liên quan đến việc tạo nhịp.</p><p>Lưu ý đáp án theo cách dùng từ của sách.</p>",
+   "en": "<p>BPRZ coding always has a transition to 0 V between bits, so the receiver recovers timing from the data signal itself with no separate clock wire: this is the self-clocking property. Tooley uses the word \"asynchronous\" for this idea (no shared clock line between the two ends). \"Bidirectional\" and \"universal\" have nothing to do with timing.</p><p>Note the answer follows the book's wording.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q13",
+   "en": "Tooley Ch.4 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Môi trường truyền vật lý quy định cho MIL-STD-1773B là:",
+   "en": "The physical bus media specified in MIL-STD-1773B is:"
+  },
+  "opts": [
+   {
+    "vi": "cáp đồng trục (coaxial cable)",
+    "en": "coaxial cable"
+   },
+   {
+    "vi": "cáp xoắn đôi có vỏ bọc (shielded twisted pair)",
+    "en": "shielded twisted pair"
+   },
+   {
+    "vi": "cáp quang (fibre-optic)",
+    "en": "fibre-optic"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "MIL-STD-1773B là phiên bản cáp quang của MIL-STD-1553B, cho khả năng chống nhiễu điện từ cường độ cao (HIRF) tốt hơn hẳn cáp đồng.",
+   "en": "MIL-STD-1773B is the fibre-optic implementation of MIL-STD-1553B, giving much greater immunity to high-intensity radiated electromagnetic fields (HIRF) than copper cable."
+  },
+  "topic": {
+   "vi": "ARINC 629 và các bus hai chiều",
+   "en": "ARINC 629 and bidirectional buses"
+  },
+  "topic_id": "arinc629",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>MIL-STD-1773B là phiên bản cáp quang của MIL-STD-1553B, cho khả năng chống nhiễu điện từ và HIRF tốt hơn đồng. Hai phương án đồng trục và xoắn đôi bọc là môi trường vật lý của các chuẩn đồng (1553B dùng xoắn đôi bọc).</p><p>Mẹo: số 1773 = 1553 trên sợi quang.</p>",
+   "en": "<p>MIL-STD-1773B is the fibre-optic version of MIL-STD-1553B, giving much better immunity to electromagnetic interference and HIRF than copper. Coaxial and shielded twisted pair are the physical media of copper standards (1553B uses shielded twisted pair).</p><p>Tip: 1773 is 1553 on optical fibre.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q14",
+   "en": "Tooley Ch.4 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ dài một từ dữ liệu ARINC 429 là:",
+   "en": "The length of an ARINC 429 word is:"
+  },
+  "opts": [
+   {
+    "vi": "20 bit",
+    "en": "20 bits"
+   },
+   {
+    "vi": "16 bit",
+    "en": "16 bits"
+   },
+   {
+    "vi": "32 bit",
+    "en": "32 bits"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Từ dữ liệu ARINC 429 luôn dài 32 bit: Label(8)+SDI(2)+Data(19)+SSM(2)+Parity(1) = 32.",
+   "en": "An ARINC 429 word is always 32 bits long: Label(8)+SDI(2)+Data(19)+SSM(2)+Parity(1) = 32."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Từ dữ liệu ARINC 429 luôn dài 32 bit: Label 8 + SDI 2 + Data 19 + SSM 2 + Parity 1 = 32. 16 bit và 20 bit không phải kích thước của chuẩn. ARINC 629 mới có khung 52 bit.</p><p>Giữ con số 32 để tính thời gian truyền t = 32/R.</p>",
+   "en": "<p>An ARINC 429 data word is always 32 bits: Label 8 + SDI 2 + Data 19 + SSM 2 + Parity 1 = 32. 16 and 20 bits are not the standard's size. ARINC 629 has the 52-bit frame.</p><p>Keep 32 for the transmission time t = 32/R.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q15",
+   "en": "Tooley Ch.4 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ARINC 573 được thiết kế để dùng với:",
+   "en": "ARINC 573 is designed for use with:"
+  },
+  "opts": [
+   {
+    "vi": "thiết bị ghi dữ liệu chuyến bay (FDR)",
+    "en": "FDR"
+   },
+   {
+    "vi": "hệ thống dẫn đường quán tính (INS)",
+    "en": "INS"
+   },
+   {
+    "vi": "radar thời tiết (weather radar)",
+    "en": "weather radar"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ARINC 573 là chuẩn cho thiết bị ghi dữ liệu chuyến bay (Flight Data Recorder), dùng mã hoá Harvard Bi-Phase 12-bit; ARINC 717 sau này thay thế ARINC 573.",
+   "en": "ARINC 573 is the standard for Flight Data Recorders (FDR), using 12-bit Harvard Bi-Phase encoding; ARINC 717 later superseded ARINC 573."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về bus",
+   "en": "General bus concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>ARINC 573 là chuẩn cho thiết bị ghi dữ liệu chuyến bay (FDR), dùng mã Harvard Bi-Phase 12 bit; ARINC 717 sau này thay nó. Hệ dẫn đường quán tính và radar thời tiết dùng chuẩn khác (radar thời tiết là ARINC 708).</p><p>Bộ ba cần phân biệt: 573/717 = FDR, 708 = radar thời tiết, 429 = avionics cơ bản.</p>",
+   "en": "<p>ARINC 573 is the standard for flight data recorders (FDR), using Harvard Bi-Phase coding at 12 bits; ARINC 717 later replaced it. Inertial navigation and weather radar use other standards (weather radar is ARINC 708).</p><p>Three to tell apart: 573/717 = FDR, 708 = weather radar, 429 = basic avionics.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q16",
+   "en": "Tooley Ch.4 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tốc độ dữ liệu tối đa mà bus FDDI hỗ trợ là:",
+   "en": "The maximum data rate supported by the FDDI bus is:"
+  },
+  "opts": [
+   {
+    "vi": "1 Mbps",
+    "en": "1 Mbps"
+   },
+   {
+    "vi": "100 Mbps",
+    "en": "100 Mbps"
+   },
+   {
+    "vi": "10 Mbps",
+    "en": "10 Mbps"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "FDDI (Fibre Distributed Data Interface), do Boeing phát triển cho B777, hỗ trợ 100 Mbps trên cấu trúc vòng đôi (dual token-ring).",
+   "en": "FDDI (Fibre Distributed Data Interface), developed by Boeing for the 777, supports 100 Mbps over a dual token-ring topology."
+  },
+  "topic": {
+   "vi": "AFDX/ARINC 664, Ethernet",
+   "en": "AFDX/ARINC 664, Ethernet"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>FDDI (Fibre Distributed Data Interface), do Boeing phát triển cho B777, hỗ trợ 100 Mbps trên cấu trúc vòng đôi (dual token-ring). 1 Mbps là tốc độ của 1553 và 10 Mbps là mức Ethernet thường, không phải FDDI. Chuẩn ARINC 636 cho mạng quang của 777 được cải biên từ FDDI (Module 08).</p><p>Nhớ: FDDI = 100 Mbps, vòng đôi, sợi quang.</p>",
+   "en": "<p>FDDI (Fibre Distributed Data Interface), developed by Boeing for the B777, supports 100 Mbps on a dual token-ring structure. 1 Mbps is the 1553 figure and 10 Mbps is ordinary Ethernet, not FDDI. ARINC 636 for the 777's optical network was adapted from FDDI (Module 08).</p><p>Remember: FDDI = 100 Mbps, dual ring, optical fibre.</p>"
+  },
+  "src": {
+   "vi": "Tooley Ch.4 Q17",
+   "en": "Tooley Ch.4 Q17"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Một bus kết nối hai hay nhiều thiết bị để chúng giao tiếp với nhau.",
+   "en": "A bus connects two or more devices to allow them to communicate."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng theo định nghĩa của Floyd.",
+   "en": "True by Floyd's definition."
+  },
+  "topic": {
+   "vi": "Vì sao dùng bus dữ liệu",
+   "en": "Why aircraft use data buses"
+  },
+  "topic_id": "rationale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd mục 13-6: bus là đường dẫn dùng chung để các thiết bị trao đổi dữ liệu; nó cũng định nghĩa các đặc tính như độ rộng, tần số, tốc độ truyền và băng thông. Đây là cùng ý niệm với \"bus dữ liệu\" của Module 05, chỉ khác là Floyd xét bus máy tính chung chứ không phải avionics.</p>",
+   "en": "<p>Floyd section 13-6: a bus is a shared path over which devices exchange data; it is also described by characteristics such as width, frequency, transfer rate and bandwidth. It is the same idea as Module 05's \"data bus\", except Floyd treats general computer buses rather than avionics.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #27 (đáp án A-28/tr.799)",
+   "en": "Floyd Ch.13 · True/False #27 (answer p.799)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Một bus chỉ được xác định bởi dây dẫn và đầu nối.",
+   "en": "A bus is only defined by the wires and connectors."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sai: bus còn được xác định bởi giao thức, tốc độ, mã hoá.",
+   "en": "False: a bus is also defined by protocol, data rate and encoding."
+  },
+  "topic": {
+   "vi": "Vì sao dùng bus dữ liệu",
+   "en": "Why aircraft use data buses"
+  },
+  "topic_id": "rationale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Self-Test câu 23 của Floyd đáp án (d): các thuộc tính xác định bus gồm loại đầu nối, chiều dài và loại cáp, tốc độ dữ liệu và mã hoá. Hãy so với ARINC 429: dây (xoắn đôi bọc) giống ARINC 629 nhưng giao thức khác, nên không thể chỉ nhìn dây.</p>",
+   "en": "<p>Floyd Self-Test question 23 answer (d): the properties defining a bus include connector type, cable length and type, data rate and encoding. Compare ARINC 429: its wire (shielded twisted pair) is the same as ARINC 629 but the protocol differs, so you cannot judge from the wire alone.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #28",
+   "en": "Floyd Ch.13 · True/False #28"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bus song song luôn nhanh hơn bus nối tiếp.",
+   "en": "A parallel bus is always faster than a serial bus."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: bus song song bị giới hạn bởi crosstalk, EMI và lệch xung (clock skew).",
+   "en": "False: a parallel bus is limited by crosstalk, EMI and clock skew."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd 13-6: tốc độ bus song song có thể bị giới hạn bởi crosstalk, EMI và clock skew, nên bus nối tiếp hiện đại có thể đạt tốc độ cao hơn trên ít dây hơn. Đây chính là lý do avionics dùng bus nối tiếp (ít dây, nhẹ, ít nhiễu) ở Module 05.</p>",
+   "en": "<p>Floyd 13-6: parallel bus speed can be limited by crosstalk, EMI and clock skew, so modern serial buses can reach higher speeds on fewer wires. This is exactly why avionics uses serial buses (few wires, light, low noise) in Module 05.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #29",
+   "en": "Floyd Ch.13 · True/False #29"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Độ rộng bus (bus width) là độ rộng của mỗi dây dẫn trong bus song song.",
+   "en": "Bus width is the width of each conductor in a parallel bus."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: độ rộng bus là số đường (bit) của bus.",
+   "en": "False: bus width is the number of lines (bits) of the bus."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Độ rộng bus là số đường dữ liệu song song, ví dụ bus 8 bit có 8 đường. Nó là một trong bốn đặc tính Floyd nêu: độ rộng, tần số, tốc độ truyền và băng thông. Tốc độ truyền = độ rộng × tần số (khi mỗi chu kỳ truyền được một từ).</p>",
+   "en": "<p>Bus width is the number of parallel data lines, for example an 8-bit bus has 8 lines. It is one of the four characteristics Floyd names: width, frequency, transfer rate and bandwidth. Transfer rate = width × frequency (when one word moves per cycle).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #30",
+   "en": "Floyd Ch.13 · True/False #30"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bắt tay (handshaking) không phải là một phần của giao thức bus.",
+   "en": "Handshaking is not a part of the bus protocol."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: handshake là một phần của giao thức.",
+   "en": "False: handshaking is part of the protocol."
+  },
+  "topic": {
+   "vi": "ARINC 629 và các bus hai chiều",
+   "en": "ARINC 629 and bidirectional buses"
+  },
+  "topic_id": "arinc629",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd định nghĩa handshake là quy trình hai thiết bị dùng để khởi đầu và hoàn tất một lần truyền trên bus; giao thức bus là tập quy tắc để thiết lập và duy trì giao tiếp, trong đó có bắt tay.</p>",
+   "en": "<p>Floyd defines a handshake as the routine by which two devices initiate and complete a bus transfer; the bus protocol is the set of rules for establishing and maintaining communication, which includes handshaking.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #31",
+   "en": "Floyd Ch.13 · True/False #31"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Truyền đơn cực (single-ended) đơn giản và rẻ hơn truyền vi sai.",
+   "en": "A single-ended transmission is simpler and lower in cost compared to a differential transmission."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng: đơn cực dùng một dây tín hiệu và đất; vi sai dùng hai dây bù nhau.",
+   "en": "True: single-ended uses one signal wire plus ground; differential uses two complementary wires."
+  },
+  "topic": {
+   "vi": "Vì sao dùng bus dữ liệu",
+   "en": "Why aircraft use data buses"
+  },
+  "topic_id": "rationale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Single-ended chỉ cần một dây dữ liệu và một dây đất nên rẻ và đơn giản, nhưng nhạy nhiễu. Vi sai gửi tín hiệu và phần bù của nó trên hai dây, bên nhận lấy hiệu nên chống nhiễu chế độ chung tốt, đó là lý do ARINC 429 dùng ±5 V trên hai dây A, B.</p>",
+   "en": "<p>Single-ended needs only one data wire and a ground so it is cheap and simple but noise-sensitive. Differential sends the signal and its complement on two wires and the receiver takes the difference, which rejects common-mode noise well; that is why ARINC 429 uses ±5 V on wires A and B.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #32",
+   "en": "Floyd Ch.13 · True/False #32"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đệm ba trạng thái (tri-state) có trạng thái CAO, THẤP và \"nối tắt\" (shorted).",
+   "en": "A tri-state driver has a HIGH state, a LOW state, and a shorted state."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: trạng thái thứ ba là trở kháng cao (hở mạch), không phải nối tắt.",
+   "en": "False: the third state is high impedance (open), not shorted."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về bus",
+   "en": "General bus concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Ở trạng thái trở kháng cao thiết bị bị ngắt khỏi bus, nên nhiều thiết bị dùng chung một đường bus mà không xung đột (Floyd 13-10). Nối tắt sẽ phá hỏng cả bus. Cùng ý với \"bus contention\" và trọng tài bus (arbitration) ở Tooley.</p>",
+   "en": "<p>In the high-impedance state the device is disconnected from the bus, so many devices can share one line without conflict (Floyd 13-10). A short would damage the whole bus. It links to \"bus contention\" and arbitration in Tooley.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #33",
+   "en": "Floyd Ch.13 · True/False #33"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "PCI là viết tắt của peripheral computer interface.",
+   "en": "PCI stands for peripheral computer interface."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sai: PCI là peripheral component interconnect.",
+   "en": "False: PCI is peripheral component interconnect."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Self-Test câu 26 (đáp án (d)). Hai loại PCI là PCI-X và PCI-E (PCI Express, PCIe); trong PCIe, các đường riêng từ switch tới thiết bị ngoại vi gọi là lane (Self-Test câu 27, đáp án (b)).</p>",
+   "en": "<p>Self-Test question 26 (answer (d)). The two PCI types are PCI-X and PCI-E (PCI Express, PCIe); in PCIe the individual paths from the switch to peripherals are called lanes (Self-Test question 27, answer (b)).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #34",
+   "en": "Floyd Ch.13 · True/False #34"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hai loại bus PCI là PCI-X và PCI-E.",
+   "en": "Two types of PCI buses are PCI-X and PCI-E."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>PCI-X là bus song song mở rộng, PCI-E (PCI Express) là bus nối tiếp dùng các lane. Section Checkup 13-7 của Floyd nêu PCI-Express còn được ký hiệu PCIe và PCI-E, và một lane là đường dành riêng tới một chip gọi là switch.</p>",
+   "en": "<p>PCI-X is the extended parallel bus and PCI-E (PCI Express) is the serial bus using lanes. Floyd Section Checkup 13-7 notes PCI-Express is also written PCIe and PCI-E, and a lane is a dedicated path to a single chip called a switch.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #35",
+   "en": "Floyd Ch.13 · True/False #35"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "IEEE-488 còn được gọi là GPIB.",
+   "en": "IEEE-488 is known as the GPIB."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng: GPIB là general-purpose interface bus theo chuẩn IEEE-488.",
+   "en": "True: GPIB is the general-purpose interface bus per IEEE-488."
+  },
+  "topic": {
+   "vi": "Vì sao dùng bus dữ liệu",
+   "en": "Why aircraft use data buses"
+  },
+  "topic_id": "rationale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>GPIB là bus song song dùng để nối thiết bị đo trong phòng thí nghiệm. Floyd 13-7 cũng nhắc SCSI (small computer system interface) thuộc cùng nhóm bus song song.</p>",
+   "en": "<p>GPIB is a parallel bus used to connect laboratory instruments. Floyd 13-7 also mentions SCSI (small computer system interface) in the same parallel bus group.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #36",
+   "en": "Floyd Ch.13 · True/False #36"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "SCSI là viết tắt của serial computer system interface.",
+   "en": "SCSI stands for serial computer system interface."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sai: SCSI là small computer system interface.",
+   "en": "False: SCSI is small computer system interface."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd 13-7: SCSI là small computer system interface; bản nối tiếp gọi là serial SCSI (thuộc các bus nối tiếp khác ở 13-9). Chữ S đầu là \"small\", không phải \"serial\".</p>",
+   "en": "<p>Floyd 13-7: SCSI is small computer system interface; the serial version is called serial SCSI (among the other serial buses of 13-9). The first S is \"small\", not \"serial\".</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #37",
+   "en": "Floyd Ch.13 · True/False #37"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "USB là bus nối tiếp tiêu chuẩn phổ biến để nối thiết bị ngoại vi với máy tính.",
+   "en": "USB is a widely used standard serial bus for connecting peripherals to a computer."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đúng.",
+   "en": "True."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>USB (universal serial bus) có các chân D+, D-, +5 V và đất; cặp xoắn D+ và D- truyền dữ liệu vi sai nửa song công trong phiên bản 2.0 trở xuống, còn USB 3.0 thêm hai cặp xoắn nên song công (Floyd 13-8).</p>",
+   "en": "<p>USB (universal serial bus) has pins D+, D-, +5 V and ground; the twisted pair D+ and D- carries half-duplex differential data in versions up to 2.0, while USB 3.0 adds two more twisted pairs and is full-duplex (Floyd 13-8).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #38",
+   "en": "Floyd Ch.13 · True/False #38"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bus SPI thường dùng trong hệ nhúng và trên PCB để liên lạc giữa bộ vi xử lý hoặc vi điều khiển và các IC ngoại vi.",
+   "en": "The SPI bus is typically used in embedded systems and on PCBs between microprocessors or microcontrollers and peripheral ICs."
+  },
+  "opts": [
+   {
+    "vi": "Sai",
+    "en": "False"
+   },
+   {
+    "vi": "Đúng",
+    "en": "True"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đúng: SPI là serial peripheral interface.",
+   "en": "True: SPI is the serial peripheral interface."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Cùng nhóm bus nối tiếp ngắn trên bo mạch có I2C (inter-integrated circuit). Floyd Self-Test câu 40 hỏi bus nối tiếp nội bộ chủ yếu để nối IC trên PCB, đáp án là I2C.</p>",
+   "en": "<p>In the same group of short on-board serial buses is I2C (inter-integrated circuit). Floyd's statement 40 asks which internal serial bus mainly connects ICs on a PCB; the answer is I2C.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #39 và #40",
+   "en": "Floyd Ch.13 · True/False #39 and #40"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Phần lớn hệ thống ô tô dùng bus Firewire.",
+   "en": "Most automotive systems use the Firewire bus."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: ô tô dùng bus CAN.",
+   "en": "False: automotive systems use the CAN bus."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>CAN là controller area network, bus nối tiếp gồm một cặp xoắn có đầu cuối; ô tô thường có hai bus CAN, một tốc độ thấp và một tốc độ cao. Firewire là IEEE-1394, bus ngoài tốc độ cao do Apple phát triển (Floyd 13-9). Tooley nhắc đến bus tương tự cho máy bay: ARINC 429, 629.</p>",
+   "en": "<p>CAN is the controller area network, a serial bus made of a terminated twisted pair; cars usually have two CAN buses, one low-speed and one high-speed. Firewire is IEEE-1394, a high-speed external bus developed by Apple (Floyd 13-9). Tooley covers the aircraft counterparts: ARINC 429, 629.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #41",
+   "en": "Floyd Ch.13 · True/False #41"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "CAN là viết tắt của computer area node.",
+   "en": "CAN stands for computer area node."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sai: CAN là controller area network.",
+   "en": "False: CAN is controller area network."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Self-Test câu 32 (đáp án (b)): bus thường dùng để nối các hệ thống trong ô tô là CAN. Cách nhớ: chữ C đầu là controller.</p>",
+   "en": "<p>Self-Test question 32 (answer (b)): the bus typically used to connect systems in an automobile is the CAN. Tip: the first C is controller.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · True/False #42",
+   "en": "Floyd Ch.13 · True/False #42"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cáp USB 3.0 gồm:",
+   "en": "A USB 3.0 cable contains:"
+  },
+  "opts": [
+   {
+    "vi": "một cặp xoắn",
+    "en": "one twisted pair"
+   },
+   {
+    "vi": "hai dây thẳng",
+    "en": "two straight wires"
+   },
+   {
+    "vi": "ba cặp xoắn",
+    "en": "three twisted pairs"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "USB 3.0 có cặp xoắn D+/D- của 2.0 và thêm hai cặp xoắn nữa.",
+   "en": "USB 3.0 has the 2.0 twisted pair D+/D- plus two more twisted pairs."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Phiên bản 2.0 trở xuống có một cặp xoắn truyền dữ liệu nửa song công. USB 3.0 thêm hai cặp xoắn (một để nhận, một để gửi tốc độ cao) nên song công và cho tốc độ SuperSpeed 4,8 Gbps; 9 tiếp điểm thay cho 4. Tổng cộng ba cặp xoắn.</p><p>Cặp xoắn giảm hoặc loại nhiễu, đúng ý ở Section Checkup 13-8.</p>",
+   "en": "<p>Versions up to 2.0 have one twisted pair carrying half-duplex data. USB 3.0 adds two twisted pairs (one for receiving, one for high-speed sending) so it is full-duplex with SuperSpeed 4.8 Gbps; 9 contacts instead of 4. Three twisted pairs in all.</p><p>The twisted pairs reduce or remove noise, as in Section Checkup 13-8.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #29",
+   "en": "Floyd Ch.13 · Self-Test #29"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phân loại nào sau đây KHÔNG phải là một phân loại tốc độ của USB?",
+   "en": "Which of the following is NOT a USB speed classification?"
+  },
+  "opts": [
+   {
+    "vi": "Tốc độ cao (high-speed)",
+    "en": "High-speed"
+   },
+   {
+    "vi": "Tốc độ thấp (low-speed)",
+    "en": "Low-speed"
+   },
+   {
+    "vi": "Tốc độ trung gian (intermediate speed)",
+    "en": "Intermediate speed"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "USB có bốn lớp tốc độ: low, full, high, super; không có \"intermediate\".",
+   "en": "USB has four speed classes: low, full, high, super; there is no \"intermediate\"."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 2,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Floyd mục 13-8 liệt kê bốn lớp tốc độ USB: low-speed, full-speed, high-speed và super-speed. Vì vậy \"intermediate speed\" là phương án không thuộc danh sách.</p><p>LƯU Ý LỖI IN: bảng đáp án của Floyd ghi (b) cho câu này, nhưng full-speed là một lớp có thật nên (b) không thể là câu trả lời; đáp án đúng theo chính văn bản của chương là (d) intermediate speed. Site dùng đáp án đúng này.</p>",
+   "en": "<p>Floyd section 13-8 lists four USB speed classes: low-speed, full-speed, high-speed and super-speed. So \"intermediate speed\" is the option not on the list.</p><p>PRINTING ERROR NOTE: Floyd's answer key gives (b) for this question, but full-speed is a real class so (b) cannot be the answer; per the chapter's own text the correct answer is (d) intermediate speed. The site uses this correct answer.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #28 (khoá in ghi (b), site dùng (d))",
+   "en": "Floyd Ch.13 · Self-Test #28 (printed key (b), site uses (d))"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bus thường dùng để nối các hệ thống trong ô tô là:",
+   "en": "The bus typically used to connect systems in an automobile is the:"
+  },
+  "opts": [
+   {
+    "vi": "PCI",
+    "en": "PCI"
+   },
+   {
+    "vi": "SPI",
+    "en": "SPI"
+   },
+   {
+    "vi": "CAN",
+    "en": "CAN"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "CAN (controller area network).",
+   "en": "CAN (controller area network)."
+  },
+  "topic": {
+   "vi": "Bus chung: USB, I²C, SPI, CAN",
+   "en": "Generic buses: USB, I2C, SPI, CAN"
+  },
+  "topic_id": "generic",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>SPI và I2C nối IC trên bo mạch, PCI nối thiết bị ngoại vi trong máy tính. CAN là bus nối tiếp hai dây xoắn có điện trở đầu cuối, chịu nhiễu tốt, được thiết kế cho môi trường nhiều nhiễu như xe hơi.</p><p>Trong hàng không vai trò tương ứng do ARINC 429, 629 và AFDX đảm nhận.</p>",
+   "en": "<p>SPI and I2C connect ICs on a board and PCI connects computer peripherals. CAN is a two-wire twisted-pair serial bus with terminating resistors, tolerant of noise, designed for noisy environments such as cars.</p><p>In aviation the corresponding role is played by ARINC 429, 629 and AFDX.</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #32",
+   "en": "Floyd Ch.13 · Self-Test #32"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các thuộc tính xác định một bus bao gồm:",
+   "en": "Properties that define a bus include:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ loại đầu nối",
+    "en": "only the type of connectors"
+   },
+   {
+    "vi": "chỉ chiều dài cáp",
+    "en": "only the cable length"
+   },
+   {
+    "vi": "tất cả: loại đầu nối, chiều dài và loại cáp, tốc độ dữ liệu và mã hoá",
+    "en": "all of these: connector type, cable length and type, data rate and encoding"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Floyd Self-Test câu 23: đáp án (d) all of these.",
+   "en": "Floyd Self-Test question 23: answer (d) all of these."
+  },
+  "topic": {
+   "vi": "Vì sao dùng bus dữ liệu",
+   "en": "Why aircraft use data buses"
+  },
+  "topic_id": "rationale",
+  "level": 1,
+  "origin": "goc",
+  "detail": {
+   "vi": "<p>Một bus được xác định bởi nhiều thứ cùng lúc: đầu nối, cáp (chiều dài và loại), tốc độ dữ liệu và mã hoá, thêm giao thức. Chọn một thuộc tính duy nhất là thiếu.</p><p>Áp dụng: hai bus có cùng cáp xoắn đôi vẫn khác nhau nếu tốc độ và mã hoá khác (429 so với 629).</p>",
+   "en": "<p>A bus is defined by several things at once: connectors, cable (length and type), data rate and encoding, plus protocol. Picking a single property is incomplete.</p><p>Application: two buses with the same twisted-pair cable still differ if their speed and encoding differ (429 versus 629).</p>"
+  },
+  "src": {
+   "vi": "Floyd Ch.13 · Self-Test #23",
+   "en": "Floyd Ch.13 · Self-Test #23"
+  },
+  "fixed_order": true
+ }
+]

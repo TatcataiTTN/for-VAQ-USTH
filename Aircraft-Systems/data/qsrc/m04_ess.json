@@ -1,0 +1,477 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Làm thế nào phân biệt hai bộ nhớ ở Hình 11–78?",
+   "en": "How would you distinguish between the two memories in Figure 11–78?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đối chiếu hình: (a) chỉ có ngõ ra O0 đến O3 và không có chân R/W nên là ROM; (b) có chân R/W và các chân I/O hai chiều nên là RAM.",
+   "en": "The printed answer is shown in the image below. Checked against the figure: (a) has only outputs O0 to O3 and no R/W pin, so it is a ROM; (b) has an R/W pin and bidirectional I/O pins, so it is a RAM."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 1",
+   "en": "Floyd Ch.11 · Problem 1"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q01.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch11_qq01.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy giải thích hai thao tác cơ bản của bộ nhớ: Write (ghi) và Read (đọc).",
+   "en": "Explain the basic memory operations: Write and Read."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 3",
+   "en": "Floyd Ch.11 · Problem 3"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q03.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một mảng bộ nhớ tĩnh 4 hàng, giống mảng ở Hình 11–10 của sách, ban đầu lưu toàn số 0. Nội dung của nó là gì sau các điều kiện sau? Giả sử giá trị 1 chọn hàng đó.<br>Row 0 = 1, Data in (Bit 0) = 1<br>Row 1 = 0, Data in (Bit 1) = 1<br>Row 2 = 1, Data in (Bit 2) = 0<br>Row 3 = 0, Data in (Bit 3) = 1",
+   "en": "A static memory array with four rows similar to the one in Figure 11–10 is initially storing all 0s. What is its content after the following conditions? Assume a 1 selects a row.<br>Row 0 = 1, Data in (Bit 0) = 1<br>Row 1 = 0, Data in (Bit 1) = 1<br>Row 2 = 1, Data in (Bit 2) = 0<br>Row 3 = 0, Data in (Bit 3) = 1"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 5",
+   "en": "Floyd Ch.11 · Problem 5"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q05.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Giả sử SRAM 64k × 8 có cấu trúc giống SRAM ở Hình 11–12. Hãy xác định số hàng và số cột 8 bit của mảng ô nhớ.",
+   "en": "Assuming that a 64k × 8 SRAM has a structure similar to that of the SRAM in Figure 11–12, determine the number of rows and 8-bit columns in its memory cell array."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: 512 × 128 = 65 536 = 64k địa chỉ, mỗi ô 8 bit, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Own check: 512 × 128 = 65,536 = 64k addresses, 8 bits each, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 7",
+   "en": "Floyd Ch.11 · Problem 7"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q07.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Bộ nhớ đệm (cache memory) là gì?",
+   "en": "What is cache memory?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 9",
+   "en": "Floyd Ch.11 · Problem 9"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q09.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Với mảng ROM ở Hình 11–79, hãy xác định các ngõ ra cho mọi tổ hợp ngõ vào và tóm tắt dưới dạng bảng (ô xanh là 1, ô xám là 0).",
+   "en": "For the ROM array in Figure 11–79, determine the outputs for all possible input combinations, and summarize them in tabular form (blue cell is a 1, gray cell is a 0)."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã đọc màu từng ô trực tiếp từ pixel hình đề (xanh = 1, xám = 0) và đối chiếu bảng in: khớp cả 16 ô.",
+   "en": "The printed answer is shown in the image below. Each cell colour was read directly from the pixels of the question figure (blue = 1, gray = 0) and compared with the printed table: all 16 cells agree."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 11",
+   "en": "Floyd Ch.11 · Problem 11"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q11.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch11_qq11.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng quy trình tương tự Ví dụ 11–1, hãy thiết kế ROM chuyển BCD một chữ số sang mã dư 3 (excess-3).",
+   "en": "Using a procedure similar to that in Example 11–1, design a ROM for conversion of single-digit BCD to excess-3 code."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đã đọc từng chấm trong Hình P–93 từ pixel (chấm đặc = 0, vòng rỗng = 1) và so với BCD + 3: cả 10 hàng (0 đến 9) cho 0011 đến 1100, khớp 100%.",
+   "en": "The printed answer is shown in the image below. Every dot in Figure P–93 was read from the pixels (filled dot = 0, open ring = 1) and compared with BCD + 3: all ten rows (0 to 9) give 0011 to 1100, matching 100%."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 13",
+   "en": "Floyd Ch.11 · Problem 13"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q13.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Giả sử ma trận PROM ở Hình 11–81 được lập trình bằng cách đốt cầu chì để tạo bit 0. Hãy chỉ ra các liên kết cần đốt để lập trình bảng tra X³, với X từ 0 đến 7.",
+   "en": "Assuming that the PROM matrix in Figure 11–81 is programmed by blowing a fuse link to create a 0, indicate the links to be blown to program an X³ look-up table, where X is a number from 0 through 7."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính lại: các lập phương 0, 1, 8, 27, 64, 125, 216, 343 viết 9 bit, mỗi hàng 9 liên kết (hàng k gồm 9k+1 đến 9k+9, cột phải nhất là LSB); bit 0 thì đốt. Kết quả trùng đúng danh sách đáp án in.",
+   "en": "The printed answer is shown in the image below. Recomputed: the cubes 0, 1, 8, 27, 64, 125, 216, 343 written in 9 bits, 9 links per row (row k holds 9k+1 to 9k+9, rightmost column is the LSB); a 0 bit means the link is blown. The result equals the printed list exactly."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 15",
+   "en": "Floyd Ch.11 · Problem 15"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q15.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch11_qq15.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dùng DRAM 16k × 4 để xây DRAM 64k × 8. Hãy vẽ sơ đồ logic.",
+   "en": "Use 16k × 4 DRAMs to build a 64k × 8 DRAM. Show the logic diagram."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự kiểm tra: 64k × 8 cần 4 nhóm theo chiều sâu × 2 chip theo chiều rộng = 8 chip; 64k = 2^16 nên có 16 đường địa chỉ, 2 đường cao được giải mã 2 sang 4 để chọn nhóm.",
+   "en": "The printed answer is shown in the image below. Own check: 64k × 8 needs 4 groups in depth × 2 chips in width = 8 chips; 64k = 2^16 gives 16 address lines, with the 2 high lines decoded 2-to-4 to select the group."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 17",
+   "en": "Floyd Ch.11 · Problem 17"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q17.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Độ dài từ và dung lượng từ của bộ nhớ ở Bài 17 là bao nhiêu? Còn ở Bài 18?",
+   "en": "What is the word length and the word capacity of the memory of Problem 17? Problem 18?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Bài 17: 64k × 8, tức 8 bit và 64k từ. Bài 18: 256k × 4, tức 4 bit và 256k từ, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Problem 17: 64k × 8, i.e. 8 bits and 64k words. Problem 18: 256k × 4, i.e. 4 bits and 256k words, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 19",
+   "en": "Floyd Ch.11 · Problem 19"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q19.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xét một RAM 4096 × 8, trong đó 64 địa chỉ cuối cùng được dùng làm ngăn xếp LIFO. Nếu địa chỉ đầu tiên của RAM là 000<sub>16</sub>, hãy xác định 64 địa chỉ dùng cho ngăn xếp.",
+   "en": "Consider a 4096 × 8 RAM in which the last 64 addresses are used as a LIFO stack. If the first address in the RAM is 000<sub>16</sub>, designate the 64 addresses used for the stack."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 21",
+   "en": "Floyd Ch.11 · Problem 21"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q21.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Mô tả cấu trúc vật lý của đĩa cứng.",
+   "en": "Describe the physical structure of a hard disk."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Câu hỏi mô tả, đáp án in là đoạn văn của sách (Mục 11–8), đối chiếu đúng nội dung.",
+   "en": "The printed answer is shown in the image below. A descriptive question; the printed answer is the book's own passage (Section 11–8) and matches its content."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về máy tính",
+   "en": "General computer concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 23",
+   "en": "Floyd Ch.11 · Problem 23"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q23.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Các thông số nào được dùng để đo hiệu năng của ổ đĩa cứng (hard disk)?",
+   "en": "What are the parameters used to measure the performance of a hard disk?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về máy tính",
+   "en": "General computer concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 25",
+   "en": "Floyd Ch.11 · Problem 25"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q25.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Sự khác biệt chính giữa đĩa CD và đĩa DVD là gì?",
+   "en": "What is the main difference between a CD and a DVD?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây).",
+   "en": "The printed answer is shown in the image below."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về máy tính",
+   "en": "General computer concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 27",
+   "en": "Floyd Ch.11 · Problem 27"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q27.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Phân cấp bộ nhớ (memory hierarchy) nghĩa là gì?",
+   "en": "What does memory hierarchy mean?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Câu định nghĩa theo sách (Mục 11–9).",
+   "en": "The printed answer is shown in the image below. Definition question answered from the book (Section 11–9)."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 29",
+   "en": "Floyd Ch.11 · Problem 29"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q29.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy mô tả tỉ lệ trúng (hit rate).",
+   "en": "Describe hit rate."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Câu định nghĩa theo sách (Mục 11–9): tỉ lệ truy cập tìm thấy dữ liệu ở cấp bộ nhớ đang xét; miss rate = 1 − hit rate.",
+   "en": "The printed answer is shown in the image below. Definition question answered from the book (Section 11–9): the share of accesses that find the data at the given memory level; miss rate = 1 − hit rate."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về máy tính",
+   "en": "General computer concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 31",
+   "en": "Floyd Ch.11 · Problem 31"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q31.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hãy vẽ sơ đồ một hệ lưu trữ đám mây có sáu máy chủ.",
+   "en": "Draw a diagram of a cloud storage system with six servers."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Đáp án in là Hình P–94: khối Front end/Server Control nối hai chiều với từng máy chủ 1 đến 6, và các máy chủ nối lưới với nhau. Đây là bài vẽ nên chỉ đối chiếu với hình in.",
+   "en": "The printed answer is shown in the image below. The printed answer is Figure P–94: a Front end/Server Control block connected bidirectionally to each of servers 1 to 6, with the servers meshed together. A drawing task, so it can only be compared against the printed figure."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về máy tính",
+   "en": "General computer concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 33",
+   "en": "Floyd Ch.11 · Problem 33"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q33.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Kiến trúc của một hệ lưu trữ đám mây là gì?",
+   "en": "What is the architecture of a cloud storage system?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Câu mô tả theo sách (Mục 11–10): front end dùng giao thức truy cập, control dùng giao thức xử lý dữ liệu, back end cung cấp lưu trữ.",
+   "en": "The printed answer is shown in the image below. Descriptive question answered from the book (Section 11–10): a front end with access protocols, a control layer with data-handling protocols, and a back end providing storage."
+  },
+  "topic": {
+   "vi": "Khái niệm chung về máy tính",
+   "en": "General computer concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 35",
+   "en": "Floyd Ch.11 · Problem 35"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q35.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định nội dung ROM ở Hình 11–84 có đúng không.",
+   "en": "Determine if the contents of the ROM in Figure 11–84 are correct."
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự tính theo phương pháp của sách (Mục 11–11: tổng XOR từng cột, bỏ nhớ): 7 từ cho 00100, trong khi checksum lưu là 01100, lệch ở bit thứ hai nên nội dung sai, khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Own calculation by the book's method (Section 11–11: XOR sum of each column, carries discarded): the seven words give 00100 while the stored checksum is 01100, differing in the second bit, so the contents are in error, matching the printed answer."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 37",
+   "en": "Floyd Ch.11 · Problem 37"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q37.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch11_qq37.png"
+  ]
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Chạy kiểm tra checksum cho bộ nhớ ở Hình 11–85, mỗi ROM có checksum ở địa chỉ cao nhất. Cần thay IC nào với mỗi thông báo lỗi: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?",
+   "en": "Suppose that a checksum test is run on the memory in Figure 11–85 and each individual ROM has a checksum at its highest address. What IC or ICs will you replace for each of the following error messages: (a) ADDRESSES 40–5F FAULTY, (b) ADDRESSES 20–3F FAULTY, (c) ADDRESSES 00–7F FAULTY?"
+  },
+  "sol": {
+   "vi": "Đáp án in trong sách/tài liệu (xem ảnh dưới đây). Tự đổi sang thập phân: 40 đến 5F hex = 64 đến 95 là ROM 2; 20 đến 3F hex = 32 đến 63 là ROM 1; 00 đến 7F hex = 0 đến 127 là cả bốn ROM. Khớp đáp án in.",
+   "en": "The printed answer is shown in the image below. Converted to decimal: 40 to 5F hex = 64 to 95 is ROM 2; 20 to 3F hex = 32 to 63 is ROM 1; 00 to 7F hex = 0 to 127 is all four ROMs. Matches the printed answer."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.11 · Problem 39",
+   "en": "Floyd Ch.11 · Problem 39"
+  },
+  "afig": "assets/figures/essay_floyd_ch11_q39.png",
+  "figs": [
+   "assets/figures/essay_floyd_ch11_qq39.png"
+  ]
+ }
+]

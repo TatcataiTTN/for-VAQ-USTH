@@ -1,0 +1,373 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng NOR 2 đầu vào cho ra mức logic 1 khi nào?",
+   "en": "A two-input NOR gate produces logic 1 when:"
+  },
+  "opts": [
+   {
+    "vi": "cả hai đầu vào ở mức logic 0",
+    "en": "both inputs at logic 0"
+   },
+   {
+    "vi": "một trong hai đầu vào ở mức logic 1",
+    "en": "either input at logic 1"
+   },
+   {
+    "vi": "cả hai đầu vào ở mức logic 1",
+    "en": "both inputs at logic 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "NOR=NOT(OR); OR=0 chỉ khi cả hai vào đều 0, nên NOR=1 khi cả hai vào đều 0.",
+   "en": "NOR = NOT(OR); OR = 0 only when both inputs are 0, so NOR = 1 when both inputs are 0."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  },
+  "fixed_order": true
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng XOR 2 đầu vào với cả hai đầu vào bằng 1 sẽ cho đầu ra:",
+   "en": "A two-input XOR gate with both inputs at 1 gives an output of:"
+  },
+  "opts": [
+   {
+    "vi": "không xác định",
+    "en": "indeterminate"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "1",
+    "en": "1"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "XOR chỉ ra 1 khi hai đầu vào KHÁC nhau; (1,1) cho ra 0.",
+   "en": "XOR outputs 1 only when the two inputs are DIFFERENT; (1,1) gives 0."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo đại số Boolean, biểu thức A + A'B rút gọn thành:",
+   "en": "In Boolean algebra, the expression A + A'B simplifies to:"
+  },
+  "opts": [
+   {
+    "vi": "A",
+    "en": "A"
+   },
+   {
+    "vi": "A + B",
+    "en": "A + B"
+   },
+   {
+    "vi": "A · B",
+    "en": "A · B"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đây là luật hấp thụ mở rộng: A + A'B = A + B.",
+   "en": "This is the extended absorption law: A + A'B = A + B."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo định lý De Morgan, (A·B)' bằng:",
+   "en": "By De Morgan's theorem, (A·B)' equals:"
+  },
+  "opts": [
+   {
+    "vi": "A'·B'",
+    "en": "A'·B'"
+   },
+   {
+    "vi": "A + B",
+    "en": "A + B"
+   },
+   {
+    "vi": "A' + B'",
+    "en": "A' + B'"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "(AB)' = A' + B' theo định lý De Morgan.",
+   "en": "(AB)' = A' + B' by De Morgan's theorem."
+  },
+  "topic": {
+   "vi": "Luật Boolean và De Morgan",
+   "en": "Boolean laws and De Morgan"
+  },
+  "topic_id": "boolean-laws",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bảng chân trị (truth table) có 3 biến đầu vào sẽ có bao nhiêu tổ hợp?",
+   "en": "A truth table with 3 input variables has how many rows (combinations)?"
+  },
+  "opts": [
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "9",
+    "en": "9"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Số tổ hợp = 2ⁿ với n=3 → 2³ = 8.",
+   "en": "Number of combinations = 2ⁿ with n = 3 → 2³ = 8."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một flip-flop JK với J=K=1 tại cạnh xung clock sẽ:",
+   "en": "A JK flip-flop with J=K=1 at the clock edge will:"
+  },
+  "opts": [
+   {
+    "vi": "giữ nguyên trạng thái",
+    "en": "remain in the same state"
+   },
+   {
+    "vi": "luôn reset về 0",
+    "en": "always reset to 0"
+   },
+   {
+    "vi": "đảo trạng thái (toggle)",
+    "en": "toggle"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "J=K=1 là chế độ toggle đặc trưng của JK flip-flop.",
+   "en": "J = K = 1 is the characteristic toggle mode of a JK flip-flop."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "So với TTL, họ logic CMOS thường có biên độ nhiễu (noise margin):",
+   "en": "Compared with TTL, CMOS logic generally has a noise margin that is:"
+  },
+  "opts": [
+   {
+    "vi": "bằng nhau",
+    "en": "equal"
+   },
+   {
+    "vi": "nhỏ hơn",
+    "en": "less than"
+   },
+   {
+    "vi": "lớn hơn",
+    "en": "greater than"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "CMOS có dải điện áp ra gần sát 2 mức nguồn (rail-to-rail) nên noise margin thường lớn hơn TTL.",
+   "en": "CMOS has an output voltage range close to both supply levels (rail-to-rail), so its noise margin is usually larger than TTL's."
+  },
+  "topic": {
+   "vi": "Họ logic và đặc tính điện",
+   "en": "Logic families and electrical characteristics"
+  },
+  "topic_id": "family",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đệm ba trạng thái (tri-state buffer) có bao nhiêu trạng thái đầu ra khả dĩ?",
+   "en": "A tri-state buffer has how many possible output states?"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "3 (0, 1, và trở kháng cao Z)",
+    "en": "3 (0, 1, and high-impedance Z)"
+   },
+   {
+    "vi": "2 (0 và 1)",
+    "en": "2 (0 and 1)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tri-state có thêm trạng thái trở kháng cao (high-Z) ngoài 0 và 1.",
+   "en": "Tri-state has a high-impedance (high-Z) state in addition to 0 and 1."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng logic nào được gọi là 'cổng vạn năng' vì có thể dùng để tạo mọi hàm logic khác?",
+   "en": "Which gate is called a 'universal gate' because any logic function can be built from it alone?"
+  },
+  "opts": [
+   {
+    "vi": "XOR",
+    "en": "XOR"
+   },
+   {
+    "vi": "NAND",
+    "en": "NAND"
+   },
+   {
+    "vi": "AND",
+    "en": "AND"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "NAND (và NOR) là cổng vạn năng; chỉ dùng NAND có thể tạo AND, OR, NOT, v.v.",
+   "en": "NAND (and NOR) are universal gates; NAND alone can build AND, OR, NOT, and so on."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong quy ước logic dương (positive logic), mức logic 1 tương ứng với:",
+   "en": "In positive logic convention, logic 1 corresponds to:"
+  },
+  "opts": [
+   {
+    "vi": "mức điện áp cao hơn",
+    "en": "a higher voltage level"
+   },
+   {
+    "vi": "mức điện áp thấp hơn",
+    "en": "a lower voltage level"
+   },
+   {
+    "vi": "luôn đúng bằng 5V",
+    "en": "always exactly 5V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy ước logic dương: điện áp cao hơn = 1, điện áp thấp hơn = 0.",
+   "en": "Positive logic convention: the higher voltage = 1, the lower voltage = 0."
+  },
+  "topic": {
+   "vi": "Tối giản: K-map, SOP, POS",
+   "en": "Simplification: K-map, SOP, POS"
+  },
+  "topic_id": "simplify",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · tự sinh theo nội dung module 02 (chưa gắn số slide)",
+   "en": "Added · generated from the content of module 02 (slide number not yet attached)"
+  }
+ }
+]

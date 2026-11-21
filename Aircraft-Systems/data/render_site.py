@@ -11,7 +11,7 @@ def _ver():
     h = hashlib.md5()
     d = os.path.join(ROOT, "_shared")
     for fn in sorted(os.listdir(d)):
-        h.update(open(os.path.join(d, fn), "rb").read())
+        if os.path.isfile(os.path.join(d, fn)): h.update(open(os.path.join(d, fn), "rb").read())
     return h.hexdigest()[:8]
 VER = _ver()
 QUIZ_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "quiz")
