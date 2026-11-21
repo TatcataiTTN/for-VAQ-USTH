@@ -1,0 +1,1181 @@
+[
+ {
+  "en": "binary number",
+  "vi": "số nhị phân",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Số viết trong cơ số 2, chỉ dùng chữ số 0 và 1.",
+  "def_en": "A number written in base 2 using only the digits 0 and 1."
+ },
+ {
+  "en": "bit",
+  "vi": "bit",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Chữ số nhị phân, đơn vị thông tin nhỏ nhất.",
+  "def_en": "A binary digit, the smallest unit of information."
+ },
+ {
+  "en": "byte",
+  "vi": "byte",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Nhóm 8 bit.",
+  "def_en": "A group of 8 bits."
+ },
+ {
+  "en": "MSB (most significant bit)",
+  "vi": "bit có trọng số lớn nhất (MSB)",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Bit ngoài cùng bên trái của một số nhị phân.",
+  "def_en": "The leftmost bit of a binary number."
+ },
+ {
+  "en": "LSB (least significant bit)",
+  "vi": "bit có trọng số nhỏ nhất (LSB)",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Bit ngoài cùng bên phải của một số nhị phân.",
+  "def_en": "The rightmost bit of a binary number."
+ },
+ {
+  "en": "octal",
+  "vi": "bát phân",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Hệ đếm cơ số 8; mỗi chữ số ứng với 3 bit.",
+  "def_en": "Base-8 number system; each digit stands for 3 bits."
+ },
+ {
+  "en": "hexadecimal",
+  "vi": "thập lục phân",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Hệ đếm cơ số 16; mỗi chữ số ứng với 4 bit.",
+  "def_en": "Base-16 number system; each digit stands for 4 bits."
+ },
+ {
+  "en": "radix (base)",
+  "vi": "cơ số",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Số các chữ số khác nhau của một hệ đếm.",
+  "def_en": "The number of distinct digits in a number system."
+ },
+ {
+  "en": "two's complement",
+  "vi": "bù hai",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Cách biểu diễn số nguyên có dấu; MSB bằng 1 cho số âm.",
+  "def_en": "A way to represent signed integers; an MSB of 1 means negative."
+ },
+ {
+  "en": "one's complement",
+  "vi": "bù một",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Đảo mọi bit của một số nhị phân.",
+  "def_en": "Inverting every bit of a binary number."
+ },
+ {
+  "en": "BCD (binary-coded decimal)",
+  "vi": "mã BCD (thập phân mã hoá nhị phân)",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Mỗi chữ số thập phân được mã bằng 4 bit.",
+  "def_en": "Each decimal digit is coded in 4 bits."
+ },
+ {
+  "en": "Gray code",
+  "vi": "mã Gray",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Mã trong đó hai giá trị liên tiếp chỉ khác nhau một bit.",
+  "def_en": "A code in which two successive values differ by one bit."
+ },
+ {
+  "en": "ASCII",
+  "vi": "mã ASCII",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Mã chuẩn Mỹ để trao đổi thông tin, gán số cho ký tự.",
+  "def_en": "American standard code for information interchange; assigns numbers to characters."
+ },
+ {
+  "en": "parity bit",
+  "vi": "bit chẵn lẻ",
+  "modules": [
+   "m01",
+   "m07"
+  ],
+  "def_vi": "Bit thêm vào để tổng số bit 1 là chẵn (hoặc lẻ).",
+  "def_en": "A bit added so the count of 1s is even (or odd)."
+ },
+ {
+  "en": "floating point",
+  "vi": "dấu chấm động",
+  "modules": [
+   "m01"
+  ],
+  "def_vi": "Biểu diễn số thực gồm phần định trị và số mũ.",
+  "def_en": "A real-number format made of a mantissa and an exponent."
+ },
+ {
+  "en": "logic gate",
+  "vi": "cổng logic",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Mạch thực hiện một phép logic trên các đầu vào nhị phân.",
+  "def_en": "A circuit that performs a logic operation on binary inputs."
+ },
+ {
+  "en": "truth table",
+  "vi": "bảng chân trị",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Bảng liệt kê ngõ ra cho mọi tổ hợp ngõ vào.",
+  "def_en": "A table listing the output for every input combination."
+ },
+ {
+  "en": "Boolean algebra",
+  "vi": "đại số Boolean",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Đại số của các biến nhận giá trị 0 hoặc 1.",
+  "def_en": "The algebra of variables that take the value 0 or 1."
+ },
+ {
+  "en": "De Morgan's theorem",
+  "vi": "định lý De Morgan",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Đảo của một AND bằng OR của các đảo, và ngược lại.",
+  "def_en": "The inverse of an AND equals the OR of the inverses, and vice versa."
+ },
+ {
+  "en": "Karnaugh map",
+  "vi": "bản đồ Karnaugh",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Bảng hai chiều dùng để tối giản biểu thức Boolean.",
+  "def_en": "A two-dimensional chart used to minimise Boolean expressions."
+ },
+ {
+  "en": "sum of products (SOP)",
+  "vi": "tổng các tích",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Biểu thức dạng OR của các số hạng AND.",
+  "def_en": "An expression that is an OR of AND terms."
+ },
+ {
+  "en": "product of sums (POS)",
+  "vi": "tích các tổng",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Biểu thức dạng AND của các số hạng OR.",
+  "def_en": "An expression that is an AND of OR terms."
+ },
+ {
+  "en": "combinational logic",
+  "vi": "logic tổ hợp",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Mạch có ngõ ra chỉ phụ thuộc ngõ vào hiện tại.",
+  "def_en": "A circuit whose output depends only on the present inputs."
+ },
+ {
+  "en": "tri-state logic",
+  "vi": "logic ba trạng thái",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Ngõ ra có thêm trạng thái trở kháng cao ngoài mức 0 và 1.",
+  "def_en": "An output with a high-impedance state besides 0 and 1."
+ },
+ {
+  "en": "monostable",
+  "vi": "mạch đơn ổn",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Mạch có một trạng thái ổn định, tạo một xung khi kích.",
+  "def_en": "A circuit with one stable state that gives one pulse when triggered."
+ },
+ {
+  "en": "bistable (flip-flop)",
+  "vi": "mạch song ổn (flip-flop)",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Mạch có hai trạng thái ổn định, lưu một bit.",
+  "def_en": "A circuit with two stable states, storing one bit."
+ },
+ {
+  "en": "latch",
+  "vi": "chốt",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Phần tử nhớ một bit điều khiển bằng mức.",
+  "def_en": "A level-controlled one-bit memory element."
+ },
+ {
+  "en": "logic family",
+  "vi": "họ logic",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Nhóm vi mạch cùng công nghệ chế tạo và mức điện áp (TTL, CMOS).",
+  "def_en": "A group of ICs sharing fabrication technology and voltage levels (TTL, CMOS)."
+ },
+ {
+  "en": "noise margin",
+  "vi": "biên chống nhiễu",
+  "modules": [
+   "m02",
+   "m09"
+  ],
+  "def_vi": "Mức nhiễu lớn nhất mà cổng còn đọc đúng mức logic.",
+  "def_en": "The largest noise a gate tolerates and still reads the correct logic level."
+ },
+ {
+  "en": "propagation delay",
+  "vi": "thời gian trễ truyền",
+  "modules": [
+   "m02"
+  ],
+  "def_vi": "Thời gian từ khi đổi ngõ vào đến khi ngõ ra đổi.",
+  "def_en": "The time from an input change to the resulting output change."
+ },
+ {
+  "en": "integrated circuit (IC)",
+  "vi": "mạch tích hợp (IC)",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Mạch hoàn chỉnh chế tạo trên một chip bán dẫn.",
+  "def_en": "A complete circuit fabricated on one semiconductor chip."
+ },
+ {
+  "en": "SSI, MSI, LSI, VLSI",
+  "vi": "SSI, MSI, LSI, VLSI",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Các mức tích hợp theo số cổng trên chip, từ nhỏ đến rất lớn.",
+  "def_en": "Scales of integration by gates per chip, from small to very large."
+ },
+ {
+  "en": "fan-in",
+  "vi": "fan-in (số đầu vào)",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Số đầu vào của một cổng.",
+  "def_en": "The number of inputs of a gate."
+ },
+ {
+  "en": "fan-out",
+  "vi": "fan-out (số tải)",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Số đầu vào cổng cùng họ mà một ngõ ra có thể lái.",
+  "def_en": "The number of same-family gate inputs one output can drive."
+ },
+ {
+  "en": "decoder",
+  "vi": "bộ giải mã",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Mạch đổi mã n bit thành một trong 2ⁿ ngõ ra tích cực.",
+  "def_en": "A circuit that turns an n-bit code into one of 2ⁿ active outputs."
+ },
+ {
+  "en": "encoder",
+  "vi": "bộ mã hoá",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Mạch đổi một ngõ vào tích cực thành mã nhị phân.",
+  "def_en": "A circuit that turns one active input into a binary code."
+ },
+ {
+  "en": "priority encoder",
+  "vi": "bộ mã hoá ưu tiên",
+  "modules": [
+   "m03",
+   "m10"
+  ],
+  "def_vi": "Bộ mã hoá cho mã của ngõ vào tích cực có thứ tự cao nhất.",
+  "def_en": "An encoder that gives the code of the highest-order active input."
+ },
+ {
+  "en": "multiplexer (MUX)",
+  "vi": "bộ dồn kênh",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Chọn một trong nhiều ngõ vào dữ liệu theo các đường chọn.",
+  "def_en": "Selects one of several data inputs by select lines."
+ },
+ {
+  "en": "demultiplexer",
+  "vi": "bộ phân kênh",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Đưa một ngõ vào dữ liệu đến một trong nhiều ngõ ra.",
+  "def_en": "Routes one data input to one of several outputs."
+ },
+ {
+  "en": "select lines",
+  "vi": "đường chọn",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Các đường điều khiển việc chọn kênh của bộ dồn kênh.",
+  "def_en": "Control lines that choose the channel of a multiplexer."
+ },
+ {
+  "en": "seven-segment display",
+  "vi": "màn hình 7 đoạn",
+  "modules": [
+   "m03",
+   "m06"
+  ],
+  "def_vi": "Hiển thị chữ số bằng bảy đoạn LED hoặc LCD.",
+  "def_en": "Shows digits with seven LED or LCD segments."
+ },
+ {
+  "en": "adder",
+  "vi": "bộ cộng",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Mạch cộng hai số nhị phân (bán phần, toàn phần).",
+  "def_en": "A circuit that adds two binary numbers (half, full)."
+ },
+ {
+  "en": "comparator",
+  "vi": "bộ so sánh (số)",
+  "modules": [
+   "m03"
+  ],
+  "def_vi": "Mạch so sánh độ lớn hai số nhị phân.",
+  "def_en": "A circuit that compares the magnitude of two binary numbers."
+ },
+ {
+  "en": "CPU (central processing unit)",
+  "vi": "bộ xử lý trung tâm (CPU)",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Phần thực hiện lệnh của máy tính.",
+  "def_en": "The part of a computer that executes instructions."
+ },
+ {
+  "en": "ALU (arithmetic logic unit)",
+  "vi": "khối số học và logic (ALU)",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Phần của CPU làm phép tính và phép logic.",
+  "def_en": "The CPU part that does arithmetic and logic operations."
+ },
+ {
+  "en": "register",
+  "vi": "thanh ghi",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Ô nhớ nhanh trong CPU.",
+  "def_en": "A fast storage cell inside the CPU."
+ },
+ {
+  "en": "program counter",
+  "vi": "bộ đếm chương trình",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Thanh ghi giữ địa chỉ lệnh kế tiếp.",
+  "def_en": "The register that holds the address of the next instruction."
+ },
+ {
+  "en": "address bus",
+  "vi": "bus địa chỉ",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Đường truyền địa chỉ ô nhớ hoặc thiết bị.",
+  "def_en": "Lines that carry the address of a memory cell or device."
+ },
+ {
+  "en": "data bus",
+  "vi": "bus dữ liệu",
+  "modules": [
+   "m04",
+   "m05"
+  ],
+  "def_vi": "Đường truyền dữ liệu giữa các khối.",
+  "def_en": "Lines that carry data between blocks."
+ },
+ {
+  "en": "RAM",
+  "vi": "bộ nhớ truy cập ngẫu nhiên (RAM)",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Bộ nhớ đọc ghi, thường mất dữ liệu khi tắt nguồn.",
+  "def_en": "Read/write memory that usually loses data when power is off."
+ },
+ {
+  "en": "ROM",
+  "vi": "bộ nhớ chỉ đọc (ROM)",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Bộ nhớ giữ dữ liệu khi tắt nguồn, chủ yếu để đọc.",
+  "def_en": "Memory that keeps data without power, mainly for reading."
+ },
+ {
+  "en": "flash memory",
+  "vi": "bộ nhớ flash",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Bộ nhớ không bay hơi xoá và ghi theo khối.",
+  "def_en": "Non-volatile memory erased and written in blocks."
+ },
+ {
+  "en": "volatile memory",
+  "vi": "bộ nhớ bay hơi",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Bộ nhớ mất nội dung khi mất nguồn.",
+  "def_en": "Memory that loses its contents without power."
+ },
+ {
+  "en": "instruction cycle",
+  "vi": "chu trình lệnh",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Chuỗi nhận lệnh, giải mã, thực thi.",
+  "def_en": "The sequence fetch, decode, execute."
+ },
+ {
+  "en": "clock",
+  "vi": "xung nhịp",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Tín hiệu định thời cho hoạt động của CPU.",
+  "def_en": "The timing signal for CPU operation."
+ },
+ {
+  "en": "microprocessor",
+  "vi": "vi xử lý",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "CPU chế tạo trên một chip.",
+  "def_en": "A CPU built on one chip."
+ },
+ {
+  "en": "ASIC",
+  "vi": "vi mạch chuyên dụng (ASIC)",
+  "modules": [
+   "m04"
+  ],
+  "def_vi": "Vi mạch thiết kế cho một ứng dụng riêng.",
+  "def_en": "An integrated circuit designed for one specific application."
+ },
+ {
+  "en": "ARINC 429",
+  "vi": "ARINC 429",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Bus điểm-điểm một chiều, từ dữ liệu 32 bit, 12,5 hoặc 100 kbps.",
+  "def_en": "A one-way point-to-point bus with 32-bit words at 12.5 or 100 kbps."
+ },
+ {
+  "en": "ARINC 629",
+  "vi": "ARINC 629",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Bus hai chiều 2 Mbps không có bộ điều khiển trung tâm.",
+  "def_en": "A two-way 2 Mbps bus with no central controller."
+ },
+ {
+  "en": "AFDX (ARINC 664)",
+  "vi": "AFDX (ARINC 664)",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Ethernet chuyển mạch song công 100 Mbps cho tàu bay.",
+  "def_en": "Full-duplex switched 100 Mbps Ethernet for aircraft."
+ },
+ {
+  "en": "MIL-STD-1553",
+  "vi": "MIL-STD-1553",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Bus quân sự có bộ điều khiển bus và các thiết bị đầu cuối.",
+  "def_en": "A military bus with a bus controller and remote terminals."
+ },
+ {
+  "en": "LRU (line replaceable unit)",
+  "vi": "LRU (khối thay thế tại tuyến bay)",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Thiết bị có thể tháo thay ngay tại sân bay.",
+  "def_en": "A unit that can be replaced on the line at the airport."
+ },
+ {
+  "en": "label",
+  "vi": "nhãn (label)",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Trường 8 bit của từ ARINC 429 cho biết loại dữ liệu.",
+  "def_en": "The 8-bit field of an ARINC 429 word that says what the data is."
+ },
+ {
+  "en": "SDI (source/destination identifier)",
+  "vi": "bộ nhận dạng nguồn/đích (SDI)",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Trường 2 bit của từ ARINC 429.",
+  "def_en": "The 2-bit field of an ARINC 429 word."
+ },
+ {
+  "en": "SSM (sign/status matrix)",
+  "vi": "ma trận dấu/trạng thái (SSM)",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Trường 2 bit cho biết dấu hoặc trạng thái dữ liệu.",
+  "def_en": "The 2-bit field giving the sign or status of the data."
+ },
+ {
+  "en": "BNR (binary number representation)",
+  "vi": "biểu diễn số nhị phân (BNR)",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Dữ liệu trong từ ARINC 429 mã dạng nhị phân.",
+  "def_en": "Data in an ARINC 429 word coded as a binary number."
+ },
+ {
+  "en": "USB",
+  "vi": "USB",
+  "modules": [
+   "m05"
+  ],
+  "def_vi": "Bus nối tiếp chung của máy tính (Floyd 13-8).",
+  "def_en": "A general serial computer bus (Floyd 13-8)."
+ },
+ {
+  "en": "twisted pair",
+  "vi": "cặp xoắn",
+  "modules": [
+   "m05",
+   "m09"
+  ],
+  "def_vi": "Hai dây xoắn để triệt trường điện từ và giảm nhiễu xuyên âm.",
+  "def_en": "Two wires twisted to cancel fields and reduce crosstalk."
+ },
+ {
+  "en": "EFIS",
+  "vi": "hệ thiết bị bay điện tử (EFIS)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Hiển thị thông tin bay bằng màn hình điện tử: PFD và ND.",
+  "def_en": "Electronic flight instrument system showing flight data on displays: PFD and ND."
+ },
+ {
+  "en": "PFD (primary flight display)",
+  "vi": "màn hình bay chính (PFD)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Hiển thị tư thế, tốc độ, độ cao.",
+  "def_en": "Shows attitude, speed and altitude."
+ },
+ {
+  "en": "ND (navigation display)",
+  "vi": "màn hình dẫn đường (ND)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Hiển thị đường bay và dẫn đường.",
+  "def_en": "Shows the flight path and navigation data."
+ },
+ {
+  "en": "EICAS",
+  "vi": "EICAS (chỉ báo động cơ và cảnh báo tổ bay)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Hiển thị thông số động cơ và cảnh báo.",
+  "def_en": "Displays engine parameters and crew alerts."
+ },
+ {
+  "en": "ECAM",
+  "vi": "ECAM (giám sát tập trung điện tử trên tàu bay)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Hệ thống Airbus hiển thị trạng thái hệ thống và hành động.",
+  "def_en": "Airbus system that shows system status and actions."
+ },
+ {
+  "en": "CRT (cathode ray tube)",
+  "vi": "ống tia âm cực (CRT)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Màn hình dùng chùm điện tử quét lên lớp phát quang.",
+  "def_en": "A display using an electron beam scanning a phosphor."
+ },
+ {
+  "en": "LCD (liquid crystal display)",
+  "vi": "màn hình tinh thể lỏng (LCD)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Màn hình điều khiển ánh sáng qua lớp tinh thể lỏng.",
+  "def_en": "A display that controls light through a liquid-crystal layer."
+ },
+ {
+  "en": "LED (light emitting diode)",
+  "vi": "đi-ốt phát quang (LED)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Linh kiện phát sáng khi dẫn thuận.",
+  "def_en": "A device that emits light when forward-biased."
+ },
+ {
+  "en": "raster scan",
+  "vi": "quét raster",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Quét theo từng dòng ngang trên toàn màn hình.",
+  "def_en": "Scanning line by line across the whole screen."
+ },
+ {
+  "en": "pixel",
+  "vi": "điểm ảnh (pixel)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Phần tử nhỏ nhất của ảnh.",
+  "def_en": "The smallest element of an image."
+ },
+ {
+  "en": "ACARS",
+  "vi": "ACARS (hệ thống địa chỉ và báo cáo liên lạc tàu bay)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Liên kết dữ liệu giữa tàu bay và mặt đất.",
+  "def_en": "Data link between aircraft and ground."
+ },
+ {
+  "en": "CMC / CFDIU",
+  "vi": "CMC / CFDIU (bảo trì tập trung)",
+  "modules": [
+   "m06"
+  ],
+  "def_vi": "Máy tính thu thập lỗi từ các hệ thống để bảo trì.",
+  "def_en": "Computer collecting faults from systems for maintenance."
+ },
+ {
+  "en": "DO-178B/C",
+  "vi": "DO-178B/C",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Chuẩn chứng nhận phần mềm hàng không.",
+  "def_en": "The airborne software certification standard."
+ },
+ {
+  "en": "DO-254",
+  "vi": "DO-254",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Chuẩn cho phần cứng điện tử trên không.",
+  "def_en": "The standard for airborne electronic hardware."
+ },
+ {
+  "en": "DO-160",
+  "vi": "DO-160",
+  "modules": [
+   "m07",
+   "m09"
+  ],
+  "def_vi": "Quy trình thử môi trường (gồm EMC) do RTCA ban hành.",
+  "def_en": "The environmental (including EMC) test procedure published by RTCA."
+ },
+ {
+  "en": "design assurance level (DAL)",
+  "vi": "mức bảo đảm thiết kế (DAL)",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Mức A đến E theo hậu quả của hỏng phần mềm.",
+  "def_en": "Levels A to E by the consequence of a software failure."
+ },
+ {
+  "en": "LSAP (loadable software aircraft part)",
+  "vi": "phần mềm nạp được của tàu bay (LSAP)",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Mã thực thi nạp vào thiết bị như EEC.",
+  "def_en": "Executable code loaded into equipment such as the EEC."
+ },
+ {
+  "en": "field loadable software (FLS)",
+  "vi": "phần mềm nạp tại hiện trường (FLS)",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Phần mềm nạp lên tàu bay mà không tháo thiết bị.",
+  "def_en": "Software loaded on the aircraft without removing the unit."
+ },
+ {
+  "en": "checksum",
+  "vi": "tổng kiểm (checksum)",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Tổng các byte, modulo 256, để phát hiện lỗi.",
+  "def_en": "The sum of bytes, modulo 256, to detect errors."
+ },
+ {
+  "en": "CRC (cyclic redundancy check)",
+  "vi": "kiểm tra dư thừa vòng (CRC)",
+  "modules": [
+   "m07"
+  ],
+  "def_vi": "Phần dư của phép chia modulo-2 cho mã sinh.",
+  "def_en": "The remainder of a modulo-2 division by a generator."
+ },
+ {
+  "en": "Hamming code",
+  "vi": "mã Hamming",
+  "modules": [
+   "m01",
+   "m07"
+  ],
+  "def_vi": "Mã phát hiện và sửa lỗi một bit.",
+  "def_en": "A code that detects and corrects single-bit errors."
+ },
+ {
+  "en": "refractive index",
+  "vi": "chiết suất",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Tỉ số tốc độ ánh sáng chân không và trong môi trường.",
+  "def_en": "The ratio of the speed of light in vacuum to that in the medium."
+ },
+ {
+  "en": "Snell's law",
+  "vi": "định luật Snell",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "n₁ sin θ₁ = n₂ sin θ₂.",
+  "def_en": "n₁ sin θ₁ = n₂ sin θ₂."
+ },
+ {
+  "en": "total internal reflection",
+  "vi": "phản xạ toàn phần",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Ánh sáng bị phản xạ hoàn toàn ở biên khi góc tới lớn hơn góc tới hạn.",
+  "def_en": "Light is fully reflected at a boundary when the angle exceeds the critical angle."
+ },
+ {
+  "en": "critical angle",
+  "vi": "góc tới hạn",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Góc tới nhỏ nhất gây phản xạ toàn phần.",
+  "def_en": "The smallest incidence angle giving total internal reflection."
+ },
+ {
+  "en": "numerical aperture (NA)",
+  "vi": "khẩu độ số (NA)",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Đặc trưng khả năng thu ánh sáng của sợi: √(n₁² − n₂²).",
+  "def_en": "Describes the light-gathering ability of a fibre: √(n₁² − n₂²)."
+ },
+ {
+  "en": "core / cladding",
+  "vi": "lõi / vỏ phản xạ",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Phần dẫn sáng và lớp bao có chiết suất thấp hơn.",
+  "def_en": "The light-carrying part and the lower-index layer around it."
+ },
+ {
+  "en": "single-mode / multimode fibre",
+  "vi": "sợi đơn mode / đa mode",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Sợi cho một mode hoặc nhiều mode truyền.",
+  "def_en": "Fibre carrying one mode or many modes."
+ },
+ {
+  "en": "attenuation",
+  "vi": "suy hao",
+  "modules": [
+   "m08",
+   "m09"
+  ],
+  "def_vi": "Giảm công suất tín hiệu, tính bằng dB hoặc dB/km.",
+  "def_en": "Reduction of signal power, in dB or dB/km."
+ },
+ {
+  "en": "dispersion",
+  "vi": "tán sắc",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Xung bị giãn khi truyền, giới hạn tốc độ bit.",
+  "def_en": "Pulse broadening that limits the bit rate."
+ },
+ {
+  "en": "optical connector",
+  "vi": "đầu nối quang",
+  "modules": [
+   "m08"
+  ],
+  "def_vi": "Phích và đế nối sợi quang.",
+  "def_en": "A plug and receptacle joining optical fibres."
+ },
+ {
+  "en": "EMC (electromagnetic compatibility)",
+  "vi": "tương thích điện từ (EMC)",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Khả năng thiết bị làm việc đúng trong môi trường điện từ của nó.",
+  "def_en": "The ability of equipment to work properly in its electromagnetic environment."
+ },
+ {
+  "en": "EMI (electromagnetic interference)",
+  "vi": "nhiễu điện từ (EMI)",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Năng lượng điện từ không mong muốn gây trục trặc.",
+  "def_en": "Unwanted electromagnetic energy that causes malfunction."
+ },
+ {
+  "en": "HIRF",
+  "vi": "trường RF cường độ cao (HIRF)",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Trường bức xạ cường độ cao từ bên ngoài tàu bay.",
+  "def_en": "High-intensity radiated fields from outside the aircraft."
+ },
+ {
+  "en": "dB (decibel)",
+  "vi": "đề-xi-ben (dB)",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Đơn vị logarit của tỉ số công suất hoặc biên độ.",
+  "def_en": "A logarithmic unit of a power or amplitude ratio."
+ },
+ {
+  "en": "dBm",
+  "vi": "dBm",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Mức công suất so với 1 mW.",
+  "def_en": "Power level relative to 1 mW."
+ },
+ {
+  "en": "harmonic",
+  "vi": "hài",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Thành phần tần số là bội nguyên của tần số cơ bản.",
+  "def_en": "A frequency component that is an integer multiple of the fundamental."
+ },
+ {
+  "en": "spectrum analyser",
+  "vi": "máy phân tích phổ",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Hiển thị biên độ theo tần số.",
+  "def_en": "Displays amplitude against frequency."
+ },
+ {
+  "en": "bonding",
+  "vi": "liên kết (bonding)",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Nối điện các phần kim loại để có đường dòng điện trở thấp.",
+  "def_en": "Electrically joining metal parts for a low-resistance current path."
+ },
+ {
+  "en": "screening / shielding",
+  "vi": "che chắn",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Lưới hoặc vỏ kim loại chắn trường điện từ.",
+  "def_en": "A metal screen or case that blocks electromagnetic fields."
+ },
+ {
+  "en": "ferrite core",
+  "vi": "lõi ferrite",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Lõi từ chặn nhiễu chế độ chung trên cáp.",
+  "def_en": "A magnetic core that blocks common-mode noise on a cable."
+ },
+ {
+  "en": "decoupling capacitor",
+  "vi": "tụ tách",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Tụ nối nguồn xuống đất để hấp thụ gai dòng.",
+  "def_en": "A capacitor from supply to ground absorbing current spikes."
+ },
+ {
+  "en": "crosstalk",
+  "vi": "nhiễu xuyên âm",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Tín hiệu bị ghép sang đường kề bên.",
+  "def_en": "Signal coupled into a neighbouring line."
+ },
+ {
+  "en": "common-mode noise",
+  "vi": "nhiễu chế độ chung",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Dòng nhiễu cùng chiều trên cả hai dây.",
+  "def_en": "Interference current in the same direction on both wires."
+ },
+ {
+  "en": "ESD (electrostatic discharge)",
+  "vi": "phóng tĩnh điện (ESD)",
+  "modules": [
+   "m09"
+  ],
+  "def_vi": "Dòng phóng đột ngột giữa hai vật mang điện tích khác nhau.",
+  "def_en": "A sudden discharge between bodies at different charge."
+ },
+ {
+  "en": "analogue-to-digital converter (ADC)",
+  "vi": "bộ chuyển đổi tương tự sang số (ADC)",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Đổi điện áp liên tục thành mã nhị phân.",
+  "def_en": "Converts a continuous voltage into a binary code."
+ },
+ {
+  "en": "digital-to-analogue converter (DAC)",
+  "vi": "bộ chuyển đổi số sang tương tự (DAC)",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Đổi mã nhị phân thành điện áp.",
+  "def_en": "Converts a binary code into a voltage."
+ },
+ {
+  "en": "sampling",
+  "vi": "lấy mẫu",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Lấy các giá trị rời rạc của một dạng sóng.",
+  "def_en": "Taking discrete values of a waveform."
+ },
+ {
+  "en": "sample-and-hold",
+  "vi": "lấy mẫu và giữ",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Giữ mỗi mẫu không đổi cho tới mẫu kế.",
+  "def_en": "Holds each sample constant until the next."
+ },
+ {
+  "en": "Nyquist frequency",
+  "vi": "tần số Nyquist",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Tần số tín hiệu cao nhất lấy mẫu được ở tần số lấy mẫu cho trước: fₛ/2.",
+  "def_en": "The highest signal frequency that can be sampled at a given rate: fₛ/2."
+ },
+ {
+  "en": "aliasing",
+  "vi": "chồng phổ (aliasing)",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Méo do lấy mẫu chậm hơn hai lần tần số tín hiệu.",
+  "def_en": "Distortion from sampling slower than twice the signal frequency."
+ },
+ {
+  "en": "anti-aliasing filter",
+  "vi": "bộ lọc chống chồng phổ",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Lọc thông thấp đặt trước mạch lấy mẫu.",
+  "def_en": "A low-pass filter placed before the sampling circuit."
+ },
+ {
+  "en": "quantisation",
+  "vi": "lượng tử hoá",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Gán mỗi mẫu vào một mức rời rạc và mã hoá.",
+  "def_en": "Assigning each sample to a discrete level and coding it."
+ },
+ {
+  "en": "resolution",
+  "vi": "độ phân giải",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Số bit hoặc số bước của bộ chuyển đổi.",
+  "def_en": "The number of bits or steps of a converter."
+ },
+ {
+  "en": "R-2R ladder",
+  "vi": "thang R-2R",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Mạng điện trở hai giá trị cho DAC.",
+  "def_en": "A two-value resistor network for a DAC."
+ },
+ {
+  "en": "flash ADC",
+  "vi": "ADC flash (đồng thời)",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "ADC dùng 2ⁿ − 1 bộ so sánh, nhanh nhất.",
+  "def_en": "An ADC with 2ⁿ − 1 comparators, the fastest type."
+ },
+ {
+  "en": "successive-approximation ADC",
+  "vi": "ADC xấp xỉ liên tiếp",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "ADC thử từng bit từ MSB với một DAC và một bộ so sánh.",
+  "def_en": "An ADC that tries each bit from the MSB with a DAC and a comparator."
+ },
+ {
+  "en": "dual-slope ADC",
+  "vi": "ADC hai dốc",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "ADC đổi điện áp thành thời gian xả; chính xác, chậm.",
+  "def_en": "An ADC that turns voltage into discharge time; accurate, slow."
+ },
+ {
+  "en": "sigma-delta ADC",
+  "vi": "ADC sigma-delta",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "ADC tạo luồng 1 bit từ độ chênh giữa các mẫu.",
+  "def_en": "An ADC producing a 1-bit stream from the differences between samples."
+ },
+ {
+  "en": "monotonic",
+  "vi": "đơn điệu",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "DAC không có bước lùi khi quét hết dải mã.",
+  "def_en": "A DAC with no reverse step over the whole code range."
+ },
+ {
+  "en": "operational amplifier (op-amp)",
+  "vi": "bộ khuếch đại thuật toán (op-amp)",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Bộ khuếch đại độ lợi rất cao có hai ngõ vào và một ngõ ra.",
+  "def_en": "A very high-gain amplifier with two inputs and one output."
+ },
+ {
+  "en": "virtual ground",
+  "vi": "đất ảo",
+  "modules": [
+   "m10"
+  ],
+  "def_vi": "Ngõ vào đảo của op-amp ở khoảng 0 V nhờ hồi tiếp.",
+  "def_en": "The inverting input of an op-amp held near 0 V by feedback."
+ }
+]

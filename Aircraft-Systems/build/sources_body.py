@@ -35,6 +35,14 @@ def body(lang, banks):
         h += f'<h3>{mid.upper()} · {esc(BYID[mid][lang])}</h3>'
         if notes: h += '<ul>' + ''.join(f'<li>{x}</li>' for x in notes) + '</ul>'
         else: h += '<div class="callout warn"><b class="t">' + (mm[lang]['warn_title']) + '</b><p>' + mm[lang]['warn'] + '</p></div>'
+    import slides_body
+    h += f'<h2>{"Lỗi và nghi vấn trên slide của giảng viên (từ bản chép)" if vi else "Errors and doubts on the lecturer slides (from the transcripts)"}</h2>'
+    tot = 0
+    for dk, T in slides_body.all_transcripts().items():
+        items = [(pg, x) for pg, s_ in sorted(T.items()) for x in slides_body.split_issues(s_)[0]]
+        if not items: continue
+        tot += len(items); h += f'<h3><a href="../slides/{dk}.html">{esc(DECKS[dk][lang])}</a></h3><ul>' + ''.join(f'<li><a href="../slides/{dk}.html#s{pg}">{"slide" if vi else "slide"} {pg}</a>: {esc(x)}</li>' for pg, x in items) + '</ul>'
+    h += '<p class="srcnote">' + (f'{tot} ghi chú từ {len(slides_body.all_transcripts())}/{len(DECKS)} bộ slide đã đọc; các bộ chưa đọc chưa có mục này.' if vi else f'{tot} notes from {len(slides_body.all_transcripts())}/{len(DECKS)} decks read so far; decks not yet read have no entry here.') + '</p>'
     mig = jl('data/verify/migration_notes.json') or {}
     if mig.get('source_fixes'):
         h += f'<h3>{"Sửa khi chuyển ngân hàng câu hỏi" if vi else "Fixes made while migrating the question bank"}</h3><ul>' + ''.join(f'<li><b>{esc(x["item"])}</b>: {esc(x["what"])}</li>' for x in mig['source_fixes']) + '</ul>'

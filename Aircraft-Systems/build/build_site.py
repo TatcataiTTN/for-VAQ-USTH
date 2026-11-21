@@ -75,7 +75,12 @@ def notebooks(m):
 _SL = None
 def slide_index():
     global _SL
-    if _SL is None: _SL = {(s['deck'], s['page']): s for s in (jload('data/slides/index.json') or [])}
+    if _SL is None:
+        _SL = {(s['deck'], s['page']): s for s in (jload('data/slides/index.json') or [])}
+        import slides_body
+        for dk in DECKS:
+            for pg, tr_ in (slides_body.load(dk) or {}).items():
+                if tr_['title'] and (dk, pg) in _SL: _SL[(dk, pg)]['title'] = tr_['title']
     return _SL
 
 def deck_tag(d, p): return f'{d}·{p}'
@@ -168,7 +173,7 @@ def main():
             b = banks[m['id']]
             if c: module_page(m, c, b, lang)
             if b: bank_page(m, b, lang)
-        index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); slides_page(lang); optional_pages(lang, banks)
+        index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); slides_page(lang); transcript_pages(lang); optional_pages(lang, banks)
     for lg in LANGS:        # URL cu chapter-mapping-{vi,en}.html con song: chuyen sang trang Ban do sach moi
         write(f'chapter-mapping-{lg}.html', f'<!doctype html><html lang="{lg}"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url={lg}/books/index.html"><title>{COURSE["code"]}</title></head><body><p><a href="{lg}/books/index.html">{"Bản đồ sách" if lg == "vi" else "Book map"}</a></p></body></html>')
     write('index.html', f'<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=vi/index.html"><title>{COURSE["code"]} {COURSE["en"]}</title></head>'
@@ -247,13 +252,21 @@ def slides_page(lang):
         for d, a, b in m['blank_slides']:
             for p in range(a, b + 1): owner[(d, p)] = m['id'] + ' (blank)'
     for d, info in DECKS.items():
-        h += f'<h2>{esc(info[lang])} ({info["pages"]})</h2><div class="slidestrip" style="flex-wrap:wrap;overflow:visible">'
+        import slides_body
+        tl = (f' · <a href="{d}.html">{"Bản chép VI/EN" if vi else "VI/EN transcript"} ({len(slides_body.load(d))}/{info["pages"]})</a>') if slides_body.load(d) else ''
+        h += f'<h2>{esc(info[lang])} ({info["pages"]}){tl}</h2><div class="slidestrip" style="flex-wrap:wrap;overflow:visible">'
         for p in range(1, info['pages'] + 1):
             t = idx.get((d, p), {}).get('title', ''); o = owner.get((d, p), '-')
             lab = f'{slide_label(lang, d, p)} · {o}'
             h += f'<a href="{{R}}assets/slides/{d}/p{p:02d}.jpg" data-cap="{esc(lab)}"><img loading="lazy" src="{{R}}assets/slides/{d}/p{p:02d}.jpg" alt="{esc(lab)}"><span class="n">{deck_tag(d, p)} · {o.split(" ")[0]}</span></a>'
         h += '</div>'
     write(f'{lang}/slides/index.html', page(s['slides_title'], h, lang, 'slides/index.html', scripts=('strip.js',)))
+
+def transcript_pages(lang):
+    import slides_body
+    for deck in DECKS:
+        if slides_body.load(deck):
+            rel = f'slides/{deck}.html'; write(f'{lang}/{rel}', page(DECKS[deck][lang], slides_body.deck_body(lang, deck), lang, rel, scripts=('strip.js',)))
 
 def optional_pages(lang, banks):
     """Pages whose builders live in separate files (sources_body, bookmap_body, exercises_body, written, props, lab, analyse, concepts).

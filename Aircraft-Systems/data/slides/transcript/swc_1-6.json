@@ -1,0 +1,90 @@
+{
+ "deck": "swc",
+ "pdf": "software management control.pdf",
+ "pages": 6,
+ "range": [
+  1,
+  6
+ ],
+ "slides": [
+  {
+   "page": 1,
+   "kind": "title",
+   "title": "13.1 Module 05 Digital Techniques / Electronic Instrument Systems: Software Management Control",
+   "text_en": "Page 13.1 of an EASA Part-66 courseware document (Aircraft Technical Book Company): Module 05 Digital Techniques / Electronic Instrument Systems, Sub-Module 13 Software Management Control. Certification category A and B1, level 2: a general knowledge of the theoretical and practical aspects of the subject and an ability to apply that knowledge; objectives (a) to (e) cover understanding fundamentals, giving a general description with examples, using formulae with physical laws, reading sketches and schematics, and applying knowledge with detailed procedures. Knowledge requirement 5.13: awareness of restrictions, airworthiness requirements and possible catastrophic effects of unapproved changes to software programmes.",
+   "text_vi": "Trang 13.1 của tài liệu Part-66 EASA (Aircraft Technical Book Company): Module 05 Kỹ thuật số / Hệ thống thiết bị điện tử, Tiểu mô-đun 13 Kiểm soát quản lý phần mềm. Loại chứng chỉ A và B1, mức 2: hiểu biết chung về khía cạnh lý thuyết và thực hành và khả năng áp dụng; các mục tiêu (a) đến (e) gồm hiểu nền tảng lý thuyết, mô tả chung bằng ví dụ, dùng công thức cùng định luật vật lý, đọc phác thảo và sơ đồ, và áp dụng kiến thức bằng quy trình chi tiết. Yêu cầu kiến thức 5.13: nhận thức về các hạn chế, yêu cầu đủ điều kiện bay và hậu quả thảm hoạ có thể xảy ra khi thay đổi phần mềm không được duyệt.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Lớp chữ của PDF thay các chữ ghép (ff, fi, fl) bằng ký tự lạ (\"elects\" = effects, \"kight\" = flight, \"Xve\" = five); bản chép đã sửa theo nghĩa."
+   ]
+  },
+  {
+   "page": 2,
+   "kind": "content",
+   "title": "13.2 Restrictions and catastrophic effects; airworthiness requirements",
+   "text_en": "Modern aircraft run many millions of lines of code in dozens of computers, so software management control must define and document the development process to avoid catastrophic effects of unapproved changes uploaded to aircraft computers; example: flight control software failing during an IFR approach in zero visibility. Required artifacts include an airworthiness certification plan, software quality assurance plan, configuration management plan, configuration control procedures, code, design and requirements standards, development plan, verification plan, design and requirements documents, traceability, test cases and procedures, verification results, quality assurance and configuration management records, problem reports, and a software accomplishments summary. Airworthiness: \"Software Considerations in Airborne Systems and Equipment Certification\" was published in 1992 by RTCA as DO-178B and by EUROCAE as ED-12B; FAA and EASA use it as certification guidance. Five criticality levels by the consequence of an undetected software error: Level A catastrophic (multiple fatalities, loss of aircraft); B hazardous/severe (serious or fatal injuries to a smaller number of passengers); C major (reduced safety margin, impaired crew efficiency, discomfort or possible injuries); D minor (reduced margins well within crew capabilities, passenger inconvenience such as a routine flight plan change); E no effect. Flight control and navigation are flight critical and need Level A; cabin entertainment is Level E. Different levels do not normally run on the same processor unless an approved partitioning scheme such as ARINC 653 is used: a specification for space and time partitioning in a real-time operating system, used in integrated modular avionics (IMA). DO-178B was written when most code was hand-written; model-based design called for clarification.",
+   "text_vi": "Máy bay hiện đại chạy hàng triệu dòng mã trong hàng chục máy tính, nên kiểm soát quản lý phần mềm phải xác định và lập tài liệu quy trình phát triển để tránh hậu quả thảm hoạ của thay đổi không được duyệt nạp lên máy tính tàu bay; ví dụ: phần mềm điều khiển bay hỏng khi tiếp cận IFR trong tầm nhìn bằng không. Các tài liệu yêu cầu gồm kế hoạch chứng nhận đủ điều kiện bay, kế hoạch bảo đảm chất lượng phần mềm, kế hoạch quản lý cấu hình, quy trình kiểm soát cấu hình, chuẩn mã, chuẩn thiết kế và chuẩn yêu cầu, kế hoạch phát triển, kế hoạch kiểm chứng, tài liệu thiết kế và yêu cầu, truy vết, ca và quy trình kiểm thử, kết quả kiểm chứng, hồ sơ bảo đảm chất lượng và quản lý cấu hình, báo cáo sự cố, và bản tóm tắt thành tựu phần mềm. Yêu cầu đủ điều kiện bay: \"Software Considerations in Airborne Systems and Equipment Certification\" xuất bản năm 1992 bởi RTCA là DO-178B và bởi EUROCAE là ED-12B; FAA và EASA dùng làm hướng dẫn chứng nhận. Năm mức nghiêm trọng theo hậu quả của lỗi phần mềm không bị phát hiện: A thảm hoạ (nhiều người chết, mất máy bay); B nguy hiểm/nghiêm trọng (thương tích nặng hoặc tử vong cho số ít hành khách); C lớn (giảm lề an toàn, giảm hiệu quả tổ bay, khó chịu hoặc có thể bị thương); D nhỏ (giảm lề an toàn nhưng trong khả năng tổ bay, bất tiện cho hành khách như đổi kế hoạch bay thường lệ); E không ảnh hưởng. Điều khiển bay và dẫn đường là quan trọng với chuyến bay nên cần mức A; giải trí cabin là mức E. Các mức khác nhau thường không chạy trên cùng bộ xử lý trừ khi có sơ đồ phân vùng được duyệt như ARINC 653: đặc tả phân vùng không gian và thời gian trong hệ điều hành thời gian thực, dùng trong avionics mô-đun tích hợp (IMA). DO-178B ra đời khi phần lớn mã viết tay; thiết kế theo mô hình đòi hỏi làm rõ thêm.",
+   "formulas": [],
+   "numbers": [
+    "DO-178B/ED-12B xuất bản 1992",
+    "năm mức A đến E"
+   ],
+   "issues": [
+    "Lớp chữ của PDF thay các chữ ghép (ff, fi, fl) bằng ký tự lạ (\"elects\" = effects, \"kight\" = flight, \"Xve\" = five); bản chép đã sửa theo nghĩa."
+   ]
+  },
+  {
+   "page": 3,
+   "kind": "content",
+   "title": "13.3 DO-178C and required traceability (Figure 13-1)",
+   "text_en": "DO-178C was developed in 2011 to replace DO-178B, because model-based design needed clearer definitions between high-level system requirements and low-level software requirements and a process to verify model-based software; in July 2013 the FAA released Advisory Circular AC 20-115C recognising DO-178C as compliance with the software aspects of airworthiness regulations. Supplements: tool qualification (DO-330), model-based development and verification (DO-331), object-oriented technology (DO-332), formal methods (DO-333); tools such as MATLAB, Simulink and Embedded Coder support model-based design. Figure 13-1 shows the required tracing between certification artifacts: system requirements allocated to software, software high-level requirements, software low-level requirements, software architecture, source code, executable object code, test cases, test procedures, test results; red traces are required only for Level A, purple traces for Levels A, B and C, green traces for Levels A through D; Level E needs no traceability. Level A executable object code must be \"robust with respect to the software requirements\" so it responds correctly to abnormal inputs and conditions. The figure carries objective references such as A-3.6, A-4.6, A-4.8, A-5.5, A-7.3, A-7.4, A-7.9 and a legend with columns A, A B C, A B C D.",
+   "text_vi": "DO-178C được xây dựng năm 2011 để thay DO-178B, vì thiết kế theo mô hình cần định nghĩa rõ hơn giữa yêu cầu hệ thống mức cao và yêu cầu phần mềm mức thấp, và cần quy trình kiểm chứng phần mềm theo mô hình; tháng 7 năm 2013 FAA ban hành Thông tư tư vấn AC 20-115C công nhận DO-178C là sự phù hợp với quy định đủ điều kiện bay về khía cạnh phần mềm. Các phụ lục: chứng nhận công cụ (DO-330), phát triển và kiểm chứng theo mô hình (DO-331), công nghệ hướng đối tượng (DO-332), phương pháp hình thức (DO-333); các công cụ như MATLAB, Simulink và Embedded Coder hỗ trợ thiết kế theo mô hình. Hình 13-1 cho thấy truy vết bắt buộc giữa các tài liệu chứng nhận: yêu cầu hệ thống phân bổ cho phần mềm, yêu cầu phần mềm mức cao, yêu cầu phần mềm mức thấp, kiến trúc phần mềm, mã nguồn, mã đối tượng thực thi, ca kiểm thử, quy trình kiểm thử, kết quả kiểm thử; vết đỏ chỉ bắt buộc cho mức A, vết tím cho mức A, B, C, vết xanh cho mức A đến D; mức E không cần truy vết. Mã đối tượng thực thi mức A phải \"vững chắc đối với các yêu cầu phần mềm\" tức là đáp ứng đúng với đầu vào và điều kiện bất thường. Hình có các tham chiếu mục tiêu như A-3.6, A-4.6, A-4.8, A-5.5, A-7.3, A-7.4, A-7.9 và chú giải với các cột A, A B C, A B C D.",
+   "formulas": [],
+   "numbers": [
+    "DO-178C năm 2011",
+    "AC 20-115C tháng 7 năm 2013",
+    "DO-330, DO-331, DO-332, DO-333"
+   ],
+   "issues": [
+    "Lớp chữ của PDF thay các chữ ghép (ff, fi, fl) bằng ký tự lạ (\"elects\" = effects, \"kight\" = flight, \"Xve\" = five); bản chép đã sửa theo nghĩa.",
+    "Câu hỏi 13-6 (slide 5) hỏi vết nào chỉ bắt buộc cho mức A: Hình 13-1 có HAI vết đỏ (kiến trúc phần mềm tới yêu cầu mức cao, và mã nguồn tới mã đối tượng thực thi), trong khi đáp án in ở slide 6 chỉ nêu vết mã nguồn tới mã đối tượng. Module 07 đã ghi nhận."
+   ]
+  },
+  {
+   "page": 4,
+   "kind": "blank",
+   "title": "13.4",
+   "text_en": "A blank page (only the footer: page number 13.4, the Aircraft Technical Book Company logo and \"Module 05 - Digital Techniques / Electronic Instrument Systems\").",
+   "text_vi": "Trang trống (chỉ có chân trang: số trang 13.4, logo Aircraft Technical Book Company và \"Module 05 - Digital Techniques / Electronic Instrument Systems\").",
+   "formulas": [],
+   "numbers": [],
+   "issues": []
+  },
+  {
+   "page": 5,
+   "kind": "content",
+   "title": "13.5 Questions 13-1 to 13-6",
+   "text_en": "Six questions. 13-1: software management control includes a thorough definition and documentation of the aircraft software development process; what documentation is required? 13-2: what is DO-178 and why is it important? 13-3: why are flight control and navigation systems certified at DO-178 Level A? 13-4: what is ARINC 653 and where is it used? 13-5: what was DO-178C developed to take the place of DO-178B for? (as printed: \"to take the place of DO-178B\"). 13-6: DO-178C requires tracing between which certification artifacts for Level A software that are not required for any other levels?",
+   "text_vi": "Sáu câu hỏi. 13-1: kiểm soát quản lý phần mềm gồm việc xác định và lập tài liệu đầy đủ quy trình phát triển phần mềm tàu bay; cần những tài liệu nào? 13-2: DO-178 là gì và vì sao quan trọng? 13-3: vì sao các hệ thống điều khiển bay và dẫn đường được chứng nhận ở mức A của DO-178? 13-4: ARINC 653 là gì và dùng ở đâu? 13-5: DO-178C được xây dựng để thay thế DO-178B (theo câu in). 13-6: DO-178C yêu cầu truy vết giữa những tài liệu chứng nhận nào cho phần mềm mức A mà các mức khác không cần?",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Câu 13-5 in \"What was DO-178C developed to take the place of DO-178B?\": câu hỏi khó hiểu (đáp án in nói về lý do ra đời, không phải về thứ bị thay thế). Câu hỏi được in theo thứ tự 13-1, 13-5, 13-2, 13-6, 13-3, 13-4 (xếp hai cột)."
+   ]
+  },
+  {
+   "page": 6,
+   "kind": "content",
+   "title": "13.6 Answers 13-1 to 13-6",
+   "text_en": "Answer 13-1: the documents listed on page 13.2 (airworthiness certification plan through software accomplishments summary). Answer 13-4: ARINC 653 is a software specification for space and time partitioning in a real-time operating system that lets one processor host applications of different criticality levels; it is used in IMA systems to isolate flight-critical from non-flight-critical functions so that if one application fails it cannot take down the entire IMA system. Answer 13-2: DO-178 is a standards document on the safety of software in aircraft systems; it established design assurance levels based on safety assessment and hazard analysis of failure conditions; FAA and EASA use it as certification guidance. Answer 13-5: when DO-178B was published most software was hand-coded; the move to model-based automatic coding needed clarification between high-level system requirements and low-level software requirements, and a process to verify model-based software and decide whether model-based simulation or formal methods could replace some or all testing. Answer 13-3: flight control and navigation are flight critical and need Level A because failure may cause multiple fatalities and loss of aircraft. Answer 13-6: DO-178C Level A requires that traceability between the source code and the executable object code be documented.",
+   "text_vi": "Đáp án 13-1: các tài liệu nêu ở trang 13.2 (từ kế hoạch chứng nhận đủ điều kiện bay tới bản tóm tắt thành tựu phần mềm). Đáp án 13-4: ARINC 653 là đặc tả phân vùng không gian và thời gian trong hệ điều hành thời gian thực cho phép một bộ xử lý chứa các ứng dụng có mức nghiêm trọng khác nhau; dùng trong hệ IMA để cách ly chức năng quan trọng với chức năng không quan trọng, nên khi một ứng dụng hỏng thì không kéo sập cả hệ IMA. Đáp án 13-2: DO-178 là tài liệu chuẩn về an toàn phần mềm trong hệ thống tàu bay; thiết lập các mức bảo đảm thiết kế dựa trên đánh giá an toàn và phân tích nguy cơ của các tình trạng hỏng; FAA và EASA dùng làm hướng dẫn chứng nhận. Đáp án 13-5: khi DO-178B ra đời phần lớn mã viết tay; chuyển sang sinh mã tự động theo mô hình cần làm rõ giữa yêu cầu hệ thống mức cao và yêu cầu phần mềm mức thấp, và cần quy trình kiểm chứng phần mềm theo mô hình và xét xem mô phỏng theo mô hình hay phương pháp hình thức có thể thay một phần hay toàn bộ kiểm thử. Đáp án 13-3: điều khiển bay và dẫn đường quan trọng với chuyến bay và cần mức A vì hỏng có thể gây nhiều người chết và mất máy bay. Đáp án 13-6: DO-178C mức A yêu cầu lập tài liệu truy vết giữa mã nguồn và mã đối tượng thực thi.",
+   "formulas": [],
+   "numbers": [],
+   "issues": [
+    "Đáp án 13-6 chỉ nêu vết từ mã nguồn tới mã đối tượng; Hình 13-1 (trang 13.3) có hai vết đỏ chỉ mức A, vết còn lại là kiến trúc phần mềm tới yêu cầu mức cao. Đáp án in chưa đầy đủ.",
+    "Lớp chữ của PDF thay các chữ ghép (ff, fi, fl) bằng ký tự lạ (\"elects\" = effects, \"kight\" = flight, \"Xve\" = five); bản chép đã sửa theo nghĩa."
+   ]
+  }
+ ]
+}
