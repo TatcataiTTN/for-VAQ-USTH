@@ -190,6 +190,17 @@ print(f"#8: T3 = {T3:.0f} K, w_turb = {wt:.1f}, w_comp = {wc:.1f} kJ/kg, w_comp/
               [f'T3 = {b8["T3"]:.0f} K', f'eta = {b8["eta"]:.3f}', f'{1-14**-.4:.3f}']))
     return S
 
+import re as _re
+_REFW = _re.compile(r'(?:§|Hình|Fig|Eq|Section|Mục|Bảng|Table|Chương|Ch\.|tr\.|Ví dụ|Example|Ex|Problem|Bài|Phương trình|page|trang|p\.|A-|FE|Prob|Slide|Tutorials?|Câu|Cengel|Farokhi|El-Sayed)\s*[\(\-–]?\s*$')
+def _loc(text, lang):
+    """Vietnamese notebook text: decimal comma in the interpretation of results (numbers printed by the code cells keep Python's dot); section/example numbers are left alone."""
+    if lang != 'vi': return text
+    out = []
+    for p in _re.split(r'(\$[^$]*\$)', text):
+        if p.startswith('$'): out.append(p); continue
+        out.append(_re.sub(r'(?<![\w.,])\d+\.\d+(?![\d.]|\w)', lambda m, p=p: m.group(0) if _REFW.search(p[max(0, m.start() - 14):m.start()]) else m.group(0).replace('.', ','), p))
+    return ''.join(out)
+
 def build(lang):
     vi = lang == 'vi'
     nb = nbf.v4.new_notebook()
@@ -198,10 +209,11 @@ def build(lang):
             '# m02 · Gas power cycles: verification calculations\n\nThis notebook recomputes in Python the main examples of module m02 (Slide Ch.2; Tutorials I; Cengel Ch.9; El-Sayed Example 4.2). Every section has three parts: the question the method answers → code → interpretation of the real printed numbers. Run top to bottom (needs numpy, scipy). Table A-17 is embedded in the first code cell.')
     cells = [nbf.v4.new_markdown_cell(head)]; checks = []
     for i, (title, q, code, interp, must) in enumerate(sections(lang), 1):
-        cells.append(nbf.v4.new_markdown_cell(f'## {i}. {title}\n\n{q}')); cells.append(nbf.v4.new_code_cell(code)); cells.append(nbf.v4.new_markdown_cell(interp)); checks.append((len(cells) - 2, must))
+        cells.append(nbf.v4.new_markdown_cell(f'## {i}. {title}\n\n{q}')); cells.append(nbf.v4.new_code_cell(code)); cells.append(nbf.v4.new_markdown_cell(_loc(interp, lang))); checks.append((len(cells) - 2, must))
     nb['cells'] = cells; nb['metadata']['language_info'] = {'name': 'python'}
     fn = os.path.join(OUT, f'm02_gas_power_cycles_{lang}.ipynb'); nbf.write(nb, fn)
-    r = subprocess.run([os.path.join(ROOT, '.venv', 'bin', 'python'), '-I', '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute', '--inplace', '--ExecutePreprocessor.timeout=300', fn], capture_output=True, text=True, cwd=OUT)
+    env = dict(os.environ, JUPYTER_PATH=os.path.join(ROOT, 'scratch', 'm02', 'jupyter'))
+    r = subprocess.run([os.path.join(ROOT, '.venv', 'bin', 'python'), '-I', '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute', '--inplace', '--ExecutePreprocessor.timeout=300', '--ExecutePreprocessor.kernel_name=m02venv', fn], capture_output=True, text=True, cwd=OUT, env=env)
     if r.returncode != 0: print(r.stdout[-1500:], r.stderr[-2500:]); raise SystemExit(f'nbconvert failed for {lang}')
     nb2 = nbf.read(fn, as_version=4)
     for idx, must in checks:

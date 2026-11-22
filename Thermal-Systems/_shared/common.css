@@ -187,3 +187,8 @@ header.top nav details.navgrp[open]>summary{background:var(--code);border-color:
 main table.t{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
 main .slide-explain-body table,main .ex table{display:block;max-width:100%;overflow-x:auto}
 main h2[id]{scroll-margin-top:118px}
+
+/* audit fix: long <select> option text must not widen the page on phones */
+main select{max-width:100%;min-width:0;text-overflow:ellipsis}
+main label{max-width:100%;display:inline-flex;flex-wrap:wrap;align-items:center;gap:.3em}
+.pop a,.pop button{overflow-wrap:anywhere}

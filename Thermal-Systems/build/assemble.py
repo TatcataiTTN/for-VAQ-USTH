@@ -47,13 +47,15 @@ def tidy_sci(text):
                 if 1 <= abs(mant) < 1000: return f'{mant:g} {q}{base}'
             break
     return f'{val:g} {unit}'
-DEC = re.compile(r'(?<![\d.,])\d+\.\d+(?!\d|\.\d|[eE][+-]?\d)'); THO = re.compile(r'(?<![\d.,])\d{1,3}(?:,\d{3})+(?!\d|,\d)')
+DEC = re.compile(r'(?<![\d.,])\d+\.\d+(?!\d|\.\d|[eE][+-]?\d)'); THO2 = re.compile(r'(?<![\d.,])(\d{1,3}(?:,\d{3})+)\.(\d+)(?!\d|\.\d)')
+THO = re.compile(r'(?<![\d.,])\d{1,3}(?:,\d{3})+(?!\d|,\d)')
 REF = re.compile(r'(?:§|Hình|Fig(?:ure)?\.?|Eq(?:uation)?\.?|Section|Mục|Bảng|Table|Chương|Chapter|ch\.|tr\.|Ví dụ|Example|Problem|Bài|Phương trình|page|trang|Trang|p\.)\s*$')
 def vi_numbers(vi, en):
     """A number that appears in the Vietnamese text exactly as in the English text was not localised: decimal point -> comma, thousands comma -> dot
     (section/figure numbers such as 'Hình 13.7' are left alone)."""
     ok = lambda m: m.group(0) in en and not REF.search(vi[max(0, m.start() - 14):m.start()])
     vi = DEC.sub(lambda m: m.group(0).replace('.', ',') if ok(m) else m.group(0), vi)
+    vi = THO2.sub(lambda m: m.group(1).replace(',', '.') + ',' + m.group(2) if ok(m) else m.group(0), vi)     # '10,198.9' -> '10.198,9' (thousands AND decimals in one number)
     vi = THO.sub(lambda m: m.group(0).replace(',', '.') if ok(m) else m.group(0), vi)
     for tok in set(THO.findall(en)):                       # '200 000' (space) -> '200.000': one thousands convention across the Vietnamese side
         for sep in (' ', '\u00a0', '\u202f'):

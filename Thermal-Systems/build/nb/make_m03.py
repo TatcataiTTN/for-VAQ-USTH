@@ -198,6 +198,17 @@ print(f"illustration (isentropic, k = 1.4): +35 K from 50 C -> pressure ratio {P
               ['after primary exchanger: 50 C', 'after secondary: 10-30 C', f'30-40 psi = {30*6.894757:.0f}-{40*6.894757:.0f} kPa', f'pressure ratio {PRc:.2f}']))
     return S
 
+import re as _re
+_REFW = _re.compile(r'(?:§|Hình|Fig|Eq|Section|Mục|Bảng|Table|Chương|Ch\.|tr\.|Ví dụ|Example|Ex|Problem|Bài|Phương trình|page|trang|p\.|A-|FE|Prob|Slide|Tutorials?|Câu|Cengel|Farokhi|El-Sayed)\s*[\(\-–]?\s*$')
+def _loc(text, lang):
+    """Vietnamese notebook text: decimal comma in the interpretation of results (numbers printed by the code cells keep Python's dot); section/example numbers are left alone."""
+    if lang != 'vi': return text
+    out = []
+    for p in _re.split(r'(\$[^$]*\$)', text):
+        if p.startswith('$'): out.append(p); continue
+        out.append(_re.sub(r'(?<![\w.,])\d+\.\d+(?![\d.]|\w)', lambda m, p=p: m.group(0) if _REFW.search(p[max(0, m.start() - 14):m.start()]) else m.group(0).replace('.', ','), p))
+    return ''.join(out)
+
 def build(lang):
     vi = lang == 'vi'
     nb = nbf.v4.new_notebook()
@@ -206,7 +217,7 @@ def build(lang):
             '# m03 · Refrigeration cycles and aircraft air conditioning: verification calculations\n\nThis notebook recomputes in Python the main examples of module m03 (Slide Ch.3; Tutorials I; Cengel Ch.11). Every section has three parts: the question the method answers → code → interpretation of the real printed numbers. Run top to bottom. The R-134a tables (A-11, A-12, the A-13 blocks) and Table A-17 are embedded in the first code cell; if CoolProp is installed each section also compares with CoolProp (the independent route), otherwise that part is skipped. The cooling-pack part uses only slide numbers (illustration); no book describes this system.')
     cells = [nbf.v4.new_markdown_cell(head)]; checks = []
     for i, (title, q, code, interp, must) in enumerate(sections(lang), 1):
-        cells.append(nbf.v4.new_markdown_cell(f'## {i}. {title}\n\n{q}')); cells.append(nbf.v4.new_code_cell(code)); cells.append(nbf.v4.new_markdown_cell(interp)); checks.append((len(cells) - 2, must))
+        cells.append(nbf.v4.new_markdown_cell(f'## {i}. {title}\n\n{q}')); cells.append(nbf.v4.new_code_cell(code)); cells.append(nbf.v4.new_markdown_cell(_loc(interp, lang))); checks.append((len(cells) - 2, must))
     nb['cells'] = cells; nb['metadata']['language_info'] = {'name': 'python'}
     fn = os.path.join(OUT, f'm03_refrigeration_aircraft_air_conditioning_{lang}.ipynb'); nbf.write(nb, fn)
     # a throw-away kernelspec that points to the project venv (the one with CoolProp), kept in scratch/, so nothing global is changed

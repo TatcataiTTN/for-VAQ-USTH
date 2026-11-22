@@ -86,6 +86,7 @@ def slide_strip(m, lang, r):
         out += f'<a href="{r}assets/slides/{d}/p{p:02d}.jpg" data-cap="{esc(lab)}" class="{"blank" if blank else ""}"><img loading="lazy" src="{r}assets/slides/{d}/p{p:02d}.jpg" alt="{esc(lab)}"><span class="n">{deck_tag(d, p)}</span></a>'
     return out + '</div>'
 
+def hnum(x, lang): return f'{x:.1f}'.replace('.', ',') if lang == 'vi' else f'{x:.1f}'      # Vietnamese decimal comma
 def est_hours(m):
     tot = sum(len(slides_of(x)) for x in MODS)
     return COURSE['hours']['lecture'] * len(slides_of(m)) / tot
@@ -99,7 +100,7 @@ def module_page(m, c, bank, lang):
         slides += [(x, False) for x in part['slides']]
     h = f'<div class="crumbs"><a href="../../index.html">{s["home"]}</a> › {s["modules"]} › {m["id"].upper()}</div>'
     h += f'<h1>{m["id"][1:]}. {esc(m[lang])}</h1><p class="lead">{c.get("subtitle", "")}</p>'
-    h += (f'<p><span class="tag">{s["clo"]}: {", ".join(m["clo"])}</span><span class="tag">{s["time"]}: ≈ {est_hours(m):.1f} {s["hours"]}</span>'
+    h += (f'<p><span class="tag">{s["clo"]}: {", ".join(m["clo"])}</span><span class="tag">{s["time"]}: ≈ {hnum(est_hours(m), lang)} {s["hours"]}</span>'
           f'<span class="tag">{len(slides_of(m))} {s["slides_n"]}</span><span class="tag exam">{s["nq"]}: {nq} ({ng} {s["orig"]})</span></p>')
     h += '<p class="srcnote">' + ' · '.join(esc(x) for x in m['src']) + f' · <a href="../../books/index.html#overview">{s["books_title"]}</a></p>'
     toc = [('#slides', s['strip'].split(' (')[0]), ('#lecture', s['lecture']), ('#notes', s['notes']), ('#selfcheck', s['selfcheck']), ('#practice', s['practice']), ('#nb', s['nb']), ('#errors', s['errors'])]
@@ -166,7 +167,7 @@ def index_page(lang, contents, banks):
     for m in MODS:
         b = banks[m['id']]; c = contents[(m['id'], lang)]
         cnt = f'<p>{s["nq"]}: {len(b["items"])} ({sum(1 for i in b["items"] if i["origin"]=="goc")} {s["orig"]}) + {len(b["essays"])}</p>' if b else ''
-        inner = f'<div class="num">MODULE {m["id"][1:]} · {", ".join(m["clo"])}</div><h3>{esc(m[lang])}</h3><p>{len(slides_of(m))} {s["slides_n"]} · ≈ {est_hours(m):.1f} {s["hours"]}</p>{cnt}'
+        inner = f'<div class="num">MODULE {m["id"][1:]} · {", ".join(m["clo"])}</div><h3>{esc(m[lang])}</h3><p>{len(slides_of(m))} {s["slides_n"]} · ≈ {hnum(est_hours(m), lang)} {s["hours"]}</p>{cnt}'
         if c: h += f'<a class="mod-card" href="modules/{m["slug"]}/index.html">{inner}<p><b>{s["openm"]}</b></p></a>'
         else: h += f'<div class="mod-card" style="opacity:.55;cursor:default">{inner}<p>{s["soon"]}</p></div>'
     h += '</div>'
@@ -226,7 +227,7 @@ def slides_page(lang):
         for p in range(1, info['pages'] + 1):
             t = idx.get((d, p), {}).get('title', ''); o = owner.get((d, p), '–')
             lab = f'{slide_label(lang, d, p)} · {o}'
-            h += f'<a href="../assets/slides/{d}/p{p:02d}.jpg" data-cap="{esc(lab)}"><img loading="lazy" src="../assets/slides/{d}/p{p:02d}.jpg" alt="{esc(lab)}"><span class="n">{deck_tag(d, p)} · {o.split(" ")[0]}</span></a>'
+            h += f'<a href="{{R}}assets/slides/{d}/p{p:02d}.jpg" data-cap="{esc(lab)}"><img loading="lazy" src="{{R}}assets/slides/{d}/p{p:02d}.jpg" alt="{esc(lab)}"><span class="n">{deck_tag(d, p)} · {o.split(" ")[0]}</span></a>'
         h += '</div>'
     write(f'{lang}/slides/index.html', page(s['slides_title'], h, lang, 'slides/index.html', scripts=('strip.js',)))
 

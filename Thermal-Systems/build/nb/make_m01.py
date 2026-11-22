@@ -207,6 +207,17 @@ print(f"T = 0 would need u = {(ma*(1+f)*ue + (pe-pa)*Ae)/ma:.1f} m/s > ue becaus
               [f'{(50*((1+.015)*500)+(120e3-60e3)*.25)/1e3:.2f}']))
     return S
 
+import re as _re
+_REFW = _re.compile(r'(?:§|Hình|Fig|Eq|Section|Mục|Bảng|Table|Chương|Ch\.|tr\.|Ví dụ|Example|Ex|Problem|Bài|Phương trình|page|trang|p\.|A-|FE|Prob|Slide|Tutorials?|Câu|Cengel|Farokhi|El-Sayed)\s*[\(\-–]?\s*$')
+def _loc(text, lang):
+    """Vietnamese notebook text: decimal comma in the interpretation of results (numbers printed by the code cells keep Python's dot); section/example numbers are left alone."""
+    if lang != 'vi': return text
+    out = []
+    for p in _re.split(r'(\$[^$]*\$)', text):
+        if p.startswith('$'): out.append(p); continue
+        out.append(_re.sub(r'(?<![\w.,])\d+\.\d+(?![\d.]|\w)', lambda m, p=p: m.group(0) if _REFW.search(p[max(0, m.start() - 14):m.start()]) else m.group(0).replace('.', ','), p))
+    return ''.join(out)
+
 def build(lang):
     nb = nbf.v4.new_notebook(); vi = lang == 'vi'
     head = ('# m01 · Giới thiệu, nguyên lý đẩy và phân loại động cơ: tính toán kiểm chứng\n\nNotebook này tính lại bằng Python các ví dụ và công thức chính của module m01 (Slide Ch.1; El-Sayed Ch.2; Farokhi Ch.3, Appendix A). '
@@ -217,12 +228,13 @@ def build(lang):
     checks = []
     for i, (title, q, code, interp, must) in enumerate(sections(lang), 1):
         cells.append(nbf.v4.new_markdown_cell(f'## {i}. {title}\n\n{q}'))
-        cells.append(nbf.v4.new_code_cell(code)); cells.append(nbf.v4.new_markdown_cell(interp)); checks.append((len(cells) - 2, must))
+        cells.append(nbf.v4.new_code_cell(code)); cells.append(nbf.v4.new_markdown_cell(_loc(interp, lang))); checks.append((len(cells) - 2, must))
     nb['cells'] = cells; nb['metadata']['language_info'] = {'name': 'python'}
     # section 2 needs the isa() of section 1 in scope: it is defined in cell 1 and the notebook runs top to bottom
     fn = os.path.join(OUT, f'm01_introduction_propulsion_{lang}.ipynb')
     nbf.write(nb, fn)
-    r = subprocess.run([os.path.join(ROOT, '.venv', 'bin', 'python'), '-I', '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute', '--inplace', '--ExecutePreprocessor.timeout=300', fn], capture_output=True, text=True, cwd=OUT)
+    env = dict(os.environ, JUPYTER_PATH=os.path.join(ROOT, 'scratch', 'm01', 'jupyter'))
+    r = subprocess.run([os.path.join(ROOT, '.venv', 'bin', 'python'), '-I', '-m', 'jupyter', 'nbconvert', '--to', 'notebook', '--execute', '--inplace', '--ExecutePreprocessor.timeout=300', '--ExecutePreprocessor.kernel_name=m01venv', fn], capture_output=True, text=True, cwd=OUT, env=env)
     if r.returncode != 0: print(r.stdout[-1500:], r.stderr[-2500:]); raise SystemExit(f'nbconvert failed for {lang}')
     nb2 = nbf.read(fn, as_version=4)
     for idx, must in checks:
