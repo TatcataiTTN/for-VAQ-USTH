@@ -1,0 +1,46 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Trình bày bảy việc cần làm để xử lý và vận chuyển linh kiện nhạy tĩnh điện, và nêu vì sao một người đi trên thảm len/nylon có thể làm hỏng một vi xử lý VLSI. Dùng số liệu Bảng 12.1 và 12.2.",
+   "en": "State seven things to do when handling and transporting static-sensitive devices, and explain why a person walking over a wool/nylon carpet can damage a VLSI microprocessor. Use the numbers of Tables 12.1 and 12.2."
+  },
+  "sol": {
+   "vi": "Bảy việc: vòng cổ tay có điện trở 1 MΩ nối đất; dây đeo gót; thảm sàn và bàn tiêu tán tĩnh điện; tránh môi trường quá khô; ổ nối đất; thiết bị thử nối đất; mỏ hàn điện áp thấp nối đất (còn: dụng cụ IC chống tĩnh điện, tránh nguồn cao áp, bao bì chống tĩnh điện). Đi trên thảm len/nylon ở độ ẩm 20 % sinh tới 35 kV (Bảng 12.1) trong khi vi xử lý VLSI chỉ chịu 20 V đến 100 V (Bảng 12.2): gấp ít nhất 350 lần ngưỡng cao nhất; ở độ ẩm 80 % vẫn có 1,5 kV, vẫn gấp 15 lần.",
+   "en": "Seven things: a grounded wrist strap with a 1 MΩ resistor; heel straps; static-dissipative floor and bench mats; avoiding very dry environments; ground jacks; grounded test equipment; low-voltage grounded soldering irons (also anti-static IC tools, avoiding high-voltage sources, anti-static packaging). Walking over a wool/nylon carpet at 20 % humidity generates up to 35 kV (Table 12.1) while a VLSI microprocessor withstands only 20 V to 100 V (Table 12.2): at least 350 times the top of its range; at 80 % humidity it is still 1.5 kV, still 15 times."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Xử lý ESD",
+   "en": "Added · ESD handling"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một bộ nhớ động có ngưỡng 20 V đến 100 V. (a) Một người ở bàn làm việc mặc áo yếm sinh 8 kV ở độ ẩm 20 % và 150 V ở 80 %: so với ngưỡng trên 100 V mỗi trường hợp gấp bao nhiêu lần? (b) Nếu cùng người đó đeo vòng cổ tay 1 MΩ và chạm vào vật 230 V thì dòng giới hạn là bao nhiêu? (c) Điều này nói gì về ESD ở nơi ẩm và khô?",
+   "en": "A dynamic memory has a threshold of 20 V to 100 V. (a) A person at a bench in overalls generates 8 kV at 20 % humidity and 150 V at 80 %: how many times the 100 V upper threshold is each? (b) If the same person wears a 1 MΩ wrist strap and touches a 230 V conductor, what is the limited current? (c) What does this say about ESD in humid and dry places?"
+  },
+  "sol": {
+   "vi": "(a) 8 000 / 100 = 80 lần; 150 / 100 = 1.5 lần (vẫn vượt ngưỡng!). (b) $I=230/10^6$ A = 0.23 mA. (c) Không khí ẩm giảm điện áp tĩnh hàng chục lần nhưng với linh kiện nhạy nhất (20 V đến 100 V) cũng chưa đủ an toàn, nên vẫn phải dùng vòng cổ tay và bao bì chống tĩnh điện.",
+   "en": "(a) 8,000 / 100 = 80 times; 150 / 100 = 1.5 times (still above the threshold!). (b) $I=230/10^6$ A = 0.23 mA. (c) Humid air cuts the static voltage tens of times but for the most sensitive devices (20 V to 100 V) it is still not safe, so a wrist strap and anti-static packaging are always needed."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tính toán ESD",
+   "en": "Added · ESD calculation"
+  }
+ }
+]

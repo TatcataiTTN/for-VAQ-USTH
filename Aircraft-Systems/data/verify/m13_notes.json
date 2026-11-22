@@ -1,0 +1,18 @@
+{
+ "vi": [
+  "Tooley Chương 16 câu 5: khoá in (b) 4 ms; theo bảng 16.1 và quy tắc của chính cuốn sách (dữ liệu 100 lần mỗi giây cần BAG không quá 8 ms vì 125 Hz lớn hơn 100 Hz) thì 400 lần mỗi giây cần tần số BAG ít nhất 400 Hz, tức 2 ms (500 Hz); 4 ms chỉ cho 250 Hz. Site dùng (a).",
+  "Tooley Chương 16 câu 9: khoá in (b) \"lớp IP\"; nhưng câu 11 (khoá a) cho thứ tự phát UDP, rồi IP, rồi lớp liên kết, nên tiêu đề Ethernet do lớp liên kết thêm vào. Site dùng (c).",
+  "Khoá A.16 có 20 mục nhưng sách chỉ in 16 câu trắc nghiệm ở mục 16.11; bốn mục cuối (17 c, 18 a, 19 b, 20 b) không có câu tương ứng.",
+  "Tooley 16.9 nói payload AFDX 1 đến 1 471 byte, còn hộp Key Point nói 17 đến 1 471 và dưới 17 byte thì thêm đệm: nhất quán khi gộp payload và đệm (tối thiểu 17 byte). Tổng khung 64 đến 1 518 byte được site kiểm bằng cộng các trường.",
+  "Tooley 18.5 nói mạng ARINC 664 có \"băng thông gấp một nghìn lần\" ARINC 429: đúng nếu so 100 Mbit/s với 100 kbit/s của ARINC 429 tốc độ cao (site tính 1 000 lần); sách không nêu tốc độ cụ thể nên đây là phép so sánh của site.",
+  "Hộp Test Your Understanding 16.9 ý 4 (\"tốc độ bit tăng theo BAG và giảm theo độ dài khung\") ngược với công thức của chính sách ($R=L\\times8\\times1000/\\text{BAG}$: tăng theo L, giảm theo BAG); đây là câu hỏi đúng/sai nên ý 4 là câu sai có chủ ý hoặc lỗi in; site không đưa vào ngân hàng."
+ ],
+ "en": [
+  "Tooley Chapter 16 Q5: printed key (b) 4 ms; by Table 16.1 and the book's own rule (data 100 times a second needs a BAG of at most 8 ms because 125 Hz exceeds 100 Hz) 400 times a second needs a BAG frequency of at least 400 Hz, i.e. 2 ms (500 Hz); 4 ms gives only 250 Hz. The site uses (a).",
+  "Tooley Chapter 16 Q9: printed key (b) \"IP layer\"; but Q11 (key a) gives the transmit order UDP, then IP, then the link layer, so the ethernet header is added by the link layer. The site uses (c).",
+  "Key A.16 has 20 entries but the book prints only 16 multiple-choice questions in 16.11; the last four entries (17 c, 18 a, 19 b, 20 b) have no matching question.",
+  "Tooley 16.9 says the AFDX payload is 1 to 1,471 bytes while the Key Point box says 17 to 1,471 with padding below 17: consistent once payload and padding are combined (at least 17 bytes). The total frame of 64 to 1,518 bytes was checked by adding the fields.",
+  "Tooley 18.5 says the ARINC 664 network has \"one thousand times the bandwidth\" of ARINC 429: right when comparing 100 Mbit/s with the 100 kbit/s of high-speed ARINC 429 (the site computes 1,000 times); the book gives no specific rates so this comparison is the site's.",
+  "Test Your Understanding 16.9 item 4 (\"bit rate increases with BAG but decreases with frame length\") is the reverse of the book's own formula ($R=L\\times8\\times1000/\\text{BAG}$: it grows with L and falls with BAG); it is a true/false question so item 4 is either a deliberately false statement or a misprint; the site does not put it in the bank."
+ ]
+}

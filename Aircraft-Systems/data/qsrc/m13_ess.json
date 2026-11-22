@@ -1,0 +1,68 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một VL AFDX có chiều dài khung lớn nhất 1 518 byte. (a) Tốc độ bit lớn nhất với BAG 4 ms. (b) Cổng avionics cung cấp dữ liệu 150 lần mỗi giây: BAG lớn nhất có thể chọn? (c) Với BAG đó tốc độ bit tối đa của VL là bao nhiêu? (d) Thời gian truyền một khung dài nhất trên mạng 100 Mbit/s?",
+   "en": "An AFDX VL has a maximum frame length of 1,518 bytes. (a) The maximum bit rate with a BAG of 4 ms. (b) An avionics port supplies data 150 times a second: what is the largest BAG you can choose? (c) What is then the maximum bit rate of the VL? (d) The time to transmit one longest frame on a 100 Mbit/s network?"
+  },
+  "sol": {
+   "vi": "(a) $1518\\times8\\times1000/4$ = 3,036,000 bit/s ≈ 3 Mbit/s (Tooley 16.8). (b) Cần ≥ 150 Hz: 125 Hz (8 ms) không đủ, 250 Hz (4 ms) đủ, nên BAG = 4 ms. (c) 3,036,000 bit/s. (d) $1518\\times8/10^8$ = 121.44 μs.",
+   "en": "(a) $1518\\times8\\times1000/4$ = 3,036,000 bit/s ≈ 3 Mbit/s (Tooley 16.8). (b) It must be at least 150 Hz: 125 Hz (8 ms) is not enough, 250 Hz (4 ms) is, so BAG = 4 ms. (c) 3,036,000 bit/s. (d) $1518\\times8/10^8$ = 121.44 μs."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tính toán VL",
+   "en": "Added · VL calculation"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Kiểm tra số học khung AFDX của Tooley: (a) Tính chiều dài nhỏ nhất và lớn nhất của khung (không kể tiền tố, SFD và khoảng cách giữa khung) từ các trường: MAC đích 6, MAC nguồn 6, Type 2, IP 20, UDP 8, payload 1 đến 1 471, đệm, SN 1, FCS 4. (b) Khi nào cần đệm và tối đa bao nhiêu byte? (c) Thời gian truyền khung lớn nhất trên mạng 10 Mbit/s?",
+   "en": "Check the arithmetic of the Tooley AFDX frame: (a) Compute the minimum and maximum frame length (excluding the preamble, SFD and inter-frame gap) from the fields: MAC destination 6, MAC source 6, Type 2, IP 20, UDP 8, payload 1 to 1,471, padding, SN 1, FCS 4. (b) When is padding needed and how many bytes at most? (c) The transmit time of the maximum frame on a 10 Mbit/s network?"
+  },
+  "sol": {
+   "vi": "(a) Tối thiểu 6 + 6 + 2 + 20 + 8 + 17 + 1 + 4 = 64 byte (payload cộng đệm tối thiểu 17); tối đa 6 + 6 + 2 + 20 + 8 + 1 471 + 1 + 4 = 1518 byte. (b) Khi payload dưới 17 byte; tối đa 16 byte đệm (payload 1 byte cần 16 byte đệm). (c) $1518\\times8/(10\\times10^6)$ = 1.2144 ms; cộng tiền tố 8 byte và khoảng cách 12 byte thì $(1518+20)\\times8/10^7$ = 1.2304 ms.",
+   "en": "(a) Minimum 6 + 6 + 2 + 20 + 8 + 17 + 1 + 4 = 64 bytes (payload plus padding of at least 17); maximum 6 + 6 + 2 + 20 + 8 + 1,471 + 1 + 4 = 1518 bytes. (b) When the payload is below 17 bytes; at most 16 bytes of padding (a 1-byte payload needs 16). (c) $1518\\times8/(10\\times10^6)$ = 1.2144 ms; adding the 8-byte preamble and the 12-byte gap gives $(1518+20)\\times8/10^7$ = 1.2304 ms."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số học khung AFDX",
+   "en": "Added · AFDX frame arithmetic"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "So sánh kiến trúc liên hợp (federated) và IMA theo bốn tiêu chí của Tooley (Bảng 18.1): xử lý, liên kết dữ liệu và cáp, phần mềm ứng dụng, nhà cung cấp. Nêu năm lợi ích của IMA.",
+   "en": "Compare the federated and IMA architectures on the four criteria of Tooley (Table 18.1): processing, data interconnection and cabling, application software, suppliers. State five benefits of IMA."
+  },
+  "sol": {
+   "vi": "Liên hợp: nhiều máy tính nhúng riêng cho từng chức năng; nhiều bus tốc độ thấp và trung bình (ARINC 429, 629); phần mềm nằm trên từng LRU, cách ly vật lý; nguồn cung hạn chế. IMA: xử lý tập trung trên nền dùng chung có phân vùng; mạng xương sống chuyển mạch tốc độ cao (ARINC 664/AFDX); phần mềm cách ly logic; lý tưởng là mã nguồn mở, đa nguồn. Lợi ích: quản lý nhiều chức năng cùng lúc, giảm khối lượng cáp (nhiên liệu, môi trường, chi phí), hỗ trợ chức năng mới (giám sát tình trạng máy bay), hỗ trợ đa nguồn (linh hoạt, phát triển nhanh), giảm phụ tùng và phụ thuộc một nguồn.",
+   "en": "Federated: many embedded computers dedicated to separate functions; many low and medium speed buses (ARINC 429, 629); software resident on each LRU, physically firewalled; restricted suppliers. IMA: centralised processing on a shared, partitioned platform; a common high-speed switched backbone (ARINC 664/AFDX); logically firewalled software; ideally open source, multiple sources. Benefits: manage many functions at once, lighter cabling (fuel, environment, cost), support for new functions (aircraft condition monitoring), multi-source support (flexibility, faster development), fewer spares and less single-source dependence."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · So sánh liên hợp và IMA",
+   "en": "Added · Federated versus IMA"
+  }
+ }
+]

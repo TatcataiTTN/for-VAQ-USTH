@@ -1,0 +1,3712 @@
+[
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Một chốt (latch) chỉ có một trạng thái bền.",
+   "en": "A latch has one stable state."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chốt là thiết bị lưỡng bền (bistable): có hai trạng thái bền là SET và RESET.",
+   "en": "A latch is bistable: it has two stable states, SET and RESET."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 1 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 1 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Chốt được coi là ở trạng thái RESET khi ngõ ra Q ở mức thấp.",
+   "en": "A latch is considered to be in the RESET state when the Q output is low."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "RESET nghĩa là Q = 0 (Floyd, mục Từ khoá).",
+   "en": "RESET means Q = 0 (Floyd, Key Terms)."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 2 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 2 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Chốt D có cổng (gated D latch) không thể dùng để đổi trạng thái.",
+   "en": "A gated D latch cannot be used to change state."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Khi EN = 1, Q theo D, nên chốt đổi trạng thái được; khi EN = 0 nó giữ nguyên.",
+   "en": "While EN = 1 the output follows D, so the latch can change state; with EN = 0 it holds."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 3 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 3 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Flip-flop và chốt đều là thiết bị lưỡng bền.",
+   "en": "Flip-flops and latches are both bistable devices."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cả hai đều có hai trạng thái bền; khác nhau ở cách bắt thời điểm đổi trạng thái.",
+   "en": "Both have two stable states; they differ in how the change of state is timed."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 4 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 4 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Flip-flop D kích bằng sườn đổi trạng thái bất cứ khi nào ngõ vào D thay đổi.",
+   "en": "An edge-triggered D flip-flop changes state whenever the D input changes."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Nó chỉ đổi ở sườn tích cực của xung clock; D đổi giữa hai sườn không ảnh hưởng.",
+   "en": "It changes only at the active clock edge; a change of D between edges has no effect."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 5 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 5 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Ngõ vào clock là cần thiết cho flip-flop kích bằng sườn.",
+   "en": "A clock input is necessary for an edge-triggered flip-flop."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sườn clock là thời điểm duy nhất ngõ ra có thể đổi.",
+   "en": "The clock edge is the only moment the output may change."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 6 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 6 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Khi cả J và K đều ở mức cao, flip-flop J-K kích sườn đổi trạng thái ở mỗi xung clock.",
+   "en": "When both the J and K inputs are HIGH, an edge-triggered J-K flip-flop changes state on each clock pulse."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "J = K = 1 là chế độ lật (toggle).",
+   "en": "J = K = 1 is the toggle mode."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 7 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 7 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Mạch một nhịp (one-shot) còn được gọi là mạch đa hài không ổn định (astable).",
+   "en": "A one-shot is also known as an astable multivibrator."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "One-shot là đa hài đơn ổn (monostable); astable là mạch dao động tự do.",
+   "en": "A one-shot is a monostable multivibrator; the astable is the free-running oscillator."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 8 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 8 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Khi được kích, mạch một nhịp tạo ra một xung đơn.",
+   "en": "When triggered, a one-shot produces a single pulse."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Độ rộng xung do mạch RC quyết định.",
+   "en": "The width of the pulse is set by an RC circuit."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 9 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 9 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ định thời 555 không thể dùng làm mạch dao động xung.",
+   "en": "The 555 timer cannot be used as a pulse oscillator."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cấu hình astable của 555 là một mạch dao động (Floyd 7-6).",
+   "en": "The astable configuration of the 555 is an oscillator (Floyd 7-6)."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Đúng/Sai 10 (khoá tr.448)",
+   "en": "Floyd Ch.7 · True/False 10 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chốt S-R tác dụng mức CAO được tạo bởi hai cổng nối chéo hồi tiếp:",
+   "en": "An active HIGH input S-R latch is formed by the cross-coupling of"
+  },
+  "opts": [
+   {
+    "vi": "hai cổng NOR",
+    "en": "two NOR gates"
+   },
+   {
+    "vi": "hai cổng NAND",
+    "en": "two NAND gates"
+   },
+   {
+    "vi": "hai cổng OR",
+    "en": "two OR gates"
+   },
+   {
+    "vi": "hai cổng AND",
+    "en": "two AND gates"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hai cổng NOR nối chéo cho chốt tác dụng mức cao; hai cổng NAND nối chéo cho chốt tác dụng mức thấp.",
+   "en": "Two cross-coupled NOR gates give the active-HIGH latch; two cross-coupled NAND gates give the active-LOW latch."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 1 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 1 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phát biểu nào KHÔNG đúng với chốt S-R tác dụng mức THẤP?",
+   "en": "Which of the following is not true for an active LOW input S-R latch?"
+  },
+  "opts": [
+   {
+    "vi": "S = 1, R = 1: Q và Q̅ giữ nguyên",
+    "en": "S = 1, R = 1: Q and Q̅ unchanged"
+   },
+   {
+    "vi": "S = 0, R = 1: Q = 1, Q̅ = 0",
+    "en": "S = 0, R = 1: Q = 1, Q̅ = 0"
+   },
+   {
+    "vi": "S = 1, R = 0: Q = 1, Q̅ = 0",
+    "en": "S = 1, R = 0: Q = 1, Q̅ = 0"
+   },
+   {
+    "vi": "S = 0, R = 0: Q = 1, Q̅ = 1",
+    "en": "S = 0, R = 0: Q = 1, Q̅ = 1"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Với NAND chéo, R = 0 làm RESET nên Q = 0 và Q̅ = 1; do đó (c) sai. (d) là trạng thái cấm: cả hai ngõ ra bằng 1.",
+   "en": "With cross-coupled NANDs R = 0 RESETs the latch, so Q = 0 and Q̅ = 1; hence (c) is false. (d) is the forbidden state: both outputs are 1."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 2 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 2 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với tổ hợp ngõ vào D và EN nào thì chốt D bị RESET?",
+   "en": "For what combinations of the inputs D and EN will a D latch reset?"
+  },
+  "opts": [
+   {
+    "vi": "D = THẤP, EN = THẤP",
+    "en": "D = LOW, EN = LOW"
+   },
+   {
+    "vi": "D = THẤP, EN = CAO",
+    "en": "D = LOW, EN = HIGH"
+   },
+   {
+    "vi": "D = CAO, EN = THẤP",
+    "en": "D = HIGH, EN = LOW"
+   },
+   {
+    "vi": "D = CAO, EN = CAO",
+    "en": "D = HIGH, EN = HIGH"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chốt D chỉ cập nhật khi EN = CAO và khi đó Q = D; RESET (Q = 0) cần D = THẤP, EN = CAO.",
+   "en": "A D latch updates only while EN = HIGH and then Q = D; RESET (Q = 0) needs D = LOW and EN = HIGH."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 3 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 3 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop đổi trạng thái trong:",
+   "en": "A flip-flop changes its state during the"
+  },
+  "opts": [
+   {
+    "vi": "toàn bộ chu kỳ hoạt động",
+    "en": "complete operational cycle"
+   },
+   {
+    "vi": "sườn xuống của xung clock",
+    "en": "falling edge of the clock pulse"
+   },
+   {
+    "vi": "sườn lên của xung clock",
+    "en": "rising edge of the clock pulse"
+   },
+   {
+    "vi": "cả (b) và (c)",
+    "en": "both answers (b) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Tuỳ loại, flip-flop kích ở sườn lên hoặc sườn xuống; không loại nào đổi trong cả chu kỳ.",
+   "en": "Depending on the type a flip-flop is triggered by the rising or the falling edge; none changes during the whole cycle."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 4 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 4 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mục đích của ngõ vào clock ở flip-flop là:",
+   "en": "The purpose of the clock input to a flip-flop is to"
+  },
+  "opts": [
+   {
+    "vi": "xoá (clear) thiết bị",
+    "en": "clear the device"
+   },
+   {
+    "vi": "đặt (set) thiết bị",
+    "en": "set the device"
+   },
+   {
+    "vi": "luôn làm ngõ ra đổi trạng thái",
+    "en": "always cause the output to change states"
+   },
+   {
+    "vi": "làm ngõ ra nhận trạng thái phụ thuộc vào các ngõ vào điều khiển (J-K hoặc D)",
+    "en": "cause the output to assume a state dependent on the controlling (J-K or D) inputs"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Clock chỉ báo thời điểm; trạng thái mới do J-K hoặc D quyết định (có thể không đổi).",
+   "en": "The clock only says when; the new state is decided by the J-K or D inputs (and may be unchanged)."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 5 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 5 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với flip-flop D kích bằng sườn:",
+   "en": "For an edge-triggered D flip-flop,"
+  },
+  "opts": [
+   {
+    "vi": "trạng thái chỉ có thể đổi tại sườn xung clock",
+    "en": "a change in the state of the flip-flop can occur only at a clock pulse edge"
+   },
+   {
+    "vi": "trạng thái mới phụ thuộc vào ngõ vào D",
+    "en": "the state that the flip-flop goes to depends on the D input"
+   },
+   {
+    "vi": "ngõ ra theo ngõ vào ở mỗi xung clock",
+    "en": "the output follows the input at each clock pulse"
+   },
+   {
+    "vi": "tất cả các đáp án trên",
+    "en": "all of these answers"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Cả ba phát biểu đều đúng: đổi ở sườn, giá trị mới là D, và Q lấy D tại mỗi sườn.",
+   "en": "All three statements are true: it changes at an edge, the new value is D, and Q takes D at every edge."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 6 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 6 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điểm phân biệt flip-flop J-K với flip-flop D là:",
+   "en": "A feature that distinguishes the J-K flip-flop from the D flip-flop is the"
+  },
+  "opts": [
+   {
+    "vi": "chế độ lật (toggle)",
+    "en": "toggle condition"
+   },
+   {
+    "vi": "ngõ vào preset",
+    "en": "preset input"
+   },
+   {
+    "vi": "kiểu clock",
+    "en": "type of clock"
+   },
+   {
+    "vi": "ngõ vào clear",
+    "en": "clear input"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "J = K = 1 làm J-K lật; flip-flop D không có chế độ lật. Cả hai đều có thể có preset, clear và clock sườn.",
+   "en": "J = K = 1 makes a J-K toggle; a D flip-flop has no toggle mode. Both may have preset, clear and edge clocks."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 7 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 7 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop ở trạng thái SET khi:",
+   "en": "A flip-flop is SET when"
+  },
+  "opts": [
+   {
+    "vi": "J = 0, K = 0",
+    "en": "J = 0, K = 0"
+   },
+   {
+    "vi": "J = 0, K = 1",
+    "en": "J = 0, K = 1"
+   },
+   {
+    "vi": "J = 1, K = 0",
+    "en": "J = 1, K = 0"
+   },
+   {
+    "vi": "J = 1, K = 1",
+    "en": "J = 1, K = 1"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "J = 1, K = 0 đặt Q = 1 (SET); J = 0, K = 1 làm RESET; 00 giữ nguyên; 11 lật.",
+   "en": "J = 1, K = 0 sets Q = 1; J = 0, K = 1 resets; 00 holds; 11 toggles."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 8 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 8 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop J-K có J = 1, K = 1 và clock 10 kHz. Ngõ ra Q là:",
+   "en": "A J-K flip-flop with J = 1 and K = 1 has a 10 kHz clock input. The Q output is"
+  },
+  "opts": [
+   {
+    "vi": "luôn CAO",
+    "en": "constantly HIGH"
+   },
+   {
+    "vi": "luôn THẤP",
+    "en": "constantly LOW"
+   },
+   {
+    "vi": "sóng vuông 10 kHz",
+    "en": "a 10 kHz square wave"
+   },
+   {
+    "vi": "sóng vuông 5 kHz",
+    "en": "a 5 kHz square wave"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Lật ở mỗi sườn nên một chu kỳ ra ứng với hai chu kỳ vào: tần số chia đôi, 5 kHz.",
+   "en": "It toggles on every edge, so one output cycle takes two input cycles: the frequency halves to 5 kHz."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 9 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 9 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch một nhịp (one-shot) là một loại:",
+   "en": "A one-shot is a type of"
+  },
+  "opts": [
+   {
+    "vi": "đa hài đơn ổn (monostable)",
+    "en": "monostable multivibrator"
+   },
+   {
+    "vi": "đa hài không ổn định (astable)",
+    "en": "astable multivibrator"
+   },
+   {
+    "vi": "bộ định thời",
+    "en": "timer"
+   },
+   {
+    "vi": "cả (a) và (c)",
+    "en": "answers (a) and (c)"
+   },
+   {
+    "vi": "cả (b) và (c)",
+    "en": "answers (b) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "One-shot là đa hài đơn ổn và cũng là một bộ định thời.",
+   "en": "A one-shot is a monostable multivibrator and also a timer."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 10 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 10 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ rộng xung ra của one-shot không kích lại phụ thuộc vào:",
+   "en": "The output pulse width of a nonretriggerable one-shot depends on"
+  },
+  "opts": [
+   {
+    "vi": "khoảng cách giữa các xung kích",
+    "en": "the trigger intervals"
+   },
+   {
+    "vi": "điện áp nguồn",
+    "en": "the supply voltage"
+   },
+   {
+    "vi": "một điện trở và một tụ điện",
+    "en": "a resistor and capacitor"
+   },
+   {
+    "vi": "điện áp ngưỡng",
+    "en": "the threshold voltage"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Với 74121: $t_W=0{,}7\\,R\\,C_{EXT}$.",
+   "en": "For the 74121: $t_W=0.7\\,R\\,C_{EXT}$."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 11 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 11 (key p.448)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch đa hài không ổn định (astable):",
+   "en": "An astable multivibrator"
+  },
+  "opts": [
+   {
+    "vi": "cần xung kích tuần hoàn ở ngõ vào",
+    "en": "requires a periodic trigger input"
+   },
+   {
+    "vi": "không có trạng thái ổn định",
+    "en": "has no stable state"
+   },
+   {
+    "vi": "là mạch dao động",
+    "en": "is an oscillator"
+   },
+   {
+    "vi": "tạo ngõ ra xung tuần hoàn",
+    "en": "produces a periodic pulse output"
+   },
+   {
+    "vi": "cả (a), (b), (c) và (d)",
+    "en": "answers (a), (b), (c), and (d)"
+   },
+   {
+    "vi": "chỉ (b), (c) và (d)",
+    "en": "answers (b), (c), and (d) only"
+   }
+  ],
+  "correct": 5,
+  "explain": {
+   "vi": "Astable tự dao động nên không cần xung kích ngoài; vì thế (a) sai và đáp án đúng là (f).",
+   "en": "An astable free-runs, so it needs no external trigger; (a) is false and the answer is (f)."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Self-Test 12 (khoá tr.448)",
+   "en": "Floyd Ch.7 · Self-Test 12 (key p.448)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thanh ghi dịch gồm một dãy các flip-flop.",
+   "en": "Shift registers consist of an arrangement of flip-flops."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi tầng là một flip-flop; ngõ ra tầng trước đưa vào tầng sau.",
+   "en": "Each stage is a flip-flop; the output of one stage feeds the next."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 1 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 1 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thanh ghi dịch không thể dùng để lưu dữ liệu.",
+   "en": "A shift register cannot be used to store data."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Lưu trữ là một chức năng cơ bản của thanh ghi (Floyd 8-1).",
+   "en": "Storage is one of the basic functions of a register (Floyd 8-1)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 2 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 2 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thanh ghi dịch nối tiếp nhận từng bit một trên một đường.",
+   "en": "A serial shift register accepts one bit at a time on a single line."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là định nghĩa của ngõ vào nối tiếp.",
+   "en": "That is what serial input means."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 3 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 3 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Mọi thanh ghi dịch đều được xác định bởi các chuỗi trạng thái quy định.",
+   "en": "All shift registers are defined by specified sequences."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chỉ bộ đếm thanh ghi dịch (vòng, Johnson) có chuỗi quy định; thanh ghi thường dịch dữ liệu tuỳ ý.",
+   "en": "Only shift register counters (ring, Johnson) have specified sequences; an ordinary register shifts arbitrary data."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 4 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 4 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm thanh ghi dịch là thanh ghi dịch có ngõ ra nối tiếp nối ngược về ngõ vào nối tiếp.",
+   "en": "A shift register counter is a shift register with the serial output connected back to the serial input."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nối thẳng cho bộ đếm vòng, nối qua đảo cho bộ đếm Johnson.",
+   "en": "Connected directly it is a ring counter, through an inverter a Johnson counter."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 5 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 5 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thanh ghi dịch bốn tầng có thể lưu số đếm lớn nhất là mười lăm.",
+   "en": "A shift register with four stages can store a maximum count of fifteen."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^4-1=15$ khi dùng cả bốn bit như số nhị phân.",
+   "en": "$2^4-1=15$ when the four bits are used as a binary number."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 6 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 6 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm Johnson là một loại thanh ghi dịch đặc biệt.",
+   "en": "The Johnson counter is a special type of shift register."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nó là thanh ghi dịch với ngõ ra đảo nối về ngõ vào.",
+   "en": "It is a shift register with the inverted output fed back to the input."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 7 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 7 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Modulus của bộ đếm Johnson 8 bit là tám.",
+   "en": "The modulus of an 8-bit Johnson counter is eight."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bộ đếm Johnson n bit có modulus $2n$ = 16.",
+   "en": "An n-bit Johnson counter has modulus $2n$ = 16."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 8 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 8 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm vòng dùng một flip-flop cho mỗi trạng thái trong chuỗi của nó.",
+   "en": "A ring counter uses one flip-flop for each state in its sequence."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ đếm vòng modulus N cần N flip-flop (một bit 1 chạy vòng).",
+   "en": "A ring counter of modulus N needs N flip-flops (one circulating 1)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 9 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 9 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thanh ghi dịch không thể dùng làm thiết bị trễ thời gian.",
+   "en": "A shift register cannot be used as a time delay device."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Trễ = số bit chia tần số clock (Floyd 8-5).",
+   "en": "Delay = number of bits divided by the clock frequency (Floyd 8-5)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Đúng/Sai 10 (khoá tr.495)",
+   "en": "Floyd Ch.8 · True/False 10 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chức năng của một thanh ghi gồm:",
+   "en": "A register's functions include"
+  },
+  "opts": [
+   {
+    "vi": "lưu dữ liệu",
+    "en": "data storage"
+   },
+   {
+    "vi": "dịch chuyển dữ liệu",
+    "en": "data movement"
+   },
+   {
+    "vi": "không phải (a) cũng không phải (b)",
+    "en": "neither (a) nor (b)"
+   },
+   {
+    "vi": "cả (a) và (b)",
+    "en": "both (a) and (b)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Thanh ghi vừa lưu vừa dịch chuyển dữ liệu.",
+   "en": "A register both stores and moves data."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 1 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 1 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để nhập nối tiếp một byte vào thanh ghi dịch 8 bit cần có:",
+   "en": "To enter a byte of data serially into an 8-bit shift register, there must be"
+  },
+  "opts": [
+   {
+    "vi": "một xung clock",
+    "en": "one clock pulse"
+   },
+   {
+    "vi": "hai xung clock",
+    "en": "two clock pulses"
+   },
+   {
+    "vi": "bốn xung clock",
+    "en": "four clock pulses"
+   },
+   {
+    "vi": "tám xung clock",
+    "en": "eight clock pulses"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Mỗi xung clock nhập một bit nên 8 bit cần 8 xung.",
+   "en": "Each clock pulse enters one bit, so 8 bits need 8 pulses."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 2 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 2 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để nạp song song một byte vào thanh ghi dịch có nạp đồng bộ cần có:",
+   "en": "To parallel load a byte of data into a shift register with a synchronous load, there must be"
+  },
+  "opts": [
+   {
+    "vi": "một xung clock",
+    "en": "one clock pulse"
+   },
+   {
+    "vi": "một xung clock cho mỗi bit 1 của dữ liệu",
+    "en": "one clock pulse for each 1 in the data"
+   },
+   {
+    "vi": "tám xung clock",
+    "en": "eight clock pulses"
+   },
+   {
+    "vi": "một xung clock cho mỗi bit 0 của dữ liệu",
+    "en": "one clock pulse for each 0 in the data"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nạp song song đưa mọi bit vào cùng lúc, tại một sườn clock.",
+   "en": "A parallel load puts every bit in at the same time, on one clock edge."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 3 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 3 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuỗi bit 10110101 được dịch nối tiếp (bit ngoài cùng bên phải vào trước) vào thanh ghi dịch 8 bit ngõ ra song song có trạng thái đầu 11100100. Sau hai xung clock thanh ghi chứa:",
+   "en": "The group of bits 10110101 is serially shifted (right-most bit first) into an 8-bit parallel output shift register with an initial state of 11100100. After two clock pulses, the register contains"
+  },
+  "opts": [
+   {
+    "vi": "01011110",
+    "en": "01011110"
+   },
+   {
+    "vi": "10110101",
+    "en": "10110101"
+   },
+   {
+    "vi": "01111001",
+    "en": "01111001"
+   },
+   {
+    "vi": "00101101",
+    "en": "00101101"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Dịch phải, bit vào ở đầu trái: xung 1 vào bit 1 cho 11110010; xung 2 vào bit 0 cho 01111001.",
+   "en": "Shifting right with the input at the left end: pulse 1 enters a 1 giving 11110010; pulse 2 enters a 0 giving 01111001."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 4 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 4 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với clock 100 kHz, tám bit có thể được nhập nối tiếp vào thanh ghi dịch trong:",
+   "en": "With a 100 kHz clock frequency, eight bits can be serially entered into a shift register in"
+  },
+  "opts": [
+   {
+    "vi": "80 μs",
+    "en": "80 μs"
+   },
+   {
+    "vi": "8 μs",
+    "en": "8 μs"
+   },
+   {
+    "vi": "80 ms",
+    "en": "80 ms"
+   },
+   {
+    "vi": "10 μs",
+    "en": "10 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "8 bit × 10 μs = 80 μs (T = 1/100 kHz = 10 μs).",
+   "en": "8 bits × 10 μs = 80 μs (T = 1/100 kHz = 10 μs)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 5 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 5 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với clock 1 MHz, tám bit có thể được nhập song song vào thanh ghi dịch:",
+   "en": "With a 1 MHz clock frequency, eight bits can be parallel entered into a shift register"
+  },
+  "opts": [
+   {
+    "vi": "trong 8 μs",
+    "en": "in 8 μs"
+   },
+   {
+    "vi": "trong thời gian trễ lan truyền của tám flip-flop",
+    "en": "in the propagation delay time of eight flip-flops"
+   },
+   {
+    "vi": "trong 1 μs",
+    "en": "in 1 μs"
+   },
+   {
+    "vi": "trong thời gian trễ lan truyền của một flip-flop",
+    "en": "in the propagation delay time of one flip-flop"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Nạp song song xảy ra đồng thời ở mọi tầng, nên thời gian chỉ bằng trễ lan truyền của một flip-flop (khoá in).",
+   "en": "A parallel load happens in all stages at once, so the time is one flip-flop propagation delay (printed key)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 6 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 6 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm Johnson modulus 8 cần:",
+   "en": "A modulus-8 Johnson counter requires"
+  },
+  "opts": [
+   {
+    "vi": "tám flip-flop",
+    "en": "eight flip-flops"
+   },
+   {
+    "vi": "bốn flip-flop",
+    "en": "four flip-flops"
+   },
+   {
+    "vi": "năm flip-flop",
+    "en": "five flip-flops"
+   },
+   {
+    "vi": "mười hai flip-flop",
+    "en": "twelve flip-flops"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Modulus $=2n$ nên $n=8/2=4$.",
+   "en": "Modulus $=2n$, so $n=8/2=4$."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 7 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 7 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm vòng modulus 8 cần:",
+   "en": "A modulus-8 ring counter requires"
+  },
+  "opts": [
+   {
+    "vi": "tám flip-flop",
+    "en": "eight flip-flops"
+   },
+   {
+    "vi": "bốn flip-flop",
+    "en": "four flip-flops"
+   },
+   {
+    "vi": "năm flip-flop",
+    "en": "five flip-flops"
+   },
+   {
+    "vi": "mười hai flip-flop",
+    "en": "twelve flip-flops"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Modulus bằng số flip-flop: 8.",
+   "en": "The modulus equals the number of flip-flops: 8."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 8 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 8 (key p.495)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi một thanh ghi dịch vào nối tiếp/ra nối tiếp 8 bit dùng làm trễ 24 μs, tần số clock phải là:",
+   "en": "When an 8-bit serial in/serial out shift register is used for a 24 μs time delay, the clock frequency must be"
+  },
+  "opts": [
+   {
+    "vi": "41.67 kHz",
+    "en": "41.67 kHz"
+   },
+   {
+    "vi": "333 kHz",
+    "en": "333 kHz"
+   },
+   {
+    "vi": "125 kHz",
+    "en": "125 kHz"
+   },
+   {
+    "vi": "8 MHz",
+    "en": "8 MHz"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "8 bit / 24 μs = 333 kHz (chu kỳ 3 μs).",
+   "en": "8 bits / 24 μs = 333 kHz (period 3 μs)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 9 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 9 (key p.495)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Máy trạng thái là mạch tuần tự có số trạng thái hữu hạn xuất hiện theo thứ tự quy định.",
+   "en": "A state machine is a sequential circuit having a limited number of states occurring in a prescribed order."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là định nghĩa của Floyd 9-1; bộ đếm là một ví dụ.",
+   "en": "That is Floyd's definition in 9-1; a counter is an example."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 1 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 1 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm đồng bộ không thể thực hiện bằng flip-flop J-K.",
+   "en": "Synchronous counters cannot be realized using J-K flip-flops."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Phần lớn bộ đếm đồng bộ dùng flip-flop J-K (Floyd 9-3).",
+   "en": "Most synchronous counters use J-K flip-flops (Floyd 9-3)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 2 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 2 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm không đồng bộ còn được gọi là bộ đếm gợn sóng (ripple).",
+   "en": "An asynchronous counter is also known as a ripple counter."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các flip-flop không chung xung clock nên thay đổi lan truyền như sóng.",
+   "en": "The flip-flops do not share a clock, so changes ripple through."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 3 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 3 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm thập phân (decade) có mười hai trạng thái.",
+   "en": "A decade counter has twelve states."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Có mười trạng thái, 0 đến 9.",
+   "en": "It has ten states, 0 to 9."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 4 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 4 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm bốn tầng có modulus tối đa là mười sáu.",
+   "en": "A counter with four stages has a maximum modulus of sixteen."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^4=16$.",
+   "en": "$2^4=16$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 5 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 5 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Để đạt modulus tối đa 32 cần mười sáu tầng.",
+   "en": "To achieve a maximum modulus of 32, sixteen stages are required."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$2^5=32$ nên chỉ cần năm tầng.",
+   "en": "$2^5=32$, so five stages are enough."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 6 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 6 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Nếu trạng thái hiện tại là 1000, trạng thái kế của bộ đếm lên/xuống 4 bit ở chế độ ĐẾM XUỐNG là 0111.",
+   "en": "If the present state is 1000, the next state of a 4-bit up/down counter in the DOWN mode is 0111."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "8 − 1 = 7 = 0111.",
+   "en": "8 − 1 = 7 = 0111."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 7 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 7 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hai bộ đếm thập phân mắc tầng chia tần số xung clock cho 10.",
+   "en": "Two cascaded decade counters divide the clock frequency by 10."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Modulus tổng là 10 × 10 = 100 nên chia cho 100.",
+   "en": "The overall modulus is 10 × 10 = 100, so they divide by 100."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 8 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 8 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ đếm có chuỗi cắt cụt có ít trạng thái hơn số trạng thái tối đa của nó.",
+   "en": "A counter with a truncated sequence has less than its maximum number of states."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ví dụ bộ đếm BCD dùng 10 trong 16 trạng thái.",
+   "en": "For example a BCD counter uses 10 of its 16 states."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 9 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 9 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Để đạt modulus 100 cần mười bộ đếm thập phân.",
+   "en": "To achieve a modulus of 100, ten decade counters are required."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Hai bộ đếm thập phân mắc tầng đã cho $10\\times10=100$.",
+   "en": "Two cascaded decade counters give $10\\times10=100$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Đúng/Sai 10 (khoá tr.560)",
+   "en": "Floyd Ch.9 · True/False 10 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Máy trạng thái Moore gồm mạch logic tổ hợp quyết định:",
+   "en": "A Moore state machine consists of combinational logic circuits that determine"
+  },
+  "opts": [
+   {
+    "vi": "chuỗi trạng thái",
+    "en": "sequences"
+   },
+   {
+    "vi": "bộ nhớ",
+    "en": "memory"
+   },
+   {
+    "vi": "cả hai",
+    "en": "both (a) and (b)"
+   },
+   {
+    "vi": "không cái nào",
+    "en": "neither (a) nor (b)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Theo Floyd 9-1: mạch tổ hợp xác định chuỗi trạng thái, cùng với bộ nhớ (flip-flop) tạo thành máy Moore (khoá in).",
+   "en": "Floyd 9-1: the combinational logic determines the sequence and together with the memory (flip-flops) forms the Moore machine (printed key)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 1 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 1 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ngõ ra của máy trạng thái Mealy phụ thuộc vào:",
+   "en": "The output of a Mealy machine depends on its"
+  },
+  "opts": [
+   {
+    "vi": "ngõ vào",
+    "en": "inputs"
+   },
+   {
+    "vi": "trạng thái kế",
+    "en": "next state"
+   },
+   {
+    "vi": "trạng thái hiện tại",
+    "en": "present state"
+   },
+   {
+    "vi": "cả (a) và (c)",
+    "en": "answers (a) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Floyd 9-1: ngõ ra Mealy phụ thuộc cả trạng thái hiện tại lẫn ngõ vào. Khoá in là (a) chỉ nêu một nửa; site dùng (d).",
+   "en": "Floyd 9-1: a Mealy output depends on both the present state and the inputs. The printed key is (a), which names only half; the site uses (d)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 2 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 2 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trễ tích luỹ lớn nhất của bộ đếm không đồng bộ phải:",
+   "en": "The maximum cumulative delay of an asynchronous counter must be"
+  },
+  "opts": [
+   {
+    "vi": "lớn hơn chu kỳ của xung clock",
+    "en": "more than the period of the clock waveform"
+   },
+   {
+    "vi": "nhỏ hơn chu kỳ của xung clock",
+    "en": "less than the period of the clock waveform"
+   },
+   {
+    "vi": "bằng chu kỳ của xung clock",
+    "en": "equal to the period of the clock waveform"
+   },
+   {
+    "vi": "cả (a) và (c)",
+    "en": "both (a) and (c)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Nếu trễ lớn hơn chu kỳ, xung kế đến trước khi các tầng ổn định và đếm sai.",
+   "en": "If the delay exceeds the period, the next pulse arrives before the stages settle and the count is wrong."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 3 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 3 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm thập phân đếm từ không (0000) đến chín (1001) được gọi là:",
+   "en": "A decade counter with a count of zero (0000) through nine (1001) is known as"
+  },
+  "opts": [
+   {
+    "vi": "bộ đếm ASCII",
+    "en": "an ASCII counter"
+   },
+   {
+    "vi": "bộ đếm nhị phân",
+    "en": "a binary counter"
+   },
+   {
+    "vi": "bộ đếm BCD",
+    "en": "a BCD counter"
+   },
+   {
+    "vi": "bộ đếm thập phân",
+    "en": "a decimal counter"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mười trạng thái đầu của mã BCD 8421 tạo bộ đếm BCD.",
+   "en": "The first ten states of the 8421 BCD code make a BCD counter."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 4 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 4 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Modulus của một bộ đếm là:",
+   "en": "The modulus of a counter is"
+  },
+  "opts": [
+   {
+    "vi": "số flip-flop",
+    "en": "the number of flip-flops"
+   },
+   {
+    "vi": "số trạng thái thực tế trong chuỗi của nó",
+    "en": "the actual number of states in its sequence"
+   },
+   {
+    "vi": "số lần nó quay vòng mỗi giây",
+    "en": "the number of times it recycles in a second"
+   },
+   {
+    "vi": "số trạng thái tối đa có thể có",
+    "en": "the maximum possible number of states"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Modulus là số trạng thái thực sự của chuỗi (có thể nhỏ hơn tối đa).",
+   "en": "The modulus is the actual number of states in the sequence (it can be below the maximum)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 5 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 5 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm nhị phân 3 bit có modulus tối đa là:",
+   "en": "A 3-bit binary counter has a maximum modulus of"
+  },
+  "opts": [
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$2^3=8$.",
+   "en": "$2^3=8$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 6 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 6 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm nhị phân 5 bit có modulus tối đa là:",
+   "en": "A 5-bit binary counter has a maximum modulus of"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "$2^5=32$.",
+   "en": "$2^5=32$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 7 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 7 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm modulus 12 phải có:",
+   "en": "A modulus-12 counter must have"
+  },
+  "opts": [
+   {
+    "vi": "12 flip-flop",
+    "en": "12 flip-flops"
+   },
+   {
+    "vi": "3 flip-flop",
+    "en": "3 flip-flops"
+   },
+   {
+    "vi": "4 flip-flop",
+    "en": "4 flip-flops"
+   },
+   {
+    "vi": "xung clock đồng bộ",
+    "en": "synchronous clocking"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$2^3=8<12\\le 2^4=16$ nên cần 4 flip-flop (bộ đếm cắt cụt).",
+   "en": "$2^3=8<12\\le 2^4=16$, so 4 flip-flops (a truncated counter)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 8 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 8 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ví dụ nào là bộ đếm có modulus bị cắt cụt?",
+   "en": "Which one of the following is an example of a counter with a truncated modulus?"
+  },
+  "opts": [
+   {
+    "vi": "Modulus 8",
+    "en": "Modulus 8"
+   },
+   {
+    "vi": "Modulus 14",
+    "en": "Modulus 14"
+   },
+   {
+    "vi": "Modulus 16",
+    "en": "Modulus 16"
+   },
+   {
+    "vi": "Modulus 32",
+    "en": "Modulus 32"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "8, 16, 32 là lũy thừa của 2 (đủ modulus); 14 thì không.",
+   "en": "8, 16 and 32 are powers of 2 (full modulus); 14 is not."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 9 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 9 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 4 bit gồm các flip-flop có trễ từ clock đến Q là 12 ns mỗi cái. Để bộ đếm quay từ 1111 về 0000 cần tổng cộng:",
+   "en": "A 4-bit ripple counter consists of flip-flops that each have a propagation delay from clock to Q output of 12 ns. For the counter to recycle from 1111 to 0000, it takes a total of"
+  },
+  "opts": [
+   {
+    "vi": "12 ns",
+    "en": "12 ns"
+   },
+   {
+    "vi": "24 ns",
+    "en": "24 ns"
+   },
+   {
+    "vi": "48 ns",
+    "en": "48 ns"
+   },
+   {
+    "vi": "36 ns",
+    "en": "36 ns"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Cả bốn tầng lần lượt đổi: 4 × 12 ns = 48 ns.",
+   "en": "All four stages change in turn: 4 × 12 ns = 48 ns."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 10 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 10 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm BCD là ví dụ của:",
+   "en": "A BCD counter is an example of"
+  },
+  "opts": [
+   {
+    "vi": "bộ đếm đủ modulus",
+    "en": "a full-modulus counter"
+   },
+   {
+    "vi": "bộ đếm thập phân",
+    "en": "a decade counter"
+   },
+   {
+    "vi": "bộ đếm modulus cắt cụt",
+    "en": "a truncated-modulus counter"
+   },
+   {
+    "vi": "cả (b) và (c)",
+    "en": "answers (b) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Nó có 10 trạng thái (thập phân) và ít hơn 16 (cắt cụt).",
+   "en": "It has 10 states (decade) and fewer than 16 (truncated)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 11 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 11 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trạng thái nào hợp lệ trong bộ đếm BCD 8421?",
+   "en": "Which of the following is a valid state in an 8421 BCD counter?"
+  },
+  "opts": [
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "1000 = 8; 1010, 1011 và 1111 vượt quá 9.",
+   "en": "1000 = 8; 1010, 1011 and 1111 exceed 9."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 12 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 12 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ba bộ đếm modulus 10 mắc tầng có modulus tổng:",
+   "en": "Three cascaded modulus-10 counters have an overall modulus of"
+  },
+  "opts": [
+   {
+    "vi": "30",
+    "en": "30"
+   },
+   {
+    "vi": "100",
+    "en": "100"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "10,000",
+    "en": "10,000"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$10^3=1000$.",
+   "en": "$10^3=1000$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 13 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 13 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 10 MHz đưa vào chuỗi bộ đếm gồm một modulus 5, một modulus 8 và hai modulus 10. Tần số ra thấp nhất có thể là:",
+   "en": "A 10 MHz clock frequency is applied to a cascaded counter consisting of a modulus-5 counter, a modulus-8 counter, and two modulus-10 counters. The lowest output frequency possible is"
+  },
+  "opts": [
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "2.5 kHz",
+    "en": "2.5 kHz"
+   },
+   {
+    "vi": "5 kHz",
+    "en": "5 kHz"
+   },
+   {
+    "vi": "25 kHz",
+    "en": "25 kHz"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$5\\times8\\times10\\times10=4000$; $10\\text{ MHz}/4000=2{,}5$ kHz.",
+   "en": "$5\\times8\\times10\\times10=4000$; $10\\text{ MHz}/4000=2.5$ kHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 14 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 14 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm lên/xuống nhị phân 4 bit đang ở trạng thái 0000. Trạng thái kế ở chế độ ĐẾM XUỐNG là:",
+   "en": "A 4-bit binary up/down counter is in the binary state of zero. The next state in the DOWN mode is"
+  },
+  "opts": [
+   {
+    "vi": "0001",
+    "en": "0001"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đếm xuống từ 0 quay vòng về giá trị lớn nhất, 15 = 1111.",
+   "en": "Counting down from 0 wraps to the maximum value, 15 = 1111."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 15 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 15 (key p.560)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trạng thái đầu của bộ đếm nhị phân modulus 13 là:",
+   "en": "The initial count of a modulus-13 binary counter is"
+  },
+  "opts": [
+   {
+    "vi": "0000",
+    "en": "0000"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ đếm modulus 13 đếm từ 0000 đến 1100 (12) rồi quay về 0000.",
+   "en": "A modulus-13 counter counts from 0000 to 1100 (12) and returns to 0000."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Self-Test 16 (khoá tr.560)",
+   "en": "Floyd Ch.9 · Self-Test 16 (key p.560)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "PAL gồm một mảng cổng OR lập trình được nối với một mảng cổng AND cố định.",
+   "en": "A PAL consists of a programmable array of OR gates connected to a fixed array of AND gates."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Ngược lại: PAL có mảng AND lập trình được và mảng OR cố định.",
+   "en": "The other way round: a PAL has a programmable AND array and a fixed OR array."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 1 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 1 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "SPLD là viết tắt của thiết bị logic khả trình đơn giản.",
+   "en": "SPLD stands for simple programmable logic device."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Simple Programmable Logic Device.",
+   "en": "Simple Programmable Logic Device."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 2 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 2 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Điển hình, một macrocell gồm một cổng AND và mạch ngõ ra đi kèm.",
+   "en": "Typically, a macrocell consists of an AND gate and its associated output logic."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Macrocell gồm mảng AND-OR, bộ dồn kênh và flip-flop, không chỉ một cổng AND.",
+   "en": "A macrocell has an AND-OR array, multiplexers and a flip-flop, not a single AND gate."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 3 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 3 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "CPLD là viết tắt của thiết bị logic khả trình phức tạp.",
+   "en": "CPLD stands for complex programmable logic device."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Complex Programmable Logic Device.",
+   "en": "Complex Programmable Logic Device."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 4 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 4 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "FPGA là mảng cổng khả trình tại chỗ (sách in nhầm là \"FGPA\").",
+   "en": "An FGPA is a field programmable gate array."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Field-Programmable Gate Array; sách in nhầm thứ tự chữ cái nhưng ý đúng.",
+   "en": "Field-Programmable Gate Array; the book misprints the letters but the meaning is right."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 5 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 5 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "FPGA điển hình có mật độ cổng lớn hơn CPLD.",
+   "en": "A typical FPGA has a greater gate density than a CPLD."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "FPGA chứa nhiều logic hơn (hàng chục nghìn đến hàng triệu cổng).",
+   "en": "An FPGA holds much more logic than a CPLD."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 6 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 6 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Khối mảng logic (LAB) có trong CPLD.",
+   "en": "Logic array blocks are found in CPLDs."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 10-2: mỗi mảng SPLD trong CPLD gọi là LAB. Khoá in là F; site dùng T theo văn bản.",
+   "en": "Floyd 10-2: each SPLD array in a CPLD is called a LAB. The printed key is F; the site uses T, following the text."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 7 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 7 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Quá trình lập trình một PLD được gọi là luồng thiết kế (design flow).",
+   "en": "The process of programming a PLD is known as design flow."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Luồng thiết kế gồm nhập thiết kế, tổng hợp, mô phỏng và nạp (Floyd 10-5).",
+   "en": "The design flow covers entry, synthesis, simulation and download (Floyd 10-5)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 8 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 8 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thiết bị đang được lập trình gọi là thiết bị đích (target device).",
+   "en": "The device being programmed is called a target device."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Target device là chip nhận tệp cấu hình.",
+   "en": "The target device is the chip that receives the configuration file."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 9 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 9 (key p.626)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hai kiểu nhập thiết kế cho thiết bị khả trình là sơ đồ nguyên lý và HDL.",
+   "en": "Two types of programmable design entry are schematic and HDL."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Có thể vẽ sơ đồ hoặc viết mã mô tả phần cứng (VHDL, Verilog).",
+   "en": "You may draw a schematic or write a hardware description language (VHDL, Verilog)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Đúng/Sai 10 (khoá tr.626)",
+   "en": "Floyd Ch.10 · True/False 10 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai loại SPLD là:",
+   "en": "Two types of SPLDs are"
+  },
+  "opts": [
+   {
+    "vi": "CPLD và PAL",
+    "en": "CPLD and PAL"
+   },
+   {
+    "vi": "PAL và FPGA",
+    "en": "PAL and FPGA"
+   },
+   {
+    "vi": "PAL và GAL",
+    "en": "PAL and GAL"
+   },
+   {
+    "vi": "GAL và SRAM",
+    "en": "GAL and SRAM"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "SPLD gồm PAL và GAL (và PLA); CPLD và FPGA phức tạp hơn.",
+   "en": "SPLDs are PALs and GALs (and PLAs); CPLDs and FPGAs are more complex."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 1 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 1 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "PAL là một thiết bị logic:",
+   "en": "A PAL is a logic device which is"
+  },
+  "opts": [
+   {
+    "vi": "lập trình một lần",
+    "en": "one-time programmable"
+   },
+   {
+    "vi": "xoá và lập trình lại được",
+    "en": "an erasable programmable"
+   },
+   {
+    "vi": "xoá và lập trình lại bằng điện",
+    "en": "electronically erasable and programmable"
+   },
+   {
+    "vi": "cả (a) và (b)",
+    "en": "both (a) and (b)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "PAL dùng cầu chì nên chỉ lập trình một lần (GAL mới xoá được).",
+   "en": "A PAL uses fuses so it is programmed once (a GAL is the erasable one)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 2 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 2 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Yếu tố quyết định một GAL có đủ cho thiết kế logic hay không là:",
+   "en": "The factor that determines the adequacy of a GAL for a logic design is"
+  },
+  "opts": [
+   {
+    "vi": "số ngõ vào và ngõ ra",
+    "en": "the number of inputs and outputs"
+   },
+   {
+    "vi": "số cổng tương đương (mật độ)",
+    "en": "the number of equivalent gates or density"
+   },
+   {
+    "vi": "số cổng đảo",
+    "en": "the number of inverters involved"
+   },
+   {
+    "vi": "cả (a) và (b)",
+    "en": "both (a) and (b)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Cần đủ chân vào/ra và đủ mật độ cổng.",
+   "en": "You need enough inputs/outputs and enough gate density."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 3 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 3 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Macrocell là một phần của:",
+   "en": "A macrocell is part of a"
+  },
+  "opts": [
+   {
+    "vi": "PAL",
+    "en": "PAL"
+   },
+   {
+    "vi": "GAL",
+    "en": "GAL"
+   },
+   {
+    "vi": "CPLD",
+    "en": "CPLD"
+   },
+   {
+    "vi": "cả (a), (b) và (c)",
+    "en": "answers (a), (b), and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Khoá in (d).",
+   "en": "Printed key (d)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 4 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 4 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "LUT trong kiến trúc LUT-CPLD về cơ bản là một bộ nhớ có thể lập trình bằng:",
+   "en": "The LUT, used in the LUT-CPLD architecture, is basically a memory that can be programmed using"
+  },
+  "opts": [
+   {
+    "vi": "hàm POS",
+    "en": "POS functions"
+   },
+   {
+    "vi": "hàm SOP",
+    "en": "SOP functions"
+   },
+   {
+    "vi": "tích các bù",
+    "en": "product of complements"
+   },
+   {
+    "vi": "cả (a), (b) và (c)",
+    "en": "answers (a), (b), and (c)"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mỗi ô nhớ lưu giá trị của một số hạng tích (Floyd Hình 10-16).",
+   "en": "Each memory cell stores the value of one product term (Floyd Figure 10-16)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 5 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 5 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thuật ngữ LAB là viết tắt của:",
+   "en": "The term LAB stands for"
+  },
+  "opts": [
+   {
+    "vi": "logic AND block",
+    "en": "logic AND block"
+   },
+   {
+    "vi": "logic array block",
+    "en": "logic array block"
+   },
+   {
+    "vi": "last asserted bit",
+    "en": "last asserted bit"
+   },
+   {
+    "vi": "logic assembly block",
+    "en": "logic assembly block"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Logic array block, mỗi LAB xấp xỉ một SPLD.",
+   "en": "Logic array block; one LAB is roughly one SPLD."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 6 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 6 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai chế độ hoạt động của macrocell là:",
+   "en": "Two modes of macrocell operation are"
+  },
+  "opts": [
+   {
+    "vi": "vào và ra",
+    "en": "input and output"
+   },
+   {
+    "vi": "có thanh ghi và tuần tự",
+    "en": "registered and sequential"
+   },
+   {
+    "vi": "tổ hợp và có thanh ghi",
+    "en": "combinational and registered"
+   },
+   {
+    "vi": "song song và dùng chung",
+    "en": "parallel and shared"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Floyd 10-3: chế độ tổ hợp (bỏ qua flip-flop) và chế độ có thanh ghi (ngõ ra qua flip-flop).",
+   "en": "Floyd 10-3: combinational mode (flip-flop bypassed) and registered mode (output through the flip-flop)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 7 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 7 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop dùng trong macrocell của CPLD có thể lập trình thành:",
+   "en": "The flip-flop used in a CPLD macrocell can be programmed as a"
+  },
+  "opts": [
+   {
+    "vi": "flip-flop D",
+    "en": "D flip-flop"
+   },
+   {
+    "vi": "flip-flop J-K",
+    "en": "J-K flip-flop"
+   },
+   {
+    "vi": "cả (a) và (b)",
+    "en": "both (a) and (b)"
+   },
+   {
+    "vi": "không loại nào",
+    "en": "neither (a) nor (b)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Có thể cấu hình D hoặc J-K.",
+   "en": "It can be configured as D or J-K."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 8 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 8 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một macrocell điển hình gồm:",
+   "en": "A typical macrocell consists of"
+  },
+  "opts": [
+   {
+    "vi": "các cổng, bộ dồn kênh và một flip-flop",
+    "en": "gates, multiplexers, and a flip-flop"
+   },
+   {
+    "vi": "các cổng và một thanh ghi dịch",
+    "en": "gates and a shift register"
+   },
+   {
+    "vi": "một bộ đếm mã Gray",
+    "en": "a Gray code counter"
+   },
+   {
+    "vi": "một mảng logic cố định",
+    "en": "a fixed logic array"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 10-2: mảng AND-OR, bộ dồn kênh chọn chế độ và flip-flop. Khoá in là (b); site dùng (a) theo văn bản.",
+   "en": "Floyd 10-2: AND-OR array, mode multiplexers and a flip-flop. The printed key is (b); the site uses (a), following the text."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 9 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 9 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các phần tử cơ bản của FPGA là:",
+   "en": "The basic elements of an FPGA are"
+  },
+  "opts": [
+   {
+    "vi": "khối logic cấu hình được (CLB)",
+    "en": "configurable logic blocks"
+   },
+   {
+    "vi": "khối I/O",
+    "en": "I/O blocks"
+   },
+   {
+    "vi": "mảng PAL",
+    "en": "PAL arrays"
+   },
+   {
+    "vi": "cả (a) và (b)",
+    "en": "both (a) and (b)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "FPGA gồm CLB, khối I/O và đường nối lập trình được.",
+   "en": "An FPGA has CLBs, I/O blocks and programmable interconnect."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 10 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 10 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "FPGA không bay hơi (nonvolatile) thường dựa trên công nghệ:",
+   "en": "Nonvolatile FPGAs are generally based on"
+  },
+  "opts": [
+   {
+    "vi": "cầu chì (fuse)",
+    "en": "fuse technology"
+   },
+   {
+    "vi": "antifuse",
+    "en": "antifuse technology"
+   },
+   {
+    "vi": "EEPROM",
+    "en": "EEPROM technology"
+   },
+   {
+    "vi": "SRAM",
+    "en": "SRAM technology"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Theo khoá in và Floyd 10-4: antifuse không mất cấu hình khi tắt nguồn; SRAM thì mất.",
+   "en": "Printed key and Floyd 10-4: an antifuse keeps its configuration without power; SRAM loses it."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 11 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 11 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi các khối logic cấu hình được trong FPGA tương đối đơn giản, kiến trúc FPGA là:",
+   "en": "When the configurable logic blocks in an FPGA are relatively simple, the FPGA architecture is"
+  },
+  "opts": [
+   {
+    "vi": "hạt mịn (fine grained)",
+    "en": "fine grained"
+   },
+   {
+    "vi": "hạt thô (coarse grained)",
+    "en": "coarse grained"
+   },
+   {
+    "vi": "lõi cứng (hard core)",
+    "en": "hard core"
+   },
+   {
+    "vi": "lõi mềm (soft core)",
+    "en": "soft core"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khối đơn giản, nhiều khối: hạt mịn.",
+   "en": "Simple blocks, many of them: fine grained."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 12 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 12 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Môđun logic trong khối logic của FPGA có thể cấu hình cho:",
+   "en": "The logic module in an FPGA logic block can be configured for"
+  },
+  "opts": [
+   {
+    "vi": "logic tổ hợp",
+    "en": "combinational logic"
+   },
+   {
+    "vi": "logic chế độ song song",
+    "en": "parallel mode logic"
+   },
+   {
+    "vi": "logic có thanh ghi",
+    "en": "registered logic"
+   },
+   {
+    "vi": "cả (a) và (c)",
+    "en": "both (a) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Môđun cấu hình thành tổ hợp hoặc có thanh ghi.",
+   "en": "A module is configured as combinational or registered."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 13 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 13 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một môđun logic có thể lập trình cho các chế độ:",
+   "en": "A logic module can be programmed for the following modes of operations:"
+  },
+  "opts": [
+   {
+    "vi": "chế độ thường (normal)",
+    "en": "normal mode"
+   },
+   {
+    "vi": "chế độ số học và số học dùng chung",
+    "en": "arithmetic and shared arithmetic mode"
+   },
+   {
+    "vi": "chế độ LUT mở rộng",
+    "en": "extended LUT mode"
+   },
+   {
+    "vi": "cả (a), (b) và (c)",
+    "en": "answers (a), (b), and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Cả ba chế độ đều có.",
+   "en": "All three modes exist."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 14 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 14 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mô phỏng chức năng (functional simulation), người dùng phải chỉ định:",
+   "en": "In a functional simulation, the user must specify the"
+  },
+  "opts": [
+   {
+    "vi": "thiết bị đích cụ thể",
+    "en": "specific target device"
+   },
+   {
+    "vi": "dạng sóng ngõ ra",
+    "en": "output waveform"
+   },
+   {
+    "vi": "dạng sóng ngõ vào",
+    "en": "input waveforms"
+   },
+   {
+    "vi": "HDL",
+    "en": "HDL"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Người dùng đặt ngõ vào; công cụ tính ngõ ra. Mô phỏng chức năng chưa cần thiết bị đích.",
+   "en": "The user supplies the inputs; the tool computes the outputs. A functional simulation needs no target device yet."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 15 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 15 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kết quả cuối cùng của giai đoạn tổng hợp (synthesis) trong luồng thiết kế là:",
+   "en": "The final output of the synthesis phase of a design flow is the"
+  },
+  "opts": [
+   {
+    "vi": "netlist",
+    "en": "netlist"
+   },
+   {
+    "vi": "bitstream",
+    "en": "bitstream"
+   },
+   {
+    "vi": "mô phỏng thời gian",
+    "en": "timing simulation"
+   },
+   {
+    "vi": "số chân của thiết bị",
+    "en": "device pin numbers"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng hợp biến mô tả thành netlist; bitstream đến sau khi xếp và đi dây.",
+   "en": "Synthesis turns the description into a netlist; the bitstream comes after place and route."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 16 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 16 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EDIF là viết tắt của:",
+   "en": "EDIF stands for"
+  },
+  "opts": [
+   {
+    "vi": "electronic device interchange format",
+    "en": "electronic device interchange format"
+   },
+   {
+    "vi": "electrical design integrated fixture",
+    "en": "electrical design integrated fixture"
+   },
+   {
+    "vi": "electrically destructive input function",
+    "en": "electrically destructive input function"
+   },
+   {
+    "vi": "electronic design interchange format",
+    "en": "electronic design interchange format"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Electronic Design Interchange Format.",
+   "en": "Electronic Design Interchange Format."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 17 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 17 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "TAP trong quét biên (boundary scan) là viết tắt của:",
+   "en": "The boundary scan TAP stands for"
+  },
+  "opts": [
+   {
+    "vi": "test access point",
+    "en": "test access point"
+   },
+   {
+    "vi": "test array port",
+    "en": "test array port"
+   },
+   {
+    "vi": "test access port",
+    "en": "test access port"
+   },
+   {
+    "vi": "terminal access path",
+    "en": "terminal access path"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Test Access Port.",
+   "en": "Test Access Port."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 18 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 18 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một ô quét biên điển hình chứa:",
+   "en": "A typical boundary scan cell contains"
+  },
+  "opts": [
+   {
+    "vi": "chỉ flip-flop",
+    "en": "flip-flops only"
+   },
+   {
+    "vi": "flip-flop và logic dồn kênh",
+    "en": "flip-flops and multiplexer logic"
+   },
+   {
+    "vi": "chốt và flip-flop",
+    "en": "latches and flip-flops"
+   },
+   {
+    "vi": "chốt và bộ mã hoá",
+    "en": "latches and an encoder"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Gồm flip-flop và bộ dồn kênh.",
+   "en": "It has flip-flops and multiplexer logic."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 19 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 19 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuẩn JTAG có các ngõ vào và ngõ ra:",
+   "en": "The JTAG standard has the following inputs and outputs"
+  },
+  "opts": [
+   {
+    "vi": "Intest, extest, TDI, TDO",
+    "en": "Intest, extest, TDI, TDO"
+   },
+   {
+    "vi": "TDI, TDO, TCK, TMS",
+    "en": "TDI, TDO, TCK, TMS"
+   },
+   {
+    "vi": "ENT, CLK, SHF, CLR",
+    "en": "ENT, CLK, SHF, CLR"
+   },
+   {
+    "vi": "TCK, TMS, TMO, TLF",
+    "en": "TCK, TMS, TMO, TLF"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "TDI (dữ liệu vào), TDO (dữ liệu ra), TCK (clock), TMS (chọn chế độ).",
+   "en": "TDI (data in), TDO (data out), TCK (clock), TMS (mode select)."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 20 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 20 (key p.626)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "BSDL là viết tắt của:",
+   "en": "The acronym BSDL stands for"
+  },
+  "opts": [
+   {
+    "vi": "board standard digital logic",
+    "en": "board standard digital logic"
+   },
+   {
+    "vi": "boundary scan down load",
+    "en": "boundary scan down load"
+   },
+   {
+    "vi": "bistable digital latch",
+    "en": "bistable digital latch"
+   },
+   {
+    "vi": "boundary scan description language",
+    "en": "boundary scan description language"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Boundary Scan Description Language.",
+   "en": "Boundary Scan Description Language."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.10 · Self-Test 21 (khoá tr.626)",
+   "en": "Floyd Ch.10 · Self-Test 21 (key p.626)"
+  }
+ }
+]

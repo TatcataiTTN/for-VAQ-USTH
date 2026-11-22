@@ -1,0 +1,14 @@
+{
+ "vi": [
+  "Mã VHDL in trong Tooley Chương 17 có nhiều lỗi in: \"PROCESS (x; y)\" phải dùng dấu phẩy, \"ELSEIF\" phải là \"ELSIF\", \"3 down to 0\" phải là \"3 DOWNTO 0\", tên \"half-adder\" ở END phải là \"half_adder\", \"dad\" là \"d\". Module dùng cú pháp đã sửa. Mã CHƯA được biên dịch bằng công cụ VHDL thật (việc chưa làm); các phép tính (toán tử, bảng chân trị, trễ) đã được kiểm.",
+  "Tooley 17.7 viết \"p AND SLA q\" với SLA như toán tử một ngôi dịch một vị trí; trong VHDL chuẩn SLA là toán tử hai ngôi (q SLA 1) và điền bit phải nhất vào chỗ trống. Site chỉ dùng SLA cho vector có bit phải nhất bằng 0, khi đó SLA bằng SLL và kết quả khớp sách.",
+  "Hộp Test Your Understanding 17.5 hỏi \"SLA p AND NOT q\" với p = 0011: bit phải nhất bằng 1 nên SLA điền 1 (0111) theo chuẩn, trong khi dịch thường cho 0110; sách không đưa đáp án, site không đưa phép này vào ngân hàng.",
+  "Phần VHDL không thuộc CO/CLO nào của đề cương AE2.021; site giữ vì Tooley có Chương 17 riêng và để giữ độ phủ sách."
+ ],
+ "en": [
+  "The VHDL code printed in Tooley Chapter 17 has several misprints: \"PROCESS (x; y)\" needs commas, \"ELSEIF\" must be \"ELSIF\", \"3 down to 0\" must be \"3 DOWNTO 0\", \"half-adder\" at END must be \"half_adder\", \"dad\" is \"d\". The module uses corrected syntax. The code has NOT been compiled with a real VHDL tool (not done); the calculations (operators, truth tables, delays) were checked.",
+  "Tooley 17.7 writes \"p AND SLA q\" with SLA as a unary one-place shift; in standard VHDL SLA is binary (q SLA 1) and fills the vacated place with the right-most bit. The site uses SLA only on vectors whose right-most bit is 0, where SLA equals SLL and the results match the book.",
+  "Test Your Understanding 17.5 asks \"SLA p AND NOT q\" with p = 0011: the right-most bit is 1 so SLA fills with 1 (0111) by the standard, while a plain shift gives 0110; the book gives no answer and the site does not put this one in the bank.",
+  "VHDL is in no CO/CLO of the AE2.021 syllabus; the site keeps it because Tooley has a chapter on it and to keep the book coverage."
+ ]
+}

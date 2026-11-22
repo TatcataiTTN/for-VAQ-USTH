@@ -1177,5 +1177,545 @@
   ],
   "def_vi": "Ngõ vào đảo của op-amp ở khoảng 0 V nhờ hồi tiếp.",
   "def_en": "The inverting input of an op-amp held near 0 V by feedback."
+ },
+ {
+  "en": "latch",
+  "vi": "chốt (latch)",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Phần tử nhớ lưỡng bền đổi trạng thái theo mức ngõ vào.",
+  "def_en": "A bistable memory element that changes with the level of its inputs."
+ },
+ {
+  "en": "flip-flop",
+  "vi": "flip-flop",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Phần tử nhớ lưỡng bền đổi trạng thái tại sườn xung clock.",
+  "def_en": "A bistable memory element that changes at a clock edge."
+ },
+ {
+  "en": "bistable",
+  "vi": "lưỡng bền",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Có hai trạng thái bền; chốt và flip-flop đều lưỡng bền.",
+  "def_en": "Having two stable states; latches and flip-flops are bistable."
+ },
+ {
+  "en": "toggle",
+  "vi": "lật",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Đổi trạng thái ở mỗi xung clock (J = K = 1).",
+  "def_en": "Change state on every clock pulse (J = K = 1)."
+ },
+ {
+  "en": "set-up time",
+  "vi": "thời gian thiết lập",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Thời gian ngõ vào phải ổn định trước sườn clock.",
+  "def_en": "The time the input must be stable before the clock edge."
+ },
+ {
+  "en": "hold time",
+  "vi": "thời gian giữ",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Thời gian ngõ vào phải còn ổn định sau sườn clock.",
+  "def_en": "The time the input must stay stable after the clock edge."
+ },
+ {
+  "en": "one-shot (monostable multivibrator)",
+  "vi": "mạch một nhịp (đa hài đơn ổn)",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Mạch có một trạng thái bền, kích thì tạo một xung có độ rộng đặt bởi RC.",
+  "def_en": "A circuit with one stable state that outputs one pulse of RC-set width when triggered."
+ },
+ {
+  "en": "astable multivibrator",
+  "vi": "đa hài không ổn định",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Mạch dao động không có trạng thái bền.",
+  "def_en": "An oscillator with no stable state."
+ },
+ {
+  "en": "555 timer",
+  "vi": "bộ định thời 555",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "IC dùng làm mạch một nhịp hoặc mạch dao động.",
+  "def_en": "An IC used as a one-shot or as an oscillator."
+ },
+ {
+  "en": "shift register",
+  "vi": "thanh ghi dịch",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Dãy flip-flop chuyển bit từ tầng này sang tầng kế ở mỗi xung clock.",
+  "def_en": "A chain of flip-flops that moves bits along one stage per clock pulse."
+ },
+ {
+  "en": "ring counter",
+  "vi": "bộ đếm vòng",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Thanh ghi dịch có ngõ ra cuối nối về ngõ vào; modulus bằng số flip-flop.",
+  "def_en": "A shift register with the last output fed back; modulus equals the number of flip-flops."
+ },
+ {
+  "en": "Johnson counter",
+  "vi": "bộ đếm Johnson",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Thanh ghi dịch có ngõ ra đảo nối về; modulus bằng 2 lần số flip-flop.",
+  "def_en": "A shift register with the inverted output fed back; modulus is twice the number of flip-flops."
+ },
+ {
+  "en": "ripple (asynchronous) counter",
+  "vi": "bộ đếm gợn sóng (không đồng bộ)",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Bộ đếm mà mỗi flip-flop lấy clock từ tầng trước; trễ cộng dồn.",
+  "def_en": "A counter in which each flip-flop is clocked by the previous stage; delays add up."
+ },
+ {
+  "en": "synchronous counter",
+  "vi": "bộ đếm đồng bộ",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Bộ đếm mà mọi flip-flop dùng chung clock.",
+  "def_en": "A counter in which all flip-flops share the clock."
+ },
+ {
+  "en": "modulus",
+  "vi": "modulus",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Số trạng thái thực tế trong chuỗi đếm.",
+  "def_en": "The actual number of states in the counting sequence."
+ },
+ {
+  "en": "state machine (Moore, Mealy)",
+  "vi": "máy trạng thái (Moore, Mealy)",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Mạch tuần tự có số trạng thái hữu hạn; ngõ ra Moore chỉ phụ thuộc trạng thái, Mealy phụ thuộc cả ngõ vào.",
+  "def_en": "A sequential circuit with finitely many states; Moore outputs depend on the state only, Mealy outputs also on the inputs."
+ },
+ {
+  "en": "PAL / GAL",
+  "vi": "PAL / GAL",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "SPLD có mảng AND lập trình được và mảng OR cố định; GAL xoá và lập trình lại được.",
+  "def_en": "SPLDs with a programmable AND array and a fixed OR array; a GAL is erasable and reprogrammable."
+ },
+ {
+  "en": "CPLD",
+  "vi": "CPLD",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Thiết bị logic khả trình phức tạp gồm nhiều khối LAB nối qua PIA.",
+  "def_en": "A complex programmable logic device of several LABs joined by the PIA."
+ },
+ {
+  "en": "FPGA",
+  "vi": "FPGA",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Mảng cổng khả trình tại chỗ gồm khối logic cấu hình được và khối I/O.",
+  "def_en": "A field-programmable gate array of configurable logic blocks and I/O blocks."
+ },
+ {
+  "en": "macrocell",
+  "vi": "macrocell",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Khối ngõ ra của CPLD gồm mảng AND-OR, bộ dồn kênh và flip-flop.",
+  "def_en": "The output block of a CPLD with an AND-OR array, multiplexers and a flip-flop."
+ },
+ {
+  "en": "look-up table (LUT)",
+  "vi": "bảng tra (LUT)",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Bộ nhớ nhỏ thực hiện một hàm logic bằng cách lưu đầu ra cho mọi tổ hợp vào.",
+  "def_en": "A small memory implementing a logic function by storing the output for every input combination."
+ },
+ {
+  "en": "JTAG boundary scan",
+  "vi": "quét biên JTAG",
+  "modules": [
+   "m11"
+  ],
+  "def_vi": "Phương pháp kiểm tra bảng mạch qua cổng TAP với TDI, TDO, TCK, TMS.",
+  "def_en": "A board test method through the TAP with TDI, TDO, TCK and TMS."
+ },
+ {
+  "en": "fly-by-wire (FBW)",
+  "vi": "điều khiển bay điện",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Hệ điều khiển bay dùng tín hiệu điện và máy tính thay liên kết cơ khí.",
+  "def_en": "A flight control system that uses electrical signals and computers instead of mechanical links."
+ },
+ {
+  "en": "flight management system (FMS)",
+  "vi": "hệ quản lý bay",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Hệ lập kế hoạch bay và dẫn đường gồm FMC, hiển thị, DBU và CDU.",
+  "def_en": "A flight planning and navigation system of FMC, display, DBU and CDU."
+ },
+ {
+  "en": "control display unit (CDU)",
+  "vi": "bộ hiển thị điều khiển (CDU)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Bàn phím và màn hình để nhập dữ liệu vào FMC.",
+  "def_en": "The keypad and screen for entering data into the FMC."
+ },
+ {
+  "en": "GPS",
+  "vi": "hệ định vị toàn cầu (GPS)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Định vị bằng 24 vệ tinh; ba đoạn: không gian, người dùng, điều khiển.",
+  "def_en": "Positioning with 24 satellites; three segments: space, user and control."
+ },
+ {
+  "en": "C/A code, P code",
+  "vi": "mã C/A, mã P",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Mã giả ngẫu nhiên của GPS: C/A 1,023 MHz lặp 1 ms; P 10,23 MHz lặp 267 ngày.",
+  "def_en": "GPS pseudo-random codes: C/A at 1.023 MHz repeating every 1 ms; P at 10.23 MHz repeating every 267 days."
+ },
+ {
+  "en": "inertial reference system (IRS)",
+  "vi": "hệ quán tính (IRS)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Hệ dẫn đường thụ động dùng con quay và gia tốc kế tích phân gia tốc.",
+  "def_en": "A passive navigation system using gyros and accelerometers to integrate acceleration."
+ },
+ {
+  "en": "gimballed, strap-down",
+  "vi": "gimballed, gắn cứng (strap-down)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Hai kiểu IRS: bệ giữ hướng cố định, hoặc cảm biến gắn cứng vào thân máy bay.",
+  "def_en": "Two IRS kinds: a platform holding a fixed orientation, or sensors fixed to the airframe."
+ },
+ {
+  "en": "TCAS (TA, RA)",
+  "vi": "TCAS (TA, RA)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Hệ cảnh báo va chạm: TA báo giao thông, RA ra lệnh cao độ.",
+  "def_en": "A collision-avoidance system: TA warns of traffic, RA gives pitch commands."
+ },
+ {
+  "en": "automatic test equipment (ATE)",
+  "vi": "thiết bị thử tự động (ATE)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Thiết bị thử mặt đất chuyên dụng cho LRU hoặc bảng mạch.",
+  "def_en": "Dedicated ground test equipment for an LRU or circuit card."
+ },
+ {
+  "en": "built-in test equipment (BITE)",
+  "vi": "thiết bị tự kiểm tích hợp (BITE)",
+  "modules": [
+   "m12"
+  ],
+  "def_vi": "Tính năng tự kiểm gắn sẵn trên thiết bị bay.",
+  "def_en": "A self-test feature built into airborne equipment."
+ },
+ {
+  "en": "local area network (LAN)",
+  "vi": "mạng cục bộ (LAN)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Mạng phạm vi hẹp, tốc độ cao; cấu trúc sao, vòng, cây, bus.",
+  "def_en": "A short-range high-rate network; star, ring, tree and bus topologies."
+ },
+ {
+  "en": "CSMA/CD",
+  "vi": "CSMA/CD",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Cảm nhận sóng mang, đa truy cập, phát hiện va chạm của Ethernet.",
+  "def_en": "Ethernet's carrier sense, multiple access, collision detection."
+ },
+ {
+  "en": "binary exponential back-off",
+  "vi": "lùi theo hàm mũ nhị phân",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Khoảng chờ ngẫu nhiên gấp đôi sau mỗi va chạm.",
+  "def_en": "A random waiting interval that doubles after each collision."
+ },
+ {
+  "en": "full-duplex",
+  "vi": "song công toàn phần",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Gửi và nhận cùng lúc trên một liên kết.",
+  "def_en": "Sending and receiving at the same time on one link."
+ },
+ {
+  "en": "AFDX (ARINC 664)",
+  "vi": "AFDX (ARINC 664)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Mạng Ethernet chuyển mạch full-duplex tất định cho tàu bay.",
+  "def_en": "A deterministic switched full-duplex ethernet for aircraft."
+ },
+ {
+  "en": "determinism, QoS",
+  "vi": "tính tất định, QoS",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Bảo đảm độ trễ tối đa và hiệu năng của luồng dữ liệu.",
+  "def_en": "A guaranteed maximum delay and level of data-flow performance."
+ },
+ {
+  "en": "virtual link (VL)",
+  "vi": "liên kết ảo (VL)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Kênh logic một chiều của AFDX, nhận dạng bằng VL ID 16 bit.",
+  "def_en": "A one-way logical AFDX channel identified by a 16-bit VL ID."
+ },
+ {
+  "en": "bandwidth allocation gap (BAG)",
+  "vi": "khoảng cách cấp băng thông (BAG)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Khoảng tối thiểu giữa hai khung trên một VL, 1 đến 128 ms.",
+  "def_en": "The minimum interval between two frames on a VL, 1 to 128 ms."
+ },
+ {
+  "en": "end system",
+  "vi": "hệ thống đầu cuối (end system)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Giao diện giữa phần cứng avionics và mạng AFDX.",
+  "def_en": "The interface between avionics hardware and the AFDX network."
+ },
+ {
+  "en": "sequence number (SN)",
+  "vi": "số thứ tự (SN)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Byte 0 đến 255 trong khung AFDX dùng kiểm tra thứ tự và loại bản sao.",
+  "def_en": "A byte 0 to 255 in an AFDX frame used to check order and drop replicas."
+ },
+ {
+  "en": "integrated modular avionics (IMA)",
+  "vi": "avionics mô-đun tích hợp (IMA)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Nhiều ứng dụng avionics trên một nền tính toán dùng chung nối bằng mạng.",
+  "def_en": "Many avionic applications on one shared computing platform joined by a network."
+ },
+ {
+  "en": "federated avionics",
+  "vi": "avionics liên hợp (federated)",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Mỗi hệ avionics có máy tính riêng.",
+  "def_en": "Each avionic system has its own computer."
+ },
+ {
+  "en": "ARINC 653, APEX",
+  "vi": "ARINC 653, APEX",
+  "modules": [
+   "m13"
+  ],
+  "def_vi": "Chuẩn RTOS của IMA; APEX cấp bộ nhớ và thời gian cho từng phân vùng.",
+  "def_en": "The IMA RTOS standard; the APEX allocates memory and time to each partition."
+ },
+ {
+  "en": "hardware description language (HDL)",
+  "vi": "ngôn ngữ mô tả phần cứng (HDL)",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "Ngôn ngữ hình thức để mô hình hoá, mô phỏng và tổng hợp mạch số.",
+  "def_en": "A formal language to model, simulate and synthesise digital circuits."
+ },
+ {
+  "en": "VHDL",
+  "vi": "VHDL",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "VHSIC HDL, do yêu cầu của Bộ Quốc phòng Mỹ.",
+  "def_en": "VHSIC HDL, born of a US Department of Defense request."
+ },
+ {
+  "en": "entity, architecture",
+  "vi": "entity, architecture",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "Entity khai báo giao diện; architecture mô tả hành vi.",
+  "def_en": "The entity declares the interface; the architecture describes the behaviour."
+ },
+ {
+  "en": "std_logic",
+  "vi": "std_logic",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "Kiểu tín hiệu chín giá trị U, X, 0, 1, Z, W, L, H, \"-\".",
+  "def_en": "A nine-valued signal type: U, X, 0, 1, Z, W, L, H, \"-\"."
+ },
+ {
+  "en": "test bench",
+  "vi": "test bench (băng thử)",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "Mã mô phỏng đặt dạng sóng ngõ vào cho thành phần cần thử.",
+  "def_en": "Simulation code that applies input waveforms to the component under test."
+ },
+ {
+  "en": "concurrent statement",
+  "vi": "câu lệnh đồng thời",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "Các câu lệnh thực hiện song song; đặc tính của HDL.",
+  "def_en": "Statements executed in parallel; a characteristic of an HDL."
+ },
+ {
+  "en": "propagation delay model",
+  "vi": "mô hình trễ lan truyền",
+  "modules": [
+   "m14"
+  ],
+  "def_vi": "Hằng gate_delay kiểu time dùng với AFTER.",
+  "def_en": "A gate_delay constant of type time used with AFTER."
+ },
+ {
+  "en": "cabin network server system (CNSS)",
+  "vi": "hệ máy chủ mạng cabin (CNSS)",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Âm thanh, video và dữ liệu cabin dùng chung một tài nguyên mạng.",
+  "def_en": "Cabin audio, video and data share one network resource."
+ },
+ {
+  "en": "ARINC 628",
+  "vi": "ARINC 628",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Đặc tả kiến trúc và hạ tầng chung cho mạng cabin.",
+  "def_en": "The specification of the general architecture and infrastructure of cabin networks."
+ },
+ {
+  "en": "in-flight entertainment (IFE)",
+  "vi": "giải trí trên chuyến bay (IFE)",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Phân hệ cabin gồm head-end, phân phối và ghế.",
+  "def_en": "A cabin subsystem of head-end, distribution and seats."
+ },
+ {
+  "en": "passenger address (PA)",
+  "vi": "thông báo hành khách (PA)",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Hệ loa và tai nghe; có năm mức ưu tiên.",
+  "def_en": "The loudspeaker and headset system; five priority levels."
+ },
+ {
+  "en": "forward attendant panel (FAP)",
+  "vi": "bảng tiếp viên phía trước (FAP)",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Bảng điều khiển thông báo, liên lạc nội bộ, IFE và môi trường cabin.",
+  "def_en": "The control panel for announcements, interphone, IFE and cabin environment."
+ },
+ {
+  "en": "electronic flight bag (EFB)",
+  "vi": "cặp tài liệu điện tử (EFB)",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Thiết bị điện tử thay túi tài liệu của phi công; di động hoặc lắp sẵn.",
+  "def_en": "An electronic device replacing the pilot's flight bag; portable or installed."
+ },
+ {
+  "en": "Type A, Type B EFB application",
+  "vi": "ứng dụng EFB loại A, B",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Loại A: tài liệu, không ảnh hưởng an toàn; loại B: hiệu năng, khối lượng cân bằng, cần đánh giá.",
+  "def_en": "Type A: documents, no safety effect; Type B: performance, mass and balance, needs assessment."
+ },
+ {
+  "en": "V1, VR, V2",
+  "vi": "V1, VR, V2",
+  "modules": [
+   "m15"
+  ],
+  "def_vi": "Tốc độ tới hạn hỏng động cơ, tốc độ quay bánh mũi, tốc độ an toàn khi cất cánh.",
+  "def_en": "Take-off critical engine failure speed, rotation speed and safety speed."
  }
 ]

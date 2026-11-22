@@ -1,0 +1,371 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình raster có 525 dòng và tần số quét khung 30 Hz. Tần số quét dòng là:",
+   "en": "A raster display has 525 lines and a frame rate of 30 Hz. The line frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "15.75 kHz",
+    "en": "15.75 kHz"
+   },
+   {
+    "vi": "7.875 kHz",
+    "en": "7.875 kHz"
+   },
+   {
+    "vi": "31.5 kHz",
+    "en": "31.5 kHz"
+   },
+   {
+    "vi": "17.5 kHz",
+    "en": "17.5 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_X=N_{line}\\,f_Y=525\\times30$ = 15750 Hz.",
+   "en": "$f_X=N_{line}\\,f_Y=525\\times30$ = 15750 Hz."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tần số quét dòng",
+   "en": "Added · Level 3: Line frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình raster có 625 dòng và tần số quét khung 25 Hz. Tần số quét dòng là:",
+   "en": "A raster display has 625 lines and a frame rate of 25 Hz. The line frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "15.625 kHz",
+    "en": "15.625 kHz"
+   },
+   {
+    "vi": "7.8125 kHz",
+    "en": "7.8125 kHz"
+   },
+   {
+    "vi": "31.25 kHz",
+    "en": "31.25 kHz"
+   },
+   {
+    "vi": "25 kHz",
+    "en": "25 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_X=N_{line}\\,f_Y=625\\times25$ = 15625 Hz.",
+   "en": "$f_X=N_{line}\\,f_Y=625\\times25$ = 15625 Hz."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tần số quét dòng",
+   "en": "Added · Level 3: Line frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình raster có 1125 dòng và tần số quét khung 30 Hz. Tần số quét dòng là:",
+   "en": "A raster display has 1125 lines and a frame rate of 30 Hz. The line frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "33.75 kHz",
+    "en": "33.75 kHz"
+   },
+   {
+    "vi": "16.875 kHz",
+    "en": "16.875 kHz"
+   },
+   {
+    "vi": "67.5 kHz",
+    "en": "67.5 kHz"
+   },
+   {
+    "vi": "37.5 kHz",
+    "en": "37.5 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f_X=N_{line}\\,f_Y=1125\\times30$ = 33750 Hz.",
+   "en": "$f_X=N_{line}\\,f_Y=1125\\times30$ = 33750 Hz."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tần số quét dòng",
+   "en": "Added · Level 3: Line frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình 7 đoạn catốt chung (a, b, c, d, e, f, g) hiển thị chữ số 2. Các đoạn sáng là:",
+   "en": "A common-cathode 7-segment display (a, b, c, d, e, f, g) shows the digit 2. The lit segments are:"
+  },
+  "opts": [
+   {
+    "vi": "a, b, d, e, g",
+    "en": "a, b, d, e, g"
+   },
+   {
+    "vi": "a, b, c, d, g",
+    "en": "a, b, c, d, g"
+   },
+   {
+    "vi": "b, c, f, g",
+    "en": "b, c, f, g"
+   },
+   {
+    "vi": "c, f",
+    "en": "c, f"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chữ số 2 dùng các đoạn a, b, d, e, g.",
+   "en": "The digit 2 uses segments a, b, d, e, g."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Đoạn sáng của chữ số",
+   "en": "Added · Level 3: Lit segments of a digit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình 7 đoạn catốt chung (a, b, c, d, e, f, g) hiển thị chữ số 3. Các đoạn sáng là:",
+   "en": "A common-cathode 7-segment display (a, b, c, d, e, f, g) shows the digit 3. The lit segments are:"
+  },
+  "opts": [
+   {
+    "vi": "a, b, c, d, g",
+    "en": "a, b, c, d, g"
+   },
+   {
+    "vi": "a, b, d, e, g",
+    "en": "a, b, d, e, g"
+   },
+   {
+    "vi": "b, c, f, g",
+    "en": "b, c, f, g"
+   },
+   {
+    "vi": "e, f",
+    "en": "e, f"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chữ số 3 dùng các đoạn a, b, c, d, g.",
+   "en": "The digit 3 uses segments a, b, c, d, g."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Đoạn sáng của chữ số",
+   "en": "Added · Level 3: Lit segments of a digit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình 7 đoạn catốt chung (a, b, c, d, e, f, g) hiển thị chữ số 4. Các đoạn sáng là:",
+   "en": "A common-cathode 7-segment display (a, b, c, d, e, f, g) shows the digit 4. The lit segments are:"
+  },
+  "opts": [
+   {
+    "vi": "b, c, f, g",
+    "en": "b, c, f, g"
+   },
+   {
+    "vi": "a, b, d, e, g",
+    "en": "a, b, d, e, g"
+   },
+   {
+    "vi": "a, b, c, d, g",
+    "en": "a, b, c, d, g"
+   },
+   {
+    "vi": "a, d, e",
+    "en": "a, d, e"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chữ số 4 dùng các đoạn b, c, f, g.",
+   "en": "The digit 4 uses segments b, c, f, g."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Đoạn sáng của chữ số",
+   "en": "Added · Level 3: Lit segments of a digit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình 7 đoạn catốt chung (a, b, c, d, e, f, g) hiển thị chữ số 5. Các đoạn sáng là:",
+   "en": "A common-cathode 7-segment display (a, b, c, d, e, f, g) shows the digit 5. The lit segments are:"
+  },
+  "opts": [
+   {
+    "vi": "a, c, d, f, g",
+    "en": "a, c, d, f, g"
+   },
+   {
+    "vi": "a, b, d, e, g",
+    "en": "a, b, d, e, g"
+   },
+   {
+    "vi": "a, b, c, d, g",
+    "en": "a, b, c, d, g"
+   },
+   {
+    "vi": "b, e",
+    "en": "b, e"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chữ số 5 dùng các đoạn a, c, d, f, g.",
+   "en": "The digit 5 uses segments a, c, d, f, g."
+  },
+  "topic": {
+   "vi": "Màn hình 7 đoạn",
+   "en": "Seven-segment displays"
+  },
+  "topic_id": "seven",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Đoạn sáng của chữ số",
+   "en": "Added · Level 3: Lit segments of a digit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nhớ khung hình cho màn hình 1024 × 768 điểm ảnh, 8 bit mỗi điểm ảnh, cần tối thiểu:",
+   "en": "The frame memory for a 1024 × 768 pixel display with 8 bits per pixel needs at least:"
+  },
+  "opts": [
+   {
+    "vi": "786432 byte",
+    "en": "786432 byte"
+   },
+   {
+    "vi": "6291456 byte",
+    "en": "6291456 byte"
+   },
+   {
+    "vi": "98304 byte",
+    "en": "98304 byte"
+   },
+   {
+    "vi": "787456 byte",
+    "en": "787456 byte"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1024 × 768 × 8 / 8 = 786432 byte.",
+   "en": "1024 × 768 × 8 / 8 = 786432 bytes."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ nhớ khung hình",
+   "en": "Added · Level 3: Frame memory"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nhớ khung hình cho màn hình 640 × 480 điểm ảnh, 24 bit mỗi điểm ảnh, cần tối thiểu:",
+   "en": "The frame memory for a 640 × 480 pixel display with 24 bits per pixel needs at least:"
+  },
+  "opts": [
+   {
+    "vi": "921600 byte",
+    "en": "921600 byte"
+   },
+   {
+    "vi": "7372800 byte",
+    "en": "7372800 byte"
+   },
+   {
+    "vi": "115200 byte",
+    "en": "115200 byte"
+   },
+   {
+    "vi": "307200 byte",
+    "en": "307200 byte"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "640 × 480 × 24 / 8 = 921600 byte.",
+   "en": "640 × 480 × 24 / 8 = 921600 bytes."
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ nhớ khung hình",
+   "en": "Added · Level 3: Frame memory"
+  }
+ }
+]

@@ -1,0 +1,572 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Checksum (tổng modulo 256) của các byte 3A 7F C4 91 (thập lục phân) là:",
+   "en": "The checksum (sum modulo 256) of the bytes 3A 7F C4 91 (hexadecimal) is:"
+  },
+  "opts": [
+   {
+    "vi": "0EH",
+    "en": "0EH"
+   },
+   {
+    "vi": "F2H",
+    "en": "F2H"
+   },
+   {
+    "vi": "0FH",
+    "en": "0FH"
+   },
+   {
+    "vi": "02H",
+    "en": "02H"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng = 20EH; modulo 256 giữ hai chữ số cuối: 0EH.",
+   "en": "Sum = 20EH; modulo 256 keeps the last two digits: 0EH."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Checksum modulo 256",
+   "en": "Added · Level 3: Modulo-256 checksum"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Checksum (tổng modulo 256) của các byte 5E A7 39 (thập lục phân) là:",
+   "en": "The checksum (sum modulo 256) of the bytes 5E A7 39 (hexadecimal) is:"
+  },
+  "opts": [
+   {
+    "vi": "3EH",
+    "en": "3EH"
+   },
+   {
+    "vi": "C2H",
+    "en": "C2H"
+   },
+   {
+    "vi": "3FH",
+    "en": "3FH"
+   },
+   {
+    "vi": "01H",
+    "en": "01H"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng = 13EH; modulo 256 giữ hai chữ số cuối: 3EH.",
+   "en": "Sum = 13EH; modulo 256 keeps the last two digits: 3EH."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Checksum modulo 256",
+   "en": "Added · Level 3: Modulo-256 checksum"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Checksum (tổng modulo 256) của các byte FF 02 80 81 (thập lục phân) là:",
+   "en": "The checksum (sum modulo 256) of the bytes FF 02 80 81 (hexadecimal) is:"
+  },
+  "opts": [
+   {
+    "vi": "02H",
+    "en": "02H"
+   },
+   {
+    "vi": "FEH",
+    "en": "FEH"
+   },
+   {
+    "vi": "03H",
+    "en": "03H"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng = 202H; modulo 256 giữ hai chữ số cuối: 02H.",
+   "en": "Sum = 202H; modulo 256 keeps the last two digits: 02H."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Checksum modulo 256",
+   "en": "Added · Level 3: Modulo-256 checksum"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dữ liệu 7 bit 1011001 được thêm một bit chẵn lẻ chẵn. Bit chẵn lẻ và tổng số bit 1 của từ 8 bit là:",
+   "en": "The 7-bit data 1011001 gets an even parity bit. The parity bit and the total number of ones of the 8-bit word are:"
+  },
+  "opts": [
+   {
+    "vi": "bit = 0; tổng số bit 1 = 4 (chẵn)",
+    "en": "bit = 0; total ones = 4 (even)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 5 (lẻ)",
+    "en": "bit = 1; total ones = 5 (odd)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 5 (lẻ)",
+    "en": "bit = 0; total ones = 5 (odd)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 4 (chẵn)",
+    "en": "bit = 1; total ones = 4 (even)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Có 4 bit 1; để tổng số bit 1 chẵn cần bit = 0.",
+   "en": "There are 4 ones; for an even total the bit must be 0."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bit chẵn lẻ",
+   "en": "Added · Level 3: Parity bit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dữ liệu 7 bit 1011001 được thêm một bit chẵn lẻ lẻ. Bit chẵn lẻ và tổng số bit 1 của từ 8 bit là:",
+   "en": "The 7-bit data 1011001 gets an odd parity bit. The parity bit and the total number of ones of the 8-bit word are:"
+  },
+  "opts": [
+   {
+    "vi": "bit = 1; tổng số bit 1 = 5 (lẻ)",
+    "en": "bit = 1; total ones = 5 (odd)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 4 (chẵn)",
+    "en": "bit = 0; total ones = 4 (even)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 4 (chẵn)",
+    "en": "bit = 1; total ones = 4 (even)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 5 (lẻ)",
+    "en": "bit = 0; total ones = 5 (odd)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Có 4 bit 1; để tổng số bit 1 lẻ cần bit = 1.",
+   "en": "There are 4 ones; for an odd total the bit must be 1."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bit chẵn lẻ",
+   "en": "Added · Level 3: Parity bit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dữ liệu 7 bit 0110111 được thêm một bit chẵn lẻ chẵn. Bit chẵn lẻ và tổng số bit 1 của từ 8 bit là:",
+   "en": "The 7-bit data 0110111 gets an even parity bit. The parity bit and the total number of ones of the 8-bit word are:"
+  },
+  "opts": [
+   {
+    "vi": "bit = 1; tổng số bit 1 = 6 (chẵn)",
+    "en": "bit = 1; total ones = 6 (even)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 5 (lẻ)",
+    "en": "bit = 0; total ones = 5 (odd)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 5 (lẻ)",
+    "en": "bit = 1; total ones = 5 (odd)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 6 (chẵn)",
+    "en": "bit = 0; total ones = 6 (even)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Có 5 bit 1; để tổng số bit 1 chẵn cần bit = 1.",
+   "en": "There are 5 ones; for an even total the bit must be 1."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bit chẵn lẻ",
+   "en": "Added · Level 3: Parity bit"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách Hamming giữa hai từ mã 10110100 và 10011110 là:",
+   "en": "The Hamming distance between the codewords 10110100 and 10011110 is:"
+  },
+  "opts": [
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "5",
+    "en": "5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Số vị trí bit khác nhau: 3.",
+   "en": "Number of differing bit positions: 3."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khoảng cách Hamming",
+   "en": "Added · Level 3: Hamming distance"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách Hamming giữa hai từ mã 11110000 và 00111100 là:",
+   "en": "The Hamming distance between the codewords 11110000 and 00111100 is:"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Số vị trí bit khác nhau: 4.",
+   "en": "Number of differing bit positions: 4."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khoảng cách Hamming",
+   "en": "Added · Level 3: Hamming distance"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách Hamming giữa hai từ mã 01010101 và 01111101 là:",
+   "en": "The Hamming distance between the codewords 01010101 and 01111101 is:"
+  },
+  "opts": [
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Số vị trí bit khác nhau: 2.",
+   "en": "Number of differing bit positions: 2."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khoảng cách Hamming",
+   "en": "Added · Level 3: Hamming distance"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một mã có khoảng cách Hamming nhỏ nhất 3. Nó phát hiện được tối đa bao nhiêu bit lỗi và sửa được tối đa bao nhiêu bit?",
+   "en": "A code has a minimum Hamming distance of 3. At most how many bit errors can it detect and correct?"
+  },
+  "opts": [
+   {
+    "vi": "phát hiện 2, sửa 1",
+    "en": "detect 2, correct 1"
+   },
+   {
+    "vi": "phát hiện 3, sửa 1",
+    "en": "detect 3, correct 1"
+   },
+   {
+    "vi": "phát hiện 2, sửa 2",
+    "en": "detect 2, correct 2"
+   },
+   {
+    "vi": "phát hiện 1, sửa 2",
+    "en": "detect 1, correct 2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phát hiện $d-1=2$; sửa $\\lfloor(d-1)/2\\rfloor=1$.",
+   "en": "Detect $d-1=2$; correct $\\lfloor(d-1)/2\\rfloor=1$."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khả năng của mã",
+   "en": "Added · Level 3: Code capability"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một mã có khoảng cách Hamming nhỏ nhất 4. Nó phát hiện được tối đa bao nhiêu bit lỗi và sửa được tối đa bao nhiêu bit?",
+   "en": "A code has a minimum Hamming distance of 4. At most how many bit errors can it detect and correct?"
+  },
+  "opts": [
+   {
+    "vi": "phát hiện 3, sửa 1",
+    "en": "detect 3, correct 1"
+   },
+   {
+    "vi": "phát hiện 4, sửa 2",
+    "en": "detect 4, correct 2"
+   },
+   {
+    "vi": "phát hiện 3, sửa 3",
+    "en": "detect 3, correct 3"
+   },
+   {
+    "vi": "phát hiện 1, sửa 3",
+    "en": "detect 1, correct 3"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phát hiện $d-1=3$; sửa $\\lfloor(d-1)/2\\rfloor=1$.",
+   "en": "Detect $d-1=3$; correct $\\lfloor(d-1)/2\\rfloor=1$."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khả năng của mã",
+   "en": "Added · Level 3: Code capability"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một mã có khoảng cách Hamming nhỏ nhất 5. Nó phát hiện được tối đa bao nhiêu bit lỗi và sửa được tối đa bao nhiêu bit?",
+   "en": "A code has a minimum Hamming distance of 5. At most how many bit errors can it detect and correct?"
+  },
+  "opts": [
+   {
+    "vi": "phát hiện 4, sửa 2",
+    "en": "detect 4, correct 2"
+   },
+   {
+    "vi": "phát hiện 5, sửa 2",
+    "en": "detect 5, correct 2"
+   },
+   {
+    "vi": "phát hiện 4, sửa 4",
+    "en": "detect 4, correct 4"
+   },
+   {
+    "vi": "phát hiện 2, sửa 4",
+    "en": "detect 2, correct 4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phát hiện $d-1=4$; sửa $\\lfloor(d-1)/2\\rfloor=2$.",
+   "en": "Detect $d-1=4$; correct $\\lfloor(d-1)/2\\rfloor=2$."
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khả năng của mã",
+   "en": "Added · Level 3: Code capability"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một lỗi mức A phải có xác suất dưới 10⁻⁹ mỗi giờ bay. Đội 1000 máy bay bay mỗi chiếc 3000 giờ mỗi năm. Số lỗi mức A kỳ vọng tối đa mỗi năm là:",
+   "en": "A level A failure must have a probability below 10⁻⁹ per flight hour. A fleet of 1000 aircraft each fly 3000 hours a year. The maximum expected number of level A failures a year is:"
+  },
+  "opts": [
+   {
+    "vi": "0.003",
+    "en": "0.003"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "3e-6",
+    "en": "3e-6"
+   },
+   {
+    "vi": "0.03",
+    "en": "0.03"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1000 × 3000 = 3000000 giờ; 3000000 × 10⁻⁹ = 0.003.",
+   "en": "1000 × 3000 = 3000000 hours; 3000000 × 10⁻⁹ = 0.003."
+  },
+  "topic": {
+   "vi": "Mức nghiêm trọng A đến E",
+   "en": "Severity levels A to E"
+  },
+  "topic_id": "levels",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Xác suất theo mức hỏng",
+   "en": "Added · Level 3: Failure probability by level"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một lỗi mức A phải có xác suất dưới 10⁻⁹ mỗi giờ bay. Đội 200 máy bay bay mỗi chiếc 4000 giờ mỗi năm. Số lỗi mức A kỳ vọng tối đa mỗi năm là:",
+   "en": "A level A failure must have a probability below 10⁻⁹ per flight hour. A fleet of 200 aircraft each fly 4000 hours a year. The maximum expected number of level A failures a year is:"
+  },
+  "opts": [
+   {
+    "vi": "0.0008",
+    "en": "0.0008"
+   },
+   {
+    "vi": "0.8",
+    "en": "0.8"
+   },
+   {
+    "vi": "8e-7",
+    "en": "8e-7"
+   },
+   {
+    "vi": "0.008",
+    "en": "0.008"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "200 × 4000 = 800000 giờ; 800000 × 10⁻⁹ = 0.0008.",
+   "en": "200 × 4000 = 800000 hours; 800000 × 10⁻⁹ = 0.0008."
+  },
+  "topic": {
+   "vi": "Mức nghiêm trọng A đến E",
+   "en": "Severity levels A to E"
+  },
+  "topic_id": "levels",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Xác suất theo mức hỏng",
+   "en": "Added · Level 3: Failure probability by level"
+  }
+ }
+]

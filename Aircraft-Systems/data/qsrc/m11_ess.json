@@ -1,0 +1,134 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 4 bit dùng flip-flop J-K có trễ lan truyền 15 ns, clock 1 MHz. (a) Modulus? (b) Tổng thời gian ổn định khi quay vòng? (c) Tần số clock tối đa? (d) Tần số của ngõ ra tầng cuối?",
+   "en": "A 4-bit ripple counter uses J-K flip-flops with a 15 ns propagation delay and a 1 MHz clock. (a) Modulus? (b) Total settling time when it recycles? (c) Maximum clock frequency? (d) Frequency of the last-stage output?"
+  },
+  "sol": {
+   "vi": "(a) $2^4$ = 16. (b) 4 × 15 ns = 60 ns. (c) $f_{max}=1/60\\text{ ns}$ = 16.67 MHz. (d) 1 MHz / 16 = 62.5 kHz. Chu kỳ clock 1 μs lớn hơn 60 ns nên bộ đếm làm việc đúng.",
+   "en": "(a) $2^4$ = 16. (b) 4 × 15 ns = 60 ns. (c) $f_{max}=1/60\\text{ ns}$ = 16.67 MHz. (d) 1 MHz / 16 = 62.5 kHz. The 1 μs clock period exceeds 60 ns so the counter works correctly."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm gợn sóng 4 bit",
+   "en": "Added · 4-bit ripple counter"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Thiết kế bộ đếm BCD (modulus 10) bằng bộ đếm nhị phân 4 bit có reset không đồng bộ: (a) cần mấy flip-flop? (b) trạng thái nào kích reset? (c) trạng thái 1010 tồn tại bao lâu? (d) clock 100 kHz thì tần số ngõ ra của tầng cuối bộ đếm modulus 10 là bao nhiêu?",
+   "en": "Design a BCD (modulus-10) counter from a 4-bit binary counter with asynchronous reset: (a) how many flip-flops? (b) which state triggers the reset? (c) how long does state 1010 exist? (d) with a 100 kHz clock, what is the output frequency of the last stage of the modulus-10 counter?"
+  },
+  "sol": {
+   "vi": "(a) $2^3=8<10\\le 2^4$ nên 4 flip-flop. (b) Giải mã 1010 (số 10) bằng cổng NAND hai ngõ vào Q1 và Q3 (các bit 1 của 1010) rồi nối vào ngõ vào CLR của mọi flip-flop. (c) Chỉ thoáng qua, cỡ trễ của cổng NAND cộng thời gian xoá của flip-flop (vài chục ns): đó là gai (glitch) cần lưu ý. (d) Chu kỳ ra của chuỗi 10 trạng thái là 10 xung clock: 100 kHz / 10 = 10 kHz (Q3 không đối xứng: mức cao 2 xung, thấp 8 xung).",
+   "en": "(a) $2^3=8<10\\le 2^4$ so 4 flip-flops. (b) Decode 1010 (ten) with a two-input NAND on Q1 and Q3 (the 1s of 1010) and connect it to the CLR inputs of all flip-flops. (c) Only a glitch, about a NAND-gate delay plus the clear time of the flip-flop (tens of ns): a hazard to be aware of. (d) The output period of the 10-state sequence is 10 clock pulses: 100 kHz / 10 = 10 kHz (Q3 is not symmetric: HIGH for 2 pulses, LOW for 8)."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm BCD từ bộ đếm nhị phân",
+   "en": "Added · BCD counter from a binary counter"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 1 kΩ, R2 = 2 kΩ, C = 0,1 μF. Tính $t_H$, $t_L$, chu kỳ, tần số và duty cycle. Cần thay đổi gì để duty cycle nhỏ hơn 50 %?",
+   "en": "A 555 astable has R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF. Find $t_H$, $t_L$, the period, the frequency and the duty cycle. What must change to get a duty cycle below 50 %?"
+  },
+  "sol": {
+   "vi": "$t_H=0{,}7(R_1+R_2)C$ = 210 μs; $t_L=0{,}7R_2C$ = 140 μs; $T$ = 350 μs; $f$ = 2.857 kHz; duty = 60 %. Để duty cycle dưới 50 % mắc thêm diode song song với R2 (Floyd Hình 7-59) để tụ nạp chỉ qua R1 và xả qua R2, với R1 nhỏ hơn R2.",
+   "en": "$t_H=0.7(R_1+R_2)C$ = 210 μs; $t_L=0.7R_2C$ = 140 μs; $T$ = 350 μs; $f$ = 2.857 kHz; duty = 60 %. For a duty cycle below 50 % add a diode across R2 (Floyd Figure 7-59) so that C charges through R1 only and discharges through R2, with R1 smaller than R2."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động đầy đủ",
+   "en": "Added · Full 555 astable"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Thanh ghi dịch phải 8 bit chứa 00000000. Nhập nối tiếp dãy 11010010 (bit ngoài cùng bên phải vào trước) ở đầu trái với clock 250 kHz. (a) Nội dung sau từng xung (liệt kê). (b) Thời gian nhập. (c) Nếu dùng thanh ghi này làm đường trễ cho tín hiệu nối tiếp, trễ là bao nhiêu?",
+   "en": "An 8-bit shift-right register holds 00000000. The sequence 11010010 is entered serially (right-most bit first) at the left end with a 250 kHz clock. (a) The contents after each pulse (list them). (b) The entry time. (c) If this register is used as a delay line for a serial signal, what is the delay?"
+  },
+  "sol": {
+   "vi": "(a) 00000000; 10000000; 01000000; 00100000; 10010000; 01001000; 10100100; 11010010. (b) 8 × 4 μs = 32 μs. (c) Mỗi bit đi qua 8 tầng nên trễ bằng đúng thời gian nhập = 32 μs.",
+   "en": "(a) 00000000; 10000000; 01000000; 00100000; 10010000; 01001000; 10100100; 11010010. (b) 8 × 4 μs = 32 μs. (c) Each bit passes through 8 stages so the delay equals the entry time = 32 μs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Nhập nối tiếp 8 bit",
+   "en": "Added · 8-bit serial entry"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Lập bảng trạng thái 8 xung đầu của bộ đếm Johnson 4 flip-flop khởi đầu 0000 và của bộ đếm vòng 4 flip-flop khởi đầu 1000. So sánh modulus và số cổng giải mã cần thiết để nhận biết từng trạng thái.",
+   "en": "Tabulate the first 8 pulses of a 4-flip-flop Johnson counter starting at 0000 and of a 4-flip-flop ring counter starting at 1000. Compare their moduli and the number of gates needed to decode each state."
+  },
+  "sol": {
+   "vi": "Johnson: 0000 → 1000 → 1100 → 1110 → 1111 → 0111 → 0011 → 0001 → 0000. Vòng: 1000 → 0100 → 0010 → 0001 → 1000 → 0100 → 0010 → 0001 → 1000. Modulus Johnson = 8 (2n), vòng = 4 (n). Mỗi trạng thái Johnson giải mã bằng một cổng AND hai ngõ vào (chỉ cần xét hai tầng kề nhau); trạng thái vòng đọc trực tiếp từ một ngõ ra, không cần cổng.",
+   "en": "Johnson: 0000 → 1000 → 1100 → 1110 → 1111 → 0111 → 0011 → 0001 → 0000. Ring: 1000 → 0100 → 0010 → 0001 → 1000 → 0100 → 0010 → 0001 → 1000. Johnson modulus = 8 (2n), ring = 4 (n). Each Johnson state decodes with one two-input AND gate (only two adjacent stages matter); a ring state is read directly from one output, no gate."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Johnson so với vòng",
+   "en": "Added · Johnson versus ring"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một hàm $F=\\overline{A}B+A\\overline{B}$ (XOR) cần thực hiện bằng PAL. (a) Có bao nhiêu số hạng tích? (b) Bảng cầu chì (fuse map) cần giữ lại những liên kết nào? (c) Một LUT 2 ngõ vào chứa nội dung gì để thực hiện cùng hàm?",
+   "en": "A function $F=\\overline{A}B+A\\overline{B}$ (XOR) is to be built in a PAL. (a) How many product terms? (b) Which links must the fuse map keep? (c) What does a 2-input LUT hold to implement the same function?"
+  },
+  "sol": {
+   "vi": "(a) Hai số hạng tích: $\\overline{A}B$ và $A\\overline{B}$, đưa vào một cổng OR cố định. (b) Số hạng 1 giữ liên kết từ $\\overline{A}$ và $B$ (đốt các cầu chì còn lại); số hạng 2 giữ liên kết từ $A$ và $\\overline{B}$. (c) LUT 4 ô theo thứ tự AB = 00, 01, 10, 11 chứa 0, 1, 1, 0.",
+   "en": "(a) Two product terms, $\\overline{A}B$ and $A\\overline{B}$, feeding a fixed OR gate. (b) Term 1 keeps the links from $\\overline{A}$ and $B$ (the other fuses are blown); term 2 keeps those from $A$ and $\\overline{B}$. (c) A 4-cell LUT for AB = 00, 01, 10, 11 holds 0, 1, 1, 0."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · XOR trên PAL và LUT",
+   "en": "Added · XOR in a PAL and a LUT"
+  }
+ }
+]

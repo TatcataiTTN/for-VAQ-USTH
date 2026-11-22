@@ -1,0 +1,781 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dùng bù hai 8 bit để tính 45 − 77 (cộng 45 với bù hai của 77). Kết quả viết dạng bù hai 8 bit là:",
+   "en": "Use 8-bit two's complement to compute 45 − 77 (add 45 to the two's complement of 77). The result in 8-bit two's complement is:"
+  },
+  "opts": [
+   {
+    "vi": "11100000",
+    "en": "11100000"
+   },
+   {
+    "vi": "00100000",
+    "en": "00100000"
+   },
+   {
+    "vi": "11011111",
+    "en": "11011111"
+   },
+   {
+    "vi": "00011111",
+    "en": "00011111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "45 − 77 = -32; bù hai 8 bit của -32 là 11100000.",
+   "en": "45 − 77 = -32; the 8-bit two's complement of -32 is 11100000."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Phép trừ bù hai",
+   "en": "Added · Level 3: Two's complement subtraction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dùng bù hai 8 bit để tính 100 − 12 (cộng 100 với bù hai của 12). Kết quả viết dạng bù hai 8 bit là:",
+   "en": "Use 8-bit two's complement to compute 100 − 12 (add 100 to the two's complement of 12). The result in 8-bit two's complement is:"
+  },
+  "opts": [
+   {
+    "vi": "01011000",
+    "en": "01011000"
+   },
+   {
+    "vi": "10101000",
+    "en": "10101000"
+   },
+   {
+    "vi": "01010111",
+    "en": "01010111"
+   },
+   {
+    "vi": "10100111",
+    "en": "10100111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "100 − 12 = 88; bù hai 8 bit của 88 là 01011000.",
+   "en": "100 − 12 = 88; the 8-bit two's complement of 88 is 01011000."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Phép trừ bù hai",
+   "en": "Added · Level 3: Two's complement subtraction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dùng bù hai 8 bit để tính 23 − 90 (cộng 23 với bù hai của 90). Kết quả viết dạng bù hai 8 bit là:",
+   "en": "Use 8-bit two's complement to compute 23 − 90 (add 23 to the two's complement of 90). The result in 8-bit two's complement is:"
+  },
+  "opts": [
+   {
+    "vi": "10111101",
+    "en": "10111101"
+   },
+   {
+    "vi": "01000011",
+    "en": "01000011"
+   },
+   {
+    "vi": "10111100",
+    "en": "10111100"
+   },
+   {
+    "vi": "01000010",
+    "en": "01000010"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "23 − 90 = -67; bù hai 8 bit của -67 là 10111101.",
+   "en": "23 − 90 = -67; the 8-bit two's complement of -67 is 10111101."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Phép trừ bù hai",
+   "en": "Added · Level 3: Two's complement subtraction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dùng bù hai 8 bit để tính -50 − 20 (cộng -50 với bù hai của 20). Kết quả viết dạng bù hai 8 bit là:",
+   "en": "Use 8-bit two's complement to compute -50 − 20 (add -50 to the two's complement of 20). The result in 8-bit two's complement is:"
+  },
+  "opts": [
+   {
+    "vi": "10111010",
+    "en": "10111010"
+   },
+   {
+    "vi": "01000110",
+    "en": "01000110"
+   },
+   {
+    "vi": "10111001",
+    "en": "10111001"
+   },
+   {
+    "vi": "01000101",
+    "en": "01000101"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "-50 − 20 = -70; bù hai 8 bit của -70 là 10111010.",
+   "en": "-50 − 20 = -70; the 8-bit two's complement of -70 is 10111010."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Phép trừ bù hai",
+   "en": "Added · Level 3: Two's complement subtraction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số bù hai 8 bit 01100100 (100) và 00110010 (50). Kết quả 8 bit và trạng thái tràn (overflow) là:",
+   "en": "Two 8-bit two's complement numbers 01100100 (100) and 00110010 (50) are added. The 8-bit result and the overflow status are:"
+  },
+  "opts": [
+   {
+    "vi": "10010110, tràn",
+    "en": "10010110, overflow"
+   },
+   {
+    "vi": "10010110, không tràn",
+    "en": "10010110, no overflow"
+   },
+   {
+    "vi": "10010111, tràn",
+    "en": "10010111, overflow"
+   },
+   {
+    "vi": "00110010, tràn",
+    "en": "00110010, overflow"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng thật là 150, ngoài khoảng −128 đến 127 nên tràn; 8 bit giữ 10010110.",
+   "en": "The true sum is 150, outside −128 to 127 so it overflows; 8 bits keep 10010110."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tràn khi cộng bù hai",
+   "en": "Added · Level 3: Overflow in two's complement addition"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số bù hai 8 bit 10011100 (-100) và 11001110 (-50). Kết quả 8 bit và trạng thái tràn (overflow) là:",
+   "en": "Two 8-bit two's complement numbers 10011100 (-100) and 11001110 (-50) are added. The 8-bit result and the overflow status are:"
+  },
+  "opts": [
+   {
+    "vi": "01101010, tràn",
+    "en": "01101010, overflow"
+   },
+   {
+    "vi": "01101010, không tràn",
+    "en": "01101010, no overflow"
+   },
+   {
+    "vi": "01101011, tràn",
+    "en": "01101011, overflow"
+   },
+   {
+    "vi": "11001110, tràn",
+    "en": "11001110, overflow"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng thật là -150, ngoài khoảng −128 đến 127 nên tràn; 8 bit giữ 01101010.",
+   "en": "The true sum is -150, outside −128 to 127 so it overflows; 8 bits keep 01101010."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tràn khi cộng bù hai",
+   "en": "Added · Level 3: Overflow in two's complement addition"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số bù hai 8 bit 00111100 (60) và 10100110 (-90). Kết quả 8 bit và trạng thái tràn (overflow) là:",
+   "en": "Two 8-bit two's complement numbers 00111100 (60) and 10100110 (-90) are added. The 8-bit result and the overflow status are:"
+  },
+  "opts": [
+   {
+    "vi": "11100010, không tràn",
+    "en": "11100010, no overflow"
+   },
+   {
+    "vi": "11100010, tràn",
+    "en": "11100010, overflow"
+   },
+   {
+    "vi": "11100011, không tràn",
+    "en": "11100011, no overflow"
+   },
+   {
+    "vi": "10010110, không tràn",
+    "en": "10010110, no overflow"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng thật là -30, trong khoảng −128 đến 127 nên không tràn.",
+   "en": "The true sum is -30, inside −128 to 127 so there is no overflow."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tràn khi cộng bù hai",
+   "en": "Added · Level 3: Overflow in two's complement addition"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số bù hai 8 bit 01000110 (70) và 00101000 (40). Kết quả 8 bit và trạng thái tràn (overflow) là:",
+   "en": "Two 8-bit two's complement numbers 01000110 (70) and 00101000 (40) are added. The 8-bit result and the overflow status are:"
+  },
+  "opts": [
+   {
+    "vi": "01101110, không tràn",
+    "en": "01101110, no overflow"
+   },
+   {
+    "vi": "01101110, tràn",
+    "en": "01101110, overflow"
+   },
+   {
+    "vi": "01101111, không tràn",
+    "en": "01101111, no overflow"
+   },
+   {
+    "vi": "00011110, không tràn",
+    "en": "00011110, no overflow"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng thật là 110, trong khoảng −128 đến 127 nên không tràn.",
+   "en": "The true sum is 110, inside −128 to 127 so there is no overflow."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Tràn khi cộng bù hai",
+   "en": "Added · Level 3: Overflow in two's complement addition"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai byte thập lục phân 7BH + D5H trong thanh ghi 8 bit. Kết quả và cờ nhớ (carry) là:",
+   "en": "Two hexadecimal bytes 7BH + D5H are added in an 8-bit register. The result and the carry flag are:"
+  },
+  "opts": [
+   {
+    "vi": "50H, carry = 1",
+    "en": "50H, carry = 1"
+   },
+   {
+    "vi": "50H, carry = 0",
+    "en": "50H, carry = 0"
+   },
+   {
+    "vi": "51H, carry = 1",
+    "en": "51H, carry = 1"
+   },
+   {
+    "vi": "A6H, carry = 1",
+    "en": "A6H, carry = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "7BH + D5H = 150H (= 336); 8 bit giữ 50H, nhớ 1.",
+   "en": "7BH + D5H = 150H (= 336); 8 bits keep 50H, carry 1."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Cộng thập lục phân có nhớ",
+   "en": "Added · Level 3: Hexadecimal addition with carry"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai byte thập lục phân A9H + 6CH trong thanh ghi 8 bit. Kết quả và cờ nhớ (carry) là:",
+   "en": "Two hexadecimal bytes A9H + 6CH are added in an 8-bit register. The result and the carry flag are:"
+  },
+  "opts": [
+   {
+    "vi": "15H, carry = 1",
+    "en": "15H, carry = 1"
+   },
+   {
+    "vi": "15H, carry = 0",
+    "en": "15H, carry = 0"
+   },
+   {
+    "vi": "16H, carry = 1",
+    "en": "16H, carry = 1"
+   },
+   {
+    "vi": "3DH, carry = 1",
+    "en": "3DH, carry = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A9H + 6CH = 115H (= 277); 8 bit giữ 15H, nhớ 1.",
+   "en": "A9H + 6CH = 115H (= 277); 8 bits keep 15H, carry 1."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Cộng thập lục phân có nhớ",
+   "en": "Added · Level 3: Hexadecimal addition with carry"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số BCD 0100 0111 (47) và 0011 1000 (38) rồi hiệu chỉnh. Kết quả BCD là:",
+   "en": "Two BCD numbers 0100 0111 (47) and 0011 1000 (38) are added and corrected. The BCD result is:"
+  },
+  "opts": [
+   {
+    "vi": "1000 0101",
+    "en": "1000 0101"
+   },
+   {
+    "vi": "0111 1111",
+    "en": "0111 1111"
+   },
+   {
+    "vi": "1001 0001",
+    "en": "1001 0001"
+   },
+   {
+    "vi": "0101 1000",
+    "en": "0101 1000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "47 + 38 = 85; mỗi nhóm 4 bit chỉ dùng 0000 đến 1001 nên phải cộng 0110 vào nhóm vượt 9: kết quả 1000 0101.",
+   "en": "47 + 38 = 85; each nibble may use only 0000 to 1001 so 0110 is added to a nibble above 9: the result is 1000 0101."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Cộng BCD có hiệu chỉnh",
+   "en": "Added · Level 3: BCD addition with correction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số BCD 0101 1001 (59) và 0010 0111 (27) rồi hiệu chỉnh. Kết quả BCD là:",
+   "en": "Two BCD numbers 0101 1001 (59) and 0010 0111 (27) are added and corrected. The BCD result is:"
+  },
+  "opts": [
+   {
+    "vi": "1000 0110",
+    "en": "1000 0110"
+   },
+   {
+    "vi": "1000 0000",
+    "en": "1000 0000"
+   },
+   {
+    "vi": "1001 0010",
+    "en": "1001 0010"
+   },
+   {
+    "vi": "0110 1000",
+    "en": "0110 1000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "59 + 27 = 86; mỗi nhóm 4 bit chỉ dùng 0000 đến 1001 nên phải cộng 0110 vào nhóm vượt 9: kết quả 1000 0110.",
+   "en": "59 + 27 = 86; each nibble may use only 0000 to 1001 so 0110 is added to a nibble above 9: the result is 1000 0110."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Cộng BCD có hiệu chỉnh",
+   "en": "Added · Level 3: BCD addition with correction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cộng hai số BCD 0110 1000 (68) và 0100 0101 (45) rồi hiệu chỉnh. Kết quả BCD là:",
+   "en": "Two BCD numbers 0110 1000 (68) and 0100 0101 (45) are added and corrected. The BCD result is:"
+  },
+  "opts": [
+   {
+    "vi": "0001 0001 0011",
+    "en": "0001 0001 0011"
+   },
+   {
+    "vi": "1010 1101",
+    "en": "1010 1101"
+   },
+   {
+    "vi": "0001 0001 1001",
+    "en": "0001 0001 1001"
+   },
+   {
+    "vi": "0011 0001 0001",
+    "en": "0011 0001 0001"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "68 + 45 = 113; mỗi nhóm 4 bit chỉ dùng 0000 đến 1001 nên phải cộng 0110 vào nhóm vượt 9: kết quả 0001 0001 0011.",
+   "en": "68 + 45 = 113; each nibble may use only 0000 to 1001 so 0110 is added to a nibble above 9: the result is 0001 0001 0011."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Cộng BCD có hiệu chỉnh",
+   "en": "Added · Level 3: BCD addition with correction"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã Gray 5 bit của số nhị phân 10110 là:",
+   "en": "The 5-bit Gray code of the binary number 10110 is:"
+  },
+  "opts": [
+   {
+    "vi": "11101",
+    "en": "11101"
+   },
+   {
+    "vi": "10110",
+    "en": "10110"
+   },
+   {
+    "vi": "11100",
+    "en": "11100"
+   },
+   {
+    "vi": "01001",
+    "en": "01001"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bit Gray = bit nhị phân XOR bit nhị phân bên trái nó: 10110 cho 11101.",
+   "en": "Gray bit = binary bit XOR the binary bit to its left: 10110 gives 11101."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Đổi nhị phân sang Gray",
+   "en": "Added · Level 3: Binary to Gray"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mã Gray 5 bit của số nhị phân 01101 là:",
+   "en": "The 5-bit Gray code of the binary number 01101 is:"
+  },
+  "opts": [
+   {
+    "vi": "01011",
+    "en": "01011"
+   },
+   {
+    "vi": "01101",
+    "en": "01101"
+   },
+   {
+    "vi": "01010",
+    "en": "01010"
+   },
+   {
+    "vi": "10010",
+    "en": "10010"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bit Gray = bit nhị phân XOR bit nhị phân bên trái nó: 01101 cho 01011.",
+   "en": "Gray bit = binary bit XOR the binary bit to its left: 01101 gives 01011."
+  },
+  "topic": {
+   "vi": "Mã BCD, Gray, ASCII",
+   "en": "BCD, Gray and ASCII codes"
+  },
+  "topic_id": "codes",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Đổi nhị phân sang Gray",
+   "en": "Added · Level 3: Binary to Gray"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân có phần thập phân 101.101₂ bằng (thập phân):",
+   "en": "The binary number with a fractional part 101.101₂ equals (decimal):"
+  },
+  "opts": [
+   {
+    "vi": "5.625",
+    "en": "5.625"
+   },
+   {
+    "vi": "6.125",
+    "en": "6.125"
+   },
+   {
+    "vi": "11.25",
+    "en": "11.25"
+   },
+   {
+    "vi": "5.5",
+    "en": "5.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phần nguyên 5; phần lẻ = 1×2⁻1 + 0×2⁻2 + 1×2⁻3 = 0.625; tổng 5.625.",
+   "en": "Integer part 5; fraction = 1×2⁻1 + 0×2⁻2 + 1×2⁻3 = 0.625; total 5.625."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Phần lẻ nhị phân",
+   "en": "Added · Level 3: Binary fractions"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số nhị phân có phần thập phân 1101.0011₂ bằng (thập phân):",
+   "en": "The binary number with a fractional part 1101.0011₂ equals (decimal):"
+  },
+  "opts": [
+   {
+    "vi": "13.1875",
+    "en": "13.1875"
+   },
+   {
+    "vi": "13.6875",
+    "en": "13.6875"
+   },
+   {
+    "vi": "26.375",
+    "en": "26.375"
+   },
+   {
+    "vi": "13.3",
+    "en": "13.3"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Phần nguyên 13; phần lẻ = 0×2⁻1 + 0×2⁻2 + 1×2⁻3 + 1×2⁻4 = 0.1875; tổng 13.1875.",
+   "en": "Integer part 13; fraction = 0×2⁻1 + 0×2⁻2 + 1×2⁻3 + 1×2⁻4 = 0.1875; total 13.1875."
+  },
+  "topic": {
+   "vi": "Đổi cơ số",
+   "en": "Base conversion"
+  },
+  "topic_id": "base-conv",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Phần lẻ nhị phân",
+   "en": "Added · Level 3: Binary fractions"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng giá trị của số nguyên có dấu 12 bit dạng bù hai là:",
+   "en": "The range of a 12-bit two's complement integer is:"
+  },
+  "opts": [
+   {
+    "vi": "-2048 đến 2047",
+    "en": "-2048 đến 2047"
+   },
+   {
+    "vi": "-2047 đến 2048",
+    "en": "-2047 đến 2048"
+   },
+   {
+    "vi": "0 đến 4095",
+    "en": "0 đến 4095"
+   },
+   {
+    "vi": "-4096 đến 4095",
+    "en": "-4096 đến 4095"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$-2^{11}$ đến $2^{11}-1$.",
+   "en": "$-2^{11}$ to $2^{11}-1$."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khoảng số bù hai",
+   "en": "Added · Level 3: Two's complement range"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng giá trị của số nguyên có dấu 10 bit dạng bù hai là:",
+   "en": "The range of a 10-bit two's complement integer is:"
+  },
+  "opts": [
+   {
+    "vi": "-512 đến 511",
+    "en": "-512 đến 511"
+   },
+   {
+    "vi": "-511 đến 512",
+    "en": "-511 đến 512"
+   },
+   {
+    "vi": "0 đến 1023",
+    "en": "0 đến 1023"
+   },
+   {
+    "vi": "-1024 đến 1023",
+    "en": "-1024 đến 1023"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$-2^{9}$ đến $2^{9}-1$.",
+   "en": "$-2^{9}$ to $2^{9}-1$."
+  },
+  "topic": {
+   "vi": "Số có dấu, bù 1 và bù 2",
+   "en": "Signed numbers, 1s and 2s complement"
+  },
+  "topic_id": "complement",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Khoảng số bù hai",
+   "en": "Added · Level 3: Two's complement range"
+  }
+ }
+]

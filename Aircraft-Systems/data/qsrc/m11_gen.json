@@ -1,0 +1,3041 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm gợn sóng gồm 5 flip-flop, mỗi flip-flop có trễ lan truyền 15 ns. Thời gian để mọi ngõ ra ổn định sau khi quay vòng (trường hợp xấu nhất) là:",
+   "en": "A ripple counter has 5 flip-flops, each with a propagation delay of 15 ns. The worst-case time for all outputs to settle after it recycles is:"
+  },
+  "opts": [
+   {
+    "vi": "75 ns",
+    "en": "75 ns"
+   },
+   {
+    "vi": "15 ns",
+    "en": "15 ns"
+   },
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "150 ns",
+    "en": "150 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các tầng đổi lần lượt nên trễ cộng dồn: 5 × 15 ns = 75 ns.",
+   "en": "The stages change in turn so the delays add: 5 × 15 ns = 75 ns."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm gợn sóng 5 FF, 15 ns",
+   "en": "Added · Ripple counter, 5 FFs, 15 ns"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm gợn sóng gồm 6 flip-flop, mỗi flip-flop có trễ lan truyền 10 ns. Thời gian để mọi ngõ ra ổn định sau khi quay vòng (trường hợp xấu nhất) là:",
+   "en": "A ripple counter has 6 flip-flops, each with a propagation delay of 10 ns. The worst-case time for all outputs to settle after it recycles is:"
+  },
+  "opts": [
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "10 ns",
+    "en": "10 ns"
+   },
+   {
+    "vi": "50 ns",
+    "en": "50 ns"
+   },
+   {
+    "vi": "120 ns",
+    "en": "120 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các tầng đổi lần lượt nên trễ cộng dồn: 6 × 10 ns = 60 ns.",
+   "en": "The stages change in turn so the delays add: 6 × 10 ns = 60 ns."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm gợn sóng 6 FF, 10 ns",
+   "en": "Added · Ripple counter, 6 FFs, 10 ns"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm gợn sóng gồm 8 flip-flop, mỗi flip-flop có trễ lan truyền 12 ns. Thời gian để mọi ngõ ra ổn định sau khi quay vòng (trường hợp xấu nhất) là:",
+   "en": "A ripple counter has 8 flip-flops, each with a propagation delay of 12 ns. The worst-case time for all outputs to settle after it recycles is:"
+  },
+  "opts": [
+   {
+    "vi": "96 ns",
+    "en": "96 ns"
+   },
+   {
+    "vi": "12 ns",
+    "en": "12 ns"
+   },
+   {
+    "vi": "84 ns",
+    "en": "84 ns"
+   },
+   {
+    "vi": "192 ns",
+    "en": "192 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các tầng đổi lần lượt nên trễ cộng dồn: 8 × 12 ns = 96 ns.",
+   "en": "The stages change in turn so the delays add: 8 × 12 ns = 96 ns."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm gợn sóng 8 FF, 12 ns",
+   "en": "Added · Ripple counter, 8 FFs, 12 ns"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm gợn sóng gồm 3 flip-flop, mỗi flip-flop có trễ lan truyền 20 ns. Thời gian để mọi ngõ ra ổn định sau khi quay vòng (trường hợp xấu nhất) là:",
+   "en": "A ripple counter has 3 flip-flops, each with a propagation delay of 20 ns. The worst-case time for all outputs to settle after it recycles is:"
+  },
+  "opts": [
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "20 ns",
+    "en": "20 ns"
+   },
+   {
+    "vi": "40 ns",
+    "en": "40 ns"
+   },
+   {
+    "vi": "120 ns",
+    "en": "120 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các tầng đổi lần lượt nên trễ cộng dồn: 3 × 20 ns = 60 ns.",
+   "en": "The stages change in turn so the delays add: 3 × 20 ns = 60 ns."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm gợn sóng 3 FF, 20 ns",
+   "en": "Added · Ripple counter, 3 FFs, 20 ns"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 4 bit dùng flip-flop có trễ 12 ns. Tần số clock lớn nhất để các ngõ ra kịp ổn định trước xung kế tiếp xấp xỉ:",
+   "en": "A 4-bit ripple counter uses flip-flops with a 12 ns delay. The highest clock frequency that still lets the outputs settle before the next pulse is about:"
+  },
+  "opts": [
+   {
+    "vi": "20.83 MHz",
+    "en": "20.83 MHz"
+   },
+   {
+    "vi": "83.33 MHz",
+    "en": "83.33 MHz"
+   },
+   {
+    "vi": "5.208 MHz",
+    "en": "5.208 MHz"
+   },
+   {
+    "vi": "27.78 MHz",
+    "en": "27.78 MHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ phải lớn hơn 4 × 12 ns = 48 ns nên $f_{max}\\approx 1/48\\text{ ns}$ = 20.83 MHz.",
+   "en": "The period must exceed 4 × 12 ns = 48 ns, so $f_{max}\\approx 1/48\\text{ ns}$ = 20.83 MHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tần số clock tối đa, 4 FF",
+   "en": "Added · Maximum clock frequency, 4 FFs"
+  },
+  "detail": {
+   "vi": "<p>Điều kiện của Floyd 9-2: trễ tích luỹ lớn nhất phải nhỏ hơn chu kỳ clock. Bộ đếm đồng bộ không bị giới hạn này vì mọi flip-flop dùng chung clock.</p>",
+   "en": "<p>Floyd 9-2: the maximum cumulative delay must be less than the clock period. A synchronous counter has no such limit because all flip-flops share the clock.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 5 bit dùng flip-flop có trễ 16 ns. Tần số clock lớn nhất để các ngõ ra kịp ổn định trước xung kế tiếp xấp xỉ:",
+   "en": "A 5-bit ripple counter uses flip-flops with a 16 ns delay. The highest clock frequency that still lets the outputs settle before the next pulse is about:"
+  },
+  "opts": [
+   {
+    "vi": "12.5 MHz",
+    "en": "12.5 MHz"
+   },
+   {
+    "vi": "62.5 MHz",
+    "en": "62.5 MHz"
+   },
+   {
+    "vi": "1.953 MHz",
+    "en": "1.953 MHz"
+   },
+   {
+    "vi": "15.625 MHz",
+    "en": "15.625 MHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ phải lớn hơn 5 × 16 ns = 80 ns nên $f_{max}\\approx 1/80\\text{ ns}$ = 12.5 MHz.",
+   "en": "The period must exceed 5 × 16 ns = 80 ns, so $f_{max}\\approx 1/80\\text{ ns}$ = 12.5 MHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tần số clock tối đa, 5 FF",
+   "en": "Added · Maximum clock frequency, 5 FFs"
+  },
+  "detail": {
+   "vi": "<p>Điều kiện của Floyd 9-2: trễ tích luỹ lớn nhất phải nhỏ hơn chu kỳ clock. Bộ đếm đồng bộ không bị giới hạn này vì mọi flip-flop dùng chung clock.</p>",
+   "en": "<p>Floyd 9-2: the maximum cumulative delay must be less than the clock period. A synchronous counter has no such limit because all flip-flops share the clock.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 8 bit dùng flip-flop có trễ 10 ns. Tần số clock lớn nhất để các ngõ ra kịp ổn định trước xung kế tiếp xấp xỉ:",
+   "en": "A 8-bit ripple counter uses flip-flops with a 10 ns delay. The highest clock frequency that still lets the outputs settle before the next pulse is about:"
+  },
+  "opts": [
+   {
+    "vi": "12.5 MHz",
+    "en": "12.5 MHz"
+   },
+   {
+    "vi": "100 MHz",
+    "en": "100 MHz"
+   },
+   {
+    "vi": "390.625 kHz",
+    "en": "390.625 kHz"
+   },
+   {
+    "vi": "14.29 MHz",
+    "en": "14.29 MHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ phải lớn hơn 8 × 10 ns = 80 ns nên $f_{max}\\approx 1/80\\text{ ns}$ = 12.5 MHz.",
+   "en": "The period must exceed 8 × 10 ns = 80 ns, so $f_{max}\\approx 1/80\\text{ ns}$ = 12.5 MHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tần số clock tối đa, 8 FF",
+   "en": "Added · Maximum clock frequency, 8 FFs"
+  },
+  "detail": {
+   "vi": "<p>Điều kiện của Floyd 9-2: trễ tích luỹ lớn nhất phải nhỏ hơn chu kỳ clock. Bộ đếm đồng bộ không bị giới hạn này vì mọi flip-flop dùng chung clock.</p>",
+   "en": "<p>Floyd 9-2: the maximum cumulative delay must be less than the clock period. A synchronous counter has no such limit because all flip-flops share the clock.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số flip-flop tối thiểu cho một bộ đếm modulus 6 là:",
+   "en": "The minimum number of flip-flops for a modulus-6 counter is:"
+  },
+  "opts": [
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $2^n\\ge 6$: $2^2=4<6\\le 2^3=8$ nên $n=3$.",
+   "en": "We need $2^n\\ge 6$: $2^2=4<6\\le 2^3=8$, so $n=3$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 6",
+   "en": "Added · Modulus 6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số flip-flop tối thiểu cho một bộ đếm modulus 10 là:",
+   "en": "The minimum number of flip-flops for a modulus-10 counter is:"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "10",
+    "en": "10"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $2^n\\ge 10$: $2^3=8<10\\le 2^4=16$ nên $n=4$.",
+   "en": "We need $2^n\\ge 10$: $2^3=8<10\\le 2^4=16$, so $n=4$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 10",
+   "en": "Added · Modulus 10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số flip-flop tối thiểu cho một bộ đếm modulus 20 là:",
+   "en": "The minimum number of flip-flops for a modulus-20 counter is:"
+  },
+  "opts": [
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "20",
+    "en": "20"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $2^n\\ge 20$: $2^4=16<20\\le 2^5=32$ nên $n=5$.",
+   "en": "We need $2^n\\ge 20$: $2^4=16<20\\le 2^5=32$, so $n=5$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 20",
+   "en": "Added · Modulus 20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số flip-flop tối thiểu cho một bộ đếm modulus 50 là:",
+   "en": "The minimum number of flip-flops for a modulus-50 counter is:"
+  },
+  "opts": [
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "7",
+    "en": "7"
+   },
+   {
+    "vi": "50",
+    "en": "50"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $2^n\\ge 50$: $2^5=32<50\\le 2^6=64$ nên $n=6$.",
+   "en": "We need $2^n\\ge 50$: $2^5=32<50\\le 2^6=64$, so $n=6$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 50",
+   "en": "Added · Modulus 50"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số flip-flop tối thiểu cho một bộ đếm modulus 100 là:",
+   "en": "The minimum number of flip-flops for a modulus-100 counter is:"
+  },
+  "opts": [
+   {
+    "vi": "7",
+    "en": "7"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "100",
+    "en": "100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $2^n\\ge 100$: $2^6=64<100\\le 2^7=128$ nên $n=7$.",
+   "en": "We need $2^n\\ge 100$: $2^6=64<100\\le 2^7=128$, so $n=7$."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 100",
+   "en": "Added · Modulus 100"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm nhị phân lên 4 bit đang ở 0110. Sau 13 xung clock, trạng thái là:",
+   "en": "A 4-bit binary up counter is at 0110. After 13 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "0011",
+    "en": "0011"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "6 + 13 = 19; modulo $2^4=16$ ta được 3 = 0011.",
+   "en": "6 + 13 = 19; modulo $2^4=16$ gives 3 = 0011."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm lên 4 bit",
+   "en": "Added · 4-bit up count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm nhị phân lên 4 bit đang ở 1011. Sau 9 xung clock, trạng thái là:",
+   "en": "A 4-bit binary up counter is at 1011. After 9 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "0101",
+    "en": "0101"
+   },
+   {
+    "vi": "0011",
+    "en": "0011"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "11 + 9 = 20; modulo $2^4=16$ ta được 4 = 0100.",
+   "en": "11 + 9 = 20; modulo $2^4=16$ gives 4 = 0100."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm lên 4 bit",
+   "en": "Added · 4-bit up count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm nhị phân lên 5 bit đang ở 10101. Sau 20 xung clock, trạng thái là:",
+   "en": "A 5-bit binary up counter is at 10101. After 20 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "01001",
+    "en": "01001"
+   },
+   {
+    "vi": "01000",
+    "en": "01000"
+   },
+   {
+    "vi": "01010",
+    "en": "01010"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "21 + 20 = 41; modulo $2^5=32$ ta được 9 = 01001.",
+   "en": "21 + 20 = 41; modulo $2^5=32$ gives 9 = 01001."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm lên 5 bit",
+   "en": "Added · 5-bit up count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm nhị phân lên 3 bit đang ở 101. Sau 6 xung clock, trạng thái là:",
+   "en": "A 3-bit binary up counter is at 101. After 6 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "011",
+    "en": "011"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   },
+   {
+    "vi": "100",
+    "en": "100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "5 + 6 = 11; modulo $2^3=8$ ta được 3 = 011.",
+   "en": "5 + 6 = 11; modulo $2^3=8$ gives 3 = 011."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm lên 3 bit",
+   "en": "Added · 3-bit up count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm xuống nhị phân 4 bit đang ở 0011. Sau 5 xung clock trạng thái là:",
+   "en": "A 4-bit binary down counter is at 0011. After 5 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "3 − 5 = -2; quay vòng modulo 16 cho 14 = 1110.",
+   "en": "3 − 5 = -2; wrapping modulo 16 gives 14 = 1110."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm xuống 4 bit",
+   "en": "Added · 4-bit down count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm xuống nhị phân 4 bit đang ở 0010. Sau 9 xung clock trạng thái là:",
+   "en": "A 4-bit binary down counter is at 0010. After 9 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "1001",
+    "en": "1001"
+   },
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "2 − 9 = -7; quay vòng modulo 16 cho 9 = 1001.",
+   "en": "2 − 9 = -7; wrapping modulo 16 gives 9 = 1001."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm xuống 4 bit",
+   "en": "Added · 4-bit down count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm xuống nhị phân 4 bit đang ở 0000. Sau 3 xung clock trạng thái là:",
+   "en": "A 4-bit binary down counter is at 0000. After 3 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "0011",
+    "en": "0011"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "0 − 3 = -3; quay vòng modulo 16 cho 13 = 1101.",
+   "en": "0 − 3 = -3; wrapping modulo 16 gives 13 = 1101."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đếm xuống 4 bit",
+   "en": "Added · 4-bit down count"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm modulus 10 đếm lên từ 0. Sau 23 xung clock, giá trị đếm (thập phân) là:",
+   "en": "A modulus-10 counter counts up from 0. After 23 clock pulses the count (decimal) is:"
+  },
+  "opts": [
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "23",
+    "en": "23"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "23 mod 10 = 3.",
+   "en": "23 mod 10 = 3."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 10",
+   "en": "Added · Modulus 10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm modulus 12 đếm lên từ 0. Sau 30 xung clock, giá trị đếm (thập phân) là:",
+   "en": "A modulus-12 counter counts up from 0. After 30 clock pulses the count (decimal) is:"
+  },
+  "opts": [
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "7",
+    "en": "7"
+   },
+   {
+    "vi": "30",
+    "en": "30"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "30 mod 12 = 6.",
+   "en": "30 mod 12 = 6."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 12",
+   "en": "Added · Modulus 12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ đếm modulus 60 đếm lên từ 0. Sau 125 xung clock, giá trị đếm (thập phân) là:",
+   "en": "A modulus-60 counter counts up from 0. After 125 clock pulses the count (decimal) is:"
+  },
+  "opts": [
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "3",
+    "en": "3"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   },
+   {
+    "vi": "125",
+    "en": "125"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "125 mod 60 = 5.",
+   "en": "125 mod 60 = 5."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Modulus 60",
+   "en": "Added · Modulus 60"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 12 MHz đưa vào chuỗi bộ đếm mắc tầng gồm các tầng 6, 10, 10 (modulus). Tần số ra cuối cùng là:",
+   "en": "A 12 MHz clock drives a cascade of counters with moduli 6, 10, 10. The final output frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "461.5 kHz",
+    "en": "461.5 kHz"
+   },
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "120 kHz",
+    "en": "120 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Modulus tổng = 6 × 10 × 10 = 600; $f_{out}=f/600$ = 20 kHz.",
+   "en": "Overall modulus = 6 × 10 × 10 = 600; $f_{out}=f/600$ = 20 kHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng bộ đếm mắc tầng",
+   "en": "Added · Frequency division by cascaded counters"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 1 MHz đưa vào chuỗi bộ đếm mắc tầng gồm các tầng 10, 10, 10 (modulus). Tần số ra cuối cùng là:",
+   "en": "A 1 MHz clock drives a cascade of counters with moduli 10, 10, 10. The final output frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "1 kHz",
+    "en": "1 kHz"
+   },
+   {
+    "vi": "33.33 kHz",
+    "en": "33.33 kHz"
+   },
+   {
+    "vi": "500 Hz",
+    "en": "500 Hz"
+   },
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Modulus tổng = 10 × 10 × 10 = 1000; $f_{out}=f/1000$ = 1 kHz.",
+   "en": "Overall modulus = 10 × 10 × 10 = 1000; $f_{out}=f/1000$ = 1 kHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng bộ đếm mắc tầng",
+   "en": "Added · Frequency division by cascaded counters"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 2.4 MHz đưa vào chuỗi bộ đếm mắc tầng gồm các tầng 4, 6, 10 (modulus). Tần số ra cuối cùng là:",
+   "en": "A 2.4 MHz clock drives a cascade of counters with moduli 4, 6, 10. The final output frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "120 kHz",
+    "en": "120 kHz"
+   },
+   {
+    "vi": "5 kHz",
+    "en": "5 kHz"
+   },
+   {
+    "vi": "40 kHz",
+    "en": "40 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Modulus tổng = 4 × 6 × 10 = 240; $f_{out}=f/240$ = 10 kHz.",
+   "en": "Overall modulus = 4 × 6 × 10 = 240; $f_{out}=f/240$ = 10 kHz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng bộ đếm mắc tầng",
+   "en": "Added · Frequency division by cascaded counters"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 32.768 kHz đưa vào 15 tầng chia đôi mắc tầng. Tần số ra cuối cùng là:",
+   "en": "A 32.768 kHz clock drives 15 cascaded divide-by-2 stages. The final output frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "1 Hz",
+    "en": "1 Hz"
+   },
+   {
+    "vi": "1.092 kHz",
+    "en": "1.092 kHz"
+   },
+   {
+    "vi": "0.5 Hz",
+    "en": "0.5 Hz"
+   },
+   {
+    "vi": "2 Hz",
+    "en": "2 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Modulus tổng = 2^15 = 32768; $f_{out}=f/32768$ = 1 Hz.",
+   "en": "Overall modulus = 2^15 = 32768; $f_{out}=f/32768$ = 1 Hz."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng bộ đếm mắc tầng",
+   "en": "Added · Frequency division by cascaded counters"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 2 MHz. Nhập nối tiếp 16 bit vào một thanh ghi dịch mất:",
+   "en": "With a 2 MHz clock, entering 16 bits serially into a shift register takes:"
+  },
+  "opts": [
+   {
+    "vi": "8 μs",
+    "en": "8 μs"
+   },
+   {
+    "vi": "500 ns",
+    "en": "500 ns"
+   },
+   {
+    "vi": "7.5 μs",
+    "en": "7.5 μs"
+   },
+   {
+    "vi": "16 μs",
+    "en": "16 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "16 bit × chu kỳ 500 ns = 8 μs.",
+   "en": "16 bits × a period of 500 ns = 8 μs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nhập nối tiếp",
+   "en": "Added · Serial entry time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 4 MHz. Nhập nối tiếp 32 bit vào một thanh ghi dịch mất:",
+   "en": "With a 4 MHz clock, entering 32 bits serially into a shift register takes:"
+  },
+  "opts": [
+   {
+    "vi": "8 μs",
+    "en": "8 μs"
+   },
+   {
+    "vi": "250 ns",
+    "en": "250 ns"
+   },
+   {
+    "vi": "7.75 μs",
+    "en": "7.75 μs"
+   },
+   {
+    "vi": "16 μs",
+    "en": "16 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "32 bit × chu kỳ 250 ns = 8 μs.",
+   "en": "32 bits × a period of 250 ns = 8 μs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nhập nối tiếp",
+   "en": "Added · Serial entry time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 250 kHz. Nhập nối tiếp 12 bit vào một thanh ghi dịch mất:",
+   "en": "With a 250 kHz clock, entering 12 bits serially into a shift register takes:"
+  },
+  "opts": [
+   {
+    "vi": "48 μs",
+    "en": "48 μs"
+   },
+   {
+    "vi": "4 μs",
+    "en": "4 μs"
+   },
+   {
+    "vi": "44 μs",
+    "en": "44 μs"
+   },
+   {
+    "vi": "96 μs",
+    "en": "96 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "12 bit × chu kỳ 4 μs = 48 μs.",
+   "en": "12 bits × a period of 4 μs = 48 μs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nhập nối tiếp",
+   "en": "Added · Serial entry time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Clock 50 kHz. Nhập nối tiếp 10 bit vào một thanh ghi dịch mất:",
+   "en": "With a 50 kHz clock, entering 10 bits serially into a shift register takes:"
+  },
+  "opts": [
+   {
+    "vi": "200 μs",
+    "en": "200 μs"
+   },
+   {
+    "vi": "20 μs",
+    "en": "20 μs"
+   },
+   {
+    "vi": "180 μs",
+    "en": "180 μs"
+   },
+   {
+    "vi": "400 μs",
+    "en": "400 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "10 bit × chu kỳ 20 μs = 200 μs.",
+   "en": "10 bits × a period of 20 μs = 200 μs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nhập nối tiếp",
+   "en": "Added · Serial entry time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một thanh ghi dịch vào nối tiếp/ra nối tiếp 16 bit dùng làm đường trễ 40 μs. Tần số clock cần dùng là:",
+   "en": "A 16-bit serial in/serial out shift register is used as a 40 μs delay line. The clock frequency needed is:"
+  },
+  "opts": [
+   {
+    "vi": "400 kHz",
+    "en": "400 kHz"
+   },
+   {
+    "vi": "25 kHz",
+    "en": "25 kHz"
+   },
+   {
+    "vi": "800 kHz",
+    "en": "800 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trễ = số bit / tần số nên $f=N/t=16/40 μs$ = 400 kHz.",
+   "en": "Delay = bits / frequency, so $f=N/t=16/40 μs$ = 400 kHz."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đường trễ bằng thanh ghi dịch",
+   "en": "Added · Shift-register delay line"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một thanh ghi dịch vào nối tiếp/ra nối tiếp 64 bit dùng làm đường trễ 16 μs. Tần số clock cần dùng là:",
+   "en": "A 64-bit serial in/serial out shift register is used as a 16 μs delay line. The clock frequency needed is:"
+  },
+  "opts": [
+   {
+    "vi": "4 MHz",
+    "en": "4 MHz"
+   },
+   {
+    "vi": "62.5 kHz",
+    "en": "62.5 kHz"
+   },
+   {
+    "vi": "8 MHz",
+    "en": "8 MHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trễ = số bit / tần số nên $f=N/t=64/16 μs$ = 4 MHz.",
+   "en": "Delay = bits / frequency, so $f=N/t=64/16 μs$ = 4 MHz."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đường trễ bằng thanh ghi dịch",
+   "en": "Added · Shift-register delay line"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một thanh ghi dịch vào nối tiếp/ra nối tiếp 8 bit dùng làm đường trễ 2 ms. Tần số clock cần dùng là:",
+   "en": "A 8-bit serial in/serial out shift register is used as a 2 ms delay line. The clock frequency needed is:"
+  },
+  "opts": [
+   {
+    "vi": "4 kHz",
+    "en": "4 kHz"
+   },
+   {
+    "vi": "500 Hz",
+    "en": "500 Hz"
+   },
+   {
+    "vi": "8 kHz",
+    "en": "8 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trễ = số bit / tần số nên $f=N/t=8/2 ms$ = 4 kHz.",
+   "en": "Delay = bits / frequency, so $f=N/t=8/2 ms$ = 4 kHz."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đường trễ bằng thanh ghi dịch",
+   "en": "Added · Shift-register delay line"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một thanh ghi dịch vào nối tiếp/ra nối tiếp 32 bit dùng làm đường trễ 12.8 μs. Tần số clock cần dùng là:",
+   "en": "A 32-bit serial in/serial out shift register is used as a 12.8 μs delay line. The clock frequency needed is:"
+  },
+  "opts": [
+   {
+    "vi": "2.5 MHz",
+    "en": "2.5 MHz"
+   },
+   {
+    "vi": "78.125 kHz",
+    "en": "78.125 kHz"
+   },
+   {
+    "vi": "5 MHz",
+    "en": "5 MHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trễ = số bit / tần số nên $f=N/t=32/12.8 μs$ = 2.5 MHz.",
+   "en": "Delay = bits / frequency, so $f=N/t=32/12.8 μs$ = 2.5 MHz."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Đường trễ bằng thanh ghi dịch",
+   "en": "Added · Shift-register delay line"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thanh ghi dịch phải 4 bit chứa 1010. Chuỗi 1101 được nhập nối tiếp (bit ngoài cùng bên phải vào trước) ở đầu trái, 4 xung clock. Thanh ghi chứa:",
+   "en": "A 4-bit shift-right register holds 1010. The bits 1101 are entered serially at the left end (right-most bit first) over 4 clock pulses. The register then holds:"
+  },
+  "opts": [
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "1010",
+    "en": "1010"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi xung dịch phải một vị trí và bit mới vào bên trái; sau 4 xung: 1101.",
+   "en": "Each pulse shifts one place right and a new bit enters on the left; after 4 pulses: 1101."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dịch bit nối tiếp",
+   "en": "Added · Serial shifting"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thanh ghi dịch phải 8 bit chứa 10110011. Chuỗi 0110 được nhập nối tiếp (bit ngoài cùng bên phải vào trước) ở đầu trái, 4 xung clock. Thanh ghi chứa:",
+   "en": "A 8-bit shift-right register holds 10110011. The bits 0110 are entered serially at the left end (right-most bit first) over 4 clock pulses. The register then holds:"
+  },
+  "opts": [
+   {
+    "vi": "01101011",
+    "en": "01101011"
+   },
+   {
+    "vi": "10110011",
+    "en": "10110011"
+   },
+   {
+    "vi": "11010110",
+    "en": "11010110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi xung dịch phải một vị trí và bit mới vào bên trái; sau 4 xung: 01101011.",
+   "en": "Each pulse shifts one place right and a new bit enters on the left; after 4 pulses: 01101011."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dịch bit nối tiếp",
+   "en": "Added · Serial shifting"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thanh ghi dịch phải 8 bit chứa 00001111. Chuỗi 101 được nhập nối tiếp (bit ngoài cùng bên phải vào trước) ở đầu trái, 3 xung clock. Thanh ghi chứa:",
+   "en": "A 8-bit shift-right register holds 00001111. The bits 101 are entered serially at the left end (right-most bit first) over 3 clock pulses. The register then holds:"
+  },
+  "opts": [
+   {
+    "vi": "10100001",
+    "en": "10100001"
+   },
+   {
+    "vi": "00001111",
+    "en": "00001111"
+   },
+   {
+    "vi": "10000101",
+    "en": "10000101"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi xung dịch phải một vị trí và bit mới vào bên trái; sau 3 xung: 10100001.",
+   "en": "Each pulse shifts one place right and a new bit enters on the left; after 3 pulses: 10100001."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dịch bit nối tiếp",
+   "en": "Added · Serial shifting"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thanh ghi dịch phải 5 bit chứa 11001. Chuỗi 011 được nhập nối tiếp (bit ngoài cùng bên phải vào trước) ở đầu trái, 3 xung clock. Thanh ghi chứa:",
+   "en": "A 5-bit shift-right register holds 11001. The bits 011 are entered serially at the left end (right-most bit first) over 3 clock pulses. The register then holds:"
+  },
+  "opts": [
+   {
+    "vi": "01111",
+    "en": "01111"
+   },
+   {
+    "vi": "11011",
+    "en": "11011"
+   },
+   {
+    "vi": "11001",
+    "en": "11001"
+   },
+   {
+    "vi": "11110",
+    "en": "11110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi xung dịch phải một vị trí và bit mới vào bên trái; sau 3 xung: 01111.",
+   "en": "Each pulse shifts one place right and a new bit enters on the left; after 3 pulses: 01111."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dịch bit nối tiếp",
+   "en": "Added · Serial shifting"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm Johnson 4 flip-flop khởi đầu ở 0000 (ngõ ra đảo của tầng cuối nối về ngõ vào, dịch phải). Sau 3 xung clock trạng thái là:",
+   "en": "A 4-flip-flop Johnson counter starts at 0000 (the inverted last output feeds the first input, shifting right). After 3 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "0001",
+    "en": "0001"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chuỗi Johnson: 0000 → 1000 → 1100 → 1110.",
+   "en": "Johnson sequence: 0000 → 1000 → 1100 → 1110."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm Johnson",
+   "en": "Added · Johnson counter"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm Johnson 4 flip-flop khởi đầu ở 0000 (ngõ ra đảo của tầng cuối nối về ngõ vào, dịch phải). Sau 5 xung clock trạng thái là:",
+   "en": "A 4-flip-flop Johnson counter starts at 0000 (the inverted last output feeds the first input, shifting right). After 5 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "0111",
+    "en": "0111"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "0011",
+    "en": "0011"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chuỗi Johnson: 0000 → 1000 → 1100 → 1110 → 1111 → 0111.",
+   "en": "Johnson sequence: 0000 → 1000 → 1100 → 1110 → 1111 → 0111."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm Johnson",
+   "en": "Added · Johnson counter"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm Johnson 5 flip-flop khởi đầu ở 00000 (ngõ ra đảo của tầng cuối nối về ngõ vào, dịch phải). Sau 7 xung clock trạng thái là:",
+   "en": "A 5-flip-flop Johnson counter starts at 00000 (the inverted last output feeds the first input, shifting right). After 7 clock pulses its state is:"
+  },
+  "opts": [
+   {
+    "vi": "00111",
+    "en": "00111"
+   },
+   {
+    "vi": "00100",
+    "en": "00100"
+   },
+   {
+    "vi": "00011",
+    "en": "00011"
+   },
+   {
+    "vi": "01111",
+    "en": "01111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chuỗi Johnson: 00000 → 10000 → 11000 → 11100 → 11110 → 11111 → 01111 → 00111.",
+   "en": "Johnson sequence: 00000 → 10000 → 11000 → 11100 → 11110 → 11111 → 01111 → 00111."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ đếm Johnson",
+   "en": "Added · Johnson counter"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu flip-flop để làm bộ đếm vòng và bộ đếm Johnson modulus 10?",
+   "en": "How many flip-flops are needed for a ring counter and for a Johnson counter of modulus 10?"
+  },
+  "opts": [
+   {
+    "vi": "vòng: 10, Johnson: 5",
+    "en": "ring: 10, Johnson: 5"
+   },
+   {
+    "vi": "vòng: 5, Johnson: 10",
+    "en": "ring: 5, Johnson: 10"
+   },
+   {
+    "vi": "vòng: 10, Johnson: 10",
+    "en": "ring: 10, Johnson: 10"
+   },
+   {
+    "vi": "vòng: 5, Johnson: 5",
+    "en": "ring: 5, Johnson: 5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vòng: modulus = số FF = 10. Johnson: modulus = 2 × số FF nên 5 FF.",
+   "en": "Ring: modulus = number of FFs = 10. Johnson: modulus = 2 × FFs so 5 FFs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số FF của bộ đếm vòng và Johnson",
+   "en": "Added · FFs in ring and Johnson counters"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu flip-flop để làm bộ đếm vòng và bộ đếm Johnson modulus 16?",
+   "en": "How many flip-flops are needed for a ring counter and for a Johnson counter of modulus 16?"
+  },
+  "opts": [
+   {
+    "vi": "vòng: 16, Johnson: 8",
+    "en": "ring: 16, Johnson: 8"
+   },
+   {
+    "vi": "vòng: 8, Johnson: 16",
+    "en": "ring: 8, Johnson: 16"
+   },
+   {
+    "vi": "vòng: 16, Johnson: 16",
+    "en": "ring: 16, Johnson: 16"
+   },
+   {
+    "vi": "vòng: 8, Johnson: 8",
+    "en": "ring: 8, Johnson: 8"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vòng: modulus = số FF = 16. Johnson: modulus = 2 × số FF nên 8 FF.",
+   "en": "Ring: modulus = number of FFs = 16. Johnson: modulus = 2 × FFs so 8 FFs."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số FF của bộ đếm vòng và Johnson",
+   "en": "Added · FFs in ring and Johnson counters"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop J-K kích sườn có Q = 0. Các cặp (J, K) trước mỗi xung clock là (1,0) ; (1,1) ; (0,0) ; (1,1). Chuỗi Q sau từng xung là:",
+   "en": "An edge-triggered J-K flip-flop starts with Q = 0. The (J, K) pairs before each clock pulse are (1,0) ; (1,1) ; (0,0) ; (1,1). The sequence of Q after each pulse is:"
+  },
+  "opts": [
+   {
+    "vi": "1,0,0,1",
+    "en": "1,0,0,1"
+   },
+   {
+    "vi": "0,1,1,0",
+    "en": "0,1,1,0"
+   },
+   {
+    "vi": "1,1,0,0",
+    "en": "1,1,0,0"
+   },
+   {
+    "vi": "0,0,0,0",
+    "en": "0,0,0,0"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dùng bảng J-K: 00 giữ, 01 xoá, 10 đặt, 11 lật. Kết quả: 1,0,0,1.",
+   "en": "Using the J-K table: 00 hold, 01 reset, 10 set, 11 toggle. Result: 1,0,0,1."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dãy trạng thái J-K",
+   "en": "Added · J-K state sequence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop J-K kích sườn có Q = 1. Các cặp (J, K) trước mỗi xung clock là (0,1) ; (1,1) ; (1,1) ; (0,0). Chuỗi Q sau từng xung là:",
+   "en": "An edge-triggered J-K flip-flop starts with Q = 1. The (J, K) pairs before each clock pulse are (0,1) ; (1,1) ; (1,1) ; (0,0). The sequence of Q after each pulse is:"
+  },
+  "opts": [
+   {
+    "vi": "0,1,0,0",
+    "en": "0,1,0,0"
+   },
+   {
+    "vi": "1,0,1,1",
+    "en": "1,0,1,1"
+   },
+   {
+    "vi": "0,0,1,0",
+    "en": "0,0,1,0"
+   },
+   {
+    "vi": "1,1,1,1",
+    "en": "1,1,1,1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dùng bảng J-K: 00 giữ, 01 xoá, 10 đặt, 11 lật. Kết quả: 0,1,0,0.",
+   "en": "Using the J-K table: 00 hold, 01 reset, 10 set, 11 toggle. Result: 0,1,0,0."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dãy trạng thái J-K",
+   "en": "Added · J-K state sequence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop J-K kích sườn có Q = 0. Các cặp (J, K) trước mỗi xung clock là (1,1) ; (1,1) ; (0,1) ; (1,0). Chuỗi Q sau từng xung là:",
+   "en": "An edge-triggered J-K flip-flop starts with Q = 0. The (J, K) pairs before each clock pulse are (1,1) ; (1,1) ; (0,1) ; (1,0). The sequence of Q after each pulse is:"
+  },
+  "opts": [
+   {
+    "vi": "1,0,0,1",
+    "en": "1,0,0,1"
+   },
+   {
+    "vi": "0,1,1,0",
+    "en": "0,1,1,0"
+   },
+   {
+    "vi": "1,1,0,0",
+    "en": "1,1,0,0"
+   },
+   {
+    "vi": "0,0,0,0",
+    "en": "0,0,0,0"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dùng bảng J-K: 00 giữ, 01 xoá, 10 đặt, 11 lật. Kết quả: 1,0,0,1.",
+   "en": "Using the J-K table: 00 hold, 01 reset, 10 set, 11 toggle. Result: 1,0,0,1."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dãy trạng thái J-K",
+   "en": "Added · J-K state sequence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Flip-flop J-K kích sườn có Q = 1. Các cặp (J, K) trước mỗi xung clock là (1,0) ; (0,0) ; (1,1). Chuỗi Q sau từng xung là:",
+   "en": "An edge-triggered J-K flip-flop starts with Q = 1. The (J, K) pairs before each clock pulse are (1,0) ; (0,0) ; (1,1). The sequence of Q after each pulse is:"
+  },
+  "opts": [
+   {
+    "vi": "1,1,0",
+    "en": "1,1,0"
+   },
+   {
+    "vi": "0,0,1",
+    "en": "0,0,1"
+   },
+   {
+    "vi": "0,1,1",
+    "en": "0,1,1"
+   },
+   {
+    "vi": "1,1,1",
+    "en": "1,1,1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dùng bảng J-K: 00 giữ, 01 xoá, 10 đặt, 11 lật. Kết quả: 1,1,0.",
+   "en": "Using the J-K table: 00 hold, 01 reset, 10 set, 11 toggle. Result: 1,1,0."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dãy trạng thái J-K",
+   "en": "Added · J-K state sequence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chốt S-R tác dụng mức CAO (hai cổng NOR) đang ở Q = 0. Đặt lần lượt (S, R) = (1,0) rồi (0,0). Trạng thái cuối là:",
+   "en": "An active-HIGH S-R latch (NOR gates) starts with Q = 0. The inputs (S, R) are applied in turn: (1,0) then (0,0). The final state is:"
+  },
+  "opts": [
+   {
+    "vi": "Q = 1, Q̅ = 0",
+    "en": "Q = 1, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 0, Q̅ = 1",
+    "en": "Q = 0, Q̅ = 1"
+   },
+   {
+    "vi": "Q = 0, Q̅ = 0",
+    "en": "Q = 0, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 1, Q̅ = 1",
+    "en": "Q = 1, Q̅ = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bước cuối giữ trạng thái do bước trước đặt: Q = 1, Q̅ = 0.",
+   "en": "The final step holds the state set by the previous one: Q = 1, Q̅ = 0."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chốt S-R NOR",
+   "en": "Added · NOR S-R latch"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chốt S-R tác dụng mức CAO (hai cổng NOR) đang ở Q = 1. Đặt lần lượt (S, R) = (0,1) rồi (0,0). Trạng thái cuối là:",
+   "en": "An active-HIGH S-R latch (NOR gates) starts with Q = 1. The inputs (S, R) are applied in turn: (0,1) then (0,0). The final state is:"
+  },
+  "opts": [
+   {
+    "vi": "Q = 0, Q̅ = 1",
+    "en": "Q = 0, Q̅ = 1"
+   },
+   {
+    "vi": "Q = 1, Q̅ = 0",
+    "en": "Q = 1, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 0, Q̅ = 0",
+    "en": "Q = 0, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 1, Q̅ = 1",
+    "en": "Q = 1, Q̅ = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bước cuối giữ trạng thái do bước trước đặt: Q = 0, Q̅ = 1.",
+   "en": "The final step holds the state set by the previous one: Q = 0, Q̅ = 1."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chốt S-R NOR",
+   "en": "Added · NOR S-R latch"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chốt S-R tác dụng mức THẤP (hai cổng NAND) đang ở Q = 0. Đặt lần lượt (S, R) = (0,1) rồi (1,1). Trạng thái cuối là:",
+   "en": "An active-LOW S-R latch (NAND gates) starts with Q = 0. The inputs (S, R) are applied in turn: (0,1) then (1,1). The final state is:"
+  },
+  "opts": [
+   {
+    "vi": "Q = 1, Q̅ = 0",
+    "en": "Q = 1, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 0, Q̅ = 1",
+    "en": "Q = 0, Q̅ = 1"
+   },
+   {
+    "vi": "Q = 0, Q̅ = 0",
+    "en": "Q = 0, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 1, Q̅ = 1",
+    "en": "Q = 1, Q̅ = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bước cuối giữ trạng thái do bước trước đặt: Q = 1, Q̅ = 0.",
+   "en": "The final step holds the state set by the previous one: Q = 1, Q̅ = 0."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chốt S-R NAND",
+   "en": "Added · NAND S-R latch"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chốt S-R tác dụng mức THẤP (hai cổng NAND) đang ở Q = 1. Đặt lần lượt (S, R) = (1,0) rồi (1,1). Trạng thái cuối là:",
+   "en": "An active-LOW S-R latch (NAND gates) starts with Q = 1. The inputs (S, R) are applied in turn: (1,0) then (1,1). The final state is:"
+  },
+  "opts": [
+   {
+    "vi": "Q = 0, Q̅ = 1",
+    "en": "Q = 0, Q̅ = 1"
+   },
+   {
+    "vi": "Q = 1, Q̅ = 0",
+    "en": "Q = 1, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 0, Q̅ = 0",
+    "en": "Q = 0, Q̅ = 0"
+   },
+   {
+    "vi": "Q = 1, Q̅ = 1",
+    "en": "Q = 1, Q̅ = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bước cuối giữ trạng thái do bước trước đặt: Q = 0, Q̅ = 1.",
+   "en": "The final step holds the state set by the previous one: Q = 0, Q̅ = 1."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chốt S-R NAND",
+   "en": "Added · NAND S-R latch"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "3 flip-flop J-K, mỗi cái có J = K = 1, mắc nối tiếp (gợn sóng). Clock 8 kHz. Tần số của ngõ ra tầng cuối là:",
+   "en": "3 J-K flip-flops, each with J = K = 1, are cascaded as a ripple chain. The clock is 8 kHz. The output frequency of the last stage is:"
+  },
+  "opts": [
+   {
+    "vi": "1 kHz",
+    "en": "1 kHz"
+   },
+   {
+    "vi": "2.667 kHz",
+    "en": "2.667 kHz"
+   },
+   {
+    "vi": "2 kHz",
+    "en": "2 kHz"
+   },
+   {
+    "vi": "1.143 kHz",
+    "en": "1.143 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi tầng chia đôi tần số nên $f/2^3$ = 1 kHz.",
+   "en": "Each stage halves the frequency so $f/2^3$ = 1 kHz."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng flip-flop lật",
+   "en": "Added · Frequency division with toggling flip-flops"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "5 flip-flop J-K, mỗi cái có J = K = 1, mắc nối tiếp (gợn sóng). Clock 640 kHz. Tần số của ngõ ra tầng cuối là:",
+   "en": "5 J-K flip-flops, each with J = K = 1, are cascaded as a ripple chain. The clock is 640 kHz. The output frequency of the last stage is:"
+  },
+  "opts": [
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "128 kHz",
+    "en": "128 kHz"
+   },
+   {
+    "vi": "40 kHz",
+    "en": "40 kHz"
+   },
+   {
+    "vi": "20.65 kHz",
+    "en": "20.65 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi tầng chia đôi tần số nên $f/2^5$ = 20 kHz.",
+   "en": "Each stage halves the frequency so $f/2^5$ = 20 kHz."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng flip-flop lật",
+   "en": "Added · Frequency division with toggling flip-flops"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "8 flip-flop J-K, mỗi cái có J = K = 1, mắc nối tiếp (gợn sóng). Clock 2.56 MHz. Tần số của ngõ ra tầng cuối là:",
+   "en": "8 J-K flip-flops, each with J = K = 1, are cascaded as a ripple chain. The clock is 2.56 MHz. The output frequency of the last stage is:"
+  },
+  "opts": [
+   {
+    "vi": "10 kHz",
+    "en": "10 kHz"
+   },
+   {
+    "vi": "320 kHz",
+    "en": "320 kHz"
+   },
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "10.04 kHz",
+    "en": "10.04 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi tầng chia đôi tần số nên $f/2^8$ = 10 kHz.",
+   "en": "Each stage halves the frequency so $f/2^8$ = 10 kHz."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng flip-flop lật",
+   "en": "Added · Frequency division with toggling flip-flops"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "10 flip-flop J-K, mỗi cái có J = K = 1, mắc nối tiếp (gợn sóng). Clock 1.024 MHz. Tần số của ngõ ra tầng cuối là:",
+   "en": "10 J-K flip-flops, each with J = K = 1, are cascaded as a ripple chain. The clock is 1.024 MHz. The output frequency of the last stage is:"
+  },
+  "opts": [
+   {
+    "vi": "1 kHz",
+    "en": "1 kHz"
+   },
+   {
+    "vi": "102.4 kHz",
+    "en": "102.4 kHz"
+   },
+   {
+    "vi": "2 kHz",
+    "en": "2 kHz"
+   },
+   {
+    "vi": "1.001 kHz",
+    "en": "1.001 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi tầng chia đôi tần số nên $f/2^10$ = 1 kHz.",
+   "en": "Each stage halves the frequency so $f/2^10$ = 1 kHz."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chia tần số bằng flip-flop lật",
+   "en": "Added · Frequency division with toggling flip-flops"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch một nhịp 74121 dùng điện trở trong 2 kΩ. Muốn xung ra rộng 10 μs ($t_W=0{,}7\\,R\\,C_{EXT}$) cần tụ ngoài xấp xỉ:",
+   "en": "A 74121 one-shot uses its internal 2 kΩ resistor. For an output pulse 10 μs wide ($t_W=0.7\\,R\\,C_{EXT}$) the external capacitor must be about:"
+  },
+  "opts": [
+   {
+    "vi": "7.143 nF",
+    "en": "7.143 nF"
+   },
+   {
+    "vi": "5 nF",
+    "en": "5 nF"
+   },
+   {
+    "vi": "10.2 nF",
+    "en": "10.2 nF"
+   },
+   {
+    "vi": "14.29 nF",
+    "en": "14.29 nF"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$C=t_W/(0{,}7R)=10 μs/(0{,}7\\times 2\\text{ k}\\Omega)$ = 7.143 nF.",
+   "en": "$C=t_W/(0.7R)=10 μs/(0.7\\times 2\\text{ k}\\Omega)$ = 7.143 nF."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tụ cho 74121",
+   "en": "Added · Capacitor for a 74121"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch một nhịp 74121 dùng điện trở trong 2 kΩ. Muốn xung ra rộng 20 μs ($t_W=0{,}7\\,R\\,C_{EXT}$) cần tụ ngoài xấp xỉ:",
+   "en": "A 74121 one-shot uses its internal 2 kΩ resistor. For an output pulse 20 μs wide ($t_W=0.7\\,R\\,C_{EXT}$) the external capacitor must be about:"
+  },
+  "opts": [
+   {
+    "vi": "14.29 nF",
+    "en": "14.29 nF"
+   },
+   {
+    "vi": "10 nF",
+    "en": "10 nF"
+   },
+   {
+    "vi": "20.41 nF",
+    "en": "20.41 nF"
+   },
+   {
+    "vi": "28.57 nF",
+    "en": "28.57 nF"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$C=t_W/(0{,}7R)=20 μs/(0{,}7\\times 2\\text{ k}\\Omega)$ = 14.29 nF.",
+   "en": "$C=t_W/(0.7R)=20 μs/(0.7\\times 2\\text{ k}\\Omega)$ = 14.29 nF."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tụ cho 74121",
+   "en": "Added · Capacitor for a 74121"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch một nhịp 74121 dùng điện trở trong 2 kΩ. Muốn xung ra rộng 5 μs ($t_W=0{,}7\\,R\\,C_{EXT}$) cần tụ ngoài xấp xỉ:",
+   "en": "A 74121 one-shot uses its internal 2 kΩ resistor. For an output pulse 5 μs wide ($t_W=0.7\\,R\\,C_{EXT}$) the external capacitor must be about:"
+  },
+  "opts": [
+   {
+    "vi": "3.571 nF",
+    "en": "3.571 nF"
+   },
+   {
+    "vi": "2.5 nF",
+    "en": "2.5 nF"
+   },
+   {
+    "vi": "5.102 nF",
+    "en": "5.102 nF"
+   },
+   {
+    "vi": "7.143 nF",
+    "en": "7.143 nF"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$C=t_W/(0{,}7R)=5 μs/(0{,}7\\times 2\\text{ k}\\Omega)$ = 3.571 nF.",
+   "en": "$C=t_W/(0.7R)=5 μs/(0.7\\times 2\\text{ k}\\Omega)$ = 3.571 nF."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tụ cho 74121",
+   "en": "Added · Capacitor for a 74121"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 ở chế độ một nhịp có R = 10 kΩ và C = 1 μF. Độ rộng xung ra ($t_W=1{,}1RC$) là:",
+   "en": "A 555 timer in monostable mode has R = 10 kΩ and C = 1 μF. The output pulse width ($t_W=1.1RC$) is:"
+  },
+  "opts": [
+   {
+    "vi": "11 ms",
+    "en": "11 ms"
+   },
+   {
+    "vi": "7 ms",
+    "en": "7 ms"
+   },
+   {
+    "vi": "10 ms",
+    "en": "10 ms"
+   },
+   {
+    "vi": "22 ms",
+    "en": "22 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W=1{,}1RC$ = 11 ms.",
+   "en": "$t_W=1.1RC$ = 11 ms."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 một nhịp",
+   "en": "Added · 555 monostable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 ở chế độ một nhịp có R = 47 kΩ và C = 0.1 μF. Độ rộng xung ra ($t_W=1{,}1RC$) là:",
+   "en": "A 555 timer in monostable mode has R = 47 kΩ and C = 0.1 μF. The output pulse width ($t_W=1.1RC$) is:"
+  },
+  "opts": [
+   {
+    "vi": "5.17 ms",
+    "en": "5.17 ms"
+   },
+   {
+    "vi": "3.29 ms",
+    "en": "3.29 ms"
+   },
+   {
+    "vi": "4.7 ms",
+    "en": "4.7 ms"
+   },
+   {
+    "vi": "10.34 ms",
+    "en": "10.34 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W=1{,}1RC$ = 5.17 ms.",
+   "en": "$t_W=1.1RC$ = 5.17 ms."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 một nhịp",
+   "en": "Added · 555 monostable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 ở chế độ một nhịp có R = 100 kΩ và C = 10 nF. Độ rộng xung ra ($t_W=1{,}1RC$) là:",
+   "en": "A 555 timer in monostable mode has R = 100 kΩ and C = 10 nF. The output pulse width ($t_W=1.1RC$) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.1 ms",
+    "en": "1.1 ms"
+   },
+   {
+    "vi": "700 μs",
+    "en": "700 μs"
+   },
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   },
+   {
+    "vi": "2.2 ms",
+    "en": "2.2 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W=1{,}1RC$ = 1.1 ms.",
+   "en": "$t_W=1.1RC$ = 1.1 ms."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 một nhịp",
+   "en": "Added · 555 monostable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF. Tần số ngõ ra $f=1{,}44/((R_1+2R_2)C)$ xấp xỉ:",
+   "en": "A 555 astable has R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF. The output frequency $f=1.44/((R_1+2R_2)C)$ is about:"
+  },
+  "opts": [
+   {
+    "vi": "2.857 kHz",
+    "en": "2.857 kHz"
+   },
+   {
+    "vi": "4.8 kHz",
+    "en": "4.8 kHz"
+   },
+   {
+    "vi": "7.2 kHz",
+    "en": "7.2 kHz"
+   },
+   {
+    "vi": "2 kHz",
+    "en": "2 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=0{,}7(R_1+2R_2)C$ = 350 μs nên $f$ = 2.857 kHz.",
+   "en": "$T=0.7(R_1+2R_2)C$ = 350 μs so $f$ = 2.857 kHz."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: tần số",
+   "en": "Added · 555 astable: frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF. Chu kỳ làm việc (duty cycle) của ngõ ra là:",
+   "en": "A 555 astable has R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF. The duty cycle of the output is:"
+  },
+  "opts": [
+   {
+    "vi": "60 %",
+    "en": "60 %"
+   },
+   {
+    "vi": "40 %",
+    "en": "40 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "20 %",
+    "en": "20 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 60 %: lớn hơn 50 % vì tụ nạp qua R1 + R2 nhưng xả chỉ qua R2.",
+   "en": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 60 %: above 50 % because C charges through R1 + R2 but discharges only through R2."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: chu kỳ làm việc",
+   "en": "Added · 555 astable: duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 10 kΩ, R2 = 10 kΩ, C = 10 nF. Tần số ngõ ra $f=1{,}44/((R_1+2R_2)C)$ xấp xỉ:",
+   "en": "A 555 astable has R1 = 10 kΩ, R2 = 10 kΩ, C = 10 nF. The output frequency $f=1.44/((R_1+2R_2)C)$ is about:"
+  },
+  "opts": [
+   {
+    "vi": "4.762 kHz",
+    "en": "4.762 kHz"
+   },
+   {
+    "vi": "7.2 kHz",
+    "en": "7.2 kHz"
+   },
+   {
+    "vi": "14.4 kHz",
+    "en": "14.4 kHz"
+   },
+   {
+    "vi": "3.333 kHz",
+    "en": "3.333 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=0{,}7(R_1+2R_2)C$ = 210 μs nên $f$ = 4.762 kHz.",
+   "en": "$T=0.7(R_1+2R_2)C$ = 210 μs so $f$ = 4.762 kHz."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: tần số",
+   "en": "Added · 555 astable: frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 10 kΩ, R2 = 10 kΩ, C = 10 nF. Chu kỳ làm việc (duty cycle) của ngõ ra là:",
+   "en": "A 555 astable has R1 = 10 kΩ, R2 = 10 kΩ, C = 10 nF. The duty cycle of the output is:"
+  },
+  "opts": [
+   {
+    "vi": "66.7 %",
+    "en": "66.7 %"
+   },
+   {
+    "vi": "33.3 %",
+    "en": "33.3 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 66.7 %: lớn hơn 50 % vì tụ nạp qua R1 + R2 nhưng xả chỉ qua R2.",
+   "en": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 66.7 %: above 50 % because C charges through R1 + R2 but discharges only through R2."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: chu kỳ làm việc",
+   "en": "Added · 555 astable: duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 4.7 kΩ, R2 = 47 kΩ, C = 1 μF. Tần số ngõ ra $f=1{,}44/((R_1+2R_2)C)$ xấp xỉ:",
+   "en": "A 555 astable has R1 = 4.7 kΩ, R2 = 47 kΩ, C = 1 μF. The output frequency $f=1.44/((R_1+2R_2)C)$ is about:"
+  },
+  "opts": [
+   {
+    "vi": "14.47 Hz",
+    "en": "14.47 Hz"
+   },
+   {
+    "vi": "27.85 Hz",
+    "en": "27.85 Hz"
+   },
+   {
+    "vi": "30.64 Hz",
+    "en": "30.64 Hz"
+   },
+   {
+    "vi": "10.13 Hz",
+    "en": "10.13 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=0{,}7(R_1+2R_2)C$ = 69.09 ms nên $f$ = 14.47 Hz.",
+   "en": "$T=0.7(R_1+2R_2)C$ = 69.09 ms so $f$ = 14.47 Hz."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: tần số",
+   "en": "Added · 555 astable: frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 4.7 kΩ, R2 = 47 kΩ, C = 1 μF. Chu kỳ làm việc (duty cycle) của ngõ ra là:",
+   "en": "A 555 astable has R1 = 4.7 kΩ, R2 = 47 kΩ, C = 1 μF. The duty cycle of the output is:"
+  },
+  "opts": [
+   {
+    "vi": "52.4 %",
+    "en": "52.4 %"
+   },
+   {
+    "vi": "47.6 %",
+    "en": "47.6 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "4.76 %",
+    "en": "4.76 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 52.4 %: lớn hơn 50 % vì tụ nạp qua R1 + R2 nhưng xả chỉ qua R2.",
+   "en": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 52.4 %: above 50 % because C charges through R1 + R2 but discharges only through R2."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: chu kỳ làm việc",
+   "en": "Added · 555 astable: duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 2.2 kΩ, R2 = 6.8 kΩ, C = 0.1 μF. Tần số ngõ ra $f=1{,}44/((R_1+2R_2)C)$ xấp xỉ:",
+   "en": "A 555 astable has R1 = 2.2 kΩ, R2 = 6.8 kΩ, C = 0.1 μF. The output frequency $f=1.44/((R_1+2R_2)C)$ is about:"
+  },
+  "opts": [
+   {
+    "vi": "904.2 Hz",
+    "en": "904.2 Hz"
+   },
+   {
+    "vi": "1.6 kHz",
+    "en": "1.6 kHz"
+   },
+   {
+    "vi": "2.118 kHz",
+    "en": "2.118 kHz"
+   },
+   {
+    "vi": "632.9 Hz",
+    "en": "632.9 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=0{,}7(R_1+2R_2)C$ = 1.106 ms nên $f$ = 904.2 Hz.",
+   "en": "$T=0.7(R_1+2R_2)C$ = 1.106 ms so $f$ = 904.2 Hz."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: tần số",
+   "en": "Added · 555 astable: frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ định thời 555 mạch dao động có R1 = 2.2 kΩ, R2 = 6.8 kΩ, C = 0.1 μF. Chu kỳ làm việc (duty cycle) của ngõ ra là:",
+   "en": "A 555 astable has R1 = 2.2 kΩ, R2 = 6.8 kΩ, C = 0.1 μF. The duty cycle of the output is:"
+  },
+  "opts": [
+   {
+    "vi": "57 %",
+    "en": "57 %"
+   },
+   {
+    "vi": "43 %",
+    "en": "43 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "13.9 %",
+    "en": "13.9 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 57 %: lớn hơn 50 % vì tụ nạp qua R1 + R2 nhưng xả chỉ qua R2.",
+   "en": "duty = $(R_1+R_2)/(R_1+2R_2)$ = 57 %: above 50 % because C charges through R1 + R2 but discharges only through R2."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · 555 dao động: chu kỳ làm việc",
+   "en": "Added · 555 astable: duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bảng tra (LUT) có 3 ngõ vào lưu bao nhiêu bit, và có thể thực hiện bao nhiêu hàm logic khác nhau của 3 biến?",
+   "en": "A 3-input look-up table (LUT) stores how many bits, and can implement how many different logic functions of 3 variables?"
+  },
+  "opts": [
+   {
+    "vi": "8 bit; 256 hàm",
+    "en": "8 bits; 256 functions"
+   },
+   {
+    "vi": "3 bit; 8 hàm",
+    "en": "3 bits; 8 functions"
+   },
+   {
+    "vi": "8 bit; 8 hàm",
+    "en": "8 bits; 8 functions"
+   },
+   {
+    "vi": "7 bit; 128 hàm",
+    "en": "7 bits; 128 functions"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một ô cho mỗi tổ hợp ngõ vào: $2^3=8$ bit; mỗi bit chọn tự do 0 hoặc 1 nên có $2^{2^3}=256$ hàm.",
+   "en": "One cell per input combination: $2^3=8$ bits; each bit is free to be 0 or 1 so there are $2^{2^3}=256$ functions."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · LUT",
+   "en": "Added · LUT"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bảng tra (LUT) có 4 ngõ vào lưu bao nhiêu bit, và có thể thực hiện bao nhiêu hàm logic khác nhau của 4 biến?",
+   "en": "A 4-input look-up table (LUT) stores how many bits, and can implement how many different logic functions of 4 variables?"
+  },
+  "opts": [
+   {
+    "vi": "16 bit; 65536 hàm",
+    "en": "16 bits; 65536 functions"
+   },
+   {
+    "vi": "4 bit; 16 hàm",
+    "en": "4 bits; 16 functions"
+   },
+   {
+    "vi": "16 bit; 16 hàm",
+    "en": "16 bits; 16 functions"
+   },
+   {
+    "vi": "15 bit; 32768 hàm",
+    "en": "15 bits; 32768 functions"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một ô cho mỗi tổ hợp ngõ vào: $2^4=16$ bit; mỗi bit chọn tự do 0 hoặc 1 nên có $2^{2^4}=65536$ hàm.",
+   "en": "One cell per input combination: $2^4=16$ bits; each bit is free to be 0 or 1 so there are $2^{2^4}=65536$ functions."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · LUT",
+   "en": "Added · LUT"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bảng tra (LUT) có 5 ngõ vào lưu bao nhiêu bit, và có thể thực hiện bao nhiêu hàm logic khác nhau của 5 biến?",
+   "en": "A 5-input look-up table (LUT) stores how many bits, and can implement how many different logic functions of 5 variables?"
+  },
+  "opts": [
+   {
+    "vi": "32 bit; 4294967296 hàm",
+    "en": "32 bits; 4294967296 functions"
+   },
+   {
+    "vi": "5 bit; 32 hàm",
+    "en": "5 bits; 32 functions"
+   },
+   {
+    "vi": "32 bit; 32 hàm",
+    "en": "32 bits; 32 functions"
+   },
+   {
+    "vi": "31 bit; 2147483648 hàm",
+    "en": "31 bits; 2147483648 functions"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một ô cho mỗi tổ hợp ngõ vào: $2^5=32$ bit; mỗi bit chọn tự do 0 hoặc 1 nên có $2^{2^5}=4294967296$ hàm.",
+   "en": "One cell per input combination: $2^5=32$ bits; each bit is free to be 0 or 1 so there are $2^{2^5}=4294967296$ functions."
+  },
+  "topic": {
+   "vi": "Logic khả trình (PLD)",
+   "en": "Programmable logic (PLD)"
+  },
+  "topic_id": "pld",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · LUT",
+   "en": "Added · LUT"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 4 bit được cắt cụt thành modulus 10 bằng cách reset không đồng bộ. Trạng thái nào phải được giải mã để kích reset?",
+   "en": "A 4-bit ripple counter is truncated to modulus 10 with an asynchronous reset. Which state must be decoded to trigger the reset?"
+  },
+  "opts": [
+   {
+    "vi": "1010",
+    "en": "1010"
+   },
+   {
+    "vi": "1001",
+    "en": "1001"
+   },
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ đếm phải đếm 0 đến 9; khi đạt 10 = 1010 nó bị reset ngay về 0000, nên trạng thái 1010 chỉ tồn tại thoáng qua.",
+   "en": "The counter must count 0 to 9; on reaching 10 = 1010 it is reset to 0000 at once, so 1010 exists only for an instant."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Cắt cụt về modulus 10",
+   "en": "Added · Truncating to modulus 10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 4 bit được cắt cụt thành modulus 12 bằng cách reset không đồng bộ. Trạng thái nào phải được giải mã để kích reset?",
+   "en": "A 4-bit ripple counter is truncated to modulus 12 with an asynchronous reset. Which state must be decoded to trigger the reset?"
+  },
+  "opts": [
+   {
+    "vi": "1100",
+    "en": "1100"
+   },
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ đếm phải đếm 0 đến 11; khi đạt 12 = 1100 nó bị reset ngay về 0000, nên trạng thái 1100 chỉ tồn tại thoáng qua.",
+   "en": "The counter must count 0 to 11; on reaching 12 = 1100 it is reset to 0000 at once, so 1100 exists only for an instant."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Cắt cụt về modulus 12",
+   "en": "Added · Truncating to modulus 12"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm gợn sóng 4 bit được cắt cụt thành modulus 6 bằng cách reset không đồng bộ. Trạng thái nào phải được giải mã để kích reset?",
+   "en": "A 4-bit ripple counter is truncated to modulus 6 with an asynchronous reset. Which state must be decoded to trigger the reset?"
+  },
+  "opts": [
+   {
+    "vi": "0110",
+    "en": "0110"
+   },
+   {
+    "vi": "0101",
+    "en": "0101"
+   },
+   {
+    "vi": "0111",
+    "en": "0111"
+   },
+   {
+    "vi": "1111",
+    "en": "1111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ đếm phải đếm 0 đến 5; khi đạt 6 = 0110 nó bị reset ngay về 0000, nên trạng thái 0110 chỉ tồn tại thoáng qua.",
+   "en": "The counter must count 0 to 5; on reaching 6 = 0110 it is reset to 0000 at once, so 0110 exists only for an instant."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Cắt cụt về modulus 6",
+   "en": "Added · Truncating to modulus 6"
+  }
+ }
+]

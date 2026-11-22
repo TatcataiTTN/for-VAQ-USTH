@@ -1,0 +1,68 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Máy bay của bạn bay với tốc độ 240 kt, máy bay lạ bay ngược chiều trên cùng đường với tốc độ 240 kt, hiện cách 8 NM. (a) Tốc độ tiếp cận? (b) Thời gian tới điểm tiếp cận gần nhất? (c) Dữ liệu nào TCAS không cần để tính cảnh báo này? (d) Nếu TCAS đưa RA, phi công phải làm gì?",
+   "en": "Your aircraft flies at 240 kt and an intruder flies head-on along the same track at 240 kt, now 8 NM away. (a) The closure rate? (b) The time to the closest point of approach? (c) Which data does TCAS not need to compute this alert? (d) If TCAS issues an RA, what must the pilot do?"
+  },
+  "sol": {
+   "vi": "(a) 240 + 240 = 480 kt. (b) $\\tau=8/480$ h = 60 s. (c) Không cần phương vị hay hướng bay, chỉ cần khoảng cách và tốc độ tiếp cận (Tooley 15.8). (d) Tắt lái tự động, bay lệnh cao độ bằng tay, bỏ qua flight director và khuyến cáo ATC nếu cần; lệnh RA có ưu tiên cao nhất.",
+   "en": "(a) 240 + 240 = 480 kt. (b) $\\tau=8/480$ h = 60 s. (c) Neither bearing nor heading is needed, only distance and closure rate (Tooley 15.8). (d) Disengage the autopilot, fly the pitch command manually, and ignore flight-director and ATC advisories if necessary; the RA has the highest priority."
+  },
+  "topic": {
+   "vi": "Cảnh báo va chạm TCAS",
+   "en": "TCAS collision avoidance"
+  },
+  "topic_id": "tcas",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tính toán TCAS",
+   "en": "Added · TCAS calculation"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một máy bay có gia tốc kế đo 1,5 m/s² dọc đường bay trong 40 s từ trạng thái nghỉ. (a) Vận tốc? (b) Quãng đường? (c) Nếu dữ liệu gia tốc có sai số hằng 0,01 m/s², sai số vận tốc và quãng đường sau 40 s là bao nhiêu? (d) Vì sao điều này giải thích nhu cầu khởi tạo chính xác và dùng GPS để bổ trợ?",
+   "en": "An accelerometer along the track reads 1.5 m/s² for 40 s from rest. (a) The velocity? (b) The distance? (c) If the acceleration data has a constant error of 0.01 m/s², what are the velocity and distance errors after 40 s? (d) Why does this explain the need for accurate initialisation and GPS aiding?"
+  },
+  "sol": {
+   "vi": "(a) $v=at=60$ m/s. (b) $s=\\tfrac12at^2=1200$ m. (c) Sai số vận tốc $0{,}01\\times40=0.4$ m/s; sai số quãng đường $\\tfrac12\\times0{,}01\\times40^2=8$ m, và tăng theo $t^2$. (d) Sai số tích luỹ theo thời gian, nên mốc ban đầu phải chính xác (Tooley 15.7); GPS cung cấp thông tin bổ sung (không bắt buộc về vận hành).",
+   "en": "(a) $v=at=60$ m/s. (b) $s=\\tfrac12at^2=1200$ m. (c) Velocity error $0.01\\times40=0.4$ m/s; distance error $\\tfrac12\\times0.01\\times40^2=8$ m, growing with $t^2$. (d) Errors accumulate with time, so the initial datum must be accurate (Tooley 15.7); GPS supplies additional information (not operationally necessary)."
+  },
+  "topic": {
+   "vi": "Hệ quán tính (IRS/INS)",
+   "en": "Inertial reference system (IRS/INS)"
+  },
+  "topic_id": "irs",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Sai số tích phân IRS",
+   "en": "Added · IRS integration error"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "GPS: (a) Đổi độ cao quỹ đạo 20 200 km sang hải lý. (b) Tính chu kỳ quỹ đạo tròn ở độ cao đó (bán kính Trái Đất 6 371 km, $\\mu=3{,}986\\times10^{14}$ m³/s²) và so với 12 giờ của Tooley. (c) Mã C/A 1,023 MHz lặp mỗi 1 ms gồm bao nhiêu chip? (d) Nêu ba đoạn của GPS.",
+   "en": "GPS: (a) Convert the orbit height of 20,200 km to nautical miles. (b) Compute the period of a circular orbit at that height (Earth radius 6,371 km, $\\mu=3.986\\times10^{14}$ m³/s²) and compare it with Tooley's 12 hours. (c) How many chips does the 1.023 MHz C/A code, repeating every 1 ms, contain? (d) Name the three GPS segments."
+  },
+  "sol": {
+   "vi": "(a) 20 200 / 1,852 = 10,907 NM (Tooley làm tròn 10 900). (b) $r=26571$ km; $T=2\\pi\\sqrt{r^3/\\mu}$ = 43,105 s = 11.97 giờ ≈ 12 giờ: khớp. (c) $1{,}023\\times10^6\\times10^{-3}$ = 1 023 chip. (d) Không gian, người dùng, điều khiển.",
+   "en": "(a) 20,200 / 1.852 = 10,907 NM (Tooley rounds to 10,900). (b) $r=26571$ km; $T=2\\pi\\sqrt{r^3/\\mu}$ = 43,105 s = 11.97 hours ≈ 12 hours: it agrees. (c) $1.023\\times10^6\\times10^{-3}$ = 1,023 chips. (d) Space, user and control."
+  },
+  "topic": {
+   "vi": "Hệ thống định vị toàn cầu (GPS)",
+   "en": "Global positioning system (GPS)"
+  },
+  "topic_id": "gps",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tính toán GPS",
+   "en": "Added · GPS calculation"
+  }
+ }
+]

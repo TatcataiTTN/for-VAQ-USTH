@@ -3,7 +3,7 @@ Validates every item, balances correct-answer position where allowed, runs the b
 Run:  python3 build/assemble.py"""
 import json, os, sys, random, collections, re, math, hashlib
 sys.path.insert(0, os.path.dirname(__file__))
-from modules import MODS
+from modules import MODS, EXTRA
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 SRC = os.path.join(ROOT, 'data', 'qsrc'); OUT = os.path.join(ROOT, 'data', 'qbank')
 KINDS = {'mcq', 'tf', 'ca', 'ess'}
@@ -100,7 +100,7 @@ def main():
     only = set(filter(None, os.environ.get('ONLY', '').split(',')))
     prev = json.load(open(os.path.join(OUT, '_audit.json'))) if os.path.exists(os.path.join(OUT, '_audit.json')) else {}
     full.update(prev)
-    for m in MODS:
+    for m in MODS + EXTRA:
         mid = m['id']; items = []
         if only and mid not in only: continue
         import glob

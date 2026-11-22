@@ -1,0 +1,16 @@
+{
+ "vi": [
+  "Tooley Chương 15 câu 4: khoá in (b) \"nạp thông tin khối lượng\"; phương án (a) \"cập nhật mỗi tháng một lần\" cũng gần đúng với chu kỳ 28 ngày (13 chu kỳ mỗi năm). Site giữ khoá in.",
+  "Tooley 15.6.1: \"đồng hồ nguyên tử chính xác trong 0,1 s mỗi 10 000 năm\" và \"24 vệ tinh, 6 quỹ đạo, cao 20 200 km, chu kỳ 12 giờ\": đã kiểm trên ảnh trang 252; chu kỳ 12 giờ khớp định luật Kepler (11,97 giờ). Con số đồng hồ nguyên tử lấy nguyên văn từ sách, chưa kiểm độc lập.",
+  "Tooley 15.8 nói TCAS IV/ACAS III \"sẽ\" có cảnh báo góc: nhận định về tương lai tại thời điểm viết sách, không phải mô tả hệ đang bay.",
+  "Lớp chữ OCR của Tooley 15.4 đến 15.10 bị nhiễu ở cuối dòng (ký tự cuối bị cắt); các số liệu và tên trong module đã đối chiếu với ảnh trang 252 và 253 và với văn bản OCR của các trang còn lại.",
+  "40 trong 52 câu bổ sung của module là câu văn bản dựa trên Tooley 15.4 đến 15.10 và chỉ kiểm bằng cách đối chiếu thủ công với văn bản; 12 câu số được tính lại độc lập (verify_m12.py)."
+ ],
+ "en": [
+  "Tooley Chapter 15 Q4: printed key (b) \"fed with weight information\"; option (a) \"updated once a month\" is also nearly right given the 28-day cycle (13 cycles a year). The site keeps the printed key.",
+  "Tooley 15.6.1: \"atomic clocks accurate to 0.1 s in 10,000 years\" and \"24 satellites, 6 orbits, 20,200 km, 12-hour period\": checked on page image 252; the 12-hour period agrees with Kepler's law (11.97 hours). The atomic-clock figure is quoted from the book and not checked independently.",
+  "Tooley 15.8 says TCAS IV/ACAS III \"will\" give angular warnings: a forward-looking remark at the time of writing, not a description of the fielded system.",
+  "The OCR text of Tooley 15.4 to 15.10 is noisy at line ends (last characters cut); the numbers and names in the module were checked against page images 252 and 253 and against the OCR text of the other pages.",
+  "40 of the module's 52 added questions are text questions based on Tooley 15.4 to 15.10 and were checked only by manual comparison with the text; 12 numeric questions were recomputed independently (verify_m12.py)."
+ ]
+}

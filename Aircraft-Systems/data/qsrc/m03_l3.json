@@ -1,0 +1,474 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ cộng song song 4 bit cộng A = 1011, B = 0110 với nhớ vào Cin = 1. Tổng 4 bit và nhớ ra Cout là:",
+   "en": "A 4-bit parallel adder adds A = 1011, B = 0110 with carry-in Cin = 1. The 4-bit sum and the carry-out Cout are:"
+  },
+  "opts": [
+   {
+    "vi": "0010, Cout = 1",
+    "en": "0010, Cout = 1"
+   },
+   {
+    "vi": "0010, Cout = 0",
+    "en": "0010, Cout = 0"
+   },
+   {
+    "vi": "0001, Cout = 1",
+    "en": "0001, Cout = 1"
+   },
+   {
+    "vi": "0011, Cout = 1",
+    "en": "0011, Cout = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "11 + 6 + 1 = 18 = 10010: tổng 0010, Cout 1.",
+   "en": "11 + 6 + 1 = 18 = 10010: sum 0010, Cout 1."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ cộng 4 bit",
+   "en": "Added · Level 3: 4-bit adder"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ cộng song song 4 bit cộng A = 1111, B = 0001 với nhớ vào Cin = 0. Tổng 4 bit và nhớ ra Cout là:",
+   "en": "A 4-bit parallel adder adds A = 1111, B = 0001 with carry-in Cin = 0. The 4-bit sum and the carry-out Cout are:"
+  },
+  "opts": [
+   {
+    "vi": "0000, Cout = 1",
+    "en": "0000, Cout = 1"
+   },
+   {
+    "vi": "0000, Cout = 0",
+    "en": "0000, Cout = 0"
+   },
+   {
+    "vi": "0001, Cout = 1",
+    "en": "0001, Cout = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "15 + 1 + 0 = 16 = 10000: tổng 0000, Cout 1.",
+   "en": "15 + 1 + 0 = 16 = 10000: sum 0000, Cout 1."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ cộng 4 bit",
+   "en": "Added · Level 3: 4-bit adder"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ cộng song song 4 bit cộng A = 0111, B = 1001 với nhớ vào Cin = 1. Tổng 4 bit và nhớ ra Cout là:",
+   "en": "A 4-bit parallel adder adds A = 0111, B = 1001 with carry-in Cin = 1. The 4-bit sum and the carry-out Cout are:"
+  },
+  "opts": [
+   {
+    "vi": "0001, Cout = 1",
+    "en": "0001, Cout = 1"
+   },
+   {
+    "vi": "0001, Cout = 0",
+    "en": "0001, Cout = 0"
+   },
+   {
+    "vi": "0000, Cout = 1",
+    "en": "0000, Cout = 1"
+   },
+   {
+    "vi": "0010, Cout = 1",
+    "en": "0010, Cout = 1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "7 + 9 + 1 = 17 = 10001: tổng 0001, Cout 1.",
+   "en": "7 + 9 + 1 = 17 = 10001: sum 0001, Cout 1."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ cộng 4 bit",
+   "en": "Added · Level 3: 4-bit adder"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ dồn kênh 8 sang 1 có các ngõ vào dữ liệu D0 đến D7 = 10010110 (D0 ngoài cùng bên trái) và đường chọn CBA = 101 (C là MSB). Ngõ ra là:",
+   "en": "An 8-to-1 multiplexer has data inputs D0 to D7 = 10010110 (D0 at the far left) and select lines CBA = 101 (C is the MSB). The output is:"
+  },
+  "opts": [
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "Z",
+    "en": "Z"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "CBA = 101 chọn D5 = 1.",
+   "en": "CBA = 101 selects D5 = 1."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Chọn kênh của MUX 8:1",
+   "en": "Added · Level 3: Channel select of an 8:1 MUX"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ dồn kênh 8 sang 1 có các ngõ vào dữ liệu D0 đến D7 = 01101001 (D0 ngoài cùng bên trái) và đường chọn CBA = 010 (C là MSB). Ngõ ra là:",
+   "en": "An 8-to-1 multiplexer has data inputs D0 to D7 = 01101001 (D0 at the far left) and select lines CBA = 010 (C is the MSB). The output is:"
+  },
+  "opts": [
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "Z",
+    "en": "Z"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "CBA = 010 chọn D2 = 1.",
+   "en": "CBA = 010 selects D2 = 1."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Chọn kênh của MUX 8:1",
+   "en": "Added · Level 3: Channel select of an 8:1 MUX"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ dồn kênh 8 sang 1 có các ngõ vào dữ liệu D0 đến D7 = 11000101 (D0 ngoài cùng bên trái) và đường chọn CBA = 111 (C là MSB). Ngõ ra là:",
+   "en": "An 8-to-1 multiplexer has data inputs D0 to D7 = 11000101 (D0 at the far left) and select lines CBA = 111 (C is the MSB). The output is:"
+  },
+  "opts": [
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "Z",
+    "en": "Z"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "CBA = 111 chọn D7 = 1.",
+   "en": "CBA = 111 selects D7 = 1."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Chọn kênh của MUX 8:1",
+   "en": "Added · Level 3: Channel select of an 8:1 MUX"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu bộ dồn kênh 4 sang 1 (ghép dạng cây) để xây một bộ dồn kênh 16 sang 1?",
+   "en": "How many 4-to-1 multiplexers (arranged as a tree) are needed to build a 16-to-1 multiplexer?"
+  },
+  "opts": [
+   {
+    "vi": "5",
+    "en": "5"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "6",
+    "en": "6"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "16 → 4 → 1: tổng 5 bộ.",
+   "en": "16 → 4 → 1: 5 multiplexers in all."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Ghép MUX dạng cây",
+   "en": "Added · Level 3: MUX trees"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu bộ dồn kênh 4 sang 1 (ghép dạng cây) để xây một bộ dồn kênh 32 sang 1?",
+   "en": "How many 4-to-1 multiplexers (arranged as a tree) are needed to build a 32-to-1 multiplexer?"
+  },
+  "opts": [
+   {
+    "vi": "11",
+    "en": "11"
+   },
+   {
+    "vi": "10",
+    "en": "10"
+   },
+   {
+    "vi": "12",
+    "en": "12"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "32 → 8 → 2 → 1: tổng 11 bộ.",
+   "en": "32 → 8 → 2 → 1: 11 multiplexers in all."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Ghép MUX dạng cây",
+   "en": "Added · Level 3: MUX trees"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu bộ dồn kênh 4 sang 1 (ghép dạng cây) để xây một bộ dồn kênh 64 sang 1?",
+   "en": "How many 4-to-1 multiplexers (arranged as a tree) are needed to build a 64-to-1 multiplexer?"
+  },
+  "opts": [
+   {
+    "vi": "21",
+    "en": "21"
+   },
+   {
+    "vi": "20",
+    "en": "20"
+   },
+   {
+    "vi": "22",
+    "en": "22"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "64 → 16 → 4 → 1: tổng 21 bộ.",
+   "en": "64 → 16 → 4 → 1: 21 multiplexers in all."
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Ghép MUX dạng cây",
+   "en": "Added · Level 3: MUX trees"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ so sánh 4 bit nhận A = 1011 và B = 1100. Ngõ ra đang ở mức tích cực là:",
+   "en": "A 4-bit comparator receives A = 1011 and B = 1100. The active output is:"
+  },
+  "opts": [
+   {
+    "vi": "A < B",
+    "en": "A < B"
+   },
+   {
+    "vi": "A = B",
+    "en": "A = B"
+   },
+   {
+    "vi": "A > B",
+    "en": "A > B"
+   },
+   {
+    "vi": "A ≠ B và A = B",
+    "en": "A ≠ B và A = B"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "11 < 12 (so từ MSB).",
+   "en": "11 < 12 (compared from the MSB)."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ so sánh 4 bit",
+   "en": "Added · Level 3: 4-bit comparator"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ so sánh 4 bit nhận A = 0101 và B = 0101. Ngõ ra đang ở mức tích cực là:",
+   "en": "A 4-bit comparator receives A = 0101 and B = 0101. The active output is:"
+  },
+  "opts": [
+   {
+    "vi": "A = B",
+    "en": "A = B"
+   },
+   {
+    "vi": "A < B",
+    "en": "A < B"
+   },
+   {
+    "vi": "A > B",
+    "en": "A > B"
+   },
+   {
+    "vi": "A ≠ B và A = B",
+    "en": "A ≠ B và A = B"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "5 = 5 (so từ MSB).",
+   "en": "5 = 5 (compared from the MSB)."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ so sánh 4 bit",
+   "en": "Added · Level 3: 4-bit comparator"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ so sánh 4 bit nhận A = 1110 và B = 0111. Ngõ ra đang ở mức tích cực là:",
+   "en": "A 4-bit comparator receives A = 1110 and B = 0111. The active output is:"
+  },
+  "opts": [
+   {
+    "vi": "A > B",
+    "en": "A > B"
+   },
+   {
+    "vi": "A < B",
+    "en": "A < B"
+   },
+   {
+    "vi": "A = B",
+    "en": "A = B"
+   },
+   {
+    "vi": "A ≠ B và A = B",
+    "en": "A ≠ B và A = B"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "14 > 7 (so từ MSB).",
+   "en": "14 > 7 (compared from the MSB)."
+  },
+  "topic": {
+   "vi": "Bộ cộng, so sánh, parity",
+   "en": "Adders, comparators, parity"
+  },
+  "topic_id": "adder",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Bộ so sánh 4 bit",
+   "en": "Added · Level 3: 4-bit comparator"
+  }
+ }
+]

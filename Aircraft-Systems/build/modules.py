@@ -65,19 +65,33 @@ MODS = [
     dict(id='m10', slug='10-data-conversion', vi='Chuyển đổi dữ liệu A/D và D/A', en='Data conversion: A/D and D/A', co=['CO4'], clo=[], slides=[], blank_slides=[],
          books=dict(tooley='Ch.3 (tr.39-52)', floyd='Ch.12 §12-1 đến 12-3 (tr.698-722)'), status='live', noslide=True),
     dict(id='m11', slug='11-sequential-logic', vi='Mạch tuần tự: latch, flip-flop, thanh ghi dịch, bộ đếm, logic khả trình', en='Sequential logic: latches, flip-flops, shift registers, counters, programmable logic', co=[], clo=[], slides=[], blank_slides=[],
-         books=dict(tooley='§5.6-5.8 (monostable, bistable, họ logic)', floyd='Ch.7 (PDF tr.388), Ch.8 (450), Ch.9 (498), Ch.10 (562)'), status='planned', noslide=True),
+         books=dict(tooley='§5.6-5.8 (monostable, bistable, họ logic)', floyd='Ch.7 (PDF tr.388), Ch.8 (450), Ch.9 (498), Ch.10 (562)'), status='live', noslide=True),
     dict(id='m12', slug='12-avionic-systems', vi='Hệ thống avionics số: fly-by-wire, FMS, GPS, IRS, TCAS, thiết bị thử', en='Digital avionic systems: fly-by-wire, FMS, GPS, IRS, TCAS, test equipment', co=[], clo=['CLO3'], slides=[], blank_slides=[],
-         books=dict(tooley='§15.4-15.10 (tr.250-259)', floyd='không có'), status='planned', noslide=True),
+         books=dict(tooley='§15.4-15.10 (tr.250-259)', floyd='không có'), status='live', noslide=True),
     dict(id='m13', slug='13-data-networks-ima', vi='Mạng dữ liệu tàu bay, AFDX và IMA', en='Aircraft data networks, AFDX and IMA', co=[], clo=['CLO3'], slides=[], blank_slides=[],
-         books=dict(tooley='Ch.16 (tr.261-275), Ch.18 (tr.294-306)', floyd='Ch.13 §13-6 đến 13-10 (bus chung, nền Ethernet/LAN là Tooley)'), status='planned', noslide=True),
+         books=dict(tooley='Ch.16 (tr.261-275), Ch.18 (tr.294-306)', floyd='Ch.13 §13-6 đến 13-10 (bus chung, nền Ethernet/LAN là Tooley)'), status='live', noslide=True),
     dict(id='m14', slug='14-vhdl', vi='Hệ logic cỡ lớn và ngôn ngữ mô tả phần cứng VHDL', en='Large-scale logic systems and VHDL', co=[], clo=['CLO2'], slides=[], blank_slides=[],
-         books=dict(tooley='Ch.17 (tr.277-293)', floyd='Ch.10 Programmable Logic (PDF tr.562; phần HDL)'), status='planned', noslide=True),
+         books=dict(tooley='Ch.17 (tr.277-293)', floyd='Ch.10 Programmable Logic (PDF tr.562; phần HDL)'), status='live', noslide=True),
     dict(id='m15', slug='15-cabin-information', vi='Hệ thống cabin và hệ thống thông tin tàu bay', en='Cabin systems and aircraft information systems', co=[], clo=['CLO3'], slides=[], blank_slides=[],
-         books=dict(tooley='Ch.19 (tr.307-316), Ch.20 (tr.317-335)', floyd='không có'), status='planned', noslide=True),
+         books=dict(tooley='Ch.19 (tr.307-316), Ch.20 (tr.317-335)', floyd='không có'), status='live', noslide=True),
 ]
+VI_EN = [('tr.', 'p.'), (' đến ', ' to '), ('chốt bistable', 'bistable latches'), ('công nghệ IC', 'IC technology'), ('bus chung, không phải bus hàng không', 'general buses, not aircraft buses'), ('bus chung, nền Ethernet/LAN là Tooley', 'general buses; the ethernet/LAN background is in Tooley'),
+         ('7 đoạn', '7-segment'), ('mã lỗi', 'error codes'), ('nhiễu xuyên âm', 'crosstalk'), ('tụ tách', 'decoupling capacitor'), ('biên nhiễu', 'noise margin'), ('họ logic', 'logic families'), ('phần HDL', 'HDL part'), ('không có', 'none')]
+def en_book(txt):
+    for a, b in VI_EN: txt = txt.replace(a, b)
+    return txt
+BOOKS['tooley']['full_en'] = 'Mike Tooley, Aircraft Digital Electronic and Computer Systems: Principles, Operation and Maintenance, Third Edition, Routledge (scanned copy, 416 pages; the syllabus says 2007)'
+BOOKS['floyd']['full_en'] = 'Thomas L. Floyd, Digital Fundamentals, 11th ed., Pearson, 2015 (PDF, 953 pages, 186 bookmarks)'
+BOOKS['aerogates']['full_en'] = 'Module 05, Digital Techniques-Electronic Instrument Systems, AeroGATES PART-66 (NO file in the folder: not quoted)'
+BOOKS['var']['full_en'] = 'VAR Part 7 - Aircraft Maintenance Basic Cat B1+B2, M13.04 (NO file in the folder: not quoted)'
 for _m in MODS:
+    _m['books_en'] = {k: en_book(v) for k, v in _m['books'].items()}
+    _m['src_en'] = [f"Slide: {DECKS[d]['en']} pp.{a}-{b}" for d, a, b in _m['slides']] + [f"Tooley {_m['books_en']['tooley']}", f"Floyd {_m['books_en']['floyd']}"]
+    if _m.get('noslide'): _m['src_en'].insert(0, 'No lecturer slides for this part (built from the books)')
     _m['src'] = [f"Slide: {DECKS[d]['en']} tr.{a}-{b}" for d, a, b in _m['slides']] + [f"Tooley {_m['books']['tooley']}", f"Floyd {_m['books']['floyd']}"]
     if _m.get('noslide'): _m['src'].insert(0, 'Không có slide của giảng viên cho mục này (dựng từ sách)')
+# ngan hang chi dung cho de thi (khong phai module, khong co trang): kiem tra dau vao
+EXTRA = [dict(id='m00', vi='Kiểm tra đầu vào: khái niệm số cơ bản (Floyd Chương 1)', en='Entry test: basic digital concepts (Floyd Chapter 1)')]
 BYID = {m['id']: m for m in MODS}
 LIVE = [m for m in MODS if m['status'] == 'live']
 

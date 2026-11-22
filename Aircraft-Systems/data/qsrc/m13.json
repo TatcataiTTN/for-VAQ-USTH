@@ -1,0 +1,972 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong một mạng Ethernet đơn giản, một máy chủ (host) phát hiện bus đang rảnh hay bận bằng:",
+   "en": "In a simple ethernet arrangement a host is able to detect whether a bus is idle or busy by means of:"
+  },
+  "opts": [
+   {
+    "vi": "kiểm tra chẵn lẻ",
+    "en": "parity checking"
+   },
+   {
+    "vi": "một byte trạng thái",
+    "en": "a status byte"
+   },
+   {
+    "vi": "cảm nhận sóng mang (carrier sense)",
+    "en": "carrier sense"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đó là chữ CS của CSMA/CD (Tooley 16.4).",
+   "en": "That is the CS of CSMA/CD (Tooley 16.4)."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 1 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q1 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mạng AFDX, các liên kết từ mỗi host tới switch là:",
+   "en": "In an AFDX network the links from each host to the switch are:"
+  },
+  "opts": [
+   {
+    "vi": "đơn công (simplex)",
+    "en": "simplex"
+   },
+   {
+    "vi": "bán song công (half-duplex)",
+    "en": "half-duplex"
+   },
+   {
+    "vi": "song công toàn phần (full-duplex)",
+    "en": "full-duplex"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "AFDX là mạng chuyển mạch full-duplex: mỗi liên kết thường gồm hai cặp dây xoắn (Tooley 16.5).",
+   "en": "AFDX is a switched full-duplex network: each link typically has two twisted pairs (Tooley 16.5)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 2 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q2 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong một switch AFDX, bộ đệm (buffer) được dùng cho:",
+   "en": "Within an AFDX switch a buffer is used:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ dữ liệu nhận",
+    "en": "for received data only"
+   },
+   {
+    "vi": "chỉ dữ liệu truyền",
+    "en": "for transmitted data only"
+   },
+   {
+    "vi": "cả dữ liệu nhận và dữ liệu truyền",
+    "en": "for both received and transmitted data"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mỗi gói nhận được qua bộ đệm trước khi lưu, rồi được chép tới bộ đệm TX (lưu và chuyển tiếp), nên va chạm bị loại bỏ (Tooley 16.5).",
+   "en": "Each received packet is buffered before storage and then copied to the TX buffer(s) (store and forward), so collisions are eliminated (Tooley 16.5)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 3 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q3 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chiến lược lùi (back-off) của một hệ Ethernet đơn giản dựa trên:",
+   "en": "The back-off strategy for a simple ethernet system is based on:"
+  },
+  "opts": [
+   {
+    "vi": "truyền lại ở các khoảng thời gian đều đặn",
+    "en": "re-transmission at regular time intervals"
+   },
+   {
+    "vi": "truyền lại tại một thời điểm ngẫu nhiên trong một khoảng thời gian cho trước",
+    "en": "re-transmission at a random time within a given time interval"
+   },
+   {
+    "vi": "truyền lại ngay sau khi phát hiện va chạm",
+    "en": "re-transmission immediately following the detection of a collision"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Khoảng ngẫu nhiên gấp đôi sau mỗi lần va chạm: lùi theo hàm mũ nhị phân (Tooley 16.4).",
+   "en": "The random interval doubles after each collision: binary exponential back-off (Tooley 16.4)."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 4 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q4 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "BAG lớn nhất cho một VL cung cấp thông điệp với tốc độ 400 thông điệp mỗi giây là:",
+   "en": "What is the maximum BAG for a VL that supplies messages at a rate of 400 per second:"
+  },
+  "opts": [
+   {
+    "vi": "2 ms",
+    "en": "2 ms"
+   },
+   {
+    "vi": "4 ms",
+    "en": "4 ms"
+   },
+   {
+    "vi": "8 ms",
+    "en": "8 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tần số tương ứng của BAG phải không nhỏ hơn 400 Hz: BAG 2 ms ứng với 500 Hz, còn 4 ms chỉ 250 Hz (Tooley 16.8, bảng 16.1).",
+   "en": "The BAG frequency must be at least 400 Hz: a 2 ms BAG is 500 Hz while 4 ms is only 250 Hz (Tooley 16.8, Table 16.1)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 5 (khoá in (b), đúng (a); A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q5 (printed key (b), correct (a); A.16, p.381)"
+  },
+  "detail": {
+   "vi": "<p>Quy tắc của chính Tooley: dữ liệu 100 lần mỗi giây cần BAG không quá 8 ms vì 125 Hz lớn hơn 100 Hz. Áp dụng cho 400 lần mỗi giây: 500 Hz (2 ms) đủ, 250 Hz (4 ms) không đủ. Khoá in ở A.16 là (b); site dùng (a) và ghi vào notes.</p>",
+   "en": "<p>Tooley's own rule: data recurring 100 times a second needs a BAG of no more than 8 ms because 125 Hz exceeds 100 Hz. Applied to 400 times a second: 500 Hz (2 ms) is enough, 250 Hz (4 ms) is not. The printed key in A.16 is (b); the site uses (a) and records it in the notes.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tốc độ bit lớn nhất mà một liên kết ảo AFDX hỗ trợ khi chiều dài khung lớn nhất là 256 byte và BAG là 128 ms là:",
+   "en": "What is the maximum bit-rate that can be supported by an AFDX virtual link in which the maximum frame length is 256 bytes and the BAG is 128 ms:"
+  },
+  "opts": [
+   {
+    "vi": "4 000 bit/s",
+    "en": "4,000 bits per second"
+   },
+   {
+    "vi": "8 000 bit/s",
+    "en": "8,000 bits per second"
+   },
+   {
+    "vi": "16 000 bit/s",
+    "en": "16,000 bits per second"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "$256\\times8\\times1000/128=16\\,000$ bit/s.",
+   "en": "$256\\times8\\times1000/128=16{,}000$ bits per second."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 6 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q6 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cho phép của BAG trong AFDX là:",
+   "en": "Allowable bandwidth allocation gaps in AFDX can range from:"
+  },
+  "opts": [
+   {
+    "vi": "1 đến 8 ms",
+    "en": "1 to 8 ms"
+   },
+   {
+    "vi": "2 đến 64 ms",
+    "en": "2 to 64 ms"
+   },
+   {
+    "vi": "1 đến 128 ms",
+    "en": "1 to 128 ms"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bảng 16.1: 1, 2, 4, 8, 16, 32, 64, 128 ms.",
+   "en": "Table 16.1: 1, 2, 4, 8, 16, 32, 64, 128 ms."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 7 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q7 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mạng AFDX, các khung Ethernet gắn với một VL nhất định có thể bắt nguồn từ:",
+   "en": "Within an AFDX network, the ethernet frames associated with a particular VL can originate at:"
+  },
+  "opts": [
+   {
+    "vi": "nhiều end system",
+    "en": "multiple end systems"
+   },
+   {
+    "vi": "một và chỉ một end system",
+    "en": "one, and only one, end system"
+   },
+   {
+    "vi": "mọi end system có mặt trong mạng",
+    "en": "each end system present in the network"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Khung của một VL phải xuất phát từ đúng một end system (Tooley 16.7).",
+   "en": "The frame of a VL must originate at one, and only one, end system (Tooley 16.7)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 8 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q8 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong ngăn xếp giao thức phát, tiêu đề Ethernet được thêm bởi:",
+   "en": "Within the transmit protocol stack the ethernet header is added by the:"
+  },
+  "opts": [
+   {
+    "vi": "lớp truyền tải UDP",
+    "en": "UDP transport layer"
+   },
+   {
+    "vi": "lớp mạng IP",
+    "en": "IP network layer"
+   },
+   {
+    "vi": "lớp liên kết (link layer)",
+    "en": "link layer"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Thông điệp đi qua UDP, rồi IP, rồi lớp liên kết; lớp liên kết đóng khung Ethernet cuối cùng (Tooley 16.9).",
+   "en": "The message passes UDP, then IP, then the link layer; the link layer builds the ethernet frame last (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 9 (khoá in (b), đúng (c); A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q9 (printed key (b), correct (c); A.16, p.381)"
+  },
+  "detail": {
+   "vi": "<p>Khoá in A.16 ghi (b); nhưng câu 11 (khoá a) nói thứ tự phát là UDP, IP, lớp liên kết, nên tiêu đề Ethernet chỉ có thể do lớp liên kết thêm vào. Site dùng (c) và ghi vào notes.</p>",
+   "en": "<p>The printed key in A.16 says (b); but question 11 (key a) gives the transmit order UDP, IP, link layer, so the ethernet header can only be added by the link layer. The site uses (c) and records it in the notes.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong khung AFDX, FCS xuất hiện:",
+   "en": "Within the AFDX frame the FCS appears:"
+  },
+  "opts": [
+   {
+    "vi": "sau số thứ tự (sequence number)",
+    "en": "after the sequence number"
+   },
+   {
+    "vi": "ngay sau trường thông điệp",
+    "en": "immediately after the message field"
+   },
+   {
+    "vi": "sau địa chỉ IP và trước trường thông điệp",
+    "en": "after the IP address and before the message field"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thứ tự: payload, đệm nếu cần, SN, rồi FCS cuối khung (Tooley 16.9, Hình 16.7).",
+   "en": "Order: payload, padding if needed, SN, then the FCS at the end of the frame (Tooley 16.9, Figure 16.7)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 10 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q10 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thứ tự một thông điệp đi qua ngăn xếp giao thức phát của AFDX là:",
+   "en": "The order in which a message is passed through the AFDX transmit protocol stack is:"
+  },
+  "opts": [
+   {
+    "vi": "lớp UDP, lớp IP, lớp liên kết",
+    "en": "UDP transport layer, IP network layer, link layer"
+   },
+   {
+    "vi": "lớp liên kết, lớp IP, lớp UDP",
+    "en": "link layer, IP network layer, UDP transport layer"
+   },
+   {
+    "vi": "lớp IP, lớp UDP, lớp liên kết",
+    "en": "IP network layer, UDP transport layer, link layer"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhận là quá trình ngược lại (Tooley 16.9).",
+   "en": "Reception is the reverse (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 11 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q11 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiến trúc mạng cơ bản của mạng AFDX là:",
+   "en": "The fundamental network architecture used by an AFDX network is:"
+  },
+  "opts": [
+   {
+    "vi": "bus",
+    "en": "bus"
+   },
+   {
+    "vi": "cây",
+    "en": "tree"
+   },
+   {
+    "vi": "sao nối tầng (cascaded star)",
+    "en": "cascaded star"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Nhiều hệ avionics nối vào một hoặc nhiều switch trung tâm (Tooley 16.5).",
+   "en": "Several avionic systems connect to one or more central switches (Tooley 16.5)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 12 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q12 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mạng AFDX, độ dài của FCS là:",
+   "en": "In an AFDX network, the length of the FCS is:"
+  },
+  "opts": [
+   {
+    "vi": "một byte",
+    "en": "one byte"
+   },
+   {
+    "vi": "hai byte",
+    "en": "two bytes"
+   },
+   {
+    "vi": "bốn byte",
+    "en": "four bytes"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "FCS 4 byte, là CRC tính trên toàn khung (Tooley 16.9).",
+   "en": "The FCS is 4 bytes, a CRC computed over the whole frame (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 13 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q13 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thứ tự (SN) của khung AFDX có thể nhận giá trị trong khoảng:",
+   "en": "An AFDX frame sequence number can take a value between:"
+  },
+  "opts": [
+   {
+    "vi": "0 và 15",
+    "en": "0 and 15"
+   },
+   {
+    "vi": "1 và 128",
+    "en": "1 and 128"
+   },
+   {
+    "vi": "0 và 255",
+    "en": "0 and 255"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "SN bắt đầu từ 0 khi khởi động, tăng tới 255 rồi quay về 1 (Tooley 16.9).",
+   "en": "The SN starts at 0 at start-up, increments to 255 and then wraps to 1 (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 14 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q14 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mạng AFDX, độ dài tiêu đề UDP là:",
+   "en": "In an AFDX network the length of the UDP header is:"
+  },
+  "opts": [
+   {
+    "vi": "bốn byte",
+    "en": "four bytes"
+   },
+   {
+    "vi": "sáu byte",
+    "en": "six bytes"
+   },
+   {
+    "vi": "tám byte",
+    "en": "eight bytes"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Phần tiêu đề chung 6 + 6 + 2 + 20 + 8 byte (địa chỉ MAC đích, nguồn, Type, IP, UDP) cho khung nhỏ nhất đúng 64 byte.",
+   "en": "The common header 6 + 6 + 2 + 20 + 8 bytes (MAC destination, source, Type, IP, UDP) gives exactly 64 bytes for the smallest frame."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 15 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q15 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thứ tự các khung liên tiếp mà một end system nhận được có thể kiểm tra bằng:",
+   "en": "The order of successive frames received by an end system can be checked using:"
+  },
+  "opts": [
+   {
+    "vi": "tổng kiểm (checksum)",
+    "en": "a checksum"
+   },
+   {
+    "vi": "kiểm tra chẵn lẻ",
+    "en": "a parity check"
+   },
+   {
+    "vi": "số thứ tự (sequence number)",
+    "en": "a sequence number"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Kiểm tra toàn vẹn dùng SN để bảo đảm khung đến đúng thứ tự (Tooley 16.9).",
+   "en": "Integrity checking uses the SNs to make sure frames arrive in order (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.16 · Câu 16 (khoá A.16, tr.381)",
+   "en": "Tooley Ch.16 · Q16 (key A.16, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong máy bay dùng IMA, nhiều chức năng avionics được:",
+   "en": "In an IMA-based aircraft multiple avionics functions are:"
+  },
+  "opts": [
+   {
+    "vi": "thực hiện riêng bằng phần mềm nằm hoàn toàn trong các LRU",
+    "en": "performed individually by software resident solely within LRU"
+   },
+   {
+    "vi": "liên hợp (federated) mà không cần nền tính toán tập trung",
+    "en": "federated without the need for a centralised computing platform"
+   },
+   {
+    "vi": "tách thành ứng dụng phần mềm và các end system, trao đổi qua tài nguyên mạng dùng chung",
+    "en": "split into software applications and end systems communicating over shared network resources"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đó là kiến trúc phân tán của IMA (Tooley 18.2).",
+   "en": "That is the distributed architecture of IMA (Tooley 18.2)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 1 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q1 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong máy bay IMA, các chức năng avionics chuyên dụng như quản lý nhiên liệu và điều khiển động cơ:",
+   "en": "In an IMA-based aircraft, dedicated avionics functions such as fuel management and engine control:"
+  },
+  "opts": [
+   {
+    "vi": "không trao đổi qua tài nguyên mạng dùng chung",
+    "en": "do not communicate using a shared network resource"
+   },
+   {
+    "vi": "có thể lấy từ các nhà cung cấp hệ avionics khác nhau",
+    "en": "can be obtained from different avionic system suppliers"
+   },
+   {
+    "vi": "chỉ có thể do nhà chế tạo máy bay gốc cung cấp",
+    "en": "can only be supplied by the original aircraft manufacturer"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "IMA mở hỗ trợ avionics đa nguồn (Tooley 18.2.1).",
+   "en": "An open IMA supports multiple-source avionics (Tooley 18.2.1)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 2 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q2 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạng ARINC 664/AFDX dùng trong máy bay IMA, so với hệ avionics liên hợp, mang lại:",
+   "en": "An ARINC 664/AFDX network is used in an IMA-based aircraft. Compared with a federated avionics system this offers:"
+  },
+  "opts": [
+   {
+    "vi": "ít cáp hơn, máy bay nhẹ hơn và chi phí khai thác thấp hơn",
+    "en": "reduced cabling, reduced aircraft weight and lower operating costs"
+   },
+   {
+    "vi": "ít cáp hơn, máy bay nhẹ hơn nhưng chi phí khai thác cao hơn",
+    "en": "reduced cabling, reduced aircraft weight and higher operating costs"
+   },
+   {
+    "vi": "nhiều cáp hơn, máy bay nặng hơn và chi phí cao hơn",
+    "en": "increased cabling, increased aircraft weight and higher operating costs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Giảm khối lượng cáp giảm nhiên liệu và chi phí khai thác (Tooley 18.1).",
+   "en": "Less cable weight reduces fuel and operating cost (Tooley 18.1)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 3 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q3 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phần mềm ứng dụng do nhà cung cấp hệ avionics phát triển cho máy bay IMA:",
+   "en": "The software applications developed by avionic system suppliers for an IMA-based aircraft:"
+  },
+  "opts": [
+   {
+    "vi": "phải cho phép đặt (host) trên hệ máy tính của bên thứ ba",
+    "en": "must permit hosting on a third-party computer system"
+   },
+   {
+    "vi": "phải được nạp vào từng LRU riêng",
+    "en": "must be loaded into individual line replaceable units (LRU)"
+   },
+   {
+    "vi": "chỉ được dùng cho các chức năng avionics không quan trọng",
+    "en": "must only be suitable for use with non-critical avionics functions"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ứng dụng IMA không thuộc lõi hệ điều hành nên có thể kiểm chứng và chứng nhận độc lập (Tooley 18.4).",
+   "en": "IMA application software is not part of the core operating system and can be validated and certified independently (Tooley 18.4)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 4 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q4 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều kiện tiên quyết thiết yếu của hệ điều hành thời gian thực (RTOS) dùng trong máy bay IMA là:",
+   "en": "Which one of the following is an essential prerequisite for the real-time operating system (RTOS) used in an IMA-based aircraft?"
+  },
+  "opts": [
+   {
+    "vi": "phải dùng kỹ thuật xử lý theo lô",
+    "en": "It must use batch processing techniques"
+   },
+   {
+    "vi": "phải mã hoá dữ liệu đầu cuối tới đầu cuối",
+    "en": "It must employ end-to-end data encryption"
+   },
+   {
+    "vi": "phải hỗ trợ phân vùng (partitioning) và lập lịch (scheduling)",
+    "en": "It must support partitioning and scheduling"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "RTOS quản lý phân vùng bộ nhớ và các lát thời gian (Tooley 18.4).",
+   "en": "The RTOS manages memory partitions and time slices (Tooley 18.4)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 5 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q5 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mạng ARINC 664:",
+   "en": "In an ARINC 664 network:"
+  },
+  "opts": [
+   {
+    "vi": "mọi end system đều phải nối trực tiếp với nền IMA",
+    "en": "end systems must all be directly connected to the IMA platform"
+   },
+   {
+    "vi": "mọi dữ liệu đều đi qua một switch trung tâm trong nền IMA",
+    "en": "all data is routed through a central switch within the IMA platform"
+   },
+   {
+    "vi": "các liên kết ảo (VL) được thiết lập giữa nền IMA và các end system",
+    "en": "virtual links (VL) are established between the IMA platform and end systems"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Các VL là kênh logic dùng chung các liên kết vật lý (Tooley 16.7, 18.3).",
+   "en": "VLs are logical channels sharing the physical links (Tooley 16.7, 18.3)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 6 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q6 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Công nghệ mạng dùng trong máy bay IMA theo ARINC 664 là:",
+   "en": "Which one of the following describes the network technology found in the IMA-based aircraft using ARINC 664 technology?"
+  },
+  "opts": [
+   {
+    "vi": "vòng (ring)",
+    "en": "Ring"
+   },
+   {
+    "vi": "sao nối tầng (cascaded star)",
+    "en": "Cascaded star"
+   },
+   {
+    "vi": "bus mở rộng",
+    "en": "Extended bus"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Tooley 16.5 và 18.3: mạng xương sống chuyển mạch kiểu sao nối tầng.",
+   "en": "Tooley 16.5 and 18.3: a switched backbone of cascaded star form."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 7 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q7 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong máy bay IMA, tài nguyên xử lý trung tâm được cấp phát bằng:",
+   "en": "In an IMA-based aircraft, central processing resources are allocated using:"
+  },
+  "opts": [
+   {
+    "vi": "chia lát thời gian (time slicing)",
+    "en": "time slicing"
+   },
+   {
+    "vi": "các switch AFDX",
+    "en": "AFDX switches"
+   },
+   {
+    "vi": "xử lý theo lô",
+    "en": "batch processing"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi ứng dụng có phân vùng bộ nhớ riêng và lát thời gian riêng (Tooley 18.4).",
+   "en": "Each application has its own memory partition and time slice (Tooley 18.4)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 8 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q8 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tiêu chuẩn ARINC 653 áp dụng cho:",
+   "en": "The ARINC 653 standard applies to:"
+  },
+  "opts": [
+   {
+    "vi": "các hệ điều hành thời gian thực",
+    "en": "real-time operating systems"
+   },
+   {
+    "vi": "các mạng máy bay tốc độ thấp",
+    "en": "low-speed aircraft networks"
+   },
+   {
+    "vi": "truyền dữ liệu tốc độ cao",
+    "en": "high-speed data communication"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ARINC 653 là chuẩn hàng đầu cho RTOS của IMA (Tooley 18.4).",
+   "en": "ARINC 653 is the leading standard for IMA RTOS (Tooley 18.4)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 9 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q9 (key A.18, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Việc cấp phát tài nguyên trong một RTOS được hỗ trợ bởi:",
+   "en": "The allocation of resources in a real-time operating system is facilitated by:"
+  },
+  "opts": [
+   {
+    "vi": "bộ ánh xạ bộ nhớ",
+    "en": "a memory mapper"
+   },
+   {
+    "vi": "bộ điều khiển I/O nối tiếp",
+    "en": "a serial I/O controller"
+   },
+   {
+    "vi": "bộ điều hành ứng dụng (application executive, APEX)",
+    "en": "an application executive"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "APEX cấp phát bộ nhớ và thời gian cho từng ứng dụng (Tooley 18.4).",
+   "en": "The application executive (APEX) allocates memory and time to each application (Tooley 18.4)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.18 · Câu 10 (khoá A.18, tr.382)",
+   "en": "Tooley Ch.18 · Q10 (key A.18, p.382)"
+  }
+ }
+]

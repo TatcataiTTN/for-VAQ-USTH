@@ -1,0 +1,289 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một từ ARINC 429 dài 32 bit được truyền ở tốc độ 12,5 kbit/s. Thời gian truyền một từ là:",
+   "en": "A 32-bit ARINC 429 word is transmitted at 12.5 kbit/s. The transmission time of one word is:"
+  },
+  "opts": [
+   {
+    "vi": "2.56 ms",
+    "en": "2.56 ms"
+   },
+   {
+    "vi": "5.12 ms",
+    "en": "5.12 ms"
+   },
+   {
+    "vi": "1.28 ms",
+    "en": "1.28 ms"
+   },
+   {
+    "vi": "25.6 ms",
+    "en": "25.6 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=32/R=32/12500$ s = 2.56 ms.",
+   "en": "$t=32/R=32/12500$ s = 2.56 ms."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Thời gian một từ ARINC 429",
+   "en": "Added · Level 3: ARINC 429 word time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một từ ARINC 429 dài 32 bit được truyền ở tốc độ 100 kbit/s. Thời gian truyền một từ là:",
+   "en": "A 32-bit ARINC 429 word is transmitted at 100 kbit/s. The transmission time of one word is:"
+  },
+  "opts": [
+   {
+    "vi": "0.32 ms",
+    "en": "0.32 ms"
+   },
+   {
+    "vi": "0.64 ms",
+    "en": "0.64 ms"
+   },
+   {
+    "vi": "0.16 ms",
+    "en": "0.16 ms"
+   },
+   {
+    "vi": "3.2 ms",
+    "en": "3.2 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=32/R=32/100000$ s = 0.32 ms.",
+   "en": "$t=32/R=32/100000$ s = 0.32 ms."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Thời gian một từ ARINC 429",
+   "en": "Added · Level 3: ARINC 429 word time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bỏ qua khoảng nghỉ giữa các từ, bus ARINC 429 tốc độ 12,5 kbit/s truyền tối đa bao nhiêu từ 32 bit mỗi giây?",
+   "en": "Ignoring the gap between words, how many 32-bit words per second can an ARINC 429 bus at 12.5 kbit/s carry at most?"
+  },
+  "opts": [
+   {
+    "vi": "390.6",
+    "en": "390.6"
+   },
+   {
+    "vi": "781.2",
+    "en": "781.2"
+   },
+   {
+    "vi": "195.3",
+    "en": "195.3"
+   },
+   {
+    "vi": "1562.5",
+    "en": "1562.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$R/32=12500/32=390.6$ từ/giây.",
+   "en": "$R/32=12500/32=390.6$ words/s."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Số từ mỗi giây",
+   "en": "Added · Level 3: Words per second"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bỏ qua khoảng nghỉ giữa các từ, bus ARINC 429 tốc độ 100 kbit/s truyền tối đa bao nhiêu từ 32 bit mỗi giây?",
+   "en": "Ignoring the gap between words, how many 32-bit words per second can an ARINC 429 bus at 100 kbit/s carry at most?"
+  },
+  "opts": [
+   {
+    "vi": "3125",
+    "en": "3125"
+   },
+   {
+    "vi": "6250",
+    "en": "6250"
+   },
+   {
+    "vi": "1562.5",
+    "en": "1562.5"
+   },
+   {
+    "vi": "12500",
+    "en": "12500"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$R/32=100000/32=3125.0$ từ/giây.",
+   "en": "$R/32=100000/32=3125.0$ words/s."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Số từ mỗi giây",
+   "en": "Added · Level 3: Words per second"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một từ ARINC 429 dùng chẵn lẻ LẺ (odd parity). 31 bit đầu có 14 bit 1. Bit chẵn lẻ (bit 32) và tổng số bit 1 của cả từ là:",
+   "en": "An ARINC 429 word uses ODD parity. The first 31 bits contain 14 ones. The parity bit (bit 32) and the total number of ones of the whole word are:"
+  },
+  "opts": [
+   {
+    "vi": "bit = 1; tổng số bit 1 = 15 (lẻ)",
+    "en": "bit = 1; total ones = 15 (odd)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 14 (chẵn)",
+    "en": "bit = 0; total ones = 14 (even)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 14 (chẵn)",
+    "en": "bit = 1; total ones = 14 (even)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 15 (lẻ)",
+    "en": "bit = 0; total ones = 15 (odd)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng số bit 1 phải lẻ: 14 là chẵn nên bit chẵn lẻ = 1.",
+   "en": "The total number of ones must be odd: 14 is even so the parity bit = 1."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Parity lẻ của từ 429",
+   "en": "Added · Level 3: Odd parity of a 429 word"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một từ ARINC 429 dùng chẵn lẻ LẺ (odd parity). 31 bit đầu có 17 bit 1. Bit chẵn lẻ (bit 32) và tổng số bit 1 của cả từ là:",
+   "en": "An ARINC 429 word uses ODD parity. The first 31 bits contain 17 ones. The parity bit (bit 32) and the total number of ones of the whole word are:"
+  },
+  "opts": [
+   {
+    "vi": "bit = 0; tổng số bit 1 = 17 (lẻ)",
+    "en": "bit = 0; total ones = 17 (odd)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 18 (chẵn)",
+    "en": "bit = 1; total ones = 18 (even)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 18 (chẵn)",
+    "en": "bit = 0; total ones = 18 (even)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 17 (lẻ)",
+    "en": "bit = 1; total ones = 17 (odd)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng số bit 1 phải lẻ: 17 là lẻ nên bit chẵn lẻ = 0.",
+   "en": "The total number of ones must be odd: 17 is odd so the parity bit = 0."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Parity lẻ của từ 429",
+   "en": "Added · Level 3: Odd parity of a 429 word"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một từ ARINC 429 dùng chẵn lẻ LẺ (odd parity). 31 bit đầu có 22 bit 1. Bit chẵn lẻ (bit 32) và tổng số bit 1 của cả từ là:",
+   "en": "An ARINC 429 word uses ODD parity. The first 31 bits contain 22 ones. The parity bit (bit 32) and the total number of ones of the whole word are:"
+  },
+  "opts": [
+   {
+    "vi": "bit = 1; tổng số bit 1 = 23 (lẻ)",
+    "en": "bit = 1; total ones = 23 (odd)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 22 (chẵn)",
+    "en": "bit = 0; total ones = 22 (even)"
+   },
+   {
+    "vi": "bit = 1; tổng số bit 1 = 22 (chẵn)",
+    "en": "bit = 1; total ones = 22 (even)"
+   },
+   {
+    "vi": "bit = 0; tổng số bit 1 = 23 (lẻ)",
+    "en": "bit = 0; total ones = 23 (odd)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tổng số bit 1 phải lẻ: 22 là chẵn nên bit chẵn lẻ = 1.",
+   "en": "The total number of ones must be odd: 22 is even so the parity bit = 1."
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Parity lẻ của từ 429",
+   "en": "Added · Level 3: Odd parity of a 429 word"
+  }
+ }
+]

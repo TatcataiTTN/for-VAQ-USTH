@@ -1,0 +1,593 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ nhớ có 12 đường địa chỉ và từ dài 8 bit. Dung lượng toàn bộ là:",
+   "en": "A memory has 12 address lines and 8-bit words. Its total capacity is:"
+  },
+  "opts": [
+   {
+    "vi": "4096 byte",
+    "en": "4096 bytes"
+   },
+   {
+    "vi": "32768 byte",
+    "en": "32768 bytes"
+   },
+   {
+    "vi": "2048 byte",
+    "en": "2048 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{12}=4096$ ô × 8 bit = 32768 bit = 4096 byte.",
+   "en": "$2^{12}=4096$ cells × 8 bits = 32768 bits = 4096 bytes."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Dung lượng bộ nhớ",
+   "en": "Added · Level 3: Memory capacity"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ nhớ có 16 đường địa chỉ và từ dài 8 bit. Dung lượng toàn bộ là:",
+   "en": "A memory has 16 address lines and 8-bit words. Its total capacity is:"
+  },
+  "opts": [
+   {
+    "vi": "65536 byte",
+    "en": "65536 bytes"
+   },
+   {
+    "vi": "524288 byte",
+    "en": "524288 bytes"
+   },
+   {
+    "vi": "32768 byte",
+    "en": "32768 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{16}=65536$ ô × 8 bit = 524288 bit = 65536 byte.",
+   "en": "$2^{16}=65536$ cells × 8 bits = 524288 bits = 65536 bytes."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Dung lượng bộ nhớ",
+   "en": "Added · Level 3: Memory capacity"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ nhớ có 10 đường địa chỉ và từ dài 16 bit. Dung lượng toàn bộ là:",
+   "en": "A memory has 10 address lines and 16-bit words. Its total capacity is:"
+  },
+  "opts": [
+   {
+    "vi": "2048 byte",
+    "en": "2048 bytes"
+   },
+   {
+    "vi": "16384 byte",
+    "en": "16384 bytes"
+   },
+   {
+    "vi": "1024 byte",
+    "en": "1024 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{10}=1024$ ô × 16 bit = 16384 bit = 2048 byte.",
+   "en": "$2^{10}=1024$ cells × 16 bits = 16384 bits = 2048 bytes."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Dung lượng bộ nhớ",
+   "en": "Added · Level 3: Memory capacity"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần ít nhất bao nhiêu đường địa chỉ để định vị 8 K ô nhớ (mỗi ô một địa chỉ)?",
+   "en": "At least how many address lines are needed to address 8 K memory cells (one address per cell)?"
+  },
+  "opts": [
+   {
+    "vi": "13",
+    "en": "13"
+   },
+   {
+    "vi": "12",
+    "en": "12"
+   },
+   {
+    "vi": "14",
+    "en": "14"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{13}=8192$ nên cần 13 đường.",
+   "en": "$2^{13}=8192$ so 13 lines are needed."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Số đường địa chỉ",
+   "en": "Added · Level 3: Address lines"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần ít nhất bao nhiêu đường địa chỉ để định vị 64 K ô nhớ (mỗi ô một địa chỉ)?",
+   "en": "At least how many address lines are needed to address 64 K memory cells (one address per cell)?"
+  },
+  "opts": [
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "15",
+    "en": "15"
+   },
+   {
+    "vi": "17",
+    "en": "17"
+   },
+   {
+    "vi": "64",
+    "en": "64"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{16}=65536$ nên cần 16 đường.",
+   "en": "$2^{16}=65536$ so 16 lines are needed."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Số đường địa chỉ",
+   "en": "Added · Level 3: Address lines"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần ít nhất bao nhiêu đường địa chỉ để định vị 1 M ô nhớ (mỗi ô một địa chỉ)?",
+   "en": "At least how many address lines are needed to address 1 M memory cells (one address per cell)?"
+  },
+  "opts": [
+   {
+    "vi": "20",
+    "en": "20"
+   },
+   {
+    "vi": "19",
+    "en": "19"
+   },
+   {
+    "vi": "21",
+    "en": "21"
+   },
+   {
+    "vi": "1024",
+    "en": "1024"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{20}=1048576$ nên cần 20 đường.",
+   "en": "$2^{20}=1048576$ so 20 lines are needed."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Số đường địa chỉ",
+   "en": "Added · Level 3: Address lines"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu vi mạch 4 K × 4 bit để xây bộ nhớ 16 K × 8 bit?",
+   "en": "How many 4 K × 4-bit chips are needed to build a 16 K × 8-bit memory?"
+  },
+  "opts": [
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Theo chiều từ: 2 cột; theo chiều ô: 4 hàng; tổng 8 vi mạch.",
+   "en": "Word width: 2 columns; depth: 4 rows; 8 chips in all."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Ghép vi mạch nhớ",
+   "en": "Added · Level 3: Combining memory chips"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu vi mạch 8 K × 8 bit để xây bộ nhớ 32 K × 8 bit?",
+   "en": "How many 8 K × 8-bit chips are needed to build a 32 K × 8-bit memory?"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Theo chiều từ: 1 cột; theo chiều ô: 4 hàng; tổng 4 vi mạch.",
+   "en": "Word width: 1 columns; depth: 4 rows; 4 chips in all."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Ghép vi mạch nhớ",
+   "en": "Added · Level 3: Combining memory chips"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cần bao nhiêu vi mạch 2 K × 8 bit để xây bộ nhớ 8 K × 16 bit?",
+   "en": "How many 2 K × 8-bit chips are needed to build a 8 K × 16-bit memory?"
+  },
+  "opts": [
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Theo chiều từ: 2 cột; theo chiều ô: 4 hàng; tổng 8 vi mạch.",
+   "en": "Word width: 2 columns; depth: 4 rows; 8 chips in all."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Ghép vi mạch nhớ",
+   "en": "Added · Level 3: Combining memory chips"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khối nhớ 4 K ô bắt đầu ở địa chỉ 2000H. Địa chỉ ô cuối cùng của khối là:",
+   "en": "A 4 K-cell memory block starts at address 2000H. The address of its last cell is:"
+  },
+  "opts": [
+   {
+    "vi": "2FFFH",
+    "en": "2FFFH"
+   },
+   {
+    "vi": "3000H",
+    "en": "3000H"
+   },
+   {
+    "vi": "2EFFH",
+    "en": "2EFFH"
+   },
+   {
+    "vi": "2800H",
+    "en": "2800H"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "2000H + 1000H − 1 = 2FFFH.",
+   "en": "2000H + 1000H − 1 = 2FFFH."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Dải địa chỉ khối nhớ",
+   "en": "Added · Level 3: Address range of a memory block"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khối nhớ 16 K ô bắt đầu ở địa chỉ C000H. Địa chỉ ô cuối cùng của khối là:",
+   "en": "A 16 K-cell memory block starts at address C000H. The address of its last cell is:"
+  },
+  "opts": [
+   {
+    "vi": "FFFFH",
+    "en": "FFFFH"
+   },
+   {
+    "vi": "10000H",
+    "en": "10000H"
+   },
+   {
+    "vi": "FEFFH",
+    "en": "FEFFH"
+   },
+   {
+    "vi": "E000H",
+    "en": "E000H"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "C000H + 4000H − 1 = FFFFH.",
+   "en": "C000H + 4000H − 1 = FFFFH."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Dải địa chỉ khối nhớ",
+   "en": "Added · Level 3: Address range of a memory block"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khối nhớ 2 K ô bắt đầu ở địa chỉ 8000H. Địa chỉ ô cuối cùng của khối là:",
+   "en": "A 2 K-cell memory block starts at address 8000H. The address of its last cell is:"
+  },
+  "opts": [
+   {
+    "vi": "87FFH",
+    "en": "87FFH"
+   },
+   {
+    "vi": "8800H",
+    "en": "8800H"
+   },
+   {
+    "vi": "86FFH",
+    "en": "86FFH"
+   },
+   {
+    "vi": "8400H",
+    "en": "8400H"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "8000H + 0800H − 1 = 87FFH.",
+   "en": "8000H + 0800H − 1 = 87FFH."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Dải địa chỉ khối nhớ",
+   "en": "Added · Level 3: Address range of a memory block"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một lệnh cần 18 T-state, clock 3 MHz. Thời gian thực thi lệnh là:",
+   "en": "An instruction needs 18 T-states and the clock is 3 MHz. The instruction execution time is:"
+  },
+  "opts": [
+   {
+    "vi": "6 μs",
+    "en": "6 μs"
+   },
+   {
+    "vi": "12 μs",
+    "en": "12 μs"
+   },
+   {
+    "vi": "3 μs",
+    "en": "3 μs"
+   },
+   {
+    "vi": "54 μs",
+    "en": "54 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=n_T/f=18/3$ μs = 6 μs.",
+   "en": "$t=n_T/f=18/3$ μs = 6 μs."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Thời gian lệnh",
+   "en": "Added · Level 3: Instruction time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một lệnh cần 10 T-state, clock 5 MHz. Thời gian thực thi lệnh là:",
+   "en": "An instruction needs 10 T-states and the clock is 5 MHz. The instruction execution time is:"
+  },
+  "opts": [
+   {
+    "vi": "2 μs",
+    "en": "2 μs"
+   },
+   {
+    "vi": "4 μs",
+    "en": "4 μs"
+   },
+   {
+    "vi": "1 μs",
+    "en": "1 μs"
+   },
+   {
+    "vi": "50 μs",
+    "en": "50 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=n_T/f=10/5$ μs = 2 μs.",
+   "en": "$t=n_T/f=10/5$ μs = 2 μs."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Thời gian lệnh",
+   "en": "Added · Level 3: Instruction time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một lệnh cần 24 T-state, clock 6 MHz. Thời gian thực thi lệnh là:",
+   "en": "An instruction needs 24 T-states and the clock is 6 MHz. The instruction execution time is:"
+  },
+  "opts": [
+   {
+    "vi": "4 μs",
+    "en": "4 μs"
+   },
+   {
+    "vi": "8 μs",
+    "en": "8 μs"
+   },
+   {
+    "vi": "2 μs",
+    "en": "2 μs"
+   },
+   {
+    "vi": "144 μs",
+    "en": "144 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=n_T/f=24/6$ μs = 4 μs.",
+   "en": "$t=n_T/f=24/6$ μs = 4 μs."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mức 3: Thời gian lệnh",
+   "en": "Added · Level 3: Instruction time"
+  }
+ }
+]

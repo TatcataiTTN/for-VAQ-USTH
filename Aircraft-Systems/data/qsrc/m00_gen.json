@@ -1,0 +1,617 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng tuần hoàn có tần số 200 Hz. Chu kỳ của nó là:",
+   "en": "A periodic waveform has a frequency of 200 Hz. Its period is:"
+  },
+  "opts": [
+   {
+    "vi": "5 ms",
+    "en": "5 ms"
+   },
+   {
+    "vi": "50 ms",
+    "en": "50 ms"
+   },
+   {
+    "vi": "500 μs",
+    "en": "500 μs"
+   },
+   {
+    "vi": "10 ms",
+    "en": "10 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=1/f=1/200 Hz$ = 5 ms.",
+   "en": "$T=1/f=1/200 Hz$ = 5 ms."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ từ tần số",
+   "en": "Added · Period from frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng tuần hoàn có tần số 2 kHz. Chu kỳ của nó là:",
+   "en": "A periodic waveform has a frequency of 2 kHz. Its period is:"
+  },
+  "opts": [
+   {
+    "vi": "500 μs",
+    "en": "500 μs"
+   },
+   {
+    "vi": "5 ms",
+    "en": "5 ms"
+   },
+   {
+    "vi": "50 μs",
+    "en": "50 μs"
+   },
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=1/f=1/2 kHz$ = 500 μs.",
+   "en": "$T=1/f=1/2 kHz$ = 500 μs."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ từ tần số",
+   "en": "Added · Period from frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng tuần hoàn có tần số 40 kHz. Chu kỳ của nó là:",
+   "en": "A periodic waveform has a frequency of 40 kHz. Its period is:"
+  },
+  "opts": [
+   {
+    "vi": "25 μs",
+    "en": "25 μs"
+   },
+   {
+    "vi": "250 μs",
+    "en": "250 μs"
+   },
+   {
+    "vi": "2.5 μs",
+    "en": "2.5 μs"
+   },
+   {
+    "vi": "50 μs",
+    "en": "50 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=1/f=1/40 kHz$ = 25 μs.",
+   "en": "$T=1/f=1/40 kHz$ = 25 μs."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ từ tần số",
+   "en": "Added · Period from frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng tuần hoàn có tần số 5 MHz. Chu kỳ của nó là:",
+   "en": "A periodic waveform has a frequency of 5 MHz. Its period is:"
+  },
+  "opts": [
+   {
+    "vi": "200 ns",
+    "en": "200 ns"
+   },
+   {
+    "vi": "2 μs",
+    "en": "2 μs"
+   },
+   {
+    "vi": "20 ns",
+    "en": "20 ns"
+   },
+   {
+    "vi": "400 ns",
+    "en": "400 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=1/f=1/5 MHz$ = 200 ns.",
+   "en": "$T=1/f=1/5 MHz$ = 200 ns."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ từ tần số",
+   "en": "Added · Period from frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng có chu kỳ 4 ms. Tần số của nó là:",
+   "en": "A waveform has a period of 4 ms. Its frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "250 Hz",
+    "en": "250 Hz"
+   },
+   {
+    "vi": "2.5 kHz",
+    "en": "2.5 kHz"
+   },
+   {
+    "vi": "25 Hz",
+    "en": "25 Hz"
+   },
+   {
+    "vi": "500 Hz",
+    "en": "500 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f=1/T=1/4 ms$ = 250 Hz.",
+   "en": "$f=1/T=1/4 ms$ = 250 Hz."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tần số từ chu kỳ",
+   "en": "Added · Frequency from period"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng có chu kỳ 25 ns. Tần số của nó là:",
+   "en": "A waveform has a period of 25 ns. Its frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "40 MHz",
+    "en": "40 MHz"
+   },
+   {
+    "vi": "400 MHz",
+    "en": "400 MHz"
+   },
+   {
+    "vi": "4 MHz",
+    "en": "4 MHz"
+   },
+   {
+    "vi": "80 MHz",
+    "en": "80 MHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f=1/T=1/25 ns$ = 40 MHz.",
+   "en": "$f=1/T=1/25 ns$ = 40 MHz."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tần số từ chu kỳ",
+   "en": "Added · Frequency from period"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng có chu kỳ 500 μs. Tần số của nó là:",
+   "en": "A waveform has a period of 500 μs. Its frequency is:"
+  },
+  "opts": [
+   {
+    "vi": "2 kHz",
+    "en": "2 kHz"
+   },
+   {
+    "vi": "20 kHz",
+    "en": "20 kHz"
+   },
+   {
+    "vi": "200 Hz",
+    "en": "200 Hz"
+   },
+   {
+    "vi": "4 kHz",
+    "en": "4 kHz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f=1/T=1/500 μs$ = 2 kHz.",
+   "en": "$f=1/T=1/500 μs$ = 2 kHz."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tần số từ chu kỳ",
+   "en": "Added · Frequency from period"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xung có độ rộng 2 μs và chu kỳ 8 μs. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A pulse has a width of 2 μs and a period of 8 μs. The duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   },
+   {
+    "vi": "75 %",
+    "en": "75 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W/T\\times100$ = 25 %.",
+   "en": "$t_W/T\\times100$ = 25 %."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xung có độ rộng 3 ms và chu kỳ 10 ms. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A pulse has a width of 3 ms and a period of 10 ms. The duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "30 %",
+    "en": "30 %"
+   },
+   {
+    "vi": "60 %",
+    "en": "60 %"
+   },
+   {
+    "vi": "15 %",
+    "en": "15 %"
+   },
+   {
+    "vi": "70 %",
+    "en": "70 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W/T\\times100$ = 30 %.",
+   "en": "$t_W/T\\times100$ = 30 %."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xung có độ rộng 5 ns và chu kỳ 20 ns. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A pulse has a width of 5 ns and a period of 20 ns. The duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   },
+   {
+    "vi": "75 %",
+    "en": "75 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W/T\\times100$ = 25 %.",
+   "en": "$t_W/T\\times100$ = 25 %."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một dạng sóng có chu kỳ 5 ms và chu kỳ làm việc 40 %. Độ rộng xung là:",
+   "en": "A waveform has a period of 5 ms and a duty cycle of 40 %. The pulse width is:"
+  },
+  "opts": [
+   {
+    "vi": "2 ms",
+    "en": "2 ms"
+   },
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   },
+   {
+    "vi": "3 ms",
+    "en": "3 ms"
+   },
+   {
+    "vi": "4 ms",
+    "en": "4 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W=0{,}40\\times5$ ms = 2 ms.",
+   "en": "$t_W=0.40\\times5$ ms = 2 ms."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Độ rộng xung",
+   "en": "Added · Pulse width"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với 6 bit nhị phân có thể biểu diễn bao nhiêu giá trị khác nhau?",
+   "en": "How many different values can 6 binary bits represent?"
+  },
+  "opts": [
+   {
+    "vi": "64",
+    "en": "64"
+   },
+   {
+    "vi": "36",
+    "en": "36"
+   },
+   {
+    "vi": "12",
+    "en": "12"
+   },
+   {
+    "vi": "63",
+    "en": "63"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^6=64$ (từ 0 đến 63).",
+   "en": "$2^6=64$ (from 0 to 63)."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số giá trị của n bit",
+   "en": "Added · Values of n bits"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với 8 bit nhị phân có thể biểu diễn bao nhiêu giá trị khác nhau?",
+   "en": "How many different values can 8 binary bits represent?"
+  },
+  "opts": [
+   {
+    "vi": "256",
+    "en": "256"
+   },
+   {
+    "vi": "64",
+    "en": "64"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "255",
+    "en": "255"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^8=256$ (từ 0 đến 255).",
+   "en": "$2^8=256$ (from 0 to 255)."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số giá trị của n bit",
+   "en": "Added · Values of n bits"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với 10 bit nhị phân có thể biểu diễn bao nhiêu giá trị khác nhau?",
+   "en": "How many different values can 10 binary bits represent?"
+  },
+  "opts": [
+   {
+    "vi": "1024",
+    "en": "1024"
+   },
+   {
+    "vi": "100",
+    "en": "100"
+   },
+   {
+    "vi": "20",
+    "en": "20"
+   },
+   {
+    "vi": "1023",
+    "en": "1023"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^10=1024$ (từ 0 đến 1023).",
+   "en": "$2^10=1024$ (from 0 to 1023)."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số giá trị của n bit",
+   "en": "Added · Values of n bits"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Xung clock 1 MHz. Số xung clock xảy ra trong 2,5 ms là:",
+   "en": "A 1 MHz clock. The number of clock pulses in 2.5 ms is:"
+  },
+  "opts": [
+   {
+    "vi": "2,500",
+    "en": "2,500"
+   },
+   {
+    "vi": "250",
+    "en": "250"
+   },
+   {
+    "vi": "25,000",
+    "en": "25,000"
+   },
+   {
+    "vi": "2.5",
+    "en": "2.5"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$f\\,t=10^6\\times2{,}5\\times10^{-3}$ = 2 500 xung.",
+   "en": "$f\\,t=10^6\\times2.5\\times10^{-3}$ = 2,500 pulses."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số xung clock",
+   "en": "Added · Number of clock pulses"
+  }
+ }
+]

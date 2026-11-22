@@ -1,0 +1,1931 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một BAG 8 ms tương ứng với tần số (số khung tối đa mỗi giây) là:",
+   "en": "A BAG of 8 ms corresponds to a frequency (maximum frames per second) of:"
+  },
+  "opts": [
+   {
+    "vi": "125 Hz",
+    "en": "125 Hz"
+   },
+   {
+    "vi": "250 Hz",
+    "en": "250 Hz"
+   },
+   {
+    "vi": "62.5 Hz",
+    "en": "62.5 Hz"
+   },
+   {
+    "vi": "8 Hz",
+    "en": "8 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$1000/8=125$ Hz (bảng 16.1).",
+   "en": "$1000/8=125$ Hz (Table 16.1)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · BAG và tần số",
+   "en": "Added · BAG and frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một BAG 32 ms tương ứng với tần số (số khung tối đa mỗi giây) là:",
+   "en": "A BAG of 32 ms corresponds to a frequency (maximum frames per second) of:"
+  },
+  "opts": [
+   {
+    "vi": "31.25 Hz",
+    "en": "31.25 Hz"
+   },
+   {
+    "vi": "62.5 Hz",
+    "en": "62.5 Hz"
+   },
+   {
+    "vi": "15.625 Hz",
+    "en": "15.625 Hz"
+   },
+   {
+    "vi": "32 Hz",
+    "en": "32 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$1000/32=31.25$ Hz (bảng 16.1).",
+   "en": "$1000/32=31.25$ Hz (Table 16.1)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · BAG và tần số",
+   "en": "Added · BAG and frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một BAG 128 ms tương ứng với tần số (số khung tối đa mỗi giây) là:",
+   "en": "A BAG of 128 ms corresponds to a frequency (maximum frames per second) of:"
+  },
+  "opts": [
+   {
+    "vi": "7.8125 Hz",
+    "en": "7.8125 Hz"
+   },
+   {
+    "vi": "15.625 Hz",
+    "en": "15.625 Hz"
+   },
+   {
+    "vi": "3.90625 Hz",
+    "en": "3.90625 Hz"
+   },
+   {
+    "vi": "128 Hz",
+    "en": "128 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$1000/128=7.8125$ Hz (bảng 16.1).",
+   "en": "$1000/128=7.8125$ Hz (Table 16.1)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · BAG và tần số",
+   "en": "Added · BAG and frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một BAG 2 ms tương ứng với tần số (số khung tối đa mỗi giây) là:",
+   "en": "A BAG of 2 ms corresponds to a frequency (maximum frames per second) of:"
+  },
+  "opts": [
+   {
+    "vi": "500 Hz",
+    "en": "500 Hz"
+   },
+   {
+    "vi": "1000 Hz",
+    "en": "1000 Hz"
+   },
+   {
+    "vi": "250 Hz",
+    "en": "250 Hz"
+   },
+   {
+    "vi": "2 Hz",
+    "en": "2 Hz"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$1000/2=500$ Hz (bảng 16.1).",
+   "en": "$1000/2=500$ Hz (Table 16.1)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · BAG và tần số",
+   "en": "Added · BAG and frequency"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng avionics cung cấp dữ liệu 100 lần mỗi giây vào một VL. BAG lớn nhất có thể chọn (ms) là:",
+   "en": "An avionics port supplies data 100 times a second to a VL. The largest BAG (ms) that can be chosen is:"
+  },
+  "opts": [
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $1000/\\text{BAG}\\ge100$ Hz; trong các giá trị 1, 2, 4, ..., 128 ms, lớn nhất thoả là 8 ms (125 Hz).",
+   "en": "We need $1000/\\text{BAG}\\ge100$ Hz; of 1, 2, 4, ..., 128 ms the largest that works is 8 ms (125 Hz)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chọn BAG",
+   "en": "Added · Choosing a BAG"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng avionics cung cấp dữ liệu 30 lần mỗi giây vào một VL. BAG lớn nhất có thể chọn (ms) là:",
+   "en": "An avionics port supplies data 30 times a second to a VL. The largest BAG (ms) that can be chosen is:"
+  },
+  "opts": [
+   {
+    "vi": "32",
+    "en": "32"
+   },
+   {
+    "vi": "64",
+    "en": "64"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $1000/\\text{BAG}\\ge30$ Hz; trong các giá trị 1, 2, 4, ..., 128 ms, lớn nhất thoả là 32 ms (31.25 Hz).",
+   "en": "We need $1000/\\text{BAG}\\ge30$ Hz; of 1, 2, 4, ..., 128 ms the largest that works is 32 ms (31.25 Hz)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chọn BAG",
+   "en": "Added · Choosing a BAG"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng avionics cung cấp dữ liệu 200 lần mỗi giây vào một VL. BAG lớn nhất có thể chọn (ms) là:",
+   "en": "An avionics port supplies data 200 times a second to a VL. The largest BAG (ms) that can be chosen is:"
+  },
+  "opts": [
+   {
+    "vi": "4",
+    "en": "4"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "1",
+    "en": "1"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $1000/\\text{BAG}\\ge200$ Hz; trong các giá trị 1, 2, 4, ..., 128 ms, lớn nhất thoả là 4 ms (250 Hz).",
+   "en": "We need $1000/\\text{BAG}\\ge200$ Hz; of 1, 2, 4, ..., 128 ms the largest that works is 4 ms (250 Hz)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chọn BAG",
+   "en": "Added · Choosing a BAG"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng avionics cung cấp dữ liệu 60 lần mỗi giây vào một VL. BAG lớn nhất có thể chọn (ms) là:",
+   "en": "An avionics port supplies data 60 times a second to a VL. The largest BAG (ms) that can be chosen is:"
+  },
+  "opts": [
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $1000/\\text{BAG}\\ge60$ Hz; trong các giá trị 1, 2, 4, ..., 128 ms, lớn nhất thoả là 16 ms (62.5 Hz).",
+   "en": "We need $1000/\\text{BAG}\\ge60$ Hz; of 1, 2, 4, ..., 128 ms the largest that works is 16 ms (62.5 Hz)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chọn BAG",
+   "en": "Added · Choosing a BAG"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng avionics cung cấp dữ liệu 10 lần mỗi giây vào một VL. BAG lớn nhất có thể chọn (ms) là:",
+   "en": "An avionics port supplies data 10 times a second to a VL. The largest BAG (ms) that can be chosen is:"
+  },
+  "opts": [
+   {
+    "vi": "64",
+    "en": "64"
+   },
+   {
+    "vi": "128",
+    "en": "128"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cần $1000/\\text{BAG}\\ge10$ Hz; trong các giá trị 1, 2, 4, ..., 128 ms, lớn nhất thoả là 64 ms (15.625 Hz).",
+   "en": "We need $1000/\\text{BAG}\\ge10$ Hz; of 1, 2, 4, ..., 128 ms the largest that works is 64 ms (15.625 Hz)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chọn BAG",
+   "en": "Added · Choosing a BAG"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một VL có chiều dài khung lớn nhất 1518 byte và BAG 4 ms. Tốc độ bit lớn nhất của VL là:",
+   "en": "A VL has a maximum frame length of 1518 bytes and a BAG of 4 ms. The maximum bit rate of the VL is:"
+  },
+  "opts": [
+   {
+    "vi": "3.036 Mbit/s",
+    "en": "3.036 Mbit/s"
+   },
+   {
+    "vi": "379.5 kbit/s",
+    "en": "379.5 kbit/s"
+   },
+   {
+    "vi": "24.288 Mbit/s",
+    "en": "24.288 Mbit/s"
+   },
+   {
+    "vi": "6.072 Mbit/s",
+    "en": "6.072 Mbit/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$L_{max}\\times8\\times1000/\\text{BAG}=1518\\times8\\times1000/4$ = 3.036 Mbit/s.",
+   "en": "$L_{max}\\times8\\times1000/\\text{BAG}=1518\\times8\\times1000/4$ = 3.036 Mbit/s."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tốc độ bit tối đa của VL",
+   "en": "Added · Maximum bit rate of a VL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một VL có chiều dài khung lớn nhất 1518 byte và BAG 1 ms. Tốc độ bit lớn nhất của VL là:",
+   "en": "A VL has a maximum frame length of 1518 bytes and a BAG of 1 ms. The maximum bit rate of the VL is:"
+  },
+  "opts": [
+   {
+    "vi": "12.144 Mbit/s",
+    "en": "12.144 Mbit/s"
+   },
+   {
+    "vi": "1.518 Mbit/s",
+    "en": "1.518 Mbit/s"
+   },
+   {
+    "vi": "97.152 Mbit/s",
+    "en": "97.152 Mbit/s"
+   },
+   {
+    "vi": "24.288 Mbit/s",
+    "en": "24.288 Mbit/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$L_{max}\\times8\\times1000/\\text{BAG}=1518\\times8\\times1000/1$ = 12.144 Mbit/s.",
+   "en": "$L_{max}\\times8\\times1000/\\text{BAG}=1518\\times8\\times1000/1$ = 12.144 Mbit/s."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tốc độ bit tối đa của VL",
+   "en": "Added · Maximum bit rate of a VL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một VL có chiều dài khung lớn nhất 512 byte và BAG 16 ms. Tốc độ bit lớn nhất của VL là:",
+   "en": "A VL has a maximum frame length of 512 bytes and a BAG of 16 ms. The maximum bit rate of the VL is:"
+  },
+  "opts": [
+   {
+    "vi": "256 kbit/s",
+    "en": "256 kbit/s"
+   },
+   {
+    "vi": "32 kbit/s",
+    "en": "32 kbit/s"
+   },
+   {
+    "vi": "2.048 Mbit/s",
+    "en": "2.048 Mbit/s"
+   },
+   {
+    "vi": "512 kbit/s",
+    "en": "512 kbit/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$L_{max}\\times8\\times1000/\\text{BAG}=512\\times8\\times1000/16$ = 256 kbit/s.",
+   "en": "$L_{max}\\times8\\times1000/\\text{BAG}=512\\times8\\times1000/16$ = 256 kbit/s."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tốc độ bit tối đa của VL",
+   "en": "Added · Maximum bit rate of a VL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một VL có chiều dài khung lớn nhất 64 byte và BAG 2 ms. Tốc độ bit lớn nhất của VL là:",
+   "en": "A VL has a maximum frame length of 64 bytes and a BAG of 2 ms. The maximum bit rate of the VL is:"
+  },
+  "opts": [
+   {
+    "vi": "256 kbit/s",
+    "en": "256 kbit/s"
+   },
+   {
+    "vi": "32 kbit/s",
+    "en": "32 kbit/s"
+   },
+   {
+    "vi": "2.048 Mbit/s",
+    "en": "2.048 Mbit/s"
+   },
+   {
+    "vi": "512 kbit/s",
+    "en": "512 kbit/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$L_{max}\\times8\\times1000/\\text{BAG}=64\\times8\\times1000/2$ = 256 kbit/s.",
+   "en": "$L_{max}\\times8\\times1000/\\text{BAG}=64\\times8\\times1000/2$ = 256 kbit/s."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tốc độ bit tối đa của VL",
+   "en": "Added · Maximum bit rate of a VL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một VL có chiều dài khung lớn nhất 1000 byte và BAG 8 ms. Tốc độ bit lớn nhất của VL là:",
+   "en": "A VL has a maximum frame length of 1000 bytes and a BAG of 8 ms. The maximum bit rate of the VL is:"
+  },
+  "opts": [
+   {
+    "vi": "1 Mbit/s",
+    "en": "1 Mbit/s"
+   },
+   {
+    "vi": "125 kbit/s",
+    "en": "125 kbit/s"
+   },
+   {
+    "vi": "8 Mbit/s",
+    "en": "8 Mbit/s"
+   },
+   {
+    "vi": "2 Mbit/s",
+    "en": "2 Mbit/s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$L_{max}\\times8\\times1000/\\text{BAG}=1000\\times8\\times1000/8$ = 1 Mbit/s.",
+   "en": "$L_{max}\\times8\\times1000/\\text{BAG}=1000\\times8\\times1000/8$ = 1 Mbit/s."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tốc độ bit tối đa của VL",
+   "en": "Added · Maximum bit rate of a VL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khung AFDX mang 100 byte dữ liệu (payload). Chiều dài khung (không tính tiền tố và khoảng cách giữa khung) là:",
+   "en": "An AFDX frame carries 100 bytes of payload. The frame length (not counting the preamble and the inter-frame gap) is:"
+  },
+  "opts": [
+   {
+    "vi": "147 byte",
+    "en": "147 bytes"
+   },
+   {
+    "vi": "143 byte",
+    "en": "143 bytes"
+   },
+   {
+    "vi": "159 byte",
+    "en": "159 bytes"
+   },
+   {
+    "vi": "114 byte",
+    "en": "114 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "6 + 6 + 2 + 20 + 8 + 100 + 1 (SN) + 4 (FCS) = 147 byte.",
+   "en": "6 + 6 + 2 + 20 + 8 + 100 + 1 (SN) + 4 (FCS) = 147 bytes."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chiều dài khung AFDX",
+   "en": "Added · AFDX frame length"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khung AFDX mang 10 byte dữ liệu (payload). Chiều dài khung (không tính tiền tố và khoảng cách giữa khung) là:",
+   "en": "An AFDX frame carries 10 bytes of payload. The frame length (not counting the preamble and the inter-frame gap) is:"
+  },
+  "opts": [
+   {
+    "vi": "64 byte",
+    "en": "64 bytes"
+   },
+   {
+    "vi": "60 byte",
+    "en": "60 bytes"
+   },
+   {
+    "vi": "76 byte",
+    "en": "76 bytes"
+   },
+   {
+    "vi": "24 byte",
+    "en": "24 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "6 + 6 + 2 + 20 + 8 + 10 + 7 (đệm cho đủ 17) + 1 (SN) + 4 (FCS) = 64 byte.",
+   "en": "6 + 6 + 2 + 20 + 8 + 10 + 7 (padding up to 17) + 1 (SN) + 4 (FCS) = 64 bytes."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chiều dài khung AFDX",
+   "en": "Added · AFDX frame length"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khung AFDX mang 1471 byte dữ liệu (payload). Chiều dài khung (không tính tiền tố và khoảng cách giữa khung) là:",
+   "en": "An AFDX frame carries 1471 bytes of payload. The frame length (not counting the preamble and the inter-frame gap) is:"
+  },
+  "opts": [
+   {
+    "vi": "1518 byte",
+    "en": "1518 bytes"
+   },
+   {
+    "vi": "1514 byte",
+    "en": "1514 bytes"
+   },
+   {
+    "vi": "1530 byte",
+    "en": "1530 bytes"
+   },
+   {
+    "vi": "1485 byte",
+    "en": "1485 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "6 + 6 + 2 + 20 + 8 + 1471 + 1 (SN) + 4 (FCS) = 1518 byte.",
+   "en": "6 + 6 + 2 + 20 + 8 + 1471 + 1 (SN) + 4 (FCS) = 1518 bytes."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chiều dài khung AFDX",
+   "en": "Added · AFDX frame length"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một khung AFDX mang 1 byte dữ liệu (payload). Chiều dài khung (không tính tiền tố và khoảng cách giữa khung) là:",
+   "en": "An AFDX frame carries 1 bytes of payload. The frame length (not counting the preamble and the inter-frame gap) is:"
+  },
+  "opts": [
+   {
+    "vi": "64 byte",
+    "en": "64 bytes"
+   },
+   {
+    "vi": "60 byte",
+    "en": "60 bytes"
+   },
+   {
+    "vi": "76 byte",
+    "en": "76 bytes"
+   },
+   {
+    "vi": "15 byte",
+    "en": "15 bytes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "6 + 6 + 2 + 20 + 8 + 1 + 16 (đệm cho đủ 17) + 1 (SN) + 4 (FCS) = 64 byte.",
+   "en": "6 + 6 + 2 + 20 + 8 + 1 + 16 (padding up to 17) + 1 (SN) + 4 (FCS) = 64 bytes."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chiều dài khung AFDX",
+   "en": "Added · AFDX frame length"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thời gian truyền một khung 1518 byte trên mạng 10 Mbit/s (chỉ tính bản thân khung) là:",
+   "en": "The time to transmit a 1518-byte frame on a 10 Mbit/s network (the frame itself only) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.2144 ms",
+    "en": "1.2144 ms"
+   },
+   {
+    "vi": "9.7152 ms",
+    "en": "9.7152 ms"
+   },
+   {
+    "vi": "151.8 μs",
+    "en": "151.8 μs"
+   },
+   {
+    "vi": "12.144 ms",
+    "en": "12.144 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$1518\\times8/(10\\times10^6)$ = 1.2144 ms.",
+   "en": "$1518\\times8/(10\\times10^6)$ = 1.2144 ms."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian truyền khung",
+   "en": "Added · Frame transmission time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thời gian truyền một khung 1518 byte trên mạng 100 Mbit/s (chỉ tính bản thân khung) là:",
+   "en": "The time to transmit a 1518-byte frame on a 100 Mbit/s network (the frame itself only) is:"
+  },
+  "opts": [
+   {
+    "vi": "121.44 μs",
+    "en": "121.44 μs"
+   },
+   {
+    "vi": "971.52 μs",
+    "en": "971.52 μs"
+   },
+   {
+    "vi": "15.18 μs",
+    "en": "15.18 μs"
+   },
+   {
+    "vi": "1.2144 ms",
+    "en": "1.2144 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$1518\\times8/(100\\times10^6)$ = 121.44 μs.",
+   "en": "$1518\\times8/(100\\times10^6)$ = 121.44 μs."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian truyền khung",
+   "en": "Added · Frame transmission time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thời gian truyền một khung 64 byte trên mạng 100 Mbit/s (chỉ tính bản thân khung) là:",
+   "en": "The time to transmit a 64-byte frame on a 100 Mbit/s network (the frame itself only) is:"
+  },
+  "opts": [
+   {
+    "vi": "5.12 μs",
+    "en": "5.12 μs"
+   },
+   {
+    "vi": "40.96 μs",
+    "en": "40.96 μs"
+   },
+   {
+    "vi": "0.64 μs",
+    "en": "0.64 μs"
+   },
+   {
+    "vi": "51.2 μs",
+    "en": "51.2 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$64\\times8/(100\\times10^6)$ = 5.12 μs.",
+   "en": "$64\\times8/(100\\times10^6)$ = 5.12 μs."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian truyền khung",
+   "en": "Added · Frame transmission time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách giữa khung (inter-frame gap) của AFDX dài 12 byte. Trên mạng 100 Mbit/s nó kéo dài:",
+   "en": "The AFDX inter-frame gap is 12 bytes long. On a 100 Mbit/s network it lasts:"
+  },
+  "opts": [
+   {
+    "vi": "0.96 μs",
+    "en": "0.96 μs"
+   },
+   {
+    "vi": "7.68 μs",
+    "en": "7.68 μs"
+   },
+   {
+    "vi": "0.12 μs",
+    "en": "0.12 μs"
+   },
+   {
+    "vi": "11.52 μs",
+    "en": "11.52 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$12\\times8/(100\\times10^6)$ = 0.96 μs.",
+   "en": "$12\\times8/(100\\times10^6)$ = 0.96 μs."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khoảng cách giữa khung",
+   "en": "Added · Inter-frame gap"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách giữa khung (inter-frame gap) của AFDX dài 12 byte. Trên mạng 10 Mbit/s nó kéo dài:",
+   "en": "The AFDX inter-frame gap is 12 bytes long. On a 10 Mbit/s network it lasts:"
+  },
+  "opts": [
+   {
+    "vi": "9.6 μs",
+    "en": "9.6 μs"
+   },
+   {
+    "vi": "76.8 μs",
+    "en": "76.8 μs"
+   },
+   {
+    "vi": "1.2 μs",
+    "en": "1.2 μs"
+   },
+   {
+    "vi": "115.2 μs",
+    "en": "115.2 μs"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$12\\times8/(10\\times10^6)$ = 9.6 μs.",
+   "en": "$12\\times8/(10\\times10^6)$ = 9.6 μs."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khoảng cách giữa khung",
+   "en": "Added · Inter-frame gap"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một end system gửi các khung liên tiếp; khung vừa gửi có số thứ tự 255. Số thứ tự của khung kế tiếp là:",
+   "en": "An end system sends successive frames; the frame just sent has sequence number 255. The next sequence number is:"
+  },
+  "opts": [
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "256",
+    "en": "256"
+   },
+   {
+    "vi": "255",
+    "en": "255"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "SN tăng tới 255 rồi quay về 1 (không về 0; 0 chỉ dùng khi khởi động hoặc đặt lại).",
+   "en": "The SN increments to 255 and wraps to 1 (not 0; 0 is only used at start-up or reset)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số thứ tự",
+   "en": "Added · Sequence number"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sau khởi động, số thứ tự các khung 1, 2, 3, ... lần lượt là 0, 1, 2, ... Khung thứ 257 mang số thứ tự:",
+   "en": "After start-up the sequence numbers of frames 1, 2, 3, ... are 0, 1, 2, ... The 257th frame carries the sequence number:"
+  },
+  "opts": [
+   {
+    "vi": "1",
+    "en": "1"
+   },
+   {
+    "vi": "0",
+    "en": "0"
+   },
+   {
+    "vi": "2",
+    "en": "2"
+   },
+   {
+    "vi": "256",
+    "en": "256"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khung thứ 256 có SN 255; khung 257 quay về 1.",
+   "en": "Frame 256 has SN 255; frame 257 wraps to 1."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số thứ tự",
+   "en": "Added · Sequence number"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong lùi theo hàm mũ nhị phân, khoảng thời gian ngẫu nhiên đầu tiên là T. Sau lần va chạm thứ 3, khoảng chọn thời điểm truyền lại là:",
+   "en": "In binary exponential back-off the first random interval is T. After collision number 3 the interval for choosing the retransmission time is:"
+  },
+  "opts": [
+   {
+    "vi": "4T",
+    "en": "4T"
+   },
+   {
+    "vi": "3T",
+    "en": "3T"
+   },
+   {
+    "vi": "9T",
+    "en": "9T"
+   },
+   {
+    "vi": "T",
+    "en": "T"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Gấp đôi sau mỗi lần va chạm: $2^{2}T=4T$.",
+   "en": "It doubles with each collision: $2^{2}T=4T$."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Lùi hàm mũ nhị phân",
+   "en": "Added · Binary exponential back-off"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong lùi theo hàm mũ nhị phân, khoảng thời gian ngẫu nhiên đầu tiên là T. Sau lần va chạm thứ 4, khoảng chọn thời điểm truyền lại là:",
+   "en": "In binary exponential back-off the first random interval is T. After collision number 4 the interval for choosing the retransmission time is:"
+  },
+  "opts": [
+   {
+    "vi": "8T",
+    "en": "8T"
+   },
+   {
+    "vi": "4T",
+    "en": "4T"
+   },
+   {
+    "vi": "16T",
+    "en": "16T"
+   },
+   {
+    "vi": "T",
+    "en": "T"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Gấp đôi sau mỗi lần va chạm: $2^{3}T=8T$.",
+   "en": "It doubles with each collision: $2^{3}T=8T$."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Lùi hàm mũ nhị phân",
+   "en": "Added · Binary exponential back-off"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong lùi theo hàm mũ nhị phân, khoảng thời gian ngẫu nhiên đầu tiên là T. Sau lần va chạm thứ 5, khoảng chọn thời điểm truyền lại là:",
+   "en": "In binary exponential back-off the first random interval is T. After collision number 5 the interval for choosing the retransmission time is:"
+  },
+  "opts": [
+   {
+    "vi": "16T",
+    "en": "16T"
+   },
+   {
+    "vi": "5T",
+    "en": "5T"
+   },
+   {
+    "vi": "25T",
+    "en": "25T"
+   },
+   {
+    "vi": "T",
+    "en": "T"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Gấp đôi sau mỗi lần va chạm: $2^{4}T=16T$.",
+   "en": "It doubles with each collision: $2^{4}T=16T$."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Lùi hàm mũ nhị phân",
+   "en": "Added · Binary exponential back-off"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ARINC 664 thay thế ARINC 429 với băng thông gấp khoảng một nghìn lần (theo Tooley 18.5). Nếu ARINC 429 tốc độ cao là 100 kbit/s thì mạng AFDX 100 Mbit/s hơn bao nhiêu lần?",
+   "en": "ARINC 664 replaces ARINC 429 with about a thousand times the bandwidth (Tooley 18.5). If high-speed ARINC 429 is 100 kbit/s, how many times faster is a 100 Mbit/s AFDX network?"
+  },
+  "opts": [
+   {
+    "vi": "1,000",
+    "en": "1,000"
+   },
+   {
+    "vi": "100",
+    "en": "100"
+   },
+   {
+    "vi": "10",
+    "en": "10"
+   },
+   {
+    "vi": "10,000",
+    "en": "10,000"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "100 Mbit/s / 100 kbit/s = 1 000.",
+   "en": "100 Mbit/s / 100 kbit/s = 1,000."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · AFDX so với ARINC 429",
+   "en": "Added · AFDX versus ARINC 429"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "AFDX là cách triển khai của chuẩn ARINC nào, dựa trên công nghệ nào?",
+   "en": "AFDX is an implementation of which ARINC standard, based on which technology?"
+  },
+  "opts": [
+   {
+    "vi": "ARINC 664, dựa trên Ethernet IEEE 802.3",
+    "en": "ARINC 664, based on IEEE 802.3 ethernet"
+   },
+   {
+    "vi": "ARINC 429, dựa trên IEEE 802.5",
+    "en": "ARINC 429, based on IEEE 802.5"
+   },
+   {
+    "vi": "ARINC 653, dựa trên USB",
+    "en": "ARINC 653, based on USB"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dùng linh kiện thương mại sẵn có (COTS) để giảm chi phí (Tooley 16.5).",
+   "en": "It uses commercial off-the-shelf (COTS) parts to cut cost (Tooley 16.5)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · AFDX là gì",
+   "en": "Added · What AFDX is"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "AFDX ban đầu được phát triển cho máy bay nào và hiện cũng được triển khai trên máy bay nào (theo Tooley)?",
+   "en": "AFDX was originally developed for which aircraft, and is now also introduced on which (according to Tooley)?"
+  },
+  "opts": [
+   {
+    "vi": "Airbus A380; Boeing 787 Dreamliner",
+    "en": "Airbus A380; Boeing 787 Dreamliner"
+   },
+   {
+    "vi": "Boeing 747; Airbus A300",
+    "en": "Boeing 747; Airbus A300"
+   },
+   {
+    "vi": "Airbus A320; Boeing 737",
+    "en": "Airbus A320; Boeing 737"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 16.5.",
+   "en": "Tooley 16.5."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · AFDX: ứng dụng",
+   "en": "Added · AFDX: use"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "CSMA/CD của Ethernet nghĩa là:",
+   "en": "Ethernet's CSMA/CD stands for:"
+  },
+  "opts": [
+   {
+    "vi": "cảm nhận sóng mang, đa truy cập, phát hiện va chạm",
+    "en": "carrier sense, multiple access, collision detection"
+   },
+   {
+    "vi": "truyền liên tục, đa kênh, kiểm tra dữ liệu",
+    "en": "continuous send, multiple channel, check data"
+   },
+   {
+    "vi": "kiểm tra chẵn lẻ, đa tầng, phát hiện lỗi",
+    "en": "check parity, multi-stage, catch defects"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "CS: biết bus rảnh hay bận; MA: nhiều máy dùng chung bus; CD: phát hiện va chạm (Tooley 16.4).",
+   "en": "CS: know whether the bus is idle or busy; MA: many hosts share the bus; CD: detect collisions (Tooley 16.4)."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · CSMA/CD",
+   "en": "Added · CSMA/CD"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bốn kiểu cấu trúc (topology) LAN thường gặp là:",
+   "en": "The four commonly met LAN topologies are:"
+  },
+  "opts": [
+   {
+    "vi": "sao, vòng, cây và bus",
+    "en": "star, ring, tree and bus"
+   },
+   {
+    "vi": "sao, lưới, cầu và bus",
+    "en": "star, mesh, bridge and bus"
+   },
+   {
+    "vi": "vòng, ngôi sao, hình cầu và đường thẳng",
+    "en": "ring, star, sphere and line"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bus thực chất là cây chỉ có một thân và không có nhánh (Tooley 16.3).",
+   "en": "A bus is effectively a tree with one trunk and no branches (Tooley 16.3)."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Topology LAN",
+   "en": "Added · LAN topology"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong cấu trúc hình sao, hai nút muốn liên lạc với nhau thì:",
+   "en": "In a star topology two nodes that want to communicate:"
+  },
+  "opts": [
+   {
+    "vi": "gửi yêu cầu tới phần tử chuyển mạch trung tâm, nơi cấp một đường riêng giữa chúng",
+    "en": "send a request to the central switching element, which gives them a dedicated path"
+   },
+   {
+    "vi": "chờ tới lượt trên một vòng kín",
+    "en": "wait for their turn on a closed ring"
+   },
+   {
+    "vi": "cùng phát lên một cáp chung và tránh va chạm",
+    "en": "transmit on one shared cable and avoid collisions"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bus, cây dùng môi trường đa truy cập nên tại một thời điểm chỉ một thiết bị phát được (Tooley 16.3).",
+   "en": "Bus and tree use a multiple-access medium so only one device can transmit at a time (Tooley 16.3)."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Hình sao",
+   "en": "Added · Star topology"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào sau đây là một yêu cầu của LAN theo Tooley 16.2?",
+   "en": "Which of the following is a LAN requirement in Tooley 16.2?"
+  },
+  "opts": [
+   {
+    "vi": "tốc độ dữ liệu cao (ví dụ 10 đến 100 Mbps) và tầm với vài trăm mét dùng cáp rẻ, nhẹ",
+    "en": "a high data rate (e.g. 10 to 100 Mbps) and a range of several hundred metres on low-cost, light cabling"
+   },
+   {
+    "vi": "chỉ dùng một thiết bị điều khiển trung tâm duy nhất",
+    "en": "a single central controlling device only"
+   },
+   {
+    "vi": "tầm với hàng nghìn km",
+    "en": "a range of thousands of kilometres"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "LAN nên ít phụ thuộc vào thành phần tập trung (Tooley 16.2).",
+   "en": "A LAN should exhibit minimum reliance on centralised components (Tooley 16.2)."
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Yêu cầu LAN",
+   "en": "Added · LAN requirements"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao Ethernet thương mại thông thường không đủ vững chắc cho hàng không vũ trụ?",
+   "en": "Why is standard commercial-grade ethernet not robust enough for aerospace?"
+  },
+  "opts": [
+   {
+    "vi": "vì không bảo đảm dữ liệu được truyền trong một khoảng thời gian cụ thể (không tất định)",
+    "en": "because it gives no guarantee that data will be transferred within a particular time interval (it is not deterministic)"
+   },
+   {
+    "vi": "vì nó quá nhanh",
+    "en": "because it is too fast"
+   },
+   {
+    "vi": "vì nó không dùng được dây xoắn",
+    "en": "because it cannot use twisted pair"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mạng an toàn cần biết trước độ trễ lớn nhất (Tooley 16.6). AFDX bổ sung QoS, tính tất định và băng thông dành riêng.",
+   "en": "A safety-critical network must be predictable in its maximum delay (Tooley 16.6). AFDX adds QoS, determinism and guaranteed dedicated bandwidth."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tính tất định",
+   "en": "Added · Determinism"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong AFDX, gói tin được định tuyến theo gì, khác với switch Ethernet thông thường dùng địa chỉ MAC đích?",
+   "en": "In AFDX packets are routed by what, unlike a conventional ethernet switch that uses the destination MAC address?"
+  },
+  "opts": [
+   {
+    "vi": "số nhận dạng liên kết ảo (VL ID) 16 bit",
+    "en": "a 16-bit virtual link identifier (VL ID)"
+   },
+   {
+    "vi": "địa chỉ IP nguồn",
+    "en": "the source IP address"
+   },
+   {
+    "vi": "số thứ tự khung",
+    "en": "the frame sequence number"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "VL ID nằm trong hai byte cuối của địa chỉ MAC đích, theo sau trường hằng số 32 bit (Tooley 16.7, 16.9).",
+   "en": "The VL ID sits in the last two bytes of the destination MAC address, following a 32-bit constant field (Tooley 16.7, 16.9)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · VL ID",
+   "en": "Added · VL ID"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào đúng về các liên kết ảo (VL) và băng thông?",
+   "en": "Which statement about virtual links (VL) and bandwidth is correct?"
+  },
+  "opts": [
+   {
+    "vi": "tổng băng thông của các VL không được vượt quá băng thông có sẵn, và truyền hai chiều cần một VL bổ sung",
+    "en": "the total bandwidth of the VLs cannot exceed the available bandwidth, and two-way communication needs a complementary VL"
+   },
+   {
+    "vi": "các VL luôn có băng thông không giới hạn",
+    "en": "VLs always have unlimited bandwidth"
+   },
+   {
+    "vi": "một VL có thể có nhiều end system gửi cùng lúc",
+    "en": "a VL may have several end systems sending at once"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Các sub-VL phụ thuộc VL nhưng không có băng thông bảo đảm (Tooley 16.7).",
+   "en": "Sub-VLs depend on VLs but have no guaranteed bandwidth (Tooley 16.7)."
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Liên kết ảo",
+   "en": "Added · Virtual links"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tiền tố (preamble) trước khung Ethernet gồm:",
+   "en": "The preamble in front of an ethernet frame consists of:"
+  },
+  "opts": [
+   {
+    "vi": "7 byte gồm các bit 0 và 1 xen kẽ, theo sau là 1 byte SFD",
+    "en": "7 bytes of alternating 0 and 1 bits followed by a 1-byte SFD"
+   },
+   {
+    "vi": "một byte toàn số 1",
+    "en": "a single byte of all 1s"
+   },
+   {
+    "vi": "4 byte CRC",
+    "en": "a 4-byte CRC"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tiền tố cho end system thời gian đồng bộ; SFD báo bắt đầu khung thật (Tooley 16.9).",
+   "en": "The preamble gives the end systems time to synchronise; the SFD signals the start of the actual frame (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tiền tố khung",
+   "en": "Added · Frame preamble"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trường Type của khung AFDX luôn mang giá trị 0x0800, nghĩa là:",
+   "en": "The Type field of an AFDX frame always has the value 0x0800, which means:"
+  },
+  "opts": [
+   {
+    "vi": "dùng giao thức Internet phiên bản 4 (IPv4)",
+    "en": "use of Internet Protocol version 4 (IPv4)"
+   },
+   {
+    "vi": "khung có độ dài tối đa",
+    "en": "a maximum-length frame"
+   },
+   {
+    "vi": "khung dự phòng mạng B",
+    "en": "a redundant network B frame"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 16.9.",
+   "en": "Tooley 16.9."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trường Type",
+   "en": "Added · Type field"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai mạng AFDX dự phòng song song được gọi là:",
+   "en": "The two redundant parallel AFDX networks are called:"
+  },
+  "opts": [
+   {
+    "vi": "Mạng A (đỏ) và Mạng B (xanh lam)",
+    "en": "Network A (red) and Network B (blue)"
+   },
+   {
+    "vi": "Mạng chính và mạng phụ chỉ dùng khi hỏng",
+    "en": "the main network and a spare used only after failure"
+   },
+   {
+    "vi": "Mạng IN và OUT",
+    "en": "the IN and OUT networks"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mạng B truyền bản sao chính xác; chỉ cần một luồng dữ liệu hợp lệ nên độ tin cậy tăng (Tooley 16.9).",
+   "en": "Network B carries an exact replica; only one valid data stream is needed so reliability improves (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Dự phòng mạng",
+   "en": "Added · Network redundancy"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Quản lý dự phòng (redundancy management) trong AFDX làm gì?",
+   "en": "What does redundancy management do in AFDX?"
+  },
+  "opts": [
+   {
+    "vi": "phát hiện và loại bỏ các khung trùng lặp (bản sao của khung đã nhận)",
+    "en": "detects and drops replica frames (copies of frames already received)"
+   },
+   {
+    "vi": "tăng độ dài khung",
+    "en": "lengthens the frames"
+   },
+   {
+    "vi": "tắt switch khi quá tải",
+    "en": "switches the switch off when overloaded"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Kiểm tra toàn vẹn thì kiểm tra SN theo đúng thứ tự (Tooley 16.9).",
+   "en": "Integrity checking checks that the SNs are in strict order (Tooley 16.9)."
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Quản lý dự phòng",
+   "en": "Added · Redundancy management"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "IMA khác avionics liên hợp (federated) ở điểm cốt lõi nào?",
+   "en": "What is the core difference between IMA and federated avionics?"
+  },
+  "opts": [
+   {
+    "vi": "nhiều ứng dụng chạy trên nền tính toán dùng chung thay vì mỗi hệ có máy tính riêng",
+    "en": "many applications run on a shared computing platform instead of each system having its own computer"
+   },
+   {
+    "vi": "IMA không dùng máy tính",
+    "en": "IMA uses no computers"
+   },
+   {
+    "vi": "IMA chỉ dùng cho máy bay quân sự",
+    "en": "IMA is for military aircraft only"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "IMA là một khái niệm chứ không phải một bộ công nghệ cụ thể (Tooley 18.1).",
+   "en": "IMA is a concept, not a specific set of technologies (Tooley 18.1)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · IMA và liên hợp",
+   "en": "Added · IMA versus federated"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ba yếu tố chính của IMA gồm nền tính toán tích hợp cao, mạng dự phòng kép dùng chung (ARINC 664/AFDX) và:",
+   "en": "The three key elements of IMA are a high-integrity common computing resource, a shared dual-redundant network (ARINC 664/AFDX) and:"
+  },
+  "opts": [
+   {
+    "vi": "kiến trúc phân tán: ứng dụng phần mềm tập trung cùng các end system đặt từ xa",
+    "en": "a distributed architecture: centrally computed software applications and remotely located end systems"
+   },
+   {
+    "vi": "một cáp đồng trục duy nhất",
+    "en": "a single coaxial cable"
+   },
+   {
+    "vi": "một phi công tự động",
+    "en": "an automatic pilot"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 18.2.",
+   "en": "Tooley 18.2."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Yếu tố của IMA",
+   "en": "Added · IMA elements"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào sau đây có thể được lưu trữ tập trung trên nền IMA?",
+   "en": "Which of the following can be hosted centrally on an IMA platform?"
+  },
+  "opts": [
+   {
+    "vi": "điều hoà không khí, quản lý nhiên liệu, phanh và càng đáp",
+    "en": "air conditioning, fuel management, brakes and landing gear"
+   },
+   {
+    "vi": "chỉ màn hình buồng lái",
+    "en": "cockpit displays only"
+   },
+   {
+    "vi": "chỉ ăng ten GPS",
+    "en": "GPS antennas only"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Còn có bảo vệ băng và mưa, cảm biến tiệm cận, phát hiện cháy (Tooley 18.2).",
+   "en": "Also ice and rain protection, proximity sensing and fire detection (Tooley 18.2)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chức năng IMA",
+   "en": "Added · IMA functions"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "IMA mở khác IMA đóng ở chỗ:",
+   "en": "An open IMA differs from a closed IMA in that it:"
+  },
+  "opts": [
+   {
+    "vi": "hỗ trợ avionics từ nhiều nhà cung cấp",
+    "en": "supports avionics from several suppliers"
+   },
+   {
+    "vi": "chỉ dùng một ngôn ngữ lập trình",
+    "en": "uses only one programming language"
+   },
+   {
+    "vi": "không có mạng",
+    "en": "has no network"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "A380 là bán mở (một nhà cung cấp tủ phần cứng, hệ điều hành chung); Boeing 777 dùng AIMS của Honeywell nên là hệ đóng (Tooley 18.2.1).",
+   "en": "The A380 is semi-open (one hardware cabinet supplier, a shared operating system); the Boeing 777 uses Honeywell's AIMS so it is closed (Tooley 18.2.1)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · IMA mở và đóng",
+   "en": "Added · Open and closed IMA"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên Airbus A380, CPIOM khác IOM ở chỗ:",
+   "en": "On the Airbus A380 a CPIOM differs from an IOM in that it:"
+  },
+  "opts": [
+   {
+    "vi": "CPIOM chứa tài nguyên tính toán lưu trữ ứng dụng avionics; IOM chỉ đổi dữ liệu không-AFDX sang AFDX",
+    "en": "a CPIOM provides computing resource hosting avionic applications; an IOM only converts non-AFDX data to AFDX"
+   },
+   {
+    "vi": "CPIOM chỉ là ăng ten",
+    "en": "a CPIOM is only an antenna"
+   },
+   {
+    "vi": "IOM chạy các ứng dụng quan trọng nhất",
+    "en": "an IOM runs the most critical applications"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 18.3.1.",
+   "en": "Tooley 18.3.1."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · CPIOM và IOM",
+   "en": "Added · CPIOM and IOM"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mỗi ứng dụng avionics trên nền IMA tồn tại trong:",
+   "en": "Each avionic application on an IMA platform lives in:"
+  },
+  "opts": [
+   {
+    "vi": "một phân vùng bộ nhớ riêng (có tường lửa) với lát thời gian riêng",
+    "en": "its own reserved memory partition (firewalled) with a dedicated time slice"
+   },
+   {
+    "vi": "vùng bộ nhớ chung với mọi ứng dụng khác",
+    "en": "a memory area shared with every other application"
+   },
+   {
+    "vi": "một LRU riêng",
+    "en": "its own LRU"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "APEX quản lý phân vùng, tiến trình, thời gian và xử lý lỗi; chuẩn là ARINC 653 (Tooley 18.4).",
+   "en": "The APEX manages partitions, processes, timing and error handling; the standard is ARINC 653 (Tooley 18.4)."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Phân vùng",
+   "en": "Added · Partitions"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao một số chức năng cực kỳ quan trọng (điều khiển bay, điều khiển động cơ) vẫn có thể nằm trên máy tính avionics chuyên dụng theo kiến trúc liên hợp ngay cả khi có IMA?",
+   "en": "Why may some critical functions (flight and engine control) stay on dedicated avionics computers in a federated architecture even where IMA exists?"
+  },
+  "opts": [
+   {
+    "vi": "vì không phải mọi ứng dụng bắt buộc chuyển lên nền IMA",
+    "en": "because not every application has to be moved to the IMA platform"
+   },
+   {
+    "vi": "vì IMA không dùng được mạng",
+    "en": "because IMA cannot use a network"
+   },
+   {
+    "vi": "vì luật cấm",
+    "en": "because the law forbids it"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 18.4: xu hướng chuyển dần, nhưng các ứng dụng tới hạn có thể giữ ở máy tính chuyên dụng.",
+   "en": "Tooley 18.4: the trend is gradual, but critical applications may remain on dedicated computers."
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · IMA và ứng dụng tới hạn",
+   "en": "Added · IMA and critical applications"
+  }
+ }
+]

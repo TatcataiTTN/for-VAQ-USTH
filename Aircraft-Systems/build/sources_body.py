@@ -12,7 +12,7 @@ def jl(p):
 def body(lang, banks):
     vi = lang == 'vi'; h = f'<h1>{"Nguồn, độ phủ và lỗi của nguồn" if vi else "Sources, coverage and source errors"}</h1>'
     h += f'<h2>{"Tài liệu tham khảo của đề cương" if vi else "References of the syllabus"}</h2>'
-    rows = [[f'[{b["syllabus_ref"]}]', esc(b['full']), ('có file trong bộ nguồn' if b['pdf'] else 'KHÔNG có file: không trích, không suy đoán nội dung') if vi else ('file in the source set' if b['pdf'] else 'NO file: not quoted, content not guessed')]
+    rows = [[f'[{b["syllabus_ref"]}]', esc(b['full'] if vi else b['full_en']), ('có file trong bộ nguồn' if b['pdf'] else 'KHÔNG có file: không trích, không suy đoán nội dung') if vi else ('file in the source set' if b['pdf'] else 'NO file: not quoted, content not guessed')]
             for b in sorted(BOOKS.values(), key=lambda b: b['syllabus_ref'])]
     h += table(['#', 'Tài liệu' if vi else 'Reference', 'Trạng thái' if vi else 'Status'], rows, 'left')
     h += f'<p class="srcnote">' + ('Đề cương ghi Tooley năm 2007 nhưng file trong bộ nguồn là bản Third Edition: ghi lại, không suy diễn thêm.' if vi else 'The syllabus says Tooley 2007 but the file in the source set is the Third Edition: recorded, nothing inferred.') + '</p>'
@@ -41,7 +41,7 @@ def body(lang, banks):
     for dk, T in slides_body.all_transcripts().items():
         items = [(pg, x) for pg, s_ in sorted(T.items()) for x in slides_body.split_issues(s_)[0]]
         if not items: continue
-        tot += len(items); h += f'<h3><a href="../slides/{dk}.html">{esc(DECKS[dk][lang])}</a></h3><ul>' + ''.join(f'<li><a href="../slides/{dk}.html#s{pg}">{"slide" if vi else "slide"} {pg}</a>: {esc(x)}</li>' for pg, x in items) + '</ul>'
+        tot += len(items); h += f'<h3><a href="../slides/{dk}.html">{esc(DECKS[dk][lang])}</a></h3><ul>' + ''.join(f'<li><a href="../slides/{dk}.html#s{pg}">{"slide" if vi else "slide"} {pg}</a>: {esc(slides_body.note_en(x, lang))}</li>' for pg, x in items) + '</ul>'
     h += '<p class="srcnote">' + (f'{tot} ghi chú từ {len(slides_body.all_transcripts())}/{len(DECKS)} bộ slide đã đọc; các bộ chưa đọc chưa có mục này.' if vi else f'{tot} notes from {len(slides_body.all_transcripts())}/{len(DECKS)} decks read so far; decks not yet read have no entry here.') + '</p>'
     mig = jl('data/verify/migration_notes.json') or {}
     if mig.get('source_fixes'):

@@ -1,0 +1,68 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Một bộ phim 4,7 GB (1 GB = 10⁹ byte) cần nạp vào bộ nhớ IFE. (a) Tính thời gian nạp qua liên kết 100 Mbit/s và qua 1 Gbit/s (bỏ qua mào đầu). (b) Nếu 20 máy bay cần nạp lần lượt 8 phim như vậy qua Gigabit, tổng thời gian? (c) Vì sao Tooley nói Gigabit Ethernet được ưu tiên?",
+   "en": "A 4.7 GB film (1 GB = 10⁹ bytes) must be loaded into the IFE memory. (a) The loading time over a 100 Mbit/s link and over 1 Gbit/s (ignoring overhead). (b) If an aircraft loads 8 such films one after another over Gigabit, the total time? (c) Why does Tooley say Gigabit Ethernet is preferred?"
+  },
+  "sol": {
+   "vi": "(a) $t=4{,}7\\times8\\times10^9/10^8$ = 376 s ≈ 6.3 phút; ở 1 Gbit/s: 37.6 s. (b) 8 × 37.6 s = 300.8 s ≈ 5.0 phút. (c) Tệp phương tiện số rất lớn nên liên kết phải rất nhanh; 100 Mbit/s đủ nhưng chậm gấp 10 lần (Tooley 19.3).",
+   "en": "(a) $t=4.7\\times8\\times10^9/10^8$ = 376 s ≈ 6.3 min; at 1 Gbit/s: 37.6 s. (b) 8 × 37.6 s = 300.8 s ≈ 5.0 min. (c) Digital media files are large so the link must be very fast; 100 Mbit/s suffices but is ten times slower (Tooley 19.3)."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Nạp phương tiện IFE",
+   "en": "Added · IFE media loading"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Chuông cabin thấp là sóng hình sin 494 Hz, chuông cao 587 Hz, mỗi lần chuông kéo dài 900 ms. (a) Chu kỳ mỗi âm. (b) Số chu kỳ trong một lần chuông. (c) Nêu bốn tín hiệu chuông theo quy ước của Tooley và nơi gửi.",
+   "en": "The low cabin chime is a 494 Hz sine wave, the high chime 587 Hz, each lasting 900 ms. (a) The period of each tone. (b) The number of cycles in one chime. (c) State the four chime signals of Tooley's convention and where they are sent from."
+  },
+  "sol": {
+   "vi": "(a) $T_{thấp}=1/494$ = 2.024 ms; $T_{cao}=1/587$ = 1.704 ms. (b) 494 × 0,9 = 444.6 chu kỳ; 587 × 0,9 = 528.3 chu kỳ. (c) Gọi của hành khách: một âm cao, từ ghế và nhà vệ sinh tới tiếp viên; gọi giữa tiếp viên: cao/thấp, giữa các trạm tiếp viên; gọi khẩn cấp: cao/thấp lặp ba lần, từ tổ lái tới tiếp viên; biển dây an toàn sáng: một âm thấp.",
+   "en": "(a) $T_{low}=1/494$ = 2.024 ms; $T_{high}=1/587$ = 1.704 ms. (b) 494 × 0.9 = 444.6 cycles; 587 × 0.9 = 528.3 cycles. (c) Passenger call: a single high tone from seats and toilets to the cabin crew; attendant call: high/low between cabin crew stations; attendant emergency call: high/low repeated three times from the flight crew to the cabin crew; seat belt sign: a single low tone."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chuông cabin",
+   "en": "Added · Cabin chimes"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "So sánh EFB di động và EFB lắp sẵn theo bốn tiêu chí: thuộc thiết kế kiểu loại hay không, cần chứng nhận hay không, phần cứng, ví dụ. Nêu sự khác nhau giữa ứng dụng EFB loại A và B kèm ví dụ.",
+   "en": "Compare portable and installed EFB on four criteria: whether part of the type design, whether certification is needed, the hardware, an example. State the difference between Type A and Type B EFB applications with examples."
+  },
+  "sol": {
+   "vi": "Di động: không thuộc thiết kế kiểu loại dù có đem khỏi tàu bay hay không; không cần chứng nhận; máy tính bảng, laptop dùng pin hoặc nguồn tàu bay; ví dụ iPad, Surface Pro; hỗ trợ ứng dụng loại A hoặc B. Lắp sẵn: thuộc thiết kế kiểu loại (hoặc thay đổi chính thức); cần chứng nhận; hai bộ hiển thị DU trên bảng bên cạnh, mỗi bộ nối với EU trong khoang điện tử (B777: hai máy tính bo mạch đơn, Linux và Windows). Loại A: trình duyệt và trình đọc tài liệu chuẩn (PDF, XML, HTML), hỏng không ảnh hưởng an toàn. Loại B: tính khối lượng cân bằng, công cụ hiệu năng, bản đồ động, không cần phê chuẩn đủ điều kiện bay nhưng nhà khai thác phải đánh giá.",
+   "en": "Portable: not part of the type design whether or not it leaves the aircraft; no certification; a tablet or laptop on battery or aircraft power; e.g. iPad, Surface Pro; supports Type A or B applications. Installed: part of the type design (or an official alteration); needs certification; two display units DU on the side consoles, each linked to an EU in the avionics bay (B777: two single-board computers, Linux and Windows). Type A: browsers and readers of standard documents (PDF, XML, HTML), failure has no safety effect. Type B: mass and balance, performance tools, moving maps, no airworthiness approval but the operator must carry out an assessment."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · EFB di động và lắp sẵn",
+   "en": "Added · Portable versus installed EFB"
+  }
+ }
+]

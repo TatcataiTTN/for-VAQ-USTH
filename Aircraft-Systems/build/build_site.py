@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 import hx
 from hx import esc, deck, divider, callout, quiz_block, table, ul
 from sitelib import page, write, ROOT
-from modules import MODS, COURSE, BOOKS, BYID, DECKS, CLO, CO, slides_of
+from modules import MODS, EXTRA, COURSE, BOOKS, BYID, DECKS, CLO, CO, slides_of
 import legacy
 LANGS = ('vi', 'en')
 S = {
@@ -50,7 +50,11 @@ def load_content(mid, lang):
     if os.path.exists(p):
         mod = importlib.import_module(f'content.{mid}'); importlib.reload(mod)
         return mod.module(lang)
-    if BYID[mid]['status'] == 'live': return legacy.module(mid, lang)        # noi dung cu, chuyen tu dong; se viet lai theo chuan moi o P4
+    if BYID[mid]['status'] == 'live':
+        c = legacy.module(mid, lang)         # noi dung cu, chuyen tu dong; se viet lai theo chuan moi o P4
+        if mid == 'm09' and c:               # phan mo rong ESD (Tooley Ch.12) gan vao ghi chu cua Module 09
+            import content.m09_esd as esdmod; importlib.reload(esdmod); c['notes'] = (c.get('notes') or '') + esdmod.esd(lang)
+        return c
     return None
 
 def pick_quiz(bank, n=10):
@@ -119,7 +123,7 @@ def module_page(m, c, bank, lang):
     if slides_of(m): tags += f'<span class="tag">{s["time"]}: ≈ {hnum(est_hours(m), lang)} {s["hours"]}</span><span class="tag">{len(slides_of(m))} {s["slides_n"]}</span>'
     else: tags += f'<span class="tag">{"không có slide của giảng viên (dựng từ sách)" if lang == "vi" else "no lecturer slides (built from the books)"}</span>'
     h += '<p>' + tags + f'<span class="tag exam">{s["nq"]}: {nq} ({ng} {s["orig"]})</span></p>'
-    h += '<p class="srcnote">' + ' · '.join(esc(x) for x in m['src']) + f' · <a href="../../books/index.html#overview">{s["books_title"]}</a></p>'
+    h += '<p class="srcnote">' + ' · '.join(esc(x) for x in m['src' if lang == 'vi' else 'src_en']) + f' · <a href="../../books/index.html#overview">{s["books_title"]}</a></p>'
     from mapping import MAPPING_ROWS
     mr = next((x for x in MAPPING_ROWS if 'm' + x['module'].split(':')[0].strip() == m['id']), None)
     if mr:
@@ -152,7 +156,7 @@ def bank_page(m, bank, lang):
     data = dict(module=m['id'], items=[localize(i, lang, r) for i in bank['items']], essays=[localize(e, lang, r) for e in bank['essays']])
     js = json.dumps(data, ensure_ascii=False).replace('</', '<\\/')
     h = (f'<div class="crumbs"><a href="../index.html">{s["home"]}</a> › <a href="index.html">{s["prac_title"]}</a> › {m["id"].upper()}</div>'
-         f'<h1>{m["id"][1:]}. {esc(m[lang])}</h1><p class="srcnote">' + ' · '.join(esc(x) for x in m['src']) + '</p>'
+         f'<h1>{m["id"][1:]}. {esc(m[lang])}</h1><p class="srcnote">' + ' · '.join(esc(x) for x in m['src' if lang == 'vi' else 'src_en']) + '</p>'
          f'<div id="bank"></div><script type="application/json" id="bank-data">{js}</script>')
     write(f'{lang}/{rel}', page(m[lang], h, lang, rel, scripts=('bank.js',)))
 
@@ -161,7 +165,7 @@ def stub_page(lang, rel, title):
     write(f'{lang}/{rel}', page(title, f'<h1>{esc(title)}</h1>' + callout('warn', s['soon'], f'<p>{s["stubnote"]}</p>'), lang, rel))
 
 def main():
-    banks = {m['id']: load_bank(m['id']) for m in MODS}
+    banks = {m['id']: load_bank(m['id']) for m in MODS + EXTRA}
     contents = {}
     only = set(filter(None, os.environ.get('ONLY', '').split(',')))
     for lang in LANGS:
@@ -173,6 +177,7 @@ def main():
             b = banks[m['id']]
             if c: module_page(m, c, b, lang)
             if b: bank_page(m, b, lang)
+        import tools_data; tools_data.write_tool_data(lang, banks)
         index_page(lang, contents, banks); practice_index(lang, banks); exam_page(lang, banks); slides_page(lang); transcript_pages(lang); optional_pages(lang, banks)
     for lg in LANGS:        # URL cu chapter-mapping-{vi,en}.html con song: chuyen sang trang Ban do sach moi
         write(f'chapter-mapping-{lg}.html', f'<!doctype html><html lang="{lg}"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url={lg}/books/index.html"><title>{COURSE["code"]}</title></head><body><p><a href="{lg}/books/index.html">{"Bản đồ sách" if lg == "vi" else "Book map"}</a></p></body></html>')
@@ -205,7 +210,7 @@ def index_page(lang, contents, banks):
     rows = [[f'<b>{k}</b>'] + ['●' if k in m['co'] else '' for m in MODS] for k in CO] + [[f'<b>{k}</b>'] + ['●' if k in m['clo'] else '' for m in MODS] for k in CLO]
     rows.append([('Số slide' if vi else 'Slides')] + [str(len(slides_of(m))) or '0' for m in MODS])
     for bk in ('tooley', 'floyd'):
-        rows.append([BOOKS[bk]['short']] + [esc(m['books'][bk]) for m in MODS])
+        rows.append([BOOKS[bk]['short']] + [esc(m['books' if vi else 'books_en'][bk]) for m in MODS])
     h += f'<h2>{"Ma trận độ phủ: CO/CLO × module × slide × sách" if vi else "Coverage matrix: CO/CLO × module × slides × books"}</h2>' + table(head, rows, 'left')
     h += '<p class="srcnote">' + ('CO/CLO gán cho module là đề xuất của site (đề cương không gán CO/CLO cho từng bài). Ánh xạ module-sách ở cấp chương; cấp mục nằm ở Bản đồ sách. Giờ theo module là ước tính theo số slide.' if vi else
                                   'The CO/CLO assigned to each module is the site\'s proposal (the syllabus does not assign them lesson by lesson). Module-book mapping is chapter level; section level is in the Book map. Hours per module are estimated by slide count.') + '</p>'
@@ -227,17 +232,20 @@ def exam_page(lang, banks):
     s = S[lang]
     if not any(banks.values()):
         stub_page(lang, 'exam/index.html', s['exam_title']); return
-    defs = exams.build(banks); pool = []
-    for m in MODS:
+    defs = exams.build(banks); pool = []; wpool = []
+    for m in MODS + EXTRA:
         b = banks[m['id']]
         if not b: continue
         for it in b['items']:
             if exams.eligible(it):
                 d = localize(it, lang, '../../'); pool.append(dict(id=d['id'], m=m['id'], q=d['q'], o=d['opts'], c=d['correct'], e=d['explain'], s=d['src'], l=d['level'], g=int(it['origin'] == 'goc'), **({'f': d['fig']} if 'fig' in d else {})))
-    data = dict(lang=lang, mods={m['id']: m[lang] for m in MODS}, pool=pool, papers=defs['papers'], mixed=defs['mixed'], types=defs['types'])
+        for it in b['essays']:
+            if it['id'] in set(defs['wids']):
+                d = localize(it, lang, '../../'); wpool.append(dict(id=d['id'], m=m['id'], q=d['q'], sol=d['sol'], l=d['level'], s=d['src'], figs=d.get('figs', []), af=d.get('afig', '')))
+    data = dict(lang=lang, mods={m['id']: m[lang] for m in MODS + EXTRA if banks[m['id']]}, pool=pool, wpool=wpool, papers=defs['papers'], mixed=defs['mixed'], types=defs['types'], meta=defs['meta'])
     write(f'{lang}/exam/data.json', json.dumps(data, ensure_ascii=False, separators=(',', ':')))
-    lead = {'vi': 'Đề giữa kỳ, cuối kỳ, đề nhanh, đề tùy chỉnh và các đề luyện hỗn hợp, lấy từ ngân hàng câu hỏi của site. Đề cương không nêu hình thức thi: cấu trúc đề do site tự thiết kế (xem khung dưới). Có đồng hồ, chế độ không quay lại, bảng số câu, chấm theo module, làm lại câu sai và bản in A4 có đáp án.',
-            'en': 'Midterm, final, speed and custom exams plus mixed practice sets, drawn from the site\'s question bank. The syllabus does not state an exam format: the structure is this site\'s own design (see the box below). With a timer, a no-going-back mode, a question palette, scoring by module, redo of the wrong answers and an A4 print version with the key.'}[lang]
+    lead = {'vi': 'Mười loại đề lấy từ ngân hàng câu hỏi của site: giữa kỳ, cuối kỳ, nhanh, tùy chỉnh, hỗn hợp, theo từng module, thử thách mức 3, đề ôn của Tooley (Revision Papers), tự luận, đề tổng hợp (trắc nghiệm + tự luận) và ôn lại câu bạn từng làm sai. Đề cương không nêu hình thức thi: cấu trúc đề do site tự thiết kế (xem khung dưới). Có đồng hồ, chế độ không quay lại, bảng số câu, chấm theo module, làm lại câu sai và bản in A4 có đáp án.',
+            'en': 'Ten kinds of exam drawn from the site\'s question bank: midterm, final, speed, custom, mixed, one per module, hard (level 3), Tooley\'s own Revision Papers, written, full paper (multiple choice + written) and a review of the questions you got wrong. The syllabus does not state an exam format: the structure is this site\'s own design (see the box below). With a timer, a no-going-back mode, a question palette, scoring by module, redo of the wrong answers and an A4 print version with the key.'}[lang]
     for page_name, mode, head in (('index', 'hub', f'<h1>{s["exam_title"]}</h1><p class="lead">{lead}</p>'), ('run', 'run', ''), ('print', 'print', '')):
         h = head + f'<div id="exam" data-mode="{mode}" data-src="data.json"></div>'
         write(f'{lang}/exam/{page_name}.html', page(s['exam_title'], h, lang, f'exam/{page_name}.html', scripts=('exam.js',)))
@@ -274,10 +282,12 @@ def optional_pages(lang, banks):
     s = S[lang]
     spec = [('sources/index.html', s['src_title'], 'sources_body', 'body', (lang, banks), ()),
             ('books/index.html', s['books_title'], 'bookmap_body', 'body', (lang,), ()),
-            ('exercises/index.html', s['ex_title'], 'exercises_body', 'exercises_body', (lang,), ('exercises.js', 'bookmap.js')),
+            ('exercises/index.html', s['ex_title'], 'exercises_body', 'exercises_body', (lang,), ('exercises.js',)),
             ('written/index.html', s['wr_title'], 'exercises_body', 'written_body', (lang,), ('written.js',)),
             ('analyse/index.html', s['an_title'], 'analyse_body', 'body', (lang,), ('analyse.js',)),
             ('concepts/index.html', s['cf_title'], 'concepts_body', 'body', (lang,), ('concepts.js',)),
+            ('mistakes/index.html', 'Sổ lỗi' if lang == 'vi' else 'Mistake log', 'mistakes_body', 'body', (lang,), ('mistakes.js',)),
+            ('codes/index.html', 'Bảng tra mã' if lang == 'vi' else 'Code table', 'codes_body', 'body', (lang,), ('codes.js',)),
             ('glossary/index.html', 'Thuật ngữ VI-EN' if lang == 'vi' else 'Glossary VI-EN', 'glossary_body', 'body', (lang,), ()),
             ('formulas/index.html', 'Tóm tắt công thức' if lang == 'vi' else 'Formula sheet', 'formulas_body', 'body', (lang,), ())]
     for rel, title, modname, fn, args, scripts in spec:

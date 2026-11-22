@@ -5,6 +5,15 @@ from hx import esc
 from modules import DECKS, MODS, BYID
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
+_EN = None
+def note_en(x, lang):
+    """English text of a Vietnamese slide note (numbers and issues are written in Vietnamese in build/transcripts); unknown notes are returned unchanged."""
+    global _EN
+    if lang == 'vi': return x
+    if _EN is None:
+        p = os.path.join(ROOT, 'build', 'transcripts', 'notes_en.json'); _EN = {a: b for a, b in json.load(open(p, encoding='utf-8'))} if os.path.exists(p) else {}
+    return _EN.get(x, x)
+
 def load(deck):
     fs = glob.glob(os.path.join(ROOT, 'data', 'slides', 'transcript', f'{deck}_*.json'))
     if not fs: return None
@@ -37,10 +46,10 @@ def deck_body(lang, deck):
             h += f'<p>{esc(s["text_vi"] if vi else s["text_en"])}</p>'
             if s.get('basis'): h += '<p class="srcnote">' + ('Bản chép dạng tóm tắt từ lượt đọc ảnh slide trước (10/2026); chưa phóng to kiểm lại từng số.' if vi else 'Summary transcript from an earlier read of the slide image (10/2026); numbers not yet rechecked at high zoom.') + '</p>'
             if s['formulas']: h += '<p class="srcnote"><b>' + ('Công thức' if vi else 'Formulas') + ':</b> ' + ' · '.join(f'<code>{esc(x)}</code>' for x in s['formulas']) + '</p>'
-            if s['numbers']: h += '<p class="srcnote"><b>' + ('Số liệu' if vi else 'Numbers') + ':</b> ' + '; '.join(esc(x) for x in s['numbers']) + '</p>'
+            if s['numbers']: h += '<p class="srcnote"><b>' + ('Số liệu' if vi else 'Numbers') + ':</b> ' + '; '.join(esc(note_en(x, lang)) for x in s['numbers']) + '</p>'
             errs, chk = split_issues(s)
-            if errs: h += '<div class="callout warn"><b class="t">' + ('Lỗi của slide và nghi vấn' if vi else 'Slide errors and doubts') + '</b><ul>' + ''.join(f'<li>{esc(x)}</li>' for x in errs) + '</ul></div>'
-            if chk: h += '<p class="srcnote"><b>' + ('Đã kiểm bằng tính' if vi else 'Checked by computation') + ':</b> ' + ' '.join(esc(x.replace('Đã kiểm: ', '').replace('Đã kiểm bằng Python: ', '')) for x in chk) + '</p>'
+            if errs: h += '<div class="callout warn"><b class="t">' + ('Lỗi của slide và nghi vấn' if vi else 'Slide errors and doubts') + '</b><ul>' + ''.join(f'<li>{esc(note_en(x, lang))}</li>' for x in errs) + '</ul></div>'
+            if chk: h += '<p class="srcnote"><b>' + ('Đã kiểm bằng tính' if vi else 'Checked by computation') + ':</b> ' + ' '.join(esc(note_en(x, lang).replace('Checked: ', '').replace('Checked in Python: ', '').replace('Checked by calculation: ', '').replace('Checked against the waveforms read from the figure: ', '').replace('Đã kiểm: ', '').replace('Đã kiểm bằng Python: ', '').replace('Đã kiểm bằng tính: ', '')) for x in chk) + '</p>'
         else:
             h += '<p class="muted">' + ('Chưa đọc slide này.' if vi else 'This slide has not been read yet.') + '</p>'
         h += '</section>'

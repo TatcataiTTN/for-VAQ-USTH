@@ -1,0 +1,967 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một vấn đề đặc biệt của sự tích tụ điện tích tĩnh là:",
+   "en": "A particular problem with the build-up of static charge is that:"
+  },
+  "opts": [
+   {
+    "vi": "nó nặng hơn khi ẩm ướt",
+    "en": "it is worse when wet"
+   },
+   {
+    "vi": "nó luôn gây chết người",
+    "en": "it is invariably lethal"
+   },
+   {
+    "vi": "khó phát hiện",
+    "en": "it cannot easily be detected"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Linh kiện có thể hỏng hoàn toàn mà không có dấu hiệu hư hại nhìn thấy; hiệu ứng nặng hơn khi khô (Tooley 12.1).",
+   "en": "A device can fail totally without any visible sign of damage; the effect is worse when dry (Tooley 12.1)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 1 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q1 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điện trở điển hình của dây vòng đeo cổ tay (wrist strap) là:",
+   "en": "The typical resistance of a wrist strap lead is:"
+  },
+  "opts": [
+   {
+    "vi": "10 Ω",
+    "en": "10 Ω"
+   },
+   {
+    "vi": "1 kΩ",
+    "en": "1 kΩ"
+   },
+   {
+    "vi": "1 MΩ",
+    "en": "1 MΩ"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Điện trở 1 MΩ nối tiếp hạn chế dòng qua người đeo nếu chạm vật mang điện (Tooley 12.4).",
+   "en": "A series 1 MΩ resistor limits the current through the wearer if they touch a live conductor (Tooley 12.4)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 2 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q2 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Linh kiện nào sau đây dễ hỏng nhất do điện tích tĩnh?",
+   "en": "Which one of the following devices is most susceptible to damage from stray static charges:"
+  },
+  "opts": [
+   {
+    "vi": "một diode chỉnh lưu công suất",
+    "en": "a power rectifier"
+   },
+   {
+    "vi": "một cổng logic TTL",
+    "en": "a TTL logic gate"
+   },
+   {
+    "vi": "một transistor MOSFET",
+    "en": "a MOSFET transistor"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Linh kiện hiệu ứng trường (MOS) nhạy hơn linh kiện lưỡng cực (Tooley 12.2).",
+   "en": "Field-effect (MOS) devices are more sensitive than bipolar ones (Tooley 12.2)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 3 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q3 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điện áp tĩnh sinh ra khi một người đi trên thảm có thể:",
+   "en": "The static voltage generated when a person walks across a carpet can be:"
+  },
+  "opts": [
+   {
+    "vi": "không quá khoảng 10 kV",
+    "en": "no more than about 10 kV"
+   },
+   {
+    "vi": "giữa 10 kV và 20 kV",
+    "en": "between 10 kV and 20 kV"
+   },
+   {
+    "vi": "hơn 20 kV",
+    "en": "more than 20 kV"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bảng 12.1: 35 kV ở độ ẩm 20 %.",
+   "en": "Table 12.1: 35 kV at 20 % relative humidity."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 4 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q4 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vật liệu nào sau đây mang điện ÂM trên thang tĩnh điện ma sát (triboelectric)?",
+   "en": "Which of the materials listed is negative on the triboelectric scale:"
+  },
+  "opts": [
+   {
+    "vi": "thuỷ tinh",
+    "en": "glass"
+   },
+   {
+    "vi": "lụa",
+    "en": "silk"
+   },
+   {
+    "vi": "polyester",
+    "en": "polyester"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Thuỷ tinh và lụa thuộc phía dương; polyester thuộc phía âm (Tooley 12.1.1).",
+   "en": "Glass and silk are on the positive side; polyester is on the negative side (Tooley 12.1.1)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 5 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q5 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi vận chuyển linh kiện nhạy tĩnh điện (ESD) điều quan trọng là:",
+   "en": "When transporting ESDs it is important to:"
+  },
+  "opts": [
+   {
+    "vi": "để trong bao bì dẫn điện",
+    "en": "keep them in a conductive package"
+   },
+   {
+    "vi": "lấy ra và bọc trong lá kim loại",
+    "en": "remove them and place them in metal foil"
+   },
+   {
+    "vi": "đặt trong bao bì nhựa cách điện",
+    "en": "place them in an insulated plastic package"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vật liệu dẫn điện bảo vệ tốt nhất; chống tĩnh điện kém nhất (Tooley 12.4).",
+   "en": "Conductive materials protect best; anti-static ones least (Tooley 12.4)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 6 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q6 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để giảm nguy cơ hỏng linh kiện ESD khi hàn, điều quan trọng là:",
+   "en": "To reduce the risk of damaging an ESD during soldering it is important to:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ dùng mỏ hàn điện áp thấp",
+    "en": "use only a low-voltage soldering iron"
+   },
+   {
+    "vi": "chỉ dùng mỏ hàn chạy điện lưới",
+    "en": "use only a mains-operated soldering iron"
+   },
+   {
+    "vi": "chỉ dùng mỏ hàn nhiệt độ thấp",
+    "en": "use only a low-temperature soldering iron"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dùng mỏ hàn điện áp thấp có đầu nối đất (trạm hàn chống tĩnh điện) (Tooley 12.4).",
+   "en": "Use low-voltage irons with grounded bits (anti-static soldering stations) (Tooley 12.4)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 7 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q7 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Loại quần áo nào có khả năng gây vấn đề tĩnh điện nhiều nhất?",
+   "en": "Which one of the following items of clothing is most likely to cause static problems:"
+  },
+  "opts": [
+   {
+    "vi": "áo yếm nylon",
+    "en": "nylon overalls"
+   },
+   {
+    "vi": "áo thun cotton",
+    "en": "a cotton T-shirt"
+   },
+   {
+    "vi": "quần polyester pha cotton",
+    "en": "polyester-cotton trousers"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Vật liệu tổng hợp dễ nhiễm điện; cotton trung tính (Tooley 12.1.1).",
+   "en": "Man-made materials charge easily; cotton is neutral (Tooley 12.1.1)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.12 · Câu 8 (khoá A.12, tr.380)",
+   "en": "Tooley Ch.12 · Q8 (key A.12, p.380)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.1, khi đi trên thảm len/nylon điện áp tĩnh ở độ ẩm 20 % lớn hơn ở độ ẩm 80 % bao nhiêu lần (xấp xỉ)?",
+   "en": "By Table 12.1, when walking over a wool/nylon carpet how many times larger is the static voltage at 20 % relative humidity than at 80 % (approximately)?"
+  },
+  "opts": [
+   {
+    "vi": "23",
+    "en": "23"
+   },
+   {
+    "vi": "12",
+    "en": "12"
+   },
+   {
+    "vi": "47",
+    "en": "47"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "35 kV / 1.5 kV = 23.3 lần: không khí khô làm điện tích tích tụ nhiều hơn rất nhiều.",
+   "en": "35 kV / 1.5 kV = 23.3 times: dry air lets far more charge build up."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Độ ẩm và điện áp tĩnh",
+   "en": "Added · Humidity and static voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.1, khi trượt hộp nhựa trên thảm điện áp tĩnh ở độ ẩm 20 % lớn hơn ở độ ẩm 80 % bao nhiêu lần (xấp xỉ)?",
+   "en": "By Table 12.1, when sliding a plastic box across a carpet how many times larger is the static voltage at 20 % relative humidity than at 80 % (approximately)?"
+  },
+  "opts": [
+   {
+    "vi": "15",
+    "en": "15"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "30",
+    "en": "30"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "18 kV / 1.2 kV = 15.0 lần: không khí khô làm điện tích tích tụ nhiều hơn rất nhiều.",
+   "en": "18 kV / 1.2 kV = 15.0 times: dry air lets far more charge build up."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Độ ẩm và điện áp tĩnh",
+   "en": "Added · Humidity and static voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.1, khi lấy linh kiện ra khỏi túi polystyrene điện áp tĩnh ở độ ẩm 20 % lớn hơn ở độ ẩm 80 % bao nhiêu lần (xấp xỉ)?",
+   "en": "By Table 12.1, when removing parts from a polystyrene bag how many times larger is the static voltage at 20 % relative humidity than at 80 % (approximately)?"
+  },
+  "opts": [
+   {
+    "vi": "15",
+    "en": "15"
+   },
+   {
+    "vi": "8",
+    "en": "8"
+   },
+   {
+    "vi": "30",
+    "en": "30"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "15 kV / 1 kV = 15.0 lần: không khí khô làm điện tích tích tụ nhiều hơn rất nhiều.",
+   "en": "15 kV / 1 kV = 15.0 times: dry air lets far more charge build up."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Độ ẩm và điện áp tĩnh",
+   "en": "Added · Humidity and static voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.1, khi đi trên sàn vinyl điện áp tĩnh ở độ ẩm 20 % lớn hơn ở độ ẩm 80 % bao nhiêu lần (xấp xỉ)?",
+   "en": "By Table 12.1, when walking over vinyl flooring how many times larger is the static voltage at 20 % relative humidity than at 80 % (approximately)?"
+  },
+  "opts": [
+   {
+    "vi": "31",
+    "en": "31"
+   },
+   {
+    "vi": "16",
+    "en": "16"
+   },
+   {
+    "vi": "63",
+    "en": "63"
+   },
+   {
+    "vi": "4",
+    "en": "4"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "11 kV / 350 V = 31.4 lần: không khí khô làm điện tích tích tụ nhiều hơn rất nhiều.",
+   "en": "11 kV / 350 V = 31.4 times: dry air lets far more charge build up."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Độ ẩm và điện áp tĩnh",
+   "en": "Added · Humidity and static voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.1 tình huống nào sinh điện áp tĩnh LỚN NHẤT ở độ ẩm tương đối 20 %?",
+   "en": "By Table 12.1 which situation generates the LARGEST static voltage at 20 % relative humidity?"
+  },
+  "opts": [
+   {
+    "vi": "đi trên thảm len/nylon (35 kV)",
+    "en": "walking over a wool/nylon carpet (35 kV)"
+   },
+   {
+    "vi": "đi trên sàn vinyl (11 kV)",
+    "en": "walking over vinyl flooring (11 kV)"
+   },
+   {
+    "vi": "bóc màng co (10 kV)",
+    "en": "removing shrink-wrap packaging (10 kV)"
+   },
+   {
+    "vi": "làm việc ở bàn mặc áo yếm (8 kV)",
+    "en": "working at a bench wearing overalls (8 kV)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley Bảng 12.1.",
+   "en": "Tooley Table 12.1."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bảng 12.1",
+   "en": "Added · Table 12.1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.2, loại linh kiện nào nhạy với điện áp tĩnh nhất (ngưỡng thấp nhất, 20 V)?",
+   "en": "By Table 12.2, which kind of device is the most sensitive to static voltage (lowest threshold, 20 V)?"
+  },
+  "opts": [
+   {
+    "vi": "bộ nhớ động và vi xử lý VLSI",
+    "en": "dynamic memories and VLSI microprocessors"
+   },
+   {
+    "vi": "logic TTL",
+    "en": "TTL logic"
+   },
+   {
+    "vi": "chỉnh lưu có điều khiển (SCR)",
+    "en": "silicon-controlled rectifiers"
+   },
+   {
+    "vi": "transistor lưỡng cực",
+    "en": "bipolar junction transistors"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ngưỡng 20 V đến 100 V.",
+   "en": "Threshold 20 V to 100 V."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bảng 12.2",
+   "en": "Added · Table 12.2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo Bảng 12.2, loại linh kiện nào ÍT nhạy nhất (ngưỡng cao nhất)?",
+   "en": "By Table 12.2, which kind of device is the LEAST sensitive (highest threshold)?"
+  },
+  "opts": [
+   {
+    "vi": "chỉnh lưu có điều khiển (SCR), 4 đến 15 kV",
+    "en": "silicon-controlled rectifiers, 4 to 15 kV"
+   },
+   {
+    "vi": "logic CMOS, 250 V đến 1 kV",
+    "en": "CMOS logic, 250 V to 1 kV"
+   },
+   {
+    "vi": "MOSFET, 50 đến 350 V",
+    "en": "MOSFETs, 50 to 350 V"
+   },
+   {
+    "vi": "logic TTL, 550 V đến 2,5 kV",
+    "en": "TTL logic, 550 V to 2.5 kV"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "SCR chịu được tới 15 kV; Tooley TYU 12.3 hỏi linh kiện nhạy nhất trong ba: bộ nhớ động, SCR, BJT.",
+   "en": "The SCR tolerates up to 15 kV; Tooley TYU 12.3 asks for the most sensitive of three: dynamic memory, SCR, BJT."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bảng 12.2",
+   "en": "Added · Table 12.2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ nhớ động có ngưỡng nhạy tĩnh điện từ 20 V đến 100 V (Bảng 12.2). Một người mang điện áp tĩnh 1,5 kV chạm vào nó. So với khoảng nhạy thì:",
+   "en": "A dynamic memory has a static susceptibility range of 20 V to 100 V (Table 12.2). A person carrying 1.5 kV of static touches it. Compared with that range the voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "cao hơn ngưỡng trên của khoảng: có thể gây hỏng",
+    "en": "above the top of the range: damage is possible"
+   },
+   {
+    "vi": "thấp hơn ngưỡng dưới: chắc chắn an toàn",
+    "en": "below the bottom of the range: certainly safe"
+   },
+   {
+    "vi": "bằng đúng ngưỡng giữa",
+    "en": "exactly at the midpoint"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1,5 kV so với khoảng 20 V đến 100 V: lớn hơn cả ngưỡng trên; điện tích mà người mang thường vượt xa ngưỡng này.",
+   "en": "1.5 kV against 20 V to 100 V: above even the top; the charge a person carries easily exceeds such thresholds."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · So sánh với ngưỡng nhạy",
+   "en": "Added · Comparison with susceptibility"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một logic CMOS có ngưỡng nhạy tĩnh điện từ 250 V đến 1 kV (Bảng 12.2). Một người mang điện áp tĩnh 1,5 kV chạm vào nó. So với khoảng nhạy thì:",
+   "en": "A CMOS logic has a static susceptibility range of 250 V to 1 kV (Table 12.2). A person carrying 1.5 kV of static touches it. Compared with that range the voltage is:"
+  },
+  "opts": [
+   {
+    "vi": "cao hơn ngưỡng trên của khoảng: có thể gây hỏng",
+    "en": "above the top of the range: damage is possible"
+   },
+   {
+    "vi": "thấp hơn ngưỡng dưới: chắc chắn an toàn",
+    "en": "below the bottom of the range: certainly safe"
+   },
+   {
+    "vi": "bằng đúng ngưỡng giữa",
+    "en": "exactly at the midpoint"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "1,5 kV so với khoảng 250 V đến 1 kV: lớn hơn cả ngưỡng trên; điện tích mà người mang thường vượt xa ngưỡng này.",
+   "en": "1.5 kV against 250 V to 1 kV: above even the top; the charge a person carries easily exceeds such thresholds."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · So sánh với ngưỡng nhạy",
+   "en": "Added · Comparison with susceptibility"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dây vòng cổ tay có điện trở nối tiếp 1 MΩ. Nếu người đeo chạm nhầm vào vật mang 115 V (minh hoạ, bỏ qua điện trở cơ thể), dòng điện giới hạn tối đa là:",
+   "en": "A wrist-strap lead has a 1 MΩ series resistor. If the wearer touches a conductor at 115 V by mistake (illustration, ignoring body resistance) the maximum current is limited to:"
+  },
+  "opts": [
+   {
+    "vi": "0.115 mA",
+    "en": "0.115 mA"
+   },
+   {
+    "vi": "115 mA",
+    "en": "115 mA"
+   },
+   {
+    "vi": "0.000115 mA",
+    "en": "0.000115 mA"
+   },
+   {
+    "vi": "1.15 mA",
+    "en": "1.15 mA"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$I=V/R=115/10^6$ A = 0.115 mA.",
+   "en": "$I=V/R=115/10^6$ A = 0.115 mA."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện trở 1 MΩ của dây đeo tay",
+   "en": "Added · 1 MΩ wrist strap resistor"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dây vòng cổ tay có điện trở nối tiếp 1 MΩ. Nếu người đeo chạm nhầm vào vật mang 230 V (minh hoạ, bỏ qua điện trở cơ thể), dòng điện giới hạn tối đa là:",
+   "en": "A wrist-strap lead has a 1 MΩ series resistor. If the wearer touches a conductor at 230 V by mistake (illustration, ignoring body resistance) the maximum current is limited to:"
+  },
+  "opts": [
+   {
+    "vi": "0.23 mA",
+    "en": "0.23 mA"
+   },
+   {
+    "vi": "230 mA",
+    "en": "230 mA"
+   },
+   {
+    "vi": "0.00023 mA",
+    "en": "0.00023 mA"
+   },
+   {
+    "vi": "2.3 mA",
+    "en": "2.3 mA"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$I=V/R=230/10^6$ A = 0.23 mA.",
+   "en": "$I=V/R=230/10^6$ A = 0.23 mA."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện trở 1 MΩ của dây đeo tay",
+   "en": "Added · 1 MΩ wrist strap resistor"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên thang tĩnh điện ma sát (triboelectric), cặp vật liệu nào cho lượng điện tích cảm ứng LỚN nhất khi cọ xát?",
+   "en": "On the triboelectric scale, which pair of materials gives the LARGEST induced charge when rubbed together?"
+  },
+  "opts": [
+   {
+    "vi": "PVC và thuỷ tinh (hai đầu mút của thang)",
+    "en": "PVC and glass (the extreme ends of the scale)"
+   },
+   {
+    "vi": "bông và thép (cả hai trung tính)",
+    "en": "cotton and steel (both neutral)"
+   },
+   {
+    "vi": "lụa và thuỷ tinh (cùng phía dương)",
+    "en": "silk and glass (same positive side)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 12.1.1: vật liệu ở hai đầu mút của thang cọ vào nhau cho điện tích lớn nhất.",
+   "en": "Tooley 12.1.1: materials at the extreme ends of the scale rubbed together give the largest charge."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thang triboelectric",
+   "en": "Added · Triboelectric series"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vật liệu nào trung tính trên thang triboelectric và vì vậy nên mặc khi làm việc trong môi trường khô?",
+   "en": "Which material is neutral on the triboelectric scale and so is advised for clothing in dry conditions?"
+  },
+  "opts": [
+   {
+    "vi": "bông (cotton)",
+    "en": "cotton"
+   },
+   {
+    "vi": "polyester",
+    "en": "polyester"
+   },
+   {
+    "vi": "nylon",
+    "en": "nylon"
+   },
+   {
+    "vi": "Teflon",
+    "en": "Teflon"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thép cũng trung tính; Teflon là âm nhất (Tooley 12.1.1).",
+   "en": "Steel is also neutral; Teflon is the most negative (Tooley 12.1.1)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Vật liệu trung tính",
+   "en": "Added · Neutral materials"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Linh kiện nhạy tĩnh điện thường được dán nhãn cảnh báo như thế nào?",
+   "en": "How are static-sensitive components usually marked with warnings?"
+  },
+  "opts": [
+   {
+    "vi": "chữ đen trên nền vàng",
+    "en": "black text on a yellow background"
+   },
+   {
+    "vi": "chữ trắng trên nền đỏ",
+    "en": "white text on a red background"
+   },
+   {
+    "vi": "chữ xanh trên nền trắng",
+    "en": "blue text on a white background"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 12.3.",
+   "en": "Tooley 12.3."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Nhãn cảnh báo ESD",
+   "en": "Added · ESD warning labels"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao linh kiện lắp trên bảng mạch in ít bị nguy cơ hơn linh kiện rời?",
+   "en": "Why are components mounted on a printed circuit board at less risk than loose ones?"
+  },
+  "opts": [
+   {
+    "vi": "các đường dẫn trên mạch in giúp xả điện tích dư",
+    "en": "the conductive paths of the printed circuit help dissipate excess charge"
+   },
+   {
+    "vi": "mạch in cách điện hoàn toàn",
+    "en": "the printed circuit is a perfect insulator"
+   },
+   {
+    "vi": "linh kiện trên mạch in không phải là bán dẫn",
+    "en": "components on a board are not semiconductors"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Linh kiện rời không có đường xả tĩnh điện (Tooley 12.2).",
+   "en": "A loose device has no static dissipative path (Tooley 12.2)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mạch in và ESD",
+   "en": "Added · PCB and ESD"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong ba loại vật liệu bảo vệ linh kiện nhạy tĩnh điện, loại nào bảo vệ NHIỀU nhất và ít nhất?",
+   "en": "Of the three classes of materials protecting static-sensitive devices, which protects MOST and which LEAST?"
+  },
+  "opts": [
+   {
+    "vi": "dẫn điện nhiều nhất; chống tĩnh điện (trung tính) ít nhất",
+    "en": "conductive most; anti-static (neutral) least"
+   },
+   {
+    "vi": "chống tĩnh điện nhiều nhất; dẫn điện ít nhất",
+    "en": "anti-static most; conductive least"
+   },
+   {
+    "vi": "tiêu tán tĩnh điện nhiều nhất; dẫn điện ít nhất",
+    "en": "static dissipative most; conductive least"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dẫn điện (lá kim loại, vật liệu tẩm cacbon), tiêu tán tĩnh điện (rẻ hơn), chống tĩnh điện (bìa, bông, gỗ) (Tooley 12.4).",
+   "en": "Conductive (metal foils, carbon-impregnated plastics), static dissipative (cheaper), anti-static (cardboard, cotton, wood) (Tooley 12.4)."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Vật liệu bảo vệ",
+   "en": "Added · Protective materials"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào sau đây là biện pháp xử lý ESD đúng theo Tooley 12.4?",
+   "en": "Which of the following is a correct ESD handling measure according to Tooley 12.4?"
+  },
+  "opts": [
+   {
+    "vi": "đeo vòng cổ tay nối đất và để linh kiện trong bao bì chống tĩnh điện cho tới khi dùng",
+    "en": "wear a grounded wrist strap and keep parts in their anti-static packaging until needed"
+   },
+   {
+    "vi": "làm việc gần đèn huỳnh quang điện áp cao",
+    "en": "work next to high-voltage fluorescent lights"
+   },
+   {
+    "vi": "cầm linh kiện trần ở nơi rất khô",
+    "en": "handle bare parts in a very dry place"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Còn gồm: dây đeo gót, thảm sàn và bàn tiêu tán tĩnh điện, tránh nơi quá khô, ổ nối đất, thiết bị thử nối đất, mỏ hàn điện áp thấp, dụng cụ cắm/rút IC chống tĩnh điện, tránh nguồn cao áp lân cận.",
+   "en": "Also: heel straps, static-dissipative floor and bench mats, avoiding very dry places, ground jacks, grounded test equipment, low-voltage soldering, anti-static IC tools, avoiding nearby high-voltage sources."
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biện pháp xử lý ESD",
+   "en": "Added · ESD handling measures"
+  }
+ }
+]

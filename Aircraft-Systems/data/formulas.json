@@ -446,5 +446,299 @@
    "en": "Accuracy as a percentage of full scale."
   },
   "src": "Floyd §12-3"
+ },
+ {
+  "id": "f33",
+  "module": "m11",
+  "name": {
+   "vi": "Phương trình đặc trưng của flip-flop J-K",
+   "en": "J-K flip-flop characteristic equation"
+  },
+  "latex": "Q^{+}=J\\overline{Q}+\\overline{K}\\,Q",
+  "legend": {
+   "vi": "J = K = 1 lật; J = K = 0 giữ.",
+   "en": "J = K = 1 toggles; J = K = 0 holds."
+  },
+  "src": "Floyd §7-2"
+ },
+ {
+  "id": "f34",
+  "module": "m11",
+  "name": {
+   "vi": "Độ rộng xung của 74121",
+   "en": "Pulse width of the 74121"
+  },
+  "latex": "t_W=0{,}7\\,R\\,C_{EXT}",
+  "legend": {
+   "vi": "Điện trở trong 2 kΩ nếu không có ngoài.",
+   "en": "Internal 2 kΩ if no external resistor."
+  },
+  "src": "Floyd §7-5"
+ },
+ {
+  "id": "f35",
+  "module": "m11",
+  "name": {
+   "vi": "555 một nhịp",
+   "en": "555 monostable"
+  },
+  "latex": "t_W=1{,}1\\,R_1C_1",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Floyd §7-5"
+ },
+ {
+  "id": "f36",
+  "module": "m11",
+  "name": {
+   "vi": "555 dao động",
+   "en": "555 astable"
+  },
+  "latex": "f=\\dfrac{1{,}44}{(R_1+2R_2)C_1},\\quad \\text{duty}=\\dfrac{R_1+R_2}{R_1+2R_2}",
+  "legend": {
+   "vi": "Duty cycle luôn lớn hơn 50 %.",
+   "en": "The duty cycle is always above 50 %."
+  },
+  "src": "Floyd §7-6"
+ },
+ {
+  "id": "f37",
+  "module": "m11",
+  "name": {
+   "vi": "Bộ đếm gợn sóng",
+   "en": "Ripple counter"
+  },
+  "latex": "N=2^n,\\qquad f_{max}\\approx\\dfrac{1}{n\\,t_{pd}}",
+  "legend": {
+   "vi": "n: số flip-flop; t_pd: trễ mỗi tầng.",
+   "en": "n: flip-flops; t_pd: delay per stage."
+  },
+  "src": "Floyd §9-2"
+ },
+ {
+  "id": "f38",
+  "module": "m11",
+  "name": {
+   "vi": "Số flip-flop cho modulus N",
+   "en": "Flip-flops for modulus N"
+  },
+  "latex": "n=\\lceil\\log_2 N\\rceil",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Floyd §9-1, 9-2"
+ },
+ {
+  "id": "f39",
+  "module": "m11",
+  "name": {
+   "vi": "Bộ đếm mắc tầng",
+   "en": "Cascaded counters"
+  },
+  "latex": "N=N_1N_2\\cdots N_k,\\qquad f_{out}=\\dfrac{f_{clk}}{N}",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Floyd §9-6"
+ },
+ {
+  "id": "f40",
+  "module": "m11",
+  "name": {
+   "vi": "Thanh ghi dịch: thời gian và trễ",
+   "en": "Shift register: time and delay"
+  },
+  "latex": "t=\\dfrac{N}{f},\\qquad f=\\dfrac{N}{t}",
+  "legend": {
+   "vi": "N: số bit; f: tần số clock.",
+   "en": "N: bits; f: clock frequency."
+  },
+  "src": "Floyd §8-2, 8-5"
+ },
+ {
+  "id": "f41",
+  "module": "m11",
+  "name": {
+   "vi": "Bộ đếm Johnson và vòng",
+   "en": "Johnson and ring counters"
+  },
+  "latex": "N_{Johnson}=2n,\\qquad N_{ring}=n",
+  "legend": {
+   "vi": "n: số flip-flop.",
+   "en": "n: number of flip-flops."
+  },
+  "src": "Floyd §8-4"
+ },
+ {
+  "id": "f42",
+  "module": "m11",
+  "name": {
+   "vi": "Số hàm của LUT n ngõ vào",
+   "en": "Functions of an n-input LUT"
+  },
+  "latex": "2^n\\ \\text{bit},\\quad 2^{2^n}\\ \\text{hàm}",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Floyd §10-2"
+ },
+ {
+  "id": "f43",
+  "module": "m12",
+  "name": {
+   "vi": "Thời gian tới điểm tiếp cận gần nhất (TCAS)",
+   "en": "Time to the closest point of approach (TCAS)"
+  },
+  "latex": "\\tau=\\dfrac{d}{v_{closure}}",
+  "legend": {
+   "vi": "d: khoảng cách; tốc độ tiếp cận.",
+   "en": "d: distance; closure rate."
+  },
+  "src": "Tooley §15.8"
+ },
+ {
+  "id": "f44",
+  "module": "m12",
+  "name": {
+   "vi": "Chu kỳ quỹ đạo (kiểm tra Tooley)",
+   "en": "Orbital period (check of Tooley)"
+  },
+  "latex": "T=2\\pi\\sqrt{r^3/\\mu}",
+  "legend": {
+   "vi": "r = bán kính Trái Đất + độ cao.",
+   "en": "r = Earth radius + height."
+  },
+  "src": "Kepler; đối chiếu Tooley §15.6.1"
+ },
+ {
+  "id": "f45",
+  "module": "m12",
+  "name": {
+   "vi": "IRS: tích phân gia tốc",
+   "en": "IRS: integrating acceleration"
+  },
+  "latex": "v=at,\\qquad s=\\tfrac12at^2",
+  "legend": {
+   "vi": "Gia tốc không đổi.",
+   "en": "Constant acceleration."
+  },
+  "src": "Tooley §15.7"
+ },
+ {
+  "id": "f46",
+  "module": "m12",
+  "name": {
+   "vi": "Chu kỳ cập nhật FMS",
+   "en": "FMS update cycle"
+  },
+  "latex": "365\\div28=13{,}04\\Rightarrow13\\ \\text{chu kỳ}",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Tooley §15.5"
+ },
+ {
+  "id": "f47",
+  "module": "m13",
+  "name": {
+   "vi": "Tốc độ bit lớn nhất của VL",
+   "en": "Maximum bit rate of a VL"
+  },
+  "latex": "R_{max}=\\dfrac{L_{max}\\times8\\times1000}{\\text{BAG(ms)}}",
+  "legend": {
+   "vi": "L_max: byte; BAG: ms.",
+   "en": "L_max: bytes; BAG: ms."
+  },
+  "src": "Tooley §16.8"
+ },
+ {
+  "id": "f48",
+  "module": "m13",
+  "name": {
+   "vi": "Tần số tương ứng của BAG",
+   "en": "Frequency corresponding to a BAG"
+  },
+  "latex": "f=\\dfrac{1000}{\\text{BAG(ms)}}",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Tooley Bảng 16.1"
+ },
+ {
+  "id": "f49",
+  "module": "m13",
+  "name": {
+   "vi": "Độ dài khung AFDX",
+   "en": "AFDX frame length"
+  },
+  "latex": "L=6+6+2+20+8+\\max(P,17)+1+4",
+  "legend": {
+   "vi": "P: payload (1 đến 1471 byte).",
+   "en": "P: payload (1 to 1471 bytes)."
+  },
+  "src": "Tooley §16.9"
+ },
+ {
+  "id": "f50",
+  "module": "m13",
+  "name": {
+   "vi": "Lùi hàm mũ nhị phân",
+   "en": "Binary exponential back-off"
+  },
+  "latex": "I_n=2^{\\,n-1}T",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Tooley §16.4"
+ },
+ {
+  "id": "f51",
+  "module": "m14",
+  "name": {
+   "vi": "Trễ đường tín hiệu qua n cổng",
+   "en": "Path delay through n gates"
+  },
+  "latex": "T_{path}=n\\,t_{gate}",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Tooley §17.10"
+ },
+ {
+  "id": "f52",
+  "module": "m15",
+  "name": {
+   "vi": "Số chu kỳ của chuông cabin",
+   "en": "Cycles of a cabin chime"
+  },
+  "latex": "N=f\\,t\\quad(494\\text{ Hz}\\times0{,}9\\text{ s}\\approx445)",
+  "legend": {
+   "vi": "",
+   "en": ""
+  },
+  "src": "Tooley §19.3.5"
+ },
+ {
+  "id": "f53",
+  "module": "m15",
+  "name": {
+   "vi": "Thời gian nạp tệp phương tiện",
+   "en": "Media file loading time"
+  },
+  "latex": "t=\\dfrac{8\\times\\text{size}}{\\text{rate}}",
+  "legend": {
+   "vi": "Bỏ qua mào đầu giao thức.",
+   "en": "Protocol overhead ignored."
+  },
+  "src": "Tooley §19.3 (minh hoạ của site)"
  }
 ]

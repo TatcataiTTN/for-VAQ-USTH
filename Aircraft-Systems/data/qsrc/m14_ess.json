@@ -1,0 +1,68 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cho p = 1100 và q = 0101 (vector 4 bit). Tính theo quy tắc ưu tiên của VHDL (NOT > dịch/xoay > AND/OR/XOR): (a) p AND q; (b) NOT p AND q; (c) NOT (p AND q); (d) p XOR q; (e) giải thích vì sao (b) và (c) khác nhau.",
+   "en": "Let p = 1100 and q = 0101 (4-bit vectors). Using the VHDL precedence (NOT > shift/rotate > AND/OR/XOR): (a) p AND q; (b) NOT p AND q; (c) NOT (p AND q); (d) p XOR q; (e) explain why (b) and (c) differ."
+  },
+  "sol": {
+   "vi": "(a) 0100. (b) NOT p = 0011, AND q = 0001. (c) p AND q = 0100, NOT = 1011. (d) 1001. (e) Trong (b) NOT chỉ áp dụng cho p vì có độ ưu tiên cao nhất; trong (c) dấu ngoặc đổi thứ tự nên NOT áp dụng cho kết quả của AND.",
+   "en": "(a) 0100. (b) NOT p = 0011, AND q = 0001. (c) p AND q = 0100, NOT = 1011. (d) 1001. (e) In (b) NOT applies only to p because it has the highest precedence; in (c) the brackets change the order so NOT applies to the result of the AND."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL",
+   "en": "Added · VHDL expressions"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Viết (bằng VHDL đúng cú pháp) khai báo entity và architecture hành vi cho bộ nửa cộng có ngõ vào cho phép EN tích cực mức THẤP. Lập bảng chân trị và nêu thay đổi so với bản EN tích cực mức cao của Tooley.",
+   "en": "Write (in correct VHDL syntax) the entity declaration and behavioural architecture for a half adder with an active-LOW enable EN. Give the truth table and state the change from Tooley's active-HIGH version."
+  },
+  "sol": {
+   "vi": "ENTITY half_adder IS PORT (x, y, en : IN bit; sum, carry : OUT bit); END half_adder; ARCHITECTURE behaviour OF half_adder IS BEGIN PROCESS (x, y, en) BEGIN IF en = '0' THEN sum <= x XOR y; carry <= x AND y; ELSE sum <= '0'; carry <= '0'; END IF; END PROCESS; END behaviour; Bảng chân trị: EN = 0 cho (sum, carry) = (x XOR y, x AND y) với bốn tổ hợp (x, y): 00 cho (0,0), 01 cho (1,0), 10 cho (1,0), 11 cho (0,1); EN = 1 cho (0,0) với mọi (x, y). Thay đổi duy nhất: điều kiện IF en = '1' thành IF en = '0' (Test Your Understanding 17.3). Chú ý: sách in \"PROCESS (x; y)\", \"ELSEIF\" và \"3 down to 0\" (đúng là dấu phẩy, ELSIF, \"3 downto 0\").",
+   "en": "ENTITY half_adder IS PORT (x, y, en : IN bit; sum, carry : OUT bit); END half_adder; ARCHITECTURE behaviour OF half_adder IS BEGIN PROCESS (x, y, en) BEGIN IF en = '0' THEN sum <= x XOR y; carry <= x AND y; ELSE sum <= '0'; carry <= '0'; END IF; END PROCESS; END behaviour; Truth table: EN = 0 gives (sum, carry) = (x XOR y, x AND y) for the four (x, y) combinations: 00 gives (0,0), 01 gives (1,0), 10 gives (1,0), 11 gives (0,1); EN = 1 gives (0,0) for every (x, y). The only change: the condition IF en = '1' becomes IF en = '0' (Test Your Understanding 17.3). Note: the book prints \"PROCESS (x; y)\", \"ELSEIF\" and \"3 down to 0\" (the correct forms are commas, ELSIF and \"3 downto 0\")."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ nửa cộng EN mức thấp",
+   "en": "Added · Active-low enable half adder"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Mô hình VHDL của cổng XOR có hằng gate_delay = 15 ns, ngõ vào a thay đổi tại t = 100 ns (0 sang 1) khi b = 0. (a) Khi nào ngõ ra c đổi? (b) Một bộ nửa cộng dựng bằng ba cổng 7408, 7404, 7408 (mỗi cổng 15 ns) có trễ tổng ở ngõ ra Sum là bao nhiêu? (c) Vì sao cần mô phỏng trễ trước khi sản xuất?",
+   "en": "A VHDL model of an XOR gate has gate_delay = 15 ns and input a changes at t = 100 ns (0 to 1) while b = 0. (a) When does output c change? (b) A half adder built from three gates 7408, 7404, 7408 (15 ns each) has what total delay at the Sum output? (c) Why simulate the delay before manufacture?"
+  },
+  "sol": {
+   "vi": "(a) c <= (a xor b) after gate_delay nên c đổi (0 sang 1) tại 100 + 15 = 115 ns. (b) 3 × 15 = 45 ns. (c) Trong mạch tốc độ cao, trạng thái giả thoáng qua do trễ có thể gây hành vi không lường trước; mô phỏng bằng test bench cho phép kiểm tra và tinh chỉnh trước khi chế tạo (Tooley 17.9, 17.10).",
+   "en": "(a) c <= (a xor b) after gate_delay so c changes (0 to 1) at 100 + 15 = 115 ns. (b) 3 × 15 = 45 ns. (c) In high-speed circuits the spurious transient states caused by delay can produce unpredictable behaviour; simulation with a test bench lets you check and refine before manufacture (Tooley 17.9, 17.10)."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mô phỏng trễ",
+   "en": "Added · Delay simulation"
+  }
+ }
+]

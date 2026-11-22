@@ -37,7 +37,7 @@ with sync_playwright() as pw:
     pg.goto(BASE + "vi/exam/index.html"); pg.wait_for_selector("#exam .btn, #exam a")
     data = json.loads(pg.evaluate("fetch('data.json').then(r=>r.text())"))
     fa = next(p for p in data["papers"] if p["id"] == "final-A"); ma = next(p for p in data["papers"] if p["id"] == "midterm-A")
-    check("exam: Final A 45 cau, Midterm A 30 cau", len(fa["ids"]) == 45 and len(ma["ids"]) == 30, (len(fa["ids"]), len(ma["ids"])))
+    check("exam: Final A va Midterm A dung so cau theo khuon", len(fa["ids"]) == data["types"]["final"]["n"] and len(ma["ids"]) == data["types"]["midterm"]["n"], (len(fa["ids"]), len(ma["ids"])))
     ids = {q["id"] for q in data["pool"]}
     check("exam: moi cau trong de nam trong ngan hang", all(i in ids for p in data["papers"] + data["mixed"] for i in p["ids"]))
     abc = [set(p["ids"]) for p in data["papers"] if p["type"] == "final"]

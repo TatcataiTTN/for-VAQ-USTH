@@ -1,0 +1,594 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào sau đây là một ưu điểm của hệ thống mạng cabin dựa trên máy chủ?",
+   "en": "Which one of the following is an advantage of a server-based cabin network system?"
+  },
+  "opts": [
+   {
+    "vi": "không cần hệ điều hành",
+    "en": "There is no need for an operating system"
+   },
+   {
+    "vi": "giảm tổng thể lượng cáp của máy bay",
+    "en": "There is an overall reduction in aircraft cabling"
+   },
+   {
+    "vi": "không còn cần lưu trữ phương tiện tập trung",
+    "en": "Centralised media storage is no longer required"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Hệ mạng thay các hệ rời rạc, mỗi hệ có cáp riêng, nên giảm cáp và khối lượng (Tooley 19.1).",
+   "en": "A network system replaces separate systems each with its own cabling, so cabling and weight fall (Tooley 19.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 1 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q1 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đặc tả ARINC nào áp dụng cho hệ thông tin cabin dạng mạng?",
+   "en": "Which ARINC specification applies to a networked cabin information system?"
+  },
+  "opts": [
+   {
+    "vi": "ARINC 429",
+    "en": "ARINC 429"
+   },
+   {
+    "vi": "ARINC 628",
+    "en": "ARINC 628"
+   },
+   {
+    "vi": "ARINC 629",
+    "en": "ARINC 629"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "ARINC 628 xác định triết lý kiến trúc và hạ tầng cho mạng cabin, dựa trên máy chủ COTS (Tooley 19.2.1).",
+   "en": "ARINC 628 defines the architectural philosophy and infrastructure for cabin networks, based on COTS servers (Tooley 19.2.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 2 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q2 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Về hệ thống máy chủ mạng cabin (CNSS), phát biểu nào sau đây đúng?",
+   "en": "In relation to cabin network server systems (CNSS), which one of the following statements is true?"
+  },
+  "opts": [
+   {
+    "vi": "chúng có thể được cấu hình lại nhanh và dễ dàng",
+    "en": "They can be quickly and easily reconfigured"
+   },
+   {
+    "vi": "IFE có thể được ưu tiên hơn thông báo của tổ lái",
+    "en": "IFE can take priority over crew announcements"
+   },
+   {
+    "vi": "hệ thống thông báo hành khách không còn cần thiết",
+    "en": "Passenger address systems are no longer required"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thông báo luôn có ưu tiên cao hơn IFE; cấu hình lại được qua phần mềm chẩn đoán (Tooley 19.3.2, 19.3.6).",
+   "en": "Announcements always outrank IFE; reconfiguration is done through diagnostic software (Tooley 19.3.2, 19.3.6)."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 3 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q3 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong một hệ thống máy chủ mạng cabin (CNSS):",
+   "en": "In a cabin network server system (CNSS):"
+  },
+  "opts": [
+   {
+    "vi": "không cần hệ loa cabin riêng",
+    "en": "there is no requirement for a separate cabin speaker system"
+   },
+   {
+    "vi": "chỉ nhà chế tạo máy bay mới cấu hình lại được",
+    "en": "reconfiguration can only be performed by the aircraft manufacturer"
+   },
+   {
+    "vi": "âm thanh số, video và dữ liệu đều dùng chung một tài nguyên mạng",
+    "en": "digital audio, video and data can all share the same network resource"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley 19.2, Hình 19.2.",
+   "en": "Tooley 19.2, Figure 19.2."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 4 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q4 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một mạng cabin IFE có thể chia thành:",
+   "en": "An IFE cabin network can be divided into:"
+  },
+  "opts": [
+   {
+    "vi": "giá đỡ, khoang thiết bị và máy chủ mạng",
+    "en": "racks, equipment bays and network servers"
+   },
+   {
+    "vi": "lưu trữ phương tiện, bộ dồn kênh và phân phối cabin",
+    "en": "media storage, multiplexers and cabin distribution"
+   },
+   {
+    "vi": "phân hệ đầu cuối trung tâm (head-end), phân phối cabin và các ghế hành khách",
+    "en": "head-end, cabin distribution and passenger seat subsystems"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tooley 19.3.",
+   "en": "Tooley 19.3."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 5 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q5 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bảng điều khiển IFE thường được đặt:",
+   "en": "The IFE control panel is usually placed:"
+  },
+  "opts": [
+   {
+    "vi": "trên bảng trần buồng lái",
+    "en": "in the flight deck overhead panel"
+   },
+   {
+    "vi": "trong khoang điện tử chính",
+    "en": "in the aircraft's main avionics bay"
+   },
+   {
+    "vi": "gần cửa cabin phía trước bên trái",
+    "en": "close to the forward left cabin door"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Cùng chỗ với cổng nạp dữ liệu trên nhiều máy bay (Tooley 19.3).",
+   "en": "Together with the data load ports on many aircraft (Tooley 19.3)."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 6 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q6 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao cần liên kết dữ liệu tốc độ cao giữa bộ nạp dữ liệu và bộ nhớ lớn của IFE?",
+   "en": "Why is a high-speed datalink required between the data loader and the IFE mass memory?"
+  },
+  "opts": [
+   {
+    "vi": "dung lượng lưu trữ có hạn",
+    "en": "Limited mass storage is available"
+   },
+   {
+    "vi": "IFE bị hạn chế tốc độ và công suất xử lý",
+    "en": "IFE processing speed and power restrictions"
+   },
+   {
+    "vi": "cần truyền lượng dữ liệu lớn",
+    "en": "Large quantities of data need to be transferred"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tệp phương tiện số rất lớn; 100 Mbps có thể đủ nhưng ưu tiên Gigabit Ethernet (Tooley 19.3).",
+   "en": "Digital media files are large; 100 Mbps may suffice but Gigabit Ethernet is preferred (Tooley 19.3)."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.19 · Câu 7 (khoá A.19, tr.382)",
+   "en": "Tooley Ch.19 · Q7 (key A.19, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Định nghĩa nào đúng cho cặp tài liệu điện tử (EFB)?",
+   "en": "Which one of the following is a correct definition of an electronic flight bag (EFB)?"
+  },
+  "opts": [
+   {
+    "vi": "một hệ thông tin dùng cho tổ lái",
+    "en": "An information system for flight crew use"
+   },
+   {
+    "vi": "một thiết bị điện tử di động chỉ dùng lưu dữ liệu dẫn đường",
+    "en": "A portable electronic device used only for storing navigational data"
+   },
+   {
+    "vi": "một máy tính cầm tay giao tiếp trực tiếp với hệ điều khiển bay",
+    "en": "A handheld computer with a direct interface to the flight control system"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EFB không được thay thế thiết bị lắp sẵn bắt buộc và không điều khiển tàu bay trực tiếp (Tooley 20.2).",
+   "en": "An EFB must not replace required installed equipment and does not control the aircraft directly (Tooley 20.2)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 1 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q1 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ứng dụng phần mềm EFB loại A (Type A) là:",
+   "en": "Which one of the following is a Type A EFB software application?"
+  },
+  "opts": [
+   {
+    "vi": "trình đọc hiển thị sổ tay khai thác bay",
+    "en": "A reader that displays a flight operation manual"
+   },
+   {
+    "vi": "gói phần mềm lập kế hoạch tối ưu chuyến bay",
+    "en": "A software package for flight optimisation planning"
+   },
+   {
+    "vi": "công cụ bảng tính tính khối lượng và cân bằng",
+    "en": "A spreadsheet tool for mass and balance calculation"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Loại A: trình duyệt và trình đọc tài liệu chuẩn; loại B: tính khối lượng và cân bằng, hiệu năng, bản đồ động (Tooley 20.2.4).",
+   "en": "Type A: browsers and readers of standard documentation; Type B: mass and balance, performance tools, moving maps (Tooley 20.2.4)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 2 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q2 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một ứng dụng chạy trên EFB lắp sẵn sao chép một hệ avionics hiện có của tàu bay. Phần mềm đó được xếp loại:",
+   "en": "A software application hosted by an installed EFB duplicates one of the aircraft's existing avionics systems. The software would be classed as:"
+  },
+  "opts": [
+   {
+    "vi": "ứng dụng EFB loại A không cần phê chuẩn đủ điều kiện bay",
+    "en": "a Type A EFB application not requiring airworthiness approval"
+   },
+   {
+    "vi": "ứng dụng EFB loại B không cần phê chuẩn đủ điều kiện bay",
+    "en": "a Type B EFB application not requiring airworthiness approval"
+   },
+   {
+    "vi": "ứng dụng avionics được chứng nhận, cần phê chuẩn đủ điều kiện bay đầy đủ",
+    "en": "a certified avionics application requiring full airworthiness approval"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ứng dụng liên quan điều khiển chủ động hoặc sao chép hệ đã chứng nhận không được coi là ứng dụng EFB (Tooley 20.2.4).",
+   "en": "Applications that actively control the aircraft or duplicate certified systems are not EFB applications (Tooley 20.2.4)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 3 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q3 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các ứng dụng phần mềm EFB loại A được phân loại là có điều kiện hỏng hóc:",
+   "en": "Type A electronic flight bag (EFB) software applications are classified as having failure conditions that have:"
+  },
+  "opts": [
+   {
+    "vi": "không có hệ quả an toàn",
+    "en": "no safety implications"
+   },
+   {
+    "vi": "hệ quả an toàn nhỏ",
+    "en": "minor safety implications"
+   },
+   {
+    "vi": "hệ quả an toàn đáng kể",
+    "en": "significant safety implications"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hỏng hoặc dùng sai ứng dụng loại A không ảnh hưởng xấu tới an toàn bay; loại B có thể ảnh hưởng hiệu quả làm việc của phi công (Tooley 20.2.4).",
+   "en": "Malfunction or misuse of a Type A application has no adverse effect on flight safety; Type B may affect pilot performance (Tooley 20.2.4)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 4 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q4 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một thiết bị điện tử di động (PED) được xếp là EFB khi:",
+   "en": "A portable electronic device (PED) is classed as an electronic flight bag (EFB) when:"
+  },
+  "opts": [
+   {
+    "vi": "dùng để giải trí",
+    "en": "used for entertainment purposes"
+   },
+   {
+    "vi": "hiển thị bản đồ và hải đồ hàng không",
+    "en": "displaying aeronautical maps and charts"
+   },
+   {
+    "vi": "dùng để gửi và nhận thư điện tử cá nhân",
+    "en": "used to send and receive personal email"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "EFB hiển thị dữ liệu hàng không, tài liệu và thực hiện tính toán (Tooley 20.2).",
+   "en": "An EFB displays aviation data and documents and performs calculations (Tooley 20.2)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 5 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q5 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các EFB lắp sẵn (installed):",
+   "en": "Installed electronic flight bags (EFB) are:"
+  },
+  "opts": [
+   {
+    "vi": "được coi là một phần của thiết kế kiểu loại tàu bay và cần chứng nhận phê chuẩn kiểu",
+    "en": "considered part of an aircraft type and require type approved certification"
+   },
+   {
+    "vi": "không phải một phần của kiểu loại nhưng vẫn cần chứng nhận phê chuẩn kiểu",
+    "en": "not considered part of an aircraft type but do require type approved certification"
+   },
+   {
+    "vi": "là một phần của kiểu loại nhưng không cần chứng nhận phê chuẩn kiểu",
+    "en": "considered part of an aircraft type but do not require type approved certification"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EFB di động không thuộc thiết kế kiểu loại và không cần chứng nhận (Tooley 20.2.1 đến 20.2.3).",
+   "en": "A portable EFB is not part of the type design and needs no certification (Tooley 20.2.1 to 20.2.3)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 6 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q6 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các EFB di động (portable) có thể:",
+   "en": "Portable EFB devices can:"
+  },
+  "opts": [
+   {
+    "vi": "giao tiếp với hệ thống tàu bay và mô phỏng điều khiển bay",
+    "en": "interface with aircraft systems and emulate flight controls"
+   },
+   {
+    "vi": "giám sát hiệu năng tàu bay và đưa ra báo cáo bảo dưỡng",
+    "en": "monitor aircraft performance and provide maintenance reports"
+   },
+   {
+    "vi": "hiển thị dữ liệu hàng không, tài liệu điện tử và thực hiện tính toán",
+    "en": "display aviation data, electronic documents and perform calculations"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chỉ hỗ trợ ứng dụng loại A hoặc B, nơi hỏng phần mềm không ảnh hưởng trực tiếp tới hoạt động tàu bay (Tooley 20.2.2).",
+   "en": "Only Type A or B applications where a software failure does not directly affect aircraft operation (Tooley 20.2.2)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 7 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q7 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EFB lắp sẵn điển hình gồm:",
+   "en": "Installed EFB typically comprise:"
+  },
+  "opts": [
+   {
+    "vi": "một bộ hiển thị duy nhất gắn trên bảng giữa buồng lái",
+    "en": "a single flight deck unit mounted in the central console"
+   },
+   {
+    "vi": "hai máy tính bảng hoặc xách tay đem khỏi tàu bay sau mỗi chuyến",
+    "en": "two tablet or laptop devices removed from the aircraft after each flight"
+   },
+   {
+    "vi": "hai bộ hiển thị gắn trong buồng lái cùng các bộ điện tử ở khoang điện tử chính",
+    "en": "two flight deck mounted display units with associated electronic units in the main avionics bay"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mỗi DU nối với một EU gồm một hoặc nhiều máy tính bo mạch đơn (Tooley 20.2.7).",
+   "en": "Each DU connects to an EU with one or more single-board computers (Tooley 20.2.7)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 8 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q8 (key A.20, p.383)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để tổ lái nhìn được màn hình EFB lắp sẵn của nhau:",
+   "en": "So that the flight crew can visualise each other's installed EFB screens:"
+  },
+  "opts": [
+   {
+    "vi": "các màn hình gắn trên bảng giữa buồng lái",
+    "en": "displays are mounted on the central flight deck console"
+   },
+   {
+    "vi": "dữ liệu được truyền điện tử giữa các màn hình",
+    "en": "data can be electronically transferred between display screens"
+   },
+   {
+    "vi": "EFB được chuyển vật lý giữa vị trí cơ trưởng và cơ phó",
+    "en": "EFB can be physically transferred between the captain and first officer positions"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Liên kết chéo hiển thị (display cross-link) trao đổi dữ liệu giữa hai DU (Tooley 20.2.7).",
+   "en": "The display cross-link exchanges data between the two DUs (Tooley 20.2.7)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.20 · Câu 9 (khoá A.20, tr.383)",
+   "en": "Tooley Ch.20 · Q9 (key A.20, p.383)"
+  }
+ }
+]

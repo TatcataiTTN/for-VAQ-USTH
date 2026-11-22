@@ -1,0 +1,951 @@
+[
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Đại lượng tương tự (analog) là đại lượng có giá trị liên tục.",
+   "en": "An analog quantity is one having continuous values."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đại lượng analog biến thiên liên tục theo thời gian.",
+   "en": "An analog quantity varies continuously."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 1 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 1 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Một đại lượng số (digital) không có giá trị rời rạc.",
+   "en": "A digital quantity has no discrete values."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Đại lượng số có các giá trị rời rạc.",
+   "en": "A digital quantity has discrete values."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 2 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 2 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hệ nhị phân có hai chữ số.",
+   "en": "There are two digits in the binary system."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chỉ có 0 và 1.",
+   "en": "Only 0 and 1."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 3 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 3 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Thuật ngữ bit là viết tắt của chữ số nhị phân (binary digit).",
+   "en": "The term bit is short for binary digit."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bit = binary digit.",
+   "en": "Bit = binary digit."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 4 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 4 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Trong logic dương, mức THẤP biểu diễn nhị phân 1.",
+   "en": "In positive logic, a LOW level represents a binary 1."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Logic dương: CAO là 1, THẤP là 0.",
+   "en": "Positive logic: HIGH is 1, LOW is 0."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 5 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 5 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Sóng tuần hoàn lặp lại sau một khoảng thời gian cố định.",
+   "en": "A periodic wave repeats itself at a fixed interval."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khoảng đó là chu kỳ.",
+   "en": "That interval is the period."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 6 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 6 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Giản đồ thời gian cho thấy quan hệ thời gian giữa hai hay nhiều dạng sóng số.",
+   "en": "A timing diagram shows the timing relationship of two or more digital waveforms."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đó là định nghĩa giản đồ thời gian.",
+   "en": "That is the definition of a timing diagram."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 7 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 7 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Chức năng AND được thực hiện bằng mạch logic gọi là cổng đảo (inverter).",
+   "en": "An AND function is implemented by a logic circuit known as an inverter."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cổng đảo thực hiện NOT; AND do cổng AND thực hiện.",
+   "en": "An inverter performs NOT; AND is done by an AND gate."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 8 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 8 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Flip-flop là mạch logic lưỡng bền chỉ có thể lưu hai bit cùng lúc.",
+   "en": "A flip-flop is a bistable logic circuit that can store only two bits at a time."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Một flip-flop lưu một bit.",
+   "en": "A flip-flop stores one bit."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 9 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 9 (key p.64)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hai loại IC số rộng là chức năng cố định (fixed-function) và khả trình (programmable).",
+   "en": "Two broad types of digital integrated circuits are fixed-function and programmable."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 1-5, 1-6.",
+   "en": "Floyd 1-5, 1-6."
+  },
+  "topic": {
+   "vi": "IC số và logic khả trình",
+   "en": "Digital ICs and programmable logic"
+  },
+  "topic_id": "ic",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Đúng/Sai 10 (khoá tr.64)",
+   "en": "Floyd Ch.1 · True/False 10 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đại lượng có các giá trị số rời rạc là:",
+   "en": "A quantity having discrete numerical values is"
+  },
+  "opts": [
+   {
+    "vi": "đại lượng tương tự",
+    "en": "an analog quantity"
+   },
+   {
+    "vi": "đại lượng số",
+    "en": "a digital quantity"
+   },
+   {
+    "vi": "đại lượng nhị phân",
+    "en": "a binary quantity"
+   },
+   {
+    "vi": "đại lượng tự nhiên",
+    "en": "a natural quantity"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Rời rạc nghĩa là số.",
+   "en": "Discrete means digital."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 1 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 1 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thuật ngữ bit nghĩa là:",
+   "en": "The term bit means"
+  },
+  "opts": [
+   {
+    "vi": "một lượng dữ liệu nhỏ",
+    "en": "a small amount of data"
+   },
+   {
+    "vi": "một số 1 hoặc 0",
+    "en": "a 1 or a 0"
+   },
+   {
+    "vi": "chữ số nhị phân",
+    "en": "binary digit"
+   },
+   {
+    "vi": "cả (b) và (c)",
+    "en": "both answers (b) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Bit là chữ số nhị phân, tức một giá trị 1 hoặc 0: cả (b) và (c) đều đúng.",
+   "en": "A bit is a binary digit, i.e. a 1 or a 0: both (b) and (c) are true."
+  },
+  "topic": {
+   "vi": "Đại lượng số, bit và mức logic",
+   "en": "Digital quantities, bits and logic levels"
+  },
+  "topic_id": "dig",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 2 (khoá in (c), đúng (d); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 2 (printed key (c), correct (d); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng thời gian giữa các điểm 50 % trên sườn lên và sườn xuống của một xung là:",
+   "en": "The time interval between the 50% points on the rising and falling edges is"
+  },
+  "opts": [
+   {
+    "vi": "thời gian lên",
+    "en": "rise time"
+   },
+   {
+    "vi": "thời gian xuống",
+    "en": "fall time"
+   },
+   {
+    "vi": "độ rộng xung",
+    "en": "pulse width"
+   },
+   {
+    "vi": "chu kỳ",
+    "en": "period"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đó là định nghĩa độ rộng xung.",
+   "en": "That is the definition of pulse width."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 3 (khoá in (a), đúng (c); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 3 (printed key (a), correct (c); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một xung trong một dạng sóng có tần số 50 Hz. Nó lặp lại mỗi:",
+   "en": "A pulse in a certain waveform has a frequency of 50 Hz. It repeats itself every"
+  },
+  "opts": [
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   },
+   {
+    "vi": "20 ms",
+    "en": "20 ms"
+   },
+   {
+    "vi": "50 ms",
+    "en": "50 ms"
+   },
+   {
+    "vi": "100 ms",
+    "en": "100 ms"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "$T=1/f=1/50=20$ ms.",
+   "en": "$T=1/f=1/50=20$ ms."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 4 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 4 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong một dạng sóng số, chu kỳ gấp bốn lần độ rộng xung. Chu kỳ làm việc (duty cycle) là:",
+   "en": "In a certain digital waveform, the period is four times the pulse width. The duty cycle is"
+  },
+  "opts": [
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "50 %",
+    "en": "50 %"
+   },
+   {
+    "vi": "75 %",
+    "en": "75 %"
+   },
+   {
+    "vi": "100 %",
+    "en": "100 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t_W/T=1/4=25$ %.",
+   "en": "$t_W/T=1/4=25$ %."
+  },
+  "topic": {
+   "vi": "Dạng sóng số: chu kỳ, tần số, độ rộng xung",
+   "en": "Digital waveforms: period, frequency, pulse width"
+  },
+  "topic_id": "wave",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 5 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 5 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một cổng đảo (inverter):",
+   "en": "An inverter"
+  },
+  "opts": [
+   {
+    "vi": "thực hiện phép NOT",
+    "en": "performs the NOT operation"
+   },
+   {
+    "vi": "đổi CAO thành THẤP",
+    "en": "changes a HIGH to a LOW"
+   },
+   {
+    "vi": "đổi THẤP thành CAO",
+    "en": "changes a LOW to a HIGH"
+   },
+   {
+    "vi": "làm cả ba việc trên",
+    "en": "does all of the above"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Cả ba phát biểu đều đúng.",
+   "en": "All three statements are true."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 6 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 6 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ngõ ra của cổng OR ở mức THẤP khi:",
+   "en": "The output of an OR gate is LOW when"
+  },
+  "opts": [
+   {
+    "vi": "có ngõ vào nào đó ở mức CAO",
+    "en": "any input is HIGH"
+   },
+   {
+    "vi": "mọi ngõ vào ở mức CAO",
+    "en": "all inputs are HIGH"
+   },
+   {
+    "vi": "không ngõ vào nào ở mức CAO",
+    "en": "no inputs are HIGH"
+   },
+   {
+    "vi": "cả (a) và (b)",
+    "en": "both (a) and (b)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "OR cho CAO khi có ít nhất một ngõ vào CAO; vì thế chỉ THẤP khi không ngõ vào nào CAO.",
+   "en": "An OR output is HIGH when at least one input is HIGH; so it is LOW only when no input is HIGH."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 7 (khoá in (b), đúng (c); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 7 (printed key (b), correct (c); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ngõ ra của cổng AND ở mức THẤP khi:",
+   "en": "The output of an AND gate is LOW when"
+  },
+  "opts": [
+   {
+    "vi": "có ngõ vào nào đó ở mức THẤP",
+    "en": "any input is LOW"
+   },
+   {
+    "vi": "mọi ngõ vào ở mức CAO",
+    "en": "all inputs are HIGH"
+   },
+   {
+    "vi": "không ngõ vào nào ở mức CAO",
+    "en": "no inputs are HIGH"
+   },
+   {
+    "vi": "cả (a) và (c)",
+    "en": "both (a) and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "AND THẤP khi có ngõ vào THẤP, kể cả khi không ngõ vào nào CAO: (a) và (c) đều đúng. Khoá in là (a), chỉ nêu một phần.",
+   "en": "An AND output is LOW when any input is LOW, including when no input is HIGH: (a) and (c) are both true. The printed key (a) names only part of it."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 8 (khoá in (a), đúng (d); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 8 (printed key (a), correct (d); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thiết bị dùng để đổi một số nhị phân sang dạng hiển thị 7 đoạn là:",
+   "en": "The device used to convert a binary number to a 7-segment display format is the"
+  },
+  "opts": [
+   {
+    "vi": "bộ dồn kênh",
+    "en": "multiplexer"
+   },
+   {
+    "vi": "bộ mã hoá",
+    "en": "encoder"
+   },
+   {
+    "vi": "bộ giải mã",
+    "en": "decoder"
+   },
+   {
+    "vi": "thanh ghi",
+    "en": "register"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bộ giải mã BCD sang 7 đoạn.",
+   "en": "A BCD-to-7-segment decoder."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 9 (khoá in (d), đúng (c); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 9 (printed key (d), correct (c); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một ví dụ về thiết bị lưu trữ dữ liệu là:",
+   "en": "An example of a data storage device is"
+  },
+  "opts": [
+   {
+    "vi": "cổng logic",
+    "en": "the logic gate"
+   },
+   {
+    "vi": "flip-flop",
+    "en": "the flip-flop"
+   },
+   {
+    "vi": "bộ so sánh",
+    "en": "the comparator"
+   },
+   {
+    "vi": "thanh ghi",
+    "en": "the register"
+   },
+   {
+    "vi": "cả (b) và (d)",
+    "en": "both answers (b) and (d)"
+   }
+  ],
+  "correct": 4,
+  "explain": {
+   "vi": "Flip-flop và thanh ghi đều lưu dữ liệu.",
+   "en": "Flip-flops and registers both store data."
+  },
+  "topic": {
+   "vi": "Cổng logic cơ bản và thiết bị số",
+   "en": "Basic gates and digital devices"
+  },
+  "topic_id": "gate",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 10 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 10 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "VHDL là:",
+   "en": "VHDL is a"
+  },
+  "opts": [
+   {
+    "vi": "một thiết bị logic",
+    "en": "logic device"
+   },
+   {
+    "vi": "một ngôn ngữ lập trình PLD",
+    "en": "PLD programming language"
+   },
+   {
+    "vi": "một ngôn ngữ máy tính",
+    "en": "computer language"
+   },
+   {
+    "vi": "logic mật độ rất cao",
+    "en": "very high density logic"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "VHDL (VHSIC HDL) là ngôn ngữ mô tả phần cứng để lập trình thiết bị logic khả trình (Module 14).",
+   "en": "VHDL (VHSIC HDL) is a hardware description language used to program programmable logic devices (Module 14)."
+  },
+  "topic": {
+   "vi": "IC số và logic khả trình",
+   "en": "Digital ICs and programmable logic"
+  },
+  "topic_id": "ic",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 11 (khoá in (c), đúng (b); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 11 (printed key (c), correct (b); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "CPLD là viết tắt của:",
+   "en": "A CPLD is a"
+  },
+  "opts": [
+   {
+    "vi": "controlled program logic device",
+    "en": "controlled program logic device"
+   },
+   {
+    "vi": "complex programmable logic driver",
+    "en": "complex programmable logic driver"
+   },
+   {
+    "vi": "complex programmable logic device",
+    "en": "complex programmable logic device"
+   },
+   {
+    "vi": "central processing logic device",
+    "en": "central processing logic device"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Complex Programmable Logic Device (Module 11).",
+   "en": "Complex Programmable Logic Device (Module 11)."
+  },
+  "topic": {
+   "vi": "IC số và logic khả trình",
+   "en": "Digital ICs and programmable logic"
+  },
+  "topic_id": "ic",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 12 (khoá in (a), đúng (c); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 12 (printed key (a), correct (c); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "FPGA là viết tắt của:",
+   "en": "An FPGA is a"
+  },
+  "opts": [
+   {
+    "vi": "field-programmable gate array",
+    "en": "field-programmable gate array"
+   },
+   {
+    "vi": "fast programmable gate array",
+    "en": "fast programmable gate array"
+   },
+   {
+    "vi": "field-programmable generic array",
+    "en": "field-programmable generic array"
+   },
+   {
+    "vi": "flash process gate application",
+    "en": "flash process gate application"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Field-Programmable Gate Array (Module 11).",
+   "en": "Field-Programmable Gate Array (Module 11)."
+  },
+  "topic": {
+   "vi": "IC số và logic khả trình",
+   "en": "Digital ICs and programmable logic"
+  },
+  "topic_id": "ic",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 13 (khoá in (d), đúng (a); tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 13 (printed key (d), correct (a); p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một IC chức năng cố định chứa bốn cổng AND là ví dụ của:",
+   "en": "A fixed-function IC package containing four AND gates is an example of"
+  },
+  "opts": [
+   {
+    "vi": "MSI",
+    "en": "MSI"
+   },
+   {
+    "vi": "SMT",
+    "en": "SMT"
+   },
+   {
+    "vi": "SOIC",
+    "en": "SOIC"
+   },
+   {
+    "vi": "SSI",
+    "en": "SSI"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Bốn cổng là mức tích hợp nhỏ (SSI, tới 10 cổng tương đương).",
+   "en": "Four gates is small-scale integration (SSI, up to 10 equivalent gates)."
+  },
+  "topic": {
+   "vi": "IC số và logic khả trình",
+   "en": "Digital ICs and programmable logic"
+  },
+  "topic_id": "ic",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 14 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 14 (key p.64)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một thiết bị LSI có độ phức tạp mạch từ:",
+   "en": "An LSI device has a circuit complexity of from"
+  },
+  "opts": [
+   {
+    "vi": "10 đến 100 cổng tương đương",
+    "en": "10 to 100 equivalent gates"
+   },
+   {
+    "vi": "hơn 100 đến 10 000 cổng tương đương",
+    "en": "more than 100 to 10,000 equivalent gates"
+   },
+   {
+    "vi": "2 000 đến 5 000 cổng tương đương",
+    "en": "2000 to 5000 equivalent gates"
+   },
+   {
+    "vi": "hơn 10 000 đến 100 000 cổng tương đương",
+    "en": "more than 10,000 to 100,000 equivalent gates"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "SSI tới 10, MSI 10 đến 100, LSI hơn 100 đến 10 000, VLSI hơn 10 000 đến 100 000 (Floyd 1-6).",
+   "en": "SSI up to 10, MSI 10 to 100, LSI over 100 to 10,000, VLSI over 10,000 to 100,000 (Floyd 1-6)."
+  },
+  "topic": {
+   "vi": "IC số và logic khả trình",
+   "en": "Digital ICs and programmable logic"
+  },
+  "topic_id": "ic",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.1 · Self-Test 15 (khoá tr.64)",
+   "en": "Floyd Ch.1 · Self-Test 15 (key p.64)"
+  }
+ }
+]

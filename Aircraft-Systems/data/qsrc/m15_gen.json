@@ -1,0 +1,1341 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuông cabin thấp là một chuỗi hình sin 494 Hz kéo dài 900 ms. Số chu kỳ trong một lần chuông xấp xỉ:",
+   "en": "The low cabin chime is a 494 Hz sine burst lasting 900 ms. The number of cycles in one chime is about:"
+  },
+  "opts": [
+   {
+    "vi": "445",
+    "en": "445"
+   },
+   {
+    "vi": "222",
+    "en": "222"
+   },
+   {
+    "vi": "889",
+    "en": "889"
+   },
+   {
+    "vi": "494",
+    "en": "494"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$494\\times0{,}9=444.6$ chu kỳ ≈ 445.",
+   "en": "$494\\times0.9=444.6$ cycles ≈ 445."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chuông cabin: số chu kỳ",
+   "en": "Added · Cabin chime: cycles"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuông cabin cao là một chuỗi hình sin 587 Hz kéo dài 900 ms. Số chu kỳ trong một lần chuông xấp xỉ:",
+   "en": "The high cabin chime is a 587 Hz sine burst lasting 900 ms. The number of cycles in one chime is about:"
+  },
+  "opts": [
+   {
+    "vi": "528",
+    "en": "528"
+   },
+   {
+    "vi": "264",
+    "en": "264"
+   },
+   {
+    "vi": "1057",
+    "en": "1057"
+   },
+   {
+    "vi": "587",
+    "en": "587"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$587\\times0{,}9=528.3$ chu kỳ ≈ 528.",
+   "en": "$587\\times0.9=528.3$ cycles ≈ 528."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chuông cabin: số chu kỳ",
+   "en": "Added · Cabin chime: cycles"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu kỳ của sóng hình sin 494 Hz (chuông cabin) là:",
+   "en": "The period of a 494 Hz sine wave (a cabin chime) is:"
+  },
+  "opts": [
+   {
+    "vi": "2.024 ms",
+    "en": "2.024 ms"
+   },
+   {
+    "vi": "4.049 ms",
+    "en": "4.049 ms"
+   },
+   {
+    "vi": "1.012 ms",
+    "en": "1.012 ms"
+   },
+   {
+    "vi": "0.494 ms",
+    "en": "0.494 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=1/494$ Hz = 2.024 ms.",
+   "en": "$T=1/494$ Hz = 2.024 ms."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ của chuông",
+   "en": "Added · Chime period"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chu kỳ của sóng hình sin 587 Hz (chuông cabin) là:",
+   "en": "The period of a 587 Hz sine wave (a cabin chime) is:"
+  },
+  "opts": [
+   {
+    "vi": "1.704 ms",
+    "en": "1.704 ms"
+   },
+   {
+    "vi": "3.407 ms",
+    "en": "3.407 ms"
+   },
+   {
+    "vi": "0.852 ms",
+    "en": "0.852 ms"
+   },
+   {
+    "vi": "0.587 ms",
+    "en": "0.587 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$T=1/587$ Hz = 1.704 ms.",
+   "en": "$T=1/587$ Hz = 1.704 ms."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ của chuông",
+   "en": "Added · Chime period"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chuông cao 587 Hz và chuông thấp 494 Hz của cabin có tỉ số tần số xấp xỉ:",
+   "en": "The high chime (587 Hz) and low chime (494 Hz) of the cabin have a frequency ratio of about:"
+  },
+  "opts": [
+   {
+    "vi": "1.188",
+    "en": "1.188"
+   },
+   {
+    "vi": "1.5",
+    "en": "1.5"
+   },
+   {
+    "vi": "2.000",
+    "en": "2.000"
+   },
+   {
+    "vi": "0.842",
+    "en": "0.842"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "587 / 494 = 1.188, gần một quãng ba thứ (tỉ số 1,2); không phải quãng tám (2).",
+   "en": "587 / 494 = 1.188, close to a minor third (ratio 1.2); not an octave (2)."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tỉ số tần số chuông",
+   "en": "Added · Chime frequency ratio"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nạp một tệp phương tiện 4.7 GB (giả định 1 GB = 10⁹ byte) vào bộ nhớ IFE qua liên kết 100 Mbit/s, bỏ qua mào đầu giao thức. Thời gian nạp xấp xỉ:",
+   "en": "Loading a 4.7 GB media file (assume 1 GB = 10⁹ bytes) into the IFE memory over a 100 Mbit/s link, ignoring protocol overhead, takes about:"
+  },
+  "opts": [
+   {
+    "vi": "376.0 s",
+    "en": "376.0 s"
+   },
+   {
+    "vi": "47.0 s",
+    "en": "47.0 s"
+   },
+   {
+    "vi": "50.1 phút",
+    "en": "50.1 min"
+   },
+   {
+    "vi": "37.6 s",
+    "en": "37.6 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=4.7\\times8\\times10^9/1e+08$ = 376.0 s.",
+   "en": "$t=4.7\\times8\\times10^9/1e+08$ = 376.0 s."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nạp phương tiện",
+   "en": "Added · Media loading time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nạp một tệp phương tiện 4.7 GB (giả định 1 GB = 10⁹ byte) vào bộ nhớ IFE qua liên kết 1 Gbit/s, bỏ qua mào đầu giao thức. Thời gian nạp xấp xỉ:",
+   "en": "Loading a 4.7 GB media file (assume 1 GB = 10⁹ bytes) into the IFE memory over a 1 Gbit/s link, ignoring protocol overhead, takes about:"
+  },
+  "opts": [
+   {
+    "vi": "37.6 s",
+    "en": "37.6 s"
+   },
+   {
+    "vi": "4.7 s",
+    "en": "4.7 s"
+   },
+   {
+    "vi": "300.8 s",
+    "en": "300.8 s"
+   },
+   {
+    "vi": "3.8 s",
+    "en": "3.8 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=4.7\\times8\\times10^9/1e+09$ = 37.6 s.",
+   "en": "$t=4.7\\times8\\times10^9/1e+09$ = 37.6 s."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nạp phương tiện",
+   "en": "Added · Media loading time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nạp một tệp phương tiện 20 GB (giả định 1 GB = 10⁹ byte) vào bộ nhớ IFE qua liên kết 100 Mbit/s, bỏ qua mào đầu giao thức. Thời gian nạp xấp xỉ:",
+   "en": "Loading a 20 GB media file (assume 1 GB = 10⁹ bytes) into the IFE memory over a 100 Mbit/s link, ignoring protocol overhead, takes about:"
+  },
+  "opts": [
+   {
+    "vi": "26.7 phút",
+    "en": "26.7 min"
+   },
+   {
+    "vi": "200.0 s",
+    "en": "200.0 s"
+   },
+   {
+    "vi": "213.3 phút",
+    "en": "213.3 min"
+   },
+   {
+    "vi": "160.0 s",
+    "en": "160.0 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=20\\times8\\times10^9/1e+08$ = 1600.0 s.",
+   "en": "$t=20\\times8\\times10^9/1e+08$ = 1600.0 s."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nạp phương tiện",
+   "en": "Added · Media loading time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nạp một tệp phương tiện 20 GB (giả định 1 GB = 10⁹ byte) vào bộ nhớ IFE qua liên kết 1 Gbit/s, bỏ qua mào đầu giao thức. Thời gian nạp xấp xỉ:",
+   "en": "Loading a 20 GB media file (assume 1 GB = 10⁹ bytes) into the IFE memory over a 1 Gbit/s link, ignoring protocol overhead, takes about:"
+  },
+  "opts": [
+   {
+    "vi": "160.0 s",
+    "en": "160.0 s"
+   },
+   {
+    "vi": "20.0 s",
+    "en": "20.0 s"
+   },
+   {
+    "vi": "21.3 phút",
+    "en": "21.3 min"
+   },
+   {
+    "vi": "16.0 s",
+    "en": "16.0 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=20\\times8\\times10^9/1e+09$ = 160.0 s.",
+   "en": "$t=20\\times8\\times10^9/1e+09$ = 160.0 s."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian nạp phương tiện",
+   "en": "Added · Media loading time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thông báo hành khách thường được gán mức ưu tiên. Mức ưu tiên CAO NHẤT (mức 1) thuộc về:",
+   "en": "Passenger announcements are usually assigned priority levels. The HIGHEST priority (level 1) belongs to:"
+  },
+  "opts": [
+   {
+    "vi": "thông báo từ buồng lái",
+    "en": "flight deck announcements"
+   },
+   {
+    "vi": "bảng tiếp viên phía trước",
+    "en": "the forward attendant panel"
+   },
+   {
+    "vi": "thông báo ghi sẵn",
+    "en": "pre-recorded announcements"
+   },
+   {
+    "vi": "nhạc lên máy bay và IFE",
+    "en": "boarding music and IFE"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thứ tự: buồng lái, bảng tiếp viên trước, bảng phía sau, ghi sẵn, nhạc và IFE (Tooley 19.3.2).",
+   "en": "Order: flight deck, forward attendant panel, rear panels, pre-recorded, music and IFE (Tooley 19.3.2)."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Ưu tiên thông báo",
+   "en": "Added · Announcement priority"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Thứ tự ưu tiên giảm dần của thông báo hành khách (mức 1 đến 5) là:",
+   "en": "The announcement priority order from level 1 to level 5 is:"
+  },
+  "opts": [
+   {
+    "vi": "buồng lái, bảng tiếp viên trước, bảng tiếp viên sau, ghi sẵn, nhạc và IFE",
+    "en": "flight deck, forward attendant panel, rear attendant panels, pre-recorded, music and IFE"
+   },
+   {
+    "vi": "nhạc và IFE, ghi sẵn, bảng sau, bảng trước, buồng lái",
+    "en": "music and IFE, pre-recorded, rear panels, forward panel, flight deck"
+   },
+   {
+    "vi": "bảng trước, buồng lái, bảng sau, nhạc, ghi sẵn",
+    "en": "forward panel, flight deck, rear panels, music, pre-recorded"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mức ưu tiên được lập trình trong dữ liệu cấu hình cabin; thông báo luôn được ưu tiên hơn khi IFE bật.",
+   "en": "Priority levels are programmed in the cabin configuration data; announcements always take priority while the IFE is on."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thứ tự ưu tiên",
+   "en": "Added · Priority order"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Theo quy ước chuông cabin của Tooley, một âm CAO đơn từ ghế hành khách hoặc nhà vệ sinh tới tiếp viên là:",
+   "en": "In Tooley's cabin chime convention a single HIGH tone from the passenger seats or toilets to the cabin crew is:"
+  },
+  "opts": [
+   {
+    "vi": "chuông gọi của hành khách (passenger call)",
+    "en": "a passenger call"
+   },
+   {
+    "vi": "chuông gọi khẩn cấp của tiếp viên",
+    "en": "an attendant emergency call"
+   },
+   {
+    "vi": "báo biển dây an toàn sáng",
+    "en": "seat belt sign illuminated"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chuông gọi tiếp viên: cao/thấp; khẩn cấp: cao/thấp lặp ba lần từ tổ lái; biển dây an toàn: một âm thấp (Tooley 19.3.5).",
+   "en": "Attendant call: high/low; emergency: high/low repeated three times from the flight crew; seat belt sign: a single low tone (Tooley 19.3.5)."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Quy ước chuông",
+   "en": "Added · Chime convention"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bốn phân hệ điển hình của hệ thống cabin máy bay chở khách là IFE, điều khiển môi trường cabin, thông báo hành khách (PA) và:",
+   "en": "The four typical cabin subsystems of a passenger aircraft are IFE, cabin environmental control, passenger address (PA) and:"
+  },
+  "opts": [
+   {
+    "vi": "truyền thông (communications)",
+    "en": "communications"
+   },
+   {
+    "vi": "điều khiển động cơ",
+    "en": "engine control"
+   },
+   {
+    "vi": "điều khiển bay",
+    "en": "flight control"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tài nguyên mạng và xử lý có thể dùng chung giữa các phân hệ (Tooley 19.2).",
+   "en": "Network and processing resources can be shared between them (Tooley 19.2)."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Phân hệ cabin",
+   "en": "Added · Cabin subsystems"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bốn loại người dùng mà hệ máy chủ mạng cabin phục vụ là:",
+   "en": "The four types of user served by the cabin network server system are:"
+  },
+  "opts": [
+   {
+    "vi": "tổ lái, tiếp viên (máy tính bảng), hành khách (ghế và thiết bị cá nhân), nhân viên kỹ thuật (laptop, bộ nạp phương tiện)",
+    "en": "flight crew, cabin crew (tablets), passengers (seat units and portable devices), engineering personnel (laptops, media loader)"
+   },
+   {
+    "vi": "chỉ hành khách",
+    "en": "passengers only"
+   },
+   {
+    "vi": "chỉ tổ lái và nhân viên mặt đất",
+    "en": "flight crew and ground staff only"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 19.2.",
+   "en": "Tooley 19.2."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Người dùng CNSS",
+   "en": "Added · CNSS users"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ARINC 628 quy định:",
+   "en": "ARINC 628 specifies:"
+  },
+  "opts": [
+   {
+    "vi": "triết lý kiến trúc và hạ tầng chung cho mạng cabin dựa trên máy chủ COTS, không quy định từng loại thiết bị",
+    "en": "the general architectural philosophy and infrastructure for cabin networks based on COTS servers, not individual items of equipment"
+   },
+   {
+    "vi": "tốc độ bit của bus 429",
+    "en": "the bit rate of the 429 bus"
+   },
+   {
+    "vi": "khung AFDX",
+    "en": "the AFDX frame"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhờ vậy nhà chế tạo và khai thác có nhiều tự do chọn phân hệ (Tooley 19.2.1).",
+   "en": "This gives manufacturers and operators great freedom in choosing subsystems (Tooley 19.2.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · ARINC 628",
+   "en": "Added · ARINC 628"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao các hệ cabin cũ nặng và tốn điện?",
+   "en": "Why were older cabin systems heavy and power-hungry?"
+  },
+  "opts": [
+   {
+    "vi": "mỗi dịch vụ là một hệ riêng với cáp, nguồn, điều khiển và hiển thị riêng",
+    "en": "each service was a separate system with its own cabling, power supply, controls and displays"
+   },
+   {
+    "vi": "vì dùng quá ít cáp",
+    "en": "because they used too little cabling"
+   },
+   {
+    "vi": "vì chỉ dùng một máy chủ",
+    "en": "because they used a single server"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ví dụ: bộ khuếch đại PA công suất 60 đến 120 W, dây dài tới loa trần; nhiều ổ đĩa và cáp tới từng ghế (Tooley 19.1).",
+   "en": "Examples: 60 to 120 W PA amplifiers with long cable runs to ceiling loudspeakers; multiple disk drives and cabling to each seat (Tooley 19.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống cabin và máy chủ mạng cabin",
+   "en": "Cabin systems and the cabin network server"
+  },
+  "topic_id": "cabin",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Cabin liên hợp cũ",
+   "en": "Added · Older federated cabins"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phân hệ đầu cuối trung tâm (head-end) của IFE thường gồm:",
+   "en": "The head-end subsystem of an IFE usually comprises:"
+  },
+  "opts": [
+   {
+    "vi": "bộ điều khiển hệ thống (SC), lưu trữ phương tiện, giao diện tới các hệ khác và bộ dồn kênh/phân phối âm thanh, video",
+    "en": "a system controller (SC) with media storage, an interface to other aircraft systems and multiplexers/distribution units for audio and video"
+   },
+   {
+    "vi": "chỉ các ghế hành khách",
+    "en": "only the passenger seats"
+   },
+   {
+    "vi": "chỉ ăng ten vệ tinh",
+    "en": "only the satellite antenna"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đặt tại khoang điện tử chính (Tooley 19.3).",
+   "en": "Located in the main avionics bay (Tooley 19.3)."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Head-end IFE",
+   "en": "Added · IFE head-end"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phân hệ ghế của IFE gồm:",
+   "en": "The seat subsystem of an IFE comprises:"
+  },
+  "opts": [
+   {
+    "vi": "hộp điện tử ghế (SEB) và bộ điều khiển hành khách (PCU)",
+    "en": "a seat electronic box (SEB) and a passenger control unit (PCU)"
+   },
+   {
+    "vi": "một máy chủ lưu trữ",
+    "en": "a storage server"
+   },
+   {
+    "vi": "một bộ nạp phương tiện",
+    "en": "a media loader"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 19.3.",
+   "en": "Tooley 19.3."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Phân hệ ghế",
+   "en": "Added · Seat subsystem"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điện thoại trên ghế liên lạc với mạng điện thoại mặt đất bằng cách:",
+   "en": "In-seat telephones reach the ground telephone networks by:"
+  },
+  "opts": [
+   {
+    "vi": "nối qua mạng IFE tới bộ điều khiển hệ thống rồi qua SATCOM",
+    "en": "connecting through the IFE network to the system controller and then via SATCOM"
+   },
+   {
+    "vi": "dây cáp tới sân bay",
+    "en": "a cable to the airport"
+   },
+   {
+    "vi": "tia hồng ngoại",
+    "en": "infrared light"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 19.3.",
+   "en": "Tooley 19.3."
+  },
+  "topic": {
+   "vi": "Phân hệ giải trí trên chuyến bay (IFE)",
+   "en": "The in-flight entertainment (IFE) subsystem"
+  },
+  "topic_id": "ife",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện thoại trên ghế",
+   "en": "Added · In-seat telephone"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bảng tiếp viên phía trước (FAP) KHÔNG dùng để:",
+   "en": "The forward attendant panel (FAP) is NOT used to:"
+  },
+  "opts": [
+   {
+    "vi": "điều khiển động cơ",
+    "en": "control the engines"
+   },
+   {
+    "vi": "phát thông báo hành khách",
+    "en": "make passenger announcements"
+   },
+   {
+    "vi": "điều khiển dịch vụ IFE",
+    "en": "control IFE services"
+   },
+   {
+    "vi": "giám sát và điều khiển môi trường",
+    "en": "monitor and control the environment"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "FAP: thông báo, liên lạc nội bộ, IFE, môi trường (Tooley 19.3.1).",
+   "en": "FAP: announcements, interphone, IFE, environment (Tooley 19.3.1)."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chức năng FAP",
+   "en": "Added · FAP functions"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hành khách luôn tự điều khiển được những gì, còn tiếp viên điều khiển gì ở mọi giai đoạn bay?",
+   "en": "What can passengers always control themselves, and what do the cabin crew control at all stages of flight?"
+  },
+  "opts": [
+   {
+    "vi": "đèn đọc sách và luồng khí cục bộ; chiếu sáng theo vùng",
+    "en": "reading lights and local airflow; zone lighting"
+   },
+   {
+    "vi": "chiếu sáng theo vùng; đèn đọc sách",
+    "en": "zone lighting; reading lights"
+   },
+   {
+    "vi": "động cơ; càng đáp",
+    "en": "the engines; the landing gear"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tiếp viên cũng có thể chỉnh mức và chất lượng ánh sáng để bù lệch múi giờ (Tooley 19.3.4).",
+   "en": "The crew can also adjust the level and quality of light to compensate for time-zone changes (Tooley 19.3.4)."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điều khiển cabin",
+   "en": "Added · Cabin control"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Việc bảo trì hệ cabin như cấu hình lại, thử hệ thống, nạp phần mềm và phương tiện, tải kết quả thử thường thực hiện bằng:",
+   "en": "Cabin-system maintenance such as reconfiguration, testing, software and media loading and off-loading test results is usually done with:"
+  },
+  "opts": [
+   {
+    "vi": "phần mềm chẩn đoán mà không cần mở giá thiết bị và cáp",
+    "en": "diagnostic software without accessing the racks and cabling"
+   },
+   {
+    "vi": "thay toàn bộ cáp",
+    "en": "replacing all the cabling"
+   },
+   {
+    "vi": "chỉ bởi nhà chế tạo ở nhà máy",
+    "en": "only by the manufacturer in the factory"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dữ liệu BITE tải qua USB hoặc cổng không dây tới laptop (Tooley 19.3.2 và 19.3.6).",
+   "en": "BITE data can be downloaded via USB or a wireless interface to a laptop (Tooley 19.3.2 and 19.3.6)."
+  },
+  "topic": {
+   "vi": "Thông báo, liên lạc và chuông gọi",
+   "en": "Announcements, interphone and chimes"
+  },
+  "topic_id": "crew",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bảo trì cabin",
+   "en": "Added · Cabin maintenance"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai loại EFB hiện nay là:",
+   "en": "The two classes of EFB now defined are:"
+  },
+  "opts": [
+   {
+    "vi": "di động (portable) và lắp sẵn (installed)",
+    "en": "portable and installed"
+   },
+   {
+    "vi": "loại 1 và loại 2",
+    "en": "Class 1 and Class 2"
+   },
+   {
+    "vi": "tương tự và số",
+    "en": "analogue and digital"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Trước năm 2017 có ba loại 1, 2, 3; hai loại mới phù hợp mức độ nghiêm trọng của chức năng (Tooley 20.2.1).",
+   "en": "Before 2017 there were three classes 1, 2, 3; the two new classes match the criticality of the functions (Tooley 20.2.1)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Loại EFB",
+   "en": "Added · EFB classes"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trước năm 2017, EFB loại 3 (Class 3) là:",
+   "en": "Before 2017, a Class 3 EFB was:"
+  },
+  "opts": [
+   {
+    "vi": "thiết bị lắp sẵn, chịu yêu cầu đủ điều kiện bay và không phải PED",
+    "en": "installed equipment subject to airworthiness requirements and not a PED"
+   },
+   {
+    "vi": "máy tính bảng thương mại để rời",
+    "en": "a loose commercial tablet"
+   },
+   {
+    "vi": "một điện thoại di động",
+    "en": "a mobile phone"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Class 1: COTS không lắp sẵn, cất khi bay quan trọng; Class 2: COTS cải tiến, có thể cần chứng nhận bổ sung (Tooley 20.2.1).",
+   "en": "Class 1: non-installed COTS, stowed during critical phases; Class 2: modified COTS, may need a supplemental certificate (Tooley 20.2.1)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · EFB cũ loại 3",
+   "en": "Added · Old Class 3 EFB"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ứng dụng EFB loại B (Type B) khác loại A ở chỗ:",
+   "en": "A Type B EFB application differs from Type A in that it:"
+  },
+  "opts": [
+   {
+    "vi": "có thể gồm tính khối lượng và cân bằng, hiệu năng, bản đồ động; không cần phê chuẩn đủ điều kiện bay nhưng nhà khai thác phải đánh giá theo hướng dẫn của cơ quan quản lý",
+    "en": "may cover mass and balance, performance and moving maps; it needs no airworthiness approval but the operator must carry out an assessment following regulator guidelines"
+   },
+   {
+    "vi": "chỉ đọc tài liệu PDF",
+    "en": "only reads PDF documents"
+   },
+   {
+    "vi": "điều khiển trực tiếp mặt lái",
+    "en": "directly controls the control surfaces"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lỗi phần mềm loại B không được làm tổn hại an toàn dù có thể ảnh hưởng hiệu quả làm việc của phi công (Tooley 20.2.4).",
+   "en": "A Type B software failure must not compromise safety although it may affect pilot performance (Tooley 20.2.4)."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · EFB loại A và B",
+   "en": "Added · EFB Type A and B"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hằng ngày EFB được dùng để làm gì, và nó KHÔNG được làm gì?",
+   "en": "What is an EFB used for, and what must it NOT do?"
+  },
+  "opts": [
+   {
+    "vi": "thay tài liệu giấy, tính hiệu năng; không được thay thiết bị lắp sẵn bắt buộc theo yêu cầu khai thác và đủ điều kiện bay",
+    "en": "replace paper documents and calculate performance; it must not replace installed equipment required by operational and airworthiness rules"
+   },
+   {
+    "vi": "thay thế mọi đồng hồ buồng lái",
+    "en": "replace every cockpit instrument"
+   },
+   {
+    "vi": "tắt hệ thống bảo vệ băng",
+    "en": "switch off ice protection"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 20.2.",
+   "en": "Tooley 20.2."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Công dụng của EFB",
+   "en": "Added · Uses of an EFB"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EFB lắp sẵn trên Boeing 777 mỗi EU có hai máy tính bo mạch đơn với hệ điều hành khác nhau. Chúng là:",
+   "en": "On the Boeing 777 each EU of the installed EFB has two single-board computers with different operating systems. They are:"
+  },
+  "opts": [
+   {
+    "vi": "một chạy Linux, một chạy Windows; liên kết chéo trao đổi dữ liệu giữa hai hệ điều hành",
+    "en": "one running Linux and one Windows; cross-links exchange data between the operating systems"
+   },
+   {
+    "vi": "cả hai đều dùng Windows",
+    "en": "both running Windows"
+   },
+   {
+    "vi": "một chạy iOS và một chạy Android",
+    "en": "one running iOS and one Android"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 20.2.7.",
+   "en": "Tooley 20.2.7."
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · EFB trên B777",
+   "en": "Added · EFB on the B777"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bốn loại hệ thống thông tin chính trên máy bay vận tải hiện đại gồm EFB và nhật ký điện tử (ELB), hệ thông tin cabin hành khách, hệ thông tin bảo dưỡng và:",
+   "en": "The four main information systems on a modern transport aircraft are EFB and electronic logbooks (ELB), passenger cabin information systems, maintenance information systems and:"
+  },
+  "opts": [
+   {
+    "vi": "hệ quản lý thông tin và không lưu (ATIMS)",
+    "en": "air traffic and information management systems (ATIMS)"
+   },
+   {
+    "vi": "hệ thống nhiên liệu",
+    "en": "fuel systems"
+   },
+   {
+    "vi": "hệ thống thuỷ lực",
+    "en": "hydraulic systems"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 20.1.",
+   "en": "Tooley 20.1."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Hệ thông tin tàu bay",
+   "en": "Added · Aircraft information systems"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Quãng đường cất cánh theo định nghĩa của Tooley là:",
+   "en": "The take-off distance as defined by Tooley is:"
+  },
+  "opts": [
+   {
+    "vi": "tổng quãng chạy đà trên mặt đất và quãng ngang để bay lên tới độ cao màn chắn 35 ft",
+    "en": "the sum of the ground run and the horizontal distance to climb to a screen height of 35 ft"
+   },
+   {
+    "vi": "chỉ chiều dài đường băng",
+    "en": "the runway length only"
+   },
+   {
+    "vi": "quãng đường từ cổng ra sân bay",
+    "en": "the distance from the gate to the airport exit"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Không được cất cánh nếu quãng sẵn có nhỏ hơn quãng cần (Tooley 20.1).",
+   "en": "Take-off must not be attempted if the available distance is less than the required one (Tooley 20.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Quãng cất cánh",
+   "en": "Added · Take-off distance"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tốc độ nào là tốc độ tới hạn khi hỏng động cơ (V1) và tốc độ quay bánh mũi lên (VR)?",
+   "en": "Which speeds are the critical engine failure speed (V1) and the rotation speed (VR)?"
+  },
+  "opts": [
+   {
+    "vi": "V1: tốc độ tối đa phi công phải bắt đầu dừng máy bay; VR: tốc độ nhấc bánh mũi khỏi mặt đất",
+    "en": "V1: the maximum speed at which the pilot must start to stop the aircraft; VR: the speed at which the nose gear is raised"
+   },
+   {
+    "vi": "V1: tốc độ chòng chành; VR: tốc độ an toàn",
+    "en": "V1: stalling speed; VR: safety speed"
+   },
+   {
+    "vi": "V1 là tốc độ hạ cánh; VR là tốc độ tuần dương",
+    "en": "V1 is the landing speed; VR is the cruise speed"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "V2 là tốc độ an toàn qua độ cao màn chắn; VS là tốc độ chòng chành (Tooley 20.1).",
+   "en": "V2 is the safety speed at the screen height; VS is the stalling speed (Tooley 20.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tốc độ cất cánh",
+   "en": "Added · Take-off speeds"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Boeing 737 điển hình (79 000 kg, TODA 2,1 km, khô ráo) có V1 = 124 kt, VR = 125 kt, V2 = 136 kt. Thứ tự tăng dần của tốc độ trong lần cất cánh này là:",
+   "en": "A typical Boeing 737 (79,000 kg, TODA 2.1 km, dry) has V1 = 124 kt, VR = 125 kt, V2 = 136 kt. The increasing order of the speeds in this take-off is:"
+  },
+  "opts": [
+   {
+    "vi": "V1, VR, V2",
+    "en": "V1, VR, V2"
+   },
+   {
+    "vi": "V2, VR, V1",
+    "en": "V2, VR, V1"
+   },
+   {
+    "vi": "VR, V1, V2",
+    "en": "VR, V1, V2"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "124 < 125 < 136 kt: tăng tốc, quay bánh mũi, rồi tới tốc độ an toàn (Tooley 20.1).",
+   "en": "124 < 125 < 136 kt: accelerate, rotate, then reach the safety speed (Tooley 20.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Số liệu B737",
+   "en": "Added · B737 figures"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong ca G-EZWE (A320, tháng 9 năm 2019, Lisbon), nguyên nhân sự cố theo AAIB là:",
+   "en": "In the G-EZWE case (A320, September 2019, Lisbon) the cause of the incident according to the AAIB was:"
+  },
+  "opts": [
+   {
+    "vi": "dùng dữ liệu sai khi tính hiệu năng cất cánh: tổ lái dùng chiều dài đường băng đầy đủ trong khi cất cánh từ giao lộ đường lăn",
+    "en": "incorrect data in the take-off performance calculation: the crew used the full runway length while taking off from a taxiway intersection"
+   },
+   {
+    "vi": "hỏng cả hai động cơ",
+    "en": "failure of both engines"
+   },
+   {
+    "vi": "hỏng bộ GPS",
+    "en": "failure of the GPS unit"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quãng sẵn có từ giao lộ ngắn hơn 1 395 m so với quãng dùng để tính; máy bay rời mặt đất khi chỉ còn 110 m đường băng (Tooley 20.1.1).",
+   "en": "The distance available from the intersection was 1,395 m less than used; the aircraft became airborne with only 110 m of runway remaining (Tooley 20.1.1)."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Ca G-EZWE",
+   "en": "Added · The G-EZWE case"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bài học nào sau đây Tooley rút ra từ ca G-EZWE (20.2.5)?",
+   "en": "Which of the following lessons does Tooley draw from the G-EZWE case (20.2.5)?"
+  },
+  "opts": [
+   {
+    "vi": "cần kiểm tra tính hợp lệ dữ liệu EFB, đối chiếu tính toán trước khi nhập vào máy tính FMGC và giảm xao nhãng khi tính hiệu năng",
+    "en": "validate EFB data, cross-check calculations before entering them in the flight management guidance computer and reduce distractions during performance calculations"
+   },
+   {
+    "vi": "bỏ EFB khỏi buồng lái",
+    "en": "remove the EFB from the cockpit"
+   },
+   {
+    "vi": "chỉ dùng giấy",
+    "en": "use paper only"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhà khai thác chuyển sang phần mềm có hình đường băng và đổi menu giao lộ (Tooley 20.1.1, 20.2.5).",
+   "en": "The operator moved to software with a picture of the runway and changed the intersection menus (Tooley 20.1.1, 20.2.5)."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bài học G-EZWE",
+   "en": "Added · G-EZWE lessons"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong hệ thông tin tàu bay tích hợp dùng máy chủ mạng, các miền (domain) được hỗ trợ là:",
+   "en": "In a network-server integrated aircraft information system the supported domains are:"
+  },
+  "opts": [
+   {
+    "vi": "avionics, khai thác bay (flight operations) và truyền thông/cabin",
+    "en": "avionics, flight operations and communication/cabin"
+   },
+   {
+    "vi": "chỉ avionics",
+    "en": "avionics only"
+   },
+   {
+    "vi": "động cơ, thuỷ lực, điện",
+    "en": "engine, hydraulics, electrical"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Một tường lửa (firewall) tách \"thế giới avionics\" khỏi \"thế giới mở\" (Tooley 20.3, Hình 20.10).",
+   "en": "A firewall separates the \"avionics world\" from the \"open world\" (Tooley 20.3, Figure 20.10)."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Hệ thông tin tích hợp",
+   "en": "Added · Integrated information system"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Boeing AIMS (Airplane Information Management System) là:",
+   "en": "Boeing's Airplane Information Management System (AIMS) is:"
+  },
+  "opts": [
+   {
+    "vi": "hệ dựa trên IMA, tích hợp toàn bộ buồng lái",
+    "en": "an IMA-based system giving full flight-deck integration"
+   },
+   {
+    "vi": "một hệ thống cáp quang",
+    "en": "a fibre-optic cabling system"
+   },
+   {
+    "vi": "một loại radar",
+    "en": "a type of radar"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 20.3; xem Module 13.",
+   "en": "Tooley 20.3; see Module 13."
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · AIMS",
+   "en": "Added · AIMS"
+  }
+ }
+]

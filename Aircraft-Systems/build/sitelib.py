@@ -12,10 +12,10 @@ def nav_groups(lang):
         ('Học' if vi else 'Learn', [('Trang chủ' if vi else 'Home', 'index.html')] +
             [(f'{m["id"].upper()} · {m[lang]}', f'modules/{m["slug"]}/index.html') for m in MODS]),
         ('Luyện' if vi else 'Practise', [('Ngân hàng câu hỏi' if vi else 'Question bank', 'practice/index.html'), ('Luyện đề thi thử' if vi else 'Mock exams', 'exam/index.html'),
-                                          ('Viết tay (tự luận)' if vi else 'Written practice', 'written/index.html')]),
+                                          ('Viết tay (tự luận)' if vi else 'Written practice', 'written/index.html'), ('Sổ lỗi' if vi else 'Mistake log', 'mistakes/index.html')]),
         ('Công cụ' if vi else 'Tools', [('Khái niệm' if vi else 'Concept finder', 'concepts/index.html'), ('Thuật ngữ VI-EN' if vi else 'Glossary VI-EN', 'glossary/index.html'),
                                          ('Tóm tắt công thức' if vi else 'Formula sheet', 'formulas/index.html'), ('Bài tập có đáp án' if vi else 'Exercise finder', 'exercises/index.html'),
-                                         ('Phân tích đề' if vi else 'Question analyser', 'analyse/index.html')]),
+                                         ('Phân tích đề' if vi else 'Question analyser', 'analyse/index.html'), ('Bảng tra mã' if vi else 'Code table', 'codes/index.html')]),
         ('Nguồn' if vi else 'Sources', [('Slide của giảng viên' if vi else 'Lecturer slides', 'slides/index.html'), ('Bản đồ sách' if vi else 'Book map', 'books/index.html'),
                                          ('Nguồn, độ phủ, lỗi của nguồn' if vi else 'Sources, coverage, source errors', 'sources/index.html')]),
     ]
@@ -41,7 +41,7 @@ def page(title, body, lang, relpath, desc='', scripts=(), css=()):
           '<button data-set-font="14px">Chữ nhỏ</button><button data-set-font="16px">Chữ vừa</button><button data-set-font="19px">Chữ lớn</button>') if lang == 'vi' else \
          ('<button data-set-theme="light">Light</button><button data-set-theme="dark">Dark</button><button data-set-theme="sepia">Sepia</button><button data-set-theme="ocean">Ocean</button><hr>'
           '<button data-set-font="14px">Small text</button><button data-set-font="16px">Medium text</button><button data-set-font="19px">Large text</button>')
-    srcs = ''.join(f'<li>[{b["syllabus_ref"]}] {esc(b["full"])}</li>' for b in sorted(BOOKS.values(), key=lambda b: b["syllabus_ref"]))
+    srcs = ''.join(f'<li>[{b["syllabus_ref"]}] {esc(b["full"] if lang == "vi" else b["full_en"])}</li>' for b in sorted(BOOKS.values(), key=lambda b: b["syllabus_ref"]))
     sc = ''.join(f'<script src="{r}_shared/{s}"></script>' for s in scripts)
     cs = ''.join(f'<link rel="stylesheet" href="{r}_shared/{c}">' for c in css)
     body = body.replace('{R}', r)

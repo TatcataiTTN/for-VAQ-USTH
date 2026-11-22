@@ -1,0 +1,1311 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1010 và q = 0110 (vector 4 bit), biểu thức VHDL \"p AND q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1010 and q = 0110 (4-bit vectors), the VHDL expression \"p AND q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   },
+   {
+    "vi": "1010",
+    "en": "1010"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0010.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0010."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1010 và q = 0110 (vector 4 bit), biểu thức VHDL \"NOT p AND q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1010 and q = 0110 (4-bit vectors), the VHDL expression \"NOT p AND q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0100.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0100."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1010 và q = 0110 (vector 4 bit), biểu thức VHDL \"p AND NOT q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1010 and q = 0110 (4-bit vectors), the VHDL expression \"p AND NOT q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 1000.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 1000."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1010 và q = 0110 (vector 4 bit), biểu thức VHDL \"p AND SLA q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1010 and q = 0110 (4-bit vectors), the VHDL expression \"p AND SLA q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 1000.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 1000."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1010 và q = 0110 (vector 4 bit), biểu thức VHDL \"NOT p AND ROR q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1010 and q = 0110 (4-bit vectors), the VHDL expression \"NOT p AND ROR q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0001",
+    "en": "0001"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0001.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0001."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 0011 và q = 0100 (vector 4 bit), biểu thức VHDL \"p AND q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 0011 and q = 0100 (4-bit vectors), the VHDL expression \"p AND q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0000",
+    "en": "0000"
+   },
+   {
+    "vi": "0111",
+    "en": "0111"
+   },
+   {
+    "vi": "0011",
+    "en": "0011"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0000.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0000."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 0011 và q = 0100 (vector 4 bit), biểu thức VHDL \"NOT p OR NOT q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 0011 and q = 0100 (4-bit vectors), the VHDL expression \"NOT p OR NOT q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "1111",
+    "en": "1111"
+   },
+   {
+    "vi": "1000",
+    "en": "1000"
+   },
+   {
+    "vi": "0000",
+    "en": "0000"
+   },
+   {
+    "vi": "0111",
+    "en": "0111"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 1111.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 1111."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 0010 và q = 0100 (vector 4 bit), biểu thức VHDL \"SLA p AND NOT q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 0010 and q = 0100 (4-bit vectors), the VHDL expression \"SLA p AND NOT q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0000",
+    "en": "0000"
+   },
+   {
+    "vi": "0110",
+    "en": "0110"
+   },
+   {
+    "vi": "0010",
+    "en": "0010"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0000.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0000."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1100 và q = 0101 (vector 4 bit), biểu thức VHDL \"NOT p AND q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1100 and q = 0101 (4-bit vectors), the VHDL expression \"NOT p AND q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0001",
+    "en": "0001"
+   },
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0001.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0001."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1100 và q = 0101 (vector 4 bit), biểu thức VHDL \"p XOR q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1100 and q = 0101 (4-bit vectors), the VHDL expression \"p XOR q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "1001",
+    "en": "1001"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "1100",
+    "en": "1100"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 1001.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 1001."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 1100 và q = 0101 (vector 4 bit), biểu thức VHDL \"NOT (p AND q)\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 1100 and q = 0101 (4-bit vectors), the VHDL expression \"NOT (p AND q)\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "1011",
+    "en": "1011"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "1101",
+    "en": "1101"
+   },
+   {
+    "vi": "1001",
+    "en": "1001"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 1011.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 1011."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Với p = 0110 và q = 1100 (vector 4 bit), biểu thức VHDL \"NOT p AND ROR q\" (theo cách viết của Tooley, SLA/ROR dịch một vị trí) có giá trị:",
+   "en": "With p = 0110 and q = 1100 (4-bit vectors), the VHDL expression \"NOT p AND ROR q\" (in Tooley's notation, SLA/ROR shift one place) evaluates to:"
+  },
+  "opts": [
+   {
+    "vi": "0000",
+    "en": "0000"
+   },
+   {
+    "vi": "1001",
+    "en": "1001"
+   },
+   {
+    "vi": "0100",
+    "en": "0100"
+   },
+   {
+    "vi": "1110",
+    "en": "1110"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Quy tắc ưu tiên (Tooley 17.7): NOT cao nhất, rồi dịch/xoay, rồi AND/OR/XOR. Kết quả 0000.",
+   "en": "Precedence (Tooley 17.7): NOT highest, then shift/rotate, then AND/OR/XOR. Result 0000."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Biểu thức VHDL và độ ưu tiên",
+   "en": "Added · VHDL expressions and precedence"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nửa cộng có ngõ vào cho phép EN (tích cực mức cao) với x = 1, y = 1, EN = 1. Cặp (sum, carry) là:",
+   "en": "A half adder with an active-high enable EN has x = 1, y = 1, EN = 1. The pair (sum, carry) is:"
+  },
+  "opts": [
+   {
+    "vi": "(0, 1)",
+    "en": "(0, 1)"
+   },
+   {
+    "vi": "(1, 1)",
+    "en": "(1, 1)"
+   },
+   {
+    "vi": "(0, 0)",
+    "en": "(0, 0)"
+   },
+   {
+    "vi": "(1, 0)",
+    "en": "(1, 0)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EN = 1 cho sum = x XOR y, carry = x AND y; EN = 0 ép cả hai về 0 (Tooley 17.3, Bảng 17.2).",
+   "en": "With EN = 1: sum = x XOR y, carry = x AND y; EN = 0 forces both to 0 (Tooley 17.3, Table 17.2)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ nửa cộng có EN",
+   "en": "Added · Half adder with enable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nửa cộng có ngõ vào cho phép EN (tích cực mức cao) với x = 1, y = 0, EN = 1. Cặp (sum, carry) là:",
+   "en": "A half adder with an active-high enable EN has x = 1, y = 0, EN = 1. The pair (sum, carry) is:"
+  },
+  "opts": [
+   {
+    "vi": "(1, 0)",
+    "en": "(1, 0)"
+   },
+   {
+    "vi": "(0, 0)",
+    "en": "(0, 0)"
+   },
+   {
+    "vi": "(1, 1)",
+    "en": "(1, 1)"
+   },
+   {
+    "vi": "(0, 1)",
+    "en": "(0, 1)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EN = 1 cho sum = x XOR y, carry = x AND y; EN = 0 ép cả hai về 0 (Tooley 17.3, Bảng 17.2).",
+   "en": "With EN = 1: sum = x XOR y, carry = x AND y; EN = 0 forces both to 0 (Tooley 17.3, Table 17.2)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ nửa cộng có EN",
+   "en": "Added · Half adder with enable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nửa cộng có ngõ vào cho phép EN (tích cực mức cao) với x = 1, y = 1, EN = 0. Cặp (sum, carry) là:",
+   "en": "A half adder with an active-high enable EN has x = 1, y = 1, EN = 0. The pair (sum, carry) is:"
+  },
+  "opts": [
+   {
+    "vi": "(0, 0)",
+    "en": "(0, 0)"
+   },
+   {
+    "vi": "(1, 0)",
+    "en": "(1, 0)"
+   },
+   {
+    "vi": "(0, 1)",
+    "en": "(0, 1)"
+   },
+   {
+    "vi": "(1, 1)",
+    "en": "(1, 1)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EN = 0 ép cả sum và carry về 0 bất kể x, y (Tooley 17.3, Bảng 17.2).",
+   "en": "EN = 0 forces both sum and carry to 0 whatever x and y are (Tooley 17.3, Table 17.2)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ nửa cộng có EN",
+   "en": "Added · Half adder with enable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nửa cộng có ngõ vào cho phép EN (tích cực mức cao) với x = 0, y = 0, EN = 1. Cặp (sum, carry) là:",
+   "en": "A half adder with an active-high enable EN has x = 0, y = 0, EN = 1. The pair (sum, carry) is:"
+  },
+  "opts": [
+   {
+    "vi": "(0, 0)",
+    "en": "(0, 0)"
+   },
+   {
+    "vi": "(1, 0)",
+    "en": "(1, 0)"
+   },
+   {
+    "vi": "(0, 1)",
+    "en": "(0, 1)"
+   },
+   {
+    "vi": "(1, 1)",
+    "en": "(1, 1)"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EN = 1 cho sum = x XOR y, carry = x AND y; EN = 0 ép cả hai về 0 (Tooley 17.3, Bảng 17.2).",
+   "en": "With EN = 1: sum = x XOR y, carry = x AND y; EN = 0 forces both to 0 (Tooley 17.3, Table 17.2)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Bộ nửa cộng có EN",
+   "en": "Added · Half adder with enable"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ nửa cộng dựng bằng ba cổng chuẩn (7408, 7404, 7408), mỗi cổng trễ khoảng 15 ns trên đường dài nhất. Trễ tổng ở ngõ ra Sum xấp xỉ:",
+   "en": "A half adder built from three standard gates (7408, 7404, 7408), each about 15 ns on the longest path. The total delay at the Sum output is about:"
+  },
+  "opts": [
+   {
+    "vi": "45 ns",
+    "en": "45 ns"
+   },
+   {
+    "vi": "15 ns",
+    "en": "15 ns"
+   },
+   {
+    "vi": "30 ns",
+    "en": "30 ns"
+   },
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$3\\times15$ ns = 45 ns (Tooley 17.10).",
+   "en": "$3\\times15$ ns = 45 ns (Tooley 17.10)."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trễ đường Sum",
+   "en": "Added · Sum path delay"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một đường tín hiệu đi qua 4 cổng liên tiếp, mỗi cổng có trễ 15 ns. Mô hình VHDL cộng các hằng gate_delay thì trễ tổng là:",
+   "en": "A signal path passes through 4 gates in a row, each with a 15 ns delay. In a VHDL model adding the gate_delay constants the total delay is:"
+  },
+  "opts": [
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "15 ns",
+    "en": "15 ns"
+   },
+   {
+    "vi": "45 ns",
+    "en": "45 ns"
+   },
+   {
+    "vi": "75 ns",
+    "en": "75 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$4\\times15=60$ ns.",
+   "en": "$4\\times15=60$ ns."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trễ nhiều cổng",
+   "en": "Added · Multi-gate delay"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một đường tín hiệu đi qua 5 cổng liên tiếp, mỗi cổng có trễ 12 ns. Mô hình VHDL cộng các hằng gate_delay thì trễ tổng là:",
+   "en": "A signal path passes through 5 gates in a row, each with a 12 ns delay. In a VHDL model adding the gate_delay constants the total delay is:"
+  },
+  "opts": [
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "12 ns",
+    "en": "12 ns"
+   },
+   {
+    "vi": "48 ns",
+    "en": "48 ns"
+   },
+   {
+    "vi": "72 ns",
+    "en": "72 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$5\\times12=60$ ns.",
+   "en": "$5\\times12=60$ ns."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trễ nhiều cổng",
+   "en": "Added · Multi-gate delay"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một đường tín hiệu đi qua 6 cổng liên tiếp, mỗi cổng có trễ 8 ns. Mô hình VHDL cộng các hằng gate_delay thì trễ tổng là:",
+   "en": "A signal path passes through 6 gates in a row, each with a 8 ns delay. In a VHDL model adding the gate_delay constants the total delay is:"
+  },
+  "opts": [
+   {
+    "vi": "48 ns",
+    "en": "48 ns"
+   },
+   {
+    "vi": "8 ns",
+    "en": "8 ns"
+   },
+   {
+    "vi": "40 ns",
+    "en": "40 ns"
+   },
+   {
+    "vi": "56 ns",
+    "en": "56 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$6\\times8=48$ ns.",
+   "en": "$6\\times8=48$ ns."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trễ nhiều cổng",
+   "en": "Added · Multi-gate delay"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao bảng chân trị, sơ đồ logic và đại số Boolean không đủ cho hệ logic rất lớn?",
+   "en": "Why are truth tables, logic diagrams and Boolean algebra not enough for very large logic systems?"
+  },
+  "opts": [
+   {
+    "vi": "chúng trở nên cồng kềnh, dễ sai, và không nêu được trễ lan truyền",
+    "en": "they become cumbersome and error-prone and cannot express propagation delays"
+   },
+   {
+    "vi": "chúng quá nhanh",
+    "en": "they are too fast"
+   },
+   {
+    "vi": "chúng không dùng được cổng AND",
+    "en": "they cannot use AND gates"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "HDL cho phép mô tả hình thức, chính xác và mô phỏng (Tooley 17.1).",
+   "en": "An HDL gives a formal, unambiguous description that can be simulated (Tooley 17.1)."
+  },
+  "topic": {
+   "vi": "Vì sao cần ngôn ngữ mô tả phần cứng",
+   "en": "Why hardware description languages"
+  },
+  "topic_id": "need",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Nhu cầu HDL",
+   "en": "Added · The need for HDL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "VHDL ra đời từ yêu cầu của cơ quan nào, gắn với loại mạch nào?",
+   "en": "VHDL arose from a request by which body, linked to which kind of circuit?"
+  },
+  "opts": [
+   {
+    "vi": "Bộ Quốc phòng Mỹ, mạch tích hợp tốc độ rất cao (VHSIC)",
+    "en": "the US Department of Defense, very high-speed integrated circuits (VHSIC)"
+   },
+   {
+    "vi": "ICAO, mạch tương tự",
+    "en": "ICAO, analogue circuits"
+   },
+   {
+    "vi": "IEEE, vi điều khiển 8 bit",
+    "en": "IEEE, 8-bit microcontrollers"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Verilog xuất hiện năm 1985, hai năm sau có VHDL (VHSIC HDL) (Tooley 17.1).",
+   "en": "Verilog appeared in 1985 and VHDL (VHSIC HDL) two years later (Tooley 17.1)."
+  },
+  "topic": {
+   "vi": "Vì sao cần ngôn ngữ mô tả phần cứng",
+   "en": "Why hardware description languages"
+  },
+  "topic_id": "need",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Lịch sử VHDL",
+   "en": "Added · History of VHDL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hai ngôn ngữ HDL thống trị trong các công cụ thiết kế số tiên tiến theo Tooley là:",
+   "en": "The two HDLs that dominate advanced digital design tools according to Tooley are:"
+  },
+  "opts": [
+   {
+    "vi": "Verilog và VHDL",
+    "en": "Verilog and VHDL"
+   },
+   {
+    "vi": "C++ và Pascal",
+    "en": "C++ and Pascal"
+   },
+   {
+    "vi": "Python và Java",
+    "en": "Python and Java"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley nhấn mạnh VHDL không phải ngôn ngữ lập trình đa dụng như C++ hay Pascal (17.9).",
+   "en": "Tooley stresses that VHDL is not a general-purpose programming language like C++ or Pascal (17.9)."
+  },
+  "topic": {
+   "vi": "Vì sao cần ngôn ngữ mô tả phần cứng",
+   "en": "Why hardware description languages"
+  },
+  "topic_id": "need",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Verilog và VHDL",
+   "en": "Added · Verilog and VHDL"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khai báo entity \"half_adder\" có hai ngõ vào x, y và hai ngõ ra sum, carry. Phần nào của khai báo liệt kê các tín hiệu này?",
+   "en": "The entity declaration \"half_adder\" has inputs x, y and outputs sum, carry. Which part of the declaration lists these signals?"
+  },
+  "opts": [
+   {
+    "vi": "câu lệnh PORT",
+    "en": "the PORT statement"
+   },
+   {
+    "vi": "câu lệnh BEGIN",
+    "en": "the BEGIN statement"
+   },
+   {
+    "vi": "câu lệnh PROCESS",
+    "en": "the PROCESS statement"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "PORT(x, y: IN bit; sum, carry: OUT bit); (Tooley 17.2).",
+   "en": "PORT(x, y: IN bit; sum, carry: OUT bit); (Tooley 17.2)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khai báo entity",
+   "en": "Added · Entity declaration"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chế độ tín hiệu nào của VHDL dùng cho đường ba trạng thái vừa vào vừa ra (không cùng lúc)?",
+   "en": "Which VHDL signal mode is used for a tri-state line that is both input and output (but not at the same time)?"
+  },
+  "opts": [
+   {
+    "vi": "INOUT",
+    "en": "INOUT"
+   },
+   {
+    "vi": "IN",
+    "en": "IN"
+   },
+   {
+    "vi": "OUT",
+    "en": "OUT"
+   },
+   {
+    "vi": "BUFFER",
+    "en": "BUFFER"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 17.6.",
+   "en": "Tooley 17.6."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chế độ tín hiệu",
+   "en": "Added · Signal modes"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chế độ BUFFER khác OUT ở chỗ:",
+   "en": "The BUFFER mode differs from OUT in that:"
+  },
+  "opts": [
+   {
+    "vi": "giá trị ngõ ra cũng có thể được đọc và dùng bên trong architecture",
+    "en": "the output value can also be read and used inside the architecture"
+   },
+   {
+    "vi": "nó chỉ là ngõ vào",
+    "en": "it is an input only"
+   },
+   {
+    "vi": "nó không có giá trị",
+    "en": "it has no value"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "OUT chỉ sẵn có cho các entity bên ngoài (Tooley 17.6).",
+   "en": "OUT is only available to external entities (Tooley 17.6)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · BUFFER và OUT",
+   "en": "Added · BUFFER versus OUT"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiểu std_logic có bao nhiêu giá trị khác nhau, và \"-\" nghĩa là gì?",
+   "en": "How many different values does std_logic have, and what does \"-\" mean?"
+  },
+  "opts": [
+   {
+    "vi": "chín; không quan tâm (don't care)",
+    "en": "nine; don't care"
+   },
+   {
+    "vi": "hai; không quan tâm",
+    "en": "two; don't care"
+   },
+   {
+    "vi": "chín; chưa khởi tạo",
+    "en": "nine; uninitialised"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "U, X, 0, 1, Z, W, L, H, \"-\" (Tooley 17.6).",
+   "en": "U, X, 0, 1, Z, W, L, H, \"-\" (Tooley 17.6)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · std_logic",
+   "en": "Added · std_logic"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giai đoạn nào trong luồng thiết kế VHDL biến mã trung gian thành các thành phần của công nghệ đích và với ASIC xuất ra netlist?",
+   "en": "Which stage of the VHDL design flow turns the intermediate code into components of the target technology and, for an ASIC, exports a net list?"
+  },
+  "opts": [
+   {
+    "vi": "tổng hợp (synthesis)",
+    "en": "synthesis"
+   },
+   {
+    "vi": "biên dịch",
+    "en": "compilation"
+   },
+   {
+    "vi": "mô phỏng",
+    "en": "simulation"
+   },
+   {
+    "vi": "ý tưởng",
+    "en": "conception"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 17.4 giai đoạn 5.",
+   "en": "Tooley 17.4 stage 5."
+  },
+  "topic": {
+   "vi": "Luồng thiết kế, mô phỏng và test bench",
+   "en": "Design flow, simulation and the test bench"
+  },
+  "topic_id": "flow",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Tổng hợp",
+   "en": "Added · Synthesis"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sắp xếp đúng bảy giai đoạn của luồng thiết kế VHDL (Tooley 17.4):",
+   "en": "Which gives the seven stages of the VHDL design flow in the right order (Tooley 17.4)?"
+  },
+  "opts": [
+   {
+    "vi": "ý tưởng, mã hoá, biên dịch, mô phỏng, tổng hợp, xếp và đi dây, kiểm chứng",
+    "en": "conception, coding, compilation, simulation, synthesis, fitting/placement/routing, verification"
+   },
+   {
+    "vi": "mã hoá, ý tưởng, mô phỏng, biên dịch, kiểm chứng, tổng hợp, xếp và đi dây",
+    "en": "coding, conception, simulation, compilation, verification, synthesis, fitting/placement/routing"
+   },
+   {
+    "vi": "ý tưởng, biên dịch, mã hoá, tổng hợp, mô phỏng, kiểm chứng, xếp và đi dây",
+    "en": "conception, compilation, coding, synthesis, simulation, verification, fitting/placement/routing"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mô phỏng nằm trước tổng hợp; kiểm chứng là cuối cùng, trên nền avionics thật.",
+   "en": "Simulation comes before synthesis; verification is last, on the real avionics platform."
+  },
+  "topic": {
+   "vi": "Luồng thiết kế, mô phỏng và test bench",
+   "en": "Design flow, simulation and the test bench"
+  },
+  "topic_id": "flow",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thứ tự luồng thiết kế",
+   "en": "Added · Design-flow order"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Test bench (băng thử) VHDL là:",
+   "en": "A VHDL test bench is:"
+  },
+  "opts": [
+   {
+    "vi": "mã viết riêng, hướng sự kiện, định nghĩa tín hiệu và dạng sóng xung clock đưa vào thành phần cần mô phỏng",
+    "en": "separate, event-driven code that defines the signals and clock waveforms applied to the component under simulation"
+   },
+   {
+    "vi": "một bộ nguồn thí nghiệm",
+    "en": "a laboratory power supply"
+   },
+   {
+    "vi": "một thư viện IEEE",
+    "en": "an IEEE library"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 17.9.",
+   "en": "Tooley 17.9."
+  },
+  "topic": {
+   "vi": "Luồng thiết kế, mô phỏng và test bench",
+   "en": "Design flow, simulation and the test bench"
+  },
+  "topic_id": "flow",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Test bench",
+   "en": "Added · Test bench"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "HDL khác ngôn ngữ lập trình thủ tục thông thường ở điểm quan trọng nhất nào?",
+   "en": "What is the most important difference between an HDL and an ordinary procedural programming language?"
+  },
+  "opts": [
+   {
+    "vi": "HDL phải mô hình hoá nhiều tiến trình song song xảy ra cùng lúc",
+    "en": "an HDL must model many parallel processes that can happen at the same instant"
+   },
+   {
+    "vi": "HDL không có trình biên dịch",
+    "en": "an HDL has no compiler"
+   },
+   {
+    "vi": "HDL chỉ chạy trên máy tính lớn",
+    "en": "an HDL only runs on mainframes"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 17.9.",
+   "en": "Tooley 17.9."
+  },
+  "topic": {
+   "vi": "Luồng thiết kế, mô phỏng và test bench",
+   "en": "Design flow, simulation and the test bench"
+  },
+  "topic_id": "flow",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · HDL và lập trình",
+   "en": "Added · HDL versus programming"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trễ lan truyền của một cổng được mô hình trong VHDL bằng cách:",
+   "en": "The propagation delay of a gate is modelled in VHDL by:"
+  },
+  "opts": [
+   {
+    "vi": "khai báo một hằng gate_delay kiểu time và gán \"after gate_delay\"",
+    "en": "declaring a constant gate_delay of type time and assigning \"after gate_delay\""
+   },
+   {
+    "vi": "xoá cổng khỏi mạch",
+    "en": "deleting the gate from the circuit"
+   },
+   {
+    "vi": "thêm dấu chấm phẩy",
+    "en": "adding a semi-colon"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ví dụ cổng XOR trễ 15 ns: c <= (a xor b) after gate_delay; (Tooley 17.10).",
+   "en": "Example, an XOR gate with a 15 ns delay: c <= (a xor b) after gate_delay; (Tooley 17.10)."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Mô hình trễ",
+   "en": "Added · Delay model"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vì sao trễ lan truyền có thể gây vấn đề trong mạch tốc độ cao?",
+   "en": "Why can propagation delay cause trouble in high-speed circuits?"
+  },
+  "opts": [
+   {
+    "vi": "vì thời gian hữu hạn để thay đổi mức logic tới ngõ ra có thể sinh trạng thái logic giả thoáng qua",
+    "en": "because the finite time for a logic change to reach the output can produce spurious transient logic states"
+   },
+   {
+    "vi": "vì cổng không có trễ",
+    "en": "because gates have no delay"
+   },
+   {
+    "vi": "vì VHDL cấm mô phỏng",
+    "en": "because VHDL forbids simulation"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 17.10.",
+   "en": "Tooley 17.10."
+  },
+  "topic": {
+   "vi": "Mô hình trễ lan truyền",
+   "en": "Modelling propagation delay"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trễ và trạng thái giả",
+   "en": "Added · Delay and spurious states"
+  }
+ }
+]

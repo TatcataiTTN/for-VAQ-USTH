@@ -1,0 +1,154 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bệ IRS cơ bản có:",
+   "en": "A basic IRS platform has:"
+  },
+  "opts": [
+   {
+    "vi": "ba gia tốc kế và hai con quay laser",
+    "en": "three accelerometers and two laser gyros"
+   },
+   {
+    "vi": "hai gia tốc kế và ba con quay laser",
+    "en": "two accelerometers and three laser gyros"
+   },
+   {
+    "vi": "ba gia tốc kế và ba con quay laser",
+    "en": "three accelerometers and three laser gyros"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ba trục trực giao cần ba gia tốc kế và ba con quay (Tooley 15.7).",
+   "en": "Three orthogonal axes need three accelerometers and three gyros (Tooley 15.7)."
+  },
+  "topic": {
+   "vi": "Hệ quán tính (IRS/INS)",
+   "en": "Inertial reference system (IRS/INS)"
+  },
+  "topic_id": "irs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.15 · Câu 3 (khoá A.15, tr.381)",
+   "en": "Tooley Ch.15 · Q3 (key A.15, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cơ sở dữ liệu vận hành của FMS:",
+   "en": "The operational FMS database:"
+  },
+  "opts": [
+   {
+    "vi": "được cập nhật mỗi tháng một lần",
+    "en": "updated once a month"
+   },
+   {
+    "vi": "được nạp thông tin về khối lượng máy bay trước khi cất cánh",
+    "en": "is fed with information on aircraft weight before take-off"
+   },
+   {
+    "vi": "không cần cập nhật",
+    "en": "needs no update information"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Dữ liệu chuyến bay như khối lượng phải nhập vào FMC trước khi cất cánh (Tooley 15.5).",
+   "en": "Flight data such as aircraft weight must be entered into the FMC before take-off (Tooley 15.5)."
+  },
+  "topic": {
+   "vi": "Hệ thống quản lý bay (FMS)",
+   "en": "Flight management system (FMS)"
+  },
+  "topic_id": "fms",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.15 · Câu 4 (khoá A.15, tr.381)",
+   "en": "Tooley Ch.15 · Q4 (key A.15, p.381)"
+  },
+  "detail": {
+   "vi": "<p>Phương án (a) gần với sự thật hơn là khoá in nghĩ: cơ sở dữ liệu dẫn đường được cập nhật theo chu kỳ 28 ngày, 13 chu kỳ một năm (khoảng một tháng). Khoá in là (b); site giữ (b) và ghi vào notes rằng (a) cũng gần đúng.</p>",
+   "en": "<p>Option (a) is closer to the truth than the key suggests: the navigation database is updated on a 28-day cycle, 13 cycles a year (about a month). The printed key is (b); the site keeps (b) and notes that (a) is also nearly right.</p>"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một hỏng hóc đơn lẻ trong hệ thống fly-by-wire nên:",
+   "en": "A single failure in a fly-by-wire system should:"
+  },
+  "opts": [
+   {
+    "vi": "khiến hệ thống chuyển sang điều khiển cơ khí",
+    "en": "cause the system to revert to mechanical operation"
+   },
+   {
+    "vi": "dẫn tới việc tổ lái phải can thiệp ngay",
+    "en": "result in immediate intervention by the flight crew"
+   },
+   {
+    "vi": "không ảnh hưởng gì tới hoạt động của hệ thống",
+    "en": "not have any effect on the operation of the system"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Hệ thống dùng máy tính dự phòng nên một hỏng hóc đơn không làm đổi hoạt động.",
+   "en": "Redundant computers mean that one failure does not change the operation."
+  },
+  "topic": {
+   "vi": "Điều khiển bay điện (fly-by-wire)",
+   "en": "Fly-by-wire"
+  },
+  "topic_id": "fbw",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.15 · Câu 6 (khoá A.15, tr.381)",
+   "en": "Tooley Ch.15 · Q6 (key A.15, p.381)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cơ sở dữ liệu dẫn đường của FMS được cập nhật:",
+   "en": "The FMS navigation database is updated:"
+  },
+  "opts": [
+   {
+    "vi": "theo yêu cầu của tổ lái",
+    "en": "at the request of the flight crew"
+   },
+   {
+    "vi": "trong lúc kiểm tra trước chuyến bay",
+    "en": "during pre-flight checks"
+   },
+   {
+    "vi": "mỗi 28 ngày",
+    "en": "every 28 days"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chu kỳ 28 ngày, 13 lần mỗi năm (Tooley 15.5).",
+   "en": "A 28-day cycle, 13 times a year (Tooley 15.5)."
+  },
+  "topic": {
+   "vi": "Hệ thống quản lý bay (FMS)",
+   "en": "Flight management system (FMS)"
+  },
+  "topic_id": "fms",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.15 · Câu 9 (khoá A.15, tr.381)",
+   "en": "Tooley Ch.15 · Q9 (key A.15, p.381)"
+  }
+ }
+]

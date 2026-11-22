@@ -1,0 +1,520 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mức cấu trúc (structural level) của VHDL mô tả một hệ thống như:",
+   "en": "The VHDL structural level describes a system as:"
+  },
+  "opts": [
+   {
+    "vi": "một tập hợp các cổng logic và thành phần nối với nhau",
+    "en": "a collection of interconnected gates and components"
+   },
+   {
+    "vi": "một tập tín hiệu logic và mức logic",
+    "en": "a set of logic signals and levels"
+   },
+   {
+    "vi": "một danh sách tên tín hiệu và biểu thức logic",
+    "en": "a list of signal names and logical expressions"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tooley 17.2: mức cấu trúc mô tả hệ như các cổng và thành phần nối với nhau.",
+   "en": "Tooley 17.2: the structural level describes a system as interconnected gates and components."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 1 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q1 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các tín hiệu vào và ra của một entity VHDL được định nghĩa trong:",
+   "en": "The input and output signals of a VHDL entity are defined in:"
+  },
+  "opts": [
+   {
+    "vi": "khai báo entity (entity declaration)",
+    "en": "the entity declaration"
+   },
+   {
+    "vi": "một loạt chương trình con",
+    "en": "a series of sub-programs"
+   },
+   {
+    "vi": "một khai báo architecture riêng",
+    "en": "a separate architecture declaration"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Khai báo entity nêu tên và các cổng PORT của thành phần (Tooley 17.2).",
+   "en": "The entity declaration gives the name and the PORT list of the component (Tooley 17.2)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 2 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q2 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một entity VHDL gồm khai báo entity và theo sau là:",
+   "en": "A VHDL entity comprises an entity declaration followed by:"
+  },
+  "opts": [
+   {
+    "vi": "mô tả kiến trúc (architecture) định nghĩa hành vi",
+    "en": "an architectural description"
+   },
+   {
+    "vi": "một bảng chân trị của logic",
+    "en": "a truth table for the logic"
+   },
+   {
+    "vi": "mô tả công nghệ bán dẫn được dùng",
+    "en": "a description of the semiconductor technology used"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Architecture xác định hành vi của entity (Tooley 17.3).",
+   "en": "The architecture defines the behaviour of the entity (Tooley 17.3)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 3 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q3 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "VHDL cho phép:",
+   "en": "VHDL allows:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ gán tín hiệu đồng thời",
+    "en": "only concurrent signal assignment"
+   },
+   {
+    "vi": "chỉ gán tín hiệu tuần tự",
+    "en": "only sequential signal assignment"
+   },
+   {
+    "vi": "cả gán tín hiệu đồng thời và tuần tự",
+    "en": "both concurrent and sequential signal assignment"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "HDL phải mô hình hoá nhiều tiến trình song song nên có tính đồng thời, nhưng trong một PROCESS các lệnh chạy tuần tự (Tooley 17.9).",
+   "en": "An HDL must model many parallel processes so it is concurrent, while inside a PROCESS the statements run sequentially (Tooley 17.9)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 4 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q4 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chú thích trong mã VHDL bắt đầu bằng:",
+   "en": "Comments in VHDL code start with:"
+  },
+  "opts": [
+   {
+    "vi": "một dấu chấm than (!)",
+    "en": "a single exclamation mark (!)"
+   },
+   {
+    "vi": "một dấu chấm phẩy (;)",
+    "en": "a single semi-colon (;)"
+   },
+   {
+    "vi": "hai dấu gạch ngang liền nhau (--)",
+    "en": "two adjacent hyphens (--)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chú thích VHDL dùng \"--\" tới cuối dòng.",
+   "en": "A VHDL comment is \"--\" to the end of the line."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 5 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q5 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong VHDL kiểu std_logic được định nghĩa:",
+   "en": "In VHDL the std_logic type is defined:"
+  },
+  "opts": [
+   {
+    "vi": "trong một tệp tiêu đề (header file)",
+    "en": "in a header file"
+   },
+   {
+    "vi": "trong tệp IEEE tương ứng",
+    "en": "in the relevant IEEE file"
+   },
+   {
+    "vi": "trong khai báo entity",
+    "en": "in the entity declaration"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mã dùng LIBRARY ieee; USE ieee.std_logic_1164.all; (Tooley 17.8).",
+   "en": "The code uses LIBRARY ieee; USE ieee.std_logic_1164.all; (Tooley 17.8)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 6 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q6 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Điều nào sau đây đến sớm hơn trong quá trình phát triển một chương trình VHDL?",
+   "en": "Which one of the following comes earlier in the development of a VHDL program:"
+  },
+  "opts": [
+   {
+    "vi": "mô phỏng",
+    "en": "Simulation"
+   },
+   {
+    "vi": "viết mã (coding)",
+    "en": "Coding"
+   },
+   {
+    "vi": "kiểm chứng (verification)",
+    "en": "Verification"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Thứ tự: ý tưởng, mã hoá, biên dịch, mô phỏng, tổng hợp, xếp/đi dây, kiểm chứng (Tooley 17.4).",
+   "en": "The order: conception, coding, compilation, simulation, synthesis, fitting/placement/routing, verification (Tooley 17.4)."
+  },
+  "topic": {
+   "vi": "Luồng thiết kế, mô phỏng và test bench",
+   "en": "Design flow, simulation and the test bench"
+  },
+  "topic_id": "flow",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 7 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q7 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mã VHDL, các tín hiệu chưa được khởi tạo được ký hiệu bằng chữ:",
+   "en": "In VHDL code, signals that have not already been initialised are denoted by the letter:"
+  },
+  "opts": [
+   {
+    "vi": "U",
+    "en": "U"
+   },
+   {
+    "vi": "X",
+    "en": "X"
+   },
+   {
+    "vi": "Z",
+    "en": "Z"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "std_logic có chín giá trị: U (chưa khởi tạo), X (không rõ, mạnh), 0, 1, Z (trở kháng cao), W, L, H và \"-\" (không quan tâm).",
+   "en": "std_logic has nine values: U (uninitialised), X (forcing unknown), 0, 1, Z (high impedance), W, L, H and \"-\" (don't care)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 8 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q8 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Toán tử gán trong VHDL được ký hiệu là:",
+   "en": "The assignment operator in VHDL is represented by:"
+  },
+  "opts": [
+   {
+    "vi": "=",
+    "en": "="
+   },
+   {
+    "vi": "=>",
+    "en": "=>"
+   },
+   {
+    "vi": "<=",
+    "en": "<="
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Gán tín hiệu viết sum <= x XOR y; (Tooley 17.3).",
+   "en": "A signal assignment is written sum <= x XOR y; (Tooley 17.3)."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 9 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q9 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi các câu lệnh chương trình được thực hiện song song, chúng được gọi là:",
+   "en": "When program statements are executed in parallel they are said to be:"
+  },
+  "opts": [
+   {
+    "vi": "đồng thời (concurrent)",
+    "en": "concurrent"
+   },
+   {
+    "vi": "tuần tự (sequential)",
+    "en": "sequential"
+   },
+   {
+    "vi": "ngẫu nhiên",
+    "en": "random"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "HDL cần đặc tính của ngôn ngữ đồng thời, đa luồng (Tooley 17.9).",
+   "en": "An HDL needs the characteristics of a concurrent, multi-threaded language (Tooley 17.9)."
+  },
+  "topic": {
+   "vi": "Luồng thiết kế, mô phỏng và test bench",
+   "en": "Design flow, simulation and the test bench"
+  },
+  "topic_id": "flow",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 10 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q10 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ví dụ nào sau đây là một kiểu dữ liệu của VHDL?",
+   "en": "Which one of the following is an example of a VHDL data type:"
+  },
+  "opts": [
+   {
+    "vi": "In",
+    "en": "In"
+   },
+   {
+    "vi": "Buffer",
+    "en": "Buffer"
+   },
+   {
+    "vi": "Boolean",
+    "en": "Boolean"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "IN và BUFFER là chế độ tín hiệu (mode); Boolean là kiểu dữ liệu.",
+   "en": "IN and BUFFER are signal modes; Boolean is a data type."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 11 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q11 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi x = 101 và y = 011, biểu thức VHDL \"not x and y\" có giá trị:",
+   "en": "When x = 101 and y = 011 the VHDL expression not x and y will evaluate to:"
+  },
+  "opts": [
+   {
+    "vi": "001",
+    "en": "001"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "NOT có độ ưu tiên cao hơn AND: NOT 101 = 010; 010 AND 011 = 010.",
+   "en": "NOT has higher precedence than AND: NOT 101 = 010; 010 AND 011 = 010."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 12 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q12 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hoạt động bên trong của một entity VHDL:",
+   "en": "The internal workings of a VHDL entity:"
+  },
+  "opts": [
+   {
+    "vi": "được ẩn khỏi các entity khác",
+    "en": "are hidden from other entities"
+   },
+   {
+    "vi": "hiện trong khai báo entity",
+    "en": "appear within the entity declaration"
+   },
+   {
+    "vi": "được định nghĩa trong một thư viện IEEE bên ngoài",
+    "en": "are defined in an external IEEE library"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Entity là \"vỏ bọc\" che giấu chi tiết bên trong (Tooley 17.5, 17.6).",
+   "en": "The entity is a \"wrapper\" hiding the internal details (Tooley 17.5, 17.6)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 13 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q13 (key A.17, p.382)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong VHDL, ngõ ra tổng s của một bộ nửa cộng (half adder) được viết là:",
+   "en": "In VHDL the sum, s, output of a half adder would be coded as:"
+  },
+  "opts": [
+   {
+    "vi": "s = p + q",
+    "en": "s = p + q"
+   },
+   {
+    "vi": "s => p AND q",
+    "en": "s => p AND q"
+   },
+   {
+    "vi": "s <= p XOR q",
+    "en": "s <= p XOR q"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tổng của bộ nửa cộng là XOR của hai ngõ vào; nhớ là AND (Tooley 17.3, Bảng 17.1).",
+   "en": "The sum of a half adder is the XOR of the two inputs; the carry is the AND (Tooley 17.3, Table 17.1)."
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Ch.17 · Câu 14 (khoá A.17, tr.382)",
+   "en": "Tooley Ch.17 · Q14 (key A.17, p.382)"
+  }
+ }
+]
