@@ -53,8 +53,7 @@
    "numbers": [],
    "issues": [
     "Nghi vấn: slide gọi máy tính điều khiển bay A320 là \"FCC\"; thuật ngữ thường dùng của A320 là ELAC, SEC và FAC (FCC là tên chung), cần đối chiếu tài liệu hãng."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 5,
@@ -92,8 +91,7 @@
    "numbers": [],
    "issues": [
     "Nghi vấn (cần đối chiếu): mã quét ví dụ 0x2D không khớp phím 5 trong các bộ mã quét thông dụng (bộ mã PS/2 set 2 dùng 0x2E cho phím 5); đây là \"ví dụ\" trên slide."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 8,
@@ -103,8 +101,7 @@
    "text_vi": "A. Chuột cơ dùng bi cao su: bi lăn khi chuột di chuyển và làm quay các bánh phát hiện chuyển động trục X và trục Y (có bộ mã hoá); mạch đếm số vòng quay để tìm khoảng cách và hướng di chuyển (X, Y). B. Chuột quang dùng cảm biến quang: LED chiếu sáng bề mặt; thấu kính và cảm biến ảnh chụp nhiều ảnh liên tiếp; bộ điều khiển chuột (bộ xử lý) so sánh ảnh ở thời điểm t và t+1 để tính chuột đi bao xa và theo hướng nào (delta X, delta Y). Chuỗi: chuyển động chuột (delta X, delta Y), bộ điều khiển đổi thành tín hiệu điện/số, máy tính nhận và xử lý dữ liệu, màn hình di chuyển con trỏ. Chuột là thiết bị vào vì nó gửi cho máy tính thông tin về chuyển động và thao tác của người dùng.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 9,
@@ -114,8 +111,7 @@
    "text_vi": "1 Vai trò: màn hình hiển thị thông tin hình ảnh do máy tính tạo ra; nó đổi tín hiệu điện từ máy tính (qua card đồ hoạ) thành hình ảnh (chữ, ảnh, video); là thiết bị ra phổ biến nhất vì cho giao diện thuận tiện, dễ hiểu. 2 Nguyên lý: máy tính có card đồ hoạ gửi tín hiệu video (HDMI, DisplayPort, VGA) tới màn hình; ở ảnh cận cảnh, mỗi điểm ảnh gồm ba điểm ảnh con đỏ, lục và lam (RGB). 3 Loại thông dụng: màn hình LCD/LED (phổ biến nhất), màn hình CRT (công nghệ cũ), màn hình OLED (công nghệ hiện đại). 4 Ứng dụng: hiện văn bản (tài liệu, mã, trang web), hình ảnh (ảnh, đồ hoạ), video (phim, trò chơi) và giao diện người dùng (biểu tượng, menu, cửa sổ). Tóm tắt: màn hình nhận tín hiệu video từ máy tính, đổi thành hình ảnh nhìn thấy được và cho phép người dùng giao tiếp với máy tính.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 10,

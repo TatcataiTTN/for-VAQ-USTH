@@ -85,11 +85,14 @@ Số đo mức độ: level 3 chỉ có ở một phần ngân hàng (m07 không
 - QA đợt 2: site_test, exam_test (thêm kiểm tra 8 đề Tooley, hình, kiểm tra đầu vào, hoán vị lựa chọn), tools_test đều PASS; 9 script verify xanh; crawl 110 trang x 2 khung nhìn: 0 tràn ngang, 0 ảnh hỏng, 0 lỗi KaTeX/console/HTTP.
 - Số đo cuối: ngân hàng m01-m15: 1 370 câu trắc nghiệm/đúng-sai (751 gốc; mức 1/2/3 = 720/399/251), 165 tự luận, m00 (đầu vào) 40 câu, 190 thuật ngữ, 53 công thức; đề: 15 theo module, 8 Tooley, 4 tự luận, Midterm/Final 3+3, Hard 2, tổng hợp 2, đầu vào 1, hỗn hợp 4.
 
+**Đợt 3 (đã dựng và test trên máy sau commit a4edac6, CHƯA push):**
+- **Notebook m01-m09 đã tách thành cặp VI/EN** (`notebooks/mNN_<slug>_{vi,en}.ipynb`, chạy lại bằng nbconvert, 0 lỗi, số liệu in ra giống hệt nhau): `build/nb/split_legacy.py` (chạy bằng `.venv/bin/python`, kernel tạm trong `scratch/jup/`), bản dịch EN trong `build/nb/legacy_en_a/b/c.py` (markdown theo chỉ số ô; code theo cặp "đoạn tiếng Việt không dấu" → "đoạn tiếng Anh"), `build/nb/check_en_residual.py` tìm chữ Việt còn sót (còn 2 dòng báo nhầm do tên biến DE). File cũ `data/notebooks/NN_*.ipynb` giữ để URL cũ sống. Bản VI giữ lời nhắn in ra bằng tiếng Việt không dấu (như bản gốc).
+- 4 slide chỉ có chữ của bộ cpu (4, 7, 8, 9) kiểm thêm: khớp ảnh.
+
 **CHƯA LÀM (nói thẳng):**
-1. Notebook m01-m09 vẫn là một file chung cho hai ngôn ngữ: lời nhắn in ra của code là tiếng Việt không dấu (khoảng vài trăm chuỗi và đầu ra); trang đã ghi rõ điều này. Tách VI/EN cần dịch và chạy lại cả 9 notebook.
-2. 85 slide chỉ có chữ chưa phóng to kiểm lại (không chứa số hay công thức).
-3. Test Your Understanding 20.6 của Tooley (sách không in đáp án).
-4. Cắt ảnh sách riêng cho từng bài tập (4c) chưa làm thêm.
-5. Mã VHDL chưa biên dịch bằng công cụ thật (máy không có ghdl/nvc).
-6. Lệch vị trí đáp án còn ở m01 (3 lựa chọn, χ² 6,5); lệch độ dài (đáp án đúng dài nhất, 3 lựa chọn): m07 63 %, m12 71 %, m13 65 %, m15 77 % là đặc điểm của câu gốc Tooley, đề thi chọn câu có phạt độ dài nhưng đề Tooley tái hiện đúng sách (Paper 1 và 7 có 9 đến 10/20 câu đúng là phương án dài nhất).
-7. Việc P0b (mở site mẫu bằng trình duyệt) và P2 (bản đồ mục sách chi tiết) chưa làm; 3 câu Revision Paper chỉ có khoá in (P3 Q2, P4 Q3, P8 Q11).
+1. 81 slide chỉ có chữ (không số, không công thức) vẫn ở mức tóm tắt, chưa phóng to kiểm lại từng slide (cpu 27, disp 19, emc 32, icmux 3); mẫu kiểm 4 slide cpu không thấy sai.
+2. Test Your Understanding 20.6 của Tooley (sách không in đáp án).
+3. Cắt ảnh sách riêng cho từng bài tập (4c) chưa làm thêm.
+4. Mã VHDL chưa biên dịch bằng công cụ thật (máy không có ghdl/nvc; cần người dùng đồng ý cài).
+5. Lệch vị trí đáp án còn ở m01 (3 lựa chọn, χ² 6,5); lệch độ dài (đáp án đúng dài nhất, 3 lựa chọn): m07 63 %, m12 71 %, m13 65 %, m15 77 % là đặc điểm của câu gốc Tooley; đề Tooley tái hiện đúng sách.
+6. P0b (mở site mẫu bằng trình duyệt) và P2 (bản đồ mục sách chi tiết) chưa làm; 3 câu Revision Paper chỉ có khoá in (P3 Q2, P4 Q3, P8 Q11, trong đó P8 Q11 cần hỏi giảng viên).

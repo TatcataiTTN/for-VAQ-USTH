@@ -26,7 +26,7 @@ Bằng chứng khảo sát: đã ĐỌC mã engine của Thermal-Systems (`_shar
 | F19 | Cấu trúc đề | LÀM | có (khung giải thích trong trang Luyện đề) | |
 | F20 | Python judge | BỎ | đề cương không có mục tiêu lập trình | |
 | F21 | Mô phỏng mạch logic và bus | BỎ | thuộc Lab (4d). Ba demo (checksum/CRC, cáp quang, EMC) giữ trong module | |
-| F22 | Notebook | CHỈNH | m10 đến m15 có cặp VI/EN chạy sẵn; m01 đến m09 vẫn một file chung VI+EN (CHƯA tách) | P4 |
+| F22 | Notebook | LÀM | m01 đến m15 đều có cặp VI/EN chạy sẵn (m01-m09 tách từ file chung bằng `build/nb/split_legacy.py`) | `build/nb/check_en_residual.py` |
 | F23 | Giao diện | CHỈNH | có Sáng, Tối, Sepia, Ocean và 3 cỡ chữ | |
 
 Lưu ý khoá lưu trữ: mọi khoá tiến độ có tiền tố `ae2021:` (xem `build/NAMESPACE.md`); Thermal-Systems dùng khoá không có tiền tố môn trên cùng origin, nên tiến độ giữa các môn có thể lẫn (chưa sửa, ngoài phạm vi thư mục này).
