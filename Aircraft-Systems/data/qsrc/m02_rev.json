@@ -1,0 +1,151 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng NAND có đầu ra bị đảo có cùng chức năng logic với:",
+   "en": "A NAND gate with its output inverted has the same logical function as:"
+  },
+  "opts": [
+   {
+    "vi": "cổng OR",
+    "en": "an OR gate"
+   },
+   {
+    "vi": "cổng NOR",
+    "en": "a NOR gate"
+   },
+   {
+    "vi": "cổng AND",
+    "en": "an AND gate"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "NOT(NAND(A,B)) = NOT(NOT(A·B)) = A·B: đó là cổng AND.",
+   "en": "NOT(NAND(A,B)) = NOT(NOT(A·B)) = A·B: an AND gate."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q4",
+   "en": "Tooley Revision Paper 1 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "So với thiết bị TTL, thiết bị logic CMOS:",
+   "en": "When compared with TTL devices, CMOS logic devices use:"
+  },
+  "opts": [
+   {
+    "vi": "tốn ít điện năng hơn và có miễn nhiễu thấp hơn",
+    "en": "less power and have lower noise immunity"
+   },
+   {
+    "vi": "tốn nhiều điện năng hơn và có miễn nhiễu thấp hơn",
+    "en": "more power and have lower noise immunity"
+   },
+   {
+    "vi": "tốn ít điện năng hơn và có miễn nhiễu cao hơn",
+    "en": "less power and have higher noise immunity"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "CMOS tiêu thụ công suất tĩnh rất nhỏ và có biên miễn nhiễu lớn, bằng (1/3)·V_DD (TTL chuẩn chỉ khoảng 400 mV). (Tooley tr.88, 90, 94)",
+   "en": "CMOS draws very little static power and has a wide noise margin of (1/3)·V_DD (standard TTL only about 400 mV). (Tooley p.88, 90, 94)"
+  },
+  "topic": {
+   "vi": "Họ logic và đặc tính điện",
+   "en": "Logic families and electrical characteristics"
+  },
+  "topic_id": "family",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q14",
+   "en": "Tooley Revision Paper 1 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cổng logic CMOS chạy nguồn 15 V. Nếu đo được 9 V ở đầu vào của cổng thì tương đương với:",
+   "en": "A CMOS logic gate is operated from a 15 V supply. If a voltage of 9 V is measured at the input of the gate this would be equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "đầu vào logic 0",
+    "en": "a logic 0 input"
+   },
+   {
+    "vi": "đầu vào logic 1",
+    "en": "a logic 1 input"
+   },
+   {
+    "vi": "đầu vào không xác định",
+    "en": "an indeterminate input"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mức logic CMOS tính theo điện áp nguồn, biên miễn nhiễu là (1/3)·V_DD. Với V_DD = 15 V: logic 0 ≤ 5 V, logic 1 ≥ 10 V; 9 V (60 % nguồn) nằm giữa hai ngưỡng nên không xác định. (Dùng ngưỡng 30 %/70 % cho cùng kết luận.) (Tooley tr.90)",
+   "en": "CMOS logic levels are relative to the supply and the noise margin is (1/3)·V_DD. With V_DD = 15 V: logic 0 is at most 5 V and logic 1 at least 10 V; 9 V (60 % of the supply) lies between them, so it is indeterminate. (The 30 %/70 % thresholds give the same result.) (Tooley p.90)"
+  },
+  "topic": {
+   "vi": "Họ logic và đặc tính điện",
+   "en": "Logic families and electrical characteristics"
+  },
+  "topic_id": "family",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q20",
+   "en": "Tooley Revision Paper 1 Q20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hình A2.26 là bố trí các cổng logic (G1: đảo; G2: đảo; G3: NAND; G4: NOR). Khi A và B cùng ở logic 1, các đầu ra X, Y, Z có trạng thái:",
+   "en": "Figure A2.26 shows a logic gate arrangement. When inputs A and B are both at logic 1 what will the state of output lines X, Y and Z be?"
+  },
+  "opts": [
+   {
+    "vi": "X = 0, Y = 0, Z = 1",
+    "en": "X = 0, Y = 0, Z = 1"
+   },
+   {
+    "vi": "X = 1, Y = 0, Z = 1",
+    "en": "X = 1, Y = 0, Z = 1"
+   },
+   {
+    "vi": "X = 1, Y = 1, Z = 0",
+    "en": "X = 1, Y = 1, Z = 0"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "G1 cho Ā = 0. X = NOT(Ā) = 1. Y = NAND(Ā, B) = NAND(0,1) = 1. Z = NOR(Ā, B) = NOR(0,1) = 0. Vậy X = 1, Y = 1, Z = 0.",
+   "en": "G1 gives Ā = 0. X = NOT(Ā) = 1. Y = NAND(Ā, B) = NAND(0,1) = 1. Z = NOR(Ā, B) = NOR(0,1) = 0. So X = 1, Y = 1, Z = 0."
+  },
+  "topic": {
+   "vi": "Cổng logic và bảng chân trị",
+   "en": "Logic gates and truth tables"
+  },
+  "topic_id": "gates",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q12",
+   "en": "Tooley Revision Paper 7 Q12"
+  },
+  "fig": "assets/figures/tooley_A2_26.png"
+ }
+]

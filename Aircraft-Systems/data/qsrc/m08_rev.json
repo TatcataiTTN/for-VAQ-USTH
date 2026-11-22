@@ -1,0 +1,261 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nón chấp nhận (cone of acceptance) của sợi quang và nguồn sáng được đo giữa:",
+   "en": "The cone of acceptance of an optical fibre and a light source is measured between:"
+  },
+  "opts": [
+   {
+    "vi": "hai góc ngoài",
+    "en": "the two outer angles"
+   },
+   {
+    "vi": "đường kính của lõi",
+    "en": "the diameter of the core"
+   },
+   {
+    "vi": "trục dọc của lõi và góc ngoài",
+    "en": "the longitudinal axis of the core and the outer angle"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Góc chấp nhận được đo từ trục lõi ra mép ngoài của nón: ánh sáng vào trong nón này mới bị giữ lại bằng phản xạ toàn phần. (Tooley tr.168)",
+   "en": "The acceptance angle is measured from the core axis to the outer edge of the cone: light entering inside the cone is trapped by total internal reflection. (Tooley p.168)"
+  },
+  "topic": {
+   "vi": "Góc chấp nhận, NA và mode",
+   "en": "Acceptance angle, NA and modes"
+  },
+  "topic_id": "na",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q3",
+   "en": "Tooley Revision Paper 2 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bước sóng ánh sáng điển hình trong sợi quang là:",
+   "en": "The typical wavelength of light in an optical fibre is:"
+  },
+  "opts": [
+   {
+    "vi": "575 nm",
+    "en": "575 nm"
+   },
+   {
+    "vi": "635 nm",
+    "en": "635 nm"
+   },
+   {
+    "vi": "1.300 nm",
+    "en": "1,300 nm"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đường suy hao theo bước sóng (Hình 10.4) có các cực tiểu ở hồng ngoại gần, quanh 850 nm, 1.300 nm và 1.550 nm, nên sợi dùng các \"cửa sổ\" đó; 575 nm (vàng) và 635 nm (đỏ) bị suy hao nhiều hơn. (Tooley tr.169, 177)",
+   "en": "The attenuation-against-wavelength curve (Figure 10.4) has minima in the near infrared, around 850 nm, 1,300 nm and 1,550 nm, so fibre uses those windows; 575 nm (yellow) and 635 nm (red) suffer higher attenuation. (Tooley p.169, 177)"
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q8",
+   "en": "Tooley Revision Paper 3 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sợi quang đơn mode (monomode) có:",
+   "en": "A monomode optical fibre has:"
+  },
+  "opts": [
+   {
+    "vi": "lõi đường kính lớn hơn sợi đa mode",
+    "en": "a larger diameter core than a multimode fibre"
+   },
+   {
+    "vi": "lõi đường kính nhỏ hơn sợi đa mode",
+    "en": "a smaller diameter core than a multimode fibre"
+   },
+   {
+    "vi": "lõi cùng đường kính với sợi đa mode",
+    "en": "the same diameter core as a multimode fibre"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Sợi đơn mode có lõi chỉ vài micromet nên chỉ cho một mode lan truyền; sợi đa mode có lõi 50 đến 62,5 µm. (Tooley tr.168, 169)",
+   "en": "A monomode fibre has a core of only a few micrometres so only one mode propagates; multimode fibre has a 50 to 62.5 µm core. (Tooley p.168, 169)"
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q9",
+   "en": "Tooley Revision Paper 3 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cáp dữ liệu sợi quang là:",
+   "en": "Fibre-optic data cables are:"
+  },
+  "opts": [
+   {
+    "vi": "hai chiều (bidirectional)",
+    "en": "bidirectional"
+   },
+   {
+    "vi": "một chiều (unidirectional)",
+    "en": "unidirectional"
+   },
+   {
+    "vi": "simplex",
+    "en": "simplex"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Cáp dữ liệu sợi quang chứa một cặp sợi (một sợi mỗi chiều) nên liên kết là hai chiều. Lưu ý: \"một chiều\" và \"simplex\" là hai từ cùng nghĩa (Tooley tr.170 gọi liên kết một sợi là simplex), nên chúng không thể là đáp án đơn duy nhất; khoá in chọn (a). (Tooley tr.170, 274)",
+   "en": "A fibre-optic data cable holds a pair of fibres (one per direction) so the link is bidirectional. Note: \"unidirectional\" and \"simplex\" mean the same thing (Tooley p.170 calls a single-fibre link simplex), so neither can be the single correct choice; the printed key picks (a). (Tooley p.170, 274)"
+  },
+  "topic": {
+   "vi": "Hệ thống truyền thông tin quang",
+   "en": "Optical communication systems"
+  },
+  "topic_id": "system",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q1",
+   "en": "Tooley Revision Paper 4 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Suy hao trong cáp dữ liệu sợi quang tăng khi:",
+   "en": "Losses in optical fibre data cables increase when:"
+  },
+  "opts": [
+   {
+    "vi": "dùng tốc độ dữ liệu thấp",
+    "en": "a low data rate is used"
+   },
+   {
+    "vi": "cáp được giữ càng ngắn càng tốt",
+    "en": "the cable is kept as short as possible"
+   },
+   {
+    "vi": "cáp bị uốn quanh bán kính nhỏ",
+    "en": "the cable is bent around a small radius"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Uốn cong gấp làm một phần ánh sáng vượt góc tới hạn và thoát ra khỏi lõi (suy hao uốn); cáp ngắn thì suy hao nhỏ đi, tốc độ dữ liệu không ảnh hưởng. (Tooley tr.165, 168)",
+   "en": "A tight bend makes part of the light exceed the critical angle and escape the core (bend loss); a shorter cable lowers the loss and the data rate does not matter. (Tooley p.165, 168)"
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q9",
+   "en": "Tooley Revision Paper 4 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cáp sợi quang dùng:",
+   "en": "Fibre-optic cables use:"
+  },
+  "opts": [
+   {
+    "vi": "lớp bọc phản xạ",
+    "en": "a reflective cladding"
+   },
+   {
+    "vi": "lớp bọc có chiết suất (refractive cladding)",
+    "en": "a refractive cladding"
+   },
+   {
+    "vi": "lớp bọc đục",
+    "en": "an opaque cladding"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Lớp bọc trong suốt có chiết suất thấp hơn lõi, nhờ đó ánh sáng bị phản xạ toàn phần ở mặt phân cách; đó là lớp bọc khúc xạ. (Tooley tr.166, 168)",
+   "en": "The cladding is transparent with a lower refractive index than the core so light undergoes total internal reflection at the boundary: a refractive cladding. (Tooley p.166, 168)"
+  },
+  "topic": {
+   "vi": "Chiết suất, Snell và phản xạ toàn phần",
+   "en": "Refractive index, Snell and total internal reflection"
+  },
+  "topic_id": "snell",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q10",
+   "en": "Tooley Revision Paper 4 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Lõi của sợi quang đơn mode có đường kính điển hình là:",
+   "en": "The core of a monomode optical fibre has a typical diameter of:"
+  },
+  "opts": [
+   {
+    "vi": "5 µm",
+    "en": "5 µm"
+   },
+   {
+    "vi": "25 µm",
+    "en": "25 µm"
+   },
+   {
+    "vi": "50 µm",
+    "en": "50 µm"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Lõi sợi đơn mode cỡ 5 đến 10 µm; 25 µm và 50 µm thuộc sợi đa mode. (Bản OCR của đề in \"µm\" thành \"m/w/y\".) (Tooley tr.168, 169)",
+   "en": "A monomode core is about 5 to 10 µm; 25 µm and 50 µm belong to multimode fibre. (The OCR of the paper prints \"µm\" as \"m/w/y\".) (Tooley p.168, 169)"
+  },
+  "topic": {
+   "vi": "Suy hao, tán sắc và loại sợi",
+   "en": "Attenuation, dispersion and fibre types"
+  },
+  "topic_id": "loss",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q9",
+   "en": "Tooley Revision Paper 5 Q9"
+  }
+ }
+]

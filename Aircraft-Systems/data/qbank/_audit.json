@@ -1,19 +1,19 @@
 {
  "m01": {
-  "n": 86,
-  "n_goc": 57,
+  "n": 87,
+  "n_goc": 58,
   "n_bo_sung": 29,
   "essays": 35,
   "essays_goc": 35,
   "audit": {
    "mcq/3opt": {
-    "n": 35,
+    "n": 36,
     "pos": [
      10,
      19,
-     6
+     7
     ],
-    "chi2": 7.6,
+    "chi2": 6.5,
     "correct_is_longest": 0.083
    },
    "mcq/4opt": {
@@ -39,21 +39,21 @@
   }
  },
  "m02": {
-  "n": 112,
-  "n_goc": 92,
+  "n": 116,
+  "n_goc": 96,
   "n_bo_sung": 20,
   "essays": 44,
   "essays_goc": 44,
   "audit": {
    "mcq/3opt": {
-    "n": 44,
+    "n": 48,
     "pos": [
-     17,
+     18,
      15,
-     12
+     15
     ],
-    "chi2": 0.86,
-    "correct_is_longest": 0.275
+    "chi2": 0.38,
+    "correct_is_longest": 0.326
    },
    "mcq/4opt": {
     "n": 44,
@@ -90,21 +90,21 @@
   }
  },
  "m03": {
-  "n": 67,
-  "n_goc": 45,
+  "n": 70,
+  "n_goc": 48,
   "n_bo_sung": 22,
   "essays": 11,
   "essays_goc": 11,
   "audit": {
    "mcq/3opt": {
-    "n": 38,
+    "n": 41,
     "pos": [
-     11,
+     14,
      13,
      14
     ],
-    "chi2": 0.37,
-    "correct_is_longest": 0.346
+    "chi2": 0.05,
+    "correct_is_longest": 0.357
    },
    "mcq/4opt": {
     "n": 18,
@@ -142,60 +142,60 @@
   }
  },
  "m04": {
-  "n": 88,
-  "n_goc": 61,
-  "n_bo_sung": 27,
-  "essays": 20,
-  "essays_goc": 20,
+  "n": 144,
+  "n_goc": 93,
+  "n_bo_sung": 51,
+  "essays": 29,
+  "essays_goc": 29,
   "audit": {
    "mcq/3opt": {
-    "n": 53,
+    "n": 56,
     "pos": [
-     21,
-     11,
-     21
+     20,
+     16,
+     20
     ],
-    "chi2": 3.77,
-    "correct_is_longest": 0.167
+    "chi2": 0.57,
+    "correct_is_longest": 0.156
    },
    "mcq/4opt": {
-    "n": 23,
+    "n": 61,
     "pos": [
-     4,
-     7,
-     4,
-     8
+     15,
+     15,
+     15,
+     16
     ],
-    "chi2": 2.22,
-    "correct_is_longest": 0.0
+    "chi2": 0.05,
+    "correct_is_longest": 0.034
    },
    "tf/2opt": {
-    "n": 12,
+    "n": 27,
     "pos": [
-     6,
-     6
+     16,
+     11
     ],
-    "chi2": 0.0,
-    "correct_is_longest": 0.417
+    "chi2": 0.93,
+    "correct_is_longest": 0.37
    }
   }
  },
  "m05": {
-  "n": 69,
-  "n_goc": 36,
+  "n": 82,
+  "n_goc": 49,
   "n_bo_sung": 33,
   "essays": 0,
   "essays_goc": 0,
   "audit": {
    "mcq/3opt": {
-    "n": 47,
+    "n": 60,
     "pos": [
-     14,
-     15,
-     18
+     19,
+     20,
+     21
     ],
-    "chi2": 0.55,
-    "correct_is_longest": 0.512
+    "chi2": 0.1,
+    "correct_is_longest": 0.449
    },
    "mcq/4opt": {
     "n": 7,
@@ -220,21 +220,21 @@
   }
  },
  "m06": {
-  "n": 102,
-  "n_goc": 64,
+  "n": 120,
+  "n_goc": 82,
   "n_bo_sung": 38,
   "essays": 4,
   "essays_goc": 4,
   "audit": {
    "mcq/3opt": {
-    "n": 90,
+    "n": 108,
     "pos": [
-     28,
-     32,
-     30
+     35,
+     36,
+     37
     ],
-    "chi2": 0.27,
-    "correct_is_longest": 0.38
+    "chi2": 0.06,
+    "correct_is_longest": 0.348
    },
    "mcq/4opt": {
     "n": 9,
@@ -259,21 +259,21 @@
   }
  },
  "m07": {
-  "n": 64,
-  "n_goc": 20,
+  "n": 67,
+  "n_goc": 23,
   "n_bo_sung": 44,
   "essays": 6,
   "essays_goc": 6,
   "audit": {
    "mcq/3opt": {
-    "n": 48,
+    "n": 51,
     "pos": [
      24,
-     8,
+     11,
      16
     ],
-    "chi2": 8.0,
-    "correct_is_longest": 0.605
+    "chi2": 5.06,
+    "correct_is_longest": 0.625
    },
    "mcq/4opt": {
     "n": 13,
@@ -298,21 +298,21 @@
   }
  },
  "m08": {
-  "n": 61,
-  "n_goc": 35,
+  "n": 68,
+  "n_goc": 42,
   "n_bo_sung": 26,
   "essays": 7,
   "essays_goc": 7,
   "audit": {
    "mcq/3opt": {
-    "n": 55,
+    "n": 62,
     "pos": [
-     19,
-     20,
-     16
+     21,
+     21,
+     20
     ],
-    "chi2": 0.47,
-    "correct_is_longest": 0.408
+    "chi2": 0.03,
+    "correct_is_longest": 0.429
    },
    "tf/2opt": {
     "n": 6,
@@ -326,21 +326,21 @@
   }
  },
  "m09": {
-  "n": 67,
-  "n_goc": 26,
+  "n": 74,
+  "n_goc": 33,
   "n_bo_sung": 41,
   "essays": 4,
   "essays_goc": 2,
   "audit": {
    "mcq/3opt": {
-    "n": 55,
+    "n": 62,
     "pos": [
      22,
-     14,
-     19
+     19,
+     21
     ],
-    "chi2": 1.78,
-    "correct_is_longest": 0.569
+    "chi2": 0.23,
+    "correct_is_longest": 0.579
    },
    "mcq/4opt": {
     "n": 10,
@@ -365,21 +365,21 @@
   }
  },
  "m10": {
-  "n": 109,
-  "n_goc": 38,
+  "n": 115,
+  "n_goc": 44,
   "n_bo_sung": 71,
   "essays": 7,
   "essays_goc": 7,
   "audit": {
    "mcq/3opt": {
-    "n": 13,
+    "n": 19,
     "pos": [
-     2,
+     6,
      7,
-     4
+     6
     ],
-    "chi2": 2.92,
-    "correct_is_longest": 0.385
+    "chi2": 0.11,
+    "correct_is_longest": 0.5
    },
    "mcq/4opt": {
     "n": 86,
@@ -416,32 +416,32 @@
   }
  },
  "m11": {
-  "n": 173,
-  "n_goc": 98,
+  "n": 177,
+  "n_goc": 102,
   "n_bo_sung": 75,
   "essays": 6,
   "essays_goc": 0,
   "audit": {
    "mcq/3opt": {
-    "n": 12,
+    "n": 15,
     "pos": [
      5,
      6,
-     1
+     4
     ],
-    "chi2": 3.5,
+    "chi2": 0.4,
     "correct_is_longest": 0.0
    },
    "mcq/4opt": {
-    "n": 119,
+    "n": 120,
     "pos": [
      30,
-     27,
+     28,
      28,
      34
     ],
-    "chi2": 0.97,
-    "correct_is_longest": 0.143
+    "chi2": 0.8,
+    "correct_is_longest": 0.141
    },
    "mcq/5opt": {
     "n": 1,
@@ -480,21 +480,21 @@
   }
  },
  "m12": {
-  "n": 56,
-  "n_goc": 4,
+  "n": 60,
+  "n_goc": 8,
   "n_bo_sung": 52,
   "essays": 3,
   "essays_goc": 0,
   "audit": {
    "mcq/3opt": {
-    "n": 30,
+    "n": 34,
     "pos": [
-     8,
+     12,
      11,
      11
     ],
-    "chi2": 0.6,
-    "correct_is_longest": 0.767
+    "chi2": 0.06,
+    "correct_is_longest": 0.706
    },
    "mcq/4opt": {
     "n": 20,
@@ -519,21 +519,21 @@
   }
  },
  "m13": {
-  "n": 75,
-  "n_goc": 26,
+  "n": 83,
+  "n_goc": 34,
   "n_bo_sung": 49,
   "essays": 3,
   "essays_goc": 0,
   "audit": {
    "mcq/3opt": {
-    "n": 46,
+    "n": 54,
     "pos": [
-     13,
      18,
-     15
+     18,
+     18
     ],
-    "chi2": 0.83,
-    "correct_is_longest": 0.682
+    "chi2": 0.0,
+    "correct_is_longest": 0.653
    },
    "mcq/4opt": {
     "n": 29,
@@ -549,21 +549,21 @@
   }
  },
  "m14": {
-  "n": 47,
-  "n_goc": 14,
+  "n": 53,
+  "n_goc": 20,
   "n_bo_sung": 33,
   "essays": 3,
   "essays_goc": 0,
   "audit": {
    "mcq/3opt": {
-    "n": 25,
+    "n": 31,
     "pos": [
      10,
      11,
-     4
+     10
     ],
-    "chi2": 3.44,
-    "correct_is_longest": 0.5
+    "chi2": 0.06,
+    "correct_is_longest": 0.538
    },
    "mcq/4opt": {
     "n": 22,
@@ -579,21 +579,21 @@
   }
  },
  "m15": {
-  "n": 51,
-  "n_goc": 16,
+  "n": 54,
+  "n_goc": 19,
   "n_bo_sung": 35,
   "essays": 3,
   "essays_goc": 0,
   "audit": {
    "mcq/3opt": {
-    "n": 40,
+    "n": 43,
     "pos": [
-     9,
+     12,
      16,
      15
     ],
-    "chi2": 2.15,
-    "correct_is_longest": 0.784
+    "chi2": 0.6,
+    "correct_is_longest": 0.769
    },
    "mcq/4opt": {
     "n": 11,

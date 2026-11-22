@@ -1,0 +1,669 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các chỉ báo điển hình trên EHSI là:",
+   "en": "Typical displays on an EHSI are:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ báo và cảnh báo của động cơ",
+    "en": "engine indications and warnings"
+   },
+   {
+    "vi": "VOR, hướng (heading) và đường bay (track)",
+    "en": "VOR, heading and track"
+   },
+   {
+    "vi": "VOR, độ cao và tốc độ lên",
+    "en": "VOR, altitude and rate of climb"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "EHSI là màn hình tình huống nằm ngang: hiển thị dữ liệu dẫn đường (VOR, heading, track). Dữ liệu động cơ ở EICAS; độ cao, tốc độ lên ở EADI/PFD. (Tooley tr.8, 9)",
+   "en": "The EHSI is the horizontal situation display: it shows navigation data (VOR, heading, track). Engine data are on EICAS; altitude and rate of climb belong to the EADI/PFD. (Tooley p.8, 9)"
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q1",
+   "en": "Tooley Revision Paper 1 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các chất phát quang xanh dương và đỏ cạnh nhau cùng sáng trên màn CRT màu. Màu thu được là:",
+   "en": "Adjacent blue and red phosphors are illuminated on the screen of a colour CRT. The resulting colour produced will be:"
+  },
+  "opts": [
+   {
+    "vi": "lục lam (cyan)",
+    "en": "cyan"
+   },
+   {
+    "vi": "vàng",
+    "en": "yellow"
+   },
+   {
+    "vi": "tím đỏ (magenta)",
+    "en": "magenta"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Pha màu cộng: xanh dương + đỏ = magenta; xanh dương + lục = cyan; đỏ + lục = vàng. (Tooley tr.185, 195)",
+   "en": "Additive mixing: blue + red = magenta; blue + green = cyan; red + green = yellow. (Tooley p.185, 195)"
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q13",
+   "en": "Tooley Revision Paper 1 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ thống director bay (flight director) nhận thông tin từ:",
+   "en": "The flight director system receives information from:"
+  },
+  "opts": [
+   {
+    "vi": "con quay chỉ tư thế, động cơ, radar độ cao",
+    "en": "attitude gyro, engines, radar altimeter"
+   },
+   {
+    "vi": "con quay chỉ tư thế, VOR/localiser, hệ la bàn",
+    "en": "attitude gyro, VOR /localiser, compass system"
+   },
+   {
+    "vi": "hệ la bàn, radar thời tiết, radar độ cao",
+    "en": "compass system, weather radar, radar altimeter"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Flight director kết hợp tư thế, hướng và tín hiệu dẫn đường (VOR/localiser) để tính lệnh lái; động cơ và radar thời tiết không đưa vào. (Tooley tr.8, 11)",
+   "en": "The flight director combines attitude, heading and navigation signals (VOR/localiser) to compute steering commands; engine data and weather radar are not inputs. (Tooley p.8, 11)"
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q4",
+   "en": "Tooley Revision Paper 2 Q4"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ROM tạo ký tự (character generator ROM) được dùng cùng với:",
+   "en": "A character-generator ROM is used in conjunction with:"
+  },
+  "opts": [
+   {
+    "vi": "bộ thu GPS",
+    "en": "a GPS receiver"
+   },
+   {
+    "vi": "bộ điều khiển CRT",
+    "en": "a CRT controller"
+   },
+   {
+    "vi": "chỉ báo bảy đoạn",
+    "en": "a seven-segment indicator"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "ROM tạo ký tự lưu dạng điểm ảnh của từng chữ; bộ điều khiển CRT đọc nó để vẽ ký tự lên màn hình. (Tooley tr.186, 196)",
+   "en": "The character-generator ROM stores the dot pattern of each character; the CRT controller reads it to draw the characters on screen. (Tooley p.186, 196)"
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q17",
+   "en": "Tooley Revision Paper 2 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EADI hiển thị:",
+   "en": "The EADI displays:"
+  },
+  "opts": [
+   {
+    "vi": "các góc tư thế chúc ngóc và nghiêng",
+    "en": "pitch and roll attitudes"
+   },
+   {
+    "vi": "hướng bay và radar thời tiết",
+    "en": "heading and weather radar"
+   },
+   {
+    "vi": "chúc ngóc, nghiêng và các điểm đường bay",
+    "en": "pitch, roll and waypoints"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EADI là đồng hồ chỉ tư thế/director điện tử: hiển thị góc chúc ngóc (pitch) và nghiêng (roll). Hướng bay, điểm đường bay và radar thời tiết thuộc EHSI. (Tooley tr.1, 2)",
+   "en": "The EADI is the electronic attitude director indicator: it shows pitch and roll. Heading, waypoints and weather radar belong to the EHSI. (Tooley p.1, 2)"
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q1",
+   "en": "Tooley Revision Paper 3 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên EHSI ở chế độ radar thời tiết, cơn bão mạnh được hiển thị là:",
+   "en": "On an EHSI in weather radar mode, a severe storm would be shown as:"
+  },
+  "opts": [
+   {
+    "vi": "vùng màu cam có viền đen hoặc vàng",
+    "en": "orange areas with black or yellow surrounds"
+   },
+   {
+    "vi": "vùng xanh dương trên nền trắng",
+    "en": "blue areas with white background"
+   },
+   {
+    "vi": "vùng đỏ có viền đen",
+    "en": "red areas with black surrounds"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mã màu radar thời tiết: xanh lá (mưa nhẹ), vàng, đỏ (mưa mạnh/bão dữ dội), magenta (xoáy mạnh nhất). Bão mạnh hiển thị màu đỏ.",
+   "en": "Weather radar colour code: green (light rain), yellow, red (heavy rain/severe storm), magenta (most intense turbulence). A severe storm is shown in red."
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q2",
+   "en": "Tooley Revision Paper 3 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nếu một màn hình EICAS bị hỏng:",
+   "en": "If one EICAS display fails:"
+  },
+  "opts": [
+   {
+    "vi": "màn hình CRT còn lại sẽ hiển thị dữ liệu EICAS chính",
+    "en": "the remaining CRT will display primary EICAS data"
+   },
+   {
+    "vi": "CDU của FMS sẽ hiển thị dữ liệu của CRT hỏng",
+    "en": "the FMS CDU will display the failed CRT data"
+   },
+   {
+    "vi": "CRT dự phòng sẽ tự động thay thế",
+    "en": "the standby CRT will automatically take over"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EICAS có hai màn hình (chính và phụ). Khi một màn hình hỏng, màn hình còn lại hiện dữ liệu động cơ chính; không có CRT dự phòng thứ ba. (Tooley tr.8, 14)",
+   "en": "EICAS has two displays (primary and secondary). If one fails, the remaining CRT shows the primary engine data; there is no third standby CRT. (Tooley p.8, 14)"
+  },
+  "topic": {
+   "vi": "EICAS và ECAM",
+   "en": "EICAS and ECAM"
+  },
+  "topic_id": "ecam",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q7",
+   "en": "Tooley Revision Paper 3 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tín hiệu ACARS được phát ở:",
+   "en": "ACARS signals are transmitted at:"
+  },
+  "opts": [
+   {
+    "vi": "HF trong dải 11 MHz đến 14 MHz",
+    "en": "HF in the range 11 MHz to 14 MHz"
+   },
+   {
+    "vi": "VHF trong dải 118 MHz đến 136 MHz",
+    "en": "VHF in the range 118 MHz to 136 MHz"
+   },
+   {
+    "vi": "UHF trong dải 405 MHz đến 420 MHz",
+    "en": "UHF in the range 405 MHz to 420 MHz"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "ACARS dùng liên lạc dữ liệu VHF trong băng hàng không 118 đến 136 MHz (dùng HF hoặc vệ tinh khi ngoài tầm VHF). (Tooley tr.238, 239)",
+   "en": "ACARS uses VHF data link in the 118 to 136 MHz aeronautical band (HF or satellite beyond VHF range). (Tooley p.238, 239)"
+  },
+  "topic": {
+   "vi": "Bảo trì tập trung và ACARS",
+   "en": "Central maintenance and ACARS"
+  },
+  "topic_id": "cmc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q19",
+   "en": "Tooley Revision Paper 3 Q19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình trong Hình A2.15 là:",
+   "en": "The display shown in Figure A2.15 is:"
+  },
+  "opts": [
+   {
+    "vi": "EICAS",
+    "en": "EICAS"
+   },
+   {
+    "vi": "EFIS PED",
+    "en": "EFIS PED"
+   },
+   {
+    "vi": "FMS CDU",
+    "en": "FMS CDU"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ảnh có bàn phím chữ-số và các phím chọn dòng cạnh màn hình menu (CFDS, báo cáo hệ thống): đây là CDU của FMS, không phải màn hình EICAS hay bảng điều khiển EFIS. (Tooley tr.8, 15)",
+   "en": "The photo shows an alphanumeric keypad and line-select keys beside a menu screen (CFDS, system report): this is the FMS CDU, not an EICAS display or an EFIS control panel. (Tooley p.8, 15)"
+  },
+  "topic": {
+   "vi": "Buồng lái và dụng cụ cơ",
+   "en": "Cockpit and electromechanical instruments"
+  },
+  "topic_id": "cockpit",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q7",
+   "en": "Tooley Revision Paper 4 Q7"
+  },
+  "fig": "assets/figures/tooley_A2_15.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình LCD dùng loại nguồn nào:",
+   "en": "An LCD uses what type of power supply:"
+  },
+  "opts": [
+   {
+    "vi": "điện áp xoay chiều",
+    "en": "AC voltage"
+   },
+   {
+    "vi": "dòng một chiều giới hạn dòng",
+    "en": "current-limited DC current"
+   },
+   {
+    "vi": "điện áp một chiều giới hạn điện áp",
+    "en": "voltage-limited DC voltage"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "LCD được kích bằng điện áp xoay chiều; dòng một chiều làm tinh thể lỏng bị phân cực và suy giảm nhanh. (Tooley tr.1, 7)",
+   "en": "An LCD is driven by an AC voltage; direct current would polarise the liquid crystal and degrade it quickly. (Tooley p.1, 7)"
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q11",
+   "en": "Tooley Revision Paper 4 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên hệ EFIS, radar thời tiết được hiển thị trên:",
+   "en": "On an EFIS system the weather radar is displayed on:"
+  },
+  "opts": [
+   {
+    "vi": "EADI",
+    "en": "the EADI"
+   },
+   {
+    "vi": "EHSI",
+    "en": "the EHSI"
+   },
+   {
+    "vi": "CDU của FMC",
+    "en": "the FMC CDU"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Radar thời tiết phủ lên bản đồ điều hướng nên hiển thị trên EHSI (ND); EADI chỉ báo tư thế. (Tooley tr.12, 13)",
+   "en": "Weather radar is overlaid on the navigation map, so it appears on the EHSI (ND); the EADI shows attitude. (Tooley p.12, 13)"
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q15",
+   "en": "Tooley Revision Paper 4 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "So với LCD, màn hình CRT có ưu điểm là:",
+   "en": "When compared with an LCD, a CRT display offers the advantage that:"
+  },
+  "opts": [
+   {
+    "vi": "độ phân giải và độ nét tốt hơn",
+    "en": "the resolution and focus are better"
+   },
+   {
+    "vi": "có thể nhìn ở góc rộng",
+    "en": "it can be viewed over a large angle"
+   },
+   {
+    "vi": "dùng điện áp thấp và tiết kiệm năng lượng hơn",
+    "en": "it uses low voltages and is more energy efficient"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "CRT nhìn được ở góc rất rộng; LCD bị hạn chế góc nhìn. Điện áp thấp và tiết kiệm điện là ưu điểm của LCD. (Tooley tr.178, 179)",
+   "en": "A CRT can be viewed over a very wide angle whereas an LCD has a limited viewing angle; low voltage and energy saving favour the LCD. (Tooley p.178, 179)"
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q17",
+   "en": "Tooley Revision Paper 4 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tốc độ lên (rate of climb) được chỉ báo bởi:",
+   "en": "Rate of climb is indicated by the:"
+  },
+  "opts": [
+   {
+    "vi": "đồng hồ độ cao",
+    "en": "altimeter"
+   },
+   {
+    "vi": "HSI",
+    "en": "HSI"
+   },
+   {
+    "vi": "VSI",
+    "en": "VSI"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chỉ báo tốc độ thẳng đứng (VSI) cho tốc độ lên/xuống; đồng hồ độ cao chỉ độ cao, HSI chỉ hướng và dẫn đường. (Tooley tr.8, 21)",
+   "en": "The vertical speed indicator (VSI) shows rate of climb or descent; the altimeter shows height and the HSI shows heading and navigation. (Tooley p.8, 21)"
+  },
+  "topic": {
+   "vi": "Buồng lái và dụng cụ cơ",
+   "en": "Cockpit and electromechanical instruments"
+  },
+  "topic_id": "cockpit",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q1",
+   "en": "Tooley Revision Paper 5 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ thống điện tử hàng không nào có thể hiển thị dữ liệu động cơ:",
+   "en": "Which one of the following avionic systems is capable of displaying engine data:"
+  },
+  "opts": [
+   {
+    "vi": "AFCS",
+    "en": "AFCS"
+   },
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   },
+   {
+    "vi": "EICAS",
+    "en": "EICAS"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "EICAS (hệ chỉ báo động cơ và cảnh báo tổ lái) hiển thị thông số động cơ; AFCS là lái tự động, EADI là chỉ báo tư thế. (Tooley tr.8, 14)",
+   "en": "EICAS (engine indicating and crew alerting system) displays engine parameters; AFCS is the autopilot system and EADI the attitude indicator. (Tooley p.8, 14)"
+  },
+  "topic": {
+   "vi": "EICAS và ECAM",
+   "en": "EICAS and ECAM"
+  },
+  "topic_id": "ecam",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q2",
+   "en": "Tooley Revision Paper 5 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Màn hình LED cần:",
+   "en": "LED displays require:"
+  },
+  "opts": [
+   {
+    "vi": "nguồn một chiều điện áp thấp, dòng thấp",
+    "en": "low voltage, low current d.c. supplies"
+   },
+   {
+    "vi": "nguồn xoay chiều điện áp thấp, dòng lớn",
+    "en": "low voltage, high current a.c. supplies"
+   },
+   {
+    "vi": "nguồn một chiều điện áp cao, dòng thấp",
+    "en": "high voltage, low current d.c. supplies"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "LED là điốt phát quang: chạy bằng điện áp một chiều khoảng vài vôn và dòng vài chục mA, qua điện trở hạn dòng. (Tooley tr.12, 18)",
+   "en": "An LED is a light-emitting diode: it runs from a few volts d.c. and some tens of mA through a current-limiting resistor. (Tooley p.12, 18)"
+  },
+  "topic": {
+   "vi": "Công nghệ hiển thị: CRT, LCD, LED",
+   "en": "Display technology: CRT, LCD, LED"
+  },
+  "topic_id": "tech",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q15",
+   "en": "Tooley Revision Paper 7 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trên hệ EFIS, radar thời tiết được hiển thị trên:",
+   "en": "On an EFIS system the weather radar is displayed on the:"
+  },
+  "opts": [
+   {
+    "vi": "EADI",
+    "en": "EADI"
+   },
+   {
+    "vi": "EHSI",
+    "en": "EHSI"
+   },
+   {
+    "vi": "CDU của FMC",
+    "en": "FMC CDU"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Radar thời tiết phủ lên bản đồ điều hướng nên hiện trên EHSI. (Tooley tr.12, 13)",
+   "en": "Weather radar is overlaid on the navigation map and so appears on the EHSI. (Tooley p.12, 13)"
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q16",
+   "en": "Tooley Revision Paper 7 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "EHSI (chỉ báo tình huống nằm ngang điện tử) hiển thị thông tin nào?",
+   "en": "What information is displayed on an Electronic Horizontal Situation Indicator (EHSI)?"
+  },
+  "opts": [
+   {
+    "vi": "hướng (heading)",
+    "en": "Heading"
+   },
+   {
+    "vi": "đường trượt (glide slope)",
+    "en": "Glide slope"
+   },
+   {
+    "vi": "tốc độ lên",
+    "en": "Rate of climb"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "EHSI hiển thị hướng và dữ liệu dẫn đường; độ lệch đường trượt hiện trên EADI/PFD và tốc độ lên trên VSI. (Tooley tr.8, 9)",
+   "en": "The EHSI shows heading and navigation data; glide-slope deviation appears on the EADI/PFD and rate of climb on the VSI. (Tooley p.8, 9)"
+  },
+  "topic": {
+   "vi": "EFIS: PFD và ND",
+   "en": "EFIS: PFD and ND"
+  },
+  "topic_id": "efis",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q1",
+   "en": "Tooley Revision Paper 8 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hệ thống tạo điều kiện trao đổi dữ liệu giữa hãng khai thác và máy bay trong đội bay của họ được gọi là:",
+   "en": "A system that facilitates data exchange for airline operators to communicate with the aircraft in their fleet is known as:"
+  },
+  "opts": [
+   {
+    "vi": "hệ thống chỉ báo bay điện tử (EFIS)",
+    "en": "electronic flight instrument systems (EFIS)"
+   },
+   {
+    "vi": "hệ thống thiết bị và cảnh báo tổ lái (AICAS)",
+    "en": "aircraft instrumentation and crew alerting system (AICAS)"
+   },
+   {
+    "vi": "hệ thống địa chỉ và báo cáo liên lạc máy bay (ACARS)",
+    "en": "aircraft communication addressing and reporting system (ACARS)"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "ACARS là liên kết dữ liệu hai chiều giữa máy bay và hãng khai thác; EFIS là hiển thị buồng lái. (Tooley tr.238, 239)",
+   "en": "ACARS is the two-way data link between the aircraft and the operator; EFIS is a cockpit display system. (Tooley p.238, 239)"
+  },
+  "topic": {
+   "vi": "Bảo trì tập trung và ACARS",
+   "en": "Central maintenance and ACARS"
+  },
+  "topic_id": "cmc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q4",
+   "en": "Tooley Revision Paper 8 Q4"
+  }
+ }
+]

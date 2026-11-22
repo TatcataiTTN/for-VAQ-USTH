@@ -22,7 +22,9 @@ for ch, (tf, st, page) in F.CH.items():
         goc.append(item('tf', tid, lv, 'goc', vi, en, TFO, 0 if key == 'T' else 1, xv, xe, f'Floyd Ch.{ch} · Đúng/Sai {n} (khoá tr.{page})', f'Floyd Ch.{ch} · True/False {n} (key p.{page})'))
     for (n, vi, en, ops, c, xv, xe, lv) in st:
         tid = F.TOPIC[ch][n - 1]
-        goc.append(item('mcq', tid, lv, 'goc', vi, en, ops, c, xv, xe, f'Floyd Ch.{ch} · Self-Test {n} (khoá tr.{page})', f'Floyd Ch.{ch} · Self-Test {n} (key p.{page})'))
+        it_ = item('mcq', tid, lv, 'goc', vi, en, ops, c, xv, xe, f'Floyd Ch.{ch} · Self-Test {n} (khoá tr.{page})', f'Floyd Ch.{ch} · Self-Test {n} (key p.{page})')
+        if (ch, n) in F.FIG: it_['fig'] = F.FIG[(ch, n)]
+        goc.append(it_)
 
 # ---------------- cau sinh (bo_sung): moi dap an tinh bang seq.py ----------------
 gen = []; rng = random.Random(11)

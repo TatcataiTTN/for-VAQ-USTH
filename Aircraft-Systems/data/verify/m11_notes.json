@@ -5,8 +5,8 @@
   "Floyd Chương 10 Self-Test 9: khoá in (b) \"các cổng và một thanh ghi dịch\"; mục 10-2 mô tả macrocell gồm mảng AND-OR, bộ dồn kênh và flip-flop. Site dùng (a).",
   "Floyd Chương 8 Self-Test 5, 6, 9: lớp chữ PDF đọc micro giây (μs) thành \"ms\"; ảnh trang cho thấy đơn vị là μs (80 μs, 8 μs, 1 μs, 24 μs).",
   "Floyd Chương 10 Đúng/Sai 5 in \"FGPA\" thay cho FPGA (lỗi in).",
-  "Floyd Chương 8 Self-Test 10 (bộ đếm vòng trong mạch mã hoá bàn phím, Hình 8-36) chưa được đưa vào ngân hàng vì chưa kiểm hình; đây là việc CHƯA LÀM, không phải lỗi của sách.",
-  "Hệ số 1,44 của 555 dao động là 1/0,693 làm tròn: với R1 = 1 kΩ, R2 = 2 kΩ, C = 0,1 μF công thức cho 2 880 Hz còn 1/T = 2 857 Hz (lệch 0,8 %). Site dùng công thức Floyd cho tần số và 0,7 cho thời gian."
+  "Hệ số 1,44 của 555 dao động là 1/0,693 làm tròn: với R1 = 1 kΩ, R2 = 2 kΩ, C = 0,1 μF công thức cho 2 880 Hz còn 1/T = 2 857 Hz (lệch 0,8 %). Site dùng công thức Floyd cho tần số và 0,7 cho thời gian.",
+  "Floyd Chương 8 Self-Test 10 (Hình 8-36) đã đọc từ ảnh trang: khoá in (c) khớp văn bản mục 8-5 (bit 0 được dịch vòng, mức THẤP lần lượt vào từng hàng)."
  ],
  "en": [
   "Floyd Chapter 9 Self-Test 2: printed key (a) \"inputs\"; section 9-1 says a Mealy output depends on both the present state and the inputs, so the answer is (d) \"(a) and (c)\". The site uses (d).",
@@ -14,7 +14,7 @@
   "Floyd Chapter 10 Self-Test 9: printed key (b) \"gates and a shift register\"; section 10-2 describes the macrocell as an AND-OR array, multiplexers and a flip-flop. The site uses (a).",
   "Floyd Chapter 8 Self-Test 5, 6, 9: the PDF text layer reads microseconds (μs) as \"ms\"; the page image shows the unit is μs (80 μs, 8 μs, 1 μs, 24 μs).",
   "Floyd Chapter 10 True/False 5 prints \"FGPA\" for FPGA (a typo).",
-  "Floyd Chapter 8 Self-Test 10 (the ring counter in the keyboard encoder, Figure 8-36) is not in the bank because the figure has not been checked; this is NOT DONE, not an error of the book.",
-  "The 555 astable factor 1.44 is 1/0.693 rounded: with R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF the formula gives 2,880 Hz while 1/T = 2,857 Hz (0.8 % apart). The site uses Floyd's formula for frequency and 0.7 for times."
+  "The 555 astable factor 1.44 is 1/0.693 rounded: with R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF the formula gives 2,880 Hz while 1/T = 2,857 Hz (0.8 % apart). The site uses Floyd's formula for frequency and 0.7 for times.",
+  "Floyd Chapter 8 Self-Test 10 (Figure 8-36) was read from the page image: the printed key (c) agrees with the text of 8-5 (the 0 is rotated and a LOW is applied to each row in turn)."
  ]
 }

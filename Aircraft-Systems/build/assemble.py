@@ -95,6 +95,7 @@ def audit(items):
                                    correct_is_longest=round(longest / max(1, len(multi)), 3))
     return rep
 
+PUBLISHED = set(json.load(open(os.path.join(ROOT, 'data', 'published_ids.json')))) if os.path.exists(os.path.join(ROOT, 'data', 'published_ids.json')) else set()
 def main():
     os.makedirs(OUT, exist_ok=True); full = {}
     only = set(filter(None, os.environ.get('ONLY', '').split(',')))
@@ -125,11 +126,22 @@ def main():
             seen_ids[k] = it; it['_key'] = k; keep.append(it)
         items = keep; mcq = [i for i in items if i['kind'] != 'ess']; ess = [i for i in items if i['kind'] == 'ess']
         if dups: print(mid, 'merged duplicate questions:', len(dups))
+        # Already-published items keep their hash order (the browser stores the chosen option INDEX, so moving them would mis-grade saved answers).
+        # Items that were never published are placed so that the correct answer is spread evenly over the positions of its group (kind, number of options).
+        import collections
+        newq = []; cnt = collections.defaultdict(collections.Counter)
         for it in mcq:
             if it.get('fixed_order') or it['kind'] != 'mcq': continue
             n = len(it['opts']); rng = random.Random(int(it['_key'][:12], 16))
             perm = list(range(n)); rng.shuffle(perm)
-            it['opts'] = [it['opts'][i] for i in perm]; it['correct'] = perm.index(it['correct'])
+            if f'{mid}-{it["_key"][:8]}' in PUBLISHED or not PUBLISHED:
+                it['opts'] = [it['opts'][i] for i in perm]; it['correct'] = perm.index(it['correct']); cnt[n][it['correct']] += 1
+            else: newq.append((it, perm, n))
+        for it, perm, n in sorted(newq, key=lambda x: x[0]['_key']):
+            c = cnt[n]; low = min(c[p] for p in range(n)); cands = [p for p in range(n) if c[p] == low]
+            pos = cands[int(it['_key'][12:16], 16) % len(cands)]
+            order = [i for i in perm if i != it['correct']]; new_order = order[:pos] + [it['correct']] + order[pos:]
+            it['opts'] = [it['opts'][i] for i in new_order]; it['correct'] = pos; c[pos] += 1
         mcq.sort(key=lambda i: 0 if i['origin'] == 'goc' else 1)      # originals first, then generated; file (book) order kept inside a group (display order only; ids never depend on it)
         ess.sort(key=lambda i: 0 if i['origin'] == 'goc' else 1)
         for it in mcq: it['id'] = f'{mid}-{it["_key"][:8]}'

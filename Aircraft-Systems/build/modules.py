@@ -50,7 +50,7 @@ MODS = [
     dict(id='m03', slug='03-ic-multiplexing', vi='Mạch tích hợp (IC) và kỹ thuật dồn kênh', en='Integrated circuits and multiplexing', co=[], clo=['CLO2'], slides=[('icmux', 1, 60)], blank_slides=[],
          books=dict(tooley='Ch.8-9 (tr.139-164)', floyd='Ch.6 (tr.313-386); công nghệ IC: Ch.15'), status='live'),
     dict(id='m04', slug='04-computer-cpu', vi='Cấu trúc máy tính và vi xử lý (CPU)', en='Computer structure and microprocessors (CPU)', co=['CO4', 'CO5'], clo=['CLO3'], slides=[('cpu', 1, 52)], blank_slides=[],
-         books=dict(tooley='Ch.6-7 (tr.95-138)', floyd='Ch.11 Data Storage (tr.627-696)'), status='live'),
+         books=dict(tooley='Ch.6-7 (tr.95-138)', floyd='Ch.11 Data Storage (tr.627-696); Ch.14 Data Processing and Control (tr.802-853)'), status='live'),
     dict(id='m05', slug='05-data-buses', vi='Bus dữ liệu hàng không', en='Aircraft data buses', co=[], clo=['CLO3'], slides=[('bus', 1, 18)], blank_slides=[],
          books=dict(tooley='Ch.4 (tr.53-69)', floyd='Ch.13 §13-6 đến 13-10 (bus chung, không phải bus hàng không)'), status='live'),
     dict(id='m06', slug='06-electronic-displays', vi='Màn hình điện tử và hệ thống thông tin buồng lái', en='Electronic displays and flight deck information systems', co=[], clo=['CLO1'], slides=[('disp', 1, 36)], blank_slides=[],

@@ -441,7 +441,8 @@
   "src": {
    "vi": "Tooley Revision Paper 2 Q5",
    "en": "Tooley Revision Paper 2 Q5"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_5.png"
  },
  {
   "kind": "mcq",
@@ -478,7 +479,8 @@
   "src": {
    "vi": "Tooley Revision Paper 2 Q6",
    "en": "Tooley Revision Paper 2 Q6"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_6.png"
  },
  {
   "kind": "mcq",
@@ -515,7 +517,8 @@
   "src": {
    "vi": "Tooley Revision Paper 2 Q11",
    "en": "Tooley Revision Paper 2 Q11"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_9.png"
  },
  {
   "kind": "mcq",
@@ -663,7 +666,8 @@
   "src": {
    "vi": "Tooley Revision Paper 3 Q6",
    "en": "Tooley Revision Paper 3 Q6"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_13.png"
  },
  {
   "kind": "mcq",
@@ -701,7 +705,8 @@
    "vi": "Tooley Revision Paper 3 Q12",
    "en": "Tooley Revision Paper 3 Q12"
   },
-  "fixed_order": true
+  "fixed_order": true,
+  "fig": "assets/figures/tooley_A2_14.png"
  },
  {
   "kind": "mcq",
@@ -775,13 +780,14 @@
   "src": {
    "vi": "Tooley Revision Paper 4 Q13",
    "en": "Tooley Revision Paper 4 Q13"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_16.png"
  },
  {
   "kind": "mcq",
   "q": {
-   "vi": "Mạch gồm 2 cổng đảo (A,B) rồi đưa vào 1 cổng NAND (Hình A2.17) tương đương với:",
-   "en": "The logic arrangement of two inverters feeding a NAND gate (Figure A2.17) is equivalent to:"
+   "vi": "Sắp xếp logic gồm hai cổng đảo (cho A và B) nối vào một cổng NOR (Hình A2.17) tương đương với:",
+   "en": "The logic arrangement shown in Figure A2.17 (two inverters feeding a NOR gate) is equivalent to:"
   },
   "opts": [
    {
@@ -797,10 +803,10 @@
     "en": "NAND gate"
    }
   ],
-  "correct": 1,
+  "correct": 0,
   "explain": {
-   "vi": "NAND(A',B')=(A'B')'=A+B (De Morgan) = cổng OR.",
-   "en": "NAND(A',B') = (A'B')' = A+B (De Morgan) = an OR gate."
+   "vi": "Hai cổng đảo cho A' và B', rồi cổng NOR (thân dạng OR có bong bóng): NOR(A',B') = (A'+B')' = A·B (De Morgan): cổng AND. Khoá in (b).",
+   "en": "Two inverters give A' and B', then a NOR gate (OR-shaped body with a bubble): NOR(A',B') = (A'+B')' = A·B (De Morgan): an AND gate. Printed key (b)."
   },
   "topic": {
    "vi": "Luật Boolean và De Morgan",
@@ -812,12 +818,13 @@
   "src": {
    "vi": "Tooley Revision Paper 4 Q18",
    "en": "Tooley Revision Paper 4 Q18"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_17.png"
  },
  {
   "kind": "mcq",
   "q": {
-   "vi": "Thiết bị logic trong Hình A2.19 (IC 14 chân, 4 cổng 2 đầu vào dạng OR có bong bóng đảo) là:",
+   "vi": "Thiết bị logic trong Hình A2.19 (IC 14 chân, 4 cổng 2 đầu vào có bong bóng đảo ở đầu ra) là:",
    "en": "The logic device shown in Figure A2.19 is:"
   },
   "opts": [
@@ -834,10 +841,10 @@
     "en": "quad two-input NAND gates"
    }
   ],
-  "correct": 1,
+  "correct": 2,
   "explain": {
-   "vi": "4 cổng, mỗi cổng hình OR có vòng tròn đảo ở đầu ra = NOR: đúng dạng 'quad two-input NOR gate'.",
-   "en": "4 gates, each an OR shape with an inversion bubble on the output = NOR: this matches 'quad two-input NOR gate'."
+   "vi": "Bốn cổng có thân dạng AND (mặt vào phẳng) và vòng tròn đảo ở đầu ra: NAND. Kiểm tra sơ đồ chân: các cặp đầu vào ở chân 1-2, 4-5, 9-10, 12-13, đầu ra ở chân 3, 6, 8, 11 đúng là chip 7400 (4 cổng NAND 2 đầu vào); chip NOR 7402 có đầu ra ở chân 1, 4, 10, 13. Khoá in (b).",
+   "en": "The four gates have AND-shaped bodies (flat input side) with an output bubble: NAND. Pin-out check: input pairs on pins 1-2, 4-5, 9-10 and 12-13 and outputs on pins 3, 6, 8 and 11 is exactly the 7400 quad two-input NAND; the 7402 NOR has its outputs on pins 1, 4, 10 and 13. Printed key (b)."
   },
   "topic": {
    "vi": "Cổng logic và bảng chân trị",
@@ -849,7 +856,8 @@
   "src": {
    "vi": "Tooley Revision Paper 5 Q6",
    "en": "Tooley Revision Paper 5 Q6"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_19.png"
  },
  {
   "kind": "mcq",
@@ -923,7 +931,8 @@
   "src": {
    "vi": "Tooley Revision Paper 6 Q4",
    "en": "Tooley Revision Paper 6 Q4"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_20.png"
  },
  {
   "kind": "mcq",
@@ -960,7 +969,8 @@
   "src": {
    "vi": "Tooley Revision Paper 6 Q7",
    "en": "Tooley Revision Paper 6 Q7"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_21.png"
  },
  {
   "kind": "mcq",
@@ -997,7 +1007,8 @@
   "src": {
    "vi": "Tooley Revision Paper 6 Q8",
    "en": "Tooley Revision Paper 6 Q8"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_22.png"
  },
  {
   "kind": "mcq",
@@ -1034,7 +1045,8 @@
   "src": {
    "vi": "Tooley Revision Paper 6 Q9",
    "en": "Tooley Revision Paper 6 Q9"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_23.png"
  },
  {
   "kind": "mcq",
@@ -1108,7 +1120,8 @@
   "src": {
    "vi": "Tooley Revision Paper 7 Q5",
    "en": "Tooley Revision Paper 7 Q5"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_25.png"
  },
  {
   "kind": "mcq",
@@ -1183,7 +1196,8 @@
   "src": {
    "vi": "Tooley Revision Paper 7 Q19",
    "en": "Tooley Revision Paper 7 Q19"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_27.png"
  },
  {
   "kind": "mcq",

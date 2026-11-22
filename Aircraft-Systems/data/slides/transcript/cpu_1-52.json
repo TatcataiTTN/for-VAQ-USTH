@@ -41,8 +41,7 @@
    "numbers": [
     "25 + 10 = 35"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 4,
@@ -67,8 +66,7 @@
    "numbers": [
     "25 + 10 = 35"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 6,
@@ -82,8 +80,7 @@
    ],
    "issues": [
     "Số minh hoạ: đoạn giả mã (ALT < 100 thì FLARE) và bảng tham số (hệ số luật điều khiển 0,85, giới hạn chúc ngóc 15 độ, giới hạn nghiêng 30 độ, độ cao flare 100 ft, bảo vệ góc tấn ON) là ví dụ trên slide, không phải thông số thật của A320."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 7,
@@ -142,8 +139,7 @@
     "CD khoảng 700 MB; DVD 4,7 GB; Blu-ray khoảng 25 GB",
     "HDD 1 TB đến 20 TB; SSD 256 GB đến 8 TB"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 12,
@@ -189,8 +185,7 @@
     "bus địa chỉ ví dụ 32 hoặc 64 bit; bus dữ liệu 8, 16, 32 hoặc 64 bit",
     "địa chỉ ví dụ 0x1000"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 16,
@@ -223,8 +218,7 @@
    ],
    "issues": [
     "Đã kiểm: 1111 1111 (nhị phân) = 255."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 18,
@@ -318,8 +312,7 @@
    "issues": [
     "Lỗi nhãn: hộp thứ ba trong chuỗi phân cấp cũng ghi \"L2 cache (on chip)\" (khoảng 20 đến 40 chu kỳ); theo phần Key points ngay trên slide (\"L1, L2, and L3\") đó phải là L3.",
     "Số minh hoạ: số chu kỳ trên slide chỉ là cỡ độ lớn, không nêu nguồn."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 25,
@@ -453,8 +446,7 @@
    ],
    "issues": [
     "Đã kiểm: bus địa chỉ 16 bit định địa chỉ 2^16 = 65536 byte = 64 KB."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 37,
@@ -482,8 +474,7 @@
    "issues": [
     "Nghi vấn: các mã 3E 05, 06 03 và 80 trùng mã máy của 8085 cho MVI A,05H, MVI B,03H và ADD B, nhưng slide gọi là \"MOV A, 05H\", \"MOV B, 03H\" và \"ADD A, B\", không đúng ký hiệu của 8085.",
     "Không nhất quán: hình bộ nhớ đặt Instruction 1, 2, 3 ở địa chỉ 0000, 0001, 0002, còn bảng ví dụ đặt ba lệnh (hai byte, hai byte, một byte) ở 0000, 0002, 0004."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 39,
@@ -522,8 +513,7 @@
    ],
    "issues": [
     "Đã kiểm: 1010 (10) + 0111 (7) = 10001 (17); bốn phép tính số học và năm kết quả logic trong bảng đều đúng."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 42,
@@ -574,8 +564,7 @@
    ],
    "issues": [
     "Đã kiểm: 25 + 17 = 42."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 46,
@@ -590,8 +579,7 @@
    "issues": [
     "Lỗi: khung giữa ghi \"General-purpose registers of Intel 8085\" nhưng liệt kê AX, BX, CX, DX, BP, SI, DI là bộ thanh ghi của Intel 8086; 8085 có các thanh ghi A, B, C, D, E, H, L, SP và PC, đúng như sơ đồ bên trái và ví dụ lệnh trên chính slide này.",
     "Đã kiểm: 05H + 03H = 08H."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 47,

@@ -1,0 +1,113 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ứng dụng phần mềm máy bay nào sau đây có mức độ quan trọng (criticality) cao nhất:",
+   "en": "Which one of the following aircraft software applications has the highest level of criticality:"
+  },
+  "opts": [
+   {
+    "vi": "DME",
+    "en": "DME"
+   },
+   {
+    "vi": "GPS",
+    "en": "GPS"
+   },
+   {
+    "vi": "WXR",
+    "en": "WXR"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bảng 13.2: dẫn đường vệ tinh (GPS) ở mức B, DME ở mức C, radar thời tiết (WXR) ở mức D; mức B quan trọng hơn C và D. (Tooley tr.209)",
+   "en": "Table 13.2: satellite navigation (GPS) is level B, DME level C and weather radar (WXR) level D; B is more critical than C and D. (Tooley p.209)"
+  },
+  "topic": {
+   "vi": "Mức nghiêm trọng A đến E",
+   "en": "Severity levels A to E"
+  },
+  "topic_id": "levels",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q11",
+   "en": "Tooley Revision Paper 5 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các phương pháp thông dụng để kiểm tra tệp dữ liệu dựa trên:",
+   "en": "Common methods of verifying data files are based on:"
+  },
+  "opts": [
+   {
+    "vi": "bộ mã hoá và giải mã ưu tiên",
+    "en": "priority encoders and decoders"
+   },
+   {
+    "vi": "hệ giám sát kiểm tra lỗi",
+    "en": "error checking monitoring systems"
+   },
+   {
+    "vi": "tổng kiểm tra và kiểm tra dư thừa vòng (CRC)",
+    "en": "checksums and cyclic redundancy checks"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Tệp dữ liệu và phần mềm nạp được kiểm bằng tổng kiểm tra (checksum) và CRC; bộ mã hoá ưu tiên không dùng cho việc này. (Tooley tr.216, 271)",
+   "en": "Loadable data files are verified with checksums and cyclic redundancy checks; priority encoders play no part. (Tooley p.216, 271)"
+  },
+  "topic": {
+   "vi": "Toàn vẹn dữ liệu: parity, checksum",
+   "en": "Data integrity: parity, checksum, CRC"
+  },
+  "topic_id": "integrity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q18",
+   "en": "Tooley Revision Paper 7 Q18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Các khía cạnh phần mềm của hệ thống máy bay phải được bảo đảm là an toàn và đủ điều kiện bay. Quá trình này được gọi là:",
+   "en": "Software aspects of an aircraft system must be assured to be safe and airworthy. This process is known as:"
+  },
+  "opts": [
+   {
+    "vi": "phê duyệt",
+    "en": "approval"
+   },
+   {
+    "vi": "đánh giá",
+    "en": "evaluation"
+   },
+   {
+    "vi": "chứng nhận",
+    "en": "certification"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Quá trình bảo đảm phần mềm an toàn và đủ điều kiện bay là chứng nhận (certification) theo DO-178B/ED-12B. (Tooley tr.207)",
+   "en": "The process of assuring that software is safe and airworthy is certification under DO-178B/ED-12B. (Tooley p.207)"
+  },
+  "topic": {
+   "vi": "DO-178B/C và truy vết",
+   "en": "DO-178B/C and traceability"
+  },
+  "topic_id": "do178",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q16",
+   "en": "Tooley Revision Paper 8 Q16"
+  }
+ }
+]

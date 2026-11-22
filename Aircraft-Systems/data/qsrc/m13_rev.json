@@ -1,0 +1,299 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách phân bổ băng thông (BAG) tối đa cho một liên kết ảo cấp 250 thông điệp mỗi giây là bao nhiêu:",
+   "en": "What is the maximum bandwidth allocation gap for a virtual link that supplies messages at a rate of 250 per second:"
+  },
+  "opts": [
+   {
+    "vi": "2 ms",
+    "en": "2 ms"
+   },
+   {
+    "vi": "4 ms",
+    "en": "4 ms"
+   },
+   {
+    "vi": "8 ms",
+    "en": "8 ms"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "250 thông điệp/s nghĩa là chu kỳ 1/250 = 4 ms. BAG phải ≤ chu kỳ này và là luỹ thừa của 2 ms (1, 2, 4, 8, … 128 ms): lớn nhất là 4 ms. (Tooley tr.269, 270)",
+   "en": "250 messages per second is a period of 1/250 = 4 ms. The BAG must not exceed it and must be a power of two in ms (1, 2, 4, 8 … 128 ms): the largest is 4 ms. (Tooley p.269, 270)"
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q16",
+   "en": "Tooley Revision Paper 5 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạng trong Hình A2.24 (năm nút nối thành vòng kín) thuộc loại nào:",
+   "en": "What type of network is shown in Figure A2.24:"
+  },
+  "opts": [
+   {
+    "vi": "bus",
+    "en": "bus"
+   },
+   {
+    "vi": "vòng (ring)",
+    "en": "ring"
+   },
+   {
+    "vi": "sao (star)",
+    "en": "star"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Các nút nối thành một vòng khép kín, mỗi nút nối với hai nút lân cận: cấu trúc vòng. Bus là một đường chung, sao có nút trung tâm. (Tooley tr.3, 8)",
+   "en": "The nodes are joined in a closed loop, each linked to its two neighbours: a ring. A bus is one shared line and a star has a central hub. (Tooley p.3, 8)"
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q14",
+   "en": "Tooley Revision Paper 6 Q14"
+  },
+  "fig": "assets/figures/tooley_A2_24.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "AFDX được định nghĩa trong:",
+   "en": "AFDX is defined in:"
+  },
+  "opts": [
+   {
+    "vi": "ARINC 429",
+    "en": "ARINC 429"
+   },
+   {
+    "vi": "ARINC 573",
+    "en": "ARINC 573"
+   },
+   {
+    "vi": "ARINC 664",
+    "en": "ARINC 664"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "AFDX là cách triển khai của ARINC 664 (phần 7) trên nền Ethernet IEEE 802.3. (Tooley tr.265)",
+   "en": "AFDX is an implementation of ARINC 664 (Part 7) on IEEE 802.3 Ethernet. (Tooley p.265)"
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q15",
+   "en": "Tooley Revision Paper 6 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong bộ chuyển mạch AFDX, mỗi hệ thống đầu cuối được nối bằng:",
+   "en": "Within an AFDX switch each end system is connected by means of:"
+  },
+  "opts": [
+   {
+    "vi": "cáp bus dùng chung và bộ đệm RX, TX dùng chung",
+    "en": "shared bus cables and shared RX and TX buffers"
+   },
+   {
+    "vi": "cáp riêng và bộ đệm RX, TX dùng chung",
+    "en": "individual bus cables and shared RX and TX buffers"
+   },
+   {
+    "vi": "cáp riêng và bộ đệm RX, TX riêng biệt",
+    "en": "individual bus cables and separate RX and TX buffers"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Mỗi đầu cuối có liên kết song công riêng (cặp Tx và cặp Rx) và bộ đệm nhận, bộ đệm gửi riêng trong chuyển mạch, nên không có xung đột. (Tooley tr.265, 267)",
+   "en": "Each end system has its own full-duplex link (Tx and Rx pairs) and its own receive and transmit buffers in the switch, so there are no collisions. (Tooley p.265, 267)"
+  },
+  "topic": {
+   "vi": "AFDX, liên kết ảo và băng thông",
+   "en": "AFDX, virtual links and bandwidth"
+  },
+  "topic_id": "afdx",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q16",
+   "en": "Tooley Revision Paper 6 Q16"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phần cuối cùng của một khung AFDX chứa:",
+   "en": "The last part of an AFDX frame contains:"
+  },
+  "opts": [
+   {
+    "vi": "địa chỉ MAC nguồn và đích và định danh VL",
+    "en": "the MAC start and destination addresses and VL identifier"
+   },
+   {
+    "vi": "tải trọng AFDX và số thứ tự",
+    "en": "the AFDX payload and sequence number"
+   },
+   {
+    "vi": "chuỗi kiểm tra khung và mã kiểm tra",
+    "en": "the frame check sequence and checksum"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Khung Ethernet/AFDX kết thúc bằng chuỗi kiểm tra khung (FCS, CRC 32 bit); địa chỉ và VL ID ở đầu khung, tải trọng và số thứ tự ở giữa. (Tooley tr.271, 341)",
+   "en": "An Ethernet/AFDX frame ends with the frame check sequence (a 32-bit CRC); the addresses and VL identifier are at the start and the payload and sequence number in the middle. (Tooley p.271, 341)"
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q19",
+   "en": "Tooley Revision Paper 6 Q19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khoảng cách giữa các khung (inter-frame gap) trong AFDX tương đương với:",
+   "en": "The inter-frame gap in AFDX is equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "17 chu kỳ bit",
+    "en": "17-bit periods"
+   },
+   {
+    "vi": "31 chu kỳ bit",
+    "en": "31-bit periods"
+   },
+   {
+    "vi": "96 chu kỳ bit",
+    "en": "96-bit periods"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ethernet quy định khoảng nghỉ giữa các khung bằng thời gian của 96 bit. (Tooley tr.271, 273)",
+   "en": "Ethernet specifies an idle gap between frames equal to 96 bit times. (Tooley p.271, 273)"
+  },
+  "topic": {
+   "vi": "Khung AFDX và độ tin cậy",
+   "en": "The AFDX frame and reliability"
+  },
+  "topic_id": "frame",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q20",
+   "en": "Tooley Revision Paper 6 Q20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giao diện dữ liệu phân bố sợi quang (FDDI) hoạt động ở tốc độ dữ liệu:",
+   "en": "The fibre distributed data interface (FDDI) operates at a data rate of:"
+  },
+  "opts": [
+   {
+    "vi": "1 Mbps",
+    "en": "1 Mbps"
+   },
+   {
+    "vi": "10 Mbps",
+    "en": "10 Mbps"
+   },
+   {
+    "vi": "100 Mbps",
+    "en": "100 Mbps"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "FDDI là mạng vòng sợi quang tốc độ 100 Mbps. (Tooley tr.67, 69)",
+   "en": "FDDI is a fibre-optic ring network running at 100 Mbps. (Tooley p.67, 69)"
+  },
+  "topic": {
+   "vi": "Mạng cục bộ (LAN) và Ethernet",
+   "en": "Local area networks (LAN) and Ethernet"
+  },
+  "topic_id": "lan",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q9",
+   "en": "Tooley Revision Paper 7 Q9"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong máy bay IMA, các ứng dụng điện tử hàng không riêng lẻ được:",
+   "en": "In an IMA-based aircraft, individual avionics applications are:"
+  },
+  "opts": [
+   {
+    "vi": "đặt trên một tài nguyên tính toán dùng chung",
+    "en": "hosted on a shared computing resource"
+   },
+   {
+    "vi": "nằm trên phần cứng riêng biệt",
+    "en": "resident on dedicated hardware systems"
+   },
+   {
+    "vi": "tích hợp vào hệ điều hành thời gian thực",
+    "en": "integrated within the real-time operating system"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "IMA thay các hộp riêng (LRU) bằng các mô-đun tính toán dùng chung; mỗi ứng dụng chạy trong phân vùng riêng trên tài nguyên chung. (Tooley tr.294, 295)",
+   "en": "IMA replaces dedicated boxes (LRUs) with shared computing modules; each application runs in its own partition on the common resource. (Tooley p.294, 295)"
+  },
+  "topic": {
+   "vi": "Avionics mô-đun tích hợp (IMA)",
+   "en": "Integrated modular avionics (IMA)"
+  },
+  "topic_id": "ima",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q10",
+   "en": "Tooley Revision Paper 8 Q10"
+  }
+ }
+]

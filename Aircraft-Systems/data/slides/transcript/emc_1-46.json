@@ -100,8 +100,7 @@
     "vô tuyến 1000 V/m ở 1 m",
     "động cơ 50 V/m ở 10 cm"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 9,
@@ -126,8 +125,7 @@
    "numbers": [],
    "issues": [
     "Dạng chuỗi trên slide (và Tooley 14.1.2) là dạng tỉ lệ đã đơn giản hoá: biên độ hài cơ bản của sóng vuông biên độ V thật là 4V/pi, nên V trong công thức phải hiểu là biên độ hài cơ bản."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 11,
@@ -140,8 +138,7 @@
     "sét đỉnh 10 đến 200 kA",
     "ESD tăng khoảng 1 ns"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 12,
@@ -165,8 +162,7 @@
     "L_A = 20 log10(A2/A1)"
    ],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 14,
@@ -189,8 +185,7 @@
     "L = 20 log10(V2/V1)"
    ],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 16,
@@ -229,8 +224,7 @@
     "dBmV = 20 log(V/1 mV)"
    ],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 19,
@@ -269,8 +263,7 @@
    "issues": [
     "LỖI SLIDE (đã xác nhận ở Module 09): bài 2 in \"P_out = 10000 W (10 kW)\" trong khi phép tính ngay phía trên ra 100.000 W: 10 W x 10^4 = 100.000 W = 100 kW.",
     "Đã kiểm: 10^(-2/20) = 0,794; -20 + 30 = 10 dBm = 10 mW; 34 - 2 = 32 dBuA."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 22,
@@ -327,8 +320,7 @@
     "30 dBuV/m (30 đến 230 MHz)",
     "37 dBuV/m (trên 230 MHz)"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 27,
@@ -418,8 +410,7 @@
     "Z_C = 1/(jwC)"
    ],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 35,
@@ -431,8 +422,7 @@
    "numbers": [
     "0,1 uF; 1 uF; 10 uF"
    ],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 36,
@@ -445,8 +435,7 @@
     "f_r = 1/(2 pi sqrt(LC))"
    ],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 37,
@@ -513,8 +502,7 @@
     "V = L di/dt"
    ],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 43,
@@ -528,8 +516,7 @@
    ],
    "issues": [
     "Không khớp (đã ghi ở Module 09): yêu cầu 0,001 đến 0,003 ohm ở slide này, nhưng slide 45 ghi yêu cầu dưới 2,5 mohm và hình đo hiện 0,003 ohm."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 44,
@@ -554,8 +541,7 @@
    ],
    "issues": [
     "LỖI SLIDE (đã ghi ở Module 09): thiết bị đo hiện 0,003 ohm tức 3 mohm, lớn hơn yêu cầu 2,5 mohm ghi trên chính slide này, tức không đạt theo tiêu chí của slide; slide 43 lại ghi 0,001 đến 0,003 ohm."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 46,

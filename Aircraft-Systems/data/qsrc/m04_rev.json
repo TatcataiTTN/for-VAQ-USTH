@@ -1,0 +1,76 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một nhóm bit được truyền đi cùng lúc được gọi là:",
+   "en": "A group of bits transmitted at the same time is referred to as:"
+  },
+  "opts": [
+   {
+    "vi": "tín hiệu xung nhịp",
+    "en": "a clock signal"
+   },
+   {
+    "vi": "dữ liệu song song",
+    "en": "parallel data"
+   },
+   {
+    "vi": "dữ liệu nối tiếp",
+    "en": "serial data"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Truyền song song gửi nhiều bit đồng thời trên nhiều đường; truyền nối tiếp gửi từng bit một. (Tooley tr.54)",
+   "en": "Parallel transmission sends several bits at once on several lines; serial sends them one at a time. (Tooley p.54)"
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q15",
+   "en": "Tooley Revision Paper 2 Q15"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ví dụ về thiết bị lưu trữ khối \"ghi một lần, đọc nhiều lần\" là:",
+   "en": "An example of a \"write once and read many\" mass storage device is:"
+  },
+  "opts": [
+   {
+    "vi": "CD-ROM",
+    "en": "a CD-ROM"
+   },
+   {
+    "vi": "đĩa mềm",
+    "en": "a floppy disk"
+   },
+   {
+    "vi": "RAM động",
+    "en": "a dynamic RAM"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Đĩa quang chỉ ghi được một lần rồi đọc nhiều lần (WORM); đĩa mềm ghi xoá được và RAM động mất dữ liệu khi mất nguồn.",
+   "en": "An optical disc is written once and read many times (WORM); a floppy disk is rewritable and dynamic RAM loses its data when power is removed."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q3",
+   "en": "Tooley Revision Paper 4 Q3"
+  }
+ }
+]

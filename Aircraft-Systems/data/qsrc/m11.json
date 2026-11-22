@@ -1533,6 +1533,48 @@
   }
  },
  {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mục đích của bộ đếm vòng (ring counter) trong mạch mã hoá bàn phím ở Hình 8–36 là:",
+   "en": "The purpose of the ring counter in the keyboard encoding circuit of Figure 8–36 is"
+  },
+  "opts": [
+   {
+    "vi": "lần lượt đưa mức CAO vào từng hàng để phát hiện phím đóng",
+    "en": "to sequentially apply a HIGH to each row for detection of key closure"
+   },
+   {
+    "vi": "cấp xung kích cho thanh ghi mã phím",
+    "en": "to provide trigger pulses for the key code register"
+   },
+   {
+    "vi": "lần lượt đưa mức THẤP vào từng hàng để phát hiện phím đóng",
+    "en": "to sequentially apply a LOW to each row for detection of key closure"
+   },
+   {
+    "vi": "lần lượt phân cực ngược các điốt ở mỗi hàng",
+    "en": "to sequentially reverse bias the diodes in each row"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bộ đếm vòng được nạp sẵn bảy bit 1 và một bit 0 rồi dịch bit 0 theo xung 5 kHz: mức THẤP lần lượt xuất hiện trên từng dòng hàng (các hàng khác ở mức cao). Khi có phím đóng, cột tương ứng bị kéo xuống thấp đúng lúc hàng của nó ở mức thấp (Floyd 8-5, tr.476).",
+   "en": "The ring counter is preset with seven 1s and one 0 and the 0 is shifted at 5 kHz: a LOW appears on each ROW line in turn while the others stay HIGH. When a key is closed the column is pulled LOW just as its row goes LOW (Floyd 8-5, p.476)."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Self-Test 10 (khoá tr.495)",
+   "en": "Floyd Ch.8 · Self-Test 10 (key p.495)"
+  },
+  "fig": "assets/figures/floyd_8_36.png"
+ },
+ {
   "kind": "tf",
   "q": {
    "vi": "Máy trạng thái là mạch tuần tự có số trạng thái hữu hạn xuất hiện theo thứ tự quy định.",

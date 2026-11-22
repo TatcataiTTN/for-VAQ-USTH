@@ -1,0 +1,115 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch tích hợp trong Hình A2.3 được cung cấp trong vỏ:",
+   "en": "The integrated circuit shown in Figure A2.3 is supplied in a:"
+  },
+  "opts": [
+   {
+    "vi": "vỏ DIL",
+    "en": "DIL package"
+   },
+   {
+    "vi": "vỏ PGA",
+    "en": "PGA package"
+   },
+   {
+    "vi": "vỏ PLCC",
+    "en": "PLCC package"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chip vuông với chân chữ J cuộn dưới thân ở cả bốn cạnh là vỏ PLCC; DIL có hai hàng chân thẳng, PGA có lưới chân dưới đáy. (Tooley tr.104, 128)",
+   "en": "A square chip with J-leads curled under all four sides is a PLCC; a DIL has two rows of straight pins and a PGA has a grid of pins underneath. (Tooley p.104, 128)"
+  },
+  "topic": {
+   "vi": "Khái niệm chung về IC",
+   "en": "General IC concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q15",
+   "en": "Tooley Revision Paper 1 Q15"
+  },
+  "fig": "assets/figures/tooley_A2_3.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "ALU là một ví dụ của:",
+   "en": "An ALU is an example of:"
+  },
+  "opts": [
+   {
+    "vi": "công nghệ LSI",
+    "en": "LSI technology"
+   },
+   {
+    "vi": "công nghệ MSI",
+    "en": "MSI technology"
+   },
+   {
+    "vi": "công nghệ SSI",
+    "en": "SSI technology"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ALU chứa hàng trăm đến vài nghìn cổng: mật độ tích hợp quy mô lớn (LSI); bộ cộng, bộ mã hoá thuộc MSI, cổng đơn thuộc SSI. (Tooley tr.95, 109)",
+   "en": "An ALU holds hundreds to thousands of gates: large-scale integration (LSI); adders and encoders are MSI and single gates are SSI. (Tooley p.95, 109)"
+  },
+  "topic": {
+   "vi": "Quy mô tích hợp SSI đến VLSI",
+   "en": "Integration scale SSI to VLSI"
+  },
+  "topic_id": "scale",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q18",
+   "en": "Tooley Revision Paper 1 Q18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Sắp xếp logic trong Hình A2.18 (hai cổng đảo cho A và B, các cổng AND chọn theo tổ hợp A, B và các đường dữ liệu, rồi một cổng OR ra Y) hoạt động như:",
+   "en": "The logic arrangement shown in Figure A2.18 acts as:"
+  },
+  "opts": [
+   {
+    "vi": "bộ giải mã",
+    "en": "a decoder"
+   },
+   {
+    "vi": "bộ dồn kênh (multiplexer)",
+    "en": "a multiplexer"
+   },
+   {
+    "vi": "thanh ghi dịch",
+    "en": "a shift register"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "A và B (cùng dạng đảo) làm đầu vào chọn; mỗi cổng AND cho qua một đường dữ liệu khi tổ hợp chọn tương ứng, cổng OR gộp lại thành một đầu ra Y: đó là bộ dồn kênh. Bộ giải mã có nhiều đầu ra, thanh ghi dịch cần phần tử nhớ. (Tooley tr.101, 102)",
+   "en": "A and B (true and inverted) are the select inputs; each AND gate passes one data line for its select code and the OR gate merges them into one output Y: a multiplexer. A decoder has many outputs and a shift register needs memory elements. (Tooley p.101, 102)"
+  },
+  "topic": {
+   "vi": "Bộ dồn kênh và phân kênh",
+   "en": "Multiplexers and demultiplexers"
+  },
+  "topic_id": "mux",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q19",
+   "en": "Tooley Revision Paper 4 Q19"
+  },
+  "fig": "assets/figures/tooley_A2_18.png"
+ }
+]

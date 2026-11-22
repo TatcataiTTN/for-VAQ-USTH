@@ -60,6 +60,21 @@ with sync_playwright() as pw:
         pg.goto(BASE + f"{lang}/exam/run.html?exam=module-m11"); pg.wait_for_selector("#exam .panel .btn"); pg.click("#exam .panel .btn"); pg.wait_for_selector(".opt")
         o1 = pg.evaluate("[...document.querySelectorAll('.opt')].map(b=>b.textContent).join('|')"); st = pg.evaluate("JSON.parse(sessionStorage.getItem(Object.keys(sessionStorage).find(k=>k.startsWith('examrun:')))).perm.length")
         check(f"{lang}: moi lan lam co hoan vi lua chon luu theo cau ({st} cau)", st == 15 and "|" in o1)
+        # --- 8 de Tooley Revision Papers: du 20 cau moi de, hinh hien dung
+        revs = [p for p in data["papers"] if p["type"] == "tooley"]
+        check(f"{lang}: co du 8 de Tooley Revision Papers, moi de 20 cau", [p["id"] for p in revs] == [f"rev-{i}" for i in range(1, 9)] and all(len(p["ids"]) == 20 for p in revs), [(p["id"], len(p["ids"])) for p in revs])
+        pq = {q["id"]: q for q in data["pool"]}; nfig = sum(1 for p in revs for i in p["ids"] if "f" in pq[i])
+        check(f"{lang}: cac de Tooley co hinh ({nfig} cau)", nfig >= 25, nfig)
+        pg.goto(BASE + f"{lang}/exam/run.html?exam=rev-2"); pg.wait_for_selector("#exam .panel .btn"); pg.click("#exam .panel .btn"); pg.wait_for_selector(".exambar")
+        shown = 0; broken = 0
+        for i in range(20):
+            pg.wait_for_selector(".opt")
+            pg.wait_for_function("()=>{const im=document.querySelector('.qfig');return !im||im.complete}", timeout=5000)
+            r = pg.evaluate("(()=>{const im=document.querySelector('.qfig');return im?(im.complete&&im.naturalWidth>0?1:-1):0})()")
+            shown += r == 1; broken += r == -1
+            pg.keyboard.press("a"); pg.keyboard.press("ArrowRight")
+        check(f"{lang}: de rev-2 hien {shown} hinh, khong hinh hong ({broken})", shown >= 8 and broken == 0, (shown, broken))
+        pg.wait_for_selector("text=/Kết quả|Result/", timeout=8000)
         # --- de tu luan
         pg.goto(BASE + f"{lang}/exam/run.html?exam=written-A"); pg.wait_for_selector("#exam .panel .btn"); pg.click("#exam .panel .btn")
         pg.wait_for_selector("textarea"); nw = pg.evaluate("document.querySelectorAll('textarea').length")

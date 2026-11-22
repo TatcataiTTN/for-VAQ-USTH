@@ -1,0 +1,224 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiểu logic chuẩn VHDL \"L\" là:",
+   "en": "The VHDL standard logic type L is:"
+  },
+  "opts": [
+   {
+    "vi": "mức thấp yếu (weak low)",
+    "en": "a weak low"
+   },
+   {
+    "vi": "logic 0 cưỡng bức",
+    "en": "a forcing logic 0"
+   },
+   {
+    "vi": "trạng thái logic chưa khởi tạo",
+    "en": "an uninitialised logic state"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "std_logic có chín giá trị: U (chưa khởi tạo), X (cưỡng bức không xác định), 0 (cưỡng bức 0), 1, Z, W, L (thấp yếu), H (cao yếu), - (không quan tâm). (Tooley tr.284, 286)",
+   "en": "std_logic has nine values: U (uninitialised), X (forcing unknown), 0 (forcing 0), 1, Z, W, L (weak low), H (weak high) and - (don't care). (Tooley p.284, 286)"
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q17",
+   "en": "Tooley Revision Paper 5 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mã VHDL, kiểu dữ liệu Boolean có thể nhận các giá trị:",
+   "en": "In VHDL code a Boolean data type can have values:"
+  },
+  "opts": [
+   {
+    "vi": "0 và 1",
+    "en": "0 and 1"
+   },
+   {
+    "vi": "FALSE và TRUE",
+    "en": "FALSE and TRUE"
+   },
+   {
+    "vi": "thấp và cao",
+    "en": "low and high"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "BOOLEAN của VHDL là kiểu liệt kê (FALSE, TRUE); 0/1 và thấp/cao thuộc kiểu BIT hoặc STD_LOGIC. (Tooley tr.74, 75)",
+   "en": "VHDL BOOLEAN is the enumerated type (FALSE, TRUE); 0/1 and low/high belong to BIT or STD_LOGIC. (Tooley p.74, 75)"
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q18",
+   "en": "Tooley Revision Paper 5 Q18"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi X = 011 và Y = 110 thì biểu thức VHDL X AND NOT Y có giá trị:",
+   "en": "When X = 011 and Y = 110 the VHDL expression X AND NOT Y will evaluate to:"
+  },
+  "opts": [
+   {
+    "vi": "001",
+    "en": "001"
+   },
+   {
+    "vi": "110",
+    "en": "110"
+   },
+   {
+    "vi": "010",
+    "en": "010"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "NOT Y = NOT 110 = 001; X AND 001 = 011 AND 001 = 001 (NOT có độ ưu tiên cao hơn AND).",
+   "en": "NOT Y = NOT 110 = 001; X AND 001 = 011 AND 001 = 001 (NOT binds tighter than AND)."
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q19",
+   "en": "Tooley Revision Paper 5 Q19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phương án nào cho thứ tự ưu tiên của các toán tử VHDL (cao nhất trước):",
+   "en": "Which one of the following gives the order of precedence of VHDL operators (highest first):"
+  },
+  "opts": [
+   {
+    "vi": "logic; quan hệ; dịch",
+    "en": "logical; relational; shift"
+   },
+   {
+    "vi": "quan hệ; logic; dịch",
+    "en": "relational; logical; shift"
+   },
+   {
+    "vi": "dịch; quan hệ; logic",
+    "en": "shift; relational; logical"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Từ cao đến thấp: toán tử dịch (sll, srl…), quan hệ (=, /=, <…), rồi logic (and, or, nand…). Toán tử logic có độ ưu tiên thấp nhất. (Tooley tr.285)",
+   "en": "Highest to lowest: shift (sll, srl …), relational (=, /=, < …) and then logical (and, or, nand …). Logical operators bind loosest. (Tooley p.285)"
+  },
+  "topic": {
+   "vi": "Toán tử và biểu thức VHDL",
+   "en": "VHDL operators and expressions"
+  },
+  "topic_id": "ops",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q20",
+   "en": "Tooley Revision Paper 5 Q20"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Kiểu logic chuẩn VHDL \"Z\" là:",
+   "en": "The VHDL standard logic type Z is:"
+  },
+  "opts": [
+   {
+    "vi": "mức thấp yếu",
+    "en": "a weak low"
+   },
+   {
+    "vi": "trạng thái không xác định yếu",
+    "en": "a weak unknown"
+   },
+   {
+    "vi": "trạng thái trở kháng cao",
+    "en": "a high-impedance state"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Z trong std_logic là trạng thái trở kháng cao (ba trạng thái); mức thấp yếu là L và không xác định yếu là W. (Tooley tr.284, 286)",
+   "en": "Z in std_logic is the high-impedance (three-state) value; weak low is L and weak unknown is W. (Tooley p.284, 286)"
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q17",
+   "en": "Tooley Revision Paper 6 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chú thích trong mã VHDL bắt đầu bằng:",
+   "en": "Comments within VHDL code start with:"
+  },
+  "opts": [
+   {
+    "vi": "!",
+    "en": "!"
+   },
+   {
+    "vi": ";",
+    "en": ";"
+   },
+   {
+    "vi": "--",
+    "en": "--"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "VHDL dùng hai dấu gạch ngang \"--\" để mở chú thích đến hết dòng; \"!\" và \";\" không phải ký hiệu chú thích. (Tooley tr.86, 107)",
+   "en": "VHDL uses two hyphens \"--\" to start a comment that runs to the end of the line; \"!\" and \";\" are not comment markers. (Tooley p.86, 107)"
+  },
+  "topic": {
+   "vi": "Entity, architecture và tín hiệu",
+   "en": "Entity, architecture and signals"
+  },
+  "topic_id": "entity",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q18",
+   "en": "Tooley Revision Paper 6 Q18"
+  }
+ }
+]

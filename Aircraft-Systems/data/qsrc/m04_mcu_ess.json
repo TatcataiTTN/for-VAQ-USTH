@@ -1,0 +1,200 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Vi điều khiển khác vi xử lý ở điểm nào?",
+   "en": "How does a microcontroller differ from a microprocessor?"
+  },
+  "sol": {
+   "vi": "Vi điều khiển gồm nhiều phần tử của một hệ máy tính (lõi xử lý, bộ nhớ, ngoại vi), còn vi xử lý chỉ là CPU.",
+   "en": "A microcontroller includes many elements of a computer system, whereas a microprocessor is only the CPU."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-8 Checkup 1 (đáp án tr.853)",
+   "en": "Floyd 14-8 Checkup 1 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nêu một số khối chức năng thường có trong một vi điều khiển.",
+   "en": "What are some common functional units found in a typical microcontroller?"
+  },
+  "sol": {
+   "vi": "Lõi xử lý, ROM (bộ nhớ không khả biến), RAM, một hay nhiều ngoại vi phần cứng, khối kết nối tín hiệu giữa các khối chức năng và bộ điều khiển bộ nhớ ngoài.",
+   "en": "The processor core, ROM, RAM, one or more hardware peripherals, a signal-connection block between the functional blocks and an external memory controller."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-8 Checkup 2 (đáp án tr.853)",
+   "en": "Floyd 14-8 Checkup 2 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nêu một ưu điểm và một nhược điểm của chân đa chức năng trên vi điều khiển.",
+   "en": "Discuss an advantage and disadvantage of multifunctional pins on a microcontroller."
+  },
+  "sol": {
+   "vi": "Ưu điểm: giảm số chân và kích thước vật lý của linh kiện. Nhược điểm: không phải lúc nào cũng dùng được mọi tính năng mà ứng dụng cần, nên thiết kế có thể cần thêm phần cứng ngoài.",
+   "en": "Advantage: it reduces the number of pins and the physical size of the device. Disadvantage: it is not always possible to use every microcontroller feature an application needs, so the design may require additional external hardware."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-8 Checkup 3 (đáp án tr.853)",
+   "en": "Floyd 14-8 Checkup 3 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Những ngoại vi nào cho phép vi điều khiển tương tác với thế giới thực?",
+   "en": "Which peripherals allow a microcontroller to interact with the real world?"
+  },
+  "sol": {
+   "vi": "Bộ định thời, ADC, DAC, bộ điều khiển truyền thông, GPIO, bộ mã hoá vuông góc và bộ điều chế độ rộng xung (PWM).",
+   "en": "Timers, ADCs, DACs, communication controllers, GPIOs, quadrature encoders and PWMs."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-8 Checkup 4 (đáp án tr.853)",
+   "en": "Floyd 14-8 Checkup 4 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Hệ nhúng khác hệ máy tính cá nhân ở điểm nào?",
+   "en": "How does an embedded system differ from a personal computer system?"
+  },
+  "sol": {
+   "vi": "Hệ nhúng được thiết kế để tương tác trực tiếp với thế giới thực và thực hiện một chức năng xác định; máy tính cá nhân xử lý dữ liệu và cấu hình được với phần mềm ứng dụng để làm nhiều việc.",
+   "en": "An embedded system is designed to interact directly with the real world and perform a specific function; a personal computer processes data and can be configured with application software to perform a number of tasks."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-8 Checkup 5 (đáp án tr.853)",
+   "en": "Floyd 14-8 Checkup 5 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Kể một số loại hệ nhúng có dùng vi điều khiển.",
+   "en": "Identify some types of embedded systems in which microcontrollers are found."
+  },
+  "sol": {
+   "vi": "Thiết bị cá nhân, đồ điện tử gia dụng, hệ thống trên ô tô và thiết bị truyền thông (và tự động hoá, robot).",
+   "en": "Personal electronics, consumer electronics, automotive systems and communication devices (and automation and robotics)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-8 Checkup 6 (đáp án tr.853)",
+   "en": "Floyd 14-8 Checkup 6 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "SoC (system on chip) là gì?",
+   "en": "What is a SoC?"
+  },
+  "sol": {
+   "vi": "SoC là một chip hệ thống: một máy tính hoàn chỉnh trên một chip silicon.",
+   "en": "A SoC is a system chip, a complete computer on a single silicon chip."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-9 Checkup 1 (đáp án tr.853)",
+   "en": "Floyd 14-9 Checkup 1 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nêu hai ưu điểm quan trọng của SoC.",
+   "en": "What are two important advantages of a SoC?"
+  },
+  "sol": {
+   "vi": "Kích thước nhỏ và công suất tiêu thụ thấp (hợp với thiết bị di động nhỏ).",
+   "en": "Small size and reduced power consumption."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-9 Checkup 2 (đáp án tr.853)",
+   "en": "Floyd 14-9 Checkup 2 (answer p.853)"
+  }
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Kể các phần tử chức năng của một SoC.",
+   "en": "List the functional elements of a SoC."
+  },
+  "sol": {
+   "vi": "Một hay nhiều lõi xử lý; bộ xử lý tín hiệu số (DSP); bộ xử lý đồ hoạ (GPU); bộ nhớ; ADC và DAC; giao diện I/O; nguồn định thời; quản lý nguồn; cầu nối bus; ngoại vi; logic khả trình.",
+   "en": "One or more processor cores; a DSP; a GPU; memory; ADC and DAC; I/O interfaces; timing sources; power management; bus bridges; peripherals; and programmable logic."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd 14-9 Checkup 3 (đáp án tr.853)",
+   "en": "Floyd 14-9 Checkup 3 (answer p.853)"
+  }
+ }
+]

@@ -11,14 +11,14 @@ import legacy
 LANGS = ('vi', 'en')
 S = {
  'vi': dict(home='Trang chủ', objectives='🎯 Sau module này bạn sẽ', time='Thời lượng (ước tính)', nq='Câu hỏi', orig='gốc', notes='Ghi chú chi tiết', quiz='Tự kiểm tra nhanh (10 câu, ưu tiên câu gốc)',
-            practice='Luyện sâu', open_bank='Mở ngân hàng câu hỏi của module', nb='Notebook Jupyter', nb_txt='Tải notebook (đã chạy sẵn, có đầu ra thật):', prev='← Module trước', next='Module sau →',
+            practice='Luyện sâu', open_bank='Mở ngân hàng câu hỏi của module', nb='Notebook Jupyter', nb_txt='Tải notebook (đã chạy sẵn, có đầu ra thật):', nb_legacy='Notebook này là một file chung cho cả hai ngôn ngữ: lời giải thích có chỗ song ngữ, còn lời nhắn in ra của code (chú thích, nhãn) viết bằng tiếng Việt không dấu; chưa có bản tiếng Anh riêng (xem CONTINUE.md).', prev='← Module trước', next='Module sau →',
             soon='Sắp có', openm='Mở bài giảng →', modules='Các module', clo='CLO', prac_title='Luyện tập theo module', exam_title='Luyện đề thi thử', src_title='Nguồn, độ phủ và lỗi của nguồn',
             books_title='Bản đồ nội dung sách', ex_title='Tra cứu bài tập có số', wr_title='Viết tay (chu trình nhiều bước)', an_title='Phân tích đề', cf_title='Khái niệm', lab_title='Phòng thí nghiệm',
             props_title='Tra bảng thuộc tính', slides_title='Slide của giảng viên', strip='📷 Slide gốc của giảng viên (bấm để phóng to)', slides_n='slide', hours='giờ lý thuyết',
             lecture='Bài giảng', selfcheck='Tự kiểm tra', written='Bài viết tay', errors='Lỗi và nghi vấn của nguồn', none_err='Chưa ghi nhận lỗi nào cho module này.', blank='slide trống',
             nbnone='Chưa có notebook cho module này.', stubnote='Phần này chưa được dựng trong lần làm việc hiện tại. Trạng thái và kế hoạch nằm trong CONTINUE.md của dự án.'),
  'en': dict(home='Home', objectives='🎯 After this module you will', time='Time (estimate)', nq='Questions', orig='original', notes='Detailed notes', quiz='Quick self-check (10 questions, originals first)',
-            practice='Deep practice', open_bank='Open this module\'s question bank', nb='Jupyter notebook', nb_txt='Download the notebook (already executed, real outputs):', prev='← Previous module',
+            practice='Deep practice', open_bank='Open this module\'s question bank', nb='Jupyter notebook', nb_txt='Download the notebook (already executed, real outputs):', nb_legacy='This notebook is one shared file for both languages: the explanations are partly bilingual, but the messages printed by the code (comments, labels) are in Vietnamese without diacritics; a separate English version has NOT been made yet (see CONTINUE.md).', prev='← Previous module',
             next='Next module →', soon='Coming soon', openm='Open lesson →', modules='Modules', clo='CLO', prac_title='Practice by module', exam_title='Mock exams', src_title='Sources, coverage and source errors',
             books_title='Book content map', ex_title='Exercise finder', wr_title='Written practice (multi-step)', an_title='Question analyser', cf_title='Concept finder', lab_title='Lab',
             props_title='Property tables', slides_title='Lecturer slides', strip='📷 The lecturer\'s original slides (click to enlarge)', slides_n='slides', hours='lecture hours',
@@ -54,6 +54,8 @@ def load_content(mid, lang):
         c = legacy.module(mid, lang)         # noi dung cu, chuyen tu dong; se viet lai theo chuan moi o P4
         if mid == 'm09' and c:               # phan mo rong ESD (Tooley Ch.12) gan vao ghi chu cua Module 09
             import content.m09_esd as esdmod; importlib.reload(esdmod); c['notes'] = (c.get('notes') or '') + esdmod.esd(lang)
+        if mid == 'm04' and c:               # phan mo rong vi dieu khien (Floyd 14-8, 14-9; CO5) gan vao ghi chu cua Module 04
+            import content.m04_mcu as mcumod; importlib.reload(mcumod); c['notes'] = (c.get('notes') or '') + mcumod.mcu(lang)
         return c
     return None
 
@@ -141,7 +143,7 @@ def module_page(m, c, bank, lang):
         h += f'<h2 id="selfcheck">{s["quiz"]}</h2>' + quiz_block('q-' + m['id'], [localize(i, lang, r) for i in pick_quiz(bank)])
         h += f'<h2 id="practice">{s["practice"]}</h2><p><a class="btn" href="../../practice/{m["id"]}.html">{s["open_bank"]} ({nq} + {len(bank["essays"])})</a></p>'
     nbs = notebooks(m)
-    h += f'<h2 id="nb">{s["nb"]}</h2>' + (f'<p>{s["nb_txt"]}</p><ul>' + ''.join(f'<li><a href="{r}{fn}" download>{os.path.basename(fn)}</a> ({l.upper()})</li>' for l, fn in nbs) + '</ul>' if nbs else f'<p class="muted">{s["nbnone"]}</p>')
+    h += f'<h2 id="nb">{s["nb"]}</h2>' + (f'<p>{s["nb_txt"]}</p><ul>' + ''.join(f'<li><a href="{r}{fn}" download>{os.path.basename(fn)}</a> ({l.upper()})</li>' for l, fn in nbs) + '</ul>' + (f'<p class="muted">{s["nb_legacy"]}</p>' if any(l == 'vi+en' for l, _ in nbs) else '') if nbs else f'<p class="muted">{s["nbnone"]}</p>')
     notes = (jload(f'data/verify/{m["id"]}_notes.json') or {}).get(lang, [])
     h += f'<h2 id="errors">{s["errors"]}</h2>' + (ul([esc(x) if not x.startswith('<') else x for x in notes]) if notes else f'<p class="muted">{s["none_err"]}</p>')
     i = MODS.index(m); nav = '<div class="modnav">'

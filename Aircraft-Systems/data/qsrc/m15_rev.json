@@ -1,0 +1,114 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ứng dụng phần mềm EFB loại A nào sau đây?",
+   "en": "Which one of the following is a Type A EFB software application?"
+  },
+  "opts": [
+   {
+    "vi": "hiển thị thông tin giao thông",
+    "en": "Traffic information displays"
+   },
+   {
+    "vi": "công cụ tính khối lượng và cân bằng",
+    "en": "Tools for mass and balance calculation"
+   },
+   {
+    "vi": "trình đọc tài liệu hiển thị sổ tay khai thác chuyến bay",
+    "en": "Document reader displaying flight operation manuals"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ứng dụng loại A chỉ hiển thị tài liệu tĩnh (sổ tay, biểu đồ); thông tin giao thông là loại B và công cụ tính khối lượng-cân bằng là phần mềm loại B. (Tooley tr.317, 319)",
+   "en": "Type A applications only display static documents (manuals, charts); traffic displays and mass and balance tools are Type B. (Tooley p.317, 319)"
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q13",
+   "en": "Tooley Revision Paper 7 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hình A2.29 cho thấy một EFB được lắp cố định. Chi tiết đánh dấu X (mũi tên giữa màn hình cơ trưởng và hàng phi công phụ) là:",
+   "en": "An installed EFB is shown in Figure A2.29. Which one of the following gives the function of the feature marked X?"
+  },
+  "opts": [
+   {
+    "vi": "liên kết chéo dữ liệu hiển thị",
+    "en": "Display data cross-link"
+   },
+   {
+    "vi": "liên kết chéo hệ điều hành",
+    "en": "Operating system cross-link"
+   },
+   {
+    "vi": "liên kết chéo giám sát video",
+    "en": "Video surveillance cross-link"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "X chỉ mũi tên ở mức màn hình (DU), nối bộ hiển thị của cơ trưởng sang bên phụ lái: liên kết chéo dữ liệu hiển thị (Hình 20.6 gọi mũi tên này là \"Display cross-link\"). Liên kết chéo hệ điều hành nối hai khối điện tử EU ở hàng dưới. Câu này cũng là câu 10 của Chương 20 (Hình 20.11), nơi khoá in ghi (b); hai khoá của sách mâu thuẫn nhau, site theo hình: (a). (Tooley tr.328)",
+   "en": "X marks the arrow at display-unit level joining the captain's display to the first-officer side: the display data cross-link (Figure 20.6 labels this arrow \"Display cross-link\"). The operating system cross-link joins the two electronic units (EU) on the lower row. This is also Chapter 20 Q10 (Figure 20.11), where the printed key says (b); the two keys of the book contradict each other and the site follows the figure: (a). (Tooley p.328)"
+  },
+  "topic": {
+   "vi": "Cặp tài liệu điện tử (EFB)",
+   "en": "Electronic flight bags (EFB)"
+  },
+  "topic_id": "efb",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q8 / Tooley Ch.20 · Câu 10 (khoá in (b), đúng (a); A.20, tr.383)",
+   "en": "Tooley Revision Paper 8 Q8 / Tooley Ch.20 · Q10 (printed key (b), correct (a); A.20, p.383)"
+  },
+  "fig": "assets/figures/tooley_A2_29.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Đặc tả nào liên quan đến hệ thống mạng thông tin cabin hành khách?",
+   "en": "Which one of the following specifications relates to passenger cabin information network systems?"
+  },
+  "opts": [
+   {
+    "vi": "ARINC 429",
+    "en": "ARINC 429"
+   },
+   {
+    "vi": "ARINC 628",
+    "en": "ARINC 628"
+   },
+   {
+    "vi": "ARINC 629",
+    "en": "ARINC 629"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "ARINC 628 là chuẩn hệ thống giải trí và thông tin cabin; ARINC 429 và 629 là bus dữ liệu điện tử hàng không. (Tooley tr.309, 316)",
+   "en": "ARINC 628 is the cabin entertainment and information systems standard; ARINC 429 and 629 are avionics data buses. (Tooley p.309, 316)"
+  },
+  "topic": {
+   "vi": "Hệ thống thông tin tàu bay và ca G-EZWE",
+   "en": "Aircraft information systems and the G-EZWE case"
+  },
+  "topic_id": "info",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q13",
+   "en": "Tooley Revision Paper 8 Q13"
+  }
+ }
+]

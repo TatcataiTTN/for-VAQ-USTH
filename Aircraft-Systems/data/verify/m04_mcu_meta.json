@@ -1,0 +1,637 @@
+[
+ {
+  "kind": "tf",
+  "n": 1,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "instruction decoder"
+  ],
+  "q": "A CPU consists of an ALU, an instruction decoder, and a timing and control unit."
+ },
+ {
+  "kind": "tf",
+  "n": 2,
+  "printed": "F",
+  "ans": "F",
+  "ev": [
+   "central processing unit"
+  ],
+  "q": "CPU stands for computer peripheral unit."
+ },
+ {
+  "kind": "tf",
+  "n": 3,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "semiconductor"
+  ],
+  "q": "Memory devices are semiconductor devices that store information electronically and interface with the computer system through buses."
+ },
+ {
+  "kind": "tf",
+  "n": 4,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "operating system"
+  ],
+  "q": "The operating system of a computer is a software component."
+ },
+ {
+  "kind": "tf",
+  "n": 5,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "arithmetic logic unit"
+  ],
+  "q": "The ALU is a key element in a microprocessor."
+ },
+ {
+  "kind": "tf",
+  "n": 6,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "address bus"
+  ],
+  "q": "Microprocessors generally have three types of buses: address, data, and control."
+ },
+ {
+  "kind": "tf",
+  "n": 7,
+  "printed": "F",
+  "ans": "F",
+  "ev": [
+   "BIOS"
+  ],
+  "q": "The BIOS memory contains program-specific high-level code."
+ },
+ {
+  "kind": "tf",
+  "n": 8,
+  "printed": "F",
+  "ans": "F",
+  "ev": [
+   "multicore"
+  ],
+  "q": "A multicore processor has one processor and more than one memory."
+ },
+ {
+  "kind": "tf",
+  "n": 9,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "pipelining"
+  ],
+  "q": "Pipelining allows a computer to execute a program faster."
+ },
+ {
+  "kind": "tf",
+  "n": 10,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "assembly"
+  ],
+  "q": "Three levels of computer programming languages are machine, assembly, and high level."
+ },
+ {
+  "kind": "tf",
+  "n": 11,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "direct memory access"
+  ],
+  "q": "DMA stands for direct memory access."
+ },
+ {
+  "kind": "tf",
+  "n": 12,
+  "printed": "F",
+  "ans": "T",
+  "ev": [
+   "bus grant acknowledge"
+  ],
+  "q": "The signals associated with a DMA operation are bus request, bus grant, and bus grant acknowledge."
+ },
+ {
+  "kind": "tf",
+  "n": 13,
+  "printed": "F",
+  "ans": "F",
+  "ev": [
+   "processor core, memory"
+  ],
+  "q": "Microprocessor and microcontroller are different names for the same thing."
+ },
+ {
+  "kind": "tf",
+  "n": 14,
+  "printed": "T",
+  "ans": "T",
+  "ev": [
+   "quadrature encoder"
+  ],
+  "q": "Some examples of microcontroller peripherals are GPIOs, ADCs, and quadrature encoders."
+ },
+ {
+  "kind": "tf",
+  "n": 15,
+  "printed": "F",
+  "ans": "F",
+  "ev": [
+   "system on chip"
+  ],
+  "q": "SoC stands for sequential output computer."
+ },
+ {
+  "kind": "st",
+  "n": 1,
+  "printed": "d",
+  "ans": "d",
+  "ev": [
+   "peripheral"
+  ],
+  "q": "Which of the following is a peripheral unit of a computer?",
+  "opts": [
+   "Arithmetic and logic unit",
+   "Control unit",
+   "Memory unit",
+   "Keyboard"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 2,
+  "printed": "a",
+  "ans": "a",
+  "ev": [
+   "instruction decoder"
+  ],
+  "q": "The operation of the timing and control unit in a microprocessor is affected by",
+  "opts": [
+   "the instruction decoder",
+   "the accumulator",
+   "the arithmetic logic unit",
+   "the register array"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 3,
+  "printed": "b",
+  "ans": "b",
+  "ev": [],
+  "q": "A 10-bit address bus supports",
+  "opts": [
+   "1,000,000 memory addresses",
+   "1024 memory addresses",
+   "100 memory addresses",
+   "1000 memory addresses"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 4,
+  "printed": "b",
+  "ans": "b",
+  "ev": [
+   "data bus"
+  ],
+  "q": "A bus that is used to transfer information both to and from the microprocessor is the",
+  "opts": [
+   "address bus",
+   "data bus",
+   "both of the above",
+   "none of the above"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 5,
+  "printed": "d",
+  "ans": "d",
+  "ev": [
+   "control bus"
+  ],
+  "q": "A system bus is composed of",
+  "opts": [
+   "address bus",
+   "data bus",
+   "control bus (the book prints \"system bus\")",
+   "answers (a), (b), and (c)"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 6,
+  "printed": "c",
+  "ans": "c",
+  "ev": [
+   "high-Z"
+  ],
+  "q": "The third output state of a tri-state device is called",
+  "opts": [
+   "logic 0",
+   "logic 1",
+   "high-Z state",
+   "none of the above"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 7,
+  "printed": "a",
+  "ans": "a",
+  "ev": [
+   "fetch"
+  ],
+  "q": "During the fetch cycle of a processor",
+  "opts": [
+   "instructions are read from the memory",
+   "data is stored as a result",
+   "the data is processed in the ALU",
+   "the instructions are executed in the processor"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 8,
+  "printed": "d",
+  "ans": "d",
+  "ev": [
+   "central processing unit"
+  ],
+  "q": "The role of the CPU is to",
+  "opts": [
+   "control the system hardware",
+   "provide hardware support to the operating system",
+   "execute application programs",
+   "answers (a), (b), and (c)"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 9,
+  "printed": "c",
+  "ans": "c",
+  "ev": [
+   "compiler"
+  ],
+  "q": "High level languages are converted to machine level language through",
+  "opts": [
+   "an assembler",
+   "a debugger",
+   "a compiler",
+   "a translator"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 10,
+  "printed": "c",
+  "ans": "c",
+  "ev": [
+   "program"
+  ],
+  "q": "A computer program is a list of",
+  "opts": [
+   "memory addresses that contain data to be used in an operation",
+   "addresses that contain instructions to be used in an operation",
+   "instructions arranged to achieve a specific result"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 11,
+  "printed": "c",
+  "ans": "c",
+  "ev": [
+   "jump"
+  ],
+  "q": "A type of assembly language instruction that alters the course of the program is called a",
+  "opts": [
+   "loop",
+   "jump",
+   "both of the above",
+   "none of the above"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 12,
+  "printed": "d",
+  "ans": "d",
+  "ev": [
+   "wait state"
+  ],
+  "q": "A wait state",
+  "opts": [
+   "terminates a bus cycle",
+   "halts the processor clock for one period",
+   "places the microprocessor in a low-power mode",
+   "delays completion of a bus cycle by one processor clock"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 13,
+  "printed": "c",
+  "ans": "b",
+  "ev": [
+   "do not complete the current instruction cycle"
+  ],
+  "q": "A bus request differs from an interrupt in that",
+  "opts": [
+   "an interrupt requires an external bus master to complete the operation",
+   "a bus request will interrupt a current instruction cycle",
+   "an interrupt cannot be masked",
+   "a bus request does not involve a response from the processor"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 14,
+  "printed": "d",
+  "ans": "d",
+  "ev": [
+   "operating system"
+  ],
+  "q": "An operating system",
+  "opts": [
+   "schedules and allocates system resources",
+   "protects the system processes and resources",
+   "provides system services",
+   "answers (a), (b), and (c)"
+  ]
+ },
+ {
+  "kind": "st",
+  "n": 15,
+  "printed": "a",
+  "ans": "a",
+  "ev": [
+   "mnemonic"
+  ],
+  "q": "Mnemonics or op-codes are a part of",
+  "opts": [
+   "assembly level languages",
+   "machine level languages",
+   "high level languages",
+   "none of the above"
+  ]
+ },
+ {
+  "kind": "gen",
+  "fam": "addr",
+  "args": [
+   10
+  ],
+  "ans": 1024,
+  "q": "10-bit address bus"
+ },
+ {
+  "kind": "gen",
+  "fam": "addr",
+  "args": [
+   16
+  ],
+  "ans": 65536,
+  "q": "16-bit address bus"
+ },
+ {
+  "kind": "gen",
+  "fam": "addr",
+  "args": [
+   20
+  ],
+  "ans": 1048576,
+  "q": "20-bit address bus"
+ },
+ {
+  "kind": "gen",
+  "fam": "addr",
+  "args": [
+   32
+  ],
+  "ans": 4294967296,
+  "q": "32-bit address bus"
+ },
+ {
+  "kind": "gen",
+  "fam": "pwm",
+  "args": [
+   12,
+   2,
+   8
+  ],
+  "ans": 3.0,
+  "q": "PWM 12 V 2/8"
+ },
+ {
+  "kind": "gen",
+  "fam": "pwm",
+  "args": [
+   5,
+   3,
+   4
+  ],
+  "ans": 3.75,
+  "q": "PWM 5 V 3/4"
+ },
+ {
+  "kind": "gen",
+  "fam": "pwm",
+  "args": [
+   24,
+   1,
+   5
+  ],
+  "ans": 4.8,
+  "q": "PWM 24 V 1/5"
+ },
+ {
+  "kind": "gen",
+  "fam": "pwm",
+  "args": [
+   9,
+   6,
+   10
+  ],
+  "ans": 5.4,
+  "q": "PWM 9 V 6/10"
+ },
+ {
+  "kind": "gen",
+  "fam": "duty",
+  "args": [
+   2,
+   8
+  ],
+  "ans": 25.0,
+  "q": "duty 2/8"
+ },
+ {
+  "kind": "gen",
+  "fam": "duty",
+  "args": [
+   3,
+   12
+  ],
+  "ans": 25.0,
+  "q": "duty 3/12"
+ },
+ {
+  "kind": "gen",
+  "fam": "duty",
+  "args": [
+   5,
+   20
+  ],
+  "ans": 25.0,
+  "q": "duty 5/20"
+ },
+ {
+  "kind": "gen",
+  "fam": "duty",
+  "args": [
+   6,
+   10
+  ],
+  "ans": 60.0,
+  "q": "duty 6/10"
+ },
+ {
+  "kind": "gen",
+  "fam": "timer",
+  "args": [
+   16,
+   8,
+   2000
+  ],
+  "ans": 1.0,
+  "q": "timer 16 8 2000"
+ },
+ {
+  "kind": "gen",
+  "fam": "timer",
+  "args": [
+   8,
+   64,
+   1250
+  ],
+  "ans": 10.0,
+  "q": "timer 8 64 1250"
+ },
+ {
+  "kind": "gen",
+  "fam": "timer",
+  "args": [
+   1,
+   1,
+   1000
+  ],
+  "ans": 1.0,
+  "q": "timer 1 1 1000"
+ },
+ {
+  "kind": "gen",
+  "fam": "timer",
+  "args": [
+   20,
+   256,
+   78125
+  ],
+  "ans": 1000.0,
+  "q": "timer 20 256 78125"
+ },
+ {
+  "kind": "gen",
+  "fam": "rollover",
+  "args": [
+   16,
+   1000
+  ],
+  "ans": 65.536,
+  "q": "rollover 16 1000"
+ },
+ {
+  "kind": "gen",
+  "fam": "rollover",
+  "args": [
+   32,
+   1000000.0
+  ],
+  "ans": 4294.967296,
+  "q": "rollover 32 1000000.0"
+ },
+ {
+  "kind": "gen",
+  "fam": "rollover",
+  "args": [
+   32,
+   1000
+  ],
+  "ans": 4294967.296,
+  "q": "rollover 32 1000"
+ },
+ {
+  "kind": "gen",
+  "fam": "rollover",
+  "args": [
+   16,
+   100
+  ],
+  "ans": 655.36,
+  "q": "rollover 16 100"
+ },
+ {
+  "kind": "gen",
+  "fam": "wait",
+  "args": [
+   50,
+   3,
+   2
+  ],
+  "ans": 100.0,
+  "q": "wait 50 3 2"
+ },
+ {
+  "kind": "gen",
+  "fam": "wait",
+  "args": [
+   100,
+   4,
+   1
+  ],
+  "ans": 50.0,
+  "q": "wait 100 4 1"
+ },
+ {
+  "kind": "gen",
+  "fam": "wait",
+  "args": [
+   25,
+   3,
+   0
+  ],
+  "ans": 120.0,
+  "q": "wait 25 3 0"
+ },
+ {
+  "kind": "gen",
+  "fam": "wait",
+  "args": [
+   40,
+   2,
+   3
+  ],
+  "ans": 125.0,
+  "q": "wait 40 2 3"
+ }
+]

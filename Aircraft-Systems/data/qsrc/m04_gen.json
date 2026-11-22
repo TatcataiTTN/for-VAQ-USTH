@@ -22,7 +22,7 @@
   "correct": 0,
   "explain": {
    "vi": "T = 1/f = 1/100.000.000 = 10ns.",
-   "en": "T = 1/f = 1/100.000.000 = 10ns."
+   "en": "T = 1/f = 1/100,000,000 = 10ns."
   },
   "topic": {
    "vi": "Kiến trúc bên trong CPU",
@@ -82,21 +82,21 @@
   "opts": [
    {
     "vi": "16.384",
-    "en": "16.384"
+    "en": "16,384"
    },
    {
     "vi": "65.536",
-    "en": "65.536"
+    "en": "65,536"
    },
    {
     "vi": "32.768",
-    "en": "32.768"
+    "en": "32,768"
    }
   ],
   "correct": 1,
   "explain": {
    "vi": "2¹⁶ = 65.536.",
-   "en": "2¹⁶ = 65.536."
+   "en": "2¹⁶ = 65,536."
   },
   "topic": {
    "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
@@ -429,7 +429,7 @@
   "correct": 1,
   "explain": {
    "vi": "2³² byte = 4.294.967.296 byte = 4GB.",
-   "en": "2³² byte = 4.294.967.296 byte = 4GB."
+   "en": "2³² byte = 4,294,967,296 byte = 4GB."
   },
   "topic": {
    "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",

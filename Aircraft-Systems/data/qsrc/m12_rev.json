@@ -1,0 +1,150 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "GPS dùng:",
+   "en": "GPS uses:"
+  },
+  "opts": [
+   {
+    "vi": "12 vệ tinh trên ba mặt phẳng quỹ đạo",
+    "en": "12 satellites in three orbital planes"
+   },
+   {
+    "vi": "24 vệ tinh trên sáu mặt phẳng quỹ đạo",
+    "en": "24 satellites in six orbital planes"
+   },
+   {
+    "vi": "48 vệ tinh trên 12 mặt phẳng quỹ đạo",
+    "en": "48 satellites in 12 orbital planes"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Chòm sao GPS: 24 vệ tinh trên sáu mặt phẳng quỹ đạo, bốn vệ tinh mỗi mặt phẳng. (Tooley tr.252)",
+   "en": "The GPS constellation: 24 satellites in six orbital planes, four per plane. (Tooley p.252)"
+  },
+  "topic": {
+   "vi": "Hệ thống định vị toàn cầu (GPS)",
+   "en": "Global positioning system (GPS)"
+  },
+  "topic_id": "gps",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q11",
+   "en": "Tooley Revision Paper 1 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "GPS gồm các phân đoạn (segment) sau:",
+   "en": "GPS consists of the following segments:"
+  },
+  "opts": [
+   {
+    "vi": "không gian, người dùng và điều khiển",
+    "en": "space, user and control"
+   },
+   {
+    "vi": "vĩ độ, kinh độ, thời gian",
+    "en": "latitude, longitude, time"
+   },
+   {
+    "vi": "sóng mang, điều chế, mã hoá",
+    "en": "carrier, modulation, encoding"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "GPS gồm ba phân đoạn: không gian (vệ tinh), điều khiển (trạm mặt đất) và người dùng (máy thu). (Tooley tr.252, 253)",
+   "en": "GPS has three segments: space (satellites), control (ground stations) and user (receivers). (Tooley p.252, 253)"
+  },
+  "topic": {
+   "vi": "Hệ thống định vị toàn cầu (GPS)",
+   "en": "Global positioning system (GPS)"
+  },
+  "topic_id": "gps",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q17",
+   "en": "Tooley Revision Paper 3 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cơ sở dữ liệu vận hành của FMS có thể phải sửa đổi trong chuyến bay:",
+   "en": "The operational data base of the FMS may have to be modified in flight:"
+  },
+  "opts": [
+   {
+    "vi": "bởi phi công",
+    "en": "by the pilot"
+   },
+   {
+    "vi": "tự động bởi DADC",
+    "en": "automatically by the DADC"
+   },
+   {
+    "vi": "không thể sửa đổi trong chuyến bay",
+    "en": "it cannot be modified in flight"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Cơ sở dữ liệu dẫn đường vận hành được cập nhật trên mặt đất theo chu kỳ (thường 28 ngày); phi công chỉ thêm điểm vào cơ sở dữ liệu riêng, không sửa dữ liệu vận hành khi bay. (Tooley tr.211, 212)",
+   "en": "The operational navigation database is updated on the ground on a cycle (typically 28 days); the pilot can only add waypoints to a separate pilot database and cannot change the operational data in flight. (Tooley p.211, 212)"
+  },
+  "topic": {
+   "vi": "Hệ thống quản lý bay (FMS)",
+   "en": "Flight management system (FMS)"
+  },
+  "topic_id": "fms",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q14",
+   "en": "Tooley Revision Paper 4 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giám sát thời gian thực các hệ thống quan trọng là chức năng của:",
+   "en": "Real-time monitoring of critical systems is a function of:"
+  },
+  "opts": [
+   {
+    "vi": "BITE",
+    "en": "BITE"
+   },
+   {
+    "vi": "FMS",
+    "en": "FMS"
+   },
+   {
+    "vi": "EFIS",
+    "en": "EFIS"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "BITE (kiểm tra tích hợp sẵn) liên tục giám sát và báo lỗi các hệ thống quan trọng; FMS quản lý chuyến bay, EFIS hiển thị. (Tooley tr.173, 238)",
+   "en": "BITE (built-in test equipment) continuously monitors critical systems and reports faults; FMS manages the flight and EFIS displays data. (Tooley p.173, 238)"
+  },
+  "topic": {
+   "vi": "Thiết bị thử và BITE",
+   "en": "Test equipment and BITE"
+  },
+  "topic_id": "test",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q12",
+   "en": "Tooley Revision Paper 5 Q12"
+  }
+ }
+]

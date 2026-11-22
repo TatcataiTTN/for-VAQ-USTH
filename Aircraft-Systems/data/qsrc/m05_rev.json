@@ -1,0 +1,486 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hình A2.2 là giao diện bus (bộ ghép, mô-đun giao diện nối tiếp SIM, bộ điều khiển đầu cuối TC). Dữ liệu xuất hiện ở dạng song song tại điểm nào:",
+   "en": "Figure A2.2 shows a bus interface (coupler, serial interface module SIM, terminal controller TC). At which point will the data appear in parallel format:"
+  },
+  "opts": [
+   {
+    "vi": "X",
+    "en": "X"
+   },
+   {
+    "vi": "Y",
+    "en": "Y"
+   },
+   {
+    "vi": "Z",
+    "en": "Z"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "X nối bộ ghép với SIM và Y nối SIM với TC, hai đường này mang dữ liệu nối tiếp; mũi tên rộng Z từ TC ra LRU là bus song song nhiều đường.",
+   "en": "X (coupler to SIM) and Y (SIM to TC) carry serial data; Z, the wide arrow from the TC to the LRU, is the multi-line parallel bus."
+  },
+  "topic": {
+   "vi": "ARINC 629 và các bus hai chiều",
+   "en": "ARINC 629 and bidirectional buses"
+  },
+  "topic_id": "arinc629",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q9",
+   "en": "Tooley Revision Paper 1 Q9"
+  },
+  "fig": "assets/figures/tooley_A2_2.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tham chiếu hướng 320° ở định dạng nhãn từ (word label) sẽ xuất hiện là:",
+   "en": "A heading reference of 320° in a word label format would appear as:"
+  },
+  "opts": [
+   {
+    "vi": "000010011",
+    "en": "000010011"
+   },
+   {
+    "vi": "011010000",
+    "en": "011010000"
+   },
+   {
+    "vi": "001000111",
+    "en": "001000111"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Nhãn ARINC 429 viết bằng hệ bát phân: nhãn 320 = 3·64 + 2·8 + 0 → 011 010 000. Chỉ phương án (b) là 320 bát phân; hai phương án kia không phải biểu diễn của 320 ở hệ nào hợp lý. (Đề in chữ \"320°\"; khoá khớp với cách đọc 320 là nhãn bát phân của hướng từ.)",
+   "en": "ARINC 429 labels are written in octal: label 320 = 3·64 + 2·8 + 0 → 011 010 000. Only option (b) is octal 320; the others are not 320 in any sensible base. (The paper prints \"320°\"; the key agrees with reading 320 as the octal label for magnetic heading.)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q2",
+   "en": "Tooley Revision Paper 2 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phương pháp mã hoá dữ liệu trên bus ARINC 429 gọi là:",
+   "en": "The method of data encoding used in an ARINC 429 bus is known as:"
+  },
+  "opts": [
+   {
+    "vi": "lưỡng cực có về không (bipolar return to zero)",
+    "en": "bipolar return to zero"
+   },
+   {
+    "vi": "nối tiếp bất đồng bộ phổ dụng",
+    "en": "universal asynchronous serial"
+   },
+   {
+    "vi": "thập phân mã hoá nhị phân đồng bộ",
+    "en": "synchronous binary coded decimal"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ARINC 429 dùng mã lưỡng cực có về không (RZ): ba mức +10 V, 0 V, −10 V. (Tooley tr.60, 338)",
+   "en": "ARINC 429 uses bipolar return-to-zero coding with three levels: +10 V, 0 V and −10 V. (Tooley p.60, 338)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q7",
+   "en": "Tooley Revision Paper 2 Q7"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chi tiết đánh dấu R trong Hình A2.12 (đoạn nối từ bus tới một LRU) là:",
+   "en": "The feature marked R in Figure A2.12 is:"
+  },
+  "opts": [
+   {
+    "vi": "cáp bus",
+    "en": "a bus cable"
+   },
+   {
+    "vi": "cáp rẽ nhánh (stub)",
+    "en": "a stub cable"
+   },
+   {
+    "vi": "mối nối sợi quang",
+    "en": "a fibre-optic connection"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "R là đoạn ngắn nối bộ ghép (coupler) với từng LRU: cáp rẽ nhánh (stub); cáp bus là đường chính xoắn đôi chạy ngang hình. (Tooley tr.57, 58)",
+   "en": "R is the short branch from the coupler to each LRU: a stub cable; the bus cable is the main twisted pair running across the figure. (Tooley p.57, 58)"
+  },
+  "topic": {
+   "vi": "Khái niệm chung về bus",
+   "en": "General bus concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q18",
+   "en": "Tooley Revision Paper 2 Q18"
+  },
+  "fig": "assets/figures/tooley_A2_12.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chi tiết nào trong Hình A2.12 dùng để tránh vấn đề phản xạ và không phối hợp trở kháng:",
+   "en": "Which feature in Figure A2.12 is used to prevent problems with reflection and mismatch:"
+  },
+  "opts": [
+   {
+    "vi": "P",
+    "en": "P"
+   },
+   {
+    "vi": "Q",
+    "en": "Q"
+   },
+   {
+    "vi": "S",
+    "en": "S"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "S là điện trở chặn cuối (terminator) màu đen ở cuối bus: nó phối hợp trở kháng của cáp nên tín hiệu không bị phản xạ ngược. P là cáp bus, Q là bộ ghép. (Tooley tr.57, 61)",
+   "en": "S is the black bus terminator at the end of the line: it matches the cable impedance so the signal is not reflected. P is the bus cable and Q the coupler. (Tooley p.57, 61)"
+  },
+  "topic": {
+   "vi": "Khái niệm chung về bus",
+   "en": "General bus concepts"
+  },
+  "topic_id": "general",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q3",
+   "en": "Tooley Revision Paper 3 Q3"
+  },
+  "fig": "assets/figures/tooley_A2_12.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Từ dữ liệu ARINC 429 cơ bản có độ dài:",
+   "en": "A basic ARINC 429 data word has a length of:"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "8 bits"
+   },
+   {
+    "vi": "16 bit",
+    "en": "16 bits"
+   },
+   {
+    "vi": "32 bit",
+    "en": "32 bits"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Từ ARINC 429 dài 32 bit: nhãn (8), SDI (2), dữ liệu (19), SSM (2), chẵn lẻ (1). (Tooley tr.61)",
+   "en": "An ARINC 429 word is 32 bits: label (8), SDI (2), data (19), SSM (2), parity (1). (Tooley p.61)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q10",
+   "en": "Tooley Revision Paper 3 Q10"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trường dữ liệu BCD của ARINC 429 nằm trong các bit:",
+   "en": "The BCD data field of ARINC 429 is contained within bits:"
+  },
+  "opts": [
+   {
+    "vi": "1–8",
+    "en": "1–8"
+   },
+   {
+    "vi": "1–10",
+    "en": "1–10"
+   },
+   {
+    "vi": "11–29",
+    "en": "11–29"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Bit 1 đến 8 là nhãn, 9 đến 10 là SDI, 11 đến 29 là trường dữ liệu (các nhóm 4 bit BCD), 30 đến 31 là SSM, bit 32 là chẵn lẻ. (Tooley tr.63)",
+   "en": "Bits 1 to 8 are the label, 9 to 10 the SDI, 11 to 29 the data field (groups of four BCD bits), 30 to 31 the SSM and bit 32 parity. (Tooley p.63)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q13",
+   "en": "Tooley Revision Paper 3 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để tạo liên kết truyền thông hai chiều trong hệ ARINC 429:",
+   "en": "To create a bidirectional communications link within an ARINC 429 system:"
+  },
+  "opts": [
+   {
+    "vi": "chỉ cần một kết nối bus dữ liệu",
+    "en": "only one data bus connection is required"
+   },
+   {
+    "vi": "cần hai kết nối bus dữ liệu",
+    "en": "two data bus connections are required"
+   },
+   {
+    "vi": "cần bốn kết nối bus dữ liệu",
+    "en": "four data bus connections are required"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Một cặp dây xoắn ARINC 429 chỉ có một máy phát nên là một chiều; liên kết hai chiều cần hai bus riêng, mỗi bus một chiều. (Tooley tr.61)",
+   "en": "An ARINC 429 twisted pair has a single transmitter so it is one-way; a two-way link needs two separate buses, one for each direction. (Tooley p.61)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 3 Q14",
+   "en": "Tooley Revision Paper 3 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Cáp bus dữ liệu ARINC 629 dùng:",
+   "en": "An ARINC 629 data bus cable uses:"
+  },
+  "opts": [
+   {
+    "vi": "một cặp dây xoắn",
+    "en": "a pair of twisted wires"
+   },
+   {
+    "vi": "một dây đơn và mass",
+    "en": "a single wire and ground"
+   },
+   {
+    "vi": "cáp đồng trục có một lõi bọc kim",
+    "en": "a coaxial cable with a single screened conductor"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bus ARINC 629 là cặp dây xoắn có bọc chống nhiễu nối qua bộ ghép dòng điện; không dùng dây đơn hay cáp đồng trục. (Tooley tr.66, 68)",
+   "en": "The ARINC 629 bus is a screened twisted pair coupled through current couplers; it is neither a single wire nor a coaxial cable. (Tooley p.66, 68)"
+  },
+  "topic": {
+   "vi": "ARINC 629 và các bus hai chiều",
+   "en": "ARINC 629 and bidirectional buses"
+  },
+  "topic_id": "arinc629",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q8",
+   "en": "Tooley Revision Paper 4 Q8"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Để giảm thiểu ảnh hưởng của phản xạ do không phối hợp trở kháng, cáp bus nên:",
+   "en": "In order to minimise the effect of reflections caused by a mismatch, a bus cable should be:"
+  },
+  "opts": [
+   {
+    "vi": "được kết cuối ở mỗi đầu",
+    "en": "terminated at each end"
+   },
+   {
+    "vi": "giữ càng ngắn càng tốt",
+    "en": "kept as short as possible"
+   },
+   {
+    "vi": "gắn bộ lặp (repeater) đều đặn",
+    "en": "fitted with repeaters at regular intervals"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Điện trở kết cuối bằng trở kháng đặc tính ở hai đầu hấp thụ sóng tới, nên không có phản xạ ngược. (Tooley tr.57, 61)",
+   "en": "A terminator equal to the characteristic impedance at each end absorbs the incident wave so nothing reflects back. (Tooley p.57, 61)"
+  },
+  "topic": {
+   "vi": "Khái niệm chung về bus",
+   "en": "General bus concepts"
+  },
+  "topic_id": "general",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 5 Q5",
+   "en": "Tooley Revision Paper 5 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phương án nào cho độ dài của từ dữ liệu ARINC 429:",
+   "en": "Which one of the following gives the length of an ARINC 429 data word:"
+  },
+  "opts": [
+   {
+    "vi": "16 bit",
+    "en": "16 bits"
+   },
+   {
+    "vi": "32 bit",
+    "en": "32 bits"
+   },
+   {
+    "vi": "64 bit",
+    "en": "64 bits"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Từ ARINC 429 dài 32 bit. (Tooley tr.61)",
+   "en": "An ARINC 429 word is 32 bits long. (Tooley p.61)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q6",
+   "en": "Tooley Revision Paper 6 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Nhãn (label) của ARINC 429 dài bao nhiêu?",
+   "en": "What is the length of an ARINC 429 label?"
+  },
+  "opts": [
+   {
+    "vi": "8 bit",
+    "en": "8 bits"
+   },
+   {
+    "vi": "10 bit",
+    "en": "10 bits"
+   },
+   {
+    "vi": "12 bit",
+    "en": "12 bits"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Nhãn chiếm bit 1 đến 8 của từ 32 bit, viết bằng ba chữ số bát phân. (Tooley tr.59, 61)",
+   "en": "The label occupies bits 1 to 8 of the 32-bit word and is written as three octal digits. (Tooley p.59, 61)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q11",
+   "en": "Tooley Revision Paper 7 Q11"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Có thể nối bao nhiêu máy thu vào một nguồn phát trên bus ARINC 429?",
+   "en": "How many receivers can be attached to one transmit source in the ARINC 429 bus?"
+  },
+  "opts": [
+   {
+    "vi": "10",
+    "en": "10"
+   },
+   {
+    "vi": "20",
+    "en": "20"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Một cặp dây ARINC 429 có một máy phát và tối đa 20 máy thu. (Tooley tr.61)",
+   "en": "An ARINC 429 pair has one transmitter and up to 20 receivers. (Tooley p.61)"
+  },
+  "topic": {
+   "vi": "ARINC 429: điện, từ dữ liệu, label",
+   "en": "ARINC 429: electrical, word, label"
+  },
+  "topic_id": "arinc429",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q12",
+   "en": "Tooley Revision Paper 8 Q12"
+  }
+ }
+]

@@ -1,0 +1,39 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Số thập lục phân A7 tương đương với:",
+   "en": "The hexadecimal number A7 is equivalent to:"
+  },
+  "opts": [
+   {
+    "vi": "107",
+    "en": "107"
+   },
+   {
+    "vi": "147",
+    "en": "147"
+   },
+   {
+    "vi": "167",
+    "en": "167"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "A7₁₆ = 10×16 + 7 = 167 (A = 10).",
+   "en": "A7₁₆ = 10×16 + 7 = 167 (A = 10)."
+  },
+  "topic": {
+   "vi": "Bát phân và thập lục phân",
+   "en": "Octal and hexadecimal"
+  },
+  "topic_id": "hexoct",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q3",
+   "en": "Tooley Revision Paper 1 Q3"
+  }
+ }
+]

@@ -12,3 +12,4 @@ rsync -a --delete "${EX[@]}" "$SRC/" "$R/Aircraft-Systems/"
 git add -A Aircraft-Systems
 if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
 git commit -q -m "$1"; git push -q origin main; git log --oneline -1
+python3 "$SRC/build/pubids.py"       # dong bang id cac cau da len web (assemble.py giu thu tu lua chon cua chung)

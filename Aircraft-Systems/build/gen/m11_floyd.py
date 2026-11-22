@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Cau goc cua Floyd Ch.7-10 (Dung/Sai va Self-Test) cho module 11. Khoa doc tu van ban cua sach (PDF tr.449, 496, 561, 627 = trang in 448, 495, 560, 626)
 va doi chieu voi noi dung muc tuong ung. Mau 'mu' (mu) trong lop chu PDF bi doc thanh 'm': Ch.8 Self-Test 5, 6, 9 da kiem tren anh trang (micro giay).
-Ba cau khoa in mau thuan voi chinh van ban cua sach nen dung dap an DUNG va ghi chu (Ch.9 Self-Test 2, Ch.10 Dung/Sai 7, Ch.10 Self-Test 9); Ch.8 Self-Test 10 bo vi can Hinh 8-36 chua doc.
+Ba cau khoa in mau thuan voi chinh van ban cua sach nen dung dap an DUNG va ghi chu (Ch.9 Self-Test 2, Ch.10 Dung/Sai 7, Ch.10 Self-Test 9); Ch.8 Self-Test 10 (Hinh 8-36) da doc tu anh trang: khoa in (c) khop van ban muc 8-5 ('0 (LOW) duoc dua lan luot vao tung hang').
 Moi muc: (so, vi, en, dap an, giai thich vi, giai thich en, muc) cho Dung/Sai; (so, vi, en, [lua chon], dap an, giai thich vi, giai thich en, muc) cho Self-Test.
 Lua chon la chuoi (giong nhau o hai ngon ngu) hoac (vi, en)."""
 Q = '̅'          # dau gach tren ghep: Q + Q
@@ -69,6 +69,8 @@ ST8 = [
  (7, 'Bộ đếm Johnson modulus 8 cần:', 'A modulus-8 Johnson counter requires', [('tám flip-flop', 'eight flip-flops'), ('bốn flip-flop', 'four flip-flops'), ('năm flip-flop', 'five flip-flops'), ('mười hai flip-flop', 'twelve flip-flops')], 1, 'Modulus $=2n$ nên $n=8/2=4$.', 'Modulus $=2n$, so $n=8/2=4$.', 1),
  (8, 'Bộ đếm vòng modulus 8 cần:', 'A modulus-8 ring counter requires', [('tám flip-flop', 'eight flip-flops'), ('bốn flip-flop', 'four flip-flops'), ('năm flip-flop', 'five flip-flops'), ('mười hai flip-flop', 'twelve flip-flops')], 0, 'Modulus bằng số flip-flop: 8.', 'The modulus equals the number of flip-flops: 8.', 1),
  (9, 'Khi một thanh ghi dịch vào nối tiếp/ra nối tiếp 8 bit dùng làm trễ 24 μs, tần số clock phải là:', 'When an 8-bit serial in/serial out shift register is used for a 24 μs time delay, the clock frequency must be', ['41.67 kHz', '333 kHz', '125 kHz', '8 MHz'], 1, '8 bit / 24 μs = 333 kHz (chu kỳ 3 μs).', '8 bits / 24 μs = 333 kHz (period 3 μs).', 2),
+ (10, 'Mục đích của bộ đếm vòng (ring counter) trong mạch mã hoá bàn phím ở Hình 8–36 là:', 'The purpose of the ring counter in the keyboard encoding circuit of Figure 8–36 is', [('lần lượt đưa mức CAO vào từng hàng để phát hiện phím đóng', 'to sequentially apply a HIGH to each row for detection of key closure'), ('cấp xung kích cho thanh ghi mã phím', 'to provide trigger pulses for the key code register'), ('lần lượt đưa mức THẤP vào từng hàng để phát hiện phím đóng', 'to sequentially apply a LOW to each row for detection of key closure'), ('lần lượt phân cực ngược các điốt ở mỗi hàng', 'to sequentially reverse bias the diodes in each row')], 2,
+  'Bộ đếm vòng được nạp sẵn bảy bit 1 và một bit 0 rồi dịch bit 0 theo xung 5 kHz: mức THẤP lần lượt xuất hiện trên từng dòng hàng (các hàng khác ở mức cao). Khi có phím đóng, cột tương ứng bị kéo xuống thấp đúng lúc hàng của nó ở mức thấp (Floyd 8-5, tr.476).', 'The ring counter is preset with seven 1s and one 0 and the 0 is shifted at 5 kHz: a LOW appears on each ROW line in turn while the others stay HIGH. When a key is closed the column is pulled LOW just as its row goes LOW (Floyd 8-5, p.476).', 2),
 ]
 
 TF9 = [
@@ -139,5 +141,6 @@ ST10 = [
  (21, 'BSDL là viết tắt của:', 'The acronym BSDL stands for', [('board standard digital logic', 'board standard digital logic'), ('boundary scan down load', 'boundary scan down load'), ('bistable digital latch', 'bistable digital latch'), ('boundary scan description language', 'boundary scan description language')], 3, 'Boundary Scan Description Language.', 'Boundary Scan Description Language.', 1),
 ]
 # chuong -> (Dung/Sai, Self-Test, ten chu de, trang in cua khoa, chu de mac dinh cua tung muc)
+FIG = {(8, 10): 'assets/figures/floyd_8_36.png'}          # Floyd Hinh 8-36 cat tu trang scan (PDF tr.476)
 CH = {7: (TF7, ST7, 448), 8: (TF8, ST8, 495), 9: (TF9, ST9, 560), 10: (TF10, ST10, 626)}
 TOPIC = {7: ['latch'] * 9 + ['timing', 'timing', 'timing'], 8: ['shift'] * 10, 9: ['counter'] * 16, 10: ['pld'] * 21}

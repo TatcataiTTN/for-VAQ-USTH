@@ -36,8 +36,8 @@
    "en": "<p>The three buses in a computer system each carry a distinct role: the address bus carries the location (one direction only, from the CPU outward), the data bus carries the actual data (bidirectional), and the control bus carries timing and control signals such as read/write, interrupts and clock pulses. Keeping each bus's role straight avoids confusion when reading a microprocessor system block diagram.</p>"
   },
   "src": {
-   "vi": "Tooley Ch.6 Q4",
-   "en": "Tooley Ch.6 Q4"
+   "vi": "Tooley Ch.6 Q4 / Tooley Revision Paper 1 Q8",
+   "en": "Tooley Ch.6 Q4 / Tooley Revision Paper 1 Q8"
   }
  },
  {
@@ -432,7 +432,7 @@
   "correct": 0,
   "explain": {
    "vi": "256×256 = 65.536 bit = 64K bit.",
-   "en": "256×256 = 65.536 bit = 64K bit."
+   "en": "256×256 = 65,536 bit = 64K bit."
   },
   "topic": {
    "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
@@ -1096,7 +1096,8 @@
   "src": {
    "vi": "Tooley Revision Paper 2 Q8",
    "en": "Tooley Revision Paper 2 Q8"
-  }
+  },
+  "fig": "assets/figures/tooley_A2_7.png"
  },
  {
   "kind": "mcq",
@@ -1107,15 +1108,15 @@
   "opts": [
    {
     "vi": "32.768",
-    "en": "32.768"
+    "en": "32,768"
    },
    {
     "vi": "16.384",
-    "en": "16.384"
+    "en": "16,384"
    },
    {
     "vi": "65.536",
-    "en": "65.536"
+    "en": "65,536"
    }
   ],
   "correct": 2,
@@ -1143,22 +1144,22 @@
   },
   "opts": [
    {
-    "vi": "được giữ lại vô thời hạn (chừng nào còn cấp điện)",
-    "en": "retained indefinitely (as long as power is applied)"
+    "vi": "dữ liệu được giữ lại vô thời hạn",
+    "en": "the memory is retained indefinitely"
    },
    {
-    "vi": "cần được làm tươi liên tục dù đang cấp điện",
-    "en": "needs to be refreshed continuously even while power is applied"
+    "vi": "dữ liệu mất ngay khi ngắt điện",
+    "en": "the memory is lost as soon as power is removed"
    },
    {
-    "vi": "mất ngay khi ngắt điện",
-    "en": "lost as soon as power is removed"
+    "vi": "dữ liệu cần được làm tươi liên tục, kể cả khi đang cấp điện",
+    "en": "the memory needs to be refreshed constantly, even when power is applied"
    }
   ],
-  "correct": 0,
+  "correct": 1,
   "explain": {
-   "vi": "SRAM giữ dữ liệu ổn định suốt thời gian còn cấp điện, KHÔNG cần chu trình refresh như DRAM (nhưng vẫn mất dữ liệu nếu ngắt điện: đây là điểm khác 'retained indefinitely' với 'non-volatile').",
-   "en": "SRAM holds its data stably for as long as power is applied and does NOT need a refresh cycle like DRAM (but it still loses data if power is removed: this is the difference between 'retained indefinitely' and 'non-volatile')."
+   "vi": "Bộ nhớ tĩnh (ô lật) là bộ nhớ khả biến: dữ liệu mất ngay khi ngắt điện, nên phương án (b) đúng theo khoá in. Nó không cần làm tươi như RAM động (c). Phương án (a) sai vì \"vô thời hạn\" bỏ qua việc mất điện; chỉ nói \"chừng nào còn cấp điện\" mới đúng.",
+   "en": "Static memory (flip-flop cells) is volatile: its contents are lost as soon as power is removed, so (b) is right and follows the printed key. It needs no refresh, unlike dynamic RAM (c). Option (a) is wrong because \"indefinitely\" ignores loss of power; it would only be true \"as long as power is applied\"."
   },
   "topic": {
    "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
@@ -1194,8 +1195,8 @@
   ],
   "correct": 2,
   "explain": {
-   "vi": "16K×4bit = 8KB/chip; 64KB ÷ 8KB = 8 chip.",
-   "en": "16K×4bit = 8KB/chip; 64KB ÷ 8KB = 8 chip."
+   "vi": "64K byte = 64K × 8 bit = 512 Kbit; mỗi chip 16K × 4 bit = 64 Kbit (8 KB). 512 ÷ 64 = 8 chip (4 chip nối theo chiều địa chỉ × 2 chip theo chiều rộng dữ liệu 8 bit). Khoá in của sách ghi (c) 16; site dùng đáp án đúng theo tính toán là 8.",
+   "en": "64K bytes = 64K × 8 bits = 512 Kbit; each 16K × 4-bit chip is 64 Kbit (8 KB). 512 ÷ 64 = 8 chips (4 along the address depth × 2 across the 8-bit data width). The book's printed key says (c) 16; the site uses the calculated answer, 8."
   },
   "topic": {
    "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
@@ -1205,8 +1206,8 @@
   "level": 2,
   "origin": "goc",
   "src": {
-   "vi": "Tooley Revision Paper 6 Q10",
-   "en": "Tooley Revision Paper 6 Q10"
+   "vi": "Tooley Revision Paper 6 Q10 (khoá in (c), đúng (b))",
+   "en": "Tooley Revision Paper 6 Q10 (printed key (c), correct (b))"
   }
  },
  {

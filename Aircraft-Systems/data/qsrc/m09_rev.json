@@ -1,0 +1,300 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mục đích của các chi tiết trong Hình A2.4 (dây nối đẳng thế/bonding) là:",
+   "en": "The purpose of the items shown in Figure A2.4 is:"
+  },
+  "opts": [
+   {
+    "vi": "bảo đảm tính liên tục điện của mass máy bay",
+    "en": "to ensure electrical integrity of the aircraft ground"
+   },
+   {
+    "vi": "tạo đường về cho nguồn điện xoay chiều",
+    "en": "to provide a return path for AC power supplies"
+   },
+   {
+    "vi": "che chắn các cáp dữ liệu lân cận",
+    "en": "to provide shielding for nearby data cables"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Dây bện nối đẳng thế (bonding strap) nối các phần kim loại để giữ điện thế chung, tránh tích điện và nhiễu; chúng không phải đường về của nguồn AC. (Tooley tr.233, 234)",
+   "en": "Bonding straps tie metal parts to a common potential so that static charge and interference cannot build up; they are not an AC return path. (Tooley p.233, 234)"
+  },
+  "topic": {
+   "vi": "Nối đất, liên kết, che chắn",
+   "en": "Grounding, bonding, screening"
+  },
+  "topic_id": "bonding",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q16",
+   "en": "Tooley Revision Paper 1 Q16"
+  },
+  "fig": "assets/figures/tooley_A2_4.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Linh kiện nào sau đây dễ hỏng nhất do điện tích tĩnh:",
+   "en": "Which one of the following devices is most susceptible to damage from stray static charges:"
+  },
+  "opts": [
+   {
+    "vi": "cổng logic TTL",
+    "en": "a TTL logic gate"
+   },
+   {
+    "vi": "transistor MOSFET",
+    "en": "a MOSFET transistor"
+   },
+   {
+    "vi": "thyristor (SCR)",
+    "en": "a silicon-controlled rectifier"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Cực cổng MOSFET cách điện bằng lớp oxit rất mỏng nên bị đánh thủng bởi vài chục đến vài trăm vôn tĩnh điện. (Tooley tr.201, 206)",
+   "en": "A MOSFET gate sits behind a very thin oxide layer that static of a few tens to hundreds of volts can puncture. (Tooley p.201, 206)"
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q19",
+   "en": "Tooley Revision Paper 1 Q19"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hình A2.8 là đầu ra của máy phân tích phổ. Vạch nào là hài bậc hai:",
+   "en": "The output of a spectrum analyser is shown in Figure A2.8. Which of the features shown is the second harmonic:"
+  },
+  "opts": [
+   {
+    "vi": "A",
+    "en": "A"
+   },
+   {
+    "vi": "B",
+    "en": "B"
+   },
+   {
+    "vi": "C",
+    "en": "C"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Trên trục tần số logarit, A ≈ 16 MHz là tần số cơ bản; B ≈ 33 MHz gấp đôi A nên là hài bậc hai; C ≈ 49 MHz (bậc ba), D ≈ 65 MHz (bậc bốn).",
+   "en": "On the logarithmic frequency axis A (≈ 16 MHz) is the fundamental; B (≈ 33 MHz) is twice A, so it is the second harmonic; C (≈ 49 MHz) is the third and D (≈ 65 MHz) the fourth."
+  },
+  "topic": {
+   "vi": "Tín hiệu, phổ Fourier, máy phân tích phổ",
+   "en": "Signals, Fourier spectrum, spectrum analyser"
+  },
+  "topic_id": "spectrum",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q9",
+   "en": "Tooley Revision Paper 2 Q9"
+  },
+  "fig": "assets/figures/tooley_A2_8.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Tương thích điện từ đạt được bằng:",
+   "en": "Electromagnetic compatibility is achieved by:"
+  },
+  "opts": [
+   {
+    "vi": "dùng nguồn một chiều đã lọc và ổn áp tốt",
+    "en": "using smoothed and well-regulated DC supplies"
+   },
+   {
+    "vi": "sơn dẫn điện toàn bộ vỏ thiết bị",
+    "en": "coating all equipment enclosures with conductive paint"
+   },
+   {
+    "vi": "che chắn, nối đất, nối đẳng thế và bộ lọc nhiễu",
+    "en": "shielding, screening, earthing, bonding and interference filtering"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "EMC dựa trên tổ hợp nhiều biện pháp: che chắn, nối đất, nối đẳng thế và lọc nhiễu; không biện pháp đơn lẻ nào đủ. (Tooley tr.46, 228)",
+   "en": "EMC comes from a combination of measures: screening, earthing, bonding and filtering; no single measure is enough. (Tooley p.46, 228)"
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q6",
+   "en": "Tooley Revision Paper 4 Q6"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khi xử lý bảng mạch in (PCB) nhạy tĩnh điện, bạn luôn phải bảo đảm rằng:",
+   "en": "When handling an electrostatic sensitive printed circuit board (PCB) you should always ensure that:"
+  },
+  "opts": [
+   {
+    "vi": "đã cách ly nguồn điện",
+    "en": "the electrical power is isolated"
+   },
+   {
+    "vi": "trước hết bạn tự nối đất vào máy bay",
+    "en": "you ground yourself first to the aircraft"
+   },
+   {
+    "vi": "PCB được đặt trong túi nhựa cách điện",
+    "en": "the PCB is placed in an insulated plastic bag"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Phải xả điện tích của bản thân bằng dây đeo cổ tay nối đất vào khung máy bay trước khi chạm vào PCB; túi nhựa cách điện lại tích điện, còn cách ly nguồn không chống được ESD. (Tooley tr.203, 204)",
+   "en": "Discharge your own static first through a wrist strap bonded to the airframe before touching the PCB; an insulating plastic bag builds charge and isolating the power does not prevent ESD. (Tooley p.203, 204)"
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q1",
+   "en": "Tooley Revision Paper 7 Q1"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Phát biểu nào sau đây đúng?",
+   "en": "Which one of the following statements is true?"
+  },
+  "opts": [
+   {
+    "vi": "nhiễu dẫn có thể loại bỏ bằng che chắn",
+    "en": "Conducted noise can be eliminated by screening"
+   },
+   {
+    "vi": "EMC chỉ áp dụng cho thiết bị phát vô tuyến",
+    "en": "EMC only applies to radio transmitting apparatus"
+   },
+   {
+    "vi": "tín hiệu có cạnh sắc và thời gian tăng nhanh giàu hài",
+    "en": "Signals with sharp edges and fast rise times are rich in harmonics"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chuỗi Fourier của xung vuông chứa nhiều hài bậc cao; cạnh càng dốc thì phổ càng rộng. Nhiễu dẫn cần lọc (không phải che chắn) và EMC áp dụng cho mọi thiết bị điện. (Tooley tr.218, 220)",
+   "en": "The Fourier series of a square pulse holds many high harmonics; the sharper the edge, the wider the spectrum. Conducted noise needs filtering (not screening) and EMC applies to all electrical equipment. (Tooley p.218, 220)"
+  },
+  "topic": {
+   "vi": "Tín hiệu, phổ Fourier, máy phân tích phổ",
+   "en": "Signals, Fourier spectrum, spectrum analyser"
+  },
+  "topic_id": "spectrum",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q14",
+   "en": "Tooley Revision Paper 7 Q14"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khả năng của một thiết bị hoặc hệ thống hoạt động thoả đáng trong môi trường của nó mà không gây nhiễu điện từ không chấp nhận được cho bất cứ thứ gì trong môi trường đó được gọi là:",
+   "en": "The ability of a device or system to function satisfactorily in its environment without introducing intolerable electromagnetic disturbances to anything in that environment is known as:"
+  },
+  "opts": [
+   {
+    "vi": "bức xạ điện từ",
+    "en": "electromagnetic radiation"
+   },
+   {
+    "vi": "nhiễu điện từ",
+    "en": "electromagnetic interference"
+   },
+   {
+    "vi": "tương thích điện từ",
+    "en": "electromagnetic compatibility"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Đây là định nghĩa của tương thích điện từ (EMC). Bức xạ và nhiễu (EMI) là hiện tượng, không phải khả năng chung sống. (Tooley tr.178, 218)",
+   "en": "This is the definition of electromagnetic compatibility (EMC). Radiation and interference (EMI) are phenomena, not the ability to coexist. (Tooley p.178, 218)"
+  },
+  "topic": {
+   "vi": "EMC là gì và nhiễu từ đâu ra",
+   "en": "What EMC is and where interference comes from"
+  },
+  "topic_id": "what",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q2",
+   "en": "Tooley Revision Paper 8 Q2"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Linh kiện nhạy tĩnh điện (ESD) phải được cất giữ trong:",
+   "en": "Electrostatic sensitive devices (ESD) should be stored in:"
+  },
+  "opts": [
+   {
+    "vi": "túi chống tĩnh điện",
+    "en": "anti-static bags"
+   },
+   {
+    "vi": "thùng kim loại",
+    "en": "metal storage bins"
+   },
+   {
+    "vi": "hộp nhựa cách điện",
+    "en": "insulated plastic containers"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Túi chống tĩnh điện (dẫn điện nhẹ) giữ mọi chân cùng điện thế và không tích điện; hộp nhựa cách điện lại tích điện. (Tooley tr.204, 205)",
+   "en": "Anti-static bags (slightly conductive) keep all pins at one potential and do not build charge; insulated plastic builds static. (Tooley p.204, 205)"
+  },
+  "topic": {
+   "vi": "Phóng tĩnh điện (ESD) và linh kiện nhạy tĩnh điện",
+   "en": "Electrostatic discharge (ESD) and static-sensitive devices"
+  },
+  "topic_id": "esd",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q19",
+   "en": "Tooley Revision Paper 8 Q19"
+  }
+ }
+]

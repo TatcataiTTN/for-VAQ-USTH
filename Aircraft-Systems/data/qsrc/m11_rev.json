@@ -1,0 +1,114 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Mạch trong Hình A2.1 (hai cổng đảo mắc nối tiếp có điện trở phản hồi, tụ ghép và tinh thể thạch anh) là:",
+   "en": "The circuit shown in Figure A2.1 (two inverters in series with feedback resistors, a coupling capacitor and a quartz crystal) is:"
+  },
+  "opts": [
+   {
+    "vi": "bộ tạo xung nhịp (clock)",
+    "en": "a clock generator"
+   },
+   {
+    "vi": "bộ tạo sóng răng cưa",
+    "en": "a ramp generator"
+   },
+   {
+    "vi": "bộ dao động sóng sin",
+    "en": "a sine wave oscillator"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Mỗi cổng đảo có điện trở phản hồi được phân cực ở vùng tuyến tính; tinh thể đặt trong vòng phản hồi giữ tần số. Đầu ra Y là sóng vuông ổn định: bộ tạo xung nhịp.",
+   "en": "Each inverter with a feedback resistor is biased into its linear region; the crystal in the feedback loop fixes the frequency. The output Y is a stable square wave: a clock generator."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q7",
+   "en": "Tooley Revision Paper 1 Q7"
+  },
+  "fig": "assets/figures/tooley_A2_1.png"
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dữ liệu được chuyển từ nối tiếp sang song song và ngược lại bằng:",
+   "en": "Data is converted from serial to parallel and parallel to serial by means of:"
+  },
+  "opts": [
+   {
+    "vi": "thanh ghi song song",
+    "en": "a parallel register"
+   },
+   {
+    "vi": "thanh ghi dịch",
+    "en": "a shift register"
+   },
+   {
+    "vi": "bộ đếm không đồng bộ",
+    "en": "asynchronous counter"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Thanh ghi dịch nạp song song rồi dịch ra từng bit (và ngược lại): đó là bộ chuyển đổi nối tiếp/song song chuẩn. (Tooley tr.85, 87)",
+   "en": "A shift register loads in parallel and shifts out bit by bit (and the reverse): the standard serial/parallel converter. (Tooley p.85, 87)"
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 2 Q13",
+   "en": "Tooley Revision Paper 2 Q13"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Dữ liệu có thể được chuyển từ nối tiếp sang song song và ngược lại bằng:",
+   "en": "Data can be converted from serial to parallel and parallel to serial using:"
+  },
+  "opts": [
+   {
+    "vi": "thanh ghi dịch",
+    "en": "a shift register"
+   },
+   {
+    "vi": "thanh ghi song song",
+    "en": "a parallel register"
+   },
+   {
+    "vi": "bộ đếm không đồng bộ",
+    "en": "asynchronous counter"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Thanh ghi dịch nhận song song và xuất nối tiếp (hoặc ngược lại). (Tooley tr.85, 87)",
+   "en": "A shift register loads in parallel and outputs serially (or the reverse). (Tooley p.85, 87)"
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q17",
+   "en": "Tooley Revision Paper 7 Q17"
+  }
+ }
+]

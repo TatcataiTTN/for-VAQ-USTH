@@ -41,6 +41,10 @@ check('Floyd Ch.8 Self-Test 4: 11100100, hai bit ngoai cung ben phai cua 1011010
 reg = '11100100'; reg = '1' + reg[:-1]; reg = '0' + reg[:-1]; check('Floyd Ch.8 Self-Test 4 (tu tay): bit 1 roi bit 0 vao ben trai', reg == '01111001')
 check('Floyd Ch.8 Self-Test 5: 8 bit, 100 kHz = 80 us', S.serial_time(8, 100e3) == Fr(80, 10 ** 6)); check('Floyd Ch.8 Self-Test 9: 8 bit / 24 us = 333,3 kHz', abs(float(S.delay_clock(8, Fr(24, 10 ** 6))) - 333333.33) < 1)
 check('Floyd Ch.8 Self-Test 7, 8: Johnson mod 8 = 4 FF, vong mod 8 = 8 FF', len(S.johnson(4, 1)) == 4 and len({S.johnson(4, k) for k in range(20)}) == 8 and len({S.ring(8, k) for k in range(20)}) == 8)
+st_ = [1] * 7 + [0]; low_ = []
+for _ in range(16): low_.append(st_.index(0)); st_ = st_[-1:] + st_[:-1]
+check('Floyd Ch.8 Self-Test 10 (Hinh 8-36): bo dem vong bay bit 1 mot bit 0: moi xung dung mot hang THAP, du 8 hang roi lap lai', sorted(low_[:8]) == list(range(8)) and low_[:8] == low_[8:])
+check('Floyd Ch.8 Checkup 8-5: 5 kHz / 8 hang = 625 lan quet moi giay', 5000 // 8 == 625)
 check('Floyd Ch.9 Self-Test 10: 4 x 12 ns = 48 ns', S.ripple_delay(4, 12) == 48); check('Floyd Ch.9 Self-Test 14: 10 MHz / (5.8.10.10) = 2,5 kHz', S.freq_div(10e6, (5, 8, 10, 10)) == Fr(2500))
 check('Floyd Ch.9 Self-Test 15: xuong tu 0000 = 1111', S.down(4, 1, 0) == 15); check('Floyd Ch.9 Dung/Sai 7: 1000 -> 0111 khi dem xuong', S.down(4, 1, 8) == 7)
 check('Floyd Ch.9 Self-Test 13: 10^3 = 1000', S.cascade_mod((10, 10, 10)) == 1000); check('Floyd Ch.9 Self-Test 8: mod 12 can 4 FF', S.ffs_for_mod(12) == 4); check('Floyd Ch.9 Dung/Sai 6: mod 32 can 5 tang', S.ffs_for_mod(32) == 5)

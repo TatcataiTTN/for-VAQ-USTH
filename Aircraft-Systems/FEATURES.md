@@ -1,6 +1,6 @@
 # FEATURES — AE2.021 Aircraft-Systems
 
-Cập nhật 22/11/2026. Trạng thái: LÀM (sẽ dựng), CHỈNH (dựng có thay đổi), BỎ (kèm lý do). Cột "Hiện có" đo trên bản làm việc `$W/Aircraft-Systems/`.
+Cập nhật 22/11/2026 (đợt 2). Trạng thái: LÀM (sẽ dựng), CHỈNH (dựng có thay đổi), BỎ (kèm lý do). Cột "Hiện có" đo trên bản làm việc `$W/Aircraft-Systems/`.
 Bằng chứng khảo sát: đã ĐỌC mã engine của Thermal-Systems (`_shared/*.js`, `build/*.py`, `AGENT_BRIEF.md`). CHƯA mở bằng trình duyệt các site mẫu for-USTH/Calculus-1, for-PTIT/Discrete-Math, Electronics-2 (việc của P0b, còn LÀM). Không sao chép nội dung hay đề của site mẫu.
 
 | ID | Tính năng (nhãn UI VI / EN) | Quyết định | Hiện có | Phụ thuộc, test |
@@ -10,7 +10,7 @@ Bằng chứng khảo sát: đã ĐỌC mã engine của Thermal-Systems (`_shar
 | F03 | Module (9 có, 6 thêm theo 4b) | CHỈNH | 15 module: 9 chuyển bằng `build/legacy.py`, m10 đến m15 viết mới (không có slide, dựng từ Floyd và Tooley) | P4 |
 | F04 | Quiz nhanh trong trang module (10 câu, ưu tiên câu gốc) | LÀM | có | `site_test.py` |
 | F05 | Ngân hàng câu hỏi theo module (lọc nguồn/mức/chủ đề, lời giải chi tiết) | LÀM | có, 605 câu trắc nghiệm + 129 tự luận (sau khi gộp câu trùng) | `site_test.py` |
-| F06 | Luyện đề: kiểm tra đầu vào, Midterm, Final, Speed, Custom, hỗn hợp, theo module, Hard mức 3, Tooley Revision Papers, tự luận, tổng hợp, ôn câu sai, in A4 (thiết kế của site, ghi rõ) | LÀM | có (31 đề cố định + 4 hỗn hợp + 3 đề rút ngẫu nhiên trong trình duyệt); Tooley rev-2 đến rev-8 chưa đủ câu | `tests/exam_test.py` |
+| F06 | Luyện đề: kiểm tra đầu vào, Midterm, Final, Speed, Custom, hỗn hợp, theo module, Hard mức 3, Tooley Revision Papers (8 đề x 20 câu, 160 câu), tự luận, tổng hợp, ôn câu sai, in A4 (thiết kế của site, ghi rõ) | LÀM | có (31 đề cố định + 4 hỗn hợp + 3 đề rút ngẫu nhiên trong trình duyệt) | `tests/exam_test.py`, `build/verify/verify_rev.py` |
 | F07 | Viết tay (tự luận) | LÀM | có (`written/`) và đề tự luận có tính giờ trong Luyện đề | `tests/tools_test.py` |
 | F08 | Phân tích đề | LÀM | có (TF-IDF trong trình duyệt, báo ngoài danh mục) | `tests/tools_test.py` |
 | F09 | Khái niệm (Concept finder) | LÀM | có (mỗi chủ đề ngân hàng là một khái niệm) | `tests/tools_test.py` |

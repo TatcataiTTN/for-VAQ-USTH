@@ -1,0 +1,224 @@
+[
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một ADC R-2R có các điện trở:",
+   "en": "An R-2R ADC has values of resistance:"
+  },
+  "opts": [
+   {
+    "vi": "có độ chính xác tuyệt đối phải cao",
+    "en": "whose precision must be accurate"
+   },
+   {
+    "vi": "có độ chính xác tương đối (tỉ số) phải cao",
+    "en": "whose relative precision must be accurate"
+   },
+   {
+    "vi": "có độ chính xác không quan trọng",
+    "en": "whose precision are unimportant"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Mạng thang R-2R chỉ yêu cầu tỉ số 2:1 giữa các điện trở được khớp chính xác; giá trị tuyệt đối R có thể sai lệch. (Đề in là \"ADC\"; thang R-2R là mạng DAC, cũng nằm trong ADC xấp xỉ liên tiếp.) (Tooley tr.44, 47)",
+   "en": "An R-2R ladder only needs the 2:1 ratio between resistors to be accurate; the absolute value of R may drift. (The paper prints \"ADC\"; the R-2R ladder is a DAC network, also found inside a successive-approximation ADC.) (Tooley p.44, 47)"
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 1 Q17",
+   "en": "Tooley Revision Paper 1 Q17"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong bộ chuyển đổi tương tự sang số, điện áp đầu vào:",
+   "en": "In an analogue to digital converter, the input voltage:"
+  },
+  "opts": [
+   {
+    "vi": "có thể biến thiên liên tục",
+    "en": "can vary continuously in voltage level"
+   },
+   {
+    "vi": "chỉ có hai mức điện áp",
+    "en": "can have two possible voltage levels"
+   },
+   {
+    "vi": "chỉ có một mức cố định",
+    "en": "can only have one fixed voltage level"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Tín hiệu tương tự có thể nhận mọi giá trị trong dải; ADC lượng tử hoá nó thành các mã nhị phân rời rạc. (Tooley tr.39, 40)",
+   "en": "An analogue signal can take any value in its range; the ADC quantises it into discrete binary codes. (Tooley p.39, 40)"
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 4 Q5",
+   "en": "Tooley Revision Paper 4 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ phân giải của một DAC phụ thuộc vào:",
+   "en": "The resolution of a DAC depends on:"
+  },
+  "opts": [
+   {
+    "vi": "tốc độ hoạt động của thiết bị",
+    "en": "the speed at which the device operates"
+   },
+   {
+    "vi": "độ chính xác của điện áp tham chiếu",
+    "en": "the accuracy of the reference voltage used"
+   },
+   {
+    "vi": "số bit dùng trong quá trình chuyển đổi",
+    "en": "the number of bits used in the conversion process"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Độ phân giải là bước nhỏ nhất của đầu ra = Vref/2ⁿ, nên chỉ phụ thuộc số bit n; tốc độ và độ chính xác của Vref ảnh hưởng đến thông số khác. (Tooley tr.43, 45)",
+   "en": "Resolution is the smallest output step = Vref/2ⁿ, so it depends only on the number of bits n; speed and the accuracy of Vref affect other specifications. (Tooley p.43, 45)"
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 6 Q5",
+   "en": "Tooley Revision Paper 6 Q5"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Giá trị các điện trở trong DAC thang R-2R:",
+   "en": "The values of the resistors in an R-2R ladder DAC:"
+  },
+  "opts": [
+   {
+    "vi": "nên càng cao càng tốt",
+    "en": "should be as high as possible"
+   },
+   {
+    "vi": "không cần giá trị chính xác",
+    "en": "do not need to be of precise value"
+   },
+   {
+    "vi": "cần giữ chính xác tỉ số 1:2",
+    "en": "need to accurately maintain the 1:2 ratio"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Điện áp ra chỉ đúng khi tỉ số R và 2R chính xác; giá trị tuyệt đối của R không quan trọng. (Tooley tr.44, 47)",
+   "en": "The output is only correct if the R and 2R ratio is accurate; the absolute value of R does not matter. (Tooley p.44, 47)"
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 7 Q3",
+   "en": "Tooley Revision Paper 7 Q3"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong mạch DAC bốn bit, bước tăng là 50 mV. Điện áp ra tương tự khi đầu vào số là 0101 là bao nhiêu?",
+   "en": "In a four-bit DAC circuit the step increment is 50 mV. What will the analogue output be for a digital input of 0101?"
+  },
+  "opts": [
+   {
+    "vi": "0,15 V",
+    "en": "0.15 V"
+   },
+   {
+    "vi": "0,25 V",
+    "en": "0.25 V"
+   },
+   {
+    "vi": "0,35 V",
+    "en": "0.35 V"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "0101₂ = 5; 5 × 50 mV = 250 mV = 0,25 V. (Phương án (a) 0,15 V ứng với 0011.) Lưu ý: khoá in của sách ghi (a); site dùng đáp án đúng theo tính toán.",
+   "en": "0101₂ = 5; 5 × 50 mV = 250 mV = 0.25 V. (Option (a), 0.15 V, would be the output for 0011.) Note: the book's printed key says (a); the site uses the answer that follows from the calculation."
+  },
+  "topic": {
+   "vi": "DAC trọng số nhị phân và thang R-2R",
+   "en": "Binary-weighted and R-2R ladder DACs"
+  },
+  "topic_id": "dac",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q9 (khoá in (a), đúng (b))",
+   "en": "Tooley Revision Paper 8 Q9 (printed key (a), correct (b))"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Độ chính xác của đầu ra ADC xấp xỉ liên tiếp phần lớn phụ thuộc vào:",
+   "en": "Accuracy of the output of a successive approximation ADC is largely dependent on:"
+  },
+  "opts": [
+   {
+    "vi": "độ phân giải",
+    "en": "resolution"
+   },
+   {
+    "vi": "điện áp nguồn",
+    "en": "supply voltage"
+   },
+   {
+    "vi": "thời gian chuyển đổi",
+    "en": "conversion time"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Sai số lượng tử hoá của ADC là ±½ LSB = ±½·Vref/2ⁿ nên độ chính xác chủ yếu do độ phân giải (số bit n) quyết định; thời gian chuyển đổi (10 đến 100 µs, Tooley tr.47) chỉ quyết định tốc độ. Sách in khoá (c); site dùng (a) theo lý thuyết ADC, nên hỏi giảng viên nếu đề thi dùng khoá in. Lưu ý: khoá in của sách ghi (c); site dùng đáp án đúng theo tính toán.",
+   "en": "The quantisation error of an ADC is ±½ LSB = ±½·Vref/2ⁿ so accuracy is set mainly by the resolution (number of bits n); the conversion time (10 to 100 µs, Tooley p.47) only sets the speed. The book prints key (c); the site uses (a) from ADC theory, so check with the lecturer if the exam follows the printed key. Note: the book's printed key says (c); the site uses the answer that follows from the calculation."
+  },
+  "topic": {
+   "vi": "Các kiểu ADC",
+   "en": "Types of ADC"
+  },
+  "topic_id": "adc",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Tooley Revision Paper 8 Q11 (khoá in (c), đúng (a))",
+   "en": "Tooley Revision Paper 8 Q11 (printed key (c), correct (a))"
+  }
+ }
+]

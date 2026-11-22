@@ -1,0 +1,2092 @@
+[
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "CPU gồm ALU, bộ giải mã lệnh và khối định thời và điều khiển.",
+   "en": "A CPU consists of an ALU, an instruction decoder, and a timing and control unit."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ba khối chức năng của CPU là ALU, bộ giải mã lệnh và khối định thời và điều khiển (Floyd 14-1).",
+   "en": "The three functional units of a CPU are the ALU, the instruction decoder and the timing and control unit (Floyd 14-1)."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 1 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 1 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "CPU là viết tắt của \"computer peripheral unit\".",
+   "en": "CPU stands for computer peripheral unit."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "CPU là \"central processing unit\" (khối xử lý trung tâm).",
+   "en": "CPU stands for central processing unit."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 2 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 2 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ nhớ là các linh kiện bán dẫn lưu thông tin dưới dạng điện tử và giao tiếp với hệ máy tính qua các bus.",
+   "en": "Memory devices are semiconductor devices that store information electronically and interface with the computer system through buses."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ nhớ nối với CPU qua bus địa chỉ, dữ liệu và điều khiển (Floyd 14-1).",
+   "en": "Memory connects to the CPU over the address, data and control buses (Floyd 14-1)."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 3 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 3 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Hệ điều hành của máy tính là một thành phần phần mềm.",
+   "en": "The operating system of a computer is a software component."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hệ điều hành là phần mềm hệ thống, một trong hai nhóm phần mềm chạy trong máy tính (Floyd 14-6).",
+   "en": "The operating system is system software, one of the two groups of software that run in a computer (Floyd 14-6)."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 4 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 4 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "ALU là một phần tử then chốt của bộ vi xử lý.",
+   "en": "The ALU is a key element in a microprocessor."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "ALU thực hiện phép toán số học và logic, là một trong các phần tử cơ bản của vi xử lý (Floyd 14-3).",
+   "en": "The ALU performs the arithmetic and logic operations and is one of the basic elements of a microprocessor (Floyd 14-3)."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 5 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 5 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ vi xử lý thường có ba loại bus: địa chỉ, dữ liệu và điều khiển.",
+   "en": "Microprocessors generally have three types of buses: address, data, and control."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Ba bus của vi xử lý là bus địa chỉ, bus dữ liệu và bus điều khiển (Floyd 14-3).",
+   "en": "The three microprocessor buses are the address, data and control buses (Floyd 14-3)."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 6 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 6 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ nhớ BIOS chứa mã bậc cao riêng của từng chương trình ứng dụng.",
+   "en": "The BIOS memory contains program-specific high-level code."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "BIOS là phần mềm cơ sở lưu trong bộ nhớ không khả biến để khởi động và điều khiển phần cứng cấp thấp, không phải mã bậc cao của từng chương trình.",
+   "en": "The BIOS is basic firmware held in nonvolatile memory for start-up and low-level hardware control, not high-level code specific to a program."
+  },
+  "topic": {
+   "vi": "Bộ nhớ bán dẫn: RAM, ROM, Flash",
+   "en": "Semiconductor memory: RAM, ROM, flash"
+  },
+  "topic_id": "memory",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 7 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 7 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Bộ xử lý đa lõi có một bộ xử lý và nhiều bộ nhớ.",
+   "en": "A multicore processor has one processor and more than one memory."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bộ xử lý đa lõi có nhiều lõi xử lý trong một vi mạch, không phải nhiều bộ nhớ.",
+   "en": "A multicore processor has several processor cores in one chip, not several memories."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 8 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 8 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Pipelining cho phép máy tính chạy chương trình nhanh hơn.",
+   "en": "Pipelining allows a computer to execute a program faster."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Pipelining chồng lấn các giai đoạn của nhiều lệnh nên thông lượng tăng (Floyd 14-3).",
+   "en": "Pipelining overlaps the stages of several instructions so throughput rises (Floyd 14-3)."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 9 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 9 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Ba mức ngôn ngữ lập trình máy tính là ngôn ngữ máy, hợp ngữ và ngôn ngữ bậc cao.",
+   "en": "Three levels of computer programming languages are machine, assembly, and high level."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 14-7 phân ba mức: ngôn ngữ máy, hợp ngữ và ngôn ngữ bậc cao.",
+   "en": "Floyd 14-7 distinguishes three levels: machine language, assembly language and high-level language."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 10 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 10 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "DMA là viết tắt của \"direct memory access\" (truy cập bộ nhớ trực tiếp).",
+   "en": "DMA stands for direct memory access."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "DMA = direct memory access (Floyd 14-5).",
+   "en": "DMA = direct memory access (Floyd 14-5)."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 11 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 11 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Các tín hiệu của một thao tác DMA là yêu cầu bus (bus request), cấp bus (bus grant) và xác nhận cấp bus (bus grant acknowledge).",
+   "en": "The signals associated with a DMA operation are bus request, bus grant, and bus grant acknowledge."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ điều khiển DMA là một bus master dùng thao tác yêu cầu bus với ba tín hiệu BR, BG và BGACK (Floyd 14-5, Hình 14–25). Khoá in của sách ghi (F) mâu thuẫn với chính văn bản; site dùng đáp án đúng theo văn bản.",
+   "en": "A DMA controller is a bus master that uses the bus request operation with the three signals BR, BG and BGACK (Floyd 14-5, Figure 14–25). The book's printed key says (F), which contradicts its own text; the site uses the answer that follows the text."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 12 (khoá in (F), đúng (T); tr.853)",
+   "en": "Floyd Ch.14 · True/False 12 (printed key (F), correct (T); p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Vi xử lý (microprocessor) và vi điều khiển (microcontroller) là hai tên gọi của cùng một thứ.",
+   "en": "Microprocessor and microcontroller are different names for the same thing."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Vi điều khiển gộp lõi vi xử lý, bộ nhớ và các ngoại vi trong một vỏ; vi xử lý chỉ là CPU (Floyd 14-8).",
+   "en": "A microcontroller combines a processor core, memory and peripherals in one package; a microprocessor is only the CPU (Floyd 14-8)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 13 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 13 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "Một số ví dụ về ngoại vi của vi điều khiển là GPIO, ADC và bộ mã hoá vuông góc (quadrature encoder).",
+   "en": "Some examples of microcontroller peripherals are GPIOs, ADCs, and quadrature encoders."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Floyd 14-8 liệt kê GPIO, bộ điều khiển truyền thông, bộ định thời, bộ mã hoá vuông góc, PWM, bộ điều khiển bộ nhớ ngoài, ADC và DAC.",
+   "en": "Floyd 14-8 lists GPIO, communication controllers, timers, quadrature encoders, PWMs, external memory controllers, ADCs and DACs."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 14 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 14 (key p.853)"
+  }
+ },
+ {
+  "kind": "tf",
+  "q": {
+   "vi": "SoC là viết tắt của \"sequential output computer\".",
+   "en": "SoC stands for sequential output computer."
+  },
+  "opts": [
+   {
+    "vi": "Đúng",
+    "en": "True"
+   },
+   {
+    "vi": "Sai",
+    "en": "False"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "SoC = system on chip: mạch tích hợp gộp mọi thành phần của một hệ máy tính trên một chip (Floyd 14-9).",
+   "en": "SoC = system on chip: an integrated circuit that combines all components of a computer system on one chip (Floyd 14-9)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Đúng/Sai 15 (khoá tr.853)",
+   "en": "Floyd Ch.14 · True/False 15 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Khối nào sau đây là thiết bị ngoại vi của máy tính?",
+   "en": "Which of the following is a peripheral unit of a computer?"
+  },
+  "opts": [
+   {
+    "vi": "khối số học và logic",
+    "en": "Arithmetic and logic unit"
+   },
+   {
+    "vi": "khối điều khiển",
+    "en": "Control unit"
+   },
+   {
+    "vi": "khối bộ nhớ",
+    "en": "Memory unit"
+   },
+   {
+    "vi": "bàn phím",
+    "en": "Keyboard"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "ALU và khối điều khiển thuộc CPU, bộ nhớ là một khối chính của máy tính; bàn phím là thiết bị vào/ra, tức ngoại vi.",
+   "en": "The ALU and control unit are in the CPU and memory is a main block of the computer; the keyboard is an input/output device, i.e. a peripheral."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 1 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 1 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Hoạt động của khối định thời và điều khiển trong vi xử lý chịu ảnh hưởng của:",
+   "en": "The operation of the timing and control unit in a microprocessor is affected by"
+  },
+  "opts": [
+   {
+    "vi": "bộ giải mã lệnh",
+    "en": "the instruction decoder"
+   },
+   {
+    "vi": "thanh ghi tích luỹ",
+    "en": "the accumulator"
+   },
+   {
+    "vi": "khối số học và logic",
+    "en": "the arithmetic logic unit"
+   },
+   {
+    "vi": "dãy thanh ghi",
+    "en": "the register array"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Bộ giải mã lệnh cho khối định thời và điều khiển biết lệnh cần thực hiện nên quyết định chuỗi tín hiệu điều khiển.",
+   "en": "The instruction decoder tells the timing and control unit which instruction to carry out, so it determines the sequence of control signals."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 2 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 2 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bus địa chỉ 10 bit hỗ trợ:",
+   "en": "A 10-bit address bus supports"
+  },
+  "opts": [
+   {
+    "vi": "1 000 000 địa chỉ bộ nhớ",
+    "en": "1,000,000 memory addresses"
+   },
+   {
+    "vi": "1024 địa chỉ bộ nhớ",
+    "en": "1024 memory addresses"
+   },
+   {
+    "vi": "100 địa chỉ bộ nhớ",
+    "en": "100 memory addresses"
+   },
+   {
+    "vi": "1000 địa chỉ bộ nhớ",
+    "en": "1000 memory addresses"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "n bit địa chỉ cho 2ⁿ vị trí: 2¹⁰ = 1024.",
+   "en": "n address bits give 2ⁿ locations: 2¹⁰ = 1024."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 3 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 3 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bus dùng để truyền thông tin cả đến lẫn đi từ vi xử lý là:",
+   "en": "A bus that is used to transfer information both to and from the microprocessor is the"
+  },
+  "opts": [
+   {
+    "vi": "bus địa chỉ",
+    "en": "address bus"
+   },
+   {
+    "vi": "bus dữ liệu",
+    "en": "data bus"
+   },
+   {
+    "vi": "cả hai bus trên",
+    "en": "both of the above"
+   },
+   {
+    "vi": "không bus nào trong hai bus trên",
+    "en": "none of the above"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Bus dữ liệu hai chiều; bus địa chỉ một chiều, từ CPU ra.",
+   "en": "The data bus is bidirectional; the address bus is one-way, out of the CPU."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 4 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 4 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bus hệ thống (system bus) gồm:",
+   "en": "A system bus is composed of"
+  },
+  "opts": [
+   {
+    "vi": "bus địa chỉ",
+    "en": "address bus"
+   },
+   {
+    "vi": "bus dữ liệu",
+    "en": "data bus"
+   },
+   {
+    "vi": "bus điều khiển (sách in \"system bus\")",
+    "en": "control bus (the book prints \"system bus\")"
+   },
+   {
+    "vi": "các câu (a), (b) và (c)",
+    "en": "answers (a), (b), and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Bus hệ thống gồm bus địa chỉ, bus dữ liệu và bus điều khiển. Ở phương án (c) sách in \"system bus\" (có lẽ là lỗi in của \"control bus\"); khoá d vẫn đúng.",
+   "en": "The system bus is made up of the address, data and control buses. Option (c) is printed \"system bus\" in the book (probably a misprint of \"control bus\"); key (d) still stands."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 5 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 5 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trạng thái đầu ra thứ ba của linh kiện ba trạng thái (tri-state) gọi là:",
+   "en": "The third output state of a tri-state device is called"
+  },
+  "opts": [
+   {
+    "vi": "logic 0",
+    "en": "logic 0"
+   },
+   {
+    "vi": "logic 1",
+    "en": "logic 1"
+   },
+   {
+    "vi": "trạng thái trở kháng cao (high-Z)",
+    "en": "high-Z state"
+   },
+   {
+    "vi": "không phải các trạng thái trên",
+    "en": "none of the above"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Ngoài mức 0 và 1, đầu ra ba trạng thái có trạng thái trở kháng cao (high-Z): như bị ngắt khỏi bus.",
+   "en": "Besides 0 and 1 a tri-state output has the high-impedance (high-Z) state: it is effectively disconnected from the bus."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 6 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 6 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trong chu kỳ nạp lệnh (fetch) của bộ xử lý:",
+   "en": "During the fetch cycle of a processor"
+  },
+  "opts": [
+   {
+    "vi": "lệnh được đọc từ bộ nhớ",
+    "en": "instructions are read from the memory"
+   },
+   {
+    "vi": "dữ liệu được lưu làm kết quả",
+    "en": "data is stored as a result"
+   },
+   {
+    "vi": "dữ liệu được xử lý trong ALU",
+    "en": "the data is processed in the ALU"
+   },
+   {
+    "vi": "các lệnh được thực hiện trong bộ xử lý",
+    "en": "the instructions are executed in the processor"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ nạp lệnh đọc lệnh từ bộ nhớ; thực hiện lệnh là chu kỳ execute.",
+   "en": "The fetch cycle reads the instruction from memory; carrying it out is the execute cycle."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 7 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 7 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Vai trò của CPU là:",
+   "en": "The role of the CPU is to"
+  },
+  "opts": [
+   {
+    "vi": "điều khiển phần cứng hệ thống",
+    "en": "control the system hardware"
+   },
+   {
+    "vi": "hỗ trợ phần cứng cho hệ điều hành",
+    "en": "provide hardware support to the operating system"
+   },
+   {
+    "vi": "thực thi các chương trình ứng dụng",
+    "en": "execute application programs"
+   },
+   {
+    "vi": "các câu (a), (b) và (c)",
+    "en": "answers (a), (b), and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "CPU điều khiển phần cứng, hỗ trợ hệ điều hành và chạy chương trình ứng dụng: cả ba.",
+   "en": "The CPU controls the hardware, supports the operating system and runs application programs: all three."
+  },
+  "topic": {
+   "vi": "Kiến trúc bên trong CPU",
+   "en": "CPU internal architecture"
+  },
+  "topic_id": "cpu",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 8 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 8 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Ngôn ngữ bậc cao được chuyển thành ngôn ngữ máy nhờ:",
+   "en": "High level languages are converted to machine level language through"
+  },
+  "opts": [
+   {
+    "vi": "trình hợp dịch (assembler)",
+    "en": "an assembler"
+   },
+   {
+    "vi": "trình gỡ lỗi (debugger)",
+    "en": "a debugger"
+   },
+   {
+    "vi": "trình biên dịch (compiler)",
+    "en": "a compiler"
+   },
+   {
+    "vi": "trình dịch (translator)",
+    "en": "a translator"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Trình biên dịch dịch mã bậc cao thành mã máy; trình hợp dịch chuyển hợp ngữ thành mã máy.",
+   "en": "A compiler translates high-level code into machine code; an assembler turns assembly language into machine code."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 9 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 9 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Chương trình máy tính là một danh sách các:",
+   "en": "A computer program is a list of"
+  },
+  "opts": [
+   {
+    "vi": "địa chỉ bộ nhớ chứa dữ liệu dùng trong một phép toán",
+    "en": "memory addresses that contain data to be used in an operation"
+   },
+   {
+    "vi": "địa chỉ chứa các lệnh dùng trong một phép toán",
+    "en": "addresses that contain instructions to be used in an operation"
+   },
+   {
+    "vi": "lệnh được sắp xếp để đạt một kết quả xác định",
+    "en": "instructions arranged to achieve a specific result"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Chương trình là một dãy lệnh được sắp xếp để đạt kết quả nhất định (Floyd 14-7).",
+   "en": "A program is a list of instructions arranged to achieve a specific result (Floyd 14-7)."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 10 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 10 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Loại lệnh hợp ngữ làm thay đổi hướng chạy của chương trình gọi là:",
+   "en": "A type of assembly language instruction that alters the course of the program is called a"
+  },
+  "opts": [
+   {
+    "vi": "lặp (loop)",
+    "en": "loop"
+   },
+   {
+    "vi": "nhảy (jump)",
+    "en": "jump"
+   },
+   {
+    "vi": "cả hai câu trên",
+    "en": "both of the above"
+   },
+   {
+    "vi": "không câu nào trong hai câu trên",
+    "en": "none of the above"
+   }
+  ],
+  "correct": 2,
+  "explain": {
+   "vi": "Cả lệnh lặp lẫn lệnh nhảy đều làm thay đổi luồng chạy chương trình (Floyd 14-7).",
+   "en": "Both loop and jump instructions change the course of the program (Floyd 14-7)."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 11 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 11 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Trạng thái chờ (wait state):",
+   "en": "A wait state"
+  },
+  "opts": [
+   {
+    "vi": "kết thúc một chu kỳ bus",
+    "en": "terminates a bus cycle"
+   },
+   {
+    "vi": "dừng xung nhịp bộ xử lý trong một chu kỳ",
+    "en": "halts the processor clock for one period"
+   },
+   {
+    "vi": "đưa vi xử lý vào chế độ tiết kiệm điện",
+    "en": "places the microprocessor in a low-power mode"
+   },
+   {
+    "vi": "làm chậm việc hoàn thành chu kỳ bus thêm một chu kỳ xung nhịp",
+    "en": "delays completion of a bus cycle by one processor clock"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Trạng thái chờ là độ trễ trên bus hệ thống bằng một chu kỳ xung nhịp của bộ xử lý, dùng khi bộ nhớ hoặc thiết bị chậm (Floyd, Từ khoá).",
+   "en": "A wait state is a system-bus delay equal to one processor clock cycle, used when memory or a device is slow (Floyd, Key Terms)."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 12 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 12 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Yêu cầu bus (bus request) khác với ngắt (interrupt) ở chỗ:",
+   "en": "A bus request differs from an interrupt in that"
+  },
+  "opts": [
+   {
+    "vi": "ngắt cần một bus master bên ngoài để hoàn tất thao tác",
+    "en": "an interrupt requires an external bus master to complete the operation"
+   },
+   {
+    "vi": "yêu cầu bus sẽ cắt ngang chu kỳ lệnh đang thực hiện",
+    "en": "a bus request will interrupt a current instruction cycle"
+   },
+   {
+    "vi": "ngắt không thể bị che (mask)",
+    "en": "an interrupt cannot be masked"
+   },
+   {
+    "vi": "yêu cầu bus không cần bộ xử lý đáp ứng",
+    "en": "a bus request does not involve a response from the processor"
+   }
+  ],
+  "correct": 1,
+  "explain": {
+   "vi": "Floyd 14-5: thao tác yêu cầu bus KHÔNG đợi hoàn tất chu kỳ lệnh hiện tại, còn ngắt và ngoại lệ cho bộ xử lý hoàn tất lệnh rồi mới xử lý. Bộ xử lý phải đáp ứng bằng tín hiệu BG, và sách không nói ngắt \"không thể che\". Khoá in của sách ghi (c); site dùng (b) theo văn bản.",
+   "en": "Floyd 14-5: a bus request operation does NOT wait for the current instruction cycle to finish, whereas interrupts and exceptions let the processor complete the instruction first. The processor must respond with the BG signal, and the book never says an interrupt \"cannot be masked\". The book prints key (c); the site uses (b) from the text."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 13 (khoá in (c), đúng (b); tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 13 (printed key (c), correct (b); p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một hệ điều hành:",
+   "en": "An operating system"
+  },
+  "opts": [
+   {
+    "vi": "lập lịch và cấp phát tài nguyên hệ thống",
+    "en": "schedules and allocates system resources"
+   },
+   {
+    "vi": "bảo vệ các tiến trình và tài nguyên hệ thống",
+    "en": "protects the system processes and resources"
+   },
+   {
+    "vi": "cung cấp các dịch vụ hệ thống",
+    "en": "provides system services"
+   },
+   {
+    "vi": "các câu (a), (b) và (c)",
+    "en": "answers (a), (b), and (c)"
+   }
+  ],
+  "correct": 3,
+  "explain": {
+   "vi": "Hệ điều hành lập lịch và cấp phát tài nguyên, bảo vệ tiến trình và cung cấp dịch vụ hệ thống: cả ba (Floyd 14-6).",
+   "en": "An operating system schedules and allocates resources, protects processes and provides system services: all three (Floyd 14-6)."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 14 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 14 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Từ gợi nhớ (mnemonic) hay mã lệnh (op-code) là một phần của:",
+   "en": "Mnemonics or op-codes are a part of"
+  },
+  "opts": [
+   {
+    "vi": "ngôn ngữ cấp hợp ngữ",
+    "en": "assembly level languages"
+   },
+   {
+    "vi": "ngôn ngữ cấp máy",
+    "en": "machine level languages"
+   },
+   {
+    "vi": "ngôn ngữ bậc cao",
+    "en": "high level languages"
+   },
+   {
+    "vi": "không loại nào ở trên",
+    "en": "none of the above"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Hợp ngữ dùng từ gợi nhớ (ví dụ MOV, ADD) thay cho mã nhị phân của lệnh.",
+   "en": "Assembly language uses mnemonics (e.g. MOV, ADD) in place of the binary code of an instruction."
+  },
+  "topic": {
+   "vi": "Hệ điều hành và lập trình",
+   "en": "Operating systems and programming"
+  },
+  "topic_id": "prog",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.14 · Self-Test 15 (khoá tr.853)",
+   "en": "Floyd Ch.14 · Self-Test 15 (key p.853)"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ xử lý có bus địa chỉ 10 bit. Số vị trí bộ nhớ khác nhau mà nó có thể đánh địa chỉ là:",
+   "en": "A processor has a 10-bit address bus. The number of different memory locations it can address is:"
+  },
+  "opts": [
+   {
+    "vi": "1 024",
+    "en": "1,024"
+   },
+   {
+    "vi": "512",
+    "en": "512"
+   },
+   {
+    "vi": "20",
+    "en": "20"
+   },
+   {
+    "vi": "2 048",
+    "en": "2,048"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{10}$ = 1 024 vị trí.",
+   "en": "$2^{10}$ = 1,024 locations."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Không gian địa chỉ",
+   "en": "Added · Address space"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ xử lý có bus địa chỉ 16 bit. Số vị trí bộ nhớ khác nhau mà nó có thể đánh địa chỉ là:",
+   "en": "A processor has a 16-bit address bus. The number of different memory locations it can address is:"
+  },
+  "opts": [
+   {
+    "vi": "65 536",
+    "en": "65,536"
+   },
+   {
+    "vi": "32 768",
+    "en": "32,768"
+   },
+   {
+    "vi": "32",
+    "en": "32"
+   },
+   {
+    "vi": "131 072",
+    "en": "131,072"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{16}$ = 65 536 vị trí.",
+   "en": "$2^{16}$ = 65,536 locations."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Không gian địa chỉ",
+   "en": "Added · Address space"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ xử lý có bus địa chỉ 20 bit. Số vị trí bộ nhớ khác nhau mà nó có thể đánh địa chỉ là:",
+   "en": "A processor has a 20-bit address bus. The number of different memory locations it can address is:"
+  },
+  "opts": [
+   {
+    "vi": "1 048 576",
+    "en": "1,048,576"
+   },
+   {
+    "vi": "524 288",
+    "en": "524,288"
+   },
+   {
+    "vi": "40",
+    "en": "40"
+   },
+   {
+    "vi": "2 097 152",
+    "en": "2,097,152"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{20}$ = 1 048 576 vị trí.",
+   "en": "$2^{20}$ = 1,048,576 locations."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Không gian địa chỉ",
+   "en": "Added · Address space"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ xử lý có bus địa chỉ 32 bit. Số vị trí bộ nhớ khác nhau mà nó có thể đánh địa chỉ là:",
+   "en": "A processor has a 32-bit address bus. The number of different memory locations it can address is:"
+  },
+  "opts": [
+   {
+    "vi": "4 294 967 296",
+    "en": "4,294,967,296"
+   },
+   {
+    "vi": "2 147 483 648",
+    "en": "2,147,483,648"
+   },
+   {
+    "vi": "64",
+    "en": "64"
+   },
+   {
+    "vi": "8 589 934 592",
+    "en": "8,589,934,592"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$2^{32}$ = 4 294 967 296 vị trí.",
+   "en": "$2^{32}$ = 4,294,967,296 locations."
+  },
+  "topic": {
+   "vi": "Cấu trúc hệ máy tính",
+   "en": "Computer system structure"
+  },
+  "topic_id": "structure",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Không gian địa chỉ",
+   "en": "Added · Address space"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ điều chế độ rộng xung (PWM) cấp xung biên độ 12 V, mức cao kéo dài 2 ms trong chu kỳ 8 ms cho một động cơ. Điện áp trung bình đặt lên động cơ là:",
+   "en": "A pulse width modulator supplies a 12 V pulse train, HIGH for 2 ms in each 8 ms period, to a motor. The average voltage applied to the motor is:"
+  },
+  "opts": [
+   {
+    "vi": "3 V",
+    "en": "3 V"
+   },
+   {
+    "vi": "9 V",
+    "en": "9 V"
+   },
+   {
+    "vi": "6 V",
+    "en": "6 V"
+   },
+   {
+    "vi": "48 V",
+    "en": "48 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ làm việc $D=2/8$ = 25 %; $V_{tb}=D\\times V_s=0.25\\times12$ = 3 V (Floyd 14-8: đổi chu kỳ làm việc để chỉnh tốc độ động cơ).",
+   "en": "Duty cycle $D=2/8$ = 25 %; $V_{avg}=D\\times V_s=0.25\\times12$ = 3 V (Floyd 14-8: the duty cycle sets the motor speed)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện áp trung bình PWM",
+   "en": "Added · Average PWM voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ điều chế độ rộng xung (PWM) cấp xung biên độ 5 V, mức cao kéo dài 3 ms trong chu kỳ 4 ms cho một động cơ. Điện áp trung bình đặt lên động cơ là:",
+   "en": "A pulse width modulator supplies a 5 V pulse train, HIGH for 3 ms in each 4 ms period, to a motor. The average voltage applied to the motor is:"
+  },
+  "opts": [
+   {
+    "vi": "3.75 V",
+    "en": "3.75 V"
+   },
+   {
+    "vi": "1.25 V",
+    "en": "1.25 V"
+   },
+   {
+    "vi": "2.5 V",
+    "en": "2.5 V"
+   },
+   {
+    "vi": "6.66667 V",
+    "en": "6.66667 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ làm việc $D=3/4$ = 75 %; $V_{tb}=D\\times V_s=0.75\\times5$ = 3.75 V (Floyd 14-8: đổi chu kỳ làm việc để chỉnh tốc độ động cơ).",
+   "en": "Duty cycle $D=3/4$ = 75 %; $V_{avg}=D\\times V_s=0.75\\times5$ = 3.75 V (Floyd 14-8: the duty cycle sets the motor speed)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện áp trung bình PWM",
+   "en": "Added · Average PWM voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ điều chế độ rộng xung (PWM) cấp xung biên độ 24 V, mức cao kéo dài 1 ms trong chu kỳ 5 ms cho một động cơ. Điện áp trung bình đặt lên động cơ là:",
+   "en": "A pulse width modulator supplies a 24 V pulse train, HIGH for 1 ms in each 5 ms period, to a motor. The average voltage applied to the motor is:"
+  },
+  "opts": [
+   {
+    "vi": "4.8 V",
+    "en": "4.8 V"
+   },
+   {
+    "vi": "19.2 V",
+    "en": "19.2 V"
+   },
+   {
+    "vi": "12 V",
+    "en": "12 V"
+   },
+   {
+    "vi": "120 V",
+    "en": "120 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ làm việc $D=1/5$ = 20 %; $V_{tb}=D\\times V_s=0.2\\times24$ = 4.8 V (Floyd 14-8: đổi chu kỳ làm việc để chỉnh tốc độ động cơ).",
+   "en": "Duty cycle $D=1/5$ = 20 %; $V_{avg}=D\\times V_s=0.2\\times24$ = 4.8 V (Floyd 14-8: the duty cycle sets the motor speed)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện áp trung bình PWM",
+   "en": "Added · Average PWM voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ điều chế độ rộng xung (PWM) cấp xung biên độ 9 V, mức cao kéo dài 6 ms trong chu kỳ 10 ms cho một động cơ. Điện áp trung bình đặt lên động cơ là:",
+   "en": "A pulse width modulator supplies a 9 V pulse train, HIGH for 6 ms in each 10 ms period, to a motor. The average voltage applied to the motor is:"
+  },
+  "opts": [
+   {
+    "vi": "5.4 V",
+    "en": "5.4 V"
+   },
+   {
+    "vi": "3.6 V",
+    "en": "3.6 V"
+   },
+   {
+    "vi": "4.5 V",
+    "en": "4.5 V"
+   },
+   {
+    "vi": "15 V",
+    "en": "15 V"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ làm việc $D=6/10$ = 60 %; $V_{tb}=D\\times V_s=0.6\\times9$ = 5.4 V (Floyd 14-8: đổi chu kỳ làm việc để chỉnh tốc độ động cơ).",
+   "en": "Duty cycle $D=6/10$ = 60 %; $V_{avg}=D\\times V_s=0.6\\times9$ = 5.4 V (Floyd 14-8: the duty cycle sets the motor speed)."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Điện áp trung bình PWM",
+   "en": "Added · Average PWM voltage"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu PWM ở mức cao 2 ms trong mỗi chu kỳ 8 ms. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A PWM signal is HIGH for 2 ms in every 8 ms period. Its duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "75 %",
+    "en": "75 %"
+   },
+   {
+    "vi": "4 %",
+    "en": "4 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$D=t_{cao}/T=2/8$ = 25 %.",
+   "en": "$D=t_{high}/T=2/8$ = 25 %."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu PWM ở mức cao 3 ms trong mỗi chu kỳ 12 ms. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A PWM signal is HIGH for 3 ms in every 12 ms period. Its duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "75 %",
+    "en": "75 %"
+   },
+   {
+    "vi": "4 %",
+    "en": "4 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$D=t_{cao}/T=3/12$ = 25 %.",
+   "en": "$D=t_{high}/T=3/12$ = 25 %."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu PWM ở mức cao 5 ms trong mỗi chu kỳ 20 ms. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A PWM signal is HIGH for 5 ms in every 20 ms period. Its duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "25 %",
+    "en": "25 %"
+   },
+   {
+    "vi": "75 %",
+    "en": "75 %"
+   },
+   {
+    "vi": "4 %",
+    "en": "4 %"
+   },
+   {
+    "vi": "12.5 %",
+    "en": "12.5 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$D=t_{cao}/T=5/20$ = 25 %.",
+   "en": "$D=t_{high}/T=5/20$ = 25 %."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một tín hiệu PWM ở mức cao 6 ms trong mỗi chu kỳ 10 ms. Chu kỳ làm việc (duty cycle) là:",
+   "en": "A PWM signal is HIGH for 6 ms in every 10 ms period. Its duty cycle is:"
+  },
+  "opts": [
+   {
+    "vi": "60 %",
+    "en": "60 %"
+   },
+   {
+    "vi": "40 %",
+    "en": "40 %"
+   },
+   {
+    "vi": "1.66667 %",
+    "en": "1.66667 %"
+   },
+   {
+    "vi": "30 %",
+    "en": "30 %"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$D=t_{cao}/T=6/10$ = 60 %.",
+   "en": "$D=t_{high}/T=6/10$ = 60 %."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 1,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Chu kỳ làm việc",
+   "en": "Added · Duty cycle"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ định thời của vi điều khiển chạy xung nhịp 16 MHz, chia trước (prescaler) 8, và đếm 2 000 xung đã chia. Khoảng thời gian đo được là:",
+   "en": "A microcontroller timer runs from a 16 MHz clock with a prescaler of 8 and counts 2,000 prescaled pulses. The interval it measures is:"
+  },
+  "opts": [
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   },
+   {
+    "vi": "1000 ms",
+    "en": "1000 ms"
+   },
+   {
+    "vi": "0.001 ms",
+    "en": "0.001 ms"
+   },
+   {
+    "vi": "4 ms",
+    "en": "4 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=\\text{đếm}\\times\\text{prescaler}/f_{clk}=2000\\times8/(16\\times10^6)$ = 1 ms.",
+   "en": "$t=\\text{count}\\times\\text{prescaler}/f_{clk}=2000\\times8/(16\\times10^6)$ = 1 ms."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khoảng thời gian bộ định thời",
+   "en": "Added · Timer interval"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ định thời của vi điều khiển chạy xung nhịp 8 MHz, chia trước (prescaler) 64, và đếm 1 250 xung đã chia. Khoảng thời gian đo được là:",
+   "en": "A microcontroller timer runs from a 8 MHz clock with a prescaler of 64 and counts 1,250 prescaled pulses. The interval it measures is:"
+  },
+  "opts": [
+   {
+    "vi": "10 ms",
+    "en": "10 ms"
+   },
+   {
+    "vi": "10000 ms",
+    "en": "10000 ms"
+   },
+   {
+    "vi": "0.01 ms",
+    "en": "0.01 ms"
+   },
+   {
+    "vi": "80 ms",
+    "en": "80 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=\\text{đếm}\\times\\text{prescaler}/f_{clk}=1250\\times64/(8\\times10^6)$ = 10 ms.",
+   "en": "$t=\\text{count}\\times\\text{prescaler}/f_{clk}=1250\\times64/(8\\times10^6)$ = 10 ms."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khoảng thời gian bộ định thời",
+   "en": "Added · Timer interval"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ định thời của vi điều khiển chạy xung nhịp 1 MHz, chia trước (prescaler) 1, và đếm 1 000 xung đã chia. Khoảng thời gian đo được là:",
+   "en": "A microcontroller timer runs from a 1 MHz clock with a prescaler of 1 and counts 1,000 prescaled pulses. The interval it measures is:"
+  },
+  "opts": [
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   },
+   {
+    "vi": "1000 ms",
+    "en": "1000 ms"
+   },
+   {
+    "vi": "0.001 ms",
+    "en": "0.001 ms"
+   },
+   {
+    "vi": "8 ms",
+    "en": "8 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=\\text{đếm}\\times\\text{prescaler}/f_{clk}=1000\\times1/(1\\times10^6)$ = 1 ms.",
+   "en": "$t=\\text{count}\\times\\text{prescaler}/f_{clk}=1000\\times1/(1\\times10^6)$ = 1 ms."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khoảng thời gian bộ định thời",
+   "en": "Added · Timer interval"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một bộ định thời của vi điều khiển chạy xung nhịp 20 MHz, chia trước (prescaler) 256, và đếm 78 125 xung đã chia. Khoảng thời gian đo được là:",
+   "en": "A microcontroller timer runs from a 20 MHz clock with a prescaler of 256 and counts 78,125 prescaled pulses. The interval it measures is:"
+  },
+  "opts": [
+   {
+    "vi": "1000 ms",
+    "en": "1000 ms"
+   },
+   {
+    "vi": "1e+06 ms",
+    "en": "1e+06 ms"
+   },
+   {
+    "vi": "1 ms",
+    "en": "1 ms"
+   },
+   {
+    "vi": "8000 ms",
+    "en": "8000 ms"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=\\text{đếm}\\times\\text{prescaler}/f_{clk}=78125\\times256/(20\\times10^6)$ = 1000 ms.",
+   "en": "$t=\\text{count}\\times\\text{prescaler}/f_{clk}=78125\\times256/(20\\times10^6)$ = 1000 ms."
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Khoảng thời gian bộ định thời",
+   "en": "Added · Timer interval"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm 16 bit của bộ mã hoá vuông góc đếm 1000 xung mỗi giây. Thời gian để nó đếm đủ 2^16 xung và tràn là:",
+   "en": "The 16-bit counter of a quadrature encoder counts 1000 pulses per second. The time for it to count 2^16 pulses and overflow is:"
+  },
+  "opts": [
+   {
+    "vi": "65.54 giây",
+    "en": "65.54 s"
+   },
+   {
+    "vi": "65536 giây",
+    "en": "65536 s"
+   },
+   {
+    "vi": "0.07 giây",
+    "en": "0.07 s"
+   },
+   {
+    "vi": "32.77 giây",
+    "en": "32.77 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=2^{16}/1000$ = 65.536 s = 65.54 giây. (Floyd: bộ đếm của bộ mã hoá vuông góc thường rộng 32 bit trở lên để tránh tràn.)",
+   "en": "$t=2^{16}/1000$ = 65.536 s = 65.54 s. (Floyd: quadrature-encoder counters are typically 32 bits or wider to avoid overflow.)"
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian tràn bộ đếm",
+   "en": "Added · Counter overflow time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm 32 bit của bộ mã hoá vuông góc đếm 1e+06 xung mỗi giây. Thời gian để nó đếm đủ 2^32 xung và tràn là:",
+   "en": "The 32-bit counter of a quadrature encoder counts 1e+06 pulses per second. The time for it to count 2^32 pulses and overflow is:"
+  },
+  "opts": [
+   {
+    "vi": "71.58 phút",
+    "en": "71.58 min"
+   },
+   {
+    "vi": "71582.79 phút",
+    "en": "71582.79 min"
+   },
+   {
+    "vi": "0.07 phút",
+    "en": "0.07 min"
+   },
+   {
+    "vi": "35.79 phút",
+    "en": "35.79 min"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=2^{32}/1e+06$ = 4294.967296 s = 71.58 phút. (Floyd: bộ đếm của bộ mã hoá vuông góc thường rộng 32 bit trở lên để tránh tràn.)",
+   "en": "$t=2^{32}/1e+06$ = 4294.967296 s = 71.58 min. (Floyd: quadrature-encoder counters are typically 32 bits or wider to avoid overflow.)"
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian tràn bộ đếm",
+   "en": "Added · Counter overflow time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm 32 bit của bộ mã hoá vuông góc đếm 1000 xung mỗi giây. Thời gian để nó đếm đủ 2^32 xung và tràn là:",
+   "en": "The 32-bit counter of a quadrature encoder counts 1000 pulses per second. The time for it to count 2^32 pulses and overflow is:"
+  },
+  "opts": [
+   {
+    "vi": "49.71 ngày",
+    "en": "49.71 days"
+   },
+   {
+    "vi": "49710.27 ngày",
+    "en": "49710.27 days"
+   },
+   {
+    "vi": "0.05 ngày",
+    "en": "0.05 days"
+   },
+   {
+    "vi": "24.86 ngày",
+    "en": "24.86 days"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=2^{32}/1000$ = 4294967.296 s = 49.71 ngày. (Floyd: bộ đếm của bộ mã hoá vuông góc thường rộng 32 bit trở lên để tránh tràn.)",
+   "en": "$t=2^{32}/1000$ = 4294967.296 s = 49.71 days. (Floyd: quadrature-encoder counters are typically 32 bits or wider to avoid overflow.)"
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian tràn bộ đếm",
+   "en": "Added · Counter overflow time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Bộ đếm 16 bit của bộ mã hoá vuông góc đếm 100 xung mỗi giây. Thời gian để nó đếm đủ 2^16 xung và tràn là:",
+   "en": "The 16-bit counter of a quadrature encoder counts 100 pulses per second. The time for it to count 2^16 pulses and overflow is:"
+  },
+  "opts": [
+   {
+    "vi": "655.36 giây",
+    "en": "655.36 s"
+   },
+   {
+    "vi": "655360 giây",
+    "en": "655360 s"
+   },
+   {
+    "vi": "0.66 giây",
+    "en": "0.66 s"
+   },
+   {
+    "vi": "327.68 giây",
+    "en": "327.68 s"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "$t=2^{16}/100$ = 655.36 s = 655.36 giây. (Floyd: bộ đếm của bộ mã hoá vuông góc thường rộng 32 bit trở lên để tránh tràn.)",
+   "en": "$t=2^{16}/100$ = 655.36 s = 655.36 s. (Floyd: quadrature-encoder counters are typically 32 bits or wider to avoid overflow.)"
+  },
+  "topic": {
+   "vi": "Vi điều khiển, hệ nhúng và SoC",
+   "en": "Microcontrollers, embedded systems and SoC"
+  },
+  "topic_id": "mcu",
+  "level": 3,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Thời gian tràn bộ đếm",
+   "en": "Added · Counter overflow time"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một chu kỳ bus gồm 3 chu kỳ xung nhịp ở 50 MHz. Nếu thêm 2 trạng thái chờ (wait state) thì chu kỳ bus kéo dài:",
+   "en": "A bus cycle takes 3 clock periods at 50 MHz. If 2 wait state(s) are added the bus cycle lasts:"
+  },
+  "opts": [
+   {
+    "vi": "100 ns",
+    "en": "100 ns"
+   },
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "120 ns",
+    "en": "120 ns"
+   },
+   {
+    "vi": "200 ns",
+    "en": "200 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ xung nhịp = 1000/50 = 20 ns; (3 + 2) × 20 = 100 ns (mỗi wait state thêm một chu kỳ xung nhịp, Floyd 14-2).",
+   "en": "Clock period = 1000/50 = 20 ns; (3 + 2) × 20 = 100 ns (each wait state adds one clock period, Floyd 14-2)."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trạng thái chờ",
+   "en": "Added · Wait states"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một chu kỳ bus gồm 4 chu kỳ xung nhịp ở 100 MHz. Nếu thêm 1 trạng thái chờ (wait state) thì chu kỳ bus kéo dài:",
+   "en": "A bus cycle takes 4 clock periods at 100 MHz. If 1 wait state(s) are added the bus cycle lasts:"
+  },
+  "opts": [
+   {
+    "vi": "50 ns",
+    "en": "50 ns"
+   },
+   {
+    "vi": "40 ns",
+    "en": "40 ns"
+   },
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   },
+   {
+    "vi": "100 ns",
+    "en": "100 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ xung nhịp = 1000/100 = 10 ns; (4 + 1) × 10 = 50 ns (mỗi wait state thêm một chu kỳ xung nhịp, Floyd 14-2).",
+   "en": "Clock period = 1000/100 = 10 ns; (4 + 1) × 10 = 50 ns (each wait state adds one clock period, Floyd 14-2)."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trạng thái chờ",
+   "en": "Added · Wait states"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một chu kỳ bus gồm 3 chu kỳ xung nhịp ở 25 MHz. Nếu thêm 0 trạng thái chờ (wait state) thì chu kỳ bus kéo dài:",
+   "en": "A bus cycle takes 3 clock periods at 25 MHz. If 0 wait state(s) are added the bus cycle lasts:"
+  },
+  "opts": [
+   {
+    "vi": "120 ns",
+    "en": "120 ns"
+   },
+   {
+    "vi": "160 ns",
+    "en": "160 ns"
+   },
+   {
+    "vi": "240 ns",
+    "en": "240 ns"
+   },
+   {
+    "vi": "60 ns",
+    "en": "60 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ xung nhịp = 1000/25 = 40 ns; (3 + 0) × 40 = 120 ns (mỗi wait state thêm một chu kỳ xung nhịp, Floyd 14-2).",
+   "en": "Clock period = 1000/25 = 40 ns; (3 + 0) × 40 = 120 ns (each wait state adds one clock period, Floyd 14-2)."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trạng thái chờ",
+   "en": "Added · Wait states"
+  }
+ },
+ {
+  "kind": "mcq",
+  "q": {
+   "vi": "Một chu kỳ bus gồm 2 chu kỳ xung nhịp ở 40 MHz. Nếu thêm 3 trạng thái chờ (wait state) thì chu kỳ bus kéo dài:",
+   "en": "A bus cycle takes 2 clock periods at 40 MHz. If 3 wait state(s) are added the bus cycle lasts:"
+  },
+  "opts": [
+   {
+    "vi": "125 ns",
+    "en": "125 ns"
+   },
+   {
+    "vi": "50 ns",
+    "en": "50 ns"
+   },
+   {
+    "vi": "150 ns",
+    "en": "150 ns"
+   },
+   {
+    "vi": "250 ns",
+    "en": "250 ns"
+   }
+  ],
+  "correct": 0,
+  "explain": {
+   "vi": "Chu kỳ xung nhịp = 1000/40 = 25 ns; (2 + 3) × 25 = 125 ns (mỗi wait state thêm một chu kỳ xung nhịp, Floyd 14-2).",
+   "en": "Clock period = 1000/40 = 25 ns; (2 + 3) × 25 = 125 ns (each wait state adds one clock period, Floyd 14-2)."
+  },
+  "topic": {
+   "vi": "Chu trình lệnh và thời gian",
+   "en": "Instruction cycle and timing"
+  },
+  "topic_id": "cycle",
+  "level": 2,
+  "origin": "bo_sung",
+  "src": {
+   "vi": "Bổ sung · Trạng thái chờ",
+   "en": "Added · Wait states"
+  }
+ }
+]

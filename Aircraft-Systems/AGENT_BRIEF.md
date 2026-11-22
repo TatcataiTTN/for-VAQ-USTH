@@ -18,3 +18,10 @@
 
 ## Lỗi/không khớp nguồn đã biết (chưa kiểm lại, theo prompt R3)
 Floyd Ch.2 bài 5(c), 29(b), 37(g); Ch.3 bài 31; Ch.4 bài 21(b), 61, 67 (mã 1010); Ch.4 bài 3, 15; Ch.6 bài 25, 27, 29; Self-Test #28 Ch.13 (khoá in (b), đúng (d)); Tooley Ch.11 khoá câu 4 mâu thuẫn câu 2; slide EMC 21 (10 kW, đúng 100 kW); slide Optic_Fiber 9, 19, 24–26, 28, 30; slide Electronic displays; đề cương ghi Tooley 2007 nhưng file là Third Edition; thiếu [3] AeroGATES và [4] VAR Part 7.
+
+## Thêm sau 22/11/2026 (đợt 2)
+- Ngân hàng câu hỏi: nguồn `data/qsrc/mNN*.json` (đã là NGUỒN SỰ THẬT; `data/quiz/` chỉ lưu trữ). Sinh bằng `build/gen/*.py`; riêng 8 đề Tooley Revision Papers: `python3 build/gen/make_rev.py` (dữ liệu `gen_rev_a/b/c.py`, vá câu cũ `gen_rev_fix.py`); phần vi điều khiển: `python3 build/gen/gen_m04_mcu.py`. Sau đó `python3 build/assemble.py && python3 build/build_site.py`.
+- Id câu = sha1(loại | đề tiếng Anh | đáp án đúng). Đổi chữ đề hay đáp án đúng đổi id. Trình duyệt lưu CHỈ SỐ lựa chọn, nên `data/published_ids.json` đóng băng thứ tự lựa chọn của câu đã lên web; `build/push.sh` cập nhật file này sau mỗi lần push.
+- Khoá in sai của sách: dùng đáp án đúng, nhãn nguồn ghi "khoá in (x), đúng (y)", ghi trong `data/verify/mNN_notes.json`; mỗi script `build/verify/verify_*.py` phải in `FAILS: none`.
+- Câu có hình: trường `fig` (đường dẫn từ gốc site). Hình Tooley Appendix 2 cắt bằng `scratch/rev_figs.py`.
+- Không `sed -i` kiểu GNU trên macOS (dùng Python để sửa file).
