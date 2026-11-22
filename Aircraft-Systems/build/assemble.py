@@ -63,6 +63,16 @@ def vi_numbers(vi, en):
     return vi
 SCI_TXT = re.compile(r'(?<![\w.,])(\d+(?:[.,]\d+)?)[eE]([+-]?\d+)(?!\w)')
 def sci_text(t): return SCI_TXT.sub(lambda m: f'{m.group(1)}×10{str(int(m.group(2))).translate(SUP)}', t)    # '1.68e-8' in a sentence -> '1.68×10⁻⁸'
+SUB_MAP = dict(zip('0123456789+-=()aeoxhklmnpstirvu', '₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓₕₖₗₘₙₚₛₜᵢᵣᵥᵤ')); SUP_MAP = dict(zip('0123456789+-=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ'))
+def plain(t):
+    """Legacy essay text carries HTML (<br>, &nbsp;, <sub>16</sub>, <i>, <b>) but the pages print it as plain text: <br> -> newline, &nbsp; -> space, <sub>/<sup> -> Unicode sub/superscripts, other tags dropped."""
+    if not isinstance(t, str) or not re.search(r'<[a-z/][^>]*>|&[a-z]+;', t): return t
+    t = re.sub(r'<br\s*/?>', '\n', t); t = t.replace('&nbsp;', ' ')
+    t = re.sub(r'<sub>(.*?)</sub>', lambda m: ''.join(SUB_MAP.get(c, c) for c in m.group(1)) if all(c in SUB_MAP for c in m.group(1)) else '_' + m.group(1), t)
+    t = re.sub(r'<sup>(.*?)</sup>', lambda m: ''.join(SUP_MAP.get(c, c) for c in m.group(1)) if all(c in SUP_MAP for c in m.group(1)) else '^' + m.group(1), t)
+    t = re.sub(r'</?[a-z][^>]*>', '', t)
+    import html as _h
+    return re.sub(r'[ \t]+\n', '\n', _h.unescape(t)).strip()
 def polish(it):
     nd = lambda t: t.replace('\u2013', '-').replace(' \u2014 ', ', ').replace('\u2014', ', ') if isinstance(t, str) else t
     def walk(o):
@@ -79,6 +89,10 @@ def polish(it):
         if isinstance(f, dict):
             for lang in ('vi', 'en'):
                 if f.get(lang): f[lang] = sci_text(f[lang])
+    if it['kind'] == 'ess':
+        for k in ('q', 'sol'):
+            for lang in ('vi', 'en'):
+                if isinstance(it.get(k), dict) and it[k].get(lang): it[k][lang] = plain(it[k][lang])
     for f in [it['q'], it.get('explain'), it.get('sol')] + list(it.get('opts', [])):
         if isinstance(f, dict) and f.get('vi') and f.get('en'): f['vi'] = vi_numbers(f['vi'], f['en'])
 

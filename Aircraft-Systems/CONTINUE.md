@@ -89,6 +89,8 @@ Số đo mức độ: level 3 chỉ có ở một phần ngân hàng (m07 không
 - **Notebook m01-m09 đã tách thành cặp VI/EN** (`notebooks/mNN_<slug>_{vi,en}.ipynb`, chạy lại bằng nbconvert, 0 lỗi, số liệu in ra giống hệt nhau): `build/nb/split_legacy.py` (chạy bằng `.venv/bin/python`, kernel tạm trong `scratch/jup/`), bản dịch EN trong `build/nb/legacy_en_a/b/c.py` (markdown theo chỉ số ô; code theo cặp "đoạn tiếng Việt không dấu" → "đoạn tiếng Anh"), `build/nb/check_en_residual.py` tìm chữ Việt còn sót (còn 2 dòng báo nhầm do tên biến DE). File cũ `data/notebooks/NN_*.ipynb` giữ để URL cũ sống. Bản VI giữ lời nhắn in ra bằng tiếng Việt không dấu (như bản gốc).
 - 4 slide chỉ có chữ của bộ cpu (4, 7, 8, 9) kiểm thêm: khớp ảnh.
 
+- **Sửa lỗi ký tự ở trang Viết tay (người dùng báo, ảnh chụp có `<br>` và `&nbsp;` hiện nguyên chữ):** 92 đề và 8 lời giải tự luận cũ (m01, m02, m03, m04, m08) mang HTML; `assemble.py` hàm `plain()` đổi `<br>` thành xuống dòng, `&nbsp;` thành dấu cách, `<sub>16</sub>` thành chỉ số dưới Unicode (46₁₆), bỏ thẻ `<i>`, `<b>`; thêm CSS `.xq>div{white-space:pre-line}` cho bản in. Đã quét toàn bộ dữ liệu vi/en và các trang Viết tay, Luyện sâu, Luyện đề: không còn thực thể, thẻ, ký tự lỗi hay công thức chưa vẽ. CHƯA push.
+
 **CHƯA LÀM (nói thẳng):**
 1. 81 slide chỉ có chữ (không số, không công thức) vẫn ở mức tóm tắt, chưa phóng to kiểm lại từng slide (cpu 27, disp 19, emc 32, icmux 3); mẫu kiểm 4 slide cpu không thấy sai.
 2. Test Your Understanding 20.6 của Tooley (sách không in đáp án).
