@@ -15,8 +15,7 @@
    "text_vi": "Slide tiêu đề \"Analog and digital system / Electronics Displays\": ảnh PFD thật và sơ đồ khối avionics (MCP, EFCP, PFD1/2, MFD1/2, EWD, ADS, AHRS, GPS, ATR). Chân slide: \"Course based on THALES and Aerogates documentation\".",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 2,
@@ -26,8 +25,7 @@
    "text_vi": "1 Yêu cầu hiệu năng: vận hành (môi trường tàu bay, dải nhiệt rộng, rung, sốc, ẩm, tuổi thọ), quang học (độ sáng và tương phản cao, màu chính xác, góc nhìn rộng, đọc được dưới nắng và ban đêm), vật lý (kích thước, khối lượng, công suất, tản nhiệt, form factor chuẩn như 6 x 8 inch). 2 Yếu tố con người: nhiệm vụ và HMI. Dịch vụ và yêu cầu hệ thống: an toàn (BITE, dự phòng, không gây hiểu lầm), chứng nhận (DO-160 môi trường, DO-178 phần mềm, DO-254 phần cứng, ARP 4754A / ARP 4761), chức năng (PFD, ND, EWD/SD, MFD, cảnh báo), chế tạo và công cụ (LRU, bảo trì).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 3,
@@ -37,8 +35,7 @@
    "text_vi": "Năm khối: nguồn dữ liệu (cảm biến, xử lý, phát, tạo mẫu, ứng dụng), tạo đồ hoạ (bộ tạo đồ hoạ nhận ARINC 429 / AFDX và xuất video LVDS / DisplayPort), khối hiển thị, HMI (lệnh và điều khiển) và môi trường (nắng, nhiệt độ, rung, ẩm).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 4,
@@ -106,8 +103,7 @@
    "numbers": [],
    "issues": [
     "Nghi vấn: Airbus dùng ECAM, không phải EICAS (hệ của Boeing); slide ghi \"EICAS\" cho A310."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 9,
@@ -128,9 +124,10 @@
    "text_en": "If the cognitive resources the system demands exceed human capacity, HMI performance falls (comfort zone versus overload). Cognitive engineering principles: Routinize, Anticipate, Delegate, Schematize. Examples of overload versus balance.",
    "text_vi": "Nếu tài nguyên nhận thức mà hệ thống đòi hỏi vượt khả năng con người thì hiệu năng HMI giảm (vùng thoải mái và quá tải). Nguyên tắc kỹ nghệ nhận thức: Routinize, Anticipate, Delegate, Schematize. Ví dụ quá tải và cân bằng.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Màn hình minh hoạ hệ phức tạp: EGT 640 và 642; N2 93,5 và 93,4; FF 2500 và 2490; ALT 10000 (số minh hoạ)"
+   ],
+   "issues": []
   },
   {
    "page": 11,
@@ -152,8 +149,7 @@
    "text_vi": "1 Monobloc (một hộp, phần cứng chuyên dụng, đồ hoạ 2D cố định); 2 Segregated (phần sau có chức năng riêng, họ A320); 3 Integrated modular (nền tảng tính toán chung chạy nhiều ứng dụng, đồ hoạ 2D/3D, A350 và A320 mới nhất).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 13,
@@ -162,9 +158,10 @@
    "text_en": "The EFI shows flight parameters on a screen in place of electromechanical instruments; widely used on trainer and military aircraft (Embraer Tucano, KAI KT-1, HAL IJT 36, MiG 21, Tornado); sizes 3 ATI or 4 ATI; LCD. Structure: sensor data (ADIRU, air data, FMS/GPS) over ARINC 429, electronic processor, LCD (LED backlight, panel, polariser, glass), flight information output.",
    "text_vi": "EFI hiển thị tham số bay trên màn hình thay cho đồng hồ cơ điện; dùng nhiều trên máy bay huấn luyện và quân sự (Embraer Tucano, KAI KT-1, HAL IJT 36, MiG 21, Tornado); cỡ 3 ATI hoặc 4 ATI; LCD. Cấu trúc: dữ liệu cảm biến (ADIRU, dữ liệu không khí, FMS/GPS) qua ARINC 429, bộ xử lý điện tử, LCD (đèn nền LED, panel, kính phân cực, kính), đầu ra thông tin bay.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Kích thước 3 ATI hoặc 4 ATI; màn hình ví dụ IAS 200, ALT 4600"
+   ],
+   "issues": []
   },
   {
    "page": 14,
@@ -173,9 +170,10 @@
    "text_en": "The EIS comprises the EFIS (PFD, ND) and the ECAM (EWD above, SD below). EFIS takes flight, navigation and control data; ECAM takes engine, system and warning data; both receive from the system computers (ADIRU, FMGC, OMS).",
    "text_vi": "EIS gồm EFIS (PFD, ND) và ECAM (EWD ở trên, SD ở dưới). EFIS lấy dữ liệu bay, dẫn đường và điều khiển; ECAM lấy dữ liệu động cơ, hệ thống và cảnh báo; cả hai nhận từ các máy tính hệ thống (ADIRU, FMGC, OMS).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Ví dụ ECAM: FOB 18600 KG; TAT +15 °C, SAT +15 °C; giờ 13 H 28"
+   ],
+   "issues": []
   },
   {
    "page": 15,
@@ -209,8 +207,7 @@
    "text_vi": "EDU 725 (Enhanced Display Unit) và EEIS (Enhanced Electronic Instrument System), nhằm giảm giá, khối lượng và số LRU; các bo ICB (điều khiển giao diện), VCGP (bộ xử lý đồ hoạ video), DMB (mô-đun hiển thị), BLU (khối đèn nền), PSB (nguồn), LAM; vẫn hiện CRT 6 x 6 inch.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 18,
@@ -220,8 +217,7 @@
    "text_vi": "Bố trí: PFD1, ND1, ECAM (trên và dưới), ND2, PFD2; DMC1/2/3, FWC1/2, SDAC1/2 trên ARINC 429; hộp điều khiển ECAM; cảnh báo chính; \"SDAC (System Data Acquisition Concentrator)\".",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 19,
@@ -231,8 +227,7 @@
    "text_vi": "LRU gửi dữ liệu qua ARINC 429 và tín hiệu rời rạc; CMC1 (đang chạy), CMC2 (dự phòng); đồng hồ gắn thời gian; MCDU1/2, máy in, ACARS (tuỳ chọn). Ví dụ MCDU MENU sang CFDS.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 20,
@@ -244,8 +239,7 @@
    "numbers": [],
    "issues": [
     "Không khớp nội bộ: slide 20 viết SDAC là \"System Data Analog Computer\", slide 18 viết \"System Data Acquisition Concentrator\"."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 21,
@@ -264,26 +258,30 @@
    "page": 22,
    "kind": "content",
    "title": "ND PLAN mode",
-   "text_en": "EFIS control panel (CSTR, WPT, VORD, NDB, ARPT; modes ROSE/ARC/PLAN/ILS/NAV; ranges 10/20/40/80/160/320 NM). The slide is cut off at the bottom: the headings \"ND display modes\" and \"PLAN mode characteristics\" have no content.",
-   "text_vi": "Bảng điều khiển EFIS (CSTR, WPT, VORD, NDB, ARPT; các chế độ ROSE/ARC/PLAN/ILS/NAV; tầm 10/20/40/80/160/320 NM). Slide bị cắt ở dưới: các tiêu đề \"ND display modes\" và \"PLAN mode characteristics\" không có nội dung.",
+   "text_en": "Left: the EFIS control panel (constraint CSTR, waypoint WPT, VOR/DME VORD, NDB, airport ARPT; display mode selector ROSE / NAV / ARC / PLAN / LS; range selector 20 / 40 / 80 / 160 / 320 NM) with the QNH setting (1003) and ND on/off knob, the FD and LS buttons and the VOR and NDB switches. Right: the ND in PLAN mode (north-up plan view with N, E, S, W): active flight phase ILS APP, GS 257 and TAS 288, wind 120/25, selected waypoint VESTI at 260° and 37 NM, estimated time to waypoint 2 33 (labelled 2 min 33 s), waypoints and flight plan route, own aircraft symbol, range rings (20 and 40 NM). The slide is cut off at the bottom: the headings \"ND display modes\", \"PLAN mode characteristics\", \"Main information on ND (PLAN mode)\" and \"Symbol legend (common)\" have no content.",
+   "text_vi": "Bên trái: bảng điều khiển EFIS (ràng buộc CSTR, điểm bay WPT, VOR/DME VORD, NDB, sân bay ARPT; núm chọn chế độ ROSE / NAV / ARC / PLAN / LS; núm chọn tầm 20 / 40 / 80 / 160 / 320 NM) cùng cài QNH (1003) và núm bật/tắt ND, nút FD và LS, công tắc VOR và NDB. Bên phải: ND ở chế độ PLAN (bản đồ mặt phẳng hướng bắc N, E, S, W): giai đoạn bay ILS APP, GS 257 và TAS 288, gió 120/25, điểm bay VESTI ở 260° và 37 NM, thời gian ước tính đến điểm bay 2 33 (ghi 2 min 33 s), các điểm bay và tuyến bay, ký hiệu máy bay ở giữa, vòng tầm (20 và 40 NM). Slide bị cắt ở dưới: các tiêu đề \"ND display modes\", \"PLAN mode characteristics\", \"Main information on ND (PLAN mode)\" và \"Symbol legend (common)\" không có nội dung.",
    "formulas": [],
-   "numbers": [],
-   "issues": [
-    "Slide bị cắt phía dưới: hai tiêu đề không có nội dung.",
-    "Nghi vấn: nhãn \"estimated time to waypoint (23 min 33 s)\" nhưng 37 NM ở 257 kt chỉ mất khoảng 8,6 phút; có thể \"23 33\" là giờ ETA theo UTC."
+   "numbers": [
+    "GS 257, TAS 288 kt; gió 120/25; VESTI 260° và 37 NM; ETA \"2 33\" (2 min 33 s); QNH 1003; vòng tầm 20 và 40 NM; tầm chọn 20/40/80/160/320 NM"
    ],
-   "basis": "summary"
+   "issues": [
+    "Slide bị cắt phía dưới: bốn tiêu đề không có nội dung.",
+    "Lỗi nhãn: núm chọn tầm trên ảnh có các nhãn 20, 40, 80, 160, 320 và một nhãn 80 thứ hai ở bên trái (vị trí lẽ ra là 10 NM như bảng EFIS thật); chú thích của slide ghi 20 / 40 / 80 / 160 / 320 NM.",
+    "Nghi vấn: slide này ghi thời gian ước tính đến điểm bay là \"2 33\" (2 min 33 s), còn slide 24 ghi \"23 33\" (23 min 33 s); với 37 NM ở 257 kt thời gian thật chỉ khoảng 8,6 phút nên cả hai giá trị đều không khớp với khoảng cách và tốc độ trên màn hình; có thể đó là giờ ETA theo UTC."
+   ]
   },
   {
    "page": 23,
    "kind": "content",
    "title": "ND ROSE ILS and ROSE VOR",
-   "text_en": "ROSE ILS (glide slope and localiser pointers) and ROSE VOR (bearing pointer and selected course).",
-   "text_vi": "ROSE ILS (kim glide slope và localizer) và ROSE VOR (con trỏ phương vị và hướng tuyến đã chọn).",
+   "text_en": "ROSE ILS mode (ILS approach, mode ILS APP): GS 138 and TAS 145 kt, wind 140°/07 kt, ILS information top right (ILS2 109.3 MHz, CRS 265° selected course, IGLC identified runway), range scale with concentric rings (typically 5 NM and 10 NM in this example), compass rose 0-360°, glide slope needle (vertical guidance, deviation up or down) and localiser needle (lateral guidance, deviation left or right); used during an ILS approach for runway landing, the aircraft symbol shows position and heading. ROSE VOR mode (VOR navigation): GS 483 and TAS 451 kt, wind 210°/45 kt, VOR 1 information (112.8 MHz, CRS 220° selected course, OOD = out of range, station not received), bearing pointer (bearing to the selected VOR station), selected course line (CRS 220° in blue), bottom left and right show VOR 1 and VOR 2 name or status and distance in NM.",
+   "text_vi": "Chế độ ROSE ILS (tiếp cận ILS, chế độ ILS APP): GS 138 và TAS 145 kt, gió 140°/07 kt, thông tin ILS ở góc trên bên phải (ILS2 109,3 MHz, CRS 265° hướng tuyến đã chọn, IGLC nhận dạng đường băng), thang tầm với các vòng đồng tâm (thường 5 NM và 10 NM trong ví dụ này), la bàn 0-360°, kim glide slope (dẫn hướng đứng, lệch lên hoặc xuống) và kim localizer (dẫn hướng ngang, lệch trái hoặc phải); dùng khi tiếp cận ILS để hạ cánh, ký hiệu máy bay chỉ vị trí và hướng. Chế độ ROSE VOR (dẫn đường VOR): GS 483 và TAS 451 kt, gió 210°/45 kt, thông tin VOR 1 (112,8 MHz, CRS 220° hướng tuyến đã chọn, OOD = ngoài tầm thu, không nhận được đài), con trỏ phương vị (phương vị tới đài VOR đã chọn), đường hướng tuyến đã chọn (CRS 220° màu xanh), góc dưới trái và phải cho tên hoặc trạng thái VOR 1 và VOR 2 cùng khoảng cách NM.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "ROSE ILS: GS 138, TAS 145 kt; gió 140°/07 kt; ILS2 109,3 MHz; CRS 265°; vòng tầm 5 NM và 10 NM",
+    "ROSE VOR: GS 483, TAS 451 kt; gió 210°/45 kt; VOR 1 112,8 MHz; CRS 220°; OOD là ngoài tầm thu"
+   ],
+   "issues": []
   },
   {
    "page": 24,
@@ -307,7 +305,7 @@
    "text_vi": "E/WD: EPR (1,0-1,6), N1 (quạt), N2 (ghi \"low pressure turbine speed\"), EGT, FF, FLX/TOGA, FOB 16820 KG, các thông báo (SEAT BELTS, NO SMOKING, GND SPLRS ARMED, T.O INHIBIT). Slide 27 lặp lại nội dung này.",
    "formulas": [],
    "numbers": [
-    "FOB 16820 KG"
+    "Ví dụ E/WD: EPR 1,498 ở cả hai động cơ; FF 9180 kg/h; EGT 741 °C; N1 85,1 %; N2 91,7 %; FOB 16820 KG; FLX 1,498 và 49 °C; EPR bình thường khoảng 1,0 đến 1,6; N1 chạy chậm khoảng 20 đến 25 %; N2 khoảng 90 đến 100 % lúc cất cánh"
    ],
    "issues": [
     "Không khớp với Tooley: slide ghi N2 là tốc độ turbine áp thấp, trong khi Tooley 1.1.6 ghi N2 là tốc độ cụm áp cao và chính slide ghi N1 là cụm áp thấp."
@@ -317,14 +315,15 @@
    "page": 26,
    "kind": "content",
    "title": "ECAM overview and control panel",
-   "text_en": "Two displays (upper engine and warning, lower system synoptic) and a control panel; \"processed in the CFDIU\". Panel: brightness, page selection (ENG, BLEED, PRESS, ELEC, HYD, FUEL, APU, COND, DOOR, WHEEL, F/CTL), EMER CANC, CLR, STS, RCL.",
-   "text_vi": "Hai màn hình (trên động cơ và cảnh báo, dưới sơ đồ hệ thống) và bảng điều khiển; \"xử lý trong CFDIU\". Bảng: độ sáng, chọn trang (ENG, BLEED, PRESS, ELEC, HYD, FUEL, APU, COND, DOOR, WHEEL, F/CTL), EMER CANC, CLR, STS, RCL.",
+   "text_en": "Two display screens and a control panel in the centre of the cockpit; ECAM receives data from aircraft systems over the avionics network and processes it in the CFDIU (Centralized Fault Display Interface Unit). Upper ECAM display (engine and warning): engine parameters EPR, N1, EGT, N2, fuel on board (FOB 5920 KG) and status messages (flaps and slats, PARK BRK, TCAS STBY, APU AVAIL). Lower ECAM display (system synoptic): system schematic, real-time parameters and pump and valve status; example HYD page with 3000 psi in the green, blue and yellow systems, TAT +15 °C, SAT +15 °C, GW 59205 KG. Control panel: upper and lower display brightness knobs; system page keys (ENG, BLEED, PRESS, ELEC, HYD, FUEL, APU, COND, DOOR, WHEEL, F/CTL, ALL), T.O CONFIG, EMER CANC (cancel the current warning message), CLR (clear message), STS (status), RCL (recall), CLB (climb page).",
+   "text_vi": "Hai màn hình và một bảng điều khiển ở giữa buồng lái; ECAM nhận dữ liệu từ các hệ thống máy bay qua mạng điện tử hàng không và xử lý trong CFDIU (Centralized Fault Display Interface Unit). Màn hình ECAM trên (động cơ và cảnh báo): thông số động cơ EPR, N1, EGT, N2, nhiên liệu trên tàu (FOB 5920 KG) và các thông báo trạng thái (cánh tà và cánh trước, PARK BRK, TCAS STBY, APU AVAIL). Màn hình ECAM dưới (sơ đồ hệ thống): sơ đồ hệ thống, thông số thời gian thực và trạng thái bơm, van; ví dụ trang HYD với 3000 psi ở các hệ xanh lá, xanh dương và vàng, TAT +15 °C, SAT +15 °C, GW 59205 KG. Bảng điều khiển: núm độ sáng màn hình trên và dưới; các phím chọn trang hệ thống (ENG, BLEED, PRESS, ELEC, HYD, FUEL, APU, COND, DOOR, WHEEL, F/CTL, ALL), T.O CONFIG, EMER CANC (xoá thông báo cảnh báo hiện tại), CLR (xoá thông báo), STS (trạng thái), RCL (gọi lại), CLB (trang leo cao).",
    "formulas": [],
-   "numbers": [],
+   "numbers": [
+    "FOB 5920 KG; GW 59205 KG; TAT +15 °C, SAT +15 °C; HYD 3000 psi ở ba hệ"
+   ],
    "issues": [
     "Không khớp nội bộ: slide này ghi ECAM xử lý trong CFDIU, slide 18 ghi DMC, FWC và SDAC."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 27,
@@ -333,11 +332,12 @@
    "text_en": "The same E/WD content as slide 25.",
    "text_vi": "Cùng nội dung E/WD như slide 25.",
    "formulas": [],
-   "numbers": [],
+   "numbers": [
+    "Ví dụ E/WD: EPR 1,498 ở cả hai động cơ; FF 9180 kg/h; EGT 741 °C; N1 85,1 %; N2 91,7 %; FOB 16820 KG; FLX 1,498 và 49 °C; EPR bình thường khoảng 1,0 đến 1,6; N1 chạy chậm khoảng 20 đến 25 %; N2 khoảng 90 đến 100 % lúc cất cánh"
+   ],
    "issues": [
     "Slide 27 trùng với slide 25."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 28,
@@ -423,23 +423,25 @@
    "page": 34,
    "kind": "content",
    "title": "F/CTL page",
-   "text_en": "ELAC/SEC and the G B Y hydraulic systems.",
-   "text_vi": "ELAC/SEC và các hệ thuỷ lực G B Y.",
+   "text_en": "Airbus A320 ECAM flight control (F/CTL) page. Left screen, normal operation (green, blue and yellow hydraulic systems pressurised, ELAC and SEC OK): the top line G B Y shows the hydraulic pressure available; the boxes ELAC 1 and 2 and SEC 1, 2 and 3 are green (computer OK); aileron, elevator and rudder computers OK. Right screen, all flight controls stopped (G B Y not energised, no hydraulic pressure, ELAC and SEC failed): the computers are shown failed (no green boxes). Symbol legend: green box = computer OK; yellow dashed box = computer failed or not available; G, B, Y = green, blue, yellow hydraulic pressure available; solid green line = control law normal; dashed line = control law not available; ELAC = elevator aileron computer; SEC = spoiler elevator computer; AIL = ailerons; ELEV = elevators; RUD = rudder; SPD BRK = spoilers / speed brake. Simplified flight control system: left system (green), centre system (yellow), right system (blue); ELAC 1 and 2 and SEC 1, 2 and 3 act on the ailerons, the spoilers (SPD BRK), the left and right elevators and the rudder. Key points: the page shows the status of the flight control computers and hydraulic availability; ELAC 1/2 control the ailerons and part of the elevator functions; SEC 1/2/3 control the spoilers and the elevator functions (backup); the elevator computers control the left and right elevators; the rudder computers control the rudder; if G B Y is not energised (no hydraulic pressure) all flight control computers become unavailable and all flight controls are stopped. Display values: pitch trim 0.0° UP, TAT +15 °C, SAT +15 °C, UTC 07 H 25, GW 69205 KG.",
+   "text_vi": "Trang điều khiển bay (F/CTL) của ECAM A320. Màn hình trái, hoạt động bình thường (ba hệ thuỷ lực xanh lá, xanh dương, vàng có áp, ELAC và SEC tốt): dòng trên G B Y cho biết áp thuỷ lực sẵn có; các ô ELAC 1 và 2 và SEC 1, 2 và 3 màu xanh lá (máy tính tốt); máy tính cánh liệng, cánh lái độ cao và cánh lái hướng tốt. Màn hình phải, mọi điều khiển bay đều dừng (G B Y không có điện, không có áp thuỷ lực, ELAC và SEC hỏng): các máy tính hiện hỏng (không có ô xanh lá). Chú giải ký hiệu: ô xanh lá = máy tính tốt; ô nét đứt vàng = máy tính hỏng hoặc không khả dụng; G, B, Y = có áp thuỷ lực xanh lá, xanh dương, vàng; đường xanh lá liền = luật điều khiển bình thường; đường đứt = luật điều khiển không khả dụng; ELAC = máy tính cánh lái độ cao và cánh liệng; SEC = máy tính cánh chặn và cánh lái độ cao; AIL = cánh liệng; ELEV = cánh lái độ cao; RUD = cánh lái hướng; SPD BRK = cánh chặn / phanh khí động. Hệ điều khiển bay đơn giản hoá: hệ trái (xanh lá), hệ giữa (vàng), hệ phải (xanh dương); ELAC 1 và 2 cùng SEC 1, 2 và 3 tác động lên cánh liệng, cánh chặn (SPD BRK), cánh lái độ cao trái và phải và cánh lái hướng. Ý chính: trang này cho biết trạng thái các máy tính điều khiển bay và tình trạng thuỷ lực; ELAC 1/2 điều khiển cánh liệng và một phần chức năng cánh lái độ cao; SEC 1/2/3 điều khiển cánh chặn và chức năng cánh lái độ cao (dự phòng); máy tính cánh lái độ cao điều khiển hai cánh lái độ cao; máy tính cánh lái hướng điều khiển cánh lái hướng; nếu G B Y không có điện (không có áp thuỷ lực) mọi máy tính điều khiển bay không khả dụng và mọi điều khiển bay đều dừng. Giá trị hiển thị: cân bằng dọc 0,0° UP, TAT +15 °C, SAT +15 °C, giờ UTC 07 H 25, GW 69205 KG.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Pitch trim 0,0° UP; TAT +15 °C, SAT +15 °C; giờ UTC 07 H 25; GW 69205 KG; ELAC 1 và 2, SEC 1, 2 và 3"
+   ],
+   "issues": []
   },
   {
    "page": 35,
    "kind": "content",
    "title": "F/CTL display in left and right turns",
-   "text_en": "F/CTL display when turning left and right (spoilers), a description of the wing and the controllers.",
-   "text_vi": "Hiển thị F/CTL khi rẽ trái và phải (spoiler), mô tả cánh và các bộ điều khiển.",
+   "text_en": "Airbus A320 ECAM flight control (F/CTL) system display in a left turn (spoilers deployed to the left) and in a right turn (spoilers deployed to the right). Spoilers: green upward arrows mean the spoilers are deployed; in the left screen the left spoilers are deployed, so the aircraft turns left (rolls left); in the right screen the right spoilers are deployed, so it turns right. SPD BRK: speed brake position, green = retracted in this example. Pitch trim: current position, for example 0.0° UP. Ailerons (AIL): left (L) and right (R) aileron position, green = normal. Rudder (RUD): rudder position, green = centred. Control computers: ELAC 1 and 2 primary (pitch and roll), SEC 1, 2 and 3 secondary. Elevators (ELEV): left and right elevator position, green = normal. Bottom line: TAT +15 °C (total air temperature), SAT +15 °C (static air temperature), UTC time 07 H 25, GW 69205 KG (gross weight). Simplified layout of the flight control surfaces: left and right ailerons (roll control), spoilers (ground and flight), left and right elevators (pitch control), rudder (yaw control). The page is used to monitor the flight control status and detect failures (amber or red indications when abnormal).",
+   "text_vi": "Màn hình hệ thống điều khiển bay (F/CTL) của ECAM A320 khi rẽ trái (cánh chặn bên trái bung) và rẽ phải (cánh chặn bên phải bung). Cánh chặn: mũi tên xanh lá hướng lên nghĩa là cánh chặn đang bung; ở màn hình trái, cánh chặn trái bung nên máy bay rẽ trái (nghiêng trái); ở màn hình phải, cánh chặn phải bung nên rẽ phải. SPD BRK: vị trí phanh khí động, xanh lá = đã thu trong ví dụ này. Cân bằng dọc: vị trí hiện tại, ví dụ 0,0° UP. Cánh liệng (AIL): vị trí cánh liệng trái (L) và phải (R), xanh lá = bình thường. Cánh lái hướng (RUD): vị trí cánh lái hướng, xanh lá = ở giữa. Máy tính điều khiển: ELAC 1 và 2 chính (tầm bay và nghiêng), SEC 1, 2 và 3 phụ. Cánh lái độ cao (ELEV): vị trí hai cánh lái độ cao, xanh lá = bình thường. Dòng dưới: TAT +15 °C (nhiệt độ không khí tổng), SAT +15 °C (nhiệt độ không khí tĩnh), giờ UTC 07 H 25, GW 69205 KG (khối lượng tổng). Sơ đồ bố trí đơn giản các mặt điều khiển: hai cánh liệng (điều khiển nghiêng), cánh chặn (mặt đất và bay), hai cánh lái độ cao (điều khiển chúc ngóc), cánh lái hướng (điều khiển hướng). Trang này dùng để giám sát trạng thái điều khiển bay và phát hiện hỏng hóc (hiện màu hổ phách hoặc đỏ khi bất thường).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Pitch trim 0,0° UP; TAT +15 °C, SAT +15 °C; giờ UTC 07 H 25; GW 69205 KG"
+   ],
+   "issues": []
   },
   {
    "page": 36,
@@ -449,8 +451,7 @@
    "text_vi": "Slide kết thúc \"Thank you very much\".",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   }
  ]
 }

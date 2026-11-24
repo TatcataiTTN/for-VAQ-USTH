@@ -11,7 +11,10 @@ def note_en(x, lang):
     global _EN
     if lang == 'vi': return x
     if _EN is None:
-        p = os.path.join(ROOT, 'build', 'transcripts', 'notes_en.json'); _EN = {a: b for a, b in json.load(open(p, encoding='utf-8'))} if os.path.exists(p) else {}
+        _EN = {}
+        for fn in ('notes_en.json', 'notes_en_zoom.json'):
+            p = os.path.join(ROOT, 'build', 'transcripts', fn)
+            if os.path.exists(p): _EN.update({a: b for a, b in json.load(open(p, encoding='utf-8'))})
     return _EN.get(x, x)
 
 def load(deck):

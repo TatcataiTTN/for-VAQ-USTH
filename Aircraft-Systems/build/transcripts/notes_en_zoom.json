@@ -1,0 +1,158 @@
+[
+ [
+  "Màn hình ECAM động cơ minh hoạ: N1 84,1 và 83,7 %; EGT 615 và 612 °C; N2 92,3 và 92,1 %; FF 2480 và 2460 kg/h; FOB 5280 kg",
+  "Illustrative ECAM engine display: N1 84.1 and 83.7 %; EGT 615 and 612 °C; N2 92.3 and 92.1 %; FF 2480 and 2460 kg/h; FOB 5280 kg"
+ ],
+ [
+  "Bảng điều hoà cabin: 22,0 ở cả PACK 1 và PACK 2",
+  "Cabin air-conditioning panel: 22.0 for both PACK 1 and PACK 2"
+ ],
+ [
+  "Mỗi động cơ A320 có hai kênh FADEC (A và B)",
+  "Each A320 engine has two FADEC channels (A and B)"
+ ],
+ [
+  "Cổng AND hai ngõ vào Y = A.B: 00 cho 0, 01 cho 0, 10 cho 0, 11 cho 1; flip-flop D kích sườn: khi CLK lên, D = 0 cho Q = 0 và D = 1 cho Q = 1",
+  "2-input AND gate Y = A.B: 00 gives 0, 01 gives 0, 10 gives 0, 11 gives 1; edge-triggered D flip-flop: on the rising CLK edge, D = 0 gives Q = 0 and D = 1 gives Q = 1"
+ ],
+ [
+  "Von Neumann: bộ nhớ chính 0000 đến 0002 là Lệnh 1 đến 3, 1000 đến 1002 là Dữ liệu 1 đến 3; Harvard: bộ nhớ chương trình 0000 đến 0002 và bộ nhớ dữ liệu 0000 đến 0002, mỗi bộ có địa chỉ riêng",
+  "Von Neumann: main memory 0000 to 0002 hold Instruction 1 to 3 and 1000 to 1002 hold Data 1 to 3; Harvard: program memory 0000 to 0002 and data memory 0000 to 0002, each with its own addresses"
+ ],
+ [
+  "PC = 0x04 rồi 0x05; bộ nhớ chương trình 0x00 đến 0xFF; PC tăng 1, 2 hoặc 4 byte tuỳ độ dài lệnh",
+  "PC = 0x04 then 0x05; program memory 0x00 to 0xFF; the PC advances by 1, 2 or 4 bytes depending on instruction length"
+ ],
+ [
+  "PC = MAR = 2000, MBR = IR = ADD A, B; bộ nhớ 2000 ADD A, B, 2001 SUB C, D, 2002 LOAD E (1998 và 1999 để trống); bus địa chỉ 16 bit, bus dữ liệu 8 bit; sau khi nạp PC = 2001 (lệnh 1 byte)",
+  "PC = MAR = 2000, MBR = IR = ADD A, B; memory 2000 ADD A, B, 2001 SUB C, D, 2002 LOAD E (1998 and 1999 blank); address bus 16 bits, data bus 8 bits; after the fetch PC = 2001 (1-byte instruction)"
+ ],
+ [
+  "PC = 0x04 rồi 0x05; bộ nhớ 0x00 đến 0x05 chứa Instruction 0 đến 5",
+  "PC = 0x04 then 0x05; memory 0x00 to 0x05 holds Instruction 0 to 5"
+ ],
+ [
+  "Ví dụ nạp lệnh: PC = MAR = 2000, bộ nhớ 2000 ADD R1, R2, 2001 SUB R3, R4, 2002 LOAD R5 (1999 để trống); MBR = IR = ADD R1, R2; PC + 1 = 2001",
+  "Fetch example: PC = MAR = 2000, memory 2000 ADD R1, R2, 2001 SUB R3, R4, 2002 LOAD R5 (1999 blank); MBR = IR = ADD R1, R2; PC + 1 = 2001"
+ ],
+ [
+  "PC = MAR = 0x04, IR = MBR = ADD R1, R2; bộ nhớ 0x00 MOV R1, 5; 0x01 MOV R2, 3; 0x02 SUB R1, R2; 0x03 JMP 0x08; 0x04 ADD R1, R2; 0x05 STORE R1, 0x10; sau cập nhật PC = 0x05",
+  "PC = MAR = 0x04, IR = MBR = ADD R1, R2; memory 0x00 MOV R1, 5; 0x01 MOV R2, 3; 0x02 SUB R1, R2; 0x03 JMP 0x08; 0x04 ADD R1, R2; 0x05 STORE R1, 0x10; after the update PC = 0x05"
+ ],
+ [
+  "Màn hình minh hoạ hệ phức tạp: EGT 640 và 642; N2 93,5 và 93,4; FF 2500 và 2490; ALT 10000 (số minh hoạ)",
+  "Illustrative display of the complex system: EGT 640 and 642; N2 93.5 and 93.4; FF 2500 and 2490; ALT 10000 (illustrative numbers)"
+ ],
+ [
+  "Kích thước 3 ATI hoặc 4 ATI; màn hình ví dụ IAS 200, ALT 4600",
+  "Sizes 3 ATI or 4 ATI; example display IAS 200, ALT 4600"
+ ],
+ [
+  "Ví dụ ECAM: FOB 18600 KG; TAT +15 °C, SAT +15 °C; giờ 13 H 28",
+  "ECAM example: FOB 18600 KG; TAT +15 °C, SAT +15 °C; time 13 H 28"
+ ],
+ [
+  "GS 257, TAS 288 kt; gió 120/25; VESTI 260° và 37 NM; ETA \"2 33\" (2 min 33 s); QNH 1003; vòng tầm 20 và 40 NM; tầm chọn 20/40/80/160/320 NM",
+  "GS 257, TAS 288 kt; wind 120/25; VESTI 260° and 37 NM; ETA \"2 33\" (2 min 33 s); QNH 1003; range rings 20 and 40 NM; selectable ranges 20/40/80/160/320 NM"
+ ],
+ [
+  "Slide bị cắt phía dưới: bốn tiêu đề không có nội dung.",
+  "The slide is cut off at the bottom: four headings have no content."
+ ],
+ [
+  "Lỗi nhãn: núm chọn tầm trên ảnh có các nhãn 20, 40, 80, 160, 320 và một nhãn 80 thứ hai ở bên trái (vị trí lẽ ra là 10 NM như bảng EFIS thật); chú thích của slide ghi 20 / 40 / 80 / 160 / 320 NM.",
+  "Label error: the range knob in the photo carries the labels 20, 40, 80, 160, 320 and a second 80 on the left (that position should be 10 NM as on a real EFIS panel); the callout of the slide says 20 / 40 / 80 / 160 / 320 NM."
+ ],
+ [
+  "Nghi vấn: slide này ghi thời gian ước tính đến điểm bay là \"2 33\" (2 min 33 s), còn slide 24 ghi \"23 33\" (23 min 33 s); với 37 NM ở 257 kt thời gian thật chỉ khoảng 8,6 phút nên cả hai giá trị đều không khớp với khoảng cách và tốc độ trên màn hình; có thể đó là giờ ETA theo UTC.",
+  "Doubt: this slide gives the estimated time to the waypoint as \"2 33\" (2 min 33 s) while slide 24 gives \"23 33\" (23 min 33 s); at 37 NM and 257 kt the real time is only about 8.6 minutes, so neither value agrees with the distance and speed on the display; it may be an ETA clock time in UTC."
+ ],
+ [
+  "ROSE ILS: GS 138, TAS 145 kt; gió 140°/07 kt; ILS2 109,3 MHz; CRS 265°; vòng tầm 5 NM và 10 NM",
+  "ROSE ILS: GS 138, TAS 145 kt; wind 140°/07 kt; ILS2 109.3 MHz; CRS 265°; range rings 5 NM and 10 NM"
+ ],
+ [
+  "ROSE VOR: GS 483, TAS 451 kt; gió 210°/45 kt; VOR 1 112,8 MHz; CRS 220°; OOD là ngoài tầm thu",
+  "ROSE VOR: GS 483, TAS 451 kt; wind 210°/45 kt; VOR 1 112.8 MHz; CRS 220°; OOD means out of range"
+ ],
+ [
+  "Ví dụ E/WD: EPR 1,498 ở cả hai động cơ; FF 9180 kg/h; EGT 741 °C; N1 85,1 %; N2 91,7 %; FOB 16820 KG; FLX 1,498 và 49 °C; EPR bình thường khoảng 1,0 đến 1,6; N1 chạy chậm khoảng 20 đến 25 %; N2 khoảng 90 đến 100 % lúc cất cánh",
+  "E/WD example: EPR 1.498 on both engines; FF 9180 kg/h; EGT 741 °C; N1 85.1 %; N2 91.7 %; FOB 16820 KG; FLX 1.498 and 49 °C; normal EPR about 1.0 to 1.6; N1 idle about 20 to 25 %; N2 about 90 to 100 % at takeoff"
+ ],
+ [
+  "FOB 5920 KG; GW 59205 KG; TAT +15 °C, SAT +15 °C; HYD 3000 psi ở ba hệ",
+  "FOB 5920 KG; GW 59205 KG; TAT +15 °C, SAT +15 °C; HYD 3000 psi in the three systems"
+ ],
+ [
+  "Pitch trim 0,0° UP; TAT +15 °C, SAT +15 °C; giờ UTC 07 H 25; GW 69205 KG; ELAC 1 và 2, SEC 1, 2 và 3",
+  "Pitch trim 0.0° UP; TAT +15 °C, SAT +15 °C; UTC 07 H 25; GW 69205 KG; ELAC 1 and 2, SEC 1, 2 and 3"
+ ],
+ [
+  "Pitch trim 0,0° UP; TAT +15 °C, SAT +15 °C; giờ UTC 07 H 25; GW 69205 KG",
+  "Pitch trim 0.0° UP; TAT +15 °C, SAT +15 °C; UTC 07 H 25; GW 69205 KG"
+ ],
+ [
+  "Hệ Wi-Fi của máy bay 2,4 và 5 GHz",
+  "Aircraft Wi-Fi system 2.4 and 5 GHz"
+ ],
+ [
+  "Ví dụ tín hiệu thấp tần 50 Hz và cao tần 1 MHz; trục tần số của phổ từ 10³ đến 10⁸ Hz, vạch băng hẹp ở 10⁴ Hz",
+  "Example low-frequency signal 50 Hz and high-frequency signal 1 MHz; the frequency axis of the spectrum runs from 10³ to 10⁸ Hz with the narrowband line at 10⁴ Hz"
+ ],
+ [
+  "Màn hình máy mẫu: công suất từ -10 đến -110 dBm; tần số 0 đến 500 MHz, mỗi bước 100 MHz",
+  "Example instrument screen: power from -10 to -110 dBm; frequency 0 to 500 MHz in steps of 100 MHz"
+ ],
+ [
+  "Lỗi nhãn: phổ vạch ghi biên độ \"3/3\", \"5/5\", \"7/7\" tại 3f, 5f, 7f; đúng phải là V/3, V/5, V/7 như ở slide 10 (chuỗi Fourier của sóng vuông).",
+  "Label error: the line spectrum gives the amplitudes \"3/3\", \"5/5\", \"7/7\" at 3f, 5f, 7f; they should read V/3, V/5, V/7 as on slide 10 (Fourier series of the square wave)."
+ ],
+ [
+  "Ví dụ: 10 W so với 5 W là 10 log(10/5) = 10 log 2 ≈ 3 dB (gấp 2 lần công suất)",
+  "Example: 10 W against 5 W is 10 log(10/5) = 10 log 2 ≈ 3 dB (twice the power)"
+ ],
+ [
+  "Đã kiểm: 10 log 2 = 3,01; 10 log 0,5 = -3,01; 10 log 0,1 = -10; 10 log 0,01 = -20; 10 log 10 = 10; 10 log 100 = 20.",
+  "Checked: 10 log 2 = 3.01; 10 log 0.5 = -3.01; 10 log 0.1 = -10; 10 log 0.01 = -20; 10 log 10 = 10; 10 log 100 = 20."
+ ],
+ [
+  "Tỉ số điện áp: 0,01 = -40 dB; 0,1 = -20 dB; 0,5 = -6 dB; 1 = 0 dB; 2 = 6 dB; 10 = 20 dB; 100 = 40 dB (nhân đôi cộng 6 dB, nhân mười cộng 20 dB)",
+  "Voltage ratios: 0.01 = -40 dB; 0.1 = -20 dB; 0.5 = -6 dB; 1 = 0 dB; 2 = 6 dB; 10 = 20 dB; 100 = 40 dB (doubling adds 6 dB, a factor of ten adds 20 dB)"
+ ],
+ [
+  "Đã kiểm: 20 log 0,01 = -40; 20 log 0,1 = -20; 20 log 0,5 = -6,02; 20 log 2 = 6,02; 20 log 10 = 20; 20 log 100 = 40.",
+  "Checked: 20 log 0.01 = -40; 20 log 0.1 = -20; 20 log 0.5 = -6.02; 20 log 2 = 6.02; 20 log 10 = 20; 20 log 100 = 40."
+ ],
+ [
+  "Ví dụ 2 và 3: P2 = 10 W (10 dB), P1 = 5 W (7 dB), tỉ số = 10 - 7 = 3 dB, gấp 2 lần công suất; nối tầng +10 dB và +6 dB đưa 0 dBm thành +16 dBm (khoảng 40 lần công suất); cáp -3 dB và bộ lọc -10 dB đưa 0 dBm thành -13 dBm (chia khoảng 20); bảng 0,01 = -20 dB (thấp hơn 100 lần), 0,1 = -10 dB (10 lần), 0,5 = -3 dB (2 lần), 1 = 0 dB, 2 = 3 dB, 10 = 10 dB, 100 = 20 dB",
+  "Examples 2 and 3: P2 = 10 W (10 dB), P1 = 5 W (7 dB), ratio = 10 - 7 = 3 dB, twice the power; cascaded gains +10 dB and +6 dB take 0 dBm to +16 dBm (about 40 times the power); a -3 dB cable and a -10 dB filter take 0 dBm to -13 dBm (divided by about 20); table 0.01 = -20 dB (100 times lower), 0.1 = -10 dB (10 times), 0.5 = -3 dB (2 times), 1 = 0 dB, 2 = 3 dB, 10 = 10 dB, 100 = 20 dB"
+ ],
+ [
+  "Lưu ý: \"10 dB\" và \"7 dB\" ở ví dụ 2 và 3 là mức tuyệt đối so với 1 W (10 dBW và 7 dBW); slide chỉ ghi \"dB\" nên thiếu đơn vị tham chiếu, nhưng hiệu 3 dB vẫn đúng.",
+  "Note: the \"10 dB\" and \"7 dB\" of examples 2 and 3 are absolute levels against 1 W (10 dBW and 7 dBW); the slide writes only \"dB\" so the reference unit is missing, but the 3 dB difference is still right."
+ ],
+ [
+  "Đã kiểm: 10 log 5 = 6,99 (khoảng 7); 10^1,6 = 39,8 (khoảng 40); 10^1,3 = 19,95 (khoảng 20).",
+  "Checked: 10 log 5 = 6.99 (about 7); 10^1.6 = 39.8 (about 40); 10^1.3 = 19.95 (about 20)."
+ ],
+ [
+  "Bảng giới hạn minh hoạ: 30 đến 230 MHz thì X dBµV/m, 230 đến 1000 MHz thì Y dBµV/m (X và Y chưa điền giá trị)",
+  "Illustrative limit table: 30 to 230 MHz gives X dBµV/m, 230 to 1000 MHz gives Y dBµV/m (X and Y are not filled in)"
+ ],
+ [
+  "Miễn nhiễm dẫn (RF, burst) áp dụng khi cáp dài hơn 3 m; tiêu chuẩn 61000-4-3, -4-39, -4-8, 61000-4-2, 61000-4-6, -4-4, -4-5, 61000-4-11, 61000-3-2, -3-3; CISPR 11/32 (EU), FCC 15/18 (US)",
+  "Conducted immunity (RF, burst) applies when the cable is longer than 3 m; standards 61000-4-3, -4-39, -4-8, 61000-4-2, 61000-4-6, -4-4, -4-5, 61000-4-11, 61000-3-2, -3-3; CISPR 11/32 (EU), FCC 15/18 (US)"
+ ],
+ [
+  "Đầu nối: bọc chắn nối đất 360°",
+  "Connectors: 360° shield termination"
+ ],
+ [
+  "Đồ thị suy hao điển hình: trục tần số 0,1 đến 1000 MHz, suy hao 0 đến 40 dB",
+  "Typical attenuation plots: frequency axis 0.1 to 1000 MHz, attenuation 0 to 40 dB"
+ ],
+ [
+  "Hình đường về dòng: nguồn 28 V DC",
+  "Return-path figure: 28 V DC power supply"
+ ]
+]

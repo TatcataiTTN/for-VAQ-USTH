@@ -12,7 +12,10 @@
   "Floyd 12-3: độ phân giải DAC tính là một phần của $2^n-1$ (6,67 % cho 4 bit) nhưng LSB của DAC 8 bit được nói là 0,39 % toàn thang ($100/256$): hai cách tính khác nhau trong cùng mục. Site dùng $2^n-1$ cho \"độ phân giải\" và không hỏi về \"LSB theo phần trăm\".",
   "Lớp chữ PDF của Floyd làm mất các dấu so sánh và dấu trừ (ví dụ Phương trình 12-1 hiện \"fsample + 2fa(max)\", \"conversion time of 100 ms\" thay vì 100 µs). Các công thức và số trong module được kiểm lại bằng ảnh trang hoặc bằng tính toán.",
   "Tooley 3.1 và Floyd 12-1 đều không cho công thức tần số alias; ví dụ 5 kHz lấy mẫu 8 kHz thành 3 kHz là kết quả chuẩn cho sóng sin do site tính.",
-  "Chương 3 của Tooley mở đầu hứa \"sau này sẽ cho thấy thiết bị chuyển đổi dữ liệu dùng trong một số hệ thống tàu bay thực tế\" nhưng chương không có ví dụ tàu bay riêng. Module không đưa ví dụ tàu bay vì chưa có nguồn đã đọc."
+  "Chương 3 của Tooley mở đầu hứa \"sau này sẽ cho thấy thiết bị chuyển đổi dữ liệu dùng trong một số hệ thống tàu bay thực tế\" nhưng chương không có ví dụ tàu bay riêng. Module không đưa ví dụ tàu bay vì chưa có nguồn đã đọc.",
+  "Floyd Chương 12 Problem 19: đáp án in 3,22 % là số cắt bớt của 3,226 % (làm tròn 3,23 %).",
+  "Floyd Chương 12 Problem 7: đáp án in 200 là độ lớn của độ lợi; bộ khuếch đại đảo có độ lợi −200 (Problem 9 ngay sau đó in −33 có dấu).",
+  "Floyd Chương 12 Problem 27 (mục 12-5, ngoài phạm vi module 10 nên không có trong ngân hàng): đáp án in 18,75 triệu lệnh/s không khớp văn bản 12-5 (tám lệnh 32 bit mỗi chu kỳ ở 600 MHz là 4,8 tỉ lệnh/s); 18,75 triệu là 600 MHz chia 32."
  ],
  "en": [
   "Tooley 3.2 (Table 3.2) says \"eight possible input states\" for a 4-bit DAC, but the table has 16 codes (0000 to 1111) and $V_{out}$ from 0 V to −9.375 V.",
@@ -27,6 +30,9 @@
   "Floyd 12-3: DAC resolution is one part in $2^n-1$ (6.67 % for 4 bits) but the LSB of an 8-bit DAC is said to be 0.39 % of full scale ($100/256$): two different bases in the same section. The site uses $2^n-1$ for \"resolution\" and does not ask about \"LSB as a percentage\".",
   "Floyd's PDF text layer loses comparison and minus signs (for example Equation 12-1 shows \"fsample + 2fa(max)\", \"conversion time of 100 ms\" instead of 100 µs). Formulas and numbers in the module were rechecked on page images or by computation.",
   "Neither Tooley 3.1 nor Floyd 12-1 gives an alias-frequency formula; the example of 5 kHz sampled at 8 kHz becoming 3 kHz is the standard result for a sine wave computed by this site.",
-  "Tooley Chapter 3 opens by promising to \"show later how data conversion devices are used in some practical aircraft systems\" but the chapter has no separate aircraft example. The module gives no aircraft example because no source was read."
+  "Tooley Chapter 3 opens by promising to \"show later how data conversion devices are used in some practical aircraft systems\" but the chapter has no separate aircraft example. The module gives no aircraft example because no source was read.",
+  "Floyd Chapter 12 Problem 19: the printed answer 3.22 % is 3.226 % truncated (rounded 3.23 %).",
+  "Floyd Chapter 12 Problem 7: the printed answer 200 is the magnitude of the gain; an inverting amplifier has a gain of −200 (Problem 9 right after prints −33 with its sign).",
+  "Floyd Chapter 12 Problem 27 (section 12-5, outside module 10 so not in the bank): the printed answer 18.75 million instructions/s disagrees with the text of 12-5 (eight 32-bit instructions per clock cycle at 600 MHz is 4.8 billion instructions/s); 18.75 million is 600 MHz divided by 32."
  ]
 }

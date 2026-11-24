@@ -1,0 +1,80 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Điện áp vào của một bộ khuếch đại đảo dùng op-amp là 5 mV và điện áp ra là 1 V. Độ lợi điện áp vòng kín là bao nhiêu?",
+   "en": "The input voltage to a certain op-amp inverting amplifier is 5 mV, and the output is 1 V. What is the closed-loop voltage gain?"
+  },
+  "sol": {
+   "vi": "$|A_{cl}|=V_{out}/V_{in}$ = 1 V / 5 mV = 200. Bộ khuếch đại đảo đảo pha nên với ngõ vào +5 mV ngõ ra là −1 V và độ lợi có dấu là −200; đáp án in 200 là độ lớn (Bài 9 ngay sau đó in −33 có dấu). Khớp về độ lớn.",
+   "en": "$|A_{cl}|=V_{out}/V_{in}$ = 1 V / 5 mV = 200. An inverting amplifier inverts the signal, so for a +5 mV input the output is −1 V and the signed gain is −200; the printed answer 200 is the magnitude (Problem 9 right after prints −33 with its sign). It agrees in magnitude."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Problem 7",
+   "en": "Floyd Ch.12 · Problem 7"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch12_q7.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch12_a7.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Độ lợi của bộ khuếch đại đảo dùng điện trở hồi tiếp 33 kΩ là bao nhiêu nếu điện trở ngõ vào là 1 kΩ?",
+   "en": "What is the gain of an inverting amplifier that uses a 33 kΩ feedback resistor if the input resistor is 1 kΩ?"
+  },
+  "sol": {
+   "vi": "$A_{cl}=-R_f/R_i=-33\\text{ k}\\Omega/1\\text{ k}\\Omega=-33$. Khớp đáp án in (−33).",
+   "en": "$A_{cl}=-R_f/R_i=-33\\text{ k}\\Omega/1\\text{ k}\\Omega=-33$. This agrees with the printed answer (−33)."
+  },
+  "topic": {
+   "vi": "Op-amp trong bộ chuyển đổi",
+   "en": "Op-amps in converters"
+  },
+  "topic_id": "opamp",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Problem 9",
+   "en": "Floyd Ch.12 · Problem 9"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch12_q9.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch12_a9.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định độ phân giải, tính theo phần trăm, của mỗi DAC sau: (a) 2 bit (b) 5 bit (c) 12 bit.",
+   "en": "Determine the resolution expressed as a percentage, for each of the following DACs: (a) 2-bit (b) 5-bit (c) 12-bit."
+  },
+  "sol": {
+   "vi": "Độ phân giải theo phần trăm của DAC n bit là $\\dfrac{1}{2^n-1}\\times 100\\,\\%$: (a) 1/3 = 33,33 %; (b) 1/31 = 3,226 % (làm tròn 3,23 %); (c) 1/4095 = 0,0244 % (làm tròn 0,024 %). Khớp đáp án in (33,33 %, 3,22 %, 0,024 %); 3,22 % là số cắt bớt của 3,226 %.",
+   "en": "The percentage resolution of an n-bit DAC is $\\dfrac{1}{2^n-1}\\times 100\\,\\%$: (a) 1/3 = 33.33 %; (b) 1/31 = 3.226 % (rounded 3.23 %); (c) 1/4095 = 0.0244 % (rounded 0.024 %). This agrees with the printed answer (33.33 %, 3.22 %, 0.024 %); 3.22 % is 3.226 % truncated."
+  },
+  "topic": {
+   "vi": "Độ phân giải, độ chính xác, lỗi chuyển đổi",
+   "en": "Resolution, accuracy, conversion errors"
+  },
+  "topic_id": "specs",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.12 · Problem 19",
+   "en": "Floyd Ch.12 · Problem 19"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch12_q19.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch12_a19.png"
+ }
+]

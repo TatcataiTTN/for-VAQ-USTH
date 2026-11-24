@@ -49,9 +49,11 @@
    "text_en": "Infographic: ICs contain a large number of logic gates, memory elements and processing functions on a single chip and are widely used in the A320 for computation, signal processing, monitoring and control. Six panels: 1 flight control computers (FMGC): microprocessors, memory and logic ICs process flight plans, navigation data and control laws, and implement autopilot, flight director and guidance logic. 2 Engine control (FADEC, in the EEC): ICs process sensor signals (speed, temperature, pressure), control fuel flow, variable stator vanes and bleed in real time, using logic ICs, ADCs/DACs and microcontrollers. 3 Aircraft monitoring (ECAM): ICs process data from engines, hydraulics and electrical systems, detect failures and generate warnings, and drive display controllers. 4 Communication and data systems (ACARS management unit CMU): ICs handle data communication (for example ARINC 429, AFDX), encoding and decoding, error detection; used for ACARS, VHF, SATCOM. 5 Cabin systems (air-conditioning panel): ICs control pressurisation, air conditioning and lighting and interface with the aircraft network. 6 Electrical and power management (electrical load management unit, ELMU): ICs monitor voltage, current and frequency, perform load shedding and fault protection; also in static inverters. Footer: ICs are the building blocks of modern avionics, giving high reliability, low weight and low power consumption.",
    "text_vi": "Infographic: IC chứa số lượng lớn cổng logic, phần tử nhớ và chức năng xử lý trên một chip và được dùng rộng rãi trên A320 cho tính toán, xử lý tín hiệu, giám sát và điều khiển. Sáu khung: 1 máy tính điều khiển bay (FMGC): vi xử lý, bộ nhớ và IC logic xử lý kế hoạch bay, dữ liệu dẫn đường và luật điều khiển, thực hiện logic lái tự động, bộ chỉ huy bay và dẫn hướng. 2 Điều khiển động cơ (FADEC, trong EEC): IC xử lý tín hiệu cảm biến (tốc độ, nhiệt độ, áp suất), điều khiển lưu lượng nhiên liệu, cánh stator biến đổi và khí xả theo thời gian thực, dùng IC logic, ADC/DAC và vi điều khiển. 3 Giám sát tàu bay (ECAM): IC xử lý dữ liệu từ động cơ, thuỷ lực, điện, phát hiện sự cố và tạo cảnh báo, điều khiển bộ điều khiển hiển thị. 4 Truyền thông và dữ liệu (bộ quản lý ACARS, CMU): IC xử lý truyền dữ liệu (ví dụ ARINC 429, AFDX), mã hoá và giải mã, phát hiện lỗi; dùng cho ACARS, VHF, SATCOM. 5 Hệ cabin (bảng điều hoà không khí): IC điều khiển tăng áp, điều hoà, chiếu sáng và giao tiếp với mạng tàu bay. 6 Điện và quản lý công suất (bộ quản lý tải điện, ELMU): IC giám sát điện áp, dòng, tần số, thực hiện cắt tải và bảo vệ sự cố; còn dùng trong bộ nghịch lưu tĩnh. Chân slide: IC là khối xây dựng của điện tử hàng không hiện đại, cho độ tin cậy cao, khối lượng nhỏ và công suất thấp.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Màn hình ECAM động cơ minh hoạ: N1 84,1 và 83,7 %; EGT 615 và 612 °C; N2 92,3 và 92,1 %; FF 2480 và 2460 kg/h; FOB 5280 kg",
+    "Bảng điều hoà cabin: 22,0 ở cả PACK 1 và PACK 2"
+   ],
+   "issues": []
   },
   {
    "page": 5,
@@ -60,9 +62,11 @@
    "text_en": "FADEC (full authority digital engine control) uses ICs to process sensor signals and control the engine automatically. 1 Overview: each A320 engine has two FADEC channels (A and B) for redundancy; it is built from microprocessors, memory ICs, A/D and D/A converters, logic ICs and interface ICs; it controls the engine with no direct pilot input (full authority). 2 Internal structure (main ICs): power management IC, microprocessor IC (control laws and engine control logic), memory ICs (flash for the program, RAM for data, EEPROM for parameters), A/D converter IC, D/A converter IC, interface ICs (ARINC 429, I/O drivers). 3 Block diagram: engine sensors (N1 and N2 speed, fuel pressure, oil pressure, temperature such as EGT and T2, vibration) feed an A/D converter, then the microprocessor (control laws, logic, monitoring) with a memory IC, then a D/A converter to the actuators (fuel metering valve, variable stator vanes, bleed valves, turbine clearance control); an interface IC (ARINC 429, discrete I/O) links to the aircraft systems (FCU, ECAM). 4 Operation in six steps: sensor input (analogue signals), A/D conversion, data processing (control laws compare actual and target values), output command (D/A), actuator control, monitoring and communication (data and fault messages to ECAM via ARINC 429, built-in test).",
    "text_vi": "FADEC (điều khiển động cơ số toàn quyền) dùng IC xử lý tín hiệu cảm biến và điều khiển động cơ tự động. 1 Tổng quan: mỗi động cơ A320 có hai kênh FADEC (A và B) để dự phòng; được xây từ vi xử lý, IC nhớ, bộ chuyển đổi A/D và D/A, IC logic và IC giao tiếp; điều khiển động cơ mà không cần phi công trực tiếp (toàn quyền). 2 Cấu trúc bên trong (các IC chính): IC quản lý nguồn, IC vi xử lý (luật điều khiển và logic điều khiển động cơ), IC nhớ (flash cho chương trình, RAM cho dữ liệu, EEPROM cho tham số), IC chuyển A/D, IC chuyển D/A, IC giao tiếp (ARINC 429, bộ điều khiển I/O). 3 Sơ đồ khối: cảm biến động cơ (tốc độ N1 và N2, áp suất nhiên liệu, áp suất dầu, nhiệt độ như EGT và T2, rung) vào bộ chuyển A/D, rồi vi xử lý (luật điều khiển, logic, giám sát) cùng IC nhớ, rồi bộ chuyển D/A tới cơ cấu chấp hành (van định lượng nhiên liệu, cánh stator biến đổi, van xả khí, điều khiển khe hở tuabin); IC giao tiếp (ARINC 429, I/O rời rạc) nối với các hệ tàu bay (FCU, ECAM). 4 Hoạt động sáu bước: ngõ vào cảm biến (tín hiệu tương tự), chuyển A/D, xử lý dữ liệu (luật điều khiển so giá trị thực với giá trị đích), lệnh ra (D/A), điều khiển cơ cấu chấp hành, giám sát và truyền thông (dữ liệu và thông báo lỗi tới ECAM qua ARINC 429, tự kiểm tra tích hợp).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Mỗi động cơ A320 có hai kênh FADEC (A và B)",
+    "Màn hình ECAM động cơ minh hoạ: N1 84,1 và 83,7 %; EGT 615 và 612 °C; N2 92,3 và 92,1 %; FF 2480 và 2460 kg/h; FOB 5280 kg"
+   ],
+   "issues": []
   },
   {
    "page": 6,
@@ -234,11 +238,12 @@
    "text_en": "Combinational circuits: the output depends only on the present input variables; example a 2-input AND gate Y = A.B with its truth table and a timing diagram; no memory is required; example functions AND, OR, NOT, adders, subtractors, multiplexers, demultiplexers, decoders, encoders. Sequential circuits: the output depends on the present inputs and the past history (stored state); a memory element (flip-flop, latch, register) is required; example an edge-triggered D flip-flop, where Q stores the input value at the clock edge (clock rising edge with D = 0 gives Q = 0; with D = 1 gives Q = 1) and Q is updated at each rising edge; example functions flip-flops, registers, shift registers, counters, finite state machines. Table: output dependency (present input only, versus present input and past history); memory (not required, versus required); speed (faster, versus slower); design complexity (easy, versus difficult); common adders (parallel adder, versus serial adder); examples (half and full adder, half and full subtractor, MUX, DEMUX, versus flip-flops, shift registers, binary counters).",
    "text_vi": "Mạch tổ hợp: ngõ ra chỉ phụ thuộc các biến ngõ vào hiện tại; ví dụ cổng AND hai ngõ vào Y = A.B với bảng chân trị và giản đồ thời gian; không cần bộ nhớ; ví dụ chức năng AND, OR, NOT, bộ cộng, bộ trừ, bộ ghép kênh, bộ tách kênh, bộ giải mã, bộ mã hoá. Mạch tuần tự: ngõ ra phụ thuộc ngõ vào hiện tại và lịch sử quá khứ (trạng thái lưu); cần phần tử nhớ (flip-flop, chốt, thanh ghi); ví dụ flip-flop D kích theo cạnh, Q lưu giá trị ngõ vào tại cạnh xung nhịp (cạnh lên với D = 0 cho Q = 0; với D = 1 cho Q = 1) và Q cập nhật ở mỗi cạnh lên; ví dụ chức năng flip-flop, thanh ghi, thanh ghi dịch, bộ đếm, máy trạng thái hữu hạn. Bảng: phụ thuộc ngõ ra (chỉ ngõ vào hiện tại, so với ngõ vào hiện tại và lịch sử); bộ nhớ (không cần, so với cần); tốc độ (nhanh hơn, so với chậm hơn); độ phức tạp thiết kế (dễ, so với khó); bộ cộng thường dùng (bộ cộng song song, so với bộ cộng nối tiếp); ví dụ (bộ cộng nửa và đầy đủ, bộ trừ nửa và đầy đủ, MUX, DEMUX, so với flip-flop, thanh ghi dịch, bộ đếm nhị phân).",
    "formulas": [],
-   "numbers": [],
+   "numbers": [
+    "Cổng AND hai ngõ vào Y = A.B: 00 cho 0, 01 cho 0, 10 cho 0, 11 cho 1; flip-flop D kích sườn: khi CLK lên, D = 0 cho Q = 0 và D = 1 cho Q = 1"
+   ],
    "issues": [
     "Nghi vấn: hàng \"tốc độ nhanh hơn / chậm hơn\" và \"thiết kế dễ / khó\" là khái quát; tốc độ và độ khó phụ thuộc thiết kế cụ thể, không phải quy luật của mạch tổ hợp hay tuần tự."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 20,

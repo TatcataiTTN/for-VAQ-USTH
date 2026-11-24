@@ -17,8 +17,7 @@
    "numbers": [],
    "issues": [
     "Lỗi chính tả trong chú thích ảnh Global Hawk: \"Dndergoes\" (nhằm \"Undergoes\")."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 2,
@@ -30,8 +29,7 @@
    "numbers": [],
    "issues": [
     "Slide tiêu đề trống, không có nội dung lịch sử đi kèm."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 3,
@@ -40,9 +38,10 @@
    "text_en": "Wi-Fi interfered with the Honeywell Phase 3 displays (PFD, ND) of a Boeing 757; a cockpit placard bans Wi-Fi devices while the engines run \"for purpose of flight\".",
    "text_vi": "Wi-Fi gây nhiễu màn hình Honeywell Phase 3 (PFD, ND) của Boeing 757; biển trong buồng lái cấm dùng thiết bị Wi-Fi khi động cơ chạy \"for purpose of flight\".",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Hệ Wi-Fi của máy bay 2,4 và 5 GHz"
+   ],
+   "issues": []
   },
   {
    "page": 4,
@@ -52,8 +51,7 @@
    "text_vi": "EMC là khả năng thiết bị hoạt động chấp nhận được trong môi trường điện từ của nó bằng cách hạn chế phát sinh, lan truyền và thu nhận năng lượng điện từ ngoài ý muốn có thể gây EMI hoặc hư hỏng vật lý. Nguồn: thiết bị điện (máy phát, động cơ), máy phát vô tuyến, thiết bị chuyển mạch.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 5,
@@ -63,8 +61,7 @@
    "text_vi": "Tiêu đề phần \"EMC Context\" (bối cảnh EMC).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 6,
@@ -74,8 +71,7 @@
    "text_vi": "Sóng điện từ ngoài (radar, máy phát VHF/UHF) ghép vào bó dây, thiết bị và bo mạch; nhiễu ngoài và nhiễu trong (IC) gây trục trặc, có thể dẫn tới kịch bản nghiêm trọng.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 7,
@@ -85,8 +81,7 @@
    "text_vi": "Môi trường gồm sét, khí quyển, bức xạ Mặt Trời và vũ trụ, radar mặt đất, trạm vô tuyến, phản xạ đa đường, hệ thống nội bộ (máy phát, avionics, chuyển mạch) và máy bay khác (TCAS). Bốn bước: phát sinh ngoài ý muốn, lan truyền, phản xạ hoặc tán xạ, thu nhận.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 8,
@@ -109,9 +104,10 @@
    "text_en": "Signal classes: low and high frequency, periodic and non-periodic, sinusoidal and modulated, narrowband and broadband; the time domain (oscilloscope) and the frequency domain (spectrum analyser).",
    "text_vi": "Các loại tín hiệu: tần số thấp và cao, tuần hoàn và không tuần hoàn, hình sin và điều chế, băng hẹp và băng rộng; miền thời gian (dao động ký) và miền tần số (máy phân tích phổ).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Ví dụ tín hiệu thấp tần 50 Hz và cao tần 1 MHz; trục tần số của phổ từ 10³ đến 10⁸ Hz, vạch băng hẹp ở 10⁴ Hz"
+   ],
+   "issues": []
   },
   {
    "page": 10,
@@ -144,12 +140,15 @@
    "page": 12,
    "kind": "content",
    "title": "Spectrum analyser",
-   "text_en": "Block diagram: attenuator, mixer, IF amplifier, RBW filter, detector, VBW filter, display; the local oscillator sweeps from f_start to f_stop.",
-   "text_vi": "Sơ đồ khối: bộ suy hao, bộ trộn (mixer), khuếch đại IF, bộ lọc RBW, tách sóng, bộ lọc VBW, màn hình; dao động nội LO quét từ f_start đến f_stop.",
+   "text_en": "Block diagram of a spectrum analyser: input signal v(t) from an antenna or LISN, attenuator (adjusts the input level and protects the analyser), mixer, IF amplifier, resolution bandwidth filter (RBW), detector (converts to a DC level proportional to power), video bandwidth filter (VBW, smooths the detected signal), display; the local oscillator sweeps from f_start to f_stop and a frequency sweep generator (sawtooth) synchronises the sweep with the display. Example instrument screen: power axis from -10 to -110 dBm and frequency axis 0 to 500 MHz in steps of 100 MHz. Below: the time-domain square pulse (pulse width tau, period T), its line spectrum (fundamental f and odd harmonics 3f, 5f, 7f, 9f with decreasing amplitude) and the spectral envelope (proportional to 1/n).",
+   "text_vi": "Sơ đồ khối máy phân tích phổ: tín hiệu vào v(t) từ anten hoặc LISN, bộ suy hao (chỉnh mức vào và bảo vệ máy), bộ trộn, khuếch đại trung tần IF, bộ lọc băng phân giải RBW, bộ tách sóng (đổi sang mức một chiều tỉ lệ với công suất), bộ lọc băng video VBW (làm trơn tín hiệu đã tách), màn hình; dao động nội LO quét từ f_start đến f_stop và bộ phát quét tần (răng cưa) đồng bộ việc quét với màn hình. Màn hình máy mẫu: trục công suất từ -10 đến -110 dBm, trục tần số 0 đến 500 MHz mỗi bước 100 MHz. Bên dưới: xung vuông trong miền thời gian (độ rộng xung tau, chu kỳ T), phổ vạch của nó (cơ bản f và các hài lẻ 3f, 5f, 7f, 9f giảm dần biên độ) và đường bao phổ (tỉ lệ 1/n).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Màn hình máy mẫu: công suất từ -10 đến -110 dBm; tần số 0 đến 500 MHz, mỗi bước 100 MHz"
+   ],
+   "issues": [
+    "Lỗi nhãn: phổ vạch ghi biên độ \"3/3\", \"5/5\", \"7/7\" tại 3f, 5f, 7f; đúng phải là V/3, V/5, V/7 như ở slide 10 (chuỗi Fourier của sóng vuông)."
+   ]
   },
   {
    "page": 13,
@@ -171,9 +170,12 @@
    "text_en": "10 W against 5 W is 3 dB (double). Table of power ratio and dB: 0.01 = -20; 0.1 = -10; 0.5 = -3; 1 = 0; 2 = 3; 10 = 10; 100 = 20.",
    "text_vi": "10 W so với 5 W là 3 dB (gấp đôi). Bảng tỉ số công suất và dB: 0,01 = -20; 0,1 = -10; 0,5 = -3; 1 = 0; 2 = 3; 10 = 10; 100 = 20.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Ví dụ: 10 W so với 5 W là 10 log(10/5) = 10 log 2 ≈ 3 dB (gấp 2 lần công suất)"
+   ],
+   "issues": [
+    "Đã kiểm: 10 log 2 = 3,01; 10 log 0,5 = -3,01; 10 log 0,1 = -10; 10 log 0,01 = -20; 10 log 10 = 10; 10 log 100 = 20."
+   ]
   },
   {
    "page": 15,
@@ -194,11 +196,13 @@
    "text_en": "Repeats slide 15 in text form.",
    "text_vi": "Lặp lại nội dung slide 15 dưới dạng văn bản.",
    "formulas": [],
-   "numbers": [],
-   "issues": [
-    "Slide 16 lặp lại slide 15."
+   "numbers": [
+    "Tỉ số điện áp: 0,01 = -40 dB; 0,1 = -20 dB; 0,5 = -6 dB; 1 = 0 dB; 2 = 6 dB; 10 = 20 dB; 100 = 40 dB (nhân đôi cộng 6 dB, nhân mười cộng 20 dB)"
    ],
-   "basis": "summary"
+   "issues": [
+    "Slide 16 lặp lại slide 15.",
+    "Đã kiểm: 20 log 0,01 = -40; 20 log 0,1 = -20; 20 log 0,5 = -6,02; 20 log 2 = 6,02; 20 log 10 = 20; 20 log 100 = 40."
+   ]
   },
   {
    "page": 17,
@@ -210,8 +214,7 @@
    "numbers": [],
    "issues": [
     "Đã kiểm: 20 log 2 = 6,02; 20 log 3 = 9,54; 20 log 4 = 12,04; 20 log 5 = 13,98; 10 log 2 = 3,01; 10 log 3 = 4,77; 10 log 5 = 6,99. Các giá trị in đúng (làm tròn)."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 18,
@@ -236,8 +239,7 @@
    "numbers": [],
    "issues": [
     "Đã kiểm: 10 log(0,5 W/1 mW) = 26,99; 10 log(2 W/1 mW) = 33,01. Đúng."
-   ],
-   "basis": "summary"
+   ]
   },
   {
    "page": 20,
@@ -246,9 +248,13 @@
    "text_en": "Ratio(dB) = P2(dB) - P1(dB); amplifier stages in cascade add dB (0 dBm + 10 dB + 6 dB = +16 dBm); losses in cascade subtract (0 dBm - 3 dB - 10 dB = -13 dBm); a ratio table.",
    "text_vi": "Ratio(dB) = P2(dB) - P1(dB); khuếch đại nối tầng cộng dB (0 dBm + 10 dB + 6 dB = +16 dBm); suy hao nối tầng trừ (0 dBm - 3 dB - 10 dB = -13 dBm); bảng tỉ số.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Ví dụ 2 và 3: P2 = 10 W (10 dB), P1 = 5 W (7 dB), tỉ số = 10 - 7 = 3 dB, gấp 2 lần công suất; nối tầng +10 dB và +6 dB đưa 0 dBm thành +16 dBm (khoảng 40 lần công suất); cáp -3 dB và bộ lọc -10 dB đưa 0 dBm thành -13 dBm (chia khoảng 20); bảng 0,01 = -20 dB (thấp hơn 100 lần), 0,1 = -10 dB (10 lần), 0,5 = -3 dB (2 lần), 1 = 0 dB, 2 = 3 dB, 10 = 10 dB, 100 = 20 dB"
+   ],
+   "issues": [
+    "Lưu ý: \"10 dB\" và \"7 dB\" ở ví dụ 2 và 3 là mức tuyệt đối so với 1 W (10 dBW và 7 dBW); slide chỉ ghi \"dB\" nên thiếu đơn vị tham chiếu, nhưng hiệu 3 dB vẫn đúng.",
+    "Đã kiểm: 10 log 5 = 6,99 (khoảng 7); 10^1,6 = 39,8 (khoảng 40); 10^1,3 = 19,95 (khoảng 20)."
+   ]
   },
   {
    "page": 21,
@@ -273,8 +279,7 @@
    "text_vi": "Tiêu đề phần kèm dải vòng đời: khái niệm, khả thi, phát triển, thử nghiệm, bàn giao.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 23,
@@ -283,9 +288,10 @@
    "text_en": "An EMC standard is terminology plus rules plus test methods plus limits. Emission: CISPR 32 (multimedia), CISPR 11 (ISM); immunity: IEC 61000-4-2 (ESD), -4-3 (radiated RF field), -4-4 (EFT/burst), -4-5 (surge).",
    "text_vi": "Chuẩn EMC là thuật ngữ cộng quy tắc cộng phương pháp thử cộng giới hạn. Phát xạ: CISPR 32 (đa phương tiện), CISPR 11 (ISM); miễn nhiễm: IEC 61000-4-2 (ESD), -4-3 (trường RF bức xạ), -4-4 (EFT/burst), -4-5 (surge).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Bảng giới hạn minh hoạ: 30 đến 230 MHz thì X dBµV/m, 230 đến 1000 MHz thì Y dBµV/m (X và Y chưa điền giá trị)"
+   ],
+   "issues": []
   },
   {
    "page": 24,
@@ -294,9 +300,10 @@
    "text_en": "Diagram of test results: RI (61000-4-3, -4-39, -4-8), ESD (61000-4-2), CI (61000-4-6, -4-4, -4-5), CE (CISPR 11/32, FCC 15/18), RE, voltage dips (61000-4-11), harmonics and flicker (61000-3-2, 3-3); LISN.",
    "text_vi": "Sơ đồ kết quả thử: RI (61000-4-3, -4-39, -4-8), ESD (61000-4-2), CI (61000-4-6, -4-4, -4-5), CE (CISPR 11/32, FCC 15/18), RE, sụt áp (61000-4-11), hài và nhấp nháy (61000-3-2, 3-3); LISN.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Miễn nhiễm dẫn (RF, burst) áp dụng khi cáp dài hơn 3 m; tiêu chuẩn 61000-4-3, -4-39, -4-8, 61000-4-2, 61000-4-6, -4-4, -4-5, 61000-4-11, 61000-3-2, -3-3; CISPR 11/32 (EU), FCC 15/18 (US)"
+   ],
+   "issues": []
   },
   {
    "page": 25,
@@ -306,8 +313,7 @@
    "text_vi": "Để so sánh được và lặp lại được kết quả thử; hài hoà quốc tế (IEC, CISPR, ISO; EN, ANSI/FCC).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 26,
@@ -330,8 +336,7 @@
    "text_vi": "DO-160 là quy trình thử do RTCA ban hành, không phải một yêu cầu. Các phần: 4 nhiệt độ/độ cao, 6 độ ẩm, 8 rung, 20 EMI/EMC, 22 sét gián tiếp, 25 ESD.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 28,
@@ -341,8 +346,7 @@
    "text_vi": "Tiêu đề phần \"Reducing EMC\" (giảm vấn đề EMC).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 29,
@@ -351,9 +355,10 @@
    "text_en": "Eight measures: 1 twisted or shielded wires, 2 connectors, 3 metal enclosure (Faraday cage), 4 surge protection (TVS, MOV, GDT), 5 short grounding, 6 ferrite beads, 7 filters, 8 filtered cables.",
    "text_vi": "Tám biện pháp: 1 dây xoắn hoặc bọc, 2 đầu nối, 3 vỏ kim loại (lồng Faraday), 4 chống xung (TVS, MOV, GDT), 5 nối đất ngắn, 6 hạt ferrite, 7 bộ lọc, 8 cáp có lọc.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Đầu nối: bọc chắn nối đất 360°"
+   ],
+   "issues": []
   },
   {
    "page": 30,
@@ -362,9 +367,10 @@
    "text_en": "Filtering options: ferrite on cables, an EMI filter at the equipment input (LC), RC or LC filters on boards.",
    "text_vi": "Các lựa chọn lọc: ferrite trên cáp, bộ lọc EMI ở ngõ vào thiết bị (LC), bộ lọc RC hoặc LC trên bo mạch.",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Đồ thị suy hao điển hình: trục tần số 0,1 đến 1000 MHz, suy hao 0 đến 40 dB"
+   ],
+   "issues": []
   },
   {
    "page": 31,
@@ -374,8 +380,7 @@
    "text_vi": "Dòng nhiễu sinh từ trường; từ thông tập trung trong ferrite; tổn hao từ (từ trễ, dòng xoáy) hoá thành nhiệt.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 32,
@@ -385,8 +390,7 @@
    "text_vi": "Chế độ chung: dòng cùng chiều, từ thông cộng, trở kháng cao. Chế độ vi sai: dòng ngược chiều, từ thông triệt tiêu, trở kháng thấp. Bão hoà làm giảm hiệu quả.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 33,
@@ -396,8 +400,7 @@
    "text_vi": "Cách ferrite làm việc, loại tách đôi, ví dụ trên cáp USB, audio và ăng-ten.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 34,
@@ -445,8 +448,7 @@
    "text_vi": "Ba yếu tố: nguồn nhiễu, đường ghép, máy thu nhạy; giảm nguồn, giảm đường ghép, giảm độ nhạy; DO-160.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 38,
@@ -456,8 +458,7 @@
    "text_vi": "Tại nguồn: vỏ kim loại, chống xung, dây xoắn hoặc bọc, cáp đồng trục, thời gian tăng chậm, nối đất giá đỡ.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 39,
@@ -467,8 +468,7 @@
    "text_vi": "Tách cáp công suất và cáp tín hiệu, dây xoắn hoặc bọc, sợi quang, cáp đồng trục, nối đất ngắn, phá vòng đất (biến áp cách ly), lọc ngõ ra, dời thiết bị xa nguồn.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 40,
@@ -478,19 +478,17 @@
    "text_vi": "Giới hạn băng thông, giới hạn độ lợi, vỏ nối đất, linh kiện ít nhạy.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 41,
    "kind": "content",
    "title": "Aircraft wiring",
-   "text_en": "Separate power cables from signal cables; strategic routing.",
-   "text_vi": "Tách cáp công suất khỏi cáp tín hiệu; đi dây có chiến lược.",
+   "text_en": "Aircraft wiring and cabling for EMI reduction, eight measures: 1 keep separation between the wiring of a noise source (power, high current) and susceptible signal wiring (for example ADF, sensors): correct means an adequate separation distance, incorrect means cables too close with EMI coupling; 2 strategic cable routing: route the signal cables of the avionics bay away from the power cables of the power distribution; 3 twist and/or shield noisy wires and data bus connections (a twisted pair reduces magnetic coupling, a shielded cable reduces radiated and conducted noise, an optical fibre data bus is immune to EMI); 4 use screened (coaxial) cables for audio and radio frequency signals (outer shield connected to ground, dielectric insulation, centre conductor); 5 keep ground leads as short as possible (a short direct connection to ground is good, a long ground lead creates an interference loop, an antenna); 6 break interference ground loops with isolation transformers, differential amplifiers or balanced circuits; 7 filter noisy output leads with ferrite cores (common-mode choke) or LC filters; 8 physically relocate receivers and sensitive equipment (for example ADF, avionics, sensors) away from the interference source (for example a motor or power converter).",
+   "text_vi": "Đi dây và cáp trên máy bay để giảm EMI, tám biện pháp: 1 giữ khoảng cách giữa dây của nguồn nhiễu (nguồn điện, dòng lớn) và dây tín hiệu nhạy (ví dụ ADF, cảm biến): đúng là có khoảng cách đủ xa, sai là cáp quá gần nhau gây ghép EMI; 2 định tuyến cáp có chiến lược: đi cáp tín hiệu của khoang điện tử hàng không xa cáp điện của khu phân phối điện; 3 xoắn và/hoặc bọc chắn các dây gây nhiễu và dây bus dữ liệu (cặp xoắn giảm ghép từ, cáp bọc chắn giảm nhiễu bức xạ và nhiễu dẫn, bus dữ liệu sợi quang miễn nhiễm EMI); 4 dùng cáp bọc (đồng trục) cho tín hiệu âm thanh và vô tuyến (lớp chắn ngoài nối đất, cách điện điện môi, lõi giữa); 5 giữ dây nối đất càng ngắn càng tốt (nối đất ngắn trực tiếp là tốt, dây đất dài tạo vòng nhiễu, tức một anten); 6 phá các vòng đất gây nhiễu bằng biến áp cách ly, bộ khuếch đại vi sai hoặc mạch cân bằng; 7 lọc các dây ra gây nhiễu bằng lõi ferrite (cuộn chặn chế độ chung) hoặc bộ lọc LC; 8 dời máy thu và thiết bị nhạy (ví dụ ADF, thiết bị điện tử hàng không, cảm biến) ra xa nguồn nhiễu (ví dụ động cơ hay bộ biến đổi nguồn).",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   },
   {
    "page": 42,
@@ -525,9 +523,10 @@
    "text_en": "Purposes: lightning, current return path, preventing RF voltages, electric shock safety, radio transmission and reception, preventing static build-up (fuel).",
    "text_vi": "Mục đích: sét, đường hồi dòng, ngăn điện áp RF, an toàn điện giật, truyền và thu vô tuyến, ngăn tích tĩnh điện (nhiên liệu).",
    "formulas": [],
-   "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "numbers": [
+    "Hình đường về dòng: nguồn 28 V DC"
+   ],
+   "issues": []
   },
   {
    "page": 45,
@@ -547,12 +546,11 @@
    "page": 46,
    "kind": "thanks",
    "title": "Conclusion",
-   "text_en": "Conclusion slide.",
-   "text_vi": "Slide kết luận.",
+   "text_en": "Conclusions: EMC is a main issue in aircraft because it ensures the good operability of electronic systems in a specific electromagnetic environment; EMC is covered by standards that give information about the measurement technique and the limit values regarding radiated, conducted, immunity and emissivity of electronic systems; DO-160 is a reference document in aeronautics; some design rules have to be applied to minimise EMC problems from the design phase.",
+   "text_vi": "Kết luận: EMC là vấn đề chính trên máy bay vì nó bảo đảm hệ điện tử hoạt động tốt trong một môi trường điện từ xác định; EMC được quy định bởi các tiêu chuẩn cho biết kỹ thuật đo và các giá trị giới hạn về phát xạ bức xạ, phát xạ dẫn, miễn nhiễm và độ phát xạ của hệ điện tử; DO-160 là tài liệu tham chiếu trong hàng không; cần áp dụng một số quy tắc thiết kế để giảm tối thiểu vấn đề EMC ngay từ giai đoạn thiết kế.",
    "formulas": [],
    "numbers": [],
-   "issues": [],
-   "basis": "summary"
+   "issues": []
   }
  ]
 }

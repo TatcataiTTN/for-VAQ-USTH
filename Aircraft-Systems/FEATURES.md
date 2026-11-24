@@ -15,7 +15,7 @@ Bằng chứng khảo sát: đã ĐỌC mã engine của Thermal-Systems (`_shar
 | F08 | Phân tích đề | LÀM | có (TF-IDF trong trình duyệt, báo ngoài danh mục) | `tests/tools_test.py` |
 | F09 | Khái niệm (Concept finder) | LÀM | có (mỗi chủ đề ngân hàng là một khái niệm) | `tests/tools_test.py` |
 | F10 | Lab | BỎ | người dùng chọn "chỉ làm đề, bỏ Lab" (4d, 21/11/2026) | 3 demo giữ trong m07 đến m09 |
-| F11 | Bài tập có đáp án (Exercise finder) | LÀM | có (bảng lọc theo sách, module, loại, mức; độ phủ theo chương) | `tests/tools_test.py` |
+| F11 | Bài tập có đáp án (Exercise finder) | LÀM | có (bảng lọc theo sách, module, loại, mức; độ phủ theo chương); ảnh đề và ảnh đáp án in cho 156 bài Floyd (Ch.2, 3, 4, 6, 11 và 11 bài mới ở Ch.7, 8, 9, 12), chương Floyd còn lại CHƯA | `tests/tools_test.py`, `build/verify/verify_floyd_ex.py` |
 | F12 | Bản đồ sách | CHỈNH | có cấp chương: Tooley 20 chương, Floyd 15 chương, trang in đã đo | cấp mục ở P2 |
 | F13 | Nguồn, độ phủ, lỗi của nguồn | LÀM | có bản đầu (tài liệu, độ phủ đếm từ dữ liệu, lỗi gom từ module) | P0 |
 | F14 | Bảng tra mã (Tooley App.5), Luyện đổi mã | LÀM | có: 128 mã ASCII sinh bằng chương trình (hai cách), máy đổi mã và luyện tập | `tests/tools_test.py` |

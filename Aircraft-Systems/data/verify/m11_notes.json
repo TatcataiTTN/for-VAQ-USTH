@@ -6,7 +6,11 @@
   "Floyd Chương 8 Self-Test 5, 6, 9: lớp chữ PDF đọc micro giây (μs) thành \"ms\"; ảnh trang cho thấy đơn vị là μs (80 μs, 8 μs, 1 μs, 24 μs).",
   "Floyd Chương 10 Đúng/Sai 5 in \"FGPA\" thay cho FPGA (lỗi in).",
   "Hệ số 1,44 của 555 dao động là 1/0,693 làm tròn: với R1 = 1 kΩ, R2 = 2 kΩ, C = 0,1 μF công thức cho 2 880 Hz còn 1/T = 2 857 Hz (lệch 0,8 %). Site dùng công thức Floyd cho tần số và 0,7 cho thời gian.",
-  "Floyd Chương 8 Self-Test 10 (Hình 8-36) đã đọc từ ảnh trang: khoá in (c) khớp văn bản mục 8-5 (bit 0 được dịch vòng, mức THẤP lần lượt vào từng hàng)."
+  "Floyd Chương 8 Self-Test 10 (Hình 8-36) đã đọc từ ảnh trang: khoá in (c) khớp văn bản mục 8-5 (bit 0 được dịch vòng, mức THẤP lần lượt vào từng hàng).",
+  "Floyd Chương 7 Problem 27: đề in 1 kΩ và 1 pF cho độ rộng xung 0,7 ns ($t_W=0{,}7RC$), nhưng đáp án in là 0,07 ms, ứng với C = 0,1 µF. Site dùng giá trị tính từ đề và ghi chú chênh lệch.",
+  "Floyd Chương 7 Problem 31: đề in C = 0,004 µF, 10 kHz, chu kỳ làm việc 80 % cho R1 = 21,6 kΩ và R2 = 7,2 kΩ; đáp án in R1 = 9,1 kΩ, R2 = 4,3 kΩ cho 20,3 kHz và 75,7 % (chỉ cho 10 kHz nếu C khoảng 0,008 µF). Site dùng giá trị tính từ đề.",
+  "Floyd Chương 7 Problem 21: đáp án in 16,66 MHz là số cắt bớt của 16,67 MHz.",
+  "Floyd Chương 7 Problem 27: đề in 1 kΩ và 1 pF cho độ rộng xung 0,7 ns ($t_W=0{,}7RC$), nhưng đáp án in là 0,07 µs (70 ns), ứng với C = 100 pF. Site dùng giá trị tính từ đề và ghi chú chênh lệch."
  ],
  "en": [
   "Floyd Chapter 9 Self-Test 2: printed key (a) \"inputs\"; section 9-1 says a Mealy output depends on both the present state and the inputs, so the answer is (d) \"(a) and (c)\". The site uses (d).",
@@ -15,6 +19,10 @@
   "Floyd Chapter 8 Self-Test 5, 6, 9: the PDF text layer reads microseconds (μs) as \"ms\"; the page image shows the unit is μs (80 μs, 8 μs, 1 μs, 24 μs).",
   "Floyd Chapter 10 True/False 5 prints \"FGPA\" for FPGA (a typo).",
   "The 555 astable factor 1.44 is 1/0.693 rounded: with R1 = 1 kΩ, R2 = 2 kΩ, C = 0.1 μF the formula gives 2,880 Hz while 1/T = 2,857 Hz (0.8 % apart). The site uses Floyd's formula for frequency and 0.7 for times.",
-  "Floyd Chapter 8 Self-Test 10 (Figure 8-36) was read from the page image: the printed key (c) agrees with the text of 8-5 (the 0 is rotated and a LOW is applied to each row in turn)."
+  "Floyd Chapter 8 Self-Test 10 (Figure 8-36) was read from the page image: the printed key (c) agrees with the text of 8-5 (the 0 is rotated and a LOW is applied to each row in turn).",
+  "Floyd Chapter 7 Problem 27: the printed statement (1 kΩ and 1 pF) gives a pulse width of 0.7 ns ($t_W=0.7RC$) but the printed answer is 0.07 ms, which belongs to C = 0.1 µF. The site uses the value computed from the statement and records the difference.",
+  "Floyd Chapter 7 Problem 31: the printed statement (C = 0.004 µF, 10 kHz, 80 % duty cycle) gives R1 = 21.6 kΩ and R2 = 7.2 kΩ; the printed answer R1 = 9.1 kΩ, R2 = 4.3 kΩ gives 20.3 kHz and 75.7 % (10 kHz only if C is about 0.008 µF). The site uses the values computed from the statement.",
+  "Floyd Chapter 7 Problem 21: the printed answer 16.66 MHz is the truncated value of 16.67 MHz.",
+  "Floyd Chapter 7 Problem 27: the printed statement (1 kΩ and 1 pF) gives a pulse width of 0.7 ns ($t_W=0.7RC$) but the printed answer is 0.07 µs (70 ns), which belongs to C = 100 pF. The site uses the value computed from the statement and records the difference."
  ]
 }

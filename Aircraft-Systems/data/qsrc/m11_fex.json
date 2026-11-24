@@ -1,0 +1,210 @@
+[
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Bảng dữ liệu của một flip-flop ghi thời gian mức CAO tối thiểu của xung clock là 20 ns và thời gian mức THẤP tối thiểu là 40 ns. Tần số hoạt động tối đa là bao nhiêu?",
+   "en": "The datasheet of a certain flip-flop specified that the minimum HIGH time for the clock pulse is 20 ns and the minimum LOW time is 40 ns. What is the maximum operating frequency?"
+  },
+  "sol": {
+   "vi": "Chu kỳ clock tối thiểu bằng thời gian mức CAO tối thiểu cộng thời gian mức THẤP tối thiểu: 20 ns + 40 ns = 60 ns. Vậy $f_{max}=1/T_{min}=1/60\\text{ ns}$ = 16,67 MHz. Đáp án in ghi 16,66 MHz (cắt bớt chữ số, không làm tròn).",
+   "en": "The minimum clock period is the minimum HIGH time plus the minimum LOW time: 20 ns + 40 ns = 60 ns. So $f_{max}=1/T_{min}=1/60\\text{ ns}$ = 16.67 MHz. The printed answer reads 16.66 MHz (truncated, not rounded)."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Problem 21",
+   "en": "Floyd Ch.7 · Problem 21"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch07_q21.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch07_a21.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Dòng một chiều mà một flip-flop làm việc với nguồn +4 V DC cần là 8 mA. Một thiết bị số dùng 16 flip-flop loại này. Xác định dung lượng dòng cần có của nguồn +4 V DC và công suất tiêu tán tổng của hệ thống.",
+   "en": "The direct current required by a particular flip-flop that operates on a +4 V dc source is found to be 8 mA. A certain digital device uses 16 of these flip-flops. Determine the current capacity required for the +4 V dc supply and the total power dissipation of the system."
+  },
+  "sol": {
+   "vi": "Dòng tổng = 16 × 8 mA = 128 mA. Công suất tổng $P=V\\cdot I$ = 4 V × 128 mA = 512 mW. Khớp đáp án in (128 mA, 512 mW).",
+   "en": "Total current = 16 × 8 mA = 128 mA. Total power $P=V\\cdot I$ = 4 V × 128 mA = 512 mW. This agrees with the printed answer (128 mA, 512 mW)."
+  },
+  "topic": {
+   "vi": "Chốt và flip-flop",
+   "en": "Latches and flip-flops"
+  },
+  "topic_id": "latch",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Problem 23",
+   "en": "Floyd Ch.7 · Problem 23"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch07_q23.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch07_a23.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định độ rộng xung của mạch một nhịp 74121 nếu điện trở ngoài là 1 kΩ và tụ ngoài là 1 pF.",
+   "en": "Determine the pulse width of a 74121 one-shot if the external resistor is 1 kΩ and the external capacitor is 1 pF."
+  },
+  "sol": {
+   "vi": "Theo Floyd 7-5, độ rộng xung của 74121 là $t_W=0{,}7\\,R_{ext}C_{ext}$ = 0,7 × 1 kΩ × 1 pF = 0,7 ns. Đáp án in ghi 0,07 µs (70 ns): giá trị đó ứng với C = 100 pF (0,7 × 1 kΩ × 100 pF = 70 ns), gấp 100 lần 1 pF của đề. Đề in và đáp án in mâu thuẫn nhau; site giữ giá trị tính từ đề (0,7 ns) và ghi lại chênh lệch.",
+   "en": "By Floyd 7-5 the pulse width of a 74121 is $t_W=0.7\\,R_{ext}C_{ext}$ = 0.7 × 1 kΩ × 1 pF = 0.7 ns. The printed answer reads 0.07 µs (70 ns): that value belongs to C = 100 pF (0.7 × 1 kΩ × 100 pF = 70 ns), 100 times the 1 pF of the statement. The printed statement and the printed answer contradict each other; the site keeps the value computed from the statement (0.7 ns) and records the difference."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Problem 27 (đáp án in lệch đề, xem lời giải)",
+   "en": "Floyd Ch.7 · Problem 27 (printed answer disagrees with the statement, see the solution)"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch07_q27.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch07_a27.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Tạo một mạch một nhịp dùng bộ định thời 555 cho xung ra rộng 0,5 s.",
+   "en": "Create a one-shot using a 555 timer that will produce a 0.5 s output pulse."
+  },
+  "sol": {
+   "vi": "Bộ 555 đơn ổn: $t_W=1{,}1\\,R_1C_1$. Chọn $C_1=1\\,\\mu$F thì $R_1=0{,}5\\text{ s}/(1{,}1\\times 1\\,\\mu\\text{F})$ = 454,5 kΩ. Dùng điện trở chuẩn 430 kΩ cho $t_W$ = 1,1 × 430 kΩ × 1 µF = 0,473 s (xấp xỉ 0,5 s). Khớp đáp án in (C1 = 1 µF, R1 = 454 kΩ, dùng 430 kΩ); mạch: R1 nối Vcc với chân DISCH và THRESH, C1 nối chân THRESH xuống đất, xung kích vào chân TRIG (xem hình đáp án).",
+   "en": "555 monostable: $t_W=1.1\\,R_1C_1$. Choosing $C_1=1\\,\\mu$F gives $R_1=0.5\\text{ s}/(1.1\\times 1\\,\\mu\\text{F})$ = 454.5 kΩ. With the standard 430 kΩ resistor $t_W$ = 1.1 × 430 kΩ × 1 µF = 0.473 s (about 0.5 s). This agrees with the printed answer (C1 = 1 µF, R1 = 454 kΩ, use 430 kΩ); circuit: R1 from Vcc to the DISCH and THRESH pins, C1 from THRESH to ground, trigger pulse on TRIG (see the answer figure)."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Problem 29",
+   "en": "Floyd Ch.7 · Problem 29"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch07_q29.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch07_a29.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Xác định giá trị các điện trở ngoài của bộ định thời 555 dùng làm đa hài không ổn định có tần số ra 10 kHz, nếu tụ ngoài C là 0,004 µF và chu kỳ làm việc xấp xỉ 80 %.",
+   "en": "Determine the values of the external resistors for a 555 timer used as an astable multivibrator with an output frequency of 10 kHz, if the external capacitor C is 0.004 µF and the duty cycle is to be approximately 80%."
+  },
+  "sol": {
+   "vi": "Floyd 7-6: $f=\\dfrac{1{,}44}{(R_1+2R_2)C}$ và $D=\\dfrac{R_1+R_2}{R_1+2R_2}$. $R_1+2R_2=1{,}44/(10\\text{ kHz}\\times 0{,}004\\,\\mu\\text{F})$ = 36 kΩ; $R_1+R_2=0{,}8\\times 36$ = 28,8 kΩ, nên $R_2$ = 7,2 kΩ và $R_1$ = 21,6 kΩ. Với giá trị chuẩn E24 $R_1$ = 22 kΩ, $R_2$ = 7,5 kΩ: $f$ = 9,73 kHz, $D$ = 79,7 %. Đáp án in R1 = 9,1 kΩ, R2 = 4,3 kΩ cho $f$ = 20,3 kHz và $D$ = 75,7 % với C = 0,004 µF; chúng chỉ cho 10 kHz nếu C ≈ 0,008 µF. Đề in và đáp án in mâu thuẫn; site dùng giá trị tính từ đề.",
+   "en": "Floyd 7-6: $f=\\dfrac{1.44}{(R_1+2R_2)C}$ and $D=\\dfrac{R_1+R_2}{R_1+2R_2}$. $R_1+2R_2=1.44/(10\\text{ kHz}\\times 0.004\\,\\mu\\text{F})$ = 36 kΩ; $R_1+R_2=0.8\\times 36$ = 28.8 kΩ, so $R_2$ = 7.2 kΩ and $R_1$ = 21.6 kΩ. With standard E24 values $R_1$ = 22 kΩ, $R_2$ = 7.5 kΩ: $f$ = 9.73 kHz, $D$ = 79.7 %. The printed answer R1 = 9.1 kΩ, R2 = 4.3 kΩ gives $f$ = 20.3 kHz and $D$ = 75.7 % with C = 0.004 µF; they give 10 kHz only if C ≈ 0.008 µF. The printed statement and the printed answer contradict each other; the site uses the values computed from the statement."
+  },
+  "topic": {
+   "vi": "Mạch một nhịp và bộ định thời 555",
+   "en": "One-shots and the 555 timer"
+  },
+  "topic_id": "timing",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.7 · Problem 31 (đáp án in lệch đề, xem lời giải)",
+   "en": "Floyd Ch.7 · Problem 31 (printed answer disagrees with the statement, see the solution)"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch07_q31.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch07_a31.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Cần bao nhiêu flip-flop để thực hiện mỗi bộ đếm Johnson sau: (a) modulus 4, (b) modulus 8, (c) modulus 12, (d) modulus 18?",
+   "en": "How many flip-flops are required to implement each of the following in a Johnson counter configuration: (a) modulus-4 (b) modulus-8 (c) modulus-12 (d) modulus-18?"
+  },
+  "sol": {
+   "vi": "Bộ đếm Johnson có n flip-flop đi qua 2n trạng thái nên modulus = 2n và số flip-flop = modulus / 2: (a) 4/2 = 2, (b) 8/2 = 4, (c) 12/2 = 6, (d) 18/2 = 9. Khớp đáp án in.",
+   "en": "A Johnson counter of n flip-flops steps through 2n states, so modulus = 2n and the number of flip-flops = modulus / 2: (a) 4/2 = 2, (b) 8/2 = 4, (c) 12/2 = 6, (d) 18/2 = 9. This agrees with the printed answer."
+  },
+  "topic": {
+   "vi": "Thanh ghi dịch",
+   "en": "Shift registers"
+  },
+  "topic_id": "shift",
+  "level": 1,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.8 · Problem 25",
+   "en": "Floyd Ch.8 · Problem 25"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch08_q25.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch08_a25.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Trong bộ đếm của Bài 4 (bộ đếm gợn sóng 3 bit, Hình 9–66), giả sử mỗi flip-flop có trễ lan truyền 8 ns từ sườn kích của xung clock đến lúc ngõ ra Q đổi. Xác định thời gian trễ xấu nhất (dài nhất) từ một xung clock đến khi bộ đếm tới một trạng thái nào đó. Chỉ rõ trạng thái hoặc các trạng thái có trễ xấu nhất này.",
+   "en": "In the counter of Problem 4, assume that each flip-flop has a propagation delay from the triggering edge of the clock to a change in the Q output of 8 ns. Determine the worst-case (longest) delay time from a clock pulse to the arrival of the counter in a given state. Specify the state or states for which this worst-case delay occurs."
+  },
+  "sol": {
+   "vi": "Trong bộ đếm gợn sóng, mỗi tầng chỉ đổi sau khi tầng trước đổi, nên thời gian ổn định của một lần chuyển bằng 8 ns nhân số thứ tự của tầng cao nhất bị đổi. Trường hợp xấu nhất là khi cả ba tầng cùng đổi: 011 → 100 và 111 → 000, tức 3 × 8 ns = 24 ns (đến trạng thái 100 và 000). Khớp đáp án in.",
+   "en": "In a ripple counter each stage changes only after the previous one has changed, so the settling time of a transition is 8 ns times the position of the highest stage that toggles. The worst case is when all three stages change: 011 → 100 and 111 → 000, i.e. 3 × 8 ns = 24 ns (arriving at states 100 and 000). This agrees with the printed answer."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 3,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Problem 5",
+   "en": "Floyd Ch.9 · Problem 5"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch09_q5.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch09_a5.png"
+ },
+ {
+  "kind": "ess",
+  "q": {
+   "vi": "Nếu bộ đếm của Bài 5 là đồng bộ thay vì không đồng bộ thì thời gian trễ dài nhất là bao nhiêu?",
+   "en": "If the counter of Problem 5 were synchronous rather than asynchronous, what would be the longest delay time?"
+  },
+  "sol": {
+   "vi": "Ở bộ đếm đồng bộ mọi flip-flop nhận clock cùng lúc nên các ngõ ra cùng đổi sau một trễ lan truyền: thời gian dài nhất chỉ là 8 ns (thay vì 24 ns). Khớp đáp án in.",
+   "en": "In a synchronous counter all flip-flops receive the clock together, so the outputs change after a single propagation delay: the longest time is only 8 ns (instead of 24 ns). This agrees with the printed answer."
+  },
+  "topic": {
+   "vi": "Bộ đếm và máy trạng thái",
+   "en": "Counters and state machines"
+  },
+  "topic_id": "counter",
+  "level": 2,
+  "origin": "goc",
+  "src": {
+   "vi": "Floyd Ch.9 · Problem 7",
+   "en": "Floyd Ch.9 · Problem 7"
+  },
+  "figs": [
+   "assets/figures/floyd_ex_ch09_q7.png"
+  ],
+  "afig": "assets/figures/floyd_ex_ch09_a7.png"
+ }
+]

@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-24",
+ "slides_checked": 85,
+ "by_deck": {
+  "cpu": 31,
+  "disp": 19,
+  "emc": 32,
+  "icmux": 3
+ },
+ "method": [
+  "Xem anh slide (cat tu PDF goc o 960x540, phong to 300-330 dpi cac vung co so)",
+  "OCR tesseract 200 dpi tu PDF goc: do phu tu cua ban chep, so tren slide ma ban chep bo sot (build/verify/ocr_slides.py, data/verify/ocr_slides.json), so trong ban chep ma OCR khong thay (doc mat lai tung so)"
+ ],
+ "result": "81/81 khop anh; 28 slide duoc bo sung so lieu hoac noi dung (build/transcripts/zoom_patch.py)",
+ "new_slide_errors": [
+  "emc 12: nhan pho vach 3/3, 5/5, 7/7 (dung la V/3, V/5, V/7)",
+  "disp 22: nut chon tam co nhan 80 thu hai (le ra 10 NM); ban chep cu ghi sai 10/20/40/80/160/320",
+  "disp 22: nhan thoi gian den diem bay 2 min 33 s (slide 24 ghi 23 min 33 s), ca hai khong khop 37 NM o 257 kt",
+  "emc 20: 10 dB va 7 dB thieu don vi tham chieu (dBW)"
+ ],
+ "not_checked": "Chi 4 bo slide co gia tri tom tat (cpu, disp, emc, icmux) duoc dua vao danh sach nay; cac bo con lai (num, logic, bus, fib, swc) da duoc doc tung slide tu truoc."
+}
